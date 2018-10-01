@@ -6,10 +6,11 @@ heading: Configuring your Chart using Plain JS
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
 
-This article focuses on how you can configure using the React `props` object to:
+This article focuses on how you can:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-data-1) (using React `Props` object)
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-attributes-2) (using React `Props` object)
+* [Update Chart Data]({% site.baseurl %}/getting-started/plain-javascript/configure-your-chart-using-plain-javascript#update-chart-data-1)
+
+* [Update Chart Attributes]({% site.baseurl %}/getting-started/plain-javascript/configure-your-chart-using-plain-javascript#update-chart-attributes-2)
 
 ## Update Chart Data
 
@@ -20,27 +21,16 @@ A chart, configured to update data values dynamically, is shown below (click **U
 The full code of the above sample is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
-
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
-
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts/core';
-
-//Including the chart type
-import Column2D from 'fusioncharts/viz/column2d';
-
-//Including the theme as fusion
+import FusionCharts from 'fusioncharts';
+import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+// Add the chart and theme as dependency
+FusionCharts.addDep(Charts);
+FusionCharts.addDep(FusionTheme);
 
-//Creating the JSON object to store the chart configurations
-
-const chartConfigs = {
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
     type: 'column2d',// The chart type
     width: '700', // Width of the chart
     height: '400', // Height of the chart
@@ -120,12 +110,6 @@ class Chart extends Component {
     );
   }
 }
-
-//DOM element to pass the react-fusioncharts component
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
 ```
 
 The above chart has been rendered using the following steps:
