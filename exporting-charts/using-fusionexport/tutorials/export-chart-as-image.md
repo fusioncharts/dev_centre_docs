@@ -4,7 +4,7 @@ description: This article talks about the SDKs used for exporting charts as imag
 heading: Export chart as image
 ---
 
-Exporting a single chart as an image (`.png`, the default output format) is the simplest task that you can accomplish with FusionExport. In this article, you will learn how to export a chart. 
+Exporting a single chart as an image (`.png`, the default output format) is the simplest task that you can accomplish with FusionExport. In this article, you will learn how to export a chart.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ The chart configuration files are simple `.json` files. If you are executing the
 
 > It is **not** mandatory to create a file containing the chart configuration. In the code, you can directly create an object containing a serialized JSON string representation of the chart configuration, and pass it on to the `ExportConfig.set()` object of the FusionExport SDK you are using. For more clarity, see the inline comments in the [template code]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image#code-3).
 
-The accepted format of configuration is the same as that of charts which you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts. 
+The accepted format of configuration is the same as that of charts which you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
 
 Except for the case of exporting dashboards, all other exports work on the basis of the chart configuration that you create. Here, we will use the configuration of a simple Column 2D chart.
 
@@ -62,19 +62,21 @@ Based on the above configuration, the exported chart will look like the illustra
 
 ## Code
 
-Before you start with the code, we suggest going through the steps that the code accomplishes. 
+Before you start with the code, we suggest going through the steps that the code accomplishes.
 
 1. Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
 
 2. Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
 
-3. Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`.
+3. Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
 
-4. Use the instance of `ExportManager()` to perform pass success messages using the `on()` method, and save the exported chart in an appropriate file format using the `saveExportedFiles()` method.
+4. Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
 
 > The above guidelines may vary slightly based on the programming language you are using, and the customizations you want on top of the defaults.
 
 > In most cases, the default output file name is `export--1.png`. If you execute the template code without any changes, you can find it in the same directory from where the code has been executed.
+
+> For detailed information on the vast number of possibilities, refer to (FusionExport SDK API Reference)[https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/sdk-api-reference/nodejs], and select the SDK of your choice from the left navigation panel.
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -99,7 +101,7 @@ namespace FusionExportTest {
         public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
             // Instantiate the ExportConfig class and add the required configurations
             ExportConfig exportConfig = new ExportConfig();
-            // Provide path of the chart configuration which we have defined above. 
+            // Provide path of the chart configuration which we have defined above.
             // You can also pass the same object as serialized JSON.
             exportConfig.Set("chartConfig", File.ReadAllText("./resources/chart-config-file.json"));
 
@@ -138,7 +140,7 @@ public class Script {
 
         // Instantiate the ExportConfig class and add the required configurations
         ExportConfig config = new ExportConfig();
-        // Provide path of the chart configuration which we have defined above. 
+        // Provide path of the chart configuration which we have defined above.
         // You can also pass the same object as serialized JSON.
         config.set("chartConfig", configPath);
 
@@ -261,7 +263,7 @@ exportManager.on('exportDone', (outputFileBag) => {
 <div class="tab python-tab">
 <pre><code class="custom-hlc language-python">
 # Import sdk
-from fusionexport import ExportManager, ExportConfig 
+from fusionexport import ExportManager, ExportConfig
 
 # Read the chart configuration file
 def read_file(file_path):
