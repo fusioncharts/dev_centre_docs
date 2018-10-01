@@ -6,24 +6,25 @@ heading: Add Annotations
 
 Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
 
-In this article we'll create a **Spline** chart and add annotations using `react-fusioncharts` component. A spline chart using annotations to highlight a particular anchor along with text is shown below:
+In this article we'll create a **Spline** chart and add annotations to it. A spline chart using annotations to highlight a particular anchor along with text is shown below:
 
 {% embed_chartData configure-charts-using-react-example-3.js json %}
 
 The full code of the above sample is given below:
 
 ```
-import React from 'react';
-import ReactDOM from 'react-dom';
 import FusionCharts from 'fusioncharts';
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-import ReactFC from 'react-fusioncharts';
-import FusionTime from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import Charts from 'fusioncharts/fusioncharts.charts';
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-ReactFC.fcRoot(FusionCharts, PowerCharts, FusionTime);
+// Add the chart and theme as dependency
+FusionCharts.addDep(Charts);
+FusionCharts.addDep(FusionTheme);
 
-const chartConfigs = {
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
     type: 'spline',
+    renderAt: 'chart-container',
     width: '700',
     height: '400',
     dataFormat: 'json',
@@ -100,24 +101,19 @@ const chartConfigs = {
             "label": "Dec",
             "value": "2"
         }]
-    },
+    }
 };
-
-ReactDOM.render(
-    <ReactFC {...chartConfigs} />,
-    document.getElementById('root'),
-);
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Add the chart and theme as dependency. 
+
+3. Create an instance of the chart with chart options. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
     * Create an `annotations` object in the `dataSource`, to specify the cosmetics and functionalities of the annotation.
-
-3. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
