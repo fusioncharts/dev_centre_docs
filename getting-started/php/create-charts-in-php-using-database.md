@@ -14,7 +14,7 @@ This section showcases how you can do this using the FusionCharts PHP wrapper.
 
 Assume that you have a __fusioncharts_phpsample__ database with the __Country__ table that stores the list of countries with oil reserves for the year 2017 to 2018. Using the data in this database, you want to plot a column 2D chart showing the top eight countries with most oil reserves.
 
->  You can [download](http://dev.mysql.com/doc/index-other.html) this database from the MYSQL website or refer to the sample database available [here](https://dev.mysql.com/doc/world-setup/en/). </p>
+> You can [download](http://dev.mysql.com/doc/index-other.html) this database from the MYSQL website or refer to the sample database available [here](https://dev.mysql.com/doc/world-setup/en/).
 
 The column 2D chart that we need to render here looks like this:
 
