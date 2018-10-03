@@ -107,13 +107,13 @@ The data structure needed to render this chart is given below:
 
 The above chart has been rendered using the following steps:
 
-1. Include the `fusioncharts.php`file which contains funtions to embed the chart.
+1. Include the `fusioncharts.php` file which contains funtions to embed the chart.
 
 2. Add the following lines for the database connection information.
-    * $hostdb = "localhost"; (MySQl host)
-    * $userdb = "root"; (MySQL username)
-    * $passdb = ""; (MySQL password)
-    * $namedb = "fusioncharts_phpsample"; (MySQL database name)
+    * `$hostdb = "localhost";` (MySQl host)
+    * `$userdb = "root";` (MySQL username)
+    * `$passdb = "";` (MySQL password)
+    * `$namedb = "fusioncharts_phpsample";` (MySQL database name)
 
 Alternatively, you can move these code lines to a separate file and include the file. You can also modify the code accordingly on your database connection.
 
