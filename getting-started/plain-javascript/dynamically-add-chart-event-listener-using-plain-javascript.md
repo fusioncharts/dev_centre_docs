@@ -154,6 +154,6 @@ The above chart has been rendered using the following steps:
 	* Add an event listener for `dataPlotClick` event when the message is updated with the values of the data plot.
 	* Add a handler is added for the **REMOVE DATAPLOTCLICK EVENT** button. The button resets the chart to default message and removes the event listener.
 
-5. Button is created inside the `<div>` to add the event listener to the data plot.
+5. Buttons are created inside the `<div>` to add the event listener to the data plot.
 
 6. Functionalities are added to the button to add/remove the event listener.
