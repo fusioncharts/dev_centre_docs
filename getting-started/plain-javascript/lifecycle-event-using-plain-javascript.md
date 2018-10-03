@@ -107,3 +107,5 @@ The above chart has been rendered using the following steps:
 	* Use the callback handler for `dataUpdated` event.
 	* Use the callback handler for `drawComplete` event.
 	* Use the callback handler for `renderComplete` event.
+
+5. Create `<div>` element to display the message.

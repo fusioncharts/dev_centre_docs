@@ -114,4 +114,4 @@ The above chart has been rendered using the following steps:
     * Use the `dataplotRollOver` event which is triggered when the mouse pointer is rolled over a data plot.
     * Use the `dataplotRollOut` event which is triggered when the mouse pointer is rolled out of the data plot.
 
-5. Create `<div>` to display the message.
+5. Create `<div>` element to display the message.
