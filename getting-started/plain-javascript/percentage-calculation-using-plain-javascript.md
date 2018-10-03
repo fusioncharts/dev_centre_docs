@@ -115,4 +115,4 @@ The above chart has been rendered using the following steps:
 	* `dataplotrollout` event resets the default message.
 	* `renderComplete` event calculates and stores the total value of the chart data.
 
-6. `addEventListener` is used to updaye the above listed events.
+6. `addEventListener` is used to update the above listed events.
