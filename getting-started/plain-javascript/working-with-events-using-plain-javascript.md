@@ -1,6 +1,6 @@
 ---
 title: Bind Event Listener | FusionCharts
-description: This article talks about the Events using React.
+description: This article talks about the Events using plain JS.
 heading: Bind Event Listener
 ---
 
@@ -21,36 +21,22 @@ For example, if you roll the mouse pointer over the __Canada__ data plot, the fo
 The full code of the above sample is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
-
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
-
-//Including the fusioncharts library
 import FusionCharts from 'fusioncharts';
-
-//Including the chart type
-import Chart from 'fusioncharts/fusioncharts.charts';
-
-//Including react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-//Including the theme as fusion
+import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
+// Add the chart and theme as dependency
+FusionCharts.addDep(Charts);
+FusionCharts.addDep(FusionTheme);
 
-//Creating the JSON object to store the chart configurations
-
-const chartConfigs = {
-    type: "column2d",
-    width: 700,
-    height: 400,
-    dataFormat: "json",
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '700',
+    height: '400',
+    dataFormat: 'json',
     dataSource: {
-      // Chart configuration
         "chart": {
             "caption": "Countries With Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
@@ -59,7 +45,6 @@ const chartConfigs = {
             "numberSuffix": "K",
             "theme": "fusion"
         },
-        // Chart data
         "data": [{
             "label": "Venezuela",
             "value": "290"
@@ -85,78 +70,48 @@ const chartConfigs = {
             "label": "China",
             "value": "30"
         }]
+    },
+    events: {
+        "beforeRender": function(evt, args) {
+            var controllers = document.createElement('div');
+            controllers.innerHTML = "Hover on the plot to see the value along with the label";
+            controllers.setAttribute('id', 'indicatorDiv');
+            controllers.style.padding = "10px";
+            controllers.style.background = "rgb(245, 242, 240)";
+            controllers.style.textAlign = "center";
+            controllers.style.fontFamily = ""
+            args.container.appendChild(controllers);
+        },
+
+        "dataplotRollOver": function(evt, data) {
+            var txt = "You are currently hovering over " + data.categoryLabel + " whose value is " + data.value;
+               document.getElementById("indicatorDiv").innerHTML = txt;
+
+        },
+        "dataplotRollOut": function(evt, data) {
+            document.getElementById("indicatorDiv").innerHTML = "Hover on the plot to see the value along with the label";
+        }
     }
-};
-
-class Chart extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      actualValue: "Hover on the plot to see the value along with the label",
-      message: "Hover on the plot to see the value along with the label"
-    };
-
-    this.dataplotrollover = this.dataplotrollover.bind(this);
-    this.dataplotrollout = this.dataplotrollout.bind(this);
-  }
-
-  // Event callback handler for 'dataplotRollOver'.
-  // Shows the value of the hovered plot on the page.
-  dataplotrollover(eventObj, dataObj) {
-    this.setState({
-      message: [
-        "You are currently hovering over ",
-        <strong>{dataObj.categoryLabel}</strong>,
-        " whose value is ",
-        <strong>{dataObj.displayValue}</strong>
-      ]
-    });
-  }
-
-  // Event callback handler for 'dataplotRollOut'.
-  // Resets to the original message.
-  dataplotrollout(eventObj, dataObj) {
-    this.setState({
-      message: this.state.actualValue
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <ReactFC
-          {...chartConfigs}
-          fcEvent-dataplotRollOver={this.dataplotrollover}
-          fcEvent-dataplotRollOut={this.dataplotrollout}
-        />
-        <p style={{ padding: "10px", background: "#f5f2f0" }}>
-          {this.state.message}
-        </p>
-      </div>
-    );
-  }
-}
-
-ReactDOM.render(<Chart />, document.getElementById("root"));
+});// Render
+chartInstance.render();
 ```
 
-The above chart is rendered using the following steps:
+The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Add the chart and theme as dependency. 
+
+3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
+4. Set the `message` which gets displayed with the rendering of the chart. 
 
 4. In the above sample:
-    * Use a callback handler for `dataplotRollOver` event which is triggered when the mouse pointer is rolled over a data plot.
-    * Use a callback handler for `dataplotRollOut` event which is triggered when the mouse pointer is rolled out of the data plot.
+    * Use the `dataplotRollOver` event which is triggered when the mouse pointer is rolled over a data plot.
+    * Use the `dataplotRollOut` event which is triggered when the mouse pointer is rolled out of the data plot.
 
-5. Add the `render()` function to create the `button` inside the `<div>`.
-
-6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+5. Create `<div>` to display the message.

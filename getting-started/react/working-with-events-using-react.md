@@ -157,6 +157,6 @@ The above chart is rendered using the following steps:
     * Use a callback handler for `dataplotRollOver` event which is triggered when the mouse pointer is rolled over a data plot.
     * Use a callback handler for `dataplotRollOut` event which is triggered when the mouse pointer is rolled out of the data plot.
 
-5. Add the `render()` function to create the `button` inside the `<div>`.
+5. Add the `render()` function to create the `<div>` for displaying the message.
 
 6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.

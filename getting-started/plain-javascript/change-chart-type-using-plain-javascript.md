@@ -158,7 +158,7 @@ The above chart has been rendered using the following steps:
     * Embed the json data as the value of `dataSource`.
 
 4. `beforeRender` event is called to update the chart type from `column2d` to `bar2d` or `pie2d`.
-	
+
 5. Radio buttons are created inside the `<div>` to choose a chart type from:
 	* Column 2D
 	* Bar 2D
