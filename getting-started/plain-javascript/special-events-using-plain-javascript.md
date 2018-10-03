@@ -6,7 +6,7 @@ heading: Special Events using Plain JS
 
 FusionCharts Suite XT API offers a wide range of events that you can use to trigger actions for different stages in the life cycle of a chart or when you interact with a chart. For example, events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
-This article focuses on how you can dynamically drag the column and see modified value as text using React `props` object.
+This article focuses on how you can dynamically drag the column and see modified value as text.
 
 A drag-able column chart is shown below:
 
@@ -15,46 +15,33 @@ A drag-able column chart is shown below:
 The full code of the above sample is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
-
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
-
-//Including the fusioncharts library
 import FusionCharts from 'fusioncharts';
-
-//Including the chart type
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-
-//Including react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-//Including the theme as fusion
+import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, PowerCharts, FusionTheme);
+// Add the chart and theme as dependency
+FusionCharts.addDep(Charts);
+FusionCharts.addDep(FusionTheme);
 
-//Creating the JSON object to store the chart configurations
-
-const chartConfigs = {
-	type: 'dragcolumn2d',
-	width: 700,
-	height: 400,
-	dataFormat: 'json',
-	dataSource: {
-	    "chart": {
-	        "caption": "Android and iOS Devices Sales Projections",
-	        "subCaption": "Drag the top of columns to adjust projections for 2017 & 2018",
-	        "numberPrefix": "$",
-	        "numberSuffix": "M",
-	        "yaxismaxvalue": "200",
-	        "theme": "fusion",
-	        "plotToolText": "<b>$label</b><br>$seriesName: <b>$dataValue</b>"
-	    },
-	    "categories": [{
-	        "category": [{
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
+    type: 'dragcolumn2d',
+    height: '400',
+    width: '700',
+    dataFormat: 'json',
+    renderAt: 'chart-container',
+    dataSource: {
+        "chart": {
+            "caption": "Android and iOS Devices Sales Projections",
+            "subCaption": "Drag the top of columns to adjust projections for 2017 & 2018",
+            "numberPrefix": "$",
+            "numberSuffix": "M",
+            "yaxismaxvalue": "200",
+            "theme": "fusion",
+            "plotToolText": "<b>$label</b><br>$seriesName: <b>$dataValue</b>"
+        },
+        "categories": [{
+            "category": [{
                 "label": "2014",
                 "fontItalic": "0"
             }, {
@@ -68,10 +55,10 @@ const chartConfigs = {
             }, {
                 "label": "2018 (Projected)"
             }]
-	    }],
-	    "dataset": [{
-	        "seriesname": "Android Devices",
-	        "data": [{
+        }],
+        "dataset": [{
+            "seriesname": "Android Devices",
+            "data": [{
                 "value": "73",
                 "alpha": "100",
                 "allowDrag": "0"
@@ -111,77 +98,49 @@ const chartConfigs = {
                 "value": "150",
                 "toolText": "<b>$label</b><br>$seriesName: <b>$dataValue</b>"
             }]
-	    }]
-	}
-};
+        }]
+    },
+    "events": {
+        "beforeRender": function(e, d) {
+            var message = "Drag any column for years 2017 or 2018 to see updated value along with the label";
+            var customDiv = document.createElement('p');
+            customDiv.innerText = message;
+            customDiv.style.padding = "10px";
+            customDiv.style.background = "rgb(245, 242, 240)";
+            customDiv.style.textAlign = "center";
+            customDiv.style.fontFamily = ""
+            e.data.container.appendChild(customDiv);
 
-class Chart extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      message: 'Drag any column for years 2017 or 2018 to see updated value along with the label',
-    };
-
-    this.dataplotDragEnd = this.dataplotDragEnd.bind(this);
-  }
-
-  // Event callback handler for 'dataplotDragEnd' event.
-  // Shows a message with the dateset, initial value and final value of the dragged column.
-  dataplotDragEnd(eventObj, dataObj) {
-    var prevValue = FusionCharts.formatNumber(dataObj.startValue.toFixed(2));
-    var curValue = FusionCharts.formatNumber(dataObj.endValue.toFixed(2));
-    var labelYear = this.state.chart.args.dataSource.categories[0].category[dataObj.dataIndex].label
-    this.setState({
-      message: [
-        <strong>{eventObj.data.datasetName}</strong>,
-        " is modified to ",
-        <strong>{'$' + curValue + 'M'}</strong>,
-        " from ",
-        <strong>{'$' + prevValue + 'M'}</strong>,
-        " for ",
-        <strong>{labelYear}</strong>
-      ]
-    });
-  }
-
-  render () {
-    return (
-      <div>
-        <ReactFC
-          {...chartConfigs}
-          fcEvent-dataplotDragEnd={this.dataplotDragEnd}
-        />
-        <p style={{ padding: '10px', background: '#f5f2f0' }}>
-          {this.state.message}
-        </p>
-      </div>
-    )
-  }
-}
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+            e.sender.addEventListener("dataplotdragend", function(event, args) {
+                var prev = FusionCharts.formatNumber(args.startValue.toFixed(2));
+                var curr = FusionCharts.formatNumber(args.endValue.toFixed(2));
+                var label = event.sender.args.dataSource.categories[0].category[args.dataIndex].label;
+                var eventMessage = '<b>' + args.datasetName + '</b> dataset, its previous value was <b>' + prev + '</b> and its current value is <b>' + curr + '</b> for year ' +
+                    '<b>' + label + '</b>';
+                customDiv.innerHTML = eventMessage;
+            });
+        }
+    }
+});// Render
+chartInstance.render();
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Add the chart and theme as dependency. 
+
+3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
+4. Set the `message` which gets displayed with the rendering of the chart. 
 
-4. In the above sample:
-	* Use an event callback handler for `dataPlotDragEnd` event.
+5. In the above sample:
+	* Use an **event listener** for `dataPlotDragEnd` event.
 	* Use the `dragPlotDragEnd` event to show a message with the dataset, initial value and final value of the dragged column.
 
-5. Add the `render()` function to create **buttons** inside the `<div>`.
-
-6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. Create `<div>` element to display the message.
