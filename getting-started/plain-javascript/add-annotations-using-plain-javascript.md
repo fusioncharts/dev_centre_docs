@@ -102,7 +102,8 @@ var chartInstance = new FusionCharts({
             "value": "2"
         }]
     }
-};
+});// Render
+chartInstance.render();
 ```
 
 The above chart has been rendered using the following steps:

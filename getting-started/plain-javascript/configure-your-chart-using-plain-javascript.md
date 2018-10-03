@@ -18,6 +18,7 @@ A chart, configured to update data values dynamically, is shown below (click **U
 
 {% embed_chartData configure-charts-using-react-example-1.js json %}
 
+
 The full code of the above sample is given below:
 
 ```
@@ -31,10 +32,11 @@ FusionCharts.addDep(FusionTheme);
 
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
-    type: 'column2d',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '700',
+    height: '400',
+    dataFormat: 'json',
     dataSource: {
         // Chart Configuration
         "chart": {
@@ -71,58 +73,48 @@ var chartInstance = new FusionCharts({
             "label": "China",
             "value": "30"
         }]
-        },
-    };
+    },
+    events: {
+        "beforeRender": function(evt, args) {
+            var controls = document.createElement('div'),
+                chartRef = evt.sender;
 
-//Your react component
-class Chart extends Component {
-  constructor(props) {
-    super(props);
+            chartRef.getRandomNumber = function() {
+                var max = 300,
+                    min = 50;
+                return Math.round(((max - min) * Math.random()) + min);
+            }
+            updateData = function() {
 
-    this.state = chartConfigs;
-    this.updateData = this.updateData.bind(this);
-  }
+                //clones data
+                var data = Object.assign({}, chartRef.getJSONData());
+                data.data[2].label = 'Canada';
+                data.data[2].value = chartRef.getRandomNumber();
 
-//This function generates random number.
-  getRandomNumber() {
-    var max = 290, min = 30;
-    return Math.round(((max - min) * Math.random()) + min);
-  }
-
-  //Handler for update button.
-  //Randomly updates the values of the chart.
-  updateData() {
-    var prevDs = Object.assign({}, this.state.dataSource);
-    prevDs.data[2].value = this.getRandomNumber();
-    prevDs.data[3].value = this.getRandomNumber();
-    this.setState({
-      dataSource: prevDs,
-    });
-  }
-
-  //Create the button
-  render() {
-    return (
-      <div>
-        <ReactFC {...this.state} />
-        <center><button className='btn btn-outline-secondary btn-sm' onClick={this.updateData}>Change Chart Data</button></center>
-      </div>
-    );
-  }
-}
+                data.data[3].label = 'Iran';
+                data.data[3].value = chartRef.getRandomNumber();
+                chartRef.setJSONData(data);
+            };
+            controls.innerHTML = '<button style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;" onClick="updateData()" >Update chart data</button>';
+            controls.style.cssText = 'text-align: center; width: 100%;';
+            args.container.appendChild(controls);
+        }
+    }
+});// Render
+chartInstance.render();
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Add the chart and theme as dependency. 
+
+3. Create an instance of the chart with chart options. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
-
-3. Create a component to include `react-fusioncharts` component.
 
 4. Generate random data to update the chart using **Math.random()**.
 
@@ -130,9 +122,7 @@ The above chart has been rendered using the following steps:
 
 6. Add the `updateData()` function to randomly update the value of the chart when the button is clicked.
 
-7. Add the `render()` function to create the `button` inside the `<div>`.
-
-8. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+7. Add the `innerHTML` to create the `button` inside the `<div>`.
 
 ## Update Chart Attributes
 
@@ -143,33 +133,23 @@ A chart, configured to update the **chart caption**, **sub-caption** alignment a
 The full code of the above sample is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
-
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
-
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts/core';
-
-//Including the chart type
-import Column2D from 'fusioncharts/viz/column2d';
-
-//Including the theme as fusion
+import FusionCharts from 'fusioncharts';
+import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+// Add the chart and theme as dependency
+FusionCharts.addDep(Charts);
+FusionCharts.addDep(FusionTheme);
 
-//Creating the JSON object to store the chart configurations
-
-const chartConfigs = {
-    type: 'column2d',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '700',
+    height: '400',
+    dataFormat: 'json',
     dataSource: {
-    // Chart Configuration
+        // Chart Configuration
         "chart": {
             "caption": "Countries With Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
@@ -205,104 +185,75 @@ const chartConfigs = {
             "value": "30"
         }]
     },
-};
+    events: {
+        "beforeRender": function(evt, args) {
+            var chartRef = evt.sender;
 
-//Your react component
-class Chart extends Component {
-    constructor(props) {
-        super(props);
+            chartRef.originalData = JSON.parse(JSON.stringify(chartRef.getJSONData()));
 
-        this.state = {
-            chart: {}
+            chartRef.changeBackground = function() {
+                var data = chartRef.getJSONData(); //copy of object
+                data.chart.bgColor = '#efefef';
+                chartRef.setJSONData(data);
+            };
+
+            // Resets all the chart data to it's initial verison
+            chartRef.resetAttr = function() {
+                chartRef.setJSONData(chartRef.originalData);
+            };
+
+            // Makes the caption text left aligned
+            chartRef.makeCaptionLeft = function() {
+                var data = chartRef.getJSONData();
+                data.chart.captionAlignment = 'left';
+                chartRef.setJSONData(data);
+            };
+
+
+            var btnContainer = document.createElement('div'),
+                str;
+
+            // buttons 
+            str = '<button id="bgColorBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Change Chart Background</button>&nbsp&nbsp';
+            str += '<button id="captionAlignBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Make Caption Text Left-Aligned</button>&nbsp&nbsp';
+            str += '<button id="resetAttrBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Reset Attributes</button>';
+
+            btnContainer.style.cssText = "text-align: center; width: 100%; margin: 10px;";
+            btnContainer.innerHTML = str;
+            //button attachment
+            args.container.parentNode.insertBefore(btnContainer, args.container.nextSibling);
+        },
+
+        "renderComplete": function(evt, args) {
+            var chartRef = evt.sender,
+                bgColorBtn = document.getElementById('bgColorBtn'),
+                captionAlignBtn = document.getElementById('captionAlignBtn'),
+                resetAttrBtn = document.getElementById('resetAttrBtn');
+
+            bgColorBtn.onclick = chartRef.changeBackground;
+            captionAlignBtn.onclick = chartRef.makeCaptionLeft;
+            resetAttrBtn.onclick = chartRef.resetAttr;
         }
-
-        this.renderComplete = this.renderComplete.bind(this);
-        this.changeBackgroundColor = this.changeBackgroundColor.bind(this);
-        this.changeCaptionTextAlignment = this.changeCaptionTextAlignment.bind(this);
-        this.resetChart = this.resetChart.bind(this);
     }
-
-    // Called by FC-React component to return the rendered chart
-    renderComplete(chart) {
-        this.state.chart = chart;
-    }
-
-    // Handler for 'Change Background' button.
-    // Changes the chart background color.
-    changeBackgroundColor() {
-        this.state.chart.setChartAttribute('bgColor', '#efefef');
-    }
-
-    // Handler for 'Change CaptionAlignment' button.
-    // Changes the caption alignment to left.
-    changeCaptionTextAlignment() {
-        this.state.chart.setChartAttribute('captionAlignment', 'left');
-    }
-
-    // Handler for 'Reset' button.
-    // Resets the chart to the original version.
-    resetChart() {
-        this.state.chart.setChartAttribute('bgColor', null);
-        this.state.chart.setChartAttribute('captionAlignment', null);
-    }
-
-    //Create buttons
-    render() {
-        return ( <
-            div >
-            <
-            ReactFC { ...chartConfigs
-            }
-            onRender = {
-                this.renderComplete
-            }
-            /> <
-            center >
-            <
-            button className = 'btn btn-outline-secondary btn-sm'
-            onClick = {
-                this.changeBackgroundColor
-            } > Change Background < /button> <
-            button className = 'btn btn-outline-secondary btn-sm'
-            onClick = {
-                this.changeCaptionTextAlignment
-            } > Change Caption Alignment < /button> <
-            button className = 'btn btn-outline-secondary btn-sm'
-            onClick = {
-                this.resetChart
-            } > Reset < /button> <
-            /center> <
-            /div>
-        );
-    }
-}
-
-ReactDOM.render( <
-    Chart / > ,
-    document.getElementById('root'),
-);
+});// Render
+chartInstance.render();
 ```
 
-The above chart has been rendered using the following steps:
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+2. Add the chart and theme as dependency. 
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+3. Create an instance of the chart with chart options. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
+4. `beforeRender` function is used to set the chart attributes.
+    * `changeBackground` updated the background of the chart.
+    * `makeCaptionLeft` sets the caption text to left aligned.
+    * `resetAttr` resets the chart data to it's initial state.
 
-4. Call the `renderComplete()` function to return the rendered chart.
+5. `btnContainer` created the **button** inside the `<div>`. Set style to button using `innerHTML`.
 
-5. Add an event handler to update the background color of the chart when the button is clicked.
-
-6. Add an event handler to change the caption alignment of the chart when the button is clicked.
-
-7. Add an event handler for the **Reset** button to return the chart to its rendered state.
-
-8. Add the `render()` function to create the `buttons` inside the `<div>`.
-
-9. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. Call the `renderComplete` function to return the rendered chart.
