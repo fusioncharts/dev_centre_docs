@@ -152,7 +152,7 @@ The above chart has been rendered using the following steps:
 	* Add an event listener is added for data plot click on the chart.
 	* Set the default message is set when data plot tracking is enabled.
 	* Add an event listener for `dataPlotClick` event when the message is updated with the values of the data plot.
-	* Add a handler is added for the **Reset** button. The Reset button resets the chart to default message and removes the event listener.
+	* Add a handler is added for the **REMOVE DATAPLOTCLICK EVENT** button. The button resets the chart to default message and removes the event listener.
 
 5. Button is created inside the `<div>` to add the event listener to the data plot.
 
