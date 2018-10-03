@@ -100,7 +100,7 @@ var chartInstance = new FusionCharts({
             args.container.appendChild(controls);
         }
     }
-};// Render
+});// Render
 chartInstance.render();
 ```
 
@@ -235,7 +235,8 @@ var chartInstance = new FusionCharts({
             resetAttrBtn.onclick = chartRef.resetAttr;
         }
     }
-}
+});// Render
+chartInstance.render();
 ```
 
 1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
