@@ -121,9 +121,7 @@ Alternatively, you can move these code lines to a separate file and include the 
 
 4. Render an error message, to avoid abrupt failure, if the database connection parameters are incorrect.
 
-5. Include the necessary JS files to render the chart.
-
-> When you make your own charts, make sure that the path to this JS file is correct. Else, you will get JavaScript errors.
+5. Include the necessary JS files to render the chart. **Note:** When you make your own charts, make sure that the path to this JS file is correct. Else, you will get JavaScript errors.
 
 6. Form the SQL query that returns the **countries with most oil reserves**.
 

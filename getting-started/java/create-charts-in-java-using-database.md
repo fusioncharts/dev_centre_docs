@@ -168,9 +168,7 @@ The above chart has been rendered using the following steps:
 
 3. Establish a connection to the database.
 
-4. Include the necessary JS files to render the chart.
-
-> Ensure that the path to this JS file is correct. Otherwise, it may lead to JavaScript errors.
+4. Include the necessary JS files to render the chart. **Note:** Ensure that the path to this JS file is correct. Otherwise, it may lead to JavaScript errors.
 
 5. Include the `FusionCharts.java` file as a package in your project.
 
