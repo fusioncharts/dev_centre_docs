@@ -75,7 +75,6 @@
                         element.className += " " + name;
                     }
                 }
-
                 function radioWrapper(wrapperId, inputId, label, selected, optionLabel) {
                     var item = "<div id='" + wrapperId + "' >";
                     item += "<input name='dimesion-selector' id='" + inputId + "' type='radio' " + (selected ? "checked='checked'" : '') + " onchange='__onChange(\"" + optionLabel + "\")'/>";
