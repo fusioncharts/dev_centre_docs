@@ -19,145 +19,146 @@ A chart configured to change the chart type, is shown below:
 The full code of the above sample is given below:
 
 ```
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
+// Add the chart and theme as dependency
+FusionCharts.addDep(Charts);
+FusionCharts.addDep(FusionTheme);
 
-const chartConfigs = {
-	type: 'column2d',
-	width: 700,
-	height: 400,
-	dataFormat: 'json',
-	dataSource: {
-		// Chart configuration
-	    "chart": {
-	        "caption": "Countries With Most Oil Reserves [2017-18]",
-	        "subCaption": "In MMbbl = One Million barrels",
-	        "xAxisName": "Country",
-	        "yAxisName": "Reserves (MMbbl)",
-	        "numberSuffix": "K",
-	        "theme": "fusion"
-	    },
-	    // Chart data
-	    "data": [{
-	        "label": "Venezuela",
-	        "value": "290"
-	    }, {
-	        "label": "Saudi",
-	        "value": "260"
-	    }, {
-	        "label": "Canada",
-	        "value": "180"
-	    }, {
-	        "label": "Iran",
-	        "value": "140"
-	    }, {
-	        "label": "Russia",
-	        "value": "115"
-	    }, {
-	        "label": "UAE",
-	        "value": "100"
-	    }, {
-	        "label": "US",
-	        "value": "30"
-	    }, {
-	        "label": "China",
-	        "value": "30"
-	    }]
-	},
-};
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
+    type: 'column2d',
+    height: '400',
+    width: '700',
+    dataFormat: 'json',
+    renderAt: 'chart-container',
+    dataSource: {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion"
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }],
+    },
+    "events": {
+        "beforeRender": function(e, d) {
+            var container = e.data.container;
+            // Change the sizes according to your need
+            var options = {
+                'column2d': 'column2d',
+                'bar2d': 'bar2d',
+                'pie2d': 'pie2d'
+            };
+            var chartSelected = 'column2d';
 
-class Chart extends Component {
-  constructor(props) {
-    super(props);
+            function instantiate() {
+                // Create option containers
+                var parent = container.parentNode;
 
-    this.state = {
-      chart: {},
-      currentVal: 'column2d'
-    };
+                var optionsContainer = document.createElement('div');
+                optionsContainer.id = 'config-container';
 
-    this.renderComplete = this.renderComplete.bind(this);
-    this.radioHandler = this.radioHandler.bind(this);
-  }
+                var spanLabel = document.createElement('span');
+                spanLabel.id = 'select-text';
+                spanLabel.innerText = "Choose a chart type: ";
 
-  renderComplete(chart) {
-    this.setState({ chart });
-  }
+                var radioContainer = document.createElement('div');
+                addClass(radioContainer, 'change-type');
+                window.__onChange = function(option) {
+                    e.sender.chartType(option)
+                }
+                // Util to add class
+                function addClass(element, className) {
+                    var element, name = className,
+                        arr;
+                    arr = element.className.split(" ");
+                    if (arr.indexOf(name) == -1) {
+                        element.className += " " + name;
+                    }
+                }
 
-  // Handler for radio buttons to change chart type.
-  radioHandler(e) {
-    this.state.chart.chartType(e.currentTarget.value);
-    this.setState({
-      currentVal: e.currentTarget.value
-    });
-  }
+                function radioWrapper(wrapperId, inputId, label, selected, optionLabel) {
+                    var item = "<div id='" + wrapperId + "' >";
+                    item += "<input name='dimesion-selector' id='" + inputId + "' type='radio' " + (selected ? "checked='checked'" : '') + " onchange='__onChange(\"" + optionLabel + "\")'/>";
+                    item += "<label for='" + inputId + "' >" + label + "</label>"
+                    item += "</div>";
+                    return item;
+                }
+                var changeTypeChilds = '';
 
-  render() {
-    return (
-      <div>
-        <ReactFC {...chartConfigs} onRender={this.renderComplete} />
-        <br />
-        <center>
-          <span>Choose a chart type:</span>
-          <div className="change-type">
-            <div>
-              <input
-                type="radio"
-                value="column2d"
-                onChange={this.radioHandler}
-                checked={this.state.currentVal === 'column2d'} />
-              <label>Column 2D Chart</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                value="bar2d"
-                onChange={this.radioHandler}
-                checked={this.state.currentVal === 'bar2d'} />
-              <label>Bar 2D Chart</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                value="pie2d"
-                onChange={this.radioHandler}
-                checked={this.state.currentVal === 'pie2d'} />
-              <label>Pie 2D Chart</label>
-            </div>
-          </div>
-        </center>
-      </div>
-    );
-  }
-}
+                Object.keys(options).forEach(function(option, index) {
+                    var label = options[option];
+                    var selected = chartSelected === option;
+                    var radioOption = radioWrapper('radio' + (index + 1), 'radioButton' + (index + 1), label.toUpperCase(), selected, option);
+                    changeTypeChilds += radioOption;
+                });
 
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+                radioContainer.innerHTML = changeTypeChilds;
+
+                optionsContainer.appendChild(spanLabel);
+                optionsContainer.appendChild(radioContainer);
+
+                parent.appendChild(optionsContainer);
+
+                var css = '.change-type{display:inline-block;margin:0 10px;font-family:basefontRegular,Helvetica Neue,Arial,sans-serif}.change-type>div{display:inline-flex;position:relative;margin:0 10px}.change-type label{position:relative;padding:5px 4px 5px 30px;border-radius:4px}.change-type input{opacity:0;cursor:pointer;z-index:1;width:100%;height:100%;left:0;position:absolute}.change-type label:after,.change-type label:before{content:"";position:absolute}.change-type label:before{display:block;background:#fff;border:2px solid #949697;box-shadow:none;border-radius:50%;top: 15px;left: 9px;width:1rem;height:1rem}.change-type label:after{    width: .55rem;height: .55rem;top: 18px;left: 11px;border-radius: 100%;}.change-type input:checked~label{color:#48b884;font-weight:600;box-shadow:0 4px 9px 0 rgba(104,105,128,.22)}.change-type input:checked~label:before{color:#fff;box-shadow:none;border:2px solid #48b884}.change-type input:checked~label:after{background:#55bd8d}';
+
+                var styleNode = document.createElement('style');
+                styleNode.innerHTML = css;
+                document.body.appendChild(styleNode);
+            }
+            if (!window.__sample_change_chart_type_instansiated) {
+                instantiate();
+            }
+            window.__sample_change_chart_type_instansiated = true;
+        }
+    }
+});// Render
+chartInstance.render();
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Add the chart and theme as dependency. 
+
+3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
+4. `beforeRender` event is called to update the chart type from `column2d` to `bar2d` or `pie2d`.
+	
+5. Radio buttons are created inside the `<div>`.
 
-4. In the above sample:
-	* Use the `renderComplete` to render the charts at runtime.
-	* Use the `radioHander` for radio buttons to change the chart type.
-
-5. Add the `render()` function to create the **radio buttons** inside the `<div>`.
-
-6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. Functionalities are added to the radio buttons to update the chart at runtime.
