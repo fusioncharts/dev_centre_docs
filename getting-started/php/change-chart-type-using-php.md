@@ -93,10 +93,7 @@ The full code of the above sample is given below:
         // Render the chart
         $Chart->render();
     ?>
-
-    <h3>Dynamic Chart Type Change</h3>
     <div align="center">
-        <label style="padding: 0px 5px !important;">Select The Chart Type</label>
     </div>
     <br />
     <div id="controllers" align="center" style="font-family:'Helvetica Neue', Arial; font-size: 14px;">
@@ -104,10 +101,10 @@ The full code of the above sample is given below:
             <input type="radio" name="div-size" checked value="column2d" />Column 2D
         </label>
         <label style="padding: 0px 5px !important;">
-            <input type="radio" name="div-size" value="pie3d" />Pie 3D
+            <input type="radio" name="div-size" value="bar2d" />Bar 2D
         </label>
         <label style="padding: 0px 5px !important;">
-            <input type="radio" name="div-size" value="bar2d" />Bar 2D
+            <input type="radio" name="div-size" value="pie3d" />Pie 3D
         </label>
     </div>
     <div style="width: 100%; display: block;" align="center">
@@ -126,18 +123,12 @@ The above chart has been rendered using the following steps:
 
 3. Create **Radio Buttons** and add functionalities to update the chart type.
 
-4. Store the chart configuration in a JSON object. In the JSON object:
+4. Store the chart data in a JSON object.
+
+5. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
-
-4. In the above sample:
-	* Use the `renderComplete` to render the charts at runtime.
-	* Use the `radioHander` for radio buttons to change the chart type.
-
-5. Add the `render()` function to create the **radio buttons** inside the `<div>`.
-
-6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. Create the `<div>` element to render radio buttons.
