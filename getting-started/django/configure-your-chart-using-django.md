@@ -285,7 +285,6 @@ The sample code provided above corresponds to the following tasks:
     * `render` from `django.shortcuts`, and `HttpResponse` from `django.http`
 
     * `FusionCharts` from `fusioncharts`
-
  
 2. Define a function `chart`, which takes `request` as an argument:
 
