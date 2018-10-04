@@ -17,173 +17,154 @@ A chart is shown below:
 The full code of the above sample is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
+<!DOCTYPE html>
+<?php
+    /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+    include("../includes/fusioncharts.php");
+?>
+<html>
 
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
+<head>
+    <style>
+        input[type=radio], input[type=checkbox] {
+                display:none;
+        }
+        input[type=radio] + label, input[type=checkbox] + label {
+            display:inline-block;
+            margin:-2px;
+            padding: 4px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333;
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #f5f5f5;
+            background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+            background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+            background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+            background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+            background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+            background-repeat: repeat-x;
+            border: 1px solid #ccc;
+            border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+            border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+            border-bottom-color: #b3b3b3;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+            -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+            -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+        }
+        input[type=radio]:checked + label, input[type=checkbox]:checked + label{
+            background-image: none;
+            outline: 0;
+            -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+            -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+                background-color:#e0e0e0;
+        }
+    </style>
+    <!-- FusionCharts Library -->
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script>
+        track = function(){
+                FusionCharts.addEventListener("dataplotclick", clickHandler);
+                document.getElementById("message").innerHTML = "Click on the plot to see the value along with the label";
+            };
+            clickHandler = function(e){
+                document.getElementById("message").innerHTML = "You have clicked on plot <b>"+  e.data.categoryLabel + "</b> whose value is <b>" + e.data.displayValue + "</b>";
+            };
+            reset = function(){
+                FusionCharts.removeEventListener("dataplotclick", clickHandler);
+                document.getElementById("message").innerHTML = "Click the below buttons to add an event dynamically to the chart";
+            }
+   </script>
+</head>
+<body>
+    <?php
+        $chartData ="{  
+            \"chart\":
+             {  
+                \"caption\": \"Countries With Most Oil Reserves [2017-18]\",
+                \"subcaption\": \"In MMbbl = One Million barrels\",
+                \"xaxisname\": \"Country\",
+                \"yaxisname\": \"Reserves (MMbbl)\",
+                \"numbersuffix\": \"K\",
+                \"theme\": \"fusion\"
+             },
+             \"data\": [{
+                \"label\": \"Venezuela\",
+                \"value\": \"290\"
+            }, {
+                \"label\": \"Saudi\",
+                \"value\": \"260\"
+            }, {
+                \"label\": \"Canada\",
+                \"value\": \"180\"
+            }, {
+                \"label\": \"Iran\",
+                \"value\": \"140\"
+            }, {
+                \"label\": \"Russia\",
+                \"value\": \"115\"
+            }, {
+                \"label\": \"UAE\",
+                \"value\": \"100\"
+            }, {
+                \"label\": \"US\",
+                \"value\": \"30\"
+            }, {
+                \"label\": \"China\",
+                \"value\": \"30\"
+            }]
+       }";
+       
+        // chart object
+        $Chart = new FusionCharts("column2d", "chart-1" , "700", "400", "chart-container", "json", $chartData);
+        // Render the chart
+        $Chart->render();
+?>
+    <div align="center" id="chart-container">Chart will render here!</div>
+    <div>
+        <p align="center" id="message"></p>
+    </div>
 
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts';
+    <div id="controllers" align="center" style="font-family:'Helvetica Neue', Arial; font-size: 14px;">
+        <input type="radio" id="radio1" name="radios" onClick="track()">
+        <label for="radio1">LISTEN TO DATAPLOTCLICK EVENT</label>
+        <input type="radio" id="radio2" name="radios" value="false" onClick="reset()">
+        <label for="radio2">REMOVE DATAPLOTCLICK EVENT</label>
+    </div>
 
-//Including the chart type
-import Chart from 'fusioncharts/fusioncharts.charts';
-
-//Including react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-//Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
-
-//Creating the JSON object to store the chart configurations
-
-const chartConfigs = {
-	type: 'column2d',
-	width: '700',
-	height: '400',
-	dataFormat: 'json',
-	dataSource: {
-		// Chart configuration
-		"chart": {
-			"caption": "Countries With Most Oil Reserves [2017-18]",
-			"subCaption": "In MMbbl = One Million barrels",
-			"xAxisName": "Country",
-			"yAxisName": "Reserves (MMbbl)",
-			"numberSuffix": "K",
-			"theme": "fusion"
-		},
-		// Chart data
-		"data": [{
-			"label": "Venezuela",
-			"value": "290"
-		}, {
-			"label": "Saudi",
-			"value": "260"
-		}, {
-			"label": "Canada",
-			"value": "180"
-		}, {
-			"label": "Iran",
-			"value": "140"
-		}, {
-			"label": "Russia",
-			"value": "115"
-		}, {
-			"label": "UAE",
-			"value": "100"
-		}, {
-			"label": "US",
-			"value": "30"
-		}, {
-			"label": "China",
-			"value": "30"
-		}]
-	},
-};
-
-var defaultMessage = 'Click on the plot to see the value along with the label';
-
-class Chart extends Component {
-	constructor(props) {
-		super(props);
-
-	    this.state = {
-	      message: '',
-	      enabled: false
-	    }
-
-	    this.trackPlotClick = this.trackPlotClick.bind(this);
-	    this.resetChart = this.resetChart.bind(this);
-	    this.dataPlotClick = this.dataPlotClick.bind(this);
-	}
-
-	// Handler for 'Track Data Plot Clicks' button.
-	// 1. Adds an eventlistener for data plot cick on the chart
-	// 2. Sets the default message when data plot click tracking is enabled
-	trackPlotClick() {
-    	FusionCharts.addEventListener('dataplotClick', this.dataPlotClick);
-    	this.setState({
-			message: defaultMessage,
-			enabled: true
-    	});
-  	}
-
-	// Event listener for dataplotclick event on chart. Update message with data plot values.
-	dataPlotClick(eventObj, dataObj) {
-    	this.setState({
-			message: [
-				'You have clicked on plot ',
-				<strong>{dataObj.categoryLabel}</strong>,
-				' whose value is ',
-				<strong>{dataObj.displayValue}</strong>
-			]
-		});
-	}
-
-	// Handler for 'Reset' button.
-	// Resets the chart to default message and removed the event listener.
-	resetChart() {
-	FusionCharts.removeEventListener('dataplotClick', this.dataPlotClick);
-    	this.setState({
-			message: '',
-			enabled: false
-    	});
-  	}
-
-  	render () {
-    	return (
-      	<div>
-        	<ReactFC {...chartConfigs} />
-        	<div style={{ padding: '5px' }} id="message">
-          	{ this.state.message || 'Click the below buttons to add an event dynamically to a charts' }
-        	</div>
-        	<button
-          	className='btn btn-outline-secondary btn-sm'
-          	disabled={this.state.enabled}
-          	onClick={this.trackPlotClick}
-        	>
-          	Add/ listen to data plot click event
-        	</button>
-        	<button
-          	className='btn btn-outline-secondary btn-sm'
-          	disabled={!this.state.enabled}
-          	onClick={this.resetChart}
-        	>
-          	Remove data plot click event
-        	</button>
-      	</div>
-    	)
-  	}
-}
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+    <a href="../index.php">Go Back</a>
+</body>
+</html>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the `fusioncharts.php` file which contains functions to embed the charts.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+2. Add `<style>` for the buttons.
 
-3. Create a component to include `react-fusioncharts` component.
+3. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`.
 
 4. In the above sample:
 	* Add a handler to track plot clicks.
 	* Add an event listener is added for data plot click on the chart.
 	* Set the default message is set when data plot tracking is enabled.
 	* Add an event listener for `dataPlotClick` event when the message is updated with the values of the data plot.
-	* Add a handler is added for the **Reset** button. The Reset button resets the chart to default message and removes the event listener.
 
-5. Add the `render()` function to create **buttons** inside the `<div>`.
+5. Store the chart data in a JSON object.
 
-6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
+
+7. Create the `<div>` element to render radio buttons using `<input>`.
