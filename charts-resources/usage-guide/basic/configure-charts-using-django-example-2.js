@@ -1,6 +1,5 @@
 {
     type: 'column2d',
-    id: 'ex1',
     renderAt: 'chart-1',
     width: '700',
     height: '400',
