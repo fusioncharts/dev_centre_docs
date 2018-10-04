@@ -18,7 +18,7 @@ Assume that you have a __fusioncharts_phpsample__ database with the __Country__ 
 
 The resultant column 2D chart looks like this:
 
-{% embed_chart create-charts-using-database-example-1.js %}
+
 
 The data structure to create this chart, by fetching chart data from a database, is given below:
 
