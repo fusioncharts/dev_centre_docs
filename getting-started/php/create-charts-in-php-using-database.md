@@ -109,13 +109,11 @@ The above chart has been rendered using the following steps:
 
 1. Include the `fusioncharts.php` file which contains funtions to embed the chart.
 
-2. Add the following lines for the database connection information.
+2. Add the following lines for the database connection information. **Note:** Alternatively, you can move these code lines to a separate file and include the file. You can also modify the code accordingly on your database connection.
     * `$hostdb = "localhost";` (MySQl host)
     * `$userdb = "root";` (MySQL username)
     * `$passdb = "";` (MySQL password)
     * `$namedb = "fusioncharts_phpsample";` (MySQL database name)
-
-Alternatively, you can move these code lines to a separate file and include the file. You can also modify the code accordingly on your database connection.
 
 3. Establish a connection to the database.
 
