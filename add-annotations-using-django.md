@@ -8,7 +8,7 @@ Annotations are graphical elements (different types of shapes, custom text, and 
 
 In this article, we'll create a **spline chart** and add annotations using a Python `function`. A spline chart using annotations to highlight a particular anchor along with text is shown below:
 
-{% embed_chartData configure-charts-using-django-example-3.js json %}
+{% embed_chartData add-annotations-using-django-example-1.js json %}
 
 The full code for the above sample is given below:
 
