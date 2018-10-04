@@ -122,7 +122,7 @@ def chart(request):
     # returning complete JavaScript and HTML code, which is used to generate chart in the browsers. 
     return  render(request, 'index.html', {'output' : spline.render(), 'chartTitle': 'Chart Annotation'})
 
-```|
+```
 
 The HTML template to render the above chart is shown below:
 
