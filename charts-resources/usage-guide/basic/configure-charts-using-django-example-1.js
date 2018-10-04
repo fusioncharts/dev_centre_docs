@@ -1,6 +1,6 @@
 {
     type: 'angularGauge',
-    renderAt: 'chart-1',
+    renderAt: 'chart-container',
     width: '700',
     height: '400',
     dataFormat: 'json',
@@ -42,33 +42,17 @@
             var controls = document.createElement('div'),
                 chartRef = evt.sender;
             chartRef.getRandomNumber = function() {
-                var max = 100,
-                    min = 50;
-                return Math.round(((max - min) * Math.random()) + 9);
-            }
-            chartRef.getMinValue = function() {
-                var max = 100,
-                    min = 50;
+                var max = 250,
+                    min = 0;
                 return Math.round(((max - min) * Math.random()) + min);
             }
-            chartRef.getMaxValue = function() {
-                var max = 100,
-                    min = 50;
-                return Math.round(((max - min) * Math.random()) + max);
-            }
+
             updateData = function() {
                 //clones data
                 var data = Object.assign({}, chartRef.getJSONData());
-
-                var minVal = chartRef.getMinValue().toString(),
-                    maxVal = chartRef.getMaxValue().toString();
-
-                data.colorRange.color[0].maxValue = minVal;
-                data.colorRange.color[1].minValue = minVal;
-                data.colorRange.color[1].maxValue = maxVal;
-                data.colorRange.color[2].minValue = maxVal;
-
+                data.dials.dial[0].id = 'dial1';
                 data.dials.dial[0].value = chartRef.getRandomNumber();
+
 
                 chartRef.setJSONData(data);
             };
