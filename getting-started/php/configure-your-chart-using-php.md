@@ -43,7 +43,7 @@ The full code of the above sample is given below:
                 \"caption\": \"Customer Satisfaction Score\", 
                 \"subcaption\": \"Los Angeles Topanga\", 
                 \"plotToolText\": \"Current Score: \$value\", 
-                \"theme\": \"fint\", 
+                \"theme\": \"fusion\", 
                 \"chartBottomMargin\": \"50\", 
                 \"showValue\": \"1\" 
             }, 
@@ -79,7 +79,7 @@ The full code of the above sample is given below:
     <div>
         <label for="dial-val">Input dial value</label>
         <input name="dial-val" id="dial-val" type="number" />
-        <input type="button" name="update dial" value="update dial" onclick="updateData()" />
+        <input type="button" name="update dial" value="Update Dial" onclick="updateData()" />
     </div>
 </body>
 </html>

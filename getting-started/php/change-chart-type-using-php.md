@@ -110,7 +110,6 @@ The full code of the above sample is given below:
     <div style="width: 100%; display: block;" align="center">
         <div id="chartContainer">Chart will render here!</div>
     </div>
-    <a href="../index.php">Go Back</a>
 </body>
 </html>
 ```
