@@ -110,7 +110,6 @@ The full code of the above sample is given below:
     <div style="width: 100%; display: block;" align="center">
         <div id="chartContainer">Chart will render here!</div>
     </div>
-    <a href="../index.php">Go Back</a>
 </body>
 </html>
 ```
@@ -121,7 +120,10 @@ The above chart has been rendered using the following steps:
 
 2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`.
 
-3. Create **Radio Buttons** and add functionalities to update the chart type.
+3. Create **Radio Buttons** and add functionalities to update the chart type to:
+    * Column 2D
+    * Bar 2D
+    * Pie 2D
 
 4. Store the chart data in a JSON object.
 

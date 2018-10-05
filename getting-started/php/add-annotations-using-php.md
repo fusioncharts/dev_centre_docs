@@ -30,58 +30,77 @@ The full code of the above sample is given below:
 <body>
     <?php
         $chartData = "{
-            \"chart\": {  
-                \"caption\": \"Bakersfield Central - Total footfalls\",
-                \"subCaption\": \"Last week\",
-                \"xAxisName\": \"Day\",
-                \"yAxisName\": \"No. of Visitors (In 1000s)\",
-                \"showValues\": \"0\",
-                \"theme\": \"fusion\"
+            \"chart\": {
+                \"caption\": \"Average Monthly Temperature in Texas\",
+                \"yAxisName\": \"Average Monthly Temperature\",
+                \"anchorradius\": \"5\",
+                \"plotToolText\": \"Average temperature in $label is <b>$dataValue</b>\",
+                \"showHoverEffect\": \"1\",
+                \"showvalues\": \"0\",
+                \"numberSuffix\": \"°C\",
+                \"theme\": \"fusion\",
+                \"anchorBgColor\": \"#72D7B2\",
+                \"paletteColors\": \"#72D7B2\"
             },
-            \"annotations\":{
+            \"annotations\": {
                 \"groups\": [{
                     \"id\": \"anchor-highlight\",
                     \"items\": [{
                         \"id\": \"high-star\",
                         \"type\": \"circle\",
-                        \"x\": \"\$\dataset.0.set.2.x\",
-                        \"y\": \"\$\dataset.0.set.2.y\",
+                        \"x\": \"$dataset.0.set.7.x\",
+                        \"y\": \"$dataset.0.set.7.y\",
                         \"radius\": \"12\",
-                        \"color\": \"#6baa01\",
+                        \"color\": \"#cc0000\",
                         \"border\": \"2\",
-                        \"borderColor\": \"#f8bd19\"
+                        \"borderColor\": \"#0075c2\"
                     }, {
                         \"id\": \"label\",
                         \"type\": \"text\",
-                        \"text\": \"Highest footfall 25.5K\",
-                        \"fillcolor\": \"#6baa01\",
+                        \"text\": \"Hottest Month\",
+                        \"fillcolor\": \"#0075c2\",
                         \"rotate\": \"90\",
-                        \"x\": \"\$\dataset.0.set.2.x+75\",
-                        \"y\": \"\$\dataset.0.set.2.y-2\"
+                        \"x\": \"$dataset.0.set.7.x+75\",
+                        \"y\": \"$dataset.0.set.7.y-2\"
                     }]
                 }]
             },
             \"data\": [{
-                \"label\": \"Mon\",
-                \"value\": \"15123\"
+                \"label\": \"Jan\",
+                \"value\": \"1\"
             }, {
-                \"label\": \"Tue\",
-                \"value\": \"14233\"
+                \"label\": \"Feb\",
+                \"value\": \"5\"
             }, {
-                \"label\": \"Wed\",
-                \"value\": \"25507\"
+                \"label\": \"Mar\",
+                \"value\": \"10\"
             }, {
-                \"label\": \"Thu\",
-                \"value\": \"9110\"
+                \"label\": \"Apr\",
+                \"value\": \"12\"
             }, {
-                \"label\": \"Fri\",
-                \"value\": \"15529\"
+                \"label\": \"May\",
+                \"value\": \"14\"
             }, {
-                \"label\": \"Sat\",
-                \"value\": \"20803\"
+                \"label\": \"Jun\",
+                \"value\": \"16\"
             }, {
-                \"label\": \"Sun\",
-                \"value\": \"19202\"
+                \"label\": \"Jul\",
+                \"value\": \"20\"
+            }, {
+                \"label\": \"Aug\",
+                \"value\": \"22\"
+            }, {
+                \"label\": \"Sep\",
+                \"value\": \"20\"
+            }, {
+                \"label\": \"Oct\",
+                \"value\": \"16\"
+            }, {
+                \"label\": \"Nov\",
+                \"value\": \"7\"
+            }, {
+                \"label\": \"Dec\",
+                \"value\": \"2\"
             }]
         }";
         // chart object
@@ -105,11 +124,12 @@ The above chart has been rendered using the following steps:
 
 3. Store the chart data in a JSON object.
 
-4. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+4. Create an `annotations` object in the `dataSource`, to specify the cosmetics and functionalities of the annotation.
+
+5. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
-    * Create an `annotations` object in the `dataSource`, to specify the cosmetics and functionalities of the annotation.
 
-5. Create the `<div>` element to render radio buttons.
+6. Create the `<div>` element to render the chart using `id`.

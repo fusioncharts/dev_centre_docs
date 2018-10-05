@@ -8,9 +8,9 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure your charts using Python `functions` (which you can call from elsewhere), to perform the following:
 
-* [Update Chart Data](#heading=h.vw1bbbfyzkal)
+* [Update Chart Data]({% site.baseurl %}/getting-started/django/configure-your-chart-using-django#update-chart-data-1)
 
-* [Update Chart Attributes](#heading=h.tl9bxv5kakku)
+* [Update Chart Attributes]({% site.baseurl %}/getting-started/django/configure-your-chart-using-django#update-chart-attributes-2)
 
 ## Update Chart Data
 
@@ -240,23 +240,19 @@ The HTML template to render the above chart is shown below:
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
     }
   </style>
-        
+    
   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
   <script>
+    changeBackground = function(e){
+      FusionCharts("ex1").setChartAttribute('bgColor', '#efefef');
+    }
     changeCaption = function(){
-      FusionCharts("ex1").setChartAttribute('caption', 'Test Caption');
-    }
-    changeXAxisName = function(e){
-      FusionCharts("ex1").setChartAttribute('xAxisName', 'Test X-Axis');
-    }
-    changeYAxisName = function(e){
-      FusionCharts("ex1").setChartAttribute('yAxisName', 'Test Y-Axis');
+      FusionCharts("ex1").setChartAttribute('captionAlignment', 'left');
     }
     reset = function(e){
-      FusionCharts("ex1").setChartAttribute('caption', 'Countries With Most Oil Reserves [2017-18]');
-      FusionCharts("ex1").setChartAttribute('xAxisName', 'Country');
-      FusionCharts("ex1").setChartAttribute('yAxisName', 'Reserves (MMbbl)');
+      FusionCharts("ex1").setChartAttribute('captionAlignment', 'center');
+      FusionCharts("ex1").setChartAttribute('bgColor', '#ffffff');
     }
   </script>
 </head>
@@ -268,16 +264,14 @@ The HTML template to render the above chart is shown below:
     <p align="center" id ="message"></p>
   </div>
   <div id="controllers" align="center" style="font-family:'Helvetica Neue', Arial; font-size: 14px;">
-    <input type="button" class="button" onClick="changeCaption()" value='Change Caption: Test Caption'/>
-    <input type="button" class="button" onClick="changeXAxisName()" value='Change X-Axis Name: Test X-Axis'/>
-    <input type="button" class="button" onClick="changeYAxisName()" value='Change Y-Axis Name: Test Y-Axis'/>
-    <input type="button" class="button" onClick="reset()" value='Reset'/>
-  </div> 
-  <br/>
-  <a href="/">Back</a>
+    <input type="button" class="button" onClick="changeBackground()" value='Change Chart Background'/>
+    <input type="button" class="button" onClick="changeCaption()" value='Make Caption Text Left Aligned'/>
+    <input type="button" class="button" onClick="reset()" value='Reset Attributes'/>
+  </div>
 </body>
 </html>
 ```
+
 The sample code provided above corresponds to the following tasks:
 
 1. Import and resolve dependencies:
