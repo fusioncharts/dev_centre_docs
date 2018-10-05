@@ -249,4 +249,4 @@ The above chart has been rendered using the following steps:
 
 8. Create the `<div>` element to render the chart using `id`.
 
-9. In your HTML code, create the three button using `<input>` which updates the chart when clicked.
+9. In your HTML code, create three button using `<input>`.
