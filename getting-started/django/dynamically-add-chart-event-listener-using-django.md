@@ -30,8 +30,8 @@ from django.http import HttpResponse
 from ..fusioncharts import FusionCharts
 
 # Loading Data from a Static JSON String
-# It is a example to show how to attach event in chart.
-# The `chart` method is defined to load chart data from an JSON string.
+# It is an example to show how to attach event in the chart.
+# The `chart` method is defined to load chart data from a JSON string.
 
 def chart(request):
 
