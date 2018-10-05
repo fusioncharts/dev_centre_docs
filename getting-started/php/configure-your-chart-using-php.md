@@ -243,6 +243,4 @@ The above chart has been rendered using the following steps:
 5. Return the output of the `render` function (defined in `FusionCharts`):
     * Pass the `request`, which is also the only argument accepted by the `chart` function you are defining.
     * Pass the relative path of the HTML template, where the chart will be rendered.
-    * Pass a dictionary:
-        * Set the `output` to `column2d.render()`.
-        * Set the `chartTitle` to `Updating chart properties at runtime`.
+    * Pass a dictionary.
