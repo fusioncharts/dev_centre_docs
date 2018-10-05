@@ -107,24 +107,146 @@ A chart, configured to update the **chart caption**, **sub-caption** alignment a
 The full code of the above sample is given below:
 
 ```
+<%
+    def getChart
+    chartData = {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    }
+    # Chart rendering 
+    chart = Fusioncharts::Chart.new({
+        id: "mychart",
+        width: "700",
+        height: "400",
+        type: "column2d",
+        renderAt: "chartContainer",
+        dataSource: chartData
+    })
+    end
+%>
+<style>
+    input[type=radio], input[type=checkbox] {
+		display:none;
+	}
+    input[type=radio] + label, input[type=checkbox] + label {
+		display:inline-block;
+		margin:-2px;
+		padding: 4px 12px;
+		margin-bottom: 0;
+		font-size: 14px;
+		line-height: 20px;
+		color: #333;
+		text-align: center;
+		text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+		vertical-align: middle;
+		cursor: pointer;
+		background-color: #f5f5f5;
+		background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+		background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+		background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+		background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+		background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+		background-repeat: repeat-x;
+		border: 1px solid #ccc;
+		border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+		border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+		border-bottom-color: #b3b3b3;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	}
+	 input[type=radio]:checked + label, input[type=checkbox]:checked + label{
+		   background-image: none;
+		outline: 0;
+		-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+		-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+		box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+			background-color:#e0e0e0;
+	}
+</style>
 
+<script>
+    changeBackground = function(){
+        FusionCharts("mychart").setChartAttribute('bgColor', '#efefef');
+    }
+    changeCaption = function(e){
+        FusionCharts("mychart").setChartAttribute('captionAlignment', 'left');
+    }
+    reset = function(e){
+        FusionCharts("mychart").setChartAttribute('bgColor', '#ffffff');
+        FusionCharts("mychart").setChartAttribute('captionAlignment', 'center');
+    }
+</script>
+
+<div id="chartContainer"></div>
+<%= getChart.render() %>
+<div>
+    <p align="center" id ="message"></p>
+</div>
+
+<div id="controllers" align="center" style="font-family:'Helvetica Neue', Arial; font-size: 14px;">
+    <input type="radio" id="radio1" name="radios" onClick="changeBackground()"/>
+    <label for="radio1">Change Chart Background</label>
+    <input type="radio" id="radio2" name="radios" value="false" onClick="changeCaption()"/>
+    <label for="radio2">Make Caption Text Left Aligned</label>
+    <input type="radio" id="radio3" name="radios" value="false" onClick="reset()"/>
+    <label for="radio3">Reset Attributes</label>
+</div>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Include the `fusioncharts.php` file which contains functions to embed the charts.
+1. Include the necessary libraries and components using `require`. For example, `fusioncharts-rails`, `fusioncharts`, etc
 
-2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`.
+2. Store the chart data in a JSON object.
 
-3. Store the chart data in a JSON object.
-
-4. Store the chart configuration in a JSON object. In the JSON object:
+3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+    * Set the container of the chart to `chartContainer`.
+    * Embed the json data as the value of `chartData`.
 
-5. Return the output of the `render` function (defined in `FusionCharts`):
-    * Pass the `request`, which is also the only argument accepted by the `chart` function you are defining.
-    * Pass the relative path of the HTML template, where the chart will be rendered.
-    * Pass a dictionary.
+4. Add `style` to the buttons using CSS.
+
+5. Write a function to update the background color of the chart when the button is clicked.
+
+6. Write a function to change caption alignment of the chart when the button is clicked.
+
+7. Lastly, add a function for the **Reset** button to return the chart to its rendered state.
+
+8. Create the `<div>` element to render the chart using `id`.
+
+9. In your HTML code, create the three button using `<input>` which updates the chart when clicked.
