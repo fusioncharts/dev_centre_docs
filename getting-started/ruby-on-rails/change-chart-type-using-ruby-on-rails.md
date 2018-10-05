@@ -153,7 +153,7 @@ The above chart has been rendered using the following steps:
 2. Store the chart data in a JSON object.
 
 3. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the container of the chart to `chartContainer`.
     * Embed the json data as the value of `chartData`.
