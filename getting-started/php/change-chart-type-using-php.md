@@ -120,7 +120,10 @@ The above chart has been rendered using the following steps:
 
 2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`.
 
-3. Create **Radio Buttons** and add functionalities to update the chart type.
+3. Create **Radio Buttons** and add functionalities to update the chart type to:
+    * Column 2D
+    * Bar 2D
+    * Pie 2D
 
 4. Store the chart data in a JSON object.
 
