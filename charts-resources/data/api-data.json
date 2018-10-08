@@ -18844,6 +18844,149 @@
                         }
                     }
                 },
+                "stateChanged": {
+                    "id": "event-stateChanged",
+                    "name": "stateChanged",
+                    "kind": "event",
+                    "access": "",
+                    "scope": "instance",
+                    "virtual": false,
+                    "description": "There are five probable states in which the states can be changed. Those are: \n\n **initialized:** When the chart has not been rendered for the first time, the state is `Init`. So, whatever you do before the invoking the render APIs those actions will be in init state. \n\n **waiting:** In every situation when the chart is waiting for some response, is the `waiting` state. So the module loading, data fetching from the url or any other responses that is requested by FusionCharts; puts FusionCharts in waiting state. \n\n Dataloadrequested => setChartData on data url \n\n Chart module is loading \n\n **error:** This state denotes if there any error (not any js error caused by some internal malfunctions). The error can be a wrong chart type or an invalid JSON code. In these cases, FusionCharts goes in an error state. \n\n **ready:** This state denotes that there are no pending dependencies and the chart is ready to render. \n\n **disposed:** Once the chart is disposed. This is the final state for a chart instance. We cannot go back or move forward from this state.",
+                    "examples": {},
+                    "params": {
+                        "eventObj": {
+                            "name": "eventObj",
+                            "subparams": {
+                                "eventType": {
+                                    "name": "eventType",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Type (name) of the event triggered",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "eventId": {
+                                    "name": "eventId",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sender": {
+                                    "name": "sender",
+                                    "type": [
+                                        "FusionCharts"
+                                    ],
+                                    "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "cancelled": {
+                                    "name": "cancelled",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to __true__ when `eventObj.stopPropagation()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "stopPropagation": {
+                                    "name": "stopPropagation",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function called from within a listener to prevent subsequent listeners from being executed.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "defaultPrevented": {
+                                    "name": "defaultPrevented",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether the default action of the event was prevented; set to __true__ when `eventObj.preventDefault()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "preventDefault": {
+                                    "name": "preventDefault",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the [beforeResize]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-beforeResize) event, the chart will not be resized and the [resizeCancelled]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-resizeCancelled) event will be triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detached": {
+                                    "name": "detached",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to __true__ when eventObj.detachHandler() is called ",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detachHandler": {
+                                    "name": "detachHandler",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to allow the listener to remove itself rather than being called externally by the [removeEventListener()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#removeEventListener) method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "data": {
+                                    "name": "data",
+                                    "subparams": {
+                                        "prevState": {
+                                            "name": "prevState",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Specify the previous state of the chart.",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "state": {
+                                            "name": "state",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Specify the current state of the chart.",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "zoomModeChanged": {
                     "id": "event-zoomModeChanged",
                     "name": "zoomModeChanged",
