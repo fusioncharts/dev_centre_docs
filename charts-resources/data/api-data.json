@@ -18964,7 +18964,7 @@
                                             "type": [
                                                 "string"
                                             ],
-                                            "description": "Specify the previous state of the chart.",
+                                            "description": "Specifies the previous state of the chart.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -18975,7 +18975,7 @@
                                             "type": [
                                                 "string"
                                             ],
-                                            "description": "Specify the current state of the chart.",
+                                            "description": "Specifies the current state of the chart.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
