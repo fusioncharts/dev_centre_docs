@@ -927,12 +927,6 @@
                 "name": "labelDistance"
             },
             {
-                "description": "Clearance distance of a label (for sliced-in pies) from an adjacent sliced out pies.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "smartLabelClearance"
-            },
-            {
                 "description": "Whether to use smart labels or not.",
                 "range": "0/1",
                 "type": "Boolean",

@@ -963,12 +963,6 @@
                 "name": "labelDistance"
             },
             {
-                "description": "Clearance distance of a label (for sliced-in pies) from an adjacent sliced out pies.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "smartLabelClearance"
-            },
-            {
                 "description": "This attribute tries to manage overflow of data labels. If enabled, data labels are either wrapped or truncated with ellipses to prevent them from overflowing out of the chart canvas. In case `smartLabels` is disabled, the labels are wrapped to avoid the overflow. Since `smartLabels` is disabled, the wrapped labels might get overlapped. When `smartLabels` is enabled, management of the overflowing labels fit in the &quot;quadrant specific smart labeling algorithm&quot;. Data labels try to wrap first. In case, there is a space constraint in the quadrant, the labels get truncated with ellipses.",
                 "range": "0/1",
                 "type": "Boolean",

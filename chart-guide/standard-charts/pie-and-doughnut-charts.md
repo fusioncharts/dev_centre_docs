@@ -230,7 +230,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5xoz8qh1/) to edit the pie 2D char
 
 ## Configuring the Label Distance and Clearance
 
-Now, you already know how to customize the labels and the label lines in a chart. Here let's discuss how to configure the label distance and clearance of a chart. 
+Now, you already know how to customize the labels and the label lines in a chart. Here let's discuss how to configure the label distance of a chart. 
 
 To configure the label distance and clearance, follow the steps given below:
 
@@ -238,16 +238,13 @@ To configure the label distance and clearance, follow the steps given below:
 
 > **Note:** This attribute is applicable only when smart labeling is disabled.
 
-* Set the clearance distance (in pixels) of a label from adjacent sliced out pies using the `smartLabelClearance` attribute.
-
 Refer to the code given below:
 
 ```json
 {
   "chart": {
     "enableSmartLabels": "0",
-    "labelDistance": "5",
-    "smartLabelClearance": "5"
+    "labelDistance": "5"
   },
 }
 ```

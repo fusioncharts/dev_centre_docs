@@ -4,6 +4,16 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.2</h2>
+
+* https://fusioncharts.jira.com/browse/RED-8098
+- smartLabelClearance (deprecated)
+
+
+
+
+
+
 <h2 class="sub-heading">Version 3.13.1-sr.1</h2>
 27th August, 2018
 
