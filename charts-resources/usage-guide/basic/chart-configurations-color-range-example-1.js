@@ -283,7 +283,6 @@
 
             e.sender.setJSONData(dataobj.angulargauge);
 
-
             var container = e.data.container;
             // Change the sizes according to your need
             var options = {
