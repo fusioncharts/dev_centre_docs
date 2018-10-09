@@ -5,3 +5,13 @@ heading: Color Range
 ---
 
 {% embed_chart chart-configurations-color-range-example-1.js %}
+
+{% embed_chart chart-configurations-color-range-example-2.js %}
+
+{% embed_chart chart-configurations-color-range-example-3.js %}
+
+{% embed_chart chart-configurations-color-range-example-4.js %}
+
+{% embed_chart chart-configurations-color-range-example-5.js %}
+
+{% embed_chart chart-configurations-color-range-example-6.js %}
