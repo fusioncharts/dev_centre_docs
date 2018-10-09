@@ -267,7 +267,7 @@
             var options = {
                 'angulargauge': 'angular gauge',
                 'heatmap': 'heatmap',
-                'world': 'world map'
+                'maps/world': 'world map'
             };
             var chartSelected = 'angulargauge';
 
