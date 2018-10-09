@@ -203,15 +203,15 @@
                         "color": [{
                             "minvalue": "0.5",
                             "maxvalue": "1.0",
-                            "color": "#FFD74D"
+                            "color": "#62B58F"
                         }, {
                             "minvalue": "1.0",
                             "maxvalue": "2.0",
-                            "color": "#FB8C00"
+                            "color": "#FFC533"
                         }, {
                             "minvalue": "2.0",
                             "maxvalue": "3.0",
-                            "color": "#E65100"
+                            "color": "#f4dc42"
                         }]
                     },
                     // Source data as JSON --> id represents countries of world.
@@ -244,7 +244,7 @@
                 "angulargauge": {
                     // Chart Configuration
                     "chart": {
-                        "caption": "Number of Customer Complains for 2017",
+                        "caption": "Percentage of Customer Complains for 2017",
                         "lowerLimit": "0",
                         "upperLimit": "100",
                         "showValue": "1",
