@@ -1,4 +1,4 @@
-var dataobj = {
+dataobj = {
     heatmap: {
         "chart": {
             "caption": "Top Smartphone Ratings",
