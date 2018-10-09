@@ -168,7 +168,7 @@
                         ]
                     }
                 },
-                world: {
+                maps/world: {
                     // Map Configuration
                     "chart": {
                         "caption": "Average Annual Population Growth",
