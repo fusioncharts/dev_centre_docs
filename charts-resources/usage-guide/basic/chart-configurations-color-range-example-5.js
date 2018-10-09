@@ -171,7 +171,7 @@
                             },
                             {
                                 "code": "#f6bc33",
-                                "minValue": "50",
+                                "minValue": "0",
                                 "maxValue": "70",
                                 "label": "Warm"
                             },
@@ -205,7 +205,7 @@
                             "maxvalue": "1.0",
                             "color": "#62B58F"
                         }, {
-                            "minvalue": "1.0",
+                            "minvalue": "0.5",
                             "maxvalue": "2.0",
                             "color": "#FFC533"
                         }, {
@@ -259,7 +259,7 @@
                             "maxValue": "50",
                             "code": "#F2726F"
                         }, {
-                            "minValue": "50",
+                            "minValue": "0",
                             "maxValue": "75",
                             "code": "#FFC533"
                         }, {

@@ -166,7 +166,7 @@
                             {
                                 "code": "#6da81e",
                                 "minValue": "0",
-                                "maxValue": "50",
+                                "maxValue": "70",
                                 "label": "Freezing"
                             },
                             {
@@ -177,7 +177,7 @@
                             },
                             {
                                 "code": "#e24b1a",
-                                "minValue": "70",
+                                "minValue": "71",
                                 "maxValue": "85",
                                 "label": "Hot"
                             }
@@ -202,14 +202,14 @@
                         "gradient": "1",
                         "color": [{
                             "minvalue": "0.5",
-                            "maxvalue": "1.0",
+                            "maxvalue": "2.0",
                             "color": "#62B58F"
                         }, {
                             "minvalue": "1.0",
                             "maxvalue": "2.0",
                             "color": "#FFC533"
                         }, {
-                            "minvalue": "2.0",
+                            "minvalue": "2.1",
                             "maxvalue": "3.0",
                             "color": "#F2726F"
                         }]
@@ -256,14 +256,14 @@
                     "colorRange": {
                         "color": [{
                             "minValue": "0",
-                            "maxValue": "50",
+                            "maxValue": "75",
                             "code": "#F2726F"
                         }, {
                             "minValue": "50",
                             "maxValue": "75",
                             "code": "#FFC533"
                         }, {
-                            "minValue": "75",
+                            "minValue": "76",
                             "maxValue": "100",
                             "code": "#62B58F"
                         }]
