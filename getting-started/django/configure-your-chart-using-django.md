@@ -68,7 +68,8 @@ def chart(request):
             }
         }"""
         )
-    
+    # returning complete JavaScript and HTML code, which is used to generate chart in the browsers.
+    return  render(request, 'update-data-runtime.html', {'output' : angularGauge.render(),'chartTitle': 'Update data at runtime'})
 ```
 
 The HTML template to render the above chart is given below:
@@ -201,6 +202,8 @@ def chart(request):
             }]
         }"""
         )
+        # returning complete JavaScript and HTML code, which is used to generate chart in the browsers.
+        return  render(request, 'update-data-runtime.html', {'output' : angularGauge.render(),'chartTitle': 'Update data at runtime'})
 ```
 The HTML template to render the above chart is shown below: 
 
