@@ -21,6 +21,10 @@
                         "baseFont": "Helvetica Neue,Arial",
                         "toolTipBorderRadius": "2",
                         "toolTipPadding": "5",
+                        "chartTopMargin": "70",
+                        "chartLeftMargin": "70",
+                        "chartRightMargin": "70",
+                        "chartBottomMargin": "70",
                         "theme": "fusion"
                     },
                     "dataset": [{
@@ -234,6 +238,10 @@
                         "showValue": "1",
                         "numberSuffix": "%",
                         "theme": "fusion",
+                        "chartTopMargin": "120",
+                        "chartLeftMargin": "120",
+                        "chartRightMargin": "120",
+                        "chartBottomMargin": "120",
                         "showToolTip": "0"
                     },
                     // Chart Data
