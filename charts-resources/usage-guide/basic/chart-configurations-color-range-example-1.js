@@ -290,7 +290,7 @@
             var options = {
                 'angulargauge': 'angular gauge',
                 'heatmap': 'heatmap',
-                'maps/world': 'world map'
+                'world': 'world map'
             };
             var chartSelected = 'angulargauge';
 
