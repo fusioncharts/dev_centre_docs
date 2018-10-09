@@ -6,7 +6,6 @@
     renderAt: 'chart-container',
     "events": {
         "beforeRender": function(e, d) {
-
             var dataobj = {
                 heatmap: {
                     "chart": {
