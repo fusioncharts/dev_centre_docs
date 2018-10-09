@@ -38002,7 +38002,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when chart plots are not hovered and the event is fired when the mouse is placed at the right most corner of the canvas.",
+                    "description": "Triggered after you hide the crossline at runtime when the chart plots are not hovered. This event is fired when the mouse is placed outside the chart canvas.",
                     "params": {
                         "eventObj": {
                             "name": "eventObj",
