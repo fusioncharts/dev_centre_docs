@@ -211,7 +211,7 @@
                         }, {
                             "minvalue": "2.0",
                             "maxvalue": "3.0",
-                            "color": "#f4dc42"
+                            "color": "#F2726F"
                         }]
                     },
                     // Source data as JSON --> id represents countries of world.
