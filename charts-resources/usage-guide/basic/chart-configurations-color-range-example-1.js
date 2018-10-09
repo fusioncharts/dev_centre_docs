@@ -7,7 +7,7 @@
     "events": {
         "beforeRender": function(e, d) {
             var dataobj = {
-                heatmap: {
+                "heatmap": {
                     "chart": {
                         "caption": "Top Smartphone Ratings",
                         "subcaption": "By Features",
@@ -168,7 +168,7 @@
                         ]
                     }
                 },
-                maps/world: {
+                "maps/world": {
                     // Map Configuration
                     "chart": {
                         "caption": "Average Annual Population Growth",
@@ -225,7 +225,7 @@
                         "showLabel": "1"
                     }]
                 },
-                angulargauge: {
+                "angulargauge": {
                     // Chart Configuration
                     "chart": {
                         "caption": "Nordstorm's Customer Satisfaction Score for 2017",
