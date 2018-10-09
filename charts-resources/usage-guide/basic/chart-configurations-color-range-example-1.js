@@ -244,7 +244,7 @@
                 "angulargauge": {
                     // Chart Configuration
                     "chart": {
-                        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                        "caption": "Number of Customer Complains for 2017",
                         "lowerLimit": "0",
                         "upperLimit": "100",
                         "showValue": "1",
