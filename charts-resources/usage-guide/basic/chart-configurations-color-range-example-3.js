@@ -301,7 +301,7 @@
 
                 var radioContainer = document.createElement('div');
                 addClass(radioContainer, 'change-type');
-                window.__onChange = function(option) {
+                window.__onChange3 = function(option) {
                     e.sender.chartType(option);
                     e.sender.setJSONData(dataobj3[option]);
                 }
@@ -317,7 +317,7 @@
 
                 function radioWrapper(wrapperId, inputId, label, selected, optionLabel) {
                     var item = "<div id='" + wrapperId + "' >";
-                    item += "<input name='dimesion-selector' id='" + inputId + "' type='radio' " + (selected ? "checked='checked'" : '') + " onchange='__onChange(\"" + optionLabel + "\")'/>";
+                    item += "<input name='dimesion-selector' id='" + inputId + "' type='radio' " + (selected ? "checked='checked'" : '') + " onchange='__onChange3(\"" + optionLabel + "\")'/>";
                     item += "<label for='" + inputId + "' >" + label + "</label>"
                     item += "</div>";
                     return item;
@@ -344,10 +344,10 @@
                 styleNode.innerHTML = css;
                 document.body.appendChild(styleNode);
             }
-            if (!window.__sample_change_chart_type_instansiated) {
+            //if (!window.__sample_change_chart_type_instansiated) {
                 instantiate();
-            }
-            window.__sample_change_chart_type_instansiated = false;
+            //}
+            //window.__sample_change_chart_type_instansiated = false;
         }
     }
 }
