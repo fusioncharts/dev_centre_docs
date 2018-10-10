@@ -327,7 +327,7 @@
                 Object.keys(options).forEach(function(option, index) {
                     var label = options[option];
                     var selected = chartSelected === option;
-                    var radioOption = radioWrapper('radio' + (index + 1), 'radioButton' + (index + 1), label.toUpperCase(), selected, option);
+                    var radioOption = radioWrapper('radio' + (index + 2), 'radioButton' + (index + 1), label.toUpperCase(), selected, option);
                     changeTypeChilds += radioOption;
                 });
 
