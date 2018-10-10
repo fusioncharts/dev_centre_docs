@@ -45,18 +45,18 @@ The color range set for the three is shown in the table below:
 		<th>World Map</th>
 	</tr>
 	<tr>
-		<td>0-50 - Green</td>
-		<td>0-50 - Green</td>
+		<td>0 - 50 - Green</td>
+		<td>0 - 50 - Green</td>
 		<td>0.5M - 1M - Green</td>
 	</tr>
 	<tr>
-		<td>50-75 - Yellow</td>
-		<td>50-70 - Yellow</td>
+		<td>50 - 75 - Yellow</td>
+		<td>50 - 70 - Yellow</td>
 		<td>1M - 2M - Yellow</td>
 	</tr>
 	<tr>
-		<td>75-100 - Red</td>
-		<td>70-85 - Red</td>
+		<td>75 - 100 - Red</td>
+		<td>70 - 85 - Red</td>
 		<td>2M - 3M - Red</td>
 	</tr>
 </table>
@@ -81,38 +81,26 @@ Let's take the same examples and see what happens when two range partially overl
 
 <table>
 	<tr>
-		<th></th>
-		<th></th>
-		<th></th>
+		<th>Angular Gauge</th>
+		<th>Heat Map</th>
+		<th>World Map</th>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>0 - 50 - Green</td>
+		<td>0 - 50 - Green</td>
+		<td>0.5M - 1M - Green</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>43 - 75 - Yellow</td>
+		<td>43 - 70 - Yellow</td>
+		<td>0.7M - 2M - Yellow</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>75 - 100 - Red</td>
+		<td>70 - 85 - Red</td>
+		<td>2M - 3M - Red</td>
 	</tr>
 </table>
-
-Angular Gauge|Heat Map|World Map|
--|-|-
-0-50 - Green
-43-75 - Yellow
-75-100 - Red|0-50 - Green
-43-70 - Yellow
-70-85 - Red|0.5M - 1M - Green
-0.7M - 2M - Yellow
-2M - 3M - Red|
-
-
 
 The charts will look like as shown below:
 
@@ -132,38 +120,26 @@ Now, let's take the same examples and see what happens when two range completely
 
 <table>
 	<tr>
-		<th></th>
-		<th></th>
-		<th></th>
+		<th>Angular Gauge</th>
+		<th>Heat Map</th>
+		<th>World Map</th>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>0 - 75 - Green</td>
+		<td>0 - 70 - Green</td>
+		<td>0.5M - 2M - Green</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>43 - 74 - Yellow</td>
+		<td>43 - 69 - Yellow</td>
+		<td>0.8M - 1.9M - Yellow</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>75 - 100 - Red</td>
+		<td>70 - 85 - Red</td>
+		<td>2M - 3M - Red</td>
 	</tr>
 </table>
-
-Angular Gauge|Heat Map|World Map|
--|-|-
-0-75 - RED
-43-74 - Yellow
-75-100 - Green|0-70 - Green
-43-69 - Yellow
-70-85 - Red|0.5M - 2M - Green
-0.8M - 1.9M - Yellow
-2M - 3M - Red|
-
-
 
 {% embed_chart chart-configurations-color-range-example-3.js %}
 
@@ -181,38 +157,26 @@ Now let's check what happens if two range has the same max value. For instance, 
 
 <table>
 	<tr>
-		<th></th>
-		<th></th>
-		<th></th>
+		<th>Angular Gauge</th>
+		<th>Heat Map</th>
+		<th>World Map</th>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>0 - 75 - Green</td>
+		<td>0 - 70 - Green</td>
+		<td>0.5M - 2M - Green</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>50 - 75 - Yellow</td>
+		<td>50 - 70 - Yellow</td>
+		<td>1M - 2M - Yellow</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>76 - 100 - Red</td>
+		<td>71 - 85 - Red</td>
+		<td>2.1M - 3M - Red</td>
 	</tr>
 </table>
-
-Angular Gauge|Heat Map|World Map|
--|-|-
-0-75 - Green
-50-75 - Yellow
-76-100 - Red|0-70 - Green
-50-70 - Yellow
-71-85 - Red|0.5M - 2M - Green
-1M - 2M - Yellow
-2.1M - 3M - Red|
-
-
 
 {% embed_chart chart-configurations-color-range-example-4.js %}
 
@@ -230,38 +194,26 @@ Now let's check what happens if two range has the same minimum value. For instan
 
 <table>
 	<tr>
-		<th></th>
-		<th></th>
-		<th></th>
+		<th>Angular Gauge</th>
+		<th>Heat Map</th>
+		<th>World Map</th>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>0 - 50 - Green</td>
+		<td>0 - 50 - Green</td>
+		<td>0.5M - 1M - Green</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>0 - 75 - Yellow</td>
+		<td>0 - 70 - Yellow</td>
+		<td>0.5M - 2M - Yellow</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>75 - 100 - Red</td>
+		<td>70 - 85 - Red</td>
+		<td>2M - 3M - Red</td>
 	</tr>
 </table>
-
-Angular Gauge|Heat Map|World Map|
--|-|-
-0-50 - Green
-0-75 - Yellow
-75-100 - Red|0-50 - Green
-0-70 - Yellow
-70-85 - Red|0.5M - 1M - Green
-0.5M - 2M - Yellow
-2M - 3M - Red|
-
-
 
 {% embed_chart chart-configurations-color-range-example-5.js %}
 
@@ -279,38 +231,26 @@ Now let's check what happens if there is a value which does not belong to any of
 
 <table>
 	<tr>
-		<th></th>
-		<th></th>
-		<th></th>
+		<th>Angular Gauge</th>
+		<th>Heat Map</th>
+		<th>World Map</th>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>0 - 50 - Green</td>
+		<td>0 - 50 - Green</td>
+		<td>0.5M - 1M - Green</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>53 - 75 - Yellow</td>
+		<td>53 - 70 - Yellow</td>
+		<td>1.2M - 2M - Yellow</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>75 - 100 - Red</td>
+		<td>70 - 85 - Red</td>
+		<td>2M - 3M - Red</td>
 	</tr>
 </table>
-
-Angular Gauge|Heat Map|World Map|
--|-|-
-0-50 - Green
-53-75 - Yellow
-75-100 - Red|0-50 - Green
-53-70 - Yellow
-70-85 - Red|0.5M - 1M - Green
-1.2M - 2M - Yellow
-2M - 3M - Red|
-
-
 
 {% embed_chart chart-configurations-color-range-example-6.js %}
 
