@@ -317,7 +317,7 @@
 
                 function radioWrapper(wrapperId, inputId, label, selected, optionLabel) {
                     var item = "<div id='" + wrapperId + "' >";
-                    item += "<input name='dimesion-selector' id='" + inputId + "' type='radio' " + (selected ? "checked='checked'" : '') + " onchange='__onChange1(\"" + optionLabel + "\")'/>";
+                    item += "<input name='dimesion-selector' id='" + inputId + "' type='radio' " + (selected ? "checked" : '') + " onchange='__onChange1(\"" + optionLabel + "\")'/>";
                     item += "<label for='" + inputId + "' >" + label + "</label>"
                     item += "</div>";
                     return item;
