@@ -30,11 +30,11 @@ Let's understand the usage of color range for each of the above.
 
 To understand the color range let's take simple examples of an Angular Gauge, a Heat Map and a World Map showcasing the following:
 
-* Angular Gauge -  Number of customer complaints. 
+* **Angular Gauge** -  Number of customer complaints. 
 
-* Heat Map - Average Temperature in Fahrenheit for 4 cities of the US.
+* **Heat Map** - Average Temperature in Fahrenheit for 4 cities of the US.
 
-* World Map - Average Population Growth across continents
+* **World Map** - Average Population Growth across continents
 
 The color range set for the three is shown in the table below:
 
@@ -65,11 +65,11 @@ The color range set for the three is shown in the table below:
 
 In this scenario, the values will appear in the following color:
 
-* Angular Gauge -  Any value below 50 will appear in Green. Similarly, any value below 75 but greater than equal to 50 will appear as yellow and the value 75 will appear in Red.
+* **Angular Gauge** -  Any value below 50 will appear in Green. Similarly, any value below 75 but greater than equal to 50 will appear as yellow and the value 75 will appear in Red.
 
-* Heat Map - The value 50 will appear in the color yellow and not in Green since the upper limit is exclusive for any range and the lower limit is inclusive for any range. Any value below 50 will appear in Green. Similarly, any value below 70 will appear as yellow and the value 70 will appear in Red.
+* **Heat Map** - The value 50 will appear in the color yellow and not in Green since the upper limit is exclusive for any range and the lower limit is inclusive for any range. Any value below 50 will appear in Green. Similarly, any value below 70 will appear as yellow and the value 70 will appear in Red.
 
-* World Map - The value 1 Million will appear in the color Yellow and not in Green since the upper limit is exclusive for any range and the lower limit is inclusive for any range. Any value below 1 Million will appear in Green. Similarly, any value below 2 Million will appear as yellow and the values 2 Million and above will appear in Red.
+* **World Map** - The value 1 Million will appear in the color Yellow and not in Green since the upper limit is exclusive for any range and the lower limit is inclusive for any range. Any value below 1 Million will appear in Green. Similarly, any value below 2 Million will appear as yellow and the values 2 Million and above will appear in Red.
 
 Please note, there are values which are equal to upper limit of one color and the lower limit of the other. The value 50 will appear in the color yellow and not in red since the upper limit is exclusive for any range and the lower limit is inclusive for any range.
 
@@ -108,11 +108,11 @@ The charts will look like as shown below:
 
 In this scenario, the values will appear in the following color:
 
-* Angular Gauge - The values 43 to 49 are overlapping the color Green and Yellow. In this scenario, values from 0-49 will appear as Green. Values from 50-74 will appear in Yellow and values from 75-100 will appear as Red.
+* **Angular Gauge** - The values 43 to 49 are overlapping the color Green and Yellow. In this scenario, values from 0-49 will appear as Green. Values from 50-74 will appear in Yellow and values from 75-100 will appear as Red.
 
-* Heat Map - The values 43 to 49 are overlapping the color Green and Yellow. In this scenario, values from 0-49 will appear as Green. Values from 50-69 will appear in Yellow and values from 70-85 will appear as Red.
+* **Heat Map** - The values 43 to 49 are overlapping the color Green and Yellow. In this scenario, values from 0-49 will appear as Green. Values from 50-69 will appear in Yellow and values from 70-85 will appear as Red.
 
-* World Map - The values from 0.7M to 0.9M are overlapping the color Green and Yellow. In this scenario, values from 0.5M - 0.9M will appear as Green. Values from 1M - 1.9M will appear in Yellow and values from 2M - 3M will appear as Red.
+* **World Map** - The values from 0.7M to 0.9M are overlapping the color Green and Yellow. In this scenario, values from 0.5M - 0.9M will appear as Green. Values from 1M - 1.9M will appear in Yellow and values from 2M - 3M will appear as Red.
 
 ## Two range completely Overlap
 
@@ -145,11 +145,11 @@ Now, let's take the same examples and see what happens when two range completely
 
 In this scenario, the values will appear in the following color:
 
-* Angular Gauge - The values 0-75 completely overlap the two range for the color Green and Yellow. In this scenario, any values from 0-74 will appear in Green and any values from 75-100 will appear as Red.
+* **Angular Gauge** - The values 0-75 completely overlap the two range for the color Green and Yellow. In this scenario, any values from 0-74 will appear in Green and any values from 75-100 will appear as Red.
 
-* Heat Map - The values 0-70 are overlapping the color Green and Yellow. In this scenario, values from 0-69 will appear as Green and any values from values from 70-85 will appear as Red.
+* **Heat Map** - The values 0-70 are overlapping the color Green and Yellow. In this scenario, values from 0-69 will appear as Green and any values from values from 70-85 will appear as Red.
 
-* World Map - The values from 0.7M to 0.9M are overlapping the color Green and Yellow. In this scenario, values from 0.5M - 1.9M will appear as Green and values from 2M - 3M will appear as Red.
+* **World Map** - The values from 0.7M to 0.9M are overlapping the color Green and Yellow. In this scenario, values from 0.5M - 1.9M will appear as Green and values from 2M - 3M will appear as Red.
 
 ## Same max value of two range 
 
@@ -182,11 +182,11 @@ Now let's check what happens if two range has the same max value. For instance, 
 
 In this scenario, the values will appear in the following color:
 
-* Angular Gauge - The value 75 is the same for both Green and Yellow. Here, the value 75 will appear in Yellow.
+* **Angular Gauge** - The value 75 is the same for both Green and Yellow. Here, the value 75 will appear in Yellow.
 
-* Heat Map - The value 70 is the same for both Green and Yellow. Here, the value 70 will appear in Yellow.
+* **Heat Map** - The value 70 is the same for both Green and Yellow. Here, the value 70 will appear in Yellow.
 
-* World Map - The value 2M is the same for both Green and Yellow. Here, the value 2M will appear in Yellow.
+* **World Map** - The value 2M is the same for both Green and Yellow. Here, the value 2M will appear in Yellow.
 
 ## Same min value of two range
 
@@ -219,11 +219,11 @@ Now let's check what happens if two range has the same minimum value. For instan
 
 In this scenario, the values will appear in the following color:
 
-* Angular Gauge - The value 0 is the same for both Green and Yellow. Here, the value 0 will appear in red.
+* **Angular Gauge** - The value 0 is the same for both Green and Yellow. Here, the value 0 will appear in red.
 
-* Heat Map - The value 0 is the same for both Green and Yellow. Here, the value 0 will appear in green.
+* **Heat Map** - The value 0 is the same for both Green and Yellow. Here, the value 0 will appear in green.
 
-* World Map - The value 0.5M is the same for both Green and Yellow. Here, the value 0.5M will appear in green.
+* **World Map** - The value 0.5M is the same for both Green and Yellow. Here, the value 0.5M will appear in green.
 
 ## Values not belonging to any range
 
@@ -256,8 +256,8 @@ Now let's check what happens if there is a value which does not belong to any of
 
 In this scenario, the values will appear in the following color:
 
-* Angular Gauge - There are two values 51 and 52 which are not mapped to any color. In this scenario, these values will appear as per the color of the previous range, which in this case is Green. In case the value is less than the minimum value (suppose minus 10), then it will take the color of the first range which is Red.
+* **Angular Gauge** - There are two values 51 and 52 which are not mapped to any color. In this scenario, these values will appear as per the color of the previous range, which in this case is Green. In case the value is less than the minimum value (suppose minus 10), then it will take the color of the first range which is Red.
 
-* Heat Map - There are values from 51 and 52 which are not mapped to any color. In this scenario, these values will not be mapped with any color code. This is because in a heat map you cannot assume any color for the values which are not residing in the range of values.
+* **Heat Map** - There are values from 51 and 52 which are not mapped to any color. In this scenario, these values will not be mapped with any color code. This is because in a heat map you cannot assume any color for the values which are not residing in the range of values.
 
-* World Map - There are values from 1.1M - 1.2M which are not mapped to any color. In this scenario, these values will not be mapped with any color code. This is because in maps you cannot assume any color for the values which are not residing in the range of values.
+* **World Map** - There are values from 1.1M - 1.2M which are not mapped to any color. In this scenario, these values will not be mapped with any color code. This is because in maps you cannot assume any color for the values which are not residing in the range of values.
