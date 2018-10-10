@@ -344,7 +344,9 @@
                 styleNode.innerHTML = css;
                 document.body.appendChild(styleNode);
             }
+            console.log('here 1');
             if (!window.__sample_change_chart_type_instansiated) {
+                console.log('here 2');
                 instantiate();
             }
             window.__sample_change_chart_type_instansiated = true;
