@@ -317,7 +317,7 @@
 
                 function radioWrapper(wrapperId, inputId, label, selected, optionLabel) {
                     var item = "<div id='" + wrapperId + "' >";
-                    item += "<input name='dimesion-selector' id='" + inputId + "' type='radio' " + (selected ? "checked" : '') + " onchange='__onChange1(\"" + optionLabel + "\")'/>";
+                    item += "<input name='dimesion-selector' id='" + inputId + "' type='radio' " + (selected ? "checked='checked'" : '') + " onchange='__onChange1(\"" + optionLabel + "\")'/>";
                     item += "<label for='" + inputId + "' >" + label + "</label>"
                     item += "</div>";
                     return item;
@@ -326,7 +326,8 @@
 
                 Object.keys(options).forEach(function(option, index) {
                     var label = options[option];
-                    var selected = chartSelected === option;
+                    var selected = (chartSelected === option);
+                    console.log(label +'--'+selected+'--'+ option);
                     var radioOption = radioWrapper('radio' + (index + 1), 'radioButton' + (index + 1), label.toUpperCase(), selected, option);
                     changeTypeChilds += radioOption;
                 });
