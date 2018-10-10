@@ -2,7 +2,7 @@
     type: 'angulargauge',
     height: '400',
     width: '700',
-    id: 'chart1',
+    id: 'chart6',
     dataFormat: 'json',
     renderAt: 'chart-container',
     "events": {
