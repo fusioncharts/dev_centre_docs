@@ -347,7 +347,7 @@
             if (!window.__sample_change_chart_type_instansiated) {
                 instantiate();
             }
-            window.__sample_change_chart_type_instansiated = false;
+            window.__sample_change_chart_type_instansiated = true;
         }
     }
 }
