@@ -7,7 +7,6 @@
     renderAt: 'chart-container',
     "events": {
         "beforeRender": function(e, d) {
-            console.log(e.data.container);
             var dataobj2 = {
                 "heatmap": {
                     "chart": {
@@ -346,6 +345,7 @@
                 document.body.appendChild(styleNode);
             }
             if (!window.__sample_change_chart_type_instansiated) {
+                debugger;
                 instantiate();
             }
             window.__sample_change_chart_type_instansiated = true;
