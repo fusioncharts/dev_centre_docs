@@ -38,18 +38,28 @@ To understand the color range let's take simple examples of an Angular Gauge, a 
 
 The color range set for the three is shown in the table below:
 
-
-Angular Gauge|Heat Map|World Map|
--|-|-
-0-50 - Green
-50-75 - Yellow
-75-100 - Red|0-50 - Green
-50-70 - Yellow
-70-85 - Red|0.5M - 1M - Green
-1M - 2M - Yellow
-2M - 3M - Red|
-
-
+<table>
+	<tr>
+		<th>Angular Gauge</th>
+		<th>Heat Map</th>
+		<th>World Map</th>
+	</tr>
+	<tr>
+		<td>0-50 - Green</td>
+		<td>0-50 - Green</td>
+		<td>0.5M - 1M - Green</td>
+	</tr>
+	<tr>
+		<td>50-75 - Yellow</td>
+		<td>50-70 - Yellow</td>
+		<td>1M - 2M - Yellow</td>
+	</tr>
+	<tr>
+		<td>75-100 - Red</td>
+		<td>70-85 - Red</td>
+		<td>2M - 3M - Red</td>
+	</tr>
+</table>
 
 {% embed_chart chart-configurations-color-range-example-1.js %}
 
@@ -69,6 +79,28 @@ Similarly, there can be different situations where the range of values is set in
 
 Let's take the same examples and see what happens when two range partially overlaps. For instance, the color range is defined as shown below:
 
+<table>
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
 
 Angular Gauge|Heat Map|World Map|
 -|-|-
@@ -98,6 +130,28 @@ In this scenario, the values will appear in the following color:
 
 Now, let's take the same examples and see what happens when two range completely overlaps. For instance, the color range is defined as shown below:
 
+<table>
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
 
 Angular Gauge|Heat Map|World Map|
 -|-|-
@@ -125,6 +179,28 @@ In this scenario, the values will appear in the following color:
 
 Now let's check what happens if two range has the same max value. For instance, the color range is defined as shown below:
 
+<table>
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
 
 Angular Gauge|Heat Map|World Map|
 -|-|-
@@ -152,6 +228,28 @@ In this scenario, the values will appear in the following color:
 
 Now let's check what happens if two range has the same minimum value. For instance, the color range is defined as shown below:
 
+<table>
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
 
 Angular Gauge|Heat Map|World Map|
 -|-|-
@@ -179,6 +277,28 @@ In this scenario, the values will appear in the following color:
 
 Now let's check what happens if there is a value which does not belong to any of the range. For instance, the color range is defined as shown below:
 
+<table>
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
 
 Angular Gauge|Heat Map|World Map|
 -|-|-
