@@ -7,7 +7,7 @@
     renderAt: 'chart-container',
     "events": {
         "beforeRender": function(e, d) {
-            var dataobj1 = {
+            var dataobj2 = {
                 "heatmap": {
                     "chart": {
                         "theme": "fusion",
@@ -271,7 +271,7 @@
                 },
             };
 
-            e.sender.setJSONData(dataobj1.angulargauge);
+            e.sender.setJSONData(dataobj2.angulargauge);
 
             var container = e.data.container;
             // Change the sizes according to your need
@@ -298,7 +298,7 @@
                 addClass(radioContainer, 'change-type');
                 window.__onChange1 = function(option) {
                     e.sender.chartType(option);
-                    e.sender.setJSONData(dataobj1[option]);
+                    e.sender.setJSONData(dataobj2[option]);
                 }
                 // Util to add class
                 function addClass(element, className) {
