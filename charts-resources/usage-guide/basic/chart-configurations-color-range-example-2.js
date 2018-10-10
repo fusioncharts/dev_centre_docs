@@ -340,10 +340,10 @@
                 styleNode.innerHTML = css;
                 document.body.appendChild(styleNode);
             }
-            if (!window.__sample_change_chart_type_instansiated) {
+            if (!window[uniqueId]) {
                 instantiate();
             }
-            window.__sample_change_chart_type_instansiated = true;
+            window[uniqueId] = true;
         }
     }
 }

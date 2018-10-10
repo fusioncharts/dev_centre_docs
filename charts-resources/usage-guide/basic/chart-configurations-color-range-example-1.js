@@ -281,11 +281,11 @@
                 'maps/world': 'world map'
             };
             var chartSelected = 'angulargauge';
+            var uniqueId = Math.random().toString(36).substr(2, 9);
 
             function instantiate() {
                 // Create option containers
                 var parent = container.parentNode;
-                var uniqueId = Math.random().toString(36).substr(2, 9);
 
                 var optionsContainer = document.createElement('div');
                 optionsContainer.id = 'config-container';
@@ -340,10 +340,10 @@
                 styleNode.innerHTML = css;
                 document.body.appendChild(styleNode);
             }
-            if (!window.__sample_change_chart_type_instansiated) {
+            if (!window[uniqueId]) {
                 instantiate();
             }
-            window.__sample_change_chart_type_instansiated = true;
+            window[uniqueId] = true;
         }
     }
 }
