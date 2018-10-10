@@ -2,12 +2,12 @@
     type: 'angulargauge',
     height: '400',
     width: '700',
-    id: 'chart4',
+    id: 'chart1',
     dataFormat: 'json',
     renderAt: 'chart-container',
     "events": {
         "beforeRender": function(e, d) {
-            var dataobj4 = {
+            var dataobj1 = {
                 "heatmap": {
                     "chart": {
                         "theme": "fusion",
@@ -20,8 +20,7 @@
                         "mapByCategory": "1"
                     },
                     "rows": {
-                        "row": [
-                            {
+                        "row": [{
                                 "id": "NY",
                                 "label": "New York"
                             },
@@ -40,8 +39,7 @@
                         ]
                     },
                     "columns": {
-                        "column": [
-                            {
+                        "column": [{
                                 "id": "wI",
                                 "label": "Winter"
                             },
@@ -59,115 +57,111 @@
                             }
                         ]
                     },
-                    "dataset": [
-                        {
-                            "data": [
-                                {
-                                    "rowid": "LA",
-                                    "columnid": "WI",
-                                    "displayValue": "60.10",
-                                    "colorRangeLabel": "Warm"
-                                },
-                                {
-                                    "rowid": "LA",
-                                    "columnid": "SP",
-                                    "displayValue": "64.5",
-                                    "colorRangeLabel": "Warm"
-                                },
-                                {
-                                    "rowid": "LA",
-                                    "columnid": "SU",
-                                    "displayValue": "68.2",
-                                    "colorRangeLabel": "Warm"
-                                },
-                                {
-                                    "rowid": "LA",
-                                    "columnid": "AU",
-                                    "displayValue": "65.7",
-                                    "colorRangeLabel": "Warm"
-                                },
-                                {
-                                    "rowid": "NY",
-                                    "columnid": "WI",
-                                    "displayValue": "33.7",
-                                    "colorRangeLabel": "Freezing"
-                                },
-                                {
-                                    "rowid": "NY",
-                                    "columnid": "SP",
-                                    "displayValue": "57.8",
-                                    "colorRangeLabel": "Warm"
-                                },
-                                {
-                                    "rowid": "NY",
-                                    "columnid": "SU",
-                                    "displayValue": "74.49",
-                                    "colorRangeLabel": "Hot"
-                                },
-                                {
-                                    "rowid": "NY",
-                                    "columnid": "AU",
-                                    "displayValue": "57.6",
-                                    "colorRangeLabel": "Warm"
-                                },
-                                {
-                                    "rowid": "CH",
-                                    "columnid": "WI",
-                                    "displayValue": "22.89",
-                                    "colorRangeLabel": "Freezing"
-                                },
-                                {
-                                    "rowid": "CH",
-                                    "columnid": "SP",
-                                    "displayValue": "55.7",
-                                    "colorRangeLabel": "Warm"
-                                },
-                                {
-                                    "rowid": "CH",
-                                    "columnid": "SU",
-                                    "displayValue": "72.2",
-                                    "colorRangeLabel": "Hot"
-                                },
-                                {
-                                    "rowid": "CH",
-                                    "columnid": "AU",
-                                    "displayValue": "51.6",
-                                    "colorRangeLabel": "Warm"
-                                },
-                                {
-                                    "rowid": "HO",
-                                    "columnid": "WI",
-                                    "displayValue": "53.0",
-                                    "colorRangeLabel": "Warm"
-                                },
-                                {
-                                    "rowid": "HO",
-                                    "columnid": "SP",
-                                    "displayValue": "72.7",
-                                    "colorRangeLabel": "Hot"
-                                },
-                                {
-                                    "rowid": "HO",
-                                    "columnid": "SU",
-                                    "displayValue": "83.3",
-                                    "colorRangeLabel": "Hot"
-                                },
-                                {
-                                    "rowid": "HO",
-                                    "columnid": "AU",
-                                    "displayValue": "53.0",
-                                    "colorRangeLabel": "Warm"
-                                }
-                            ]
-                        }
-                    ],
+                    "dataset": [{
+                        "data": [{
+                                "rowid": "LA",
+                                "columnid": "WI",
+                                "displayValue": "60.10",
+                                "colorRangeLabel": "Warm"
+                            },
+                            {
+                                "rowid": "LA",
+                                "columnid": "SP",
+                                "displayValue": "64.5",
+                                "colorRangeLabel": "Warm"
+                            },
+                            {
+                                "rowid": "LA",
+                                "columnid": "SU",
+                                "displayValue": "68.2",
+                                "colorRangeLabel": "Warm"
+                            },
+                            {
+                                "rowid": "LA",
+                                "columnid": "AU",
+                                "displayValue": "65.7",
+                                "colorRangeLabel": "Warm"
+                            },
+                            {
+                                "rowid": "NY",
+                                "columnid": "WI",
+                                "displayValue": "33.7",
+                                "colorRangeLabel": "Freezing"
+                            },
+                            {
+                                "rowid": "NY",
+                                "columnid": "SP",
+                                "displayValue": "57.8",
+                                "colorRangeLabel": "Warm"
+                            },
+                            {
+                                "rowid": "NY",
+                                "columnid": "SU",
+                                "displayValue": "74.49",
+                                "colorRangeLabel": "Hot"
+                            },
+                            {
+                                "rowid": "NY",
+                                "columnid": "AU",
+                                "displayValue": "57.6",
+                                "colorRangeLabel": "Warm"
+                            },
+                            {
+                                "rowid": "CH",
+                                "columnid": "WI",
+                                "displayValue": "22.89",
+                                "colorRangeLabel": "Freezing"
+                            },
+                            {
+                                "rowid": "CH",
+                                "columnid": "SP",
+                                "displayValue": "55.7",
+                                "colorRangeLabel": "Warm"
+                            },
+                            {
+                                "rowid": "CH",
+                                "columnid": "SU",
+                                "displayValue": "72.2",
+                                "colorRangeLabel": "Hot"
+                            },
+                            {
+                                "rowid": "CH",
+                                "columnid": "AU",
+                                "displayValue": "51.6",
+                                "colorRangeLabel": "Warm"
+                            },
+                            {
+                                "rowid": "HO",
+                                "columnid": "WI",
+                                "displayValue": "53.0",
+                                "colorRangeLabel": "Warm"
+                            },
+                            {
+                                "rowid": "HO",
+                                "columnid": "SP",
+                                "displayValue": "72.7",
+                                "colorRangeLabel": "Hot"
+                            },
+                            {
+                                "rowid": "HO",
+                                "columnid": "SU",
+                                "displayValue": "83.3",
+                                "colorRangeLabel": "Hot"
+                            },
+                            {
+                                "rowid": "HO",
+                                "columnid": "AU",
+                                "displayValue": "53.0",
+                                "colorRangeLabel": "Warm"
+                            }
+                        ]
+                    }],
                     "colorRange": {
                         "gradient": "0",
-                        "color": [
-                            {
+                        "color": [{
                                 "code": "#6da81e",
                                 "minValue": "0",
-                                "maxValue": "70",
+                                "maxValue": "50",
                                 "label": "Freezing"
                             },
                             {
@@ -178,7 +172,7 @@
                             },
                             {
                                 "code": "#e24b1a",
-                                "minValue": "71",
+                                "minValue": "70",
                                 "maxValue": "85",
                                 "label": "Hot"
                             }
@@ -203,14 +197,14 @@
                         "gradient": "1",
                         "color": [{
                             "minvalue": "0.5",
-                            "maxvalue": "2.0",
+                            "maxvalue": "1.0",
                             "color": "#62B58F"
                         }, {
                             "minvalue": "1.0",
                             "maxvalue": "2.0",
                             "color": "#FFC533"
                         }, {
-                            "minvalue": "2.1",
+                            "minvalue": "2.0",
                             "maxvalue": "3.0",
                             "color": "#F2726F"
                         }]
@@ -257,14 +251,14 @@
                     "colorRange": {
                         "color": [{
                             "minValue": "0",
-                            "maxValue": "75",
+                            "maxValue": "50",
                             "code": "#F2726F"
                         }, {
                             "minValue": "50",
                             "maxValue": "75",
                             "code": "#FFC533"
                         }, {
-                            "minValue": "76",
+                            "minValue": "75",
                             "maxValue": "100",
                             "code": "#62B58F"
                         }]
@@ -277,7 +271,7 @@
                 },
             };
 
-            e.sender.setJSONData(dataobj4.angulargauge);
+            e.sender.setJSONData(dataobj1.angulargauge);
 
             var container = e.data.container;
             // Change the sizes according to your need
@@ -300,11 +294,11 @@
                 spanLabel.id = 'select-text';
                 spanLabel.innerText = "Choose a chart type: ";
 
-                var radioContainer = document.createElement('div');
+                var radioContainer = document.createElement('form');
                 addClass(radioContainer, 'change-type');
-                window.__onChange4 = function(option) {
+                window.__onChange1 = function(option) {
                     e.sender.chartType(option);
-                    e.sender.setJSONData(dataobj4[option]);
+                    e.sender.setJSONData(dataobj1[option]);
                 }
                 // Util to add class
                 function addClass(element, className) {
@@ -318,7 +312,7 @@
 
                 function radioWrapper(wrapperId, inputId, label, selected, optionLabel) {
                     var item = "<div id='" + wrapperId + "' >";
-                    item += "<input name='dimesion-selector-" + uniqueId + "'' id='" + inputId + "' type='radio' " + (selected ? "checked" : '') + " onchange='__onChange4(\"" + optionLabel + "\")'/>";
+                    item += "<input name='dimesion-selector-" + uniqueId + "'' id='" + inputId + "' type='radio' " + (selected ? "checked" : '') + " onchange='__onChange1(\"" + optionLabel + "\")'/>";
                     item += "<label for='" + inputId + "' >" + label + "</label>"
                     item += "</div>";
                     return item;
