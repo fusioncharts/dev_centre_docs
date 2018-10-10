@@ -344,12 +344,10 @@
                 styleNode.innerHTML = css;
                 document.body.appendChild(styleNode);
             }
-            console.log('here 3');
             if (!window.__sample_change_chart_type_instansiated) {
-                console.log('here 4');
                 instantiate();
             }
-            window.__sample_change_chart_type_instansiated = true;
+            window.__sample_change_chart_type_instansiated = false;
         }
     }
 }
