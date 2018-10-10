@@ -291,6 +291,7 @@
             function instantiate() {
                 // Create option containers
                 var parent = container.parentNode;
+                var uniqueId = Math.random().toString(36).substr(2, 9);
 
                 var optionsContainer = document.createElement('div');
                 optionsContainer.id = 'config-container';
@@ -301,7 +302,7 @@
 
                 var radioContainer = document.createElement('div');
                 addClass(radioContainer, 'change-type');
-                window.__onChange6 = function(option) {
+                window.__onChange1 = function(option) {
                     e.sender.chartType(option);
                     e.sender.setJSONData(dataobj6[option]);
                 }
@@ -317,7 +318,7 @@
 
                 function radioWrapper(wrapperId, inputId, label, selected, optionLabel) {
                     var item = "<div id='" + wrapperId + "' >";
-                    item += "<input name='dimesion-selector' id='" + inputId + "' type='radio' " + (selected ? "checked='checked'" : '') + " onchange='__onChange6(\"" + optionLabel + "\")'/>";
+                    item += "<input name='dimesion-selector-" + uniqueId + "'' id='" + inputId + "' type='radio' " + (selected ? "checked" : '') + " onchange='__onChange1(\"" + optionLabel + "\")'/>";
                     item += "<label for='" + inputId + "' >" + label + "</label>"
                     item += "</div>";
                     return item;
@@ -325,9 +326,11 @@
                 var changeTypeChilds = '';
 
                 Object.keys(options).forEach(function(option, index) {
+
                     var label = options[option];
-                    var selected = chartSelected === option;
-                    var radioOption = radioWrapper('radio' + (index + 1), 'radioButton' + (index + 1), label.toUpperCase(), selected, option);
+                    var selected = (chartSelected === option);
+                    console.log(label + '--' + selected + '--' + option);
+                    var radioOption = radioWrapper('radio' + (index + 1 + uniqueId), 'radioButton' + (index + 1 + uniqueId), label.toUpperCase(), selected, option);
                     changeTypeChilds += radioOption;
                 });
 
@@ -344,10 +347,10 @@
                 styleNode.innerHTML = css;
                 document.body.appendChild(styleNode);
             }
-            //if (!window.__sample_change_chart_type_instansiated) {
+            if (!window.__sample_change_chart_type_instansiated) {
                 instantiate();
-            //}
-            //window.__sample_change_chart_type_instansiated = true;
+            }
+            window.__sample_change_chart_type_instansiated = true;
         }
     }
 }
