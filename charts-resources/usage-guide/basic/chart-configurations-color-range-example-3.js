@@ -23,16 +23,13 @@
                         "row": [{
                                 "id": "NY",
                                 "label": "New York"
-                            },
-                            {
+                            }, {
                                 "id": "LA",
                                 "label": "Los Angeles"
-                            },
-                            {
+                            }, {
                                 "id": "CH",
                                 "label": "Chicago"
-                            },
-                            {
+                            }, {
                                 "id": "HO",
                                 "label": "Houston"
                             }
@@ -42,16 +39,13 @@
                         "column": [{
                                 "id": "wI",
                                 "label": "Winter"
-                            },
-                            {
+                            }, {
                                 "id": "SU",
                                 "label": "Summer"
-                            },
-                            {
+                            }, {
                                 "id": "SP",
                                 "label": "Spring"
-                            },
-                            {
+                            }, {
                                 "id": "AU",
                                 "label": "Autumn"
                             }
@@ -63,92 +57,77 @@
                                 "columnid": "WI",
                                 "displayValue": "60.10",
                                 "colorRangeLabel": "Warm"
-                            },
-                            {
+                            }, {
                                 "rowid": "LA",
                                 "columnid": "SP",
                                 "displayValue": "64.5",
                                 "colorRangeLabel": "Warm"
-                            },
-                            {
+                            }, {
                                 "rowid": "LA",
                                 "columnid": "SU",
                                 "displayValue": "68.2",
                                 "colorRangeLabel": "Warm"
-                            },
-                            {
+                            }, {
                                 "rowid": "LA",
                                 "columnid": "AU",
                                 "displayValue": "65.7",
                                 "colorRangeLabel": "Warm"
-                            },
-                            {
+                            }, {
                                 "rowid": "NY",
                                 "columnid": "WI",
                                 "displayValue": "33.7",
                                 "colorRangeLabel": "Freezing"
-                            },
-                            {
+                            }, {
                                 "rowid": "NY",
                                 "columnid": "SP",
                                 "displayValue": "57.8",
                                 "colorRangeLabel": "Warm"
-                            },
-                            {
+                            }, {
                                 "rowid": "NY",
                                 "columnid": "SU",
                                 "displayValue": "74.49",
                                 "colorRangeLabel": "Hot"
-                            },
-                            {
+                            }, {
                                 "rowid": "NY",
                                 "columnid": "AU",
                                 "displayValue": "57.6",
                                 "colorRangeLabel": "Warm"
-                            },
-                            {
+                            }, {
                                 "rowid": "CH",
                                 "columnid": "WI",
                                 "displayValue": "22.89",
                                 "colorRangeLabel": "Freezing"
-                            },
-                            {
+                            }, {
                                 "rowid": "CH",
                                 "columnid": "SP",
                                 "displayValue": "55.7",
                                 "colorRangeLabel": "Warm"
-                            },
-                            {
+                            }, {
                                 "rowid": "CH",
                                 "columnid": "SU",
                                 "displayValue": "72.2",
                                 "colorRangeLabel": "Hot"
-                            },
-                            {
+                            }, {
                                 "rowid": "CH",
                                 "columnid": "AU",
                                 "displayValue": "51.6",
                                 "colorRangeLabel": "Warm"
-                            },
-                            {
+                            }, {
                                 "rowid": "HO",
                                 "columnid": "WI",
                                 "displayValue": "53.0",
                                 "colorRangeLabel": "Warm"
-                            },
-                            {
+                            }, {
                                 "rowid": "HO",
                                 "columnid": "SP",
                                 "displayValue": "72.7",
                                 "colorRangeLabel": "Hot"
-                            },
-                            {
+                            }, {
                                 "rowid": "HO",
                                 "columnid": "SU",
                                 "displayValue": "83.3",
                                 "colorRangeLabel": "Hot"
-                            },
-                            {
+                            }, {
                                 "rowid": "HO",
                                 "columnid": "AU",
                                 "displayValue": "53.0",
@@ -161,16 +140,14 @@
                         "color": [{
                                 "code": "#6da81e",
                                 "minValue": "0",
-                                "maxValue": "50",
-                                "label": "Freezing"
-                            },
-                            {
-                                "code": "#f6bc33",
-                                "minValue": "50",
                                 "maxValue": "70",
+                                "label": "Freezing"
+                            }, {
+                                "code": "#f6bc33",
+                                "minValue": "43",
+                                "maxValue": "69",
                                 "label": "Warm"
-                            },
-                            {
+                            }, {
                                 "code": "#e24b1a",
                                 "minValue": "70",
                                 "maxValue": "85",
@@ -197,11 +174,11 @@
                         "gradient": "1",
                         "color": [{
                             "minvalue": "0.5",
-                            "maxvalue": "1.0",
+                            "maxvalue": "2.0",
                             "color": "#62B58F"
                         }, {
-                            "minvalue": "1.0",
-                            "maxvalue": "2.0",
+                            "minvalue": "0.8",
+                            "maxvalue": "1.9",
                             "color": "#FFC533"
                         }, {
                             "minvalue": "2.0",
@@ -251,11 +228,11 @@
                     "colorRange": {
                         "color": [{
                             "minValue": "0",
-                            "maxValue": "50",
+                            "maxValue": "75",
                             "code": "#F2726F"
                         }, {
-                            "minValue": "50",
-                            "maxValue": "75",
+                            "minValue": "43",
+                            "maxValue": "74",
                             "code": "#FFC533"
                         }, {
                             "minValue": "75",
