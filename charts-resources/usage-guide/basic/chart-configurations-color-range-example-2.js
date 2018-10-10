@@ -323,7 +323,6 @@
 
                     var label = options[option];
                     var selected = (chartSelected === option);
-                    console.log(label + '--' + selected + '--' + option);
                     var radioOption = radioWrapper('radio' + (index + 1 + uniqueId), 'radioButton' + (index + 1 + uniqueId), label.toUpperCase(), selected, option);
                     changeTypeChilds += radioOption;
                 });
