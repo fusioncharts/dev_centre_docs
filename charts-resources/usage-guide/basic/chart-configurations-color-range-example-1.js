@@ -343,12 +343,11 @@
                 var styleNode = document.createElement('style');
                 styleNode.innerHTML = css;
                 document.body.appendChild(styleNode);
-                __sample_change_chart_type_instansiated = false;
             }
             if (!window.__sample_change_chart_type_instansiated) {
                 instantiate();
             }
-            window.__sample_change_chart_type_instansiated = true;
+           // window.__sample_change_chart_type_instansiated = true;
         }
     }
 }
