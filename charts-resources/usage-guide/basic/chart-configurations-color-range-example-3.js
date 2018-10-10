@@ -296,7 +296,7 @@
 
                 var radioContainer = document.createElement('form');
                 addClass(radioContainer, 'change-type');
-                window.__onChange1 = function(option) {
+                window.__onChange3 = function(option) {
                     e.sender.chartType(option);
                     e.sender.setJSONData(dataobj3[option]);
                 }
@@ -312,7 +312,7 @@
 
                 function radioWrapper(wrapperId, inputId, label, selected, optionLabel) {
                     var item = "<div id='" + wrapperId + "' >";
-                    item += "<input name='dimesion-selector-" + uniqueId + "'' id='" + inputId + "' type='radio' " + (selected ? "checked" : '') + " onchange='__onChange1(\"" + optionLabel + "\")'/>";
+                    item += "<input name='dimesion-selector-" + uniqueId + "'' id='" + inputId + "' type='radio' " + (selected ? "checked" : '') + " onchange='__onChange3(\"" + optionLabel + "\")'/>";
                     item += "<label for='" + inputId + "' >" + label + "</label>"
                     item += "</div>";
                     return item;
