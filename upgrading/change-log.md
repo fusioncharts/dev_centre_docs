@@ -11,25 +11,25 @@ heading: Version 3.13.x
 
 * The following events have been added to FusionCharts:
 
-    * The `chartTypeInvalid` event will be fired if the given chart type is invalid, or the chart type is not set.
+    * The [chartTypeInvalid]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#charttypeinvalid-220) event will be fired if the given chart type is invalid, or the chart type is not set.
 
-    * After invoking the render() API method, the `containerNotFound` event will be fired if the chart container is not found or not provided.
+    * After invoking the render() API method, the [containerNotFound]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#containernotfound-299) event will be fired if the chart container is not found or not provided.
 
-    * The `animationInvoked` event will be fired as soon as the chart animation starts.
+    * The [animationInvoked]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#animationinvoked-228) event will be fired as soon as the chart animation starts.
 
-    * The `beforeDraw` event will be fired whenever an entire redraw of the chart isstarted through data update, change of chart message, change of chart type, or resize.
+    * The [beforeDraw]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#beforedraw-230) event will be fired whenever an entire redraw of the chart isstarted through data update, change of chart message, change of chart type, or resize.
 
-    * The `drawCancelled` event will be triggered when `preventDefault()` is called from FusionCharts event `beforeDraw`.
+    * The [drawCancelled]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#drawcancelled-234) event will be triggered when `preventDefault()` is called from FusionCharts event `beforeDraw`.
 
-    * The `beforeDataLoad` event will be triggered when the chart fetches data from the source but is yet to display it. It can be used with the Theme Manager to update chart data.
+    * The [beforeDataLoad]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#beforedataload-28) event will be triggered when the chart fetches data from the source but is yet to display it. It can be used with the Theme Manager to update chart data.
 
-For more information regarding the events, click here.
+For more information regarding the events, click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events).
 
 <h4>Improvements</h4>
 
-* Earlier, the `renderComplete` event was triggered every time a chart was rendered using any of the methods `render()`, `chartType()`, or `setChartData()`. It was also triggered every time chart data was successfully updated. Additionally, this event will now be fired whenever a chart is completely drawn. For more information regarding this change, click here.
+* Earlier, the [renderComplete]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#rendercomplete-236) event was triggered every time a chart was rendered using any of the methods `render()`, `chartType()`, or `setChartData()`. It was also triggered every time chart data was successfully updated. Additionally, this event will now be fired whenever a chart is completely drawn.
 
-* If two ranges in an Angular gauge, Bulb gauge, or map shared the same value, the `colorRange` attribute was picking up the color of the lower range. It has been modified to ensure it always picks up the color of the upper range. For more details regarding this update, click here.
+* If two ranges in an Angular gauge, Bulb gauge, or map shared the same value, the `colorRange` attribute was picking up the color of the lower range. It has been modified to ensure it always picks up the color of the upper range. For more details regarding this update, click [here]({% site.baseurl %}/common-use-cases/color-range-usecases).
 
 * Earlier, the distance of labels from the edge of Pie and Doughnut charts would be equal to the sum of values of the `labelDistance` and `slicingDistance` attributes. Now the distance of labels from the edge of the charts equals the value of `labelDistance` only.
 
