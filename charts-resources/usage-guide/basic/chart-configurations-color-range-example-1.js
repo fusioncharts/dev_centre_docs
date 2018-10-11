@@ -114,7 +114,7 @@
                             }, {
                                 "rowid": "HO",
                                 "columnid": "AU",
-                                "value": "53.0"
+                                "value": "50.0"
                             }
                         ]
                     }],
@@ -224,7 +224,7 @@
                     },
                     "dials": {
                         "dial": [{
-                            "value": "81"
+                            "value": "56"
                         }]
                     }
                 },
