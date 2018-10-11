@@ -54,67 +54,67 @@
                         "data": [{
                                 "rowid": "LA",
                                 "columnid": "WI",
-                                "displayValue": "60.10"
+                                "value": "60.10"
                             }, {
                                 "rowid": "LA",
                                 "columnid": "SP",
-                                "displayValue": "64.5"
+                                "value": "64.5"
                             }, {
                                 "rowid": "LA",
                                 "columnid": "SU",
-                                "displayValue": "68.2"
+                                "value": "68.2"
                             }, {
                                 "rowid": "LA",
                                 "columnid": "AU",
-                                "displayValue": "65.7"
+                                "value": "65.7"
                             }, {
                                 "rowid": "NY",
                                 "columnid": "WI",
-                                "displayValue": "33.7"
+                                "value": "33.7"
                             }, {
                                 "rowid": "NY",
                                 "columnid": "SP",
-                                "displayValue": "57.8"
+                                "value": "57.8"
                             }, {
                                 "rowid": "NY",
                                 "columnid": "SU",
-                                "displayValue": "74.49"
+                                "value": "74.49"
                             }, {
                                 "rowid": "NY",
                                 "columnid": "AU",
-                                "displayValue": "57.6"
+                                "value": "57.6"
                             }, {
                                 "rowid": "CH",
                                 "columnid": "WI",
-                                "displayValue": "22.89"
+                                "value": "22.89"
                             }, {
                                 "rowid": "CH",
                                 "columnid": "SP",
-                                "displayValue": "55.7"
+                                "value": "55.7"
                             }, {
                                 "rowid": "CH",
                                 "columnid": "SU",
-                                "displayValue": "72.2"
+                                "value": "72.2"
                             }, {
                                 "rowid": "CH",
                                 "columnid": "AU",
-                                "displayValue": "45.6"
+                                "value": "45.6"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "WI",
-                                "displayValue": "53.0"
+                                "value": "53.0"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "SP",
-                                "displayValue": "72.7"
+                                "value": "72.7"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "SU",
-                                "displayValue": "83.3"
+                                "value": "83.3"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "AU",
-                                "displayValue": "46.2"
+                                "value": "46.2"
                             }
                         ]
                     }],
