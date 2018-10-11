@@ -12,12 +12,11 @@
                     "chart": {
                         "theme": "fusion",
                         "caption": "Top 4 US Cities",
-                        "subcaption": "Average temperature (°F) in seasons (2013-14)",
+                        "subcaption": "Average temperature (°F) in seasons (2016-17)",
                         "xAxisName": "Seasons",
                         "yAxisName": "Cities",
                         "showPlotBorder": "1",
-                        "showValues": "1",
-                        "mapByCategory": "1"
+                        "showValues": "1"
                     },
                     "rows": {
                         "row": [{
@@ -55,100 +54,84 @@
                         "data": [{
                                 "rowid": "LA",
                                 "columnid": "WI",
-                                "displayValue": "60.10",
-                                "colorRangeLabel": "Warm"
+                                "value": "60.10"
                             }, {
                                 "rowid": "LA",
                                 "columnid": "SP",
-                                "displayValue": "64.5",
-                                "colorRangeLabel": "Warm"
+                                "value": "64.5"
                             }, {
                                 "rowid": "LA",
                                 "columnid": "SU",
-                                "displayValue": "68.2",
-                                "colorRangeLabel": "Warm"
+                                "value": "68.2"
                             }, {
                                 "rowid": "LA",
                                 "columnid": "AU",
-                                "displayValue": "65.7",
-                                "colorRangeLabel": "Warm"
+                                "value": "65.7"
                             }, {
                                 "rowid": "NY",
                                 "columnid": "WI",
-                                "displayValue": "33.7",
-                                "colorRangeLabel": "Freezing"
+                                "value": "33.7"
                             }, {
                                 "rowid": "NY",
                                 "columnid": "SP",
-                                "displayValue": "57.8",
-                                "colorRangeLabel": "Warm"
+                                "value": "57.8"
                             }, {
                                 "rowid": "NY",
                                 "columnid": "SU",
-                                "displayValue": "74.49",
-                                "colorRangeLabel": "Hot"
+                                "value": "74.49"
                             }, {
                                 "rowid": "NY",
                                 "columnid": "AU",
-                                "displayValue": "57.6",
-                                "colorRangeLabel": "Warm"
+                                "value": "57.6"
                             }, {
                                 "rowid": "CH",
                                 "columnid": "WI",
-                                "displayValue": "22.89",
-                                "colorRangeLabel": "Freezing"
+                                "value": "22.89"
                             }, {
                                 "rowid": "CH",
                                 "columnid": "SP",
-                                "displayValue": "55.7",
-                                "colorRangeLabel": "Warm"
+                                "value": "55.7"
                             }, {
                                 "rowid": "CH",
                                 "columnid": "SU",
-                                "displayValue": "72.2",
-                                "colorRangeLabel": "Hot"
+                                "value": "72.2"
                             }, {
                                 "rowid": "CH",
                                 "columnid": "AU",
-                                "displayValue": "51.6",
-                                "colorRangeLabel": "Warm"
+                                "value": "51.6"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "WI",
-                                "displayValue": "53.0",
-                                "colorRangeLabel": "Warm"
+                                "value": "53.0"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "SP",
-                                "displayValue": "72.7",
-                                "colorRangeLabel": "Hot"
+                                "value": "72.7"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "SU",
-                                "displayValue": "83.3",
-                                "colorRangeLabel": "Hot"
+                                "value": "83.3"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "AU",
-                                "displayValue": "53.0",
-                                "colorRangeLabel": "Warm"
+                                "value": "52.2"
                             }
                         ]
                     }],
                     "colorRange": {
                         "gradient": "0",
                         "color": [{
-                                "code": "#6da81e",
+                                "code": "#62B58F",
                                 "minValue": "0",
                                 "maxValue": "50",
                                 "label": "Freezing"
                             }, {
-                                "code": "#f6bc33",
+                                "code": "#FFC533",
                                 "minValue": "53",
                                 "maxValue": "70",
                                 "label": "Warm"
                             }, {
-                                "code": "#e24b1a",
+                                "code": "#F2726F",
                                 "minValue": "70",
                                 "maxValue": "85",
                                 "label": "Hot"
@@ -170,8 +153,8 @@
                     // Aesthetics; ranges synced with the slider
                     "colorrange": {
                         "minvalue": "0",
-                        "code": "#FFE0B2",
-                        "gradient": "1",
+                        "code": "#62B58F",
+                        "gradient": "0",
                         "color": [{
                             "minvalue": "0.5",
                             "maxvalue": "1.0",
@@ -201,7 +184,7 @@
                         "showLabel": "1"
                     }, {
                         "id": "EU",
-                        "value": ".40",
+                        "value": ".50",
                         "showLabel": "1"
                     }, {
                         "id": "AF",
@@ -229,7 +212,7 @@
                         "color": [{
                             "minValue": "0",
                             "maxValue": "50",
-                            "code": "#F2726F"
+                            "code": "#62B58F"
                         }, {
                             "minValue": "53",
                             "maxValue": "75",
@@ -237,12 +220,12 @@
                         }, {
                             "minValue": "75",
                             "maxValue": "100",
-                            "code": "#62B58F"
+                            "code": "#F2726F"
                         }]
                     },
                     "dials": {
                         "dial": [{
-                            "value": "81"
+                            "value": "56"
                         }]
                     }
                 },
