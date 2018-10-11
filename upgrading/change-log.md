@@ -4,6 +4,129 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.2</h2>
+11th October, 2018
+
+<h4 class="sub-heading">New Features</h4>
+
+* The following events have been added to FusionCharts:
+
+    * The [chartTypeInvalid]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#charttypeinvalid-220) event will be fired if the given chart type is invalid, or the chart type is not set.
+
+    * After invoking the render() API method, the [containerNotFound]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#containernotfound-299) event will be fired if the chart container is not found or not provided.
+
+    * The [animationInvoked]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#animationinvoked-228) event will be fired as soon as the chart animation starts.
+
+    * The [beforeDraw]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#beforedraw-230) event will be fired whenever an entire redraw of the chart isstarted through data update, change of chart message, change of chart type, or resize.
+
+    * The [drawCancelled]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#drawcancelled-234) event will be triggered when `preventDefault()` is called from FusionCharts event `beforeDraw`.
+
+    * The [beforeDataLoad]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#beforedataload-28) event will be triggered when the chart fetches data from the source but is yet to display it. It can be used with the Theme Manager to update chart data.
+
+For more information regarding the events, click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events).
+
+<h4>Improvements</h4>
+
+* Earlier, the [renderComplete]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#rendercomplete-236) event was triggered every time a chart was rendered using any of the methods `render()`, `chartType()`, or `setChartData()`. It was also triggered every time chart data was successfully updated. Additionally, this event will now be fired whenever a chart is completely drawn.
+
+* If two ranges in an Angular gauge, Bulb gauge, or map shared the same value, the `colorRange` attribute was picking up the color of the lower range. It has been modified to ensure it always picks up the color of the upper range. For more details regarding this update, click [here]({% site.baseurl %}/common-use-cases/color-range-usecases).
+
+* Earlier, the distance of labels from the edge of Pie and Doughnut charts would be equal to the sum of values of the `labelDistance` and `slicingDistance` attributes. Now the distance of labels from the edge of the charts equals the value of `labelDistance` only.
+
+<h4>Fixes</h4>
+
+* A JavaScript error was thrown while trying to re-render a map using the `render()` API method before completion of animation of the ongoing rendering process. The issue has been fixed now.
+
+* A JS error was thrown while performing a drill down for a chart container with no `id`. The issue has been fixed.
+
+* JavaScript error was thrown when chart data was updated on `dataPlotClick` event. The issue has been fixed.
+
+* Click/hover effects on markers are now working on single tap in hybrid/touch devices.
+
+* JavaScript errors were thrown in Internet Explorer and Google Chrome while invoking FusionCharts functions using `jquery-fusioncharts.js`. The issue has been fixed.
+
+* Pie chart rendered with data empty message was throwing JS error when updated if there was a scroll chart on the same page. The issue has been fixed.
+
+* Labels are now updated while updating a Pie 2D chart with fewer data.
+
+* The `trendValueAlpha` attribute was not being applied to chart trendline values. The issue has been fixed.
+
+* `reverseLegend` attribute is now working as intended for Marimekko, Radar, and Scatter charts.
+
+* Scroll, legend scroll, and gesture (such as zooming in Zoom line charts) are now working in FusionCharts v3.13.2 for Google Chrome.
+
+* In Angular Gauges, the color range is now applied properly, when real-time data values are in the following sequence:
+
+    * Less than the value of `lowerLimit` of the gauge.
+
+    * More than the value of `upperLimit` of the gauge.
+
+* Box and Whisker charts are now correctly rendering all outlier values, without throwing JS error messages or displaying connectors.
+
+* `onChangeCrossLine` event is now fired when the crossline is hidden.
+
+* In Multi-axis Line charts, colors set to the axes are now correctly reflected in the legend and the anchors.
+
+* Annotation border now appears when the value of `showborder` attribute is set to `1`.
+
+* Hover effect on the node in a Treemap is now getting updated, after drill down.
+
+* In Funnel charts, `labelFontSize` is now working properly for the first plot. 
+
+* Plot border for Stacked Column chart is now displayed accurately when it is exported from Internet Explorer 11.
+
+* If the value of `visible` attribute was set to `0` for an annotation group within `dataSource`, the group was not displayed even by using the `show()` API method. This issue has been fixed.
+
+* In the heatmap chart, the X-axis label no longer goes behind the chart canvas when the x-axis labels are placed at top.
+
+* In pie and doughnut charts, `categoryLabel` is no longer returning blank value on `dataPlotClick` event, when the labels are displayed.
+
+* Data plots with a space in the `displayValue` attribute no longer break on chart export.
+
+* The `scrollTo()` API method is now working when it is called just after  `setChartAttribute()`.
+
+* In FusionMaps, the `link` attribute defined for markers was only accessible on the marker borders. It is now accessible everywhere on the markers, as intended.
+
+* The scroll bar was turning black when `setChartAttribute()` was being used with the value of "scrollColor" attribute set to `""`. The issue has been fixed.
+
+* The `animateClockwise` and `alphaAnimation` attributes are now working properly in Pie and Doughnut charts. 
+
+* A JS error was thrown while updating a non-existing annotation using the `update()` API method. This issue has been fixed.
+
+* The `$errorValue`, `$errorDataValue`, and `$errorPercentValue` tooltip macros are now accurately displaying the values.
+
+* In Error Scatter and Error Bar 2D charts, `$errorValue` macro was not always displaying the correct plot value on tooltips. This issue has been fixed.
+
+* Hover effects are now applied properly on the dial in Angular Gauges.
+
+* The `alpha` attribute is now working properly for image annotations.
+
+* The `leftMargin` attribute for text annotations was not behaving as intended. The issue has now been fixed.
+
+* In Overlapped Bar 2D charts, plot values were overlapping one another which is now behaving as intended.
+
+* In Treemap charts, hover effects were persisting even when the values of `plotHoverEffect` and `showHoverEffect` attributes were set to `0`. The issue has been fixed.
+
+* If HTML tags were included in labels, the chart would throw a JS error and not get rendered. The issue has been fixed.
+
+* In Horizontal/Vertical LED gauges and Vertical Bullet Graph, if the value of `captionOnTop` was set to `0`, the caption was not appearing as intended. The issue has been resolved.
+
+* A JS error was thrown while performing a batch export to export multiple charts using `FusionCharts.batchExport()` method and the chart type is not supported. The issue has been fixed.
+
+* While exporting a map into XLS format, the formatted `value` column was getting split into 3 columns. The issue has been fixed.
+
+* Chart components like tooltips and events were persisting in the initial location of the chart, even after the chart was shifted via the container. The issue has been resolved.
+
+* Message log menu items were getting displayed, even when the value of `messageGoesToLog` was set to `0`. The issue has been fixed.
+
+* A JS error was thrown when charts with legends were rendered with a width less than 21 px. This issue has been fixed.
+
+* The tooltip of the gradient legend pointer was visible on hovering, even when the value of `showToolTip` attribute was set to `0`. The issue has been fixed.
+
+<h4>Deprecated</h4>
+
+* `smartLabelClearance` attribute is deprecated.
+
 <h2 class="sub-heading">Version 3.13.1-sr.1</h2>
 27th August, 2018
 

@@ -16,7 +16,6 @@
             "useDataPlotColorForLabels": "1",
             "enableSmartLabels": "0",
             "labelDistance": "5",
-            "smartLabelClearance": "5",
             //Theme
             "theme": "fusion"
         },
