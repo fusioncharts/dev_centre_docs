@@ -176,7 +176,7 @@
                         "showLabel": "1"
                     }, {
                         "id": "SA",
-                        "value": "2.04",
+                        "value": "2.00",
                         "showLabel": "1"
                     }, {
                         "id": "AS",
