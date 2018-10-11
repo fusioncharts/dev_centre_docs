@@ -154,6 +154,7 @@
                     "colorrange": {
                         "minvalue": "0",
                         "code": "#62B58F",
+                        "gradient": "0",
                         "color": [{
                             "minvalue": "0.5",
                             "maxvalue": "1.0",
