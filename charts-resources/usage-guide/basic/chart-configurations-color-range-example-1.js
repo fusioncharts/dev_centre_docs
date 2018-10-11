@@ -12,7 +12,7 @@
                     "chart": {
                         "theme": "fusion",
                         "caption": "Top 4 US Cities",
-                        "subcaption": "Average temperature (°F) in seasons (2013-14)",
+                        "subcaption": "Average temperature (°F) in seasons (2016-17)",
                         "xAxisName": "Seasons",
                         "yAxisName": "Cities",
                         "showPlotBorder": "1",
