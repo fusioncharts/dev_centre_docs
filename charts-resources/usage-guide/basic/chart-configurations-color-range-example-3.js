@@ -12,7 +12,7 @@
                     "chart": {
                         "theme": "fusion",
                         "caption": "Top 4 US Cities",
-                        "subcaption": "Average temperature (°F) in seasons (2013-14)",
+                        "subcaption": "Average temperature (°F) in seasons (2016-17)",
                         "xAxisName": "Seasons",
                         "yAxisName": "Cities",
                         "showPlotBorder": "1",
@@ -121,17 +121,17 @@
                     "colorRange": {
                         "gradient": "0",
                         "color": [{
-                                "code": "#6da81e",
+                                "code": "#62B58F",
                                 "minValue": "0",
                                 "maxValue": "70",
                                 "label": "Freezing"
                             }, {
-                                "code": "#f6bc33",
+                                "code": "#FFC533",
                                 "minValue": "43",
                                 "maxValue": "69",
                                 "label": "Warm"
                             }, {
-                                "code": "#e24b1a",
+                                "code": "#F2726F",
                                 "minValue": "70",
                                 "maxValue": "85",
                                 "label": "Hot"
