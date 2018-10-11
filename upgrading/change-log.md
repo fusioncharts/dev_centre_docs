@@ -49,7 +49,7 @@ For more information regarding the events, click [here]({% site.baseurl %}/api/f
 
 * Labels are now updated while updating a Pie 2D chart with fewer data.
 
-* The "trendValueAlpha" attribute was not being applied to chart trendline values. The issue has been fixed.
+* The `trendValueAlpha` attribute was not being applied to chart trendline values. The issue has been fixed.
 
 * `reverseLegend` attribute is now working as intended for Marimekko, Radar, and Scatter charts.
 
@@ -63,7 +63,7 @@ For more information regarding the events, click [here]({% site.baseurl %}/api/f
 
 * Box and Whisker charts are now correctly rendering all outlier values, without throwing JS error messages or displaying connectors.
 
-* 'onChangeCrossLine' event is now fired when the crossline is hidden.
+* `onChangeCrossLine` event is now fired when the crossline is hidden.
 
 * In Multi-axis Line charts, colors set to the axes are now correctly reflected in the legend and the anchors.
 
@@ -111,13 +111,13 @@ For more information regarding the events, click [here]({% site.baseurl %}/api/f
 
 * In Horizontal/Vertical LED gauges and Vertical Bullet Graph, if the value of `captionOnTop` was set to `0`, the caption was not appearing as intended. The issue has been resolved.
 
-* A JS error was thrown while performing a batch export to export multiple charts using 'FusionCharts.batchExport()' method and the chart type is not supported. The issue has been fixed.
+* A JS error was thrown while performing a batch export to export multiple charts using `FusionCharts.batchExport()` method and the chart type is not supported. The issue has been fixed.
 
 * While exporting a map into XLS format, the formatted `value` column was getting split into 3 columns. The issue has been fixed.
 
 * Chart components like tooltips and events were persisting in the initial location of the chart, even after the chart was shifted via the container. The issue has been resolved.
 
-* Message log menu items were getting displayed, even when the value of "messageGoesToLog" was set to "0". The issue has been fixed.
+* Message log menu items were getting displayed, even when the value of `messageGoesToLog` was set to `0`. The issue has been fixed.
 
 * A JS error was thrown when charts with legends were rendered with a width less than 21 px. This issue has been fixed.
 
