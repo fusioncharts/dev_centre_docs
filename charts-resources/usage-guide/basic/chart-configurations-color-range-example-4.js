@@ -106,7 +106,7 @@
                             }, {
                                 "rowid": "HO",
                                 "columnid": "SP",
-                                "value": "72.7"
+                                "value": "70.0"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "SU",

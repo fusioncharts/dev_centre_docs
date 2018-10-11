@@ -219,7 +219,7 @@ Now let's check what happens if two range has the same minimum value. For instan
 
 In this scenario, the values will appear in the following color:
 
-* __Angular Gauge__ - The value 0 is the same for both Green and Yellow. Here, the value 0 will appear in red.
+* __Angular Gauge__ - The value 0 is the same for both Green and Yellow. Here, the value 0 will appear in green.
 
 * __Heat Map__ - The value 0 is the same for both Green and Yellow. Here, the value 0 will appear in green.
 
