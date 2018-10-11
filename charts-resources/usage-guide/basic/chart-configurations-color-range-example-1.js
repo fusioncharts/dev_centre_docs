@@ -153,7 +153,7 @@
                     // Aesthetics; ranges synced with the slider
                     "colorrange": {
                         "minvalue": "0",
-                        "code": "#62B58F",\
+                        "code": "#62B58F",
                         "gradient": "0",
                         "color": [{
                             "minvalue": "0.5",
