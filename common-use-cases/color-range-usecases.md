@@ -243,7 +243,7 @@ Now let's check what happens if there is a value which does not belong to any of
 	<tr>
 		<td>53 - 75 - Yellow</td>
 		<td>53 - 70 - Yellow</td>
-		<td>1.2M - 2M - Yellow</td>
+		<td>1.4M - 2M - Yellow</td>
 	</tr>
 	<tr>
 		<td>75 - 100 - Red</td>
@@ -260,4 +260,4 @@ In this scenario, the values will appear in the following color:
 
 * __Heat Map__ - There are values from 51 and 52 which are not mapped to any color. In this scenario, these values will not be mapped with any color code. This is because in a heat map you cannot assume any color for the values which are not residing in the range of values.
 
-* __World Map__ - There are values from 1.1M - 1.2M which are not mapped to any color. In this scenario, these values will not be mapped with any color code. This is because in maps you cannot assume any color for the values which are not residing in the range of values.
+* __World Map__ - There are values from 1.1M - 1.4M which are not mapped to any color. In this scenario, these values will not be mapped with any color code. This is because in maps you cannot assume any color for the values which are not residing in the range of values.

@@ -160,7 +160,7 @@
                             "maxvalue": "1.0",
                             "color": "#62B58F"
                         }, {
-                            "minvalue": "1.2",
+                            "minvalue": "1.4",
                             "maxvalue": "2.0",
                             "color": "#FFC533"
                         }, {
