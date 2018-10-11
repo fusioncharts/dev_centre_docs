@@ -1,7 +1,7 @@
 ---
-title: Configure Color Range | FusionCharts
+title: Color Range | FusionCharts
 description: This section talks about the color range used by the charts to represent a range of data values.
-heading: Configure Color Range
+heading: Color Range
 ---
 
 FusionCharts comes along with some specialized chart types, gauges and all maps, which uses color to represent a range of data values. For example, in a heat map chart measuring the level of weekly attendance of a company, you can define colors red, yellow, blue and green to determine bad, average, good and excellent percentage of employee attendance respectively. When the chart is rendered the four levels can be easily distinguished by their respective colors. 
@@ -26,9 +26,7 @@ Color Range is applicable for:
 
 * All maps
 
-Let's understand the usage of color range for each of the above. 
-
-To understand the color range let's take simple examples of an Angular Gauge, a Heat Map and a World Map showcasing the following:
+Let's understand the usage of __color range__ for each of the above. To understand the color range let's take simple examples of an __Angular Gauge__, a __Heat Map__ and a __World Map__ showcasing the following:
 
 * __Angular Gauge__ -  Number of customer complaints. 
 
@@ -65,7 +63,7 @@ The color range set for the three is shown in the table below:
 
 In this scenario, the values will appear in the following color:
 
-* __Angular Gauge__ -  Any value below 50 will appear in Green. Similarly, any value below 75 but greater than equal to 50 will appear as yellow and the value 75 will appear in Red.
+* __Angular Gauge__ -  Any value __below 50__ will appear in `Green`. Similarly, any value __below 75 but greater than equal to 50__ will appear as `yellow` and the value __75__ will appear in `Red`.
 
 * __Heat Map__ - The value 50 will appear in the color yellow and not in Green since the upper limit is exclusive for any range and the lower limit is inclusive for any range. Any value below 50 will appear in Green. Similarly, any value below 70 will appear as yellow and the value 70 will appear in Red.
 
@@ -256,7 +254,7 @@ Now let's check what happens if there is a value which does not belong to any of
 
 In this scenario, the values will appear in the following color:
 
-* Angular Gauge - There are two values 51 and 52 which are not mapped to any color. In this scenario, these values will appear as per the color of the previous range, which in this case is Green. In case the value is less than the minimum value (suppose minus 10), then it will take the color of the first range which is Red.
+* __Angular Gauge__ - There are two values 51 and 52 which are not mapped to any color. In this scenario, these values will appear as per the color of the previous range, which in this case is Green. In case the value is less than the minimum value (suppose minus 10), then it will take the color of the first range which is Red.
 
 * __Heat Map__ - There are values from 51 and 52 which are not mapped to any color. In this scenario, these values will not be mapped with any color code. This is because in a heat map you cannot assume any color for the values which are not residing in the range of values.
 
