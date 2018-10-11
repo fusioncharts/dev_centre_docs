@@ -184,7 +184,7 @@
                         "showLabel": "1"
                     }, {
                         "id": "EU",
-                        "value": ".40",
+                        "value": ".50",
                         "showLabel": "1"
                     }, {
                         "id": "AF",

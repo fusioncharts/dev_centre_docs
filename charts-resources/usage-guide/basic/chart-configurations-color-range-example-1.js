@@ -98,7 +98,7 @@
                             }, {
                                 "rowid": "CH",
                                 "columnid": "AU",
-                                "value": "51.6"
+                                "value": "46.6"
                             }, {
                                 "rowid": "HO",
                                 "columnid": "WI",
@@ -114,7 +114,7 @@
                             }, {
                                 "rowid": "HO",
                                 "columnid": "AU",
-                                "value": "50.0"
+                                "value": "46.2"
                             }
                         ]
                     }],
@@ -184,7 +184,7 @@
                         "showLabel": "1"
                     }, {
                         "id": "EU",
-                        "value": ".40",
+                        "value": ".50",
                         "showLabel": "1"
                     }, {
                         "id": "AF",
