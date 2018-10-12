@@ -73,30 +73,30 @@ The HTML template for `aspx` file is shown below:
 
 <div class='tab csharp-tab active'>
 <pre><code class="custom-hlc language-javascript">
-&lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="ChartAnnotations.aspx.cs" Inherits="Pages_ChartAnnotations" %d&gt;
+&lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="ChartAnnotations.aspx.cs" Inherits="Pages_ChartAnnotations" %&gt;
 
-&lt;!DOCTYPE htmld&gt;
+&lt;!DOCTYPE html&gt;
 
-&lt;html xmlns="http://www.w3.org/1999/xhtml"d&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
-&lt;head runat="server"d&gt;
-    &lt;titled&gt;FusionCharts | Using Annotations On Chart&lt;/titled&gt;
-&lt;/headd&gt;
+&lt;head runat="server"&gt;
+    &lt;title&gt;FusionCharts | Using Annotations On Chart&lt;/title&gt;
+&lt;/head&gt;
 
-&lt;body style="font-family: Helvetica Neue, Arial; font-size: 16px;"d&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"d&gt;&lt;/scriptd&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"d&gt;&lt;/scriptd&gt;
-    &lt;form id="form1" runat="server"d&gt;
-        &lt;h3d&gt;Using Annotations On Chart&lt;/h3d&gt;
-        &lt;divd&gt;
-            &lt;asp:Literal ID="Literal1" runat="server"d&gt;&lt;/asp:Literald&gt;
-        &lt;/divd&gt;
-        &lt;divd&gt;&lt;spand&gt;
-                &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /d&gt;&lt;/spand&gt;&lt;/divd&gt;
-    &lt;/formd&gt;
-&lt;/bodyd&gt;
+&lt;body style="font-family: Helvetica Neue, Arial; font-size: 16px;"&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;form id="form1" runat="server"&gt;
+        &lt;h3&gt;Using Annotations On Chart&lt;/h3&gt;
+        &lt;div&gt;
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;
+                &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
 
-&lt;/htmld&gt;
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -111,7 +111,7 @@ The HTML template for `aspx` file is shown below:
 
 &lt;head runat="server"&gt;
     &lt;title&gt;FusionCharts | Using Annotations On Chart&lt;/title&gt;
-&lt;/head&gt;
+&lt;/hea&gt;
 
 &lt;body style="font-family: Helvetica Neue, Arial; font-size: 16px;"&gt;
     &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
