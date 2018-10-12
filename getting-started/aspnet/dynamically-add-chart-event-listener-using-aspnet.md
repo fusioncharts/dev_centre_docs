@@ -13,9 +13,9 @@ Events are signals that let you execute specific actions—such as manipulating 
 * A data plot is clicked
 * The mouse pointer is hovered over a data plot, etc.
 
-This article focuses on how you can dynamically add/remove event listener to the data plots in the chart using FusionCharts `C#` or `VB` wrapper. A chart is shown below:
+This article focuses on how you can dynamically add/remove event listener to the data plots in the chart using FusionCharts ASP.NET `C#` or `VB` wrapper. A chart is shown below:
 
-{% embed_chart dynamically-add-chart-event-listener-example-1.js %}
+{% embed_chartData dynamically-add-chart-event-listener-example-1.js json %}
 
 The consolidated code for the above chart is shown below:
 
@@ -72,7 +72,7 @@ End Class
 </div>
 </div>
 
-The HTML template is shown below:
+The HTML template for aspx file is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
