@@ -175,7 +175,7 @@ The HTML template is shown below:
 
 <div class='tab vb-tab'>
 <pre><code class="custom-hlc language-javascript">
-&lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="InteractiveEvent.aspx.cs" Inherits="Pages_InteractiveEvent" %&gt;
+&lt;%@ Page Language="VB" AutoEventWireup="true" CodeFile="InteractiveEvent.aspx.vb" Inherits="Pages_InteractiveEvent" %&gt;
 
 &lt;!DOCTYPE html&gt;
 
