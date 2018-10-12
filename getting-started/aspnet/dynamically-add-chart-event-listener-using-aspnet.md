@@ -270,46 +270,14 @@ The HTML template is shown below:
 
 Apart from the usual boilerplate, the sample C#/VB code provided above corresponds to the following tasks:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='csharp'>C#</a></li>
-    <li><a data-toggle='vb'>VB</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
+1. Import and resolve the dependencies like `System`, and  `FusionCharts.Charts`.
 
-<div class='tab csharp-tab active'>
-<ul>
-    <li>Import and resolve the dependencies like `System`, and  `FusionCharts.Charts`.</li>
-    <li>Define a class `Pages_InteractiveEvent` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `Pages_InteractiveEvent` is inherited.</li>
-    <li>Within the class `Pages_InteractiveEvent`, define `Page_Load()`:</li>
-    <ul>
-        <li>Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.</li>
-        <li>Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).</li>
-        <li>Add the events you want to add to your chart, using the `[chart_instance].AddEvent()` method. In this case, those methods are defined as JavaScript functions in the corresponding `.aspx` file.</li>
-        <li>Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `&lt;script&gt;` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, followed by some JavaScript functions and buttons, and finally within a `&lt;form&gt;&lt;div&gt;` render the chart.</li>
-    </ul>
-</ul>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+2. Define a class `Pages_InteractiveEvent` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `Pages_InteractiveEvent` is inherited.
 
-<div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
-&lt;ul&gt;
-    &lt;li&gt;Import and resolve the dependencies like `FusionCharts.Charts`.&lt;/li&gt;
-    &lt;li&gt;Define a class `Pages_InteractiveEvent` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `Pages_InteractiveEvent` is inherited.&lt;/li&gt;
-    &lt;li&gt;Within the class `Pages_InteractiveEvent`, define `Page_Load()`:&lt;/li&gt;
-    &lt;ul&gt;
-        &lt;li&gt;Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.&lt;/li&gt;
-        &lt;li&gt;Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).&lt;/li&gt;
-        &lt;li&gt;Add the events you want to add to your chart, using the `[chart_instance].AddEvent()` method. In this case, those methods are defined as JavaScript functions in the corresponding `.aspx` file.&lt;/li&gt;
-        &lt;li&gt;Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `&lt;script&gt;` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, followed by some JavaScript functions and buttons, and finally within a `&lt;form&gt;&lt;div&gt;` render the chart.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/ul&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
+3. Within the class `Pages_InteractiveEvent`, define `Page_Load()`:
+    * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
+    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * Add the events you want to add to your chart, using the `[chart_instance].AddEvent()` method. In this case, those methods are defined as JavaScript functions in the corresponding `.aspx` file.
+    * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, followed by some JavaScript functions and buttons, and finally within a `<form><div>` render the chart.
 
 > Refer to [Column 2D chart]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts) for more information on the configuration and data for this chart type.
