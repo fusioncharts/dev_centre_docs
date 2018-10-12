@@ -72,7 +72,7 @@ End Class
 </div>
 </div>
 
-The HTML template for aspx file is shown below:
+The HTML template for `aspx` file is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

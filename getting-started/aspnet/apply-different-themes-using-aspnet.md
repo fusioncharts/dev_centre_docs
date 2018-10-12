@@ -7,12 +7,12 @@ heading: Apply Different Themes using ASP.NET
 In FusionCharts Suite XT you can manually set the cosmetics and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. FusionCharts Suite ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
 
 FusionCharts Suite XT ships with the following predefined themes:
-`fusion` (since v3.13.0)
-`gammel` (since v3.13.0)
-`candy` (since v3.13.0)
-`zune`
-`ocean`
-`carbon`
+* `fusion` (since v3.13.0)
+* `gammel` (since v3.13.0)
+* `candy` (since v3.13.0)
+* `zune`
+* `ocean`
+* `carbon`
 
 This article focuses on how you can apply different themes to the chart at runtime using FusionCharts ASP.NET `C#` & `VB` wrapper. Click any radio button, to see how the look and feel of the chart change with each theme.
 
@@ -71,7 +71,7 @@ End Class
 </div>
 </div>
 
-The HTML template for aspx file is shown below:
+The HTML template for `aspx` file is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
