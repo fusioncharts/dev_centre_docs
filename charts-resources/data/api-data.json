@@ -4610,6 +4610,138 @@
                         }
                     }
                 },
+                "beforedataload": {
+                    "id": "event-beforedataload",
+                    "name": "beforedataload",
+                    "kind": "event",
+                    "access": "",
+                    "scope": "instance",
+                    "virtual": false,
+                    "description": "Triggered when the data is updated to a chart. This hook can be used by the theme manager to update the chart data.",
+                    "examples": {},
+                    "params": {
+                        "eventObj": {
+                            "name": "eventObj",
+                            "subparams": {
+                                "eventType": {
+                                    "name": "eventType",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Type (name) of the event triggered",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "eventId": {
+                                    "name": "eventId",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sender": {
+                                    "name": "sender",
+                                    "type": [
+                                        "FusionCharts"
+                                    ],
+                                    "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "cancelled": {
+                                    "name": "cancelled",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to __true__ when `eventObj.stopPropagation()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "stopPropagation": {
+                                    "name": "stopPropagation",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function called from within a listener to prevent subsequent listeners from being executed.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "defaultPrevented": {
+                                    "name": "defaultPrevented",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether the default action of the event was prevented; set to __true__ when `eventObj.preventDefault()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "preventDefault": {
+                                    "name": "preventDefault",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the [beforeResize]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-beforeResize) event, the chart will not be resized and the [resizeCancelled]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-resizeCancelled) event will be triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detached": {
+                                    "name": "detached",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to __true__ when eventObj.detachHandler() is called ",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detachHandler": {
+                                    "name": "detachHandler",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to allow the listener to remove itself rather than being called externally by the [removeEventListener()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#removeEventListener) method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "data": {
+                                    "name": "data",
+                                    "subparams": {
+                                        "prevState": {
+                                            "name": "data",
+                                            "type": [
+                                                "object"
+                                            ],
+                                            "description": "Chart data",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "dataUpdated": {
                     "id": "event-dataUpdated",
                     "name": "dataUpdated",
@@ -29558,6 +29690,122 @@
                         }
                     }
                 },
+                "chartTypeInvalid": {
+                    "id": "event-chartTypeInvalid",
+                    "name": "chartTypeInvalid",
+                    "kind": "event",
+                    "access": "",
+                    "scope": "instance",
+                    "virtual": false,
+                    "description": "Triggered when the given chart type is invalid or the chart type is not specified.",
+                    "examples": {},
+                    "params": {
+                        "eventObj": {
+                            "name": "eventObj",
+                            "subparams": {
+                                "eventType": {
+                                    "name": "eventType",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Type (name) of the event triggered",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "eventId": {
+                                    "name": "eventId",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sender": {
+                                    "name": "sender",
+                                    "type": [
+                                        "FusionCharts"
+                                    ],
+                                    "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "cancelled": {
+                                    "name": "cancelled",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to __true__ when `eventObj.stopPropagation()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "stopPropagation": {
+                                    "name": "stopPropagation",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function called from within a listener to prevent subsequent listeners from being executed.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "defaultPrevented": {
+                                    "name": "defaultPrevented",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether the default action of the event was prevented; set to __true__ when `eventObj.preventDefault()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "preventDefault": {
+                                    "name": "preventDefault",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the [beforeResize]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-beforeResize) event, the chart will not be resized and the [resizeCancelled]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-resizeCancelled) event will be triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detached": {
+                                    "name": "detached",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to __true__ when eventObj.detachHandler() is called ",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detachHandler": {
+                                    "name": "detachHandler",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to allow the listener to remove itself rather than being called externally by the [removeEventListener()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#removeEventListener) method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                }
+                            }
+                        }
+                    }
+                },
                 "overlayButtonClick": {
                     "id": "event-overlayButtonClick",
                     "name": "overlayButtonClick",
@@ -30134,6 +30382,254 @@
                         }
                     }
                 },
+                "animationInvoked": {
+                    "id": "event-animationInvoked",
+                    "name": "animationInvoked",
+                    "kind": "event",
+                    "access": "",
+                    "scope": "instance",
+                    "virtual": false,
+                    "description": "Triggered when the animation is started in the chart.",
+                    "examples": {},
+                    "params": {
+                        "eventObj": {
+                            "name": "eventObj",
+                            "subparams": {
+                                "eventType": {
+                                    "name": "eventType",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Type (name) of the event triggered",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "eventId": {
+                                    "name": "eventId",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sender": {
+                                    "name": "sender",
+                                    "type": [
+                                        "FusionCharts"
+                                    ],
+                                    "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "cancelled": {
+                                    "name": "cancelled",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to __true__ when `eventObj.stopPropagation()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "stopPropagation": {
+                                    "name": "stopPropagation",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function called from within a listener to prevent subsequent listeners from being executed.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "defaultPrevented": {
+                                    "name": "defaultPrevented",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether the default action of the event was prevented; set to __true__ when `eventObj.preventDefault()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "preventDefault": {
+                                    "name": "preventDefault",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the [beforeResize]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-beforeResize) event, the chart will not be resized and the [resizeCancelled]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-resizeCancelled) event will be triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detached": {
+                                    "name": "detached",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to __true__ when eventObj.detachHandler() is called ",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detachHandler": {
+                                    "name": "detachHandler",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to allow the listener to remove itself rather than being called externally by the [removeEventListener()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#removeEventListener) method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "data": {
+                                    "name": "data",
+                                    "subparams": {
+                                        "duration": {
+                                            "name": "duration",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Specifies the animation duration is milliseconds(ms).",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "beforedraw": {
+                    "id": "event-beforedraw",
+                    "name": "beforedraw",
+                    "kind": "event",
+                    "access": "",
+                    "scope": "instance",
+                    "virtual": false,
+                    "description": "Triggered when the chart is redrawn because of a data update, resize, change of chart message, or change of chart type.",
+                    "examples": {},
+                    "params": {
+                        "eventObj": {
+                            "name": "eventObj",
+                            "subparams": {
+                                "eventType": {
+                                    "name": "eventType",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Type (name) of the event triggered",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "eventId": {
+                                    "name": "eventId",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sender": {
+                                    "name": "sender",
+                                    "type": [
+                                        "FusionCharts"
+                                    ],
+                                    "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "cancelled": {
+                                    "name": "cancelled",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to __true__ when `eventObj.stopPropagation()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "stopPropagation": {
+                                    "name": "stopPropagation",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function called from within a listener to prevent subsequent listeners from being executed.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "defaultPrevented": {
+                                    "name": "defaultPrevented",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether the default action of the event was prevented; set to __true__ when `eventObj.preventDefault()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "preventDefault": {
+                                    "name": "preventDefault",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the [beforeResize]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-beforeResize) event, the chart will not be resized and the [resizeCancelled]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-resizeCancelled) event will be triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detached": {
+                                    "name": "detached",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to __true__ when eventObj.detachHandler() is called ",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detachHandler": {
+                                    "name": "detachHandler",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to allow the listener to remove itself rather than being called externally by the [removeEventListener()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#removeEventListener) method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                }
+                            }
+                        }
+                    }
+                },
                 "drawComplete": {
                     "id": "event-drawComplete",
                     "name": "drawComplete",
@@ -30374,6 +30870,122 @@
                         }
                     }
                 },
+                "drawcancelled": {
+                    "id": "event-drawcancelled",
+                    "name": "drawcancelled",
+                    "kind": "event",
+                    "access": "",
+                    "scope": "instance",
+                    "virtual": false,
+                    "description": "Triggered when `event.preventDefault()` is called from **FusionCharts#event:beforeDraw**.",
+                    "examples": {},
+                    "params": {
+                        "eventObj": {
+                            "name": "eventObj",
+                            "subparams": {
+                                "eventType": {
+                                    "name": "eventType",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Type (name) of the event triggered",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "eventId": {
+                                    "name": "eventId",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sender": {
+                                    "name": "sender",
+                                    "type": [
+                                        "FusionCharts"
+                                    ],
+                                    "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "cancelled": {
+                                    "name": "cancelled",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to __true__ when `eventObj.stopPropagation()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "stopPropagation": {
+                                    "name": "stopPropagation",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function called from within a listener to prevent subsequent listeners from being executed.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "defaultPrevented": {
+                                    "name": "defaultPrevented",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether the default action of the event was prevented; set to __true__ when `eventObj.preventDefault()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "preventDefault": {
+                                    "name": "preventDefault",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the [beforeResize]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-beforeResize) event, the chart will not be resized and the [resizeCancelled]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-resizeCancelled) event will be triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detached": {
+                                    "name": "detached",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to __true__ when eventObj.detachHandler() is called ",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detachHandler": {
+                                    "name": "detachHandler",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to allow the listener to remove itself rather than being called externally by the [removeEventListener()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#removeEventListener) method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                }
+                            }
+                        }
+                    }
+                },
                 "renderComplete": {
                     "id": "event-renderComplete",
                     "name": "renderComplete",
@@ -30381,7 +30993,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time a chart is rendered using the [render()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#render) method, the [chartType()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#chartType) method, or the [setChartData()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#setChartData) method. It is also triggered every time chart data is successfully updated, which triggers a re-render internally. \n\n The difference between this event and the [rendered]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-rendered) event is that the `rendered` event is triggered only when the `.render()` method is called. \n\n The `renderComplete` event can be triggered without triggering the [beforeRender]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-beforeRender) event during data update. \n\n> If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in  this event handler, using `setTimeout`.\n\n \n\n> The default animation duration is __1000ms__ (one second). The animation duration can be customized using the `animationDuration` chart attribute.\n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9hy90o5x/ '@@ btn link-underline')",
+                    "description": "Triggered every time a chart is rendered using the [render()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#render) method, the [chartType()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#chartType) method, or the [setChartData()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#setChartData) method. It is also triggered every time chart data is successfully updated, which triggers a re-render internally. \n\n The difference between this event and the [rendered]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-rendered) event is that the `rendered` event is triggered only when the `.render()` method is called.",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -37247,7 +37859,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when chart plots are not hovered and the event is fired when the mouse is placed at the right most corner of the canvas.",
+                    "description": "Triggered after you hide the crossline at runtime when the chart plots are not hovered. This event is fired when the mouse is placed outside the chart canvas.",
                     "params": {
                         "eventObj": {
                             "name": "eventObj",
@@ -37411,6 +38023,122 @@
                                         "Boolean"
                                     ],
                                     "description": "Indicates whether the `showParent` attribute is enabled or not",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                }
+                            }
+                        }
+                    }
+                },
+                "containerNotFound": {
+                    "id": "event-containerNotFound",
+                    "name": "containerNotFound",
+                    "kind": "event",
+                    "access": "",
+                    "scope": "instance",
+                    "virtual": false,
+                    "description": "Triggered if the container is either not found or not provided after invoking **render** API.",
+                    "examples": {},
+                    "params": {
+                        "eventObj": {
+                            "name": "eventObj",
+                            "subparams": {
+                                "eventType": {
+                                    "name": "eventType",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Type (name) of the event triggered",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "eventId": {
+                                    "name": "eventId",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sender": {
+                                    "name": "sender",
+                                    "type": [
+                                        "FusionCharts"
+                                    ],
+                                    "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "cancelled": {
+                                    "name": "cancelled",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to __true__ when `eventObj.stopPropagation()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "stopPropagation": {
+                                    "name": "stopPropagation",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function called from within a listener to prevent subsequent listeners from being executed.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "defaultPrevented": {
+                                    "name": "defaultPrevented",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether the default action of the event was prevented; set to __true__ when `eventObj.preventDefault()` is called.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "preventDefault": {
+                                    "name": "preventDefault",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the [beforeResize]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-beforeResize) event, the chart will not be resized and the [resizeCancelled]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-resizeCancelled) event will be triggered.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detached": {
+                                    "name": "detached",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to __true__ when eventObj.detachHandler() is called ",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "detachHandler": {
+                                    "name": "detachHandler",
+                                    "type": [
+                                        "function"
+                                    ],
+                                    "description": "Function to allow the listener to remove itself rather than being called externally by the [removeEventListener()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#removeEventListener) method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition.",
                                     "defaultvalue": "",
                                     "optional": "",
                                     "nullable": "",
