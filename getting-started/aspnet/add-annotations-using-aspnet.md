@@ -12,55 +12,6 @@ In this article, we'll create a __Spline__ chart and add annotations to highligh
 
 The consolidated code for the above chart is shown below:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='csharp'>C#</a></li>
-    <li><a data-toggle='vb'>VB</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
-using System;
-using FusionCharts.Charts;
-
-public partial class Pages_ChartAnnotations: System.Web.UI.Page {
-    protected void Page_Load(object sender, EventArgs e) {
-        //json data in string format
-        string jsonData = "{'chart':{'caption':'Average Monthly Temperature in Texas','yAxisName':'Average Monthly Temperature','anchorradius':'5','plotToolText':'Average temperature in $label is <b>$dataValue<\/b>','showHoverEffect':'1','showvalues':'0','numberSuffix':'°C','theme':'fusion','anchorBgColor':'#72D7B2','paletteColors':'#72D7B2'},'annotations':{'groups':[{'id':'anchor-highlight','items':[{'id':'high-star','type':'circle','x':'$dataset.0.set.7.x','y':'$dataset.0.set.7.y','radius':'12','color':'#cc0000','border':'2','borderColor':'#0075c2'},{'id':'label','type':'text','text':'Hottest Month','fillcolor':'#0075c2','rotate':'90','x':'$dataset.0.set.7.x+75','y':'$dataset.0.set.7.y-2'}]}]},'data':[{'label':'Jan','value':'1'},{'label':'Feb','value':'5'},{'label':'Mar','value':'10'},{'label':'Apr','value':'12'},{'label':'May','value':'14'},{'label':'Jun','value':'16'},{'label':'Jul','value':'20'},{'label':'Aug','value':'22'},{'label':'Sep','value':'20'},{'label':'Oct','value':'16'},{'label':'Nov','value':'7'},{'label':'Dec','value':'2'}]}";
-        // create chart instance
-        // parameter
-        // chart type, chart id, chart width, chart height, data format, data source
-        Chart spline = new Chart("spline", "spline_chart", "700", "400", "json", jsonData);
-        //render chart
-        Literal1.Text = spline.Render();
-    }
-}
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
-Imports FusionCharts.Charts
-Partial Class Pages_ChartAnnotation
-Inherits System.Web.UI.Page
-Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load store chart  data url as  string
-Dim jsonData As String
-jsonData = "{'chart':{'caption':'Average Monthly Temperature in Texas','yAxisName':'Average Monthly Temperature','anchorradius':'5','plotToolText':'Average temperature in $label is <b>$dataValue<\/b>','showHoverEffect':'1','showvalues':'0','numberSuffix':'°C','theme':'fusion','anchorBgColor':'#72D7B2','paletteColors':'#72D7B2'},'annotations':{'groups':[{'id':'anchor-highlight','items':[{'id':'high-star','type':'circle','x':'$dataset.0.set.7.x','y':'$dataset.0.set.7.y','radius':'12','color':'#cc0000','border':'2','borderColor':'#0075c2'},{'id':'label','type':'text','text':'Hottest Month','fillcolor':'#0075c2','rotate':'90','x':'$dataset.0.set.7.x+75','y':'$dataset.0.set.7.y-2'}]}]},'data':[{'label':'Jan','value':'1'},{'label':'Feb','value':'5'},{'label':'Mar','value':'10'},{'label':'Apr','value':'12'},{'label':'May','value':'14'},{'label':'Jun','value':'16'},{'label':'Jul','value':'20'},{'label':'Aug','value':'22'},{'label':'Sep','value':'20'},{'label':'Oct','value':'16'},{'label':'Nov','value':'7'},{'label':'Dec','value':'2'}]}"
-'create gauge instance
-'chart type, chart id, width, height, data format, data source as url
-Dim spline As New Chart("spline", "spline_chart", "700", "400", "json", jsonData)
-'render gauge
-Literal1.Text = spline.Render()
-End Sub
-End Class
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
 
 The HTML template for `aspx` file is shown below:
 
