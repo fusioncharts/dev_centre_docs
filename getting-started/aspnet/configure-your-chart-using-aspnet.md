@@ -8,9 +8,9 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure your charts using FusionCharts ASP.NET __C#__ & __VB__ wrapper to perform the following:
 
-* [Update Chart Data](#heading=h.vw1bbbfyzkal)
+* [Update Chart Data]({% site.baseurl %}/getting-started/aspnet/configure-your-chart-using-aspnet#update-chart-data-1)
 
-* [Update Chart Attributes](https://docs.google.com/document/d/1HIFYRnh7gannNn0X0FiG-Zb1Uryjmd9lZE3SRmnJ8vE/edit#heading=h.tl9bxv5kakku)
+* [Update Chart Attributes]({% site.baseurl %}/getting-started/aspnet/configure-your-chart-using-aspnet#update-chart-attributes-2)
 
 ## Update Chart Data
 
