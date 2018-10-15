@@ -95,6 +95,7 @@
             args.container.appendChild(buttonDiv);
         },
         'rendered': function(evt, arg) {
+            debugger;
             var feedTable = function(init) {
                     var chartIns = document.getElementById("fc"),
                         data = chartIns && chartIns.getData && chartIns.getData(),
