@@ -83,8 +83,8 @@
             for (i = 0; i < numVals; i += 1) {
                 estimatedVal = estimatedOrigValues[i];
                 availableVal = availableOrigValues[i];
-                document.getElementById('est-0' + i).innerHTML = estimatedVal;
-                document.getElementById('est-1' + i).innerHTML = availableVal;
+                document.getElementById('est-0-' + i).innerHTML = estimatedVal;
+                document.getElementById('est-1-' + i).innerHTML = availableVal;
             }
         }
     }
