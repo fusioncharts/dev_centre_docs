@@ -68,6 +68,7 @@
             args.container.parentNode.insertBefore(tableCont, args.container.nextSibling);
         },
         'dataplotDragEnd': function(evt, arg) {
+            debugger;
             var dtIndx = arg && arg.dataIndex,
                 val = arg && parseInt(arg.endValue, 10);
 
@@ -80,7 +81,7 @@
                 val;
             for (i = 0; i < numVals; i += 1) {
                 val = estimatedOrigValues[i];
-                document.getElementById('est-' + (i + 1)).innerHTML = val;
+                document.getElementById('est-' + i).innerHTML = val;
             }
         }
     }
