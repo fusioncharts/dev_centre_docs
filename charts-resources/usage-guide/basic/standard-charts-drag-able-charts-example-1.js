@@ -72,11 +72,11 @@
                 datasetIndex = arg && arg.datasetIndex,
                 val = arg && parseInt(arg.endValue, 10);
 
-            document.getElementById('est-' + datasetIndex +  '-' +dtIndx).innerHTML = val;
+            document.getElementById('est-' + datasetIndex + '-' + dtIndx).innerHTML = val;
         },
         'dataRestored': function(evtObj) {
             var estimatedOrigValues = ["19000", "16500", "14300", "10000", "9800"],
-            availableOrigValues = ["6000", "9500", "11900", "8000", "9700"],
+                availableOrigValues = ["6000", "9500", "11900", "8000", "9700"],
                 numVals = estimatedOrigValues.length,
                 i,
                 val;
