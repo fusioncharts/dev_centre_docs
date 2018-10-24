@@ -18,7 +18,7 @@ heading: Version 3.11.x
     * `toolbarX`
     * `toolbarY`
     * `toolbarHAlign`
-    * `toolbarYAlign`
+    * `toolbarVAlign`
     * `toolbarPosition`
 
 <h4>Improvements</h4>

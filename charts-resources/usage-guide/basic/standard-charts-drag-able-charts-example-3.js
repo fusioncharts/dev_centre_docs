@@ -79,7 +79,7 @@
         'dataplotdragend': function(evt, arg) {
             var dsIndx = arg && arg.datasetIndex,
                 dtIndx = arg && arg.dataIndex,
-				val = arg && parseInt(arg.endValue, 10);
+                val = arg && parseInt(arg.endValue, 10);
             document.getElementById("area_" + dsIndx + '-' + dtIndx).innerHTML = val;
 
         },
