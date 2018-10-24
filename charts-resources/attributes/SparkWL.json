@@ -677,7 +677,7 @@
         "description": "These attributes let you configure how your plot (win/loss bars) will appear on the chart. "
     },
     {
-        "table": "Toolbar",
+        "table": "Toolbar Attributes",
         "attrs": [
             {
                 "description": "Where to position the toolbar on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",

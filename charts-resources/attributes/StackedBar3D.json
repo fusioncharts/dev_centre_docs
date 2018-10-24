@@ -1863,7 +1863,7 @@
         "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details. "
     },
     {
-        "table": "Toolbar",
+        "table": "Toolbar Attributes",
         "attrs": [
             {
                 "description": "Where to position the toolbar on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",
