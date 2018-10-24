@@ -1344,12 +1344,6 @@
                 "name": "paletteThemeColor"
             },
             {
-                "description": "Sets the color of the toolbar buttons.",
-                "range": "Any (color code without the # prefix)",
-                "type": "Color",
-                "name": "toolbarButtonColor"
-            },
-            {
                 "description": "Sets the color of the zoom pane border.",
                 "range": "Any (color code without the # prefix)",
                 "type": "Color",
@@ -1390,12 +1384,6 @@
                 "range": "0/1",
                 "type": "Boolean",
                 "name": "showToolBarButtonTooltext"
-            },
-            {
-                "description": "Replaces the default tooltext of the 'Reset Chart' button with provided string.",
-                "range": "Any string",
-                "type": "String",
-                "name": "btnResetChartTooltext"
             },
             {
                 "description": "Replaces the default tooltext of 'Switch to Pin Mode' button with provided string.",
