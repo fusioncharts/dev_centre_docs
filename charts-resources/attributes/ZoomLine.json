@@ -2062,6 +2062,13 @@
                 "range": "",
                 "type": "Number",
                 "name": "toolbarButtonScale"
+            },
+            {
+                "description": "You can reverse the order in which the toolbar icons are rendered using this attribute.",
+                "range": "0/1",
+                "type": "Boolean",
+                "versionsince": "3.12.1",
+                "name": "reverseToolbarIcons"
             }
         ],
         "description": "Using this set of attributes, you can customize the toolbar on the chart. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping."
