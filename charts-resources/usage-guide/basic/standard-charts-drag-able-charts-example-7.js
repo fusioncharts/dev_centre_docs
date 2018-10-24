@@ -65,7 +65,7 @@
                 "value": "9800"
             }]
         }]
-    }, 
+    },
     events: {
         'beforeRender': function(evt, arg) {
             var controllers = document.createElement('div');

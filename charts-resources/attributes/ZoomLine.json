@@ -1194,12 +1194,6 @@
                 "name": "paletteThemeColor"
             },
             {
-                "description": "Sets the color of the toolbar buttons.",
-                "range": "Any (color code without the # prefix)",
-                "type": "Color",
-                "name": "toolbarButtonColor"
-            },
-            {
                 "description": "Sets the color of the zoom pane border.",
                 "range": "Any (color code without the # prefix)",
                 "type": "Color",
@@ -1240,12 +1234,6 @@
                 "range": "0/1",
                 "type": "Boolean",
                 "name": "showToolBarButtonTooltext"
-            },
-            {
-                "description": "Replaces the default tooltext of the 'Reset Chart' button with provided string.",
-                "range": "Any string",
-                "type": "String",
-                "name": "btnResetChartTooltext"
             },
             {
                 "description": "Replaces the default tooltext of 'Switch to Pin Mode' button with provided string.",
@@ -2018,6 +2006,72 @@
             }
         ],
         "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details. "
+    },
+    {
+        "table": "Toolbar Attributes",
+        "attrs": [
+            {
+                "description": "Where to position the toolbar on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",
+                "range": "TL, TR, BL, BR, CC",
+                "type": "String",
+                "versionsince": "3.11.3",
+                "name": "toolbarPosition"
+            },
+            {
+                "description": "Sets the toolbox position on the chart with respect to x-axis.",
+                "range": "",
+                "type": "Number",
+                "versionsince": "3.11.3",
+                "name": "toolbarX"
+            },
+            {
+                "description": "Sets the toolbox position on the chart with respect to y-axis.",
+                "range": "",
+                "type": "Number",
+                "versionsince": "3.11.3",
+                "name": "toolbarY"
+            },
+            {
+                "description": "Sets the horizontal alignment of the toolbar on the chart.",
+                "range": "Left, Right",
+                "type": "String",
+                "versionsince": "3.11.3",
+                "name": "toolbarHAlign"
+            },
+            {
+                "description": "Sets the vertical alignment of the toolbar on the chart",
+                "range": "Top, Bottom",
+                "type": "String",
+                "versionsince": "3.11.3",
+                "name": "toolbarVAlign"
+            },
+            {
+                "description": "Sets the color of the toolbar buttons.",
+                "range": "Any (color code without the # prefix)",
+                "type": "Color",
+                "name": "toolbarButtonColor"
+            },
+            {
+                "description": "Enables/disables display of tooltips for toolbar buttons.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "showToolBarButtonTooltext"
+            },
+            {
+                "description": "You can change the scale of the toolbar by specifying a value for this attribute.",
+                "range": "",
+                "type": "Number",
+                "name": "toolbarButtonScale"
+            },
+            {
+                "description": "You can reverse the order in which the toolbar icons are rendered using this attribute.",
+                "range": "0/1",
+                "type": "Boolean",
+                "versionsince": "3.12.1",
+                "name": "reverseToolbarIcons"
+            }
+        ],
+        "description": "Using this set of attributes, you can customize the toolbar on the chart. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping."
     },
     {
         "table": "Attributes for Exporting Charts",
