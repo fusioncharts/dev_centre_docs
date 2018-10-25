@@ -8,7 +8,7 @@ FusionCharts lets you pass the complete JSON/XML chart data as a static string t
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
-This article explains how you can set the chart data using the URL of the corresponding file using FusionCharts JSP wrapper.
+This article explains how you can set the chart data using the URL of the corresponding file using FusionCharts Rails Gem wrapper.
 
 ## Load data using JSON as URL
 
@@ -78,63 +78,42 @@ Copy this into a file, name it `oilReserves.json`, and store it in the same fold
 The full code of the above sample is given below:
 
 ```
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@page import="java.util.*" %>
-<%@page import="fusioncharts.FusionCharts" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<title>FusionCharts | Chart using data from JSON URL</title>
-<link href="../Styles/ChartSampleStyleSheet.css" rel="stylesheet" />
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<%
+    def getChart
+        # Chart rendering 
+        chart = Fusioncharts::Chart.new({
+                width: "700",
+                height: "400",
+                type: "column2d", 
+                renderAt: "chartContainer",
+                dataFormat: "jsonurl",
+                dataSource: "oilReserves.json"
+            })
+    end
+%>
 
-</head>
-
-<body>
-    <h3>Chart using data from JSON URL</h3>
-    <div><span><a href="../Index.jsp">Go Back</a></span></div>
-    <div id="column_chart"></div>
-    <%
-        String jsonDataUrl;
-        jsonDataUrl = "../oilReserves.json";
-        
-        FusionCharts column_chart = new FusionCharts(
-                  "column2d",
-                  "column",
-                  "700", 
-                  "400",
-                  "column_chart",
-                  "jsonurl",
-                 jsonDataUrl                  
-                );
-        %>
-
-    <%=column_chart.render()%>
-</body>
-
-</html>
+<h3>Chart using data from JSON URL</h3>
+<div id="chartContainer"></div>
+<%= getChart.render() %>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Import and resolve the dependency `fusioncharts.FusionCharts`
+1. Include the necessary libraries and components using `require`. For example, `fusioncharts-rails`, `fusioncharts`, etc
 
-2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`, and **all the other theme files**. 
+2. Store the chart data in a JSON file.
 
-3. Store the chart data in the JSON file.
-
-4. Store the chart configuration in a JSON object. In the JSON object:
+3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-5. To set the datasource using URL:
+4. To set the datasource using URL:
     * Set the value of the `dataFormat` to **jsonurl**.
     * Set the static URL to `dataSource` to render the above chart.
 
-6. Include a `<%= %>` tag that contains `column_chart.render()`.
+5. Include a `<%= %>` tag that contains `getChart.render()`.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -161,60 +140,39 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 The full code of the above sample is:
 
 ```
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@page import="java.util.*" %>
-<%@page import="fusioncharts.FusionCharts" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<title>FusionCharts | Chart using data from XML URL</title>
-<link href="../Styles/ChartSampleStyleSheet.css" rel="stylesheet" />
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<%
+    def getChart
+        # Chart rendering 
+        chart = Fusioncharts::Chart.new({
+                width: "700",
+                height: "400",
+                type: "column2d", 
+                renderAt: "chartContainer",
+                dataFormat: "xmlurl",
+                dataSource: "oilReserves.xml"
+            })
+    end
+%>
 
-</head>
-
-<body>
-    <h3>Chart using data from XML URL</h3>
-    <div id="column_chart"></div>
-    <div><span><a href="../Index.jsp">Go Back</a></span></div>
-    <%
-        String xmlDataUrl;
-        xmlDataUrl = "../oilReserves.xml";
-        
-        FusionCharts column_chart = new FusionCharts(
-                  "column2d",
-                  "column",
-                  "700", 
-                  "400",
-                  "column_chart",
-                  "xmlurl",
-                 xmlDataUrl                   
-                );
-        %>
-
-    <%=column_chart.render()%>
-</body>
-
-</html>
+<h3>Chart using data from XML URL</h3>
+<div id="chartContainer"></div>
+<%= getChart.render() %>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Import and resolve the dependency `fusioncharts.FusionCharts`
+1. Include the necessary libraries and components using `require`. For example, `fusioncharts-rails`, `fusioncharts`, etc
 
-2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`, and **all the other theme files**. 
+2. Store the chart data in a XML file.
 
-3. Store the chart data in the XML file.
-
-4. Store the chart configuration in a XML object. In the XML object:
+3. Store the chart configuration in a XML object. In the XML object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as XML.
     * Embed the xml data as the value of `dataSource`.
 
-5. To set the datasource using URL:
+4. To set the datasource using URL:
     * Set the value of the `dataFormat` to **xmlurl**.
     * Set the static URL to `dataSource` to render the above chart.
 
-6. Include a `<%= %>` tag that contains `column_chart.render()`.
+5. Include a `<%= %>` tag that contains `getChart.render()`.
