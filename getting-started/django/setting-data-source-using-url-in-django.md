@@ -8,7 +8,7 @@ FusionCharts lets you pass the complete JSON/XML chart data as a static string t
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
-This article explains how you can set the chart data using the URL of the corresponding file using FusionCharts JSP wrapper.
+This article explains how you can set the chart data using the URL of the corresponding file using FusionCharts Django wrapper.
 
 ## Load data using JSON as URL
 
@@ -71,70 +71,73 @@ The JSON representation for the above table looks as shown below:
 }
 ```
 
-Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your page page.
+Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your page.
 
 > If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
 The full code of the above sample is given below:
 
 ```
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@page import="java.util.*" %>
-<%@page import="fusioncharts.FusionCharts" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Include the `fusioncharts.py` file which has required functions to embed the charts in html page from ..fusioncharts import FusionCharts
+
+# Loading Data from a Static JSON String
+# It is a example to show a Column 2D chart where data is passed as JSON string format.
+# The `chart` method is defined to load chart data from an JSON string.
+
+def chart(request):
+    # Create an object for the column2d chart using the FusionCharts class constructor
+    column2d = FusionCharts("column2d", "ex1" , "700", "400", "chart-1", "jsonurl","oilReserves.json")
+  
+    # returning complete JavaScript and HTML code, which is used to generate chart in the browsers.
+    return  render(request, 'index.html', {'output' : column2d.render(),'chartTitle': 'Chart using data from JSON URL'})
+```
+
+The HTML template used to render the chart is shown below:
+
+```
+<!DOCTYPE html>
 <html>
-<title>FusionCharts | Chart using data from JSON URL</title>
-<link href="../Styles/ChartSampleStyleSheet.css" rel="stylesheet" />
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
+<head>
+    <title>FC-python wrapper</title>
+    
+   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
 </head>
-
-<body>
-    <h3>Chart using data from JSON URL</h3>
-    <div><span><a href="../Index.jsp">Go Back</a></span></div>
-    <div id="column_chart"></div>
-    <%
-        String jsonDataUrl;
-        jsonDataUrl = "../oilReserves.json";
-        
-        FusionCharts column_chart = new FusionCharts(
-                  "column2d",
-                  "column",
-                  "700", 
-                  "400",
-                  "column_chart",
-                  "jsonurl",
-                 jsonDataUrl                  
-                );
-        %>
-
-    <%=column_chart.render()%>
-</body>
-
 </html>
 ```
 
-The above chart has been rendered using the following steps:
+The sample code provided above corresponds to the following tasks:
 
-1. Import and resolve the dependency `fusioncharts.FusionCharts`
+1. Import and resolve dependencies:
 
-2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`, and **all the other theme files**. 
+    * `render` from `django.shortcuts`, and `HttpResponse` from `django.http`
 
-3. Store the chart data in the JSON file.
+    * `FusionCharts` from `fusioncharts` 
 
-4. Store the chart configuration in a JSON object. In the JSON object:
+2. Define a function `chart`, which takes `request` as an argument. Create a variable `column2d`, which is an instance of the `FusionCharts` class. As argument values for `FusionCharts`, pass the chart details and the configuration (JSON string): 
+
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-5. To set the datasource using URL:
+3. To set the datasource using URL:
     * Set the value of the `dataFormat` to **jsonurl**.
     * Set the static URL to `dataSource` to render the above chart.
 
-6. Include a `<%= %>` tag that contains `column_chart.render()`.
+4. Return the output of the `render` function (defined in `FusionCharts`):
+
+    * Pass the `request`, which is also the only argument accepted by the `chart` function you are defining.
+
+    * Pass the relative path of the HTML template, where the chart will be rendered.
+
+    * Pass a dictionary:
+
+        * Set the `output` to `column2d.render()`.
+
+        * Set the `chartTitle` to `Chart using data from JSON URL`.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -161,60 +164,63 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 The full code of the above sample is:
 
 ```
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@page import="java.util.*" %>
-<%@page import="fusioncharts.FusionCharts" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Include the `fusioncharts.py` file which has required functions to embed the charts in html page from ..fusioncharts import FusionCharts
+
+# Loading Data from a Static JSON String
+# It is a example to show a Column 2D chart where data is passed as JSON string format.
+# The `chart` method is defined to load chart data from an JSON string.
+
+def chart(request):
+    # Create an object for the column2d chart using the FusionCharts class constructor
+    column2d = FusionCharts("column2d", "ex1" , "700", "400", "chart-1", "xmlurl","oilReserves.xml")
+  
+    # returning complete JavaScript and HTML code, which is used to generate chart in the browsers.  
+    return  render(request, 'index.html', {'output' : column2d.render(), 'chartTitle': 'Chart using data from XML URL'})
+```
+
+The HTML template used to render the chart is shown below:
+
+```
+<!DOCTYPE html>
 <html>
-<title>FusionCharts | Chart using data from XML URL</title>
-<link href="../Styles/ChartSampleStyleSheet.css" rel="stylesheet" />
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
+<head>
+    <title>FC-python wrapper</title>
+    
+   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
 </head>
-
-<body>
-    <h3>Chart using data from XML URL</h3>
-    <div id="column_chart"></div>
-    <div><span><a href="../Index.jsp">Go Back</a></span></div>
-    <%
-        String xmlDataUrl;
-        xmlDataUrl = "../oilReserves.xml";
-        
-        FusionCharts column_chart = new FusionCharts(
-                  "column2d",
-                  "column",
-                  "700", 
-                  "400",
-                  "column_chart",
-                  "xmlurl",
-                 xmlDataUrl                   
-                );
-        %>
-
-    <%=column_chart.render()%>
-</body>
-
 </html>
 ```
 
-The above chart has been rendered using the following steps:
+The sample code provided above corresponds to the following tasks:
 
-1. Import and resolve the dependency `fusioncharts.FusionCharts`
+1. Import and resolve dependencies:
 
-2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`, and **all the other theme files**. 
+    * `render` from `django.shortcuts`, and `HttpResponse` from `django.http`
 
-3. Store the chart data in the XML file.
+    * `FusionCharts` from `fusioncharts` 
 
-4. Store the chart configuration in a XML object. In the XML object:
+2. Define a function `chart`, which takes `request` as an argument. Create a variable `column2d`, which is an instance of the `FusionCharts` class. As argument values for `FusionCharts`, pass the chart details and the configuration (XML string): 
+
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as XML.
-    * Embed the xml data as the value of `dataSource`.
+    * Embed the json data as the value of `dataSource`.
 
-5. To set the datasource using URL:
+3. To set the datasource using URL:
     * Set the value of the `dataFormat` to **xmlurl**.
     * Set the static URL to `dataSource` to render the above chart.
 
-6. Include a `<%= %>` tag that contains `column_chart.render()`.
+4. Return the output of the `render` function (defined in `FusionCharts`):
+
+    * Pass the `request`, which is also the only argument accepted by the `chart` function you are defining.
+
+    * Pass the relative path of the HTML template, where the chart will be rendered.
+
+    * Pass a dictionary:
+
+        * Set the `output` to `column2d.render()`.
+
+        * Set the `chartTitle` to `Chart using data from XML URL`.

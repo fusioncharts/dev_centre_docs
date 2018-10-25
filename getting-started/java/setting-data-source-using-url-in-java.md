@@ -71,7 +71,7 @@ The JSON representation for the above table looks as shown below:
 }
 ```
 
-Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your page page.
+Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your page.
 
 > If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
