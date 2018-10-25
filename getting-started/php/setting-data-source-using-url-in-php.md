@@ -193,10 +193,10 @@ The above chart has been rendered using the following steps:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as XML.
-    * Embed the json data as the value of `dataSource`.
+    * Embed the xml data as the value of `dataSource`.
 
 5. To set the datasource using URL:
-    * Set the value of the `dataFormat` to **jsonurl**.
+    * Set the value of the `dataFormat` to **xmlurl**.
     * Set the static URL to `dataSource` to render the above chart.
 
 6. Create a chart container to render the chart.
