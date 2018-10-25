@@ -204,6 +204,8 @@ ReactDOM.render(
 );
 ```
 
+The above chart has been rendered using the following steps:
+
 1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
 2. Store the chart configuration in a JSON object. In the JSON object:
