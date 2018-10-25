@@ -1204,7 +1204,7 @@
         "table": "Data Plot Cosmetics",
         "attrs": [
             {
-                "description": "If you wish to plot bars with round edges and fill them with a glass effect gradient, set this attribute to 1. The following functionalities will not work when this attribute is set to 1: `showShadow` attribute doesn't work any more. If you want to remove shadow from bars, you'll have to over-ride the shadow with a new shadow style (applied to DATAPLOT) with alpha as 0. Plot fill properties like gradient color, angle etc. will not work any more, as the colors for gradient are now calculated by the chart itself. Plot border properties also do not work in this mode. Also, you cannot render the border as dashed in this mode.",
+                "description": "If you wish to plot bars with round edges and fill them with a glass effect gradient, set this attribute to 1. The following functionalities will not work when this attribute is set to 1: `showShadow` attribute doesn't work any more. Plot fill properties like gradient color, angle etc. will not work any more, as the colors for gradient are now calculated by the chart itself. Plot border properties also do not work in this mode. Also, you cannot render the border as dashed in this mode.",
                 "range": "0/1",
                 "type": "Boolean",
                 "name": "useRoundEdges"
