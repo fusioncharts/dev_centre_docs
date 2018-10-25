@@ -92,6 +92,7 @@ def chart(request):
     return  render(request, 'chart-theme.html', {'output' : column2d.render(), 'chartTitle': 'Chart Themes'})
 
 ```
+
 The HTML template used to render the chart is shown below:
 
 ```
