@@ -113,7 +113,8 @@ Imports FusionCharts.Charts
 Partial Class JsonDataUrl
 Inherits System.Web.UI.Page
 
-Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load 'store chart  data url as  string
+Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+'store chart  data url as  string
 Dim jsonDataUrl As String
 jsonDataUrl = "oilReserves.json"
 'create gauge instance
@@ -276,7 +277,8 @@ public partial class XmlDataUrl : System.Web.UI.Page
 Imports FusionCharts.Charts
 Partial Class XmlDataUrl
 Inherits System.Web.UI.Page
-Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load 'store chart  data url as  string
+Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+'store chart  data url as  string
 Dim xmlDataUrl As String
 xmlDataUrl = "oilReserves.xml"
 'create gauge instance
