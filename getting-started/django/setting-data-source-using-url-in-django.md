@@ -8,7 +8,7 @@ FusionCharts lets you pass the complete JSON/XML chart data as a static string t
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
-This article explains how you can set the chart data using the URL of the corresponding file using FusionCharts Django wrapper.
+This article explains how you can set the chart data using the URL of the corresponding file using **FusionCharts Django wrapper**.
 
 ## Load data using JSON as URL
 
