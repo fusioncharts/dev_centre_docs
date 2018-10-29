@@ -211,7 +211,7 @@ The HTML template for `aspx` file is shown below:
 </div>
 </div>
 
-Apart from the usual boilerplate, the sample C# code provided above corresponds to the following tasks:
+Apart from the usual boilerplate, the sample __C#/VB__ code provided above corresponds to the following tasks:
 
 1. Import and resolve the dependencies like `System`, and  `FusionCharts.Charts`.
 
