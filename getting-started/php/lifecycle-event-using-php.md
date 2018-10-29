@@ -10,7 +10,7 @@ The sample in this article lists the basic lifestyle events at the time of rende
 
 A chart is shown below:
 
-{% embed_chartData lifecycle-event-server-side-example-1 json %}
+{% embed_chartData lifecycle-event-server-side-example-1.js json %}
 
 The full code of the above sample is given below:
 
