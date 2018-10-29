@@ -15,96 +15,79 @@ A chart is shown below:
 The full code of the above sample is given below:
 
 ```
-<!DOCTYPE html>
-<?php
-    /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
-    include("../includes/fusioncharts.php");
-?>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@page import="fusioncharts.FusionCharts" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
-    <title>FusionCharts | Export Chart As Image (client-side)</title>
-    <!-- FusionCharts Library -->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../Styles/ChartSampleStyleSheet.css" rel="stylesheet" />
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-    <script>
-        function onDataLoaded() {
-            document.getElementById("dataLoaded").innerHTML = "Chart Data is Loaded Succesfully";
-        }
-    </script>
+    <title>FusionCharts | sample to showcase one product life cycle event attachment</title>
 </head>
 
 <body>
-    <?php
-        $chartData ="{  
-            \"chart\":
-             {  
-                \"caption\": \"Countries With Most Oil Reserves [2017-18]\",
-                \"subCaption\": \"In MMbbl = One Million barrels\",
-                \"xAxisName\": \"Country\",
-                \"yAxisName\": \"Reserves (MMbbl)\",
-                \"numberSuffix\": \"K\",
-                \"theme\": \"fusion\"
-             },
-             \"data\": [{
-                \"label\": \"Venezuela\",
-                \"value\": \"290\"
-            }, {
-                \"label\": \"Saudi\",
-                \"value\": \"260\"
-            }, {
-                \"label\": \"Canada\",
-                \"value\": \"180\"
-            }, {
-                \"label\": \"Iran\",
-                \"value\": \"140\"
-            }, {
-                \"label\": \"Russia\",
-                \"value\": \"115\"
-            }, {
-                \"label\": \"UAE\",
-                \"value\": \"100\"
-            }, {
-                \"label\": \"US\",
-                \"value\": \"30\"
-            }, {
-                \"label\": \"China\",
-                \"value\": \"30\"
-            }]
-       }";
-        // chart object
-        $Chart = new FusionCharts("column2d", "chart-1" , "600", "400", "chart-container", "json", $chartData);
-        # Attach event with method name
-        $Chart->addEvent("dataLoaded", "onDataLoaded");
-        // Render the chart
-        $Chart->render();
-?>
-    <h3>Example of event(product life cycle event)</h3>
-    <div id="chart-container">Chart will render here!</div>
-    <br />
-    <br />
+    <script>
+        function onDataLoaded() {
+            document.getElementById("dataLoaded").innerHTML = "Chart Data is Loaded Succesfully";
+
+        }
+    </script>
+    <div id="chart"></div>
     <div>
         <p id="dataLoaded"></p>
     </div>
-    <br />
+    <%
+        String jsonData;
+        jsonData = "{      'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion',  },      'data': [{        'label': 'Venezuela',        'value': '290'      }, {        'label': 'Saudi',        'value': '260'      }, {        'label': 'Canada',        'value': '180'      }, {        'label': 'Iran',        'value': '140'      }, {        'label': 'Russia',        'value': '115'      }, {        'label': 'UAE',        'value': '100'      }, {        'label': 'US',        'value': '30'      }, {        'label': 'China',        'value': '30'      }]    }";
+        FusionCharts column_chart = new FusionCharts(
+              "column2d",
+              "column_chart",
+              "700", 
+              "400",
+              "chart",
+              "json",
+              jsonData                    
+                );
+      
+        column_chart.addEvent("dataLoaded", "onDataLoaded");
+      
+        %>
+    <%=column_chart.render()%>
 </body>
+
 </html>
 ```
 
-The above chart has been rendered using the following steps:
+1. Import and resolve the dependency `fusioncharts.FusionCharts`
 
-1. Include the `fusioncharts.php` file which contains functions to embed the charts.
+2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`. 
 
-2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`.
+3. Within the `<body>`: 
 
-3. Add event `dataLoaded` which will be called when the data of the chart is loaded.
+    * Include a `<script>` tag that contains the `dataLoaded` event.
 
-4. Store the chart data in a JSON object.
+    * Include a `<div>` tag with `id` same as the value of the `renderAt` attribute of the instance of `FusionCharts` (explained in the next step), within which the chart will be rendered. 
 
-5. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+    * Include a `<% %>` tag, where:
 
-6. Create the `<div>` element to render the chart.
+        * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
+
+        * Create a new instance named `column_chart` of the `FusionCharts` constructor, and pass the values of its arguments:
+
+            * Set the chart `type` as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+
+            * Set the `id` as `column_chart`.
+
+            * Set the `width` and `height` of the chart in pixels. You can also provide them as percentages.
+
+            * Set the `renderAt` as `column2d`.
+
+            * Set the `dataFormat` as `json`.
+
+            * Set the `dataSource` to `jsonData` which has been declared and defined above.
+
+    * Include a `<%= %>` tag that contains `column_chart.render()`.
