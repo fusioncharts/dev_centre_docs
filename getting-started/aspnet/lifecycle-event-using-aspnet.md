@@ -1,146 +1,175 @@
 ---
-title: Lifecycle Events using Django | FusionCharts
-description: The sample in this article lists the basic lifestyle events at the time of rendering the chart using Django.
-heading: Lifecycle Events using Django
+title: Lifecycle Events using ASP.NET | FusionCharts
+description: The sample in this article lists the basic lifestyle events at the time of rendering the chart using ASP.NET.
+heading: Lifecycle Events using ASP.NET
 ---
 
 Events are signals that let you execute specific actions — such as sending data to the server, and so on — using JavaScript, in response to any interactions/updates for a chart. 
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart **updates** and **events**.
 
-The sample in this article lists the basic **lifecycle events** at the *time of rendering the chart* using a Python `function`. A chart is shown below:
+The sample in this article lists the basic **lifecycle events** at the *time of rendering the chart* using **FusionCharts ASP.NET `C#` & `VB` wrapper**. A chart is shown below:
 
 {% embed_chartData lifecycle-event-server-side-example-1.js json %}
 
-The full code for the above sample is given below:
+The consolidated code for the above chart is shown below:
 
-```
-from django.shortcuts import render
-from django.http import HttpResponse
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-# Include the `fusioncharts.py` file which has required functions to embed the charts in html page
-from ..fusioncharts import FusionCharts
+<div class='tab csharp-tab active'>
+<pre><code class="custom-hlc language-javascript">
+using System;
+using FusionCharts.Charts;
+public partial class Pages_ProductLifeCycleEvent : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        //json data in string format
+        string jsonData = "{      'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion',  },      'data': [{        'label': 'Venezuela',        'value': '290'      }, {        'label': 'Saudi',        'value': '260'      }, {        'label': 'Canada',        'value': '180'      }, {        'label': 'Iran',        'value': '140'      }, {        'label': 'Russia',        'value': '115'      }, {        'label': 'UAE',        'value': '100'      }, {        'label': 'US',        'value': '30'      }, {        'label': 'China',        'value': '30'      }]    }";
+        // create chart instance
+        // parameter
+        // chrat type, chart id, chart widh, chart height, data format, data source
+        Chart column2d = new Chart("column2d", "first_chart", "700", "400", "json", jsonData);
+        //attach event 
+        column2d.AddEvent("dataLoaded", "onDataLoaded");
+        //render chart
+        Literal1.Text = column2d.Render();
+    }
+}
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-# Loading Data from a Static JSON String
-# It is a example to show how to attach event in chart.
-# The `chart` method is defined to load chart data from an JSON string.
+<div class='tab vb-tab'>
+<pre><code class="custom-hlc language-javascript">
+Imports FusionCharts.Charts
+Partial Class Pages_ProductLifeCycleEvent
+Inherits System.Web.UI.Page
+Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+Dim jsonData As String = "{      'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion',  },      'data': [{        'label': 'Venezuela',        'value': '290'      }, {        'label': 'Saudi',        'value': '260'      }, {        'label': 'Canada',        'value': '180'      }, {        'label': 'Iran',        'value': '140'      }, {        'label': 'Russia',        'value': '115'      }, {        'label': 'UAE',        'value': '100'      }, {        'label': 'US',        'value': '30'      }, {        'label': 'China',        'value': '30'      }]    }"
+Dim column2d As Chart = New Chart("column2d", "first_chart", "700", "400", "json", jsonData)
+column2d.AddEvent("dataLoaded", "onDataLoaded")
+Literal1.Text = column2d.Render()
+End Sub
+End Class
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-def chart(request):
+</div>
+</div>
 
-    # Create an object for the column2d chart using the FusionCharts class constructor
-    column2d = FusionCharts("column2d", "ex1", '700', '400', "chart-1", "json", 
-        # The chart data is passed as a string to the `dataSource` parameter.
-        """{  
-             "chart":
-             {  
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion"
-             },
-             "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }""")        
+The HTML template for `aspx` file is shown below:
 
-    # Attach event with method name, and the callee method defined in html page.
-    column2d.addEvent("dataLoaded", "onDataLoaded")
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-    # returning complete JavaScript and HTML code, which is used to generate chart in the browsers. 
-    return  render(request, 'product-life-cycle-event.html', {'output' : column2d.render(), 'chartTitle': 'Example of event (product life cycle event)'})
+<div class='tab csharp-tab active'>
+<pre><code class="custom-hlc language-javascript">
+&lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="ProductLifeCycleEvent.aspx.cs" Inherits="Pages_ProductLifeCycleEvent" %&gt;
 
-```
+&lt;!DOCTYPE html&gt;
 
-The HTML template used to render the chart is shown below: 
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
-```
-<!DOCTYPE html>
-<html>
-<head>
-  <title>FC-python wrapper</title>
-   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-    <script>
+&lt;head runat="server"&gt;
+    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+    &lt;title&gt;FusionCharts | sample to showcase one product life cycle event attachment&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
         function onDataLoaded() {
-            document.getElementById("dataLoaded").innerHTML = "chart data is loaded succesfully";            
+            document.getElementById("dataLoaded").innerHTML = "chart data is loaded succesfully";
+
         }
-    </script>
-</head>
-<body style="font-family:'Helvetica Neue', Arial; font-size: 16px;">
-  <h3>{{ chartTitle|safe }}</h3>
-  <div id="chart-1">{{ output|safe }}</div>
-  <br/>
-  <div>
-    <p id ="dataLoaded"></p>
-  </div>
-  <br/>
-  <a href="/">Back</a>
-</body>
-</html>
+    &lt;/script&gt;
+    &lt;form id="form1" runat="server"&gt;
+        &lt;h3&gt;sample to showcase one product life cycle event attachment&lt;/h3&gt;
+        &lt;div&gt;
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;p id="dataLoaded"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;
+                &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;/form&gt;
 
-```
 
-The sample code provided above corresponds to the following tasks:
+&lt;/body&gt;
 
-1. Import and resolve dependencies:
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-    * `render` from `django.shortcuts`, and `HttpResponse` from `django.http`
+<div class='tab vb-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="ProductLifeCycleEvent.aspx.vb" Inherits="Pages_ProductLifeCycleEvent" %&gt;
 
-    * `FusionCharts` from `fusioncharts`
- 
-2. Define a function `chart`, which takes `request` as an argument:
+&lt;!DOCTYPE html&gt;
 
-    * Create a variable `column2d`, which is an instance of the `FusionCharts` class. As argument values for `FusionCharts`, pass the chart details and the configuration (JSON string): 
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
-        * Set the chart `type` as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+&lt;head runat="server"&gt;
+    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+    &lt;title&gt;FusionCharts | sample to showcase one product life cycle event attachment&lt;/title&gt;
+&lt;/head&gt;
 
-        * Set the `id` as `ex1`.
+&lt;body&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        function onDataLoaded() {
+            document.getElementById("dataLoaded").innerHTML = "chart data is loaded succesfully";
 
-        * Set the `width` and `height` of the chart in pixels. You can also provide them as percentages.
+        }
+    &lt;/script&gt;
+    &lt;form id="form1" runat="server"&gt;
+        &lt;h3&gt;sample to showcase one product life cycle event attachment&lt;/h3&gt;
+        &lt;div&gt;
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;p id="dataLoaded"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;
+                &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;/form&gt;
 
-        * Set the `renderAt` as `chart-1`.
 
-        * Set the `dataFormat` as `json`.
+&lt;/body&gt;
 
-        * Embed the json data (string) as the value of `dataSource`. 
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-    * Return the output of the `render` function (defined in `FusionCharts`):
+</div>
+</div>
 
-        * Pass the `request`, which is also the only argument accepted by the `chart` function you are defining.
+Apart from the usual boilerplate, the sample __C#/VB__ code provided above corresponds to the following tasks:
 
-        * Pass the relative path of the HTML template, where the chart will be rendered.
+1. Import and resolve the dependencies like `System`, and  `FusionCharts.Charts`.
 
-        * Pass a dictionary:
+2. Define a class `Pages_ProductLifeCycleEvent` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `Pages_ProductLifeCycleEvent` is inherited.
 
-            * Set the `output` to `column2d.render()`.
-
-            * Set the `chartTitle` to `Example of event (product life cycle event)`.
-
-> When you change the values of `id` and `renderAt`, ensure that the corresponding changes are reflected in the HTML template. The string values for `renderAt` in the code, and the corresponding `div id` in the HTML template, should be the exact same.
+3. Within the class `Pages_ProductLifeCycleEvent`, define `Page_Load()`:
+    * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
+    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * Add the events you want to add to your chart, using the `onDataLoaded()` method. In this case, those methods are defined as JavaScript functions in the corresponding `.aspx` file.
+    * Render the chart using the `onDataLoaded()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, followed by some JavaScript functions and buttons, and finally within a `<form><div>` render the chart.
 
 > Refer to [Column 2D chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts) for more information on the configuration and data for this chart type.
-
