@@ -10,7 +10,7 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 The sample in this article lists the basic **lifecycle events** at the *time of rendering the chart* using a Python `function`. A chart is shown below:
 
-{% embed_chartData lifecycle-events-using-django-example-1.js json %}
+{% embed_chartData lifecycle-event-server-side-example-1.js json %}
 
 The full code for the above sample is given below:
 
