@@ -1,7 +1,7 @@
 ---
-title: Lifecycle Events using django | FusionCharts
-description: The sample in this article lists the basic lifestyle events at the time of rendering the chart using django.
-heading: Lifecycle Events using django
+title: Lifecycle Events using Django | FusionCharts
+description: The sample in this article lists the basic lifestyle events at the time of rendering the chart using Django.
+heading: Lifecycle Events using Django
 ---
 
 Events are signals that let you execute specific actions — such as sending data to the server, and so on — using JavaScript, in response to any interactions/updates for a chart. 
@@ -10,7 +10,7 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 The sample in this article lists the basic **lifecycle events** at the *time of rendering the chart* using a Python `function`. A chart is shown below:
 
-{% embed_chartData lifecycle-events-using-django-example-1.js json %}
+{% embed_chartData lifecycle-event-server-side-example-1.js json %}
 
 The full code for the above sample is given below:
 
