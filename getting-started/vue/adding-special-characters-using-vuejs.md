@@ -135,4 +135,4 @@ The above chart has been rendered using the following steps:
 
 4. In the `dataSource` object, add `numberPrefix` attribute in `chart` object. Set the `numberPrefix` to `$`.
 
-5. Create a `fusioncharts` directive in a template. 
+5. Create a `fusioncharts` directive in a template.
