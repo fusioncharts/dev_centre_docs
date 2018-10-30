@@ -2,7 +2,6 @@
 title: Create a Chart in Angular Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the angular-fusioncharts component.
 heading: Create a Chart in Angular Using FusionCharts
-chartPresent: false
 ---
 
 ## Overview
