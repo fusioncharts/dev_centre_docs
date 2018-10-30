@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for adding special c
 heading: Adding Special Characters
 ---
 
-FusionCharts offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale. This article focuses on how you customize the prefix and suffix of the numbers on the chart using **FusionCharts Django wrapper**.
+FusionCharts offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale. This article focuses on how you customize the prefix and suffix of the numbers on the chart using `ember-fusioncharts` component.
 
 To customize the prefix and suffix of the numbers on the chart, use the following attributes:
 
