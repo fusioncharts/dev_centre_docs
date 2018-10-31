@@ -27,95 +27,85 @@ A chart configured to customize the prefix of the numbers on the chart is shown 
 The full code of the above sample is given below:
 
 ```
-<!DOCTYPE html>
-<?php
-    /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
-    include("../includes/fusioncharts.php");
-?>
-<html>
-<head>
-    <title>FusionCharts | Adding Special Characters</title>
-    <!-- FusionCharts Library -->
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-</head>
-
-<body>
-
-    <?php
-        $chartData = "{
-            \"chart\": {
-                \"caption\": \"Monthly revenue for last year\",
-                \"subCaption\": \"Harry's SuperMart\",
-                \"xAxisName\": \"Month\",
-                \"yAxisName\": \"Revenues (In USD)\",
-                \"numberPrefix\": \"$\",
-                \"theme\": \"fusion\"
+<%
+    def getChart
+        chartData = {
+            "chart": {
+                "caption": "Monthly revenue for last year",
+                "subCaption": "Harry's SuperMart",
+                "xAxisName": "Month",
+                "yAxisName": "Revenues (In USD)",
+                "numberPrefix": "$",
+                "theme": "fusion"
             },
-            \"data\": [{
-                \"label\": \"Jan\",
-                \"value\": \"420000\"
-            }, {
-                \"label\": \"Feb\",
-                \"value\": \"810000\"
-            }, {
-                \"label\": \"Mar\",
-                \"value\": \"720000\"
-            }, {
-                \"label\": \"Apr\",
-                \"value\": \"550000\"
-            }, {
-                \"label\": \"May\",
-                \"value\": \"910000\"
-            }, {
-                \"label\": \"Jun\",
-                \"value\": \"510000\"
-            }, {
-                \"label\": \"Jul\",
-                \"value\": \"680000\"
-            }, {
-                \"label\": \"Aug\",
-                \"value\": \"620000\"
-            }, {
-                \"label\": \"Sep\",
-                \"value\": \"610000\"
-            }, {
-                \"label\": \"Oct\",
-                \"value\": \"490000\"
-            }, {
-                \"label\": \"Nov\",
-                \"value\": \"900000\"
-            }, {
-                \"label\": \"Dec\",
-                \"value\": \"730000\"
-            }]
-        }";
-        // chart object
-        $Chart = new FusionCharts("column2d", "chart-1" , "700", "400", "chartContainer", "json", $chartData);
-        // Render the chart
-        $Chart->render();
-?>
-    <h3>Chart using Special Character</h3>
-    <div id="chart-container">Chart will render here!</div>
-</body>
+            "data": [{
+                    "label": "Jan",
+                    "value": "420000"
+                }, {
+                    "label": "Feb",
+                    "value": "810000"
+                }, {
+                    "label": "Mar",
+                    "value": "720000"
+                }, {
+                    "label": "Apr",
+                    "value": "550000"
+                }, {
+                    "label": "May",
+                    "value": "910000"
+                }, {
+                    "label": "Jun",
+                    "value": "510000"
+                }, {
+                    "label": "Jul",
+                    "value": "680000"
+                }, {
+                    "label": "Aug",
+                    "value": "620000"
+                }, {
+                    "label": "Sep",
+                    "value": "610000"
+                }, {
+                    "label": "Oct",
+                    "value": "490000"
+                }, {
+                    "label": "Nov",
+                    "value": "900000"
+                }, {
+                    "label": "Dec",
+                    "value": "730000"
+                }
+            ]
+        }
+        # Chart rendering 
+        chart = Fusioncharts::Chart.new({
+                width: "700",
+                height: "400",
+                type: "column2d",
+                renderAt: "chart-container",
+                dataFormat: "json",
+                dataSource: chartData
+            })
+    end
+%>
 
-</html>
+<h3>Chart using Special Character</h3>
+<div id="chart-container"></div>
+<%= getChart.render() %>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Include the `fusioncharts.php` file which contains functions to embed the charts.
+1. Include the necessary libraries and components using `require`. For example, `fusioncharts-rails`, `fusioncharts`, etc
 
-2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`.
+2. Store the chart data in a JSON object.
 
-3. Store the chart data in a JSON object.
-
-4. Store the chart configuration in a JSON object. In the JSON object:
+3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+    * Set the container of the chart to `chart-container`.
+    * Embed the json data as the value of `chartData`.
 
-5. In the `dataSource` object, add `numberPrefix` attribute in `chart` object. Set the `numberPrefix` to `$`.
+4. In the `dataSource` object, add `numberPrefix` attribute in `chart` object. Set the `numberPrefix` to `$`.
 
-6. Create the `<div>` element to render the chart.         
+5. Create the `<div>` element to render the chart.
