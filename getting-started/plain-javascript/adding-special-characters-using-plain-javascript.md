@@ -48,7 +48,7 @@ var chartInstance = new FusionCharts({
             "subCaption": "Harry's SuperMart",
             "xAxisName": "Month",
             "yAxisName": "Revenues (In USD)",
-            "numberPrefix": "$",
+            "numberPrefix": "$", //Special Character
             "theme": "fusion"
         },
         "data": [{

@@ -53,7 +53,7 @@ The full code of the above sample is given below:
 </head>
 <body>
     <?php
-        $mapData = "{
+        $chartData = "{
             \"chart\": {  
                 \"caption\": \"Countries With Most Oil Reserves [2017-18]\",
                 \"subcaption\": \"In MMbbl = One Million barrels\",
@@ -89,7 +89,7 @@ The full code of the above sample is given below:
             }]
         }";
         // chart object
-        $Chart = new FusionCharts("column2d", "chart-1" , "700", "400", "chartContainer", "json", $mapData);
+        $Chart = new FusionCharts("column2d", "chart-1" , "700", "400", "chartContainer", "json", $chartData);
         // Render the chart
         $Chart->render();
     ?>
