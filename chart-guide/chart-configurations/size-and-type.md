@@ -47,6 +47,7 @@ If you want to create a chart that automatically resizes when its parent contain
     }
 }
 ```
+
 Ensure that you set the parent container of the chart in a way that allows its dimensions to change dynamically when the browser is resized or other changes take place on the page (like when an element is added or removed).
 
 > In certain cases, if the HTML container element itself has not acquired proper width or height (due to an error in rendering by the browser), the chart might look squeezed, or it may not render in the first place. If this happens, then you have to specify the chart's dimensions in pixels.
