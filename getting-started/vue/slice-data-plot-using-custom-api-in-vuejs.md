@@ -12,157 +12,123 @@ A chart configured to slice out the data plots of a `pie2d` chart, is shown belo
 
 {% embed_chartData change-chart-type-example-1.js json %}
 
-The full code of the above sample is given below:
+The code to render a chart is given below:
 
 ```
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import Vue from 'vue';
+import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
+//import the theme
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
 
-const chartConfigs = {
-    type: 'Pie2D',
-    width: 700,
-    height: 400,
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "Market Share of Web Servers",
-            "plottooltext": "<b>$percentValue</b> of web servers run on $label servers",
-            "showPercentValues": "1",
-            "useDataPlotColorForLabels": "1",
-            "enableMultiSlicing": "0",
-            "theme": "fusion"
+// register VueFusionCharts component
+Vue.use(VueFusionCharts, FusionCharts, Charts, Fusion)
+
+// Copy datasource from 'Data' tab
+var dataSource = /*{ "chart": {..}, ..}*/ ;
+
+var app = new Vue({
+    el: '#app',
+    data: {
+        type: 'pie2d',
+        width: '450',
+        height: '250',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "caption": "Market Share of Web Servers",
+                "plottooltext": "<b>$percentValue</b> of web servers run on $label servers",
+                "showLegend": "1",
+                "showPercentValues": "1",
+                "legendPosition": "bottom",
+                "useDataPlotColorForLabels": "1",
+                "enableMultiSlicing": "0",
+                "theme": "fusion",
+                "showlegend": "0"
+            },
+            "data": [{
+                    "label": "Apache",
+                    "value": "32647479"
+                }, {
+                    "label": "Microsoft",
+                    "value": "22100932"
+                }, {
+                    "label": "Zeus",
+                    "value": "14376"
+                }, {
+                    "label": "Other",
+                    "value": "18674221"
+                }
+            ]
         },
-        "data": [{
-            "label": "Apache",
-            "value": "32647479"
-        }, {
-            "label": "Microsoft",
-            "value": "22100932"
-        }, {
-            "label": "Zeus",
-            "value": "14376"
-        }, {
-            "label": "Other",
-            "value": "18674221"
-        }]
-    }
-};
-
-class Chart extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            chart: {},
-            currentVal: 'none'
+        radioValue: 'none',
+        lastActive: 'none'
+    },
+    methods: {
+        // function to slice items when radio buttons are clicked using the slicePlotItems api
+        onChangeItem: function() {
+            const chart = this.$refs.fc.chartObj,
+                lastActive = this.lastActive,
+                value = this.radioValue;
+            this.lastActive = value;
+            if (value === 'none') {
+                chart.slicePlotItem(lastActive, false);
+            } else {
+                chart.slicePlotItem(value, true);
+            }
+        },
+        // function to actiavte radio buttons when plots are clicked
+        onSliceClick: function(e) {
+            var isSliced = e.data.isSliced;
+            if (isSliced) {
+                this.lastActive = this.radioValue = 'none'
+            } else {
+                this.lastActive = this.radioValue = e.data.index
+            }
         }
-        this.renderComplete = this.renderComplete.bind(this);
-        this.radioHandler = this.radioHandler.bind(this);
-        this.sliceClicked = this.sliceClicked.bind(this);
     }
+});
+```
 
-    renderComplete(chart) {
-        this.setState({
-            chart
-        });
-    }
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
-    // Handler for radio buttons to slice data plot.
-    radioHandler(e) {
-        if (e.currentTarget.value === 'none') {
-            this.state.chart.options.dataSource.data.map((data, index) => {
-                this.state.chart.slicePlotItem(index, false);
-            });
-        } else {
-            this.state.chart.slicePlotItem(e.currentTarget.value, true);
-        }
-        this.setState({
-            currentVal: e.currentTarget.value
-        });
-    }
-
-    // Event callback for 'dataplotClick'.
-    // Makes the relevant radio active when a plot is clicked.
-    sliceClicked(eventObj, dataObj) {
-        this.setState({
-            currentVal: eventObj.data.isSliced ? 'none' : eventObj.data.dataIndex
-        });
-    }
-
-    render() {
-        return (
-            <div>
-              <ReactFC
-                {...chartConfigs}
-                onRender={this.renderComplete}
-                fcEvent-dataplotClick={this.sliceClicked}
-              />
-              <br />
-              <center>
-                <span>Slice out:</span>
-                <div className="change-type">
-                  <div>
-                    <input
-                      type="radio"
-                      value="none"
-                      onChange={this.radioHandler}
-                      checked={this.state.currentVal === 'none'}
-                    />
-                    <label>None</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      value="0"
-                      onChange={this.radioHandler}
-                      checked={parseInt(this.state.currentVal) === 0}
-                    />
-                    <label>Apache</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      value="1"
-                      onChange={this.radioHandler}
-                      checked={parseInt(this.state.currentVal) === 1}
-                    />
-                    <label>Microsoft</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio" 
-                      value="2"
-                      onChange={this.radioHandler}
-                      checked={parseInt(this.state.currentVal) === 2}
-                    />
-                    <label>Zeus</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      value="3"
-                      onChange={this.radioHandler}
-                      checked={parseInt(this.state.currentVal) === 3}
-                    />
-                    <label>Other</label>
-                  </div>
-                </div>
-              </center>
-            </div>
-        )
-    }
-}
-
-ReactDOM.render(
-    <Chart / > ,
-    document.getElementById('root'),
-);
+```HTML
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    @dataPlotClick="onSliceClick"
+    ref="fc"
+    ></fusioncharts>
+    <br>
+    <div>
+        <div>
+            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="none" checked/>
+            <label>None</label>
+        </div>
+        <div>
+            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="0" />
+            <label>Apache</label>
+        </div>
+        <div>
+            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="1" />
+            <label>Microsoft</label>
+        </div>
+        <div>
+            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="2" />
+            <label>Zeus</label>
+        </div>
+        <div>
+            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="3" />
+            <label>Other</label>
+        </div>
+    </div>
+</div>
 ```
 
 The above chart has been rendered using the following steps:
@@ -185,3 +151,24 @@ The above chart has been rendered using the following steps:
 5. Add the `render()` function to create the **radio buttons** inside the `<div>`.
 
 6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+
+
+
+
+The above chart has been rendered using the following steps:
+
+1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+
+2. Register `vue-fusioncharts` component.
+
+3. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
+
+4. Call a `chartInstance` API `chartType` to change the chart type after the chart has been rendered.
+
+5. Create a `fusioncharts` directive in a template. 
+
+6. Create Radio buttons for Column 2D, Bar 2D and Pie 2D in a template.
