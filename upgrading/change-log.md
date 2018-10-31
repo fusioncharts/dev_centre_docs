@@ -4,6 +4,16 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.2-sr.1</h2>
+30th October, 2018
+
+<h4 class="sub-heading">Fixes</h4>
+
+* Charts are now rendering in IE8 with the source files or the minified files. Previously, the chart was not getting rendered using minified files.
+
+* A JavaScript error was thrown while trying to render the chart in a hidden container. The issue has now been fixed.
+
+
 <h2 class="sub-heading">Version 3.13.2</h2>
 11th October, 2018
 
