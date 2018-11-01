@@ -79,7 +79,7 @@ var app = new Vue({
                 chart.slicePlotItem(value, true);
             }
         },
-        // function to actiavte radio buttons when plots are clicked
+        // function to activate radio buttons when plots are clicked
         onSliceClick: function(e) {
             var isSliced = e.data.isSliced;
             if (isSliced) {
@@ -133,9 +133,11 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Register `vue-fusioncharts` component.
+
+3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `pie2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
@@ -144,31 +146,9 @@ The above chart has been rendered using the following steps:
 3. Create a component to include `react-fusioncharts` component.
 
 4. In the above sample:
-    * `radioHandler` is used for the radio buttons to slice the data plots.
-    * A callback event is called for `dataPlotClick`.
-    * `sliceClicked` method sets the relevant radio active when a plot is clicked.
-
-5. Add the `render()` function to create the **radio buttons** inside the `<div>`.
-
-6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
-
-
-
-
-The above chart has been rendered using the following steps:
-
-1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
-
-2. Register `vue-fusioncharts` component.
-
-3. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
-
-4. Call a `chartInstance` API `chartType` to change the chart type after the chart has been rendered.
+    * A function is called to slice items when radio buttons are clicked using the slicePlotItems API.
+    * `onSliceClick` method activates the radio buttons when plots are clicked.
 
 5. Create a `fusioncharts` directive in a template. 
 
-6. Create Radio buttons for Column 2D, Bar 2D and Pie 2D in a template.
+6. Create Radio buttons in a template to slice down the data plots.
