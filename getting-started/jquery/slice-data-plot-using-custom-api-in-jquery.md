@@ -6,7 +6,7 @@ heading: Slice Data Plot using API
 
 FusionCharts Suite XT includes advanced features that offers a wide range of APIs that you can use for different stages in the ife cycle of a chart or when you interact with a chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
 
-This article focuses on how you can slice out the data plots of a Pie 2D chart using chart specific custom API. The chart will be rendered using `vue-fusioncharts` component. 
+This article focuses on how you can slice out the data plots of a Pie 2D chart using chart specific custom API. The chart will be rendered using `jquery-fusioncharts` component. 
 
 A chart configured to slice out the data plots of a `pie2d` chart, is shown below:
 
@@ -15,23 +15,30 @@ A chart configured to slice out the data plots of a `pie2d` chart, is shown belo
 The code to render a chart is given below:
 
 ```
-import Vue from 'vue';
-import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts';
-import Charts from 'fusioncharts/fusioncharts.charts';
+// Include fusioncharts
+var FusionCharts = require('fusioncharts');
 
-//import the theme
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
+// Include chart modules
+var Charts = require('fusioncharts/fusioncharts.charts');
 
-// register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, Charts, Fusion)
+// Include the theme file
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Copy datasource from 'Data' tab
-var dataSource = /*{ "chart": {..}, ..}*/ ;
+var $ = require('jquery');
+var jQueryFusionCharts = require('jquery-fusioncharts');
 
-var app = new Vue({
-    el: '#app',
-    data: {
+// Resolve Charts as dependency for FusionCharts
+Charts(FusionCharts); 
+
+// Resolve Fusion theme as dependency for FusionCharts
+FusionTheme(FusionCharts); 
+
+// Resolve FusionCharts as dependency for jqueryFusionCharts
+jQueryFusionCharts(FusionCharts); 
+
+$('document').ready(function() {
+    $('#chart-container').insertFusionCharts({
+        id: 'pie-slice-chart',
         type: 'pie2d',
         width: '450',
         height: '250',
@@ -44,88 +51,81 @@ var app = new Vue({
                 "showPercentValues": "1",
                 "legendPosition": "bottom",
                 "useDataPlotColorForLabels": "1",
-                "enableMultiSlicing": "0",
+                "enablemultislicing": "0",
+                "showlegend": "0",
                 "theme": "fusion",
-                "showlegend": "0"
             },
             "data": [{
-                    "label": "Apache",
-                    "value": "32647479"
-                }, {
-                    "label": "Microsoft",
-                    "value": "22100932"
-                }, {
-                    "label": "Zeus",
-                    "value": "14376"
-                }, {
-                    "label": "Other",
-                    "value": "18674221"
-                }
-            ]
-        },
-        radioValue: 'none',
-        lastActive: 'none'
-    },
-    methods: {
-        // function to slice items when radio buttons are clicked using the slicePlotItems api
-        onChangeItem: function() {
-            const chart = this.$refs.fc.chartObj,
-                lastActive = this.lastActive,
-                value = this.radioValue;
-            this.lastActive = value;
-            if (value === 'none') {
-                chart.slicePlotItem(lastActive, false);
-            } else {
-                chart.slicePlotItem(value, true);
-            }
-        },
-        // function to activate radio buttons when plots are clicked
-        onSliceClick: function(e) {
-            var isSliced = e.data.isSliced;
-            if (isSliced) {
-                this.lastActive = this.radioValue = 'none'
-            } else {
-                this.lastActive = this.radioValue = e.data.index
-            }
+                "label": "Apache",
+                "value": "32647479"
+            }, {
+                "label": "Microsoft",
+                "value": "22100932"
+            }, {
+                "label": "Zeus",
+                "value": "14376"
+            }, {
+                "label": "Other",
+                "value": "18674221"
+            }]
         }
-    }
+    });
+
+    $('#chart-container').bind('fusionchartsdataplotclick', function(event, args) {
+        if (args.isSliced) {
+            $('#radioButton1').prop('checked', true);
+        } else {
+            $('#radioButton' + (args.index + 2)).prop('checked', true);
+        }
+    })
+
+    $('#radio1').click(function() {
+        for (var i in dataSource.data) {
+            FusionCharts.items['pie-slice-chart'].slicePlotItem(i, false)
+        }
+    });
+    $('#radio2').click(function() {
+        FusionCharts.items['pie-slice-chart'].slicePlotItem(0, true);
+    });
+    $('#radio3').click(function() {
+        FusionCharts.items['pie-slice-chart'].slicePlotItem(1, true);
+    });
+    $('#radio4').click(function() {
+        FusionCharts.items['pie-slice-chart'].slicePlotItem(2, true);
+    });
+    $('#radio5').click(function() {
+        FusionCharts.items['pie-slice-chart'].slicePlotItem(3, true);
+    });
 });
 ```
 
-Now, use the `fusioncharts` directive in a template. The HTML template is given below:
+The HTML template of the above sample is shown below:
 
 ```HTML
-<div id="app">
-    <fusioncharts
-    :type="type"
-    :width="width"
-    :height="height"
-    :dataFormat="dataFormat"
-    :dataSource="dataSource"
-    @dataPlotClick="onSliceClick"
-    ref="fc"
-    ></fusioncharts>
-    <br>
-    <div>
-        <div>
-            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="none" checked/>
-            <label>None</label>
+<div id="chart-container">
+    FusionCharts will render here
+</div>
+<div style="display: flex; justify-content: center; bottom: 2px;">
+    <div class="change-type">
+        <div id="radio1">
+            <input name="slice-selecter" id="radioButton1" type="radio" checked="checked"/>
+            <label for="radioButton1">None</label>
         </div>
-        <div>
-            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="0" />
-            <label>Apache</label>
+        <div id="radio2">
+            <input name="slice-selecter" id="radioButton2" type="radio"/>
+            <label for="radioButton2">Apache</label>
         </div>
-        <div>
-            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="1" />
-            <label>Microsoft</label>
+        <div id="radio3">
+            <input name="slice-selecter" id="radioButton3" type="radio"/>
+            <label for="radioButton3">Microsoft</label>
         </div>
-        <div>
-            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="2" />
-            <label>Zeus</label>
+        <div id="radio4">
+            <input name="slice-selecter" id="radioButton4" type="radio"/>
+            <label for="radioButton4">Zeus</label>
         </div>
-        <div>
-            <input name='items' type="radio" v-model="radioValue" @change="onChangeItem" value="3" />
-            <label>Other</label>
+        <div id="radio5">
+            <input name="slice-selecter" id="radioButton5" type="radio"/>
+            <label for="radioButton5">Other</label>
         </div>
     </div>
 </div>
@@ -133,9 +133,9 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
-2. Register `vue-fusioncharts` component.
+2. Resolve charts as dependency for `fusioncharts`, `theme` file and `jquery-fusioncharts`. 
 
 3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `pie2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -143,12 +143,6 @@ The above chart has been rendered using the following steps:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
-
-4. In the above sample:
-    * A function is called to slice items when radio buttons are clicked using the slicePlotItems API.
-    * `onSliceClick` method activates the radio buttons when plots are clicked.
-
-5. Create a `fusioncharts` directive in a template. 
-
-6. Create Radio buttons in a template to slice down the data plots.
+4. In the above sample a function is called to slice items when radio buttons are clicked using the slicePlotItems API.
+    
+5. Create an HTML template to render the chart and the Radio buttons.

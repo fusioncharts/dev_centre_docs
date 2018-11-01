@@ -143,8 +143,6 @@ The above chart has been rendered using the following steps:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
-
 4. In the above sample:
     * A function is called to slice items when radio buttons are clicked using the slicePlotItems API.
     * `onSliceClick` method activates the radio buttons when plots are clicked.
