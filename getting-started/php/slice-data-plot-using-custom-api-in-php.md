@@ -23,7 +23,7 @@ The full code for the above chart is shown below:
 <html>
 
 <head>
-    <title>FusionCharts | Export Chart As Image (client-side)</title>
+    <title>FusionCharts | Slice Data Plot using API</title>
     <!-- FusionCharts Library -->
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
@@ -92,7 +92,7 @@ The full code for the above chart is shown below:
        }";
        
         // chart object
-        $Chart = new FusionCharts("pie2d", "chart-1" , "700", "400", "chart-container", "json", $chartData);
+        $Chart = new FusionCharts("pie2d", "chart-1" , "450", "250", "chart-container", "json", $chartData);
         // Attach message with message string.
         $Chart->addEvent("dataplotClick", "plotClickHandler");
         // Render the chart
@@ -119,9 +119,6 @@ The full code for the above chart is shown below:
             <input type="radio" name="rdGrp-options" onClick="otherChecked()" /> Other
         </label>
     </div>
-    <br />
-    <br />
-    <a href="../index.php">Go Back</a>
 
 </body>
 
@@ -130,34 +127,18 @@ The full code for the above chart is shown below:
 
 The above chart has been rendered using the following steps:
 
-1. Import and resolve the dependency `fusioncharts.FusionCharts`
+1. Include the `fusioncharts.php` file which contains functions to embed the charts.
 
-2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`. 
+2. Include the necessary libraries and components using `<script>` tags. For example, `fusioncharts.js`, `fusioncharts.theme.fusion.js`.
 
-3. Within the `<body>`: 
+3. Store the chart data in a JSON object.
 
-    * Include a `<script>` tag that contains functions for slicing the data plots (in this case, clicking radio buttons acts as the trigger).
+4. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `pie2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-    * Create radio buttons for slicing the data plots.
+5. Create **Radio Buttons** and add functionalities to change themes at runtime.
 
-    * Include a `<div>` tag with `id` same as the value of the `renderAt` attribute of the instance of `FusionCharts` (explained in the next step), within which the chart will be rendered. 
-
-    * Include a `<% %>` tag, where:
-
-        * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
-
-        * Create a new instance named `pie_chart` of the `FusionCharts` constructor, and pass the values of its arguments:
-
-            * Set the chart `type` as `pie2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-            * Set the `id` as `pie_chart`.
-
-            * Set the `width` and `height` of the chart in pixels. You can also provide them as percentages.
-
-            * Set the `renderAt` as `chart`.
-
-            * Set the `dataFormat` as `json`.
-
-            * Set the `dataSource` to `jsonData` which has been declared and defined above.
-
-    * Include a `<%= %>` tag that contains `pie_chart.render()`.
+6. Create the `<div>` element to render radio buttons.
