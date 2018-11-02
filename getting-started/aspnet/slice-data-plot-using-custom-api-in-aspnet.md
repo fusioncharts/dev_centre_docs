@@ -12,97 +12,84 @@ A chart configured to slice out the data plots of a `pie2d` chart, is shown belo
 
 {% embed_chartData change-chart-type-example-1.js json %}
 
-The full code of the above sample is given below:
+The consolidated code for the above chart is shown below:
 
-```
-<%
-    def getChart
-        chartData = {
-            'chart': {
-                'caption': 'Market Share of Web Servers',
-                'plottooltext': '<b>$percentValue</b> of web servers run on $label servers',
-                'showLegend': '0',
-                'enableMultiSlicing': '0',
-                'showPercentValues': '1',
-                'legendPosition': 'bottom',
-                'useDataPlotColorForLabels': '1',
-                'theme': 'fusion',
-            },
-            'data': [{
-                'label': 'Apache',
-                'value': '32647479'
-            }, {
-                'label': 'Microsoft',
-                'value': '22100932'
-            }, {
-                'label': 'Zeus',
-                'value': '14376'
-            }, {
-                'label': 'Other',
-                'value': '18674221'
-            }]
-        }
-        # Chart rendering 
-        chart = Fusioncharts::Chart.new({
-                id: "first_chart",
-                width: "700",
-                height: "400",
-                type: "pie2d",
-                renderAt: "chartContainer",
-                dataSource: chartData
-            })
-        chart.addEvent("dataplotClick", "plotClickHandler");
-        return chart
-    end
-%>
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-<style>
-    input[type=radio], input[type=checkbox] {
-        display:none;
+<div class='tab csharp-tab active'>
+<pre><code class="custom-hlc language-javascript">
+using System;
+using FusionCharts.Charts;
+
+public partial class Pages_SpecialChartTypeAPI: System.Web.UI.Page {
+    protected void Page_Load(object sender, EventArgs e) {
+        //json data in string format
+        string jsonData = "{ 'chart': { 'caption': 'Market Share of Web Servers', 'plottooltext': '<b>$percentValue</b> of web servers run on $label servers', 'showLegend': '0', 'enableMultiSlicing': '0', 'showPercentValues': '1', 'legendPosition': 'bottom', 'useDataPlotColorForLabels': '1', 'theme': 'fusion', }, 'data': [{ 'label': 'Apache', 'value': '32647479' }, { 'label': 'Microsoft', 'value': '22100932' }, { 'label': 'Zeus', 'value': '14376' }, { 'label': 'Other', 'value': '18674221' }] }";
+        // create chart instance
+        // parameter
+        // chrat type, chart id, chart widh, chart height, data format, data source
+        Chart column2d = new Chart("pie2d", "first_chart", "450", "250", "json", jsonData);
+        //attach event 
+        column2d.AddEvent("dataplotClick", "plotClickHandler");
+        //render chart
+        Literal1.Text = column2d.Render();
     }
-    input[type=radio] + label, input[type=checkbox] + label {
-        display:inline-block;
-        margin:-2px;
-        padding: 4px 12px;
-        margin-bottom: 0;
-        font-size: 14px;
-        line-height: 20px;
-        color: #333;
-        text-align: center;
-        text-shadow: 0 1px 1px rgba(255,255,255,0.75);
-        vertical-align: middle;
-        cursor: pointer;
-        background-color: #f5f5f5;
-        background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
-        background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
-        background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
-        background-image: -o-linear-gradient(top,#fff,#e6e6e6);
-        background-image: linear-gradient(to bottom,#fff,#e6e6e6);
-        background-repeat: repeat-x;
-        border: 1px solid #ccc;
-        border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-        border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-        border-bottom-color: #b3b3b3;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
-        filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-        -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-    }
-     input[type=radio]:checked + label, input[type=checkbox]:checked + label{
-           background-image: none;
-        outline: 0;
-        -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
-        -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
-        box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
-            background-color:#e0e0e0;
-    }
-    </style>
+}
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
+<div class='tab vb-tab'>
+<pre><code class="custom-hlc language-javascript">
+Imports FusionCharts.Charts
+Partial Class Pages_SpecialChartTypeAPI
+Inherits System.Web.UI.Page
+Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+Dim jsonData As String = "{ 'chart': { 'caption': 'Market Share of Web Servers', 'plottooltext': '<b>$percentValue</b> of web servers run on $label servers', 'showLegend': '0', 'enableMultiSlicing': '0', 'showPercentValues': '1', 'legendPosition': 'bottom', 'useDataPlotColorForLabels': '1', 'theme': 'fusion', }, 'data': [{ 'label': 'Apache', 'value': '32647479' }, { 'label': 'Microsoft', 'value': '22100932' }, { 'label': 'Zeus', 'value': '14376' }, { 'label': 'Other', 'value': '18674221' }] }"
+Dim column2d As Chart = New Chart("pie2d", "first_chart", "450", "250", "json", jsonData)
+column2d.AddEvent("dataplotClick", "plotClickHandler")
+Literal1.Text = column2d.Render()
+End Sub
+End Class
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-<script>
-    selectedItem = "none";
-         plotClickHandler = function(event){
+</div>
+</div>
+
+The HTML template for `aspx` file is shown below:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="custom-hlc language-javascript">
+&lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="SpecialChartTypeAPI.aspx.cs" Inherits="Pages_SpecialChartTypeAPI" %&gt;
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+&lt;head runat="server"&gt;
+    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+    &lt;title&gt;FusionCharts | shocasing use special chart type API&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        plotClickHandler = function(event){
             clickedPlot = (event.data.categoryLabel).toLowerCase();
               if (selectedItem !== clickedPlot) {
                     selectedItem = clickedPlot;
@@ -110,6 +97,7 @@ The full code of the above sample is given below:
                     selectedItem = 'none';
               }
         };
+        selectedItem = "none";
         noneChecked = function(){
             FusionCharts("first_chart").slicePlotItem(0,false);
             FusionCharts("first_chart").slicePlotItem(1,false);
@@ -128,42 +116,133 @@ The full code of the above sample is given below:
         otherChecked = function(){
             FusionCharts("first_chart").slicePlotItem(3,true);
         }
-    </script>
+    &lt;/script&gt;
+    &lt;form id="form1" runat="server"&gt;
+        &lt;h3&gt;shocasing use special chart type API&lt;/h3&gt;
+        &lt;div&gt;
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;/div&gt;
+        &lt;div id="controllers" align="center" style="font-family:'Helvetica Neue', Arial; font-size: 14px;"&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" checked="checked" onclick="noneChecked()" /&gt; None
+            &lt;/label&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" onclick="apacheChecked()" /&gt; Apache
+            &lt;/label&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" onclick="microsoftChecked()" /&gt; Microsoft
+            &lt;/label&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" onclick="zeusChecked()" /&gt; Zeus
+            &lt;/label&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" onclick="otherChecked()" /&gt; Other
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+        &lt;div&gt;&lt;span&gt;
+                &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
 
-<h3>Use special chart type API</h3>
-<div id="controllers" align="center" style="font-family:'Helvetica Neue', Arial; font-size: 14px;">
-    <input type="radio" id="radio1" name="rdGrp-options" checked="checked" onclick="noneChecked()" />
-    <label for="radio1">None</label>
-    <input type="radio" id="radio2" name="rdGrp-options" onclick="apacheChecked()" />
-    <label for="radio2">Apache</label>
-    <input type="radio" id="radio3" name="rdGrp-options" onclick="microsoftChecked()" />
-    <label for="radio3">Microsoft</label>
-    <input type="radio" id="radio4" name="rdGrp-options" onclick="zeusChecked()" />
-    <label for="radio4">Zeus</label>
-    <input type="radio" id="radio5" name="rdGrp-options" onclick="otherChecked()" />
-    <label for="radio5">Other</label>
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
-<div id="chartContainer"></div>
-<%= getChart.render() %>
-<br />
-<div>
-    <p id="dataLoaded">Click on data plot above</p>
+<div class='tab vb-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="SpecialChartTypeAPI.aspx.vb" Inherits="Pages_SpecialChartTypeAPI" %&gt;
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+&lt;head runat="server"&gt;
+    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+    &lt;title&gt;FusionCharts | shocasing use special chart type API&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        plotClickHandler = function(event){
+            clickedPlot = (event.data.categoryLabel).toLowerCase();
+              if (selectedItem !== clickedPlot) {
+                    selectedItem = clickedPlot;
+              } else{
+                    selectedItem = 'none';
+              }
+        };
+        selectedItem = "none";
+        noneChecked = function(){
+            FusionCharts("first_chart").slicePlotItem(0,false);
+            FusionCharts("first_chart").slicePlotItem(1,false);
+            FusionCharts("first_chart").slicePlotItem(2,false);
+            FusionCharts("first_chart").slicePlotItem(3,false);
+        }
+        apacheChecked = function(){
+            FusionCharts("first_chart").slicePlotItem(0,true);
+        }
+        microsoftChecked = function(){
+            FusionCharts("first_chart").slicePlotItem(1,true);
+        }
+        zeusChecked = function(){
+            FusionCharts("first_chart").slicePlotItem(2,true);
+        }
+        otherChecked = function(){
+            FusionCharts("first_chart").slicePlotItem(3,true);
+        }
+    &lt;/script&gt;
+    &lt;form id="form1" runat="server"&gt;
+        &lt;h3&gt;shocasing use special chart type API&lt;/h3&gt;
+        &lt;div&gt;
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;/div&gt;
+        &lt;div id="controllers" align="center" style="font-family:'Helvetica Neue', Arial; font-size: 14px;"&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" checked="checked" onclick="noneChecked()" /&gt; None
+            &lt;/label&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" onclick="apacheChecked()" /&gt; Apache
+            &lt;/label&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" onclick="microsoftChecked()" /&gt; Microsoft
+            &lt;/label&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" onclick="zeusChecked()" /&gt; Zeus
+            &lt;/label&gt;
+            &lt;label style="padding: 0px 5px !important;"&gt;
+                &lt;input type="radio" name="rdGrp-options" onclick="otherChecked()" /&gt; Other
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+        &lt;div&gt;&lt;span&gt;
+                &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;/form&gt;
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-```
 
-The above chart has been rendered using the following steps:
+</div>
+</div>
 
-1. Include the necessary libraries and components using `require`. For example, `fusioncharts-rails`, `fusioncharts`, etc
+Apart from the usual boilerplate, the sample __C#/VB__ code provided above corresponds to the following tasks:
 
-2. Store the chart data in a JSON object.
+1. Import and resolve the dependencies like `System`, and  `FusionCharts.Charts`.
 
-3. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `pie2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the container of the chart to `chartContainer`.
-    * Embed the json data as the value of `chartData`.
+2. Define a class `Pages_DynamicChartType` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `Pages_DynamicChartType` is inherited. 
 
-4. Create **Radio Buttons** and add functionalities to slice the data plots of the Pie 2D chart.
+3. Within the class `Pages_DynamicChartType`, define `Page_Load()`: 
 
-5. Create the `<div>` element to render radio buttons.
+    * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
+
+    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Pie 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `pie2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+
+    * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, followed by some JavaScript functions and radio buttons for different charts, and finally within a `<form><div>` render the chart.
