@@ -142,6 +142,7 @@ The HTML template to render the above chart is shown below:
 </html>
 
 ```
+
 The sample code provided above corresponds to the following tasks:
 
 1. Import and resolve dependencies:
