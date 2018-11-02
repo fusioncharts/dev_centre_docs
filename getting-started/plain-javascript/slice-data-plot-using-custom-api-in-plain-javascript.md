@@ -167,21 +167,18 @@ ReactDOM.render(
 
 The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Add the chart and theme as dependency. 
+
+3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `pie2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
+4. `beforeRender` event is called to slice the data plot of the chart.
 
-4. In the above sample:
-    * `radioHandler` is used for the radio buttons to slice the data plots.
-    * A callback event is called for `dataPlotClick`.
-    * `sliceClicked` method sets the relevant radio active when a plot is clicked.
+5. Radio buttons are created inside the `<div>` to choose a data plot you want to slice out.
 
-5. Add the `render()` function to create the **radio buttons** inside the `<div>`.
-
-6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. Functionalities are added to the radio buttons to update the chart type at runtime.
