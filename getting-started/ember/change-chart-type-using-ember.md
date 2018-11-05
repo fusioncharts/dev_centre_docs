@@ -147,7 +147,6 @@ Add the following code to `chart-viewer.hbs`:
 </div>
 ```
 
-
 In the above code:
 
 1. Add the `fusioncharts` component to render the chart.
