@@ -10,7 +10,7 @@ This article focuses on how you can slice out the data plots of a Pie 2D chart u
 
 A chart configured to slice out the data plots of a `pie2d` chart, is shown below:
 
-{% embed_chartData change-chart-type-example-1.js json %}
+{% embed_chartData slice-data-plot-using-custom-api-example-1.js json %}
 
 The code to render a chart is given below:
 
