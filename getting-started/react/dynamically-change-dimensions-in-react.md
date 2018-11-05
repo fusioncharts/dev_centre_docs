@@ -4,15 +4,13 @@ description: This article will showcase a sample to change the chart type at run
 heading: Dynamically change Dimensions
 ---
 
-FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, update chart type at runtime, and events.
+FusionCharts Suite XT lets you specify the dimensions of charts either in pixels or percentage values, relative to the containers. If the size is specified in pixels, then the dimensions of a chart remain constant, no matter the viewing device or screen size. However, if the dimensions are set as a percentage of the container, the chart converts that % value into pixels while rendering. When the container size changes, the chart is automatically resized accordingly.
 
-This article focuses on how you can change the chart type of the chart at runtime using React `props` object. The chart types used in the sample is:
+After you initialize a chart, you can change the dimensions dynamically, through the JavaScript API `resizeTo()`.
 
-* Column 2D
-* Bar 2D
-* Pie 2D
+Recreate the same chart you created earlier (as described in the Your first chart article), using the same data. To resize the chart dynamically, invoke the `resizeTo()` method, specifying the new width and height of your chart (in pixels). You can call this method anytime after the chart has finished rendering. The chart will be rendered using React `props` object.
 
-A chart configured to change the chart type, is shown below:
+A chart configured to dynamically change the dimensions of the chart, is shown below:
 
 {% embed_chartData change-chart-type-example-1.js json %}
 
@@ -29,47 +27,45 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
 
 const chartConfigs = {
-	type: 'column2d',
-	width: 700,
-	height: 400,
-	dataFormat: 'json',
-	dataSource: {
-		// Chart configuration
-	    "chart": {
-	        "caption": "Countries With Most Oil Reserves [2017-18]",
-	        "subCaption": "In MMbbl = One Million barrels",
-	        "xAxisName": "Country",
-	        "yAxisName": "Reserves (MMbbl)",
-	        "numberSuffix": "K",
-	        "theme": "fusion"
-	    },
-	    // Chart data
-	    "data": [{
-	        "label": "Venezuela",
-	        "value": "290"
-	    }, {
-	        "label": "Saudi",
-	        "value": "260"
-	    }, {
-	        "label": "Canada",
-	        "value": "180"
-	    }, {
-	        "label": "Iran",
-	        "value": "140"
-	    }, {
-	        "label": "Russia",
-	        "value": "115"
-	    }, {
-	        "label": "UAE",
-	        "value": "100"
-	    }, {
-	        "label": "US",
-	        "value": "30"
-	    }, {
-	        "label": "China",
-	        "value": "30"
-	    }]
-	},
+  type: 'column2d',
+  width: '700',
+  height: '400',
+  dataFormat: 'json',
+  dataSource: {
+    "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion"
+    },
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+  },
 };
 
 class Chart extends Component {
@@ -78,7 +74,7 @@ class Chart extends Component {
 
     this.state = {
       chart: {},
-      currentVal: 'column2d'
+      currentVal: 'medium'
     };
 
     this.renderComplete = this.renderComplete.bind(this);
@@ -86,12 +82,24 @@ class Chart extends Component {
   }
 
   renderComplete(chart) {
-    this.setState({ chart });
+    this.setState({chart});
   }
 
-  // Handler for radio buttons to change chart type.
+  // Handler for radio buttons to change chart size.
   radioHandler(e) {
-    this.state.chart.chartType(e.currentTarget.value);
+    switch(e.currentTarget.value) {
+      case 'small':
+        this.state.chart.resizeTo(400, 250);
+        break;
+
+      case 'medium':
+        this.state.chart.resizeTo(600, 350);
+        break;
+
+      case 'large':
+        this.state.chart.resizeTo(700, 400);
+        break;
+    }
     this.setState({
       currentVal: e.currentTarget.value
     });
@@ -103,31 +111,33 @@ class Chart extends Component {
         <ReactFC {...chartConfigs} onRender={this.renderComplete} />
         <br />
         <center>
-          <span>Choose a chart type:</span>
+          <span>Choose a dimension:</span>
           <div className="change-type">
             <div>
               <input
                 type="radio"
-                value="column2d"
+                value="small"
                 onChange={this.radioHandler}
-                checked={this.state.currentVal === 'column2d'} />
-              <label>Column 2D Chart</label>
+                checked={this.state.currentVal === 'small'} />
+              <label>400 x 250</label>
             </div>
             <div>
               <input
                 type="radio"
-                value="bar2d"
+                value="medium"
                 onChange={this.radioHandler}
-                checked={this.state.currentVal === 'bar2d'} />
-              <label>Bar 2D Chart</label>
+                checked={this.state.currentVal === 'medium'}
+              />
+              <label>600 x 350</label>
             </div>
             <div>
               <input
                 type="radio"
-                value="pie2d"
+                value="large"
                 onChange={this.radioHandler}
-                checked={this.state.currentVal === 'pie2d'} />
-              <label>Pie 2D Chart</label>
+                checked={this.state.currentVal === 'large'}
+              />
+              <label>700 x 400</label>
             </div>
           </div>
         </center>
@@ -155,8 +165,9 @@ The above chart has been rendered using the following steps:
 3. Create a component to include `react-fusioncharts` component.
 
 4. In the above sample:
+
 	* Use the `renderComplete` to render the charts at runtime.
-	* Use the `radioHander` for radio buttons to change the chart type.
+	* USe the `radioHander` to change the size of the chart.
 
 5. Add the `render()` function to create the **radio buttons** inside the `<div>`.
 
