@@ -27,7 +27,7 @@ The full code of the above sample is given below:
 <html>
 
 <head>
-    <title>FusionCharts | USA Map</title>
+    <title>FusionCharts | Change Chart Type</title>
     <!-- FusionCharts Library -->
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>

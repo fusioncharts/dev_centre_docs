@@ -77,6 +77,7 @@ def chart(request):
     return  render(request, 'dynamic-chart-type.html', {'output' : column2d.render(), 'chartTitle': 'Dynamic Chart Type Change'})
 
 ```
+
 The HTML template to render the above chart is shown below:
 
 ```
@@ -141,6 +142,7 @@ The HTML template to render the above chart is shown below:
 </html>
 
 ```
+
 The sample code provided above corresponds to the following tasks:
 
 1. Import and resolve dependencies:

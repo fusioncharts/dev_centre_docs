@@ -3133,7 +3133,7 @@
                 "name": "thickness"
             }
         ],
-        "description": "Trend-lines are horizontal lines that aid in interpretation of data with respect to some pre-determined value. For example, if you are plotting the sales data for the current year, you might want to show the previous year's average monthly sales as a trend indicator for ease of comparison. The `lines` object, child of the `trendlines` object is used to add trend-lines to a chart.\n\nAlthough the `line` object has to be defined within the `trendlines` object, the latter cannot be used to collectively customize trend-lines, because it does not have any attributes of its own.\n\nThe attributes of the `lines` object, child of the `trendlines` object, are used to create and customize trend-lines for charts."
+        "description": "Trend-lines are vetical lines that aid in interpretation of data with respect to some pre-determined value. For example, if you are plotting the sales data for the current year, you might want to show the previous year's average monthly sales as a trend indicator for ease of comparison. The `lines` object, child of the `trendlines` object is used to add trend-lines to a chart.\n\nAlthough the `line` object has to be defined within the `trendlines` object, the latter cannot be used to collectively customize trend-lines, because it does not have any attributes of its own.\n\nThe attributes of the `lines` object, child of the `trendlines` object, are used to create and customize trend-lines for charts."
     },
     {
         "table": "Trend-lines (Chart level attributes)",
@@ -3170,7 +3170,7 @@
                 "name": "showTrendlinesOnTop"
             }
         ],
-        "description": "Trend-lines are horizontal lines that aid in interpretation of data with respect to some pre-determined value. For example, if you are plotting the sales data for the current year, you might want to show the previous year's average monthly sales as a trend indicator for ease of comparison. Cosmetics for all the trend-lines rendered can be attained using this set of attributes.\n\nAlthough there are set of attributes of the `line object`, used to create and customize trend-lines, these set of attributes effect all the trend-lines rendered in your chart."
+        "description": "Trend-lines are vertical lines that aid in interpretation of data with respect to some pre-determined value. For example, if you are plotting the sales data for the current year, you might want to show the previous year's average monthly sales as a trend indicator for ease of comparison. Cosmetics for all the trend-lines rendered can be attained using this set of attributes.\n\nAlthough there are set of attributes of the `line object`, used to create and customize trend-lines, these set of attributes effect all the trend-lines rendered in your chart."
     },
     {
         "table": "Trend-lines Display Value Cosmetics",
