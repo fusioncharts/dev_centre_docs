@@ -12,7 +12,7 @@ Recreate the same chart you created earlier (as described in the Your first char
 
 A chart configured to dynamically change the dimensions of the chart, is shown below:
 
-{% embed_chartData change-chart-type-example-1.js json %}
+{% embed_chartData slice-data-plot-using-custom-api-example-1.js json %}
 
 The full code of the above sample is given below:
 
