@@ -23,7 +23,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 
 <div class='tab android-tab active'>
 
-<div><strong>Step 1:</strong> To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</div>
+<div><strong>Step 1:</strong> To install fusioncharts and the `react-native-fusioncharts` component via npm follow the steps below:</div>
 <div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="custom-hlc language-javascript">
     $ npm install react-native-fusioncharts --save
