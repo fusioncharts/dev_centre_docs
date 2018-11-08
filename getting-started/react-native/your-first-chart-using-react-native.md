@@ -1,70 +1,59 @@
 ---
-title: Your First Chart in React using FusionCharts | FusionCharts
-description: This article outlines the steps to be executed for creating your first chart using the react-fusioncharts component.
-heading: Create a Chart in React using FusionCharts
+title: Your First Chart in React Native using FusionCharts | FusionCharts
+description: This article outlines the steps to be executed for creating your first chart using the react-native-fusioncharts component.
+heading: Create a Chart in React Native using FusionCharts
 ---
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React Native** component which provides bindings for **FusionCharts**. The `react-native-fusioncharts` component allows you to easily add rich and interactive charts to any **React Native** project. 
 
-In this page, we'll see how to install FusionCharts and render a chart using the `react-fusionCharts` component.
+In this page, we'll see how to install FusionCharts and render a chart using the `react-native-fusionCharts` component.
 
 ## Installation
 
-Install **FusionCharts** and the `react-fusioncharts` component using any of the following methods:
+Install **FusionCharts** and the `react-native-fusioncharts` component using any of the following methods:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='localfiles'>Local Files</a></li>
+    <li class='active'><a data-toggle='android'>Android</a></li>
+    <li><a data-toggle='ios'>iOS</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
 
-<div><strong>To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</strong></div>
-<div>1. Install the `react-fusioncharts` module</div>
+<div class='tab android-tab active'>
+
+<div><strong>Step 1:</strong> To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</div>
+<div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="custom-hlc language-javascript">
-    $ npm install react-fusioncharts --save
+    $ npm install react-native-fusioncharts --save
 </code></pre>
 <div>2. Install the `fusioncharts` JS files</div>
 <pre><code class="custom-hlc language-javascript">
     $ npm install fusioncharts --save
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab cdn-tab'>
-<div><strong>To install the FusionCharts Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for different platforms, follow the steps given below:</div>
 <div>
-    <ol>
-        <li>Include the [React](https://reactjs.org/)core library.
-        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>Include the **FusionCharts** JavaScript files from CDN.</li>
-        <li>Include the `react-fusioncharts` module.</li>
-        <li>Include the theme file.</li>
-    </ol>
+    <ul>
+        <li>Create a folder named `assets` under `android/app/src/main` directory if it doesn't exist.</li>
+        <li>Copy `FusionCharts` library files (node_modules/fusioncharts folder) in the `assets` folder.</li>
+        <li>Create a `fusioncharts.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using &lt;script&gt; tag.</li>
+        <pre><code class="custom-hlc language-javascript">
+        &lt;head&gt;
+            &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+            &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;/head&gt;
+        </code></pre>
+        <li>Set `libraryPath` property to the FusionCharts component.</li>
+        <pre><code class="custom-hlc language-javascript">
+        &lt;FusionCharts 
+        ......
+        libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
+        </code></pre>
+    </ul>
 </div>
-<div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
-&lt;head&gt;
-    &lt;!-- Step 1 - Including react --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
-    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script>
-    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Step 4 - Including the react-fusioncharts component--&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
-    &lt;!-- Step 5 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-&lt;/head&gt;
-</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
