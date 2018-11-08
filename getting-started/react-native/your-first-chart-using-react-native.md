@@ -45,7 +45,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 &lt;/head&gt;
         </code></pre>
         <div>To include the specific chart types, individually add the following files using &lt;script&gt; tag:</div>
-            <ul>
+            <ol>
                 <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
                 <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
                 <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
@@ -54,7 +54,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
                 <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
                 <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
                 <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
-            </ul>
+            </ol>
         <li>Set `libraryPath` property to the FusionCharts component.</li>
         <pre><code class="custom-hlc language-javascript">
 &lt;FusionCharts 
@@ -219,7 +219,7 @@ To render the chart, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-4. Specify the location of `fusioncharts.html` for **android** and **iOS**.
+4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
