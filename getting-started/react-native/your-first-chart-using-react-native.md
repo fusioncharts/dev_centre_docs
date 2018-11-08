@@ -211,23 +211,15 @@ To render the chart, follow the steps below:
 
 1. Include **react**
 
-2. Include `react-fusioncharts`
+2. Include `react-native-fusioncharts` component
 
-3. Include the `fusioncharts` library
-
-4. Include the chart type
-
-5. Include the FusionCharts theme file to apply the style to the charts
-
-6. Add the chart and the theme as a dependency to the core
-
-7. Store the chart configurations in a JSON object. In this JSON object:
+3. Store the chart configurations in `this.state`. In this:
     * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-8. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
+4. Specify the location of `fusioncharts.html` for **android** and **iOS**.
 
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
