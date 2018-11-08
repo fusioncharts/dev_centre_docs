@@ -32,63 +32,88 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 <pre><code class="custom-hlc language-javascript">
     $ npm install fusioncharts --save
 </code></pre>
-<div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for different platforms, follow the steps given below:</div>
+<div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for <strong>Android</strong>, follow the steps given below:</div>
 <div>
     <ul>
         <li>Create a folder named `assets` under `android/app/src/main` directory if it doesn't exist.</li>
         <li>Copy `FusionCharts` library files (node_modules/fusioncharts folder) in the `assets` folder.</li>
         <li>Create a `fusioncharts.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using &lt;script&gt; tag.</li>
         <pre><code class="custom-hlc language-javascript">
-        &lt;head&gt;
-            &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-            &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-        &lt;/head&gt;
+&lt;head&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
         </code></pre>
         <li>Set `libraryPath` property to the FusionCharts component.</li>
         <pre><code class="custom-hlc language-javascript">
-        &lt;FusionCharts 
-        ......
-        libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
+&lt;FusionCharts 
+......
+libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
+        </code></pre>
+        <li>Add the following script in Application's `package.json` file to bundle your assets when you want to genarate a signed APK.</li>
+        <pre><code class="custom-hlc language-javascript">
+"scripts": {
+    ......
+    "clean:build:android": "rm -rf android/app/build",
+    "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
+},
+        </code></pre>
+        <li>Run the following command before genarating the signed APK:</li>
+        <pre><code class="custom-hlc language-javascript">
+$ npm run prod:android
         </code></pre>
     </ul>
 </div>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
-<div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
-<div>
-    <ol>
-        <li>Include the [React](https://reactjs.org/)core library.</li>
-        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
-        <li>Include the `react-fusioncharts` component.</li>
-        <li>Include the FusionCharts theme file to apply style to the charts.</li>
-    </ol>
-</div>
-<div>The consolidated code is shown below:</div>
+<div class='tab ios-tab'>
+
+<div><strong>Step 1:</strong> To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</div>
+<div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="custom-hlc language-javascript">
+    $ npm install react-native-fusioncharts --save
+</code></pre>
+<div>2. Install the `fusioncharts` JS files</div>
+<pre><code class="custom-hlc language-javascript">
+    $ npm install fusioncharts --save
+</code></pre>
+<div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for <strong>iOS</strong>, follow the steps given below:</div>
+
+<div>
+    <ul>
+        <li>Create a folder named `assets` in your project `root` if it doesn't exist.</li>
+        <li>Copy `FusionCharts` library files in the `assets` folder.</li>
+        <li>Create a `fusioncharts-tpl.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using &lt;script&gt; tag.</li>
+        <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including react  --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
-    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 4 - Including the react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 5 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
+        </code></pre>
+        <li>Add a `build"assets` script in Application's `package.json` file</li>
+        <pre><code class="custom-hlc language-javascript">
+"scripts": {
+    ......
+    "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts"
+},
+        </code></pre>
+        <li>The `--fc-library ./assets/fusioncharts` is required when you copy FusionCharts library files in your `assets` folder.<br/>
+        <strong>Note:</strong> `fc-build-assets` is a utility binary provided by `react-native-fusioncharts` to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
+        <li>Run the following command before running the application:</li>
+        <pre><code class="custom-hlc language-javascript">
+$ npm run build:assets
+        </code></pre>
+    </ul>
+</div>
+
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
 </div>
 
-That completes the installation of FusionCharts and the react-fusioncharts component.
+That completes the installation of FusionCharts and the `react-native-fusioncharts` component.
 
 ## Create your first chart
 
