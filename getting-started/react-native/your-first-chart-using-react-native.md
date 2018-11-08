@@ -44,7 +44,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
         </code></pre>
-        <div>To include the specific chart types, individually add the following files using &lt;script&gt; tag:</div>
+        <div>To include the specific chart types, individually add the following files using <strong>&lt;script&gt;</strong> tag:</div>
         <div>1. <strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`<br/>
             2. <strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`<br/>
             3. <strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`<br/>
