@@ -1,457 +1,311 @@
 ---
-title: Your First Gauge in React using FusionCharts | FusionCharts
-description: This article outlines the steps to be executed for creating your first gauge using the react-fusioncharts component.
-heading: Create a Gauge in React using FusionCharts
-chartPresent: false
+title: Your First Gauge in React Native using FusionCharts | FusionCharts
+description: This article outlines the steps to be executed for creating your first chart using the react-native-fusioncharts component.
+heading: Create a Gauge in React Native using FusionCharts
 ---
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React Native** component which provides bindings for **FusionCharts**. The `react-native-fusioncharts` component allows you to easily add rich and interactive charts to any **React Native** project. 
 
-In this page, we'll see how to install FusionCharts and render a gauge using the `react-fusionCharts` component.
+In this page, we'll see how to install FusionCharts and render a chart using the `react-native-fusionCharts` component.
 
 ## Installation
 
-Install **FusionCharts** and the `react-fusioncharts` component using any of the following methods:
+Install **FusionCharts** and the `react-native-fusioncharts` component using any of the following methods:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='localfiles'>Local Files</a></li>
+    <li class='active'><a data-toggle='android'>Android</a></li>
+    <li><a data-toggle='ios'>iOS</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
 
-<div><strong>To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</strong></div>
-<div>1. Install the `react-fusioncharts` module</div>
+<div class='tab android-tab active'>
+
+<div><strong>Step 1:</strong> To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</div>
+<div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="custom-hlc language-javascript">
-    $ npm install react-fusioncharts --save
+    $ npm install react-native-fusioncharts --save
 </code></pre>
 <div>2. Install the `fusioncharts` JS files</div>
 <pre><code class="custom-hlc language-javascript">
     $ npm install fusioncharts --save
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab cdn-tab'>
-<div><strong>To install the FusionCharts Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for <strong>Android</strong>, follow the steps given below:</div>
 <div>
-    <ol>
-        <li>Include the [React](https://reactjs.org/)core library.
-        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>Include the **FusionCharts** JavaScript files from CDN.</li>
-        <li>Include the `react-fusioncharts` module.</li>
-        <li>Include the theme file.</li>
-    </ol>
-</div>
-<div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+    <ul>
+        <li>Create a folder named `assets` under `android/app/src/main` directory if it doesn't exist.</li>
+        <li>Copy `FusionCharts` library files (node_modules/fusioncharts folder) in the `assets` folder.</li>
+        <li>Create a `fusioncharts.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using &lt;script&gt; tag.</li>
+        <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including react --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
-    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script>
-    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Step 4 - Including the react-fusioncharts component--&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
-    &lt;!-- Step 5 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-&lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-
-<div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
-<div>
-    <ol>
-        <li>Include the [React](https://reactjs.org/)core library.</li>
-        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
-        <li>Include the `react-fusioncharts` component.</li>
-        <li>Include the FusionCharts theme file to apply style to the charts.</li>
-    </ol>
-</div>
-<div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
-&lt;head&gt;
-    &lt;!-- Step 1 - Including react  --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
-    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 4 - Including the react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 5 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
+        </code></pre>
+        <div>To include the specific chart types, individually add the following files using <strong>&lt;script&gt;</strong> tag:</div>
+        <div>1. <strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`<br/>
+            2. <strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`<br/>
+            3. <strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`<br/>
+            4. <strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`<br/>
+            5. <strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`<br/>
+            6. <strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`<br/>
+            7. <strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`<br/>
+            8. <strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</div>
+        <li>Set `libraryPath` property to the FusionCharts component.</li>
+        <pre><code class="custom-hlc language-javascript">
+&lt;FusionCharts 
+......
+libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
+        </code></pre>
+        <li>Add the following script in Application's `package.json` file to bundle your assets when you want to genarate a signed APK.</li>
+        <pre><code class="custom-hlc language-javascript">
+"scripts": {
+    ......
+    "clean:build:android": "rm -rf android/app/build",
+    "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
+},
+        </code></pre>
+        <li>Run the following command before genarating the signed APK:</li>
+        <pre><code class="custom-hlc language-javascript">
+$ npm run prod:android
+        </code></pre>
+    </ul>
+</div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab ios-tab'>
+
+<div><strong>Step 1:</strong> To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</div>
+<div>1. Install the `react-native-fusioncharts` module</div>
+<pre><code class="custom-hlc language-javascript">
+    $ npm install react-native-fusioncharts --save
 </code></pre>
+<div>2. Install the `fusioncharts` JS files</div>
+<pre><code class="custom-hlc language-javascript">
+    $ npm install fusioncharts --save
+</code></pre>
+<div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for <strong>iOS</strong>, follow the steps given below:</div>
+
+<div>
+    <ul>
+        <li>Create a folder named `assets` in your project `root` if it doesn't exist.</li>
+        <li>Copy `FusionCharts` library files in the `assets` folder.</li>
+        <li>Create a `fusioncharts-tpl.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using &lt;script&gt; tag.</li>
+        <pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+        </code></pre>
+        <li>Add a `build"assets` script in Application's `package.json` file</li>
+        <pre><code class="custom-hlc language-javascript">
+"scripts": {
+    ......
+    "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts"
+},
+        </code></pre>
+        <li>The `--fc-library ./assets/fusioncharts` is required when you copy FusionCharts library files in your `assets` folder.<br/>
+        <strong>Note:</strong> `fc-build-assets` is a utility binary provided by `react-native-fusioncharts` to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
+        <li>Run the following command before running the application:</li>
+        <pre><code class="custom-hlc language-javascript">
+$ npm run build:assets
+        </code></pre>
+    </ul>
+</div>
+
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
 </div>
 
-## Create your first gauge
+That completes the installation of FusionCharts and the `react-native-fusioncharts` component.
 
-Gauges are powerful tools that can showcase information using a radial or linear scale to display data. 
+## Create your first chart
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
+Let's create a Column 2D chart using the react-native-fusioncharts component showing the "Countries With Most Oil Reserves". 
 
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts). 
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-The angular gauge is shown below:
+The Column 2D chart is shown below:
 
-{% embed_chart getting-started-your-first-widget.js %}
+{% embed_chart getting-started-your-first-chart-example-1.js %}
 
-The thresholds for the above sample have been defined using the following range:
+The data for the above chart is shown in the table below:
 
-Range|Color|Hex Code|
--|-|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
-
-So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
+Country|No. of Oil Reserves||
+-|-|-
+Venezuela|290|
+Saudi|260|
+Canada|180|
+Iran|140|
+Russia|115|
+UAE|100|
+US|30|
+China|30|
 
 ## Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
 
 ```json
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
         "theme": "fusion",
-        "showToolTip": "0"
     },
     // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}
+```
+
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
+
+In the above JSON data: 
+
+* Create the `chart` object to define the elements of the chart.
+
+* Specify the `label` and `value` of each column within the `data` array.
+
+Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
+
+Now that you have converted the tabular data to JSON format, let's see how to render the chart.
+
+## Render the chart
+
+To render the chart, follow the steps below:
+
+1. Include **react**
+
+2. Include `react-native-fusioncharts` component
+
+3. Store the chart configurations in `this.state`. In this:
+    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height (in pixels). 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of the `dataSource`.
+
+4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
+
+> The `JavaScript` code to create a chart in **Android** and **iOS** is same.
+
+Copy the following code to `app.js` file.
+
+```
+// Including react
+import React, { Component } from "react";
+import { Platform, StyleSheet, Text, View } from "react-native";
+
+// Including the react-native-fusioncharts component
+import FusionCharts from "react-native-fusioncharts";
+
+export default class PlainColumn2D extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            type: "column2d", // The chart type
+            width: "700", // Width of the chart
+            height: "400", // Height of the chart
+            dataFormat: "json", // Data type
+            dataSource: { 
+                // Chart Configuration 
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            };
+            this.libraryPath = Platform.select({
+                // Specify fusioncharts.html file location
+                android: { uri: "file:///android_asset/fusioncharts.html" },
+                ios: require("../assets/fusioncharts.html")
+            });
+        }
+
+        render() {
+            return (
+            <View style={styles.container}>
+            <Text style={styles.header}>A Column 2D Chart</Text>
+            <View style={styles.chartContainer}>
+                <FusionCharts
+                type={this.state.type}
+                width={this.state.width}
+                height={this.state.height}
+                dataFormat={this.state.dataFormat}
+                dataSource={this.state.dataSource}
+                libraryPath={this.libraryPath} // set the libraryPath property
+                />
+            </View>
+            </View>
+            );
+        }
     }
 }
 ```
 
-In the above JSON: 
-
-* Create the `chart` object to define the elements of the gauge.
-
-* Create the `colorRange` array to set the color associated with the specific range of values.
-
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
-
-* Specify the hex code of the color within the `color` array.
-
-* Create the `dials` object to represent the customer satisfaction score.
-
-* Create the `dial` object under `dials` object to set the value of the dial in an array.
-
-The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
-
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
-
-## Render the gauge
-
-To render the gauge, follow the steps below:
-
-1. Include `react`
-
-2. Include `react-fusioncharts`
-
-3. Include the `fusioncharts` library
-
-4. Include gauge type.
-
-5. Include the FusionCharts theme file to apply style to the charts.
-
-6. Add the gauge and the theme as a dependency to the core.
-
-7. Store the chart configurations as a JSON object. In this JSON object:
-
-    * Set the gauge type as `angulargauge`.  Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
-
-    * Set the width and height (in pixels). 
-
-    * Set the `dataFormat` as **json**.
-
-    * Embed the json data as the value of the `dataSource`.
-
-8. Create the DOM element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
-
-The consolidated code is shown below:
-
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='localfiles'>Local Files</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
-
-<pre><code class="custom-hlc language-javascript">// Step 1 - Including react
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-// Step 2 - Including the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-// Step 3 - Including the fusioncharts library
-import FusionCharts from 'fusioncharts';
-
-// Step 4 - Including the chart type
-import Widgets from 'fusioncharts/fusioncharts.widgets';
-
-// Step 5 - Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-// Step 6 - Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
-
-// Step 7 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-    type: 'angulargauge', // The gauge type
-    width: '450', // Width of the gauge
-    height: '250', // Height of the gauge
-    dataFormat: 'json', // Data type
-    dataSource: {
-    // Chart Configuration
-      "chart": {
-          "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-          "lowerLimit": "0",
-          "upperLimit": "100",
-          "showValue": "1",
-          "numberSuffix": "%",
-          "theme": "fusion",
-          "showToolTip": "0"
-      },
-      // Chart Data
-      "colorRange": {
-          "color": [{
-              "minValue": "0",
-              "maxValue": "50",
-              "code": "#F2726F"
-          }, {
-              "minValue": "50",
-              "maxValue": "75",
-              "code": "#FFC533"
-          }, {
-              "minValue": "75",
-              "maxValue": "100",
-              "code": "#62B58F"
-          }]
-      },
-      "dials": {
-          "dial": [{
-              "value": "81"
-          }]
-      }
-  }
-};
-
-// Step 8 - Creating the DOM element to pass the react-fusioncharts component 
-class App extends React.Component {
-  render() {
-     return (
-     &lt;ReactFC
-        {...chartConfigs}/&gt;
-     );
-  }
-}
-
-export default App
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript">&lt;html&gt;
-&lt;head&gt;
-    &lt;!-- Including react --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
-    &lt;!-- Including react-dom --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script> 
-    &lt;!-- Including babel --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script> 
-    &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
-    &lt;!-- Including the fusioncharts library to render charts --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.charts.js"&gt;&lt;/script> 
-    &lt;!-- Including react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script> 
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
-    &lt;script type="text/jsx"&gt;
-    ReactFC.fcRoot(FusionCharts);
-    const chartConfigs = {
-        type: 'angulargauge',
-        renderAt: 'chart-container',
-        width: '450',
-        height: '250',
-        dataFormat: 'json',
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                "showValue": "1",
-                "numberSuffix": "%",
-                "theme": "fusion",
-                "showToolTip": "0"
-            },
-            // Chart Data
-            "colorRange": {
-                "color": [{
-                    "minValue": "0",
-                    "maxValue": "50",
-                    "code": "#F2726F"
-                }, {
-                    "minValue": "50",
-                    "maxValue": "75",
-                    "code": "#FFC533"
-                }, {
-                    "minValue": "75",
-                    "maxValue": "100",
-                    "code": "#62B58F"
-                }]
-            },
-            "dials": {
-                "dial": [{
-                    "value": "81"
-                }]
-            }
-        }
-    };
-    &lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactDOM.render(
-        &lt;ReactFC {...chartConfigs} /&gt;,
-        document.getElementById('chart-container')
-    );
-    &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id='chart-container'&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript">&lt;html&gt;
-&lt;head&gt;
-    &lt;!-- Including react --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt;
-    &lt;!-- Including react-dom --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-dom.development.js"&gt;&lt;/script&gt;
-    &lt;!-- Including babel --&gt;
-    &lt;script type="text/javascript" src="path/to/local/babel.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusioncharts library to render charts --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.widgets.js"&gt;&lt;/script&gt;
-    &lt;!-- Including react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactFC.fcRoot(FusionCharts);
-    const chartConfigs = {
-        type: 'angulargauge',
-        renderAt: 'chart-container',
-        width: '450',
-        height: '250',
-        dataFormat: 'json',
-        dataSource: {
-            // Gauge Configuration
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion",
-            },
-            // Chart Data
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }
-    };
-    &lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactDOM.render(
-        &lt;ReactFC {...chartConfigs} /&gt;,
-        document.getElementById('chart-container')
-    );
-    &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id='chart-container'&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
-
-That's it! Your first gauge using `react-fusioncharts` is ready.
+That's it! Your first chart using `react-native-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 
