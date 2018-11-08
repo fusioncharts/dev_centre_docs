@@ -45,14 +45,14 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 &lt;/head&gt;
         </code></pre>
         <div>To include the specific chart types, individually add the following files using &lt;script&gt; tag:</div>
-        <div><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`<br/>
-            <strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`<br/>
-            <strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`<br/>
-            <strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`<br/>
-            <strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`<br/>
-            <strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`<br/>
-            <strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`<br/>
-            <strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</div>
+        <div>1. <strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`<br/>
+            2. <strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`<br/>
+            3. <strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`<br/>
+            4. <strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`<br/>
+            5. <strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`<br/>
+            6. <strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`<br/>
+            7. <strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`<br/>
+            8. <strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</div>
         <li>Set `libraryPath` property to the FusionCharts component.</li>
         <pre><code class="custom-hlc language-javascript">
 &lt;FusionCharts 
