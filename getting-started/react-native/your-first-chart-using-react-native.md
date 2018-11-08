@@ -44,6 +44,17 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
         </code></pre>
+        <div>To include the specific chart types, individually add the following files using &lt;script&gt; tag:</div>
+        <ul>
+            <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
+            <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
+            <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
+            <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
+            <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
+            <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
+            <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
+            <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
+        </ul>
         <li>Set `libraryPath` property to the FusionCharts component.</li>
         <pre><code class="custom-hlc language-javascript">
 &lt;FusionCharts 
@@ -117,7 +128,7 @@ That completes the installation of FusionCharts and the `react-native-fusionchar
 
 ## Create your first chart
 
-Let's create a Column 2D chart using the react-fusioncharts component showing the "Countries With Most Oil Reserves". 
+Let's create a Column 2D chart using the react-native-fusioncharts component showing the "Countries With Most Oil Reserves". 
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
@@ -218,274 +229,93 @@ To render the chart, follow the steps below:
 
 8. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
-The consolidated code is shown below:
+> The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='localfiles'>Local Files</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
+Copy the following code to `app.js` file.
 
-<pre><code class="custom-hlc language-javascript">
-// Step 1 - Including react
-import React from 'react';
-import ReactDOM from 'react-dom';
+```
+// Including react
+import React, { Component } from "react";
+import { Platform, StyleSheet, Text, View } from "react-native";
 
-// Step 2 - Including the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
+// Including the react-native-fusioncharts component
+import FusionCharts from "react-native-fusioncharts";
 
-// Step 3 - Including the fusioncharts library
-import FusionCharts from 'fusioncharts';
+export default class PlainColumn2D extends Component {
+    constructor(props) {
+        super(props);
 
-// Step 4 - Including the chart type
-import Column2D from 'fusioncharts/fusioncharts.charts';
+        this.state = {
+            type: "column2d", // The chart type
+            width: "700", // Width of the chart
+            height: "400", // Height of the chart
+            dataFormat: "json", // Data type
+            dataSource: { 
+                // Chart Configuration 
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            };
+            this.libraryPath = Platform.select({
+                // Specify fusioncharts.html file location
+                android: { uri: "file:///android_asset/fusioncharts.html" },
+                ios: require("../assets/fusioncharts.html")
+            });
+        }
 
-// Step 5 - Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-// Step 6 - Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
-
-// Step 7 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-    type: 'column2d',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: { 
-        // Chart Configuration 
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
+        render() {
+            return (
+            <View style={styles.container}>
+            <Text style={styles.header}>A Column 2D Chart</Text>
+            <View style={styles.chartContainer}>
+                <FusionCharts
+                type={this.state.type}
+                width={this.state.width}
+                height={this.state.height}
+                dataFormat={this.state.dataFormat}
+                dataSource={this.state.dataSource}
+                libraryPath={this.libraryPath} // set the libraryPath property
+                />
+            </View>
+            </View>
+            );
+        }
     }
-};
-
-// Step 8 - Creating the DOM element to pass the react-fusioncharts component 
-class App extends React.Component {
-  render() {
-     return (
-     &lt;ReactFC
-        {...chartConfigs}/&gt;
-     );
-  }
 }
+```
 
-export default App
-</code></pre>
-
-<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `import`</strong></div>
-<ul>
-    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
-    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
-    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
-    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
-    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
-    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
-    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
-    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
-</ul>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript">
-&lt;html&gt;
-&lt;head&gt;
-    &lt;!-- Including react --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
-    &lt;!-- Including react-dom --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script>
-    &lt;!-- Including babel --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
-    &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Including the fusioncharts library to render charts --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.charts.js"&gt;&lt;/script>
-    &lt;!-- Including react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-    &lt;script type="text/jsx"&gt;
-    ReactFC.fcRoot(FusionCharts);
-    const chartConfigs = {
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion",
-            },
-            // Chart Data
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }
-    };
-    &lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactDOM.render(
-        &lt;ReactFC {...chartConfigs} /&gt;,
-        document.getElementById('chart-container')
-    );
-    &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id='chart-container'&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-
-<div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript">
-&lt;html&gt;
-&lt;head&gt;
-    &lt;!-- Including react --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt;
-    &lt;!-- Including react-dom --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-dom.development.js"&gt;&lt;/script&gt;
-    &lt;!-- Including babel --&gt;
-    &lt;script type="text/javascript" src="path/to/local/babel.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusioncharts library to render charts --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.charts.js"&gt;&lt;/script&gt;
-    &lt;!-- Including react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactFC.fcRoot(FusionCharts);
-    const chartConfigs = {
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion",
-            },
-            // Chart Data
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }
-    };
-    &lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactDOM.render(
-        &lt;ReactFC {...chartConfigs} /&gt;,
-        document.getElementById('chart-container')
-    );
-    &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id='chart-container'&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
-
-That's it! Your first chart using `react-fusioncharts` is ready.
+That's it! Your first chart using `react-native-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 
