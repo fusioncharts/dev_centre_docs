@@ -27,6 +27,7 @@ Refer to the code below:
     }
 }
 ```
+
 ## Customize Tooltips
 
 To customize the tooltip use the following attributes:
