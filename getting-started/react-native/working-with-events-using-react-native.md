@@ -1,6 +1,6 @@
 ---
 title: Bind Event Listener | FusionCharts
-description: This article talks about the Events using React.
+description: This article talks about the Events using React Native.
 heading: Bind Event Listener
 ---
 
@@ -23,34 +23,19 @@ The full code of the above sample is given below:
 ```
 //Including react
 import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View, Alert } from 'react-native';
+import FusionCharts from 'react-native-fusioncharts';
 
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
+export default class ListenEvents extends Component {
+  constructor(props) {
+    super(props);
 
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts';
-
-//Including the chart type
-import Chart from 'fusioncharts/fusioncharts.charts';
-
-//Including react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-//Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
-
-//Creating the JSON object to store the chart configurations
-
-const chartConfigs = {
-    type: "column2d",
-    width: 700,
-    height: 400,
-    dataFormat: "json",
-    dataSource: {
-      // Chart configuration
+    this.state = {
+      type: 'column2d',
+      width: '700',
+      height: '400',
+      dataFormat: 'json',
+      dataSource: {
         "chart": {
             "caption": "Countries With Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
@@ -59,7 +44,6 @@ const chartConfigs = {
             "numberSuffix": "K",
             "theme": "fusion"
         },
-        // Chart data
         "data": [{
             "label": "Venezuela",
             "value": "290"
@@ -85,78 +69,46 @@ const chartConfigs = {
             "label": "China",
             "value": "30"
         }]
+      };
+      this.libraryPath = Platform.select({
+        // Specify fusioncharts.html file location
+        android: { uri: 'file:///android_asset/fusioncharts.html' },
+        ios: require('../assets/fusioncharts.html')
+      });
     }
-};
 
-class Chart extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      actualValue: "Hover on the plot to see the value along with the label",
-      message: "Hover on the plot to see the value along with the label"
-    };
-
-    this.dataplotrollover = this.dataplotrollover.bind(this);
-    this.dataplotrollout = this.dataplotrollout.bind(this);
-  }
-
-  // Event callback handler for 'dataplotRollOver'.
-  // Shows the value of the hovered plot on the page.
-  dataplotrollover(eventObj, dataObj) {
-    this.setState({
-      message: [
-        "You are currently hovering over ",
-        <strong>{dataObj.categoryLabel}</strong>,
-        " whose value is ",
-        <strong>{dataObj.displayValue}</strong>
-      ]
-    });
-  }
-
-  // Event callback handler for 'dataplotRollOut'.
-  // Resets to the original message.
-  dataplotrollout(eventObj, dataObj) {
-    this.setState({
-      message: this.state.actualValue
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <ReactFC
-          {...chartConfigs}
-          fcEvent-dataplotRollOver={this.dataplotrollover}
-          fcEvent-dataplotRollOut={this.dataplotrollout}
-        />
-        <p style={{ padding: "10px", background: "#f5f2f0" }}>
-          {this.state.message}
-        </p>
-      </div>
-    );
+    render() {
+      return (
+        <View style={styles.container}>
+        <Text style={styles.header}>Listen to events from chart</Text>
+        <View style={styles.chartContainer}>
+          <FusionCharts
+            type={this.state.type}
+            width={this.state.width}
+            height={this.state.height}
+            dataFormat={this.state.dataFormat}
+            dataSource={this.state.dataSource}
+            events={this.state.events}
+            libraryPath={this.libraryPath} // set the libraryPath property
+          />
+        </View>
+        </View>
+      );
+    }
   }
 }
-
-ReactDOM.render(<Chart />, document.getElementById("root"));
 ```
 
 The above chart is rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-native-fusioncharts`, `fusioncharts`, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Define the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
+3. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
-4. In the above sample:
-    * Use a callback handler for `dataplotRollOver` event which is triggered when the mouse pointer is rolled over a data plot.
-    * Use a callback handler for `dataplotRollOut` event which is triggered when the mouse pointer is rolled out of the data plot.
-
-5. Add the `render()` function to create the `<div>` for displaying the message.
-
-6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+4. Add the `render()` function to call the events which will be triggered when the mouse pointer is rolled over a data plot.
