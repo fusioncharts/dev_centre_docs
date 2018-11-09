@@ -23,7 +23,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 
 <div class='tab android-tab active'>
 
-<div><strong>Step 1:</strong> To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</div>
+<div><strong>Step 1:</strong> To install fusioncharts and the `react-native-fusioncharts` component via npm follow the steps below:</div>
 <div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="custom-hlc language-javascript">
     $ npm install react-native-fusioncharts --save
@@ -45,7 +45,6 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
         </code></pre>
-        <div>To include the specific chart types, individually add the following files using <strong>&lt;script&gt;</strong> tag:</div>
         <li>Set `libraryPath` property to the FusionCharts component.</li>
         <pre><code class="custom-hlc language-javascript">
 &lt;FusionCharts 
@@ -205,7 +204,7 @@ To render the chart, follow the steps below:
 
 2. Include `react-native-fusioncharts` component
 
-3. Store the chart configurations in `this.state`. In this:
+3. Define the chart configuration in a JSON.
     * Set the gauge type as `angulargauge`.  Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as **json**.

@@ -23,7 +23,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 
 <div class='tab android-tab active'>
 
-<div><strong>Step 1:</strong> To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</div>
+<div><strong>Step 1:</strong> To install fusioncharts and the `react-native-fusioncharts` component via npm follow the steps below:</div>
 <div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="custom-hlc language-javascript">
     $ npm install react-native-fusioncharts --save
@@ -41,11 +41,11 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
         <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;  
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt; 
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
         </code></pre>
-        <div>To include the specific chart types, individually add the following files using <strong>&lt;script&gt;</strong> tag:</div>
         <li>Set `libraryPath` property to the FusionCharts component.</li>
         <pre><code class="custom-hlc language-javascript">
 &lt;FusionCharts 
@@ -90,6 +90,8 @@ $ npm run prod:android
         <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;  
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt; 
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
         </code></pre>
@@ -117,96 +119,121 @@ $ npm run build:assets
 
 That completes the installation of FusionCharts and the `react-native-fusioncharts` component.
 
-## Create your first gauge
+## Create your First map
 
-Gauges are powerful tools that can showcase information using a radial or linear scale to display data.
+In this section, we will create a visualization using the **World Map** showing the average annual population growth. 
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
+{% embed_chart getting-started-your-first-map.js %}
 
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+The data for this chart is represented in the table below:
 
-The angular gauge is shown below:
-
-{% embed_chart getting-started-your-first-widget.js %}
-
-The thresholds for the above sample have been defined using the following range:
-
-Range|Color|Hex Code|
+State|Entity Name|Value||
 -|-|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
-
-So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
+North America|NA|82||
+South America|SA|2.04||
+Asia|AS|1.78||
+Europe|EU|40||
+Africa|AF|2.58||
+Australia|AU|1.30||
 
 ## Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format.
 
-```json
+In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column.
+
+However, when you convert the data into a format (JSON or XML) supported by FusionCharts, the entities are denoted by the `id` key in the `data` object.
+
+For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
+
+We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+
+ In this example, we will use the JSON format, as shown below:
+
+```JSON
 {
-    // Chart Configuration
+    // Map Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
     },
-    // Chart Data
-    "colorRange": {
+    // Aesthetics; ranges synced with the slider
+    "colorrange": {
+        "minvalue": "0",
+        "code": "#FFE0B2",
+        "gradient": "1",
         "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
+            "minvalue": "0.5",
+            "maxvalue": "1.0",
+            "color": "#FFD74D"
         }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
+            "minvalue": "1.0",
+            "maxvalue": "2.0",
+            "color": "#FB8C00"
         }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
+            "minvalue": "2.0",
+            "maxvalue": "3.0",
+            "color": "#E65100"
         }]
     },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+    // Source data as JSON --> id represents countries of world.
+    "data": [{
+        "id": "NA",
+        "value": ".82",
+        "showLabel": "1"
+    }, {
+        "id": "SA",
+        "value": "2.04",
+        "showLabel": "1"
+    }, {
+        "id": "AS",
+        "value": "1.78",
+        "showLabel": "1"
+    }, {
+        "id": "EU",
+        "value": ".40",
+        "showLabel": "1"
+    }, {
+        "id": "AF",
+        "value": "2.58",
+        "showLabel": "1"
+    }, {
+        "id": "AU",
+        "value": "1.30",
+        "showLabel": "1"
+    }]
 }
 ```
 
-In the above JSON: 
+In the above JSON data: 
 
-* Create the `chart` object to define the elements of the gauge.
+* Create the `chart` object to define the elements of the map.
 
 * Create the `colorRange` array to set the color associated with the specific range of values.
 
 * Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
-* Specify the hex code of the color within the `color` array.
+* Create the `data` array to define the id of the continents and their corresponding values along with configurations.
 
-* Create the `dials` object to represent the customer satisfaction score.
+The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
-* Create the `dial` object under `dials` object to set the value of the dial in an array.
+Now that you have converted the tabular data to JSON format, let's learn how to render the map.
 
-The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
+## Render the map
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
-
-## Render the chart
-
-To render the chart, follow the steps below:
+To render the map follow the steps below:
 
 1. Include **react**
 
 2. Include `react-native-fusioncharts` component
 
-3. Store the chart configurations in `this.state`. In this:
-    * Set the gauge type as `angulargauge`.  Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
+3. Define the chart configuration in a JSON.
+    * Set the map as `world`. For World map, the alias is `world`. Find the complete list of map with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as **json**.
     * Embed the json data as the value of the `dataSource`.
@@ -231,40 +258,67 @@ export default class DrillDown extends Component {
         this.apiCaller = null;
 
         this.state = {
-            type: "angulargauge", // The chart type
-            width: "450", // Width of the chart
-            height: "250", // Height of the chart
-            dataFormat: "json", // Data type
+            type: 'world',
+            renderAt: 'chart-container',
+            width: '800',
+            height: '550',
+            dataFormat: 'json',
             dataSource: {
+                // Map Configuration
                 "chart": {
-                    "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                    "lowerLimit": "0",
-                    "upperLimit": "100",
-                    "showValue": "1",
-                    "numberSuffix": "%",
-                    "theme": "fusion",
-                    "showToolTip": "0"
+                    "caption": "Average Annual Population Growth",
+                    "subcaption": " 1955-2015",
+                    "numbersuffix": "%",
+                    "includevalueinlabels": "1",
+                    "labelsepchar": ": ",
+                    "entityFillHoverColor": "#FFF9C4",
+                    "theme": "fusion"
                 },
-                "colorRange": {
+                // Aesthetics; ranges synced with the slider
+                "colorrange": {
+                    "minvalue": "0",
+                    "code": "#FFE0B2",
+                    "gradient": "1",
                     "color": [{
-                        "minValue": "0",
-                        "maxValue": "50",
-                        "code": "#F2726F"
+                        "minvalue": "0.5",
+                        "maxvalue": "1.0",
+                        "color": "#FFD74D"
                     }, {
-                        "minValue": "50",
-                        "maxValue": "75",
-                        "code": "#FFC533"
+                        "minvalue": "1.0",
+                        "maxvalue": "2.0",
+                        "color": "#FB8C00"
                     }, {
-                        "minValue": "75",
-                        "maxValue": "100",
-                        "code": "#62B58F"
+                        "minvalue": "2.0",
+                        "maxvalue": "3.0",
+                        "color": "#E65100"
                     }]
                 },
-                "dials": {
-                    "dial": [{
-                        "value": "81"
-                    }]
-                }
+                // Source data as JSON --&gt; id represents countries of world.
+                "data": [{
+                    "id": "NA",
+                    "value": ".82",
+                    "showLabel": "1"
+                }, {
+                    "id": "SA",
+                    "value": "2.04",
+                    "showLabel": "1"
+                }, {
+                    "id": "AS",
+                    "value": "1.78",
+                    "showLabel": "1"
+                }, {
+                    "id": "EU",
+                    "value": ".40",
+                    "showLabel": "1"
+                }, {
+                    "id": "AF",
+                    "value": "2.58",
+                    "showLabel": "1"
+                }, {
+                    "id": "AU",
+                    "value": "1.30",
+                    "showLabel": "1"
+                }]
             };
             this.libraryPath = Platform.select({
                 // Specify fusioncharts.html file location
@@ -294,7 +348,99 @@ export default class DrillDown extends Component {
 }
 ```
 
-That's it! Your first gauge using `react-native-fusioncharts` is ready.
+That's it! Your first map using `react-native-fusioncharts` is ready.
+
+## Render other maps 
+
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally. 
+
+Let's create a map of California to show the "Web visits for a particular month" as shown below:
+
+{% embed_chart getting-started-your-first-map-california.js %}
+
+To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
+
+```
+$ npm install fusionmaps
+```
+
+After installing `fusionmaps` package, the code to render the map of **California** is:
+
+```
+// Including react
+import React, { Component } from "react";
+import { Platform, StyleSheet, Text, View } from "react-native";
+
+// Including the react-native-fusioncharts component
+import FusionCharts from "react-native-fusioncharts";
+
+export default class DrillDown extends Component {
+    constructor(props) {
+        super(props);
+        this.apiCaller = null;
+
+        this.state = {
+            type: 'maps/california',
+            renderAt: 'chart-container',
+            width: '800',
+            height: '550',
+            dataFormat: 'json',
+            dataSource: {
+                "chart": {
+                    "animation": "0",
+                    "showbevel": "0",
+                    "usehovercolor": "1",
+                    "showlegend": "1",
+                    "legendposition": "BOTTOM",
+                    "legendborderalpha": "0",
+                    "legendbordercolor": "ffffff",
+                    "legendallowdrag": "0",
+                    "legendshadow": "0",
+                    "caption": "Website Visits for the month of March 2018",
+                    "connectorcolor": "000000",
+                    "fillalpha": "80",
+                    "hovercolor": "CCCCCC",
+                    "theme": "fusion"
+                },
+                "colorrange": {
+                    "minvalue": "0",
+                    "startlabel": "Low",
+                    "endlabel": "High",
+                    "code": "e44a00",
+                    "gradient": "1",
+                    "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+                },
+                "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+            };
+            this.libraryPath = Platform.select({
+                // Specify fusioncharts.html file location
+                android: { uri: "file:///android_asset/fusioncharts.html" },
+                ios: require("../assets/fusioncharts.html")
+            });
+        }
+
+        render() {
+            return (
+            <View style={styles.container}>
+            <Text style={styles.header}>A Column 2D Chart</Text>
+            <View style={styles.chartContainer}>
+                <FusionCharts
+                type={this.state.type}
+                width={this.state.width}
+                height={this.state.height}
+                dataFormat={this.state.dataFormat}
+                dataSource={this.state.dataSource}
+                libraryPath={this.libraryPath} // set the libraryPath property
+                />
+            </View>
+            </View>
+            );
+        }
+    }
+}
+```
+
+That's it! The **California** map is ready. 
 
 ## Problem rendering the chart?
 
