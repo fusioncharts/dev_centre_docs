@@ -136,10 +136,10 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
     &lt;/script&gt;
 
     &lt;!-- Include the required FusionCharts modules --&gt;
-    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;  
     &lt;script type="text/javascript" src="path/to/local/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt;
-    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 
 &lt;/body&gt;
 
@@ -192,10 +192,10 @@ $ npm run prod:android
 
 &lt;head&gt;
     &lt;!-- Include the required FusionCharts modules --&gt;
-    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;  
     &lt;script type="text/javascript" src="path/to/local/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt;
-    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;&lt;/body&gt;
