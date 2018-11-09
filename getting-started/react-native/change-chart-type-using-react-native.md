@@ -155,7 +155,7 @@ The above chart has been rendered using the following steps:
 
 5. Add the `render()` function to create the **radio buttons**.
 
-The HTML template(fusioncharts.html) of the above sample is:
+The HTML template(`fusioncharts.html`) of the above sample is:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

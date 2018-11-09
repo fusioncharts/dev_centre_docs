@@ -1,7 +1,7 @@
 ---
-title: Apply Different Themes using React | FusionCharts
+title: Apply Different Themes using React Native | FusionCharts
 description: This article will showcase how to apply different themes to the chart at runtime.
-heading: Apply Different Themes using React
+heading: Apply Different Themes using React Native
 ---
 
 In FusionCharts Suite XT you can manually set the cosmetics and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. FusionCharts Suite ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
@@ -15,7 +15,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-This article focuses on how you can apply different themes to the chart at runtime using React `props` object. Click any radio button, to see how the look and feel of the chart change with each theme.
+This article focuses on how you can apply different themes to the chart at runtime using `react-native-fusioncharts` component. Click any radio button, to see how the look and feel of the chart change with each theme.
 
 A chart configured to change the theme, is shown below:
 
@@ -25,151 +25,266 @@ The full code of the above sample is given below:
 
 ```
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-import GammelTheme from 'fusioncharts/themes/fusioncharts.theme.gammel';
-import CandyTheme from 'fusioncharts/themes/fusioncharts.theme.candy';
-import ZuneTheme from 'fusioncharts/themes/fusioncharts.theme.zune';
-import OceanTheme from 'fusioncharts/themes/fusioncharts.theme.ocean';
-import CarbonTheme from 'fusioncharts/themes/fusioncharts.theme.carbon';
+import { Platform, StyleSheet, Text, View, Button } from 'react-native';
+import FusionCharts from 'react-native-fusioncharts';
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme, GammelTheme, CandyTheme, ZuneTheme, OceanTheme, CarbonTheme);
-
-const chartConfigs = {
-    type: 'column2d',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-        // Chart configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion"
-        },
-        // Chart data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
-};
-
-class Chart extends Component {
+export default class ThemeMenu extends Component {
     constructor(props) {
         super(props);
+        this.activatedColor = '#8cd46a';
+        this.apiCaller = null;
 
         this.state = {
-            chart: {},
-            currentVal: 'fusion'
-        };
+            selectedTheme: 'fusion',
+            btnDisabled: true,
+            type: 'column2d',
+            width: '700',
+            height: '400',
+            dataFormat: 'json',
+            dataSource: {
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion"
+                },
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            };
+            this.libraryPath = Platform.select({
+                // Specify fusioncharts.html file location
+                android: { uri: 'file:///android_asset/fusioncharts.html' },
+                ios: require('../assets/fusioncharts.html')
+            });
+        }
 
-        this.renderComplete = this.renderComplete.bind(this);
-        this.radioHandler = this.radioHandler.bind(this);
-    }
+        changeTheme(theme) {
+            this.setState({
+                selectedTheme: theme
+            })
+            this.apiCaller(`window.chartObj.setChartAttribute('theme', '${theme}')`);
+        }
 
-    renderComplete(chart) {
-    this.setState({ chart });
-    }
-
-    // Handler for radio buttons to change chart theme.
-    radioHandler(e) {
-        this.state.chart.setChartAttribute('theme', e.currentTarget.value);
-        this.setState({
-            currentVal: e.currentTarget.value
-        });
-    }
-
-    render() {
-        return (
-            <div>
-            <ReactFC {...chartConfigs} onRender={this.renderComplete} />
-            <br />
-            <center>
-                <span>Choose a theme:</span>
-                <div className="change-type">
-                    <div>
-                        <input type="radio" value="fusion" onChange={this.radioHandler} checked={this.state.currentVal === 'fusion'} />
-                        <label>Fusion</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="gammel" onChange={this.radioHandler} checked={this.state.currentVal === 'gammel'} />
-                        <label>Gammel</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="candy" onChange={this.radioHandler} checked={this.state.currentVal === 'candy'} />
-                        <label>Candy</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="zune" onChange={this.radioHandler} checked={this.state.currentVal === 'zune'} />
-                        <label>Zune</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="ocean" onChange={this.radioHandler} checked={this.state.currentVal === 'ocean'} />
-                        <label>Ocean</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="carbon" onChange={this.radioHandler} checked={this.state.currentVal === 'carbon'} />
-                      <label>Carbon</label>
-                    </div>
-                </div>
-            </center>
-        </div>
-      );
+        render() {
+            return (
+                <View style={styles.container}>
+                <Text style={styles.header}>Choose from multiple themes</Text>
+                <View style={styles.chartContainer}>
+                <FusionCharts
+                type={this.state.type}
+                width={this.state.width}
+                height={this.state.height}
+                dataFormat={this.state.dataFormat}
+                dataSource={this.state.dataSource}
+                libraryPath={this.libraryPath}
+                onInitialized={(caller) => {
+                    this.setState({ btnDisabled: false });
+                    this.apiCaller = caller;
+                }}
+                />
+                </View>
+                <View style={styles.buttonContainer}>
+                <Button title="Fusion" disabled={this.state.btnDisabled} onPress={() => this.changeTheme('fusion')} color={this.state.selectedTheme === 'fusion' ? this.activatedColor : 'blue'} />
+                <Button title="Fint" disabled={this.state.btnDisabled} onPress={() => this.changeTheme('fint')} color={this.state.selectedTheme === 'fint' ? this.activatedColor : 'blue'} />
+                <Button title="Ocean" disabled={this.state.btnDisabled} onPress={() => this.changeTheme('ocean')} color={this.state.selectedTheme === 'ocean' ? this.activatedColor : 'blue'} />
+                </View>
+                </View>
+            )
+        }
     }
 }
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-native-fusioncharts`, `fusioncharts`, etc.
 
-2. Include the theme files for all the six themes.
+2. Include the theme files for all the six themes in `fusioncharts.html` file.
 
-3. Store the chart configuration in a JSON object. In the JSON object:
+3. Define the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-3. Create a component to include `react-fusioncharts` component.
+3. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
-4. In the above sample:
-	* Use the `renderComplete` event to render the charts at runtime.
-	* Use `radioHander` for radio buttons to apply selected theme to the chart.
+4. Create a function to apply different themes to the chart at runtime.
 
-5. Add the `render()` function to create the **radio buttons** inside the `<div>`.
+5. Add the `render()` function to create the **radio buttons**.
 
-6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+The HTML template(`fusioncharts.html`) of the above sample is:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='android'>Android</a></li>
+    <li><a data-toggle='ios'>iOS</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab android-tab active'>
+<pre><code class="custom-hlc language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;FusionCharts&lt;/title&gt;
+    &lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /&gt;
+
+    &lt;style type="text/css"&gt;
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-size: 13px;
+        }
+
+        #chart-container {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            user-select: none;
+            -webkit-user-select: none;
+            overflow: hidden;
+        }
+
+        #loading-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            user-select: none;
+            -webkit-user-select: none;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id="chart-container"&gt;
+        &lt;div id="loading-text"&gt;
+            Chart is loading...
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script type='text/javascript'&gt;
+        "use strict";
+        (function() {
+            var a = Promise.resolve(),
+                b = {},
+                c = {};
+            (function d() {
+                var f = function() {
+                    function g() {
+                        return Math.floor(65536 * (1 + Math.random())).toString(16).substring(1)
+                    }
+                    return g() + g() + "-" + g() + "-" + g() + "-" + g() + "-" + g() + g() + g()
+                };
+                window.webViewBridge = {
+                    send: function send(g, h, i, j) {
+                        i = i || function() {}, j = j || function() {};
+                        var k = {
+                                targetFunc: g,
+                                data: h || {},
+                                msgId: f()
+                            },
+                            l = JSON.stringify(k);
+                        a = a.then(function() {
+                            return new Promise(function(m, n) {
+                                b[k.msgId] = {
+                                    resolve: m,
+                                    reject: n
+                                }, c[k.msgId] = {
+                                    onsuccess: i,
+                                    onerror: j
+                                }, window.postMessage(l)
+                            })
+                        }).catch(function() {})
+                    }
+                }, window.document.addEventListener("message", function(g) {
+                    var h;
+                    try {
+                        h = JSON.parse(g.data)
+                    } catch (i) {
+                        return
+                    }
+                    b[h.msgId] && (b[h.msgId].resolve(), delete b[h.msgId]), h.args && c[h.msgId] && (h.isSuccessfull ? c[h.msgId].onsuccess.apply(null, h.args) : c[h.msgId].onerror.apply(null, h.args), delete c[h.msgId])
+                })
+            })()
+        })();
+    &lt;/script&gt;
+
+    &lt;!-- Include the required FusionCharts modules --&gt;
+    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.gammel.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.candy.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab ios-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;!-- Include the required FusionCharts modules --&gt;
+    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.gammel.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.candy.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
