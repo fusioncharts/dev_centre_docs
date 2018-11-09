@@ -1,7 +1,7 @@
 ---
-title: Adding Drill Down using React | FusionCharts
+title: Adding Drill Down using React Native | FusionCharts
 description: This article focuses on drill down charts.
-heading: Adding Drill Down using React
+heading: Adding Drill Down using React Native
 ---
 
 With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
@@ -35,161 +35,177 @@ The full code of the above sample is given below:
 ```
 //Including react
 import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
+import FusionCharts from 'react-native-fusioncharts';
 
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
-
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts/core';
-
-//Including the chart type
-import Column2D from 'fusioncharts/viz/column2d';
-
-//Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
-
-//Creating the JSON object to store the chart configurations
-
-const chartConfigs = {
-	type: 'column2d',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: {
-	    // Chart Configuration
-	    "chart": {
-	        "caption": "Top 3 Juice Flavors",
-	        "subcaption": "Last year",
-	        "xaxisname": "Flavor",
-	        "yaxisname": "Amount (In USD)",
-	        "numberprefix": "$",
-	        "theme": "fusion",
-	        "rotateValues": "0"
-	    },
-	    "data": [{
-	        "label": "Apple",
-	        "value": "810000",
-	        "link": "newchart-xml-apple"
-	    }, {
-	        "label": "Cranberry",
-	        "value": "620000",
-	        "link": "newchart-xml-cranberry"
-	    }, {
-	        "label": "Grapes",
-	        "value": "350000",
-	        "link": "newchart-xml-grapes"
-	    }],
-	    "linkeddata": [{
-	        "id": "apple",
-	        "linkedchart": {
-	            "chart": {
-	                "caption": "Apple Juice - Quarterly Sales",
-	                "subcaption": "Last year",
-	                "numberprefix": "$",
-	                "theme": "fusion",
-	                "rotateValues": "0",
-	                "plottooltext": "$label, $dataValue,  $percentValue"
-	            },
-	            "data": [{
-	                "label": "Q1",
-	                "value": "157000"
+export default class DrillDown extends Component {
+  	constructor(props) {
+    	super(props);
+    	this.apiCaller = null;
+    	this.state = {
+			type: 'column2d',
+			width: '100%',
+			height: '100%',
+			dataFormat: 'json',
+			dataSource: {
+			    "chart": {
+			        "caption": "Sales of top 3 juice flavors last year",
+			        "subcaption": "Click on a column to see details",
+			        "xaxisname": "Flavor",
+			        "yaxisname": "Amount (In USD)",
+			        "numberprefix": "$",
+			        "theme": "fusion",
+			        "rotateValues": "0"
+			    },
+			    "data": [{
+		            "label": "Apple",
+		            "value": "810000",
+		            "link": "newchart-xml-apple"
+		        }, {
+		            "label": "Cranberry",
+		            "value": "620000",
+		            "link": "newchart-xml-cranberry"
+		        }, {
+		            "label": "Grape",
+		            "value": "350000",
+		            "link": "newchart-xml-grape"
+		        }],
+			    "linkeddata": [{
+	                "id": "apple",
+	                "linkedchart": {
+		                "chart": {
+		                    "caption": "Apple Juice - Quarterly Sales",
+		                    "subcaption": "Last year",
+		                    "numberprefix": "$",
+		                    "theme": "fusion",
+		                    "rotateValues": "0",
+		                    "plottooltext": "$label, $dataValue,  $percentValue"
+		                },
+		                "data": [{
+		                    "label": "Q1",
+		                    "value": "157000",
+		                    "displayValue": "Q1, $157K"
+		                }, {
+		                    "label": "Q2",
+		                    "value": "172000",
+		                    "displayValue": "Q2, $172K"
+		                }, {
+		                    "label": "Q3",
+		                    "value": "206000",
+		                    "displayValue": "Q3, $206K"
+		                }, {
+		                    "label": "Q4",
+		                    "value": "275000",
+		                    "displayValue": "Q4, $275K"
+		                }]
+	                }
 	            }, {
-	                "label": "Q2",
-	                "value": "172000"
+	                "id": "cranberry",
+	                "linkedchart": {
+		                "chart": {
+		                    "caption": "Cranberry Juice - Quarterly Sales",
+		                    "subcaption": "Last year",
+		                    "numberprefix": "$",
+		                    "theme": "fusion",
+		                    "plottooltext": "$label, $dataValue,  $percentValue"
+		                },
+		                "data": [{
+		                    "label": "Q1",
+		                    "value": "102000",
+		                    "displayValue": "Q1, $102K"
+		                }, {
+		                    "label": "Q2",
+		                    "value": "142000",
+		                    "displayValue": "Q2, $142K"
+		                }, {
+		                    "label": "Q3",
+		                    "value": "187000",
+		                    "displayValue": "Q3, $187K"
+		                }, {
+		                    "label": "Q4",
+		                    "value": "189000",
+		                    "displayValue": "Q4, $189K"
+		                }]
+	                }
 	            }, {
-	                "label": "Q3",
-	                "value": "206000"
-	            }, {
-	                "label": "Q4",
-	                "value": "275000"
-	            }]
-	        }
-	    }, {
-	        "id": "cranberry",
-	        "linkedchart": {
-	            "chart": {
-	                "caption": "Cranberry Juice - Quarterly Sales",
-	                "subcaption": "Last year",
-	                "numberprefix": "$",
-	                "theme": "fusion",
-	                "plottooltext": "$label, $dataValue,  $percentValue"
-	            },
-	            "data": [{
-	                "label": "Q1",
-	                "value": "102000"
-	            }, {
-	                "label": "Q2",
-	                "value": "142000"
-	            }, {
-	                "label": "Q3",
-	                "value": "187000"
-	            }, {
-	                "label": "Q4",
-	                "value": "189000"
-	            }]
-	        }
-	    }, {
-	        "id": "grapes",
-	        "linkedchart": {
-	            "chart": {
-	                "caption": "Grapes Juice - Quarterly Sales",
-	                "subcaption": "Last year",
-	                "numberprefix": "$",
-	                "theme": "fusion",
-	                "rotateValues": "0",
-	                "plottooltext": "$label, $dataValue,  $percentValue"
-	            },
-	            "data": [{
-	                "label": "Q1",
-	                "value": "45000"
-	            }, {
-	                "label": "Q2",
-	                "value": "72000"
-	            }, {
-	                "label": "Q3",
-	                "value": "95000"
-	            }, {
-	                "label": "Q4",
-	                "value": "108000"
-	            }]
-	        }
-	    }]
-	},
-};
+	                "id": "grape",
+	                "linkedchart": {
+		                "chart": {
+		                    "caption": "Grape Juice - Quarterly Sales",
+		                    "subcaption": "Last year",
+		                    "numberprefix": "$",
+		                    "theme": "fusion",
+		                    "rotateValues": "0",
+		                    "plottooltext": "$label, $dataValue,  $percentValue"
+		                },
+		                "data": [{
+		                    "label": "Q1",
+		                    "value": "45000",
+		                    "displayValue": "Q1, $45K"
+		                }, {
+		                    "label": "Q2",
+		                    "value": "72000",
+		                    "displayValue": "Q2, $72K"
+		                }, {
+		                    "label": "Q3",
+		                    "value": "95000",
+		                    "displayValue": "Q3, $95K"
+		                }, {
+		                    "label": "Q4",
+		                    "value": "108000",
+		                    "displayValue": "Q4, $108K"
+		                }]
+	                }
+			    }]
+			};
+    		this.libraryPath = Platform.select({
+      			// Specify fusioncharts.html file location
+      			android: { uri: 'file:///android_asset/fusioncharts.html' },
+      			ios: require('../assets/fusioncharts.html')
+    		});
+  		}
 
-// Trigerred when chart is rendered.
-// Configures the linked charts.
-const alterChart = (chart) => {
-	chart.configureLink({
-		type: 'pie2d',
-		overlayButton: {
-			message: 'Back',
-			fontColor: '880000',
-			bgColor: 'FFEEEE',
-			borderColor: '660000',
-		},
-	}, 0);
-};
-
-ReactDOM.render(
-  <ReactFC {...chartConfigs} onRender={alterChart} />,
-  document.getElementById('root'),
-);
-
+  		render() {
+    		return (
+      			<View style={styles.container}>
+        		<Text style={styles.header}>A Chart with Drill-Down</Text>
+        		<View style={styles.chartContainer}>
+          		<FusionCharts
+            	type={this.state.type}
+            	width={this.state.width}
+            	height={this.state.height}
+            	dataFormat={this.state.dataFormat}
+            	dataSource={this.state.dataSource}
+            	libraryPath={this.libraryPath} // set the libraryPath property
+            	onInitialized={caller => {
+              		this.apiCaller = caller;
+              		this.apiCaller(`window.chartObj.configureLink({
+                		type: 'pie2d',
+                		overlayButton: {
+                  			message: 'Back',
+                  			fontColor: '880000',
+			                bgColor: 'FFEEEE',
+			                borderColor: '660000',
+                	}}, 0);`);
+            	}}
+          		/>
+        		</View>
+      			</View>
+    		);
+  		}
+	}
+}
 ```
 
 Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/) to edit the above chart.
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `react-native-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
+2. Define the chart configuration in a JSON.In the JSON object:
     * The chart type has been set to `column2d` for the first chart. For Column 2D chart, the alias is `column2d`. Once the data plots in the Column charts are clicked, the rendered chart is a Pie 2D chart (alias name: `pie2d`). Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
 
-3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+3. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
