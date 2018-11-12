@@ -73,7 +73,7 @@ export default class ListenEvents extends Component {
       this.libraryPath = Platform.select({
         // Specify fusioncharts.html file location
         android: { uri: 'file:///android_asset/fusioncharts.html' },
-        ios: require('../assets/fusioncharts.html')
+        ios: require('./assets/fusioncharts.html')
       });
     }
 
@@ -97,6 +97,23 @@ export default class ListenEvents extends Component {
     }
   }
 }
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10
+    },
+    header: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        textAlign: 'center',
+        paddingBottom: 10
+    },
+    chartContainer: {
+        height: 400,
+        borderColor: '#000',
+        borderWidth: 1
+    }
+});
 ```
 
 The above chart is rendered using the following steps:
