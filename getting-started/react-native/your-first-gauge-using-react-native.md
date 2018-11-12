@@ -320,6 +320,8 @@ To render the chart, follow the steps below:
 
 4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
+5. Add `style` to the container of the chart.
+
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
 Copy the following code to `app.js` file.

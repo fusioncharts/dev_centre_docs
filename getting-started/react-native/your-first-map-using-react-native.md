@@ -347,39 +347,36 @@ To render the map follow the steps below:
 
 4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
+5. Add `style` to the container of the chart.
+
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
 Copy the following code to `app.js` file.
 
 ```
-// Including react
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-
-// Including the react-native-fusioncharts component
-import FusionCharts from "react-native-fusioncharts";
+import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
+import FusionCharts from 'react-native-fusioncharts';
 
 export default class DrillDown extends Component {
     constructor(props) {
         super(props);
         this.apiCaller = null;
-
         this.state = {
             type: 'world',
-            renderAt: 'chart-container',
             width: '800',
             height: '550',
             dataFormat: 'json',
             dataSource: {
-                // Map Configuration
+            // Map Configuration
                 "chart": {
-                    "caption": "Average Annual Population Growth",
-                    "subcaption": " 1955-2015",
-                    "numbersuffix": "%",
-                    "includevalueinlabels": "1",
-                    "labelsepchar": ": ",
-                    "entityFillHoverColor": "#FFF9C4",
-                    "theme": "fusion"
+                        "caption": "Average Annual Population Growth",
+                        "subcaption": " 1955-2015",
+                        "numbersuffix": "%",
+                        "includevalueinlabels": "1",
+                        "labelsepchar": ": ",
+                        "entityFillHoverColor": "#FFF9C4",
+                        "theme": "fusion"
                 },
                 // Aesthetics; ranges synced with the slider
                 "colorrange": {
@@ -400,7 +397,7 @@ export default class DrillDown extends Component {
                         "color": "#E65100"
                     }]
                 },
-                // Source data as JSON --&gt; id represents countries of world.
+                // Source data as JSON --> id represents countries of world.
                 "data": [{
                     "id": "NA",
                     "value": ".82",
@@ -426,33 +423,51 @@ export default class DrillDown extends Component {
                     "value": "1.30",
                     "showLabel": "1"
                 }]
-            };
-            this.libraryPath = Platform.select({
-                // Specify fusioncharts.html file location
-                android: { uri: "file:///android_asset/fusioncharts.html" },
-                ios: require("../assets/fusioncharts.html")
-            });
-        }
+            }
+        };
+        this.libraryPath = Platform.select({
+            // Specify fusioncharts.html file location
+            android: { uri: 'file:///android_asset/fusioncharts.html' },
+            ios: require('./assets/fusioncharts.html')
+        });
+    }
 
-        render() {
-            return (
+    render() {
+        return (
             <View style={styles.container}>
-            <Text style={styles.header}>A Column 2D Chart</Text>
-            <View style={styles.chartContainer}>
+                <Text style={styles.header}>A Simple Gauge</Text>
+                <View style={styles.chartContainer}>
                 <FusionCharts
                 type={this.state.type}
                 width={this.state.width}
                 height={this.state.height}
                 dataFormat={this.state.dataFormat}
                 dataSource={this.state.dataSource}
-                libraryPath={this.libraryPath} // set the libraryPath property
+                libraryPath={this.libraryPath}
                 />
+                </View>
             </View>
-            </View>
-            );
-        }
+        );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10
+    },
+    header: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        textAlign: 'center',
+        paddingBottom: 10
+    },
+    chartContainer: {
+        height: 400,
+        borderColor: '#000',
+        borderWidth: 1
+    }
+});
 ```
 
 That's it! Your first map using `react-native-fusioncharts` is ready.
@@ -474,21 +489,16 @@ $ npm install fusionmaps
 After installing `fusionmaps` package, the code to render the map of **California** is:
 
 ```
-// Including react
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
-
-// Including the react-native-fusioncharts component
-import FusionCharts from "react-native-fusioncharts";
+import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
+import FusionCharts from 'react-native-fusioncharts';
 
 export default class DrillDown extends Component {
     constructor(props) {
         super(props);
         this.apiCaller = null;
-
         this.state = {
             type: 'maps/california',
-            renderAt: 'chart-container',
             width: '800',
             height: '550',
             dataFormat: 'json',
@@ -518,43 +528,51 @@ export default class DrillDown extends Component {
                     "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
                 },
                 "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
-            };
-            this.libraryPath = Platform.select({
-                // Specify fusioncharts.html file location
-                android: { uri: "file:///android_asset/fusioncharts.html" },
-                ios: require("../assets/fusioncharts.html")
-            });
-        }
+            }
+        };
+        this.libraryPath = Platform.select({
+            // Specify fusioncharts.html file location
+            android: { uri: 'file:///android_asset/fusioncharts.html' },
+            ios: require('./assets/fusioncharts.html')
+        });
+    }
 
-        render() {
-            return (
+    render() {
+        return (
             <View style={styles.container}>
-            <Text style={styles.header}>A Column 2D Chart</Text>
-            <View style={styles.chartContainer}>
+                <Text style={styles.header}>A Simple Gauge</Text>
+                <View style={styles.chartContainer}>
                 <FusionCharts
                 type={this.state.type}
                 width={this.state.width}
                 height={this.state.height}
                 dataFormat={this.state.dataFormat}
                 dataSource={this.state.dataSource}
-                libraryPath={this.libraryPath} // set the libraryPath property
+                libraryPath={this.libraryPath}
                 />
+                </View>
             </View>
-            </View>
-            );
-        }
+        );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10
+    },
+    header: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        textAlign: 'center',
+        paddingBottom: 10
+    },
+    chartContainer: {
+        height: 400,
+        borderColor: '#000',
+        borderWidth: 1
+    }
+});
 ```
 
 That's it! The **California** map is ready. 
-
-## Problem rendering the chart?
-
-In case there is an error, and you are unable to see the chart, check for the following:
-
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
-
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
-
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
