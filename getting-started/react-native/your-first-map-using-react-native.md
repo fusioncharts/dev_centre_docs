@@ -151,7 +151,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 ......
 libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
         </code></pre>
-        <li>Add the following script in Application's `package.json` file to bundle your assets when you want to genarate a signed APK.</li>
+        <li>Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.</li>
         <pre><code class="custom-hlc language-javascript">
 "scripts": {
     ......
