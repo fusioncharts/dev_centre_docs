@@ -79,7 +79,7 @@ export default class ThemeMenu extends Component {
             this.libraryPath = Platform.select({
                 // Specify fusioncharts.html file location
                 android: { uri: 'file:///android_asset/fusioncharts.html' },
-                ios: require('../assets/fusioncharts.html')
+                ios: require('./assets/fusioncharts.html')
             });
         }
 
@@ -118,6 +118,34 @@ export default class ThemeMenu extends Component {
         }
     }
 }
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10
+    },
+    header: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        textAlign: 'center',
+        paddingBottom: 10
+    },
+    chartContainer: {
+        height: 400,
+        borderColor: '#000',
+        borderWidth: 1
+    },
+    buttonContainer: {
+        flexDirection: 'row',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        padding: 10,
+        marginTop: 10
+    },
+    instruction: {
+        fontSize: 15
+    }
+});
 ```
 
 The above chart has been rendered using the following steps:
