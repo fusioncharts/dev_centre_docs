@@ -24,119 +24,148 @@ import { Platform, StyleSheet, Text, View, Button, Alert } from 'react-native';
 import FusionCharts from 'react-native-fusioncharts';
 
 export default class ChartRunTime extends Component {
-  constructor(props) {
-    super(props);
-    this.apiCaller = null;
-    this.state = {
-      type: 'column2d',
-      width: '700',
-      height: '400',
-      dataFormat: 'json',
-      chartType: '',
-      dataSource: {
-        type: "column2d", // The chart type
-        width: "700", // Width of the chart
-        height: "400", // Height of the chart
-        dataFormat: "json", // Data type
-        dataSource: { 
-          // Chart Configuration 
-          "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-          },
-          // Chart Data
-          "data": [{
-            "label": "Venezuela",
-            "value": "290"
-          }, {
-            "label": "Saudi",
-            "value": "260"
-          }, {
-            "label": "Canada",
-            "value": "180"
-          }, {
-            "label": "Iran",
-            "value": "140"
-          }, {
-            "label": "Russia",
-            "value": "115"
-          }, {
-            "label": "UAE",
-            "value": "100"
-          }, {
-            "label": "US",
-            "value": "30"
-          }, {
-            "label": "China",
-            "value": "30"
-          }]
+    constructor(props) {
+        super(props);
+        this.apiCaller = null;
+        this.state = {
+            type: 'column2d',
+            width: '700',
+            height: '400',
+            dataFormat: 'json',
+            chartType: '',
+            dataSource: {
+                type: "column2d", // The chart types
+                width: "700", // Width of the chart
+                height: "400", // Height of the chart
+                dataFormat: "json", // Data type
+                dataSource: { 
+                    // Chart Configuration 
+                    "chart": {
+                        "caption": "Countries With Most Oil Reserves [2017-18]",
+                        "subCaption": "In MMbbl = One Million barrels",
+                        "xAxisName": "Country",
+                        "yAxisName": "Reserves (MMbbl)",
+                        "numberSuffix": "K",
+                        "theme": "fusion",
+                    },
+                    // Chart Data
+                    "data": [{
+                        "label": "Venezuela",
+                        "value": "290"
+                    }, {
+                        "label": "Saudi",
+                        "value": "260"
+                    }, {
+                        "label": "Canada",
+                        "value": "180"
+                    }, {
+                        "label": "Iran",
+                        "value": "140"
+                    }, {
+                        "label": "Russia",
+                        "value": "115"
+                    }, {
+                        "label": "UAE",
+                        "value": "100"
+                    }, {
+                        "label": "US",
+                        "value": "30"
+                    }, {
+                        "label": "China",
+                        "value": "30"
+                    }]
+                }
+            };
+            this.libraryPath = Platform.select({
+                // Specify fusioncharts.html file location
+                android: { uri: 'file:///android_asset/fusioncharts.html' },
+                ios: require('./assets/fusioncharts.html')
+            });
         }
-      };
-      this.libraryPath = Platform.select({
-        // Specify fusioncharts.html file location
-        android: { uri: 'file:///android_asset/fusioncharts.html' },
-        ios: require('../assets/fusioncharts.html')
-      });
-    }
 
-    changeType(type) {
-      this.setState({ chartType: type }, () => {
-        this.apiCaller(`window.chartObj.chartType('${type}')`);
-      });
-    }
+        changeType(type) {
+            this.setState({ chartType: type }, () => {
+                this.apiCaller(`window.chartObj.chartType('${type}')`);
+            });
+        }
 
-    render() {
-      return (
-        <View style={styles.container}>
-        <Text style={styles.header}>Change chart type at runtime</Text>
-        <View style={styles.chartContainer}>
-          <FusionCharts
-            type={this.state.type}
-            width={this.state.width}
-            height={this.state.height}
-            dataFormat={this.state.dataFormat}
-            dataSource={this.state.dataSource}
-            libraryPath={this.libraryPath} // set the libraryPath property
-            onInitialized={caller => {
-              this.apiCaller = caller;
-              if (this.state.chartType === '')
-                this.setState({ chartType: this.state.type });
-            }}
-          />
-        </View>
-        <Text style={styles.info}>Press button to change chart type</Text>
-        <View style={styles.buttonContainer}>
-          <Button
-            disabled={
-              this.state.chartType === '' || this.state.chartType == 'column2d'
-            }
-            style={{ margin: 8 }}
-            title="Column2D"
-            onPress={() => this.changeType('column2d')}
-          />
-          <Button
-            disabled={
-              this.state.chartType === '' || this.state.chartType == 'pie2d'
-            }
-            title="Pie2D"
-            onPress={() => this.changeType('pie2d')}
-          />
-          <Button
-            disabled={
-              this.state.chartType === '' || this.state.chartType == 'bar2d'
-            }
-            title="Bar2D"
-            onPress={() => this.changeType('bar2d')}
-          />
-        </View>
-      </View>
-    );
-  }
+        render() {
+          return (
+            <View style={styles.container}>
+            <Text style={styles.header}>Change chart type at runtime</Text>
+            <View style={styles.chartContainer}>
+              <FusionCharts
+                type={this.state.type}
+                width={this.state.width}
+                height={this.state.height}
+                dataFormat={this.state.dataFormat}
+                dataSource={this.state.dataSource}
+                libraryPath={this.libraryPath} // set the libraryPath property
+                onInitialized={caller => {
+                  this.apiCaller = caller;
+                  if (this.state.chartType === '')
+                    this.setState({ chartType: this.state.type });
+                }}
+              />
+            </View>
+            <Text style={styles.info}>Press button to change chart type</Text>
+            <View style={styles.buttonContainer}>
+              <Button
+                disabled={
+                  this.state.chartType === '' || this.state.chartType == 'column2d'
+                }
+                style={{ margin: 8 }}
+                title="Column2D"
+                onPress={() => this.changeType('column2d')}
+              />
+              <Button
+                disabled={
+                  this.state.chartType === '' || this.state.chartType == 'pie2d'
+                }
+                title="Pie2D"
+                onPress={() => this.changeType('pie2d')}
+              />
+              <Button
+                disabled={
+                  this.state.chartType === '' || this.state.chartType == 'bar2d'
+                }
+                title="Bar2D"
+                onPress={() => this.changeType('bar2d')}
+              />
+            </View>
+          </View>
+        );
+    }
 }
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10
+    },
+    header: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        textAlign: 'center',
+        paddingBottom: 10
+    },
+    chartContainer: {
+        height: 400,
+        borderColor: '#000',
+        borderWidth: 1
+    },
+    buttonContainer: {
+        padding: 10,
+        display: 'flex',
+        justifyContent: 'space-around',
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    info: {
+        fontSize: 16,
+        textAlign: 'center',
+        marginTop: 5
+    }
+});
 ```
 
 The above chart has been rendered using the following steps:
