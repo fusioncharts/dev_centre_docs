@@ -73,7 +73,7 @@ export default class ListenEvents extends Component {
       this.libraryPath = Platform.select({
         // Specify fusioncharts.html file location
         android: { uri: 'file:///android_asset/fusioncharts.html' },
-        ios: require('../assets/fusioncharts.html')
+        ios: require('./assets/fusioncharts.html')
       });
     }
 
@@ -97,6 +97,23 @@ export default class ListenEvents extends Component {
     }
   }
 }
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10
+    },
+    header: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        textAlign: 'center',
+        paddingBottom: 10
+    },
+    chartContainer: {
+        height: 400,
+        borderColor: '#000',
+        borderWidth: 1
+    }
+});
 ```
 
 The above chart is rendered using the following steps:
@@ -112,6 +129,8 @@ The above chart is rendered using the following steps:
 3. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
 4. Add the `render()` function to call the events which will be triggered when the mouse pointer is rolled over a data plot.
+
+5. Add `style` to the container of the chart.
 
 The HTML template(`fusioncharts.html`) of the above sample is:
 

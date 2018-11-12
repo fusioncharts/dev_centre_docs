@@ -159,7 +159,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 ......
 libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
         </code></pre>
-        <li>Add the following script in Application's `package.json` file to bundle your assets when you want to genarate a signed APK.</li>
+        <li>Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.</li>
         <pre><code class="custom-hlc language-javascript">
 "scripts": {
     ......
@@ -328,16 +328,15 @@ To render the chart, follow the steps below:
 
 4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
+5. Add `style` to the container of the chart.
+
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
 Copy the following code to `app.js` file.
 
 ```
-// Including react
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
-
-// Including the react-native-fusioncharts component
 import FusionCharts from "react-native-fusioncharts";
 
 export default class PlainColumn2D extends Component {
@@ -345,21 +344,19 @@ export default class PlainColumn2D extends Component {
         super(props);
 
         this.state = {
-            type: "column2d", // The chart type
-            width: "700", // Width of the chart
-            height: "400", // Height of the chart
-            dataFormat: "json", // Data type
-            dataSource: { 
-                // Chart Configuration 
+            type: "column2d",
+            width: "700",
+            height: "400",
+            dataFormat: "json",
+            dataSource: {
                 "chart": {
                     "caption": "Countries With Most Oil Reserves [2017-18]",
                     "subCaption": "In MMbbl = One Million barrels",
                     "xAxisName": "Country",
                     "yAxisName": "Reserves (MMbbl)",
                     "numberSuffix": "K",
-                    "theme": "fusion",
+                    "theme": "fusion"
                 },
-                // Chart Data
                 "data": [{
                     "label": "Venezuela",
                     "value": "290"
@@ -385,19 +382,22 @@ export default class PlainColumn2D extends Component {
                     "label": "China",
                     "value": "30"
                 }]
-            };
-            this.libraryPath = Platform.select({
-                // Specify fusioncharts.html file location
-                android: { uri: "file:///android_asset/fusioncharts.html" },
-                ios: require("../assets/fusioncharts.html")
-            });
-        }
+            }
+        };
+        this.libraryPath = Platform.select({
+            // Specify fusioncharts.html file location
+            android: {
+                uri: "file:///android_asset/fusioncharts.html"
+            },
+            ios: require("./assets/fusioncharts.html")
+        });
+    }
 
-        render() {
-            return (
+    render() {
+        return (
             <View style={styles.container}>
-            <Text style={styles.header}>A Column 2D Chart</Text>
-            <View style={styles.chartContainer}>
+                <Text style={styles.header}>A Column 2D Chart</Text>
+                <View style={styles.chartContainer}>
                 <FusionCharts
                 type={this.state.type}
                 width={this.state.width}
@@ -406,22 +406,29 @@ export default class PlainColumn2D extends Component {
                 dataSource={this.state.dataSource}
                 libraryPath={this.libraryPath} // set the libraryPath property
                 />
+                </View>
             </View>
-            </View>
-            );
-        }
+        );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10
+    },
+    header: {
+        fontWeight: "bold",
+        fontSize: 20,
+        textAlign: "center",
+        paddingBottom: 10
+    },
+    chartContainer: {
+        height: 400,
+        borderColor: "#000",
+        borderWidth: 1
+    }
+});
 ```
 
 That's it! Your first chart using `react-native-fusioncharts` is ready.
-
-## Problem rendering the chart?
-
-In case there is an error, and you are unable to see the chart, check for the following:
-
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
-
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
-
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
