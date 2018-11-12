@@ -72,12 +72,6 @@
                 "name": "labelStep"
             },
             {
-                "description": "Sets the configuration whether data values will be displayed along with the data plot on chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showValues"
-            },
-            {
                 "description": "If you've opted to show data values, you can rotate them using this attribute.",
                 "range": "0/1",
                 "type": "Boolean",
@@ -3197,12 +3191,6 @@
                 "range": "0 - 100 or Comma Separated List",
                 "type": "String",
                 "name": "alpha"
-            },
-            {
-                "description": "Whether to show the values for this dataset.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showValues"
             },
             {
                 "description": "Whether to include the seriesName of this dataset in legend.",

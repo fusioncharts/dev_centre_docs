@@ -79,7 +79,7 @@ export default class ThemeMenu extends Component {
             this.libraryPath = Platform.select({
                 // Specify fusioncharts.html file location
                 android: { uri: 'file:///android_asset/fusioncharts.html' },
-                ios: require('../assets/fusioncharts.html')
+                ios: require('./assets/fusioncharts.html')
             });
         }
 
@@ -118,6 +118,34 @@ export default class ThemeMenu extends Component {
         }
     }
 }
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10
+    },
+    header: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        textAlign: 'center',
+        paddingBottom: 10
+    },
+    chartContainer: {
+        height: 400,
+        borderColor: '#000',
+        borderWidth: 1
+    },
+    buttonContainer: {
+        flexDirection: 'row',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        padding: 10,
+        marginTop: 10
+    },
+    instruction: {
+        fontSize: 15
+    }
+});
 ```
 
 The above chart has been rendered using the following steps:
@@ -137,6 +165,8 @@ The above chart has been rendered using the following steps:
 4. Create a function to apply different themes to the chart at runtime.
 
 5. Add the `render()` function to create the **radio buttons**.
+
+6. Add `style` to the container of the chart.
 
 The HTML template(`fusioncharts.html`) of the above sample is:
 

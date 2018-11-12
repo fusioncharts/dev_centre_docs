@@ -250,7 +250,7 @@ Create the chart container and set the following:
 
 ```
 
-That's it! Your first chart using `react-fusioncharts` is ready.
+That's it! Your first chart using `angular-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 
