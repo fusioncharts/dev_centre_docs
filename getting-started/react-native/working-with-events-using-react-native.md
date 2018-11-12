@@ -113,6 +113,8 @@ The above chart is rendered using the following steps:
 
 4. Add the `render()` function to call the events which will be triggered when the mouse pointer is rolled over a data plot.
 
+5. Add `style` to the container of the chart.
+
 The HTML template(`fusioncharts.html`) of the above sample is:
 
 <div class="code-wrapper">

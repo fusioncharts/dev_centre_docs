@@ -138,6 +138,8 @@ The above chart has been rendered using the following steps:
 
 5. Add the `render()` function to create the **radio buttons**.
 
+6. Add `style` to the container of the chart.
+
 The HTML template(`fusioncharts.html`) of the above sample is:
 
 <div class="code-wrapper">
