@@ -237,7 +237,7 @@ Create the container to render the gauge and set the following:
 </fusioncharts> 
 ```
 
-That's it! Your first gauge using `react-fusioncharts` is ready.
+That's it! Your first gauge using `angular-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 
