@@ -18,7 +18,7 @@
                 "legendbordercolor": "ffffff",
                 "legendallowdrag": "0",
                 "legendshadow": "0",
-                "caption": "Website Visits for the month of Jan 2014",
+                "caption": "Website Visits for the month of March 2018",
                 "connectorcolor": "000000",
                 "fillalpha": "80",
                 "hovercolor": "CCCCCC",
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"KP.BA","value":3287},{"id":"KP.BO","value":2797},{"id":"KP.HY","value":735},{"id":"KP.KA","value":4242},{"id":"KP.KG","value":1219},{"id":"KP.KH","value":2993},{"id":"KP.KS","value":3010},{"id":"KP.PG","value":3255},{"id":"KP.SA","value":2573},{"id":"KP.SM","value":2749},{"id":"KP.TA","value":1003},{"id":"KP.UN","value":3912}]
+            "data": [{"id":"KP.BA","value":888},{"id":"KP.BO","value":3538},{"id":"KP.HY","value":584},{"id":"KP.KA","value":1936},{"id":"KP.KG","value":2751},{"id":"KP.KH","value":995},{"id":"KP.KS","value":3940},{"id":"KP.PG","value":4076},{"id":"KP.SA","value":2161},{"id":"KP.SM","value":1224},{"id":"KP.TA","value":788},{"id":"KP.UN","value":2538}]
         }
     }

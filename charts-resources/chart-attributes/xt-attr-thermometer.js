@@ -9,13 +9,10 @@
         "chart": {
             "caption": "Central cold storage",
             "subcaption": "Bakersfield Central",
-            "subcaptionFontBold": "0",
             "lowerLimit": "-20",
             "upperLimit": "20",
             "numberSuffix": "°C",
-            "bgColor": "#ffffff",
-            "showBorder": "0",
-            "thmFillColor": "#008ee4"
+            "theme": "fusion"
         },
         "value": "-10"
     },

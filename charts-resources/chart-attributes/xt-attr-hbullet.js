@@ -12,14 +12,11 @@
             "subcaption": "Actual vs Target<br>Bakersfield Central",
             "numberPrefix": "$",
             "numberSuffix": "K",
-            "plotFillColor": "#0075c2",
             "targetColor": "#8e0000",
             "showHoverEffect": "1",
-            "showBorder": "0",
-            "bgColor": "#ffffff",
-            "showShadow": "0",
             "colorRangeFillMix": "{light+0}",
-            "valuePadding": "7"
+            "valuePadding": "7",
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

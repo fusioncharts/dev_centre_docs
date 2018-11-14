@@ -1,32 +1,47 @@
 ---
-permalink: exporting-charts/using-fusionexport/installation/install-fusionexport-cli.html
 title: Install FusionExport CLI | FusionCharts
 description: This article focuses on how you can install the FusionExport CLI.
 heading: Install FusionExport CLI
-chartPresent: False
 ---
 
-The FusionExport Command Line Interface (CLI) is a tool for creating and managing the FusionExport export system from the command line/shell of various operating systems.
-
-It is an open source tool that is built using node.js. It works with the FusionExport Desktop application (local export) as well as with FusionExport Web Service (remote export) with simple CLI options.
+The FusionExport Command Line Interface (CLI) is a tool for directly communicating with the [FusionExport Server]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server) from the command line/shell of various operating systems. While this tool enhances **interactivity**, it is primarily suitable for **ad-hoc** work. We suggest using the [FusionExport Server SDKs]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks) for automating chart exports.
 
 ## Prerequisites
 
-To enable the FusionExport CLI, please ensure that the following components are installed on your system:
+To enable the FusionExport CLI, please ensure that the following components are installed:
 
-* __Node.js__ (version >= 8.0.0) 
+* `Node.js` (version >= 8.0.0)
 
-* __NPM__ (version >= 5.0.0) 
+* `NPM` (version >= 5.0.0) 
 
-You can download these from [here](https://nodejs.org/en/download/).
+Download the components from [here](https://nodejs.org/en/download/).
 
-## Installing the FusionExport CLI
+## Install FusionExport CLI
 
-### Steps
+1. Depending on the operating system, open either terminal (for Mac/Linux) or command prompt (Windows).
 
-* If you are using MAC OS or Linux, open the terminal. If you are using a Windows system, open the command prompt.
+2. Run the following command to install the FusionExport CLI:
 
-* Run the following command to install the FusionExport CLI: 
-```javascript
-npm i -g fusionexport-cli
+```Bash
+$ npm i -g fusionexport-cli
 ```
+
+We recommend global installation to facilitate using the tool from any directory on your system.
+
+3. Verify whether FusionExport CLI has been properly installed or not:
+
+```Bash
+$ fusionexport --help
+```
+
+> Before using FusionExport CLI, ensure that [FusionExport Server]({% site.baseurl %}/dev/exporting-charts/using-fusionexport/installation/install-fusionexport-server) is running.
+
+## Next Steps
+
+You can start exploring the tutorials on how to export charts:
+
+* [Export Chart as Image]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
+
+* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+
+* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

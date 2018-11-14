@@ -12,15 +12,15 @@ The export is done using a server-side helper library that converts the SVG to t
 
 When charts are exported on the client side, the entire exporting process is carried out using the user’s browser. The chart’s SVG is converted into the selected export format and download using the HTML5 `download` attribute.
 
-<p class="text-info"> You must have an active internet connection for this feature to work. </p>
+>  You must have an active internet connection for this feature to work. </p>
 
-To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The ![image](/assets/images/exporting-as-image-and-pdf-export-button.jpg) menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
+To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
 
-![image](/assets/images/exporting-as-image-and-pdf-export-menu.jpg)
+![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-menu.jpg)
 
 From the menu rendered, select the required format; the chart is downloaded to your machine in the selected format.
 
-A column 2D chart with export enabled is shown below. Click the ![image](/assets/images/exporting-as-image-and-pdf-export-button.jpg) menu button and select a format to export the chart.
+A column 2D chart with export enabled is shown below. Click the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select a format to export the chart.
 
 {% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
@@ -36,8 +36,8 @@ By default, charts are exported using the auto export feature.
 
 The `exportMode` attribute is used to switch betwen the modes of export.
 
-<p class="text-info"> Starting v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute. </p>
+>  Starting v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute. </p>
 
 The subsequent articles in this section cover the features of each export mode and the `exportMode` attribute in detail.
 
-<p class="text-info"> To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide. </p>
+>  To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide. </p>

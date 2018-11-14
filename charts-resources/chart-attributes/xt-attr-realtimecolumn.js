@@ -11,46 +11,12 @@
             "showrealtimevalue": "1",
             "yaxismaxvalue": "10",
             "numdisplaysets": "10",
-
             "labeldisplay": "rotate",
             "slantLabels": "1",
             "showLegend": "0",
-            "showValues": "0",
             "numbersuffix": " Transactions",
-            "showlabels": "1",
             "showRealTimeValue": "0",
-
-            //Cosmetics
-            "paletteColors": "#0075c2,#1aaf5d",
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
-            "showBorder": "0",
-            "bgColor": "#ffffff",
-            "showShadow": "0",
-            "canvasBgColor": "#ffffff",
-            "canvasBorderAlpha": "0",
-            "divlineAlpha": "100",
-            "divlineColor": "#999999",
-            "divlineThickness": "1",
-            "divLineDashed": "1",
-            "divLineDashLen": "1",
-            "usePlotGradientColor": "0",
-            "showplotborder": "0",
-            "valueFontColor": "#ffffff",
-            "placeValuesInside": "1",
-            "rotateValues": "1",
-            "showXAxisLine": "1",
-            "xAxisLineThickness": "1",
-            "xAxisLineColor": "#999999",
-            "showAlternateHGridColor": "0",
-            "legendBgAlpha": "0",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "legendItemFontSize": "10",
-            "legendItemFontColor": "#666666"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{
@@ -87,7 +53,7 @@
                     transactions = Math.round(Math.random() * 4) + 1,
                     strData = "&label=" + label + "&value=" + transactions;
                 //Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
             }
             //Interval
             evt.sender.interval = setInterval(function() {

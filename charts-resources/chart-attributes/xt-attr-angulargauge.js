@@ -1,6 +1,5 @@
 {
     type: 'angulargauge',
-    id: "myGauge",
     renderAt: 'chart-container',
     width: '100%',
     height: '100%',
@@ -8,13 +7,9 @@
     dataSource: {
         "chart": {
             "caption": "Speedometer",
-            "captionFont": "Arial",
-            "captionFontColor": "#333333",
-            "manageresize": "1",
             "origw": "320",
             "origh": "320",
             "tickvaluedistance": "-10",
-            "bgcolor": "#FFFFFF",
             "upperlimit": "240",
             "lowerlimit": "0",
             "basefontcolor": "#FFFFFF",
@@ -42,7 +37,7 @@
             "annrenderdelay": "0",
             "gaugeoriginx": "160",
             "gaugeoriginy": "160",
-            "showborder": "0"
+            "theme": "fusion"
         },
         "dials": {
             "dial": [{
@@ -124,7 +119,7 @@
                 if (speedScore && diff) {
                     speedScore += scoreArray[flag];
                     flag += 1;
-                    FusionCharts.items["myGauge"].feedData("value=" + speedScore);
+					evtObj.sender.feedData && evtObj.sender.feedData("value=" + speedScore);
 
                 }
             }, 2000);

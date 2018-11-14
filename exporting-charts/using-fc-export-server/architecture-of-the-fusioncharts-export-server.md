@@ -1,12 +1,11 @@
 ---
-permalink: exporting-charts/using-fc-export-server/architecture-of-the-fusioncharts-export-server.html
 title: Architecture of the FusionCharts Export Server | FusionCharts
 description: FusionCharts Suite XT lets you export your charts and chart data by using one from its three modes of export- server-side export, client-side export and auto export.
 heading: Architecture of the FusionCharts Export Server
 chartPresent: False
 ---
 
-So far, you’ve been introduced to the FusionCharts chart export feature (to export charts as [images and PDF](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf).
+So far, you’ve been introduced to the FusionCharts chart export feature (to export charts as [images and PDF]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf).
 
 This article will give you an insight into the overall architecture of the FusionCharts Export Server, details and workflow of the individual modules in the architecture, and how they can be decoupled.
 
@@ -47,11 +46,11 @@ The server module:
 
 #### Workflow of the Converter Module
 
-<img src="/assets/images/workflow-of-the-converter-module.jpg" width="auto" height="400" alt="Workflow of the Converter Module">
+<img src="{% site.baseurl %}/images/workflow-of-the-converter-module.jpg" width="auto" height="400" alt="Workflow of the Converter Module">
 
 #### Workflow of the Server Module
 
-<img src="/assets/images/workflow-of-the-server-module.jpg" width="400" height="auto" alt="Workflow of the Server Module">
+<img src="{% site.baseurl %}/images/workflow-of-the-server-module.jpg" width="400" height="auto" alt="Workflow of the Server Module">
 
 ## Decoupling of the Converter Module and the Logging Module
 

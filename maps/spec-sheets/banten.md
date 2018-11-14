@@ -1,0 +1,25 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/bangkabelitungislands
+
+Map Name: Bangka Belitung Islands
+Dimensions (Width x Height): 270x410
+
+
+
+{% embed_spec_map bangkabelitungislands-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+ID.BT.CL|CL|Cilegon (city)
+ID.BT.SR|SR|Serang (city)
+ID.BT.LE|LE|Lebak Regency
+ID.BT.PA|PA|Pandeglang Regency
+ID.BT.SK|SK|Serang Regency
+ID.BT.TG|TG|South Tangerang (city)
+ID.BT.TM|TM|Tangerang (city)
+ID.BT.TS|TS|Tangerang Regency

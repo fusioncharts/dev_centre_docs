@@ -12,21 +12,7 @@
             "yAxisName": "Life Span",
             "numberSuffix": " Years",
             "halfErrorBar": "0",
-            "paletteColors": "#0075c2,#1aaf5d,#f2c500",
-            "showValues": "0",
-            "errorBarColor": "666666",
-            "bgColor": "#ffffff",
-            "showBorder": "0",
-            "showCanvasBorder": "0",
-            "usePlotGradientColor": "0",
-            "showXAxisLine": "1",
-            "axisLineAlpha": "25",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "legendBgAlpha": "0",
-            "showShadow": "0",
-            "showAlternateHgridColor": "0",
-            "showHoverEffect": "1"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

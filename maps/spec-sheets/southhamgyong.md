@@ -4,8 +4,8 @@
 
 #### JavaScript Alias: maps/southhamgyong
 
-Map Name: Southhamgyong
-Dimensions (Width x Height): 520x512
+Map Name: South Hamgyong
+Dimensions (Width x Height): 610x570
 
 
 
@@ -18,8 +18,8 @@ ID | Short label | Label
 KP.BU|BU|Bujon
 KP.DA|DA|Danchon
 KP.DO|DO|Doksong
-KP.HM|HM|Hamhung
 KP.HA|HA|Hamju
+KP.HM|HM|Hamhung
 KP.HO|HO|Hochon
 KP.HW|HW|Hongwon
 KP.JA|JA|Jangjin
@@ -35,4 +35,3 @@ KP.SP|SP|Sinpo
 KP.SU|SU|Sudong
 KP.YK|YK|Yodok
 KP.YG|YG|Yonggwan
-

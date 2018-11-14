@@ -10,24 +10,9 @@
             "subcaption": "Harry's SuperMart",
             "xaxisname": "Quarter",
             "yaxisname": "Sales (In USD)",
-            "paletteColors": "#0075c2,#45AFF5,#2C8A56,#1aaf5d,#50DE90",
             "numberPrefix": "$",
             "numbersuffix": "M",
-            "bgColor": "#ffffff",
-            "borderAlpha": "20",
-            "showCanvasBorder": "0",
-            "usePlotGradientColor": "0",
-            "plotBorderAlpha": "10",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "valueFontColor": "#ffffff",
-            "showXAxisLine": "1",
-            "xAxisLineColor": "#999999",
-            "divlineColor": "#999999",
-            "divLineDashed": "1",
-            "showAlternateHGridColor": "0",
-            "subcaptionFontBold": "0",
-            "subcaptionFontSize": "14"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

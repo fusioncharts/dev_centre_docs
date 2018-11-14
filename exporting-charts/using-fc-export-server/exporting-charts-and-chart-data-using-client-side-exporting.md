@@ -21,11 +21,11 @@ The primary need for coming up with the client-side export feature  was to elimi
 
 To enable the client-side export feature for your application, all you need to do is set the `exportEnabled` and the `exportAtClientSide` (since v3.8.0) attributes to __1__ and you are good to go.
 
-<p class="text-info">
+> 
 Please note that, at present, this feature is supported only by the __Chrome__,  __Firefox__, and __IE >= 10__ browsers. The FusionCharts team is working to include support for other browsers also.
 </p>
 
-The sample chart below showcases the client-side export feature. As with server-side export, click ![image](/assets/images/exporting-as-image-and-pdf-export-button.jpg) from the top-right corner of the chart and select __Export as JPG__.
+The sample chart below showcases the client-side export feature. As with server-side export, click <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> from the top-right corner of the chart and select __Export as JPG__.
 
 {% embed_all getting-started-adding-interactivity-exporting-to-images-or-pdf-example-1.js %}
 
@@ -37,15 +37,15 @@ How do you know if the export was done on the client-side? The images below show
 		<th style="width: 90%"> <center> Network tab in the browser console: Server-side export </center> </th>		
 	</tr>
 	<tr>
-		<td style="width: 90"> ![image alt text Network tab: Client-side export](/assets/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg){: .center-align .table-img} </td>
-		<td style="width: 90%"> ![image alt text Network tab: Server-side export](/assets/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg){: .center-align .table-img} </td>
+		<td style="width: 90"> <span> ![image alt text Network tab: Client-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg) </span> {: .center-align .table-img} </td>
+		<td style="width: 90%"> <span>![image alt text Network tab: Server-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg) </span> {: .center-align .table-img} </td>
 	</tr>
 </table>
 
 The graphic below details the steps that are involved in a client-side export:
 
 {:refdef: style="margin-left: auto; margin-right: auto; width: 6em"}
-![image alt text](/assets/images/exporting-to-images-or-pdf-client-side-exporting-steps.png)
+![image alt text]({% site.baseurl %}/images/exporting-to-images-or-pdf-client-side-exporting-steps.png)
 {: refdef}
 
 This feature uses the HTML5 API; therefore, it is important that modern browsers include support for:
@@ -56,4 +56,4 @@ This feature uses the HTML5 API; therefore, it is important that modern browsers
 
 These technologies perform the necessary conversion from SVG to the required format (the rendered charts in the JPG, PNG, or PDF formats, or the chart data (in the XLS format). Using the HTML5 API helps to overcome the earlier browser functionality limitations that hampered the implementation of this feature.
 
-<p class="text-info"> FusionCharts supports exporting chart data as XLS starting v3.11.0. Select __Download as XLS__ from the menu in the top-right corner of the chart. </p>
+>  FusionCharts supports exporting chart data as XLS starting v3.11.0. Select __Download as XLS__ from the menu in the top-right corner of the chart. </p>

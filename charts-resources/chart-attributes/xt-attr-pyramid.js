@@ -7,7 +7,6 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
             "caption": "The Global Wealth Pyramid",
             "captionOnTop": "0",
             "captionPadding": "25",
@@ -16,13 +15,13 @@
             "subCaptionFontSize": "12",
             "borderAlpha": "20",
             "is2D": "1",
-            "bgColor": "#ffffff",
             "showValues": "1",
             "numberPrefix": "$",
             "numberSuffix": "M",
             "plotTooltext": "$label of world population is worth USD $value tn ",
             "showPercentValues": "1",
-            "chartLeftMargin": "40"
+            "chartLeftMargin": "40",
+            "theme": "fusion"
         },
         "data": [{
             "label": "Top 32 mn (0.7%)",

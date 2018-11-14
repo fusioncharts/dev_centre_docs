@@ -53,12 +53,6 @@
                 "name": "paletteThemeColor"
             },
             {
-                "description": "If you've defined any annotation groups over the chart, using this attribute you can set the duration after which they'll render on the chart. The timer starts from the time the chart has initialized.",
-                "range": "In seconds",
-                "type": "Number",
-                "name": "annRenderDelay"
-            },
-            {
                 "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
                 "range": "0/1",
                 "type": "Boolean",
@@ -93,7 +87,7 @@
             },
             {
                 "description": "This attribute changes the theme of the chart. There are 4 types of themes which have been made according to the different color combinations.",
-                "range": "‘carbon’, ‘fint’, ‘ocean’, ‘zune’",
+                "range": "‘carbon’, ‘fusion’, ‘ocean’, ‘zune’",
                 "type": "String",
                 "name": "theme"
             }
@@ -102,6 +96,7 @@
     },
     {
         "table": "Chart Message-related Attributes",
+        "path": "FusionCharts",
         "attrs": [
         	{
                 "description": "This attribute allows to set a custom font for all chart messages.",
@@ -545,7 +540,7 @@
                 "name": "dataInvalidMessageImageScale"
             }
         ],
-        "description": "These attributes let you set and configure custom chart messages, using text as well as images."
+        "description": "These attributes let you set and configure custom chart messages, using text as well as images. These attributes are supported in FusionCharts constructor (`FusionCharts({ })`)."
     },
     {
         "table": "Chart captions",
@@ -627,18 +622,6 @@
                 "range": "0/1",
                 "type": "Boolean",
                 "name": "subCaptionFontBold"
-            },
-            {
-                "description": "Whether the caption is aligned with the canvas. Else, it will be aligned with the entire chart area",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "alignCaptionWithCanvas"
-            },
-            {
-                "description": "If caption is not centre aligned, lets you configure the padding (in pixels) from either edge.\nWill be ignored if caption is centre aligned.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "captionHorizontalPadding"
             }
         ],
         "description": "These attributes let you configure the cosmetics of chart caption and sub-caption."
@@ -1268,6 +1251,65 @@
         "description": "These attributes let you control the tooltip. You can set the background color, border color, separator character and few other details. "
     },
     {
+        "table": "Toolbar Attributes",
+        "attrs": [
+            {
+                "description": "Where to position the toolbar on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",
+                "range": "TL, TR, BL, BR, CC",
+                "type": "String",
+                "versionsince": "3.11.3",
+                "name": "toolbarPosition"
+            },
+            {
+                "description": "Sets the toolbox position on the chart with respect to x-axis.",
+                "range": "",
+                "type": "Number",
+                "versionsince": "3.11.3",
+                "name": "toolbarX"
+            },
+            {
+                "description": "Sets the toolbox position on the chart with respect to y-axis.",
+                "range": "",
+                "type": "Number",
+                "versionsince": "3.11.3",
+                "name": "toolbarY"
+            },
+            {
+                "description": "Sets the horizontal alignment of the toolbar on the chart.",
+                "range": "Left, Right",
+                "type": "String",
+                "versionsince": "3.11.3",
+                "name": "toolbarHAlign"
+            },
+            {
+                "description": "Sets the vertical alignment of the toolbar on the chart",
+                "range": "Top, Bottom",
+                "type": "String",
+                "versionsince": "3.11.3",
+                "name": "toolbarVAlign"
+            },
+            {
+                "description": "Sets the color of the toolbar buttons.",
+                "range": "Any (color code without the # prefix)",
+                "type": "Color",
+                "name": "toolbarButtonColor"
+            },
+            {
+                "description": "Enables/disables display of tooltips for toolbar buttons.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "showToolBarButtonTooltext"
+            },
+            {
+                "description": "You can change the scale of the toolbar by specifying a value for this attribute.",
+                "range": "",
+                "type": "Number",
+                "name": "toolbarButtonScale"
+            }
+        ],
+        "description": "Using this set of attributes, you can customize the toolbar on the chart. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping."
+    },
+    {
         "table": "Attributes for Exporting Charts",
         "attrs": [
             {
@@ -1560,6 +1602,12 @@
                 "range": "0 - 100",
                 "type": "Number",
                 "name": "trendlineAlpha"
+            },
+            {
+                "description": "Sets the tooltip text of the trend-line. It accepts macros, plain text, and HTML tags, as string.",
+                "range": "",
+                "type": "String",
+                "name": "trendLineToolText"
             },
             {
                 "description": "Whether all the trend line/zone will be displayed over data plots or under them.",

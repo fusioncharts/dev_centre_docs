@@ -5,9 +5,7 @@
 #### JavaScript Alias: maps/surxondaryo
 
 Map Name: Surxondaryo
-Dimensions (Width x Height): 480x330
-
-
+Dimensions (Width x Height): 421x391
 
 
 
@@ -15,8 +13,8 @@ Dimensions (Width x Height): 480x330
 
 ### List of Entities
 
-ID | Short label | Label
----|---|---|---
+ Id | Short label | Label
+---|---|---
 UZ.SU.AN|AN|Angor
 UZ.SU.BA|BA|Bandixon
 UZ.SU.BO|BO|Boysun

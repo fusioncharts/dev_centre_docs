@@ -18,7 +18,7 @@
                 "legendbordercolor": "ffffff",
                 "legendallowdrag": "0",
                 "legendshadow": "0",
-                "caption": "Website Visits for the month of Jan 2014",
+                "caption": "Website Visits for the month of March 2018",
                 "connectorcolor": "000000",
                 "fillalpha": "80",
                 "hovercolor": "CCCCCC",
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"IR.TE.AL","value":4034},{"id":"IR.TE.GO","value":342},{"id":"IR.TE.MN","value":3736},{"id":"IR.TE.QZ","value":2851},{"id":"IR.TE.QM","value":3642},{"id":"IR.TE.SM","value":3592},{"id":"IR.TE.TE","value":1126}]
+            "data": [{"id":"IR.TH.BA","value":888},{"id":"IR.TH.DA","value":3538},{"id":"IR.TH.FI","value":584},{"id":"IR.TH.ES","value":1936},{"id":"IR.TH.MA","value":2751},{"id":"IR.TH.PA","value":995},{"id":"IR.TH.PS","value":3940},{"id":"IR.TH.PI","value":4076},{"id":"IR.TH.QA","value":2161},{"id":"IR.TH.RO","value":1224},{"id":"IR.TH.RE","value":788},{"id":"IR.TH.ST","value":3338},{"id":"IR.TH.SR","value":534},{"id":"IR.TH.SQ","value":936}]
         }
     }

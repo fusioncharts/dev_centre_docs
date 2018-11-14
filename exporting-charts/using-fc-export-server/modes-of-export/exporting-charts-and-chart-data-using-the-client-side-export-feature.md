@@ -18,7 +18,7 @@ FusionCharts provides programs to set up the export server at a client’s end, 
 
 The primary need for coming up with the client-side export feature  was to eliminate the need of a server for exporting, thus bringing down the turnaround time it takes for an export, as well as to address the data confidentiality issues. The client-side export feature removes the round-trip involved in exporting from a  server and eliminates the difficulties involved in setting up one with the proper dependencies.
 
-<p class="text-info">
+> 
 Please note that, at present, this feature is supported only by the __Chrome__,  __Firefox__, and __IE >= 10__ browsers. The FusionCharts team is working to include support for other browsers also.
 </p>
 
@@ -55,7 +55,7 @@ Given below is a brief description of the attributes that are used to enable cli
 	</tbody>
 </table>
 
-The sample chart below showcases the client-side export feature. As with server-side export, click ![image](/assets/images/exporting-as-image-and-pdf-export-button.jpg) from the top-right corner of the chart and select __Export as JPG__.
+The sample chart below showcases the client-side export feature. As with server-side export, click <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> from the top-right corner of the chart and select __Export as JPG__.
 
 {% embed_all exporting-charts-and-chart-data-using-the-client-side-export-feature-example-1.js %}
 
@@ -63,19 +63,26 @@ How do you know if the export was done on the client-side? The images below show
 
 <table>
 	<tr>
-		<th style="width: 90%; "> <center> Network tab in the browser console: Client-side export </center> </th>
-		<th style="width: 90%"> <center> Network tab in the browser console: Server-side export </center> </th>		
+		<th> <center> Network tab in the browser console: Client-side export </center> </th>		
 	</tr>
 	<tr>
-		<td style="width: 90"> ![image alt text Network tab: Client-side export](/assets/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg){: .center-align .table-img} </td>
-		<td style="width: 90%"> ![image alt text Network tab: Server-side export](/assets/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg){: .center-align .table-img} </td>
+		<td> <span> ![image alt text Network tab: Client-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg) </span></td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th> <center> Network tab in the browser console: Server-side export </center> </th>		
+	</tr>
+	<tr>
+		<td> <span> ![image alt text Network tab: Server-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg) </span> </td>
 	</tr>
 </table>
 
 The graphic below details the steps that are involved in a client-side export:
 
 {:refdef: style="margin-left: auto; margin-right: auto; width: 6em"}
-<img src="/assets/images/exporting-to-images-or-pdf-client-side-exporting-steps.png" width="auto" height="600" alt="client-side export">
+<img src="{% site.baseurl %}/images/exporting-to-images-or-pdf-client-side-exporting-steps.png" width="auto" height="600" alt="client-side export">
 {: refdef}
 
 This feature uses the HTML5 API; therefore, it is important that modern browsers include support for:
@@ -86,4 +93,4 @@ This feature uses the HTML5 API; therefore, it is important that modern browsers
 
 These technologies perform the necessary conversion from SVG to the required format (the rendered charts in the JPG, PNG, or PDF formats, or the chart data (in the XLS format). Using the HTML5 API helps to overcome the earlier browser functionality limitations that hampered the implementation of this feature.
 
-<p class="text-info"> FusionCharts supports exporting chart data as XLS starting v3.11.0. Select __Download as XLS__ from the menu in the top-right corner of the chart. </p>
+>  FusionCharts supports exporting chart data as XLS starting v3.11.0. Select __Download as XLS__ from the menu in the top-right corner of the chart. </p>

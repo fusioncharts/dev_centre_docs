@@ -8,13 +8,13 @@ chartPresent: true
 
 Starting version 3.11.0, FusionCharts Suite XT lets you export all charts on a page in a single image at once, in the __JPG__ and __PNG__ formats. With this, you also have the option of customizing the exported charts for parameters like the width and height of the exported chart, the background color, transparency, and so on.
 
-<p class='text-info'> Multiple charts can be exported at once only in the PNG and JPG formats. </p>
+> Multiple charts can be exported at once only in the PNG and JPG formats.
 
 This article explains how you can:
 
-* <a href="/exporting-charts/exporting-multiple-charts-in-a-single-image#exporting-multiple-charts-at-once-and-customizing-the-exported-charts" class="smoth-scroll">Export multiple charts at once and customize them</a>
+* Export multiple charts at once and customize them<
 
-* <a href="/exporting-charts/exporting-multiple-charts-in-a-single-image#selectively-exporting-charts" class="smoth-scroll">Selectively export charts</a>
+* Selectively export charts
 
 ## Exporting Multiple Charts at Once and Customizing the Exported Charts
 
@@ -25,14 +25,17 @@ Take a look at the sample shown below. Click the __Export Charts__ button to exp
 <input type="submit" value="Export Charts" onclick="batchExportConfig();" />
 
 {% embed_chart exporting-multiple-charts-in-a-single-image-example-1.js %}
+
 {% embed_chart exporting-multiple-charts-in-a-single-image-example-2.js %}
+
 {% embed_chart exporting-multiple-charts-in-a-single-image-example-3.js %}
+
 {% embed_chart exporting-multiple-charts-in-a-single-image-example-4.js %}
 
 
 The image thus downloaded is as shown below:
 
-![Downloaded Image](/assets/images/batchExport.png)
+![Downloaded Image]({% site.baseurl %}/images/batchExport.png)
 
 Read on to know the methods, objects, and attributes that are used to export multiple charts using the default export configuration as well as how you can customize it.
 
@@ -149,14 +152,17 @@ Take a look at the sample shown below:
 
 <input type="submit" value="Export Charts" onclick="selectiveBatchExportConfig();" />
 
-{% embed_chart exporting-multiple-charts-in-a-single-image-example-1.js %}
-{% embed_chart exporting-multiple-charts-in-a-single-image-example-2.js %}
-{% embed_chart exporting-multiple-charts-in-a-single-image-example-3.js %}
-{% embed_chart exporting-multiple-charts-in-a-single-image-example-4.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-5.js %}
+
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-6.js %}
+
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-7.js %}
+
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-8.js %}
 
 When you click the __Export Charts__ button in this sample, the image downloaded is as shown below:
 
-![Downloaded Image](/assets/images/selectiveBatchExport.png)
+![Downloaded Image]({% site.baseurl %}/images/selectiveBatchExport.png)
 
 
 For the above exported image, we have specified the:
@@ -186,4 +192,4 @@ batchExportConfig1 = function() {
 
 ```
 
-<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='//resources/js/exporting-multiple-charts-in-a-single-image.js'></script>
+<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{% site.baseurl %}/js/exporting-multiple-charts-in-a-single-image.js'></script>

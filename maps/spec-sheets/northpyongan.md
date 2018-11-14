@@ -4,8 +4,8 @@
 
 #### JavaScript Alias: maps/northpyongan
 
-Map Name: Northpyongan
-Dimensions (Width x Height): 696x478
+Map Name: North Pyongan
+Dimensions (Width x Height): 610x570
 
 
 
@@ -32,6 +32,7 @@ KP.PI|PI|Pihyon
 KP.RY|RY|Ryongchon
 KP.SA|SA|Sakju
 KP.SI|SI|Sindo
+KP.SJ|SJ|Sinuiju
 KP.SO|SO|Sonchon
 KP.TA|TA|Taechon
 KP.TO|TO|Tongchang
@@ -39,4 +40,3 @@ KP.UJ|UJ|Uiju
 KP.UN|UN|Unjon
 KP.US|US|Unsan
 KP.YO|YO|Yomju
-

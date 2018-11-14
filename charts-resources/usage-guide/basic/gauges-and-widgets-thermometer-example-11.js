@@ -1,0 +1,28 @@
+{
+    type: 'thermometer',
+    renderAt: 'chart-container',
+    width: '240',
+    height: '300',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Temperature Monitor",
+            "subcaption": " Central cold store",
+            "lowerLimit": "-10",
+            "upperLimit": "0",
+            "numberSuffix": "°C",
+            "decimals": "1",
+            "showhovereffect": "1",
+            "thmFillColor": "#008ee4",
+            "showGaugeBorder": "1",
+            "gaugeBorderColor": "#008ee4",
+            "gaugeBorderThickness": "2",
+            "gaugeBorderAlpha": "30",
+            "thmOriginX": "100",
+            "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-php-1.php",
+            "refreshInterval": "5",
+            "theme": "fusion"
+        },
+        "value": "-6"
+    }
+}

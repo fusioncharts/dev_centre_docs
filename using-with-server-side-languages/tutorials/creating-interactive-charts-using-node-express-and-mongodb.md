@@ -17,18 +17,6 @@ There are multiple web frameworks built on top of Node.js leveraging its platfor
 
 In this post we will see how we can create dynamic charts using `ExpressJS` and `MongoDB`. ExpressJS is a minimalistic framework for `Node.js` which is used to create web applications. MongoDB is a NoSQL based data store which stores data in the form of collection of documents where each document is of custom JSON format called `BSON`.
 
-In this section, you will be shown how to:
-
-
-* [Install Node.js](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-nodejs)
-* [Install ExpressJS](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-expressjs)
-* [Install MongoDB](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-mongodb)
-* [Populate data in MongoDB](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#populating-data-in-mongodb)
-* [Create REST API for data retrieval](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#creating-rest-api-for-data-retrieval)
-* [Create views for rendering the chart](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#creating-views-for-rendering-the-chart)
-* [Download source code](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#source-code-download)
-
-
 ## Installing Node.js
 
 Download the relevant Node.js installer for your operating system from <a href="https://nodejs.org/en/download/">here</a> and follow the instructions to install it on your system. For windows the installer will update the Path variable to include the location for the node executable. 
@@ -158,11 +146,11 @@ If you are familiar with Java, you would remember using a MySQL Connector Jar to
 
 Let us develop the REST API by following the steps listed below:
 
-* [Import the express and mongodb packages to be used in the application](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-1--import-the-express-and-mongodb-packages-to-be-used-in-the-application)
-* [Connect to MongoDB instance running locally](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-2--connect-to-mongodb-instance-running-locally)
-* [Implement method to fetch the data from Database](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-3--implement-method-to-fetch-the-data-from-database)
-* [Create express server and REST API end-point](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-4--create-express-server-and-rest-api-end-point)
-* [Launch the express app on a port](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-5--launch-the-express-app-on-some-port)
+* Import the express and mongodb packages to be used in the application.
+* Connect to MongoDB instance running locally.
+* Implement method to fetch the data from Database.
+* Create express server and REST API end-point.
+* Launch the express app on a port.
 
 
 #### Step 1 : Import the Express and Mongodb Packages to be used in the Application
@@ -178,7 +166,6 @@ var express = require("express");
 var mongodb = require("mongodb");
 
 ```
-
 
 #### Step 2 : Connect to MongoDB instance running locally
 
@@ -313,10 +300,10 @@ Let us launch this application using node by running the following command:
 
 ```
 
-You will notice that the server is up on http://localhost:3300. Open the URL http://localhost:3300/fuelPrices in the browser to find the JSON response of the API. 
+You will notice that the server is up on `http://localhost:3300`. Open the URL `http://localhost:3300/fuelPrices` in the browser to find the JSON response of the API. 
 
 
-## Creating views for rendering the chart ##
+## Creating views for rendering the chart
 
 Now that we have the back-end ready, let us focus on building the views for rendering the chart. We are going to use a template engine which will help us create dynamic HTML views. Using this template we can define parts of the page that will be populated by the data from the backend and rest will be statically defined. The template engine we would be using for this article is called [Handlebars](http://handlebarsjs.com/).
 
@@ -360,11 +347,11 @@ Note: In the above we are making use of [Bootstrap](http://getbootstrap.com/css/
 
 Let us now see the code for the template that will contain the chart. The name of this template file is chart.handlebars. In this template we will show the data both in tabular as well as graphical format. Before we look at the template definition, let us look at the directory structure we have created so far:
 
-![server side program as shown in diagram](/assets/images/node-screen.png)
+![server side program as shown in diagram]({% site.baseurl %}/images/node-screen.png)
 
 Let us get back to the expressjs server code i.e server.js and do the following:
 
-1. Setup handlebars template engine with main.handlebars as default layout.
+* Setup handlebars template engine with main.handlebars as default layout.
 
 ```javascript
 
@@ -392,7 +379,7 @@ Let us get back to the expressjs server code i.e server.js and do the following:
 
 ```
 
-2. Defining an endpoint to serve static resources like JavaScript resources
+* Defining an endpoint to serve static resources like JavaScript resources
 
 ```javascript
 
@@ -495,15 +482,15 @@ $("#table-location").html(template(data));
 
 ```
 
-If you want to see the app we have built so far in action, just run the following command from the app directory: `node server.js`. You will see Server up: http://localhost:3300 printed. Open the URL http://localhost:3300/ to see the table as shown in the below image:
+If you want to see the app we have built so far in action, just run the following command from the app directory: `node server.js`. You will see Server up: `http://localhost:3300` printed. Open the URL `http://localhost:3300/` to see the table as shown in the below image:
 
-![server side program as shown in diagram](/assets/images/data-table.png)
+![server side program as shown in diagram]({% site.baseurl %}/images/data-table.png)
 
 ### Build the JavaScript and HTML to display the fuel price in a line chart ###
 
 In this section we will add code for rendering the chart. Let us build the chart step-by-step as shown below:
 
-1. Create chart properties object
+* Create chart properties object
 
 ```javascript
 
@@ -516,7 +503,7 @@ var chartProperties = {
 
 ```
 
-2. Create categories array object
+* Create categories array object
 
 ```javascript
 
@@ -526,7 +513,7 @@ var categoriesArray = [{
 
 ```
 
-3. Create FusionCharts object for multiseries line
+* Create FusionCharts object for multiseries line
 
 ```javascript
 
@@ -545,7 +532,7 @@ var lineChart = new FusionCharts({
 
 ```
 
-4. Render the chart using the `render()` API.
+* Render the chart using the `render()` API.
 
 ```javascript
 
@@ -553,9 +540,9 @@ lineChart.render();
 
 ```
 
-Let us load the URL http://localhost:3300/ in the browser to see both table and chart being displayed as shown in the image below:
+Let us load the URL `http://localhost:3300/` in the browser to see both table and chart being displayed as shown in the image below:
 
-![server side program as shown in diagram](/assets/images/data-table2.png)
+![server side program as shown in diagram]({% site.baseurl %}/images/data-table2.png)
 
 ### Source Code Download ###
 

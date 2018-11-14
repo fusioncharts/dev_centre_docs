@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename.html
 title: Manipulate the output filename | FusionCharts
 description: This article talks about the SDKs used for manipulating the output filename.
 heading: Manipulate the output filename
-chartPresent: False
 ---
 
 Output filenames can be dynamically generated using the  `--output-file-definition`  option. This option takes a JavaScript file as an input, which can contain multiple function definitions, as shown below:
@@ -15,7 +13,7 @@ Output filenames can be dynamically generated using the  `--output-file-definiti
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	module.exports = {
 		captionIndexStr: (chartConfig, index, chartConfigList) => {
 			const caption = chartConfig.dataSource.chart.caption;
@@ -37,7 +35,7 @@ The `captionIndexStr` function  receives three parameters from the FusionExport 
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	module.exports = {
 		dates: [
 			'17-11-2017_fc_1',
@@ -59,7 +57,7 @@ FusionExport CLI provides two system-defined functions that can be used to gener
 
 To create the final output filename, the `--output-file` option should be used. This option accepts the filename template string as shown below:
 
-<p class="text-info">The output filename template string uses the EJS templating engine.</p>
+> The output filename template string uses the EJS templating engine.</p>
 
 <div class="code-wrapper">
 <ul class="code-tabs">
@@ -68,7 +66,7 @@ To create the final output filename, the `--output-file` option should be used. 
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	path/to/export--<%= number(1, 100) %>
 	output filename: path/to/export--1.png
 
@@ -81,3 +79,9 @@ To create the final output filename, the `--output-file` option should be used. 
 </div>
 </div>
 </div>
+
+## Related Resources
+
+* [Save Exported Files to S3]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three)
+
+* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)

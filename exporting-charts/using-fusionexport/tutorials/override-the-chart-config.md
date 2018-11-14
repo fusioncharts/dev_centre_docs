@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/override-the-chart-config.html
 title: Override the chart config | FusionCharts
 description: This article talks about the SDKs used for overriding the chart config.
 heading: Override the chart config
-chartPresent: False
 ---
 
 The  `--chart-config-options` option can be used to change the chart configuration, as shown in the example below: 
@@ -15,7 +13,7 @@ The  `--chart-config-options` option can be used to change the chart configurati
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-json">
+<pre><code class="custom-hlc language-json">
 	{
 		"chart-config": "uat/fusioncharts_chart.js",
 			"chart-config-options": {
@@ -40,9 +38,19 @@ Once done, run the following command:
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -e fusioncharts_config.json
 </code></pre>
 </div>
 </div>
 </div>
+
+## Related Resources
+
+* [Customize the Width and Height of an Exported Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+
+* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+
+* [Add a logo and Heading to the Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
+
+* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

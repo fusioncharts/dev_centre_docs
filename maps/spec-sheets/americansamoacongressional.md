@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/americansamoacongressional
 
-Map Name: Americansamoacongressional
+Map Name: American Samoa Congressional
 Dimensions (Width x Height): 500x250
 
 

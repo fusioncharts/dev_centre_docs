@@ -7,19 +7,15 @@
     dataSource: {
         "chart": {
             "caption": "Customer score",
-            "subcaptionFontBold": "0",
             "lowerLimit": "0",
             "upperLimit": "100",
             "lowerLimitDisplay": "Bad",
             "upperLimitDisplay": "Good",
             "numberSuffix": "%",
-            "showValue": "0",
-            "showBorder": "0",
-            "showShadow": "0",
             "tickMarkDistance": "5",
             "alignCaptionWithCanvas": "1",
             "captionAlignment": "center",
-            "bgcolor": "#ffffff"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

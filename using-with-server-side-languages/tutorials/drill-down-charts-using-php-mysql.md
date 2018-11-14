@@ -22,7 +22,7 @@ To get the code in this article working we need the below softwares installed an
 This stack is popularly called as *AMP(Apache MySQL PHP) stack and when you include the platform on which this stack is running then it becomes either WAMP (Windows Apache MySql PHP) or LAMP (Linux Apache MySQL PHP). So there are lots of vendors who bundle this stack and make it available for download. 
 Once the stack is set up properly:
 
-* Create a project folder called php-mysql-drill-down in the root directory of the web server. You should be able to browse to this folder via any web browser using the <a href="http://localhost/php-mysql-drill-down/" target="_blank">URL</a>.
+* Create a project folder called php-mysql-drill-down in the root directory of the web server. You should be able to browse to this folder via any web browser using the `http://localhost/php-mysql-drill-down/` URL.
 
 * Create a blank file named index.php and save it in the php-mysql-drill-down folder.
 
@@ -273,7 +273,7 @@ if ($dbhandle->connect_error) {
 
 * We would only need to include `fusioncharts.js` for this sample and for theme we are using custom made `elegant.js` specifically for this sample.
 
-You can download an unlimited trial of FusionCharts consisting required core files <a href="http://www.fusioncharts.com/download/" target="_blank">here</a>. The `elegant.js` can be found in the downloadable zip of this sample. You can learn how to <a href="http://www.fusioncharts.com/dev/advanced-chart-configurations/theme-manager/creating-new-themes.html" target="_blank">create custom theme</a> in the <a href="http://www.fusioncharts.com/dev/" target="_blank">dev center</a>. 
+You can download an unlimited trial of FusionCharts consisting required core files <a href="http://www.fusioncharts.com/download/" target="_blank">here</a>. The `elegant.js` can be found in the downloadable zip of this sample. You can learn how to <a href="https://www.fusioncharts.com/dev/themes/create-your-own-themes" target="_blank">create custom theme</a> in the <a href="http://www.fusioncharts.com/dev/" target="_blank">dev center</a>. 
 
 Assuming you have the FusionCharts library placed inside the folder "fusioncharts/js" in your project after downloading the core FusionCharts library, include the file in a script tag and the required theme in the head section of the PHP file as below.
 
@@ -309,7 +309,7 @@ The links should be defined in the format `newchart-dataformat-datasource`. For 
 
 We’ll start with the data for the year 2011. In the code below, you can see that there are two levels of linked data, one for the yearly data and another for the quarterly data. The corresponding linked charts are defined inside the `linkeddata` arrays.
 
-![server side program as shown in diagram](/assets/images/xjson.jpg)
+![server side program as shown in diagram]({% site.baseurl %}/images/xjson.jpg)
 
 The final JSON code that we need for this sample should be as shown below:
 
@@ -1661,5 +1661,5 @@ The final chart, with two levels of drill-down, will look as shown below:
 {% embed_chart drill-down-charts-using-php-mysql-example-1.js %}
 
 <div style="text-align: center;">
-  <a style="display: inline-block; width: auto; outline: none; padding: 20px 60px; margin-bottom: 10px; font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 600; color: #fff; text-align: center; vertical-align: middle; background-color: #167ed5; -webkit-border-radius: 2px; -webkit-border-radius: 0.2rem; -moz-border-radius: 2px; -moz-border-radius: 0.2rem; border-radius: 2px; border-radius: 0.2rem; cursor: pointer; -webkit-appearance: none; text-decoration: none;" href="/resources/downloads/php-mysql-multilevel-drill-down.zip" target="_blank" title="click me to download" >Download the Sample</a>
+  <a style="display: inline-block; width: auto; outline: none; padding: 20px 60px; margin-bottom: 10px; font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 600; color: #fff; text-align: center; vertical-align: middle; background-color: #167ed5; -webkit-border-radius: 2px; -webkit-border-radius: 0.2rem; -moz-border-radius: 2px; -moz-border-radius: 0.2rem; border-radius: 2px; border-radius: 0.2rem; cursor: pointer; -webkit-appearance: none; text-decoration: none;" href="https://static.fusioncharts.com/sample/dev2.0/php-mysql-multilevel-drill-down.zip" target="_blank" title="click me to download" >Download the Sample</a>
 </div>

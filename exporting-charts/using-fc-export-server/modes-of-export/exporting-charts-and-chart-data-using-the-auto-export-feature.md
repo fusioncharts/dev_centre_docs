@@ -68,14 +68,14 @@ Given below is a brief description of the attributes used to enable to the auto 
 	</tbody>
 </table>
 
-The sample chart below showcases the auto export feature. Click/hover over the ![image](/assets/images/exporting-as-image-and-pdf-export-button.jpg) button from the top-right corner of the chart and select an export format.
+The sample chart below showcases the auto export feature. Click/hover over the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> button from the top-right corner of the chart and select an export format.
 
 {% embed_all exporting-charts-and-chart-data-using-the-auto-export-feature-example-1.js %}
 
 Switch to the JSON tab of the chart rendered above to see how the `exportEnabled` and `exportMode` attributes are used. 
 
-<p class="text-info"> Note that when export is enabled, the export mode is set to to __auto__ by default. Therefore, exiplicitly defining the `exportMode` is not needed. However, we've shown it in this example, so that you know how the attribute is used. </p>
+>  Note that when export is enabled, the export mode is set to to __auto__ by default. Therefore, exiplicitly defining the `exportMode` is not needed. However, we've shown it in this example, so that you know how the attribute is used. </p>
 
-<p class="text-info"> Starting v3.132.10, the `exportMode` attribute replaces the `exportAtClient Side` attribute.
+>  Starting v3.132.10, the `exportMode` attribute replaces the `exportAtClient Side` attribute.
 A description of the `exportMode` attribute is given in the table above.
 However, you don’t need to make any changes to the existing setup because, starting v3.12.1, the FusionCharts library comes with the proper mapping already provided. </p>

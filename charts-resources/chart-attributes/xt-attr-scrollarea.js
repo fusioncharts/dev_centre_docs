@@ -8,30 +8,15 @@
         "chart": {
             "caption": "Sales Trends",
             "subCaption": "(FY 2012 to FY 2013)",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
             "xAxisname": "Month",
             "pYAxisName": "Amount",
             "labelDisplay": "AUTO",
             "sYAxisName": "Employees",
             "numberPrefix": "$",
-            "paletteColors": "#0075c2",
-            "bgcolor": "#ffffff",
-            "showBorder": "0",
-            "showCanvasBorder": "0",
-            "usePlotGradientColor": "0",
-            "plotBorderAlpha": "10",
-            "showAxisLines": "0",
-            "valueBgColor": "#FFFFFF",
-            "valueBgAlpha": "50",
-            "showAlternateHGridColor": "0",
-            "divlineThickness": "1",
-            "divLineDashed": "1",
-            "divLineDashLen": "1",
             "numVisiblePlot": "8",
             "flatScrollBars": "1",
-            "scrollheight": "10"
+            "scrollheight": "10",
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -14,11 +14,8 @@
             "lowerLimitDisplay": "Empty",
             "upperLimitDisplay": "Full",
             "numberSuffix": " ltrs",
-            "showValue": "0",
             "showhovereffect": "1",
-            "bgCOlor": "#ffffff",
-            "borderAlpha": "0",
-            "cylFillColor": "#008ee4"
+            "theme": "fusion"
         },
         "value": "110"
     },
@@ -28,7 +25,7 @@
             evtObj.sender.interval = setInterval(function() {
                 (fuelVolume < 10) ? (fuelVolume = 110) : "";
                 var consVolume = fuelVolume - (Math.floor(Math.random() * 3));
-                evtObj.sender.feedData("&value=" + consVolume);
+                evtObj.sender.feedData && evtObj.sender.feedData("&value=" + consVolume);
                 fuelVolume = consVolume;
             }, 1000);
         },

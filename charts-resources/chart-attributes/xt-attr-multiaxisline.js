@@ -6,19 +6,14 @@
     "dataFormat": "json",
     "dataSource": {
         "chart": {
-            "palette": "2",
             "caption": "CPU Usage",
             "subcaption": "(Last 10 Hours)",
             "xaxisname": "Time",
-            "showvalues": "0",
-            "divlinealpha": "100",
             "numvdivlines": "4",
             "vdivlinealpha": "0",
-            "showalternatevgridcolor": "1",
             "alternatevgridalpha": "5",
-            "canvaspadding": "0",
             "labeldisplay": "ROTATE",
-            "showborder": "0"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

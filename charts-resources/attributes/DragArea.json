@@ -96,6 +96,13 @@
                 "name": "rotateValues"
             },
             {
+                "description": "If you've opted to show data values on the chart, this attribute lets you adjust the vertical alignment of data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of each data value is determined automatically based on the position of each plot point. In ABOVE mode, data values are displayed above the plot points unless a plot point is too close to the upper edge of the canvas while in BELOW mode, data values are displayed below the plot points unless a plot point is too close to the lower edge of the canvas.",
+                "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
+                "type": "String",
+                "versionsince": "3.2",
+                "name": "valuePosition"
+            },
+            {
                 "description": "Whether to apply the shadow effects for data plot.",
                 "range": "0/1",
                 "type": "Boolean",
@@ -193,7 +200,7 @@
             },
             {
                 "description": "This attribute changes the theme of the chart. There are 4 types of themes which have been made according to the different color combinations.",
-                "range": "‘carbon’, ‘fint’, ‘ocean’, ‘zune’",
+                "range": "‘carbon’, ‘fusion’, ‘ocean’, ‘zune’",
                 "type": "String",
                 "name": "theme"
             }
@@ -202,6 +209,7 @@
     },
     {
         "table": "Chart Message-related Attributes",
+        "path": "FusionCharts",
         "attrs": [
         	{
                 "description": "This attribute allows to set a custom font for all chart messages.",
@@ -645,7 +653,7 @@
                 "name": "dataInvalidMessageImageScale"
             }
         ],
-        "description": "These attributes let you set and configure custom chart messages, using text as well as images."
+        "description": "These attributes let you set and configure custom chart messages, using text as well as images. These attributes are supported in FusionCharts constructor (`FusionCharts({ })`)."
     },
     {
         "table": "Dragging Related Attributes",
@@ -684,13 +692,13 @@
         "description": "The following attributes let you set the dragging related properties for the chart. "
     },
     {
-        "table": "Form & Button Parameters",
+        "table": "Form & Menu Option",
         "attrs": [
             {
-                "description": "If you want the user to be able to submit the data as form, you need to set this attribute to 1. If you are using JavaScript methods to get the data from chart, you can hide the button by setting this attribute to 0.",
+                "description": "If you want the user to be able to submit the data as form, you need to set this attribute to 1. If you are using JavaScript methods to get the data from chart, you can hide this option by setting this attribute to 0.",
                 "range": "0/1",
                 "type": "Boolean",
-                "name": "showFormBtn"
+                "name": "enableSubmit"
             },
             {
                 "description": "URL of your Server-side script to which you want to submit data. You can either use relative path or absolute path. The name of form variable which is to be requested in this page is `strXML`. If `submitFormUsingAjax` attribute is set to `1`, the `formAction` attribute will not work.",
@@ -711,40 +719,10 @@
                 "name": "formTarget"
             },
             {
-                "description": "Lets you configure the text for the submit button. By default, it is &quot;Submit&quot;.",
+                "description": "Lets you configure the text for the submit option. By default, it is &quot;Submit&quot;.",
                 "range": " ",
                 "type": "String",
-                "name": "formBtnTitle"
-            },
-            {
-                "description": "Color of button text.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "btnTextColor"
-            },
-            {
-                "description": "Sets the button font size in pixels",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "btnFontSize"
-            },
-            {
-                "description": "Lets you configure the width of the submit button.",
-                "range": "In pixels",
-                "type": "Number",
-                "name": "formBtnWidth"
-            },
-            {
-                "description": "Border color for the submit button.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "formBtnBorderColor"
-            },
-            {
-                "description": "Background color for the submit button.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "formBtnBgColor"
+                "name": "submitText"
             },
             {
                 "description": "When the __Submit__ button in drag-able charts is clicked, instead of setting a new URL or a new tab for data values, this attribute (when set to `1`) updates the data in the existing page internally. \n\n __Note__: If `submitFormUsingAjax` is set to `1`, the `formTarget` attribute will not work.",
@@ -753,50 +731,19 @@
                 "name": "submitFormUsingAjax"
             },
             {
-                "description": "Padding for the button.",
-                "range": "In pixels",
-                "type": "Number",
-                "name": "btnPadding"
-            },
-            {
-                "description": "Spacing between buttons.",
+                "description": "Whether to add the restore option in the menu.",
                 "range": "0/1",
                 "type": "Boolean",
-                "versionsince": "3.2.1",
-                "name": "btnSpacing"
+                "name": "enableRestore"
             },
             {
-                "description": "Whether to show the restore button for the chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showRestoreBtn"
-            },
-            {
-                "description": "Width of the restore button.",
-                "range": "In pixels",
-                "type": "Number",
-                "name": "restoreBtnWidth"
-            },
-            {
-                "description": "Lets you configure the text for the restore button. By default, it's &quot;Restore&quot;",
+                "description": "Lets you configure the text for the restore option. By default, it's &quot;Restore&quot;",
                 "range": " ",
                 "type": "String",
-                "name": "restoreBtnTitle"
-            },
-            {
-                "description": "Border color for the restore button.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "restoreBtnBorderColor"
-            },
-            {
-                "description": "Background color for the restore button.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "restoreBtnBgColor"
+                "name": "restoreText"
             }
         ],
-        "description": "The drag charts allow you to submit the updated data on chart to a form (or JavaScript functions). Using the attributes below, you can configure the form and submit button properties. The drag chart also allows a &quot;Restore Chart&quot; button whose properties can be configured using the attributes listed below. "
+        "description": "The drag charts allow you to submit the updated data on chart to a form (or JavaScript functions). Using the attributes below, you can configure the form and submit option in menu. The drag chart also allows a &quot;Restore Chart&quot; option whose properties can be configured using the attributes listed below. "
     },
     {
         "table": "Chart Titles and Axis Names",
@@ -1299,21 +1246,21 @@
                 "name": "bgImageScale"
             },
             {
-                "description": "Sets Canvas background color. For Gradient effect, enter colors separated by comma.",
+                "description": "This attribute sets the background color for the chart canvas. You can set any hex color code as the value of this attribute. To specify a gradient as canvas background color, separate the hex color codes of each color in the gradient using comma. Example: #FF5904, #FFFFFF.",
                 "range": "Hex Color Code",
                 "type": "Color",
                 "name": "canvasBgColor"
             },
             {
-                "description": "Sets alpha for canvas background. For gradient, enter alpha list separated by commas.",
+                "description": "This attribute sets the background transparency for the chart canvas. For gradient, separate the alpha value using comma. Example: 15, 50.",
                 "range": "0 - 100",
                 "type": "Number",
                 "name": "canvasBgAlpha"
             },
             {
-                "description": "Helps you specify canvas background ratio for gradients.",
+                "description": "When a gradient is used to set the color of the canvas background, this attribute sets the ratio of the colors. Example : If the value of the `canvasBgColor` attribute is set as `#FF5904, #FFFFFF`, `canvasBgRatio` can be used to specify their ratio in the background.",
                 "range": "0 - 100",
-                "type": "Number",
+                "type": "Numbers separated by comma",
                 "name": "canvasBgRatio"
             },
             {
@@ -2264,6 +2211,65 @@
         "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details. "
     },
     {
+        "table": "Toolbar Attributes",
+        "attrs": [
+            {
+                "description": "Where to position the toolbar on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",
+                "range": "TL, TR, BL, BR, CC",
+                "type": "String",
+                "versionsince": "3.11.3",
+                "name": "toolbarPosition"
+            },
+            {
+                "description": "Sets the toolbox position on the chart with respect to x-axis.",
+                "range": "",
+                "type": "Number",
+                "versionsince": "3.11.3",
+                "name": "toolbarX"
+            },
+            {
+                "description": "Sets the toolbox position on the chart with respect to y-axis.",
+                "range": "",
+                "type": "Number",
+                "versionsince": "3.11.3",
+                "name": "toolbarY"
+            },
+            {
+                "description": "Sets the horizontal alignment of the toolbar on the chart.",
+                "range": "Left, Right",
+                "type": "String",
+                "versionsince": "3.11.3",
+                "name": "toolbarHAlign"
+            },
+            {
+                "description": "Sets the vertical alignment of the toolbar on the chart",
+                "range": "Top, Bottom",
+                "type": "String",
+                "versionsince": "3.11.3",
+                "name": "toolbarVAlign"
+            },
+            {
+                "description": "Sets the color of the toolbar buttons.",
+                "range": "Any (color code without the # prefix)",
+                "type": "Color",
+                "name": "toolbarButtonColor"
+            },
+            {
+                "description": "Enables/disables display of tooltips for toolbar buttons.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "showToolBarButtonTooltext"
+            },
+            {
+                "description": "You can change the scale of the toolbar by specifying a value for this attribute.",
+                "range": "",
+                "type": "Number",
+                "name": "toolbarButtonScale"
+            }
+        ],
+        "description": "Using this set of attributes, you can customize the toolbar on the chart. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping."
+    },
+    {
         "table": "Attributes for Exporting Charts",
         "attrs": [
             {
@@ -3038,6 +3044,13 @@
                 "name": "value"
             },
             {
+                "description": "If you've opted to show a particular data value on the chart, this attribute lets you adjust the vertical alignment of individual data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of a data value is determined automatically based on the position of its plot point. In ABOVE mode, a data value is displayed above the plot point unless a plot point is too close to the upper edge of the canvas while in BELOW mode, a data value is displayed below the plot point unless a plot point is too close to the lower edge of the canvas.",
+                "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
+                "type": "String",
+                "versionsince": "3.2",
+                "name": "valuePosition"
+            },
+            {
                 "description": "If instead of the numerical value of this data, you wish to display a custom string value, you can specify the same here. Examples are annotation for a data item etc.",
                 "range": " ",
                 "type": "String",
@@ -3200,6 +3213,12 @@
                 "range": "0 - 100",
                 "type": "Number",
                 "name": "trendlineAlpha"
+            },
+            {
+                "description": "Sets the tooltip text of the trend-line. It accepts macros, plain text, and HTML tags, as string.",
+                "range": "",
+                "type": "String",
+                "name": "trendLineToolText"
             },
             {
                 "description": "Whether all the trend line/zone will be displayed over data plots or under them.",

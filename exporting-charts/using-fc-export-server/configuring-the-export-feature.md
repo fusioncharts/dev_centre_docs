@@ -6,13 +6,13 @@ heading: Configuring the Export Feature
 chartPresent: true
 ---
 
-FusionCharts Suite XT lets you export your charts (as __JPG__, __PNG__, __SVG__, and __PDF__) and chart data (since v3.11.0; as __XLS__) by using its [server-side](/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature) for exporting your charts.
+FusionCharts Suite XT lets you export your charts (as __JPG__, __PNG__, __SVG__, and __PDF__) and chart data (since v3.11.0; as __XLS__) by using its [server-side]({% site.baseurl %}/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature) to export charts.
 
 The exporting feature can be enabled by setting the `exportEnabled` attribute to 1. The mode of export can be selected by setting the `exportMode` attribute to server, client, or auto, as required.
 
-When export is enabled, the ![image](/assets/images/exporting-as-image-and-pdf-export-button.jpg) button appears in the top-right corner of the chart. Clicking this button will display the export menu, as shown in the image below. This menu contains a list of all the possible formats the chart can be exported in.
+When export is enabled, the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> button appears in the top-right corner of the chart. Clicking this button will display the export menu, as shown in the image below. This menu contains a list of all the possible formats the chart can be exported in.
 
-![image](/assets/images/exporting-as-image-and-pdf-export-menu.jpg)
+![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-menu.jpg)
 
 A number of other features can also be configured like the name of the exported file and the display text (in the menu) for each format that is supported. For example, in the chart shown below, we've changed menu item label for three out of the five items and changed the default file name (used when the file is downloaded).
 
@@ -125,9 +125,6 @@ The following is a complete list of `chart` level attributes that can be used to
 
 Currently, using the FusionCharts export handler, when a chart having a custom logo is exported as an image, the logo is not present in the generated image. We are introducing an experimental feature, which allows the logo present in the chart to be exported as well and be displayed in the resultant image.
 
-To use this feature, set `exportEnabled` to __1__ (because we are using the server-side export feature), and set `exportHandler` to the url __http://export.api3.fusioncharts.com/logo/__. Using this exporter, the generated output will contain the logo along with the chart. 
+To use this feature, set `exportEnabled` to __1__ (because we are using the server-side export feature), and set `exportHandler` to the url __http&#58;//export.api3.fusioncharts.com/logo/__. Using this exporter, the generated output will contain the logo along with the chart. 
 
-<p class="text-info">
-Note that this is an experimental feature and thus might not be a completely reliable solution.
-</p>
-
+> This is an experimental feature and thus might not be a completely reliable solution.

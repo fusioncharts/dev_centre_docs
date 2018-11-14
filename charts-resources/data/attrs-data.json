@@ -1,0 +1,667 @@
+[
+	{
+		"name": "Area 2D",
+		"json": "Area2D",
+		"code": "xt-attr-area2d.js",
+		"alias": "area2d",
+		"xls": true
+	},
+	{
+		"name": "Bar 2D",
+		"json": "Bar2D",
+		"code": "xt-attr-bar2d.js",
+		"alias": "bar2d",
+		"xls": true
+	},
+	{
+		"name": "Bar 3D",
+		"json": "Bar3D",
+		"code": "xt-attr-bar3d.js",
+		"alias": "bar3d",
+		"xls": true
+	},
+	{
+		"name": "Box and Whisker 2D",
+		"json": "BoxandWhisker2D",
+		"code": "xt-attr-boxandwhisker2d.js",
+		"alias": "boxandwhisker2d",
+		"xls": true
+	},
+	{
+		"name": "Bubble Chart",
+		"json": "Bubble",
+		"code": "xt-attr-bubble.js",
+		"alias": "bubble",
+		"xls": true
+	},
+	{
+		"name": "Candlestick Chart",
+		"json": "Candlestick",
+		"code": "xt-attr-candlestick.js",
+		"alias": "candlestick",
+		"xls": true
+	},
+	{
+		"name": "Column 2D",
+		"json": "Column2D",
+		"code": "xt-attr-column2d.js",
+		"alias": "column2d",
+		"xls": true
+	},
+	{
+		"name": "Column 3D",
+		"json": "Column3D",
+		"code": "xt-attr-column3d.js",
+		"alias": "column3d",
+		"xls": true
+	},
+	{
+		"name": "Doughnut 2D",
+		"json": "Doughnut2D",
+		"code": "xt-attr-doughnut2d.js",
+		"alias": "doughnut2d",
+		"xls": true
+	},
+	{
+		"name": "Doughnut 3D",
+		"json": "Doughnut3D",
+		"code": "xt-attr-doughnut3d.js",
+		"alias": "doughnut3d",
+		"xls": false
+	},
+	{
+		"name": "Drag Node Chart",
+		"json": "DragNode",
+		"code": "xt-attr-dragnode.js",
+		"alias": "dragnode",
+		"xls": false
+	},
+	{
+		"name": "Drag-able Area 2D Chart",
+		"json": "DragArea",
+		"code": "xt-attr-dragarea.js",
+		"alias": "dragarea",
+		"xls": false
+	},
+	{
+		"name": "Drag-able Column 2D Chart",
+		"json": "DragCol2D",
+		"code": "xt-attr-dragcolumn2d.js",
+		"alias": "dragcolumn2d",
+		"xls": false
+	},
+	{
+		"name": "Drag-able Line 2D Chart",
+		"json": "DragLine",
+		"code": "xt-attr-dragline.js",
+		"alias": "dragline",
+		"xls": false
+	},
+	{
+		"name": "Error Bar Chart",
+		"json": "ErrorBar",
+		"code": "xt-attr-errorbar2d.js",
+		"alias": "errorbar2d",
+		"xls": true
+	},
+	{
+		"name": "Error Line 2D Chart",
+		"json": "ErrorLine",
+		"code": "xt-attr-errorline.js",
+		"alias": "errorline",
+		"xls": true
+	},
+	{
+		"name": "Error Scatter Chart",
+		"json": "ErrorScatter",
+		"code": "xt-attr-errorscatter.js",
+		"alias": "errorscatter",
+		"xls": true
+	},
+	{
+		"name": "Funnel Chart",
+		"json": "Funnel",
+		"code": "xt-attr-funnel.js",
+		"alias": "funnel",
+		"xls": true
+	},
+	{
+		"name": "Gantt Chart",
+		"json": "Gantt",
+		"code": "xt-attr-gantt.js",
+		"alias": "gantt",
+		"xls": false
+	},
+	{
+		"name": "Heat Map Chart",
+		"json": "HeatMap",
+		"code": "xt-attr-heatmap.js",
+		"alias": "heatmap",
+		"xls": false
+	},
+	{
+		"name": "Horizontal Bullet Graph",
+		"json": "HBullet",
+		"code": "xt-attr-hbullet.js",
+		"alias": "hbullet",
+		"xls": false
+	},
+	{
+		"name": "Horizontal LED",
+		"json": "Horizontal",
+		"code": "xt-attr-hled.js",
+		"alias": "hled",
+		"xls": false
+	},
+	{
+		"name": "Inverse Y-axis Area Chart",
+		"json": "InverseArea",
+		"code": "xt-attr-inversemsarea.js",
+		"alias": "InverseMSArea",
+		"xls": true
+	},
+	{
+		"name": "Inverse Y-axis Column 2D Chart",
+		"json": "InverseColumn",
+		"code": "xt-attr-inversecolumn2d.js",
+		"alias": "InverseMSColumn2D",
+		"xls": true
+	},
+	{
+		"name": "Inverse Y-axis Line 2D Chart",
+		"json": "InverseLine",
+		"code": "xt-attr-inversemsline.js",
+		"alias": "InverseMSLine",
+		"xls": true
+	},
+	{
+		"name": "Kagi Chart",
+		"json": "Kagi",
+		"code": "xt-attr-kagi.js",
+		"alias": "kagi",
+		"xls": false
+	},
+	{
+		"name": "Line 2D",
+		"json": "Line2D",
+		"code": "xt-attr-line.js",
+		"alias": "line",
+		"xls": true
+	},
+	{
+		"name": "Logarithmic Column 2D Chart",
+		"json": "LogColumn2D",
+		"code": "xt-attr-logmscolumn2d.js",
+		"alias": "LogMSColumn2D",
+		"xls": true
+	},
+	{
+		"name": "Logarithmic Line 2D Chart",
+		"json": "LogLine",
+		"code": "xt-attr-logmsline.js",
+		"alias": "LogMSLine",
+		"xls": true
+	},
+	{
+		"name": "Marimekko",
+		"json": "Marimekko",
+		"code": "xt-attr-marimekko.js",
+		"alias": "marimekko",
+		"xls": false
+	},
+	{
+		"name": "Multi-axis Line Chart",
+		"json": "MALine",
+		"code": "xt-attr-multiaxisline.js",
+		"alias": "MultiAxisLine",
+		"xls": true
+	},
+	{
+		"name": "Multi-level Pie Chart",
+		"json": "MultiLevelPie",
+		"code": "xt-attr-multilevelpie.js",
+		"alias": "multilevelpie",
+		"xls": true
+	},
+	{
+		"name": "Multi-series 2D Dual Y Combination Chart (Column + Line + Area + Spline)",
+		"json": "Combi2DDY",
+		"code": "xt-attr-mscombidy2d.js",
+		"alias": "mscombidy2d",
+		"xls": true
+	},
+	{
+		"name": "Multi-series 2D Single Y Combination Chart (Column + Line + Area + Spline)",
+		"json": "Combi2D",
+		"code": "xt-attr-mscombi2d.js",
+		"alias": "mscombi2d",
+		"xls": true
+	},
+	{
+		"name": "Multi-series 3D Single Y Combination Chart (Column + Line + Area + Spline)",
+		"json": "Combi3D",
+		"code": "xt-attr-combi3d.js",
+		"alias": "mscombi3d",
+		"xls": false
+	},
+	{
+		"name": "Multi-series Area 2D",
+		"json": "MSArea2D",
+		"code": "xt-attr-msarea2d.js",
+		"alias": "MSArea",
+		"xls": true
+	},
+	{
+		"name": "Multi-series Bar 2D",
+		"json": "MSBar2D",
+		"code": "xt-attr-msbar2d.js",
+		"alias": "msbar2d",
+		"xls": true
+	},
+	{
+		"name": "Multi-series Bar 3D",
+		"json": "MSBar3D",
+		"code": "xt-attr-msbar3d.js",
+		"alias": "msbar3d",
+		"xls": true
+	},
+	{
+		"name": "Multi-series Column 2D",
+		"json": "MSColumn2D",
+		"code": "xt-attr-mscolumn2d.js",
+		"alias": "mscolumn2d",
+		"xls": true
+	},
+	{
+		"name": "Multi-series Column 3D",
+		"json": "MSColumn3D",
+		"code": "xt-attr-mscolumn3d.js",
+		"alias": "mscolumn3d",
+		"xls": true
+	},
+	{
+		"name": "Multi-series Column 3D + Line Dual Y Axis",
+		"json": "MSCol3DLineDY",
+		"code": "xt-attr-mscolumn3dlinedy.js",
+		"alias": "mscolumn3dlinedy",
+		"xls": false
+	},
+	{
+		"name": "Multi-series Column 3D + Line Single Y-axis",
+		"json": "Col3DLine",
+		"code": "xt-attr-mscol3dline.js",
+		"alias": "mscolumnline3d",
+		"xls": false
+	},
+	{
+		"name": "Multi-series Line 2D",
+		"json": "MSLine",
+		"code": "xt-attr-msline.js",
+		"alias": "msline",
+		"xls": true
+	},
+	{
+		"name": "Multi-series Spline",
+		"json": "MSSpline",
+		"code": "xt-attr-msspline.js",
+		"alias": "msspline",
+		"xls": true
+	},
+	{
+		"name": "Multi-series Spline Area",
+		"json": "MSSplineArea",
+		"code": "xt-attr-mssplinearea.js",
+		"alias": "mssplinearea",
+		"xls": false
+	},
+	{
+		"name": "Multi-series Stacked Column 2D",
+		"json": "MSStCol",
+		"code": "xt-attr-msstackedcolumn2d.js",
+		"alias": "msstackedcolumn2d",
+		"xls": false
+	},
+	{
+		"name": "Multi-series Stacked Column 2D + Line Dual Y Axis",
+		"json": "MSStColLineDY",
+		"code": "xt-attr-msstackedcolumn2dlinedy.js",
+		"alias": "msstackedcolumn2dlinedy",
+		"xls": false
+	},
+	{
+		"name": "Overlapped Column 2D",
+		"json": "OverlappedColumn2d",
+		"code": "xt-attr-overlappedcolumn2d.js",
+		"alias": "overlappedcolumn2d",
+		"xls": false
+	},
+	{
+		"name": "Overlapped Bar 2D",
+		"json": "OverlappedBar2d",
+		"code": "xt-attr-overlappedbar2d.js",
+		"alias": "overlappedbar2d",
+		"xls": false
+	},
+	{
+		"name": "Pareto 2D",
+		"json": "Pareto2D",
+		"code": "xt-attr-pareto2d.js",
+		"alias": "pareto2d",
+		"xls": true
+	},
+	{
+		"name": "Pareto 3D",
+		"json": "Pareto3D",
+		"code": "xt-attr-pareto3d.js",
+		"alias": "pareto3d",
+		"xls": false
+	},
+	{
+		"name": "Pie 2D",
+		"json": "Pie2D",
+		"code": "xt-attr-pie2d.js",
+		"alias": "pie2d",
+		"xls": true
+	},
+	{
+		"name": "Pie 3D",
+		"json": "Pie3D",
+		"code": "xt-attr-pie3d.js",
+		"alias": "pie3d",
+		"xls": true
+	},
+	{
+		"name": "Pyramid Chart",
+		"json": "Pyramid",
+		"code": "xt-attr-pyramid.js",
+		"alias": "pyramid",
+		"xls": true
+	},
+	{
+		"name": "Radar Chart",
+		"json": "Radar",
+		"code": "xt-attr-radar.js",
+		"alias": "radar",
+		"xls": true
+	},
+	{
+		"name": "Real-time Angular",
+		"json": "Angular",
+		"code": "xt-attr-angulargauge.js",
+		"alias": "angulargauge",
+		"xls": false
+	},
+	{
+		"name": "Real-time Area",
+		"json": "RealTimeArea",
+		"code": "xt-attr-realtimearea.js",
+		"alias": "realtimearea",
+		"xls": false
+	},
+	{
+		"name": "Real-time Bulb",
+		"json": "Bulb",
+		"code": "xt-attr-bulb.js",
+		"alias": "bulb",
+		"xls": false
+	},
+	{
+		"name": "Real-time Column",
+		"json": "RealTimeColumn",
+		"code": "xt-attr-realtimecolumn.js",
+		"alias": "realtimecolumn",
+		"xls": false
+	},
+	{
+		"name": "Real-time Cylinder",
+		"json": "Cylinder",
+		"code": "xt-attr-cylinder.js",
+		"alias": "cylinder",
+		"xls": false
+	},
+	{
+		"name": "Real-time Horizontal Linear",
+		"json": "Linear",
+		"code": "xt-attr-hlineargauge.js",
+		"alias": "HLinearGauge",
+		"xls": true
+	},
+	{
+		"name": "Real-time Line",
+		"json": "RealTimeLine",
+		"code": "xt-attr-realtimeline.js",
+		"alias": "realtimeline",
+		"xls": false
+	},
+	{
+		"name": "Real-time Line (Dual Y)",
+		"json": "RealTimeLineDY",
+		"code": "xt-attr-realtimelinedy.js",
+		"alias": "realtimelinedy",
+		"xls": false
+	},
+	{
+		"name": "Real-time Stacked Area",
+		"json": "RealTimeStackedArea",
+		"code": "xt-attr-realtimestackedarea.js",
+		"alias": "realtimestackedarea",
+		"xls": false
+	},
+	{
+		"name": "Real-time Stacked Column",
+		"json": "RealTimeStackedColumn",
+		"code": "xt-attr-realtimestackedcolumn.js",
+		"alias": "realtimestackedcolumn",
+		"xls": false
+	},
+	{
+		"name": "Real-time Thermometer",
+		"json": "Thermometer",
+		"code": "xt-attr-thermometer.js",
+		"alias": "thermometer",
+		"xls": false
+	},
+	{
+		"name": "Scatter Chart",
+		"json": "Scatter",
+		"code": "xt-attr-scatter.js",
+		"alias": "scatter",
+		"xls": true
+	},
+	{
+		"name": "Scroll Area 2D",
+		"json": "ScrollArea2D",
+		"code": "xt-attr-scrollarea.js",
+		"alias": "scrollarea2d",
+		"xls": false
+	},
+	{
+		"name": "Scroll Column 2D",
+		"json": "ScrollColumn2D",
+		"code": "xt-attr-scrollcolumn2d.js",
+		"alias": "scrollcolumn2d",
+		"xls": false
+	},
+	{
+		"name": "Scroll Combination 2D (Dual Y)",
+		"json": "ScrollCombiDY2D",
+		"code": "xt-attr-scrollcombidy2d.js",
+		"alias": "scrollcombidy2d",
+		"xls": false
+	},
+	{
+		"name": "Scroll Combination 2D (Single Y)",
+		"json": "ScrollCombi2D",
+		"code": "xt-attr-scrollcombi2d.js",
+		"alias": "scrollcombi2d",
+		"xls": false
+	},
+	{
+		"name": "Scroll Line 2D",
+		"json": "ScrollLine2D",
+		"code": "xt-attr-scrollline.js",
+		"alias": "scrollline2d",
+		"xls": false
+	},
+	{
+		"name": "Scroll Stacked Column 2D",
+		"json": "ScrollStackedCol2D",
+		"code": "xt-attr-stackedscrollcolumn.js",
+		"alias": "scrollstackedcolumn2d",
+		"xls": false
+	},
+	{
+		"name": "Select-scatter Chart",
+		"json": "SelectScatter",
+		"code": "xt-attr-selectscatter.js",
+		"alias": "selectscatter",
+		"xls": false
+	},
+	{
+		"name": "Single-series Spline 2D",
+		"json": "Spline",
+		"code": "xt-attr-spline.js",
+		"alias": "spline",
+		"xls": true
+	},
+	{
+		"name": "Single-series Spline Area 2D",
+		"json": "SplineArea",
+		"code": "xt-attr-splinearea.js",
+		"alias": "splinearea",
+		"xls": false
+	},
+	{
+		"name": "Spark Column",
+		"json": "SparkColumn",
+		"code": "xt-attr-sparkcolumn.js",
+		"alias": "sparkcolumn",
+		"xls": true
+	},
+	{
+		"name": "Spark Line",
+		"json": "SparkLine",
+		"code": "xt-attr-sparkline.js",
+		"alias": "sparkline",
+		"xls": true
+	},
+	{
+		"name": "Spark Win/Loss",
+		"json": "SparkWL",
+		"code": "xt-attr-sparkwl.js",
+		"alias": "sparkwinloss",
+		"xls": true
+	},
+	{
+		"name": "Stacked 2D Column + Line Single Y-axis",
+		"json": "StCol2DLine",
+		"code": "xt-attr-stackedcolumn2dline.js",
+		"alias": "stackedcolumn2dline",
+		"xls": true
+	},
+	{
+		"name": "Stacked 3D Column + Line Single Y-axis",
+		"json": "StCol3DLine",
+		"code": "xt-attr-stackedcolumn3dline.js",
+		"alias": "stackedcolumn3dline",
+		"xls": false
+	},
+	{
+		"name": "Stacked Area 2D",
+		"json": "StArea2D",
+		"code": "xt-attr-stackedarea2d.js",
+		"alias": "stackedarea2d",
+		"xls": true
+	},
+	{
+		"name": "Stacked Bar 2D",
+		"json": "StBar2D",
+		"code": "xt-attr-stackedbar2d.js",
+		"alias": "stackedbar2d",
+		"xls": true
+	},
+	{
+		"name": "Stacked Bar 3D",
+		"json": "StackedBar3D",
+		"code": "xt-attr-stackedbar3d.js",
+		"alias": "stackedbar3d",
+		"xls": true
+	},
+	{
+		"name": "Stacked Column 2D",
+		"json": "StCol2D",
+		"code": "xt-attr-stackedcolumn2d.js",
+		"alias": "stackedcolumn2d",
+		"xls": true
+	},
+	{
+		"name": "Stacked Column 3D",
+		"json": "StCol3D",
+		"code": "xt-attr-stackedcolumn3d.js",
+		"alias": "stackedcolumn3d",
+		"xls": true
+	},
+	{
+		"name": "Stacked Column 3D + Line Dual Y Axis",
+		"json": "StCol3DLineDY",
+		"code": "xt-attr-stackedcolumn3dlinedy.js",
+		"alias": "stackedcolumn3dlinedy",
+		"xls": false
+	},
+	{
+		"name": "Step Line Charts",
+		"json": "MSStepLine",
+		"code": "xt-attr-msstepline.js",
+		"alias": "msstepline",
+		"xls": false
+	},
+	{
+		"name": "Tree Map Chart",
+		"json": "TreeMap",
+		"code": "xt-attr-treemap.js",
+		"alias": "treemap",
+		"xls": true
+	},
+	{
+		"name": "Vertical Bullet Graph",
+		"json": "VBullet",
+		"code": "xt-attr-vbullet.js",
+		"alias": "vbullet",
+		"xls": false
+	},
+	{
+		"name": "Vertical LED",
+		"json": "Vertical",
+		"code": "xt-attr-vled.js",
+		"alias": "vled",
+		"xls": false
+	},
+	{
+		"name": "Waterfall / Cascade Chart",
+		"json": "Waterfall",
+		"code": "xt-attr-waterfall2d.js",
+		"alias": "waterfall2d",
+		"xls": true
+	},
+	{
+		"name": "Zoom Line",
+		"json": "ZoomLine",
+		"code": "xt-attr-zoomline.js",
+		"alias": "zoomline",
+		"xls": false
+	},
+	{
+		"name": "Zoom Line Dual Y-axis",
+		"json": "ZoomLineDY",
+		"code": "xt-attr-zoomlinedy.js",
+		"alias": "zoomlinedy",
+		"xls": false
+	},
+	{
+		"name": "Zoom Scatter",
+		"json": "ZoomScatter",
+		"code": "xt-attr-zoomscatter.js",
+		"alias": "zoomscatter",
+		"xls": false
+	}
+]
