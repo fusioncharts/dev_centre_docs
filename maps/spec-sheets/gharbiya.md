@@ -9,11 +9,11 @@ Dimensions (Width x Height): 574x595
 
 
 
-{% embed_spec_map gharbiya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|GH|Gharbiya
 

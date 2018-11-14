@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x560
 
 
 
-{% embed_spec_map sweden-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|K|Blekinge
 10|W|Dalarnas
 05|I|Gotland

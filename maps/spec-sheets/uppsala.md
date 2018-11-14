@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x430
 
 
 
-{% embed_spec_map uppsala-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.UP.EN|EN|Enköping
 SE.UP.HE|HE|Heby
 SE.UP.HA|HA|Håbo

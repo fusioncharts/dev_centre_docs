@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map nepalprovincessix-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.SI.RU|RU|Rukum (Western part)
 NP.SI.SL|SL|Salyan
 NP.SI.DP|DP|Dolpa

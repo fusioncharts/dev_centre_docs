@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x560
 
 
 
-{% embed_spec_map fribourg-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.BE.BR|BR|Broye
 CH.BE.GL|GL|Glane
 CH.BE.GR|GR|Greyerz

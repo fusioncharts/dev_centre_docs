@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x320
 
 
 
-{% embed_spec_map evora-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.EV.AL|AL|Alandroal
 PT.EV.AR|AR|Arraiolos
 PT.EV.BO|BO|Borba

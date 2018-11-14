@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sirnak-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.SR.BE | BE | Beytüşşebap
 TR.SR.CI | CI | Cizre
 TR.SR.GU | GU | Güçlükonak

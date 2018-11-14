@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map cienfuegos-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.CF.AB|AB|Abreus
 CU.CF.AP|AP|Aguada de Pasajeros
 CU.CF.CI|CI|Cienfuegos

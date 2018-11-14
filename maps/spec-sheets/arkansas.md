@@ -9,12 +9,12 @@ Dimensions (Width x Height): 701x611
 
 
 
-{% embed_spec_map arkansas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AR|Arkansas
 003|AS|Ashley
 005|BA|Baxter

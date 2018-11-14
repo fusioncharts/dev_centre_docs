@@ -9,12 +9,12 @@ Dimensions (Width x Height): 261x371
 
 
 
-{% embed_spec_map ghana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 GH.AH|AH|Ashanti
 GH.BA|BA|Brong-Ahafo
 GH.CP|CP|Central

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 235x432
 
 
 
-{% embed_spec_map shanxi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|CH|Changzhi
 3|DA|Datong
 4|JC|Jincheng

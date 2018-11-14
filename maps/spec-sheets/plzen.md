@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x430
 
 
 
-{% embed_spec_map plzen-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.PK.DO|DO|Domažlice
 CZ.PK.KT|KT|Klatovy
 CZ.PK.PM|PM|Plzeň

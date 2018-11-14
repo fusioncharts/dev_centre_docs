@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x580
 
 
 
-{% embed_spec_map guaviare-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.HU.AC|AC|Acevedo
 CO.HU.AG|AG|Agrado
 CO.HU.AI|AI|Aipe

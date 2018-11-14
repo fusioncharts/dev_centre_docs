@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map khorasanrazavi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.KV.BJ|BJ|Bajestan County
 IR.KV.BK|BK|Bakharz County
 IR.KV.BA|BA|Bardaskan County

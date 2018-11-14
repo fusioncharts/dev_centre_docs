@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x591
 
 
 
-{% embed_spec_map kagoshima-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Aira
 002|002|Akune
 003|003|Amami

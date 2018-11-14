@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northwesternzambia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.NW.CV|CV|Chavuma District
 ZM.NW.IG|IG|Ikelenge District
 ZM.NW.KO|KO|Kabompo District

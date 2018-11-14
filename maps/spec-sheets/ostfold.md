@@ -9,12 +9,12 @@ Dimensions (Width x Height): 453x600
 
 
 
-{% embed_spec_map ostfold-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.OF.AR|AR|Aremark
 NO.OF.AS|AS|Askim
 NO.OF.EI|EI|Eidsberg

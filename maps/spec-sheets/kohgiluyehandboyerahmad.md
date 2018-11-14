@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kohgiluyehandboyerahmad-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.KB.BH|BH|Basht County
 IR.KB.BM|BM|Bahmai County
 IR.KB.BA|BA|Boyer-Ahmad County

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 520x590
 
 
 
-{% embed_spec_map chiba-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Abiko
 002|002|Asahi
 003|003|Chiba

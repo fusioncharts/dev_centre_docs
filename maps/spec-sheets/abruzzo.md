@@ -9,12 +9,12 @@ Dimensions (Width x Height): 460x430
 
 
 
-{% embed_spec_map abruzzo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.CH|CH|Chieti
 IT.AQ|AQ|L'Aquila
 IT.PE|PE|Pescara

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map penghucounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.PH.MG | MG | Magong City
 TW.PH.HU | HU | Huxi Township
 TW.PH.BA | BA | Baisha Township

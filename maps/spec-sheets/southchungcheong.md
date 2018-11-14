@@ -10,12 +10,12 @@ Dimensions (Width x Height): 297x214
 
 
 
-{% embed_spec_map southchungcheong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AS|Asan
 02|BY|Boryeong
 03|BC|Buyeo County

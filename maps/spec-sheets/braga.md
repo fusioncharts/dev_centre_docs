@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x240
 
 
 
-{% embed_spec_map braga-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.BR.AM|AM|Amares
 PT.BR.BA|BA|Barcelos
 PT.BR.BR|BR|Braga

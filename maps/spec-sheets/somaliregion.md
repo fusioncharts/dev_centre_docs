@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map somaliregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ET.SO.SH|SH|Shinile
 ET.SO.JJ|JJ|Jigjiga
 ET.SO.FQ|FQ|Fik

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map muchinga-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.MU.CM|CM|Chama District
 ZM.MU.CS|CS|Chinsali District
 ZM.MU.IO|IO|Isoka District

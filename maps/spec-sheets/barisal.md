@@ -9,12 +9,12 @@ Dimensions (Width x Height): 431x600
 
 
 
-{% embed_spec_map barisal-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BD.BA.BG|BG|Barguna District
 BD.BA.BS|BS|Barisal District
 BD.BA.BL|BL|Bhola District

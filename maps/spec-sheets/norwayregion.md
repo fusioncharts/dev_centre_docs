@@ -9,12 +9,12 @@ Dimensions (Width x Height): 558x600
 
 
 
-{% embed_spec_map norwayregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 5|EN|Eastern Norway
 1|NN|Northern Norway
 4|SN|Southern Norway

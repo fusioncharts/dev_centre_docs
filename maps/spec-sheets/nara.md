@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x594
 
 
 
-{% embed_spec_map nara-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Gojo
 002|002|Gose
 003|003|Ikoma

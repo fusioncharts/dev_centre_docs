@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x560
 
 
 
-{% embed_spec_map queretarodearteaga-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.QE.AM|AM|Amealco de Bonfil
 MX.QE.AR|AR|Arroyo Seco
 MX.QE.CM|CM|Cadereyta de Montes

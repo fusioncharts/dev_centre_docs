@@ -9,12 +9,12 @@ Dimensions (Width x Height): 527x600
 
 
 
-{% embed_spec_map eastsouthcentraldma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 524|ATL-GA|ATLANTA
 716|BAT-LA|BATON ROUGE
 746|BIL-MS|BILOXI-GULFPORT

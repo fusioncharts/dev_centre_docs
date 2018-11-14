@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map philippinesregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.IL | IL | Ilocos Region (Region I)
 PH.CA | CA | Cagayan Valley (Region II)
 PH.CE | CE | Central Luzon (Region III)

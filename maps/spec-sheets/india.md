@@ -10,12 +10,12 @@ Dimensions (Width x Height): 595x640
 
 
 
-{% embed_spec_map india-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AN|Andaman and Nicobar Islands
 002|AP|Andhra Pradesh
 003|AR|Arunachal Pradesh

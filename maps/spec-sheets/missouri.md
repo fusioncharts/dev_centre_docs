@@ -9,12 +9,12 @@ Dimensions (Width x Height): 678x597
 
 
 
-{% embed_spec_map missouri-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adair
 003|AN|Andrew
 005|AT|Atchison

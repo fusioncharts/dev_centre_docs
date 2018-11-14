@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map occitanie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.LA.AG|AG|Ariège
 FR.LA.AD|AD|Aude
 FR.LA.AV|AV|Aveyron

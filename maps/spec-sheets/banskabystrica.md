@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x402
 
 
 
-{% embed_spec_map banskabystrica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SK.BC.BB|BB|Banská Bystrica
 SK.BC.BS|BS|Banská Štiavnica
 SK.BC.BR|BR|Brezno

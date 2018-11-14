@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x594
 
 
 
-{% embed_spec_map wakayama-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Arida
 002|002|Gobo
 003|003|Hashimoto

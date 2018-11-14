@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map narayani-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.NA.BA|BA|Bara
 NP.NA.CH|CH|Chitwan
 NP.NA.MK|MK|Makwanpur

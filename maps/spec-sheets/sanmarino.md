@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x400
 
 
 
-{% embed_spec_map sanmarino-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AC|Acquaviva
 06|BM|Borgo Maggiore
 02|CH|Chiesanuova

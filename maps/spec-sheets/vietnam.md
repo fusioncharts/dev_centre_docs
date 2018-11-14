@@ -9,12 +9,12 @@ Dimensions (Width x Height): 321x614
 
 
 
-{% embed_spec_map vietnam-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 VN.AG|AG|An Giang
 VN.BK|BK|Bac Can
 VN.BG|BG|Bac Giang

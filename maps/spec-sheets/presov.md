@@ -9,12 +9,12 @@ Dimensions (Width x Height): 900x365
 
 
 
-{% embed_spec_map presov-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SK.PV.BJ|BJ|Bardejov
 SK.PV.HE|HE|Humenné
 SK.PV.KK|KK|Kežmarok

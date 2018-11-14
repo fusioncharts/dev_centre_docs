@@ -9,12 +9,12 @@ Dimensions (Width x Height): 801x391
 
 
 
-{% embed_spec_map masvingo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZW.MV.BK|BK|Bikitasl
 ZW.MV.CR|CR|Chiredzi
 ZW.MV.CV|CV|Chivi

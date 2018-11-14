@@ -9,12 +9,12 @@ Dimensions (Width x Height): 650x630
 
 
 
-{% embed_spec_map asia-middle-east-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 002|AM|Armenia
 003|AZ|Azerbaijan
 005|BD|Bangladesh

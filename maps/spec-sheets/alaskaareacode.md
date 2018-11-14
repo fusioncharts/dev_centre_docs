@@ -9,11 +9,11 @@ Dimensions (Width x Height): 500x380
 
 
 
-{% embed_spec_map alaskaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 907|907|907
 

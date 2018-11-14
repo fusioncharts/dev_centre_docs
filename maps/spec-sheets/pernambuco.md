@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1375x600
 
 
 
-{% embed_spec_map pernambuco-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2600401|AP|?gua Preta
 2600500|AB|?guas Belas
 2600054|AL|Abreu e Lima

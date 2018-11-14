@@ -9,12 +9,12 @@ Dimensions (Width x Height): 440x480
 
 
 
-{% embed_spec_map ohioareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 216|216|216
 234-330|234-330|234-330
 419-567|419-567|419-567

@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map nepalprovincesone-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.ON.TP|TP|Taplejung
 NP.ON.PN|PN|Panchthar
 NP.ON.IL|IL|Ilam

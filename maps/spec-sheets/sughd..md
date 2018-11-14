@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sughd-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TJ.LE.MA|MA|Mastchoh
 TJ.LE.BA|MA|Bobojon Ghafurov
 TJ.LE.AS|AS|Asht

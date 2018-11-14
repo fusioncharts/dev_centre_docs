@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x500
 
 
 
-{% embed_spec_map niederosterreich-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AT.NO.AM|AM|Amstetten
 AT.NO.BN|BN|Baden
 AT.NO.BL|BL|Bruck an der Leitha

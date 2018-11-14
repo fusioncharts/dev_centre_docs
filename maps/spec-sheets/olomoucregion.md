@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x450
 
 
 
-{% embed_spec_map olomoucregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.OK.JE|JE|Jeseník
 CZ.OK.OC|OC|Olomouc
 CZ.OK.PV|PV|Prostějov

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map monteplata-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.MP.BA|BA|Bayaguana
 DO.MP.MT|MT|Monte Plata
 DO.MP.ES|ES|Peralvillo

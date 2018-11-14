@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x500
 
 
 
-{% embed_spec_map fukuoka-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Asakura
 002|002|Buzen
 003|003|Chikugo

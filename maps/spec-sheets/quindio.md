@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map quindio-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.QD.AR|AR|Armenia
 CO.QD.BU|BU|Buenavista
 CO.QD.CA|CA|Calarcá

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x552
 
 
 
-{% embed_spec_map centraltransdanubia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|FE|Fejér
 02|KE|Komárom-Esztergom
 03|VE|Veszprém

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 349x600
 
 
 
-{% embed_spec_map nordland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.NO.AL|AL|Alstahaug
 NO.NO.AN|AN|Andøy
 NO.NO.BA|BA|Ballangen

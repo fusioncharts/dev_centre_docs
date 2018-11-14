@@ -9,12 +9,12 @@ Dimensions (Width x Height): 570x310
 
 
 
-{% embed_spec_map austria-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BU|Burgenland
 02|KA|Kärnten
 03|NI|Niederösterreich

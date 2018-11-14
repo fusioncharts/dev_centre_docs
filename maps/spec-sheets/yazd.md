@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map yazd-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.YA.AB|AB|Abarkuh County
 IR.YA.AR|AR|Ardekan County
 IR.YA.SA|SA|Ashkezar County

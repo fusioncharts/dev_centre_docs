@@ -9,12 +9,12 @@ Dimensions (Width x Height): 386x600
 
 
 
-{% embed_spec_map manawatuwanganui-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|HW|Horowhenua District
 4|MN|Manawatu District
 3|PN|Palmerston North City

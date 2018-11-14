@@ -9,12 +9,12 @@ Dimensions (Width x Height): 545x974
 
 
 
-{% embed_spec_map thailand-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TH.AC|AC|Amnat Charoen
 TH.AT|AT|Ang Thong
 TH.AU|AU|Ayutthaya

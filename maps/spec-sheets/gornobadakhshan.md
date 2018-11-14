@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map gornobadakhshan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TJ.BK.DA|DA|Darvoz
 TJ.BK.VA|VA|Vanj
 TJ.BK.RU|RU|Rushon

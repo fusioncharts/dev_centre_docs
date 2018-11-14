@@ -9,12 +9,12 @@ Dimensions (Width x Height): 576x681
 
 
 
-{% embed_spec_map arizona-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AP|Apache
 003|CO|Cochise
 005|CC|Coconino

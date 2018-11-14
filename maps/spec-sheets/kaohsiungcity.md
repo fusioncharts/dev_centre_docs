@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kaohsiungcity-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.KH.GU | GU | Gushan
 TW.KH.LG | LG | Lingya
 TW.KH.NA | NA | Nanzi

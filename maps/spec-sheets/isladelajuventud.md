@@ -9,10 +9,10 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map isladelajuventud-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.IJ.IJ|IJ|Isla de la Juventud

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 534x439
 
 
 
-{% embed_spec_map southeastasia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 98|BN|Brunei
 99|MM|Burma (Myanmar)
 100|KH|Cambodia

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 910x980
 
 
 
-{% embed_spec_map bahia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2900405|AG|?gua Fria
 2900207|AB|Abaré
 2900108|AB|Abaíra

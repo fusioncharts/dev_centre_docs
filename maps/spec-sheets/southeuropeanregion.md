@@ -9,12 +9,12 @@ Dimensions (Width x Height): 381x136
 
 
 
-{% embed_spec_map southeuropeanregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AL|Albania
 02|AD|Andorra
 03|BA|Bosnia & Herzegovina

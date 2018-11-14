@@ -9,12 +9,12 @@ Dimensions (Width x Height): 250x540
 
 
 
-{% embed_spec_map saintvincentandthegrenadines-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CH|Charlotte
 06|GT|Grenadines
 02|AN|Saint Andrew

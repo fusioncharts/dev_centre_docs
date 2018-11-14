@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map isfahan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.ES.AB|AB|Aran-o-Bidgol County
 IR.ES.AR|AR|Ardestan County
 IR.ES.BM|BM|Borkhar-o-Meymeh County

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 880x720
 
 
 
-{% embed_spec_map china2-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CN.AH|AH|Anhui
 CN.BJ|BJ|Beijing
 CN.CQ|CQ|Chongqing

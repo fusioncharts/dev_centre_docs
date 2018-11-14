@@ -9,12 +9,12 @@ Dimensions (Width x Height): 667x573
 
 
 
-{% embed_spec_map swietokrzyskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.SK.BU|BU|Buski
 PL.SK.JE|JE|Jedrzejowski
 PL.SK.KA|KA|Kazimierski

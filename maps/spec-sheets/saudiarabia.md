@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x360
 
 
 
-{% embed_spec_map saudiarabia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SA.BA|BA|Al Bahah
 SA.HS|HS|Al Hudud Ash Shamaliyah
 SA.JF|JF|Al Jawf

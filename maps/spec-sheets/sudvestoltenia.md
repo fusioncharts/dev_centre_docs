@@ -9,12 +9,12 @@ Dimensions (Width x Height): 301x274
 
 
 
-{% embed_spec_map sudvestoltenia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RO.DJ|DJ|Dolj
 RO.GJ|GJ|Gorj
 RO.MH|MH|Mehedinţi

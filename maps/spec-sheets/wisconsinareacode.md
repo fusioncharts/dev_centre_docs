@@ -9,12 +9,12 @@ Dimensions (Width x Height): 460x480
 
 
 
-{% embed_spec_map wisconsinareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 262|262|262
 414|414|414
 608|608|608

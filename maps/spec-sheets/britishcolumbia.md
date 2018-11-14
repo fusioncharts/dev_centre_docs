@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x555
 
 
 
-{% embed_spec_map britishcolumbia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AC|Alberni-Clayoquot
 02|BN|Bulkley-Nechako
 03|CA|Capital

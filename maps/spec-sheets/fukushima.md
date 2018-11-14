@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x450
 
 
 
-{% embed_spec_map fukushima-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Aizuwakamatsu
 002|002|Date
 003|003|Fukushima

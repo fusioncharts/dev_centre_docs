@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map zamboangadelsur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.ZS.AR | AR | Aurora
 PH.ZS.BY | BY | Bayog
 PH.ZS.DI | DI | Dimataling

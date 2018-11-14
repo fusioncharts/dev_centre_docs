@@ -9,12 +9,12 @@ Dimensions (Width x Height): 360x594
 
 
 
-{% embed_spec_map ishikawa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Hakui
 002|002|Hakusan
 003|003|Kaga

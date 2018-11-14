@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x390
 
 
 
-{% embed_spec_map braganca-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.BA.AF|AF|Alfândega da Fé
 PT.BA.BR|BR|Bragança
 PT.BA.CA|CA|Carrazeda de Ansiães

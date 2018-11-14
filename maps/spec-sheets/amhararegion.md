@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map amhararegion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ET.AM.DG|DG|North Gonder
 ET.AM.WM|WM|Wag Hemra
 ET.AM.DW|DW|North Wello

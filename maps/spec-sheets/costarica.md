@@ -9,12 +9,12 @@ Dimensions (Width x Height): 311x301
 
 
 
-{% embed_spec_map costarica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AL|Alajuela
 02|CA|Cartago
 03|GU|Guanacaste

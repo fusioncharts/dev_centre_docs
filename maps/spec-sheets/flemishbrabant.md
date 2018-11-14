@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x270
 
 
 
-{% embed_spec_map flemishbrabant-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.VB.AA|AA|Aarschot
 BE.VB.AF|AF|Affligem
 BE.VB.AS|AS|Asse

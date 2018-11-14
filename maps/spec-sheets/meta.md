@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map meta-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.ME.AC|AC|Acacías
 CO.ME.BA|BA|Barranca de Upía
 CO.ME.CA|CA|Cabuyaro

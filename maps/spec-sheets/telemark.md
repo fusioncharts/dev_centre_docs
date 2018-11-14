@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x600
 
 
 
-{% embed_spec_map telemark-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.TE.BA|BA|Bamble
 NO.TE.BO|BO|Bø
 NO.TE.DR|DR|Drangedal

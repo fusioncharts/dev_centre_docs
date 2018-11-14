@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x390
 
 
 
-{% embed_spec_map wien-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AT.WI.AL|AL|Alsergrund
 AT.WI.BR|BR|Brigittenau
 AT.WI.DO|DO|Donaustadt

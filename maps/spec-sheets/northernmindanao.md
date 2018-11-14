@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northernmindanao-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.NM.BK | BK | Bukidnon
 PH.NM.CM | CM | Camiguin
 PH.NM.LN | LN | Lanao del Norte

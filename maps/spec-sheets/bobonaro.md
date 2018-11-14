@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map bobonaro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TL.BB.AT|AT|Atabae
 TL.BB.BA|BA|Balibó
 TL.BB.BO|BO|Bobonaro

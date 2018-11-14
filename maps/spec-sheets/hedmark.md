@@ -9,12 +9,12 @@ Dimensions (Width x Height): 317x600
 
 
 
-{% embed_spec_map hedmark-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.HE.AL|AL|Alvdal
 NO.HE.EI|EI|Eidskog
 NO.HE.EL|EL|Elverum

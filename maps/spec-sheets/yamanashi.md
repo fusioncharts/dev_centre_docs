@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x500
 
 
 
-{% embed_spec_map yamanashi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Chuo
 002|002|Fuefuki
 003|003|Fujiyoshida

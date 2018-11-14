@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x300
 
 
 
-{% embed_spec_map tirol-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AT.TR.IM|IM|Imst
 AT.TR.IN|IN|Innsbruck
 AT.TR.IL|IL|Innsbruck-Land

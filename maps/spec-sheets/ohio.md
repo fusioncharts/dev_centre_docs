@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x660
 
 
 
-{% embed_spec_map ohio-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adams
 003|AL|Allen
 005|AS|Ashland

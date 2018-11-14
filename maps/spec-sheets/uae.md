@@ -9,12 +9,12 @@ Dimensions (Width x Height): 570x470
 
 
 
-{% embed_spec_map uae-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AZ|Abu Dhabi
 02|AJ|Ajman
 03|DU|Dubai

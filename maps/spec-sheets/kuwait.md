@@ -9,12 +9,12 @@ Dimensions (Width x Height): 520x500
 
 
 
-{% embed_spec_map kuwait-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KW.AH|AH|Al Ahmadi
 KW.FA|FA|Al Farwaniyah
 KW.JA|JA|Al Jahrah

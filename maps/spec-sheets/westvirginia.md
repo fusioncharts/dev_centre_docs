@@ -9,12 +9,12 @@ Dimensions (Width x Height): 700x600
 
 
 
-{% embed_spec_map westvirginia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|BA|Barbour
 003|BE|Berkeley
 005|BO|Boone

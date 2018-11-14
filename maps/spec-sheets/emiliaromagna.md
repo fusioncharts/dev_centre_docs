@@ -9,12 +9,12 @@ Dimensions (Width x Height): 662x371
 
 
 
-{% embed_spec_map emiliaromagna-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.BO|BO|Bologna
 IT.FE|FE|Ferrara
 IT.FO|FO|Forli-Cesena

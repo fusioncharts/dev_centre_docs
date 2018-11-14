@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map hualiencounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.HL.HU | HU | Hualien City
 TW.HL.FE | FE | Fenglin Township
 TW.HL.YU | YU | Yuli Township

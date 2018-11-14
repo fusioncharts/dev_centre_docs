@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x450
 
 
 
-{% embed_spec_map newbrunswick-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.NB.AC|AC|Acadian Coastal
 CA.NB.AR|AR|Appalachian Range
 CA.NB.FC|FC|Fundy Coastal

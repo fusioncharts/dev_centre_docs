@@ -9,12 +9,12 @@ Dimensions (Width x Height): 415x526
 
 
 
-{% embed_spec_map easternnorway-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 5|AK|Akershus
 3|BU|Buskerud
 1|HE|Hedmark

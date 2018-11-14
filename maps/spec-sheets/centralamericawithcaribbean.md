@@ -9,12 +9,12 @@ Dimensions (Width x Height): 650x550
 
 
 
-{% embed_spec_map centralamericawithcaribbean-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 16|AG|Antigua
 09|BS|Bahamas
 20|BB|Barbados

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map santodomingo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.SD.LA|LA|Los Alcarrizos
 DO.SD.BC|BC|Boca Chica
 DO.SD.PB|PB|Pedro Brand

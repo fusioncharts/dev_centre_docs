@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x450
 
 
 
-{% embed_spec_map europe2-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 EU.AF|AF|Aland (Finland)
 EU.AL|AL|Albania
 EU.AD|AD|Andorra

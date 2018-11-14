@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map golestan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.GO.AL|AL|Aliabad County
 IR.GO.AQ|AQ|Aqqala County
 IR.GO.AZ|AZ|Azadshahr County

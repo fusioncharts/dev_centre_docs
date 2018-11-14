@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map lorestan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.LO.AL|AL|Aligudarz County
 IR.LO.AZ|AZ|Azna County
 IR.LO.BO|BO|Borujerd County

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x410
 
 
 
-{% embed_spec_map caribbeansregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.AN|AN|Anguilla
 CA.AB|AB|Antigua and Barbuda
 CA.AR|AR|Aruba

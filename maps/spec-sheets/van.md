@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map van-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.VA.BC | BC | Bahçesaray
 TR.VA.BK | BK | Başkale
 TR.VA.CD | CD | Çaldıran

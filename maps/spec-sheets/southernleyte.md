@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map southernleyte-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.SL.AA | AA | Anahawan
 PH.SL.BN | BN | Bontoc
 PH.SL.HG | HG | Hinunangan

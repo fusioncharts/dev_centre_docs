@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map antioquia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.AN.AB|AB|Abejorral
 CO.AN.AQ|AQ|Abriaquí
 CO.AN.AJ|AJ|Alejandría

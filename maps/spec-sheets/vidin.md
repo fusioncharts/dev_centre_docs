@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x600
 
 
 
-{% embed_spec_map vidin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BE|Belogradchik
 02|BO|Boynitsa
 03|BR|Bregovo

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x280
 
 
 
-{% embed_spec_map haiti-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 06|AR|Artibonite
 07|CE|Centre
 14|GA|Grand'Anse

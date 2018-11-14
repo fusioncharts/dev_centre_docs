@@ -9,12 +9,12 @@ Dimensions (Width x Height): 520x460
 
 
 
-{% embed_spec_map lazio-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.FR|FR|Frosinone
 IT.LT|LT|Latina
 IT.RI|RI|Rieti

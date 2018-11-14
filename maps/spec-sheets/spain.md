@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x391
 
 
 
-{% embed_spec_map spain-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AN|Andalusia
 002|AR|Aragon
 003|AS|Asturias

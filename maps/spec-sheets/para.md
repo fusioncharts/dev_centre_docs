@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1210x1170
 
 
 
-{% embed_spec_map para-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1500347|AN|?gua Azul do Norte
 1500107|AB|Abaetetuba
 1500131|AF|Abel Figueiredo

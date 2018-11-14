@@ -9,11 +9,11 @@ Dimensions (Width x Height): 710x610
 
 
 
-{% embed_spec_map curacao-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.CR|CR|Curacao
 

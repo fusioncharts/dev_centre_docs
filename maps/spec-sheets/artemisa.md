@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map artemisa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.AR.AL|AL|Alquizar
 CU.AR.AR|AR|Artemisa
 CU.AR.BH|BH|Bahía Honda

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x360
 
 
 
-{% embed_spec_map coimbra-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.CO.AR|AR|Arganil
 PT.CO.CA|CA|Cantanhede
 PT.CO.CO|CO|Coimbra

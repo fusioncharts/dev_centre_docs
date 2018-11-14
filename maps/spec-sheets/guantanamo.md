@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map guantanamo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.GU.BA|BA|Baracoa
 CU.GU.CA|CA|Caimanera
 CU.GU.ES|ES|El Salvador

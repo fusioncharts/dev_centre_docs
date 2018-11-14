@@ -9,12 +9,12 @@ Dimensions (Width x Height): 268x329
 
 
 
-{% embed_spec_map southamerica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AR|Argentina
 002|BO|Bolivia
 003|BR|Brazil

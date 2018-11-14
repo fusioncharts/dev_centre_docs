@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1400x850
 
 
 
-{% embed_spec_map riograndedonorte-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2400109|AC|Acari
 2400307|AB|Afonso Bezerra
 2400505|AL|Alexandria

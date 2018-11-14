@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x385
 
 
 
-{% embed_spec_map floridaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 239|239|239
 305|305|305
 305-786|305-786|305-786

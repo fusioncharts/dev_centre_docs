@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map yunlincounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.YL.DL | DL | Douliu City
 TW.YL.BG | BG | Beigang Township
 TW.YL.DN | DN | Dounan Township

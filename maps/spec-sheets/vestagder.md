@@ -9,12 +9,12 @@ Dimensions (Width x Height): 458x600
 
 
 
-{% embed_spec_map vestagder-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.VA.AU|AU|Audnedal
 NO.VA.FA|FA|Farsund
 NO.VA.FL|FL|Flekkefjord

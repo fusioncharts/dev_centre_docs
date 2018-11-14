@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map agusandelsur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.AS.BY | BY | Bayugan
 PH.AS.BN | BN | Bunawan
 PH.AS.EP | EP | Esperanza

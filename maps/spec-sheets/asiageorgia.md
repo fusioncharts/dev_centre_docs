@@ -9,12 +9,12 @@ Dimensions (Width x Height): 570x290
 
 
 
-{% embed_spec_map asiageorgia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AB|Abkhazia
 02|AJ|Adjara
 03|GU|Guria

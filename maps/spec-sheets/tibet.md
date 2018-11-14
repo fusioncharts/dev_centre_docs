@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x330
 
 
 
-{% embed_spec_map tibet-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TI.LP|LP|Lhasa Prefecture
 TI.NG|NG|Nagqu Prefecture
 TI.NA|NA|Ngari Prefecture

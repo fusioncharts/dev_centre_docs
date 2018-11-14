@@ -9,12 +9,12 @@ Dimensions (Width x Height): 910x440
 
 
 
-{% embed_spec_map caymanislands-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KY.BT|BT|Bodden Town
 KY.CB|CB|Cayman Brac
 KY.EE|EE|East End

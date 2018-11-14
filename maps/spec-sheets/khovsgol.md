@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map khovsgol-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.HG.AL | AL | Alag-Erdene
 MN.HG.KG | KG | Khatgal
 MN.HG.AR | AR | Arbulag

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map logar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.LW.AZ|AZ|Azra
 AF.LW.BB|BB|Baraki Barak
 AF.LW.CH|CH|Charkh

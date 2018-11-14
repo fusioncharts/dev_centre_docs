@@ -10,12 +10,12 @@ Dimensions (Width x Height): 350x450
 
 
 
-{% embed_spec_map karnataka-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.KA.BD|BD|Bidar
 IN.KA.BN|BN|Bengaluru (Bangalore) Urban
 IN.KA.BR|BR|Bengaluru (Bangalore) Rural

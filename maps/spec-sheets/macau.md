@@ -9,12 +9,12 @@ Dimensions (Width x Height): 480x770
 
 
 
-{% embed_spec_map macau-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MO.IL.CO|CO|Coloane
 MO.IL.CT|CT|Cotai
 MO.MA.NF|NF|Nossa Senhora de Fátima

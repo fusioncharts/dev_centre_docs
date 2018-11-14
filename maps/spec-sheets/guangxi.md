@@ -9,12 +9,12 @@ Dimensions (Width x Height): 705x514
 
 
 
-{% embed_spec_map guangxi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1|BA|Baise
 13|BE|Beihai
 6|CG|Chongzuo

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x340
 
 
 
-{% embed_spec_map gabon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 GA.ES|ES|Estuaire
 GA.HO|HO|Haut-Ogooue
 GA.MO|MO|Moyen-Ogooue

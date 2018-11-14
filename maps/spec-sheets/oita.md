@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x510
 
 
 
-{% embed_spec_map oita-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Beppu
 002|002|Bungo ono
 003|003|Bungotakada

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x490
 
 
 
-{% embed_spec_map okayama-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Akaiwa
 002|002|Asakuchi
 003|003|Bizen

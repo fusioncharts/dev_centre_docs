@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x360
 
 
 
-{% embed_spec_map angola-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AO.BO|BO|Bengo
 AO.BG|BG|Benguela
 AO.BI|BI|Bie

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sukhbaatar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.SB.AS | AS | Asgat
 MN.SB.BA | BA | Baruun-Urt
 MN.SB.BD | BD | Bayandelger

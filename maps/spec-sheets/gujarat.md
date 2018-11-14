@@ -11,12 +11,12 @@ Dimensions (Width x Height): 460x380
 
 
 
-{% embed_spec_map gujarat-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.GU.AH|AH|Ahmedabad
 IN.GU.AM|AM|Amreli
 IN.GU.AN|AN|Anand

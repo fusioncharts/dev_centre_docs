@@ -9,12 +9,12 @@ Dimensions (Width x Height): 319x600
 
 
 
-{% embed_spec_map waikato-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 11|FK|Franklin District
 7|HM|Hamilton City
 10|HK|Hauraki District

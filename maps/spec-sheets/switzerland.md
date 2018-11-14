@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x341
 
 
 
-{% embed_spec_map switzerland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AA|Aargau
 02|AR|Ausser-Rhoden
 03|BL|Basel-Landschaft

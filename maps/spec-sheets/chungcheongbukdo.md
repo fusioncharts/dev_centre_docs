@@ -9,12 +9,12 @@ Dimensions (Width x Height): 294x265
 
 
 
-{% embed_spec_map chungcheongbukdo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 04|BC|Boeun County
 01|CJ|Cheongju
 05|CC|Cheongwon County

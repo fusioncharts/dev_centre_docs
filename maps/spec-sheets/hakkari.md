@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map hakkari-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.HK.CU | CU | Çukurca
 TR.HK.HK | HK | Hakkâri
 TR.HK.SE | SE | Şemdinli

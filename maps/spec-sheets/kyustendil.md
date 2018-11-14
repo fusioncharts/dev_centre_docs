@@ -9,12 +9,12 @@ Dimensions (Width x Height): 688x486
 
 
 
-{% embed_spec_map kyustendil-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BS|Boboshevo
 02|BD|Bobovdol
 03|DU|Dupnitsa

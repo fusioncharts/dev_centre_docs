@@ -9,12 +9,12 @@ Dimensions (Width x Height): 533x385
 
 
 
-{% embed_spec_map neimongol-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1|AL|Alxa
 5|BT|Baotou
 2|BN|Bayan Nur

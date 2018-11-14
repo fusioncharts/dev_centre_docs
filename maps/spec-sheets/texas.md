@@ -9,12 +9,12 @@ Dimensions (Width x Height): 970x910
 
 
 
-{% embed_spec_map texas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AND|Anderson
 003|ANR|Andrews
 005|ANG|Angelina

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 740x490
 
 
 
-{% embed_spec_map colima-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.CL.AR|AR|Armería
 MX.CL.CL|CL|Colima
 MX.CL.CM|CM|Comala

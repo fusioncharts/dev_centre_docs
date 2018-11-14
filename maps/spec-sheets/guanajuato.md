@@ -9,12 +9,12 @@ Dimensions (Width x Height): 770x620
 
 
 
-{% embed_spec_map guanajuato-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.GJ.AB|AB|Abasolo
 MX.GJ.AC|AC|Acámbaro
 MX.GJ.AL|AL|Allende

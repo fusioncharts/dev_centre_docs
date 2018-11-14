@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map tokat-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.TT.AL | AL | Almus
 TR.TT.AR | AR | Artova
 TR.TT.BA | BA | Başçiftlik

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 330x450
 
 
 
-{% embed_spec_map guyana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 GY.BA|BA|Barima-Waini
 GY.CU|CU|Cuyuni-Mazaruni
 GY.DE|DE|Demerara-Mahaica

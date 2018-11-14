@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x380
 
 
 
-{% embed_spec_map badenwurttemberg-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.BW.AD|AD|Alb Donau
 DE.BW.BA|BA|Baden-Baden
 DE.BW.BI|BI|Biberach

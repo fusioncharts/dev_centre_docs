@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map risaralda-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.RI.AP|AP|Apía
 CO.RI.BA|BA|Balboa
 CO.RI.BE|BE|Belén de Umbría

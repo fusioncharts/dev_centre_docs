@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map markazi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.MK.AS|AS|Ashtian County
 IR.MK.AR|AR|Arak County
 IR.MK.DE|DE|Delijan County

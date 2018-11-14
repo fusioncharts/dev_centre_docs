@@ -9,12 +9,12 @@ Dimensions (Width x Height): 490x560
 
 
 
-{% embed_spec_map england-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|BE|Bedfordshire
 002|BR|Berkshire
 003|BU|Buckinghamshire

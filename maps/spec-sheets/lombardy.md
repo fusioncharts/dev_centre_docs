@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x510
 
 
 
-{% embed_spec_map lombardy-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.BG|BG|Bergamo
 IT.BS|BS|Brescia
 IT.CO|CO|Como

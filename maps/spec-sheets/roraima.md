@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1150x1300
 
 
 
-{% embed_spec_map roraima-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1400050|AA|Alto Alegre
 1400027|AM|Amajari
 1400100|BV|Boa Vista

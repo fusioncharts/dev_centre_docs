@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map casanare-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.CS.AG|AG|Aguazul
 CO.CS.CH|CH|Chámeza
 CO.CS.HA|HA|Hato Corozal

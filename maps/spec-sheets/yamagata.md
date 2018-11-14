@@ -9,12 +9,12 @@ Dimensions (Width x Height): 360x590
 
 
 
-{% embed_spec_map yamagata-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Higashine
 002|002|Kaminoyama
 003|003|Murayama

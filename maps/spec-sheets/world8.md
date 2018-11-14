@@ -9,12 +9,12 @@ Dimensions (Width x Height): 715x405
 
 
 
-{% embed_spec_map world8-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 03|AF|Africa
 01|AS|Asia
 06|CA|Central America

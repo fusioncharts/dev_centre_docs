@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map nepalprovincesseven-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.SE.BU|BU|Bajura
 NP.SE.BH|BH|Bajhang
 NP.SE.DT|DT|Doti

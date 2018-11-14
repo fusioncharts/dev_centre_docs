@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northhamgyong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KP.CG|CG|Chongjin
 KP.HY|HY|Hoiryong
 KP.HD|HD|Hwadae

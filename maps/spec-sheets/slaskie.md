@@ -9,12 +9,12 @@ Dimensions (Width x Height): 449x607
 
 
 
-{% embed_spec_map slaskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.SL.BE|BE|Bedzinski
 PL.SL.BI|BI|Bielski
 PL.SL.BM|BM|Bielsko-Biala

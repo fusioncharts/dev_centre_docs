@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map chagang-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KP.CH|CH|Chosan
 KP.HU|HU|Huichon
 KP.HW|HW|Hwaphyong

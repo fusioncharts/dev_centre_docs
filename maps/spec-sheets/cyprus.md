@@ -9,12 +9,12 @@ Dimensions (Width x Height): 620x380
 
 
 
-{% embed_spec_map cyprus-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|FA|Famagusta
 02|KY|Kyrenia
 03|LA|Larnaca

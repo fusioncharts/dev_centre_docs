@@ -9,11 +9,11 @@ Dimensions (Width x Height): 270x270
 
 
 
-{% embed_spec_map aruba-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.AR|AR|Aruba
 

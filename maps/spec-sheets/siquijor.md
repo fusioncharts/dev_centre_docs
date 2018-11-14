@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map siquijor-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.SQ.ER | ER | Enrique Villanueva
 PH.SQ.LR | LR | Larena
 PH.SQ.LZ | LZ | Lazi

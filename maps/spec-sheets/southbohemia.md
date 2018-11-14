@@ -9,12 +9,12 @@ Dimensions (Width x Height): 730x570
 
 
 
-{% embed_spec_map southbohemia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.CK.JH|JH|Jindřichův Hradec
 CZ.CK.PT|PT|Prachatice
 CZ.CK.PI|PI|Písek

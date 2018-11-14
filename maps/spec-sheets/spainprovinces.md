@@ -9,12 +9,12 @@ Dimensions (Width x Height): 810x570
 
 
 
-{% embed_spec_map spainprovinces-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 002|AL|Álava
 001|AB|Albacete
 003|AI|Alicante

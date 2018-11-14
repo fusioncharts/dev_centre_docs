@@ -9,12 +9,12 @@ Dimensions (Width x Height): 480x300
 
 
 
-{% embed_spec_map dallasfortworthareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 214-469-972|214-469-972|214-469-972
 254|254|254
 430-903|430-903|430-903

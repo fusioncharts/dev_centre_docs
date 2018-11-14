@@ -9,12 +9,12 @@ Dimensions (Width x Height): 650x600
 
 
 
-{% embed_spec_map australia2-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ACT|ACT|Australian Capital Territory
 NSW|NSW|New South Wales
 NT|NT|Northern Territory

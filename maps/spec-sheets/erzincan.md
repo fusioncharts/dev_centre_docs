@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map erzincan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.EN.CA | CA | Çayırlı
 TR.EN.EN | EN | Erzincan
 TR.EN.IL | IL | İliç

@@ -10,12 +10,12 @@ Dimensions (Width x Height): 248x177
 
 
 
-{% embed_spec_map northjeolla-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BC|Buan County
 02|GI|Gimje
 03|GC|Gochang County

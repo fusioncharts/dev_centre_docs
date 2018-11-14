@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map baoruco-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.BR.GA|GA|Galván
 DO.BR.LR|LR|Los Ríos
 DO.BR.NE|NE|Neiba

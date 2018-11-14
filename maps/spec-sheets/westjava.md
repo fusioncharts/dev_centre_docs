@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map westjava-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.JR.BU|BU|Bandung City
 ID.JR.BA|BA|Banjar City
 ID.JR.BS|BS|Bekasi City

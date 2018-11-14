@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x350
 
 
 
-{% embed_spec_map romania-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AB|Alba
 02|AR|Arad
 03|AG|Argeş

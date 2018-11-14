@@ -9,12 +9,12 @@ Dimensions (Width x Height): 498x369
 
 
 
-{% embed_spec_map guangdong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 0768|CH|Chaozhou
 0769|DO|Dongguan
 0757|FO|Foshan

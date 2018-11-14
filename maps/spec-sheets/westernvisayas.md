@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map westernvisayas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.WV.AK | AK | Aklan
 PH.WV.AQ | AQ | Antique
 PH.WV.CP | CP | Capiz

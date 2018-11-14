@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map semnan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.SM.AR|AR|Aradan County
 IR.SM.DA|DA|Damghan County
 IR.SM.GA|GA|Garmsar County

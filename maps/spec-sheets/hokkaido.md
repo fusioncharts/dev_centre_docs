@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x500
 
 
 
-{% embed_spec_map hokkaido-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Sorachi
 002|002|Ishikari
 003|003|Shiribeshi

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x350
 
 
 
-{% embed_spec_map romaniaregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RO.BI|BI|Bucuresti-IIfov
 RO.CE|CE|Centru
 RO.NE|NE|Nord-Est

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 462x719
 
 
 
-{% embed_spec_map sjaelland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|FA|Faxe
 02|GR|Greve
 03|GU|Guldborgsund

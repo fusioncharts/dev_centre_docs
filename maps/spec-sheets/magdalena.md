@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map magdalena-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.MA.AL|AL|Algarrobo
 CO.MA.AC|AC|Aracataca
 CO.MA.AG|AG|Ariguaní

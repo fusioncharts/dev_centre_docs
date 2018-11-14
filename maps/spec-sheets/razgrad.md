@@ -9,12 +9,12 @@ Dimensions (Width x Height): 597x578
 
 
 
-{% embed_spec_map razgrad-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|IS|Isperih
 02|KU|Kubrat
 03|LO|Loznitsa

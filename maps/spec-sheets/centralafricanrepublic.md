@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x310
 
 
 
-{% embed_spec_map centralafricanrepublic-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CF.BB|BB|Bamingui Bangoran
 CF.BG|BG|Bangui
 CF.BK|BK|Basse Kotto

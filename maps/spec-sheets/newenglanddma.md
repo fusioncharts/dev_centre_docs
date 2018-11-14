@@ -9,12 +9,12 @@ Dimensions (Width x Height): 388x600
 
 
 
-{% embed_spec_map newenglanddma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 532|ALB-NY|ALBANY-SCHENECTADY-TROY
 537|BAN-ME|BANGOR
 506|BOS-MA|BOSTON(MANCHESTER)

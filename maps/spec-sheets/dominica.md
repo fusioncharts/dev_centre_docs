@@ -9,12 +9,12 @@ Dimensions (Width x Height): 150x280
 
 
 
-{% embed_spec_map dominica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|AN|Saint Andrew
 03|DA|Saint David
 04|GO|Saint George

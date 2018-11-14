@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x520
 
 
 
-{% embed_spec_map saga-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Imari
 002|002|Kanzaki
 003|003|Karatsu

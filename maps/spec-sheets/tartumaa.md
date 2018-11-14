@@ -9,12 +9,12 @@ Dimensions (Width x Height): 601x452
 
 
 
-{% embed_spec_map tartumaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 04|AL|Alatskivi
 01|EL|Elva
 05|HA|Haaslava

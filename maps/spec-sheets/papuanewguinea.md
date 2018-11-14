@@ -9,12 +9,12 @@ Dimensions (Width x Height): 800x560
 
 
 
-{% embed_spec_map papuanewguinea-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PG.CE|CE|Central
 PG.CH|CH|Simbu (Chimbu)
 PG.EH|EH|Eastern Highlands

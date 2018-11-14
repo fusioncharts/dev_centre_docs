@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map autonomousregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.AU.BS | BS | Basilan
 PH.AU.LS | LS | Lanao del Sur
 PH.AU.MA | MA | Maguindanao

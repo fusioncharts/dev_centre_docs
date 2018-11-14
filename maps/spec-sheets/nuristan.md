@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map nuristan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.NR.BM|BM|Bargi Matal
 AF.NR.DA|DA|Du Ab
 AF.NR.KA|KA|Kamdesh

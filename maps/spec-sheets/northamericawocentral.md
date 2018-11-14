@@ -9,12 +9,12 @@ Dimensions (Width x Height): 650x650
 
 
 
-{% embed_spec_map northamericawocentral-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 005|CA|Canada
 024|GL|Greenland
 016|MX|Mexico

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ifugao-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.IF.AU | AU | Aguinaldo
 PH.IF.AF | AF | Alfonso Lista
 PH.IF.AI | AI | Asipulo

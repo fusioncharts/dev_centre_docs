@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map nuevavizcaya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.AA.CU | CU | Çukurova
 TR.AA.SR | SR | Sarıçam
 TR.AA.AS | AS | Seyhan

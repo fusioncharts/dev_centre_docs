@@ -9,12 +9,12 @@ Dimensions (Width x Height): 567x594
 
 
 
-{% embed_spec_map vratsa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BO|Borovan
 02|BS|Byala Slatina
 10|HA|Hayredin

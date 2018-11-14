@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map lanaodelsur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.LS.BM | BM | Amai Manabilang (Bumbaran)
 PH.LS.BC | BC | Bacolod-Kalawi (Bacolod-Grande)
 PH.LS.BG | BG | Balabagan

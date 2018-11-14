@@ -9,12 +9,12 @@ Dimensions (Width x Height): 250x510
 
 
 
-{% embed_spec_map portugal-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|AV|Aveiro
 03|BE|Beja
 04|BR|Braga

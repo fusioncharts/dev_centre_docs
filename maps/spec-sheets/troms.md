@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x460
 
 
 
-{% embed_spec_map troms-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.TR.BF|BF|Balsfjord
 NO.TR.BD|BD|Bardu
 NO.TR.BE|BE|Berg

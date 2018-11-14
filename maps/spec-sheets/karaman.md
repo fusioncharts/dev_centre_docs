@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map karaman-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.KR.AY | AY | Ayrancı
 TR.KR.BA | BA | Başyayla
 TR.KR.ER | ER | Ermenek

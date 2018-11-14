@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map pangasinan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.PN.AN | AN | Agno
 PH.PN.AU | AU | Aguilar
 PH.PN.AA | AA | Alaminos

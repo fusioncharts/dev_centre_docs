@@ -9,12 +9,12 @@ Dimensions (Width x Height): 580x600
 
 
 
-{% embed_spec_map bulgariamontana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BE|Berkovitsa
 02|BO|Boychinovtsi
 03|BR|Brusartsi

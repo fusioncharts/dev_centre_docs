@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map azerbaijaneast-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.EA.AH|AH|Ahar County
 IR.EA.AJ|AJ|Ajabshir County
 IR.EA.AZ|AZ|Azarshahr County

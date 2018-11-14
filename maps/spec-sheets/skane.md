@@ -9,12 +9,12 @@ Dimensions (Width x Height): 580x580
 
 
 
-{% embed_spec_map skane-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.SN.BJ|BJ|Bjuv
 SE.SN.BR|BR|Bromölla
 SE.SN.BU|BU|Burlöv

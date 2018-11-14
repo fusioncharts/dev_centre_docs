@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x350
 
 
 
-{% embed_spec_map okinawa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Ginowan (Jinoon)
 002|002|Ishigaki (Ishigachi)
 003|003|Itoman (Ichuman)

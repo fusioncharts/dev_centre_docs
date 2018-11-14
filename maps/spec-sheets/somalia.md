@@ -9,12 +9,12 @@ Dimensions (Width x Height): 451x611
 
 
 
-{% embed_spec_map somalia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SO.AW|AW|Awdal
 SO.BK|BK|Bakool
 SO.BN|BN|Banaadir

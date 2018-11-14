@@ -9,12 +9,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map northlebanon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LE.NL.AK|AK|Akkar
 LE.NL.BT|BT|Batroun
 LE.NL.BC|BC|Bsharri

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x310
 
 
 
-{% embed_spec_map jammuandkashmir-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.JK.AG|AG|Anantnag
 IN.JK.BP|BP|Bandipore
 IN.JK.BL|BL|Baramulla

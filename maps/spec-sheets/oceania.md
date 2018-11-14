@@ -9,12 +9,12 @@ Dimensions (Width x Height): 646x512
 
 
 
-{% embed_spec_map oceania-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AU|Australia
 002|FJ|Fiji
 003|KI|Kiribati

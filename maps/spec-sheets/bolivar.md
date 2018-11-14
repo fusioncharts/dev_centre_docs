@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map bolivar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.BL.AC|AC|Achí
 CO.BL.AL|AL|Altos del Rosario
 CO.BL.AN|AN|Arenal del Sur

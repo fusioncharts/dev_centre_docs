@@ -9,12 +9,12 @@ Dimensions (Width x Height): 390x500
 
 
 
-{% embed_spec_map piedmont-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.AL|AL|Alessandria
 IT.AT|AT|Asti
 IT.BI|BI|Biella

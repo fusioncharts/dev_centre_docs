@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x280
 
 
 
-{% embed_spec_map pardubiceregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.EK.CR|CR|Chrudim
 CZ.EK.PU|PU|Pardubice
 CZ.EK.SY|SY|Svitavy

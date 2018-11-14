@@ -9,12 +9,12 @@ Dimensions (Width x Height): 580x140
 
 
 
-{% embed_spec_map tennesseeareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 423|423|423
 615|615|615
 731|731|731

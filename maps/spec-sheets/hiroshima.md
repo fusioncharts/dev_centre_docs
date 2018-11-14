@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x440
 
 
 
-{% embed_spec_map hiroshima-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Akitakata
 002|002|Etajima
 003|003|Fuchu

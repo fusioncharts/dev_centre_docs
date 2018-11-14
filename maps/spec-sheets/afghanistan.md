@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x470
 
 
 
-{% embed_spec_map afghanistan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BDS|Badakhshan
 02|BDG|Badghis
 03|BGL|Baghlan

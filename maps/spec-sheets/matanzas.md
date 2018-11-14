@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map matanzas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.MA.CM|CM|Calimete
 CU.MA.CR|CR|Cárdenas
 CU.MA.CZ|CZ|Cienaga de Zapata

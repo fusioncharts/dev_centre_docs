@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x480
 
 
 
-{% embed_spec_map minnesotaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 218|218|218
 320|320|320
 507|507|507

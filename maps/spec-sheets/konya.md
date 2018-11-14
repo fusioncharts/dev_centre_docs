@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map konya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.KO.KK | KK | Karatay
 TR.KO.KM | KM | Meram
 TR.KO.KS | KS | Selçuklu

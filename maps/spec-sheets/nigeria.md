@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x380
 
 
 
-{% embed_spec_map nigeria-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NG.AB|AB|Abia
 NG.FC|FC|Abuja
 NG.AD|AD|Adamawa

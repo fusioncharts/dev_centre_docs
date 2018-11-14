@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x620
 
 
 
-{% embed_spec_map zurich-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.ZH.AT|AT|Affoltern
 CH.ZH.AF|AF|Andelfingen
 CH.ZH.BU|BU|Bülach

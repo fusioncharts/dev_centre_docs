@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map baghlan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.BL.AN|AN|Andarab
 AF.BL.BJ|BJ|Baghlani Jadid
 AF.BL.BU|BU|Burka

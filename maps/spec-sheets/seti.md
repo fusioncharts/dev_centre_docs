@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map seti-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.SE.AC|AC|Achham
 NP.SE.BH|BH|Bajhang
 NP.SE.BU|BU|Bajura

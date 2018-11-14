@@ -9,12 +9,12 @@ Dimensions (Width x Height): 590x390
 
 
 
-{% embed_spec_map estonia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|HA|Harjumaa
 02|HI|Hiiumaa
 03|IV|Ida-Virumaa

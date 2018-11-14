@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map azua-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.AZ.AC|AC|Azua de Compostela
 DO.AZ.ES|ES|Estebanía
 DO.AZ.GU|GU|Guayabal

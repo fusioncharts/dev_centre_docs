@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map lampung-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.LA.BL|BL|Bandar Lampung City
 ID.LA.ME|ME|Metro City
 ID.LA.LT|LT|Central Lampung Regency(Lampung Tengah)

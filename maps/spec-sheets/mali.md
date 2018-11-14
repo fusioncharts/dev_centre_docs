@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x470
 
 
 
-{% embed_spec_map mali-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ML.BA|BA|Bamako
 ML.GA|GA|Gao
 ML.KY|KY|Kayes

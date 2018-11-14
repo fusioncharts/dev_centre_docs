@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map mardin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.MR.DA | DA | Dargeçit
 TR.MR.DE | DE | Derik
 TR.MR.KI | KI | Kızıltepe

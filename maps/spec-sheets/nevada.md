@@ -9,12 +9,12 @@ Dimensions (Width x Height): 620x870
 
 
 
-{% embed_spec_map nevada-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 510|CA|Carson City
 001|CH|Churchill
 003|CL|Clark

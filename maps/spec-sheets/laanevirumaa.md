@@ -9,12 +9,12 @@ Dimensions (Width x Height): 444x464
 
 
 
-{% embed_spec_map laanevirumaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 03|HA|Haljala
 04|KA|Kadrina
 01|KU|Kunda

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map mus-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.MS.BU | BU | Bulanık
 TR.MS.HA | HA | Hasköy
 TR.MS.KO | KO | Korkut

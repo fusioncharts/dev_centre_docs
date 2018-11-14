@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map abra-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.AB.BN | BN | Bangued
 PH.AB.BL | BL | Boliney
 PH.AB.BU | BU | Bucay

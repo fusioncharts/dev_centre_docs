@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map eastkalimantan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.KI.BA|BA|Balikpapan City
 ID.KI.BO|BO|Bontang City
 ID.KI.SA|SA|Samarinda City

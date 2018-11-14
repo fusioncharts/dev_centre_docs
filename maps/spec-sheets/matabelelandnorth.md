@@ -9,12 +9,12 @@ Dimensions (Width x Height): 801x391
 
 
 
-{% embed_spec_map matabelelandnorth-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZW.MN.BG|BG|Binga
 ZW.MN.BU|BU|Bubi
 ZW.MN.HW|HW|Hwange

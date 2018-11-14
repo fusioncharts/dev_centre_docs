@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map cebu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.CB.AL | AL | Alcantara
 PH.CB.AC | AC | Alcoy
 PH.CB.AE | AE | Alegria

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ordu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.OR.AK | AK | Akkuş
 TR.OR.AL | AL | Altınordu
 TR.OR.AY | AY | Aybastı

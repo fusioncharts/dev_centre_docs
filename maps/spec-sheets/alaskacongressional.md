@@ -9,11 +9,11 @@ Dimensions (Width x Height): 500x280
 
 
 
-{% embed_spec_map alaskacongressional-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 00|AK|Alaska At Large
 

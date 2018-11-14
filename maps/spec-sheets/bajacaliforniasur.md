@@ -9,12 +9,12 @@ Dimensions (Width x Height): 330x380
 
 
 
-{% embed_spec_map bajacaliforniasur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.BS.CO|CO|Comondu
 MX.BS.PA|PA|La Paz
 MX.BS.LO|LO|Loreto

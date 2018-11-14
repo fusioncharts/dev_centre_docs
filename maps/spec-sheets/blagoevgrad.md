@@ -9,12 +9,12 @@ Dimensions (Width x Height): 633x570
 
 
 
-{% embed_spec_map blagoevgrad-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BA|Bansko
 02|BE|Belitsa
 03|BL|Blagoevgrad

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x600
 
 
 
-{% embed_spec_map kosovodistricts-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 29|GN|Gnjilane
 28|KM|Kosovska Mitrovica
 26|PE|Peć

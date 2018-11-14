@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map yozgat-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.YZ.AK | AK | Akdağmadeni
 TR.YZ.AY | AY | Aydıncık
 TR.YZ.BO | BO | Boğazlıyan

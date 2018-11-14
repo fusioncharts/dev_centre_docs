@@ -9,12 +9,12 @@ Dimensions (Width x Height): 520x580
 
 
 
-{% embed_spec_map denmarkregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DK.HS|HS|Hovenstaden
 DK.MJ|MJ|Midtjylland
 DK.ND|ND|Nordjylland

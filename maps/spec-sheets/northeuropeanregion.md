@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x250
 
 
 
-{% embed_spec_map northeuropeanregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|DK|Denmark
 02|EE|Estonia
 03|FI|Finland

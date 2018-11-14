@@ -9,12 +9,12 @@ Dimensions (Width x Height): 700x620
 
 
 
-{% embed_spec_map capeverde-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CV.BV|BV|Boa Vista
 CV.BR|BR|Brava
 CV.MA|MA|Maio

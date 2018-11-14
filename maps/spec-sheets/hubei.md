@@ -9,12 +9,12 @@ Dimensions (Width x Height): 710x450
 
 
 
-{% embed_spec_map hubei-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 13|EN|Enshi (Tujia & Miao)
 2|EZ|Ezhou
 3|HU|Huanggang

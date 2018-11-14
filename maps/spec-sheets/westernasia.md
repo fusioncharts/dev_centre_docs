@@ -9,12 +9,12 @@ Dimensions (Width x Height): 435x441
 
 
 
-{% embed_spec_map westernasia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 94|AM|Armenia
 95|AZ|Azerbaijan
 172|CY|Cyprus

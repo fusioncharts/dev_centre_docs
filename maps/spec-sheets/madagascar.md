@@ -9,12 +9,12 @@ Dimensions (Width x Height): 220x410
 
 
 
-{% embed_spec_map madagascar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MG.AV|AV|Antananarivo
 MG.AS|AS|Antsiranana
 MG.FI|FI|Fianarantsoa

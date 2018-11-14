@@ -9,12 +9,12 @@ Dimensions (Width x Height): 412x385
 
 
 
-{% embed_spec_map sichuan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 6|BH|Bazhong
 9|CD|Chengdu
 7|DH|Dazhou

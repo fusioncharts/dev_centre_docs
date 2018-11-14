@@ -9,12 +9,12 @@ Dimensions (Width x Height): 445x500
 
 
 
-{% embed_spec_map fujian-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1|FU|Fuzhou
 3|LO|Longyan
 4|NA|Nanping

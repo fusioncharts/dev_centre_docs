@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map eskisehir-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.ES.OP | OP | Odunpazarı
 TR.ES.TP | TP | Tepebaşı
 TR.ES.AL | AL | Alpu

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 506x740
 
 
 
-{% embed_spec_map yukonterritory-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.YT.CA|CA|Campbell
 CA.YT.KL|KL|Klondike
 CA.YT.KU|KU|Kluane

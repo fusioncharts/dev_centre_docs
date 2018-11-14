@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x579
 
 
 
-{% embed_spec_map canterbury-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 5|AB|Ashburton District
 7|CC|Christchurch City
 9|HN|Hurunui District

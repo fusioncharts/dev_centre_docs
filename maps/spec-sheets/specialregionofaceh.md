@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map specialregionofaceh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.AC.BA|BA|Banda Aceh City
 ID.AC.LA|LA|Langsa City
 ID.AC.LH|LH|Lhokseumawe City

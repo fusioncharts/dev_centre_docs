@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x460
 
 
 
-{% embed_spec_map centralamerica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BH|Belize
 02|CS|Costa Rica
 03|ES|El Salvador

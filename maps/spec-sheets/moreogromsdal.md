@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x480
 
 
 
-{% embed_spec_map moreogromsdal-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.MR.AK|AK|Aukra
 NO.MR.AU|AU|Aure
 NO.MR.AV|AV|Averøy

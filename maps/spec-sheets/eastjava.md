@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map eastjava-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.JI.MJ|MJ|Mojokerto City
 ID.JI.PS|PS|Pasuruan City
 ID.JI.SR|SR|Surabaya City

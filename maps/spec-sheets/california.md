@@ -9,12 +9,12 @@ Dimensions (Width x Height): 605x700
 
 
 
-{% embed_spec_map california-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AL|Alameda
 003|AP|Alpine
 005|AM|Amador

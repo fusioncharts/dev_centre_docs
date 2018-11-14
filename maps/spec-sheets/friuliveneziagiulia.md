@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x420
 
 
 
-{% embed_spec_map friuliveneziagiulia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.GO|GO|Gorizia
 IT.PN|PN|Pordenone
 IT.TS|TS|Trieste

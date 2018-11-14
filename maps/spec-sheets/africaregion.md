@@ -9,12 +9,12 @@ Dimensions (Width x Height): 562x600
 
 
 
-{% embed_spec_map africaregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|CA|Central Africa
 01|EA|Eastern Africa
 03|NA|Northern Africa

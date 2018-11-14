@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map nampo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KP.DN|DN|Daean
 KP.HG|HG|Hanggu
 KP.KS|KS|Kangso

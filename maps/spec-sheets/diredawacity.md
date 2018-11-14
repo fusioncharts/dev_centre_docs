@@ -9,10 +9,10 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map diredawacity-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ET.DD.DD|DD|Dire Dawa

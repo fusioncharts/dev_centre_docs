@@ -9,12 +9,12 @@ Dimensions (Width x Height): 372x272
 
 
 
-{% embed_spec_map qinghai-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 8|GO|Golog
 2|HB|Haibei
 4|HD|Haidong

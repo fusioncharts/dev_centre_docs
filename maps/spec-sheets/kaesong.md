@@ -9,12 +9,12 @@ Dimensions (Width x Height): 288x282
 
 
 
-{% embed_spec_map kaesong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KP.JP|JP|Jangpung
 KP.KA|KA|Kaepung
 KP.KS|KS|Kaesong

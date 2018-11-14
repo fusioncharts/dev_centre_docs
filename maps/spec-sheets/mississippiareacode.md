@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x490
 
 
 
-{% embed_spec_map mississippiareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 228|228|228
 601-769|601-769|601-769
 662|662|662

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map fars-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.FA.AB|AB|Abadeh County
 IR.FA.AR|AR|Arsanjan County
 IR.FA.BO|BO|Bavanat County

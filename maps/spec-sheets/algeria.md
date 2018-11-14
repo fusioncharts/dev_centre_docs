@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x320
 
 
 
-{% embed_spec_map algeria-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DZ.AR|AR|Adrar
 DZ.AD|AD|Ain Defla
 DZ.AT|AT|Ain Temouchent

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x533
 
 
 
-{% embed_spec_map sognogfjordane-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.SF.AS|AS|Askvoll
 NO.SF.AU|AU|Aurland
 NO.SF.BA|BA|Balestrand

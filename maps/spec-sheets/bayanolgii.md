@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map bayanolgii-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.BO.AI | AI | Altai
 MN.BO.AN | AN | Altantsögts
 MN.BO.BN | BN | Bayannuur

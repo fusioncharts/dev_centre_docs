@@ -9,12 +9,12 @@ Dimensions (Width x Height): 632x503
 
 
 
-{% embed_spec_map pomorskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.PM.BY|BY|Bytowski
 PL.PM.CH|CH|Chojnicki
 PL.PM.CZ|CZ|Czluchowski

@@ -9,11 +9,11 @@ Dimensions (Width x Height): 570x790
 
 
 
-{% embed_spec_map aswan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AW|Aswan
 

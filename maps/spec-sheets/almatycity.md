@@ -9,7 +9,7 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map almatycity-map.js %}
+
 
 ### List of Entities
 

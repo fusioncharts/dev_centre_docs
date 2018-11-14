@@ -9,12 +9,12 @@ Dimensions (Width x Height): 644x600
 
 
 
-{% embed_spec_map polandcounties-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 370|LA|?aski
 326|LA|?ańcucki
 20|LO|?obeski

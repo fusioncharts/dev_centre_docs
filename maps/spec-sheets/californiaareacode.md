@@ -9,12 +9,12 @@ Dimensions (Width x Height): 490x490
 
 
 
-{% embed_spec_map californiaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 209|209|209
 310-424|310-424|310-424
 323|323|323

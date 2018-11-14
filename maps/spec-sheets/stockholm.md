@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x580
 
 
 
-{% embed_spec_map stockholm-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.ST.BO|BO|Botkyrka
 SE.ST.DA|DA|Danderyd
 SE.ST.EK|EK|Ekerö

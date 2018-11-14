@@ -9,12 +9,12 @@ Dimensions (Width x Height): 545x320
 
 
 
-{% embed_spec_map latvia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AI|Aizkraukle
 02|AL|Alūksne
 03|BL|Balvi

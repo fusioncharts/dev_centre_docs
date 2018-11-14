@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map usmsa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 10180|10180|Abilene, TX
 10380|10380|Aguadilla-Isabela, PR
 10420|10420|Akron, OH

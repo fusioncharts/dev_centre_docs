@@ -10,12 +10,12 @@ Dimensions (Width x Height): 267x272
 
 
 
-{% embed_spec_map gyeonggi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AS|Ansan
 02|AE|Anseong
 03|AY|Anyang

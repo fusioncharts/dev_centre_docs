@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x590
 
 
 
-{% embed_spec_map miyazaki-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Ebino
 002|002|Hyuga
 003|003|Kobayashi

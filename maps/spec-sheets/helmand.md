@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map helmand-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.HM.BU|BU|Baghran
 AF.HM.DI|DI|Dishu
 AF.HM.GA|GA|Garmser

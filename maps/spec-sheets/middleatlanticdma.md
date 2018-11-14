@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x541
 
 
 
-{% embed_spec_map middleatlanticdma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 532|ALB-NY|ALBANY-SCHENECTADY-TROY
 502|BIN-NY|BINGHAMTON
 514|BUF-NY|BUFFALO

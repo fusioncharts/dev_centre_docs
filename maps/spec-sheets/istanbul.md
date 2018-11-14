@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map istanbul-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.IB.AD | AD | Adalar
 TR.IB.AR | AR | Arnavutköy
 TR.IB.AT | AT | Ataşehir

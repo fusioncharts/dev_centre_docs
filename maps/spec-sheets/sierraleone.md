@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x490
 
 
 
-{% embed_spec_map sierraleone-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SL.SO.BO|BO|Bo
 SL.NO.BM|BM|Bombali
 SL.SO.BN|BN|Bonthe

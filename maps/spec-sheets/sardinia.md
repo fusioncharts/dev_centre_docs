@@ -9,12 +9,12 @@ Dimensions (Width x Height): 280x500
 
 
 
-{% embed_spec_map sardinia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.CG|CG|Cagliari
 IT.CI|CI|Carbonia Iglesias
 IT.MD|MD|Medio Campidano

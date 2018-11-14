@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northernzambia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.NR.CI|CI|Chilubi District
 ZM.NR.KP|KP|Kaputa District
 ZM.NR.KS|KS|Kasama District

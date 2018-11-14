@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kunar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.KR.AA|AA|Asad Abad
 AF.KR.BK|BK|Bar Kunar
 AF.KR.CD|CD|Chapa Dara

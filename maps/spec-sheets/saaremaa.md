@@ -9,12 +9,12 @@ Dimensions (Width x Height): 590x600
 
 
 
-{% embed_spec_map saaremaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|KM|Kaarma
 03|KI|Kihelkonna
 01|KU|Kuressaare

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 427x558
 
 
 
-{% embed_spec_map westernaustralia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 WA01|GA|Gascoyne
 WA02|GE|Goldfields-Esperance
 WA03|GS|Great Southern

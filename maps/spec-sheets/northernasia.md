@@ -9,11 +9,11 @@ Dimensions (Width x Height): 928x429
 
 
 
-{% embed_spec_map northernasia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 118|RU|Russia
 

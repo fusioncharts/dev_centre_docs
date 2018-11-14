@@ -9,12 +9,12 @@ Dimensions (Width x Height): 820x730
 
 
 
-{% embed_spec_map solothurn-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.SO.BB|BB|Bucheggberg
 CH.SO.DE|DE|Dorneck
 CH.SO.GA|GA|Gäu

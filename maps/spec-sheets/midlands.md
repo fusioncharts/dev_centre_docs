@@ -9,12 +9,12 @@ Dimensions (Width x Height): 801x391
 
 
 
-{% embed_spec_map midlands-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZW.MI.CH|CH|Chirumhanzu
 ZW.MI.GN|GN|Gokwe North
 ZW.MI.GS|GS|Gokwe South

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map westernzambia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.WE.KB|KB|Kalabo District
 ZM.WE.KM|KM|Kaoma District
 ZM.WE.LK|LK|Lukulu District

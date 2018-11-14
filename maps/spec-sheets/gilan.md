@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map gilan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.GI.AM|AM|Amlash County
 IR.GI.AS|AS|Astara County
 IR.GI.AA|AA|Astane-ye-Ashrafiyeh County

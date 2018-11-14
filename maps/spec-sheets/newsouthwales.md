@@ -9,12 +9,12 @@ Dimensions (Width x Height): 722x600
 
 
 
-{% embed_spec_map newsouthwales-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NSW10|CC|Central Coast
 NSW02|CW|Central West
 NSW01|FW|Far West

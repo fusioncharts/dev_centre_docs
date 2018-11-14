@@ -9,12 +9,12 @@ Dimensions (Width x Height): 348x573
 
 
 
-{% embed_spec_map centralafrica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 40|AO|Angola
 45|CM|Cameroon
 47|CP|Central African Republic

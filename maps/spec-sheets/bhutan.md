@@ -9,12 +9,12 @@ Dimensions (Width x Height): 780x440
 
 
 
-{% embed_spec_map bhutan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BT.BU|BU|Bumthang
 BT.CK|CK|Chhukha
 BT.CR|CR|Chirang

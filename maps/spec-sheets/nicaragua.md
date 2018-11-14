@@ -9,12 +9,12 @@ Dimensions (Width x Height): 407x370
 
 
 
-{% embed_spec_map nicaragua-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BO|Boaco
 02|CA|Carazo
 03|CI|Chinandega

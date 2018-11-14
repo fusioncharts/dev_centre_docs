@@ -9,12 +9,12 @@ Dimensions (Width x Height): 750x640
 
 
 
-{% embed_spec_map oberosterreich-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AT.OO.BR|BR|Braunau am Inn
 AT.OO.EF|EF|Eferding
 AT.OO.FR|FR|Freistadt

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x270
 
 
 
-{% embed_spec_map brazil-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AC|Acre
 002|AL|Alagoas
 003|AP|Amapa

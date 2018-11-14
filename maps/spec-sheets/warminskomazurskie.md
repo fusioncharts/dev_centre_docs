@@ -9,12 +9,12 @@ Dimensions (Width x Height): 626x404
 
 
 
-{% embed_spec_map warminskomazurskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.WN.BA|BA|Bartoszycki
 PL.WN.BR|BR|Braniewski
 PL.WN.DZ|DZ|Dzialdowski

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x490
 
 
 
-{% embed_spec_map serbia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RS.BG|BG|Belgrade
 RS.BO|BO|Bor
 RS.BR|BR|Branicevo

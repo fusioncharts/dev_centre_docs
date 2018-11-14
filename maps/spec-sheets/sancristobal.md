@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sancristobal-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.CR.BH|BH|Bajos de Haina
 DO.CR.CG|CG|Cambita Garabitos
 DO.CR.LC|LC|Los Cacaos

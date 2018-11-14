@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map bogota-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.DC.AN|AN|Antonio Nariño
 CO.DC.BU|BU|Barrios Unidos
 CO.DC.BO|BO|Bosa

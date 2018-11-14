@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map bangkabelitungislands-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.BT.CL|CL|Cilegon (city)
 ID.BT.SR|SR|Serang (city)
 ID.BT.LE|LE|Lebak Regency

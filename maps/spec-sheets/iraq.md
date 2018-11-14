@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x320
 
 
 
-{% embed_spec_map iraq-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AN|Al-Anbar
 02|BA|Al-Basrah
 03|MU|Al-Muthann

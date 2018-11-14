@@ -9,12 +9,12 @@ Dimensions (Width x Height): 900x600
 
 
 
-{% embed_spec_map usatimezone-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AK|Alaska(6 PM)|Alaska
 CE|Central(5 PM)|Central
 EA|Eastern(6 PM)|Eastern

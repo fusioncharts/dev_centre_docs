@@ -9,12 +9,12 @@ Dimensions (Width x Height): 390x360
 
 
 
-{% embed_spec_map vianadocastelo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.VC.AV|AV|Arcos de Valdevez
 PT.VC.CA|CA|Caminha
 PT.VC.ME|ME|Melgaço

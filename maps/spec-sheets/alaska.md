@@ -9,12 +9,12 @@ Dimensions (Width x Height): 656x501
 
 
 
-{% embed_spec_map alaska-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 013|AE|Aleutians East
 016|AW|Aleutians West
 020|AN|Anchorage

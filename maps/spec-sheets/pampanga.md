@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map pampanga-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.PM.AG | AG | Angeles
 PH.PM.AP | AP | Apalit
 PH.PM.AR | AR | Arayat

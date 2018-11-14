@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map centralluzon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.CE.AU | AU | Aurora
 PH.CE.BA | BA | Bataan
 PH.CE.BU | BU | Bulacan

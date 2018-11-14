@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map cotabato-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.NC.AL | AL | Alamada
 PH.NC.AE | AE | Aleosan
 PH.NC.AT | AT | Antipas

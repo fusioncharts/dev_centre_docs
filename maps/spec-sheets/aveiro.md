@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x600
 
 
 
-{% embed_spec_map aveiro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.AV.AG|AG|?gueda
 PT.AV.IL|IL|?lhavo
 PT.AV.AL|AL|Albergaria-a-Velha

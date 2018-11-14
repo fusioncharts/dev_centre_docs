@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kocaeli-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.KC.BA | BA | Başiskele
 TR.KC.CA | CA | Çayırova
 TR.KC.DA | DA | Darıca

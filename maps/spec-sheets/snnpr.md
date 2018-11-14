@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map snnpr-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ET.SN.AM|AM|Amaro
 ET.SN.BJ|BJ|Burji
 ET.SN.DS|DS|Dirashe

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 507x600
 
 
 
-{% embed_spec_map hawkesbay-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1|CH|Central Hawke's Bay District
 3|HS|Hastings District
 2|NR|Napier City

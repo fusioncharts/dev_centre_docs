@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x230
 
 
 
-{% embed_spec_map turkmenistan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TM.AL|AL|Ahal
 TM.BA|BA|Balkan
 TM.DA|DA|Dashoguz

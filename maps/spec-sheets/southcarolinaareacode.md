@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x415
 
 
 
-{% embed_spec_map southcarolinaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 803|803|803
 843|843|843
 864|864|864

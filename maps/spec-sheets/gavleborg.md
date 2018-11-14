@@ -9,12 +9,12 @@ Dimensions (Width x Height): 391x581
 
 
 
-{% embed_spec_map gavleborg-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.GV.BO|BO|Bollnäs
 SE.GV.GA|GA|Gävle
 SE.GV.HO|HO|Hofors

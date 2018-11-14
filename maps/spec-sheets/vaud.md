@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x550
 
 
 
-{% embed_spec_map vaud-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.VD.AI|AI|Aigle
 CH.VD.AU|AU|Aubonne
 CH.VD.AV|AV|Avenches

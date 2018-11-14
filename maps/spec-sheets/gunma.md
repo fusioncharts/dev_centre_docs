@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x570
 
 
 
-{% embed_spec_map gunma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Annaka
 002|002|Fujioka
 003|003|Isesaki

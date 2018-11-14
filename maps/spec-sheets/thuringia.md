@@ -9,12 +9,12 @@ Dimensions (Width x Height): 451x371
 
 
 
-{% embed_spec_map thuringia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.TH.AL|AL|Altenburger Land
 DE.TH.EF|EF|Eichsfeld
 DE.TH.ES|ES|Eisenach

@@ -10,12 +10,12 @@ Dimensions (Width x Height): 270x500
 
 
 
-{% embed_spec_map lakshadweep-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.LD.AM|AM|Amini Island
 IN.LD.BT|BT|Bitra Reef
 IN.LD.CR|CR|Cheriyam Island

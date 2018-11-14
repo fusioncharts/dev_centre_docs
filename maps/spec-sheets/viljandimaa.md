@@ -9,12 +9,12 @@ Dimensions (Width x Height): 524x600
 
 
 
-{% embed_spec_map viljandimaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 04|AJ|Abja
 05|HA|Halliste
 06|KK|Karksi

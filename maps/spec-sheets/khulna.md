@@ -9,12 +9,12 @@ Dimensions (Width x Height): 431x600
 
 
 
-{% embed_spec_map khulna-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BD.KH.BH|BH|Bagerhat District
 BD.KH.CD|CD|Chuadanga District
 BD.KH.JS|JS|Jessore District

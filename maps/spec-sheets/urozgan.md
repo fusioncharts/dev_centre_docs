@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map urozgan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.OZ.CH|CH|Chora
 AF.OZ.DI|DI|Dihrawud
 AF.OZ.KU|KU|Khas Uruzgan

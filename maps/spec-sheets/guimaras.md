@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map guimaras-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.GU.BE | BE | Buenavista
 PH.GU.JR | JR | Jordan
 PH.GU.NV | NV | Nueva Valencia

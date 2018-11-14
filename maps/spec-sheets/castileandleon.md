@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map castileandleon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ES.CY.AV | AV | Ávila
 ES.CY.BU | BU | Burgos
 ES.CY.LE | LE | León

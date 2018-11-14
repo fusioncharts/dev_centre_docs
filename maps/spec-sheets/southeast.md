@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map southeast-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 VN.SE.BV|BV|Bà Rịa–Vũng Tàu
 VN.SE.BI|BI|Bình Dương
 VN.SE.BP|BP|Bình Phước

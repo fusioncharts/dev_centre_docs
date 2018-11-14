@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map yilancounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.IL.YI | YI | Yilan City
 TW.IL.LD | LD | Luodong Township
 TW.IL.SU | SU | Su'ao Township

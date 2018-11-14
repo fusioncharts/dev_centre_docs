@@ -9,12 +9,12 @@ Dimensions (Width x Height): 260x220
 
 
 
-{% embed_spec_map usasouthwestregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 04|AZ|Arizona
 06|CA|California
 08|CO|Colorado

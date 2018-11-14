@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ilocossur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.IS.AI | AI | Alilem
 PH.IS.BY | BY | Banayoyo
 PH.IS.BN | BN | Bantay

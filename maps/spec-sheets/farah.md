@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map farah-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.FH.AD|AD|Anar Dara
 AF.FH.BA|BA|Bakwa
 AF.FH.BB|BB|Bala Buluk

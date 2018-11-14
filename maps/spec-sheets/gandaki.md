@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map gandaki-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.GA.GO|GO|Gorkha
 NP.GA.KS|KS|Kaski
 NP.GA.LM|LM|Lamjung

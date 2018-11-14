@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map choco-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.CH.AC|AC|Acandí
 CO.CH.AL|AL|Alto Baudó
 CO.CH.AT|AT|Atrato

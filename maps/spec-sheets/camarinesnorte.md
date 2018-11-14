@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map camarinesnorte-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.CN.BS | BS | Basud
 PH.CN.CP | CP | Capalonga
 PH.CN.DE | DE | Daet

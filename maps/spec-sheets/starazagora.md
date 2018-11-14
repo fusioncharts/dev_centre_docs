@@ -9,12 +9,12 @@ Dimensions (Width x Height): 595x548
 
 
 
-{% embed_spec_map starazagora-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BD|Bratya Daskalovi
 02|CH|Chirpan
 04|GA|Galabovo

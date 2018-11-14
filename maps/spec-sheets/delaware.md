@@ -9,12 +9,12 @@ Dimensions (Width x Height): 351x826
 
 
 
-{% embed_spec_map delaware-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|KE|Kent
 003|NE|New castle
 005|SU|Sussex

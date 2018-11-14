@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x480
 
 
 
-{% embed_spec_map trentinoaltoadige-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.BZ|BZ|Bolzano
 IT.TN|TN|Trento
 

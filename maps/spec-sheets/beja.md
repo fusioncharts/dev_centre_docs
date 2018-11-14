@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x280
 
 
 
-{% embed_spec_map beja-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.BE.AJ|AJ|Aljustrel
 PT.BE.AM|AM|Almodôvar
 PT.BE.AV|AV|Alvito

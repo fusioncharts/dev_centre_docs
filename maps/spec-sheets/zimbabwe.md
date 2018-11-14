@@ -9,12 +9,12 @@ Dimensions (Width x Height): 490x460
 
 
 
-{% embed_spec_map zimbabwe-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZW.BU|BU|Bulawayo
 ZW.HA|HA|Harare
 ZW.MA|MA|Manicaland

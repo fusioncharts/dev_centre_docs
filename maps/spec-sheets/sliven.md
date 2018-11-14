@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x592
 
 
 
-{% embed_spec_map sliven-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|KO|Kotel
 02|NZ|Nova Zagora
 03|SL|Sliven

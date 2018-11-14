@@ -9,12 +9,12 @@ Dimensions (Width x Height): 472x561
 
 
 
-{% embed_spec_map netherlands-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|DR|Drenthe
 002|FL|Flevoland
 003|FR|Friesland

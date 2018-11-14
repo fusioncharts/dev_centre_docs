@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map samsun-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.SS.SS | SS | Samsun
 TR.SS.AL | AL | Alaçam
 TR.SS.AS | AS | Asarcık

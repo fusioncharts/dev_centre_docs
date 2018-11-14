@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map mekongriverdelta-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 VN.MD.AG|AG|An Giang
 VN.MD.BR|BR|Bến Tre
 VN.MD.BL|BL|Bạc Liêu

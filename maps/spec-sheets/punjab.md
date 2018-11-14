@@ -9,12 +9,12 @@ Dimensions (Width x Height): 390x420
 
 
 
-{% embed_spec_map punjab-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.PB.AM|AM|Amritsar
 IN.PB.BL|BL|Barnala
 IN.PB.BA|BA|Bathinda

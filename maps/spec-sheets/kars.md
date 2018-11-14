@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kars-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.KA.AK | AK | Akyaka
 TR.KA.AR | AR | Arpaçay
 TR.KA.DI | DI | Digor

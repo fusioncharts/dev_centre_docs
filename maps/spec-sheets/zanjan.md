@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map zanjan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.ZA.AB|AB|Abhar County
 IR.ZA.IJ|IJ|Eejrud County
 IR.ZA.KH|KH|Khodabandeh County

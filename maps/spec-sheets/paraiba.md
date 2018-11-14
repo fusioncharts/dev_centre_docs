@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1510x860
 
 
 
-{% embed_spec_map paraiba-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2500106|AB|?gua Branca
 2500205|AG|Aguiar
 2500304|AG|Alagoa Grande

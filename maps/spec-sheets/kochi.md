@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x450
 
 
 
-{% embed_spec_map kochi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Aki
 002|002|Kami
 003|003|Kochi

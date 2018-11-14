@@ -9,12 +9,12 @@ Dimensions (Width x Height): 740x980
 
 
 
-{% embed_spec_map maranhao-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2100154|AM|?gua Doce do Maranhão
 2100105|AC|Afonso Cunha
 2100204|AT|Alcântara

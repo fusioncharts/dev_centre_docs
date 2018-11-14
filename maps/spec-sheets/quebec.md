@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x425
 
 
 
-{% embed_spec_map quebec-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 08|AT|Abitibi-Témiscamingue
 01|BS|Bas-Saint-Laurent
 03|CN|Capitale-Nationale

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x400
 
 
 
-{% embed_spec_map iceland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 03|AR|?rnessýsla
 04|AB|Austur-Barðastrandarsýsla
 05|AH|Austur-Húnavatnssýsla

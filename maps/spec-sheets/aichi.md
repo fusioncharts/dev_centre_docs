@@ -9,12 +9,12 @@ Dimensions (Width x Height): 535x420
 
 
 
-{% embed_spec_map aichi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AI|Aisai
 002|AM|Ama
 003|AN|Anjo

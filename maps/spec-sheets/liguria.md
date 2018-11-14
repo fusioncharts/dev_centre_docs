@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x310
 
 
 
-{% embed_spec_map liguria-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.GE|GE|Genoa
 IT.IM|IM|Imperia
 IT.SP|SP|La Spezia

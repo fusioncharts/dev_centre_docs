@@ -10,12 +10,12 @@ Dimensions (Width x Height): 295x192
 
 
 
-{% embed_spec_map southjeolla-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BC|Boseong County
 02|DC|Damyang County
 03|GC|Gangjin County

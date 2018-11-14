@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map zambales-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.ZM.BT | BT | Botolan
 PH.ZM.CB | CB | Cabangan
 PH.ZM.CN | CN | Candelaria

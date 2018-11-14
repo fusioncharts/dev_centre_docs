@@ -9,12 +9,12 @@ Dimensions (Width x Height): 601x451
 
 
 
-{% embed_spec_map liege-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.LG.AM|AM|Amay
 BE.LG.AL|AL|Amel
 BE.LG.AN|AN|Ans

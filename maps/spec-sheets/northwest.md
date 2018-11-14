@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northwest-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 VN.NW.DB|DB|Điện Biên
 VN.NW.PE|PE|Hòa Bình
 VN.NW.LI|LI|Lai Châu

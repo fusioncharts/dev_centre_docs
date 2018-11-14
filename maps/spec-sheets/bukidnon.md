@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map bukidnon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.BK.BU | BU | Baungon
 PH.BK.CB | CB | Cabanglasan
 PH.BK.DM | DM | Damulog

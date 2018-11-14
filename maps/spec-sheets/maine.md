@@ -9,12 +9,12 @@ Dimensions (Width x Height): 590x866
 
 
 
-{% embed_spec_map maine-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AN|Androscoggin
 003|AR|Aroostook
 005|CU|Cumberland

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sorsogon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.SR.BR | BR | Barcelona
 PH.SR.BU | BU | Bulan
 PH.SR.BL | BL | Bulusan

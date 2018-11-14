@@ -9,12 +9,12 @@ Dimensions (Width x Height): 418x536
 
 
 
-{% embed_spec_map lubelskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.LU.BM|BM|Biala Podlaska
 PL.LU.BP|BP|Bialski
 PL.LU.BI|BI|Bilgorajski

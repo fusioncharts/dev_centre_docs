@@ -9,12 +9,12 @@ Dimensions (Width x Height): 650x940
 
 
 
-{% embed_spec_map ticino-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.TI.BZ|BZ|Bellinzona
 CH.TI.BL|BL|Blenio
 CH.TI.LT|LT|Leventina

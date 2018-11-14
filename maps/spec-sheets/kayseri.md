@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kayseri-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.KY.HA | HA | Hacılar
 TR.KY.IN | IN | İncesu
 TR.KY.KK | KK | Kocasinan

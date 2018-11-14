@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map centraljava-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.JT.BN|BN|Banjarnegara Regency
 ID.JT.BY|BY|Banyumas Regency
 ID.JT.CI|CI|Cilacap Regency

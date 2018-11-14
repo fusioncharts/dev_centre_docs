@@ -9,12 +9,12 @@ Dimensions (Width x Height): 750x590
 
 
 
-{% embed_spec_map hongkong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 HK.CW|CW|Central and Western
 HK.EA|EA|Eastern
 HK.IS|IS|Islands

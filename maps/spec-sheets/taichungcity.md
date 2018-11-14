@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map taichungcity-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.TH.BE | BE | Beitun
 TW.TH.CE | CE | Central District, Taichung
 TW.TH.EA | EA | East District, Taichung

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x420
 
 
 
-{% embed_spec_map jonkoping-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.JO.AN|AN|Aneby
 SE.JO.EK|EK|Eksjö
 SE.JO.GI|GI|Gislaved

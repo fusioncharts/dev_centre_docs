@@ -9,12 +9,12 @@ Dimensions (Width x Height): 484x622
 
 
 
-{% embed_spec_map hebei-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|BA|Baoding
 3|CA|Cangzhou
 4|CH|Chengde

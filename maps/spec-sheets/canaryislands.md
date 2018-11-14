@@ -9,11 +9,11 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map canaryislands-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ES.CA.LP | LP | Las Palmas
 ES.CA.SC | SC | Santa Cruz de Tenerife

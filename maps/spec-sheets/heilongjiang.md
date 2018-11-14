@@ -9,12 +9,12 @@ Dimensions (Width x Height): 445x503
 
 
 
-{% embed_spec_map heilongjiang-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|DA|Daqing
 13|DX|Daxing'anling
 1|HA|Harbin

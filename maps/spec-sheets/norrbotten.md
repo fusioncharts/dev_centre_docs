@@ -9,12 +9,12 @@ Dimensions (Width x Height): 451x461
 
 
 
-{% embed_spec_map norrbotten-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.NB.AL|AL|Alvsbyn
 SE.NB.AP|AP|Arjeplog
 SE.NB.AJ|AJ|Arvidsjaur

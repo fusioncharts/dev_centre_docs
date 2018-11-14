@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x410
 
 
 
-{% embed_spec_map lebanon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LE.NA|NA|An Nabatiyah
 LE.BA|BA|Beirut
 LE.BI|BI|Beqaa

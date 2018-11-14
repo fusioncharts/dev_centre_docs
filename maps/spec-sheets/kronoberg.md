@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x270
 
 
 
-{% embed_spec_map kronoberg-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.KR.AV|AV|Alvesta
 SE.KR.LE|LE|Lessebo
 SE.KR.LJ|LJ|Ljungby

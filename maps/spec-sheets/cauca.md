@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map cauca-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.CA.AL|AL|Almaguer
 CO.CA.AR|AR|Argelia
 CO.CA.BB|BB|Balboa

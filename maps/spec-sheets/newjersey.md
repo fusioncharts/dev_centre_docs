@@ -9,12 +9,12 @@ Dimensions (Width x Height): 475x880
 
 
 
-{% embed_spec_map newjersey-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AT|Atlantic
 003|BE|Bergen
 005|BU|Burlington

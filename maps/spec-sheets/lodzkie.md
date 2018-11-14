@@ -9,12 +9,12 @@ Dimensions (Width x Height): 607x582
 
 
 
-{% embed_spec_map lodzkie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.LD.BE|BE|Belchatowski
 PL.LD.BR|BR|Brzezinski
 PL.LD.KU|KU|Kutnowski

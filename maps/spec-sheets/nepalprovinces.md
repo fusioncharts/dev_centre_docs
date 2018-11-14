@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map nepalprovinces-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.ON|ON|Nepal Province 1 (Koshi)	
 NP.TW|TW|Nepal Province 2 (Janakpur)
 NP.TH|TH|Nepal Province 3 (Bagmati)

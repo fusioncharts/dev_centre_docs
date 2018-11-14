@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x410
 
 
 
-{% embed_spec_map schleswigholstein-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.SH.DH|DH|Dithmarschen
 DE.SH.FL|FL|Flensburg
 DE.SH.KI|KI|Kiel

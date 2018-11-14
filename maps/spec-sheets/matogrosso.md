@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1100x1060
 
 
 
-{% embed_spec_map matogrosso-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 5100201|AB|?gua Boa
 5100102|AC|Acorizal
 5100250|AF|Alta Floresta

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map aurora-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.AU.BL | BL | Baler
 PH.AU.CS | CS | Casiguran
 PH.AU.DL | DL | Dilasag

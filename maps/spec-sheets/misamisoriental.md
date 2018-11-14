@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map misamisoriental-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.MN.AU | AU | Alubijid
 PH.MN.BA | BA | Balingasag
 PH.MN.BL | BL | Balingoan

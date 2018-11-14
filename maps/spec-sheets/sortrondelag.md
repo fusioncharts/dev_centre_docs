@@ -9,12 +9,12 @@ Dimensions (Width x Height): 482x600
 
 
 
-{% embed_spec_map sortrondelag-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 no.st.ag|AG|Agdenes
 no.st.bj|BJ|Bjugn
 no.st.fr|FR|Frøya

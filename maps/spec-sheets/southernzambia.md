@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map southernzambia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.SO.CI|CI|Chikankata District
 ZM.SO.CO|CO|Choma District
 ZM.SO.GW|GW|Gwembe District

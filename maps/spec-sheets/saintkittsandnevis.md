@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x330
 
 
 
-{% embed_spec_map saintkittsandnevis-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CC|Christ Church Nichola Town
 02|AS|Saint Anne Sandy Point
 03|GB|Saint George Basseterre

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 690x490
 
 
 
-{% embed_spec_map neuchatel-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.NE.BO|BO|Boundry
 CH.NE.CF|CF|Laa Chaux de-Fonds
 CH.NE.LO|LO|Le Locle

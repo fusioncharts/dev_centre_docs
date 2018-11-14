@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x500
 
 
 
-{% embed_spec_map halland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.HA.FA|FA|Falkenberg
 SE.HA.HA|HA|Halmstad
 SE.HA.HY|HY|Hylte

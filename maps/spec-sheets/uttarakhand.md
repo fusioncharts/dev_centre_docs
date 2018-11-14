@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x390
 
 
 
-{% embed_spec_map uttarakhand-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.UT.PG|PG|Pauri Garhwal
 IN.UT.AL|AL|Almora
 IN.UT.BA|BA|Bageshwar

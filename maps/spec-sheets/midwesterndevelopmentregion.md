@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map midwesterndevelopmentregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.MW.RA|RA|Rapti
 NP.MW.KA|KA|Karnali
 NP.MW.BH|BH|Bheri

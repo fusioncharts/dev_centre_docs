@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map corum-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.CM.AL | AL | Alaca
 TR.CM.BA | BA | Bayat
 TR.CM.BO | BO | Boğazkale

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x635
 
 
 
-{% embed_spec_map mountaindma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 790|ALB-NM|ALBUQUERQUE-SANTA FE
 634|AMA-TX|AMARILLO
 756|BIL-MT|BILLINGS

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 210x190
 
 
 
-{% embed_spec_map usanortheastregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 09|CT|Connecticut
 10|DE|Delaware
 11|DC|District of Columbia

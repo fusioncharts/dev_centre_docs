@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1050x1273
 
 
 
-{% embed_spec_map ceara-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2300101|AB|Abaiara
 2300150|AC|Acarape
 2300200|AC|Acaraú

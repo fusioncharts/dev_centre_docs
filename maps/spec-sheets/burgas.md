@@ -9,12 +9,12 @@ Dimensions (Width x Height): 574x567
 
 
 
-{% embed_spec_map burgas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AI|Aytos
 02|BU|Burgas
 03|KM|Kameno

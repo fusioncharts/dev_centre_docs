@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x245
 
 
 
-{% embed_spec_map kansasareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 316|316|316
 620|620|620
 785|785|785

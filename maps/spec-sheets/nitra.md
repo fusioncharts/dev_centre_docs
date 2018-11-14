@@ -9,12 +9,12 @@ Dimensions (Width x Height): 572x600
 
 
 
-{% embed_spec_map nitra-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SK.NI.KN|KN|Komárno
 SK.NI.LV|LV|Levice
 SK.NI.NR|NR|Nitra

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map khentii-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.HN.BN | BN | Batnorov
 MN.HN.BS | BS | Batshireet
 MN.HN.BA | BA | Bayan-Adarga
