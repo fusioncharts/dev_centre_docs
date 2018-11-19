@@ -1,6 +1,6 @@
 ---
-title: Data Values | FusionCharts
-description: Data values are plot values. The section talks about configuring text labels, rotation of data values, placement of data values and displaying data values.
+title: Plot Data values in your Charts & Graphs | Cutomize labels, colors and orientations
+description: The values of data points in a chart are essential to gather insights. Learn how to customize the values by changing the labels, colors, orientation, font, and much more.
 heading: Data Values
 ---
 

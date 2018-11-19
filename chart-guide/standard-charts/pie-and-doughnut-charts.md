@@ -1,6 +1,6 @@
 ---
-title: Pie and Doughnut Charts | FusionCharts
-description: This section talks about pie and doughtnut charts. Pie and doughnut charts are used to plot data that needs to be shown as a percent of the whole
+title: Learn to create Pie & Doughnut Charts for Web & Mobile
+description: Pie and Donut Charts are great tools for visualizing Part-to-whole relationships in a dataset. This handy guide teaches all about making pie and doughnut charts with custom attributes like labels, lines, radius, angles and much more.
 heading: Pie and Doughnut Charts
 ---
 
