@@ -1,10 +1,7 @@
 ---
-permalink: using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html
-title: Create Charts using Node.js, ExpressJS and Mongodb | FusionCharts
-description: This section of FusionCharts Suite Xt talks about how to create interactive charts using node.js, expressjs and mongodb.
+title: Learn to Create Interactive Charts using Node.js | Server Side Data Visualization
+description: A 9 Step tutorial that teaches you how to build fast and interactive Charts for your web applications using ExpressJS as the server side framework and MongoDB as the DataBase.
 heading: Create Charts using Node.js, ExpressJS and Mongodb
-chartPresent: true
-layout: page
 ---
 
 In the recent years an unexpected programming language has been dominating the server side scene. This programming language was only being used for client side programming. It is none other than our very own **JavaScript**. The change in the fortunes of JavaScript can be attributed to the introduction of a server side framework called **Node.js**. 

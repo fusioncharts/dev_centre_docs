@@ -1,6 +1,6 @@
 ---
-title: Drag-able Charts | FusionCharts
-description: Drag-able charts are special types of charts that allow you to visually update data on the chart and understand how the estimated data values affect the whole chart.
+title: Learn to create Drag-able Charts for Web & Mobile
+description: Drag-able Charts are used to visually manipulate the data on a chart in Real-Time. Learn how to make interactive drag charts with customized axis limits, divisional lines, data retrieval and much more.
 heading: Drag-able Charts
 ---
 

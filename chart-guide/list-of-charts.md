@@ -1,6 +1,6 @@
 ---
-title: List of Charts | FusionCharts
-description: This article is about FusionCharts XT/FusionWidgets XT/PowerCharts XT with their JavaScript chart alias. Use this alias to create an instance of chart type
+title: List of 95+ Charts & Graphs | General, Business, Statistical and Stock-Market Charts
+description: FusionCharts has 95+ Charts that cover all aspects of data visualization - Time Series, Comparisons, Trend Analysis, Part-to-whole and much more.
 heading: List of Charts
 ---
 

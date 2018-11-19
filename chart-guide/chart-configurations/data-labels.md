@@ -1,7 +1,7 @@
 ---
-title: Data Labels | FusionCharts
-description: Data labels are the names of the data points that are displayed on the x-axis of a chart. Label Management for line and area charts in possible.
-heading: Data Labels
+title: Display Customized Data Labels on Charts & Graphs
+description: Customize the way data labels look like on your Charts and Graphs. Learn how to use the 5 modes of showing labels - Auto, Wrap, Stagger, Rotate and None. 
+heading: Display Customized Data Labels
 ---
 
 Data labels are the names of the data points that are displayed on the x-axis of a chart. 
