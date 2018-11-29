@@ -32,7 +32,7 @@ public partial class Pages_SpecialChartTypeAPI: System.Web.UI.Page {
         string jsonData = "{ 'chart': { 'caption': 'Market Share of Web Servers', 'plottooltext': '<b>$percentValue</b> of web servers run on $label servers', 'showLegend': '0', 'enableMultiSlicing': '0', 'showPercentValues': '1', 'legendPosition': 'bottom', 'useDataPlotColorForLabels': '1', 'theme': 'fusion', }, 'data': [{ 'label': 'Apache', 'value': '32647479' }, { 'label': 'Microsoft', 'value': '22100932' }, { 'label': 'Zeus', 'value': '14376' }, { 'label': 'Other', 'value': '18674221' }] }";
         // create chart instance
         // parameter
-        // chrat type, chart id, chart widh, chart height, data format, data source
+        // chart type, chart id, chart width, chart height, data format, data source
         Chart column2d = new Chart("pie2d", "first_chart", "450", "250", "json", jsonData);
         //attach event 
         column2d.AddEvent("dataplotClick", "plotClickHandler");
@@ -82,7 +82,7 @@ The HTML template for `aspx` file is shown below:
 
 &lt;head runat="server"&gt;
     &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
-    &lt;title&gt;FusionCharts | shocasing use special chart type API&lt;/title&gt;
+    &lt;title&gt;FusionCharts | showcasing use special chart type API&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
@@ -118,7 +118,7 @@ The HTML template for `aspx` file is shown below:
         }
     &lt;/script&gt;
     &lt;form id="form1" runat="server"&gt;
-        &lt;h3&gt;shocasing use special chart type API&lt;/h3&gt;
+        &lt;h3&gt;showcasing use special chart type API&lt;/h3&gt;
         &lt;div&gt;
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
@@ -160,7 +160,7 @@ The HTML template for `aspx` file is shown below:
 
 &lt;head runat="server"&gt;
     &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
-    &lt;title&gt;FusionCharts | shocasing use special chart type API&lt;/title&gt;
+    &lt;title&gt;FusionCharts | showcasing use special chart type API&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
@@ -196,7 +196,7 @@ The HTML template for `aspx` file is shown below:
         }
     &lt;/script&gt;
     &lt;form id="form1" runat="server"&gt;
-        &lt;h3&gt;shocasing use special chart type API&lt;/h3&gt;
+        &lt;h3&gt;showcasing use special chart type API&lt;/h3&gt;
         &lt;div&gt;
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
