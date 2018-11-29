@@ -150,7 +150,3 @@ Apart from the usual boilerplate, the sample __C#/VB__ code provided above corre
     * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, and within a `<form><div>`, render the chart.
 
 > Refer to [Spline chart]({% site.baseurl %}/chart-guide/standard-charts/spline-charts) for more information on the configuration and data for this chart type.
-
-{% embed_ftChart sales-analysis %}
-
-{% embed_ftData sales-analysis %}
