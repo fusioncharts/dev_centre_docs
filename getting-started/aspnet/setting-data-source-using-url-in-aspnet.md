@@ -97,7 +97,7 @@ public partial class JsonUrlData : System.Web.UI.Page
         string jsonDataUrl = "oilReserves.json";
         // create chart instance
         // parameter
-        // chrat type, chart id, chart widh, chart height, data format, data source
+        // chart type, chart id, chart width, chart height, data format, data source
         Chart columnChart = new Chart("column2d", "first_chart", "700", "400", "jsonurl", jsonDataUrl);
         //render chart
         Literal1.Text = columnChart.Render();
@@ -262,7 +262,7 @@ public partial class XmlDataUrl : System.Web.UI.Page
         string xmlDataUrl = "oilReserves.xml";
         // create chart instance
         // parameter
-        // chrat type, chart id, chart widh, chart height, data format, data source
+        // chart type, chart id, chart width, chart height, data format, data source
         Chart columnChart = new Chart("column2d", "first_chart", "700", "400", "xmlurl", xmlDataUrl);
         //render chart
         Literal1.Text = columnChart.Render();
