@@ -10,7 +10,7 @@ In this article, we'll create a simple time-series line chart showcasing online 
 
 The chart is shown below:
 
-{% embed_ftChart sales-analysis %}
+{% embed_ftChartData sales-analysis %}
 
 FusionTime uses columns and rows of the in-browser `DataTable` to feed data to the chart. This allows you to apply different data operations on the `DataTable` to transform the data as per your requirement. To create a DataTable you need to provide:
 
