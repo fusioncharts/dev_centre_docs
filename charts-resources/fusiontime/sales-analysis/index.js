@@ -1,15 +1,15 @@
 {
     type: 'timeseries',
-        renderAt: 'container',
-            width: 650,
-                height: 450,
-                    dataSource: {
+    renderAt: 'container',
+    width: 90%,
+    height: 500,
+    dataSource: {
         data: dataStore,
-            chart: {
+        chart: {
         },
         "yAxis": {
             "columnName": "Sales",
-                "plotType": "column"
+            "plotType": "column"
         },
         caption: {
             text: 'Single Series Chart'
