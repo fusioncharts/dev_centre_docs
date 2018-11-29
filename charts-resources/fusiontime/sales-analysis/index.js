@@ -1,8 +1,8 @@
 {
     type: 'timeseries',
         renderAt: 'container',
-            width: 1000,
-                height: 650,
+            width: 650,
+                height: 450,
                     dataSource: {
         data: dataStore,
             chart: {
