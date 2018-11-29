@@ -1,18 +1,14 @@
 {
     type: 'timeseries',
     renderAt: 'container',
-    width: '100%',
+    width: '95%',
     height: 450,
     dataSource: {
         data: dataStore,
         chart: {
         },
-        "yAxis": {
-            "columnName": "Sales",
-            "plotType": "column"
-        },
         caption: {
-            text: 'Single Series Chart'
+            text: 'Online Sales of a SuperStore in the US'
         }
     }
 }
