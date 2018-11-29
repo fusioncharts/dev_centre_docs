@@ -182,7 +182,7 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
     &lt;!DOCTYPE html&gt;
     &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
     &lt;head runat=&quot;server&quot;&gt;
-        &lt;title&gt;FusionCharts - DrillDownExample&lt;/title&gt;
+        &lt;title&gt;FusionCharts - Drill Down Example&lt;/title&gt;
         &lt;!-- FusionCharts script tag --&gt;
         &lt;script type=&quot;text/javascript&quot; src=&quot;../../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
         &lt;!-- End --&gt; 
@@ -259,7 +259,7 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
         Inherits System.Web.UI.Page
         Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
             ' This page demonstrates the ease of generating charts using FusionCharts.
-            ' For this chart, we've used a pre-defined DrillDownSSData.json (contained in /Data/ folder)
+            ' For this chart, we've used a predefined DrillDownSSData.json (contained in /Data/ folder)
             ' Ideally, you would NOT use a physical data file. Instead you'll have 
             ' your own ASP.NET scripts virtually relay the JSON / XML data document.
             ' For a head-start, we've kept this example very simple.

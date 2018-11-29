@@ -33,7 +33,7 @@ public partial class Pages_ProductLifeCycleEvent : System.Web.UI.Page
         string jsonData = "{      'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion',  },      'data': [{        'label': 'Venezuela',        'value': '290'      }, {        'label': 'Saudi',        'value': '260'      }, {        'label': 'Canada',        'value': '180'      }, {        'label': 'Iran',        'value': '140'      }, {        'label': 'Russia',        'value': '115'      }, {        'label': 'UAE',        'value': '100'      }, {        'label': 'US',        'value': '30'      }, {        'label': 'China',        'value': '30'      }]    }";
         // create chart instance
         // parameter
-        // chrat type, chart id, chart widh, chart height, data format, data source
+        // chart type, chart id, chart width, chart height, data format, data source
         Chart column2d = new Chart("column2d", "first_chart", "700", "400", "json", jsonData);
         //attach event 
         column2d.AddEvent("dataLoaded", "onDataLoaded");
@@ -91,7 +91,7 @@ The HTML template for `aspx` file is shown below:
     &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;script&gt;
         function onDataLoaded() {
-            document.getElementById("dataLoaded").innerHTML = "chart data is loaded succesfully";
+            document.getElementById("dataLoaded").innerHTML = "chart data is loaded successfully";
 
         }
     &lt;/script&gt;
@@ -133,7 +133,7 @@ The HTML template for `aspx` file is shown below:
     &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;script&gt;
         function onDataLoaded() {
-            document.getElementById("dataLoaded").innerHTML = "chart data is loaded succesfully";
+            document.getElementById("dataLoaded").innerHTML = "chart data is loaded successfully";
 
         }
     &lt;/script&gt;
