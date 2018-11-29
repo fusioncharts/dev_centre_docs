@@ -1,7 +1,7 @@
 {
     type: 'spline',
     renderAt: 'chart-container',
-    width: '700',
+    width: '100%',
     height: '400',
     dataFormat: 'json',
     dataSource: {
