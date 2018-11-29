@@ -50085,10 +50085,9 @@ Once the schema and data files are ready it is time to create the `DataTable` an
       dataSource: {
         data: dataStore.getDataTable(),
         chart: {
-          //"showToolTip": "0"
         },
         caption: {
-          text: 'Single Series Chart'
+          text: 'Online Sales of a SuperStore in the US'
         }
       }
     }).render()
