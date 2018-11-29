@@ -50053,7 +50053,50 @@ We are all set with our data to create the chart. Now, let's create the `.html` 
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index.html` file and copy the following code: 
 
-<Code Snippet>
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style type="text/css">
+  #container {
+    width: 700px;
+  }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create your First Chart</title>
+</head>
+
+<body>
+  <div id="container"></div>
+  <script src="./build/fusioncharts.js"></script>
+  <script src="./data.js"></script>
+  <script src="./schema.js"></script>
+  <script>
+    const dataStore = new FusionCharts.DataStore(data, schema);
+
+    new FusionCharts({
+      type: 'timeseries',
+      renderAt: 'container',
+      width: "90%",
+      height: 650,
+      dataSource: {
+        data: dataStore.getDataTable(),
+        chart: {
+          //"showToolTip": "0"
+        },
+        caption: {
+          text: 'Single Series Chart'
+        }
+      }
+    }).render()
+  </script>
+</body>
+
+</html>
+```
 
 In the above code:
 
