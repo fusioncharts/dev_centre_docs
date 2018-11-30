@@ -8,6 +8,7 @@ Filters in FusionTime are predefined functions which help in filtering out some 
 
 * Greater
 * Less
+* Equals
 * Between
 
 ## Greater
@@ -92,6 +93,47 @@ In the above code:
 
 * Store the `dataTable` in a variable.
 * Set the `less` filter using the `FusionCharts.DataStore` constructor.
+* Apply the filter to the `dataTable`.
+
+## Equals
+
+Equals is a filter which can be used when you want to filter specific data value. Let’s assume that we have global  sales data. Out of this data, you only want to visualize the sales data for **India**. In this scenario, use the `equals` operator which will render the chart using data plots only for **India**.
+
+Let's apply the `equals` filter to the above single series chart and set its value to **India**.
+
+The chart looks like as shown below:
+
+{% embed_ftChart getting-started-filter-equals %}
+
+In the above chart, the rendered data plots are sales data for **India**. The data structure to set the `equals` filter is shown below:
+
+```
+//Equals Filter Applied to the data table in the Data Store
+const dataStore = new FusionCharts.DataStore(data, schema);
+var dataT= dataStore.getDataTable();
+var equals1 = FusionCharts.DataStore.Operators.equals('Country', 'India');
+var dataT_1 = dataT.query(equals1);
+
+new FusionCharts({
+	type: 'timeseries',
+	renderAt: 'container',
+	width: '95%',
+	height: 500,
+	dataSource: {
+    	data: dataT_1,
+    	chart: {
+    	},
+    	caption: {
+      		text: 'Online Sales of a SuperStore in India'
+    	}
+	}
+}).render()
+```
+
+In the above code:
+
+* Store the `dataTable` in a variable.
+* Set the `equals` filter using the `FusionCharts.DataStore` constructor.
 * Apply the filter to the `dataTable`.
 
 ## Between

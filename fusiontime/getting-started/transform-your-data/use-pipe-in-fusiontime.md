@@ -10,7 +10,7 @@ For better understanding, let's create a chart with the default data. For exampl
 
 The chart is shown below:
 
-<Live chart>
+{% embed_ftChart online-sales-single-series %}
 
 Now, let's add some operations to the above chart. Follow the steps given below:
 
@@ -27,7 +27,6 @@ Now, let's add some operations to the above chart. Follow the steps given below:
 The code snippet for the above steps is given below:
 
 ```
-
 let dataStore = new DataStore(data, schema, { enableIndex: true, indexBy: 'OrderDate' }),
 
      defaultDT = dataStore.getDataTable();
@@ -65,4 +64,3 @@ pipeDT = defaultDT.query(pipe(filter1, filter2, group1));
 The chart after applying the **Pipe** operator looks like as shown below:
 
 <Live Chart>
-
