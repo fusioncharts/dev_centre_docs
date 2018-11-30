@@ -57,9 +57,9 @@ In the above code:
 
 ## Less
 
-**Lesser** is a filter which can be used when you want to filter the data less than a specific numeric value. Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values less than 1000. In this scenario, we have to use the `less` filter which will render the chart using data plots with the value below 1000.
+**Less** is a filter which can be used when you want to filter the data less than a specific numeric value. Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values less than 1000. In this scenario, we have to use the `less` filter which will render the chart using data plots with the value below 1000.
 
-Let's apply the `lesser` filter to the above chart and set its value to **1000**. The chart looks like as shown below:
+Let's apply the `less` filter to the above chart and set its value to **1000**. The chart looks like as shown below:
 
 {% embed_ftChart getting-started-filter-less %}
 
@@ -69,7 +69,7 @@ In the above chart, the rendered data plot's values are less than **1000**. The 
 //Less Filter Applied to the data table in the Data Store
 const dataStore = new FusionCharts.DataStore(data, schema);
 var dataT= dataStore.getDataTable();
-var greater1 = FusionCharts.DataStore.Operators.lesser('Sales', 1000);
+var greater1 = FusionCharts.DataStore.Operators.less('Sales', 1000);
 var dataT_1 = dataT.query(greater1);
 
 new FusionCharts({
