@@ -20,7 +20,7 @@ FusionTime uses columns and rows as `DataTable` to feed data to the chart. This 
 
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 
-## Create the schema
+## Create the `schema`
 
 The schema contains an array which has multiple objects created in it. Each object creates a column in the `DataTable`. The schema helps DataTable understand the columns in your data, the data type for each column and input format (in case of date). You've to mandatorily specify the schema for each DataTable for FusionTime to render it.
 
@@ -52,7 +52,7 @@ In the above code:
 
 Now that we have the columns ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
-## Create data
+## Create `data`
 
 In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
 
