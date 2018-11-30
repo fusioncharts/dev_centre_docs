@@ -49,4 +49,4 @@ The chart with the updated plot type is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot %}
 
-FusionTime includes several options to update the plot type of the chart. To know more, click here.
+FusionTime includes several options to update the plot type of the chart. To know more, click [here]({% site.baseurl %}/fusiontime/fusiontime-component/plot-types-in-fusiontime).
