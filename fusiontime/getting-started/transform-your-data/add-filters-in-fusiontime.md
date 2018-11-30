@@ -18,22 +18,18 @@ For better understanding, let's create a chart with no filters applied to it. Fo
 
 The chart is shown below:
 
-{% embed_ftChart getting-started-filter-greater %}
+{% embed_ftChartData online-sales-single-series %}
 
 Now, let's apply the `greater` filter and set its value to **500**. The chart looks like as shown below:
 
-<Live chart>
+{% embed_ftChart getting-started-filter-greater %}
 
 In the above chart, the rendered data plot's values are greater than **500**. The data structure to set the `greater` filter is shown below:
 
 ```
-
 var dataT= dataStore.getDataTable();
-
 var filter1 = FusionCharts.DataStore.Operators.greater('Sales', 500);
-
 var dataT_1=dataT.query(filter1);
-
 ```
 
 In the above code:
