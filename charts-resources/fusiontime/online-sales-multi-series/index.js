@@ -1,7 +1,7 @@
 {
     type: 'timeseries',
     renderAt: 'container',
-    width: "95%",
+    width: '95%',
     height: 650,
     dataSource: {
         data: dataStore.getDataTable(),
@@ -13,6 +13,6 @@
             columnName: "Sales",
             plotType: "line"
         }],
-        "series": "Country"
+        series: "Country"
     }
 }
