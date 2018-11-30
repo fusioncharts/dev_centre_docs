@@ -10,7 +10,7 @@ In this article, we'll create a simple time-series line chart showcasing online 
 
 The chart is shown below:
 
-{% embed_ftChartData sales-analysis %}
+{% embed_ftChartData online-sales-single-series %}
 
 FusionTime uses columns and rows of the in-browser `DataTable` to feed data to the chart. This allows you to apply different data operations on the `DataTable` to transform the data as per your requirement. To create a DataTable you need to provide:
 
@@ -28,7 +28,7 @@ To define the schema, let's create a `schema.js` file and copy the following cod
 
 Note: It is not mandatory to create the schema in a different .js file. You can also define the schema within the index.html file.
 
-```
+```JSON
 [{
     "name": "Country",
     "type": "string"
@@ -60,7 +60,7 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 
 To add the data, let's create a data.js file and copy the following code:
 
-{% embed_ftData sales-analysis %}
+{% embed_ftData online-sales-single-series %}
 
 In the above code:
 
@@ -80,27 +80,27 @@ We are all set with our data to create the chart. Now, let's create the `.html` 
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index.html` file and copy the following code: 
 
-```
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create your First Chart</title>
   <style type="text/css">
   #container {
     width: 700px;
   }
   </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Create your First Chart</title>
 </head>
 
 <body>
   <div id="container"></div>
-  <script src="./build/fusioncharts.js"></script>
-  <script src="./data.js"></script>
-  <script src="./schema.js"></script>
+  <script src="path/to/local/fusioncharts.js"></script>
+  <script src="path/to/local/data.js"></script>
+  <script src="path/to/local/schema.js"></script>
   <script>
     const dataStore = new FusionCharts.DataStore(data, schema);
 
