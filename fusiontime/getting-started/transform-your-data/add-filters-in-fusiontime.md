@@ -57,9 +57,9 @@ In the above code:
 
 ## Less
 
-**Less** is a filter which can be used when you want to filter the data less than a specific numeric value. Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values less than 1000. In this scenario, we have to use the `less` filter which will render the chart using data plots with the value below 1000.
+**Lesser** is a filter which can be used when you want to filter the data less than a specific numeric value. Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values less than 1000. In this scenario, we have to use the `less` filter which will render the chart using data plots with the value below 1000.
 
-Let's apply the `less` filter to the above chart and set its value to **1000**. The chart looks like as shown below:
+Let's apply the `lesser` filter to the above chart and set its value to **1000**. The chart looks like as shown below:
 
 {% embed_ftChart getting-started-filter-less %}
 
