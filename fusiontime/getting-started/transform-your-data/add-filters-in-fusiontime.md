@@ -7,9 +7,7 @@ heading: Add Filters
 Filters in FusionTime are predefined functions which help in filtering out some specific data you want to visualize in the chart. Some of the predefined filters in FusionTime are:
 
 * Greater
-
 * Less
-
 * Between
 
 ## Greater
@@ -20,7 +18,7 @@ For better understanding, let's create a chart with no filters applied to it. Fo
 
 The chart is shown below:
 
-<Live chart>
+{% embed_ftChart getting-started-filter-greater %}
 
 Now, let's apply the `greater` filter and set its value to **500**. The chart looks like as shown below:
 
