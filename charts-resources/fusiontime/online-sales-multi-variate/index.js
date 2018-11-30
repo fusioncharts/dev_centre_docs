@@ -5,6 +5,9 @@
     height: 650,
     dataSource: {
         data: dataStore.getDataTable(),
-        chart: {}
+        chart: {},
+        caption: {
+          text: 'Global Online Sales of a SuperStore'
+        }
     }
 }

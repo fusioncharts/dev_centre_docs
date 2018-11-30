@@ -121,6 +121,9 @@ Once the schema and data files are ready it is time to create the `DataTable` an
       dataSource: {
         data: dataStore.getDataTable(),
         chart: {
+        },
+        caption: {
+          text: 'Global Online Sales of a SuperStore'
         }
       }
     }).render()
