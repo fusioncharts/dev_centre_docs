@@ -27,7 +27,7 @@ Now, let's apply the `greater` filter and set its value to **500**. The chart lo
 In the above chart, the rendered data plot's values are greater than **500**. The data structure to set the `greater` filter is shown below:
 
 ```
-<-- Greater Filter Applied to the data table in the Data Store -->
+//Greater Filter Applied to the data table in the Data Store
 const dataStore = new FusionCharts.DataStore(data, schema);
 var dataT= dataStore.getDataTable();
 var greater1 = FusionCharts.DataStore.Operators.greater('Sales', 500);
