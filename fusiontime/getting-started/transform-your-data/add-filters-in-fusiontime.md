@@ -100,7 +100,7 @@ In the above code:
 
 Let's apply the `between` filter to the above single series chart and set its value from 500 to 1000. The chart looks like as shown below:
 
-<Live chart>
+{% embed_ftChart getting-started-filter-between %}
 
 In the above chart, the rendered data plot's values are more than **500** but less than **1000**. The data structure to set the `between` filter is shown below:
 
