@@ -14,15 +14,11 @@ The chart is shown below:
 
 Now, let's add some operations to the above chart. Follow the steps given below:
 
-1. Apply the `greater` filter and set its value to **500**. 
+1. Apply the `equals` filter and set its value to **India**.
 
-2. Apply the `less` filter and set its value to **1000**. 
+2. Apply the `greater` filter and set its value to **500**.
 
-3. Apply `groupBy` on **OrderDate** column
-
-4. Set the operation as `sum` on **Sales** column.
-
-5. Once you are done with the above steps, use `pipe` operation to run the above steps in sequence.
+3. Once you are done with the above steps, use `pipe` operation to run the above steps in sequence.
 
 The code snippet for the above steps is given below:
 
@@ -63,4 +59,4 @@ pipeDT = defaultDT.query(pipe(filter1, filter2, group1));
 
 The chart after applying the **Pipe** operator looks like as shown below:
 
-<Live Chart>
+{% embed_ftChart getting-started-filter-pipe %}
