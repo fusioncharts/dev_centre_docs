@@ -18,7 +18,7 @@ For better understanding, let's create a chart with no filters applied to it. Fo
 
 The chart is shown below:
 
-{% embed_ftChartData online-sales-single-series %}
+{% embed_ftChart online-sales-single-series %}
 
 Now, let's apply the `greater` filter and set its value to **500**. The chart looks like as shown below:
 
