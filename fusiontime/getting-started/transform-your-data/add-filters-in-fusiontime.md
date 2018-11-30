@@ -105,20 +105,30 @@ Let's apply the `between` filter to the above single series chart and set its va
 In the above chart, the rendered data plot's values are more than **500** but less than **1000**. The data structure to set the `between` filter is shown below:
 
 ```
-
+//Between Filter Applied to the data table in the Data Store
+const dataStore = new FusionCharts.DataStore(data, schema);
 var dataT= dataStore.getDataTable();
+var greater1 = FusionCharts.DataStore.Operators.between('Sales', 500, 1000);
+var dataT_1 = dataT.query(greater1);
 
-var filter1 = FusionCharts.DataStore.Operators.between('Sales', 500, 1000);
-
-var dataT_1=dataT.query(filter1);
-
+new FusionCharts({
+	type: 'timeseries',
+	renderAt: 'container',
+	width: '95%',
+	height: 500,
+	dataSource: {
+    	data: dataT_1,
+    	chart: {
+    	},
+    	caption: {
+      		text: 'Online Sales of a SuperStore in the US'
+    	}
+	}
+}).render()
 ```
 
 In the above code:
 
 * Store the `dataTable` in a variable.
-
 * Set the `between` filter using the `FusionCharts.DataStore` constructor.
-
 * Apply the filter to the `dataTable`.
-

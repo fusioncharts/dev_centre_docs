@@ -7,7 +7,7 @@
         data: dataStore.query(FusionCharts.DataStore.Operators.less('Sales', 1000)),
         chart: {
         },
-        caption: 
+        caption: { 
             text: 'Online Sales of a SuperStore in the US'
         }
     }
