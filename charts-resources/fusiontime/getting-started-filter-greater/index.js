@@ -4,7 +4,7 @@
     width: '95%',
     height: 450,
     dataSource: {
-        data: query(FusionCharts.DataStore.Operators.greater('Sales', 500)),
+        data: dataStore.query(FusionCharts.DataStore.Operators.greater('Sales', 500)),
         chart: {
         },
         caption: {
