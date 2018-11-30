@@ -61,26 +61,37 @@ In the above code:
 
 Let's apply the `less` filter to the above chart and set its value to **1000**. The chart looks like as shown below:
 
-<Live chart>
+{% embed_ftChart getting-started-filter-less %}
 
 In the above chart, the rendered data plot's values are less than **1000**. The data structure to set the `less` filter is shown below:
 
 ```
-
+//Less Filter Applied to the data table in the Data Store
+const dataStore = new FusionCharts.DataStore(data, schema);
 var dataT= dataStore.getDataTable();
+var greater1 = FusionCharts.DataStore.Operators.less('Sales', 1000);
+var dataT_1 = dataT.query(greater1);
 
-var filter1 = FusionCharts.DataStore.Operators.less('Sales', 100);
-
-var dataT_1=dataT.query(filter1);
-
+new FusionCharts({
+	type: 'timeseries',
+	renderAt: 'container',
+	width: '95%',
+	height: 500,
+	dataSource: {
+    	data: dataT_1,
+    	chart: {
+    	},
+    	caption: {
+      		text: 'Online Sales of a SuperStore in the US'
+    	}
+	}
+}).render()
 ```
 
 In the above code:
 
 * Store the `dataTable` in a variable.
-
 * Set the `less` filter using the `FusionCharts.DataStore` constructor.
-
 * Apply the filter to the `dataTable`.
 
 ## Between
