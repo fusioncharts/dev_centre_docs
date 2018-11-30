@@ -22,7 +22,7 @@ const dataStore = new FusionCharts.DataStore(data, schema);
 new FusionCharts({
     type: 'timeseries',
 	renderAt: 'container',
-	width: "90%",
+	width: "95%",
 	height: 650,
 	dataSource: {
         data: dataStore.getDataTable(),
@@ -30,7 +30,11 @@ new FusionCharts({
         },
         caption: {
           text: 'Online Sales of a SuperStore in the US'
-        }
+        },
+        yAxis: [{
+            columnName: 'Sales',
+            plotType: 'column'
+        }]
     }
 }).render()
 ```
@@ -46,4 +50,3 @@ The chart with the updated plot type is shown below:
 {% embed_ftChartData online-sales-single-series-column-data-plot %}
 
 FusionTime includes several options to update the plot type of the chart. To know more, click here.
-
