@@ -10,7 +10,7 @@ For better understanding, let's create a chart without grouping. For example, a 
 
 The chart is shown below:
 
-<Live chart>
+{% embed_ftChartData online-sales-single-series %}
 
 Now, let's apply `groupBy` to the above chart.
 
@@ -63,4 +63,3 @@ In the above code:
 The chart looks like as shown below:
 
 <Live Chart>
-
