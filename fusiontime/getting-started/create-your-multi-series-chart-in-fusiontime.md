@@ -10,7 +10,7 @@ In this article, we'll create our first multi-series chart which will compare on
 
 The multi-series chart is shown below:
 
-<Live chart>
+{% embed_ftChartData online-sales-multi-series %}
 
 FusionTime uses columns and rows as `DataTable` to feed data to the chart. This allows you to apply different data operations on the `DataTable` to transform your data as per your requirement. To create a `DataTable` you need to provide:
 
@@ -20,13 +20,25 @@ FusionTime uses columns and rows as `DataTable` to feed data to the chart. This 
 
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 
-## Create the schema
+## Create the `schema`
 
 The schema contains an array which has multiple objects created in it. Each object creates a column in the `DataTable`. The schema helps DataTable understand the columns in your data, the data type for each column and input format (in case of date). You've to mandatorily specify the schema for each DataTable for FusionTime to render it.
 
 To define the schema, let's create a `schema.js` file and copy the following code:
 
-<Code Snippet>
+```JSON
+[{
+    "name": "Country",
+    "type": "string"
+}, {
+    "name": "Time",
+    "type": "date",
+    "format": "%-m/%-d/%Y"
+}, {
+    "name": "Sales",
+    "type": "number"
+}]
+```
 
 In the above code:
 
@@ -40,13 +52,13 @@ In the above code:
 
 Now that we have the columns ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
-## Create data
+## Create `data`
 
 In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
 
 To add the data, let's create a data.js file and copy the following code:
 
-<Code Snippet>
+{% embed_ftData online-sales-multi-series %}
 
 In the above code:
 
@@ -66,7 +78,54 @@ We are all set with our data to create the chart. Now, let's create the `.html` 
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index.html` file and copy the following code: 
 
-<Code Snippet>
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv"Sales">
+  <style type="text/css">
+  #container {
+    width: 700px;
+  }
+  </style>
+  
+  </head>
+
+<body>
+  <div id="container"></div>
+  <script src="path/to/local/fusioncharts.js"></script>
+  <script src="path/to/local/data.js"></script>
+  <script src="path/to/local/schema.js"></script>
+  <script>
+    const dataStore = new FusionCharts.DataStore(data, schema);
+
+    new FusionCharts({
+      type: 'timeseries',
+      renderAt: 'container',
+      width: "95%",
+      height: 650,
+      dataSource: {
+        data: dataStore.getDataTable(),
+        chart: {
+        },
+        caption: {
+          text: 'Online Sales of a SuperStore in India & the US'
+        },
+        yAxis: [{
+          columnName: "Sales",
+          plotType: "line"
+        }],
+        "series": "Country"
+      }
+    }).render()
+  </script>
+</body>
+
+</html>
+```
 
 In the above code:
 
@@ -91,4 +150,3 @@ In the above code:
     * Specify the series which implies the datasets rendered in the chart.
 
 That's it! Your first multi-series chart is ready.
-

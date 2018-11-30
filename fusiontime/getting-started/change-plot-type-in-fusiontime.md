@@ -12,28 +12,27 @@ Let's create a time series chart using a **line** as the data plot showcasing on
 
 The chart is shown below:
 
-<Live Chart>
+{% embed_ftChartData online-sales-single-series %}
 
 To change the plot type of the above chart change the code below in the `index.html` file:
 
 ```
+const dataStore = new FusionCharts.DataStore(data, schema);
 
-dataSource: {
-
-        ...
-
-        "yAxis": {
-
-          "columnName": "Sales",
-
-          "plotType": "column"
-
+new FusionCharts({
+    type: 'timeseries',
+	renderAt: 'container',
+	width: "90%",
+	height: 650,
+	dataSource: {
+        data: dataStore.getDataTable(),
+        chart: {
         },
-
-       ....
-
-}
-
+        caption: {
+          text: 'Online Sales of a SuperStore in the US'
+        }
+    }
+}).render()
 ```
 
 In the above code:
@@ -44,7 +43,7 @@ In the above code:
 
 The chart with the updated plot type is shown below:
 
-<live chart> 
+{% embed_ftChartData online-sales-single-series-column-data-plot %}
 
 FusionTime includes several options to update the plot type of the chart. To know more, click here.
 
