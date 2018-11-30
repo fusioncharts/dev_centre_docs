@@ -12,7 +12,7 @@ Let's create a time series chart using a **line** as the data plot showcasing on
 
 The chart is shown below:
 
-{% embed_ftChartData online-sales-single-series %}
+{% embed_ftChartData online-sales-single-series-column-data-plot %}
 
 To change the plot type of the above chart change the code below in the `index.html` file:
 
