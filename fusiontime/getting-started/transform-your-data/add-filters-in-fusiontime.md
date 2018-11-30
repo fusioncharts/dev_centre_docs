@@ -69,7 +69,7 @@ In the above chart, the rendered data plot's values are less than **1000**. The 
 //Less Filter Applied to the data table in the Data Store
 const dataStore = new FusionCharts.DataStore(data, schema);
 var dataT= dataStore.getDataTable();
-var greater1 = FusionCharts.DataStore.Operators.less('Sales', 1000);
+var greater1 = FusionCharts.DataStore.Operators.lesser('Sales', 1000);
 var dataT_1 = dataT.query(greater1);
 
 new FusionCharts({
