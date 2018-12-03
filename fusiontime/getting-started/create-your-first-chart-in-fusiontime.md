@@ -114,6 +114,11 @@ Once the schema and data files are ready it is time to create the `DataTable` an
         data: fusionTable,
         chart: {
         },
+        "yAxis": [{
+            "plot": {
+                "title": "Sales"
+            }
+        }],
         caption: {
           text: 'Online Sales of a SuperStore in the US'
         }
