@@ -100,7 +100,8 @@ Once the schema and data files are ready it is time to create the `DataTable` an
   <script src="path/to/local/data.js"></script>
   <script src="path/to/local/schema.js"></script>
   <script>
-    const dataStore = new FusionCharts.DataStore(data, schema);
+    let fusionDataStore = new FusionCharts.DataStore();
+    let fusionTable = fusionDataStore.createDataTable(data, schema);
 
     new FusionCharts({
       type: 'timeseries',
@@ -108,7 +109,7 @@ Once the schema and data files are ready it is time to create the `DataTable` an
       width: "95%",
       height: 650,
       dataSource: {
-        data: dataStore.getDataTable(),
+        data: fusionTable,
         chart: {
         },
         caption: {
@@ -134,6 +135,10 @@ In the above code:
 * Include `data.js` and `schema.js` files.
 
 * When `schema.js` and `data.js` is created, using both the files FusionTime creates a dataTable which is stored in DataStore. 
+
+* Pass the `schema` and `data` to the Data Store which sets the `DataTable` used to render the chart.
+
+* Fetch the `DataTable` from the data store using the `FusionCharts.DataStore()` method.
 
 * Define the chart configuration in the JSON.
 
