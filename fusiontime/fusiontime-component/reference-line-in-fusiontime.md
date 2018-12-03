@@ -10,7 +10,7 @@ When mapped to the y-axis, a reference line is a horizontal line that correspond
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line %}
 
-In the example given above, whenever you hover the mouse pointer over a data plot, a reference line appears at the peak of the column, parallel to the time axis. Notice that the label displayed at the beginning of the line along the Y-axis shows the value of the plot.
+In the example given above, a reference line appears, parallel to the x-axis. Notice that the label displayed at the beginning of the line along the Y-axis shows the value of the reference (**Daily Target** for the above chart).
 
 ## Configure the Reference Line
 
@@ -23,7 +23,31 @@ You can configure reference lines using the following attributes of the `referen
 Refer to the code given below:
 
 ```
-
+{
+    type: 'timeseries',
+    renderAt: 'container',
+    width: '95%',
+    height: 450,
+    dataSource: {
+        data: dataStore,
+        chart: {
+        },
+        caption: {
+            text: 'Online Sales of a SuperStore in the US'
+        },
+        yaxis: {
+            "plot": {
+                "value": "Sales",
+                "type": "line"
+            },
+            // Reference Line
+            "referenceLine": [{
+                "label": "Daily Target",
+                "value": 300
+            }],
+        }
+    }
+}
 ```
 
 Note: You can set the top and bottom positioning of the reference line label `vertical-align` attribute.
