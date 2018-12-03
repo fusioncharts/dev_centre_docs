@@ -8,9 +8,7 @@
         chart: {
         },
         yAxis: [{
-            "plot": {
-                "title": "Sales"
-            }
+            "title": "Sales",
         }],
         caption: {
             text: 'Online Sales of a SuperStore in the US'
