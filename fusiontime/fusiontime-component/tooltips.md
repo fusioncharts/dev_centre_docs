@@ -6,7 +6,7 @@ heading: Tooltips
 
 A tooltip is a rectangular box that displays additional information on a particular data plot when you hover on the data plot. In FusionTime, charts have consolidated tooltips which display the detail of the hovered element.
 
-<Annotated Image>
+IMAGE
 
 The above image is of a single series chart which displays valuable information in tooltips, such as: 
 
