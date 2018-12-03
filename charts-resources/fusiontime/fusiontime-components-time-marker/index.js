@@ -35,7 +35,7 @@
             }]
         },
         caption: {
-            text: 'Online Sales of a SuperStore in the US'
+            text: 'Interest Rate Analysis'
         }
     }
 }

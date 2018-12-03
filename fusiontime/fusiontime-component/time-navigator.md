@@ -10,8 +10,7 @@ The patterns of changing observation are visible in one view in this component.
 
 There is also a focus window on this component with draggable handles. By moving the handles, you can change the time range to focus on the data specific to that time range. 
 
-
-The major features of Time Navigator include the following:
+The major features of **Time Navigator** include the following:
 
 * Shows the entire underlying data (including all data series) as line plots.
 
@@ -27,7 +26,7 @@ The major features of Time Navigator include the following:
 
 A sample chart is shown below:
 
-<<Live Chart>>
+{% embed_ftChartData online-sales-multi-variate %}
 
 In the example given above, you can see the Time Navigator displayed right below the X-Axis. Drag the selector handles to choose a particular time period, and watch the chart in the canvas update itself accordingly. 
 
@@ -38,18 +37,11 @@ By default, FusionTime shows the Time Navigator at the bottom of every chart (an
 Refer to the code below:
 
 ```
-
 {
-
-...
-
-    "chart": {
-
-      "enableNavigator": "0"
-
- },
-
-…
-
+    chart: { },
+    "enableNavigator": "0", // Disables time Time Navigator
+    caption: {
+        text: 'Global Online Sales of a SuperStore'
+    }
+}
 ```
-
