@@ -10,9 +10,11 @@
         caption: {
             text: 'Online Sales of a SuperStore in the US'
         },
-        yAxis: [{
-            columnName: 'Sales',
-            plotType: 'column'
-        }],
+        yaxis: {
+            "plot": {
+                "value": "Sales",
+                "type": "column"  
+            }
+        }
     }
 }
