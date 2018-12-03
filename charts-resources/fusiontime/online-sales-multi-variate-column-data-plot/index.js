@@ -7,7 +7,20 @@
         data: dataStore,
         chart: {},
         yAxis: [{
-            plotType: 'column'
+            plot: {
+                value: 'Sales',
+                type: 'column'
+            },
+        }, {
+            plot: {
+                value: 'Quantity',
+                type: 'column'
+            }
+        }, {
+            plot: {
+                value: 'Shipping Cost',
+                type: 'column'
+            }
         }],
         caption: {
           text: 'Global Online Sales of a SuperStore'
