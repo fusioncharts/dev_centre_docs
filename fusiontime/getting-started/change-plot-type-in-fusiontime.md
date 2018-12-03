@@ -16,8 +16,10 @@ The chart is shown below:
 
 To change the plot type of the above chart change the code below in the `index.html` file:
 
+
 ```
-const dataStore = new FusionCharts.DataStore(data, schema);
+let fusionDataStore = new FusionCharts.DataStore();
+let fusionTable = fusionDataStore.createDataTable(data, schema);
 
 new FusionCharts({
     type: 'timeseries',
@@ -25,15 +27,17 @@ new FusionCharts({
 	width: "95%",
 	height: 650,
 	dataSource: {
-        data: dataStore.getDataTable(),
+        data: fusionTable,
         chart: {
         },
         caption: {
           text: 'Online Sales of a SuperStore in the US'
         },
         yAxis: [{
-            columnName: 'Sales',
-            plotType: 'column'
+            "plot": {
+                type: 'column'
+            }
+            columnName: 'Sales'
         }]
     }
 }).render()
