@@ -9,7 +9,7 @@ In FusionTime plot represents a dataset which displays the relationship between 
 FusionTime supports following plot types:
 
 * Candlestick
-* Line, smooth line, step line
+* Line, spline, step line
 * Column
 * Area, smooth area
 * Stacked charts - area, column
@@ -37,10 +37,18 @@ The above time series chart, rendered with column plot is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot %}
 
-# Area
+## Area
 
 To render a time series chart with **area** as data plot, set the value of `type` attribute to `area`.
 
 The above time series chart, rendered with area plot is shown below:
 
 {% embed_ftChart online-sales-single-series-area-data-plot %}
+
+## Spline
+
+To render a time series chart with **spline** as data plot, set the value of `type` attribute to `spline`.
+
+Let's create a chart showcasing weather report. The time series chart looks like:
+
+{% embed_ftChart weather-report-spline-data-plot %}
