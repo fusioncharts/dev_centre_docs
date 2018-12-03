@@ -20,7 +20,11 @@ Now, let's add some operations to the above chart. Follow the steps given below:
 
 3. Once you are done with the above steps, use `pipe` operation to run the above steps in sequence.
 
-The code snippet for the above steps is given below:
+The chart after applying the **Pipe** operator looks like as shown below:
+
+{% embed_ftChart getting-started-filter-pipe %}
+
+The code to render the above chart is given below:
 
 ```
 //Pipe Operation Applied to the data table in the Data Store
@@ -53,7 +57,3 @@ In the above code:
 * Set the `greater` filter using the `FusionCharts.DataStore` consturctor and store it in a variable.
 * Set the `pipe` operation to run the above filters in sequence.
 * Apply the filter to the `dataTable`.
-
-The chart after applying the **Pipe** operator looks like as shown below:
-
-{% embed_ftChart getting-started-filter-pipe %}
