@@ -23,39 +23,36 @@ Now, let's add some operations to the above chart. Follow the steps given below:
 The code snippet for the above steps is given below:
 
 ```
-let dataStore = new DataStore(data, schema, { enableIndex: true, indexBy: 'OrderDate' }),
+//Pipe Operation Applied to the data table in the Data Store
+const dataStore = new FusionCharts.DataStore(data, schema, {enableIndex: true}),
+defaultDT = dataStore.getDataTable();
+filter1 = FusionCharts.DataStore.Operators.equals('Country', 'India');
+filter2 = FusionCharts.DataStore.Operators.greater('Sales', 500);
+pipeDT = defaultDT.query(FusionCharts.DataStore.Operators.pipe(filter1, filter2));
 
-     defaultDT = dataStore.getDataTable();
-
-   filter1 = greater('Sales', 500);
-
-   filter2 = less('Sales', 1000);
-
-   group1 = groupBy(
-
-   [{
-
-         column: 'OrderDate',
-
-         timeUnit: DatetimeUnits.Month
-
-   }],
-
-   [{
-
-         column: 'Sales',
-
-         operation: 'sum',
-
-         outputAs: 'Total_Sales'
-
-    }]
-
-   );
-
-pipeDT = defaultDT.query(pipe(filter1, filter2, group1));
-
+new FusionCharts({
+    type: 'timeseries',
+    renderAt: 'container',
+    width: 1000,
+    height: 650,
+    dataSource: {
+        data: pipeDT,
+        chart: {
+        },
+        caption: {
+          text: 'Online Sales of a SuperStore in India'
+        }
+    }
+}).render()  
 ```
+
+In the above code:
+
+* Store the `dataTable` in a variable.
+* Set the `equals` filter using the `FusionCharts.DataStore` constructor and store it in a variable.
+* Set the `greater` filter using the `FusionCharts.DataStore` consturctor and store it in a variable.
+* Set the `pipe` operation to run the above filters in sequence.
+* Apply the filter to the `dataTable`.
 
 The chart after applying the **Pipe** operator looks like as shown below:
 
