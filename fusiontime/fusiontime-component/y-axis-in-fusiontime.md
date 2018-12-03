@@ -11,36 +11,43 @@ In FusionTime, you can have different y-axis for different measures visualized i
 You can configure the y-axis of the chart by creating the Y-axis object.
 
 ```
-
-"yAxis": {
-
-          "columnName": "Sales",
-
-          "plotType": "column"
-
-        },
-
+yAxis: [{
+    "plot": {
+        "value": "Sales",
+        "type": "column"
+    }
+}],
 ```
 
-In the above code, the plot type has been changed to `column` (default is `line`). 
+In the above code, the plot type has been changed to `column` (default is `line`). The above data structure is applicable for a chart with single data plot.
 
-The output looks like as shown below: 
+By default, if there is more than one measure, FusionTime renders a multivariate chart with multiple canvases. To configure the y-axis for each canvas you just have to set different values to render the chart.
 
-<Live Chart>
+{% embed_ftChart online-sales-multi-variate-column-data-plot %}
 
-### Y-Axis of Multivariate
+The structure of the `y-axis` to render the above chart is shown below:
 
-By default, if there is more than one measure, FusionTime renders a multivariate chart with multiple canvases. To configure the y-axis for each canvas you just have to set different values to render the chart. 
-
-<Live Chart>
+```
+yAxis: [{
+    plot: {
+        value: 'Sales',
+        type: 'column'
+    },
+}, {
+    plot: {
+        value: 'Quantity',
+        type: 'column'
+    }
+}, {
+    plot: {
+        value: 'Shipping Cost',
+        type: 'column'
+    }
+}],
+```
 
 In the given example, you can see how the Y-axes differ in all the charts, although the time axis is identical in all of them. This is because the charts represent different types of data within the same time interval. From the top: 
 
 * The first chart shows **sales** figures achieved by the company.
-
 * The second one shows the **quantity** of products sold.
-
 * The third one displays the **shipping costs** borne by the company to get the products delivered to customers.
-
-<Change y-axis title if applicable>
-
