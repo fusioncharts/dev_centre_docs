@@ -60,7 +60,7 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 
 To add the data, let's create a data.js file and copy the following code:
 
-{% embed_ftData online-sales-single-series %}
+{% embed_ftGenre online-sales-single-series data %}
 
 In the above code:
 
