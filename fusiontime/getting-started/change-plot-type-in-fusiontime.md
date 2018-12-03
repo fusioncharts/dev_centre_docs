@@ -17,7 +17,8 @@ The chart is shown below:
 To change the plot type of the above chart change the code below in the `index.html` file:
 
 ```
-const dataStore = new FusionCharts.DataStore(data, schema);
+let fusionDataStore = new FusionCharts.DataStore();
+let fusionTable = fusionDataStore.createDataTable(data, schema);
 
 new FusionCharts({
     type: 'timeseries',
@@ -25,25 +26,27 @@ new FusionCharts({
 	width: "95%",
 	height: 650,
 	dataSource: {
-        data: dataStore.getDataTable(),
+        data: fusionTable,
         chart: {
         },
         caption: {
           text: 'Online Sales of a SuperStore in the US'
         },
-        yAxis: [{
-            columnName: 'Sales',
-            plotType: 'column'
-        }]
+        yaxis: {
+            "plot": {
+                "value": "Sales",
+                "type": "column"  
+            }
+        }
     }
 }).render()
 ```
 
 In the above code:
 
-* Create an object for `y-axis` in `dataSource`.
+* Create `plot` object for `y-axis` in `dataSource`.
 
-* Set the `plotType` attribute to `column`.
+* Set the `type` attribute to `column`.
 
 The chart with the updated plot type is shown below:
 

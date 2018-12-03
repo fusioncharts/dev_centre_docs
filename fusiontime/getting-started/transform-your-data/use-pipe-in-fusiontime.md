@@ -28,11 +28,11 @@ The code to render the above chart is given below:
 
 ```
 //Pipe Operation Applied to the data table in the Data Store
-const dataStore = new FusionCharts.DataStore(data, schema, {enableIndex: true}),
-defaultDT = dataStore.getDataTable();
+let fusionDataStore = new FusionCharts.DataStore();
+let fusionTable = fusionDataStore.createDataTable(data, schema);
 filter1 = FusionCharts.DataStore.Operators.equals('Country', 'India');
 filter2 = FusionCharts.DataStore.Operators.greater('Sales', 500);
-pipeDT = defaultDT.query(FusionCharts.DataStore.Operators.pipe(filter1, filter2));
+pipeDT = fusionTable.query(FusionCharts.DataStore.Operators.pipe(filter1, filter2));
 
 new FusionCharts({
     type: 'timeseries',
@@ -54,6 +54,6 @@ In the above code:
 
 * Store the `dataTable` in a variable.
 * Set the `equals` filter using the `FusionCharts.DataStore` constructor and store it in a variable.
-* Set the `greater` filter using the `FusionCharts.DataStore` consturctor and store it in a variable.
+* Set the `greater` filter using the `FusionCharts.DataStore` constructor and store it in a variable.
 * Set the `pipe` operation to run the above filters in sequence.
 * Apply the filter to the `dataTable`.

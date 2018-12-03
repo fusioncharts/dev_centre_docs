@@ -27,7 +27,7 @@ The schema contains an array which has multiple objects created in it. Each obje
 To define the schema, let's create a `schema.js` file and copy the following code:
 
 ```JSON
-{
+let schema = [{
     "name": "Country",
     "type": "string"
 }, {

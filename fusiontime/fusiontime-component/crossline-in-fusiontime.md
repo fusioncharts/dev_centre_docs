@@ -12,17 +12,6 @@ A cross line appears as shown in the image below:
 
 By default, a vertical crossline will map the time axis. Hover the mouse pointer over an anchor, a horizontal crossline with tags (having values) on the quantitative (or y) axis will show up. The tooltip that appears has all the information required, for example, data values, labels of each data plot and also the color of the data plots. 
 
- <<Live Chart>>
+{% embed_ftChart online-sales-single-series %}
 
 You can also hover the mouse pointer along the crossline from one chart to another to see the data values in tooltips and quickly gain more insights about the data.
-
-## Show/Hide Crosslines
-
-By default, crosslines are visible in every chart. However, you can turn them off if you want.
-
-Refer to the code below:
-
-```
-
-```
-
