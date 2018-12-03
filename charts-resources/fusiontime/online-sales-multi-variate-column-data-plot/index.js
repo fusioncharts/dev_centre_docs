@@ -8,8 +8,7 @@
         chart: {},
         yAxis: [{
             "plot": {
-                "value": "Sales",
-                "type": "line"
+                "type": "column"
             }
         }],
         caption: {
