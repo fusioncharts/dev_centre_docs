@@ -11,7 +11,7 @@
             "title": "Sales",
         }],
         xAxis: {
-            columnname: 'Time',
+            plot: 'Time',
             timemarker: [{
                 start: 'Jul-1981',
                 end: 'Nov-1982',

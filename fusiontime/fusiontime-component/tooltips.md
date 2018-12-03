@@ -11,9 +11,7 @@ A tooltip is a rectangular box that displays additional information on a particu
 The above image is of a single series chart which displays valuable information in tooltips, such as: 
 
 * **Date**
-
 * **Column** name 
-
 * **Value** of that particular data plot.
 
 Now, let's create a multi-series chart which will compare online sales of SuperStore in United States of America and India.
