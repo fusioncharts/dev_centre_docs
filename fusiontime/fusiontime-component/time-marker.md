@@ -10,7 +10,7 @@ A time marker appears as an overlay on the canvas. When you hover the mouse poin
 
 Note: In a multivariate chart, all the canvas share the same time markers.
 
-<image/Code snippet>
+IMAGE
 
 A sample chart with time markers is shown below:
 

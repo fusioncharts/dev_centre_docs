@@ -10,7 +10,7 @@ When mapped to the y-axis, a reference line is a horizontal line that correspond
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line %}
 
-In the example given above, a reference line appears, parallel to the x-axis. Notice that the label displayed at the beginning of the line along the Y-axis shows the value of the reference (**Daily Target** for the above chart).
+In the example given above, a reference line appears, parallel to the time axis. Notice that the label displayed at the beginning of the line along the Y-axis shows the value of the reference (**Daily Target** for the above chart).
 
 ## Configure the Reference Line
 
