@@ -1,7 +1,7 @@
 ---
-title: Use Pipe | FusionCharts
+title: Join Operations using Pipe | FusionCharts
 description: This article outlines the steps to use Pipe.
-heading: Use Pipe
+heading: Join Operations using Pipe
 ---
 
 **Pipe** is an operation which lets you run two or more data operations in a sequence. Instead of applying multiple filters one by one to a `DataTable`, you can combine them in one single step using **pipe** and apply to the** **DataTable. 

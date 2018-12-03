@@ -14,7 +14,7 @@ Data marker has:
 
 * **Description**: Description is visible only when you hover over the data marker. A description of a data marker can have text, image, URL, etc.
 
-A data marker appears as shown in the image below:
+A data marker appears as shown in the chart below:
 
 <<Live Chart>>
 
@@ -46,29 +46,4 @@ Refer to the code given below:
 
 ```
 
-…
-
-{
-
-  "seriesName": String,
-
-  "time": String,
-
-  "timeFormat": String,
-
-  "type": String,
-
-  "identifier": Character
-
-  "tooltext": String,
-
-  "style": {
-
-    "shape": Style | String
-
-  }
-
-}
-
 ```
-
