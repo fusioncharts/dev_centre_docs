@@ -12,7 +12,9 @@ The chart is shown below:
 
 {% embed_ftChartData online-sales-single-series %}
 
-FusionTime uses columns and rows in the form of a `DataTable` to feed data to the chart. This allows you to apply different data operations on the `DataTable` to transform the data as per your requirement. To create a DataTable you need to provide:
+Data to the FusionTime chart needs to be fed from a `DataTable`. Root `DataTable` is created from a `DataStore`.
+The `DataTable` records data in rows and columns structure. Different data operations can be applied on the `DataTable`.
+To create a `DataTable`, we need to provide a data file and describe it's schema. The system then internally makes a `DataStore` from which the `DataTable` is created. To create the `DataTable` you need the following:
 
 * The `schema` which defines the properties of the columns.  
 

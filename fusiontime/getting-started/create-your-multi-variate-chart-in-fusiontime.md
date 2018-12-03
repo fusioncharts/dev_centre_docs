@@ -4,9 +4,9 @@ description: This article outlines the steps to be executed for creating a multi
 heading: Create Multivariate Chart
 ---
 
-FusionTime lets you analyze variations among different variables by stacking a number of linked charts (referred to as multivariate charts) vertically, one after another. The charts share a common X-axis, while the Y-axis is different in each one. 
+FusionTime lets you analyze variations among different variables co related by stacking a number of linked charts (referred to as multivariate charts) vertically, one after another. The charts share a common time axis, while the Y-axis is different in each one. 
 
-In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple values (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvas share the same time axis (x-axis).
+In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple values (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same time axis (x-axis).
 
 The multivariate chart is shown below:
 
