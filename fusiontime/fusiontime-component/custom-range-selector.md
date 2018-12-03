@@ -41,10 +41,7 @@ Custom Range Selector is visible in every chart, by default. However, you can tu
 Refer to the code below:
 
 ```
-let fusionDataStore = new FusionCharts.DataStore();
-let fusionTable = fusionDataStore.createDataTable(data, schema);
-
-new FusionCharts({
+{
     type: 'timeseries',
     renderAt: 'container',
     width: "95%",
@@ -67,5 +64,5 @@ new FusionCharts({
         }],
         "series": "Country"
     }
-}).render()
+}
 ```
