@@ -26,8 +26,6 @@ The schema contains an array which has multiple objects created in it. Each obje
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 
-To define the schema, let’s create a `schema.js` file and copy the following code:
-
 > Note: It is not mandatory to create the schema in a different .json file. You can also define the schema within the `.html` file.
 
 
@@ -154,3 +152,5 @@ In the above code:
     * Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
 
 That's it! Your first chart using FusionTime is ready.
+
+Next, we will discuss on how to add [multiple plot types]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart. 
