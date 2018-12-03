@@ -29,7 +29,7 @@ let schema = [{
     "type": "number"
 }]
 ```
-To understand the `schema.json` in details click [here]({% site.baseurl %}fusiontime/getting-started/create-your-first-chart-in-fusiontime).
+To understand the `schema.json` in details click [here]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
 
 ## Create `data`
 
@@ -107,7 +107,7 @@ Once the schema and data files are ready it is time to create the `DataTable` an
 </html>
 ```
 
-The above code is similar to that of the [Create your first chart]({% site.baseurl %}fusiontime/getting-started/create-your-first-chart-in-fusiontime). In order to add multiple data plots do the following:
+The above code is similar to that of the [Create your first chart]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime). In order to add multiple data plots do the following:
 
 * Specify the value of the plot as `Sales` using the `value` attribute within the `plot` object.
 * Specify the plot type as `line` using the `type` attribute within the `plot` object.
@@ -115,4 +115,4 @@ The above code is similar to that of the [Create your first chart]({% site.baseu
 
 That's it! Your chart with multiple plots is ready.
 
-Next, we will discuss on how to create a [multivariate]({% site.baseurl %}fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.
+Next, we will discuss on how to create a [multivariate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.
