@@ -37,3 +37,10 @@ The above time series chart, rendered with column plot is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot %}
 
+# Area
+
+To render a time series chart with **area** as data plot, set the value of `type` attribute to `area`.
+
+The above time series chart, rendered with area plot is shown below:
+
+{% embed_ftChart online-sales-single-series-area-data-plot %}
