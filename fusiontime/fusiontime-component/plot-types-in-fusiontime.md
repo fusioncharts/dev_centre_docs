@@ -9,10 +9,11 @@ In FusionTime plot represents a dataset which displays the relationship between 
 FusionTime supports following plot types:
 
 * Candlestick
-* Line, spline, step line
+* Line, 
+* Spline
+* Step-line
 * Column
-* Area, smooth area
-* Stacked charts - area, column
+* Area
 * OHLC
 
 In this article, we'll see different types of data plots to render a chart.
@@ -60,3 +61,11 @@ To render a time series chart with **step-line** as data plot, set the value of 
 Let's create a chart showcasing weather report. The time series chart looks like:
 
 {% embed_ftChart weather-report-step-line-data-plot %}
+
+## Candlestick
+
+To render a time series chart with **candlestick** as data plot, set the value of `type` attribute to `candlestick`.
+
+Let's create a chart showing Apple Inc. Stock Price. The time series chart looks like:
+
+{% embed_ftChart apple-stock-price-candlestick-data-plot %}
