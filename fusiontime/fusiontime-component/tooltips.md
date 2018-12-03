@@ -34,6 +34,8 @@ Refer to the code below:
 }
 ```
 
+In FusionTime, you can have different canvases for different measures visualized in a multi-variate chart. When you hover a particular data plot, by default tooltips get displayed in all the canvases of the chart. To disable multiple tooltips on the multiple canvases of the chart, set the `multiCanvasTooltip` attribute to `0`.
+
 ### Tooltips in Time Markers
 
 Tooltips help you gain additional, context-sensitive information from time markers. When you hover the mouse pointer over a time marker, a tooltip appears with information on the value of the marker, as well as a description about the data. When a time marker represents a range, the corresponding tooltip displays information on the range instead.
