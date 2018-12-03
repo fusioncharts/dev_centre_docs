@@ -34,7 +34,7 @@ var dataT= dataStore.getDataTable();
 
 var filter1 = FusionCharts.DataStore.Operators.greater('Sales', 500);
 
-var dataT_1=dataT.query(filter1);
+var dataT_1 = dataT.query(filter1);
 
 ```
 
