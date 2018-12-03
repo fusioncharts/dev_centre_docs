@@ -29,7 +29,7 @@ To define the schema, let's create a `schema.js` file and copy the following cod
 Note: It is not mandatory to create the schema in a different .js file. You can also define the schema within the index.html file.
 
 ```JSON
-[{
+let schema = [{
     "name": "Country",
     "type": "string"
 }, {
