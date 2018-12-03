@@ -6,6 +6,9 @@
     dataSource: {
         data: dataStore,
         chart: {},
+        yAxis: [{
+            plotType: 'column'
+        }],
         caption: {
           text: 'Global Online Sales of a SuperStore'
         }
