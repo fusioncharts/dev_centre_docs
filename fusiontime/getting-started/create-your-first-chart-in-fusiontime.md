@@ -79,7 +79,7 @@ In the above code:
 
 We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
 
-## Create `index.html` file
+## Create `.html` file
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index.html` file and copy the following code: 
 

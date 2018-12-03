@@ -132,15 +132,13 @@ In the above code:
 
 * Include `fusioncharts.js` file.
 
-* Include `data.js` and `schema.js` files.
+* Include `data.json` and `schema.json` files.
 
-* When `schema.js` and `data.js` is created, using both the files FusionTime creates a dataTable which is stored in DataStore. 
+* Create an empty storage as `fusionDataStore` using `FusionCharts.DataStore`.
 
-* Pass the `schema` and `data` to the Data Store which sets the `DataTable` used to render the chart.
+* Create a `DataTable` within the empty storage using `fusionDataStore.createDataTable` and pass the `schema` and `data` to the the `DataTable`.
 
-* Fetch the `DataTable` from the data store using the `FusionCharts.DataStore()` method.
-
-* Define the chart configuration in the JSON.
+* Define the chart configuration in the FusionCharts constructor:
 
     * Set the type as `timeseries`.
 
@@ -148,7 +146,7 @@ In the above code:
 
     * Set the width and height (in pixels).
 
-    * Embed the `DataTable` as the value of the `dataSource`.
+    * Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
 
     * In the `dataSource`, specify the `DataTable` using which the chart is rendered.
 
