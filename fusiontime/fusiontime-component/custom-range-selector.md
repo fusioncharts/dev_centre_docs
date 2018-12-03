@@ -30,9 +30,9 @@ To set the custom date and time follow the steps below:
 
 * Click Apply to view the changes. 
 
-After applying the changes, hover the mouse pointer over a data plot to see details about the underlying data in a tooltip. A chart with custom range selector is shown below:
+After applying the changes, hover the mouse pointer over a data plot to see details about the underlying data in a tooltip. A multi-series chart with custom range selector is shown below:
 
-<<Live Chart>>
+{% embed_ftChartData online-sales-multi-series %}
 
 ## Show/Hide Custom Range Selector
 
@@ -41,19 +41,28 @@ Custom Range Selector is visible in every chart, by default. However, you can tu
 Refer to the code below:
 
 ```
-...
-
 {
-
-  "extensions": {
-
-    "customRangeSelector": {
-
-      "enabled": "0"
-
-    },
-
-...
-
+    type: 'timeseries',
+    renderAt: 'container',
+    width: "95%",
+    height: 650,
+    dataSource: {
+        data: fusionTable,
+        chart: {},
+        caption: {
+            text: 'Online Sales of a SuperStore in India & the US'
+        },
+        // Show/Hide Custom Range Selector
+        "extensions": {
+			"customRangeSelector": {
+				"enabled": "0"
+			}
+		}
+        yAxis: [{
+            columnName: "Sales",
+            plotType: "line"
+        }],
+        "series": "Country"
+    }
+}
 ```
-
