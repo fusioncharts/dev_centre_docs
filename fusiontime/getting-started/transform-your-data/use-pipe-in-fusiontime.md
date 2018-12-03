@@ -54,6 +54,6 @@ In the above code:
 
 * Store the `dataTable` in a variable.
 * Set the `equals` filter using the `FusionCharts.DataStore` constructor and store it in a variable.
-* Set the `greater` filter using the `FusionCharts.DataStore` consturctor and store it in a variable.
+* Set the `greater` filter using the `FusionCharts.DataStore` constructor and store it in a variable.
 * Set the `pipe` operation to run the above filters in sequence.
 * Apply the filter to the `dataTable`.
