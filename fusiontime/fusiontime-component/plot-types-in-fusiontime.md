@@ -47,8 +47,16 @@ The above time series chart, rendered with area plot is shown below:
 
 ## Spline
 
-To render a time series chart with **spline** as data plot, set the value of `type` attribute to `spline`.
+To render a time series chart with **spline** as data plot, set the value of `type` attribute to `smooth-line`.
 
 Let's create a chart showcasing weather report. The time series chart looks like:
 
 {% embed_ftChart weather-report-spline-data-plot %}
+
+## Step-line
+
+To render a time series chart with **step-line** as data plot, set the value of `type` attribute to `step-line`.
+
+Let's create a chart showcasing weather report. The time series chart looks like:
+
+{% embed_ftChart weather-report-step-line-data-plot %}
