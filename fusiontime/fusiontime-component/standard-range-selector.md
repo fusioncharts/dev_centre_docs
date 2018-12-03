@@ -24,7 +24,7 @@ Once you select the total time period to be covered, as well as the interval bet
 
 A chart with Standard range selector is shown below:
 
-<<Live chart>>
+{% embed_ftChartData online-sales-multi-series %}
 
 In the example given above, you can see the sales made by an organization on a daily basis for a number years, plotted in a column chart. When the chart is loaded, by default, `All` is selected in the Standard Range Selector. Click on any of the other given intervals to dive deeper into the sales data. 
 
@@ -39,20 +39,24 @@ Standard Range Selector is visible in every chart, by default. However, to turn 
 Refer to the code below:
 
 ```
-
-...
-
 {
-
-  "extensions": {
-
-    "standardRangeSelector": {
-
-      "enabled": "0"
-
-    },
-
-...
-
+    type: 'timeseries',
+    renderAt: 'container',
+    width: "95%",
+    height: 650,
+    dataSource: {
+        data: fusionTable,
+        chart: {},
+        caption: {
+            text: 'Online Sales of a SuperStore in India & the US'
+        },
+        // Show/Hide Custom Range Selector
+        "extensions": {
+			"standardRangeSelector": {
+				"enabled": "0"
+			}
+		}
+    }
+}
 ```
 
