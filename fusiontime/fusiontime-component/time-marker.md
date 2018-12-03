@@ -14,7 +14,7 @@ IMAGE
 
 A sample chart with time markers is shown below:
 
-<<Live Chart>>
+{% embed_ftChartData fusiontime-components-time-marker %}
 
 In the given multivariate chart, you can see a time marker extending between two points on the time axis. Note that the label of the marker shows the date where it begins. Also, notice that the time marker begins and ends at exactly the same points on all the chart canvases.
 
