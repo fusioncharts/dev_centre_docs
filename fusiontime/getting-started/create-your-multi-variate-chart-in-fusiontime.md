@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating a multi
 heading: Create Multivariate Chart
 ---
 
-FusionTime lets you analyze variations among different variable by stacking a number of linked charts (referred to as multivariate charts) vertically, one after another. The charts share a common X-axis, while the Y-axis is different in each one. 
+FusionTime lets you analyze variations among different variables by stacking a number of linked charts (referred to as multivariate charts) vertically, one after another. The charts share a common X-axis, while the Y-axis is different in each one. 
 
 In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple values (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvas share the same time axis (x-axis).
 
@@ -12,19 +12,11 @@ The multivariate chart is shown below:
 
 {% embed_ftChartData online-sales-multi-variate %}
 
-FusionTime uses columns and rows as `DataTable` to feed data to the chart. This allows you to apply different data operations on the `DataTable` to transform your data as per your requirement. To create a `DataTable` you need to provide:
-
-* The `schema` which defines the properties of the columns.  
-
-* The `actual` values for each row and column as the data.
-
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 
 ## Create the `schema`
 
-The schema contains an array which has multiple objects created in it. Each object creates a column in the `DataTable`. The schema helps `DataTable` understand the columns in your data, the data type for each column and input format (in case of date). You've to mandatorily specify the schema for each DataTable for FusionTime to render it.
-
-To define the schema, let's create a `schema.js` file and copy the following code:
+To define the schema, let's create a `schema.json` file and copy the following code:
 
 ```JSON
 let schema = [{
@@ -66,9 +58,7 @@ Now that we have the columns ready for the `DataTable` let's learn how to put th
 
 ## Create `data`
 
-In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
-
-To add the data, let's create a data.js file and copy the following code:
+To add the data, let's create a `data.json` file and copy the following code:
 
 {% embed_ftGenre online-sales-multi-variate data %}
 
@@ -90,7 +80,7 @@ In the above code:
 
 We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
 
-## Create `index.html` file
+## Create `.html` file
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index.html` file and copy the following code:
 
@@ -133,27 +123,5 @@ Once the schema and data files are ready it is time to create the `DataTable` an
 
 </html>
 ```
-
-In the above code:
-
-* Include `fusioncharts.js` file.
-
-* Include `data.js` and `schema.js` files.
-
-* When `schema.js` and `data.js` is created, using both the files FusionTime creates a `DataTable` which is stored in DataStore. 
-
-* Pass the `schema` and `data` to the Data Store which sets the `DataTable` used to render the chart.
-
-* Fetch the `DataTable` from the data store using the `FusionCharts.DataStore()` method.
-
-* Define the chart configuration in the JSON.
-
-    * Set the type as `timeseries`.
-
-    * Set the chart container as `container`.
-
-    * Set the width and height (in pixels).
-
-    * Embed the `DataTable` as the value of the `dataSource`.
 
 That's it! Your first multivariate chart is ready.
