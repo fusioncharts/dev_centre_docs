@@ -16,7 +16,7 @@ Data marker has:
 
 A data marker appears as shown in the chart below:
 
-<<Live Chart>>
+{% embed_ftChart fusiontime-components-data-marker %}
 
 In the given example, you can see data markers indicating the following information:
 
