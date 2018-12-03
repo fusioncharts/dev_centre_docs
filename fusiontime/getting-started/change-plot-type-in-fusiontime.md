@@ -44,9 +44,9 @@ new FusionCharts({
 
 In the above code:
 
-* Create an object for `y-axis` in `dataSource`.
+* Create `plot` object for `y-axis` in `dataSource`.
 
-* Set the `plotType` attribute to `column`.
+* Set the `type` attribute to `column`.
 
 The chart with the updated plot type is shown below:
 
