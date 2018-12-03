@@ -6,8 +6,6 @@ heading: Reference Line
 
 A Reference Line is essentially an arbitrary fixed line (mapped to one of the axes), which indicates a specific value. It helps viewers to quickly compare values of individual data plots with a predefined value.
 
-<<Annotated Image>>
-
 When mapped to the y-axis, a reference line is a horizontal line that corresponds to a particular value on the axis. It has a label, which is displayed as text right below the line when the viewer hovers the mouse pointer over the line. 
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line %}
@@ -25,24 +23,6 @@ You can configure reference lines using the following attributes of the `referen
 Refer to the code given below:
 
 ```
-
-...
-
-        {
-
-          "label": String,
-
-          "value": Number,
-
-          "style": {
-
-            "label": Style | String,
-
-            "marker": Style | String
-
-          }
-
-        }
 
 ```
 

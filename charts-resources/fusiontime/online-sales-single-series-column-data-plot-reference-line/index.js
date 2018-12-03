@@ -15,7 +15,7 @@
                 "value": "Sales",
                 "type": "line"
             },
-            referenceLine: [{
+            "referenceLine": [{
                 "label": "Daily Target",
                 "value": 300
             }],
