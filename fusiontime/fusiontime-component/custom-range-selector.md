@@ -58,11 +58,6 @@ Refer to the code below:
 				"enabled": "0"
 			}
 		}
-        yAxis: [{
-            columnName: "Sales",
-            plotType: "line"
-        }],
-        "series": "Country"
     }
 }
 ```
