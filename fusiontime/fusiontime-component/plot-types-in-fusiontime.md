@@ -69,3 +69,11 @@ To render a time series chart with **candlestick** as data plot, set the value o
 Let's create a chart showing Apple Inc. Stock Price. The time series chart looks like:
 
 {% embed_ftChart apple-stock-price-candlestick-data-plot %}
+
+## OHLC
+
+To render a time series chart with **ohlc** as data plot, set the value of `type` attribute to `ohlc`.
+
+Let's create a chart showing NASDAQ Composite Index. The time series chart looks like:
+
+{% embed_ftChart composite-index-ohlc-data-plot %}
