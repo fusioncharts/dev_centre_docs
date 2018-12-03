@@ -1,30 +1,20 @@
 ---
-title: Create Multi-Series Chart | FusionCharts
+title: Create Chart | FusionCharts
 description: This article outlines the steps to be executed for creating a multi-series chart.
 heading: Create Multi-Series Chart
 ---
 
-FusionTime includes multi-series charts that allow you to plot data for multiple datasets. 
+FusionTime allows you to visualize charts with multiple plots for multiple datasets. Previously, we have learned how to create a simple chart with one plot typel  
 
-In this article, we'll create our first multi-series chart which will compare online sales of SuperStore in the United States of America and India. 
+In this article, we'll create our first chart with multiple plots which will compare online sales of SuperStore in the **United States of America** and **India**. 
 
-The multi-series chart is shown below:
+The chart is shown below:
 
 {% embed_ftChartData online-sales-multi-series %}
 
-FusionTime uses columns and rows as `DataTable` to feed data to the chart. This allows you to apply different data operations on the `DataTable` to transform your data as per your requirement. To create a `DataTable` you need to provide:
-
-* The `schema` which defines the properties of the columns.  
-
-* The `actual` values for each row and column as the data.
-
-Now, let's check how to prepare the schema and the data for the `DataTable`.
-
 ## Create the `schema`
 
-The schema contains an array which has multiple objects created in it. Each object creates a column in the `DataTable`. The schema helps DataTable understand the columns in your data, the data type for each column and input format (in case of date). You've to mandatorily specify the schema for each DataTable for FusionTime to render it.
-
-To define the schema, let's create a `schema.js` file and copy the following code:
+To define the schema, let's create a `schema.json` file and copy the following code:
 
 ```JSON
 let schema = [{
@@ -39,24 +29,11 @@ let schema = [{
     "type": "number"
 }]
 ```
-
-In the above code:
-
-* `schema` is the variable in which the array is saved.
-
-* The first object creates the first column in the `DataTable`. In the above sample **Country** is the name of the column.
-
-* The second object sets the **date/time** format for the chart. The name of the column has been set to **Time** and the date format has been set to `%-m/%-d/%Y`.
-
-* The last object creates the third column named **Sales** with the values of the data plots.
-
-Now that we have the columns ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
+To understand the `schema.json` in details click [here]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
 
 ## Create `data`
 
-In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
-
-To add the data, let's create a data.js file and copy the following code:
+To add the data, let's create a `data.json` file and copy the following code:
 
 {% embed_ftGenre online-sales-multi-series data %}
 
@@ -64,7 +41,7 @@ In the above code:
 
 * `data` is the variable in which the data array is saved.
 
-* For each data plots in the chart, an array is created which consists of values for each row in the `DataTable`. The values in the array represent:
+* For each data plots in the chart, an array is created which consists of values (sub-array) for each row in the `DataTable`. The values in the sub-array represent:
 
     * In this example, we are showing the sales of two countries as India and USA.
 
@@ -74,7 +51,7 @@ In the above code:
 
 We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
 
-## Create index.html file
+## Create the `.html` file
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index.html` file and copy the following code: 
 
@@ -116,8 +93,10 @@ Once the schema and data files are ready it is time to create the `DataTable` an
           text: 'Online Sales of a SuperStore in India & the US'
         },
         yAxis: [{
-          columnName: "Sales",
-          plotType: "line"
+            "plot": {
+                "value": "Sales",
+                "type": "line"
+            }
         }],
         "series": "Country"
       }
@@ -128,28 +107,12 @@ Once the schema and data files are ready it is time to create the `DataTable` an
 </html>
 ```
 
-In the above code:
+The above code is similar to that of the [Create your first chart]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime). In order to add multiple data plots do the following:
 
-* Include `fusioncharts.js` file.
+* Specify the value of the plot as `Sales` using the `value` attribute within the `plot` object.
+* Specify the plot type as `line` using the `type` attribute within the `plot` object.
+* Specify the series as `Country` using the `series` atrribute within the `yAxis` object.
 
-* Include `data.json` and `schema.json` files.
+That's it! Your chart with multiple plots is ready.
 
-* Create an empty storage as `fusionDataStore` using `FusionCharts.DataStore`.
-
-* Create a `DataTable` within the empty storage using `fusionDataStore.createDataTable` and pass the `schema` and `data` to the the `DataTable`.
-
-* Define the chart configuration in the FusionCharts constructor:
-
-    * Set the type as `timeseries`.
-
-    * Set the chart container as `container`.
-
-    * Set the width and height (in pixels).
-
-    * Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
-
-    * In the `dataSource`, specify the `DataTable` using which the chart is rendered.
-
-    * Specify the series which implies the datasets rendered in the chart.
-
-That's it! Your first multi-series chart is ready.
+Next, we will discuss on how to create a [multivariate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.
