@@ -25,6 +25,27 @@ By default, if there is more than one measure, FusionTime renders a multivariate
 
 {% embed_ftChart online-sales-multi-variate-column-data-plot %}
 
+The structure of the `y-axis` to render the above chart is shown below:
+
+```
+yAxis: [{
+    plot: {
+        value: 'Sales',
+        type: 'column'
+    },
+}, {
+    plot: {
+        value: 'Quantity',
+        type: 'column'
+    }
+}, {
+    plot: {
+        value: 'Shipping Cost',
+        type: 'column'
+    }
+}],
+```
+
 In the given example, you can see how the Y-axes differ in all the charts, although the time axis is identical in all of them. This is because the charts represent different types of data within the same time interval. From the top: 
 
 * The first chart shows **sales** figures achieved by the company.
