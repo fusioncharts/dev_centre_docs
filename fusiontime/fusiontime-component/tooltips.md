@@ -40,10 +40,10 @@ In FusionTime, you can have different canvases for different measures visualized
 
 Tooltips help you gain additional, context-sensitive information from time markers. When you hover the mouse pointer over a time marker, a tooltip appears with information on the value of the marker, as well as a description about the data. When a time marker represents a range, the corresponding tooltip displays information on the range instead.
 
-IMAGE
+<img src="{% site.baseurl %}/images/fusiontime-component-time-marker-tooltip.png" alt="Time Marker Tooltip" width="700" height="420">
 
 ### Tooltips in Data Markers
 
 Tooltips can provide additional information about the data represented by data markers. When you hover the mouse pointer over a data marker, a tooltip can appear and display the data value, as well as a small description.
 
-IMAGE
+<img src="{% site.baseurl %}/images/fusiontime-component-data-marker-tooltip.png" alt="Data Marker Tooltip" width="700" height="420">
