@@ -60,7 +60,53 @@ Now that we have the columns ready for the `DataTable` let's learn how to put th
 
 To add the data, let's create a `data.json` file and copy the following code:
 
-{% embed_ftGenre online-sales-multi-variate data %}
+```
+[
+    [
+        "India",
+        "1/11/2011",
+        141.57,
+        3,
+        15.62
+    ],
+    [
+        "India",
+        "1/24/2011",
+        59.25,
+        5,
+        4.27
+    ],
+    [
+        "India",
+        "1/26/2011",
+        79.38,
+        3,
+        13.82
+    ],
+    ...
+    ...
+    [
+        "Australia",
+        "12/30/2014",
+        10.854,
+        3,
+        3.76
+    ],
+    [
+        "Australia",
+        "12/30/2014",
+        16.92,
+        2,
+        3.21
+    ],
+    [
+        "Australia",
+        "12/30/2014",
+        27.945,
+        3,
+        2.48
+    ]
+]
 
 In the above code:
 

@@ -12,9 +12,7 @@ The chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-Data to the FusionTime chart needs to be fed from a `DataTable`. Root `DataTable` is created from a `DataStore`.
-The `DataTable` records data in rows and columns structure. Different data operations can be applied on the `DataTable`.
-To create a `DataTable`, we need to provide a data file and describe it's schema. The system then internally makes a `DataStore` from which the `DataTable` is created. To create the `DataTable` you need the following:
+Data to the FusionTime chart needs to be fed from a `DataTable` which records data in rows and columns. Different data operations can be applied on the `DataTable`. To create a DataTable, you need to provide data in JSON or 2D array and describe it's schema. The system then internally makes a `DataStore` from which the `DataTable` is created. To create the `DataTable` you need the following:
 
 * The `schema` which defines the properties of the columns.  
 
@@ -64,7 +62,7 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 To add the data, let's create a data.js file and copy the following code:
 
 ```
-[
+let data = [
     [
         "United States",
         "1/4/2011",
