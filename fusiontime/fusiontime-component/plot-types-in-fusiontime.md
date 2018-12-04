@@ -9,7 +9,7 @@ In FusionTime plot represents a dataset which displays the relationship between 
 FusionTime supports following plot types:
 
 * Candlestick
-* Line, 
+* Line
 * Spline
 * Step-line
 * Column
