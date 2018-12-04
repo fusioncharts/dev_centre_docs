@@ -26,23 +26,23 @@ The time navigator is shown in the image below:
 
 In this article, we will discuss on the different interaction of the time navigator and how to hide the time navigator.
 
-Zoom in/out
+## Zoom in/out
 
 You can use the handles on either side to select a longer or shorter period of time. The data plot in the canvas zooms in/out respectively. This behavior is also applicable when you zoom in/out from the chart canvas, i.e., with the interaction in the chart canvas the time navigator gets updated accordingly. Refer to the image below: 
 
-<GIF>
+![Zoom using Time navigator]({% site.baseurl %}/gif/fusiontime-nav-zoom.gif)
 
-Pan using the navigator
+## Pan using the navigator
 
 You can pan across the time navigator and watch the data plots in the canvas pan in sync with the band. In case of a multivariate chart, the plots in all the canvases pan along with the Navigator. Refer to the image below:
 
-<GIF>
+![Pan using Time navigator]({% site.baseurl %}/gif/fusiontime-nav-pan.gif)
 
-Time band labels 
+## Time band labels 
 
 When you hover the mouse pointer on the time navigator band, a tooltip appears with labels on  the band showing the start date/time and the end date/time. This helps you to determine the time duration for which the data is currently displayed on the chart. Refer to the image below:
 
-<image>
+![Time navigator labels]({% site.baseurl %}/images/fusiontime-nav-labels.png)
 
 ## Show/Hide Time Navigator
 
