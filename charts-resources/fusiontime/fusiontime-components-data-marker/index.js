@@ -20,7 +20,7 @@
         }],
         xAxis: {
             plot: 'Time',
-            timemarker: [{
+            datamarker: [{
                 start: 'Mar-1980',
                 label: 'US inflation peaked at 14.8%.',
                 timeFormat: "%b-%Y",
