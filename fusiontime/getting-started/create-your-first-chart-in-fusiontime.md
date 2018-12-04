@@ -12,7 +12,7 @@ The chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-Data to the FusionTime chart needs to be fed from a `DataTable` which records data in rows and columns. Different data operations can be applied on the `DataTable`. To create a DataTable, you need to provide data in JSON or 2D array and describe it's schema. The system then internally makes a `DataStore` from which the `DataTable` is created. To create the `DataTable` you need the following:
+Data to the FusionTime needs to be fed from a `DataTable` which records data in rows and columns. To create a `DataTable` first you need to create a `DataStore` and load the data into the `DataTable` in JSON or 2D array format. To feed data to FusionTime, you need to provide the following:
 
 * The `schema` which defines the properties of the columns.  
 
@@ -51,7 +51,7 @@ In the above code:
 
 * The second object sets the **date/time** format for the chart. The name of the column has been set to **Time** and the date format has been set to `%-m/%-d/%Y`.
 
-* The last object represents the third column named **Sales, **the values of which will map to the data plots.
+* The last object represents the third column named **Sales**, the values of which will map to the data plots.
 
 Now that we have the schema ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
@@ -59,7 +59,7 @@ Now that we have the schema ready for the `DataTable` let's learn how to put the
 
 In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
 
-To add the data, let's create a data.js file and copy the following code:
+To add the data, let's create a `data.json` file and copy the following code:
 
 ```
 let data = [
@@ -168,6 +168,8 @@ Once the schema and data files are ready it is time to create the `DataTable` an
 
 In the above code:
 
+* Create the chart container using the `<div>` tag.
+
 * Include `fusioncharts.js` file.
 
 * Include `data.json` and `schema.json` files.
@@ -180,7 +182,7 @@ In the above code:
 
     * Set the type as `timeseries`.
 
-    * Set the chart container as `container`.
+    * Set the chart container as `container` using the `renderAt` property.
 
     * Set the width and height (in pixels).
 
