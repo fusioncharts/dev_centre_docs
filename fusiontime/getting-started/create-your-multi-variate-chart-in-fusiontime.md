@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating a multi
 heading: Create Multivariate Chart
 ---
 
-FusionTime lets you analyze variations among different variables co related by stacking a number of linked charts (referred to as multivariate charts) vertically, one after another. The charts share a common time axis, while the Y-axis is different in each one. 
+The variations among different related variables can be easily found out using FusionTime. Data table having more than one measure column can be used to do so. You just need to specify the order of the column measures in the `yAxis` object of FusionTime constructor, a stacked chart gets rendered one below the other, all having a common time axis.
 
 In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple values (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same time axis (x-axis).
 
@@ -61,7 +61,7 @@ Now that we have the columns ready for the `DataTable` let's learn how to put th
 To add the data, let's create a `data.json` file and copy the following code:
 
 ```
-[
+let data = [
     [
         "India",
         "1/11/2011",
@@ -126,27 +126,67 @@ In the above code:
 
 We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
 
-## Create `.html` file
+## Create `index` file
 
-Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index.html` file and copy the following code:
+Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index` file and copy the following code:
 
-```HTML
-<!DOCTYPE html>
-<html lang="en">
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='local'>Local</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FusionCharts TimeSeries</title>
-</head>
+<div class='tab npm-tab active'>
+<pre><code class="custom-hlc language-javascript">
+import FusionCharts from 'fusioncharts/core';
+import TimeSeries from 'fusioncharts/viz/timeseries';
+import DataStore from 'fusioncharts/datastore';
 
-<body>
-  <div id="container"></div>
-  <script src="./build/fusioncharts.js"></script>
-  <script src="./data.js"></script>
-  <script src="./schema.js"></script>
-  <script>
+import data from './data';
+import schema from './schema';
+
+FusionCharts.addDep(TimeSeries);
+
+let fusionDataStore = new FusionCharts.DataStore();
+let fusionTable = fusionDataStore.createDataTable(data, schema);
+
+window.charInstance = new FusionCharts({
+    type: 'timeseries',
+    renderAt: 'container',
+    width: "90%",
+    height: 650,
+    dataSource: {
+        data: fusionTable,
+            chart: {
+            },
+            caption: {
+                text: 'Global Online Sales of a SuperStore'
+        }
+    }
+});
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+  &lt;title&gt;FusionCharts TimeSeries&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id="container"&gt;&lt;/div&gt;
+  &lt;script src="./build/fusioncharts.js"&gt;&lt;/script&gt;
+  &lt;script src="./data.js"&gt;&lt;/script&gt;
+  &lt;script src="./schema.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
     let fusionDataStore = new FusionCharts.DataStore();
     let fusionTable = fusionDataStore.createDataTable(data, schema);
 
@@ -164,10 +204,15 @@ Once the schema and data files are ready it is time to create the `DataTable` an
         }
       }
     }).render()
-  </script>
-</body>
+  &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
-```
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 That's it! Your first multivariate chart is ready.

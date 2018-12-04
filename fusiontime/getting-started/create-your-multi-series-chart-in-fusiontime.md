@@ -177,7 +177,6 @@ window.charInstance = new FusionCharts({
         yAxis: [{
             "plot": {
                 "value": "Sales",
-                "type": "line"
             }
         }],
         "series": "Country"
@@ -197,7 +196,6 @@ window.charInstance = new FusionCharts({
 The above code is similar to that of the [Create your first chart]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime). In order to add multiple data plots do the following:
 
 * Specify the value of the plot as `Sales` using the `value` attribute within the `plot` object.
-* Specify the plot type as `line` using the `type` attribute within the `plot` object.
 * Specify the series as `Country` using the `series` atrribute within the `yAxis` object.
 
 That's it! Your chart with multiple plots is ready.
