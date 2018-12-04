@@ -36,4 +36,4 @@ The above illustration is a flow diagram which defines the following:
 
 * You can then feed the derived `DataTable` to the chart renderer along with chart configurations to render the chart.
 
-Now that you have the basic understanding of the data flow for FusionTime it's time to install and build your first chart.
+Now that you have the basic understanding of the data flow for FusionTime it's time to install and build your [first chart]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime).

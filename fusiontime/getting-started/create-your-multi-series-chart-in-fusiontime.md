@@ -84,7 +84,7 @@ In the above code:
 
     * **Value** of the data plots, i.e. sales per date.
 
-We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
+We are all set with our data to create the chart. 
 
 ## Create the `index` file
 
@@ -200,4 +200,4 @@ The above code is similar to that of the [Create your first chart]({% site.baseu
 
 That's it! Your chart with multiple plots is ready.
 
-Next, we will discuss on how to create a [multivariate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.
+Next, we will discuss about the FusionTime [JSON structure]({% site.baseurl %}/fusiontime/getting-started/fusiontime-json-structure).
