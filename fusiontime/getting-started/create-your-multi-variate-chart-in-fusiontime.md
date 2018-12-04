@@ -107,6 +107,7 @@ let data = [
         2.48
     ]
 ]
+```
 
 In the above code:
 
