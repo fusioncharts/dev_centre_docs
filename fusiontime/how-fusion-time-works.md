@@ -20,7 +20,7 @@ The `DataStore` also contains a set of data operators (filter, grouping, etc.) w
 
 To help understand better refer to the illustration below:
 
-![](null)
+<img src="{% site.baseurl %}/images/how-fusion-time-works.svg" alt="CrossLine" width="700" height="420">
 
 The above illustration is a flow diagram which defines the following:
 
@@ -36,5 +36,4 @@ The above illustration is a flow diagram which defines the following:
 
 * You can then feed the derived `DataTable` to the chart renderer along with chart configurations to render the chart.
 
-Now that you have the basic understanding of the data flow for FusionTime it's time to install and build your first chart. 
-
+Now that you have the basic understanding of the data flow for FusionTime it's time to install and build your first chart.
