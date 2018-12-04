@@ -10,7 +10,7 @@ A time marker appears as an overlay on the canvas. When you hover the mouse poin
 
 Note: In a multivariate chart, all the canvas share the same time markers.
 
-<img src="{% site.baseurl %}/images/fusioncharts-component-time-marker.png" alt="Time Marker" width="700" height="420">
+<img src="{% site.baseurl %}/images/fusiontime-component-time-markers.png" alt="Time Markers" width="700" height="420">
 
 A sample chart with time markers is shown below:
 

@@ -8,7 +8,7 @@ A standard range selector allows you to focus on the set of data for a specific 
 
 For example, out of 15 years of data (2000-2015), you are currently viewing 5 years of data (2008-2013). Now, if you select `1Y` of data from the Standard range selector, the chart will display data for the last one year out of the 5 years (2013). 
 
-<<Annotated image>>
+<img src="{% site.baseurl %}/images/fusiontime-component-standard-range-selector.png" alt="Standard Range Selector" width="700" height="420">
 
 The major features of Standard Range Selector include the following:
 

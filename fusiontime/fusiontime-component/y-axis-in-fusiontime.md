@@ -6,7 +6,7 @@ heading: Y-Axis
 
 In FusionTime, you can have different y-axis for different measures visualized in a multi-variate chart.
 
-<Annotated Image multivariate chart>
+<img src="{% site.baseurl %}/images/fusiontime-component-y-axis.png" alt="Y-axis" width="700" height="420">
 
 You can configure the y-axis of the chart by creating the Y-axis object.
 

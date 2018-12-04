@@ -8,7 +8,7 @@ Crossline is a horizontal and vertical line/area used as a reference for the dat
 
 A cross line appears as shown in the image below:
 
-<Annotated Image>
+<img src="{% site.baseurl %}/images/fusiontime-component-cross-line.png" alt="CrossLine" width="700" height="420">
 
 By default, a vertical crossline will map the time axis. Hover the mouse pointer over an anchor, a horizontal crossline with tags (having values) on the quantitative (or y) axis will show up. The tooltip that appears has all the information required, for example, data values, labels of each data plot and also the color of the data plots. 
 
