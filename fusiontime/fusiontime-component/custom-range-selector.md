@@ -32,7 +32,7 @@ To set the custom date and time follow the steps below:
 
 After applying the changes, hover the mouse pointer over a data plot to see details about the underlying data in a tooltip. A multi-series chart with custom range selector is shown below:
 
-{% embed_ftChartData online-sales-multi-series %}
+{% embed_ftChart online-sales-multi-series %}
 
 ## Show/Hide Custom Range Selector
 

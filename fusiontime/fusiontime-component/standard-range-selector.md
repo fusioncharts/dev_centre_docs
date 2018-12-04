@@ -24,7 +24,7 @@ Once you select the total time period to be covered, as well as the interval bet
 
 A chart with Standard range selector is shown below:
 
-{% embed_ftChartData online-sales-multi-series %}
+{% embed_ftChart online-sales-multi-series %}
 
 In the example given above, you can see the sales made by an organization on a daily basis for a number years, plotted in a column chart. When the chart is loaded, by default, `All` is selected in the Standard Range Selector. Click on any of the other given intervals to dive deeper into the sales data. 
 

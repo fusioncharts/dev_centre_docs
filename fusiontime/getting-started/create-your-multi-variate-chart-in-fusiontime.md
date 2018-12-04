@@ -10,7 +10,7 @@ In this article, we'll create a multivariate chart showcasing the database of th
 
 The multivariate chart is shown below:
 
-{% embed_ftChartData online-sales-multi-variate %}
+{% embed_ftChart online-sales-multi-variate %}
 
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 

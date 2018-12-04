@@ -28,7 +28,7 @@ The major features of **Time Navigator** include the following:
 
 A sample chart is shown below:
 
-{% embed_ftChartData online-sales-multi-variate %}
+{% embed_ftChart online-sales-multi-variate %}
 
 In the example given above, you can see the Time Navigator displayed right below the X-Axis. Drag the selector handles to choose a particular time period, and watch the chart in the canvas update itself accordingly. 
 

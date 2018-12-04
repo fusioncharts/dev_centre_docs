@@ -35,7 +35,7 @@ Let’s create a time series chart using line as a data plot showcasing online s
 
 The time series chart is shown below:
 
-{% embed_ftChartData online-sales-single-series %}
+{% embed_ftChart online-sales-single-series %}
 
 To check out the detailed step to render the above chart, click here.
 

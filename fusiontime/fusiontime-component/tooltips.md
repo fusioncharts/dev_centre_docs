@@ -16,7 +16,7 @@ The above image is of a single series chart which displays valuable information 
 
 Now, let's create a multi-series chart which will compare online sales of SuperStore in United States of America and India.
 
-{% embed_ftChartData online-sales-multi-series %}
+{% embed_ftChart online-sales-multi-series %}
 
 In the given example, you can see a chart with multipe data plots - displaying the sales figures of a company in India and the US. Hover the mouse pointer anywhere in the canvas and you will see a consolidated tooltip showing the names and values for both data plots at that point. 
 

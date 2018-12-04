@@ -10,7 +10,7 @@ In this article, we'll create our first chart with multiple plots which will com
 
 The chart is shown below:
 
-{% embed_ftChartData online-sales-multi-series %}
+{% embed_ftChart online-sales-multi-series %}
 
 ## Create the `schema`
 

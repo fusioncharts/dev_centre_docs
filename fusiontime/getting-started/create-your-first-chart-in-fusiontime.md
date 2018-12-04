@@ -10,7 +10,7 @@ In this article, we’ll create a simple time-series chart showcasing online sal
 
 The chart is shown below:
 
-{% embed_ftChartData online-sales-single-series %}
+{% embed_ftChart online-sales-single-series %}
 
 Data to the FusionTime chart needs to be fed from a `DataTable`. Root `DataTable` is created from a `DataStore`.
 The `DataTable` records data in rows and columns structure. Different data operations can be applied on the `DataTable`.
@@ -63,7 +63,42 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 
 To add the data, let's create a data.js file and copy the following code:
 
-{% embed_ftGenre online-sales-single-series data %}
+```
+[
+    [
+        "United States",
+        "1/4/2011",
+        16.448
+    ],
+    [
+        "United States",
+        "1/5/2011",
+        272.736
+    ],
+    [
+        "United States",
+        "1/5/2011",
+        11.784
+    ],
+    ...
+    ...
+    [
+        "United States",
+        "12/31/2014",
+        20.72
+    ],
+    [
+        "United States",
+        "12/31/2014",
+        13.904
+    ],
+    [
+        "United States",
+        "12/31/2014",
+        3.024
+    ]
+]
+```
 
 In the above code:
 

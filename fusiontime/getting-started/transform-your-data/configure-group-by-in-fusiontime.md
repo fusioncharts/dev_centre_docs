@@ -10,7 +10,7 @@ For better understanding, let's create a chart without grouping. For example, a 
 
 The chart is shown below:
 
-{% embed_ftChartData online-sales-single-series %}
+{% embed_ftChart online-sales-single-series %}
 
 Now, let's apply `groupBy` to the above chart.
 
