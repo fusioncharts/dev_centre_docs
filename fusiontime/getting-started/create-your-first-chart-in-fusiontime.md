@@ -112,63 +112,108 @@ In the above code:
 
 We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
 
-## Create `.html` file
+## Create `index` file
 
-Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index.html` file and copy the following code: 
+Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index` file and copy the following code: 
 
-```HTML
-<!DOCTYPE html>
-<html lang="en">
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='local'>Local</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Create your First Chart</title>
-  <style type="text/css">
+<div class='tab npm-tab active'>
+<pre><code class="custom-hlc language-javascript">
+import FusionCharts from 'fusioncharts/core';
+import TimeSeries from 'fusioncharts/viz/timeseries';
+import DataStore from 'fusioncharts/datastore';
+
+import data from './data';
+import schema from './schema';
+
+FusionCharts.addDep(TimeSeries);
+
+let fusionDataStore = new FusionCharts.DataStore();
+let fusionTable = fusionDataStore.createDataTable(data, schema);
+
+window.charInstance = new FusionCharts({
+    type: 'timeseries',
+    renderAt: 'container',
+    width: "90%",
+    height: 650,
+    dataSource: {
+        data: fusionTable,
+        "yAxis": [{
+            "plot": {
+                "title": 'Sales ($)'
+            }
+        }],
+        caption: {
+            text: 'Online Sales of a SuperStore in the US'
+        }
+    }
+});
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+  &lt;title&gt;Create your First Chart&lt;/title&gt;
+  &lt;style type="text/css"&gt;
   #container {
     width: 700px;
   }
-  </style>
-</head>
+  &lt;/style&gt;
+&lt;/head&gt;
 
-<body>
-  <div id="container"></div>
-  <script src="path/to/local/fusioncharts.js"></script>
-  <script src="path/to/local/data.js"></script>
-  <script src="path/to/local/schema.js"></script>
-  <script>
+&lt;body&gt;
+  &lt;div id="container"&gt;&lt;/div&gt;
+  &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+  &lt;script src="path/to/local/data.js"&gt;&lt;/script&gt;
+  &lt;script src="path/to/local/schema.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
     let fusionDataStore = new FusionCharts.DataStore();
     let fusionTable = fusionDataStore.createDataTable(data, schema);
 
     new FusionCharts({
-      type: 'timeseries',
-      renderAt: 'container',
-      width: "90%",
-      height: 650,
-      dataSource: {
-        data: fusionTable,
-        chart: {
-        },
-        "yAxis": [{
-            "plot": {
-                "title": "Sales"
+        type: 'timeseries',
+        renderAt: 'container',
+        width: "90%",
+        height: 650,
+        dataSource: {
+            data: fusionTable,
+            "yAxis": [{
+                "plot": {
+                    "title": 'Sales ($)'
+                }
+            }],
+            caption: {
+                text: 'Online Sales of a SuperStore in the US'
             }
-        }],
-        caption: {
-          text: 'Online Sales of a SuperStore in the US'
         }
-      }
     }).render()
-  </script>
-</body>
+  &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
-```
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
 
 In the above code:
-
-* Create the chart container using the `<div>` tag.
 
 * Include `fusioncharts.js` file.
 
@@ -188,6 +233,10 @@ In the above code:
 
     * Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
 
+    * Set the data to create the chart.
+
+    * Specify the caption of the chart using `text` attribute in `caption` object.
+
 That's it! Your first chart using FusionTime is ready.
 
-Next, we will discuss on how to add [multiple plot types]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart. 
+Next, we will discuss on how to add [multiple plots]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart. 
