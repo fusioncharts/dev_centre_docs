@@ -16,9 +16,18 @@ FusionTime supports following plot types:
 * OHLC
 * Candlestick
 
-You can specify the plot type in a chart, using the `plotType` property inside the `yAxis` object. By default, the value is `line`. However, you can modify it with any of the varieties mentioned in the list above.
+You can specify the plot type in a chart, using the `plotType` property inside the `yAxis` object. By default, the value is `line`. However, you can modify it with any of the varieties mentioned in the list above. Refer to the code below:
 
-In this article, we'll see different types of data plots to render a chart.
+```
+yaxis: {
+            "plot": {
+                "value": "Sales",
+                "type": "column"  
+            }
+        }
+```
+
+In this article, we'll see different types of data plots to render a chart. 
 
 ## Line
 
@@ -27,8 +36,6 @@ Let’s create a time series chart using line as a data plot showcasing online s
 The time series chart is shown below:
 
 {% embed_ftChartData online-sales-single-series %}
-
-In the above chart, y-axis represents the dimension i.e. the date on which the order has been placed, whereas the x-axis shows the sales per date.
 
 To check out the detailed step to render the above chart, click here.
 
