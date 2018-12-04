@@ -34,13 +34,13 @@ You can use the handles on either side to select a longer or shorter period of t
 
 ## Pan using the navigator
 
-You can pan across the time navigator and watch the data plots in the canvas pan in sync with the band. In case of a multivariate chart, the plots in all the canvases pan along with the Navigator. Refer to the image below:
+You can pan across the time navigator and watch the data plots in the canvas pan in sync with the active window. In case of a multivariate chart, the plots in all the canvases pan along with the Navigator. Refer to the image below:
 
 ![Pan using Time navigator]({% site.baseurl %}/gif/fusiontime-nav-pan.gif)
 
-## Time band labels 
+## Active window labels 
 
-When you hover the mouse pointer on the time navigator band, a tooltip appears with labels on  the band showing the start date/time and the end date/time. This helps you to determine the time duration for which the data is currently displayed on the chart. Refer to the image below:
+When you hover the mouse pointer on the active window of the time navigator, the time labels appear on  the both the ends of the active window showing the start date/time and the end date/time. You can drag these labels to increase or decrease the active window. Refer to the image below:
 
 ![Time navigator labels]({% site.baseurl %}/images/fusiontime-nav-labels.png)
 

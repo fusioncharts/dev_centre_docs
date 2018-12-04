@@ -32,16 +32,7 @@ Refer to the code given below:
     height: 450,
     dataSource: {
         data: dataStore,
-        chart: {
-        },
-        caption: {
-            text: 'Online Sales of a SuperStore in the US'
-        },
-        yaxis: {
-            "plot": {
-                "value": "Sales",
-                "type": "line"
-            },
+        ...
             // Reference Line
             "referenceLine": [{
                 "label": "Daily Target",
