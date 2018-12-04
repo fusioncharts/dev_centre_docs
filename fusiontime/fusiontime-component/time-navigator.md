@@ -4,13 +4,7 @@ description: This article defines the time navigator.
 heading: Time Navigator
 ---
 
-The Time Navigator component of FusionTime gives the full context of the time-series data.
-
-The patterns of changing observation are visible in one view in this component.
-
-There is also a focus window on this component with draggable handles. By moving the handles, you can change the time range to focus on the data specific to that time range.
-
-<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png" alt="Time Navigator" width="550" height="320">
+TIn FusionCharts, the time navigator facilitates you to focus on details in a specific time period while still staying in context of the whole timeline. The time navigator plots the whole set of data in a rectangular box below the time axis. It gives you an idea of what is there in any part of the timeline that is currently out of focus. 
 
 The major features of **Time Navigator** include the following:
 
@@ -26,11 +20,29 @@ The major features of **Time Navigator** include the following:
 
 * You can pan the active window of the time navigator to view the data of a specific section compared to the complete data.
 
-A sample chart is shown below:
+The time navigator is shown in the image below:
 
-{% embed_ftChart online-sales-multi-variate %}
+<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png" alt="Time Navigator" width="550" height="320">
 
-In the example given above, you can see the Time Navigator displayed right below the X-Axis. Drag the selector handles to choose a particular time period, and watch the chart in the canvas update itself accordingly. 
+In this article, we will discuss on the different interaction of the time navigator and how to hide the time navigator.
+
+Zoom in/out
+
+You can use the handles on either side to select a longer or shorter period of time. The data plot in the canvas zooms in/out respectively. This behavior is also applicable when you zoom in/out from the chart canvas, i.e., with the interaction in the chart canvas the time navigator gets updated accordingly. Refer to the image below: 
+
+<GIF>
+
+Pan using the navigator
+
+You can pan across the time navigator and watch the data plots in the canvas pan in sync with the band. In case of a multivariate chart, the plots in all the canvases pan along with the Navigator. Refer to the image below:
+
+<GIF>
+
+Time band labels 
+
+When you hover the mouse pointer on the time navigator band, a tooltip appears with labels on  the band showing the start date/time and the end date/time. This helps you to determine the time duration for which the data is currently displayed on the chart. Refer to the image below:
+
+<image>
 
 ## Show/Hide Time Navigator
 
