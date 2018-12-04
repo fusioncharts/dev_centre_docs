@@ -1,7 +1,7 @@
 ---
-title: Create Chart | FusionCharts
-description: This article outlines the steps to be executed for creating a multi-series chart.
-heading: Create Multi-Series Chart
+title: Create a Chart with Multiple Data Plots | FusionCharts
+description: This article outlines the steps to be executed for creating chart using multiple data plots.
+heading: Add Multiple Data Plots
 ---
 
 FusionTime allows you to visualize charts with multiple plots for multiple datasets. Previously, we have learned how to create a simple chart with one plot typel  
@@ -35,7 +35,41 @@ To understand the `schema.json` in details click [here]({% site.baseurl %}/fusio
 
 To add the data, let's create a `data.json` file and copy the following code:
 
-{% embed_ftGenre online-sales-multi-series data %}
+```
+let data = [
+    [
+        "United States",
+        "1/4/2011",
+        16.448
+    ],
+    [
+        "United States",
+        "1/5/2011",
+        272.736
+    ],
+    [
+        "United States",
+        "1/5/2011",
+        11.784
+    ],
+    ...
+    ...
+    [
+        "India",
+        "12/31/2014",
+        364.59
+    ],
+    [
+        "India",
+        "12/31/2014",
+        72
+    ],
+    [
+        "India",
+        "12/31/2014",
+        39.42
+    ]
+]
 
 In the above code:
 

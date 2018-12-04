@@ -10,7 +10,7 @@ The patterns of changing observation are visible in one view in this component.
 
 There is also a focus window on this component with draggable handles. By moving the handles, you can change the time range to focus on the data specific to that time range.
 
-<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png" alt="Time Navigator" width="700" height="420">
+<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png" alt="Time Navigator" width="550" height="320">
 
 The major features of **Time Navigator** include the following:
 
