@@ -4,17 +4,19 @@ description: This article defines the plot types suported in FusionTime.
 heading: Plot Types
 ---
 
-In FusionTime plot represents a dataset which displays the relationship between two or more variables of a chart. Plot refers to a line in a line chart, a column in the column chart or an area in the area chart.
+In FusionTime a plot represents a particular column/measure in the tabular data, which displays the relationship between two or more variables of a chart. Plot refers to a line in a line chart, a column in a column chart etc. FusionTime supports following plot types:
 
 FusionTime supports following plot types:
 
-* Candlestick
 * Line
-* Spline
-* Step-line
-* Column
 * Area
+* Column
+* Step Line
+* Spline
 * OHLC
+* Candlestick
+
+You can specify the plot type in a chart, using the `plotType` property inside the `yAxis` object. By default, the value is `line`. However, you can modify it with any of the varieties mentioned in the list above.
 
 In this article, we'll see different types of data plots to render a chart.
 
