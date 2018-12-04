@@ -15,17 +15,11 @@ In FusionCharts, the functional and cosmetic properties are defined using attrib
 For example, you can define the `caption` under the chart object as shown in the code below:
 
 ```
-
 {
-
     chart : {
-
         "caption": "Chart Caption"
-
     }
-
 }
-
 ```
 
 In FusionTime, each and every component is a separate object which has specific properties of its own. 
@@ -33,39 +27,24 @@ In FusionTime, each and every component is a separate object which has specific 
 For example, to specify the caption you need to create a `caption` object and set the value of the `text` property. Refer to the code below:
 
 ```
-
 {
-
     caption: {
-
         text: 'Chart Caption'
-
     }
-
 }
-
 ```
 
 Similarly, to configure the y-axis in FusionTime you need to create a `yAxis` object and define the y-axis related properties within the object. Refer to the code below:
 
 ```
-
 {
-
 	yAxis: {
-
         "plot": {
-
             "value": "Name", //Yaxis name
-
             "type": "column"  //Set the plot type
-
         }
-
     }
-
 }
-
 ```
 
 Every component has its own configuration. To know more click here.
@@ -77,9 +56,12 @@ In FusionCharts, you can define the cosmetic properties using attributes within 
 For example, you can set the font of the caption using the `captionFont` attribute within the `chart` object. Refer to the code below:
 
 ```
-
-Code
-
+{
+    chart : {
+        "caption": "Chart Caption",
+        "captionFont": "Arial"
+    }
+}
 ```
 
 FusionTime allows you to define the cosmetic properties using Styles in two different ways. You can:
@@ -87,9 +69,13 @@ FusionTime allows you to define the cosmetic properties using Styles in two diff
 * Define a `StyleDefinition` object and set the style properties within the object. You can then use the style properties to style any chart component. Refer to the code below:
 
 ```
-
-Code
-
+{
+    styleDefinition: {
+        "small-text": {
+            "font-size": "6"
+        }
+    }
+}
 ```
 
 OR
@@ -97,8 +83,12 @@ OR
 * You can directly create a style object within a component to set the style properties. Refer to the code below:
 
 ```
-
-Code
-
-``` 
-
+{
+    caption: {
+        text: 'Interest Rate Analysis',
+        style: {
+            text: 'small-text'
+        }
+    }
+}
+```
