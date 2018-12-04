@@ -16,7 +16,7 @@ The date/time range can be set in two ways:
 
 A range selector appears as shown in the image below:
 
-<img src="{% site.baseurl %}/images/fusioncharts-component-custom-range-selector.png" alt="Custom Range Selector" width="550" height="400">
+<img src="{% site.baseurl %}/images/fusioncharts-component-custom-range-selector.png" alt="Custom Range Selector" width="700" height="420">
 
 ## Set custom date and time
 
