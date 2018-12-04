@@ -20,7 +20,7 @@ The `DataStore` also contains a set of data operators (filter, grouping, etc.) w
 
 To help understand better refer to the illustration below:
 
-<img src="{% site.baseurl %}/images/how-fusion-time-works.svg" alt="CrossLine" width="700" height="420">
+![FT Works]({% site.baseurl %}/images/how-fusion-time-works.svg)
 
 The above illustration is a flow diagram which defines the following:
 
