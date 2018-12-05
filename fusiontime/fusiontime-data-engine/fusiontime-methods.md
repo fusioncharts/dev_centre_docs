@@ -20,18 +20,17 @@ Creates data table in the data store.
     "name": "Time", //Column Name
     "type": "date", //It can be text/number/date/interval
     "format": "%-m/%-d/%Y" //Suitable format for rows
-    
+     
 }]
 ```
 
-* **config:** It is an optional argument which contains indexing information,i.e., in which order data should be inserted in the table.
+* **config:** It is an optional argument which contains indexing information, i.e., in which order data should be inserted in the table. If the `config` is not provided then the `DataStore` intelligently picks a column to index.
 
 ```
 //Config
 {
 	"enableIndex": true, //default is true
-	"indexBy": "columnName", //Column Name on which the indexing is applied
-	"enableUTC": true/false 
+	"indexBy": "columnName", //Column Name on which the indexing is applied 
 }
 ```
 
