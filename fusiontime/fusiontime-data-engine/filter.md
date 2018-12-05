@@ -81,7 +81,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### GreaterEquals
 
-This operation is similar to `greater` filter which can be used when you want to filter the data values greater than a specific numeric value. `greaterEquals` operation is used when you want to filter the data values greater or equal to the specific value.  Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values greater or equal to 500. In this scenario, we have to use the `greaterEquals` filter which will render the chart using data plots with the value above and equal to 500.
+This operation is similar to `greater` filter which can be used when you want to filter the data values greater than a specific numeric value. `greaterEquals` operation is used when you want to filter the data values greater or equal to the specific value.  Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values greater or equal to 100. In this scenario, we have to use the `greaterEquals` filter which will render the chart using data plots with the value above and equal to 100.
 
 **GreaterEquals** takes two arguments which are:
 
@@ -92,7 +92,7 @@ The data structure to set the `greaterEquals` filter is shown below:
 
 ```
 var filter1 = FusionCharts.DataStore.Operators.greaterEquals('Quantity', 3);
-var dataTable=dataT.query(filter1);
+var dataTable = dataT.query(filter1);
 ```
 
 The new data table after running the above code looks like:

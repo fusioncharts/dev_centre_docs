@@ -144,16 +144,11 @@ let data = [
 ```
 
 In the above code:
-
 * `data` is the variable in which the data array is saved.
-
-* Each element of the data array has values specific to each row of the `DataTable`. The values in the array represent:
-
-    * The name of the **Country**.
-
-    * **Time** according to the format.
-
-    * **Value** of the data plots, i.e. sales per date.
+* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
+    * The name of the Country.
+    * Time according to the format
+    * Total Sales amount
 
 We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
 
