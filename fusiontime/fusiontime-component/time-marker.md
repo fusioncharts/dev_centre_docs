@@ -60,8 +60,8 @@ xAxis: {
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
         repeat {
-        unit: Month,
-        multiplier: 1
+        unit: Year,
+        multiplier: 5
     }
 },
 ```
