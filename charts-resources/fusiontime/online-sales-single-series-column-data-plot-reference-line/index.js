@@ -15,9 +15,12 @@
                 "value": "Sales",
                 "type": "line"
             },
-            "referenceLineconfig": [{
+            "referenceLine": [{
                 "label": "Daily Target",
-                "value": 300
+                "value": 300,
+                "style": {
+                    "text": style | vertical-align
+                }
             }],
         }
     }
