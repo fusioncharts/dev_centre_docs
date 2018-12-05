@@ -9,12 +9,12 @@ In FusionTime a plot represents a particular column/measure in the tabular data,
 FusionTime supports following plot types:
 
 * Line
-* Area
 * Column
-* Step Line
+* Area
 * Spline
-* OHLC
+* Step Line
 * Candlestick
+* OHLC
 
 You can specify the plot type in a chart, using the `plotType` property inside the `yAxis` object. By default, the value is `line`. However, you can modify it with any of the varieties mentioned in the list above. Refer to the code below:
 
