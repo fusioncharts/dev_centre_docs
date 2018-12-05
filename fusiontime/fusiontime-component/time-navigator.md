@@ -14,9 +14,9 @@ The major features of **Time Navigator** include the following:
 
 * The Time Navigator has a pair of draggable handles, which you can use to display the selected time interval in greater detail.
 
-* The active window of the time navigator resizes itself every time you perform a relevant action, such as zoom in/out of the chart, select standard time periods from the standard range selector, change the 'Start date' or 'End date' in the custom range selector, etc.
+* The active window of the time navigator resizes itself every time you perform a relevant action, such as zoom in/out of the chart, select standard time periods from the [standard range selector]({% site.baseurl %}/fusiontime/fusiontime-component/standard-range-selector), change the 'Start date' or 'End date' in the [custom range selector]({% site.baseurl %}/fusiontime/fusiontime-component/custom-range-selector), etc.
 
-* In a multi-series chart, click on the legend to dim one particular series in the time navigator.
+* In a time-series chart with multiple plots, click on the legend to dim one particular data plot in the time navigator.
 
 * You can pan the active window of the time navigator to view the data of a specific section compared to the complete data.
 
