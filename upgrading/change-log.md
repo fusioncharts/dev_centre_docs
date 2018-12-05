@@ -4,6 +4,11 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.3</h2>
+5th December, 2018
+
+
+
 <h2 class="sub-heading">Version 3.13.2-sr.1</h2>
 30th October, 2018
 

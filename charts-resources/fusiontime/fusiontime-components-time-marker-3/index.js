@@ -21,8 +21,9 @@
         xAxis: {
             plot: 'Time',
             timemarker: [{
-                start: 'Mar-1982',
-                label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
+                start: 'Mar-1980',
+                end: 'Jun-1983',
+                label: 'US inflation peaked at 14.8%.',
                 timeFormat: "%b-%Y",
                 style: {
                     marker: {

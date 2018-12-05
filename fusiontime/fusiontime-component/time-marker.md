@@ -28,7 +28,7 @@ Refer to the code below:
 ```
 xAxis: {
     timemarker: [{
-        start: 'Jul-1981',
+        start: 'Mar-1982',
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
     }],
@@ -38,8 +38,6 @@ xAxis: {
 A sample chart with a time marker is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-1 %}
-
-{% embed_ftChart fusiontime-components-time-marker-2 %}
 
 To create repeatable time instance markers follw the stpes below:
 
@@ -52,14 +50,13 @@ To create repeatable time instance markers follw the stpes below:
         * Use the `multiplier` attribute to define the multiplier of the time unit. By default, this value is `1`.
 Refer to the code below:
 
-```
-
 * Use the `end` attribute to define the end time for the marker. Note that if you set the end of the date/time, then the marker will be presented as a band. If you omit it instead, the marker will be represented as a line.
 
+```
 xAxis: {
     columnname: 'Time',
     timemarker: [{
-        start: 'Jul-1981',
+        start: 'Mar-1982',
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
         repeat {
@@ -67,11 +64,10 @@ xAxis: {
         multiplier: 1
     }
 },
-
 ```
 The sample chart with repeated time instance markers is shown below:
 
-<<LIVE CHART>>
+{% embed_ftChart fusiontime-components-time-marker-2 %}
 
 ## Time span marker 
 
@@ -83,8 +79,8 @@ Refer to the code below:
  xAxis: {
     columnname: 'Time',
     timemarker: [{
-        start: 'Jul-1981',
-        end: 'Nov-1982',
+        start: 'Mar-1980',
+        end: 'Jun-1983',
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
     },
@@ -92,7 +88,7 @@ Refer to the code below:
 
 A sample chart with time spam markers is shown below:
 
-<<LIVE CHART>> 
+{% embed_ftChart fusiontime-components-time-marker-3 %}
 
 In a multivariate chart, all the canvas share the same time markers.
 
