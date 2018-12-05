@@ -57,12 +57,12 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Greater
 
-**Greater** is an operation which can be used when you want to filter the data values greater than a specific numeric value. Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values greater than 500. In this scenario, we have to use the `greater` filter which will render the chart using data plots with the value above 500.
+**Greater** is an operation which can be used when you want to filter the data values greater than a specific numeric value. Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values greater than 100. In this scenario, we have to use the `greater` filter which will render the chart using data plots with the values above 100.
 
 **Greater** takes two arguments which are:
 
 * Column name on which you want to apply the filter
-* To render the chart by values greater than 500, set the value of this argument to **500**.
+* To render the chart by values greater than 100, set the value of this argument to **100**.
 
 The data structure to set the `greater` filter is shown below:
 
