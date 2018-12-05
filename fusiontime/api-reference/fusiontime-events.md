@@ -10,22 +10,22 @@ In this article, we'll discuss the events that you can use to trigger actions fo
 
 ## DataStore Events
 
-### itemsAdded
+### `itemsAdded`
 
 This event is triggered when new row(s) are added to a data table in the DataStore.
 
 > The sender argument contains the newly added rows.
 
-### disposed
+### `disposed`
 
 This event is triggered when the entire DataStore is disposed.
 
 ## DataTable Events
 
-### updated
+### `updated`
 
 This event is triggered when new column(s) are added to a data table in the DataStore.
 
-### disposed
+### `disposed`
 
 This event is triggered when the data table is disposed.
