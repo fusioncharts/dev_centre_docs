@@ -14,9 +14,9 @@ While FusionCharts can help you visualize data in dozens of different ways, Fusi
 
 ## FusionTime Data Layer
 
-So, how do you create the `DataTable`? The FusionTime data layer comes with a [DataStore]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) which accepts data in JSON/2D array format. The data fed in the `DataStore` is converted to a root 'DataTable' using the `createDataTable()` method. This is the root `DataTable` which contains the source data. So all you need to do is provide the source data in JSON/2D array to the `DataStore` and the data engine takes care of the rest. You can then either provide this `DataTable` to render the chart or apply data operations to create new `DataTable` with optimized data.
+So, how do you create the `DataTable`? The FusionTime data layer comes with a [DataStore]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) which accepts data in JSON/2D array format. The data fed in the `DataStore` is converted to a root 'DataTable' using the `createDataTable()` method. This is the root `DataTable` which contains the source data. So all you need to do is provide the source data in JSON/2D array to the `DataStore` and the data layer takes care of the rest. You can then either provide this `DataTable` to render the chart or apply data operations to create new `DataTable` with optimized data.
 
-The `DataStore` also contains a set of data operators (filter, grouping, etc.) which can be applied to any `DataTable`. Any operations applied on `DataTable` to optimize data generates a new child `DataTable`. Likewise any number of data tables can be generated from either the master or other child data tables. You can then provide any one of the `DataTables` to render the chart. 
+The `DataStore` also contains a set of data operators (filter, grouping, etc.) which can be applied to any `DataTable`. Any operations applied on `DataTable` to optimize data generates a new child `DataTable`. Likewise, any number of data tables can be generated from either the master or other child data tables. You can then provide any one of them to render the chart. 
 
 To help understand better refer to the illustration below:
 
@@ -28,9 +28,7 @@ The above illustration is a flow diagram which defines the following:
 
 * Create a `DataStore` and load your data to create the root `DataTable`.
 
-* The data is then fed in the `DataStore`. To identify the data you need schema and data which we will discuss later.
-
-* The JSON/2D array format of source data is then converted into the root `DataTable` which is stored in the `DataStore`. 
+* The data is then fed in the `DataStore`. To identify the data you need [schema]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime#create-the-schema-3) and [data]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime#create-data-4).
 
 * The root `DataTable` is then fed to the chart renderer along with chart configurations to render the chart. 
 
