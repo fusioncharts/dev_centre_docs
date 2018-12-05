@@ -52,13 +52,11 @@ That completes the installation of **FusionTime**.
 
 ## Create your first chart
 
-Let's create a simple time-series chart showcasing online sales of SuperStore in the US.
-
-The chart is shown below:
+Now that you have installed, it's time to create your first time series chart using FusionTime. To start with we will create a simple time-series chart showcasing online sales of a SuperStore in the US. The chart will look like as shownj in the image below:
 
 {% embed_ftChart online-sales-single-series %}
 
-Data to the FusionTime needs to be fed from a [Datatable]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To feed data to FusionTime, you need to provide the following:
+To create the above chart let's understand the basics FusionTime in brief. Data to the FusionTime needs to be fed from a [Datatable]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
 * The `schema` which defines the properties of the columns.  
 
