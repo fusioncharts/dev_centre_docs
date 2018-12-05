@@ -193,7 +193,7 @@ window.charInstance = new FusionCharts({
 </div>
 </div>
 
-The above code is similar to that of the [Create your first chart]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime). In order to add multiple data plots do the following:
+The above code is similar to that of the [create your first chart]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime). In order to add multiple data plots do the following:
 
 * Specify the value of the plot as `Sales` using the `value` attribute within the `plot` object.
 * Specify the series as `Country` using the `series` atrribute within the `yAxis` object.
