@@ -4,7 +4,7 @@ description: This article defines the reference line.
 heading: Reference Line
 ---
 
-A Reference Line is essentially an arbitrary fixed line (mapped to one of the axes), which indicates a specific value. It helps viewers to quickly compare values of individual data plots with a predefined value.
+A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), which indicates a specific value. It can help you to quickly compare a particular data value against a line mapped to a fixed value. 
 
 <img src="{% site.baseurl %}/images/fusiontime-component-reference-line.png" alt="Reference Line" width="700" height="420">
 

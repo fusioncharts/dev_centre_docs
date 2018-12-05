@@ -14,7 +14,7 @@ The major features of **Time Navigator** include the following:
 
 * The Time Navigator has a pair of draggable handles, which you can use to display the selected time interval in greater detail.
 
-* The active window of the time navigator resizes itself every time you perform a relevant action, such as zoom in/out of the chart, select standard periods, change the 'Start date' or 'End date' in the date range selector, etc.
+* The active window of the time navigator resizes itself every time you perform a relevant action, such as zoom in/out of the chart, select standard time periods from the standard range selector, change the 'Start date' or 'End date' in the custom range selector, etc.
 
 * In a multi-series chart, click on the legend to dim one particular series in the time navigator.
 
