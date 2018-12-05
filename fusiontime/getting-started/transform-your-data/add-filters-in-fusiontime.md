@@ -28,7 +28,7 @@ Now, let's apply the `greater` filter and set its value to **500**. The chart lo
 In the above chart, the rendered data plot's values are greater than **500**. The data structure to set the `greater` filter is shown below:
 
 ```
-//Greater Filter Applied to theDataTablein the Data Store
+//Greater Filter Applied to the DataTable in the Data Store
 let fusionDataStore = new FusionCharts.DataStore();
 let fusionTable = fusionDataStore.createDataTable(data, schema);
 var greater1 = FusionCharts.DataStore.Operators.greater('Sales', 500);
@@ -67,7 +67,7 @@ Let's apply the `less` filter to the above chart and set its value to **1000**. 
 In the above chart, the rendered data plot's values are less than **1000**. The data structure to set the `less` filter is shown below:
 
 ```
-//Less Filter Applied to theDataTablein the Data Store
+//Less Filter Applied to the DataTable in the Data Store
 let fusionDataStore = new FusionCharts.DataStore();
 let fusionTable = fusionDataStore.createDataTable(data, schema);
 var less1 = FusionCharts.DataStore.Operators.less('Sales', 1000);
@@ -147,7 +147,7 @@ Let's apply the `between` filter to the above single series chart and set its va
 In the above chart, the rendered data plot's values are more than **500** but less than **1000**. The data structure to set the `between` filter is shown below:
 
 ```
-//Between Filter Applied to theDataTablein the Data Store
+//Between Filter Applied to the DataTable in the Data Store
 let fusionDataStore = new FusionCharts.DataStore();
 let fusionTable = fusionDataStore.createDataTable(data, schema);
 var between1 = FusionCharts.DataStore.Operators.between('Sales', 500, 1000);
