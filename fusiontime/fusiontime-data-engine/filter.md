@@ -191,14 +191,3 @@ In the above code:
 The above query created a data table with 4 rows. The Sales data of United States satisfies the above applied query.
 
 THe details about the predefined filters is given below:
-
-
-
-
-
-
-
-
-
-
-

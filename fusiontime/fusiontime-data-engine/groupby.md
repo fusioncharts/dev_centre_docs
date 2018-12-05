@@ -103,17 +103,17 @@ List of predefined date/time format is given below:
 	</tr>
 	<tr>
 		<td>`Minute`</td>
-		<td>%b %e, %Y %H:%M</td>
+		<td>%b %d, %Y %H:%M</td>
 		<td>Jan 01, 2018 23:34</td>
 	</tr>
 	<tr>
 		<td>`Second`</td>
-		<td>%b %e, %Y %H:%M:%S</td>
+		<td>%b %d, %Y %H:%M:%S</td>
 		<td>Jan 01, 2018 23:34:26</td>
 	</tr>
 	<tr>
 		<td>`Millisecond`</td>
-		<td>%b %e, %Y %H:%M:%S:%L</td>
+		<td>%b %d, %Y %H:%M:%S:%L</td>
 		<td>Jan 01, 2018 23:34:26:123</td>
 	</tr>
 </table>

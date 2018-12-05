@@ -4,16 +4,21 @@ description: This article outlines the steps to add pivot.
 heading: Pivot
 ---
 
-**Pivot** is an operator which converts one tabular expression into another - more specifically, from row to column level. `Pivot` is an operator which converts one tabular expression into another - more specifically, from row to column level. The columns are converted to rows only if it is handled in a better way.
+**Pivot** is an operator which converts one tabular expression into another - more specifically, from row to column level.
 
-Example,
-In most of the data tables, **rows** are Records and **columns** are fields. Let's take a basic example of a data table shown below:
+Let's take a basic example of a data table shown below:
 
-Name | Age | Height | Weight
----|---|---|---
-Liza | 28 | 175 | 67
-David | 24 | 182 | 78
-Alex | 31 | 172 | 70
+OrderID | Category Name | Customer Country | Customer Continent | Total Purchase Amount
+---|---|---|---|---
+10248 | Beverages | France | Europe | 168
+10253 | Beverages | Brazil | South America | 704.8
+10518 | Beverages | Mexico | North America | 3952.5
+10250 | Condiments | Brazil | South America | 251.85
+10251 | Condiments | France | Europe | 336
+10262 | Condiments | USA | North America | 203.8
+10252 | Confections | Belgium | Europe | 2591.95
+10253 | Confections | Brazil | South America | 640
+10332 | Confections | Canada | North America | 121.4
 
 In the above table, each column represents a particular detail of persons. Selecting a particular column gives you that particular detail of every person. Here, column is a `dimension` with all the values of same unit.
 
@@ -135,17 +140,17 @@ List of predefined date/time format is given below:
 	</tr>
 	<tr>
 		<td>`Minute`</td>
-		<td>%b %e, %Y %H:%M</td>
+		<td>%b %d, %Y %H:%M</td>
 		<td>Jan 01, 2018 23:34</td>
 	</tr>
 	<tr>
 		<td>`Second`</td>
-		<td>%b %e, %Y %H:%M:%S</td>
+		<td>%b %d, %Y %H:%M:%S</td>
 		<td>Jan 01, 2018 23:34:26</td>
 	</tr>
 	<tr>
 		<td>`Millisecond`</td>
-		<td>%b %e, %Y %H:%M:%S:%L</td>
+		<td>%b %d, %Y %H:%M:%S:%L</td>
 		<td>Jan 01, 2018 23:34:26:123</td>
 	</tr>
 </table>
