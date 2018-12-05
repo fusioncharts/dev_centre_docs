@@ -27,7 +27,7 @@
                 repeat: {
                     unit: Month,
                     multiplier: 1
-                ,}
+                },
                 style: {
                     marker: {
                         fill: '#D0D6F4'
