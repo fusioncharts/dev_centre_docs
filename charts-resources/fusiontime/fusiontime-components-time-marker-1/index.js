@@ -22,7 +22,12 @@
             timemarker: [{
                 start: 'Mar-1980',
                 label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
-                timeFormat: "%b-%Y"
+                timeFormat: "%b-%Y",
+                style: {
+                    marker: {
+                        fill: '#D0D6F4'
+                    }
+                }
             }]
         },
     }
