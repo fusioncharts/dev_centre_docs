@@ -34,9 +34,9 @@ An array of strings is applicable when you want to provide different configurati
   }]
 
 ```
-Refer to the image below:
+Refer to the chart below:
 
-<img src="{% site.baseurl %}/images/fusiontime-component-y-axis.png" alt="Y-axis" width="700" height="420">
+{% embed_ftChart online-sales-multi-variate %}
 
 To configure the y-axis you can:
 
