@@ -206,7 +206,7 @@ The data structure to group the data is shown below:
 ```
 var groupQuery = groupBy(
 	[{
-		column: 'Order Date',
+		column: 'Order Date', // Column to which groupBy has been applied
 		timeUnit:FusionCharts.DataStore.DatetimeUnits.Day
 	}],
 	[{

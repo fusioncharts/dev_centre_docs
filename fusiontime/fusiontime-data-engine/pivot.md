@@ -6,46 +6,9 @@ heading: Pivot
 
 **Pivot** is an operator which converts one tabular expression into another - more specifically, from row to column level.
 
-Let's take a basic example of a data table shown below:
-
-OrderID | Category Name | Customer Country | Customer Continent | Total Purchase Amount
----|---|---|---|---
-10248 | Beverages | France | Europe | 168
-10253 | Beverages | Brazil | South America | 704.8
-10518 | Beverages | Mexico | North America | 3952.5
-10250 | Condiments | Brazil | South America | 251.85
-10251 | Condiments | France | Europe | 336
-10262 | Condiments | USA | North America | 203.8
-10252 | Confections | Belgium | Europe | 2591.95
-10253 | Confections | Brazil | South America | 640
-10332 | Confections | Canada | North America | 121.4
-
-In the above table, `groupBy` will be applied to the 
-
-each column represents a particular detail of persons. Selecting a particular column gives you that particular detail of every person. Here, column is a `dimension` with all the values of same unit.
-
-Now, let's take an example of a financial data showing **Monthly Sales and Profit data**.
-
-Item | Jan | Feb | Mar
----|---|---|---
-Sales | 4000 | 3100 | 5500
-Profit | 1500 | 900 | 2100
-
-The above data table has column showing time but with monetary values. The calculation using these columns may create conflicts
-
-Let's apply **Pivot** to the above table.
-
-Date | Sales | Profit
----|---|---
-Jan | 4000 | 1500
-Feb | 3100 | 900
-Mar | 5500 | 2100
-
-Now, in the above table date column has all dates and the others have monetary value. This is how Pivot works and is applied to the data table.
-
 Applying `Pivot` to a `DataTable` transforms the grouping of a particular column into multiple columns.
 
-The syntax to apply pivot to the `DataTable` in the DataStore is given below:
+The syntax to apply pivot to the `DataTable` is given below:
 
 ```
 FusionCharts.DataStore.Operators.pivot(groupConfigArr, pivotColumn, aggrConfigArr);
@@ -64,6 +27,8 @@ Pivot method takes three arguments which are:
 * Name of the Column on which you want to apply the pivot method
 
 * An array of the aggregation configurations
+
+
 
 ## Group by Configuration
 
@@ -237,3 +202,40 @@ Name of the column from the dataTable created using schema.
 * variance
 
 * stddev
+
+Now, lets apply `pivot` operation to the data table given below:
+
+OrderID | Category Name | Customer Country | Customer Continent | Total Purchase Amount
+---|---|---|---|---
+10248 | Beverages | France | Europe | 168
+10253 | Beverages | Brazil | South America | 704.8
+10518 | Beverages | Mexico | North America | 3952.5
+10250 | Condiments | Brazil | South America | 251.85
+10251 | Condiments | France | Europe | 336
+10262 | Condiments | USA | North America | 203.8
+10252 | Confections | Belgium | Europe | 2591.95
+10253 | Confections | Brazil | South America | 640
+10332 | Confections | Canada | North America | 121.4
+
+The data structure to apply `pivot` is shown below:
+
+```
+var pivotFn = pivot([
+    {
+    	column: 'Category Name',
+    }],
+    'Customer Continent',
+    [{
+        column: 'Total Purchase Amount',
+        operation: 'sum'
+    }
+])
+```
+
+The new data table after running the above code looks like:
+
+Category | Name	Europe | North America | South America
+---|---|---|---
+Beverages | 168 | 3952.5 | 704.8
+Condiments | 336 | 203.8 | 251.85
+Confections | 2591.95 | 121.4 | 640
