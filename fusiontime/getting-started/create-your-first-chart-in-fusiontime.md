@@ -6,7 +6,55 @@ heading: Create your First Chart
 
 FusionTime, like the name implies, is a product which is used to plot time-series data. FusionTime helps to evaluate patterns and trends in time-series data over a period of time. 
 
-In this article, we’ll create a simple time-series chart showcasing online sales of SuperStore in the US.
+In this article, you'll see how to install FusionTime and render your first time series chart.
+
+## Installation
+
+Installing FusionCharts automatically installs FusionTime and all the other dependencies. Install FusionCharts using any of the following steps:
+
+Install **FusionCharts** using any of the following steps:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='localfiles'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
+
+<div><strong>To install `FusionTime` via npm run the command below:</strong></div>
+<pre><code class="custom-hlc language-PowerShell">
+    $ npm install fusioncharts
+</code></pre>
+
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab localfiles-tab'>
+<div><strong>To install `FusionTime` follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+    </ol>
+</div>
+<div>The code is shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
+That completes the installation of **FusionTime**.
+
+## Create your first chart
+
+Let's create a simple time-series chart showcasing online sales of SuperStore in the US.
 
 The chart is shown below:
 
@@ -20,7 +68,7 @@ Data to the FusionTime needs to be fed from a [Datatable]({% site.baseurl %}/fus
 
 Now, let's check how to prepare the schema and the data of the `DataTable`. 
 
-## Create the `schema`
+### Create the `schema`
 
 The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`. The schema helps DataTable understand the columns in your data, the data type for each column and the input format in case of date. You've to mandatorily specify the schema for each DataTable for FusionTime to render it.
 
@@ -55,7 +103,7 @@ In the above code:
 
 Now that we have the schema ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
-## Create `data`
+### Create `data`
 
 In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
 
@@ -112,7 +160,7 @@ In the above code:
 
 We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
 
-## Create `index` file
+### Create `index` file
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index` file and copy the following code: 
 
