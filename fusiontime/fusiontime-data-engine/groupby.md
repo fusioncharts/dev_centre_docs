@@ -28,23 +28,21 @@ GroupBy method takes two arguments which are:
 
 In the first argument of the `groupBy` method, each group of configuration object can have the following attributes:
 
-#### Column
+#### `column`
 
 Name of the column from the dataTable created using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview).
 
-#### outputAs
+#### `outputAs`
 
 `outputAs` is an attribute used to rename the column on which `groupBy` has been applied. The renaming of the column reflects on the new dataTable created after `groupBy`.
 
 > If `outputAs` is not applied, the column name remains the same as the previous `DataTable`.
 
-The new column name becomes:
-
 ```
 [columnName-operation]
 ```
 
-#### timeUnit
+#### `timeUnit`
 
 This attribute is only applicable if you group on date/time. This attribute specifies how the date column should be grouped. For example, if you set `timeUnit` to **Month**, the grouping will be applied month wise. The **month** is one of the `DatetimeUnits` enum and not any random string.
 
@@ -69,7 +67,7 @@ column: 'OrderDate',
 timeUnit: FusionCharts.DataStore.DatetimeUnits.Month
 ```
 
-#### outputFormat
+#### `outputFormat`
 
 `outputFormat` attribute is used to set the format of the column being grouped. To set the date/time format of the chart, set the value of `outputFormat` attribute as per your requirement.
 
@@ -118,13 +116,13 @@ List of predefined date/time format is given below:
 	</tr>
 </table>
 
-#### startValue
+#### `startValue`
 
 `startValue` attribute specifies the starting point of the binning. If you don't apply this attribute while grouping, the lowest available value is used as the starting point.
 
 > `startValue` attribute is applicable only when you are applying grouping operation to date/time column.
 
-#### weekStartFrom
+#### `weekStartFrom`
 
 `weekStartFrom` attributes specifies the **weekday** from where you want to start the week at the time of grouping. This attribute is applicable only when **weekly binning** is applied at the time of grouping.
 
@@ -138,7 +136,7 @@ List of predefined date/time format is given below:
 * Friday
 * Saturday
 
-#### binSize
+#### `binSize`
 
 As the name suggests, this attribute sets the size of the bin. The default value of this attribute is `1`.
 
@@ -163,17 +161,17 @@ In the above code, `binSize` attribute has been set to **2**, which means every 
 
 In the second argument of the groupBy method, you can apply the following attributes to each group of configuration:
 
-#### Column
+#### `column`
 
 Name of the column from the dataTable created using schema.
 
-#### outputAs
+#### `outputAs`
 
 `outputAs` is an attribute which is used to rename the column, on which `groupBy` has been applied. The renaming of the column reflects in the new dataTable created after `groupBy`.
 
 > If the `outputAs` is not applied, the column name remains the same as the previous `DataTable`.
 
-#### operation
+#### `operation`
 
 `operation` is an attribute which applies the mathematical operation to the column on which it is applied. It accepts **string** value. The list of values accepted by this attribute are:
 
