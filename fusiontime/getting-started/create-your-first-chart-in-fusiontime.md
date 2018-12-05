@@ -49,7 +49,7 @@ In the above code:
 
 * The first object represents the first column in the `DataTable`. In the above sample **Country** is the name of the column.
 
-* The second object sets the **date/time** format for the chart. The name of the column has been set to **Time** and the date format has been set to `%-m/%-d/%Y`.
+* The second object sets the **date/time** [format]({% site.baseurl %}/fusiontime/api-reference/fusiontime-attributes#datetime-format-7) for the chart. The name of the column has been set to **Time** and the date format has been set to `%-m/%-d/%Y`.
 
 * The last object represents the third column named **Sales**, the values of which will map to the data plots.
 
@@ -239,4 +239,4 @@ In the above code:
 
 That's it! Your first chart using FusionTime is ready.
 
-Next, we will discuss on how to add [multiple plots]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart. 
+Next, we will discuss on how to add create a [multi-variate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.

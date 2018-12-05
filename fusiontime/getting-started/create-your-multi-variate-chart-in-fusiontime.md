@@ -4,9 +4,9 @@ description: This article outlines the steps to be executed for creating a multi
 heading: Create Multivariate Chart
 ---
 
-The variations among different related variables can be easily found out using FusionTime. Data table having more than one measure column can be used to do so. You just need to specify the order of the column measures in the `yAxis` object of FusionTime constructor, a stacked chart gets rendered one below the other, all having a common time axis.
+The variations among different related variables can be easily found out using FusionTime. Data table having more than one measure column can be used to do so. You just need to specify the order of the column measures in the [y-axis]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime) object of FusionTime constructor, a stacked chart gets rendered one below the other, all having a common time axis.
 
-In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple values (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same time axis (x-axis).
+In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple values (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis]({% site.baseurl %}/fusiontime/fusiontime-component/time-axis) (x-axis).
 
 The multivariate chart is shown below:
 
@@ -44,7 +44,7 @@ In the above code:
 
 * The first object creates the first column in the `DataTable`. In the above sample **Country** is the name of the column. 
 
-* The second object set the **date/time** format for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
+* The second object set the **date/time** [format]({% site.baseurl %}/fusiontime/api-reference/fusiontime-attributes#datetime-format-7) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
 
 * The next three are the three measures of the chart:
 
@@ -217,3 +217,5 @@ window.charInstance = new FusionCharts({
 </div>
 
 That's it! Your first multivariate chart is ready.
+
+Next, we will discuss on how to add create a [multiple plots]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.

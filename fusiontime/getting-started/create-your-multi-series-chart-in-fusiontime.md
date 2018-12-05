@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating chart u
 heading: Add Multiple Data Plots
 ---
 
-Previously, we have learned how to create a simple chart with one plot type. FusionTime allows you to visualize charts with multiple plots.  
+Previously, we have learned how to create a [simple chart]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime) with one plot type. FusionTime allows you to visualize charts with multiple plots.  
 
 In this article, we'll create our first chart with multiple plots which will compare online sales of SuperStore in the **US** and **India**. 
 
@@ -88,7 +88,7 @@ We are all set with our data to create the chart.
 
 ## Create the `index` file
 
-Creating a chart with multiple plots is very simple in FusionTime. You just needs to specify the particular dimensional column name in the `series` attribute within `yaxis` object. The unique list of the dimensional values of the column gets plotted on the canvas. To do this, create an `index` file and copy the following code: 
+Creating a chart with multiple plots is very simple in FusionTime. You just needs to specify the particular dimensional column name in the `series` attribute within [y-axis]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime) object. The unique list of the dimensional values of the column gets plotted on the canvas. To do this, create an `index` file and copy the following code: 
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
