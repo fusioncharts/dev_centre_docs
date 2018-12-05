@@ -15,5 +15,5 @@ Refer to the code given below:
 ```  
 let fusionDataStore = new FusionCharts.DataStore();
 let fusionTable = fusionDataStore.createDataTable(data, schema);
-select(['Country', 'Origin']);
+let selectedData = fusionTable.query(FusionCharts.DataStore.Operators.select(['Country', 'Origin']));
 ```
