@@ -16,19 +16,19 @@ To set the custom date and time follow the steps below:
 
 * Click on the custom range selector.
 
-* A calendar widget appears, select the date from the widget, or type in the text box.
+* A calendar widget appears, select the date from the widget, or type in the input box.
 
-* After setting the date, set the time from the drop-down boxes. The option to set the time only appears if the data is shown in terms of `hours`, `minutes`, `seconds` or `milliseconds`.
+* After setting the date, set the time from the drop-down boxes. This option appears only if the atomicity of data is at time level.
 
 * Click `Apply` to view the changes. 
 
-A multi-series chart with custom range selector is shown below:
+A chart with custom range selector is shown below:
 
 {% embed_ftChart online-sales-multi-series %}
 
 ## Show/Hide Custom Range Selector
 
-Custom Range Selector is visible in every chart, by default. However, you can turn it off if you want, by setting the value of the `enabled` attribute within the `customRangeSelector` extension of the `extensions` object to `0`.
+By default, the Custom Range Selector is visible in every chart. However, you can turn it off if you want, by setting the value of the `enabled` attribute within the `customRangeSelector` of the `extensions` object to `0`.
 
 Refer to the code below:
 
@@ -40,10 +40,7 @@ Refer to the code below:
     height: 650,
     dataSource: {
         data: fusionTable,
-        chart: {},
-        caption: {
-            text: 'Online Sales of a SuperStore in India & the US'
-        },
+        ...
         // Show/Hide Custom Range Selector
         "extensions": {
 			"customRangeSelector": {
