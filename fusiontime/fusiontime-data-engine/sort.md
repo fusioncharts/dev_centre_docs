@@ -86,7 +86,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Comparator function
 
-When you use a JavaScript comparator function, it defines the sort order. It is added when you want to apply complex sorting.
+You can use the JavaScript comparator function to sort the data.
 
 Let's assume you want to sort the above data table by the total profit in descending order, i.e., the highest sale will appear at the top of the table. The total profit is calculated using `(Sales * Quantity) - Shipping Cost` formula.
 

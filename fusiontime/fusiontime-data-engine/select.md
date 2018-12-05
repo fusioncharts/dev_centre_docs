@@ -27,8 +27,19 @@ In the above table, `select` operation is applied as shown below:
 ```  
 let fusionDataStore = new FusionCharts.DataStore();
 let fusionTable = fusionDataStore.createDataTable(data, schema);
-let selectedData = fusionTable.query(FusionCharts.DataStore.Operators.select(['Country', 'Origin']));
+let selectedData = fusionTable.query(FusionCharts.DataStore.Operators.select(['Country', 'Sales']));
 ```
 
 The new data table after applying `select` operation is shown below:
 
+Country | Sales
+---|---
+Australia | 59.724
+United States | 125.248 
+Australia | 6.318
+Australia | 110.808 
+United States | 40.08 
+India | 59.25
+United States | 5.94 
+India | 79.38
+India | 342.51

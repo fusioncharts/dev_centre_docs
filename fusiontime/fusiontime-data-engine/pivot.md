@@ -28,8 +28,6 @@ Pivot method takes three arguments which are:
 
 * An array of the aggregation configurations
 
-
-
 ## Group by Configuration
 
 This argument is the same as of [groupBy]({% site.baseurl %}/fusiontime/fusiontime-data-engine/groupby) method. It is used to arrange identical data into groups of a table. In the first argument, each group of configuration object can have the following attributes:
