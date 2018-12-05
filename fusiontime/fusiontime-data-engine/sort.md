@@ -34,18 +34,7 @@ var sortQuery = sort([
 ]);
 ```
 
-**Comparator function** - When you use a JavaScript comparator function, it defines the sort order.
-
-Refer to the code sample which shows how to apply ascending or decending sorting.
-
-```
-var sortQuery = sort([
-	{column: 'Horsepower'}, //by default is ascending
-	{column: 'Mile_Per_Gallon', order: 'desc'}	
-]);
-```
-
-**Comparator function** is added when you want to apply complex sorting.
+**Comparator function** - When you use a JavaScript comparator function, it defines the sort order. It is added when you want to apply complex sorting.
 
 Let's take a basic example of a data table shown below:
 
