@@ -8,7 +8,7 @@ The Time Axis in FusionTime is the x-axis which represents time. It intelligentl
 
 <img src="{% site.baseurl %}/images/fusiontime-component-time-axis.png" alt="Time Axis" width="700" height="420">
 
-The time axis represents the following:
+The time axis contains the following:
 
 * A point on the calendar represents the time span. For example - January 30, 2012 represents a day, January, 2012 represents a month annd 2012 represents a year. 
 
@@ -27,3 +27,20 @@ A sample chart is shown below:
 {% embed_ftChart online-sales-single-series %}
 
 In the above chart, try and change the time period and see how the time axis adjusts automatically to respond to the change occured. For example - try and change the date from the [custom range selector]({% site.baseurl %}/fusiontime/fusiontime-component/custom-range-selector).
+
+## Multiple Time columns
+
+Let's suppose that you have a tabular data which has multiple date/time columns. For example - Order Date and Shipping Date. The time axis of FusionTime can only represent one date/time column on the timescale. In such a scenario, specify which date/time column you want the time axis to represent. To do so, refer to the code below:
+
+```
+xAxis {
+	"plot": "Order Date"
+}
+
+```
+
+In th above code:
+
+* Create the `xAxis` object.
+* Set the column name which you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date`
+
