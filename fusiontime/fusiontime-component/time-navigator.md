@@ -22,7 +22,7 @@ The major features of **Time Navigator** include the following:
 
 The time navigator is shown in the image below:
 
-<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png" width="639" height="393">
+<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png">
 
 In this article, we will discuss about the different interactions of the time navigator and how to hide the time navigator.
 
@@ -30,7 +30,7 @@ In this article, we will discuss about the different interactions of the time na
 
 You can use the handles on either side to select a longer or shorter period of time. The data plot in the canvas zooms in/out respectively. This behavior is also applicable when you zoom in/out from the chart canvas, i.e., with the interaction in the chart canvas the time navigator gets updated accordingly. Refer to the image below: 
 
-![Zoom using Time navigator]({% site.baseurl %}/gif/fusiontime-nav-zoom.gif)
+<img src="{% site.baseurl %}/gif/fusiontime-nav-zoom.gif" width="639" height="393">
 
 ## Pan using the navigator
 
