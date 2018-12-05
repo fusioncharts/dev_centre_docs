@@ -40,9 +40,7 @@ Creates data table in the data store.
 
 ### `appendRows([[],[]], id)`
 
-Append rows in the data store. `appendRows` keeps on appending rows to the first data table of the DataStore.
-
-> To append rows to a specific data table, specify the `id` of the table while calling the method. 
+Append rows in the data store. To append rows to a specific data table, specify the `id` of the table while calling the method. If the `id` of the `DataTable` is not specified then the  method `appendRows` keeps on appending rows to the first `DataTable` of the `DataStore`.  
 
 ### `getDataTable(id)`
 
@@ -121,7 +119,7 @@ Adds one or more columns to the data table.
 
 ### `query(queryOperation)`
 
-`query` method perform operations on the DataTable. It returns a new DataTable after performing an operation.
+`query` method perform data operations (like filter, sort, pivot, etc.) on the `DataTable`. It returns a new `DataTable` after performing an operation.
 
 ### `getDataStore()`
 
@@ -149,26 +147,26 @@ Disposes the table.
 
 ## Date Utils
 
-### `duration(Unit, number)`
+### `fusioncharts.utils.duration(Unit, number)`
 
 Represents the time duration. Example, `2 hours`,  `3 months`, etc
 
 * duration(Units.Hour, 2)
 * duration(Units.Month, 3)
 
-### `before(duration, [date], [enableUTC], [weekStartFrom])`
+### `fusioncharts.utils.before(duration, [date], [enableUTC], [weekStartFrom])`
 
 Returns a date offset(negative) from the specified duration.
 
 If `date` argument is not provided, current date is considered and returns the timestamp of the date.
 
-### `after(duration, [date], [enableUTC], [weekStartFrom])`
+### `fusioncharts.utils.after(duration, [date], [enableUTC], [weekStartFrom])`
 
 Returns a date offset(positive) from the specified duration.
 
 If `date` argument is not provided, current date is considered and returns timestamp of the date.
 
-### `parseDate('date in string representation', 'format', [enableUTC])`
+### `fusioncharts.utils.parseDate('date in string representation', 'format', [enableUTC])`
 
 Converts the string representation to timestamp.
 
@@ -178,7 +176,7 @@ Example,
 let financialYearEnd = parseDate('2018-3-31', '%Y-%m-%d');
 ```
 
-### `formatDate(timestamp, 'format', [enableUTC])`
+### `fusioncharts.utils.formatDate(timestamp, 'format', [enableUTC])`
 
 Converts the timestamp to an appropriate string representation.
 
