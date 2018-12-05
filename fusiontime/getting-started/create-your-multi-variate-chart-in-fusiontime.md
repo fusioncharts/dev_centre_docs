@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating a multi
 heading: Create Multivariate Chart
 ---
 
-The variations among different related variables can be easily found out using FusionTime. Data table having more than one measure column can be used to do so. You just need to specify the order of the column measures in the [y-axis]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime) object of FusionTime constructor, a stacked chart gets rendered one below the other, all having a common time axis.
+The variations among different related variables can be easily found out using FusionTime.DataTablehaving more than one measure column can be used to do so. You just need to specify the order of the column measures in the [y-axis]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime) object of FusionTime constructor, a stacked chart gets rendered one below the other, all having a common time axis.
 
 In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple values (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis]({% site.baseurl %}/fusiontime/fusiontime-component/time-axis) (x-axis).
 

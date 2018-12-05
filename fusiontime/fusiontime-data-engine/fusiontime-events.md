@@ -12,7 +12,7 @@ In this article, we'll discuss the events that you can use to trigger actions fo
 
 ### `itemsAdded`
 
-This event is triggered when new row(s) are added to a data table in the DataStore.
+This event is triggered when new row(s) are added to aDataTablein the DataStore.
 
 > The sender argument contains the newly added rows, and the table `ID` of the `DataTable` in which the rows were added.
 

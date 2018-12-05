@@ -50,7 +50,7 @@ var dataT= dataStore.getDataTable();
 
 In the above code:
 
-* Store the data table in a variable.
+* Store theDataTablein a variable.
 
 * Apply the column name on which the grouping will take place.
 

@@ -6,7 +6,7 @@ heading: Join Operations using Pipe
 
 **Pipe** is an operation which lets you run two or more data operations in a sequence. Instead of applying multiple filters one by one to a `DataTable` which creates multiple DataTable(s), you can combine them in one single step using **pipe** and apply to the **DataTable**. This creates only one DataTable.
 
-Let's take a basic example of a data table shown below:
+Let's take a basic example of aDataTableshown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -44,7 +44,7 @@ filter2 = FusionCharts.DataStore.Operators.greater('Quantity', 3);
 pipeDataTable = fusionTable.query(FusionCharts.DataStore.Operators.pipe(filter1, filter2));
 ```
 
-The new data table after applying `pipe` operation is shown below:
+The newDataTableafter applying `pipe` operation is shown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 

@@ -17,7 +17,7 @@ The predefined filters are:
 * LessEquals
 * Between
 
-In this article, we will apply all the above filter operations and check the result based on the data table shown below:
+In this article, we will apply all the above filter operations and check the result based on theDataTableshown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -47,7 +47,7 @@ var filter1 = FusionCharts.DataStore.Operators.equals('Country', 'United States'
 var dataTable = dataT.query(filter1);
 ```
 
-The new data table after running the above code looks like:
+The newDataTableafter running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -71,7 +71,7 @@ var filter1 = FusionCharts.DataStore.Operators.greater('Sales', 100);
 var dataTable = dataT.query(filter1);
 ```
 
-The new data table after running the above code looks like:
+The newDataTableafter running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -95,7 +95,7 @@ var filter1 = FusionCharts.DataStore.Operators.greaterEquals('Quantity', 3);
 var dataTable = dataT.query(filter1);
 ```
 
-The new data table after running the above code looks like:
+The newDataTableafter running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -124,7 +124,7 @@ var filter1 = FusionCharts.DataStore.Operators.less('Sales', 100);
 var dataTable = dataT.query(filter1);
 ```
 
-The new data table after running the above code looks like:
+The newDataTableafter running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -151,7 +151,7 @@ var filter1 = FusionCharts.DataStore.Operators.lessEquals('Quantity', 3);
 var dataTable = dataT.query(filter1);
 ```
 
-The new data table after running the above code looks like:
+The newDataTableafter running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -177,7 +177,7 @@ var filter1 = FusionCharts.DataStore.Operators.between('Sales', 50, 100);
 var dataTable=dataT.query(filter1);
 ```
 
-The new data table after running the above code looks like:
+The newDataTableafter running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -191,7 +191,7 @@ Other than the above predefined filters, FusionTime gives an option to filter th
 
 Now, let's apply a conditional filter to the root table where all **United States** data and also data with **Sales** greater than **100** and **Shipping Cost** less than **10** will be selected.
 
-To code to apply this filter to the above data table is given below:
+To code to apply this filter to the aboveDataTableis given below:
 
 ```
 var dataStore = new FusionCharts.DataStore();
@@ -205,7 +205,7 @@ var filterQuery = FusionCharts.DataStore.Operators.filter((row, columns) => {
 var filteredData = dataTable.query(filterQuery);
 ```
 
-The new data table after running the above code looks like:
+The newDataTableafter running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 

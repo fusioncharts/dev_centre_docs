@@ -16,7 +16,7 @@ In this article we will discuss about the types of sorting and how to apply them
 
 In FusionTime, you can sort data in three ways - in the ascending order, in the descending order, or using a comparator function.
 
-In this article, we will apply all the types of sort and check the result based on the data table shown below:
+In this article, we will apply all the types of sort and check the result based on theDataTableshown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -44,7 +44,7 @@ var sortQuery = sort([
 var sortedData = dataTable.query(customSortQuery);
 ```
 
-The new data table after setting the `Sales` column in ascending order is shown below:
+The newDataTableafter setting the `Sales` column in ascending order is shown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|---  
@@ -72,7 +72,7 @@ var sortQuery = sort([
 var sortedData = dataTable.query(customSortQuery);
 ```
 
-The new data table after setting the `Sales` column in descending order is shown below:
+The newDataTableafter setting the `Sales` column in descending order is shown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|---  
@@ -90,9 +90,9 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 You can use the JavaScript comparator function to sort the data.
 
-Let's assume you want to sort the above data table by the total profit in descending order, i.e., the highest sale will appear at the top of the table. The total profit is calculated using `(Sales * Quantity) - Shipping Cost` formula.
+Let's assume you want to sort the aboveDataTableby the total profit in descending order, i.e., the highest sale will appear at the top of the table. The total profit is calculated using `(Sales * Quantity) - Shipping Cost` formula.
 
-The code to apply this sorting to the above data table is given below:
+The code to apply this sorting to the aboveDataTableis given below:
 
 ```
 var customSortQuery = FusionCharts.DataStore.Operators.sort((a, b) => {
@@ -102,7 +102,7 @@ var customSortQuery = FusionCharts.DataStore.Operators.sort((a, b) => {
 var sortedData = dataTable.query(customSortQuery);
 ```
 
-The new data table looks like as shown below:
+The newDataTablelooks like as shown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|---  
