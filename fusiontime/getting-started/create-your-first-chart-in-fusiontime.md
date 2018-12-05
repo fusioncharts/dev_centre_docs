@@ -52,7 +52,7 @@ That completes the installation of **FusionTime**.
 
 ## Create your first chart
 
-Now that you have installed, it's time to create your first time series chart using FusionTime. To start with we will create a simple time-series chart showcasing online sales of a SuperStore in the US. The chart will look like as shownj in the image below:
+Now that you have installed, it's time to create your first time series chart using FusionTime. To start with we will create a simple time-series chart showcasing online sales of a SuperStore in the US. The chart will look like as shown in the image below:
 
 {% embed_ftChart online-sales-single-series %}
 
@@ -279,4 +279,4 @@ In the above code:
 
 That's it! Your first chart using FusionTime is ready.
 
-Next, we will discuss on how to add create a [multi-variate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.
+Next, we will discuss on how to add create a [multivariate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.

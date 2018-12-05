@@ -4,13 +4,11 @@ description: This article outlines the steps to be executed for creating a multi
 heading: Create Multivariate Chart
 ---
 
-The variations among different related variables can be easily found out using FusionTime.DataTablehaving more than one measure column can be used to do so. You just need to specify the order of the column measures in the [y-axis]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime) object of FusionTime constructor, a stacked chart gets rendered one below the other, all having a common time axis.
+In FusionTime, you can create a chart with multiple canvases showing different measures in each canvas. 
 
-In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple values (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis]({% site.baseurl %}/fusiontime/fusiontime-component/time-axis) (x-axis).
+In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple columns with measures (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis]({% site.baseurl %}/fusiontime/fusiontime-component/time-axis) (x-axis).
 
-> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
-
-The multivariate chart is shown below:
+The multivariate chart will look like as shown below:
 
 {% embed_ftChart online-sales-multi-variate %}
 
@@ -110,7 +108,6 @@ let data = [
     ]
 ]
 ```
-
 In the above code:
 
 * `data` is the variable in which the data array is saved. 
