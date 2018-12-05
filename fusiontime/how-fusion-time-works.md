@@ -26,9 +26,7 @@ The above illustration is a flow diagram which defines the following:
 
 * Source data transfered to the browser in JSON/2D array format from the data source.
 
-* The data is then fed in the `DataStore`. To identify the data you need schema and data which we will discuss later.
-
-* The JSON/2D array format of source data is then converted into the root `DataTable` which is stored in the `DataStore`. 
+* Create a `DataStore` and load your data in a `DataTable`.
 
 * The root `DataTable` is then fed to the chart renderer along with chart configurations to render the chart. 
 
