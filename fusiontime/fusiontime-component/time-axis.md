@@ -26,4 +26,4 @@ A sample chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-In the above chart, try and change the time period and see how the time axis adjusts automatically to respond to the change occured. For example - try and change the date from the custom range selector.
+In the above chart, try and change the time period and see how the time axis adjusts automatically to respond to the change occured. For example - try and change the date from the [custom range selector]({% site.baseurl %}/fusiontime/fusiontime-component/custom-range-selector).
