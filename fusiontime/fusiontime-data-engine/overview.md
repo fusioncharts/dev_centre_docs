@@ -4,7 +4,7 @@ description: This article outlines the DataStore and DataTable.
 heading: Overview
 ---
 
-FusionTime is used to plot discrete time data. It uses columns and rows as a `DataTable` to feed data to the chart. To create a chart using FusionTime you need to provide data as a `DataTable`. The source data that you provide is stored as the master `DataTable` in the `DataStore`. In this article, we will discuss the basics of both `DataStore` and `DataTable`. 
+FusionTime is used to plot time based data. It uses columns and rows as a `DataTable` to feed data to the chart. To create a chart using FusionTime you need to provide data as a `DataTable`. The source data that you provide is stored as the root `DataTable` in the `DataStore`. In this article, we will discuss the basics of both `DataStore` and `DataTable`. 
 
 ## What is `DataStore`
 
