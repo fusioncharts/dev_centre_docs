@@ -28,7 +28,7 @@ Pivot method takes three arguments which are:
 
 ### Groupby Configuration
 
-In the first argument of the `groupBy` method, each group of configuration object can have the following attributes:
+In the first argument of the `pivot` method, each group of configuration object can have the following attributes:
 
 #### `column`
 
@@ -36,7 +36,7 @@ Name of the column from the data table created using [schema]({% site.baseurl %}
 
 #### `outputAs`
 
-`outputAs` is an attribute used to rename the column on which `groupBy` has been applied. The renaming of the column reflects on the new dataTable created after `groupBy`.
+`outputAs` is an attribute used to rename the column on which `pivot` has been applied. The renaming of the column reflects on the new dataTable created after `pivot`.
 
 > If `outputAs` is not applied, the column name remains the same as the previous `DataTable`.
 
@@ -191,9 +191,11 @@ Name of the column from the dataTable created using schema.
 
 #### `outputAs`
 
-`outputAs` is an attribute which is used to rename the column, on which `groupBy` has been applied. The renaming of the column reflects in the new dataTable created after `groupBy`.
+`outputAs` is an attribute which is used to rename the column, on which `pivot` has been applied. The renaming of the column reflects in the new DataTable created after `pivot`.
 
-> If the `outputAs` is not applied, the column name will be **previous column name-operation**.
+> If the `outputAs` is applied, the column name will be **category name-outputAs value**.
+
+> If the `outputAs` is not applied, the column name will be **category name-previous column name-operation**.
 
 Now, lets apply `pivot` operation to the data table given below:
 
