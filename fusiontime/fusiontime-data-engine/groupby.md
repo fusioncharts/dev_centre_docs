@@ -179,7 +179,7 @@ Name of the column from the data table created using [schema]({% site.baseurl %}
 
 `outputAs` is an attribute which is used to rename the column, on which `groupBy` has been applied. The renaming of the column reflects in the new dataTable created after `groupBy`.
 
-> If the `outputAs` is not applied, the column name will be previous column name-operation.
+> If the `outputAs` is not applied, the column name will be **previous column name-operation**.
 
 Now, lets apply `groupBy` operation to the data table given below:
 
