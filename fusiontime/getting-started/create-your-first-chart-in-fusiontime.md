@@ -12,7 +12,7 @@ The chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-Data to the FusionTime needs to be fed from a `DataTable` which records data in rows and columns. To create a `DataTable` first you need to create a `DataStore` and load the data into the `DataTable` in JSON or 2D array format. To feed data to FusionTime, you need to provide the following:
+Data to the FusionTime needs to be fed from a [Datatable]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To feed data to FusionTime, you need to provide the following:
 
 * The `schema` which defines the properties of the columns.  
 

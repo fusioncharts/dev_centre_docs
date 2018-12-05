@@ -380,3 +380,52 @@ This article contains the list of attributes of FusionTime. The attributes have 
 		<td>If an image is displayed as the chart dataInvalidMessage, this attribute allows to set a custom vertical alignment for the image. <strong>Default Value:</strong> baseChartMessageImageHAlign</td>
 	</tr>
 </table>
+
+## Date/time Format
+
+`outputFormat` attribute is used to set the format of the column being grouped. To set the date/time format of the chart, set the value of `outputFormat` attribute as per your requirement. 
+
+List of predefined date/time format is given below:
+
+<table>
+	<tr>
+		<th>DateTimeUnits</th>
+		<th>Format</th>
+		<th>Output Example</th>
+	</tr>
+	<tr>
+		<td>`Year`</td>
+		<td>%Y</td>
+		<td>2018</td>
+	</tr>
+	<tr>
+		<td>`Month`</td>
+		<td>%b %Y</td>
+		<td>Jan 2018</td>
+	</tr>
+	<tr>
+		<td>`Day`</td>
+		<td>%b %d %Y</td>
+		<td>Jan 01 2018</td>
+	</tr>
+	<tr>
+		<td>`Hour`</td>
+		<td>%b %d %Y %H hrs</td>
+		<td>Jan 01 2018 23 hrs</td>
+	</tr>
+	<tr>
+		<td>`Minute`</td>
+		<td>%b %e, %Y %H:%M</td>
+		<td>Jan 01, 2018 23:34</td>
+	</tr>
+	<tr>
+		<td>`Second`</td>
+		<td>%b %e, %Y %H:%M:%S</td>
+		<td>Jan 01, 2018 23:34:26</td>
+	</tr>
+	<tr>
+		<td>`Millisecond`</td>
+		<td>%b %e, %Y %H:%M:%S:%L</td>
+		<td>Jan 01, 2018 23:34:26:123</td>
+	</tr>
+</table>
