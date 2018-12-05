@@ -8,7 +8,7 @@ In FusionTime, the `yAxis` object can be specified within the `dataSource` objec
 
 It will accept inputs in two forms -  an array of `yAxis` objects or an array of Strings.
 
-An array of objects is applicable when you want to provide different configurations for each measure being plotted.
+An array of objects is applicable when you want to provide different configurations in a single canvas. Refer to the code below:
 
 ```
 yAxis: [{
@@ -23,7 +23,7 @@ yAxis: [{
 }],
 ```
 
-An array of strings is applicable when there are multiple measures to be plotted on separate canvases without any additional configuration.
+An array of strings is applicable when you want to provide different configurations for multiple canvases. Refer to the code below:
 
 <<example code>>
 
