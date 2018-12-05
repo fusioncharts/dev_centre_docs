@@ -44,7 +44,7 @@ Append rows in the data store. To append rows to a specific data table, specify 
 
 ### `getDataTable(id)`
 
-Fetches theDataTablefrom the DataStore to render the chart.
+Fetches the DataTable from the DataStore to render the chart.
 
 > To render the chart using specific data table, specify the `id` of the table while calling the method. 
 

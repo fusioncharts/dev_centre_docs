@@ -30,7 +30,7 @@ In the first argument of the `groupBy` method, each group of configuration objec
 
 #### `column`
 
-Name of the column from theDataTablecreated using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview).
+Name of the column from the DataTable created using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview).
 
 #### `outputAs`
 
@@ -181,7 +181,7 @@ Name of the column from theDataTablecreated using [schema]({% site.baseurl %}/fu
 
 > If the `outputAs` is not applied, the column name will be **previous column name-operation**.
 
-Now, lets apply `groupBy` operation to theDataTablegiven below:
+Now, lets apply `groupBy` operation to the DataTable given below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -211,7 +211,7 @@ var groupQuery = groupBy(
 );
 ```
 
-The newDataTableafter running the above code looks like:
+The new DataTable after running the above code looks like:
 
 Order Date | Total_Sales
 ---|---
