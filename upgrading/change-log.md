@@ -9,7 +9,7 @@ heading: Version 3.13.x
 
 <h4 class="sub-heading">New Feature</h4>
 
-* 
+* The `FusionCharts.getVersion('all')` api is introduced to check the version of all the products and the FusionCharts Suite. From now onward, the FusionCharts Suite package will contain FusionCharts, FusionWidgets, PowerCharts, FusionMaps and FusionTime. Whenever a new version of these products is released the version of the FusionCharts Suite XT will change accordingly.    
 
 <h4>Improvements</h4>
 
