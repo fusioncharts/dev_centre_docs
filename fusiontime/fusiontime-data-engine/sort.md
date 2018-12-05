@@ -16,7 +16,7 @@ In this article we will discuss about the types of sorting and how to apply them
 
 In FusionTime, you can sort data in three ways - in the ascending order, in the descending order, or using a comparator function.
 
-In this article, we will apply all the above filter operations and check the result based on the data table shown below:
+In this article, we will apply all the types of sort and check the result based on the data table shown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -30,11 +30,9 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 1/26/2011 | India | 79.38 | 3 | 13.82 
 1/26/2011 | India | 342.51 | 7 | 13.22
 
-Now, let's sort the above data table in the above mentioned orders.
-
 ### Ascending Order
 
-When you sort one or more columns in the data table in ascending order, the data will be arranged from the lowest to the highest values. FusionTime by default sorts data in ascending order. 
+When you sort one or more columns in the `DataTable` in ascending order, the data will be arranged from the lowest to the highest values. FusionTime by default sorts data in ascending order. 
 
 The code to sort the above table with respect to the `Sales` column in ascending order is given below:
 
@@ -42,6 +40,8 @@ The code to sort the above table with respect to the `Sales` column in ascending
 var sortQuery = sort([
 	{column: 'Sales', order: 'asc'}	
 ]);
+
+var sortedData = dataTable.query(customSortQuery);
 ```
 
 The new data table after setting the `Sales` column in ascending order is shown below:
@@ -60,7 +60,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Descending Order
 
-When you sort one or more columns in the data table in descending order, the data will be arranged from the highest to the lowest values.
+When you sort one or more columns in the `DataTable` in descending order, the data will be arranged from the highest to the lowest values.
 
 The code to sort the above table with respect to the `Sales` column in descending order is given below:		
 
@@ -68,6 +68,8 @@ The code to sort the above table with respect to the `Sales` column in descendin
 var sortQuery = sort([
 	{column: 'Sales', order: 'desc'}	
 ]);
+
+var sortedData = dataTable.query(customSortQuery);
 ```
 
 The new data table after setting the `Sales` column in descending order is shown below:
@@ -90,12 +92,9 @@ You can use the JavaScript comparator function to sort the data.
 
 Let's assume you want to sort the above data table by the total profit in descending order, i.e., the highest sale will appear at the top of the table. The total profit is calculated using `(Sales * Quantity) - Shipping Cost` formula.
 
-To code to apply this sorting to the above data table is given below:
+The code to apply this sorting to the above data table is given below:
 
 ```
-var dataStore = new FusionCharts.DataStore();
-var dataTable = dataStore.createDataTable(data, schema);
-
 var customSortQuery = FusionCharts.DataStore.Operators.sort((a, b) => {
   return ((b[2]*b[3]) - b[4]) - ((a[2]*a[3]) - a[4]);
 }); // 0 based index of Sales, Quantity & Shipping cost are 2,3,4 respectively
