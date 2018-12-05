@@ -4,7 +4,7 @@ description: This article outlines the steps to add pivot.
 heading: Pivot
 ---
 
-`Pivot` is an operator which converts one tabular expression into another - more specifically, from row to column level. `Pivot` is an operator which converts one tabular expression into another - more specifically, from row to column level. The columns are converted to rows only if it is handled in a better way.
+**Pivot** is an operator which converts one tabular expression into another - more specifically, from row to column level. `Pivot` is an operator which converts one tabular expression into another - more specifically, from row to column level. The columns are converted to rows only if it is handled in a better way.
 
 Example,
 In most of the data tables, **rows** are Records and **columns** are fields. Let's take a basic example of a data table shown below:
