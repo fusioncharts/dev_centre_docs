@@ -4,15 +4,21 @@ description: This article defines the reference line.
 heading: Reference Line
 ---
 
-A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), which indicates a specific value. It can help you to quickly compare a particular data value against a line mapped to a fixed value. 
+A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), which indicates a specific value. It can help you quickly compare any data value against a fixed value represented by a line. For multivariate charts, each chart canvas can have it's own reference line. 
 
 <img src="{% site.baseurl %}/images/fusiontime-component-reference-line.png" alt="Reference Line" width="700" height="420">
 
-When mapped to the y-axis, a reference line is a horizontal line that corresponds to a particular value on the axis. It has a label, which is displayed as text right below the line when the viewer hovers the mouse pointer over the line. 
+The salient features of the reference line:
+
+* A label which is by default displayed as text below the line, when you hover on the knob of the reference line.
+
+* A value which is by default displayed on the left side of the reference line on hover. 
+
+A chanrt with reference line is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line %}
 
-In the example given above, a reference line appears, parallel to the time axis. Notice that the label displayed at the beginning of the line along the Y-axis shows the value of the reference (**Daily Target** for the above chart).
+In the example given above, a reference line appears, parallel to the time axis. When you hover on the reference line the value appears at the left end on the reference line and the label appears on the right end of the reference line.
 
 ## Configure the Reference Line
 
