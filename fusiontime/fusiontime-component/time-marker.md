@@ -39,8 +39,6 @@ A sample chart with a time marker is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-1 %}
 
-{% embed_ftChart fusiontime-components-time-marker-2 %}
-
 To create repeatable time instance markers follw the stpes below:
 
 * Set the above attributes and the specify the following attribute:
@@ -52,10 +50,9 @@ To create repeatable time instance markers follw the stpes below:
         * Use the `multiplier` attribute to define the multiplier of the time unit. By default, this value is `1`.
 Refer to the code below:
 
-```
-
 * Use the `end` attribute to define the end time for the marker. Note that if you set the end of the date/time, then the marker will be presented as a band. If you omit it instead, the marker will be represented as a line.
 
+```
 xAxis: {
     columnname: 'Time',
     timemarker: [{
@@ -67,11 +64,10 @@ xAxis: {
         multiplier: 1
     }
 },
-
 ```
 The sample chart with repeated time instance markers is shown below:
 
-<<LIVE CHART>>
+{% embed_ftChart fusiontime-components-time-marker-2 %}
 
 ## Time span marker 
 
