@@ -127,7 +127,11 @@ In the above code:
 
     * **Shipping cost** of the product
 
-We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
+We are all set with our data to create the chart.
+
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
+
+Now, let's create the `.html` file to render the above chart.
 
 ## Create `index` file
 
@@ -136,7 +140,7 @@ Once the schema and data files are ready it is time to create the `DataTable` an
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='local'>Local</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 

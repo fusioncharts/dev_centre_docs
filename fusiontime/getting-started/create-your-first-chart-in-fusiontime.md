@@ -10,8 +10,6 @@ In this article, you'll see how to install FusionTime and render your first time
 
 ## Installation
 
-Installing FusionTime automatically installs FusionTime and all the other dependencies. Install FusionTime using any of the following steps:
-
 Install **FusionTime** using any of the following steps:
 
 <div class="code-wrapper">
@@ -55,8 +53,6 @@ That completes the installation of **FusionTime**.
 ## Create your first chart
 
 Let's create a simple time-series chart showcasing online sales of SuperStore in the US.
-
-> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
 
 The chart is shown below:
 
@@ -152,7 +148,11 @@ In the above code:
     * Time according to the format
     * Total Sales amount
 
-We are all set with our data to create the chart. Now, let's create the `.html` file to render the above chart.
+We are all set with our data to create the chart.
+
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
+
+Now, let's create the `.html` file to render the above chart.
 
 ### Create `index` file
 
@@ -161,7 +161,7 @@ Once the schema and data files are ready it is time to create the `DataTable` an
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='local'>Local</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 

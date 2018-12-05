@@ -88,6 +88,8 @@ In the above code:
 
 We are all set with our data to create the chart. 
 
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
+
 ## Create the `index` file
 
 Creating a chart with multiple plots is very simple in FusionTime. You just needs to specify the particular dimensional column name in the `series` attribute within [y-axis]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime) object. The unique list of the dimensional values of the column gets plotted on the canvas. To do this, create an `index` file and copy the following code: 
@@ -95,7 +97,7 @@ Creating a chart with multiple plots is very simple in FusionTime. You just need
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='local'>Local</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
