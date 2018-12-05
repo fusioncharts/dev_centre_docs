@@ -4,19 +4,19 @@ description: This article defines the time axis.
 heading: Time Axis
 ---
 
-The Time Axis in FusionTime is the x-axis which represents time. It intelligently scales the x-axis depending on the number of plots displayed in the active window. 
+The x-axis of charts in FusionTime handles time based data and is known as the Time Axis. Based on the atomicity of the data and the active window (of the time navigator) the time axis intelligently creates a timescale to display the chart data. 
 
 <img src="{% site.baseurl %}/images/fusiontime-component-time-axis.png" alt="Time Axis" width="700" height="420">
 
-The time axis contains the following:
+The salient  features of the time axis are:
 
-* A point on the calendar represents the time span. For example - January 30, 2012 represents a day, January, 2012 represents a month annd 2012 represents a year. 
+* Intelligently creates a timescale to represent the chart data. 
 
-* A point on the clock represents the time instant. For example - 10.15 AM, 22.15hrs, etc. 
+* Uses major ticks, minor ticks and the contextual labels to help show the timescale.
 
-* Major and minor ticks indicates the time instances (contextual to the data).
+* Each tick is associated with a label. The label is center alligned with the tick and appears right below it. 
 
-* Labels for each ticks appears right below the tick and is centrally alligned to the tick. The visibility of labels associated with the tick marks is smartly controlled, to reduce clutter and help the viewer understand the data better.
+* The visibility of each label is smartly controlled to reduce clutter and provide better clarity of the timescale.
 
 * The Time Axis supports almost all types of time-related units, from milliseconds (smallest) to years (largest).
 
@@ -26,9 +26,9 @@ A sample chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-In the above chart, try and change the time period and see how the time axis adjusts automatically to respond to the change occured. For example - try and change the date from the [custom range selector]({% site.baseurl %}/fusiontime/fusiontime-component/custom-range-selector).
+In the above chart, try and change the time period and see how the time axis adjusts automatically to respond to the change occured. For example - try and zoom into the data from the chart canvas.
 
-## Multiple Time columns
+## Multiple Time columns in data
 
 Let's suppose that you have a tabular data which has multiple date/time columns. For example - Order Date and Shipping Date. The time axis of FusionTime can only represent one date/time column on the timescale. In such a scenario, specify which date/time column you want the time axis to represent. To do so, refer to the code below:
 
