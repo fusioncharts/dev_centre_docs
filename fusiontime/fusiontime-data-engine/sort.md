@@ -16,7 +16,7 @@ In this article we will discuss about the types of sorting and how to apply them
 
 In FusionTime, you can sort data in three ways - in the ascending order, in the descending order, or using a comparator function.
 
-Let's take a basic example of a data table shown below:
+In this article, we will apply all the above filter operations and check the result based on the data table shown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
