@@ -8,15 +8,7 @@ The DataStore comes with a set of operations that you can use to filter a set of
 
 ## Types of filters
 
-Filters support different types of data values - while you can apply some to columns with any data type. You can apply filter operation to a data table using following data structure:
-
-```
-CODE
-```
-
-In the above code:
-
-*
+Filters support different types of data values - while you can apply some to columns with any data type.
 
 The predefined filters are:
 
@@ -26,6 +18,25 @@ The predefined filters are:
 * Less
 * LessEquals
 * Between
+
+Other than the above predefined filters, FusionTime gives an option to filter the data by condition.
+
+Let's take a basic example of a data table shown below:
+
+Order Date | Country | Sales | Quantity | Shipping Cost
+---|---|---|---|--- 
+Liza | 28 | 175 | 67
+David | 24 | 182 | 78
+Alex | 31 | 172 | 70
+
+
+```
+CODE
+```
+
+In the above code:
+
+*
 
 You can find more details about these filters, given below:
 
