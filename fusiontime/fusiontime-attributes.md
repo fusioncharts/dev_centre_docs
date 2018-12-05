@@ -112,7 +112,7 @@ This article contains the list of attributes of FusionTime. The attributes have 
 	<tr>
 		<td>`unit`</td>
 		<td>String</td>
-		<td>Defines the time unit for the time marker. Click here for the list of time units available.</td>
+		<td>Defines the time unit for the time marker.</td>
 	</tr>
 	<tr>
 		<td>`multiplier`</td>

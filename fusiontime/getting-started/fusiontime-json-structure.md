@@ -47,7 +47,7 @@ Similarly, to configure the y-axis in FusionTime you need to create a `yAxis` ob
 }
 ```
 
-Every component has its own configuration. To know more click here.
+Every component has its own configuration. To know more click [here]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime).
 
 ## Styling 
 
