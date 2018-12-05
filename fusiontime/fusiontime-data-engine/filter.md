@@ -159,14 +159,3 @@ In the above code:
 
 * Column name on which you want to apply the filter
 * To render the chart by values from 500 to 1000, set the value of the second argument to **500** and the third argument to **1000**.
-
-You can see an example with multiple filters, given below. In this example, the filters `equals`, `between`, 'greaterEquals`, and `lessEquals` have been applied to a `DataTable`, to return results where:
-
-* The value of `country` equals "USA".
-
-* The value of `date` is greater than or equals to `Last 7 days from today`, as well as less than or equals to `Current date`.
-
-Refer to the code given below:
-
-<CODE>
-
