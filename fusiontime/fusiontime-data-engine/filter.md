@@ -25,20 +25,40 @@ Let's take a basic example of a data table shown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
-Liza | 28 | 175 | 67
-David | 24 | 182 | 78
-Alex | 31 | 172 | 70
+1/22/2011 | Australia | 59.724 | 6 | 27.43
+1/22/2011 | United States | 125.248 | 3 | 3.64 
+1/22/2011 | Australia | 6.318 | 1 | 1.77
+1/24/2011 | Australia | 110.808 | 3 | 9.92 
+1/24/2011 | United States | 40.08 | 6 | 4.31 
+1/24/2011 | India | 59.25 | 5 | 4.27 
+1/24/2011 | United States | 5.94 | 3 | 0.95 
+1/26/2011 | India | 79.38 | 3 | 13.82 
+1/26/2011 | India | 342.51 | 7 | 13.22 
 
+Now, let's apply a conditional filter to it where all **United States** data with **Sales** greater than **100** and **Shipping Cost** less than **10** will be filtered.
+
+To code to apply this filter to the above data table is given below:
 
 ```
-CODE
+var dataStore = new FusionCharts.DataStore();
+var dataTable = dataStore.createDataTable(data, schema);
+
+var filterQuery = FusionCharts.DataStore.Operators.filter((row, columns) => {
+	return row[columns.Country] === 'United States' || 
+	(row[columns.Sales] > 100 && row[columns.Shipping_Cost] < 10);
+});
+
+var filteredData = dataTable.query(filterQuery);
 ```
 
 In the above code:
 
-*
+* `FusionCharts.DataStore.Operators` is the namespace in which the filter resides.
+* Apply the filter to the `dataTable`.
 
-You can find more details about these filters, given below:
+The above query created a data table with 4 rows. The Sales data of United States satisfies the above applied query.
+
+THe details about the predefined filters is given below:
 
 ### Equals
 
