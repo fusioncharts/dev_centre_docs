@@ -8,15 +8,7 @@ The DataStore comes with a set of operations that you can use to filter a set of
 
 ## Types of filters
 
-Filters support different types of data values - while you can apply some to columns with any data type. You can apply filter operation to a data table using following data structure:
-
-```
-CODE
-```
-
-In the above code:
-
-*
+Filters support different types of data values - while you can apply some to columns with any data type.
 
 The predefined filters are:
 
@@ -27,7 +19,46 @@ The predefined filters are:
 * LessEquals
 * Between
 
-You can find more details about these filters, given below:
+Other than the above predefined filters, FusionTime gives an option to filter the data by condition.
+
+Let's take a basic example of a data table shown below:
+
+Order Date | Country | Sales | Quantity | Shipping Cost
+---|---|---|---|--- 
+1/22/2011 | Australia | 59.724 | 6 | 27.43
+1/22/2011 | United States | 125.248 | 3 | 3.64 
+1/22/2011 | Australia | 6.318 | 1 | 1.77
+1/24/2011 | Australia | 110.808 | 3 | 9.92 
+1/24/2011 | United States | 40.08 | 6 | 4.31 
+1/24/2011 | India | 59.25 | 5 | 4.27 
+1/24/2011 | United States | 5.94 | 3 | 0.95 
+1/26/2011 | India | 79.38 | 3 | 13.82 
+1/26/2011 | India | 342.51 | 7 | 13.22 
+
+Now, let's apply a conditional filter to it where all **United States** data with **Sales** greater than **100** and **Shipping Cost** less than **10** will be filtered.
+
+To code to apply this filter to the above data table is given below:
+
+```
+var dataStore = new FusionCharts.DataStore();
+var dataTable = dataStore.createDataTable(data, schema);
+
+var filterQuery = FusionCharts.DataStore.Operators.filter((row, columns) => {
+	return row[columns.Country] === 'United States' || 
+	(row[columns.Sales] > 100 && row[columns.Shipping_Cost] < 10);
+});
+
+var filteredData = dataTable.query(filterQuery);
+```
+
+In the above code:
+
+* `FusionCharts.DataStore.Operators` is the namespace in which the filter resides.
+* Apply the filter to the `dataTable`.
+
+The above query created a data table with 4 rows. The Sales data of United States satisfies the above applied query.
+
+THe details about the predefined filters is given below:
 
 ### Equals
 
