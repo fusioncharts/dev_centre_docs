@@ -17,10 +17,7 @@
             },
             "referenceLine": [{
                 "label": "Daily Target",
-                "value": 300,
-                "style": {
-                    "text": "style | vertical-align"
-                }
+                "value": 300
             }],
         }
     }
