@@ -163,7 +163,7 @@ Name of the column from the data table created using [schema]({% site.baseurl %}
 
 #### `operation`
 
-`operation` is an attribute which applies the mathematical operation to the column on which it is applied. It accepts **string** value. The list of values accepted by this attribute are:
+`operation` is an attribute which denotes the aggregation method to be applied on each created group. It accepts **string** value. The list of values accepted by this attribute are:
 
 * sum
 * avg
@@ -201,7 +201,7 @@ The data structure to group the data is shown below:
 var groupQuery = groupBy(
 	[{
 		column: 'Order Date', // Column to which groupBy has been applied
-		timeUnit:FusionCharts.DataStore.DatetimeUnits.Day
+		timeUnit:FusionCharts.Utils.DatetimeUnits.Day
 	}],
 	[{
 		column: 'Sales',
