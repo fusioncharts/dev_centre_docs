@@ -27,17 +27,17 @@ Refer to the code below:
 
 ```
 xAxis: {
-    columnname: 'Time',
     timemarker: [{
         start: 'Jul-1981',
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
-    },
+    }],
+}
 ```
 
 A sample chart with a time marker is shown below:
 
-<<LIVE Chart>>
+{% embed_ftChart fusiontime-components-time-marker-1 %}
 
 To create repeatable time instance markers follw the stpes below:
 
