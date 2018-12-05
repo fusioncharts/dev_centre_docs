@@ -45,7 +45,7 @@ You can pan the active window across the time navigator and see the data plots i
 
 When you hover the mouse pointer on the active window of the time navigator, the time labels appear on  the both the ends of the active window showing the start date/time and the end date/time. You can drag these labels to change the active window. Refer to the image below:
 
-![Time navigator labels]({% site.baseurl %}/images/fusiontime-nav-labels.png)
+![Time navigator labels]({% site.baseurl %}/images/fusiontime-nav-labels.gif)
 
 ## Show/Hide Time Navigator
 
