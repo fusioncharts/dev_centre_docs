@@ -38,15 +38,11 @@ Name of the column from the dataTable created using [schema]({% site.baseurl %}/
 
 > If `outputAs` is not applied, the column name remains the same as the previous `DataTable`.
 
-```
-[columnName-operation]
-```
-
 #### `timeUnit`
 
 This attribute is only applicable if you group on date/time. This attribute specifies how the date column should be grouped. For example, if you set `timeUnit` to **Month**, the grouping will be applied month wise. The **month** is one of the `DatetimeUnits` enum and not any random string.
 
-`DateTimeUnits` is a separate enum of `FusionCharts.DataStore`. DateTimeUnits consists of:
+`DateTimeUnits` is a separate enum of `FusionCharts.Utils`. DateTimeUnits consists of:
 
 * Year
 * Quarter
