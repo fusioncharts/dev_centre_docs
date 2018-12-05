@@ -49,12 +49,12 @@ Refer to the code below:
 ```
 yAxis: [{
     plot: {
-        value: 'Sales',
+        "value": "Sales",
     },
-    "title": "Total Sales"
+    "title": "Total Sales",
 }, {
     format: {
-        prefix: '$',
+        "prefix": "$",
     }
 }],
 
