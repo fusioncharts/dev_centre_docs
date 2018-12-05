@@ -4,7 +4,7 @@ description: This article outlines the steps to groupby.
 heading: GroupBy
 ---
 
-`GroupBy` is used to group the rows that have the same values in one or more columns. For example, if a particular column has the same values in different rows, `groupBy` will arrange these rows in a group.
+**GroupBy** is used to group the rows that have the same values in one or more columns. For example, if a particular column has the same values in different rows, `groupBy` will arrange these rows in a group.
 
 When you apply `groupBy` into a `DataTable`, it transforms the data and creates a new `DataTable`. The syntax to apply groupBy to the `DataTable` in the DataStore is given below:
 
@@ -178,19 +178,49 @@ Name of the column from the dataTable created using schema.
 `operation` is an attribute which applies the mathematical operation to the column on which it is applied. It accepts **string** value. The list of values accepted by this attribute are:
 
 * sum
-
 * avg
-
 * count
-
 * min
-
 * max
-
 * first
-
 * last
-
 * variance
-
 * stddev
+
+Now, lets apply `groupBy` operation to the data table given below:
+
+Order Date | Country | Sales | Quantity | Shipping Cost
+---|---|---|---|--- 
+1/22/2011 | Australia | 59.724 | 6 | 27.43
+1/22/2011 | United States | 125.248 | 3 | 3.64 
+1/22/2011 | Australia | 6.318 | 1 | 1.77
+1/24/2011 | Australia | 110.808 | 3 | 9.92 
+1/24/2011 | United States | 40.08 | 6 | 4.31 
+1/24/2011 | India | 59.25 | 5 | 4.27 
+1/24/2011 | United States | 5.94 | 3 | 0.95 
+1/26/2011 | India | 79.38 | 3 | 13.82 
+1/26/2011 | India | 342.51 | 7 | 13.22
+
+The data structure to group the data is shown below:
+
+```
+var groupQuery = groupBy(
+	[{
+		column: 'Order Date',
+		timeUnit:FusionCharts.DataStore.DatetimeUnits.Day
+	}],
+	[{
+		column: 'Sales',
+		operation: 'sum',
+		outputAs: 'Total_Sales'
+	}]
+);
+```
+
+The new data table after running the above code looks like:
+
+Order Date | Total_Sales
+---|---
+1/22/2011 | 191.29
+1/24/2011 | 216.078
+1/26/2011 | 421.89
