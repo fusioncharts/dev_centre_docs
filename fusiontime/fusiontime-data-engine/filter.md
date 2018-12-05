@@ -120,30 +120,22 @@ In the above code:
 
 This operation is similar to `less` filter which can be used when you want to filter the data values less than a specific numeric value. `lessEquals` filter is used when you want to filter the data values less than or equal to the specific value.  Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values less than or equal to 500. In this scenario, we have to use the `Equals` filter which will render the chart using data plots with the value below and equal to 500.
 
-The data structure to set the `less` filter is shown below:
+The data structure to set the `lessEquals` filter is shown below:
 
 ```
-
 var dataT= dataStore.getDataTable();
-
-var filter1 = FusionCharts.DataStore.Operators.lessOrEquals('Sales', 500);
-
+var filter1 = FusionCharts.DataStore.Operators.lessEquals('Sales', 500);
 var dataT_1=dataT.query(filter1);
-
 ```
 
 In the above code:
 
-* Store the `dataTable` in a variable.
-
-* `FusionCharts.DataStore.Operators` is the namespace in which `lessOrEquals` filter resides.
-
+* `FusionCharts.DataStore.Operators` is the namespace in which `lessEquals` filter resides.
 * Apply the filter to the `dataTable`.
 
-**LessOrEquals** takes two arguments which are:
+**LessEquals** takes two arguments which are:
 
 * Column name on which you want to apply the filter
-
 * To render the chart by values less than and equal to 500, set the value of this argument to **500**.
 
 ### Between
@@ -153,30 +145,22 @@ In the above code:
 The data structure to set the `between` filter is shown below:
 
 ```
-
 var dataT= dataStore.getDataTable();
-
 var filter1 = FusionCharts.DataStore.Operators.between('Sales', 500, 1000);
-
 var dataT_1=dataT.query(filter1);
-
 ```
 
 In the above code:
 
-* Store the `dataTable` in a variable.
-
 * `FusionCharts.DataStore.Operators` is the namespace in which `between` filter resides.
-
 * Apply the filter to the `dataTable`.
 
 **Between** takes three arguments which are:
 
 * Column name on which you want to apply the filter
-
 * To render the chart by values from 500 to 1000, set the value of the second argument to **500** and the third argument to **1000**.
 
-You can see an example with multiple filters, given below. In this example, the filters `equals`, `between`, 'greater or equals`, and `less or equals` have been applied to a `DataTable`, to return results where:
+You can see an example with multiple filters, given below. In this example, the filters `equals`, `between`, 'greaterEquals`, and `lessEquals` have been applied to a `DataTable`, to return results where:
 
 * The value of `country` equals "USA".
 
