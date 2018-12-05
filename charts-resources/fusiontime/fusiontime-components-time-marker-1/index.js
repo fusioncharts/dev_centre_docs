@@ -21,12 +21,12 @@
         xAxis: {
             plot: 'Time',
             timemarker: [{
-                start: 'Mar-1980',
+                start: 'Mar-1982',
                 label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
                 timeFormat: "%b-%Y",
                 style: {
                     marker: {
-                        fill: '#D0D6F4'
+                        fill: '#f8b8b7'
                     }
                 }
             }]
