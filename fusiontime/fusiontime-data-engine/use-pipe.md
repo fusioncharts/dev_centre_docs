@@ -42,7 +42,7 @@ The `pipe` operation is applied as shown below:
 ```
 filter1 = FusionCharts.DataStore.Operators.equals('Country', 'India');
 filter2 = FusionCharts.DataStore.Operators.greater('Quantity', 3);
-pipeDT = fusionTable.query(FusionCharts.DataStore.Operators.pipe(filter1, filter2));
+pipeDataTable = fusionTable.query(FusionCharts.DataStore.Operators.pipe(filter1, filter2));
 ```
 
 The new data table after applying `pipe` operation is shown below:
