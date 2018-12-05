@@ -10,9 +10,9 @@ In this article, you'll see how to install FusionTime and render your first time
 
 ## Installation
 
-Installing FusionCharts automatically installs FusionTime and all the other dependencies. Install FusionCharts using any of the following steps:
+Installing FusionTime automatically installs FusionTime and all the other dependencies. Install FusionTime using any of the following steps:
 
-Install **FusionCharts** using any of the following steps:
+Install **FusionTime** using any of the following steps:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
