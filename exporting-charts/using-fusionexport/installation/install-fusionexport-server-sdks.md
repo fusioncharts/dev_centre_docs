@@ -31,7 +31,7 @@ To export charts and dashboards using FusionExport, you can develop the applicat
 
 <div class="tab csharp-tab">
 <strong>Install the C# SDK client for FusionExport using the [NuGet](https://www.nuget.org/) package manager (`.NET >= 4.0`). Open the *NuGet package manager console* and execute the following command:</strong>
-<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0-rc0</code></pre>
+<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0</code></pre>
 </div>
 
 <div class="tab java-tab">
@@ -47,7 +47,7 @@ repositories {
 <p>2. FusionExport Java SDK to the dependency list:</p>
 <pre><code class="language-java">
 dependencies {
-    compile "com.fusioncharts.fusionexport:fusionexport:1.0.0-rc"
+    compile "com.fusioncharts.fusionexport:fusionexport:1.0.0"
     compile group: 'javax.websocket', name: 'javax.websocket-api', version: '1.1'
     compile group: 'org.glassfish.tyrus.bundles', name: 'tyrus-standalone-client', version: '1.13.1'
     compile 'com.google.code.gson:gson:2.8.2'
@@ -61,7 +61,7 @@ dependencies {
 &lt;dependency&gt;
     &lt;groupId&gt;com.fusioncharts.fusionexport&lt;/groupId&gt;
     &lt;artifactId&gt;fusionexport&lt;/artifactId&gt;
-    &lt;version&gt;1.0.0-rc&lt;/version&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
 &lt;/dependency&gt;
 
 &lt;dependency&gt;
@@ -98,7 +98,7 @@ dependencies {
 
 <div class="tab php-tab">
 <strong>Install the PHP SDK client for FusionExport using [composer](https://getcomposer.org/) (`PHP >= 7.x, composer >= 1.7.x`):</strong>
-<pre><code class="language-php"> $ composer require fusioncharts/fusionexport:1.0.0-rc</code></pre>
+<pre><code class="language-php"> $ composer require fusioncharts/fusionexport:1.0.0</code></pre>
 </div>
 
 <div class="tab nodejs-tab active">
