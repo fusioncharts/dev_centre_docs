@@ -18,7 +18,7 @@ In FusionTime, you can sort data in three ways - in the ascending order, in the 
 
 **Comparator function** - When you use a JavaScript comparator function, it defines the sort order.
 
-Refer to the code samples given below:
+Refer to the code sample which shows how to apply ascending or decending sorting.
 
 ```
 var sortQuery = sort([
@@ -26,3 +26,39 @@ var sortQuery = sort([
 	{column: 'Mile_Per_Gallon', order: 'desc'}	
 ]);
 ```
+
+**Comparator function** is added when you want to apply complex sorting.
+
+Let's take a basic example of a data table shown below:
+
+Order Date | Country | Sales | Quantity | Shipping Cost
+---|---|---|---|--- 
+1/22/2011 | Australia | 59.724 | 6 | 27.43
+1/22/2011 | United States | 125.248 | 3 | 3.64 
+1/22/2011 | Australia | 6.318 | 1 | 1.77
+1/24/2011 | Australia | 110.808 | 3 | 9.92 
+1/24/2011 | United States | 40.08 | 6 | 4.31 
+1/24/2011 | India | 59.25 | 5 | 4.27 
+1/24/2011 | United States | 5.94 | 3 | 0.95 
+1/26/2011 | India | 79.38 | 3 | 13.82 
+1/26/2011 | India | 342.51 | 7 | 13.22
+
+Let's assume you want to sort the data by the total profit in descending order, i.e., the highest sale will appear at the top of the table. The total profit is calculated using `(Sales * Quantity) - Shipping Cost` formula.
+
+To code to apply this sorting to the above data table is given below:
+
+```
+var dataStore = new FusionCharts.DataStore();
+var dataTable = dataStore.createDataTable(data, schema);
+
+var customSortQuery = FusionCharts.DataStore.Operators.sort((a, b) => {
+  return ((b[2]*b[3]) - b[4]) - ((a[2]*a[3]) - a[4]);
+}); // 0 based index of Sales, Quantity & Shipping cost are 2,3,4 respectively
+
+var sortedData = dataTable.query(customSortQuery);
+```
+
+In the above code:
+
+* `FusionCharts.DataStore.Operators` is the namespace in which sort resides.
+* Apply sorting to the `dataTable`.
