@@ -89,7 +89,3 @@ Refer to the code below:
 A sample chart with time spam markers is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-3 %}
-
-In a multivariate chart, all the canvas share the same time markers.
-
-<img src="{% site.baseurl %}/images/fusiontime-component-time-markers.png" alt="Time Markers" width="700" height="420">
