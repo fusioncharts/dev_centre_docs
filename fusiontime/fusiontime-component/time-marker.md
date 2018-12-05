@@ -4,11 +4,11 @@ description: This article defines the time markers.
 heading: Time Markers
 ---
 
-FusionTime lets you mark events on the time axis with the help of markers. A time marker can either represent an event that occurs only once or one that occurs over a range of time. You can indicate these two type of events with a pointer (for an event that occurs once) or a band (for an event that occurs over time).
+FusionTime lets you mark events on the [time axis]({% site.baseurl %}/fusiontime/fusiontime-component/time-axis) with the help of markers. A time marker can either represent an event that occurs only once or one that occurs over a range of time. You can indicate these two type of events with a pointer (for an event that occurs once) or a band (for an event that occurs over time).
 
 A time marker appears as an overlay on the canvas. When you hover the mouse pointer over a time marker, a tooltip appears with context-sensitive information about the data the marker represents.
 
-Note: In a multivariate chart, all the canvas share the same time markers.
+> In a multivariate chart, all the canvas share the same time markers.
 
 <img src="{% site.baseurl %}/images/fusiontime-component-time-markers.png" alt="Time Markers" width="700" height="420">
 
@@ -20,7 +20,7 @@ In the above chart, you can see a time marker extending between two points on th
 
 ## Configure Time Markers
 
-You can configure data markers using the following attributes:
+You can configure time markers using the following attributes:
 
 * Use the `label` attribute to define the label for the time marker.
 
