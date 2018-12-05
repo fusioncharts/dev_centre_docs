@@ -60,8 +60,8 @@ xAxis: {
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
         repeat {
-        unit: Month,
-        multiplier: 1
+        unit: Year,
+        multiplier: 5
     }
 },
 ```
@@ -89,7 +89,3 @@ Refer to the code below:
 A sample chart with time spam markers is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-3 %}
-
-In a multivariate chart, all the canvas share the same time markers.
-
-<img src="{% site.baseurl %}/images/fusiontime-component-time-markers.png" alt="Time Markers" width="700" height="420">
