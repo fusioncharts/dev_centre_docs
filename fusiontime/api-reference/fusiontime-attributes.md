@@ -270,7 +270,7 @@ This article contains the list of attributes of FusionTime. The attributes have 
 		<td>This attribute allows to set a custom horizontal alignment for all images displayed as chart messages. Possible values are `left`, `right` and `middle`.</td>
 	</tr>
 	<tr>
-		<td>'baseChartMessageImageVAlign'</td>
+		<td>`baseChartMessageImageVAlign`</td>
 		<td>String</td>
 		<td>This attribute allows to set a custom vertical alignment for all images displayed as chart messages. Possible values are `top`, `bottom` and `middle`.</td>
 	</tr>
