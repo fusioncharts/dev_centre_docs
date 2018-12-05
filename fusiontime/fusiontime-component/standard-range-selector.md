@@ -4,37 +4,31 @@ description: This article defines the standard range selector.
 heading: Standard Range Selector
 ---
 
-A standard range selector allows you to focus on the set of data for a specific pre-defined period of time with respect to the currently visible data on the chart canvas. 
-
-For example, out of 15 years of data (2000-2015), you are currently viewing 5 years of data (2008-2013). Now, if you select `1Y` of data from the Standard range selector, the chart will display data for the last one year out of the 5 years (2013). 
+A standard range selector is an extension which is used to select standard time periods. There are three sections of standard time periods as, ALL, Business friendly dates like YTD, QTD and MTD and contextual time periods.  The options of the contextual time periods will vary based on the atomicity of the data and the current data displayed. Refer to the image below:
 
 <img src="{% site.baseurl %}/images/fusiontime-component-standard-range-selector.png" alt="Standard Range Selector" width="700" height="420">
 
-The major features of Standard Range Selector include the following:
+The salient features of Standard Range Selector are:
 
 * Can select data based on three logical types of intervals:
 
     * All - Selects all of the available data values.
 
-    * 1Y | 6M | 3M | 1M - Selects and displays data for the last one year, six months, three months, or one month of the currently visible time interval, respectively.
+    * Contextual time periods - 1Y | 6M | 3M | 1M | 15D | etc. - You can select and display data for the last one year, six months, three months, or one month of the currently visible time interval, respectively. 
 
-    * YTD | QTD | MTD | WTD - YTD, QTD, MTD, and WTD display data from the beginning of the last year, quarter, month, or week (respectively) of the total time interval in the data to the present date.
+    The options of the contextual time periods will vary based on the atomicity of the data and the current data displayed.
 
-Once you select the total time period to be covered, as well as the interval between two consecutive data values, FusionTime intelligently selects the data values and displays them in the chart, without requiring any further input.
+    * Busieness friendly dates - YTD | QTD | MTD | WTD - YTD, QTD, MTD, and WTD display data from the beginning of the last year, quarter, month, or week (respectively) of the total time interval in the data to the present date. 
+
+    These options will apppear only if the data is of the current year, quarter, month and week. 
 
 A chart with Standard range selector is shown below:
 
 {% embed_ftChart online-sales-multi-series %}
 
-In the example given above, you can see the sales made by an organization on a daily basis for a number years, plotted in a column chart. When the chart is loaded, by default, `All` is selected in the Standard Range Selector. Click on any of the other given intervals to dive deeper into the sales data. 
-
-For instance, click on `6M` to see the sales records for the last 6 months instantly. Similarly, click `YTD`, `QTD`, `MTD`, or `WTD` to see the sales records from between the present date and the beginning of the last year, quarter, month, or week respectively.
-
-You can hover the mouse pointer over any of the data plots to see details about the underlying data in a tooltip. A cross line will also appear instantly on the chart to indicate the position of the data value on the Y-axis.
-
 ## Show/Hide Standard Range Selector
 
-Standard Range Selector is visible in every chart, by default. However, to turn it off, set the value of the `enabled` attribute to `0` within the `standardRangeSelector` extension of the `extensions` object.
+Standard Range Selector is visible in every chart, by default. However, to turn it off, set the value of the `enabled` attribute within the `standardRangeSelector` extension of the `extensions` object to `0`.
 
 Refer to the code below:
 
@@ -46,10 +40,7 @@ Refer to the code below:
     height: 650,
     dataSource: {
         data: fusionTable,
-        chart: {},
-        caption: {
-            text: 'Online Sales of a SuperStore in India & the US'
-        },
+        ...
         // Show/Hide Custom Range Selector
         "extensions": {
 			"standardRangeSelector": {
