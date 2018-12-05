@@ -10,23 +10,23 @@ A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), 
 
 The salient features of the reference line:
 
-* A label which is by default displayed as text below the line, when you hover on the knob of the reference line.
+* A label which is by default displayed on the right side of the refernce the line, when you hover on the knob.
 
-* A value which is by default displayed on the left side of the reference line on hover. 
+* A value which is by default displayed on the left side (y-axis) of the reference line on hover. 
 
-A chanrt with reference line is shown below:
+A chart with a reference line is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line %}
 
-In the example given above, a reference line appears, parallel to the time axis. When you hover on the reference line the value appears at the left end on the reference line and the label appears on the right end of the reference line.
+In the example given above, a reference line appears, parallel to the time axis. Hover on the knob of the reference line to see the label and the value.
 
 ## Configure the Reference Line
 
-You can configure reference lines using the following attributes of the `referenceLine` object:
+You can configure the reference line using the following attributes of the `referenceLine` object:
 
-* Use the `label` attribute to set the value of the label.
+* Use the `label` attribute to set the text of the label.
 
-* Use the `value` attribute to set the value, at which the reference line should appear.
+* Use the `value` attribute to set the value at which the reference line should appear.
 
 Refer to the code given below:
 
@@ -48,5 +48,3 @@ Refer to the code given below:
     }
 }
 ```
-
-Note: You can set the top and bottom positioning of the reference line label `vertical-align` attribute.

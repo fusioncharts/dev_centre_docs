@@ -4,9 +4,9 @@ description: This article defines the plot types suported in FusionTime.
 heading: Plot Types
 ---
 
-In FusionTime a plot represents a particular column/measure in the tabular data, which displays the relationship between two or more variables of a chart. Plot refers to a line in a line chart, a column in a column chart etc. FusionTime supports following plot types:
+Plot refers to a line in a line chart, a column in a column chart, area in an area chart, etc.
 
-FusionTime supports following plot types:
+FusionTime supports the following plot types:
 
 * Line
 * Column
@@ -16,7 +16,7 @@ FusionTime supports following plot types:
 * Candlestick
 * OHLC
 
-You can specify the plot type in a chart, using the `plotType` property inside the `yAxis` object. By default, the value is `line`. However, you can modify it with any of the varieties mentioned in the list above. Refer to the code below:
+By default, the chart renders with a line plot. However, you can specify the plot type in a chart, using the `plotType` property inside the `yAxis` object. Refer to the code below:
 
 ```
 yaxis: {
@@ -37,7 +37,7 @@ The time series chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-To check out the detailed step to render the above chart, click here.
+To check out the detailed step to render the above chart, click [here]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
 
 ## Column
 
