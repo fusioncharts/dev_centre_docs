@@ -39,6 +39,8 @@ A sample chart with a time marker is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-1 %}
 
+{% embed_ftChart fusiontime-components-time-marker-1 %}
+
 To create repeatable time instance markers follw the stpes below:
 
 * Set the above attributes and the specify the following attribute:
