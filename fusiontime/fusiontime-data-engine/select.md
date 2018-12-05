@@ -8,7 +8,7 @@ heading: Select
 
 Note that when you use the `Select` operation on a `DataTable`, it will generate a child table with only the selected columns.
 
-Let's take a basic example of a data table shown below:
+Let's take a basic example of aDataTableshown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -30,7 +30,7 @@ let fusionTable = fusionDataStore.createDataTable(data, schema);
 let selectedData = fusionTable.query(FusionCharts.DataStore.Operators.select(['Country', 'Sales']));
 ```
 
-The new data table after applying `select` operation is shown below:
+The newDataTableafter applying `select` operation is shown below:
 
 Country | Sales
 ---|---

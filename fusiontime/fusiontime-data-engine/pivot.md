@@ -32,7 +32,7 @@ In the first argument of the `pivot` method, each group of configuration object 
 
 #### `column`
 
-Name of the column from the data table created using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview).
+Name of the column from theDataTablecreated using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview).
 
 #### `outputAs`
 
@@ -197,7 +197,7 @@ Name of the column from the dataTable created using schema.
 
 > If the `outputAs` is not applied, the column name will be **category name-previous column name-operation**.
 
-Now, lets apply `pivot` operation to the data table given below:
+Now, lets apply `pivot` operation to theDataTablegiven below:
 
 OrderID | Category Name | Customer Country | Customer Continent | Total Purchase Amount
 ---|---|---|---|---
@@ -226,7 +226,7 @@ var pivotFn = pivot([
 ])
 ```
 
-The new data table after running the above code looks like:
+The newDataTableafter running the above code looks like:
 
 Category | Name	Europe | North America | South America
 ---|---|---|---

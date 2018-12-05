@@ -8,7 +8,7 @@ heading: Methods
 
 ### `createDataTable(data, schema, config, id)`
 
-Creates data table in the data store.
+CreatesDataTablein the data store.
 
 * **data:** Add values to the `DataTable`, you can provide the data in both JSON and 2D array format.
 
@@ -44,7 +44,7 @@ Append rows in the data store. To append rows to a specific data table, specify 
 
 ### `getDataTable(id)`
 
-Fetches the data table from the DataStore to render the chart.
+Fetches theDataTablefrom the DataStore to render the chart.
 
 > To render the chart using specific data table, specify the `id` of the table while calling the method. 
 

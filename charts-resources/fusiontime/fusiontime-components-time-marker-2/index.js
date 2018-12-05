@@ -26,11 +26,11 @@
                 timeFormat: "%b-%Y",
                 repeat: {
                     unit: 'Year',
-                    multiplier: 1
+                    multiplier: 5
                 },
                 style: {
                     marker: {
-                        fill: '#D0D6F4'
+                        fill: '#f8b8b7'
                     }
                 }
             }]
