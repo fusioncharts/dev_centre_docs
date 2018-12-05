@@ -30,7 +30,7 @@ Creates data table in the data store.
 //Config
 {
 	"enableIndex": true, //default is true
-	"indexBy": "columnName", //Column Name on which the indexing is applied 
+	"indexBy": "Time", //Column Name on which the indexing is applied 
 }
 ```
 

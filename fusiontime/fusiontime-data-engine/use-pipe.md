@@ -4,56 +4,50 @@ description: This article outlines the steps to use Pipe.
 heading: Join Operations using Pipe
 ---
 
-**Pipe** is an operation which lets you run two or more data operations in a sequence. Instead of applying multiple filters one by one to a `DataTable`, you can combine them in one single step using **pipe** and apply to the** **DataTable. 
+**Pipe** is an operation which lets you run two or more data operations in a sequence. Instead of applying multiple filters one by one to a `DataTable`, you can combine them in one single step using **pipe** and apply to the **DataTable**. 
 
-For better understanding, let's create a chart with the default data. For example, a chart showcasing online sales of SuperStore in the United States of America.
+Let's take a basic example of a data table shown below:
 
-The chart is shown below:
+Order Date | Country | Sales | Quantity | Shipping Cost
+---|---|---|---|--- 
+1/22/2011 | Australia | 59.724 | 6 | 27.43
+1/22/2011 | United States | 125.248 | 3 | 3.64 
+1/22/2011 | Australia | 6.318 | 1 | 1.77
+1/24/2011 | Australia | 110.808 | 3 | 9.92 
+1/24/2011 | United States | 40.08 | 6 | 4.31 
+1/24/2011 | India | 59.25 | 5 | 4.27 
+1/24/2011 | United States | 5.94 | 3 | 0.95 
+1/26/2011 | India | 79.38 | 3 | 13.82 
+1/26/2011 | India | 342.51 | 7 | 13.22 
 
-{% embed_ftChart online-sales-single-series %}
+Now, let's add some operations to the above table:
 
-Now, let's add some operations to the above chart. Follow the steps given below:
-
-1. Apply the `equals` filter and set its value to **India**.
-
-2. Apply the `greater` filter and set its value to **500**.
-
-3. Once you are done with the above steps, use `pipe` operation to run the above steps in sequence.
-
-The chart after applying the **Pipe** operator looks like as shown below:
-
-{% embed_ftChart getting-started-filter-pipe %}
-
-The code to render the above chart is given below:
+1. Apply the `equals` filter on **Country** column.
 
 ```
-//Pipe Operation Applied to the data table in the Data Store
-let fusionDataStore = new FusionCharts.DataStore();
-let fusionTable = fusionDataStore.createDataTable(data, schema);
+var filter1 = FusionCharts.DataStore.Operators.equals('Country', 'India');
+```
+
+
+2. Apply the `greater` filter on **Quantity** column.
+
+```
+var filter2 = FusionCharts.DataStore.Operators.greater('Quantity', 3);
+```
+
+Once you are done with the above steps, apply `pipe` operation to run the above steps in sequence.
+
+The `pipe` operation is applied as shown below:
+
+```
 filter1 = FusionCharts.DataStore.Operators.equals('Country', 'India');
-filter2 = FusionCharts.DataStore.Operators.greater('Sales', 500);
+filter2 = FusionCharts.DataStore.Operators.greater('Quantity', 3);
 pipeDT = fusionTable.query(FusionCharts.DataStore.Operators.pipe(filter1, filter2));
-
-new FusionCharts({
-    type: 'timeseries',
-    renderAt: 'container',
-    width: 1000,
-    height: 650,
-    dataSource: {
-        data: pipeDT,
-        chart: {
-        },
-        caption: {
-          text: 'Online Sales of a SuperStore in India'
-        }
-    }
-}).render()  
 ```
 
-In the above code:
+The new data table after applying `pipe` operation is shown below:
 
-* Store the `dataTable` in a variable.
-* Set the `equals` filter using the `FusionCharts.DataStore` constructor and store it in a variable.
-* Set the `greater` filter using the `FusionCharts.DataStore` constructor and store it in a variable.
-* Set the `pipe` operation to run the above filters in sequence.
-* Apply the filter to the `dataTable`.
+Order Date | Country | Sales | Quantity | Shipping Cost
+---|---|---|---|--- 
+1/24/2011 | India | 59.25 | 5 | 4.27 
+1/26/2011 | India | 342.51 | 7 | 13.22 
