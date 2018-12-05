@@ -20,7 +20,9 @@ OrderID | Category Name | Customer Country | Customer Continent | Total Purchase
 10253 | Confections | Brazil | South America | 640
 10332 | Confections | Canada | North America | 121.4
 
-In the above table, each column represents a particular detail of persons. Selecting a particular column gives you that particular detail of every person. Here, column is a `dimension` with all the values of same unit.
+In the above table, `groupBy` will be applied to the 
+
+each column represents a particular detail of persons. Selecting a particular column gives you that particular detail of every person. Here, column is a `dimension` with all the values of same unit.
 
 Now, let's take an example of a financial data showing **Monthly Sales and Profit data**.
 

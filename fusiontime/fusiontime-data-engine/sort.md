@@ -16,14 +16,38 @@ In this article we will discuss about the types of sorting and how to apply them
 
 In FusionTime, you can sort data in three ways - in the ascending order, in the descending order, or using a comparator function.
 
-**Ascending order** - When you sort one or more columns in the data table in ascending order, the data will be arranged from the lowest to the highest values. FusionTime by default sorts data in ascending order. Refer to the code below:
+Let's take a basic example of a data table shown below:
+
+Order Date | Country | Sales | Quantity | Shipping Cost
+---|---|---|---|--- 
+1/22/2011 | Australia | 59.724 | 6 | 27.43
+1/22/2011 | United States | 125.248 | 3 | 3.64 
+1/22/2011 | Australia | 6.318 | 1 | 1.77
+1/24/2011 | Australia | 110.808 | 3 | 9.92 
+1/24/2011 | United States | 40.08 | 6 | 4.31 
+1/24/2011 | India | 59.25 | 5 | 4.27 
+1/24/2011 | United States | 5.94 | 3 | 0.95 
+1/26/2011 | India | 79.38 | 3 | 13.82 
+1/26/2011 | India | 342.51 | 7 | 13.22
+
+Now, let's sort the above data table in the above mentioned orders.
+
+### Ascending Order
+
+When you sort one or more columns in the data table in ascending order, the data will be arranged from the lowest to the highest values. FusionTime by default sorts data in ascending order. 
+
+The code to apply ascending order sort to the above table is given below:
+
 
 ```
 var sortQuery = sort([
-	{column: 'Horsepower'}, //by default is ascending
-	{column: 'Mile_Per_Gallon', order: 'asc'}	
+	{column: 'Country', order: 'asc'}	
 ]);
 ```
+
+The new data table after applying ascending order sort is shown below:
+
+
 
 **Descending order** - When you sort one or more columns in the data table in descending order, the data will be arranged from the highest to the lowest values.
 
