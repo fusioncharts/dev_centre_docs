@@ -25,7 +25,7 @@
                 label: 'US inflation peaked at 14.8%.',
                 timeFormat: "%b-%Y",
                 repeat: {
-                    unit: Month,
+                    unit: 'Month',
                     multiplier: 1
                 },
                 style: {

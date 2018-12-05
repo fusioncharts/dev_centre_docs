@@ -22,12 +22,9 @@
             plot: 'Time',
             timemarker: [{
                 start: 'Mar-1980',
+                end: 'Jun-1983',
                 label: 'US inflation peaked at 14.8%.',
                 timeFormat: "%b-%Y",
-                repeat: {
-                    unit: Month,
-                    multiplier: 1
-                ,}
                 style: {
                     marker: {
                         fill: '#D0D6F4'
