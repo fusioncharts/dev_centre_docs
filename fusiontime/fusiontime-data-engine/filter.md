@@ -189,7 +189,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 Other than the above predefined filters, FusionTime gives an option to filter the data by condition.
 
-Now, let's apply a conditional filter to the root table where all **United States** data with **Sales** greater than **100** and **Shipping Cost** less than **10** will be filtered.
+Now, let's apply a conditional filter to the root table where all **United States** data and also data with **Sales** greater than **100** and **Shipping Cost** less than **10** will be selected.
 
 To code to apply this filter to the above data table is given below:
 
@@ -210,3 +210,6 @@ The new data table after running the above code looks like:
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
 1/22/2011 | United States | 125.248 | 3 | 3.64 
+1/24/2011 | Australia | 110.808 | 3 | 9.92 
+1/24/2011 | United States | 40.08 | 6 | 4.31 
+1/24/2011 | United States | 5.94 | 3 | 0.95 
