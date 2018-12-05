@@ -17,7 +17,7 @@ The `DataStore` contains the following:
 
 Operations can only be performed on the `DataTable` of `DataStore` and each operation generates a new `DataTable` instead of modifying the same `DataTable`.
 
-You can create new columns for a `DataTable` but new rows can only be inserted in the `DataStore`. The default table and all derived tables created from the default table will automatically reflect the new row of data.
+You can create new columns for a `DataTable` but new rows can only be inserted in the `DataStore`. The root tables and all derived tables will automatically reflect the new row of data.
 
 
 ## What is a `DataTable`?
@@ -54,10 +54,11 @@ let schema = [{
 ```
 In the above code:
 * `schema` is the variable in which the array is saved.
-* The first object represents the first column in the `DataTable`. In the above sample Country is the name of the column.
-* The second object sets the date/time format for the chart. The name of the column has been set to `Time` and the date format has been set to `%-m/%-d/%Y`.
-* The last object represents the third column named Sales, the values of which will map to the data plots.
-
+* Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
+	* name - Specify the name of the column.
+	* type - Specify the etype of the column.
+	* format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here]({% site.baseurl %}/fusiontime/fusiontime-attributes).
+	
 ### Data
 
 To add values in each column of the `DataTable` you can provide the data in arrays of JSON object or 2D array. In this article, we will use the 2D array format.
@@ -65,7 +66,7 @@ To add values in each column of the `DataTable` you can provide the data in arra
 The data format is shown below:
 
 ```
-[
+let data = [
     [
         "United States",
         "1/4/2011",
@@ -81,7 +82,24 @@ The data format is shown below:
         "1/5/2011",
         11.784
     ],
-…
+    ...
+    ...
+    [
+        "United States",
+        "12/31/2014",
+        20.72
+    ],
+    [
+        "United States",
+        "12/31/2014",
+        13.904
+    ],
+    [
+        "United States",
+        "12/31/2014",
+        3.024
+    ]
+]
 ```
 
 In the above code:
@@ -89,7 +107,7 @@ In the above code:
 * Each element of the data array has values specific to each row of the DataTable. The values in the array represent the following:
 	* The name of the Country.
 	* Time according to the format
-	* Value of the data plots, i.e. sales per date. 
+	* Total Sales amount 
 
 Next, we will discuss the different operators which you can apply to the `DataTable`.
 

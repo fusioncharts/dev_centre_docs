@@ -10,9 +10,9 @@ heading: Methods
 
 Creates data table in the data store.
 
-* **data:** 2D To add values to the DataTable you can provide the data in both JSON and 2D array format.
+* **data:** Add values to the `DataTable`, you can provide the data in both JSON and 2D array format.
 
-* **schema**: schema contains an array which has multiple objects created in it. Each object represents a column in the DataTable.
+* **schema**: Schema contains an array which has multiple objects created in it. Each object represents a column in the DataTable.
 
 ```
 //Schema
@@ -20,7 +20,7 @@ Creates data table in the data store.
     "name": "Time", //Column Name
     "type": "date", //It can be text/number/date/interval
     "format": "%-m/%-d/%Y" //Suitable format for rows
-    "enableUTC": "false" //Sets whether the time zone should be local or the one specified in the chart
+    
 }]
 ```
 
