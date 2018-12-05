@@ -4,11 +4,9 @@ description: This article outlines the steps to add filter operations.
 heading: Filters
 ---
 
-The DataStore comes with a set of operations that you can use to filter a set of data values from a large dataset, based on one or more conditions. If you apply one of these operations on the `DataTable` it generates a new child table with the filtered data.
+The `DataStore` comes with a set of operations that you can use to filter data values from a large dataset, based on one or more conditions. If you apply one of these operations on the `DataTable` it generates a new child table with the filtered data.
 
 ## Types of filters
-
-Filters support different types of data values - while you can apply some to columns with any data type.
 
 The predefined filters are:
 
