@@ -4,7 +4,7 @@ description: This article outlines the steps to groupby.
 heading: GroupBy
 ---
 
-GroupBy is used to group related data in a `DataTable`. It groups the rows that have the same values in one or more columns. For example, if a particular column has the same values in different rows, `groupBy` will arrange these rows in a group.
+`GroupBy` is used to group the rows that have the same values in one or more columns. For example, if a particular column has the same values in different rows, `groupBy` will arrange these rows in a group.
 
 When you apply `groupBy` into a `DataTable`, it transforms the data and creates a new `DataTable`. The syntax to apply groupBy to the `DataTable` in the DataStore is given below:
 
@@ -20,13 +20,13 @@ In the above code:
 
 GroupBy method takes two arguments which are:
 
-* An array of the group by configurations
+* An array of the group by configurations.
 
-* An array of the aggregation configurations
+* An array of the aggregation configurations.
 
 ### Groupby Configuration
 
-In the first argument of the groupBy method, each group of configuration object can have the following attributes:
+In the first argument of the `groupBy` method, each group of configuration object can have the following attributes:
 
 #### Column
 
@@ -62,7 +62,7 @@ This attribute is only applicable if you group on date/time. This attribute spec
 
 > It is mandatory to set the unit using `timeUnit` attribute at the time of date/time grouping.
 
-Syntax to apply `timeUnit` attribute is:
+Refer to the code below:
 
 ```
 column: 'OrderDate',
