@@ -20,7 +20,7 @@ The salient  features of the time axis are:
 
 * The Time Axis supports almost all types of time-related units, from milliseconds (smallest) to years (largest).
 
-* The Time Axis automatically updates itself whenever there is a change in the time period from any of the components like standard range selector, custom range selector, timme navigator and interactions such as zoom/pan from the chart canvas.
+* The Time Axis automatically updates itself whenever there is a change in the time period from any of the components like standard range selector, custom range selector, time navigator and interactions such as zoom/pan from the chart canvas.
 
 A sample chart is shown below:
 
@@ -36,11 +36,9 @@ Let's suppose that you have a tabular data which has multiple date/time columns.
 xAxis {
 	"plot": "Order Date"
 }
-
 ```
 
 In th above code:
 
 * Create the `xAxis` object.
-* Set the column name which you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date`
-
+* Set the column name which you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date` is the column name.
