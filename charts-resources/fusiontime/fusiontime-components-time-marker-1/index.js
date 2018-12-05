@@ -19,6 +19,7 @@
             title: 'Interest Rate'
         }],
         xAxis: {
+            plot: 'Time',
             timemarker: [{
                 start: 'Mar-1980',
                 label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
