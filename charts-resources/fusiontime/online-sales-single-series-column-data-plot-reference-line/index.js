@@ -15,7 +15,7 @@
                 "value": "Sales",
                 "type": "line"
             },
-            "referenceLine": [{
+            "referenceLineconfig": [{
                 "label": "Daily Target",
                 "value": 300
             }],

@@ -72,12 +72,12 @@ This article contains the list of attributes of FusionTime. The attributes have 
 	<tr>
 		<td>`label`</td>
 		<td>String</td>
-		<td></td>
+		<td>The label which gets displayed when you hover the reference lines.</td>
 	</tr>
 	<tr>
 		<td>`value`</td>
 		<td>Number</td>
-		<td></td>
+		<td>This attribute specifies the value at which the reference line is drawn.</td>
 	</tr>
 </table>
 
@@ -90,9 +90,34 @@ This article contains the list of attributes of FusionTime. The attributes have 
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>`label`</td>
+		<td>String</td>
+		<td>Sets the label of the time marker.</td>
+	</tr>
+	<tr>
+		<td>`start`</td>
+		<td>String</td>
+		<td>Sets the start time of the marker. Corresponds to the start of the date/time.</td>
+	</tr>
+	<tr>
+		<td>`end`</td>
+		<td>String</td>
+		<td>Sets the end time of the marker. If this is attribute is not specified, the marker is represented as a line and not as a band. Corresponds to the end of the given date/time.</td>
+	</tr>
+	<tr>
+		<td>`timeFormat`</td>
+		<td>String</td>
+		<td>Sets the date/time format and specifies the start and end values for the time marker.</td>
+	</tr>
+	<tr>
+		<td>`unit`</td>
+		<td>String</td>
+		<td>Defines the time unit for the time marker. Click here for the list of time units available.</td>
+	</tr>
+	<tr>
+		<td>`multiplier`</td>
+		<td>NUmber</td>
+		<td>Sets the multiplier of the time unit. Default is 1.</td>
 	</tr>
 </table>
 
@@ -103,6 +128,31 @@ This article contains the list of attributes of FusionTime. The attributes have 
 		<th>Attribute</th>
 		<th>Type</th>
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
 	</tr>
 	<tr>
 		<td></td>
