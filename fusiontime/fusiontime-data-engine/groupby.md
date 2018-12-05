@@ -30,7 +30,7 @@ In the first argument of the `groupBy` method, each group of configuration objec
 
 #### `column`
 
-Name of the column from the dataTable created using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview).
+Name of the column from the data table created using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview).
 
 #### `outputAs`
 
@@ -60,14 +60,14 @@ Refer to the code below:
 
 ```
 column: 'OrderDate',
-timeUnit: FusionCharts.DataStore.DatetimeUnits.Month
+timeUnit: FusionCharts.Utils.DatetimeUnits.Month
 ```
 
 #### `outputFormat`
 
 `outputFormat` attribute is used to set the format of the column being grouped. To set the date/time format of the chart, set the value of `outputFormat` attribute as per your requirement.
 
-List of predefined date/time format is given below:
+If the `outputFormat` of the data is not specified, the default date/time format is as listed below:
 
 <table>
 	<tr>
@@ -87,13 +87,13 @@ List of predefined date/time format is given below:
 	</tr>
 	<tr>
 		<td>`Day`</td>
-		<td>%b %d %Y</td>
-		<td>Jan 01 2018</td>
+		<td>%b %d, %Y</td>
+		<td>Jan 01, 2018</td>
 	</tr>
 	<tr>
 		<td>`Hour`</td>
-		<td>%b %d %Y %H hrs</td>
-		<td>Jan 01 2018 23 hrs</td>
+		<td>%b %d, %Y %H hrs</td>
+		<td>Jan 01, 2018 23 hrs</td>
 	</tr>
 	<tr>
 		<td>`Minute`</td>
@@ -122,7 +122,7 @@ List of predefined date/time format is given below:
 
 `weekStartFrom` attributes specifies the **weekday** from where you want to start the week at the time of grouping. This attribute is applicable only when **weekly binning** is applied at the time of grouping.
 
-`WeekDays` is a separate enum of `FusionCharts.DataStore`. Weekdays consists of:
+`Weekdays` is a separate enum of `FusionCharts.Utils`. Weekdays consists of:
 
 * Sunday
 * Monday
@@ -143,8 +143,8 @@ For example:
 ```
 [{
 	column: 'Import date',
-	timeUnit: DatetimeUnits.Week,
-	weekStartsFrom: Weekdays.Monday,
+	timeUnit: FusionCharts.Utils.DatetimeUnits.Week,
+	weekStartsFrom: FusionCharts.Utils.Weekdays.Monday,
 	binSize: 2,
 	startValue: +new Date(2018/1/15),
 	outputAs: 'Fortinightly sum of imports'
@@ -159,13 +159,7 @@ In the second argument of the groupBy method, you can apply the following attrib
 
 #### `column`
 
-Name of the column from the dataTable created using schema.
-
-#### `outputAs`
-
-`outputAs` is an attribute which is used to rename the column, on which `groupBy` has been applied. The renaming of the column reflects in the new dataTable created after `groupBy`.
-
-> If the `outputAs` is not applied, the column name remains the same as the previous `DataTable`.
+Name of the column from the data table created using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview)..
 
 #### `operation`
 
@@ -180,6 +174,12 @@ Name of the column from the dataTable created using schema.
 * last
 * variance
 * stddev
+
+#### `outputAs`
+
+`outputAs` is an attribute which is used to rename the column, on which `groupBy` has been applied. The renaming of the column reflects in the new dataTable created after `groupBy`.
+
+> If the `outputAs` is not applied, the column name will be previous column name-operation.
 
 Now, lets apply `groupBy` operation to the data table given below:
 
