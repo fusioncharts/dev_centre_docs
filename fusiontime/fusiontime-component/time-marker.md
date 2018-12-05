@@ -28,7 +28,7 @@ Refer to the code below:
 ```
 xAxis: {
     timemarker: [{
-        start: 'Jul-1981',
+        start: 'Mar-1982',
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
     }],
@@ -56,7 +56,7 @@ Refer to the code below:
 xAxis: {
     columnname: 'Time',
     timemarker: [{
-        start: 'Jul-1981',
+        start: 'Mar-1982',
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
         repeat {
@@ -79,8 +79,8 @@ Refer to the code below:
  xAxis: {
     columnname: 'Time',
     timemarker: [{
-        start: 'Jul-1981',
-        end: 'Nov-1982',
+        start: 'Mar-1980',
+        end: 'Jun-1983',
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
     },
