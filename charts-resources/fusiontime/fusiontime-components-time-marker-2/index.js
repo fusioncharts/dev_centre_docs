@@ -26,7 +26,7 @@
                 timeFormat: "%b-%Y",
                 repeat: {
                     unit: 'Year',
-                    multiplier: 1
+                    multiplier: 5
                 },
                 style: {
                     marker: {
