@@ -4,7 +4,7 @@ description: This article outlines the steps to use Pipe.
 heading: Join Operations using Pipe
 ---
 
-**Pipe** is an operation which lets you run two or more data operations in a sequence. Instead of applying multiple filters one by one to a `DataTable`, you can combine them in one single step using **pipe** and apply to the **DataTable**. 
+**Pipe** is an operation which lets you run two or more data operations in a sequence. Instead of applying multiple filters one by one to a `DataTable` which creates multiple DataTable(s), you can combine them in one single step using **pipe** and apply to the **DataTable**. This creates only one DataTable.
 
 Let's take a basic example of a data table shown below:
 
@@ -22,14 +22,13 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 Now, let's add some operations to the above table:
 
-1. Apply the `equals` filter on **Country** column.
+* Apply the `equals` filter on **Country** column.
 
 ```
 var filter1 = FusionCharts.DataStore.Operators.equals('Country', 'India');
 ```
 
-
-2. Apply the `greater` filter on **Quantity** column.
+* Apply the `greater` filter on **Quantity** column.
 
 ```
 var filter2 = FusionCharts.DataStore.Operators.greater('Quantity', 3);
