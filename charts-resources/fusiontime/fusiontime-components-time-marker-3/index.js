@@ -27,7 +27,7 @@
                 timeFormat: "%b-%Y",
                 style: {
                     marker: {
-                        fill: '#D0D6F4'
+                        fill: '#f8b8b7'
                     }
                 }
             }]
