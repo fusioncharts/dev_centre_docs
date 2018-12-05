@@ -4,21 +4,21 @@ description: This article defines the tooltips.
 heading: Tooltips
 ---
 
-A tooltip is a rectangular box that displays additional information on a particular data plot when you hover on the data plot. In FusionTime, charts have consolidated tooltips which display the detail of the hovered element.
+A tooltip is a rectangular box that displays additional information of a particular data plot when you hover on the data plot. In FusionTime, charts have consolidated tooltips which display the detail of the hovered element.
 
 <img src="{% site.baseurl %}/images/fusiontime-component-tooltip.png" alt="Tooltip" width="700" height="420">
 
-The above image is of a single series chart which displays valuable information in tooltips, such as: 
+The above image is of a tooltip which displays infomration of the data plot, such as: 
 
 * **Date**
 * **Column** name
 * **Value** of that particular data plot.
 
-Now, let's create a chart with multiple plots which will compare online sales of SuperStore in United States of America and India.
+Now, let's create a chart with multiple plots which will compare online sales of SuperStore in the US and India.
 
 {% embed_ftChart online-sales-multi-series %}
 
-In the given example, you can see a chart with multipe data plots - displaying the sales figures of a company in India and the US. Hover the mouse pointer anywhere in the canvas and you will see a consolidated tooltip showing the names and values for both data plots at that point. 
+In the given example, hover on the data plot and you will see a consolidated tooltip showing the names and values for both data plots at that point of time. 
 
 By default, the tooltip is displayed. To hide the tooltip set the `showToolTip` attribute to `0`.
 
@@ -34,7 +34,13 @@ Refer to the code below:
 }
 ```
 
-In FusionTime, you can have different canvases for different measures visualized in a multi-variate chart. When you hover a particular data plot, by default tooltips get displayed in all the canvases of the chart. To disable multiple tooltips on the multiple canvases of the chart, set the `multiCanvasTooltip` attribute to `0`.
+### Tooltips in a multivariate chart 
+
+In FusionTime, you can have different canvases for different measures visualized in a multivariate chart. When you hover on a data plot, by default tooltips get displayed in all the canvases of the chart. Refer to the image below:
+
+<multivariate tooltip image>
+
+To disable multiple tooltips, set the `multiCanvasTooltip` attribute to `0`.
 
 ### Tooltips in Time Markers
 
