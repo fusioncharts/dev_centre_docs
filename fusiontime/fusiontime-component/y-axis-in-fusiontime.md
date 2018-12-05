@@ -4,7 +4,31 @@ description: This article defines the y-axis.
 heading: Y-Axis
 ---
 
-In FusionTime, you can have different y-axis for different measures visualized in a multi-variate chart.
+In FusionTime, the `yAxis` object can be specified within the `dataSource` object of the FusionCharts constructor.
+
+It will accept inputs in two forms -  an array of `yAxis` objects or an array of Strings.
+
+An array of objects is applicable when you want to provide different configurations for each measure being plotted.
+
+```
+yAxis: [{
+    "plot": {
+        "value": "Sales",
+        "type": "line"
+    },
+    "title": "Total Sales",
+    "format"{
+        "suffix": "$"
+        } 
+}],
+```
+
+An array of strings is applicable when there are multiple measures to be plotted on separate canvases without any additional configuration.
+
+<<example code>>
+
+
+
 
 <img src="{% site.baseurl %}/images/fusiontime-component-y-axis.png" alt="Y-axis" width="700" height="420">
 
