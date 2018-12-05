@@ -92,14 +92,11 @@ let schema = [{
 ```
 
 In the above code:
-
 * `schema` is the variable in which the array is saved.
-
-* The first object represents the first column in the `DataTable`. In the above sample **Country** is the name of the column.
-
-* The second object sets the **date/time** [format]({% site.baseurl %}/fusiontime/api-reference/fusiontime-attributes#datetime-format-7) for the chart. The name of the column has been set to **Time** and the date format has been set to `%-m/%-d/%Y`.
-
-* The last object represents the third column named **Sales**, the values of which will map to the data plots.
+* Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
+    * name - Specify the name of the column.
+    * type - Specify the type of the column.
+    * format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here]({% site.baseurl %}/fusiontime/fusiontime-attributes).
 
 Now that we have the schema ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 

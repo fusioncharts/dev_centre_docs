@@ -8,7 +8,7 @@ heading: Overview
 
 `DataStore` is an in-browser store of tabular data. Mainly, the `DataStore` contains the `DataTable` derived from the original data source along with some data operations. You can then perform data operations on this `DataTable` to transform the data as per your requirement. For any operation applied a new `DataTable` is generated keeping the source data intact.
 
-> 'DataTable' accepts both arrays of JSON object or 2D array.
+> 'DataStore' accepts both arrays of JSON object or 2D array.
 
 The `DataStore` contains the following:
 * `DataTable` to represent the data on which operations can be performed.
@@ -30,11 +30,11 @@ To create a `DataTable`, you need to provide:
 
 * The `schema`, which defines the properties of the columns.  
 
-* The `actual` values for each row and column as the data.
+* The actual values for each row and column as the `data`.
 
 ### Schema
 
-The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`. The schema helps `DataTable` understand the columns in your data, the data type for each column and the input format in case of date. It is mandatory to specify the schema for each `DataTable`.
+The schema contains an array of objects. Each object represents a column in the `DataTable`. The schema helps `DataTable` understand the columns in the data, the data type for each column and the input format in case of date. It is mandatory to specify the schema for each `DataTable`.
 
 The schema of a `DataTable` is shown below:
 
@@ -56,7 +56,7 @@ In the above code:
 * `schema` is the variable in which the array is saved.
 * Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
 	* name - Specify the name of the column.
-	* type - Specify the etype of the column.
+	* type - Specify the type of the column.
 	* format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here]({% site.baseurl %}/fusiontime/fusiontime-attributes).
 	
 ### Data
@@ -104,7 +104,7 @@ let data = [
 
 In the above code:
 * `data` is the variable in which the data array is saved.
-* Each element of the data array has values specific to each row of the DataTable. The values in the array represent the following:
+* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
 	* The name of the Country.
 	* Time according to the format
 	* Total Sales amount 
