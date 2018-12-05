@@ -22,7 +22,7 @@ The major features of **Time Navigator** include the following:
 
 The time navigator is shown in the image below:
 
-<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png">
+<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png" width="639" height="393">
 
 In this article, we will discuss about the different interactions of the time navigator and how to hide the time navigator.
 
