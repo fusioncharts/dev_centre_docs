@@ -35,7 +35,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 **Equals** is an operation which can be used when you want to filter specific data value. Let's assume that we have sales data from January 2015 to June 2016. Out of these values, you only want to visualize the sales data for a specific date. In this scenario, we have to use the `equals` operator which will render the chart using data plots for a particular date.
 
-**Equals** take two arguments which are:
+**Equals** takes two arguments which are:
 
 * Column name on which you want to apply the filter
 * The specific value you want to filter.
