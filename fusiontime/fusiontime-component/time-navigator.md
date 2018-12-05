@@ -55,8 +55,9 @@ Refer to the code below:
 
 ```
 {
-    chart: { },
+    chart: { 
     "enableNavigator": "0", // Disables time Time Navigator
+    		},
     caption: {
         text: 'Global Online Sales of a SuperStore'
     }

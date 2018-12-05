@@ -38,9 +38,11 @@ You can customize data markers using the following attributes:
 
 * Use the `timeFormat` attribute to set the format of the date corresponding to the marker.
 
-* Use the `type` attribute to defines the type of the marker as `flag` or `pin`.
+* Use the `type` attribute to defines the type of the marker as `flag`.
 
-* Use the `identifier` attribute to set the character to be displayed within the marker. Note that you can only use this attribute if the marker is of the `flag` type.
+* Use the `identifier` attribute to set the character to be displayed within the marker.
+
+> You can only use `identifier` attribute if the marker is of the `flag` type.
 
 * Use the `tooltext` attribute to set the text to be displayed in the tooltip, when you hover the mouse pointer over the data marker.
 
