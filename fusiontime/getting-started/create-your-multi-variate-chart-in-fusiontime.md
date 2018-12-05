@@ -8,7 +8,7 @@ The variations among different related variables can be easily found out using F
 
 In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple values (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis]({% site.baseurl %}/fusiontime/fusiontime-component/time-axis) (x-axis).
 
-> FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
 
 The multivariate chart is shown below:
 
