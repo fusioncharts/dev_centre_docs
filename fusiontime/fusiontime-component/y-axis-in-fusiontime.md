@@ -8,70 +8,54 @@ In FusionTime, the `yAxis` object can be specified within the `dataSource` objec
 
 It will accept inputs in two forms -  an array of `yAxis` objects or an array of Strings.
 
-An array of objects is applicable when you want to provide different configurations for each measure being plotted.
-
-```
-yAxis: [{
-    "plot": {
-        "value": "Sales",
-        "type": "line"
-    },
-    "title": "Total Sales",
-    "format"{
-        "suffix": "$"
-        } 
-}],
-```
-
-An array of strings is applicable when there are multiple measures to be plotted on separate canvases without any additional configuration.
-
-<<example code>>
-
-
-
-
-<img src="{% site.baseurl %}/images/fusiontime-component-y-axis.png" alt="Y-axis" width="700" height="420">
-
-You can configure the y-axis of the chart by creating the Y-axis object.
-
-```
-yAxis: [{
-    "plot": {
-        "value": "Sales",
-        "type": "column"
-    }
-}],
-```
-
-In the above code, the plot type has been changed to `column` (default is `line`). The above data structure is applicable for a chart with single data plot.
-
-By default, if there is more than one measure, FusionTime renders a multivariate chart with multiple canvases. To configure the y-axis for each canvas you just have to set different values to render the chart.
-
-{% embed_ftChart online-sales-multi-variate-column-data-plot %}
-
-The structure of the `y-axis` to render the above chart is shown below:
+An example of array of `yAxis` objects is shown in the code below:
 
 ```
 yAxis: [{
     plot: {
         value: 'Sales',
-        type: 'column'
     },
 }, {
     plot: {
-        value: 'Quantity',
-        type: 'column'
-    }
-}, {
-    plot: {
         value: 'Shipping Cost',
-        type: 'column'
     }
 }],
+
 ```
+Refer to the image below:
 
-In the given example, you can see how the Y-axes differ in all the charts, although the time axis is identical in all of them. This is because the charts represent different types of data within the same time interval. From the top: 
+<img src="{% site.baseurl %}/images/fusiontime-component-y-axis.png" alt="Y-axis" width="700" height="420">
 
-* The first chart shows **sales** figures achieved by the company.
-* The second one shows the **quantity** of products sold.
-* The third one displays the **shipping costs** borne by the company to get the products delivered to customers.
+An array of strings is applicable when you want to provide different configurations for multiple canvases. Refer to the code below:
+
+```
+"yAxis": [{
+    "plot": ["Sales", "Shipping Cost"]
+  }]
+
+```
+Refer to the chart below:
+
+{% embed_ftChart online-sales-multi-variate %}
+
+To configure the y-axis you can:
+
+* Set the column name using the `value` attribute under the `plot` object to specify the column which is mapped to the y-axis.
+* Set the y-axis title using the `title attribute under the `yAxis` object.
+* Set the suffix and prefix of the y-axis values using the suffix and prefix attributes under the `format` object within the `yAxis` object.
+
+Refer to the code below:
+
+```
+yAxis: [{
+    plot: {
+        "value": "Sales",
+    },
+    "title": "Total Sales",
+}, {
+    format: {
+        "prefix": "$",
+    }
+}],
+
+```
