@@ -4,47 +4,29 @@ description: This article outlines the steps to configure Data Markers.
 heading: Data Markers
 ---
 
-Data marker in a chart represents an important event, which occurred on a specific data point. A data marker is a flag which is visible only when the active window contains the date. Hovering on a data marker shows additional description in the tooltip, which can include a paragraph with details on the data, etc.
+Data marker in a chart represents an important event, which occurred on a specific data point. Hovering on a data marker shows additional description of the event in the tooltip.
+
+The image below shows the data marker on a time series chart:
 
 <img src="{% site.baseurl %}/images/fusiontime-component-data-markers.png" alt="Data Markers" width="700" height="420">
 
-Data marker has:
+## Create Data Markers
 
-* **Type**: Type of the data marker. Example: flag.
+To create data Markers follow the setps given below:
 
-* **Label**: Label of the specific data markers.
+* Create a `dataMarker` object.
 
-* **Description**: Description is visible only when you hover over the data marker. A description of a data marker can have text, image, URL, etc.
+* Within the `dataMarker` object use the `seriesName` attribute to specify the exact name of the series, against which the data marker will be displayed. If you need to mention the exact name of the series as a combination of a series name and a measure name, then specify it in the format `<series_name>-<measure_name>`.
 
-A data marker appears as shown in the chart below:
+* Within the `dataMarker` object use the `time` attribute to set the time instance on which the data marker will be displayed. 
 
-{% embed_ftChart fusiontime-components-data-marker %}
+* Within the `dataMarker` object use the `timeFormat` attribute to set the format of the date/time corresponding to the marker.
 
-In the given example, you can see data markers indicating the following information:
+* Within the `dataMarker` object use the `type` attribute to define the type of the marker as `flag`.
 
-* The exact name of the series on which the data marker is being displayed. 
+* Within the `dataMarker` object use the `identifier` attribute to set the character to be displayed within the marker.
 
-* The time at which the data marker is being shown. Note that this value corresponds to the start of the date range you are viewing.
-
-Apart from these, you can also hover the mouse pointer over the marker to see the underlying data in a tooltip. If you entered a description about the data plot you are hovering over, it will appear here as well.
-
-## Configure Data Markers
-
-You can customize data markers using the following attributes:
-
-* Use the `seriesName` attribute to specify the exact name of the series, against which the data marker will be displayed. If you need to mention the exact name of the series as a combination of a series name and a measure name, then specify it in the format `<series_name>-<measure_name>`.
-
-* Use the `time` attribute to set the time at which the data marker will be displayed. 
-
-* Use the `timeFormat` attribute to set the format of the date corresponding to the marker.
-
-* Use the `type` attribute to defines the type of the marker as `flag`.
-
-* Use the `identifier` attribute to set the character to be displayed within the marker.
-
-> You can only use `identifier` attribute if the marker is of the `flag` type.
-
-* Use the `tooltext` attribute to set the text to be displayed in the tooltip, when you hover the mouse pointer over the data marker.
+* Within the `dataMarker` object use the `tooltext` attribute to set the text to be displayed in the tooltip, when you hover the mouse pointer over the data marker.
 
 Refer to the code given below:
 
@@ -99,3 +81,9 @@ dataMarker: [{
     tooltext: "Fed reduced the interest rates to sub 0.25% to manage the menace of longest economic downturn since World War 2"
 }],
 ```
+
+The data marker created using the above code is shown below:
+
+{% embed_ftChart fusiontime-components-data-marker %}
+
+
