@@ -56,7 +56,7 @@ That completes the installation of **FusionTime**.
 
 Let's create a simple time-series chart showcasing online sales of SuperStore in the US.
 
-> FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
 
 The chart is shown below:
 

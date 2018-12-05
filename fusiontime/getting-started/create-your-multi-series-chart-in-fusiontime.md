@@ -8,7 +8,7 @@ Previously, we have learned how to create a [simple chart]({% site.baseurl %}/fu
 
 In this article, we'll create our first chart with multiple plots which will compare online sales of SuperStore in the **US** and **India**. 
 
-> FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
 
 The chart is shown below:
 
