@@ -30,7 +30,7 @@ Creates data table in the data store.
 //Config
 {
 	"enableIndex": true, //default is true
-	"indexBy": "columnName", //Column Name on which the indexing is applied 
+	"indexBy": "Time", //Column Name on which the indexing is applied 
 }
 ```
 
@@ -147,26 +147,26 @@ Disposes the table.
 
 ## Date Utils
 
-### `fusioncharts.utils.duration(Unit, number)`
+### `FusionCharts.Utils.duration(DatetimeUnits, number)`
 
 Represents the time duration. Example, `2 hours`,  `3 months`, etc
 
-* duration(Units.Hour, 2)
-* duration(Units.Month, 3)
+* FusionCharts.Utils.duration(FusionCharts.Utils.DatetimeUnits.Hour, 2)
+* FusionCharts.Utils.duration(FusionCharts.Utils.DatetimeUnits.Month, 3)
 
-### `fusioncharts.utils.before(duration, [date], [enableUTC], [weekStartFrom])`
+### `FusionCharts.Utils.before(duration, [date], [isUTC], [weekStartFrom])`
 
 Returns a date offset(negative) from the specified duration.
 
 If `date` argument is not provided, current date is considered and returns the timestamp of the date.
 
-### `fusioncharts.utils.after(duration, [date], [enableUTC], [weekStartFrom])`
+### `FusionCharts.Utils.after(duration, [date], [isUTC], [weekStartFrom])`
 
 Returns a date offset(positive) from the specified duration.
 
 If `date` argument is not provided, current date is considered and returns timestamp of the date.
 
-### `fusioncharts.utils.parseDate('date in string representation', 'format', [enableUTC])`
+### `Fusioncharts.Utils.parseDate('date in string representation', 'format', [isUTC])`
 
 Converts the string representation to timestamp.
 
@@ -176,7 +176,7 @@ Example,
 let financialYearEnd = parseDate('2018-3-31', '%Y-%m-%d');
 ```
 
-### `fusioncharts.utils.formatDate(timestamp, 'format', [enableUTC])`
+### `Fusioncharts.Utils.formatDate(timestamp, 'format', [isUTC])`
 
 Converts the timestamp to an appropriate string representation.
 

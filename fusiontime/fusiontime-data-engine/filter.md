@@ -33,7 +33,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Equals
 
-**Equals** is an operation which can be used when you want to filter specific data value. Let's assume that we have sales data from January 2015 to June 2016. Out of these values, you only want to visualize the sales data for a specific date. In this scenario, we have to use the `equals` operator which will render the chart using data plots for a particular date.
+**Equals** is an operation which can be used when you want to filter specific data value. In the above table, the Country column has three countries in it. To filter the data for United States, set the `equals` operator and set its value to United States.
 
 **Equals** takes two arguments which are:
 
@@ -57,7 +57,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Greater
 
-**Greater** is an operation which can be used when you want to filter the data values greater than a specific numeric value. Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values greater than 100. In this scenario, we have to use the `greater` filter which will render the chart using data plots with the values above 100.
+**Greater** is an operation which can be used when you want to filter the data values greater than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `greater` operater to filter the values greater than **100**.
 
 **Greater** takes two arguments which are:
 
@@ -81,12 +81,12 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### GreaterEquals
 
-This operation is similar to `greater` filter which can be used when you want to filter the data values greater than a specific numeric value. `greaterEquals` operation is used when you want to filter the data values greater or equal to the specific value.  Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values greater or equal to 100. In this scenario, we have to use the `greaterEquals` filter which will render the chart using data plots with the value above and equal to 100.
+This operation is similar to `greater` filter which can be used when you want to filter the data values greater than a specific numeric value. `greaterEquals` operation is used when you want to filter the data values greater and equal to the specific value. In the above table, the **Quantity** column consists of numeric value. Let's apply the `greaterEquals` operater to filter the values greater and equal to **3**.
 
 **GreaterEquals** takes two arguments which are:
 
 * Column name on which you want to apply the filter
-* To render the chart by values greater and equal to 500, set the value of this argument to **500**.
+* To render the chart by values greater and equal to 3, set the value of this argument to **3**.
 
 The data structure to set the `greaterEquals` filter is shown below:
 
@@ -110,12 +110,12 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Less
 
-**Less** is an operation which can be used when you want to filter the data values less than a specific numeric value. Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values less than 1000. In this scenario, we have to use the `less` filter which will render the chart using data plots with the value above 1000.
+**Less** is an operation which can be used when you want to filter the data values less than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `less` operater to filter the values less than **100**.
 
 **Less** takes two arguments which are:
 
 * Column name on which you want to apply the filter
-* To render the chart by values less than 1000, set the value of this argument to **1000**.
+* To render the chart by values less than 100, set the value of this argument to **100**.
 
 The data structure to set the `less` filter is shown below:
 
@@ -137,12 +137,12 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### LessEquals
 
-This operation is similar to `less` filter which can be used when you want to filter the data values less than a specific numeric value. `lessEquals` filter is used when you want to filter the data values less than or equal to the specific value.  Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values less than or equal to 500. In this scenario, we have to use the `Equals` filter which will render the chart using data plots with the value below and equal to 500.
+This operation is similar to `less` filter which can be used when you want to filter the data values less than a specific numeric value. `lessEquals` operation is used when you want to filter the data values less and equal to the specific value. In the above table, the **Quantity** column consists of numeric value. Let's apply the `lessEquals` operater to filter the values less than and equal to **3**.
 
 **LessEquals** takes two arguments which are:
 
 * Column name on which you want to apply the filter
-* To render the chart by values less than and equal to 500, set the value of this argument to **500**.
+* To render the chart by values less than and equal to 3, set the value of this argument to **3**.
 
 The data structure to set the `lessEquals` filter is shown below:
 
@@ -163,12 +163,12 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Between
 
-**Between** is an operation which can be used when you want to render the chart using data between specific date/time or value. Let's assume that we have data with values from 100 to 1500. Out of these values, you only want to visualize the values from 500 to 1000. In this scenario, we have to use the `between` filter which will render the chart using data plots with the value from 500 to 1000.
+**Between** is an operation which can be used when you want to render the chart using data between specific date/time or value. In the above table, the **Sales** column consists of numeric value. Let's apply the `between` operater to filter the values between **50** and **100**.
 
 **Between** takes three arguments which are:
 
 * Column name on which you want to apply the filter
-* To render the chart by values from 500 to 1000, set the value of the second argument to **500** and the third argument to **1000**.
+* To render the chart by values from 50 to 100, set the value of the second argument to **50** and the third argument to **100**.
 
 The data structure to set the `between` filter is shown below:
 
