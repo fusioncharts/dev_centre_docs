@@ -22,7 +22,6 @@ The major features of **Time Navigator** include the following:
 
 * In case of multivariate charts, there is only one common time navigator for all the canvases. 
 
-
 The time navigator is shown in the image below:
 
 <img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png">
