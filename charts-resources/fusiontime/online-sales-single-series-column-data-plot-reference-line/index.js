@@ -19,7 +19,7 @@
                 "label": "Daily Target",
                 "value": 300,
                 "style": {
-                    "text": style | vertical-align
+                    "text": "style | vertical-align"
                 }
             }],
         }
