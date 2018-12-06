@@ -26,6 +26,24 @@ This article contains the list of attributes of FusionTime. The attributes have 
 	</tr>
 </table>
 
+```
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+		xAxis {
+			plot: ' ', //Column Name
+			timemarker: [{
+                start: ' ', //Start Date
+                end: ' ', //End Date
+                label: ' ', //Label of the Time Axis
+                timeFormat: ' ' //Time format
+            }] 
+		}
+    },
+});
+```
+
 ## Y Axes
 
 <table>
