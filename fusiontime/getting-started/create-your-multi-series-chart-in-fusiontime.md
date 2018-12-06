@@ -78,11 +78,11 @@ In the above code:
 
 * For each data plots in the chart, an array is created which consists of values (sub-array) for each row in the `DataTable`. The values in the sub-array represent:
 
-    * In this example, we are showing the sales of two countries as India and USA.
+    * Name of the two countries as **USA** and **India**.
 
     * **Time** according to the format.
 
-    * **Value** of the data plots, i.e. sales per date.
+    * **Value** of the data plots, i.e., sales per date.
 
 We are all set with our data to create the chart. 
 
@@ -90,7 +90,7 @@ We are all set with our data to create the chart.
 
 ## Create the `index` file
 
-Creating a chart with multiple plots is very simple in FusionTime. You just needs to specify the particular dimensional column name in the `series` attribute within [y-axis]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime) object. The unique list of the dimensional values of the column gets plotted on the canvas. To do this, create an `index` file and copy the following code: 
+Creating a chart with multiple plots is very simple in FusionTime. You just needs to specify the particular dimensional column name in the `series` attribute within [y-axis]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime) object. To do this, create an `index` file and copy the following code: 
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
