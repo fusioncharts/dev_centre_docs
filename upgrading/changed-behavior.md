@@ -130,3 +130,5 @@ Following are the list of attributes which have been removed from the FusionChar
 * `ref` property is deprecated. Use `getObjectReference()` instead.
 
 * `dataXMLInvalid` event is deprecated. Use `dataInvalid` instead.
+
+* `Fusioncharts.Version` is deprecated.
