@@ -4,7 +4,11 @@ description: This article defines the time navigator.
 heading: Time Navigator
 ---
 
-In FusionTime, the time navigator facilitates you to focus on details in a specific time period while still staying in context of the whole timeline. The time navigator plots the complete data in a rectangular box below the time axis.  
+In FusionTime, the time navigator facilitates you to focus on details in a specific time period while still staying in context of the whole timeline. The time navigator plots the complete data in a rectangular box below the time axis. 
+
+The time navigator is shown in the image below:
+
+<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png"> 
 
 The major features of **Time Navigator** include the following:
 
@@ -21,10 +25,6 @@ The major features of **Time Navigator** include the following:
 * The chart canvas updates automatically every time you make a selection using the handles of the Time Navigator.
 
 * In case of multivariate charts, there is only one common time navigator for all the canvases. 
-
-The time navigator is shown in the image below:
-
-<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png">
 
 In this article, we will discuss about the different interactions of the time navigator and how to hide the time navigator.
 
