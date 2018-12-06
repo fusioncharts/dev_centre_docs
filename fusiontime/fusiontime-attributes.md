@@ -26,6 +26,21 @@ This article contains the list of attributes of FusionTime. The attributes have 
 	</tr>
 </table>
 
+```
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+		xAxis {
+			plot: ' ', //Column Name
+			timemarker: [{
+				// Attributes of Time Marker
+            }] 
+		}
+    },
+});
+```
+
 ## Time Markers
 
 <table>
@@ -81,8 +96,8 @@ new FusionCharts({
                 timeFormat: ' ', //Time format
                 // Define the frequency, at which the cyclic time marker will be repeated.
                 repeat {
-			        unit: Year, //Defines the time unit for the time marker.
-			        multiplier: 5 //Defines the multiplier of the time unit.
+			        unit: ' ', //Defines the time unit for the time marker.
+			        multiplier: ' ' //Defines the multiplier of the time unit.
 			    }
             }] 
 		}
@@ -126,7 +141,21 @@ new FusionCharts({
 </table>
 
 ```
-
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+		yAxis: [{
+			plotType: ' ', //To set the plot type out the 'plot' object
+		    plot: {
+		        //Column header for the measure which is plotted against the Y Axis
+		    },
+		    type: ' ', //Plot type to render the chart
+		    title: ' ', //Title of the axis
+			aggregation: ' ' //Aggregate Function 	
+		}],
+	}
+})
 ```
 
 ## Reference Lines
@@ -148,6 +177,19 @@ new FusionCharts({
 		<td>This attribute specifies the value at which the reference line is drawn.</td>
 	</tr>
 </table>
+
+```
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+        referenceLine: [{
+            'label': ' ', //Label of the reference line
+            'value': ' ' //Value of the reference line
+        }],
+	}
+})
+```
 
 ## Data Markers
 
