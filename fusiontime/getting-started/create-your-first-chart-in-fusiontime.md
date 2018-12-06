@@ -145,7 +145,7 @@ In the above code:
 * Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
     * The name of the Country.
     * Time according to the format
-    * Total Sales amount
+    * Total Sales amount 
 
 We are all set with our data to create the chart.
 
