@@ -4,7 +4,7 @@ description: This article outlines the steps to change the plot type.
 heading: Change Plot Type
 ---
 
-Plot represents a dataset which displays the relationship between two or more variables of a chart. Plot refers to a line in a line chart, a column in the column chart or an area in the area chart. 
+Plot refers to a line in a line chart, a column in the column chart or an area in the area chart. 
 
 In this article, we'll see how to change the [plot types]({% site.baseurl %}/fusiontime/fusiontime-component/plot-types-in-fusiontime) of the chart.
 
