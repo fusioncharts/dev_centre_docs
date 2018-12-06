@@ -31,8 +31,7 @@ An array of strings is applicable when you want to provide different configurati
 ```
 "yAxis": [{
     "plot": ["Sales", "Shipping Cost"]
-  }]
-
+}]
 ```
 Refer to the chart below:
 
@@ -57,5 +56,4 @@ yAxis: [{
         "prefix": "$",
     }
 }],
-
 ```
