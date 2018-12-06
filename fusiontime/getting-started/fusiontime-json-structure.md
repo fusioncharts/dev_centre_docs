@@ -35,7 +35,7 @@ new FusionCharts({
                 text: 'Online Sales of a SuperStore in the US'
             }
         }
-    })
+    });
 ```
 
 Similarly, to configure the y-axis in FusionTime you need to create a `yAxis` object and define the y-axis related properties within the object. Refer to the code below:
@@ -50,7 +50,7 @@ new FusionCharts({
                     "title": 'Sales ($)'
                 }
             }],
-    })
+    });
 ```
 
 Every component in FusionTime has its own set of properties to configure. To know more click [here]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime).
@@ -81,11 +81,10 @@ new FusionCharts({
         dataSource: {
             styleDefinition: {
                 "small-text": {
-                "font-size": "6"
+                    "font-size": "6"
             }
         }
-    }
-}
+   });
 ```
 
 OR
@@ -104,5 +103,5 @@ new FusionCharts({
         }
             }
         }
-    })
+    });
 ```
