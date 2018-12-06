@@ -231,6 +231,22 @@ new FusionCharts({
 	</tr>
 </table>
 
+```
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+        dataMarker: [{
+		    seriesName: ' ', //Name of the series
+		    time: ' ', //Time on which the data marker will be shown
+		    identifier: ' ', //Defines a character to be shown
+		    timeFormat: ' ', //Format of the date
+		    tooltext: ' ' //Text in the tooltip
+		}] 
+	}
+})
+```
+
 ## Chart Configuration and Root JSON Attributes
 
 <table>
