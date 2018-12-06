@@ -34,6 +34,7 @@ new FusionCharts({
 		xAxis {
 			plot: ' ', //Column Name
 			timemarker: [{
+				<-- Attributes of Time Marker -->
                 start: ' ', //Start Date
                 end: ' ', //End Date
                 label: ' ', //Label of the Time Axis
