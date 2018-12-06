@@ -223,4 +223,4 @@ window.charInstance = new FusionCharts({
 
 That's it! Your first multivariate chart is ready.
 
-Next, we will discuss on how to add create a [multiple plots]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.
+Next, we will discuss on how to create a [multiple plots]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.

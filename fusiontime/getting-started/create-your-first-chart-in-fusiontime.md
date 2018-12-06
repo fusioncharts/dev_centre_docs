@@ -280,4 +280,4 @@ In the above code:
 
 That's it! Your first chart using FusionTime is ready.
 
-Next, we will discuss on how to add create a [multivariate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.
+Next, we will discuss on how to create a [multivariate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.

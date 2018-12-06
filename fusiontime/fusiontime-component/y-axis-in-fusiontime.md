@@ -41,8 +41,8 @@ Refer to the chart below:
 To configure the y-axis you can:
 
 * Set the column name using the `value` attribute under the `plot` object to specify the column which is mapped to the y-axis.
-* Set the y-axis title using the `title attribute under the `yAxis` object.
-* Set the suffix and prefix of the y-axis values using the suffix and prefix attributes under the `format` object within the `yAxis` object.
+* Set the y-axis title using the `title` attribute under the `yAxis` object.
+* Set the suffix and prefix of the y-axis values using the `suffix` and `prefix` attributes under the `format` object within the `yAxis` object.
 
 Refer to the code below:
 
