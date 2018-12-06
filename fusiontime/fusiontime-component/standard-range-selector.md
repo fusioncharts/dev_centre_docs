@@ -10,13 +10,13 @@ A standard range selector is an extension which is used to select standard time 
 
 The three sections of Standard Range Selector are:
 
-    * All - Selects all of the available data values.
+* **All** - Selects all of the available data values.
 
-    * Contextual time periods - 1Y | 6M | 3M | 1M | 15D | etc. - You can select and display data for the last one year, six months, three months, or one month of the currently visible time interval, respectively. 
+* **Contextual time periods** - 1Y | 6M | 3M | 1M | 15D | etc. - You can select and display data for the last one year, six months, three months, or one month of the currently visible time interval, respectively. 
 
-    The options of the contextual time periods will vary based on the atomicity of the data and the current data displayed.
+The options of the contextual time periods will vary based on the atomicity of the data and the current data displayed.
 
-    * Busieness friendly dates - YTD | QTD | MTD | WTD - YTD, QTD, MTD, and WTD display data from the beginning of the last year, quarter, month, or week (respectively) of the total time interval in the data to the present date. 
+* **Busieness friendly dates** - YTD | QTD | MTD | WTD - YTD, QTD, MTD, and WTD display data from the beginning of the last year, quarter, month, or week (respectively) of the total time interval in the data to the present date. 
 
     These options will apppear only if the data is of the current year, quarter, month and week. 
 
