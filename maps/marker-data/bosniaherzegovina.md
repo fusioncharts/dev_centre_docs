@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -111,8 +111,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -209,38 +209,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	         <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='SJ' x='321.71' y='266.77' label='Sarajevo' labelPos='left'  />
-			<marker id='01' x='15.73' y='82.75' label='Bihac' labelPos='right' />
-			<marker id='02' x='224.8' y='350.62' label='Mostar'  />
-			<marker id='03' x='401.2' y='299.44' label='Gorazde' labelPos='right'  />
-			<marker id='04' x='273.8' y='213.42' label='Zenica'  />
-			<marker id='05' x='357.64' y='156.79' label='Tuzla'  />
-
-		</definition>
-		<application>
-			<marker id='SJ' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

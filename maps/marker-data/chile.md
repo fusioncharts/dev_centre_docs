@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -184,8 +184,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -382,57 +382,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	     <shapes>
-		      <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			  <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='SN' x='84.21' y='223.1' label='Santiago' labelPos='right'  />
-			<marker id='01' x='87.36' y='26.26' label='Arica'  />
-			<marker id='02' x='89.47' y='52.57' label='Iquique' labelPos='left'  />
-			<marker id='03' x='88.42' y='99.94' label='Antofagasta'  />
-			<marker id='09' x='72.63' y='292.57' label='Rancagua' labelPos='left'  />
-			<marker id='10' x='81.05' y='147.31' label='Chanaral' labelPos='right' />
-			<marker id='11' x='75.78' y='185.21' label='Coquimbo' labelPos='right' />
-			<marker id='05' x='69.47' y='246.26' label='Valparaiso' labelPos='left' />
-			<marker id='06' x='67.36' y='258.89' label='San Antonio' labelPos='right' />
-			<marker id='08' x='58.94' y='347.31' label='Puerto Montt' labelPos='right'  />
-			<marker id='15' x='57.89' y='322.05' label='Lebu' labelPos='left'  />
-			<marker id='04' x='55.78' y='310.47' label='Concepcion' labelPos='right'  />
-			<marker id='14' x='54.73' y='298.89' label='Talcahuano' labelPos='right'  />
-			<marker id='16' x='82.1' y='537.84' label='Punta Arenas' labelPos='left'  />
-			<marker id='13' x='64.21' y='333.63' label='Temuco' labelPos='right' />
-
-		</definition>
-		<application>
-			<marker id='SN' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

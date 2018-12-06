@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -223,8 +223,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -475,70 +475,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showLabels='0' showMarkerToolTip='1'  >
-	<data>
-		<entity id='SA.BA'  />
-		<entity id='SA.HS'  />
-		<entity id='SA.JF'  />
-		<entity id='SA.MD'  />
-		<entity id='SA.QS'  />
-		<entity id='SA.RI'  />
-		<entity id='SA.SH'  />
-		<entity id='SA.AS'  />
-		<entity id='SA.HA'  />
-		<entity id='SA.JZ'  />
-		<entity id='SA.MK'  />
-		<entity id='SA.NJ'  />
-		<entity id='SA.TB'  />
-	</data>
-	<markers>
-	 <shapes>
-	        <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showborder='0' radius='4'/>
-			<shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='01' x='264.29' y='98.08' label="Ra'al Khafji" labelPos='right'  />
-			<marker id='02' x='291.95' y='131.89' label='Al Jubayl' labelPos='right'  />
-			<marker id='03' x='296.04' y='140.08' label='Ad Dammam' labelPos='left'  />
-			<marker id='04' x='283.75' y='169.79' label='Al Hufuf' labelPos='right'  />
-			<marker id='05' x='47.12' y='90.91' label='Tabuk'  />
-			<marker id='06' x='114.73' y='102.18' label="Ha'il" labelPos='right'  />
-			<marker id='09' x='155.7' y='126.76' label='Buraydah' labelPos='right'  />
-			<marker id='RI' x='213.07' y='204.62' label='Riyadh'  />
-			<marker id='07' x='30.73' y='108.32' label='Duba' labelPos='bottom'  />
-			<marker id='08' x='71.7' y='182.08' label="Yanbu'al Bahr" labelPos='right'  />
-			<marker id='10' x='110.63' y='163.64' label='Medina'  />
-			<marker id='11' x='88.09' y='235.35' label='Jiddah' labelPos='left'  />
-			<marker id='12' x='107.56' y='238.42' label='Mecca'  />
-			<marker id='13' x='122.92' y='245.59' label="At Ta'if" labelPos='right'  />
-			<marker id='14' x='151.6' y='333.69' label='Jizan' labelPos='left'  />
-		</definition>
-		<application>
-		    <marker id='RI' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

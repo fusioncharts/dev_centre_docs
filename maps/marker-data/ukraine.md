@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -279,8 +279,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -608,80 +608,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		    <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-			<marker id='KI' x='254.49' y='81.13' label='Kiev' labelPos='right'  />
-			<marker id='01' x='245.25' y='60.59' label='Chornobyl' labelPos='left'  />
-			<marker id='02' x='187.74' y='101.67' label='Zhytomyr' labelPos='left'  />
-			<marker id='03' x='111.74' y='69.83' label='Lutsk' labelPos='right'  />
-			<marker id='04' x='61.41' y='129.4' label='Lviv' labelPos='left'  />
-			<marker id='05' x='11.09' y='178.7' label='Uzhhorod' labelPos='right'  />
-			<marker id='06' x='122.01' y='190' label='Chernivtsi' labelPos='left'  />
-			<marker id='07' x='306.87' y='185.89' label='Kirovohrad' labelPos='left'  />
-			<marker id='08' x='345.9' y='204.37' label='Kryvyy Rih' labelPos='left'  />
-			<marker id='09' x='316.11' y='261.89' label='Kherson' labelPos='right'  />
-			<marker id='10' x='300.71' y='243.4' label='Mykolayiv' labelPos='right'  />
-			<marker id='11' x='284.28' y='263.94' label='Odesa'  />
-			<marker id='12' x='271.95' y='270.1' label='Illichivsk' labelPos='left'  />
-			<marker id='13' x='195.95' y='323.51' label='Reni' labelPos='left'  />
-			<marker id='14' x='215.47' y='319.4' label='Izmayil' labelPos='right'  />
-			<marker id='16' x='358.22' y='356.37' label='Sevastopol' labelPos='left'  />
-			<marker id='15' x='382.87' y='357.4' label='Yalta' labelPos='right'  />
-			<marker id='18' x='370.55' y='331.72' label='Simferopol' labelPos='left'  />
-			<marker id='19' x='450.65' y='315.29' label='Kerch'  />
-			<marker id='20' x='453.74' y='249.56' label='Berdyansk' labelPos='left'  />
-			<marker id='22' x='479.41' y='232.1' label='Mariupol' labelPos='left'  />
-			<marker id='23' x='438.33' y='204.37' label='Zaporizhzhya' labelPos='right'  />
-			<marker id='25' x='492.76' y='184.86' label='Donetsk' labelPos='right'  />
-			<marker id='27' x='524.6' y='155.08' label='Luhansk'  />
-			<marker id='26' x='404.44' y='176.64' label='Dnipropetrovsk' labelPos='right'  />
-			<marker id='29' x='419.84' y='97.56' label='Kharkiv' labelPos='left'  />
-			<marker id='30' x='270.92' y='36.97' label='Chernihiv' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='KI' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='22' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='27' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-			<marker id='29' shapeId='newCustomShape'  />
-			<marker id='30' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

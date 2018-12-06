@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -145,8 +145,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -289,47 +289,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showborder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showborder='0' radius='3'/>
-	    </shapes>
-		<definition>
-			<marker id='TC' x='366.32' y='49.88' label='Taipei' labelPos='left'  />
-			<marker id='01' x='390.88' y='42.72' label='Chi-Lung'  />
-			<marker id='02' x='414.41' y='125.6' label='Su-ao' labelPos='left'  />
-			<marker id='03' x='373.48' y='218.72' label='Hua-lien' labelPos='right'  />
-			<marker id='04' x='227.16' y='191.09' label='Tai-chung' labelPos='left'  />
-			<marker id='06' x='208.74' y='203.37' label='Chang-hua' labelPos='left'  />
-			<marker id='09' x='158.6' y='376.3' label='Tai-nan' labelPos='left'  />
-			<marker id='10' x='304.93' y='404.95' label='Tai-tung' labelPos='right'  />
-			<marker id='11' x='170.88' y='425.41' label='Kao-hsiung' labelPos='left'  />
-			<marker id='16' x='66.51' y='280.11' label='Ma-kung' labelPos='left'  />
-
-		</definition>
-		<application>
-			<marker id='TC' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape' />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

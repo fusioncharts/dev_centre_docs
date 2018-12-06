@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -115,8 +115,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -225,41 +225,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='FM.CH'  />
-		<entity id='FM.KO'  />
-		<entity id='FM.PO'  />
-		<entity id='FM.YA'  />
-	</data>
-	<markers>
-	  <shapes>
-	      <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='000000' radius='4'/>
-		  <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='000000' radius='3'/>
-		</shapes>
-		<definition>
-		    <marker id='KO' x='592.6' y='142.31' label='Kolonia'  />
-			<marker id='01' x='35.73' y='60.84' label='Colonia'  />
-			<marker id='02' x='174.95' y='142.31' label='Agana'  />
-			<marker id='03' x='419.35' y='121.68' label='Moen'  />
-			<marker id='04' x='732.85' y='181.5' label='Kosrae'  />
-		</definition>
-		<application>
-		    <marker id='KO' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

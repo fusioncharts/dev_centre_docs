@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -276,8 +276,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -560,91 +560,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='DZ.AR'  />
-		<entity id='DZ.AD'  />
-		<entity id='DZ.AT'  />
-		<entity id='DZ.AL'  />
-		<entity id='DZ.AN'  />
-		<entity id='DZ.BT'  />
-		<entity id='DZ.BC'  />
-		<entity id='DZ.BJ'  />
-		<entity id='DZ.BS'  />
-		<entity id='DZ.BL'  />
-		<entity id='DZ.BB'  />
-		<entity id='DZ.BU'  />
-		<entity id='DZ.BM'  />
-		<entity id='DZ.CH'  />
-		<entity id='DZ.CO'  />
-		<entity id='DZ.DJ'  />
-		<entity id='DZ.EB'  />
-		<entity id='DZ.EO'  />
-		<entity id='DZ.ET'  />
-		<entity id='DZ.GR'  />
-		<entity id='DZ.GL'  />
-		<entity id='DZ.IL'  />
-		<entity id='DZ.JJ'  />
-		<entity id='DZ.KH'  />
-		<entity id='DZ.LG'  />
-		<entity id='DZ.MC'  />
-		<entity id='DZ.MD'  />
-		<entity id='DZ.ML'  />
-		<entity id='DZ.MG'  />
-		<entity id='DZ.MS'  />
-		<entity id='DZ.NA'  />
-		<entity id='DZ.OR'  />
-		<entity id='DZ.OG'  />
-		<entity id='DZ.OB'  />
-		<entity id='DZ.RE'  />
-		<entity id='DZ.SD'  />
-		<entity id='DZ.SF'  />
-		<entity id='DZ.SB'  />
-		<entity id='DZ.SK'  />
-		<entity id='DZ.SA'  />
-		<entity id='DZ.TM'  />
-		<entity id='DZ.TB'  />
-		<entity id='DZ.TR'  />
-		<entity id='DZ.TN'  />
-		<entity id='DZ.TP'  />
-		<entity id='DZ.TS'  />
-		<entity id='DZ.TO'  />
-		<entity id='DZ.TL'  />
-	</data>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillcolor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-			<marker id='AG' x='177.64' y='34.18' label='Algiers' labelPos='left'  />
-			<marker id='01' x='235.65' y='246.52' label='Tamanrasset' labelPos='left'  />
-			<marker id='02' x='19.16' y='160.55' label='Tindouf' labelPos='right'  />
-			<marker id='03' x='169.35' y='112.9' label='Ghardaia' labelPos='right'  />
-			<marker id='04' x='81.31' y='128.44' label='Bechar' labelPos='right'  />
-			<marker id='05' x='229.43' y='33.14' label='Annaba' labelPos='right'  />
-			<marker id='06' x='122.74' y='65.25' label='Tlemcen' labelPos='left'  />
-			<marker id='07' x='210.79' y='70.43' label='Biskra' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='AG' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

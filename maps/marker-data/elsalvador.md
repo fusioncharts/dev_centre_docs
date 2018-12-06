@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -177,8 +177,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -365,54 +365,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'  fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='SS' x='147.19' y='106.87' label='San Salvador' labelPos='right'  />
-			<marker id='01' x='232.74' y='89.25' label='Sensuntepeque' labelPos='right'  />
-			<marker id='02' x='172.35' y='56.55' label='Chalatenango' labelPos='right'  />
-			<marker id='03' x='101.9' y='57.8' label='Santa Ana' labelPos='left' />
-			<marker id='04' x='52.83' y='81.71' label='Ahuachapan' labelPos='right' />
-			<marker id='05' x='57.87' y='116.93' label='Sonsonate'  />
-			<marker id='06' x='52.83' y='138.32' label='Acajutla' labelPos='right'  />
-			<marker id='07' x='130.83' y='152.16' label='La Libertad' labelPos='left'  />
-			<marker id='08' x='119.51' y='111.9' label='Nueva San Salvador' labelPos='bottom'  />
-			<marker id='09' x='218.9' y='135.8' label='San Vincente' labelPos='right'  />
-			<marker id='10' x='246.58' y='186.13' label='Puerto El Triunfo' labelPos='left'  />
-			<marker id='11' x='357.29' y='183.61' label='Puerto Cutuco' labelPos='left'  />
-			<marker id='12' x='348.48' y='171.03' label='La Union' labelPos='left'  />
-			<marker id='13' x='309.48' y='152.16' label='San Miguel' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='SS' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

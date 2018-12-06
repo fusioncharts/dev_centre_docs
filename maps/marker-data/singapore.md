@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -160,8 +160,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -334,52 +334,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1' showLabels='0' >
-	<data>
-		<entity id='SG.CS'  />
-		<entity id='SG.EA'  />
-		<entity id='SG.NO'  />
-		<entity id='SG.WE'  />
-		<entity id='SG.SO'  />
-	</data>
-	<markers>
-	<shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	   </shapes>
-		<definition>
-		    <marker id='SI' x='327.83' y='255' label='Singapore' labelPos='right'  />
-		 	<marker id='01' x='383.08' y='85' label='Punggol'  />
-			<marker id='02' x='254.52' y='30.81' label='Woodlands' labelPos='left'  />
-			<marker id='03' x='202.45' y='69.06' label='Kranji' labelPos='right'  />
-			<marker id='04' x='124.89' y='104.12' label='Chao Chu Kang' labelPos='left'  />
-			<marker id='05' x='87.7' y='263.5' label='Tuas' labelPos='right'  />
-			<marker id='06' x='225.83' y='223.12' label='Queen Towns'  />
-			<marker id='07' x='343.77' y='192.31' label='Toa Payoh' labelPos='right'  />
-			<marker id='08' x='478.7' y='202.93' label='Bedok'  />
-			<marker id='09' x='520.14' y='148.75' label='Changi' labelPos='left'  />
-		</definition>
-		<application>
-		    <marker id='SI' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-		    <marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

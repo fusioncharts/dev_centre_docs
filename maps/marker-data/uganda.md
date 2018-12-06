@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -402,8 +402,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -827,130 +827,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='UG.AI'  />
-		<entity id='UG.AD'  />
-		<entity id='UG.AT'  />
-		<entity id='UG.AM'  />
-		<entity id='UG.KQ'  />
-		<entity id='UG.AC'  />
-		<entity id='UG.AW'  />
-		<entity id='UG.BD'  />
-		<entity id='UG.BG'  />
-		<entity id='UG.BW'  />
-		<entity id='UG.BL'  />
-		<entity id='UG.BN'  />
-		<entity id='UG.BS'  />
-		<entity id='UG.BU'  />
-		<entity id='UG.BJ'  />
-		<entity id='UG.DO'  />
-		<entity id='UG.GL'  />
-		<entity id='UG.HO'  />
-		<entity id='UG.IB'  />
-		<entity id='UG.IN'  />
-		<entity id='UG.IS'  />
-		<entity id='UG.JI'  />
-		<entity id='UG.AB'  />
-		<entity id='UG.KA'  />
-		<entity id='UG.BR'  />
-		<entity id='UG.KD'  />
-		<entity id='UG.KN'  />
-		<entity id='UG.RO'  />
-		<entity id='UG.KM'  />
-		<entity id='UG.KX'  />
-		<entity id='UG.KE'  />
-		<entity id='UG.UU'  />
-		<entity id='UG.KP'  />
-		<entity id='UG.KS'  />
-		<entity id='UG.KK'  />
-		<entity id='UG.KY'  />
-		<entity id='UG.KI'  />
-		<entity id='UG.KG'  />
-		<entity id='UG.KH'  />
-		<entity id='UG.KR'  />
-		<entity id='UG.TG'  />
-		<entity id='UG.OK'  />
-		<entity id='UG.KF'  />
-		<entity id='UG.KU'  />
-		<entity id='UG.KJ'  />
-		<entity id='UG.LI'  />
-		<entity id='UG.LW'  />
-		<entity id='UG.MF'  />
-		<entity id='UG.MH'  />
-		<entity id='UG.MA'  />
-		<entity id='UG.MC'  />
-		<entity id='UG.MG'  />
-		<entity id='UG.ME'  />
-		<entity id='UG.RR'  />
-		<entity id='UG.TY'  />
-		<entity id='UG.MT'  />
-		<entity id='UG.MY'  />
-		<entity id='UG.MI'  />
-		<entity id='UG.MD'  />
-		<entity id='UG.NM'  />
-		<entity id='UG.MN'  />
-		<entity id='UG.NP'  />
-		<entity id='UG.NK'  />
-		<entity id='UG.NA'  />
-		<entity id='UG.NE'  />
-		<entity id='UG.NT'  />
-		<entity id='UG.OY'  />
-		<entity id='UG.PD'  />
-		<entity id='UG.PL'  />
-		<entity id='UG.RA'  />
-		<entity id='UG.RK'  />
-		<entity id='UG.SE'  />
-		<entity id='UG.SI'  />
-		<entity id='UG.SR'  />
-		<entity id='UG.TR'  />
-		<entity id='UG.WA'  />
-		<entity id='UG.YU'  />
-	</data>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillcolor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-			<marker id='KL' x='490.63' y='591.65' label='Kampala' labelPos='left'  />
-			<marker id='01' x='447.13' y='633.12' label='Entebbe' labelPos='left'  />
-			<marker id='02' x='367.22' y='714.05' label='Masaka' labelPos='left'  />
-			<marker id='03' x='179.05' y='754.52' label='Mbarara'  />
-			<marker id='04' x='78.9' y='641.22' label='Fort Portal' labelPos='bottom'  />
-			<marker id='05' x='226.6' y='200.15' label='Arua' labelPos='right'  />
-			<marker id='06' x='438.03' y='231.51' label='Gulu' labelPos='right'  />
-			<marker id='07' x='585.73' y='317.49' label='Lira' labelPos='left'  />
-			<marker id='08' x='824.47' y='277.03' label='Moroto' labelPos='left'  />
-			<marker id='09' x='591.8' y='419.67' label='Soroti' labelPos='right'  />
-			<marker id='10' x='717.24' y='499.59' label='Mbale' labelPos='right'  />
-			<marker id='11' x='572.58' y='576.47' label='Jinja' labelPos='right'  />
-			<marker id='12' x='501.76' y='573.44' label='Port Bell' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='KL' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

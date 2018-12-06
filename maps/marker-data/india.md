@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -313,8 +313,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -694,93 +694,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='DE' x='206.62' y='164.57' label='Delhi' labelPos='bottom'  />
-			<marker id='01' x='170.05' y='62.98' label='Srinagar'  />
-			<marker id='02' x='204.59' y='116.82' label='Shimla' labelPos='right'  />
-			<marker id='03' x='192.4' y='121.9' label='Chandigarh' labelPos='left'  />
-			<marker id='05' x='224.91' y='138.15' label='Dehradun' labelPos='right'  />
-			<marker id='06' x='276.72' y='223.49' label='Lucknow'  />
-			<marker id='08' x='176.15' y='214.34' label='Jaipur'  />
-			<marker id='09' x='210.69' y='280.38' label='Bhopal'  />
-			<marker id='10' x='122.31' y='276.31' label='Gandhinagar'  />
-			<marker id='11' x='89.8' y='311.87' label='Diu'  />
-			<marker id='12' x='109.1' y='364.69' label='Mumbai' labelPos='left'  />
-			<marker id='13' x='117.23' y='338.28' label='Silvasaa' labelPos='right'  />
-			<marker id='14' x='121.29' y='424.63' label='Panaji'  />
-			<marker id='15' x='177.16' y='477.46' label='Bangalore'  />
-			<marker id='16' x='225.93' y='498.79' label='Pondicherry' labelPos='bottom'  />
-			<marker id='17' x='236.08' y='468.31' label='Chennai'  />
-			<marker id='07' x='212.72' y='380.95' label='Hyderabad'  />
-			<marker id='18' x='280.78' y='312.88' label='Raipur'  />
-			<marker id='20' x='338.69' y='338.28' label='Bhubaneshwar'  />
-			<marker id='22' x='392.53' y='292.57' label='Kolkata' labelPos='right'  />
-			<marker id='21' x='345.8' y='237.71' label='Patna'  />
-			<marker id='24' x='341.73' y='282.41' label='Ranchi'  />
-			<marker id='25' x='400.66' y='199.11' label='Gangtok'  />
-			<marker id='26' x='456.53' y='267.17' label='Agartala' labelPos='left'  />
-			<marker id='27' x='468.72' y='221.46' label='Guwahati' labelPos='left'  />
-			<marker id='28' x='464.66' y='237.71' label='Shillong' labelPos='left'  />
-			<marker id='29' x='478.88' y='268.19' label='Aizwal' labelPos='right'  />
-			<marker id='30' x='488.02' y='196.06' label='Itanagar'  />
-			<marker id='31' x='503.26' y='228.57' label='Kohima'  />
-			<marker id='32' x='499.19' y='248.88' label='Imphal'  />
-			<marker id='33' x='168.02' y='557.71' label='Thiruvananthapuram'  />
-			<marker id='34' x='56.27' y='495.74' label='Kavarati'  />
-			<marker id='35' x='477.86' y='539.42' label='Port Blair'  />
-		</definition>
-		<application>
-			<marker id='DE' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='22' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='24' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-			<marker id='27' shapeId='newCustomShape'  />
-			<marker id='28' shapeId='newCustomShape'  />
-			<marker id='29' shapeId='newCustomShape'  />
-			<marker id='30' shapeId='newCustomShape'  />
-			<marker id='31' shapeId='newCustomShape'  />
-			<marker id='33' shapeId='newCustomShape'  />
-			<marker id='32' shapeId='newCustomShape'  />
-			<marker id='34' shapeId='newCustomShape'  />
-			<marker id='35' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

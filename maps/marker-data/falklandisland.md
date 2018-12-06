@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -147,8 +147,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -308,48 +308,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1' showLabels='0' >
-	<data>
-		<entity id='NA.FK'  />
-	</data>
-	<markers>
-	<shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='ST' x='343.13' y='102.41' label='Stanley'  />
-			<marker id='01' x='193.13' y='48.62' label='Pebble Island'  />
-			<marker id='02' x='137.27' y='57.93' label='Saunders Island' labelPos='right'  />
-			<marker id='03' x='86.58' y='62.06' label='West Point Island' labelPos='bottom'  />
-			<marker id='04' x='39' y='113.79' label='New Island'  />
-			<marker id='05' x='243.82' y='131.37' label='Goose Green' labelPos='right'  />
-			<marker id='06' x='283.13' y='118.96' label='Mt. Pleasant' labelPos='right'  />
-			<marker id='09' x='241.75' y='208.96' label='Sea Lion Island' labelPos='right'  />
-			<marker id='07' x='194.17' y='88.96' label='Port Howard' labelPos='right'  />
-			<marker id='08' x='96.93' y='48.62' label='Carcass Island'  />
-		</definition>
-		<application>
-			<marker id='ST' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -136,8 +136,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -268,45 +268,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	  <shapes>
-	      <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		  <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	   </shapes>
-		<definition>
-			<marker id='CO' x='422.54' y='342.93' label='Copenhavens' labelPos='right'  />
-			<marker id='01' x='241.46' y='7.08' label='Skagen' labelPos='bottom' />
-			<marker id='02' x='178.75' y='120.38' label='Alborg' labelPos='right' />
-			<marker id='03' x='204.04' y='260.99' label='Arhus' labelPos='left' />
-			<marker id='04' x='145.36' y='331.8' label='Vejle'  />
-			<marker id='05' x='134.23' y='370.24' label='Kolding'  />
-			<marker id='06' x='39.14' y='368.22' label='Esbjerg' labelPos='right'  />
-			<marker id='07' x='126.14' y='447.12' label='Abenra'  labelPos='left'/>
-			<marker id='08' x='217.19' y='387.44' label='Odense'  labelPos='left'/>
-
-		</definition>
-		<application>
-			<marker id='CO' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

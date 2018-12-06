@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -239,8 +239,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -516,73 +516,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	        <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillpattern='radial' showborder='0' radius='4'/>
-			<shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillpattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='RO' x='241.05' y='299.67' label='Rome' labelPos='left'  />
-			<marker id='01' x='103.82' y='78.7' label='Milan' labelPos='left' />
-			<marker id='02' x='79.61' y='114.01' label='Turin'  />
-			<marker id='03' x='80.61' y='164.46' label='Savona' labelpos='left' />
-			<marker id='04' x='103.82' y='157.4' label='Genoa'  />
-			<marker id='05' x='144.18' y='174.55' label='La Spezia' />
-			<marker id='06' x='180.51' y='136.21' label='Bologna'  />
-			<marker id='08' x='295.53' y='88.79' label='Trieste' labelPos='bottom' />
-			<marker id='07' x='230.96' y='107.96' label='Venice'  />
-			<marker id='09' x='161.34' y='77.69' label='Verona'  />
-			<marker id='10' x='205.73' y='184.64' label='Florence'  />
-			<marker id='11' x='162.34' y='191.71' label='Livorno' labelPos='left'  />
-			<marker id='12' x='341.95' y='359.2' label='Salerno' labelPos='right'  />
-			<marker id='13' x='323.79' y='353.15' label='Naples'  />
-			<marker id='14' x='411.57' y='332.97' label='Bari'  />
-			<marker id='15' x='450.92' y='354.16' label='Brindisi' labelPos='left' />
-			<marker id='16' x='431.75' y='367.27' label='Taranto' labelPos='bottom'  />
-			<marker id='18' x='373.23' y='482.3' label='Reggio di Calabria' labelPos='right'  />
-			<marker id='19' x='359.1' y='486.34' label='Messina'  />
-			<marker id='20' x='283.43' y='495.42' label='Palermo'  />
-			<marker id='21' x='310.67' y='533.76' label='Gela' labelPos='top'  />
-			<marker id='22' x='342.96' y='515.6' label='Catania' labelPos='right'  />
-			<marker id='23' x='341.95' y='532.75' label='Augusta' labelPos='right'  />
-
-		</definition>
-		<application>
-			<marker id='RO' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='22' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

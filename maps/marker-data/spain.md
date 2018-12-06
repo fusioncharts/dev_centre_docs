@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -255,8 +255,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -551,73 +551,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		    <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='MA' x='274.02' y='132.66' label='Madrid' labelPos='right' />
-			<marker id='01' x='220.54' y='12.34' label='Gijon' labelPos='left'  />
-			<marker id='02' x='122.84' y='16.45' label='A Coruna' labelPos='left'  />
-			<marker id='03' x='106.39' y='65.81' label='Vigo' labelPos='left'  />
-			<marker id='05' x='207.17' y='48.33' label='Leon'  />
-			<marker id='04' x='271.96' y='14.39' label='Santander' labelPos='right'  />
-			<marker id='06' x='298.7' y='21.59' label='Bilbao' labelPos='bottom'  />
-			<marker id='10' x='464.28' y='95.64' label='Barcelona' labelPos='left'  />
-			<marker id='07' x='434.45' y='109.01' label='Tarragona' labelPos='left'  />
-			<marker id='12' x='371.72' y='86.38' label='Zaragoza' labelPos='left'  />
-			<marker id='08' x='269.9' y='98.72' label='Valladolid' labelPos='right'  />
-			<marker id='11' x='151.64' y='216.99' label='Olivenza' labelPos='left'  />
-			<marker id='15' x='159.86' y='274.58' label='Huelva' labelPos='left'  />
-			<marker id='14' x='232.88' y='241.67' label='Cordoba'  />
-			<marker id='13' x='190.72' y='261.21' label='Sevilla' labelPos='left'  />
-			<marker id='16' x='180.43' y='304.41' label='Cadiz' labelPos='right'  />
-			<marker id='17' x='207.17' y='326'    label='Algeciras' labelPos='left'  />
-			<marker id='18' x='246.25' y='299.27' label='Malaga'  />
-			<marker id='19' x='363.49' y='262.24' label='Cartagena' labelPos='left'  />
-			<marker id='21' x='352.18' y='243.73' label='Murcia' labelPos='left'  />
-			<marker id='22' x='385.09' y='225.22' label='Alicante' labelPos='left'  />
-			<marker id='23' x='385.09' y='175.86' label='Valencia' labelPos='left'  />
-			<marker id='25' x='488.96' y='169.68' label='Palma de Mallorca' labelPos='bottom'  />
-			<marker id='26' x='397.43' y='156.32' label='Castellon de la Plana' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='MA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='22' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

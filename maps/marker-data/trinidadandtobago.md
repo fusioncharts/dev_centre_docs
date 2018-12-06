@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -311,8 +311,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -690,92 +690,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='TT.CA'  />
-		<entity id='TT.MA'  />
-		<entity id='TT.NA'  />
-		<entity id='TT.SA'  />
-		<entity id='TT.SD'  />
-		<entity id='TT.SG'  />
-		<entity id='TT.SP'  />
-		<entity id='TT.TO'  />
-		<entity id='TT.VI'  />
-	</data>
-	<markers>
-	   <shapes>
-	     <shape id='myCustomShape' type='circle' fillcolor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-			<marker id='SJ' x='194.1' y='302.3' label='San Juan' labelPos='left'  />
-			<marker id='01' x='41.42' y='527.25' label='Fullarton'  />
-			<marker id='02' x='118.78' y='492.64' label='Point Fortin' labelPos='left'  />
-			<marker id='03' x='127.94' y='534.37' label='San Francique'  />
-			<marker id='04' x='286.73' y='530.3' label='Moruga'  />
-			<marker id='05' x='385.46' y='506.89' label='Guayaguayare' labelPos='bottom'  />
-			<marker id='06' x='397.67' y='452.94' label='Piereville' labelPos='right'  />
-			<marker id='07' x='335.58' y='442.76' label='Rio Claro' labelPos='right'  />
-			<marker id='08' x='141.17' y='468.21' label='Brighton' labelPos='left'  />
-			<marker id='09' x='208.35' y='448.87' label='San Fernando' labelPos='left'  />
-			<marker id='10' x='214.46' y='392.89' label='Couva' labelPos='right'  />
-			<marker id='11' x='226.67' y='348.1' label='Chaguanas' labelPos='left'  />
-			<marker id='12' x='139.14' y='282.96' label='Chaguaramas' labelPos='right'  />
-			<marker id='13' x='219.55' y='258.53' label='Maracas'  />
-			<marker id='14' x='266.37' y='242.25' label='Blanchisseuse'  />
-			<marker id='15' x='423.12' y='226.98' label='Toco'  />
-			<marker id='16' x='287.74' y='358.28' label='Talpare' labelPos='right'  />
-			<marker id='17' x='348.81' y='338.94' label='Sangre Grande' labelPos='right'  />
-			<marker id='18' x='211.4' y='479.41' label='Debe' labelPos='right'  />
-			<marker id='19' x='241.94' y='442.76' label='Princes Town' labelPos='right'  />
-			<marker id='20' x='243.98' y='301.28' label='Tunapuna' labelPos='right'  />
-			<marker id='21' x='288.76' y='314.51' label='Arima' labelPos='right'  />
-			<marker id='22' x='578.85' y='23.41' label='Charlotteville'  />
-			<marker id='23' x='568.67' y='54.96' label='Roxborough'  />
-			<marker id='24' x='509.64' y='57' label='Moriah' labelPos='left'  />
-			<marker id='25' x='472.99' y='96.69' label='Canaan' labelPos='bottom'  />
-			<marker id='26' x='504.55' y='85.5' label='Scarborough' labelPos='right'  />
-			<marker id='27' x='485.21' y='72.26' label='Plymouth' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='SJ' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='22' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-			<marker id='24' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-			<marker id='27' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

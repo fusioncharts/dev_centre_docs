@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -212,8 +212,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -432,70 +432,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='MW.DE'  />
-		<entity id='MW.DO'  />
-		<entity id='MW.KS'  />
-		<entity id='MW.LI'  />
-		<entity id='MW.MC'  />
-		<entity id='MW.NK'  />
-		<entity id='MW.NU'  />
-		<entity id='MW.NI'  />
-		<entity id='MW.SA'  />
-		<entity id='MW.CT'  />
-		<entity id='MW.KR'  />
-		<entity id='MW.LK'  />
-		<entity id='MW.MZ'  />
-		<entity id='MW.NA'  />
-		<entity id='MW.RU'  />
-		<entity id='MW.BA'  />
-		<entity id='MW.BL'  />
-		<entity id='MW.CK'  />
-		<entity id='MW.CR'  />
-		<entity id='MW.MA'  />
-		<entity id='MW.MG'  />
-		<entity id='MW.MJ'  />
-		<entity id='MW.MW'  />
-		<entity id='MW.NS'  />
-		<entity id='MW.TH'  />
-		<entity id='MW.PH'  />
-		<entity id='MW.ZO'  />
-	</data>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillcolor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-			<marker id='LL' x='91.38' y='375.61' label='Lilongwe' labelPos='left'  />
-			<marker id='01' x='183.8' y='469.07' label='Blantyre' labelPos='left'  />
-			<marker id='02' x='217.03' y='458.68' label='Zomba'  />
-			<marker id='03' x='106.96' y='55.76' label='Karonga' labelPos='right'  />
-			<marker id='04' x='106.96' y='161.68' label='Mzuzu' labelPos='left'  />
-			<marker id='05' x='133.96' y='182.45' label='Nkhata Bay' labelPos='right'  />
-			<marker id='06' x='136.03' y='284.22' label='Nkhotakota' labelPos='right'  />
-			<marker id='07' x='126.69' y='347.57' label='Chipoka' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='LL' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

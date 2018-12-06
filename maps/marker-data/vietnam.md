@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -353,8 +353,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -723,118 +723,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='VN.AG'  />
-		<entity id='VN.BG'  />
-		<entity id='VN.BK'  />
-		<entity id='VN.BL'  />
-		<entity id='VN.BN'  />
-		<entity id='VN.BV'  />
-		<entity id='VN.BR'  />
-		<entity id='VN.BD'  />
-		<entity id='VN.BI'  />
-		<entity id='VN.BP'  />
-		<entity id='VN.BU'  />
-		<entity id='VN.CM'  />
-		<entity id='VN.CN'  />
-		<entity id='VN.CB'  />
-		<entity id='VN.DA'  />
-		<entity id='VN.DC'  />
-		<entity id='VN.DO'  />
-		<entity id='VN.DB'  />
-		<entity id='VN.DN'  />
-		<entity id='VN.DT'  />
-		<entity id='VN.GL'  />
-		<entity id='VN.HG'  />
-		<entity id='VN.HM'  />
-		<entity id='VN.HN'  />
-		<entity id='VN.HA'  />
-		<entity id='VN.HT'  />
-		<entity id='VN.HD'  />
-		<entity id='VN.HP'  />
-		<entity id='VN.HU'  />
-		<entity id='VN.HC'  />
-		<entity id='VN.HO'  />
-		<entity id='VN.HY'  />
-		<entity id='VN.KH'  />
-		<entity id='VN.KG'  />
-		<entity id='VN.KT'  />
-		<entity id='VN.LI'  />
-		<entity id='VN.LD'  />
-		<entity id='VN.LS'  />
-		<entity id='VN.LO'  />
-		<entity id='VN.LA'  />
-		<entity id='VN.ND'  />
-		<entity id='VN.NA'  />
-		<entity id='VN.NB'  />
-		<entity id='VN.NT'  />
-		<entity id='VN.PT'  />
-		<entity id='VN.PY'  />
-		<entity id='VN.QB'  />
-		<entity id='VN.QM'  />
-		<entity id='VN.QG'  />
-		<entity id='VN.QN'  />
-		<entity id='VN.QT'  />
-		<entity id='VN.ST'  />
-		<entity id='VN.SL'  />
-		<entity id='VN.TN'  />
-		<entity id='VN.TB'  />
-		<entity id='VN.TY'  />
-		<entity id='VN.TH'  />
-		<entity id='VN.TT'  />
-		<entity id='VN.TG'  />
-		<entity id='VN.TV'  />
-		<entity id='VN.TQ'  />
-		<entity id='VN.VL'  />
-		<entity id='VN.VC'  />
-		<entity id='VN.YB'  />
-	</data>
-	<markers>
-	  <shapes>
-
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial'
-showBorder='0' radius='3'/>
-
-        </shapes>
-		<definition>
-			<marker id='HN' x='160.45' y='100.32' label='Hanoi'  />
-			<marker id='01' x='195.63' y='109.64' label='Haiphong' labelPos='right'  />
-			<marker id='03' x='214.26' y='93.08' label='Hong Gai' labelPos='right' />
-			<marker id='04' x='157.34' y='201.74' label='Vinh' labelPos='right'  />
-			<marker id='02' x='221.5' y='280.38' label='Hue' labelPos='left' />
-			<marker id='05' x='247.37' y='302.12' label='Da Nang' labelPos='right'  />
-			<marker id='06' x='291.87' y='418.02' label='Quy Nhon'  />
-			<marker id='07' x='284.63' y='471.83' label='Nha Trang'  />
-			<marker id='08' x='280.49' y='484.25' label='Cam Ranh' labelPos='left'  />
-			<marker id='09' x='189.42' y='508.05' label='Ho Chi Minh City' labelPos='right' />
-			<marker id='10' x='148.03' y='523.57' label='Long Xuyen' labelPos='left'  />
-			<marker id='11' x='157.34' y='544.27' label='Can Tho' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='HN' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

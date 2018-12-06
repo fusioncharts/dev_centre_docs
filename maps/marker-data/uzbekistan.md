@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -203,8 +203,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -426,65 +426,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1' showLabels='0' >
-	<data>
-		<entity id='UZ.AN'  />
-		<entity id='UZ.BU'  />
-		<entity id='UZ.FA'  />
-		<entity id='UZ.JI'  />
-		<entity id='UZ.NG'  />
-		<entity id='UZ.NW'  />
-		<entity id='UZ.QR'  />
-		<entity id='UZ.QA'  />
-		<entity id='UZ.SA'  />
-		<entity id='UZ.SI'  />
-		<entity id='UZ.SU'  />
-		<entity id='UZ.TK'  />
-		<entity id='UZ.TA'  />
-		<entity id='UZ.KH'  />
-	</data>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	</shapes>
-		<definition>
-			<marker id='TA' x='281.8' y='113.95' label='Tashkent'  />
-			<marker id='01' x='218.02' y='148.45' label='Jizzakh'  />
-			<marker id='02' x='195.02' y='157.86' label='Samarqand' labelPos='right'  />
-			<marker id='03' x='177.25' y='170.4' label='Qarshi' labelPos='right'  />
-			<marker id='04' x='152.16' y='147.4' label='Bukhoro' labelPos='left'  />
-			<marker id='05' x='176.21' y='127.54' label='Nawoly'  />
-			<marker id='06' x='97.8' y='113.95' label='Urganch' labelPos='left'  />
-			<marker id='07' x='81.07' y='89.9' label='Nukus' labelPos='left'  />
-			<marker id='08' x='339.3' y='131.72' label='Namangan' labelPos='left' />
-			<marker id='09' x='353.93' y='146.36' label='Andijon' labelPos='right'  />
-			<marker id='10' x='334.07' y='151.59' label='Farghona' labelPos='left'  />
-			<marker id='11' x='211.75' y='215.36' label='Termiz' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='TA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

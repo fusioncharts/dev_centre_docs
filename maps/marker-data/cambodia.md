@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -207,8 +207,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -422,69 +422,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='KH.OM'  />
-		<entity id='KH.BA'  />
-		<entity id='KH.KM'  />
-		<entity id='KH.KG'  />
-		<entity id='KH.KS'  />
-		<entity id='KH.KT'  />
-		<entity id='KH.KP'  />
-		<entity id='KH.KN'  />
-		<entity id='KH.KK'  />
-		<entity id='KH.KH'  />
-		<entity id='KH.KB'  />
-		<entity id='KH.MK'  />
-		<entity id='KH.OC'  />
-		<entity id='KH.PL'  />
-		<entity id='KH.PP'  />
-		<entity id='KH.PO'  />
-		<entity id='KH.PH'  />
-		<entity id='KH.PY'  />
-		<entity id='KH.RO'  />
-		<entity id='KH.SI'  />
-		<entity id='KH.KA'  />
-		<entity id='KH.ST'  />
-		<entity id='KH.SR'  />
-		<entity id='KH.TA'  />
-	</data>
-	<markers>
-	    <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'  fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='PP' x='202.79' y='237.79' label='Phnom Penh' labelPos='right'  />
-			<marker id='01' x='107.05' y='131.76' label='Batdambang'  />
-			<marker id='02' x='157.5' y='103.97' label='Siemreab'  />
-			<marker id='03' x='71.02' y='236.76' label='Krong Kaoh Kong'  />
-			<marker id='04' x='107.05' y='307.79' label='Kampong Cham'  />
-			<marker id='05' x='163.67' y='316.02' label='Kampot' labelPos='right'  />
-			<marker id='06' x='278.97' y='88.52' label='Stoeng Treng'  />
-			<marker id='08' x='276.91' y='157.5' label='Kracheh' labelPos='left'  />
-			<marker id='07' x='231.61' y='187.35' label='Kampong Cham' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='PP' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

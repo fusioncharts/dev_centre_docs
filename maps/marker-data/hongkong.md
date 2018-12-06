@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -167,8 +167,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -336,57 +336,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='HK.CW'  />
-		<entity id='HK.EA'  />
-		<entity id='HK.IS'  />
-		<entity id='HK.KC'  />
-		<entity id='HK.KI'  />
-		<entity id='HK.KU'  />
-		<entity id='HK.NO'  />
-		<entity id='HK.SK'  />
-		<entity id='HK.SS'  />
-		<entity id='HK.ST'  />
-		<entity id='HK.SO'  />
-		<entity id='HK.TP'  />
-		<entity id='HK.TW'  />
-		<entity id='HK.TM'  />
-		<entity id='HK.WC'  />
-		<entity id='HK.WT'  />
-		<entity id='HK.YT'  />
-		<entity id='HK.YL'  />
-	</data>
-	<markers>
-	  <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'   fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='VI' x='426.9' y='402.79' label='Victory'  />
-			<marker id='01' x='440.12' y='447.54' label='Aberdeen' labelPos='left'  />
-			<marker id='02' x='453.34' y='373.29' label='Kowloon' labelPos='right'  />
-			<marker id='04' x='375.02' y='283.78' label='Tsuen Wan'  />
-			<marker id='07' x='417.74' y='57.97' label='Sheung Shui' labelPos='right'  />
-			<marker id='06' x='183.79' y='262.42' label='Tuen Mun'  />
-		</definition>
-		<application>
-			<marker id='VI' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

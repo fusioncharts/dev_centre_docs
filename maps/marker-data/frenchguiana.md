@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -185,8 +185,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -372,63 +372,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='GF.SL.AP'  />
-		<entity id='GF.SL.AY'  />
-		<entity id='GF.CY.CM'  />
-		<entity id='GF.CY.CY'  />
-		<entity id='GF.SL.GS'  />
-		<entity id='GF.CY.IR'  />
-		<entity id='GF.CY.KR'  />
-		<entity id='GF.CY.MC'  />
-		<entity id='GF.SL.MN'  />
-		<entity id='GF.SL.MP'  />
-		<entity id='GF.CY.MY'  />
-		<entity id='GF.CY.MT'  />
-		<entity id='GF.CY.OU'  />
-		<entity id='GF.SL.PA'  />
-		<entity id='GF.CY.RK'  />
-		<entity id='GF.CY.RM'  />
-		<entity id='GF.CY.RO'  />
-		<entity id='GF.CY.SE'  />
-		<entity id='GF.CY.SG'  />
-		<entity id='GF.SL.SL'  />
-		<entity id='GF.SL.SA'  />
-		<entity id='GF.SL.SI'  />
-	</data>
-	<markers>
-	   <shapes>
-	      <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='000000' radius='4'/>
-		  <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='000000' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='CA' x='277.5' y='110.79' label='Cayenne'  />
-			<marker id='01' x='60.63' y='61.46' label='Saint-Laurent de Maroni'  />
-			<marker id='02' x='225.08' y='73.79' label='Kourou'  />
-			<marker id='04' x='277.5' y='124.15' label='Matoury' labelPos='left'  />
-			<marker id='05' x='288.8' y='122.09' label='Degrad des Cannes' labelPos='bottom'  />
-			<marker id='06' x='335.05' y='226.93' label='Saint-Georges'  />
-			<marker id='07' x='155.19' y='251.6' label='Saul'  />
-		</definition>
-		<application>
-			<marker id='CA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

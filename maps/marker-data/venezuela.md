@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -165,8 +165,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -338,52 +338,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		     <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='CA' x='260.73' y='80.68' label='Caracas' labelPos='right' />
-			<marker id='01' x='131.02' y='18.38' label='Amuay' labelPos='left'  />
-			<marker id='02' x='68.73' y='70.46' label='Maracaibo' labelPos='left'  />
-			<marker id='03' x='140.22' y='99.06' label='Barquisimeto'  />
-			<marker id='04' x='42.17' y='187.91' label='San Cristobal' labelPos='right'  />
-			<marker id='05' x='211.71' y='80.68' label='Puerto Cabello'  />
-			<marker id='06' x='214.77' y='99.06' label='Valencia' labelPos='left'  />
-			<marker id='07' x='227.02' y='85.78' label='Maracay' labelPos='right'  />
-			<marker id='08' x='351.62' y='91.91' label='Puerto La Cruz' labelPos='bottom'  />
-			<marker id='09' x='372.05' y='80.68' label='Cumana'  />
-			<marker id='10' x='442.51' y='176.68' label='Ciudad Guayana'  />
-			<marker id='11' x='236.22' y='277.78' label='Puerto Ayacucho' labelPos='left'  />
-			<marker id='12' x='292.39' y='172.59' label='San Fernando'  />
-		</definition>
-		<application>
-			<marker id='CA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

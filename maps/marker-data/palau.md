@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -132,8 +132,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -251,49 +251,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='PW.AM'  />
-		<entity id='PW.AR'  />
-		<entity id='PW.AN'  />
-		<entity id='PW.HA'  />
-		<entity id='PW.KA'  />
-		<entity id='PW.KO'  />
-		<entity id='PW.ME'  />
-		<entity id='PW.ND'  />
-		<entity id='PW.NC'  />
-		<entity id='PW.NM'  />
-		<entity id='PW.NP'  />
-		<entity id='PW.NS'  />
-		<entity id='PW.NL'  />
-		<entity id='PW.NW'  />
-		<entity id='PW.PE'  />
-		<entity id='PW.SO'  />
-	</data>
-	<markers>
-	   <shapes>
-	      <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='000000' radius='4'/>
-		  <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='000000' radius='3'/>
-		</shapes>
-		<definition>
-		    <marker id='ME' x='590.37' y='228.01' label='Melekeok' labelPos='left'  />
-			<marker id='01' x='497.9' y='377.39' label='Koror' labelPos='right'  />
-
-		</definition>
-		<application>
-		    <marker id='ME' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

@@ -17,8 +17,7 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -160,8 +159,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -325,51 +324,6 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		       <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	   </shapes>
-		<definition>
-			<marker id='KA' x='388.77' y='207.41' label='Kabul' labelPos='left'  />
-			<marker id='01' x='358.11' y='72.54' label='Shir Khan'  />
-			<marker id='02' x='364.24' y='92.97' label='Kondoz' labelPos='left'  />
-			<marker id='03' x='280.46' y='95.02' label='Mazar-e-Sharif' labelPos='left'  />
-			<marker id='04' x='403.07' y='183.91' label='Bagram' labelPos='right'  />
-			<marker id='05' x='434.74' y='216.6' label='Jalalabad' labelPos='left'  />
-			<marker id='06' x='321.33' y='263.6' label='Ghazni' labelPos='right'  />
-			<marker id='07' x='228.35' y='390.3' label='Kandahar' labelPos='top'  />
-			<marker id='08' x='62.83' y='379.06' label='Zaranj' labelPos='left'  />
-			<marker id='11' x='87.35' y='165.52' label='Towraghondi' labelPos='left'  />
-			<marker id='09' x='80.2' y='242.15' label='Shindand' labelPos='left'  />
-			<marker id='10' x='81.22' y='199.23' label='Herat' labelPos='left'  />
-
-		</definition>
-		<application>
-			<marker id='KA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
-</div>
+</div> 
 </div>
 </div>

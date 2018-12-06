@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -163,8 +163,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -322,56 +322,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='FJ.WE.BA'  />
-		<entity id='FJ.NO.BU'  />
-		<entity id='FJ.NO.CK'  />
-		<entity id='FJ.EA.KD'  />
-		<entity id='FJ.EA.LU'  />
-		<entity id='EJ.WE.LT'  />
-		<entity id='EJ.EA.LM'  />
-		<entity id='FJ.NO.MC'  />
-		<entity id='FJ.WE.NN'  />
-		<entity id='FJ.WE.ND'  />
-		<entity id='FJ.CE.NT'  />
-		<entity id='FJ.CE.NM'  />
-		<entity id='FJ.WE.RA'  />
-		<entity id='FJ.CE.RW'  />
-		<entity id='FJ.CE.SR'  />
-		<entity id='FJ.CE.TL'  />
-		<entity id='FJ.TH.EA'  />
-		<entity id='FJ.TH.NO'  />
-		<entity id='FJ.TH.WE'  />
-	</data>
-	<markers>
-	  <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'  fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='SU' x='290.49' y='366.36' label='Suva' labelPos='right'  />
-			<marker id='01' x='423.15' y='129.6' label='Savusavu' labelPos='left'  />
-			<marker id='02' x='469.08' y='37.75' label='Labasa'  />
-			<marker id='03' x='164.96' y='254.1' label='Lautoka' labelPos='left'  />
-			<marker id='04' x='330.29' y='297.99' label='Levuka'  />
-		</definition>
-		<application>
-			<marker id='SU' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

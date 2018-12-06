@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -450,8 +450,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -1019,127 +1019,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		     <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='BI' x='338.78' y='340.09' label='Bismarck'  />
-			<marker id='01' x='117.98' y='24.06' label='Caosby' labelPos='left'  />
-			<marker id='02' x='168.21' y='17.78' label='Portal' labelPos='bottom'  />
-			<marker id='03' x='287.51' y='63.83' label='Mohall'  />
-			<marker id='04' x='378.55' y='40.81' label='Bottineau'  />
-			<marker id='06' x='467.49' y='39.76' label='Rocklake'  />
-			<marker id='10' x='683.06' y='18.83' label='Pembina'  />
-			<marker id='07' x='553.3' y='73.25' label='Langdon'  />
-			<marker id='08' x='615.04' y='48.13' label='Cavalier'  />
-			<marker id='11' x='649.58' y='102.55' label='Grafton'  />
-			<marker id='12' x='578.42' y='146.5' label='Lakota'  />
-			<marker id='16' x='465.4' y='71.15' label='Cando' labelPos='left'  />
-			<marker id='14' x='512.49' y='125.57' label='Devils Lake'  />
-			<marker id='17' x='698.76' y='171.61' label='Grand Forks' labelPos='left'  />
-			<marker id='19' x='692.48' y='243.82' label='Hillsboro' labelPos='left'  />
-			<marker id='20' x='728.06' y='321.25' label='Fargo' labelPos='left'  />
-			<marker id='21' x='745.85' y='411.25' label='Wahpeton' labelPos='left'  />
-			<marker id='23' x='629.69' y='375.67' label='Lisbon' labelPos='right'  />
-			<marker id='22' x='598.3' y='415.43' label='Oakes' labelPos='left'  />
-			<marker id='25' x='522.96' y='454.15' label='Ellendale' labelPos='right'  />
-			<marker id='26' x='486.33' y='377.76' label='Edgeley' labelPos='right'  />
-			<marker id='27' x='442.38' y='434.27' label='Ashley' labelPos='left'  />
-			<marker id='28' x='363.9' y='402.88' label='Linton' labelPos='left'  />
-			<marker id='29' x='403.66' y='356.83' label='Napolean'  />
-			<marker id='32' x='527.14' y='206.14' label='Cooperstown' labelPos='right'  />
-			<marker id='15' x='587.84' y='310.79' label='Valley City' labelPos='right'  />
-			<marker id='18' x='555.4' y='324.39' label='Jamestown' labelPos='left'  />
-			<marker id='30' x='470.63' y='238.58' label='Carrington' labelPos='right'  />
-			<marker id='40' x='430.87' y='183.12' label='Harvey'  />
-			<marker id='31' x='393.2' y='212.42' label='McClusky'  />
-			<marker id='45' x='337.73' y='248' label='Weshburn' labelPos='left'  />
-			<marker id='46' x='286.46' y='189.4' label='Garrison' labelPos='left'  />
-			<marker id='48' x='174.49' y='152.78' label='New Town' labelPos='left'  />
-			<marker id='49' x='175.54' y='119.29' label='Stanley' labelPos='left'  />
-			<marker id='50' x='197.51' y='74.29' label='Kenmore' labelPos='left'  />
-			<marker id='51' x='45.78' y='145.45' label='Williston'  />
-			<marker id='53' x='83.45' y='183.12' label='Warford City' labelPos='right'  />
-			<marker id='54' x='94.96' y='307.65' label='Belfield' labelPos='bottom'  />
-			<marker id='56' x='127.4' y='311.84' label='Dickinson' labelPos='right'  />
-			<marker id='57' x='325.18' y='347.41' label='Mamden' labelPos='left'  />
-			<marker id='58' x='262.39' y='386.13' label='Carson' labelPos='left'  />
-			<marker id='59' x='294.83' y='435.32' label='Fort Yates' labelPos='left'  />
-			<marker id='60' x='145.19' y='395.55' label='Mott' labelPos='left'  />
-			<marker id='80' x='110.66' y='455.2' label='Hettinger' labelPos='right'  />
-			<marker id='81' x='42.64' y='424.85' label='Bowman' labelPos='left'  />
-			<marker id='83' x='18.57' y='299.28' label='Beech' labelPos='right'  />
-			<marker id='89' x='409.94' y='91.04' label='Rugby' labelPos='left'  />
-			<marker id='84' x='367.04' y='107.78' label='Towner' labelPos='left'  />
-			<marker id='86' x='284.37' y='115.1' label='Minot'  />
-			<marker id='95' x='242.51' y='278.35' label='Beulah'  />
-
-		</definition>
-		<application>
-			<marker id='BI' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-			<marker id='22' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-			<marker id='27' shapeId='newCustomShape'  />
-			<marker id='28' shapeId='newCustomShape'  />
-			<marker id='29' shapeId='newCustomShape'  />
-			<marker id='32' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='30' shapeId='newCustomShape'  />
-			<marker id='40' shapeId='newCustomShape'  />
-			<marker id='31' shapeId='newCustomShape'  />
-			<marker id='45' shapeId='newCustomShape'  />
-			<marker id='46' shapeId='newCustomShape'  />
-			<marker id='48' shapeId='newCustomShape'  />
-			<marker id='49' shapeId='newCustomShape'  />
-			<marker id='50' shapeId='newCustomShape'  />
-			<marker id='51' shapeId='newCustomShape'  />
-			<marker id='53' shapeId='newCustomShape'  />
-			<marker id='54' shapeId='newCustomShape'  />
-			<marker id='56' shapeId='newCustomShape'  />
-			<marker id='57' shapeId='newCustomShape'  />
-			<marker id='58' shapeId='newCustomShape'  />
-			<marker id='59' shapeId='newCustomShape'  />
-			<marker id='60' shapeId='newCustomShape'  />
-			<marker id='80' shapeId='newCustomShape'  />
-			<marker id='81' shapeId='newCustomShape'  />
-			<marker id='83' shapeId='newCustomShape'  />
-			<marker id='89' shapeId='newCustomShape'  />
-			<marker id='84' shapeId='newCustomShape'  />
-			<marker id='86' shapeId='newCustomShape'  />
-			<marker id='95' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

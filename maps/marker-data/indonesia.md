@@ -17,8 +17,8 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
+    
+<div class='tab new-json-tab active'>
 <pre><code class="language-javascript">
 {
     "map": {
@@ -505,8 +505,8 @@
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
+</div>
+<div class='tab old-json-tab'>
 <pre><code class="language-javascript">
 {
     "map": {},
@@ -1150,140 +1150,7 @@
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showborder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='JK' x='202.24' y='209.39' label='Jakarta' labelPos='right'  />
-			<marker id='01' x='6.32' y='12.43' label='Banda Aceh' labelPos='right' />
-			<marker id='02' x='60.22' y='42.5' label='Medan'  />
-			<marker id='03' x='81.99' y='68.41' label='Rantauprapat'  />
-			<marker id='04' x='107.91' y='75.67' label='Dumai' labelPos='right'  />
-			<marker id='05' x='114.13' y='100.55' label='Pekanbaru' labelPos='left'  />
-			<marker id='06' x='130.71' y='105.73' label='Rengat' labelPos='right'  />
-			<marker id='07' x='149.37' y='127.5' label='Jambi' labelPos='right'  />
-			<marker id='09' x='103.76' y='138.9' label='Padang'  />
-			<marker id='10' x='169.07' y='154.45' label='Palembang' labelPos='right'  />
-			<marker id='11' x='123.45' y='170' label='Bengkulu' labelPos='left'  />
-			<marker id='12' x='134.86' y='161.71' label='Lubuklinggau' labelPos='left'  />
-			<marker id='13' x='186.69' y='130.61' label='Belinyu' labelPos='left'  />
-			<marker id='14' x='196.02' y='151.34' label='Toboali' labelPos='left'  />
-			<marker id='16' x='171.14' y='197.99' label='Tanjungkarang-Telukbetung'  />
-			<marker id='17' x='188.76' y='206.28' label='Merak' labelPos='left'  />
-			<marker id='18' x='207.42' y='218.72' label='Bandung' labelPos='left'  />
-			<marker id='19' x='229.19' y='214.57' label='Cirebon' labelPos='right'  />
-			<marker id='15' x='264.43' y='223.9' label='Semarang' labelPos='left' />
-			<marker id='20' x='237.48' y='232.2' label='Cilacap' labelPos='left'  />
-			<marker id='21' x='263.4' y='236.34' label='Yogyakarta' labelPos='bottom'  />
-			<marker id='23' x='301.75' y='225.98' label='Surabaya' labelPos='right'  />
-			<marker id='25' x='330.78' y='243.6' label='Banyuwangi' labelPos='left'  />
-			<marker id='26' x='347.36' y='248.78' label='Denpasar' labelPos='bottom'  />
-			<marker id='27' x='362.91' y='247.74' label='Mataram'  />
-			<marker id='28' x='375.35' y='252.93' label='Taliwang' labelPos='bottom'  />
-			<marker id='30' x='408.52' y='249.82' label='Sape' labelPos='bottom'  />
-			<marker id='35' x='426.14' y='251.89' label='Labuhanbajo'  />
-			<marker id='34' x='432.36' y='269.51' label='Waingapu' labelPos='right'  />
-			<marker id='38' x='482.12' y='245.67' label='Larantuka'  />
-			<marker id='37' x='489.38' y='276.77' label='Kupang' labelPos='right'  />
-			<marker id='31' x='513.22' y='259.15' label='Tutuala' labelPos='right'  />
-			<marker id='36' x='569.2' y='164.82' label='Ambon'  />
-			<marker id='39' x='418.89' y='191.77' label='Makassar' labelPos='left'  />
-			<marker id='40' x='419.92' y='123.35' label='Palu' labelPos='left'  />
-			<marker id='42' x='448.95' y='137.86' label='Kolonodale' labelPos='right'  />
-			<marker id='43' x='446.88' y='149.27' label='Malili' labelPos='left'  />
-			<marker id='44' x='470.72' y='172.07' label='Kendari' labelPos='right'  />
-			<marker id='46' x='456.21' y='176.22' label='Kolaka' labelPos='left'  />
-			<marker id='47' x='456.21' y='93.29' label='Gorontalo'  />
-			<marker id='48' x='491.45' y='93.29' label='Kotamobagu' labelPos='bottom'  />
-			<marker id='49' x='509.07' y='82.92' label='Manado'  />
-			<marker id='50' x='623.1' y='120.24' label='Sorong'  />
-			<marker id='51' x='701.88' y='122.31' label='Biak'  />
-			<marker id='53' x='716.39' y='184.51' label='Timika'  />
-			<marker id='57' x='764.08' y='239.45' label='Merauke' labelPos='left' />
-			<marker id='54' x='782.74' y='148.23' label='Jayapura'  />
-			<marker id='55' x='239.55' y='90.18' label='Singkawang' labelPos='left'  />
-			<marker id='58' x='244.74' y='108.84' label='Pontianak' labelPos='right'  />
-			<marker id='52' x='254.07' y='121.28' label='Telukbatang' labelPos='left'  />
-			<marker id='56' x='292.42' y='103.66' label='Sintang' labelPos='right'  />
-			<marker id='60' x='261.32' y='146.16' label='Kendawangan' labelPos='right'  />
-			<marker id='61' x='388.83' y='88.11' label='Sangkulirang'  />
-			<marker id='62' x='376.39' y='107.8' label='Samarinda'  />
-			<marker id='59' x='370.17' y='123.35' label='Balikapapan' labelPos='top' />
-			<marker id='63' x='334.92' y='138.9' label='Palangkaraya'  />
-			<marker id='65' x='328.7' y='157.56' label='Banjarmasin' labelPos='bottom'  />
-		</definition>
-		<application>
-			<marker id='JK' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'/>
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-			<marker id='27' shapeId='newCustomShape'  />
-			<marker id='28' shapeId='newCustomShape'  />
-			<marker id='30' shapeId='newCustomShape'  />
-			<marker id='35' shapeId='newCustomShape'  />
-			<marker id='34' shapeId='newCustomShape'  />
-			<marker id='38' shapeId='newCustomShape'  />
-			<marker id='37' shapeId='newCustomShape'  />
-			<marker id='31' shapeId='newCustomShape'  />
-			<marker id='36' shapeId='newCustomShape'  />
-			<marker id='39' shapeId='newCustomShape'  />
-			<marker id='40' shapeId='newCustomShape'  />
-			<marker id='42' shapeId='newCustomShape'  />
-			<marker id='43' shapeId='newCustomShape'  />
-			<marker id='44' shapeId='newCustomShape'  />
-			<marker id='46' shapeId='newCustomShape'  />
-			<marker id='47' shapeId='newCustomShape'  />
-			<marker id='48' shapeId='newCustomShape'  />
-			<marker id='49' shapeId='newCustomShape'  />
-			<marker id='50' shapeId='newCustomShape'  />
-			<marker id='51' shapeId='newCustomShape'  />
-			<marker id='53' shapeId='newCustomShape'  />
-			<marker id='57' shapeId='newCustomShape'  />
-			<marker id='54' shapeId='newCustomShape'  />
-			<marker id='55' shapeId='newCustomShape'  />
-			<marker id='58' shapeId='newCustomShape'  />
-			<marker id='52' shapeId='newCustomShape'  />
-			<marker id='56' shapeId='newCustomShape'  />
-			<marker id='60' shapeId='newCustomShape'  />
-			<marker id='61' shapeId='newCustomShape'  />
-			<marker id='62' shapeId='newCustomShape'  />
-			<marker id='59' shapeId='newCustomShape'  />
-			<marker id='63' shapeId='newCustomShape'  />
-			<marker id='65' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>
