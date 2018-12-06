@@ -24,30 +24,36 @@ For example, you can define the `caption` under the chart object as shown in the
 
 In FusionTime, each and every component is a separate object which has specific properties of its own. 
 
-For example, to specify the caption you need to create a `caption` object and set the value of the `text` property. Refer to the code below:
+For example, to specify the caption you need to create a `caption` object under the `dataSource` object inn the FusionCharts constructor and set the value of the `text` property. Refer to the code below:
 
 ```
-{
-    caption: {
-        text: 'Chart Caption'
-    }
-}
+new FusionCharts({
+        type: 'timeseries',
+        ...
+        dataSource: {
+            caption: {
+                text: 'Online Sales of a SuperStore in the US'
+            }
+        }
+    });
 ```
 
 Similarly, to configure the y-axis in FusionTime you need to create a `yAxis` object and define the y-axis related properties within the object. Refer to the code below:
 
 ```
-{
-	yAxis: {
-        "plot": {
-            "value": "Name", //Yaxis name
-            "type": "column"  //Set the plot type
-        }
-    }
-}
+new FusionCharts({
+        type: 'timeseries',
+        ...
+        dataSource: {
+            "yAxis": [{
+                "plot": {
+                    "title": 'Sales ($)'
+                }
+            }],
+    });
 ```
 
-Every component has its own configuration. To know more click [here]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime).
+Every component in FusionTime has its own set of properties to configure. To know more click [here]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime).
 
 ## Styling 
 
@@ -69,13 +75,16 @@ FusionTime allows you to define the cosmetic properties using Styles in two diff
 * Define a `StyleDefinition` object and set the style properties within the object. You can then use the style properties to style any chart component. Refer to the code below:
 
 ```
-{
-    styleDefinition: {
-        "small-text": {
-            "font-size": "6"
+new FusionCharts({
+        type: 'timeseries',
+        ...
+        dataSource: {
+            styleDefinition: {
+                "small-text": {
+                    "font-size": "6"
+            }
         }
-    }
-}
+   });
 ```
 
 OR
@@ -83,12 +92,16 @@ OR
 * You can directly create a style object within a component to set the style properties. Refer to the code below:
 
 ```
-{
-    caption: {
-        text: 'Interest Rate Analysis',
-        style: {
+new FusionCharts({
+        type: 'timeseries',
+        ...
+        dataSource: {
+            caption: {
+                text: 'Online Sales of a SuperStore in the US'
+                style: {
             text: 'small-text'
         }
-    }
-}
+            }
+        }
+    });
 ```
