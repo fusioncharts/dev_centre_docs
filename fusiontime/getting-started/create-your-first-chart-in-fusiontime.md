@@ -52,11 +52,11 @@ That completes the installation of **FusionTime**.
 
 ## Create your first chart
 
-Now that you have installed, it's time to create your first time series chart using FusionTime. To start with we will create a simple time-series chart showcasing online sales of a SuperStore in the US. The chart will look like as shown in the image below:
+Now that you have installed, it's time to create your first time series chart using FusionTime. To start with we will create a simple time-series chart showcasing **Online sales of a SuperStore in US**. The chart will look like as shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-To create the above chart let's understand the basics FusionTime in brief. Data to the FusionTime needs to be fed from a [Datatable]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
+To create the above chart, first let's understand the basics of FusionTime in short. In order to render a chart, you need to provide data in form of a [Datatable]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
 * The `schema` which defines the properties of the columns.  
 
@@ -66,11 +66,11 @@ Now, let's check how to prepare the schema and the data of the `DataTable`.
 
 ### Create the `schema`
 
-The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`. The schema helps DataTable understand the columns in your data, the data type for each column and the input format in case of date. You've to mandatorily specify the schema for each DataTable for FusionTime to render it.
+The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`. The schema maps the data to the columns of a `DataTable` along with the type for each column and the input format in case of date. You've to mandatorily specify the schema for each `DataTable`.
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 
-> Note: It is not mandatory to create the schema in a different .json file. You can also define the schema within the `.html` file.
+> Note: It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
 
 ```JSON
@@ -138,13 +138,14 @@ let data = [
     ]
 ]
 ```
+To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-single-series/data.json.)
 
 In the above code:
 * `data` is the variable in which the data array is saved.
 * Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
     * The name of the Country.
     * Time according to the format
-    * Total Sales amount
+    * Total Sales amount 
 
 We are all set with our data to create the chart.
 
@@ -279,4 +280,4 @@ In the above code:
 
 That's it! Your first chart using FusionTime is ready.
 
-Next, we will discuss on how to add create a [multivariate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.
+Next, we will discuss on how to create a [multivariate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.

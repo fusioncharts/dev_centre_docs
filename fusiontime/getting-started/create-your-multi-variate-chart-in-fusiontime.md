@@ -46,7 +46,7 @@ In the above code:
 
 * The second object set the **date/time** [format]({% site.baseurl %}/fusiontime/api-reference/fusiontime-attributes#datetime-format-7) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
 
-* The next three are the three measures of the chart:
+* The next three are the columns for three measures of the chart:
 
     * **Sales**.
 
@@ -108,6 +108,8 @@ let data = [
     ]
 ]
 ```
+To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-multi-variate/data.json)
+
 In the above code:
 
 * `data` is the variable in which the data array is saved. 
@@ -221,4 +223,4 @@ window.charInstance = new FusionCharts({
 
 That's it! Your first multivariate chart is ready.
 
-Next, we will discuss on how to add create a [multiple plots]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.
+Next, we will discuss on how to create a [multiple plots]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.

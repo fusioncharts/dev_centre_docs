@@ -35,11 +35,15 @@ However, you can change the aggregate function from `average` to any of the foll
 To change the aggregate function refer to the code below:
 
 ```
-
-yAxis: [{
-    "aggregation": "Sum",
-}],
-
+new FusionCharts({
+        type: 'timeseries',
+        ...
+        dataSource: {
+            	yAxis: [{
+    			"aggregation": "Sum",
+			}],
+        }
+    })
 ```
 
 In the above code we have:

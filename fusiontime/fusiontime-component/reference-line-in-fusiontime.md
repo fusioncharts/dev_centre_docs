@@ -12,7 +12,7 @@ The salient features of the reference line:
 
 * A label which is by default displayed on the right side of the refernce the line, when you hover on the knob.
 
-* A value which is by default displayed on the left side (y-axis) of the reference line on hover. 
+* A value which is by default displayed on the left side (y-axis) whenyou hover on the reference line. 
 
 A chart with a reference line is shown below:
 
@@ -33,9 +33,7 @@ Refer to the code given below:
 ```
 {
     type: 'timeseries',
-    renderAt: 'container',
-    width: '95%',
-    height: 450,
+    ...
     dataSource: {
         data: dataStore,
         ...

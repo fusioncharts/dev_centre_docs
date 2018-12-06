@@ -8,19 +8,13 @@ A standard range selector is an extension which is used to select standard time 
 
 <img src="{% site.baseurl %}/images/fusiontime-component-standard-range-selector.png" alt="Standard Range Selector" width="700" height="420">
 
-The salient features of Standard Range Selector are:
+The three sections of Standard Range Selector are:
 
-* Can select data based on three logical types of intervals:
+* **All** - Selects all of the available data values.
 
-    * All - Selects all of the available data values.
+* **Contextual time periods** - 1Y | 6M | 3M | 1M | 15D | etc. - You can select and display data for the last one year, six months, three months, or one month of the currently visible time interval, respectively. The options of the contextual time periods will vary based on the atomicity of the data and the current data displayed.
 
-    * Contextual time periods - 1Y | 6M | 3M | 1M | 15D | etc. - You can select and display data for the last one year, six months, three months, or one month of the currently visible time interval, respectively. 
-
-    The options of the contextual time periods will vary based on the atomicity of the data and the current data displayed.
-
-    * Busieness friendly dates - YTD | QTD | MTD | WTD - YTD, QTD, MTD, and WTD display data from the beginning of the last year, quarter, month, or week (respectively) of the total time interval in the data to the present date. 
-
-    These options will apppear only if the data is of the current year, quarter, month and week. 
+* **Busieness friendly dates** - YTD | QTD | MTD | WTD - YTD, QTD, MTD, and WTD display data from the beginning of the last year, quarter, month, or week (respectively) of the total time interval in the data to the present date. These options will apppear only if the data is of the current year, quarter, month and week. 
 
 A chart with Standard range selector is shown below:
 
@@ -28,16 +22,14 @@ A chart with Standard range selector is shown below:
 
 ## Show/Hide Standard Range Selector
 
-Standard Range Selector is visible in every chart, by default. However, to turn it off, set the value of the `enabled` attribute within the `standardRangeSelector` extension of the `extensions` object to `0`.
+By default, the standard range selector is visible in every chart. However, to turn it off, set the value of the `enabled` attribute within the `standardRangeSelector` extension of the `extensions` object to `0`.
 
 Refer to the code below:
 
 ```
 {
     type: 'timeseries',
-    renderAt: 'container',
-    width: "95%",
-    height: 650,
+    ...
     dataSource: {
         data: fusionTable,
         ...

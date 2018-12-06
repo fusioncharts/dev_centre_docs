@@ -26,60 +26,20 @@ This article contains the list of attributes of FusionTime. The attributes have 
 	</tr>
 </table>
 
-## Y Axes
-
-<table>
-	<tr>
-		<th>Attribute</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>`plot`</td>
-		<td>String, Array of Strings, Array of Objects</td>
-		<td>It maps to the column header for the measure which is plotted against the Y Axis. If it's an array of strings, all the strings are plotted against the same axis. If its an array of objects, the developer can additionally specify the type of the plot as well as the aggregation strategy used to represent the measure.</td>
-	</tr>
-	<tr>
-		<td>`plotType`</td>
-		<td>String</td>
-		<td>This attribute sets the type of the the data plot to render the chart. By default the type is a line. It controls the plot type for all names specified.</td>
-	</tr>
-	<tr>
-		<td>`title`</td>
-		<td>String</td>
-		<td>Allows you to rename the title of the axis. If not specified, the axis title will be the same as the column name joined by hyphens.</td>
-	</tr>
-	<tr>
-		<td>`aggregation`</td>
-		<td>String</td>
-		<td>Allows you to specify alternative aggregation strategies for the measures being plotted. It controls the aggregation strategy for all plots specified.</td>
-	</tr>
-	<tr>
-		<td>`type`</td>
-		<td>String</td>
-		<td>This attribute sets the type of the the data plot to render the chart. It is used when you want to specify the chart type under `plot` object.</td>
-	</tr>
-</table>
-
-## Reference Lines
-
-<table>
-	<tr>
-		<th>Attribute</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>`label`</td>
-		<td>String</td>
-		<td>The label which gets displayed when you hover the reference lines.</td>
-	</tr>
-	<tr>
-		<td>`value`</td>
-		<td>Number</td>
-		<td>This attribute specifies the value at which the reference line is drawn.</td>
-	</tr>
-</table>
+```
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+		xAxis {
+			plot: ' ', //Column Name
+			timemarker: [{
+				// Attributes of Time Marker
+            }] 
+		}
+    },
+});
+```
 
 ## Time Markers
 
@@ -121,6 +81,116 @@ This article contains the list of attributes of FusionTime. The attributes have 
 	</tr>
 </table>
 
+```
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+		xAxis {
+			plot: ' ', //Column Name
+			timemarker: [{
+				// Attributes of Time Marker
+                start: ' ', //Start Date
+                end: ' ', //End Date
+                label: ' ', //Label of the Time Axis
+                timeFormat: ' ', //Time format
+                // Define the frequency, at which the cyclic time marker will be repeated.
+                repeat {
+			        unit: ' ', //Defines the time unit for the time marker.
+			        multiplier: ' ' //Defines the multiplier of the time unit.
+			    }
+            }] 
+		}
+    },
+});
+```
+
+## Y Axes
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`plot`</td>
+		<td>String, Array of Strings, Array of Objects</td>
+		<td>It maps to the column header for the measure which is plotted against the Y Axis. If it's an array of strings, all the strings are plotted against the same axis. If its an array of objects, the developer can additionally specify the type of the plot as well as the aggregation strategy used to represent the measure.</td>
+	</tr>
+	<tr>
+		<td>`plotType`</td>
+		<td>String</td>
+		<td>This attribute sets the type of the the data plot to render the chart. By default the type is a line. It controls the plot type for all names specified.</td>
+	</tr>
+	<tr>
+		<td>`title`</td>
+		<td>String</td>
+		<td>Allows you to rename the title of the axis. If not specified, the axis title will be the same as the column name joined by hyphens.</td>
+	</tr>
+	<tr>
+		<td>`aggregation`</td>
+		<td>String</td>
+		<td>Allows you to specify alternative aggregation strategies for the measures being plotted. It controls the aggregation strategy for all plots specified.</td>
+	</tr>
+	<tr>
+		<td>`type`</td>
+		<td>String</td>
+		<td>This attribute sets the type of the the data plot to render the chart. It is used when you want to specify the chart type under `plot` object.</td>
+	</tr>
+</table>
+
+```
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+		yAxis: [{
+			plotType: ' ', //To set the plot type out the 'plot' object
+		    plot: {
+		        //Column header for the measure which is plotted against the Y Axis
+		    },
+		    type: ' ', //Plot type to render the chart
+		    title: ' ', //Title of the axis
+			aggregation: ' ' //Aggregate Function 	
+		}],
+	}
+})
+```
+
+## Reference Lines
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`label`</td>
+		<td>String</td>
+		<td>The label which gets displayed when you hover the reference lines.</td>
+	</tr>
+	<tr>
+		<td>`value`</td>
+		<td>Number</td>
+		<td>This attribute specifies the value at which the reference line is drawn.</td>
+	</tr>
+</table>
+
+```
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+        referenceLine: [{
+            'label': ' ', //Label of the reference line
+            'value': ' ' //Value of the reference line
+        }],
+	}
+})
+```
+
 ## Data Markers
 
 <table>
@@ -160,6 +230,22 @@ This article contains the list of attributes of FusionTime. The attributes have 
 		<td>The text specified in this attribute is displayed in the tooltip when you hover over the data marker.</td>
 	</tr>
 </table>
+
+```
+new FusionCharts({
+    type: 'timeseries',
+    ...
+    dataSource: {
+        dataMarker: [{
+		    seriesName: ' ', //Name of the series
+		    time: ' ', //Time on which the data marker will be shown
+		    identifier: ' ', //Defines a character to be shown
+		    timeFormat: ' ', //Format of the date
+		    tooltext: ' ' //Text in the tooltip
+		}] 
+	}
+})
+```
 
 ## Chart Configuration and Root JSON Attributes
 
