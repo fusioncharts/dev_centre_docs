@@ -24,7 +24,7 @@ To enable export:
 
 * The <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart.
 
-Hover over this button to see the dropdown menu with export options. From the menu rendered, select the required format. The chart is downloaded to your machine in the selected format.
+Hover over this button to see the dropdown menu with export options. From the menu, select the required format. The chart is exported to your machine in the selected format.
 
 A time-series chart with export enabled is shown below. Hover over the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the required export format.
 
