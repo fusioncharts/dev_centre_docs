@@ -4,6 +4,25 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.3</h2>
+6th December, 2018
+
+<h4 class="sub-heading">New Feature</h4>
+
+* The `FusionCharts.getVersion('all')` api is introduced to check the version of all the products and the FusionCharts Suite. From now onward, the FusionCharts Suite package will contain FusionCharts, FusionWidgets, PowerCharts, FusionMaps and FusionTime. Whenever a new version of these products is released the version of the FusionCharts Suite XT will change accordingly.    
+
+<h4>Improvements</h4>
+
+* With the introduction of our new product `FusionTime`, our core platform has now been updated to accommodate time series visualization along with all the other charts of FusionCharts.
+
+<h4>Fixes</h4>
+
+* Jammu & Kashmir map was throwing JavaScript error when entities were clicked. This issue has now been fixed.
+
+<h4>Deprecated</h4>
+
+* `Fusioncharts.version` is deprecated.
+
 <h2 class="sub-heading">Version 3.13.2-sr.1</h2>
 30th October, 2018
 

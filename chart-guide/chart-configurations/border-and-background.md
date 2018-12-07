@@ -1,7 +1,7 @@
 ---
-title: Border and Background | FusionCharts
-description: A chart's background refers to the whole area on which a chart is drawn. The background of the chart is enclosed by a chart border.
-heading: Border and Background
+title: Learn to change Borders & Backgrounds in your Charts & Graphs 
+description: Background and Borders have a big impact on how the user perceives a chart. Learn to control border thickness, transparency, color and customize backgrounds with solid colors, gradients or images.
+heading: Borders and Backgrounds
 ---
 
 A chart's background refers to the whole area on which it is drawn, and it is enclosed by the chart border, the rectangle around a chart's background.

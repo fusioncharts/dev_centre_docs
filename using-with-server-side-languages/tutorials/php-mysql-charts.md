@@ -1,9 +1,7 @@
 ---
-permalink: using-with-server-side-languages/tutorials/php-mysql-charts.html
-title: Create Interactive Charts using PHP and MySQL | FusionCharts
-description: This section is a tutorial in FusionCharts Suite XT which helps you to create interactive charts using PHP and MYSQL.
-heading: Create Interactive Charts using PHP and MySQL
-chartPresent: true
+title: Create Interactive Charts using PHP and MySQL Database | Simple 4 Step Guide
+description: Learn how to write server side code in PHP to retrieve the data from MySQL database and make beautiful, self-updating and interactive charts.
+heading: Create Interactive Charts using PHP and MySQL Database
 ---
 
 There are two ways of obtaining data for the chart:
