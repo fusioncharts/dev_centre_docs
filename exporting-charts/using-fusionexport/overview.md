@@ -12,7 +12,7 @@ __FusionExport__, allows you to export JavaScript chart as a static image and ex
 
 FusionExport behaves similarly to a Database Servers like __MySQL__ and __MongoDB__. In case of MySQL, you will get a MySQL server along with SDKs for C#, Node.js, Python and so on which can be used in the application. These SDKs further let you query MySQL server, help in preventing from SQL injection and provide Object-Relational Mapping. It also comes with a __CLI__ utility where you can access the database via command line. FusionExport works in a similar way.
 
-![Package Structure]({% site.baseurl %}/images/package-structure.png)
+![Package Structure](/images/package-structure.png)
 
 The three components of FusionExport are: 
 
@@ -30,15 +30,15 @@ We have developed FusionExport packages in such a way that you can implement the
 
 There are three ways to implement FusionExport in your architecture - 
 
-1. [API based Architecture]({% site.baseurl %}/exporting-charts/using-fusionexport/overview#api-based-architecture-3)
+1. [API based Architecture](/exporting-charts/using-fusionexport/overview#api-based-architecture-3)
 
-2. [Non API based Architecture]({% site.baseurl %}/exporting-charts/using-fusionexport/overview#non-api-based-architecture-5)
+2. [Non API based Architecture](/exporting-charts/using-fusionexport/overview#non-api-based-architecture-5)
 
-3. [CLI based Architecture]({% site.baseurl %}/exporting-charts/using-fusionexport/overview#cli-based-architecture-8)
+3. [CLI based Architecture](/exporting-charts/using-fusionexport/overview#cli-based-architecture-8)
 
 ### API based Architecture
 
-![API based Architecture]({% site.baseurl %}/images/api-based-architecture.png)
+![API based Architecture](/images/api-based-architecture.png)
 
 This is the most common architecture which covers diverse scenarios like on-demand reports download, sending periodic emails via cron jobs, exporting dashboards and so on. 
 
@@ -90,7 +90,7 @@ Similar to API based architecture you will be using following FusionExport compo
 
 2. FusionExport Server SDK
 
-![Non API based Architecture]({% site.baseurl %}/images/non-api-based-architecture.png)
+![Non API based Architecture](/images/non-api-based-architecture.png)
 
 In this scenario, you don't have to worry about building any Application Server. You can simply build a client and directly communicate with FusionExport Server using SDK - 
 
@@ -122,7 +122,7 @@ Flow for such architecture would be as follows -
 
 ### CLI based Architecture
 
-![CLI based Architecture]({% site.baseurl %}/images/cli-based-architecture.png)
+![CLI based Architecture](/images/cli-based-architecture.png)
 
 In case if you don't want to write any implementation and use FusionExport internally, then you can also use the FusionCharts CLI where you don't have to write a single line of code. Use command line arguments specified in the FusionExport CLI and start using FusionExport in no time. 
 
@@ -144,10 +144,10 @@ In this case, you will be using following FusionExport components -
 
 ## Ready to Get Started?
 
-* [Install FusionExport Server]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server)
+* [Install FusionExport Server](/exporting-charts/using-fusionexport/installation/install-fusionexport-server)
 
-* [Install FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli)
+* [Install FusionExport CLI](/exporting-charts/using-fusionexport/installation/install-fusionexport-cli)
 
-* [Install FusionExport Server SDKs]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
+* [Install FusionExport Server SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
 
-* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the Export Type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)

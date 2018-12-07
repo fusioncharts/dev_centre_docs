@@ -679,7 +679,7 @@ Click [here](http://jsfiddle.net/fusioncharts/RXe47/) to edit the above chart.
 
 The above sample replaces the hard-coded value with the macro $value. Now, whenever you roll the mouse pointer over the dial, the current value of the dial will be displayed along with the text set in the `tooltext` attribute of the `dial` element.
 
-To see a detailed list of available macros, please refer to [this]({% site.baseurl %}/chart-guide/chart-configurations/tool-tips#introduction-to-macros-4) link.
+To see a detailed list of available macros, please refer to [this](/chart-guide/chart-configurations/tool-tips#introduction-to-macros-4) link.
 
 ## Add multiple dials on the gauge
 
@@ -1281,7 +1281,7 @@ Use the following attributes of the `chart` object to create charts of various a
 
 The angular gauge processes angles as shown in the images below:
 
-![Angular-Angle]({% site.baseurl %}/images/angular-angles-2.jpg)
+![Angular-Angle](/images/angular-angles-2.jpg)
 
 You can represent each point in the circle by two angles - a positive angle and a negative angle, to plot bi-directional angular gauges. To flip the gauge, all you need to do is swap the default values of the `gaugeStartAngle` and the `gaugeEndAngle` attributes.
 
@@ -1408,7 +1408,7 @@ Two input fields have been rendered with the gauge to enter the target width and
 
 ## Dynamically resize gauges with manual values for elements
 
-You can configure the various functional and cosmetic properties of gauge elements by manually specifying values for each, in order to dynamically resize them. For example, you can configure the gauge [radius]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#configure-dials-22), the [dial radius]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#configure-dials-22), the [tick value distance]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#showhide-tick-marks-and-tick-values-32), the [gauge origin]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#configure-angles-and-origins-43), etc. Ideally, you should set these values based on specific width and height dimensions for the gauge. You can name these dimensions as the original width and the original height of the gauge.
+You can configure the various functional and cosmetic properties of gauge elements by manually specifying values for each, in order to dynamically resize them. For example, you can configure the gauge [radius](/chart-guide/gauges-and-widgets/angular-gauge#configure-dials-22), the [dial radius](/chart-guide/gauges-and-widgets/angular-gauge#configure-dials-22), the [tick value distance](/chart-guide/gauges-and-widgets/angular-gauge#showhide-tick-marks-and-tick-values-32), the [gauge origin](/chart-guide/gauges-and-widgets/angular-gauge#configure-angles-and-origins-43), etc. Ideally, you should set these values based on specific width and height dimensions for the gauge. You can name these dimensions as the original width and the original height of the gauge.
 
 By default, a gauge set with manually-specified positions and size, when rendered initially, draws itself with all the elements based on the values provided in the JSON/XML. It does not scale its coordinates and other gauge elements. When you resize the gauge, it scales the manually specified values or coordinates based on the dimensions of the initially rendered gauge, that is, the width and the height of the gauge when rendered for the first time. Thus, scaling of the various manually configured elements of a gauge will vary and may create problems when the initial dimensions of the gauge are different from the original width and height of the gauge.
 
@@ -1469,7 +1469,7 @@ The sample given above is calculated with a original width of 390 pixels and ori
 
 ## Set Alert Manager
 
-Gauges can be set to update in real time, either programmatically or by polling the server for data. To know more about how to configure a real-time gauge, click [here]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#create-real-time-angular-gauge-55).
+Gauges can be set to update in real time, either programmatically or by polling the server for data. To know more about how to configure a real-time gauge, click [here](/chart-guide/gauges-and-widgets/angular-gauge#create-real-time-angular-gauge-55).
 
 Real-time gauges can be made more intuitive by setting an alert that indicates when a defined set of threshold data values are reached.
 

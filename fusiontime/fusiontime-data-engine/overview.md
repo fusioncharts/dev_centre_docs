@@ -57,7 +57,7 @@ In the above code:
 * Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
 	* name - Specify the name of the column.
 	* type - Specify the type of the column.
-	* format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here]({% site.baseurl %}/fusiontime/fusiontime-attributes).
+	* format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
 	
 ### Data
 

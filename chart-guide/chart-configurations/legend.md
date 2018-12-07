@@ -10,7 +10,7 @@ A legend is a chart element used to display the series name for each dataset, in
 
 In the following image, the legend rendered below the x-axis helps identify the data plots corresponding to a series name. Each series is represented by its own icon in the legend.
 
-![Legend]({% site.baseurl %}/images/chart-configurations-legend-image-1.png)
+![Legend](/images/chart-configurations-legend-image-1.png)
 
 ## Show/Hide the Legends
 
@@ -199,7 +199,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Drag Legend]({% site.baseurl %}/gif/configurations-legend-gif-2.gif)
+![Drag Legend](/gif/configurations-legend-gif-2.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/5smv4kg4/) to edit the above chart.
 

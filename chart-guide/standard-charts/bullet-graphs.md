@@ -402,7 +402,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Bullet-Graph-GIF-1]({% site.baseurl %}/gif/standard-charts-bullet-graph-gif-1.gif)
+![Bullet-Graph-GIF-1](/gif/standard-charts-bullet-graph-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/tfmv5km3/) to edit the above chart.
 

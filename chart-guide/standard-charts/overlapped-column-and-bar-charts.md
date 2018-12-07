@@ -29,7 +29,7 @@ To create an **Overlapped Column 2D** chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=overlappedcolumn2d) page of overlapped column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=overlappedcolumn2d) page of overlapped column 2D chart.
 
 An overlapped column 2D chart looks like:
 
@@ -41,7 +41,7 @@ Click [here](http://jsfiddle.net/fusioncharts/yaqert65/) to edit the above overl
 
 To render an overlapped bar 2D chart, change the value of `type` attribute from `overlappedColumn2D` to `overlappedBar2D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=overlappedbar2d) page of overlapped bar 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=overlappedbar2d) page of overlapped bar 2D chart.
 
 The overlapped bar 2D chart looks like:
 

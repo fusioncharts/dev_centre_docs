@@ -309,7 +309,7 @@ The links should be defined in the format `newchart-dataformat-datasource`. For 
 
 We’ll start with the data for the year 2011. In the code below, you can see that there are two levels of linked data, one for the yearly data and another for the quarterly data. The corresponding linked charts are defined inside the `linkeddata` arrays.
 
-![server side program as shown in diagram]({% site.baseurl %}/images/xjson.jpg)
+![server side program as shown in diagram](/images/xjson.jpg)
 
 The final JSON code that we need for this sample should be as shown below:
 

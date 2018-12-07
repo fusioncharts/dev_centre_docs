@@ -145,8 +145,8 @@ Apart from the usual boilerplate, the sample __C#/VB__ code provided above corre
 
     * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
 
-    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Spline chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `spline`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Spline chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `spline`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
 
     * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, and within a `<form><div>`, render the chart.
 
-> Refer to [Spline chart]({% site.baseurl %}/chart-guide/standard-charts/spline-charts) for more information on the configuration and data for this chart type.
+> Refer to [Spline chart](/chart-guide/standard-charts/spline-charts) for more information on the configuration and data for this chart type.

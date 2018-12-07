@@ -8,9 +8,9 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/plain-javascript/configure-your-chart-using-plain-javascript#update-chart-data-1)
+* [Update Chart Data](/getting-started/plain-javascript/configure-your-chart-using-plain-javascript#update-chart-data-1)
 
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/plain-javascript/configure-your-chart-using-plain-javascript#update-chart-attributes-2)
+* [Update Chart Attributes](/getting-started/plain-javascript/configure-your-chart-using-plain-javascript#update-chart-attributes-2)
 
 ## Update Chart Data
 

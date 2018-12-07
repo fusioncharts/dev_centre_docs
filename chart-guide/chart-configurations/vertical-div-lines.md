@@ -10,7 +10,7 @@ Vertical divisional (or div) lines are vertical lines running through the canvas
 
 The image below shows vertical div lines rendered in a line chart:
 
-![Vertical divisional lines]({% site.baseurl %}/images/chart-configurations-vertical-div-lines-image-1.png)
+![Vertical divisional lines](/images/chart-configurations-vertical-div-lines-image-1.png)
 
 ## Show Vertical Divisional Lines
 

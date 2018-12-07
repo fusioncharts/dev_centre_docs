@@ -12,7 +12,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 ## Load data using JSON as URL
 
-Let's build the same revenue chart which we built in the [first example]({% site.baseurl %}/getting-started/react/your-first-chart-using-react) using JSON, and use a .json file as the data source.
+Let's build the same revenue chart which we built in the [first example](/getting-started/react/your-first-chart-using-react) using JSON, and use a .json file as the data source.
 
 {% embed_chartData plain-js-setting-data-using-url-example-1.js json %}
 
@@ -209,7 +209,7 @@ The above chart has been rendered using the following steps:
 
 3. Within the class `CommonThemeUsage`, define `Page_Load()`: 
     * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
-    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
     * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include __all theme files__), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
@@ -373,7 +373,7 @@ The above chart has been rendered using the following steps:
 
 3. Within the class `CommonThemeUsage`, define `Page_Load()`: 
     * Declare a string `jsonData` and use it to assign the chart configuration as a XML string.
-    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
     * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include __all theme files__), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
     * Set the `dataFormat` as XML.
     * Embed the json data as the value of `dataSource`.

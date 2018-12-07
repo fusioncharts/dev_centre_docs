@@ -8,8 +8,8 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure using the React `props` object to:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-data-1) (using React `Props` object)
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-attributes-2) (using React `Props` object)
+* [Update Chart Data](/getting-started/react/configure-your-chart-using-react#update-chart-data-1) (using React `Props` object)
+* [Update Chart Attributes](/getting-started/react/configure-your-chart-using-react#update-chart-attributes-2) (using React `Props` object)
 
 ## Update Chart Data
 

@@ -26,7 +26,7 @@ The distinct features of a box and whisker chart include:
 
 The `five-number summary` principle is used to plot data on the box and whisker charts. This principle helps to provide a statistical summary for a given set of numbers. It gives information about the range (minimum and maximum numbers), the center (median), and the spread (upper and lower quartiles) for the set of values provided. A simple illustration of a box and whisker plot is given below:
 
-![box and whisker]({% site.baseurl %}/images/standard-charts-box-and-whisker-image-1.jpg)
+![box and whisker](/images/standard-charts-box-and-whisker-image-1.jpg)
 
 > There is another principle, named as the 'Seven-number Summary' which is not used in the current implementation.
 
@@ -130,7 +130,7 @@ To create a box and whisker chart, keep a note of the steps given below:
 
 > **Note:** Comma (`,`) is the default data-separator. Specify the data-separator explicitly using the `dataSeparator` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=boxandwhisker2d) page of box and whisker chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=boxandwhisker2d) page of box and whisker chart.
 
 Refer to the code given below:
 

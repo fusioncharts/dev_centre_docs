@@ -240,4 +240,4 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 
 ## Related Resources
 
-* [Inject Extra Javascript while Exporting]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting)
+* [Inject Extra Javascript while Exporting](/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting)

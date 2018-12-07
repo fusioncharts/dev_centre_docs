@@ -47,10 +47,10 @@ Once done, run the following command:
 
 ## Related Resources
 
-* [Customize the Width and Height of an Exported Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+* [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the Export Type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Add a logo and Heading to the Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
+* [Add a logo and Heading to the Dashboard](/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
 
-* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

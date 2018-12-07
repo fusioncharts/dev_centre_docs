@@ -56,7 +56,7 @@ Now that you have installed, it's time to create your first time series chart us
 
 {% embed_ftChart online-sales-single-series %}
 
-To create the above chart, first let's understand the basics of FusionTime in short. In order to render a chart, you need to provide data in form of a [Datatable]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
+To create the above chart, first let's understand the basics of FusionTime in short. In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
 * The `schema` which defines the properties of the columns.  
 
@@ -92,7 +92,7 @@ In the above code:
 * Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
     * name - Specify the name of the column.
     * type - Specify the type of the column.
-    * format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here]({% site.baseurl %}/fusiontime/fusiontime-attributes).
+    * format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
 
 Now that we have the schema ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
@@ -149,7 +149,7 @@ In the above code:
 
 We are all set with our data to create the chart.
 
-> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](/fusiontime/getting-started/change-default-aggregation).
 
 Now, let's create the `.html` file to render the above chart.
 
@@ -280,4 +280,4 @@ In the above code:
 
 That's it! Your first chart using FusionTime is ready.
 
-Next, we will discuss on how to create a [multivariate]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.
+Next, we will discuss on how to create a [multivariate](/fusiontime/getting-started/create-your-multi-variate-chart-in-fusiontime) chart.

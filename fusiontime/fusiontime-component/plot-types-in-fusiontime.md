@@ -37,7 +37,7 @@ The time series chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-To check out the detailed step to render the above chart, click [here]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
+To check out the detailed step to render the above chart, click [here](/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
 
 ## Column
 

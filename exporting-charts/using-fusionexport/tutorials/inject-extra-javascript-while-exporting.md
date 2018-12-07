@@ -227,6 +227,6 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 ## Related Resources
 
-* [Asynchronous Capture]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/asynchronous-capture)
+* [Asynchronous Capture](/exporting-charts/using-fusionexport/tutorials/asynchronous-capture)
 
-* [Enable Logging]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/enabling-logging)
+* [Enable Logging](/exporting-charts/using-fusionexport/tutorials/enabling-logging)

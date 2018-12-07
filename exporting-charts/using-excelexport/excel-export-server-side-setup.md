@@ -23,7 +23,7 @@ __Steps :__
 
         * Search for the package in the Nuget repository.
 
-        ![Excel Export]({% site.baseurl %}/images/server-side-set-up-image-1.png)
+        ![Excel Export](/images/server-side-set-up-image-1.png)
 
         * Click __Install__.
 
@@ -122,7 +122,7 @@ __Steps:__
 
     * Search for the package in the Nuget repository.
 
-    ![Excel Export]({% site.baseurl %}/images/server-side-set-up-image-5.png)
+    ![Excel Export](/images/server-side-set-up-image-5.png)
 
     * Click **Install**.
 
@@ -166,7 +166,7 @@ __Steps:__
     * __Method 1:__ Through Nuget Package manager:
         * Search for the package in the Nuget repository.
 
-        ![Excel Export]({% site.baseurl %}/images/server-side-set-up-image-6.png)
+        ![Excel Export](/images/server-side-set-up-image-6.png)
 
         * Click __Install__.
 

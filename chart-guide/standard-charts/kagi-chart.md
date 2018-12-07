@@ -26,7 +26,7 @@ To create a Kagi chart, follow the steps given below:
 
 * Specify the value for a data item using the `value` attribute within the `data` object.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=kagi) page of kagi chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=kagi) page of kagi chart.
 
 A simple Kagi chart looks like:
 

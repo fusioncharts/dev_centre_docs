@@ -12,8 +12,8 @@ Horizontal crossline appears on the y-axis when you hover on the data plot. It g
 
 Refer to the image below:
 
-<img src="{% site.baseurl %}/images/fusiontime-component-cross-line.png" alt="CrossLine" width="700" height="420">
+<img src="{% site.BASE_URL %}/images/fusiontime-component-cross-line.png" alt="CrossLine" width="700" height="420">
 
 In the case of multivariate charts, the vertical crosslines will be visible in each canvas for a particular time instance, whereas the horizontal crossline will appear only on the canvas on which the user is interacting. 
 
-![Crossline in multivariate]({% site.baseurl %}/gif/multivariate-crossline.gif)
+![Crossline in multivariate](/gif/multivariate-crossline.gif)

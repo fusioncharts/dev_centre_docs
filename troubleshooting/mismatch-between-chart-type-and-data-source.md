@@ -12,4 +12,4 @@ In certain cases, charts of similar genre have same dataSource structures. For e
 
 However, some chart types have unique dataSource structures, like Gantt charts, that cannot be supported by any other chart types.
 
-To ensure chart type and dataSource compatibility, check the appropriate dataSource structures for your required chart type [here]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts) and change the structure accordingly.
+To ensure chart type and dataSource compatibility, check the appropriate dataSource structures for your required chart type [here](/chart-guide/standard-charts/line-area-and-column-charts) and change the structure accordingly.

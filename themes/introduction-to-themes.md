@@ -4,9 +4,9 @@ description: A theme file lets you centralize the visual appearance, behavior an
 heading: Introduction to Themes
 ---
 
-<script defer type="text/javascript" src="{% site.baseurl %}/nodex/fusionmaps/themes/fusioncharts.theme.carbon.js"></script>
-<script defer type="text/javascript" src="{% site.baseurl %}/nodex/fusionmaps/themes/fusioncharts.theme.ocean.js"></script>
-<script defer type="text/javascript" src="{% site.baseurl %}/nodex/fusionmaps/themes/fusioncharts.theme.zune.js"></script>
+<script defer type="text/javascript" src="{% site.BASE_URL %}/nodex/fusionmaps/themes/fusioncharts.theme.carbon.js"></script>
+<script defer type="text/javascript" src="{% site.BASE_URL %}/nodex/fusionmaps/themes/fusioncharts.theme.ocean.js"></script>
+<script defer type="text/javascript" src="{% site.BASE_URL %}/nodex/fusionmaps/themes/fusioncharts.theme.zune.js"></script>
 
 You can use FusionCharts Suite XT to create web applications that include multiple instances of the various [charts, gauges, and maps](https://www.fusioncharts.com/charts/). However, if you need to maintain a consistent look and feel across the web apps, then you can do that using themes. 
 

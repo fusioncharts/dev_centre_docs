@@ -8,7 +8,7 @@ Data marker in a chart represents an important event, which occurred on a specif
 
 The image below shows the data marker on a time series chart:
 
-<img src="{% site.baseurl %}/images/fusiontime-component-data-markers.png" alt="Data Markers" width="700" height="420">
+<img src="{% site.BASE_URL %}/images/fusiontime-component-data-markers.png" alt="Data Markers" width="700" height="420">
 
 ## Create Data Markers
 

@@ -469,7 +469,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-![Linear]({% site.baseurl %}/gif/gauges-and-widgets-linear-gauge.gif)
+![Linear](/gif/gauges-and-widgets-linear-gauge.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/5zu86/) to edit the above gauge.
 

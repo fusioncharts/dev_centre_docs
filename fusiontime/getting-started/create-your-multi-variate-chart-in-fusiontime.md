@@ -6,7 +6,7 @@ heading: Create Multivariate Chart
 
 In FusionTime, you can create a chart with multiple canvases showing different measures in each canvas. 
 
-In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple columns with measures (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis]({% site.baseurl %}/fusiontime/fusiontime-component/time-axis) (x-axis).
+In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple columns with measures (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis](/fusiontime/fusiontime-component/time-axis) (x-axis).
 
 The multivariate chart will look like as shown below:
 
@@ -44,7 +44,7 @@ In the above code:
 
 * The first object creates the first column in the `DataTable`. In the above sample **Country** is the name of the column. 
 
-* The second object set the **date/time** [format]({% site.baseurl %}/fusiontime/api-reference/fusiontime-attributes#datetime-format-7) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
+* The second object set the **date/time** [format](/fusiontime/api-reference/fusiontime-attributes#datetime-format-7) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
 
 * The next three are the columns for three measures of the chart:
 
@@ -128,7 +128,7 @@ In the above code:
 
 We are all set with our data to create the chart.
 
-> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](/fusiontime/getting-started/change-default-aggregation).
 
 Now, let's create the `.html` file to render the above chart.
 
@@ -223,4 +223,4 @@ window.charInstance = new FusionCharts({
 
 That's it! Your first multivariate chart is ready.
 
-Next, we will discuss on how to create a [multiple plots]({% site.baseurl %}/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.
+Next, we will discuss on how to create a [multiple plots](/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.

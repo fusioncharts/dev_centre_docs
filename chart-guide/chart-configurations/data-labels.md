@@ -6,7 +6,7 @@ heading: Display Customized Data Labels
 
 Data labels are the names of the data points that are displayed on the x-axis of a chart. 
 
-![Data Labels]({% site.baseurl %}/images/chart-configurations-data-labels-image-1.png)
+![Data Labels](/images/chart-configurations-data-labels-image-1.png)
 
 ## Data Label Display Modes
 
@@ -208,7 +208,7 @@ Click [here](http://jsfiddle.net/fusioncharts/bv5f703k/) to edit the above chart
 
 With label management, you can adjust the canvas padding (the space between the canvas border and the position where the data plot begins and ends) to accommodate long labels in line and area charts. This ensures that the first and last x-axis labels are not rendered outside the canvas border, and the labels don't overlap each other.
 
-![Label Management]({% site.baseurl %}/images/chart-configurations-data-labels-image-2.png)
+![Label Management](/images/chart-configurations-data-labels-image-2.png)
 
 To accommodate long labels, the chart automatically adjusts the right and left canvas margins. A line 2D chart with automatic canvas padding set for label management looks like as shown below:
 

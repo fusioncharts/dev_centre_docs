@@ -32,7 +32,7 @@ To create a multi-level pie chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=multilevelpie) page of multi-level pie chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=multilevelpie) page of multi-level pie chart.
 
 The multi-level pie chart thus rendered looks like this:
 

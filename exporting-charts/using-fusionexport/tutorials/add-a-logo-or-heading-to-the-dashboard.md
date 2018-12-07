@@ -255,12 +255,12 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 
 ## Related Resources
 
-* [Export a dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
+* [Export a dashboard](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
 
-* [Manipulate the output filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
+* [Manipulate the output filename](/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
 
-* [Customize the width and height on an exported chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+* [Customize the width and height on an exported chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Override the chart config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+* [Override the chart config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
 
-* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

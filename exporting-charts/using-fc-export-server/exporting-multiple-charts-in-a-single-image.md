@@ -35,7 +35,7 @@ Take a look at the sample shown below. Click the __Export Charts__ button to exp
 
 The image thus downloaded is as shown below:
 
-![Downloaded Image]({% site.baseurl %}/images/batchExport.png)
+![Downloaded Image](/images/batchExport.png)
 
 Read on to know the methods, objects, and attributes that are used to export multiple charts using the default export configuration as well as how you can customize it.
 
@@ -162,7 +162,7 @@ Take a look at the sample shown below:
 
 When you click the __Export Charts__ button in this sample, the image downloaded is as shown below:
 
-![Downloaded Image]({% site.baseurl %}/images/selectiveBatchExport.png)
+![Downloaded Image](/images/selectiveBatchExport.png)
 
 
 For the above exported image, we have specified the:
@@ -192,4 +192,4 @@ batchExportConfig1 = function() {
 
 ```
 
-<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{% site.baseurl %}/js/exporting-multiple-charts-in-a-single-image.js'></script>
+<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{% site.BASE_URL %}/js/exporting-multiple-charts-in-a-single-image.js'></script>

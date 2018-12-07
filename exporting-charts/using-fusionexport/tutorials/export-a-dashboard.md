@@ -10,21 +10,21 @@ FusionExport allows you to export dashboards containing multiple charts. In this
 
 Before starting with the code, ensure that you have:
 
-1. [Downloaded and installed FusionExport Server]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
+1. [Downloaded and installed FusionExport Server](/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
 
-2. [Downloaded and installed the FusionExport SDK client]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
+2. [Downloaded and installed the FusionExport SDK client](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
 
 ## Steps to Create a Dashboard 
 
 The major steps are discussed below:
 
 1. Create the ingredients for a basic dashboard:
-    * Create a [dashboard template]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#sample-template-4), which is an HTML file.
-    * Create a [chart configuration file]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#sample-configuration-5) (JSON) which shall contain configuration of multiple charts.
+    * Create a [dashboard template](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#sample-template-4), which is an HTML file.
+    * Create a [chart configuration file](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#sample-configuration-5) (JSON) which shall contain configuration of multiple charts.
 
-2. Write the export [code]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#code-6) in one of the languages for which FusionExport has [SDKs]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks). The export code takes care of embedding the charts into the template before exporting the dashboard.
+2. Write the export [code](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#code-6) in one of the languages for which FusionExport has [SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks). The export code takes care of embedding the charts into the template before exporting the dashboard.
 
-3. (**Optional, but recommended**) Add some [styling]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#stylecss-10) (inline CSS, or a seperate CSS file) for the HTML template. 
+3. (**Optional, but recommended**) Add some [styling](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#stylecss-10) (inline CSS, or a seperate CSS file) for the HTML template. 
 
 In the following sections, you will learn about the implementing the steps discussed above.
 
@@ -96,11 +96,11 @@ Given below is a schematic representation of a JSON file containing configuratio
 
 For this tutorial, we will a `.json` the configuration file for three charts:
 
-* [A Column 2D Chart]({% site.baseurl %}/chart-attributes/?chart=column2d)
+* [A Column 2D Chart](/chart-attributes/?chart=column2d)
 
-* [A Pie Chart]({% site.baseurl %}/chart-attributes/?chart=pie2d)
+* [A Pie Chart](/chart-attributes/?chart=pie2d)
 
-* [A Line Chart]({% site.baseurl %}/chart-attributes/?chart=line)
+* [A Line Chart](/chart-attributes/?chart=line)
 
 If you are executing the template code without any changes, the chart configuration file should be in the following path:
 
@@ -108,7 +108,7 @@ If you are executing the template code without any changes, the chart configurat
 <code_executed_from_this_directory>/resources/chart-config-file.json
 ```
 
-The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
+The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes](/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
 
 > Observe the use of the `renderAt` attribute for each of the chart configurations. The value of `renderAt` must be the exact same string as the value of the `id` attribute, for its corresponding `div` in the HTML template.
 
@@ -218,7 +218,7 @@ The accepted format of configuration is the same as that of charts you can gener
 
 Based on the above configuration, the following charts will be `embedded` into the dashboard:
 
-![Change-A-Dashboard]({% site.baseurl %}/images/export-a-dashboard-image-1.png)
+![Change-A-Dashboard](/images/export-a-dashboard-image-1.png)
 
 ## Code
 
@@ -236,15 +236,15 @@ Before you start with the code, we suggest going through the steps that the code
 
 Based on the template, chart configurations, and the code mentioned above, the exported dashboard looks like the image below.
 
-![Export-A-Dashboard]({% site.baseurl %}/images/export-a-dashboard-image-2.png)
+![Export-A-Dashboard](/images/export-a-dashboard-image-2.png)
 
-> The bare bones dashboard is not suitable for business usage. We strongly recommend [adding CSS]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#stylecss-10) to the HTML template, so that the dashboard looks presentable.
+> The bare bones dashboard is not suitable for business usage. We strongly recommend [adding CSS](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#stylecss-10) to the HTML template, so that the dashboard looks presentable.
 
 > The above guidelines may vary slightly based on the programming language you are using, and the customizations you want on top of the defaults.
 
 > The exported dashboard will have the default name of `export--1.png`. If you execute the template code without any changes, you can find it in the same directory from where the code has been executed. 
 
-> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference]({% site.baseurl %}/exporting-charts/using-fusionexport/sdk-api-reference/), and select the SDK of your choice from the left navigation panel.
+> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference](/exporting-charts/using-fusionexport/sdk-api-reference/), and select the SDK of your choice from the left navigation panel.
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -470,12 +470,12 @@ As shown below, you can associate a `style.css` file with the HTML template, and
 
 Based on the above styling, the exported dashboard looks like the image below:
 
-![Export-A-Dashboard]({% site.baseurl %}/images/export-a-dashboard-image-2.png)
+![Export-A-Dashboard](/images/export-a-dashboard-image-2.png)
 
 > You can use frameworks like [Bootstrap](http://getbootstrap.com/) to style the template and make the exported dashboard look even better.
 
 ## Related Resources
 
-* [Add a logo or a heading to the dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
+* [Add a logo or a heading to the dashboard](/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
 
-* [Export a D3 Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart)
+* [Export a D3 Chart](/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart)

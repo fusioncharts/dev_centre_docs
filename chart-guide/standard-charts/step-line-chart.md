@@ -24,7 +24,7 @@ To create a multi-series step line chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msstepline) page of step-line chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=msstepline) page of step-line chart.
 
 A multi-series step line chart looks like this:
 

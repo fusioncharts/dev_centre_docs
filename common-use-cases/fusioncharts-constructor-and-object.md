@@ -45,7 +45,7 @@ Here is how the structure looks:
 }
 ```
 
-Let us step-by-step build the properties JSON object by considering the above 3 classifications. First are the properties that define the chart like id, dimensions, chart type, data format. All the available properties can be found [here]({% site.baseurl %}/api/fusioncharts):
+Let us step-by-step build the properties JSON object by considering the above 3 classifications. First are the properties that define the chart like id, dimensions, chart type, data format. All the available properties can be found [here](/api/fusioncharts):
 
 ```javascript
 
@@ -68,7 +68,7 @@ var propertiesObject = {
 }
 ```
 
-Next are the properties which modify the appearance of the chart like background color, border color, border thickness, caption, plot appearance. These properties vary with the type of the chart. Different properties available against each chart type can be found [here]({% site.baseurl %}/chart-attributes/?chart=area2d). And these properties are defined within the dataSource property of the JSON object:
+Next are the properties which modify the appearance of the chart like background color, border color, border thickness, caption, plot appearance. These properties vary with the type of the chart. Different properties available against each chart type can be found [here](/chart-attributes/?chart=area2d). And these properties are defined within the dataSource property of the JSON object:
 
 ```javascript
 
@@ -292,4 +292,4 @@ So, if there are two charts to be rendered one after the other, calling the `ren
 * Draw the graphics for chart 1
 * Draw the graphics for chart 2
 
-In order to incorporate this feature, some of the [APIs]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods) are now given a callback function that is executed when `asyncRender` is set to `1`.
+In order to incorporate this feature, some of the [APIs](/api/fusioncharts/fusioncharts-methods) are now given a callback function that is executed when `asyncRender` is set to `1`.

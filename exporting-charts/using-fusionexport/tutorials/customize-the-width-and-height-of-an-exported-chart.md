@@ -25,10 +25,10 @@ During bulk export, you can override the height and width of all the charts usin
 
 ## Related Resources
 
-* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the Export Type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Override the Chart Config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+* [Override the Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
 
-* [Add a logo and heading to the dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
+* [Add a logo and heading to the dashboard](/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
 
-* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

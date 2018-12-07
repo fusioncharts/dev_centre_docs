@@ -12,7 +12,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 ## Load data using JSON as URL
 
-Let's build the same revenue chart which we built in the [first example]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs) using JSON, and use a .json file as the data source.
+Let's build the same revenue chart which we built in the [first example](/getting-started/vue/your-first-chart-using-vuejs) using JSON, and use a .json file as the data source.
 
 {% embed_chart plain-js-setting-data-using-url-example-1.js %}
 

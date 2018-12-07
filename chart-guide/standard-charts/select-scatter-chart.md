@@ -22,7 +22,7 @@ To create a select-scatter chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=selectscatter) page of select-scatter chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=selectscatter) page of select-scatter chart.
 
 The select-scatter chart thus created looks like this:
 
@@ -38,7 +38,7 @@ You can drag, resize, or delete any select rectangles individually. To delete an
 
 After selection click the `Submit` button. This button sends the JSON/XML data as a form to the server-side script. In the above sample, the JSON data for the selected points - the price and quantity of each tv/cell phone unit - have been displayed in a table. Click the `Restore` button to bring back the chart to its original state.
 
-![Select set of points]({% site.baseurl %}/gif/standard-charts-selectscatter-gif-1.gif)
+![Select set of points](/gif/standard-charts-selectscatter-gif-1.gif)
 
 ## Get Selected Data
 

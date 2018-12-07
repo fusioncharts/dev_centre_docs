@@ -168,7 +168,7 @@ Apart from the usual boilerplate, the sample __C#/VB__ code provided above corre
 
 3. Within the class `Pages_ProductLifeCycleEvent`, define `Page_Load()`:
     * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
-    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
     * Add the events you want to add to your chart, using the `onDataLoaded()` method. In this case, those methods are defined as JavaScript functions in the corresponding `.aspx` file.
     * Render the chart using the `onDataLoaded()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, followed by some JavaScript functions and buttons, and finally within a `<form><div>` render the chart.
 

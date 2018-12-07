@@ -6,7 +6,7 @@ heading: Anchors and Lines
 
 Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Anchors show a tooltip showing the data plot details when the mouse is hovered over them and can be linked to other pages as well. In this article, we will discuss different configurations of the anchors.
 
-![Anchors]({% site.baseurl %}/images/chart-configurations-anchors-image-1.png)
+![Anchors](/images/chart-configurations-anchors-image-1.png)
 
 ## Hide Anchors
 

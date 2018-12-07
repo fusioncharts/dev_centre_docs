@@ -40,7 +40,7 @@ To create a marimekko chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=marimekko) page of marimekko chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=marimekko) page of marimekko chart.
 
 The marimekko chart for the above code looks like :
 
@@ -128,4 +128,4 @@ The Marimekko chart includes support for an interactive legend starting FusionCh
 
 For example, in the Marimekko chart shown above, if you were to hide the data plots for Washington using the legend, the data plots for California and Nevada will be automatically arranged in the available space, as shown in the image below:
 
-![Marimekko-Legend Interactivity]({% site.baseurl %}/gif/standard-charts-marimekko-gif-1.gif)
+![Marimekko-Legend Interactivity](/gif/standard-charts-marimekko-gif-1.gif)

@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating chart u
 heading: Add Multiple Data Plots
 ---
 
-Previously, we have learned how to create a [simple chart]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime) with one plot type. FusionTime allows you to visualize charts with multiple plots.  
+Previously, we have learned how to create a [simple chart](/fusiontime/getting-started/create-your-first-chart-in-fusiontime) with one plot type. FusionTime allows you to visualize charts with multiple plots.  
 
 In this article, we'll create our first chart with multiple plots which will compare online sales of SuperStore in the **US** and **India**. 
 
@@ -29,7 +29,7 @@ let schema = [{
     "type": "number"
 }]
 ```
-To understand the `schema.json` in details click [here]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
+To understand the `schema.json` in details click [here](/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
 
 ## Create `data`
 
@@ -87,11 +87,11 @@ In the above code:
 
 We are all set with our data to create the chart. 
 
-> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here]({% site.baseurl %}/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](/fusiontime/getting-started/change-default-aggregation).
 
 ## Create the `index` file
 
-Creating a chart with multiple plots is very simple in FusionTime. You just need to specify the column name in the `series` attribute within [y-axis]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime) object. To do this, create an `index` file and copy the following code: 
+Creating a chart with multiple plots is very simple in FusionTime. You just need to specify the column name in the `series` attribute within [y-axis](/fusiontime/fusiontime-component/y-axis-in-fusiontime) object. To do this, create an `index` file and copy the following code: 
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -196,11 +196,11 @@ window.charInstance = new FusionCharts({
 </div>
 </div>
 
-The above code is similar to that of the [create your first chart]({% site.baseurl %}/fusiontime/getting-started/create-your-first-chart-in-fusiontime). In order to add multiple data plots do the following:
+The above code is similar to that of the [create your first chart](/fusiontime/getting-started/create-your-first-chart-in-fusiontime). In order to add multiple data plots do the following:
 
 * Specify the value of the plot as `Sales` using the `value` attribute within the `plot` object.
 * Specify the series as `Country` using the `series` atrribute within the `yAxis` object.
 
 That's it! Your chart with multiple plots is ready.
 
-Next, we will discuss about the FusionTime [JSON structure]({% site.baseurl %}/fusiontime/getting-started/fusiontime-json-structure).
+Next, we will discuss about the FusionTime [JSON structure](/fusiontime/getting-started/fusiontime-json-structure).

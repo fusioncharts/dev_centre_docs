@@ -6,7 +6,7 @@ heading: Cross Line
 
 Cross line is a vertical line/area used as a quick reference for data plots. When you hover over the canvas, a line/area appears highlighting the data plots along with the information in a tooltip. The tooltip that appears has all the information required, for example, data values, labels of each data plot and also the color of the data plots. A cross line appears as shown in the image below:
 
-![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-1.png)
+![Cross Line](/images/chart-configurations-cross-line-image-1.png)
 
 ## Show/Hide the Cross Line
 
@@ -22,7 +22,7 @@ By default, the cross line is turned off. To show the crossline set the `drawCro
 
 A chart with crossline will look like as shown below:
 
-![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-1.gif)
+![Cross Line](/gif/configurations-crossline-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/sh917yad/) to edit the above chart.
 
@@ -40,7 +40,7 @@ Specify the hex code of the cross line color using the `crossLineColor` attribut
 
 A multi-series column chart with a customized cross line looks like as shown below:
 
-![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-2.gif)
+![Cross Line](/gif/configurations-crossline-gif-2.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/7yvjb38s/) to edit the above chart.
 
@@ -58,7 +58,7 @@ Set the opacity of the crossline using the `crossLineAlpha` attribute. Refer to 
 
 A multi-series column chart with a customized transparency (set to `20`) of the cross line looks like as shown below:
 
-![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-3.gif)
+![Cross Line](/gif/configurations-crossline-gif-3.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/e94enLv1/) to edit the above chart.
 
@@ -108,7 +108,7 @@ Refer to the code below:
 
 The chart will look like as shown in the image below:
 
-![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-2.png)
+![Cross Line](/images/chart-configurations-cross-line-image-2.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/uyymusv0/) to edit the above chart.
 
@@ -124,7 +124,7 @@ Set `tooltipGrayOutColor` attribute to specify the color of the unfocused plot i
 
 The chart will look like as shown below:
 
-![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-4.gif)
+![Cross Line](/gif/configurations-crossline-gif-4.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/46por5dL/) to edit the above chart.
 
@@ -140,7 +140,7 @@ Specify the hex code of the tooltip background color using the `toolTipBgColor` 
 
 The chart will look like as shown below:
 
-![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-2.png)
+![Cross Line](/images/chart-configurations-cross-line-image-2.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/x2jvt5rh/) to edit the above chart.
 
@@ -165,7 +165,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-3.png)
+![Cross Line](/images/chart-configurations-cross-line-image-3.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/zn0aqdze/) to edit the above chart.
 
@@ -183,7 +183,7 @@ Specify the character to separate the name and the value displayed in the toolti
 
 The chart will look like as shown below:
 
-![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-4.png)
+![Cross Line](/images/chart-configurations-cross-line-image-4.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/xjbv3pq8/) to edit the above chart.
 
@@ -201,6 +201,6 @@ By default, the tooltip shadow is visible. To hide the tooltip shadow set the `s
 
 The chart will look like as shown below:
 
-![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-5.png)
+![Cross Line](/images/chart-configurations-cross-line-image-5.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/1rbzf7q7/) to edit the above chart.

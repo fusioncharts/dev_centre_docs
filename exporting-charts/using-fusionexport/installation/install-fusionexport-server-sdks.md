@@ -118,8 +118,8 @@ dependencies {
 
 After you have installed FusionCharts Server SDK for the language of your choice, refer to the following tutorials to get started with exporting charts:
 
-* [Export chart as image]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
+* [Export chart as image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
 
-* [Change the export type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the export type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Change the export quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the export quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

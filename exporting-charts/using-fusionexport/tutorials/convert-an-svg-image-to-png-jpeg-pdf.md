@@ -210,8 +210,8 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 
 ## Related Resources
 
-* [Export Chart as Image]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
+* [Export Chart as Image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
 
-* [Customize the Width and Height of an Exported Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+* [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Override a Chart Config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+* [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)

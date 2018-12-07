@@ -10,7 +10,7 @@ FusionExport accepts export requests from FusionExport CLI, SDK clients,  browse
 
 ## Installation
 
-To install the FusionExport Server click [here]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server).
+To install the FusionExport Server click [here](/exporting-charts/using-fusionexport/installation/install-fusionexport-server).
 
 ## CLI Options
 
@@ -169,7 +169,7 @@ Name|Type|Defaults|Description
 
 ## Docker
 
-To run **FusionExport Server** from docker, click [here]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server#docker-6) for detailed installation setup. Once done, follow the steps given below:
+To run **FusionExport Server** from docker, click [here](/exporting-charts/using-fusionexport/installation/install-fusionexport-server#docker-6) for detailed installation setup. Once done, follow the steps given below:
 
 ### Docker Container Configs
 

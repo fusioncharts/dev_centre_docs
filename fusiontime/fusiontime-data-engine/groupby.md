@@ -30,7 +30,7 @@ In the first argument of the `groupBy` method, each group of configuration objec
 
 #### `column`
 
-Name of the column from the DataTable created using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview).
+Name of the column from the DataTable created using [schema](/fusiontime/fusiontime-data-engine/overview).
 
 #### `outputAs`
 
@@ -159,7 +159,7 @@ In the second argument of the groupBy method, you can apply the following attrib
 
 #### `column`
 
-Name of the column from theDataTablecreated using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview)..
+Name of the column from theDataTablecreated using [schema](/fusiontime/fusiontime-data-engine/overview)..
 
 #### `operation`
 

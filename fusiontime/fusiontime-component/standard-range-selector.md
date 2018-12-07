@@ -6,7 +6,7 @@ heading: Standard Range Selector
 
 A standard range selector is an extension which is used to select standard time periods. There are three sections of standard time periods as, ALL, Business friendly dates like YTD, QTD and MTD and contextual time periods.  The options of the contextual time periods will vary based on the atomicity of the data and the current data displayed. Refer to the image below:
 
-<img src="{% site.baseurl %}/images/fusiontime-component-standard-range-selector.png" alt="Standard Range Selector" width="700" height="420">
+<img src="{% site.BASE_URL %}/images/fusiontime-component-standard-range-selector.png" alt="Standard Range Selector" width="700" height="420">
 
 The three sections of Standard Range Selector are:
 
