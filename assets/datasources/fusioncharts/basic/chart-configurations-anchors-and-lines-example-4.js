@@ -19,7 +19,7 @@
             // Anchors
             "anchorAlpha": "100",
             "anchorImageAlpha": "100",
-            "anchorImageScale": "90"
+            "anchorImageScale": "90",
             //Theme
             "theme": "fusion"
         },
