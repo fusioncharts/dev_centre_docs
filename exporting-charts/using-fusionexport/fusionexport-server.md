@@ -27,7 +27,7 @@ Options|Alias|Defaults|Description
 
 To get more control on FusionExport Server, pass the config file in JSON format. E.g. integrating with MySQL server for logging.
 
-```
+```bash
 $ ./fusionexport -C <config file path>
 ```
 
@@ -105,56 +105,48 @@ Name|Type|Defaults|Description
     	<td> mysql </td>
     	<td> Database type e.g. MySQL, Postgres, SQLite and Microsoft SQL Server </td>
     </tr>
-
     <tr>
     	<td> `host` </td>
     	<td> string </td>
     	<td> localhost </td>
     	<td> Database host </td>
     </tr>
-
     <tr>
     	<td> `port` </td>
     	<td> integer </td>
     	<td> 3306 </td>
     	<td> Database Port </td>
     </tr>
-
     <tr>
     	<td> `database` </td>
     	<td> string </td>
     	<td> fusionexport </td>
     	<td> Database name where export logs would be stored </td>
     </tr>
-
     <tr>
     	<td> `username` </td>
     	<td> string </td>
     	<td> root </td>
     	<td> Database username </td>
     </tr>
-
     <tr>
     	<td> `password` </td>
     	<td> string </td>
     	<td> root </td>
     	<td> Database password </td>
     </tr>
-
     <tr>
     	<td> `logging` </td>
     	<td> boolean </td>
     	<td> false </td>
     	<td> Whether to enable database logging or not for debugging purpose </td>
     </tr>
-
     <tr>
     	<td> `pool` </td>
     	<td> object </td>
     	<td> {</br>	"max": `5`,</br>	"min": `0`,</br>	"acquire": `30000`,</br>	"idle": `10000`</br>	} </td>
     	<td> Database connection pool configs </td>
     </tr>
-
 </table>
 
 ### MessageQueue Configs
@@ -215,7 +207,7 @@ Name|Defaults|Descriptions
 
 To start the **FusionExport Server** in a standalone container, from the `service` folder run the following command:
 
-```
+```bash
 $ docker build -t fusionexport-standalone -f service-standalone.dockerfile
 $ docker run -p 1337:8080 fusionexport-standalone|
 ```

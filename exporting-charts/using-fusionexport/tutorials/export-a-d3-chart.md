@@ -18,13 +18,13 @@ Before starting with the code, ensure that you have:
 
 FusionExport needs a HTML file containing the code for the D3 chart. For this tutorial, we will assume that the file is located at the following path:
 
-```Bash
+```bash
 <export_code_executed_from_this_directory>/resources/d3chart.html
 ```
 
 We will consider [this chord diagram](https://bl.ocks.org/mbostock/1046712) as an example. The minimal `.html` file necessary for this chart is:
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>

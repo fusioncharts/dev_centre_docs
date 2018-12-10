@@ -14,7 +14,7 @@ To install **FusionCharts** and the `ember-fusioncharts` component via `npm` fol
 
 **Step 1:** Install `fusioncharts` core library
 
-```PowerShell
+```bash
 $ npm install fusioncharts --save
 ```
 
@@ -22,7 +22,7 @@ $ npm install fusioncharts --save
 
 You can install `ember-fusioncharts` component for any of the following CLI:
 
-```PowerShell
+```bash
 $ ember install ember-fusioncharts
 ```
 
@@ -59,7 +59,7 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
 
  In this example, we will use the JSON format, as shown below:
 
-```JSON
+```json
 {
     // Map Configuration
     "chart": {
@@ -153,7 +153,7 @@ To render the gauge using `ember-fusioncharts` component, follow the steps below
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
-```
+```javascript
 /* eslint-env node */
 'use strict';
 
@@ -186,11 +186,11 @@ module.exports = function(defaults) {
 
 * Set the data source
 
-```
+```bash
 $ ember g component chart-viewer
 ```
 
-```
+```javascript
 import Component from '@ember/component';
 
 const myDataSource = 
@@ -266,7 +266,7 @@ export default Component.extend({
 
 Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
 
-```
+```html
 <h1>{{ title }}</h1>
 
 {{fusioncharts-xt
@@ -282,7 +282,7 @@ Add `fusioncharts` component to your `chart-viewer.hbs` template to render the c
 
 Add `chart-viewer` component to your `application.hbs` template:
 
-```
+```html
 {{chart-viewer}}
 
 {{outlet}}
@@ -300,7 +300,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
 
-```
+```bash
 $ npm install fusionmaps
 ```
 
@@ -322,7 +322,7 @@ After installing fusionmaps package, follow the steps to render the map:
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
-```
+```javascript
 /* eslint-env node */
 'use strict';
 
@@ -355,11 +355,11 @@ module.exports = function(defaults) {
 
 * Set the data source
 
-```
+```bash
 $ ember g component chart-viewer
 ```
 
-```
+```javascript
 import Component from '@ember/component';
 
 const myDataSource = {
@@ -408,7 +408,7 @@ export default Component.extend({
 
 Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
 
-```
+```html
 <h1>{{ title }}</h1>
 
 {{fusioncharts-xt
@@ -424,7 +424,7 @@ Add `fusioncharts` component to your `chart-viewer.hbs` template to render the c
 
 Add `chart-viewer` component to your `application.hbs` template:
 
-```
+```html
 {{chart-viewer}}
 
 {{outlet}}

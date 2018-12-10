@@ -31,7 +31,7 @@ China|30|
 
 The JSON representation for the above table looks as shown below:
 
-```javascript
+```json
 {
     // Chart Configuration
     "chart": {
@@ -77,7 +77,7 @@ Copy this into a file, name it `oilReserves.json`, and store it in the same fold
 
 The full code of the above sample is given below:
 
-```
+```javascript
 //Including react
 import React, { Component } from 'react';
 
@@ -142,7 +142,7 @@ The above chart has been rendered using the following steps:
 
 The XML representation for the above chart looks as shown below:
 
-```
+```xml
 <chart caption='Countries With Most Oil Reserves [2017-18] ' subcaption='In MMbbl = One Million barrels ' xaxisname='Country ' yaxisname='Reserves (MMbbl) ' numberprefix='K ' theme='fusion '>
     <set label='Venezuela ' value='290 ' />
     <set label='Saudi ' value='260 ' />
@@ -160,7 +160,7 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 
 The full code of the above sample is:
 
-```React
+```javascript
 //Including react
 import React, { Component } from 'react';
 
