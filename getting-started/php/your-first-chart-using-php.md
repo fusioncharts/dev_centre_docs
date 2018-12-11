@@ -16,7 +16,7 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
 
 > The **FusionCharts PHP server-side wrapper** requires **PHP 5** or higher.
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
 * Copy and paste the `fusioncharts.php` file from `integrations > php > fusioncharts-wrapper` in your project folder.
 
