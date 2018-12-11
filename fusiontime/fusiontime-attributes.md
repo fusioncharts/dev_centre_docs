@@ -480,91 +480,91 @@ List of predefined date/time format is given below:
 	</tr>
 		<tr>
 		<td>`%a`</td>
-		<td>abbreviated weekday name.</td>
+		<td>Abbreviated weekday name.</td>
 	</tr>
 	<tr>
 		<td>`%A`</td>
-		<td>full weekday name.</td>
+		<td>Full weekday name.</td>
 	</tr>
 	<tr>
 		<td>`%b`</td>
-		<td>abbreviated month name.</td>
+		<td>Abbreviated month name.</td>
 	</tr>
 	<tr>
 		<td>`%B`</td>
-		<td>full month name.</td>
+		<td>Full month name.</td>
 	</tr>
 	<tr>
 		<td>`%c`</td>
-		<td>the locale’s date and time, such as %x, %X.</td>
+		<td>Locale’s date and time, such as %x and %X.</td>
 	</tr>
 	<tr>
 		<td>`%d`</td>
-		<td>zero-padded day of the month as a decimal number [01,31].</td>
+		<td>Zero-padded day of the month as a decimal number [01,31].</td>
 	</tr>
 	<tr>
 		<td>`%e`</td>
-		<td>space-padded day of the month as a decimal number [ 1,31]; equivalent to %_d.</td>
+		<td>Space-padded day of the month as a decimal number [1,31]. `%e` is equivalent to `%_d`.</td>
 	</tr>
 	<tr>
 		<td>`%f`</td>
-		<td>microseconds as a decimal number [000000, 999999].</td>
+		<td>Microseconds as a decimal number [000000, 999999].</td>
 	</tr>
 	<tr>
 		<td>`%H`</td>
-		<td>hour (24-hour clock) as a decimal number [00,23].</td>
+		<td>Hour (24-hour clock) as a decimal number [00,23].</td>
 	</tr>
 	<tr>
 		<td>`%I`</td>
-		<td>hour (12-hour clock) as a decimal number [01,12].</td>
+		<td>Hour (12-hour clock) as a decimal number [01,12].</td>
 	</tr>
 	<tr>
 		<td>`%j`</td>
-		<td>day of the year as a decimal number [001,366].</td>
+		<td>Day of a year as a decimal number [001,366].</td>
 	</tr>
 	<tr>
 		<td>`%m`</td>
-		<td>month as a decimal number [01,12].</td>
+		<td>Month as a decimal number  [01,12].</td>
 	</tr>
 	<tr>
 		<td>`%M`</td>
-		<td>minute as a decimal number [00,59].</td>
+		<td>Minute as a decimal number [00,59].</td>
 	</tr>
 	<tr>
 		<td>`%L`</td>
-		<td>milliseconds as a decimal number [000, 999].</td>
+		<td>Milliseconds as a decimal number [000, 999].</td>
 	</tr>
 	<tr>
 		<td>`%p`</td>
-		<td>either AM or PM.</td>
+		<td>Can either be **AM** or **PM**.</td>
 	</tr>
 	<tr>
 		<td>`%Q`</td>
-		<td>milliseconds since UNIX epoch.</td>
+		<td>Milliseconds according to UNIX epoch.</td>
 	</tr>
 	<tr>
 		<td>`%q`</td>
-		<td>quarter of the year starting from January [Q1, Q2, ...]</td>
+		<td>Quarter of the year starting from January [Q1, Q2, Q3, Q4].</td>
 	</tr>
 	<tr>
 		<td>`%s`</td>
-		<td>seconds since UNIX epoch.</td>
+		<td>Seconds according to UNIX epoch.</td>
 	</tr>
 	<tr>
 		<td>`%S`</td>
-		<td>second as a decimal number [00,61].</td>
+		<td>Second as a decimal number [00, 61].</td>
 	</tr>
 	<tr>
 		<td>`%u`</td>
-		<td>Monday-based (ISO 8601) weekday as a decimal number [1,7].</td>
+		<td>Weeday starts from Monday(ISO 8601) as a decimal number [1,7].</td>
 	</tr>
 	<tr>
 		<td>`%U`</td>
-		<td>Sunday-based week of the year as a decimal number [00,53]. All days in a new year preceding the first Sunday are considered to be in week 0.</td>
+		<td>Sunday-based week of a year as a decimal number [00,53]. All days in a new year preceding the first Sunday will be considered as week 0.</td>
 	</tr>
 	<tr>
 		<td>`%V`</td>
-		<td>ISO 8601 week of the year as a decimal number [01, 53]. Weeks start on a Monday, and are numbered from 01, for the first week, up to 52 or 53, for the last week. Week 1 is the first week where four or more days fall within the new year. Basically, week 01 is the first week of the year that contains a Thursday; or, the week that has 4 January in it.</td>
+		<td>ISO 8601 week of the year as a decimal number [01, 53]. Weeks start on Monday and are numbered from 01 for the first week and 52 or 53 for the last week. Week 1 is the first week where four or more days fall within the new year. Basically, week 01 is the first week of the year that contains a Thursday; or, the week that has 4 January in it.</td>
 	</tr>
 	<tr>
 		<td>`%w`</td>
@@ -572,35 +572,35 @@ List of predefined date/time format is given below:
 	</tr>
 	<tr>
 		<td>`%W`</td>
-		<td>Monday-based week of the year as a decimal number [00,53]. All days in a new year preceding the first Monday are considered to be in week 0.</td>
+		<td>Monday-based week of the year as a decimal number [00,53]. All days in a new year preceding the first Monday will be considered as week 0.</td>
 	</tr>
 	<tr>
 		<td>`%x`</td>
-		<td>the locale’s date, such as %-m/%-d/%Y.</td>
+		<td>Locale’s date. Example: %-m/%-d/%Y.</td>
 	</tr>
 	<tr>
 		<td>`%X`</td>
-		<td>the locale’s time, such as %-I:%M:%S %p.</td>
+		<td>Locale’s time. Example: %-I:%M:%S %p.</td>
 	</tr>
 	<tr>
 		<td>`%y`</td>
-		<td>year without century as a decimal number [00,99].</td>
+		<td>A year without century as a decimal number [00,99].</td>
 	</tr>
 	<tr>
 		<td>`%Y`</td>
-		<td>year with century as a decimal number [2000, 1999].</td>
+		<td>A year with century as a decimal number [2000, 1999].</td>
 	</tr>
 	<tr>
 		<td>`%Z`</td>
-		<td>time zone offset, such as -0700, -07:00, -07, or Z.</td>
+		<td>Time Zone offset, such as -0700, -07:00, -07, or Z.</td>
 	</tr>
 	<tr>
 		<td>`%%`</td>
-		<td>a literal percent sign (%)</td>
+		<td>A literal percent sign (%)</td>
 	</tr>
 </table>
 
-Example:
+**Example:**
 
 ```javascript
 unitDefaultFormats = {
