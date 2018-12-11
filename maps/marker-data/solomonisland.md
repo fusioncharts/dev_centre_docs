@@ -2,9 +2,9 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### Map Name: SolomonIslands
+#### Map Name: SolomonIsland
 
-#### JavaScript Alias: maps/solomonislands
+#### JavaScript Alias: maps/solomonisland
 
 
 <div class="code-wrapper">
