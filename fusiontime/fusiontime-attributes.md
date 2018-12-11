@@ -475,43 +475,141 @@ List of predefined date/time format is given below:
 
 <table>
 	<tr>
-		<th>DateTimeUnits</th>
-		<th>Format</th>
-		<th>Output Example</th>
+		<th>Date/Time Format</th>
+		<th>Description</th>
+	</tr>
+		<tr>
+		<td>`%a`</td>
+		<td>abbreviated weekday name.</td>
 	</tr>
 	<tr>
-		<td>`Year`</td>
-		<td>%Y</td>
-		<td>2018</td>
+		<td>`%A`</td>
+		<td>full weekday name.</td>
 	</tr>
 	<tr>
-		<td>`Month`</td>
-		<td>%b %Y</td>
-		<td>Jan 2018</td>
+		<td>`%b`</td>
+		<td>abbreviated month name.</td>
 	</tr>
 	<tr>
-		<td>`Day`</td>
-		<td>%b %d %Y</td>
-		<td>Jan 01 2018</td>
+		<td>`%B`</td>
+		<td>full month name.</td>
 	</tr>
 	<tr>
-		<td>`Hour`</td>
-		<td>%b %d %Y %H hrs</td>
-		<td>Jan 01 2018 23 hrs</td>
+		<td>`%c`</td>
+		<td>the locale’s date and time, such as %x, %X.</td>
 	</tr>
 	<tr>
-		<td>`Minute`</td>
-		<td>%b %d, %Y %H:%M</td>
-		<td>Jan 01, 2018 23:34</td>
+		<td>`%d`</td>
+		<td>zero-padded day of the month as a decimal number [01,31].</td>
 	</tr>
 	<tr>
-		<td>`Second`</td>
-		<td>%b %d, %Y %H:%M:%S</td>
-		<td>Jan 01, 2018 23:34:26</td>
+		<td>`%e`</td>
+		<td>space-padded day of the month as a decimal number [ 1,31]; equivalent to %_d.</td>
 	</tr>
 	<tr>
-		<td>`Millisecond`</td>
-		<td>%b %d, %Y %H:%M:%S:%L</td>
-		<td>Jan 01, 2018 23:34:26:123</td>
+		<td>`%f`</td>
+		<td>microseconds as a decimal number [000000, 999999].</td>
+	</tr>
+	<tr>
+		<td>`%H`</td>
+		<td>hour (24-hour clock) as a decimal number [00,23].</td>
+	</tr>
+	<tr>
+		<td>`%I`</td>
+		<td>hour (12-hour clock) as a decimal number [01,12].</td>
+	</tr>
+	<tr>
+		<td>`%j`</td>
+		<td>day of the year as a decimal number [001,366].</td>
+	</tr>
+	<tr>
+		<td>`%m`</td>
+		<td>month as a decimal number [01,12].</td>
+	</tr>
+	<tr>
+		<td>`%M`</td>
+		<td>minute as a decimal number [00,59].</td>
+	</tr>
+	<tr>
+		<td>`%L`</td>
+		<td>milliseconds as a decimal number [000, 999].</td>
+	</tr>
+	<tr>
+		<td>`%p`</td>
+		<td>either AM or PM.</td>
+	</tr>
+	<tr>
+		<td>`%Q`</td>
+		<td>milliseconds since UNIX epoch.</td>
+	</tr>
+	<tr>
+		<td>`%q`</td>
+		<td>quarter of the year starting from January [Q1, Q2, ...]</td>
+	</tr>
+	<tr>
+		<td>`%s`</td>
+		<td>seconds since UNIX epoch.</td>
+	</tr>
+	<tr>
+		<td>`%S`</td>
+		<td>second as a decimal number [00,61].</td>
+	</tr>
+	<tr>
+		<td>`%u`</td>
+		<td>Monday-based (ISO 8601) weekday as a decimal number [1,7].</td>
+	</tr>
+	<tr>
+		<td>`%U`</td>
+		<td>Sunday-based week of the year as a decimal number [00,53]. All days in a new year preceding the first Sunday are considered to be in week 0.</td>
+	</tr>
+	<tr>
+		<td>`%V`</td>
+		<td>ISO 8601 week of the year as a decimal number [01, 53]. Weeks start on a Monday, and are numbered from 01, for the first week, up to 52 or 53, for the last week. Week 1 is the first week where four or more days fall within the new year. Basically, week 01 is the first week of the year that contains a Thursday; or, the week that has 4 January in it.</td>
+	</tr>
+	<tr>
+		<td>`%w`</td>
+		<td>Sunday-based weekday as a decimal number [0,6].</td>
+	</tr>
+	<tr>
+		<td>`%W`</td>
+		<td>Monday-based week of the year as a decimal number [00,53]. All days in a new year preceding the first Monday are considered to be in week 0.</td>
+	</tr>
+	<tr>
+		<td>`%x`</td>
+		<td>the locale’s date, such as %-m/%-d/%Y.</td>
+	</tr>
+	<tr>
+		<td>`%X`</td>
+		<td>the locale’s time, such as %-I:%M:%S %p.</td>
+	</tr>
+	<tr>
+		<td>`%y`</td>
+		<td>year without century as a decimal number [00,99].</td>
+	</tr>
+	<tr>
+		<td>`%Y`</td>
+		<td>year with century as a decimal number [2000, 1999].</td>
+	</tr>
+	<tr>
+		<td>`%Z`</td>
+		<td>time zone offset, such as -0700, -07:00, -07, or Z.</td>
+	</tr>
+	<tr>
+		<td>`%%`</td>
+		<td>a literal percent sign (%)</td>
 	</tr>
 </table>
+
+Example:
+
+```javascript
+unitDefaultFormats = {
+	'Year': '%Y', // 2018
+	'Month': '%b %Y', // Jan 2018
+	'Day': '%b %d, %Y', // Jan 01, 2018
+	'Hour': '%b %d, %Y %H hrs', // Jan 01, 2018 23 hrs
+	'Minute': '%b %d, %Y %H:%M', // Jan 01, 2018 23:34
+	'Second': '%b %d, %Y %H:%M:%S', // Jan 01, 2018 23:34:26
+	'Millisecond': '%b %d, %Y %H:%M:%S:%L' // Jan 01, 2018 23:34:26:123
+};
+```
