@@ -1645,7 +1645,7 @@
                   "children": [
                      {
                         "title": "FusionCharts",
-                        "path": "/api/fusioncharts"
+                        "path": "/api-reference/"
                      },
                      {
                         "title": "Events",
@@ -1664,36 +1664,40 @@
                            },
                            {
                               "title": "Events",
-                              "path": "/api/fusioncharts/fusioncharts-events"
+                              "path": "/api-reference/events"
                            }
                         ]
                      },
                      {
                         "title": "Methods",
-                        "path": "/api/fusioncharts/fusioncharts-methods"
+                        "path": "/api-reference/methods"
                      },
                      {
                         "title": "Properties",
-                        "path": "/api/fusioncharts/fusioncharts-properties"
+                        "path": "/api-reference/properties"
                      },
                      {
                         "title": "Type Definitions",
-                        "path": "/api/fusioncharts/fusioncharts-typedefs"
+                        "path": "/api-reference/typedefs"
                      },
                      {
                         "title": "Namespaces",
                         "children": [
                            {
                               "title": "Ajax",
-                              "path": "/api/fusioncharts/namespaces/ajax"
+                              "path": "/api-reference/ajax"
                            },
                            {
                               "title": "PrintManager",
-                              "path": "/api/fusioncharts/namespaces/printmanager"
+                              "path": "/api-reference/printmanager"
                            },
                            {
                               "title": "Annotations",
-                              "path": "/api/fusioncharts/namespaces/annotations"
+                              "path": "/api-reference/annotations"
+                           },
+                           {
+                              "title": "Debugger",
+                              "path": "/api-reference/debugger"
                            }
                         ]
                      }
