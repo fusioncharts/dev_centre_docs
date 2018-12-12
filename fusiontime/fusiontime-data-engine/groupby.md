@@ -67,50 +67,21 @@ timeUnit: FusionCharts.Utils.DatetimeUnits.Month
 
 `outputFormat` attribute is used to set the format of the column being grouped. To set the date/time format of the chart, set the value of `outputFormat` attribute as per your requirement.
 
-If the `outputFormat` of the data is not specified, the default date/time format is as listed below:
+If the `outputFormat` of the data is not specified, an example of a default date/time format is given below:
 
-<table>
-	<tr>
-		<th>DateTimeUnits</th>
-		<th>Format</th>
-		<th>Output Example</th>
-	</tr>
-	<tr>
-		<td>`Year`</td>
-		<td>%Y</td>
-		<td>2018</td>
-	</tr>
-	<tr>
-		<td>`Month`</td>
-		<td>%b %Y</td>
-		<td>Jan 2018</td>
-	</tr>
-	<tr>
-		<td>`Day`</td>
-		<td>%b %d, %Y</td>
-		<td>Jan 01, 2018</td>
-	</tr>
-	<tr>
-		<td>`Hour`</td>
-		<td>%b %d, %Y %H hrs</td>
-		<td>Jan 01, 2018 23 hrs</td>
-	</tr>
-	<tr>
-		<td>`Minute`</td>
-		<td>%b %d, %Y %H:%M</td>
-		<td>Jan 01, 2018 23:34</td>
-	</tr>
-	<tr>
-		<td>`Second`</td>
-		<td>%b %d, %Y %H:%M:%S</td>
-		<td>Jan 01, 2018 23:34:26</td>
-	</tr>
-	<tr>
-		<td>`Millisecond`</td>
-		<td>%b %d, %Y %H:%M:%S:%L</td>
-		<td>Jan 01, 2018 23:34:26:123</td>
-	</tr>
-</table>
+```javascript
+unitDefaultFormats = {
+	'Year': '%Y', // 2018
+	'Month': '%b %Y', // Jan 2018
+	'Day': '%b %d, %Y', // Jan 01, 2018
+	'Hour': '%b %d, %Y %H hrs', // Jan 01, 2018 23 hrs
+	'Minute': '%b %d, %Y %H:%M', // Jan 01, 2018 23:34
+	'Second': '%b %d, %Y %H:%M:%S', // Jan 01, 2018 23:34:26
+	'Millisecond': '%b %d, %Y %H:%M:%S:%L' // Jan 01, 2018 23:34:26:123
+};
+```
+
+The detailed table specifing the date/time format, is given [here]({% site.baseurl %}/fusiontime/fusiontime-attributes#datetime-format-7).
 
 #### `startValue`
 

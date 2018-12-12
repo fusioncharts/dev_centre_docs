@@ -2107,8 +2107,8 @@
             "specSheet": "/maps/spec-sheets/eliaspina"
         }, {
             "name": "El Seibo",
-            "alias": "eiseibo",
-            "specSheet": "/maps/spec-sheets/eiseibo"
+            "alias": "elseibo",
+            "specSheet": "/maps/spec-sheets/elseibo"
         }, {
             "name": "Espaillat",
             "alias": "espaillat",
@@ -4853,9 +4853,9 @@
                 "alias": "southhamgyong",
                 "specSheet": "/maps/spec-sheets/southhamgyong"
             }, {
-                "name": "South Hwangae",
-                "alias": "southhwangae",
-                "specSheet": "/maps/spec-sheets/southhwangae"
+                "name": "South Hwanghae",
+                "alias": "southhwanghae",
+                "specSheet": "/maps/spec-sheets/southhwanghae"
             }, {
                 "name": "South Pyongan",
                 "alias": "southpyongan",
@@ -4969,7 +4969,7 @@
             }, {
                 "name": "Cavite",
                 "alias": "cavite",
-                "specSheet": "/maps/spec-sheets/avite"
+                "specSheet": "/maps/spec-sheets/cavite"
             }, {
                 "name": "Cebu",
                 "alias": "cebu",
@@ -5342,9 +5342,9 @@
                 "alias": "incheon",
                 "specSheet": "/maps/spec-sheets/incheon"
             }, {
-                "name": "Jedu",
-                "alias": "jedu",
-                "specSheet": "/maps/spec-sheets/jedu"
+                "name": "Jeju",
+                "alias": "jeju",
+                "specSheet": "/maps/spec-sheets/jeju"
             }, {
                 "name": "Jejudo",
                 "alias": "jejudo",
@@ -5495,8 +5495,8 @@
                 "specSheet": "/maps/spec-sheets/centralhighlands"
             }, {
                 "name": "Mekong River Delta",
-                "alias": "dekongriverdelta",
-                "specSheet": "/maps/spec-sheets/dekongriverdelta"
+                "alias": "mekongriverdelta",
+                "specSheet": "/maps/spec-sheets/mekongriverdelta"
             }, {
                 "name": "North Central",
                 "alias": "northcentral",

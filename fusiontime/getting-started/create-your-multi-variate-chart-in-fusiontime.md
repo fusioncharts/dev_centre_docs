@@ -160,7 +160,7 @@ let fusionTable = fusionDataStore.createDataTable(data, schema);
 window.charInstance = new FusionCharts({
     type: 'timeseries',
     renderAt: 'container',
-    width: "90%",
+    width: "95%",
     height: 650,
     dataSource: {
         data: fusionTable,
@@ -189,9 +189,9 @@ window.charInstance = new FusionCharts({
 
 &lt;body&gt;
   &lt;div id="container"&gt;&lt;/div&gt;
-  &lt;script src="./build/fusioncharts.js"&gt;&lt;/script&gt;
-  &lt;script src="./data.js"&gt;&lt;/script&gt;
-  &lt;script src="./schema.js"&gt;&lt;/script&gt;
+  &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+  &lt;script src="path/to/local/data.js"&gt;&lt;/script&gt;
+  &lt;script src="path/to/local/schema.js"&gt;&lt;/script&gt;
   &lt;script&gt;
     let fusionDataStore = new FusionCharts.DataStore();
     let fusionTable = fusionDataStore.createDataTable(data, schema);
