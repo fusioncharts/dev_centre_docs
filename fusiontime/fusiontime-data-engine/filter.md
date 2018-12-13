@@ -163,7 +163,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Between
 
-**Between** is an operation which can be used when you want to render the chart using data between specific date/time or value. In the above table, the **Sales** column consists of numeric value. Let's apply the `between` operator to filter the values between **50** and **100**.
+**Between** is an operation which can be used when you want to filter the data between specific date/time or value. In the above table, the **Sales** column consists of numeric value. Let's apply the `between` operator to filter the values between **50** and **100**.
 
 **Between** takes three arguments which are:
 
