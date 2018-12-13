@@ -25,11 +25,11 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 
 <div><strong>Step 1:</strong> To install fusioncharts and the `react-native-fusioncharts` component via npm follow the steps below:</div>
 <div>1. Install the `react-native-fusioncharts` module</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install react-native-fusioncharts --save
 </code></pre>
 <div>2. Install the `fusioncharts` JS files</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install fusioncharts --save
 </code></pre>
 <div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for <strong>Android</strong>, follow the steps given below:</div>
@@ -38,7 +38,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
         <li>Create a folder named `assets` under `android/app/src/main` directory if it doesn't exist.</li>
         <li>Copy `FusionCharts` library files (node_modules/fusioncharts folder) in the `assets` folder.</li>
         <li>Create a `fusioncharts.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using &lt;script&gt; tag.</li>
-        <pre><code class="custom-hlc language-javascript">
+        <pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -145,13 +145,13 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 &lt;/html&gt;
         </code></pre>
         <li>Set `libraryPath` property to the FusionCharts component.</li>
-        <pre><code class="custom-hlc language-javascript">
+        <pre><code class="language-javascript">
 &lt;FusionCharts 
 ......
 libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
         </code></pre>
         <li>Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.</li>
-        <pre><code class="custom-hlc language-javascript">
+        <pre><code class="language-javascript">
 "scripts": {
     ......
     "clean:build:android": "rm -rf android/app/build",
@@ -159,7 +159,7 @@ libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
 },
         </code></pre>
         <li>Run the following command before genarating the signed APK:</li>
-        <pre><code class="custom-hlc language-javascript">
+        <pre><code class="language-javascript">
 $ npm run prod:android
         </code></pre>
     </ul>
@@ -171,11 +171,11 @@ $ npm run prod:android
 
 <div><strong>Step 1:</strong> To install fusioncharts and the `react-native-fusioncharts` component via npm follow the steps below:</div>
 <div>1. Install the `react-native-fusioncharts` module</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install react-native-fusioncharts --save
 </code></pre>
 <div>2. Install the `fusioncharts` JS files</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install fusioncharts --save
 </code></pre>
 <div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for <strong>iOS</strong>, follow the steps given below:</div>
@@ -185,7 +185,7 @@ $ npm run prod:android
         <li>Create a folder named `assets` in your project `root` if it doesn't exist.</li>
         <li>Copy `FusionCharts` library files in the `assets` folder.</li>
         <li>Create a `fusioncharts-tpl.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using &lt;script&gt; tag.</li>
-        <pre><code class="custom-hlc language-javascript">
+        <pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -201,7 +201,7 @@ $ npm run prod:android
 &lt;/html&gt;
         </code></pre>
         <li>Add a `build"assets` script in Application's `package.json` file</li>
-        <pre><code class="custom-hlc language-javascript">
+        <pre><code class="language-javascript">
 "scripts": {
     ......
     "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts"
@@ -210,7 +210,7 @@ $ npm run prod:android
         <li>The `--fc-library ./assets/fusioncharts` is required when you copy FusionCharts library files in your `assets` folder.<br/>
         <strong>Note:</strong> `fc-build-assets` is a utility binary provided by `react-native-fusioncharts` to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
         <li>Run the following command before running the application:</li>
-        <pre><code class="custom-hlc language-javascript">
+        <pre><code class="language-javascript">
 $ npm run build:assets
         </code></pre>
     </ul>

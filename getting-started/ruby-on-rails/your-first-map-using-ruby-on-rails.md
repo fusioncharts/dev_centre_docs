@@ -28,7 +28,7 @@ In this article, we will show you how to download and install the **FusionCharts
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
@@ -42,7 +42,7 @@ In this article, we will show you how to download and install the **FusionCharts
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
@@ -74,15 +74,15 @@ To add the FusionCharts Rails wrapper, use any of the following processes:
 <div class='tab-content extra-tabs'>
 <div class='tab rubygems-tab active'>
 <div><strong>Add this line to your application’s `Gemfile`:</strong></div>
-<pre><code class="custom-hlc language-ruby">
+<pre><code class="language-ruby">
 	gem ‘fusioncharts-rails’
 </code></pre>
 <div><strong>RubyGems contain package information along with the files to install. On the command line prompt, execute the following command:</strong></div>
-<pre><code class="custom-hlc language-ruby">
+<pre><code class="language-ruby">
 	$bundle
 </code></pre>
 <div><strong>This command will automatically install the `fusioncharts-rails` gem. You can also install the gem directly from the command line prompt, without making any edits to the `Gemfile`. To do this, use the code line given below:</strong></div>
-<pre><code class="custom-hlc language-ruby">
+<pre><code class="language-ruby">
 	$gem install fusioncharts-rails
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>

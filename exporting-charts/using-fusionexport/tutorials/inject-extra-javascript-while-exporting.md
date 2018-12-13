@@ -19,7 +19,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="tab-content extra-tabs">
 
 <div class="tab csharp-tab">
-<pre><code class="custom-hlc language-cs">
+<pre><code class="language-cs">
 	using System;
 	using System.IO;
 	using System.Linq;
@@ -60,7 +60,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </div>
 
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart {
@@ -100,7 +100,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 	<?php
 	// Injecting custom JavaScript while exporting
 	require __DIR__ . '/../vendor/autoload.php';
@@ -137,7 +137,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	// Injecting custom JavaScript while exporting
 
 	const path = require('path');
@@ -180,7 +180,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </div>
 
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk

@@ -32,7 +32,7 @@ To install the FusionCharts Suite, follow the steps below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
@@ -43,7 +43,7 @@ To install the FusionCharts Suite, follow the steps below:
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
@@ -181,7 +181,7 @@ The full code for the above sample is given below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 &lt;?php
     /\* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.\*/
     include("includes/fusioncharts.php");
@@ -249,7 +249,7 @@ The full code for the above sample is given below:
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 &lt;?php
     /\* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.\*/
     include("includes/fusioncharts.php");

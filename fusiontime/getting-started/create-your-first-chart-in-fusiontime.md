@@ -21,7 +21,7 @@ Install **FusionTime** using any of the following steps:
 <div class='tab npm-tab active'>
 
 <div><strong>To install `FusionTime` via npm run the command below:</strong></div>
-<pre><code class="custom-hlc language-PowerShell">
+<pre><code class="language-PowerShell">
     $ npm install fusioncharts
 </code></pre>
 
@@ -36,7 +36,7 @@ Install **FusionTime** using any of the following steps:
     </ol>
 </div>
 <div>The code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
@@ -165,7 +165,7 @@ Once the schema and data files are ready it is time to create the `DataTable` an
 <div class='tab-content extra-tabs'>
 
 <div class='tab npm-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 import FusionCharts from 'fusioncharts/core';
 import TimeSeries from 'fusioncharts/viz/timeseries';
 import DataStore from 'fusioncharts/datastore';
@@ -200,7 +200,7 @@ window.charInstance = new FusionCharts({
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 

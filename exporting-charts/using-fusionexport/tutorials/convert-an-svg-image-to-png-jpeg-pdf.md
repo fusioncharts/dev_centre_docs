@@ -19,7 +19,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab">
-<pre><code class="custom-hlc language-cs">
+<pre><code class="language-cs">
 	using System;
 	using System.IO;
 	using System.Linq;
@@ -58,7 +58,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </div>    
 
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart {
@@ -95,7 +95,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 	<?php
 	// Converting an SVG image to PNG/JPEG/PDF
 	require __DIR__ . '/../vendor/autoload.php';
@@ -130,7 +130,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	// Converting an SVG image to PNG/JPEG/PDF
 	const path = require('path');
 
@@ -173,7 +173,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </div>
 
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk

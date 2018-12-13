@@ -85,7 +85,7 @@ The consolidated code for the above chart is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 using System;
 using FusionCharts.Charts;
 
@@ -108,7 +108,7 @@ public partial class JsonUrlData : System.Web.UI.Page
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 Imports FusionCharts.Charts
 Partial Class JsonDataUrl
 Inherits System.Web.UI.Page
@@ -141,7 +141,7 @@ The HTML template for `aspx` file is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="JsonUrlData.aspx.cs" Inherits="JsonUrlData" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -172,7 +172,7 @@ The HTML template for `aspx` file is shown below:
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="JsonDataUrl.aspx.vb" Inherits="JsonDataUrl" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -250,7 +250,7 @@ The full code of the above sample is:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 using System;
 using FusionCharts.Charts;
 
@@ -273,7 +273,7 @@ public partial class XmlDataUrl : System.Web.UI.Page
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 Imports FusionCharts.Charts
 Partial Class XmlDataUrl
 Inherits System.Web.UI.Page
@@ -305,7 +305,7 @@ The HTML template for `aspx` file is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="XmlDataUrl.aspx.cs" Inherits="XmlDataUrl" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -332,7 +332,7 @@ The HTML template for `aspx` file is shown below:
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="XmlDataUrl.aspx.vb" Inherits="XmlDataUrl" %&gt;
 
 &lt;!DOCTYPE html&gt;

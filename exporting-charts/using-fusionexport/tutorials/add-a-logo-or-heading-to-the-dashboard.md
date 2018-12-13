@@ -24,7 +24,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab">
-<pre><code class="custom-hlc language-cs">
+<pre><code class="language-cs">
 	using System;
 	using System.IO;
 	using System.Linq;
@@ -74,7 +74,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 </code></pre>
 </div>
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart {
@@ -116,7 +116,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 	<?php
 	// Adding a logo or heading to the dashboard
 	require __DIR__ . '/../vendor/autoload.php';
@@ -155,7 +155,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	// Adding a logo or heading to the dashboard
 	const path = require('path');
 
@@ -201,7 +201,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 </code></pre>
 </div>
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport

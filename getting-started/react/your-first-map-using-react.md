@@ -26,11 +26,11 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 
 <div><strong>To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</strong></div>
 <div>1. Install the `react-fusioncharts` module</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install react-fusioncharts --save
 </code></pre>
 <div>2. Install the `fusioncharts` package</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install fusioncharts --save
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -50,7 +50,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Including react --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
@@ -87,7 +87,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Including react --&gt;
     &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
@@ -260,7 +260,7 @@ The consolidated code is given below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<pre><code class="custom-hlc language-javascript">// Step 1 - Including react
+<pre><code class="language-javascript">// Step 1 - Including react
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -362,7 +362,7 @@ export default App
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript">&lt;html&gt;
+<pre><code class="language-javascript">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including react --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
@@ -462,7 +462,7 @@ export default App
 </div>
 
 <div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript">&lt;html&gt;
+<pre><code class="language-javascript">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including react --&gt;
     &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt; 
@@ -590,7 +590,7 @@ After installing `fusionmaps` package, the code to render the map of **Californi
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<pre><code class="custom-hlc language-javascript">// Step 1 - Including react
+<pre><code class="language-javascript">// Step 1 - Including react
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -662,7 +662,7 @@ export default App
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript">&lt;html&gt;
+<pre><code class="language-javascript">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including react --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
@@ -732,7 +732,7 @@ export default App
 </div>
 
 <div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript">&lt;html&gt;
+<pre><code class="language-javascript">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including react --&gt;
     &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt;

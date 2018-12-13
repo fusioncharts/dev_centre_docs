@@ -7,7 +7,7 @@ heading: Asynchronous capture
 Exporting can be invoked from the injected JavaScript (done using the `--callbackFilePath` option). If the `--asyncCapture` option is enabled, the injected script will trigger the  `CAPTURE_EXIT` event.
 You need to call the following method to invoke the export:
 
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 FusionExport.emit('CAPTURE_EXIT');
 </code></pre>
 
@@ -25,7 +25,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab">
-<pre><code class="custom-hlc language-c">
+<pre><code class="language-c">
 	using System;
 	using System.IO;
 	using System.Linq;
@@ -66,7 +66,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </div>
 
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart {
@@ -106,7 +106,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 	<?php
 	// Async capture
 	require __DIR__ . '/../vendor/autoload.php';
@@ -143,7 +143,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	// Async capture
 	const path = require('path');
 
@@ -188,7 +188,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </div>
 
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport

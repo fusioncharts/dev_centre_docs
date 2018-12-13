@@ -97,7 +97,7 @@ Before you start with the code, we suggest going through the steps that the code
 
 <div class="tab-content">
 <div class="tab csharp-tab">
-<pre><code class="custom-hlc language-cs">
+<pre><code class="language-cs">
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -141,7 +141,7 @@ namespace FusionExportTest
 </div>
 
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 import com.fusioncharts.fusionexport.client.*; // import sdk
 
 public class Script {
@@ -168,7 +168,7 @@ public class Script {
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 <?php
   // Import dependencies
   require DIR__ . '/../vendor/autoload.php';
@@ -195,7 +195,7 @@ public class Script {
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 // ********** IMPORT AND RESOLVE DEPENDENCIES ***********
 
 // Import 'path' core module of Node.js
@@ -243,7 +243,7 @@ exportManager.export(exportConfig, outputDir = '.', unzip = true).then((exported
 </div>
 
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 # Import sdk
 from fusionexport import ExportManager, ExportConfig
 

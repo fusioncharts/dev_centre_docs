@@ -32,7 +32,7 @@ The consolidated given below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 {% load static %}
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
@@ -43,7 +43,7 @@ The consolidated given below:
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 {% load static %}
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
@@ -250,7 +250,7 @@ The HTML template of the above sample is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 &lt;!-- Filename: app_name/templates/index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -272,7 +272,7 @@ The HTML template of the above sample is shown below:
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 &lt;!-- Filename: app_name/templates/index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;

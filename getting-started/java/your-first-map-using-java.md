@@ -30,7 +30,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
@@ -44,7 +44,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
@@ -216,7 +216,7 @@ The full code for the above sample is given below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%&gt;
 &lt;%@page import="java.util.*" %&gt;
 &lt;%@page import="fusioncharts.FusionCharts" %&gt;
@@ -343,7 +343,7 @@ The full code for the above sample is given below:
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%&gt;
 &lt;%@page import="java.util.*" %&gt;
 &lt;%@page import="fusioncharts.FusionCharts" %&gt;
@@ -491,7 +491,7 @@ To render the above map, the following code is used:
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%&gt;
 &lt;%@page import="java.util.*" %&gt;
 &lt;%@page import="fusioncharts.FusionCharts" %&gt;
@@ -676,7 +676,7 @@ To render the above map, the following code is used:
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%&gt;
 &lt;%@page import="java.util.*" %&gt;
 &lt;%@page import="fusioncharts.FusionCharts" %&gt;

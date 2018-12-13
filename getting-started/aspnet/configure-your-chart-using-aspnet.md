@@ -28,7 +28,7 @@ The consolidated code for the above chart is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 using System;
 using FusionCharts.Charts;
 
@@ -50,7 +50,7 @@ public partial class Pages_UpdateDataRuntime: System.Web.UI.Page {
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 Imports FusionCharts.Charts
 Partial Class Pages_UpdateDataRuntime
 Inherits System.Web.UI.Page
@@ -77,7 +77,7 @@ The HTML template for `aspx` file is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="UpdateDataRuntime.aspx.cs" Inherits="Pages_UpdateDataRuntime" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -118,7 +118,7 @@ The HTML template for `aspx` file is shown below:
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="VB" AutoEventWireup="true" CodeFile="UpdateDataRuntime.aspx.vb" Inherits="Pages_UpdateDataRuntime" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -193,7 +193,7 @@ The consolidated code for the above chart is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 using System;
 using FusionCharts.Charts;
 
@@ -214,7 +214,7 @@ public partial class Pages_UpdateChartAttributesRuntime: System.Web.UI.Page {
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 Imports FusionCharts.Charts
 Partial Class Pages_UpdateChartAttributesRuntime
 Inherits System.Web.UI.Page
@@ -241,7 +241,7 @@ The HTML template for `aspx` file is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="UpdateChartAttributesRuntime.aspx.cs" Inherits="Pages_UpdateChartAttributesRuntime" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -333,7 +333,7 @@ The HTML template for `aspx` file is shown below:
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="VB" AutoEventWireup="true" CodeFile="UpdateChartAttributesRuntime.aspx.vb" Inherits="Pages_UpdateChartAttributesRuntime" %&gt;
 
 &lt;!DOCTYPE html&gt;

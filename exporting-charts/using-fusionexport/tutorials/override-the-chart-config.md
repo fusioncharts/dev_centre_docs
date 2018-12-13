@@ -13,7 +13,7 @@ The  `--chart-config-options` option can be used to change the chart configurati
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-json">
+<pre><code class="language-json">
 	{
 		"chart-config": "uat/fusioncharts_chart.js",
 			"chart-config-options": {
@@ -38,7 +38,7 @@ Once done, run the following command:
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	$ fe -e fusioncharts_config.json
 </code></pre>
 </div>

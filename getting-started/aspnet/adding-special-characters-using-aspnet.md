@@ -34,7 +34,7 @@ The consolidated code for the above chart is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 using System;
 using FusionCharts.Charts;
 
@@ -55,7 +55,7 @@ public partial class Pages_ChartSpclChar: System.Web.UI.Page {
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 Imports FusionCharts.Charts
 
 Partial Class Pages_ChartSpclChar
@@ -84,7 +84,7 @@ The HTML template for `aspx` file is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="ChartSpclChar.aspx.cs" Inherits="Pages_ChartSpclChar" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -115,7 +115,7 @@ The HTML template for `aspx` file is shown below:
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="ChartSpclChar.aspx.vb" Inherits="Pages_ChartSpclChar" %&gt;
 
 &lt;!DOCTYPE html&gt;

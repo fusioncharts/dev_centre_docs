@@ -21,7 +21,7 @@ Now, edit the content of the file `fusioncharts-config.json.json`.
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	{
 	    "chart-config": "fusioncharts_chart.js",
 	    "output-file": "s3:fc-chart-<%= number(1) %>",

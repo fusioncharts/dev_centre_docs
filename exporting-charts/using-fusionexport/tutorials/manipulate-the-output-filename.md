@@ -13,7 +13,7 @@ Output filenames can be dynamically generated using the  `--output-file-definiti
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	module.exports = {
 		captionIndexStr: (chartConfig, index, chartConfigList) => {
 			const caption = chartConfig.dataSource.chart.caption;
@@ -35,7 +35,7 @@ The `captionIndexStr` function  receives three parameters from the FusionExport 
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	module.exports = {
 		dates: [
 			'17-11-2017_fc_1',
@@ -66,7 +66,7 @@ To create the final output filename, the `--output-file` option should be used. 
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	path/to/export--<%= number(1, 100) %>
 	output filename: path/to/export--1.png
 

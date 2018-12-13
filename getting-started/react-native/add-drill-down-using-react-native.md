@@ -244,7 +244,7 @@ The HTML template(`fusioncharts.html`) of the above sample is:
 <div class='tab-content extra-tabs'>
 
 <div class='tab android-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -354,7 +354,7 @@ The HTML template(`fusioncharts.html`) of the above sample is:
 </div>
 
 <div class='tab ios-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 

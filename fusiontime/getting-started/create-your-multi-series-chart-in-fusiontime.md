@@ -101,7 +101,7 @@ Creating a chart with multiple plots is very simple in FusionTime. You just need
 <div class='tab-content extra-tabs'>
 
 <div class='tab npm-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 import FusionCharts from 'fusioncharts/core';
 import TimeSeries from 'fusioncharts/viz/timeseries';
 import DataStore from 'fusioncharts/datastore';
@@ -140,7 +140,7 @@ window.charInstance = new FusionCharts({
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 

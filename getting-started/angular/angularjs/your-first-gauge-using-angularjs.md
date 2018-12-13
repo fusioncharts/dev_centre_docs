@@ -23,15 +23,15 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 
 <div><strong>To install fusioncharts and the `angularjs-fusioncharts` directive via npm follow the steps below:</strong></div>
 <div>1. Install `angularjs` core library</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install angular
 </code></pre>
 <div>2. Install `angularjs-fusioncharts`</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	$ npm install angularjs-fusioncharts
 </code></pre>
 <div>2. Install the `fusioncharts` package</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install fusioncharts
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -48,7 +48,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
 	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script>
@@ -74,7 +74,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
 	&lt;script type="text/javascript" src="path/to/local/angular.min.js"&gt;&lt;/script&gt;
@@ -210,7 +210,7 @@ The consolidated code is shown below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 //  Require AngularJS 
 var angular = require('angular');
 
@@ -273,7 +273,7 @@ myApp.controller('MyController', ['$scope', function($scope) {
 chartInstance.render()
 </code></pre>
 <div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;body ng-app="myApp"&gt;
     &lt;div ng-controller="MyController"&gt;
         &lt;div
@@ -290,7 +290,7 @@ chartInstance.render()
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
@@ -355,7 +355,7 @@ chartInstance.render()
 
 
 <div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
