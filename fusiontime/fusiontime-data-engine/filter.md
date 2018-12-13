@@ -57,7 +57,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Greater
 
-**Greater** is an operation which can be used when you want to filter the data values greater than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `greater` operater to filter the values greater than **100**.
+**Greater** is an operation which can be used when you want to filter the data values greater than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `greater` operator to filter the values greater than **100**.
 
 **Greater** takes two arguments which are:
 
@@ -81,7 +81,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### GreaterEquals
 
-This operation is similar to `greater` filter which can be used when you want to filter the data values greater than a specific numeric value. `greaterEquals` operation is used when you want to filter the data values greater and equal to the specific value. In the above table, the **Quantity** column consists of numeric value. Let's apply the `greaterEquals` operater to filter the values greater and equal to **3**.
+This operation is similar to `greater` filter which can be used when you want to filter the data values greater than a specific numeric value. `greaterEquals` operation is used when you want to filter the data values greater and equal to the specific value. In the above table, the **Quantity** column consists of numeric value. Let's apply the `greaterEquals` operator to filter the values greater and equal to **3**.
 
 **GreaterEquals** takes two arguments which are:
 
@@ -110,7 +110,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Less
 
-**Less** is an operation which can be used when you want to filter the data values less than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `less` operater to filter the values less than **100**.
+**Less** is an operation which can be used when you want to filter the data values less than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `less` operator to filter the values less than **100**.
 
 **Less** takes two arguments which are:
 
@@ -137,7 +137,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### LessEquals
 
-This operation is similar to `less` filter which can be used when you want to filter the data values less than a specific numeric value. `lessEquals` operation is used when you want to filter the data values less and equal to the specific value. In the above table, the **Quantity** column consists of numeric value. Let's apply the `lessEquals` operater to filter the values less than and equal to **3**.
+This operation is similar to `less` filter which can be used when you want to filter the data values less than a specific numeric value. `lessEquals` operation is used when you want to filter the data values less and equal to the specific value. In the above table, the **Quantity** column consists of numeric value. Let's apply the `lessEquals` operator to filter the values less than and equal to **3**.
 
 **LessEquals** takes two arguments which are:
 
@@ -163,7 +163,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Between
 
-**Between** is an operation which can be used when you want to render the chart using data between specific date/time or value. In the above table, the **Sales** column consists of numeric value. Let's apply the `between` operater to filter the values between **50** and **100**.
+**Between** is an operation which can be used when you want to filter the data between specific date/time or value. In the above table, the **Sales** column consists of numeric value. Let's apply the `between` operator to filter the values between **50** and **100**.
 
 **Between** takes three arguments which are:
 

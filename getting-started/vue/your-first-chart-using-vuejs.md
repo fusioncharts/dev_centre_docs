@@ -194,7 +194,7 @@ To render the chart, open `App.vue` file and follow the steps below:
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
-<pre><code class="custom-hlc language-javascript">&lt;script&gt;
+<pre><code class="custom-hlc language-javascript">
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
@@ -231,7 +231,6 @@ name: 'app',
         }
     }
 }
-&lt;/script&gt;
 
 &lt;template&gt;
     &lt;div id="app"&gt;
