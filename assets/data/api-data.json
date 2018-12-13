@@ -2141,7 +2141,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "This event is fired when the FusionCharts library is ready to be used. By the time this event is raised, the browser's `DOM` is ready to be interacted with, which corresponds to the `DOMContentLoaded` event of browsers. In older browsers, where `DOMContentLoaded` is not fired, the `ready` event corresponds to the `load` event of the page. In case the FusionCharts library is included in the page when the `DOMContentLoaded` event is already fired (i.e. the script is loaded asyncronously using AJAX or by using script deferring methods) the `ready` event is still fired to ensure integrity of all the listeners.\n\nIn many ways the nature of this event is similar to the `jQuery(document).ready` function of the jQuery library and the `Ext.onReady` function of the ExtJS library. One should interact with the FusionCharts framework (i.e. create new charts, set options, etc.) only after this event has been fired. This event also helps you to neatly write your code in separate script files and in the page `<head>` thus keeping scripts from being a part of your page `<body>`.\n\nAn alternate (and shorthand) method to subscribing the `ready` event is to use the [ready](/api/fusioncharts/fusioncharts-events#static-event-ready) function. One advantage that the [ready](/api/fusioncharts/fusioncharts-events#static-event-ready) function has over the `ready` event is that the event is fired only once during the life-cycle of a page while functions passed to the [ready](/api/fusioncharts/fusioncharts-events#static-event-ready) function are executed even when attached after the `ready` event has been fired.\n\nThis is a framework level event and as such can be only listened via the [FusionCharts](/api/fusioncharts) object on the `FusionCharts` class alone. It will not be fired if it is subscribed from individual chart instances. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wmw78fq2/ '@@ btn link-underline')",
+                    "description": "This event is fired when the FusionCharts library is ready to be used. By the time this event is raised, the browser's `DOM` is ready to be interacted with, which corresponds to the `DOMContentLoaded` event of browsers. In older browsers, where `DOMContentLoaded` is not fired, the `ready` event corresponds to the `load` event of the page. In case the FusionCharts library is included in the page when the `DOMContentLoaded` event is already fired (i.e. the script is loaded asyncronously using AJAX or by using script deferring methods) the `ready` event is still fired to ensure integrity of all the listeners.\n\nIn many ways the nature of this event is similar to the `jQuery(document).ready` function of the jQuery library and the `Ext.onReady` function of the ExtJS library. One should interact with the FusionCharts framework (i.e. create new charts, set options, etc.) only after this event has been fired. This event also helps you to neatly write your code in separate script files and in the page `<head>` thus keeping scripts from being a part of your page `<body>`.\n\nAn alternate (and shorthand) method to subscribing the `ready` event is to use the [ready](/api/fusioncharts/fusioncharts-events#static-event-ready) function. One advantage that the [ready](/api/fusioncharts/fusioncharts-events#static-event-ready) function has over the `ready` event is that the event is fired only once during the life-cycle of a page while functions passed to the [ready](/api/fusioncharts/fusioncharts-events#static-event-ready) function are executed even when attached after the `ready` event has been fired.\n\nThis is a framework level event and as such can be only listened via the [FusionCharts](/api/fusioncharts) object on the `FusionCharts` class alone. It will not be fired if it is subscribed from individual chart instances. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wmw78fq2/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -2317,7 +2317,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "This pre-initialization event is triggered every time a new instance of the [FusionCharts](/api/fusioncharts) object is created. It then triggers a number of modules that need to be setup on every instance of FusionCharts; the event can be used to perform any actions required to be completed before the initialization of each chart.\n\nBecause this event is triggered upon instantiating a new `FusionCharts` object, it is virtually impossible to listen to this event by adding an event listener to the chart. By the time the event listener is attached (using the [addEventListener()](/api/fusioncharts/fusioncharts-methods#addEventListener) method), the event is already fired.\n\nHowever, there are alternate ways that can be used to listen to this event. You can listen to the FusionCharts global events, using the [addEventListener](/api/fusioncharts/fusioncharts-methods#static-addEventListener) static method before even creating a new instance. (The required instance can be identified by the `id` of the chart using `eventObject.sender.id`.) You can also pass the event listener as a parameter of the FusionCharts constructor. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/jf1zzqrc/ '@@ btn link-underline')",
+                    "description": "This pre-initialization event is triggered every time a new instance of the [FusionCharts](/api/fusioncharts) object is created. It then triggers a number of modules that need to be setup on every instance of FusionCharts; the event can be used to perform any actions required to be completed before the initialization of each chart.\n\nBecause this event is triggered upon instantiating a new `FusionCharts` object, it is virtually impossible to listen to this event by adding an event listener to the chart. By the time the event listener is attached (using the [addEventListener()](/api/fusioncharts/fusioncharts-methods#addEventListener) method), the event is already fired.\n\nHowever, there are alternate ways that can be used to listen to this event. You can listen to the FusionCharts global events, using the [addEventListener](/api/fusioncharts/fusioncharts-methods#static-addEventListener) static method before even creating a new instance. (The required instance can be identified by the `id` of the chart using `eventObject.sender.id`.) You can also pass the event listener as a parameter of the FusionCharts constructor. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/jf1zzqrc/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -2603,7 +2603,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "Triggered when a new instance of the [FusionCharts](/api/fusioncharts) constructor is created. \n\n>Initialization does not indicate that the chart has rendered; it only indicates that the JavaScript object instance (`new FusionCharts()`) is created and is ready to be operated upon. \n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5atyLua7/ '@@ btn link-underline')",
+                    "description": "Triggered when a new instance of the [FusionCharts](/api/fusioncharts) constructor is created. \n\n>Initialization does not indicate that the chart has rendered; it only indicates that the JavaScript object instance (`new FusionCharts()`) is created and is ready to be operated upon. \n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5atyLua7/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -2889,7 +2889,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered just before a linked item in a [LinkedChart]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %} is rendered, after the parent link is clicked. It is triggered before the instance of the drill-down chart is instantiated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sxewndyu/ '@@ btn link-underline')",
+                    "description": "Triggered just before a linked item in a [LinkedChart]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %} is rendered, after the parent link is clicked. It is triggered before the instance of the drill-down chart is instantiated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sxewndyu/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -3037,7 +3037,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a linked chart is rendered, after the parent link is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5p7fttnk/ '@@ btn link-underline')",
+                    "description": "Triggered when a linked chart is rendered, after the parent link is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5p7fttnk/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -3207,7 +3207,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered just before a linked chart is closed. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/xz4y1uno/ '@@ btn link-underline')",
+                    "description": "Triggered just before a linked chart is closed. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/xz4y1uno/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -3377,7 +3377,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a linked chart is closed to go back to its parent chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ec7rweda/ '@@ btn link-underline')",
+                    "description": "Triggered when a linked chart is closed to go back to its parent chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ec7rweda/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -3695,7 +3695,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "__Triggered__ when chart data is successfully loaded from a URL (instead of a static JSON or XML file from the system). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2cvbm0du/ '@@ btn link-underline')",
+                    "description": "__Triggered__ when chart data is successfully loaded from a URL (instead of a static JSON or XML file from the system). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2cvbm0du/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -4359,7 +4359,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the default behavior of the [dataLoadRequested](/api/fusioncharts/fusioncharts-events#event-dataLoadRequested) event is cancelled by calling the `eventObj.preventDefault()` method. The event is internally fired if the data source is a local path or the URL fails internal security checks. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/y1wf07wu/ '@@ btn link-underline')",
+                    "description": "Triggered when the default behavior of the [dataLoadRequested](/api/fusioncharts/fusioncharts-events#event-dataLoadRequested) event is cancelled by calling the `eventObj.preventDefault()` method. The event is internally fired if the data source is a local path or the URL fails internal security checks. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/y1wf07wu/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -4749,7 +4749,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when chart data is updated and the chart is redrawn, after the [drawComplete](/api/fusioncharts/fusioncharts-events#event-drawComplete) event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/pfmo5pnh/ '@@ btn link-underline')",
+                    "description": "Triggered when chart data is updated and the chart is redrawn, after the [drawComplete](/api/fusioncharts/fusioncharts-events#event-drawComplete) event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/pfmo5pnh/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -4987,7 +4987,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the default behavior of the [beforeDataUpdate](/api/fusioncharts/fusioncharts-events#event-beforeDataUpdate) event is cancelled by calling the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0j7tuds4/ '@@ btn link-underline')",
+                    "description": "Triggered when the default behavior of the [beforeDataUpdate](/api/fusioncharts/fusioncharts-events#event-beforeDataUpdate) event is cancelled by calling the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0j7tuds4/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -5225,7 +5225,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when chart data is loaded from a URL instead of a static JSON or XML file from the system. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/j74qLp3x/ '@@ btn link-underline')",
+                    "description": "Triggered when chart data is loaded from a URL instead of a static JSON or XML file from the system. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/j74qLp3x/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -5461,7 +5461,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered just before chart data is passed to the chart. It is useful if any operations have to be performed on the data before it is applied to the chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/b1cadey2/ '@@ btn link-underline')",
+                    "description": "Triggered just before chart data is passed to the chart. It is useful if any operations have to be performed on the data before it is applied to the chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/b1cadey2/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -5705,7 +5705,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time a real-time chart completes updating, using the `dataStreamURL` attribute or through user-interaction (using the __edit mode__ of the real-time angular and linear gauges). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/jm0c3mg4/ '@@ btn link-underline')",
+                    "description": "Triggered every time a real-time chart completes updating, using the `dataStreamURL` attribute or through user-interaction (using the __edit mode__ of the real-time angular and linear gauges). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/jm0c3mg4/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -6057,7 +6057,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a pie or a doughnut slice completes slicing out/slicing in. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qaosg16n/ '@@ btn link-underline')",
+                    "description": "Triggered when a pie or a doughnut slice completes slicing out/slicing in. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qaosg16n/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -6249,7 +6249,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a pie or a doughnut slice begins slicing out/slicing in. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/z1foysn1/ '@@ btn link-underline')",
+                    "description": "Triggered when a pie or a doughnut slice begins slicing out/slicing in. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/z1foysn1/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -6441,7 +6441,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out from over an entity on a map. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/e0zk9mb2/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out from over an entity on a map. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/e0zk9mb2/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -6677,7 +6677,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over an entity on a map. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sha2d9ac/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over an entity on a map. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sha2d9ac/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -6913,7 +6913,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when an entity on a map is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/31j2vhcn/ '@@ btn link-underline')",
+                    "description": "Triggered when an entity on a map is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/31j2vhcn/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -7155,7 +7155,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "This event is applicable to the connector element of the Gantt chart and the maps. It is triggered when the mouse pointer is rolled over a connector connecting the tasks (on a Gantt chart) or the markers (on a map). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qvtod6cw/ '@@ btn link-underline')",
+                    "description": "This event is applicable to the connector element of the Gantt chart and the maps. It is triggered when the mouse pointer is rolled over a connector connecting the tasks (on a Gantt chart) or the markers (on a map). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qvtod6cw/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -7567,7 +7567,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "This event is applicable to the connector element of the Gantt chart and the maps. It is triggered when the mouse pointer is rolled out from over a connector connecting the tasks (on a Gantt chart) or the markers (on a map). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wxrn6mnv/ '@@ btn link-underline')",
+                    "description": "This event is applicable to the connector element of the Gantt chart and the maps. It is triggered when the mouse pointer is rolled out from over a connector connecting the tasks (on a Gantt chart) or the markers (on a map). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wxrn6mnv/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -7979,7 +7979,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "This event is applicable to the connector element of the Gantt chart and the maps. It is triggered when a connector connecting the tasks (on a Gantt chart) or the markers (on a map) is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6jp1fpds/ '@@ btn link-underline')",
+                    "description": "This event is applicable to the connector element of the Gantt chart and the maps. It is triggered when a connector connecting the tasks (on a Gantt chart) or the markers (on a map) is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6jp1fpds/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -8397,7 +8397,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over a marker on a map. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/koctamvw/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over a marker on a map. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/koctamvw/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -8683,7 +8683,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out from over a marker on a map. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zznz7uzh/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out from over a marker on a map. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zznz7uzh/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -8969,7 +8969,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a marker on a map is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ggaoreyj/ '@@ btn link-underline')",
+                    "description": "Triggered when a marker on a map is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ggaoreyj/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -9289,7 +9289,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a pie/doughnut chart completes rotating. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/jw6f5asx/ '@@ btn link-underline')",
+                    "description": "Triggered when a pie/doughnut chart completes rotating. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/jw6f5asx/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -9459,7 +9459,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a pie/doughnut chart starts rotating. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/48oz747w/ '@@ btn link-underline')",
+                    "description": "Triggered when a pie/doughnut chart starts rotating. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/48oz747w/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -9607,7 +9607,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time the mouse pointer is rolled over the center label of the doughnut chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zr3jm4cm/ '@@ btn link-underline')",
+                    "description": "Triggered every time the mouse pointer is rolled over the center label of the doughnut chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zr3jm4cm/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -9913,7 +9913,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time the mouse pointer is rolled out of the center label of the doughnut chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2x2mtd3f/ '@@ btn link-underline')",
+                    "description": "Triggered every time the mouse pointer is rolled out of the center label of the doughnut chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2x2mtd3f/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -10219,7 +10219,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time the center label of the doughnut chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Lxx3fuaf/ '@@ btn link-underline')",
+                    "description": "Triggered every time the center label of the doughnut chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Lxx3fuaf/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -10525,7 +10525,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time the text within the center label of the doughnut chart changes. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/158znr85/ '@@ btn link-underline')",
+                    "description": "Triggered every time the text within the center label of the doughnut chart changes. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/158znr85/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -10831,7 +10831,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time a chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/4e269Lwo/ '@@ btn link-underline')",
+                    "description": "Triggered every time a chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/4e269Lwo/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -11209,7 +11209,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is moved over a chart. The event arguments pass useful information related to pointer location, relative to the chart and the page, that can be used for positioning elements like annotations or integrating charts with custom tooltip libraries. \n\n>By default, a chart does not trigger this event until is enabled to do so. To enable this event for a chart, set the `enableChartMouseMoveEvent` attribute to __1__. \n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/hzefvLmn/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is moved over a chart. The event arguments pass useful information related to pointer location, relative to the chart and the page, that can be used for positioning elements like annotations or integrating charts with custom tooltip libraries. \n\n>By default, a chart does not trigger this event until is enabled to do so. To enable this event for a chart, set the `enableChartMouseMoveEvent` attribute to __1__. \n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/hzefvLmn/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -11581,7 +11581,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time the mouse pointer is rolled over a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/q4L3e1f0/ '@@ btn link-underline')",
+                    "description": "Triggered every time the mouse pointer is rolled over a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/q4L3e1f0/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -11959,7 +11959,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time the mouse pointer is rolled out from over a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qwxprgz9/ '@@ btn link-underline')",
+                    "description": "Triggered every time the mouse pointer is rolled out from over a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qwxprgz9/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -12337,7 +12337,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the background image for a chart (specified using the `bgImage` attribute) is loaded. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Lmynbjua/ '@@ btn link-underline')",
+                    "description": "Triggered when the background image for a chart (specified using the `bgImage` attribute) is loaded. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Lmynbjua/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -12617,7 +12617,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when there is an error in loading the background image for a chart (specified using the `bgImage` attribute). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wkh1cfsz/ '@@ btn link-underline')",
+                    "description": "Triggered when there is an error in loading the background image for a chart (specified using the `bgImage` attribute). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wkh1cfsz/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -12919,7 +12919,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a legend item is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7vu1euh2/ '@@ btn link-underline')",
+                    "description": "Triggered when a legend item is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7vu1euh2/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -13243,7 +13243,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over a legend item. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0tx94w7b/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over a legend item. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0tx94w7b/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -13545,7 +13545,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out from over a legend item. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/z3a9so88/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out from over a legend item. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/z3a9so88/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -13847,7 +13847,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over a logo on a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/y30sva4z/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over a logo on a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/y30sva4z/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -14171,7 +14171,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out from over a logo on a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9aqxwnaz/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out from over a logo on a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9aqxwnaz/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -14495,7 +14495,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the logo on a chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3es9zc0p/ '@@ btn link-underline')",
+                    "description": "Triggered when the logo on a chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3es9zc0p/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -14819,7 +14819,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the logo is loaded on a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/dvg1ucxv/ '@@ btn link-underline')",
+                    "description": "Triggered when the logo is loaded on a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/dvg1ucxv/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -15055,7 +15055,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the logo cannot be loaded on a chart because of an error. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/swxpgz54/ '@@ btn link-underline')",
+                    "description": "Triggered when the logo cannot be loaded on a chart because of an error. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/swxpgz54/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -15313,7 +15313,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered just before the exporting process of a chart begins, through the export context menu or when the [exportChart()](/api/fusioncharts/fusioncharts-methods#exportChart) method is called programmatically. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0yznooht/ '@@ btn link-underline')",
+                    "description": "Triggered just before the exporting process of a chart begins, through the export context menu or when the [exportChart()](/api/fusioncharts/fusioncharts-methods#exportChart) method is called programmatically. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0yznooht/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -15703,7 +15703,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a chart exports successfully. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9tdpzfv0/ '@@ btn link-underline')",
+                    "description": "Triggered when a chart exports successfully. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9tdpzfv0/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -15983,7 +15983,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the default behavior of the [beforeExport](/api/fusioncharts/fusioncharts-events#event-beforeExport) event is cancelled by calling the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3d772r65/ '@@ btn link-underline')",
+                    "description": "Triggered when the default behavior of the [beforeExport](/api/fusioncharts/fusioncharts-events#event-beforeExport) event is cancelled by calling the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3d772r65/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -16373,7 +16373,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered before the printing process for a chart begins, after the [print()](/api/fusioncharts/fusioncharts-methods#print) method is called on the chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/hjmmdm8t/ '@@ btn link-underline')",
+                    "description": "Triggered before the printing process for a chart begins, after the [print()](/api/fusioncharts/fusioncharts-methods#print) method is called on the chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/hjmmdm8t/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -16489,7 +16489,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the user confirms or cancels printing through the browser's print dialog box. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/k6c4u7uh/ '@@ btn link-underline')",
+                    "description": "Triggered when the user confirms or cancels printing through the browser's print dialog box. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/k6c4u7uh/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -16605,7 +16605,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the default behavior of the [beforePrint](/api/fusioncharts/fusioncharts-events#event-beforePrint) event is cancelled by calling the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/98kyw78d/ '@@ btn link-underline')",
+                    "description": "Triggered when the default behavior of the [beforePrint](/api/fusioncharts/fusioncharts-events#event-beforePrint) event is cancelled by calling the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/98kyw78d/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -16721,7 +16721,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time the x-axis label of a data plot is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/tsto06dw/ '@@ btn link-underline')",
+                    "description": "Triggered every time the x-axis label of a data plot is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/tsto06dw/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -17001,7 +17001,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over the x-axis label of a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/dorpb31c/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over the x-axis label of a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/dorpb31c/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -17281,7 +17281,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out from over the x-axis label of a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qxh0obn7/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out from over the x-axis label of a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qxh0obn7/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -17561,7 +17561,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when you begin scrolling through a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d5e87b7t/ '@@ btn link-underline')",
+                    "description": "Triggered when you begin scrolling through a chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d5e87b7t/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -17709,7 +17709,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a chart completes scrolling. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gLhrfmn8/ '@@ btn link-underline')",
+                    "description": "Triggered when a chart completes scrolling. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gLhrfmn8/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -17879,7 +17879,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered while scrolling through a zoom-line chart or scroll charts. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/vjr6ym81/ '@@ btn link-underline')",
+                    "description": "Triggered while scrolling through a zoom-line chart or scroll charts. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/vjr6ym81/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -18999,7 +18999,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered in the pin mode of a zoom-line chart, when the user performs data selection to pin a range. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/03kbg8zf/ '@@ btn link-underline')",
+                    "description": "Triggered in the pin mode of a zoom-line chart, when the user performs data selection to pin a range. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/03kbg8zf/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -19213,7 +19213,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when all data plots on the interactive charts (select-scatter, drag-node, and drag-able charts) are restored to their original values (by clicking the __Restore__ button). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/g8qL1hud/ '@@ btn link-underline')",
+                    "description": "Triggered when all data plots on the interactive charts (select-scatter, drag-node, and drag-able charts) are restored to their original values (by clicking the __Restore__ button). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/g8qL1hud/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -19329,7 +19329,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the __Submit__ button on interactive charts (select-scatter, drag-node, and drag-able charts) is clicked, after the data values are updated by the user. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gzncj6h7/ '@@ btn link-underline')",
+                    "description": "Triggered when the __Submit__ button on interactive charts (select-scatter, drag-node, and drag-able charts) is clicked, after the data values are updated by the user. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gzncj6h7/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -19477,7 +19477,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when there is an ajax error in sending the POST request with the user-submitted data in interactive charts (select-scatter, drag-node, and dragable charts). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/cne4pnL0/ '@@ btn link-underline')",
+                    "description": "Triggered when there is an ajax error in sending the POST request with the user-submitted data in interactive charts (select-scatter, drag-node, and dragable charts). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/cne4pnL0/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -19713,7 +19713,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the ajax POST request for sending user-submitted data in interactive charts (select-scatter, drag-node, and dragable charts) to the URL is successfully completed. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Lazv6nh6/ '@@ btn link-underline')",
+                    "description": "Triggered when the ajax POST request for sending user-submitted data in interactive charts (select-scatter, drag-node, and dragable charts) to the URL is successfully completed. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Lazv6nh6/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -19927,7 +19927,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the default behavior of the [beforeDataSubmit](/api/fusioncharts/fusioncharts-events#event-beforeDataSubmit) event is cancelled by calling the `eventObj. preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/krgw4yas/ '@@ btn link-underline')",
+                    "description": "Triggered when the default behavior of the [beforeDataSubmit](/api/fusioncharts/fusioncharts-events#event-beforeDataSubmit) event is cancelled by calling the `eventObj. preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/krgw4yas/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -20081,7 +20081,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time the data on any of the interactive charts (select-scatter, drag-node, and the dragable charts) is updated by user interaction. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/eps6vLeg/ '@@ btn link-underline')",
+                    "description": "Triggered every time the data on any of the interactive charts (select-scatter, drag-node, and the dragable charts) is updated by user interaction. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/eps6vLeg/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -20625,7 +20625,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a new node is added to the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5r9fa9j2/ '@@ btn link-underline')",
+                    "description": "Triggered when a new node is added to the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5r9fa9j2/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -21059,7 +21059,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a node on the drag-node chart is updated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/p3oo1nwn/ '@@ btn link-underline')",
+                    "description": "Triggered when a node on the drag-node chart is updated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/p3oo1nwn/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -21493,7 +21493,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a node on the drag-node chart is deleted. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/mc2znk3e/ '@@ btn link-underline')",
+                    "description": "Triggered when a node on the drag-node chart is deleted. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/mc2znk3e/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -21927,7 +21927,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a new connector is added to the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/h7gg97o7/ '@@ btn link-underline')",
+                    "description": "Triggered when a new connector is added to the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/h7gg97o7/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -22207,7 +22207,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a connector on the drag-node chart is updated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9wr7damL/ '@@ btn link-underline')",
+                    "description": "Triggered when a connector on the drag-node chart is updated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9wr7damL/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -22487,7 +22487,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a connector is deleted from the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d3Lp107h/ '@@ btn link-underline')",
+                    "description": "Triggered when a connector is deleted from the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d3Lp107h/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -22767,7 +22767,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a new label is added on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6etnc37x/ '@@ btn link-underline')",
+                    "description": "Triggered when a new label is added on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6etnc37x/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -23025,7 +23025,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a label is deleted from the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/g812u6hn/ '@@ btn link-underline')",
+                    "description": "Triggered when a label is deleted from the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/g812u6hn/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -23283,7 +23283,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the selection box, drawn on a select-scatter chart, is removed. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/o1scL9qb/ '@@ btn link-underline')",
+                    "description": "Triggered when the selection box, drawn on a select-scatter chart, is removed. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/o1scL9qb/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -24365,7 +24365,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a label on the drag-node chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7pgqetzn/ '@@ btn link-underline')",
+                    "description": "Triggered when a label on the drag-node chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7pgqetzn/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -24711,7 +24711,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over a label on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/cdz60nu8/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over a label on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/cdz60nu8/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -25057,7 +25057,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out of a label on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/naw2Lnoj/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out of a label on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/naw2Lnoj/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -25403,7 +25403,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when you start dragging a label on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/53yarzsb/ '@@ btn link-underline')",
+                    "description": "Triggered when you start dragging a label on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/53yarzsb/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -25749,7 +25749,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when you finish dragging a label on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Ln8v19mo/ '@@ btn link-underline')",
+                    "description": "Triggered when you finish dragging a label on the drag-node chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Ln8v19mo/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -26095,7 +26095,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when you start dragging the data plots of the drag-able charts (the drag-node, drag-column, drag-line, and drag-area charts). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/04rappj1/ '@@ btn link-underline')",
+                    "description": "Triggered when you start dragging the data plots of the drag-able charts (the drag-node, drag-column, drag-line, and drag-area charts). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/04rappj1/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -26309,7 +26309,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when you complete dragging the data plots of the drag-able charts (the drag-node, drag-column, drag-line, and drag-area charts). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gdj9v2sn/ '@@ btn link-underline')",
+                    "description": "Triggered when you complete dragging the data plots of the drag-able charts (the drag-node, drag-column, drag-line, and drag-area charts). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gdj9v2sn/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -26545,7 +26545,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a process in the Gantt chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/fby7cuvv/ '@@ btn link-underline')",
+                    "description": "Triggered when a process in the Gantt chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/fby7cuvv/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -26891,7 +26891,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over a process on the Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/yfpu0eh5/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over a process on the Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/yfpu0eh5/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -27237,7 +27237,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out from over a process on the Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ksubh08b/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out from over a process on the Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ksubh08b/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -27583,7 +27583,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a category on the Gantt chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/znswf57w/ '@@ btn link-underline')",
+                    "description": "Triggered when a category on the Gantt chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/znswf57w/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -27885,7 +27885,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over a category on the Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/cznz7pry/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over a category on the Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/cznz7pry/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -28187,7 +28187,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out of a category on the Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wnLL4pvh/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out of a category on the Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wnLL4pvh/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -28489,7 +28489,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a milestone on a Gantt chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bwg9ddrv/ '@@ btn link-underline')",
+                    "description": "Triggered when a milestone on a Gantt chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bwg9ddrv/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -28835,7 +28835,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over a milestone on a Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/z5vdwa3p/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over a milestone on a Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/z5vdwa3p/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -29181,7 +29181,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out from over a milestone on a Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0yq2zrm0/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out from over a milestone on a Gantt chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0yq2zrm0/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -29527,7 +29527,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the chart type is explicitly changed by calling the [chartType()](/api/fusioncharts/fusioncharts-methods#chartType) method on a chart. \n\n This event is __not__ fired when a chart is rendered using the static [render()](/api/fusioncharts/fusioncharts-methods#static-render) method or the chart type is set for the first time (the type is not provided to the constructor on the first render) using the [chartType()](/api/fusioncharts/fusioncharts-methods#chartType) method. If the chart type provided as the parameter to the [chartType()](/api/fusioncharts/fusioncharts-methods#chartType) method is the same as the current chart type, again, this event will not be triggered. Similarly, the event is not triggered if the new chart type is invalid. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/mpowxd3v/ '@@ btn link-underline')",
+                    "description": "Triggered when the chart type is explicitly changed by calling the [chartType()](/api/fusioncharts/fusioncharts-methods#chartType) method on a chart. \n\n This event is __not__ fired when a chart is rendered using the static [render()](/api/fusioncharts/fusioncharts-methods#static-render) method or the chart type is set for the first time (the type is not provided to the constructor on the first render) using the [chartType()](/api/fusioncharts/fusioncharts-methods#chartType) method. If the chart type provided as the parameter to the [chartType()](/api/fusioncharts/fusioncharts-methods#chartType) method is the same as the current chart type, again, this event will not be triggered. Similarly, the event is not triggered if the new chart type is invalid. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/mpowxd3v/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -29813,7 +29813,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the overlay back button on a linked chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/14omfm07/ '@@ btn link-underline')",
+                    "description": "Triggered when the overlay back button on a linked chart is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/14omfm07/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -30071,7 +30071,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the chart has finished downloading itself in the client environment. It indicates that the all the resources required to render the chart are ready and that the chart can be drawn. This event can be used to hide any loader components that you might have on your page. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bpq1Ltbs/ '@@ btn link-underline')",
+                    "description": "Triggered when the chart has finished downloading itself in the client environment. It indicates that the all the resources required to render the chart are ready and that the chart can be drawn. This event can be used to hide any loader components that you might have on your page. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bpq1Ltbs/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -30241,7 +30241,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the chart completes drawing, after the [render()](/api/fusioncharts/fusioncharts-methods#render) or the [chartType()](/api/fusioncharts/fusioncharts-methods#charttype-6) method is called. The chart renders if the data provided is correct; otherwise, an error message from the list given [here](/api/fusioncharts) is rendered. A call to this event is made only once, even if new data may be supplied later. It can be used to invoke any further JavaScript methods on the chart or change chart data.  \n\n > If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in this event handler, using `setTimeout`.\n\n \n\n > The default animation duration is __1000ms__ (one second). The animation duration can be customized using the `animationDuration` chart attribute. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2gLL1hp5/ '@@ btn link-underline')",
+                    "description": "Triggered when the chart completes drawing, after the [render()](/api/fusioncharts/fusioncharts-methods#render) or the [chartType()](/api/fusioncharts/fusioncharts-methods#charttype-6) method is called. The chart renders if the data provided is correct; otherwise, an error message from the list given [here](/api/fusioncharts) is rendered. A call to this event is made only once, even if new data may be supplied later. It can be used to invoke any further JavaScript methods on the chart or change chart data.  \n\n > If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in this event handler, using `setTimeout`.\n\n \n\n > The default animation duration is __1000ms__ (one second). The animation duration can be customized using the `animationDuration` chart attribute. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2gLL1hp5/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -30637,7 +30637,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the chart draws for the first time or is redrawn because of a data update, resize, change of chart message, or change of chart type. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/dsowjwL9/ '@@ btn link-underline')",
+                    "description": "Triggered when the chart draws for the first time or is redrawn because of a data update, resize, change of chart message, or change of chart type. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/dsowjwL9/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -31229,7 +31229,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when there is no chart data  or data with parsing or fetching (from the server) errors is submitted to the chart. \n\n>Maps, real-time charts, and some gauges do not require initial data to begin with. In that case, this event is __not__ triggered. \n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/35zrxxf5/ '@@ btn link-underline')",
+                    "description": "Triggered when there is no chart data  or data with parsing or fetching (from the server) errors is submitted to the chart. \n\n>Maps, real-time charts, and some gauges do not require initial data to begin with. In that case, this event is __not__ triggered. \n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/35zrxxf5/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -31377,7 +31377,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered if the chart data (passed to the chart object either by URL or as a string) is not in a usable format. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/q1qwr0x7/ '@@ btn link-underline')",
+                    "description": "Triggered if the chart data (passed to the chart object either by URL or as a string) is not in a usable format. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/q1qwr0x7/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -31493,7 +31493,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the data for a chart (passed by url or as a string) is loaded to the chart object. It ensures that the data passed is valid and the chart can be rendered. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gfgqeemb/ '@@ btn link-underline')",
+                    "description": "Triggered when the data for a chart (passed by url or as a string) is loaded to the chart object. It ensures that the data passed is valid and the chart can be rendered. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gfgqeemb/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -31609,7 +31609,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when no data is passed to the chart. It can be used to show an error message or take a corrective measure. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ys1wg87g/ '@@ btn link-underline')",
+                    "description": "Triggered when no data is passed to the chart. It can be used to show an error message or take a corrective measure. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ys1wg87g/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -31725,7 +31725,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the user starts dragging the legend pointer of a gradient legend, in the heatmap chart and maps. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7jouh8ds/ '@@ btn link-underline')",
+                    "description": "Triggered when the user starts dragging the legend pointer of a gradient legend, in the heatmap chart and maps. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7jouh8ds/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -31943,7 +31943,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the user completes dragging the legend pointer of a gradient legend, in the heatmap chart and maps. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bzp2f5z8/ '@@ btn link-underline')",
+                    "description": "Triggered when the user completes dragging the legend pointer of a gradient legend, in the heatmap chart and maps. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bzp2f5z8/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -32161,7 +32161,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the range of a gradient legend, in the heat map chart and maps, is updated by dragging the legend pointers. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/pboewkxL/ '@@ btn link-underline')",
+                    "description": "Triggered when the range of a gradient legend, in the heat map chart and maps, is updated by dragging the legend pointers. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/pboewkxL/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -32749,7 +32749,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled over a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/w5tcppk8/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled over a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/w5tcppk8/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -33425,7 +33425,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the mouse pointer is rolled out from over a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zkxtnbcr/ '@@ btn link-underline')",
+                    "description": "Triggered when the mouse pointer is rolled out from over a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zkxtnbcr/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -34101,7 +34101,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a data plot is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7kumz5ve/ '@@ btn link-underline')",
+                    "description": "Triggered when a data plot is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7kumz5ve/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -34777,7 +34777,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when any chart element made clickable, by configuring a link, is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zqmnaex9/ '@@ btn link-underline')",
+                    "description": "Triggered when any chart element made clickable, by configuring a link, is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zqmnaex9/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -34969,7 +34969,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered before a chart is to be rendered. Calling the `eventObject.preventDefault()` method on this event will cancel the rendering process. The rendering process is triggered when the [render()](/api/fusioncharts/fusioncharts-methods#render) method is called on the chart instance. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qyds0h2h/ '@@ btn link-underline')",
+                    "description": "Triggered before a chart is to be rendered. Calling the `eventObject.preventDefault()` method on this event will cancel the rendering process. The rendering process is triggered when the [render()](/api/fusioncharts/fusioncharts-methods#render) method is called on the chart instance. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qyds0h2h/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -35189,7 +35189,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the default behavior of the [beforeRender](/api/fusioncharts/fusioncharts-events#event-beforeRender) event is cancelled using the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/tswyshjr/ '@@ btn link-underline')",
+                    "description": "Triggered when the default behavior of the [beforeRender](/api/fusioncharts/fusioncharts-events#event-beforeRender) event is cancelled using the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/tswyshjr/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -35409,7 +35409,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered before a chart is resized. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/xpxeyony/ '@@ btn link-underline')",
+                    "description": "Triggered before a chart is resized. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/xpxeyony/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -35631,7 +35631,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a chart is resized either by calling the [resizeTo()](/api/fusioncharts/fusioncharts-methods#resizeTo) method or by changing dimensions of the chart container element, when the dimensions are in the percentage format. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/rwxz30gq/ '@@ btn link-underline')",
+                    "description": "Triggered when a chart is resized either by calling the [resizeTo()](/api/fusioncharts/fusioncharts-methods#resizeTo) method or by changing dimensions of the chart container element, when the dimensions are in the percentage format. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/rwxz30gq/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -35952,7 +35952,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the `eventObj.preventDefault()` method is called from within the [beforeResize](/api/fusioncharts/fusioncharts-events#event-beforeResize) event. This cancels the instructions received from the [resizeTo()](/api/fusioncharts/fusioncharts-methods#resizeTo) method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2f1upv5o/ '@@ btn link-underline')",
+                    "description": "Triggered when the `eventObj.preventDefault()` method is called from within the [beforeResize](/api/fusioncharts/fusioncharts-events#event-beforeResize) event. This cancels the instructions received from the [resizeTo()](/api/fusioncharts/fusioncharts-methods#resizeTo) method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2f1upv5o/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -36174,7 +36174,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered before a chart is deleted and cleaned from memory.\n\nUsually, this event is triggered by the [dispose()](/api/fusioncharts/fusioncharts-methods#dispose) method. It is internally raised when an already rendered chart is re-rendered or a child chart in LinkedCharts is closed. \n\n>Unused charts should be disposed to avoid memory-leaks within an application or dashboard.\n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0om7t5ud/ '@@ btn link-underline')",
+                    "description": "Triggered before a chart is deleted and cleaned from memory.\n\nUsually, this event is triggered by the [dispose()](/api/fusioncharts/fusioncharts-methods#dispose) method. It is internally raised when an already rendered chart is re-rendered or a child chart in LinkedCharts is closed. \n\n>Unused charts should be disposed to avoid memory-leaks within an application or dashboard.\n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0om7t5ud/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -36290,7 +36290,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when a chart is deleted and cleaned from memory.\n\nUsually, this event is triggered by the [dispose()](/api/fusioncharts/fusioncharts-methods#dispose) method. It is internally raised when an already rendered chart is re-rendered or a child chart in LinkedCharts is closed. \n\n>Unused charts should be disposed to avoid memory-leaks within an application or dashboard.\n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/8edo4u0p/ '@@ btn link-underline')",
+                    "description": "Triggered when a chart is deleted and cleaned from memory.\n\nUsually, this event is triggered by the [dispose()](/api/fusioncharts/fusioncharts-methods#dispose) method. It is internally raised when an already rendered chart is re-rendered or a child chart in LinkedCharts is closed. \n\n>Unused charts should be disposed to avoid memory-leaks within an application or dashboard.\n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/8edo4u0p/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -36406,7 +36406,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when the default behaviour of the [beforeDispose](/api/fusioncharts/fusioncharts-events#event-beforeDispose) event is cancelled using the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/fht5Lu3q/ '@@ btn link-underline')",
+                    "description": "Triggered when the default behaviour of the [beforeDispose](/api/fusioncharts/fusioncharts-events#event-beforeDispose) event is cancelled using the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/fht5Lu3q/ )",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -36522,7 +36522,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered just before a linked chart is rendered (before the [rendered](/api/fusioncharts/fusioncharts-events#event-rendered) event is triggered for the linked chart), after the parent link is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/63vsxc3q/ '@@ btn link-underline')",
+                    "description": "Triggered just before a linked chart is rendered (before the [rendered](/api/fusioncharts/fusioncharts-events#event-rendered) event is triggered for the linked chart), after the parent link is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/63vsxc3q/ )",
                     "params": {
                         "eventObj": {
                             "name": "eventObj",
@@ -36713,7 +36713,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered just before the treemap chart is rendered when it is drilled down to a child node \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/4dxrtyrw/ '@@ btn link-underline')",
+                    "description": "Triggered just before the treemap chart is rendered when it is drilled down to a child node \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/4dxrtyrw/ )",
                     "params": {
                         "eventObj": {
                             "name": "eventObj",
@@ -36882,7 +36882,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered just after the treemap chart is rendered when it is drilled down to a child node \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/kv5s230x/ '@@ btn link-underline')",
+                    "description": "Triggered just after the treemap chart is rendered when it is drilled down to a child node \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/kv5s230x/ )",
                     "params": {
                         "eventObj": {
                             "name": "eventObj",
@@ -37117,7 +37117,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered just before the treemap chart is rendered when it is drilled up to the immediate parent or the root node \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d5gLtb57/ '@@ btn link-underline')",
+                    "description": "Triggered just before the treemap chart is rendered when it is drilled up to the immediate parent or the root node \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d5gLtb57/ )",
                     "params": {
                         "eventObj": {
                             "name": "eventObj",
@@ -37286,7 +37286,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered just after the treemap chart is rendered when it is drilled up to the immediate parent or the root node \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/e7Lrq9b2/ '@@ btn link-underline')",
+                    "description": "Triggered just after the treemap chart is rendered when it is drilled up to the immediate parent or the root node \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/e7Lrq9b2/ )",
                     "params": {
                         "eventObj": {
                             "name": "eventObj",
@@ -38339,7 +38339,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "Returns the `DOMElement` created inside the chart container by FusionCharts. This is equivalent to accessing the `DOMElement` using the [ref](/api/fusioncharts/fusioncharts-properties#ref) property. \n\n >The returned `DOMElement` here is the `<span>` element created by FusionCharts to render the chart, and not the the container element specified as the value of the `renderAt` attribute. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/mtjbjm1x/ '@@ btn link-underline')",
+                    "description": "Returns the `DOMElement` created inside the chart container by FusionCharts. This is equivalent to accessing the `DOMElement` using the [ref](/api/fusioncharts/fusioncharts-properties#ref) property. \n\n >The returned `DOMElement` here is the `<span>` element created by FusionCharts to render the chart, and not the the container element specified as the value of the `renderAt` attribute. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/mtjbjm1x/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -38368,7 +38368,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Creates a copy of a chart instance, creating a new chart with identical construction properties of the chart being cloned. The cloned chart, assigned an auto-generated ID, is rendered in a container DOM element that is explicitly provided. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2rmuz6j8/ '@@ btn link-underline')",
+                    "description": "Creates a copy of a chart instance, creating a new chart with identical construction properties of the chart being cloned. The cloned chart, assigned an auto-generated ID, is rendered in a container DOM element that is explicitly provided. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2rmuz6j8/ )",
                     "examples": {},
                     "params": {
                         "overrides": {
@@ -38402,7 +38402,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Gets or sets the chart type of a FusionCharts instance. To __get__ the current chart type, call this function without any parameters. To __set__ a new chart type, pass the chart type as the first parameter to this function. When a new chart type is set, the chart is automatically re-rendered and the [chartTypeChanged](/api/fusioncharts/fusioncharts-events#event-chartTypeChanged) event is triggered. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/71tywkuf/ '@@ btn link-underline')",
+                    "description": "Gets or sets the chart type of a FusionCharts instance. To __get__ the current chart type, call this function without any parameters. To __set__ a new chart type, pass the chart type as the first parameter to this function. When a new chart type is set, the chart is automatically re-rendered and the [chartTypeChanged](/api/fusioncharts/fusioncharts-events#event-chartTypeChanged) event is triggered. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/71tywkuf/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -38466,7 +38466,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "Listens to events across all FusionCharts instances on a page and executes custom functions when an event is triggered. \n\n >To listen to an event triggered by a specific chart, the non-static [addEventListener](/api/fusioncharts/fusioncharts-methods#addEventListener) method is used. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/j6053o2z/ '@@ btn link-underline')",
+                    "description": "Listens to events across all FusionCharts instances on a page and executes custom functions when an event is triggered. \n\n >To listen to an event triggered by a specific chart, the non-static [addEventListener](/api/fusioncharts/fusioncharts-methods#addEventListener) method is used. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/j6053o2z/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -38507,7 +38507,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "Removes the event listener(s) bound to an event. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/tgkqLkg1/ '@@ btn link-underline')",
+                    "description": "Removes the event listener(s) bound to an event. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/tgkqLkg1/ )",
                     "examples": {},
                     "params": {
                         "type": {
@@ -38542,7 +38542,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "Allows to register callback functions that are executed when the FusionCharts library is ready to be used. In general, the FusionCharts framework is ready after the `DOMContentLoaded` browser event has been triggered and all the initial dependent files/modules are available. \n\nMultiple callbacks can be attached by calling this function any number of times. Callback functions are executed even when attached after the FusionCharts framework is ready.Therefore, it is recommended that all entry-point and initialization codes are written within the `ready()` function. This also helps to neatly organize all the code in a script file or the page `<head>` tag as well as contextually separate code from HTML blocks.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5p35uucq/ '@@ btn link-underline')",
+                    "description": "Allows to register callback functions that are executed when the FusionCharts library is ready to be used. In general, the FusionCharts framework is ready after the `DOMContentLoaded` browser event has been triggered and all the initial dependent files/modules are available. \n\nMultiple callbacks can be attached by calling this function any number of times. Callback functions are executed even when attached after the FusionCharts framework is ready.Therefore, it is recommended that all entry-point and initialization codes are written within the `ready()` function. This also helps to neatly organize all the code in a script file or the page `<head>` tag as well as contextually separate code from HTML blocks.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5p35uucq/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -38593,7 +38593,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Used to listen to events triggered by a specific chart. \n\n >To listen to events triggered by all charts on a page, the static [addEventListener()](/api/fusioncharts/fusioncharts-methods#static-addEventListener) method is used. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/cnmcj73q/ '@@ btn link-underline')",
+                    "description": "Used to listen to events triggered by a specific chart. \n\n >To listen to events triggered by all charts on a page, the static [addEventListener()](/api/fusioncharts/fusioncharts-methods#static-addEventListener) method is used. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/cnmcj73q/ )",
                     "examples": {},
                     "params": {
                         "type": {
@@ -38628,7 +38628,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Removes the event listener(s) bound to an event using the [addEventListener()](/api/fusioncharts/fusioncharts-methods#addEventListener) method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6bq7b7y5/ '@@ btn link-underline')",
+                    "description": "Removes the event listener(s) bound to an event using the [addEventListener()](/api/fusioncharts/fusioncharts-methods#addEventListener) method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6bq7b7y5/ )",
                     "examples": {},
                     "params": {
                         "type": {
@@ -38663,7 +38663,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Configured properties for LinkedCharts.This function accepts all properties that the FusionCharts constructor accepts. Any property passed to this function is applied to the LinkedCharts. If no properties are provided, LinkedCharts will inherit properties from the parent chart. This function lets you configure individual or multiple drill-down levels in linked charts. \n\n__The Overlay Button:__\n\nOther than the usual construction parameters of FusionCharts, this function also accepts configuration for the overlay button of LinkedCharts. When a LinkedChart is rendered on clicking a data point, a button is rendered on the top-right corner of the chart. When this button is clicked, it closes (disposes) the linked chart.\n\nThe cosmetics of this button can be configured by passing an `overlayButton` object as a parameter to this function. This object can have the following properties: \n\n \n\n| Button Parameter | Type | Description |\n|-------|--------|-------|\n| `show` | boolean | Whether to show the button or not |\n| `message` | string | Button label. Default: __Close__ or __Back__  |\n| `bgColor` | string | Background color for the button |\n| `borderColor` | string | Border color for the button |\n| `font` | string | Font family of the button (comma-separated list of fonts) |\n| `fontColor` | string | Color of the button label text |\n| `fontSize` | string | Size of the button label text |\n| `bold` | boolean | Specify whether the button label text is bold formatted |\n| `padding` | number | Padding between the label and the edges of the button |\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zdewk96j/ '@@ btn link-underline')",
+                    "description": "Configured properties for LinkedCharts.This function accepts all properties that the FusionCharts constructor accepts. Any property passed to this function is applied to the LinkedCharts. If no properties are provided, LinkedCharts will inherit properties from the parent chart. This function lets you configure individual or multiple drill-down levels in linked charts. \n\n__The Overlay Button:__\n\nOther than the usual construction parameters of FusionCharts, this function also accepts configuration for the overlay button of LinkedCharts. When a LinkedChart is rendered on clicking a data point, a button is rendered on the top-right corner of the chart. When this button is clicked, it closes (disposes) the linked chart.\n\nThe cosmetics of this button can be configured by passing an `overlayButton` object as a parameter to this function. This object can have the following properties: \n\n \n\n| Button Parameter | Type | Description |\n|-------|--------|-------|\n| `show` | boolean | Whether to show the button or not |\n| `message` | string | Button label. Default: __Close__ or __Back__  |\n| `bgColor` | string | Background color for the button |\n| `borderColor` | string | Border color for the button |\n| `font` | string | Font family of the button (comma-separated list of fonts) |\n| `fontColor` | string | Color of the button label text |\n| `fontSize` | string | Size of the button label text |\n| `bold` | boolean | Specify whether the button label text is bold formatted |\n| `padding` | number | Padding between the label and the edges of the button |\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zdewk96j/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -38709,7 +38709,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Updates a chart's attributes with a new attribute-value pair, thus updating the chart's data definition root (the `<chart>` node in the XML data or the `chart` object in the JSON data). \n\nThis function is useful when  a chart's configuration has to be updated after it has been rendered once. The function internally retrieves the last data set for the chart using the [getJSONData()](/api/fusioncharts/fusioncharts-methods#getJSONData) method ( or the [getXMLData()](/api/fusioncharts/fusioncharts-methods#getXMLData) method, for XML data). It then updates the `chart` object (or the `<chart>` element) using the new attribute-value pair and sets this data back to the chart. \n\n >Setting the value of an attribute to __null__ will cause the attribute to be removed from the definition and set to its default value. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/opmjvkaa/ '@@ btn link-underline')",
+                    "description": "Updates a chart's attributes with a new attribute-value pair, thus updating the chart's data definition root (the `<chart>` node in the XML data or the `chart` object in the JSON data). \n\nThis function is useful when  a chart's configuration has to be updated after it has been rendered once. The function internally retrieves the last data set for the chart using the [getJSONData()](/api/fusioncharts/fusioncharts-methods#getJSONData) method ( or the [getXMLData()](/api/fusioncharts/fusioncharts-methods#getXMLData) method, for XML data). It then updates the `chart` object (or the `<chart>` element) using the new attribute-value pair and sets this data back to the chart. \n\n >Setting the value of an attribute to __null__ will cause the attribute to be removed from the definition and set to its default value. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/opmjvkaa/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -38750,7 +38750,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Fetches value of chart attributes explicitly applied to the root `chart` object (or the `<chart>` node element). \n\n >To fetch a list of __all__ attributes, do not pass any parameters to this function. \n\n If any attribute requested is not set for the chart or is internally computed but not explicitly set, the value is returned as __undefined__. For example, for multi-series column 2D charts, the default value of the  `showLegends` attribute is __1__. However, if the attribute is not included in the chart definition and its value is requested, the function returns __undefined__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/1z2hbnmp/ '@@ btn link-underline')",
+                    "description": "Fetches value of chart attributes explicitly applied to the root `chart` object (or the `<chart>` node element). \n\n >To fetch a list of __all__ attributes, do not pass any parameters to this function. \n\n If any attribute requested is not set for the chart or is internally computed but not explicitly set, the value is returned as __undefined__. For example, for multi-series column 2D charts, the default value of the  `showLegends` attribute is __1__. However, if the attribute is not included in the chart definition and its value is requested, the function returns __undefined__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/1z2hbnmp/ )",
                     "examples": {},
                     "params": {
                         "attribute": {
@@ -38774,7 +38774,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Fetches chart data in the XML format. This function needs to be called on an existing chart; if called on a chart that has no data set for it, it returns an empty `<chart />` element. \n\n >The `getXMLData()` function is shorthand for `chart.getChartData('xml')`.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/4jwu53rL/ '@@ btn link-underline')",
+                    "description": "Fetches chart data in the XML format. This function needs to be called on an existing chart; if called on a chart that has no data set for it, it returns an empty `<chart />` element. \n\n >The `getXMLData()` function is shorthand for `chart.getChartData('xml')`.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/4jwu53rL/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -38785,7 +38785,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Sets chart data in the XML data format. When this function is called on a chart that has already rendered, it immediately updates the chart with the new data. The function can also be used to set data for a new chart. \n\n >A preferrable alternative to using this method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n \n\n >The `setXMLData()` function is shorthand for the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) method, where the data format is set to __xml__. So, calling `chart.setXMLData('<chart>...</chart')` is the same as calling `chart.setChartData('<chart>...</chart>', 'xml')`. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/opL8nfoc/ '@@ btn link-underline')",
+                    "description": "Sets chart data in the XML data format. When this function is called on a chart that has already rendered, it immediately updates the chart with the new data. The function can also be used to set data for a new chart. \n\n >A preferrable alternative to using this method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n \n\n >The `setXMLData()` function is shorthand for the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) method, where the data format is set to __xml__. So, calling `chart.setXMLData('<chart>...</chart')` is the same as calling `chart.setChartData('<chart>...</chart>', 'xml')`. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/opL8nfoc/ )",
                     "examples": {},
                     "params": {
                         "data": {
@@ -38872,7 +38872,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/r4jjewey/ '@@ btn link-underline')",
+                    "description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/r4jjewey/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -38913,7 +38913,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Fetches the data set for a chart, in one of the valid [dataFormats](/api/fusioncharts/fusioncharts-properties#dataFormats). The function needs to be called on an existing chart. If called on a chart that has no data, it returns an empty `chart` object for __json__ data, an empty `<chart />` node for __xml__ data, and an empty string for __csv__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/n7b46yy6/ '@@ btn link-underline')",
+                    "description": "Fetches the data set for a chart, in one of the valid [dataFormats](/api/fusioncharts/fusioncharts-properties#dataFormats). The function needs to be called on an existing chart. If called on a chart that has no data, it returns an empty `chart` object for __json__ data, an empty `<chart />` node for __xml__ data, and an empty string for __csv__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/n7b46yy6/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -38942,7 +38942,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Determines whether a chart will render properly with the data set on it. This includes data that is set using the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) or [setChartDataUrl()](/api/fusioncharts/fusioncharts-methods#setChartDataUrl) methods. \n\nIf the function is unable to determine whether data is ready or not, it returns __undefined__. \n\n \n\nThe function returns __true__ or __false__ only after the chart has rendered (the `renderComplete` event is triggered). The function returns false when:   no data is set     faulty data is set    data is incompatible with the chart type; for example, single-series data is set for a multi-series chart.\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/k6d1yac3/ '@@ btn link-underline')",
+                    "description": "Determines whether a chart will render properly with the data set on it. This includes data that is set using the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) or [setChartDataUrl()](/api/fusioncharts/fusioncharts-methods#setChartDataUrl) methods. \n\nIf the function is unable to determine whether data is ready or not, it returns __undefined__. \n\n \n\nThe function returns __true__ or __false__ only after the chart has rendered (the `renderComplete` event is triggered). The function returns false when:   no data is set     faulty data is set    data is incompatible with the chart type; for example, single-series data is set for a multi-series chart.\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/k6d1yac3/ )",
                     "examples": {},
                     "params": {
                         "available": {
@@ -38965,7 +38965,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "FusionCharts supports a number of formats in which data can be provided. Click [here](/api/fusioncharts/fusioncharts-properties#dataFormats) to view the list of formats supported. This function allows data to be transcoded from one supported format to another, without initializing a new instance of FusionCharts. It is very useful when you already have a set of data stored or prepared in one FusionCharts data format and want to convert it to another format. The fact that we do not need to instantiate a new FusionCharts instance speeds the conversion process. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ypu35q7t/ '@@ btn link-underline')",
+                    "description": "FusionCharts supports a number of formats in which data can be provided. Click [here](/api/fusioncharts/fusioncharts-properties#dataFormats) to view the list of formats supported. This function allows data to be transcoded from one supported format to another, without initializing a new instance of FusionCharts. It is very useful when you already have a set of data stored or prepared in one FusionCharts data format and want to convert it to another format. The fact that we do not need to instantiate a new FusionCharts instance speeds the conversion process. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ypu35q7t/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -39032,7 +39032,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Feeds real-time data to real-time charts and gauges. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zcjktzg0/ '@@ btn link-underline')",
+                    "description": "Feeds real-time data to real-time charts and gauges. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zcjktzg0/ )",
                     "examples": {},
                     "params": {
                         "stream": {
@@ -39066,7 +39066,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Returns a three-dimensional array that contains the data and the dataset IDs. Once the reference for the chart is obtained, this function can be invoked to retrieve data. \r\r [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3yt4pee2/ '@@ btn link-underline')",
+                    "description": "Returns a three-dimensional array that contains the data and the dataset IDs. Once the reference for the chart is obtained, this function can be invoked to retrieve data. \r\r [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3yt4pee2/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -39077,7 +39077,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Feeds real-time data to real-time charts and gauges. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5mrzsrc7/ '@@ btn link-underline')",
+                    "description": "Feeds real-time data to real-time charts and gauges. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5mrzsrc7/ )",
                     "examples": {},
                     "params": {
                         "value": {
@@ -39133,7 +39133,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Returns __true__ if real-time update is enabled for a chart. Returns __false__ is real-time update is stopped using the [stopUpdate()](/api/fusioncharts/fusioncharts-methods#stopUpdate) method. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gj5zotfj/ '@@ btn link-underline')",
+                    "description": "Returns __true__ if real-time update is enabled for a chart. Returns __false__ is real-time update is stopped using the [stopUpdate()](/api/fusioncharts/fusioncharts-methods#stopUpdate) method. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gj5zotfj/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -39144,7 +39144,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Clears the entire chart canvas when a real-time chart is being updated. \n\n >An alternative to calling this function is using the __Clear Chart__ option from the real-time context menu, on real-time charts. To activate the real-time context menu, set the `showRTMenuItem` (under the `chart` object) to __1__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d7gt6e9L/ '@@ btn link-underline')",
+                    "description": "Clears the entire chart canvas when a real-time chart is being updated. \n\n >An alternative to calling this function is using the __Clear Chart__ option from the real-time context menu, on real-time charts. To activate the real-time context menu, set the `showRTMenuItem` (under the `chart` object) to __1__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d7gt6e9L/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -39166,7 +39166,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Returns data for the given pointer (for real-time horizontal linear gauge) or dial (for real-time angular gauge) using its defined ID. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wby0e9kr/ '@@ btn link-underline')",
+                    "description": "Returns data for the given pointer (for real-time horizontal linear gauge) or dial (for real-time angular gauge) using its defined ID. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wby0e9kr/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -39177,7 +39177,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Sets data for a given pointer (for real-time horizontal linear gauge) or dial (for real-time angular gauge) using its defined ID. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3opr6pfd/ '@@ btn link-underline')",
+                    "description": "Sets data for a given pointer (for real-time horizontal linear gauge) or dial (for real-time angular gauge) using its defined ID. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3opr6pfd/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -39188,7 +39188,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Returns __true__ if the chart has rendered successfully, __false__ if it has not. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/eg9tbq2c/ '@@ btn link-underline')",
+                    "description": "Returns __true__ if the chart has rendered successfully, __false__ if it has not. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/eg9tbq2c/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -39199,7 +39199,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Sets the background color of the __container DOM element__, within which the chart is rendered, as transparent. \n\n >This is not to be confused with the chart's background.\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/og8ubfn2/ '@@ btn link-underline')",
+                    "description": "Sets the background color of the __container DOM element__, within which the chart is rendered, as transparent. \n\n >This is not to be confused with the chart's background.\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/og8ubfn2/ )",
                     "examples": {},
                     "params": {
                         "transparency": {
@@ -39222,7 +39222,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Checks whether a particular slice of the pie/doughnut chart is sliced-out or sliced-in. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/L52ad73x/ '@@ btn link-underline')",
+                    "description": "Checks whether a particular slice of the pie/doughnut chart is sliced-out or sliced-in. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/L52ad73x/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -39251,7 +39251,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Slices in/slices out a pie/doughnut slice. \n\n >You have to provide a  callback Function if `asyncRender` is set to `1` (default) where you get the svg-string as a parameter of the callback function. The boolean value determines if the plot item is sliced (true) or not (false). The callback implementation does not require the user to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9ed6s2rr/ '@@ btn link-underline')",
+                    "description": "Slices in/slices out a pie/doughnut slice. \n\n >You have to provide a  callback Function if `asyncRender` is set to `1` (default) where you get the svg-string as a parameter of the callback function. The boolean value determines if the plot item is sliced (true) or not (false). The callback implementation does not require the user to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9ed6s2rr/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -39302,7 +39302,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Configures the center label in a doughnut chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/kq3yvpef/ '@@ btn link-underline')",
+                    "description": "Configures the center label in a doughnut chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/kq3yvpef/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -39530,7 +39530,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Rotates the pie/doughnut chart to a specific angle or by a specific angle. The mode of operation is controlled by the optional second parameter. \n\n > Starting angle of a pie/doughnut chart is the angle at which the starting face of the first data slice is aligned to. Each subsequent pie/doughnut slice is then drawn in the counter clock-wise direction. \n\n >You have to provide a  callback Function if `asyncRender` is set to `1` (default) where you get the angle provided as input as a parameter of the callback function.The callback implementation does not require to listen to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3j1rskjp/ '@@ btn link-underline')",
+                    "description": "Rotates the pie/doughnut chart to a specific angle or by a specific angle. The mode of operation is controlled by the optional second parameter. \n\n > Starting angle of a pie/doughnut chart is the angle at which the starting face of the first data slice is aligned to. Each subsequent pie/doughnut slice is then drawn in the counter clock-wise direction. \n\n >You have to provide a  callback Function if `asyncRender` is set to `1` (default) where you get the angle provided as input as a parameter of the callback function.The callback implementation does not require to listen to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3j1rskjp/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -39581,7 +39581,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Zooms out the zoom line chart by one level. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/97u88ocp/ '@@ btn link-underline')",
+                    "description": "Zooms out the zoom line chart by one level. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/97u88ocp/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -39592,7 +39592,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Zooms the zoom line chart to view a specific range of data. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/594wd3uu/ '@@ btn link-underline')",
+                    "description": "Zooms the zoom line chart to view a specific range of data. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/594wd3uu/ )",
                     "examples": {},
                     "params": {
                         "startIndex": {
@@ -39626,7 +39626,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Resets all the zooming, panning, and pinning actions performed on a zoom line chart.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/neon8qgu/ '@@ btn link-underline')",
+                    "description": "Resets all the zooming, panning, and pinning actions performed on a zoom line chart.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/neon8qgu/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -39637,7 +39637,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Switches between the zoom mode and pin mode of a zoom line chart programmatically. \n\n >You can manually switch between the zoom mode and the pin mode by clicking a button in the top-right corner of the zoom line chart. Click [here](/chart-guide/standard-charts/zoom-line-charts) to read about how the zoom line chart works under each mode.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/194d0pc2/ '@@ btn link-underline')",
+                    "description": "Switches between the zoom mode and pin mode of a zoom line chart programmatically. \n\n >You can manually switch between the zoom mode and the pin mode by clicking a button in the top-right corner of the zoom line chart. Click [here](/chart-guide/standard-charts/zoom-line-charts) to read about how the zoom line chart works under each mode.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/194d0pc2/ )",
                     "examples": {},
                     "params": {
                         "yes": {
@@ -39660,7 +39660,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Returns the index of the first visible data point (in order of its definition in the source data) on the canvas of a zoom line chart. \n\n >You have to provide a  callback function if `asyncRender` is set to `1` (default) where you get the starting index as a parameter of the callback function.The callback implementation does not require to listen to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/b2ou6L7h/ '@@ btn link-underline')",
+                    "description": "Returns the index of the first visible data point (in order of its definition in the source data) on the canvas of a zoom line chart. \n\n >You have to provide a  callback function if `asyncRender` is set to `1` (default) where you get the starting index as a parameter of the callback function.The callback implementation does not require to listen to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/b2ou6L7h/ )",
                     "examples": {},
                     "params": {
                         "callBackFN(index)": {
@@ -39683,7 +39683,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Returns the index of the last visible data point (in order of its definition in the source data) on the canvas of a zoom line chart. \n\n >You have to provide a  callback function if `asyncRender` is set to `1` (default) where you get the starting index as a parameter of the callback function.The callback implementation does not require to listen to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sr8o7jtp/ '@@ btn link-underline')",
+                    "description": "Returns the index of the last visible data point (in order of its definition in the source data) on the canvas of a zoom line chart. \n\n >You have to provide a  callback function if `asyncRender` is set to `1` (default) where you get the starting index as a parameter of the callback function.The callback implementation does not require to listen to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sr8o7jtp/ )",
                     "examples": {},
                     "params": {
                         "callBackFN(index)": {
@@ -39706,7 +39706,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Scrolls the zoom-line chart to a particular position. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6dLsruag/ '@@ btn link-underline')",
+                    "description": "Scrolls the zoom-line chart to a particular position. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6dLsruag/ )",
                     "examples": {},
                     "params": {
                         "scrollPosition": {
@@ -39729,7 +39729,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Prints individual charts. It hides all elements on a page except the chart to print and then invokes the page printing function (`window.print()`). \n\n >This function works only for charts that have rendered completely, i.e. only after the [renderComplete](/api/fusioncharts/fusioncharts-events#event-renderComplete) event has been triggered. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/snq2znxq/ '@@ btn link-underline')",
+                    "description": "Prints individual charts. It hides all elements on a page except the chart to print and then invokes the page printing function (`window.print()`). \n\n >This function works only for charts that have rendered completely, i.e. only after the [renderComplete](/api/fusioncharts/fusioncharts-events#event-renderComplete) event has been triggered. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/snq2znxq/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -39769,7 +39769,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Exports a chart as an image or as a PDF document. \n\nTo enable exporting of a chart, the `exportEnabled` attribute (of the `chart` object) should be set to __1__. \n\n When exporting is done programmatically using this method, the export configuration is passed as parameters to this function. \n\n >The `exportChart` function remains undefined until the [loaded](/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. The exporting process is initiated only after the [renderComplete](/api/fusioncharts/fusioncharts-events#event-renderComplete) event is triggered.\n\n To read on how you can export charts using the export-related context menu, click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/73xgmacm/ '@@ btn link-underline')",
+                    "description": "Exports a chart as an image or as a PDF document. \n\nTo enable exporting of a chart, the `exportEnabled` attribute (of the `chart` object) should be set to __1__. \n\n When exporting is done programmatically using this method, the export configuration is passed as parameters to this function. \n\n >The `exportChart` function remains undefined until the [loaded](/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. The exporting process is initiated only after the [renderComplete](/api/fusioncharts/fusioncharts-events#event-renderComplete) event is triggered.\n\n To read on how you can export charts using the export-related context menu, click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/73xgmacm/ )",
                     "examples": {},
                     "params": {
                         "options": {
@@ -39859,7 +39859,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "Exports multiple charts in a single image. This method either takes __no arguments__ or takes __an object as an argument__. \r\r[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/vga0prev/ '@@ btn link-underline')",
+                    "description": "Exports multiple charts in a single image. This method either takes __no arguments__ or takes __an object as an argument__. \r\r[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/vga0prev/ )",
                     "examples": {},
                     "params": {
                         "imageWidth": {
@@ -40125,7 +40125,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Fetches the SVG of a chart, created by FusionCharts while rendering the chart, as a string. \n\n >This function can be called __only__ after the chart has rendered. \n\n >You have to provide a  callback Function if `asyncRender` is set to `1` (default) where you get the svg-string as a parameter of the callback function. The callback implementation does not require to listen to the renderComplete event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/pxum77g5/ '@@ btn link-underline')",
+                    "description": "Fetches the SVG of a chart, created by FusionCharts while rendering the chart, as a string. \n\n >This function can be called __only__ after the chart has rendered. \n\n >You have to provide a  callback Function if `asyncRender` is set to `1` (default) where you get the svg-string as a parameter of the callback function. The callback implementation does not require to listen to the renderComplete event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/pxum77g5/ )",
                     "examples": {},
                     "params": {
                         "callBackFN( svgString )": {
@@ -40182,7 +40182,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Shows a text message on a chart. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/28uysjtz/ '@@ btn link-underline')",
+                    "description": "Shows a text message on a chart. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/28uysjtz/ )",
                     "examples": {},
                     "params": {
                         "text": {
@@ -40227,7 +40227,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "Formats input numbers based on the formatting configuration passed. The function can be called globally on the [FusionCharts](/api/fusioncharts) object or on a specific instance of FusionCharts Suite XT. \n\n When called globally on the FusionCharts object, the function applies the configuration settings to all numbers on the chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/fhswaana/ '@@ btn link-underline')",
+                    "description": "Formats input numbers based on the formatting configuration passed. The function can be called globally on the [FusionCharts](/api/fusioncharts) object or on a specific instance of FusionCharts Suite XT. \n\n When called globally on the FusionCharts object, the function applies the configuration settings to all numbers on the chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/fhswaana/ )",
                     "examples": {
                         "0": {
                             "caption": "",
@@ -40283,7 +40283,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Fetches chart data in the JSON format. This function needs to be called on an existing chart; if called on a chart that has no data set for it, it returns an empty `chart` object. \n\n >This function is shorthand for `chart.getChartData('json')`.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bkhLqh6o/ '@@ btn link-underline')",
+                    "description": "Fetches chart data in the JSON format. This function needs to be called on an existing chart; if called on a chart that has no data set for it, it returns an empty `chart` object. \n\n >This function is shorthand for `chart.getChartData('json')`.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bkhLqh6o/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -40294,7 +40294,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Sets chart data in the JSON data format. When this function is called on a chart that has already rendered, it immediately updates the chart with the new data. The function can also be used to set data for a new chart. \n\n >A preferrable alternative to using this method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n \n\n >The `setJSONData()` function is shorthand for the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) method, where the data format is set to __json__. So, calling `chart.setXMLData({'chart': ...})` is the same as calling `chart.setChartData({'chart': ...}, 'json')`. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d2wtLzuq/ '@@ btn link-underline')",
+                    "description": "Sets chart data in the JSON data format. When this function is called on a chart that has already rendered, it immediately updates the chart with the new data. The function can also be used to set data for a new chart. \n\n >A preferrable alternative to using this method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n \n\n >The `setJSONData()` function is shorthand for the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) method, where the data format is set to __json__. So, calling `chart.setXMLData({'chart': ...})` is the same as calling `chart.setChartData({'chart': ...}, 'json')`. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d2wtLzuq/ )",
                     "examples": {},
                     "params": {
                         "data": {
@@ -40341,7 +40341,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Fetch chart data set in the CSV format. \n\nThe data returned is the closest possible comma-separated value representation that has been provided to the chart. The exported data does not contain any functional or cosmetic attribute that was set on the chart. However, the following chart attributes can be set to customise the CSV output: \n\n| Chart Attribute | Type | Description |\n|-------|--------|---------|\n| `exportDataSeparator` | string | Sets the CSV delimiter string. Default: __,__ (comma) |\n| `exportDataQualifier` | string | Sets the CSV qualifier string. Default: __{quot}__ |\n| `exportDataFormattedVal` | boolean | Sets whether the output will be a formatted string or a pure number |\n| `exportErrorColumns` | boolean | Forces error output on the error bar, error line, and error scatter charts |  \n\n For the `exportDataSeparator` and `exportDataQualifier` attributes, you can provide the quotation mark, the apostrophe, and the tab character using the __{quot}__, __{apos}__ and __{tab}__ short-codes, respectively.\n\nThis function needs to be called on an existing chart that has been loaded and has a valid data. If this function is called on a chart which has no data set on it, it returns an empty stringokay.\n\n >As of now, the CSV data generator uses heuristic methods to determine the nature of the output because the method does not internally have access to the chart-type being used. As such, when the chart type cannot determined from the data itself, this method falls back to a generic output format. \n\n >This function is the shorthand for  `chart.getChartData('csv')`. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/L486ydop/ '@@ btn link-underline')",
+                    "description": "Fetch chart data set in the CSV format. \n\nThe data returned is the closest possible comma-separated value representation that has been provided to the chart. The exported data does not contain any functional or cosmetic attribute that was set on the chart. However, the following chart attributes can be set to customise the CSV output: \n\n| Chart Attribute | Type | Description |\n|-------|--------|---------|\n| `exportDataSeparator` | string | Sets the CSV delimiter string. Default: __,__ (comma) |\n| `exportDataQualifier` | string | Sets the CSV qualifier string. Default: __{quot}__ |\n| `exportDataFormattedVal` | boolean | Sets whether the output will be a formatted string or a pure number |\n| `exportErrorColumns` | boolean | Forces error output on the error bar, error line, and error scatter charts |  \n\n For the `exportDataSeparator` and `exportDataQualifier` attributes, you can provide the quotation mark, the apostrophe, and the tab character using the __{quot}__, __{apos}__ and __{tab}__ short-codes, respectively.\n\nThis function needs to be called on an existing chart that has been loaded and has a valid data. If this function is called on a chart which has no data set on it, it returns an empty stringokay.\n\n >As of now, the CSV data generator uses heuristic methods to determine the nature of the output because the method does not internally have access to the chart-type being used. As such, when the chart type cannot determined from the data itself, this method falls back to a generic output format. \n\n >This function is the shorthand for  `chart.getChartData('csv')`. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/L486ydop/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -40352,7 +40352,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Fetch chart data as comma-separated values. The delimiter can be changed by passing relevant chart attributes. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/1Lz082uv/ '@@ btn link-underline')",
+                    "description": "Fetch chart data as comma-separated values. The delimiter can be changed by passing relevant chart attributes. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/1Lz082uv/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -40363,7 +40363,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Renders a chart inside a container element on a page. If the chart is already rendered, it can be re-rendered inside the same container DOM element or a different element. \n\n Creating a chart using `new FusionCharts()` only creates a JavaScript instance for the chart; this function is called to render the chart. Usually, the `renderAt` construction parameter specifies the element on the page, inside which the chart will be rendered. If `renderAt` is not provided, then the container element is specified as the parameter to this function.\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7uccgq4m/ '@@ btn link-underline')",
+                    "description": "Renders a chart inside a container element on a page. If the chart is already rendered, it can be re-rendered inside the same container DOM element or a different element. \n\n Creating a chart using `new FusionCharts()` only creates a JavaScript instance for the chart; this function is called to render the chart. Usually, the `renderAt` construction parameter specifies the element on the page, inside which the chart will be rendered. If `renderAt` is not provided, then the container element is specified as the parameter to this function.\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7uccgq4m/ )",
                     "examples": {},
                     "params": {
                         "containerElement": {
@@ -40409,7 +40409,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Resizes the chart to the specified width and height. The values for the width and height are passed, in pixels or percentage, as parameters to this function. If the function is called without any parameters, it __returns__ the current value of the chart width and height. \n\n This function is useful in controlling the chart dimensions based on changes in the dimensions of a resizable dialog box. It is also useful in resizing charts for responsive layouts, based on device orientation change. \n\n \n\n >When the chart dimensions are set in percentage, the chart partially redraws itself when the chart container is resized. The chart uses a very low-profile polling, at an interval of __300 ms__ to check whether the container has effectively resized. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Ljzfo7sL/ '@@ btn link-underline')",
+                    "description": "Resizes the chart to the specified width and height. The values for the width and height are passed, in pixels or percentage, as parameters to this function. If the function is called without any parameters, it __returns__ the current value of the chart width and height. \n\n This function is useful in controlling the chart dimensions based on changes in the dimensions of a resizable dialog box. It is also useful in resizing charts for responsive layouts, based on device orientation change. \n\n \n\n >When the chart dimensions are set in percentage, the chart partially redraws itself when the chart container is resized. The chart uses a very low-profile polling, at an interval of __300 ms__ to check whether the container has effectively resized. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Ljzfo7sL/ )",
                     "examples": {},
                     "params": {
                         "width": {
@@ -40445,7 +40445,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Disposes a chart completely, when called on an instance of FusionCharts. This clears the entire chart object and removes it from the DOM tree structure. When the chart is successfully disposed, `chartInstance.disposed` is set to __true__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/xb8ymqoa/ '@@ btn link-underline')",
+                    "description": "Disposes a chart completely, when called on an instance of FusionCharts. This clears the entire chart object and removes it from the DOM tree structure. When the chart is successfully disposed, `chartInstance.disposed` is set to __true__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/xb8ymqoa/ )",
                     "examples": {},
                     "params": {}
                 },
@@ -40456,7 +40456,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Configures status messages that are displayed while rendering a chart. For example, while a chart’s data is being fetched from a remote URL, the chart will display the message __Retrieving data. Please wait.__ \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qtwd3o2q/ '@@ btn link-underline')",
+                    "description": "Configures status messages that are displayed while rendering a chart. For example, while a chart’s data is being fetched from a remote URL, the chart will display the message __Retrieving data. Please wait.__ \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qtwd3o2q/ )",
                     "examples": {},
                     "params": {
                         "option": {
@@ -40490,7 +40490,7 @@
                     "access": "",
                     "scope": "static",
                     "virtual": false,
-                    "description": "Uses a one-line argument parameter to render FusionCharts directly into the container specified in the arguments.\n\nCalling this function directly is same as creating a new instance of `FusionCharts` and calling `.render()` on it. For example, `var chart = FusionCharts.render({...});` is same as `var chart = new FusionCharts({...}); ... chart.render();`. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/36j8o492/ '@@ btn link-underline')",
+                    "description": "Uses a one-line argument parameter to render FusionCharts directly into the container specified in the arguments.\n\nCalling this function directly is same as creating a new instance of `FusionCharts` and calling `.render()` on it. For example, `var chart = FusionCharts.render({...});` is same as `var chart = new FusionCharts({...}); ... chart.render();`. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/36j8o492/ )",
                     "examples": {
                         "0": {
                             "caption": "",
