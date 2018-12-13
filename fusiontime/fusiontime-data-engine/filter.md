@@ -57,7 +57,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Greater
 
-**Greater** is an operation which can be used when you want to filter the data values greater than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `greater` operater to filter the values greater than **100**.
+**Greater** is an operation which can be used when you want to filter the data values greater than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `greater` operator to filter the values greater than **100**.
 
 **Greater** takes two arguments which are:
 
