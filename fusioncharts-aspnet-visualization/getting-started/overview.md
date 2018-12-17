@@ -10,11 +10,11 @@ FusionCharts.NET abstracts you from writing messy JavaScript and JSON code withi
 
 * **Data Engine** - The data engine of FusionCharts.NET allows you to store data and perform operations on the data to transform and optimize the data before sending it to the chart renderer. In FusionCharts.NET, the chart renderer accepts data only in the form of `DataModel`.  The data engine consists of the following:
 
-* The data source class which receives the raw data and creates an object to provide the data to the `DataModel`. 
+	* The data source class which receives the raw data and creates an object to provide the data to the `DataModel`. 
 
-* The `DataModel` receives and stores the converted data. This is the parent `DataModel` which you can provide to the chart renderer to visualize the data. 
+	* The `DataModel` receives and stores the converted data. This is the parent `DataModel` which you can provide to the chart renderer to visualize the data. 
 
-* A `DataModel` also contains data operations which can be applied to any `DataModel` to create multiple optimized `DataModels`. You can provide any of these `DataModels` to the chart renderer. 
+	* A `DataModel` also contains data operations which can be applied to any `DataModel` to create multiple optimized `DataModels`. You can provide any of these `DataModels` to the chart renderer. 
 
 * **Visualization** - The visualization module of FusionCharts.NET allows you to render the chart with functional and cosmetic configurations of the chart after receiving the data from the data engine. 
 
