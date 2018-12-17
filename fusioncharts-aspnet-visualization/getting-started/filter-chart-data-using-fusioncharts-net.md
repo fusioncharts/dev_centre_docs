@@ -23,9 +23,9 @@ The predefined filters are:
 * Contains
 * Ends with
 
-In this article, we will create a chart by applying couple of filter operations to a tabular data. To start with let's will create a simple chart showcasing Global Online sales of a SuperStore. Let's create the chart using the tabular table shown below:
+In this article, we will create a chart by applying couple of filter operations to a tabular data. To start with let's will create a simple chart showcasing Global online sales of a SuperStore. Let's create the chart using the tabular table shown below:
 
-> In the chart, **Country** Column will be represented using x-axis whereas **Sales** column will be represented in the y-axis.
+> In the chart, **Order Date** Column will be represented using x-axis whereas **Sales** column will be represented in the y-axis.
 
 Order Date | Country | Sales
 ---|---|---
@@ -92,7 +92,7 @@ In the above code:
 
 The output after running the above query looks like:
 
-<Live Chart>
+{% embed_chart fusioncharts-net-visualization-apply-filter-example-1.js %}
 
 In the above chart, x-axis represents the Order Date column whereas y-axis represents the Sales per day.
 
