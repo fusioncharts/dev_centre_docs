@@ -34,7 +34,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 <pre><code class="language-javascript">
     $ npm install fusioncharts
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab cdn-tab'>
@@ -60,7 +60,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab localfiles-tab'>
@@ -86,7 +86,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>
@@ -286,7 +286,7 @@ chartInstance.render()
     &lt;/div&gt;
 &lt;/body&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab cdn-tab'>
@@ -350,7 +350,7 @@ chartInstance.render()
 
 &lt;/html&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 
@@ -415,7 +415,7 @@ chartInstance.render()
 
 &lt;/html&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>

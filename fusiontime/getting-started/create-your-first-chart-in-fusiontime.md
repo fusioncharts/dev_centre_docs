@@ -25,7 +25,7 @@ Install **FusionTime** using any of the following steps:
     $ npm install fusioncharts
 </code></pre>
 
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab localfiles-tab'>
@@ -42,7 +42,7 @@ Install **FusionTime** using any of the following steps:
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>
@@ -196,7 +196,7 @@ window.charInstance = new FusionCharts({
     }
 });
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab local-tab'>
@@ -247,7 +247,7 @@ window.charInstance = new FusionCharts({
 
 &lt;/html&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>

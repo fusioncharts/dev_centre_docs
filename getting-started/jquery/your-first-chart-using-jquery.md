@@ -31,7 +31,7 @@ $ npm install jquery-fusioncharts --save
 <pre><code class="language-javascript">
 $ npm install fusioncharts --save
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab cdn-tab'>
@@ -52,7 +52,7 @@ $ npm install fusioncharts --save
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab local-tab'>
@@ -73,7 +73,7 @@ $ npm install fusioncharts --save
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>
@@ -266,7 +266,7 @@ $('document').ready(function () {
     <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
     <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
 </ul>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 <div class='tab cdn-tab'>
 <pre><code class="language-html">
@@ -333,7 +333,7 @@ $('document').ready(function () {
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab local-tab'>
@@ -401,7 +401,7 @@ $('document').ready(function () {
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>

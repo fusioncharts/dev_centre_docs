@@ -35,7 +35,7 @@ In this article, we will show you how to download and install the **FusionCharts
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab local-tab'>
@@ -46,7 +46,7 @@ In this article, we will show you how to download and install the **FusionCharts
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 </div>
 </div>
@@ -78,13 +78,13 @@ To add the FusionCharts Rails wrapper, use any of the following processes:
 <pre><code class="language-ruby">
 	$gem install fusioncharts-rails
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab manual-tab'>
 <div><strong>Step 1: </strong>Copy all files from `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder.</div>
 <div><strong>Step 2: </strong>Paste the copied files to the `lib` folder of your application</div>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>

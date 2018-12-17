@@ -173,7 +173,7 @@ $ npm run prod:android
         </code></pre>
     </ul>
 </div>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab ios-tab'>
@@ -225,7 +225,7 @@ $ npm run build:assets
     </ul>
 </div>
 
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>

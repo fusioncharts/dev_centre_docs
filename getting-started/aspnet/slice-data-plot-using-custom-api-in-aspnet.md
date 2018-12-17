@@ -41,7 +41,7 @@ public partial class Pages_SpecialChartTypeAPI: System.Web.UI.Page {
     }
 }
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab vb-tab'>
@@ -57,7 +57,7 @@ Literal1.Text = column2d.Render()
 End Sub
 End Class
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>
@@ -147,7 +147,7 @@ The HTML template for `aspx` file is shown below:
 
 &lt;/html&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 <div class='tab vb-tab'>
@@ -227,7 +227,7 @@ The HTML template for `aspx` file is shown below:
 
 &lt;/html&gt;
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
 </div>
 
 </div>
