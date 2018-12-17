@@ -1,39 +1,43 @@
 {
     type: 'column2d',
-    renderAt: 'chart-container',
-    width: '700',
     height: '400',
+    width: '700',
     dataFormat: 'json',
+    renderAt: 'chart-container',
     dataSource: {
         "chart": {
-            "caption": "Most popular programming language",
-            "subCaption": "2017 - 2018",
-            "xAxisName": "Programing Language",
-            "yAxisName": "Users",
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
             "theme": "fusion"
         },
         "data": [{
-            "label": "Java",
-            "value": "62000"
+            "label": "Venezuela",
+            "value": "290"
         }, {
-            "label": "Python",
-            "value": "46000"
+            "label": "Saudi",
+            "value": "260"
         }, {
-            "label": "Javascript",
-            "value": "38000"
+            "label": "Canada",
+            "value": "180"
         }, {
-            "label": "C++",
-            "value": "31000"
+            "label": "Iran",
+            "value": "140"
         }, {
-            "label": "C#",
-            "value": "27000"
+            "label": "Russia",
+            "value": "115"
         }, {
-            "label": "PHP",
-            "value": "14000"
+            "label": "UAE",
+            "value": "100"
         }, {
-            "label": "Perl",
-            "value": "14000"
-        }]
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }],
     },
     "events": {
         "beforeRender": function(e, d) {
@@ -48,6 +52,7 @@
                 'carbon': 'carbon'
             };
             var themeSelected = 'fusion';
+
 
             function instantiate() {
                 // Create option containers
