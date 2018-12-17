@@ -93,23 +93,15 @@ In the above code:
 The output after running the above query looks like:
 
 Country
-
+---
 Australia
-
 United States
-
 Australia
-
 Australia
-
 United States
-
 India
-
 United States
-
 India
-
 India
 
 The above output consists of all the rows of the tabular data which means there is no Null value in the above data of the DataModel.
