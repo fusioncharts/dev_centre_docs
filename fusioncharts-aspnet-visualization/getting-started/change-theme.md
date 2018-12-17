@@ -19,25 +19,25 @@ This article focuses on how you can apply a common theme across multiple charts 
 
 A chart configured to change the theme is shown below:
 
-<<LIVE CHART>>
+{% embed_chart fusioncharts-net-visualization-change-theme-example-1.js %}
 
 To set a common theme across all the charts is a page refer to the code below:
 
 ```
-
 // Instantiate Pie Chart
 Charts.PieChart pie = new Charts.PieChart("piecharts");
+
 // Set DataModel instance as the data source of the chart
 pie.Data.Source = pieModel;
+
 // Instantiate Pyramid Chart
 Widget.PyramidChart pyramid = new Widget.PyramidChart("pyramidchart");
+
 // Set DataModel instance as the data source of the chart
 pyramid.Data.Source = pyramidModel;
 
 // Set theme at page level
-
 PageLevelTheme.Theme = FusionChartsTheme.ThemeName.Gammel;
-
 ```
 
 In the above code:
@@ -50,4 +50,4 @@ In the above code:
 
 A chart with the Gammel theme applied is shown below:
 
-<<LIVE CHART>>
+{% embed_chart fusioncharts-net-visualization-change-theme-example-2.js %}

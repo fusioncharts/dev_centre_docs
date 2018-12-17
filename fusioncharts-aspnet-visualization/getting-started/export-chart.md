@@ -8,7 +8,7 @@ In `FusionCharts.NET`, you could export your charts as images, PDFs, and also ch
 
 In this article, we will learn how to enable export in the charts. A chart with export enabled is shown in the image below:
 
-<IMAGE>
+IMAGE
 
 ## Enable Export
 
