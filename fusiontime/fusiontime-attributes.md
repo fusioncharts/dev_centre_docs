@@ -124,6 +124,21 @@ new FusionCharts({
 		<td>This attribute sets the type of the the data plot to render the chart. By default the type is a line. It controls the plot type for all names specified.</td>
 	</tr>
 	<tr>
+		<td>`min`</td>
+		<td>Number</td>
+		<td>This attribute sets the minimum value of the axis. The value of this attribute is ignored when the value is greater than the minimum value of the data plotted against the axis.</td>
+	</tr>
+	<tr>
+		<td>`max`</td>
+		<td>Number</td>
+		<td>This attribute sets the maximum value of the axis. The value of this attribute is ignored when the value is less than the maximum value of the data plotted against the axis.</td>
+	</tr>
+	<tr>
+		<td>`format`</td>
+		<td>String</td>
+		<td>This attribute sets the configuration of the measures plotted on the axis. If you set the `formatter` function, the provided `prefix` and `suffix` properties are ignored.</td>
+	</tr>
+	<tr>
 		<td>`title`</td>
 		<td>String</td>
 		<td>Allows you to rename the title of the axis. If not specified, the axis title will be the same as the column name joined by hyphens.</td>
@@ -147,6 +162,12 @@ new FusionCharts({
     dataSource: {
 		yAxis: [{
 			plotType: ' ', //To set the plot type out the 'plot' object
+			min: ' ', //Minimum value of the axis
+			max: ' ', //Maximum value of the axis
+			format: { //Measures
+    			"prefix": ' ', 
+    			"suffix": ' '
+  			},
 		    plot: {
 		        //Column header for the measure which is plotted against the Y Axis
 		    },
