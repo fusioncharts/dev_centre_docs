@@ -25,7 +25,6 @@ Install **FusionCharts** using any of the following steps:
 <pre><code class="language-bash">
     $ npm install fusioncharts
 </code></pre>
-
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
