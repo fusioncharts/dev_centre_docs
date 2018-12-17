@@ -8,11 +8,11 @@ Let's create a Column 2D chart showing the "Most popular programming language".
 
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_chart fusioncharts-net-visualization-first-chart-example-1.js %}
 
 The data for the above chart is shown in the table below:
 
-Programing Language|Number of Users|
+Programing Language|Users|
 -|-
 Java|62000|
 Python|46000|
