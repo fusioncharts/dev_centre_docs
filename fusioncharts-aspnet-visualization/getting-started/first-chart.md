@@ -29,41 +29,25 @@ Now that you have the tabular data ready, let's see how to render the chart.
 Create the `FirstChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
-
-* Create `DataTable`
-
-* Retrieve data using database query
-
+* Create `DataTable`.
+* Retrieve data using database query.
 * Set server name.
-
 * Set `DataBase` name.
-
 * Connect with `DataBase` using a connection string.
-
 * Create `StaticSource` using the `DataTable`.
-
 * Create an instance of `DataModel` class.
-
 * Add `DataSource` to the `DataModel`.
-
 * Instantiate Column Chart
-
 * Set Chart's width and height
-
 * Set `DataModel` instance as the data source of the chart.
-
 * Category field for the chart.
-
 * Series field(s) for the chart.
-
 * Set Chart Title.
-
 * Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
 
-```
-
+```aspnet
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -104,9 +88,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
                     da.Fill(primaryData);
-
                 }
-
             }
             // Create static source with this data table
             StaticSource source = new StaticSource(primaryData);
@@ -129,18 +111,14 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Caption.Text = "7 languages and their user base";
             // Render the chart to 'Literal1' literal control
             Literal1.Text = column.Render();
-            
-          
         }
     }
 }
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
-``` 
-
+```html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
 
 <!DOCTYPE html>
@@ -159,8 +137,6 @@ The `.aspx` template for the above sample is shown below:
            </form>
 </body>
 </html>
-
 ```
 
 That's it! Your first chart is ready.
-
