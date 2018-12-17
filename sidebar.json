@@ -1688,10 +1688,6 @@
                               "path": "/api-reference/ajax"
                            },
                            {
-                              "title": "PrintManager",
-                              "path": "/api-reference/printmanager"
-                           },
-                           {
                               "title": "Annotations",
                               "path": "/api-reference/annotations"
                            },
