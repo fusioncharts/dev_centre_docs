@@ -4,20 +4,11 @@ description: This article outlines the steps of how to create the area chart
 heading: Area chart
 ---
 
-Now, let's learn how to create an Area Chart. We will use the same data of "Most Popular Programming Language". The data will look as shown below:
+Now, let's learn how to create an Area Chart. We will create an Area chart showing "Weekly Liquor Sales". The data will look as shown below:
 
+**Table**
 
-Programming Language|Number of Users|
--|-
-Java|62000|
-Python|46000|
-Javascript|38000|
-C++|31000|
-C#|27000|
-PHP|14000|
-Perl|14000|
-
-To Render this data we will use the Area Chart. The chart will look as shown below:
+The chart will look as shown below:
 
 {% embed_chart standard-charts-line-area-and-column-charts-example-6.js %}
 
@@ -168,19 +159,13 @@ The `.aspx` template for the above sample is shown below:
 <body>
 
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-   
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
 
     <form id="form1" runat="server">
-
         <div>
-
             <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
-
         </div>
-
         <div>
-
             <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
 
         </div>
