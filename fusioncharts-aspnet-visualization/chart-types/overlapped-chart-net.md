@@ -140,6 +140,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
 }
 
+```
+
 The `.aspx` template for the above sample is shown below:
 
 ```
