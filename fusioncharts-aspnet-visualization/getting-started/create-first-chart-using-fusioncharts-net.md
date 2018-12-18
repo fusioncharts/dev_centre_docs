@@ -40,8 +40,6 @@ Create the `FirstChart.aspx.cs` file and do the following:
 * Instantiate Column Chart
 * Set Chart's width and height
 * Set `DataModel` instance as the data source of the chart.
-* Category field for the chart.
-* Series field(s) for the chart.
 * Set Chart Title.
 * Finally, use a container using `<div>` to render the chart.
 
@@ -103,12 +101,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Height = "400";
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
-            // Category field for the chart
-            column.Data.CategoryField("Languages");
-            // Series field(s) for the chart
-            column.Data.SeriesFields("User");
             // Set Chart Title
-            column.Caption.Text = "7 languages and their user base";
+            column.Caption.Text = "Most popular programming language";
             // Render the chart to 'Literal1' literal control
             Literal1.Text = column.Render();
         }
