@@ -190,4 +190,4 @@ The `.aspx` template for the above sample is shown below:
 
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_chart fusioncharts-net-visualization-bar-chart-example-2.js %}
