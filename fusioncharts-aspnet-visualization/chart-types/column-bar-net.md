@@ -188,6 +188,6 @@ The `.aspx` template for the above sample is shown below:
 
 ```
 
-To render this data we will use the doughnut Chart. The chart will look as shown below:
+The chart will look as shown below:
 
 <Live Chart>
