@@ -12,7 +12,7 @@ In the image given below, you can see the legend in a chart labeled:
 
 ## Customize a Legend
 
-You can customize a legend by assigning custom values to different properties of the `Legend` object under the `visualizationObj` object:
+You can customize a legend by assigning custom values to different properties of the `Legend` object in an object:
 
 ### Show/Hide Legend
 

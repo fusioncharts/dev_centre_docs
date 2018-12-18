@@ -12,7 +12,7 @@ In the image given below, you can see a tooltip labeled:
 
 ## Customize Tooltips
 
-You can customize tooltips by using different properties of the `ToolTip` object under the `visualizationObj` object.
+You can customize tooltips by using different properties of the `ToolTip` object in an object.
 
 ### Show/Hide Tooltips
 
