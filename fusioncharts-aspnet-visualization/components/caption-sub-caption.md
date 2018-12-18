@@ -36,11 +36,15 @@ Customize the font properties of the caption using the following:
 Refer to the code given below:
 
 ```
-visualizationObj.Caption.FontSize = 16;
+visualizationObj.Caption.FontSize = 18;
 visualizationObj.Caption.Fontname = "Arial";
-visualizationObj.Caption.FontColor = "ff00ff";
+visualizationObj.Caption.FontColor = "#5d62b5";
 visualizationObj.Caption.Bold = true;
 ```
+
+The chart will look as shown below:
+
+{% embed_chart fusioncharts-net-visualization-caption-font-example-1.js %}
 
 ### Show the Caption at the Top
 
@@ -57,6 +61,10 @@ Align the caption to `LEFT`, `RIGHT`, or `CENTER` by using the `CaptionAlignment
 ```
 visualizationObj.Caption.Alignment = CaptionObject.CaptionAlignment.LEFT;
 ```
+
+The chart after applying the above attributes looks like:
+
+{% embed_chart fusioncharts-net-visualization-caption-align-example-2.js %}
 
 ## Sub-caption
 
@@ -82,28 +90,12 @@ Customize the font properties of the sub-caption using the following:
 Refer to the code given below:
 
 ```
-visualizationObj.SubCaption.FontSize = 16;
+visualizationObj.SubCaption.FontSize = 18;
 visualizationObj.SubCaption.Fontname = "Arial";
-visualizationObj.SubCaption.FontColor = "ff00ff";
+visualizationObj.SubCaption.FontColor = "#5d62b5";
 visualizationObj.SubCaption.Bold = true;
 ```
 
-### Show the Sub-caption at the Top
+The chart will look as shown below:
 
-Set whether the sub-caption should appear at the bottom of the chart, by setting the value of the Boolean type `OnTop` properties to `False`. Refer to the code given below:
-
-```
-visualizationObj.SubCaption.OnTop = false;
-```
-
-### Set Sub-caption Alignment
-
-Align the sub-caption to `LEFT`, `RIGHT`, or `CENTER` by using the `SubCaptionAlignment` enum. Refer to the code given below:
-
-```
-visualizationObj.SubCaption.Alignment = SubCaptionObject.SubCaptionAlignment.LEFT:
-```
-
-Refer to the chart given below:
-
-<<Live Chart>>
+{% embed_chart fusioncharts-net-visualization-subcaption-font-example-3.js %}
