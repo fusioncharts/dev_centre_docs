@@ -1,23 +1,22 @@
 ---
-title: Stacked charts | FusionCharts
-description: This article outlines the steps to create stacked charts
-heading: Stacked charts
+title: Overlapped charts | FusionCharts
+description: This article outlines the steps to create overlapped charts
+heading: Overlapped Charts
 ---
 
-Now, let's learn how to create a Stacked Chart. We will create a chart showcasing revenue split for each quarter of the current year by product category - food products and non-food products. The data will look as shown below:
+Now, let's learn how to create an Overlapped Chart. We will create a chart showcasing number of produts sold in a superstore for the year 2016-2017.  The data will look as shown below:
 
-
-**TABLE**
+<<Table>>
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-stacked-charts-example-1.js %}
+<<Live Chart>>
 
 ## Render the Chart
 
-Create the `StackedChart.aspx.cs` file and do the following:
+Create the `OverlappedChart.aspx.cs` file and do the following:
 
-* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files.
 
 * Create `DataTable`.
 
@@ -25,9 +24,9 @@ Create the `StackedChart.aspx.cs` file and do the following:
 
 * Set server name.
 
-* Set `DataBase` name.
+* Set DataBase name.
 
-* Connect with `DataBase` using a connection string.
+* Connect with DataBase using a connection string.
 
 * Create `StaticSource` using the data table.
 
@@ -35,17 +34,17 @@ Create the `StackedChart.aspx.cs` file and do the following:
 
 * Add `DataSource` to the `DataModel`.
 
-* Instantiate Stacked Chart.
+* Instantiate column or bar chart.
 
 * Set chart width.
 
 * Set chart height.
 
-* Set the type of stacked chart as `BAR`, `COLUMN`, or `AREA`.
+* Set the type of column or bar chart as overlapped.
 
 * Set `DataModel` instance as the data source of the chart.
 
-* Set Chart title.
+* Set chart title.
 
 * Finally, use a container using `<div>` to render the chart.
 
@@ -77,7 +76,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
 {
 
-    public partial class StackedChart : System.Web.UI.Page
+    public partial class OverlappedChart : System.Web.UI.Page
 
     {
 
@@ -87,9 +86,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             DataTable dt = new DataTable();
 
-            string query = "select Country,COUNT([Product Type]) as [Product Types],SUM([Ordered quantity]) as [Ordered quantity] from ProductOrderedQuantity group by Country";
+            string query = "select CategoryName, SUM([Stocked Quantity])as [Stocked Quantity],SUM([Reorder Level]) as [Reorder Level], SUM([Order Quantity]) as [Order Quantity] from CategoryOrderedLevel group by CategoryName";
 
-            string connetionString = null;
+            string connectionString = null;
 
             string serverName = "FusionChartsServer";
 
@@ -97,9 +96,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             dt.Clear();
 
-            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
 
-            using (SqlConnection con = new SqlConnection(connetionString))
+            using (SqlConnection con = new SqlConnection(connectionString))
 
             {
 
@@ -123,17 +122,17 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             model.DataSources.Add(source);
 
-            Charts.StackedChart stack = new Charts.StackedChart("stacked_chart_db");
+            Charts.ColumnChart column = new Charts.ColumnChart("overlapped_chart_db");
 
-            stack.Width = "800";
+            column.Overlapped = true;
 
-	stack.Height = "600";
+            column.Data.Source = model;
 
-            stack.StackType = Charts.StackedChart.StackChartType.BAR;
+            column.Caption.Text = "Amount of products sold";
 
-            stack.Data.Source = model;
+            column.SubCaption.Text = "2016-2017";
 
-            Literal1.Text = stack.Render();
+            Literal1.Text = column.Render();
 
         }
 
@@ -141,13 +140,11 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
 }
 
-```
-
 The `.aspx` template for the above sample is shown below:
 
-``` 
+```
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StackedChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.StackedChart" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OverlappedChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.OverlappedChart" %>
 
 <!DOCTYPE html>
 
@@ -163,6 +160,8 @@ The `.aspx` template for the above sample is shown below:
 
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+   
 
     <form id="form1" runat="server">
 
