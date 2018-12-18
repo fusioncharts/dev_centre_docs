@@ -8,7 +8,7 @@ A tooltip is a small box that pops up when you hover the mouse pointer over a pa
 
 In the image given below, you can see a tooltip labeled:
 
-<<Image>>
+![Legend]({% site.baseurl %}/images/fusioncharts-net-tooltip.png)
 
 ## Customize Tooltips
 

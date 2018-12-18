@@ -8,7 +8,7 @@ The legend is a chart element that you can use to display the name and color of 
 
 In the image given below, you can see the legend in a chart labeled:
 
-![Legend]({% site.baseurl %}/images/fusioncharts-net-data-labels.png)
+![Legend]({% site.baseurl %}/images/fusioncharts-net-legend.png)
 
 ## Customize a Legend
 
