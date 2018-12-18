@@ -4,7 +4,7 @@ description: This article outlines the steps of how to create the line and splin
 heading: Line and Spline charts
 ---
 
-Now, let's learn how to create a Line chart. We will create a chart showcasing "Totla Footbal in Bakersfield Central". 
+Now, let's learn how to create a Line chart. We will create a chart showcasing "Total Footfall in Bakersfield Central". 
 
 The data is shown in the table below:
 
@@ -97,7 +97,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             line.Data.Source = model;
             
-            line.Caption.Text = "Total Football in BakersField Central";
+            line.Caption.Text = "Total Footfall in BakersField Central";
             
             Literal1.Text = line.Render();
         }
@@ -154,7 +154,7 @@ Now, let's learn how to create a spline chart with the same data. The code remai
             // Set DataModel instance as the data source of the chart
             spline.Data.Source = model;
             // Set Chart Title
-            spline.Caption.Text = "Most popular programming language";
+            spline.Caption.Text = "Total Footfall in Bakersfield Central";
             // Render the chart to 'splineChartLiteral' literal control
             Literal1.Text = spline.Render();
 
