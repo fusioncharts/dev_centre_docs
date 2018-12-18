@@ -121,12 +121,12 @@ Create the `ColumnChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-<CODE>
+CODE
 
 ### Create `.aspx` Template
 
 The `.aspx` template for the above sample is shown below:
 
-<CODE>
+CODE
 
 To get the detailed description about the filter operations listed above, click here.
