@@ -121,12 +121,101 @@ Create the `ColumnChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-CODE
+```aspnet
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+
+namespace FusionChartsVisualisationWebFormsSamples.Samples
+{
+    public partial class FirstChart: System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // Create data table
+            DataTable primaryData = new DataTable();
+            
+            // Retrieve data using database query
+            string query = "select [Order Data], [Sales] from dbo.UserPerLanguage";
+            string connetionString = null;
+            
+            // Servevr name
+            string serverName = "FusionChartsServer";
+            
+            // DataBase name
+            string databaseName = "FusionChartsSamplesDB";
+            primaryData.Clear();
+            
+            // Connection string
+            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+
+            using (SqlConnection con = new SqlConnection(connetionString))
+            {
+                con.Open();
+                using (SqlCommand command = new SqlCommand(query, con))
+                using (SqlDataAdapter da = new SqlDataAdapter(command))
+                {
+                    da.Fill(primaryData);
+                }
+            }
+            // Create static source with this data table
+            StaticSource source = new StaticSource(primaryData);
+            // Create instance of DataModel class
+            DataModel model = new DataModel();
+            // Add DataSource to the DataModel
+            model.DataSources.Add(source);
+            // Filter Applied to the tabular data
+            model = model.Where("Order Date is between 1/11/2011 to 1/25/2011 and Country = United States");
+            // Instantiate Column Chart
+            Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
+            // Set Chart's width and height
+            column.Width = "700";
+            column.Height = "400";
+            // Set DataModel instance as the data source of the chart
+            column.Data.Source = model;
+            // Category field for the chart
+            column.Data.CategoryField("Order Date");
+            // Series field(s) for the chart
+            column.Data.SeriesFields("Sales");
+            // Set Chart Title
+            column.Caption.Text = "Global online sales of SuperStore";
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
+        }
+    }
+}
+```
 
 ### Create `.aspx` Template
 
 The `.aspx` template for the above sample is shown below:
 
-CODE
+```html
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
 
-To get the detailed description about the filter operations listed above, click here.
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+   
+    <form id="form1" runat="server">
+        <div>
+            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+        </div>
+           </form>
+</body>
+</html>
+```
+
+To get the detailed description about the filter operations listed above, click [here]({% site.baseurl %}/fusioncharts-aspnet-visualization/data-engine/filter-data).

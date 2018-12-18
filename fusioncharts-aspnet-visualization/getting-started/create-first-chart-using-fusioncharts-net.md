@@ -66,7 +66,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             DataTable primaryData = new DataTable();
             
             // Retrieve data using database query
-            string query = "select [anguages], [User] from dbo.UserPerLanguage";
+            string query = "select [languages], [User] from dbo.UserPerLanguage";
             string connetionString = null;
             
             // Servevr name
@@ -97,7 +97,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Instantiate Column Chart
             Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
             // Set Chart's width and height
-            column.Width = "500";
+            column.Width = "700";
             column.Height = "400";
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
@@ -123,6 +123,7 @@ The `.aspx` template for the above sample is shown below:
 </head>
 <body>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
    
     <form id="form1" runat="server">
         <div>
