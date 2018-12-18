@@ -1,6 +1,6 @@
 ---
 title: Axes | FusionCharts
-description: This article outlines the steps of how to configure the axes
+description: This article outlines the steps of how to configure the axes.
 heading: Axes
 ---
 
@@ -12,7 +12,7 @@ Refer to the image below:
 
 ## X-Axis
 
-In FusionCharts .NET Visualization, the x-axis is the horizontal axis of the chart. You can customize the title of the x-axis in the following ways, using the `XAxis` object under the `visualizationObj` object.
+In FusionCharts.NET Visualization, the x-axis is the horizontal axis of the chart. You can customize the title of the x-axis in the following ways, using the `XAxis` object under the `visualizationObj` object.
 
 ### Set X-Axis Title
 
