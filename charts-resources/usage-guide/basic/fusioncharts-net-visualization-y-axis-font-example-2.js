@@ -10,10 +10,10 @@
             "subCaption": "2017 - 2018",
             "xAxisName": "Programing Language",
             "yAxisName": "Users",
-            "xAxisNameFontSize": "18",
-            "xAxisNameFontColor": "#5d62b5",
-            "xAxisNameFontBold": "1",
-            "xAxisNameFontItalic": "1",
+            "yAxisNameFontSize": "18",
+            "yAxisNameFontColor": "#5d62b5",
+            "yAxisNameFontBold": "1",
+            "yAxisNameFontItalic": "1",
             "theme": "fusion"
         },
         "data": [{
