@@ -142,7 +142,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             DataTable primaryData = new DataTable();
             
             // Retrieve data using database query
-            string query = "select [anguages], [User] from dbo.UserPerLanguage";
+            string query = "select [Order Data], [Sales] from dbo.UserPerLanguage";
             string connetionString = null;
             
             // Servevr name

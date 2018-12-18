@@ -42,14 +42,16 @@ isualizationObj.XAxis.Bold = true;
 visualizationObj.XAxis.Italic = true;
 ```
 
-{% embed_chart fusioncharts-net-visualization-axes-font-example-1.js %}
+The chart will look as shown below:
+
+{% embed_chart fusioncharts-net-visualization-x-axis-font-example-1.js %}
 
 ### Customize Border Color
 
 Set the border color of the title as hex code using the `BorderColor` properties. Refer to the code given below:
 
 ```
-visualizationObj.XAxis.BorderColor = "ffffff";
+visualizationObj.XAxis.BorderColor = "#737373";
 ```
 
 ### Customize Background Color
@@ -57,7 +59,7 @@ visualizationObj.XAxis.BorderColor = "ffffff";
 Set the background color of the title as hex code using the `BGColor` properties. Refer to the code given below:
 
 ```
-visualizationObj.XAxis.BGColor = "ffffff";
+visualizationObj.XAxis.BGColor = "#bfbfbf";
 ```
 
 ### Customize Border Thickness
@@ -65,8 +67,12 @@ visualizationObj.XAxis.BGColor = "ffffff";
 Set the border thickness of the title as hex code using the `BorderThickness` properties. Refer to the code given below:
 
 ```
-visualizationObj.XAxis.BorderThickness = 2;
+visualizationObj.XAxis.BorderThickness = 3;
 ```
+
+The chart after applying the above attributes will look as shown below:
+
+{% embed_chart fusioncharts-net-visualization-x-axis-border-example-3.js %}
 
 ## Y-Axis
 
@@ -78,7 +84,6 @@ Set the title of the y-axis as string using the `Text` properties. Refer to the 
 
 ```
 visualizationObj.YAxis.Text = "chart y axis";
-
 ```
 
 ### Customize Font Properties
@@ -86,37 +91,31 @@ visualizationObj.YAxis.Text = "chart y axis";
 Customize the font properties of the x-axis title using the following:
 
 * Set the font size as an integer using the `FontSize` properties.
-
 * Set the font type as the string using the `FontName` properties.
-
 * Set the font color as hex code using the `FontColor` properties.
-
 * Display the title as bold by setting the `Bold` properties to `True`.
-
 * Display the title as bold by setting the `Italic` properties to `True`. 
 
 Refer to the code below:
 
 ```
-visualizationObj.YAxis.FontSize = 16;
+visualizationObj.YAxis.FontSize = 18;
 visualizationObj.YAxis.Fontname = "Arial";
-visualizationObj.YAxis.FontColor = "ff00ff";
+visualizationObj.YAxis.FontColor = "#5d62b5";
 visualizationObj.YAxis.Bold = true;
-visualizationObj.YAxis.Italic = true;|
-
+visualizationObj.YAxis.Italic = true;
 ```
 
 The chart will look like as shown below:
 
-<Live Chart>
+{% embed_chart fusioncharts-net-visualization-y-axis-font-example-2.js %}
 
 ### Customize Border Color
 
 Set the border color of the title as hex code using the `BorderColor` properties. Refer to the code given below:
 
 ```
-visualizationObj.YAxis.BorderColor = "ffffff";|
-
+visualizationObj.YAxis.BorderColor = "#737373";
 ```
 
 ### Customize Background Color
@@ -124,8 +123,7 @@ visualizationObj.YAxis.BorderColor = "ffffff";|
 Set the background color as hex code using the `BGColor` properties. Refer to the code given below:
 
 ```
-visualizationObj.YAxis.BGColor = "ffffff";|
-
+visualizationObj.YAxis.BGColor = "#bfbfbf";
 ```
 
 ### Customize Border Thickness
@@ -133,10 +131,9 @@ visualizationObj.YAxis.BGColor = "ffffff";|
 Set the border thickness of the title as hex code using the `BorderThickness` properties. Refer to the code given below:
 
 ```
-visualizationObj.YAxis.BorderThickness = 2;|
-
+visualizationObj.YAxis.BorderThickness = 3;
 ```
 
-The chart is shown below:
+The chart after applying the above attributes will look as shown below:
 
-<<Live Chart>>
+{% embed_chart fusioncharts-net-visualization-y-axis-border-example-4.js %}
