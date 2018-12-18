@@ -12,7 +12,7 @@ The chart will look as shown below:
 
 The data for the above chart is shown in the table below:
 
-Programing Language|Users|
+Programming Language|Users|
 -|-
 Java|62000|
 Python|46000|

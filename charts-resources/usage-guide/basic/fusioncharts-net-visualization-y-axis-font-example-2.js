@@ -8,7 +8,7 @@
         "chart": {
             "caption": "Most popular programming language",
             "subCaption": "2017 - 2018",
-            "xAxisName": "Programing Language",
+            "xAxisName": "Programming Language",
             "yAxisName": "Users",
             "yAxisNameFontSize": "18",
             "yAxisNameFontColor": "#5d62b5",

@@ -16,12 +16,10 @@ You can customize a legend by assigning custom values to different properties of
 
 ### Show/Hide Legend
 
-
 To hide the legend, set the value of the `Show` properties to `false`. Refer to the code given below:
 
 ```
-visualizationObj.Legend.Show = false;|
-
+visualizationObj.Legend.Show = false;
 ```
 
 ### Set Legend Title
@@ -29,8 +27,7 @@ visualizationObj.Legend.Show = false;|
 Set the title of the legend as string using the `Text` properties. Refer to the code given below:
 
 ```
-visualizationObj.Legend.Caption = "column chart Legend section";|
-
+visualizationObj.Legend.Caption = "column chart Legend section";
 ```
 
 ### Set Legend Position
@@ -39,7 +36,6 @@ Set the position of the legend as `BOTTOM` or `RIGHT` using the `Position` prope
 
 ```
 visualizationObj.Legend.Position = LegendObject.LegendPosition.Bottom;|
-
 ```
 
 ### Customize Font Properties
@@ -47,11 +43,8 @@ visualizationObj.Legend.Position = LegendObject.LegendPosition.Bottom;|
 Customize the font properties of the legend title using the following:
 
 * Set the font size as an integer using the `FontSize` properties.
-
 * Set the font type as string using the `FontName` properties.
-
 * Set the font color as hex code using the `FontColor` properties.
-
 * Display the title as bold by setting the `Bold` properties to `True`.
 
 Refer to the code given below:
@@ -60,11 +53,9 @@ Refer to the code given below:
 visualizationObj.Legend.FontSize = 10;
 visualizationObj.Legend.FontName = "Arial";
 visualizationObj.Legend.FontColor = "f0f00f";
-visualizationObj.Legend.Bold = false;|
-
+visualizationObj.Legend.Bold = false;
 ```
 
-The chart is shown below:
+The detailed chart with all the above customizations is shown below:
 
 <<Live Chart>>
-
