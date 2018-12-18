@@ -8,7 +8,7 @@ The caption (or the title) is the heading of the chart, where you state the topi
 
 You can see both caption and sub-caption highlighted in the following image:
 
-![Caption&SubCaption]({% site.baseurl %}/images/caption_sub-caption.png)
+![Caption&SubCaption]({% site.baseurl %}/images/fusioncharts-net-caption_sub-caption.png)
 
 In this article, we will learn how to customize the chart caption and sub-caption by assigning custom values to different properties.
 
