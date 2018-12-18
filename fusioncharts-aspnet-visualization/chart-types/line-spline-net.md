@@ -1,28 +1,22 @@
 ---
-title: Pie and Doughnut charts | FusionCharts
-description: This article outlines the steps of how to create the pie and doughnut charts
-heading: Pie and Doughnut charts
+title: Line and Spline charts | FusionCharts
+description: This article outlines the steps of how to create the line and spline charts
+heading: Line and Spline charts
 ---
 
-Now, let's learn how to create a Pie chart. We will use the same data of "Most Popular Programming Language". The data will look as shown below:
+Now, let's learn how to create a Line chart. We will create a chart showcasing "Total Footfall in Bakersfield Central". 
 
-Programming Language|Number of Users|
--|-
-Java|62000|
-Python|46000|
-Javascript|38000|
-C++|31000|
-C#|27000|
-PHP|14000|
-Perl|14000|
+The data is shown in the table below:
+
+**TABLE**
 
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_all standard-charts-line-area-and-column-charts-example-5.js %}
 
 ## Render the Chart
 
-Create the `PieChart.aspx.cs` file and do the following:
+Create the `LineChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 
@@ -42,7 +36,7 @@ Create the `PieChart.aspx.cs` file and do the following:
 
 * Add `DataSource` to the `DataModel`.
 
-* Instantiate Pie Chart.
+* Instantiate Line Chart.
 
 * Set Chart's width and height.
 
@@ -57,10 +51,10 @@ The code is shown below:
 ```
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
-
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -68,25 +62,16 @@ using System.Web.UI.WebControls;
 
 namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
-    public partial class ThreeDChart : System.Web.UI.Page
+    public partial class SeriesCustomization : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Create data table
-            DataTable primaryData = new DataTable();
-            
-            // Retrieve data using database query
-            string query = "select [languages], [User] from dbo.UserPerLanguage";
+            DataTable dt = new DataTable();
+            string query = "select * from MonthlyProductSales";
             string connectionString = null;
-            
-            // Servevr name
             string serverName = "FusionChartsServer";
-            
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-            
-            // Connection string
+            string databaseName = "FusionchartsSamplesDB";
+            dt.Clear();
             connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -95,30 +80,26 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
                 using (SqlCommand command = new SqlCommand(query, con))
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
-                    da.Fill(primaryData);
+                    da.Fill(dt);
 
                 }
 
             }
-            // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
-            // Create instance of DataModel class
+            StaticSource source = new StaticSource(dt);
             DataModel model = new DataModel();
-            // Add DataSource to the DataModel
             model.DataSources.Add(source);
-            // Instantiate Pie Chart
-            Charts.PieChart pie = new Charts.PieChart("pie_chart");
-            // Set Chart's width and height
-            pie.Width = 500;
-            pie.Height = 400;
-            // Set DataModel instance as the data source of the chart
-            pie.Data.Source = model;
-            // Set Chart Title
-            pie.Caption.Text = "Most popular programming language";
-            // Render the chart to 'PieChartLiteral' literal control
-            Literal1.Text = pie.Render();
+
+            Charts.LineChart line = new Charts.LineChart("line_chart_db");
+
+            line.ThemeName = FusionChartsTheme.ThemeName.Fusion;
+            line.Width = “1000”;
+            line.Height = “600”;
+
+            line.Data.Source = model;
             
-          
+            line.Caption.Text = "Total Footfall in BakersField Central";
+            
+            Literal1.Text = line.Render();
         }
     }
 }
@@ -128,7 +109,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ``` 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PieChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.PieChart" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.LineChart" %>
 
 <!DOCTYPE html>
 
@@ -154,9 +135,9 @@ The `.aspx` template for the above sample is shown below:
 
 ```
 
-## Doughnut Chart
+## Spline Chart
 
-Now, let's learn how to create a doughnut chart with the same data. The code remains the same as that of the Pie chart. The only difference is instead of instantiating a pie chart you have to instantiate a doughnut chart. Create a `doughnutChart.aspx.cs` and refer to the code below:
+Now, let's learn how to create a spline chart with the same data. The code remains the same as that of the Line chart. The only difference is instead of instantiating a line chart you have to instantiate a spline chart. Create a `splineChart.aspx.cs` and refer to the code below:
 
 ``` 
 // Create static source with this data table
@@ -165,17 +146,17 @@ Now, let's learn how to create a doughnut chart with the same data. The code rem
             DataModel model = new DataModel();
             // Add DataSource to the DataModel
             model.DataSources.Add(source);
-            // Instantiate doughnut Chart
-            Charts.doughnutChart doughnut = new Charts.doughnutChart("doughnut_chart");
+            // Instantiate spline Chart
+            Charts.splineChart spline = new Charts.splineChart("spline_chart");
             // Set Chart's width and height
-            doughnut.Width = 500;
-            doughnut.Height = 400;
+            spline.Width = 500;
+            spline.Height = 400;
             // Set DataModel instance as the data source of the chart
-            doughnut.Data.Source = model;
+            spline.Data.Source = model;
             // Set Chart Title
-            doughnut.Caption.Text = "Most popular programming language";
-            // Render the chart to 'doughnutChartLiteral' literal control
-            Literal1.Text = doughnut.Render();
+            spline.Caption.Text = "Total Footfall in Bakersfield Central";
+            // Render the chart to 'splineChartLiteral' literal control
+            Literal1.Text = spline.Render();
 
 ```
 
@@ -183,7 +164,7 @@ The `.aspx` template for the above sample is shown below:
 
 ``` 
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="doughnutChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.doughnutChart" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="splineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.splineChart" %>
 
 <!DOCTYPE html>
 
@@ -211,6 +192,3 @@ The `.aspx` template for the above sample is shown below:
 The chart will look as shown below:
 
 <Live Chart>
-
-
-

@@ -1,12 +1,18 @@
 ---
-title: Pie and Doughnut charts | FusionCharts
-description: This article outlines the steps of how to create the pie and doughnut charts
-heading: Pie and Doughnut charts
+title: Column and Bar charts | FusionCharts
+description: This article outlines the steps to create column and Bar charts
+heading: Column and Bar charts
 ---
 
-Now, let's learn how to create a Pie chart. We will use the same data of "Most Popular Programming Language". The data will look as shown below:
+Let's create a Column 2D chart showing the "Most popular programming language".
 
-Programming Language|Number of Users|
+The chart will look as shown below:
+
+{% embed_chart fusioncharts-net-visualization-first-chart-example-1.js %}
+
+The data for the above chart is shown in the table below:
+
+Programing Language|Users|
 -|-
 Java|62000|
 Python|46000|
@@ -16,48 +22,30 @@ C#|27000|
 PHP|14000|
 Perl|14000|
 
-The chart will look as shown below:
+Now that you have the tabular data ready, let's see how to render the chart.
 
-<Live Chart>
+## Render the chart:
 
-## Render the Chart
-
-Create the `PieChart.aspx.cs` file and do the following:
+Create the `FirstChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
-
 * Create `DataTable`.
-
 * Retrieve data using database query.
-
 * Set server name.
-
 * Set `DataBase` name.
-
 * Connect with `DataBase` using a connection string.
-
 * Create `StaticSource` using the `DataTable`.
-
 * Create an instance of `DataModel` class.
-
 * Add `DataSource` to the `DataModel`.
-
-* Instantiate Pie Chart.
-
-* Set Chart's width and height.
-
+* Instantiate Column Chart
+* Set Chart's width and height
 * Set `DataModel` instance as the data source of the chart.
-
-* Set Chart title.
-
+* Set Chart Title.
 * Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
 
-```
-using FusionCharts.DataEngine;
-using FusionCharts.Visualization;
-
+```aspnet
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -65,10 +53,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
 
 namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
-    public partial class ThreeDChart : System.Web.UI.Page
+    public partial class FirstChart: System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -77,7 +67,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             
             // Retrieve data using database query
             string query = "select [languages], [User] from dbo.UserPerLanguage";
-            string connectionString = null;
+            string connetionString = null;
             
             // Servevr name
             string serverName = "FusionChartsServer";
@@ -87,18 +77,16 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             primaryData.Clear();
             
             // Connection string
-            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
 
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = new SqlConnection(connetionString))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
                     da.Fill(primaryData);
-
                 }
-
             }
             // Create static source with this data table
             StaticSource source = new StaticSource(primaryData);
@@ -106,29 +94,26 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             DataModel model = new DataModel();
             // Add DataSource to the DataModel
             model.DataSources.Add(source);
-            // Instantiate Pie Chart
-            Charts.PieChart pie = new Charts.PieChart("pie_chart");
+            // Instantiate Column Chart
+            Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
             // Set Chart's width and height
-            pie.Width = 500;
-            pie.Height = 400;
+            column.Width = "700";
+            column.Height = "400";
             // Set DataModel instance as the data source of the chart
-            pie.Data.Source = model;
+            column.Data.Source = model;
             // Set Chart Title
-            pie.Caption.Text = "Most popular programming language";
-            // Render the chart to 'PieChartLiteral' literal control
-            Literal1.Text = pie.Render();
-            
-          
+            column.Caption.Text = "Most popular programming language";
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
-``` 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PieChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.PieChart" %>
+```html
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
 
 <!DOCTYPE html>
 
@@ -138,25 +123,20 @@ The `.aspx` template for the above sample is shown below:
 </head>
 <body>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
    
     <form id="form1" runat="server">
         <div>
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
         </div>
-        <div>
-            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-        </div>
-    </form>
+           </form>
 </body>
 </html>
-
 ```
 
-## Doughnut Chart
+## Bar Chart
 
-Now, let's learn how to create a doughnut chart with the same data. The code remains the same as that of the Pie chart. The only difference is instead of instantiating a pie chart you have to instantiate a doughnut chart. Create a `doughnutChart.aspx.cs` and refer to the code below:
+Now, let's learn how to create a bar chart with the same data. The code remains the same as that of the column chart. The only difference is instead of instantiating a column chart you have to instantiate a bar chart. Create a `barChart.aspx.cs` and refer to the code below:
 
 ``` 
 // Create static source with this data table
@@ -165,17 +145,17 @@ Now, let's learn how to create a doughnut chart with the same data. The code rem
             DataModel model = new DataModel();
             // Add DataSource to the DataModel
             model.DataSources.Add(source);
-            // Instantiate doughnut Chart
-            Charts.doughnutChart doughnut = new Charts.doughnutChart("doughnut_chart");
+            // Instantiate bar Chart
+            Charts.barChart bar = new Charts.barChart("bar_chart");
             // Set Chart's width and height
-            doughnut.Width = 500;
-            doughnut.Height = 400;
+            bar.Width = 500;
+            bar.Height = 400;
             // Set DataModel instance as the data source of the chart
-            doughnut.Data.Source = model;
+            bar.Data.Source = model;
             // Set Chart Title
-            doughnut.Caption.Text = "Most popular programming language";
-            // Render the chart to 'doughnutChartLiteral' literal control
-            Literal1.Text = doughnut.Render();
+            bar.Caption.Text = "Most popular programming language";
+            // Render the chart to 'barChartLiteral' literal control
+            Literal1.Text = bar.Render();
 
 ```
 
@@ -183,7 +163,7 @@ The `.aspx` template for the above sample is shown below:
 
 ``` 
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="doughnutChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.doughnutChart" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="barChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.barChart" %>
 
 <!DOCTYPE html>
 
@@ -211,6 +191,3 @@ The `.aspx` template for the above sample is shown below:
 The chart will look as shown below:
 
 <Live Chart>
-
-
-
