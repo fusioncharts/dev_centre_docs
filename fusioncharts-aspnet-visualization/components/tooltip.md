@@ -27,7 +27,7 @@ visualisationObj.ToolTip.Show = true;
 Use the hex code type `BGColor` properties to set the background color for tooltips. Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.BGColor = "#666666";
+visualisationObj.ToolTip.BGColor = "#ffffff";
 ```
 
 ### Customize Border Color
@@ -59,7 +59,7 @@ visualisationObj.ToolTip.ShowShadow = false;
 Use the hex code type `Color` properties to set the text color for tooltips. Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.Color = "ffffff";
+visualisationObj.ToolTip.Color = "000000";
 ```
 
 ### Set Border Transparency
