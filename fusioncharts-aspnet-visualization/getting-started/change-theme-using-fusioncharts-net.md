@@ -15,13 +15,13 @@ In `FusionCharts.NET` you can manually set the cosmetics and functional attribut
  * ocean
  * carbon
 
-This article focuses on how you can apply a common theme across multiple charts in a single page.
+This article focuses on how to change the theme of a chart.
 
 A chart configured to change the theme is shown below:
 
 {% embed_chart fusioncharts-net-visualization-change-theme-example-1.js %}
 
-To set a common theme across all the charts is a page refer to the code below:
+To change the theme refer to the code below:
 
 ```
 // Instantiate Pie Chart
