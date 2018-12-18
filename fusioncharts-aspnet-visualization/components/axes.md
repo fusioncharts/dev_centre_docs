@@ -12,7 +12,7 @@ Refer to the image below:
 
 ## X-Axis
 
-In FusionCharts.NET Visualization, the x-axis is the horizontal axis of the chart. You can customize the title of the x-axis in the following ways, using the `XAxis` object under the `visualizationObj` object.
+In FusionCharts.NET Visualization, the x-axis is the horizontal axis of the chart. You can customize the title of the x-axis in the following ways, using the `XAxis` object under the object.
 
 ### Set X-Axis Title
 
@@ -20,7 +20,6 @@ Set the title of the x-axis as string to the `Text` properties. Refer to the cod
 
 ```
 visualizationObj.XAxis.Text = "chart x axis";
-
 ```
 
 ### Customize Font Properties
@@ -28,35 +27,29 @@ visualizationObj.XAxis.Text = "chart x axis";
 Customize the font properties of the x-axis title using the following:
 
 * Set the font size as an integer using the `FontSize` properties.
-
 * Set the font type as string using the `FontName` properties.
-
 * Set the font color as hex code using the `FontColor` properties.
-
 * Display the title as bold by setting the `Bold` properties to `True`.
-
 * Display the title as italic by setting the `Italic` properties to `True`. 
 
 Refer to the code below:
 
 ```
-visualizationObj.XAxis.FontSize = 16;
+visualizationObj.XAxis.FontSize = 18;
 visualizationObj.XAxis.Fontname = "Arial";
-visualizationObj.XAxis.FontColor = "ff00ff";
+visualizationObj.XAxis.FontColor = "#5d62b5";
 isualizationObj.XAxis.Bold = true;
-visualizationObj.XAxis.Italic = true;|
-
+visualizationObj.XAxis.Italic = true;
 ```
 
-<Live Chart>
+{% embed_chart fusioncharts-net-visualization-axes-font-example-1.js %}
 
 ### Customize Border Color
 
 Set the border color of the title as hex code using the `BorderColor` properties. Refer to the code given below:
 
 ```
-visualizationObj.XAxis.BorderColor = "ffffff";|
-
+visualizationObj.XAxis.BorderColor = "ffffff";
 ```
 
 ### Customize Background Color
@@ -64,8 +57,7 @@ visualizationObj.XAxis.BorderColor = "ffffff";|
 Set the background color of the title as hex code using the `BGColor` properties. Refer to the code given below:
 
 ```
-visualizationObj.XAxis.BGColor = "ffffff";|
-
+visualizationObj.XAxis.BGColor = "ffffff";
 ```
 
 ### Customize Border Thickness
@@ -73,8 +65,7 @@ visualizationObj.XAxis.BGColor = "ffffff";|
 Set the border thickness of the title as hex code using the `BorderThickness` properties. Refer to the code given below:
 
 ```
-visualizationObj.XAxis.BorderThickness = 2;|
-
+visualizationObj.XAxis.BorderThickness = 2;
 ```
 
 ## Y-Axis
@@ -149,4 +140,3 @@ visualizationObj.YAxis.BorderThickness = 2;|
 The chart is shown below:
 
 <<Live Chart>>
-
