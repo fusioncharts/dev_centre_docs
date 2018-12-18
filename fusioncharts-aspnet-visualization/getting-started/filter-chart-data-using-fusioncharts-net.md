@@ -92,7 +92,7 @@ In the above code:
 
 The output after running the above query looks like:
 
-{% embed_chart fusioncharts-net-visualization-apply-filter-example-1.js %}
+{% embed_chart fusioncharts-net-visualization-applied-filter-example-2.js %}
 
 In the above chart, x-axis represents the Order Date column whereas y-axis represents the Sales per day.
 
