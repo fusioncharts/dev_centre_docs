@@ -50,12 +50,12 @@ Customize the font properties of the legend title using the following:
 Refer to the code given below:
 
 ```
-visualizationObj.Legend.FontSize = 10;
+visualizationObj.Legend.FontSize = 16;
 visualizationObj.Legend.FontName = "Arial";
-visualizationObj.Legend.FontColor = "f0f00f";
-visualizationObj.Legend.Bold = false;
+visualizationObj.Legend.FontColor = "#000000";
+visualizationObj.Legend.Bold = true;
 ```
 
 The detailed chart with all the above customizations is shown below:
 
-<<Live Chart>>
+{% embed_chart fusioncharts-net-visualization-legend-example-1.js %}
