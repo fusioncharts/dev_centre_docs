@@ -171,12 +171,7 @@ The `.aspx` template for the above sample is shown below:
 
         </div>
 
-        <div>
-
-            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-
-        </div>
-
+        
     </form>
 
 </body>
