@@ -8,7 +8,7 @@ The axes of a chart are the intersecting lines that act as boundaries of the cha
 
 Refer to the image below:
 
-<<Image>>
+![XAxis & YAxis]({% site.baseurl %}/images/fusioncharts-net-axis.png)
 
 ## X-Axis
 

@@ -6,13 +6,11 @@ heading: Data Labels
 
 Data labels are the names you assign to data points on the X-axis. In FusionCharts.NET, apart from setting values for the data labels, you can also apply several types of formatting to them.
 
-Refer to the image below:
-
 ![Data labels]({% site.baseurl %}/images/fusioncharts-net-data-labels.png)
 
 ## Customize Data Labels
 
-In FusionCharts.NET, you can customize data labels in the following ways with the help of different instance methods of the `LabelFormatting` object (which accepts a string argument) under the `Data` object, which is in turn under the `visualisationObj` object:
+In FusionCharts.NET, you can customize data labels in the following ways with the help of different instance methods of the `LabelFormatting` object (which accepts a string argument) under the `Data` object, which is in turn under the `visualizationObj` object:
 
 ### Show/Hide Data Labels
 
