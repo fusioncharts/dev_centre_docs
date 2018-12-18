@@ -98,7 +98,7 @@ In the above chart, x-axis represents the Order Date column whereas y-axis repre
 
 Steps to render the above chart is given below:
 
-### Create  `ColumnChart.aspx.cs`
+### Create `ColumnChart.aspx.cs`
 
 Create the `ColumnChart.aspx.cs` file and do the following:
 
