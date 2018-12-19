@@ -25,3 +25,33 @@ Install-Package FusionCharts.Visualization -Version 0.9.0-beta
 
 Once installed from Nuget, it'll add some assemblies to your web project, and those assemblies will be automatically referenced to your project. It'll also add FusionCharts JavaScript libraries to your project under `Scripts/FusionCharts/` folder.
 
+## Configuring Export Handler
+
+FusionCharts export handler gets automatically installed once you install `FusionCharts.Visualization` nuget package. However, in order to use it, you need to configure the following:
+
+1. Make sure the `PresentationCore` and `WindowsBase` assemblies are referenced in your web project. These assemblies are automatically referenced when you install the nuget package, but in case if they are not, then you'll have to manually add them.
+
+2. Add these dependencies into `web.config`:
+
+```
+ <compilation targetFramework="4.5" >
+    <assemblies>
+        <add assembly="WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+        <add assembly="PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    </assemblies>
+</compilation>
+```
+3. Add the following line under <`system.web`> in `web.config`:
+
+```
+<httpRuntime targetFramework="4.5" requestValidationMode="2.0" />
+```
+4. Add reference to all files present inside "Helper Assemblies" folder to your project
+    * `FusionCharts.SharpVectors.Converters.dll`
+    * `FusionCharts.SharpVectors.Core.dll`
+    * `FusionCharts.SharpVectors.Css.dll`
+    * `FusionCharts.SharpVectors.Dom.dll`
+    * `FusionCharts.SharpVectors.Model.dll`
+    * `FusionCharts.SharpVectors.Rendering.Wpf.dll`
+    * `FusionCharts.SharpVectors.Runtime.dll`
+
