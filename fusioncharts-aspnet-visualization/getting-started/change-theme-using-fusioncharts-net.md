@@ -23,30 +23,98 @@ A chart configured to change the theme is shown below:
 
 To change the theme refer to the code below:
 
+```aspnet
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+
+namespace FusionChartsVisualisationWebFormsSamples.Samples
+{
+    public partial class FirstChart: System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // Create data table
+            DataTable primaryData = new DataTable();
+            
+            // Retrieve data using database query
+            string query = "select [languages], [User] from dbo.UserPerLanguage";
+            string connetionString = null;
+            
+            // Servevr name
+            string serverName = "FusionChartsServer";
+            
+            // DataBase name
+            string databaseName = "FusionChartsSamplesDB";
+            primaryData.Clear();
+            
+            // Connection string
+            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+
+            using (SqlConnection con = new SqlConnection(connetionString))
+            {
+                con.Open();
+                using (SqlCommand command = new SqlCommand(query, con))
+                using (SqlDataAdapter da = new SqlDataAdapter(command))
+                {
+                    da.Fill(primaryData);
+                }
+            }
+            // Create static source with this data table
+            StaticSource source = new StaticSource(primaryData);
+            // Create instance of DataModel class
+            DataModel model = new DataModel();
+            // Add DataSource to the DataModel
+            model.DataSources.Add(source);
+            // Instantiate Column Chart
+            Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
+            // Set the theme
+            column.ThemeName = FusionChartsTheme.ThemeName.Gammel;
+            // Set Chart's width and height
+            column.Width = "700";
+            column.Height = "400";
+            // Set DataModel instance as the data source of the chart
+            column.Data.Source = model;
+            // Set Chart Title
+            column.Caption.Text = "Most popular programming language";
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
+        }
+    }
+}
 ```
-// Instantiate Pie Chart
-Charts.PieChart pie = new Charts.PieChart("piecharts");
 
-// Set DataModel instance as the data source of the chart
-pie.Data.Source = pieModel;
+The `.aspx` template for the above sample is shown below:
 
-// Instantiate Pyramid Chart
-Widget.PyramidChart pyramid = new Widget.PyramidChart("pyramidchart");
+```html
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
 
-// Set DataModel instance as the data source of the chart
-pyramid.Data.Source = pyramidModel;
+<!DOCTYPE html>
 
-// Set theme at page level
-PageLevelTheme.Theme = FusionChartsTheme.ThemeName.Gammel;
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+   
+    <form id="form1" runat="server">
+        <div>
+            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+        </div>
+           </form>
+</body>
+</html>
 ```
 
-In the above code:
-
-* Instantiate a Pie chart.
-
-* Instantiate a Pyramid chart.
-
-* Set the page level theme as `Gammel` using the `Themes` properties of the `PageLevelTheme` object. By default, the theme is set as `Fusion`.
+In the above code set the chart level theme as `Gammel` using the `Themes` properties of the `PageLevelTheme` object. By default, the theme is set as `Fusion`.
 
 A chart with the Gammel theme applied is shown below:
 
