@@ -12,9 +12,9 @@ DataModel consists of data source store. In FusionCharts.NET the supported data 
 StaticSource source = new StaticSource(dataTable);
 ```
 
-In the above code `dataTable` is the created tabular data. 
+In the above code, `dataTable` is the created tabular data. 
 
-The created data to render the chart is stored in the DataModel  of the DataEngine.
+The created data to render the chart is stored in the DataModel of the DataEngine.
 
 ## What is DataModel?
 
@@ -37,7 +37,7 @@ DataModel model = new DataModel();
 In the above query:
 
 * `DataModel` is a class
-* `model` is the object which holds the resultant DataModel.
+* `model` is the object which holds the resultant Data.
 
 ### Add DataSource to `DataModel` object
 
@@ -52,7 +52,7 @@ model.DataSources.Add(source);
 To retrieve data from the `DataModel`, run the following query:
 
 ```
-DataTable table = model.Data // Output is the data format is  DataTable
+DataTable table = model.Data // Output of the data format is DataTable
 ```
 
 ### Dispose DataModel object
