@@ -106,16 +106,38 @@ visualisationObj.Values.Position = ValueFormat.ValuePosition.AUTO;
 
 ## Conditional Data Plot Formatting
 
-Using FusionCharts.NET, you can also apply conditional formatting to the data plots of the chart and then apply the above customizations.
+Using FusionCharts.NET, you can also apply conditional formatting to the data plots of the chart and also apply the above customizations at the same time.
 
 Following is the list of operations which can be applied to the data plot of the chart.
 
-Operation | Data Type
---- | ---
-Null | 
-Not Null
-Equal
-Not Equal
-Starts With
-Contains
-Ends With
+Operation | Data Type | Query
+--- | --- | ---
+Null | String, Number, Date/Time | &lt;field&gt; is null
+Not Null | String, Number, Date/Time| &lt;field&gt; is not null
+Equal | String, Number, Date/Time | &lt;field&gt; = &lt;value&gt;
+Not Equal | String, Number, Date/Time | &lt;field&gt; != &lt;value&gt;
+Begins With | String | &lt;field&gt; begins with &lt;value&gt;
+Contains | String | &lt;field&gt; contains &lt;value&gt;
+Ends With | String | &lt;field&gt; ends with &lt;value&gt;
+Greater | Number, Date/Time | &lt;field&gt; > &lt;value&gt;
+Greater or Equal | Number, Date/Time | &lt;field&gt; >= &lt;value&gt;
+Less | Number, Date/Time | &lt;field&gt; < &lt;value&gt;
+Less or Equal | Number, Date/Time | &lt;field&gt; <= &lt;value&gt;
+In Between | Number, Date/Time | &lt;field&gt; is between &lt;value1&gt; to &lt;value2&gt;
+
+## Logical Operator
+
+FusionCharts.NET supports logical operators which filters the data based on some condition. The supported logical operators are:
+
+* `AND` &
+* `OR` operators
+
+`AND` operator is used when you want to combine multiple conditions like **Between**, **Equals** or **Greater** whereas `OR` operator is used when you want to combine multiple conditions like Between, **Equals** or **Greater**. The output filtered will be based on one of the conditions.
+
+Refer to the code below:
+
+```
+visualisationObj.Data.Series.ValueFormatting("SeriesName" , "value >= 20000 and value < 40000").ShowValue(true);
+```
+
+In the above code two condtional formatting `>=` & `<` has been used and one logical operator `and` has been used. This filters the data of the chart and renders a chart with filtered data plot.

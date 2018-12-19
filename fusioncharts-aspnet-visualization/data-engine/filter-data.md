@@ -313,7 +313,7 @@ In the above tabular data, the Country column consists of string values. Let's a
 
 ```
 
-DataModel beginsWithOperation = model.Where("Country starts with A");
+DataModel beginsWithOperation = model.Where("Country begins with A");
 
 ```
 
