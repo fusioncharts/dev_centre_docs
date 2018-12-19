@@ -11,27 +11,16 @@ heading: Filter Data
 The predefined filters are:
 
 * Null
-
 * Not Null
-
 * Equal
-
 * Not Equal
-
 * Greater
-
 * Greater or Equal
-
 * Less
-
 * Less or Equal
-
 * Between
-
 * Begins with
-
 * Contains
-
 * Ends with
 
 In this article, we will apply all the above filter operators and check the result based on the DataTable shown below:
@@ -55,9 +44,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 In the above tabular data, the **Country** column consists of three countries. To filter **Null** data, run the following query:
 
 ```
-
 DataModel nullOperation = model.Where("Country is null");
-
 ```
 
 In the above code:
@@ -69,6 +56,15 @@ In the above code:
 The output after running the above query looks like:
 
 Country
+
+<table>
+	<tr>
+		<th>Country</th>
+	</tr>
+	<tr>
+		<td>		</td>
+	</tr>
+</table>
 
 The above table is empty because there is no Null value in the above data of the DataModel.
 
