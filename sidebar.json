@@ -1690,10 +1690,6 @@
                            {
                               "title": "Annotations",
                               "path": "/api/fusioncharts/namespaces/annotations"
-                           },
-                           {
-                              "title": "Debugger",
-                              "path": "/api/fusioncharts/namespaces/debugger"
                            }
                         ]
                      }
@@ -1823,6 +1819,10 @@
                {
                   "title": "Change Plot Type",
                   "path": "/fusiontime/getting-started/change-plot-type-in-fusiontime"
+               },
+               {
+                  "title": "Export Charts",
+                  "path": "/fusiontime/getting-started/export-charts-fusiontime"
                }
             ]
          },
