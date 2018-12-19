@@ -41,7 +41,7 @@ Order Date | Country | Sales
 1/7/2011 | United States | 5.48
 1/8/2011 | United States | 76.728
 1/8/2011 | United States | 10.43
-1/10/2011 | Australia | 2875.095
+1/10/2011 | Australia | 1575.095
 1/10/2011 | United States | 9.344
 1/11/2011 | India | 141.57
 1/11/2011 | United States | 51.94

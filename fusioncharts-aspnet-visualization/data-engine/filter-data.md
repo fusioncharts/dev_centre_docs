@@ -126,9 +126,7 @@ The above output consists of all the rows of the tabular data which means there 
 In the above tabular data, the **Country** column has three countries. To filter the data for **United States,** run the following query:
 
 ```
-
 DataModel equalOperation = model.Where("Country = United States");
-
 ```
 
 In the above code:
@@ -152,9 +150,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 In the above tabular data, the **Country** column has three countries. To omit the data for **United States**, run the following query:
 
 ```
-
 DataModel notEqualOperation = model.Where("Country != United States");
-
 ```
 
 In the above code:
@@ -181,9 +177,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 In the above tabular data, the **Sales** column consists of numeric value. Let's apply the `greater` operator to filter the values greater than **100**.
 
 ```
-
 DataModel greaterOperation = model.Where("Sales > 100");
-
 ```
 
 In the above code:
@@ -207,9 +201,7 @@ This filter operator is similar to **greater** filter which can be used when you
 In the above tabular data, the **Quantity** column consists of numeric value. Let's apply the Greater or Equal operator to filter the values greater and equal to **3**.
 
 ```
-
 DataModel greaterEqualOperation = model.Where("Quantity >= 3");
-
 ```
 
 In the above code:
@@ -238,9 +230,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 In the above tabular data, the **Sales** column consists of numeric value. Let's apply the **Less** operator to filter the values less than **100**.
 
 ```
-
 DataModel lessOperation = model.Where("Sales < 100");
-
 ```
 
 In the above code:
@@ -267,9 +257,7 @@ This filter operator is similar to **less** filter which can be used when you wa
 In the above tabular data, the **Quantity** column consists of numeric value. Let's apply the **less or equal** operator to filter the values less than and equal to **3**.
 
 ```
-
 DataModel lessEqualOperation = model.Where("Quantity <= 3");
-
 ```
 
 In the above code:
@@ -323,9 +311,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 In the above tabular data, the Country column consists of string values. Let's apply the **begins with** operator to filter the Countries whose name begins with **A**.
 
 ```
-
 DataModel beginsWithOperation = model.Where("Country begins with A");
-
 ```
 
 In the above code:
@@ -357,9 +343,7 @@ Contains operator can search:
 In the above tabular data, the Country column consists of string values. Let's apply the **contains** operator to filter Countries which contains "**d**".** **
 
 ```
-
 DataModel containsOperation = model.Where("Country contains d");
-
 ```
 
 In the above code:
@@ -386,9 +370,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 In the above tabular data, the Country column consists of string values. Let's apply the **ends with** operator to filter the Countries whose name ends with **a**.
 
 ```
-
 DataModel endsWithOperation = model.Where("Country ends with a");
-
 ```
 
 In the above code:
@@ -416,16 +398,14 @@ FusionCharts.NET supports logical operators which filters the data based on some
 
 * `OR` operators
 
-### `AND`
+### `AND` Operator
 
 `AND` operator is used when you want to combine multiple conditions like Between, Equals or Greater.
 
 In the above tabular data, the **Order Date** column consists of date/time values and the **Country** column has three countries. To filter the data for **United States** from **1/22/2011** to **1/24/2011**, run the following query:
 
 ```
-
 DataModel andOperator = model.Where("Order Date is between 1/22/2011 to 1/24/2011 and Country = United States");
-
 ```
 
 In the above code:
@@ -446,18 +426,15 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 1/24/2011 | United States | 40.08 | 6 | 4.31 
 1/24/2011 | United States | 5.94 | 3 | 0.95
 
-### `OR`
+### `OR` Operator
 
 `OR` operator is used when you want to combine multiple conditions like Between, Equals or Greater. The output filtered will be based on one of the conditions.
 
 In the above tabular data, the Country column has three countries. To combine more than one conditions, use more than one OR as part of the WHERE clause. To filter the data for Countries starting from **I** and **A**, run the following query:
 
 ```
-
-Name starts with M or Name starts with L
-
+// Name starts with M or Name starts with L
 DataModel orOperator = model.Where("Name starts with I or Name starts with A");
-
 ```
 
 In the above code:
@@ -476,4 +453,3 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 1/24/2011 | India | 59.25 | 5 | 4.27 
 1/26/2011 | India | 79.38 | 3 | 13.82 
 1/26/2011 | India | 342.51 | 7 | 13.22
-
