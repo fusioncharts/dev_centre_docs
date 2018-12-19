@@ -89,7 +89,6 @@ API|Type|Syntax|Description|
 `FontColor`|Hex Color Code|visualisationObj.SubCaption.FontColor = "#ff0000";|Sets the font color of the sub-caption|
 `Bold`|Boolean|visualisationObj.SubCaption.Bold = false;|Makes the sub-caption bold|
 `OnTop`|Boolean|visualisationObj.SubCaption.OnTop = true;|Places the sub-caption at the top of the chart|
-`Alignment`|CaptionObject.CaptionAlignment|visualisationObj.SubCaption.Alignment - SubCaptionObject.SubCaptionAlignment.LEFT;|Sets the alignment of the sub-caption|
 
 ### `Labels`
 
