@@ -24,7 +24,7 @@ Perl|14000|
 
 Now that you have the tabular data ready, let's see how to render the chart.
 
-## Render the chart:
+## Render the chart
 
 Create the `FirstChart.aspx.cs` file and do the following:
 
