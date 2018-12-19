@@ -13,9 +13,7 @@ Renders a chart inside a container element on a page. If the chart is already re
 **Syntax**
 
 ```
-
 vizualisationObj.Render(); // vishalizationObj is the chart object
-
 ```
 
 ### `Theme`
@@ -23,23 +21,16 @@ vizualisationObj.Render(); // vishalizationObj is the chart object
 Applies predefined themes to the chart. FusionCharts.Net visualization ships with the following predefined themes:
 
 * `fusion`
-
 * `gammel`
-
 * `candy`
-
 * `zune`
-
 * `ocean`
-
 * `carbon`
 
 **Syntax**
 
 ```
-
 visualisationObj.Theme = FusionChartsTheme.ThemeName.Fusion //Fusion Theme is applied
-
 ```
 
 ### `Height`
@@ -49,9 +40,7 @@ Sets the height of the canvas in pixels
 **Syntax**
 
 ```
-
 visualisationObj.Height = 400;
-
 ```
 
 ### `Width`
@@ -61,9 +50,7 @@ Sets the width of the canvas in pixels
 **Syntax**
 
 ```
-
 visualisationObj.Width = 400;
-
 ```
 
 ### `Dispose`
@@ -73,15 +60,12 @@ Disposes the chart completely.
 **Syntax**
 
 ```
-
 visualisationObj.Dispose();
-
 ```
 
 ### `Caption`
 
 These API's let you configure the cosmetics of chart caption.
-
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -93,12 +77,9 @@ API|Type|Syntax|Description|
 `OnTop`|Boolean|visualisationObj.Caption.OnTop = true;|Places the chart caption at the top of the chart|
 `Alignment`|CaptionObject.CaptionAlignment|visualisationObj.Caption.Alignment - CaptionObject.CaptionAlignment.LEFT;|Sets the alignment of the chart caption|
 
-
-
 ### `SubCaption`
 
-These API's let you configure the cosmetics of chart sub-caption.
-
+These APIs let you configure the cosmetics of chart sub-caption.
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -110,12 +91,39 @@ API|Type|Syntax|Description|
 `OnTop`|Boolean|visualisationObj.SubCaption.OnTop = true;|Places the sub-caption at the top of the chart|
 `Alignment`|CaptionObject.CaptionAlignment|visualisationObj.SubCaption.Alignment - SubCaptionObject.SubCaptionAlignment.LEFT;|Sets the alignment of the sub-caption|
 
+### `Labels`
 
+These APIs let you configure the x-axis labels.
+
+API|Type|Syntax|Description
+-|-|-|-
+`Show`|Boolean|visualisationObj.Labels.Show = true;
+`MaxHeight`|Integer|visualisationObj.Labels.MaxHeight = 500;
+`Ellipsis`|Boolean|visualisationObj.Labels.Ellipsis = true;
+`Display`|LabelFormat|visualisationObj.Labels.Display = LabelFormat.DisplayType.AUTO;
+`Rotate`|Boolean|visualisationObj.Labels.Rotate  = true;
+`Slant`|Boolean|visualisationObj.Labels.Slant  = true;
+`StaggerLines`|Integer|visualisationObj.Labels.StaggerLines  = 2;
+`Step`|Integer|visualisationObj.Labels.Step  = 1;
+`Binsize`|Integer|visualisationObj.Labels.BinSize  = 1;
+
+### `Values`
+
+These APIs let you configure the data plot values.
+
+API|Type|Syntax|Description
+-|-|-|-
+`Show`|Boolean|visualisationObj.Values.Show = true;
+`ShowLimits`|Boolean|visualisationObj.Values.ShowLimits = true;
+`Rotate`|Boolean|visualisationObj.Values.Rotate = true;
+`ShowDivLineValues`|Boolean|visualisationObj.Values.ShowDivLineValues = true;
+`Position`|String|visualisationObj.Values.Position = ValueFormat.ValuePosition.AUTO;
+`PlotHighlightEffect`|String|visualisationObj.Values.PlotHighlightEffect = "fadeout|color=#ff0000, alpha=60";
+`PlaceValueInside`|Boolean|visualisationObj.Values.PlaceValueInside =false;
 
 ### `Tooltip`
 
 These API's let you control the tool tip. You can set the background color, border color, separator character and few other details.
-
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -128,12 +136,9 @@ API|Type|Syntax|Description|
 `BorderAlpha`|Integer|visualisationObj.ToolTip.BorderAlpha = 1;|Sets the transparency of the border of the tooltip  |
 `PlotToolText`|String|visualisationObj.ToolTip.PlotToolText = "ToolTip Text";|Sets the tooltip text|
 
-
-
 ### `Legend`
 
 In a chart, the name of each dataset shows up in the legend of the chart. Using the API's below, you can configure the functional and cosmetic properties of the legend.
-
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -145,12 +150,9 @@ API|Type|Syntax|Description|
 `FontColor`|Hex Color Code|visualisationObj.Legend.FontColor = "#ff00f0";|Sets the font color of the legend text|
 `Bold`|Boolean|visualisationObj.Legend.Bold = false;|Makes the legend text bold.|
 
-
-
 ### `Export`
 
 FusionCharts.Net has the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well. Using the API's below, you can configure the functional properties to export your chart.
-
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -163,8 +165,6 @@ API|Type|Syntax|Description|
 `Window`|BaseExportObject.ExportTargetWindow|visualisationObj.Export.Window = BaseExportObject.ExportTargetWindow.BLANK;|Sets whether the exported chart opens in the same window or a new window|
 `Action`|BaseExportObject.ExportAction|visualisationObj.Export.Action = BaseExportObject.ExportAction.SAVE;|Sets the action to be performed when the Export chart option is clicked|
 
-
-
 ## Chart Specific API's
 
 Following are the API's which only have support on **Column**, **Bar**, **Area**, **Line**, **Spline** and **Stacked** Charts.
@@ -172,7 +172,6 @@ Following are the API's which only have support on **Column**, **Bar**, **Area**
 ### `XAxis`
 
 To configure the x-axis name (title), you can use the following APIs.
-
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -186,12 +185,9 @@ API|Type|Syntax|Description|
 `BGColor`|Hex Color Code|visualisationObj.XAxis.BGColor = "#000000";|Sets the background color of the X-axis title|
 `BorderThickness`|Integer|visualisationObj.XAxis.BorderThickness = 2;|Sets the border thickness of the X-axis title|
 
-
-
 ### `YAxis`
 
 To configure the y-axis name (title), you can use the following APIs.
-
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -205,40 +201,29 @@ API|Type|Syntax|Description|
 `BGColor`|Hex Color Code|visualisationObj.YAxis.BGColor = "#000000";|Sets the background color of the Y-axis title|
 `BorderThickness`|Integer|visualisationObj.YAxis.BorderThickness = 2;|Sets the border thickness of the Y-axis title|
 
-
-
 ### `Data`
 
 Data is an object used to define the values to be plotted for individual data series. The instances of the DataModel in **Data** object is listed below:
 
-1.** source:** FusionCharts Data Model
+* ** source:** FusionCharts Data Model
 
 ```
-
 visualisationObj.Data.source = source; //Source is an instance of the DataModel
-
 ```
 
-2. **CategoryField**(string field_name)
-
-	
+* **CategoryField**(string field_name)
 
 ```
-
 visualisationObj.Data.CategoryField("country");
-
 ```
 
-3. **SeriesFields**(string[ ] fields_name)
+* **SeriesFields**(string[ ] fields_name)
 
 ```
-
 visualisationObj.Data.SeriesFields("Sales,Total_Purchase");
-
 ```
 
-4. **Categories**:  Category Object
-
+* **Categories**: Category Object
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -246,10 +231,7 @@ API|Type|Syntax|Description|
 `FontName`|String|visualisationObj.Data.Categories.FontName = "Arial";|Sets the font of the X-axis title|
 `FontColor`|Hox Color Code|visualisationObj.Data.Categories.FontColor = "#ffffff";|Sets the font color of the X-axis title|
 
-
-
-* **CategoryFormatting: **String category
-
+* **CategoryFormatting: ** String category
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -265,12 +247,9 @@ BorderColor|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("
 BGColor|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("india").BGColor("000000");|Sets the background color for category labels|
 Alpha|Integer|visualisationObj.Data.Categories.CategoryFormatting("india").Alpha(100);|Sets the transparency of category labels|
 
+* **Series:** String Object
 
-
-5. **Series:** String Object
-
-* **SeriesFormatting:** String
-
+	* **SeriesFormatting:** String
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -281,10 +260,7 @@ API|Type|Syntax|Description|
 `Visible`|Boolean|visualisationObj.Data.Series.SeriesFormatting("india").Visible(true);|Enables/disables visibility of a data series|
 `ShowValues`|Boolean|visualisationObj.Data.Series.SeriesFormatting("india").ShowValues(True);|Shows/hides values of a data series|
 
-
-
-* ValueFormatting: String
-
+	* ValueFormatting: String
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -297,40 +273,31 @@ API|Type|Syntax|Description|
 `ToolText`|String|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ToolText(Text);|Sets tooltip text for data value|
 `ValuePosition`|MultiSeriesDataElement.ValuePlaced position|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ValuePosition(MultiSeriesDataElement.ValuePlaced position.ABOVE);|Sets display position for data value|
 
-
-
 Following are the API's which only have support on **Pie**, **Doughnut**, **Funnel** and **Pyramid** Charts.
 
 ### `Data`
 
 Data is an object used to define the values to be plotted for individual data series. The instances of the DataModel in **Data** object is listed below:
 
-1.** source:** FusionCharts Data Model
+* ** source:** FusionCharts Data Model
 
 ```
-
 visualisationObj.Data.source = source; //Source is an instance of the DataModel
-
 ```
 
-2. **CategoryField**: String
+* **CategoryField**: String
 
 ```
-
 visualisationObj.Data.CategoryField("Country");
-
 ```
 
-2. **SeriesField**: String
+* **SeriesField**: String
 
 ```
-
 visualisationObj.Data.SeriesField("Country");
-
 ```
 
-3. **LabelFormatting**: String
-
+* **LabelFormatting**: String
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -346,10 +313,7 @@ BorderColor|Hex Color Code|visualisationObj.Data.LabelFormatting("Name").BorderC
 BGColor|Hex Color Code|visualisationObj.Data.LabelFormatting("Name").BGColor("000000");|Sets background color for data label|
 Alpha|Integer|visualisationObj.Data.LabelFormatting("Name").Alpha(100);|Sets data label transparency between "0" for transparent and "100" for opaque|
 
-
-
 4. **ValueFormatting**: String
-
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -360,6 +324,3 @@ API|Type|Syntax|Description|
 `Link`|LinkURL|visualisationObj.Data.ValueFormatting(""formatting_formula").Link(LinkURL);|Links data value to external resource|
 `DisplayValue`|String|visualisationObj.Data.ValueFormatting(""formatting_formula").DisplayValue(value > 100);|Sets display text for data value|
 `ToolText`|String|visualisationObj.Data.ValueFormatting(""formatting_formula").ToolText(Text);|Sets tooltip text for data value|
-
-
-
