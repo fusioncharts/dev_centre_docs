@@ -24,12 +24,8 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 In the above data, `select` operation is applied as shown below:
 
-> Operations are always applied to the data in the DataModel.
-
 ```  
-
 DataModel newModel = model.SelectColumns("Country","Sales");
-
 ```
 
 The new tabular data after applying `select` operation is shown below:
@@ -45,4 +41,3 @@ India | 59.25
 United States | 5.94 
 India | 79.38
 India | 342.51
-
