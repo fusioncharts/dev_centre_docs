@@ -55,8 +55,6 @@ In the above code:
 
 The output after running the above query looks like:
 
-Country
-
 <table>
 	<tr>
 		<th>Country</th>
@@ -75,9 +73,7 @@ The above table is empty because there is no Null value in the above data of the
 In the above tabular data, the **Country** column consists of three countries. To filter **not** **Null** data, run the following query:
 
 ```
-
 DataModel notNullOperation = model.Where("Country is not null");
-
 ```
 
 In the above code:
@@ -88,17 +84,38 @@ In the above code:
 
 The output after running the above query looks like:
 
-Country
----
-Australia
-United States
-Australia
-Australia
-United States
-India
-United States
-India
-India
+<table>
+	<tr>
+		<th>Country</th>
+	</tr>
+	<tr>
+		<td>Australia</td>
+	</tr>
+	<tr>
+		<td>United States</td>
+	</tr>
+	<tr>
+		<td>Australia</td>
+	</tr>
+	<tr>
+		<td>Australia</td>
+	</tr>
+	<tr>
+		<td>United States</td>
+	</tr>
+	<tr>
+		<td>India</td>
+	</tr>
+	<tr>
+		<td>United States</td>
+	</tr>
+	<tr>
+		<td>India</td>
+	</tr>
+	<tr>
+		<td>India</td>
+	</tr>
+</table>
 
 The above output consists of all the rows of the tabular data which means there is no Null value in the above data of the DataModel.
 
