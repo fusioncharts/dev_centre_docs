@@ -33,8 +33,9 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 <div>2. Install the `fusioncharts` package</div>
 <pre><code class="language-javascript">
     $ npm install fusioncharts
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -65,8 +66,9 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;!-- Step 6 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab localfiles-tab'>
@@ -97,8 +99,9 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;!-- Step 6 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -357,8 +360,9 @@ chartInstance.render()
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/body&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -447,8 +451,9 @@ chartInstance.render()
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 
@@ -538,8 +543,9 @@ chartInstance.render()
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -653,8 +659,9 @@ chartInstance.render()
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/body&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -896,8 +903,9 @@ chartInstance.render()
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 
@@ -1140,8 +1148,9 @@ chartInstance.render()
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

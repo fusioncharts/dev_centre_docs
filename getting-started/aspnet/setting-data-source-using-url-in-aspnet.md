@@ -103,8 +103,9 @@ public partial class JsonUrlData : System.Web.UI.Page
         Literal1.Text = columnChart.Render();
     }
 }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab vb-tab'>
@@ -124,8 +125,9 @@ Dim columnChart As New Chart("column2d", "columnchart", "700", "400", "jsonurl",
 Literal1.Text = columnChart.Render()
 End Sub
 End Class
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -167,8 +169,9 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab vb-tab'>
@@ -194,8 +197,9 @@ The HTML template for `aspx` file is shown below:
     &lt;/form&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -268,8 +272,9 @@ public partial class XmlDataUrl : System.Web.UI.Page
         Literal1.Text = columnChart.Render();
     }
 }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab vb-tab'>
@@ -288,8 +293,9 @@ Dim columnChart As New Chart("column2d", "columnchart", "700", "400", "xmlurl", 
 Literal1.Text = columnChart.Render()
 End Sub
 End Class
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -327,8 +333,9 @@ The HTML template for `aspx` file is shown below:
     &lt;/form&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab vb-tab'>
@@ -358,8 +365,9 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

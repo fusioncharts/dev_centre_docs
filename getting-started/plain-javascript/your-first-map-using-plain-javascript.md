@@ -24,9 +24,9 @@ Install **FusionCharts** using any of the following steps:
 <div><strong>To install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-PowerShell">
     $ npm install fusioncharts
-</code></pre>
-
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -51,8 +51,9 @@ Install **FusionCharts** using any of the following steps:
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab localfiles-tab'>
@@ -77,8 +78,9 @@ Install **FusionCharts** using any of the following steps:
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -399,8 +401,9 @@ var annualPopulation =   new  FusionCharts({
 });
 // Render
 annualPopulation.render();
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -491,8 +494,9 @@ annualPopulation.render();
     &lt;div id="chart-container"&gt;FusionMaps XT will load map here!&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 
@@ -584,8 +588,9 @@ annualPopulation.render();
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -726,9 +731,9 @@ var webVisit =   new  FusionCharts({
 });
 // Render
 webVisit.render();
-</code></pre>
-
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -784,8 +789,9 @@ webVisit.render();
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab localfiles-tab'>
@@ -841,8 +847,9 @@ webVisit.render();
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

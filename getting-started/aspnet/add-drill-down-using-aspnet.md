@@ -171,8 +171,9 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
           &lt;/div&gt;
         &lt;/body&gt;
     &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab xml-tab'>
@@ -194,8 +195,9 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
         &lt;/div&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -237,8 +239,9 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
             Literal1.Text = sales.Render();
         }
     }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab xml-tab'>
@@ -270,8 +273,9 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
             Literal1.Text = sales.Render()
         End Sub
     End Class
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copied!'>COPY</button>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
