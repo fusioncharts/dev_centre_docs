@@ -10,6 +10,7 @@
             "subCaption": "2017 - 2018",
             "xAxisName": "Programming Language",
             "yAxisName": "Users",
+            "showValues": "1",
             "theme": "fusion"
         },
         "data": [{
