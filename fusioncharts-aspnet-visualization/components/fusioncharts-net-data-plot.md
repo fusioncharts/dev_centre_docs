@@ -72,7 +72,27 @@ The chart will look as shown below:
 
 ### Set the Display Value
 
+To display a different value instead of the numeric value of the data plot, set the value of `DisplayValue` property to the text you want to display. Refer to the code given below:
+
+```
+visualisationObj.Data.Series.ValueFormatting("C#").DisplayValue("27000 Users");
+```
+
+The chart will look as shown below:
+
+{% embed_chart fusioncharts-net-visualization-data-plot-display-value-example-6.js %}
+
 ### Set the Tooltext
+
+Set the tooltip text for the data plot as string to the `ToolText` properties. Refer to the code given below:
+
+```
+visualisationObj.Data.Series.ValueFormatting("C#").ToolText("Programming Language:C#");
+```
+
+The chart will look as shown below:
+
+{% embed_chart fusioncharts-net-visualization-data-plot-text-example-7.js %}
 
 ### Data Value Position
 
@@ -86,3 +106,16 @@ visualisationObj.Values.Position = ValueFormat.ValuePosition.AUTO;
 
 ## Conditional Data Plot Formatting
 
+Using FusionCharts.NET, you can also apply conditional formatting to the data plots of the chart and then apply the above customizations.
+
+Following is the list of operations which can be applied to the data plot of the chart.
+
+Operation | Data Type
+--- | ---
+Null | 
+Not Null
+Equal
+Not Equal
+Starts With
+Contains
+Ends With
