@@ -97,15 +97,15 @@ These APIs let you configure the x-axis labels.
 
 API|Type|Syntax|Description
 -|-|-|-
-`Show`|Boolean|visualisationObj.Labels.Show = true;
-`MaxHeight`|Integer|visualisationObj.Labels.MaxHeight = 500;
-`Ellipsis`|Boolean|visualisationObj.Labels.Ellipsis = true;
-`Display`|LabelFormat|visualisationObj.Labels.Display = LabelFormat.DisplayType.AUTO;
-`Rotate`|Boolean|visualisationObj.Labels.Rotate  = true;
-`Slant`|Boolean|visualisationObj.Labels.Slant  = true;
-`StaggerLines`|Integer|visualisationObj.Labels.StaggerLines  = 2;
-`Step`|Integer|visualisationObj.Labels.Step  = 1;
-`Binsize`|Integer|visualisationObj.Labels.BinSize  = 1;
+`Show`|Boolean|visualisationObj.Labels.Show = true;|Shows/Hides X-axis labels
+`MaxHeight`|Integer|visualisationObj.Labels.MaxHeight = 500;|Sets maximum height of X-axis labels
+`Ellipsis`|Boolean|visualisationObj.Labels.Ellipsis = true;|Truncates X-axis label text when it’s too long, and adds ellipsis at the end
+`Display`|LabelFormat|visualisationObj.Labels.Display = LabelFormat.DisplayType.AUTO;|Sets display mode for label to `AUTO`, `WRAP`, `STAGGER`, `ROTATE`, or `NONE`
+`Rotate`|Boolean|visualisationObj.Labels.Rotate  = true;|Rotates X-axis labels and displays them in a vertical direction
+`Slant`|Boolean|visualisationObj.Labels.Slant  = true;|Displays X-axis labels in a slanted manner
+`StaggerLines`|Integer|visualisationObj.Labels.StaggerLines  = 2;|Displays data labels across multiple levels
+`Step`|Integer|visualisationObj.Labels.Step  = 1;|Displays every nth data label (where n is the step value), skipping the rest
+`Binsize`|Integer|visualisationObj.Labels.BinSize  = 1;|Sets the minimum width of a label in pixels (with a minimum value of 1)
 
 ### `Values`
 
@@ -113,13 +113,13 @@ These APIs let you configure the data plot values.
 
 API|Type|Syntax|Description
 -|-|-|-
-`Show`|Boolean|visualisationObj.Values.Show = true;
-`ShowLimits`|Boolean|visualisationObj.Values.ShowLimits = true;
-`Rotate`|Boolean|visualisationObj.Values.Rotate = true;
-`ShowDivLineValues`|Boolean|visualisationObj.Values.ShowDivLineValues = true;
-`Position`|String|visualisationObj.Values.Position = ValueFormat.ValuePosition.AUTO;
-`PlotHighlightEffect`|String|visualisationObj.Values.PlotHighlightEffect = "fadeout|color=#ff0000, alpha=60";
-`PlaceValueInside`|Boolean|visualisationObj.Values.PlaceValueInside =false;
+`Show`|Boolean|visualisationObj.Values.Show = true;|Shows/hides data values
+`ShowLimits`|Boolean|visualisationObj.Values.ShowLimits = true;|Show/hide minimum and maximum data values
+`Rotate`|Boolean|visualisationObj.Values.Rotate = true;|Rotates data values and displays them in a vertical direction
+`ShowDivLineValues`|Boolean|visualisationObj.Values.ShowDivLineValues = true;|Shows/hides values of divisional lines
+`Position`|ValueFormat.ValuePosition|visualisationObj.Values.Position = ValueFormat.ValuePosition.AUTO;|Sets the position of the data value as `AUTO`, `ABOVE`, or `BELOW`
+`PlotHighlightEffect`|String|visualisationObj.Values.PlotHighlightEffect = "fadeout|color=#ff0000, alpha=60";|Highlights data values
+`PlaceValueInside`|Boolean|visualisationObj.Values.PlaceValueInside =false;|Displays data values inside data plots
 
 ### `Tooltip`
 
