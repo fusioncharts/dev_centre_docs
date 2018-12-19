@@ -78,4 +78,6 @@ To show the data values inside the column, set the `PlaceValueInside` property t
 visualisationObj.Values.PlaceValueInside =true;
 ```
 
+The chart looks like as shown below:
+
 {% embed_chart fusioncharts-net-visualization-place-value-example-4.js %}

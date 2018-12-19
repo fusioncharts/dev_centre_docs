@@ -11,27 +11,16 @@ heading: Filter Data
 The predefined filters are:
 
 * Null
-
 * Not Null
-
 * Equal
-
 * Not Equal
-
 * Greater
-
 * Greater or Equal
-
 * Less
-
 * Less or Equal
-
-* In Between
-
+* Between
 * Begins with
-
 * Contains
-
 * Ends with
 
 In this article, we will apply all the above filter operators and check the result based on the DataTable shown below:
@@ -55,9 +44,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 In the above tabular data, the **Country** column consists of three countries. To filter **Null** data, run the following query:
 
 ```
-
 DataModel nullOperation = model.Where("Country is null");
-
 ```
 
 In the above code:
@@ -69,6 +56,15 @@ In the above code:
 The output after running the above query looks like:
 
 Country
+
+<table>
+	<tr>
+		<th>Country</th>
+	</tr>
+	<tr>
+		<td>		</td>
+	</tr>
+</table>
 
 The above table is empty because there is no Null value in the above data of the DataModel.
 
@@ -275,16 +271,14 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 1/24/2011 | United States | 5.94 | 3 | 0.95 
 1/26/2011 | India | 79.38 | 3 | 13.82 
 
-## In Between
+## Between
 
 **Between** is a filter operator which can be used when you want to filter the data between specific date/time or value.
 
 In the above tabular data, the **Order Date** column consists of date/time values. Let's apply the **between** operator to filter the values from **1/22/2011** to **1/24/2011**.
 
 ```
-
 DataModel betweenOperation = model.Where("Order Date is between 1/22/2011 to 1/24/2011");
-
 ```
 
 In the above code:
@@ -313,7 +307,7 @@ In the above tabular data, the Country column consists of string values. Let's a
 
 ```
 
-DataModel beginsWithOperation = model.Where("Country starts with A");
+DataModel beginsWithOperation = model.Where("Country begins with A");
 
 ```
 
