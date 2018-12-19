@@ -37,17 +37,12 @@ When you sort one or more columns of a tabular data in ascending order, the data
 The code to sort the above tabular data with respect to the **Sales** column in ascending order is given below:
 
 ```
-
-SortColumn columnData = new SortColumn
-
- {
-
-  	{"Sales",SortColumn.Order.ASC }
-
- };
-
+SortColumn columnData = new SortColumn {
+  	{
+  		"Sales",SortColumn.Order.ASC
+  	}
+};
 DataModel newModel = model.OrderBy(columnData);
-
 ```
 
 The new data after setting the `Sales` column in ascending order is shown below:
