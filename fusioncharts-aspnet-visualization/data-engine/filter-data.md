@@ -26,7 +26,7 @@ The predefined filters are:
 
 * Less or Equal
 
-* In Between
+* Between
 
 * Begins with
 
@@ -275,16 +275,14 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 1/24/2011 | United States | 5.94 | 3 | 0.95 
 1/26/2011 | India | 79.38 | 3 | 13.82 
 
-## In Between
+## Between
 
 **Between** is a filter operator which can be used when you want to filter the data between specific date/time or value.
 
 In the above tabular data, the **Order Date** column consists of date/time values. Let's apply the **between** operator to filter the values from **1/22/2011** to **1/24/2011**.
 
 ```
-
 DataModel betweenOperation = model.Where("Order Date is between 1/22/2011 to 1/24/2011");
-
 ```
 
 In the above code:
