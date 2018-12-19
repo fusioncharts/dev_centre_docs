@@ -112,18 +112,18 @@ Following is the list of operations which can be applied to the data plot of the
 
 Operation | Data Type | Query
 --- | --- | ---
-Null | String, Number, Date/Time | &lt;field&gt; is null
-Not Null | String, Number, Date/Time| &lt;field&gt; is not null
-Equal | String, Number, Date/Time | &lt;field&gt; = &lt;value&gt;
-Not Equal | String, Number, Date/Time | &lt;field&gt; != &lt;value&gt;
-Begins With | String | &lt;field&gt; begins with &lt;value&gt;
-Contains | String | &lt;field&gt; contains &lt;value&gt;
-Ends With | String | &lt;field&gt; ends with &lt;value&gt;
-Greater | Number, Date/Time | &lt;field&gt; > &lt;value&gt;
-Greater or Equal | Number, Date/Time | &lt;field&gt; >= &lt;value&gt;
-Less | Number, Date/Time | &lt;field&gt; < &lt;value&gt;
-Less or Equal | Number, Date/Time | &lt;field&gt; <= &lt;value&gt;
-In Between | Number, Date/Time | &lt;field&gt; is between &lt;value1&gt; to &lt;value2&gt;
+`Null` | String, Number, Date/Time | &lt;field&gt; is null
+`Not Null` | String, Number, Date/Time| &lt;field&gt; is not null
+`Equal` | String, Number, Date/Time | &lt;field&gt; = &lt;value&gt;
+`Not Equal` | String, Number, Date/Time | &lt;field&gt; != &lt;value&gt;
+`Begins With` | String | &lt;field&gt; begins with &lt;value&gt;
+`Contains` | String | &lt;field&gt; contains &lt;value&gt;
+`Ends With` | String | &lt;field&gt; ends with &lt;value&gt;
+`Greater` | Number, Date/Time | &lt;field&gt; > &lt;value&gt;
+`Greater or Equal` | Number, Date/Time | &lt;field&gt; >= &lt;value&gt;
+`Less` | Number, Date/Time | &lt;field&gt; < &lt;value&gt;
+`Less or Equal` | Number, Date/Time | &lt;field&gt; <= &lt;value&gt;
+`In Between` | Number, Date/Time | &lt;field&gt; is between &lt;value1&gt; to &lt;value2&gt;
 
 ## Logical Operator
 
