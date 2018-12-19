@@ -25,18 +25,15 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 In the above tabular data, `TopRecords` operation is applied as shown below:
 
 ```  
-
 DataModel newModel = model.TopRecords(5);
-
 ```
 
 The output after applying `TopRecords` operation is shown below:
 
-Country | Sales
+Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---
 1/22/2011 | Australia | 59.724 | 6 | 27.43
 1/22/2011 | United States | 125.248 | 3 | 3.64 
 1/22/2011 | Australia | 6.318 | 1 | 1.77
 1/24/2011 | Australia | 110.808 | 3 | 9.92 
 1/24/2011 | United States | 40.08 | 6 | 4.31
-

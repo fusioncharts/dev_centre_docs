@@ -30,7 +30,7 @@ Applies predefined themes to the chart. FusionCharts.Net visualization ships wit
 **Syntax**
 
 ```
-visualisationObj.Theme = FusionChartsTheme.ThemeName.Fusion //Fusion Theme is applied
+visualisationObj.Theme = FusionChartsTheme.ThemeName.FUSION //Fusion Theme is applied
 ```
 
 ### `Height`
@@ -40,7 +40,7 @@ Sets the height of the canvas in pixels
 **Syntax**
 
 ```
-visualisationObj.Height = 400;
+visualisationObj.Height = "400";
 ```
 
 ### `Width`
@@ -50,7 +50,7 @@ Sets the width of the canvas in pixels
 **Syntax**
 
 ```
-visualisationObj.Width = 400;
+visualisationObj.Width = "400";
 ```
 
 ### `Dispose`
@@ -75,7 +75,7 @@ API|Type|Syntax|Description|
 `FontColor`|Hex Color Code|visualisationObj.Caption.FontColor = "#ff0000";|Sets the font color of the caption|
 `Bold`|Boolean|visualisationObj.Caption.Bold = false;|Makes the chart caption bold|
 `OnTop`|Boolean|visualisationObj.Caption.OnTop = true;|Places the chart caption at the top of the chart|
-`Alignment`|CaptionObject.CaptionAlignment|visualisationObj.Caption.Alignment - CaptionObject.CaptionAlignment.LEFT;|Sets the alignment of the chart caption|
+`Alignment`|CaptionObject.CaptionAlignment|visualisationObj.Caption.Alignment = CaptionObject.CaptionAlignment.LEFT;|Sets the alignment of the chart caption|
 
 ### `SubCaption`
 
