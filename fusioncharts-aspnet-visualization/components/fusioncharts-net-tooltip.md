@@ -19,7 +19,7 @@ You can customize tooltips by using different properties of the `ToolTip` object
 To hide tooltips, set the value of the `Show` properties to `true`. Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.Show = true;
+visualizationObj.ToolTip.Show = true;
 ```
 
 ### Customize Background Color
@@ -27,7 +27,7 @@ visualisationObj.ToolTip.Show = true;
 Use the hex code type `BGColor` properties to set the background color for tooltips. Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.BGColor = "#ffffff";
+visualizationObj.ToolTip.BGColor = "#ffffff";
 ```
 
 ### Customize Border Color
@@ -35,7 +35,7 @@ visualisationObj.ToolTip.BGColor = "#ffffff";
 Use the hex code type `BorderColor` properties to set the border color for tooltips. Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.BorderColor = "#000000";
+visualizationObj.ToolTip.BorderColor = "#000000";
 ```
 
 ### Customize Separator Character
@@ -43,7 +43,7 @@ visualisationObj.ToolTip.BorderColor = "#000000";
 Use the character type `SepChar` properties to set the separator character, which should be displayed in tooltips. This will come in handy when you want to display multiple data values in the tooltip. Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.SepChar = '/';|
+visualizationObj.ToolTip.SepChar = '/';|
 ```
 
 ### Display Tooltip Shadow
@@ -51,7 +51,7 @@ visualisationObj.ToolTip.SepChar = '/';|
 Use the Boolean type `ShowShadow` properties to set whether a shadow should be displayed below the tooltip. Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.ShowShadow = false;
+visualizationObj.ToolTip.ShowShadow = false;
 ```
 
 ### Customize Tooltip Text Color
@@ -59,7 +59,7 @@ visualisationObj.ToolTip.ShowShadow = false;
 Use the hex code type `Color` properties to set the text color for tooltips. Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.Color = "000000";
+visualizationObj.ToolTip.Color = "000000";
 ```
 
 ### Set Border Transparency
@@ -67,7 +67,7 @@ visualisationObj.ToolTip.Color = "000000";
 Use the integer type `BorderAlpha` properties to set the transparency of the tooltip border. `BorderAlpha` accepts values between `0` (transparent) and `100` (opaque). Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.BorderAlpha = 100;
+visualizationObj.ToolTip.BorderAlpha = 100;
 ```
 
 ### Set Tooltip Text
@@ -75,7 +75,7 @@ visualisationObj.ToolTip.BorderAlpha = 100;
 Use the string type `PlotToolText` properties to set the text for a tooltip. Refer to the code given below:
 
 ```
-visualisationObj.ToolTip.PlotToolText = "Column Chart Tooltip Text";
+visualizationObj.ToolTip.PlotToolText = "Column Chart Tooltip Text";
 ```
 
 The chart is shown below:

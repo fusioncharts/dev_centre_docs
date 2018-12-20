@@ -13,7 +13,7 @@ Renders a chart inside a container element on a page. If the chart is already re
 **Syntax**
 
 ```
-vizualisationObj.Render(); // vishalizationObj is the chart object
+visualizationObj.Render(); // visualizationObj is the chart object
 ```
 
 ### `Theme`
@@ -30,7 +30,7 @@ Applies predefined themes to the chart. FusionCharts.Net visualization ships wit
 **Syntax**
 
 ```
-visualisationObj.Theme = FusionChartsTheme.ThemeName.FUSION //Fusion Theme is applied
+visualizationObj.Theme = FusionChartsTheme.ThemeName.FUSION //Fusion Theme is applied
 ```
 
 ### `Height`
@@ -40,7 +40,7 @@ Sets the height of the canvas in pixels
 **Syntax**
 
 ```
-visualisationObj.Height = "400";
+visualizationObj.Height = "400";
 ```
 
 ### `Width`
@@ -50,7 +50,7 @@ Sets the width of the canvas in pixels
 **Syntax**
 
 ```
-visualisationObj.Width = "400";
+visualizationObj.Width = "400";
 ```
 
 ### `Dispose`
@@ -60,7 +60,7 @@ Disposes the chart completely.
 **Syntax**
 
 ```
-visualisationObj.Dispose();
+visualizationObj.Dispose();
 ```
 
 ### `Caption`
@@ -69,13 +69,13 @@ These API's let you configure the cosmetics of chart caption.
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Text`|String|visualisationObj.Caption.Text = "Chart Title";|Sets the caption of the chart|
-`FontSize`|Integer|visualisationObj.Caption.FontSize = 16;|Sets the font size of the caption|
-`FontName`|String|visualisationObj.Caption.FontName = "Arial";|Sets the font of the caption|
-`FontColor`|Hex Color Code|visualisationObj.Caption.FontColor = "#ff0000";|Sets the font color of the caption|
-`Bold`|Boolean|visualisationObj.Caption.Bold = false;|Makes the chart caption bold|
-`OnTop`|Boolean|visualisationObj.Caption.OnTop = true;|Places the chart caption at the top of the chart|
-`Alignment`|CaptionObject.CaptionAlignment|visualisationObj.Caption.Alignment = CaptionObject.CaptionAlignment.LEFT;|Sets the alignment of the chart caption|
+`Text`|String|visualizationObj.Caption.Text = "Chart Title";|Sets the caption of the chart|
+`FontSize`|Integer|visualizationObj.Caption.FontSize = 16;|Sets the font size of the caption|
+`FontName`|String|visualizationObj.Caption.FontName = "Arial";|Sets the font of the caption|
+`FontColor`|Hex Color Code|visualizationObj.Caption.FontColor = "#ff0000";|Sets the font color of the caption|
+`Bold`|Boolean|visualizationObj.Caption.Bold = false;|Makes the chart caption bold|
+`OnTop`|Boolean|visualizationObj.Caption.OnTop = true;|Places the chart caption at the top of the chart|
+`Alignment`|CaptionObject.CaptionAlignment|visualizationObj.Caption.Alignment = CaptionObject.CaptionAlignment.LEFT;|Sets the alignment of the chart caption|
 
 ### `SubCaption`
 
@@ -83,12 +83,12 @@ These APIs let you configure the cosmetics of chart sub-caption.
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Text`|String|visualisationObj.SubCaption.Text = "Chart Sub Title";|Sets the sub-caption of the chart|
-`FontSize`|Integer|visualisationObj.SubCaption.FontSize = 16;|Sets the font size of the sub-caption|
-`FontName`|String|visualisationObj.SubCaption.FontName = "Arial";|Sets the font of the sub-caption|
-`FontColor`|Hex Color Code|visualisationObj.SubCaption.FontColor = "#ff0000";|Sets the font color of the sub-caption|
-`Bold`|Boolean|visualisationObj.SubCaption.Bold = false;|Makes the sub-caption bold|
-`OnTop`|Boolean|visualisationObj.SubCaption.OnTop = true;|Places the sub-caption at the top of the chart|
+`Text`|String|visualizationObj.SubCaption.Text = "Chart Sub Title";|Sets the sub-caption of the chart|
+`FontSize`|Integer|visualizationObj.SubCaption.FontSize = 16;|Sets the font size of the sub-caption|
+`FontName`|String|visualizationObj.SubCaption.FontName = "Arial";|Sets the font of the sub-caption|
+`FontColor`|Hex Color Code|visualizationObj.SubCaption.FontColor = "#ff0000";|Sets the font color of the sub-caption|
+`Bold`|Boolean|visualizationObj.SubCaption.Bold = false;|Makes the sub-caption bold|
+`OnTop`|Boolean|visualizationObj.SubCaption.OnTop = true;|Places the sub-caption at the top of the chart|
 
 ### `Labels`
 
@@ -96,15 +96,15 @@ These APIs let you configure the x-axis labels.
 
 API|Type|Syntax|Description
 -|-|-|-
-`Show`|Boolean|visualisationObj.Labels.Show = true;|Shows/Hides X-axis labels
-`MaxHeight`|Integer|visualisationObj.Labels.MaxHeight = 500;|Sets maximum height of X-axis labels
-`Ellipsis`|Boolean|visualisationObj.Labels.Ellipsis = true;|Truncates X-axis label text when it’s too long, and adds ellipsis at the end
-`Display`|LabelFormat|visualisationObj.Labels.Display = LabelFormat.DisplayType.AUTO;|Sets display mode for label to `AUTO`, `WRAP`, `STAGGER`, `ROTATE`, or `NONE`
-`Rotate`|Boolean|visualisationObj.Labels.Rotate  = true;|Rotates X-axis labels and displays them in a vertical direction
-`Slant`|Boolean|visualisationObj.Labels.Slant  = true;|Displays X-axis labels in a slanted manner
-`StaggerLines`|Integer|visualisationObj.Labels.StaggerLines  = 2;|Displays data labels across multiple levels
-`Step`|Integer|visualisationObj.Labels.Step  = 1;|Displays every nth data label (where n is the step value), skipping the rest
-`Binsize`|Integer|visualisationObj.Labels.BinSize  = 1;|Sets the minimum width of a label in pixels (with a minimum value of 1)
+`Show`|Boolean|visualizationObj.Labels.Show = true;|Shows/Hides X-axis labels
+`MaxHeight`|Integer|visualizationObj.Labels.MaxHeight = 500;|Sets maximum height of X-axis labels
+`Ellipsis`|Boolean|visualizationObj.Labels.Ellipsis = true;|Truncates X-axis label text when it’s too long, and adds ellipsis at the end
+`Display`|LabelFormat|visualizationObj.Labels.Display = LabelFormat.DisplayType.AUTO;|Sets display mode for label to `AUTO`, `WRAP`, `STAGGER`, `ROTATE`, or `NONE`
+`Rotate`|Boolean|visualizationObj.Labels.Rotate  = true;|Rotates X-axis labels and displays them in a vertical direction
+`Slant`|Boolean|visualizationObj.Labels.Slant  = true;|Displays X-axis labels in a slanted manner
+`StaggerLines`|Integer|visualizationObj.Labels.StaggerLines  = 2;|Displays data labels across multiple levels
+`Step`|Integer|visualizationObj.Labels.Step  = 1;|Displays every nth data label (where n is the step value), skipping the rest
+`Binsize`|Integer|visualizationObj.Labels.BinSize  = 1;|Sets the minimum width of a label in pixels (with a minimum value of 1)
 
 ### `Values`
 
@@ -112,13 +112,13 @@ These APIs let you configure the data plot values.
 
 API|Type|Syntax|Description
 -|-|-|-
-`Show`|Boolean|visualisationObj.Values.Show = true;|Shows/hides data values
-`ShowLimits`|Boolean|visualisationObj.Values.ShowLimits = true;|Show/hide minimum and maximum data values
-`Rotate`|Boolean|visualisationObj.Values.Rotate = true;|Rotates data values and displays them in a vertical direction
-`ShowDivLineValues`|Boolean|visualisationObj.Values.ShowDivLineValues = true;|Shows/hides values of divisional lines
-`Position`|ValueFormat.ValuePosition|visualisationObj.Values.Position = ValueFormat.ValuePosition.AUTO;|Sets the position of the data value as `AUTO`, `ABOVE`, or `BELOW`
-`PlotHighlightEffect`|String|visualisationObj.Values.PlotHighlightEffect = "fadeout|color=#ff0000, alpha=60";|Highlights data values
-`PlaceValueInside`|Boolean|visualisationObj.Values.PlaceValueInside =false;|Displays data values inside data plots
+`Show`|Boolean|visualizationObj.Values.Show = true;|Shows/hides data values
+`ShowLimits`|Boolean|visualizationObj.Values.ShowLimits = true;|Show/hide minimum and maximum data values
+`Rotate`|Boolean|visualizationObj.Values.Rotate = true;|Rotates data values and displays them in a vertical direction
+`ShowDivLineValues`|Boolean|visualizationObj.Values.ShowDivLineValues = true;|Shows/hides values of divisional lines
+`Position`|ValueFormat.ValuePosition|visualizationObj.Values.Position = ValueFormat.ValuePosition.AUTO;|Sets the position of the data value as `AUTO`, `ABOVE`, or `BELOW`
+`PlotHighlightEffect`|String|visualizationObj.Values.PlotHighlightEffect = "fadeout|color=#ff0000, alpha=60";|Highlights data values
+`PlaceValueInside`|Boolean|visualizationObj.Values.PlaceValueInside =false;|Displays data values inside data plots
 
 ### `Tooltip`
 
@@ -126,14 +126,14 @@ These API's let you control the tool tip. You can set the background color, bord
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Show`|Boolean|visualisationObj.ToolTip.Show = "true";|Shows/Hides the tooltip|
-`BGColor`|Hex Color Code|visualisationObj.ToolTip.BGColor = "#000000";|Sets the background color of the tooltip|
-`BorderColor`|Hex Color Code|visualisationObj.ToolTip.BorderColor = "#00ff00";|Sets the border color of the tooltip|
-`SeparatorChar`|Charater|visualisationObj.ToolTip.SeparatorChar = '/';|Sets the separator character in the tooltip text|
-`ShowShadow`|Boolean|visualisationObj.ToolTip.ShowShadow = false;|Shows a shadow around the tooltip|
-`Color`|Hex Color Code|visualisationObj.ToolTip.Color = "#ff00f0";|Sets the color of the tooltip text|
-`BorderAlpha`|Integer|visualisationObj.ToolTip.BorderAlpha = 1;|Sets the transparency of the border of the tooltip  |
-`PlotToolText`|String|visualisationObj.ToolTip.PlotToolText = "ToolTip Text";|Sets the tooltip text|
+`Show`|Boolean|visualizationObj.ToolTip.Show = "true";|Shows/Hides the tooltip|
+`BGColor`|Hex Color Code|visualizationObj.ToolTip.BGColor = "#000000";|Sets the background color of the tooltip|
+`BorderColor`|Hex Color Code|visualizationObj.ToolTip.BorderColor = "#00ff00";|Sets the border color of the tooltip|
+`SeparatorChar`|Charater|visualizationObj.ToolTip.SeparatorChar = '/';|Sets the separator character in the tooltip text|
+`ShowShadow`|Boolean|visualizationObj.ToolTip.ShowShadow = false;|Shows a shadow around the tooltip|
+`Color`|Hex Color Code|visualizationObj.ToolTip.Color = "#ff00f0";|Sets the color of the tooltip text|
+`BorderAlpha`|Integer|visualizationObj.ToolTip.BorderAlpha = 1;|Sets the transparency of the border of the tooltip  |
+`PlotToolText`|String|visualizationObj.ToolTip.PlotToolText = "ToolTip Text";|Sets the tooltip text|
 
 ### `Legend`
 
@@ -141,13 +141,13 @@ In a chart, the name of each dataset shows up in the legend of the chart. Using 
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Show`|Boolean|visualisationObj.Legend.Show = "true";|Shows/Hides the legend |
-`Caption`|String|visualisationObj.Legend.Caption = "Legend Caption";|Sets the caption of the legend|
-`Position`|LegendObject.LegendPosition|visualisationObj.Legend.Position = LegendObject.LegendPosition.RIGHT;|Sets the position of the legend|
-`FontSize`|Integer|visualisationObj.Legend.FontSize = "10";|Sets the font size of the legend text|
-`FontName`|String|visualisationObj.Legend.FontName = "Arial";|Sets the font of the legend text|
-`FontColor`|Hex Color Code|visualisationObj.Legend.FontColor = "#ff00f0";|Sets the font color of the legend text|
-`Bold`|Boolean|visualisationObj.Legend.Bold = false;|Makes the legend text bold.|
+`Show`|Boolean|visualizationObj.Legend.Show = "true";|Shows/Hides the legend |
+`Caption`|String|visualizationObj.Legend.Caption = "Legend Caption";|Sets the caption of the legend|
+`Position`|LegendObject.LegendPosition|visualizationObj.Legend.Position = LegendObject.LegendPosition.RIGHT;|Sets the position of the legend|
+`FontSize`|Integer|visualizationObj.Legend.FontSize = "10";|Sets the font size of the legend text|
+`FontName`|String|visualizationObj.Legend.FontName = "Arial";|Sets the font of the legend text|
+`FontColor`|Hex Color Code|visualizationObj.Legend.FontColor = "#ff00f0";|Sets the font color of the legend text|
+`Bold`|Boolean|visualizationObj.Legend.Bold = false;|Makes the legend text bold.|
 
 ### `Export`
 
@@ -155,14 +155,14 @@ FusionCharts.Net has the ability to export the rendered charts in JPG, PNG, SVG,
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Enabled`|Boolean|visualisationObj.Export.Enabled = true;|Enables/disables exporting of a chart|
-`HandlerPath`|String|visualisationObj.Export.HandlerPath = "localhost:8189";|Sets the path of the server-side export handler|
-`Format`|String|visualisationObj.Export.Format = " ";|Sets the export format|
-`Mode`|BaseExportObject.ExportMode|visualisationObj.Export.Mode = BaseExportObject.ExportMode.SERVER;|Sets the export mode for the chart|
-`ShowMenuItem`|Boolean|visualisationObj.Export.ShowMenuItem = false;|Shows/Hides the export menu|
-`ExportedFileName`|String|visualisationObj.Export.ExportedFileName = "FusionChartsExportedFile.pdf";|Sets the name of the exported file|
-`Window`|BaseExportObject.ExportTargetWindow|visualisationObj.Export.Window = BaseExportObject.ExportTargetWindow.BLANK;|Sets whether the exported chart opens in the same window or a new window|
-`Action`|BaseExportObject.ExportAction|visualisationObj.Export.Action = BaseExportObject.ExportAction.SAVE;|Sets the action to be performed when the Export chart option is clicked|
+`Enabled`|Boolean|visualizationObj.Export.Enabled = true;|Enables/disables exporting of a chart|
+`HandlerPath`|String|visualizationObj.Export.HandlerPath = "localhost:8189";|Sets the path of the server-side export handler|
+`Format`|String|visualizationObj.Export.Format = " ";|Sets the export format|
+`Mode`|BaseExportObject.ExportMode|visualizationObj.Export.Mode = BaseExportObject.ExportMode.SERVER;|Sets the export mode for the chart|
+`ShowMenuItem`|Boolean|visualizationObj.Export.ShowMenuItem = false;|Shows/Hides the export menu|
+`ExportedFileName`|String|visualizationObj.Export.ExportedFileName = "FusionChartsExportedFile.pdf";|Sets the name of the exported file|
+`Window`|BaseExportObject.ExportTargetWindow|visualizationObj.Export.Window = BaseExportObject.ExportTargetWindow.BLANK;|Sets whether the exported chart opens in the same window or a new window|
+`Action`|BaseExportObject.ExportAction|visualizationObj.Export.Action = BaseExportObject.ExportAction.SAVE;|Sets the action to be performed when the Export chart option is clicked|
 
 ## Chart Specific API's
 
@@ -174,15 +174,15 @@ To configure the x-axis name (title), you can use the following APIs.
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Text`|String|visualisationObj.XAxis.Text = "XAxis Name";|Sets the title of the X-axis|
-`FontSize`|Integer|visualisationObj.XAxis.FontSize = 10;|Sets the font size of the X-axis title|
-`FontName`|String|visualisationObj.XAxis.FontName = "Arial";|Sets the font of the X-axis title|
-`FontColor`|Hex Color Code|visualisationObj.XAxis.FontColor = "#ff0000";|Sets the font color of the X-axis title|
-`Bold`|Boolean|visualisationObj.XAxis.Bold = true;|Sets whether the X-axis title is displayed in bold|
-`Italic`|Boolean|visualisationObj.XAxis.Italic = false;|Sets whether the X-axis title is displayed in Italic|
-`BorderColor`|Hex Color Code|visualisationObj.XAxis.BorderColor = "#ffffff";|Sets the border color of the X-axis title|
-`BGColor`|Hex Color Code|visualisationObj.XAxis.BGColor = "#000000";|Sets the background color of the X-axis title|
-`BorderThickness`|Integer|visualisationObj.XAxis.BorderThickness = 2;|Sets the border thickness of the X-axis title|
+`Text`|String|visualizationObj.XAxis.Text = "XAxis Name";|Sets the title of the X-axis|
+`FontSize`|Integer|visualizationObj.XAxis.FontSize = 10;|Sets the font size of the X-axis title|
+`FontName`|String|visualizationObj.XAxis.FontName = "Arial";|Sets the font of the X-axis title|
+`FontColor`|Hex Color Code|visualizationObj.XAxis.FontColor = "#ff0000";|Sets the font color of the X-axis title|
+`Bold`|Boolean|visualizationObj.XAxis.Bold = true;|Sets whether the X-axis title is displayed in bold|
+`Italic`|Boolean|visualizationObj.XAxis.Italic = false;|Sets whether the X-axis title is displayed in Italic|
+`BorderColor`|Hex Color Code|visualizationObj.XAxis.BorderColor = "#ffffff";|Sets the border color of the X-axis title|
+`BGColor`|Hex Color Code|visualizationObj.XAxis.BGColor = "#000000";|Sets the background color of the X-axis title|
+`BorderThickness`|Integer|visualizationObj.XAxis.BorderThickness = 2;|Sets the border thickness of the X-axis title|
 
 ### `YAxis`
 
@@ -190,15 +190,15 @@ To configure the y-axis name (title), you can use the following APIs.
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Text`|String|visualisationObj.YAxis.Text = "YAxis Name";|Sets the title of the Y-axis|
-`FontSize`|Integer|visualisationObj.YAxis.FontSize = 10;|Sets the font size of the Y-axis title|
-`FontName`|String|visualisationObj.YAxis.FontName = "Arial";|Sets the font name of the Y-axis title|
-`FontColor`|Hex Color Code|visualisationObj.YAxis.FontColor = "#ff0000";|Sets the font color of the Y-axis title|
-`Bold`|Boolean|visualisationObj.YAxis.Bold = true;|Sets whether the Y-axis title is displayed in bold|
-`Italic`|Boolean|visualisationObj.YAxis.Italic = false;|Sets whether the Y-axis title is displayed in Italic|
-`BorderColor`|Hex Color Code|visualisationObj.YAxis.BorderColor = "#ffffff";|Sets the border color of the Y-axis title|
-`BGColor`|Hex Color Code|visualisationObj.YAxis.BGColor = "#000000";|Sets the background color of the Y-axis title|
-`BorderThickness`|Integer|visualisationObj.YAxis.BorderThickness = 2;|Sets the border thickness of the Y-axis title|
+`Text`|String|visualizationObj.YAxis.Text = "YAxis Name";|Sets the title of the Y-axis|
+`FontSize`|Integer|visualizationObj.YAxis.FontSize = 10;|Sets the font size of the Y-axis title|
+`FontName`|String|visualizationObj.YAxis.FontName = "Arial";|Sets the font name of the Y-axis title|
+`FontColor`|Hex Color Code|visualizationObj.YAxis.FontColor = "#ff0000";|Sets the font color of the Y-axis title|
+`Bold`|Boolean|visualizationObj.YAxis.Bold = true;|Sets whether the Y-axis title is displayed in bold|
+`Italic`|Boolean|visualizationObj.YAxis.Italic = false;|Sets whether the Y-axis title is displayed in Italic|
+`BorderColor`|Hex Color Code|visualizationObj.YAxis.BorderColor = "#ffffff";|Sets the border color of the Y-axis title|
+`BGColor`|Hex Color Code|visualizationObj.YAxis.BGColor = "#000000";|Sets the background color of the Y-axis title|
+`BorderThickness`|Integer|visualizationObj.YAxis.BorderThickness = 2;|Sets the border thickness of the Y-axis title|
 
 ### `Data`
 
@@ -207,44 +207,44 @@ Data is an object used to define the values to be plotted for individual data se
 * ** source:** FusionCharts Data Model
 
 ```
-visualisationObj.Data.source = source; //Source is an instance of the DataModel
+visualizationObj.Data.source = source; //Source is an instance of the DataModel
 ```
 
 * **CategoryField**(string field_name)
 
 ```
-visualisationObj.Data.CategoryField("country");
+visualizationObj.Data.CategoryField("country");
 ```
 
 * **SeriesFields**(string[ ] fields_name)
 
 ```
-visualisationObj.Data.SeriesFields("Sales,Total_Purchase");
+visualizationObj.Data.SeriesFields("Sales,Total_Purchase");
 ```
 
 * **Categories**: Category Object
 
 API|Type|Syntax|Description|
 -|-|-|-
-`FontSize`|integer|visualisationObj.Data.Categories.FontSize = 10;|Sets the font size of the X-axis title|
-`FontName`|String|visualisationObj.Data.Categories.FontName = "Arial";|Sets the font of the X-axis title|
-`FontColor`|Hox Color Code|visualisationObj.Data.Categories.FontColor = "#ffffff";|Sets the font color of the X-axis title|
+`FontSize`|integer|visualizationObj.Data.Categories.FontSize = 10;|Sets the font size of the X-axis title|
+`FontName`|String|visualizationObj.Data.Categories.FontName = "Arial";|Sets the font of the X-axis title|
+`FontColor`|Hox Color Code|visualizationObj.Data.Categories.FontColor = "#ffffff";|Sets the font color of the X-axis title|
 
 * **CategoryFormatting:** String category
 
 API|Type|Syntax|Description|
 -|-|-|-
-`ShowLabel`|Boolean|visualisationObj.Data.Categories.CategoryFormatting("india").ShowLabel(True);|Shows/Hides category labels|
-`ToolText`|String|visualisationObj.Data.Categories.CategoryFormatting("india").ToolText("Country:India");|Sets the tooltip text for a category label|
-`FontName`|String Name|visualisationObj.Data.Categories.CategoryFormatting("india").FontName("Arial");|Sets the font for  category labels|
-`FontColor`|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("india").FontColor("#ff000f");|Sets the font color for  category labels|
-`FontSize`|Integer|visualisationObj.Data.Categories.CategoryFormatting("india").FontSize(12);|Sets the font size for  category labels|
-`Bold`|Boolean|visualisationObj.Data.Categories.CategoryFormatting("india").Bold(false);|Sets bold formatting for category labels|
-`Italic`|Boolean|visualisationObj.Data.Categories.CategoryFormatting("india").Italic(true);|Sets italic formatting for category labels|
-`LabelLink`|String|visualisationObj.Data.Categories.CategoryFormatting("india").LabelLink("localhost:CountryDetails");|Links category labels to the data source|
-`BorderColor`|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("india").BorderColor("000000");|Sets the border color for category labels|
-`BGColor`|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("india").BGColor("000000");|Sets the background color for category labels|
-`Alpha`|Integer|visualisationObj.Data.Categories.CategoryFormatting("india").Alpha(100);|Sets the transparency of category labels|
+`ShowLabel`|Boolean|visualizationObj.Data.Categories.CategoryFormatting("india").ShowLabel(True);|Shows/Hides category labels|
+`ToolText`|String|visualizationObj.Data.Categories.CategoryFormatting("india").ToolText("Country:India");|Sets the tooltip text for a category label|
+`FontName`|String Name|visualizationObj.Data.Categories.CategoryFormatting("india").FontName("Arial");|Sets the font for  category labels|
+`FontColor`|Hex Color Code|visualizationObj.Data.Categories.CategoryFormatting("india").FontColor("#ff000f");|Sets the font color for  category labels|
+`FontSize`|Integer|visualizationObj.Data.Categories.CategoryFormatting("india").FontSize(12);|Sets the font size for  category labels|
+`Bold`|Boolean|visualizationObj.Data.Categories.CategoryFormatting("india").Bold(false);|Sets bold formatting for category labels|
+`Italic`|Boolean|visualizationObj.Data.Categories.CategoryFormatting("india").Italic(true);|Sets italic formatting for category labels|
+`LabelLink`|String|visualizationObj.Data.Categories.CategoryFormatting("india").LabelLink("localhost:CountryDetails");|Links category labels to the data source|
+`BorderColor`|Hex Color Code|visualizationObj.Data.Categories.CategoryFormatting("india").BorderColor("000000");|Sets the border color for category labels|
+`BGColor`|Hex Color Code|visualizationObj.Data.Categories.CategoryFormatting("india").BGColor("000000");|Sets the background color for category labels|
+`Alpha`|Integer|visualizationObj.Data.Categories.CategoryFormatting("india").Alpha(100);|Sets the transparency of category labels|
 
 * **Series:** String Object
 
@@ -252,25 +252,25 @@ API|Type|Syntax|Description|
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Alpha`|Integer|visualisationObj.Data.Series.SeriesFormatting("Column_ Name").Alpha(100);|Sets the transparency of a data label|
-`Color`|Hex Color Code|visualisationObj.Data.Series.SeriesFormatting("Column_ Name").Color("ff00ff");|Sets the font color of a data label|
-`Dashed`|Boolean|visualisationObj.Data.Series.SeriesFormatting("Column_ Name").Dashed(False);|Makes the border of the data label dashed|
-`DisplayName`|String|visualisationObj.Data.Series.SeriesFormatting("india").DisplayName("Name");|Sets the display name of a data label|
-`Visible`|Boolean|visualisationObj.Data.Series.SeriesFormatting("india").Visible(true);|Enables/disables visibility of a data series|
-`ShowValues`|Boolean|visualisationObj.Data.Series.SeriesFormatting("india").ShowValues(True);|Shows/hides values of a data series|
+`Alpha`|Integer|visualizationObj.Data.Series.SeriesFormatting("Column_ Name").Alpha(100);|Sets the transparency of a data label|
+`Color`|Hex Color Code|visualizationObj.Data.Series.SeriesFormatting("Column_ Name").Color("ff00ff");|Sets the font color of a data label|
+`Dashed`|Boolean|visualizationObj.Data.Series.SeriesFormatting("Column_ Name").Dashed(False);|Makes the border of the data label dashed|
+`DisplayName`|String|visualizationObj.Data.Series.SeriesFormatting("india").DisplayName("Name");|Sets the display name of a data label|
+`Visible`|Boolean|visualizationObj.Data.Series.SeriesFormatting("india").Visible(true);|Enables/disables visibility of a data series|
+`ShowValues`|Boolean|visualizationObj.Data.Series.SeriesFormatting("india").ShowValues(True);|Shows/hides values of a data series|
 
 	* ValueFormatting: String
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Alpha`|Integer|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Alpha(100);|Sets transparency of data value|
-`Color`|Hex Color Code|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Color("ff00ff");|Sets font color of data value|
-`Dashed`|Boolean|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Dashed(False);|Makes data value border dashed|
-`ShowValues`|Boolean|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ShowValue("true");|Shows/Hides data value|
-`Link`|LinkURL|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Link(LinkURL);|Links data value to external resource|
-`DisplayValue`|String|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").DisplayValue(value > 100);|Sets display text for data value|
-`ToolText`|String|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ToolText(Text);|Sets tooltip text for data value|
-`ValuePosition`|MultiSeriesDataElement.ValuePlaced position|visualisationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ValuePosition(MultiSeriesDataElement.ValuePlaced position.ABOVE);|Sets display position for data value|
+`Alpha`|Integer|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Alpha(100);|Sets transparency of data value|
+`Color`|Hex Color Code|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Color("ff00ff");|Sets font color of data value|
+`Dashed`|Boolean|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Dashed(False);|Makes data value border dashed|
+`ShowValues`|Boolean|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ShowValue("true");|Shows/Hides data value|
+`Link`|LinkURL|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Link(LinkURL);|Links data value to external resource|
+`DisplayValue`|String|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").DisplayValue(value > 100);|Sets display text for data value|
+`ToolText`|String|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ToolText(Text);|Sets tooltip text for data value|
+`ValuePosition`|MultiSeriesDataElement.ValuePlaced position|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ValuePosition(MultiSeriesDataElement.ValuePlaced position.ABOVE);|Sets display position for data value|
 
 Following are the API's which only have support on **Pie**, **Doughnut**, **Funnel** and **Pyramid** Charts.
 
@@ -281,45 +281,45 @@ Data is an object used to define the values to be plotted for individual data se
 * ** source:** FusionCharts Data Model
 
 ```
-visualisationObj.Data.source = source; //Source is an instance of the DataModel
+visualizationObj.Data.source = source; //Source is an instance of the DataModel
 ```
 
 * **CategoryField**: String
 
 ```
-visualisationObj.Data.CategoryField("Country");
+visualizationObj.Data.CategoryField("Country");
 ```
 
 * **SeriesField**: String
 
 ```
-visualisationObj.Data.SeriesField("Country");
+visualizationObj.Data.SeriesField("Country");
 ```
 
 * **LabelFormatting**: String
 
 API|Type|Syntax|Description|
 -|-|-|-
-`ShowLabel`|Boolean|visualisationObj.Data.LabelFormatting("Name").ShowLabel(True);|Shows/hides data label|
-`ToolText`|String|visualisationObj.Data.LabelFormatting("Name").ToolText("Country:India");|Sets tooltip text for data label|
-`FontName`|String Name|visualisationObj.Data.LabelFormatting("Name").FontName("Arial");|Sets font for data label|
-`FontColor`|Hex Color Code|visualisationObj.Data.LabelFormatting("Name").FontColor("#ff000f");|Sets font color for data label|
-`FontSize`|Integer|visualisationObj.Data.LabelFormatting("Name").FontSize(12);|Sets font size for data label|
-Bold|Boolean|visualisationObj.Data.LabelFormatting("Name").Bold(false);|Makes data label text bold|
-Italic|Boolean|visualisationObj.Data.LabelFormatting("Name").Italic(true);|Makes data label text italic|
-LabelLink|String|visualisationObj.Data.LabelFormatting("Name").LabelLink("localhost:CountryDetails");|Links data label to external resource|
-BorderColor|Hex Color Code|visualisationObj.Data.LabelFormatting("Name").BorderColor("000000");|Sets border color for data label|
-BGColor|Hex Color Code|visualisationObj.Data.LabelFormatting("Name").BGColor("000000");|Sets background color for data label|
-Alpha|Integer|visualisationObj.Data.LabelFormatting("Name").Alpha(100);|Sets data label transparency between "0" for transparent and "100" for opaque|
+`ShowLabel`|Boolean|visualizationObj.Data.LabelFormatting("Name").ShowLabel(True);|Shows/hides data label|
+`ToolText`|String|visualizationObj.Data.LabelFormatting("Name").ToolText("Country:India");|Sets tooltip text for data label|
+`FontName`|String Name|visualizationObj.Data.LabelFormatting("Name").FontName("Arial");|Sets font for data label|
+`FontColor`|Hex Color Code|visualizationObj.Data.LabelFormatting("Name").FontColor("#ff000f");|Sets font color for data label|
+`FontSize`|Integer|visualizationObj.Data.LabelFormatting("Name").FontSize(12);|Sets font size for data label|
+Bold|Boolean|visualizationObj.Data.LabelFormatting("Name").Bold(false);|Makes data label text bold|
+Italic|Boolean|visualizationObj.Data.LabelFormatting("Name").Italic(true);|Makes data label text italic|
+LabelLink|String|visualizationObj.Data.LabelFormatting("Name").LabelLink("localhost:CountryDetails");|Links data label to external resource|
+BorderColor|Hex Color Code|visualizationObj.Data.LabelFormatting("Name").BorderColor("000000");|Sets border color for data label|
+BGColor|Hex Color Code|visualizationObj.Data.LabelFormatting("Name").BGColor("000000");|Sets background color for data label|
+Alpha|Integer|visualizationObj.Data.LabelFormatting("Name").Alpha(100);|Sets data label transparency between "0" for transparent and "100" for opaque|
 
 4. **ValueFormatting**: String
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Alpha`|Integer|visualisationObj.Data.ValueFormatting(""formatting_formula").Alpha(100);|Shows/hides data value|
-`Color`|Hex Color Code|visualisationObj.Data.ValueFormatting(""formatting_formula").Color("ff00ff");|Seta color of data value|
-`Dashed`|Boolean|visualisationObj.Data.ValueFormatting(""formatting_formula").Dashed(False);|Makes data value border dashed|
-`ShowValue`|Boolean|visualisationObj.Data.ValueFormatting(""formatting_formula").ShowValue("true");|Shows/Hides data value|
-`Link`|LinkURL|visualisationObj.Data.ValueFormatting(""formatting_formula").Link(LinkURL);|Links data value to external resource|
-`DisplayValue`|String|visualisationObj.Data.ValueFormatting(""formatting_formula").DisplayValue(value > 100);|Sets display text for data value|
-`ToolText`|String|visualisationObj.Data.ValueFormatting(""formatting_formula").ToolText(Text);|Sets tooltip text for data value|
+`Alpha`|Integer|visualizationObj.Data.ValueFormatting(""formatting_formula").Alpha(100);|Shows/hides data value|
+`Color`|Hex Color Code|visualizationObj.Data.ValueFormatting(""formatting_formula").Color("ff00ff");|Seta color of data value|
+`Dashed`|Boolean|visualizationObj.Data.ValueFormatting(""formatting_formula").Dashed(False);|Makes data value border dashed|
+`ShowValue`|Boolean|visualizationObj.Data.ValueFormatting(""formatting_formula").ShowValue("true");|Shows/Hides data value|
+`Link`|LinkURL|visualizationObj.Data.ValueFormatting(""formatting_formula").Link(LinkURL);|Links data value to external resource|
+`DisplayValue`|String|visualizationObj.Data.ValueFormatting(""formatting_formula").DisplayValue(value > 100);|Sets display text for data value|
+`ToolText`|String|visualizationObj.Data.ValueFormatting(""formatting_formula").ToolText(Text);|Sets tooltip text for data value|

@@ -17,7 +17,7 @@ In FusionCharts.NET, you can customize data labels in the following ways with th
 To hide the data labels, set the value of the `ShowLabel` properties to `false`. Refer to the code given below:
 
 ```
-visualisationObj.Data.LabelFormatting("C#").ShowLabel(False);
+visualizationObj.Data.LabelFormatting("C#").ShowLabel(False);
 ```
 
 The chart will look as shown below:
@@ -29,7 +29,7 @@ The chart will look as shown below:
 Set the tooltip text for the data label as string to the `ToolText` properties. Refer to the code given below:
 
 ```
-visualisationObj.Data.LabelFormatting("C#").ToolText("Programming Language:C#");
+visualizationObj.Data.LabelFormatting("C#").ToolText("Programming Language:C#");
 ```
 
 The chart will look as shown below:
@@ -49,11 +49,11 @@ Customize the font properties of the data label using the following:
 Refer to the code given below:
 
 ```
-visualisationObj.Data.LabelFormatting("C#").FontSize(18);
-visualisationObj.Data.LabelFormatting("C#").FontName("Arial");
-visualisationObj.Data.LabelFormatting("C#").FontColor("#5d62b5");
-visualisationObj.Data.LabelFormatting("C#").Bold(true);
-visualisationObj.Data.LabelFormatting("C#").Italic(true);
+visualizationObj.Data.LabelFormatting("C#").FontSize(18);
+visualizationObj.Data.LabelFormatting("C#").FontName("Arial");
+visualizationObj.Data.LabelFormatting("C#").FontColor("#5d62b5");
+visualizationObj.Data.LabelFormatting("C#").Bold(true);
+visualizationObj.Data.LabelFormatting("C#").Italic(true);
 ```
 
 The chart will look as shown below:
@@ -65,7 +65,7 @@ The chart will look as shown below:
 To link a data label to an external resource, set the value of the `LabelLink` properties to the link of the resource. Refer to the code given below:
 
 ```
-visualisationObj.Data.LabelFormatting("C#").LabelLink("https://www.fusioncharts.com/");
+visualizationObj.Data.LabelFormatting("C#").LabelLink("https://www.fusioncharts.com/");
 ```
 
 The chart will look as shown below:
@@ -79,7 +79,7 @@ In the above chart click on the xaxis label `C#`.
 Set the border color of the label as hex code using the `BorderColor` properties. Refer to the code given below:
 
 ```
-visualisationObj.Data.LabelFormatting("C#").BorderColor("#87919b");
+visualizationObj.Data.LabelFormatting("C#").BorderColor("#87919b");
 ```
 
 The chart will look as shown below:
@@ -91,7 +91,7 @@ The chart will look as shown below:
 Set the background color of the label as hex code using the `BGColor` properties. Refer to the code given below:
 
 ```
-visualisationObj.Data.LabelFormatting("C#").BGColor("d9d9d9");
+visualizationObj.Data.LabelFormatting("C#").BGColor("d9d9d9");
 ```
 
 The chart will look as shown below:
@@ -103,7 +103,7 @@ The chart will look as shown below:
 Set the transparency of the label between `0` (transparent) and `100` (opaque) using the `Alpha` properties. Refer to the code given below:
 
 ```
-visualisationObj.Data.LabelFormatting("C#").Alpha(50);
+visualizationObj.Data.LabelFormatting("C#").Alpha(50);
 ```
 
 The chart will look as shown below:

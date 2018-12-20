@@ -10,14 +10,14 @@ Data values are plot values, i.e. values of each data plot (line, column, bar, p
 
 ## Customize Data Value
 
-In FusionCharts.NET, you can customize data values in the following ways with the help of different instance methods of the `Values` object (which accepts a string argument) under the `visualisationObj` object:
+In FusionCharts.NET, you can customize data values in the following ways with the help of different instance methods of the `Values` object (which accepts a string argument) under the `visualizationObj` object:
 
 ### Show/Hide Data Value
 
 To display the data labels, set the value of the `Show` property to `true`. Refer to the code given below:
 
 ```
-visualisationObj.Values.Show = true;
+visualizationObj.Values.Show = true;
 ```
 
 The chart will look as shown below:
@@ -29,7 +29,7 @@ The chart will look as shown below:
 To hide the limit of the chart, set the value of `ShowLimits` property to `false`. Refer to the code given below:
 
 ```
-visualisationObj.Values.ShowLimits = false;
+visualizationObj.Values.ShowLimits = false;
 ```
 
 The chart will look as shown below:
@@ -41,7 +41,7 @@ The chart will look as shown below:
 To rotate the data values of the chart, set the value of `Rotate` property to `true`. Refer to the code given below:
 
 ```
-visualisationObj.Values.Rotate = true;
+visualizationObj.Values.Rotate = true;
 ```
 
 The chart will look as shown below:
@@ -55,7 +55,7 @@ If you've opted to show data values on the chart, `ValuePosition` property lets 
 Refer to the code given below:
 
 ```
-visualisationObj.Values.Position = ValueFormat.ValuePosition.AUTO;
+visualizationObj.Values.Position = ValueFormat.ValuePosition.AUTO;
 ```
 
 ### Highlight Effect
@@ -67,7 +67,7 @@ The fadeout effect can be customized by specifying the fadeout color and opacity
 Refer to the code below:
 
 ```
-visualisationObj.Values.PlotHighlightEffect = "fadeout|color=#ff0000, alpha=60";
+visualizationObj.Values.PlotHighlightEffect = "fadeout|color=#ff0000, alpha=60";
 ```
 
 ### Place Value
@@ -75,7 +75,7 @@ visualisationObj.Values.PlotHighlightEffect = "fadeout|color=#ff0000, alpha=60";
 To show the data values inside the column, set the `PlaceValueInside` property to `true`. Refer to the code given below:
 
 ```
-visualisationObj.Values.PlaceValueInside =true;
+visualizationObj.Values.PlaceValueInside =true;
 ```
 
 The chart looks like as shown below:

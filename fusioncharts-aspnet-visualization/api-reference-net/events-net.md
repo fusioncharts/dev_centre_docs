@@ -14,15 +14,15 @@ Syntax for all the DataLoad Events is shown below:
 
 ```
 
-visualisationObject.Events.AttachDataLoadEvent(FusionChartsEvents.DataLoadEvents.DATALOADED, "OnDataLoaded");
+visualizationObject.Events.AttachDataLoadEvent(FusionChartsEvents.DataLoadEvents.DATALOADED, "OnDataLoaded");
 
 ```
 
 In the above code:
 
-* `visualisationObject` is the object for FusionCharts.Net Visualization.
+* `visualizationObject` is the object for FusionCharts.Net Visualization.
 
-* `Events` is the object of `visualisationObject` object.
+* `Events` is the object of `visualizationObject` object.
 
 * `AttachDataLoadEvent` is a method of `Events` object.
 
@@ -90,15 +90,15 @@ Syntax for the generic Events is shown below:
 
 ```
 
-visualisationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.DATAPLOTCLICK,"OnDataPlotClick");
+visualizationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.DATAPLOTCLICK,"OnDataPlotClick");
 
 ```
 
 In the above code:
 
-* `visualisationObject` is the object for FusionCharts.Net Visualization.
+* `visualizationObject` is the object for FusionCharts.Net Visualization.
 
-* `Events` is the object of `visualisationObject` object.
+* `Events` is the object of `visualizationObject` object.
 
 * `AttachGenericEvents` is a method of `Events` object.
 
@@ -218,15 +218,15 @@ Syntax for all the Rendered Events is shown below:
 
 ```
 
-visualisationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.LOADED,"OnDataLoad");
+visualizationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.LOADED,"OnDataLoad");
 
 ```
 
 In the above code:
 
-* `visualisationObject` is the object for FusionCharts.Net Visualization.
+* `visualizationObject` is the object for FusionCharts.Net Visualization.
 
-* `Events` is the object of `visualisationObject` object.
+* `Events` is the object of `visualizationObject` object.
 
 * `AttachGenericEvents` is a method of `Events` object.
 
@@ -296,15 +296,15 @@ Syntax for all the events is shown below:
 
 ```
 
-visualisationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.ROTATIOEND,"OnRotationEnd");
+visualizationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.ROTATIOEND,"OnRotationEnd");
 
 ```
 
 In the above code:
 
-* `visualisationObject` is the object for FusionCharts.Net Visualization.
+* `visualizationObject` is the object for FusionCharts.Net Visualization.
 
-* `Events` is the object of `visualisationObject` object.
+* `Events` is the object of `visualizationObject` object.
 
 * `AttachGenericEvents` is a method of `Events` object.
 
@@ -356,15 +356,15 @@ Syntax for all the events is shown below:
 
 ```
 
-visualisationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.ROTATIOSCROLLEND,"OnScrollEnd");
+visualizationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.ROTATIOSCROLLEND,"OnScrollEnd");
 
 ```
 
 In the above code:
 
-* `visualisationObject` is the object for FusionCharts.Net Visualization.
+* `visualizationObject` is the object for FusionCharts.Net Visualization.
 
-* `Events` is the object of `visualisationObject` object.
+* `Events` is the object of `visualizationObject` object.
 
 * `AttachGenericEvents` is a method of `Events` object.
 
