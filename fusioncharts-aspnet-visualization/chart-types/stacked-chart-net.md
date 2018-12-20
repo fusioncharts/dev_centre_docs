@@ -6,7 +6,6 @@ heading: Stacked charts
 
 Now, let's learn how to create a Stacked Chart. We will create a chart showcasing revenue split for each quarter of the current year by product category - food products and non-food products. The data will look as shown below:
 
-
 **TABLE**
 
 The chart will look as shown below:

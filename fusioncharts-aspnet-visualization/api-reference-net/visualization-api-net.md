@@ -239,12 +239,12 @@ API|Type|Syntax|Description|
 `FontName`|String Name|visualisationObj.Data.Categories.CategoryFormatting("india").FontName("Arial");|Sets the font for  category labels|
 `FontColor`|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("india").FontColor("#ff000f");|Sets the font color for  category labels|
 `FontSize`|Integer|visualisationObj.Data.Categories.CategoryFormatting("india").FontSize(12);|Sets the font size for  category labels|
-Bold|Boolean|visualisationObj.Data.Categories.CategoryFormatting("india").Bold(false);|Sets bold formatting for category labels|
-Italic|Boolean|visualisationObj.Data.Categories.CategoryFormatting("india").Italic(true);|Sets italic formatting for category labels|
-LabelLink|String|visualisationObj.Data.Categories.CategoryFormatting("india").LabelLink("localhost:CountryDetails");|Links category labels to the data source|
-BorderColor|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("india").BorderColor("000000");|Sets the border color for category labels|
-BGColor|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("india").BGColor("000000");|Sets the background color for category labels|
-Alpha|Integer|visualisationObj.Data.Categories.CategoryFormatting("india").Alpha(100);|Sets the transparency of category labels|
+`Bold`|Boolean|visualisationObj.Data.Categories.CategoryFormatting("india").Bold(false);|Sets bold formatting for category labels|
+`Italic`|Boolean|visualisationObj.Data.Categories.CategoryFormatting("india").Italic(true);|Sets italic formatting for category labels|
+`LabelLink`|String|visualisationObj.Data.Categories.CategoryFormatting("india").LabelLink("localhost:CountryDetails");|Links category labels to the data source|
+`BorderColor`|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("india").BorderColor("000000");|Sets the border color for category labels|
+`BGColor`|Hex Color Code|visualisationObj.Data.Categories.CategoryFormatting("india").BGColor("000000");|Sets the background color for category labels|
+`Alpha`|Integer|visualisationObj.Data.Categories.CategoryFormatting("india").Alpha(100);|Sets the transparency of category labels|
 
 * **Series:** String Object
 
