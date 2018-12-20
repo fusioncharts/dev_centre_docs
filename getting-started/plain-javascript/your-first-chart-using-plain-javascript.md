@@ -255,7 +255,9 @@ var chartInstance = new FusionCharts({
 });
 // Render
 chartInstance.render();
-</code></pre>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <h4>CJS</h4>
 <pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
@@ -312,7 +314,9 @@ var chartInstance = new FusionCharts({
 });
 // Render
 chartInstance.render();
-</code></pre>
+</code>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
 <ul>
     <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
@@ -324,8 +328,6 @@ chartInstance.render();
     <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
     <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
 </ul>
-
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </div>
 
 <div class='tab cdn-tab'>
