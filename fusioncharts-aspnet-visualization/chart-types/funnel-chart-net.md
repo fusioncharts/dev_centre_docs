@@ -53,16 +53,32 @@ using System.Data;
 namespace FusionChartsVisualisationWebFormsSamples.Samples {
     public partial class FunnelChart : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
+            // Create data table
             DataTable primaryData = new DataTable();
-            primaryData.Columns.Add("Wesite Sections", typeof(System.String));
-            primaryData.Columns.Add("Wesite Visits", typeof(System.Double));
-            primaryData.Rows.Add("Unique Website Visits", 1460000);
-            primaryData.Rows.Add("Programme Details Section Visits", 930000);
-            primaryData.Rows.Add("Attempts to Register", 540000);
-            primaryData.Rows.Add("Successful Registrations", 210000);
-            primaryData.Rows.Add("Logged In", 190000);
-            primaryData.Rows.Add("Purchased on Introductory Offers", 120000);
             
+            // Retrieve data using database query
+            string query = "select [Wesite Sections], [Wesite Visits] from dbo.WebsiteVisits";
+            string connetionString = null;
+            
+            // Servevr name
+            string serverName = "FusionChartsServer";
+            
+            // DataBase name
+            string databaseName = "FusionChartsSamplesDB";
+            primaryData.Clear();
+            
+            // Connection string
+            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+
+            using (SqlConnection con = new SqlConnection(connetionString))
+            {
+                con.Open();
+                using (SqlCommand command = new SqlCommand(query, con))
+                using (SqlDataAdapter da = new SqlDataAdapter(command))
+                {
+                    da.Fill(primaryData);
+                }
+            }
             StaticSource source = new StaticSource(primaryData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
