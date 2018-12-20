@@ -24,7 +24,7 @@ FusionCharts.NET abstracts you from writing messy JavaScript and JSON code withi
 Native ASP.NET wrapper|FusionCharts.NET|
 -|-
 Provide data manually as JSON/XML to the chart renderer. |Provide the raw data and the data engine converts the raw data in the acceptable format to render the chart.|
-Static data without the options to optimize the data.|Apply different data operations to the raw data to optimize the data as per your requirement.|
+Static data only, no option to slice and dice the data. |Dynamic data, option to slice and dice the data using the data operators available. |
 Different data structures for different charts. So, you need to build chart specific json for different chart types.|As we are building json based on chart object and data source, users do not need to worry about the specific chart json structure.|
-Page Level theme cannot be applied.|Apply a theme to multiple charts on a single page.|
-Chart customization, configuration json has to be configured manually. So, you have to iterate, build the json and then pass the json as a string to the existing wrapper. |FusionCharts.NET, takes just the high-level information like `chart id` and `DataModel` object as the data source for the chart. You can set chart customization properties or features in object-oriented paradigm and FusionCharts.NET will build the json and render FusionCharts in your browser.|
+No option to set a common theme for all charts in a single page. |It gives you an option to set a single theme which can be applied to all of the charts in a perticular page. |
+For Chart customization, the json has to be configured manually. So, you have to iterate, build the json and then pass the json as a string to the existing wrapper. |FusionCharts.NET, takes just the high-level information like `chart id` and `DataModel` object as the data source for the chart. You can set chart customization properties or features in object-oriented paradigm and FusionCharts.NET will build the json and render FusionCharts in your browser.|
