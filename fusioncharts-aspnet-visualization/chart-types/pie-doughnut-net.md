@@ -54,7 +54,7 @@ Create the `PieChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```
+```aspnet
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
@@ -96,9 +96,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
                     da.Fill(primaryData);
-
                 }
-
             }
             // Create static source with this data table
             StaticSource source = new StaticSource(primaryData);
@@ -117,17 +115,14 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             pie.Caption.Text = "Most popular programming language";
             // Render the chart to 'PieChartLiteral' literal control
             Literal1.Text = pie.Render();
-            
-          
         }
     }
 }
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
-``` 
+```html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PieChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.PieChart" %>
 
 <!DOCTYPE html>
@@ -151,42 +146,45 @@ The `.aspx` template for the above sample is shown below:
     </form>
 </body>
 </html>
-
 ```
 
 ## Doughnut Chart
 
 Now, let's learn how to create a doughnut chart with the same data. The code remains the same as that of the Pie chart. The only difference is instead of instantiating a pie chart you have to instantiate a doughnut chart. Create a `doughnutChart.aspx.cs` and refer to the code below:
 
-``` 
+```aspnet
 // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
-            // Create instance of DataModel class
-            DataModel model = new DataModel();
-            // Add DataSource to the DataModel
-            model.DataSources.Add(source);
-            // Instantiate doughnut Chart
-            Charts.doughnutChart doughnut = new Charts.doughnutChart("doughnut_chart");
-            // Set Chart's width and height
-            doughnut.Width = 500;
-            doughnut.Height = 400;
-            // Set DataModel instance as the data source of the chart
-            doughnut.Data.Source = model;
-            // Set Chart Title
-            doughnut.Caption.Text = "Most popular programming language";
-            // Render the chart to 'doughnutChartLiteral' literal control
-            Literal1.Text = doughnut.Render();
+StaticSource source = new StaticSource(primaryData);
 
+// Create instance of DataModel class
+DataModel model = new DataModel();
+
+// Add DataSource to the DataModel
+model.DataSources.Add(source);
+
+// Instantiate doughnut Chart
+Charts.doughnutChart doughnut = new Charts.doughnutChart("doughnut_chart");
+
+// Set Chart's width and height
+doughnut.Width = 550;
+doughnut.Height = 350;
+
+// Set DataModel instance as the data source of the chart
+doughnut.Data.Source = model;
+
+// Set Chart Title
+doughnut.Caption.Text = "Most popular programming language";
+
+// Render the chart to 'doughnutChartLiteral' literal control
+Literal1.Text = doughnut.Render();
 ```
 
 The `.aspx` template for the above sample is shown below:
 
-``` 
-
+```html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="doughnutChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.doughnutChart" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -194,7 +192,6 @@ The `.aspx` template for the above sample is shown below:
 <body>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-   
     <form id="form1" runat="server">
         <div>
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
@@ -205,12 +202,8 @@ The `.aspx` template for the above sample is shown below:
     </form>
 </body>
 </html>
-
 ```
 
 The chart will look as shown below:
 
-<Live Chart>
-
-
-
+{% embed_all fusioncharts-net-visualization-doughnut-example-2.js %}
