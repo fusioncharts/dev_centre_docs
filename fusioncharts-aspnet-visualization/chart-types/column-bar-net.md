@@ -140,23 +140,29 @@ Now, let's learn how to create a bar chart with the same data. The code remains 
 
 ``` 
 // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
-            // Create instance of DataModel class
-            DataModel model = new DataModel();
-            // Add DataSource to the DataModel
-            model.DataSources.Add(source);
-            // Instantiate bar Chart
-            Charts.barChart bar = new Charts.barChart("bar_chart");
-            // Set Chart's width and height
-            bar.Width = 500;
-            bar.Height = 400;
-            // Set DataModel instance as the data source of the chart
-            bar.Data.Source = model;
-            // Set Chart Title
-            bar.Caption.Text = "Most popular programming language";
-            // Render the chart to 'barChartLiteral' literal control
-            Literal1.Text = bar.Render();
+StaticSource source = new StaticSource(primaryData);
 
+// Create instance of DataModel class
+DataModel model = new DataModel();
+
+// Add DataSource to the DataModel
+model.DataSources.Add(source);
+
+// Instantiate bar Chart
+Charts.barChart bar = new Charts.barChart("bar_chart");
+
+// Set Chart's width and height
+bar.Width = 500;
+bar.Height = 400;
+
+// Set DataModel instance as the data source of the chart
+bar.Data.Source = model;
+
+// Set Chart Title
+bar.Caption.Text = "Most popular programming language";
+
+// Render the chart to 'barChartLiteral' literal control
+Literal1.Text = bar.Render();
 ```
 
 The `.aspx` template for the above sample is shown below:
