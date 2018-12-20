@@ -306,19 +306,14 @@ Data is an object used to define the values to be plotted for individual data se
 	<tr>
 		<td>`LabelFormatting`</td>
 		<td>string label</td>
-		<td>visualisationObj.Data.LabelFormatting("label_name").ShowLabel(True).ToolText("Country:India").FontName("Arial").FontColor("#ff000f").FontSize(12).Bold(false).Italic(true).LabelLink("http://fusioncharts.com/").BorderColor("000000").BGColor("000000").Alpha(100);</td>
-		<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. `ShowLabel`<br/>2. `ToolText`<br/></td>
+		<td>visualisationObj.Data.LabelFormatting("label_name").ShowLabel(True).ToolText("Country:India").FontName("Arial").FontColor("#ff000f").FontSize(12).Bold(false).Italic(true).LabelLink("www.fusioncharts.com/").BorderColor("000000").BGColor("000000").Alpha(100);</td>
+		<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. `ShowLabel`: Shows/hides data label<br/>2. `ToolText`: Sets tooltip text for data label<br/>3. `FontName`: Sets font for data label<br/>4. `FontColor`: Sets font color for data label<br/>5. `FontSize`: </td>
 	</tr>
 </table>
 
 
-API|Type|Syntax|Description|
--|-|-|-
-`ShowLabel`|Boolean|visualizationObj.Data.LabelFormatting("Name").ShowLabel(True);|Shows/hides data label|
-`ToolText`|String|visualizationObj.Data.LabelFormatting("Name").ToolText("Country:India");|Sets tooltip text for data label|
-`FontName`|String Name|visualizationObj.Data.LabelFormatting("Name").FontName("Arial");|Sets font for data label|
-`FontColor`|Hex Color Code|visualizationObj.Data.LabelFormatting("Name").FontColor("#ff000f");|Sets font color for data label|
-`FontSize`|Integer|visualizationObj.Data.LabelFormatting("Name").FontSize(12);|Sets font size for data label|
+
+|Integer|visualizationObj.Data.LabelFormatting("Name").FontSize(12);|Sets font size for data label|
 Bold|Boolean|visualizationObj.Data.LabelFormatting("Name").Bold(false);|Makes data label text bold|
 Italic|Boolean|visualizationObj.Data.LabelFormatting("Name").Italic(true);|Makes data label text italic|
 LabelLink|String|visualizationObj.Data.LabelFormatting("Name").LabelLink("localhost:CountryDetails");|Links data label to external resource|
