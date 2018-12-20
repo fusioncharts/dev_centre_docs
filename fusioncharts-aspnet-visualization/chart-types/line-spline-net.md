@@ -4,51 +4,48 @@ description: This article outlines the steps of how to create the line and splin
 heading: Line and Spline charts
 ---
 
+## Line Chart
+
 Now, let's learn how to create a Line chart. We will create a chart showcasing "Total Footfall in Bakersfield Central". 
 
 The data is shown in the table below:
 
-**TABLE**
+Day|Footfall
+-|-
+Monday|15123
+Tuesday|14233
+Wednesday|23507
+Thursday|9110
+Friday|15529
+Saturday|20803
+Sunday|19202
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-line-area-and-column-charts-example-5.js %}
+{% embed_chart fusioncharts-net-line-sample-example-1.js %}
 
 ## Render the Chart
 
 Create the `LineChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
-
 * Create `DataTable`.
-
 * Retrieve data using database query.
-
 * Set server name.
-
 * Set `DataBase` name.
-
 * Connect with `DataBase` using a connection string.
-
 * Create `StaticSource` using the `DataTable`.
-
 * Create an instance of `DataModel` class.
-
 * Add `DataSource` to the `DataModel`.
-
 * Instantiate Line Chart.
-
 * Set Chart's width and height.
-
 * Set `DataModel` instance as the data source of the chart.
-
 * Set Chart title.
-
 * Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
 
-```
+```aspnet
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
@@ -67,7 +64,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         protected void Page_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            string query = "select * from MonthlyProductSales";
+            string query = "select * from TotalFootfall";
             string connectionString = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
@@ -81,9 +78,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
                     da.Fill(dt);
-
                 }
-
             }
             StaticSource source = new StaticSource(dt);
             DataModel model = new DataModel();
@@ -92,8 +87,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             Charts.LineChart line = new Charts.LineChart("line_chart_db");
 
             line.ThemeName = FusionChartsTheme.ThemeName.Fusion;
-            line.Width = “1000”;
-            line.Height = “600”;
+            line.Width = “700”;
+            line.Height = “400”;
 
             line.Data.Source = model;
             
@@ -103,12 +98,11 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         }
     }
 }
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
-``` 
+```html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.LineChart" %>
 
 <!DOCTYPE html>
@@ -141,29 +135,34 @@ Now, let's learn how to create a spline chart with the same data. The code remai
 
 ``` 
 // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
-            // Create instance of DataModel class
-            DataModel model = new DataModel();
-            // Add DataSource to the DataModel
-            model.DataSources.Add(source);
-            // Instantiate spline Chart
-            Charts.splineChart spline = new Charts.splineChart("spline_chart");
-            // Set Chart's width and height
-            spline.Width = 500;
-            spline.Height = 400;
-            // Set DataModel instance as the data source of the chart
-            spline.Data.Source = model;
-            // Set Chart Title
-            spline.Caption.Text = "Total Footfall in Bakersfield Central";
-            // Render the chart to 'splineChartLiteral' literal control
-            Literal1.Text = spline.Render();
+StaticSource source = new StaticSource(primaryData);
+            
+// Create instance of DataModel class
+DataModel model = new DataModel();
 
+// Add DataSource to the DataModel
+model.DataSources.Add(source);
+
+// Instantiate spline Chart
+Charts.splineChart spline = new Charts.splineChart("spline_chart");
+
+// Set Chart's width and height
+spline.Width = 700;
+spline.Height = 400;
+
+// Set DataModel instance as the data source of the chart
+spline.Data.Source = model;
+
+// Set Chart Title
+spline.Caption.Text = "Total Footfall in Bakersfield Central";
+
+// Render the chart to 'splineChartLiteral' literal control
+Literal1.Text = spline.Render();
 ```
 
 The `.aspx` template for the above sample is shown below:
 
-``` 
-
+```html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="splineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.splineChart" %>
 
 <!DOCTYPE html>
@@ -186,9 +185,8 @@ The `.aspx` template for the above sample is shown below:
     </form>
 </body>
 </html>
-
 ```
 
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_chart fusioncharts-net-spline-sample-example-2.js %}
