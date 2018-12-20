@@ -230,7 +230,7 @@ API|Type|Syntax|Description|
 `FontName`|String|visualisationObj.Data.Categories.FontName = "Arial";|Sets the font of the X-axis title|
 `FontColor`|Hox Color Code|visualisationObj.Data.Categories.FontColor = "#ffffff";|Sets the font color of the X-axis title|
 
-* **CategoryFormatting: ** String category
+* **CategoryFormatting:** String category
 
 API|Type|Syntax|Description|
 -|-|-|-
