@@ -207,7 +207,7 @@ Data is an object used to define the values to be plotted for individual data se
 * ** source:** FusionCharts Data Model
 
 ```
-visualizationObj.Data.source = source; //Source is an instance of the DataModel
+visualizationObj.Data.Source = dataSource; //dataSource is an instance of the DataModel
 ```
 
 * **CategoryField**(string field_name)
@@ -216,7 +216,7 @@ visualizationObj.Data.source = source; //Source is an instance of the DataModel
 visualizationObj.Data.CategoryField("country");
 ```
 
-* **SeriesFields**(string[ ] fields_name)
+* **SeriesFields**(params string[ ] fields_name)
 
 ```
 visualizationObj.Data.SeriesFields("Sales,Total_Purchase");
@@ -246,9 +246,9 @@ API|Type|Syntax|Description|
 `BGColor`|Hex Color Code|visualizationObj.Data.Categories.CategoryFormatting("india").BGColor("000000");|Sets the background color for category labels|
 `Alpha`|Integer|visualizationObj.Data.Categories.CategoryFormatting("india").Alpha(100);|Sets the transparency of category labels|
 
-* **Series:** String Object
+* **Series:** Series Object
 
-	* **SeriesFormatting:** String
+	* **SeriesFormatting:** Method of `Series` Object
 
 API|Type|Syntax|Description|
 -|-|-|-
@@ -278,25 +278,39 @@ Following are the API's which only have support on **Pie**, **Doughnut**, **Funn
 
 Data is an object used to define the values to be plotted for individual data series. The instances of the DataModel in **Data** object is listed below:
 
-* ** source:** FusionCharts Data Model
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`Source`</td>
+		<td>FusionCharts Data Model</td>
+		<td>visualizationObj.Data.Source = dataSource;</td>
+		<td>Sets the data source of the data model. `dataSource` is an instance of the DataModel.</td>
+	</tr>
+	<tr>
+		<td>`CategoryField`</td>
+		<td>String field_name</td>
+		<td>visualizationObj.Data.CategoryField("Country");</td>
+		<td>Specifies the category field to apply customizations on.</td>
+	</tr>
+	<tr>
+		<td>`SeriesField`</td>
+		<td>string series_name</td>
+		<td>visualizationObj.Data.SeriesField("Country");</td>
+		<td>Specifies the series field to apply customizations on.</td>
+	</tr>
+	<tr>
+		<td>`LabelFormatting`</td>
+		<td>string label</td>
+		<td>visualisationObj.Data.LabelFormatting("label_name").ShowLabel(True).ToolText("Country:India").FontName("Arial").FontColor("#ff000f").FontSize(12).Bold(false).Italic(true).LabelLink("http://fusioncharts.com/").BorderColor("000000").BGColor("000000").Alpha(100);</td>
+		<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. `ShowLabel`<br/>2. `ToolText`<br/></td>
+	</tr>
+</table>
 
-```
-visualizationObj.Data.source = source; //Source is an instance of the DataModel
-```
-
-* **CategoryField**: String
-
-```
-visualizationObj.Data.CategoryField("Country");
-```
-
-* **SeriesField**: String
-
-```
-visualizationObj.Data.SeriesField("Country");
-```
-
-* **LabelFormatting**: String
 
 API|Type|Syntax|Description|
 -|-|-|-
