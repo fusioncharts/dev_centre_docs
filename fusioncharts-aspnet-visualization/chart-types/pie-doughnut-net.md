@@ -18,7 +18,7 @@ Perl|14000|
 
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_all fusioncharts-net-visualization-pie-example-1.js %}
 
 ## Render the Chart
 
