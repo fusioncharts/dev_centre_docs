@@ -18,7 +18,7 @@ Perl|14000|
 
 The chart will look as shown below:
 
-{% embed_all fusioncharts-net-visualization-pie-example-1.js %}
+{% embed_chart fusioncharts-net-visualization-pie-example-1.js %}
 
 ## Render the Chart
 
@@ -206,4 +206,4 @@ The `.aspx` template for the above sample is shown below:
 
 The chart will look as shown below:
 
-{% embed_all fusioncharts-net-visualization-doughnut-example-2.js %}
+{% embed_chart fusioncharts-net-visualization-doughnut-example-2.js %}

@@ -8,7 +8,7 @@ Now, let's learn how to create a Pyramid chart. We will create a funnel chart sh
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-pyramid-chart-example-1.js %}
+{% embed_chart standard-charts-pyramid-chart-example-1.js %}
 
 ## Render the Chart
 

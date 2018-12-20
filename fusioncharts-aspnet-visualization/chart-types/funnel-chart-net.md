@@ -17,7 +17,7 @@ Purchased on Introductory Offers|120000
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-funnel-chart-example-1.js %}
+{% embed_chart standard-charts-funnel-chart-example-1.js %}
 
 ## Render the Chart
 

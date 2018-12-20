@@ -37,7 +37,7 @@ Dec 2017|38300
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-scroll-charts-example-1.js %}
+{% embed_chart standard-charts-scroll-charts-example-1.js %}
 
 ## Render the Chart
 
@@ -134,7 +134,7 @@ The `.aspx` template for the above sample is shown below:
 
 Now, let's learn how to create a Scrollable Line Chart. The chart will look as shown below:
 
-{% embed_all standard-charts-scroll-charts-example-2.js %}
+{% embed_chart standard-charts-scroll-charts-example-2.js %}
 
 ## Render the Chart
 
@@ -269,4 +269,4 @@ The `.aspx` template for the above sample is shown below:
 
 The chart is shown below:
 
-{% embed_all standard-charts-scroll-charts-example-3.js %}
+{% embed_chart standard-charts-scroll-charts-example-3.js %}
