@@ -278,38 +278,40 @@ Following are the API's which only have support on **Pie**, **Doughnut**, **Funn
 
 Data is an object used to define the values to be plotted for individual data series. The instances of the DataModel in **Data** object is listed below:
 
-<table>
-	<tr>
-		<th>API</th>
-		<th>Type</th>
-		<th>Syntax</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>`Source`</td>
-		<td>FusionCharts Data Model</td>
-		<td>visualizationObj.Data.Source = dataSource;</td>
-		<td>Sets the data source of the data model. `dataSource` is an instance of the DataModel.</td>
-	</tr>
-	<tr>
-		<td>`CategoryField`</td>
-		<td>String field_name</td>
-		<td>visualizationObj.Data.CategoryField("Country");</td>
-		<td>Specifies the category field to apply customizations on.</td>
-	</tr>
-	<tr>
-		<td>`SeriesField`</td>
-		<td>string series_name</td>
-		<td>visualizationObj.Data.SeriesField("Country");</td>
-		<td>Specifies the series field to apply customizations on.</td>
-	</tr>
-	<tr>
-		<td>`LabelFormatting`</td>
-		<td>string label</td>
-		<td>visualisationObj.Data.LabelFormatting("label_name").ShowLabel(True).ToolText("Country:India").FontName("Arial").FontColor("#ff000f").FontSize(12).Bold(false).Italic(true).LabelLink("www.fusioncharts.com/").BorderColor("000000").BGColor("000000").Alpha(100);</td>
-		<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. `ShowLabel`: Shows/hides data label<br/>2. `ToolText`: Sets tooltip text for data label<br/>3. `FontName`: Sets font for data label<br/>4. `FontColor`: Sets font color for data label<br/>5. `FontSize`: </td>
-	</tr>
-</table>
+<div class="table-responsive">
+	<table>
+		<tr>
+			<th>API</th>
+			<th>Type</th>
+			<th>Syntax</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>`Source`</td>
+			<td>FusionCharts Data Model</td>
+			<td>visualizationObj.Data.Source = dataSource;</td>
+			<td>Sets the data source of the data model. `dataSource` is an instance of the DataModel.</td>
+		</tr>
+		<tr>
+			<td>`CategoryField`</td>
+			<td>String field_name</td>
+			<td>visualizationObj.Data.CategoryField("Country");</td>
+			<td>Specifies the category field to apply customizations on.</td>
+		</tr>
+		<tr>
+			<td>`SeriesField`</td>
+			<td>string series_name</td>
+			<td>visualizationObj.Data.SeriesField("Country");</td>
+			<td>Specifies the series field to apply customizations on.</td>
+		</tr>
+		<tr>
+			<td>`LabelFormatting`</td>
+			<td>string label</td>
+			<td>visualisationObj.Data.LabelFormatting("label_name").ShowLabel(True).ToolText("Country:India").FontName("Arial").FontColor("#ff000f").FontSize(12).Bold(false).Italic(true).LabelLink("www.fusioncharts.com/").BorderColor("000000").BGColor("000000").Alpha(100);</td>
+			<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. `ShowLabel`: Shows/hides data label<br/>2. `ToolText`: Sets tooltip text for data label<br/>3. `FontName`: Sets font for data label<br/>4. `FontColor`: Sets font color for data label<br/>5. `FontSize`: </td>
+		</tr>
+	</table>
+</div>
 
 
 
