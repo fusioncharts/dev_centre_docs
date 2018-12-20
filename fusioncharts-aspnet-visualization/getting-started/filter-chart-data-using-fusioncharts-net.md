@@ -23,7 +23,7 @@ The predefined filters are:
 * Contains
 * Ends with
 
-In this article, we will create a chart by applying couple of filter operations to a tabular data. To start with let's will create a simple chart showcasing Global online sales of a SuperStore. Let's create the chart using the tabular table shown below:
+In this article, we will create a chart by applying couple of filter operations to a tabular data. To start with let's create a simple chart showcasing Global online sales of a SuperStore. Let's create the chart using the tabular table shown below:
 
 > In the chart, **Order Date** Column will be represented using x-axis whereas **Sales** column will be represented in the y-axis.
 
@@ -114,8 +114,8 @@ Create the `ColumnChart.aspx.cs` file and do the following:
 * Instantiate Column Chart.
 * Set Chart's width and height.
 * Set `DataModel` instance as the data source of the chart.
-* Category field for the chart.
-* Series field(s) for the chart.
+* Set category field for the chart.
+* Set series field(s) for the chart.
 * Set Chart Title.
 * Finally, use a container using `<div>` to render the chart.
 

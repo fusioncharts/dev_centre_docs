@@ -11,13 +11,27 @@ In this section, we will show you how to install FusionCharts.NET and all the ot
 
 To install download `FusionCharts.NET` and follow the steps given below:
 
-* Include the FusionCharts JavaScript files,
+* Include the FusionCharts JavaScript files.
+
+* Add the following script tag to your `aspx` or `cshtml` file:
+
+**For ASPX**
+
+```html
+<script type="text/javascript" src="~/Scripts/FusionCharts/FusionCharts.js"></script>
+```
+
+**For cshtml**
+
+```html
+<script src="@Url.Content("/Scripts/FusionCharts/FusionCharts.js")"></script>
+```
 
 * Add a reference to the `FusionCharts.DataEngine.dll` and `FusionCharts.Visualization.dll` files into your `ASP.NET` project.
 
 ## Nuget download:
 
-To download and install from Nuget refer to the code below:
+To use Nuget package, please run the following command in the Nuget Package Manage Console:
 
 ```
 Install-Package FusionCharts.Visualization -Version 0.9.0-beta
@@ -29,9 +43,9 @@ Once installed from Nuget, it'll add some assemblies to your web project, and th
 
 FusionCharts export handler gets automatically installed once you install `FusionCharts.Visualization` nuget package. However, in order to use it, you need to configure the following:
 
-1. Make sure the `PresentationCore` and `WindowsBase` assemblies are referenced in your web project. These assemblies are automatically referenced when you install the nuget package, but in case if they are not, then you'll have to manually add them.
+* Make sure the `PresentationCore` and `WindowsBase` assemblies are referenced in your web project. These assemblies are automatically referenced when you install the nuget package, but in case if they are not, then you'll have to manually add them.
 
-2. Add these dependencies into `web.config`:
+* Add these dependencies into `web.config`:
 
 ```
  <compilation targetFramework="4.5" >
@@ -41,12 +55,12 @@ FusionCharts export handler gets automatically installed once you install `Fusio
     </assemblies>
 </compilation>
 ```
-3. Add the following line under <`system.web`> in `web.config`:
+* Add the following line under <`system.web`> in `web.config`:
 
 ```
 <httpRuntime targetFramework="4.5" requestValidationMode="2.0" />
 ```
-4. Add reference to all files present inside "Helper Assemblies" folder to your project
+* Add reference to all files present inside "Helper Assemblies" folder to your project
     * `FusionCharts.SharpVectors.Converters.dll`
     * `FusionCharts.SharpVectors.Core.dll`
     * `FusionCharts.SharpVectors.Css.dll`

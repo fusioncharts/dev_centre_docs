@@ -25,7 +25,7 @@ column.Height = "600";
 // Configure export settings
 column.Export.Enabled = true;
 column.Export.ExportedFileName = "fusioncharts.net_visualizations_exported_files";
-column.Export.Action = BaseExportObject.ExportAction.DOWNLOAD;
+column.Export.Action = Exporter.ExportAction.DOWNLOAD;
 
 ...
 

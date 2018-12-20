@@ -33,8 +33,8 @@ Create the `FirstChart.aspx.cs` file and do the following:
 * Retrieve data using database query.
 * Set server name.
 * Set `DataBase` name.
-* Connect with `DataBase` using a connection string.
-* Create `StaticSource` using the `DataTable`.
+* Retrieve data from database and store it in a `DataTable` object.
+* Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
 * Add `DataSource` to the `DataModel`.
 * Instantiate Column Chart
