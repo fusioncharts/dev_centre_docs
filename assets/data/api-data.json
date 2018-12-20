@@ -1606,6 +1606,63 @@
                         }
                     }
                 },
+                "printManager": {
+                    "id": "printManager",
+                    "name": "printManager",
+                    "kind": "namespace",
+                    "description": "",
+                    "access": "",
+                    "virtual": false,
+                    "longname": "FusionCharts.printManager",
+                    "methods": {
+                        "static-configure": {
+                            "id": "static-configure",
+                            "name": "configure",
+                            "kind": "function",
+                            "access": "",
+                            "scope": "static",
+                            "virtual": false,
+                            "description": "",
+                            "examples": {},
+                            "params": {
+                                "configuration": {
+                                    "name": "configuration",
+                                    "type": [
+                                        "object.<string>"
+                                    ],
+                                    "description": "",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                }
+                            }
+                        },
+                        "static-enabled": {
+                            "id": "static-enabled",
+                            "name": "enabled",
+                            "kind": "function",
+                            "access": "",
+                            "scope": "static",
+                            "virtual": false,
+                            "description": "",
+                            "examples": {},
+                            "params": {
+                                "state": {
+                                    "name": "state",
+                                    "type": [
+                                        "boolean"
+                                    ],
+                                    "description": "",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                }
+                            }
+                        }
+                    }
+                },
                 "annotations": {
                     "id": "annotations",
                     "name": "annotations",

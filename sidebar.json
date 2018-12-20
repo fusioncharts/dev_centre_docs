@@ -1684,8 +1684,16 @@
                         "title": "Namespaces",
                         "children": [
                            {
+                              "title": "Debugger",
+                              "path": "/api/fusioncharts/namespaces/debugger"
+                           },
+                           {
                               "title": "Ajax",
                               "path": "/api/fusioncharts/namespaces/ajax"
+                           },
+                           {
+                              "title": "PrintManager",
+                              "path": "/api/fusioncharts/namespaces/printmanager"
                            },
                            {
                               "title": "Annotations",
