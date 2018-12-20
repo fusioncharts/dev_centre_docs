@@ -148,23 +148,21 @@ Refer to the code below:
     "chart": {
         ...
     },
-    "data": [
-        {
-            "label": "Apple",
-            "value": "810000",
-            "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://fusioncharts.com"
-        },
-        {
-            "label": "Cranberry",
-            "value": "620000",
-            "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://www.fusioncharts.com/explore/charts/"
-        },
-        {
-            "label": "Grapes",
-            "value": "350000",
-            "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://blog.fusioncharts.com/"
-        }
-    ]
+    "data": [{
+        "label": "Apple",
+        "value": "810000",
+        "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://fusioncharts.com"
+    },
+    {
+        "label": "Cranberry",
+        "value": "620000",
+        "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://www.fusioncharts.com/dev/"
+    },
+    {
+        "label": "Grapes",
+        "value": "350000",
+        "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://blog.fusioncharts.com/"
+    }]
 }
 ```
 
@@ -185,23 +183,21 @@ Refer to the code below:
     "chart": {
        ...
     },
-    "data": [
-        {
-            "label": "Apple",
-            "value": "810000",
-            "link": "F-drill-http://fusioncharts.com"
-        },
-        {
-            "label": "Cranberry",
-            "value": "620000",
-            "link": "F-drill-http://www.fusioncharts.com/explore/charts/"
-        },
-        {
-            "label": "Grapes",
-            "value": "350000",
-            "link": "F-drill-http://blog.fusioncharts.com/"
-        }
-    ]
+    "data": [{
+        "label": "Apple",
+        "value": "810000",
+        "link": "F-drill-http://fusioncharts.com"
+    },
+    {
+        "label": "Cranberry",
+        "value": "620000",
+        "link": "F-drill-http://www.fusioncharts.com/explore/charts/"
+    },
+    {
+        "label": "Grapes",
+        "value": "350000",
+        "link": "F-drill-http://blog.fusioncharts.com/"
+    }]
 }
 ```
 
@@ -429,122 +425,108 @@ Refer to the code below:
         "theme": "fusion",
         "rotateValues": "0"
     },
-    "data": [
-        {
-            "label": "Apple",
-            "value": "810000",
-            "link": "newchart-xml-apple"
-        },
-        {
-            "label": "Cranberry",
-            "value": "620000",
-            "link": "newchart-xml-cranberry"
-        },
-        {
-            "label": "Grapes",
-            "value": "350000",
-            "link": "newchart-xml-grapes"
+    "data": [{
+        "label": "Apple",
+        "value": "810000",
+        "link": "newchart-xml-apple"
+    }, {
+        "label": "Cranberry",
+        "value": "620000",
+        "link": "newchart-xml-cranberry"
+    }, {
+        "label": "Grapes",
+        "value": "350000",
+        "link": "newchart-xml-grapes"
+    }],
+    "linkeddata": [{
+        "id": "apple",
+        "linkedchart": {
+            "chart": {
+                "caption": "Apple Juice - Quarterly Sales",
+                "subcaption": "Last year",
+                "xaxisname": "Quarter",
+                "yaxisname": "Amount (In USD)",
+                "numberprefix": "$",
+                "theme": "fusion",
+                "rotateValues": "0"
+            },
+            "data": [{
+                "label": "Q1",
+                "value": "157000"
+            },
+            {
+                "label": "Q2",
+                "value": "172000"
+            },
+            {
+                "label": "Q3",
+                "value": "206000"
+            },
+            {
+                "label": "Q4",
+                "value": "275000",
+                "rotateValues": "0"
+            }]
         }
-    ],
-    "linkeddata": [
-        {
-            "id": "apple",
-            "linkedchart": {
-                "chart": {
-                    "caption": "Apple Juice - Quarterly Sales",
-                    "subcaption": "Last year",
-                    "xaxisname": "Quarter",
-                    "yaxisname": "Amount (In USD)",
-                    "numberprefix": "$",
-                    "theme": "fusion",
-                    "rotateValues": "0"
-                },
-                "data": [
-                    {
-                        "label": "Q1",
-                        "value": "157000"
-                    },
-                    {
-                        "label": "Q2",
-                        "value": "172000"
-                    },
-                    {
-                        "label": "Q3",
-                        "value": "206000"
-                    },
-                    {
-                        "label": "Q4",
-                        "value": "275000",
-                        "rotateValues": "0"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "cranberry",
-            "linkedchart": {
-                "chart": {
-                    "caption": "Cranberry Juice - Quarterly Sales",
-                    "subcaption": "Last year",
-                    "xaxisname": "Quarter",
-                    "yaxisname": "Amount (In USD)",
-                    "numberprefix": "$",
-                    "theme": "fusion",
-                    "rotateValues": "0"
-                },
-                "data": [
-                    {
-                        "label": "Q1",
-                        "value": "102000"
-                    },
-                    {
-                        "label": "Q2",
-                        "value": "142000"
-                    },
-                    {
-                        "label": "Q3",
-                        "value": "187000"
-                    },
-                    {
-                        "label": "Q4",
-                        "value": "189000"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "grapes",
-            "linkedchart": {
-                "chart": {
-                    "caption": "Grape Juice - Quarterly Sales",
-                    "subcaption": "Last year",
-                    "xaxisname": "Quarter",
-                    "yaxisname": "Amount (In USD)",
-                    "numberprefix": "$",
-                    "theme": "fusion",
-                    "rotateValues": "0"
-                },
-                "data": [
-                    {
-                        "label": "Q1",
-                        "value": "45000"
-                    },
-                    {
-                        "label": "Q2",
-                        "value": "72000"
-                    },
-                    {
-                        "label": "Q3",
-                        "value": "95000"
-                    },
-                    {
-                        "label": "Q4",
-                        "value": "108000"
-                    }
-                ]
-            }
+    }, {
+        "id": "cranberry",
+        "linkedchart": {
+            "chart": {
+                "caption": "Cranberry Juice - Quarterly Sales",
+                "subcaption": "Last year",
+                "xaxisname": "Quarter",
+                "yaxisname": "Amount (In USD)",
+                "numberprefix": "$",
+                "theme": "fusion",
+                "rotateValues": "0"
+            },
+            "data": [{
+                "label": "Q1",
+                "value": "102000"
+            },
+            {
+                "label": "Q2",
+                "value": "142000"
+            },
+            {
+                "label": "Q3",
+                "value": "187000"
+            },
+            {
+                "label": "Q4",
+                "value": "189000"
+            }]
         }
-    ]
+    }, {
+        "id": "grapes",
+        "linkedchart": {
+            "chart": {
+                "caption": "Grape Juice - Quarterly Sales",
+                "subcaption": "Last year",
+                "xaxisname": "Quarter",
+                "yaxisname": "Amount (In USD)",
+                "numberprefix": "$",
+                "theme": "fusion",
+                "rotateValues": "0"
+            },
+            "data": [{
+                "label": "Q1",
+                "value": "45000"
+            },
+            {
+                "label": "Q2",
+                "value": "72000"
+            },
+            {
+                "label": "Q3",
+                "value": "95000"
+            },
+            {
+                "label": "Q4",
+                "value": "108000"
+            }]
+        }
+    }]
 }
 ```
 
@@ -775,7 +757,6 @@ The code for the above example is given below:
     }
     -->
 </script>
-
 ```
 
 **Apple** and **$810K** are passed as two parameters to the showAlert function— **Apple** is passed as a string parameter and **$810K** is passed as a numeric parameter.
