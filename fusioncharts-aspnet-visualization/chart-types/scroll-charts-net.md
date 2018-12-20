@@ -79,7 +79,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
         protected void Page_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            string query = "select * from CompanyWiseYearlySales";
+            string query = "select * from MonthlySales";
             string connectionString = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
@@ -176,7 +176,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
         protected void Page_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            string query = "select * from CompanyWiseYearlySales";
+            string query = "select * from MonthlySales";
             string connectionString = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
@@ -205,7 +205,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 
 The `.aspx` template for the above sample is shown below:
 
-```
+```html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollLineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollLineChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -245,7 +245,7 @@ Literal1.Text = area.Render();
 
 The `.aspx` template for the above sample is shown below:
 
-```
+```html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollAreaChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollAreaChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
