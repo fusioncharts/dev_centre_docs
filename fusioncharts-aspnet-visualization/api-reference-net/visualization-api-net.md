@@ -248,29 +248,28 @@ API|Type|Syntax|Description|
 
 * **Series:** Series Object
 
-	* **SeriesFormatting:** Method of `Series` Object
+Series is an object used to customize the series of data plots. The instances of the DataModel in **Series** object is listed below:
 
-API|Type|Syntax|Description|
--|-|-|-
-`Alpha`|Integer|visualizationObj.Data.Series.SeriesFormatting("Column_ Name").Alpha(100);|Sets the transparency of a data label|
-`Color`|Hex Color Code|visualizationObj.Data.Series.SeriesFormatting("Column_ Name").Color("ff00ff");|Sets the font color of a data label|
-`Dashed`|Boolean|visualizationObj.Data.Series.SeriesFormatting("Column_ Name").Dashed(False);|Makes the border of the data label dashed|
-`DisplayName`|String|visualizationObj.Data.Series.SeriesFormatting("india").DisplayName("Name");|Sets the display name of a data label|
-`Visible`|Boolean|visualizationObj.Data.Series.SeriesFormatting("india").Visible(true);|Enables/disables visibility of a data series|
-`ShowValues`|Boolean|visualizationObj.Data.Series.SeriesFormatting("india").ShowValues(True);|Shows/hides values of a data series|
-
-	* ValueFormatting: String
-
-API|Type|Syntax|Description|
--|-|-|-
-`Alpha`|Integer|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Alpha(100);|Sets transparency of data value|
-`Color`|Hex Color Code|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Color("ff00ff");|Sets font color of data value|
-`Dashed`|Boolean|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Dashed(False);|Makes data value border dashed|
-`ShowValues`|Boolean|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ShowValue("true");|Shows/Hides data value|
-`Link`|LinkURL|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").Link(LinkURL);|Links data value to external resource|
-`DisplayValue`|String|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").DisplayValue(value > 100);|Sets display text for data value|
-`ToolText`|String|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ToolText(Text);|Sets tooltip text for data value|
-`ValuePosition`|MultiSeriesDataElement.ValuePlaced position|visualizationObj.Data.Series.ValueFormatting("column_name","formatting_formula").ValuePosition(MultiSeriesDataElement.ValuePlaced position.ABOVE);|Sets display position for data value|
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`SeriesFormatting`</td>
+		<td>Method of `Series` Object</td>
+		<td>visualisationObj.Data.Series<br/>.SeriesFormatting("Series_Name")<br/>.Alpha(100)<br/>.Color("ff00ff")<br/>.Dashed(False)<br/>.DisplayName("Yearly sales")<br/>.Visible(true)<br/>.ShowValues(True);</td>
+		<td>This instance is used to customize the selected series of the chart. Following are the instance methods of `SeriesFormatting`:<br/>1. Alpha<br/>2. Color<br/>3. Dashed<br/>4. DisplayName<br/>5. Visible<br/>6. ShowValues</td>
+	</tr>
+	<tr>
+		<td>`ValueFormatting`</td>
+		<td>String</td>
+		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition`(MultiSeriesDataElement.ValuePlaced position.ABOVE);</td>
+		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha<br/>2. Color<br/>3. Dashed<br/>4. ShowValue<br/>5. Link<br/>6. DisplayValue<br/>7. ToolText<br/>8. ValuePosition</td>
+	</tr>
+</table>
 
 Following are the API's which only have support on **Pie**, **Doughnut**, **Funnel** and **Pyramid** Charts.
 
@@ -313,6 +312,6 @@ Data is an object used to define the values to be plotted for individual data se
 		<td>`ValueFormatting`</td>
 		<td>String</td>
 		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition`(MultiSeriesDataElement.ValuePlaced position.ABOVE);</td>
-		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha<br/>2. Color<br/>3. Dashed<br/>4. ShowValue<br/>5. Link<br/>6. DisplayValue<br/>7. ToolText</td>
+		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha<br/>2. Color<br/>3. Dashed<br/>4. ShowValue<br/>5. Link<br/>6. DisplayValue<br/>7. ToolText<br/>8. ValuePosition</td>
 	</tr>
 </table>
