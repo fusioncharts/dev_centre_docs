@@ -8,356 +8,223 @@ heading: Scroll charts
 
 Now, let's learn how to create a Scrollable Column Chart. We will create a chart showcasing sales trends of a company in the Financial Year 2016-17. The data will look as shown below:
 
-<<Table>>
+Month|Sales
+-|-
+Jan 2016|27400
+Feb 2016|29800
+Mar 2016|25800
+Apr 2016|26800
+May 2016|29600
+Jun 2016|32600
+Jul 2016|31800
+Aug 2016|36700
+Sep 2016|29700
+Oct 2016|31900
+Nov 2016|34800
+Dec 2016|24800
+Jan 2017|26300
+Feb 2017|31800
+Mar 2017|30900
+Apr 2017|33000
+May 2017|36200
+Jun 2017|32100
+Jul 2017|37500
+Aug 2017|38500
+Sep 2017|35400
+Oct 2017|38200
+Nov 2017|33300
+Dec 2017|38300
 
 The chart will look as shown below:
 
-<<Live Chart>>
+{% embed_all standard-charts-scroll-charts-example-1.js %}
 
 ## Render the Chart
 
 Create the `ScrollColumnChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` .dll files.
-
 * Create `DataTable`.
-
 * Retrieve data using database query.
-
 * Set `serverName`.
-
 * Set `DataBase` name.
-
 * Connect with `DataBase` using a `connectionString`.
-
 * Create `StaticSource` using the `DataTable`.
-
 * Create an instance of `DataModel` class.
-
 * Add `DataSource` to the `DataModel`.
-
 * Instantiate `column` chart.
-
 * Set chart width.
-
 * Set chart height.
-
 * Set the `Scrollable` property of the chart to `true`.
-
 * Set `DataModel` instance as the data source of the chart.
-
 * Set chart title.
-
 * Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
 
-```
-
+```aspnet
 using FusionCharts.DataEngine;
-
 using FusionCharts.Visualization;
-
 using System;
-
 using System.Collections.Generic;
-
 using System.Data;
-
 using System.Data.SqlClient;
-
 using System.Linq;
-
 using System.Web;
-
 using System.Web.UI;
-
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples
-
-{
-
-    public partial class ScrollChart : System.Web.UI.Page
-
-    {
-
+namespace FusionChartsVisualisationWebFormsSamples.Samples {
+    public partial class ScrollChart : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e)
-
         {
-
             DataTable dt = new DataTable();
-
             string query = "select * from CompanyWiseYearlySales";
-
             string connectionString = null;
-
             string serverName = "FusionChartsServer";
-
             string databaseName = "FusionchartsSamplesDB";
-
             dt.Clear();
-
             connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
-
             using (SqlConnection con = new SqlConnection(connectionString))
-
             {
-
                 con.Open();
-
                 using (SqlCommand command = new SqlCommand(query, con))
-
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
-
                 {
-
                     da.Fill(dt);
-
                 }
-
             }
-
             StaticSource source = new StaticSource(dt);
-
             DataModel model = new DataModel();
-
             model.DataSources.Add(source);
-
             Charts.ColumnChart column = new Charts.ColumnChart("scroll_chart_db");
-
             column.Scrollable = true;
-
             column.Data.Source = model;
-
             Literal1.Text = column.Render();
-
         }
-
     }
-
 }
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
-```
-
+```html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollColumnChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollColumnChart" %>
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head runat="server">
-
     <title></title>
-
 </head>
-
 <body>
-
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-   
-
     <form id="form1" runat="server">
-
         <div>
-
             <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
-
         </div>
-
         <div>
-
             <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-
         </div>
-
     </form>
-
 </body>
-
 </html>
-
 ```
 
 ## Scroll Line Chart
 
 Now, let's learn how to create a Scrollable Line Chart. The chart will look as shown below:
 
-<<Live Chart>>
+{% embed_all standard-charts-scroll-charts-example-2.js %}
 
 ## Render the Chart
 
 Create the `ScrollLineChart.aspx.cs` file and do the following:
 
-* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files.
-
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` .dll files.
 * Create `DataTable`.
-
 * Retrieve data using database query.
-
 * Set `serverName`.
-
 * Set `DataBase` name.
-
 * Connect with `DataBase` using a `connectionString`.
-
 * Create `StaticSource` using the `DataTable`.
-
 * Create an instance of `DataModel` class.
-
 * Add `DataSource` to the `DataModel`.
-
-* Instantiate `line` chart.
-
+* Instantiate `column` chart.
 * Set chart width.
-
 * Set chart height.
-
 * Set the `Scrollable` property of the chart to `true`.
-
 * Set `DataModel` instance as the data source of the chart.
-
 * Set chart title.
-
 * Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
 
-```
-
+```aspnet
 using FusionCharts.DataEngine;
-
 using FusionCharts.Visualization;
-
 using System;
-
 using System.Collections.Generic;
-
 using System.Data;
-
 using System.Data.SqlClient;
-
 using System.Linq;
-
 using System.Web;
-
 using System.Web.UI;
-
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples
-
-{
-
-    public partial class ScrollChart : System.Web.UI.Page
-
-    {
-
+namespace FusionChartsVisualisationWebFormsSamples.Samples {
+    public partial class ScrollChart : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e)
-
         {
-
             DataTable dt = new DataTable();
-
             string query = "select * from CompanyWiseYearlySales";
-
             string connectionString = null;
-
             string serverName = "FusionChartsServer";
-
             string databaseName = "FusionchartsSamplesDB";
-
             dt.Clear();
-
             connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
-
             using (SqlConnection con = new SqlConnection(connectionString))
-
             {
-
                 con.Open();
-
                 using (SqlCommand command = new SqlCommand(query, con))
-
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
-
                 {
-
                     da.Fill(dt);
-
                 }
-
             }
-
             StaticSource source = new StaticSource(dt);
-
             DataModel model = new DataModel();
-
             model.DataSources.Add(source);
-
             Charts.LineChart line = new Charts.LineChart("scroll_chart_db");
-
             line.Scrollable = true;
-
             line.Data.Source = model;
-
             Literal1.Text = line.Render();
-
         }
-
     }
-
 }
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
 ```
-
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollLineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollLineChart" %>
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head runat="server">
-
     <title></title>
-
 </head>
-
 <body>
-
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
     <form id="form1" runat="server">
-
         <div>
-
             <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
-
         </div>
-
         <div>
-
             <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-
         </div>
-
     </form>
-
 </body>
-
 </html>
-
 ```
 
 ## Scroll Area Chart
@@ -367,66 +234,39 @@ Now, let's learn how to create a Scrollable Area Chart. The code remains the sam
 ## Render the Chart
 
 ```
-            StaticSource source = new StaticSource(dt);
-            DataModel model = new DataModel();
-            model.DataSources.Add(source);
-            Charts.AreaChart area = new Charts.AreaChart("scroll_chart_db");
-            area.Scrollable = true;
-            area.Data.Source = model;
-            Literal1.Text = area.Render();
-
-        }
-
-    }
-
-}
-
+StaticSource source = new StaticSource(dt);
+DataModel model = new DataModel();
+model.DataSources.Add(source);
+Charts.AreaChart area = new Charts.AreaChart("scroll_chart_db");
+area.Scrollable = true;
+area.Data.Source = model;
+Literal1.Text = area.Render();
 ```
 
 The `.aspx` template for the above sample is shown below:
 
 ```
-
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollAreaChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollAreaChart" %>
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head runat="server">
-
     <title></title>
-
 </head>
-
 <body>
-
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
        <form id="form1" runat="server">
-
         <div>
-
             <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
-
         </div>
-
         <div>
-
             <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-
         </div>
-
     </form>
-
 </body>
-
 </html>
-
 ```
 
 The chart is shown below:
 
-<<LIVE CHART>>
-
+{% embed_all standard-charts-scroll-charts-example-3.js %}
