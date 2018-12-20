@@ -306,29 +306,13 @@ Data is an object used to define the values to be plotted for individual data se
 	<tr>
 		<td>`LabelFormatting`</td>
 		<td>string label</td>
-		<td>visualisationObj.Data.LabelFormatting("label_name")<br/>.ShowLabel(True)<br/>.ToolText("Country:India")<br/>.FontName("Arial")<br/>.FontColor("#ff000f")<br/>.FontSize(12)<br/>.Bold(false)<br/>.Italic(true)<br/>.LabelLink("www.fusioncharts.com/")<br/>.BorderColor("000000")<br/>.BGColor("000000")<br/>.Alpha(100);</td>
-		<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. `ShowLabel`: Shows/hides data label<br/>2. `ToolText`: Sets tooltip text for data label<br/>3. `FontName`: Sets font for data label<br/>4. `FontColor`: Sets font color for data label<br/>5. `FontSize`: </td>
+		<td>visualisationObj.Data<br/>.LabelFormatting("label_name")<br/>.ShowLabel(True)<br/>.ToolText("Country:India")<br/>.FontName("Arial")<br/>.FontColor("#ff000f")<br/>.FontSize(12)<br/>.Bold(false)<br/>.Italic(true)<br/>.LabelLink("www.fusioncharts.com/")<br/>.BorderColor("000000")<br/>.BGColor("000000")<br/>.Alpha(100);</td>
+		<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. ShowLabel<br/>2. ToolText<br/>3. FontName<br/>4. FontColor<br/>5. FontSize<br/>6. Bold<br/>7. Italic<br/>8. LabelLink<br/>9. BorderColor<br/>10. BGColor<br/>Alpha</td>
+	</tr>
+	<tr>
+		<td>`ValueFormatting`</td>
+		<td>String</td>
+		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.Alpha(100)<br/>.Color("ff0000)<br/>.Dashed(false)<br/>.ShowValue(true)<br/>.Link("www.fusioncharts.com")<br/>.DisplayValue("value > 100")<br/>.ToolText("country wise sales value")<br/>.ValuePosition(MultiSeriesDataElement.ValuePlaced position.ABOVE);</td>
+		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha<br/>2. Color<br/>3. Dashed<br/>4. ShowValue<br/>5. Link<br/>6. DisplayValue<br/>7. ToolText</td>
 	</tr>
 </table>
-
-
-
-|Integer|visualizationObj.Data.LabelFormatting("Name").FontSize(12);|Sets font size for data label|
-Bold|Boolean|visualizationObj.Data.LabelFormatting("Name").Bold(false);|Makes data label text bold|
-Italic|Boolean|visualizationObj.Data.LabelFormatting("Name").Italic(true);|Makes data label text italic|
-LabelLink|String|visualizationObj.Data.LabelFormatting("Name").LabelLink("localhost:CountryDetails");|Links data label to external resource|
-BorderColor|Hex Color Code|visualizationObj.Data.LabelFormatting("Name").BorderColor("000000");|Sets border color for data label|
-BGColor|Hex Color Code|visualizationObj.Data.LabelFormatting("Name").BGColor("000000");|Sets background color for data label|
-Alpha|Integer|visualizationObj.Data.LabelFormatting("Name").Alpha(100);|Sets data label transparency between "0" for transparent and "100" for opaque|
-
-4. **ValueFormatting**: String
-
-API|Type|Syntax|Description|
--|-|-|-
-`Alpha`|Integer|visualizationObj.Data.ValueFormatting(""formatting_formula").Alpha(100);|Shows/hides data value|
-`Color`|Hex Color Code|visualizationObj.Data.ValueFormatting(""formatting_formula").Color("ff00ff");|Seta color of data value|
-`Dashed`|Boolean|visualizationObj.Data.ValueFormatting(""formatting_formula").Dashed(False);|Makes data value border dashed|
-`ShowValue`|Boolean|visualizationObj.Data.ValueFormatting(""formatting_formula").ShowValue("true");|Shows/Hides data value|
-`Link`|LinkURL|visualizationObj.Data.ValueFormatting(""formatting_formula").Link(LinkURL);|Links data value to external resource|
-`DisplayValue`|String|visualizationObj.Data.ValueFormatting(""formatting_formula").DisplayValue(value > 100);|Sets display text for data value|
-`ToolText`|String|visualizationObj.Data.ValueFormatting(""formatting_formula").ToolText(Text);|Sets tooltip text for data value|
