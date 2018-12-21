@@ -224,27 +224,38 @@ visualizationObj.Data.SeriesFields("Sales,Total_Purchase");
 
 * **Categories**: Category Object
 
-API|Type|Syntax|Description|
--|-|-|-
-`FontSize`|integer|visualizationObj.Data.Categories.FontSize = 10;|Sets the font size of the X-axis title|
-`FontName`|String|visualizationObj.Data.Categories.FontName = "Arial";|Sets the font of the X-axis title|
-`FontColor`|Hox Color Code|visualizationObj.Data.Categories.FontColor = "#ffffff";|Sets the font color of the X-axis title|
-
-* **CategoryFormatting:** String category
-
-API|Type|Syntax|Description|
--|-|-|-
-`ShowLabel`|Boolean|visualizationObj.Data.Categories.CategoryFormatting("india").ShowLabel(True);|Shows/Hides category labels|
-`ToolText`|String|visualizationObj.Data.Categories.CategoryFormatting("india").ToolText("Country:India");|Sets the tooltip text for a category label|
-`FontName`|String Name|visualizationObj.Data.Categories.CategoryFormatting("india").FontName("Arial");|Sets the font for  category labels|
-`FontColor`|Hex Color Code|visualizationObj.Data.Categories.CategoryFormatting("india").FontColor("#ff000f");|Sets the font color for  category labels|
-`FontSize`|Integer|visualizationObj.Data.Categories.CategoryFormatting("india").FontSize(12);|Sets the font size for  category labels|
-`Bold`|Boolean|visualizationObj.Data.Categories.CategoryFormatting("india").Bold(false);|Sets bold formatting for category labels|
-`Italic`|Boolean|visualizationObj.Data.Categories.CategoryFormatting("india").Italic(true);|Sets italic formatting for category labels|
-`LabelLink`|String|visualizationObj.Data.Categories.CategoryFormatting("india").LabelLink("localhost:CountryDetails");|Links category labels to the data source|
-`BorderColor`|Hex Color Code|visualizationObj.Data.Categories.CategoryFormatting("india").BorderColor("000000");|Sets the border color for category labels|
-`BGColor`|Hex Color Code|visualizationObj.Data.Categories.CategoryFormatting("india").BGColor("000000");|Sets the background color for category labels|
-`Alpha`|Integer|visualizationObj.Data.Categories.CategoryFormatting("india").Alpha(100);|Sets the transparency of category labels|
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`FontSize`</td>
+		<td>Integer</td>
+		<td>visualizationObj.Data.Categories.FontSize = 10;</td>
+		<td>Sets the font size of the X-axis title</td>
+	</tr>
+	<tr>
+		<td>`FontName`</td>
+		<td>String</td>
+		<td>visualizationObj.Data.Categories.FontName = "Arial";</td>
+		<td>Sets the font of the X-axis title</td>
+	</tr>
+	<tr>
+		<td>`FontColor`</td>
+		<td>Hex Color Code</td>
+		<td>visualizationObj.Data.Categories.FontColor = "#ffffff";</td>
+		<td>Sets the font color of the X-axis title</td>
+	</tr>
+	<tr>
+		<td>`CategoryFormatting`</td>
+		<td>String category</td>
+		<td>visualisationObj.Data.Categories<br/>.CategoryFormatting("india")<br/>.ShowLabel(True)<br/>.ToolText("Country:India")<br/>.FontName("Arial")<br/>.FontColor("#ff000f")<br/>.FontSize(12)<br/>.Bold(false)<br/>.Italic(true)<br/>.LabelLink("localhost:CountryDetails")<br/>.BorderColor("000000")<br/>.BGColor("000000")<br/>.Alpha(100);</td>
+		<td>This instance is used to customize the specific categories of the chart. Following are the instance methods of `CategoryFormatting`: <br/>1. ShowLabel<br/>2. ToolText<br/>3. FontName<br/>4. FontColor<br/>5. FontSize<br/>6. Bold<br/>7. Italic<br/>8. LabelLink<br/>9. BorderColor<br/>10. BGColor<br/>11. Alpha</td>
+	</tr>
+</table>
 
 * **Series:** Series Object
 
