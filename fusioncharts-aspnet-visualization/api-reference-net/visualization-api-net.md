@@ -117,7 +117,7 @@ API|Type|Syntax|Description
 `Rotate`|Boolean|visualizationObj.Values.Rotate = true;|Rotates data values and displays them in a vertical direction
 `ShowDivLineValues`|Boolean|visualizationObj.Values.ShowDivLineValues = true;|Shows/hides values of divisional lines
 `Position`|ValueFormat.ValuePosition|visualizationObj.Values.Position = ValueFormat.ValuePosition.AUTO;|Sets the position of the data value as `AUTO`, `ABOVE`, or `BELOW`
-`PlotHighlightEffect`|String|visualizationObj.Values.PlotHighlightEffect = "fadeout|color=#ff0000, alpha=60";|Highlights data values
+`PlotHighlightEffect`|String|visualizationObj.Values.PlotHighlightEffect = "fadeout color=#ff0000, alpha=60";|Highlights data values
 `PlaceValueInside`|Boolean|visualizationObj.Values.PlaceValueInside =false;|Displays data values inside data plots
 
 ### `Tooltip`
