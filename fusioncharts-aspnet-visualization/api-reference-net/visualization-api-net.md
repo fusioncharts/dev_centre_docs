@@ -252,7 +252,7 @@ visualizationObj.Data.SeriesFields("Sales,Total_Purchase");
 	<tr>
 		<td>`CategoryFormatting`</td>
 		<td>String category</td>
-		<td>visualisationObj.Data.Categories<br/>.CategoryFormatting("india")<br/>.ShowLabel(True)<br/>.ToolText("Country:India")<br/>.FontName("Arial")<br/>.FontColor("#ff000f")<br/>.FontSize(12)<br/>.Bold(false)<br/>.Italic(true)<br/>.LabelLink("localhost:CountryDetails")<br/>.BorderColor("000000")<br/>.BGColor("000000")<br/>.Alpha(100);</td>
+		<td>visualisationObj.Data.Categories<br/>.CategoryFormatting("india")<br/>.`ShowLabel`(True)<br/>.`ToolText`("Country:India")<br/>.`FontName`("Arial")<br/>.`FontColor`("#ff000f")<br/>.`FontSize`(12)<br/>.`Bold`(false)<br/>.`Italic`(true)<br/>.`LabelLink`("localhost:CountryDetails")<br/>.`BorderColor`("000000")<br/>.`BGColor`("000000")<br/>.`Alpha`(100);</td>
 		<td>This instance is used to customize the specific categories of the chart. Following are the instance methods of `CategoryFormatting`: <br/>1. ShowLabel<br/>2. ToolText<br/>3. FontName<br/>4. FontColor<br/>5. FontSize<br/>6. Bold<br/>7. Italic<br/>8. LabelLink<br/>9. BorderColor<br/>10. BGColor<br/>11. Alpha</td>
 	</tr>
 </table>
