@@ -9,9 +9,11 @@ heading: Version 3.13.x
 
 <h4 class="sub-heading">Improvements</h4>
 
-* With the latest updates in **Chrome** (version 71.0.3578.98, 64-bit) and **Firefox** (64.0, 64bit), browser scrolling was breaking tool-tip and some mouse interactions in charts. This issue has now been fixed.
-
 * Angular FusionCharts now supports **Time series**.
+
+<h4>Fixes</h4>
+
+* With the latest updates in **Chrome** (version 71.0.3578.98, 64-bit) and **Firefox** (64.0, 64bit), browser scrolling was breaking tool-tip and some mouse interactions in charts. This issue has now been fixed.
 
 <h2 class="sub-heading">Version 3.13.3</h2>
 6th December, 2018
