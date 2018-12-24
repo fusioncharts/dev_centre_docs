@@ -32,10 +32,12 @@
             "dashed": "1"
         }, {
             "label": "PHP",
-            "value": "14000"
+            "value": "14000",
+            "dashed": "1"
         }, {
             "label": "Perl",
-            "value": "14000"
+            "value": "14000",
+            "dashed": "1"
         }]
     }
 }

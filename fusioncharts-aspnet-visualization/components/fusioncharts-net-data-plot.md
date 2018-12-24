@@ -32,6 +32,8 @@ Set the color of the individual data plots as hex code using the `Color` propert
 visualizationObj.Data.Series.ValueFormatting("value < 20000 and value > 40000").Color(#333664);
 ```
 
+In the above code, the color of the data plots with values below **20000** and above **40000** has been set to **#333664**.
+
 The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-data-plot-color-example-2.js %}
@@ -41,12 +43,12 @@ The chart will look as shown below:
 THe `Dashed` property is used when you want the border of the data plot to be appeared as dashed. This is particularly useful when you want to highlight a data. Refer to the code given below:
 
 ```
-visualizationObj.Data.Series.ValueFormatting("C#").Dashed(true);
+visualizationObj.Data.Series.ValueFormatting("value > 10000 and value < 30000").Dashed(true);
 ```
 
 The chart will look as shown below:
 
-{% embed_chart fusioncharts-net-visualization-data-plot-dashed-example-3.js %}
+{% embed_chart fusioncharts-net-visualization-data-plot-dashed-example-3.js %
 
 ### Show/Hide Individual value
 
