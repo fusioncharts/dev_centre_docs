@@ -135,8 +135,7 @@ window.charInstance = new FusionCharts({
         "series": "Country"
     }
 });
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -190,8 +189,7 @@ window.charInstance = new FusionCharts({
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

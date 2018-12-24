@@ -37,8 +37,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -49,8 +48,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 </div>
@@ -256,8 +254,7 @@ The consolidated code is shown below:
         &lt;%= firstChart.render() %&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -337,8 +334,7 @@ The consolidated code is shown below:
         &lt;%= firstChart.render() %&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

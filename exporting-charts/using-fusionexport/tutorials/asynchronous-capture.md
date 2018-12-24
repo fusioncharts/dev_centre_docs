@@ -9,7 +9,8 @@ You need to call the following method to invoke the export:
 
 <pre><code class="language-javascript">
 FusionExport.emit('CAPTURE_EXIT');
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 By default, __FusionExport waits for 6 seconds for the event to trigger/occur__. You can opt to increase the wait time up to 60 seconds. To do so, set the `--maxWaitForCaptureExit` option in milliseconds.
 To use asynchronous capture, you can use the CLI or SDKs of the languages mentioned below, using the commands given below:
@@ -62,7 +63,8 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	        }
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab java-tab">
@@ -102,7 +104,8 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	            });
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab php-tab">
@@ -139,7 +142,8 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab">
@@ -184,7 +188,8 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	exportManager.on('error', (err) => {
 	    console.error(err);
 	});
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab python-tab">
@@ -233,7 +238,8 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	export () method with the
 	export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

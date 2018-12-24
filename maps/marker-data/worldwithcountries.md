@@ -19,7 +19,7 @@
 <div class='tab-content'>
     
 <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -2177,14 +2177,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
 </div>
 <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -4907,7 +4908,8 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>

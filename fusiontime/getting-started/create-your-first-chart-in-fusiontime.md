@@ -23,8 +23,7 @@ Install **FusionTime** using any of the following steps:
 <div><strong>To install `FusionTime` via npm run the command below:</strong></div>
 <pre><code class="language-PowerShell">
     $ npm install fusioncharts
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -41,8 +40,7 @@ Install **FusionTime** using any of the following steps:
     &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -196,8 +194,7 @@ window.charInstance = new FusionCharts({
         }
     }
 });
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -248,8 +245,7 @@ window.charInstance = new FusionCharts({
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

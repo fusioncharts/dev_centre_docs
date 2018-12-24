@@ -41,8 +41,7 @@ public partial class Pages_ProductLifeCycleEvent : System.Web.UI.Page
         Literal1.Text = column2d.Render();
     }
 }
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -58,8 +57,7 @@ column2d.AddEvent("dataLoaded", "onDataLoaded")
 Literal1.Text = column2d.Render()
 End Sub
 End Class
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -113,8 +111,7 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -156,8 +153,7 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

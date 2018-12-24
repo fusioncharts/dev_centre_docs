@@ -47,8 +47,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 		  &lt;/div&gt;
 		&lt;/body&gt;
 	&lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -70,8 +69,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 	  &lt;/div&gt;
 	&lt;/body&gt;
 	&lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -207,8 +205,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
           Literal1.Text = factoryOutput.Render();
       }
   }
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -332,8 +329,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
         Literal1.Text = factoryOutput.Render()
       End Sub
     End Class    
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

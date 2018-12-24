@@ -26,12 +26,12 @@ Install **FusionCharts** and the `jquery-fusioncharts` plugin using any of the f
 <div class='mt-20'>Install the `jquery-fusioncharts` plugin</div>
 <pre><code class="language-javascript">
 $ npm install jquery-fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-20'>2. Install the `fusioncharts` package</div>
 <pre><code class="language-javascript">
 $ npm install fusioncharts --save
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -52,8 +52,7 @@ $ npm install fusioncharts --save
     &lt;!-- Fusion Theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -74,8 +73,7 @@ $ npm install fusioncharts --save
     &lt;!-- Fusion Theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -257,7 +255,8 @@ $('document').ready(function () {
         }
     });
 });
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
 <ul>
     <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
@@ -335,8 +334,7 @@ $('document').ready(function () {
         &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -404,8 +402,7 @@ $('document').ready(function () {
         &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

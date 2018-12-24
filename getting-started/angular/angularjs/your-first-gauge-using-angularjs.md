@@ -25,16 +25,17 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 <div>1. Install `angularjs` core library</div>
 <pre><code class="language-javascript">
     $ npm install angular
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div>2. Install `angularjs-fusioncharts`</div>
 <pre><code class="language-javascript">
 	$ npm install angularjs-fusioncharts
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div>2. Install the `fusioncharts` package</div>
 <pre><code class="language-javascript">
     $ npm install fusioncharts
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -60,8 +61,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -87,8 +87,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -274,7 +273,8 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }]);
 // Render
 chartInstance.render()
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
 <pre><code class="language-javascript">
 &lt;body ng-app="myApp"&gt;
@@ -288,8 +288,7 @@ chartInstance.render()
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/body&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -353,8 +352,7 @@ chartInstance.render()
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -419,8 +417,7 @@ chartInstance.render()
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

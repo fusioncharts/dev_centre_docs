@@ -42,8 +42,7 @@ Install **FusionCharts** using any of the following steps:
     &lt;!-- Step 2 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -63,8 +62,7 @@ Install **FusionCharts** using any of the following steps:
     &lt;!-- Step 2 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -252,8 +250,7 @@ var chartInstance = new FusionCharts({
 });
 // Render
 chartInstance.render();
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 <h4>CJS</h4>
 <pre><code class="language-javascript">
@@ -311,8 +308,7 @@ var chartInstance = new FusionCharts({
 });
 // Render
 chartInstance.render();
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 <div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
 <ul>
@@ -390,8 +386,7 @@ chartInstance.render();
     &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -459,8 +454,7 @@ chartInstance.render();
     &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

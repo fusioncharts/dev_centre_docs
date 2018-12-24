@@ -71,7 +71,8 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	        }
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="language-java">
@@ -112,7 +113,8 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	            });
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab php-tab">
@@ -151,7 +153,8 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab">
@@ -198,7 +201,8 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	exportManager.on('error', (err) => {
 	    console.error(err);
 	});
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class="tab python-tab">
 <pre><code class="language-python">
@@ -248,7 +252,8 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	export () method with the
 	export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

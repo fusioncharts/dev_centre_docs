@@ -28,12 +28,12 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 <div>1. Install the `react-fusioncharts` module</div>
 <pre><code class="language-javascript">
     $ npm install react-fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div>2. Install the `fusioncharts` JS files</div>
 <pre><code class="language-javascript">
     $ npm install fusioncharts --save
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -63,8 +63,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     &lt;!-- Step 5 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -95,8 +94,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     &lt;!-- Step 5 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -293,8 +291,7 @@ class App extends React.Component {
 }
 
 export default App
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -369,8 +366,7 @@ export default App
     &lt;div id='chart-container'&gt;&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -449,8 +445,7 @@ export default App
     &lt;div id='chart-container'&gt;&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

@@ -16,7 +16,8 @@ During bulk export, you can override the height and width of all the charts usin
 <div class="tab cli-tab active">
 <pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -W 800 -H 400
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

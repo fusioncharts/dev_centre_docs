@@ -20,7 +20,8 @@ Output filenames can be dynamically generated using the  `--output-file-definiti
 			return `${caption}__${index}`;
 		}
 	};
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -44,7 +45,8 @@ The `captionIndexStr` function  receives three parameters from the FusionExport 
 			'17-11-2017_fc_4'
 		]
 	};
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -75,7 +77,8 @@ To create the final output filename, the `--output-file` option should be used. 
 
 	path/to/export--<%= dates %>
 	output filename: path/to/export--17-11-2017_fc_1.png
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

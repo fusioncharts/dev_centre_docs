@@ -45,8 +45,7 @@ public partial class CommonThemeUsage: System.Web.UI.Page {
         Literal1.Text = columnChart.Render();
     }
 }
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -65,8 +64,7 @@ Dim columnChart As New Chart("column2d", "column_Chart", "700", "400", "json", j
 Literal1.Text = columnChart.Render()
 End Sub
 End Class
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -160,8 +158,7 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -243,8 +240,7 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

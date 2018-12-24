@@ -45,8 +45,7 @@ public partial class Pages_UpdateDataRuntime: System.Web.UI.Page {
         Literal1.Text = angulargauge.Render();
     }
 }
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -61,8 +60,7 @@ Dim angulargauge As Chart = New Chart("angulargauge", "angular_gauge", "450", "2
 Literal1.Text = angulargauge.Render()
 End Sub
 End Class
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -115,8 +113,7 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -157,8 +154,7 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -213,8 +209,7 @@ public partial class Pages_UpdateChartAttributesRuntime: System.Web.UI.Page {
         Literal1.Text = column2d.Render();
     }
 }
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -229,8 +224,7 @@ Dim column2d As Chart = New Chart("column2d", "column_chart", "700", "400", "jso
 Literal1.Text = column2d.Render()
 End Sub
 End Class
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -334,8 +328,7 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -423,8 +416,7 @@ The HTML template for `aspx` file is shown below:
        
 &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

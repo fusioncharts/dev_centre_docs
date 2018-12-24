@@ -26,12 +26,12 @@ Install **FusionCharts** and the `jquery-fusioncharts` plugin using any of the f
 <div class='mt-20'>Install the `jquery-fusioncharts` plugin</div>
 <pre><code class="language-javascript">
 $ npm install jquery-fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-20'>2. Install the `fusioncharts` package</div>
 <pre><code class="language-javascript">
 $ npm install fusioncharts --save
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 <div class='tab cdn-tab'>
@@ -51,8 +51,7 @@ $ npm install fusioncharts --save
     &lt;!-- Fusion Theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 <div class='tab local-tab'>
@@ -72,8 +71,7 @@ $ npm install fusioncharts --save
         &lt;!-- Fusion Theme --&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 </div>
@@ -246,8 +244,7 @@ $('document').ready(function () {
     }
   })
 });
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 <div class='tab cdn-tab'>
@@ -310,8 +307,7 @@ $('document').ready(function () {
         &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 <div class='tab local-tab'>
@@ -374,8 +370,7 @@ $('document').ready(function () {
         &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

@@ -242,7 +242,8 @@ namespace FusionExportTest
         }
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab java-tab">
@@ -265,7 +266,8 @@ public class Script {
         manager.export(config, outputDir = ".", unzip = false);
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab php-tab">
@@ -290,7 +292,8 @@ public class Script {
   $exportManager->export($exportConfig, $outputDir = '.', $unzip = false);
 
 ?>
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab">
@@ -335,7 +338,8 @@ exportManager.export(exportConfig, outputDir = '.', unzip = false).then((exporte
   console.log(err);
 });
 
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab python-tab">
@@ -359,7 +363,8 @@ em = ExportManager(export_server_host, export_server_port)
 
 # Call the export() method with the export_config and unzip = False
 em.export(export_config, outputDir = ".", unzip = False)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

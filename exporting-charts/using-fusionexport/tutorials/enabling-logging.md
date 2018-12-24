@@ -21,7 +21,8 @@ Refer to the example below:
     <div class="tab cli-tab active">
 <pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -d uat/ -f test.log -l 5
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

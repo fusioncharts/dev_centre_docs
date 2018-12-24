@@ -31,7 +31,8 @@ Now, edit the content of the file `fusioncharts-config.json.json`.
 	        "secretAccessKey": "dfasdAS$32rdsf$234rfdsaf"
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

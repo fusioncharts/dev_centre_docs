@@ -26,7 +26,8 @@ The content of the __fusionexport_config.json__ file is given below:
 		"log-level": "silly",
 		"remote-export-enabled": false
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -42,7 +43,8 @@ Once done, run the following command:
 <div class="tab cli-tab active">
 <pre><code class="language-bash">
 	$ fe -e fusioncharts_config.json
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

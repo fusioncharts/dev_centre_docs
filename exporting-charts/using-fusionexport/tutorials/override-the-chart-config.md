@@ -25,7 +25,8 @@ The  `--chart-config-options` option can be used to change the chart configurati
 			}
 		}
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 
@@ -40,7 +41,8 @@ Once done, run the following command:
     <div class="tab cli-tab active">
 <pre><code class="language-bash">
 	$ fe -e fusioncharts_config.json
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

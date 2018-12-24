@@ -56,7 +56,8 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	        }
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab java-tab">
@@ -96,7 +97,8 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	            });
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab php-tab">
@@ -133,7 +135,8 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab">
@@ -176,7 +179,8 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	exportManager.on('error', (err) => {
 	  console.error(err);
 	});
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab python-tab">
@@ -220,7 +224,8 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	em = ExportManager(export_server_host, export_server_port)
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

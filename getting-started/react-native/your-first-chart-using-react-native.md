@@ -27,11 +27,13 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 <div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="language-javascript">
     $ npm install react-native-fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div>2. Install the `fusioncharts` JS files</div>
 <pre><code class="language-javascript">
     $ npm install fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for <strong>Android</strong>, follow the steps given below:</div>
 <div>
     <ul>
@@ -143,7 +145,8 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 &lt;/body&gt;
 
 &lt;/html&gt;
-        </code></pre>
+        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
         <div>To include the specific chart types, individually add the following files using <strong>&lt;script&gt;</strong> tag:</div>
         <div>1. <strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`<br/>
             2. <strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`<br/>
@@ -158,7 +161,8 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 &lt;FusionCharts 
 ......
 libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
-        </code></pre>
+        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
         <li>Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.</li>
         <pre><code class="language-javascript">
 "scripts": {
@@ -166,11 +170,13 @@ libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
     "clean:build:android": "rm -rf android/app/build",
     "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
 },
-        </code></pre>
+        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
         <li>Run the following command before genarating the signed APK:</li>
         <pre><code class="language-javascript">
 $ npm run prod:android
-        </code></pre>
+        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
     </ul>
 </div>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -182,11 +188,13 @@ $ npm run prod:android
 <div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="language-javascript">
     $ npm install react-native-fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div>2. Install the `fusioncharts` JS files</div>
 <pre><code class="language-javascript">
     $ npm install fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div><strong>Step 2:</strong> To setup the `react-native-fusioncharts` component for <strong>iOS</strong>, follow the steps given below:</div>
 
 <div>
@@ -208,20 +216,23 @@ $ npm run prod:android
 &lt;body&gt;&lt;/body&gt;
 
 &lt;/html&gt;
-        </code></pre>
+        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
         <li>Add a `build"assets` script in Application's `package.json` file</li>
         <pre><code class="language-javascript">
 "scripts": {
     ......
     "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts"
 },
-        </code></pre>
+        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
         <li>The `--fc-library ./assets/fusioncharts` is required when you copy FusionCharts library files in your `assets` folder.<br/>
         <strong>Note:</strong> `fc-build-assets` is a utility binary provided by `react-native-fusioncharts` to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
         <li>Run the following command before running the application:</li>
         <pre><code class="language-javascript">
 $ npm run build:assets
-        </code></pre>
+        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
     </ul>
 </div>
 

@@ -200,7 +200,8 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <p class='text-success'>New JSON format for map marker data.</p>
 </div>
 <div class='tab old-json-tab'>
@@ -427,7 +428,8 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 	<p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 </div>
 

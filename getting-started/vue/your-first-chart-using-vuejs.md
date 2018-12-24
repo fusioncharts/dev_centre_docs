@@ -26,12 +26,12 @@ Install **FusionCharts** and the `vue-fusioncharts` component using any of the f
 <div class='mt-20'>1. Install the `vue-fusioncharts` component</div>
 <pre><code class="language-javascript">
 $ npm install vue-fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-20'>2. Install `fusioncharts` package</div>
 <pre><code class="language-javascript">
 $ npm install fusioncharts --save
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -52,8 +52,7 @@ $ npm install fusioncharts --save
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -74,8 +73,7 @@ $ npm install fusioncharts --save
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -249,7 +247,8 @@ name: 'app',
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/template&gt;
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-30'><strong>To include the specific chart types, individually add the following files using `import`</strong></div>
 <ul>
     <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
@@ -331,8 +330,7 @@ name: 'app',
     &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -403,8 +401,7 @@ name: 'app',
     &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 

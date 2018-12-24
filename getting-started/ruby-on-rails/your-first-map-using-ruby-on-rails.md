@@ -37,8 +37,7 @@ In this article, we will show you how to download and install the **FusionCharts
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -52,8 +51,7 @@ In this article, we will show you how to download and install the **FusionCharts
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -78,16 +76,17 @@ To add the FusionCharts Rails wrapper, use any of the following processes:
 <div><strong>Add this line to your application’s `Gemfile`:</strong></div>
 <pre><code class="language-ruby">
 	gem ‘fusioncharts-rails’
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div><strong>RubyGems contain package information along with the files to install. On the command line prompt, execute the following command:</strong></div>
 <pre><code class="language-ruby">
 	$bundle
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div><strong>This command will automatically install the `fusioncharts-rails` gem. You can also install the gem directly from the command line prompt, without making any edits to the `Gemfile`. To do this, use the code line given below:</strong></div>
 <pre><code class="language-ruby">
 	$gem install fusioncharts-rails
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
