@@ -22,10 +22,7 @@ Install **FusionCharts** using any of the following steps:
 <div class='tab npm-tab active'>
 
 <div><strong>To install the `fusioncharts` package via  npm run the command below:</strong></div>
-<pre><code class="language-bash">
-    $ npm install fusioncharts
-</code>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+<pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
