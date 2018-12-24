@@ -56,7 +56,7 @@ Now, let's learn how to create a Stacked Chart. We will create a chart showcasin
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-stacked-charts-example-1.js %}
+{% embed_chart fusioncharts-net-visualization-stacked-chart-example-1.js %}
 
 ## Render the Chart
 
