@@ -18,7 +18,7 @@ FusionCharts.NET abstracts you from writing messy JavaScript and JSON code withi
 
 * **Visualization** - The visualization module of FusionCharts.NET allows you to render the chart with functional and cosmetic configurations of the chart after receiving the data from the data engine. 
 
-##  Native ASP.NET wrapper vs FusionCharts.NET vs
+##  Native ASP.NET wrapper vs FusionCharts.NET
 
 Native ASP.NET wrapper|FusionCharts.NET|
 -|-
