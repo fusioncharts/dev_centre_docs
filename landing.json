@@ -16,93 +16,95 @@
          "frontend": [
             {
                "value": "Angular JS",
-               "classtitle": "icon-angular",
-               "link": "https: //www.fusioncharts.com/dev/getting-started/angular/angularjs/your-first-chart-using-angularjs"
+               "classname": "icon-angular",
+               "link": "/getting-started/angular/angularjs/your-first-chart-using-angularjs"
             },
             {
                "value": "React",
                "classname": "icon-react",
-               "link": "https: //www.fusioncharts.com/react-charts"
+               "link": "/getting-started/react/your-first-chart-using-react"
             },
             {
                "value": "Ember JS",
                "classname": "icon-ember",
-               "link": "#"
+               "link": "/getting-started/ember/your-first-chart-using-ember"
             },
             {
                "value": "JQuery",
                "classname": "icon-jquery",
-               "link": "https: //www.fusioncharts.com/jquery-charts"
+               "link": "/getting-started/jquery/your-first-chart-using-jquery"
             },
             {
                "value": "Vue Fusion-charts",
                "classname": "icon-vue",
-               "link": "https: //www.fusioncharts.com/vue-js-charts"
-            },
-            {
-               "value": "Backbone",
-               "classname": "icon-backbone"
+               "link": "/getting-started/vue/your-first-chart-using-vuejs"
             }
          ],
          "backend": [
             {
                "value": "ASP.NET Plugin",
                "classname": "icon-dotnet",
-               "link": "https: //www.fusioncharts.com/asp-net-charts"
+               "link": "/getting-started/aspnet/your-first-chart-using-aspnet"
             },
             {
-               "value": "PHP Module",
+               "value": "PHP",
                "classname": "icon-php",
-               "link": "https: //www.fusioncharts.com/php-charts"
+               "link": "/getting-started/php/your-first-chart-using-php"
             },
             {
-               "value": "Ruby on Rails Gem",
+               "value": "Ruby on Rails",
                "classname": "icon-ruby",
-               "link": "https: //www.fusioncharts.com/ruby-on-rails-charts"
+               "link": "/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails"
             },
             {
                "value": "Java Plugin",
                "classname": "icon-java",
-               "link": "https: //www.fusioncharts.com/java-charts"
+               "link": "/getting-started/java/your-first-chart-using-java"
             },
             {
-               "value": "Django Package",
+               "value": "Django",
                "classname": "icon-django",
-               "link": "https: //www.fusioncharts.com/django-charts"
+               "link": "/getting-started/django/your-first-chart-using-django"
             }
          ],
          "dashboard": [
             {
                "value": "Smart Energy Monitoring Dashboard",
                "imagepath": "/images/landingpage/smart-energy-monitoring-dashboard.png",
-               "attvalue": "smart-energy-monitoring-dashboard"
+               "attvalue": "smart-energy-monitoring-dashboard",
+               "link": "https://www.fusioncharts.com/dashboards/smart-energy-monitoring-dashboard"
             },
             {
                "value": "Google Analytics Dashboard",
                "imagepath": "/images/landingpage/thumb-google-analytics-dashboard.jpg",
-               "attvalue": "thumb-google-analytics-dashboard"
+               "attvalue": "thumb-google-analytics-dashboard",
+               "link": "https://www.fusioncharts.com/dashboards/google-analytics-web-dashboard"
             },
             {
-               "value": "Google Analytics Dashboard",
+               "value": "Sales Management Dashboard",
                "imagepath": "/images/landingpage/thumb-management-dashboard.png",
-               "attvalue": "thumb-management-dashboard"
+               "attvalue": "thumb-management-dashboard",
+               "link": "https://www.fusioncharts.com/dashboards/sales-management-dashboard"
             }
          ],
          "charts": [
             {
                "value": "Composition",
                "imagepath": "/images/landingpage/composition.svg",
-               "attvalue": "composition"
+               "attvalue": "composition",
+               "link": "/demos/chart-gallery#intent=1"
             },
             {
                "value": "Distribution",
                "imagepath": "/images/landingpage/distribution.svg",
-               "attvalue": "distribution"
+               "attvalue": "distribution",
+               "link": "/demos/chart-gallery#intent=2"
             },
             {
                "value": "Comparison",
                "imagepath": "/images/landingpage/comparison.svg",
-               "attvalue": "comparison"
+               "attvalue": "comparison",
+               "link": "/demos/chart-gallery#intent=3"
             }
          ]
       }
