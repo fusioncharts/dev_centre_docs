@@ -71,8 +71,10 @@ The chart will look as shown below:
 To link a data plot values to an external resource, set the value of the `Link` properties to the link of the resource. Refer to the code given below:
 
 ```
-visualizationObj.Data.Series.ValueFormatting("C#").Link("https://www.fusioncharts.com/");
+visualizationObj.Data.Series.ValueFormatting("value > 20000 and value < 30000").Link("https://www.fusioncharts.com/");
 ```
+
+In the above code, link to an external resource has been added to the data plot with value between 20000 to 30000.
 
 The chart will look as shown below:
 
@@ -83,8 +85,10 @@ The chart will look as shown below:
 To display a different value instead of the numeric value of the data plot, set the value of `DisplayValue` property to the text you want to display. Refer to the code given below:
 
 ```
-visualizationObj.Data.Series.ValueFormatting("C#").DisplayValue("27000 Users");
+visualizationObj.Data.Series.ValueFormatting("value > 20000 and value < 30000").DisplayValue("27000 Users");
 ```
+
+In the above code, display value of the data plot with values from 20000 to 30000 has been set to **27000 Users**.
 
 The chart will look as shown below:
 
@@ -95,8 +99,10 @@ The chart will look as shown below:
 Set the tooltip text for the data plot as string to the `ToolText` properties. Refer to the code given below:
 
 ```
-visualizationObj.Data.Series.ValueFormatting("C#").ToolText("Programming Language:C#");
+visualizationObj.Data.Series.ValueFormatting("value > 20000 and value < 30000").ToolText("Programming Language");
 ```
+
+In the above code, tooltext of the data plot with values from 20000 to 30000 has been updated.
 
 The chart will look as shown below:
 

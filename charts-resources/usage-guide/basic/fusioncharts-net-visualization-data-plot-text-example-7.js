@@ -28,7 +28,7 @@
         }, {
             "label": "C#",
             "value": "27000",
-            "toolText": "Programming Language: C#"
+            "toolText": "Programming Language"
         }, {
             "label": "PHP",
             "value": "14000"
