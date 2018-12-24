@@ -1795,7 +1795,8 @@
       ]
    },
    {
-      "title": "FusionTime Beta",
+      "title": "FusionTime",
+      "badge": "Beta",
       "children": [
          {
             "title": "Getting Started",
