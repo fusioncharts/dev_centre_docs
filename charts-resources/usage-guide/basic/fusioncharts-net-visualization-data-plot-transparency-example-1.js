@@ -20,10 +20,12 @@
             "value": "46000"
         }, {
             "label": "Javascript",
-            "value": "38000"
+            "value": "38000",
+            "alpha": "50"
         }, {
             "label": "C++",
-            "value": "31000"
+            "value": "31000",
+            "alpha": "50"
         }, {
             "label": "C#",
             "value": "27000",

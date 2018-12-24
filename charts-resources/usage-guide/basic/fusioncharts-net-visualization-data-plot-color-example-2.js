@@ -14,10 +14,12 @@
         },
         "data": [{
             "label": "Java",
-            "value": "62000"
+            "value": "62000",
+            "Color": "#333664"
         }, {
             "label": "Python",
-            "value": "46000"
+            "value": "46000",
+            "Color": "#333664"
         }, {
             "label": "Javascript",
             "value": "38000"
@@ -26,14 +28,15 @@
             "value": "31000"
         }, {
             "label": "C#",
-            "value": "27000",
-            "Color": "#333664"
+            "value": "27000"
         }, {
             "label": "PHP",
-            "value": "14000"
+            "value": "14000",
+            "Color": "#333664"
         }, {
             "label": "Perl",
-            "value": "14000"
+            "value": "14000",
+            "Color": "#333664"
         }]
     }
 }

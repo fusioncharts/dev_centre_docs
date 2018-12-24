@@ -15,8 +15,10 @@ In FusionCharts.NET, you can customize the data plots in the following ways with
 Set the transparency of the data plot between `0` (transparent) and `100` (opaque) using the `Alpha` properties. Refer to the code given below:
 
 ```
-visualizationObj.Data.Series.ValueFormatting("C#").Alpha(50);
+visualizationObj.Data.Series.ValueFormatting("value > 20000 and value < 40000").Alpha(50);
 ```
+
+In the above code, transparency of the data plots with values from **20000** and **40000** has been set to **50**.
 
 The chart will look as shown below:
 
@@ -27,7 +29,7 @@ The chart will look as shown below:
 Set the color of the individual data plots as hex code using the `Color` property. Refer to the code given below:
 
 ```
-visualizationObj.Data.Series.ValueFormatting("C#").Color(50);
+visualizationObj.Data.Series.ValueFormatting("value < 20000 and value > 40000").Color(#333664);
 ```
 
 The chart will look as shown below:
