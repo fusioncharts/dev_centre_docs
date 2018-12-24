@@ -62,20 +62,20 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Create data table
+           // Create data table
             DataTable primaryData = new DataTable();
-            
+
             // Retrieve data using database query
-            string query = "select [languages], [User] from dbo.UserPerLanguage";
+            string query = "select [Languages], [User] from dbo.UserPerLanguage";
             string connetionString = null;
-            
+
             // Servevr name
             string serverName = "FusionChartsServer";
-            
+
             // DataBase name
             string databaseName = "FusionChartsSamplesDB";
             primaryData.Clear();
-            
+
             // Connection string
             connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
 
@@ -103,6 +103,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Data.Source = model;
             // Set Chart Title
             column.Caption.Text = "Most popular programming language";
+            // hide chart Legend
+            column.Legend.Show = false;
+            // set XAxis Text
+            column.XAxis.Text = "Programming Language";
+            // Set YAxis title
+            column.YAxis.Text = "User";
             // Render the chart to 'Literal1' literal control
             Literal1.Text = column.Render();
         }

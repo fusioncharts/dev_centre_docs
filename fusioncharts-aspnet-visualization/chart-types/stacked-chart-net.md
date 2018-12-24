@@ -96,12 +96,12 @@ using System.Web.UI.WebControls;
 namespace FusionChartsVisualisationWebFormsSamples.Samples {
     public partial class StackedChart : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            DataTable dt = new DataTable();
-            string query = "select Country,COUNT([Product Type]) as [Product Types],SUM([Ordered quantity]) as [Ordered quantity] from ProductOrderedQuantity group by Country";
+            DataTable ChartData = new DataTable();
+            string query = "select * from ProductRevenue";
             string connetionString = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
-            dt.Clear();
+            ChartData.Clear();
             connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
             using (SqlConnection con = new SqlConnection(connetionString))
             {
@@ -109,16 +109,20 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
                 using (SqlCommand command = new SqlCommand(query, con))
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
-                    da.Fill(dt);
+                    da.Fill(ChartData);
                 }
             }
-            StaticSource source = new StaticSource(dt);
+            StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
             Charts.StackedChart stack = new Charts.StackedChart("stacked_chart_db");
             stack.Width = "700";
             stack.Height = "400";
-            stack.StackType = Charts.StackedChart.StackChartType.BAR;
+            stack.Caption.Text = "Revenue split by product aategory";
+            stack.Caption.Bold = true;
+            stack.SubCaption.Text = "for current year";
+            stack.XAxis.Text = "Quarter";
+            stack.YAxis.Text = "Revenue";
             stack.Data.Source = model;
             Literal1.Text = stack.Render();
         }

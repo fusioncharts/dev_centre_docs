@@ -48,19 +48,19 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         protected void Page_Load(object sender, EventArgs e)
         {
             // Create data table
-            DataTable primaryData = new DataTable();
-            
+            DataTable ChartData = new DataTable();
+
             // Retrieve data using database query
             string query = "select [Population], [Global Wealth] from dbo.GlobalWealth";
             string connetionString = null;
-            
+
             // Servevr name
             string serverName = "FusionChartsServer";
-            
+
             // DataBase name
             string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-            
+            ChartData.Clear();
+
             // Connection string
             connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
 
@@ -70,15 +70,19 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
                 using (SqlCommand command = new SqlCommand(query, con))
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
-                    da.Fill(primaryData);
+                    da.Fill(ChartData);
                 }
             }
-            StaticSource source = new StaticSource(primaryData);
+            StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
             Widget.PyramidChart pyramid = new Widget.PyramidChart("first_pyramid_chart");
             pyramid.Data.Source = model;
             pyramid.Caption.Text = "Global Wealth Pyramid";
+            pyramid.Caption.OnTop = false;
+            pyramid.SubCaption.Text = "Credit Suisse 2013";
+            pyramid.Width = "400";
+            pyramid.Height = "500";
             Literal1.Text = pyramid.Render();
         }
     }

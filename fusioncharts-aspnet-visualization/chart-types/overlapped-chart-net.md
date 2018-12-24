@@ -46,7 +46,7 @@ Create the `OverlappedChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```
+```aspnet
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
@@ -61,12 +61,12 @@ using System.Web.UI.WebControls;
 namespace FusionChartsVisualisationWebFormsSamples.Samples {
     public partial class OverlappedChart : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            DataTable dt = new DataTable();
-            string query = "select CategoryName, SUM([Stocked Quantity])as [Stocked Quantity],SUM([Reorder Level]) as [Reorder Level], SUM([Order Quantity]) as [Order Quantity] from CategoryOrderedLevel group by CategoryName";
+            DataTable ChartData = new DataTable();
+            string query = "select * from RankingTable";
             string connectionString = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
-            dt.Clear();
+            ChartData.Clear();
             connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -74,17 +74,23 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
                 using (SqlCommand command = new SqlCommand(query, con))
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
-                    da.Fill(dt);
+                    da.Fill(ChartData);
                 }
             }
-            StaticSource source = new StaticSource(dt);
+            StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
-            Charts.ColumnChart OverlappedBar = new Charts.OverlappedBarChart("overlapped_chart_db");
+            Charts.BarChart OverlappedBar = new Charts.BarChart("overlapped_chart_db");
             OverlappedBar.Overlapped = true;
             OverlappedBar.Data.Source = model;
             OverlappedBar.Caption.Text = "Major League Baseball - Season Rankings";
             OverlappedBar.SubCaption.Text = "Teams in the Lead";
+            OverlappedBar.Caption.Text = "Major league Baseball-Season Rankings";
+            OverlappedBar.SubCaption.Text = "Teams in the lead";
+            OverlappedBar.XAxis.Text = "Position";
+            OverlappedBar.YAxis.Text = "Team";
+            OverlappedBar.Width = "700";
+            OverlappedBar.Height = "700";
             Literal1.Text = OverlappedBar.Render();
         }
     }
@@ -93,38 +99,22 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 
 The `.aspx` template for the above sample is shown below:
 
-```
+```html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OverlappedChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.OverlappedChart" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head runat="server">
-
     <title></title>
-
 </head>
-
 <body>
-
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
     <form id="form1" runat="server">
-
         <div>
-
             <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
-
-        </div>
-
-        
+        </div>        
     </form>
-
 </body>
-
 </html>
-
 ```
-

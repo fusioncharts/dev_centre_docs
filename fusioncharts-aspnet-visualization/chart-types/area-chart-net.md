@@ -18,7 +18,7 @@ Sunday|6202
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-line-area-and-column-charts-example-6.js %}
+{% embed_chart fusioncharts-net-visulization-area-chart-example-1.js %}
 
 ## Render the Chart
 
@@ -56,12 +56,12 @@ using System.Web.UI.WebControls;
 namespace FusionChartsVisualisationWebFormsSamples.Samples {
     public partial class SeriesCustomization : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            DataTable dt = new DataTable();
+            DataTable ChartData = new DataTable();
             string query = "select * from LiquorSales";
             string connectionString = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
-            dt.Clear();
+            ChartData.Clear();
             connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -69,19 +69,23 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
                 using (SqlCommand command = new SqlCommand(query, con))
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
-                    da.Fill(dt);
+                    da.Fill(ChartData);
                 }
             }
-            StaticSource source = new StaticSource(dt);
+            StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
-            Charts.areaChart area = new Charts.areaChart("area_chart_db");
-            area.ThemeName = FusionChartsTheme.ThemeName.Fusion;
+            Charts.AreaChart area = new Charts.AreaChart("area_chart_db");
+            area.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             area.Width = "700";
             area.Height = "400";
             area.Data.Source = model;
             area.Caption.Text = "Sales of Liquor";
+            area.Caption.Bold = true;
             area.SubCaption.Text = "Last week";
+            area.XAxis.Text = "Day";
+            area.YAxis.Text = "Sales";
+            area.Legend.Show = false;
             Literal1.Text = area.Render();
         }
     }

@@ -80,20 +80,27 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
                     da.Fill(dt);
                 }
             }
-            StaticSource source = new StaticSource(dt);
+            StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
 
             Charts.LineChart line = new Charts.LineChart("line_chart_db");
 
-            line.ThemeName = FusionChartsTheme.ThemeName.Fusion;
-            line.Width = “700”;
-            line.Height = “400”;
+            line.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            line.Width = "700";
+            line.Height = "400";
 
             line.Data.Source = model;
-            
+
             line.Caption.Text = "Total Footfall in BakersField Central";
-            
+            line.Caption.Bold = true;
+
+            line.SubCaption.Text = "Last Week";
+            line.XAxis.Text = "Day";
+            line.YAxis.Text = "No. of visitors";
+
+            line.Legend.Show = false;
+
             Literal1.Text = line.Render();
         }
     }
@@ -133,31 +140,66 @@ The `.aspx` template for the above sample is shown below:
 
 Now, let's learn how to create a spline chart with the same data. The code remains the same as that of the Line chart. The only difference is instead of instantiating a line chart you have to instantiate a spline chart. Create a `splineChart.aspx.cs` and refer to the code below:
 
-``` 
-// Create static source with this data table
-StaticSource source = new StaticSource(primaryData);
-            
-// Create instance of DataModel class
-DataModel model = new DataModel();
+```aspnet
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
-// Add DataSource to the DataModel
-model.DataSources.Add(source);
+namespace FusionChartsVisualisationWebFormsSamples.Samples
+{
+    public partial class SeriesCustomization : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            string query = "select * from TotalFootfall";
+            string connectionString = null;
+            string serverName = "FusionChartsServer";
+            string databaseName = "FusionchartsSamplesDB";
+            dt.Clear();
+            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
 
-// Instantiate spline Chart
-Charts.splineChart spline = new Charts.splineChart("spline_chart");
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                using (SqlCommand command = new SqlCommand(query, con))
+                using (SqlDataAdapter da = new SqlDataAdapter(command))
+                {
+                    da.Fill(dt);
+                }
+            }
+            StaticSource source = new StaticSource(ChartData);
+            DataModel model = new DataModel();
+            model.DataSources.Add(source);
 
-// Set Chart's width and height
-spline.Width = 700;
-spline.Height = 400;
+            Charts.SplineChart spline = new Charts.SplineChart("spline_chart_db");
 
-// Set DataModel instance as the data source of the chart
-spline.Data.Source = model;
+            spline.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            spline.Width = "700";
+            spline.Height = "400";
 
-// Set Chart Title
-spline.Caption.Text = "Total Footfall in Bakersfield Central";
+            spline.Data.Source = model;
 
-// Render the chart to 'splineChartLiteral' literal control
-Literal1.Text = spline.Render();
+            spline.Caption.Text = "Total Footfall in BakersField Central";
+            spline.Caption.Bold = true;
+
+            spline.SubCaption.Text = "Last Week";
+            spline.XAxis.Text = "Day";
+            spline.YAxis.Text = "No. of visitors";
+
+            spline.Legend.Show = false;
+
+            Literal1.Text = spline.Render();
+        }
+    }
+}
 ```
 
 The `.aspx` template for the above sample is shown below:

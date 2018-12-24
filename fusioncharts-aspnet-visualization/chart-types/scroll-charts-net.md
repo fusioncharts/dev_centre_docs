@@ -78,12 +78,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
     public partial class ScrollChart : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            string query = "select * from MonthlySales";
+            DataTable ChartData = new DataTable();
+            string query = "select * from MonthlyRevenue";
             string connectionString = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
-            dt.Clear();
+            ChartData.Clear();
             connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -91,15 +91,21 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
                 using (SqlCommand command = new SqlCommand(query, con))
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
-                    da.Fill(dt);
+                    da.Fill(ChartData);
                 }
             }
-            StaticSource source = new StaticSource(dt);
+            StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
             Charts.ColumnChart column = new Charts.ColumnChart("scroll_chart_db");
             column.Scrollable = true;
             column.Data.Source = model;
+            column.Caption.Text = "Sales Trends";
+            column.SubCaption.Text = "2016-2017";
+            column.XAxis.Text = "Month";
+            column.YAxis.Text = "Revenue";
+            column.Width = "600";
+            column.Height = "500";
             Literal1.Text = column.Render();
         }
     }
@@ -175,12 +181,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
     public partial class ScrollChart : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            string query = "select * from MonthlySales";
+            DataTable ChartData = new DataTable();
+            string query = "select * from MonthlyRevenue";
             string connectionString = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
-            dt.Clear();
+            ChartData.Clear();
             connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -188,15 +194,21 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
                 using (SqlCommand command = new SqlCommand(query, con))
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
-                    da.Fill(dt);
+                    da.Fill(ChartData);
                 }
             }
-            StaticSource source = new StaticSource(dt);
+            StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
             Charts.LineChart line = new Charts.LineChart("scroll_chart_db");
             line.Scrollable = true;
             line.Data.Source = model;
+            line.Caption.Text = "Sales Trends";
+            line.SubCaption.Text = "2016-2017";
+            line.XAxis.Text = "Month";
+            line.YAxis.Text = "Revenue";
+            line.Width = "600";
+            line.Height = "500";
             Literal1.Text = line.Render();
         }
     }
@@ -234,13 +246,53 @@ Now, let's learn how to create a Scrollable Area Chart. The code remains the sam
 ## Render the Chart
 
 ```
-StaticSource source = new StaticSource(dt);
-DataModel model = new DataModel();
-model.DataSources.Add(source);
-Charts.AreaChart area = new Charts.AreaChart("scroll_chart_db");
-area.Scrollable = true;
-area.Data.Source = model;
-Literal1.Text = area.Render();
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace FusionChartsVisualisationWebFormsSamples.Samples {
+    public partial class ScrollChart : System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable ChartData = new DataTable();
+            string query = "select * from MonthlyRevenue";
+            string connectionString = null;
+            string serverName = "FusionChartsServer";
+            string databaseName = "FusionchartsSamplesDB";
+            ChartData.Clear();
+            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                using (SqlCommand command = new SqlCommand(query, con))
+                using (SqlDataAdapter da = new SqlDataAdapter(command))
+                {
+                    da.Fill(ChartData);
+                }
+            }
+            StaticSource source = new StaticSource(ChartData);
+            DataModel model = new DataModel();
+            model.DataSources.Add(source);
+            Charts.AreaChart area = new Charts.AreaChart("scroll_chart_db");
+            area.Scrollable = true;
+            area.Data.Source = model;
+            area.Caption.Text = "Sales Trends";
+            area.SubCaption.Text = "2016-2017";
+            area.XAxis.Text = "Month";
+            area.YAxis.Text = "Revenue";
+            area.Width = "600";
+            area.Height = "500";
+            Literal1.Text = area.Render();
+        }
+    }
+}
 ```
 
 The `.aspx` template for the above sample is shown below:

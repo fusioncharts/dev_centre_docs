@@ -55,18 +55,18 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
         protected void Page_Load(object sender, EventArgs e) {
             // Create data table
             DataTable primaryData = new DataTable();
-            
+
             // Retrieve data using database query
-            string query = "select [Wesite Sections], [Wesite Visits] from dbo.WebsiteVisits";
+            string query = "select [Website Sections], [Website Visits] from dbo.WebsiteVisits";
             string connetionString = null;
-            
+
             // Servevr name
             string serverName = "FusionChartsServer";
-            
+
             // DataBase name
             string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-            
+            ChartData.Clear();
+
             // Connection string
             connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
 
@@ -76,16 +76,20 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
                 using (SqlCommand command = new SqlCommand(query, con))
                 using (SqlDataAdapter da = new SqlDataAdapter(command))
                 {
-                    da.Fill(primaryData);
+                    da.Fill(ChartData);
                 }
             }
-            StaticSource source = new StaticSource(primaryData);
+            StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
-            Widget.FunnelChart Funnel = new Widget.FunnelChart("first_Funnel_chart");
-            Funnel.Data.Source = model;
-            Funnel.Caption.Text = "Visit to purchase analysis";
-            Literal1.Text = Funnel.Render();
+            Charts.FunnelChart funnel = new Charts.FunnelChart("first_Funnel_chart");
+            funnel.Data.Source = model;
+            funnel.Caption.Text = "Visit to purchase analysis";
+            funnel.Caption.Text = "Harry's Supermart";
+            funnel.SubCaption.Text = "Visit to purchase- Conversion Anallysis for last year";
+            funnel.Width = "600";
+            funnel.Height = "400";
+            Literal1.Text = funnel.Render();
         }
     }
 }
