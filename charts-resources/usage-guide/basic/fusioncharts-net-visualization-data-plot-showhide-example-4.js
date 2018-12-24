@@ -21,14 +21,15 @@
             "value": "46000"
         }, {
             "label": "Javascript",
-            "value": "38000"
+            "value": "38000",
+            "showValue": "0"
         }, {
             "label": "C++",
-            "value": "31000"
+            "value": "31000",
+            "showValue": "0"
         }, {
             "label": "C#",
-            "value": "27000",
-            "showValue": "0"
+            "value": "27000"
         }, {
             "label": "PHP",
             "value": "14000"

@@ -46,6 +46,8 @@ THe `Dashed` property is used when you want the border of the data plot to be ap
 visualizationObj.Data.Series.ValueFormatting("value > 10000 and value < 30000").Dashed(true);
 ```
 
+In the above code, border of the data plots with values from above 10000 and below 30000 has been set to dashed.
+
 The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-data-plot-dashed-example-3.js %}
@@ -55,8 +57,10 @@ The chart will look as shown below:
 To hide the individual plot value, set the value of the `ShowValue` property to `false`. Refer to the code given below:
 
 ```
-visualizationObj.Data.Series.ValueFormatting("C#").ShowValue(false);
+visualizationObj.Data.Series.ValueFormatting("value > 30000 and value < 40000").ShowValue(false);
 ```
+
+In the above code, the data plots with values from 30000 to 40000 has been hidden.
 
 The chart will look as shown below:
 
