@@ -32,7 +32,7 @@ Install **FusionTime** using any of the following steps:
 <div><strong>To install `FusionTime` follow the steps below:</strong></div>
 <div>
     <ol>
-        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusiontime).</li>
     </ol>
 </div>
 <div>The code is shown below:</div>
