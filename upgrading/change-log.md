@@ -9,7 +9,7 @@ heading: Version 3.13.x
 
 <h4 class="sub-heading">Improvements</h4>
 
-* Angular FusionCharts now supports **Time series**.
+* `TypeScript` files added for FusionTime.
 
 <h4>Fixes</h4>
 
