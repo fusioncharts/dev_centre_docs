@@ -48,7 +48,7 @@ visualizationObj.Data.Series.ValueFormatting("value > 10000 and value < 30000").
 
 The chart will look as shown below:
 
-{% embed_chart fusioncharts-net-visualization-data-plot-dashed-example-3.js %
+{% embed_chart fusioncharts-net-visualization-data-plot-dashed-example-3.js %}
 
 ### Show/Hide Individual value
 
