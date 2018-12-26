@@ -140,18 +140,18 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         {
             // Create data table
             DataTable primaryData = new DataTable();
-            
+
             // Retrieve data using database query
-            string query = "select [Order Data], [Sales] from dbo.UserPerLanguage";
+            string query = "select [Order Data], [Sales] from dbo.SalesOrder";
             string connetionString = null;
-            
+
             // Servevr name
             string serverName = "FusionChartsServer";
-            
+
             // DataBase name
             string databaseName = "FusionChartsSamplesDB";
             primaryData.Clear();
-            
+
             // Connection string
             connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
 
@@ -184,7 +184,15 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Series field(s) for the chart
             column.Data.SeriesFields("Sales");
             // Set Chart Title
-            column.Caption.Text = "Global online sales of SuperStore";
+            column.Caption.Text = "Online sales of SuperStore";
+            // set chart subtitle
+            column.SubCaption.Text = "Online sales of SuperStore";
+            // set x axis
+            column.XAxis.Text = "Order Date";
+            // set y axis
+            column.YAxis.Text = "Sales";
+            // hide chart legend
+            column.Legend.Show = false;
             // Render the chart to 'Literal1' literal control
             Literal1.Text = column.Render();
         }

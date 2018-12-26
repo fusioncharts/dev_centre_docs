@@ -14,7 +14,7 @@ FusionCharts.NET abstracts you from writing messy JavaScript and JSON code withi
 
 	* The `DataModel` receives and stores the converted data. This is the parent `DataModel` which you can provide to the chart renderer to visualize the data. 
 
-	* A `DataModel` also contains data operations which can be applied to any `DataModel` to create multiple optimized `DataModels`. You can provide any of these `DataModels` to the chart renderer. 
+	* A `DataModel` also contains data operations which can be applied to create multiple optimized `DataModels`. You can provide any of these `DataModels` to the chart renderer. 
 
 * **Visualization** - The visualization module of FusionCharts.NET allows you to render the chart with functional and cosmetic configurations of the chart after receiving the data from the data engine. 
 
