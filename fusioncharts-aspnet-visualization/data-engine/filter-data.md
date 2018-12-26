@@ -41,7 +41,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 **Null** is a filter operator which can be used to find any **Null** data.
 
-In the above tabular data, the **Country** column consists of three countries. To filter **Null** data, run the following query:
+In the above tabular data, the **Country** column consists of three countries. The code to filter **Null** data is given below:
 
 ```
 DataModel nullOperation = model.Where("Country is null");
@@ -50,10 +50,9 @@ DataModel nullOperation = model.Where("Country is null");
 In the above code:
 
 * **DataModel** is a class.
+* `nullOperation` is the object which holds the resultant data. `nullOperation` is an instance of the DataModel.
 
-* **nullOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 <table>
 	<tr>
@@ -78,7 +77,7 @@ The above table is empty because there is no Null value in the above data of the
 
 **Null** is a filter operator which can be used to find all the data except the **Null** data.
 
-In the above tabular data, the **Country** column consists of three countries. To filter **not** **Null** data, run the following query:
+In the above tabular data, the **Country** column consists of three countries. The code to filter **not** **Null** data is given below:
 
 ```
 DataModel notNullOperation = model.Where("Country is not null");
@@ -87,10 +86,9 @@ DataModel notNullOperation = model.Where("Country is not null");
 In the above code:
 
 * **DataModel** is a class.
+* `notNullOperation` is the object which holds the resultant data. `notNullOperation` is an instance of the DataModel.
 
-* **notNullOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -110,7 +108,7 @@ The above output consists of all the rows of the tabular data which means there 
 
 **Equals** is a filter operator which can be used when you want to filter specific data value.
 
-In the above tabular data, the **Country** column has three countries. To filter the data for **United States,** run the following query:
+In the above tabular data, the **Country** column has three countries. The code to filter the data for **United States,** is given below:
 
 ```
 DataModel equalOperation = model.Where("Country = United States");
@@ -119,10 +117,9 @@ DataModel equalOperation = model.Where("Country = United States");
 In the above code:
 
 * **DataModel** is a class.
+* `equalOperation` is the object which holds the resultant data. `equalOperation` is the instance of the DataModel.
 
-* **equalOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -134,7 +131,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 **Not Equals** is a filter operator operation which can be used when you want to omit some  specific data value.
 
-In the above tabular data, the **Country** column has three countries. To omit the data for **United States**, run the following query:
+In the above tabular data, the **Country** column has three countries. The code to omit the data for **United States** is given below:
 
 ```
 DataModel notEqualOperation = model.Where("Country != United States");
@@ -143,10 +140,9 @@ DataModel notEqualOperation = model.Where("Country != United States");
 In the above code:
 
 * **DataModel** is a class.
+* `notEqualOperation` is the object which holds the resultant data. `notEqualOperation` is the instance of the DataModel.
 
-* **notEqualOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -170,10 +166,9 @@ DataModel greaterOperation = model.Where("Sales > 100");
 In the above code:
 
 * **DataModel** is a class.
+* `greaterOperation` is the object which holds the resultant data. `greaterOperation` is an instance of the DataModel.
 
-* **greaterOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -194,10 +189,9 @@ DataModel greaterEqualOperation = model.Where("Quantity >= 3");
 In the above code:
 
 * **DataModel** is a class.
+* `greaterEqualOperation` is the object which holds the resultant data. `greaterEqualOperation` is an instance of the DataModel.
 
-* **greaterEqualOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -223,10 +217,9 @@ DataModel lessOperation = model.Where("Sales < 100");
 In the above code:
 
 * **DataModel** is a class.
+* `lessOperation` is the object which holds the resultant data. `lessOperation` is an instance of the DataModel.
 
-* **lessOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -250,10 +243,9 @@ DataModel lessEqualOperation = model.Where("Quantity <= 3");
 In the above code:
 
 * **DataModel** is a class.
+* `lessEqualOperation` is the object which holds the resultant data. `lessEqualOperation` is an instance of the DataModel.
 
-* **lessEqualOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -276,10 +268,9 @@ DataModel betweenOperation = model.Where("Order Date is between 1/22/2011 to 1/2
 In the above code:
 
 * **DataModel** is a class.
+* `betweenOperation` is the object which holds the resultant data. `betweenOperation` is an instance of the DataModel.
 
-* **betweenOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -304,10 +295,9 @@ DataModel beginsWithOperation = model.Where("Country begins with A");
 In the above code:
 
 * **DataModel** is a class.
+* `beginsWithOperation` is the object which holds the resultant data. `beginsWithOperation` is an instance of the DataModel.
 
-* **beginsWithOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -322,9 +312,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 Contains operator can search:
 
 * A word or phrase.
-
 * The prefix of a word or phrase.
-
 * A word near another word.
 
 In the above tabular data, the Country column consists of string values. Let's apply the **contains** operator to filter Countries which contains "**d**".** **
@@ -336,10 +324,9 @@ DataModel containsOperation = model.Where("Country contains d");
 In the above code:
 
 * **DataModel** is a class.
+* `containsOperation` is the object which holds the resultant data. `containsOperation` is an instance of the DataModel.
 
-* **containsOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -363,10 +350,9 @@ DataModel endsWithOperation = model.Where("Country ends with a");
 In the above code:
 
 * **DataModel** is a class.
+* `endsWithOperation` is the object which holds the resultant data. `endsWithOperation` is an instance of the DataModel.
 
-* **endsWithOperation** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -382,14 +368,13 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 FusionCharts.NET supports logical operators which filters the data based on some condition. In this section we will discuss about:
 
 * `AND` &
-
 * `OR` operators
 
 ### `AND` Operator
 
 `AND` operator is used when you want to combine multiple conditions like Between, Equals or Greater.
 
-In the above tabular data, the **Order Date** column consists of date/time values and the **Country** column has three countries. To filter the data for **United States** from **1/22/2011** to **1/24/2011**, run the following query:
+In the above tabular data, the **Order Date** column consists of date/time values and the **Country** column has three countries. The code to filter the data for **United States** from **1/22/2011** to **1/24/2011** is given below:
 
 ```
 DataModel andOperator = model.Where("Order Date is between 1/22/2011 to 1/24/2011 and Country = United States");
@@ -398,14 +383,11 @@ DataModel andOperator = model.Where("Order Date is between 1/22/2011 to 1/24/201
 In the above code:
 
 * **DataModel** is a class.
-
-* **andOperator** is the object which holds the resultant data.
-
+* `andOperator` is the object which holds the resultant data. `andOperator` is an instance of the DataModel.
 * Between filter operation filters the **Order Date** column to the specified date/time.
-
 * Equals filter operation filters the **Country** column to United States.
 
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 
@@ -417,7 +399,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 `OR` operator is used when you want to combine multiple conditions like Between, Equals or Greater. The output filtered will be based on one of the conditions.
 
-In the above tabular data, the Country column has three countries. To combine more than one conditions, use more than one OR as part of the WHERE clause. To filter the data for Countries starting from **I** and **A**, run the following query:
+In the above tabular data, the Country column has three countries. To combine more than one conditions, use more than one OR as part of the WHERE clause. The code to filter the data for Countries starting from **I** and **A** is given below:
 
 ```
 // Name starts with M or Name starts with L
@@ -427,10 +409,9 @@ DataModel orOperator = model.Where("Name starts with I or Name starts with A");
 In the above code:
 
 * **DataModel** is a class.
+* `orOperator` is the object which holds the resultant data. `orOperator` is an instance of the DataModel.
 
-* **orOperator** is the object which holds the resultant data.
-
-The output after running the above query looks like:
+The output after running the above code looks like:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|--- 

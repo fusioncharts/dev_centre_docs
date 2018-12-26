@@ -28,7 +28,7 @@ In the above data, `select` operation is applied as shown below:
 DataModel newModel = model.SelectColumns("Country","Sales");
 ```
 
-The new tabular data after applying `select` operation is shown below:
+The new data of the **DataModel** after applying `select` operation is shown below:
 
 Country | Sales
 ---|---
