@@ -144,31 +144,76 @@ The `.aspx` template for the above sample is shown below:
 
 Now, let's learn how to create a bar chart with the same data. The code remains the same as that of the column chart. The only difference is instead of instantiating a column chart you have to instantiate a bar chart. Create a `barChart.aspx.cs` and refer to the code below:
 
-``` 
-// Create static source with this data table
-StaticSource source = new StaticSource(primaryData);
+```aspnet
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
 
-// Create instance of DataModel class
-DataModel model = new DataModel();
+namespace FusionChartsVisualisationWebFormsSamples.Samples
+{
+    public partial class FirstChart: System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+           // Create data table
+            DataTable primaryData = new DataTable();
 
-// Add DataSource to the DataModel
-model.DataSources.Add(source);
+            // Retrieve data using database query
+            string query = "select [Languages], [User] from dbo.UserPerLanguage";
+            string connetionString = null;
 
-// Instantiate bar Chart
-Charts.barChart bar = new Charts.barChart("bar_chart");
+            // Servevr name
+            string serverName = "FusionChartsServer";
 
-// Set Chart's width and height
-bar.Width = 500;
-bar.Height = 400;
+            // DataBase name
+            string databaseName = "FusionChartsSamplesDB";
+            primaryData.Clear();
 
-// Set DataModel instance as the data source of the chart
-bar.Data.Source = model;
+            // Connection string
+            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
 
-// Set Chart Title
-bar.Caption.Text = "Most popular programming language";
+            using (SqlConnection con = new SqlConnection(connetionString))
+            {
+                con.Open();
+                using (SqlCommand command = new SqlCommand(query, con))
+                using (SqlDataAdapter da = new SqlDataAdapter(command))
+                {
+                    da.Fill(primaryData);
+                }
+            }
+            // Create static source with this data table
+            StaticSource source = new StaticSource(primaryData);
 
-// Render the chart to 'barChartLiteral' literal control
-Literal1.Text = bar.Render();
+            // Create instance of DataModel class
+            DataModel model = new DataModel();
+
+            // Add DataSource to the DataModel
+            model.DataSources.Add(source);
+
+            // Instantiate bar Chart
+            Charts.BarChart bar = new Charts.BarChart("bar_chart");
+
+            // Set Chart's width and height
+            bar.Width = 500;
+            bar.Height = 400;
+
+            // Set DataModel instance as the data source of the chart
+            bar.Data.Source = model;
+
+            // Set Chart Title
+            bar.Caption.Text = "Most popular programming language";
+
+            // Render the chart to 'barChartLiteral' literal control
+            Literal1.Text = bar.Render();
+        }
+    }
+}
 ```
 
 The `.aspx` template for the above sample is shown below:
