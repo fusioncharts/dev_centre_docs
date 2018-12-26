@@ -365,7 +365,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ## Logical Operator
 
-FusionCharts.NET supports logical operators which filters the data based on some condition. In this section we will discuss about:
+FusionCharts DataEngine supports logical operators which filters the data based on some condition. In this section we will discuss about:
 
 * `AND` &
 * `OR` operators
