@@ -158,11 +158,11 @@ API|Type|Syntax|Description|
 `Enabled`|Boolean|visualizationObj.Export.Enabled = true;|Enables/disables exporting of a chart|
 `HandlerPath`|String|visualizationObj.Export.HandlerPath = "localhost:8189";|Sets the path of the server-side export handler|
 `Format`|String|visualizationObj.Export.Format = " ";|Sets the export format|
-`Mode`|BaseExportObject<br/>.ExportMode|visualizationObj.Export.Mode = BaseExportObject.ExportMode.SERVER;|Sets the export mode for the chart|
+`Mode`|BaseExportObject<br/>.ExportMode|visualizationObj.Export.Mode = Exporter.ExportMode.SERVER;|Sets the export mode for the chart|
 `ShowMenuItem`|Boolean|visualizationObj.Export.ShowMenuItem = false;|Shows/Hides the export menu|
 `ExportedFileName`|String|visualizationObj.Export.ExportedFileName = "FusionChartsExportedFile.pdf";|Sets the name of the exported file|
-`Window`|BaseExportObject<br/>.ExportTargetWindow|visualizationObj.Export.Window = BaseExportObject.ExportTargetWindow.BLANK;|Sets whether the exported chart opens in the same window or a new window|
-`Action`|BaseExportObject<br/>.ExportAction|visualizationObj.Export.Action = BaseExportObject.ExportAction.SAVE;|Sets the action to be performed when the Export chart option is clicked|
+`Window`|BaseExportObject<br/>.ExportTargetWindow|visualizationObj.Export.Window = Exporter.ExportTargetWindow.BLANK;|Sets whether the exported chart opens in the same window or a new window|
+`Action`|BaseExportObject<br/>.ExportAction|visualizationObj.Export.Action = Exporter.ExportAction.SAVE;|Sets the action to be performed when the Export chart option is clicked|
 
 ## Chart Specific API's
 
@@ -202,7 +202,7 @@ API|Type|Syntax|Description|
 
 ### `Data`
 
-Data is an object used to define the values to be plotted for individual data series. The instances of the DataModel in **Data** object is listed below:
+Data is an object used to define the values to be plotted for individual data series. The instances in **Data** object is listed below:
 
 * ** source:** FusionCharts Data Model
 
@@ -251,7 +251,7 @@ visualizationObj.Data.SeriesFields("Sales,Total_Purchase");
 	</tr>
 	<tr>
 		<td>`CategoryFormatting`</td>
-		<td>String category</td>
+		<td>Methods of Category object which accepts category name as string parameter.</td>
 		<td>visualisationObj.Data.Categories<br/>.CategoryFormatting("india")<br/>.`ShowLabel`(True)<br/>.`ToolText`("Country:India")<br/>.`FontName`("Arial")<br/>.`FontColor`("#ff000f")<br/>.`FontSize`(12)<br/>.`Bold`(false)<br/>.`Italic`(true)<br/>.`LabelLink`("localhost:CountryDetails")<br/>.`BorderColor`("000000")<br/>.`BGColor`("000000")<br/>.`Alpha`(100);</td>
 		<td>This instance is used to customize the specific categories of the chart. Following are the instance methods of `CategoryFormatting`: <br/>1. ShowLabel<br/>2. ToolText<br/>3. FontName<br/>4. FontColor<br/>5. FontSize<br/>6. Bold<br/>7. Italic<br/>8. LabelLink<br/>9. BorderColor<br/>10. BGColor<br/>11. Alpha</td>
 	</tr>
@@ -270,14 +270,14 @@ Series is an object used to customize the series of data plots. The instances of
 	</tr>
 	<tr>
 		<td>`SeriesFormatting`</td>
-		<td>Method of `Series` Object</td>
+		<td>Method of `Series` Object which accepts series field name as string.</td>
 		<td>visualisationObj.Data.Series<br/>.SeriesFormatting("Series_Name")<br/>.Alpha(100)<br/>.Color("ff00ff")<br/>.Dashed(False)<br/>.DisplayName("Yearly sales")<br/>.Visible(true)<br/>.ShowValues(True);</td>
 		<td>This instance is used to customize the selected series of the chart. Following are the instance methods of `SeriesFormatting`:<br/>1. Alpha<br/>2. Color<br/>3. Dashed<br/>4. DisplayName<br/>5. Visible<br/>6. ShowValues</td>
 	</tr>
 	<tr>
 		<td>`ValueFormatting`</td>
-		<td>String</td>
-		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition`(MultiSeriesDataElement.ValuePlaced position.ABOVE);</td>
+		<td>Method of `series` object which accepts conditional query as string.</td>
+		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition`(ValueFormat.ValuePosition.ABOVE);</td>
 		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha<br/>2. Color<br/>3. Dashed<br/>4. ShowValue<br/>5. Link<br/>6. DisplayValue<br/>7. ToolText<br/>8. ValuePosition</td>
 	</tr>
 </table>
@@ -305,7 +305,7 @@ Data is an object used to define the values to be plotted for individual data se
 		<td>`CategoryField`</td>
 		<td>String field_name</td>
 		<td>visualizationObj.Data.CategoryField("Country");</td>
-		<td>Specifies the category field to apply customizations on.</td>
+		<td>Field to apply the customizations.</td>
 	</tr>
 	<tr>
 		<td>`SeriesField`</td>

@@ -12,26 +12,18 @@ In this article, we'll discuss the events that you can use to trigger actions fo
 
 Syntax for all the DataLoad Events is shown below:
 
-```
-
+```aspnet
 visualizationObject.Events.AttachDataLoadEvent(FusionChartsEvents.DataLoadEvents.DATALOADED, "OnDataLoaded");
-
 ```
 
 In the above code:
 
 * `visualizationObject` is the object for FusionCharts.Net Visualization.
-
 * `Events` is the object of `visualizationObject` object.
-
 * `AttachDataLoadEvent` is a method of `Events` object.
-
 * `FusionChartsEvents` is the class.
-
 * `DataLoadEvents` is the enum of `FusionChartsEvents` class.
-
 * `DATALOADED` is the enum value.
-
 * `OnDataLoaded` is the client side event handler in string format. 
 
 The DataLoad events are listed below:
@@ -89,25 +81,17 @@ Triggered when no data is passed to the chart. It can be used to show an error m
 Syntax for the generic Events is shown below:
 
 ```
-
 visualizationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.DATAPLOTCLICK,"OnDataPlotClick");
-
 ```
 
 In the above code:
 
 * `visualizationObject` is the object for FusionCharts.Net Visualization.
-
 * `Events` is the object of `visualizationObject` object.
-
 * `AttachGenericEvents` is a method of `Events` object.
-
 * `FusionChartsEvents` is the class.
-
 * `AttachGenericEvents` is the enum of `FusionChartsEvents` class.
-
 * `DATAPLOTCLICK` is the enum value.
-
 * `OnDataPlotClick` is the client side event handler in string format. 
 
 The events are listed below:
@@ -217,25 +201,17 @@ Triggered when the default behavior of the beforePrint event is cancelled by cal
 Syntax for all the Rendered Events is shown below:
 
 ```
-
-visualizationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.LOADED,"OnDataLoad");
-
+visualizationObject.Events.AttachRenderedEvents(FusionChartsEvents.RenderedEvents.LOADED,"OnDataLoad"); (edited) 
 ```
 
 In the above code:
 
 * `visualizationObject` is the object for FusionCharts.Net Visualization.
-
 * `Events` is the object of `visualizationObject` object.
-
 * `AttachGenericEvents` is a method of `Events` object.
-
 * `FusionChartsEvents` is the class.
-
 * `AttachGenericEvents` is the enum of `FusionChartsEvents` class.
-
 * `LOADED` is the enum value.
-
 * `OnDataLoad` is the client side event handler in string format. 
 
 The Rendered events are listed below:
@@ -295,25 +271,17 @@ Triggered every time the data on any of the interactive charts (funnel, pyramid)
 Syntax for all the events is shown below:
 
 ```
-
-visualizationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.ROTATIOEND,"OnRotationEnd");
-
+visualizationObject.Events.AttachSpecialEvents(PieDoughnutEvents.SpecialEvents.ROTATIONEND,"OnRotationEnd");
 ```
 
 In the above code:
 
 * `visualizationObject` is the object for FusionCharts.Net Visualization.
-
 * `Events` is the object of `visualizationObject` object.
-
 * `AttachGenericEvents` is a method of `Events` object.
-
 * `FusionChartsEvents` is the class.
-
 * `AttachGenericEvents` is the enum of `FusionChartsEvents` class.
-
 * `ROTATIOEND` is the enum value.
-
 * `OnRotationEnd` is the client side event handler in string format. 
 
 The events are listed below:
@@ -355,25 +323,17 @@ Triggered when a pie or a doughnut slice completes slicing out/slicing in.
 Syntax for all the events is shown below:
 
 ```
-
-visualizationObject.Events.AttachGenericEvents(FusionChartsEvents.AttachGenericEvents.ROTATIOSCROLLEND,"OnScrollEnd");
-
+visualizationObject.Events.AttachSpecialEvents(ScrollChartevents.SpecialEvents.SCROLLEND,"OnScrollEnd");
 ```
 
 In the above code:
 
 * `visualizationObject` is the object for FusionCharts.Net Visualization.
-
 * `Events` is the object of `visualizationObject` object.
-
 * `AttachGenericEvents` is a method of `Events` object.
-
 * `FusionChartsEvents` is the class.
-
 * `AttachGenericEvents` is the enum of `FusionChartsEvents` class.
-
 * `ROTATIOSCROLLEND` is the enum value.
-
 * `OnScrollEnd` is the client side event handler in string format. 
 
 The events are listed below:
@@ -385,4 +345,3 @@ Triggered when you begin scrolling through a chart.
 ### `SCROLLEND`
 
 Triggered when a chart completes scrolling.
-
