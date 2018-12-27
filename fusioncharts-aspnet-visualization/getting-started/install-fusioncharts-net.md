@@ -6,22 +6,21 @@ heading: Installation
 
 In this section, we will show you how to install FusionCharts.NET and all the other dependencies on your system. You can install directly from Nuget or by downloading and using local files.
 
-## Install using local files:
+## Install using local files
 
-
-To install download `FusionCharts.NET` and follow the steps given below:
+To install, download `FusionCharts.NET` and follow the steps given below:
 
 * Include the FusionCharts JavaScript files.
 
 * Add the following script tag to your `aspx` or `cshtml` file:
 
-**For ASPX**
+**For .aspx**
 
 ```html
 <script type="text/javascript" src="~/Scripts/FusionCharts/FusionCharts.js"></script>
 ```
 
-**For cshtml**
+**For .cshtml**
 
 ```html
 <script src="@Url.Content("/Scripts/FusionCharts/FusionCharts.js")"></script>
@@ -41,9 +40,9 @@ Once installed from Nuget, it'll add some assemblies to your web project, and th
 
 ## Configuring Export Handler
 
-FusionCharts export handler gets automatically installed once you install `FusionCharts.Visualization` nuget package. However, in order to use it, you need to configure the following:
+FusionCharts export handler gets automatically installed, once you install `FusionCharts.Visualization` nuget package. However, in order to use it, you need to configure the following:
 
-* Make sure the `PresentationCore` and `WindowsBase` assemblies are referenced in your web project. These assemblies are automatically referenced when you install the nuget package, but in case if they are not, then you'll have to manually add them.
+* Make sure the `PresentationCore` and `WindowsBase` assemblies are referenced in your web project. These assemblies are automatically referenced when you install the Nuget package, but in case if they are not, you have to manually add them.
 
 * Add these dependencies into `web.config`:
 
@@ -60,7 +59,7 @@ FusionCharts export handler gets automatically installed once you install `Fusio
 ```
 <httpRuntime targetFramework="4.5" requestValidationMode="2.0" />
 ```
-* Add reference to all files present inside "Helper Assemblies" folder to your project
+* Add references to all files present inside "Helper Assemblies" folder to your project, including the following:
     * `FusionCharts.SharpVectors.Converters.dll`
     * `FusionCharts.SharpVectors.Core.dll`
     * `FusionCharts.SharpVectors.Css.dll`
@@ -68,4 +67,3 @@ FusionCharts export handler gets automatically installed once you install `Fusio
     * `FusionCharts.SharpVectors.Model.dll`
     * `FusionCharts.SharpVectors.Rendering.Wpf.dll`
     * `FusionCharts.SharpVectors.Runtime.dll`
-
