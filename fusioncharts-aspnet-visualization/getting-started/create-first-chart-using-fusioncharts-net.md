@@ -16,7 +16,7 @@ Programming Language|Users|
 -|-
 Java|62000|
 Python|46000|
-Javascript|38000|
+JavaScript|38000|
 C++|31000|
 C#|27000|
 PHP|14000|
@@ -24,7 +24,7 @@ Perl|14000|
 
 Now that you have the tabular data ready, let's see how to render the chart.
 
-## Render the chart:
+## Render the chart
 
 Create the `FirstChart.aspx.cs` file and do the following:
 
@@ -38,9 +38,9 @@ Create the `FirstChart.aspx.cs` file and do the following:
 * Create an instance of `DataModel` class.
 * Add `DataSource` to the `DataModel`.
 * Instantiate Column Chart
-* Set Chart's width and height
+* Set chart width and height
 * Set `DataModel` instance as the data source of the chart.
-* Set Chart Title.
+* Set chart title.
 * Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
