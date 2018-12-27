@@ -4,7 +4,7 @@ description: This article outlines the steps to create your first chart
 heading: Filter Chart Data
 ---
 
-**Filter** is an operation used to filter data values from a large dataset, based on one or more conditions. If you apply one of these operations on the DataModel, it generates a new DataModel with the filtered data.
+**Filter** is an operation used to isolate data values from a large dataset, based on one or more conditions. If you apply one of these operations on the DataModel, it generates a new DataModel with the filtered data.
 
 ## Types of filters
 
@@ -23,9 +23,9 @@ The predefined filters are:
 * Contains
 * Ends with
 
-In this article, we will create a chart by applying couple of filter operations to a tabular data. To start with let's create a simple chart showcasing Global online sales of a SuperStore. Let's create the chart using the tabular table shown below:
+In this article, we will create a chart by applying couple of filter operations to tabular data. To begin with, let us create a simple chart showcasing Global online sales of a SuperStore. Let's create the chart using the tabular table shown below:
 
-> In the chart, **Order Date** Column will be represented using x-axis whereas **Sales** column will be represented in the y-axis.
+> In the chart, **Order Date** Column will be represented using x-axis, whereas **Sales** column will be represented in the y-axis.
 
 Order Date | Country | Sales
 ---|---|---
@@ -71,13 +71,13 @@ Order Date | Country | Sales
 1/29/2011 | United States | 3.928
 1/31/2011 | Australia | 838.593
 
-Using the above tabular data, the chart looks like as shown below:
+Using the above tabular data, you can build a chart that looks like the one shown below:
 
 {% embed_chart fusioncharts-net-visualization-apply-filter-example-1.js %}
 
 ## Apply Filter Operations
 
-Now, let's apply filter operation to the DataModel which consists of the data shown above. In the above tabular data, the **Order Date** column consists of date/time values and the **Country** column has three countries. To filter the data for **United States** from **1/11/2011** to **1/25/2011**, run the following query:
+Now, let's apply filter operation to the DataModel which consists of the data shown above. In the above tabular data, the **Order Date** column consists of date/time values and the **Country** column has names of three countries. To filter the data for **United States** from **1/11/2011** to **1/25/2011**, run the following query:
 
 ```
 DataModel andOperator = model.Where("Order Date is between 1/11/2011 to 1/25/2011 and Country = United States");
@@ -88,13 +88,13 @@ In the above code:
 * **DataModel** is a class.
 * **andOperator** is the object which holds the resultant data.
 * Between filter operation filters the **Order Date** column to the specified date/time.
-* Equals filter operation filters the **Country** column to United States.
+* The equals operation filters the **Country** column to show only the rows with the value of United States.
 
-The output after running the above query looks like:
+The output after running the above query looks the following:
 
 {% embed_chart fusioncharts-net-visualization-applied-filter-example-2.js %}
 
-In the above chart, x-axis represents the Order Date column whereas y-axis represents the Sales per day.
+In the above chart, x-axis represents the Order Date column, whereas y-axis represents the Sales per day.
 
 Steps to render the above chart is given below:
 

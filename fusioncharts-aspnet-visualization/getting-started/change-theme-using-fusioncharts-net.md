@@ -4,7 +4,7 @@ description: This article outlines the steps to set common theme in a single pag
 heading: Change Theme
 ---
 
-In `FusionCharts.NET` you can manually set the cosmetics and functional attributes for each chart and its components. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. `FusionCharts.NET` ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
+In `FusionCharts.NET` you can manually set the cosmetics and functional attributes for each chart and its components. This can work if you deal with only a small number of charts. As the number of charts increases, so does your hassles. `FusionCharts.NET` ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
 
 `FusionCharts.NET` ships with the following predefined themes:
 
