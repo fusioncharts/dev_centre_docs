@@ -487,9 +487,7 @@ heading: Version 3.12.x
 
     * `Plotcolorintooltip`
 
-* Starting v3.12.0, all actions for the chart configurations & space management is executed in a separate thread before rendering the graphics of the chart (that is carried out when the `render()` function is called). Previously, all these actions were executed in the same thread. 
-
-* The `asyncRender` property has been introduced to enable/disable this feature.
+* Starting v3.12.0, all actions for the chart configurations & space management is executed in a separate thread before rendering the graphics of the chart (that is carried out when the `render()` function is called). Previously, all these actions were executed in the same thread. The `asyncRender` property has been introduced to enable/disable this feature.
 
 <h4>Improvements</h4>
 

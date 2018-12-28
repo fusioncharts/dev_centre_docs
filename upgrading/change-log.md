@@ -234,7 +234,7 @@ For more information regarding the events, click [here]({% site.baseurl %}/api/f
 
 * `Angular-FusionCharts` plugin has been renamed to `AngularJS-Fusioncharts`.
 * `Angular 2` and `Angular 4` plugins have been renamed to `Angular-FusionCharts`.
-* The folder structure of the download package is modified. A new folder as `integrations` is added which contains all the **client-side** and **server-side** tech stacks. For more details click [here]({% site.baseurl %}/upgrading/changed-behavior#updated-fusioncharts-suite-xt-download-package-5). 
+* The folder structure of the download package is modified. A new folder as `integrations` is added which contains all the **client-side** and **server-side** tech stacks. For more details click [here]({% site.baseurl %}/upgrading/changed-behavior#updated-fusioncharts-suite-xt-download-package-5).
 
 * For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#secondary-data-plots-overlap-primary-data-plots-3) to know more.
 
@@ -255,6 +255,8 @@ For more information regarding the events, click [here]({% site.baseurl %}/api/f
 * The `defaultPrevented` property in the `eventObject` is used instead of the `prevented` property.
 
 * The [onChangeCrossLine]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#onchangecrossline-287) event is fired when the mouse pointer is moved from one data plot to another.
+
+* Starting v3.13.0, all actions for the chart configurations & space management is executed in a separate thread before rendering the graphics of the chart (that is carried out when the `render()` function is called).
 
 * Gradient legend now sustains the state even on resize.
 
@@ -1086,6 +1088,8 @@ For more information regarding the events, click [here]({% site.baseurl %}/api/f
     * `restoreBtnTitle`
 
 * `setTransparent()` method is deprecated. Use `containerBackgroundOpacity` instead.
+
+* `asyncRender` property is deprecated since charts now by default renders asynchronously.
 
 * `ref` property is deprecated. Use `getObjectReference()` instead.
 
