@@ -15,9 +15,9 @@
          ],
          "frontend": [
             {
-               "value": "Angular JS",
-               "classname": "icon-angular",
-               "link": "/getting-started/angular/angularjs/your-first-chart-using-angularjs"
+               "value": "Plain JavaScript",
+               "classname": "icon-js",
+               "link": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
             },
             {
                "value": "React",
@@ -25,39 +25,49 @@
                "link": "/getting-started/react/your-first-chart-using-react"
             },
             {
-               "value": "Ember JS",
+               "value": "Angular 2+",
+               "classname": "icon-angular2x",
+               "link": "/getting-started/angular/angular/your-first-chart-using-angular"
+            },
+            {
+               "value": "JQuery",
+               "classname": "icon-jQuery",
+               "link": "/getting-started/jquery/your-first-chart-using-jquery"
+            },
+            {
+               "value": "Vue",
+               "classname": "icon-vue",
+               "link": "/getting-started/vue/your-first-chart-using-vuejs"
+            },
+            {
+               "value": "Ember",
                "classname": "icon-ember",
                "link": "/getting-started/ember/your-first-chart-using-ember"
             },
             {
-               "value": "JQuery",
-               "classname": "icon-jquery",
-               "link": "/getting-started/jquery/your-first-chart-using-jquery"
+               "value": "React Native",
+               "classname": "icon-reactnative",
+               "link": "/getting-started/react-native/your-first-chart-using-react-native"
             },
             {
-               "value": "Vue Fusion-charts",
-               "classname": "icon-vue",
-               "link": "/getting-started/vue/your-first-chart-using-vuejs"
+               "value": "AngularJS",
+               "classname": "icon-angular1x",
+               "link": "/getting-started/angular/angularjs/your-first-chart-using-angularjs"
             }
          ],
          "backend": [
-            {
-               "value": "ASP.NET Plugin",
-               "classname": "icon-dotnet",
-               "link": "/getting-started/aspnet/your-first-chart-using-aspnet"
-            },
             {
                "value": "PHP",
                "classname": "icon-php",
                "link": "/getting-started/php/your-first-chart-using-php"
             },
             {
-               "value": "Ruby on Rails",
-               "classname": "icon-ruby",
-               "link": "/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails"
+               "value": "ASP.NET",
+               "classname": "icon-NET",
+               "link": "/getting-started/aspnet/your-first-chart-using-aspnet"
             },
             {
-               "value": "Java Plugin",
+               "value": "Java",
                "classname": "icon-java",
                "link": "/getting-started/java/your-first-chart-using-java"
             },
@@ -65,6 +75,11 @@
                "value": "Django",
                "classname": "icon-django",
                "link": "/getting-started/django/your-first-chart-using-django"
+            },
+            {
+               "value": "Ruby on Rails",
+               "classname": "icon-RubyOnRails",
+               "link": "/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails"
             }
          ],
          "dashboard": [
