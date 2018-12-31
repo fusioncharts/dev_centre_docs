@@ -257,8 +257,8 @@ Based on the template, chart configurations, and the code mentioned above, the e
 
 <div class="tab-content extra-tabs">
 
-<div class="tab csharp-tab">
-<pre><code class="language-cs">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
 using System;
 using System.Collections.Generic;
 using System.IO;

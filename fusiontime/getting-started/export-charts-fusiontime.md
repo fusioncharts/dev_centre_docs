@@ -16,7 +16,7 @@ When charts are exported on the client side, the entire exporting process is car
 
 Thr dropdown menu with export options looks like as shown below:
 
-<img src="{% site.baseurl %}/images/fusiontime-export-charts.png" alt="Export Time Series" width="700" height="420">
+<img src="{% site.BASE_URL %}/images/fusiontime-export-charts.png" alt="Export Time Series" width="700" height="420">
 
 To enable export:
 

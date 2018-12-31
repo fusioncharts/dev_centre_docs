@@ -34,7 +34,7 @@ The accepted format of configuration is the same as that of charts you can gener
 
 Except for the case of exporting dashboards, all other exports work on the basis of the chart configuration that you create. Here, we will use the configuration of a simple Column 2D chart.
 
-```JavaScript
+```json
 [{
     "type": "column2d",
     "renderAt": "chart-container",
@@ -96,8 +96,8 @@ Before you start with the code, we suggest going through the steps that the code
 </ul>
 
 <div class="tab-content">
-<div class="tab csharp-tab">
-<pre><code class="language-cs">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
 using System;
 using System.Collections.Generic;
 using System.IO;

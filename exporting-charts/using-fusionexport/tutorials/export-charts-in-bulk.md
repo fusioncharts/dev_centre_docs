@@ -58,7 +58,7 @@ In this tutorial, we will use the configuration of three charts:
 
 The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes](/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
 
-```
+```json
 [{
     "type": "column2d",
     "renderAt": "chart-container",
@@ -198,7 +198,7 @@ Before you start with the code, we suggest going through the steps that the code
 <div class="tab-content extra-tabs">
 
 <div class="tab csharp-tab active">
-<pre><code class="language-cs">
+<pre><code class="language-csharp">
 using System;
 using System.Collections.Generic;
 using System.IO;

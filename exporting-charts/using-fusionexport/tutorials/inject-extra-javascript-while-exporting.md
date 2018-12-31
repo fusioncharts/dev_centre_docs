@@ -18,8 +18,8 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 <div class="tab-content extra-tabs">
 
-<div class="tab csharp-tab">
-<pre><code class="language-cs">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
 	using System;
 	using System.IO;
 	using System.Linq;

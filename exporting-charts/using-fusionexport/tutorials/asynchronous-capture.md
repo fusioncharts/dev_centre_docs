@@ -25,8 +25,8 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </ul>
 
 <div class="tab-content extra-tabs">
-<div class="tab csharp-tab">
-<pre><code class="language-c">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
 	using System;
 	using System.IO;
 	using System.Linq;
