@@ -123,3 +123,5 @@ In the above code set the chart level theme as `Gammel` using the `Themes` prope
 A chart with the Gammel theme applied is shown below:
 
 {% embed_chart fusioncharts-net-visualization-change-theme-example-2.js %}
+
+Click [here](https://dotnetfiddle.net/wIGPdp) to edit the above chart.

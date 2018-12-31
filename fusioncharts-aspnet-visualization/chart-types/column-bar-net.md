@@ -10,6 +10,8 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-first-chart-example-1.js %}
 
+Click [here](https://dotnetfiddle.net/nVVeWE) to edit the column chart.
+
 The data for the above chart is shown in the table below:
 
 Programming Language|Users|
@@ -248,3 +250,5 @@ The `.aspx` template for the above sample is shown below:
 The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-bar-chart-example-2.js %}
+
+Click [here](https://dotnetfiddle.net/Jog8RJ) to edit the bar chart.
