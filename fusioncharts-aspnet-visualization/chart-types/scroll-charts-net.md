@@ -39,6 +39,8 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-scroll-charts-example-1.js %}
 
+Click [here](https://dotnetfiddle.net/TeDjsE) to edit the scroll column chart.
+
 ## Render the Chart
 
 Create the `ScrollColumnChart.aspx.cs` file and do the following:

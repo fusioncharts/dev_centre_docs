@@ -4,6 +4,8 @@ description: This article outlines the steps of how to create the pie and doughn
 heading: Pie and Doughnut charts
 ---
 
+## Pie Chart
+
 Now, let's learn how to create a Pie chart. We will use the same data of "Most Popular Programming Language". The data will look as shown below:
 
 Programming Language|Number of Users|
@@ -19,6 +21,8 @@ Perl|14000|
 The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-pie-example-1.js %}
+
+Click [here](https://dotnetfiddle.net/h27ogj) to edit the pie chart.
 
 ## Render the Chart
 
@@ -241,3 +245,5 @@ The `.aspx` template for the above sample is shown below:
 The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-doughnut-example-2.js %}
+
+Click [here](https://dotnetfiddle.net/e7DTQC) to edit the doughnut chart.

@@ -19,6 +19,8 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-funnel-chart-example-1.js %}
 
+Click [here](https://dotnetfiddle.net/FWAZel) to edit the funnel chart.
+
 ## Render the Chart
 
 Create the `FunnelChart.aspx.cs` file and do the following:

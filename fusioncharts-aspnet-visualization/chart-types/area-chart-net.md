@@ -20,6 +20,8 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visulization-area-chart-example-1.js %}
 
+Click [here](https://dotnetfiddle.net/EUQZGN) to edit the spline chart.
+
 ## Render the Chart
 
 Create the `AreaChart.aspx.cs` file and do the following:

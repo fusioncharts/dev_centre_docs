@@ -10,6 +10,8 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-pyramid-chart-example-1.js %}
 
+Click [here](https://dotnetfiddle.net/aCkWm8) to edit the pyramid chart.
+
 ## Render the Chart
 
 Create the `PyramidChart.aspx.cs` file and do the following:

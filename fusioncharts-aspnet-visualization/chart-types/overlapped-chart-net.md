@@ -23,6 +23,8 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-overlapped-chart-example-1.js %}
 
+Click [here](https://dotnetfiddle.net/LPXGzz) to edit the overlapped chart.
+
 ## Render the Chart
 
 Create the `OverlappedChart.aspx.cs` file and do the following:

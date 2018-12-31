@@ -58,6 +58,8 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-stacked-chart-example-1.js %}
 
+Click [here](https://dotnetfiddle.net/RqWwld) to edit the stacked chart.
+
 ## Render the Chart
 
 Create the `StackedChart.aspx.cs` file and do the following:

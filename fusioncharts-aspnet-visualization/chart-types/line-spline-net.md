@@ -24,6 +24,8 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-line-sample-example-1.js %}
 
+Click [here](https://dotnetfiddle.net/uJZgOU) to edit the line chart.
+
 ## Render the Chart
 
 Create the `LineChart.aspx.cs` file and do the following:
@@ -232,3 +234,5 @@ The `.aspx` template for the above sample is shown below:
 The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-spline-sample-example-2.js %}
+
+Click [here](https://dotnetfiddle.net/hnbWR6) to edit the spline chart.
