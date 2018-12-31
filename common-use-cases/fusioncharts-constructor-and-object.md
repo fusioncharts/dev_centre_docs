@@ -283,13 +283,9 @@ When the `render()` function is called to render a chart on a page, it sets into
 
 When there are multiple charts on the same page, for each chart, all these actions were executed in the same thread. For example, if there are two charts on a page, then the configuration parsing and space management for all the charts were executed in the same thread.
 
-v3.12.0 introduces the `asyncRender` property, that lets you execute these actions in separate threads.
-
 So, if there are two charts to be rendered one after the other, calling the `render()` function results in executing multiple threads, in the following sequence:
 
 * Parse configuration and manage space for chart 1
 * Parse configuration and manage space for chart 2
 * Draw the graphics for chart 1
 * Draw the graphics for chart 2
-
-In order to incorporate this feature, some of the [APIs](/api/fusioncharts/fusioncharts-methods) are now given a callback function that is executed when `asyncRender` is set to `1`.

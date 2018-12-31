@@ -108,8 +108,6 @@ With FusionCharts Suite XT, you can set and retrieve the charts' upper and lower
 
 * `getLowerLimit()` - Set this attribute to return the current lower limit of the chart.
 
-> Provide a callback Function if `asyncRender` is set to `1` (default) where you get the output of this function as a parameter of the callback function. The callback implementation does not require to listen to the `renderComplete` event.
-
 Refer to the code given below:
 
 ```json
