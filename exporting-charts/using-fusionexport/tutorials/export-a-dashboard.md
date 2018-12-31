@@ -464,7 +464,7 @@ As shown below, you can associate a `style.css` file with the HTML template, and
 
 ### style.css
 
-```
+```css
 .chart {
 	border: 1px solid black;
 	width: 98%;
