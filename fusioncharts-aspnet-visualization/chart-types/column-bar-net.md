@@ -47,7 +47,7 @@ Create the `FirstChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```aspnet
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -146,7 +146,7 @@ The `.aspx` template for the above sample is shown below:
 
 Now, let's learn how to create a bar chart with the same data. The code remains the same as that of the column chart. The only difference is instead of instantiating a column chart you have to instantiate a bar chart. Create a `barChart.aspx.cs` and refer to the code below:
 
-```aspnet
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Data;

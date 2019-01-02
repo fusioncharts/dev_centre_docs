@@ -14,7 +14,7 @@ In this article, we will learn how to enable export in the charts. A chart with 
 
 By default, the option to export charts is turned off. To enable the export option, refer to the code below:
 
-```aspnet
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Data;
