@@ -84,7 +84,9 @@ model.DataSourceDateformat = "MM/dd/yyyy hh:mm tt";
 
 ### Create
 
-The code to group more than one column of a tabular data is given below:
+The code to create instance of `GroupColumn` class is shown below:
+
+> This instance will be used to group more than one column of a tabular data.
 
 ```
 GroupColumn model = new GroupColumn { 
@@ -100,8 +102,6 @@ In the above code:
 * `model` is the instance of `GroupColumn` which holds the grouping information.
 * **Sales**, **Quantity** and **Shipping Cost** are the column name of a tabular data.
 
-
-
 ### Dispose
 
 The code to dispose the grouped column is given below:
@@ -116,7 +116,9 @@ In the above code, `model` is the object which holds the resultant data.
 
 ### Create
 
-The code to sort columns of a tabular data is given below:
+The code to create instance of `SortColumn` class is shown below:
+
+> This instance will be used to sort more than one column of a tabular data.
 
 ```
 SortColumn model = new SortColumn { 
@@ -146,7 +148,9 @@ In the above code, `model` is the object which holds the Aggregation information
 
 ### Create
 
-The code to apply aggregation to a tabular data is given below:
+The code to create instance of `Aggregation` class is shown below:
+
+> This instance will be used to aggregate more than one column of a tabular data.
 
 ```
 Aggregation model = new Aggregation {

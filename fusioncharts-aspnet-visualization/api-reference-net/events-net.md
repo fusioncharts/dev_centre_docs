@@ -323,7 +323,7 @@ Triggered when a pie or a doughnut slice completes slicing out/slicing in.
 Syntax for all the events is shown below:
 
 ```
-visualizationObject.Events.AttachSpecialEvents(ScrollChartevents.SpecialEvents.SCROLLEND,"OnScrollEnd");
+visualizationObject.Events.AttachSpecialEvents(ScrollChartEvents.SpecialEvents.SCROLLEND,"OnScrollEnd");
 ```
 
 In the above code:
