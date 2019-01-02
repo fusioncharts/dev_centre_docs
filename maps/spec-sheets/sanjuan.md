@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sanjuan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.JU.BO|BO|Bohechío
 DO.JU.EC|EC|El Cercado
 DO.JU.JH|JH|Juan de Herrera

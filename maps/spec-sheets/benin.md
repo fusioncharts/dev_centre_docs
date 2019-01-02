@@ -9,12 +9,12 @@ Dimensions (Width x Height): 160x280
 
 
 
-{% embed_spec_map benin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BJ.AL|AL|Alibori
 BJ.AK|AK|Atacora
 BJ.AQ|AQ|Atlantique

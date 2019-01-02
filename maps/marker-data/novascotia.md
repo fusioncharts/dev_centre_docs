@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -214,14 +214,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -468,73 +469,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1' showLabels='0' >
-	<data>
-		<entity id='CA.NS.CB'  />
-		<entity id='CA.NS.ET'  />
-		<entity id='CA.NS.GT'  />
-		<entity id='CA.NS.HD'  />
-		<entity id='CA.NS.LR'  />
-		<entity id='CA.NS.MD'  />
-		<entity id='CA.NS.ST'  />
-	</data>
-	<markers>
-	<shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	   </shapes>
-		<definition>
-			<marker id='HA' x='191.78' y='225.74' label='Halifax' labelPos='left'  />
-			<marker id='01' x='202.5' y='216.1' label='Dartmouth' labelPos='right'  />
-			<marker id='02' x='215.35' y='158.24' label='Truro'  />
-			<marker id='03' x='172.5' y='149.67' label='Parrsboro' labelPos='left'  />
-			<marker id='04' x='158.57' y='111.1' label='Amherst'  />
-			<marker id='05' x='251.78' y='123.96' label='Pictou'  />
-			<marker id='06' x='261.42' y='132.53' label='New Glasgow' labelPos='right'  />
-			<marker id='07' x='137.14' y='179.67' label='Kentville' labelPos='left'  />
-			<marker id='08' x='66.42' y='217.17' label='Annapolis Royal'  />
-			<marker id='09' x='45' y='220.39' label='Digby' labelPos='bottom'  />
-			<marker id='10' x='25.71' y='296.46' label='Yarmouth'  />
-			<marker id='12' x='72.85' y='299.67' label='Shelburne' labelPos='bottom'  />
-			<marker id='11' x='107.14' y='286.82' label='Liverpool' labelPos='right'  />
-			<marker id='13' x='130.71' y='249.32' label='Bridgewater' labelPos='right'  />
-			<marker id='14' x='425.35' y='81.1' label='Glace Bay'  />
-			<marker id='15' x='393.21' y='83.24' label='Sydney' labelPos='left'  />
-			<marker id='16' x='427.5' y='106.82' label='Louisbourg' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='HA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 460x500
 
 
 
-{% embed_spec_map veneto-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.BL|BL|Belluno
 IT.PD|PD|Padua
 IT.RO|RO|Rovigo

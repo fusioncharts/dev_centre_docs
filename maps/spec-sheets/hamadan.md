@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map hamadan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.HD.AS|AS|Asadabad County
 IR.HD.BA|BA|Bahar County
 IR.HD.HA|HA|Hamadan County

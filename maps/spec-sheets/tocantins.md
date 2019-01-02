@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1090x1850
 
 
 
-{% embed_spec_map tocantins-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1700251|AB|Abreulândia
 1700301|AG|Aguiarnópolis
 1700350|AT|Aliança do Tocantins

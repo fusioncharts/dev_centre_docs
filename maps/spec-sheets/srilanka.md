@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x1040
 
 
 
-{% embed_spec_map srilanka-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LK.AP|AP|Ampara
 LK.AD|AD|Anuradhapura
 LK.BD|BD|Badulla

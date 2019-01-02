@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map granma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.GR.BM|BM|Bartolomé Masó
 CU.GR.BY|BY|Bayamo
 CU.GR.BA|BA|Buey Arriba

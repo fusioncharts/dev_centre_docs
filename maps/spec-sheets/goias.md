@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1100x1090
 
 
 
-{% embed_spec_map goias-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 5200175|AG|?gua Fria de Goiás
 5200209|AL|?gua Limpa
 5200258|AL|?guas Lindas de Goiás

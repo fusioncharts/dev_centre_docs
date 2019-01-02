@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map easternvisayas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.EV.BI | BI | Biliran
 PH.EV.ES | ES | Eastern Samar
 PH.EV.LE | LE | Leyte

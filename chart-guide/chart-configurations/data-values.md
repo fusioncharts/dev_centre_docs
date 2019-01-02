@@ -6,7 +6,7 @@ heading: Data Values
 
 Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. 
 
-![Data Values]({% site.baseurl %}/images/chart-configurations-data-values-image-1.png)
+![Data Values](/images/chart-configurations-data-values-image-1.png)
 
 ## Configure Text Labels instead of Numeric Data Values
 

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map westnusatenggara-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.NB.MA|MA|Mataram City
 ID.NB.LT|LT|Central Lombok Regency (Lombok Tengah)
 ID.NB.LI|LI|East Lombok Regency (Lombok Timur)

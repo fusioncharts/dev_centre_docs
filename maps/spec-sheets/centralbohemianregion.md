@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x440
 
 
 
-{% embed_spec_map centralbohemianregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.SK.BN|BN|Benešov
 CZ.SK.BE|BE|Beroun
 CZ.SK.KL|KL|Kladno

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 820x420
 
 
 
-{% embed_spec_map mongolia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.AR|AR|Arkhangai
 MN.BO|BO|Bayan-Ölgii
 MN.BH|BH|Bayankhongor

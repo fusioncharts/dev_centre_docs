@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x580
 
 
 
-{% embed_spec_map guainia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.GN.GU|GU|Barranco Minas
 CO.GN.CA|CA|Cacahual
 CO.GN.IN|IN|Inirida

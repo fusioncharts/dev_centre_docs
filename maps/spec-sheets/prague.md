@@ -9,12 +9,12 @@ Dimensions (Width x Height): 700x550
 
 
 
-{% embed_spec_map prague-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.PM.PH1|PH1|Praha1
 CZ.PM.PH10|PH10|Praha10
 CZ.PM.PH11|PH11|Praha11

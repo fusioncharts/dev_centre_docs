@@ -9,12 +9,12 @@ Dimensions (Width x Height): 970x710
 
 
 
-{% embed_spec_map valais-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.VS.BR|BR|Brig
 CH.VS.CO|CO|Conthey
 CH.VS.EM|EM|Entremont

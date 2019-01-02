@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map bilecik-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.BC.BC | BC | Bilecik
 TR.BC.BO | BO | Bozüyük
 TR.BC.GO | GO | Gölpazarı

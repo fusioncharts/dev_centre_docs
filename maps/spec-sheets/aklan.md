@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map aklan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.AK.AT | AT | Altavas
 PH.AK.BL | BL | Balete
 PH.AK.BN | BN | Banga

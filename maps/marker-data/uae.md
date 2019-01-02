@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -156,14 +156,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -322,56 +323,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		  </shapes>
-		<definition>
-			<marker id='AD' x='335.16' y='223.07' label='Abu Dhabi' labelPos='left'  />
-			<marker id='01' x='141.77' y='270.14' label='Ar Ruways' labelPos='bottom' />
-			<marker id='02`' x='197.02' y='379.62' label='Qutuf'  />
-			<marker id='03' x='499.91' y='255.81' label='Al Ayn' labelPos='left'  />
-			<marker id='04' x='403.72' y='159.62' label='Mina Jabal Ali' labelPos='left'  />
-			<marker id='05' x='435.44' y='124.83' label='Dubai' labelPos='left'  />
-			<marker id='06' x='444.65' y='111.53' label='Sharjah' labelPos='left'  />
-			<marker id='07' x='454.89' y='101.3' label='Ajmar' labelPos='left'  />
-			<marker id='08' x='471.26' y='80.83' label='Umm al Qaywayn' labelPos='left'  />
-			<marker id='09' x='519.35' y='39.9' label='Rasal Khaymah' labelPos='left'  />
-			<marker id='10' x='560.28' y='90.04' label='Khawr Fakkan' labelPos='left'  />
-			<marker id='11' x='563.35' y='113.58' label='Al Fujayrah' labelPos='left'  />
-
-		</definition>
-		<application>
-			<marker id='AD' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02`' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

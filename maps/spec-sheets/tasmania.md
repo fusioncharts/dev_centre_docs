@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x592
 
 
 
-{% embed_spec_map tasmania-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TAS01|HS|Hobart & Surrounds
 TAS03|LTN|Launceston, Tamar & the North
 TAS02|EC|The East Coast

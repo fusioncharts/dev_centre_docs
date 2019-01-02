@@ -9,12 +9,12 @@ Dimensions (Width x Height): 641x490
 
 
 
-{% embed_spec_map smolyan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BA|Banite
 02|BO|Borino
 03|CH|Chepelare

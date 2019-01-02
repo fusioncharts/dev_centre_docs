@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -255,14 +255,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -562,84 +563,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		    <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-			</shapes>
-		<definition>
-			<marker id='ME' x='245.68' y='171.6' label='Mexico City ' labelPos='top'  />
-			<marker id='01' x='21.61' y='7.1' label='Tijuana' labelPos='left'  />
-			<marker id='02' x='28.17' y='14.2' label='Ensenada' labelPos='left'  />
-			<marker id='03' x='151.13' y='15.3' label='Ciudad Juarez'  />
-			<marker id='04' x='98.67' y='61.2' label='Guaymas'  />
-			<marker id='05' x='160.42' y='49.18' label='Chihuahua'  />
-			<marker id='06' x='243.49' y='78.15' label='Nuevo Laredo' labelPos='left'  />
-			<marker id='07' x='232.02' y='104.93' label='Monterrey'  />
-			<marker id='08' x='198.13' y='115.31' label='Durango'  />
-			<marker id='09' x='121.62' y='89.08' label='Topolobampo' labelPos='right' />
-			<marker id='11' x='111.78' y='115.86' label='La Paz' labelPos='right' />
-			<marker id='12' x='155.5' y='119.13' label='Mazatlan'  />
-			<marker id='13' x='171.35' y='154.11' label='Puerto Vallarta'  />
-			<marker id='14' x='182.28' y='172.69' label='Manzanillo'  />
-			<marker id='15' x='207.97' y='185.81' label='Lazaro Cardenas'  />
-			<marker id='16' x='240.21' y='201.66' label='Acapulco'  />
-			<marker id='19' x='304.7' y='186.36' label='Coatzacoalcos' labelPos='right'  />
-			<marker id='24' x='291.04' y='196.19' label='Oaxaca'  />
-			<marker id='23' x='281.75' y='173.24' label='Veracruz'  />
-			<marker id='25' x='266.45' y='147.01' label='Tuxpan' labelPos='left' />
-			<marker id='26' x='262.07' y='125.15' label='Tampico' labelPos='left' />
-			<marker id='27' x='359.35' y='148.65' label='Progresco'  />
-			<marker id='29' x='358.81' y='154.66' label='Merida' labelPos='bottom'  />
-			<marker id='28' x='269.73' y='90.17' label='Matamoros' labelPos='right'  />
-			<marker id='30' x='398.7' y='146.46' label='Cancun'  />
-			<marker id='31' x='294.87' y='209.31' label='Salina Cruz' labelPos='right'  />
-
-		</definition>
-		<application>
-			<marker id='ME' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='24' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-			<marker id='27' shapeId='newCustomShape'  />
-			<marker id='29' shapeId='newCustomShape'  />
-			<marker id='28' shapeId='newCustomShape'  />
-			<marker id='30' shapeId='newCustomShape'  />
-			<marker id='31' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

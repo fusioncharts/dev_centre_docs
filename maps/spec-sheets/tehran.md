@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map tehran-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.TH.BA|BA|Baharestan County
 IR.TH.DA|DA|Damavand County
 IR.TH.FI|FI|Firuzkuh County

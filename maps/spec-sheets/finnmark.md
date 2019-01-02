@@ -9,12 +9,12 @@ Dimensions (Width x Height): 675x518
 
 
 
-{% embed_spec_map finnmark-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.FI.AL|AL|Alta
 NO.FI.BE|BE|Berlevåg
 NO.FI.BA|BA|Båtsfjord

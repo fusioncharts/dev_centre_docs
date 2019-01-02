@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x570
 
 
 
-{% embed_spec_map kyoto-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Ayabe
 002|002|Fukuchiyama
 003|003|Joyo

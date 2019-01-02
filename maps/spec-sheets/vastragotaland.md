@@ -9,12 +9,12 @@ Dimensions (Width x Height): 490x570
 
 
 
-{% embed_spec_map vastragotaland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.VG.AE|AE|Ale
 SE.VG.AS|AS|Alingsås
 SE.VG.BE|BE|Bengtsfors

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x460
 
 
 
-{% embed_spec_map ganjagazakh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF|AF|Aghstafa
 DS|DS|Dashkasan
 GD|GD|Gadabay

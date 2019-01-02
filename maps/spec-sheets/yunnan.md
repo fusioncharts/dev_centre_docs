@@ -9,12 +9,12 @@ Dimensions (Width x Height): 364x384
 
 
 
-{% embed_spec_map yunnan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 4|BS|Baoshan
 13|CX|Chuxiong (Yi)
 12|DA|Dali (Bai)

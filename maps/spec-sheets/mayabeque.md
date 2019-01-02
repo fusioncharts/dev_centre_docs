@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map mayabeque-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.MQ.BB|BB|Batabanó
 CU.MQ.BE|BE|Bejucal
 CU.MQ.GS|GS|Güines

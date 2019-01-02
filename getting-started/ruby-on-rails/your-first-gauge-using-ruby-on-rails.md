@@ -28,25 +28,25 @@ In this article, we will show you how to download and install the **FusionCharts
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -67,24 +67,26 @@ To add the FusionCharts Rails wrapper, use any of the following processes:
 <div class='tab-content extra-tabs'>
 <div class='tab rubygems-tab active'>
 <div><strong>Add this line to your application’s `Gemfile`:</strong></div>
-<pre><code class="custom-hlc language-ruby">
+<pre><code class="language-ruby">
 	gem ‘fusioncharts-rails’
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div><strong>RubyGems contain package information along with the files to install. On the command line prompt, execute the following command:</strong></div>
-<pre><code class="custom-hlc language-ruby">
+<pre><code class="language-ruby">
 	$bundle
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div><strong>This command will automatically install the `fusioncharts-rails` gem. You can also install the gem directly from the command line prompt, without making any edits to the `Gemfile`. To do this, use the code line given below:</strong></div>
-<pre><code class="custom-hlc language-ruby">
+<pre><code class="language-ruby">
 	$gem install fusioncharts-rails
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab manual-tab'>
 <div><strong>Step 1: </strong>Copy all files from `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder.</div>
 <div><strong>Step 2: </strong>Paste the copied files to the `lib` folder of your application</div>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </div>
 
 </div>
@@ -190,7 +192,7 @@ To render the gauge, follow the steps below:
 
 8. Create the gauge instance and set the following:
 
-	* Set the chart type as `angulargauge`. Each gauge is represented with a unique alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauges with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
+	* Set the chart type as `angulargauge`. Each gauge is represented with a unique alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauges with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
 
     * Set the `width` and `height` (in pixels).
 

@@ -55,7 +55,7 @@ Given below is a brief description of the attributes that are used to enable cli
 	</tbody>
 </table>
 
-The sample chart below showcases the client-side export feature. As with server-side export, click <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> from the top-right corner of the chart and select __Export as JPG__.
+The sample chart below showcases the client-side export feature. As with server-side export, click <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> from the top-right corner of the chart and select __Export as JPG__.
 
 {% embed_all exporting-charts-and-chart-data-using-the-client-side-export-feature-example-1.js %}
 
@@ -66,7 +66,7 @@ How do you know if the export was done on the client-side? The images below show
 		<th> <center> Network tab in the browser console: Client-side export </center> </th>		
 	</tr>
 	<tr>
-		<td> <span> ![image alt text Network tab: Client-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg) </span></td>
+		<td> <span> ![image alt text Network tab: Client-side export](/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg) </span></td>
 	</tr>
 </table>
 
@@ -75,14 +75,14 @@ How do you know if the export was done on the client-side? The images below show
 		<th> <center> Network tab in the browser console: Server-side export </center> </th>		
 	</tr>
 	<tr>
-		<td> <span> ![image alt text Network tab: Server-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg) </span> </td>
+		<td> <span> ![image alt text Network tab: Server-side export](/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg) </span> </td>
 	</tr>
 </table>
 
 The graphic below details the steps that are involved in a client-side export:
 
 {:refdef: style="margin-left: auto; margin-right: auto; width: 6em"}
-<img src="{% site.baseurl %}/images/exporting-to-images-or-pdf-client-side-exporting-steps.png" width="auto" height="600" alt="client-side export">
+<img src="{% site.BASE_URL %}/images/exporting-to-images-or-pdf-client-side-exporting-steps.png" width="auto" height="600" alt="client-side export">
 {: refdef}
 
 This feature uses the HTML5 API; therefore, it is important that modern browsers include support for:

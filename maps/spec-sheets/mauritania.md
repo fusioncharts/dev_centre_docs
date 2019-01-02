@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x350
 
 
 
-{% embed_spec_map mauritania-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MR.AD|AD|Adrar
 MR.AS|AS|Assaba
 MR.BR|BR|Brakna

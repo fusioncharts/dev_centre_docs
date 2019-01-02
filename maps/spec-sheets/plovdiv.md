@@ -9,12 +9,12 @@ Dimensions (Width x Height): 384x590
 
 
 
-{% embed_spec_map plovdiv-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AS|Asenovgrad
 02|BR|Brezovo
 03|HI|Hisarya

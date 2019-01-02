@@ -9,12 +9,12 @@ Dimensions (Width x Height): 250x450
 
 
 
-{% embed_spec_map saskatchewan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.SK.EC|EC|East Central Region
 CA.SK.NR|NR|North Region
 CA.SK.SE|SE|South East Region

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 401x591
 
 
 
-{% embed_spec_map newzealand-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 E7|AUK|Auckland
 E8|BOP|Bay of Plenty
 E9|CAN|Canterbury

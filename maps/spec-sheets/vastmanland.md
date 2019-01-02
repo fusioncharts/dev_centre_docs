@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x380
 
 
 
-{% embed_spec_map vastmanland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.VM.AR|AR|Arboga
 SE.VM.FA|FA|Fagersta
 SE.VM.HA|HA|Hallstahammar

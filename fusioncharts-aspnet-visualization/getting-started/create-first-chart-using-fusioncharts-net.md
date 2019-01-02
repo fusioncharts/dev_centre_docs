@@ -47,7 +47,7 @@ Create the `FirstChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```aspnet
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Data;

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x600
 
 
 
-{% embed_spec_map liechtenstein-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BA|Balzers
 02|ES|Eschen
 03|GA|Gamprin

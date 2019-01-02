@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x200
 
 
 
-{% embed_spec_map tokyo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Akiruno
 002|002|Akishima
 003|003|Chofu

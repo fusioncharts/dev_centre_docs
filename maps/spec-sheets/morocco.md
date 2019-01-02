@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x370
 
 
 
-{% embed_spec_map morocco-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MA.CO|CO|Chaouia-Ouardigha
 MA.DA|DA|Doukkala-Abda
 MA.FB|FB|Fès Boulemane

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map amazonas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.AM.LE|LE|Leticia
 CO.AM.PN|PN|Puerto Nariño
 CO.AM.EE|EE|El Encanto

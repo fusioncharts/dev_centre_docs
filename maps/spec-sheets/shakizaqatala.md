@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x460
 
 
 
-{% embed_spec_map shakizaqatala-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BL|BL|Balakan
 QA|QA|Gabala
 QX|QX|Gakh

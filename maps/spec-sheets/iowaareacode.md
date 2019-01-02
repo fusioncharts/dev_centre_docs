@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x310
 
 
 
-{% embed_spec_map iowaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 319|319|319
 515|515|515
 563|563|563

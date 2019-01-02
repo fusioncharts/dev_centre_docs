@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map daykundi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.DK.IS|IS|Ishtarlay
 AF.DK.KA|KA|Kajran
 AF.DK.KH|KH|Khadir

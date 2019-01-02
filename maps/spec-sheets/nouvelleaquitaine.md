@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map nouvelleaquitaine-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.AQ.CT|CT|Charente
 FR.AQ.CM|CM|Charente-Maritime
 FR.AQ.CZ|CZ|Corrèze

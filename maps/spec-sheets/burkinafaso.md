@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x460
 
 
 
-{% embed_spec_map burkinafaso-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BF.BA|BA|Balé
 BF.BM|BM|Bam
 BF.BW|BW|Banwa

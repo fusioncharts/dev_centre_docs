@@ -9,12 +9,12 @@ Dimensions (Width x Height): 790x290
 
 
 
-{% embed_spec_map indonesia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AC|Special Region of Aceh  
 02|BA|Bali 
 35|BB|Bangka–Belitung Islands

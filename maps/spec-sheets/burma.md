@@ -9,12 +9,12 @@ Dimensions (Width x Height): 590x1190
 
 
 
-{% embed_spec_map burma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MM.AY|AY|Ayeyarwady Division
 MM.BA|BA|Bago Division
 MM.CH|CH|Chin State

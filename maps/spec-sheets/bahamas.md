@@ -9,12 +9,12 @@ Dimensions (Width x Height): 521x560
 
 
 
-{% embed_spec_map bahamas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AK|Acklins
 02|BR|Berry Islands
 03|BI|Bimini

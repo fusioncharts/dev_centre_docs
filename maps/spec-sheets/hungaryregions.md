@@ -9,12 +9,12 @@ Dimensions (Width x Height): 770x490
 
 
 
-{% embed_spec_map hungaryregions-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 HU.CH|CH|Central Hungary
 HU.CT|CT|Central Transdanubia
 HU.NG|NG|Northern Great Plain

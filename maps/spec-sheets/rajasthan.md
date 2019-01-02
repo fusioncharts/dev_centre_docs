@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map rajasthan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.RJ.AJ|AJ|Ajmer
 IN.RJ.AL|AL|Alwar
 IN.RJ.BN|BN|Banswara

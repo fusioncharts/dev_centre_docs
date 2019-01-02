@@ -9,12 +9,12 @@ Dimensions (Width x Height): 559x613
 
 
 
-{% embed_spec_map opolskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.OP.BR|BR|Brzeski
 PL.OP.GL|GL|Glubczycki
 PL.OP.KE|KE|Kedzierzynsko-kozielski

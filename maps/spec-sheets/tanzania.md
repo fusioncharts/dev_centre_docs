@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x570
 
 
 
-{% embed_spec_map tanzania-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TZ.AS|AS|Arusha
 TZ.DS|DS|Dar es Salaam
 TZ.DO|DO|Dodoma

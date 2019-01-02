@@ -9,12 +9,12 @@ Dimensions (Width x Height): 221x431
 
 
 
-{% embed_spec_map qatar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 QA.DA|DA|Ad Dawhah
 QA.GH|GH|Al Ghuwariyah
 QA.JU|JU|Al Jumaliyah

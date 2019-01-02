@@ -9,12 +9,12 @@ Dimensions (Width x Height): 340x690
 
 
 
-{% embed_spec_map argentina-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BA|Buenos Aires
 02|CT|Catamarca
 03|CC|Chaco

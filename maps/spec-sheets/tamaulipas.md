@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x720
 
 
 
-{% embed_spec_map tamaulipas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.TM.AB|AB|Abasolo
 MX.TM.AD|AD|Aldama
 MX.TM.AT|AT|Altamira

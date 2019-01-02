@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x470
 
 
 
-{% embed_spec_map ehime-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Imabari
 002|002|Iyo
 003|003|Matsuyama

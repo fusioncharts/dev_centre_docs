@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map alborz-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.AL.ES|ES|Eshtehard County
 IR.AL.KA|KA|Karaj County
 IR.AL.NA|NA|Nazarabad County

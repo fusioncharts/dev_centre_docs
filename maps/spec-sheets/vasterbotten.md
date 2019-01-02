@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x430
 
 
 
-{% embed_spec_map vasterbotten-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.VB.BJ|BJ|Bjurholm
 SE.VB.DO|DO|Dorotea
 SE.VB.LY|LY|Lycksele

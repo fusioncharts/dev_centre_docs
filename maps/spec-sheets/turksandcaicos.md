@@ -9,12 +9,12 @@ Dimensions (Width x Height): 820x510
 
 
 
-{% embed_spec_map turksandcaicos-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.TC.BA|BA|Big Ambergris Cay
 CA.TC.BS|BS|Big Sand Cay
 CA.TC.BC|BC|Bush Cay

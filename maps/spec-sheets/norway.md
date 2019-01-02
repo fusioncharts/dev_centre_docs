@@ -9,12 +9,12 @@ Dimensions (Width x Height): 590x640
 
 
 
-{% embed_spec_map norway-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AK|Akershus
 02|AA|Aust-Agder
 04|BU|Buskerud

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x430
 
 
 
-{% embed_spec_map newcaledonia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NC.SU.BP|BP|Boulouparis
 NC.SU.BR|BR|Bourail
 NC.NO.BE|BE|Bélep

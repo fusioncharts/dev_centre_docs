@@ -9,12 +9,12 @@ Dimensions (Width x Height): 431x600
 
 
 
-{% embed_spec_map mymensingh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BD.MM.JM|JM|Jamalpur District
 BD.MM.MM|MM|Mymensingh District
 BD.MM.NK|NK|Netrokona District

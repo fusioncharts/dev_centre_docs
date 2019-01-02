@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map afarregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ET.AF.ON|ON|Afar Zone 1
 ET.AF.TW|TW|Afar Zone 2
 ET.AF.TH|TH|Afar Zone 3

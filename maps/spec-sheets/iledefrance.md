@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map iledefrance-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.IL.ES|ES|Essonne
 FR.IL.HD|HD|Hauts-de-Seine
 FR.IL.SE|SE|Seine-et-Marne

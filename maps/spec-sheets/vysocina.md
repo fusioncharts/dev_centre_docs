@@ -9,12 +9,12 @@ Dimensions (Width x Height): 640x600
 
 
 
-{% embed_spec_map vysocina-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.JK.HB|HB|Havlíkův Brod
 CZ.JK.JI|JI|Jihlava
 CZ.JK.PE|PE|Pelhřimov

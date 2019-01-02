@@ -237,6 +237,6 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-![pyramid]({% site.baseurl %}/gif/standard-charts-pyramid-gif-1.gif)
+![pyramid](/gif/standard-charts-pyramid-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/q9ujc5hd/) to edit the above chart.

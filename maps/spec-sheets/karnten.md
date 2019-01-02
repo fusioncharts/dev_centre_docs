@@ -9,12 +9,12 @@ Dimensions (Width x Height): 390x180
 
 
 
-{% embed_spec_map karnten-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AT.KA.FE|FE|Feldkirchen
 AT.KA.HE|HE|Hermagor
 AT.KA.KG|KG|Klagenfurt

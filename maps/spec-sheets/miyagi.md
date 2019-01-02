@@ -9,12 +9,12 @@ Dimensions (Width x Height): 460x590
 
 
 
-{% embed_spec_map miyagi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Higashimatsushima
 002|002|Ishinomaki
 003|003|Iwanuma

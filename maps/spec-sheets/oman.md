@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x570
 
 
 
-{% embed_spec_map oman-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 OM.DA|DA|Ad Dakhiliyah
 OM.ZA|ZA|Adh Dhahirah
 OM.BA|BA|Al Batinah

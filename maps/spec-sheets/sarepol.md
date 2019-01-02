@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sarepol-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.SP.BA|BA|Balkhab
 AF.SP.KO|KO|Kohistanat
 AF.SP.SA|SA|Sangcharak

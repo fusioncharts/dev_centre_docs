@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sucre-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.SU.BU|BU|Buenavista
 CO.SU.CA|CA|Caimito
 CO.SU.CH|CH|Chalán

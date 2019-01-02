@@ -9,12 +9,12 @@ Dimensions (Width x Height): 755x500
 
 
 
-{% embed_spec_map washington-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adams
 003|AS|Asotin
 005|BE|Benton

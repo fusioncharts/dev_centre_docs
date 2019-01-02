@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map gaziantep-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.GA.NI | NI | Nizip
 TR.GA.OG | OG | Oğuzeli
 TR.GA.GB | GB | Şahinbey

@@ -19,15 +19,16 @@ Refer to the example below:
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -d uat/ -f test.log -l 5
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
-The different log levels are described in the [CLI reference section]({% site.baseurl %}/exporting-charts/using-fusionexport/cli-reference).
+The different log levels are described in the [CLI reference section](/exporting-charts/using-fusionexport/cli-reference).
 
 ## Related Resources
 
-* [Inject extra JavaScript while Exporting]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting)
+* [Inject extra JavaScript while Exporting](/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting)

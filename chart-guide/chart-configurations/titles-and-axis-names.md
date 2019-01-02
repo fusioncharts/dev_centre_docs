@@ -6,7 +6,7 @@ heading: Titles and Axis Names
 
 The caption (also called the chart title) is the heading of your chart, whereas a sub-caption is the text that appears just below the caption. In the sections below, you can see how to add a caption, subcaption, x-axis name, and y-axis name to your charts, as well as configure their font properties.
 
-![Titles and Axis Names]({% site.baseurl %}/images/chart-configuration-titles-and-axis-names-image-1.png)
+![Titles and Axis Names](/images/chart-configuration-titles-and-axis-names-image-1.png)
 
 Cartesian charts have axes that run along the left and the bottom borders of the canvas. The x-axis runs along the bottom border of the canvas, running from left to right. The y-axis runs along the left border of the canvas, going from the bottom and to the top.
 

@@ -10,21 +10,21 @@ Fusionexport doesn't confine you to FusionCharts - you can also export charts ge
 
 Before starting with the code, ensure that you have:
 
-1. [Downloaded and installed FusionExport Server]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
+1. [Downloaded and installed FusionExport Server](/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
 
-2. [Downloaded and installed the FusionExport SDK client]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
+2. [Downloaded and installed the FusionExport SDK client](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
 
 ## Chart Template 
 
 FusionExport needs a HTML file containing the code for the D3 chart. For this tutorial, we will assume that the file is located at the following path:
 
-```Bash
+```bash
 <export_code_executed_from_this_directory>/resources/d3chart.html
 ```
 
 We will consider [this chord diagram](https://bl.ocks.org/mbostock/1046712) as an example. The minimal `.html` file necessary for this chart is:
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -153,7 +153,7 @@ Before you start with the code, we suggest going through the steps that the code
 
 > The exported dashboard will have the default name of `export--1.png`. If you execute the template code without any changes, you can find it in the same directory from where the code has been executed. 
 
-> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference]({% site.baseurl %}/exporting-charts/using-fusionexport/sdk-api-reference/), and select the SDK of your choice from the left navigation panel.
+> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference](/exporting-charts/using-fusionexport/sdk-api-reference/), and select the SDK of your choice from the left navigation panel.
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -166,8 +166,8 @@ Before you start with the code, we suggest going through the steps that the code
 
 <div class="tab-content extra-tabs">
 
-<div class="tab csharp-tab">
-<pre><code class="custom-hlc language-c">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -207,10 +207,11 @@ namespace FusionExportTest
         }
     }
 }
-</code></pre></div>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre></div>
 
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 import com.fusioncharts.fusionexport.client.*; // import sdk
 
 public class Script {
@@ -234,10 +235,11 @@ public class Script {
         manager.export(config, outputDir = ".", unzip = true);
     }
 }
-</code></pre></div>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre></div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 <?php
 
   // Import dependencies
@@ -263,10 +265,11 @@ public class Script {
   $exportManager->export($exportConfig, $outputDir = '.', $unzip = true);
 
 ?>
-</code></pre></div>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre></div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 // ********** IMPORT AND RESOLVE DEPENDENCIES ***********
 
 // Import 'path' core module of Node.js
@@ -308,10 +311,11 @@ exportManager.export(exportConfig, outputDir = '.', unzip = true).then((exported
 }).catch((err) => {
     console.log(err);
 });
-</code></pre></div>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre></div>
 
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 # Import sdk
 from fusionexport import ExportManager, ExportConfig 
 
@@ -334,13 +338,14 @@ em = ExportManager(export_server_host, export_server_port)
 
 # Call the export() method with the export_config as an argument
 em.export(export_config, outputDir = ".", unzip = True)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
 ## Related Resources
 
-* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
+* [Export the Output Files as a Zip](/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
 
-* [Export a Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
+* [Export a Dashboard](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)

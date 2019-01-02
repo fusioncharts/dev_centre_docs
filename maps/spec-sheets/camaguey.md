@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map camaguey-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.CM.CA|CA|Camagüey
 CU.CM.CC|CC|Carlos M. de Cespedes
 CU.CM.ES|ES|Esmeralda

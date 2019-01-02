@@ -6,7 +6,7 @@ heading: Borders and Backgrounds
 
 A chart's background refers to the whole area on which it is drawn, and it is enclosed by the chart border, the rectangle around a chart's background.
 
-![Border and Background]({% site.baseurl %}/images/chart-configurations-border-and-background-image-1.png)
+![Border and Background](/images/chart-configurations-border-and-background-image-1.png)
 
 ## Show/Hide Chart Borders
 

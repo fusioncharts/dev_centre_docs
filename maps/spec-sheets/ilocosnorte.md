@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ilocosnorte-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.IN.AA | AA | Adams
 PH.IN.BC | BC | Bacarra
 PH.IN.BD | BD | Badoc

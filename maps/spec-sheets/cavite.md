@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map cavite-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.CV.AF | AF | Alfonso
 PH.CV.AA | AA | Amadeo
 PH.CV.BC | BC | Bacoor

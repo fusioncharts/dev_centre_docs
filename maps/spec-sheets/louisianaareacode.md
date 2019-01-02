@@ -9,12 +9,12 @@ Dimensions (Width x Height): 429x400
 
 
 
-{% embed_spec_map louisianaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 225|225|225
 318|318|318
 337|337|337

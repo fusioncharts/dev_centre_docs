@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map amasya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.AM.AM | AM | Amasya
 TR.AM.GO | GO | Göynücek
 TR.AM.GU | GU | Gümüşhacıköy

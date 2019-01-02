@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x360
 
 
 
-{% embed_spec_map lyon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.LY.1e|1e|1st Arrondissement
 FR.LY.2e|2e|2nd Arrondissement
 FR.LY.3e|3e|3rd Arrondissement

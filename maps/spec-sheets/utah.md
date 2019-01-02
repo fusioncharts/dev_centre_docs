@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x765
 
 
 
-{% embed_spec_map utah-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|BV|Beaver
 003|BE|Box Elder
 005|CA|Cache

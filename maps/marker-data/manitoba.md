@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -189,14 +189,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -406,66 +407,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  showLabels='0' >
-	<data>
-		<entity id='CA.MB.CR'  />
-		<entity id='CA.MB.ER'  />
-		<entity id='CA.MB.IR'  />
-		<entity id='CA.MB.NR'  />
-		<entity id='CA.MB.PM'  />
-		<entity id='CA.MB.PR'  />
-		<entity id='CA.MB.WI'  />
-		<entity id='CA.MB.WR'  />
-	</data>
-	<markers>
-	<shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	   </shapes>
-		<definition>
-			<marker id='WI' x='124.5' y='426.83' label='Winnipeg' labelPos='right' />
-			<marker id='01' x='185.88' y='70.97' label='Churchill' labelPos='left'  />
-			<marker id='02' x='183.97' y='157.3' label='Gillam'  />
-			<marker id='03' x='22.82' y='85.36' label='Brochet' labelPos='right'  />
-			<marker id='05' x='81.33' y='183.2' label='Thompson' labelPos='right'  />
-			<marker id='06' x='15.15' y='203.34' label='Flin Flon' labelPos='right'  />
-			<marker id='07' x='28.58' y='226.36' label='Le Pas' labelPos='right'  />
-			<marker id='08' x='76.54' y='267.61' label='Grand Rapids'  />
-			<marker id='09' x='130.25' y='214.85' label='Norway House' labelPos='right'  />
-			<marker id='11' x='127.37' y='376' label='Pine Dock' labelPos='right'  />
-			<marker id='12' x='76.54' y='433.55' label='Brandon' labelPos='left'  />
-			<marker id='13' x='64.07' y='409.57' label='Dauphin' labelPos='left'  />
-			<marker id='04' x='24.74' y='137.16' label='Lynn Lake' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='WI' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

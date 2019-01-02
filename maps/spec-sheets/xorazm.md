@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map xorazm-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.KH.BO|BO|Bog‘ot
 UZ.KH.GU|GU|Gurlen
 UZ.KH.XO|XO|Xonqa

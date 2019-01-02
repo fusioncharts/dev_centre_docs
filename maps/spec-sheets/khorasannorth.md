@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map khorasannorth-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.KS.BO|BO|Bojnurd County
 IR.KS.ES|ES|Esfarayen County
 IR.KS.FA|FA|Faroj County

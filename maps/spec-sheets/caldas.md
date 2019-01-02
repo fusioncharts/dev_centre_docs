@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map caldas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.CQ.AL|AL|Albania
 CO.CQ.BE|BE|Belén de Andaquies
 CO.CQ.CA|CA|Cartagena del Chairá

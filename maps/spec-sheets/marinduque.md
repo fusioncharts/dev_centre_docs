@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map marinduque-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.MQ.BA | BA | Boac
 PH.MQ.BE | BE | Buenavista
 PH.MQ.GS | GS | Gasan

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map villaclara-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.VC.CB|CB|Caibarién
 CU.VC.CM|CM|Camajuaní
 CU.VC.CI|CI|Cifuentes

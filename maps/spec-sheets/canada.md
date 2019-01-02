@@ -9,12 +9,12 @@ Dimensions (Width x Height): 635x535
 
 
 
-{% embed_spec_map canada-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AB|Alberta
 02|BC|British Columbia
 03|MB|Manitoba

@@ -32,25 +32,25 @@ The consolidated code is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -180,7 +180,7 @@ The consolidated code is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab C#-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     using System;
     using System.Collections.Generic;
     using System.Text;
@@ -270,11 +270,11 @@ The consolidated code is shown below:
             }
         }
     }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class='tab VB-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     Imports FusionCharts.Charts
     Partial Class first_chart
     Inherits System.Web.UI.Page
@@ -325,8 +325,8 @@ The consolidated code is shown below:
     Literal1.Text = MyFirstChart.Render()
     End Sub
     End Class
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -340,7 +340,7 @@ The HTML template is shown below:
 </ul>
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
 
     &lt;!DOCTYPE html&gt;
@@ -360,10 +360,11 @@ The HTML template is shown below:
     &lt;/body&gt;
 
     &lt;/html&gt;
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class="tab vb-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %&gt;
     &lt;!DOCTYPE html&gt;
     &lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
@@ -380,7 +381,8 @@ The HTML template is shown below:
         &lt;/form&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

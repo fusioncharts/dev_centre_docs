@@ -13,7 +13,7 @@ The  `--chart-config-options` option can be used to change the chart configurati
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-json">
+<pre><code class="language-json">
 	{
 		"chart-config": "uat/fusioncharts_chart.js",
 			"chart-config-options": {
@@ -25,7 +25,8 @@ The  `--chart-config-options` option can be used to change the chart configurati
 			}
 		}
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 
@@ -38,19 +39,20 @@ Once done, run the following command:
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	$ fe -e fusioncharts_config.json
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
 ## Related Resources
 
-* [Customize the Width and Height of an Exported Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+* [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the Export Type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Add a logo and Heading to the Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
+* [Add a logo and Heading to the Dashboard](/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
 
-* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

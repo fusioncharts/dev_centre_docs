@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x300
 
 
 
-{% embed_spec_map lieria-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.LE.AC|AC|Alcobaça
 PT.LE.AV|AV|Alvaiázere
 PT.LE.AN|AN|Ansião

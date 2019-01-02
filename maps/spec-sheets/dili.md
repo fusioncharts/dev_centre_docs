@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map dili-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TL.DL.AT|AT|Atauro
 TL.DL.CR|CR|Cristo Rei
 TL.DL.DA|DA|Dom Aleixo

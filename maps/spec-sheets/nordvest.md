@@ -9,12 +9,12 @@ Dimensions (Width x Height): 307x202
 
 
 
-{% embed_spec_map nordvest-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RO.BH|BH|Bihor
 RO.BN|BN|Bistriţa-Năsăud
 RO.CJ|CJ|Cluj

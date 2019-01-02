@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map mahakali-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.MA.BT|BT|Baitadi
 NP.MA.DD|DD|Dadeldhura
 NP.MA.DR|DR|Darchula

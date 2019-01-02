@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map laguajira-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.LG.AL|AL|Albania
 CO.LG.BA|BA|Barrancas
 CO.LG.DB|DB|Dibulla

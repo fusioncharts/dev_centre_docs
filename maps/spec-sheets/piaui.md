@@ -9,12 +9,12 @@ Dimensions (Width x Height): 800x1150
 
 
 
-{% embed_spec_map piaui-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2200202|AB|?gua Branca
 2200053|AC|Acauã
 2200103|AG|Agricolândia

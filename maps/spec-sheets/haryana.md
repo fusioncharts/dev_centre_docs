@@ -10,12 +10,12 @@ Dimensions (Width x Height): 370x440
 
 
 
-{% embed_spec_map haryana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.HR.AM|AM|Ambala
 IN.HR.BH|BH|Bhiwani
 IN.HR.FR|FR|Faridabad

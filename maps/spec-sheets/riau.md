@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map riau-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.RI.DU|DU|Dumai City
 ID.RI.PB|PB|Pekanbaru City
 ID.RI.BK|BK|Bengkalis Regency

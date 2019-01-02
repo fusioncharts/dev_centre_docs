@@ -143,7 +143,7 @@ Refer to the basic JSON structure to create annotations, given below:
 
 The image of a chart rendered with different types of annotation items is shown below:
 
-![Annotations]({% site.baseurl %}/images/chart-configurations-annotations-image-1.jpg)
+![Annotations](/images/chart-configurations-annotations-image-1.jpg)
 
 ## Create Text Annotations
 
@@ -384,7 +384,7 @@ Use the following attributes to create rectangular annotations:
 
 A rectangle annotation will look as given below:
 
-![Rectangle]({% site.baseurl %}/images/chart-configurations-annotations-image-2.jpg)
+![Rectangle](/images/chart-configurations-annotations-image-2.jpg)
 
 #### Polygon
 
@@ -402,7 +402,7 @@ Use the following attributes to create polygonal annotations:
 
 A polygon annotation will look as given below:
 
-![Polygon]({% site.baseurl %}/images/chart-configurations-annotations-image-3.jpg)
+![Polygon](/images/chart-configurations-annotations-image-3.jpg)
 
 #### Line
 
@@ -422,7 +422,7 @@ Use the following attributes to create linear annotations:
 
 A line annotation will look as given below:
 
-![Line]({% site.baseurl %}/images/chart-configurations-annotations-image-4.jpg)
+![Line](/images/chart-configurations-annotations-image-4.jpg)
 
 #### Circle
 
@@ -440,7 +440,7 @@ Use the following attributes to create circular annotations:
 
 A circle annotation will look as given below:
 
-![Circle]({% site.baseurl %}/images/chart-configurations-annotations-image-5.jpg)
+![Circle](/images/chart-configurations-annotations-image-5.jpg)
 
 #### Arc
 
@@ -464,7 +464,7 @@ An arc is suitable to draw doughnut like shapes or a slice of it. You can use it
 
 An arc annotation will look as given below:
 
-![Arc]({% site.baseurl %}/images/chart-configurations-annotations-image-6.jpg)
+![Arc](/images/chart-configurations-annotations-image-6.jpg)
 
 ### Create Path Annotations
 
@@ -1283,7 +1283,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/pLvuerqt/) to edit the above chart.
 
-> In the above chart, you can see how to use annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically positioned using annotation macros. After the chart is rendered (when the [renderComplete]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#rendercomplete-226) event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
+> In the above chart, you can see how to use annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically positioned using annotation macros. After the chart is rendered (when the [renderComplete](/api/fusioncharts/fusioncharts-events#rendercomplete) event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
 
 ### Provide more information about data plots
 
@@ -1523,7 +1523,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uc91ftc1/) to edit the above chart.
 
-> The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga. When you hover the mouse pointer over a data plot, it triggers the [dataplotRollover]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) event. Consequently, an annotation group (containing a line, a label, and text annotation) is shown, which displays additional information about the data plot. When you hover the mouse pointer out of the data plot, it triggers the [dataPlotRollOut]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollout-249) event and the annotation group is hidden.
+> The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga. When you hover the mouse pointer over a data plot, it triggers the [dataplotRollover](/api/fusioncharts/fusioncharts-events#dataplotrollover-247) event. Consequently, an annotation group (containing a line, a label, and text annotation) is shown, which displays additional information about the data plot. When you hover the mouse pointer out of the data plot, it triggers the [dataPlotRollOut](/api/fusioncharts/fusioncharts-events#dataplotrollout) event and the annotation group is hidden.
 
 Macro sub-tokens are used to position the annotation group with respect to the axes and datasets. The `hide()` method is used to hide the group.
 

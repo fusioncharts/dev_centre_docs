@@ -9,12 +9,12 @@ Dimensions (Width x Height): 680x420
 
 
 
-{% embed_spec_map guineabissau-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 GW.BA|BA|Bafata
 GW.BM|BM|Biombo
 GW.BS|BS|Bissau

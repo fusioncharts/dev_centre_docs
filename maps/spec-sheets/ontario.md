@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x400
 
 
 
-{% embed_spec_map ontario-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AL|Algoma
 02|BR|Brant
 03|BU|Bruce

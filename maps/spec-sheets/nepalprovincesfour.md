@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map nepalprovincesfour-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.FO.GO|GO|Gorkha
 NP.FO.LM|LM|Lamjung
 NP.FO.TN|TN|Tanahun

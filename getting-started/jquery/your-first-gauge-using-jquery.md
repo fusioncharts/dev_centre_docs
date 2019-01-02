@@ -24,14 +24,15 @@ Install **FusionCharts** and the `jquery-fusioncharts` plugin using any of the f
 <div class='tab npm-tab active'>
 <div class='mt-30'><strong>To install FusionCharts and the `jquery-fusioncharts` plugin via npm follow the steps below:</strong></div>
 <div class='mt-20'>Install the `jquery-fusioncharts` plugin</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 $ npm install jquery-fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-20'>2. Install the `fusioncharts` package</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 $ npm install fusioncharts --save
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class='tab cdn-tab'>
 <div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
@@ -39,7 +40,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files.</div>
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
-<pre><code class="custom-hlc language-html">
+<pre><code class="language-html">
 &lt;head&gt;
     &lt;!-- jQuery --&gt;
     &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
@@ -50,8 +51,8 @@ $ npm install fusioncharts --save
     &lt;!-- Fusion Theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class='tab local-tab'>
 <div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
@@ -59,7 +60,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
-<pre><code class="custom-hlc language-html">
+<pre><code class="language-html">
 &lt;head&gt;
         &lt;!-- jQuery --&gt;
         &lt;script type="text/javascript" src="path/to/local/jquery.min.js"&gt;&lt;/script&gt;
@@ -70,8 +71,8 @@ $ npm install fusioncharts --save
         &lt;!-- Fusion Theme --&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -169,7 +170,7 @@ To render the gauge, follow the steps below:
 
 7. Store the chart configurations in a JSON object. In this JSON object:
 
-    * Set the chart type as `angulargauge`. Each gauge type is represented with a unique gauge alias. For Angular gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
+    * Set the chart type as `angulargauge`. Each gauge type is represented with a unique gauge alias. For Angular gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
 
     * Set the width and height (in pixels). 
 
@@ -189,7 +190,7 @@ The consolidated code is given below:
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 var $ = require('jquery');
 var FusionCharts = require('fusioncharts');
 var jQueryFusionCharts = require('jquery-fusioncharts');
@@ -243,11 +244,11 @@ $('document').ready(function () {
     }
   })
 });
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-html">
+<pre><code class="language-html">
 &lt;html&gt;
     &lt;head&gt;
         &lt;!-- Include jQuery --&gt;
@@ -306,11 +307,11 @@ $('document').ready(function () {
         &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-html">
+<pre><code class="language-html">
 &lt;html&gt;
     &lt;head&gt;
         &lt;!-- Include jQuery --&gt;
@@ -369,8 +370,8 @@ $('document').ready(function () {
         &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

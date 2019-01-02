@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kermanshah-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.BK.DA|DA|Dalaho County
 IR.BK.GG|GG|Gilan-e-gharb County
 IR.BK.HA|HA|Harsin County

@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -188,14 +188,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -401,72 +402,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillpattern='radial' showBorder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillpattern='radial' showBorder='0' radius='3'/>
-		  </shapes>
-		<definition>
-			<marker id='PR' x='366.87' y='243.29' label='Providence' labelPos='top' />
-			<marker id='01' x='296.4' y='36.01' label='Woonsocket' labelPos='bottom' />
-			<marker id='02' x='371.02' y='156.23' label='Pawtucket' labelpos='left' />
-			<marker id='03' x='418.69' y='304.43' label='East Providence'  />
-			<marker id='04' x='456' y='385.27' label='Bristol' labelPos='right' />
-			<marker id='05' x='458.07' y='436.05' label='Portsmouth' labelPos='right'  />
-			<marker id='06' x='419.73' y='560.42' label='Newport' labelPos='top'  />
-			<marker id='08' x='304.69' y='604.98' label='Narragansett'  />
-			<marker id='09' x='218.67' y='558.34' label='W.Kingston'  />
-			<marker id='10' x='44.56' y='675.46' label='Westerly'  />
-			<marker id='11' x='318.16' y='382.16' label='East Greenwich' labelPos='left'  />
-			<marker id='13' x='279.82' y='340.7' label='West Warwick'  />
-			<marker id='14' x='368.95' y='353.14' label='Warwick'  />
-			<marker id='15' x='269.45' y='270.23' label='Cranston'  />
-			<marker id='16' x='157.52' y='85.76' label='Pascoag'  />
-			<marker id='17' x='328.53' y='174.88' label='North Providence' labelPos='right' />
-			<marker id='18' x='102.6' y='537.62' label='Hope Valley'  />
-
-
-
-
-
-		</definition>
-		<application>
-			<marker id='PR' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-
-
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

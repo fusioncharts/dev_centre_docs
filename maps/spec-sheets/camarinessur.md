@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map camarinessur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.CS.BA | BA | Baao
 PH.CS.BL | BL | Balatan
 PH.CS.BT | BT | Bato

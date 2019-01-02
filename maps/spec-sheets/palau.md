@@ -9,12 +9,12 @@ Dimensions (Width x Height): 630x710
 
 
 
-{% embed_spec_map palau-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PW.AM|AM|Aimeliik
 PW.AR|AR|Airai
 PW.AN|AN|Angaur

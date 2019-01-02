@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x290
 
 
 
-{% embed_spec_map sodermanland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.SD.ES|ES|Eskilstuna
 SE.SD.FL|FL|Flen
 SE.SD.GN|GN|Gnesta

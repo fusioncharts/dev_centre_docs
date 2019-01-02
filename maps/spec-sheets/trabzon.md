@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map trabzon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.TB.AK | AK | Akçaabat
 TR.TB.AR | AR | Araklı
 TR.TB.AS | AS | Arsin

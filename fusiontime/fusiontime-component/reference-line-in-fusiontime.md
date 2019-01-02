@@ -6,7 +6,7 @@ heading: Reference Line
 
 A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), which indicates a specific value. It can help you quickly compare any data value against a fixed value represented by a line. For multivariate charts, each chart canvas can have it's own reference line. 
 
-<img src="{% site.baseurl %}/images/fusiontime-component-reference-line.png" alt="Reference Line" width="700" height="420">
+<img src="{% site.BASE_URL %}/images/fusiontime-component-reference-line.png" alt="Reference Line" width="700" height="420">
 
 The salient features of the reference line:
 

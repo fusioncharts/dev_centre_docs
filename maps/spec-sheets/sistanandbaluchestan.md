@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sistanandbaluchestan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.SB.CH|CH|Chabahar County
 IR.SB.DA|DA|Dalgan County
 IR.SB.FA|FA|Fanuj County

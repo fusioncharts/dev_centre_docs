@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map valledelcauca-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.VC.AL|AL|Alcalá
 CO.VC.AD|AD|Andalucía
 CO.VC.AN|AN|Ansermanuevo

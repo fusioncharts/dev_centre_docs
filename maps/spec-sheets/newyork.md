@@ -9,12 +9,12 @@ Dimensions (Width x Height): 745x580
 
 
 
-{% embed_spec_map newyork-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AL|Albany
 003|AE|Allegany
 005|BR|Bronx

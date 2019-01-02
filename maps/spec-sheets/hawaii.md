@@ -9,12 +9,12 @@ Dimensions (Width x Height): 761x481
 
 
 
-{% embed_spec_map hawaii-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|HA|Hawaii
 003|HO|Honolulu
 005|KA|Kalawao

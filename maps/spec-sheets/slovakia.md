@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x310
 
 
 
-{% embed_spec_map slovakia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BC|Banská Bystrica
 02|BL|Bratislava
 03|KI|Košice

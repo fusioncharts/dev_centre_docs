@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x570
 
 
 
-{% embed_spec_map ostergotland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.OG.BO|BO|Boxholm
 SE.OG.FI|FI|Finspång
 SE.OG.KI|KI|Kinda

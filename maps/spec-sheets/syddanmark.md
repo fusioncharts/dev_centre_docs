@@ -9,12 +9,12 @@ Dimensions (Width x Height): 823x664
 
 
 
-{% embed_spec_map syddanmark-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AA|Aabenraa
 02|AS|Assens
 03|BI|Billund

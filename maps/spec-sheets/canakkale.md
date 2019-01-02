@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map canakkale-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.CK.AY | AY | Ayvacık
 TR.CK.BA | BA | Bayramiç
 TR.CK.BI | BI | Biga

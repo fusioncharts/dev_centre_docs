@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x600
 
 
 
-{% embed_spec_map pacificdma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 743|ANC-AK|ANCHORAGE
 800|BAK-CA|BAKERSFIELD
 821|BEN-OR|BEND,OR

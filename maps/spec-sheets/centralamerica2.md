@@ -9,12 +9,12 @@ Dimensions (Width x Height): 901x781
 
 
 
-{% embed_spec_map centralamerica2-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CE.AG|AG|Antigua and Barbados
 CE.BS|BS|Bahamas
 CE.BB|BB|Barbados

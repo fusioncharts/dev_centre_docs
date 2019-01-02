@@ -9,12 +9,12 @@ Dimensions (Width x Height): 740x530
 
 
 
-{% embed_spec_map liberec-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.LK.JN|JN|Jablonec Nad Nisou
 CZ.LK.LB|LB|Liberec
 CZ.LK.SM|SM|Semily

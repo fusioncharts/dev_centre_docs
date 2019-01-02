@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map bagmati-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.BA.BK|BK|Bhaktapur
 NP.BA.DH|DH|Dhading
 NP.BA.LL|LL|Lalitpur

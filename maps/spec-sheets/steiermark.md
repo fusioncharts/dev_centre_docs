@@ -9,12 +9,12 @@ Dimensions (Width x Height): 950x630
 
 
 
-{% embed_spec_map steiermark-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AT.ST.BM|BM|Bruck an der Mur
 AT.ST.DL|DL|Deutschlandsberg
 AT.ST.FB|FB|Feldbach

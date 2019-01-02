@@ -9,12 +9,12 @@ Dimensions (Width x Height): 640x439
 
 
 
-{% embed_spec_map southernasia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 93|AF|Afghanistan
 96|BD|Bangladesh
 97|BT|Bhutan

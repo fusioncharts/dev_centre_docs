@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kinmencounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.KM.JC | JC | Jincheng Township
 TW.KM.JH | JH | Jinhu Township
 TW.KM.JS | JS | Jinsha Township

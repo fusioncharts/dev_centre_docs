@@ -9,12 +9,12 @@ Dimensions (Width x Height): 700x460
 
 
 
-{% embed_spec_map polvamaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|AH|Ahja
 03|KA|Kanepi
 04|KO|Kõlleste

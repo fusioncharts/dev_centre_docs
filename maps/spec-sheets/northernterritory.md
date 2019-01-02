@@ -9,12 +9,12 @@ Dimensions (Width x Height): 361x594
 
 
 
-{% embed_spec_map northernterritory-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NT05|AS|Alice Springs
 NT02|AL|Arnhem Land/Kakadu
 NT01|DA|Darwin

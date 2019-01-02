@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map jizzakh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.JI.AR|AR|Arnasay
 UZ.JI.BA|BA|Bakhmal
 UZ.JI.DO|DO|Dustlik

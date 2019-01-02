@@ -9,11 +9,11 @@ Dimensions (Width x Height): 500x290
 
 
 
-{% embed_spec_map montanacongressional-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 00|MT|Montana At Large
 

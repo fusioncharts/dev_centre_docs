@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map regionofrepublicansubordination-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TJ.RR.TR|TR|Tursunzoda
 TJ.RR.SH|SH|Shahrinaw
 TJ.RR.GI|GI|Hisor

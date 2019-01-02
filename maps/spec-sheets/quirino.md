@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map quirino-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.QR.AL | AL | Aglipay
 PH.QR.CB | CB | Cabarroguis
 PH.QR.DF | DF | Diffun

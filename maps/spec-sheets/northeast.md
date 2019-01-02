@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northeast-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 VN.NE.BG|BG|Bắc Giang
 VN.NE.BK|BK|Bắc Kạn
 VN.NE.AT|AT|Cao Bằng

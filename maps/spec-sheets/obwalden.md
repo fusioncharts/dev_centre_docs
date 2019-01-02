@@ -9,12 +9,12 @@ Dimensions (Width x Height): 920x660
 
 
 
-{% embed_spec_map obwalden-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.OW.AL|AL|Alpnach
 CH.OW.EB|EB|Engelberg
 CH.OW.GW|GW|Giswil

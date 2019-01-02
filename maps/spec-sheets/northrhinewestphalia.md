@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x370
 
 
 
-{% embed_spec_map northrhinewestphalia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.NW.AC|AC|Aachen
 DE.NW.AH|AH|Aachen
 DE.NW.BF|BF|Bielefeld

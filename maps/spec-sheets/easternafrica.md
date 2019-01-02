@@ -9,12 +9,12 @@ Dimensions (Width x Height): 520x570
 
 
 
-{% embed_spec_map easternafrica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 44|BI|Burundi
 49|KM|Comoros
 52|DJ|Djibouti

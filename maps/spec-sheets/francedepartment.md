@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map francedepartment-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.AI|AI|Ain
 FR.AS|AS|Aisne
 FR.AL|AL|Allier

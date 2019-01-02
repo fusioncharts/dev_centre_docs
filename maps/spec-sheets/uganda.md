@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x625
 
 
 
-{% embed_spec_map uganda-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 B6|AI|Abim
 98|AD|Adjumani
 E3|AO|Agago

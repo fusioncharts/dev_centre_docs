@@ -8,14 +8,14 @@ Map Name: Telangana
 Dimensions (Width x Height): 440x410
 
 
-{% embed_spec_map telangana-map.js %}
 
-{% embed_spec_map telangana-map.js %}
+
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.TG.AD|AD|Adilabad
 IN.TG.BH|BH|Bhadradri Kothagudem
 IN.TG.HY|HY|Hyderabad

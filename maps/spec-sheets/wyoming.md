@@ -9,12 +9,12 @@ Dimensions (Width x Height): 761x601
 
 
 
-{% embed_spec_map wyoming-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AL|Albany
 003|BH|Big Horn
 005|CM|Campbell

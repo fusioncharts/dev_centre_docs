@@ -9,12 +9,12 @@ Dimensions (Width x Height): 360x300
 
 
 
-{% embed_spec_map northerncaliforniabayareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 209|209|209
 408|408|408
 415|415|415

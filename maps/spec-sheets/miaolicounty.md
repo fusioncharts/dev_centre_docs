@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map miaolicounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.ML.MI | MI | Miaoli City
 TW.ML.TO | TO | Toufen City
 TW.ML.HO | HO | Houlong Township

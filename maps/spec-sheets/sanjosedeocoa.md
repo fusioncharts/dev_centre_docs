@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sanjosedeocoa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.JO.RA|RA|Rancho Arriba
 DO.JO.SL|SL|Sabana Larga
 DO.JO.SJ|SJ|San José de Ocoa

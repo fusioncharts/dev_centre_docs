@@ -9,12 +9,12 @@ Dimensions (Width x Height): 440x550
 
 
 
-{% embed_spec_map taiwan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CG|Changhua County
 02|CH|Chiayi County
 03|CS|Chiayi City

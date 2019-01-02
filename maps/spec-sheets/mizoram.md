@@ -9,12 +9,12 @@ Dimensions (Width x Height): 200x420
 
 
 
-{% embed_spec_map mizoram-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.MZ.AI|AI|Aizawl
 IN.MZ.CH|CH|Champhai
 IN.MZ.KO|KO|Kolasib

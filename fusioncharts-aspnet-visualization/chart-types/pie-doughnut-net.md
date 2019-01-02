@@ -45,7 +45,7 @@ Create the `PieChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```aspnet
+```csharp
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
@@ -143,7 +143,7 @@ The `.aspx` template for the above sample is shown below:
 
 Now, let's learn how to create a doughnut chart with the same data. The code remains the same as that of the Pie chart. The only difference is instead of instantiating a pie chart you have to instantiate a doughnut chart. Create a `doughnutChart.aspx.cs` and refer to the code below:
 
-```aspnet
+```csharp
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 

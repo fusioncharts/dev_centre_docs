@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northhwanghae-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KP.BS|BS|Bongsan
 KP.HW|HW|Hwangju
 KP.KS|KS|Koksan

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 930x740
 
 
 
-{% embed_spec_map schwyz-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.SZ.ES|ES|Einsiedeln
 CH.SZ.GS|GS|Gersau
 CH.SZ.HO|HO|Höfe

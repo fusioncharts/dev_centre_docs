@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map antique-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.AQ.AI | AI | Anini-y
 PH.AQ.BR | BR | Barbaza
 PH.AQ.BL | BL | Belison

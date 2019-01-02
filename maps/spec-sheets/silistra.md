@@ -9,12 +9,12 @@ Dimensions (Width x Height): 739x374
 
 
 
-{% embed_spec_map silistra-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AL|Alfatar
 03|DU|Dulovo
 02|GL|Glavinitsa

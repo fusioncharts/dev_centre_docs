@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map nepalprovincesthree-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.TH.DO|DO|Dolakha
 NP.TH.RM|RM|Ramechhap
 NP.TH.SI|SI|Sindhuli

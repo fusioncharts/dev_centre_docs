@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x250
 
 
 
-{% embed_spec_map marylandareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 202|202|202
 240-301|240-301|240-301
 410-443|410-443|410-443

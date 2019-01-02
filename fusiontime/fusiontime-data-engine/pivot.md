@@ -32,7 +32,7 @@ In the first argument of the `pivot` method, each group of configuration object 
 
 #### `column`
 
-Name of the column from the DataTable created using [schema]({% site.baseurl %}/fusiontime/fusiontime-data-engine/overview).
+Name of the column from the DataTable created using [schema](/fusiontime/fusiontime-data-engine/overview).
 
 #### `outputAs`
 

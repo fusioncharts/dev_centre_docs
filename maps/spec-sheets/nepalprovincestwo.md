@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map nepalprovincestwo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.TW.ST|ST|Saptari
 NP.TW.SR|SR|Siraha
 NP.TW.DN|DN|Dhanusha

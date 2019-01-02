@@ -9,12 +9,12 @@ Dimensions (Width x Height): 490x240
 
 
 
-{% embed_spec_map oklahomaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 405|405|405
 580|580|580
 918|918|918

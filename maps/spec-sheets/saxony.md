@@ -9,12 +9,12 @@ Dimensions (Width x Height): 481x381
 
 
 
-{% embed_spec_map saxony-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.SN.AN|AN|Annaberg
 DE.SN.AS|AS|Aue Schwarzenberg
 DE.SN.BT|BT|Bautzen

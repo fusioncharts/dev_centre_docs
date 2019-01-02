@@ -9,10 +9,10 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map beirut-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LE.BA.BA|BA|Beirut

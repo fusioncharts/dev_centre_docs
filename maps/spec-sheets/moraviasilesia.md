@@ -9,12 +9,12 @@ Dimensions (Width x Height): 770x650
 
 
 
-{% embed_spec_map moraviasilesia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.VK.BR|BR|Bruntál
 CZ.VK.FM|FM|Frýdek-Místek
 CZ.VK.KI|KI|Karviná

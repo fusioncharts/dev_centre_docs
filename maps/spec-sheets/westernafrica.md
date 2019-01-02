@@ -9,12 +9,12 @@ Dimensions (Width x Height): 742x434
 
 
 
-{% embed_spec_map westernafrica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 41|BJ|Benin
 43|BF|Burkina Faso
 46|CV|Cape Verde

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map centralhighlands-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 VN.CH.DC|DC|Đắc Lắc
 VN.CH.DO|DO|Đắk Nông
 VN.CH.GL|GL|Gia Lai

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x573
 
 
 
-{% embed_spec_map centralhungary-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BU|Budapest
 02|PE|Pest
 

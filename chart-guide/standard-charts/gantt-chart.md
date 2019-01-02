@@ -92,9 +92,9 @@ A Gantt chart consists of the following elements:
 
 In the images given below, you can see a standard Gantt chart with a few of the above elements labeled:
 
-![gantt-element-image-1]({% site.baseurl %}/images/standard-charts-gantt-chart-image-1.gif)
+![gantt-element-image-1](/images/standard-charts-gantt-chart-image-1.gif)
 
-![gantt-element-image-2]({% site.baseurl %}/images/standard-charts-gantt-chart-image-2.gif)
+![gantt-element-image-2](/images/standard-charts-gantt-chart-image-2.gif)
 
 ## Categories and subcategories (dates)
 
@@ -150,7 +150,7 @@ The Gantt chart is a specialized chart that you can use to monitor the progress 
 
 As an example, see how you can create a Gantt chart that monitors the various processes and tasks involved in optimizing the reach of an organization on social media.
 
-> In order to render Gantt chart, include fusioncharts.Gantt.js in the project folder with rest of the .js files, as mentioned **[here]({% site.baseurl %}/installation/client-side-frameworks/install-using-plainjs)**.
+> In order to render Gantt chart, include fusioncharts.Gantt.js in the project folder with rest of the .js files, as mentioned **[here](/installation/client-side-frameworks/install-using-plainjs)**.
 
 A Gantt chart that you build to track the progress of a Social Media Optimization project looks like the following:
 
@@ -414,7 +414,7 @@ Refer to the code below:
 ```
 The chart will look as shown below:
 
-![Gantt-Chart-GIF-1]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-1.gif)
+![Gantt-Chart-GIF-1](/gif/standard-charts-gantt-chart-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/6w30L5x1/) to edit the above chart.
 
@@ -462,7 +462,7 @@ Refer to the code below:
 ```
 The chart will look as shown below:
 
-![Gantt-Chart-GIF-2]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-2.gif)
+![Gantt-Chart-GIF-2](/gif/standard-charts-gantt-chart-gif-2.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/gkxkwru0/) to edit the above chart.
 
@@ -511,7 +511,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Gantt-Chart-GIF-3]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-3.gif)
+![Gantt-Chart-GIF-3](/gif/standard-charts-gantt-chart-gif-3.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/20Lhm9e9/) to edit the above chart.
 
@@ -672,7 +672,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Gantt-Chart-GIF-4]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-4.gif)
+![Gantt-Chart-GIF-4](/gif/standard-charts-gantt-chart-gif-4.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/df36h963/) to edit the above chart.
 
@@ -739,7 +739,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Gantt-Chart-GIF-5]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-5.gif)
+![Gantt-Chart-GIF-5](/gif/standard-charts-gantt-chart-gif-5.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/cgqe3esp/) to edit the above chart.
 
@@ -844,7 +844,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Gantt-Chart-GIF-1]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-6.gif)
+![Gantt-Chart-GIF-1](/gif/standard-charts-gantt-chart-gif-6.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/n89ey0z9/) to edit the above chart.
 
@@ -1595,7 +1595,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Gantt-Chart-GIF-7]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-7.gif)
+![Gantt-Chart-GIF-7](/gif/standard-charts-gantt-chart-gif-7.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/Lgocm9pu/) to edit the above chart.
 

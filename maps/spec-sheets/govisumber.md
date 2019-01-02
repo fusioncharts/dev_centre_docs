@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map govisumber-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.GS.BT | BT | Bayantal
 MN.GS.SH | SH | Shiveegovi
 MN.GS.SU | SU | Sümber

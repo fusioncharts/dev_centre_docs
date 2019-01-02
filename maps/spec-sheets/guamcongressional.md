@@ -9,11 +9,11 @@ Dimensions (Width x Height): 350x440
 
 
 
-{% embed_spec_map guamcongressional-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 98|GU|Guam nonvoting
 

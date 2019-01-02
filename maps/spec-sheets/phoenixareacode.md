@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x320
 
 
 
-{% embed_spec_map phoenixareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 480|480|480
 520|520|520
 602|602|602

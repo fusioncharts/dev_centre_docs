@@ -9,12 +9,12 @@ Dimensions (Width x Height): 572x567
 
 
 
-{% embed_spec_map diber-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BU|Bulqizë
 02|DI|Dibër
 03|MT|Mat

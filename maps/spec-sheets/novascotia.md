@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x340
 
 
 
-{% embed_spec_map novascotia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.NS.CB|CB|Cape Breton
 CA.NS.ET|ET|Evangeline Trail
 CA.NS.GT|GT|Glooscap Trail

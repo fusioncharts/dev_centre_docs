@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x527
 
 
 
-{% embed_spec_map raplamaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|JU|Juuru
 02|JA|Järvakandi
 03|KA|Kaiu

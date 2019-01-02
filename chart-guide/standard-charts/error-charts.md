@@ -62,7 +62,7 @@ To create an error bar chart follow the steps given below:
 
 * Set the `errorValue` attribute to specify error value that will be plotted as the error bar on the chart. This attribute belongs to the `data` object, which belongs to the `dataset` object.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorbar2d) page of error bar chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=errorbar2d) page of error bar chart.
 
 An error bar chart thus created looks like this:
 
@@ -74,7 +74,7 @@ Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/) to edit the above error ba
 
 Now, let's create an **error line** chart that compares the estimated procurement from two suppliers. To render an error line chart, change the value of the `type` attribute from `errorbar2d` to `errorline`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorline) page of error line chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=errorline) page of error line chart.
 
 An error line chart thus created looks like:
 
@@ -98,7 +98,7 @@ To render an error scatter chart, follow the steps given below:
 
 * Set the `verticalErrorValue` to specify the range of possible vertical deviation values that will be plotted as the error bar on the chart. This attribute also belongs to the `data` object, which belongs to the `dataset` object.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorscatter) page of error scatter chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=errorscatter) page of error scatter chart.
 
 The error scatter chart will look like:
 

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 472x600
 
 
 
-{% embed_spec_map austagder-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.AA.AR|AR|Arendal
 NO.AA.BI|BI|Birkenes
 NO.AA.BG|BG|Bygland

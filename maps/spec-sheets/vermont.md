@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x890
 
 
 
-{% embed_spec_map vermont-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Addison
 003|BE|Bennington
 005|CA|Caledonia

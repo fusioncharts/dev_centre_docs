@@ -10,12 +10,12 @@ Dimensions (Width x Height): 447x342
 
 
 
-{% embed_spec_map busan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BK|Buk
 02|BJ|Busanjin
 03|DG|Dong

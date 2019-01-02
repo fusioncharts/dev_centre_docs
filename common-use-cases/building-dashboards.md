@@ -38,7 +38,7 @@ For this example, we will use screenshots and the final dashboard is available t
 
 When done, the dashboard would look as under:
 
-![Dashboard]({% site.baseurl %}/images/dashboard.png)
+![Dashboard](/images/dashboard.png)
 
 The HTML code to build this dashboard is given here:
 

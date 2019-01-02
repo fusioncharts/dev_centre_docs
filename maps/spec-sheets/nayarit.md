@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x750
 
 
 
-{% embed_spec_map nayarit-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.NA.AC|AC|Acaponeta
 MX.NA.AH|AH|Ahuacatlán
 MX.NA.AM|AM|Amatlán de Cañas

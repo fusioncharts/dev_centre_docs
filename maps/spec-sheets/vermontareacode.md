@@ -9,11 +9,11 @@ Dimensions (Width x Height): 300x480
 
 
 
-{% embed_spec_map vermontareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 802|802|802
 

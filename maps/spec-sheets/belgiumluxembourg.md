@@ -9,12 +9,12 @@ Dimensions (Width x Height): 401x551
 
 
 
-{% embed_spec_map belgiumluxembourg-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.LX.AR|AR|Arlon
 BE.LX.AT|AT|Attert
 BE.LX.AU|AU|Aubange

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map balkh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.BK.BA|BA|Balkh
 AF.BK.CB|CB|Chahar Bolak
 AF.BK.CK|CK|Chahar Kint

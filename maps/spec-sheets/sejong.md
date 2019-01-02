@@ -10,12 +10,12 @@ Dimensions (Width x Height): 540x560
 
 
 
-{% embed_spec_map sejong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AM|Areum-dong
 02|BG|Bugang-myeon
 03|DM|Dodam-dong

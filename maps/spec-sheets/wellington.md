@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x424
 
 
 
-{% embed_spec_map wellington-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 9|CR|Carterton District
 6|KC|Kapiti Coast District
 2|LH|Lower Hutt City

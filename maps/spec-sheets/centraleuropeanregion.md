@@ -9,12 +9,12 @@ Dimensions (Width x Height): 140x120
 
 
 
-{% embed_spec_map centraleuropeanregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AT|Austria
 02|CZ|CzechRepublic
 03|DE|Germany

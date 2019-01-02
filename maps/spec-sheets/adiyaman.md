@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map adiyaman-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.AD.AD | AD | Adıyaman
 TR.AD.BE | BE | Besni
 TR.AD.CE | CE | Çelikhan

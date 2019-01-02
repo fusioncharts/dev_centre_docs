@@ -9,12 +9,12 @@ Dimensions (Width x Height): 290x370
 
 
 
-{% embed_spec_map rhinelandpalatinate-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.RP.AH|AH|Ahrweiler
 DE.RP.AL|AL|Altenkirchen
 DE.RP.AW|AW|Alzey Worms

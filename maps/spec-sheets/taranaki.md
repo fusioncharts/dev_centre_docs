@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x600
 
 
 
-{% embed_spec_map taranaki-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 3|NP|New Plymouth District
 1|ST|South Taranaki District
 2|SF|Stratford District

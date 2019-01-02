@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x250
 
 
 
-{% embed_spec_map belarus-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BR|Brest
 02|HO|Homyel
 03|HR|Hrodna

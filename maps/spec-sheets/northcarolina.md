@@ -9,12 +9,12 @@ Dimensions (Width x Height): 890x380
 
 
 
-{% embed_spec_map northcarolina-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AL|Alamance
 003|AE|Alexander
 005|AG|Alleghany

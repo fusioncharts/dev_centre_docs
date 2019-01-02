@@ -9,12 +9,12 @@ Dimensions (Width x Height): 393x570
 
 
 
-{% embed_spec_map southaustralia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SA07|AD|Adelaide
 SA08|AH|Adelaide Hills
 SA05|BV|Barossa Valley

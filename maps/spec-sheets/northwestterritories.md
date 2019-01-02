@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x430
 
 
 
-{% embed_spec_map northwestterritories-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.NT.AC|AC|Arctic Coast
 CA.NT.BL|BL|BigLake Country
 CA.NT.DC|DC|Diamond Capital

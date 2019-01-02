@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x580
 
 
 
-{% embed_spec_map montenegro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AN|Andrijevica
 02|BA|Bar
 03|BE|Berane

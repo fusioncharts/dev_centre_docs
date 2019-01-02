@@ -8,8 +8,8 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure chart using **FusionCharts rails gem wrapper** to:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/ruby-on-rails/configure-your-chart-using-ruby-on-rails#update-chart-data-1)
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/ruby-on-rails/configure-your-chart-using-ruby-on-rails#update-chart-attributes-2)
+* [Update Chart Data](/getting-started/ruby-on-rails/configure-your-chart-using-ruby-on-rails#update-chart-data)
+* [Update Chart Attributes](/getting-started/ruby-on-rails/configure-your-chart-using-ruby-on-rails#update-chart-attributes)
 
 ## Update Chart Data
 

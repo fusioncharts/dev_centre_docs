@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map iloilo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.II.AU | AU | Ajuy
 PH.II.AL | AL | Alimodian
 PH.II.AN | AN | Anilao

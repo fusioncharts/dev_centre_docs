@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x380
 
 
 
-{% embed_spec_map ukraine-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CK|Cherkasy
 02|CH|Chernihiv
 03|CV|Chernivtsi

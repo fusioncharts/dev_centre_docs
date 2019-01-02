@@ -9,12 +9,12 @@ Dimensions (Width x Height): 700x508
 
 
 
-{% embed_spec_map vorumaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 03|AN|Antsla
 04|HA|Haanja
 05|LA|Lasva

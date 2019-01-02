@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x200
 
 
 
-{% embed_spec_map equatorialguinea-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 GQ.AN|AN|Annobon
 GQ.BN|BN|Bioko Norte
 GQ.BS|BS|Bioko Sur

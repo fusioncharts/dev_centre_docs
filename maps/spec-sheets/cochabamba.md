@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x340
 
 
 
-{% embed_spec_map cochabamba-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BO.CB.AR|AR|Arani
 BO.CB.AQ|AQ|Arque
 BO.CB.AY|AY|Ayopaya

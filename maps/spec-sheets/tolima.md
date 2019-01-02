@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sucre-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.TO.AJ|AJ|Alpujarra
 CO.TO.AV|AV|Alvarado
 CO.TO.AM|AM|Ambalema

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1120x1240
 
 
 
-{% embed_spec_map amapa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1600105|AM|Amapá
 1600204|CA|Calçoene
 1600212|CU|Cutias

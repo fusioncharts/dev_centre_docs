@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x460
 
 
 
-{% embed_spec_map sonora-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.SO.AM|AM|Alamos
 MX.SO.AL|AL|Altar
 MX.SO.AR|AR|Arizpe

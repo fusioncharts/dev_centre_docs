@@ -9,12 +9,12 @@ Dimensions (Width x Height): 640x660
 
 
 
-{% embed_spec_map northamerica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AG|Antigua and Barbuda
 002|BS|Bahamas
 003|BB|Barbados

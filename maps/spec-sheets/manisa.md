@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map manisa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.MN.AH | AH | Ahmetli
 TR.MN.AK | AK | Akhisar
 TR.MN.AL | AL | Alaşehir

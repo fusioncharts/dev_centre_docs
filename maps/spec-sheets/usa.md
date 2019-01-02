@@ -9,12 +9,12 @@ Dimensions (Width x Height): 730x445
 
 
 
-{% embed_spec_map usa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AL|AL|Alabama
 AK|AK|Alaska
 AZ|AZ|Arizona

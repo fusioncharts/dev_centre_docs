@@ -9,12 +9,12 @@ Dimensions (Width x Height): 191x195
 
 
 
-{% embed_spec_map limburgbgomeenten-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.LI.AL|AL|Alken
 BE.LI.AS|AS|As
 BE.LI.BE|BE|Beringen

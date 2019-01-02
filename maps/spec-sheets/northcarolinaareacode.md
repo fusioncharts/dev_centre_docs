@@ -9,12 +9,12 @@ Dimensions (Width x Height): 449x180
 
 
 
-{% embed_spec_map northcarolinaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 252|252|252
 336|336|336
 704-980|704-980|704-980

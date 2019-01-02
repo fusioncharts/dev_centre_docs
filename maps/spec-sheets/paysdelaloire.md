@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map paysdelaloire-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.PD.LA|LA|Loire-Atlantique
 FR.PD.ML|ML|Maine-et-Loire
 FR.PD.MY|MY|Mayenne

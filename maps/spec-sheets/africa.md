@@ -9,12 +9,12 @@ Dimensions (Width x Height): 660x610
 
 
 
-{% embed_spec_map africa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|DZ|Algeria
 002|AO|Angola
 003|BJ|Benin

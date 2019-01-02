@@ -44,7 +44,7 @@ To create a log column 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=LogMSColumn2D) page of log column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=LogMSColumn2D) page of log column 2D chart.
 
 The log column 2D chart thus rendered looks like this:
 
@@ -56,7 +56,7 @@ Click [here](http://jsfiddle.net/fusioncharts/kEeUR/) to edit the log column 2D 
 
 Now, let's create a log line 2D chart that compares the store footfalls with the online visits for one year. To render a log line 2D chart, change the value of the `type` attribute from `logmscolumn2d` to `logmsline`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=LogMSLine) page of log line 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=LogMSLine) page of log line 2D chart.
 
 The log line chart thus rendered looks like this:
 

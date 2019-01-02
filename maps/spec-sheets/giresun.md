@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map giresun-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.GI.AL | AL | Alucra
 TR.GI.BU | BU | Bulancak
 TR.GI.CM | CM | Çamoluk

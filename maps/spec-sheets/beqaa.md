@@ -9,12 +9,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map beqaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LE.BQ.BB|BB|Baalbek
 LE.BQ.HE|HE|Hermel
 LE.BQ.RA|RA|Rashaya

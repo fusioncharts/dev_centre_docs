@@ -34,7 +34,7 @@ To create a zoom line chart follow the steps given below:
 
 > The anchors in the zoom-line chart is not clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomline) page of zoomline chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomline) page of zoomline chart.
 
 The zoom line chart thus created looks like this:
 
@@ -60,7 +60,7 @@ Another advantage of using the zoom-line dual y-axis chart is when you want to c
 
 To create a zoom-line dual y-axis chart, set the `type` attribute to `zoomlinedy`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomlinedy) page of zoomlinedy chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomlinedy) page of zoomlinedy chart.
 
 The chart below shows a zoom-line dual y-axis chart created to compare unique footfall with the sales (in dollars), for each day of the previous year.
 
@@ -190,7 +190,7 @@ Refer to the code given below:
 
 The chart will look like as shown below:
 
-![ZoomLine chart]({% site.baseurl %}/images/standard-charts-zoom-line-chart-image-1.png)
+![ZoomLine chart](/images/standard-charts-zoom-line-chart-image-1.png)
 
 To configure the zoom panning of the chart:
 
@@ -211,7 +211,7 @@ Refer to the code given below:
 
 The chart will look like as shown below:
 
-![ZoomLine chart]({% site.baseurl %}/gif/standard-charts-zoomline-gif-1.gif)
+![ZoomLine chart](/gif/standard-charts-zoomline-gif-1.gif)
 
 To set the pin panning of the chart:
 
@@ -235,7 +235,7 @@ Refer to the code given below:
 
 The chart will look like as shown below:
 
-![ZoomLine chart]({% site.baseurl %}/gif/standard-charts-zoomline-gif-2.gif)
+![ZoomLine chart](/gif/standard-charts-zoomline-gif-2.gif)
 
 The list of attributes to set the zooming mode of the zoomout button are: 
 
@@ -262,7 +262,7 @@ Refer to the code given below:
 
 The chart will look like as shown below:
 
-![ZoomLine chart]({% site.baseurl %}/gif/standard-charts-zoomline-gif-3.gif)
+![ZoomLine chart](/gif/standard-charts-zoomline-gif-3.gif)
 
 To configure the scroll bar of the chart:
 

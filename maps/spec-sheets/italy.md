@@ -9,12 +9,12 @@ Dimensions (Width x Height): 480x560
 
 
 
-{% embed_spec_map italy-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AB|Abruzzo
 002|BA|Basilicata
 003|CA|Calabria

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map southhamgyong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KP.BU|BU|Bujon
 KP.DA|DA|Danchon
 KP.DO|DO|Doksong

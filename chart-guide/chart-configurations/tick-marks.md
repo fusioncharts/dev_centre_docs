@@ -12,7 +12,7 @@ Tick marks, an element of gauges in FusionChart Suite XT, are calibration marks 
 
 An LED gauge with major and minor tick marks looks like this:
 
-![tick marks]({% site.baseurl %}/images/chart-configurations-tick-marks-image-1.png)
+![tick marks](/images/chart-configurations-tick-marks-image-1.png)
 
 ## Show/Hide Tick Marks
 

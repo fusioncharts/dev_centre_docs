@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x340
 
 
 
-{% embed_spec_map castelobranco-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.CB.BE|BE|Belmonte
 PT.CB.CB|CB|Castelo Branco
 PT.CB.CO|CO|Covilhã

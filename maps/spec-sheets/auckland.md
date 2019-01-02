@@ -9,12 +9,12 @@ Dimensions (Width x Height): 554x600
 
 
 
-{% embed_spec_map auckland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 4|AL|Auckland City
 7|FK|Franklin District
 5|MK|Manukau City

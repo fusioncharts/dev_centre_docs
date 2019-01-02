@@ -9,12 +9,12 @@ Dimensions (Width x Height): 398x520
 
 
 
-{% embed_spec_map ireland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 006|DU|Baile ?tha Cliath
 002|CV|Cabhán
 001|CA|Ceatharlach

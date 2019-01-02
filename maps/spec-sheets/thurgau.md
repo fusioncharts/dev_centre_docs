@@ -9,12 +9,12 @@ Dimensions (Width x Height): 820x490
 
 
 
-{% embed_spec_map thurgau-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.TG.AB|AB|Arbon
 CH.TG.BZ|BZ|Bischofszell
 CH.TG.DH|DH|Diessenhofen

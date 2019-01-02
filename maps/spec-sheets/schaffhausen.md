@@ -9,12 +9,12 @@ Dimensions (Width x Height): 950x740
 
 
 
-{% embed_spec_map schaffhausen-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.SH.OK|OK|Oberklettgau
 CH.SH.RE|RE|Reiat
 CH.SH.SH|SH|Schaffhausen

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 590x600
 
 
 
-{% embed_spec_map yambol-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BO|Bolyarovo
 02|EL|Elhovo
 03|ST|Straldzha

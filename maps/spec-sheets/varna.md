@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x600
 
 
 
-{% embed_spec_map varna-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|AK|Aksakovo
 01|AV|Avren
 03|BE|Beloslav

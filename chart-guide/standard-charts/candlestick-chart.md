@@ -58,7 +58,7 @@ In the JSON data:
 
 * Set the `volume` attribute to specify the volume of the transaction. To render the volume chart, specify the value to this attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=candlestick) page of candlestick chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=candlestick) page of candlestick chart.
 
 Refer to the code below:
 

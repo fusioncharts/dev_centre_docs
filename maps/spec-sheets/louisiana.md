@@ -9,12 +9,12 @@ Dimensions (Width x Height): 701x601
 
 
 
-{% embed_spec_map louisiana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AC|Acadia
 003|AL|Allen
 005|AS|Ascension

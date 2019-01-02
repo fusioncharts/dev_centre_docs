@@ -12,7 +12,7 @@ The **restore** and **submit** button in select-scatter and drag-able chart has 
 
 The options menu looks like shown below:
 
-![Change Axis Limits]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-1.gif)
+![Change Axis Limits](/gif/standard-charts-drag-able-charts-gif-1.gif)
 
 Following is the list of attributes which have been replaced with new ones:
 
@@ -77,7 +77,7 @@ npm install angular-fusioncharts --save
 
 Since, v3.13.0 the FusionCharts Suite XT download package folder structure is updated. The downloaded package will now contain a folder named **integrations**. This folder consists all the front end and server side wrappers under respective folders with their native export handlers if applicable. The folder structure of the downloaded package is shown below:
 
-![Folder Structure]({% site.baseurl %}/gif/upgrading-plugins.gif)
+![Folder Structure](/gif/upgrading-plugins.gif)
 
 ## Removed Attributes and Methods
 

@@ -10,12 +10,12 @@ Dimensions (Width x Height): 450x330
 
 
 
-{% embed_spec_map bihar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.BR.AR|AR|Araria
 IN.BR.AW|AW|Arwal
 IN.BR.AU|AU|Aurangabad

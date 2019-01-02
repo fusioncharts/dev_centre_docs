@@ -9,12 +9,12 @@ Dimensions (Width x Height): 390x490
 
 
 
-{% embed_spec_map sachsenanhalt-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.ST.AS|AS|Altmarkkreis Salzwedel
 DE.ST.AB|AB|Anhalt Bitterfeld
 DE.ST.BU|BU|Burgenlandkreis

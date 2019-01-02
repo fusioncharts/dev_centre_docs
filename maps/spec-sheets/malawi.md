@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x610
 
 
 
-{% embed_spec_map malawi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MW.BA|BA|Balaka
 MW.BL|BL|Blantyre
 MW.CK|CK|Chikwawa

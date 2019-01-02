@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map edirne-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.ED.ED | ED | Edirne
 TR.ED.EN | EN | Enez
 TR.ED.HA | HA | Havsa

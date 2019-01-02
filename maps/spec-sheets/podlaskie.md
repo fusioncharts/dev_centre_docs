@@ -9,12 +9,12 @@ Dimensions (Width x Height): 351x510
 
 
 
-{% embed_spec_map podlaskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.PD.AU|AU|Augustowski
 PL.PD.BI|BI|Bialostocki
 PL.PD.BM|BM|Bialystok

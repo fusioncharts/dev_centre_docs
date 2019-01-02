@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map duarte-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.DU.AR|AR|Arenoso
 DO.DU.CA|CA|Castillo
 DO.DU.HO|HO|Eugenio Maria de Hostos

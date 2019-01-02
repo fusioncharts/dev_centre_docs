@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x450
 
 
 
-{% embed_spec_map texasareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 210|210|210
 214|214-469-972|214-469-972
 254|254|254

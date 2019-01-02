@@ -51,9 +51,9 @@ Given below is the brief description of the attributes used to enable server-sid
 	</tbody>
 </table>
 
-When exporting has been enabled for a chart, the chart is rendered with the export menu button, seen in the top right corner of the chart. Click/hover over the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> button to display the export menu.
+When exporting has been enabled for a chart, the chart is rendered with the export menu button, seen in the top right corner of the chart. Click/hover over the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> button to display the export menu.
 
-![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-menu.jpg)
+![image](/images/exporting-as-image-and-pdf-export-menu.jpg)
 
 A live chart with server-side exporting enabled is shown below:
 

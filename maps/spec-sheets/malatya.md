@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map malatya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.ML.AK | AK | Akçadağ
 TR.ML.AP | AP | Arapgir
 TR.ML.AV | AV | Arguvan

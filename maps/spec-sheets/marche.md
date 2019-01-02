@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x440
 
 
 
-{% embed_spec_map marche-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.AN|AN|Ancona
 IT.AC|AC|Ascoli Piceno
 IT.FM|FM|Fermo

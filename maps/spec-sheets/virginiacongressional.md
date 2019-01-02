@@ -9,12 +9,12 @@ Dimensions (Width x Height): 880x400
 
 
 
-{% embed_spec_map virginiacongressional-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 10|10th|10th district
 11|11th|11th district
 1|1st|1st district

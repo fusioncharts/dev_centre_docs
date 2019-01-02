@@ -9,12 +9,12 @@ Dimensions (Width x Height): 596x497
 
 
 
-{% embed_spec_map lovech-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AP|Apriltsi
 02|LE|Letnitsa
 03|LO|Lovech

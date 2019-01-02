@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x500
 
 
 
-{% embed_spec_map shimane-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Gotsu
 002|002|Hamada
 003|003|Izumo

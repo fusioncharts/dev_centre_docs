@@ -9,12 +9,12 @@ Dimensions (Width x Height): 440x590
 
 
 
-{% embed_spec_map cameroon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CM.AD|AD|Adamaoua
 CM.CE|CE|Centre
 CM.ES|ES|Est

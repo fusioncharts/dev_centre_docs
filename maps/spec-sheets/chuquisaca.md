@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x340
 
 
 
-{% embed_spec_map chuquisaca-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BO.CQ.AZ|AZ|Azurduy
 BO.CQ.BB|BB|Belisario Boeto
 BO.CQ.HS|HS|Hernando Siles

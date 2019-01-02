@@ -9,12 +9,12 @@ Dimensions (Width x Height): 390x230
 
 
 
-{% embed_spec_map uzbekistan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.AN|AN|Andijon
 UZ.BU|BU|Buxoro
 UZ.FA|FA|Fargona

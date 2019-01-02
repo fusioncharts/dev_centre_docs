@@ -9,12 +9,12 @@ Dimensions (Width x Height): 405x235
 
 
 
-{% embed_spec_map mexico-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AG|Aguascalientes
 002|BA|Baja California
 003|BC|Baja California Sur

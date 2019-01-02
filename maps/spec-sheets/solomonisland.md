@@ -9,12 +9,12 @@ Dimensions (Width x Height): 580x276
 
 
 
-{% embed_spec_map solomonisland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SB.CN|CN|Central
 SB.CH|CH|Choiseul
 SB.GC|GC|Guadalcanal

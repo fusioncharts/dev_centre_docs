@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map Cuba-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 05|CM|Camagüey
 07|CA|Ciego de Ávila
 08|CF|Cienfuegos

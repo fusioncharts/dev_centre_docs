@@ -9,11 +9,11 @@ Dimensions (Width x Height): 308x452
 
 
 
-{% embed_spec_map oslo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.OS.OS|OS|Oslo
 

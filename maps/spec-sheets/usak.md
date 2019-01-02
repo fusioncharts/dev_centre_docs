@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map usak-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.US.BA | BA | Banaz
 TR.US.ES | ES | Eşme
 TR.US.KA | KA | Karahallı

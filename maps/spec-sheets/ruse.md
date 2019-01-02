@@ -9,12 +9,12 @@ Dimensions (Width x Height): 595x575
 
 
 
-{% embed_spec_map ruse-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BO|Borovo
 02|BY|Byala
 04|DM|Dve Mogili

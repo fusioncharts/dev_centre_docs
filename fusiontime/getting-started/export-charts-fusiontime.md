@@ -16,17 +16,17 @@ When charts are exported on the client side, the entire exporting process is car
 
 Thr dropdown menu with export options looks like as shown below:
 
-<img src="{% site.baseurl %}/images/fusiontime-export-charts.png" alt="Export Time Series" width="700" height="420">
+<img src="{% site.BASE_URL %}/images/fusiontime-export-charts.png" alt="Export Time Series" width="700" height="420">
 
 To enable export:
 
 * Set the `exportEnabled` attribute to `1` under chart level.
 
-* The <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart.
+* The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart.
 
 Hover over this button to see the dropdown menu with export options. From the menu, select the required format. The chart is exported to your machine in the selected format.
 
-A time-series chart with export enabled is shown below. Hover over the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the required export format.
+A time-series chart with export enabled is shown below. Hover over the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the required export format.
 
 {% embed_ftChart online-sales-single-series-export-chart %}
 

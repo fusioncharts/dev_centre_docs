@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map atlantico-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.AT.BO|BO|Baranoa
 CO.AT.BQ|BQ|Barranquilla
 CO.AT.CC|CC|Campo de la Cruz

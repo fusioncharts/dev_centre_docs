@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northcentral-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 VN.NC.HT|HT|Hà Tĩnh
 VN.NC.NA|NA|Nghệ An
 VN.NC.QB|QB|Quảng Bình

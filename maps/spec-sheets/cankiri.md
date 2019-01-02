@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map cankiri-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.CI.AT | AT | Atkaracalar
 TR.CI.BA | BA | Bayramören
 TR.CI.CI | CI | Çankırı

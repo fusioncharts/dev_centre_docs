@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -688,14 +688,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -1590,192 +1591,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		    <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			  <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='TR' x='230.86' y='411.41' label='Trenton' labelPos='Right'  />
-			<marker id='01' x='352.41' y='79.42' label='Ringwood' labelPos='right'  />
-			<marker id='02' x='366.72' y='121.3' label='Ramsey' labelPos='right'  />
-			<marker id='03' x='256.39' y='53.88' label='Sussex'  />
-			<marker id='04' x='220.64' y='74.31' label='Branchville'  />
-			<marker id='05' x='257.41' y='90.65' label='Franklin'  />
-			<marker id='06' x='234.94' y='110.06' label='Sparta' labelPos='left'  />
-			<marker id='07' x='301.34' y='138.66' label='Pompton Lakes'  />
-			<marker id='08' x='375.91' y='155.01' label='Ridgewood' labelPos='bottom'  />
-			<marker id='09' x='351.39' y='185.65' label='Patelson' labelPos='left'  />
-			<marker id='10' x='356.5' y='197.91' label='Clifton' labelPos='left'  />
-			<marker id='11' x='390.21' y='196.89' label='Hackensack' labelPos='right'  />
-			<marker id='12' x='365.69' y='213.23' label='Passaic' labelPos='right'  />
-			<marker id='13' x='333.01' y='232.64' label='E Orange' labelPos='left'  />
-			<marker id='14' x='406.55' y='239.79' label='Union City' labelPos='right'  />
-			<marker id='15' x='397.36' y='254.09' label='Jersey City' labelPos='right'  />
-			<marker id='16' x='363.65' y='245.92' label='Newark'  />
-			<marker id='17' x='342.2' y='253.07' label='Union' labelPos='left'  />
-			<marker id='18' x='363.65' y='271.46' label='Elizabeth' labelPos='left'  />
-			<marker id='19' x='353.44' y='293.93' label='Linden' labelPos='right'  />
-			<marker id='20' x='316.66' y='310.28' label='Plainfield'  />
-			<marker id='21' x='355.48' y='314.36' label='Perth Amboy' labelPos='right'  />
-			<marker id='24' x='391.23' y='340.92' label='Hazlet' labelPos='left'  />
-			<marker id='25' x='417.79' y='368.5' label='Red Bank'  />
-			<marker id='27' x='434.13' y='387.91' label='Long Branch' labelPos='top'  />
-			<marker id='26' x='425.96' y='413.45' label='Asbury Park' labelPos='left'  />
-			<marker id='28' x='418.81' y='441.03' label='Belmar'  />
-			<marker id='29' x='408.6' y='488.02' label='Point Pleasant' labelPos='left'  />
-			<marker id='30' x='396.34' y='522.75' label='Toms River' labelPos='left'  />
-			<marker id='31' x='390.21' y='572.8' label='Forked River'  />
-			<marker id='34' x='366.72' y='618.77' label='Tuclerton' labelPos='left'  />
-			<marker id='35' x='358.54' y='642.27' label='Mystic Islands' labelPos='left'  />
-			<marker id='37' x='311.55' y='700.49' label='Pleasantville' labelPos='left'  />
-			<marker id='67' x='286.02' y='721.94' label='Somers Point' labelPos='left'  />
-			<marker id='38' x='273.76' y='747.48' label='Ocean City' labelPos='right'  />
-			<marker id='39' x='240.05' y='783.23' label='Sea Isle City' labelPos='right'  />
-			<marker id='40' x='223.7' y='821.03' label='Stone Harbour' labelPos='right'  />
-			<marker id='41' x='174.67' y='857.8' label='Cape May' labelPos='left'  />
-			<marker id='42' x='182.84' y='821.03' label='Villas' labelPos='left'  />
-			<marker id='43' x='147.09' y='748.5' label='Port Norris' labelPos='left'  />
-			<marker id='44' x='110.32' y='722.97' label='Newport' labelPos='right'  />
-			<marker id='45' x='126.66' y='693.34' label='Millville' labelPos='right'  />
-			<marker id='47' x='96.02' y='677' label='Bridgeton' labelPos='left'  />
-			<marker id='52' x='66.39' y='657.59' label='Shiloh' labelPos='left'  />
-			<marker id='53' x='34.73' y='641.25' label='Salem' labelPos='left'  />
-			<marker id='55' x='144.03' y='637.16' label='Elmer' labelPos='left'  />
-			<marker id='56' x='119.51' y='617.75' label='Woodstown' labelPos='left'  />
-			<marker id='57' x='138.92' y='590.17' label='Glassboro' labelPos='right'  />
-			<marker id='58' x='132.79' y='539.09' label='Woodbury' labelPos='left'  />
-			<marker id='59' x='128.7' y='522.75' label='Gloucester City' labelPos='left'  />
-			<marker id='60' x='149.13' y='515.6' label='Cherry Hill' labelPos='right'  />
-			<marker id='61' x='149.13' y='495.17' label='Camden' labelPos='right'  />
-			<marker id='62' x='231.88' y='570.76' label='Berlin' labelPos='left'  />
-			<marker id='63' x='211.45' y='593.23' label='Williamstown' labelPos='right'  />
-			<marker id='36' x='247.2' y='624.9' label='Hammonton' labelPos='right'  />
-			<marker id='64' x='277.84' y='660.65' label='Egg Harbor City' labelPos='left'  />
-			<marker id='66' x='312.58' y='558.5' label='Chatsworth'  />
-			<marker id='68' x='171.61' y='488.02' label='Moorestown' labelPos='left'  />
-			<marker id='69' x='238.01' y='481.89' label='Mt Holy' labelPos='right'  />
-			<marker id='65' x='220.64' y='470.65' label='Willingboro' labelPos='right'  />
-			<marker id='70' x='220.64' y='448.18' label='Burlington' labelPos='left'  />
-			<marker id='71' x='344.24' y='509.47' label='Lakehurst' labelPos='left'  />
-			<marker id='72' x='359.56' y='469.63' label='Lakewood' labelPos='left'  />
-			<marker id='73' x='394.3' y='423.66' label='Neptune' labelPos='left'  />
-			<marker id='74' x='356.5' y='398.13' label='Freehold'  />
-			<marker id='75' x='277.84' y='398.13' label='E.Windsor' labelPos='left'  />
-			<marker id='76' x='250.26' y='364.42' label='Princeton' labelPos='left'  />
-			<marker id='77' x='175.69' y='351.14' label='Lambertville' labelPos='left'  />
-			<marker id='79' x='144.03' y='293.93' label='Frenchtown' labelPos='left'  />
-			<marker id='82' x='357.52' y='333.77' label='Sayreville' labelPos='left'  />
-			<marker id='85' x='278.87' y='317.43' label='New Brunswick' labelPos='left'  />
-			<marker id='88' x='246.18' y='288.83' label='Somerville' labelPos='left'  />
-			<marker id='89' x='154.24' y='220.38' label='Washington' labelPos='left'  />
-			<marker id='90' x='139.94' y='193.83' label='Belvidere' labelPos='left'  />
-			<marker id='92' x='139.94' y='158.07' label='Columbia' labelPos='left'  />
-			<marker id='95' x='185.91' y='132.54' label='Newton' labelPos='left'  />
-			<marker id='94' x='258.44' y='185.65' label='Dover'  />
-			<marker id='96' x='281.93' y='224.47' label='Morristown' labelPos='left'  />
-			<marker id='97' x='260.48' y='241.84' label='Mendha m' labelPos='left'  />
-			<marker id='98' x='297.25' y='228.56' label='Madison'  />
-
-		</definition>
-		<application>
-			<marker id='TR' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='24' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='27' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-			<marker id='28' shapeId='newCustomShape'  />
-			<marker id='29' shapeId='newCustomShape'  />
-			<marker id='30' shapeId='newCustomShape'  />
-			<marker id='31' shapeId='newCustomShape'  />
-			<marker id='34' shapeId='newCustomShape'  />
-			<marker id='35' shapeId='newCustomShape'  />
-			<marker id='37' shapeId='newCustomShape'  />
-			<marker id='67' shapeId='newCustomShape'  />
-			<marker id='38' shapeId='newCustomShape'  />
-			<marker id='39' shapeId='newCustomShape'  />
-			<marker id='40' shapeId='newCustomShape'  />
-			<marker id='41' shapeId='newCustomShape'  />
-			<marker id='42' shapeId='newCustomShape'  />
-			<marker id='43' shapeId='newCustomShape'  />
-			<marker id='44' shapeId='newCustomShape'  />
-			<marker id='45' shapeId='newCustomShape'  />
-			<marker id='47' shapeId='newCustomShape'  />
-			<marker id='52' shapeId='newCustomShape'  />
-			<marker id='53' shapeId='newCustomShape'  />
-			<marker id='55' shapeId='newCustomShape'  />
-			<marker id='56' shapeId='newCustomShape'  />
-			<marker id='57' shapeId='newCustomShape'  />
-			<marker id='58' shapeId='newCustomShape'  />
-			<marker id='59' shapeId='newCustomShape'  />
-			<marker id='60' shapeId='newCustomShape'  />
-			<marker id='61' shapeId='newCustomShape'  />
-			<marker id='62' shapeId='newCustomShape'  />
-			<marker id='63' shapeId='newCustomShape'  />
-			<marker id='36' shapeId='newCustomShape'  />
-			<marker id='64' shapeId='newCustomShape'  />
-			<marker id='66' shapeId='newCustomShape'  />
-			<marker id='68' shapeId='newCustomShape'  />
-			<marker id='69' shapeId='newCustomShape'  />
-			<marker id='65' shapeId='newCustomShape'  />
-			<marker id='70' shapeId='newCustomShape'  />
-			<marker id='71' shapeId='newCustomShape'  />
-			<marker id='72' shapeId='newCustomShape'  />
-			<marker id='73' shapeId='newCustomShape'  />
-			<marker id='74' shapeId='newCustomShape'  />
-			<marker id='75' shapeId='newCustomShape'  />
-			<marker id='76' shapeId='newCustomShape'  />
-			<marker id='77' shapeId='newCustomShape'  />
-			<marker id='79' shapeId='newCustomShape'  />
-			<marker id='82' shapeId='newCustomShape'  />
-			<marker id='85' shapeId='newCustomShape'  />
-			<marker id='88' shapeId='newCustomShape'  />
-			<marker id='89' shapeId='newCustomShape'  />
-			<marker id='90' shapeId='newCustomShape'  />
-			<marker id='92' shapeId='newCustomShape'  />
-			<marker id='95' shapeId='newCustomShape'  />
-			<marker id='94' shapeId='newCustomShape'  />
-			<marker id='96' shapeId='newCustomShape'  />
-			<marker id='97' shapeId='newCustomShape'  />
-			<marker id='98' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

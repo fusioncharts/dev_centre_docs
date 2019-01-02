@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map maidanwardak-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.VR.CH|CH|Chaki Wardak
 AF.VR.MS|MS|Maydan Shahr
 AF.VR.NI|NI|Nirkh

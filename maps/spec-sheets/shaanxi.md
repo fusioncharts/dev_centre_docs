@@ -9,12 +9,12 @@ Dimensions (Width x Height): 286x485
 
 
 
-{% embed_spec_map shaanxi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|AK|Ankang
 3|BJ|Baoji
 4|HZ|Hanzhong

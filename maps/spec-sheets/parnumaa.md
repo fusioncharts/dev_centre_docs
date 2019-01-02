@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x600
 
 
 
-{% embed_spec_map parnumaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 03|AR|Are
 04|AU|Audru
 05|HL|Halinga

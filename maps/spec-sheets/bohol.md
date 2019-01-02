@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map bohol-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.BO.AB | AB | Alburquerque
 PH.BO.AI | AI | Alicia
 PH.BO.AD | AD | Anda

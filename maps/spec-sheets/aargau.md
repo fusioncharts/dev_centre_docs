@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map aargau-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.AG.AA|AA|Aarau
 CH.AG.BA|BA|Baden
 CH.AG.BG|BG|Bremgarten

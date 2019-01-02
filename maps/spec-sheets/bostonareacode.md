@@ -9,12 +9,12 @@ Dimensions (Width x Height): 388x300
 
 
 
-{% embed_spec_map bostonareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 339-781|339-781|339-781
 351-978|351-978|351-978
 508-774|508-774|508-774

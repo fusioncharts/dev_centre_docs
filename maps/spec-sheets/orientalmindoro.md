@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map orientalmindoro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.MR.BC | BC | Baco
 PH.MR.BN | BN | Bansud
 PH.MR.BO | BO | Bongabong

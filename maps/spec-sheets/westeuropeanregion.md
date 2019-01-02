@@ -9,12 +9,12 @@ Dimensions (Width x Height): 130x150
 
 
 
-{% embed_spec_map westeuropeanregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BE|Belgium
 02|FR|France
 03|LU|Luxembourg

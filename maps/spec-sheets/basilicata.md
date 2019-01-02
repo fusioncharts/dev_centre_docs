@@ -9,12 +9,12 @@ Dimensions (Width x Height): 440x470
 
 
 
-{% embed_spec_map basilicata-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.MT|MT|Matera
 IT.PZ|PZ|Potenza
 

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 570x590
 
 
 
-{% embed_spec_map libya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LY.AJ|AJ|Ajdabiya
 LY.BU|BU|Al Butnan
 LY.HZ|HZ|Al Hizam al Akhdar

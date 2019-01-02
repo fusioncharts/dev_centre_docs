@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -169,14 +169,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -348,63 +349,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='BI.BB'  />
-		<entity id='BI.BM'  />
-		<entity id='BI.BU'  />
-		<entity id='BI.BR'  />
-		<entity id='BI.CA'  />
-		<entity id='BI.CI'  />
-		<entity id='BI.GI'  />
-		<entity id='BI.KR'  />
-		<entity id='BI.KY'  />
-		<entity id='BI.KI'  />
-		<entity id='BI.MA'  />
-		<entity id='BI.MV'  />
-		<entity id='BI.MY'  />
-		<entity id='BI.MW'  />
-		<entity id='BI.NG'  />
-		<entity id='BI.RT'  />
-		<entity id='BI.RY'  />
-	</data>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillcolor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-			<marker id='BJ' x='111.47' y='243' label='Bujumbura'  />
-			<marker id='01' x='121.7' y='339.13' label='Bururi' labelPos='right'  />
-			<marker id='02' x='38.86' y='117.2' label='Cibitoke' labelPos='right'  />
-			<marker id='03' x='95.11' y='168.34' label='Bubanza' labelPos='right'  />
-			<marker id='04' x='232.15' y='133.56' label='Ngozi' labelPos='bottom'  />
-			<marker id='05' x='320.11' y='135.61' label='Muyinga' labelPos='left'  />
-			<marker id='06' x='212.72' y='270.61' label='Gitega' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='BJ' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

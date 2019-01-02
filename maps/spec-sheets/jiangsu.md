@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x505
 
 
 
-{% embed_spec_map jiangsu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|CH|Changzhou
 3|HU|Huai'an
 4|LI|Lianyungang

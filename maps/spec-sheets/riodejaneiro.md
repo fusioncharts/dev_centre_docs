@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x359
 
 
 
-{% embed_spec_map riodejaneiro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 3300100|AR|Angra dos Reis
 3300159|AP|Aperibé
 3300209|AR|Araruama

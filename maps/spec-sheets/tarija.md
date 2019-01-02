@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x340
 
 
 
-{% embed_spec_map tarija-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BO.TR.AA|AA|Aniceto Arce
 BO.TR.OC|OC|Burdett O'Connor
 BO.TR.CE|CE|Cercado

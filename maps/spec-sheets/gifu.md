@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x500
 
 
 
-{% embed_spec_map gifu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Ena
 002|002|Gero
 003|003|Gifu

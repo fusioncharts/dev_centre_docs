@@ -9,12 +9,12 @@ Dimensions (Width x Height): 408x512
 
 
 
-{% embed_spec_map jiangxi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|FU|Fuzhou
 3|GA|Ganzhou
 4|JI|Ji'an

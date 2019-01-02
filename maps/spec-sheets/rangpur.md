@@ -9,12 +9,12 @@ Dimensions (Width x Height): 431x600
 
 
 
-{% embed_spec_map rangpur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BD.RP.DJ|DJ|Dinajpur District
 BD.RP.GB|GB|Gaibandha District
 BD.RP.KR|KR|Kurigram District

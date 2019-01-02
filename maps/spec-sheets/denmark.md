@@ -9,12 +9,12 @@ Dimensions (Width x Height): 683x536
 
 
 
-{% embed_spec_map denmark-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 002|BO|Bornholm
 003|FR|Frederiksberg
 004|FE|Frederiksborg

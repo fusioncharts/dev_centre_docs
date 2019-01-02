@@ -9,12 +9,12 @@ Dimensions (Width x Height): 565x401
 
 
 
-{% embed_spec_map bulgaria-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 38|E|Blagoevgrad
 39|A|Burgas
 40|TX|Dobrich

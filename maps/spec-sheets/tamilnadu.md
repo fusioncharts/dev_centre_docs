@@ -10,12 +10,12 @@ Dimensions (Width x Height): 370x470
 
 
 
-{% embed_spec_map tamilnadu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.TN.CU|CU|Cuddalore
 IN.TN.CO|CO|Coimbatore
 IN.TN.DH|DH|Dharmapuri

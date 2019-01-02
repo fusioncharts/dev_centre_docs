@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map sanctispiritus-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.SS.CA|CA|Cabaiguán
 CU.SS.FO|FO|Fomento
 CU.SS.JA|JA|Jatibonico

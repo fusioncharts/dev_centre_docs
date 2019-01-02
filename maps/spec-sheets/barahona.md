@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map barahona-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.BH.CA|CA|Cabral
 DO.BH.EP|EP|El Peñón
 DO.BH.EN|EN|Enriquillo

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 579x600
 
 
 
-{% embed_spec_map hordaland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.HO.AS|AS|Askøy
 NO.HO.AV|AV|Austevoll
 NO.HO.AH|AH|Austrheim

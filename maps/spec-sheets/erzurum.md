@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map erzurum-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.EM.AZ | AZ | Aziziye
 TR.EM.PA | PA | Palandöken
 TR.EM.YA | YA | Yakutiye

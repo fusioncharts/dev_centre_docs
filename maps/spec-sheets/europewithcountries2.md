@@ -8,12 +8,12 @@ Map Name: Europewithcountries2
 Dimensions (Width x Height): 351x592
 
 
-{% embed_spec_map europewithcountries2-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 126|Angl|Anglesey
 108|Argl|Argyl & Bute
 110|Ayrs|Ayrshire and Lanark

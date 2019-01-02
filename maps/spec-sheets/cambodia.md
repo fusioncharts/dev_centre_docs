@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x350
 
 
 
-{% embed_spec_map cambodia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KH.OM|OM|Banteay Meanchey
 KH.BA|BA|Battambang
 KH.KM|KM|Kampong Cham

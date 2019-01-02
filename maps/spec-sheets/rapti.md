@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map rapti-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.RA.DA|DA|Dang
 NP.RA.PY|PY|Pyuthan
 NP.RA.RO|RO|Rolpa

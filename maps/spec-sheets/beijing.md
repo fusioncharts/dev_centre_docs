@@ -9,12 +9,12 @@ Dimensions (Width x Height): 515x515
 
 
 
-{% embed_spec_map beijing-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 11|CP|Changping
 3|CY|Chaoyang
 12|DA|Daxing

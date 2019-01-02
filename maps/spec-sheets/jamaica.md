@@ -9,12 +9,12 @@ Dimensions (Width x Height): 411x170
 
 
 
-{% embed_spec_map jamaica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CL|Clarendon
 02|HA|Hanover
 17|KI|Kingston

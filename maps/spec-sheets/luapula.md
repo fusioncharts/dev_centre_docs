@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map luapula-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.LP.CM|CM|Chembe District
 ZM.LP.CE|CE|Chiengi District
 ZM.LP.CH|CH|Chipili District

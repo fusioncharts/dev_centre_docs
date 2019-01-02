@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -118,14 +118,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -234,46 +235,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	</shapes>
-		<definition>
-			<marker id='TR' x='65.94' y='172.11' label='Tirana' labelPos='right' />
-			<marker id='EL' x='83.82' y='210.11' label='Elbasan'  />
-			<marker id='SH' x='32.41' y='80.47' label='Shkoder '  />
-			<marker id='KO' x='154.23' y='262.64' label='Korce'  />
-			<marker id='SA' x='81.58' y='371.05' label='Sarande'  />
-			<marker id='DR' x='23.47' y='176.58' label='Durres '  />
-			<marker id='VL' x='30.17' y='292.82' label='Vlore '  />
-			<marker id='SG' x='38' y='109.52' label='Shengjin'  />
-		</definition>
-		<application>
-			<marker id='TR' shapeId='myCustomShape'  />
-			<marker id='EL' shapeId='newCustomShape'  />
-			<marker id='SH' shapeId='newCustomShape'  />
-			<marker id='KO' shapeId='newCustomShape'  />
-			<marker id='SA' shapeId='newCustomShape'  />
-			<marker id='DR' shapeId='newCustomShape'  />
-			<marker id='VL' shapeId='newCustomShape'  />
-			<marker id='SG' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

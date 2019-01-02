@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map nationalcapitalregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.NC.CA | CA | Caloocan
 PH.NC.LP | LP | Las Piñas
 PH.NC.MA | MA | Makati

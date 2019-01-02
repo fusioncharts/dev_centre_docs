@@ -10,12 +10,12 @@ Dimensions (Width x Height): 300x225
 
 
 
-{% embed_spec_map northgyeongsang-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AD|Andong
 02|BC|Bonghwa County
 03|CC|Cheongdo County

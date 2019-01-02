@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map tashkentcity-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.TK.BE|BE|BE|Bektemir
 UZ.TK.CH|CH|CH|Chilanzar
 UZ.TK.HA|HA|HA|Hamza

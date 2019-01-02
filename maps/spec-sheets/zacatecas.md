@@ -9,12 +9,12 @@ Dimensions (Width x Height): 480x590
 
 
 
-{% embed_spec_map zacatecas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.ZA.AZ|AZ|Apozol
 MX.ZA.AL|AL|Apulco
 MX.ZA.AT|AT|Atolinga

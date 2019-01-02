@@ -9,12 +9,12 @@ Dimensions (Width x Height): 613x586
 
 
 
-{% embed_spec_map chongqing-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 7|BN|Banan
 8|BB|Beibei
 10|BS|Bishan

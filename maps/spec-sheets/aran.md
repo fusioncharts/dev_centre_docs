@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x460
 
 
 
-{% embed_spec_map aran-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AC|AC|Aghjabadi
 AS|AS|Aghdash
 AB|AB|Shirvan

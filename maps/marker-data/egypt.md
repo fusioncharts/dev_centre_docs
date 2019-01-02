@@ -200,10 +200,10 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <p class='text-success'>New JSON format for map marker data.</p>
 </div>
-
 <div class='tab old-json-tab'>
 <pre><code class="language-json">
 {
@@ -428,65 +428,12 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 	<p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 </div>
 
-<div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		    <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			<shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='CA' x='236.77' y='72.45' label='Cairo' labelPos='right'  />
-			<marker id='01' x='271.42' y='36.75' label='Port Said' labelPos='bottom'  />
-			<marker id='02' x='252.52' y='28.35' label='Damietta' labelPos='right'  />
-			<marker id='03' x='189.52' y='37.8' label='Alexandria'  />
-			<marker id='04' x='98.17' y='31.5' label='Marsa Matruh'  />
-			<marker id='05' x='37.27' y='90.3' label='Siwah'  />
-			<marker id='06' x='225.22' y='60.9' label='Tanta' labelPos='left'  />
-			<marker id='07' x='231.52' y='91.35' label='Al Jizah' labelPos='left' />
-			<marker id='09' x='334.42' y='164.85' label='Sharm ash Shaykh' labelpos='left' />
-			<marker id='10' x='276.67' y='112.35' label='Suez' labelPos='right'  />
-			<marker id='11' x='324.97' y='208.95' label='Bur Safajah' labelPos='left'  />
-			<marker id='08' x='315.52' y='187.95' label='Al Ghardaqah' labelpos='right' />
-			<marker id='12' x='288.22' y='261.45' label='Luxor' labelPos='right'  />
-			<marker id='13' x='293.47' y='331.8' label='Aswan' labelPos='right'  />
-			<marker id='14' x='174.82' y='277.2' label='Al Kharijah' labelPos='left' />
-			<marker id='15' x='231.52' y='194.25' label='Asyut' labelPos='right'  />
-			<marker id='16' x='219.97' y='144.9' label='Al Minya' labelPos='left'  />
-			<marker id='17' x='224.17' y='122.85' label='Bani Suwayf' labelPos='left'  />
 
-		</definition>
-		<application>
-			<marker id='CA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'/>
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-	<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-</div>
 </div>
 </div>
 </div>

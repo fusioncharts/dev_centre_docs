@@ -9,12 +9,12 @@ Dimensions (Width x Height): 630x450
 
 
 
-{% embed_spec_map mecklenburgvorpommern-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.MV.MV.MS|MS|Mecklenburgische Seenplatte
 DE.MV.MV.MR|MR|Mittleres Mecklenburg Rostock
 DE.MV.MV.NR|NR|Nordvorpommern Rügen

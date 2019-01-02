@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map tov-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.TO.AL | AL | Altanbulag
 MN.TO.AG | AG | Argalant
 MN.TO.AH | AH | Arkhust

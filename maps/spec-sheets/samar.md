@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map samar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.SM.AM | AM | Almagro
 PH.SM.BS | BS | Basey
 PH.SM.CA | CA | Calbayog

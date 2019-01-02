@@ -10,12 +10,12 @@ Dimensions (Width x Height): 2194x1120
 
 
 
-{% embed_spec_map worldwithcountries-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AG|Antigua and Barbuda
 02|BS|Bahamas
 03|BB|Barbados

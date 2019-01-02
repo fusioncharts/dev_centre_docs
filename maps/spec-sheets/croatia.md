@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x510
 
 
 
-{% embed_spec_map croatia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BB|Bjelovarsko-Bilogorska
 02|SP|Brodsko-Posavska
 03|DN|Dubrovako-Neretvanska

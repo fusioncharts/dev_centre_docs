@@ -9,12 +9,12 @@ Dimensions (Width x Height): 431x442
 
 
 
-{% embed_spec_map marseille-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.MS.X|X|10th Arrondissement
 FR.MS.XI|XI|11th Arrondissement
 FR.MS.XII|XII|12th Arrondissement

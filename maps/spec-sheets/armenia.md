@@ -9,12 +9,12 @@ Dimensions (Width x Height): 490x500
 
 
 
-{% embed_spec_map armenia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AG|Aragatsotn
 02|AR|Ararat
 03|AV|Armavir

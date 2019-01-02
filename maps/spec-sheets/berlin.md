@@ -9,12 +9,12 @@ Dimensions (Width x Height): 810x610
 
 
 
-{% embed_spec_map berlin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.BE.CW|CW|Charlottenburg Wilmersdorf
 DE.BE.FK|FK|Friedrichshain Kreuzberg
 DE.BE.LI|LI|Lichtenberg

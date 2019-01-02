@@ -9,12 +9,12 @@ Dimensions (Width x Height): 564x890
 
 
 
-{% embed_spec_map indiana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adams
 003|AL|Allen
 005|BA|Bartholomew

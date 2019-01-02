@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map koshi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.KO.BJ|BJ|Bhojpur
 NP.KO.DK|DK|Dhankuta
 NP.KO.MO|MO|Morang

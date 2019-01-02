@@ -9,12 +9,12 @@ Dimensions (Width x Height): 895x498
 
 
 
-{% embed_spec_map world8withantarctica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 03|AF|Africa
 09|AT|Antarctica
 01|AS|Asia

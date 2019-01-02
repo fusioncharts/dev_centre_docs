@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x200
 
 
 
-{% embed_spec_map panama-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PA.BC|BC|Bocas del Toro
 PA.CH|CH|Chiriqui
 PA.CC|CC|Cocle

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map tarlac-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.TR.AA | AA | Anao
 PH.TR.BM | BM | Bamban
 PH.TR.CM | CM | Camiling

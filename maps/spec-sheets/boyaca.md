@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map boyaca-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.BY.AL|AL|Almeida
 CO.BY.AQ|AQ|Aquitania
 CO.BY.AR|AR|Arcabuco

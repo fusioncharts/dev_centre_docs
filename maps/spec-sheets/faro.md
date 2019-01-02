@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x230
 
 
 
-{% embed_spec_map faro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.FA.AB|AB|Albufeira
 PT.FA.AC|AC|Alcoutim
 PT.FA.AJ|AJ|Aljezur

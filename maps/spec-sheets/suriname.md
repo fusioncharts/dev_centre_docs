@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x420
 
 
 
-{% embed_spec_map suriname-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 10|BR|Brokopondo
 11|CM|Commewijne
 12|CR|Coronie

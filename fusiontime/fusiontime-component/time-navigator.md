@@ -8,7 +8,7 @@ In FusionTime, the time navigator facilitates you to focus on details in a speci
 
 The time navigator is shown in the image below:
 
-<img src="{% site.baseurl %}/images/fusiontime-component-time-navigator.png"> 
+<img src="{% site.BASE_URL %}/images/fusiontime-component-time-navigator.png"> 
 
 The major features of **Time Navigator** include the following:
 
@@ -32,19 +32,19 @@ In this article, we will discuss about the different interactions of the time na
 
 You can use the handles on either side to select a time period. The data plot in the canvas zooms in/out respectively. This behavior is also applicable when you zoom in/out from the chart canvas, i.e., with the interaction in the chart canvas the time navigator gets updated accordingly. Refer to the image below: 
 
-![Zoom using Time navigator]({% site.baseurl %}/gif/fusiontime-nav-zoom.gif)
+![Zoom using Time navigator](/gif/fusiontime-nav-zoom.gif)
 
 ## Pan the active window
 
 You can pan the active window across the time navigator and see the data plots in the canvas update accordingly. Refer to the image below:
 
-![Pan using Time navigator]({% site.baseurl %}/gif/fusiontime-nav-pan.gif)
+![Pan using Time navigator](/gif/fusiontime-nav-pan.gif)
 
 ## Active window labels 
 
 When you hover the mouse pointer on the active window of the time navigator, the time labels appear on  the both the ends of the active window showing the start date/time and the end date/time. You can drag these labels to change the active window. Refer to the image below:
 
-![Time navigator labels]({% site.baseurl %}/gif/fusiontime-nav-labels.gif)
+![Time navigator labels](/gif/fusiontime-nav-labels.gif)
 
 ## Show/Hide Time Navigator
 

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 574x600
 
 
 
-{% embed_spec_map westnorthcentraldma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 637|CED-IA|CEDAR RAPIDS-WTRLO-IWC&DUB
 604|COL-MO|COLUMBIA-JEFFERSON CITY
 682|DAV-IA|DAVENPORT-R.ISLAND-MOLINE

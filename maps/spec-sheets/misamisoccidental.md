@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map misamisoccidental-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.MD.AO | AO | Aloran
 PH.MD.BL | BL | Baliangao
 PH.MD.BN | BN | Bonifacio

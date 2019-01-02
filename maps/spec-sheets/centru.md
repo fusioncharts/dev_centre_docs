@@ -9,12 +9,12 @@ Dimensions (Width x Height): 308x198
 
 
 
-{% embed_spec_map centru-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RO.AB|AB|Alba
 RO.BV|BV|Braşov
 RO.CV|CV|Covasna

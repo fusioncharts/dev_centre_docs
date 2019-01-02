@@ -18,7 +18,7 @@ Click [here](http://jsfiddle.net/fusioncharts/MWnVr/) to edit the above gauge.
 
 In the image below, you can see the basic elements of a cylinder gauge:
 
-![Cylinder-gauge]({% site.baseurl %}/images/cylinder-gauge-introduction-1.jpg)
+![Cylinder-gauge](/images/cylinder-gauge-introduction-1.jpg)
 
 ### Cylinder fill
 
@@ -352,7 +352,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-![Cylinder]({% site.baseurl %}/gif/gauges-and-widgets-cylinder.gif)
+![Cylinder](/gif/gauges-and-widgets-cylinder.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/cSkE3/) to edit the above gauge.
 

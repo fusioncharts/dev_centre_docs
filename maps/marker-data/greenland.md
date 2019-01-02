@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -157,14 +157,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -327,57 +328,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		     <shape id='myCustomshape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomshape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='NU' x='71.3' y='421.91' label='Nuuk(Godthab)' labelpos='right' />
-			<marker id='01' x='227.33' y='26.14' label='Nord'  />
-			<marker id='02' x='111.6' y='509.74' label='Narsarsuaq'  />
-			<marker id='03' x='36.16' y='148.07' label='Qaanaaq(Thule)'  />
-			<marker id='04' x='253.16' y='135.67' label='Danmark Havn'  />
-			<marker id='05' x='286.23' y='278.27' label='Ittoqqortoormlit' labelPos='left' />
-			<marker id='06' x='82.66' y='318.57' label='Qeqertarsuaq' labelPos='right' />
-			<marker id='07' x='66.13' y='354.74' label='Sisimiut'  />
-			<marker id='08' x='104.36' y='356.8' label='Kangerlussuaq' labelPos='right'  />
-			<marker id='09' x='71.3' y='406.41' label='Kangerluarsoruseq'  />
-			<marker id='10' x='80.59' y='467.37' label='Paamiut(Frederikshab)'  />
-			<marker id='11' x='122.96' y='529.37' label='Nanortalik' labelPos='right'  />
-			<marker id='12' x='184.96' y='405.37' label='Tasiilaq(Ammassalik)'/>
-		</definition>
-		<application>
-			<marker id='NU' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-		    <marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

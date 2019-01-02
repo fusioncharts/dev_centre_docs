@@ -9,12 +9,12 @@ Dimensions (Width x Height): 795x795
 
 
 
-{% embed_spec_map egypt-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 29|SO|6th of October
 01|AL|Alexandria
 02|AN|Aswan

@@ -12,7 +12,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 ## Load data using JSON as URL
 
-Let's build the same revenue chart which we built in the [first example]({% site.baseurl %}/getting-started/react/your-first-chart-using-react) using JSON, and use a .json file as the data source.
+Let's build the same revenue chart which we built in the [first example](/getting-started/react/your-first-chart-using-react) using JSON, and use a .json file as the data source.
 
 {% embed_chartData plain-js-setting-data-using-url-example-1.js json %}
 
@@ -85,7 +85,7 @@ The consolidated code for the above chart is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 using System;
 using FusionCharts.Charts;
 
@@ -103,12 +103,12 @@ public partial class JsonUrlData : System.Web.UI.Page
         Literal1.Text = columnChart.Render();
     }
 }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 Imports FusionCharts.Charts
 Partial Class JsonDataUrl
 Inherits System.Web.UI.Page
@@ -124,8 +124,8 @@ Dim columnChart As New Chart("column2d", "columnchart", "700", "400", "jsonurl",
 Literal1.Text = columnChart.Render()
 End Sub
 End Class
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -141,7 +141,7 @@ The HTML template for `aspx` file is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="JsonUrlData.aspx.cs" Inherits="JsonUrlData" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -167,12 +167,12 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="JsonDataUrl.aspx.vb" Inherits="JsonDataUrl" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -194,8 +194,8 @@ The HTML template for `aspx` file is shown below:
     &lt;/form&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -209,7 +209,7 @@ The above chart has been rendered using the following steps:
 
 3. Within the class `CommonThemeUsage`, define `Page_Load()`: 
     * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
-    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
     * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include __all theme files__), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
@@ -250,7 +250,7 @@ The full code of the above sample is:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 using System;
 using FusionCharts.Charts;
 
@@ -268,12 +268,12 @@ public partial class XmlDataUrl : System.Web.UI.Page
         Literal1.Text = columnChart.Render();
     }
 }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 Imports FusionCharts.Charts
 Partial Class XmlDataUrl
 Inherits System.Web.UI.Page
@@ -288,8 +288,8 @@ Dim columnChart As New Chart("column2d", "columnchart", "700", "400", "xmlurl", 
 Literal1.Text = columnChart.Render()
 End Sub
 End Class
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -305,7 +305,7 @@ The HTML template for `aspx` file is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="XmlDataUrl.aspx.cs" Inherits="XmlDataUrl" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -327,12 +327,12 @@ The HTML template for `aspx` file is shown below:
     &lt;/form&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="XmlDataUrl.aspx.vb" Inherits="XmlDataUrl" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -358,8 +358,8 @@ The HTML template for `aspx` file is shown below:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -373,7 +373,7 @@ The above chart has been rendered using the following steps:
 
 3. Within the class `CommonThemeUsage`, define `Page_Load()`: 
     * Declare a string `jsonData` and use it to assign the chart configuration as a XML string.
-    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
     * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include __all theme files__), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
     * Set the `dataFormat` as XML.
     * Embed the json data as the value of `dataSource`.

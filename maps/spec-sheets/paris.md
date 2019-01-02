@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x250
 
 
 
-{% embed_spec_map paris-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.PR.BM|BM|Batignolles Monceau
 FR.PR.BO|BO|Bourse
 FR.PR.BT|BT|Butte Montmartre

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 321x351
 
 
 
-{% embed_spec_map mauritius-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MU.BL|BL|Black River
 MU.FL|FL|Flacq
 MU.GP|GP|Grand Port

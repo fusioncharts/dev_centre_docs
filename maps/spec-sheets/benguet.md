@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map benguet-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.BG.AO | AO | Atok
 PH.BG.BG | BG | Baguio
 PH.BG.BK | BK | Bakun

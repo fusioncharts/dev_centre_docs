@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map surigaodelsur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.SS.BR | BR | Barobo
 PH.SS.BY | BY | Bayabas
 PH.SS.BS | BS | Bislig

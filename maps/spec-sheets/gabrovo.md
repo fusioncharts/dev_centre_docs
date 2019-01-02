@@ -9,12 +9,12 @@ Dimensions (Width x Height): 643x539
 
 
 
-{% embed_spec_map gabrovo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|DR|Dryanovo
 02|GA|Gabrovo
 03|SE|Sevlievo

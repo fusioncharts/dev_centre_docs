@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map copperbelt-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.CO.CL|CL|Chililabombwe District
 ZM.CO.CG|CG|Chingola District
 ZM.CO.KU|KU|Kalulushi District

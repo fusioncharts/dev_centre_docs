@@ -9,12 +9,12 @@ Dimensions (Width x Height): 380x440
 
 
 
-{% embed_spec_map nagaland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.NL.DI|DI|Dimapur
 IN.NL.KI|KI|Kiphire
 IN.NL.KO|KO|Kohima

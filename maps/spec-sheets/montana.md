@@ -9,12 +9,12 @@ Dimensions (Width x Height): 760x432
 
 
 
-{% embed_spec_map montana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|BE|Beaverhead
 003|BH|Big Horn
 005|BL|Blaine

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 380x440
 
 
 
-{% embed_spec_map chhattisgarh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.CT.BD|BD|Balod
 IN.CT.BB|BB|Baloda Bazar
 IN.CT.BR|BR|Balrampur

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map davaodelnorte-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.DV.AU | AU | Asuncion
 PH.DV.BA | BA | Braulio E. Dujali
 PH.DV.CR | CR | Carmen

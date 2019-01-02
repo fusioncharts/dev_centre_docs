@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map mugla-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.MG.BO | BO | Bodrum
 TR.MG.DL | DL | Dalaman
 TR.MG.DT | DT | Datça

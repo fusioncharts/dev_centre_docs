@@ -14,9 +14,9 @@ This approach also helps to increase the performance of an application by readin
 
 Before starting with the code, ensure that you have:
 
-1. [Downloaded and installed FusionExport Server]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
+1. [Downloaded and installed FusionExport Server](/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
 
-2. [Downloaded and installed the FusionExport SDK client]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks) 
+2. [Downloaded and installed the FusionExport SDK client](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks) 
 
 ## Chart Configuration
 
@@ -50,15 +50,15 @@ If you are executing the template code without any changes, the chart configurat
 
 In this tutorial, we will use the configuration of three charts:
 
-* [A Column 2D Chart]({% site.baseurl %}/chart-attributes/?chart=column2d)
+* [A Column 2D Chart](/chart-attributes/?chart=column2d)
 
-* [A Pie Chart]({% site.baseurl %}/chart-attributes/?chart=pie2d)
+* [A Pie Chart](/chart-attributes/?chart=pie2d)
 
-* [A Line Chart]({% site.baseurl %}/chart-attributes/?chart=line)
+* [A Line Chart](/chart-attributes/?chart=line)
 
-The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
+The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes](/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
 
-```
+```json
 [{
     "type": "column2d",
     "renderAt": "chart-container",
@@ -164,7 +164,7 @@ The accepted format of configuration is the same as that of charts you can gener
 
 Based on the above configuration, the exported charts will look like the images below.
 
-![Change-the-Export-Type]({% site.baseurl %}/images/export-charts-in-bulk-image-1.png)
+![Change-the-Export-Type](/images/export-charts-in-bulk-image-1.png)
 
 > It is **not** mandatory to create a file containing the chart configuration. In the code, you can directly create an object containing a serialized JSON string representation of the chart configuration, and pass it on to the `ExportConfig.set()` object of the FusionExport SDK you are using. For more clarity, see the inline comments in the template code.
 
@@ -184,7 +184,7 @@ Before you start with the code, we suggest going through the steps that the code
 
 > When multiple charts are exported, the default output files will have names like `export--1.png`, `export--2.png`, `export--3.png`, etc. If you execute the template code without any changes, you can find it in the same directory from where the code has been executed. 
 
-> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference]({% site.baseurl %}/exporting-charts/using-fusionexport/sdk-api-reference/), and select the SDK of your choice from the left navigation panel.
+> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference](/exporting-charts/using-fusionexport/sdk-api-reference/), and select the SDK of your choice from the left navigation panel.
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -198,7 +198,7 @@ Before you start with the code, we suggest going through the steps that the code
 <div class="tab-content extra-tabs">
 
 <div class="tab csharp-tab active">
-<pre><code class="custom-hlc language-cs">
+<pre><code class="language-csharp">
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -228,11 +228,12 @@ namespace FusionExportTest {
         }
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 import com.fusioncharts.fusionexport.client.*; // import sdk
 
 public class Script {
@@ -251,11 +252,12 @@ public class Script {
         manager.export(config, outputDir = ".", unzip = true);
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 <?php
 
   // Import dependencies
@@ -276,11 +278,12 @@ public class Script {
   $exportManager->export($exportConfig, $outputDir = '.', $unzip = true);
 
 ?>
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 // ********** IMPORT AND RESOLVE DEPENDENCIES ***********
 
 // Import 'path' core module of Node.js
@@ -320,11 +323,12 @@ exportManager.export(exportConfig, outputDir = '.', unzip = true).then((exported
 }).catch((err) => {
     console.log(err);
 });
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 # Import sdk
 from fusionexport import ExportManager, ExportConfig 
 
@@ -345,19 +349,20 @@ em = ExportManager(export_server_host, export_server_port)
 
 # Call the export() method with the export_config as an argument
 em.export(export_config, outputDir = ".", unzip = True)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
 ## Related Resources
 
-* [Change the export type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the export type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Change the export quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the export quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
 
-* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
+* [Export the Output Files as a Zip](/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
 
-* [Export a Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
+* [Export a Dashboard](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
 
-* [Export a D3 Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart)
+* [Export a D3 Chart](/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart)

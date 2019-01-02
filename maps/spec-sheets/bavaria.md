@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x360
 
 
 
-{% embed_spec_map bavaria-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.BY.MF|MF|Mittelfranken
 DE.BY.NI|NI|Niederbayern
 DE.BY.OB|OB|Oberbayern

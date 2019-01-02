@@ -9,12 +9,12 @@ Dimensions (Width x Height): 467x602
 
 
 
-{% embed_spec_map queensland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 QLD01|BM|Brisbane and Moreton
 QLD04|CW|Central West
 QLD02|DD|Darling Downs

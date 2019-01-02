@@ -9,12 +9,12 @@ Dimensions (Width x Height): 650x600
 
 
 
-{% embed_spec_map bern-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.BE.AB|AB|Aarberg
 CH.BE.AN|AN|Aarwangen
 CH.BE.BE|BE|Bern

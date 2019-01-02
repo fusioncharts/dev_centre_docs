@@ -9,12 +9,12 @@ Dimensions (Width x Height): 567x561
 
 
 
-{% embed_spec_map france-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 002|AL|Alsace
 003|AQ|Aquitaine
 004|AU|Auvergne

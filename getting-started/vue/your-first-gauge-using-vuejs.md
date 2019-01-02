@@ -24,14 +24,15 @@ Install **FusionCharts** and the `vue-fusioncharts` component using any of the f
 <div class='tab npm-tab active'>
 <div class='mt-30'><strong>To install FusionCharts and the `vue-fusioncharts` component via npm follow the steps below:</strong></div>
 <div class='mt-20'>1. Install the `vue-fusioncharts` component</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 $ npm install vue-fusioncharts --save
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-20'>2. Install `fusioncharts` package</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 $ npm install fusioncharts --save
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -40,7 +41,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
-<pre><code class="custom-hlc language-html">
+<pre><code class="language-html">
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
@@ -51,8 +52,8 @@ $ npm install fusioncharts --save
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab local-tab'>
@@ -61,7 +62,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
-<pre><code class="custom-hlc language-html">
+<pre><code class="language-html">
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;
     &lt;script type="text/javascript" src="path/to/local/vue.js"&gt;&lt;/script&gt;
@@ -72,8 +73,8 @@ $ npm install fusioncharts --save
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -177,7 +178,7 @@ To render the gauge, open `App.vue` file and follow the steps below:
 
 7. Store the chart configurations in a JSON object. In this JSON object:
 
-    * Set the chart type as `angulargauge`. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
+    * Set the chart type as `angulargauge`. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
@@ -190,7 +191,7 @@ To render the gauge, open `App.vue` file and follow the steps below:
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
-<pre><code class="custom-hlc language-javascript">&lt;script&gt;
+<pre><code class="language-javascript">&lt;script&gt;
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
@@ -258,12 +259,12 @@ name: 'app',
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/template&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-html">&lt;html&gt;
+<pre><code class="language-html">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including vue  --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
@@ -327,12 +328,12 @@ name: 'app',
     &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-html">&lt;html&gt;
+<pre><code class="language-html">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including vue  --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
@@ -396,8 +397,8 @@ name: 'app',
     &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

@@ -23,7 +23,7 @@ A chart configured to change the theme is shown below:
 
 To change the theme refer to the code below:
 
-```aspnet
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Data;

@@ -14,9 +14,10 @@ During bulk export, you can override the height and width of all the charts usin
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -W 800 -H 400
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -25,10 +26,10 @@ During bulk export, you can override the height and width of all the charts usin
 
 ## Related Resources
 
-* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the Export Type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Override the Chart Config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+* [Override the Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
 
-* [Add a logo and heading to the dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
+* [Add a logo and heading to the dashboard](/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
 
-* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

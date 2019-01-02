@@ -9,12 +9,12 @@ Dimensions (Width x Height): 534x600
 
 
 
-{% embed_spec_map buskerud-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.BU.DR|DR|Drammen
 NO.BU.FB|FB|Flesberg
 NO.BU.FL|FL|Flå

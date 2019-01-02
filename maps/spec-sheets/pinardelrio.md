@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map pinardelrio-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.PD.CS|CS|Consolación del Sur
 CU.PD.GU|GU|Guane
 CU.PD.LA|LA|La Palma

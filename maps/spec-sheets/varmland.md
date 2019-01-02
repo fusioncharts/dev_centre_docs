@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x510
 
 
 
-{% embed_spec_map varmland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.VR.AV|AV|Arvika
 SE.VR.ED|ED|Eda
 SE.VR.FI|FI|Filipstad

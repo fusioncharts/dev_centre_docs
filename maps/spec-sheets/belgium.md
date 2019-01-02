@@ -9,12 +9,12 @@ Dimensions (Width x Height): 390x320
 
 
 
-{% embed_spec_map belgium-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AN|Antwerpen
 09|BW|Brabant Wallon
 010|BR|Brussels

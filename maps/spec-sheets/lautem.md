@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map lautem-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TL.BT.IL|IL|Iliomar
 TL.BT.LA|LA|Lautém
 TL.BT.LO|LO|Lospalos

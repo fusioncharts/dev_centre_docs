@@ -9,12 +9,12 @@ Dimensions (Width x Height): 431x600
 
 
 
-{% embed_spec_map rajshahi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BD.RS.BO|BO|Bogra District
 BD.RS.JP|JP|Joypurhat District
 BD.RS.NA|NA|Naogaon District

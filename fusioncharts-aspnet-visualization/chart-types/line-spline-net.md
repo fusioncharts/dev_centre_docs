@@ -47,7 +47,7 @@ Create the `LineChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```aspnet
+```csharp
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
@@ -142,7 +142,7 @@ The `.aspx` template for the above sample is shown below:
 
 Now, let's learn how to create a spline chart with the same data. The code remains the same as that of the Line chart. The only difference is instead of instantiating a line chart you have to instantiate a spline chart. Create a `splineChart.aspx.cs` and refer to the code below:
 
-```aspnet
+```csharp
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;

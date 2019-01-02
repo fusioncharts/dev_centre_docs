@@ -9,12 +9,12 @@ Dimensions (Width x Height): 710x410
 
 
 
-{% embed_spec_map blekinge-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.BL.KH|KH|Karlshamn
 SE.BL.KK|KK|Karlskrona
 SE.BL.OL|OL|Olofström

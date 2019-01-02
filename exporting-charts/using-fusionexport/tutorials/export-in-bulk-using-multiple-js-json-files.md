@@ -36,10 +36,10 @@ fusioncharts_export
 
 ## Related Resources
 
-* [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk)
+* [Export Charts in Bulk](/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk)
 
-* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
+* [Export the Output Files as a Zip](/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
 
-* [Export a Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
+* [Export a Dashboard](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
 
-* [Manipulate the Output Filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
+* [Manipulate the Output Filename](/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)

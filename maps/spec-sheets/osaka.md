@@ -9,12 +9,12 @@ Dimensions (Width x Height): 380x530
 
 
 
-{% embed_spec_map osaka-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Daito
 002|002|Fujiidera
 003|003|Habikino

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 640x680
 
 
 
-{% embed_spec_map wisconsin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adams
 003|AS|Ashland
 005|BA|Barron

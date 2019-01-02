@@ -9,12 +9,12 @@ Dimensions (Width x Height): 601x701
 
 
 
-{% embed_spec_map michigan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AL|Alcona
 003|AG|Alger
 005|AE|Allegan

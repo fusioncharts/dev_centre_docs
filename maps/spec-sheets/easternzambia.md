@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map easternzambia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.EA.CD|CD|Chadiza District
 ZM.EA.CP|CP|Chipata District
 ZM.EA.KT|KT|Katete District

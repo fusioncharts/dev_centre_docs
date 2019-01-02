@@ -9,12 +9,12 @@ Dimensions (Width x Height): 295x192
 
 
 
-{% embed_spec_map jeollanamdo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 06|BC|Boseong County
 07|DC|Damyang County
 08|GC|Gangjin County

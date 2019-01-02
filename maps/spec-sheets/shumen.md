@@ -9,12 +9,12 @@ Dimensions (Width x Height): 516x600
 
 
 
-{% embed_spec_map shumen-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 03|HI|Hitrino
 04|KL|Kaolinovo
 05|KS|Kaspichan

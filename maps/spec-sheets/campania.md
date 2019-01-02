@@ -9,12 +9,12 @@ Dimensions (Width x Height): 460x440
 
 
 
-{% embed_spec_map campania-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.AV|AV|Avellino
 IT.BN|BN|Benevento
 IT.CE|CE|Caserta

@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -215,14 +215,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -440,78 +441,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='LY.AJ'  />
-		<entity id='LY.BU'  />
-		<entity id='LY.HZ'  />
-		<entity id='LY.JA'  />
-		<entity id='LY.JI'  />
-		<entity id='LY.JU'  />
-		<entity id='LY.KF'  />
-		<entity id='LY.MJ'  />
-		<entity id='LY.MB'  />
-		<entity id='LY.NQ'  />
-		<entity id='LY.QB'  />
-		<entity id='LY.WA'  />
-		<entity id='LY.ZA'  />
-		<entity id='LY.BA'  />
-		<entity id='LY.BW'  />
-		<entity id='LY.DR'  />
-		<entity id='LY.GT'  />
-		<entity id='LY.GD'  />
-		<entity id='LY.GR'  />
-		<entity id='LY.MQ'  />
-		<entity id='LY.MZ'  />
-		<entity id='LY.MI'  />
-		<entity id='LY.NL'  />
-		<entity id='LY.TN'  />
-		<entity id='LY.TM'  />
-		<entity id='LY.TB'  />
-		<entity id='LY.SB'  />
-		<entity id='LY.SR'  />
-		<entity id='LY.SS'  />
-		<entity id='LY.WD'  />
-		<entity id='LY.SH'  />
-		<entity id='LY.YJ'  />
-	</data>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillcolor='FFFFFF,333333' fillPattern='radial' 	showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-			<marker id='TP' x='135.37' y='84.32' label='Tripoli' labelPos='left'  />
-			<marker id='01' x='216.8' y='270.59' label='Sabha' labelPos='right'  />
-			<marker id='02' x='269.73' y='143.36' label='Surt' labelPos='bottom'  />
-			<marker id='03' x='480.42' y='102.65' label='Tobruk' labelPos='bottom'  />
-			<marker id='04' x='312.48' y='153.54' label='Ra&apos;s Lanuf' labelPos='bottom'  />
-			<marker id='05' x='73.28' y='192.22' label='Ghadamis' labelPos='bottom'  />
-			<marker id='06' x='457.01' y='86.36' label='Darnah' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='TP' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

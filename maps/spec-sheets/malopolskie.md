@@ -9,12 +9,12 @@ Dimensions (Width x Height): 681x607
 
 
 
-{% embed_spec_map malopolskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.MA.BO|BO|Bochenski
 PL.MA.BR|BR|Brzeski
 PL.MA.CH|CH|Chrzanowski

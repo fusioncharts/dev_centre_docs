@@ -9,10 +9,10 @@ Dimensions (Width x Height): 547x594
 
 
 
-{% embed_spec_map cairo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CA|Cairo

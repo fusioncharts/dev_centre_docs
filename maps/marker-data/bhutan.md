@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -174,14 +174,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -355,66 +356,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='BT.BU'  />
-		<entity id='BT.CK'  />
-		<entity id='BT.CR'  />
-		<entity id='BT.DA'  />
-		<entity id='BT.GA'  />
-		<entity id='BT.GE'  />
-		<entity id='BT.HA'  />
-		<entity id='BT.LH'  />
-		<entity id='BT.MO'  />
-		<entity id='BT.PR'  />
-		<entity id='BT.PM'  />
-		<entity id='BT.PN'  />
-		<entity id='BT.SM'  />
-		<entity id='BT.SJ'  />
-		<entity id='BT.SG'  />
-		<entity id='BT.TA'  />
-		<entity id='BT.TM'  />
-		<entity id='BT.TO'  />
-		<entity id='BT.TY'  />
-		<entity id='BT.WP'  />
-	</data>
-	<markers>
-	  <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'  fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='TH' x='216.06' y='221.02' label='Thimphu'  />
-			<marker id='01' x='187.4' y='235.34' label='Paro' labelPos='left'  />
-			<marker id='02' x='151.59' y='366.32' label='Phuntsholing' labelPos='left'  />
-			<marker id='04' x='392.06' y='209.76' label='Tongsa'  />
-			<marker id='05' x='634.57' y='270.13' label='Tashigang'  />
-			<marker id='06' x='605.92' y='386.79' label='Samdrup Jongkhar'  />
-			<marker id='07' x='262.1' y='82.88' label='Gasa Dzong'  />
-		</definition>
-		<application>
-			<marker id='TH' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 321x331
 
 
 
-{% embed_spec_map namibia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NA.CA|CA|Caprivi
 NA.ER|ER|Erongo
 NA.HA|HA|Hardap

@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -408,14 +408,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -853,139 +854,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='TH.AC'  />
-		<entity id='TH.AT'  />
-		<entity id='TH.BR'  />
-		<entity id='TH.CC'  />
-		<entity id='TH.CN'  />
-		<entity id='TH.CY'  />
-		<entity id='TH.CT'  />
-		<entity id='TH.CM'  />
-		<entity id='TH.CR'  />
-		<entity id='TH.CB'  />
-		<entity id='TH.CP'  />
-		<entity id='TH.KL'  />
-		<entity id='TH.KP'  />
-		<entity id='TH.KN'  />
-		<entity id='TH.KK'  />
-		<entity id='TH.KR'  />
-		<entity id='TH.LG'  />
-		<entity id='TH.LN'  />
-		<entity id='TH.LE'  />
-		<entity id='TH.LB'  />
-		<entity id='TH.MH'  />
-		<entity id='TH.MS'  />
-		<entity id='TH.MD'  />
-		<entity id='TH.NN'  />
-		<entity id='TH.NP'  />
-		<entity id='TH.NF'  />
-		<entity id='TH.NR'  />
-		<entity id='TH.NS'  />
-		<entity id='TH.NT'  />
-		<entity id='TH.NA'  />
-		<entity id='TH.NW'  />
-		<entity id='TH.NB'  />
-		<entity id='TH.NK'  />
-		<entity id='TH.NO'  />
-		<entity id='TH.PT'  />
-		<entity id='TH.PI'  />
-		<entity id='TH.PG'  />
-		<entity id='TH.PL'  />
-		<entity id='TH.PY'  />
-		<entity id='TH.PH'  />
-		<entity id='TH.PE'  />
-		<entity id='TH.PC'  />
-		<entity id='TH.PS'  />
-		<entity id='TH.PR'  />
-		<entity id='TH.PU'  />
-		<entity id='TH.PK'  />
-		<entity id='TH.RN'  />
-		<entity id='TH.RT'  />
-		<entity id='TH.RY'  />
-		<entity id='TH.RE'  />
-		<entity id='TH.SK'  />
-		<entity id='TH.SN'  />
-		<entity id='TH.SP'  />
-		<entity id='TH.SS'  />
-		<entity id='TH.SM'  />
-		<entity id='TH.SR'  />
-		<entity id='TH.SA'  />
-		<entity id='TH.SB'  />
-		<entity id='TH.SI'  />
-		<entity id='TH.SG'  />
-		<entity id='TH.SO'  />
-		<entity id='TH.SH'  />
-		<entity id='TH.ST'  />
-		<entity id='TH.SU'  />
-		<entity id='TH.TK'  />
-		<entity id='TH.TG'  />
-		<entity id='TH.TT'  />
-		<entity id='TH.UR'  />
-		<entity id='TH.UN'  />
-		<entity id='TH.UT'  />
-		<entity id='TH.UD'  />
-		<entity id='TH.YL'  />
-		<entity id='TH.YS'  />
-	</data>
-	<markers>
-	 <shapes>
-		    <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial'
-showBorder='0' radius='3'/>
-      </shapes>
-		<definition>
-			<marker id='BA' x='245.86' y='547.57' label='Bangkok' labelPos='right'  />
-			<marker id='01' x='274.28' y='584.73' label='Si Rancha' labelPos='right' />
-			<marker id='02' x='269.91' y='593.47' label='Laem Chabang' labelPos='left'  />
-			<marker id='04' x='267.72' y='620.79' label='Sattahip' labelPos='left'  />
-			<marker id='05' x='322.36' y='469.99' label='Nakhan Ratchasima' labelPos='right'  />
-			<marker id='06' x='210.9' y='382.57' label='Nakhon Sawan' labelPos='left'  />
-			<marker id='03' x='226.2' y='277.66' label='Phitsanulok'  />
-			<marker id='07' x='105.99' y='121.4' label='Chaing Mai' labelPos='left'  />
-			<marker id='08' x='404.31' y='248.16' label='Udon Thani' labelPos='right'  />
-			<marker id='09' x='406.5' y='319.19' label='Khon Kaen'  />
-			<marker id='11' x='596.64' y='420.81' label='Ubon Ratchathani' labelPos='left'  />
-			<marker id='12' x='145.33' y='899.44' label='Surat Thani' labelPos='left'  />
-			<marker id='14' x='65.56' y='1002.16' label='Phuket' labelPos='left'  />
-			<marker id='15' x='244.77' y='1060.08' label='Songkhla' labelPos='right'  />
-			<marker id='13' x='231.66' y='1067.72' label='Hat Yai' labelPos='left'  />
-			<marker id='10' x='295.04' y='1085.21' label='Pattani' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='BA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

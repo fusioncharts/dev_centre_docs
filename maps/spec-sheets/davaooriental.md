@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map davaooriental-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.DO.BG | BG | Baganga
 PH.DO.BN | BN | Banaybanay
 PH.DO.BS | BS | Boston

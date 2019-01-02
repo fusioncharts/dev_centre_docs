@@ -9,12 +9,12 @@ Dimensions (Width x Height): 601x530
 
 
 
-{% embed_spec_map sofia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AN|Anton
 02|BG|Botevgrad
 03|BZ|Bozhurishte

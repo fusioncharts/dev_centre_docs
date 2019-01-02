@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1202x1000
 
 
 
-{% embed_spec_map rondonia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1100015|AF|Alta Floresta D'Oeste
 1100379|AA|Alto Alegre dos Parecis
 1100403|AP|Alto Paraíso

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 800x660
 
 
 
-{% embed_spec_map colorado-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adams
 003|AL|Alamosa
 005|AR|Arapahoe

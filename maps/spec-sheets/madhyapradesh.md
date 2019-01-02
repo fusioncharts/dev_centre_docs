@@ -9,12 +9,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map madhyapradesh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.MP.AM|AM|Agar Malwa
 IN.MP.AL|AL|Alirajpur
 IN.MP.AN|AN|Anuppur

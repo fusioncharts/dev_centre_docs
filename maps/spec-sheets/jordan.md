@@ -9,12 +9,12 @@ Dimensions (Width x Height): 520x580
 
 
 
-{% embed_spec_map jordan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 JO.AJ|AJ|Ajlun
 JO.AM|AM|Amman
 JO.AQ|AQ|Aqaba

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x480
 
 
 
-{% embed_spec_map quintanaroo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.QR.BJ|BJ|Benito Juárez
 MX.QR.CO|CO|Cozumel
 MX.QR.FC|FC|Felipe Carrillo Puerto

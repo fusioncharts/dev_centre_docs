@@ -10,12 +10,12 @@ Dimensions (Width x Height): 294x265
 
 
 
-{% embed_spec_map northchungcheong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BC|Boeun County
 02|CJ|Cheongju
 03|CH|Chungju

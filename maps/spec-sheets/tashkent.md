@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map tashkent-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.TA.BD|BD|Bekabad
 UZ.TA.BL|BL|Bostanliq
 UZ.TA.BK|BK|Buka

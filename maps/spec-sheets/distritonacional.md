@@ -9,10 +9,10 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map distritonacional-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.NC.DN|DN|Distrito Nacional

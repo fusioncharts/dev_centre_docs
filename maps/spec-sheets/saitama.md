@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x280
 
 
 
-{% embed_spec_map saitama-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Ageo
 002|002|Asaka
 003|003|Chichibu

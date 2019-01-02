@@ -9,12 +9,12 @@ Dimensions (Width x Height): 647x443
 
 
 
-{% embed_spec_map jogevamaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|JL|Jõgeva
 04|JV|Jõgeva(Commune)
 05|KA|Kasepää

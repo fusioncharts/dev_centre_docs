@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x516
 
 
 
-{% embed_spec_map trencin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SK.TC.BN|BN|Bánovce nad Bebravou
 SK.TC.IL|IL|Ilava
 SK.TC.MY|MY|Myjava

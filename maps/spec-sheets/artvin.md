@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map artvin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.AV.AD | AD | Ardanuç
 TR.AV.AH | AH | Arhavi
 TR.AV.AV | AV | Artvin

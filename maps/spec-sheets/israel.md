@@ -9,12 +9,12 @@ Dimensions (Width x Height): 173x485
 
 
 
-{% embed_spec_map israel-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|CE|Central
 002|HA|Haifa
 003|JE|Jerusalem

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 760x570
 
 
 
-{% embed_spec_map oregon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|BA|Baker
 003|BE|Benton
 005|CL|Clackamas

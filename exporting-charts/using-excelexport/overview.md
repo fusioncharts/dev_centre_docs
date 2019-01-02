@@ -12,4 +12,4 @@ FusionCharts Excel export adds an additional option, **Export As Excel**, in the
 
 When the  **Export As Excel** option is clicked, as shown in the image below, an Excel file that contains the chart and the data is downloaded.
 
-![Excel Export]({% site.baseurl %}/images/overview-excel-export.png)
+![Excel Export](/images/overview-excel-export.png)

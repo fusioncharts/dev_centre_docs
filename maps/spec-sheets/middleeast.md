@@ -9,12 +9,12 @@ Dimensions (Width x Height): 640x470
 
 
 
-{% embed_spec_map middleeast-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AF|Afghanistan
 02|BA|Bahrain
 03|IN|Iran

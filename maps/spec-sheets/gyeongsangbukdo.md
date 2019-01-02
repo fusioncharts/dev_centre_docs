@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x225
 
 
 
-{% embed_spec_map gyeongsangbukdo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AD|Andong
 11|BC|Bonghwa County
 12|CC|Cheongdo County

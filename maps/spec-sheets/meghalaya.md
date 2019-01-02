@@ -10,12 +10,12 @@ Dimensions (Width x Height): 440x190
 
 
 
-{% embed_spec_map meghalaya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.ML.EG|EG|East Garo Hills
 IN.ML.JE|JE|East Jaintia Hills
 IN.ML.EK|EK|East Khasi Hills

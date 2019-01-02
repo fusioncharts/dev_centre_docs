@@ -9,12 +9,12 @@ Dimensions (Width x Height): 555x880
 
 
 
-{% embed_spec_map idaho-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Ada
 003|AA|Adams
 005|BA|Bannock

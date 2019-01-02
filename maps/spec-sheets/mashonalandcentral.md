@@ -9,12 +9,12 @@ Dimensions (Width x Height): 801x391
 
 
 
-{% embed_spec_map mashonalandcentral-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZW.MC.BD|BD|Bindura
 ZW.MC.GV|GV|Guruve
 ZW.MC.ME|ME|Mazowe

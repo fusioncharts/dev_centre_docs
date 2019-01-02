@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map auvergnerhonealpes-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.AU.AI|AI|Ain
 FR.AU.AL|AL|Allier
 FR.AU.AH|AH|Ardèche

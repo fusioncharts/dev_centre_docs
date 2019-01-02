@@ -8,8 +8,8 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure the following using `angularjs-fusioncharts` component:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/angular/angularjs/configure-your-chart-using-angularjs#update-chart-data-1)
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/angular/angularjs/configure-your-chart-using-angularjs#update-chart-attributes-2)
+* [Update Chart Data](/getting-started/angular/angularjs/configure-your-chart-using-angularjs#update-chart-data)
+* [Update Chart Attributes](/getting-started/angular/angularjs/configure-your-chart-using-angularjs#update-chart-attributes)
 
 ## Update Chart Data
 

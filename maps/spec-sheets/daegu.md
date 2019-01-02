@@ -9,12 +9,12 @@ Dimensions (Width x Height): 230x226
 
 
 
-{% embed_spec_map daegu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 05|BK|Buk-gu
 07|DA|Dalseo-gu
 08|DS|Dalseong-gun

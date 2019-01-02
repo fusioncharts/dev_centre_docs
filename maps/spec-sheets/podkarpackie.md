@@ -9,12 +9,12 @@ Dimensions (Width x Height): 528x622
 
 
 
-{% embed_spec_map podkarpackie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.PK.BI|BI|Bieszczadzki
 PL.PK.BR|BR|Brzozowski
 PL.PK.DE|DE|Debicki

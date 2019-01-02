@@ -9,12 +9,12 @@ Dimensions (Width x Height): 411x381
 
 
 
-{% embed_spec_map brandenburg-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.BR.BA|BA|Barnim
 DE.BR.BH|BH|Brandenburg an der Havel
 DE.BR.CO|CO|Cottbus

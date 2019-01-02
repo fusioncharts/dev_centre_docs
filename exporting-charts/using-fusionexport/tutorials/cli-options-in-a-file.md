@@ -14,7 +14,7 @@ The content of the __fusionexport_config.json__ file is given below:
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-json">
+<pre><code class="language-json">
 	{
 		"chart-config": "uat/50charts.js",
 		"output-file": "uat/export-<%= number(1, 100) %>",
@@ -26,7 +26,8 @@ The content of the __fusionexport_config.json__ file is given below:
 		"log-level": "silly",
 		"remote-export-enabled": false
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -40,15 +41,16 @@ Once done, run the following command:
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	$ fe -e fusioncharts_config.json
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
 ## Related Resources
 
-* [Override the chart config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+* [Override the chart config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
 
-* [Export in bulk using multiple JSON]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files)
+* [Export in bulk using multiple JSON](/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files)

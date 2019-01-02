@@ -9,12 +9,12 @@ Dimensions (Width x Height): 632x548
 
 
 
-{% embed_spec_map hainan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 14|BA|Baisha(Li)
 17|BO|Baoting(Li & Miao)
 13|CG|Changjiang (Li)

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map southlebanon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LE.JA.JE|JE|Jezzine
 LE.JA.SA|SA|Sidon
 LE.JA.SU|SU|Tyre

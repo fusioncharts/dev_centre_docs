@@ -9,12 +9,12 @@ Dimensions (Width x Height): 481x901
 
 
 
-{% embed_spec_map newhampshire-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|BE|Belknap
 003|CA|Carroll
 005|CH|Cheshire

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x340
 
 
 
-{% embed_spec_map santacruz-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BO.SC.AI|AI|Andrés Ibáñez
 BO.SC.WR|WR|Ignacio Warnes
 BO.SC.VL|VL|José Miguel de Velasco

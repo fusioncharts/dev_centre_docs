@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x340
 
 
 
-{% embed_spec_map singapore-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SG.CS|CS|Central Singapore
 SG.EA|EA|East Singapore
 SG.NO|NO|North Singapore

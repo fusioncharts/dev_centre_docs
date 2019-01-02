@@ -9,7 +9,7 @@ Dimensions (Width x Height): 715x405
 
 
 
-{% embed_spec_map world-map.js %}
+
 
 ### List of Entities
 

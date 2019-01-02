@@ -30,7 +30,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5Bd2f/) to edit the above gauge.
 
 In the image below, you can see the basic elements of an LED gauge.
 
-![Led-gauge]({% site.baseurl %}/images/led-gauge-introduction-1.jpg)
+![Led-gauge](/images/led-gauge-introduction-1.jpg)
 
 ## Color range
 
@@ -363,7 +363,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-![Led]({% site.baseurl %}/gif/gauges-and-widgets-led.gif)
+![Led](/gif/gauges-and-widgets-led.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/ah36v6e0/) to edit the above gauge.
 

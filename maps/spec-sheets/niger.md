@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x450
 
 
 
-{% embed_spec_map niger-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NE.AG|AG|Agadez
 NE.DF|DF|Diffa
 NE.DS|DS|Dosso

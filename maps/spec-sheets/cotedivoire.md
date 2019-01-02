@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x560
 
 
 
-{% embed_spec_map cotedivoire-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CI.AG|AG|Agneby
 CI.BF|BF|Bafing
 CI.BS|BS|Bas Sassandra

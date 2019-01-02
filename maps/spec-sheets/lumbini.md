@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map lumbini-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.LU.AR|AR|Arghakhanchi
 NP.LU.GU|GU|Gulmi
 NP.LU.KP|KP|Kapilvastu

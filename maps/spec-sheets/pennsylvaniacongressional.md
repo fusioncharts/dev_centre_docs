@@ -9,12 +9,12 @@ Dimensions (Width x Height): 800x480
 
 
 
-{% embed_spec_map pennsylvaniacongressional-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 10|10th|10th district
 11|11th|11th district
 12|12th|12th district

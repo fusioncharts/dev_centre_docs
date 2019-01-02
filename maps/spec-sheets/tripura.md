@@ -10,12 +10,12 @@ Dimensions (Width x Height): 300x430
 
 
 
-{% embed_spec_map tripura-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.TR.DH|DH|Dhalai
 IN.TR.GM|GM|Gomati
 IN.TR.KW|KW|Khowai

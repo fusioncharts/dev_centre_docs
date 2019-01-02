@@ -9,12 +9,12 @@ Dimensions (Width x Height): 200x260
 
 
 
-{% embed_spec_map barbados-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CC|Christ Church
 02|AN|Saint Andrew
 03|GE|Saint George

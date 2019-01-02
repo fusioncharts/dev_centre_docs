@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map caraga-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.CG.AN | AN | Agusan del Norte
 PH.CG.AS | AS | Agusan del Sur
 PH.CG.DI | DI | Dinagat Islands

@@ -127,5 +127,5 @@ Apart from the usual boilerplate, the sample code provided above corresponds to 
 
     * Include a `<%= %>` tag that contains `column_chart.render()`.
 
-> Refer to [Column 2D chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts) for more information on the configuration and data for this chart type. Alternatively, you may also refer to [Bar chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts#bar-d-chart-3) or [Pie chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/pie-and-doughnut-charts), if you want them as defaults.
+> Refer to [Column 2D chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts) for more information on the configuration and data for this chart type. Alternatively, you may also refer to [Bar chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts#bar-d-chart) or [Pie chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/pie-and-doughnut-charts), if you want them as defaults.
 

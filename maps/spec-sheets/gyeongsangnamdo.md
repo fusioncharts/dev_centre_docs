@@ -9,12 +9,12 @@ Dimensions (Width x Height): 246x180
 
 
 
-{% embed_spec_map gyeongsangnamdo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 09|CC|Changnyeong County
 01|CW|Changwon
 10|GC|Geochang County

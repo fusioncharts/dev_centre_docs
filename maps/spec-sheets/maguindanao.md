@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map maguindanao-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.MG.AP | AP | Ampatuan
 PH.MG.BR | BR | Barira
 PH.MG.BD | BD | Buldon

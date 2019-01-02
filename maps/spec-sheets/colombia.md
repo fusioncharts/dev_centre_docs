@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x580
 
 
 
-{% embed_spec_map colombia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AMA|Amazonas
 02|ANT|Antioquia
 03|ARA|Arauca

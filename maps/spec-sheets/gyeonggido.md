@@ -9,12 +9,12 @@ Dimensions (Width x Height): 267x272
 
 
 
-{% embed_spec_map gyeonggido-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|AS|Ansan
 03|AE|Anseong
 04|AY|Anyang

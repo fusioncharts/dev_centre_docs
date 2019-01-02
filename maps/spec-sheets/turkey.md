@@ -9,12 +9,12 @@ Dimensions (Width x Height): 710x320
 
 
 
-{% embed_spec_map turkey-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 81|AA|Adana
 02|AD|Adiyaman
 03|AF|Afyonkarahisar

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ankara-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.AN.AT | AT | Akyurt
 TR.AN.AL | AL | Altındağ
 TR.AN.AY | AY | Ayaş

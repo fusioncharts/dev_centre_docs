@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map sagarmatha-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.SA.KH|KH|Khotang
 NP.SA.OK|OK|Okhaldhunga
 NP.SA.ST|ST|Saptari

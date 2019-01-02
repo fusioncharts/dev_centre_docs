@@ -9,12 +9,12 @@ Dimensions (Width x Height): 580x250
 
 
 
-{% embed_spec_map malaysia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|JO|Johor
 002|KE|Kedah
 003|KL|Kelantan

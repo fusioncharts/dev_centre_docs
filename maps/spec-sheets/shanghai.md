@@ -9,12 +9,12 @@ Dimensions (Width x Height): 505x645
 
 
 
-{% embed_spec_map shanghai-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 10|BS|Baoshan
 3|CG|Changning
 17|CM|Chongming

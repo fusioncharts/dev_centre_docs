@@ -9,12 +9,12 @@ Dimensions (Width x Height): 377x600
 
 
 
-{% embed_spec_map pazardzhik-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 09|BA|Batak
 08|BE|Belovo
 07|BR|Bratsigovo

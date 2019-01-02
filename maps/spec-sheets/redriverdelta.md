@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map redriverdelta-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 VN.RD.BN|BN|Bắc Ninh
 VN.RD.HM|HM|Hà Nam
 VN.RD.HI|HI|Hà Nội

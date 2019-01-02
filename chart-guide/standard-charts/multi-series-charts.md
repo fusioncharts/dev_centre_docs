@@ -38,7 +38,7 @@ To create a multi-series column 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscolumn2d) page of multi-series column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=mscolumn2d) page of multi-series column 2D chart.
 
 A simple multi-series column 2D chart looks like:
 
@@ -50,7 +50,7 @@ Click [here](http://jsfiddle.net/fusioncharts/ppcas1oo/) to edit the above multi
 
 To render a multi-series column chart in 3D, change the value of the `type` attribute from `msColumn2D` to `msColumn3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscolumn3d) page of multi-series column 3D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=mscolumn3d) page of multi-series column 3D chart.
 
 The multi-series column chart in 3D looks like:
 
@@ -64,7 +64,7 @@ Let's move ahead to create a multi-series bar chart in 2D which will show sales 
 
 To render a multi-series bar chart in 2D, set the `type` to `msbar2d`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msbar2d) page of multi-series bar 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=msbar2d) page of multi-series bar 2D chart.
 
 A multi-series bar 2D chart looks like:
 
@@ -76,7 +76,7 @@ Click [here](http://jsfiddle.net/fusioncharts/H92Sx/) to edit the above multi-se
 
 To render a multi-series bar chart in 3D, change the value of the `type` attribute from `msBar2D` to `msBar3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msbar3d) page of multi-series bar 3D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=msbar3d) page of multi-series bar 3D chart.
 
 The multi-series bar chart in 3D looks like:
 
@@ -90,7 +90,7 @@ Now, let's create a multi-series line chart which will show the comparison betwe
 
 To render a multi-series line chart, set the `type` to `msline`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msline) page of multi-series line 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=msline) page of multi-series line 2D chart.
 
 A multi-series line chart looks like:
 
@@ -102,7 +102,7 @@ Click [here](http://jsfiddle.net/fusioncharts/T5C6h/) to edit the above multi-se
 
 To render a multi-series area chart the same use case as above, set the `type` to `msarea`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=MSArea) page of multi-series area 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=MSArea) page of multi-series area 2D chart.
 
 A multi-series area chart looks like:
 

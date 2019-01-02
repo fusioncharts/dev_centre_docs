@@ -9,11 +9,11 @@ Dimensions (Width x Height): 618x593
 
 
 
-{% embed_spec_map alsharqeyah-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|SH|Al-sharqeyah
 

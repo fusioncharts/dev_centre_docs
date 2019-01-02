@@ -9,12 +9,12 @@ Dimensions (Width x Height): 602x496
 
 
 
-{% embed_spec_map idavirumaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 07|AL|Alajõe
 08|AS|Aseri
 09|AV|Avinurme

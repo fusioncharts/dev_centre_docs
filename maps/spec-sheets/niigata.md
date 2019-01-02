@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x594
 
 
 
-{% embed_spec_map niigata-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Agano
 002|002|Gosen
 003|003|Itoigawa

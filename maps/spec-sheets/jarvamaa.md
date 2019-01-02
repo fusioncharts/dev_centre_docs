@@ -9,12 +9,12 @@ Dimensions (Width x Height): 456x600
 
 
 
-{% embed_spec_map jarvamaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|AL|Albu
 03|AM|Ambla
 04|IM|Imavere

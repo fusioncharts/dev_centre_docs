@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x890
 
 
 
-{% embed_spec_map mississippi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adams
 003|AL|Alcorn
 005|AM|Amite

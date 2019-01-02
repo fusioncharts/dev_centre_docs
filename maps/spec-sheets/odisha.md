@@ -10,12 +10,12 @@ Dimensions (Width x Height): 471x402
 
 
 
-{% embed_spec_map odisha-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.OR.AN|AN|Angul
 IN.OR.BL|BL|Balangir
 IN.OR.BW|BW|Balasore

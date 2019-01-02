@@ -9,12 +9,12 @@ Dimensions (Width x Height): 801x391
 
 
 
-{% embed_spec_map mashonalandwest-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZW.MW.CG|CG|Chegutu
 ZW.MW.HU|HU|Hurungwe
 ZW.MW.KD|KD|Kadoma

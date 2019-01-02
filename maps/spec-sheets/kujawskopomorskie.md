@@ -9,12 +9,12 @@ Dimensions (Width x Height): 639x592
 
 
 
-{% embed_spec_map kujawskopomorskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.KP.AL|AL|Aleksandrowski
 PL.KP.BR|BR|Brodnicki
 PL.KP.BY|BY|Bydgoski

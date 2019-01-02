@@ -28,7 +28,7 @@ To create a single-series column 2D chart, follow the steps given below:
 
 * Specify the value for a data item using the `value` attribute within the `data` object. 
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=column2d) page of column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=column2d) page of column 2D chart.
 
 A single-series column 2D chart looks like:
 
@@ -40,7 +40,7 @@ Click [here](http://jsfiddle.net/fusioncharts/s7t8F/) to edit the column 2D char
 
 To render a column chart in 3D, change the value of the `type` attribute from `column2D` to `column3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=column3d) page of column 3D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=column3d) page of column 3D chart.
 
 A single-series column 3D chart looks like:
 
@@ -52,7 +52,7 @@ Click [here](http://jsfiddle.net/fusioncharts/xL3py/) to edit the column 3D char
 
 Now, let's create a bar 2D chart. In the chart below, we have shown five stores in a supermarket that have highest sales. The sales figures are plotted along the x-axis, and the store names are plotted along the y-axis.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bar2d) page of bar 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=bar2d) page of bar 2D chart.
 
 To render a bar 2D chart, set the `type` to `bar2d`. A single-series bar 2D chart looks like:
 
@@ -64,7 +64,7 @@ Click [here](http://jsfiddle.net/fusioncharts/y3H2G/) to edit the bar 2D chart.
 
 To render a bar chart in 3D, change the value of the `type` attribute from `bar2D` to `bar3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bar3d) page of bar 3D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=bar3d) page of bar 3D chart.
 
 A single-series bar 3D chart looks like:
 
@@ -80,7 +80,7 @@ In the sample, let's create a line chart showcasing total footfall at Bakersfiel
 
 To render a line chart, set the `type` attribute to `line`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=line) page of line chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=line) page of line chart.
 
 A line chart looks like:
 
@@ -94,7 +94,7 @@ An area chart is similar to the line chart, with the difference that the area ma
 
 To render an area chart with the same use case as above, set the `type` to `area`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=area2d) page of area chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=area2d) page of area chart.
 
 A single-series area chart looks like:
 

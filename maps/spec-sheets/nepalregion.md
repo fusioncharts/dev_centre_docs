@@ -9,12 +9,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map nepalregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.EA|EA|Eastern Development Region
 NP.CE|CE|Central Development Region	
 NP.WE|WE|Western Development Region	

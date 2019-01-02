@@ -10,12 +10,12 @@ Dimensions (Width x Height): 246x180
 
 
 
-{% embed_spec_map southgyeongsang-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CC|Changnyeong County
 02|CW|Changwon
 03|GC|Geochang County

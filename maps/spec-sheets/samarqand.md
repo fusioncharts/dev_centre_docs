@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map samarqand-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.SA.BU|BU|Bulungur
 UZ.SA.IS|IS|Ishtikhon
 UZ.SA.JO|JO|Jomboy

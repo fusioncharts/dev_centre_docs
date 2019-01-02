@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map lastunas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.LT.AM|AM|Amancio
 CU.LT.CO|CO|Colombia
 CU.LT.JM|JM|Jesús Menéndez

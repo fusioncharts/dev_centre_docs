@@ -207,4 +207,4 @@ The map will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/t226vxnp/) to edit the above map.
 
-For a list of all parameters for each of these events, refer to the [API Reference for events]({% site.baseurl %}/api/fusioncharts/fusioncharts-events).
+For a list of all parameters for each of these events, refer to the [API Reference for events](/api/fusioncharts/fusioncharts-events).

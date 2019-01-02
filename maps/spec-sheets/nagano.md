@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x470
 
 
 
-{% embed_spec_map nagano-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Azumino
 002|002|Chikuma
 003|003|Chino

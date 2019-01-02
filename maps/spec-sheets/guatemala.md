@@ -9,12 +9,12 @@ Dimensions (Width x Height): 440x440
 
 
 
-{% embed_spec_map guatemala-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AV|Alta Verapaz
 02|BV|Baja Verapaz
 03|CM|Chimaltenango

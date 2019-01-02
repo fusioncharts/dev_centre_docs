@@ -9,12 +9,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map mountlebanon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LE.JL.AL|AL|Aley
 LE.JL.BD|BD|Baabda
 LE.JL.CH|CH|Chouf

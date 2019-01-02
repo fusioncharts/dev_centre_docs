@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sakarya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.SK.AD | AD | Adapazarı
 TR.SK.AK | AK | Akyazı
 TR.SK.AR | AR | Arifiye
