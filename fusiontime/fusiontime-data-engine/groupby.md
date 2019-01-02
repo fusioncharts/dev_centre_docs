@@ -81,7 +81,7 @@ unitDefaultFormats = {
 };
 ```
 
-The detailed table specifing the date/time format, is given [here](/fusiontime/fusiontime-attributes#datetime-format-7).
+The detailed table specifing the date/time format, is given [here](/fusiontime/fusiontime-attributes#datetime-format).
 
 #### `startValue`
 

@@ -30,11 +30,11 @@ We have developed FusionExport packages in such a way that you can implement the
 
 There are three ways to implement FusionExport in your architecture - 
 
-1. [API based Architecture](/exporting-charts/using-fusionexport/overview#api-based-architecture-3)
+1. [API based Architecture](/exporting-charts/using-fusionexport/overview#api-based-architecture)
 
-2. [Non API based Architecture](/exporting-charts/using-fusionexport/overview#non-api-based-architecture-5)
+2. [Non API based Architecture](/exporting-charts/using-fusionexport/overview#non-api-based-architecture)
 
-3. [CLI based Architecture](/exporting-charts/using-fusionexport/overview#cli-based-architecture-8)
+3. [CLI based Architecture](/exporting-charts/using-fusionexport/overview#cli-based-architecture)
 
 ### API based Architecture
 

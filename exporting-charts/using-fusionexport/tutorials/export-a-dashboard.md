@@ -19,12 +19,12 @@ Before starting with the code, ensure that you have:
 The major steps are discussed below:
 
 1. Create the ingredients for a basic dashboard:
-    * Create a [dashboard template](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#sample-template-4), which is an HTML file.
-    * Create a [chart configuration file](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#sample-configuration-5) (JSON) which shall contain configuration of multiple charts.
+    * Create a [dashboard template](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#sample-template), which is an HTML file.
+    * Create a [chart configuration file](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#sample-configuration) (JSON) which shall contain configuration of multiple charts.
 
-2. Write the export [code](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#code-6) in one of the languages for which FusionExport has [SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks). The export code takes care of embedding the charts into the template before exporting the dashboard.
+2. Write the export [code](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#code) in one of the languages for which FusionExport has [SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks). The export code takes care of embedding the charts into the template before exporting the dashboard.
 
-3. (**Optional, but recommended**) Add some [styling](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#stylecss-10) (inline CSS, or a seperate CSS file) for the HTML template. 
+3. (**Optional, but recommended**) Add some [styling](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#stylecss) (inline CSS, or a seperate CSS file) for the HTML template. 
 
 In the following sections, you will learn about the implementing the steps discussed above.
 
@@ -238,7 +238,7 @@ Based on the template, chart configurations, and the code mentioned above, the e
 
 ![Export-A-Dashboard](/images/export-a-dashboard-image-2.png)
 
-> The bare bones dashboard is not suitable for business usage. We strongly recommend [adding CSS](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#stylecss-10) to the HTML template, so that the dashboard looks presentable.
+> The bare bones dashboard is not suitable for business usage. We strongly recommend [adding CSS](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard#stylecss) to the HTML template, so that the dashboard looks presentable.
 
 > The above guidelines may vary slightly based on the programming language you are using, and the customizations you want on top of the defaults.
 

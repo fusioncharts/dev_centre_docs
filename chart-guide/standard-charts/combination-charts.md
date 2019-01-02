@@ -188,7 +188,7 @@ To plot a trend-lines on a chart, follow the steps given below:
 
 > This attribute belongs to the line object, which in turn belongs to the trendlines object.
 
-FusionCharts Suite XT includes several options to customize trend elements. To know more about the trend elements in a single y-axis chart, click [here](/chart-guide/chart-configurations/trend-lines-and-zones). To know more about the dual y-axis chart, click [here](/chart-guide/chart-configurations/trend-lines-and-zones#add-trend-lines-for-a-dual-yaxis-chart-8).
+FusionCharts Suite XT includes several options to customize trend elements. To know more about the trend elements in a single y-axis chart, click [here](/chart-guide/chart-configurations/trend-lines-and-zones). To know more about the dual y-axis chart, click [here](/chart-guide/chart-configurations/trend-lines-and-zones#add-trend-lines-for-a-dual-yaxis-chart).
 
 Refer to the code given below:
 

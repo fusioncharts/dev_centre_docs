@@ -44,7 +44,7 @@ In the above code:
 
 * The first object creates the first column in the `DataTable`. In the above sample **Country** is the name of the column. 
 
-* The second object set the **date/time** [format](/fusiontime/api-reference/fusiontime-attributes#datetime-format-7) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
+* The second object set the **date/time** [format](/fusiontime/api-reference/fusiontime-attributes#datetime-format) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
 
 * The next three are the columns for three measures of the chart:
 

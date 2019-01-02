@@ -28,7 +28,7 @@ The chart configuration files are simple `.json` files. If you are executing the
 [code_executed_from_this_directory]/resources/chart-config-file.json
 ```
 
-> It is **not** mandatory to create a file containing the chart configuration. In the code, you can directly create an object containing a serialized JSON string representation of the chart configuration, and pass it on to the `ExportConfig.set()` object of the FusionExport SDK you are using. For more clarity, see the inline comments in the [template code](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality#code-4).
+> It is **not** mandatory to create a file containing the chart configuration. In the code, you can directly create an object containing a serialized JSON string representation of the chart configuration, and pass it on to the `ExportConfig.set()` object of the FusionExport SDK you are using. For more clarity, see the inline comments in the [template code](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality#code).
 
 The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes](/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
 
@@ -74,7 +74,7 @@ Before you start with the code, we suggest going through the steps that the code
 
 1. Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
 
-2. Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method.  You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method. Use the `set()` method to change the export `quality`, by passing any of the [supported qualities](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality#supported-export-quality-1) as one of its arguments.
+2. Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method.  You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method. Use the `set()` method to change the export `quality`, by passing any of the [supported qualities](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality#supported-export-quality) as one of its arguments.
 
 3. Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
 

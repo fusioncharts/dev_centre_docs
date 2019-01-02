@@ -8,9 +8,9 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 
 In this section we will discuss how to:
 
-* [Export Charts as Image and PDF](/getting-started/java/export-charts-using-java#export-charts-as-image-and-pdf-1)
-* [Modes of Export](/getting-started/java/export-charts-using-java#modes-of-export-2)
-* [Export Chart Data](/getting-started/java/export-charts-using-java#export-chart-data-3)
+* [Export Charts as Image and PDF](/getting-started/java/export-charts-using-java#export-charts-as-image-and-pdf)
+* [Modes of Export](/getting-started/java/export-charts-using-java#modes-of-export)
+* [Export Chart Data](/getting-started/java/export-charts-using-java#export-chart-data)
 
 ## Export Charts as Image and PDF
 

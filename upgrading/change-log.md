@@ -51,23 +51,23 @@ heading: Version 3.13.x
 
 * The following events have been added to FusionCharts:
 
-    * The [chartTypeInvalid](/api/fusioncharts/fusioncharts-events#charttypeinvalid-220) event will be fired if the given chart type is invalid, or the chart type is not set.
+    * The [chartTypeInvalid](/api/fusioncharts/fusioncharts-events#charttypeinvalid) event will be fired if the given chart type is invalid, or the chart type is not set.
 
-    * After invoking the render() API method, the [containerNotFound](/api/fusioncharts/fusioncharts-events#containernotfound-299) event will be fired if the chart container is not found or not provided.
+    * After invoking the render() API method, the [containerNotFound](/api/fusioncharts/fusioncharts-events#containernotfound) event will be fired if the chart container is not found or not provided.
 
-    * The [animationInvoked](/api/fusioncharts/fusioncharts-events#animationinvoked-228) event will be fired as soon as the chart animation starts.
+    * The [animationInvoked](/api/fusioncharts/fusioncharts-events#animationinvoked) event will be fired as soon as the chart animation starts.
 
-    * The [beforeDraw](/api/fusioncharts/fusioncharts-events#beforedraw-230) event will be fired whenever an entire redraw of the chart isstarted through data update, change of chart message, change of chart type, or resize.
+    * The [beforeDraw](/api/fusioncharts/fusioncharts-events#beforedraw) event will be fired whenever an entire redraw of the chart isstarted through data update, change of chart message, change of chart type, or resize.
 
-    * The [drawCancelled](/api/fusioncharts/fusioncharts-events#drawcancelled-234) event will be triggered when `preventDefault()` is called from FusionCharts event `beforeDraw`.
+    * The [drawCancelled](/api/fusioncharts/fusioncharts-events#drawcancelled) event will be triggered when `preventDefault()` is called from FusionCharts event `beforeDraw`.
 
-    * The [beforeDataLoad](/api/fusioncharts/fusioncharts-events#beforedataload-28) event will be triggered when the chart fetches data from the source but is yet to display it. It can be used with the Theme Manager to update chart data.
+    * The [beforeDataLoad](/api/fusioncharts/fusioncharts-events#beforedataload) event will be triggered when the chart fetches data from the source but is yet to display it. It can be used with the Theme Manager to update chart data.
 
 For more information regarding the events, click [here](/api/fusioncharts/fusioncharts-events).
 
 <h4>Improvements</h4>
 
-* Earlier, the [renderComplete](/api/fusioncharts/fusioncharts-events#rendercomplete-236) event was triggered every time a chart was rendered using any of the methods `render()`, `chartType()`, or `setChartData()`. It was also triggered every time chart data was successfully updated. Additionally, this event will now be fired whenever a chart is completely drawn.
+* Earlier, the [renderComplete](/api/fusioncharts/fusioncharts-events#rendercomplete) event was triggered every time a chart was rendered using any of the methods `render()`, `chartType()`, or `setChartData()`. It was also triggered every time chart data was successfully updated. Additionally, this event will now be fired whenever a chart is completely drawn.
 
 * If two ranges in an Angular gauge, Bulb gauge, or map shared the same value, the `colorRange` attribute was picking up the color of the lower range. It has been modified to ensure it always picks up the color of the upper range. For more details regarding this update, click [here](/common-use-cases/color-range-usecases).
 
@@ -208,25 +208,25 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
 <h4 class="sub-heading">New Features</h4>
 
-* FusionCharts Suite XT v3.13.0 introduces two new chart types: **[Overlapped column](/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-column-d-chart-1)** chart and **[Overlapped bar](/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-bar-d-chart-2)** chart.
+* FusionCharts Suite XT v3.13.0 introduces two new chart types: **[Overlapped column](/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-column-d-chart-1)** chart and **[Overlapped bar](/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-bar-d-chart)** chart.
 
 * Spline and Spline Area charts are now part of both FusionCharts XT and PowerCharts XT. 
 
 * Spline and Spline Area charts can now be built as part of combination charts, using the `renderAs` attribute. For example, `"renderAs": "spline"`.
 
-* A common [theme](/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) can now be applied to all charts in a page.
+* A common [theme](/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member) can now be applied to all charts in a page.
 
 * In multi-level pie chart, [highlightParentPieSlices](/chart-attributes/?chart=multilevelpie&attribute=chart_highlightparentpieslices) and [highlightChildPieSlices](/chart-attributes/?chart=multilevelpie&attribute=chart_highlightChildPieSlices) attributes have been introduced to determine the direction of the highlight effect. 
 
 * The inner radius of the multi-level pie chart can be configured explicitly using `innerRadius` attribute.
 
-* Custom fonts from client-side export can now be exported using [useCanvas](/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) option.
+* Custom fonts from client-side export can now be exported using [useCanvas](/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member) option.
 
 * Data from Multi-level Pie charts can now be exported in CSV or XLS formats.
 
 * In zoomline chart, [maxPeakDataLimit](/chart-attributes/?chart=zoomline&attribute=chart_maxpeakdatalimit) and [minPeakDataLimit](/chart-attributes/?chart=zoomline&attribute=chart_minpeakdatalimit) attributes consider the limits as a range when both the attributes are used.
 
-* [getSVGString](/api/fusioncharts/fusioncharts-methods#getsvgstring-95) now accepts an object as the second parameter with a property named `keepImages`. It can now export the logo or any images (background images, etc.) present in the chart.
+* [getSVGString](/api/fusioncharts/fusioncharts-methods#getsvgstring) now accepts an object as the second parameter with a property named `keepImages`. It can now export the logo or any images (background images, etc.) present in the chart.
 
 * In `resized` event the `id` of the chart is added under the `dataObject`.
 
@@ -234,11 +234,11 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
 * `Angular-FusionCharts` plugin has been renamed to `AngularJS-Fusioncharts`.
 * `Angular 2` and `Angular 4` plugins have been renamed to `Angular-FusionCharts`.
-* The folder structure of the download package is modified. A new folder as `integrations` is added which contains all the **client-side** and **server-side** tech stacks. For more details click [here](/upgrading/changed-behavior#updated-fusioncharts-suite-xt-download-package-5).
+* The folder structure of the download package is modified. A new folder as `integrations` is added which contains all the **client-side** and **server-side** tech stacks. For more details click [here](/upgrading/changed-behavior#updated-fusioncharts-suite-xt-download-package).
 
-* For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here](/upgrading/changed-behavior#secondary-data-plots-overlap-primary-data-plots-3) to know more.
+* For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here](/upgrading/changed-behavior#secondary-data-plots-overlap-primary-data-plots) to know more.
 
-* In order to free chart area, the restore button in select-scatter and drag-able chart has been moved to [options menu](/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
+* In order to free chart area, the restore button in select-scatter and drag-able chart has been moved to [options menu](/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart). The list of attributes which have been added are as follows:
 
     * [enableSubmit](/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablesubmit)
 
@@ -248,13 +248,13 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
     * [restoreText](/chart-attributes/?chart=dragcolumn2d&attribute=chart_restoretext)
 
-* Data plots (column and area) in the [inverse chart](/chart-guide/standard-charts/inverse-y-axis-chart) will now appear from the top of the canvas. If you would like the old behavior, click [here](/upgrading/changed-behavior#inversed-data-plot-2) to know more.
+* Data plots (column and area) in the [inverse chart](/chart-guide/standard-charts/inverse-y-axis-chart) will now appear from the top of the canvas. If you would like the old behavior, click [here](/upgrading/changed-behavior#inversed-data-plot) to know more.
 
 * The hyphen ( - ) character is now supported in the parameter of the JavaScript function of `link` attribute.
 
 * The `defaultPrevented` property in the `eventObject` is used instead of the `prevented` property.
 
-* The [onChangeCrossLine](/api/fusioncharts/fusioncharts-events#onchangecrossline-287) event is fired when the mouse pointer is moved from one data plot to another.
+* The [onChangeCrossLine](/api/fusioncharts/fusioncharts-events#onchangecrossline) event is fired when the mouse pointer is moved from one data plot to another.
 
 * Starting v3.13.0, all actions for the chart configurations & space management is executed in a separate thread before rendering the graphics of the chart (that is carried out when the `render()` function is called).
 
@@ -262,7 +262,7 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
 * The chart names in theme files are now case insensitive.
 
-* [rendered](/api/fusioncharts/fusioncharts-events#rendered-222) event will also be fired when updating the chart type.
+* [rendered](/api/fusioncharts/fusioncharts-events#rendered) event will also be fired when updating the chart type.
 
 * Starting 3.13.0, Map specification sheets should be available based on the version
     * Older Map files are supported till 3.12.2

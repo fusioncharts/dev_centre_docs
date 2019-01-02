@@ -8,9 +8,9 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 
 In this section we will discuss how to:
 
-* [Export Charts as Image and PDF](/getting-started/php/export-charts-using-php#export-charts-as-image-and-pdf-1)
-* [Modes of Export](/getting-started/php/export-charts-using-php#modes-of-export-2)
-* [Export Chart Data](/getting-started/php/export-charts-using-php#export-chart-data-3)
+* [Export Charts as Image and PDF](/getting-started/php/export-charts-using-php#export-charts-as-image-and-pdf)
+* [Modes of Export](/getting-started/php/export-charts-using-php#modes-of-export)
+* [Export Chart Data](/getting-started/php/export-charts-using-php#export-chart-data)
 
 ## Export Charts as Image and PDF
 

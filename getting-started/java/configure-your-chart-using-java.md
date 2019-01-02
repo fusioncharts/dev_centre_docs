@@ -8,9 +8,9 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure your charts using FusionCharts JSP wrapper to perform the following:
 
-* [Update Chart Data](/getting-started/java/configure-your-chart-using-java#update-chart-data-1)
+* [Update Chart Data](/getting-started/java/configure-your-chart-using-java#update-chart-data)
 
-* [Update Chart Attributes](/getting-started/java/configure-your-chart-using-java#update-chart-attributes-2)
+* [Update Chart Attributes](/getting-started/java/configure-your-chart-using-java#update-chart-attributes)
 
 ## Update Chart Data
 

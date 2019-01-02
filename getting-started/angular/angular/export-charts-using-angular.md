@@ -8,10 +8,10 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 
 In this section we will discuss how to:
 
-* [Export Charts as Image and PDF](/getting-started/angular/angular/export-charts-using-angular#export-charts-as-image-and-pdf-1)
-* [Export Multiple Charts](/getting-started/angular/angular/export-charts-using-angular#export-multiple-charts-4)
-* [Modes of Export](/getting-started/angular/angular/export-charts-using-angular#modes-of-export-7)
-* [Export Chart Data](/getting-started/angular/angular/export-charts-using-angular#export-chart-data-8)
+* [Export Charts as Image and PDF](/getting-started/angular/angular/export-charts-using-angular#export-charts-as-image-and-pdf)
+* [Export Multiple Charts](/getting-started/angular/angular/export-charts-using-angular#export-multiple-charts)
+* [Modes of Export](/getting-started/angular/angular/export-charts-using-angular#modes-of-export)
+* [Export Chart Data](/getting-started/angular/angular/export-charts-using-angular#export-chart-data)
 
 ## Export Charts as Image and PDF
 

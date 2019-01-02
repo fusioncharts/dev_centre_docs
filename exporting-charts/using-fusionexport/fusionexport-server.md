@@ -161,7 +161,7 @@ Name|Type|Defaults|Description
 
 ## Docker
 
-To run **FusionExport Server** from docker, click [here](/exporting-charts/using-fusionexport/installation/install-fusionexport-server#docker-6) for detailed installation setup. Once done, follow the steps given below:
+To run **FusionExport Server** from docker, click [here](/exporting-charts/using-fusionexport/installation/install-fusionexport-server#docker) for detailed installation setup. Once done, follow the steps given below:
 
 ### Docker Container Configs
 

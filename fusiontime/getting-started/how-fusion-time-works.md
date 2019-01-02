@@ -30,7 +30,7 @@ The above illustration is a flow diagram which defines the following:
 
 * Create a `DataStore` and load your data to create the root `DataTable`.
 
-* The data is then fed in the `DataStore`. To identify the data you need [schema](/fusiontime/getting-started/create-your-first-chart-in-fusiontime#create-the-schema-3) and [data](/fusiontime/getting-started/create-your-first-chart-in-fusiontime#create-data-4).
+* The data is then fed in the `DataStore`. To identify the data you need [schema](/fusiontime/getting-started/create-your-first-chart-in-fusiontime#create-the-schema-3) and [data](/fusiontime/getting-started/create-your-first-chart-in-fusiontime#create-data).
 
 * The root `DataTable` is then fed to the chart renderer along with chart configurations to render the chart. 
 

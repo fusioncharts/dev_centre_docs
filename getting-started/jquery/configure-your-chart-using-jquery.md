@@ -8,9 +8,9 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure the following using `jquery-fusioncharts` component:
 
-* [Update Chart Data](/getting-started/jquery/configure-your-chart-using-jquery#update-chart-data-1)
-* [Update Chart Attributes](/getting-started/jquery/configure-your-chart-using-jquery#update-chart-attributes-2)
-* [Selecting Charts in a Specific Scope](/getting-started/jquery/configure-your-chart-using-jquery#selecting-charts-in-a-specific-scope-3)
+* [Update Chart Data](/getting-started/jquery/configure-your-chart-using-jquery#update-chart-data)
+* [Update Chart Attributes](/getting-started/jquery/configure-your-chart-using-jquery#update-chart-attributes)
+* [Selecting Charts in a Specific Scope](/getting-started/jquery/configure-your-chart-using-jquery#selecting-charts-in-a-specific-scope)
 
 ## Update Chart Data
 
