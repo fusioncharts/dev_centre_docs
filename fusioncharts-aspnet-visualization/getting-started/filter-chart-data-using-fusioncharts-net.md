@@ -226,4 +226,4 @@ The `.aspx` template for the above sample is shown below:
 </html>
 ```
 
-To get the detailed description about the filter operations listed above, click [here]({% site.baseurl %}/fusioncharts-aspnet-visualization/data-engine/filter-data).
+To get the detailed description about the filter operations listed above, click [here](/fusioncharts-aspnet-visualization/data-engine/filter-data).

@@ -6,7 +6,7 @@ heading: Data Value
 
 Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart.
 
-![Data Value]({% site.baseurl %}/images/fusioncharts-net-data-value.png)
+![Data Value](/images/fusioncharts-net-data-value.png)
 
 ## Customize Data Value
 
