@@ -134,27 +134,23 @@
          "children": [
             {
                "title": "FusionCharts Constructor",
-               "link": "/dev/api/fusioncharts"
+               "link": "/api/fusioncharts"
             },
             {
                "title": "Events",
-               "link": "/dev/api/fusioncharts/fusioncharts-events"
+               "link": "/api/fusioncharts/fusioncharts-events"
             },
             {
                "title": "Methods",
-               "link": "/dev/api/fusioncharts/fusioncharts-methods"
+               "link": "/api/fusioncharts/fusioncharts-methods"
             },
             {
                "title": "Properties",
-               "link": "/dev/api/fusioncharts/fusioncharts-properties"
+               "link": "/api/fusioncharts/fusioncharts-properties"
             },
             {
                "title": "Type Definitions",
-               "link": "/dev/api/fusioncharts/fusioncharts-typedefs"
-            },
-            {
-               "title": "Global Methods",
-               "link": "/dev/api/global-methods"
+               "link": "/api/fusioncharts/fusioncharts-typedefs"
             }
          ]
       },
