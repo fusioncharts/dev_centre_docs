@@ -155,8 +155,12 @@
          ]
       },
       {
-         "title": "v3.13.3",
+         "title": "v3.13.3-sr1",
          "children": [
+            {
+               "title": "v3.13.3",
+               "link": "https://docs.fusioncharts.com/archive/3.13.3/"
+            },
             {
                "title": "v3.13.2-sr.1",
                "link": "https://docs.fusioncharts.com/archive/3.13.2-sr.1/"
