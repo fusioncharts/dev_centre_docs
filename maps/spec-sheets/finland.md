@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x470
 
 
 
-{% embed_spec_map finland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 14|EF|Eastern Finland
 06|LA|Lapland
 08|OU|Oulu

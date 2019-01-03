@@ -10,12 +10,12 @@ Dimensions (Width x Height): 371x441
 
 
 
-{% embed_spec_map manipur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.MN.BI|BI|Bishnupur
 IN.MN.CD|CD|Chandel
 IN.MN.CC|CC|Churachandpur

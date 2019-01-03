@@ -9,12 +9,12 @@ Dimensions (Width x Height): 290x430
 
 
 
-{% embed_spec_map kerala-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.KL.AL|AL|Alappuzha
 IN.KL.ER|ER|Ernakulam
 IN.KL.ID|ID|Idukki

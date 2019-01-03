@@ -9,11 +9,11 @@ Dimensions (Width x Height): 600x594
 
 
 
-{% embed_spec_map qina-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|QI|Qina
 

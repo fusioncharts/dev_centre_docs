@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kurdistan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.KD.BA|BA|Baneh County
 IR.KD.BI|BI|Bijar County
 IR.KD.DE|DE|Dehgolan County

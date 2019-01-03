@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map southhwanghae-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KP.AN|AN|Anak
 KP.BC|BC|Baechon
 KP.BO|BO|Bongchon

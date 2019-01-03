@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ovorkhangai-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.OH.AR | AR | Arvaikheer
 MN.OH.BU | BU | Baruun Bayan-Ulaan
 MN.OH.BZ | BZ | Bat-Ölzii

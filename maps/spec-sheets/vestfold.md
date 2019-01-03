@@ -9,12 +9,12 @@ Dimensions (Width x Height): 355x600
 
 
 
-{% embed_spec_map vestfold-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.VF.AN|AN|Andebu
 NO.VF.HF|HF|Hof
 NO.VF.HS|HS|Holmestrand

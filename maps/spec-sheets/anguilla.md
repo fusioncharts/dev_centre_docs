@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x320
 
 
 
-{% embed_spec_map anguilla-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.AN.AN|AN|Anguilla (administered by United kingdom)
 CA.AN.AI|AI|Anguilla Island
 CA.AN.PP|PP|Prickly Pear Cays

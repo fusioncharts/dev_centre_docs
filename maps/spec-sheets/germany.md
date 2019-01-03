@@ -9,12 +9,12 @@ Dimensions (Width x Height): 447x576
 
 
 
-{% embed_spec_map germany-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|BA|Baden-Wuerttemberg
 002|BY|Bayern
 003|BE|Berlin

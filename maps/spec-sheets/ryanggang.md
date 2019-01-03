@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ryanggang-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KP.BA|BA|Baekam
 KP.BO|BO|Bochon
 KP.HY|HY|Hyesan

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1100x760
 
 
 
-{% embed_spec_map santacatarina-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 4200051|AB|Abdon Batista
 4200101|AL|Abelardo Luz
 4200200|AG|Agrolândia

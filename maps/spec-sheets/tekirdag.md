@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map tekirdag-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.TG.CE | CE | Çerkezköy
 TR.TG.CO | CO | Çorlu
 TR.TG.HA | HA | Hayrabolu

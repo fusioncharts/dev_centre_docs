@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x600
 
 
 
-{% embed_spec_map southatlanticdma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 525|ALB-GA|ALBANY,GA
 524|ATL-GA|ATLANTA
 520|AUG-GA|AUGUSTA

@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map manatuto-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TL.MT.BN|BN|Barique
 TL.MT.LO|LO|Laclo
 TL.MT.LB|LB|aclubar

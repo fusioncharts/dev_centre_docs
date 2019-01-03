@@ -106,15 +106,15 @@ The above chart shows the US Subway Map and uses draggable nodes to mark locatio
 
 Follow the steps given below to add a new node to the above subway map chart.
 
-* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-1.png) </span> option. Note that a menu is rendered.
+* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1](/images/standard-charts-drag-node-chart-image-1.png) </span> option. Note that a menu is rendered.
 
 * From the menu, select **Add a node**.
 
-![image add-node-image-2]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-2.png)
+![image add-node-image-2](/images/standard-charts-drag-node-chart-image-2.png)
 
 You will see a node properties dialog box, as shown in the image below:
 
-![image add-node-image-3]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-3.jpg)
+![image add-node-image-3](/images/standard-charts-drag-node-chart-image-3.jpg)
 
 * In this dialog box, enter the node information, and finally click the **Submit** button.
 
@@ -162,11 +162,11 @@ Here's how to fill in the different fields in the dialog box:
 
 The dialog box will look like the one shown below:
 
-![image add-node-image-4]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-4.jpg)
+![image add-node-image-4](/images/standard-charts-drag-node-chart-image-4.jpg)
 
 Now, when you click on the **Submit** button, the newly created node will look like the following:
 
-![image add-node-image-5]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-5.jpg)
+![image add-node-image-5](/images/standard-charts-drag-node-chart-image-5.jpg)
 
 > Note: You can define nodes in the chart data using the `data` object of the `dataset` object.
 
@@ -194,11 +194,11 @@ You can edit all of the properties of a node, except for the ID and the dataset 
 
 The dialog box will look like as shown below:
 
-![image add-node-image-6]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-6.jpg)
+![image add-node-image-6](/images/standard-charts-drag-node-chart-image-6.jpg)
 
 Now, when you click on the **Submit** button, the edited node will look like the following:
 
-![image add-node-image-7]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-7.jpg)
+![image add-node-image-7](/images/standard-charts-drag-node-chart-image-7.jpg)
 
 When you edit a node, a JavaScript event named `nodeUpdated` is raised. You can trap and use this event to customize the output according to your requirements.
 
@@ -218,7 +218,7 @@ To delete a node:
 
 * In the dialog box, click **Delete** button. The node will be deleted.
 
-![image add-node-image-8]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-8.jpg)
+![image add-node-image-8](/images/standard-charts-drag-node-chart-image-8.jpg)
 
 When you delete a node, a JavaScript event named `nodeDeleted` is raised. You can trap and use this event to customize the output according to your requirements.
 
@@ -250,15 +250,15 @@ In the above chart, the "My Edited Location" node does not have any connectors c
 
 To add a connector:
 
-* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-connector-image-25.png) </span> option. A menu will be rendered.
+* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1](/images/standard-charts-drag-node-chart-connector-image-25.png) </span> option. A menu will be rendered.
 
 * From the menu, select **Add a Connector**.
 
-![image add-connector-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-9.png)
+![image add-connector-image-1](/images/standard-charts-drag-node-chart-image-9.png)
 
 The connector properties dialog box, as seen in the image below, will appear:
 
-![image add-connector-image-2]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-10.jpg)
+![image add-connector-image-2](/images/standard-charts-drag-node-chart-image-10.jpg)
 
 * In this dialog box, enter the connector information.
 
@@ -296,11 +296,11 @@ Here's how to fill in the different fields in the dialog box:
 
 The image below shows the fields of the dialog box populated for a new connector:
 
-![image add-connector-image-3]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-11.jpg)
+![image add-connector-image-3](/images/standard-charts-drag-node-chart-image-11.jpg)
 
 Now, when you click the **Submit** button, the new connector created will look like the following:
 
-![image add-connector-image-4]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-12.jpg)
+![image add-connector-image-4](/images/standard-charts-drag-node-chart-image-12.jpg)
 
 You can define connectors in chart data too. Each connector line is defined in the data of the chart as an object in the connectors array element.
 
@@ -328,11 +328,11 @@ To edit a connector:
 
 The dialog box will look like the one shown below:
 
-![image add-connector-image-5]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-13.jpg)
+![image add-connector-image-5](/images/standard-charts-drag-node-chart-image-13.jpg)
 
 The edited connector will look like the following:
 
-![image add-connector-image-6]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-14.jpg)
+![image add-connector-image-6](/images/standard-charts-drag-node-chart-image-14.jpg)
 
 When you edit a connector, a JavaScript event named `connectorUpdated` is raised. You can trap and use this event to customize the output according to your requirements.
 
@@ -352,7 +352,7 @@ To delete a connector:
 
 * From the dialog box, click **Delete**. The connector will be deleted.
 
-![image add-connector-image-7]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-15.jpg)
+![image add-connector-image-7](/images/standard-charts-drag-node-chart-image-15.jpg)
 
 When you delete a connector, a JavaScript event named `connectorDeleted` is raised. You can trap and use this event to customize the output according to your requirements.
 
@@ -382,11 +382,11 @@ The above chart shows the US Subway Map and uses draggable nodes to mark locatio
 
 To add a new text label:
 
-* From the bottom-left corner of the chart, click the <span>![Drag-node-image]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-26.png)</span> option. A menu is rendered.
+* From the bottom-left corner of the chart, click the <span>![Drag-node-image](/images/standard-charts-drag-node-chart-image-26.png)</span> option. A menu is rendered.
 
 * From the menu, select **Add a Label**. The label properties dialog box, as seen in the image below, will appear:
 
-![image add-text-label-at-runtime-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-16.jpg)
+![image add-text-label-at-runtime-image-1](/images/standard-charts-drag-node-chart-image-16.jpg)
 
 * In the label properties dialog, enter the label information.
 
@@ -414,11 +414,11 @@ Here's how to fill in the different fields in the dialog box:
 
 The dialog box will look like as shown below:
 
-![image add-text-label-at-runtime-image-2]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-17.jpg)
+![image add-text-label-at-runtime-image-2](/images/standard-charts-drag-node-chart-image-17.jpg)
 
 Now, when you click the **Submit** button, the new label created will look like the following:
 
-![image add-text-label-at-runtime-image-3]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-18.jpg)
+![image add-text-label-at-runtime-image-3](/images/standard-charts-drag-node-chart-image-18.jpg)
 
 You can drag the label to any position on the chart.
 
@@ -440,7 +440,7 @@ To delete a text label:
 
 * Press and hold the left mouse button on the label that you want to delete. A dialog box will appear and ask you to confirm the deletion.
 
-![image add-text-label-at-runtime-image-4]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-19.jpg)
+![image add-text-label-at-runtime-image-4](/images/standard-charts-drag-node-chart-image-19.jpg)
 
 * In the dialog box, click the **Delete** button. The label will be deleted.
 
@@ -558,7 +558,7 @@ Now, make the following updates to this drag-node chart:
 
 The chart will look as shown in the image below:
 
-![add-a-node-and-connector]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-21.jpg)
+![add-a-node-and-connector](/images/standard-charts-drag-node-chart-image-21.jpg)
 
 Now if you want to get the current data using the code `var jsonRtn = ourChart.getJSONData(); alert(JSON.stringify(jsonRtn));`, the updated data will be shown in the chart. The modified part of the updated data is shown in the code snippet given below:
 

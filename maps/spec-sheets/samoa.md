@@ -9,12 +9,12 @@ Dimensions (Width x Height): 801x391
 
 
 
-{% embed_spec_map samoa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 WS.AA|AA|A'ana
 WS.AL|AL|Aiga-i-le-Tai
 WS.AT|AT|Atua

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map bengkulu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.BE.BE|BE|Bengkulu City
 ID.BE.BN|BN|Central Bengkulu Regency (Bengkulu Tengah)
 ID.BE.KA|KA|Kaur Regency

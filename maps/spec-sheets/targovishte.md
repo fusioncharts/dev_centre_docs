@@ -9,12 +9,12 @@ Dimensions (Width x Height): 597x578
 
 
 
-{% embed_spec_map targovishte-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 04|AN|Antonovo
 03|OM|Omurtag
 05|OP|Opaka

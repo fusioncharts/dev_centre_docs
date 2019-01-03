@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kabul-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.KB.BA|BA|Bagrami
 AF.KB.CA|CA|Chahar Asyab
 AF.KB.DS|DS|Dih Sabz

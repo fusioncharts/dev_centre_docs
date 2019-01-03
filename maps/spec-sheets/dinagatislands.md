@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map dinagatislands-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.DI.BS | BS | Basilisa
 PH.DI.CG | CG | Cagdianao
 PH.DI.DN | DN | Dinagat

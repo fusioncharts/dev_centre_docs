@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x320
 
 
 
-{% embed_spec_map hungary-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|BA|Baranya
 04|BO|Borsod-Abaúj-Zemplén
 05|BU|Budapest

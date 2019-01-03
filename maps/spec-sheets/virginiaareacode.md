@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x215
 
 
 
-{% embed_spec_map virginiaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 276|276|276
 434|434|434
 540|540|540

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x460
 
 
 
-{% embed_spec_map englandregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 06|EA|East
 04|EM|East Midlands
 07|LO|London

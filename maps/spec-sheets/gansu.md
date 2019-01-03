@@ -9,12 +9,12 @@ Dimensions (Width x Height): 692x503
 
 
 
-{% embed_spec_map gansu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 943|BA|Baiyin
 932|DI|Dingxi
 941|GA|Gannan

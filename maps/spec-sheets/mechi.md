@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map mechi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.ME.IL|IL|Ilam
 NP.ME.JH|JH|Jhapa
 NP.ME.PN|PN|Panchtar

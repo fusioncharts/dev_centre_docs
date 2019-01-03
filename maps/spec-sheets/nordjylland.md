@@ -9,12 +9,12 @@ Dimensions (Width x Height): 757x530
 
 
 
-{% embed_spec_map nordjylland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AA|Aalborg
 02|BD|Brønderslev
 03|FR|Frederikshavn

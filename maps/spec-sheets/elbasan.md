@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x493
 
 
 
-{% embed_spec_map elbasan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|EL|Elbasan
 02|GR|Gramsh
 03|LB|Librazhd

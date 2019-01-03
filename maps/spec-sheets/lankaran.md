@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x460
 
 
 
-{% embed_spec_map lankaran-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AA|AA|Astara
 CL|CL|Jalilabad
 LN|LN|Lankaran

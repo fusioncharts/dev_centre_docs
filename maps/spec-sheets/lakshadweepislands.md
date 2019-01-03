@@ -10,12 +10,12 @@ Dimensions (Width x Height): 270x500
 
 
 
-{% embed_spec_map lakshadweepislands-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.LD.AG|AG|AG|Agatti Island
 IN.LD.AM|AM|Amini Island
 IN.LD.AIAI|Androth Island

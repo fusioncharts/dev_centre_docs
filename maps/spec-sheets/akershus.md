@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x588
 
 
 
-{% embed_spec_map akershus-map.js %}
+
 
 ### List of Entities
 
 ID| Short label | Label
----|---|---|---
+---|---|---|
 NO.AK.AK|AK|Asker
 NO.AK.AH|AH|Aurskog-Høland
 NO.AK.BA|BA|Bærum

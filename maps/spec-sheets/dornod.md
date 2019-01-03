@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map dornod-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.DD.BD | BD | Bayandun
 MN.DD.BT | BT | Bayantümen
 MN.DD.BU | BU | Bayan-Uul

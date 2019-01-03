@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x590
 
 
 
-{% embed_spec_map akita-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Akita
 002|002|Daisen
 003|003|Katagami

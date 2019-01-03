@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x370
 
 
 
-{% embed_spec_map syria-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SY.HA|HA|Al Hasakah
 SY.HL|HL|Aleppo
 SY.RA|RA|Ar Raqqah

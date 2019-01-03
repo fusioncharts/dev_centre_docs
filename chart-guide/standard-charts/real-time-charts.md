@@ -88,7 +88,7 @@ To create a real-time chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimeline) page of real-time line chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimeline) page of real-time line chart.
 
 A real-time line chart looks like:
 
@@ -100,7 +100,7 @@ Click [here](http://jsfiddle.net/fusioncharts/43fJn/) to edit the real-time line
 
 To create a real-time area chart, set the `type` attribute to `realtimearea` chart. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimearea) page of real-time area chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimearea) page of real-time area chart.
 
 A real-time area chart looks like:
 
@@ -114,7 +114,7 @@ Now, let's create a real-time stacked area chart showcasing the number of live v
 
 To create a real-time chart, set the `type` attribute to `realtimestackedarea`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimestackedarea) page of real-time stacked area chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimestackedarea) page of real-time stacked area chart.
 
 A real-time stacked area chart looks like:
 
@@ -128,7 +128,7 @@ In the above samples, we rendered real-time line and area charts. Let's now crea
 
 To create a real-time column chart, set the `type` attribute to `realtimecolumn`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimecolumn) page of real-time column chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimecolumn) page of real-time column chart.
 
 A real-time column chart looks like:
 
@@ -142,7 +142,7 @@ FusionCharts also supports real-time stacked column chart. Here the sample below
 
 To create a real-time stacked column chart, set the `type` attribute to `realtimestackedcolumn`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimestackedcolumn) page of real-time stacked column chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimestackedcolumn) page of real-time stacked column chart.
 
 A real-time stacked column chart looks like:
 
@@ -154,7 +154,7 @@ Click [here](http://jsfiddle.net/fusioncharts/bLUw5/) to edit the real-time stac
 
 To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimelinedy) page of real-time dual y-axis line chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimelinedy) page of real-time dual y-axis line chart.
 
 A real-time dual y-axis line chart looks like:
 
@@ -355,7 +355,7 @@ Like most other charts in the FusionCharts Suite XT, real-time charts with multi
 
 The image below is a screenshot of the above real-time chart with the Online transactions dataset hidden:
 
-![real-time charts]({% site.baseurl %}/images/standard-charts-real-time-charts-image-1.png)
+![real-time charts](/images/standard-charts-real-time-charts-image-1.png)
 
 Even when a dataset is not visible, it will continue updating itself in the background from the real-time data. Also, all alert managers associated with the dataset will continue to work.
 
@@ -662,7 +662,7 @@ The FusionCharts Suite XT message logger has the following features:
 
 A simple message logger looks as shown in the image below:
 
-![Message Logger]({% site.baseurl %}/images/real-time-charts-image-1.png)
+![Message Logger](/images/real-time-charts-image-1.png)
 
 In the above image, we have a real-time column chart that monitors the footfalls at Bakersfield Central. Overlapping this chart is the message logger that contains messages that were streamed to the message logger by the server.
 
@@ -698,11 +698,11 @@ The following code snippet enables the use of the message logger for a real-time
 
 When the first message is streamed to the chart from server, the message logger is displayed as shown in the image below:
 
-![First Message]({% site.baseurl %}/images/real-time-charts-image-2.png)
+![First Message](/images/real-time-charts-image-2.png)
 
 A close button appears at the top-right corner of the message logger window that you can use to close the message logger. Or you can click anywhere outside the message logger window. To re-open the message logger, click the `Show Log` option from the context menu, as shown in the image below:
 
-![Context Menu]({% site.baseurl %}/images/real-time-charts-image-3.png)
+![Context Menu](/images/real-time-charts-image-3.png)
 
 The `messageGoesToJS` attribute is used to pass only the "Message Text" parameter to the JavaScript function, whereas, the `messagePassAllToJS` is used to pass all the four parameters to the JavaScript function.
 
@@ -750,7 +750,7 @@ The `&msgTitle` and `&msgText` parameters are absorbed by the message logger. `&
 
 When a chart (with `useMessageLog` set to `1`) accepts this data stream, the message logger, as shown in the image below, is displayed:
 
-![Data Stream]({% site.baseurl %}/images/real-time-charts-image-4.png)
+![Data Stream](/images/real-time-charts-image-4.png)
 
 > If you are passing any special characters as part of your message text or title (like &, %, etc.), you will need to URL Encode the text/title.
 
@@ -842,7 +842,7 @@ var chartRef =  getChartFromId("myChartId");
 
 However, note that `getChartFromId()` has been deprecated.
 
-> You can call the JavaScript APIs of a chart only after it has rendered. You can use the [rendered event listener]({% site.baseurl %}/api/fusioncharts/fusioncharts-events) to check if a chart has rendered.
+> You can call the JavaScript APIs of a chart only after it has rendered. You can use the [rendered event listener](/api/fusioncharts/fusioncharts-events) to check if a chart has rendered.
 
 Once you have obtained the reference to the chart, you can use any of the functions below on the chart's logger:
 
@@ -1137,7 +1137,7 @@ The details of these objects are explained below:
 
     * **sender** : A FusionCharts JavaScript Object reference to the chart that has raised the event. `argumentsObject`, the second argument, contains details of the event fired. Depending on the type of event raised, the properties of the object vary.
 
-For more information on simple and advanced events and the `argumentsObject` for each event, refer to the [FusionCharts Events API]({% site.baseurl %}/api/fusioncharts/fusioncharts-events) page.
+For more information on simple and advanced events and the `argumentsObject` for each event, refer to the [FusionCharts Events API](/api/fusioncharts/fusioncharts-events) page.
 
 ## Real-time Events
 

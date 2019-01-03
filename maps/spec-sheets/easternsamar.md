@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map easternsamar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.ES.AT | AT | Arteche
 PH.ES.BL | BL | Balangiga
 PH.ES.BK | BK | Balangkayan

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 901x421
 
 
 
-{% embed_spec_map kentucky-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adair
 003|AL|Allen
 005|AN|Anderson

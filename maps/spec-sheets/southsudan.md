@@ -9,12 +9,12 @@ Dimensions (Width x Height): 417x314
 
 
 
-{% embed_spec_map southsudan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SD.BG|BG|Central Equatoria
 SD.EE|EE|Eastern Equatoria
 SD.JG|JG|Jonglei

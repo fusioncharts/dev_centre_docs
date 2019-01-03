@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x520
 
 
 
-{% embed_spec_map dalarna-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.KO.AV|AV|Avesta
 SE.KO.BO|BO|Borlänge
 SE.KO.FA|FA|Falun

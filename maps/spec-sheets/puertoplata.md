@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map puertoplata-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.PP.AL|AL|Altamira
 DO.PP.GU|GU|Guananico
 DO.PP.IM|IM|Imbert

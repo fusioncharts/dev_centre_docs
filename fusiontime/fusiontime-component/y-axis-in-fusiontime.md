@@ -24,7 +24,7 @@ yAxis: [{
 ```
 Refer to the image below:
 
-<img src="{% site.baseurl %}/images/fusiontime-component-y-axis.png" alt="Y-axis" width="700" height="420">
+<img src="{% site.BASE_URL %}/images/fusiontime-component-y-axis.png" alt="Y-axis" width="700" height="420">
 
 An array of strings is applicable when you want to provide different configurations for multiple canvases. Refer to the code below:
 

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map agusandelnorte-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.AN.BE | BE | Buenavista
 PH.AN.BT | BT | Butuan
 PH.AN.CB | CB | Cabadbaran

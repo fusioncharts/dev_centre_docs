@@ -9,12 +9,12 @@ Dimensions (Width x Height): 475x468
 
 
 
-{% embed_spec_map michiganareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 231|231|231
 248-947|248-947|248-947
 269|269|269

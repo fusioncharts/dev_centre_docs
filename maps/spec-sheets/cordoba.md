@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x580
 
 
 
-{% embed_spec_map cordoba-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.CO.AY|AY|Ayapel
 CO.CO.BU|BU|Buenavista
 CO.CO.CA|CA|Canalete

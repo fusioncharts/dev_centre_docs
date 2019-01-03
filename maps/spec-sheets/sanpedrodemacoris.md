@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sanpedrodemacoris-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.PM.CO|CO|Consuelo
 DO.PM.GY|GY|Guayacanes
 DO.PM.QQ|QQ|Quisqueya

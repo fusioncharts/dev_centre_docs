@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map qazvin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.QZ.AB|AB|Abyek County
 IR.QZ.AL|AL|Alborz County
 IR.QZ.AV|AV|Avaj County

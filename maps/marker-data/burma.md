@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -194,14 +194,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -410,70 +411,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='MM.AY'  />
-		<entity id='MM.BA'  />
-		<entity id='MM.CH'  />
-		<entity id='MM.KC'  />
-		<entity id='MM.KH'  />
-		<entity id='MM.KN'  />
-		<entity id='MM.MG'  />
-		<entity id='MM.MD'  />
-		<entity id='MM.MO'  />
-		<entity id='MM.RA'  />
-		<entity id='MM.SA'  />
-		<entity id='MM.SH'  />
-		<entity id='MM.TN'  />
-		<entity id='MM.YA'  />
-	</data>
-	<markers>
-	    <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'  fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='YA' x='259.39' y='734.39' label='Yangon'  />
-			<marker id='01' x='356.03' y='170.84' label='Myitkina' labelPos='right'  />
-			<marker id='02' x='341.79' y='266.46' label='Bhamo'  />
-			<marker id='03' x='213.62' y='380.39' label='Monywa'  />
-			<marker id='04' x='191.24' y='470.93' label='Chauk' labelPos='left'  />
-			<marker id='05' x='61.03' y='527.89' label='Sittwe' labelPos='left'  />
-			<marker id='06' x='216.67' y='586.89' label='Pyay'  />
-			<marker id='07' x='283.81' y='699.81' label='Bago'  />
-			<marker id='08' x='170.89' y='746.6' label='Pathein'  />
-			<marker id='09' x='345.86' y='759.82' label='Mawlamyine' labelPos='right'  />
-			<marker id='10' x='394.68' y='905.29' label='Dawei'  />
-			<marker id='11' x='430.29' y='1018.2' label='Beik' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='YA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

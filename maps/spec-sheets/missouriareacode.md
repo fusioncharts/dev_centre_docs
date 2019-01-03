@@ -9,12 +9,12 @@ Dimensions (Width x Height): 470x415
 
 
 
-{% embed_spec_map missouriareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 314|314|314
 417|417|417
 573|573|573

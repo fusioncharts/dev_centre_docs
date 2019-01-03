@@ -9,11 +9,11 @@ Dimensions (Width x Height): 300x380
 
 
 
-{% embed_spec_map rhodeislandareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 401|401|401
 

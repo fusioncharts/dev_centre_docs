@@ -9,12 +9,12 @@ Dimensions (Width x Height): 220x170
 
 
 
-{% embed_spec_map usasoutheastregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AL|Alabama
 05|AR|Arkansas
 12|FL|Florida

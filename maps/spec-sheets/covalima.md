@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map covalima-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TL.CL.FL|FL|Fatululic
 TL.CL.FM|FM|Fatumean
 TL.CL.FO|FO|Fohorem

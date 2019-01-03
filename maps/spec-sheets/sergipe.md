@@ -9,12 +9,12 @@ Dimensions (Width x Height): 900x1000
 
 
 
-{% embed_spec_map sergipe-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2800100|AS|Amparo de São Francisco
 2800209|AQ|Aquidabã
 2800308|AR|Aracaju

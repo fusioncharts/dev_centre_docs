@@ -123,7 +123,7 @@ Create the `ColumnChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```aspnet
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -228,4 +228,4 @@ The `.aspx` template for the above sample is shown below:
 </html>
 ```
 
-To get the detailed description about the filter operations listed above, click [here]({% site.baseurl %}/fusioncharts-aspnet-visualization/data-engine/filter-data).
+To get the detailed description about the filter operations listed above, click [here](/fusioncharts-aspnet-visualization/data-engine/filter-data).

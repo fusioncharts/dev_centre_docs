@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -436,14 +436,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -1002,137 +1003,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		  <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	</shapes>
-		<definition>
-			<marker id='PH' x='320.57' y='413.68' label='Phoenix '  />
-			<marker id='GL' x='299.23' y='414.69' label='Glendale' labelPos='left' />
-			<marker id='SC' x='343.95' y='418.76' label='Scottsdale' labelPos='right' />
-			<marker id='ME' x='356.15' y='438.07' label='Mesa' labelPos='right' />
-			<marker id='TE' x='336.84' y='434.01' label='Tempe' labelPos='left' />
-			<marker id='CH' x='345.98' y='453.32' label='Chandler' labelPos='right' />
-			<marker id='CG' x='317.52' y='515.32' label='Casa Grande'  />
-			<marker id='EL' x='334.8' y='532.6' label='Eloy'  />
-			<marker id='MA' x='380.54' y='549.88' label='Marana'  />
-			<marker id='OV' x='410.02' y='560.04' label='Oro Valley' labelPos='right' />
-			<marker id='TU' x='416.12' y='583.42' label='Tucson'  />
-			<marker id='BE' x='447.63' y='603.75' label='Benson'  />
-			<marker id='TO' x='498.45' y='626.11' label='Tombstone'  />
-			<marker id='DO' x='535.04' y='670.83' label='Douglas'  />
-			<marker id='BB' x='504.54' y='653.55' label='Bisbee'  />
-			<marker id='No' x='396.8' y='674.9' label='Nogales'  />
-			<marker id='SV' x='433.4' y='641.35' label='Sierra Vista'  />
-			<marker id='GV' x='370.38' y='609.85' label='Green Valley'  />
-			<marker id='SE' x='293.13' y='567.16' label='Sells'  />
-			<marker id='LU' x='177.26' y='603.75' label='Lukeville'  />
-			<marker id='SL' x='2.43' y='541.75' label='San Luis' labelPos='right' />
-			<marker id='Yu' x='23.78' y='516.34' label='Yuma'  />
-			<marker id='PA' x='56.3' y='349.64' label='Parber'  />
-			<marker id='LA' x='48.17' y='305.94' label='Lake Havasu City'  />
-			<marker id='BU' x='26.83' y='233.77' label='Bullhead City'  />
-			<marker id='KI' x='74.6' y='204.3' label='Kingman'  />
-			<marker id='CC' x='173.19' y='9.14' label='Colorado City' labelPos='bottom' />
-			<marker id='PG' x='305.33' y='23.37' label='Page'  />
-			<marker id='KY' x='436.44' y='48.78' label='Kayenta'  />
-			<marker id='TC' x='380.54' y='115.87' label='Tuba City'  />
-			<marker id='PU' x='461.86' y='153.47' label='Pulacca'  />
-			<marker id='WR' x='562.48' y='182.95' label='Window Rock' labelPos='left' />
-			<marker id='SJ' x='540.12' y='303.9' label='St Johns'  />
-			<marker id='SF' x='452.71' y='305.94' label='Snowflake'  />
-			<marker id='EG' x='521.82' y='335.41' label='Eagar'  />
-			<marker id='AL' x='550.28' y='376.07' label='Alpine'  />
-			<marker id='CL' x='539.1' y='507.19' label='Clinton'  />
-			<marker id='SD' x='510.64' y='538.7' label='Salford'  />
-			<marker id='WI' x='509.63' y='573.25' label='Willcox'  />
-			<marker id='AJ' x='149.82' y='533.61' label='Aja'  />
-			<marker id='GB' x='154.9' y='478.73' label='Gila Bend'  />
-			<marker id='BC' x='247.39' y='431.97' label='Buckeye' labelPos='left' />
-			<marker id='WC' x='253.49' y='341.51' label='Wickenberg'  />
-			<marker id='PR' x='276.87' y='282.56' label='Prescott'  />
-			<marker id='CO' x='316.51' y='244.95' label='Cottonwood'  />
-			<marker id='FL' x='362.25' y='208.36' label='Flagstaff'  />
-			<marker id='WL' x='312.44' y='188.03' label='Williams'  />
-			<marker id='AF' x='252.47' y='176.85' label='Ask Fork'  />
-			<marker id='PS' x='154.9' y='146.36' label='Peach Springs'  />
-			<marker id='GC' x='244.34' y='101.64' label='Grand Canyon'  />
-			<marker id='SN' x='375.46' y='231.74' label='Selona'  />
-			<marker id='CH' x='459.82' y='163.64' label='Chinle' labelPos='left' />
-
-
-		</definition>
-		<application>
-			<marker id='PH' shapeId='myCustomShape'  />
-			<marker id='GL' shapeId='newCustomShape'  />
-			<marker id='SC' shapeId='newCustomShape'  />
-			<marker id='ME' shapeId='newCustomShape'  />
-			<marker id='TE' shapeId='newCustomShape'  />
-			<marker id='CH' shapeId='newCustomShape'  />
-			<marker id='CG' shapeId='newCustomShape'  />
-			<marker id='EL' shapeId='newCustomShape'  />
-			<marker id='MA' shapeId='newCustomShape'  />
-			<marker id='OV' shapeId='newCustomShape'  />
-			<marker id='TU' shapeId='newCustomShape'  />
-			<marker id='BE' shapeId='newCustomShape'  />
-			<marker id='TO' shapeId='newCustomShape'  />
-			<marker id='DO' shapeId='newCustomShape'  />
-			<marker id='BB' shapeId='newCustomShape'  />
-			<marker id='No' shapeId='newCustomShape'  />
-			<marker id='SV' shapeId='newCustomShape'  />
-			<marker id='GV' shapeId='newCustomShape'  />
-			<marker id='SE' shapeId='newCustomShape'  />
-			<marker id='LU' shapeId='newCustomShape'  />
-			<marker id='SL' shapeId='newCustomShape'  />
-			<marker id='Yu' shapeId='newCustomShape'  />
-			<marker id='PA' shapeId='newCustomShape'  />
-			<marker id='LA' shapeId='newCustomShape'  />
-			<marker id='BU' shapeId='newCustomShape'  />
-			<marker id='KI' shapeId='newCustomShape'  />
-			<marker id='CC' shapeId='newCustomShape'  />
-			<marker id='PG' shapeId='newCustomShape'  />
-			<marker id='KY' shapeId='newCustomShape'  />
-			<marker id='TC' shapeId='newCustomShape'  />
-			<marker id='PU' shapeId='newCustomShape'  />
-			<marker id='WR' shapeId='newCustomShape'  />
-			<marker id='SJ' shapeId='newCustomShape'  />
-			<marker id='SF' shapeId='newCustomShape'  />
-			<marker id='EG' shapeId='newCustomShape'  />
-			<marker id='AL' shapeId='newCustomShape'  />
-			<marker id='CL' shapeId='newCustomShape'  />
-			<marker id='SD' shapeId='newCustomShape'  />
-			<marker id='WI' shapeId='newCustomShape'  />
-			<marker id='AJ' shapeId='newCustomShape'  />
-			<marker id='GB' shapeId='newCustomShape'  />
-			<marker id='BC' shapeId='newCustomShape'  />
-			<marker id='WC' shapeId='newCustomShape'  />
-			<marker id='PR' shapeId='newCustomShape'  />
-			<marker id='CO' shapeId='newCustomShape'  />
-			<marker id='FL' shapeId='newCustomShape'  />
-			<marker id='WL' shapeId='newCustomShape'  />
-			<marker id='AF' shapeId='newCustomShape'  />
-			<marker id='PS' shapeId='newCustomShape'  />
-			<marker id='GC' shapeId='newCustomShape'  />
-			<marker id='SN' shapeId='newCustomShape'  />
-			<marker id='CH' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

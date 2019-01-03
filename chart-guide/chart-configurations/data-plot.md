@@ -287,7 +287,7 @@ Refer to the code below:
 
 Shown below is a chart with hover effects enabled:
 
-![Data plot hover effect]({% site.baseurl %}/gif/configurations-dataplot-gif-1.gif)
+![Data plot hover effect](/gif/configurations-dataplot-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/znr9r87z/) to edit the above chart.
 
@@ -339,6 +339,6 @@ Refer to the code below:
 
 Shown below is a chart with hover effects enabled for an individual data plot:
 
-![Data plot hover effect]({% site.baseurl %}/gif/configurations-dataplot-gif-2.gif)
+![Data plot hover effect](/gif/configurations-dataplot-gif-2.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/5rgy5Let/) to edit the above chart.

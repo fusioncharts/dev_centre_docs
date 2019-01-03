@@ -9,12 +9,12 @@ Dimensions (Width x Height): 170x210
 
 
 
-{% embed_spec_map swaziland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SZ.HH|HH|Hhohho
 SZ.LU|LU|Lubombo
 SZ.MA|MA|Manzini

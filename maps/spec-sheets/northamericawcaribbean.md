@@ -9,12 +9,12 @@ Dimensions (Width x Height): 650x650
 
 
 
-{% embed_spec_map northamericawcaribbean-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 004|BZ|Belize
 005|CA|Canada
 027|CI|Caribbean

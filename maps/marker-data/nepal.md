@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -212,14 +212,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -455,74 +456,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='NP.BA'  />
-		<entity id='NP.BH'  />
-		<entity id='NP.DH'  />
-		<entity id='NP.GA'  />
-		<entity id='NP.JA'  />
-		<entity id='NP.KA'  />
-		<entity id='NP.KO'  />
-		<entity id='NP.LU'  />
-		<entity id='NP.MA'  />
-		<entity id='NP.ME'  />
-		<entity id='NP.NA'  />
-		<entity id='NP.RA'  />
-		<entity id='NP.SA'  />
-		<entity id='NP.SE'  />
-	</data>
-	<markers>
-	    <shapes>
-	 	     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'  fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='KA' x='489.89' y='274.87' label='Kathmandu'  />
-			<marker id='01' x='501.17' y='281.02' label='Bhaktapur' labelPos='right'  />
-			<marker id='02' x='488.87' y='286.15' label='Patan' labelPos='left'  />
-			<marker id='03' x='402.71' y='262.56' label='Bharatpur'  />
-			<marker id='05' x='310.41' y='281.02' label='Bhairahawa' labelPos='left'  />
-			<marker id='06' x='310.41' y='250.25' label='Butwal'  />
-			<marker id='04' x='144.25' y='225.64' label='Nepalganj' labelPos='left'  />
-			<marker id='07' x='35.53' y='155.89' label='Mahendranagar' labelPos='right'  />
-			<marker id='08' x='67.33' y='180.51' label='Dhangarhi' labelPos='right'  />
-			<marker id='011' x='349.38' y='187.69' label='Pokhara'  />
-			<marker id='09' x='430.41' y='321.02' label='Birganj' labelPos='left'  />
-			<marker id='10' x='526.82' y='348.71' label='Janakpur'  />
-			<marker id='12' x='647.84' y='327.17' label='Dharan Bazar' labelPos='left'  />
-			<marker id='13' x='642.71' y='368.2' label='Biratnagar' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='KA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='011' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

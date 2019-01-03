@@ -9,12 +9,12 @@ Dimensions (Width x Height): 879x500
 
 
 
-{% embed_spec_map worldwithantarctica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF|AF|Africa Testing
 AT|AT|Antarctica
 AS|AS|Asia

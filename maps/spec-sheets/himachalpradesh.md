@@ -10,12 +10,12 @@ Dimensions (Width x Height): 420x410
 
 
 
-{% embed_spec_map himachalpradesh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.HP.BI|BI|Bilaspur
 IN.HP.CH|CH|Chamba
 IN.HP.HA|HA|Hamirpur

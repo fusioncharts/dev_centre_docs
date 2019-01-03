@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x380
 
 
 
-{% embed_spec_map eritrea-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ER.AN|AN|Anseba
 ER.DU|DU|Debub
 ER.DK|DK|Debubawi Keyih Bahri

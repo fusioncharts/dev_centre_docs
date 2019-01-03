@@ -9,12 +9,12 @@ Dimensions (Width x Height): 730x456
 
 
 
-{% embed_spec_map hovedstaden-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AB|Albertslund
 02|AL|Allerød
 03|BA|Ballerup

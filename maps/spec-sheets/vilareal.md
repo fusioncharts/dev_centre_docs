@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x450
 
 
 
-{% embed_spec_map vilareal-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.VR.AL|AL|Alijó
 PT.VR.BO|BO|Boticas
 PT.VR.CH|CH|Chaves

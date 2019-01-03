@@ -9,12 +9,12 @@ Dimensions (Width x Height): 260x490
 
 
 
-{% embed_spec_map newjerseyareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 201-551|201-551|201-551
 609|609|609
 732-848|732-848|732-848

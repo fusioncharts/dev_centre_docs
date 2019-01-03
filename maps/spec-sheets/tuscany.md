@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x590
 
 
 
-{% embed_spec_map tuscany-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.AR|AR|Arezzo
 IT.FI|FI|Florence
 IT.GR|GR|Grosseto

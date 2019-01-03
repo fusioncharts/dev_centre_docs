@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map karabuk-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.KB.EF | EF | Eflani
 TR.KB.ES | ES | Eskipazar
 TR.KB.KB | KB | Karabük

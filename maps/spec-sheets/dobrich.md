@@ -9,12 +9,12 @@ Dimensions (Width x Height): 840x590
 
 
 
-{% embed_spec_map dobrich-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BA|Balchik
 02|DO|Dobrich
 03|DK|Dobrichka

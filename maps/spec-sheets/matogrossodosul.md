@@ -9,12 +9,12 @@ Dimensions (Width x Height): 910x920
 
 
 
-{% embed_spec_map matogrossodosul-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 5000203|AC|Água Clara
 5000252|AP|Alcinópolis
 5000609|AM|Amambaí

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map omnogovi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.OG.BO | BO | Bayan-Ovoo
 MN.OG.BD | BD | Bayandalai
 MN.OG.BU | BU | Bulgan

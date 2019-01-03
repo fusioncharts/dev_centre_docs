@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map arauca-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.AR.AC|AC|Arauca
 CO.AR.AQ|AQ|Arauquita
 CO.AR.CN|CN|Cravo Norte

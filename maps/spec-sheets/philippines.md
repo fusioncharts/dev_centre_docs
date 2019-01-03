@@ -9,12 +9,12 @@ Dimensions (Width x Height): 580x780
 
 
 
-{% embed_spec_map philippines-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.AB|AB|Abra
 PH.AN|AN|Agusan del Norte
 PH.AS|AS|Agusan del Sur

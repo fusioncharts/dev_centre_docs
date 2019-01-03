@@ -9,12 +9,12 @@ Dimensions (Width x Height): 260x370
 
 
 
-{% embed_spec_map saotomeandprincipe-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ST.AG|AG|Agua Grande
 ST.CG|CG|Cantagalo
 ST.CU|CU|Caue

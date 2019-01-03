@@ -10,12 +10,12 @@ Dimensions (Width x Height): 505x425
 
 
 
-{% embed_spec_map andhrapradesh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.AP.AN|AN|Anantapur
 IN.AP.CH|CH|Chittoor
 IN.AP.CU|CU|YSR District, Kadapa (Cuddapah)

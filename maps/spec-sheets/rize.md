@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map rize-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.RI.AR | AR | Ardeşen
 TR.RI.CH | CH | Çamlıhemşin
 TR.RI.CL | CL | Çayeli

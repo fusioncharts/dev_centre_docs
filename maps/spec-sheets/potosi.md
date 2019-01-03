@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x340
 
 
 
-{% embed_spec_map potosi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BO.PO.AI|AI|Alonso de Ibáñez
 BO.PO.AQ|AQ|Antonio Quijarro
 BO.PO.GB|GB|Bernardino Bilbao

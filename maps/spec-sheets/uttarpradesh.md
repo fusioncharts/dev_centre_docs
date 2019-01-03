@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x550
 
 
 
-{% embed_spec_map uttarpradesh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.UP.AG|AG|Agra
 IN.UP.AL|AL|Aligarh
 IN.UP.AH|AH|Allahabad

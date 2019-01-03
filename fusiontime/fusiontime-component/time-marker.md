@@ -4,7 +4,7 @@ description: This article defines the time markers.
 heading: Time Markers
 ---
 
-FusionTime lets you mark events on the [time axis]({% site.baseurl %}/fusiontime/fusiontime-component/time-axis). A time marker appears as an overlay on the canvas. When you hover the mouse pointer over a time marker, a tooltip appears with the information about the marker.
+FusionTime lets you mark events on the [time axis](/fusiontime/fusiontime-component/time-axis). A time marker appears as an overlay on the canvas. When you hover the mouse pointer over a time marker, a tooltip appears with the information about the marker.
 
 A time marker can be of two types:
 

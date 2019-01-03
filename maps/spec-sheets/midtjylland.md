@@ -9,12 +9,12 @@ Dimensions (Width x Height): 895x538
 
 
 
-{% embed_spec_map midtjylland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|FA|Favrskov
 03|HD|Hedensted
 04|HG|Herning

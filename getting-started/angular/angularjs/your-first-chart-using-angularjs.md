@@ -23,18 +23,20 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 
 <div><strong>To install fusioncharts and the `angularjs-fusioncharts` directive via npm follow the steps below:</strong></div>
 <div>1. Install `angularjs` core library</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install angular
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div>2. Install `angularjs-fusioncharts`</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	$ npm install angularjs-fusioncharts
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div>2. Install the `fusioncharts` package</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install fusioncharts
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -48,7 +50,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
 	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script>
@@ -59,8 +61,8 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 
@@ -75,7 +77,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
 	&lt;script type="text/javascript" src="path/to/local/angular.min.js"&gt;&lt;/script&gt;
@@ -86,8 +88,8 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -210,7 +212,7 @@ The consolidated code is shown below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 //  Require AngularJS 
 var angular = require('angular');
 
@@ -274,9 +276,10 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }]);
 // Render
 chartInstance.render()
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;body ng-app="myApp"&gt;
     &lt;div ng-controller="MyController"&gt;
         &lt;div
@@ -288,7 +291,8 @@ chartInstance.render()
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/body&gt;
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
 <ul>
     <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
@@ -300,11 +304,10 @@ chartInstance.render()
     <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
     <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
 </ul>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
@@ -365,13 +368,13 @@ chartInstance.render()
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 
 <div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
@@ -432,8 +435,8 @@ chartInstance.render()
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

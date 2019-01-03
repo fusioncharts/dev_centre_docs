@@ -9,12 +9,12 @@ Dimensions (Width x Height): 572x600
 
 
 
-{% embed_spec_map velikotarnovo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|EL|Elena
 02|GO|Gorna Oryahovitsa
 03|LY|Lyaskovets

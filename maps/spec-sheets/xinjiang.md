@@ -9,12 +9,12 @@ Dimensions (Width x Height): 558x445
 
 
 
-{% embed_spec_map xinjiang-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 15|AK|Aksu
 1|AL|Altay
 16|AR|Aral

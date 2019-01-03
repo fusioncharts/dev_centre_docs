@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sulu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.SU.TN | TN | Banguingui (Tongkil)
 PH.SU.HD | HD | Hadji Panglima Tahil(Marunggas)
 PH.SU.ID | ID | Indanan

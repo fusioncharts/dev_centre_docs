@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map ethiopia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ET.AA|AA|Addis Ababa
 ET.ON|ON|Afar Zone 1
 ET.TW|TW|Afar Zone 2

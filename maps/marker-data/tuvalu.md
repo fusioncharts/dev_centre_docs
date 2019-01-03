@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -149,14 +149,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -308,57 +309,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='TV.FN'  />
-		<entity id='TV.NG'  />
-		<entity id='TV.NA'  />
-		<entity id='TV.NT'  />
-		<entity id='TV.NI'  />
-		<entity id='TV.NU'  />
-		<entity id='TV.NF'  />
-		<entity id='TV.NL'  />
-		<entity id='TV.VI'  />
-	</data>
-	<markers>
-	  <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'  fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='FA' x='248.08' y='210.61' label='Funafuti' labelPos='right'  />
-			<marker id='01' x='48.38' y='26.35' label='Lolua' labelPos='left'  />
-			<marker id='02' x='122.5' y='52.08' label='Kulia'  />
-			<marker id='03' x='59.7' y='64.44' label='Tonga'  />
-			<marker id='04' x='114.26' y='123.11' label='Tanrake'  />
-			<marker id='05' x='192.5' y='180.76' label='Savare' labelPos='left'  />
-			<marker id='06' x='214.11' y='139.58' label='Asau'  />
-			<marker id='07' x='265.58' y='350.61' label='Fangaua'  />
-		</definition>
-		<application>
-			<marker id='FA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

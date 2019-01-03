@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x580
 
 
 
-{% embed_spec_map westflanders-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.WV.AL|AL|Alveringem
 BE.WV.AN|AN|Anzegem
 BE.WV.AR|AR|Ardooie

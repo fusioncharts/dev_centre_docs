@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x470
 
 
 
-{% embed_spec_map manitoba-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.MB.CR|CR|Central Region
 CA.MB.ER|ER|Eastern Region
 CA.MB.IR|IR|Interlake Region

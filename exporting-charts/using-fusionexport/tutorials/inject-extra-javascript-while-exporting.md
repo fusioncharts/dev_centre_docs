@@ -18,8 +18,8 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 <div class="tab-content extra-tabs">
 
-<div class="tab csharp-tab">
-<pre><code class="custom-hlc language-cs">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
 	using System;
 	using System.IO;
 	using System.Linq;
@@ -56,11 +56,12 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	        }
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart {
@@ -96,11 +97,12 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	            });
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 	<?php
 	// Injecting custom JavaScript while exporting
 	require __DIR__ . '/../vendor/autoload.php';
@@ -133,11 +135,12 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	// Injecting custom JavaScript while exporting
 
 	const path = require('path');
@@ -176,11 +179,12 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	exportManager.on('error', (err) => {
 	  console.error(err);
 	});
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -220,13 +224,14 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	em = ExportManager(export_server_host, export_server_port)
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
 ## Related Resources
 
-* [Asynchronous Capture]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/asynchronous-capture)
+* [Asynchronous Capture](/exporting-charts/using-fusionexport/tutorials/asynchronous-capture)
 
-* [Enable Logging]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/enabling-logging)
+* [Enable Logging](/exporting-charts/using-fusionexport/tutorials/enabling-logging)

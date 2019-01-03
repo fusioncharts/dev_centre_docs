@@ -9,12 +9,12 @@ Dimensions (Width x Height): 504x619
 
 
 
-{% embed_spec_map wielkopolskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.WP.CH|CH|Chodzieski
 PL.WP.CZ|CZ|Czarnkowsko-trzcianecki
 PL.WP.GN|GN|Gnieznienski

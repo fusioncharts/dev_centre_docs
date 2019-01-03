@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x480
 
 
 
-{% embed_spec_map aomori-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Aomori
 002|002|Goshogawara
 003|003|Hachinohe

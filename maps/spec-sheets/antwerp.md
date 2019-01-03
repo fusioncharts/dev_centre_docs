@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x460
 
 
 
-{% embed_spec_map antwerp-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.AN.AT|AT|Aartselaar
 BE.AN.AW|AW|Antwerpen
 BE.AN.AR|AR|Arendonk

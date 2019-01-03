@@ -22,11 +22,8 @@ Install **FusionCharts** using any of the following steps:
 <div class='tab npm-tab active'>
 
 <div><strong>To install the `fusioncharts` package via  npm run the command below:</strong></div>
-<pre><code class="custom-hlc language-PowerShell">
-    $ npm install fusioncharts
-</code></pre>
-
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -38,15 +35,15 @@ Install **FusionCharts** using any of the following steps:
     </ol>
 </div>
 <div>The code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 2 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab localfiles-tab'>
@@ -58,15 +55,15 @@ Install **FusionCharts** using any of the following steps:
     </ol>
 </div>
 <div>The code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Step 2 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -190,7 +187,7 @@ The consolidated code is shown below:
 </ul>
 <div  class='mt-30'><strong>The steps to render the chart for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 // Include the core fusioncharts file from core  -
 import FusionCharts from 'fusioncharts/core';
 
@@ -253,9 +250,10 @@ var chartInstance = new FusionCharts({
 });
 // Render
 chartInstance.render();
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <h4>CJS</h4>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
 var Charts = require('fusioncharts/fusioncharts.charts');
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
@@ -310,7 +308,8 @@ var chartInstance = new FusionCharts({
 });
 // Render
 chartInstance.render();
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
 <ul>
     <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
@@ -322,12 +321,10 @@ chartInstance.render();
     <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
     <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
 </ul>
-
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
@@ -389,13 +386,13 @@ chartInstance.render();
     &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 
 <div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
@@ -457,8 +454,8 @@ chartInstance.render();
     &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

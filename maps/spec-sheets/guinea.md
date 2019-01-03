@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x310
 
 
 
-{% embed_spec_map guinea-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 GN.BE|BE|Beyla
 GN.BF|BF|Boffa
 GN.BK|BK|Boke

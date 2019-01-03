@@ -24,7 +24,7 @@ Use a treemap to display hierarchical information presented using a tree structu
 
 In the image given below, you can see how an information tree is translated to the treemap:
 
-![TreeMap]({% site.baseurl %}/images/standard-charts-treemap-image-1.jpg)
+![TreeMap](/images/standard-charts-treemap-image-1.jpg)
 
 ## How to build a good treemap
 
@@ -99,7 +99,7 @@ To drill-down to a leaf node, click directly on that node. For example, click on
 
 Then, to go back one level up, click on Northern Region in the header of the view, or the ***Back to Parent*** button on the top-right corner of the chart. You can also go directly back to the initial stage. To do so, click the ***Back to Top*** button on the top-right corner of the chart. 
 
-![Treemap-GIF-1]({% site.baseurl %}/gif/standard-charts-treemap-gif-1.gif)
+![Treemap-GIF-1](/gif/standard-charts-treemap-gif-1.gif)
 
 ## Create a simple treemap
 
@@ -137,7 +137,7 @@ Click [here](http://jsfiddle.net/fusioncharts/dhauz809/) to edit the above chart
 
 > The treemap shown above compares the sales team's performance in the present year with their performance in the previous year. Click on a rectangle to replace the node with the current root node. For example, click on any rectangle (node) in the Northern Region to change the chart view as shown in the image below:
 
-> ![Treemap-GIF-2]({% site.baseurl %}/gif/standard-charts-treemap-gif-2.gif)
+> ![Treemap-GIF-2](/gif/standard-charts-treemap-gif-2.gif)
 
 ## Render a gradient legend
 
@@ -195,7 +195,7 @@ Refer to the code below:
 
 The gradient legend will look like as shown in the image below:
 
-![Gradient-Legend]({% site.baseurl %}/images/standard-charts-treemap-image-2.jpg)
+![Gradient-Legend](/images/standard-charts-treemap-image-2.jpg)
 
 ### Show/hide data values using the gradient legend
 
@@ -205,9 +205,9 @@ A sample treemap with the gradient legend set to show only those nodes that have
 
 > Notice that the nodes that don't fall in this bracket are all grayed out.
 
-![Treemap-GIF-3]({% site.baseurl %}/gif/standard-charts-treemap-gif-3.gif)
+![Treemap-GIF-3](/gif/standard-charts-treemap-gif-3.gif)
 
-Click [here]({% site.baseurl %}/chart-attributes/?chart=treemap) for the complete list of attributes supported by the treemap.
+Click [here](/chart-attributes/?chart=treemap) for the complete list of attributes supported by the treemap.
 
 ## Set tiling algorithm for the treemap
 
@@ -316,7 +316,7 @@ The chart looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/buksebna/) to edit the above chart.
 
-Click [here]({% site.baseurl %}/chart-attributes/?chart=treemap) for the complete list of attributes supported by the treemap.
+Click [here](/chart-attributes/?chart=treemap) for the complete list of attributes supported by the treemap.
 
 ## Configure the Treemap
 
@@ -360,7 +360,7 @@ The treemap above shows the global population by continent as of 2015 with their
 
 When you click on a child node, the clicked node and its subtree will replace the current root node. For example, when you click on any node under Southeast Asia Region, the chart view will change to what is shown in the image below. Observe that all the parent nodes are visible in the navigation bar and you can switch to any of them directly by clicking on them. 
 
-![Treemap-GIF-4]({% site.baseurl %}/gif/standard-charts-treemap-gif-4.gif)
+![Treemap-GIF-4](/gif/standard-charts-treemap-gif-4.gif)
 
 ### Color the treemap data plots
 

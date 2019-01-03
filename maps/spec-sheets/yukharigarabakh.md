@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x460
 
 
 
-{% embed_spec_map yukharigarabakh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AM|AM|Aghdam
 FU|FU|Fuzuli
 CB|CB|Jabrayil

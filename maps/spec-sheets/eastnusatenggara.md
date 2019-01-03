@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map eastnusatenggara-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.NT.AL|AL|Alor Regency (Alor Archipelago)
 ID.NT.FT|FT|East Flores Regency (Flores Timur) (includes Adonara and Solor)
 ID.NT.MT|MT|East Manggarai Regency (Manggarai Timur)

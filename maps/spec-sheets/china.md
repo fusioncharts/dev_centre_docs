@@ -9,12 +9,12 @@ Dimensions (Width x Height): 490x410
 
 
 
-{% embed_spec_map china-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AH|Anhui
 07|FJ|Fujian
 15|GS|Gansu

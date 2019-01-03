@@ -9,12 +9,12 @@ Dimensions (Width x Height): 110x133
 
 
 
-{% embed_spec_map bucurestiilfov-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RO.BI|BI|Bucharest
 RO.IF|IF|Ilfov
 

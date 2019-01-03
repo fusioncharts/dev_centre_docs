@@ -9,12 +9,12 @@ Dimensions (Width x Height): 390x460
 
 
 
-{% embed_spec_map scotlandregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 78|BO|Borders
 79|CE|Central
 80|DG|Dumfries and Galloway

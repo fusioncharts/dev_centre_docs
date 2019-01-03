@@ -9,12 +9,12 @@ Dimensions (Width x Height): 680x640
 
 
 
-{% embed_spec_map ustinadlabem-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.UK.CV|CV|Chomutov
 CZ.UK.DC|DC|Děín
 CZ.UK.LT|LT|Litoměřice

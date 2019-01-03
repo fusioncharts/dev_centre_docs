@@ -9,12 +9,12 @@ Dimensions (Width x Height): 306x292
 
 
 
-{% embed_spec_map nordest-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RO.BC|BC|Bacău
 RO.BT|BT|Botoşani
 RO.IS|IS|Iaşi

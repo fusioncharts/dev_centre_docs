@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map negrosoriental-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.NR.AL | AL | Amlan (Ayuquitan)
 PH.NR.AU | AU | Ayungon
 PH.NR.BC | BC | Bacong

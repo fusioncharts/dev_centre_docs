@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -204,14 +204,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -439,70 +440,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		    <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='WA' x='275.82' y='187.81' label='Warsaw' labelPos='right'  />
-			<marker id='01' x='107.5' y='33.86' label='Ustka'  />
-			<marker id='02' x='175.24' y='41.05' label='Gdynia' labelPos='left'  />
-			<marker id='03' x='182.42' y='50.28' label='Gdansk' labelPos='bottom'  />
-			<marker id='04' x='55.16' y='60.55' label='Kotobrzeg'  />
-			<marker id='05' x='15.13' y='74.92' label='Swinoujscie' labelPos='right'  />
-			<marker id='06' x='15.13' y='106.73' label='Szczecin' labelPos='right'  />
-			<marker id='07' x='78.76' y='161.13' label='Poznan'  />
-			<marker id='08' x='150.61' y='109.81' label='Bydgoszcz'  />
-			<marker id='10' x='356.9' y='111.86' label='Bialystok'  />
-			<marker id='11' x='213.21' y='203.21' label='Lodz'  />
-			<marker id='15' x='356.9' y='253.5' label='Lublin'  />
-			<marker id='16' x='317.9' y='316.1' label='Rzeszow'  />
-			<marker id='14' x='233.74' y='320.21' label='Krakow' labelPos='right'  />
-			<marker id='17' x='194.74' y='297.63' label='Katowice' labelPos='right'  />
-			<marker id='18' x='172.16' y='284.28' label='Gliwice' labelPos='left'  />
-			<marker id='19' x='190.63' y='255.55' label='Czestochowa' labelPos='left'  />
-			<marker id='20' x='102.37' y='223.73' label='Wroctaw' labelPos='left'  />
-			<marker id='12' x='289.16' y='222.71' label='Radom'  />
-
-		</definition>
-		<application>
-			<marker id='WA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x340
 
 
 
-{% embed_spec_map kagawa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Higashikagawa
 002|002|Kanonji
 003|003|Marugame

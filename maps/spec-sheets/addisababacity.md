@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map addisababacity-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ET.AA.AD|AD|Addis Ketema
 ET.AA.AK|AK|Akaky Kaliti
 ET.AA.AR|AR|Arada

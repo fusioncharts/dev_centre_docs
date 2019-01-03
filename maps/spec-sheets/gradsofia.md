@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x532
 
 
 
-{% embed_spec_map gradsofia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BA|Bankya
 02|IL|Ilinden
 03|IS|Iskar

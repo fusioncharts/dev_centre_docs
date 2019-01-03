@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map agri-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.AG.AG | AG | Ağrı
 TR.AG.DI | DI | Diyadin
 TR.AG.DO | DO | Doğubayazıt

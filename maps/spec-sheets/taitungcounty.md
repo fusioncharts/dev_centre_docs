@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map taitungcounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.TT.TT | TT | Taitung City
 TW.TT.CG | CG | Chenggong Township
 TW.TT.GS | GS | Guanshan Township

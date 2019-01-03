@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x450
 
 
 
-{% embed_spec_map viseu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.VI.AR|AR|Armamar
 PT.VI.CS|CS|Carregal do Sal
 PT.VI.CD|CD|Castro Daire

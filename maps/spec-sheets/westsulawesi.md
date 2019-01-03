@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map westsulawesi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.SR.MJ|MJ|Majene Regency
 ID.SR.MA|MA|Mamasa Regency
 ID.SR.MM|MM|Mamuju Regency

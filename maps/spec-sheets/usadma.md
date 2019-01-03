@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1021x594
 
 
 
-{% embed_spec_map usadma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 662|ABI-TX|ABILENE-SWEETWATER
 525|ALB-GA|ALBANY,GA
 532|ALB-NY|ALBANY-SCHENECTADY-TROY

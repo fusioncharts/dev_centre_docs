@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x400
 
 
 
-{% embed_spec_map campeche-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.CM.CA|CA|Calakmul
 MX.CM.CL|CL|Calkin
 MX.CM.CM|CM|Campeche

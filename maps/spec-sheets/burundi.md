@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x490
 
 
 
-{% embed_spec_map burundi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BI.BB|BB|Bubanza
 BI.BM|BM|Bujumbura Mairie
 BI.BU|BU|Bujumbura Rural

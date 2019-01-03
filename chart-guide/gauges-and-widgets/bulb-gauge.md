@@ -30,7 +30,7 @@ A bulb gauge consists of the following elements:
 
 Before going into the details of each of them, let us have a look at a bulb gauge with the basic elements labeled:
 
-![Bulb-gauge]({% site.baseurl %}/images/bulb-gauge-introduction-1.png)
+![Bulb-gauge](/images/bulb-gauge-introduction-1.png)
 
 ## Color range
 
@@ -90,7 +90,7 @@ Also set the number suffix character (the character which will show up at the en
 }
 ```
 
-There are other attributes of the `<chart>` element which we will not be delving into now, because of this being a really basic gauge. For a detailed list you can check the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb) page of bulb gauge.
+There are other attributes of the `<chart>` element which we will not be delving into now, because of this being a really basic gauge. For a detailed list you can check the [chart attributes](/chart-attributes?chart=bulb) page of bulb gauge.
 
 ## Define the color range
 
@@ -161,7 +161,7 @@ To configure the border of the bulb gauge refer to the code below:
 }
 ```
 
-For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb) page of the bulb gauge.
+For a detailed list of attributes refer to the [chart attributes](/chart-attributes?chart=bulb) page of the bulb gauge.
 
 The bulb gauge will look as shown in the image below:
 
@@ -295,7 +295,7 @@ FusionCharts Suite XT allows you to display hover effects for the gauge. Set the
 
 The gauge will look  like as shown below:
 
-![Bulb]({% site.baseurl %}/gif/gauges-and-widgets-bulb-gif.gif)
+![Bulb](/gif/gauges-and-widgets-bulb-gif.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/0ehkf2sx/) to edit the above chart.
 
@@ -335,7 +335,7 @@ Click [here](http://jsfiddle.net/fusioncharts/xn8591nn/) to edit the above chart
 
 For a detailed list of JavaScript API used to configure real-time updates refer to the API reference page.
 
-> You can also configure using  server-side scripts. For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb) page.
+> You can also configure using  server-side scripts. For a detailed list of attributes refer to the [chart attributes](/chart-attributes?chart=bulb) page.
 
 ## Stop/Restart updates
 

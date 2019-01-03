@@ -20,7 +20,7 @@ Click [here](http://jsfiddle.net/fusioncharts/3BNH3/) to edit the above gauge.
 
 In the image below, you can see the basic elements of a thermometer gauge labeled:
 
-![Thermometer-gauge]({% site.baseurl %}/images/thermometer-gauge-introduction-1.png)
+![Thermometer-gauge](/images/thermometer-gauge-introduction-1.png)
 
 ### Thermometer fill
 
@@ -313,7 +313,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-![Thermometer]({% site.baseurl %}/gif/gauges-and-widgets-thermometer.gif)
+![Thermometer](/gif/gauges-and-widgets-thermometer.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/hyvLk5d8/) to edit the above gauge.
 

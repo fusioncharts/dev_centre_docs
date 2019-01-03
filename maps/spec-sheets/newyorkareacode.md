@@ -9,12 +9,12 @@ Dimensions (Width x Height): 480x365
 
 
 
-{% embed_spec_map newyorkareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 212-646-917|212-646-917|212-646-917
 315|315|315
 347-718-917|347-718-917|347-718-917

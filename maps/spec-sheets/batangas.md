@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map batangas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.BT.AO | AO | Agoncillo
 PH.BT.AI | AI | Alitagtag
 PH.BT.BA | BA | Balayan

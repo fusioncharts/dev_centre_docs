@@ -9,12 +9,12 @@ Dimensions (Width x Height): 480x390
 
 
 
-{% embed_spec_map andorra-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 07|AL|Andorra la Vella
 02|CA|Canillo
 03|EN|Encamp

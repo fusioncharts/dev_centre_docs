@@ -9,12 +9,12 @@ Dimensions (Width x Height): 314x232
 
 
 
-{% embed_spec_map sudmuntenia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RO.AG|AG|Argeş
 RO.CL|CL|Călăraşi
 RO.DB|DB|Dâmboviţa

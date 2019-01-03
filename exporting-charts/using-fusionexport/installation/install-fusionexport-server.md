@@ -4,7 +4,7 @@ description: This article focuses on how you can install the FusionExport server
 heading: Install FusionExport Server
 ---
 
-FusionExport server accepts export requests from [FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli), [SDK clients]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks), and browsers. For most practical use cases, we strongly recommend using the SDK clients for your preferred programming language.
+FusionExport server accepts export requests from [FusionExport CLI](/exporting-charts/using-fusionexport/installation/install-fusionexport-cli), [SDK clients](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks), and browsers. For most practical use cases, we strongly recommend using the SDK clients for your preferred programming language.
 
 ## Download
 
@@ -67,6 +67,6 @@ The above command will complete all the dependencies missing for FusionExport Se
 
 After you have installed FusionCharts Server, install either FusionExport CLI or FusionExport Server SDK for your preferred programming language, or both:
 
-* [Install FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli)
+* [Install FusionExport CLI](/exporting-charts/using-fusionexport/installation/install-fusionexport-cli)
 
-* [Install FusionExport Server SDKs]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
+* [Install FusionExport Server SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kutahya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.KU.AL | AL | Altıntaş
 TR.KU.AS | AS | Aslanapa
 TR.KU.CA | CA | Çavdarhisar

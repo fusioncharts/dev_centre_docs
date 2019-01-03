@@ -9,11 +9,11 @@ Dimensions (Width x Height): 700x597
 
 
 
-{% embed_spec_map portsaid-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|PS|Port Said
 

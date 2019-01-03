@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kahramanmaras-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.KM.AF | AF | Afşin
 TR.KM.AN | AN | Andırın
 TR.KM.CA | CA | Çağlayancerit

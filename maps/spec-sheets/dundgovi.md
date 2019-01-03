@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map dundgovi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.DU.AD | AD | Adaatsag
 MN.DU.BJ | BJ | BayanjargalanDelgerkhangai
 MN.DU.DH | DH | 

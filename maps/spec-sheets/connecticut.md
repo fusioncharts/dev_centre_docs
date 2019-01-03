@@ -9,12 +9,12 @@ Dimensions (Width x Height): 750x560
 
 
 
-{% embed_spec_map connecticut-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|FA|Fairfield
 003|HA|Hartford
 005|LI|Litchfield

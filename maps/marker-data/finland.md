@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -199,14 +199,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -426,68 +427,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='HE' x='156.92' y='435.53' label='Helsinki' labelPos='left'  />
-			<marker id='01' x='175.72' y='65.8' label='Ivalo'  />
-			<marker id='02' x='160.06' y='183.82' label='Rovaniemi'  />
-			<marker id='03' x='144.39' y='228.73' label='Oulu' labelPos='right'  />
-			<marker id='04' x='81.72' y='299.75' label='Kokkola' labelPos='right'  />
-			<marker id='05' x='52.48' y='330.04' label='Vaasa' labelPos='left'  />
-			<marker id='06' x='175.72' y='325.86' label='Kuopio'  />
-			<marker id='07' x='224.81' y='336.31' label='Joensuu'  />
-			<marker id='08' x='193.48' y='348.84' label='Varkaus' labelPos='left'  />
-			<marker id='09' x='112.01' y='382.26' label='Tampere'  />
-			<marker id='10' x='150.66' y='406.28' label='Lahti' labelPos='right'  />
-			<marker id='12' x='179.9' y='429.26' label='Hamina' labelPos='right'  />
-			<marker id='11' x='163.19' y='439.71' label='Kotka' labelPos='right'  />
-			<marker id='13' x='129.77' y='447.02' label='Loviisa' labelPos='bottom'  />
-			<marker id='14' x='60.83' y='427.17' label='Turku' labelPos='left'  />
-			<marker id='16' x='52.48' y='398.97' label='Uusikaupunki' labelPos='right'  />
-			<marker id='17' x='55.61' y='379.13' label='Rauma' labelPos='left'  />
-			<marker id='18' x='66.06' y='361.37' label='Pori'  />
-
-		</definition>
-		<application>
-			<marker id='HE' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

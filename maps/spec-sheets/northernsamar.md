@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northernsamar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.NS.AL | AL | Allen
 PH.NS.BR | BR | Biri
 PH.NS.BB | BB | Bobon

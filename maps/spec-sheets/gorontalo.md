@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map gorontalo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.GO.GM|GM|Gorontalo City
 ID.GO.BO|BO|Boalemo Regency
 ID.GO.BB|BB|Bone Bolango Regency

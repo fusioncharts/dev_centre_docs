@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map occidentalmindoro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.MC.AR | AR | Abra de Ilog
 PH.MC.CL | CL | Calintaan
 PH.MC.LO | LO | Looc

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x430
 
 
 
-{% embed_spec_map democraticrepublicofcongo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CD.BN|BN|Bandundu
 CD.BC|BC|Bas Congo
 CD.EQ|EQ|Equateur

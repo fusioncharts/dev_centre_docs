@@ -9,12 +9,12 @@ Dimensions (Width x Height): 590x470
 
 
 
-{% embed_spec_map azerbaijan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AR|Abşeron
 07|AB|Ali Bayramlı
 08|AA|Astara

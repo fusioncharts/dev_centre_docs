@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map batanes-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.BN.BS | BS | Basco
 PH.BN.IB | IB | Itbayat
 PH.BN.IA | IA | Ivana

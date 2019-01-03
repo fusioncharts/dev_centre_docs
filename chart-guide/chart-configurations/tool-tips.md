@@ -12,7 +12,7 @@ A tooltip is displayed when the mouse cursor hovers over a particular data point
 
 * A series name, category name, and data value for multi-series and combination charts.
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-1.png)
+![Tooltips](/images/chart-configurations-tooltip-image-1.png)
 
 ## Show/Hide Tooltips
 
@@ -55,7 +55,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-2.png)
+![Tooltips](/images/chart-configurations-tooltip-image-2.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/) to edit the above chart.
 
@@ -77,7 +77,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-3.png)
+![Tooltips](/images/chart-configurations-tooltip-image-3.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/13a8664h/) to edit the above chart.
 
@@ -121,7 +121,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-4.png)
+![Tooltips](/images/chart-configurations-tooltip-image-4.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/j1327y7v/) to edit the above chart.
 
@@ -181,7 +181,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-5.png)
+![Tooltips](/images/chart-configurations-tooltip-image-5.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/67Lzs1fq/) to edit the above chart.
 
@@ -189,7 +189,7 @@ In the above chart, hover the mouse pointer over the trend-lines to see the tool
 
 Apart from the ones given above, you can use either the `$startDataValue` macro (which represents the formatted starting value of a trend-line/trend-zone) or the `$startValue` macro (which represents the unformatted starting value). If the starting value is 680000 and you use `$startDataValue`, then the chart will show $680k as the data value. On the other hand, if you use `$startValue`, then the chart will show 680000 as the data value.  
 
-Click [here]({% site.baseurl %}/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros-11) for the complete list of tooltip macros supported by FusionCharts Suite XT.
+Click [here](/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros) for the complete list of tooltip macros supported by FusionCharts Suite XT.
 
 ### Example 2: Tooltip Macros for Map Connectors
 
@@ -215,7 +215,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-6.png)
+![Tooltips](/images/chart-configurations-tooltip-image-6.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/0dwyegdw/) to edit the above chart.
 
@@ -265,7 +265,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-7.png)
+![Tooltips](/images/chart-configurations-tooltip-image-7.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/mgkhxywt/) to edit the above chart.
 

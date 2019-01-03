@@ -9,12 +9,12 @@ Dimensions (Width x Height): 520x400
 
 
 
-{% embed_spec_map shizuoka-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Atami
 002|002|Fuji
 003|003|Fujieda

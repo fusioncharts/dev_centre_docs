@@ -9,12 +9,12 @@ Dimensions (Width x Height): 770x540
 
 
 
-{% embed_spec_map graubunden-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.GR.AB|AB|Albula
 CH.GR.BN|BN|Bernina
 CH.GR.HR|HR|Hinterrhein

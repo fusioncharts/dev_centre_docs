@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x310
 
 
 
-{% embed_spec_map laos-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LA.AT|AT|Attapu
 LA.BK|BK|Bokeo
 LA.BL|BL|Bolikhamxai

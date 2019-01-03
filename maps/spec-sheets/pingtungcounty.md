@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map pingtungcounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.PT.PT | PT | Pingtung City
 TW.PT.CZ | CZ | Chaozhou Township
 TW.PT.DG | DG | Donggang Township

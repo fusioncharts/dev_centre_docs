@@ -9,12 +9,12 @@ Dimensions (Width x Height): 601x581
 
 
 
-{% embed_spec_map appenzellinnerrhoden-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.AI.AI|AI|Appenzel
 CH.AI.GO|GO|Gontens
 CH.AI.OB|OB|Oberegg

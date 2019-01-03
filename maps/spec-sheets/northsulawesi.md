@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map northsulawesi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.SA.SG|SG|Sangihe Islands Regency(Kepulauan Sangihe)
 ID.SA.SB|SB|Sitaro Islands Regency(Kepulauan Siau Tagulandang Biaro)
 ID.SA.KS|KS|Talaud Islands Regency(Kepulauan Talaud)

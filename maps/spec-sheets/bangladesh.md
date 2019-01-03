@@ -9,12 +9,12 @@ Dimensions (Width x Height): 431x600
 
 
 
-{% embed_spec_map bangladesh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BD.BA|BA|Barisal
 BD.CG|CG|Chittagong
 BD.DA|DA|Dhaka

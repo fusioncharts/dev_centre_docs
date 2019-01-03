@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map havana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.CH.AN|AN|Arroyo Naranjo
 CU.CH.BO|BO|Boyeros
 CU.CH.CH|CH|Centro Habana

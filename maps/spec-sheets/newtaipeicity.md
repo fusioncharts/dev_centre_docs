@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map newtaipeicity-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.TP.LU | LU | Luzhou
 TW.TP.SA | SA | Sanchong
 TW.TP.SH | SH | Shulin

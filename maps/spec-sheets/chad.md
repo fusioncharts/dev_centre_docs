@@ -9,12 +9,12 @@ Dimensions (Width x Height): 321x491
 
 
 
-{% embed_spec_map chad-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TD.BA|BA|Batha
 TD.BT|BT|Borkou-Ennedi-Tibesti
 TD.CG|CG|Chari-Baguirmi

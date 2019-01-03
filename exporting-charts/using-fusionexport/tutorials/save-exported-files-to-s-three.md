@@ -21,7 +21,7 @@ Now, edit the content of the file `fusioncharts-config.json.json`.
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	{
 	    "chart-config": "fusioncharts_chart.js",
 	    "output-file": "s3:fc-chart-<%= number(1) %>",
@@ -31,7 +31,8 @@ Now, edit the content of the file `fusioncharts-config.json.json`.
 	        "secretAccessKey": "dfasdAS$32rdsf$234rfdsaf"
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -44,6 +45,6 @@ $ fe -c fusioncharts-config.json
 
 ## Related Resources
 
-* [Manipulate the output filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
+* [Manipulate the output filename](/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
 
-* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
+* [Export the Output Files as a Zip](/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x430
 
 
 
-{% embed_spec_map tokushima-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Anan
 002|002|Awa
 003|003|Komatsushima

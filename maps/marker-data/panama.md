@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -334,14 +334,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -743,106 +744,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='PA.BC'  />
-		<entity id='PA.CH'  />
-		<entity id='PA.CC'  />
-		<entity id='PA.CL'  />
-		<entity id='PA.DR'  />
-		<entity id='PA.EM'  />
-		<entity id='PA.HE'  />
-		<entity id='PA.KM'  />
-		<entity id='PA.KW'  />
-		<entity id='PA.SB'  />
-		<entity id='PA.LS'  />
-		<entity id='PA.NB'  />
-		<entity id='PA.PN'  />
-		<entity id='PA.VR'  />
-	</data>
-	<markers>
-	   <shapes>
-	      <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='000000' radius='4'/>
-		  <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='000000' radius='3'/>
-		</shapes>
-		<definition>
-		    <marker id='PN' x='257.79' y='51.48' label='Panama' labelPos='right'  />
-			<marker id='01' x='31.13' y='24.69' label='Elena'  />
-			<marker id='02' x='55.75' y='34.1' label='Almicante' labelPos='left'  />
-			<marker id='03' x='65.89' y='34.1' label='Bocas del Toro' labelPos='right'  />
-			<marker id='04' x='45.62' y='68.14' label='Cerro Punta' labelPos='left'  />
-			<marker id='05' x='36.93' y='83.34' label='San Andres' labelPos='right'  />
-			<!--<marker id='06' x='26.06' y='105.79' label='Puerto Armuelles' labelPos='right'   />-->
-			<marker id='07' x='48.51' y='103.62' label='Pedregal' labelPos='top'  />
-			<marker id='08' x='49.24' y='85.52' label='La Concepcion'  />
-			<marker id='09' x='57.2' y='91.31' label='David' labelPos='right'  />
-			<marker id='10' x='97.75' y='86.96' label='Soloy'  />
-			<marker id='11' x='123.82' y='102.17' label='Tole'  />
-			<marker id='12' x='134.68' y='148.52' label='El Tigre'  />
-			<marker id='13' x='157.13' y='117.38' label='Santiago'  />
-			<marker id='14' x='183.93' y='124.62' label='Chitre' labelPos='right'  />
-			<marker id='15' x='194.06' y='136.93' label='Las Tablas' labelPos='right'  />
-			<marker id='16' x='207.82' y='158.65' label='Los Asientos' labelPos='right'  />
-			<marker id='17' x='180.31' y='106.52' label='Aguadulce' labelPos='right'  />
-			<marker id='18' x='194.06' y='92.76' label='Penonome' labelPos='right'  />
-			<marker id='19' x='177.41' y='80.45' label='El Cope' labelPos='left'  />
-			<marker id='20' x='207.1' y='81.17' label='El Valle' labelPos='right'  />
-			<marker id='21' x='230.27' y='67.41' label='La Chorrera' labelPos='left'  />
-			<marker id='22' x='206.37' y='47.14' label='Salud' labelPos='left'  />
-			<marker id='23' x='231.72' y='32.65' label='Colon' labelPos='left'  />
-			<marker id='24' x='241.13' y='21.07' label='Portobelo'  />
-			<marker id='25' x='249.1' y='57.27' label='Balboa' labelPos='left'  />
-		    <marker id='26' x='285.31' y='44.24' label='Chepo' labelPos='right'  />
-			<marker id='27' x='304.86' y='37' label='Canita' labelPos='right'  />
-			<marker id='28' x='340.34' y='102.17' label='La Palma' labelPos='left'  />
-			<marker id='29' x='371.48' y='119.55' label='Yaviza' labelPos='bottom'  />
-		</definition>
-		<application>
-		    <marker id='PN' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='22' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-			<marker id='24' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-			<marker id='27' shapeId='newCustomShape'  />
-			<marker id='28' shapeId='newCustomShape'  />
-			<marker id='29' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

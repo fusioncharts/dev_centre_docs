@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map bitlis-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.BT.AD | AD | Adilcevaz
 TR.BT.AH | AH | Ahlat
 TR.BT.BT | BT | Bitlis

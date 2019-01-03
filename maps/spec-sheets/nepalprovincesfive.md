@@ -10,12 +10,12 @@ Dimensions (Width x Height): 750x400
 
 
 
-{% embed_spec_map nepalprovincesfive-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.FI.NP|NP|Nawalparasi (West of Bardaghat Susta)
 NP.FI.RP|RP|Rupandehi
 NP.FI.KP|KP|Kapilvastu

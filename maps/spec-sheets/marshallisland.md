@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x300
 
 
 
-{% embed_spec_map marshallisland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MH.MH.AI|AI|Ailinglapalap
 MH.MH.AR|AR|Arno
 MH.MH.BR|BR|Bikar

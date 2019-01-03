@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map isparta-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.IP.AK | AK | Aksu
 TR.IP.AT | AT | Atabey
 TR.IP.EG | EG | Eğirdir

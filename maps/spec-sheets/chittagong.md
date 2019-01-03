@@ -9,12 +9,12 @@ Dimensions (Width x Height): 431x600
 
 
 
-{% embed_spec_map chittagong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BD.CG.BD|BD|Bandarban District
 BD.CG.BB|BB|Brahmanbaria District
 BD.CG.CP|CP|Chandpur District

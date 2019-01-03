@@ -34,7 +34,7 @@ To create a drag-able column 2D chart follow the steps given below:
 
 * Set the `allowDrag` attribute to specify whether the data plots representing a dataset will be drag-able. Set this attribute to `0` to disable the data plots from being drag-able, and set it to `1` (default) to enable them to be drag-able. This attribute belongs to the `dataset` object and makes all data plots for a dataset drag-able.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=dragcolumn2d) page of drag-able column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=dragcolumn2d) page of drag-able column 2D chart.
 
 The drag-able column 2D chart for the above code looks like:
 
@@ -56,7 +56,7 @@ To render a drag-able line 2D chart, change the value of the `type` attribute fr
 
 This sample will showcase the quarterly sales for Apple and Samsung. The anchors will represent the sales estimates for Apple and Samsung for Q3 and Q4 are drag-able. Recall that in the above drag-able column 2D chart we have configured all the data plots for one dataset to be drag-able. In this chart, however, we have made only selected data points of all datasets drag-able.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=dragline) page of drag-able line 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=dragline) page of drag-able line 2D chart.
 
 A drag-able line 2D chart created to plot the quarterly sales for Apple and Samsung looks like:
 
@@ -68,7 +68,7 @@ Click [here](http://jsfiddle.net/fusioncharts/8Fq44/) to edit the above drag-abl
 
 To render a drag-able area 2D chart, change the value of the `type` attribute from `dragline` to `dragarea`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=dragarea) page of drag-able area 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=dragarea) page of drag-able area 2D chart.
 
 A drag-able area 2D chart thus created looks like:
 
@@ -86,15 +86,15 @@ Click the menu button, a pop-up with the options to increase or decrease the upp
 
 Select any of the above options, to increase or decrease the chart limits using auto-calculated intervals. 
 
-![Change Axis Limits]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-1.gif)
+![Change Axis Limits](/gif/standard-charts-drag-able-charts-gif-1.gif)
 
 However, to set manual values for the upper/lower limits, click the limits and edit them directly.
 
-![Change Axis Limits Manually]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-2.gif)
+![Change Axis Limits Manually](/gif/standard-charts-drag-able-charts-gif-2.gif)
 
 > If you enter a limit value which cannot be accepted by the chart, the value will turn red to indicate that the value can not be accepted as shown below:
 
-![Set wrong axis limits]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-3.gif)
+![Set wrong axis limits](/gif/standard-charts-drag-able-charts-gif-3.gif)
 
 ## Manage Chart Limits using JavaScript API
 

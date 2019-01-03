@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map centralzambia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.CE.CB|CB|Chibombo District
 ZM.CE.CS|CS|Chisamba District
 ZM.CE.CT|CT|Chitambo District

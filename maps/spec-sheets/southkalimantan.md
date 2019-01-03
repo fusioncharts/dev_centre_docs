@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map southkalimantan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.KS.BB|BB|Banjarbaru City
 ID.KS.BM|BM|Banjarmasin City
 ID.KS.BA|BA|Balangan Regency

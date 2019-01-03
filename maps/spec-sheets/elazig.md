@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map elazig-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.EG.AG | AG | Ağın
 TR.EG.AL | AL | Alacakaya
 TR.EG.AR | AR | Arıcak

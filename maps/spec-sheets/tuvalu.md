@@ -9,12 +9,12 @@ Dimensions (Width x Height): 350x380
 
 
 
-{% embed_spec_map tuvalu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TV.FN|FN|Funafuti
 TV.NG|NG|Nanumanga
 TV.NA|NA|Nanumea

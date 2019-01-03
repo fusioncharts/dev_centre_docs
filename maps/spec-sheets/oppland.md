@@ -9,12 +9,12 @@ Dimensions (Width x Height): 492x600
 
 
 
-{% embed_spec_map oppland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.OP.DO|DO|Dovre
 NO.OP.ET|ET|Etnedal
 NO.OP.GA|GA|Gausdal

@@ -22,11 +22,10 @@ Install **FusionCharts** using any of the following steps:
 <div class='tab npm-tab active'>
 
 <div><strong>To install the `fusioncharts` package via  npm run the command below:</strong></div>
-<pre><code class="custom-hlc language-PowerShell">
+<pre><code class="language-PowerShell">
     $ npm install fusioncharts
-</code></pre>
-
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -38,15 +37,15 @@ Install **FusionCharts** using any of the following steps:
     </ol>
 </div>
 <div>The code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 2 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab localfiles-tab'>
@@ -58,15 +57,15 @@ Install **FusionCharts** using any of the following steps:
     </ol>
 </div>
 <div>The code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Step 2 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -167,7 +166,7 @@ To render the gauge, follow the steps below:
 4. Add the gauge and the theme as a dependency to the core.
 
 5. Store the chart configurations in a JSON object. In this JSON object:
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
+    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
@@ -191,7 +190,7 @@ The consolidated code is shown below:
 </ul>
 <div  class='mt-30'><strong>The steps to render the gauge for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 // Include the core fusioncharts file from core  -
 import FusionCharts from 'fusioncharts/core';
 
@@ -250,9 +249,10 @@ var gaugeInstance = new FusionCharts({
 });
 // Render
 gaugeInstance.render();
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <h4>CJS</h4>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
 var Widgets = require('fusioncharts/fusioncharts.widgets');
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
@@ -303,12 +303,12 @@ var gaugeInstance = new FusionCharts({
 });
 // Render
 gaugeInstance.render();
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;My first gauge using FusionWidgets XT&lt;/title&gt;
@@ -366,13 +366,13 @@ gaugeInstance.render();
     &lt;div id="chart-container"&gt;An angular gauge will load here!&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 
 <div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;My first gauge using FusionWidgets XT&lt;/title&gt;
@@ -430,8 +430,8 @@ gaugeInstance.render();
     &lt;div id="chart-container"&gt;An angular gauge will load here!&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

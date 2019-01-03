@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x340
 
 
 
-{% embed_spec_map northernireland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AN|Antrim
 02|AD|Ards
 03|AM|Armagh

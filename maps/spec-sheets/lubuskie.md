@@ -9,12 +9,12 @@ Dimensions (Width x Height): 406x613
 
 
 
-{% embed_spec_map lubuskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.LB.GW|GW|Gorzowski
 PL.LB.GM|GM|Gorzów Wielkopolski
 PL.LB.KR|KR|Krosnienski

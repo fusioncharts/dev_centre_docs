@@ -9,12 +9,12 @@ Dimensions (Width x Height): 750x610
 
 
 
-{% embed_spec_map hradeckralove-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CZ.HK.HK|HK|Hradec Králové
 CZ.HK.JC|JC|Ji?ín
 CZ.HK.NA|NA|Náchod

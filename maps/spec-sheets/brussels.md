@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x500
 
 
 
-{% embed_spec_map brussels-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.BU.AN|AN|Anderlecht
 BE.BU.AU|AU|Auderghem
 BE.BU.BS|BS|Berchem-Sainte-Agathe

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1060x460
 
 
 
-{% embed_spec_map easttimor-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TL.AL|AL|Aileu
 TL.AN|AN|Ainaro
 TL.AM|AM|Oecusse

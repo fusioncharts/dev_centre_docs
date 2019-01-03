@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x580
 
 
 
-{% embed_spec_map cundinamarca-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.CU.AD|AD|Agua de Dios
 CO.CU.AL|AL|Albán
 CO.CU.AP|AP|Anapoima

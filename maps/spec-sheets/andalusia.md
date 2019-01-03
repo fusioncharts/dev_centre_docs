@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map andalusia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ES.AN.AM | AM | Almeria
 ES.AN.CD | CD | Cádiz
 ES.AN.CO | CO | Córdoba

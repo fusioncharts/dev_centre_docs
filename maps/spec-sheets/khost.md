@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map khost-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.KT.BA|BA|Bak
 AF.KT.GU|GU|Gurbuz
 AF.KT.JM|JM|Jaji Maydan

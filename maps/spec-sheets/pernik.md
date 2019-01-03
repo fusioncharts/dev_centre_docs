@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x504
 
 
 
-{% embed_spec_map pernik-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BR|Breznik
 02|KO|Kovachevtsi
 03|PE|Pernik

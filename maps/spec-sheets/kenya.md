@@ -9,12 +9,12 @@ Dimensions (Width x Height): 290x330
 
 
 
-{% embed_spec_map kenya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CE|Central
 02|CO|Coast
 03|EA|Eastern

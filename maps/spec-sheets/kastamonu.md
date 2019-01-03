@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kastamonu-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.KS.AB | AB | Abana
 TR.KS.AG | AG | Ağlı
 TR.KS.AR | AR | Araç

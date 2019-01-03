@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -218,14 +218,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -480,73 +481,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		    <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='SK' x='148.54' y='393.93' label='Stockholm' labelPos='left' />
-			<marker id='01' x='170.75' y='64.68' label='Kiruna' labelPos='left'  />
-			<marker id='02' x='201.64' y='155.44' label='Lulea' labelPos='right'  />
-			<marker id='03' x='94.47' y='149.65' label='Tarnaby' labelPos='left'  />
-			<marker id='04' x='174.61' y='225.93' label='Umea'  />
-			<marker id='05' x='133.09' y='283.86' label='Sundsvall' labelPos='left'  />
-			<marker id='06' x='128.26' y='325.37' label='Hudiksvall' labelPos='right'  />
-			<marker id='07' x='139.85' y='347.58' label='Gavle' labelPos='right'  />
-			<marker id='08' x='144.68' y='376.55' label='Uppsala' labelPos='right'  />
-			<marker id='09' x='86.75' y='407.44' label='Orebro' labelPos='left'  />
-			<marker id='10' x='60.68' y='387.17' label='Karlstad' labelPos='left'  />
-			<marker id='11' x='115.71' y='423.86' label='Norrkoping' labelPos='right'  />
-			<marker id='12' x='101.23' y='433.51' label='Linkoping' labelPos='left'  />
-			<marker id='13' x='66.47' y='455.72' label='Jonkoping' labelPos='right'  />
-			<marker id='14' x='23.99' y='459.58' label='Goteborg'  />
-			<marker id='15' x='117.64' y='487.58' label='Kalmar' labelPos='right'  />
-			<marker id='16' x='95.44' y='514.62' label='Karlshamn'  />
-			<marker id='17' x='82.88' y='518.48' label='Solvesborg' labelPos='right'  />
-			<marker id='18' x='44.26' y='536.82' label='Malmo' labelPos='left'  />
-			<marker id='19' x='35.57' y='511.72' label='Helsingborg' labelPos='bottom'  />
-			<marker id='20' x='40.4' y='494.34' label='Halmstad'  />
-	    </definition>
-		<application>
-			<marker id='SK' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='46' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

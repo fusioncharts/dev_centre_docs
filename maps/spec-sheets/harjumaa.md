@@ -9,12 +9,12 @@ Dimensions (Width x Height): 759x470
 
 
 
-{% embed_spec_map harjumaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 07|AE|Aegviidu
 08|AN|Anija
 09|HA|Harku

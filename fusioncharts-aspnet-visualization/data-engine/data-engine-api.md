@@ -106,7 +106,7 @@ In the above code:
 
 The code to dispose the grouped column is given below:
 
-```aspnet
+```csharp
 model.Dispose()
 ```
 
@@ -138,7 +138,7 @@ In the above code:
 
 THe code to dispose the sorted column is given below:
 
-```aspnet
+```csharp
 model.Dispose()
 ```
 
@@ -169,7 +169,7 @@ In the above code:
 
 The code to dispose the aggregated is given below:
 
-```aspnet
+```csharp
 model.Dispose()
 ```
 

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 462x505
 
 
 
-{% embed_spec_map hunan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 14|TM| Xiangxi (Tujia & Miao)
 2|CA|Changde
 1|CH|Changsha

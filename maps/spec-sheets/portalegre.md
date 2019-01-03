@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x360
 
 
 
-{% embed_spec_map portalegre-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.PA.AC|AC|Alter do Chão
 PT.PA.AR|AR|Arronches
 PT.PA.AV|AV|Avis

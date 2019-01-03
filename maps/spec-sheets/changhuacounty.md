@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map changhuacounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.CG.CH | CH | Changhua City
 TW.CG.YU | YU | Yuanlin City
 TW.CG.BE | BE | Beidou Township

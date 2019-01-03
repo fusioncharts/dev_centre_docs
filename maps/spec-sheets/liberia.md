@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x440
 
 
 
-{% embed_spec_map liberia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LR.BM|BM|Bomi
 LR.BG|BG|Bong
 LR.GP|GP|Gbarpolu

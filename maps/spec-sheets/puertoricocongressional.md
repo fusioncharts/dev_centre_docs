@@ -9,11 +9,11 @@ Dimensions (Width x Height): 750x159
 
 
 
-{% embed_spec_map puertoricocongressional-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 98|PR|Puerto Rico nonvoting
 

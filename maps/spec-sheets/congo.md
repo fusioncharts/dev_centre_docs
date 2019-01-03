@@ -9,12 +9,12 @@ Dimensions (Width x Height): 320x370
 
 
 
-{% embed_spec_map congo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CG.BO|BO|Bouenza
 CG.BR|BR|Brazzaville
 CG.CU|CU|Cuvette

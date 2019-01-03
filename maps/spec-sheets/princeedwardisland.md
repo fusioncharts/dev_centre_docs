@@ -9,12 +9,12 @@ Dimensions (Width x Height): 460x310
 
 
 
-{% embed_spec_map princeedwardisland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.PE.AL|AL|Anne's Land
 CA.PE.CS|CS|Charlotte's Shore
 CA.PE.NC|NC|North Cape Coastal Drive

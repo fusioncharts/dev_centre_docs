@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map khovd-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.HD.AL | AL | Altai
 MN.HD.BU | BU | Bulgan
 MN.HD.BY | BY | Buyant

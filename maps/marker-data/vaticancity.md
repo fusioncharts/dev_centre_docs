@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -185,14 +185,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -407,65 +408,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1' showLabels='0' >
-	<data>
-		<entity id='EU.VA'  />
-	</data>
-	<markers>
-	<shapes>
-	       <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		   <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	   </shapes>
-		<definition>
-			<marker id='01' x='189.76' y='44.59' label='Vatican Museums'  />
-			<marker id='02' x='256.65' y='70.94' label='Belvedere Palace'  />
-			<marker id='03' x='291.11' y='191.21' label='St. Peter&apos;s Square' labelPos='bottom'  />
-			<marker id='04' x='284.35' y='172.97' label='Obelisk'  />
-			<marker id='05' x='264.76' y='150.67' label='Vatican Palace'  />
-			<marker id='06' x='209.35' y='146.62' label='Sistine Chapel'  />
-			<marker id='07' x='189.08' y='174.32' label='St.Peter&apos;s Basilica'  />
-			<marker id='08' x='191.79' y='201.35' label='Sacristy'  />
-			<marker id='09' x='207.33' y='229.72' label='Audience Hall' labelPos='right'  />
-			<marker id='10' x='60.7' y='189.18' label='Radio Station'  />
-			<marker id='11' x='85.7' y='158.78' label='Ethiopian College' labelPos='right'  />
-			<marker id='12' x='141.11' y='141.21' label='Government Palace' labelPos='left'  />
-			<marker id='13' x='213.41' y='116.21' label='Borgia Apartment'  />
-			<marker id='14' x='211.38' y='83.78' label='Vatican Apostolic Library' labelPos='right'  />
-			<marker id='15' x='173.54' y='90.54' label='Academy of Sciences' labelPos='left'  />
-			<marker id='16' x='139.76' y='104.72' label='Vatican Gardens' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

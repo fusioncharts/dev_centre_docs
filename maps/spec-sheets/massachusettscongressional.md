@@ -9,12 +9,12 @@ Dimensions (Width x Height): 850x540
 
 
 
-{% embed_spec_map massachusettscongressional-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 10|10th|10th district
 1|1st|1st district
 2|2nd|2nd district

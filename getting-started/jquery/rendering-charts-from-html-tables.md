@@ -5,7 +5,7 @@ heading: Rendering Charts from HTML Tables
 chartPresent: true
 ---
 
-The FusionCharts jQuery helper exposes [methods for rendering charts]({% site.baseurl %}/getting-started/jquery/your-first-chart-using-jquery), where the FusionCharts constructor object is passed as an argument to the rendering methods.
+The FusionCharts jQuery helper exposes [methods for rendering charts](/getting-started/jquery/your-first-chart-using-jquery), where the FusionCharts constructor object is passed as an argument to the rendering methods.
 
 An additional feature provided by the jQuery helper is the ability to convert a table containing numeric data into a relevant chart type. That is, instead of a JSON or XML data, your data source can be an HTML table.
 
@@ -107,6 +107,6 @@ $("#dataTable").convertToFusionCharts({
 
 The `convertToFusionCharts` method is used to convert the data contained in the table to the JSON/XML format, in which data is consumed by the chart. It is important to provide a valid chart container in the `renderAt` parameter in the chart configuration. If `renderAt` is not provided, then the chart is drawn next to the table. The return value of the function is a jQuery object containing all the newly created instances of FusionCharts.
 
-Refer [here]({% site.baseurl %}/getting-started/jquery/api-reference) for more details on this method.
+Refer [here](/getting-started/jquery/api-reference) for more details on this method.
 
-<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{% site.baseurl %}/js/rendering-charts-from-html-tables.js'></script>
+<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{% site.BASE_URL %}/js/rendering-charts-from-html-tables.js'></script>

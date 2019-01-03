@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map bheri-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.BH.BN|BN|Banke
 NP.BH.BR|BR|Bardiya
 NP.BH.DL|DL|Dailekh

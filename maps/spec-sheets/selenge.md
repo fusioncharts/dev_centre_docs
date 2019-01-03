@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map selenge-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.SL.AL | AL | Altanbulag
 MN.SL.BA | BA | Baruunbüren
 MN.SL.BG | BG | Bayangol

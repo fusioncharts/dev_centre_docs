@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map azerbaijanwest-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.WA.BU|BU|Bukan County
 IR.WA.CH|CH|Chaldoran County
 IR.WA.CP|CP|Chaypareh County

@@ -8,8 +8,8 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure the following using the `ember-fusioncharts` component:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/ember/configure-your-chart-using-ember#update-chart-data-1)
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/ember/configure-your-chart-using-ember#update-chart-attributes-5)
+* [Update Chart Data](/getting-started/ember/configure-your-chart-using-ember#update-chart-data)
+* [Update Chart Attributes](/getting-started/ember/configure-your-chart-using-ember#update-chart-attributes)
 
 ## Update Chart Data
 

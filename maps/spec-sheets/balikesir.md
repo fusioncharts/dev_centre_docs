@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map balikesir-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.BK.AY | AY | Ayvalık
 TR.BK.BK | BK | Balıkesir
 TR.BK.BL | BL | Balya

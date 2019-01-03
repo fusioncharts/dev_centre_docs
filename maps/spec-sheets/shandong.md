@@ -9,12 +9,12 @@ Dimensions (Width x Height): 494x307
 
 
 
-{% embed_spec_map shandong-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 3|BI|Binzhou
 4|DE|Dezhou
 5|DY|Dongying

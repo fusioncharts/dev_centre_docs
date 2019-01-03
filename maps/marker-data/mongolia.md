@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -229,14 +229,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -486,80 +487,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='MN.AR'  />
-		<entity id='MN.BH'  />
-		<entity id='MN.BO'  />
-		<entity id='MN.BU'  />
-		<entity id='MN.DA'  />
-		<entity id='MN.DD'  />
-		<entity id='MN.DG'  />
-		<entity id='MN.DU'  />
-		<entity id='MN.GA'  />
-		<entity id='MN.GS'  />
-		<entity id='MN.HN'  />
-		<entity id='MN.HD'  />
-		<entity id='MN.HG'  />
-		<entity id='MN.OG'  />
-		<entity id='MN.ER'  />
-		<entity id='MN.OH'  />
-		<entity id='MN.SL'  />
-		<entity id='MN.SB'  />
-		<entity id='MN.TO'  />
-		<entity id='MN.UB'  />
-		<entity id='MN.UV'  />
-		<entity id='MN.DZ'  />
-	</data>
-	<markers>
-	  <shapes>
-	 	     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'  fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='UL' x='525.76' y='181.31' label='Ulaanbaatar' labelPos='right'  />
-			<marker id='01' x='660.98' y='151.6' label='Choybalsan'  />
-			<marker id='02' x='568.79' y='283.75' label='Buyant-Us' labelPos='right'  />
-			<marker id='04' x='435.62' y='333.95' label='Dalandzadgad' labelPos='right'  />
-			<marker id='05' x='293.23' y='249.95' label='Bayanhongor' labelPos='right'  />
-			<marker id='03' x='207.18' y='258.14' label='Altay'  />
-			<marker id='06' x='124.2' y='197.7' label='Dund-Us' labelPos='left'  />
-			<marker id='07' x='71.96' y='130.09' label='Olgiy' labelPos='right'  />
-			<marker id='08' x='120.1' y='93.21' label='Ulaangom' labelPos='left'  />
-			<marker id='09' x='237.91' y='187.46' label='Uliastay'  />
-			<marker id='10' x='385.42' y='123.95' label='Erdenet' labelPos='left'  />
-			<marker id='11' x='371.08' y='139.31' label='Bulgan' labelPos='left'  />
-			<marker id='13' x='453.03' y='106.53' label='Darhan'  />
-		</definition>
-		<application>
-			<marker id='UL' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 420x410
 
 
 
-{% embed_spec_map vasternorrland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.VN.HA|HA|Härnösand
 SE.VN.KR|KR|Kramfors
 SE.VN.SO|SO|Sollefteå

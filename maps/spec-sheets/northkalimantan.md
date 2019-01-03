@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map northkalimantan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.KU.TA|TA|Tarakan City
 ID.KU.BL|BL|Bulungan Regency
 ID.KU.MA|MA|Malinau Regency

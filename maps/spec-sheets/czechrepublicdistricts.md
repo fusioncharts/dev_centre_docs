@@ -9,12 +9,12 @@ Dimensions (Width x Height): 811x465
 
 
 
-{% embed_spec_map czechrepublicdistricts-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 04|BN|Benešov
 05|BE|Beroun
 54|BK|Blansko

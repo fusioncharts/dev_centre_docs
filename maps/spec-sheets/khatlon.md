@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map khatlon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TJ.KL.GO|GO|Khuroson
 TJ.KL.JA|JA|Yovon
 TJ.KL.NR|NR|Norak

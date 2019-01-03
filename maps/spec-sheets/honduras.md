@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x256
 
 
 
-{% embed_spec_map honduras-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 10|IN| Intibucá
 01|AT|Atlántida
 02|CH|Choluteca

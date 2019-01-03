@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map southcotabato-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.SC.BN | BN | Banga
 PH.SC.GS | GS | General Santos
 PH.SC.KR | KR | Koronadal

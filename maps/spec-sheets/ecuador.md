@@ -9,12 +9,12 @@ Dimensions (Width x Height): 354x386
 
 
 
-{% embed_spec_map ecuador-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AZ|Azuay
 02|BO|Bolívar
 04|CR|Carchi

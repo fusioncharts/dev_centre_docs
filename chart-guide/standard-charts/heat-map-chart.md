@@ -50,11 +50,11 @@ As stated earlier, you can use two different types of legends with heat map char
 
 ### Gradient legend
 
-![Gradient-Legend]({% site.baseurl %}/images/heat-map-introduction-1.jpg)
+![Gradient-Legend](/images/heat-map-introduction-1.jpg)
 
 ### Icon legend
 
-![Icon-Legend]({% site.baseurl %}/images/heat-map-introduction-2.jpg)
+![Icon-Legend](/images/heat-map-introduction-2.jpg)
 
 ## Create numeric heat map charts
 
@@ -375,7 +375,7 @@ Click [here](http://jsfiddle.net/fusioncharts/ou00rdwd/) to edit the above chart
 
 Icon legends are interactive. You can click a legend item to show or hide all the cells mapped with the color range represented by the legend item. A heat map chart rendered with all "average" ratings hidden looks as shown in the image below:
 
-![icon-legend]({% site.baseurl %}/images/standard-charts-heat-map-chart-image-1.jpg)
+![icon-legend](/images/standard-charts-heat-map-chart-image-1.jpg)
 
 ## Create a gradient legend
 
@@ -486,7 +486,7 @@ Using a gradient legend, you can filter cells within a specific range of values.
 
 The chart will look as shown below:
 
-![Heat-Map-Chart-GIF-1]({% site.baseurl %}/gif/standard-charts-heat-map-chart-gif-1.gif)
+![Heat-Map-Chart-GIF-1](/gif/standard-charts-heat-map-chart-gif-1.gif)
 
 ## Configure labels and tooltips
 

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map igdir-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.IG.AR | AR | Aralık
 TR.IG.IG | IG | Iğdır
 TR.IG.KA | KA | Karakoyunlu

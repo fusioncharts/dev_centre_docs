@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x590
 
 
 
-{% embed_spec_map hyogo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Aioi
 002|002|Akashi
 003|003|Ako

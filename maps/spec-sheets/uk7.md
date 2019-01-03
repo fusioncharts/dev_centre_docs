@@ -9,12 +9,12 @@ Dimensions (Width x Height): 351x592
 
 
 
-{% embed_spec_map uk7-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UK.CI|CI|Channel Islands
 UK.EN|EN|England
 UK.IM|IM|Isle of Man

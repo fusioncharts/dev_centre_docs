@@ -53,7 +53,7 @@ new FusionCharts({
     });
 ```
 
-Every component in FusionTime has its own set of properties to configure. To know more click [here]({% site.baseurl %}/fusiontime/fusiontime-component/y-axis-in-fusiontime).
+Every component in FusionTime has its own set of properties to configure. To know more click [here](/fusiontime/fusiontime-component/y-axis-in-fusiontime).
 
 ## Styling 
 

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 740x395
 
 
 
-{% embed_spec_map maryland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AL|Allegany
 003|AN|Anne Arundel
 005|BL|Baltimore

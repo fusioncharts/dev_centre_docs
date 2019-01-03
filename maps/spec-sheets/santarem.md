@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x360
 
 
 
-{% embed_spec_map santarem-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.SA.AB|AB|Abrantes
 PT.SA.AC|AC|Alcanena
 PT.SA.AM|AM|Almeirim

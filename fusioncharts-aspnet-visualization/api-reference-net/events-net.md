@@ -12,7 +12,7 @@ In this article, we'll discuss the events that you can use to trigger actions fo
 
 Syntax for all the DataLoad Events is shown below:
 
-```aspnet
+```csharp
 visualizationObject.Events.AttachDataLoadEvent(FusionChartsEvents.DataLoadEvents.DATALOADED, "OnDataLoaded");
 ```
 

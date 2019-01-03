@@ -9,12 +9,12 @@ Dimensions (Width x Height): 556x600
 
 
 
-{% embed_spec_map nordtrondelag-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.NT.FL|FL|Flatanger
 NO.NT.FO|FO|Fosnes
 NO.NT.FR|FR|Frosta

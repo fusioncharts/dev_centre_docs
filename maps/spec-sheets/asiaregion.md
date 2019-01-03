@@ -9,12 +9,12 @@ Dimensions (Width x Height): 741x582
 
 
 
-{% embed_spec_map asiaregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|CA|Central Asia
 03|EA|Eastern Asia
 01|NA|Northern Asia

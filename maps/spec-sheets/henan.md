@@ -9,12 +9,12 @@ Dimensions (Width x Height): 525x508
 
 
 
-{% embed_spec_map henan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|AN|Anyang
 3|HE|Hebi
 4|JI|Jiaozuo

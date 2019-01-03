@@ -9,12 +9,12 @@ Dimensions (Width x Height): 190x400
 
 
 
-{% embed_spec_map albania-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 40|BR|Berat
 41|DI|Dibër
 42|DR|Durrës

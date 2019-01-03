@@ -25,7 +25,7 @@ Click [here](https://dotnetfiddle.net/cOsBEu) to edit the above chart.
 
 To change the theme refer to the code below:
 
-```aspnet
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Data;

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 715x500
 
 
 
-{% embed_spec_map victoria-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 VIC04|CV|Central Victoria
 VIC06|GMV|Greater Melbourne Victoria
 VIC02|NEV|North East Victoria (Hume)

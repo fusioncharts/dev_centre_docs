@@ -9,12 +9,12 @@ Dimensions (Width x Height): 423x600
 
 
 
-{% embed_spec_map bratislava-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SK.BL.B1|B1|Bratislava I
 SK.BL.B2|B2|Bratislava II
 SK.BL.B3|B3|Bratislava III

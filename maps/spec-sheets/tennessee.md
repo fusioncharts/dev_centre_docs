@@ -9,12 +9,12 @@ Dimensions (Width x Height): 760x207
 
 
 
-{% embed_spec_map tennessee-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AN|Anderson
 003|BD|Bedford
 005|BE|Benton

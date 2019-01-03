@@ -9,12 +9,12 @@ Dimensions (Width x Height): 771x372
 
 
 
-{% embed_spec_map oklahoma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adair
 003|AL|Alfalfa
 005|AT|Atoka

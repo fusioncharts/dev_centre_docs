@@ -9,12 +9,12 @@ Dimensions (Width x Height): 240x310
 
 
 
-{% embed_spec_map usacentralregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 17|IL|Illinois
 19|IA|Iowa
 20|KS|Kansas

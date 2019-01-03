@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ghor-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.GR.CH|CH|Chaghcharan
 AF.GR.CD|CD|Charsada
 AF.GR.DY|DY|Dawlat Yar

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x570
 
 
 
-{% embed_spec_map hesse-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.HE.BR|BR|Bergstraße
 DE.HE.DA|DA|Darmstadt
 DE.HE.DD|DD|Darmstadt Dieburg

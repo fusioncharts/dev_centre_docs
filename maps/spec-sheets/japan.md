@@ -9,12 +9,12 @@ Dimensions (Width x Height): 541x595
 
 
 
-{% embed_spec_map japan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1|AI|Aichi
 2|AK|Akita
 3|AO|Aomori

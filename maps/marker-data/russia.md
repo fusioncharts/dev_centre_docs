@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -284,14 +284,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -629,89 +630,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	   <shapes>
-	       <shape id='myCustomshape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		   <shape id='newCustomshape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-	</shapes>
-		<definition>
-			<marker id='MO' x='156.18' y='224.14' label='Moscow' labelPos='left'  />
-			<marker id='01' x='217.64' y='133.46' label='Muzmansk'  />
-			<marker id='02' x='163.23' y='165.7' label='Vyborg'  />
-			<marker id='03' x='153.16' y='174.77' label='Saint Petersburg' labelPos='left'  />
-			<marker id='04' x='209.58' y='176.78' label='Arkhangelsk' labelPos='bottom'  />
-			<marker id='06' x='182.38' y='170.74' label='Petrozavodsk' labelPos='right'  />
-			<marker id='07' x='425.22' y='181.82' label="Noril'sk"  />
-			<marker id='08' x='169.28' y='240.27' label='Nizhniy Novgorod' labelpos='right' />
-			<marker id='09' x='183.38' y='264.45' label='Kazan' labelPos='left'  />
-			<marker id='10' x='205.55' y='270.49' label='Yekaterinburg' labelPos='right'  />
-			<marker id='12' x='234.77' y='286.62' label='Chelyabinsk' labelPos='left'  />
-			<marker id='13' x='281.12' y='306.77' label='Omsk' labelPos='right'  />
-			<marker id='14' x='326.47' y='311.81' label='Novosibirsk' labelPos='right'  />
-			<marker id='15' x='372.82' y='298.71' label='Krasnoyarak' labelPos='right'  />
-			<marker id='16' x='424.21' y='330.95' label='Irkutsk' labelPos='left'  />
-			<marker id='21' x='470.56' y='209.03' label='Yakutsk'  />
-			<marker id='17' x='563.26' y='178.8' label='Magadan'  />
-			<marker id='18' x='590.47' y='29.67' label='Provideniya'  />
-			<marker id='19' x='578.38' y='63.93' label='Anadyr'  />
-			<marker id='20' x='628.76' y='182.83' label='Petropavlovsk-Kamchatskiy' labelPos='left'  />
-			<marker id='22' x='607.6' y='277.55' label='Kholmsk' labelPos='left'  />
-			<marker id='23' x='612.64' y='285.61' label="Nevel'sk" labelPos='right'  />
-			<marker id='24' x='593.49' y='328.94' label='Nakhodka Vostochnyy'  />
-			<marker id='26' x='581.4' y='343.04' label='Vladivostok' labelPos='bottom'  />
-			<marker id='27' x='116.88' y='282.59' label='Rostoy'  />
-			<marker id='25' x='98.74' y='287.62' label='Novorossiyak' labelPos='left'  />
-			<marker id='30' x='98.74' y='299.72' label='Tuapse' labelPos='left'  />
-			<marker id='28' x='99.75' y='310.8' label='Sochi' labelPos='left'  />
-			<marker id='31' x='147.11' y='317.85' label='Astrakhan' labelPos='bottom'  />
-		</definition>
-		<application>
-			<marker id='MO' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='22' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-			<marker id='24' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-			<marker id='27' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='30' shapeId='newCustomShape'  />
-			<marker id='28' shapeId='newCustomShape'  />
-			<marker id='31' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

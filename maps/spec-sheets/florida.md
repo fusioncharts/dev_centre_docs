@@ -9,12 +9,12 @@ Dimensions (Width x Height): 631x601
 
 
 
-{% embed_spec_map florida-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AL|Alachua
 003|BA|Baker
 005|BY|Bay

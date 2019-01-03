@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x760
 
 
 
-{% embed_spec_map sudan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SD.GZ|GZ|Al Jazirah (Gezira)
 SD.GD|GD|Al Qadarif (Gedarif)
 SD.BN|BN|Blue Nile

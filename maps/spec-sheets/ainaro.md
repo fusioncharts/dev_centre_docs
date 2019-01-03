@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map ainaro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TL.AN.AI|AI|Ainaro
 TL.AN.HU|HU|Hato-Udo
 TL.AN.HB|HB|Hatu-Builico

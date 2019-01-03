@@ -9,12 +9,12 @@ Dimensions (Width x Height): 445x412
 
 
 
-{% embed_spec_map liaoning-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 3|AS|Anshan
 4|BE|Benxi
 5|CY|Chaoyang

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 150x220
 
 
 
-{% embed_spec_map bahrain-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CA|Capital
 02|CE|Central
 03|MU|Muharraq

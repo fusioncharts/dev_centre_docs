@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map bataan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.BA.AU | AU | Abucay
 PH.BA.BG | BG | Bagac
 PH.BA.BL | BL | Balanga

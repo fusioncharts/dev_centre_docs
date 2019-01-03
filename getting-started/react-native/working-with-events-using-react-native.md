@@ -142,7 +142,7 @@ The HTML template(`fusioncharts.html`) of the above sample is:
 <div class='tab-content extra-tabs'>
 
 <div class='tab android-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -247,12 +247,12 @@ The HTML template(`fusioncharts.html`) of the above sample is:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab ios-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -266,8 +266,8 @@ The HTML template(`fusioncharts.html`) of the above sample is:
 &lt;body&gt;&lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

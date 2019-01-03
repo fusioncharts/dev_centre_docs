@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map tabriz-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.TB.AR|AR|Ardabil Province
 IR.TB.EA|EA|Azerbaijan, East Province
 IR.TB.GI|GI|Gilan Province

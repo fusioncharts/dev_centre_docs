@@ -8,7 +8,7 @@ A custom range selector is an extension which allows you to set the **from** and
 
 A custom range selector appears as shown in the image below:
 
-<img src="{% site.baseurl %}/images/fusiontime-component-custom-range-selector.png" alt="Custom Range Selector" width="700" height="420">
+<img src="{% site.BASE_URL %}/images/fusiontime-component-custom-range-selector.png" alt="Custom Range Selector" width="700" height="420">
 
 ## Set custom date and time
 

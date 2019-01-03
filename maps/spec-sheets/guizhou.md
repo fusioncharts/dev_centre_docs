@@ -9,12 +9,12 @@ Dimensions (Width x Height): 590x510
 
 
 
-{% embed_spec_map guizhou-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 5|AN|Anshun
 1|BI|Bijie
 6|GU|Guiyang

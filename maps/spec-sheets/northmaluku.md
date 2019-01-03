@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map northmaluku-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.MU.TE|TE|Ternate (city)
 ID.MU.TK|TK|Kepulauan Tidore (city)
 ID.MU.HT|HT|Central Halmahera Regency(Halmahera Tengah)

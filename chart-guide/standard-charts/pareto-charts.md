@@ -32,7 +32,7 @@ To create a pareto chart in 2D follow the steps given below: set the `type` attr
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pareto2d) page of multi-series pareto 2D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=pareto2d) page of multi-series pareto 2D chart.
 
 The pareto chart in 2D for the above code looks like:
 
@@ -44,7 +44,7 @@ Click [here](http://jsfiddle.net/fusioncharts/Qc4Gp/) to edit the pareto 2D char
 
 To render a pareto chart in 3D, change the value of the `type` attribute from `pareto2D` to `pareto3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pareto3d) page of multi-series pareto 3D chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=pareto3d) page of multi-series pareto 3D chart.
 
 A simple Pareto 3D chart looks like this:
 

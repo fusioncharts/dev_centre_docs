@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x580
 
 
 
-{% embed_spec_map jamtland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.JA.BE|BE|Berg
 SE.JA.BR|BR|Bräcke
 SE.JA.HA|HA|Härjedalen

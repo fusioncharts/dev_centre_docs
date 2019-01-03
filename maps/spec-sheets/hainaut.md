@@ -9,12 +9,12 @@ Dimensions (Width x Height): 481x353
 
 
 
-{% embed_spec_map hainaut-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.HT.AG|AG|Aiseau-Presles
 BE.HT.AP|AP|Anderlues
 BE.HT.AW|AW|Antoing

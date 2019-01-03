@@ -9,12 +9,12 @@ Dimensions (Width x Height): 620x600
 
 
 
-{% embed_spec_map eastnorthcentraldma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 583|ALP-MI|ALPENA
 564|CHA-WV|CHARLESTON/HUNTINGTON
 648|CHA-IL|CHAMPAIGN/SPRINGFIELD/DECATUR

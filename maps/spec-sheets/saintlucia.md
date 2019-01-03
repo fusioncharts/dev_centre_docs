@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x520
 
 
 
-{% embed_spec_map saintlucia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AR|Anse-la-Raye
 03|CA|Castries
 04|CH|Choiseul

@@ -48,4 +48,4 @@ app.controller('MyController', function($scope) {
 
 In the above code example, clicking the button will change the caption text to **Catpion changed**.
 
-Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods) to get the list of FusionCharts' methods.
+Click [here](/api/fusioncharts/fusioncharts-methods) to get the list of FusionCharts' methods.

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kalinga-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.KA.BL | BL | Balbalan
 PH.KA.LB | LB | Lubuagan
 PH.KA.PS | PS | Pasil

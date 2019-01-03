@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x510
 
 
 
-{% embed_spec_map nauru-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NR.AI|AI|Aiwo
 NR.AB|AB|Anabar
 NR.AT|AT|Anetan

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 520x440
 
 
 
-{% embed_spec_map brunei-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BN.BE|BE|Belait
 BN.BM|BM|Brunei and Muara
 BN.TE|TE|Temburong

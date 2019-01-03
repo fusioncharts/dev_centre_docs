@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1400x1150
 
 
 
-{% embed_spec_map minasgerais-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 3100609|AG|?gua Boa
 3100708|AG|?gua Comprida
 3100906|AF|?guas Formosas

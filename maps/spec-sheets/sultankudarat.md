@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map sultankudarat-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.SK.BG | BG | Bagumbayan
 PH.SK.CL | CL | Columbio
 PH.SK.EP | EP | Esperanza

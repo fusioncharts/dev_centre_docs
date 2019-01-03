@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map qashqadaryo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.QA.CH|CH|Chirakchi
 UZ.QA.DE|DE|Dehkanabad
 UZ.QA.GU|GU|Guzar

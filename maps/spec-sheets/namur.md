@@ -9,12 +9,12 @@ Dimensions (Width x Height): 460x550
 
 
 
-{% embed_spec_map namur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.NA.AD|be.na.ad|AD|Andenne
 BE.NA.AN|be.na.an|AN|Anhée
 BE.NA.AS|be.na.as|AS|Assesse

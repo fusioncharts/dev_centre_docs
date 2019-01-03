@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map burdur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.BD.AG | AG | Ağlasun
 TR.BD.AL | AL | Altınyayla
 TR.BD.BU | BU | Bucak

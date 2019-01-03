@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x440
 
 
 
-{% embed_spec_map europe-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AL|Albania
 002|AD|Andorra
 003|AT|Austria

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 471x421
 
 
 
-{% embed_spec_map rwanda-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RW.ES|ES|Eastern
 RW.KV|KV|Kigali City
 RW.NO|NO|Northern

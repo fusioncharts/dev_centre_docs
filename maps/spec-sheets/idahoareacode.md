@@ -9,11 +9,11 @@ Dimensions (Width x Height): 300x475
 
 
 
-{% embed_spec_map idahoareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 208|208|208
 

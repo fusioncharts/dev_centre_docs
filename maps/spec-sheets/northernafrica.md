@@ -9,12 +9,12 @@ Dimensions (Width x Height): 740x478
 
 
 
-{% embed_spec_map northernafrica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 39|DZ|Algeria
 53|EG|Egypt
 64|LR|Libya

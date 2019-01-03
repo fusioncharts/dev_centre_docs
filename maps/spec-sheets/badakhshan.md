@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map badakhshan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.BD.BA|BA|Baharak
 AF.BD.DY|DY|Darayim
 AF.BD.FA|FA|Fayzabad

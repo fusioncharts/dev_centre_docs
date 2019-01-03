@@ -18,8 +18,8 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </ul>
 
 <div class="tab-content extra-tabs">
-<div class="tab csharp-tab">
-<pre><code class="custom-hlc language-cs">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
 	using System;
 	using System.IO;
 	using System.Linq;
@@ -54,11 +54,12 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	        }
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>    
 
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart {
@@ -91,11 +92,12 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	            });
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 	<?php
 	// Converting an SVG image to PNG/JPEG/PDF
 	require __DIR__ . '/../vendor/autoload.php';
@@ -126,11 +128,12 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	// Converting an SVG image to PNG/JPEG/PDF
 	const path = require('path');
 
@@ -169,11 +172,12 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	exportManager.on('error', (err) => {
 	    console.error(err);
 	});
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -203,15 +207,16 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	em = ExportManager(export_server_host, export_server_port)
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
 ## Related Resources
 
-* [Export Chart as Image]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
+* [Export Chart as Image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
 
-* [Customize the Width and Height of an Exported Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+* [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Override a Chart Config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+* [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)

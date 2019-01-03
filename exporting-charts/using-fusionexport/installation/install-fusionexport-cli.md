@@ -4,7 +4,7 @@ description: This article focuses on how you can install the FusionExport CLI.
 heading: Install FusionExport CLI
 ---
 
-The FusionExport Command Line Interface (CLI) is a tool for directly communicating with the [FusionExport Server]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server) from the command line/shell of various operating systems. While this tool enhances **interactivity**, it is primarily suitable for **ad-hoc** work. We suggest using the [FusionExport Server SDKs]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks) for automating chart exports.
+The FusionExport Command Line Interface (CLI) is a tool for directly communicating with the [FusionExport Server](/exporting-charts/using-fusionexport/installation/install-fusionexport-server) from the command line/shell of various operating systems. While this tool enhances **interactivity**, it is primarily suitable for **ad-hoc** work. We suggest using the [FusionExport Server SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks) for automating chart exports.
 
 ## Prerequisites
 
@@ -34,14 +34,14 @@ We recommend global installation to facilitate using the tool from any directory
 $ fusionexport --help
 ```
 
-> Before using FusionExport CLI, ensure that [FusionExport Server]({% site.baseurl %}/dev/exporting-charts/using-fusionexport/installation/install-fusionexport-server) is running.
+> Before using FusionExport CLI, ensure that [FusionExport Server](/dev/exporting-charts/using-fusionexport/installation/install-fusionexport-server) is running.
 
 ## Next Steps
 
 You can start exploring the tutorials on how to export charts:
 
-* [Export Chart as Image]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
+* [Export Chart as Image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
 
-* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the Export Type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

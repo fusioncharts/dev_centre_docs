@@ -9,12 +9,12 @@ Dimensions (Width x Height): 459x210
 
 
 
-{% embed_spec_map kentuckyareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 270|270|270
 502|502|502
 606|606|606

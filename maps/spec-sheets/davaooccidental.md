@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map davaooccidental-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.DC.DM | DM | Don Marcelino
 PH.DC.JA | JA | Jose Abad Santos
 PH.DC.ML | ML | Malita

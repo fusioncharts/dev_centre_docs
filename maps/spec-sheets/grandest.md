@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map grandest-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.AL.AN|AN|Ardennes
 FR.AL.AB|AB|Aube
 FR.AL.BR|BR|Bas-Rhin

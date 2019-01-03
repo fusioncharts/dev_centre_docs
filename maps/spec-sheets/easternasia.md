@@ -9,12 +9,12 @@ Dimensions (Width x Height): 750x430
 
 
 
-{% embed_spec_map easternasia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 101|CN|China
 127|HK|Hong Kong
 107|JP|Japan

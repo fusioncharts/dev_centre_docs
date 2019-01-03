@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map centralkalimantan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.KT.PR|PR|Palangkaraya City
 ID.KT.BT|BT|East Barito Regency (Barito Timur)
 ID.KT.KT|KT|East Kotawaringin Regency (Kotawaringin Timur)

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map compostelavalley-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.CL.CM | CM | Compostela
 PH.CL.LA | LA | Laak
 PH.CL.MB | MB | Mabini

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x400
 
 
 
-{% embed_spec_map eastflanders-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.OV.AL|AL|Aalst
 BE.OV.AA|AA|Aalter
 BE.OV.AS|AS|Assenede

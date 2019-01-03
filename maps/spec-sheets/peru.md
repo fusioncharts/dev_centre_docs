@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x520
 
 
 
-{% embed_spec_map peru-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AMA|Amazonas
 02|ANC|Ancash
 03|APU|Apurimac

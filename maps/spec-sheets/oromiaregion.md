@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map oromiaregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ET.OR.MG|MG|West Wellega
 ET.OR.MW|MW|East Wellega
 ET.OR.IL|IL|Illubabor

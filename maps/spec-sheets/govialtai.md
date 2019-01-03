@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map govialtai-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.GA.AL | AL | Altai
 MN.GA.BU | BU | Bayan-Uul
 MN.GA.BI | BI | Biger

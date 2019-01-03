@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map paktika-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.PK.BU|BU|Barmal
 AF.PK.DI|DI|Dila
 AF.PK.GA|GA|Gayan

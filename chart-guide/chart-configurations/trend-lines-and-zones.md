@@ -33,7 +33,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-![Trendlines]({% site.baseurl %}/images/chart-configurations-trendlines-image-1.png)
+![Trendlines](/images/chart-configurations-trendlines-image-1.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/qfeojqqq/) to edit the above chart.
 

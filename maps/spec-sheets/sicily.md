@@ -9,12 +9,12 @@ Dimensions (Width x Height): 710x550
 
 
 
-{% embed_spec_map sicily-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IT.AG|AG|Agrigento
 IT.CL|CL|Caltanissetta
 IT.CT|CT|Catania

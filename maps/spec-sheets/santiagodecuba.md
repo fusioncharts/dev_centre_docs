@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map santiagodecuba-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.SC.CO|CO|Contramaestre
 CU.SC.GU|GU|Guama
 CU.SC.ME|ME|Mella

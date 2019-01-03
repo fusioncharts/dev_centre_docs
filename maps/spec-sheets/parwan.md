@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map parwan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.PV.BA|BA|Bagram
 AF.PV.CH|CH|Charikar
 AF.PV.GH|GH|Ghorband

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map jowzjan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.JW.AQ|AQ|Aqcha
 AF.JW.DA|DA|Darzab
 AF.JW.FA|FA|Fayz Abad

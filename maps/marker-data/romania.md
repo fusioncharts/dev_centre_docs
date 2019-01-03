@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -208,14 +208,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -447,70 +448,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		    <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showborder='0' radius='4'/>
-			<shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='BI' x='298.66' y='282.12' label='Bucharest'  />
-			<marker id='01' x='92.9' y='83.78' label='Oradea' labelPos='left'  />
-			<marker id='02' x='157.6' y='101.81' label='Cluj-Napoca'  />
-			<marker id='03' x='206.39' y='124.09' label='Targu-Mures' labelPos='right'  />
-			<marker id='04' x='190.48' y='175' label='Sibiu' labelPos='left'  />
-			<marker id='05' x='48.36' y='182.42' label='Timisoara' labelPos='right'  />
-			<marker id='06' x='61.09' y='147.42' label='Arad' labelPos='left'  />
-			<marker id='07' x='280.63' y='326.66' label='Giurgiu' labelPos='left'  />
-			<marker id='08' x='224.42' y='301.21' label='Craiova' labelPos='left'  />
-			<marker id='09' x='253.06' y='245' label='Pilesti'  />
-			<marker id='10' x='312.45' y='230.15' label='Ploiesti'  />
-			<marker id='11' x='384.57' y='203.63' label='Galati' labelPos='left'  />
-			<marker id='12' x='389.87' y='219.54' label='Braila' labelPos='left'  />
-			<marker id='13' x='425.93' y='225.9' label='Tulcea' labelPos='bottom'  />
-			<marker id='14' x='340.03' y='138.93' label='Bacau' labelPos='left'  />
-			<marker id='20' x='364.42' y='83.78' label='Iasi' labelPos='right'  />
-			<marker id='15' x='252' y='186.66' label='Brasov'  />
-			<marker id='16' x='404.72' y='330.9' label='Mangalia' labelPos='left'  />
-			<marker id='17' x='415.33' y='304.39' label='Constanta' labelPos='left'  />
-
-		</definition>
-		<application>
-			<marker id='BI' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

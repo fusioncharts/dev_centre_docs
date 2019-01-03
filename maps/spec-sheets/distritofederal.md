@@ -9,11 +9,11 @@ Dimensions (Width x Height): 420x250
 
 
 
-{% embed_spec_map distritofederal-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BR.DF|DF|Distrito Federal
 

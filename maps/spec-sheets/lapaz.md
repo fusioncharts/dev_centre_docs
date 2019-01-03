@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x340
 
 
 
-{% embed_spec_map lapaz-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BO.LP.AI|AI|Abel Iturralde
 BO.LP.AR|AR|Aroma
 BO.LP.BS|BS|Bautista Saavedra

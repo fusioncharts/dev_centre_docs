@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map davaodelsur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.DR.BN | BN | Bansalan
 PH.DR.DV | DV | Davao City
 PH.DR.DG | DG | Digos

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x541
 
 
 
-{% embed_spec_map bayofplenty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 4|KW|Kawerau District
 7|OP|Opotiki District
 3|RR|Rotorua District

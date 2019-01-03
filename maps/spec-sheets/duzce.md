@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map duzce-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.DU.AK | AK | Akçakoca
 TR.DU.CI | CI | Çilimli
 TR.DU.CU | CU | Cumayeri

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map kerman-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.KE.AA|AA|Anar County
 IR.KE.AN|AN|Anbarabad County
 IR.KE.AR|AR|Arzuiyeh County

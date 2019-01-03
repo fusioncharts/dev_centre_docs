@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x280
 
 
 
-{% embed_spec_map walloonbrabant-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BE.BW.BE|BE|Beauvechain
 BE.BW.BA|BA|Braine-l'Alleud
 BE.BW.BC|BC|Braine-le-Château

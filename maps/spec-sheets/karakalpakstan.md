@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map karakalpakstan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.QR.AM|AM|Amudaryo
 UZ.QR.BD|BD|Beruniy
 UZ.QR.CD|CD|Chimboy

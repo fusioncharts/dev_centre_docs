@@ -9,12 +9,12 @@ Dimensions (Width x Height): 220x390
 
 
 
-{% embed_spec_map burgenland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AT.BU.ES|ES|Eisenstadt
 AT.BU.EU|EU|Eisenstadt Umgebung
 AT.BU.GS|GS|Güssing

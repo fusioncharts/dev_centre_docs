@@ -9,12 +9,12 @@ Dimensions (Width x Height): 460x280
 
 
 
-{% embed_spec_map arunachalpradesh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.AR.AJ|AJ|Anjaw
 IN.AR.CH|CH|Changlang
 IN.AR.EK|EK|East Kameng

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 405x517
 
 
 
-{% embed_spec_map anhui-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|AN|Anqing
 3|BE|Bengbu
 4|BO|Bozhou

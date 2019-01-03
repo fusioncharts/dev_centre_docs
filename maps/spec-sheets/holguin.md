@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map holguin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.HO.AN|AN|Antilla
 CU.HO.BG|BG|Báguanos
 CU.HO.BN|BN|Banes

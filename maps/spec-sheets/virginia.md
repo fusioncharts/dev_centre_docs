@@ -9,12 +9,12 @@ Dimensions (Width x Height): 883x482
 
 
 
-{% embed_spec_map virginia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AC|Accomack  
 003|AL|Albemarle  
 005|AE|Alleghany  

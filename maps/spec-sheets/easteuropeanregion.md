@@ -9,12 +9,12 @@ Dimensions (Width x Height): 210x310
 
 
 
-{% embed_spec_map easteuropeanregion-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BY|Belarus
 02|BG|Bulgaria
 03|MD|Moldova

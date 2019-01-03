@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map mashhad-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.MS.KE|KE|Kerman Province
 IR.MS.KS|KS|Khorasan, North Province
 IR.MS.KV|KV|Khorasan, Razavi Province

@@ -64,7 +64,7 @@ Create the `ScrollColumnChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```aspnet
+```csharp
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
@@ -169,7 +169,7 @@ Create the `ScrollLineChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```aspnet
+```csharp
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;

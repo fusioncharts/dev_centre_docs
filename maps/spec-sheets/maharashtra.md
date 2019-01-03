@@ -10,12 +10,12 @@ Dimensions (Width x Height): 450x350
 
 
 
-{% embed_spec_map maharashtra-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.MH.AH|AH|Ahmednagar
 IN.MH.AK|AK|Akola
 IN.MH.AM|AM|Amravati

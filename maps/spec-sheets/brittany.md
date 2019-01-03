@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map brittany-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.BR.CA|CA|Côtes-d'Armor
 FR.BR.FI|FI|Finistère
 FR.BR.IV|IV|Ille-et-Vilaine

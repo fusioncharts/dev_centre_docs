@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map independencia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.IN.CR|CR|Cristóbal
 DO.IN.DU|DU|Duvergé
 DO.IN.JI|JI|Jimaní

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 696x470
 
 
 
-{% embed_spec_map pleven-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BE|Belene
 10|CB|Cherven Bryag
 03|DM|Dolna Mitropoliya

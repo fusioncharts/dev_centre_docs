@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1616x1033
 
 
 
-{% embed_spec_map saopaulo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 3500105|AD|Adamantina
 3500204|AD|Adolfo
 3500303|AG|Aguaí

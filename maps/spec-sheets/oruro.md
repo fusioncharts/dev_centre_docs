@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x340
 
 
 
-{% embed_spec_map oruro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BO.OR.CR|CR|Carangas
 BO.OR.CE|CE|Cercado
 BO.OR.AV|AV|Eduardo Avaroa

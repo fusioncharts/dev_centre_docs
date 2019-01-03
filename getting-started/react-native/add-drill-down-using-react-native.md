@@ -14,7 +14,7 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 * Clones all chart configuration settings from the parent chart to create the descendant charts
 
-* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink-21) function.
+* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink) function.
 
 * Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
@@ -244,7 +244,7 @@ The HTML template(`fusioncharts.html`) of the above sample is:
 <div class='tab-content extra-tabs'>
 
 <div class='tab android-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -349,12 +349,12 @@ The HTML template(`fusioncharts.html`) of the above sample is:
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab ios-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -368,8 +368,8 @@ The HTML template(`fusioncharts.html`) of the above sample is:
 &lt;body&gt;&lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

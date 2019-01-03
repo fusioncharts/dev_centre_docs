@@ -9,12 +9,12 @@ Dimensions (Width x Height): 591x681
 
 
 
-{% embed_spec_map georgia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AP|Appling
 003|AT|Atkinson
 005|BA|Bacon

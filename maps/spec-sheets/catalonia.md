@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map catalonia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ES.CT.BR | BR | Barcelona
 ES.CT.GI | GI | Girona
 ES.CT.LI | LI | Lleida

@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map fergana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.FA.OL|OL|Altyariq
 UZ.FA.BA|BA|Baghdad
 UZ.FA.BE|BE|Beshariq

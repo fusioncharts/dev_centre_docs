@@ -9,12 +9,12 @@ Dimensions (Width x Height): 440x420
 
 
 
-{% embed_spec_map nidwalden-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.NW.BK|BK|Beckenried
 CH.NW.BU|BU|Buochs
 CH.NW.DA|DA|Dallenwil

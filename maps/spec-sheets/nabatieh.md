@@ -9,12 +9,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map nabatieh-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LE.NA.BJ|BJ|Bint Jbeil
 LE.NA.HA|HA|Hasbaya
 LE.NA.MJ|MJ|Marjeyoun

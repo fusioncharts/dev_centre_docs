@@ -10,12 +10,12 @@ Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map janakpur-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NP.JA.DN|DN|Dhanusa
 NP.JA.DO|DO|Dolakha
 NP.JA.MH|MH|Mahottari

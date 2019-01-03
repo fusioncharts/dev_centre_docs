@@ -34,7 +34,7 @@ The consolidated code is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
@@ -43,12 +43,12 @@ The consolidated code is shown below:
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
@@ -57,8 +57,8 @@ The consolidated code is shown below:
 
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -222,7 +222,7 @@ The full code for the above sample is given below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -354,11 +354,11 @@ public partial class firstmap : System.Web.UI.Page
         Literal1.Text = MyFirstMap.Render();
     }
 }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     Imports FusionCharts.Charts
     Partial Class firstmap
     Inherits System.Web.UI.Page
@@ -516,8 +516,8 @@ public partial class firstmap : System.Web.UI.Page
     End Sub
 
     End Class
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -531,7 +531,7 @@ The HTML template is shown below:
 </ul>
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="firstmap.aspx.cs" Inherits="firstmap" %&gt;
    &lt;!DOCTYPE html&gt;
     &lt;html xmlns="  http://www.w3.org/1999/xhtml" &gt;
@@ -547,10 +547,11 @@ The HTML template is shown below:
         &lt;/div&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class="tab vb-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="firstmap.aspx.vb" Inherits="firstmap" %&gt;
     &lt;!DOCTYPE html&gt;
     &lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
@@ -569,8 +570,8 @@ The HTML template is shown below:
         &lt;/form&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -595,7 +596,7 @@ To render the above map, the following code is used:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     using System;
 using System.Collections.Generic;
 using System.Text;
@@ -787,11 +788,11 @@ public partial class MapTest : System.Web.UI.Page
     }
 }
 
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class='tab vb-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     Imports FusionCharts.Charts
 Partial Class MapTest
     Inherits System.Web.UI.Page
@@ -1007,8 +1008,8 @@ Partial Class MapTest
 
 End Class
 
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -1022,7 +1023,7 @@ The HTML template is shown below:
 </ul>
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MapTest.aspx.cs" Inherits="MapTest.index" %&gt;
 
     &lt;!DOCTYPE html&gt;
@@ -1043,10 +1044,11 @@ The HTML template is shown below:
     &lt;/body&gt;
 
     &lt;/html&gt;
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class="tab vb-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="MapTest.aspx.vb" Inherits="MapTest" %&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -1066,8 +1068,8 @@ The HTML template is shown below:
         &lt;/form&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>

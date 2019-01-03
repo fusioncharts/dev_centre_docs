@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x560
 
 
 
-{% embed_spec_map lucerne-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.LU.EB|EB|Entlebuch
 CH.LU.HD|HD|Hochdorf
 CH.LU.LU|LU|Luzern

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 850x1300
 
 
 
-{% embed_spec_map espiritosanto-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 3200169|AD|?gua Doce do Norte
 3200136|AB|?guia Branca
 3200102|AC|Afonso Cláudio

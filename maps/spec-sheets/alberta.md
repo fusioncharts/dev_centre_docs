@@ -9,12 +9,12 @@ Dimensions (Width x Height): 280x480
 
 
 
-{% embed_spec_map alberta-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CA.AB.AC|AC|Alberta Central
 CA.AB.AN|AN|Alberta North
 CA.AB.AS|AS|Alberta South

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 450x390
 
 
 
-{% embed_spec_map southafrica-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 05|EC|Eastern Cape
 03|FS|Free State
 06|GT|Gauteng

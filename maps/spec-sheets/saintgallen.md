@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x400
 
 
 
-{% embed_spec_map saintgallen-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.SG.RT|RT|Rheintal
 CH.SG.RR|RR|Rorschach
 CH.SG.ST|ST|Sankt Gallen

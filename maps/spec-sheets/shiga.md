@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x594
 
 
 
-{% embed_spec_map shiga-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Higashiomi
 002|002|Hikone
 003|003|Koka

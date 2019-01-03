@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1500x830
 
 
 
-{% embed_spec_map alagoas-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2700201|AN|Anadia
 2700300|AR|Arapiraca
 2700409|AT|Atalaia

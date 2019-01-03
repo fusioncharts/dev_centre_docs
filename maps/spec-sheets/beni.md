@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x340
 
 
 
-{% embed_spec_map beni-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BO.EB.CE|CE|Cercado
 BO.EB.IT|IT|Iténez
 BO.EB.GB|GB|José Ballivián

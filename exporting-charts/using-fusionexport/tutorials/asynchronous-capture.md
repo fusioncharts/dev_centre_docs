@@ -7,9 +7,10 @@ heading: Asynchronous capture
 Exporting can be invoked from the injected JavaScript (done using the `--callbackFilePath` option). If the `--asyncCapture` option is enabled, the injected script will trigger the  `CAPTURE_EXIT` event.
 You need to call the following method to invoke the export:
 
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 FusionExport.emit('CAPTURE_EXIT');
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 By default, __FusionExport waits for 6 seconds for the event to trigger/occur__. You can opt to increase the wait time up to 60 seconds. To do so, set the `--maxWaitForCaptureExit` option in milliseconds.
 To use asynchronous capture, you can use the CLI or SDKs of the languages mentioned below, using the commands given below:
@@ -24,8 +25,8 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </ul>
 
 <div class="tab-content extra-tabs">
-<div class="tab csharp-tab">
-<pre><code class="custom-hlc language-c">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
 	using System;
 	using System.IO;
 	using System.Linq;
@@ -62,11 +63,12 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	        }
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart {
@@ -102,11 +104,12 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	            });
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 	<?php
 	// Async capture
 	require __DIR__ . '/../vendor/autoload.php';
@@ -139,11 +142,12 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	// Async capture
 	const path = require('path');
 
@@ -184,11 +188,12 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	exportManager.on('error', (err) => {
 	    console.error(err);
 	});
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport
@@ -233,11 +238,12 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	export () method with the
 	export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
 ## Related Resources
 
-* [Inject Extra Javascript while Exporting]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting)
+* [Inject Extra Javascript while Exporting](/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting)

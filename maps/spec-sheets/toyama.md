@@ -9,12 +9,12 @@ Dimensions (Width x Height): 430x400
 
 
 
-{% embed_spec_map toyama-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Himi
 002|002|Imizu
 003|003|Kurobe

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 590x700
 
 
 
-{% embed_spec_map newmexico-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|BE|Bernalillo
 003|CA|Catron
 005|CH|Chaves

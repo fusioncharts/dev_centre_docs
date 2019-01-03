@@ -23,8 +23,8 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 </ul>
 
 <div class="tab-content extra-tabs">
-<div class="tab csharp-tab">
-<pre><code class="custom-hlc language-cs">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
 	using System;
 	using System.IO;
 	using System.Linq;
@@ -71,10 +71,11 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	        }
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
+<pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart {
@@ -112,11 +113,12 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	            });
 	    }
 	}
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
+<pre><code class="language-php">
 	<?php
 	// Adding a logo or heading to the dashboard
 	require __DIR__ . '/../vendor/autoload.php';
@@ -151,11 +153,12 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	// Adding a logo or heading to the dashboard
 	const path = require('path');
 
@@ -198,10 +201,11 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	exportManager.on('error', (err) => {
 	    console.error(err);
 	});
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 <div class="tab python-tab">
-<pre><code class="custom-hlc language-python">
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport
@@ -248,19 +252,20 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	export () method with the
 	export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
 ## Related Resources
 
-* [Export a dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
+* [Export a dashboard](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
 
-* [Manipulate the output filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
+* [Manipulate the output filename](/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
 
-* [Customize the width and height on an exported chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+* [Customize the width and height on an exported chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Override the chart config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+* [Override the chart config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
 
-* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

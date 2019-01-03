@@ -9,12 +9,12 @@ Dimensions (Width x Height): 230x440
 
 
 
-{% embed_spec_map kalmar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.KA.BO|BO|Borgholm
 SE.KA.EM|EM|Emmaboda
 SE.KA.HU|HU|Hultsfred

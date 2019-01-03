@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x320
 
 
 
-{% embed_spec_map yemen-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 YE.AB|AB|Abyan
 YE.AD|AD|Adan
 YE.BA|BA|Al Bayda

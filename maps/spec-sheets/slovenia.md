@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x380
 
 
 
-{% embed_spec_map slovenia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 09|GO|Gorenjska
 11|SP|Goriška
 07|DO|Jugovzhodna Slovenija

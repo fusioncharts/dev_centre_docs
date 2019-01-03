@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x480
 
 
 
-{% embed_spec_map bosniaherzegovina-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 12|BL|Banja Luka
 15|BJ|Bijeljina
 01|BO|Bosanskopodrinjski

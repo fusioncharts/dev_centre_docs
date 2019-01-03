@@ -9,12 +9,12 @@ Dimensions (Width x Height): 512x482
 
 
 
-{% embed_spec_map dolnoslaskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.DS.BO|BO|Boleslawiecki
 PL.DS.DZ|DZ|Dzierzoniowski
 PL.DS.GL|GL|Glogowski

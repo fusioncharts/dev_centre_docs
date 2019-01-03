@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ulaanbaatar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.UB.BN | BN | Baganuur
 MN.UB.BK | BK | Bagakhangai
 MN.UB.BG | BG | Bayangol

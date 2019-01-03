@@ -9,12 +9,12 @@ Dimensions (Width x Height): 460x590
 
 
 
-{% embed_spec_map kumamoto-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Amakusa
 002|002|Arao
 003|003|Aso

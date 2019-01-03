@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -285,14 +285,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -613,94 +614,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='TZ.AS'  />
-		<entity id='TZ.DS'  />
-		<entity id='TZ.DO'  />
-		<entity id='TZ.IR'  />
-		<entity id='TZ.KR'  />
-		<entity id='TZ.KM'  />
-		<entity id='TZ.KL'  />
-		<entity id='TZ.LI'  />
-		<entity id='TZ.MY'  />
-		<entity id='TZ.MA'  />
-		<entity id='TZ.MB'  />
-		<entity id='TZ.MO'  />
-		<entity id='TZ.MT'  />
-		<entity id='TZ.MW'  />
-		<entity id='TZ.PN'  />
-		<entity id='TZ.PS'  />
-		<entity id='TZ.PW'  />
-		<entity id='TZ.RK'  />
-		<entity id='TZ.RV'  />
-		<entity id='TZ.SH'  />
-		<entity id='TZ.SD'  />
-		<entity id='TZ.TB'  />
-		<entity id='TZ.TN'  />
-		<entity id='TZ.ZN'  />
-		<entity id='TZ.ZS'  />
-		<entity id='TZ.ZW'  />
-	</data>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillcolor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-			<marker id='DA' x='475.49' y='310.49' label='Dar Es Salaam' labelPos='left'  />
-			<marker id='01' x='29.52' y='205.62' label='Kigoma' labelPos='right'  />
-			<marker id='02' x='141.52' y='217.84' label='Tabora' labelPos='right'  />
-			<marker id='03' x='196.5' y='101.76' label='Mwanza' labelPos='bottom'  />
-			<marker id='04' x='222.98' y='55.94' label='Musoma' labelPos='right'  />
-			<marker id='05' x='125.23' y='31.51' label='Bukoba' labelPos='right'  />
-			<marker id='06' x='351.27' y='121.11' label='Arusha' labelPos='left'  />
-			<marker id='07' x='361.45' y='278.93' label='Dodoma' labelPos='left'  />
-			<marker id='08' x='521.3' y='480.53' label='Mtwara' labelPos='left'  />
-			<marker id='09' x='484.65' y='442.85' label='Lindi' labelPos='left'  />
-			<marker id='10' x='317.67' y='505.98' label='Scngea' labelPos='right'  />
-			<marker id='11' x='181.23' y='406.2' label='Mbeya' labelPos='right'  />
-			<marker id='12' x='103.85' y='378.71' label='Sumbawanga' labelPos='right'  />
-			<marker id='13' x='297.3' y='353.25' label='Iringa' labelPos='left'  />
-			<marker id='14' x='477.52' y='219.87' label='Tanga' labelPos='left'  />
-			<marker id='15' x='471.41' y='246.34' label='Pangani' labelPos='left'  />
-			<marker id='16' x='481.6' y='273.84' label='Zanzibar' labelPos='left'  />
-			<marker id='17' x='478.54' y='396.02' label='Kilwa Masoko' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='DA' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map isabela-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.IB.AI | AI | Alicia
 PH.IB.AG | AG | Angadanan
 PH.IB.AR | AR | Aurora

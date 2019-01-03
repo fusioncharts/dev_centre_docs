@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1330x930
 
 
 
-{% embed_spec_map parana-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 4100103|AB|Abatiá
 4100202|AD|Adrianópolis
 4100301|AS|Agudos do Sul

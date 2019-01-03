@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -367,14 +367,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -804,116 +805,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='RS.BG'  />
-		<entity id='RS.BO'  />
-		<entity id='RS.BR'  />
-		<entity id='RS.SD'  />
-		<entity id='RS.PD'  />
-		<entity id='RS.JA'  />
-		<entity id='RS.KB'  />
-		<entity id='RS.KO'  />
-		<entity id='RS.KM'  />
-		<entity id='RS.KP'  />
-		<entity id='RS.MA'  />
-		<entity id='RS.MR'  />
-		<entity id='RS.NS'  />
-		<entity id='RS.SC'  />
-		<entity id='RS.SN'  />
-		<entity id='RS.PC'  />
-		<entity id='RS.PE'  />
-		<entity id='RS.PI'  />
-		<entity id='RS.PM'  />
-		<entity id='RS.PZ'  />
-		<entity id='RS.RN'  />
-		<entity id='RS.RS'  />
-		<entity id='RS.JC'  />
-		<entity id='RS.JN'  />
-		<entity id='RS.SM'  />
-		<entity id='RS.SU'  />
-		<entity id='RS.TO'  />
-		<entity id='RS.ZC'  />
-		<entity id='RS.ZJ'  />
-		<entity id='RS.ZL'  />
-	</data>
-	<markers>
-	<shapes>
-	     <shape id='myCustomShape' type='circle' fillcolor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-		 <shape id='newCustomShape' type='circle' fillcolor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		 </shapes>
-		<definition>
-			<marker id='BD' x='127.64' y='197.64' label='Belgrade' labelPos='right'  />
-			<marker id='01' x='43.23' y='89.55' label='Sombor' labelPos='right'  />
-			<marker id='02' x='84.41' y='46.32' label='Subotica'  />
-			<marker id='03' x='83.38' y='127.64' label='Novi Sad' labelPos='right'  />
-			<marker id='04' x='251.17' y='355.14' label='Leskovac' labelPos='right'  />
-			<marker id='05' x='235.73' y='318.08' label='Nis' labelPos='right'  />
-			<marker id='06' x='159.55' y='257.35' label='Kragujevac' labelPos='right'  />
-			<marker id='07' x='150.29' y='118.38' label='Zrenjanin' labelPos='right'  />
-			<marker id='08' x='156.47' y='276.91' label='Kraljevo' labelPos='bottom'  />
-			<marker id='09' x='190.44' y='286.17' label='Krusevac' labelPos='right'  />
-			<marker id='10' x='153.38' y='168.82' label='Pancevo' labelPos='right'  />
-			<marker id='11' x='175' y='186.32' label='Smederevo' labelPos='right'  />
-			<marker id='12' x='86.47' y='175' label='Sabac' labelPos='left'  />
-			<marker id='13' x='119.41' y='225.44' label='Valjevo' labelPos='right'  />
-			<marker id='14' x='115.29' y='250.14' label='Cacak' labelPos='right'  />
-			<marker id='15' x='120.44' y='400.44' label='Pec' labelPos='right'  />
-			<marker id='16' x='186.32' y='375.73' label='Pristina' labelPos='right'  />
-			<marker id='17' x='262.5' y='382.94' label='Vranje' labelPos='right'  />
-			<marker id='18' x='213.08' y='406.61' label='Gnjilane' labelPos='right'  />
-			<marker id='19' x='150.29' y='409.7' label='Prizren' labelPos='right'  />
-			<marker id='20' x='271.76' y='323.23' label='Pirot'  />
-			<marker id='21' x='192.5' y='200.73' label='Pozarevac' labelPos='right'  />
-			<marker id='22' x='263.52' y='259.41' label='Zajecar' labelPos='right'  />
-			<marker id='23' x='277.94' y='226.47' label='Bor' labelPos='left'  />
-			<marker id='24' x='100.88' y='264.55' label='Uzice' labelPos='left'  />
-			<marker id='25' x='218.23' y='324.26' label='Prokuplje' labelPos='left'  />
-			<marker id='26' x='127.64' y='70' label='Kikinda' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='BD' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-			<marker id='22' shapeId='newCustomShape'  />
-			<marker id='23' shapeId='newCustomShape'  />
-			<marker id='24' shapeId='newCustomShape'  />
-			<marker id='25' shapeId='newCustomShape'  />
-			<marker id='26' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

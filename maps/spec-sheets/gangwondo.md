@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x210
 
 
 
-{% embed_spec_map gangwondo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 08|CW|Cheorwon County
 01|CC|Chuncheon
 02|DG|Donghae

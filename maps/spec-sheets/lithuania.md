@@ -9,12 +9,12 @@ Dimensions (Width x Height): 790x610
 
 
 
-{% embed_spec_map lithuania-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 56|AL|Alytus
 57|KU|Kaunas
 58|KL|Klaipėda

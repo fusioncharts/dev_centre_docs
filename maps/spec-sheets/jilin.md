@@ -9,12 +9,12 @@ Dimensions (Width x Height): 465x376
 
 
 
-{% embed_spec_map jilin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 2|BC|Baicheng
 3|BS|Baishan
 1|CC|Changchun

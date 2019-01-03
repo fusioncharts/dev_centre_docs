@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map putumayo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.PU.CO|CO|Colón
 CO.PU.MO|MO|Mocoa
 CO.PU.OR|OR|Orito

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x600
 
 
 
-{% embed_spec_map shkoder-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|MM|Malesia e Madhe
 02|PU|Pukë
 03|SH|Shkodër

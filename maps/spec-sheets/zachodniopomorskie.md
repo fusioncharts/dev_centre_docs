@@ -9,12 +9,12 @@ Dimensions (Width x Height): 413x442
 
 
 
-{% embed_spec_map zachodniopomorskie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.ZP.BI|BI|Bialogardzki
 PL.ZP.CH|CH|Choszczenski
 PL.ZP.DR|DR|Drawski

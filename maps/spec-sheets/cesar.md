@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map cesar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.CE.AG|AG|Aguachica
 CO.CE.AS|AS|Astrea
 CO.CE.BE|BE|Becerril

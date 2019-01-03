@@ -7,13 +7,13 @@
 Map Name: Acre
 Dimensions (Width x Height): 1450x810
 
-{% embed_spec_map acre-map.js %}
+
 
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1200013|AC|Acrelândia
 1200054|AB|Assis Brasil
 1200104|BR|Brasiléia

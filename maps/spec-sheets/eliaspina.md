@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map eliaspina-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DO.EP.CO|CO|Comendador
 DO.EP.EL|EL|El Llano
 DO.EP.HV|HV|Hondo Valle

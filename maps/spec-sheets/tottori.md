@@ -9,12 +9,12 @@ Dimensions (Width x Height): 530x310
 
 
 
-{% embed_spec_map tottori-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Kurayoshi
 002|002|Sakaiminato
 003|003|Tottori

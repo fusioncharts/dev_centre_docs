@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map namangan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.NG.CR|CR|Chartak
 UZ.NG.CS|CS|Chust
 UZ.NG.KD|KD|Kasansay

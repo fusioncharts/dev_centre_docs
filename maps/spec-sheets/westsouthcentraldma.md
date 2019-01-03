@@ -9,12 +9,12 @@ Dimensions (Width x Height): 770x520
 
 
 
-{% embed_spec_map westsouthcentraldma-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 662|ABI-TX|ABILENE-SWEETWATER
 644|ALE-LA|ALEXANDRIA,LA
 634|AMA-TX|AMARILLO

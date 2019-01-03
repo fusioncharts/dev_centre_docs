@@ -9,12 +9,12 @@ Dimensions (Width x Height): 307x292
 
 
 
-{% embed_spec_map sudest-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RO.BR|BR|Brăila
 RO.BZ|BZ|Buzău
 RO.CT|CT|Constanţa

@@ -10,12 +10,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map caqueta-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CO.CQ.AL|AL|Albania
 CO.CQ.BE|BE|Belén de Andaquies
 CO.CQ.CA|CA|Cartagena del Chairá

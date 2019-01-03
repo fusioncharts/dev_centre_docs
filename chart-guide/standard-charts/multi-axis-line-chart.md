@@ -66,7 +66,7 @@ The attributes and the structure of the multi-axis line chart is a bit different
 
 * Set the `showAxis` attribute to specify whether the axis will be shown or hidden (referred to as an imaginary axis). Setting this attribute to `0` will hide the axis, setting it to `1` (default) will show it.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=MultiAxisLine) page of multi-axis line chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=MultiAxisLine) page of multi-axis line chart.
 
 Refer to the code below:
 

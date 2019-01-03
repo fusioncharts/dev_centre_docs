@@ -13,14 +13,15 @@ Output filenames can be dynamically generated using the  `--output-file-definiti
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	module.exports = {
 		captionIndexStr: (chartConfig, index, chartConfigList) => {
 			const caption = chartConfig.dataSource.chart.caption;
 			return `${caption}__${index}`;
 		}
 	};
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -35,7 +36,7 @@ The `captionIndexStr` function  receives three parameters from the FusionExport 
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	module.exports = {
 		dates: [
 			'17-11-2017_fc_1',
@@ -44,7 +45,8 @@ The `captionIndexStr` function  receives three parameters from the FusionExport 
 			'17-11-2017_fc_4'
 		]
 	};
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
@@ -66,7 +68,7 @@ To create the final output filename, the `--output-file` option should be used. 
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="custom-hlc language-bash">
+<pre><code class="language-bash">
 	path/to/export--<%= number(1, 100) %>
 	output filename: path/to/export--1.png
 
@@ -75,13 +77,14 @@ To create the final output filename, the `--output-file` option should be used. 
 
 	path/to/export--<%= dates %>
 	output filename: path/to/export--17-11-2017_fc_1.png
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 </div>
 </div>
 
 ## Related Resources
 
-* [Save Exported Files to S3]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three)
+* [Save Exported Files to S3](/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three)
 
-* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
+* [Export the Output Files as a Zip](/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)

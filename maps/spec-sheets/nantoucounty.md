@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map nantoucounty-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.NT.NA | NA | Nantou City
 TW.NT.CA | CA | Caotun Township
 TW.NT.JI | JI | Jiji Township

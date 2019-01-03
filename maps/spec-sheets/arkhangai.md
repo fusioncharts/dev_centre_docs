@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map arkhangai-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.AR.BA | BA | Battsengel
 MN.AR.BU | BU | Bulgan
 MN.AR.CH | CH | Chuluut

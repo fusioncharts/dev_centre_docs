@@ -10,12 +10,12 @@ Dimensions (Width x Height): 380x410
 
 
 
-{% embed_spec_map delhi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.DL.NW|NW|North West Delhi
 IN.DL.WS|WS|West Delhi
 IN.DL.SW|SW|South West Delhi

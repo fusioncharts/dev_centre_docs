@@ -10,12 +10,12 @@ Dimensions (Width x Height): 470x330
 
 
 
-{% embed_spec_map jharkhand-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.JH.BO|BO|Bokaro
 IN.JH.CH|CH|Chatra
 IN.JH.DE|DE|Deoghar

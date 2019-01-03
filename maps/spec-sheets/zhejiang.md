@@ -9,12 +9,12 @@ Dimensions (Width x Height): 353x374
 
 
 
-{% embed_spec_map zhejiang-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 1|HZ|Hangzhou
 3|HH|Huzhou
 4|JI|Jiaxing

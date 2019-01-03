@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map camiguin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.CM.CT | CT | Catarman
 PH.CM.GI | GI | Guinsiliban
 PH.CM.MH | MH | Mahinog

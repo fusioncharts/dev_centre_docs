@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map southeastsulawesi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.SG.KM|KM|Kendari
 ID.SG.BO|BO|Bombana Regency
 ID.SG.KO|KO|Kolaka Regency

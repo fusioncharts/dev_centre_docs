@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x280
 
 
 
-{% embed_spec_map porto-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.PO.AM|AM|Amarante
 PT.PO.BA|BA|Baião
 PT.PO.FE|FE|Felgueiras

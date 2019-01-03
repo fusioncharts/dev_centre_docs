@@ -6,7 +6,7 @@ heading: Coloring Based on Data Range
 
 > Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite) while upgrading to __v3.13.0__.
 
-You have to use color ranges to define entity colors based on values, in order to set up a [simple data driven map]({% site.baseurl %}/map-guide/simple-data-driven-maps). Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 
+You have to use color ranges to define entity colors based on values, in order to set up a [simple data driven map](/map-guide/simple-data-driven-maps). Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 
 
 Note that you need to denote entities within these buckets with the same color. Also, you need to define colors for each data range. This can become tedious if you have to deal with a large number of buckets. In that case, you can use a gradient scale to simplify this process.
 

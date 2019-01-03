@@ -9,12 +9,12 @@ Dimensions (Width x Height): 540x770
 
 
 
-{% embed_spec_map luxembourg-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 02|CA|Capellen
 06|CL|Clervaux
 07|DI|Diekirch

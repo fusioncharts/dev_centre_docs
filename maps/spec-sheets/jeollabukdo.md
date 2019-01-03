@@ -9,12 +9,12 @@ Dimensions (Width x Height): 248x177
 
 
 
-{% embed_spec_map jeollabukdo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 07|BC|Buan County
 06|GI|Gimje
 08|GC|Gochang County

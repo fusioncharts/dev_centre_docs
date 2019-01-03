@@ -9,12 +9,12 @@ Dimensions (Width x Height): 800x404
 
 
 
-{% embed_spec_map kosice-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SK.KI.GL|GL|Gelnica
 SK.KI.K1|K1|Košice I
 SK.KI.K2|K2|Košice II

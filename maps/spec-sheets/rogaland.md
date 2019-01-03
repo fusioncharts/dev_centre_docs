@@ -9,12 +9,12 @@ Dimensions (Width x Height): 458x600
 
 
 
-{% embed_spec_map rogaland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 NO.RO.BJ|BJ|Bjerkreim
 NO.RO.BO|BO|Bokn
 NO.RO.EI|EI|Eigersund

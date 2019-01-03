@@ -9,12 +9,12 @@ Dimensions (Width x Height): 341x431
 
 
 
-{% embed_spec_map moldova-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 46|BA|Bălţi
 47|CA|Cahul
 48|CU|Chişinău

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map zonguldak-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.ZO.AL | AL | Alaplı
 TR.ZO.CA | CA | Çaycuma
 TR.ZO.DE | DE | Devrek

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map zavkhan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.DZ.AL | AL | Aldarkhaan
 MN.DZ.AS | AS | Asgat
 MN.DZ.BY | BY | Bayankhairhan

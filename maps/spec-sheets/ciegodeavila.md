@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map ciegodeavila-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CU.CA.BA|BA|Baraguá
 CU.CA.BO|BO|Bolivia
 CU.CA.CH|CH|Chambas

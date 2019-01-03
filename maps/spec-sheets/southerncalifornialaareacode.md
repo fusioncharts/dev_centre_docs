@@ -9,12 +9,12 @@ Dimensions (Width x Height): 480x310
 
 
 
-{% embed_spec_map southerncalifornialaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 213|213|213
 310-424|310-424|310-424
 323|323|323

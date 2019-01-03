@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map herat-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.HR.AD|AD|Adraskan
 AF.HR.CS|CS|Chishti Sharif
 AF.HR.FA|FA|Farsi

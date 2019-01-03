@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map tainancity-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.TA.AP | AP | Anping
 TW.TA.AN | AN | Annan
 TW.TA.EA | EA | East District, Tainan

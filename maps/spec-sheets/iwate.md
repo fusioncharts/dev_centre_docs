@@ -9,12 +9,12 @@ Dimensions (Width x Height): 400x590
 
 
 
-{% embed_spec_map iwate-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Hachimantai
 002|002|Hanamaki
 003|003|Ichinoseki

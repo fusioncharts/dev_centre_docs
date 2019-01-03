@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map diyarbakir-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.DY.BA | BA | Bağlar
 TR.DY.KA | KA | Kayapınar
 TR.DY.SU | SU | Sur

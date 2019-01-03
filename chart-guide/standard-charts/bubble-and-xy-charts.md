@@ -26,7 +26,7 @@ To create a scatter chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scatter) page of scatter chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=scatter) page of scatter chart.
 
 A scatter chart looks like:
 
@@ -40,7 +40,7 @@ Bubble charts are used for plotting data that is defined in terms of three numer
 
 So let's create a bubble chart showing sales analysis of shoes of different brands for Harry's SuperMart for last month. Specify the chart type using the `type` attribute. To render a bubble chart, set `bubble`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bubble) page of bubble chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=bubble) page of bubble chart.
 
 A bubble chart for the above code looks like:
 

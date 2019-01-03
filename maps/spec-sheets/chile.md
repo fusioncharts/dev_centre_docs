@@ -10,12 +10,12 @@ Dimensions (Width x Height): 102x566
 
 
 
-{% embed_spec_map chile-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|VS|Valparaíso
 02|AI|Aisen del General Carlos Ibanez del Campo
 03|AN|Antofagasta

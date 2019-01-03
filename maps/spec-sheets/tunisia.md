@@ -9,12 +9,12 @@ Dimensions (Width x Height): 361x621
 
 
 
-{% embed_spec_map tunisia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TN.AN|AN|Ariana
 TN.BJ|BJ|Beja
 TN.BA|BA|Ben Arous

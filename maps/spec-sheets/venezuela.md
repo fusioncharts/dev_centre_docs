@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x495
 
 
 
-{% embed_spec_map venezuela-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|Z|Amazonas
 02|B|Anzoátegui
 03|C|Apure

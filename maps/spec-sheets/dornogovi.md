@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map dornogovi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.DG.AI | AI | Airag
 MN.DG.AL | AL | Altanshiree
 MN.DG.DA | DA | Dalanjargalan

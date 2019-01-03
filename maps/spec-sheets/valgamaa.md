@@ -9,12 +9,12 @@ Dimensions (Width x Height): 562x600
 
 
 
-{% embed_spec_map valgamaa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 03|HE|Helme
 04|HU|Hummuli
 05|KA|Karula

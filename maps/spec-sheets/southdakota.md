@@ -9,12 +9,12 @@ Dimensions (Width x Height): 760x490
 
 
 
-{% embed_spec_map southdakota-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 003|AU|Aurora
 005|BE|Beadle
 007|BN|Bennett

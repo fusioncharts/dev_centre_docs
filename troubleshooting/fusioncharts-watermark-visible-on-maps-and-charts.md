@@ -14,4 +14,4 @@ The watermark appears when you are using the Evaluation Version of FusionCharts 
 
 3. Clear the cache, and the watermark disappears. 
 
-For detailed steps, please visit [Upgrading from Evaluation Versions]({% site.baseurl %}/upgrading/upgrading-from-evaluation-versions).
+For detailed steps, please visit [Upgrading from Evaluation Versions](/upgrading/upgrading-from-evaluation-versions).

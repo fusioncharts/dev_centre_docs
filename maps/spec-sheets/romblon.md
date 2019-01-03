@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map romblon-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.RO.AC | AC | Alcantara
 PH.RO.BN | BN | Banton (Jones)
 PH.RO.CJ | CJ | Cajidiocan

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map bulgan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MN.BU.BA | BA | Bayan-Agt
 MN.BU.BN | BN | Bayannuur
 MN.BU.BG | BG | Bugat

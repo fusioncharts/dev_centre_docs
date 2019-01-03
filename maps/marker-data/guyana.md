@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -267,14 +267,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -589,89 +590,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1' showLabels='0'  >
-	<data>
-		<entity id='GY.BA'  />
-		<entity id='GY.CU	'  />
-		<entity id='GY.DE'  />
-		<entity id='GY.EB'  />
-		<entity id='GY.ES'  />
-		<entity id='GY.MA'  />
-		<entity id='GY.PM'  />
-		<entity id='GY.PT'  />
-		<entity id='GY.UD'  />
-		<entity id='GY.UT'  />
-	</data>
-	<markers>
-	 <shapes>
-
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial'
-showBorder='0' radius='3'/>
-
-        </shapes>
-		<definition>
-			<marker id='GE' x='211.16' y='113.62' label='GeorgeTown' labelPos='right'  />
-			<marker id='01' x='194.28' y='112.5' label='Parika' labelPos='bottom'  />
-			<marker id='02' x='183.03' y='76.5' label='Charity' labelPos='right'  />
-			<marker id='03' x='114.41' y='38.25' label='Mabaruma'  />
-			<marker id='05' x='102.03' y='58.5' label='Port Kaiturna' labelPos='left'  />
-			<marker id='06' x='186.41' y='100.12' label='Spring Garden' labelPos='right'  />
-			<marker id='07' x='77.28' y='78.75' label='Matthews Ridge' labelPos='bottom'  />
-			<marker id='04' x='176.28' y='139.5' label='Kartaba Point' labelPos='right'  />
-			<marker id='09' x='150.41' y='122.62' label='Arimu Mine' labelPos='left'  />
-			<marker id='08' x='129.03' y='151.87' label='Peters Mine'  />
-			<marker id='10' x='192.03' y='163.12' label='Rockstone' labelPos='right'  />
-			<marker id='11' x='117.78' y='175.5' label='Issano' labelPos='left'  />
-			<marker id='12' x='153.78' y='196.87' label='Potaro Landing' labelPos='right'  />
-			<marker id='13' x='144.78' y='214.87' label='Mahdia' labelPos='right'  />
-			<marker id='14' x='105.41' y='231.75' label='Orinduik' labelPos='left'  />
-			<marker id='15' x='132.41' y='288' label='Good Hope' labelPos='left'  />
-			<marker id='16' x='117.78' y='316.12' label='Lethem' labelPos='left'  />
-			<marker id='17' x='142.53' y='346.5' label='Dadanawa' labelPos='left'  />
-			<marker id='18' x='158.28' y='375.75' label='Isherton' labelPos='right'  />
-			<marker id='19' x='264.03' y='150.75' label='Rose Hall' labelPos='right'  />
-			<marker id='20' x='266.28' y='174.37' label='Corriverton' labelPos='bottom'  />
-			<marker id='21' x='221.28' y='177.75' label='Kalkuni' labelPos='left'  />
-		</definition>
-		<application>
-			<marker id='GE' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

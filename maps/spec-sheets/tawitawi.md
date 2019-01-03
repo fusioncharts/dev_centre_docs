@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map tawitawi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.TT.BN | BN | Bongao
 PH.TT.LN | LN | Languyan
 PH.TT.MP | MP | Mapun (Cagayan de Tawi-Tawi)

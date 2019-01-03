@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map zamboangasibugay-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.ZS.AI | AI | Alicia
 PH.ZS.BU | BU | Buug
 PH.ZS.DP | DP | Diplahan

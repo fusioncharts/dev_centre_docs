@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map centrevaldeloire-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FR.CE.CH|CH|Cher
 FR.CE.EL|EL|Eure-et-Loir
 FR.CE.IN|IN|Indre

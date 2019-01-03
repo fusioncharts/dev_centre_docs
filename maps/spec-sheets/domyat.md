@@ -9,11 +9,11 @@ Dimensions (Width x Height): 837x524
 
 
 
-{% embed_spec_map domyat-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|DO|Domyat
 

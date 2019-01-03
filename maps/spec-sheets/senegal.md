@@ -9,12 +9,12 @@ Dimensions (Width x Height): 611x441
 
 
 
-{% embed_spec_map senegal-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SN.DK|DK|Dakar
 SN.DB|DB|Diourbel
 SN.FK|FK|Fatick

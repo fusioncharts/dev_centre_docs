@@ -14,13 +14,13 @@ When charts are exported on the client side, the entire exporting process is car
 
 >  You must have an active internet connection for this feature to work. </p>
 
-To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
+To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
 
-![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-menu.jpg)
+![image](/images/exporting-as-image-and-pdf-export-menu.jpg)
 
 From the menu rendered, select the required format; the chart is downloaded to your machine in the selected format.
 
-A column 2D chart with export enabled is shown below. Click the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select a format to export the chart.
+A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select a format to export the chart.
 
 {% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
@@ -40,4 +40,4 @@ The `exportMode` attribute is used to switch betwen the modes of export.
 
 The subsequent articles in this section cover the features of each export mode and the `exportMode` attribute in detail.
 
->  To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide. </p>
+>  To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide. </p>

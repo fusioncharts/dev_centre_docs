@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map surigaodelnorte-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.ST.AE | AE | Alegria
 PH.ST.BC | BC | Bacuag
 PH.ST.BR | BR | Burgos

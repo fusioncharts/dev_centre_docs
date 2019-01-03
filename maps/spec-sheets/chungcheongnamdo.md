@@ -9,12 +9,12 @@ Dimensions (Width x Height): 297x214
 
 
 
-{% embed_spec_map chungcheongnamdo-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AS|Asan
 02|BY|Boryeong
 08|BC|Buyeo County

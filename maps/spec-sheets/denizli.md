@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map denizli-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.DN.AC | AC | Acıpayam
 TR.DN.BB | BB | Babadağ
 TR.DN.BK | BK | Baklan

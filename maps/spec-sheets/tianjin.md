@@ -9,12 +9,12 @@ Dimensions (Width x Height): 386x612
 
 
 
-{% embed_spec_map tianjin-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 12|BA|Baodi
 11|BE|Beichen
 7|BH|Binhai

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x500
 
 
 
-{% embed_spec_map mozambique-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|CD|Cabo Delgado
 02|GA|Gaza
 03|IN|Inhambane

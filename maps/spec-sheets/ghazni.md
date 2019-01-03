@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map ghazni-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 AF.GZ.AB|AB|Ab Band
 AF.GZ.AJ|AJ|Ajristan
 AF.GZ.AN|AN|Andar

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 801x391
 
 
 
-{% embed_spec_map manicaland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZW.MA.BH|BH|Buhera
 ZW.MA.CM|CM|Chimanimani
 ZW.MA.CP|CP|Chipinge

@@ -10,12 +10,12 @@ Dimensions (Width x Height): 450x340
 
 
 
-{% embed_spec_map assam-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IN.AS.BA|BA|Barpeta
 IN.AS.BK|BK|Baksa
 IN.AS.BS|BS|Biswanath

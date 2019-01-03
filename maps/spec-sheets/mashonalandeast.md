@@ -9,12 +9,12 @@ Dimensions (Width x Height): 801x391
 
 
 
-{% embed_spec_map mashonalandeast-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZW.ME.CK|CK|Chikomba
 ZW.ME.GM|GM|Goromonzi
 ZW.ME.WE|WE|Hwedza (Wedza)

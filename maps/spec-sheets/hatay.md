@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map hatay-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.HT.AL | AL | Altınözü
 TR.HT.BE | BE | Belen
 TR.HT.DO | DO | Dörtyol

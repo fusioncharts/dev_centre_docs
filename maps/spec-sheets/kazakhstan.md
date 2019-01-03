@@ -9,12 +9,12 @@ Dimensions (Width x Height): 560x410
 
 
 
-{% embed_spec_map kazakhstan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KZ.AA|AA|Almaty
 KZ.AC|AC|Almaty City
 KZ.AM|AM|Aqmola

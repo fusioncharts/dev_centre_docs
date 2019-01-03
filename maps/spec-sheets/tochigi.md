@@ -9,12 +9,12 @@ Dimensions (Width x Height): 510x590
 
 
 
-{% embed_spec_map tochigi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Ashikaga
 002|002|Kanuma
 003|003|Moka

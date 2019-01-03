@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map northsumatra-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.SU.GS|GS|Gunungsitoli City
 ID.SU.NA|NA|Nias Regency
 ID.SU.NU|NU|North Nias Regency(Nias Utara)

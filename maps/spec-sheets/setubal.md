@@ -9,12 +9,12 @@ Dimensions (Width x Height): 290x350
 
 
 
-{% embed_spec_map setubal-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.SE.AC|AC|Alcochete
 PT.SE.AS|AS|Alcácer do Sal
 PT.SE.AM|AM|Almada

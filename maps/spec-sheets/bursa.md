@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map bursa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.BU.GE | GE | Gemlik
 TR.BU.GU | GU | Gürsu
 TR.BU.KT | KT | Kestel

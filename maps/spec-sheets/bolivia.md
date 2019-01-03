@@ -7,12 +7,12 @@
 Map Name: Bolivia
 Dimensions (Width x Height): 300x340
 
-{% embed_spec_map bolivia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|H|Chuquisaca
 02|C|Cochabamba
 03|B|Beni

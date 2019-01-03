@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -202,14 +202,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {
         "animation": "0",
@@ -405,75 +406,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
-	<data>
-		<entity id='NC.NO.BE'  />
-		<entity id='NC.SU.BP'  />
-		<entity id='NC.SU.BR'  />
-		<entity id='NC.NO.CA'  />
-		<entity id='NC.SU.DU'  />
-		<entity id='NC.SU.FA'  />
-		<entity id='NC.NO.HI'  />
-		<entity id='NC.NO.HO'  />
-		<entity id='NC.SU.IP'  />
-		<entity id='NC.NO.KG'  />
-		<entity id='NC.NO.KN'  />
-		<entity id='NC.NO.KA'  />
-		<entity id='NC.NO.KM'  />
-		<entity id='NC.SU.LF'  />
-		<entity id='NC.IL.LI'  />
-		<entity id='NC.IL.MA'  />
-		<entity id='NC.SU.MO'  />
-		<entity id='NC.SU.MD'  />
-		<entity id='NC.SU.NO'  />
-		<entity id='NC.NO.OG'  />
-		<entity id='NC.IL.OV'  />
-		<entity id='NC.SU.PA'  />
-		<entity id='NC.NO.PD'  />
-		<entity id='NC.NO.PH'  />
-		<entity id='NC.NO.PB'  />
-		<entity id='NC.NO.PM'  />
-		<entity id='NC.NO.PT'  />
-		<entity id='NC.NO.PY'  />
-		<entity id='NC.SU.SA'  />
-		<entity id='NC.SU.TH'  />
-		<entity id='NC.NO.TO'  />
-		<entity id='NC.NO.VO'  />
-		<entity id='NC.SU.YA'  />
-	</data>
-	<markers>
-	   <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333'  fillPattern='radial' showborder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099'  fillPattern='radial' showborder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='NO' x='357.97' y='356.28' label='Noumea' labelPos='left'  />
-			<marker id='01' x='189.04' y='228.3' label='Mueo' labelPos='left'  />
-			<marker id='02' x='220.78' y='174.04' label='Poindimie' labelPos='right'  />
-			<marker id='03' x='353.87' y='286.66' label='Thio' labelPos='right'  />
-			<marker id='06' x='423.49' y='158.69' label='We' labelPos='right'  />
-		</definition>
-		<application>
-			<marker id='NO' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map basilan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.BS.AK | AK | Akbar
 PH.BS.AB | AB | Al-Barka
 PH.BS.HA | HA | Hadji Mohammad Ajul

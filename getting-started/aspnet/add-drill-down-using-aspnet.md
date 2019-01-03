@@ -15,7 +15,7 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 * Clones all chart configuration settings from the parent chart to create the descendant charts
 
-* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink-21) function
+* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink) function
 * Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
 * Supports drill-down to an unlimited number of levels
@@ -153,7 +153,7 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="custom-hlc language-cs">
+<pre><code class="language-cs">
     &lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;DB_DrillDown_Default&quot; %&gt;
 
     &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
@@ -171,12 +171,12 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
           &lt;/div&gt;
         &lt;/body&gt;
     &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="custom-hlc language-vb">
+<pre><code class="language-vb">
     &lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;Default.aspx.vb&quot; Inherits=&quot;Samples_DrillDownExample_Default&quot; %&gt;
 
     &lt;!DOCTYPE html&gt;
@@ -194,8 +194,8 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
         &lt;/div&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -210,7 +210,7 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="custom-hlc language-cs">
+<pre><code class="language-cs">
     using System;
     using System.Collections;
     using System.Configuration;
@@ -237,12 +237,12 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
             Literal1.Text = sales.Render();
         }
     }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="custom-hlc language-vb">
+<pre><code class="language-vb">
     Imports System.Collections
     Imports System.Configuration
     Imports System.Data
@@ -270,8 +270,8 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
             Literal1.Text = sales.Render()
         End Sub
     End Class
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

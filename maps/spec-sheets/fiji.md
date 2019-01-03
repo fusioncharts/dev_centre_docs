@@ -9,12 +9,12 @@ Dimensions (Width x Height): 601x592
 
 
 
-{% embed_spec_map fiji-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 FJ.WE.BA|BA|Ba
 FJ.NO.BU|BU|Bua
 FJ.NO.CK|CK|Cakaudrova

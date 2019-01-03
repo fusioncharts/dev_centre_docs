@@ -9,12 +9,12 @@ Dimensions (Width x Height): 431x600
 
 
 
-{% embed_spec_map dhaka-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 BD.DA.DH|DH|Dhaka District
 BD.DA.FR|FR|Faridpur District
 BD.DA.GZ|GZ|Gazipur District

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x340
 
 
 
-{% embed_spec_map lisboa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.LI.AL|AL|Alenquer
 PT.LI.AM|AM|Amadora
 PT.LI.AV|AV|Arruda dos Vinhos

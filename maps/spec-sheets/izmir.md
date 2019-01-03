@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map izmir-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.IZ.AL | AL | Aliağa
 TR.IZ.BA | BA | Balçova
 TR.IZ.BD | BD | Bayındır

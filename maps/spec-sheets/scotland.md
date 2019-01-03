@@ -9,12 +9,12 @@ Dimensions (Width x Height): 469x610
 
 
 
-{% embed_spec_map scotland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 032|AC|Aberdeen City
 031|AB|Aberdeenshire
 029|AN|Angus

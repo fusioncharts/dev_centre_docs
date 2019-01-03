@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x530
 
 
 
-{% embed_spec_map lesotho-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 LS.BE|BE|Berea
 LS.BB|BB|Butha-Buthe
 LS.LE|LE|Leribe

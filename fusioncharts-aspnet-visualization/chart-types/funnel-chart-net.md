@@ -42,7 +42,7 @@ Create the `FunnelChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```aspnet
+```csharp
 using FusionCharts.Visualization;
 using FusionCharts.DataEngine;
 using System;

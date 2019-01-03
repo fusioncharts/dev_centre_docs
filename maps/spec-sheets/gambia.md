@@ -9,12 +9,12 @@ Dimensions (Width x Height): 652x191
 
 
 
-{% embed_spec_map gambia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 GM.BJ|BJ|Banjul
 GM.MC|MC|Central River
 GM.LR|LR|Lower River

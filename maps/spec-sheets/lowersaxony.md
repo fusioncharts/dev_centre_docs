@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x370
 
 
 
-{% embed_spec_map lowersaxony-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 DE.NI.AM|AM|Ammerland
 DE.NI.AU|AU|Aurich
 DE.NI.BR|BR|Braunschweig

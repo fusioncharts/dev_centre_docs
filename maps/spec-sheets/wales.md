@@ -9,12 +9,12 @@ Dimensions (Width x Height): 440x530
 
 
 
-{% embed_spec_map wales-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BG|Blaenau Gwent
 02|BB|Bridgend
 03|CP|Caerphilly

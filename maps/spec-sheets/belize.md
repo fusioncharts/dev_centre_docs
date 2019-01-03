@@ -9,12 +9,12 @@ Dimensions (Width x Height): 150x250
 
 
 
-{% embed_spec_map belize-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|BZ|Belize
 02|CY|Cayo
 03|CZ|Corozal

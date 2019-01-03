@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map osmaniye-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.OS.BA | BA | Bahçe
 TR.OS.DU | DU | Düziçi
 TR.OS.HA | HA | Hasanbeyli

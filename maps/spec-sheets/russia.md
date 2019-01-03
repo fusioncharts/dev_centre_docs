@@ -9,12 +9,12 @@ Dimensions (Width x Height): 925x534
 
 
 
-{% embed_spec_map russia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 RU.AD|AD|Adygaya
 RU.RA|RA|Republic of Altay
 RU.AL|AL|Altaiskiy Kray

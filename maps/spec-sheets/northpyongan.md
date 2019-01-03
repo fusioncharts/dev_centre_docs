@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northpyongan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 KP.BC|BC|Bakchon
 KP.BY|BY|Byokdong
 KP.CH|CH|Changsong

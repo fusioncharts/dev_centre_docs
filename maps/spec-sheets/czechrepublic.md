@@ -9,12 +9,12 @@ Dimensions (Width x Height): 800x460
 
 
 
-{% embed_spec_map czechrepublic-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 79|JC|Jiho?eský
 78|JM|Jihomoravský
 81|KA|Karlovarský

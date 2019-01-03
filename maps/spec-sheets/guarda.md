@@ -9,12 +9,12 @@ Dimensions (Width x Height): 280x320
 
 
 
-{% embed_spec_map guarda-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PT.GU.AB|AB|Aguiar da Beira
 PT.GU.AL|AL|Almeida
 PT.GU.CB|CB|Celorico da Beira

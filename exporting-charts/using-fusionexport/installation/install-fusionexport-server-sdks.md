@@ -31,7 +31,8 @@ To export charts and dashboards using FusionExport, you can develop the applicat
 
 <div class="tab csharp-tab">
 <strong>Install the C# SDK client for FusionExport using the [NuGet](https://www.nuget.org/) package manager (`.NET >= 4.0`). Open the *NuGet package manager console* and execute the following command:</strong>
-<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0</code></pre>
+<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab java-tab">
@@ -43,7 +44,8 @@ To export charts and dashboards using FusionExport, you can develop the applicat
 repositories {
 	mavenCentral()
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <p>2. FusionExport Java SDK to the dependency list:</p>
 <pre><code class="language-java">
 dependencies {
@@ -54,7 +56,8 @@ dependencies {
     compile group: 'org.jsoup', name: 'jsoup', version: '1.7.2'
     compile group: 'org.apache.ant', name: 'ant', version: '1.8.2'
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <h4><strong>Maven</strong></h4>
 <strong>To use the SDK with your [maven](https://maven.apache.org/) project (`Java >= 8, JDK >= 1.8, maven >= 3.x`), add these dependencies to the `pom.xml` file:</strong>
 <pre><code class="language-java">
@@ -94,21 +97,25 @@ dependencies {
     &lt;artifactId&gt;ant&lt;/artifactId&gt;
     &lt;version&gt;1.8.2&lt;/version&gt;
 &lt;/dependency&gt;
-</code></pre></div>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre></div>
 
 <div class="tab php-tab">
 <strong>Install the PHP SDK client for FusionExport using [composer](https://getcomposer.org/) (`PHP >= 7.x, composer >= 1.7.x`):</strong>
-<pre><code class="language-php"> $ composer require fusioncharts/fusionexport:1.0.0</code></pre>
+<pre><code class="language-php"> $ composer require fusioncharts/fusionexport:1.0.0</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab nodejs-tab active">
 <strong>Install the Node.js SDK client for FusionExport using [npm](https://www.npmjs.com/) (`Node.js >= 8.0.0, npm >= 5.0.0`):</strong>
-<pre><code class="language-Bash"> $ npm install fusionexport-node-client --save</code></pre>
+<pre><code class="language-Bash"> $ npm install fusionexport-node-client --save</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class="tab python-tab">
 <strong>Install the Python SDK client for FusionExport using [pip](https://pypi.org/project/pip/) (`Python >= 3.x`):</strong>
-<pre><code class="language-python"> $ pip install fusionexport</code></pre>
+<pre><code class="language-python"> $ pip install fusionexport</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <p><strong>Note: </strong>To avoid global installation, we recommend [creating a virtual environment](https://docs.python.org/3/tutorial/venv.html) before installing the package. If you want `pip` to install the package in a specific directory *without* using virtual environment, you may also experiment with the suggestions in [this StackOverflow thread](https://stackoverflow.com/questions/2915471/install-a-python-package-into-a-different-directory-using-pip), or [this Github issue](https://github.com/pypa/pip/issues/446).</p>
 </div>
 </div>
@@ -118,8 +125,8 @@ dependencies {
 
 After you have installed FusionCharts Server SDK for the language of your choice, refer to the following tutorials to get started with exporting charts:
 
-* [Export chart as image]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
+* [Export chart as image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
 
-* [Change the export type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the export type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Change the export quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the export quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

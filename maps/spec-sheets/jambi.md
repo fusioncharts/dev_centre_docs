@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map jambi-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.JA.JA|JA|Jambi City
 ID.JA.SP|SP|Sungai Penuh City
 ID.JA.BA|BA|Batanghari Regency

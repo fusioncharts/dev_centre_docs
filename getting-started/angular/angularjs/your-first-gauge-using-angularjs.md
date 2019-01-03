@@ -23,18 +23,20 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 
 <div><strong>To install fusioncharts and the `angularjs-fusioncharts` directive via npm follow the steps below:</strong></div>
 <div>1. Install `angularjs` core library</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install angular
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div>2. Install `angularjs-fusioncharts`</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 	$ npm install angularjs-fusioncharts
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div>2. Install the `fusioncharts` package</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
     $ npm install fusioncharts
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
@@ -48,7 +50,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
 	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script>
@@ -59,8 +61,8 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab localfiles-tab'>
@@ -74,7 +76,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
 	&lt;script type="text/javascript" src="path/to/local/angular.min.js"&gt;&lt;/script&gt;
@@ -85,8 +87,8 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -195,7 +197,7 @@ To render the gauge, follow the steps below:
 8. Store the chart configurations in a variable (`myApp`).
 
 9. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. The the `<div>`:
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
+    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
     * Set the width and height (in pixels).
     * Embed the json data as the value of the `dataSource`.
 
@@ -210,7 +212,7 @@ The consolidated code is shown below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 //  Require AngularJS 
 var angular = require('angular');
 
@@ -271,9 +273,10 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }]);
 // Render
 chartInstance.render()
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 <div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;body ng-app="myApp"&gt;
     &lt;div ng-controller="MyController"&gt;
         &lt;div
@@ -285,12 +288,12 @@ chartInstance.render()
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/body&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
@@ -349,13 +352,13 @@ chartInstance.render()
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 
 <div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
@@ -414,8 +417,8 @@ chartInstance.render()
 &lt;/body&gt;
 
 &lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>

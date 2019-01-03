@@ -11,12 +11,12 @@ Dimensions (Width x Height): 480x330
 
 
 
-{% embed_spec_map bukhara-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 UZ.BU.OL|OL|Alat
 UZ.BU.BD|BD|Bukhara
 UZ.BU.GD|GD|Gijduvan

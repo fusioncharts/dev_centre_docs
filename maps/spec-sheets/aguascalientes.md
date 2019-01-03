@@ -9,12 +9,12 @@ Dimensions (Width x Height): 740x570
 
 
 
-{% embed_spec_map aguascalientes-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MX.AG.AG|AG|Aguascalientes
 MX.AG.AS|AS|Asientos
 MX.AG.CA|CA|Calvillo

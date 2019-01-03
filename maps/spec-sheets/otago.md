@@ -9,12 +9,12 @@ Dimensions (Width x Height): 483x600
 
 
 
-{% embed_spec_map otago-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 4|CO|Central Otago District
 1|CL|Clutha District
 2|DU|Dunedin City

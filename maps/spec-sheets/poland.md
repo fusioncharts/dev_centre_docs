@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x390
 
 
 
-{% embed_spec_map poland-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 74|LD|?ódzkie
 72|DS|Dolnośląskie
 73|KP|Kujawsko-Pomorskie

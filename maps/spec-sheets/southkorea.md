@@ -10,12 +10,12 @@ Dimensions (Width x Height): 540x560
 
 
 
-{% embed_spec_map southkorea-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 10|PU|Busan
 05|GB|North Chungcheong
 17|GN|South Chungcheong

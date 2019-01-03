@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map hormozgan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.HG.AB|AB|Abumusa County
 IR.HG.BA|BA|Bandar-Abbas County
 IR.HG.BL|BL|Bandar-Lengeh County

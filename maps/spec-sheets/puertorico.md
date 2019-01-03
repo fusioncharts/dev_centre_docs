@@ -9,12 +9,12 @@ Dimensions (Width x Height): 660x340
 
 
 
-{% embed_spec_map puertorico-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AJ|Adjuntas
 03|AD|Aguada
 05|AL|Aguadilla

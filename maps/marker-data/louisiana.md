@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -225,14 +225,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -487,74 +488,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		     <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			 <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='BR' x='380.04' y='371.94' label='Baton Rouge' labelPos='bottom'  />
-			<marker id='01' x='295.48' y='37.75' label='Bastrop'  />
-			<marker id='02' x='276.12' y='78.5' label='Monroe' labelPos='right'  />
-			<marker id='03' x='226.19' y='63.22' label='Ruston'  />
-			<marker id='04' x='88.64' y='71.37' label='Shreveport'  />
-			<marker id='05' x='137.55' y='188.54' label='Natchitoches' labelPos='left'  />
-			<marker id='06' x='219.06' y='263.94' label='Alexandria' labelPos='left'  />
-			<marker id='07' x='234.34' y='249.68' label='Pineville' labelPos='right'  />
-			<marker id='08' x='96.79' y='397.42' label='Sulphur' labelPos='left'  />
-			<marker id='09' x='130.41' y='397.42' label='Lake Charles' labelPos='bottom'  />
-			<marker id='10' x='230.27' y='398.44' label='Crowley' labelPos='left'  />
-			<marker id='11' x='266.95' y='408.62' label='Lafayette' labelPos='right'  />
-			<marker id='12' x='301.59' y='443.27' label='New Iberia' labelPos='left'  />
-			<marker id='13' x='366.8' y='505.42' label='Morgan City' labelPos='left'  />
-			<marker id='15' x='404.5' y='511.53' label='Houma' labelPos='right'  />
-			<marker id='14' x='554.28' y='458.55' label='Chalmette' labelPos='right'  />
-			<marker id='16' x='519.63' y='457.53' label='Marrero' labelPos='left'  />
-			<marker id='18' x='520.65' y='432.06' label='New Orleans' labelPos='left'  />
-			<marker id='19' x='531.86' y='326.09' label='Bogalusa' labelPos='right'  />
-			<marker id='20' x='481.93' y='343.41' label='Hammond' labelPos='left'  />
-			<marker id='21' x='257.78' y='356.66' label='Opelousas'  />
-
-		</definition>
-		<application>
-			<marker id='BR' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='18' shapeId='newCustomShape'  />
-			<marker id='19' shapeId='newCustomShape'  />
-			<marker id='20' shapeId='newCustomShape'  />
-			<marker id='21' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

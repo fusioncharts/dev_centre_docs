@@ -9,12 +9,12 @@ Dimensions (Width x Height): 270x410
 
 
 
-{% embed_spec_map bali-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ID.BA.DE|DE|Denpasar City
 ID.BA.BD|BD|Badung Regency
 ID.BA.BN|BN|Bangli Regency

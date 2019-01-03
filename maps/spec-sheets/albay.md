@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map albay-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PH.AL.BC | BC | Bacacay
 PH.AL.CM | CM | Camalig
 PH.AL.DR | DR | Daraga (Locsin)

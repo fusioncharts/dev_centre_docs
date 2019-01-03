@@ -9,12 +9,12 @@ Dimensions (Width x Height): 260x290
 
 
 
-{% embed_spec_map grenada-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AN|Saint Andrew
 02|DA|Saint David
 03|GE|Saint George

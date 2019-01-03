@@ -9,12 +9,12 @@ Dimensions (Width x Height): 550x865
 
 
 
-{% embed_spec_map alabama-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AU|Autauga
 003|BA|Baldwin
 005|BR|Barbour

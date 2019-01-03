@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x350
 
 
 
-{% embed_spec_map uruguay-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AR|Artigas
 02|CA|Canelones
 03|CL|Cerro Largo

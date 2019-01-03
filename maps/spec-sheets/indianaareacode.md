@@ -9,12 +9,12 @@ Dimensions (Width x Height): 310x480
 
 
 
-{% embed_spec_map indianaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 219|219|219
 260|260|260
 317|317|317

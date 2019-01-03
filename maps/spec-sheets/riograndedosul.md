@@ -9,12 +9,12 @@ Dimensions (Width x Height): 1250x1200
 
 
 
-{% embed_spec_map riograndedosul-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 4300059|AS|?gua Santa
 4301552|AU|?urea
 4300034|AC|Aceguá

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x430
 
 
 
-{% embed_spec_map zambia-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 ZM.CE|CE|Central
 ZM.CO|CO|Copperbelt
 ZM.ES|EA|Eastern

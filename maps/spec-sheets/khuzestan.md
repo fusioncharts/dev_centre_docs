@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map khuzestan-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 IR.KZ.AB|AB|Abadan County
 IR.KZ.AH|AH|Ahvaz County
 IR.KZ.AK|AK|Andika County

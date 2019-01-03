@@ -9,12 +9,12 @@ Dimensions (Width x Height): 410x420
 
 
 
-{% embed_spec_map greece-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AT|Attica
 02|CG|Central Greece
 03|CM|Central Macedonia

@@ -9,11 +9,11 @@ Dimensions (Width x Height): 584x594
 
 
 
-{% embed_spec_map southsinai-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|SS|South Sinai
 

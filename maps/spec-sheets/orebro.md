@@ -9,12 +9,12 @@ Dimensions (Width x Height): 280x480
 
 
 
-{% embed_spec_map orebro-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SE.OR.AS|AS|Askersund
 SE.OR.DE|DE|Degerfors
 SE.OR.HB|HB|Hallsberg

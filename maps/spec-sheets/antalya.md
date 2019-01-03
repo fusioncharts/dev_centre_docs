@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map antalya-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.AL.AS | AS | Aksu
 TR.AL.DO | DO | Döşemealtı
 TR.AL.KP | KP | Kepez

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 300x320
 
 
 
-{% embed_spec_map paraguay-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 23|AG|Alto Paraguay
 01|AA|Alto Paraná
 02|AM|Amambay

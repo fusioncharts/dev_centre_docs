@@ -17,9 +17,9 @@
     </li>
 </ul>
 <div class='tab-content'>
-    <pre class='plain-code'></pre>
-    <div class='tab new-json-tab active'>
-<pre><code class="language-javascript">
+    
+<div class='tab new-json-tab active'>
+<pre><code class="language-json">
 {
     "map": {
         "showshadow": "0",
@@ -202,14 +202,15 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>New JSON format for map marker data.</p>
 
-    </div>
-    <div class='tab old-json-tab'>
-<pre><code class="language-javascript">
+</div>
+<div class='tab old-json-tab'>
+<pre><code class="language-json">
 {
     "map": {},
     "markers": {
@@ -432,68 +433,13 @@
         ]
     }
 }
-</code></pre>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 
 <p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
-    </div>
-    <div class='tab old-xml-tab'>
-<pre><code class="language-html">
-<map>
-	<markers>
-	    <shapes>
-		    <shape id='myCustomShape' type='circle' fillColor='FFFFFF,333333' fillPattern='radial' showBorder='0' radius='4'/>
-			  <shape id='newCustomShape' type='circle' fillColor='FFFFFF,000099' fillPattern='radial' showBorder='0' radius='3'/>
-		</shapes>
-		<definition>
-			<marker id='SE' x='229.24' y='119.05' label='Seoul' labelPos='right' />
-			<marker id='01' x='387.16' y='106.82' label='Kangnung' labelPos='left'  />
-			<marker id='02' x='397.35' y='126.18' label='Pukpyongdong' labelPos='right'  />
-			<marker id='03' x='204.79' y='127.2' label='Inchon' labelPos='left'  />
-			<marker id='04' x='230.26' y='144.52' label='Suwon' labelPos='right'  />
-			<marker id='05' x='291.39' y='119.05' label='Wonju'  />
-			<marker id='06' x='265.92' y='219.92' label='Taejon' labelPos='right'  />
-			<marker id='07' x='312.79' y='257.62' label='Taegu' labelPos='right'  />
-			<marker id='08' x='416.71' y='268.82' label='Pohang' labelPos='right'  />
-			<marker id='09' x='415.69' y='317.73' label='Ulsan' labelPos='right'  />
-			<marker id='10' x='391.24' y='362.56' label='Pusan' labelPos='right'  />
-			<marker id='11' x='359.66' y='353.39' label='Chinhae'  />
-			<marker id='12' x='353.54' y='358.48' label='Masan' labelPos='left'  />
-			<marker id='13' x='283.24' y='397.2' label='Yosu' labelPos='left'  />
-			<marker id='14' x='225.16' y='378.86' label='Kwangju' labelPos='right'  />
-			<marker id='15' x='245.54' y='284.11' label='Chonju'  />
-			<marker id='16' x='203.77' y='275.96' label='Kunsan' labelPos='left'  />
-			<marker id='17' x='180.33' y='391.09' label='Mokoo' labelPos='left'  />
-
-		</definition>
-		<application>
-			<marker id='SE' shapeId='myCustomShape'  />
-			<marker id='01' shapeId='newCustomShape'  />
-			<marker id='02' shapeId='newCustomShape'  />
-			<marker id='03' shapeId='newCustomShape'  />
-			<marker id='04' shapeId='newCustomShape'  />
-			<marker id='05' shapeId='newCustomShape'  />
-			<marker id='06' shapeId='newCustomShape'  />
-			<marker id='07' shapeId='newCustomShape'  />
-			<marker id='08' shapeId='newCustomShape'  />
-			<marker id='09' shapeId='newCustomShape'  />
-			<marker id='10' shapeId='newCustomShape'  />
-			<marker id='11' shapeId='newCustomShape'  />
-			<marker id='12' shapeId='newCustomShape'  />
-			<marker id='13' shapeId='newCustomShape'  />
-			<marker id='14' shapeId='newCustomShape'  />
-			<marker id='15' shapeId='newCustomShape'  />
-			<marker id='16' shapeId='newCustomShape'  />
-			<marker id='17' shapeId='newCustomShape'  />
-
-		</application>
-	</markers>
-</map>
-</code></pre>
-
-<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
-
 </div>
+    
 </div>
 </div>

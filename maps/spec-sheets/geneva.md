@@ -9,12 +9,12 @@ Dimensions (Width x Height): 860x850
 
 
 
-{% embed_spec_map geneva-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 CH.GE.AI|AI|Aire-la-Ville
 CH.GE.AN|AN|Anieres
 CH.GE.AV|AV|Avully

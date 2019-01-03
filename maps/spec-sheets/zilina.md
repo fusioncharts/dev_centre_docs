@@ -9,12 +9,12 @@ Dimensions (Width x Height): 600x476
 
 
 
-{% embed_spec_map zilina-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 SK.ZI.BY|BY|Byta
 SK.ZI.DK|DK|Dolný Kubín
 SK.ZI.KM|KM|Kysucké Nové Mesto

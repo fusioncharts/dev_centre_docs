@@ -8,8 +8,8 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure chart components to:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/php/configure-your-chart-using-php#update-chart-data-1)
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/php/configure-your-chart-using-php#update-chart-attributes-2)
+* [Update Chart Data](/getting-started/php/configure-your-chart-using-php#update-chart-data)
+* [Update Chart Attributes](/getting-started/php/configure-your-chart-using-php#update-chart-attributes)
 
 ## Update Chart Data
 

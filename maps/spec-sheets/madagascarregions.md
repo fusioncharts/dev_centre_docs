@@ -9,12 +9,12 @@ Dimensions (Width x Height): 370x620
 
 
 
-{% embed_spec_map madagascarregions-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 MG.TM.AO|AO|Alaotra-Mangoro
 MG.FI.AM|AM|Amoron'i Mania
 MG.AV.AG|AG|Analamanga

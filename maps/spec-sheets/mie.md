@@ -9,12 +9,12 @@ Dimensions (Width x Height): 330x540
 
 
 
-{% embed_spec_map mie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|001|Iga
 002|002|Inabe
 003|003|Ise

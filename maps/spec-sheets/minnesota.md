@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x670
 
 
 
-{% embed_spec_map minnesota-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AI|Aitkin
 003|AN|Anoka
 005|BE|Becker

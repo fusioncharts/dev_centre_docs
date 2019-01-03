@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map taipeicity-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TW.TC.BT | BT | Beitou
 TW.TC.DN | DN | Da'an
 TW.TC.DT | DT | Datong

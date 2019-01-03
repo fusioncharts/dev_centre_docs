@@ -9,12 +9,12 @@ Dimensions (Width x Height): 390x215
 
 
 
-{% embed_spec_map elsalvador-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 01|AH|Ahuachapán
 02|CA|Cabañas
 03|CH|Chalatenango

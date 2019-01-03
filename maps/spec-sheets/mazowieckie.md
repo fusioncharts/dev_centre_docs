@@ -9,12 +9,12 @@ Dimensions (Width x Height): 581x600
 
 
 
-{% embed_spec_map mazowieckie-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 PL.MZ.BI|BI|Bialobrzeski
 PL.MZ.CI|CI|Ciechanowski
 PL.MZ.GA|GA|Garwolinski

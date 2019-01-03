@@ -8,12 +8,12 @@ Map Name: Ukcountries
 Dimensions (Width x Height): 351x592
 
 
-{% embed_spec_map ukcountries-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 126|Angl|Anglesey
 108|Argl|Argyl & Bute
 110|Ayrs|Ayrshire and Lanark

@@ -9,12 +9,12 @@ Dimensions (Width x Height): 751x491
 
 
 
-{% embed_spec_map iowa-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 001|AD|Adair
 003|AA|Adams
 005|AL|Allamakee

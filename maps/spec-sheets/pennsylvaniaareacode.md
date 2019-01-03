@@ -9,12 +9,12 @@ Dimensions (Width x Height): 500x300
 
 
 
-{% embed_spec_map pennsylvaniaareacode-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 215-267|215-267|215-267
 412-878|412-878|412-878
 484-610-835|484-610-835|484-610-835

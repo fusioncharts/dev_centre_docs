@@ -9,12 +9,12 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map afyonkarahisar-map.js %}
+
 
 ### List of Entities
 
 ID | Short label | Label
----|---|---|---
+---|---|---|
 TR.AF.AF | AF | Afyonkarahisar
 TR.AF.BM | BM | Başmakçı
 TR.AF.BT | BT | Bayat
