@@ -55,7 +55,7 @@ The username is **'root'** and password is the one you configured during the ins
 
 Now let us come to the setting up of table and seed data. The table containing the data is made up of two columns namely the name of the player and number of wickets. The CREATE TABLE SQL command for creating the table is given below:
 
-```mysql
+```sql
 	USE test;
 	CREATE TABLE top_odi_wicket_takers(
 	  player varchar(255),
@@ -66,7 +66,7 @@ Now let us come to the setting up of table and seed data. The table containing t
 
 Now let us seed this table with some initial data taken from [here](http://stats.espncricinfo.com/ci/engine/records/bowling/most_wickets_career.html?class=2;id=2015;type=year) as shown below:
 
-```mysql
+```sql
 	INSERT INTO top_odi_wicket_takers(player, wickets) VALUES('MA Starc', 34);
 	INSERT INTO top_odi_wicket_takers(player, wickets) VALUES('ST Finn', 27);
 	INSERT INTO top_odi_wicket_takers(player, wickets) VALUES('Imran Tahir', 25);
@@ -82,7 +82,7 @@ Now let us seed this table with some initial data taken from [here](http://stats
 
 We can verify whether the data is inserted by running the SELECT SQL command as shown below:
 
-```mysql
+```sql
 	SELECT * FROM top_odi_wicket_takers;
 	+-------------+---------+
 	| player  | wickets |
@@ -392,8 +392,8 @@ The code which interacts with the PHP server implemented above and renders the c
 	});
 ``` 
 
-Now load the HTML in the browser using the URL: _http://localhost/chart_sample.html_ and you will get the below chart:
+Now load the HTML in the browser using the URL: `http://localhost/chart_sample.html` and you will get the below chart:
 
 {% embed_chart php-mysql-charts-example-1.js %}
 
-**Note:** You can download the complete sample as a zip from [here](http://www.fusioncharts.com/downloads/samples/interactive_php_mysql_charts.zip) and unzip it in the **BITNAMI_INSTALL_DIR\apache2\htdocs** folder to get the sample running.
+**Note:** You can download the complete sample as a zip from [here](http://cdn.fusioncharts.com/downloads/samples/interactive_php_mysql_charts.zip) and unzip it in the **BITNAMI_INSTALL_DIR\apache2\htdocs** folder to get the sample running.

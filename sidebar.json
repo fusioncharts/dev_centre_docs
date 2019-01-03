@@ -1619,6 +1619,10 @@
                      {
                         "title": "Render Thumbnail Versions of Charts",
                         "path": "/common-use-cases/render-thumbnail-versions-of-chart"
+                     },
+                     {
+                        "title": "Create Interactive Charts using PHP and MySQL Database",
+                        "path": "/using-with-server-side-languages/tutorials/php-mysql-charts"
                      }
                   ]
                }
