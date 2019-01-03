@@ -21,6 +21,8 @@ A chart configured to change the theme is shown below:
 
 {% embed_chart fusioncharts-net-visualization-change-theme-example-1.js %}
 
+Click [here](https://dotnetfiddle.net/cOsBEu) to edit the above chart.
+
 To change the theme refer to the code below:
 
 ```aspnet
