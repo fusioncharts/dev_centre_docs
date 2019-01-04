@@ -316,13 +316,13 @@ Data is an object used to define the values to be plotted for individual data se
 	<tr>
 		<td>`LabelFormatting`</td>
 		<td> </td>
-		<td>visualisationObj.Data<br/>.LabelFormatting("label_name")<br/>.`ShowLabel`(True)<br/>.`ToolText`("Country:India")<br/>.`FontName`("Arial")<br/>.`FontColor`("#ff000f")<br/>.`FontSize`(12)<br/>.`Bold`(false)<br/>.`Italic`(true)<br/>.`LabelLink`("www.fusioncharts.com/")<br/>.`BorderColor`("000000")<br/>.`BGColor`("000000")<br/>.`Alpha`(100);</td>
-		<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. ShowLabel<br/>2. ToolText<br/>3. FontName<br/>4. FontColor<br/>5. FontSize<br/>6. Bold<br/>7. Italic<br/>8. LabelLink<br/>9. BorderColor<br/>10. BGColor<br/>11. Alpha</td>
+		<td>visualisationObj.Data<br/>.LabelFormatting("label_name")<br/>.`ShowLabel`(true)<br/>.`ToolText`("Country:India")<br/>.`FontName`("Arial")<br/>.`FontColor`("#ff000f")<br/>.`FontSize`(12)<br/>.`Bold`(false)<br/>.`Italic`(true)<br/>.`LabelLink`("www.fusioncharts.com/")<br/>.`BorderColor`("000000")<br/>.`BGColor`("000000")<br/>.`Alpha`(100);</td>
+		<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. ShowLabel(boolean)<br/>2. ToolText(String)<br/>3. FontName(String)<br/>4. FontColor(Hex Color Code(String))<br/>5. FontSize(Integer)<br/>6. Bold(boolean)<br/>7. Italic(boolean)<br/>8. LabelLink(String)<br/>9. BorderColor(Hex Color Code(String))<br/>10. BGColor(Hex Color Code(String))<br/>11. Alpha(Integer)</td>
 	</tr>
 	<tr>
 		<td>`ValueFormatting`</td>
 		<td> </td>
 		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition`(MultiSeriesDataElement.ValuePlaced position.ABOVE);</td>
-		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha<br/>2. Color<br/>3. Dashed<br/>4. ShowValue<br/>5. Link<br/>6. DisplayValue<br/>7. ToolText<br/>8. ValuePosition</td>
+		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha(Integer)<br/>2. Color(Hex Color Code(String))<br/>3. Dashed(boolean)<br/>4. ShowValue(boolean)<br/>5. Link(String)<br/>6. DisplayValue(String)<br/>7. ToolText(String)<br/>8. ValuePosition(Enum)</td>
 	</tr>
 </table>
