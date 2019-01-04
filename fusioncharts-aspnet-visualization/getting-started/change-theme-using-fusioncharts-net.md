@@ -85,9 +85,10 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.XAxis.Text = "Programming Language";
             // Set YAxis title
             column.YAxis.Text = "User";
-            // Render the chart to 'Literal1' literal control
+            column.legend.Show = false;
             // add theme GAMMEL
-             column.ThemeName = FusionChartsTheme.ThemeName.GAMMEL;
+            column.ThemeName = FusionChartsTheme.ThemeName.GAMMEL;
+            column.Values.Show = true;
             Literal1.Text = column.Render();
         }
     }
