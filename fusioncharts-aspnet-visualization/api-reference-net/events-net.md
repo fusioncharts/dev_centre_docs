@@ -201,16 +201,16 @@ Triggered when the default behavior of the beforePrint event is cancelled by cal
 Syntax for all the Rendered Events is shown below:
 
 ```
-visualizationObject.Events.AttachRenderedEvents(FusionChartsEvents.RenderedEvents.LOADED,"OnDataLoad"); (edited) 
+visualizationObject.Events.AttachRenderedEvents(FusionChartsEvents.RenderedEvents.LOADED,"OnDataLoad");
 ```
 
 In the above code:
 
 * `visualizationObject` is the object for FusionCharts.Net Visualization.
 * `Events` is the object of `visualizationObject` object.
-* `AttachGenericEvents` is a method of `Events` object.
+* `AttachRenderedEvents` is a method of `Events` object.
 * `FusionChartsEvents` is the class.
-* `AttachGenericEvents` is the enum of `FusionChartsEvents` class.
+* `AttachRenderedEvents` is the enum of `FusionChartsEvents` class.
 * `LOADED` is the enum value.
 * `OnDataLoad` is the client side event handler in string format. 
 
@@ -278,9 +278,9 @@ In the above code:
 
 * `visualizationObject` is the object for FusionCharts.Net Visualization.
 * `Events` is the object of `visualizationObject` object.
-* `AttachGenericEvents` is a method of `Events` object.
+* `AttachSpecialEvents` is a method of `Events` object.
 * `FusionChartsEvents` is the class.
-* `AttachGenericEvents` is the enum of `FusionChartsEvents` class.
+* `AttachSpecialEvents` is the enum of `FusionChartsEvents` class.
 * `ROTATIOEND` is the enum value.
 * `OnRotationEnd` is the client side event handler in string format. 
 
@@ -330,9 +330,9 @@ In the above code:
 
 * `visualizationObject` is the object for FusionCharts.Net Visualization.
 * `Events` is the object of `visualizationObject` object.
-* `AttachGenericEvents` is a method of `Events` object.
+* `AttachSpecialEvents` is a method of `Events` object.
 * `FusionChartsEvents` is the class.
-* `AttachGenericEvents` is the enum of `FusionChartsEvents` class.
+* `AttachSpecialEvents` is the enum of `FusionChartsEvents` class.
 * `ROTATIOSCROLLEND` is the enum value.
 * `OnScrollEnd` is the client side event handler in string format. 
 
