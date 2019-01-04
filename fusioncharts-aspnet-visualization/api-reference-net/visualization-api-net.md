@@ -157,12 +157,12 @@ API|Type|Syntax|Description|
 -|-|-|-
 `Enabled`|Boolean|visualizationObj.Export.Enabled = true;|Enables/disables exporting of a chart|
 `HandlerPath`|String|visualizationObj.Export.HandlerPath = "localhost:8189";|Sets the path of the server-side export handler|
-`Format`|String|visualizationObj.Export.Format = " ";|Sets the export format|
-`Mode`|BaseExportObject<br/>.ExportMode|visualizationObj.Export.Mode = Exporter.ExportMode.SERVER;|Sets the export mode for the chart|
+`Format`|String|visualizationObj.Export.Format = "PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File";|Sets the export format|
+`Mode`|BaseExportObject<br/>.ExportMode|visualizationObj.Export.Mode = Exporter.ExportMode.SERVER;|Sets the export mode for the chart.<br/>1. CLIENT<br/>2. SERVER|
 `ShowMenuItem`|Boolean|visualizationObj.Export.ShowMenuItem = false;|Shows/Hides the export menu|
 `ExportedFileName`|String|visualizationObj.Export.ExportedFileName = "FusionChartsExportedFile.pdf";|Sets the name of the exported file|
-`Window`|BaseExportObject<br/>.ExportTargetWindow|visualizationObj.Export.Window = Exporter.ExportTargetWindow.BLANK;|Sets whether the exported chart opens in the same window or a new window|
-`Action`|BaseExportObject<br/>.ExportAction|visualizationObj.Export.Action = Exporter.ExportAction.SAVE;|Sets the action to be performed when the Export chart option is clicked|
+`Window`|BaseExportObject<br/>.ExportTargetWindow|visualizationObj.Export.Window = Exporter.ExportTargetWindow.BLANK;|Sets whether the exported chart opens in the same window or a new window<br/>1. BLANK<br/>2. SELF|
+`Action`|BaseExportObject<br/>.ExportAction|visualizationObj.Export.Action = Exporter.ExportAction.SAVE;|Sets the action to be performed when the Export chart option is clicked.<br/>1. SAVE<br/>2. DOWNLOAD|
 
 ## Chart Specific API's
 
