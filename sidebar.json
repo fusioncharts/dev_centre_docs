@@ -2163,7 +2163,7 @@
                {
                   "title": "Data Labels",
                   "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-data-labels"
-               }
+               },
                {
                   "title": "Legend",
                   "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-legend"
