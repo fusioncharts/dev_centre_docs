@@ -31,7 +31,7 @@
             }]
         }],
         "dataset": [{
-            "seriesname": "Programming Languages",
+            "seriesname": "Users",
             "data": [{
                 "value": "62000"
             }, {

@@ -14,15 +14,15 @@ Click [here](https://dotnetfiddle.net/nVVeWE) to edit the column chart.
 
 The data for the above chart is shown in the table below:
 
-Programming Language|Users|
+Programming Language|Users
 -|-
-Java|62000|
-Python|46000|
-JavaScript|38000|
-C++|31000|
-C#|27000|
-PHP|14000|
-Perl|14000|
+Java|62000
+Python|46000
+JavaScript|38000
+C++|31000
+C#|27000
+PHP|14000
+Perl|14000
 
 Now that you have the tabular data ready, let's see how to render the chart.
 
