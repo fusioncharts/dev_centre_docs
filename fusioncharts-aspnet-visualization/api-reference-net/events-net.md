@@ -333,7 +333,7 @@ In the above code:
 * `AttachSpecialEvents` is a method of `Events` object.
 * `FusionChartsEvents` is the class.
 * `AttachSpecialEvents` is the enum of `FusionChartsEvents` class.
-* `ROTATIOSCROLLEND` is the enum value.
+* `SCROLLEND` is the enum value.
 * `OnScrollEnd` is the client side event handler in string format. 
 
 The events are listed below:
