@@ -3552,6 +3552,13 @@
                 "name": "showValues"
             },
             {
+                "description": "Sets whether a dataset will be visible on the chart, when the chart is first loaded. This attribute overrides the `initiallyHidden` attribute. \n\n __Default Value__ : 1",
+                "range": "0/1",
+                "type": "Boolean",
+                "versionsince": "3.10.0",
+                "name": "visible"
+            },
+            {
                 "description": "Whether to include the `seriesName` of this data-set in legend. This can be particularly useful when you're using combination charts and you have used the area/line chart to plot a trend, and you do not want the seriesName of that trend to appear in legend.",
                 "range": "0/1",
                 "type": "Boolean",

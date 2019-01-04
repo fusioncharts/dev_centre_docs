@@ -94,6 +94,8 @@ The output after running the above query looks the following:
 
 {% embed_chart fusioncharts-net-visualization-applied-filter-example-2.js %}
 
+Click [here](https://dotnetfiddle.net/MUoTki) to edit the above chart.
+
 In the above chart, x-axis represents the Order Date column, whereas y-axis represents the Sales per day.
 
 Steps to render the above chart is given below:

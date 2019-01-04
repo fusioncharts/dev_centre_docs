@@ -144,6 +144,8 @@ Now, let's learn how to create a Scrollable Line Chart. The chart will look as s
 
 {% embed_chart standard-charts-scroll-charts-example-2.js %}
 
+Click [here](https://dotnetfiddle.net/Irr2ht) to edit the scroll line chart.
+
 ## Render the Chart
 
 Create the `ScrollLineChart.aspx.cs` file and do the following:
@@ -324,3 +326,5 @@ The `.aspx` template for the above sample is shown below:
 The chart is shown below:
 
 {% embed_chart standard-charts-scroll-charts-example-3.js %}
+
+Click [here](https://dotnetfiddle.net/TFomJU) to edit the scroll area chart.
