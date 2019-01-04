@@ -2879,6 +2879,13 @@
                 "name": "showValues"
             },
             {
+                "description": "Sets whether a dataset will be visible on the chart, when the chart is first loaded. This attribute overrides the `initiallyHidden` attribute. \n\n __Default Value__ : 1",
+                "range": "0/1",
+                "type": "Boolean",
+                "versionsince": "3.10.0",
+                "name": "visible"
+            },
+            {
                 "description": "This attribute lets you adjust the vertical alignment of data values for all the dataplots in the dataset. The alignment is set with respect to the position of the dataplots on the chart. By default, the attribute is set to AUTO mode in which the alignment of each data value is determined automatically based on the position of each plot point. In ABOVE mode, data values are displayed above the plot points unless a plot point is too close to the upper edge of the canvas. While in BELOW mode, data values are displayed below the plot points unless a plot point is too close to the lower edge of the canvas. The attribute will function only if `showValue` attribute is set to 1 in this particular dataset.",
                 "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
                 "type": "String",
