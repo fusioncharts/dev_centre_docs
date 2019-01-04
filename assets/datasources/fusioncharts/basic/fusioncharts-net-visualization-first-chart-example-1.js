@@ -1,5 +1,5 @@
 {
-    type: 'column2d',
+    type: 'mscolumn2d',
     renderAt: 'chart-container',
     width: '700',
     height: '400',
@@ -10,29 +10,43 @@
             "subCaption": "2017 - 2018",
             "xAxisName": "Programming Language",
             "yAxisName": "Users",
+            "showLegend": "1",
             "theme": "fusion"
         },
-        "data": [{
-            "label": "Java",
-            "value": "62000"
-        }, {
-            "label": "Python",
-            "value": "46000"
-        }, {
-            "label": "Javascript",
-            "value": "38000"
-        }, {
-            "label": "C++",
-            "value": "31000"
-        }, {
-            "label": "C#",
-            "value": "27000"
-        }, {
-            "label": "PHP",
-            "value": "14000"
-        }, {
-            "label": "Perl",
-            "value": "14000"
+        "categories": [{
+            "category": [{
+                "label": "Java"
+            }, {
+                "label": "Python"
+            }, {
+                "label": "JavaScript"
+            }, {
+                "label": "C++"
+            }, {
+                "label": "C#"
+            }, {
+                "label": "PHP"
+            }, {
+                "label": "Perl"
+            }]
+        }],
+        "dataset": [{
+            "seriesname": "Programming Languages",
+            "data": [{
+                "value": "62000"
+            }, {
+                "value": "46000"
+            }, {
+                "value": "38000"
+            }, {
+                "value": "31000"
+            }, {
+                "value": "27000"
+            }, {
+                "value": "14000"
+            }, {
+                "value": "14000"
+            }]
         }]
     }
 }

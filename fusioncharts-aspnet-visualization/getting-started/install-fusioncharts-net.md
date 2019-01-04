@@ -33,7 +33,7 @@ To install, download `FusionCharts.NET` and follow the steps given below:
 To use Nuget package, please run the following command in the Nuget Package Manage Console:
 
 ```
-Install-Package FusionCharts.Visualization -Version 0.9.5-beta
+Install-Package FusionCharts.Visualization -Version 0.9.7-beta
 ```
 
 Once installed from Nuget, it'll add some assemblies to your web project, and those assemblies will be automatically referenced to your project. It'll also add FusionCharts JavaScript libraries to your project under `Scripts/FusionCharts/` folder.
@@ -47,7 +47,7 @@ FusionCharts export handler gets automatically installed, once you install `Fusi
 * Add these dependencies into `web.config`:
 
 ```
- <compilation targetFramework="4.5" >
+<compilation targetFramework="4.5" >
     <assemblies>
         <add assembly="WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
         <add assembly="PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />

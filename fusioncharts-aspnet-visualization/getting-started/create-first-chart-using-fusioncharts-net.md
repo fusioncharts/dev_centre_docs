@@ -105,8 +105,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Data.Source = model;
             // Set Chart Title
             column.Caption.Text = "Most popular programming language";
-            // hide chart Legend
-            column.Legend.Show = false;
             // set XAxis Text
             column.XAxis.Text = "Programming Language";
             // Set YAxis title
