@@ -17,7 +17,7 @@ In FusionCharts.NET, you can customize data labels in the following ways with th
 To hide the data labels, set the value of the `ShowLabel` properties to `false`. Refer to the code given below:
 
 ```
-visualizationObj.Data.LabelFormatting("C#").ShoLabel("Programming Language:C#");
+visualizationObj.Data.LabelFormatting("C#").ShowLabel("Programming Language:C#");
 ```
 
 The chart will look as shown below:
