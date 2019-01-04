@@ -17,13 +17,13 @@ To install, download `FusionCharts.NET` and follow the steps given below:
 **For .aspx**
 
 ```html
-<script type="text/javascript" src="~/Scripts/FusionCharts/FusionCharts.js"></script>
+<script type="text/javascript" src="/Scripts/fusioncharts/fusioncharts.js"></script>
 ```
 
 **For .cshtml**
 
 ```html
-<script src="@Url.Content("/Scripts/FusionCharts/FusionCharts.js")"></script>
+<script src="@Url.Content("//Scripts/fusioncharts/fusioncharts.js")></script>
 ```
 
 * Add a reference to the `FusionCharts.DataEngine.dll` and `FusionCharts.Visualization.dll` files into your `ASP.NET` project.
@@ -32,7 +32,7 @@ To install, download `FusionCharts.NET` and follow the steps given below:
 
 To use Nuget package, please run the following command in the Nuget Package Manage Console:
 
-```
+```csharp
 Install-Package FusionCharts.Visualization -Version 0.9.7-beta
 ```
 
@@ -46,7 +46,7 @@ FusionCharts export handler gets automatically installed, once you install `Fusi
 
 * Add these dependencies into `web.config`:
 
-```
+```xml
 <compilation targetFramework="4.5" >
     <assemblies>
         <add assembly="WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />

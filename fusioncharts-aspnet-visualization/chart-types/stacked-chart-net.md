@@ -100,12 +100,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
         protected void Page_Load(object sender, EventArgs e) {
             DataTable ChartData = new DataTable();
             string query = "select * from ProductRevenue";
-            string connetionString = null;
+            string connetionstring = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
             ChartData.Clear();
-            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
-            using (SqlConnection con = new SqlConnection(connetionString))
+            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
+            using (SqlConnection con = new SqlConnection(connetionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))

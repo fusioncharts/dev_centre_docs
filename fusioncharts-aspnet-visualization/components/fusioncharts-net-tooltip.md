@@ -48,7 +48,7 @@ visualizationObj.ToolTip.SepChar = '/';|
 
 ### Display Tooltip Shadow
 
-Use the Boolean type `ShowShadow` properties to set whether a shadow should be displayed below the tooltip. Refer to the code given below:
+Use the boolean type `ShowShadow` properties to set whether a shadow should be displayed below the tooltip. Refer to the code given below:
 
 ```
 visualizationObj.ToolTip.ShowShadow = false;

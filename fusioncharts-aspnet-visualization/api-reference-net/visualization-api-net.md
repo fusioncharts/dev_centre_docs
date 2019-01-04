@@ -271,7 +271,7 @@ Series is an object used to customize the series of data plots. The instances of
 	<tr>
 		<td>`SeriesFormatting`</td>
 		<td>Method of `Series` Object which accepts series field name as string.</td>
-		<td>visualisationObj.Data.Series<br/>.SeriesFormatting("Series_Name")<br/>.`Alpha`(100)<br/>.`Color`("ff00ff")<br/>.`Dashed`(False)<br/>.`DisplayName`("Yearly sales")<br/>.`Visible`(true)<br/>.`ShowValues`(True);</td>
+		<td>visualisationObj.Data.Series<br/>.SeriesFormatting("Series_Name")<br/>.`Alpha`(100)<br/>.`Color`("ff00ff")<br/>.`Dashed`(false)<br/>.`DisplayName`("Yearly sales")<br/>.`Visible`(true)<br/>.`ShowValues`(true);</td>
 		<td>This instance is used to customize the selected series of the chart. Following are the instance methods of `SeriesFormatting`:<br/>1. Alpha(integer)<br/>2. Color(Hex Color Code(string))<br/>3. Dashed(boolean)<br/>4. DisplayName(string)<br/>5. Visible(boolean)<br/>6. ShowValues(boolean)</td>
 	</tr>
 	<tr>

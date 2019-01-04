@@ -150,13 +150,13 @@ Following is the list of operations which can be applied to the data plot of the
 
 Operation | Data Type | Query Signature
 --- | --- | ---
-`Null` | String, Number, Date/Time | &lt;field&gt; `is null`
-`Not Null` | String, Number, Date/Time| &lt;field&gt; `is not null`
-`Equal` | String, Number, Date/Time | &lt;field&gt; `=` &lt;value&gt;
-`Not Equal` | String, Number, Date/Time | &lt;field&gt; `!=` &lt;value&gt;
-`Begins With` | String | &lt;field&gt; `begins with` &lt;value&gt;
-`Contains` | String | &lt;field&gt; `contains` &lt;value&gt;
-`Ends With` | String | &lt;field&gt; `ends with` &lt;value&gt;
+`Null` | string, Number, Date/Time | &lt;field&gt; `is null`
+`Not Null` | string, Number, Date/Time| &lt;field&gt; `is not null`
+`Equal` | string, Number, Date/Time | &lt;field&gt; `=` &lt;value&gt;
+`Not Equal` | string, Number, Date/Time | &lt;field&gt; `!=` &lt;value&gt;
+`Begins With` | string | &lt;field&gt; `begins with` &lt;value&gt;
+`Contains` | string | &lt;field&gt; `contains` &lt;value&gt;
+`Ends With` | string | &lt;field&gt; `ends with` &lt;value&gt;
 `Greater` | Number, Date/Time | &lt;field&gt; `>` &lt;value&gt;
 `Greater or Equal` | Number, Date/Time | &lt;field&gt; `>=` &lt;value&gt;
 `Less` | Number, Date/Time | &lt;field&gt; `<` &lt;value&gt;
