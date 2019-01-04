@@ -81,7 +81,7 @@ API|Type|Syntax|Description
 
 These APIs let you configure the cosmetics of chart sub-caption.
 
-API|Type|Syntax|Description|
+API|Type|Syntax|Description
 -|-|-|-
 `Text`|string|visualizationObj.SubCaption.Text = "Chart Sub Title";|Sets the sub-caption of the chart
 `FontSize`|integer|visualizationObj.SubCaption.FontSize = 16;|Sets the font size of the sub-caption

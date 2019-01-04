@@ -18,7 +18,7 @@ The predefined filters are:
 * Greater or Equal
 * Less
 * Less or Equal
-* In Between
+* Between
 * Begins with
 * Contains
 * Ends with
@@ -181,10 +181,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Height = "400";
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
-            // Category field for the chart
-            column.Data.CategoryField("Order Date");
-            // Series field(s) for the chart
-            column.Data.SeriesFields("Sales");
             // Set Chart Title
             column.Caption.Text = "Online sales of SuperStore";
             // set chart subtitle
