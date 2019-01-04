@@ -10,6 +10,30 @@ Data plot refers to the columns of the column chart, lines in a line chart, pie/
 
 In FusionCharts.NET, you can customize the data plots in the following ways with the help of different instance methods of the `ValueFormatting` object (which accepts a string argument) of `Series` object under the `Data` object, which is in turn under the `visualizationObj` object:
 
+Data plots can be formatted using value formatting:
+
+* **Series Name & Condition**
+
+To format the value of the data plot for a particular series, set the name of the series and the condtion you want to apply to the data plot.
+
+**Syntax:**
+
+```
+visualizationObj.Data.Series.ValueFormatting("SERIESNAME", "CONDITION");
+```
+
+* Condition
+
+To format the value of all the data plots in a chart, set the condtion you want to apply to the data plot.
+
+**Syntax:**
+
+```
+visualizationObj.Data.Series.ValueFormatting("CONDITION");
+```
+
+Now, let's apply value formatting to all the data plots of the chart.
+
 ### Set Transparency of Plot
 
 Set the transparency of the data plot between `0` (transparent) and `100` (opaque) using the `Alpha` properties. Refer to the code given below:
@@ -151,7 +175,7 @@ FusionCharts.NET supports logical operators which filters the data based on some
 Refer to the code below:
 
 ```
-visualizationObj.Data.Series.ValueFormatting("SeriesName" , "value >= 20000 and value < 40000").ShowValue(true);
+visualizationObj.Data.Series.ValueFormatting(value >= 20000 and value < 40000").ShowValue(true);
 ```
 
 In the above code two condtional formatting `>=` & `<` has been used and one logical operator `and` has been used. This filters the data of the chart and renders a chart with filtered data plot.
