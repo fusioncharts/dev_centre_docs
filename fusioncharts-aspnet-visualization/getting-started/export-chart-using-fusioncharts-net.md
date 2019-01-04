@@ -95,7 +95,7 @@ In the above code:
 * Set the chart `width` and `height`.
 * Set the `Enabled` properties to `true` to enable the export option.
 * Set the name of the export file by using the `ExportedFileName` properties.
-* Set the `.Action` properties as **DOWNLOAD** or **SAVE** to specify the type of action while exporting.
+* Set the `Action` properties as **DOWNLOAD** or **SAVE** to specify the type of action while exporting.
 
 A chart with export enabled is shown below:
 
