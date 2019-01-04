@@ -234,26 +234,26 @@ visualizationObj.Data.SeriesFields("Sales,Total_Purchase");
 	<tr>
 		<td>`FontSize`</td>
 		<td>Integer</td>
-		<td>visualizationObj.Data.Categories.FontSize = 10;</td>
+		<td>visualizationObj.Data.Categories<br/>.FontSize = 10;</td>
 		<td>Sets the font size of the X-axis title</td>
 	</tr>
 	<tr>
 		<td>`FontName`</td>
 		<td>String</td>
-		<td>visualizationObj.Data.Categories.FontName = "Arial";</td>
+		<td>visualizationObj.Data.Categories<br/>.FontName = "Arial";</td>
 		<td>Sets the font of the X-axis title</td>
 	</tr>
 	<tr>
 		<td>`FontColor`</td>
 		<td>Hex Color Code</td>
-		<td>visualizationObj.Data.Categories.FontColor = "#ffffff";</td>
+		<td>visualizationObj.Data.Categories<br/>.FontColor = "#ffffff";</td>
 		<td>Sets the font color of the X-axis title</td>
 	</tr>
 	<tr>
 		<td>`CategoryFormatting`</td>
 		<td>Methods of Category object which accepts category name as string parameter.</td>
-		<td>visualisationObj.Data.Categories<br/>.CategoryFormatting("india")<br/>.`ShowLabel`(True)<br/>.`ToolText`("Country:India")<br/>.`FontName`("Arial")<br/>.`FontColor`("#ff000f")<br/>.`FontSize`(12)<br/>.`Bold`(false)<br/>.`Italic`(true)<br/>.`LabelLink`("localhost:CountryDetails")<br/>.`BorderColor`("000000")<br/>.`BGColor`("000000")<br/>.`Alpha`(100);</td>
-		<td>This instance is used to customize the specific categories of the chart. Following are the instance methods of `CategoryFormatting`: <br/>1. ShowLabel<br/>2. ToolText<br/>3. FontName<br/>4. FontColor<br/>5. FontSize<br/>6. Bold<br/>7. Italic<br/>8. LabelLink<br/>9. BorderColor<br/>10. BGColor<br/>11. Alpha</td>
+		<td>visualisationObj.Data.Categories<br/>.CategoryFormatting("india")<br/>.`ShowLabel`(true)<br/>.`ToolText`("Country:India")<br/>.`FontName`("Arial")<br/>.`FontColor`("#ff000f")<br/>.`FontSize`(12)<br/>.`Bold`(false)<br/>.`Italic`(true)<br/>.`LabelLink`("localhost:CountryDetails")<br/>.`BorderColor`("000000")<br/>.`BGColor`("000000")<br/>.`Alpha`(100);</td>
+		<td>This instance is used to customize the specific categories of the chart. Following are the instance methods of `CategoryFormatting`: <br/>1. ShowLabel(Boolean)<br/>2. ToolText(String)<br/>3. FontName(String)<br/>4. FontColor(Hex Color code(String))<br/>5. FontSize(Integer)<br/>6. Bold(Boolean)<br/>7. Italic(Boolean)<br/>8. LabelLink(String)<br/>9. BorderColor(Hex Color Code(String))<br/>10. BGColor(Hex Color Code(String))<br/>11. Alpha(Integer)</td>
 	</tr>
 </table>
 
