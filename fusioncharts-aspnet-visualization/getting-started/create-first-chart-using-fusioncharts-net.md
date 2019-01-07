@@ -10,7 +10,7 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-first-chart-example-1.js %}
 
-Click [here](https://dotnetfiddle.net/nVVeWE) to edit the column chart.
+Click [here](https://dotnetfiddle.net/Dw6gBV) to edit the column chart.
 
 The data for the above chart is shown in the table below:
 

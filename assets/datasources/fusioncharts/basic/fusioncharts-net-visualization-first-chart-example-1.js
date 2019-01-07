@@ -11,6 +11,7 @@
             "xAxisName": "Programming Language",
             "yAxisName": "Users",
             "showLegend": "1",
+            "interactiveLegend": "0",
             "theme": "fusion"
         },
         "categories": [{
