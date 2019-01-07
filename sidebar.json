@@ -1619,6 +1619,10 @@
                      {
                         "title": "Render Thumbnail Versions of Charts",
                         "path": "/common-use-cases/render-thumbnail-versions-of-chart"
+                     },
+                     {
+                        "title": "Create Interactive Charts using PHP and MySQL Database",
+                        "path": "/using-with-server-side-languages/tutorials/php-mysql-charts"
                      }
                   ]
                }
@@ -2065,168 +2069,6 @@
          {
             "title": "Release Notes",
             "path": "/exporting-charts/using-fusionexport/fusionexport-release-notes"
-         }
-      ]
-   },
-   {
-      "title": "FusionCharts.Net",
-      "children": [
-         {
-            "title": "Getting Started",
-            "children": [
-               {
-                  "title": "Overview",
-                  "path": "/fusioncharts-aspnet-visualization/getting-started/overview-of-fusioncharts-net-viz"
-               },
-               {
-                  "title": "Installation",
-                  "path": "/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net"
-               },
-               {
-                  "title": "Create your First Chart",
-                  "path": "/fusioncharts-aspnet-visualization/getting-started/create-first-chart-using-fusioncharts-net"
-               },
-               {
-                  "title": "Filter Chart Data",
-                  "path": "/fusioncharts-aspnet-visualization/getting-started/filter-chart-data-using-fusioncharts-net"
-               },
-               {
-                  "title": "Change Theme",
-                  "path": "/fusioncharts-aspnet-visualization/getting-started/change-theme-using-fusioncharts-net"
-               },
-               {
-                  "title": "Export Charts",
-                  "path": "/fusioncharts-aspnet-visualization/getting-started/export-chart-using-fusioncharts-net"
-               }
-            ]
-         },
-         {
-            "title": "Chart Types",
-            "children": [
-               {
-                  "title": "Column and Bar Charts",
-                  "path": "/fusioncharts-aspnet-visualization/chart-types/column-bar-net"
-               },
-               {
-                  "title": "Line and Spline Charts",
-                  "path": "/fusioncharts-aspnet-visualization/chart-types/line-spline-net"
-               },
-               {
-                  "title": "Area Chart",
-                  "path": "/fusioncharts-aspnet-visualization/chart-types/area-chart-net"
-               },
-               {
-                  "title": "Stacked Chart",
-                  "path": "/fusioncharts-aspnet-visualization/chart-types/stacked-chart-net"
-               },
-               {
-                  "title": "Overlapped Charts",
-                  "path": "/fusioncharts-aspnet-visualization/chart-types/overlapped-chart-net"
-               },
-               {
-                  "title": "Scroll Charts",
-                  "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net"
-               },
-               {
-                  "title": "Pie and Doughnut Charts",
-                  "path": "/fusioncharts-aspnet-visualization/chart-types/pie-doughnut-net"
-               },
-               {
-                  "title": "Funnel Chart",
-                  "path": "/fusioncharts-aspnet-visualization/chart-types/funnel-chart-net"
-               },
-               {
-                  "title": "Pyramid Chart",
-                  "path": "/fusioncharts-aspnet-visualization/chart-types/pyramid-chart-net"
-               }
-            ]
-         },
-         {
-            "title": "Chart Components",
-            "children": [
-               {
-                  "title": "Caption and Sub-Caption",
-                  "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-caption-sub-caption"
-               },
-               {
-                  "title": "Axes",
-                  "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-axes"
-               },
-               {
-                  "title": "Data Plot",
-                  "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-data-plot"
-               },
-               {
-                  "title": "Data Value",
-                  "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-data-value"
-               },
-               {
-                  "title": "Data Labels",
-                  "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-data-labels"
-               },
-               {
-                  "title": "Legend",
-                  "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-legend"
-               },
-               {
-                  "title": "Tooltip",
-                  "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-tooltip"
-               }
-            ]
-         },
-         {
-            "title": "Data Engine",
-            "children": [
-               {
-                  "title": "Overview",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-overview"
-               },
-               {
-                  "title": "Data Engine APIs",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-api"
-               },
-               {
-                  "title": "Select Fields",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/select-fields"
-               },
-               {
-                  "title": "Select Top Records",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/select-top-records"
-               },
-               {
-                  "title": "Filter Data",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/filter-data"
-               },
-               {
-                  "title": "OrderBy",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/order-by"
-               },
-               {
-                  "title": "GroupBy",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/group-by"
-               },
-               {
-                  "title": "Data Aggregation",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/aggregation"
-               },
-               {
-                  "title": "GroupBy with Aggregation",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/group-by-aggregation"
-               }
-            ]
-         },
-         {
-            "title": "API Reference",
-            "children": [
-               {
-                  "title": "Visualization API",
-                  "path": "/fusioncharts-aspnet-visualization/api-reference-net/visualization-api-net"
-               },
-               {
-                  "title": "Events",
-                  "path": "/fusioncharts-aspnet-visualization/api-reference-net/events-net"
-               }
-            ]
          }
       ]
    }

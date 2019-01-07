@@ -5,7 +5,7 @@ heading: Version 3.13.x
 ---
 
 <h2 class="sub-heading">Version 3.13.3-sr.1</h2>
-21th December, 2018
+21st December, 2018
 
 <h4 class="sub-heading">Improvements</h4>
 

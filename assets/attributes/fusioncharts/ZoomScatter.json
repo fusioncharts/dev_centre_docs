@@ -3286,6 +3286,13 @@
                 "range": "0 - 100",
                 "type": "Number",
                 "name": "hoverAlpha"
+            },
+            {
+                "description": "Sets whether a dataset will be visible on the chart, when the chart is first loaded. This attribute overrides the `initiallyHidden` attribute. \n\n __Default Value__ : 1",
+                "range": "0/1",
+                "type": "Boolean",
+                "versionsince": "3.10.0",
+                "name": "visible"
             }
         ],
         "description": "Each `dataset` object contains a series of data. For example, for a monthly sales comparison chart for two successive years, the first data-set would contain the data for first year and the next one for the second year. You can provide data-set level cosmetics so that all data within that data-set will be plotted in the same color/alpha/etc. Depending on the chart type, there are a number of attributes that you can define for each `dataset` object."

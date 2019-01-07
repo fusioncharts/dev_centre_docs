@@ -2780,6 +2780,13 @@
                 "name": "showValues"
             },
             {
+                "description": "Sets whether a dataset will be visible on the chart, when the chart is first loaded. This attribute overrides the `initiallyHidden` attribute. \n\n __Default Value__ : 1",
+                "range": "0/1",
+                "type": "Boolean",
+                "versionsince": "3.10.0",
+                "name": "visible"
+            },
+            {
                 "description": "This attribute can set the hover color for the data plots of a particular daatset.",
                 "range": "Hex Color Code",
                 "type": "Color",
