@@ -2074,6 +2074,7 @@
    },
    {
       "title": "FusionCharts.Net",
+      "badge": "Beta",
       "children": [
          {
             "title": "Getting Started",
