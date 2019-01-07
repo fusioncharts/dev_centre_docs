@@ -10,8 +10,8 @@ heading: Visualization API
 
 The syntax to create a column chart is given below:
 
-```aspnet
-Charts.ColumnChart column= new Charts.ColumnChart("id");
+```csharp
+Charts.ColumnChart column= new Charts.ColumnChart("Chart_Id");
 ```
 
 **Column 3D**
@@ -28,7 +28,7 @@ column.Overlapped = true;
 
 **Scroll**
 
-```aspnet
+```csharp
 column.Scrollable = true;
 ```
 
@@ -36,12 +36,129 @@ column.Scrollable = true;
 
 The syntax to create a bar chart is given below:
 
-```aspnet
-
+```csharp
+Charts.BarChart bar= new Charts.BarChart("Chart_Id");
 ```
 
+**Bar 3D**
 
+```csharp
+bar.ThreeD = true; 
+```
 
+**Overlapped**
+
+```csharp
+bar.Overlapped = true;
+```
+
+### Line
+
+The syntax to create a line chart is given below:
+
+```csharp
+Charts.LineChart line = new Charts.LineChart("Chart_Id");
+```
+
+**Scroll**
+
+```csharp
+line.Scrollable = true;
+```
+
+### Spline
+
+The syntax to create a spline chart is given below:
+
+```csharp
+Charts.SplineChart spline = new Charts.SplineChart("Chart_Id");
+```
+
+### Area
+
+The syntax to create a area chart is given below:
+
+```csharp
+Charts.AreaChart area = new Charts.AreaChart("Chart_Id");
+```
+
+### Stacked
+
+The available stacked charts are:
+
+* Bar
+* Column
+* Area
+
+The syntax to create a stacked chart is given below:
+
+```csharp
+Charts.StackedChart stack = new Charts.StackedChart("Chart_Id");
+```
+
+**Stack Type**
+
+```csharp
+stack.StackType = Charts.StackedChart.StackChartType.BAR; //Stacked Bar
+stack.StackType = Charts.StackedChart.StackChartType.COLUMN; //Stacked Column
+stack.StackType = Charts.StackedChart.StackChartType.AREA; //Stacked Area
+```
+
+**Stacked 3D**
+
+```csharp
+stack.ThreeD = true; 
+```
+
+**Scroll**
+
+```csharp
+stack.Scrollable = true;
+```
+
+### Pie
+
+The syntax to create a pie chart is given below:
+
+```csharp
+Charts.PieChart pie = new Charts.PieChart("Chart_Id");
+```
+
+**Pie 3D**
+
+```csharp
+pie.ThreeD = true; 
+```
+
+### Doughnut
+
+The syntax to create a doughnut chart is given below:
+
+```csharp
+Charts.DoughnutChart doughnut = new Charts.DoughnutChart("Chart_Id");
+```
+
+**Doughnut 3D**
+
+```csharp
+doughnut.ThreeD = true; 
+```
+
+### Funnel
+
+The syntax to create a funnel chart is given below:
+
+```csharp
+Widget.FunnelChart funnel = new Widget.FunnelChart("Chart_Id");
+```
+
+### Pyramid
+
+The syntax to create a pyramid chart is given below:
+
+```csharp
+Widget.PyramidChart pyramid = new Widget.PyramidChart("Chart_Id");
+```
 
 ## API's Common for All Charts
 
@@ -165,7 +282,7 @@ These API's let you control the tool tip. You can set the background color, bord
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Show`|boolean|visualizationObj.ToolTip.Show = "true";|Shows/Hides the tooltip
+`Show`|boolean|visualizationObj.ToolTip.Show = true;|Shows/Hides the tooltip
 `BGColor`|Hex Color Code|visualizationObj.ToolTip.BGColor = "#000000";|Sets the background color of the tooltip
 `BorderColor`|Hex Color Code|visualizationObj.ToolTip.BorderColor = "#00ff00";|Sets the border color of the tooltip
 `SeparatorChar`|Charater|visualizationObj.ToolTip.SeparatorChar = '/';|Sets the separator character in the tooltip text
@@ -180,7 +297,7 @@ In a chart, the name of each dataset shows up in the legend of the chart. Using 
 
 API|Type|Syntax|Description|
 -|-|-|-
-`Show`|boolean|visualizationObj.Legend.Show = "true";|Shows/Hides the legend |
+`Show`|boolean|visualizationObj.Legend.Show = true;|Shows/Hides the legend |
 `Caption`|string|visualizationObj.Legend.Caption = "Legend Caption";|Sets the caption of the legend|
 `Position`|LegendObject.LegendPosition|visualizationObj.Legend.Position = LegendObject.LegendPosition.RIGHT;|Sets the position of the legend<br/>1. `BOTTOM`<br/>2. `RIGHT`|
 `FontSize`|integer|visualizationObj.Legend.FontSize = 10;|Sets the font size of the legend text|
