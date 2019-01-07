@@ -68,7 +68,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             // Retrieve data using database query
             string query = "select [languages], [User] from dbo.UserPerLanguage";
-            string connectionString = null;
+            string connectionstring = null;
 
             // Servevr name
             string serverName = "FusionChartsServer";
@@ -78,9 +78,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             primaryData.Clear();
 
             // Connection string
-            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
 
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = new SqlConnection(connectionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
@@ -166,7 +166,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             // Retrieve data using database query
             string query = "select [languages], [User] from dbo.UserPerLanguage";
-            string connectionString = null;
+            string connectionstring = null;
 
             // Servevr name
             string serverName = "FusionChartsServer";
@@ -176,9 +176,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             primaryData.Clear();
 
             // Connection string
-            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
 
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = new SqlConnection(connectionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))

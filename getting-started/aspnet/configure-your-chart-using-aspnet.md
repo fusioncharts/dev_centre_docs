@@ -4,6 +4,13 @@ description: This article focuses on different type of configurations possible u
 heading: Configuring your Chart using ASP.NET
 ---
 
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. Download it now to take advantage of the following powerful features:
+> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> * All methods and properties are available in Visual Studio intellisense.
+> * ...and many more.
+> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and makes data visualization simpler. These features include updating **chart data**, **annotations**, **trend-lines**, and **events**.
 
 This article focuses on how you can configure your charts using FusionCharts ASP.NET __C#__ & __VB__ wrapper to perform the following:

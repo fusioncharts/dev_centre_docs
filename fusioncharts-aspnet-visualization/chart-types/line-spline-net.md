@@ -67,13 +67,13 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         {
             DataTable dt = new DataTable();
             string query = "select * from TotalFootfall";
-            string connectionString = null;
+            string connectionstring = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
             dt.Clear();
-            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
 
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = new SqlConnection(connectionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
@@ -162,13 +162,13 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         {
             DataTable dt = new DataTable();
             string query = "select * from TotalFootfall";
-            string connectionString = null;
+            string connectionstring = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
             dt.Clear();
-            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
 
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = new SqlConnection(connectionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))

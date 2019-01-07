@@ -18,7 +18,7 @@ The predefined filters are:
 * Greater or Equal
 * Less
 * Less or Equal
-* In Between
+* Between
 * Begins with
 * Contains
 * Ends with
@@ -145,7 +145,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             // Retrieve data using database query
             string query = "select [Order Data], [Sales] from dbo.SalesOrder";
-            string connetionString = null;
+            string connetionstring = null;
 
             // Servevr name
             string serverName = "FusionChartsServer";
@@ -155,9 +155,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             primaryData.Clear();
 
             // Connection string
-            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
 
-            using (SqlConnection con = new SqlConnection(connetionString))
+            using (SqlConnection con = new SqlConnection(connetionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
@@ -181,10 +181,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Height = "400";
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
-            // Category field for the chart
-            column.Data.CategoryField("Order Date");
-            // Series field(s) for the chart
-            column.Data.SeriesFields("Sales");
             // Set Chart Title
             column.Caption.Text = "Online sales of SuperStore";
             // set chart subtitle

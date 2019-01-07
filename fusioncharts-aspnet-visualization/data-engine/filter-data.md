@@ -50,7 +50,7 @@ DataModel nullOperation = model.Where("Country is null");
 In the above code:
 
 * **DataModel** is a class.
-* `nullOperation` is the object which holds the resultant data. `nullOperation` is an instance of the DataModel.
+* `nullOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -86,7 +86,7 @@ DataModel notNullOperation = model.Where("Country is not null");
 In the above code:
 
 * **DataModel** is a class.
-* `notNullOperation` is the object which holds the resultant data. `notNullOperation` is an instance of the DataModel.
+* `notNullOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -117,7 +117,7 @@ DataModel equalOperation = model.Where("Country = United States");
 In the above code:
 
 * **DataModel** is a class.
-* `equalOperation` is the object which holds the resultant data. `equalOperation` is the instance of the DataModel.
+* `equalOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -140,7 +140,7 @@ DataModel notEqualOperation = model.Where("Country != United States");
 In the above code:
 
 * **DataModel** is a class.
-* `notEqualOperation` is the object which holds the resultant data. `notEqualOperation` is the instance of the DataModel.
+* `notEqualOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -166,7 +166,7 @@ DataModel greaterOperation = model.Where("Sales > 100");
 In the above code:
 
 * **DataModel** is a class.
-* `greaterOperation` is the object which holds the resultant data. `greaterOperation` is an instance of the DataModel.
+* `greaterOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -189,7 +189,7 @@ DataModel greaterEqualOperation = model.Where("Quantity >= 3");
 In the above code:
 
 * **DataModel** is a class.
-* `greaterEqualOperation` is the object which holds the resultant data. `greaterEqualOperation` is an instance of the DataModel.
+* `greaterEqualOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -217,7 +217,7 @@ DataModel lessOperation = model.Where("Sales < 100");
 In the above code:
 
 * **DataModel** is a class.
-* `lessOperation` is the object which holds the resultant data. `lessOperation` is an instance of the DataModel.
+* `lessOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -243,7 +243,7 @@ DataModel lessEqualOperation = model.Where("Quantity <= 3");
 In the above code:
 
 * **DataModel** is a class.
-* `lessEqualOperation` is the object which holds the resultant data. `lessEqualOperation` is an instance of the DataModel.
+* `lessEqualOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -268,7 +268,7 @@ DataModel betweenOperation = model.Where("Order Date is between 1/22/2011 to 1/2
 In the above code:
 
 * **DataModel** is a class.
-* `betweenOperation` is the object which holds the resultant data. `betweenOperation` is an instance of the DataModel.
+* `betweenOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -295,7 +295,7 @@ DataModel beginsWithOperation = model.Where("Country begins with A");
 In the above code:
 
 * **DataModel** is a class.
-* `beginsWithOperation` is the object which holds the resultant data. `beginsWithOperation` is an instance of the DataModel.
+* `beginsWithOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -324,7 +324,7 @@ DataModel containsOperation = model.Where("Country contains d");
 In the above code:
 
 * **DataModel** is a class.
-* `containsOperation` is the object which holds the resultant data. `containsOperation` is an instance of the DataModel.
+* `containsOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -350,7 +350,7 @@ DataModel endsWithOperation = model.Where("Country ends with a");
 In the above code:
 
 * **DataModel** is a class.
-* `endsWithOperation` is the object which holds the resultant data. `endsWithOperation` is an instance of the DataModel.
+* `endsWithOperation` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 
@@ -383,7 +383,7 @@ DataModel andOperator = model.Where("Order Date is between 1/22/2011 to 1/24/201
 In the above code:
 
 * **DataModel** is a class.
-* `andOperator` is the object which holds the resultant data. `andOperator` is an instance of the DataModel.
+* `andOperator` is an instance of the DataModel which holds the resultant data.
 * Between filter operation filters the **Order Date** column to the specified date/time.
 * Equals filter operation filters the **Country** column to United States.
 
@@ -409,7 +409,7 @@ DataModel orOperator = model.Where("Name starts with I or Name starts with A");
 In the above code:
 
 * **DataModel** is a class.
-* `orOperator` is the object which holds the resultant data. `orOperator` is an instance of the DataModel.
+* `orOperator` is an instance of the DataModel which holds the resultant data.
 
 The output after running the above code looks like:
 

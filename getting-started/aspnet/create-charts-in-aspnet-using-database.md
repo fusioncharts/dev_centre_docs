@@ -5,6 +5,13 @@ heading: Create Charts in ASP.Net using Database
 chartPresent: true
 ---
 
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. Download it now to take advantage of the following powerful features:
+> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> * All methods and properties are available in Visual Studio intellisense.
+> * ...and many more.
+> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+
 In addition to directly specifying the chart data (or the URL for the file in which the chart data is stored) directly in the JSON/XML code, you can also fetch data for the chart from a database.
 
 This section showcases how you can do this using the FusionCharts ASP.NET wrapper to create a multi-series line chart by fetching data from a database.

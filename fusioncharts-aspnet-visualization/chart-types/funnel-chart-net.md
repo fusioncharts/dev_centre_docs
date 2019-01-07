@@ -60,7 +60,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 
             // Retrieve data using database query
             string query = "select [Website Sections], [Website Visits] from dbo.WebsiteVisits";
-            string connetionString = null;
+            string connetionstring = null;
 
             // Servevr name
             string serverName = "FusionChartsServer";
@@ -70,9 +70,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             ChartData.Clear();
 
             // Connection string
-            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
 
-            using (SqlConnection con = new SqlConnection(connetionString))
+            using (SqlConnection con = new SqlConnection(connetionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))

@@ -10,11 +10,35 @@ Data plot refers to the columns of the column chart, lines in a line chart, pie/
 
 In FusionCharts.NET, you can customize the data plots in the following ways with the help of different instance methods of the `ValueFormatting` object (which accepts a string argument) of `Series` object under the `Data` object, which is in turn under the `visualizationObj` object:
 
+Data plots can be formatted using value formatting:
+
+* **Series Name & Condition**
+
+To format the value of the data plot for a particular series, set the name of the series and the condtion you want to apply to the data plot.
+
+**Syntax:**
+
+```csharp
+visualizationObj.Data.Series.ValueFormatting("SERIESNAME", "CONDITION");
+```
+
+* Condition
+
+To format the value of all the data plots in a chart, set the condtion you want to apply to the data plot.
+
+**Syntax:**
+
+```csharp
+visualizationObj.Data.Series.ValueFormatting("CONDITION");
+```
+
+Now, let's apply value formatting to all the data plots of the chart.
+
 ### Set Transparency of Plot
 
 Set the transparency of the data plot between `0` (transparent) and `100` (opaque) using the `Alpha` properties. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Series.ValueFormatting("value > 20000 and value < 40000").Alpha(50);
 ```
 
@@ -28,7 +52,7 @@ The chart will look as shown below:
 
 Set the color of the individual data plots as hex code using the `Color` property. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Series.ValueFormatting("value < 20000 and value > 40000").Color(#333664);
 ```
 
@@ -42,7 +66,7 @@ The chart will look as shown below:
 
 THe `Dashed` property is used when you want the border of the data plot to be appeared as dashed. This is particularly useful when you want to highlight a data. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Series.ValueFormatting("value > 10000 and value < 30000").Dashed(true);
 ```
 
@@ -56,7 +80,7 @@ The chart will look as shown below:
 
 To hide the individual plot value, set the value of the `ShowValue` property to `false`. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Series.ValueFormatting("value > 30000 and value < 40000").ShowValue(false);
 ```
 
@@ -70,7 +94,7 @@ The chart will look as shown below:
 
 To link a data plot values to an external resource, set the value of the `Link` properties to the link of the resource. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Series.ValueFormatting("value > 20000 and value < 30000").Link("https://www.fusioncharts.com/");
 ```
 
@@ -84,7 +108,7 @@ The chart will look as shown below:
 
 To display a different value instead of the numeric value of the data plot, set the value of `DisplayValue` property to the text you want to display. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Series.ValueFormatting("value > 20000 and value < 30000").DisplayValue("27000 Users");
 ```
 
@@ -98,7 +122,7 @@ The chart will look as shown below:
 
 Set the tooltip text for the data plot as string to the `ToolText` properties. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Series.ValueFormatting("value > 20000 and value < 30000").ToolText("Programming Language");
 ```
 
@@ -114,7 +138,7 @@ If you've opted to show data values on the chart, `ValuePosition` property lets 
 
 Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Values.Position = ValueFormat.ValuePosition.AUTO;
 ```
 
@@ -124,15 +148,15 @@ Using FusionCharts.NET, you can also apply conditional formatting to the data pl
 
 Following is the list of operations which can be applied to the data plot of the chart.
 
-Operation | Data Type | Query
+Operation | Data Type | Query Signature
 --- | --- | ---
-`Null` | String, Number, Date/Time | &lt;field&gt; is `null`
-`Not Null` | String, Number, Date/Time| &lt;field&gt; is `not null`
-`Equal` | String, Number, Date/Time | &lt;field&gt; `=` &lt;value&gt;
-`Not Equal` | String, Number, Date/Time | &lt;field&gt; `!=` &lt;value&gt;
-`Begins With` | String | &lt;field&gt; `begins with` &lt;value&gt;
-`Contains` | String | &lt;field&gt; `contains` &lt;value&gt;
-`Ends With` | String | &lt;field&gt; `ends with` &lt;value&gt;
+`Null` | string, Number, Date/Time | &lt;field&gt; `is null`
+`Not Null` | string, Number, Date/Time| &lt;field&gt; `is not null`
+`Equal` | string, Number, Date/Time | &lt;field&gt; `=` &lt;value&gt;
+`Not Equal` | string, Number, Date/Time | &lt;field&gt; `!=` &lt;value&gt;
+`Begins With` | string | &lt;field&gt; `begins with` &lt;value&gt;
+`Contains` | string | &lt;field&gt; `contains` &lt;value&gt;
+`Ends With` | string | &lt;field&gt; `ends with` &lt;value&gt;
 `Greater` | Number, Date/Time | &lt;field&gt; `>` &lt;value&gt;
 `Greater or Equal` | Number, Date/Time | &lt;field&gt; `>=` &lt;value&gt;
 `Less` | Number, Date/Time | &lt;field&gt; `<` &lt;value&gt;
@@ -150,8 +174,8 @@ FusionCharts.NET supports logical operators which filters the data based on some
 
 Refer to the code below:
 
-```
-visualizationObj.Data.Series.ValueFormatting("SeriesName" , "value >= 20000 and value < 40000").ShowValue(true);
+```csharp
+visualizationObj.Data.Series.ValueFormatting(value >= 20000 and value < 40000").ShowValue(true);
 ```
 
 In the above code two condtional formatting `>=` & `<` has been used and one logical operator `and` has been used. This filters the data of the chart and renders a chart with filtered data plot.

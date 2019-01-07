@@ -65,12 +65,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
         protected void Page_Load(object sender, EventArgs e) {
             DataTable ChartData = new DataTable();
             string query = "select * from RankingTable";
-            string connectionString = null;
+            string connectionstring = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
             ChartData.Clear();
-            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
-            using (SqlConnection con = new SqlConnection(connectionString))
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
+            using (SqlConnection con = new SqlConnection(connectionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
