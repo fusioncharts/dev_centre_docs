@@ -8,7 +8,7 @@ heading: Create a Chart Using ASP.NET in FusionCharts
 > * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
 > * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
 > * All methods and properties are available in Visual Studio intellisense.
-> * ...and many more. </br>
+> * ...and many more.
 > Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
 ## Overview

@@ -4,6 +4,13 @@ description: FusionCharts lets you pass the complete JSON/XML chart data using a
 heading: Setting Data Source Using URL
 ---
 
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. Download it now to take advantage of the following powerful features:
+> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> * All methods and properties are available in Visual Studio intellisense.
+> * ...and many more.
+> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+
 FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a `.json` or `.xml` file and then pass the relative URL of this file as value to the `dataSource` attribute. 
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.

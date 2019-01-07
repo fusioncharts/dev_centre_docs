@@ -4,6 +4,13 @@ description: This article focuses on how you can export your chart using react.
 heading: Exporting Charts
 ---
 
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. Download it now to take advantage of the following powerful features:
+> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> * All methods and properties are available in Visual Studio intellisense.
+> * ...and many more.
+> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+
 FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well. This article focuses on how you can export charts using the React `props` object and `react-fusioncharts` component.
 
 In this section we will discuss how to:

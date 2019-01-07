@@ -4,6 +4,13 @@ description: This article focuses on different type of configurations possible u
 heading: Add Annotations using ASP.NET
 ---
 
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. Download it now to take advantage of the following powerful features:
+> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> * All methods and properties are available in Visual Studio intellisense.
+> * ...and many more.
+> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+
 Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative while making it visually appealing.
 
 In this article, we'll create a __Spline__ chart and add annotations to highlight a particular anchor along with text using the FusionCharts ASP.NET `C#` & `VB` wrapper. A sample chart is shown below:
