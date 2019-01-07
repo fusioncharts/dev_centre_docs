@@ -3,7 +3,7 @@ title: Download FusionCharts.NET | FusionCharts
 description: This article outlines the steps of how to install FusionCharts.NET
 heading: Download
 isFormPresent: true
-formHeading: In this section, we will show you how to download and install **FusionCharts.NET** and all the other dependencies on your system. You can install directly from Nuget or by downloading and using local files.
+formHeading: In this section, we will show you how to download and install **FusionCharts.NET** and all the other dependencies on your system. You can install directly from Nuget or by downloading and using local files. To download locally fill up the form and click the download button.
 ---
 
 ## Install using local files
@@ -17,13 +17,13 @@ To install, download `FusionCharts.NET` and follow the steps given below:
 **For .aspx**
 
 ```html
-<script type="text/javascript" src="~/Scripts/FusionCharts/FusionCharts.js"></script>
+<script type="text/javascript" src="/Scripts/fusioncharts/fusioncharts.js"></script>
 ```
 
 **For .cshtml**
 
 ```html
-<script src="@Url.Content("/Scripts/FusionCharts/FusionCharts.js")"></script>
+<script src="@Url.Content("//Scripts/fusioncharts/fusioncharts.js")></script>
 ```
 
 * Add a reference to the `FusionCharts.DataEngine.dll` and `FusionCharts.Visualization.dll` files into your `ASP.NET` project.
@@ -32,8 +32,8 @@ To install, download `FusionCharts.NET` and follow the steps given below:
 
 To use Nuget package, please run the following command in the Nuget Package Manage Console:
 
-```
-Install-Package FusionCharts.Visualization -Version 0.9.5-beta
+```csharp
+Install-Package FusionCharts.Visualization -Version 0.9.7-beta
 ```
 
 Once installed from Nuget, it'll add some assemblies to your web project, and those assemblies will be automatically referenced to your project. It'll also add FusionCharts JavaScript libraries to your project under `Scripts/FusionCharts/` folder.
@@ -46,8 +46,8 @@ FusionCharts export handler gets automatically installed, once you install `Fusi
 
 * Add these dependencies into `web.config`:
 
-```
- <compilation targetFramework="4.5" >
+```xml
+<compilation targetFramework="4.5" >
     <assemblies>
         <add assembly="WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
         <add assembly="PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />

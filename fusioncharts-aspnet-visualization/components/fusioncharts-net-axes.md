@@ -29,8 +29,8 @@ Customize the font properties of the x-axis title using the following:
 * Set the font size as an integer using the `FontSize` properties.
 * Set the font type as string using the `FontName` properties.
 * Set the font color as hex code using the `FontColor` properties.
-* Display the title as bold by setting the `Bold` properties to `True`.
-* Display the title as italic by setting the `Italic` properties to `True`. 
+* Display the title as bold by setting the `Bold` properties to `true`.
+* Display the title as italic by setting the `Italic` properties to `true`. 
 
 Refer to the code below:
 
@@ -93,8 +93,8 @@ Customize the font properties of the x-axis title using the following:
 * Set the font size as an integer using the `FontSize` properties.
 * Set the font type as the string using the `FontName` properties.
 * Set the font color as hex code using the `FontColor` properties.
-* Display the title as bold by setting the `Bold` properties to `True`.
-* Display the title as bold by setting the `Italic` properties to `True`. 
+* Display the title as bold by setting the `Bold` properties to `true`.
+* Display the title as bold by setting the `Italic` properties to `true`. 
 
 Refer to the code below:
 

@@ -10,19 +10,19 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-first-chart-example-1.js %}
 
-Click [here](https://dotnetfiddle.net/nVVeWE) to edit the column chart.
+Click [here](https://dotnetfiddle.net/Dw6gBV) to edit the column chart.
 
 The data for the above chart is shown in the table below:
 
-Programming Language|Users|
+Programming Language|Users
 -|-
-Java|62000|
-Python|46000|
-JavaScript|38000|
-C++|31000|
-C#|27000|
-PHP|14000|
-Perl|14000|
+Java|62000
+Python|46000
+JavaScript|38000
+C++|31000
+C#|27000
+PHP|14000
+Perl|14000
 
 Now that you have the tabular data ready, let's see how to render the chart.
 
@@ -69,7 +69,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             // Retrieve data using database query
             string query = "select [Languages], [User] from dbo.UserPerLanguage";
-            string connetionString = null;
+            string connetionstring = null;
 
             // Servevr name
             string serverName = "FusionChartsServer";
@@ -79,9 +79,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             primaryData.Clear();
 
             // Connection string
-            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
 
-            using (SqlConnection con = new SqlConnection(connetionString))
+            using (SqlConnection con = new SqlConnection(connetionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
@@ -105,8 +105,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Data.Source = model;
             // Set Chart Title
             column.Caption.Text = "Most popular programming language";
-            // hide chart Legend
-            column.Legend.Show = false;
             // set XAxis Text
             column.XAxis.Text = "Programming Language";
             // Set YAxis title

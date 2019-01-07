@@ -2074,6 +2074,7 @@
    },
    {
       "title": "FusionCharts.Net",
+      "badge": "Beta",
       "children": [
          {
             "title": "Getting Started",
@@ -2108,6 +2109,10 @@
             "title": "Chart Types",
             "children": [
                {
+                  "title": "List of Charts",
+                  "path": "/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net"
+               },
+               {
                   "title": "Column and Bar Charts",
                   "path": "/fusioncharts-aspnet-visualization/chart-types/column-bar-net"
                },
@@ -2120,7 +2125,7 @@
                   "path": "/fusioncharts-aspnet-visualization/chart-types/area-chart-net"
                },
                {
-                  "title": "Stacked Chart",
+                  "title": "Stacked Charts",
                   "path": "/fusioncharts-aspnet-visualization/chart-types/stacked-chart-net"
                },
                {

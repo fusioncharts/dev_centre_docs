@@ -31,7 +31,7 @@ Customize the font properties of the caption using the following:
 * Set the font size as an integer using the `FontSize` properties.
 * Set the font type as the string using the `FontName` properties.
 * Set the font color as hex code using the `FontColor` properties.
-* Display the title as bold by setting the `Bold` properties to `True`.
+* Display the title as bold by setting the `Bold` properties to `true`.
 
 Refer to the code given below:
 
@@ -48,7 +48,7 @@ The chart will look as shown below:
 
 ### Show the Caption at the Top
 
-Set whether the caption should appear at the top of the chart as `True` or `False`, by setting the value of the Boolean type `OnTop` properties. Note that if you set its value to `false`, the caption will appear below the chart. Refer to the code given below:
+Set whether the caption should appear at the top of the chart as `true` or `false`, by setting the value of the boolean type `OnTop` properties. Note that if you set its value to `false`, the caption will appear below the chart. Refer to the code given below:
 
 ```
 visualizationObj.Caption.OnTop = true;
@@ -85,7 +85,7 @@ Customize the font properties of the sub-caption using the following:
 * Set the font size as an integer using the `FontSize` properties.
 * Set the font type as the string using the `FontName` properties.
 * Set the font color as hex code using the `FontColor` properties.
-* Display the title as bold by setting the `Bold` properties to `True`.
+* Display the title as bold by setting the `Bold` properties to `true`.
 
 Refer to the code given below:
 

@@ -37,7 +37,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             // Retrieve data using database query
             string query = "select [Languages], [User] from dbo.UserPerLanguage";
-            string connetionString = null;
+            string connetionstring = null;
 
             // Servevr name
             string serverName = "FusionChartsServer";
@@ -47,9 +47,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             primaryData.Clear();
 
             // Connection string
-            connetionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
+            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
 
-            using (SqlConnection con = new SqlConnection(connetionString))
+            using (SqlConnection con = new SqlConnection(connetionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
@@ -95,7 +95,7 @@ In the above code:
 * Set the chart `width` and `height`.
 * Set the `Enabled` properties to `true` to enable the export option.
 * Set the name of the export file by using the `ExportedFileName` properties.
-* Set the `.Action` properties as **DOWNLOAD** or **SAVE** to specify the type of action while exporting.
+* Set the `Action` properties as **DOWNLOAD** or **SAVE** to specify the type of action while exporting.
 
 A chart with export enabled is shown below:
 

@@ -50,7 +50,7 @@ Create the `ScrollColumnChart.aspx.cs` file and do the following:
 * Retrieve data using database query.
 * Set `serverName`.
 * Set `DataBase` name.
-* Connect with `DataBase` using a `connectionString`.
+* Connect with `DataBase` using a `connectionstring`.
 * Create `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
 * Add `DataSource` to the `DataModel`.
@@ -82,12 +82,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
         {
             DataTable ChartData = new DataTable();
             string query = "select * from MonthlyRevenue";
-            string connectionString = null;
+            string connectionstring = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
             ChartData.Clear();
-            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
-            using (SqlConnection con = new SqlConnection(connectionString))
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
+            using (SqlConnection con = new SqlConnection(connectionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
@@ -155,7 +155,7 @@ Create the `ScrollLineChart.aspx.cs` file and do the following:
 * Retrieve data using database query.
 * Set `serverName`.
 * Set `DataBase` name.
-* Connect with `DataBase` using a `connectionString`.
+* Connect with `DataBase` using a `connectionstring`.
 * Create `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
 * Add `DataSource` to the `DataModel`.
@@ -187,12 +187,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
         {
             DataTable ChartData = new DataTable();
             string query = "select * from MonthlyRevenue";
-            string connectionString = null;
+            string connectionstring = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
             ChartData.Clear();
-            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
-            using (SqlConnection con = new SqlConnection(connectionString))
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
+            using (SqlConnection con = new SqlConnection(connectionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
@@ -267,12 +267,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
         {
             DataTable ChartData = new DataTable();
             string query = "select * from MonthlyRevenue";
-            string connectionString = null;
+            string connectionstring = null;
             string serverName = "FusionChartsServer";
             string databaseName = "FusionchartsSamplesDB";
             ChartData.Clear();
-            connectionString = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=True;";
-            using (SqlConnection con = new SqlConnection(connectionString))
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
+            using (SqlConnection con = new SqlConnection(connectionstring))
             {
                 con.Open();
                 using (SqlCommand command = new SqlCommand(query, con))
