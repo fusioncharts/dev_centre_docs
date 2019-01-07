@@ -4,6 +4,15 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Chart Using ASP.NET in FusionCharts
 ---
 
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. Download it now to take advantage of the following powerful features:
+
+> 1. Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> 2. Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> 3. All methods and properties are available in Visual Studio intellisense.
+> 4. ...and many more
+
+> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+
 ## Overview
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple server-side **ASP.NET** wrapper for FusionCharts. The `FusionCharts server-side ASP.NET` wrapper lets you easily add rich and interactive charts to any ASP.NET project. Using the wrapper, you can create charts in your browsers, without writing any JavaScript code.
