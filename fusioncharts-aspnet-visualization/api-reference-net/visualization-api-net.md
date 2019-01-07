@@ -16,27 +16,30 @@ Charts.ColumnChart column= new Charts.ColumnChart("id");
 
 **Column 3D**
 
-The syntax to create a 3D column chart is given below:
-
-```aspnet
+```csharp
 column.ThreeD = true; 
 ```
 
 **Overlapped**
 
-The syntax to create a overlapped column chart is given below:
-
-```aspnet
+```csharp
 column.Overlapped = true;
 ```
 
 **Scroll**
 
-The syntax to create a scrollable column chart is given below:
-
 ```aspnet
 column.Scrollable = true;
 ```
+
+### Bar
+
+The syntax to create a bar chart is given below:
+
+```aspnet
+
+```
+
 
 
 
