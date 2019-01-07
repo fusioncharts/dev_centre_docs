@@ -4,6 +4,42 @@ description: This article provides the list of APIs available
 heading: Visualization API
 ---
 
+## API's to create Charts
+
+### Column
+
+The syntax to create a column chart is given below:
+
+```aspnet
+Charts.ColumnChart column= new Charts.ColumnChart("id");
+```
+
+**Column 3D**
+
+The syntax to create a 3D column chart is given below:
+
+```aspnet
+column.ThreeD = true; 
+```
+
+**Overlapped**
+
+The syntax to create a overlapped column chart is given below:
+
+```aspnet
+column.Overlapped = true;
+```
+
+**Scroll**
+
+The syntax to create a scrollable column chart is given below:
+
+```aspnet
+column.Scrollable = true;
+```
+
+
+
 ## API's Common for All Charts
 
 ### `Render()`
@@ -12,7 +48,7 @@ Renders a chart inside a container element on a page. If the chart is already re
 
 **Syntax**
 
-```
+```aspnet
 visualizationObj.Render(); // visualizationObj is the chart object
 ```
 
@@ -29,7 +65,7 @@ Applies predefined themes to the chart. FusionCharts.Net visualization ships wit
 
 **Syntax**
 
-```
+```aspnet
 visualizationObj.Theme = FusionChartsTheme.ThemeName.FUSION //Fusion Theme is applied
 ```
 
@@ -39,7 +75,7 @@ Sets the height of the canvas in pixels
 
 **Syntax**
 
-```
+```aspnet
 visualizationObj.Height = "400";
 ```
 
@@ -49,7 +85,7 @@ Sets the width of the canvas in pixels
 
 **Syntax**
 
-```
+```aspnet
 visualizationObj.Width = "400";
 ```
 
@@ -59,7 +95,7 @@ Disposes the chart completely.
 
 **Syntax**
 
-```
+```aspnet
 visualizationObj.Dispose();
 ```
 
@@ -206,19 +242,19 @@ Data is an object used to define the values to be plotted for individual data se
 
 * ** source:** FusionCharts Data Model
 
-```
+```aspnet
 visualizationObj.Data.Source = dataSource; //dataSource is an instance of the DataModel
 ```
 
 * **CategoryField**(string field_name)
 
-```
+```aspnet
 visualizationObj.Data.CategoryField("country");
 ```
 
 * **SeriesFields**(params string[ ] fields_name)
 
-```
+```aspnet
 visualizationObj.Data.SeriesFields("Sales,Total_Purchase");
 ```
 
