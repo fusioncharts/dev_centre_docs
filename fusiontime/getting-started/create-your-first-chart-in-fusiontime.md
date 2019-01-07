@@ -174,7 +174,7 @@ import schema from './schema';
 
 FusionCharts.addDep(TimeSeries);
 
-let fusionDataStore = new FusionCharts.DataStore();
+let fusionDataStore = new DataStore();
 let fusionTable = fusionDataStore.createDataTable(data, schema);
 
 window.charInstance = new FusionCharts({
