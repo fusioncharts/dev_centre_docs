@@ -146,18 +146,18 @@ doughnut.ThreeD = true;
 
 ### Funnel
 
-The syntax to create a funnel chart is given below:
+The syntax to create a funnel is given below:
 
 ```csharp
-Widget.FunnelChart funnel = new Widget.FunnelChart("Chart_Id");
+Widget.FunnelChart funnel = new Widget.FunnelChart("Widget_Id");
 ```
 
 ### Pyramid
 
-The syntax to create a pyramid chart is given below:
+The syntax to create a pyramid is given below:
 
 ```csharp
-Widget.PyramidChart pyramid = new Widget.PyramidChart("Chart_Id");
+Widget.PyramidChart pyramid = new Widget.PyramidChart("Widget_Id");
 ```
 
 ## API's Common for All Charts
@@ -433,7 +433,7 @@ Series is an object used to customize the series of data plots. The instances of
 	<tr>
 		<td>`ValueFormatting`</td>
 		<td>Method of `Series` object which accepts conditional query as string.</td>
-		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition` (ValueFormat.ValuePosition.ABOVE);<br/><strong>Note: </strong>`ValueFormatting` can be applied to a specific series by specifying the series name of the method.<br/>visualisationObj.Data<br/>.ValueFormatting("SERIESNAME", "CONDITION")</td>
+		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition` (ValueFormat.ValuePosition.ABOVE);<br/><strong>Note: </strong>`ValueFormatting` can be applied to a specific series by specifying the series name.<br/>visualisationObj.Data<br/>.ValueFormatting("SERIESNAME", "CONDITION")</td>
 		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha(integer)<br/>2. Color(Hex Color Code(string))<br/>3. Dashed(boolean)<br/>4. ShowValue(boolean)<br/>5. Link(string)<br/>6. DisplayValue(string)<br/>7. ToolText(string)<br/>8. ValuePosition(Enum)</td>
 	</tr>
 </table>
