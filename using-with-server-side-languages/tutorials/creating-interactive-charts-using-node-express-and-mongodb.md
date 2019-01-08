@@ -23,8 +23,8 @@ To verify if the installation went fine:
 * Open Command Terminal and run the following command: `$ node -v` to get the version of the nodejs installed in your system.
 * Run the command node to open up a REPL (Read Evaluate Print Loop) console and try out a small command as shown below:
 
-```javascript
-{node
+```bash
+node
 > console.log("Hello World");
 Hello World
 ```
@@ -55,8 +55,7 @@ Two very frequently used commands of MongoDB are: **mongod** and **mongo** .
 
 For this article we are going to consider the variation of price of Petrol and Diesel for the year 2015 in Bangalore, India. We have obtained the fuel price from [here](http://www.mypetrolprice.com/). As MongoDB is a JSON based document store, the data to be populated is created in the form of an array of JSON objects as shown below:
 
-```javascript
-
+```json
 [
   {
     "month": "Jan", "petrol" : 64.72, "diesel": 52.49
@@ -86,7 +85,6 @@ For this article we are going to consider the variation of price of Petrol and D
     "month": "Sept", "petrol" : 64.61, "diesel": 47.02
   }
 ]
-
 ```
 
 Each JSON object contains 3 properties: Month, Price of Petrol and Price of Diesel for that month. To populate this data into the MongoDB we make use of another tool called: **mongoimport** provided by MongoDB. To this tool we provide the following information:
@@ -99,20 +97,17 @@ Each JSON object contains 3 properties: Month, Price of Petrol and Price of Dies
 5. option to indicate input is JSON array (`--jsonArray`)
 
 
-```javascript
-
+```bash
 $ mongoimport -d fusion_demo -c fuel_price --type json --file data.json --jsonArray
  
 connected to: 127.0.0.1
 2015-09-01T21:02:42.210+0530 imported 9 objects
-
 ```
 
 Let us confirm if the data really got inserted by running a few queries as shown below:
 
 
-```javascript
-
+```bash
 MongoDB shell version: 2.6.7                         
 connecting to: test                                  
 > use fusion_demo                                    
@@ -131,7 +126,6 @@ system.indexes
 { "_id" : ObjectId("55e5c51a1873f247b61bd922"), "month" : "Aug", "petrol" : 66.72, "diesel" : 47.54 }
 { "_id" : ObjectId("55e5c51a1873f247b61bd923"), "month" : "Sept", "petrol" : 64.61, "diesel" : 47.02 }                                                    
 >
-
 ```
 
 So now we have the required data in our db. Let us now see how to create REST API using ExpressJS to consume the data from MongoDB.
@@ -155,13 +149,10 @@ Let us develop the REST API by following the steps listed below:
 We make use of the require() function to import the required packages by passing the name of the package. 
 
 ```javascript
-
 //import express package
 var express = require("express");
- 
-//import mongodb package
+ //import mongodb package
 var mongodb = require("mongodb");
-
 ```
 
 #### Step 2 : Connect to MongoDB instance running locally
@@ -169,40 +160,40 @@ var mongodb = require("mongodb");
 We first have to build the connection url which consists of hostname, port and database name as shown below:
 
 ```javascript
+//MongoDB connection URL - mongodb://host:port/dbName
+var dbHost = "mongodb://localhost:27017/fusion_demo";
 
-    //MongoDB connection URL - mongodb://host:port/dbName
-    var dbHost = "mongodb://localhost:27017/fusion_demo";
-     
-    Use the MongoClient to connect to the db as shown below:
-    //DB Object
-    var dbObject;
-     
-    //get instance of MongoClient to establish connection
-    var MongoClient = mongodb.MongoClient;
-     
-    //Connecting to the Mongodb instance.
-    //Make sure your mongodb daemon mongod is running on port 27017 on localhost
-    MongoClient.connect(dbHost, function(err, db){
-      if ( err ) throw err;
-      dbObject = db;
-    });
+Use the MongoClient to connect to the db as shown below:
+//DB Object
+var dbObject;
 
+//get instance of MongoClient to establish connection
+var MongoClient = mongodb.MongoClient;
+
+//Connecting to the Mongodb instance.
+//Make sure your mongodb daemon mongod is running on port 27017 on localhost
+MongoClient.connect(dbHost, function(err, db){
+if ( err ) throw err;
+dbObject = db;
+});
 ```
 
 #### Step 3 : Implement method to fetch the data from Database
 
 While we implement the method to fetch db, we also need to parse and construct the object so that we are able to use it for rendering the multi series line chart. The multi series line chart we are going to draw requires an array of labels, multiple arrays of values where each array indicates a series. The data we retrieve from db is an array of objects of the below form:
 
-```javascript
-
-{ "_id" : ObjectId("55e5c5191873f247b61bd91b"), "month" : "Jan", "petrol" : 64.72, "diesel" : 52.49}
-
+```json
+{ 
+   "_id" : ObjectId("55e5c5191873f247b61bd91b"), 
+   "month" : "Jan", 
+   "petrol" : 64.72, 
+   "diesel" : 52.49
+}
 ```
 
 We have to transform the above into the form which will help us bind to the chart:
 
-```javascript
-
+```json
 {
   "dataset" : [
     {
@@ -218,46 +209,44 @@ We have to transform the above into the form which will help us bind to the char
 The above form will help us to extract categories array as well as data set very easily. Let us look at the method implementation below:
 
 ```javascript
+function getData(){
+   //use the find() API and pass an empty query object to retrieve all records
+   dbObject.collection("fuel_price").find({}).toArray(function(err, docs){
+      if ( err ) throw err;
+      var monthArray = [];
+      var petrolPrices = [];
+      var dieselPrices = [];
 
-    function getData(){
-      //use the find() API and pass an empty query object to retrieve all records
-      dbObject.collection("fuel_price").find({}).toArray(function(err, docs){
-        if ( err ) throw err;
-        var monthArray = [];
-        var petrolPrices = [];
-        var dieselPrices = [];
-     
-        for ( index in docs){
-          var doc = docs[index];
-          //category array
-          var month = doc['month'];
-          //series 1 values array
-          var petrol = doc['petrol'];
-          //series 2 values array
-          var diesel = doc['diesel'];
-          monthArray.push({"label": month});
-          petrolPrices.push({"value" : petrol});
-          dieselPrices.push({"value" : diesel});
-        }
-     
-        var dataset = [
-          {
-            "seriesname" : "Petrol Price",
-            "data" : petrolPrices
-          },
-          {
-            "seriesname" : "Diesel Price",
-            "data": dieselPrices
-          }
-        ];
-     
-        var response = {
-          "dataset" : dataset,
-          "categories" : monthArray
-        };
-      });
-    }
+      for ( index in docs){
+         var doc = docs[index];
+         //category array
+         var month = doc['month'];
+         //series 1 values array
+         var petrol = doc['petrol'];
+         //series 2 values array
+         var diesel = doc['diesel'];
+         monthArray.push({"label": month});
+         petrolPrices.push({"value" : petrol});
+         dieselPrices.push({"value" : diesel});
+      }
 
+      var dataset = [
+         {
+         "seriesname" : "Petrol Price",
+         "data" : petrolPrices
+         },
+         {
+         "seriesname" : "Diesel Price",
+         "data": dieselPrices
+         }
+      ];
+
+      var response = {
+         "dataset" : dataset,
+         "categories" : monthArray
+      };
+   });
+}
 ```
 
 #### Step 4 : Create Express Server and REST API end-point
@@ -266,13 +255,11 @@ Let us expose the REST API at the URL /fuelPrices. We will modify the getData() 
 
 
 ```javascript
-
 //create express app
 var app = express();
 app.get("/fuelPrices", function(req, res){
   getData(res);
 });
-
 ```
 
 #### Step 5 : Launch the Express App on some Port
@@ -281,20 +268,15 @@ Express app is launched by listening to some unused port as shown below:
 
 
 ```javascript
-
 app.listen("3300", function(){
   console.log('Server up: localhost:3300');
 });
-
 ```
 
 Let us launch this application using node by running the following command:
 
-```javascript
-
-    $ node server.js
-    Server up: http://localhost:3300
-
+```bash
+node server.js
 ```
 
 You will notice that the server is up on `http://localhost:3300`. Open the URL `http://localhost:3300/fuelPrices` in the browser to find the JSON response of the API. 
@@ -311,8 +293,7 @@ We will be creating the required templates in a views directory. This is the con
 Base template, main.handlebars, is constructed as shown below:
 
 
-```javascript
-
+```html
 <!-- Filename: main.handlebars -->
 <!DOCTYPE html>
 <html>
@@ -334,7 +315,6 @@ Base template, main.handlebars, is constructed as shown below:
     <script src="/public/js/fusioncharts.theme.zune.js"></script>
 </body>
 </html>
-
 ```
 
 
@@ -350,8 +330,7 @@ Let us get back to the expressjs server code i.e server.js and do the following:
 
 * Setup handlebars template engine with main.handlebars as default layout.
 
-```javascript
-
+```html
 <!-- Filename: main.handlebars -->
     <!DOCTYPE html>
     <html>
@@ -373,33 +352,27 @@ Let us get back to the expressjs server code i.e server.js and do the following:
         <script src="/public/js/fusioncharts.theme.zune.js"></script>
     </body>
     </html>
-
 ```
 
 * Defining an endpoint to serve static resources like JavaScript resources
 
 ```javascript
-
-/Defining middleware to serve static files
+// Defining middleware to serve static files
 app.use('/public', express.static('public'));
-
 ```
 
 A new endpoint to render the view:
 
 
 ```javascript
-
 app.get("/", function(req, res){
   res.render("chart");
 });
-
 ```
 
 Let us work on building the JavaScript code for making an AJAX call to get the data as shown below:
 
 ```javascript
-
 var chartData;
 $(function(){
   $.AJAX({
@@ -411,7 +384,6 @@ $(function(){
     }
   });
 });
-
 ```
 
 We will build chart.handlebars in two parts:
@@ -424,40 +396,15 @@ We will build chart.handlebars in two parts:
 The aim of this HTML is to display the data in a tabular form as shown below:
 
 
-<table class="table table-bordered-table-stripped">
-	<thead>
-		<tr>
-			<th>Month</th>
-			<th>Jan</th>
-			<th>Feb</th>
-			<th>Mar</th>
-			<th>Apr</th>
-			<th>...</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Petro Price</td>
-			<td>64.72</td>
-			<td>62.81</td>
-			<td>66.18</td>
-			<td>65.17</td>
-			<td>...</td>
-		</tr>
-		<tr>
-			<td>Diesel Price</td>
-			<td>52.49</td>
-			<td>50.72</td>
-			<td>54.06</td>
-			<td>51.74</td>
-			<td>...</td>
-		</tr>
-	</tbody>
-</table>
+|Month|Jan|Feb|Mar|Apr|...|
+|--- |--- |--- |--- |--- |--- |
+|Petro Price|64.72|62.81|66.18|65.17|...|
+|Diesel Price|52.49|50.72|54.06|51.74|...|
+
 
 And for this we will make use of Handlebars template at the client side i.e we will process the handlebars templates in the client with the data we received after making an AJAX call to the server. Let us define the Handlebars template within in the `<script>` tag in the `chart.handlebars` file as shown below: 
 
-```javascript
+```html
 <!-- This is where we display the table -->
 <div id="table-location">
  
@@ -467,16 +414,13 @@ And for this we will make use of Handlebars template at the client side i.e we w
 <div id="chart-location">
  
 </div>
- 
 ```
 
 The placeholders identified by {{ }} are handlebar constructs. Let us get back to the JavaScript AJAX call we had made. Within the success function we will use `Handlebars.compile()` to compile the client side template and then invoke the compiled template with the data obtained from server as shown below:
 
 ```javascript
-
 var template = Handlebars.compile($("#tabular-template").html());
 $("#table-location").html(template(data));
-
 ```
 
 If you want to see the app we have built so far in action, just run the following command from the app directory: `node server.js`. You will see Server up: `http://localhost:3300` printed. Open the URL `http://localhost:3300/` to see the table as shown in the below image:
@@ -490,30 +434,25 @@ In this section we will add code for rendering the chart. Let us build the chart
 * Create chart properties object
 
 ```javascript
-
 var chartProperties = {
     "caption": "Variation of Petrol and Diesel price in Bangalore",
     "numberprefix": "Rs",
     "xAxisName": "Month",
     "yAxisName": "Price"
 };
-
 ```
 
 * Create categories array object
 
 ```javascript
-
 var categoriesArray = [{
       "category" : data["categories"]
 }];
-
 ```
 
 * Create FusionCharts object for multiseries line
 
 ```javascript
-
 var lineChart = new FusionCharts({
     type: 'msline',
     renderAt: 'chart-location',
@@ -526,24 +465,21 @@ var lineChart = new FusionCharts({
         dataset : data["dataset"]
     }
 });
-
 ```
 
 * Render the chart using the `render()` API.
 
 ```javascript
-
 lineChart.render();
-
 ```
 
 Let us load the URL `http://localhost:3300/` in the browser to see both table and chart being displayed as shown in the image below:
 
 ![server side program as shown in diagram](/images/data-table2.png)
 
-### Source Code Download ###
-
-The complete app can be downloaded from [here](https://drive.google.com/a/fusioncharts.com/file/d/0BwrPBUDMMJO0akZJOE8zV0Iyc0k/view).
+<div class="text-center">
+   <a class="btn btn-primary-grad text-uppercase" href="https://cdn.fusioncharts.com/downloads/dev-center-resources/node-fusionchart-demo.zip" download title="click me to download"><i class="fc_download"></i>Download the Sample</a>
+</div>
 
 
 
