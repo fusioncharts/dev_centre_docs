@@ -15,11 +15,11 @@ As mentioned above, there are two primary components of FusionExport:
 1. FusionExport Server
 2. FusionExport SDKs
 
-**FusionExport Server**
+### FusionExport Server
 
 FusionExport Server is a binary file which you will get when you download FusionExport. You have to run FusionExport server on your backend infrastructure. We support Windows, Mac, and Linux, so that you don't have to worry about cross-platform integration.
 
-**FusionExport SDKs**
+### FusionExport SDKs
 
 Once you start FusionExport server on your system, you can send requests to export your dashboards via API endpoints but to ease your development flow, we have build SDKs for few popular languages like C#, Java, PHP, Node.js and Python.
 
@@ -35,19 +35,19 @@ Now that you are aware of what you get with FusionExport. Let's explore how you 
 
 You can see them in action by trying one of the[ demo of FusionExport](https://www.fusioncharts.com/demos/dashboards/wealth-management-dashboard-with-export/).
 
-**Add `Download dashboard as PDF` button to your live dashboards**
+### Add Download dashboard as PDF button to your live dashboards
 
 Most popular feature in a dashboard is to be able to download it in PDF. And you know how hard it could be to generate charts on the server, make it a print-friendly version of it, convert it to PDF and so on. FusionExport eases out this process for you. The diagram below will give you a good understanding of the overall flow of the application.
 
 ![FusionExport FlowChart](/images/FusionExport-Flowchart.png)
 
-**Send dashboards over email in an email-friendly format or as a PDF attachment**
+### Send dashboards over email in an email-friendly format or as a PDF attachment
 
 Another most common use case for FusionExport is to be able to send an email which contains the dashboards. Instead of sending plain tables or CSV files in the email, you can send real charts and take the product engagement to a next level. Here is how you can implement it:
 
 ![FusionExport FlowChart Send](/images/FusionExport-Flowchart-Send.png)
 
-**Automate server-side generation of dashboards for scheduled reporting**
+### Automate server-side generation of dashboards for scheduled reporting
 
 You will also come up with a need to not only generate PDF but also schedule them to people. In other words, you have to write a CRON job to send reports. Here is how you can do it:
 
