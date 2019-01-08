@@ -59,6 +59,7 @@ FusionCharts comes bundled with a free add-on called 'Export Handler' which lets
 
 <table>
 	<tr>
+		<th></th>
 		<th>Export handler</th>
 		<th>FusionExport</th>
 	</tr>
