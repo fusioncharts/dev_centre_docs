@@ -1622,7 +1622,8 @@
                      },
                      {
                         "title": "Create Interactive Charts using PHP and MySQL Database",
-                        "path": "/using-with-server-side-languages/tutorials/php-mysql-charts"
+                        "path": "/using-with-server-side-languages/tutorials/php-mysql-charts",
+                        "visibility": false
                      }
                   ]
                }
