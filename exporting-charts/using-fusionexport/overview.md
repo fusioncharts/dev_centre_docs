@@ -1,153 +1,97 @@
 ---
-permalink: exporting-charts/using-fusionexport/overview.html
 title: Overview | FusionCharts
 description: FusionExport__, allows you to export JavaScript chart as a static image and export multiple charts as a zip file. The exported files can be used for sending emails, attachments and printable documents.
 heading: Overview
-chartPresent: False
 ---
 
-__FusionExport__, allows you to export JavaScript chart as a static image and export multiple charts as a zip file. The exported files can be used for sending emails, attachments and printable documents. You can convert charts into several image formats like PNG, JPEG, SVG, PDF, HTML and data formats CSV, XLS, XLSX. Also, convert dashboards into PNG, JPEG, PDF, HTML formats.
+FusionExport, allows you to export your dashboards to images and PDFs. The exported files can be used for sending emails, attachments and printable documents. It supports formats like PNG and JPG and vector formats like SVG and PDF.
+
+Unlike FusionCharts which runs in the client or in a browser, FusionExport runs on your server. When you download FusionExport, you will get a binary file which you have to run on your server like any other service. Using FusionExport SDKs or API endpoints, you can integrate it into your backend. The only connecting line between FusionCharts and FusionExport is - they both expect data-source in JSON format. 
 
 ## Package Structure
 
-FusionExport behaves similarly to a Database Servers like __MySQL__ and __MongoDB__. In case of MySQL, you will get a MySQL server along with SDKs for C#, Node.js, Python and so on which can be used in the application. These SDKs further let you query MySQL server, help in preventing from SQL injection and provide Object-Relational Mapping. It also comes with a __CLI__ utility where you can access the database via command line. FusionExport works in a similar way.
+As mentioned above, there are two primary components of FusionExport:
 
-![Package Structure](/images/package-structure.png)
+1. FusionExport Server
+2. FusionExport SDKs
 
-The three components of FusionExport are: 
+**FusionExport Server**
 
-1. **FusionExport Server** - Core component which performs all the actions related to export.
+FusionExport Server is a binary file which you will get when you download FusionExport. You have to run FusionExport server on your backend infrastructure. We support Windows, Mac, and Linux, so that you don't have to worry about cross-platform integration.
 
-2. **FusionExport Server SDKs** - SDKs for 6 languages can be used in the stack to communicate with FusionExport Server with ease.
+**FusionExport SDKs**
 
-3. **FusionExport CLI** - To play around with FusionExport Server use this CLI utility to perform all the actions related to export via command line.
+Once you start FusionExport server on your system, you can send requests to export your dashboards via API endpoints but to ease your development flow, we have build SDKs for few popular languages like C#, Java, PHP, Node.js and Python.
 
-> If you want to use either of SDKs or CLI, make sure that FusionExport Server is running.
+![FusionExport Server](/images/FusionExport-server.png)
 
 ## Implementations
 
-We have developed FusionExport packages in such a way that you can implement them in various use cases like Desktop Application to Cron Jobs. Now let's talk about various architectural scenarios which you can implement on top of FusionExport. 
+Now that you are aware of what you get with FusionExport. Let's explore how you can implement FusionExport in your infrastructure based on your use cases. There are three common use cases  of FusionExport:
 
-There are three ways to implement FusionExport in your architecture - 
+1. Add 'Download dashboard as PDF' button to your live dashboards
+2. Send dashboards over email in an email-friendly format or as a PDF attachment
+3. Automate server-side generation of dashboards for scheduled reporting
 
-1. [API based Architecture](/exporting-charts/using-fusionexport/overview#api-based-architecture)
+You can see them in action by trying one of the[ demo of FusionExport](https://www.fusioncharts.com/demos/dashboards/wealth-management-dashboard-with-export/).
 
-2. [Non API based Architecture](/exporting-charts/using-fusionexport/overview#non-api-based-architecture)
+**Add `Download dashboard as PDF` button to your live dashboards**
 
-3. [CLI based Architecture](/exporting-charts/using-fusionexport/overview#cli-based-architecture)
+Most popular feature in a dashboard is to be able to download it in PDF. And you know how hard it could be to generate charts on the server, make it a print-friendly version of it, convert it to PDF and so on. FusionExport eases out this process for you. The diagram below will give you a good understanding of the overall flow of the application.
 
-### API based Architecture
+![FusionExport FlowChart](/images/FusionExport-Flowchart.png)
 
-![API based Architecture](/images/api-based-architecture.png)
+**Send dashboards over email in an email-friendly format or as a PDF attachment**
 
-This is the most common architecture which covers diverse scenarios like on-demand reports download, sending periodic emails via cron jobs, exporting dashboards and so on. 
+Another most common use case for FusionExport is to be able to send an email which contains the dashboards. Instead of sending plain tables or CSV files in the email, you can send real charts and take the product engagement to a next level. Here is how you can implement it:
 
-As per the diagram, you will be using following FusionExport components in this architecture - 
+![FusionExport FlowChart Send](/images/FusionExport-Flowchart-Send.png)
 
-1. FusionExport Server
+**Automate server-side generation of dashboards for scheduled reporting**
 
-2. FusionExport Server SDKs
+You will also come up with a need to not only generate PDF but also schedule them to people. In other words, you have to write a CRON job to send reports. Here is how you can do it:
 
-While the components which you need to build are : 
+![FusionExport FlowChart Automated](/images/FusionExport-Flowchart-Automated.png)
 
-1. **Client** - Client will be used by your end user. It could be - 
+## Difference between Export Handler and FusionExport
 
-    1. **Web App** / **Mobile App** - End user can request to download a dashboard via browser or mobile
+FusionCharts comes bundled with a free add-on called 'Export Handler' which lets you export your charts to images. But there are few limitations with Export Handler where FusionExport prevails.
 
-    2. **Command Line Utility** - You can send emails via cron jobs which contain charts or build an internal CLI utility to perform exporting tasks.
+<table>
+	<tr>
+		<th>Export handler</th>
+		<th>FusionExport</th>
+	</tr>
+	<tr>
+		<td>Export individual charts to PNG, JPG, SVG, PDF</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Generate charts on a server</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Export live dashboards</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Dynamically add/modify data while exporting</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>No user interactions required</td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
 
-    3. **Desktop Application** - Similar to web app but instead of browser you can send request from a desktop application which you have built.
-
-2. **Application Server** - This server could be built in either of the 6 SDKs which are supported by FusionExport. It should expose APIs which will be further be used by the client. This application server could also communicate to Database Server or Mail Server based on the use case.
-
-> In case if the SDK is not available for your language, reach out to us on [support@fusioncharts.com](mailto:support@fusioncharts.com)
-
-Flow for such architecture would be as follows : 
-
-1. The client will send a request to the application server via APIs which are defined on the application server. 
-
-2. Further, the application server could communicate to the database server to perform any other actions required followed by sending a request to FusionExport Server via FusionExport SDK
-
-3. FusionExport Server will perform the exporting based on the given parameters and send the output back to the application server via SDKs
-
-4. Application server could either send output to the email server or send it back to the client based on the use case
-
-#### When to use?
-
-* **On Demand Reports Download via Web, Mobile or Desktop Application:** If you are building an online or offline SaaS dashboard with ability to export dashboards which users can go and print or use it in their own documents, this is the right approach.
-
-* **Sending Periodic Emails via Cron Jobs: **If you are trying to send periodic emails which are going to contain reports using third-party email services like SendGrid, this architecture will satisfy your needs.
-
-* **Exporting Dashboards / Charts: **In case if you want to export charts and save it in either local filesystem or Amazon S3, you should consider this architecture.
-
-### Non API based Architecture
-
-In case if you don't want to / have an application server, you can directly communicate to FusionExport Server via SDKs. 
-
-Similar to API based architecture you will be using following FusionExport components - 
-
-1. FusionExport Server
-
-2. FusionExport Server SDK
-
-![Non API based Architecture](/images/non-api-based-architecture.png)
-
-In this scenario, you don't have to worry about building any Application Server. You can simply build a client and directly communicate with FusionExport Server using SDK - 
-
-1. **Client** - Client side application which will be used by the end user. It could be - 
-
-    1. **Command Line Utility** - You can send emails via cron jobs which contain charts or build an internal CLI utility to perform exporting tasks.
-
-    2. **Desktop Application** - You can send a request to export a chart or dashboard from a desktop application which you have built.
-
-> Make sure that your client is written on top of the SDKs which are supported by FusionExport.
-
-Flow for such architecture would be as follows -
-
-1. You can write a client in Python, Node.js, Go, Java, C# using FusionExport Server SDKs. This utility could also communicate with your own application, database or email server to perform more actions.
-
-2. FusionExport SDKs will communicate to FusionExport server to export items you have requested.
-
-3. FusionExport server will export the items and send it back to the client utility via SDKs
-
-#### When to use?
-
-* **Sending Periodic Emails via Cron Jobs: **If you are trying to send periodic emails which are going to contain reports using third-party email services like SendGrid, this architecture will satisfy your needs.
-
-* **Exporting Dashboards / Charts: **In case if you want to export charts and save it in either local filesystem or Amazon S3, you should consider this architecture.
-
-#### When not to use?
-
-* **On Demand Reports Download:** Since there is no Application Server in between it becomes difficult to provide public endpoints to send a request to export. Although, you can still create another server or client using SDKs and run it separately. We won't recommend it because it would expose FusionExport server to the public.
-
-### CLI based Architecture
-
-![CLI based Architecture](/images/cli-based-architecture.png)
-
-In case if you don't want to write any implementation and use FusionExport internally, then you can also use the FusionCharts CLI where you don't have to write a single line of code. Use command line arguments specified in the FusionExport CLI and start using FusionExport in no time. 
-
-In this case, you will be using following FusionExport components - 
-
-3. FusionExport Server
-
-4. FusionExport CLI
-
-#### When to use?
-
-* **Exporting Dashboards / Charts: **As mentioned above, in case if you want to export charts and save it in either local filesystem or Amazon S3, you should consider this architecture. All you have to do is - pass command line arguments.
-
-#### When not to use?
-
-* **Sending Periodic Emails via Cron Jobs: **Since it is a standalone command, you can not connect to an email server to send reports. 
-
-* **On Demand Reports Download:** Similar to above scenario, since there are no endpoints available to the public, it is impossible to let other export charts using your FusionExport Server
-
-## Ready to Get Started?
+## Ready to get started?
 
 * [Install FusionExport Server](/exporting-charts/using-fusionexport/installation/install-fusionexport-server)
-
-* [Install FusionExport CLI](/exporting-charts/using-fusionexport/installation/install-fusionexport-cli)
-
 * [Install FusionExport Server SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
-
-* [Change the Export Type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Export chart as a image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
+* [Export a dashboard](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
