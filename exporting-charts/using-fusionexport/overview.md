@@ -39,19 +39,19 @@ You can see them in action by trying one of the[ demo of FusionExport](https://w
 
 Most popular feature in a dashboard is to be able to download it in PDF. And you know how hard it could be to generate charts on the server, make it a print-friendly version of it, convert it to PDF and so on. FusionExport eases out this process for you. The diagram below will give you a good understanding of the overall flow of the application.
 
-![FusionExport FlowChart](/images/FusionExport-Flowchart.png)
+![FusionExport - FlowChart - Download dashboard as a PDF](/images/FusionExport-Flowchart.png)
 
 ### Send dashboards over email in an email-friendly format or as a PDF attachment
 
 Another most common use case for FusionExport is to be able to send an email which contains the dashboards. Instead of sending plain tables or CSV files in the email, you can send real charts and take the product engagement to a next level. Here is how you can implement it:
 
-![FusionExport FlowChart Send](/images/FusionExport-Flowchart-Send.png)
+![FusionExport - FlowChart - Send dashboards over an email](/images/FusionExport-Flowchart-Send.png)
 
 ### Automate server-side generation of dashboards for scheduled reporting
 
 You will also come up with a need to not only generate PDF but also schedule them to people. In other words, you have to write a CRON job to send reports. Here is how you can do it:
 
-![FusionExport FlowChart Automated](/images/FusionExport-Flowchart-Automated.png)
+![FusionExport - FlowChart - Automated reports generation](/images/FusionExport-Flowchart-Automated.png)
 
 ## Difference between Export Handler and FusionExport
 
