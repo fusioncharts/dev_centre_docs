@@ -11,7 +11,7 @@
             "title": "Sales",
         }],
         caption: {
-            text: 'Online Sales of a SuperStore in the US'
+            text: 'Online Sales of a SuperStore'
         }
     }
 }
