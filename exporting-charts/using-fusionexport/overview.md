@@ -70,22 +70,22 @@ FusionCharts comes bundled with a free add-on called 'Export Handler' which lets
 	</tr>
 	<tr>
 		<td>Generate charts on a server</td>
-		<td><i class="fc_cross_covered" style="font-size: 25px;"></i></td>
+		<td><i class="fc_cross_covered" style="font-size: 25px; color: #bcbccf"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
 	<tr>
 		<td>Export live dashboards</td>
-		<td><i class="fc_cross_covered" style="font-size: 25px;"></i></td>
+		<td><i class="fc_cross_covered" style="font-size: 25px; color: #bcbccf"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
 	<tr>
 		<td>Dynamically add/modify data while exporting</td>
-		<td><i class="fc_cross_covered" style="font-size: 25px;"></i></td>
+		<td><i class="fc_cross_covered" style="font-size: 25px; color: #bcbccf"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
 	<tr>
 		<td>No user interactions required</td>
-		<td><i class="fc_cross_covered" style="font-size: 25px;"></i></td>
+		<td><i class="fc_cross_covered" style="font-size: 25px; color: #bcbccf"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
 </table>
