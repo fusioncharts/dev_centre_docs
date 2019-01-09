@@ -43,7 +43,7 @@ To create repeatable time instance markers follw the stpes below:
 
 * Set the above attributes and the specify the following attribute:
     
-    * Within the `dataMarker object create the `repeat` object to define the frequency, at which the cyclic time marker will be repeated.
+    * Within the `timeMarker object create the `repeat` object to define the frequency, at which the cyclic time marker will be repeated.
 
         * Use the `unit` attribute to define the time unit for the time marker inside the `repeat` object. You can set its value as Year, Quarter, Month, Week, Day, Hour, Minute, Second, or Millisecond. You can also set its value as one of the weekdays (Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday).
 
