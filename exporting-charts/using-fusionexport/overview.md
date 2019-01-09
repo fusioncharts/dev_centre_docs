@@ -65,28 +65,28 @@ FusionCharts comes bundled with a free add-on called 'Export Handler' which lets
 	</tr>
 	<tr>
 		<td>Export individual charts to PNG, JPG, SVG, PDF</td>
-		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green;"></i></td>
-		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green;"></i></td>
+		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green; text-align: center;"></i></td>
+		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green; text-align: center;"></i></td>
 	</tr>
 	<tr>
 		<td>Generate charts on a server</td>
-		<td><i class="fc_close" style="color: red; width: 20px; height: 20px;"></i></td>
-		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green;"></i></td>
+		<td><i class="fc_close" style="color: red; width: 20px; height: 20px; text-align: center;"></i></td>
+		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green; text-align: center;"></i></td>
 	</tr>
 	<tr>
 		<td>Export live dashboards</td>
-		<td><i class="fc_close" style="color: red; width: 20px; height: 20px;"></i></td>
-		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green;"></i></td>
+		<td><i class="fc_close" style="color: red; width: 20px; height: 20px; text-align: center;"></i></td>
+		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green; text-align: center;"></i></td>
 	</tr>
 	<tr>
 		<td>Dynamically add/modify data while exporting</td>
-		<td><i class="fc_close" style="color: red; width: 20px; height: 20px;"></i></td>
-		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green;"></i></td>
+		<td><i class="fc_close" style="color: red; width: 20px; height: 20px; text-align: center;"></i></td>
+		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green; text-align: center;"></i></td>
 	</tr>
 	<tr>
 		<td>No user interactions required</td>
-		<td><i class="fc_close" style="color: red; width: 20px; height: 20px;"></i></td>
-		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green;"></i></td>
+		<td><i class="fc_close" style="color: red; width: 20px; height: 20px; text-align: center;"></i></td>
+		<td><i class="fc_done" style="color: white; width: 20px; height: 20px; background: green; text-align: center;"></i></td>
 	</tr>
 </table>
 
