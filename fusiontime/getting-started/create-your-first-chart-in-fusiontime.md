@@ -90,9 +90,6 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 ```JSON
 let schema = [{
-    "name": "Country",
-    "type": "string"
-}, {
     "name": "Time",
     "type": "date",
     "format": "%-m/%-d/%Y"
@@ -120,34 +117,28 @@ To add the data, let's create a `data.json` file and copy the following code:
 ```
 let data = [
     [
-        "United States",
         "1/4/2011",
         16.448
     ],
     [
-        "United States",
         "1/5/2011",
         272.736
     ],
     [
-        "United States",
         "1/5/2011",
         11.784
     ],
     ...
     ...
     [
-        "United States",
         "12/31/2014",
         20.72
     ],
     [
-        "United States",
         "12/31/2014",
         13.904
     ],
     [
-        "United States",
         "12/31/2014",
         3.024
     ]
@@ -158,7 +149,6 @@ To view the full data click [here](https://raw.githubusercontent.com/fusionchart
 In the above code:
 * `data` is the variable in which the data array is saved.
 * Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
-    * The name of the Country.
     * Time according to the format
     * Total Sales amount 
 
@@ -200,11 +190,6 @@ window.charInstance = new FusionCharts({
     height: 650,
     dataSource: {
         data: fusionTable,
-        "yAxis": [{
-            "plot": {
-                "title": 'Sales ($)'
-            }
-        }],
         caption: {
             text: 'Online Sales of a SuperStore in the US'
         }
