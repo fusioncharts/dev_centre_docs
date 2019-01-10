@@ -15,7 +15,7 @@ The multivariate chart will look like as shown below:
 The data for the above chart is shown in the table below:
 
 Order Date | Sales | Quantity | Shipping Cost
-- | - | - | - | -
+- | - | - | -
 1/1/2011 | 120.366 | 3 | 9.72 
 1/1/2011 | 113.67 | 5 | 4.70 
 1/1/2011 | 55.242 | 2 | 1.80 
