@@ -229,16 +229,13 @@ window.charInstance = new FusionCharts({
 
 That's it! Your first multivariate chart is ready.
 
-Now, let's see an example where out of the above four columns we will render the chart using the time column and the data of quantity.
+Now, let's see an example where out of the above four columns we will render the chart using the time column and the data of **quantity**.
 
 The chart to showcase the quantity sold will look like as shown below:
 
 {% embed_ftChart online-sales-single-series-multiple-measures %}
 
-
-
-
-Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index` file and copy the following code:
+The code to render the data of only the **quantity** column is shown below: 
 
 ```javascript
 window.charInstance = new FusionCharts({
@@ -250,6 +247,7 @@ window.charInstance = new FusionCharts({
         data: fusionTable,
             chart: {
             },
+            "yAxis": ["Quantity"],
             caption: {
                 text: 'Global Online Sales of a SuperStore'
         }
