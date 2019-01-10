@@ -235,31 +235,12 @@ The chart to showcase the quantity sold will look like as shown below:
 
 {% embed_ftChart online-sales-single-series-multiple-measures %}
 
-## Create `index` file
+
+
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index` file and copy the following code:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='local'>Local Files</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab npm-tab active'>
-<pre><code class="language-javascript">
-import FusionCharts from 'fusioncharts/core';
-import TimeSeries from 'fusioncharts/viz/timeseries';
-import DataStore from 'fusioncharts/datastore';
-
-import data from './data';
-import schema from './schema';
-
-FusionCharts.addDep(TimeSeries);
-
-let fusionDataStore = new DataStore();
-let fusionTable = fusionDataStore.createDataTable(data, schema);
-
+```javascript
 window.charInstance = new FusionCharts({
     type: 'timeseries',
     renderAt: 'container',
@@ -274,54 +255,6 @@ window.charInstance = new FusionCharts({
         }
     }
 });
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-<div class='tab local-tab'>
-<pre><code class="language-javascript">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-  &lt;title&gt;FusionCharts TimeSeries&lt;/title&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;div id="container"&gt;&lt;/div&gt;
-  &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-  &lt;script src="path/to/local/data.js"&gt;&lt;/script&gt;
-  &lt;script src="path/to/local/schema.js"&gt;&lt;/script&gt;
-  &lt;script&gt;
-    let fusionDataStore = new FusionCharts.DataStore();
-    let fusionTable = fusionDataStore.createDataTable(data, schema);
-
-    new FusionCharts({
-      type: 'timeseries',
-      renderAt: 'container',
-      width: "95%",
-      height: 650,
-      dataSource: {
-        data: fusionTable,
-        chart: {
-        },
-        caption: {
-          text: 'Global Online Sales of a SuperStore'
-        }
-      }
-    }).render()
-  &lt;/script&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-</div>
-</div>
+```
 
 Next, we will discuss on how to create a [multiple plots](/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.
