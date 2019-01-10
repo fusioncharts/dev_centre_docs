@@ -3,12 +3,6 @@
     "type": "date",
     "format": "%-m/%-d/%Y"
 }, {
-    "name": "Sales",
-    "type": "number"
-}, {
     "name": "Quantity",
-    "type": "number"
-}, {
-    "name": "Shipping Cost",
     "type": "number"
 }]
