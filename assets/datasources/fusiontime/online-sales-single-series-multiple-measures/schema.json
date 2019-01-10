@@ -3,6 +3,6 @@
     "type": "date",
     "format": "%-m/%-d/%Y"
 }, {
-    "name": "Sales",
+    "name": "Quantity",
     "type": "number"
 }]

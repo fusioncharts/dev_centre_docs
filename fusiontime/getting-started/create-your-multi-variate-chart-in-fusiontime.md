@@ -12,6 +12,21 @@ The multivariate chart will look like as shown below:
 
 {% embed_ftChart online-sales-multi-variate %}
 
+The data for the above chart is shown in the table below:
+
+Order Date | Sales | Quantity | Shipping Cost
+- | - | - | -
+1/1/2011 | 120.366 | 3 | 9.72 
+1/1/2011 | 113.67 | 5 | 4.70 
+1/1/2011 | 55.242 | 2 | 1.80 
+1/7/2011 | 6.54 | 1 | 1.13 
+1/7/2011 | 5.48 | 2 | 0.52 
+1/8/2011 | 76.728 | 3 | 6.69
+... | ... | ... | ... | ...
+... | ... | ... | ... | ...
+... | ... | ... | ... | ...
+... | ... | ... | ... | ...
+
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 
 ## Create the `schema`
@@ -20,9 +35,6 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 ```JSON
 let schema = [{
-    "name": "Country",
-    "type": "string"
-}, {
     "name": "Time",
     "type": "date",
     "format": "%-m/%-d/%Y"
@@ -63,21 +75,18 @@ To add the data, let's create a `data.json` file and copy the following code:
 ```
 let data = [
     [
-        "India",
         "1/11/2011",
         141.57,
         3,
         15.62
     ],
     [
-        "India",
         "1/24/2011",
         59.25,
         5,
         4.27
     ],
     [
-        "India",
         "1/26/2011",
         79.38,
         3,
@@ -86,21 +95,18 @@ let data = [
     ...
     ...
     [
-        "Australia",
         "12/30/2014",
         10.854,
         3,
         3.76
     ],
     [
-        "Australia",
         "12/30/2014",
         16.92,
         2,
         3.21
     ],
     [
-        "Australia",
         "12/30/2014",
         27.945,
         3,
@@ -223,4 +229,30 @@ window.charInstance = new FusionCharts({
 
 That's it! Your first multivariate chart is ready.
 
-Next, we will discuss on how to create a [multiple plots](/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.
+Now, let's see an example where out of the above four columns we will render the chart using the time column and the data of **quantity**.
+
+The chart to showcase the quantity sold will look like as shown below:
+
+{% embed_ftChart online-sales-single-series-multiple-measures %}
+
+The code to render the data of only the **quantity** column is shown below: 
+
+```javascript
+window.charInstance = new FusionCharts({
+    type: 'timeseries',
+    renderAt: 'container',
+    width: "95%",
+    height: 650,
+    dataSource: {
+        data: fusionTable,
+            chart: {
+            },
+            "yAxis": ["Quantity"],
+            caption: {
+                text: 'Global Online Sales of a SuperStore'
+        }
+    }
+});
+```
+
+Next, we will discuss on how to create [multiple plots](/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.

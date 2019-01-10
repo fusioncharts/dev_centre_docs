@@ -12,6 +12,24 @@ The chart is shown below:
 
 {% embed_ftChart online-sales-multi-series %}
 
+The data for the above chart is shown in the table below:
+
+Country | Order Date | Sales
+- | - | -
+United States | 1/4/2011 | 16.448
+United States | 1/5/2011 | 72.736
+United States | 1/5/2011 | 11.784
+... | ... | ...
+... | ... | ...
+India | 12/31/2014 | 364.59
+India | 12/31/2014 | 72
+India | 12/31/2014 | 39.42
+... | ... | ...
+... | ... | ...
+... | ... | ...
+
+Now, let's check how to prepare the schema and the data for the `DataTable`.
+
 ## Create the `schema`
 
 To define the schema, let's create a `schema.json` file and copy the following code:
