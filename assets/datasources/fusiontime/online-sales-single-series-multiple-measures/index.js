@@ -7,7 +7,8 @@
         data: dataStore,
         chart: {},
         caption: {
-          text: 'Global Online Sales of a SuperStore'
+            y-axis: ["Sales"],
+            text: 'Global Online Sales of a SuperStore'
         }
     }
 }
