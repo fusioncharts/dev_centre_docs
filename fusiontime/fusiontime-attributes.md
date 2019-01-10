@@ -4,7 +4,7 @@ description: This article contains the list of fusion time attributes.
 heading: Attributes
 ---
 
-This article contains the list of attributes of FusionTime. The attributes have been differenticated by FusionTime components.
+This article contains the list of attributes of FusionTime. The attributes have been differentiated by FusionTime components.
 
 ## Time Axis
 

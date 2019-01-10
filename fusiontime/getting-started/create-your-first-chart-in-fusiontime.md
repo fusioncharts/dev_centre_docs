@@ -49,11 +49,27 @@ Install **FusionTime** using any of the following steps:
 
 That completes the installation of **FusionTime**.
 
-## Create your first chart
+## Create a chart
 
-Now that you have installed, it's time to create your first time series chart using FusionTime. To start with we will create a simple time-series chart showcasing **Online sales of a SuperStore in US**. The chart will look like as shown below:
+Now that you have installed, it's time to create your first time series chart using FusionTime. To start with we will create a simple time-series chart showcasing **Online sales of a SuperStore**. The chart will look like as shown below:
 
 {% embed_ftChart online-sales-single-series %}
+
+The data for the above chart is shown in the table below:
+
+Date | Sales
+- | -
+1/4/2011 | 16.448
+1/5/2011 | 272.736
+1/5/2011 | 11.784
+1/5/2011 | 3.54
+1/6/2011 | 19.536
+1/7/2011 | 2573.82
+1/7/2011 | 609.98
+... | ...
+... | ...
+... | ...
+... | ...
 
 To create the above chart, first let's understand the basics of FusionTime in short. In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
@@ -74,9 +90,6 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 ```JSON
 let schema = [{
-    "name": "Country",
-    "type": "string"
-}, {
     "name": "Time",
     "type": "date",
     "format": "%-m/%-d/%Y"
@@ -104,34 +117,28 @@ To add the data, let's create a `data.json` file and copy the following code:
 ```
 let data = [
     [
-        "United States",
         "1/4/2011",
         16.448
     ],
     [
-        "United States",
         "1/5/2011",
         272.736
     ],
     [
-        "United States",
         "1/5/2011",
         11.784
     ],
     ...
     ...
     [
-        "United States",
         "12/31/2014",
         20.72
     ],
     [
-        "United States",
         "12/31/2014",
         13.904
     ],
     [
-        "United States",
         "12/31/2014",
         3.024
     ]
@@ -142,7 +149,6 @@ To view the full data click [here](https://raw.githubusercontent.com/fusionchart
 In the above code:
 * `data` is the variable in which the data array is saved.
 * Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
-    * The name of the Country.
     * Time according to the format
     * Total Sales amount 
 
@@ -184,13 +190,8 @@ window.charInstance = new FusionCharts({
     height: 650,
     dataSource: {
         data: fusionTable,
-        "yAxis": [{
-            "plot": {
-                "title": 'Sales ($)'
-            }
-        }],
         caption: {
-            text: 'Online Sales of a SuperStore in the US'
+            text: 'Online Sales of a SuperStore'
         }
     }
 });
