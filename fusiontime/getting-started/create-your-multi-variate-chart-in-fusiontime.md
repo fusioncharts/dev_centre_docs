@@ -255,4 +255,4 @@ window.charInstance = new FusionCharts({
 });
 ```
 
-Next, we will discuss on how to create a [multiple plots](/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.
+Next, we will discuss on how to create [multiple plots](/fusiontime/getting-started/create-your-multi-series-chart-in-fusiontime) in a time-series chart.
