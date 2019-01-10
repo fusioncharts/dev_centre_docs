@@ -1,7 +1,4 @@
 [{
-    "name": "Country",
-    "type": "string"
-}, {
     "name": "Time",
     "type": "date",
     "format": "%-m/%-d/%Y"
