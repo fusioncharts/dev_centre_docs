@@ -1952,7 +1952,7 @@
                },
                {
                   "title": "Install FusionExport CLI",
-                  "visibility": "false",
+                  "visibility": false,
                   "path": "/exporting-charts/using-fusionexport/installation/install-fusionexport-cli"
                },
                {
