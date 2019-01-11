@@ -235,7 +235,7 @@ The chart to showcase the quantity sold will look like as shown below:
 
 {% embed_ftChart online-sales-single-series-multiple-measures %}
 
-The code to render the data of only the **quantity** column is shown below: 
+The code to render the data of **Sales** and **Quantity** column is shown below: 
 
 ```javascript
 window.charInstance = new FusionCharts({
