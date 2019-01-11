@@ -14,7 +14,7 @@ The chart is shown below:
 
 The data for the above chart is shown in the table below:
 
-Country | Order Date | Sales
+Country | Time | Sales
 - | - | -
 United States | 1/4/2011 | 16.448
 United States | 1/5/2011 | 72.736

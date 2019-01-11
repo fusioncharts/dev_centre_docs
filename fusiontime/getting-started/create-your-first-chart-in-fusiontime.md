@@ -57,7 +57,7 @@ Now that you have installed, it's time to create your first time series chart us
 
 The data for the above chart is shown in the table below:
 
-Date | Sales
+Time | Sales
 - | -
 1/4/2011 | 16.448
 1/5/2011 | 272.736
