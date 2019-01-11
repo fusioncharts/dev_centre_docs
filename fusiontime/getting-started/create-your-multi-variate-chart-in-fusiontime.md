@@ -229,7 +229,7 @@ window.charInstance = new FusionCharts({
 
 That's it! Your first multivariate chart is ready.
 
-Now, let's see an example where out of the above four columns we will render the chart using the time column and the data of **quantity**.
+Now, let's see an example where out of the above four columns we will render the chart using the time column and the data of **Sales** and **Quantity**.
 
 The chart to showcase the quantity sold will look like as shown below:
 
@@ -247,7 +247,7 @@ window.charInstance = new FusionCharts({
         data: fusionTable,
             chart: {
             },
-            "yAxis": ["Quantity"],
+            "yAxis": ["Sales", "Quantity"],
             caption: {
                 text: 'Global Online Sales of a SuperStore'
         }
