@@ -144,7 +144,7 @@ let data = [
     ]
 ]
 ```
-To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-single-series/data.json)
+To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series/data.json)
 
 In the above code:
 * `data` is the variable in which the data array is saved.
