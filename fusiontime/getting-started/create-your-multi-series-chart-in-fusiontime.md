@@ -14,7 +14,7 @@ The chart is shown below:
 
 The data for the above chart is shown in the table below:
 
-Country | Order Date | Sales
+Country | Time | Sales
 - | - | -
 United States | 1/4/2011 | 16.448
 United States | 1/5/2011 | 72.736
@@ -89,7 +89,7 @@ let data = [
     ]
 ]
 ```
-To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-multi-series/data.json)
+To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-multi-series/data.json)
 
 In the above code:
 

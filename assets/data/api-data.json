@@ -9305,40 +9305,6 @@
                         }
                     }
                 },
-                "pageNavigated": {
-                    "id": "event-pageNavigated",
-                    "name": "pageNavigated",
-                    "kind": "event",
-                    "access": "",
-                    "scope": "instance",
-                    "virtual": false,
-                    "description": "This event is fired on page change in SSGrid chart.",
-                    "examples": {},
-                    "params": {
-                        "data": {
-                            "name": "data",
-                            "type": [
-                                "object"
-                            ],
-                            "description": "Contains data of the sought page, with color, displayValue, originalText, value and y position for each data points.",
-                            "defaultvalue": "",
-                            "optional": "",
-                            "nullable": "",
-                            "subparams": {}
-                        },
-                        "pageId": {
-                            "name": "pageId",
-                            "type": [
-                                "number"
-                            ],
-                            "description": "Tells the index of the sought page.",
-                            "defaultvalue": "",
-                            "optional": "",
-                            "nullable": "",
-                            "subparams": {}
-                        }
-                    }
-                },
                 "rotationEnd": {
                     "id": "event-rotationEnd",
                     "name": "rotationEnd",

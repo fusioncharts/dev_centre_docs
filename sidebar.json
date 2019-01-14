@@ -1953,6 +1953,7 @@
                },
                {
                   "title": "Install FusionExport CLI",
+                  "visibility": false,
                   "path": "/exporting-charts/using-fusionexport/installation/install-fusionexport-cli"
                },
                {
@@ -1982,10 +1983,12 @@
                },
                {
                   "title": "Customize the width and height of an exported chart",
+                  "visibility": false,
                   "path": "/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart"
                },
                {
                   "title": "Export in bulk using multiple json files",
+                  "visibility": false,
                   "path": "/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files"
                },
                {
@@ -1994,6 +1997,7 @@
                },
                {
                   "title": "Override the chart config",
+                  "visibility": false,
                   "path": "/exporting-charts/using-fusionexport/tutorials/override-the-chart-config"
                },
                {
@@ -2006,10 +2010,12 @@
                },
                {
                   "title": "Convert an SVG image to PNG/JPEG/PDF",
+                  "visibility": false,
                   "path": "/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf"
                },
                {
                   "title": "Inject extra JavaScript while exporting",
+                  "visibility": false,
                   "path": "/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting"
                },
                {
@@ -2018,6 +2024,7 @@
                },
                {
                   "title": "Enable logging",
+                  "visibility": false,
                   "path": "/exporting-charts/using-fusionexport/tutorials/enabling-logging"
                },
                {
@@ -2040,6 +2047,7 @@
          },
          {
             "title": "CLI Reference",
+            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/cli-reference"
          },
          {
