@@ -5,8 +5,10 @@
     height: 450,
     dataSource: {
         data: dataStore,
-        StyleDefinition: {
-            "font-color": "#ff0000"
+        styleDefinition: {
+            "colorStyle": {
+                "font-color": "#ff0000"
+            }
         },
         chart: {
         },
@@ -14,7 +16,10 @@
             "title": "Sales",
         }],
         caption: {
-            text: 'Online Sales of a SuperStore'
+            text: 'Online Sales of a SuperStore',
+            style: {
+                text: "colorStyle"
+            }
         }
     }
 }
