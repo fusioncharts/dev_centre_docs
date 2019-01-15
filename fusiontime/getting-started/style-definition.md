@@ -19,5 +19,5 @@ StyleDefinition: {
 }
 ```
 
-In the above code, the font size and the font family has been specified. You can use the above object to style any chart component like legends, captions, etc. 
+In the above code, the **font size** and the **font family** has been specified. You can use the above object to style any chart component like legends, captions, etc. 
 
