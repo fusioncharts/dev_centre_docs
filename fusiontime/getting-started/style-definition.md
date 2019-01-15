@@ -12,9 +12,9 @@ To set the styling, instead of creatng a separate CSS file, you can define the s
 
 Style definitions are specified at the root of the dataSource in FusionTime.
 
-Syntax:
+**Syntax:**
 
-```
+```json
 {
 	"styleDefinition": StyleDefinition
 }
@@ -22,8 +22,8 @@ Syntax:
 
 Now, let's set the **font size** and the **font family** of every text in the chart. The code is given below:
 
-```
-StyleDefinition: {
+```json
+styleDefinition: {
 	"font-color": "#ff0000",
 	"font-family": "mono"
 }
@@ -37,8 +37,8 @@ In the above sample, the **font color** and the **font family** has been specifi
 
 You can also define more than one style within the `StyleDefinition` object:
 
-```
-StyleDefinition: {
+```json
+styleDefinition: {
 	"bold-text": Style,
 	"large-text": Style,
 	"small-text": Style
@@ -49,7 +49,7 @@ Once the `StyleDefinition` is defined, you can refer it for the various componen
 
 The syntax to set the `StyleDefintion` to the legend and the caption is given below:
 
-```
+```json
 {
 	"caption": {
     	"text": String
