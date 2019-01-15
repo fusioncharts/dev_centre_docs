@@ -17,15 +17,15 @@ The data for the above chart is shown in the table below:
 Order Date | Sales | Quantity | Shipping Cost
 - | - | - | -
 1/1/2011 | 120.366 | 3 | 9.72 
-1/1/2011 | 113.67 | 5 | 4.70 
-1/1/2011 | 55.242 | 2 | 1.80 
-1/7/2011 | 6.54 | 1 | 1.13 
+1/3/2011 | 113.67 | 5 | 4.70 
+1/5/2011 | 55.242 | 2 | 1.80 
+1/6/2011 | 6.54 | 1 | 1.13 
 1/7/2011 | 5.48 | 2 | 0.52 
 1/8/2011 | 76.728 | 3 | 6.69
-... | ... | ... | ... | ...
-... | ... | ... | ... | ...
-... | ... | ... | ... | ...
-... | ... | ... | ... | ...
+... | ... | ... | ...
+... | ... | ... | ...
+... | ... | ... | ...
+... | ... | ... | ...
 
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 
@@ -114,7 +114,7 @@ let data = [
     ]
 ]
 ```
-To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-multi-variate/data.json)
+To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-multi-variate/data.json)
 
 In the above code:
 
@@ -229,13 +229,13 @@ window.charInstance = new FusionCharts({
 
 That's it! Your first multivariate chart is ready.
 
-Now, let's see an example where out of the above four columns we will render the chart using the time column and the data of **quantity**.
+Now, let's see an example where out of the above four columns we will render the chart using the time column and the data of **Sales** and **Quantity**.
 
 The chart to showcase the quantity sold will look like as shown below:
 
 {% embed_ftChart online-sales-single-series-multiple-measures %}
 
-The code to render the data of only the **quantity** column is shown below: 
+The code to render the data of **Sales** and **Quantity** column is shown below: 
 
 ```javascript
 window.charInstance = new FusionCharts({
@@ -247,7 +247,7 @@ window.charInstance = new FusionCharts({
         data: fusionTable,
             chart: {
             },
-            "yAxis": ["Quantity"],
+            "yAxis": ["Sales", "Quantity"],
             caption: {
                 text: 'Global Online Sales of a SuperStore'
         }
