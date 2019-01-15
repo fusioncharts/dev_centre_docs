@@ -24,12 +24,16 @@ Now, let's set the **font size** and the **font family** of every text in the ch
 
 ```
 StyleDefinition: {
-	"font-size": 8,
+	"font-color": "#ff0000",
 	"font-family": "mono"
 }
 ```
 
-In the above code, the **font size** and the **font family** has been specified. You can use the above object to style any chart component like legends, captions, etc. 
+The chart after applying the above attributes will look like as shown below:
+
+{% embed_ftChart online-sales-single-series-style-definition %}
+
+In the above sample, the **font color** and the **font family** has been specified. You can use the above object to style any chart component like legends, captions, etc. 
 
 You can also define more than one style within the `StyleDefinition` object:
 
@@ -43,7 +47,7 @@ StyleDefinition: {
 
 Once the `StyleDefinition` is defined, you can refer it for the various components using `style` attribute.
 
-The syntax to set the StyleDefintion to the legend and the caption is given below:
+The syntax to set the `StyleDefintion` to the legend and the caption is given below:
 
 ```
 {
@@ -63,4 +67,4 @@ The syntax to set the StyleDefintion to the legend and the caption is given belo
 }
 ```
 
-**Note:** You can provide the style attributes only to the formats supprted by CSS. For example, to provide font family to a text, provide the `font-family` as the attribute name.
+> You can provide the style attributes only to the formats supprted by CSS. For example, to provide font family to a text, provide the `font-family` as the attribute name.
