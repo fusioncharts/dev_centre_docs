@@ -20,14 +20,32 @@ Style definitions are specified at the root of the dataSource in FusionTime.
 }
 ```
 
-Now, let's set the **font size** and the **font family** of every text in the chart. The code is given below:
+Now, let's define the `styleDefinition` object and set the **font color** in an object. The code is given below:
 
 ```json
 styleDefinition: {
-	"font-color": "#ff0000",
-	"font-family": "mono"
+    "colorstyle": {
+        "fill": "#ff0000"
+    }
+},
+```
+
+Once the `StyleDefinition` is defined, you can refer it for the various components using `colorstyle` attribute.
+
+The syntax to set the `StyleDefintion` to the caption is given below:
+
+```json
+{
+    caption: {
+        text: "Online Sales of a SuperStore",
+        style: {
+            text: "colorstyle"
+        }
+    }
 }
 ```
+
+In the above code, `colorStyle` object is called to set the color of the caption.
 
 The chart after applying the above attributes will look like as shown below:
 
@@ -42,28 +60,6 @@ styleDefinition: {
 	"bold-text": Style,
 	"large-text": Style,
 	"small-text": Style
-}
-```
-
-Once the `StyleDefinition` is defined, you can refer it for the various components using `style` attribute.
-
-The syntax to set the `StyleDefintion` to the legend and the caption is given below:
-
-```json
-{
-	"caption": {
-    	"text": String
-    	"style": {
-      		"text": "large-text bold-text"
-    	}
-  	},
-  	"legend": {
-    	"item": {
-      		"style": {
-        		"text": "small-text"
-      		}
-		}
-	}
 }
 ```
 
