@@ -6,7 +6,7 @@
     dataSource: {
         data: dataStore,
         styleDefinition: {
-            "colorStyle": {
+            "colorstyle": {
                 "font-color": "#ff0000"
             }
         },
@@ -18,7 +18,7 @@
         caption: {
             text: "Online Sales of a SuperStore",
             style: {
-                text: "colorStyle"
+                text: "colorstyle"
             }
         }
     }
