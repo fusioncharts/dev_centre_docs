@@ -6,9 +6,9 @@ heading: Style Definition
 
 Unlike FusionCharts in which cosmetics of the elements in a chart are controlled by defined attributes, FusionTime comes with a different approach. In FusionTime, the styling of the elements is handled by defined CSS. CSS is used to define styles for the chart components in FusionTime.
 
-In this article, we will discuss the CSS styling to set the cosmetic properties of a chart. You can however set the styling of the individual components of the chart which we will discuss later.
+In this article, we will discuss the CSS styling to set the cosmetic properties of a chart. You can, however, set the styling of the individual components of the chart which we will discuss later.
 
-To set the styling, instead of creatng a separate CSS file, you can define the styling using `StyleDefinition` object.
+To set the styling, instead of creating a separate CSS file, you can define the styling using `StyleDefinition` object.
 
 Style definitions are specified at the root of the dataSource in FusionTime.
 
@@ -67,4 +67,4 @@ The syntax to set the `StyleDefintion` to the legend and the caption is given be
 }
 ```
 
-> You can provide the style attributes only to the formats supprted by CSS. For example, to provide font family to a text, provide the `font-family` as the attribute name.
+> You can provide the style attributes only to the formats supported by CSS. For example, to provide font family to a text, provide the `font-family` as the attribute name.
