@@ -16,7 +16,7 @@ Style definitions are specified at the root of the dataSource in FusionTime.
 
 ```json
 {
-	"styleDefinition": StyleDefinition
+	"styleDefinition": colorStyle
 }
 ```
 
