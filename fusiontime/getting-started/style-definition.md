@@ -51,15 +51,15 @@ The chart after applying the above attributes will look like as shown below:
 
 {% embed_ftChart online-sales-single-series-style-definition %}
 
-In the above sample, the **font color** and the **font family** has been specified. You can use the above object to style any chart component like legends, captions, etc. 
+In the above sample, the **font color** has been specified. You can use the above object to style any chart component like legends, y-axis, etc. 
 
-You can also define more than one style within the `StyleDefinition` object:
+You can also define more than one style within the `StyleDefinition` object as shown below:
 
 ```json
 styleDefinition: {
-	"bold-text": Style,
-	"large-text": Style,
-	"small-text": Style
+  	"bold-text": Style,
+  	"large-text": Style,
+  	"small-text": Style
 }
 ```
 
