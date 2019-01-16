@@ -1736,6 +1736,10 @@
                   "path": "/fusiontime/getting-started/change-plot-type-in-fusiontime"
                },
                {
+                  "title": "Style Definition",
+                  "path": "/fusiontime/getting-started/style-definition"
+               },
+               {
                   "title": "Export Charts",
                   "path": "/fusiontime/getting-started/export-charts-fusiontime"
                }
@@ -1938,36 +1942,40 @@
             ]
          },
          {
-            "title": "FusionExport Server Reference",
-            "path": "/exporting-charts/using-fusionexport/fusionexport-server"
-         },
+            "title": "API Reference",
+            "children": [{
+               "title": "FusionExport Server",
+               "path": "/exporting-charts/using-fusionexport/fusionexport-server"
+            },
+            {
+               "title": "SDK API Reference",
+               "children": [{
+                     "title": "C#",
+                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/c-sharp"
+                  },
+                  {
+                     "title": "Java",
+                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/java"
+                  },
+                  {
+                     "title": "PHP",
+                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/php"
+                  },
+                  {
+                     "title": "Node.js",
+                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/nodejs"
+                  },
+                  {
+                     "title": "Python",
+                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/python"
+                  }
+               ]
+            }]
+         }
          {
             "title": "CLI Reference",
+            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/cli-reference"
-         },
-         {
-            "title": "SDK API Reference",
-            "children": [{
-                  "title": "C#",
-                  "path": "/exporting-charts/using-fusionexport/sdk-api-reference/c-sharp"
-               },
-               {
-                  "title": "Java",
-                  "path": "/exporting-charts/using-fusionexport/sdk-api-reference/java"
-               },
-               {
-                  "title": "PHP",
-                  "path": "/exporting-charts/using-fusionexport/sdk-api-reference/php"
-               },
-               {
-                  "title": "Node.js",
-                  "path": "/exporting-charts/using-fusionexport/sdk-api-reference/nodejs"
-               },
-               {
-                  "title": "Python",
-                  "path": "/exporting-charts/using-fusionexport/sdk-api-reference/python"
-               }
-            ]
          },
          {
             "title": "Release Notes",
