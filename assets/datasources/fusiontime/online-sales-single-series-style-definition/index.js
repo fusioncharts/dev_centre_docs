@@ -18,7 +18,7 @@
         caption: {
             text: 'Online Sales of a SuperStore',
             style: {
-                text: "colorStyle"
+                text: colorStyle
             }
         }
     }

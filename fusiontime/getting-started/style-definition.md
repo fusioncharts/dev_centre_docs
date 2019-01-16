@@ -62,8 +62,8 @@ The syntax to set the `StyleDefintion` to the legend and the caption is given be
       		"style": {
         		"text": "small-text"
       		}
-    	}
-  	}
+		}
+	}
 }
 ```
 
