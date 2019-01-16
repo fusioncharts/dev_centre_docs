@@ -7,7 +7,7 @@
         data: dataStore,
         styleDefinition: {
             "colorstyle": {
-                "font-color": "#ff0000"
+                "fill": "#ff0000"
             }
         },
         chart: {
