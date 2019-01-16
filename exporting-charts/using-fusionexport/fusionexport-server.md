@@ -83,7 +83,7 @@ Param Name|Default|Description
 -|-|-
 stream_type||In this case where charts will be rendered and exported. SVG/IMAGE-DATA
 stream|{}|In case of svg, it will contain the svg string. In case of image data, it will contain the base64 string.
-parameters|exportfilename=FusionCharts|exportformat=png|exportactionnew=save|This will contain the output filename, format, and the action to be perform.
+parameters|exportfilename=FusionCharts|exportformat=png, exportactionnew=save, This will contain the output filename, format, and the action to be perform.
 meta_bgColor|#FFFFFF|Background color to be used.
 meta_bgAlpha||Alpha value for the background.
 meta_DOMId||DOM Id.
