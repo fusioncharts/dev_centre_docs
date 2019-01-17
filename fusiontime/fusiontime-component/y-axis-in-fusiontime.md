@@ -78,9 +78,10 @@ The syntax to set the `StyleDefintion` to the y-axis label is given below:
 ```json
 {
     yAxis: [{
+        "plot": "Sales",
         "title": "Sales",
         style: {
-            text: "colorstyle"
+            title: "colorstyle"
         }
     }],
 }
@@ -92,4 +93,29 @@ The chart after applying the above attributes will look like as shown below:
 
 {% embed_ftChart online-sales-single-series-style-definition-y-axis %}
 
-In the above sample, the **font color** has been specified.
+In the above sample, **font color** of the y-axis label has been changed. 
+
+The code to update the cosmetic properties of other elements in y-axis is given below:
+
+```json
+{
+    yAxis: [{
+        "title": "Sales",
+        style: {
+            "ticks": {
+                major: Style,
+                minor: Style,
+                context: Style
+            },
+            "text": {
+                major: Style,
+                minor: Style,
+                context: Style
+            },
+            "line": Style,
+            "gridLine": Style,
+            "gridBand": Style
+        }
+    }],
+}
+```
