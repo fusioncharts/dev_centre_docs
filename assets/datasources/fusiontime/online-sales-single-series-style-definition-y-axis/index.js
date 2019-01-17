@@ -13,6 +13,7 @@
         chart: {
         },
         yAxis: {
+            "plot": "Sales",
             "title": "Sales",
             style: {
                 text: "colorstyle"
