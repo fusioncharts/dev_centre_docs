@@ -16,7 +16,7 @@
             "plot": "Sales",
             "title": "Sales",
             style: {
-                text: "colorstyle"
+                title: "colorstyle"
             }
         },
         caption: {
