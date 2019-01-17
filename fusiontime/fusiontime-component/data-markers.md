@@ -114,9 +114,9 @@ The syntax to set the `StyleDefintion` to the data marker is given below:
   "identifier": Character
   "tooltext": String,
   "style": {
-    "text": colorStyle,
+        "text": colorStyle,
         "marker": colorStyle
-  }
+    }
 }
 ```
 
@@ -125,8 +125,6 @@ In the above code, `colorStyle` object is called to set the color of the data ma
 The chart after applying the above attributes will look like as shown below:
 
 {% embed_ftChart fusiontime-components-data-marker-style-definition %}
-
-
 
 In the above sample, **font color** of the y-axis label has been changed. 
 
