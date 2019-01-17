@@ -10,10 +10,12 @@
                 "fill": "#ff0000"
             }
         },
+        chart: {
+        },
         yAxis: [{
             "title": "Sales",
-            "style": {
-                "text": "colorstyle"
+            style: {
+                text: "colorstyle"
             }
         }],
         caption: {
