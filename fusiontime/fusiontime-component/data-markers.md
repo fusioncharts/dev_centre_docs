@@ -85,5 +85,3 @@ dataMarker: [{
 The data marker created using the above code is shown below:
 
 {% embed_ftChart fusiontime-components-data-marker %}
-
-

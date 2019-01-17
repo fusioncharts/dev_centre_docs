@@ -124,7 +124,6 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
         ]
     }
 }
-
 ```
 
 In the above JSON:
@@ -180,13 +179,12 @@ To render the chart, follow the steps below:
 The consolidated code is shown below:
 
 <div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>C#</a></li>
-    <li><a data-toggle='local'>VB</a></li>
+<ul class="code-tabs extra-tabs">
+    <li class="active"><a data-toggle="csharp">C#</a></li>
+    <li><a data-toggle="vb">VB</a></li>
 </ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab C#-tab active'>
+<div class="tab-content extra-tabs">
+<div class="tab csharp-tab active">
 <pre><code class="language-javascript">
     using System;
     using System.Collections.Generic;
@@ -271,7 +269,7 @@ The consolidated code is shown below:
                 //Create gauge instance
                 // charttype, chartID, width, height, data format, data
 
-                Chart MyFirstGauge = new Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString());
+                Chart MyFirstGauge = new Chart("angulargauge", "first_gauge", "450", "250", "json", jsonData.ToString());
                 //render gauge
                 Literal1.Text = MyFirstGauge.Render();
             }
@@ -280,7 +278,7 @@ The consolidated code is shown below:
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
-<div class='tab VB-tab'>
+<div class="tab vb-tab">
 <pre><code class="language-javascript">
     Imports FusionCharts.Charts
     Partial Class first_chart
@@ -328,7 +326,7 @@ The consolidated code is shown below:
     jsonData.Append("}")
     ' Create chart instance
     ' charttype, chartID, width, height, data format, data
-    Dim MyFirstChart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
+    Dim MyFirstChart As New Chart("angulargauge", "first_gauge", "450", "250", "json", jsonData.ToString())
     Literal1.Text = MyFirstChart.Render()
     End Sub
     End Class
@@ -348,7 +346,7 @@ The HTML template is shown below:
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
 <pre><code class="language-javascript">
-    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
+    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.gauge" %&gt;
 
     &lt;!DOCTYPE html&gt;
 
@@ -372,7 +370,7 @@ The HTML template is shown below:
 </div>
 <div class="tab vb-tab">
 <pre><code class="language-javascript">
-    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %&gt;
+    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="gauge" %&gt;
     &lt;!DOCTYPE html&gt;
     &lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
     &lt;head runat="server"&gt;
@@ -405,4 +403,3 @@ In case there is an error, and you are unable to see the map, check for the foll
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
-
