@@ -60,3 +60,37 @@ yAxis: [{
 
 ## Style Definition
 
+You can add CSS styling to set the cosmetic properties of y-axis. To set the styling, instead of creating a separate CSS file, you can define the styling using `StyleDefinition` object.
+
+Now, let's define the `styleDefinition` object and set the **font color** in an object. The code is given below:
+
+```json
+styleDefinition: {
+    "colorstyle": {
+        "fill": "#ff0000"
+    }
+}
+```
+
+Once the `StyleDefinition` is defined, you can refer it for the various components using `colorstyle` attribute.
+
+The syntax to set the `StyleDefintion` to the y-axis label is given below:
+
+```json
+{
+    yAxis: [{
+        "title": "Sales",
+        style: {
+            text: "colorstyle"
+        }
+    }],
+}
+```
+
+In the above code, `colorStyle` object is called to set the color of the caption.
+
+The chart after applying the above attributes will look like as shown below:
+
+{% embed_ftChart online-sales-single-series-style-definition-y-axis %}
+
+In the above sample, the **font color** has been specified.
