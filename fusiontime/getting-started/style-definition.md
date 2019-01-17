@@ -27,7 +27,7 @@ styleDefinition: {
     "colorstyle": {
         "fill": "#ff0000"
     }
-},
+}
 ```
 
 Once the `StyleDefinition` is defined, you can refer it for the various components using `colorstyle` attribute.
