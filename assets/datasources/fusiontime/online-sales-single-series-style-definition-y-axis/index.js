@@ -12,12 +12,12 @@
         },
         chart: {
         },
-        yAxis: [{
+        yAxis: {
             "title": "Sales",
             style: {
                 text: "colorstyle"
             }
-        }],
+        },
         caption: {
             text: "Online Sales of a SuperStore"
         }
