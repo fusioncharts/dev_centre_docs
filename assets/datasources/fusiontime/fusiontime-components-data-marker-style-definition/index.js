@@ -8,7 +8,8 @@
         styleDefinition: {
             "colorstyle": {
                 "fill": "#ff0000",
-                "font-weight": "bold"
+                "font-weight": "bold",
+                "opacity": "50"
             }
         },
         caption: {
@@ -26,20 +27,14 @@
         }],
         dataMarker: [{
             "seriesName": "Interest Rate",
-            "time": "Mar-1980",
-            "identifier": "H",
+            "time": "Aug-1982",
+            "identifier": "L",
             "timeFormat": "%b-%Y",
-            "tooltext": "As a part of credit control program, under the leadership of Paul Volcker, the Fed tightened the money supply, allowing the federal fund rates to approach 20 percent.",
+            "tooltext": "The FED eases off the monetary brakes, allowing interest rates to fall and the economy to begin a strong recovery.",
             "style": {
                 "text": "colorstyle",
                 "marker": "colorstyle"
             }
-        }, {
-            "seriesName": "Interest Rate",
-            "time": "Aug-1982",
-            "identifier": "L",
-            "timeFormat": "%b-%Y",
-            "tooltext": "The FED eases off the monetary brakes, allowing interest rates to fall and the economy to begin a strong recovery."
         }, {
             "seriesName": "Interest Rate",
             "time": "Oct-1987",
