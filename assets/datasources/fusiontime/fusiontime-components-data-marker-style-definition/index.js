@@ -31,8 +31,8 @@
             "timeFormat": "%b-%Y",
             "tooltext": "As a part of credit control program, under the leadership of Paul Volcker, the Fed tightened the money supply, allowing the federal fund rates to approach 20 percent."
             "style": {
-                "text": colorstyle,
-                "marker": colorstyle
+                "text": "colorstyle",
+                "marker": "colorstyle"
             }
         }, {
             "seriesName": "Interest Rate",
