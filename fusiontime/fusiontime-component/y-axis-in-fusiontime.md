@@ -95,7 +95,7 @@ The chart after applying the above attributes will look like as shown below:
 
 In the above sample, **font color** of the y-axis label has been changed. 
 
-The code to update the cosmetic properties of other elements in y-axis is given below:
+The code to update the cosmetic properties of other elements in **y-axis** is given below:
 
 ```json
 {

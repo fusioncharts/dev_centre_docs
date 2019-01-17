@@ -86,4 +86,71 @@ The data marker created using the above code is shown below:
 
 {% embed_ftChart fusiontime-components-data-marker %}
 
+## Style Definition
 
+You can add CSS styling to set the cosmetic properties of data markers. To set the styling, instead of creating a separate CSS file, you can define the styling using `StyleDefinition` object.
+
+Now, let's define the `styleDefinition` object and set the **color** in an object. The code is given below:
+
+```json
+styleDefinition: {
+    "colorstyle": {
+        "fill": "#ff0000",
+        "font-weight": "bold"
+    }
+}
+```
+
+Once the `StyleDefinition` is defined, you can refer it for the various components using `colorstyle` attribute.
+
+The syntax to set the `StyleDefintion` to the data marker is given below:
+
+```json
+{
+  "seriesName": String,
+  "time": String,
+  "timeFormat": String,
+  "type": String,
+  "identifier": Character
+  "tooltext": String,
+  "style": {
+    "text": colorStyle,
+        "marker": colorStyle
+  }
+}
+```
+
+In the above code, `colorStyle` object is called to set the color of the data marker.
+
+The chart after applying the above attributes will look like as shown below:
+
+{% embed_ftChart fusiontime-components-data-marker-style-definition %}
+
+
+
+In the above sample, **font color** of the y-axis label has been changed. 
+
+The code to update the cosmetic properties of other elements in **y-axis** is given below:
+
+```json
+{
+    yAxis: [{
+        "title": "Sales",
+        style: {
+            "ticks": {
+                major: Style,
+                minor: Style,
+                context: Style
+            },
+            "text": {
+                major: Style,
+                minor: Style,
+                context: Style
+            },
+            "line": Style,
+            "gridLine": Style,
+            "gridBand": Style
+        }
+    }],
+}
+```
