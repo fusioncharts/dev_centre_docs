@@ -10,16 +10,14 @@
                 "fill": "#ff0000"
             }
         },
-        chart: {
-        },
         yAxis: [{
             "title": "Sales",
+            "style": {
+                "text": "colorstyle"
+            }
         }],
         caption: {
-            text: "Online Sales of a SuperStore",
-            style: {
-                text: "colorstyle"
-            }
+            text: "Online Sales of a SuperStore"
         }
     }
 }

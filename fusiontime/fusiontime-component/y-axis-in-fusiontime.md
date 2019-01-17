@@ -6,11 +6,11 @@ heading: Y-Axis
 
 In FusionTime, the `yAxis` object can be specified within the `dataSource` object of the FusionCharts constructor.
 
-It will accept inputs in two forms -  an array of `yAxis` objects or an array of Strings.
+It will accept inputs in two forms - an array of `yAxis` objects or an array of Strings.
 
 An example of array of `yAxis` objects is shown in the code below:
 
-```
+```json
 yAxis: [{
     plot: {
         value: 'Sales',
@@ -20,7 +20,6 @@ yAxis: [{
         value: 'Shipping Cost',
     }
 }],
-
 ```
 Refer to the image below:
 
@@ -28,7 +27,7 @@ Refer to the image below:
 
 An array of strings is applicable when you want to provide different configurations for multiple canvases. Refer to the code below:
 
-```
+```json
 "yAxis": [{
     "plot": ["Sales", "Shipping Cost"]
 }]
@@ -45,7 +44,7 @@ To configure the y-axis you can:
 
 Refer to the code below:
 
-```
+```json
 yAxis: [{
     plot: {
         "value": "Sales",
