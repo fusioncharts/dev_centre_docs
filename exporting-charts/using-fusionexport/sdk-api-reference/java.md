@@ -1,202 +1,279 @@
 ---
-permalink: exporting-charts/using-fusionexport/sdk-api-reference/java.html
 title: Java | FusionCharts
 description: Export from your desktop and web server using Java SDKs. A complete list of API reference.
 heading: Java
-chartPresent: False
 ---
 
-## Class ExportManager
+## Class: ExportManager
 
-**ExportManager** acts as a client, sending the exports chart configuration to the __FusionExport Service__ and delivering the exported charts through the attached listeners.
+ExportManager is the most essential module in order to access actions related to FusionExport like, change the export file quality, set up the file format, etc.
 
-### Constructors
+#### Constructor: `new ExportManager()`
 
-#### ExportManager()
+**Example**
 
-Constructs an ExportManager with a default export server IP address and port.
+```javascript
+new ExportManager();
+```
 
-#### ExportManager(String host, int port)
+#### **Method:** `setHostAndPort(String host, int port)`
 
-Constructs an ExportManager with the specified export server IP address and port.
+This take parameters that can contain host and port values. These values will be used when connecting to FusionExport Server.
 
-### Methods
+**Parameters**
 
-**static saveExportedFiles(String dirPath, ExportDoneData exportedOutput)**
+Name | Type | Default Value | Description
+--- | --- | --- | ---
+host | String | 127.0.0.1 | The host address which will be used when connecting to FusionExport server
+port | Integer | 1337 | The port number which will be used when connecting to FusionExport server
 
-Saves the exported images in the specified folder.
+**Example**
 
-**static getExportedFileNames(ExportDoneData exportedOutput)**
+```javascript
+exportManager.setHostAndPort("api.fusionexport.com", 1337);
+```
 
-Returns the exported file names in a List.
+#### **Method:** `export(ExportConfig exportConfig, String outputDirPath, Boolean unzip)`
 
-**void setHost(String host)** 
+This is the most important method from ExportManager module. Based on the configuration provided, this method exports your charts and dashboards to the given format. 
 
-Sets the export server IP address
+It returns an array of strings which contain filenames of the exported files.
 
-**String getHost()** 
+**Parameters**
 
-Returns the export server IP address
+Name | Type | Default Value | Required | Description
+--- | --- | --- | --- | ---
+exportConfig | ExportConfig |  | Yes | Instance of the ExportConfig which will include all export configurations
+outputDirPath | String | . | Yes | Directory where you want to save the exported file. By default the file will be saved in the same directory from where the script is executed. This field is optional.
+unzip | Boolean | false | Yes | This parameter allows you to decompress your output bundle into separate files. To allow this behaviour pass true. This field is optional.
 
-**void setPort(int port)** 
+**Returns**
 
-Sets the export server port
+* **String[]:** It returns an array of strings which contains the array of filenames of the exported files.
 
-**int getPort()**
+**Example**
 
-Returns the export server port
+```javascript
+exportManager.Export(exportConfig, ".", true);
+```
 
-**Exporter export(ExportConfig exportConfig)**
+## Class: ExportConfig
 
-Exports charts with the specified configurations and returns an Exporter instance.
+ExportConfig class is used to set up all the configs for a single export whether it is a dashboard export, single export or a batch export.
 
-**Exporter export(ExportConfig config, ExportDoneListener done)**
+#### **Constructor:** `new ExportConfig()`
 
-Exports charts with the specified configurations and __ExportDone__ listener, returning an Exporter instance.
+This constructor does not take any argument.
 
-**Exporter Export(ExportConfig config, ExportStateChangedListener stateChanged)**
+**Example**
 
-Exports charts with the specified configurations and __ExportStateChanged__ listener, returning an Exporter instance.
+```javascript
+new ExportConfig();
+```
 
-**Exporter Export(ExportConfig config, ExportDoneListener done, ExportStateChangedListener stateChanged)**
+#### **Method:** `set(String configName, String value)`
 
-Exports charts with the specified configurations, __ExportDone__ listener and __ExportStateChanged__ listener, and returns an Exporter instance.
+Takes two argument first one as the key second one as the value. You can find more about the options later on in this guide.
 
-## Interface ExportDoneListener
+**Parameters**
 
-ExportDoneListener is fired when an export request is completed.
+Name | Type | Default Value | Required | Description
+--- | --- | --- | --- | ---
+configName | String | null | Yes | Name of the config
+value | String, Integer or Boolean | null | Yes | Value of the config
 
-### Methods
+**Returns**
 
-**void exportDone(String result, ExportException error)**
+* ExportConfig: The instance of the exportConfig for method chaining.
 
-This method is called after the chart is exported.
+**Example**
 
-## Interface ExportStateChangedListener
+```javascript
+exportConfig.set("chartConfig", "./static/chart-config.json");
+```
 
-ExportStateChangedListener is fired during chart export and emits events for every exporting step from the server. This callback  can be used to track the progress on the server during chart export.
+## ExportConfig Options
 
-### Methods
+There are plenty of options which you can configure in ExportConfig. These options essentially help you set quality of the image to define how your chart is going to look like. 
 
-**void exportStateChanged(String state)**
+#### `chartConfig`
 
-This method is called for each chart exporting event with the specified state.
+Sets the configuration of a single chart or multiple charts in an array. This configuration should follow [FusionCharts JSON structure](https://www.fusioncharts.com/dev/chart-attributes/). It accepts, file path of the JSON where chart configurations have been stored.
 
-## Class Exporter
+* **Type:** String
 
-Exporter is responsible for any individual export request made by the **ExportManager**. Generally, the **ExportManager** uses this class internally to make a chart exporting request to the export server.
+**Example**
 
-### Constructors
+```javascript
+exportConfig.set("chartConfig", "resources\chart-config-file.json");
+```
 
-**Exporter(ExportConfig config)**
-Constructs an Exporter with the specified export configurations.
+#### `inputSVG`
 
-**Exporter(ExportConfig config, ExportDoneListener done)**
-Constructs an Exporter with the specified export configurations and ExportDone listener.
+This option is useful to export your SVG files to the file formats supported by FusionExport. It accepts file path of the SVG in string format.
 
-**Exporter(ExportConfig config, ExportStateChangedListener stateChanged)**
-Constructs an Exporter with the specified export configurations and ExportStateChanged listener.
+* **Type:** String
 
-**Exporter(ExportConfig config, ExportDoneListener done, ExportStateChangedListener stateChanged)**
-Constructs an Exporter with the specified export configurations, ExportDone listener and ExportStateChanged listener.
+**Example**
 
-### Methods
+```javascript
+exportConfig.set("inputSVG", "resources\vector.svg");
+```
 
-**ExportConfig getExportConfig()**
-Returns the associated export configurations.
+#### `templateFilePath`
 
-**ExportDoneListener getExportDoneListener()**
-Returns the attached **ExportDone** listener.
+Sets the path of the HTML template used for dashboard export
 
-**ExportStateChangedListener getExportStateChangedListener()**
-Returns the attached ExportStateChanged listener.
+* **Type:** String
 
-**String getExportServerHost()**
-Returns the export server host.
+**Example**
 
-**int getExportServerPort()**
-Returns the export server port.
+```javascript
+exportConfig.set("templateFilePath", "resources\template.html");
+```
 
-**void setExportConnectionConfig(String exportServerHost, int exportServerPort)**
-Sets export server IP address and port.
+#### `resourceFilePath`
 
-**void start()**
-Starts the chart exporting process according to the export configurations.
+JSON file having the dependencies of the template when templateFilePath is provided. basePath denotes the base path of the project no local resource should be present outside this directory. include takes one or more glob to specify which files to send to the server. exclude take sone or more glob to specify which files should be excluded.
 
-**void cancel()**
-Cancels the chart exporting request.
+* **Type:** String
 
-## Class ExportConfig
+**Example**
 
-ExportConfig holds the configurations for exporting the chart, like chart data, template file, dashboard config, etc. These configurations are sent to the ExportServer by ExportManager to export charts.
+```javascript
+exportConfig.set("resourceFilePath", "resources\resource.json");
+```
 
-### Constructors
+The `resource.json` looks like as shown below:
 
-**ExportConfig()**
-Constructs an ExportConfig object with empty export configurations.
+```javascript
+{
+	"basePath": "../src/",
+	"include": [
+		'**/*.js'
+	],
+	"exlcude": [
+    	'.env'
+	]
+}
+```
 
-### Methods
+#### `callbackFilePath`
 
-**void set(String configName, string configValue)**
-Sets a single export configuration with the specified config value.
+Sets the path for a Javascript file that would be injected at the bottom of the page for each export
 
-**String get(String configName)**
-Returns config value for the specified config name.
+* **Type:** String
 
-**boolean remove(String configName)**
-Removes the specified configuration and returns true if configName is found.
+**Example**
 
-**boolean has(String configName)**
-Checks if the specified configuration is present or not, returning true if the configName is found.
+```javascript
+exportConfig.set("callbackFilePath", "resources\callback.js")
+```
 
-**void clear()**
-Clears all export configurations added earlier.
+#### `asyncCapture`
 
-**int count()**
-Returns the total number of export configurations added.
+Sets if the export process will wait for CAPTURE_EXIT event
 
-**String[] configNames()**
-Returns all configuration names as an array.
+* **Type:** Boolean
 
-**String[] configValues()**
-Returns all configuration values as an array.
+**Example**
 
-**ExportConfig clone()**
-Returns a new instance of ExportConfig with the same content as the current one.
+```javascript
+exportConfig.set("asyncCapture", true);
+```
 
-**String getFormattedConfigs()**
-Returns all export configurations in JSON format.
+#### `maxWaitForCaptureExit`
 
-## Class ExportException
+Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be triggered
 
-ExportException is a subclass of the Exception class. It is thrown in case any error occurs during the export process.
+* **Type:** Integer
 
-## Supported Export Configurations
+**Example**
 
-* `chartConfig` - Sets the configuration of a single chart or multiple charts in an array.
+```javascript
+exportConfig.set("maxWaitForCaptureExit", 8000);
+```
 
-* `inputSVG` - Sets the path for the SVG file input.
+#### `dashboardLogo`
 
-* `templateFilePath` - Sets the path of the HTML template used for dashboard export.
+Sets the path to the logo file
 
-* `callbackFilePath` - Sets the path for a Javascript file that would be injected at the bottom of the page for each export.
+* **Type:** String
 
-* `asyncCapture` - Sets if the export process will wait for `CAPTURE_EXIT` event.
+**Example**
 
-* `maxWaitForCaptureExit` - Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be triggered.
+```javascript
+exportConfig.set("dashboardLogo", "resources/logo.jpg");
+```
 
-* `dashboardLogo` - Sets the path to the logo file.
+#### `dashboardHeading`
 
-* `dashboardHeading` - Sets the title of the dashboard.
+Sets the title of the dashboard
 
-* `dashboardSubheading` - Sets the sub-title of the dashboard.
+* **Type:** String
 
-* `type` - Sets the format of the output file.
+**Example**
 
-* `quality` - Sets the quality of the output file. Provide either good, better or best.
-* `outputFile` - Sets the output filename template, along with the path.
-* `outputFileDefinition` - JS file defining functions or array to resolve output file names.
+```javascript
+exportConfig.set("dashboardHeading", "FusionCharts");
+```
 
-* `exportAsZip` - Sets if the chart(s) will be exported as a zip file or as individual file(s).
+#### `dashboardSubheading`
 
-* `resourceFilePath` - JSON file having the dependencies of the template when templateFilePath is provided.
+Sets the sub-title of the dashboard
+
+* **Type:** String
+
+**Example**
+
+```javascript
+exportConfig.set("dashboardSubheading", "The best charting library in the world");
+```
+
+#### `type`
+
+Sets the format of the output file
+
+* **Type:** String
+
+**Example**
+
+```javascript
+exportConfig.set("type", "pdf");
+```
+
+#### `quality`
+
+Sets the quality of the output file. Provide either good, better or best
+
+* **Type:** String
+
+**Example**
+
+```javascript
+exportConfig.set("quality", "best")
+```
+
+#### `outputFile`
+
+Sets the output filename template, along with the path. You can write ejs style template for output file names. By default two functions are provided. number(start, end, interval) will resolve to a number respective to the position of the chart config in the chart config array in case of multiple file export. timestamp() will resolve to the current timestamp in unix format.
+
+* **Type:** String
+
+**Example**
+
+```javascript
+exportConfig.set("outputFile", "path/to/export--<%= number(2) %>");
+```
+
+#### `outputFileDefinition`
+
+JS file defining functions or array to resolve output file names. You can write functions which will be called with the current chartConfig, index and the whole chartConfig list and will be called when resolving each filename. If it's an array then the values will be used sequentially. You have to call this functions or array in the outputFile template.
+
+* **Type:** String
+
+**Example**
+
+```javascript
+exportConfig.set("outputFileDefinition", "resources/outputFileDefinition.js");
+```
