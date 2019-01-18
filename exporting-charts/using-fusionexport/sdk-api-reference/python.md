@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/sdk-api-reference/python.html
 title: Python | FusionCharts
 description: Export from your desktop and web server using Python SDKs. A complete list of API reference.
 heading: Python
-chartPresent: False
 ---
 
 ## Class ExportManager
