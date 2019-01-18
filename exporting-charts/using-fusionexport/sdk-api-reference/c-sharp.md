@@ -8,7 +8,7 @@ heading: C Sharp
 
 ExportManager is the most essential module in order to access actions related to FusionExport like, change the export file quality, set up the file format, etc.
 
-### **Constructor:** new ExportManager(string host, int port)
+### **Constructor:** `new ExportManager(string host, int port)`
 
 The Constructor of ExportManager take parameters that contains host and port values. These values will be used when connecting to FusionExport Server.
 
@@ -25,7 +25,7 @@ Name | Type | Default Value | Description
 new ExportManager(host: 'api.fusionexport.com', port: 1337);
 ```
 
-### **Method:** export(ExportConfig exportConfig[, string outputDir, bool unzip])
+### **Method:** `export(ExportConfig exportConfig[, string outputDir, bool unzip])`
 
 This is the most important method from ExportManager module. Based on the configuration provided, this method exports your charts and dashboards to the given format. 
 
@@ -53,7 +53,7 @@ exportManager.Export(exportConfig, ".", true);
 
 ExportConfig class is used to set up all the configs for a single export weather it is a dashboard export, single export or a batch export.
 
-### **Constructor:** new ExportConfig()
+### **Constructor:** `new ExportConfig()`
 
 This constructor does not take any argument.
 
@@ -63,7 +63,7 @@ This constructor does not take any argument.
 new ExportConfig();
 ```
 
-### **Method:** Set(string configName, object configValue)
+### **Method:** `Set(string configName, object configValue)`
 
 Takes two argument first one as the key second one as the value. You can find more about the options later on in this guide.
 
@@ -84,7 +84,7 @@ Name | Type | Default Value | Required | Description
 exportConfig.Set("chartConfig", "./static/chart-config.json");
 ```
 
-### **Method:** Get(string configName)
+### **Method:** `Get(string configName)`
 
 Takes one argument as the key and returns the value.
 
@@ -104,7 +104,7 @@ Name | Type | Default Value | Required | Description
 exportConfig.Get("chartConfig");
 ```
 
-### **Method:** Has(string configName)
+### **Method:** `Has(string configName)`
 
 Takes one argument as the key and returns a boolean if it is set or not.
 
@@ -124,7 +124,7 @@ configName | string | null | Yes | Name of the config
 exportConfig.Has("chartConfig");
 ```
 
-### **Method:** Remove(string configName)
+### **Method:** `Remove(string configName)`
 
 Takes one argument as the key and removes that value if it was set.
 
@@ -144,7 +144,7 @@ configName | string | null | Yes | Name of the config
 exportConfig.remove('chartConfig')
 ```
 
-### **Method:** Clear()
+### **Method:** `Clear()`
 
 Clears all the values that were set earlier.
 
@@ -158,15 +158,15 @@ Clears all the values that were set earlier.
 exportConfig.Clear()
 ```
 
-## **ExportConfig Options**
+## ExportConfig Options
 
 There are plenty of options which you can configure in ExportConfig. These options essentially help you set quality of the image to define how your chart is going to look like. 
 
-### chartConfig
+### `chartConfig`
 
 Sets the configuration of a single chart or multiple charts in an array. This configuration should follow [FusionCharts JSON structure](https://www.fusioncharts.com/dev/chart-attributes/). It accepts, file path of the JSON where chart configurations have been stored.
 
-* Type : string
+* **Type:** string
 
 **Example**
 
@@ -174,7 +174,7 @@ Sets the configuration of a single chart or multiple charts in an array. This co
 exportConfig.Set("chartConfig", "resources\chart-config-file.json");
 ```
 
-### inputSVG
+### `inputSVG`
 
 This option is useful to export your SVG files to the file formats supported by FusionExport. It accepts file path of the SVG in string format.
 
@@ -186,7 +186,7 @@ This option is useful to export your SVG files to the file formats supported by 
 exportConfig.Set("inputSVG", "resources\vector.svg");
 ```
 
-### templateFilePath
+### `templateFilePath`
 
 Sets the path of the HTML template used for dashboard export
 
@@ -198,7 +198,7 @@ Sets the path of the HTML template used for dashboard export
 exportConfig.Set("templateFilePath", "resources\template.html");
 ```
 
-### resourceFilePath
+### `resourceFilePath`
 
 JSON file having the dependencies of the template when templateFilePath is provided. basePath denotes the base path of the project no local resource should be present outside this directory. include takes one or more glob to specify which files to send to the server. exclude take some or more glob to specify which files should be excluded.
 
@@ -224,7 +224,7 @@ The `resource.json` looks like as shown below:
 }
 ```
 
-### callbackFilePath
+### `callbackFilePath`
 
 Sets the path for a JavaScript file that would be injected at the bottom of the page for each export
 
@@ -236,7 +236,7 @@ Sets the path for a JavaScript file that would be injected at the bottom of the 
 exportConfig.Set("callbackFilePath", "resources\callback.js")
 ```
 
-### asyncCapture
+### `asyncCapture`
 
 Sets if the export process will wait for CAPTURE_EXIT event
 
@@ -248,7 +248,7 @@ Sets if the export process will wait for CAPTURE_EXIT event
 exportConfig.Set("asyncCapture", true)
 ```
 
-### maxWaitForCaptureExit
+### `maxWaitForCaptureExit`
 
 Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be triggered
 
@@ -260,7 +260,7 @@ Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be t
 exportConfig.Set("maxWaitForCaptureExit", 8000)
 ```
 
-### dashboardLogo
+### `dashboardLogo`
 
 Sets the path to the logo file
 
@@ -272,7 +272,7 @@ Sets the path to the logo file
 exportConfig.Set("dashboardLogo", "resources\logo.jpg");
 ```
 
-### dashboardHeading
+### `dashboardHeading`
 
 Sets the title of the dashboard
 
@@ -284,7 +284,7 @@ Sets the title of the dashboard
 exportConfig.Set("dashboardHeading", "FusionCharts");
 ```
 
-### dashboardSubheading
+### `dashboardSubheading`
 
 Sets the sub-title of the dashboard
 
@@ -296,43 +296,50 @@ Sets the sub-title of the dashboard
 exportConfig.set("dashboardSubheading", "The best charting library in the world")
 ```
 
-### **type**
+### `type`
 
 Sets the format of the output file
 
-* Type: string
+* **Type:** string
 
 **Example**
 
+```
 exportConfig.Set("type", "pdf");
+```
 
-## **quality**
+### `quality`
 
 Sets the quality of the output file. Provide either good, better or best
 
-* Type: string
+* **Type:** string
 
 **Example**
 
+```
 exportConfig.Set("quality", "best")
+```
 
-## **outputFile**
+### `outputFile`
 
 Sets the output filename template, along with the path. You can write ejs style template for output file names. By default two functions are provided. number(start, end, interval) will resolve to a number respective to the position of the chart config in the chart config array in case of multiple file export. timestamp() will resolve to the current timestamp in unix format.
 
-* Type: string
+* **Type:** string
 
 **Example**
 
+```
 exportConfig.Set("outputFile", "path\to\export--<%= number(2) %>");
+```
 
-## **outputFileDefinition**
+### `outputFileDefinition`
 
 JS file defining functions or array to resolve output file names. You can write functions which will be called with the current chartConfig, index and the whole chartConfig list and will be called when resolving each filename. If it's an array then the values will be used sequentially. You have to call this functions or array in the outputFile template.
 
-* Type: string
+* **Type:** string
 
 **Example**
 
+```
 exportConfig.Set("outputFileDefinition", "resources/outputFileDefinition.js")
-
+```
