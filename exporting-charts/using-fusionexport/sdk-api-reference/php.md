@@ -21,7 +21,7 @@ $port | Integer | 1337 | The port which will be used when connecting to FusionEx
 
 **Example**
 
-```json
+```javascript
 new ExportManager('api.fusionexport.com', 1337);
 ```
 
@@ -45,7 +45,7 @@ unzip | Boolean | false | No | This parameter allows you to decompress your outp
 
 **Example**
 
-```json
+```javascript
 $exportManager.export(exportConfig, '.', true);
 ```
 
@@ -59,7 +59,7 @@ This constructor does not take any argument.
 
 **Example**
 
-```json
+```javascript
 new ExportConfig();
 ```
 
@@ -80,7 +80,7 @@ value | String,  Integer or Boolean | null | Yes|Value of the config
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('chartConfig', 'resources/single.json');
 ```
 
@@ -100,7 +100,7 @@ $name | String | null | Yes | Name of the config
 
 **Example**
 
-```json
+```javascript
 exportConfig.get('chartConfig');
 ```
 
@@ -120,7 +120,7 @@ $key |String |null |Yes | Name of the config
 
 **Example**
 
-```json
+```javascript
 exportConfig.has('chartConfig')
 ```
 
@@ -140,7 +140,7 @@ $name | String | null | Yes | Name of the config
 
 **Example**
 
-```json
+```javascript
 exportConfig.remove('chartConfig');
 ```
 
@@ -154,7 +154,7 @@ Clears all the values that were set earlier.
 
 **Example**
 
-```json
+```javascript
 exportConfig.clear();
 ```
 
@@ -170,7 +170,7 @@ Sets the configuration of a single chart or multiple charts in an array. This co
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('chartConfig', 'resources/chart-config-file.json');
 ```
 
@@ -182,7 +182,7 @@ This option is useful to export your SVG files to the file formats supported by 
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('inputSVG', 'resources/vector.svg');
 ```
 
@@ -194,7 +194,7 @@ Sets the path of the HTML template used for dashboard export
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('templateFilePath', 'resources/template.html');
 ```
 
@@ -206,13 +206,13 @@ JSON file having the dependencies of the template when templateFilePath is provi
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('resourceFilePath', 'resources/resource.json');
 ```
 
 The `resource.json` looks like as shown below:
 
-```json
+```javascript
 {
 	"basePath": "../src/",
 	"include": [
@@ -232,7 +232,7 @@ Sets the path for a Javascript file that would be injected at the bottom of the 
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('callbackFilePath', 'resources/callback.js');
 ```
 
@@ -244,7 +244,7 @@ Sets if the export process will wait for CAPTURE_EXIT event
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('asyncCapture', true);
 ```
 
@@ -256,7 +256,7 @@ Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be t
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('maxWaitForCaptureExit', 8000);
 ```
 
@@ -268,7 +268,7 @@ Sets the path to the logo file
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('dashboardLogo', 'resources/logo.jpg');
 ```
 
@@ -280,7 +280,7 @@ Sets the title of the dashboard
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('dashboardHeading', 'FusionCharts');
 ```
 
@@ -292,7 +292,7 @@ Sets the sub-title of the dashboard
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('dashboardSubheading', 'The best charting library in the world');
 ```
 
@@ -304,7 +304,7 @@ Sets the format of the output file
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('type', 'pdf');
 ```
 
@@ -316,7 +316,7 @@ Sets the quality of the output file. Provide either good, better or best
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('quality', 'best');
 ```
 
@@ -328,7 +328,7 @@ Sets the output filename template, along with the path. You can write ejs style 
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('outputFile', 'path/to/export--<%= number(2) %>');
 ```
 
@@ -340,6 +340,6 @@ JS file defining functions or array to resolve output file names. You can write 
 
 **Example**
 
-```json
+```javascript
 exportConfig.set('outputFileDefinition', 'resources/outputFileDefinition.js');
 ```
