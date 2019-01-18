@@ -1,136 +1,344 @@
 ---
-permalink: exporting-charts/using-fusionexport/sdk-api-reference/php.html
 title: PHP | FusionCharts
 description: Export from your desktop and web server using PHP SDKs. A complete list of API reference.
 heading: PHP
-chartPresent: False
 ---
 
-## Class ExportManager
+## Class: ExportManager
 
-__ExportManager__ acts as a client, sending the chart exporting configurations to the __FusionExport Service__ and delivering the exported charts through the attached listeners.
+ExportManager is the most essential module in order to access actions related to FusionExport like, change the export file quality, set up the file format, etc.
 
-### Constructors
+#### **Constructor:** `new ExportManager($host, $port)`
 
-**public function __construct($host = Constants::DEFAULT_HOST, $port = Constants::DEFAULT_PORT)**
+The Constructor of ExportManager take parameters that may contains host and port values. These values will be used when connecting to FusionExport Server.
 
-Constructs an __ExportManager__ with the specified export server IP address and port.
+**Parameters**
 
-### Methods
+Name | Type | Default Value | Description
+--- | --- | --- | ---
+$host | String | 127.0.0.1 | The host which will be used when connecting to FusionExport server
+$port | Integer | 1337 | The port which will be used when connecting to FusionExport server
 
-**public function export(ExportConfig $exportConfig, $exportDoneListener = null, $exportStateChangedListener = null)**
-Exports based on **exportConfig**, output and error is received through __exportDoneListener__ callback and states are received by __exportStateChangedListener__ callback.
-It returns an `Exporter` instance.
+**Example**
 
-**public static function saveExportedFiles($export, $dir = '.')**
+```
+new ExportManager('api.fusionexport.com', 1337);
+```
 
-It is a helper function to save the whole `outputFileBag` in the specified directory. It can also take an enclosing directory path as the second parameter. The directory path will be appended with the output file paths before saving.
+#### **Method:** `export($exportConfig[, $outputDir, $unzip])`
 
-**public static function getExportedFileNames($export)**
+This is the most important method from ExportManager module. Based on the configuration provided, this method exports your charts and dashboards to the given format. 
 
-It extracts all the __realPath__ from the `outputFileBag`
+It returns exporter object which can resolves to the array of filenames of the exported files.
 
-### Callbacks
+**Parameters**
 
-**exportDoneListener($outputFileBag, $error)**
+Name | Type | Default Value | Required | Description
+--- | --- | --- | --- | ---
+exportConfig | ExportConfig |  | Yes | Instance of the ExportConfig which will include all export configurations
+outputDir | String | . | No | Directory where you want to save the exported file. By default the file will be saved in the same directory from where the script is executed. This field is optional.
+unzip | Boolean | false | No | This parameter allows you to decompress your output bundle into separate files. To allow this behaviour pass true. This field is optional.
 
-**$outputFileBag:** It is an array of **outputBags**. Each **outputBag** has a **realName** and a **fileContent** value. **realName** is the path where the file needs to be saved with the resolved filename.
+**Returns**
 
-**$error:** It the an error object sent only if error occurs during export.
+* **Exporter:** It returns exporter object.
 
-**exportStateChangedListener($state)**
+**Example**
 
-**$state: **It is a state object with **reporter**, **exportDone**, **uuid**, **customMsg** properties.
+```
+$exportManager.export(exportConfig, '.', true);
+```
 
-## Class Exporter
+## Class: ExportConfig
 
-Exporter is responsible for any individual export request made by the __ExportManager__. Generally the __ExportManager__ uses this class internally to make chart exporting request to export server.
+ExportConfig class is used to set up all the configs for a single export weather it is a dashboard export, single export or a batch export.
 
-### Constructors
+#### **Constructor:** `new ExportConfig()`
 
-__public function __construct(ExportConfig $exportConfig, $exportDoneListener, $exportStateChangedListener)__
-Constructs an Exporter with the specified export configurations, __ExportDone__ listener and __ExportStateChanged__ listener.
+This constructor does not take any argument.
 
-### Methods
+**Example**
 
-**public function setExportConnectionConfig($exportServerHost, $exportServerPort)**
-Sets export server IP address and port.
+```
+new ExportConfig();
+```
 
-**public function start()**
-Starts the chart exporting process according to the export configurations.
+#### **Method:** `set($name, $value)`
 
-**public function cancel()**
-Cancels the chart exporting request.
+Takes two argument first one as the key second one as the value. You can find more about the options later on in this guide.
 
-## Class ExportConfig
+**Parameters**
 
-**ExportConfig** holds the configurations for chart exporting like chart data, template file, dashboard config, etc. These configurations are sent to the **ExportServer** by **ExportManager** to export charts.
+Name | Type | Default Value | Required | Description
+--- | --- | --- | --- | ---
+name | String | null | Yes | Name of the config
+value | String,  Integer or Boolean | null | Yes|Value of the config
 
-### Constructors
+**Returns**
 
-**public function __construct()**
-Constructs an ExportConfig object with empty export configurations.
+* **ExportConfig:** The instance of the exportConfig for method chaining.
 
-### Methods
+**Example**
 
-**public function set($name, $value)**
-Sets a single export configuration with the specified configuration value. It returns the object so it can be chained.
+```
+exportConfig.set('chartConfig', 'resources/single.json');
+```
 
-**public function get($name)**
-Returns configuration value for the specified configuration name.
+#### **Method:** `get($name)`
 
-**public function remove($name)**
-Removes the specified configuration and returns true if configName is found. It returns the object to be chained.
+Takes one argument as the key and returns the value.
 
-**public function has($name)**
-Checks if the specified configuration is present or not, returning true if the configName is found.
+**Parameters**
 
-**public function clear()**
-Clears all export configurations already added.
+Name | Type | Default Value | Required | Description
+--- | --- | --- | --- | ---
+$name | String | null | Yes | Name of the config
 
-**public function count()**
-Returns the total number of configuration currently stored.
+**Returns**
 
-**public function configNames()**
-Returns all configuration names as an array.
+* String,  Integer or  Boolean: The value of the specified config.
 
-**public function configValues()**
-Returns all configuration values as an array.
+**Example**
 
-**public function clone()**
-Returns a new instance of ExportConfig with same contents as the current one.
+```
+exportConfig.get('chartConfig');
+```
 
-**public function getFormattedConfigs()**
-Returns all export configurations in JSON format.
+#### **Method:** `has($name)`
 
-## Supported Export Configurations
+Takes one argument as the key and returns a boolean if it is set or not.
 
-* `chartConfig` - Sets the configuration of a single chart or multiple charts in an array.
+**Parameters**
 
-* `inputSVG` - Sets the path for the SVG file input.
+Name | Type | Default Value | Required | Description 
+--- | --- | --- | --- | ---
+$key |String |null |Yes | Name of the config
 
-* `templateFilePath` - Sets the path of the HTML template used for dashboard export.
+**Returns**
 
-* `callbackFilePath` - Sets the path for a Javascript file that would be injected at the bottom of the page for each export.
+* **Boolean:** Return a boolean depending on whether the key is set or not.
 
-* `asyncCapture` - Sets if the export process will wait for `CAPTURE_EXIT` event.
+**Example**
 
-* `maxWaitForCaptureExit` - Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be triggered.
+```
+exportConfig.has('chartConfig')
+```
 
-* `dashboardLogo` - Sets the path to the logo file.
+#### **Method:** `remove($name)`
 
-* `dashboardHeading` - Sets the title of the dashboard.
+Takes one argument as the key and removes that value if it was set.
 
-* `dashboardSubheading` - Sets the sub-title of the dashboard.
+**Parameters**
 
-* `type` - Sets the format of the output file.
+Name | Type | Default Value | Required | Description
+--- | --- | --- | --- | ---
+$name | String | null | Yes | Name of the config
 
-* `quality` - Sets the quality of the output file. Provide either good, better or best.
+**Returns**
 
-* `outputFile` - Sets the output filename template, along with the path.
+* **ExportConfig:** The instance of the exportConfig for method chaining.
 
-* `outputFileDefinition` - JS file defining functions or array to resolve output file names.
+**Example**
 
-* `exportAsZip` - Sets if the chart(s) will be exported as a zip file or as individual file(s).
+```
+exportConfig.remove('chartConfig');
+```
 
-* `resourceFilePath` - JSON file having the dependencies of the template when templateFilePath is provided.
+#### **Method:** `clear()`
+
+Clears all the values that were set earlier.
+
+**Returns**
+
+* void
+
+**Example**
+
+```
+exportConfig.clear();
+```
+
+## ExportConfig Options
+
+There are plenty of options which you can configure in ExportConfig. These options essentially help you set quality of the image to define how your chart is going to look like. 
+
+#### `chartConfig`
+
+Sets the configuration of a single chart or multiple charts in an array. This configuration should follow [FusionCharts JSON structure](https://www.fusioncharts.com/dev/chart-attributes/). It accepts, file path of the JSON where chart configurations have been stored.
+
+* Type : String
+
+**Example**
+
+```
+exportConfig.set('chartConfig', 'resources/chart-config-file.json');
+```
+
+#### `inputSVG`
+
+This option is useful to export your SVG files to the file formats supported by FusionExport. It accepts file path of the SVG in string format.
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('inputSVG', 'resources/vector.svg');
+```
+
+#### `templateFilePath`
+
+Sets the path of the HTML template used for dashboard export
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('templateFilePath', 'resources/template.html');
+```
+
+#### `resourceFilePath`
+
+JSON file having the dependencies of the template when templateFilePath is provided. basePath denotes the base path of the project no local resource should be present outside this directory. include takes one or more glob to specify which files to send to the server. exclude take sone or more glob to specify which files should be excluded.
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('resourceFilePath', 'resources/resource.json');
+```
+
+The `resource.json` looks like as shown below:
+
+```
+{
+	"basePath": "../src/",
+	"include": [
+		'**/*.js'
+	],
+	"exlcude": [
+		'.env'
+	]
+}
+
+#### `callbackFilePath`
+
+Sets the path for a Javascript file that would be injected at the bottom of the page for each export
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('callbackFilePath', 'resources/callback.js');
+```
+
+#### `asyncCapture`
+
+Sets if the export process will wait for CAPTURE_EXIT event
+
+* **Type:** Boolean
+
+**Example**
+
+```
+exportConfig.set('asyncCapture', true);
+```
+
+#### `maxWaitForCaptureExit`
+
+Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be triggered
+
+* **Type:** Integer
+
+**Example**
+
+```
+exportConfig.set('maxWaitForCaptureExit', 8000);
+```
+
+#### `dashboardLogo`
+
+Sets the path to the logo file
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('dashboardLogo', 'resources/logo.jpg');
+```
+
+#### `dashboardHeading`
+
+Sets the title of the dashboard
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('dashboardHeading', 'FusionCharts');
+```
+
+#### `dashboardSubheading`
+
+Sets the sub-title of the dashboard
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('dashboardSubheading', 'The best charting library in the world');
+```
+
+#### `type`
+
+Sets the format of the output file
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('type', 'pdf');
+```
+
+#### `quality`
+
+Sets the quality of the output file. Provide either good, better or best
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('quality', 'best');
+```
+
+#### `outputFile`
+
+Sets the output filename template, along with the path. You can write ejs style template for output file names. By default two functions are provided. number(start, end, interval) will resolve to a number respective to the position of the chart config in the chart config array in case of multiple file export. timestamp() will resolve to the current timestamp in unix format.
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('outputFile', 'path/to/export--<%= number(2) %>');
+```
+
+#### `outputFileDefinition`
+
+JS file defining functions or array to resolve output file names. You can write functions which will be called with the current chartConfig, index and the whole chartConfig list and will be called when resolving each filename. If it's an array then the values will be used sequentially. You have to call this functions or array in the outputFile template.
+
+* **Type:** String
+
+**Example**
+
+```
+exportConfig.set('outputFileDefinition', 'resources/outputFileDefinition.js');
+```
