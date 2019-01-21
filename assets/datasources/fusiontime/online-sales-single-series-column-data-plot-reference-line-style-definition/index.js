@@ -20,14 +20,14 @@
                 "value": "Sales",
                 "type": "line"
             },
-            "referenceLine": {
+            "referenceLine": [{
                 "label": "Daily Target",
                 "value": 300,
-                "style": {
-                    "text": "colorstyle",
-                    "marker": "colorstyle"
+                style: {
+                    text: "colorstyle",
+                    marker: "colorstyle"
                 }
-            },
+            }],
         }
     }
 }
