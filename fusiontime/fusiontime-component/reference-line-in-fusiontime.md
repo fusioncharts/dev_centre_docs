@@ -81,7 +81,7 @@ In the above code, `colorStyle` object is called to set the color of the caption
 
 The chart after applying the above attributes will look like as shown below:
 
-{% embed_ftChart online-sales-single-series-style-definition-y-axis %}
+{% embed_ftChart online-sales-single-series-column-data-plot-reference-line-style-definition %}
 
 In the above sample, **font color** of the y-axis label has been changed. 
 
