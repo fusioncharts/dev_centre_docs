@@ -24,7 +24,8 @@
                 "label": "Daily Target",
                 "value": 300,
                 style: {
-                    title: "colorstyle"
+                    text: "colorstyle",
+                    marker: "colorstyle"
                 }
             }],
         }
