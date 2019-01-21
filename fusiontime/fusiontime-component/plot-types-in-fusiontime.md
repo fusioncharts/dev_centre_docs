@@ -20,11 +20,11 @@ By default, the chart renders with a line plot. However, you can specify the plo
 
 ```
 yaxis: {
-            "plot": {
-                "value": "Sales",
-                "type": "column"  
-            }
-        }
+    "plot": {
+        "value": "Sales",
+        "type": "column"  
+    }
+}
 ```
 
 In this article, we'll see different types of data plots to render a chart. 
