@@ -85,8 +85,7 @@ The schema contains an array which has multiple objects created in it. Each obje
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 
-> Note: It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
-
+> It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
 ```JSON
 let schema = [{
@@ -144,6 +143,7 @@ let data = [
     ]
 ]
 ```
+
 To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series/data.json)
 
 In the above code:
