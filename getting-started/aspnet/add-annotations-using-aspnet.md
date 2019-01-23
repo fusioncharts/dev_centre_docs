@@ -4,7 +4,8 @@ description: This article focuses on different type of configurations possible u
 heading: Add Annotations using ASP.NET
 ---
 
-> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. Download it now to take advantage of the following powerful features:
+> ### FusionCharts.NET (BETA)
+We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
 > * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
 > * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
 > * All methods and properties are available in Visual Studio intellisense.
