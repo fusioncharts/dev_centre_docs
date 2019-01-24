@@ -10,7 +10,7 @@ FusionTime is a product which is usd to plot time-series data. FusionTime helps 
 
 In this page, we'll see how to install FusionTime and render a chart using the `vue-fusiontcharts` component.
 
-Installation:
+## Installation
 
 To render charts in **Vue** using FusionTime:
 
@@ -97,7 +97,7 @@ The two methods to add `vue-fusioncharts` component to your project are:
 
 * Import **vue**, `vue-fusioncharts` and **FusionCharts** in main app file.
 
-```
+```javascript
 import Vue from `vue`;
 import VueFusionCharts from 'vue-fusioncharts';
 
@@ -108,7 +108,7 @@ import TimeSeries from 'fusioncharts/fusioncharts.timeseries;
 
 * Register it as plugin in your **Vue** object
 
-```
+```javascript
 Vue.use(VueFusionCharts, FusionCharts, TimeSeries);
 ```
 
@@ -118,7 +118,7 @@ Vue.use(VueFusionCharts, FusionCharts, TimeSeries);
 
 * Import the chart component from `vue-fusioncharts`** **component package to your component file and use **Vue.component** to register it locally.
 
-```
+```javascript
 import Vue from `vue`;
 import VueFusionChartsComponent from 'vue-fusioncharts/component';
 
@@ -160,7 +160,7 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
-SCHEMA
+**SCHEMA**
 
 In the above code:
 
@@ -178,7 +178,7 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 
 To add the data, let's create a `data.json` file and copy the following code:
 
-DATA
+**DATA**
 
 To view the full data click [here]
 
@@ -199,7 +199,7 @@ Now, let's create the `.js` and `.html` file to render the above chart.
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create a `JS` file and copy the following code:
 
-```
+```javascript
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
@@ -287,7 +287,7 @@ In the above code:
 
 The HTML template of the above example is:
 
-```
+```javascript
 <div id="app">
   <fusioncharts
     :width="width"
