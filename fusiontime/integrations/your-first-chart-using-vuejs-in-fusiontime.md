@@ -174,7 +174,16 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
-**SCHEMA**
+```json
+[{
+	"name": "Time",
+	"type": "date",
+	"format": "%d-%b-%y"
+}, {
+    "name": "Grocery Sales Value",
+    "type": "number"
+}]
+```
 
 In the above code:
 
@@ -192,7 +201,33 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 
 To add the data, let's create a `data.json` file and copy the following code:
 
-**DATA**
+```json
+[
+    [
+        "01-Feb-11",
+        8866
+    ],
+    [
+        "02-Feb-11",
+        2174
+    ],
+    [
+        "03-Feb-11",
+        2084
+    ],
+    [
+        "04-Feb-11",
+        1503
+    ],
+    [
+        "05-Feb-11",
+        4928
+    ],
+    ...
+    ...
+    ...
+]
+```
 
 To view the full data click [here].
 
