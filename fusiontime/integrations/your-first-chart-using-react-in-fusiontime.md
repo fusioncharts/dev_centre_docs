@@ -13,7 +13,6 @@ In this page, we'll see how to install FusionTime and render a chart using the `
 ## Installation
 
 To render charts in **React** using FusionTime:
-
 * Install **v13.3.3-sr.1** or later versions of **FusionCharts**.
 * Install **v3.0.0** or later versions of `react-fusioncharts`.
 
