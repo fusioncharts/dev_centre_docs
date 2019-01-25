@@ -1744,8 +1744,18 @@
                   "path": "/fusiontime/getting-started/export-charts-fusiontime"
                }
             ]
-         },
-         {
+         }, {
+            "title": "Integrations",
+            "children": [{
+                  "title": "Create Chart using VueJS",
+                  "path": "/fusiontime/integrations/your-first-chart-using-vuejs-in-fusiontime"
+               },
+               {
+                  "title": "Create Chart using React",
+                  "path": "/fusiontime/integrations/your-first-chart-using-react-in-fusiontime"
+               }
+            ]
+         }, {
             "title": "FusionTime Components",
             "children": [{
                   "title": "Time Axis",

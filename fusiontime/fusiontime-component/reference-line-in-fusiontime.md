@@ -63,18 +63,17 @@ styleDefinition: {
 
 Once the `StyleDefinition` is defined, you can refer it for the various components using `colorstyle` attribute.
 
-The syntax to set the `StyleDefintion` to the y-axis label is given below:
+The syntax to set the `StyleDefintion` to the label of the reference line is given below:
 
 ```json
-{
-    yAxis: [{
-        "plot": "Sales",
-        "title": "Sales",
-        style: {
-            title: "colorstyle"
-        }
-    }],
-}
+"referenceLine": [{
+    "label": "Daily Target",
+    "value": 300,
+    style: {
+        text: "colorstyle",
+        marker: "colorstyle"
+    }
+}],
 ```
 
 In the above code, `colorStyle` object is called to set the color of the caption.
@@ -83,29 +82,4 @@ The chart after applying the above attributes will look like as shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line-style-definition %}
 
-In the above sample, **font color** of the y-axis label has been changed. 
-
-The code to update the cosmetic properties of other elements in **y-axis** is given below:
-
-```json
-{
-    yAxis: [{
-        "title": "Sales",
-        style: {
-            "ticks": {
-                major: Style,
-                minor: Style,
-                context: Style
-            },
-            "text": {
-                major: Style,
-                minor: Style,
-                context: Style
-            },
-            "line": Style,
-            "gridLine": Style,
-            "gridBand": Style
-        }
-    }],
-}
-```
+In the above sample, **font color** of the y-axis label has been changed.
