@@ -354,11 +354,9 @@ class SimpleTimeSeries extends React.Component {
                     }
                 };
             }
-
             componentDidMount() {
                 this.onFetchData();
             }
-
             onFetchData() {
                 Promise.all([dataFetch, schemaFetch]).then(res =&gt; {
                     const data = res[0];
