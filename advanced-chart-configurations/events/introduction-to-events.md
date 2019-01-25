@@ -10,7 +10,7 @@ Events are signals that let you execute specific actions—such as manipulating 
 
 Events can be used for applications like monitoring the state of a system or a business. For example, you can listen to an event to observe the temperature of a deep freezer and display an alert message if the temperature falls below the minimum value.
 
-Take a look at the pie chart shown below:
+Take a look at the column chart shown below:
 
 {% embed_chart advanced-charting-events-introduction-example-1.js %}
 
