@@ -25,7 +25,6 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 The code to group the above tabular data with respect to the **Country** and **Quantity** column is shown below:
 
 ```
-
 GroupColumn columnData = new GroupColumn { 
 
 	"Country",
@@ -35,7 +34,6 @@ GroupColumn columnData = new GroupColumn {
 };
 
 DataModel groupModel = model.GroupBy(columnData);
-
 ```
 
 In the above code:
@@ -76,7 +74,6 @@ GroupColumn groupColumnSet = new GroupColumn
                 {"shippedDate",GroupColumn.DateGrouping.QUARTER }
 
             };
-
 ```
 
 In the above code:
