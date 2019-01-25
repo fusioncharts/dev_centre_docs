@@ -61,3 +61,45 @@ United States | 3
 India | 3 
 India | 1
 
+
+## DateGrouping
+
+You can modify the `GroupColumn` class to perform `DateGrouping`. Refer to the code below:
+
+```
+GroupColumn groupColumnSet = new GroupColumn
+            {
+                {"Country" },
+                {"OrderDate",GroupColumn.DateGrouping.YEAR },
+                {"city" },
+                {"sales" },
+                {"shippedDate",GroupColumn.DateGrouping.QUARTER }
+
+            };
+
+```
+
+In the above code:
+
+DateGrouping is an enum of type GroupColumn.DateGrouping. It accepts the following values:
+
+* YEAR
+
+* HALFYEAR
+
+* QUARTER
+
+* MONTH
+
+* DATE
+
+* HOUR
+
+* MINUTE
+
+* SECOND
+
+* MILLISECOND
+
+* NONE
+
