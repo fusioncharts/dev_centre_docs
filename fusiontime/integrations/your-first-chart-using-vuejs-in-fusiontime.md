@@ -180,7 +180,7 @@ To add the data, let's create a `data.json` file and copy the following code:
 
 **DATA**
 
-To view the full data click [here]
+To view the full data click [here].
 
 In the above code:
 

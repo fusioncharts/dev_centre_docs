@@ -64,3 +64,24 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 
 To add the data, let's create a `data.json` file and copy the following code:
 
+**DATA**
+
+To view the full data click [here].
+
+In the above code:
+
+* `data` is the variable in which the data array is saved.
+* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
+    * Time according to the format
+    * Total Sales amount 
+
+We are all set with our data to create the chart.
+
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](/fusiontime/getting-started/change-default-aggregation).
+
+Now, let's create the `.js` and `.html` file to render the above chart.
+
+### Create `JS` file
+
+Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create a `JS` file and copy the following code:
+
