@@ -88,9 +88,7 @@ $ npm install fusioncharts --save
 ## Usage
 
 The two methods to add `vue-fusioncharts` component to your project are:
-
 * Register globally as a plugin
-
 * Register locally in your component
 
 ### Registering globally as a plugin
