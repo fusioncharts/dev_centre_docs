@@ -143,8 +143,6 @@ The chart will look like as shown below:
 
 The data for the above chart is shown in the table below:
 
-The data for the above chart is shown in the table below:
-
 Time | Sales
 - | -
 01-Feb-11 | 8866
