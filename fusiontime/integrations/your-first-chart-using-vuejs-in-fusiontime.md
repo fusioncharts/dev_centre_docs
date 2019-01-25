@@ -139,7 +139,7 @@ Let's create a timeseries charts using `vue-fusioncharts` component showing **Sa
 
 The chart will look like as shown below:
 
-CHART
+{% embed_ftChart integrations-vuejs %}
 
 The data for the above chart is shown in the table below:
 
