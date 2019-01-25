@@ -85,3 +85,6 @@ Now, let's create the `.js` and `.html` file to render the above chart.
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create a `JS` file and copy the following code:
 
+```javascript
+
+```
