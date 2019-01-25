@@ -200,7 +200,7 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 To add the data, let's create a `data.json` file and copy the following code:
 
 ```json
-[
+var data = [
     [
         "01-Feb-11",
         8866

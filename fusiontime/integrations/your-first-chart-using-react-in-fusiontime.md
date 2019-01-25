@@ -107,11 +107,23 @@ $ npm install fusioncharts --save
 
 Now that you have installed, it's time to create your first time series chart using **FusionTime**. To start with we will create a simple time-series chart showcasing **Online sales of a SuperStore**. The chart will look like as shown below:
 
-CHART
+{% embed_ftChart integrations-react %}
 
 The data for the above chart is shown in the table below:
 
-TABLE
+Time | Sales
+- | -
+1/4/2011 | 16.448
+1/5/2011 | 272.736
+1/5/2011 | 11.784
+1/5/2011 | 3.54
+1/6/2011 | 19.536
+1/7/2011 | 2573.82
+1/7/2011 | 609.98
+... | ...
+... | ...
+... | ...
+... | ...
 
 To create the above chart, first let's understand the basics of FusionTime in short. In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
@@ -128,7 +140,16 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
-**SCHEMA**
+```json
+[{
+    "name": "Time",
+    "type": "date",
+    "format": "%-m/%-d/%Y"
+}, {
+    "name": "Sales",
+    "type": "number"
+}]
+```
 
 In the above code:
 
@@ -146,7 +167,37 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 
 To add the data, let's create a `data.json` file and copy the following code:
 
-**DATA**
+```json
+var data = [
+    [
+        "1/4/2011",
+        16.448
+    ],
+    [
+        "1/5/2011",
+        272.736
+    ],
+    [
+        "1/5/2011",
+        11.784
+    ],
+    [
+        "1/5/2011",
+        3.54
+    ],
+    [
+        "1/6/2011",
+        19.536
+    ],
+    [
+        "1/7/2011",
+        2573.82
+    ],
+    ...
+    ...
+    ...
+]
+```
 
 To view the full data click [here].
 
@@ -439,3 +490,19 @@ class SimpleTimeSeries extends React.Component {
 
 </div>
 </div>
+
+In the above code:
+
+* Create a React Component ChartViewer.
+* Add timeseriesDs in component state.
+* Include the fusioncharts library.
+* Include `data.json` and `schema.json` files.
+* Define the chart configuration in the FusionCharts constructor:
+* Set the type as `timeseries`.
+* Set the chart container as `container` using the `renderAt` property.
+* Set the width and height (in pixels).
+* Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
+* Set the data to create the chart.
+* Specify the caption of the chart using `text` attribute in `caption` object.
+* Create an empty storage as `fusionDataStore` using `FusionCharts.DataStore`.
+* Create a `DataTable` within the empty storage using `fusionDataStore.createDataTable` and pass the `schema` and `data` to the the `DataTable`.
