@@ -79,12 +79,273 @@ We are all set with our data to create the chart.
 
 > By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](/fusiontime/getting-started/change-default-aggregation).
 
-Now, let's create the `.js` and `.html` file to render the above chart.
-
-### Create `JS` file
+Now, let's create the file to render the above chart.
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create a `JS` file and copy the following code:
 
-```javascript
+The consolidated code is shown below:
 
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='localfiles'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
+
+<pre><code class="language-javascript">
+// Step 1 - Including react
+import React from 'react';
+
+// Step 2 - Including the react-fusioncharts component
+import FusionCharts from 'fusioncharts';
+
+// Step 3 - Including the fusiontime file
+import TimeSeries from 'fusioncharts/fusioncharts.timeseries';
+import ReactFC from '../lib/ReactFC';
+
+// Step 4 - Adding the chart as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, TimeSeries);
+
+// Step 5 - Creating the JSON object to store the chart configurations
+const jsonify = res => res.json();
+const dataFetch = fetch(
+'https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series-area-data-plot/data.json'
+).then(jsonify);
+const schemaFetch = fetch( 'https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series-area-data-plot/schema.json'
+).then(jsonify);
+
+class SimpleTimeSeries extends React.Component {
+    constructor(props) {
+        super(props);
+        // In this method we are fetching our data and schema from remote URLs and creating our DataTable
+        this.onFetchData = this.onFetchData.bind(this);
+        this.state = {
+            timeseriesDs: {
+                type: 'timeseries',
+                renderAt: 'container',
+                width: '600',
+                height: '400',
+                dataSource: {
+                    caption: { text: 'Online Sales of a SuperStore in the US' },
+                    data: null,
+                    yAxis: [{
+                        plot: [{
+                            value: 'Sales ($)'
+                        }]
+                    }]
+                }
+            }
+        };
+    }
+    // We are creating our DataStore immediately after a component is mounted
+    componentDidMount() {
+        this.onFetchData();
+    }
+    onFetchData() {
+        Promise.all([dataFetch, schemaFetch]).then(res => {
+            const data = res[0];
+            const schema = res[1];
+            // Here we are creating our DataTable
+            const fusionTable = new FusionCharts.DataStore().createDataTable(data, schema);
+            const timeseriesDs = Object.assign({}, this.state.timeseriesDs);
+            timeseriesDs.dataSource.data = fusionTable;
+            this.setState({
+                timeseriesDs
+            });
+        });
+    }
+    render() {
+        return (
+        <div>
+        {this.state.timeseriesDs.dataSource.data ? (
+        <ReactFC {...this.state.timeseriesDs} />
+        ) : (
+          'loading'
+        )}
+        </div>
+        );
+    }
+}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</div>
+
+<div class='tab cdn-tab'>
+<pre><code class="language-javascript">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;!-- Including react --&gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script&gt;
+    &lt;!-- Including react-dom --&gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script&gt;
+    &lt;!-- Including babel --&gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusiontime library to render charts --&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+    &lt;!-- Including react-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/react-fusioncharts@3.0.0/dist/react-fusioncharts.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/jsx"&gt;
+        ReactFC.fcRoot(FusionCharts);
+
+        const jsonify = res =&gt; res.json();
+        const dataFetch = fetch(  'https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-single-series/data.json').then(jsonify);
+
+        const schemaFetch = fetch('https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-single-series/schema.json').then(jsonify);
+    &lt;/script&gt;
+    &lt;script type="text/babel"&gt;
+        class ChartViewer extends React.Component {
+            constructor(props) {
+                super(props);
+                this.onFetchData = this.onFetchData.bind(this);
+                this.state = {
+                    timeseriesDs: {
+                        type: 'timeseries',
+                        renderAt: 'container',
+                        width: '600',
+                        height: '400',
+                        dataSource: {
+                            caption: { text: 'Online Sales of a SuperStore in the US' },
+                            data: null,
+                            yAxis: [{
+                                plot: [{
+                                    value: 'Sales ($)'
+                                }]
+                            }]
+                        }
+                    }
+                };
+            }
+
+            componentDidMount() {
+                this.onFetchData();
+            }
+
+            onFetchData() {
+                Promise.all([dataFetch, schemaFetch]).then(res =&gt; {
+                    const data = res[0];
+                    const schema = res[1];
+                    const fusionTable = new FusionCharts.DataStore().createDataTable(data, schema);
+                    const timeseriesDs = Object.assign({}, this.state.timeseriesDs);
+                    timeseriesDs.dataSource.data = fusionTable;
+                    this.setState({
+                        timeseriesDs
+                    });
+                });
+            }
+
+            render() {
+                return (
+                &lt;div&gt;
+                {this.state.timeseriesDs.dataSource.data ? (
+                &lt;ReactFC {...this.state.timeseriesDs} /&gt;
+                ) : (
+                'loading'
+                )}
+                &lt;/div&gt;
+                );
+            }
+        }
+
+        ReactDOM.render(
+            &lt;ChartViewer /&gt;,
+            document.getElementById('chart-container')
+        );
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id='chart-container'&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+
+<div class='tab localfiles-tab'>
+<pre><code class="language-javascript">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;!-- Including react --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt;
+    &lt;!-- Including react-dom --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.development.js"&gt;&lt;/script&gt;
+    &lt;!-- Including babel --&gt;
+    &lt;script type="text/javascript" src="path/to/local/babel.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusioncharts library to render charts --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.charts.js"&gt;&lt;/script&gt;
+    &lt;!-- Including react-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/jsx"&gt;
+    ReactFC.fcRoot(FusionCharts);
+    const chartConfigs = {
+        type: 'column2d',
+        renderAt: 'chart-container',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    };
+    &lt;/script&gt;
+    &lt;script type="text/jsx"&gt;
+    ReactDOM.render(
+        &lt;ReactFC {...chartConfigs} /&gt;,
+        document.getElementById('chart-container')
+    );
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id='chart-container'&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
