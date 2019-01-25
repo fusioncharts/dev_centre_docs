@@ -225,8 +225,6 @@ var data = [
 ]
 ```
 
-To view the full data click [here].
-
 In the above code:
 
 * `data` is the variable in which the data array is saved.
