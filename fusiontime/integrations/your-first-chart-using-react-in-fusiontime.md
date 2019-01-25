@@ -279,64 +279,72 @@ class SimpleTimeSeries extends React.Component {
     &lt;script type="text/javascript" src="path/to/local/babel.min.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusioncharts library to render charts --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.charts.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusiontime library to render charts --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
     &lt;!-- Including react-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
+    &lt;script type="text/babel"&gt;
     ReactFC.fcRoot(FusionCharts);
-    const chartConfigs = {
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion",
-            },
-            // Chart Data
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }
-    };
+
+    const jsonify = res =&gt; res.json();
+    const dataFetch = fetch(       'https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-single-series/data.json').then(jsonify);
+    const schemaFetch = fetch('https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-single-series/schema.json').then(jsonify);
     &lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactDOM.render(
-        &lt;ReactFC {...chartConfigs} /&gt;,
+        &lt;script type="text/jsx"&gt;
+        class ChartViewer extends React.Component {
+            constructor(props) {
+                super(props);
+                this.onFetchData = this.onFetchData.bind(this);
+                this.state = {
+                    timeseriesDs: {
+                        type: 'timeseries',
+                        renderAt: 'container',
+                        width: '600',
+                        height: '400',
+                        dataSource: {
+                            caption: { text: 'Online Sales of a SuperStore in the US' },
+                            data: null,
+                            yAxis: [{
+                                plot: [{
+                                    value: 'Sales ($)'
+                                }]
+                            }]
+                        }
+                    }
+                };
+            }
+            componentDidMount() {
+                this.onFetchData();
+            }
+            onFetchData() {
+                Promise.all([dataFetch, schemaFetch]).then(res =&gt; {
+                    const data = res[0];
+                    const schema = res[1];
+                    const fusionTable = new FusionCharts.DataStore().createDataTable(data, schema);
+                    const timeseriesDs = Object.assign({}, this.state.timeseriesDs);
+                    timeseriesDs.dataSource.data = fusionTable;
+                    this.setState({
+                        timeseriesDs
+                    });
+                });
+            }
+
+            render() {
+                return (
+                &lt;div&gt;
+                {this.state.timeseriesDs.dataSource.data ? (
+                &lt;ReactFC {...this.state.timeseriesDs} /&gt;
+                ) : (
+                'loading'
+                )}
+                &lt;/div&gt;
+                );
+            }
+        }
+        ReactDOM.render(
+        &lt;ChartViewer /&gt;,
         document.getElementById('chart-container')
-    );
+        );
     &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
