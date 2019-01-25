@@ -19,7 +19,89 @@ To render charts in **React** using FusionTime:
 
 Install **FusionTime** and the `react-fusioncharts` component using any of the following methods:
 
-CODE
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
+<div class='mt-30'><strong>To install FusionTime and the `react-fusioncharts` component via npm follow the steps below:</strong></div>
+<div class='mt-20'>1. Install the `react-fusioncharts` component</div>
+<pre><code class="language-javascript">
+$ npm install react-fusioncharts --save
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+<div class='mt-20'>2. Install `fusioncharts` package</div>
+<pre><code class="language-javascript">
+$ npm install fusioncharts --save
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab cdn-tab'>
+<div class='mt-30'><strong>To install FusionTime and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the [React](https://reactjs.org/)core library.
+        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>Include the **FusionCharts** JavaScript files from CDN.</li>
+        <li>Include FusionTime file.</li>
+        <li>Include the `react-fusioncharts` module.</li>
+    </ol>
+</div>
+<pre><code class="language-html">
+&lt;head&gt;
+    &lt;!-- Including react --&gt;
+	&lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script&gt;
+	&lt;!-- Including react-dom --&gt;
+	&lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script&gt;
+	&lt;!-- Including babel --&gt;
+	&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"&gt;&lt;/script&gt;
+	&lt;!-- Including the fusioncharts core library --&gt;
+	&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+	&lt;!-- Including the fusiontime file to render charts --&gt;
+	&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+	&lt;!-- Including react-fusioncharts component --&gt;
+	&lt;script type="text/javascript" src=" https://unpkg.com/react-fusioncharts@3.0.0/dist/react-fusioncharts.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab local-tab'>
+<div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the [React](https://reactjs.org/)core library.</li>
+        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the FusionTime file</li>
+        <li>Include the `react-fusioncharts` component.</li>
+    </ol>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Including react  --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
+    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 4 - Including FusionTime file --&gt;
+    &lt;script type="text/javascript" src=" path/to/local/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 5 - Including the react-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
 
 ## Create your First Chart
 
