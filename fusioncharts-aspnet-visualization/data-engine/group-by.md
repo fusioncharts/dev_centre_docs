@@ -62,7 +62,7 @@ India | 1
 
 ## DateGrouping
 
-You can modify the `GroupColumn` class to perform `DateGrouping`. Refer to the code below:
+If you want to perform `GroupBy` on a column of data type `DateTime`, you can use the `DateGrouping` enum of the class `GroupColumn`. Refer to the code below:
 
 ```
 GroupColumn groupColumnSet = new GroupColumn
@@ -74,11 +74,12 @@ GroupColumn groupColumnSet = new GroupColumn
                 {"shippedDate",GroupColumn.DateGrouping.QUARTER }
 
             };
+
 ```
 
 In the above code:
 
-DateGrouping is an enum of type GroupColumn.DateGrouping. It accepts the following values:
+`DateGrouping` is an enum of the type `GroupColumn.DateGrouping`. It accepts the following values:
 
 * YEAR
 
