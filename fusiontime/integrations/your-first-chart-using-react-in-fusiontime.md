@@ -496,11 +496,11 @@ In the above code:
 * Include the fusioncharts library.
 * Include `data.json` and `schema.json` files.
 * Define the chart configuration in the FusionCharts constructor:
-* Set the type as `timeseries`.
-* Set the chart container as `container` using the `renderAt` property.
-* Set the width and height (in pixels).
-* Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
-* Set the data to create the chart.
-* Specify the caption of the chart using `text` attribute in `caption` object.
+    * Set the type as `timeseries`.
+    * Set the chart container as `container` using the `renderAt` property.
+    * Set the width and height (in pixels).
+    * Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
+    * Set the data to create the chart.
+    * Specify the caption of the chart using `text` attribute in `caption` object.
 * Create an empty storage as `fusionDataStore` using `FusionCharts.DataStore`.
 * Create a `DataTable` within the empty storage using `fusionDataStore.createDataTable` and pass the `schema` and `data` to the the `DataTable`.
