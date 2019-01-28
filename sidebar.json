@@ -5,7 +5,7 @@
       "description": "Plot 95+ charts and 1400+ data-driven maps",
       "children": [{
             "title": "Overview",
-            "path": "/"
+            "path": "/fusioncharts"
          }, {
             "title": "Getting Started ",
             "children": [{
@@ -1058,7 +1058,8 @@
             "title": "Configuring your charts",
             "children": [{
                   "title": "By Chart Type",
-                  "children": [{
+                  "children": [
+                     {
                         "title": "List of Charts ",
                         "path": "/chart-guide/list-of-charts"
                      },
@@ -1944,33 +1945,34 @@
          {
             "title": "API Reference",
             "children": [{
-               "title": "FusionExport Server",
-               "path": "/exporting-charts/using-fusionexport/fusionexport-server"
-            },
-            {
-               "title": "SDK API Reference",
-               "children": [{
-                     "title": "C#",
-                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/c-sharp"
-                  },
-                  {
-                     "title": "Java",
-                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/java"
-                  },
-                  {
-                     "title": "PHP",
-                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/php"
-                  },
-                  {
-                     "title": "Node.js",
-                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/nodejs"
-                  },
-                  {
-                     "title": "Python",
-                     "path": "/exporting-charts/using-fusionexport/sdk-api-reference/python"
-                  }
-               ]
-            }]
+                  "title": "FusionExport Server",
+                  "path": "/exporting-charts/using-fusionexport/fusionexport-server"
+               },
+               {
+                  "title": "SDK API Reference",
+                  "children": [{
+                        "title": "C#",
+                        "path": "/exporting-charts/using-fusionexport/sdk-api-reference/c-sharp"
+                     },
+                     {
+                        "title": "Java",
+                        "path": "/exporting-charts/using-fusionexport/sdk-api-reference/java"
+                     },
+                     {
+                        "title": "PHP",
+                        "path": "/exporting-charts/using-fusionexport/sdk-api-reference/php"
+                     },
+                     {
+                        "title": "Node.js",
+                        "path": "/exporting-charts/using-fusionexport/sdk-api-reference/nodejs"
+                     },
+                     {
+                        "title": "Python",
+                        "path": "/exporting-charts/using-fusionexport/sdk-api-reference/python"
+                     }
+                  ]
+               }
+            ]
          },
          {
             "title": "CLI Reference",
