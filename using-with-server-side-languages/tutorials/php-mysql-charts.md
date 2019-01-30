@@ -396,4 +396,8 @@ Now load the HTML in the browser using the URL: `http://localhost/chart_sample.h
 
 {% embed_chart php-mysql-charts-example-1.js %}
 
-**Note:** You can download the complete sample as a zip from [here](http://cdn.fusioncharts.com/downloads/samples/interactive_php_mysql_charts.zip) and unzip it in the **BITNAMI_INSTALL_DIR\apache2\htdocs** folder to get the sample running.
+<div class="text-center">
+   <a class="btn btn-primary-grad text-uppercase" href="https://cdn.fusioncharts.com/downloads/dev-center-resources/interactive-php-mysql-charts.zip" download title="click me to download"><i class="fc_download"></i>Download the Sample</a>
+</div>
+
+> Please unzip it in the **BITNAMI_INSTALL_DIR\apache2\htdocs** folder to get the sample running.

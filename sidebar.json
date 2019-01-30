@@ -3,6 +3,7 @@
       "header": "FusionCharts Suite XT",
       "icon": "fc_fusioncharts_xt",
       "description": "Plot 95+ charts and 1400+ data-driven maps",
+      "longDescription":"Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
       "children": [{
             "title": "Overview",
             "path": "/fusioncharts"
@@ -1705,6 +1706,7 @@
    {
       "title": "FusionTime",
       "description": "Plot high performance time-series visualizations",
+      "longDescription":"Learn how to create time-series and stock charts in JavaScript",
       "badge": "Beta",
       "icon": "fc_fusiontime",
       "children": [{
@@ -1745,8 +1747,18 @@
                   "path": "/fusiontime/getting-started/export-charts-fusiontime"
                }
             ]
-         },
-         {
+         }, {
+            "title": "Integrations",
+            "children": [{
+                  "title": "Create Chart using VueJS",
+                  "path": "/fusiontime/integrations/your-first-chart-using-vuejs-in-fusiontime"
+               },
+               {
+                  "title": "Create Chart using React",
+                  "path": "/fusiontime/integrations/your-first-chart-using-react-in-fusiontime"
+               }
+            ]
+         }, {
             "title": "FusionTime Components",
             "children": [{
                   "title": "Time Axis",
@@ -1844,6 +1856,7 @@
       "title": "FusionExport",
       "icon": "fc_fusionexport",
       "description": "Export full Dashboards as PDFs for use in reports and emails",
+      "longDescription":"Learn how to export full dashboards in your server",
       "children": [{
             "title": "Overview",
             "path": "/exporting-charts/using-fusionexport/overview"
@@ -1989,6 +2002,7 @@
       "title": "FusionCharts.NET",
       "icon": "fc_net",
       "description": "Charting library for ASP.NET MVC & ASP.NET WebForms",
+      "longDescription":"Learn how to implement FusionCharts in ASP.NET MVC and WebForms using our .NET assembly",
       "badge": "Beta",
       "children": [{
             "title": "Overview",
@@ -2148,3 +2162,4 @@
       ]
    }
 ]
+

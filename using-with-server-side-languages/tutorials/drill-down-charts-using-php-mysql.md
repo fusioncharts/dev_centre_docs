@@ -38,7 +38,7 @@ To create a MySQL database, you will be required to access the MySQL database se
 
 Once we login to the database server, we will use the below commands to create a database for the drill-down sample.
 
-```php
+```sql
 CREATE DATABASE IF NOT EXISTS drilldown;
 USE drilldown;
 ```
@@ -51,7 +51,7 @@ Once the database is created and selected, it's time to create the tables that w
 
 Now, let's create the tables, using the code shown below:
 
-```php
+```sql
 --
 -- Definition of table `monthly_sales`
 --
@@ -82,7 +82,7 @@ CREATE TABLE `yearly_sales` (
 
 Once the tables are created, we'll seed them with some data
 
-```php
+```sql
 --
 -- Dumping data for table `monthly_sales`
 --
@@ -210,7 +210,7 @@ INSERT INTO `yearly_sales` (`Year`,`Sales`) VALUES
 
 We can verify whether the data is inserted by running the `SELECT SQL` command as shown below:
 
-```php
+```sql
 mysql> select * from yearly_sales;
 +------+-------+
 | Year | Sales |
@@ -313,7 +313,7 @@ We’ll start with the data for the year 2011. In the code below, you can see th
 
 The final JSON code that we need for this sample should be as shown below:
 
-```javascript
+```json
 {
    "chart":{
       "caption":"YoY Sales - KFC",
@@ -1434,7 +1434,7 @@ $columnChart->render();    //Render Method
 Therefore, the complete code for this sample will be as shown below:
 
 ```php
- <?php
+<?php
 //including FusionCharts PHP Wrapper
 include("fusioncharts/fusioncharts.php"); 
 $hostdb   = "localhost"; // MySQl host
@@ -1612,12 +1612,7 @@ if ($result) {
  
                     $i++;
                 }
-			
-				
-				
-				
-            }
-			 
+            } 
         }
 			
        //Convert the array created into JSON as our chart would recieve the dat ain JSON
@@ -1660,6 +1655,6 @@ The final chart, with two levels of drill-down, will look as shown below:
 
 {% embed_chart drill-down-charts-using-php-mysql-example-1.js %}
 
-<div style="text-align: center;">
-  <a style="display: inline-block; width: auto; outline: none; padding: 20px 60px; margin-bottom: 10px; font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 600; color: #fff; text-align: center; vertical-align: middle; background-color: #167ed5; -webkit-border-radius: 2px; -webkit-border-radius: 0.2rem; -moz-border-radius: 2px; -moz-border-radius: 0.2rem; border-radius: 2px; border-radius: 0.2rem; cursor: pointer; -webkit-appearance: none; text-decoration: none;" href="https://static.fusioncharts.com/sample/dev2.0/php-mysql-multilevel-drill-down.zip" target="_blank" title="click me to download" >Download the Sample</a>
+<div class="text-center">
+   <a class="btn btn-primary-grad text-uppercase" href="https://cdn.fusioncharts.com/downloads/dev-center-resources/php-mysql-multilevel-drill-down.zip" download title="click me to download"><i class="fc_download"></i>Download the Sample</a>
 </div>

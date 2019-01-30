@@ -10,7 +10,7 @@ FusionTime is a product which is usd to plot time-series data. FusionTime helps 
 
 In this page, we'll see how to install FusionTime and render a chart using the `vue-fusiontcharts` component.
 
-Installation:
+## Installation
 
 To render charts in **Vue** using FusionTime:
 
@@ -88,16 +88,14 @@ $ npm install fusioncharts --save
 ## Usage
 
 The two methods to add `vue-fusioncharts` component to your project are:
-
 * Register globally as a plugin
-
 * Register locally in your component
 
 ### Registering globally as a plugin
 
 * Import **vue**, `vue-fusioncharts` and **FusionCharts** in main app file.
 
-```
+```javascript
 import Vue from `vue`;
 import VueFusionCharts from 'vue-fusioncharts';
 
@@ -108,7 +106,7 @@ import TimeSeries from 'fusioncharts/fusioncharts.timeseries;
 
 * Register it as plugin in your **Vue** object
 
-```
+```javascript
 Vue.use(VueFusionCharts, FusionCharts, TimeSeries);
 ```
 
@@ -118,7 +116,7 @@ Vue.use(VueFusionCharts, FusionCharts, TimeSeries);
 
 * Import the chart component from `vue-fusioncharts`** **component package to your component file and use **Vue.component** to register it locally.
 
-```
+```javascript
 import Vue from `vue`;
 import VueFusionChartsComponent from 'vue-fusioncharts/component';
 
@@ -139,11 +137,23 @@ Let's create a timeseries charts using `vue-fusioncharts` component showing **Sa
 
 The chart will look like as shown below:
 
-CHART
+{% embed_ftChart integrations-vuejs %}
 
 The data for the above chart is shown in the table below:
 
-TABLE
+Time | Sales
+- | -
+01-Feb-11 | 8866
+02-Feb-11 | 2174
+03-Feb-11 | 2084
+04-Feb-11 | 1503
+05-Feb-11 | 4928
+06-Feb-11 | 4667
+07-Feb-11 | 1064
+... | ...
+... | ...
+... | ...
+... | ...
 
 To create the above chart, first let's understand the basics of FusionTime in short. In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
@@ -160,7 +170,16 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
-SCHEMA
+```json
+[{
+	"name": "Time",
+	"type": "date",
+	"format": "%d-%b-%y"
+}, {
+    "name": "Grocery Sales Value",
+    "type": "number"
+}]
+```
 
 In the above code:
 
@@ -178,9 +197,33 @@ In FusionTime, to add values to the `DataTable` you can provide the data in both
 
 To add the data, let's create a `data.json` file and copy the following code:
 
-DATA
-
-To view the full data click [here]
+```json
+var data = [
+    [
+        "01-Feb-11",
+        8866
+    ],
+    [
+        "02-Feb-11",
+        2174
+    ],
+    [
+        "03-Feb-11",
+        2084
+    ],
+    [
+        "04-Feb-11",
+        1503
+    ],
+    [
+        "05-Feb-11",
+        4928
+    ],
+    ...
+    ...
+    ...
+]
+```
 
 In the above code:
 
@@ -199,7 +242,7 @@ Now, let's create the `.js` and `.html` file to render the above chart.
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create a `JS` file and copy the following code:
 
-```
+```javascript
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
@@ -287,7 +330,7 @@ In the above code:
 
 The HTML template of the above example is:
 
-```
+```javascript
 <div id="app">
   <fusioncharts
     :width="width"
