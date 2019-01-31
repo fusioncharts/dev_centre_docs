@@ -131,6 +131,10 @@ The code to retrieve data from the `DataModel` is given below:
 DataTable table = model.Data // Output of the data format is DataTable
 ```
 
+## DataModel Schema
+
+
+
 ## Set Date/Time format
 
 To set the date/time format of the Data, set DataSourceDateformat  property of DataModel instance.
