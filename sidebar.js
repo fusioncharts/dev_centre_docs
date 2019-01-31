@@ -2136,10 +2136,6 @@
                   "path": "/fusioncharts-aspnet-visualization/data-engine/group-by"
                },
                {
-                  "title": "Pivot",
-                  "path": "/fusioncharts-aspnet-visualization/data-engine/pivot"
-               },
-               {
                   "title": "Data Aggregation",
                   "path": "/fusioncharts-aspnet-visualization/data-engine/aggregation"
                },
@@ -2164,4 +2160,3 @@
       ]
    }
 ]
-
