@@ -25,29 +25,20 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 The code to group the above tabular data with respect to the **Country** and **Quantity** column is shown below:
 
 ```
-
-GroupColumn columnData = new GroupColumn { 
-
+GroupColumn columnData = new GroupColumn {
 	"Country",
-
 	"Quantity"
-
 };
 
 DataModel groupModel = model.GroupBy(columnData);
-
 ```
 
 In the above code:
 
 * **GroupColumn** is a class.
-
 * **columnData** is the class object which holds information of the data to be grouped.
-
 * **Country** and **Quantity** are the column names from the above tabular data.
-
 * **DataModel** is a class.
-
 * **groupModel** is the object which holds the resultant data.
 
 The output after running the above code looks like:
@@ -61,3 +52,29 @@ United States | 3
 India | 3 
 India | 1
 
+If you want to perform `GroupBy` on a column of data type `DateTime`, you can use the `DateGrouping` enum of the class `GroupColumn`. Refer to the code below:
+
+```
+GroupColumn groupColumnSet = new GroupColumn {
+	{"Country" },
+	{"OrderDate",GroupColumn.DateGrouping.YEAR },
+	{"city" },
+	{"sales" },
+	{"shippedDate",GroupColumn.DateGrouping.QUARTER }
+};
+```
+
+In the above code:
+
+`DateGrouping` is an enum of the type `GroupColumn.DateGrouping`. It accepts the following values:
+
+* YEAR
+* HALFYEAR
+* QUARTER
+* MONTH
+* DATE
+* HOUR
+* MINUTE
+* SECOND
+* MILLISECOND
+* NONE
