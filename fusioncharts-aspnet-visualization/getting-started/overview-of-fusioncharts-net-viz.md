@@ -18,9 +18,9 @@ FusionCharts.NET helps you avoid writing messy JavaScript and JSON code within y
 
 * **Visualization** - The visualization module of FusionCharts.NET allows you to render the chart with functional and cosmetic configurations, after receiving the data from the data engine. 
 
-##  Native ASP.NET wrapper vs FusionCharts.NET
+##  FusionCharts ASP.NET wrapper vs FusionCharts.NET
 
-Native ASP.NET wrapper|FusionCharts.NET|
+FusionCharts ASP.NET wrapper|FusionCharts.NET|
 -|-
 Provide data manually as JSON/XML to the chart renderer. |Provide the raw data and the data engine converts the raw data into an acceptable format to render the chart.
 Static data only, no option to slice and dice the data. |Dynamic data, option to slice and dice the data using the data operators available.
