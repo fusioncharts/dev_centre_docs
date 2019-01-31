@@ -6,7 +6,7 @@ heading: Create a Chart in Vue Using FusionTime
 
 ## Overview
 
-FusionTime is a product which is usd to plot time-series data. FusionTime helps to evaluate patterns and trends in time-series data over a period of time. We have build a simple `vue-fusioncharts` component which provides bindings for FusionTime. The `vue-fusioncharts` component allows you to easily add rich and interactive charts to any **Vue** project.
+FusionTime is a product which is used to plot time-series data. FusionTime helps to evaluate patterns and trends in time-series data over a period of time. We have built a simple `vue-fusioncharts` component which provides bindings for FusionTime. The `vue-fusioncharts` component allows you to easily add rich and interactive charts to any **Vue** project.
 
 In this page, we'll see how to install FusionTime and render a chart using the `vue-fusiontcharts` component.
 
@@ -93,7 +93,7 @@ The two methods to add `vue-fusioncharts` component to your project are:
 
 ### Registering globally as a plugin
 
-* Import **vue**, `vue-fusioncharts` and **FusionCharts** in main app file.
+* Import **vue**, `vue-fusioncharts`, and **FusionCharts** in main app file.
 
 ```javascript
 import Vue from `vue`;
@@ -104,7 +104,7 @@ import FusionCharts from 'fusioncharts';
 import TimeSeries from 'fusioncharts/fusioncharts.timeseries;
 ```
 
-* Register it as plugin in your **Vue** object
+* Register it as a plugin in your **Vue** object
 
 ```javascript
 Vue.use(VueFusionCharts, FusionCharts, TimeSeries);
@@ -135,7 +135,7 @@ Vue.component('fusioncharts', vueFusionCharts);
 
 Let's create a timeseries charts using `vue-fusioncharts` component showing **Sales Analysis of a Grocery shop**.
 
-The chart will look like as shown below:
+The chart will look as shown below:
 
 {% embed_ftChart integrations-vuejs %}
 
@@ -155,7 +155,7 @@ Time | Sales
 ... | ...
 ... | ...
 
-To create the above chart, first let's understand the basics of FusionTime in short. In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
+In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
 * The `schema` which defines the properties of the columns.  
 * The `actual` values for each row and column of the `DataTable` as the data.
@@ -187,7 +187,7 @@ In the above code:
 * Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
     * name - Specify the name of the column.
     * type - Specify the type of the column.
-	* format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
+	* format - Specify the input format of the date as per your data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
 
 Now that we have the schema ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
@@ -228,7 +228,7 @@ var data = [
 In the above code:
 
 * `data` is the variable in which the data array is saved.
-* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
+* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represent the following:
     * Time according to the format
     * Total Sales amount 
 
@@ -302,7 +302,7 @@ const chart = new Vue({
 
 In the above code:
 
-* Include Vue and vue-fusioncharts component.
+* Include Vue and `vue-fusioncharts` component.
 
 * Include the fusioncharts library.
 
@@ -322,11 +322,11 @@ In the above code:
 
     * Set the data to create the chart.
 
-    * Specify the caption of the chart using `text` attribute in `caption` object.
+    * Specify the caption of the chart using `text` attribute in the `caption` object.
 
 * Create an empty storage as `fusionDataStore` using `FusionCharts.DataStore`.
 
-* Create a `DataTable` within the empty storage using `fusionDataStore.createDataTable` and pass the `schema` and `data` to the the `DataTable`.
+* Create a `DataTable` within the empty storage using `fusionDataStore.createDataTable` and pass the `schema` and `data` to the `DataTable`.
 
 The HTML template of the above example is:
 

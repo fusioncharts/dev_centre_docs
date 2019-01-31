@@ -29,6 +29,67 @@ source.Dispose()
 
 In the above code, `source` is the object of `StaticSource` class.
 
+## MSSQL Source
+
+Apart from Static Source, the DataEngine of FusionCharts.NET also lets you use data from an MSSQL server. Here's how you should proceed to do that:
+
+### Configure data source
+
+Before the FusionCharts DataEngine can fetch data from MSSQL, it needs to connect to the server. The DataEngine can do so in one of the following ways:
+
+**SQL Authentication**
+
+If the MSSQL server has SQL authentication, refer to the command given below:
+
+```
+/* create object */
+/* SQL Authentication */
+
+MsSqlClass msSql = new MsSqlClass("username", "password", "servername", "databasename", sourcetype, "sourcename")
+```
+
+In the above command:
+
+* `username` is the username for the MSSQL server
+* `password` is the password for the MSSQL server
+* `servername` is the name of the MSSQL server
+* `databasename` is the name of the database you want DataEngine to connect to
+* `sourcetype` is the type of data source you want DataEngine to fetch the data from. It is an enum of type DataBaseClass.SourceType. It can take the values of `TABLE`, `VIEW`, or `QUERY`.
+* `sourcename` is the name of the data source. If you want DataEngine to use a table or a view as the source, provide the name of the respective table/view. If you want to use the result of a query as the source, provide the query string.
+
+**Windows Authentication**
+
+If the MSSQL server has Windows authentication, refer to the command given below:
+
+```
+/* create object */
+/* Windows Authentication */
+MsSqlClass msSql = new MsSqlClass("servername","databasename", sourcetype, "sourcename")|
+```
+
+In the above command:
+
+* `servername` is the name of the MSSQL server
+* `databasename` is the name of the database you want DataEngine to connect to
+* `sourcetype` is the type of data source you want DataEngine to fetch the data from. It is an enum of type DataBaseClass.SourceType. It can take the values of `TABLE`, `VIEW`, or `QUERY`.
+* `sourcename` is the name of the data source. If you want the DataEngine to use a table or a view as the source, provide the name of the respective table/view. If you want the DataEngine to use the result of a query as the source, provide the query string.
+
+**Connection String**
+
+If you want to use a different type of authentication apart from the two given above, you need to provide a connection string to the DataEngine. Refer to the command given below:
+
+```
+/* create object */
+/* provide connection string from user end */
+MsSqlClass msSql = new MsSqlClass("connectionstring", sourcetype, "sourcename")
+```
+
+In the above command:
+
+* `connectionstring` is the connection string. 
+* `sourcetype` is the type of data source you want DataEngine to fetch the data from. It is an enum of type DataBaseClass.SourceType. It can take the values of `TABLE`, `VIEW`, or `QUERY`.
+* `sourcename` is the name of the data source. If you want the DataEngine to use a table or a view as the source, provide the name of the respective table/view. If you want to use the result of a query as the source, provide the query string.
+
 ## DataModel
 
 ### Create
@@ -69,6 +130,10 @@ The code to retrieve data from the `DataModel` is given below:
 ```
 DataTable table = model.Data // Output of the data format is DataTable
 ```
+
+## DataModel Schema
+
+
 
 ## Set Date/Time format
 
