@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating chart u
 heading: Add Multiple Data Plots
 ---
 
-Previously, we have learned how to create a [simple chart](/fusiontime/getting-started/create-your-first-chart-in-fusiontime) with one plot type. FusionTime allows you to visualize charts with multiple plots.  
+Previously, we have learned how to create a [simple chart](/fusiontime/getting-started/create-your-first-chart-in-fusiontime) with one data plot. FusionTime allows you to visualize charts with multiple plots.  
 
 In this article, we'll create our first chart with multiple plots which will compare online sales of SuperStore in the **US** and **India**. 
 
