@@ -153,7 +153,7 @@ FusionCharts.register('theme', {
         column2d: {
             dataset: {
                 data: function(dataObj) {
-                    retrun {
+                    return {
                         color: (Number(dataObj.value) < 0 ? "#3333FF" : "#CC0000")
                     }
                 }
