@@ -133,11 +133,19 @@ DataTable table = model.Data // Output of the data format is DataTable
 
 ## DataModel Schema
 
+To get the schema of the chart, set `ColumnSchema` of the DataModel schema.
 
+The code is given below:
+
+```
+List<Schema> modelSchema = model.ColumnSchema
+```
+
+In the above code, `<Schema>` is a class from FusionCharts DataEngine.
 
 ## Set Date/Time format
 
-To set the date/time format of the Data, set DataSourceDateformat  property of DataModel instance.
+To set the date/time format of the Data, set DataSourceDateformat property of DataModel instance.
 
 To set the date/time format of the data, set the `DataSourceDateformat` property of DataModel instance. The code is given below:
 

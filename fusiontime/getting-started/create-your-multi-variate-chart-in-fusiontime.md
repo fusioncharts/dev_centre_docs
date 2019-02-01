@@ -54,9 +54,7 @@ In the above code:
 
 * `schema` is the variable in which the array is saved.
 
-* The first object creates the first column in the `DataTable`. In the above sample **Country** is the name of the column. 
-
-* The second object set the **date/time** [format](/fusiontime/api-reference/fusiontime-attributes#datetime-format) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
+* The first object creates the first column in the `DataTable`. The first object sets the **date/time** [format](/fusiontime/api-reference/fusiontime-attributes#datetime-format) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
 
 * The next three are the columns for three measures of the chart:
 
@@ -121,8 +119,6 @@ In the above code:
 * `data` is the variable in which the data array is saved. 
 
 * For each data plot in the chart, an array is created which consists of values for each row in the `DataTable`. The values in the array represent:
-
-    * The name of the **Country** from which the product has been ordered.
 
     * **Order date** in the format defined.
 
