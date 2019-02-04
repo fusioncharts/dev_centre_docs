@@ -133,7 +133,7 @@ DataTable table = model.Data // Output of the data format is DataTable
 
 ## DataModel Schema
 
-To get the schema of the chart, set `ColumnSchema` of the DataModel schema.
+`ColumnSchema` of the DataModel data is used to get the schema.
 
 The code is given below:
 
@@ -141,7 +141,7 @@ The code is given below:
 List<Schema> modelSchema = model.ColumnSchema
 ```
 
-In the above code, `<Schema>` is a class from FusionCharts DataEngine.
+In the above code, `Schema` is a class from FusionCharts DataEngine.
 
 ## Set Date/Time format
 
