@@ -112,19 +112,19 @@ The chart will look as shown below:
 
 The data for the above chart is shown in the table below:
 
-Time | Sales
-- | -
-1/4/2011 | 16.448
-1/5/2011 | 272.736
-1/5/2011 | 11.784
-1/5/2011 | 3.54
-1/6/2011 | 19.536
-1/7/2011 | 2573.82
-1/7/2011 | 609.98
-... | ...
-... | ...
-... | ...
-... | ...
+| Time     | Sales   |
+| -------- | ------- |
+| 1/4/2011 | 16.448  |
+| 1/5/2011 | 272.736 |
+| 1/5/2011 | 11.784  |
+| 1/5/2011 | 3.54    |
+| 1/6/2011 | 19.536  |
+| 1/7/2011 | 2573.82 |
+| 1/7/2011 | 609.98  |
+| ...      | ...     |
+| ...      | ...     |
+| ...      | ...     |
+| ...      | ...     |
 
 In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
@@ -199,6 +199,8 @@ var data = [
     ...
 ]
 ```
+
+To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series/data.json)
 
 In the above code:
 

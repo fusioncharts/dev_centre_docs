@@ -141,19 +141,19 @@ The chart will look as shown below:
 
 The data for the above chart is shown in the table below:
 
-Time | Sales
-- | -
-01-Feb-11 | 8866
-02-Feb-11 | 2174
-03-Feb-11 | 2084
-04-Feb-11 | 1503
-05-Feb-11 | 4928
-06-Feb-11 | 4667
-07-Feb-11 | 1064
-... | ...
-... | ...
-... | ...
-... | ...
+| Time      | Sales |
+| --------- | ----- |
+| 01-Feb-11 | 8866  |
+| 02-Feb-11 | 2174  |
+| 03-Feb-11 | 2084  |
+| 04-Feb-11 | 1503  |
+| 05-Feb-11 | 4928  |
+| 06-Feb-11 | 4667  |
+| 07-Feb-11 | 1064  |
+| ...       | ...   |
+| ...       | ...   |
+| ...       | ...   |
+| ...       | ...   |
 
 In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
@@ -224,6 +224,8 @@ var data = [
     ...
 ]
 ```
+
+To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-vuejs/data.json)
 
 In the above code:
 
