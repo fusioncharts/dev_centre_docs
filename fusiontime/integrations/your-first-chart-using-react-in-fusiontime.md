@@ -205,9 +205,10 @@ To view the full data click [here](https://raw.githubusercontent.com/fusionchart
 In the above code:
 
 * `data` is the variable in which the data array is saved.
-* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
-    * Time according to the format
-    * Total Sales amount 
+* Each row in the data array corresponds to a row in the `DataTable`.
+* Each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
+  * Time according to the format
+  * Total Sales amount 
 
 We are all set with our data to create the chart.
 

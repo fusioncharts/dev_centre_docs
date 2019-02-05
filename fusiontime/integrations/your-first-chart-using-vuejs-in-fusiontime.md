@@ -335,7 +335,7 @@ In the above code:
 
 The HTML template of the above example is:
 
-```javascript
+```html
 <div id="app">
   <fusioncharts
     :width="width"
