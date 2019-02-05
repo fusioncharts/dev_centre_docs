@@ -12,7 +12,6 @@ In this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Installation
 
-
 In this section, we will show you how to install FusionCharts Suite XT and the `FusionCharts JSP` wrapper and all the other dependencies on your system.
 
 > The **FusionCharts JSP wrapper** requires **JAVA 6** or higher.
@@ -64,18 +63,20 @@ Let's create a Column 2D chart using the `jsp-fusioncharts` wrapper showing the 
 
 {% embed_chart getting-started-your-first-chart.js %}
 
+To understand the chart components, click [here](/understanding-fusioncharts).
+
 The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves|
--|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 ## Convert Tabular Data into JSON Format
 

@@ -40,18 +40,20 @@ The Column 2D chart is shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
+To understand the chart components, click [here](/understanding-fusioncharts).
+
 The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves||
--|-|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 ## Convert tabular data into JSON format
 
@@ -228,7 +230,6 @@ Add `fusioncharts` component to your `chart-viewer.hbs` template to render the c
 
 ```html
 <h1>{{ title }}</h1>
-
 {{fusioncharts-xt
     width=width
     height=height
