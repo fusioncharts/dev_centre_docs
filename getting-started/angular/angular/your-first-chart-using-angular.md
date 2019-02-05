@@ -16,13 +16,13 @@ To install **FusionCharts** and the `angular-fusioncharts` component via `npm` f
 
 **Step 1:** Install `angular-fusioncharts`
 
-```
+```bash
 $ npm install angular-fusioncharts --save
 ```
 
 **Step 2:** Install fusioncharts core library
 
-```
+```bash
 $ npm install fusioncharts --save
 ```
 
@@ -38,18 +38,20 @@ The Column 2D chart is shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
+To understand the chart components, click [here](/understanding-fusioncharts).
+
 The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves||
--|-|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 ## Convert tabular data into JSON format
 
@@ -125,7 +127,7 @@ To render the chart follow the steps below:
 
 The consolidated code is shown below:
 
-```
+```javascript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -178,7 +180,7 @@ Set the JSON data within the `AppComponent` class as shown below:
 
 > The code below is same for Angular older and latest versions.
 
-```
+```javascript
 import {Component} from '@angular/core';
 @Component({
     selector: 'app-root',
@@ -237,17 +239,16 @@ Create the chart container and set the following:
 
 * The data source.
 
-```
+```html
 <h1>
   {{title}}
 </h1>
 <fusioncharts
     width="700"
-    height="400" 
+    height="400"
     type="Column2d"
     [dataSource]="dataSource">
-</fusioncharts> 
-
+</fusioncharts>
 ```
 
 That's it! Your first chart using `angular-fusioncharts` is ready.

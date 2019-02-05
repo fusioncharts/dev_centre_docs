@@ -26,7 +26,7 @@ By default, the standard range selector is visible in every chart. However, to t
 
 Refer to the code below:
 
-```
+```javascript
 {
     type: 'timeseries',
     ...
@@ -35,10 +35,10 @@ Refer to the code below:
         ...
         // Show/Hide Custom Range Selector
         "extensions": {
-			"standardRangeSelector": {
-				"enabled": "0"
-			}
-		}
+            "standardRangeSelector": {
+                "enabled": "0"
+            }
+        }
     }
 }
 ```

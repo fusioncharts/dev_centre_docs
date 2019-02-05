@@ -59,22 +59,24 @@ That completes the installation of FusionCharts Suite and the PHP wrapper.
 
 Let's create a Column 2D chart using the `php-fusioncharts` wrapper showing the "Countries With Most Oil Reserves".
 
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 {% embed_chart getting-started-your-first-chart.js %}
 
+To understand the chart components, click [here](/understanding-fusioncharts).
+
 The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves
--|-
-Venezuela|290
-Saudi|260
-Canada|180
-Iran|140
-Russia|115
-UAE|100
-US|30
-China|30
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 ## Convert Tabular Data into JSON Format
 
@@ -152,7 +154,7 @@ To render the chart, follow the steps below:
 
 9. Create the chart instance and set the following:
 
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
     * Set the chart `id`.
 

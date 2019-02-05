@@ -14,7 +14,7 @@ In this article, we will show you how to install and render a chart using the **
 
 In this article, we will show you how to download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
 
-* Copy the 'fusionCharts-rails.rb` from `integrations > rubyonrails > fusioncharts-wrapper` in your project folder.
+* Copy the `fusionCharts-rails.rb` from `integrations > rubyonrails > fusioncharts-wrapper` in your project folder.
 
 * Include the **FusionCharts** JavaScript files, which can be downloaded from here.
 
@@ -52,9 +52,8 @@ In this article, we will show you how to download and install the **FusionCharts
 </div>
 
 * Add the FusionCharts Rail wrapper:
-	* Using RubyGems
-	* Manually
-
+  * Using RubyGems
+  * Manually
 * Include the FusionCharts Rails wrapper.
 
 To add the FusionCharts Rails wrapper, use any of the following processes:
@@ -73,12 +72,12 @@ To add the FusionCharts Rails wrapper, use any of the following processes:
 </pre>
 <div><strong>RubyGems contain package information along with the files to install. On the command line prompt, execute the following command:</strong></div>
 <pre><code class="language-ruby">
-	$bundle
+    $bundle
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 <div><strong>This command will automatically install the `fusioncharts-rails` gem. You can also install the gem directly from the command line prompt, without making any edits to the `Gemfile`. To do this, use the code line given below:</strong></div>
 <pre><code class="language-ruby">
-	$gem install fusioncharts-rails
+    $gem install fusioncharts-rails
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -102,24 +101,26 @@ Let's start with a simple example of "Countries With Most Oil Reserves" chart, w
 
 {% embed_chart getting-started-your-first-chart.js %}
 
+To understand the chart components, click [here](/understanding-fusioncharts).
+
 The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves
--|-
-Venezuela|290
-Saudi|260
-Canada|180
-Iran|140
-Russia|115
-UAE|100
-US|30
-China|30
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 ## Convert Tabular Data into JSON Format
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
 
-```JSON
+```json
 {
     "chart": {
         "caption": "Countries With Most Oil Reserves [2017-18]",
@@ -189,27 +190,27 @@ To render the chart, follow the steps below:
 
 8. Create the chart instance and set the following:
 
-	* Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-    * Set the `width` and `height` (in pixels).
+   * Set the `width` and `height` (in pixels).
 
-    * Set the container for the chart.
+   * Set the container for the chart.
 
-    * Set the `dataFormat` as JSON.
+   * Set the `dataFormat` as JSON.
 
-    * Embed the `json` data as the value of the `dataSource`.
+   * Embed the `json` data as the value of the `dataSource`.
 
 9. Create a container using `<div>` to render the chart.
 
 The full code for the above sample is:
 
-```
+```ruby
 require 'json'
 require 'fusioncharts-rails'
 
 class FirstChart
     def self.getChart
-        
+
         # Chart appearance configuration
         chartAppearancesConfigObj = Hash.new
         chartAppearancesConfigObj = { 
@@ -220,7 +221,7 @@ class FirstChart
                         "numberSuffix" => "K", 
                         "theme" => "fusion"
                     }
-        
+
         # An array of hash objects which stores data
         chartDataObj = [
                     {"Venezuela" => "290"},
@@ -232,10 +233,10 @@ class FirstChart
                     {"US" => "30"},
                     {"China" => "30"}
                 ]
-        
+
         # Chart data template to store data in "Label" & "Value" format
         labelValueTemplate = "{ \"label\": \"%s\", \"value\": \"%s\" },"
-        
+
         # Chart data as JSON string
         labelValueJSONStr = ""
 
