@@ -158,7 +158,7 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
             8. <strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</div>
         <li>Set `libraryPath` property to the FusionCharts component.</li>
         <pre><code class="language-javascript">
-&lt;FusionCharts 
+&lt;FusionCharts
 ......
 libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
         </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -254,18 +254,20 @@ The Column 2D chart is shown below:
 
 {% embed_chart getting-started-your-first-chart-example-1.js %}
 
+To understand the chart components, click [here](/understanding-fusioncharts).
+
 The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves||
--|-|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 ## Convert tabular data into JSON format
 
@@ -345,7 +347,7 @@ To render the chart, follow the steps below:
 
 Copy the following code to `app.js` file.
 
-```
+```javascript
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import FusionCharts from "react-native-fusioncharts";

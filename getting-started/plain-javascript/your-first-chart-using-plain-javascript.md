@@ -81,18 +81,20 @@ The Column 2D chart is shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
+To understand the chart components, click [here](/understanding-fusioncharts).
+
 The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves||
--|-|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 ## Convert tabular data into JSON format
 
@@ -164,7 +166,7 @@ To render the chart, follow the steps below:
 
 5. Store the chart configurations in a JSON object. In this JSON object:
     * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels). 
+    * Set the width and height (in pixels).
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
@@ -197,12 +199,10 @@ import Column2D from 'fusioncharts/viz/column2d';
 
 // Include the fusion theme
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-    
 // Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
-    
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
     type: 'Column2D',
@@ -389,7 +389,6 @@ chartInstance.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <pre><code class="language-javascript">
