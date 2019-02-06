@@ -6,9 +6,9 @@ heading: Create a Chart Using Django
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple server-side **Django** wrapper for FusionCharts. The `FusionCharts server-side Django` wrapper lets you easily add rich and interactive charts to any Django project. Using the wrapper, you can create charts in your browsers, without writing any JavaScript code.
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple **Django** wrapper for FusionCharts. The `FusionCharts Django` wrapper lets you easily add rich and interactive charts to any Django project. Using the wrapper, you can create charts in your browsers, without writing any JavaScript code.
 
-In this page, we'll see how to install FusionCharts and render a chart using the `FusionCharts server-side Django` wrapper.
+In this page, we'll see how to install FusionCharts and render a chart using the `FusionCharts Django` wrapper.
 
 ## Installation
 
@@ -38,13 +38,13 @@ django-admin startproject myproject
 
 ### Step 2: Add the dependencies
 
-Now, we will add the FusionCharts javascript files required to render the charts in the web application. Steps to add the files are given below:
+Now, we will add Django wrapper and FusionCharts javascript files required to render the charts in the web application. Steps to add the files are given below:
 
-* Create a template folder inside the `myproject` directory.
+* Create a `template` folder inside the `myproject` directory.
 * Inside the template folder, create another folder named `static`.
-* Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder.
-* Copy all javascript files extracted from the downloaded FusionCharts library into the template folder.
-* To map the javascript files, create an HTML file,`index.html` in the template folder.  Include the `fusioncharts.js` and `fusioncharts.theme.fusion.js`  from the downloaded package in this file. 
+* Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder(`myproject`).
+* Copy all javascript files extracted from the downloaded FusionCharts library into the `template/static` folder.
+* Now, map the javascript files by creating an HTML file, `index.html` in the template folder. Add couple of `<script>` tags. Include the `fusioncharts.js` and `fusioncharts.theme.fusion.js` using `<script>` tags from the downloaded package in this file.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -86,7 +86,7 @@ Python manage.py collectStatic
 * In the `settings.py` file, update the location of the templates
 
 ```bash
-'DIRS': ['fc_column2d/templates']
+'DIRS': ['myproject/templates']
 ```
 
 That completes the installation of FusionCharts Suite and the Django wrapper.
@@ -172,7 +172,7 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 To render the chart, follow the steps below:
 
-1. Import Render from `django.shortcuts`.
+1. Import `Render` from `django.shortcuts`.
 
 2. Import `HttpResponse` from `django.http`.
 
