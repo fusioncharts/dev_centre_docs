@@ -14,15 +14,37 @@ In this page, we'll see how to install FusionCharts and render a chart using the
 
 In this section, we will show you how to install FusionCharts Suite XT and the `FusionCharts Django` wrapper and all the other dependencies on your system.
 
+### Requirements
+
+To create a chart in a web app developed using Django, download the following wrappers and frameworks in your system:
+
+* Django Framework - [Download Link](https://www.djangoproject.com/download/)
+* FusionCharts Library - [Download Link](https://www.fusioncharts.com/download/fusioncharts-suite-xt)
+* FusionCharts Django wrapper - [Download Link](https://www.fusioncharts.com/django-charts/)
+
 > The **FusionCharts Django** wrapper requires Python 2.7 or higher.
 
+### Step 1: Create a project
+
+To create a project, follow the steps given below:
+
+* Open the command prompt and run `cd` command to navigate to the required directory.
+
+* Run the following command to create a `myproject` directory in your preferred directory.
+
+```bash
+django-admin startproject myproject
+```
+
+### Step 2: Add the dependencies
+
+Now, we will add the FusionCharts javascript files required to render the charts in the web application. Steps to add the files are given below:
+
+* Create a template folder inside the `myproject` directory.
+* Inside the template folder, create another folder named `static`.
 * Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder.
-
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
-
-* Include the FusionCharts theme file to apply the style to the charts.
-
-The consolidated given below:
+* Copy all javascript files extracted from the downloaded FusionCharts library into the template folder.
+* To map the javascript files, create an HTML file,`index.html` in the template folder.  Include the `fusioncharts.js` and `fusioncharts.theme.fusion.js`  from the downloaded package in this file. 
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -54,6 +76,18 @@ The consolidated given below:
 </div>
 </div>
 </div>
+
+* After including the paths of all the dependencies required, update the static files by running the following command:
+
+```bash
+Python manage.py collectStatic
+```
+
+* In the `settings.py` file, update the location of the templates
+
+```bash
+'DIRS': ['fc_column2d/templates']
+```
 
 That completes the installation of FusionCharts Suite and the Django wrapper.
 
