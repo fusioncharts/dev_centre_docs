@@ -172,44 +172,99 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 To render the chart, follow the steps below:
 
-1. Import `Render` from `django.shortcuts`.
+### Create the view page
 
-2. Import `HttpResponse` from `django.http`.
+The view page contains the chart constructor, attributes as well as the datasource required to render the chart.
 
-3. Import `OrderedDict` from collections.
+* Add the code given below to the `view.py` file.
 
-4. Include the `fusioncharts.py` file.
+```python
+from django.shortcuts import render
+from django.http import HttpResponse
 
-5. Include `chartConfig` dict.
+# Include the `fusioncharts.py` file which has required functions to embed the charts in html page
+from .fusioncharts import FusionCharts
 
-6. Include `chartData` dict.
+# Loading Data from a Static JSON String
+# It is a example to show a Column 2D chart where data is passed as JSON string format.
+# The `chart` method is defined to load chart data from an JSON string.
 
-7. Convert the data in `chartData`array into a format supported by FusionCharts.
+def chart(request):
+    # Create an object for the column2d chart using the FusionCharts class constructor
+  column2d = FusionCharts("column2d", "ex1" , "700", "400", "chart-1", "json", 
+        # The data is passed as a string in the `dataSource` as parameter.
+    """{  
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+      },
+      "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+      }""")
 
-8. Enter the data for the chart as an array, where each element is a JSON object, with `label` and `value` as keys.
+    # returning complete JavaScript and HTML code, which is used to generate chart in the browsers. 
+  return  render(request, 'index.html', {'output' : column2d.render()})
+```
 
-9. Iterate through the data in `chartData` and insert into the `dataSource['data']` list.
+### Set up the configuration file
 
-10. Create the chart instance and set the following:
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+* Add the following code snippet to the `urls.py` file to automatically set the URL to render the chart.
 
-    * Set the chart `id`.
+```python
+from django.conf.urls import url
+from.import views
 
-    * Set the `width` and `height` (in pixels).
+urlpatterns = [
+    url(r'^$', views.chart, name = 'demo'),
+]
+```
 
-    * Set the container for the chart.
+* To update the `STATICFILES_DIRS` object, include it to the `settings.py` file.
 
-    * Set the `dataFormat` as JSON.
+```python
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "fc_column2d/templates/static"),
+]
+```
 
-    * Embed the `json` data as the value of the `dataSource`.
+### Render the chart
 
-    * Pass the chart data to the `dataSource` parameter.
+With all the code in place, rum the following command to render the above chart.
 
-11. Finally, use a container using `<div>` to render the chart.
+```bash
+python manage.py runserver
+```
 
 The consolidated code is shown below:
 
-```javascript
+```python
 from django.shortcuts import render
 from django.http import HttpResponse
 from collections import OrderedDict
