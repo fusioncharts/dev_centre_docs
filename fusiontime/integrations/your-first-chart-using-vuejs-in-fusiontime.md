@@ -139,7 +139,7 @@ The chart will look as shown below:
 
 {% embed_ftChart integrations-vuejs %}
 
-The data for the above chart is shown in the table below:
+The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time      | Sales |
 | --------- | ----- |
@@ -150,10 +150,6 @@ The data for the above chart is shown in the table below:
 | 05-Feb-11 | 4928  |
 | 06-Feb-11 | 4667  |
 | 07-Feb-11 | 1064  |
-| ...       | ...   |
-| ...       | ...   |
-| ...       | ...   |
-| ...       | ...   |
 
 In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview#what-is-datastore-) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
@@ -195,7 +191,7 @@ Now that we have the schema ready for the `DataTable` let's learn how to put the
 
 In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
 
-To add the data, let's create a `data.json` file and copy the following code:
+[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-vuejs/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 > It is not mandatory to create a `data.json` file. You can create the same in HTML file.
 

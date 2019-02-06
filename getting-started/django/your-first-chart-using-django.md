@@ -44,7 +44,7 @@ Now, we will add Django wrapper and FusionCharts javascript files required to re
 * Inside the template folder, create another folder named `static`.
 * Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder(`myproject`).
 * Copy all javascript files extracted from the downloaded FusionCharts library into the `template/static` folder.
-* Now, map the javascript files by creating an HTML file, `index.html` in the template folder. Add couple of `<script>` tags. Include the `fusioncharts.js` and `fusioncharts.theme.fusion.js` using `<script>` tags from the downloaded package in this file.
+* Now, map the javascript files by creating an HTML file, `index.html` in the template folder. Include the `fusioncharts.js` and `fusioncharts.theme.fusion.js` using `<script>` tags from the downloaded package in this file.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

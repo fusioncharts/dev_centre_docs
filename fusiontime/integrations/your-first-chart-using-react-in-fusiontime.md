@@ -110,7 +110,7 @@ The chart will look as shown below:
 
 {% embed_ftChart integrations-react %}
 
-The data for the above chart is shown in the table below:
+The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time     | Sales   |
 | -------- | ------- |
@@ -121,10 +121,6 @@ The data for the above chart is shown in the table below:
 | 1/6/2011 | 19.536  |
 | 1/7/2011 | 2573.82 |
 | 1/7/2011 | 609.98  |
-| ...      | ...     |
-| ...      | ...     |
-| ...      | ...     |
-| ...      | ...     |
 
 In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
