@@ -4,11 +4,13 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create your First Chart
 ---
 
-FusionTime, like the name implies, is a product which is used to plot time-series data. FusionTime helps to evaluate patterns and trends in time-series data over a period of time. 
+FusionTime is a JavaScript charting library that helps you visualize and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhance the experience of exploring and understanding time series data. 
 
 In this article, you'll see how to install FusionTime and render your first time series chart.
 
 ## Installation
+
+Since FusionTime is distributed along with FusionCharts Suite, download the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite.
 
 Install **FusionTime** using any of the following steps:
 
@@ -55,7 +57,7 @@ Now that you have installed, it's time to create your first time series chart us
 
 {% embed_ftChart online-sales-single-series %}
 
-The data for the above chart is shown in the table below:
+The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 Time | Sales
 - | -
@@ -66,22 +68,21 @@ Time | Sales
 1/6/2011 | 19.536
 1/7/2011 | 2573.82
 1/7/2011 | 609.98
-... | ...
-... | ...
-... | ...
-... | ...
 
-In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
+FusionTime accepts a [Datatable](/fusiontime/fusiontime-data-engine/overview) as it's data source. `DataTable`, is a part of [DataStore](/fusiontime/fusiontime-data-engine/overview), is the tabular representation of data. To create the `DataTable`, you need to provide the following:
 
-* The `schema` which defines the properties of the columns.  
+* `schema` - which defines the properties of the columns. 
+* `data` - values of each row and column of the DataTable
 
-* The `actual` values for each row and column of the `DataTable` as the data.
+> For an instance of FusionTime, you can create `n` number of `dataTables`, but only 1 `dataStore`.
 
-Now, let's check how to prepare the schema and the data of the `DataTable`. 
+Next, let's learn how to prepare the schema and the data of the `DataTable`.
 
 ### Create the `schema`
 
-The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`. The schema maps the data to the columns of a `DataTable` along with the type for each column and the input format in case of date. You've to mandatorily specify the schema for each `DataTable`.
+The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`.
+
+> `name` and `type` are mandatory keys for each object. If the object type is ‘time’ then `format` is also a mandatory key.
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 
@@ -99,9 +100,10 @@ let schema = [{
 ```
 
 In the above code:
-* `schema` is the variable in which the array is saved.
+* `schema` is the variable in which the array is stored.
+* Each object of a schema maps to a column of the tabular representation of the data.
 * Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
-    * name - Specify the name of the column.
+    * name - Specify the name of the column of the tabular representation of data.
     * type - Specify the type of the column.
     * format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
 
@@ -109,9 +111,9 @@ Now that we have the schema ready for the `DataTable` let's learn how to put the
 
 ### Create `data`
 
-In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
+Data can be provided either in JSON format or 2D array format. We will use the 2D array format.
 
-To add the data, let's create a `data.json` file and copy the following code:
+[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```
 let data = [
@@ -127,8 +129,6 @@ let data = [
         "1/5/2011",
         11.784
     ],
-    ...
-    ...
     [
         "12/31/2014",
         20.72
@@ -144,11 +144,14 @@ let data = [
 ]
 ```
 
-To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series/data.json)
+Create a new `data.json` file, and copy the complete data from [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series/data.json).
+
+> It is not mandatory to create a `data.json` file. You could also do the same in your HTML file.
 
 In the above code:
-* `data` is the variable in which the data array is saved.
-* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
+* `data` is the variable in which the data array is stored.
+* Each object in the data array corresponds to a row in the tabular representation of the data.
+* Each element in an object is represented by each object of the `schema`. The values in each object of the array represent the following:
     * Time according to the format
     * Total Sales amount 
 
