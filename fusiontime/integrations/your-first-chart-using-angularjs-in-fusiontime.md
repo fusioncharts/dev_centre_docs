@@ -135,7 +135,7 @@ Next, let's learn how to prepare the schema and the data of the `DataTable`.
 
 The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`.
 
-> 'name' and 'type' are mandatory keys for each object. If the object type is 'time' then 'format' is also a mandatory key.
+> `name` and `type` are mandatory keys for each object. If the object type is `time` then `format` is also a mandatory key.
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 
