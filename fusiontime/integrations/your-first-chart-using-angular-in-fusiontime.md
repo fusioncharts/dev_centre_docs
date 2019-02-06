@@ -14,7 +14,7 @@ In this page, we'll see how to install **FusionTime** and render an interactive 
 
 Since FusionTime is distributed along with FusionCharts Suite, download the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite.
 
-To render time-series charts in Angularjs, do the following:
+To render time-series charts in Angular, do the following:
 
 * Install v3.0.0 or later versions of `angular-fusioncharts`.
 * [Download](https://www.fusioncharts.com/download/fusiontime) and install v13.3.3-sr.1 or later versions of FusionCharts. This package contains the required files for time-series charts. So, in order to render time-series charts, you have to install FusionCharts Suite.
