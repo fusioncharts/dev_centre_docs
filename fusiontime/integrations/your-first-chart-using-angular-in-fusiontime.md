@@ -83,7 +83,7 @@ Let schema = [{
 In the above code:
 
 * `schema` is the variable in which the array is stored.
-* Each object of a schema maps to a column of the tabular representation of the data
+* Each object of a schema maps to a column of the tabular representation of the data.
 * The JSON object has the following attributes:
   * name - Specify the name of the column of the tabular representation of data
   * type - Specify the type of the column.
@@ -128,7 +128,7 @@ var data = [
 
 Create a new `data.json` file, and copy the above code there. Next, copy the entire [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-angular/data.json) and replace it with the content of the data object in your 'data.json' file.
 
-> It is not mandatory to create a `data.json` file. You could also do the same in your HTML file.
+> It is not mandatory to create a `data.json` file. You can also do the same in your HTML file.
 
 In the above code:
 
