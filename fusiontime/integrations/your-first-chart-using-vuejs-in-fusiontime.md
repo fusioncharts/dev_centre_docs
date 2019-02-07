@@ -1,7 +1,7 @@
 ---
 title: Create a Chart in Vue | FusionTime
 description: This article outlines the steps to be executed for creating your first chart in Vue using FusionTime.
-heading: Create a Chart in Vue
+heading: Create a chart in Vue
 ---
 
 ## Overview
