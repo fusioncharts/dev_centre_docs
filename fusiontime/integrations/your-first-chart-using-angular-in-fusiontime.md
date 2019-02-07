@@ -1,7 +1,7 @@
 ---
 title: Create a Chart in Angular | FusionTime
 description: This article outlines the steps to be executed for creating your first chart in Angular using FusionTime.
-heading: Create a Chart in Angular Using FusionTime
+heading: Create a Chart in Angular
 ---
 
 FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhance the experience of exploring and understanding time series data. 
