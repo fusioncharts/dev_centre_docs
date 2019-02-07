@@ -68,9 +68,9 @@ Now, we will add Django wrapper and FusionCharts javascript files required to re
 <pre><code class="language-php">
 {% load static %}
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"&gt;&lt;/script&gt;
 // Include FusionCharts Theme file
-&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -181,56 +181,58 @@ The view page contains the chart constructor, attributes as well as the datasour
 ```python
 from django.shortcuts import render
 from django.http import HttpResponse
+from collections import OrderedDict
 
-# Include the `fusioncharts.py` file which has required functions to embed the charts in html page
-from .fusioncharts import FusionCharts
+# Include the `fusioncharts.py` file that contains functions to embed the charts.
+from fusioncharts import FusionCharts
 
-# Loading Data from a Static JSON String
-# It is a example to show a Column 2D chart where data is passed as JSON string format.
-# The `chart` method is defined to load chart data from an JSON string.
+def myFirstChart(request):
 
-def chart(request):
-    # Create an object for the column2d chart using the FusionCharts class constructor
-  column2d = FusionCharts("column2d", "ex1" , "700", "400", "chart-1", "json", 
-        # The data is passed as a string in the `dataSource` as parameter.
-    """{  
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-      },
-      "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-      }""")
+    #Chart data is passed to the `dataSource` parameter, like a dictionary in the form of key-value pairs.
+    dataSource = OrderedDict()
 
-    # returning complete JavaScript and HTML code, which is used to generate chart in the browsers. 
-  return  render(request, 'index.html', {'output' : column2d.render()})
+    # The `chartConfig` dict contains key-value pairs of data for chart attribute
+    chartConfig = OrderedDict()
+    chartConfig["caption"] = "Countries With Most Oil Reserves [2017-18]"
+    chartConfig["subCaption"] = "In MMbbl = One Million barrels"
+    chartConfig["xAxisName"] = "Country"
+    chartConfig["yAxisName"] = "Reserves (MMbbl)"
+    chartConfig["numberSuffix"] = "K"
+    chartConfig["theme"] = "fusion"
+
+    # The `chartData` dict contains key-value pairs of data
+    chartData = OrderedDict()
+    chartData["Venezuela"] = 290
+    chartData["Saudi"] = 260
+    chartData["Canada"] = 180
+    chartData["Iran"] = 140
+    chartData["Russia"] = 115
+    chartData["UAE"] = 100
+    chartData["US"] = 30
+    chartData["China"] = 30
+
+    dataSource["chart"] = chartConfig
+    dataSource["data"] = []
+
+    # Convert the data in the `chartData`array into a format that can be consumed by FusionCharts.
+    #The data for the chart should be in an array wherein each element of the array 
+    #is a JSON object# having the `label` and `value` as keys.
+
+    #Iterate through the data in `chartData` and insert into the `dataSource['data']` list.
+    for key, value in chartData.items():
+        data = {}
+    data["label"] = key
+    data["value"] = value
+    dataSource["data"].append(data)
+
+
+# Create an object for the column 2D chart using the FusionCharts class constructor
+# The chart data is passed to the `dataSource` parameter.
+column2D = FusionCharts("column2d", "myFirstChart", "600", "400", "myFirstchart-container", "json", dataSource)
+
+return render(request, 'index.html', {
+    'output': column2D.render()
+})
 ```
 
 ### Set up the configuration file
@@ -250,7 +252,7 @@ urlpatterns = [
 
 ```python
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "fc_column2d/templates/static"),
+    os.path.join(BASE_DIR, "myproject/templates/static"),
 ]
 ```
 
@@ -361,8 +363,8 @@ The HTML template of the above sample is shown below:
 &lt;head&gt;
     &lt;title&gt;FC-python wrapper&lt;/title&gt;
     {% load static %}
-    &lt;script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
