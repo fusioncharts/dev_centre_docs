@@ -322,7 +322,7 @@ const chart = new Vue({
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="language-javascript">
+<pre><code class="language-html">
 &lt;html lang="en"&gt;
   &lt;head&gt;
   &lt;/head&gt;
@@ -407,7 +407,7 @@ const chart = new Vue({
 </div>
 
 <div class='tab localfiles-tab'>
-<pre><code class="language-javascript">
+<pre><code class="language-html">
 &lt;html lang="en"&gt;
   &lt;head&gt;
   &lt;/head&gt;
