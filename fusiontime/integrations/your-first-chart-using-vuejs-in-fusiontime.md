@@ -245,7 +245,17 @@ Now, let's create the files to render the above chart.
 
 To render the chart, create a `.js` file and copy the following code:
 
-```javascript
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='localfiles'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
+
+<pre><code class="language-javascript">
+
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
@@ -290,18 +300,199 @@ const chart = new Vue({
     }
   },
   mounted: function() {
-    Promise.all([dataFetch, schemaFetch]).then(res => {
+    // In this Promise we will create our DataStore and using that we will create a custom DataTable which takes two
+    // parameters, one is data another is schema.
+    Promise.all([dataFetch, schemaFetch]).then(res =&gt; {
       const data = res[0];
       const schema = res[1];
-      const fusionTable = new FusionCharts.DataStore().createDataTable(
-        data,
-        schema
-      );
+      // First we are creating a DataStore
+      const fusionDataStore = new FusionCharts.DataStore();
+      // After that we are creating a DataTable by passing our data and schema as arguments
+      const fusionTable = fusionDataStore.createDataTable(data, schema);
+      // After that we simply mutated our timeseries datasource by attaching the above
+      // DataTable into its data property.
       this.dataSource.data = fusionTable;
     });
   }
 });
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</div>
+
+<div class='tab cdn-tab'>
+<pre><code class="language-javascript">
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/fusioncharts@3.13.3-sr.1/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/fusioncharts@3.13.3-sr.1/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+    &lt;!-- If you want to use vue-fusioncharts as a plugin --&gt;
+    &lt;script src="https://unpkg.com/vue-fusioncharts@3.0.1/dist/vue-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- If you want to use vue-fusioncharts as a component --&gt;
+    &lt;!-- &lt;script src="https://unpkg.com/vue-fusioncharts@3.0.0/component/index.js"&gt;&lt;/script&gt; --&gt;
+    &lt;script&gt;
+      // Register vue-fusioncharts as a plugin if you want to use it globally
+      Vue.use(VueFusionCharts, FusionCharts);
+
+      // Links to fetch data and schema for TimeSeries chart
+      const jsonify = res =&gt; res.json();
+      var dataFetch = fetch(
+        'https://s3.eu-central-1.amazonaws.com/fusion.store/ft/data/line-chart-with-time-axis-data.json'
+      ).then(jsonify);
+      var schemaFetch = fetch(
+        'https://s3.eu-central-1.amazonaws.com/fusion.store/ft/schema/line-chart-with-time-axis-schema.json'
+      ).then(jsonify);
+
+      // Create vue-fusioncharts component
+      // let vFC = VueFusionChartsComponent(FusionCharts);
+
+      var app = new Vue({
+        el: '#app',
+        // Register the vue-fusioncharts component you created earlier if you want to use it locally
+        // components: { fusioncharts: vFC },
+        data: {
+          width: '700',
+          height: '400',
+          type: 'timeseries',
+          dataFormat: 'json',
+          displayChart: false,
+          dataSource: {
+            // Initially data is set as null
+            data: null,
+            caption: {
+              text: 'Sales Analysis'
+            },
+            subcaption: {
+              text: 'Grocery'
+            },
+            yAxis: [
+              {
+                plot: {
+                  value: 'Grocery Sales Value',
+                  type: 'line'
+                },
+                format: {
+                  prefix: '$'
+                },
+                title: 'Sale Value'
+              }
+            ]
+          }
+        },
+        mounted: function() {
+          // In this Promise we will create our DataStore and using that we will create a custom DataTable which takes two
+          // parameters, one is data another is schema.
+          Promise.all([dataFetch, schemaFetch]).then(res =&gt; {
+            const data = res[0];
+            const schema = res[1];
+            // First we are creating a DataStore
+            const fusionDataStore = new FusionCharts.DataStore();
+            // After that we are creating a DataTable by passing our data and schema as arguments
+            const fusionTable = fusionDataStore.createDataTable(data, schema);
+            // After that we simply mutated our timeseries datasource by attaching the above
+            // DataTable into its data property.
+            this.dataSource.data = fusionTable;
+          });
+        }
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab localfiles-tab'>
+<pre><code class="language-javascript">
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script type="text/javascript" src="path/to/local/vue.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+    &lt;!-- If you want to use vue-fusioncharts as a plugin --&gt;
+    &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- If you want to use vue-fusioncharts as a component --&gt;
+    &lt;!-- &lt;script src="https://unpkg.com/vue-fusioncharts@3.0.0/component/index.js"&gt;&lt;/script&gt; --&gt;
+    &lt;script&gt;
+      // Register vue-fusioncharts as a plugin if you want to use it globally
+      Vue.use(VueFusionCharts, FusionCharts);
+
+      // Links to fetch data and schema for TimeSeries chart
+      const jsonify = res =&gt; res.json();
+      var dataFetch = fetch(
+        'https://s3.eu-central-1.amazonaws.com/fusion.store/ft/data/line-chart-with-time-axis-data.json'
+      ).then(jsonify);
+      var schemaFetch = fetch(
+        'https://s3.eu-central-1.amazonaws.com/fusion.store/ft/schema/line-chart-with-time-axis-schema.json'
+      ).then(jsonify);
+
+      // Create vue-fusioncharts component
+      // let vFC = VueFusionChartsComponent(FusionCharts);
+
+      var app = new Vue({
+        el: '#app',
+        // Register the vue-fusioncharts component you created earlier if you want to use it locally
+        // components: { fusioncharts: vFC },
+        data: {
+          width: '700',
+          height: '400',
+          type: 'timeseries',
+          dataFormat: 'json',
+          displayChart: false,
+          dataSource: {
+            // Initially data is set as null
+            data: null,
+            caption: {
+              text: 'Sales Analysis'
+            },
+            subcaption: {
+              text: 'Grocery'
+            },
+            yAxis: [
+              {
+                plot: {
+                  value: 'Grocery Sales Value',
+                  type: 'line'
+                },
+                format: {
+                  prefix: '$'
+                },
+                title: 'Sale Value'
+              }
+            ]
+          }
+        },
+        mounted: function() {
+          // In this Promise we will create our DataStore and using that we will create a custom DataTable which takes two
+          // parameters, one is data another is schema.
+          Promise.all([dataFetch, schemaFetch]).then(res =&gt; {
+            const data = res[0];
+            const schema = res[1];
+            // First we are creating a DataStore
+            const fusionDataStore = new FusionCharts.DataStore();
+            // After that we are creating a DataTable by passing our data and schema as arguments
+            const fusionTable = fusionDataStore.createDataTable(data, schema);
+            // After that we simply mutated our timeseries datasource by attaching the above
+            // DataTable into its data property.
+            this.dataSource.data = fusionTable;
+          });
+        }
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
 
 In the above code:
 
@@ -315,17 +506,17 @@ In the above code:
 
 * Define the chart configuration in the FusionCharts constructor:
 
-    * Set the type as `timeseries`.
+  * Set the type as `timeseries`.
 
-    * Set the chart container as `container` using the `renderAt` property.
+  * Set the chart container as `container` using the `renderAt` property.
 
-    * Set the width and height (in pixels).
+  * Set the width and height (in pixels).
 
-    * Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
+  * Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
 
-    * Set the data to create the chart.
+  * Set the data to create the chart.
 
-    * Specify the caption of the chart using `text` attribute in the `caption` object.
+  * Specify the caption of the chart using `text` attribute in the `caption` object.
 
 * Create an empty storage as `fusionDataStore` using `FusionCharts.DataStore`.
 
