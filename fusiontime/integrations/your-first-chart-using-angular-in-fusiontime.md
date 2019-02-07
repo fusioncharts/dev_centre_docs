@@ -12,12 +12,7 @@ In this page, we'll see how to install **FusionTime** and render an interactive 
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite.
-
-To render time-series charts in Angular, do the following:
-
-* Install v3.0.0 or later versions of `angular-fusioncharts`.
-* [Download](https://www.fusioncharts.com/download/fusiontime) and install v13.3.3-sr.1 or later versions of FusionCharts. This package contains the required files for time-series charts. So, in order to render time-series charts, you have to install FusionCharts Suite.
+Since FusionTime is distributed along with FusionCharts Suite, download/install the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite.
 
 To install follow the steps below:
 
@@ -33,17 +28,17 @@ $ npm install angular-fusioncharts --save
 $ npm install fusioncharts --save
 ```
 
-That completes the installation of FusionTime and the `angular-fusioncharts` component.
+That completes the installation of **FusionTime** and the `angular-fusioncharts` component.
 
 ## Create your First Chart
 
-Let's create a time-series chart using `angular-fusioncharts` directive showing 'Daily sales of a grocery store'.
+Let's create a time-series chart using `angular-fusioncharts` directive showing **Daily sales of a grocery store**.
 
 The chart is shown below:
 
 {% embed_ftChart integrations-angular %}
 
-The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
+The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-angular/data.json) for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time      | Sales |
 | --------- | ----- |
@@ -55,7 +50,7 @@ The data for the above chart is too big to be displayed here. The table below sh
 | 06-Feb-11 | 4667  |
 | 07-Feb-11 | 1064  |
 
-FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`, is a part of [`DataStore`](/fusiontime/fusiontime-data-engine/overview#what-is-datastore-), is the tabular representation of data. To create the `DataTable`, you need to provide the following:
+FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`, is a part of [`DataStore`](/fusiontime/fusiontime-data-engine/overview#what-is-datastore-), which is the tabular representation of data. To create the `DataTable`, you need to provide the following:
 
 * `schema` - which defines the properties of the columns.
 * `data` - values of each row and column of the DataTable
@@ -66,9 +61,9 @@ Next, let's learn how to prepare the schema and the data of the `DataTable`.
 
 ### Create the `schema`
 
-The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`.
+The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column in the above table.
 
-> 'name' and 'type' are mandatory keys for each object. If the object type is 'time' then 'format' is also a mandatory key.
+> `name` and `type` are mandatory keys for each object. If the object type is `time` then `format` is also a mandatory key.
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 

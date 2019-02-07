@@ -1861,6 +1861,14 @@
           {
             "title": "Create Chart using React",
             "path": "/fusiontime/integrations/your-first-chart-using-react-in-fusiontime"
+          },
+          {
+            "title": "Create Chart using Angular",
+            "path": "/fusiontime/integrations/your-first-chart-using-angular-in-fusiontime"
+          },
+          {
+            "title": "Create Chart using AngularJS",
+            "path": "/fusiontime/integrations/your-first-chart-using-angularjs-in-fusiontime"
           }
         ]
       },
