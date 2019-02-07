@@ -192,7 +192,7 @@ Now that we have the schema ready, let's work on the data.
 
 Data can be provided either in JSON format or 2D array format. We will use the 2D array format.
 
-[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-angular/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
+[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-vuejs/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
 var data = [
@@ -223,7 +223,7 @@ var data = [
 ]
 ```
 
-Create a new `data.json` file, and copy the above code there. Next, copy the entire [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-angular/data.json) and replace it with the content of the data object in your 'data.json' file.
+Create a new `data.json` file, and copy the above code there. Next, copy the entire [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-vuejs/data.json) and replace it with the content of the data object in your 'data.json' file.
 
 > It is not mandatory to create a `data.json` file. You can also do the same in your HTML file.
 
