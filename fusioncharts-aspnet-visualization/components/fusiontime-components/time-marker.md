@@ -4,165 +4,6 @@ description: This article defines the time markers.
 heading: Time Markers
 ---
 
-FusionTime lets you mark events on the [time axis](/fusiontime/fusiontime-component/time-axis). A time marker appears as an overlay on the canvas. When you hover the mouse pointer over a time marker, a tooltip appears with the information about the marker.
-
-A time marker can be of two types:
-
-- Time instance marker - It occurs at a given instance of time.
-- Time band marker - It occurs over a span of time.
-
-## Time instance marker
-
-To create a single time instance marker follow the steps below:
-
-- Create a `timeMarker` object under `xAxis` object
-
-- Within the `timeMarker` object use the `start` attribute to define the time instance at which the marker should be drawn.
-
-- Within the `timeMarker` object use the `timeFormat` attribute to define the format of the time specified in the `start` attribute.
-
-- Within the `timeMarker` object use the `label` attribute to define the label for the time marker.
-
-Refer to the code below:
-
-```
-xAxis: {
-    timemarker: [{
-        start: 'Mar-1982',
-        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
-        timeFormat: "%b-%Y"
-    }],
-}
-```
-
-A sample chart with a time marker is shown below:
-
-{% embed_ftChart fusiontime-components-time-marker-1 %}
-
-To create repeatable time instance markers follw the stpes below:
-
-- Set the above attributes and the specify the following attribute:
-    
-   \* Within the `timeMarker object create the`repeat` object to define the frequency, at which the cyclic time marker will be repeated.
-
-          * Use the `unit` attribute to define the time unit for the time marker inside the `repeat` object. You can set its value as Year, Quarter, Month, Week, Day, Hour, Minute, Second, or Millisecond. You can also set its value as one of the weekdays (Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday).
-
-          * Use the `multiplier` attribute to define the multiplier of the time unit. By default, this value is `1`.
-
-  Refer to the code below:
-
-- Use the `end` attribute to define the end time for the marker. Note that if you set the end of the date/time, then the marker will be presented as a band. If you omit it instead, the marker will be represented as a line.
-
-```
-xAxis: {
-    columnname: 'Time',
-    timemarker: [{
-        start: 'Mar-1982',
-        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
-        timeFormat: "%b-%Y"
-        repeat {
-        unit: Year,
-        multiplier: 5
-    }
-},
-```
-
-The sample chart with repeated time instance markers is shown below:
-
-{% embed_ftChart fusiontime-components-time-marker-2 %}
-
-## Time span marker
-
-To create the marker just include the `end` attribute along with the other attributes of the single time instance marker under the `timemarker` object within the `xAxis` object. Refer to the code below:
-
-Refer to the code below:
-
-```
- xAxis: {
-    columnname: 'Time',
-    timemarker: [{
-        start: 'Mar-1980',
-        end: 'Jun-1983',
-        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
-        timeFormat: "%b-%Y"
-    },
-```
-
-A sample chart with time spam markers is shown below:
-
-{% embed_ftChart fusiontime-components-time-marker-3 %}
-
-## Style Definition
-
-You can add CSS styling to set the cosmetic properties of data markers. To set the styling, instead of creating a separate CSS file, you can define the styling using `StyleDefinition` object.
-
-Now, let's define the `styleDefinition` object and set the **color** in an object. The code is given below:
-
-```json
-styleDefinition: {
-    "colorstyle": {
-        "fill": "#ff0000",
-        "font-weight": "bold"
-    }
-}
-```
-
-Once the `StyleDefinition` is defined, you can refer it for the various components using `colorstyle` attribute.
-
-The syntax to set the `StyleDefintion` to the data marker is given below:
-
-```json
-{
-  "seriesName": String,
-  "time": String,
-  "timeFormat": String,
-  "type": String,
-  "identifier": Character
-  "tooltext": String,
-  "style": {
-        "text": colorStyle,
-        "marker": colorStyle
-    }
-}
-```
-
-In the above code, `colorStyle` object is called to set the color of the data marker.
-
-The chart after applying the above attributes will look like as shown below:
-
-{% embed_ftChart fusiontime-components-data-marker-style-definition %}
-
-In the above sample, **font color** of the y-axis label has been changed.
-
-The code to update the cosmetic properties of other elements in **y-axis** is given below:
-
-```json
-{
-  "yAxis": [
-    {
-      "title": "Sales",
-      "style": {
-        "ticks": {
-          "major": Style,
-          "minor": Style,
-          "context": Style
-        },
-        "text": {
-          "major": Style,
-          "minor": Style,
-          "context": Style
-        },
-        "line": Style,
-        "gridLine": Style,
-        "gridBand": Style
-      }
-    }
-  ]
-}
-```
-
-## Time Marker
-
 You can mark events on the Time Axis using Time Markers. A time marker appears as an overlay on the chart canvas. When you hover the mouse pointer over a time marker or tap on it, a tooltip appears with information about the marker.
 
 A time marker looks as shown in the image below:
@@ -185,13 +26,12 @@ A time marker can either mark a single point, or a range, on the time axis. Use 
 
 Refer to the code below:
 
-```
+```javascript
 /* Time marker */
 /* AddMarker() return an instance of TimeMarker Object */
 /* EndDate(), StartDate(), Multiplier(),TimeFormat, TimeUnit() are instance methods of AddMarker() and can be invoked as below */
 
 timeSeries.TimeAxis.TimeMarker.AddMarker("label").EndDate(new DateTime(2010, 12, 31)).Multiplier(2).StartDate(new DateTime(2010, 01, 01)).TimeFormat("%b-%Y").TimeUnit(TimeSeriesUnit.Time.YEAR);|
-
 ```
 
 Note: The code given above will create a time marker for a period of time. To create a time marker for a specific point, simply omit the `EndDate()` instance method.
