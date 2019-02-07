@@ -139,7 +139,7 @@ The chart will look as shown below:
 
 {% embed_ftChart integrations-vuejs %}
 
-The data for the above chart is shown in the table below:
+The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time      | Sales |
 | --------- | ----- |
@@ -150,12 +150,8 @@ The data for the above chart is shown in the table below:
 | 05-Feb-11 | 4928  |
 | 06-Feb-11 | 4667  |
 | 07-Feb-11 | 1064  |
-| ...       | ...   |
-| ...       | ...   |
-| ...       | ...   |
-| ...       | ...   |
 
-In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
+In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview#what-is-datastore-) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
 * The `schema` which defines the properties of the columns.  
 * The `actual` values for each row and column of the `DataTable` as the data.
@@ -172,12 +168,12 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 ```json
 [{
-	"name": "Time",
-	"type": "date",
-	"format": "%d-%b-%y"
+  "name": "Time",
+  "type": "date",
+  "format": "%d-%b-%y"
 }, {
-    "name": "Grocery Sales Value",
-    "type": "number"
+  "name": "Grocery Sales Value",
+  "type": "number"
 }]
 ```
 
@@ -185,9 +181,9 @@ In the above code:
 
 * `schema` is the variable in which the array is saved.
 * Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
-    * name - Specify the name of the column.
-    * type - Specify the type of the column.
-	* format - Specify the input format of the date as per your data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
+  * name - Specify the name of the column.
+  * type - Specify the type of the column.
+  * format - Specify the input format of the date as per your data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
 
 Now that we have the schema ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
@@ -195,7 +191,9 @@ Now that we have the schema ready for the `DataTable` let's learn how to put the
 
 In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
 
-To add the data, let's create a `data.json` file and copy the following code:
+[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-vuejs/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
+
+> It is not mandatory to create a `data.json` file. You can create the same in HTML file.
 
 ```json
 var data = [
@@ -219,9 +217,6 @@ var data = [
         "05-Feb-11",
         4928
     ],
-    ...
-    ...
-    ...
 ]
 ```
 
@@ -230,9 +225,10 @@ To view the full data click [here](https://raw.githubusercontent.com/fusionchart
 In the above code:
 
 * `data` is the variable in which the data array is saved.
-* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represent the following:
-    * Time according to the format
-    * Total Sales amount 
+* Each object in the data array corresponds to a object in the `DataTable`.
+* Each element in a object are represented by each object of the `schema`. The values in each object of the array represent the following:
+  * Time according to the format
+  * Total Sales amount
 
 We are all set with our data to create the chart.
 
@@ -332,7 +328,7 @@ In the above code:
 
 The HTML template of the above example is:
 
-```javascript
+```html
 <div id="app">
   <fusioncharts
     :width="width"
