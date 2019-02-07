@@ -4,33 +4,33 @@ description: This article defines the time navigator.
 heading: Time Navigator
 ---
 
-In FusionTime, the time navigator facilitates you to focus on details in a specific time period while still staying in context of the whole timeline. The time navigator plots the complete data in a rectangular box below the time axis. 
+In FusionTime, the time navigator facilitates you to focus on details in a specific time period while still staying in context of the whole timeline. The time navigator plots the complete data in a rectangular box below the time axis.
 
 The time navigator is shown in the image below:
 
-<img src="{% site.BASE_URL %}/images/fusiontime-component-time-navigator.png"> 
+<img src="{% site.BASE_URL %}/images/fusiontime-component-time-navigator.png">
 
 The major features of **Time Navigator** include the following:
 
-* Shows the entire underlying data (including all data series) as data plots.
+- Shows the entire underlying data (including all data series) as data plots.
 
-* Has a scroll bar with scroll buttons at both the ends.
+- Has a scroll bar with scroll buttons at both the ends.
 
-* Has an active window with a pair of draggable handles which you can use to display the selected time period.
+- Has an active window with a pair of draggable handles which you can use to display the selected time period.
 
-* You can pan the active window of the time navigator to view the data of a specific section compared to the complete data.
+- You can pan the active window of the time navigator to view the data of a specific section compared to the complete data.
 
-* The active window of the time navigator resizes itself every time you perform a relevant action, such as zoom in/out of the chart, select standard time periods from the standard range selector, change the date/time in the custom range selector, etc. 
+- The active window of the time navigator resizes itself every time you perform a relevant action, such as zoom in/out of the chart, select standard time periods from the standard range selector, change the date/time in the custom range selector, etc.
 
-* The chart canvas updates automatically every time you make a selection using the handles of the Time Navigator.
+- The chart canvas updates automatically every time you make a selection using the handles of the Time Navigator.
 
-* In case of multivariate charts, there is only one common time navigator for all the canvases. 
+- In case of multivariate charts, there is only one common time navigator for all the canvases.
 
 In this article, we will discuss about the different interactions of the time navigator and how to hide the time navigator.
 
 ## Zoom in/out
 
-You can use the handles on either side to select a time period. The data plot in the canvas zooms in/out respectively. This behavior is also applicable when you zoom in/out from the chart canvas, i.e., with the interaction in the chart canvas the time navigator gets updated accordingly. Refer to the image below: 
+You can use the handles on either side to select a time period. The data plot in the canvas zooms in/out respectively. This behavior is also applicable when you zoom in/out from the chart canvas, i.e., with the interaction in the chart canvas the time navigator gets updated accordingly. Refer to the image below:
 
 ![Zoom using Time navigator](/gif/fusiontime-nav-zoom.gif)
 
@@ -40,9 +40,9 @@ You can pan the active window across the time navigator and see the data plots i
 
 ![Pan using Time navigator](/gif/fusiontime-nav-pan.gif)
 
-## Active window labels 
+## Active window labels
 
-When you hover the mouse pointer on the active window of the time navigator, the time labels appear on  the both the ends of the active window showing the start date/time and the end date/time. You can drag these labels to change the active window. Refer to the image below:
+When you hover the mouse pointer on the active window of the time navigator, the time labels appear on the both the ends of the active window showing the start date/time and the end date/time. You can drag these labels to change the active window. Refer to the image below:
 
 ![Time navigator labels](/gif/fusiontime-nav-labels.gif)
 
@@ -57,9 +57,30 @@ new FusionCharts({
         type: 'timeseries',
         ...
         dataSource: {
-    		chart: { 
+    		chart: {
     			"enableNavigator": "0", // Disables time Time Navigator
     	    },
-    	}    
+    	}
 });
 ```
+
+# Time Navigator
+
+The time navigator plots the complete data in a rectangular box located right below the time axis. It helps you focus on details in a specific time period while staying in context of the whole timeline.
+
+A time navigator looks as shown in the image below:
+
+<<Screenshot>>
+
+### Show/Hide Time Navigator
+
+To show the time navigator, set to `true` the value of the `Enable` property of the `TimeNavigator` object of the `timeSeries` class. Refer to the code given below:
+
+```
+/*  time navigator */
+timeSeries.TimeNavigator.Enable = true;|
+```
+
+The Time Navigator will look as shown below:
+
+<<Live Chart>>

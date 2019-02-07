@@ -14,13 +14,13 @@ A custom range selector appears as shown in the image below:
 
 To set the custom date and time follow the steps below:
 
-* Click on the custom range selector.
+- Click on the custom range selector.
 
-* A calendar widget appears, select the date from the widget, or type in the input box.
+- A calendar widget appears, select the date from the widget, or type in the input box.
 
-* After setting the date, set the time from the drop-down boxes. This option appears only if the atomicity of data is at time level.
+- After setting the date, set the time from the drop-down boxes. This option appears only if the atomicity of data is at time level.
 
-* Click `Apply` to view the changes. 
+- Click `Apply` to view the changes.
 
 A chart with custom range selector is shown below:
 
@@ -48,3 +48,24 @@ Refer to the code below:
     }
 }
 ```
+
+# Custom Range Selector
+
+The Custom Range Selector lets you select and focus on data within a specific time period by selecting the start and end points. It comes in handy when you are aware of the exact time period, for which you want to see the data.
+
+A Custom Range Selector looks as shown in the image below:
+
+<<Screenshot>>
+
+### Show/Hide Custom Range Selector
+
+To show the Custom Range Selector, set to `true` the value of the `Enable` property of the `CustomRangeSelector` object of the `timeSeries` class. Refer to the code given below:
+
+```
+/* Custom range selector */
+timeSeries.CustomRangeSelector.Enable = true;|
+```
+
+The Custom Range Selector will look as shown below:
+
+<<Live Chart>>

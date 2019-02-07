@@ -8,19 +8,19 @@ The x-axis of charts in FusionTime handles time based data and is known as the T
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-time-axis.png" alt="Time Axis" width="700" height="420">
 
-The salient  features of the time axis are:
+The salient features of the time axis are:
 
-* Intelligently creates a timescale to represent the chart data. 
+- Intelligently creates a timescale to represent the chart data.
 
-* Uses major ticks, minor ticks and the contextual labels to help understand the timescale.
+- Uses major ticks, minor ticks and the contextual labels to help understand the timescale.
 
-* Each tick is associated with a label. The label is center alligned with the tick and appears right below it. 
+- Each tick is associated with a label. The label is center alligned with the tick and appears right below it.
 
-* The visibility of each label is smartly controlled to reduce clutter and provide better clarity of the timescale.
+- The visibility of each label is smartly controlled to reduce clutter and provide better clarity of the timescale.
 
-* The Time Axis supports almost all types of time-related units, from milliseconds (smallest) to years (largest).
+- The Time Axis supports almost all types of time-related units, from milliseconds (smallest) to years (largest).
 
-* The Time Axis automatically updates itself whenever there is a change in the time period from any of the components like standard range selector, custom range selector, time navigator and interactions such as zoom/pan from the chart canvas.
+- The Time Axis automatically updates itself whenever there is a change in the time period from any of the components like standard range selector, custom range selector, time navigator and interactions such as zoom/pan from the chart canvas.
 
 A sample chart is shown below:
 
@@ -46,5 +46,24 @@ new FusionCharts({
 
 In th above code:
 
-* Create the `xAxis` object.
-* Set the column name which you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date` is the column name.
+- Create the `xAxis` object.
+- Set the column name which you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date` is the column name.
+
+# Time Axis
+
+The X-axis of a timeseries chart displays time-based data and is known as the Time Axis. Based on the atomicity of the data and the active window (of the time navigator) the time axis intelligently creates a timescale to display the chart data. Refer to the image below:
+
+<<Screenshot>>
+
+### Configure Time Axis
+
+You can set the plot name for the time axis using the `PlotName` method of the `TimeAxis` object within the `timeSeries` class. Refer to the code given below:
+
+```
+/* plot name */
+timeSeries.TimeAxis.PlotName = "Order Date";|
+```
+
+The Time Axis will look as shown below:
+
+<<Live Chart>>

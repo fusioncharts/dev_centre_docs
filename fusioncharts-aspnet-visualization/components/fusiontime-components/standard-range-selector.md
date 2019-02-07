@@ -42,3 +42,24 @@ Refer to the code below:
     }
 }
 ```
+
+# Standard Range Selector
+
+The Standard Range Selector lets you select and focus on data within standard time periods. The options of contextual time periods vary according to the atomicity of your data and the data you are currently displaying in the chart.
+
+A Standard Range Selector looks as shown in the image below:
+
+<<Screenshot>>
+
+### Show/Hide Standard Range Selector
+
+To show the Standard Range Selector, set to `true` the value of the `Enable` property of the `StandardRangeSelector` object of the `timeSeries` class. Refer to the code given below:
+
+```
+/* standard range selector */
+timeSeries.StandardRangeSelector.Enable = true;|
+```
+
+The Standard Range Selector will look as shown below:
+
+<<Live Chart>>

@@ -4,15 +4,15 @@ description: This article defines the reference line.
 heading: Reference Line
 ---
 
-A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), which indicates a specific value. It can help you quickly compare any data value against a fixed value represented by a line. For multivariate charts, each chart canvas can have it's own reference line. 
+A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), which indicates a specific value. It can help you quickly compare any data value against a fixed value represented by a line. For multivariate charts, each chart canvas can have it's own reference line.
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-reference-line.png" alt="Reference Line" width="700" height="420">
 
 The salient features of the reference line:
 
-* A label which is by default displayed on the right side of the refernce the line, when you hover on the knob.
+- A label which is by default displayed on the right side of the refernce the line, when you hover on the knob.
 
-* A value which is by default displayed on the left side (y-axis) whenyou hover on the reference line. 
+- A value which is by default displayed on the left side (y-axis) whenyou hover on the reference line.
 
 A chart with a reference line is shown below:
 
@@ -24,9 +24,9 @@ In the example given above, a reference line appears, parallel to the time axis.
 
 You can configure the reference line using the following attributes of the `referenceLine` object:
 
-* Use the `label` attribute to set the text of the label.
+- Use the `label` attribute to set the text of the label.
 
-* Use the `value` attribute to set the value at which the reference line should appear.
+- Use the `value` attribute to set the value at which the reference line should appear.
 
 Refer to the code given below:
 
@@ -83,3 +83,32 @@ The chart after applying the above attributes will look like as shown below:
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line-style-definition %}
 
 In the above sample, **font color** of the y-axis label has been changed.
+
+# Reference Line
+
+A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), which indicates a specific value. It can help you quickly compare any data value against a fixed value represented by a line. For multivariate charts, you can set separate reference lines for each chart canvas.
+
+A Reference Line looks as shown in the image below:
+
+<<Screenshot>>
+
+### Configure Reference Line
+
+To include a Reference Line in a chart, you need to use the `Add` method of the `ReferenceLine` object. The `Add` method accepts the following two parameters:
+
+- `label` - It is of type string, and accepts the label text for the Reference Line.
+
+- `value` - It is of type double, and accepts the value of the point of the Y-axis at which the Reference Line will originate.
+
+If you want to include more than one Reference Line in a chart, you need to invoke `Add` separately for each of them, along with the parameters.
+
+Refer to the code given below:
+
+```
+/* add reference line */
+timeSeries.ReferenceLine.Add("label1", 500);|
+```
+
+The Reference Line will look as shown below:
+
+<<Live Chart>>
