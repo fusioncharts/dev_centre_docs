@@ -12,14 +12,7 @@ In this page, we'll see how to install **FusionTime** and render an interactive 
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download the FusionCharts package to get access to FusionTime and other charts of the FusionCharts Suite.
-
-To render time-series charts in Angularjs, do the following:
-
-* Install v5.0.0 or later versions of `angularjs-fusioncharts`.
-* [Download](https://www.fusioncharts.com/download/fusiontime) and install v13.3.3-sr.1 or later versions of FusionCharts. This package contains the required files for time-series charts. So, in order to render time-series charts, you have to install FusionCharts Suite.
-
-To install follow any of the methods below:
+Since FusionTime is distributed along with FusionCharts Suite, download/install the FusionCharts package to get access to FusionTime and other charts of the FusionCharts Suite. To install follow any of the methods below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -100,7 +93,7 @@ $ npm install fusioncharts --save
 </div>
 </div>
 
-That completes the installation of FusionTime and the `angularjs-fusioncharts` directive.
+That completes the installation of **FusionTime** and the `angularjs-fusioncharts` directive.
 
 ## Create your First Chart
 
@@ -110,7 +103,7 @@ The chart will look as shown below:
 
 {% embed_ftChart integrations-angularjs %}
 
-The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
+The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-angularjs/data.json) for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time      | Sales |
 | --------- | ----- |
@@ -133,7 +126,7 @@ Next, let's learn how to prepare the schema and the data of the `DataTable`.
 
 ### Create the `schema`
 
-The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`.
+The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object outlines a column in the above table.
 
 > `name` and `type` are mandatory keys for each object. If the object type is `time` then `format` is also a mandatory key.
 
@@ -216,11 +209,9 @@ We are all set with our data to create the chart.
 
 Now, let's create the files to render the above chart.
 
-### Create `JS` file
+### Render the chart
 
-Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create a `JS` file and copy the following code:
-
-The consolidated code is shown below:
+Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create a `JS` file and copy any of the following code:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
