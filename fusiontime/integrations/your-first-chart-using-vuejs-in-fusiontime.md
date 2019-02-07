@@ -275,8 +275,8 @@ const schemaFetch = fetch(
 const chart = new Vue({
   el: '#app',
   data: {
-    width: '500',
-    height: '300',
+    width: '700',
+    height: '400',
     type: 'timeseries',
     dataFormat: 'json',
     dataSource: {
