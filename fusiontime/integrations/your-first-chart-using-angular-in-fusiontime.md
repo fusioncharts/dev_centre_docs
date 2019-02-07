@@ -12,9 +12,7 @@ In this page, we'll see how to install **FusionTime** and render an interactive 
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite.
-
-To install follow the steps below:
+Since FusionTime is distributed along with FusionCharts Suite, download/install the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite. To install follow the steps below:
 
 **Step 1: Install angular-fusioncharts**
 
@@ -55,7 +53,7 @@ FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#wha
 * `schema` - which defines the properties of the columns.
 * `data` - values of each row and column of the DataTable
 
-> For an instance of FusionTime, you can create `n` number of `dataTables`, but only 1 `dataStore`.
+> For an instance of FusionTime, you can create `n` number of `DataTables`, but only 1 `DataStore`.
 
 Next, let's learn how to prepare the schema and the data of the `DataTable`.
 
