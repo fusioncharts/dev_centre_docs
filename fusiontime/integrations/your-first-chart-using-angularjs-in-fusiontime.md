@@ -211,7 +211,7 @@ Now, let's create the files to render the above chart.
 
 ### Render the chart
 
-Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create a `JS` file and copy any of the following code:
+To render the chart, create a `.js` file and copy the following code:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
