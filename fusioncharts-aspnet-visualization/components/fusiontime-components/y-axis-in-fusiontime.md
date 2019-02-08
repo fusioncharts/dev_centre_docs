@@ -38,7 +38,7 @@ Use the `YAxes` object of the `timeSeries` instance of the `TimeSeriesChart` cla
 
 Refer to the code given below:
 
-```aspnet
+```csharp
 /* add different configuration */
 timeSeries.YAxes.Aggregation = TimeSeriesAggregation.Function.COUNT;
 timeSeries.YAxes.AxisType = TimeSeriesYAxisObject.YAxisType.LINEAR;
@@ -75,7 +75,7 @@ You can overload the `Add()` method in one of the ways given above, to add more 
 
 Refer to the code below:
 
-```aspnet
+```csharp
 /* add another plot */
 /* required for Multiple Data plots */
 timeSeries.YAxes.Plot.Add("Population", TimeSeriesYAxisObject.YAxisType.LOG, TimeSeriesAggregation.Function.LAST);|
@@ -91,7 +91,7 @@ If you want to build a multivariate chart, you will need to create more than one
 
 Refer to the code given below:
 
-```aspnet
+```csharp
 /* add another YAxis */
 /* this is for Multivariate chart */
 timeSeries.YAxes.AddAnotherYAxis();|
