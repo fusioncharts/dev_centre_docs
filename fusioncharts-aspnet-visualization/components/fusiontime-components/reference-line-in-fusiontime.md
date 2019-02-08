@@ -29,4 +29,4 @@ timeSeries.ReferenceLine.Add("label1", 500);
 
 The Reference Line will look as shown below:
 
-<<Live Chart>>
+{% embed_ftChart fusioncharts-aspnet-reference-lines %}

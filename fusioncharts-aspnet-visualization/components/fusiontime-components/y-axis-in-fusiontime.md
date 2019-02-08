@@ -53,7 +53,7 @@ timeSeries.YAxes.Plot.Add("GDP", TimeSeriesYAxisObject.YAxisType.LOG, TimeSeries
 
 The chart will look as shown below:
 
-> > Live chart>>
+{% embed_ftChart online-sales-multi-variate %}
 
 ### Add More Plots
 

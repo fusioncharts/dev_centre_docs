@@ -34,4 +34,4 @@ timeSeries.DataMarker.AddMarker("series name").Identifier('.').Time("Oct-1987").
 
 The chart will look as shown below:
 
-<<Live Chart>>
+{% embed_ftChart fusioncharts-aspnet-data-markers %}

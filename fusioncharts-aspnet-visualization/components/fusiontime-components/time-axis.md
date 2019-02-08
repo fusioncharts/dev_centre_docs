@@ -19,4 +19,4 @@ timeSeries.TimeAxis.PlotName = "Order Date";
 
 The Time Axis will look as shown below:
 
-<<Live Chart>>
+{% embed_ftChart online-sales-single-series %}

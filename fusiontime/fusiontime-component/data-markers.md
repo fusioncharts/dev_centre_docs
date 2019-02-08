@@ -14,19 +14,19 @@ The image below shows the data marker on a time series chart:
 
 To create data Markers follow the setps given below:
 
-* Create a `dataMarker` object.
+- Create a `dataMarker` object.
 
-* Within the `dataMarker` object use the `seriesName` attribute to specify the exact name of the series, against which the data marker will be displayed. If you need to mention the exact name of the series as a combination of a series name and a measure name, then specify it in the format `<series_name>-<measure_name>`.
+- Within the `dataMarker` object use the `seriesName` attribute to specify the exact name of the series, against which the data marker will be displayed. If you need to mention the exact name of the series as a combination of a series name and a measure name, then specify it in the format `<series_name>-<measure_name>`.
 
-* Within the `dataMarker` object use the `time` attribute to set the time instance on which the data marker will be displayed. 
+- Within the `dataMarker` object use the `time` attribute to set the time instance on which the data marker will be displayed.
 
-* Within the `dataMarker` object use the `timeFormat` attribute to set the format of the date/time corresponding to the marker.
+- Within the `dataMarker` object use the `timeFormat` attribute to set the format of the date/time corresponding to the marker.
 
-* Within the `dataMarker` object use the `type` attribute to define the type of the marker as `flag`.
+- Within the `dataMarker` object use the `type` attribute to define the type of the marker as `flag`.
 
-* Within the `dataMarker` object use the `identifier` attribute to set the character to be displayed within the marker.
+- Within the `dataMarker` object use the `identifier` attribute to set the character to be displayed within the marker.
 
-* Within the `dataMarker` object use the `tooltext` attribute to set the text to be displayed in the tooltip, when you hover the mouse pointer over the data marker.
+- Within the `dataMarker` object use the `tooltext` attribute to set the text to be displayed in the tooltip, when you hover the mouse pointer over the data marker.
 
 Refer to the code given below:
 
@@ -84,4 +84,4 @@ dataMarker: [{
 
 The data marker created using the above code is shown below:
 
-{% embed_ftChart fusiontime-components-data-marker %}
+{% embed_ftChart fusioncharts-aspnet-data-markers %}

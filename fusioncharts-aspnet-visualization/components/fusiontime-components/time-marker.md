@@ -8,7 +8,7 @@ You can mark events on the Time Axis using Time Markers. A time marker appears a
 
 A time marker looks as shown in the image below:
 
-<<Screenshot>>
+<img src="{% site.BASE_URL %}/images/fusiontime-component-time-marker.png" alt="Data Markers" width="700" height="420">
 
 ### Configure Time Marker
 
@@ -34,4 +34,8 @@ Refer to the code below:
 timeSeries.TimeAxis.TimeMarker.AddMarker("label").EndDate(new DateTime(2010, 12, 31)).Multiplier(2).StartDate(new DateTime(2010, 01, 01)).TimeFormat("%b-%Y").TimeUnit(TimeSeriesUnit.Time.YEAR);
 ```
 
-Note: The code given above will create a time marker for a period of time. To create a time marker for a specific point, simply omit the `EndDate()` instance method.
+> The code given above will create a time marker for a period of time. To create a time marker for a specific point, simply omit the `EndDate()` instance method.
+
+A sample chart with a time marker is shown below:
+
+{% embed_ftChart fusioncharts-aspnet-time-marker %}
