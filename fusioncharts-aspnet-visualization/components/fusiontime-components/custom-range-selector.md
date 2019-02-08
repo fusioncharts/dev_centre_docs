@@ -21,4 +21,4 @@ timeSeries.CustomRangeSelector.Enable = true;
 
 The Custom Range Selector will look as shown below:
 
-<<Live Chart>>
+{% embed_ftChart fusioncharts-aspnet-custom-range-selector %}
