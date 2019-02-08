@@ -2233,7 +2233,7 @@
             "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-tooltip"
           },
           {
-            "title": "FusionTime Components",
+            "title": "Time-series Components",
             "children": [
               {
                 "title": "Time Axis",
