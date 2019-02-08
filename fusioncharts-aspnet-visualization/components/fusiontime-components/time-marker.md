@@ -26,12 +26,12 @@ A time marker can either mark a single point, or a range, on the time axis. Use 
 
 Refer to the code below:
 
-```javascript
+```csharp
 /* Time marker */
 /* AddMarker() return an instance of TimeMarker Object */
 /* EndDate(), StartDate(), Multiplier(),TimeFormat, TimeUnit() are instance methods of AddMarker() and can be invoked as below */
 
-timeSeries.TimeAxis.TimeMarker.AddMarker("label").EndDate(new DateTime(2010, 12, 31)).Multiplier(2).StartDate(new DateTime(2010, 01, 01)).TimeFormat("%b-%Y").TimeUnit(TimeSeriesUnit.Time.YEAR);|
+timeSeries.TimeAxis.TimeMarker.AddMarker("label").EndDate(new DateTime(2010, 12, 31)).Multiplier(2).StartDate(new DateTime(2010, 01, 01)).TimeFormat("%b-%Y").TimeUnit(TimeSeriesUnit.Time.YEAR);
 ```
 
 Note: The code given above will create a time marker for a period of time. To create a time marker for a specific point, simply omit the `EndDate()` instance method.

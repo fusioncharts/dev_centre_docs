@@ -78,7 +78,7 @@ Refer to the code below:
 ```csharp
 /* add another plot */
 /* required for Multiple Data plots */
-timeSeries.YAxes.Plot.Add("Population", TimeSeriesYAxisObject.YAxisType.LOG, TimeSeriesAggregation.Function.LAST);|
+timeSeries.YAxes.Plot.Add("Population", TimeSeriesYAxisObject.YAxisType.LOG, TimeSeriesAggregation.Function.LAST);
 ```
 
 The chart will look as shown below:
@@ -94,7 +94,7 @@ Refer to the code given below:
 ```csharp
 /* add another YAxis */
 /* this is for Multivariate chart */
-timeSeries.YAxes.AddAnotherYAxis();|
+timeSeries.YAxes.AddAnotherYAxis();
 ```
 
 The chart will look as shown below:

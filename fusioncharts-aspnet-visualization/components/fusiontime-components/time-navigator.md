@@ -14,9 +14,9 @@ A time navigator looks as shown in the image below:
 
 To show the time navigator, set to `true` the value of the `Enable` property of the `TimeNavigator` object of the `timeSeries` class. Refer to the code given below:
 
-```javascript
+```csharp
 /*  time navigator */
-timeSeries.TimeNavigator.Enable = true;|
+timeSeries.TimeNavigator.Enable = true;
 ```
 
 The Time Navigator will look as shown below:

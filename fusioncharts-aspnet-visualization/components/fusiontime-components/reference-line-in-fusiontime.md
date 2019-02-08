@@ -22,9 +22,9 @@ If you want to include more than one Reference Line in a chart, you need to invo
 
 Refer to the code given below:
 
-```javascript
+```csharp
 /* add reference line */
-timeSeries.ReferenceLine.Add("label1", 500);|
+timeSeries.ReferenceLine.Add("label1", 500);
 ```
 
 The Reference Line will look as shown below:

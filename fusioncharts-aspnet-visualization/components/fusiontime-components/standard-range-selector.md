@@ -14,9 +14,9 @@ A Standard Range Selector looks as shown in the image below:
 
 To show the Standard Range Selector, set to `true` the value of the `Enable` property of the `StandardRangeSelector` object of the `timeSeries` class. Refer to the code given below:
 
-```
+```csharp
 /* standard range selector */
-timeSeries.StandardRangeSelector.Enable = true;|
+timeSeries.StandardRangeSelector.Enable = true;
 ```
 
 The Standard Range Selector will look as shown below:

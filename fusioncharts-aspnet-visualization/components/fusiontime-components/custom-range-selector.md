@@ -14,7 +14,7 @@ A Custom Range Selector looks as shown in the image below:
 
 To show the Custom Range Selector, set to `true` the value of the `Enable` property of the `CustomRangeSelector` object of the `timeSeries` class. Refer to the code given below:
 
-```javascript
+```csharp
 /* Custom range selector */
 timeSeries.CustomRangeSelector.Enable = true;
 ```

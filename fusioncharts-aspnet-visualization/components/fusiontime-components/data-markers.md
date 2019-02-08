@@ -26,10 +26,10 @@ A data marker mark a single point on the data plot. Use the `AddMarker()` instan
 
 Refer to the code below:
 
-```javascript
+```csharp
 /* AddMarker returns an instance of DataMarkerObject */
 /* Identifier(), Time(),ToolText(),Type(),TimeFormat() are instance method of AddMarker and can be invoked as : */
-timeSeries.DataMarker.AddMarker("series name").Identifier('.').Time("Oct-1987").ToolText("The FED is forced to ease rate after the stock market crash").Type(TimeSeries.DataMarker.MarkerType.FLAG).TimeFormat("%b-%Y");|
+timeSeries.DataMarker.AddMarker("series name").Identifier('.').Time("Oct-1987").ToolText("The FED is forced to ease rate after the stock market crash").Type(TimeSeries.DataMarker.MarkerType.FLAG).TimeFormat("%b-%Y");
 ```
 
 The chart will look as shown below:

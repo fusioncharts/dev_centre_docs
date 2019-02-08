@@ -12,7 +12,7 @@ The X-axis of a timeseries chart displays time-based data and is known as the Ti
 
 You can set the plot name for the time axis using the `PlotName` method of the `TimeAxis` object within the `timeSeries` class. Refer to the code given below:
 
-```aspnet
+```csharp
 /* plot name */
 timeSeries.TimeAxis.PlotName = "Order Date";
 ```
