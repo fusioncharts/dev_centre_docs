@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a chart in Vue
 ---
 
-FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhance the experience of exploring and understanding time series data.
+FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhances the experience of exploring and understanding time series data.
 
 We have built a simple `vue-fusioncharts` component which provides bindings for **FusionTime**. The `vue-fusioncharts` directive allows you to easily add interactive time-series charts to any **Vue** project.
 
@@ -158,7 +158,7 @@ Now, let's learn how to prepare the schema and the data of the `DataTable`.
 
 ### Create the `schema`
 
-The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column in the above table.
+The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column of the above table.
 
 > `name` and `type` are mandatory keys for each object. If the object type is `time` then `format` is also a mandatory key.
 
