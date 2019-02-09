@@ -1,10 +1,10 @@
 ---
 title: Create a Chart in Angular | FusionTime
 description: This article outlines the steps to be executed for creating your first chart in Angular using FusionTime.
-heading: Create a Chart in Angular Using FusionTime
+heading: Create a chart in Angular
 ---
 
-FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhance the experience of exploring and understanding time series data. 
+FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhances the experience of exploring and understanding time series data.
 
 We have built a simple `angular-fusioncharts` component which provides bindings for **FusionTime**. The `angular-fusioncharts` directive allows you to easily add interactive time-series charts to any **Angular** project.
 
@@ -12,14 +12,7 @@ In this page, we'll see how to install **FusionTime** and render an interactive 
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite.
-
-To render time-series charts in Angular, do the following:
-
-* Install v3.0.0 or later versions of `angular-fusioncharts`.
-* [Download](https://www.fusioncharts.com/download/fusiontime) and install v13.3.3-sr.1 or later versions of FusionCharts. This package contains the required files for time-series charts. So, in order to render time-series charts, you have to install FusionCharts Suite.
-
-To install follow the steps below:
+Since FusionTime is distributed along with FusionCharts Suite, download/install the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite. To install follow the steps below:
 
 **Step 1: Install angular-fusioncharts**
 
@@ -33,17 +26,17 @@ $ npm install angular-fusioncharts --save
 $ npm install fusioncharts --save
 ```
 
-That completes the installation of FusionTime and the `angular-fusioncharts` component.
+That completes the installation of **FusionTime** and the `angular-fusioncharts` component.
 
 ## Create your First Chart
 
-Let's create a time-series chart using `angular-fusioncharts` directive showing 'Daily sales of a grocery store'.
+Let's create a time-series chart using `angular-fusioncharts` directive showing **Daily sales of a grocery store**.
 
 The chart is shown below:
 
 {% embed_ftChart integrations-angular %}
 
-The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
+The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-angular/data.json) for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time      | Sales |
 | --------- | ----- |
@@ -55,20 +48,20 @@ The data for the above chart is too big to be displayed here. The table below sh
 | 06-Feb-11 | 4667  |
 | 07-Feb-11 | 1064  |
 
-FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`, is a part of [`DataStore`](/fusiontime/fusiontime-data-engine/overview#what-is-datastore-), is the tabular representation of data. To create the `DataTable`, you need to provide the following:
+FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`  is the tabular representation of data. To create the `DataTable`, you need to provide the following:
 
 * `schema` - which defines the properties of the columns.
 * `data` - values of each row and column of the DataTable
 
-> For an instance of FusionTime, you can create `n` number of `dataTables`, but only 1 `dataStore`.
+> For an instance of FusionTime, you can create `n` number of `DataTables`, but only 1 `DataStore`.
 
 Next, let's learn how to prepare the schema and the data of the `DataTable`.
 
 ### Create the `schema`
 
-The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`.
+The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column of the above table.
 
-> 'name' and 'type' are mandatory keys for each object. If the object type is 'time' then 'format' is also a mandatory key.
+> `name` and `type` are mandatory keys for each object. If the object type is `time` then `format` is also a mandatory key.
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 
@@ -88,7 +81,7 @@ Let schema = [{
 In the above code:
 
 * `schema` is the variable in which the array is stored.
-* Each object of a schema maps to a column of the tabular representation of the data
+* Each object of a schema maps to a column of the tabular representation of the data.
 * The JSON object has the following attributes:
   * name - Specify the name of the column of the tabular representation of data
   * type - Specify the type of the column.
@@ -133,7 +126,7 @@ var data = [
 
 Create a new `data.json` file, and copy the above code there. Next, copy the entire [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-angular/data.json) and replace it with the content of the data object in your 'data.json' file.
 
-> It is not mandatory to create a `data.json` file. You could also do the same in your HTML file.
+> It is not mandatory to create a `data.json` file. You can also do the same in your HTML file.
 
 In the above code:
 

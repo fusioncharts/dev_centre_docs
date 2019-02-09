@@ -1,22 +1,18 @@
 ---
 title: Create a Chart in React | FusionTime
 description: This article outlines the steps to be executed for creating your first chart in React using FusionTime.
-heading: Create a Chart in React Using FusionTime
+heading: Create a chart in React
 ---
 
-## Overview
+FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhances the experience of exploring and understanding time series data.
 
-FusionTime is a JavaScript library that helps you visualize and explore time-series data interactively. It supports data with atomicity ranging from milliseconds to years. We have built a simple `react-fusioncharts` component which provides bindings for FusionTime. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project.
+We have built a simple `react-fusioncharts` component which provides bindings for **FusionTime**. The `react-fusioncharts` directive allows you to easily add interactive time-series charts to any **React** project.
 
-In this page, we'll see how to install FusionTime and render a chart using the `react-fusiontcharts` component.
+In this page, we'll see how to install **FusionTime** and render an interactive time-series chart using the `react-fusioncharts` directive.
 
 ## Installation
 
-To render charts in **React** using FusionTime:
-* Install **v13.3.3-sr.1** or later versions of **FusionCharts**.
-* Install **v3.0.0** or later versions of `react-fusioncharts`.
-
-Install **FusionTime** and the `react-fusioncharts` component using any of the following methods:
+Since FusionTime is distributed along with FusionCharts Suite, download/install the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite. To install follow the steps below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -43,8 +39,8 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install FusionTime and the `react-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
-        <li>Include the [React](https://reactjs.org/)core library.
-        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>Include the [React](https://reactjs.org/) core library.
+        <li>Include [Babel](https://babeljs.io/) for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
         <li>Include the **FusionCharts** JavaScript files from CDN.</li>
         <li>Include FusionTime file.</li>
         <li>Include the `react-fusioncharts` module.</li>
@@ -104,13 +100,13 @@ $ npm install fusioncharts --save
 
 ## Create your First Chart
 
-Now that you have installed, it's time to create your first time series chart using **FusionTime**. To start with we will create a simple time-series chart showcasing **Online sales of a SuperStore**.
+Let's create a time-series chart using `react-fusioncharts` component showing **Online sales of a SuperStore**.
 
 The chart will look as shown below:
 
 {% embed_ftChart integrations-react %}
 
-The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
+The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-react/data.json) for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time     | Sales   |
 | -------- | ------- |
@@ -122,16 +118,20 @@ The data for the above chart is too big to be displayed here. The table below sh
 | 1/7/2011 | 2573.82 |
 | 1/7/2011 | 609.98  |
 
-In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
+FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`  is the tabular representation of data. To create the `DataTable`, you need to provide the following:
 
-* The `schema` which defines the properties of the columns.  
-* The `actual` values for each row and column of the `DataTable` as the data.
+* `schema` - which defines the properties of the columns.  
+* `data` - values of each row and column of the DataTable.
 
-Now, let's check how to prepare the schema and the data of the `DataTable`.
+> For an instance of FusionTime, you can create `n` number of `DataTables`, but only 1 `DataStore`.
+
+Now, let's learn how to prepare the schema and the data of the `DataTable`.
 
 ### Create the `schema`
 
-The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`. The schema maps the data to the columns of a `DataTable` along with the type for each column and the input format in case of date. You've to mandatorily specify the schema for each `DataTable`.
+The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column of the above table.
+
+> `name` and `type` are mandatory keys for each object. If the object type is `time` then `format` is also a mandatory key.
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 
@@ -150,19 +150,20 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 In the above code:
 
-* `schema` is the variable in which the array is saved.
-* Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
-    * name - Specify the name of the column.
-    * type - Specify the type of the column.
-	* format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
+* `schema` is the variable in which the array is stored.
+* Each object of a schema maps to a column of the tabular representation of the data.
+* The JSON object has the following attributes:
+  * name - Specify the name of the column of the tabular representation of data
+  * type - Specify the type of the column.
+  * format - Specify the input format of the date as per your data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](https://www.fusioncharts.com/dev/fusiontime/fusiontime-attributes).
 
-Now that we have the schema ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
+Now that we have the schema ready, let's work on the data.
 
 ### Create `data`
 
-In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
+Data can be provided either in JSON format or 2D array format. We will use the 2D array format.
 
-To add the data, let's create a `data.json` file and copy the following code:
+[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-react/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
 var data = [
@@ -190,31 +191,30 @@ var data = [
         "1/7/2011",
         2573.82
     ],
-    ...
-    ...
-    ...
 ]
 ```
 
-To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series/data.json)
+Create a new `data.json` file, and copy the above code there. Next, copy the entire [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-react/data.json) and replace it with the content of the data object in your 'data.json' file.
+
+> It is not mandatory to create a `data.json` file. You can also do the same in your HTML file.
 
 In the above code:
 
-* `data` is the variable in which the data array is saved.
-* Each row in the data array corresponds to a row in the `DataTable`.
-* Each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
+* `data` is the variable in which the data array is stored.
+* Each object in the data array corresponds to a row in the tabular representation of the data.
+* Each element in an object is represented by each object of the `schema`. The values in each object of the array represent the following:
   * Time according to the format
-  * Total Sales amount 
+  * Total Sales amount
 
 We are all set with our data to create the chart.
 
-> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](https://www.fusioncharts.com/dev/fusiontime/getting-started/change-default-aggregation).
 
-Now, let's create the file to render the above chart.
+Now, let's create the files to render the above chart.
 
-Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create a `JS` file and copy the following code:
+### Render the chart
 
-The consolidated code is shown below:
+To render the chart, create a `.js` file and copy the following code:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
