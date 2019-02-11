@@ -14,7 +14,7 @@ A Y-axis in a timeseries chart looks as shown in the image below:
 
 Use the `YAxes` object of the `timeSeries` instance of the `TimeSeriesChart` class to define a Y-axis. After that, use the following to configure the axes.
 
-- Set the aggregation function using the `Aggregation` property of `YAxes` object. which accepts enum of type `TimeSeriesAggregation.Function`. `TimeSeriesAggregation.Function` can accept one of the enum values listed <<here>>.
+- Set the aggregation function using the `Aggregation` property of `YAxes` object. which accepts enum of type `TimeSeriesAggregation.Function`. `TimeSeriesAggregation.Function` can accept one of the enum values from `SUM`, `COUNT`, `MAX`, `MIN`, `LAST`, `FIRST`, `AVERAGE`, `VARIANCE` or `STDDEV`.
 
 - Set the axis type using the `AxisType` property of the `YAxes` object, which accepts enum of type `TimeSeriesYAxisObject.YAxisType`. `TimeSeriesYAxisObject.YAxisType` can accept the following enum values:
 
@@ -30,7 +30,7 @@ Use the `YAxes` object of the `timeSeries` instance of the `TimeSeriesChart` cla
 
 - Set the minimum value for the Y-axis using the double type `Min` property of the `YAxes` object.
 
-- Set the plot type using the `PlotType` property of the `YAxes` object, which accepts enum of type `TimeSeriesYAxisObject.SeriesPlotType`. `TimeSeriesYAxisObject.SeriesPlotType` can accept the enum values mentioned <<here>>.
+- Set the plot type using the `PlotType` property of the `YAxes` object, which accepts enum of type `TimeSeriesYAxisObject.SeriesPlotType`. `TimeSeriesYAxisObject.SeriesPlotType` can accept the enum values from `LINE`, `COLUMN`, `AREA`, `SPLINE`, `STEPLINE`, `OHLC` and `CANDLESTICK`.
 
 - Set the Y-axis title using the string type `Title` property of the `YAxes` object.
 
@@ -67,7 +67,7 @@ If you want to add another plot to a chart (for multi-series charts), overload t
 
   - `LOG`
 
-- Plot.Add(string param,TimeSeriesAggregation.Function.LAST param) - The `Add()` method accepts the name of the plot as a string and the aggregation function applied to the Y-axis as the `TimeSeriesAggregation.Function` enum. The enum can accept one of the values listed <<here>>.
+- Plot.Add(string param,TimeSeriesAggregation.Function.LAST param) - The `Add()` method accepts the name of the plot as a string and the aggregation function applied to the Y-axis as the `TimeSeriesAggregation.Function` enum. The enum can accept one of the values from `SUM`, `COUNT`, `MAX`, `MIN`, `LAST`, `FIRST`, `AVERAGE`, `VARIANCE` or `STDDEV`.
 
 - `Plot.Add(string param,TimeSeriesYAxisObject.YAxisType.LOG param,TimeSeriesAggregation.Function.LAST param)` - The `Add()` method accepts the name of the plot as a string, the type of the Y-axis as the `TimeSeriesYAxisObject.YAxisType` enum, and the aggregation function applied to the Y-axis as the `TimeSeriesAggregation.Function` enum.
 
@@ -99,4 +99,4 @@ timeSeries.YAxes.AddAnotherYAxis();
 
 The chart will look as shown below:
 
-> > Live chart>>
+{% embed_ftChart online-sales-single-series %}

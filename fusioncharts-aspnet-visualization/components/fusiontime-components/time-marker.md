@@ -22,7 +22,7 @@ A time marker can either mark a single point, or a range, on the time axis. Use 
 
 - Use the `TimeFormat()` method, which accepts a string type parameter, to set the data format used in the data.
 
-- Use the `TimeUnit()` method, which accepts an enum of type `TimeSeriesUnit.Time`, to set the unit for the time. This enum accepts the values listed <<here>>.
+- Use the `TimeUnit()` method, which accepts an enum of type `TimeSeriesUnit.Time`, to set the unit for the time.
 
 Refer to the code below:
 
