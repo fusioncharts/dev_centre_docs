@@ -368,7 +368,7 @@ To configure the x-axis name (title), you can use the following APIs.
 
 ### `Time Axis`
 
-Following are the API's which only have support on **time-series** charts.
+> `Time axis` API's only have support on **time-series** charts.
 
 To configure the time axis, you can use the following APIs.
 
@@ -377,7 +377,79 @@ To configure the time axis, you can use the following APIs.
 | `PlotName`   | string            | timeSeries.TimeAxis<br/>.PlotName = "Order Date";      | Defines the column, which will be plotted along this axis. |
 | `TimeMarker` | TimeMarkersObject | timeSeries.TimeAxis<br/>.TimeMarker.AddMarker("label") | AddMarker() returns an instance of TimeMarkerObject        |
 
+### `Time Navigator`
+
+> `Time navigator` only have support on **time-series** charts.
+
+The time navigator plots the complete data in a rectangular box located right below the time axis. The syntax to enable the time navigator is shown below:
+
+```csharp
+timeSeries.TimeNavigator.Enable = true; //Boolean
+```
+
+### `Custom Range Selector`
+
+> `Custom range selector` only have support on **time-series** charts.
+
+The Custom Range Selector lets you select and focus on data within a specific time period by selecting the start and end points. The syntax to enable the custom range selector is shown below:
+
+```csharp
+timeSeries.CustomRangeSelector.Enable = true; //Boolean
+```
+
+### `Standard Range Selector`
+
+> `Standard range selector` only have support on **time-series** charts.
+
+The Standard Range Selector lets you select and focus on data within standard time periods. The syntax to enable the standard range selector is shown below:
+
+```csharp
+timeSeries.StandardRangeSelector.Enable = true; //Boolean
+```
+
+### `Reference Line`
+
+> `Reference line` only have support on **time-series** charts.
+
+A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), which indicates a specific value. The syntax to add a reference line is shown below:
+
+```csharp
+timeSeries.ReferenceLine.Add("label", value); // (string, double)
+```
+
+### `URL`
+
+> `URL` only have support on **time-series** charts.
+
+The syntax to add a URL to a text is shown below:
+
+```csharp
+timeSeries.ClickUrl = "www.fusioncharts.com"; //URL
+```
+
+### `Series Name`
+
+> `Series name` only have support on **time-series** charts.
+
+To specify the series name in the chart, use the syntax given below:
+
+```csharp
+timeSeries.SeriesName = "Population"; //string
+```
+
+### `Tooltip`
+
+> This tooltip API only have support on **time-series** charts.
+
+The syntax to disable the tooltip of the time-series chart is shown below:
+
+```csharp
+timeSeries.ToolTip.Enable = false; //Boolean
+```
+
 ### `Time Marker`
+
+> `Time Marker` APIs only have support on **time-series** charts.
 
 To configure the time marker, you can use the following APIS.
 
@@ -604,7 +676,9 @@ timeSeries.Data.SourcePathHandler = “/path/to/local/DataSourceHandler.ashx”;
 
 ### Data Marker
 
-A data marker marks a single point on the data plot. To configure the data marker, use the following APIs:
+> `Data marker` API's only have support on **time-series** charts.
+
+A data marker marks a single point on the data plot of a **time-series** chart. To configure the data marker, use the following APIs:
 
 <table>
 	<tr>
@@ -620,3 +694,4 @@ A data marker marks a single point on the data plot. To configure the data marke
 		<td></td>
 	</tr>
 </table>
+
