@@ -462,9 +462,9 @@ To configure the y-axis for the **time-series** chart, you can use the following
 		<td></td>
 	</tr>
 	<tr>
-		<td>Plot</td>
+		<td>`Plot`</td>
 		<td>object</td>
-		<td><strong>1.</strong> timeSeries.YAxes.Plot. Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot.Add("GDP", TimeSeriesYAxisObject.SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot.Add("GDP", TimeSeriesAggregation.Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot.Add("GDP", TimeSeriesYAxisObject.SeriesPlotType.AREA, TimeSeriesAggregation.Function.LAST);</td>
+		<td><strong>1.</strong> timeSeries.YAxes.Plot .Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot .Add("GDP", TimeSeriesYAxisObject .SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot .Add("GDP", TimeSeriesAggregation .Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot .Add("GDP", TimeSeriesYAxisObject .SeriesPlotType.AREA, TimeSeriesAggregation .Function.LAST);</td>
 		<td></td>
 	</tr>
 </table>
@@ -598,5 +598,49 @@ Data is an object used to define the values to be plotted for individual data se
 
 ### Data Marker
 
-A data marker mark a single point on the data plot. To configure the data marker, use the following APIs:
+A data marker marks a single point on the data plot. To configure the data marker, use the following APIs:
 
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`AddMarker`</td>
+		<td>string</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`Identifier`</td>
+		<td>char</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`Time`</td>
+		<td>string</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`Tooltext`</td>
+		<td>string</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`Type`</td>
+		<td>DataMarker.MarkerType</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`TimeFormat`</td>
+		<td>string</td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
