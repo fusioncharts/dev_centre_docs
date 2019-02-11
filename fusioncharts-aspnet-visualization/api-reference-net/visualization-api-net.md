@@ -610,37 +610,7 @@ A data marker marks a single point on the data plot. To configure the data marke
 	<tr>
 		<td>`AddMarker`</td>
 		<td>string</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>`Identifier`</td>
-		<td>char</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>`Time`</td>
-		<td>string</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>`Tooltext`</td>
-		<td>string</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>`Type`</td>
-		<td>DataMarker.MarkerType</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>`TimeFormat`</td>
-		<td>string</td>
-		<td></td>
+		<td>timeSeries.DataMarker.<br/>AddMarker("series name")<br/>.`Identifier`('.')<br/>.`Time`("Oct-1987")<br/>.`ToolText`("Stock market crash")<br/>.`Type`(TimeSeries.DataMarker<br/>.MarkerType.FLAG)<br/>.`TimeFormat`("%b-%Y");</td>
 		<td></td>
 	</tr>
 </table>
