@@ -48,7 +48,7 @@ The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master
 | 06-Feb-11 | 4667  |
 | 07-Feb-11 | 1064  |
 
-FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`, is a part of [`DataStore`](/fusiontime/fusiontime-data-engine/overview#what-is-datastore-), which is the tabular representation of data. To create the `DataTable`, you need to provide the following:
+FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`  is the tabular representation of data. To create the `DataTable`, you need to provide the following:
 
 * `schema` - which defines the properties of the columns.
 * `data` - values of each row and column of the DataTable
