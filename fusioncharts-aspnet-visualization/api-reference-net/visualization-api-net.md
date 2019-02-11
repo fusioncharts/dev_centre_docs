@@ -165,7 +165,7 @@ Widget.PyramidChart pyramid = new Widget.PyramidChart("Widget_Id");
 To syntax to create a time-series chart is given below:
 
 ```csharp
-
+Charts.TimeSeriesChart timeSeries = new Charts.TimeSeriesChart("id");
 ```
 
 ## API's Common for All Charts
@@ -199,7 +199,7 @@ visualizationObj.Theme = FusionChartsTheme.ThemeName.FUSION //Fusion Theme is ap
 
 ### `Height`
 
-Sets the height of the canvas in pixels
+Sets the height of the canvas.
 
 **Syntax**
 
@@ -212,7 +212,7 @@ timeSeries.Height.Point(400);//unit point
 
 ### `Width`
 
-Sets the width of the canvas in pixels
+Sets the width of the canvas.
 
 **Syntax**
 
@@ -237,7 +237,7 @@ visualizationObj.Dispose();
 
 These API's let you configure the cosmetics of chart caption.
 
-> Not applicable for time-series.
+> Not applicable for `time-series`.
 
 | API         | Type                           | Syntax                                                                    | Description                                      |
 | ----------- | ------------------------------ | ------------------------------------------------------------------------- | ------------------------------------------------ |
@@ -253,7 +253,7 @@ These API's let you configure the cosmetics of chart caption.
 
 These APIs let you configure the cosmetics of chart sub-caption.
 
-> Not applicable for time-series.
+> Not applicable for `time-series`.
 
 | API         | Type           | Syntax                                                | Description                                    |
 | ----------- | -------------- | ----------------------------------------------------- | ---------------------------------------------- |
@@ -268,7 +268,7 @@ These APIs let you configure the cosmetics of chart sub-caption.
 
 These APIs let you configure the x-axis labels.
 
-> Not applicable for time-series.
+> Not applicable for `time-series`.
 
 | API            | Type        | Syntax                                                          | Description                                                                   |
 | -------------- | ----------- | --------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -286,7 +286,7 @@ These APIs let you configure the x-axis labels.
 
 These APIs let you configure the data plot values.
 
-> Not applicable for time-series.
+> Not applicable for `time-series`.
 
 | API                   | Type                      | Syntax                                                                           | Description                                                        |
 | --------------------- | ------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -302,7 +302,7 @@ These APIs let you configure the data plot values.
 
 These API's let you control the tool tip. You can set the background color, border color, separator character and few other details.
 
-> Not applicable for time-series.
+> Not applicable for `time-series`.
 
 | API             | Type           | Syntax                                                  | Description                                        |
 | --------------- | -------------- | ------------------------------------------------------- | -------------------------------------------------- |
@@ -319,7 +319,7 @@ These API's let you control the tool tip. You can set the background color, bord
 
 In a chart, the name of each dataset shows up in the legend of the chart. Using the API's below, you can configure the functional and cosmetic properties of the legend.
 
-> Not applicable for time-series.
+> Not applicable for `time-series`.
 
 | API         | Type                        | Syntax                                                                | Description                                                    |
 | ----------- | --------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------- |
@@ -368,29 +368,33 @@ To configure the x-axis name (title), you can use the following APIs.
 
 ### `Time Axis`
 
+Following are the API's which only have support on **time-series** charts.
+
 To configure the time axis, you can use the following APIS.
 
-| API          | Type                      | Syntax                                            | Description                                                |
-| ------------ | ------------------------- | ------------------------------------------------- | ---------------------------------------------------------- |
-| `PlotName`   | string                    | timeSeries.TimeAxis.PlotName = "Order Date";      | Defines the column, which will be plotted along this axis. |
-| `TimeMarker` | Time Marker Configuration | timeSeries.TimeAxis.TimeMarker.AddMarker("label") | AddMarker() returns an instance of TimeMarkerObject        |
+| API          | Type              | Syntax                                            | Description                                                |
+| ------------ | ----------------- | ------------------------------------------------- | ---------------------------------------------------------- |
+| `PlotName`   | string            | timeSeries.TimeAxis.PlotName = "Order Date";      | Defines the column, which will be plotted along this axis. |
+| `TimeMarker` | TimeMarkersObject | timeSeries.TimeAxis.TimeMarker.AddMarker("label") | AddMarker() returns an instance of TimeMarkerObject        |
 
 ### `Time Marker`
 
 To configure the time marker, you can use the following APIS.
 
-| API        | Type                | Syntax                                                                  | Description |
-| ---------- | ------------------- | ----------------------------------------------------------------------- | ----------- |
-| AddMarker  | string              | timeSeries.TimeAxis. TimeMarker. AddMarker("label");                    |
-| EndDate    | date/time           | timeSeries.TimeAxis. TimeMarker. EndDate(new DateTime(2010, 12, 31));   |
-| StartDate  | date/time           | timeSeries.TimeAxis. TimeMarker. StartDate(new DateTime(2010, 01, 01)); |
-| Multiplier | integer             | timeSeries.TimeAxis. TimeMarker. Multiplier(2);                         |
-| TimeFormat | string              | timeSeries.TimeAxis. TimeMarker. TimeFormat(“%b-%Y”);                 |
-| TimeUnit   | TimeSeriesUnit.Time | timeSeries.TimeAxis. TimeMarker. TimeUnit(TimeSeriesUnit.Time.YEAR);    |
+| API        | Type                | Syntax                                                                          | Description |
+| ---------- | ------------------- | ------------------------------------------------------------------------------- | ----------- |
+| AddMarker  | string              | timeSeries.TimeAxis<br/>.TimeMarker<br/>.AddMarker("label");                    |
+| EndDate    | date/time           | timeSeries.TimeAxis<br/>.TimeMarker<br/>.EndDate(new DateTime(2010, 12, 31));   |
+| StartDate  | date/time           | timeSeries.TimeAxis<br/>.TimeMarker<br/>.StartDate(new DateTime(2010, 01, 01)); |
+| Multiplier | integer             | timeSeries.TimeAxis<br/>.TimeMarker<br/>.Multiplier(2);                         |
+| TimeFormat | string              | timeSeries.TimeAxis<br/>.TimeMarker<br/>.TimeFormat(“%b-%Y”);                 |
+| TimeUnit   | TimeSeriesUnit.Time | timeSeries.TimeAxis<br/>.TimeMarker<br/>.TimeUnit(TimeSeriesUnit.Time.YEAR);    |
 
 ### `YAxis`
 
 To configure the y-axis name (title), you can use the following APIs.
+
+> Not applicable for `time-series`.
 
 | API               | Type           | Syntax                                          | Description                                          |
 | ----------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- |
@@ -426,15 +430,9 @@ To configure the y-axis for the **time-series** chart, you can use the following
 		<td></td>
 	</tr>
 	<tr>
-		<td>`Format.Prefix`</td>
-		<td>string</td>
-		<td>timeSeries.YAxes. Format. Prefix = "$";</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>`Format.Suffix`</td>
-		<td>string</td>
-		<td>timeSeries.YAxes. Format. Suffix = "K";</td>
+		<td>`Format`</td>
+		<td>object</td>
+		<td><strong>1.</strong> timeSeries.YAxes<br/>.Format.`Prefix` = "$";<br/><br/><strong>2.</strong> timeSeries.YAxes.<br/>Format.Suffix = "K";</td>
 		<td></td>
 	</tr>
 	<tr>
