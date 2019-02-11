@@ -2266,6 +2266,10 @@
               {
                 "title": "Data Marker",
                 "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/data-markers"
+              },
+              {
+                "title": "Tooltip",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/tooltip"
               }
             ]
           }
