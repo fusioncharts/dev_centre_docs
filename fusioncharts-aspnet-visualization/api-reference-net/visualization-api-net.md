@@ -638,19 +638,19 @@ Data is an object used to define the values to be plotted for individual data se
 	<tr>
 		<td>`Source`</td>
 		<td>FusionCharts Data Model</td>
-		<td>visualizationObj.Data.Source = dataSource;</td>
+		<td>visualizationObj.Data<br/>.Source = dataSource;</td>
 		<td>Sets the data source of the data model. `dataSource` is an instance of the DataModel.</td>
 	</tr>
 	<tr>
 		<td>`CategoryField`</td>
 		<td> </td>
-		<td>visualizationObj.Data.CategoryField("Country");</td>
+		<td>visualizationObj.Data<br/>.CategoryField("Country");</td>
 		<td>Specifies the category field.</td>
 	</tr>
 	<tr>
 		<td>`SeriesField`</td>
 		<td> </td>
-		<td>visualizationObj.Data.SeriesField("Sales");</td>
+		<td>visualizationObj.Data<br/>.SeriesField("Sales");</td>
 		<td>Specifies the series field.</td>
 	</tr>
 	<tr>
@@ -662,7 +662,7 @@ Data is an object used to define the values to be plotted for individual data se
 	<tr>
 		<td>`ValueFormatting`</td>
 		<td> </td>
-		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition`(MultiSeriesDataElement.ValuePlaced position.ABOVE);</td>
+		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition`(MultiSeriesDataElement<br/>.ValuePlaced position.ABOVE);</td>
 		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha(integer)<br/>2. Color(Hex Color Code(string))<br/>3. Dashed(boolean)<br/>4. ShowValue(boolean)<br/>5. Link(string)<br/>6. DisplayValue(string)<br/>7. ToolText(string)<br/>8. ValuePosition(Enum)</td>
 	</tr>
 </table>
