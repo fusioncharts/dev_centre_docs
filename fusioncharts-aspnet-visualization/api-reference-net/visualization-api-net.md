@@ -372,10 +372,26 @@ To configure the x-axis name (title), you can use the following APIs.
 
 To configure the time axis, you can use the following APIs.
 
-| API          | Type              | Syntax                                                 | Description                                                |
-| ------------ | ----------------- | ------------------------------------------------------ | ---------------------------------------------------------- |
-| `PlotName`   | string            | timeSeries.TimeAxis<br/>.PlotName = "Order Date";      | Defines the column, which will be plotted along this axis. |
-| `TimeMarker` | TimeMarkersObject | timeSeries.TimeAxis<br/>.TimeMarker.AddMarker("label") | AddMarker() returns an instance of TimeMarkerObject        |
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`PlotName`</td>
+		<td>string</td>
+		<td>timeSeries.TimeAxis<br/>.PlotName = "Order Date"; </td>
+		<td>Defines the column, which will be plotted along this axis.</td>
+	</tr>
+	<tr>
+		<td>`TimeMarker`</td>
+		<td>TimeMarkersObject</td>
+		<td>timeSeries.TimeAxis<br/>.TimeMarker<br/>.AddMarker("label")<br/>.`AddMarker`("label")<br/>.`EndDate`(new DateTime(2010, 12, 31));<br/>.`StartDate`(new DateTime(2010, 01, 01));<br/>.`Multiplier`(2);<br/>.`TimeFormat`(“%b-%Y”);<br/>.`TimeUnit`(TimeSeriesUnit.Time.YEAR);</td>
+		<td>AddMarker() returns an instance of TimeMarkerObject </td>
+	</tr>
+</table>
 
 ### `Time Navigator`
 
@@ -446,21 +462,6 @@ The syntax to disable the tooltip of the time-series chart is shown below:
 ```csharp
 timeSeries.ToolTip.Enable = false; //Boolean
 ```
-
-### `Time Marker`
-
-> `Time Marker` APIs only have support on **time-series** charts.
-
-To configure the time marker, you can use the following APIS.
-
-| API        | Type                | Syntax                                                                          | Description |
-| ---------- | ------------------- | ------------------------------------------------------------------------------- | ----------- |
-| AddMarker  | string              | timeSeries.TimeAxis<br/>.TimeMarker<br/>.AddMarker("label");                    |
-| EndDate    | date/time           | timeSeries.TimeAxis<br/>.TimeMarker<br/>.EndDate(new DateTime(2010, 12, 31));   |
-| StartDate  | date/time           | timeSeries.TimeAxis<br/>.TimeMarker<br/>.StartDate(new DateTime(2010, 01, 01)); |
-| Multiplier | integer             | timeSeries.TimeAxis<br/>.TimeMarker<br/>.Multiplier(2);                         |
-| TimeFormat | string              | timeSeries.TimeAxis<br/>.TimeMarker<br/>.TimeFormat(“%b-%Y”);                 |
-| TimeUnit   | TimeSeriesUnit.Time | timeSeries.TimeAxis<br/>.TimeMarker<br/>.TimeUnit(TimeSeriesUnit.Time.YEAR);    |
 
 ### `YAxis`
 
