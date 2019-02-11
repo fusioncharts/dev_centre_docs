@@ -388,7 +388,7 @@ To configure the time axis, you can use the following APIs.
 	<tr>
 		<td>`TimeMarker`</td>
 		<td>TimeMarkersObject</td>
-		<td>timeSeries.TimeAxis<br/>.TimeMarker<br/>.AddMarker("label")<br/>.`AddMarker`("label")<br/>.`EndDate`(new DateTime(2010, 12, 31));<br/>.`StartDate`(new DateTime(2010, 01, 01));<br/>.`Multiplier`(2);<br/>.`TimeFormat`(“%b-%Y”);<br/>.`TimeUnit`(TimeSeriesUnit.Time.YEAR);</td>
+		<td>timeSeries.TimeAxis<br/>.TimeMarker<br/>.`AddMarker`("label")<br/>.`EndDate`(new DateTime(2010, 12, 31));<br/>.`StartDate`(new DateTime(2010, 01, 01));<br/>.`Multiplier`(2);<br/>.`TimeFormat`(“%b-%Y”);<br/>.`TimeUnit`(TimeSeriesUnit.Time.YEAR);</td>
 		<td>AddMarker() returns an instance of TimeMarkerObject </td>
 	</tr>
 </table>
@@ -491,52 +491,52 @@ To configure the y-axis for the **time-series** chart, you can use the following
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>`Aggragation`</td>
+		<td>`Aggregation`</td>
 		<td>TimeSeriesAggregation.Function</td>
-		<td>timeSeries.YAxes. Aggregation = TimeSeriesAggregation. Function.COUNT;</td>
-		<td></td>
+		<td>timeSeries.YAxes<br/>.Aggregation = TimeSeriesAggregation<br/>.Function.COUNT;</td>
+		<td>Specifies the aggregation function to the y-axis.</td>
 	</tr>
 	<tr>
 		<td>`AxisType`</td>
 		<td>TimeSeriesYAxisObject.YAxisType</td>
-		<td>timeSeries.YAxes. AxisType = TimeSeriesYAxisObject. YAxisType. LINEAR;</td>
-		<td></td>
+		<td>timeSeries.YAxes<br/>.AxisType = TimeSeriesYAxisObject<br/>.YAxisType<br/>.LINEAR;</td>
+		<td>Specifies the y-axis to either `linear` or `log`.</td>
 	</tr>
 	<tr>
 		<td>`Format`</td>
 		<td>object</td>
 		<td><strong>1.</strong> timeSeries.YAxes<br/>.Format.`Prefix` = "$";<br/><br/><strong>2.</strong> timeSeries.YAxes.<br/>Format.`Suffix` = "K";</td>
-		<td></td>
+		<td>Specifies the `prefix` and `suffix` of the y-axis label.</td>
 	</tr>
 	<tr>
 		<td>`Max`</td>
 		<td>double</td>
-		<td>timeSeries.YAxes. Max = 30000;</td>
-		<td></td>
+		<td>timeSeries.YAxes<br/>.Max = 30000;</td>
+		<td>This API explicitly sets the upper limit of the chart.</td>
 	</tr>
 	<tr>
 		<td>`Min`</td>
 		<td>double</td>
 		<td>timeSeries.YAxes. Min = 10000;</td>
-		<td></td>
+		<td>This API explicitly sets the lower limit of the chart.</td>
 	</tr>
 	<tr>
 		<td>`PlotType`</td>
 		<td></td>
 		<td>timeSeries.YAxes. PlotType = TimeSeriesYAxisObject. SeriesPlotType. AREA;</td>
-		<td></td>
+		<td>Specifies the plot type of the chart. Example, <strong>column</strong>, <strong>area</strong>, <strong>line</strong></td>
 	</tr>
 	<tr>
 		<td>`Title`</td>
 		<td>string</td>
 		<td>timeSeries.YAxes. Title = "Total Sales";</td>
-		<td></td>
+		<td>Specifies the y-axis title of the chart.</td>
 	</tr>
 	<tr>
 		<td>`Plot`</td>
 		<td>object</td>
-		<td><strong>1.</strong> timeSeries.YAxes.Plot .Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot .Add("GDP", TimeSeriesYAxisObject .SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot .Add("GDP", TimeSeriesAggregation .Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot .Add("GDP", TimeSeriesYAxisObject .SeriesPlotType.AREA, TimeSeriesAggregation .Function.LAST);</td>
-		<td></td>
+		<td><strong>1.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesAggregation<br/>.Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA, TimeSeriesAggregation<br/>.Function.LAST);</td>
+		<td>Add plots when we render multiple data plots in a chart.</td>
 	</tr>
 </table>
 
