@@ -379,14 +379,14 @@ To configure the time axis, you can use the following APIS.
 
 To configure the time marker, you can use the following APIS.
 
-| API        | Type                | Syntax                                                                | Description |
-| ---------- | ------------------- | --------------------------------------------------------------------- | ----------- |
-| AddMarker  | string              | timeSeries.TimeAxis.TimeMarker.AddMarker("label");                    |
-| EndDate    | date/time           | timeSeries.TimeAxis.TimeMarker.EndDate(new DateTime(2010, 12, 31));   |
-| StartDate  | date/time           | timeSeries.TimeAxis.TimeMarker.StartDate(new DateTime(2010, 01, 01)); |
-| Multiplier | integer             | timeSeries.TimeAxis.TimeMarker.Multiplier(2);                         |
-| TimeFormat | string              | timeSeries.TimeAxis.TimeMarker.TimeFormat(“%b-%Y”);                 |
-| TimeUnit   | TimeSeriesUnit.Time | timeSeries.TimeAxis.TimeMarker.TimeUnit(TimeSeriesUnit.Time.YEAR);    |
+| API        | Type                | Syntax                                                                  | Description |
+| ---------- | ------------------- | ----------------------------------------------------------------------- | ----------- |
+| AddMarker  | string              | timeSeries.TimeAxis. TimeMarker. AddMarker("label");                    |
+| EndDate    | date/time           | timeSeries.TimeAxis. TimeMarker. EndDate(new DateTime(2010, 12, 31));   |
+| StartDate  | date/time           | timeSeries.TimeAxis. TimeMarker. StartDate(new DateTime(2010, 01, 01)); |
+| Multiplier | integer             | timeSeries.TimeAxis. TimeMarker. Multiplier(2);                         |
+| TimeFormat | string              | timeSeries.TimeAxis. TimeMarker. TimeFormat(“%b-%Y”);                 |
+| TimeUnit   | TimeSeriesUnit.Time | timeSeries.TimeAxis. TimeMarker. TimeUnit(TimeSeriesUnit.Time.YEAR);    |
 
 ### `YAxis`
 
@@ -416,55 +416,55 @@ To configure the y-axis for the **time-series** chart, you can use the following
 	<tr>
 		<td>`Aggragation`</td>
 		<td>TimeSeriesAggregation.Function</td>
-		<td>timeSeries.YAxes.Aggregation = TimeSeriesAggregation.Function.COUNT;</td>
+		<td>timeSeries.YAxes. Aggregation = TimeSeriesAggregation. Function.COUNT;</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>`AxisType`</td>
 		<td>TimeSeriesYAxisObject.YAxisType</td>
-		<td>timeSeries.YAxes.AxisType = TimeSeriesYAxisObject.YAxisType.LINEAR;</td>
+		<td>timeSeries.YAxes. AxisType = TimeSeriesYAxisObject. YAxisType. LINEAR;</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>`Format.Prefix`</td>
 		<td>string</td>
-		<td>timeSeries.YAxes.Format.Prefix = "$";</td>
+		<td>timeSeries.YAxes. Format. Prefix = "$";</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>`Format.Suffix`</td>
 		<td>string</td>
-		<td>timeSeries.YAxes.Format.Suffix = "K";</td>
+		<td>timeSeries.YAxes. Format. Suffix = "K";</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>`Max`</td>
 		<td>double</td>
-		<td>timeSeries.YAxes.Max = 30000;</td>
+		<td>timeSeries.YAxes. Max = 30000;</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>`Min`</td>
 		<td>double</td>
-		<td>timeSeries.YAxes.Min = 10000;</td>
+		<td>timeSeries.YAxes. Min = 10000;</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>`PlotType`</td>
 		<td></td>
-		<td>timeSeries.YAxes.PlotType = TimeSeriesYAxisObject.SeriesPlotType.AREA;</td>
+		<td>timeSeries.YAxes. PlotType = TimeSeriesYAxisObject. SeriesPlotType. AREA;</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>`Title`</td>
 		<td>string</td>
-		<td>timeSeries.YAxes.Title = "Total Sales";</td>
+		<td>timeSeries.YAxes. Title = "Total Sales";</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>Plot</td>
 		<td>object</td>
-		<td>1. timeSeries.YAxes.Plot.Add("GDP");<br/>2. timeSeries.YAxes.Plot.Add("GDP", TimeSeriesYAxisObject.SeriesPlotType.AREA);<br/>3. timeSeries.YAxes.Plot.Add("GDP", TimeSeriesAggregation.Function.LAST);<br/>4. timeSeries.YAxes.Plot.Add("GDP", TimeSeriesYAxisObject.SeriesPlotType.AREA, TimeSeriesAggregation.Function.LAST);</td>
+		<td><strong>1.</strong> timeSeries.YAxes.Plot. Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot.Add("GDP", TimeSeriesYAxisObject.SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot.Add("GDP", TimeSeriesAggregation.Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot.Add("GDP", TimeSeriesYAxisObject.SeriesPlotType.AREA, TimeSeriesAggregation.Function.LAST);</td>
 		<td></td>
 	</tr>
 </table>
