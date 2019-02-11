@@ -20,7 +20,9 @@ Now that you have the data handy, let's build the chart.
 
 Create the `DataHandler.ashx` file and do the following:
 
-- Include the FusionCharts.DataEngine.dll file.
+- Include the `FusionCharts.DataEngine.dll` file.
+
+- Include the `FusionCharts.Visualization.dll` file.
 
 - Set response content type as "application/json".
 
@@ -38,6 +40,7 @@ Refer to the code given below:
 
 ```csharp
 using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
 using System;
 using System.Collections.Generic;
 using System.Data;
