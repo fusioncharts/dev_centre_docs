@@ -389,7 +389,7 @@ To configure the time axis, you can use the following APIs.
 		<td>`TimeMarker`</td>
 		<td>TimeMarkersObject</td>
 		<td>timeSeries.TimeAxis<br/>.TimeMarker<br/>.`AddMarker`("label")<br/>.`EndDate`(new DateTime(2010, 12, 31));<br/>.`StartDate`(new DateTime(2010, 01, 01));<br/>.`Multiplier`(2);<br/>.`TimeFormat`(“%b-%Y”);<br/>.`TimeUnit`(TimeSeriesUnit.Time.YEAR);</td>
-		<td>AddMarker() returns an instance of TimeMarkerObject </td>
+		<td>AddMarker() returns an instance of TimeMarkerObject. The values of `Time` enum can be `YEAR`, `MONTH`, `DAY`, `HOUR`, `MINUTE`, `SECOND` and `MILLISECOND`.</td>
 	</tr>
 </table>
 
@@ -494,13 +494,13 @@ To configure the y-axis for the **time-series** chart, you can use the following
 		<td>`Aggregation`</td>
 		<td>TimeSeriesAggregation.Function</td>
 		<td>timeSeries.YAxes<br/>.Aggregation = TimeSeriesAggregation<br/>.Function.COUNT;</td>
-		<td>Specifies the aggregation function to the y-axis.</td>
+		<td>The values of `function` enum can be `SUM`, `COUNT`, `MAX`, `MIN`, `LAST`, `FIRST`, `AVERAGE`, `VARIANCE` or `STDDEV`.</td>
 	</tr>
 	<tr>
 		<td>`AxisType`</td>
 		<td>TimeSeriesYAxisObject.YAxisType</td>
 		<td>timeSeries.YAxes<br/>.AxisType = TimeSeriesYAxisObject<br/>.YAxisType<br/>.LINEAR;</td>
-		<td>Specifies the y-axis to either `linear` or `log`.</td>
+		<td>The values of `y-axis` enum can either be `linear` or `log`. </td>
 	</tr>
 	<tr>
 		<td>`Format`</td>
@@ -524,7 +524,7 @@ To configure the y-axis for the **time-series** chart, you can use the following
 		<td>`PlotType`</td>
 		<td></td>
 		<td>timeSeries.YAxes. PlotType = TimeSeriesYAxisObject. SeriesPlotType. AREA;</td>
-		<td>Specifies the plot type of the chart. Example, <strong>column</strong>, <strong>area</strong>, <strong>line</strong></td>
+		<td>The values of `PlotType` enum can be `LINE`, `COLUMN`, `AREA`, `SPLINE`, `STEPLINE`, `OHLC` and `CANDLESTICK`</td>
 	</tr>
 	<tr>
 		<td>`Title`</td>
@@ -675,7 +675,7 @@ Data is an object used to define the values to be plotted for individual data se
 timeSeries.Data.SourcePathHandler = “/path/to/local/DataSourceHandler.ashx”;
 ```
 
-### Data Marker
+### `Data Marker`
 
 > `Data marker` API's only have support on **time-series** charts.
 
@@ -692,6 +692,6 @@ A data marker marks a single point on the data plot of a **time-series** chart. 
 		<td>`AddMarker`</td>
 		<td>string</td>
 		<td>timeSeries.DataMarker.<br/>AddMarker("series name")<br/>.`Identifier`('.')<br/>.`Time`("Oct-1987")<br/>.`ToolText`("Stock market crash")<br/>.`Type`(TimeSeries.DataMarker<br/>.MarkerType.FLAG)<br/>.`TimeFormat`("%b-%Y");</td>
-		<td>Specifies the configuration to the data marker.</td>
+		<td>The values of `MarkerType` enum can be `FLAG` and `PIN`.</td>
 	</tr>
 </table>
