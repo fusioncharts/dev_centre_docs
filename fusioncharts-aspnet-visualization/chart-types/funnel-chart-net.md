@@ -6,14 +6,14 @@ heading: Funnel chart
 
 Now, let's learn how to create a Funnel chart. We will create a chart showcasing the purchase-conversion analysis ofa a website. The data will look as shown below:
 
-Wesite Sections|Website Visits
--|-
-Unique Website Visits|1460000
-Programme Details Section Visits|930000
-Attempts to Register|540000
-Successful Registrations|210000
-Logged In|190000
-Purchased on Introductory Offers|120000
+| Wesite Sections                  | Website Visits |
+| -------------------------------- | -------------- |
+| Unique Website Visits            | 1460000        |
+| Programme Details Section Visits | 930000         |
+| Attempts to Register             | 540000         |
+| Successful Registrations         | 210000         |
+| Logged In                        | 190000         |
+| Purchased on Introductory Offers | 120000         |
 
 The chart will look as shown below:
 
@@ -89,8 +89,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             funnel.Caption.Text = "Visit to purchase analysis";
             funnel.Caption.Text = "Harry's Supermart";
             funnel.SubCaption.Text = "Visit to purchase- Conversion Anallysis for last year";
-            funnel.Width = "600";
-            funnel.Height = "400";
+            funnel.Width.Pixel(600);
+            funnel.Height.Pixel(400);
             Literal1.Text = funnel.Render();
         }
     }
