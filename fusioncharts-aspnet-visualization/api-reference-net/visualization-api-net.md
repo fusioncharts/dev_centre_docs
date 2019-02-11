@@ -388,9 +388,6 @@ To configure the time marker, you can use the following APIS.
 | TimeFormat | string              | timeSeries.TimeAxis.TimeMarker.TimeFormat(“%b-%Y”);                 |
 | TimeUnit   | TimeSeriesUnit.Time | timeSeries.TimeAxis.TimeMarker.TimeUnit(TimeSeriesUnit.Time.YEAR);    |
 
-
-
-
 ### `YAxis`
 
 To configure the y-axis name (title), you can use the following APIs.
@@ -406,6 +403,71 @@ To configure the y-axis name (title), you can use the following APIs.
 | `BorderColor`     | Hex Color Code | visualizationObj.YAxis.BorderColor = "#ffffff"; | Sets the border color of the Y-axis title            |
 | `BGColor`         | Hex Color Code | visualizationObj.YAxis.BGColor = "#000000";     | Sets the background color of the Y-axis title        |
 | `BorderThickness` | integer        | visualizationObj.YAxis.BorderThickness = 2;     | Sets the border thickness of the Y-axis title        |
+
+To configure the y-axis for the **time-series** chart, you can use the following APIs.
+
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`Aggragation`</td>
+		<td>TimeSeriesAggregation.Function</td>
+		<td>timeSeries.YAxes.Aggregation = TimeSeriesAggregation.Function.COUNT;</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`AxisType`</td>
+		<td>TimeSeriesYAxisObject.YAxisType</td>
+		<td>timeSeries.YAxes.AxisType = TimeSeriesYAxisObject.YAxisType.LINEAR;</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`Format.Prefix`</td>
+		<td>string</td>
+		<td>timeSeries.YAxes.Format.Prefix = "$";</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`Format.Suffix`</td>
+		<td>string</td>
+		<td>timeSeries.YAxes.Format.Suffix = "K";</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`Max`</td>
+		<td>double</td>
+		<td>timeSeries.YAxes.Max = 30000;</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`Min`</td>
+		<td>double</td>
+		<td>timeSeries.YAxes.Min = 10000;</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`PlotType`</td>
+		<td></td>
+		<td>timeSeries.YAxes.PlotType = TimeSeriesYAxisObject.SeriesPlotType.AREA;</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>`Title`</td>
+		<td>string</td>
+		<td>timeSeries.YAxes.Title = "Total Sales";</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Plot</td>
+		<td>object</td>
+		<td>1. timeSeries.YAxes.Plot.Add("GDP");<br/>2. timeSeries.YAxes.Plot.Add("GDP", TimeSeriesYAxisObject.SeriesPlotType.AREA);<br/>3. timeSeries.YAxes.Plot.Add("GDP", TimeSeriesAggregation.Function.LAST);<br/>4. timeSeries.YAxes.Plot.Add("GDP", TimeSeriesYAxisObject.SeriesPlotType.AREA, TimeSeriesAggregation.Function.LAST);</td>
+		<td></td>
+	</tr>
+</table>
 
 ### `Data`
 
@@ -533,3 +595,8 @@ Data is an object used to define the values to be plotted for individual data se
 		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha(integer)<br/>2. Color(Hex Color Code(string))<br/>3. Dashed(boolean)<br/>4. ShowValue(boolean)<br/>5. Link(string)<br/>6. DisplayValue(string)<br/>7. ToolText(string)<br/>8. ValuePosition(Enum)</td>
 	</tr>
 </table>
+
+### Data Marker
+
+A data marker mark a single point on the data plot. To configure the data marker, use the following APIs:
+
