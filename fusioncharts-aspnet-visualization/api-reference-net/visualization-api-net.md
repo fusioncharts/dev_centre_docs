@@ -370,12 +370,12 @@ To configure the x-axis name (title), you can use the following APIs.
 
 Following are the API's which only have support on **time-series** charts.
 
-To configure the time axis, you can use the following APIS.
+To configure the time axis, you can use the following APIs.
 
-| API          | Type              | Syntax                                            | Description                                                |
-| ------------ | ----------------- | ------------------------------------------------- | ---------------------------------------------------------- |
-| `PlotName`   | string            | timeSeries.TimeAxis.PlotName = "Order Date";      | Defines the column, which will be plotted along this axis. |
-| `TimeMarker` | TimeMarkersObject | timeSeries.TimeAxis.TimeMarker.AddMarker("label") | AddMarker() returns an instance of TimeMarkerObject        |
+| API          | Type              | Syntax                                                 | Description                                                |
+| ------------ | ----------------- | ------------------------------------------------------ | ---------------------------------------------------------- |
+| `PlotName`   | string            | timeSeries.TimeAxis<br/>.PlotName = "Order Date";      | Defines the column, which will be plotted along this axis. |
+| `TimeMarker` | TimeMarkersObject | timeSeries.TimeAxis<br/>.TimeMarker.AddMarker("label") | AddMarker() returns an instance of TimeMarkerObject        |
 
 ### `Time Marker`
 
@@ -432,7 +432,7 @@ To configure the y-axis for the **time-series** chart, you can use the following
 	<tr>
 		<td>`Format`</td>
 		<td>object</td>
-		<td><strong>1.</strong> timeSeries.YAxes<br/>.Format.`Prefix` = "$";<br/><br/><strong>2.</strong> timeSeries.YAxes.<br/>Format.Suffix = "K";</td>
+		<td><strong>1.</strong> timeSeries.YAxes<br/>.Format.`Prefix` = "$";<br/><br/><strong>2.</strong> timeSeries.YAxes.<br/>Format.`Suffix` = "K";</td>
 		<td></td>
 	</tr>
 	<tr>
