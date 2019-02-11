@@ -4,15 +4,23 @@ description: This article outlines the steps to create time-series chart.
 heading: Time-series chart
 ---
 
-Let's create a timeseries chart showing the "Most popular programming language".
+Let's create a timeseries chart showing the **Online sales of a SuperStore**.
 
 The chart will look as shown below:
 
-<<Live Chart>>
+{% embed_ftChart online-sales-single-series %}
 
 The data for the above chart is shown in the table below:
 
-<<Data>>
+| Time     | Sales   |
+| -------- | ------- |
+| 1/4/2011 | 16.448  |
+| 1/5/2011 | 272.736 |
+| 1/5/2011 | 11.784  |
+| 1/5/2011 | 3.54    |
+| 1/6/2011 | 19.536  |
+| 1/7/2011 | 2573.82 |
+| 1/7/2011 | 609.98  |
 
 ## Render the Chart
 
