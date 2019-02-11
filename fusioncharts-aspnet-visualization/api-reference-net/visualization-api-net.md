@@ -692,7 +692,6 @@ A data marker marks a single point on the data plot of a **time-series** chart. 
 		<td>`AddMarker`</td>
 		<td>string</td>
 		<td>timeSeries.DataMarker.<br/>AddMarker("series name")<br/>.`Identifier`('.')<br/>.`Time`("Oct-1987")<br/>.`ToolText`("Stock market crash")<br/>.`Type`(TimeSeries.DataMarker<br/>.MarkerType.FLAG)<br/>.`TimeFormat`("%b-%Y");</td>
-		<td></td>
+		<td>Specifies the configuration to the data marker.</td>
 	</tr>
 </table>
-
