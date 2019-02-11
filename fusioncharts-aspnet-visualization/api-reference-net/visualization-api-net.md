@@ -656,13 +656,13 @@ Data is an object used to define the values to be plotted for individual data se
 	<tr>
 		<td>`LabelFormatting`</td>
 		<td> </td>
-		<td>visualisationObj.Data<br/>.LabelFormatting("label_name")<br/>.`ShowLabel`(true)<br/>.`ToolText`("Country:India")<br/>.`FontName`("Arial")<br/>.`FontColor`("#ff000f")<br/>.`FontSize`(12)<br/>.`Bold`(false)<br/>.`Italic`(true)<br/>.`LabelLink`("www.fusioncharts.com/")<br/>.`BorderColor`("000000")<br/>.`BGColor`("000000")<br/>.`Alpha`(100);</td>
+		<td>visualisationObj.Data<br/>.LabelFormatting("label_name")<br/>.`ShowLabel`(true)<br/>.`ToolText`("Country:India")<br/>.`FontName`("Arial")<br/>.`FontColor`("#ff000f")<br/>.`FontSize`(12)<br/>.`Bold`(false)<br/>.`Italic`(true)<br/>.`LabelLink`<br/>("www.fusioncharts.com/")<br/>.`BorderColor`("000000")<br/>.`BGColor`("000000")<br/>.`Alpha`(100);</td>
 		<td>This instance is used to customize a specific label of a data plot. Following are the instance methods of `LabelFormatting`:<br/>1. ShowLabel(boolean)<br/>2. ToolText(string)<br/>3. FontName(string)<br/>4. FontColor(Hex Color Code(string))<br/>5. FontSize(integer)<br/>6. Bold(boolean)<br/>7. Italic(boolean)<br/>8. LabelLink(string)<br/>9. BorderColor(Hex Color Code(string))<br/>10. BGColor(Hex Color Code(string))<br/>11. Alpha(integer)</td>
 	</tr>
 	<tr>
 		<td>`ValueFormatting`</td>
 		<td> </td>
-		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition`(MultiSeriesDataElement<br/>.ValuePlaced position.ABOVE);</td>
+		<td>visualisationObj.Data<br/>.ValueFormatting<br/>("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition`<br/>(MultiSeriesDataElement<br/>.ValuePlaced position.ABOVE);</td>
 		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha(integer)<br/>2. Color(Hex Color Code(string))<br/>3. Dashed(boolean)<br/>4. ShowValue(boolean)<br/>5. Link(string)<br/>6. DisplayValue(string)<br/>7. ToolText(string)<br/>8. ValuePosition(Enum)</td>
 	</tr>
 </table>
