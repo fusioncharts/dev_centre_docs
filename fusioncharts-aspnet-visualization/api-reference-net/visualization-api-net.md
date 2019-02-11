@@ -467,7 +467,7 @@ To configure the y-axis for the **time-series** chart, you can use the following
 	</tr>
 </table>
 
-### `Data`
+### `Data` (column, bar, line, area, spline, stack)
 
 Data is an object used to define the values to be plotted for individual data series. The instances in **Data** object is listed below:
 
@@ -551,7 +551,7 @@ Series is an object used to customize the series of data plots. The instances of
 
 Following are the API's which only have support on **Pie**, **Doughnut**, **Funnel** and **Pyramid** Charts.
 
-### `Data`
+### `Data` (pie, doughnut, pyramid, funnel)
 
 Data is an object used to define the values to be plotted for individual data series. The instances of the DataModel in **Data** object is listed below:
 
@@ -593,6 +593,14 @@ Data is an object used to define the values to be plotted for individual data se
 		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha(integer)<br/>2. Color(Hex Color Code(string))<br/>3. Dashed(boolean)<br/>4. ShowValue(boolean)<br/>5. Link(string)<br/>6. DisplayValue(string)<br/>7. ToolText(string)<br/>8. ValuePosition(Enum)</td>
 	</tr>
 </table>
+
+### `Data` (time-series)
+
+Data is an object used to define the values to be plotted for individual data series. The **data** object of the time-series chart is shown below:
+
+```csharp
+timeSeries.Data.SourcePathHandler = “/path/to/local/DataSourceHandler.ashx”;
+```
 
 ### Data Marker
 
