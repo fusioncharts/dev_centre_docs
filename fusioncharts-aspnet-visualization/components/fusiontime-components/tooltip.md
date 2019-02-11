@@ -8,7 +8,7 @@ A tooltip is a small box that pops up when you hover the mouse pointer over cert
 
 A tooltip looks as shown in the image below:
 
-<<Screenshot>>
+<img src="{% site.BASE_URL %}/images/tooltip-fusiontime-net.png" alt="tooltip" width="700" height="420">
 
 ## Enable Tooltips
 

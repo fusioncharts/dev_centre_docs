@@ -2198,6 +2198,10 @@
           {
             "title": "Pyramid Chart",
             "path": "/fusioncharts-aspnet-visualization/chart-types/pyramid-chart-net"
+          },
+          {
+            "title": "Time-series Chart",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-chart-net"
           }
         ]
       },
