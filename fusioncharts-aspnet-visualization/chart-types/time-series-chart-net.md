@@ -4,7 +4,7 @@ description: This article outlines the steps to create time-series chart.
 heading: Time-series chart
 ---
 
-Let's create a timeseries chart showing the **Online sales of a SuperStore**.
+Let's create a time-series chart showing the **Online sales of a SuperStore**.
 
 The chart will look as shown below:
 
@@ -204,7 +204,7 @@ DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, a
 /* invoke RenderCompatibleDataInJson() static method of  TimeSeriesData class*/
 /* it will return a JSON */
 /* write the JSON as page response */
- context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(groupingWithAggregation));|
+ context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(groupingWithAggregation));
 ```
 
 > You can use Generic Handler page(.ashx) in web form application as well as MVC application.
@@ -212,5 +212,5 @@ DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, a
 Now pass the path of this handler page in the `SourcePathHandler` property (which accepts a string) of `Data` object.
 
 ```csharp
-timeSeries.Data.SourcePathHandler = "/path/to/local/DataSourceHandler.ashx";|
+timeSeries.Data.SourcePathHandler = "/path/to/local/DataSourceHandler.ashx";
 ```

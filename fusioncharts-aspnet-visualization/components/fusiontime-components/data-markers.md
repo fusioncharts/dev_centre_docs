@@ -10,9 +10,13 @@ A data marker looks as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-data-markers.png" alt="Data Markers" width="700" height="420">
 
+### Create a Data Marker
+
+To create a data marker, use the `AddMarker()` instance of `DataMarkerObject` to create a data marker. `AddMarker()` accepts a string type parameter. Use this parameter to mention the name of the data series that will display the marker.
+
 ### Configure Data Marker
 
-A data marker mark a single point on the data plot. Use the `AddMarker()` instance of `DataMarkerObject` to create a data marker. `AddMarker()` accepts a string type parameter, which you need to use, to mention the name of the data series that will display the marker. Once you create the data marker, use the following instance methods of `AddMarker()` to configure the data marker:
+Once you create a data marker, use the following instance methods of `AddMarker()` to configure the data marker:
 
 - Use the `Identifier()` method, which accepts a character parameter, to set the character you want to display within the marker.
 
