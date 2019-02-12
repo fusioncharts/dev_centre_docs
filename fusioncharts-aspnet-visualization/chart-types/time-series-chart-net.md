@@ -244,7 +244,7 @@ return Content(TimeSeriesData.RenderCompatibleDataInJson(model), "text/json");
 }
 ```
 
-Now pass the path of this handler page in the `SourcePathHandler` property (which accepts a string) of `Data` object.
+Now pass the path of this handler page or controller name(MVC) in the `SourcePathHandler` property (which accepts a string) of `Data` object.
 
 ```csharp
 timeSeries.Data.SourcePathHandler = "/path/to/local/DataSourceHandler.ashx";
