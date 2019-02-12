@@ -18,13 +18,12 @@ Use the `YAxes` object of the `timeSeries` instance of the `TimeSeriesChart` cla
 
 - Set the axis type using the `AxisType` property of the `YAxes` object, which accepts enum of type `TimeSeriesYAxisObject.YAxisType`. `TimeSeriesYAxisObject.YAxisType` can accept the following enum values:
 
-  - LINEAR
+  - `LINEAR`
+  - `LOG`
 
-  - LOG
+- Set a prefix for the values on the Y-axis using the `Prefix` property of the `Format` object. `Prefix` accepts a string type parameter.
 
-- Set a prefix for the values on the Y-axis using the `Prefix()` method of the `Format` object. `Prefix()` accepts a string type parameter.
-
-- Set a suffix for the values on the Y-axis using the `Suffix()` method of the `Format` object. `Suffix()` accepts a string type parameter.
+- Set a suffix for the values on the Y-axis using the `Suffix` property of the `Format` object. `Suffix` accepts a string type parameter.
 
 - Set the maximum value for the Y-axis using the double type `Max` property of the `YAxes` object.
 
@@ -83,7 +82,7 @@ timeSeries.YAxes.Plot.Add("Population", TimeSeriesYAxisObject.YAxisType.LOG, Tim
 
 The chart will look as shown below:
 
-> > Live chart>>
+{% embed_ftChart online-sales-multi-series %}
 
 ### Add a Y-axis
 
@@ -99,4 +98,4 @@ timeSeries.YAxes.AddAnotherYAxis();
 
 The chart will look as shown below:
 
-{% embed_ftChart online-sales-single-series %}
+{% embed_ftChart online-sales-multi-variate %}
