@@ -67,8 +67,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Instantiate Column Chart
             Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
             // Set Chart's width and height
-            column.Width = "700";
-            column.Height = "400";
+            column.Width.Pixel(700);
+            column.Height.Pixel(400);
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
             // Set Chart Title
@@ -82,7 +82,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 			column.Export.ExportedFileName = "fusioncharts.net_visualizations_exported_files";
 			column.Export.Action = Exporter.ExportAction.DOWNLOAD;
             // Render the chart to 'Literal1' literal control
-			
+
             Literal1.Text = column.Render();
         }
     }
@@ -91,11 +91,11 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
 In the above code:
 
-* Instantiate the Column chart.
-* Set the chart `width` and `height`.
-* Set the `Enabled` properties to `true` to enable the export option.
-* Set the name of the export file by using the `ExportedFileName` properties.
-* Set the `Action` properties as **DOWNLOAD** or **SAVE** to specify the type of action while exporting.
+- Instantiate the Column chart.
+- Set the chart `width` and `height`.
+- Set the `Enabled` properties to `true` to enable the export option.
+- Set the name of the export file by using the `ExportedFileName` properties.
+- Set the `Action` properties as **DOWNLOAD** or **SAVE** to specify the type of action while exporting.
 
 A chart with export enabled is shown below:
 

@@ -8,15 +8,15 @@ heading: Pie and Doughnut charts
 
 Now, let's learn how to create a Pie chart. We will use the same data of "Most Popular Programming Language". The data will look as shown below:
 
-Programming Language|Number of Users|
--|-
-Java|62000|
-Python|46000|
-Javascript|38000|
-C++|31000|
-C#|27000|
-PHP|14000|
-Perl|14000|
+| Programming Language | Number of Users |
+| -------------------- | --------------- |
+| Java                 | 62000           |
+| Python               | 46000           |
+| Javascript           | 38000           |
+| C++                  | 31000           |
+| C#                   | 27000           |
+| PHP                  | 14000           |
+| Perl                 | 14000           |
 
 The chart will look as shown below:
 
@@ -98,8 +98,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Instantiate Pie Chart
             Charts.PieChart pie = new Charts.PieChart("pie_chart");
             // Set Chart's width and height
-            pie.Width = 500;
-            pie.Height = 400;
+            pie.Width.Pixel(500);
+            pie.Height.Pixel(400);
             // Set DataModel instance as the data source of the chart
             pie.Data.Source = model;
             // Set Chart Title
@@ -201,8 +201,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             Charts.DoughnutChart doughnut = new Charts.DoughnutChart("doughnut_chart");
 
             // Set Chart's width and height
-            doughnut.Width = "550";
-            doughnut.Height = "350";
+            doughnut.Width.Pixel(500);
+            doughnut.Height.Pixel(350);
 
             // Set DataModel instance as the data source of the chart
             doughnut.Data.Source = model;

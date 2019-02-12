@@ -64,22 +64,22 @@ Click [here](https://dotnetfiddle.net/RqWwld) to edit the stacked chart.
 
 Create the `StackedChart.aspx.cs` file and do the following:
 
-* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
-* Create `DataTable`.
-* Retrieve data using database query.
-* Set server name.
-* Set `DataBase` name.
-* Connect with `DataBase` using a connection string.
-* Create `StaticSource` using the data table.
-* Create an instance of `DataModel` class.
-* Add `DataSource` to the `DataModel`.
-* Instantiate Stacked Chart.
-* Set chart width.
-* Set chart height.
-* Set the type of stacked chart as `BAR`, `COLUMN`, or `AREA`.
-* Set `DataModel` instance as the data source of the chart.
-* Set Chart title.
-* Finally, use a container using `<div>` to render the chart.
+- Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files.
+- Create `DataTable`.
+- Retrieve data using database query.
+- Set server name.
+- Set `DataBase` name.
+- Connect with `DataBase` using a connection string.
+- Create `StaticSource` using the data table.
+- Create an instance of `DataModel` class.
+- Add `DataSource` to the `DataModel`.
+- Instantiate Stacked Chart.
+- Set chart width.
+- Set chart height.
+- Set the type of stacked chart as `BAR`, `COLUMN`, or `AREA`.
+- Set `DataModel` instance as the data source of the chart.
+- Set Chart title.
+- Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
 
@@ -118,8 +118,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             DataModel model = new DataModel();
             model.DataSources.Add(source);
             Charts.StackedChart stack = new Charts.StackedChart("stacked_chart_db");
-            stack.Width = "700";
-            stack.Height = "400";
+            stack.Width.Pixel(700);
+            stack.Height.Pixel(400);
             stack.Caption.Text = "Revenue split by product aategory";
             stack.Caption.Bold = true;
             stack.SubCaption.Text = "for current year";
@@ -135,23 +135,34 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StackedChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.StackedChart" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StackedChart.aspx.cs"
+Inherits="FusionChartsVisualisationWebFormsSamples.Samples.StackedChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+  <head runat="server">
     <title></title>
-</head>
-<body>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
     <form id="form1" runat="server">
-        <div>
-            <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
-        </div>
-        <div>
-            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-        </div>
+      <div>
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+      </div>
+      <div>
+        <input
+          type="button"
+          value="Samples"
+          onclick="location.href = 'Index.aspx';"
+        />
+      </div>
     </form>
-</body>
+  </body>
 </html>
 ```

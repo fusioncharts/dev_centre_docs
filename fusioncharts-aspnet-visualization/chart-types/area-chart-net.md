@@ -6,15 +6,15 @@ heading: Area chart
 
 Now, let's learn how to create an Area Chart. We will create an Area chart showing "Weekly Liquor Sales". The data will look as shown below:
 
-Day|Sales(in USD)
--|-
-Monday|4123
-Tuesday|4633
-Wednesday|5507
-Thursday|4910
-Friday|5529
-Saturday|5803
-Sunday|6202
+| Day       | Sales(in USD) |
+| --------- | ------------- |
+| Monday    | 4123          |
+| Tuesday   | 4633          |
+| Wednesday | 5507          |
+| Thursday  | 4910          |
+| Friday    | 5529          |
+| Saturday  | 5803          |
+| Sunday    | 6202          |
 
 The chart will look as shown below:
 
@@ -79,8 +79,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             model.DataSources.Add(source);
             Charts.AreaChart area = new Charts.AreaChart("area_chart_db");
             area.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            area.Width = "700";
-            area.Height = "400";
+            area.Width.Pixel(700);
+            area.Height.Pixel(400);
             area.Data.Source = model;
             area.Caption.Text = "Sales of Liquor";
             area.Caption.Bold = true;

@@ -1063,7 +1063,7 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
     * `restoreBtnWidth`
     * `restoreBtnBorderColor`
     * `restoreBtnBgColor`
-    * `clickBubbles`
+    * `clipBubbles`
 
 * The deprecated methods `getXML()` & `setDataXML()` have been removed.
 

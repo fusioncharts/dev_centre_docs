@@ -35,7 +35,7 @@ new FusionCharts({
 			plot: ' ', //Column Name
 			timemarker: [{
 				// Attributes of Time Marker
-            }] 
+            }]
 		}
     },
 });
@@ -76,7 +76,7 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`multiplier`</td>
-		<td>NUmber</td>
+		<td>Number</td>
 		<td>Sets the multiplier of the time unit. Default is 1.</td>
 	</tr>
 </table>
@@ -99,7 +99,7 @@ new FusionCharts({
 			        unit: ' ', //Defines the time unit for the time marker.
 			        multiplier: ' ' //Defines the multiplier of the time unit.
 			    }
-            }] 
+            }]
 		}
     },
 });
@@ -165,7 +165,7 @@ new FusionCharts({
 			min: ' ', //Minimum value of the axis
 			max: ' ', //Maximum value of the axis
 			format: { //Measures
-    			"prefix": ' ', 
+    			"prefix": ' ',
     			"suffix": ' '
   			},
 		    plot: {
@@ -173,7 +173,7 @@ new FusionCharts({
 		    },
 		    type: ' ', //Plot type to render the chart
 		    title: ' ', //Title of the axis
-			aggregation: ' ' //Aggregate Function 	
+			aggregation: ' ' //Aggregate Function
 		}],
 	}
 })
@@ -263,7 +263,7 @@ new FusionCharts({
 		    identifier: ' ', //Defines a character to be shown
 		    timeFormat: ' ', //Format of the date
 		    tooltext: ' ' //Text in the tooltip
-		}] 
+		}]
 	}
 })
 ```
@@ -490,7 +490,7 @@ new FusionCharts({
 
 ## Date/time Format
 
-`outputFormat` attribute is used to set the format of the column being grouped. To set the date/time format of the chart, set the value of `outputFormat` attribute as per your requirement. 
+`outputFormat` attribute is used to set the format of the column being grouped. To set the date/time format of the chart, set the value of `outputFormat` attribute as per your requirement.
 
 List of predefined date/time format is given below:
 
@@ -625,12 +625,12 @@ List of predefined date/time format is given below:
 
 ```javascript
 unitDefaultFormats = {
-	'Year': '%Y', // 2018
-	'Month': '%b %Y', // Jan 2018
-	'Day': '%b %d, %Y', // Jan 01, 2018
-	'Hour': '%b %d, %Y %H hrs', // Jan 01, 2018 23 hrs
-	'Minute': '%b %d, %Y %H:%M', // Jan 01, 2018 23:34
-	'Second': '%b %d, %Y %H:%M:%S', // Jan 01, 2018 23:34:26
-	'Millisecond': '%b %d, %Y %H:%M:%S:%L' // Jan 01, 2018 23:34:26:123
+  Year: "%Y", // 2018
+  Month: "%b %Y", // Jan 2018
+  Day: "%b %d, %Y", // Jan 01, 2018
+  Hour: "%b %d, %Y %H hrs", // Jan 01, 2018 23 hrs
+  Minute: "%b %d, %Y %H:%M", // Jan 01, 2018 23:34
+  Second: "%b %d, %Y %H:%M:%S", // Jan 01, 2018 23:34:26
+  Millisecond: "%b %d, %Y %H:%M:%S:%L" // Jan 01, 2018 23:34:26:123
 };
 ```

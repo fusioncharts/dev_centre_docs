@@ -10,15 +10,15 @@ Now, let's learn how to create a Line chart. We will create a chart showcasing "
 
 The data is shown in the table below:
 
-Day|Footfall
--|-
-Monday|15123
-Tuesday|14233
-Wednesday|23507
-Thursday|9110
-Friday|15529
-Saturday|20803
-Sunday|19202
+| Day       | Footfall |
+| --------- | -------- |
+| Monday    | 15123    |
+| Tuesday   | 14233    |
+| Wednesday | 23507    |
+| Thursday  | 9110     |
+| Friday    | 15529    |
+| Saturday  | 20803    |
+| Sunday    | 19202    |
 
 The chart will look as shown below:
 
@@ -89,8 +89,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             Charts.LineChart line = new Charts.LineChart("line_chart_db");
 
             line.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            line.Width = "700";
-            line.Height = "400";
+            line.Width.Pixel(700);
+            line.Height.Pixel(400);
 
             line.Data.Source = model;
 
@@ -184,8 +184,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             Charts.SplineChart spline = new Charts.SplineChart("spline_chart_db");
 
             spline.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            spline.Width = "700";
-            spline.Height = "400";
+            spline.Width.Pixel(700);
+            spline.Height.Pixel(400);
 
             spline.Data.Source = model;
 
