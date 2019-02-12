@@ -209,6 +209,41 @@ DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, a
 
 > You can use Generic Handler page(.ashx) in web form application as well as MVC application.
 
+In MVC application, if you want to fetch data through **controller** instead of creating a generic handler, do the following:
+
+```csharp
+/* create the controller */
+public ActionResult TimeSeriesDataHandler() {
+
+/* create DataModel instance */ 
+DataModel model = new DataModel();
+/* create instance of MsSqlClass */
+MsSqlClass msSql = new MsSqlClass("server","database",FusionCharts.DataBaseClass.SourceType.QUERY,"query");
+/* add msSql object to DataSources of model */
+ model.DataSources.Add(msSql);
+/* Want to apply operations */
+/* optional */
+/* create object of GroupColumn class */
+GroupColumn groupColumn = new GroupColumn {
+       {"SellStartDate",GroupColumn.DateGrouping.YEAR },
+       {"Color" }
+};
+
+/* create object of Aggregation class */
+Aggregation aggregation = new Aggregation {
+       {"UnitPrice",Aggregation.Function.MAX },
+       {"OrderQty",Aggregation.Function.COUNT }
+};
+
+/* apply GroupingWithAggregation() operation followed by TopRecords() */
+DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, aggregation).TopRecords(20);
+
+/* invoke RenderCompatibleDataInJson() static method of  TimeSeriesData class*/
+/* it will return a json, return this json from your controller */
+return Content(TimeSeriesData.RenderCompatibleDataInJson(model), "text/json");
+}
+```
+
 Now pass the path of this handler page in the `SourcePathHandler` property (which accepts a string) of `Data` object.
 
 ```csharp
