@@ -14,15 +14,15 @@ Click [here](https://dotnetfiddle.net/Dw6gBV) to edit the column chart.
 
 The data for the above chart is shown in the table below:
 
-Programming Language|Users
--|-
-Java|62000
-Python|46000
-JavaScript|38000
-C++|31000
-C#|27000
-PHP|14000
-Perl|14000
+| Programming Language | Users |
+| -------------------- | ----- |
+| Java                 | 62000 |
+| Python               | 46000 |
+| JavaScript           | 38000 |
+| C++                  | 31000 |
+| C#                   | 27000 |
+| PHP                  | 14000 |
+| Perl                 | 14000 |
 
 Now that you have the tabular data ready, let's see how to render the chart.
 
@@ -99,8 +99,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Instantiate Column Chart
             Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
             // Set Chart's width and height
-            column.Width = "700";
-            column.Height = "400";
+            column.Width.Pixel(700);
+            column.Height.Pixel(400);
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
             // Set Chart Title

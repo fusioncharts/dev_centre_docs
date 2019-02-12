@@ -2198,6 +2198,10 @@
           {
             "title": "Pyramid Chart",
             "path": "/fusioncharts-aspnet-visualization/chart-types/pyramid-chart-net"
+          },
+          {
+            "title": "Time-series Chart",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-chart-net"
           }
         ]
       },
@@ -2231,6 +2235,47 @@
           {
             "title": "Tooltip",
             "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-tooltip"
+          },
+          {
+            "title": "Time-series Components",
+            "children": [
+              {
+                "title": "Time Axis",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/time-axis"
+              },
+              {
+                "title": "Time Navigator",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/time-navigator"
+              },
+              {
+                "title": "Standard Range Selector",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/standard-range-selector"
+              },
+              {
+                "title": "Custom Range Selector",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/custom-range-selector"
+              },
+              {
+                "title": "Y-axis",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/y-axis-in-fusiontime"
+              },
+              {
+                "title": "Reference Lines",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/reference-line-in-fusiontime"
+              },
+              {
+                "title": "Time Marker",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/time-marker"
+              },
+              {
+                "title": "Data Marker",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/data-markers"
+              },
+              {
+                "title": "Tooltip",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/tooltip"
+              }
+            ]
           }
         ]
       },

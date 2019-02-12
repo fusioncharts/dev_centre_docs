@@ -59,15 +59,15 @@ Now that you have installed, it's time to create your first time series chart us
 
 The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
-Time | Sales
-- | -
-1/4/2011 | 16.448
-1/5/2011 | 272.736
-1/5/2011 | 11.784
-1/5/2011 | 3.54
-1/6/2011 | 19.536
-1/7/2011 | 2573.82
-1/7/2011 | 609.98
+| Time     | Sales   |
+| -------- | ------- |
+| 1/4/2011 | 16.448  |
+| 1/5/2011 | 272.736 |
+| 1/5/2011 | 11.784  |
+| 1/5/2011 | 3.54    |
+| 1/6/2011 | 19.536  |
+| 1/7/2011 | 2573.82 |
+| 1/7/2011 | 609.98  |
 
 FusionTime accepts a [Datatable](/fusiontime/fusiontime-data-engine/overview) as it's data source. `DataTable`, is a part of [DataStore](/fusiontime/fusiontime-data-engine/overview), is the tabular representation of data. To create the `DataTable`, you need to provide the following:
 

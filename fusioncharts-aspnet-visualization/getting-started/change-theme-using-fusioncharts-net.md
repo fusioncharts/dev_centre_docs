@@ -8,12 +8,12 @@ In `FusionCharts.NET` you can manually set the cosmetics and functional attribut
 
 `FusionCharts.NET` ships with the following predefined themes:
 
- * fusion
- * gammel
- * candy
- * zune
- * ocean
- * carbon
+- fusion
+- gammel
+- candy
+- zune
+- ocean
+- carbon
 
 This article focuses on how to change the theme of a chart.
 
@@ -75,8 +75,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Instantiate Column Chart
             Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
             // Set Chart's width and height
-            column.Width = "700";
-            column.Height = "400";
+            column.Width.Pixel(700);
+            column.Height.Pixel(400);
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
             // Set Chart Title
@@ -98,24 +98,31 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs"
+Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+  <head runat="server">
     <title></title>
-</head>
-<body>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-   
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
+
     <form id="form1" runat="server">
-        <div>
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-        </div>
-           </form>
-</body>
+      <div>
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+      </div>
+    </form>
+  </body>
 </html>
 ```
 

@@ -16,20 +16,20 @@ Click [here](https://dotnetfiddle.net/aCkWm8) to edit the pyramid chart.
 
 Create the `PyramidChart.aspx.cs` file and do the following:
 
-* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
-* Create `DataTable`.
-* Retrieve data using database query.
-* Set server name.
-* Set `DataBase` name.
-* Connect with `DataBase` using a connection string.
-* Create `StaticSource` using the `DataTable`.
-* Create an instance of `DataModel` class.
-* Add `DataSource` to the `DataModel`.
-* Instantiate Pyramid Chart.
-* Set chart width and height.
-* Set `DataModel` instance as the data source of the chart.
-* Set Chart Title.
-* Finally, use a container using `<div>` to render the chart.
+- Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files.
+- Create `DataTable`.
+- Retrieve data using database query.
+- Set server name.
+- Set `DataBase` name.
+- Connect with `DataBase` using a connection string.
+- Create `StaticSource` using the `DataTable`.
+- Create an instance of `DataModel` class.
+- Add `DataSource` to the `DataModel`.
+- Instantiate Pyramid Chart.
+- Set chart width and height.
+- Set `DataModel` instance as the data source of the chart.
+- Set Chart Title.
+- Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
 
@@ -83,8 +83,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             pyramid.Caption.Text = "Global Wealth Pyramid";
             pyramid.Caption.OnTop = false;
             pyramid.SubCaption.Text = "Credit Suisse 2013";
-            pyramid.Width = "400";
-            pyramid.Height = "500";
+            pyramid.Width.Pixel(400);
+            pyramid.Height.Pixel(500);
             Literal1.Text = pyramid.Render();
         }
     }
@@ -94,23 +94,31 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PyramidChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.PyramidChart" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PyramidChart.aspx.cs"
+Inherits="FusionChartsVisualisationWebFormsSamples.Samples.PyramidChart" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+  <head runat="server">
     <title></title>
-</head>
-<body>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
     <form id="form1" runat="server">
-        <div>
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-        </div>
-        <div>
-            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-        </div>
+      <div>
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+      </div>
+      <div>
+        <input
+          type="button"
+          value="Samples"
+          onclick="location.href = 'Index.aspx';"
+        />
+      </div>
     </form>
-</body>
+  </body>
 </html>
 ```
