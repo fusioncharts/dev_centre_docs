@@ -72,7 +72,7 @@
                 //Color Range Array
                 crArr = evt.sender.args.dataSource.colorRange.color;
 
-            for (i = crArr.length - 1; i >= 0; i--) {
+            for (var i = crArr.length - 1; i >= 0; i--) {
                 //When value falls within the color range
                 if (val >= crArr[i].minValue && val <= crArr[i].maxValue) {
                     annotations.update('bgRectAngle', {

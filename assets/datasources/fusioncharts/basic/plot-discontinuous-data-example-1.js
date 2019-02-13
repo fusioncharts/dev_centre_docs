@@ -79,7 +79,7 @@
             // in the initialized event check create handlers for line, column radio buttons
             var radioButtons = document.getElementsByName('chart-options'),
                 i, length;
-            for (i = 0, length = radioButtons.length; i < length; i++) {
+            for (var i = 0, length = radioButtons.length; i < length; i++) {
                 radioButtons[i].addEventListener('change', function() {
                     var radioButton = this;
                     if (radioButton.checked) {
