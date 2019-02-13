@@ -111,7 +111,7 @@
                     }
                     diff = (score - speedScore);
 
-                    for (i = 0; i < 5; i++) {
+                    for (var i = 0; i < 5; i++) {
                         percent = num - (i * 5);
                         scoreArray[i] = diff * (percent / 100);
                     }

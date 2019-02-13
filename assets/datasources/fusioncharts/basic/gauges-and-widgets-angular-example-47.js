@@ -57,7 +57,7 @@
 
             // setting css styles for button elements inside controllers div
             var inputs = controllers.getElementsByTagName('input');
-            for (i = 0; i < inputs.length; i++) {
+            for (var i = 0; i < inputs.length; i++) {
                 inputs[i].style.cssText = 'font-family: Verdana, sans;font-size: 14px;font-style: normal;';
             }
         },

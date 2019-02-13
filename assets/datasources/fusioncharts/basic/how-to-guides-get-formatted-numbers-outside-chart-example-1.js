@@ -104,7 +104,7 @@
                         i,
                         j;
 
-                    for (i = 0; i < len; i += 1) {
+                    for (var i = 0; i < len; i += 1) {
                         tableStr += "<tr>";
                         len2 = data[i].length;
                         for (j = 0; j < len2; j += 1) {
@@ -137,7 +137,7 @@
 
                     // setting css styles for table data cells
                     var td = table.getElementsByTagName('td');
-                    for (i = 0; i < td.length; i++) {
+                    for (var i = 0; i < td.length; i++) {
                         td[i].style.cssText = 'border:1px solid #6baa01; padding:10px 5px; min-width:70px; text-align:center;';
                     }
                 },
