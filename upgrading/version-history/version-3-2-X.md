@@ -228,8 +228,6 @@ heading: Version 3.2.x
 
 - Resolved compatibility issues in tool-tip positioning and gradient rendering caused by jQuery 1.7.1
 
-<h4>Modifications</h4>
-
 - Setting `labelDisplay='none'` turns off x-axis value stepping and allows labels to overlap.
 
 <h4>Fixes</h4>
