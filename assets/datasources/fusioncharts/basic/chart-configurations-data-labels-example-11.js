@@ -42,7 +42,7 @@
 
             var radElem,
                 radio = radioContainer.getElementsByTagName('input');
-            for (i = 0; i < radio.length; i++) {
+            for (var i = 0; i < radio.length; i++) {
                 radElem = radio[i];
                 if (radElem.type === 'radio') {
                     radElem.onclick = function() {

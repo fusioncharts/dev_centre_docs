@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/fusionexport-release-notes.html
 title: FusionExport Release Notes | FusionCharts
 description: List of changes made in recent release.
 heading: FusionExport Release Notes
-chartPresent: False
 ---
 
 ## v1.0.1

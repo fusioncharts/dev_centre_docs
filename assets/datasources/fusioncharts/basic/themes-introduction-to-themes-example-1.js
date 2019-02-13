@@ -79,7 +79,7 @@
 
             // setting css styles for labels inside controllers div
             var labels = controllers.getElementsByTagName('label');
-            for (i = 0; i < labels.length; i++) {
+            for (var i = 0; i < labels.length; i++) {
                 labels[i].style.cssText = 'padding: 0 11px !important;';
             }
             args.container.appendChild(controllers);

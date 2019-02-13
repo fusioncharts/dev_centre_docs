@@ -76,7 +76,7 @@
 
             // setting css styles for labels inside controllers div
             var labels = controllers.getElementsByTagName('label');
-            for (i = 0; i < labels.length; i++) {
+            for (var i = 0; i < labels.length; i++) {
                 labels[i].style.cssText = 'padding: 0 5px !important;';
             }
 
@@ -88,7 +88,7 @@
                     len = radios && radios.length,
                     isSelected, radElem, i;
 
-                for (i = 0; i < len; i += 1) {
+                for (var i = 0; i < len; i += 1) {
                     radElem = radios[i];
                     isSelected = radElem && radios[i].checked;
 

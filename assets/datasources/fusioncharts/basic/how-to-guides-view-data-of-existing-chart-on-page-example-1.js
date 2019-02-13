@@ -79,7 +79,7 @@
             var th = '<td style="padding:5px; text-align:center; border:1px solid black; background-color:#f0f0f0; font-size:11px; color:#ff0000">';
 
             // retrieve the data from the rows and compute body string from the data rows
-            for (i = 1, length = rows.length; i < length; i++) {
+            for (var i = 1, length = rows.length; i < length; i++) {
                 row = rows[i].split(',');
                 tableBody += '<tr>' + td + row[0] + '</td>' + td + row[1] + '</td></tr>';
             }
