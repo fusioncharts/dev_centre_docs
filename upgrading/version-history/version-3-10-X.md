@@ -5,7 +5,8 @@ heading: Version 3.10.x
 ---
 
 <h2 class="sub-heading">Version 3.10.1</h2>
-21st January, 2016
+
+<p class="release-date">21st January, 2016</p>
 
 <h4 class="sub-heading">New Features</h4>
 
@@ -22,7 +23,8 @@ heading: Version 3.10.x
 - For pie and doughnut charts that have one data value close to 100% of the total of all values, distorted rendering of the chart when smart lines are dragged has been fixed.
 
 <h2>Version 3.10.0</h2>
-5th January, 2016
+
+<p class="release-date">5th January, 2016</p>
 
 <h4 class="sub-heading">New Features</h4>
 

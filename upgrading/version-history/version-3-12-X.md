@@ -5,14 +5,16 @@ heading: Version 3.12.x
 ---
 
 <h2 class="sub-heading">Version 3.12.2 </h2>
-13th October, 2017
+
+<p class="release-date">13th October, 2017</p>
 
 <h4 class="sub-heading">Improvement</h4>
 
 - TypeScript definition files added to npm package of FusionCharts (fusioncharts & fusionmaps). Previously, the definition files were added from the `definitelytyped` repository.
 
 <h2>Version 3.12.1</h2>
-3rd July, 2017
+
+<p class="release-date">3rd July, 2017</p>
 
 <h4 class="sub-heading">New Features</h4>
 
@@ -461,7 +463,8 @@ heading: Version 3.12.x
 - In maps, when the entity value is set to 0, tooltips no longer show the entity value as undefined; the entity value in the tooltip is shown as 0.
 
 <h2>Version 3.12.0</h2>
-10th March, 2017
+
+<p class="release-date">10th March, 2017</p>
 
 <h4 class="sub-heading">New Features</h4>
 

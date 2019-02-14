@@ -1988,7 +1988,8 @@
           },
           {
             "title": "Install FusionExport CLI",
-            "path": "/exporting-charts/using-fusionexport/installation/install-fusionexport-cli"
+            "path": "/exporting-charts/using-fusionexport/installation/install-fusionexport-cli",
+            "visibility": false
           },
           {
             "title": "Install FusionExport Server SDKs",
