@@ -29,7 +29,7 @@ To export charts and dashboards using FusionExport, you can develop the applicat
 
 <div class="tab-content extra-tabs">
 
-<div class="tab csharp-tab">
+<div class="tab csharp-tab active">
 <strong>Install the C# SDK client for FusionExport using the [NuGet](https://www.nuget.org/) package manager (`.NET >= 4.0`). Open the *NuGet package manager console* and execute the following command:</strong>
 <pre><code class="language-cs">$ Install-Package FusionExport</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -107,7 +107,7 @@ dependencies {
 </pre>
 </div>
 
-<div class="tab nodejs-tab active">
+<div class="tab nodejs-tab">
 <strong>Install the Node.js SDK client for FusionExport using [npm](https://www.npmjs.com/) (`Node.js >= 8.0.0, npm >= 5.0.0`):</strong>
 <pre><code class="language-Bash"> $ npm install fusionexport-node-client --save</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
