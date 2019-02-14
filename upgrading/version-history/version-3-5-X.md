@@ -5,12 +5,14 @@ heading: Version 3.5.x
 ---
 
 <h2 class="sub-heading">Version 3.5.1</h2>
-3rd December, 2014
+
+<p class="release-date">3rd December, 2014</p>
 
 This release re-introduces the Developer License and introduces a new Team license. No major software updates were done post the previous release.
 
 <h2 class="sub-heading">Version 3.5.0</h2>
-6th November, 2014
+
+<p class="release-date">6th November, 2014</p>
 
 <h4 class="sub-heading">Improvements</h4>
 
