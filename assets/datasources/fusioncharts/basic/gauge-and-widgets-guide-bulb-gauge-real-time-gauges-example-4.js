@@ -16,13 +16,10 @@
             "placeValuesInside": "1",
             "valueFontSize": "16",
             "chartBottomMargin": "45",
-
             //Tooltext
             "plottooltext": "Current Temperature: $value°C ",
             //Theme
             "theme": "fusion"
-
-
         },
         "colorrange": {
             "color": [{
@@ -77,42 +74,43 @@
         }
     },
     "events": {
-        "rendered": function(evt, args) {
-            updateAnnotation = function(evtObj, argObj) {
-                var code,
-                    textColor,
-                    chartObj = evtObj.sender,
-                    val = chartObj.getData(),
-                    annotations = chartObj.annotations;
+      "rendered": function(evt, args) {
+         var chartRef = evt.sender;
+         chartRef.updateAnnotation = function (evtObj, argObj) {
+            var code,
+               textColor,
+               chartObj = evtObj.sender,
+               val = chartObj.getData(),
+               annotations = chartObj.annotations;
 
-                if (val >= -24) {
-                    code = "#00FF00";
-                    textColor = "#000000";
-                } else if (val < -24 && val > -35) {
-                    code = "#ff9900";
-                    textColor = "#0000ff";
-                } else {
-                    code = "#ff0000";
-                    textColor = "#FFFFFF";
-                }
-                annotations.update("background", {
-                    "fillColor": code
-                });
-                annotations.update('valuetxt', {
-                    "text": val + "°C",
-                    "fontColor": textColor
-                });
-            };
-            evt.sender.chartInterval = setInterval(function() {
-                var num = (Math.floor(Math.random() * 55) * -1) - 5;
-                evt.sender.feedData("&value=" + num);
-            }, 10000);
+            if (val >= -24) {
+               code = "#00FF00";
+               textColor = "#000000";
+            } else if (val < -24 && val > -35) {
+               code = "#ff9900";
+               textColor = "#0000ff";
+            } else {
+               code = "#ff0000";
+               textColor = "#FFFFFF";
+            }
+            annotations.update("background", {
+               "fillColor": code
+            });
+            annotations.update('valuetxt', {
+               "text": val + "°C",
+               "fontColor": textColor
+            });
+         };
+         evt.sender.chartInterval = setInterval(function () {
+            var num = (Math.floor(Math.random() * 55) * -1) - 5;
+            evt.sender.feedData("&value=" + num);
+         }, 10000);
         },
         "renderComplete": function(evt, args) {
-            updateAnnotation(evt, args);
+         evt.sender.updateAnnotation(evt, args);
         },
         "realtimeUpdateComplete": function(evt, args) {
-            updateAnnotation(evt, args);
+         evt.sender.updateAnnotation(evt, args);
         },
         "disposed": function(evt, args) {
             clearInterval(evt.sender.chartInterval);

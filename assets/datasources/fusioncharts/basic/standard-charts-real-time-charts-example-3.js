@@ -77,12 +77,10 @@
             }
 
             function updateData() {
-                // Get reference to the chart using its ID
-                // var chartRef = FusionCharts("stackRealTimeChart"),
                     // We need to create a querystring format incremental update, containing
                     // label in hh:mm:ss format
                     // and a value (random).
-                    currDate = new Date(),
+                    var currDate = new Date(),
                     label = addLeadingZero(currDate.getHours()) + ":" +
                     addLeadingZero(currDate.getMinutes()) + ":" +
                     addLeadingZero(currDate.getSeconds()),

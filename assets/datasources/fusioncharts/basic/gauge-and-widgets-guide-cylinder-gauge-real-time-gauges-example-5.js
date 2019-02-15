@@ -16,7 +16,7 @@
             "numberSuffix": " ltrs",
             "showValue": "0",
             "chartBottomMargin": "60",
-            "dataStreamURL": "https://www.fusioncharts.com/dev/dummyErrorURL/cylinderData.php"
+            "dataStreamURL": "./dummyErrorURL/cylinderData.php"
         },
         "value": "110"
     },

@@ -1,7 +1,6 @@
 {
     type: 'cylinder',
     dataFormat: 'json',
-    id: 'fuelMeter-6',
     renderAt: 'chart-container',
     width: '250',
     height: '350',

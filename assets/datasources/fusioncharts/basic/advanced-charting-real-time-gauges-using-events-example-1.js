@@ -1,7 +1,6 @@
 {
     type: 'thermometer',
     renderAt: 'chart-container',
-    id: 'myThm',
     width: '240',
     height: '310',
     dataFormat: 'json',
@@ -35,7 +34,7 @@
                     //Showing Annotation
                     {
                         "id": "background",
-                        //Rectangle item 
+                        //Rectangle item
                         "type": "rectangle",
                         "alpha": "50",
                         "fillColor": "#AABBCC",
@@ -51,9 +50,10 @@
     },
     "events": {
         "initialized": function(evt, arg) {
-            evt.sender.chartInterval = setInterval(function() {
+           var chartRef = evt.sender;
+           chartRef.chartInterval = setInterval(function() {
                 var value,
-                    prevTemp = FusionCharts.items["myThm"].getData(),
+                    prevTemp = chartRef.getData(),
                     mainTemp = (Math.random() * 10) * (-1),
                     diff = Math.abs(prevTemp - mainTemp);
                 // generate data to be fed to the gauge
@@ -64,11 +64,11 @@
                     value = prevTemp - diff;
                 }
                 // feed new data to the gauge
-                FusionCharts.items["myThm"].feedData("&value=" + value);
-                // set the time interval    
+                chartRef.feedData("&value=" + value);
+                // set the time interval
             }, 3000);
             // use annotation to display the current value
-            updateAnnotation = function(evtObj, argObj) {
+            chartRef.updateAnnotation = function(evtObj, argObj) {
                 var code,
                     chartObj = evtObj.sender,
                     val = chartObj.getData(),
@@ -91,11 +91,11 @@
             };
         },
         "renderComplete": function(evt, arg) {
-            updateAnnotation(evt, arg);
+         evt.sender.updateAnnotation(evt, arg);
         },
         // event to track new data
         "realtimeUpdateComplete": function(evt, arg) {
-            updateAnnotation(evt, arg);
+         evt.sender.updateAnnotation(evt, arg);
         },
         "disposed": function(evt, arg) {
             clearInterval(evt.sender.chartInterval);

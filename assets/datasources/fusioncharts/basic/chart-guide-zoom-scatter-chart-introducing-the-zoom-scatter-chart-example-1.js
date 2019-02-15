@@ -1,6 +1,5 @@
 {
     type: 'zoomscatter',
-    id: 'chartId',
     renderAt: 'chart-container',
     width: '700',
     height: '400',
@@ -12301,5 +12300,5 @@
                     ]
                 }
             ]
-    }    
+    }
 }
