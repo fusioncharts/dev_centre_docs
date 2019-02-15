@@ -1,7 +1,6 @@
 {
     type: 'pyramid',
     renderAt: 'chart-container',
-    id: 'wealth-pyramid-chart-1',
     width: '500',
     height: '400',
     dataFormat: 'json',

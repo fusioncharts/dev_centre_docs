@@ -67,7 +67,7 @@
                 evt.sender.feedData("&value=" + value);
 
             }, 3000);
-            updateAnnotation = function(evtObj, argObj) {
+            evt.sender.updateAnnotation = function(evtObj, argObj) {
                 var code,
                     chartObj = evtObj.sender,
                     val = chartObj.getData(),
@@ -86,10 +86,10 @@
             };
         },
         'renderComplete': function(evt, arg) {
-            updateAnnotation(evt, arg);
+            evt.sender.updateAnnotation(evt, arg);
         },
         'realtimeUpdateComplete': function(evt, arg) {
-            updateAnnotation(evt, arg);
+            evt.sender.updateAnnotation(evt, arg);
         },
         'disposed': function(evt, arg) {
             clearInterval(evt.sender.dataUpdate);
