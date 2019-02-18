@@ -1,5 +1,4 @@
 {
-    id: "stockRealTimeChart",
     type: 'realtimeline',
     renderAt: 'chart-container',
     width: '500',
@@ -33,14 +32,13 @@
         }]
     },
     "events": {
-        "initialized": function(e) {
+        "initialized": function(evt, arg) {
             function addLeadingZero(num) {
                 return (num <= 9) ? ("0" + num) : num;
             }
 
             function updateData() {
-                // Get reference to the chart using its ID
-                var chartRef = FusionCharts("stockRealTimeChart"),
+                var chartRef = evt.sender,
                     // We need to create a querystring format incremental update, containing
                     // label in hh:mm:ss format
                     // and a value (random).
@@ -56,7 +54,7 @@
                 chartRef.feedData && chartRef.feedData(strData);
             }
 
-            e.sender.chartInterval = setInterval(function() {
+            evt.sender.chartInterval = setInterval(function() {
                 updateData();
             }, 5000);
         },

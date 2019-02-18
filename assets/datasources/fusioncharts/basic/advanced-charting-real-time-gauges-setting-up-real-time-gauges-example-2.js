@@ -1,7 +1,6 @@
 {
     type: 'angulargauge',
     renderAt: 'chart-container',
-    id: 'cs-angular-gauge',
     width: '400',
     height: '300',
     dataFormat: 'json',

@@ -6,15 +6,15 @@ heading: Install FusionExport Server SDKs
 
 In this article, we illustrate how to install FusionExport Server SDK for your preferred programming language. We provide SDKs for the following languages:
 
-* C#
+- C#
 
-* Java
+- Java
 
-* PHP
+- PHP
 
-* Node.js
+- Node.js
 
-* Python
+- Python
 
 To export charts and dashboards using FusionExport, you can develop the application in any one of the supported languages. Internally, the SDKs communicate with the server by using the FusionExport API. So, for interacting with the FusionExport Server from your project, we recommend using the SDKs and not FusionExport CLI.
 
@@ -29,9 +29,9 @@ To export charts and dashboards using FusionExport, you can develop the applicat
 
 <div class="tab-content extra-tabs">
 
-<div class="tab csharp-tab">
+<div class="tab csharp-tab active">
 <strong>Install the C# SDK client for FusionExport using the [NuGet](https://www.nuget.org/) package manager (`.NET >= 4.0`). Open the *NuGet package manager console* and execute the following command:</strong>
-<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+<pre><code class="language-cs">$ Install-Package FusionExport</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
@@ -68,45 +68,46 @@ dependencies {
 &lt;/dependency&gt;
 
 &lt;dependency&gt;
-    &lt;groupId&gt;javax.websocket&lt;/groupId&gt;
-    &lt;artifactId&gt;javax.websocket-api&lt;/artifactId&gt;
-    &lt;version&gt;1.1&lt;/version&gt;
-    &lt;scope&gt;provided&lt;/scope&gt;
+&lt;groupId&gt;javax.websocket&lt;/groupId&gt;
+&lt;artifactId&gt;javax.websocket-api&lt;/artifactId&gt;
+&lt;version&gt;1.1&lt;/version&gt;
+&lt;scope&gt;provided&lt;/scope&gt;
 &lt;/dependency&gt;
 
 &lt;dependency&gt;
-    &lt;groupId&gt;org.glassfish.tyrus.bundles&lt;/groupId&gt;
-    &lt;artifactId&gt;tyrus-standalone-client&lt;/artifactId&gt;
-    &lt;version&gt;1.13.1&lt;/version&gt;
+&lt;groupId&gt;org.glassfish.tyrus.bundles&lt;/groupId&gt;
+&lt;artifactId&gt;tyrus-standalone-client&lt;/artifactId&gt;
+&lt;version&gt;1.13.1&lt;/version&gt;
 &lt;/dependency&gt;
 
 &lt;dependency&gt;
-    &lt;groupId&gt;com.google.code.gson&lt;/groupId&gt;
-    &lt;artifactId&gt;gson&lt;/artifactId&gt;
-    &lt;version&gt;2.8.2&lt;/version&gt;
+&lt;groupId&gt;com.google.code.gson&lt;/groupId&gt;
+&lt;artifactId&gt;gson&lt;/artifactId&gt;
+&lt;version&gt;2.8.2&lt;/version&gt;
 &lt;/dependency&gt;
 
 &lt;dependency&gt;
-    &lt;groupId&gt;org.jsoup&lt;/groupId&gt;
-    &lt;artifactId&gt;jsoup&lt;/artifactId&gt;
-    &lt;version&gt;1.7.2&lt;/version&gt;
+&lt;groupId&gt;org.jsoup&lt;/groupId&gt;
+&lt;artifactId&gt;jsoup&lt;/artifactId&gt;
+&lt;version&gt;1.7.2&lt;/version&gt;
 &lt;/dependency&gt;
 
 &lt;dependency&gt;
-    &lt;groupId&gt;org.apache.ant&lt;/groupId&gt;
-    &lt;artifactId&gt;ant&lt;/artifactId&gt;
-    &lt;version&gt;1.8.2&lt;/version&gt;
+&lt;groupId&gt;org.apache.ant&lt;/groupId&gt;
+&lt;artifactId&gt;ant&lt;/artifactId&gt;
+&lt;version&gt;1.8.2&lt;/version&gt;
 &lt;/dependency&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre></div>
 
 <div class="tab php-tab">
 <strong>Install the PHP SDK client for FusionExport using [composer](https://getcomposer.org/) (`PHP >= 7.x, composer >= 1.7.x`):</strong>
-<pre><code class="language-php"> $ composer require fusioncharts/fusionexport:1.0.0</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+<pre><code class="language-php">$ composer require fusioncharts/fusionexport</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
-<div class="tab nodejs-tab active">
+<div class="tab nodejs-tab">
 <strong>Install the Node.js SDK client for FusionExport using [npm](https://www.npmjs.com/) (`Node.js >= 8.0.0, npm >= 5.0.0`):</strong>
 <pre><code class="language-Bash"> $ npm install fusionexport-node-client --save</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -125,8 +126,8 @@ dependencies {
 
 After you have installed FusionCharts Server SDK for the language of your choice, refer to the following tutorials to get started with exporting charts:
 
-* [Export chart as image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
+- [Export chart as image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
 
-* [Change the export type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+- [Change the export type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Change the export quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+- [Change the export quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

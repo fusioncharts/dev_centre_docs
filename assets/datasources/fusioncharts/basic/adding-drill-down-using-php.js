@@ -1,7 +1,6 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    id: 'popular-countries-drill-down',
     width: '700',
     height: '400',
     dataFormat: 'json',
@@ -53,7 +52,7 @@
             },
         ],
         "linkeddata": [{
-            //China                         
+            //China
             "id": "china",
             "linkedchart": {
                 "chart": {
@@ -98,7 +97,7 @@
                 }]
             }
         }, {
-            //India                                      
+            //India
             "id": "india",
             "linkedchart": {
                 "chart": {

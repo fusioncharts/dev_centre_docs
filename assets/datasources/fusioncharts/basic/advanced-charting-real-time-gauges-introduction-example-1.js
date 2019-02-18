@@ -1,7 +1,6 @@
 {
     type: 'bulb',
     renderAt: 'chart-container',
-    id: 'statusGauge',
     width: '300',
     height: '300',
     dataFormat: 'json',

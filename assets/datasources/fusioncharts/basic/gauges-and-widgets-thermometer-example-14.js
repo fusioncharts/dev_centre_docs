@@ -19,7 +19,7 @@
             "gaugeBorderThickness": "2",
             "gaugeBorderAlpha": "30",
             "thmOriginX": "100",
-            "dataStreamURL": "https://www.fusioncharts.com/dev/dummyUrl.php",
+            "dataStreamURL": "./dummyUrl.php",
             "refreshInterval": "5",
             "theme": "fusion"
         },

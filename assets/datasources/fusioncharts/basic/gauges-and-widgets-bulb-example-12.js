@@ -78,7 +78,7 @@
     },
     "events": {
         "rendered": function(evt, args) {
-            updateAnnotation = function(evtObj, argObj) {
+            evt.sender.updateAnnotation = function(evtObj, argObj) {
                 var code,
                     textColor,
                     chartObj = evtObj.sender,
@@ -109,10 +109,10 @@
             }, 10000);
         },
         "renderComplete": function(evt, args) {
-            updateAnnotation(evt, args);
+            evt.sender.updateAnnotation(evt, args);
         },
         "realtimeUpdateComplete": function(evt, args) {
-            updateAnnotation(evt, args);
+            evt.sender.updateAnnotation(evt, args);
         },
         "disposed": function(evt, args) {
             clearInterval(evt.sender.chartInterval);

@@ -5,7 +5,8 @@ heading: Version 3.7.x
 ---
 
 <h2 class="sub-heading">Version 3.7.1</h2>
-22nd May, 2015
+
+<p class="release-date">22nd May, 2015</p>
 
 <h4 class="sub-heading">Fixes</h4>
 
@@ -16,7 +17,8 @@ Latest version of Firefox (37.0.1) introduced two bugs which were fixed in this 
 - Line segments in all line and area-based charts are now visible.
 
 <h2>Version 3.7.0</h2>
-25th March, 2015
+
+<p class="release-date">25th March, 2015</p>
 
 <h4 class="sub-heading">New Features</h4>
 

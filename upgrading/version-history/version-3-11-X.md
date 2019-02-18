@@ -5,7 +5,8 @@ heading: Version 3.11.x
 ---
 
 <h2 class="sub-heading">Version 3.11.3</h2>
-1st November, 2016
+
+<p class="release-date">1st November, 2016</p>
 
 <h4 class="sub-heading">Key Change</h4>
 
@@ -86,7 +87,8 @@ heading: Version 3.11.x
 - Markers no longer become unclickable when overlapped by labels.
 
 <h2>Version 3.11.2</h2>
-16th September, 2016
+
+<p class="release-date">16th September, 2016</p>
 
 - FusionCharts Suite XT(trial version) can be installed via NPM and Bower. The product is available in two different packages:
 
@@ -143,7 +145,8 @@ heading: Version 3.11.x
 - In real-time charts, using `updateInterval` the real-time data gets rendered at expected time.
 
 <h2>Version 3.11.0</h2>
-1st July, 2016
+
+<p class="release-date">1st July, 2016</p>
 
 <h4 class="sub-heading">New Features</h4>
 

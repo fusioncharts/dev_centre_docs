@@ -1,7 +1,6 @@
 {
     type: 'cylinder',
     dataFormat: 'json',
-    id: 'fuelMeter-7',
     renderAt: 'chart-container',
     width: '250',
     height: '350',
@@ -28,7 +27,6 @@
     },
     events: {
         'beforeRender': function(event, args) {
-
             // creating div for controllers
             var controllers = document.createElement('div'),
                 gaugeRef = event.sender;

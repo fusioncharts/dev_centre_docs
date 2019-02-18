@@ -1,5 +1,4 @@
 {
-    id: "ootfallChart-1",
     type: 'realtimecolumn',
     renderAt: 'chart-container',
     width: '600',

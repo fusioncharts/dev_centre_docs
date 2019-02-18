@@ -22,7 +22,7 @@
             "useSameFillBgColor": "1",
 
             "chartBottomMargin": "20",
-            "dataStreamURL": "https://www.fusioncharts.com/dev/dummy-url-led-data.php",
+            "dataStreamURL": "./dummy-url-led-data.php",
             "refreshInterval": "5",
             "theme": "fusion"
         },
