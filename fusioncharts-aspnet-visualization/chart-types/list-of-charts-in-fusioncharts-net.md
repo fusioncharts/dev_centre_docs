@@ -30,4 +30,4 @@ Given below is the list of charts in FusionCharts.NET.
 
 - [Pyramid Chart](/fusioncharts-aspnet-visualization/chart-types/pyramid-chart-net)
 
-- [Time-series Chart](fusioncharts-aspnet-visualization/chart-types/time-series-chart-net)
+- [Time-series Chart](/fusioncharts-aspnet-visualization/chart-types/time-series-chart-net)
