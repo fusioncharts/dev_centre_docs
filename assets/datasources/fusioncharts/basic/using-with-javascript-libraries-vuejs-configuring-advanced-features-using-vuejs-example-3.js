@@ -1,5 +1,5 @@
 {
-    
+
     type: 'column2d',
     renderAt: 'chart-container',
     width: '600',
@@ -33,7 +33,7 @@
         "beforeRender": function(evt, args) {
             var controls = document.createElement('div'),
                 chartRef = evt.sender;
-            updateData = function() {
+            window.updateData = function() {
                 var newData = {
                     "chart": {
                         "caption": "Top 5 stores in last month by revenue",
