@@ -1143,7 +1143,11 @@
             "title": "By Chart Type",
             "children": [
               {
-                "title": "List of Charts ",
+                "title": "Chart Components",
+                "path": "/understanding-fusioncharts"
+              },
+              {
+                "title": "List of Charts",
                 "path": "/chart-guide/list-of-charts"
               },
               {
