@@ -1,5 +1,4 @@
 {
-        id : 'chart-1',
         type: 'column2d',
         renderAt: 'chart-container',
         width: '450',
@@ -17,16 +16,16 @@
                 "yAxisMaxValue": "250",
                 "plotToolText": "<div>Revenue : <b>$datavalue</b></div>",
                 "theme": "zune"
-            },            
+            },
             "data": [
                 {
                     "label": "iPhone",
                     "value": "231.22"
-                }, 
+                },
                 {
                     "label": "iPad",
                     "value": "54.85"
-                }, 
+                },
                 {
                     "label": "iPod",
                     "value": "20.38"

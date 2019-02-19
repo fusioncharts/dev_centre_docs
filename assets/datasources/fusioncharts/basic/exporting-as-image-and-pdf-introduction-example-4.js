@@ -110,13 +110,13 @@
         "beforerender": function(evt, args){
             var controls = document.createElement('div');
 
-            exportChart = function() {
+            window.exportChart = function() {
                 FusionCharts.batchExport({
                     exportFormat: 'pdf',
                      charts:[{
                             "id":"chart1"
                         },{
-                            "id":"chart2"    
+                            "id":"chart2"
                     }]
                 });
             };

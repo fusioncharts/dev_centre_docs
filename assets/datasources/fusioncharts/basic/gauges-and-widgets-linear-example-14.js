@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cpu-linear-gauge-14',
     width: '500',
     height: '200',
     dataFormat: 'json',
