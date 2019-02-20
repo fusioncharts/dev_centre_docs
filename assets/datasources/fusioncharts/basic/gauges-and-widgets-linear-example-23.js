@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cpu-linear-gauge-23',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -57,20 +56,21 @@
             }]
         }
     },
-    "events": {
-        "rendered": function(evtObj, argObj) {
-            evtObj.sender.intervalVar = setInterval(function() {
-                //Updating widget with randomly generated values
-                //Transaction server Range 60-70%
-                var trnPrcnt = 60 + parseInt(Math.floor(Math.random() * 10), 10),
-                    //Web server Range 75-85%
-                    webPrcnt = 75 + parseInt(Math.floor(Math.random() * 10), 10);
-                FusionCharts.items["cpu-linear-gauge-23"].setDataForId("transServer", trnPrcnt);
-                FusionCharts.items["cpu-linear-gauge-23"].setDataForId("webServer", webPrcnt);
-            }, 5000);
-        },
-        "disposed": function(evtObj, argObj) {
-            clearInterval(evtObj.sender.intervalVar);
-        }
+   "events": {
+      "rendered": function(evtObj, argObj) {
+         var chartRef = evtObj.sender;
+         chartRef.intervalVar = setInterval(function () {
+            //Updating widget with randomly generated values
+            //Transaction server Range 60-70%
+            var trnPrcnt = 60 + parseInt(Math.floor(Math.random() * 10), 10),
+               //Web server Range 75-85%
+               webPrcnt = 75 + parseInt(Math.floor(Math.random() * 10), 10);
+            chartRef.setDataForId("transServer", trnPrcnt);
+            chartRef.setDataForId("webServer", webPrcnt);
+         }, 5000);
+      },
+      "disposed": function(evtObj, argObj) {
+         clearInterval(evtObj.sender.intervalVar);
+      }
     }
 }

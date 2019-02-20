@@ -15,7 +15,7 @@
             "tickValueDistance": "15",
             "theme": "fusion"
         },
-        "colorRange": { // color range to 
+        "colorRange": { // color range to
             "color": [{
                 "minValue": "0",
                 "maxValue": "50",
@@ -41,7 +41,7 @@
         },
         "alerts": {
             "alert": [{
-                // alert range 
+                // alert range
                 "minvalue": "70",
                 "maxvalue": "100",
                 // call JavaScript function
@@ -61,7 +61,8 @@
         "rendered": function(evtObj, argObj) {
             evtObj.sender.chartInterval = setInterval(function() {
                 var angGauge = evtObj.sender,
-                    dispCon = document.getElementById("alertDiv");
+                    dispCon = document.getElementById("alertDiv"),
+                    prcnt;
                 //Hiding the table
                 dispCon.style.cssText = "display:none";
                 prcnt = 0 + parseInt(Math.floor(Math.random() * 100), 10);
