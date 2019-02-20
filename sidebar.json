@@ -1860,19 +1860,19 @@
         "children": [
           {
             "title": "Create a chart in VueJS",
-            "path": "/fusiontime/integrations/your-first-chart-using-vuejs-in-fusiontime"
+            "path": "/fusiontime/integrations/vuejs/your-first-chart-using-vuejs-in-fusiontime"
           },
           {
             "title": "Create a chart in React",
-            "path": "/fusiontime/integrations/your-first-chart-using-react-in-fusiontime"
+            "path": "/fusiontime/integrations/react/your-first-chart-using-react-in-fusiontime"
           },
           {
             "title": "Create a chart in Angular",
-            "path": "/fusiontime/integrations/your-first-chart-using-angular-in-fusiontime"
+            "path": "/fusiontime/integrations/angular/your-first-chart-using-angular-in-fusiontime"
           },
           {
             "title": "Create a chart in AngularJS",
-            "path": "/fusiontime/integrations/your-first-chart-using-angularjs-in-fusiontime"
+            "path": "/fusiontime/integrations/angularjs/your-first-chart-using-angularjs-in-fusiontime"
           }
         ]
       },
