@@ -57,17 +57,17 @@ $ npm install fusioncharts --save
 </div>
 
 <div class='tab local-tab'>
-<div><strong>To install the `fusiontime` and the `jquery-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install `fusiontime` and the `jquery-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
-        <li>Include the [jQuery](https://jquery.com/)core library.</li>
+        <li>Include the [jQuery](https://jquery.com/) core library.</li>
         <li>Include the `jquery-fusioncharts` module.</li>
         <li>Include the **FusionCharts** JavaScript files locally.</li>
         <li>Include the `fusiontime` file to render time-series charts.</li>
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
-<pre><code class="language-javascript">
+<pre><code class="language-html">
 &lt;head&gt;
     &lt;script type="text/javascript" src="path/to/local/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
@@ -83,13 +83,13 @@ $ npm install fusioncharts --save
 
 ## Create your First Chart
 
-Let's create a time-series chart using `react-fusioncharts` component showing **Online sales of a SuperStore**.
+Let's create a time-series chart using `jquery-fusioncharts` component showing **Daily sales of a grocery store**.
 
 The chart will look as shown below:
 
-{% embed_ftChart integrations-react %}
+{% embed_ftChart integrations-jquery %}
 
-The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-react/data.json) for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
+The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-jquery/data.json) for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time     | Sales   |
 | -------- | ------- |
@@ -110,7 +110,7 @@ FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#wha
 
 Now, let's learn how to prepare the schema and the data of the `DataTable`.
 
-### Create the `schema`
+## Create the `schema`
 
 The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column of the above table.
 
@@ -142,11 +142,11 @@ In the above code:
 
 Now that we have the schema ready, let's work on the data.
 
-### Create `data`
+## Create `data`
 
 Data can be provided either in JSON format or 2D array format. We will use the 2D array format.
 
-[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-react/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
+[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-jquery/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
 var data = [
@@ -195,7 +195,7 @@ We are all set with our data to create the chart.
 
 Now, let's create the files to render the above chart.
 
-### Render the chart
+## Render the chart
 
 To render the chart, create a `.js` file and copy the following code:
 
