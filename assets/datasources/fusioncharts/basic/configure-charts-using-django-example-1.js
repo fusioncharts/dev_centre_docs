@@ -47,7 +47,7 @@
                 return Math.round(((max - min) * Math.random()) + min);
             }
 
-            updateData = function() {
+            window.updateData = function() {
                 //clones data
                 var data = Object.assign({}, chartRef.getJSONData());
                 data.dials.dial[0].id = 'dial1';

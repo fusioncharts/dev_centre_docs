@@ -53,8 +53,7 @@
     },
     events: {
         "beforeRender": function(evtObj, argObj) {
-            var showAlert,
-                divElement = document.createElement('div');
+            var divElement = document.createElement('div');
             divElement.setAttribute('id', 'alertDiv');
             argObj.container.parentNode.insertBefore(divElement, argObj.container.nextSibling);
         },
@@ -70,7 +69,8 @@
                 angGauge.feedData("value=" + prcnt);
 
             }, 5000); // feed data every 5 seconds
-            showAlert = function(msg) {
+
+            window.showAlert = function(msg) {
                 var dispCon = document.getElementById("alertDiv"),
                     str = "",
                     tdStyle = "border:1px solid;border-color:#cccccc;width:50%;font-weight: bold;font-size: 14px;padding:    3px;text-align:center",

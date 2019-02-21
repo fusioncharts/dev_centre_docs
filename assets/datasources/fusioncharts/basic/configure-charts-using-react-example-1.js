@@ -51,7 +51,7 @@
                     min = 50;
                 return Math.round(((max - min) * Math.random()) + min);
             }
-            updateData = function() {
+            window.updateData = function() {
 
                 //clones data
                 var data = Object.assign({}, chartRef.getJSONData());

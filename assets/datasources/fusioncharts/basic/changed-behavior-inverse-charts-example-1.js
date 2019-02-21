@@ -1,6 +1,5 @@
 {
     type: 'InverseMSColumn2D',
-    id: 'time-chart',
     dataFormat: 'json',
     renderAt: 'chart-container',
     width: '500',
