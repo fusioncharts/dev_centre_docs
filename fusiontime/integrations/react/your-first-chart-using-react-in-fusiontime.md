@@ -6,9 +6,9 @@ heading: Create a chart in React
 
 FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhances the experience of exploring and understanding time series data.
 
-We have built a simple `react-fusioncharts` component which provides bindings for **FusionTime**. The `react-fusioncharts` directive allows you to easily add interactive time-series charts to any **React** project.
+We have built a simple `react-fusioncharts` component which provides bindings for **FusionTime**. The `react-fusioncharts` component allows you to easily add interactive time-series charts to any **React** project.
 
-In this page, we'll see how to install **FusionTime** and render an interactive time-series chart using the `react-fusioncharts` directive.
+In this page, we'll see how to install **FusionTime** and render an interactive time-series chart using the `react-fusioncharts` component.
 
 ## Installation
 
@@ -394,7 +394,6 @@ class SimpleTimeSeries extends React.Component {
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <pre><code class="language-javascript">
