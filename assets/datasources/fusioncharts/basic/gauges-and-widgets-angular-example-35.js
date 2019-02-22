@@ -5,7 +5,7 @@
 	dataFormat: "json",
 	dataSource: {
 		chart: {
-			caption: "Customer Satisfaction Score 1",
+			caption: "Customer Satisfaction Score",
 			subcaption: "Los Angeles Topanga",
 			plotToolText: "Current Score: $value",
 			manageResize: "1",
