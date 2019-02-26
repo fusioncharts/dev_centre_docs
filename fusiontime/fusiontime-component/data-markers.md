@@ -1,7 +1,7 @@
 ---
-title: Data Markers | FusionCharts
+title: Data Marker | FusionCharts
 description: This article outlines the steps to configure Data Markers.
-heading: Data Markers
+heading: Data Marker
 ---
 
 Data marker in a chart represents an important event, which occurred on a specific data point. Hovering on a data marker shows additional description of the event in the tooltip.
