@@ -26,10 +26,9 @@ This article contains the list of attributes of FusionTime. The attributes have 
 	</tr>
 </table>
 
-```
+```javascript
 new FusionCharts({
     type: 'timeseries',
-    ...
     dataSource: {
 		xAxis {
 			plot: ' ', //Column Name
@@ -81,10 +80,9 @@ new FusionCharts({
 	</tr>
 </table>
 
-```
+```javascript
 new FusionCharts({
     type: 'timeseries',
-    ...
     dataSource: {
 		xAxis {
 			plot: ' ', //Column Name
@@ -155,28 +153,62 @@ new FusionCharts({
 	</tr>
 </table>
 
-```
+```javascript
 new FusionCharts({
-    type: 'timeseries',
-    ...
-    dataSource: {
-		yAxis: [{
-			plotType: ' ', //To set the plot type out the 'plot' object
-			min: ' ', //Minimum value of the axis
-			max: ' ', //Maximum value of the axis
-			format: { //Measures
-    			"prefix": ' ',
-    			"suffix": ' '
-  			},
-		    plot: {
-		        //Column header for the measure which is plotted against the Y Axis
-		    },
-		    type: ' ', //Plot type to render the chart
-		    title: ' ', //Title of the axis
-			aggregation: ' ' //Aggregate Function
-		}],
-	}
-})
+  type: "timeseries",
+  dataSource: {
+    yAxis: [
+      {
+        plotType: " ", //To set the plot type out the 'plot' object
+        min: " ", //Minimum value of the axis
+        max: " ", //Maximum value of the axis
+        format: {
+          //Measures
+          prefix: " ",
+          suffix: " "
+        },
+        plot: {
+          //Column header for the measure which is plotted against the Y Axis
+        },
+        type: " ", //Plot type to render the chart
+        title: " ", //Title of the axis
+        aggregation: " " //Aggregate Function
+      }
+    ]
+  }
+});
+```
+
+## Plot Configuration
+
+<table>
+	<tr>
+		<th>Attributes</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`generic`</td>
+		<td>Object</td>
+		<td>Style specified within this object is applied across the chart.</td>
+	</tr>
+	<tr>
+		<td>`connectNullData`</td>
+		<td>Boolean</td>
+		<td>Connects the null data for line and area plots.</td>
+	</tr>
+</table>
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    plotConfig: {
+      generic: {}, //Style too be applied across the chart
+      connectNullData: " " //Set the value to `true` to connect null data
+    }
+  }
+});
 ```
 
 ## Reference Lines
@@ -199,17 +231,18 @@ new FusionCharts({
 	</tr>
 </table>
 
-```
+```javascript
 new FusionCharts({
-    type: 'timeseries',
-    ...
-    dataSource: {
-        referenceLine: [{
-            'label': ' ', //Label of the reference line
-            'value': ' ' //Value of the reference line
-        }],
-	}
-})
+  type: "timeseries",
+  dataSource: {
+    referenceLine: [
+      {
+        label: " ", //Label of the reference line
+        value: " " //Value of the reference line
+      }
+    ]
+  }
+});
 ```
 
 ## Data Markers
@@ -252,20 +285,21 @@ new FusionCharts({
 	</tr>
 </table>
 
-```
+```javascript
 new FusionCharts({
-    type: 'timeseries',
-    ...
-    dataSource: {
-        dataMarker: [{
-		    seriesName: ' ', //Name of the series
-		    time: ' ', //Time on which the data marker will be shown
-		    identifier: ' ', //Defines a character to be shown
-		    timeFormat: ' ', //Format of the date
-		    tooltext: ' ' //Text in the tooltip
-		}]
-	}
-})
+  type: "timeseries",
+  dataSource: {
+    dataMarker: [
+      {
+        seriesName: " ", //Name of the series
+        time: " ", //Time on which the data marker will be shown
+        identifier: " ", //Defines a character to be shown
+        timeFormat: " ", //Format of the date
+        tooltext: " " //Text in the tooltip
+      }
+    ]
+  }
+});
 ```
 
 ## Chart Configuration and Root JSON Attributes
