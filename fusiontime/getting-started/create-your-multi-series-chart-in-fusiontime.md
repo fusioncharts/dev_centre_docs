@@ -14,19 +14,14 @@ The chart is shown below:
 
 The data for the above chart is shown in the table below:
 
-Country | Time | Sales
-- | - | -
-United States | 1/4/2011 | 16.448
-United States | 1/5/2011 | 72.736
-United States | 1/5/2011 | 11.784
-... | ... | ...
-... | ... | ...
-India | 12/31/2014 | 364.59
-India | 12/31/2014 | 72
-India | 12/31/2014 | 39.42
-... | ... | ...
-... | ... | ...
-... | ... | ...
+| Country       | Time       | Sales  |
+| ------------- | ---------- | ------ |
+| United States | 1/4/2011   | 16.448 |
+| United States | 1/5/2011   | 72.736 |
+| United States | 1/5/2011   | 11.784 |
+| India         | 12/31/2014 | 364.59 |
+| India         | 12/31/2014 | 72     |
+| India         | 12/31/2014 | 39.42  |
 
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 
@@ -53,7 +48,7 @@ To understand the `schema.json` in details click [here](/fusiontime/getting-star
 
 To add the data, let's create a `data.json` file and copy the following code:
 
-```
+```json
 let data = [
     [
         "United States",
@@ -70,8 +65,6 @@ let data = [
         "1/5/2011",
         11.784
     ],
-    ...
-    ...
     [
         "India",
         "12/31/2014",
@@ -93,15 +86,15 @@ To view the full data click [here](https://raw.githubusercontent.com/fusionchart
 
 In the above code:
 
-* `data` is the variable in which the data array is saved.
+- `data` is the variable in which the data array is saved.
 
-* For each data plots in the chart, an array is created which consists of values (sub-array) for each row in the `DataTable`. The values in the sub-array represent:
+- For each data plots in the chart, an array is created which consists of values (sub-array) for each row in the `DataTable`. The values in the sub-array represent:
 
-    * Name of the two countries as **USA** and **India**.
+    - Name of the two countries as **USA** and **India**.
 
-    * **Time** according to the format.
+    - **Time** according to the format.
 
-    * **Value** of the data plots, i.e., sales per date.
+    - **Value** of the data plots, i.e., sales per date.
 
 We are all set with our data to create the chart. 
 
