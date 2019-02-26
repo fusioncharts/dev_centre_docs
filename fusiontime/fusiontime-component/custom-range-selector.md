@@ -14,13 +14,13 @@ A custom range selector appears as shown in the image below:
 
 To set the custom date and time follow the steps below:
 
-* Click on the custom range selector.
+- Click on the custom range selector.
 
-* A calendar widget appears, select the date from the widget, or type in the input box.
+- A calendar widget appears, select the date from the widget, or type in the input box.
 
-* After setting the date, set the time from the drop-down boxes. This option appears only if the atomicity of data is at time level.
+- After setting the date, set the time from the drop-down boxes. This option appears only if the atomicity of data is at time level.
 
-* Click `Apply` to view the changes. 
+- Click `Apply` to view the changes.
 
 A chart with custom range selector is shown below:
 
@@ -32,13 +32,11 @@ By default, the Custom Range Selector is visible in every chart. However, you ca
 
 Refer to the code below:
 
-```
+```javascript
 {
     type: 'timeseries',
-    ...
     dataSource: {
         data: fusionTable,
-        ...
         // Show/Hide Custom Range Selector
         "extensions": {
 			"customRangeSelector": {
