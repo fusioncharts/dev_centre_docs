@@ -78,6 +78,11 @@ new FusionCharts({
 		<td>Number</td>
 		<td>Sets the multiplier of the time unit. Default is 1.</td>
 	</tr>
+	<tr>
+		<td>`type`</td>
+		<td>String</td>
+		<td>Setting this attribute to <strong>full</strong> will render the time marker (instance & band) from top to bottom (vertically) of the canvas.</td>
+	</tr>
 </table>
 
 ```javascript
@@ -92,6 +97,7 @@ new FusionCharts({
                 end: ' ', //End Date
                 label: ' ', //Label of the Time Axis
                 timeFormat: ' ', //Time format
+				type: 'full', // Full time marker
                 // Define the frequency, at which the cyclic time marker will be repeated.
                 repeat {
 			        unit: ' ', //Defines the time unit for the time marker.
