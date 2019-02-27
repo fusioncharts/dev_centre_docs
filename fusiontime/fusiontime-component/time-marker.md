@@ -67,6 +67,30 @@ The sample chart with repeated time instance markers is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-2 %}
 
+In the above sample, the time marker is a specific point on the time axis. You can also render the time marker from top to bottom (vertically) of the canvas by setting the value of `type` attribute to **full** within the `time marker` object.
+
+Refer to the code given below:
+
+```javascript
+
+xAxis: {
+    columnname: 'Time',
+    timemarker: [{
+        start: 'Mar-1982',
+        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
+        timeFormat: "%b-%Y"
+        repeat {
+        unit: Year,
+        multiplier: 5,
+        type: 'full'
+    }
+},
+```
+
+A sample chart is shown below:
+
+{% embed_ftChart fusiontime-components-time-instance-marker-full %}
+
 ## Time span marker
 
 To create the marker just include the `end` attribute along with the other attributes of the single time instance marker under the `timemarker` object within the `xAxis` object. Refer to the code below:
@@ -74,19 +98,41 @@ To create the marker just include the `end` attribute along with the other attri
 Refer to the code below:
 
 ```javascript
- xAxis: {
+xAxis: {
     columnname: 'Time',
     timemarker: [{
         start: 'Mar-1980',
         end: 'Jun-1983',
         label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
         timeFormat: "%b-%Y"
-    },
+    }],
+}
 ```
 
 A sample chart with time spam markers is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-3 %}
+
+In the above sample, the time marker has a specific height according to the width and height of the chart. You can also render the time span marker with a line from top to bottom (vertically) of the canvas by setting the value of `type` attribute to **full** within the `time marker` object.
+
+Refer to the code given below:
+
+```javascript
+xAxis: {
+    columnname: 'Time',
+    timemarker: [{
+        start: 'Mar-1980',
+        end: 'Jun-1983',
+        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
+        timeFormat: "%b-%Y",
+        type: 'full',
+    }],
+}
+```
+
+A sample chart is shown below:
+
+{% embed_ftChart fusiontime-components-time-span-marker-full %}
 
 ## Style Definition
 
