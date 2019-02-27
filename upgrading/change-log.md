@@ -8,7 +8,11 @@ heading: Version 3.13.x
 
 <p class="release-date">27th February, 2019</p>
 
-<h4 class="sub-heading">Fixes</h4>
+<h4 class="sub-heading">Improvements</h4>
+
+- The `FusionCharts.getVersion('all')` api is introduced to check the version of all the products and the FusionCharts Suite. From now onward, the FusionCharts Suite package will contain FusionCharts, FusionWidgets, PowerCharts, FusionMaps and FusionTime. Whenever a new version of these products is released the version of the FusionCharts Suite XT will change accordingly.
+
+<h4>Fixes</h4>
 
 - Data plot highlighting and tooltip now appears properly while trying to scale the chart container using the CSS transform.
 

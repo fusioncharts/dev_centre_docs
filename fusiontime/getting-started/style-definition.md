@@ -32,6 +32,8 @@ Let's take an example of the styling on the **caption** of the chart. The captio
 
 The **caption** in the chart looks like as shown below:
 
+<img src="{% site.BASE_URL %}/images/fusiontime-styledefinition-normal-caption.png" alt="Export Time Series" width="200" height="120">
+
 {% embed_ftChart try %}
 
 Now, let's define a `txt-red` style and apply on the caption of the chart.
@@ -53,6 +55,8 @@ Now, let's define a `txt-red` style and apply on the caption of the chart.
 ```
 
 After applying the text color, the caption looks like as shown below:
+
+<img src="{% site.BASE_URL %}/images/fusiontime-styledefinition-colored-caption.png" alt="Export Time Series" width="200" height="120">
 
 {% embed_ftChart try1 %}
 
@@ -79,7 +83,7 @@ Let's also define a `txt-big` style to specify the font size of the caption.
 
 The caption looks like as shown below:
 
-{% embed_ftChart try2 %}
+<img src="{% site.BASE_URL %}/images/fusiontime-styledefinition-colored-sized-caption.png" alt="Export Time Series" width="200" height="120">
 
 Alternatively, styling can also be applied to the specific component just like an inline CSS within an HTML file.
 
@@ -145,8 +149,6 @@ Styling can be applied to the text of the caption using the `text` object under 
 }
 ```
 
-<IMAGE>
-
 ## Subcaption
 
 You can apply style to a subcaption is the same way as caption.
@@ -162,8 +164,6 @@ You can apply style to a subcaption is the same way as caption.
   }
 }
 ```
-
-<IMAGE>
 
 ## X-Axis
 
@@ -190,8 +190,6 @@ Style applied to `tick marks` and `label` is directly applied to the major tick 
   }
 }
 ```
-
-<IMAGE>
 
 ## Y-Axis
 
@@ -222,8 +220,6 @@ The title of the y-axis and the grid lines appear against the ticks on the canva
 }
 ```
 
-<IMAGE>
-
 ## Reference Line
 
 Styling can be applied to two elements of a reference line:
@@ -246,8 +242,6 @@ Styling can be applied to two elements of a reference line:
     }]
 }
 ```
-
-<IMAGE>
 
 ## Time Marker
 
@@ -274,8 +268,6 @@ For a time span marker, the marker refers to the band which marks the time and t
 }
 ```
 
-<IMAGE>
-
 ## Data Marker
 
 Styling can be applied to two elements of a data marker:
@@ -296,8 +288,6 @@ Syntax:
     }]
 }
 ```
-
-<IMAGE>
 
 The components following underneath can only be styled using the common style properties defined in the `styleDefinition` object. To apply the **style** to following components, customize it from the style section within the `chart` object of the `dataSource`.
 
@@ -325,8 +315,6 @@ Style defined using `plotConfig` object are scoped to the entire chart, i.e., if
 }
 ```
 
-<IMAGE>
-
 You can also apply style across all the chart types using `generic` object within the `plotConfig` object. It applies the style to any chart type even in multiple canvases.
 
 **Syntax**:
@@ -340,8 +328,6 @@ You can also apply style across all the chart types using `generic` object withi
     }
 }
 ```
-
-<IMAGE>
 
 > All the supported chart types of time-series chart can be customized using the `plotConfig` object. To know more click here.
 
@@ -361,8 +347,6 @@ In FusionTime, you can also style the data plots specifically. These styling wil
     }]
 }
 ```
-
-<IMAGE>
 
 ## Canvas
 
@@ -384,8 +368,6 @@ In the above code, `canvas` attribute is applied in the `style` object to apply 
 
 > Canvas of the chart can only be styled from the common style definition in `styleDefinition` object.
 
-<IMAGE>
-
 ## Chart Background
 
 A chart's background refers to the whole area or the container on which it is drawn.
@@ -405,5 +387,3 @@ Syntax:
 In the above code, `background` attribute is applied in the `style` object to apply styling the chart background.
 
 > Canvas of the chart can only be styled from the common style definition in `styleDefinition` object.
-
-<IMAGE>
