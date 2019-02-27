@@ -10,7 +10,10 @@ heading: Version 3.13.x
 
 <h4 class="sub-heading">Improvement</h4>
 
-- The `FusionCharts.getVersion('all')` api is introduced to check the version of all the products and the FusionCharts Suite. From now onward, the FusionCharts Suite package will contain FusionCharts, FusionWidgets, PowerCharts, FusionMaps and FusionTime. Whenever a new version of these products is released the version of the FusionCharts Suite XT will change accordingly.
+- The FusionCharts.getVersion() API can now display versions of FusionCharts Suite along with the included products, or specifically the version of FusionCharts Suite or FusionTime, depending on the parameter provided. For example:
+  - Using FusionCharts.getVersion(`all`) will display the versions of FusionCharts Suite, FusionTime, FusionCharts, FusionWidgets, PowerCharts, and FusionMaps in the browser console.
+  - Using FusionCharts.getVersion(`fcs`) will only display the version of FusionCharts Suite in the browser console.
+  - Using FusionCharts.getVersion(`ft`) will only display the version of FusionTime in the browser console.
 
 <h4>Fixes</h4>
 
