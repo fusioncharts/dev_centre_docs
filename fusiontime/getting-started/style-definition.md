@@ -34,8 +34,6 @@ The **caption** in the chart looks like as shown below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-styledefinition-normal-caption.png" alt="Export Time Series" width="200" height="120">
 
-{% embed_ftChart try %}
-
 Now, let's define a `txt-red` style and apply on the caption of the chart.
 
 ```javascript
@@ -57,8 +55,6 @@ Now, let's define a `txt-red` style and apply on the caption of the chart.
 After applying the text color, the caption looks like as shown below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-styledefinition-colored-caption.png" alt="Export Time Series" width="200" height="120">
-
-{% embed_ftChart try1 %}
 
 Let's also define a `txt-big` style to specify the font size of the caption.
 
