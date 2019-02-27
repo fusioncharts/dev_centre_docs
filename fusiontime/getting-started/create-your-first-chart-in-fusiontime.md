@@ -6,7 +6,7 @@ heading: Create your First Chart
 
 FusionTime, like the name implies, is a product which is used to plot time-series data. FusionTime helps to evaluate patterns and trends in time-series data over a period of time.
 
-In this article, you'll see how to install FusionTime and render your first-time series chart.
+In this article, you'll see how to install FusionTime and render your first time-series chart.
 
 ## Installation
 
