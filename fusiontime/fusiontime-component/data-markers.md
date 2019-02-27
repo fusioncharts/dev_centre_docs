@@ -6,6 +6,8 @@ heading: Data Marker
 
 Data marker in a chart represents an important event, which occurred on a specific data point. Hovering on a data marker shows additional description of the event in the tooltip.
 
+> Data Markers are not applicable on Stock Charts.
+
 The image below shows the data marker on a time series chart:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-data-markers.png" alt="Data Markers" width="700" height="420">
