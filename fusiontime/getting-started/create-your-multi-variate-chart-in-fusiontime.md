@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating a multi
 heading: Create Multivariate Chart
 ---
 
-In FusionTime, you can create a chart with multiple canvases showing different measures in each canvas. 
+In FusionTime, you can create a chart with multiple canvases showing different measures in each canvas.
 
 In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple columns with measures (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis](/fusiontime/fusiontime-component/time-axis) (x-axis).
 
@@ -14,18 +14,14 @@ The multivariate chart will look like as shown below:
 
 The data for the above chart is shown in the table below:
 
-Order Date | Sales | Quantity | Shipping Cost
-- | - | - | -
-1/1/2011 | 120.366 | 3 | 9.72 
-1/3/2011 | 113.67 | 5 | 4.70 
-1/5/2011 | 55.242 | 2 | 1.80 
-1/6/2011 | 6.54 | 1 | 1.13 
-1/7/2011 | 5.48 | 2 | 0.52 
-1/8/2011 | 76.728 | 3 | 6.69
-... | ... | ... | ...
-... | ... | ... | ...
-... | ... | ... | ...
-... | ... | ... | ...
+| Order Date | Sales   | Quantity | Shipping Cost |
+| ---------- | ------- | -------- | ------------- |
+| 1/1/2011   | 120.366 | 3        | 9.72          |
+| 1/3/2011   | 113.67  | 5        | 4.70          |
+| 1/5/2011   | 55.242  | 2        | 1.80          |
+| 1/6/2011   | 6.54    | 1        | 1.13          |
+| 1/7/2011   | 5.48    | 2        | 0.52          |
+| 1/8/2011   | 76.728  | 3        | 6.69          |
 
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 
@@ -70,7 +66,7 @@ Now that we have the columns ready for the `DataTable` let's learn how to put th
 
 To add the data, let's create a `data.json` file and copy the following code:
 
-```
+```json
 let data = [
     [
         "1/11/2011",
@@ -90,8 +86,6 @@ let data = [
         3,
         13.82
     ],
-    ...
-    ...
     [
         "12/30/2014",
         10.854,
@@ -112,6 +106,7 @@ let data = [
     ]
 ]
 ```
+
 To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-multi-variate/data.json)
 
 In the above code:
