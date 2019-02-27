@@ -32,7 +32,7 @@ Let's take an example of the styling on the **caption** of the chart. The captio
 
 The **caption** in the chart looks like as shown below:
 
-IMAGE
+{% embed_ftChart try %}
 
 Now, let's define a `txt-red` style and apply on the caption of the chart.
 
