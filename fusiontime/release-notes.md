@@ -1,6 +1,6 @@
 ---
 title: Release Notes | FusionCharts
-description: This article elaborates on the style definition of FusionTime.
+description: This section talks about the change in features and attributes with latest released version.
 heading: Release Notes
 ---
 

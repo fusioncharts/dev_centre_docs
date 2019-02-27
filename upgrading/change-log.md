@@ -4,6 +4,64 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.4</h2>
+
+<p class="release-date">27th February, 2019</p>
+
+<h4 class="sub-heading">Fixes</h4>
+
+- Data plot highlighting and tooltip now appears properly while trying to scale the chart container using the CSS transform.
+
+- `numVisiblePlot` attribute is now working properly for scroll area and scroll line charts. Previously it was showing one extra plot.
+
+- When trying to switch between charts using the `chartType()` API, the plot color properties of theme is working fine now. Previously, when switched it was rendering with one single color applied to all plots.
+
+- For Pie and Doughnut charts, the `render` and `renderComplete` events are now fired properly while trying to re-render using the `dataPlot` click event.
+
+- For the Marimekko chart, the decimal precision of Y-Axis values was not working properly when `usePercentDistribution` attribute is set as `1`. This issue has been fixed now.
+
+- `exportChart()` API now works as expected irrespective of `exportShowMenuAttribute`. Previously it was throwing a `js` error instead of exporting the chart.
+
+- The lower limit of the y-axis is now displayed properly when the `yAxisMaxValue` attribute is explicitly set without changing the default value of the `adjustDiv` attribute. Previously, the lower limit was not appearing.
+
+- In Tree map charts, the `dataPlotClick` is triggered even when the `preventDefault` is turned on in the `beforeDrillDown` event to stop the drill-down. This issue has now been fixed.
+
+- In the Marimekko chart, `$sum` and `$unformattedSum` tooltip macros are now working properly when the `usePercentDistribution` is set to `0`.
+
+- In Zoomline chart, the `toolbarButtonColor` & `showToolBarButtonToolText` attributes are now working properly when set to `0`.
+
+- Angular Gauge was drawn twice for each real time update. This issue is now fixed.
+
+- For multiple charts, when trying to export using the `exportChart()` API and setting the `exportEnabled` attribute to `1` only the last chart was getting exported. This issue has now been fixed.
+
+- The tooltip in Angular gauge was displaying the trendline label when the cursor is hovered on the dial. This issue is now fixed.
+
+- Image annotations were not scaled properly based on the specified `origW` & `origH`. This issue has now been fixed.
+
+- For RealTime Angular Gauge if the Inner Radius is set with very less value the value was not getting displayed. This issue has now been fixed.
+
+- The non-functional horizontal scroll bar does not appear anymore in Gantt chart if the duration specified is more than the actual time span of the chart.
+
+- Tick values are not displayed in Angular Gauge, even when sufficient space is available. This issue is now fixed.
+
+- The `{br}` tag is now working in the `plotToolText` attribute of cylinder, thermometer & Treemap.
+
+- The attribute `labelDisplay` is working properly when set to `WRAP`, if the `rotateLabels` attribute is set to `0`.
+
+- The chart export feature is now working properly in Apple touch devices (iPad/iPhone).
+
+- When `chartType()` API was used to set both the chart type and chart data, `js` errors were thrown. This issue has been fixed.
+
+- Chart background image and logo image are now getting included inside the SVG structure fetched through `getSVGString()` API method.
+
+- FusionCharts now adheres to no unsafe-eval Content Security Policy.
+
+- In bubble charts, values of Z-axis in tooltip are no longer affected by the number format applied to the Y-axis values.
+
+- On updating multiple blank `doughnut2d` charts with new data, only the first chart used to display the `defaultCenterLabel`. This issue has been fixed now.
+
+- When a chart rendered in a hidden container was disposed, FusionCharts used to throw `js` errors. This issue has been fixed now.
+
 <h2 class="sub-heading">Version 3.13.3-sr.1</h2>
 
 <p class="release-date">21st December, 2018</p>
