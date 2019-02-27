@@ -154,7 +154,7 @@ All the supported chart types of time-series chart can be customized using the `
 
 Example:
 
-<IMAGE>
+<img src="{% site.BASE_URL %}/images/area-chart-three-elements.png" alt="Time Axis" width="700" height="420">
 
 In the above image, as you can see an area chart with three elements, a line, an area, and an anchor. You can either style them individually or style them all together.
 
