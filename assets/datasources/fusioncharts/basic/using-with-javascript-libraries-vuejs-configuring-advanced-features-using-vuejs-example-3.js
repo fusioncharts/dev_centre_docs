@@ -1,5 +1,5 @@
 {
-    
+
     type: 'column2d',
     renderAt: 'chart-container',
     width: '600',
@@ -32,8 +32,10 @@
     events: {
         "beforeRender": function(evt, args) {
             var controls = document.createElement('div'),
-                chartRef = evt.sender;
-            updateData = function() {
+                chartRef = evt.sender,
+                btn = document.createElement('button');
+
+            var updateData = function() {
                 var newData = {
                     "chart": {
                         "caption": "Top 5 stores in last month by revenue",
@@ -60,8 +62,13 @@
                 };
                 chartRef.setJSONData(newData);
             };
-            controls.innerHTML = '<button onClick="updateData()">Update chart data</button>';
-            controls.style.cssText = 'text-align: center; ';
+
+            btn.style.cssText = "background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;";
+            btn.innerText = "Update chart data";
+            btn.onclick = updateData;
+
+            controls.style.cssText = 'text-align: center; width: 400px; ';
+            controls.appendChild(btn);
             args.container.appendChild(controls);
         }
     }

@@ -29,10 +29,8 @@ Refer to the code below:
 ```javascript
 {
     type: 'timeseries',
-    ...
     dataSource: {
         data: fusionTable,
-        ...
         // Show/Hide Custom Range Selector
         "extensions": {
             "standardRangeSelector": {

@@ -4,13 +4,11 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create your First Chart
 ---
 
-FusionTime is a JavaScript charting library that helps you visualize and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhance the experience of exploring and understanding time series data. 
+FusionTime, like the name implies, is a product which is used to plot time-series data. FusionTime helps to evaluate patterns and trends in time-series data over a period of time.
 
-In this article, you'll see how to install FusionTime and render your first time series chart.
+In this article, you'll see how to install FusionTime and render your first-time series chart.
 
 ## Installation
-
-Since FusionTime is distributed along with FusionCharts Suite, download the FusionCharts package to get access to FusionTime and other chart types of the FusionCharts Suite.
 
 Install **FusionTime** using any of the following steps:
 
@@ -53,7 +51,7 @@ That completes the installation of **FusionTime**.
 
 ## Create a chart
 
-Now that you have installed, it's time to create your first time series chart using FusionTime. To start with we will create a simple time-series chart showcasing **Online sales of a SuperStore**. The chart will look like as shown below:
+Now that you have installed, it's time to create your first-time series chart using FusionTime. To start with we will create a simple time-series chart showcasing **Online sales of a SuperStore**. The chart will look like as shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
@@ -69,22 +67,18 @@ The data for the above chart is too big to be displayed here. The table below sh
 | 1/7/2011 | 2573.82 |
 | 1/7/2011 | 609.98  |
 
-FusionTime accepts a [Datatable](/fusiontime/fusiontime-data-engine/overview) as it's data source. `DataTable`, is a part of [DataStore](/fusiontime/fusiontime-data-engine/overview), is the tabular representation of data. To create the `DataTable`, you need to provide the following:
+To create the above chart, first, let's understand the basics of FusionTime in short. In order to render a chart, you need to provide data in form of a [Datatable](/fusiontime/fusiontime-data-engine/overview) which records data in rows and columns. To create a `DataTable` first you need to create a [DataStore](/fusiontime/fusiontime-data-engine/overview) and load the data into the `DataTable` in JSON or 2D array format. To create the `DataTable`, you need to provide the following:
 
-* `schema` - which defines the properties of the columns. 
-* `data` - values of each row and column of the DataTable
-
-> For an instance of FusionTime, you can create `n` number of `dataTables`, but only 1 `dataStore`.
+- The `schema` defines the properties of the columns.
+- The `actual values` for each row and column of the `DataTable` as the data.
 
 Next, let's learn how to prepare the schema and the data of the `DataTable`.
 
 ### Create the `schema`
 
-The schema outlines each column represented in the above table. The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`.
+The schema contains an array which has multiple objects created in it. Each object represents a column in the `DataTable`. The schema maps the data to the columns of a `DataTable` along with the type for each column and the input format in case of date. You've to mandatorily specify the schema for each `DataTable`.
 
-> `name` and `type` are mandatory keys for each object. If the object type is ‘time’ then `format` is also a mandatory key.
-
-To define the schema, let's create a `schema.json` file and copy the following code:
+To define the schema, let's create a **schema.json** file and copy the following code:
 
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
@@ -100,22 +94,21 @@ let schema = [{
 ```
 
 In the above code:
-* `schema` is the variable in which the array is stored.
-* Each object of a schema maps to a column of the tabular representation of the data.
-* Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
-    * name - Specify the name of the column of the tabular representation of data.
-    * type - Specify the type of the column.
-    * format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
+- `schema` is the variable in which the array is saved.
+- Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
+    - name - Specify the name of the column.
+    - type - Specify the type of the column.
+    - format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
 
 Now that we have the schema ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
 ### Create `data`
 
-Data can be provided either in JSON format or 2D array format. We will use the 2D array format.
+In FusionTime, to add values to the `DataTable` you can provide the data in both JSON and 2D array format. In this example, we will use the 2D array format.
 
-[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
+To add the data, let's create a `data.json` file and copy the following code:
 
-```
+```json
 let data = [
     [
         "1/4/2011",
@@ -150,10 +143,9 @@ Create a new `data.json` file, and copy the complete data from [here](https://ra
 
 In the above code:
 * `data` is the variable in which the data array is stored.
-* Each object in the data array corresponds to a row in the tabular representation of the data.
-* Each element in an object is represented by each object of the `schema`. The values in each object of the array represent the following:
+* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represent the following:
     * Time according to the format
-    * Total Sales amount 
+    * Total Sales amount
 
 We are all set with our data to create the chart.
 
@@ -163,7 +155,7 @@ Now, let's create the `.html` file to render the above chart.
 
 ### Create `index` file
 
-Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index` file and copy the following code: 
+Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index` file and copy the following code:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -256,30 +248,29 @@ window.charInstance = new FusionCharts({
 </div>
 </div>
 
-
 In the above code:
 
-* Include `fusioncharts.js` file.
+- Include `fusioncharts.js` file.
 
-* Include `data.json` and `schema.json` files.
+- Include `data.json` and `schema.json` files.
 
-* Create an empty storage as `fusionDataStore` using `FusionCharts.DataStore`.
+- Create an empty storage as `fusionDataStore` using `FusionCharts.DataStore`.
 
-* Create a `DataTable` within the empty storage using `fusionDataStore.createDataTable` and pass the `schema` and `data` to the the `DataTable`.
+- Create a `DataTable` within the empty storage using `fusionDataStore.createDataTable` and pass the `schema` and `data` to the the `DataTable`.
 
-* Define the chart configuration in the FusionCharts constructor:
+- Define the chart configuration in the FusionCharts constructor:
 
-    * Set the type as `timeseries`.
+    - Set the type as `timeseries`.
 
-    * Set the chart container as `container` using the `renderAt` property.
+    - Set the chart container as `container` using the `renderAt` property.
 
-    * Set the width and height (in pixels).
+    - Set the width and height (in pixels).
 
-    * Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
+    - Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
 
-    * Set the data to create the chart.
+    - Set the data to create the chart.
 
-    * Specify the caption of the chart using `text` attribute in `caption` object.
+    - Specify the caption of the chart using `text` attribute in `caption` object.
 
 That's it! Your first chart using FusionTime is ready.
 
