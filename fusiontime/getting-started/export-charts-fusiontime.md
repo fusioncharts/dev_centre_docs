@@ -8,13 +8,7 @@ FusionTime allows you export your rendered charts in JPG, PNG, SVG, and PDF form
 
 In this article we will discuss how to export time-series charts in FusionTime.
 
-A server-side helper library enables export by conveting the SVG to the required format. You can also export VML as it is converted to SVG internally before exporting. During the export process, the data to be exported is first sent to the FusionCharts servers to be processed, finally generating the output in the required format.
-
-When charts are exported on the client side, the entire exporting process is carried out using the user’s browser.
-
-> You must have an active internet connection for this feature to work.
-
-Thr dropdown menu with export options looks like as shown below:
+The dropdown menu with export options looks like as shown below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-export-charts.png" alt="Export Time Series" width="700" height="420">
 
@@ -32,18 +26,15 @@ A time-series chart with export enabled is shown below. Hover over the <span> ![
 
 To enable the export feature, refer to the code below:
 
-```
+```javascript
 new FusionCharts({
-    type: 'timeseries',
-    ...
-    dataSource: {
-	    ...
-	    chart: {
-	        exportEnabled: '1' //Enable Export Feature
-	    },
-	    ...
-	}
-})
+  type: "timeseries",
+  dataSource: {
+    chart: {
+      exportEnabled: "1" //Enable Export Feature
+    }
+  }
+});
 ```
 
 In the above code we have:
