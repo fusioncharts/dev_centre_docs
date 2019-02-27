@@ -1976,8 +1976,12 @@
         ]
       },
       {
-        "title": "Chart Attributes\t",
+        "title": "Chart Attributes",
         "path": "/fusiontime/fusiontime-attributes"
+      },
+      {
+        "title": "Release Notes\t",
+        "path": "/fusiontime/release-notes"
       }
     ]
   },
