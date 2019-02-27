@@ -10,7 +10,7 @@ heading: Release Notes
 
 - This marks the release of first version of [FusionTime](https://www.fusioncharts.com/fusiontime)! One can now create high performing time series visualizations and stock charts in Javascript very easily.
 
-- The usage of a special [data layer](/fusiontime/getting-started/how-fusion-time-works) in FusionTime ensures that a seamless experience of the out-of-the-box features of time series visualization is available even with a high volume of time series data.
+- The usage of a special [data layer](/fusiontime/getting-started/how-fusion-time-works#fusiontime-data-layer) in FusionTime ensures that a seamless experience of the out-of-the-box features of time series visualization is available even with a high volume of time series data.
 
   - You can now perform a number of data operations, like, [sort](/fusiontime/fusiontime-data-engine/sort), [filter](/fusiontime/fusiontime-data-engine/filter), [groupBy](/fusiontime/fusiontime-data-engine/groupby), [pivot](/fusiontime/fusiontime-data-engine/pivot), etc. with the in-browser [store](/fusiontime/fusiontime-data-engine/overview) of tabular data, available with the data layer.
 
