@@ -42,18 +42,14 @@ A sample chart with a time marker is shown below:
 To create repeatable time instance markers follw the stpes below:
 
 - Set the above attributes and the specify the following attribute:
+  - Within the `timeMarker` object create the `repeat` object to define the frequency, at which the cyclic time marker will be repeated.
+  - Use the `unit` attribute to define the time unit for the time marker inside the `repeat` object. You can set its value as Year, Quarter, Month, Week, Day, Hour, Minute, Second, or Millisecond. You can also set its value as one of the weekdays (Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday).
+  - Use the `multiplier` attribute to define the multiplier of the time unit. By default, this value is `1`.
+  - Use the `end` attribute to define the end time for the marker. Note that if you set the end of the date/time, then the marker will be presented as a band. If you omit it instead, the marker will be represented as a line.
 
-  \* Within the `timeMarker object create the`repeat` object to define the frequency, at which the cyclic time marker will be repeated.
+Refer to the code below:
 
-          * Use the `unit` attribute to define the time unit for the time marker inside the `repeat` object. You can set its value as Year, Quarter, Month, Week, Day, Hour, Minute, Second, or Millisecond. You can also set its value as one of the weekdays (Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday).
-
-          * Use the `multiplier` attribute to define the multiplier of the time unit. By default, this value is `1`.
-
-  Refer to the code below:
-
-- Use the `end` attribute to define the end time for the marker. Note that if you set the end of the date/time, then the marker will be presented as a band. If you omit it instead, the marker will be represented as a line.
-
-```
+```javascript
 xAxis: {
     columnname: 'Time',
     timemarker: [{
@@ -77,7 +73,7 @@ To create the marker just include the `end` attribute along with the other attri
 
 Refer to the code below:
 
-```
+```javascript
  xAxis: {
     columnname: 'Time',
     timemarker: [{
@@ -98,7 +94,7 @@ You can add CSS styling to set the cosmetic properties of data markers. To set t
 
 Now, let's define the `styleDefinition` object and set the **color** in an object. The code is given below:
 
-```json
+```javascript
 styleDefinition: {
     "colorstyle": {
         "fill": "#ff0000",
@@ -111,7 +107,7 @@ Once the `StyleDefinition` is defined, you can refer it for the various componen
 
 The syntax to set the `StyleDefintion` to the data marker is given below:
 
-```json
+```javascript
 {
   "seriesName": String,
   "time": String,
@@ -136,7 +132,7 @@ In the above sample, **font color** of the y-axis label has been changed.
 
 The code to update the cosmetic properties of other elements in **y-axis** is given below:
 
-```json
+```javascript
 {
   "yAxis": [
     {
