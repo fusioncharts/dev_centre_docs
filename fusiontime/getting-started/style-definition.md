@@ -325,7 +325,7 @@ You can also apply style across all the chart types using `generic` object withi
 }
 ```
 
-> All the supported chart types of time-series chart can be customized using the `plotConfig` object. To know more click here.
+> All the supported chart types of time-series chart can be customized using the `plotConfig` object. To know more click [here](/fusiontime/fusiontime-component/plot-types-in-fusiontime#style-definition).
 
 ### Y-Axis Configuration
 
