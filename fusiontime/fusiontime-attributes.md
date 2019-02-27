@@ -101,7 +101,8 @@ new FusionCharts({
                 // Define the frequency, at which the cyclic time marker will be repeated.
                 repeat {
 			        unit: ' ', //Defines the time unit for the time marker.
-			        multiplier: ' ' //Defines the multiplier of the time unit.
+							multiplier: ' ', //Defines the multiplier of the time unit.
+							type: ' ' //Renders the time marker from top to bottom of the canvas
 			    }
             }]
 		}
@@ -556,20 +557,8 @@ List of predefined date/time format is given below:
 		<td>Full month name.</td>
 	</tr>
 	<tr>
-		<td>`%c`</td>
-		<td>Locale’s date and time, such as %x and %X.</td>
-	</tr>
-	<tr>
 		<td>`%d`</td>
 		<td>Zero-padded day of the month as a decimal number [01,31].</td>
-	</tr>
-	<tr>
-		<td>`%e`</td>
-		<td>Space-padded day of the month as a decimal number [1,31]. `%e` is equivalent to `%_d`.</td>
-	</tr>
-	<tr>
-		<td>`%f`</td>
-		<td>Microseconds as a decimal number [000000, 999999].</td>
 	</tr>
 	<tr>
 		<td>`%H`</td>
@@ -600,48 +589,8 @@ List of predefined date/time format is given below:
 		<td>Can either be **AM** or **PM**.</td>
 	</tr>
 	<tr>
-		<td>`%Q`</td>
-		<td>Milliseconds according to UNIX epoch.</td>
-	</tr>
-	<tr>
-		<td>`%q`</td>
-		<td>Quarter of the year starting from January [Q1, Q2, Q3, Q4].</td>
-	</tr>
-	<tr>
-		<td>`%s`</td>
-		<td>Seconds according to UNIX epoch.</td>
-	</tr>
-	<tr>
 		<td>`%S`</td>
 		<td>Second as a decimal number [00, 61].</td>
-	</tr>
-	<tr>
-		<td>`%u`</td>
-		<td>Weeday starts from Monday(ISO 8601) as a decimal number [1,7].</td>
-	</tr>
-	<tr>
-		<td>`%U`</td>
-		<td>Sunday-based week of a year as a decimal number [00,53]. All days in a new year preceding the first Sunday will be considered as week 0.</td>
-	</tr>
-	<tr>
-		<td>`%V`</td>
-		<td>ISO 8601 week of the year as a decimal number [01, 53]. Weeks start on Monday and are numbered from 01 for the first week and 52 or 53 for the last week. Week 1 is the first week where four or more days fall within the new year. Basically, week 01 is the first week of the year that contains a Thursday; or, the week that has 4 January in it.</td>
-	</tr>
-	<tr>
-		<td>`%w`</td>
-		<td>Sunday-based weekday as a decimal number [0,6].</td>
-	</tr>
-	<tr>
-		<td>`%W`</td>
-		<td>Monday-based week of the year as a decimal number [00,53]. All days in a new year preceding the first Monday will be considered as week 0.</td>
-	</tr>
-	<tr>
-		<td>`%x`</td>
-		<td>Locale’s date. Example: %-m/%-d/%Y.</td>
-	</tr>
-	<tr>
-		<td>`%X`</td>
-		<td>Locale’s time. Example: %-I:%M:%S %p.</td>
 	</tr>
 	<tr>
 		<td>`%y`</td>
