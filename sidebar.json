@@ -1811,7 +1811,6 @@
     "title": "FusionTime",
     "description": "Plot high performance time-series visualizations",
     "longDescription": "Learn how to create time-series and stock charts in JavaScript",
-    "badge": "Beta",
     "icon": "fc_fusiontime",
     "children": [
       {
