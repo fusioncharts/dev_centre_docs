@@ -54,7 +54,7 @@ Now, let's define a `txt-red` style and apply on the caption of the chart.
 
 After applying the text color, the caption looks like as shown below:
 
-IMAGE
+{% embed_ftChart try1 %}
 
 Let's also define a `txt-big` style to specify the font size of the caption.
 
@@ -79,7 +79,7 @@ Let's also define a `txt-big` style to specify the font size of the caption.
 
 The caption looks like as shown below:
 
-IMAGE
+{% embed_ftChart try2 %}
 
 Alternatively, styling can also be applied to the specific component just like an inline CSS within an HTML file.
 
