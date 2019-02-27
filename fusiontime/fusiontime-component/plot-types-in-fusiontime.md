@@ -138,8 +138,6 @@ Style defined using `plotConfig` object are scoped to the entire chart, i.e., if
 }
 ```
 
-<IMAGE>
-
 You can also apply style across all the chart types using `generic` object within the `plotConfig` object. It applies the style to any chart type even in multiple canvases.
 
 **Syntax**:
@@ -151,8 +149,6 @@ You can also apply style across all the chart types using `generic` object withi
   }
 }
 ```
-
-<IMAGE>
 
 All the supported chart types of time-series chart can be customized using the `plotConfig` object. In FusionTime, some of the data plots have been build using several elements, for example, an area plot is built using a line at the top and the filled space is the area of the plot. Each element of the data plot can be styled individually.
 
@@ -268,5 +264,3 @@ In FusionTime, you can also style the data plots specifically. These styling wil
   }]
 }
 ```
-
-<IMAGE>

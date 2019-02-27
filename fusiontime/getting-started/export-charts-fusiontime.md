@@ -4,7 +4,7 @@ description: This article focuses on how you can export your chart using plain j
 heading: Exporting Charts
 ---
 
-FusionTime allows you export your rendered charts in JPG, PNG, SVG, PDF and XLS formats.
+FusionTime allows you export your rendered charts in JPG, PNG, SVG, and PDF formats.
 
 In this article we will discuss how to export time-series charts in FusionTime.
 
@@ -20,9 +20,9 @@ Thr dropdown menu with export options looks like as shown below:
 
 To enable export:
 
-* Set the `exportEnabled` attribute to `1` under chart level.
+- Set the `exportEnabled` attribute to `1` under chart level.
 
-* The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart.
+- The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart.
 
 Hover over this button to see the dropdown menu with export options. From the menu, select the required format. The chart is exported to your machine in the selected format.
 
@@ -48,4 +48,4 @@ new FusionCharts({
 
 In the above code we have:
 
-* Set the value of the `exportEnabled` attribute to `1` under the `chart` object
+- Set the value of the `exportEnabled` attribute to `1` under the `chart` object
