@@ -10,64 +10,56 @@ We have built a simple `FusionCharts server-side PHP` wrapper, which provides bi
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the `**FusionCharts v13.3.3-sr.1`** to get access to FusionTime. Note that you will also need `PHP 5` or later version to use FusionTime.
+Since FusionTime is distributed along with FusionCharts Suite, download/install the `FusionCharts v13.3.3-sr.1` to get access to FusionTime. Note that you will also need `PHP 5` or later version to use FusionTime.
 
-Install FusionCharts and the PHP wrapper component using any of the following methods:
+Install FusionCharts and the PHP wrapper component using following steps:
 
-### CDN
-
-* Include the **FusionCharts** JavaScript files, which can be downloaded from[ <<here](https://www.fusioncharts.com/download/fusioncharts-suite-xt)>>.
+* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
 * Copy and paste the `fusioncharts.php` file from `integrations > php > fusioncharts-wrapper` in your project folder.
 
-* Include the FusionCharts theme file to apply the style to the charts.
+* Include the **FusionTime** file to render time-series charts.
 
-Use the script given below to include the files:
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-```
-
+<div class='tab cdn-tab active'>
+<pre><code class="language-php">
 // Include FusionCharts core file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
-<script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+// Include FusionTime file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
 
-// Include FusionCharts Theme file
-
-<script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-```
-
-### Local Files
-
-* Include the **FusionCharts** JavaScript files, which can be downloaded from[ <<here](https://www.fusioncharts.com/download/fusioncharts-suite-xt)>>.
-
-* Copy and paste the `fusioncharts.php` file from `integrations > php > fusioncharts-wrapper` in your project folder.
-
-* Include the FusionCharts theme file to apply the style to the charts.
-
-Use the script given below to include the files:
-
-```
-
+<div class='tab local-tab'>
+<pre><code class="language-php">
 // Include FusionCharts core file
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
-<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-
-// Include FusionCharts Theme file
-
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-
-```
+// Include FusionTime file
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+</div>
+</div>
 
 ## Create Your First Chart
 
-Now that you have installed FusionTime and `FusionCharts server-side PHP` wrapper, let us build the first chart to show the "Daily sales of a grocery store". 
+Now that you have installed FusionTime and `FusionCharts server-side PHP` wrapper, let us build the first chart to show the "Daily sales of a grocery store".
 
 The chart will look as shown below:
 
-<<Live chart>>
+{% embed_ftChart integrations-php %}
 
 The data for the above chart is shown in the table below:
-
 
 | Time      | Sales |
 | --------- | ----- |
@@ -78,8 +70,6 @@ The data for the above chart is shown in the table below:
 | 05-Feb-11 | 4928  |
 | 06-Feb-11 | 4667  |
 | 07-Feb-11 | 1064  |
-
-
 
 FusionCharts accepts a DataTable as the data source. `DataTable` is a part of `DataStore`, which is a tabular representation of the data. To create the `DataTable`, you need to provide the following:
 
@@ -102,23 +92,14 @@ To define the schema, let's create a `schema.json` file and copy the following c
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
 ```json
-
 [{
-
     "name": "Time",
-
     "type": "date",
-
     "format": "%-m/%-d/%Y"
-
 }, {
-
     "name": "Sales",
-
     "type": "number"
-
 }]
-
 ```
 
 In the above code:
@@ -137,60 +118,35 @@ Now that we have the schema ready, let's work on the data.
 
 ### Create the `data`
 
-Data can be provided either in JSON format or 2D array format. We will use the 2D array format.
-
-Data for the above chart has been used in the data object defined below:
+[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-aspnet/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
-
-   [ [
-
+var data = [
+    [
         "1/4/2011",
-
         16.448
-
     ],
-
     [
-
         "1/5/2011",
-
         272.736
-
     ],
-
     [
-
         "1/5/2011",
-
         11.784
-
     ],
-
     [
-
         "1/5/2011",
-
         3.54
-
     ],
-
     [
-
         "1/6/2011",
-
         19.536
-
     ],
-
     [
-
         "1/7/2011",
-
         2573.82
-
-    ]]
-
+    ],
+]
 ```
 
 Create a new `data.json` file, and copy the above code there. Next, copy the entire and replace it with the content of the `data` object in your 'data.json' file.
@@ -215,31 +171,23 @@ Now, let's create the files to render the above chart.
 
 ### Render the chart
 
- 
-
 Once you have the `data` and the `schema` ready, create a `.js` file and copy the following code:
 
-```
-
-
+```php
 $data = file_get_contents('data.json');
 $schema = file_get_contents('schema.json');
 
 $fusionTable = new FusionTable($schema, $data);
 $timeSeries = new TimeSeries($fusionTable);
 
- 
 // Wrapper constructor parameters
 // charttype, chartID, width, height, renderAt,  data format, TimeSeries object
 
 $Chart = new FusionCharts("timeseries", "MyFirstChart" , "700", "450", "chart-container", "json", $timeSeries);
 
-      // Render the chart
-      $Chart->render();|
-
-
-
- ```
+    // Render the chart
+    $Chart->render();|
+```
 
 In the above code:
 
@@ -265,7 +213,4 @@ In the above code:
 
 * The `$Chart` constructor has been set to the `render()` method to render the chart.
 
- 
-
-That's it! Your first chart in PHP using FusionTime is ready.
-
+That's it! Your first chart in **PHP** using FusionTime is ready.

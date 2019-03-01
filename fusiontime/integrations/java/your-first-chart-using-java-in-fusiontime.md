@@ -18,7 +18,7 @@ Install FusionCharts and the JSP wrapper component using following steps:
 
 * Include the FusionCharts JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
 
-* Include the FusionCharts theme file to apply the style to the charts.
+* Include the FusionTime file to render time-series charts.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -33,7 +33,7 @@ Install FusionCharts and the JSP wrapper component using following steps:
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
 // Include FusionTime file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.fusiontime.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -44,14 +44,12 @@ Install FusionCharts and the JSP wrapper component using following steps:
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
 // Include FusionTime file
-&lt;script type="text/javascript" src="path/to/local/fusioncharts.fusiontime.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 </div>
 </div>
-
-That completes the installation of FusionCharts and the `jsp-fusioncharts` component.
 
 ## Create Your First Chart
 

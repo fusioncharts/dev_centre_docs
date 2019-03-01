@@ -48,8 +48,6 @@ Now, we will add `Django wrapper` and FusionCharts JavaScript files required to 
 
 * Now, map the JavaScript files by creating an HTML file, `index.html` in the template folder. Include the `fusioncharts.js` and `fusioncharts.timeseries.js` using `<script>` tags from the downloaded package in this file.
 
-Install FusionCharts and the Django wrapper component using any of the following methods:
-
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='cdn'>CDN</a></li>
@@ -92,8 +90,6 @@ In the `settings.py` file, update the location of the templates:
 ```bash
 'DIRS': ['myproject/templates']
 ```
-
-That completes the installation of **FusionCharts** Suite and the **Django wrapper**.
 
 ## Create Your First Chart
 
