@@ -43,7 +43,7 @@ Install FusionCharts and the JSP wrapper component using following steps:
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
-// Include FusionCharts Theme file
+// Include FusionTime file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.fusiontime.js"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -178,7 +178,7 @@ Now, let's create the files to render the above chart.
 Once you have the `data` and the `schema` ready, create a `.jsp` file and copy the following code:
 
 ```javascript
-FusionCharts.FusionTable fusionTable = new FusionCharts.FusionTable(schema, data);	
+FusionCharts.FusionTable fusionTable = new FusionCharts.FusionTable(schema, data);
 FusionCharts.TimeSeries timeSeries = new FusionCharts.TimeSeries(fusionTable);
 
 // Wrapper constructor parameters
@@ -187,7 +187,7 @@ FusionCharts.TimeSeries timeSeries = new FusionCharts.TimeSeries(fusionTable);
 FusionCharts chart = new FusionCharts("timeseries", "MyFirstChart" , "700", "450", "chart-container", "json", timeSeries);
 
 // Render the chart
-chart.render();|
+chart.render();
  ```
 
 In the above code:
