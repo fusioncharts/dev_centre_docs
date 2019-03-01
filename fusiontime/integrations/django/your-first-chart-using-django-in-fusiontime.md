@@ -93,7 +93,7 @@ In the `settings.py` file, update the location of the templates:
 
 ## Create Your First Chart
 
-Now that you have installed FusionTime and `FusionCharts JSP` wrapper, let us build the first chart to show the **Daily sales of a grocery store**.
+Now that you have installed FusionTime and `FusionCharts Django` wrapper, let us build the first chart to show the **Daily sales of a grocery store**.
 
 The chart will look as shown below:
 

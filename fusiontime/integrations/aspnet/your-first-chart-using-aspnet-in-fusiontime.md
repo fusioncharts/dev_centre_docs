@@ -75,7 +75,7 @@ The data for the above chart is shown in the table below:
 | 06-Feb-11 | 4667  |
 | 07-Feb-11 | 1064  |
 
-FusionCharts accepts a `DataTable` as the data source. `DataTable` is a part of `DataStore`, which is a tabular representation of the data. To create the `DataTable`, you need to provide the following:
+FusionTime accepts a `DataTable` as the data source. `DataTable` is a part of `DataStore`, which is a tabular representation of the data. To create the `DataTable`, you need to provide the following:
 
 * `schema` - which defines the properties of the columns.  
 
