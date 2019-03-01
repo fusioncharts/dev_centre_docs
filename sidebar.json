@@ -1880,6 +1880,22 @@
           {
             "title": "Create a chart in Ember",
             "path": "/fusiontime/integrations/ember/your-first-chart-using-ember-in-fusiontime"
+          },
+          {
+            "title": "Create a chart in PHP",
+            "path": "/fusiontime/integrations/php/your-first-chart-using-php-in-fusiontime"
+          },
+          {
+            "title": "Create a chart in Java",
+            "path": "/fusiontime/integrations/java/your-first-chart-using-java-in-fusiontime"
+          },
+          {
+            "title": "Create a chart in ASP.NET",
+            "path": "/fusiontime/integrations/aspnet/your-first-chart-using-aspnet-in-fusiontime"
+          },
+          {
+            "title": "Create a chart in Django",
+            "path": "/fusiontime/integrations/django/your-first-chart-using-django-in-fusiontime"
           }
         ]
       },
