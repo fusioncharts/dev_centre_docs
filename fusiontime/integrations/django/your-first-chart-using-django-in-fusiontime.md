@@ -16,15 +16,15 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 To create a chart in a web app developed using Django, download the following wrappers and frameworks in your system:
 
-Django Framework - <<[Link](https://www.djangoproject.com/download/)>>
+Django Framework - [Link](https://www.djangoproject.com/download/)
 
-FusionCharts Library - <<[Link](https://www.fusioncharts.com/download/fusioncharts-suite-xt)>>
+FusionCharts Library - [Link](https://www.fusioncharts.com/download/fusioncharts-suite-xt)
 
-FusionCharts Django wrapper - <<[Link](https://www.fusioncharts.com/django-charts/)>>
+FusionCharts Django wrapper - [Link](https://www.fusioncharts.com/django-charts/)
 
 Note that the `FusionCharts Django` wrapper requires Python 2.7 or higher.
 
-Step 1: Create a project
+**Step 1:** Create a project
 
 To create a project, follow the steps given below:
 
@@ -32,13 +32,11 @@ To create a project, follow the steps given below:
 
 * Run the following command to create a **myproject** directory in your preferred directory.
 
-```
+```bash
 django-admin startproject myproject
 ```
 
- 
-
-Step 2: Add the dependencies
+**Step 2:** Add the dependencies
 
 Now, we will add `Django wrapper` and FusionCharts JavaScript files required to render the charts in the web application. Steps to add the files are given below:
 
@@ -50,82 +48,64 @@ Now, we will add `Django wrapper` and FusionCharts JavaScript files required to 
 
 * Copy all JavaScript files extracted from the downloaded FusionCharts library into the **template/static** folder.
 
-* Now, map the JavaScript files by creating an HTML file, `index.html` in the template folder. Include the `fusioncharts.js` and `fusioncharts.theme.fusion.js` using `<script>` tags from the downloaded package in this file.
+* Now, map the JavaScript files by creating an HTML file, `index.html` in the template folder. Include the `fusioncharts.js` and `fusioncharts.timeseries.js` using `<script>` tags from the downloaded package in this file.
 
 Install FusionCharts and the Django wrapper component using any of the following methods:
 
-### CDN
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-* Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder.
-
-* Include the FusionCharts JavaScript files, which can be downloaded from[ here](https://www.fusioncharts.com/download/fusioncharts-suite).
-
-* Include the FusionCharts theme file to apply the style to the charts.
-
-Use the script given below to include the files:
-
-``` 
+<div class='tab cdn-tab active'>
+<pre><code class="language-php">
 {% load static %}
-
 // Include FusionCharts core file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+// Include FusionTime file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
 
-<script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-// Include FusionCharts Theme file
-
-<script type="text/javascript" src="[http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js](http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js)"></script>
-```
-
-### Local Files
-
-* Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder.
-
-* Include the FusionCharts JavaScript files, which can be downloaded from[ here](https://www.fusioncharts.com/download/fusioncharts-suite).
-
-* Include the FusionCharts theme file to apply the style to the charts.
-
-Use the script given below to include the files:
-
-``` 
+<div class='tab local-tab'>
+<pre><code class="language-php">
 {% load static %}
-
 // Include FusionCharts core file
-
-<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-
-// Include FusionCharts Theme file
-
-<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
-```
+&lt;script type="text/javascript" src="{% static "fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script&gt;
+// Include FusionTime file
+&lt;script type="text/javascript" src="{% static "fusioncharts/latest/fusioncharts.timeseries.js" %}"&gt;&lt;/script&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+</div>
+</div>
 
 After including the paths of all the dependencies required, update the static files by running the following command:
 
-```
+```bash
 Python manage.py collectStatic
 ```
 
- 
-
 In the `settings.py` file, update the location of the templates:
 
-```
+```bash
 'DIRS': ['myproject/templates']
 ```
-
- 
 
 That completes the installation of **FusionCharts** Suite and the **Django wrapper**.
 
 ## Create Your First Chart
 
-Now that you have installed FusionTime and `FusionCharts JSP` wrapper, let us build the first chart to show the "Daily sales of a grocery store". 
+Now that you have installed FusionTime and `FusionCharts JSP` wrapper, let us build the first chart to show the **Daily sales of a grocery store**.
 
 The chart will look as shown below:
 
-<<Live chart>>
+{% embed_ftChart integrations-django %}
 
 The data for the above chart is shown in the table below:
-
 
 | Time      | Sales |
 | --------- | ----- |
@@ -158,23 +138,14 @@ To define the schema, let's create a `schema.json` file and copy the following c
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
 ```json
-
-[{
-
+Let schema = [{
     "name": "Time",
-
     "type": "date",
-
     "format": "%-m/%-d/%Y"
-
 }, {
-
     "name": "Sales",
-
     "type": "number"
-
 }]
-
 ```
 
 In the above code:
@@ -193,67 +164,40 @@ Now that we have the schema ready, let's work on the data.
 
 ### Create the `data`
 
-Data can be provided either in JSON format or 2D array format. We will use the 2D array format.
+[Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-aspnet/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
-
-[
-
+var data = [
     [
-
         "1/4/2011",
-
         16.448
-
     ],
-
     [
-
         "1/5/2011",
-
         272.736
-
     ],
-
     [
-
         "1/5/2011",
-
         11.784
-
     ],
-
     [
-
         "1/5/2011",
-
         3.54
-
     ],
-
     [
-
         "1/6/2011",
-
         19.536
-
     ],
-
     [
-
         "1/7/2011",
-
         2573.82
-
     ],
-
 ]
-
 ```
 
-Create a new `data.json` file, and copy the above code there. 
+Create a new `data.json` file, and copy the above code there.
 
->** **It is not mandatory to create a `data.json` file. You can also include the data in your HTML file.
+> It is not mandatory to create a `data.json` file. You can also include the data in your HTML file.
 
 In the above code:
 
@@ -275,27 +219,27 @@ Now, let's create the files to render the above chart.
 
 Once you have the `data` and the `schema` ready, create a `.py` file and copy the following code:
 
-```
+```javascript
 from ..fusioncharts import FusionCharts
 from ..fusioncharts import FusionTable
-from ..fusioncharts import TimeSeries|
+from ..fusioncharts import TimeSeries
 ```
 
 In the above code, you can see how to include the `fusioncharts.py` file and import the classes, which have the functions needed to embed the charts in an HTML page.
 
 Basic code to render a chart:
 
-```
+```javascript
 fusionTable = FusionTable(schema, data)
 timeSeries = TimeSeries(fusionTable)
- 
+
 # Wrapper constructor parameters
 # charttype, chartID, width, height, renderAt, data format, TimeSeries object
 
 fcChart = FusionCharts("timeseries", "MyFirstChart" , "700", "450", "chart-container", "json", timeSeries)
- 
-#Returning complete JavaScript and HTML code, which is used to generate chart in the browsers.
-return render(request,'index.html', {'output':fcChart.render()})|
+
+# Returning complete JavaScript and HTML code, which is used to generate chart in the browsers.
+return render(request,'index.html', {'output':fcChart.render()})
 ```
 
 In the above code:
@@ -318,7 +262,4 @@ In the above code:
 
 * The `render()` member function of the `FusionCharts` wrapper has been used to render the chart.
 
- 
-
-That's it! Your first chart in Django using FusionTime is ready.
-
+That's it! Your first chart in **Django** using FusionTime is ready.
