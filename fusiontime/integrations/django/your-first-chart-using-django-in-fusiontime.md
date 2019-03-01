@@ -16,11 +16,9 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 To create a chart in a web app developed using Django, download the following wrappers and frameworks in your system:
 
-Django Framework - [Link](https://www.djangoproject.com/download/)
-
-FusionCharts Library - [Link](https://www.fusioncharts.com/download/fusioncharts-suite-xt)
-
-FusionCharts Django wrapper - [Link](https://www.fusioncharts.com/django-charts/)
+- Django Framework - [Link](https://www.djangoproject.com/download/)
+- FusionCharts Library - [Link](https://www.fusioncharts.com/download/fusioncharts-suite-xt)
+- FusionCharts Django wrapper - [Link](https://www.fusioncharts.com/django-charts/)
 
 Note that the `FusionCharts Django` wrapper requires Python 2.7 or higher.
 

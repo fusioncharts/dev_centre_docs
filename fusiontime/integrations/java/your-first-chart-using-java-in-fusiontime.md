@@ -10,11 +10,9 @@ We have built a simple `FusionCharts server-side JSP` wrapper, which provides bi
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the `**FusionCharts v13.3.3-sr.1`** to get access to FusionTime. Note that you will also need Java 6 or later version to use FusionTime.
+Since FusionTime is distributed along with FusionCharts Suite, download/install the `FusionCharts v13.3.3-sr.1` to get access to FusionTime. Note that you will also need Java 6 or later version to use FusionTime.
 
-Install FusionCharts and the JSP wrapper component using any of the following methods:
-
-### CDN
+Install FusionCharts and the JSP wrapper component using following steps:
 
 * Copy and paste the `fusioncharts.java` file from `integrations > java > fusioncharts-wrapper` in your project folder.
 
@@ -22,45 +20,46 @@ Install FusionCharts and the JSP wrapper component using any of the following me
 
 * Include the FusionCharts theme file to apply the style to the charts.
 
-Use the script given below to include the files:
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-```
+<div class='tab cdn-tab active'>
+<pre><code class="language-java">
 // Include FusionCharts core file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
-<script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+// Include FusionTime file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.fusiontime.js"&gt;&lt;/script>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab local-tab'>
+<pre><code class="language-java">
+// Include FusionCharts core file
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
 // Include FusionCharts Theme file
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.fusiontime.js"&gt;&lt;/script&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+</div>
+</div>
 
-<script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-```
-
-### Local Files
-
-* Copy and paste the `fusioncharts.java` file from `integrations > java > fusioncharts-wrapper` in your project folder.
-
-* Include the FusionCharts JavaScript files, which can be downloaded from[ here](https://www.fusioncharts.com/download/fusioncharts-suite).
-
-* Include the FusionCharts theme file to apply the style to the charts.
-
-Use the script given below to include the files:
-
-```
-// Include FusionCharts core file
-
-<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-
-// Include FusionCharts Theme file
-
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-```
+That completes the installation of FusionCharts and the `jsp-fusioncharts` component.
 
 ## Create Your First Chart
 
-Now that you have installed FusionTime and `FusionCharts JSP` wrapper, let us build the first chart to show the "Daily sales of a grocery store". 
+Now that you have installed FusionTime and `FusionCharts JSP` wrapper, let us build the first chart to show the **Daily sales of a grocery store**.
 
 The chart will look as shown below:
 
-<<Live chart>>
+{% embed_ftChart integrations-java %}
 
 The data for the above chart is shown in the table below:
 
@@ -96,19 +95,12 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 ```json
 [{
-
     "name": "Time",
-
     "type": "date",
-
     "format": "%-m/%-d/%Y"
-
 }, {
-
     "name": "Sales",
-
     "type": "number"
-
 }]
 ```
 
@@ -133,64 +125,37 @@ Data can be provided either in JSON format or 2D array format. We will use the 2
 Data for the above chart has been used in the data object defined below:
 
 ```json
-
 [
-
     [
-
         "1/4/2011",
-
         16.448
-
     ],
-
     [
-
         "1/5/2011",
-
         272.736
-
     ],
-
     [
-
         "1/5/2011",
-
         11.784
-
     ],
-
     [
-
         "1/5/2011",
-
         3.54
-
     ],
-
     [
-
         "1/6/2011",
-
         19.536
-
     ],
-
     [
-
         "1/7/2011",
-
         2573.82
-
     ],
-
 ]
-
 ```
 
 Create a new `data.json` file, and copy the above code there. 
 
->** **It is not mandatory to create a `data.json` file. You can also include the data in your HTML file.
+> It is not mandatory to create a `data.json` file. You can also include the data in your HTML file.
 
 In the above code:
 
@@ -212,9 +177,8 @@ Now, let's create the files to render the above chart.
 
 Once you have the `data` and the `schema` ready, create a `.jsp` file and copy the following code:
 
-```
-FusionCharts.FusionTable fusionTable = new FusionCharts.FusionTable(schema, data);
-		
+```javascript
+FusionCharts.FusionTable fusionTable = new FusionCharts.FusionTable(schema, data);	
 FusionCharts.TimeSeries timeSeries = new FusionCharts.TimeSeries(fusionTable);
 
 // Wrapper constructor parameters
@@ -222,8 +186,8 @@ FusionCharts.TimeSeries timeSeries = new FusionCharts.TimeSeries(fusionTable);
 
 FusionCharts chart = new FusionCharts("timeseries", "MyFirstChart" , "700", "450", "chart-container", "json", timeSeries);
 
- // Render the chart
- chart.render();|
+// Render the chart
+chart.render();|
  ```
 
 In the above code:
@@ -244,8 +208,6 @@ In the above code:
 
     * Value of the time-series object has been set to `timeSeries`.
 
-* The `render()` member function of the `FusionCharts` wrapper has been used to render the chart.
+* The `render()` member function of the `jsp-fusioncharts` wrapper has been used to render the chart.
 
- 
 That's it! Your first chart in Java using FusionTime is ready.
-
