@@ -1880,6 +1880,14 @@
           {
             "title": "Create a chart in Ember",
             "path": "/fusiontime/integrations/ember/your-first-chart-using-ember-in-fusiontime"
+          },
+          {
+            "title": "Create a chart in ASP.NET",
+            "path": "/fusiontime/integrations/aspnet/your-first-chart-using-aspnet-in-fusiontime"
+          },
+          {
+            "title": "Create a chart in Ember",
+            "path": "/fusiontime/integrations/ember/your-first-chart-using-ember-in-fusiontime"
           }
         ]
       },
