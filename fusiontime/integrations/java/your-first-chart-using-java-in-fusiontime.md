@@ -18,7 +18,7 @@ Install FusionCharts and the JSP wrapper component using following steps:
 
 * Include the FusionCharts JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
 
-* Include the FusionTime file to render time-series charts.
+* Include the **FusionTime** file to render time-series charts.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
