@@ -10,7 +10,7 @@ We have built a simple `FusionCharts server-side ASP.NET` wrapper, which provide
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the `**FusionCharts v13.3.3-sr.1`** to get access to FusionTime. Note that you will also need .NET Framework 3.5 or later version to use FusionTime.
+Since FusionTime is distributed along with FusionCharts Suite, download/install the `FusionCharts v13.3.3-sr.1` to get access to FusionTime. Note that you will also need .NET Framework 3.5 or later version to use FusionTime.
 
 > The **FusionCharts ASP.NET server-side wrapper** requires **.NET Framework 3.5** or higher.
 
@@ -46,7 +46,7 @@ The consolidated code is shown below:
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
 // Include FusionTime file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -209,4 +209,4 @@ In the above code:
 
     * The time-series object `timeSeries` has been provided.
 
-That's it! Your first chart in ASP.NET using FusionTime is ready.
+That's it! Your first chart in **ASP.NET** using FusionTime is ready.
