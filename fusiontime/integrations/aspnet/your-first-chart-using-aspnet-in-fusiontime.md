@@ -209,4 +209,6 @@ In the above code:
 
     * The time-series object `timeSeries` has been provided.
 
+* The `render()` function has been applied to the `Literal1` container to render the chart.
+
 That's it! Your first chart in **ASP.NET** using FusionTime is ready.
