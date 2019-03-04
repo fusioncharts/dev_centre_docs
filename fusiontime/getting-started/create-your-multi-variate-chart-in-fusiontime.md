@@ -6,9 +6,9 @@ heading: Create Multivariate Chart
 
 In FusionTime, you can create a chart with multiple canvases showing different measures in each canvas.
 
-In this article, we'll create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple columns with measures (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis](/fusiontime/fusiontime-component/time-axis) (x-axis).
+In this article, we will create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple columns with measures (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis](/fusiontime/fusiontime-component/time-axis) (X-axis).
 
-The multivariate chart will look like as shown below:
+The multivariate chart will look as shown below:
 
 {% embed_ftChart online-sales-multi-variate %}
 
@@ -125,7 +125,7 @@ In the above code:
 
 We are all set with our data to create the chart.
 
-> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the `average` function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](/fusiontime/getting-started/change-default-aggregation).
 
 Now, let's create the `.html` file to render the above chart.
 
@@ -222,7 +222,7 @@ That's it! Your first multivariate chart is ready.
 
 Now, let's see an example where out of the above four columns we will render the chart using the time column and the data of **Sales** and **Quantity**.
 
-The chart to showcase the quantity sold will look like as shown below:
+The chart to showcase the quantity sold will look as shown below:
 
 {% embed_ftChart online-sales-single-series-multiple-measures %}
 
