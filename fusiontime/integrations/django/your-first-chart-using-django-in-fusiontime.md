@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a chart in Django
 ---
 
-FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features, which enhance the experience of exploring and understanding time series data.
+FusionTime is a JavaScript charting library that helps you visualize and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features, which enhance the experience of exploring and understanding time series data.
 
 We have built a simple `FusionCharts Django` wrapper, which provides bindings for FusionTime. The `FusionCharts Django` wrapper allows you to easily add interactive time-series charts to any Django project.
 
