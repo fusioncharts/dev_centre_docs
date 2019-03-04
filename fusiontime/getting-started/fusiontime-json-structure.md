@@ -4,7 +4,7 @@ description: This article elaborates on the FusionTime JSON structure.
 heading: FusionTime JSON structure
 ---
 
-Unlike FusionCharts which is controlled by a single JSON data source, that is, the same source contains data to plot, functional settings and cosmetic properties, FusionTime comes with a different approach. In FusionTime, the data is handled by the data layer (`DataStore` and `DataTable`), whereas, the functional and cosmetic settings are specified separately.
+Unlike FusionCharts which is controlled by a single JSON data source, that is, the same source contains data to plot, functional settings and cosmetic properties, FusionTime comes with a different approach. In FusionTime, the data is handled by the data layer (`DataStore` and `DataTable`), whereas the functional and cosmetic settings are specified separately.
 
 In this article, we will discuss the JSON structure to set the functional and cosmetic properties of different components FusionTime.
 
@@ -38,16 +38,14 @@ new FusionCharts({
     });
 ```
 
-Similarly, to configure the y-axis in FusionTime you need to create a `yAxis` object and define the y-axis related properties within the object. Refer to the code below:
+Similarly, to configure the Y-axis in FusionTime you need to create a `yAxis` object and define the Y-axis related properties within the object. Refer to the code below:
 
-```
+```javascript
 new FusionCharts({
         type: 'timeseries',
-        ...
         dataSource: {
             "yAxis": [{
                 "plot": {
-                    ...
                 },
             }],
     });
@@ -74,10 +72,9 @@ FusionTime allows you to define the cosmetic properties using Styles in two diff
 
 - Define a `StyleDefinition` object and set the style properties within the object. You can then use the style properties to style any chart component. Refer to the code below:
 
-```
+```javascript
 new FusionCharts({
         type: 'timeseries',
-        ...
         dataSource: {
             styleDefinition: {
                 "small-text": {
