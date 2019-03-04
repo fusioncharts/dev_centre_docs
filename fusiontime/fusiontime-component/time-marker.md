@@ -39,7 +39,7 @@ A sample chart with a time marker is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-1 %}
 
-To create repeatable time instance markers follw the stpes below:
+To create repeatable time instance markers, follow the steps given below:
 
 - Set the above attributes and the specify the following attribute:
   - Within the `timeMarker` object create the `repeat` object to define the frequency, at which the cyclic time marker will be repeated.

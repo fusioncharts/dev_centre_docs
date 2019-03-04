@@ -14,7 +14,7 @@ The image below shows the data marker on a time series chart:
 
 ## Create Data Markers
 
-To create data Markers follow the setps given below:
+To create data markers, follow the steps given below:
 
 - Create a `dataMarker` object.
 

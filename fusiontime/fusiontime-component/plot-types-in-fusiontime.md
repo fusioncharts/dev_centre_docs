@@ -22,7 +22,7 @@ FusionTime supports the following plot types:
 By default, the chart renders with a line plot. However, you can specify the plot type in a chart, using the `plotType` property inside the `yAxis` object. Refer to the code below:
 
 ```javascript
-yaxis: {
+yAxis: {
     "plot": {
         "value": "Sales",
         "type": "column"
@@ -118,7 +118,7 @@ Let's create a chart showing NASDAQ Composite Index. The time series chart looks
 
 You can add CSS styling to set the cosmetic properties of the data plots. To set the styling, instead of creating a separate CSS file, you can define the styling using `StyleDefinition` object or setting the style object in a particular object of the component.
 
-Applying CSS styling to the data plots of the chart is a bit different from the other components. Although the `style` object supports any of the SVG attributes, the color of the data plots cannot be changed from their `style` sections. The color can be customized using the `palelleColors` attribute within the `chart` object.
+Applying CSS styling to the data plots of the chart is a bit different from the other components. Although the `style` object supports any of the SVG attributes, the color of the data plots cannot be changed from their `style` sections. The color can be customized using the `paletteColors` attribute within the `chart` object.
 
 Data plots can either be styled:
 
@@ -249,9 +249,9 @@ The list of all the plot types and their respective sub-parts are listed below:
 }
 ```
 
-### Y-Axis Configuration
+### Y-axis Configuration
 
-In FusionTime, you can also style the data plots specifically. These styling will be scoped to only the set of plots for which the style has been defined. In the `yAxis` object the `style` object is defined under the `plot` object. The rest of the steps are the same as the plot configuration method.
+In FusionTime, you can also style specific data plots. These styling will be scoped to only the set of plots for which the style has been defined. In the `yAxis` object the `style` object is defined under the `plot` object. The rest of the steps are the same as the plot configuration method.
 
 **Syntax**:
 
