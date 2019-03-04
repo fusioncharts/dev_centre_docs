@@ -6,7 +6,7 @@ heading: Add Multiple Data Plots
 
 Previously, we have learned how to create a [simple chart](/fusiontime/getting-started/create-your-first-chart-in-fusiontime) with one data plot. FusionTime allows you to visualize charts with multiple plots.  
 
-In this article, we'll create our first chart with multiple plots which will compare online sales of SuperStore in the **US** and **India**. 
+In this article, we'll create our first chart with multiple plots which will compare online sales of SuperStore in the **US** and **India**.
 
 The chart is shown below:
 
@@ -42,6 +42,7 @@ let schema = [{
     "type": "number"
 }]
 ```
+
 To understand the `schema.json` in details click [here](/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
 
 ## Create `data`
@@ -82,6 +83,7 @@ let data = [
     ]
 ]
 ```
+
 To view the full data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-multi-series/data.json)
 
 In the above code:
@@ -214,4 +216,4 @@ The above code is similar to that of the [create your first chart](/fusiontime/g
 
 That's it! Your chart with multiple plots is ready.
 
-Next, we will discuss about the FusionTime [JSON structure](/fusiontime/getting-started/fusiontime-json-structure).
+Next, we will discuss the FusionTime [JSON structure](/fusiontime/getting-started/fusiontime-json-structure).

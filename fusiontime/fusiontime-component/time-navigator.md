@@ -42,7 +42,7 @@ You can pan the active window across the time navigator and see the data plots i
 
 ## Active window labels
 
-When you hover the mouse pointer on the active window of the time navigator, the time labels appear on the both the ends of the active window showing the start date/time and the end date/time of the plots in the main chart canvas shown above. You can drag these labels to change the active window.
+When you hover the mouse pointer over the active window of the time navigator, the time labels appear on both ends of the active window. These labels show the start date/time and the end date/time of the plots in the main chart canvas shown above. You can drag these labels to change the active window.
 
 Refer to the image below:
 

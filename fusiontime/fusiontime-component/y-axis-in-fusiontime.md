@@ -29,7 +29,7 @@ yAxis: [{
 }],
 ```
 
-In the above code an array has been created with two objects specifying y-axis of canvases in a chart.
+In the above code an array has been created with two objects specifying Y-axes of canvases in a chart.
 
 An example of an array of strings is shown in the code below:
 
@@ -47,7 +47,7 @@ Refer to the chart below:
 
 ## Y-axis on Right
 
-By default, the position of the y-axis is set to left. You can customize the position of the y-axis by setting the value of `orientation` attribute to `right`. This will render a chart with y-axis on right.
+By default, the position of the Y-axis is set to left. You can customize the position of the Y-axis by setting the value of `orientation` attribute to `right`. This will render a chart with Y-axis on right.
 
 The code is given below:
 

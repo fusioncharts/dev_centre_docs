@@ -30,7 +30,7 @@ Let's take an example of the styling on the **caption** of the chart. The captio
 }
 ```
 
-The **caption** in the chart looks like as shown below:
+The **caption** in the chart looks as shown below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-styledefinition-normal-caption.png" alt="Export Time Series" width="200" height="120">
 
@@ -52,7 +52,7 @@ Now, let's define a `txt-red` style and apply on the caption of the chart.
 }
 ```
 
-After applying the text color, the caption looks like as shown below:
+After applying the text color, the caption looks as shown below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-styledefinition-colored-caption.png" alt="Export Time Series" width="200" height="120">
 
@@ -77,7 +77,7 @@ Let's also define a `txt-big` style to specify the font size of the caption.
 }
 ```
 
-The caption looks like as shown below:
+The caption looks as shown below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-styledefinition-colored-sized-caption.png" alt="Export Time Series" width="200" height="120">
 
@@ -163,7 +163,7 @@ You can apply style to a subcaption is the same way as caption.
 
 ## X-Axis
 
-Styling can be applied to three elements of the x-axis:
+Styling can be applied to three elements of the X-axis:
 
 - Labels
 
@@ -189,7 +189,7 @@ Style applied to `tick marks` and `label` is directly applied to the major tick 
 
 ## Y-Axis
 
-Styling can be applied to four elements of y-axis:
+Styling can be applied to four elements of Y-axis:
 
 - Tick marks
 
@@ -199,7 +199,7 @@ Styling can be applied to four elements of y-axis:
 
 - Grid Line
 
-The title of the y-axis and the grid lines appear against the ticks on the canvas.
+The title of the Y-axis and the grid lines appear against the ticks on the canvas.
 
 **Syntax**:
 
@@ -295,7 +295,7 @@ Data plots can either be styled:
 
 - using **plot configuration**
 
-- or by **y-axis configuration**
+- using **Y-axis configuration**
 
 ### Plot Configuration
 
@@ -311,7 +311,7 @@ Style defined using `plotConfig` object are scoped to the entire chart, i.e., if
 }
 ```
 
-You can also apply style across all the chart types using `generic` object within the `plotConfig` object. It applies the style to any chart type even in multiple canvases.
+You can also apply style across all the chart types using `generic` object within the `plotConfig` object. It applies the style to any chart type, even in multiple canvases.
 
 **Syntax**:
 
@@ -360,15 +360,15 @@ Chart canvas refers to the area in which the chart data is plotted, excluding th
 }
 ```
 
-In the above code, `canvas` attribute is applied in the `style` object to apply styling the canvas of the chart.
+In the above code, the `canvas` attribute is applied in the `style` object to apply styling to the canvas of the chart.
 
 > Canvas of the chart can only be styled from the common style definition in `styleDefinition` object.
 
 ## Chart Background
 
-A chart's background refers to the whole area or the container on which it is drawn.
+A chart's background refers to the whole area, or the container in which it is drawn.
 
-Syntax:
+**Syntax:**
 
 ```javascript
 {
