@@ -4,9 +4,23 @@ description: List of changes made in recent release.
 heading: FusionExport Release Notes
 ---
 
-## v1.0.1
+<h2 class="sub-heading">Version 1.0.3</h2>
 
-#### Improvements
+<p class="release-date">27th February, 2019</p>
+
+<h4 class="sub-heading">Fixes</h4>
+
+- **Annotation Object Merge :** When annotations were adding in the configurations, its behaviour was unpredictable. This issue has now been fixed.
+
+<h2 class="sub-heading">Version 1.0.2</h2>
+
+<p class="release-date">7th January, 2019</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- **Support for Windows Service:** Windows users now have a reason to cheer because we now support Windows Service as well. Now manage FusionExport on your Windows Server more efficiently.
+
+<h4>Improvements</h4>
 
 - **Better feedback messages for API endpoints:** No need to get confused by the stack trace of errors when you visit any of the endpoints on FusionExport server. Get 'human-friendly' messages to figure out the next steps
 
@@ -22,9 +36,11 @@ heading: FusionExport Release Notes
 
 - **Be Transparent:** No, we are not talking about culture but transparent PNGs. FusionExport used to crash while exporting with a transparent background. Worry no more!
 
-## v1.0.0
+<h2 class="sub-heading">Version 1.0.0</h2>
 
-#### New Features
+<p class="release-date">1st October, 2018</p>
+
+<h4 class="sub-heading">New Features</h4>
 
 - Export image quality control.
 
@@ -34,7 +50,7 @@ heading: FusionExport Release Notes
 
 - Progress bar support.
 
-#### Improvements
+<h4>Improvements</h4>
 
 - SDKs and CLI can communicate with the same server.
 
@@ -54,7 +70,7 @@ heading: FusionExport Release Notes
 
 - FusionExport Server can now do the job of both FusionExport Desktop and FusionExport Web Service with a simple CLI interface.
 
-#### Removals
+<h4>Removals</h4>
 
 - FusionExport Desktop.
 
