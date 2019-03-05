@@ -32,7 +32,7 @@ To create data markers, follow the steps given below:
 
 Refer to the code given below:
 
-```
+```javascript
 dataMarker: [{
     seriesName: "Interest Rate",
     time: "Mar-1980",
