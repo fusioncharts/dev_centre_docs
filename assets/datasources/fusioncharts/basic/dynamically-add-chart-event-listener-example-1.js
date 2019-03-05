@@ -81,6 +81,8 @@
             e.data.container.appendChild(buttonWrapper);
             button1.style.margin = "5px";
             button2.style.margin = "5px";
+            button1.style.position = "relative";
+            button2.style.position = "relative";
 
             function dataPlotClickListener(e, a) {
                 var categoryLabel = e.data.categoryLabel;
