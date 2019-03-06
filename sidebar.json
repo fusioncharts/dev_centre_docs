@@ -1849,6 +1849,10 @@
             "path": "/fusiontime/getting-started/style-definition"
           },
           {
+            "title": "Themes",
+            "path": "/fusiontime/getting-started/introduction-to-themes-in-fusiontime"
+          },
+          {
             "title": "Export Charts",
             "path": "/fusiontime/getting-started/export-charts-fusiontime"
           }
