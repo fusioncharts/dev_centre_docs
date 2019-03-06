@@ -24,6 +24,14 @@ A Column 2D chart showcasing the 3 themes mentioned above is given below:
 
 {% embed_ftChart themes-in-fusiontime %}
 
-The code to render the
+The code to apply theme to a time-series chart is given below:
 
-In the above chart, click any **radio** button, to see how the look and feel of the chart change with each theme.
+```javascript
+{
+    chart: {
+        "theme": "fusion"
+    }
+}
+```
+
+In the above code the value of the `theme` attribute has been set to `fusion`. To apply `gammel` or `candy` to your chart, set the value of `theme` attribute under `chart` object.
