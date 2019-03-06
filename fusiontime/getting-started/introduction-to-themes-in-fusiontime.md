@@ -6,7 +6,7 @@ heading: Themes
 
 FusionTime allows you to set the visual appearance, behavior and intelligence aspects of the time-series chart using **themes**.
 
-In this article we will discuss how to apply themes to a time-series chart.
+In this article, we will discuss how to apply themes to a time-series chart.
 
 In a theme file, you can centralize the following aspects of a chart:
 
