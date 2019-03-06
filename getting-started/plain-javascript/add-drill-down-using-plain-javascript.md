@@ -18,14 +18,14 @@ Once you implement these steps, the FusionCharts JavaScript class takes care of 
 
 ### Features of the FusionCharts JavaScript Class
 
-* Automatically creates and shows a detailed descendant chart when you click on the corresponding data plot item linked in the parent chart
+- Automatically creates and shows a detailed descendant chart when you click on the corresponding data plot item linked in the parent chart
 
-* Clones all chart configuration settings from the parent chart to create the descendant charts
+- Clones all chart configuration settings from the parent chart to create the descendant charts
 
-* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink) function
-* Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
+- Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink) function
+- Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
-* Supports drill-down to an unlimited number of levels
+- Supports drill-down to an unlimited number of levels
 
 As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
 
@@ -39,161 +39,184 @@ Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/) to edit the above chart
 
 The code to render the above chart is given below:
 
-```
+```javascript
 // Include the core fusioncharts file from core
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from "fusioncharts/core";
 
 // Include the chart from viz folder
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
-import Column2D from 'fusioncharts/viz/column2d';
+import Column2D from "fusioncharts/viz/column2d";
 
 // Include the fusion theme
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-    
+import FusionTheme from "fusioncharts/themes/es/fusioncharts.theme.fusion";
+
 // Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
-    
+
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
-    type: 'column2d',
-    renderAt: 'chart-container',
-    width: '400',
-    height: '300',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "Top 3 Juice Flavors",
-            "subcaption": "Last year",
-            "xaxisName": "Flavor",
-            "yaxisName": "Amount (In USD)",
-            "numberPrefix": "$",
-            "theme": "fusion",
-            "rotateValues": "0"
-        },
-        "data": [{
-            "label": "Apple",
-            "value": "810000",
-            "link": "newchart-xml-apple"
-        }, {
-            "label": "Cranberry",
-            "value": "620000",
-            "link": "newchart-xml-cranberry"
-        }, {
-            "label": "Grapes",
-            "value": "350000",
-            "link": "newchart-xml-grapes"
-        }],
-        "linkeddata": [{
-            "id": "apple",
-            "linkedchart": {
-                "chart": {
-                    "caption": "Apple Juice - Quarterly Sales",
-                    "subcaption": "Last year",
-                    "xaxisname": "Quarter",
-                    "yaxisname": "Amount (In USD)",
-                    "numberprefix": "$",
-                    "theme": "fusion",
-                    "rotateValues": "0"
-                },
-                "data": [{
-                    "label": "Q1",
-                    "value": "157000"
-                }, {
-                    "label": "Q2",
-                    "value": "172000"
-                }, {
-                    "label": "Q3",
-                    "value": "206000"
-                }, {
-                    "label": "Q4",
-                    "value": "275000",
-                    "rotateValues": "0"
-                }]
+  type: "column2d",
+  renderAt: "chart-container",
+  width: "400",
+  height: "300",
+  dataFormat: "json",
+  dataSource: {
+    chart: {
+      caption: "Top 3 Juice Flavors",
+      subcaption: "Last year",
+      xaxisName: "Flavor",
+      yaxisName: "Amount (In USD)",
+      numberPrefix: "$",
+      theme: "fusion",
+      rotateValues: "0"
+    },
+    data: [
+      {
+        label: "Apple",
+        value: "810000",
+        link: "newchart-xml-apple"
+      },
+      {
+        label: "Cranberry",
+        value: "620000",
+        link: "newchart-xml-cranberry"
+      },
+      {
+        label: "Grapes",
+        value: "350000",
+        link: "newchart-xml-grapes"
+      }
+    ],
+    linkeddata: [
+      {
+        id: "apple",
+        linkedchart: {
+          chart: {
+            caption: "Apple Juice - Quarterly Sales",
+            subcaption: "Last year",
+            xaxisname: "Quarter",
+            yaxisname: "Amount (In USD)",
+            numberprefix: "$",
+            theme: "fusion",
+            rotateValues: "0"
+          },
+          data: [
+            {
+              label: "Q1",
+              value: "157000"
+            },
+            {
+              label: "Q2",
+              value: "172000"
+            },
+            {
+              label: "Q3",
+              value: "206000"
+            },
+            {
+              label: "Q4",
+              value: "275000",
+              rotateValues: "0"
             }
-        }, {
-            "id": "cranberry",
-            "linkedchart": {
-                "chart": {
-                    "caption": "Cranberry Juice - Quarterly Sales",
-                    "subcaption": "Last year",
-                    "xaxisname": "Quarter",
-                    "yaxisname": "Amount (In USD)",
-                    "numberprefix": "$",
-                    "theme": "fusion",
-                    "rotateValues": "0"
-                },
-                "data": [{
-                    "label": "Q1",
-                    "value": "102000"
-                }, {
-                    "label": "Q2",
-                    "value": "142000"
-                }, {
-                    "label": "Q3",
-                    "value": "187000"
-                }, {
-                    "label": "Q4",
-                    "value": "189000"
-                }]
+          ]
+        }
+      },
+      {
+        id: "cranberry",
+        linkedchart: {
+          chart: {
+            caption: "Cranberry Juice - Quarterly Sales",
+            subcaption: "Last year",
+            xaxisname: "Quarter",
+            yaxisname: "Amount (In USD)",
+            numberprefix: "$",
+            theme: "fusion",
+            rotateValues: "0"
+          },
+          data: [
+            {
+              label: "Q1",
+              value: "102000"
+            },
+            {
+              label: "Q2",
+              value: "142000"
+            },
+            {
+              label: "Q3",
+              value: "187000"
+            },
+            {
+              label: "Q4",
+              value: "189000"
             }
-        }, {
-            "id": "grapes",
-            "linkedchart": {
-                "chart": {
-                    "caption": "Grape Juice - Quarterly Sales",
-                    "subcaption": "Last year",
-                    "xaxisname": "Quarter",
-                    "yaxisname": "Amount (In USD)",
-                    "numberprefix": "$",
-                    "theme": "fusion",
-                    "rotateValues": "0"
-                },
-                "data": [{
-                    "label": "Q1",
-                    "value": "45000"
-                }, {
-                    "label": "Q2",
-                    "value": "72000"
-                }, {
-                    "label": "Q3",
-                    "value": "95000"
-                }, {
-                    "label": "Q4",
-                    "value": "108000"
-                }]
+          ]
+        }
+      },
+      {
+        id: "grapes",
+        linkedchart: {
+          chart: {
+            caption: "Grape Juice - Quarterly Sales",
+            subcaption: "Last year",
+            xaxisname: "Quarter",
+            yaxisname: "Amount (In USD)",
+            numberprefix: "$",
+            theme: "fusion",
+            rotateValues: "0"
+          },
+          data: [
+            {
+              label: "Q1",
+              value: "45000"
+            },
+            {
+              label: "Q2",
+              value: "72000"
+            },
+            {
+              label: "Q3",
+              value: "95000"
+            },
+            {
+              label: "Q4",
+              value: "108000"
             }
-        }]
-    }
-});// Render
+          ]
+        }
+      }
+    ]
+  }
+}); // Render
 chartInstance.render();
 ```
 
 1. Included the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
 2. Store the chart configurations in a JSON object. In this JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
-    * Create the JSON/XML data for the parent chart. This is called the parent data source.
-    * Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
+
+   - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the width and height (in pixels).
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of the `dataSource`.
+   - Create the JSON/XML data for the parent chart. This is called the parent data source.
+   - Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
 3. Add a container (instance) for the chart.
 
-
 ### Create linked charts using Data URL method
 
-Specify the `link` attribute (which belongs to the data object) for each data plot to link charts using the data URL method. Every time you click on a data plot, the corresponding linked chart will be rendered. 
+Specify the `link` attribute (which belongs to the data object) for each data plot to link charts using the data URL method. Every time you click on a data plot, the corresponding linked chart will be rendered.
 
 The syntax for the link attribute is:
 
 ```json
 {
-    "chart": {
-        "link": "newchart-dataformat-datasource"        
-    }
+  "chart": {
+    "link": "newchart-dataformat-datasource"
+  }
 }
 ```
 
@@ -209,56 +232,66 @@ The data structure needed to render the parent chart given above using the data 
 
 ```json
 {
-    "chart": {
-        "caption": "Top 3 Juice Flavors",
-        "subcaption": "Last year",
-        "xaxisname": "Flavor",
-        "yaxisname": "Amount (In USD)",
-        "numberprefix": "$",
-        "theme": "fusion",
-        "plottooltext": "$label, $dataValue,  $percentValue"
+  "chart": {
+    "caption": "Top 3 Juice Flavors",
+    "subcaption": "Last year",
+    "xaxisname": "Flavor",
+    "yaxisname": "Amount (In USD)",
+    "numberprefix": "$",
+    "theme": "fusion",
+    "plottooltext": "$label, $dataValue,  $percentValue"
+  },
+  "data": [
+    {
+      "label": "Apple",
+      "value": "810000",
+      "link": "newchart-jsonurl-apple.json"
     },
-    "data": [{
-        "label": "Apple",
-        "value": "810000",
-        "link": "newchart-jsonurl-apple.json"
-    }, {
-        "label": "Cranberry",
-        "value": "620000",
-        "link": "newchart-jsonurl-cranberry.json"
-    }, {
-        "label": "Grapes",
-        "value": "350000",
-        "link": "newchart-jsonurl-grapes.json"
-    }]
+    {
+      "label": "Cranberry",
+      "value": "620000",
+      "link": "newchart-jsonurl-cranberry.json"
+    },
+    {
+      "label": "Grapes",
+      "value": "350000",
+      "link": "newchart-jsonurl-grapes.json"
+    }
+  ]
 }
 ```
+
 From the data shown above, it's clear that when the user clicks on the first data plot, the chart automatically sources the data to render the subsequent linked chart from the **apple.json** file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the `cranberry.json` and `grapes.json` files.
 
 The `apple.json` file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last one year. The data structure for the `apple.json` file is given below:
 
 ```json
 {
-    "chart": {
-        "caption": "Apple Juice - Quarterly Sales",
-        "subcaption": "Last year",
-        "numberprefix": "$",
-        "theme": "fusion",
-        "plottooltext": "$label, $dataValue,  $percentValue"
+  "chart": {
+    "caption": "Apple Juice - Quarterly Sales",
+    "subcaption": "Last year",
+    "numberprefix": "$",
+    "theme": "fusion",
+    "plottooltext": "$label, $dataValue,  $percentValue"
+  },
+  "data": [
+    {
+      "label": "Q1",
+      "value": "157000"
     },
-    "data": [{
-        "label": "Q1",
-        "value": "157000"
-    }, {
-        "label": "Q2",
-        "value": "172000"
-    }, {
-        "label": "Q3",
-        "value": "206000"
-    }, {
-        "label": "Q4",
-        "value": "275000"
-    }]
+    {
+      "label": "Q2",
+      "value": "172000"
+    },
+    {
+      "label": "Q3",
+      "value": "206000"
+    },
+    {
+      "label": "Q4",
+      "value": "275000"
+    }
+  ]
 }
 ```
 
@@ -267,23 +300,36 @@ The `cranberry.json` and the `grapes.json` files contain the data to plot column
 If you are using XML data for the chart, refer to the data structure for the parent chart given below:
 
 ```html
-<chart caption="Top 3 Juice Flavors" subcaption="Last year" xaxisname="Flavor" yaxisname="Amount (In USD)" numberprefix="$" theme="fusion" plottooltext="$label, $dataValue,  $percentValue" animation="0">
-
-<set label="Apple" value="810000" link="newchart-xmlurl-apple.xml" />
-<set label="Cranberry" value="620000" link="newchart-xmlurl-cranberry.xml" />
-<set label="Grapes" value="350000" link="newchart-xmlurl-grapes.xml" />
+<chart
+  caption="Top 3 Juice Flavors"
+  subcaption="Last year"
+  xaxisname="Flavor"
+  yaxisname="Amount (In USD)"
+  numberprefix="$"
+  theme="fusion"
+  plottooltext="$label, $dataValue,  $percentValue"
+  animation="0"
+>
+  <set label="Apple" value="810000" link="newchart-xmlurl-apple.xml" />
+  <set label="Cranberry" value="620000" link="newchart-xmlurl-cranberry.xml" />
+  <set label="Grapes" value="350000" link="newchart-xmlurl-grapes.xml" />
 </chart>
 ```
 
 The data structure for the **apple.xml** file is given below:
 
 ```html
-<chart caption="Apple Juice - Quarterly Sales" subcaption="Last year" numberprefix="$" theme="fusion" plottooltext="$label, $dataValue,  $percentValue">
-
-<set label="Q1" value="157000" />
-<set label="Q2" value="172000" />
-<set label="Q3" value="206000" />
-<set label="Q4" value="275000" />
+<chart
+  caption="Apple Juice - Quarterly Sales"
+  subcaption="Last year"
+  numberprefix="$"
+  theme="fusion"
+  plottooltext="$label, $dataValue,  $percentValue"
+>
+  <set label="Q1" value="157000" />
+  <set label="Q2" value="172000" />
+  <set label="Q3" value="206000" />
+  <set label="Q4" value="275000" />
 </chart>
 ```
 
@@ -295,150 +341,150 @@ For the data string method, `dataformat` accepts either `json` (if the JSON data
 
 Refer to the code below:
 
-```json
+```javascript
 // Include the core fusioncharts file from core  -
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from "fusioncharts/core";
 
 // Include the chart from viz folder
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
-import Column2D from 'fusioncharts/viz/column2d';
+import Column2D from "fusioncharts/viz/column2d";
 
 // Include the fusion theme
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-    
+import FusionTheme from "fusioncharts/themes/es/fusioncharts.theme.fusion";
+
 // Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
-    
+
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
-    "chart": {
-        "caption": "Top 3 Juice Flavors",
-        "subcaption": "Last year",
-        "xaxisName": "Flavor",
-        "yaxisName": "Amount (In USD)",
-        "numberPrefix": "$",
-        "theme": "fusion",
-        "rotateValues": "0"
+  chart: {
+    caption: "Top 3 Juice Flavors",
+    subcaption: "Last year",
+    xaxisName: "Flavor",
+    yaxisName: "Amount (In USD)",
+    numberPrefix: "$",
+    theme: "fusion",
+    rotateValues: "0"
+  },
+  data: [
+    {
+      label: "Apple",
+      value: "810000",
+      link: "newchart-xml-apple"
     },
-    "data": [
-        {
-            "label": "Apple",
-            "value": "810000",
-            "link": "newchart-xml-apple"
+    {
+      label: "Cranberry",
+      value: "620000",
+      link: "newchart-xml-cranberry"
+    },
+    {
+      label: "Grapes",
+      value: "350000",
+      link: "newchart-xml-grapes"
+    }
+  ],
+  linkeddata: [
+    {
+      id: "apple",
+      linkedchart: {
+        chart: {
+          caption: "Apple Juice - Quarterly Sales",
+          subcaption: "Last year",
+          xaxisname: "Quarter",
+          yaxisname: "Amount (In USD)",
+          numberprefix: "$",
+          theme: "fusion",
+          rotateValues: "0"
         },
-        {
-            "label": "Cranberry",
-            "value": "620000",
-            "link": "newchart-xml-cranberry"
+        data: [
+          {
+            label: "Q1",
+            value: "157000"
+          },
+          {
+            label: "Q2",
+            value: "172000"
+          },
+          {
+            label: "Q3",
+            value: "206000"
+          },
+          {
+            label: "Q4",
+            value: "275000",
+            rotateValues: "0"
+          }
+        ]
+      }
+    },
+    {
+      id: "cranberry",
+      linkedchart: {
+        chart: {
+          caption: "Cranberry Juice - Quarterly Sales",
+          subcaption: "Last year",
+          xaxisname: "Quarter",
+          yaxisname: "Amount (In USD)",
+          numberprefix: "$",
+          theme: "fusion",
+          rotateValues: "0"
         },
-        {
-            "label": "Grapes",
-            "value": "350000",
-            "link": "newchart-xml-grapes"
-        }
-    ],
-    "linkeddata": [
-        {
-            "id": "apple",
-            "linkedchart": {
-                "chart": {
-                    "caption": "Apple Juice - Quarterly Sales",
-                    "subcaption": "Last year",
-                    "xaxisname": "Quarter",
-                    "yaxisname": "Amount (In USD)",
-                    "numberprefix": "$",
-                    "theme": "fusion",
-                    "rotateValues": "0"
-                },
-                "data": [
-                    {
-                        "label": "Q1",
-                        "value": "157000"
-                    },
-                    {
-                        "label": "Q2",
-                        "value": "172000"
-                    },
-                    {
-                        "label": "Q3",
-                        "value": "206000"
-                    },
-                    {
-                        "label": "Q4",
-                        "value": "275000",
-                        "rotateValues": "0"
-                    }
-                ]
-            }
+        data: [
+          {
+            label: "Q1",
+            value: "102000"
+          },
+          {
+            label: "Q2",
+            value: "142000"
+          },
+          {
+            label: "Q3",
+            value: "187000"
+          },
+          {
+            label: "Q4",
+            value: "189000"
+          }
+        ]
+      }
+    },
+    {
+      id: "grapes",
+      linkedchart: {
+        chart: {
+          caption: "Grape Juice - Quarterly Sales",
+          subcaption: "Last year",
+          xaxisname: "Quarter",
+          yaxisname: "Amount (In USD)",
+          numberprefix: "$",
+          theme: "fusion",
+          rotateValues: "0"
         },
-        {
-            "id": "cranberry",
-            "linkedchart": {
-                "chart": {
-                    "caption": "Cranberry Juice - Quarterly Sales",
-                    "subcaption": "Last year",
-                    "xaxisname": "Quarter",
-                    "yaxisname": "Amount (In USD)",
-                    "numberprefix": "$",
-                    "theme": "fusion",
-                    "rotateValues": "0"
-                },
-                "data": [
-                    {
-                        "label": "Q1",
-                        "value": "102000"
-                    },
-                    {
-                        "label": "Q2",
-                        "value": "142000"
-                    },
-                    {
-                        "label": "Q3",
-                        "value": "187000"
-                    },
-                    {
-                        "label": "Q4",
-                        "value": "189000"
-                    }
-                ]
-            }
-        },
-        {
-            "id": "grapes",
-            "linkedchart": {
-                "chart": {
-                    "caption": "Grape Juice - Quarterly Sales",
-                    "subcaption": "Last year",
-                    "xaxisname": "Quarter",
-                    "yaxisname": "Amount (In USD)",
-                    "numberprefix": "$",
-                    "theme": "fusion",
-                    "rotateValues": "0"
-                },
-                "data": [
-                    {
-                        "label": "Q1",
-                        "value": "45000"
-                    },
-                    {
-                        "label": "Q2",
-                        "value": "72000"
-                    },
-                    {
-                        "label": "Q3",
-                        "value": "95000"
-                    },
-                    {
-                        "label": "Q4",
-                        "value": "108000"
-                    }
-                ]
-            }
-        }
-    ]
-});//render
+        data: [
+          {
+            label: "Q1",
+            value: "45000"
+          },
+          {
+            label: "Q2",
+            value: "72000"
+          },
+          {
+            label: "Q3",
+            value: "95000"
+          },
+          {
+            label: "Q4",
+            value: "108000"
+          }
+        ]
+      }
+    }
+  ]
+}); //render
 chartInstance.render();
 ```
 
@@ -446,13 +492,13 @@ chartInstance.render();
 
 The FusionCharts JavaScript class includes events raised when you open or close linked items, as explained below:
 
-* `beforeLinkedItemOpen` is fired every time a linked item is about to open, right after you click the link in the parent chart.
+- `beforeLinkedItemOpen` is fired every time a linked item is about to open, right after you click the link in the parent chart.
 
-* `linkedItemOpened` is fired every time a linked (descendant) chart is rendered.
+- `linkedItemOpened` is fired every time a linked (descendant) chart is rendered.
 
-* `beforeLinkedItemClosed` is fired every time the linked chart is closed, and the parent chart is rendered. This happens whenever you navigate back to the parent chart by clicking on the **Back** button at the top right corner of the linked chart.
+- `beforeLinkedItemClosed` is fired every time the linked chart is closed, and the parent chart is rendered. This happens whenever you navigate back to the parent chart by clicking on the **Back** button at the top right corner of the linked chart.
 
-* `linkedItemClosed` is fired every time a linked chart is closed, and before the parent chart is reopened.
+- `linkedItemClosed` is fired every time a linked chart is closed, and before the parent chart is reopened.
 
 A chart utilizing these events is given below:
 
@@ -462,7 +508,7 @@ Click [here](http://jsfiddle.net/fusioncharts/sknyboh5/) to edit the above chart
 
 Configure the `addEventListener()` method for the parent chart to listen to these events. The data structure that shows how to implement these events is given below:
 
-```json
+```javascript
 // Include the core fusioncharts file from core  -
 import FusionCharts from 'fusioncharts/core';
 
@@ -472,12 +518,12 @@ import Column2D from 'fusioncharts/viz/column2d';
 
 // Include the fusion theme
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-    
+
 // Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
-    
+
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
     "chart": {

@@ -31,7 +31,7 @@ To define the schema, let's create a `schema.json` file and copy the following c
 
 ```JSON
 let schema = [{
-    "name": "Time",
+    "name": "Order Date",
     "type": "date",
     "format": "%-m/%-d/%Y"
 }, {
