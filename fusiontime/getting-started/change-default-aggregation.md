@@ -34,18 +34,22 @@ However, you can change the aggregate function from `average` to any of the foll
 
 To change the aggregate function refer to the code below:
 
-```
+```javascript
 new FusionCharts({
-        type: 'timeseries',
-        ...
-        dataSource: {
-            	yAxis: [{
-    			"aggregation": "Sum",
-			}],
+  type: "timeseries",
+  dataSource: {
+    yAxis: [
+      {
+        plot: {
+          value: "XYZ",
+          aggregation: "Sum"
         }
-    })
+      }
+    ]
+  }
+});
 ```
 
 In the above code we have:
 
-- Set the value of the `aggregation` property as `sum` under the `yAxis` object.
+- Set the value of the `aggregation` property as `sum` under the `plot` object.
