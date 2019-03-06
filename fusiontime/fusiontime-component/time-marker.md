@@ -51,16 +51,22 @@ Refer to the code below:
 
 ```javascript
 xAxis: {
-    columnname: 'Time',
-    timemarker: [{
-        start: 'Mar-1982',
-        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
-        timeFormat: "%b-%Y"
-        repeat {
-        unit: Year,
-        multiplier: 5
+  plot: 'Time',
+  timemarker: [{
+    start: 'Mar-1980',
+    label: 'US inflation peaked at 14.8%.',
+    timeFormat: "%b-%Y",
+    repeat: {
+      unit: 'Year',
+      multiplier: 5
+    },
+    style: {
+      marker: {
+        fill: '#f8b8b7'
+      }
     }
-},
+  },
+}
 ```
 
 The sample chart with repeated time instance markers is shown below:
@@ -72,19 +78,24 @@ In the above sample, the time marker is a specific point on the time axis. You c
 Refer to the code given below:
 
 ```javascript
-
 xAxis: {
-    columnname: 'Time',
+    plot: 'Time',
     timemarker: [{
-        start: 'Mar-1982',
-        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
-        timeFormat: "%b-%Y"
-        repeat {
-        unit: Year,
-        multiplier: 5,
-        type: 'full'
-    }
-},
+        start: 'Mar-1980',
+        label: 'US inflation peaked at 14.8%.',
+        timeFormat: "%b-%Y",
+        repeat: {
+            unit: 'Year',
+            multiplier: 5,
+            type: 'full'
+        },
+        style: {
+            marker: {
+                fill: '#f8b8b7'
+            }
+        }
+    }]
+}
 ```
 
 A sample chart is shown below:
@@ -99,13 +110,18 @@ Refer to the code below:
 
 ```javascript
 xAxis: {
-    columnname: 'Time',
+    plot: 'Time',
     timemarker: [{
         start: 'Mar-1980',
         end: 'Jun-1983',
-        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
-        timeFormat: "%b-%Y"
-    }],
+        label: 'US inflation peaked at 14.8%.',
+        timeFormat: "%b-%Y",
+        style: {
+            marker: {
+                fill: '#f8b8b7'
+            }
+        }
+    }]
 }
 ```
 
@@ -119,14 +135,19 @@ Refer to the code given below:
 
 ```javascript
 xAxis: {
-    columnname: 'Time',
+    plot: 'Time',
     timemarker: [{
         start: 'Mar-1980',
         end: 'Jun-1983',
-        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
+        label: 'US inflation peaked at 14.8%.',
         timeFormat: "%b-%Y",
         type: 'full',
-    }],
+        style: {
+            marker: {
+                fill: '#f8b8b7'
+            }
+        }
+    }]
 }
 ```
 
@@ -175,30 +196,3 @@ The chart after applying the above attributes will look like as shown below:
 {% embed_ftChart fusiontime-components-data-marker-style-definition %}
 
 In the above sample, **font color** of the y-axis label has been changed.
-
-The code to update the cosmetic properties of other elements in **y-axis** is given below:
-
-```javascript
-{
-  "yAxis": [
-    {
-      "title": "Sales",
-      "style": {
-        "ticks": {
-          "major": Style,
-          "minor": Style,
-          "context": Style
-        },
-        "text": {
-          "major": Style,
-          "minor": Style,
-          "context": Style
-        },
-        "line": Style,
-        "gridLine": Style,
-        "gridBand": Style
-      }
-    }
-  ]
-}
-```

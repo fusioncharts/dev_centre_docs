@@ -24,6 +24,10 @@ yAxis: [{
     },
 }, {
     plot: {
+        value: 'Quantity',
+    },
+}, {
+    plot: {
         value: 'Shipping Cost',
     },
 }],
@@ -35,7 +39,7 @@ An example of an array of strings is shown in the code below:
 
 ```json
 "yAxis": [{
-    "plot": ["Sales", "Shipping Cost"]
+    "plot": ["Sales", "Quantity", "Shipping Cost"]
 }]
 ```
 

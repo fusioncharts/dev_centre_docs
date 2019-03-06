@@ -227,11 +227,6 @@ window.charInstance = new FusionCharts({
         height: 650,
         dataSource: {
             data: fusionTable,
-            "yAxis": [{
-                "plot": {
-                    "title": 'Sales ($)'
-                }
-            }],
             caption: {
                 text: 'Online Sales of a SuperStore in the US'
             }

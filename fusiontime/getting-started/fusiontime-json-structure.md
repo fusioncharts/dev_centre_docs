@@ -16,8 +16,8 @@ For example, you can define the `caption` under the `dataSource` object as shown
 
 ```javascript
 {
-    dataSource : {
-        "caption": "Chart Caption"
+    chart : {
+        "caption": "Online Sales of a SuperStore in the US" //Chart Caption
     }
 }
 ```
@@ -28,27 +28,28 @@ For example, to specify the caption you need to create a `caption` object under 
 
 ```javascript
 new FusionCharts({
-        type: 'timeseries',
-        ...
-        dataSource: {
-            caption: {
-                text: 'Online Sales of a SuperStore in the US'
-            }
-        }
-    });
+  type: "timeseries",
+  dataSource: {
+    caption: {
+      text: "Online Sales of a SuperStore in the US" //Chart Caption
+    }
+  }
+});
 ```
 
 Similarly, to configure the Y-axis in FusionTime you need to create a `yAxis` object and define the Y-axis related properties within the object. Refer to the code below:
 
 ```javascript
 new FusionCharts({
-        type: 'timeseries',
-        dataSource: {
-            "yAxis": [{
-                "plot": {
-                },
-            }],
-    });
+  type: "timeseries",
+  dataSource: {
+    yAxis: [
+      {
+        plot: {}
+      }
+    ]
+  }
+});
 ```
 
 Every component in FusionTime has its own set of properties to configure. To know more click [here](/fusiontime/fusiontime-component/y-axis-in-fusiontime).
@@ -61,8 +62,8 @@ For example, you can set the font of the caption using the `captionFont` attribu
 
 ```javascript
 {
-    dataSource : {
-        "caption": "Chart Caption",
+    chart : {
+        "caption": "Online Sales of a SuperStore in the US", //Chart Caption
         "captionFont": "Arial"
     }
 }
@@ -74,31 +75,31 @@ FusionTime allows you to define the cosmetic properties using Styles in two diff
 
 ```javascript
 new FusionCharts({
-        type: 'timeseries',
-        dataSource: {
-            styleDefinition: {
-                "small-text": {
-                    "font-size": "6"
-            }
-        }
-   });
+  type: "timeseries",
+  dataSource: {
+    styleDefinition: {
+      "small-text": {
+        "font-size": "6"
+      }
+    }
+  }
+});
 ```
 
 OR
 
 - You can directly create a style object within a component to set the style properties. Refer to the code below:
 
-```
+```javascript
 new FusionCharts({
-        type: 'timeseries',
-        ...
-        dataSource: {
-            caption: {
-                text: 'Online Sales of a SuperStore in the US'
-                style: {
-            text: 'small-text'
-        }
+    type: 'timeseries',
+    dataSource: {
+        caption: {
+            text: 'Online Sales of a SuperStore in the US'
+            style: {
+                text: 'small-text'
             }
         }
-    });
+    }
+});
 ```
