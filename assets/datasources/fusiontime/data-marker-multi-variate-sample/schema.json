@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Date",
+    "type": "date",
+    "format": "%Y-%-m-%-d"
+  },
+  {
+    "name": "Item",
+    "type": "string"
+  },
+  {
+    "name": "Units Sold",
+    "type": "number"
+  },
+  {
+    "name": "Sales",
+    "type": "number"
+  }
+]
