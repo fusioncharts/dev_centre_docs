@@ -113,9 +113,8 @@ For the complete data click here.
 
 Now, let’s add the events held on particular dates in the JSON using data markers. The code is shown below:
 
-```javascript
+```json
 {
-  "data": dataTable,
   "caption": {
     "text": "La petite boulangerie"
   },
@@ -148,7 +147,7 @@ The chart looks as shown below:
 
 In the above chart, the data markers have been marked on both the canvases of the chart. There can be a case, where you want to apply a data marker to a particular canvas of a multivariate chart.
 
-For example:
+**For example:**
 
 - The event occured on **2024-9-17** affects both the canvases, i.e., **Units Sold** and the **Sales** of **Cake**.
 - The second event occured on **2027-3-28** affects on the canvas of **Units Sold** on both the items, i.e., **Candy** and **Cookie**.
@@ -161,7 +160,7 @@ Data marker on **2024-9-17** will only shown on the `series` for **Cake** and th
 
 Refer to the code:
 
-```javascript
+```json
 {
   "time": "2024-9-17",
   "timeFormat": "%Y-%-m-%-d",
@@ -178,7 +177,7 @@ Data marker on **2024-9-17** will only be shown on the `series` for **Cake** and
 
 Refer to the code:
 
-```javascript
+```json
 {
   "time": "2024-9-17",
   "timeFormat": "%Y-%-m-%-d",
@@ -195,7 +194,7 @@ Data marker on **2027-4-13** will only be shown on the `series` for **Cookie** a
 
 Refer to the code:
 
-```javascript
+```json
 {
   "time": "2027-4-13",
   "timeFormat": "%Y-%-m-%-d",
@@ -212,7 +211,7 @@ Data marker on **2027-4-13** will only be shown on the `series` for **Candy** an
 
 Refer to the code:
 
-```javascript
+```json
 {
   "time": "2027-4-13",
   "timeFormat": "%Y-%-m-%-d",
@@ -225,9 +224,8 @@ Refer to the code:
 
 The consolidated code of the above created data marker is:
 
-```javascript
+```json
 {
-  "data": dataTable,
   "caption": {
     "text": "La petite boulangerie"
   },
