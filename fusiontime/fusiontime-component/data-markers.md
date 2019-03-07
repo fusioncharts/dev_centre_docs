@@ -87,3 +87,200 @@ dataMarker: [{
 The data marker created using the above code is shown below:
 
 {% embed_ftChart fusioncharts-aspnet-data-markers %}
+
+## Data Markers in MultiVariate Chart
+
+When representing time-series data, it is important to mark events which have happened on a particular set of data points at a specific time. In order to achieve this, FusionTime allows you to specify data markers for some specific canvases as well.
+
+Let's take an example of the following data.
+
+| Date       | Item   | Units Sold | Sales (USD) |
+| ---------- | ------ | ---------- | ----------- |
+| 2020-1-1   | Cake   | 188        | 1880        |
+| 2020-1-1   | Cookie | 133        | 339         |
+| 2020-1-1   | Candy  | 121        | 84.7        |
+| 2024-9-17  | Cake   | 2          | 20          |
+| 2024-9-17  | Cookie | 277        | 831         |
+| 2024-9-17  | Candy  | 219        | 153.3       |
+| 2027-4-13  | Cake   | 168        | 1680        |
+| 2027-4-13  | Cookie | 227        | 681         |
+| 2027-4-13  | Candy  | 397        | 277.9       |
+| 2029-12-31 | Cake   | 46         | 460         |
+| 2029-12-31 | Cookie | 105        | 315         |
+| 2029-12-31 | Candy  | 154        | 107.8       |
+
+For the complete data click here.
+
+Now, let’s add the events held on particular dates in the JSON using data markers. The code is shown below:
+
+```javascript
+{
+  "data": dataTable,
+  "caption": {
+    "text": "La petite boulangerie"
+  },
+  "subcaption": {
+    "text": "Units Sold and Sales over 10 years"
+  },
+  "series": "Item",
+  "dataMarker": [
+    {
+      "time": "2024-9-17",
+      "timeFormat": "%Y-%-m-%-d"
+    },
+    {
+      "time": "2027-4-13",
+      "timeFormat": "%Y-%-m-%-d"
+    }
+  ]
+}
+```
+
+In the above code:
+
+- `dataMarker` has been set under the `dataSource`.
+- The `time` attribute specifies the date of the event held.
+- the `timeFormat` attribute specifies the date/time format.
+
+The chart looks as shown below:
+
+<Live Chart>
+
+In the above chart, the data markers have been marked on both the canvases of the chart. There can be a case, where you want to apply a data marker to a particular canvas of a multivariate chart.
+
+For example:
+
+- The event occured on **2024-9-17** affects both the canvases, i.e., **Units Sold** and the **Sales** of **Cake**.
+- The second event occured on **2027-3-28** affects on the canvas of **Units Sold** on both the items, i.e., **Candy** and **Cookie**.
+
+To apply data marker to the chart for the above scenerio, let's create the data markers one after the other. Follow the steps below:
+
+**Step 1**
+
+Data marker on **2024-9-17** will only shown on the `series` for **Cake** and the `value` will be derived from **Units Sold**.
+
+Refer to the code:
+
+```javascript
+{
+  "time": "2024-9-17",
+  "timeFormat": "%Y-%-m-%-d",
+  "value": "Units Sold",
+  "series": {
+    "Item": "Cake"
+  }
+}
+```
+
+**Step 2**
+
+Data marker on **2024-9-17** will only be shown on the `series` for **Cake** and the `value` will be derived from **Sales (USD)**.
+
+Refer to the code:
+
+```javascript
+{
+  "time": "2024-9-17",
+  "timeFormat": "%Y-%-m-%-d",
+  "value": "Sales (USD)",
+  "series": {
+    "Item": "Cake"
+  }
+}
+```
+
+**Step 3**
+
+Data marker on **2027-4-13** will only be shown on the `series` for **Cookie** and the `value` will be dervied from **United Sold**.
+
+Refer to the code:
+
+```javascript
+{
+  "time": "2027-4-13",
+  "timeFormat": "%Y-%-m-%-d",
+  "value": "Units Sold",
+  "series": {
+    "Item": "Cookie"
+  }
+}
+```
+
+**Step 4**
+
+Data marker on **2027-4-13** will only be shown on the `series` for **Candy** and the `value` will be dervied from **United Sold**.
+
+Refer to the code:
+
+```javascript
+{
+  "time": "2027-4-13",
+  "timeFormat": "%Y-%-m-%-d",
+  "value": "Units Sold",
+  "series": {
+    "Item": "Candy"
+  }
+}
+```
+
+The consolidated code of the above created data marker is:
+
+```javascript
+{
+  "data": dataTable,
+  "caption": {
+    "text": "La petite boulangerie"
+  },
+  "subcaption": {
+    "text": "Units Sold and Sales over 10 years"
+  },
+  "series": "Item",
+  "dataMarker": [
+    {
+      "time": "2024-9-17",
+      "timeFormat": "%Y-%-m-%-d",
+      "tooltext": "Lowest units of Cake sold since cake decorator was fired.",
+      "value": "Units Sold",
+      "identifier": "C",
+      "series": {
+        "Item": "Cake"
+      }
+    },
+    {
+      "time": "2024-9-17",
+      "timeFormat": "%Y-%-m-%-d",
+      "tooltext": "Lowest sales of Cake since cake decorator was fired.",
+      "value": "Sales (USD)",
+      "identifier": "C",
+      "series": {
+        "Item": "Cake"
+      }
+    },
+    {
+      "time": "2027-4-13",
+      "timeFormat": "%Y-%-m-%-d",
+      "tooltext": "Units of Cookie sold affected by Candy discount.",
+      "value": "Units Sold",
+      "identifier": "K",
+      "series": {
+        "Item": "Cookie"
+      }
+    },
+    {
+      "time": "2027-4-13",
+      "timeFormat": "%Y-%-m-%-d",
+      "tooltext": "Max units of Candy sold since Candy discount started.",
+      "value": "Units Sold",
+      "identifier": "D",
+      "series": {
+        "Item": "Candy"
+      }
+    }
+  ]
+}
+```
+
+The chart looks as shown below:
+
+<Live Chart>
+
