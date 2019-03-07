@@ -87,29 +87,3 @@ dataMarker: [{
 The data marker created using the above code is shown below:
 
 {% embed_ftChart fusioncharts-aspnet-data-markers %}
-
-## Data Markers in MultiVariate Chart
-
-When representing time-series data, it is important to mark events which have happened on a particular set of data points at a specific time. In order to achieve this, FusionTime allows you to specify data markers for some specific canvases as well.
-
-Let's take an example of the following data.
-
-| Date       | Item   | Units Sold | Sales (USD) |
-| ---------- | ------ | ---------- | ----------- |
-| 2020-1-1   | Cake   | 188        | 1880        |
-| 2020-1-1   | Cookie | 133        | 339         |
-| 2020-1-1   | Candy  | 121        | 84.7        |
-| 2024-9-17  | Cake   | 2          | 20          |
-| 2024-9-17  | Cookie | 277        | 831         |
-| 2024-9-17  | Candy  | 219        | 153.3       |
-| 2027-4-13  | Cake   | 168        | 1680        |
-| 2027-4-13  | Cookie | 227        | 681         |
-| 2027-4-13  | Candy  | 397        | 277.9       |
-| 2029-12-31 | Cake   | 46         | 460         |
-| 2029-12-31 | Cookie | 105        | 315         |
-| 2029-12-31 | Candy  | 154        | 107.8       |
-
-For the complete data click here.
-
-Now, let’s add the events in the JSON using data markers. The code is shown below:
-
