@@ -284,3 +284,4 @@ The chart looks as shown below:
 
 <Live Chart>
 
+{% embed_ftChart data-marker-multi-variate-sample %}
