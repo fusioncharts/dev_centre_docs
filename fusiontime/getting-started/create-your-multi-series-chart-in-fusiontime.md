@@ -104,7 +104,7 @@ We are all set with our data to create the chart.
 
 ## Create the `index` file
 
-Creating a chart with multiple plots is very simple in FusionTime. You just need to specify the column name in the `series` attribute within [y-axis](/fusiontime/fusiontime-component/y-axis-in-fusiontime) object. To do this, create an `index` file and copy the following code: 
+Creating a chart with multiple plots is very simple in FusionTime. You just need to specify the column name in the `series` attribute within [`yaxis`](/fusiontime/fusiontime-component/y-axis-in-fusiontime) object. To do this, create an `index` file and copy the following code: 
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
