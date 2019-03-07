@@ -10,11 +10,15 @@
         caption: {
             text: 'Online Sales of a SuperStore in the US'
         },
-        yAxis: [{
-            referenceLine: [{
-                label: 'Daily Target',
-                value: '300'
-            }]
-        }]
+        yaxis: {
+            "plot": {
+                "value": "Sales",
+                "type": "line"
+            },
+            "referenceLine": [{
+                "label": "Daily Target",
+                "value": 300
+            }],
+        }
     }
 }
