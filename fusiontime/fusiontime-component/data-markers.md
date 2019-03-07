@@ -16,9 +16,9 @@ The image below shows the data marker on a time series chart:
 
 To create data markers, follow the steps given below:
 
-- Create a `dataMarker` object.
+- Create a `dataMarker` object in the `dataSource`.
 
-- Within the `dataMarker` object use the `seriesName` attribute to specify the exact name of the series, against which the data marker will be displayed. If you need to mention the exact name of the series as a combination of a series name and a measure name, then specify it in the format `<series_name>-<measure_name>`.
+- Within the `dataMarker` object use the `series` attribute to specify the exact name of the series, against which the data marker will be displayed. If you need to mention the exact name of the series as a combination of a series name and a measure name, then specify it in the format `<series_name>-<measure_name>`.
 
 - Within the `dataMarker` object use the `time` attribute to set the time instance on which the data marker will be displayed.
 
@@ -34,49 +34,49 @@ Refer to the code given below:
 
 ```javascript
 dataMarker: [{
-    seriesName: "Interest Rate",
+    series: "Interest Rate",
     time: "Mar-1980",
     identifier: "H",
     timeFormat: "%b-%Y",
     tooltext: "As a part of credit control program, under the leadership of Paul Volcker, the Fed tightened the money supply, allowing the federal fund rates to approach 20 percent."
 }, {
-    seriesName: "Interest Rate",
+    series: "Interest Rate",
     time: "Aug-1982",
     identifier: "L",
     timeFormat: "%b-%Y",
     tooltext: "The FED eases off the monetary brakes, allowing interest rates to fall and the economy to begin a strong recovery."
 }, {
-    seriesName: "Interest Rate",
+    series: "Interest Rate",
     time: "Oct-1987",
     identifier: "L",
     timeFormat: "%b-%Y",
     tooltext: "The FED is forced to ease rate after the stock market crash."
 }, {
-    seriesName: "Interest Rate",
+    series: "Interest Rate",
     time: "May-1989",
     identifier: "H",
     timeFormat: "%b-%Y",
     tooltext: "Liquidity problem forced the Fed to increase rate to nearly 10%."
 }, {
-    seriesName: "Interest Rate",
+    series: "Interest Rate",
     time: "Sept-1992",
     identifier: "L",
     timeFormat: "%b-%Y",
     tooltext: "To fight the jobless economy growth the Fed had to reduce the interest rate to 3%."
 }, {
-    seriesName: "Interest Rate",
+    series: "Interest Rate",
     time: "Jun-2003",
     identifier: "L",
     timeFormat: "%b-%Y",
     tooltext: "Struggling to revive the economy, the FED cuts it’s benchmark rate to 1%."
 }, {
-    seriesName: "Interest Rate",
+    series: "Interest Rate",
     time: "Sep-2007",
     identifier: "L",
     timeFormat: "%b-%Y",
     tooltext: "Fed started reducing the Federal Fund Rate."
 }, {
-    seriesName: "Interest Rate",
+    series: "Interest Rate",
     time: "Dec-2008",
     identifier: "L",
     timeFormat: "%b-%Y",
@@ -87,3 +87,29 @@ dataMarker: [{
 The data marker created using the above code is shown below:
 
 {% embed_ftChart fusioncharts-aspnet-data-markers %}
+
+## Data Markers in MultiVariate Chart
+
+When representing time-series data, it is important to mark events which have happened on a particular set of data points at a specific time. In order to achieve this, FusionTime allows you to specify data markers for some specific canvases as well.
+
+Let's take an example of the following data.
+
+| Date       | Item   | Units Sold | Sales (USD) |
+| ---------- | ------ | ---------- | ----------- |
+| 2020-1-1   | Cake   | 188        | 1880        |
+| 2020-1-1   | Cookie | 133        | 339         |
+| 2020-1-1   | Candy  | 121        | 84.7        |
+| 2024-9-17  | Cake   | 2          | 20          |
+| 2024-9-17  | Cookie | 277        | 831         |
+| 2024-9-17  | Candy  | 219        | 153.3       |
+| 2027-4-13  | Cake   | 168        | 1680        |
+| 2027-4-13  | Cookie | 227        | 681         |
+| 2027-4-13  | Candy  | 397        | 277.9       |
+| 2029-12-31 | Cake   | 46         | 460         |
+| 2029-12-31 | Cookie | 105        | 315         |
+| 2029-12-31 | Candy  | 154        | 107.8       |
+
+For the complete data click here.
+
+Now, let’s add the events in the JSON using data markers. The code is shown below:
+
