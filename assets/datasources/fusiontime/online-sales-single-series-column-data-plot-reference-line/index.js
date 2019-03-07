@@ -10,16 +10,15 @@
         caption: {
             text: 'Online Sales of a SuperStore in the US'
         },
-        yAxis: [{
-            plot: 'Temperature',
-            title: 'Temperature',
-            format:{
-                suffix: '°C',
+        yaxis: {
+            "plot": {
+                "value": "Sales",
+                "type": "line"
             },
-            referenceLine: [{
-                label: 'Daily Target',
-                value: '300'
-            }]
-        }],
+            "referenceLine": {
+                "label": "Daily Target",
+                "value": 300
+            }
+        }
     }
 }
