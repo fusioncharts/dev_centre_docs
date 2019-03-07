@@ -144,7 +144,7 @@ In the above code:
 
 The chart looks as shown below:
 
-<Live Chart>
+{% embed_ftChart data-marker-multi-variate-sample-all-canvas %}
 
 In the above chart, the data markers have been marked on both the canvases of the chart. There can be a case, where you want to apply a data marker to a particular canvas of a multivariate chart.
 
