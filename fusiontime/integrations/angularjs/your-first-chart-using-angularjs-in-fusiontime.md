@@ -1,18 +1,18 @@
 ---
 title: Create a Chart in AngularJS | FusionTime
 description: This article outlines the steps to be executed for creating your first chart in AngularJS using FusionTime.
-heading: Create a chart in AngularJS
+heading: Create a Chart in AngularJS
 ---
 
-FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhances the experience of exploring and understanding time series data. 
+FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, such as time navigator, date range selectors, tooltips with crosslines, interactive legend and more. These features enhance the experience of exploring and understanding time-series data.
 
-We have built a simple `angularjs-fusioncharts` directive which provides bindings for **FusionTime**. The `angularjs-fusioncharts` directive allows you to easily add interactive time-series charts to any **AngularJS** project.
+We have built a simple `angularjs-fusioncharts` directive, which provides bindings for **FusionTime**. The `angularjs-fusioncharts` directive allows you to easily add interactive time-series charts to any **AngularJS** project.
 
 In this page, we'll see how to install **FusionTime** and render an interactive time-series chart using the `angularjs-fusioncharts` directive.
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the FusionCharts package to get access to FusionTime and other charts of the FusionCharts Suite. To install follow any of the methods below:
+Since FusionTime is distributed along with FusionCharts Suite, download/install the FusionCharts package to get access to FusionTime and other charts of the FusionCharts Suite. To install, follow any of the methods below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -22,7 +22,7 @@ Since FusionTime is distributed along with FusionCharts Suite, download/install 
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
-<div class='mt-30'><strong>To install **FusionTime** and the `angularjs-fusioncharts` directive via npm follow the steps below:</strong></div>
+<div class='mt-30'><strong>To install **FusionTime** and the `angularjs-fusioncharts` directive via npm, follow the steps below:</strong></div>
 <div class='mt-20'>1. Install `angularjs-fusioncharts` directive</div>
 <pre><code class="language-javascript">
 $ npm install angularjs-fusioncharts --save
@@ -36,7 +36,7 @@ $ npm install fusioncharts --save
 </div>
 
 <div class='tab cdn-tab'>
-<div class='mt-30'><strong>To install the FusionCharts Suite and the `angularjs-fusioncharts` component follow the steps below:</strong></div>
+<div class='mt-30'><strong>To install the FusionCharts Suite and the `angularjs-fusioncharts` component, follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
@@ -95,7 +95,7 @@ $ npm install fusioncharts --save
 
 That completes the installation of **FusionTime** and the `angularjs-fusioncharts` directive.
 
-## Create your First Chart
+## Create Your First Chart
 
 Let's create a time-series chart using `angularjs-fusioncharts` directive showing **Daily sales of a grocery store**.
 
@@ -115,12 +115,12 @@ The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master
 | 06-Feb-11 | 4667  |
 | 07-Feb-11 | 1064  |
 
-FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`  is the tabular representation of data. To create the `DataTable`, you need to provide the following:
+FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as the data source. `DataTable`  is the tabular representation of data. To create the `DataTable`, you need to provide the following:
 
 * `schema` - which defines the properties of the columns.  
-* `data` - values of each row and column of the DataTable.
+* `data` - which contains the values of each row and column of the DataTable.
 
-> For an instance of FusionTime, you can create `n` number of `DataTables`, but only 1 `DataStore`.
+> For an instance of FusionTime, you can create `n` number of `DataTables`, but only one `DataStore`.
 
 Next, let's learn how to prepare the schema and the data of the `DataTable`.
 
@@ -201,11 +201,11 @@ In the above code:
 * Each object in the data array corresponds to a row in the tabular representation of the data.
 * Each element in an object is represented by each object of the `schema`. The values in each object of the array represent the following:
   * Time according to the format
-  * Total Sales amount
+  * Total sales amount
 
 We are all set with our data to create the chart.
 
-> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](https://www.fusioncharts.com/dev/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more, click [here](https://www.fusioncharts.com/dev/fusiontime/getting-started/change-default-aggregation).
 
 Now, let's create the files to render the above chart.
 
@@ -281,7 +281,7 @@ app.controller('MyController', function($scope) {
 });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<div><strong>Use a bundler `browserify`, to bundle the script. Click [here](http://browserify.org/) to know more.</strong></div>
+<div><strong>Use a bundler like `browserify`, to bundle the script. Click [here](http://browserify.org/) to know more.</strong></div>
 <pre><code class="language-Bash">
 $ browserify script.js -o bundle.js
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
