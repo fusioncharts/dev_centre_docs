@@ -109,7 +109,7 @@ Let's take an example of the following data.
 | 2029-12-31 | Cookie | 105        | 315         |
 | 2029-12-31 | Candy  | 154        | 107.8       |
 
-For the complete data click here.
+For the complete data click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/fusioncharts-aspnet-data-markers/data.json).
 
 Now, let’s add the events held on particular dates in the JSON using data markers. The code is shown below:
 
@@ -190,7 +190,7 @@ Refer to the code:
 
 **Step 3**
 
-Data marker on **2027-4-13** will only be shown on the `series` for **Cookie** and the `value` will be dervied from **United Sold**.
+Data marker on **2027-4-13** will only be shown on the `series` for **Cookie** and the `value` will be derived from **Units Sold**.
 
 Refer to the code:
 
@@ -207,7 +207,7 @@ Refer to the code:
 
 **Step 4**
 
-Data marker on **2027-4-13** will only be shown on the `series` for **Candy** and the `value` will be dervied from **United Sold**.
+Data marker on **2027-4-13** will only be shown on the `series` for **Candy** and the `value` will be derived from **Units Sold**.
 
 Refer to the code:
 

@@ -1,12 +1,12 @@
 ---
 title: Create a Chart in React | FusionTime
 description: This article outlines the steps to be executed for creating your first chart in React using FusionTime.
-heading: Create a chart in React
+heading: Create a Chart in React
 ---
 
-FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactivity, like, time navigator, date range selectors, tooltips with crosslines, interactive legend and more features which enhances the experience of exploring and understanding time series data.
+FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactive features, such as time navigator, date range selectors, tooltips with crosslines, interactive legend and more. These features enhance the experience of exploring and understanding time-series data
 
-We have built a simple `react-fusioncharts` component which provides bindings for **FusionTime**. The `react-fusioncharts` component allows you to easily add interactive time-series charts to any **React** project.
+We have built a simple `react-fusioncharts` component, which provides bindings for **FusionTime**. The `react-fusioncharts` component allows you to easily add interactive time-series charts to any **React** project.
 
 In this page, we'll see how to install **FusionTime** and render an interactive time-series chart using the `react-fusioncharts` component.
 
@@ -36,7 +36,7 @@ $ npm install fusioncharts --save
 </div>
 
 <div class='tab cdn-tab'>
-<div class='mt-30'><strong>To install FusionTime and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div class='mt-30'><strong>To install FusionTime and the `react-fusioncharts` component, follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [React](https://reactjs.org/) core library.
@@ -66,7 +66,7 @@ $ npm install fusioncharts --save
 </div>
 
 <div class='tab local-tab'>
-<div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component, follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [React](https://reactjs.org/)core library.</li>
@@ -98,7 +98,7 @@ $ npm install fusioncharts --save
 </div>
 </div>
 
-## Create your First Chart
+## Create Your First Chart
 
 Let's create a time-series chart using `react-fusioncharts` component showing **Online sales of a SuperStore**.
 
@@ -118,12 +118,12 @@ The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master
 | 1/7/2011 | 2573.82 |
 | 1/7/2011 | 609.98  |
 
-FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`  is the tabular representation of data. To create the `DataTable`, you need to provide the following:
+FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as the data source. `DataTable`  is the tabular representation of data. To create the `DataTable`, you need to provide the following:
 
 * `schema` - which defines the properties of the columns.  
-* `data` - values of each row and column of the DataTable.
+* `data` - which contains the values of each row and column of the DataTable.
 
-> For an instance of FusionTime, you can create `n` number of `DataTables`, but only 1 `DataStore`.
+> For an instance of FusionTime, you can create `n` number of `DataTables`, but only one `DataStore`.
 
 Now, let's learn how to prepare the schema and the data of the `DataTable`.
 
@@ -204,11 +204,11 @@ In the above code:
 * Each object in the data array corresponds to a row in the tabular representation of the data.
 * Each element in an object is represented by each object of the `schema`. The values in each object of the array represent the following:
   * Time according to the format
-  * Total Sales amount
+  * Total sales amount
 
 We are all set with our data to create the chart.
 
-> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](https://www.fusioncharts.com/dev/fusiontime/getting-started/change-default-aggregation).
+> By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more, click [here](https://www.fusioncharts.com/dev/fusiontime/getting-started/change-default-aggregation).
 
 Now, let's create the files to render the above chart.
 

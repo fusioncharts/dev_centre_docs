@@ -1862,43 +1862,43 @@
         "title": "Integrations",
         "children": [
           {
-            "title": "Create a chart in Angular",
+            "title": "Create a Chart in Angular",
             "path": "/fusiontime/integrations/angular/your-first-chart-using-angular-in-fusiontime"
           },
           {
-            "title": "Create a chart in AngularJS",
+            "title": "Create a Chart in AngularJS",
             "path": "/fusiontime/integrations/angularjs/your-first-chart-using-angularjs-in-fusiontime"
           },
           {
-            "title": "Create a chart in React",
+            "title": "Create a Chart in React",
             "path": "/fusiontime/integrations/react/your-first-chart-using-react-in-fusiontime"
           },
           {
-            "title": "Create a chart in Vue",
+            "title": "Create a Chart in Vue",
             "path": "/fusiontime/integrations/vuejs/your-first-chart-using-vuejs-in-fusiontime"
           },
           {
-            "title": "Create a chart in jQuery",
+            "title": "Create a Chart in jQuery",
             "path": "/fusiontime/integrations/jquery/your-first-chart-using-jquery-in-fusiontime"
           },
           {
-            "title": "Create a chart in Ember",
+            "title": "Create a Chart in Ember",
             "path": "/fusiontime/integrations/ember/your-first-chart-using-ember-in-fusiontime"
           },
           {
-            "title": "Create a chart in PHP",
+            "title": "Create a Chart in PHP",
             "path": "/fusiontime/integrations/php/your-first-chart-using-php-in-fusiontime"
           },
           {
-            "title": "Create a chart in Java",
+            "title": "Create a Chart in Java",
             "path": "/fusiontime/integrations/java/your-first-chart-using-java-in-fusiontime"
           },
           {
-            "title": "Create a chart in ASP.NET",
+            "title": "Create a Chart in ASP.NET",
             "path": "/fusiontime/integrations/aspnet/your-first-chart-using-aspnet-in-fusiontime"
           },
           {
-            "title": "Create a chart in Django",
+            "title": "Create a Chart in Django",
             "path": "/fusiontime/integrations/django/your-first-chart-using-django-in-fusiontime"
           }
         ]
