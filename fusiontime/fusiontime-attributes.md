@@ -206,17 +206,45 @@ new FusionCharts({
 	</tr>
 </table>
 
-```javascript
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='all'>All Data Plots</a></li>
+    <li><a data-toggle='specific'>Specific Data Plot</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab all-tab active'>
+<pre><code class="language-javascript">
 new FusionCharts({
   type: "timeseries",
   dataSource: {
     plotConfig: {
-      generic: {}, //Style too be applied across the chart
-      connectNullData: " " //Set the value to `true` to connect null data
+      generic: {
+        connectNullData: " " //Set the value to `true` to connect null data
+      } //Style too be applied across the chart
     }
   }
 });
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab specific-tab'>
+<pre><code class="language-javascript">
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    plotConfig: {
+      line: {
+        connectNullData: " " //Set the value to `true` to connect null data
+    } //Style too be applied only to line data plots
+  }
+});
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
 
 ## Reference Lines
 
