@@ -1,7 +1,7 @@
 ---
 title: Create your First Chart | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart.
-heading: Create your First Chart
+heading: Create Your First Chart
 ---
 
 FusionTime, like the name implies, is a product which is used to plot time-series data. FusionTime helps to evaluate patterns and trends in time-series data over a period of time.
