@@ -500,7 +500,7 @@ To configure the y-axis for the **time-series** chart, you can use the following
 		<td>`AxisType`</td>
 		<td>TimeSeriesYAxisObject.YAxisType</td>
 		<td>timeSeries.YAxes<br/>.AxisType = TimeSeriesYAxisObject<br/>.YAxisType<br/>.LINEAR;</td>
-		<td>The values of `y-axis` enum can either be `linear` or `log`. </td>
+		<td>The values of `YAxisType` enum can either be `LINEAR` or `LOG`. </td>
 	</tr>
 	<tr>
 		<td>`Format`</td>
@@ -693,5 +693,84 @@ A data marker marks a single point on the data plot of a **time-series** chart. 
 		<td>string</td>
 		<td>timeSeries.DataMarker.<br/>AddMarker("series name")<br/>.`Identifier`('.')<br/>.`Time`("Oct-1987")<br/>.`ToolText`("Stock market crash")<br/>.`Type`(TimeSeries.DataMarker<br/>.MarkerType.FLAG)<br/>.`TimeFormat`("%b-%Y");</td>
 		<td>The values of `MarkerType` enum can be `FLAG` and `PIN`.</td>
+	</tr>
+</table>
+
+## Date/time Format
+
+List of available `date/time` format is given below:
+
+<table>
+	<tr>
+		<th>Date/Time Format</th>
+		<th>Description</th>
+	</tr>
+		<tr>
+		<td>`%a`</td>
+		<td>Abbreviated weekday name.</td>
+	</tr>
+	<tr>
+		<td>`%A`</td>
+		<td>Full weekday name.</td>
+	</tr>
+	<tr>
+		<td>`%b`</td>
+		<td>Abbreviated month name.</td>
+	</tr>
+	<tr>
+		<td>`%B`</td>
+		<td>Full month name.</td>
+	</tr>
+	<tr>
+		<td>`%d`</td>
+		<td>Zero-padded day of the month as a decimal number [01,31].</td>
+	</tr>
+	<tr>
+		<td>`%H`</td>
+		<td>Hour (24-hour clock) as a decimal number [00,23].</td>
+	</tr>
+	<tr>
+		<td>`%I`</td>
+		<td>Hour (12-hour clock) as a decimal number [01,12].</td>
+	</tr>
+	<tr>
+		<td>`%j`</td>
+		<td>Day of a year as a decimal number [001,366].</td>
+	</tr>
+	<tr>
+		<td>`%m`</td>
+		<td>Month as a decimal number  [01,12].</td>
+	</tr>
+	<tr>
+		<td>`%M`</td>
+		<td>Minute as a decimal number [00,59].</td>
+	</tr>
+	<tr>
+		<td>`%L`</td>
+		<td>Milliseconds as a decimal number [000, 999].</td>
+	</tr>
+	<tr>
+		<td>`%p`</td>
+		<td>Can either be **AM** or **PM**.</td>
+	</tr>
+	<tr>
+		<td>`%S`</td>
+		<td>Second as a decimal number [00, 61].</td>
+	</tr>
+	<tr>
+		<td>`%y`</td>
+		<td>A year without century as a decimal number [00,99].</td>
+	</tr>
+	<tr>
+		<td>`%Y`</td>
+		<td>A year with century as a decimal number [2000, 1999].</td>
+	</tr>
+	<tr>
+		<td>`%Z`</td>
+		<td>Time Zone offset, such as -0700, -07:00, -07, or Z.</td>
+	</tr>
+	<tr>
+		<td>`%%`</td>
+		<td>A literal percent sign (%)</td>
 	</tr>
 </table>
