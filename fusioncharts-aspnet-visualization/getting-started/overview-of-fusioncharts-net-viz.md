@@ -28,12 +28,12 @@ FusionCharts.NET helps you avoid writing messy JavaScript and JSON code within y
 	</tr>
 	<tr>
 		<td>Data from different sources</td>
-		<td><i class="fc_cross_covered" style="color: #48b884 !important; font-size: 25px;"></i></td>
+		<td><i class="fc_cross_covered" style="font-size: 25px; color: #bcbccf"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
 	<tr>
 		<td>Static data</td>
-		<td><i class="fc_select" style="font-size: 25px; color: #bcbccf"></i></td>
+		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
 	<tr>
