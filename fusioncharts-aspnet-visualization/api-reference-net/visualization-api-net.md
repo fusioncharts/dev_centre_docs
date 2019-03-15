@@ -500,7 +500,7 @@ To configure the y-axis for the **time-series** chart, you can use the following
 		<td>`AxisType`</td>
 		<td>TimeSeriesYAxisObject.YAxisType</td>
 		<td>timeSeries.YAxes<br/>.AxisType = TimeSeriesYAxisObject<br/>.YAxisType<br/>.LINEAR;</td>
-		<td>The values of `y-axis` enum can either be `linear` or `log`. </td>
+		<td>The values of `YAxisType` enum can either be `LINEAR` or `LOG`. </td>
 	</tr>
 	<tr>
 		<td>`Format`</td>
