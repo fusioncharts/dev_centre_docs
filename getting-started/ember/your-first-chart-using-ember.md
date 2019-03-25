@@ -139,9 +139,9 @@ module.exports = function(defaults) {
     });
 
     // Import fusioncharts library
-    app.import('node-modules/fusioncharts/fusioncharts.js');
-    app.import('node-modules/fusioncharts/fusioncharts.charts.js');
-    app.import('node-modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    app.import('node_modules/fusioncharts/fusioncharts.js');
+    app.import('node_modules/fusioncharts/fusioncharts.charts.js');
+    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
     // Use `app.import` to import additional libraries/files
     return app.toTree();
 };
