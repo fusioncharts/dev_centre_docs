@@ -287,8 +287,7 @@ The code to update the cosmetic properties of other elements in **y-axis** is gi
           "context": Style
         },
         "line": Style,
-        "gridLine": Style,
-        "gridBand": Style
+        "grid-line": Style
       }
     }
   ]
