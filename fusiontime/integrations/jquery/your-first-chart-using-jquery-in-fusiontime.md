@@ -1,10 +1,10 @@
 ---
 title: Create a Chart in jQuery | FusionTime
 description: This article outlines the steps to be executed for creating your first chart in jQuery using FusionTime.
-heading: Create a chart in jQuery
+heading: Create a Chart in jQuery
 ---
 
-FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactive features, such as time navigator, date range selectors, tooltips with crosslines, interactive legend and more. These features enhance the experience of exploring and understanding time-series data.
+FusionTime is a JavaScript charting library that helps you visualize and explore time-series data. In FusionTime, you get lots of out-of-the-box interactive features, such as time navigator, date range selectors, tooltips with crosslines, interactive legend, and more. These features enhance the experience of exploring and understanding time series data.
 
 We have built a simple `jquery-fusioncharts` plugin which provides bindings for **FusionTime**. The `jquery-fusioncharts` plugin allows you to easily add interactive time-series charts to any **jQuery** project.
 
@@ -81,7 +81,7 @@ $ npm install fusioncharts --save
 </div>
 </div>
 
-## Create your First Chart
+## Create Your First Chart
 
 Let's create a time-series chart using `jquery-fusioncharts` component showing **Daily sales of a grocery store**.
 
@@ -101,12 +101,12 @@ The [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master
 | 1/7/2011 | 2573.82 |
 | 1/7/2011 | 609.98  |
 
-FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as it's data source. `DataTable`  is the tabular representation of data. To create the `DataTable`, you need to provide the following:
+FusionTime accepts a [DataTable](/fusiontime/fusiontime-data-engine/overview#what-is-a-datatable-) as the data source. `DataTable`  is the tabular representation of data. To create the `DataTable`, you need to provide the following:
 
 * `schema` - which defines the properties of the columns.  
-* `data` - values of each row and column of the DataTable.
+* `data` - which contains the values of each row and column of the DataTable.
 
-> For an instance of FusionTime, you can create `n` number of `DataTables`, but only 1 `DataStore`.
+> For an instance of FusionTime, you can create `n` number of `DataTables`, but only one `DataStore`.
 
 Now, let's learn how to prepare the schema and the data of the `DataTable`.
 
@@ -495,3 +495,4 @@ Also, include the following code in your `.html` file:
 </div>
 
 That's it! Your first chart in **jQuery** using **FusionTime** is ready.
+
