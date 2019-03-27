@@ -10,15 +10,17 @@
         caption: {
             text: 'Apple Inc. Stock Price'
         },
-        yAxis: [{
+        "yAxis": [{
             plot: {
-                open: 'Open',
-                high: 'High',
-                low: 'Low',
-                close: 'Close',
-                type: 'candlestick'
+                type: 'candlestick',
+				value: {
+				    open: 'Open',
+                    high: 'High',
+                    low: 'Low',
+                    close: 'Close'
+				}
             },
             title: 'Value'
-        }],
+        }]
     }
 }

@@ -10,14 +10,16 @@
         caption: {
             text: 'NASDAQ Composite Index'
         },
-        yAxis: [{
-            plot: [{
-                open: 'Open',
-                high: 'High',
-                low: 'Low',
-                close: 'Close',
-                type: 'ohlc'
-            }],
+        "yAxis": [{
+            plot: {
+                type: 'ohlc',
+				value: {
+				    open: 'Open',
+                    high: 'High',
+                    low: 'Low',
+                    close: 'Close'
+				}
+            },
             title: 'Value'
         }],
     }
