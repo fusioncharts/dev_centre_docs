@@ -42,7 +42,7 @@ Install **FusionCharts** using any of the following steps:
     &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 2 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -87,11 +87,11 @@ The angular gauge is shown below:
 
 The thresholds for the above sample have been defined using the following range:
 
-Range|Color|Hex Code|
--|-|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |  |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 

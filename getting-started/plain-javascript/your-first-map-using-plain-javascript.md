@@ -48,7 +48,7 @@ Install **FusionCharts** using any of the following steps:
     &lt;!-- Step 3 - Including the map definition file --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
     &lt;!-- Step 4 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -93,14 +93,14 @@ In this section, we will create a visualization using the **World Map** showing 
 
 The data for this chart is represented in the table below:
 
-State|Entity Name|Value|
--|-|-|-
-North America|NA|82|
-South America|SA|2.04|
-Asia|AS|1.78|
-Europe|EU|40|
-Africa|AF|2.58|
-Australia|AU|1.30|
+| State         | Entity Name | Value |
+| ------------- | ----------- | ----- |  |
+| North America | NA          | 82    |
+| South America | SA          | 2.04  |
+| Asia          | AS          | 1.78  |
+| Europe        | EU          | 40    |
+| Africa        | AF          | 2.58  |
+| Australia     | AU          | 1.30  |
 
 ## Convert tabular data into JSON format
 
@@ -743,7 +743,7 @@ webVisit.render();
     &lt;!-- Including the map definition file --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
 const webVisit = {
     type: 'maps/california',
