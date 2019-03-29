@@ -55,11 +55,11 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 	&lt;!-- Step 1 - Including AngularJS --&gt;
 	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script>
 	&lt;!-- Step 2 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 3 - Including the angularjs-fusioncharts directive--&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/angularjs-fusioncharts.min.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/angularjs-fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Step 4 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -110,8 +110,8 @@ The angular gauge is shown below:
 
 The thresholds for the above sample have been defined using the following range:
 
-| Range  | Color  | Hex Code |
-| ------ | ------ | -------- |  |
+| Range | Color | Hex Code |
+| ----- | ----- | -------- ||
 | 0-50   | Red    | #F2726F  |
 | 50-75  | Yellow | #FFC533  |
 | 75-100 | Green  | #62B58F  |
@@ -299,11 +299,11 @@ chartInstance.render()
     &lt;!-- Including AngularJS --&gt;
     &lt;script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script>
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Including the angularjs-fusioncharts directive--&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/angularjs-fusioncharts@4.0.1/dist/angular-fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;script type="text/javascript"&gt;
         var myApp = angular.module('myApp', ['ng-fusioncharts']);
         myApp.controller('MyController', ['$scope', function($scope) {

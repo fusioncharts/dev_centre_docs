@@ -52,8 +52,8 @@ The data structure needed to render this chart is given below:
     <!-- You need to include the following JS file to render the chart.
     When you make your own charts, make sure that the path to this JS file is correct.
     Else, you will get JavaScript errors. -->
-    <script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script> 
-    <script src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script> 
+    <script src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script> 
+    <script src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script> 
   </head>
    <body>
     <?php

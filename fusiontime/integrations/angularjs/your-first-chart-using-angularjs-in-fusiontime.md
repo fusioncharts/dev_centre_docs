@@ -53,11 +53,11 @@ $ npm install fusioncharts --save
     &lt;!-- Step 2 - Including angularjs-fusioncharts --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/angularjs-fusioncharts/dist/angular-fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusiontime file to render charts --&gt;
     &lt;script
       type="text/javascript"
-      src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"
+      src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"
     &gt;&lt;/script&gt;
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -326,7 +326,7 @@ $ browserify script.js -o bundle.js
     &lt;!-- Including the angularjs-fusioncharts directive--&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/angularjs-fusioncharts@4.0.1/dist/angular-fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Include FusionTime --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="./bundle.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript"&gt;
         var jsonify = res =&gt; res.json();
