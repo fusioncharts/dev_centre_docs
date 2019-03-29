@@ -12,7 +12,7 @@ In this page, we'll see how to install **FusionTime** and render an interactive 
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the `FusionCharts v13.3.3-sr.1` to get access to FusionTime. To install follow the steps below:
+Since FusionTime is distributed along with FusionCharts Suite, download/install the **FusionCharts** package to get access to FusionTime. To install follow the steps below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

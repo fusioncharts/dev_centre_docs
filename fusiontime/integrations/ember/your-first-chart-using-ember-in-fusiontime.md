@@ -14,7 +14,7 @@ In this page, we'll see how to install FusionTime and render an interactive time
 
 Install `FusionTime` and the `ember-fusioncharts` component using the following method:
 
-You can only build time-series charts if you have installed `FusionCharts v13.3.3-sr.1` or later, as well as `ember-fusioncharts v2.2.0` or later.
+You can only build time-series charts if you have installed **FusionCharts** package or later, as well as `ember-fusioncharts v2.2.0` or later.
 
 1. Install the `ember-fusioncharts` module
 

@@ -10,7 +10,7 @@ We have built a simple `FusionCharts server-side PHP` wrapper, which provides bi
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the `FusionCharts v13.3.3-sr.1` to get access to FusionTime. Note that you will also need `PHP 5` or later version to use FusionTime.
+Since FusionTime is distributed along with FusionCharts Suite, download/install the **FusionCharts** package to get access to FusionTime. Note that you will also need `PHP 5` or later version to use FusionTime.
 
 Install FusionCharts and the PHP wrapper component using following steps:
 

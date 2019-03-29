@@ -10,7 +10,7 @@ We have built a simple `FusionCharts server-side ASP.NET` wrapper, which provide
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the `FusionCharts v13.3.3-sr.1` to get access to FusionTime. Note that you will also need .NET Framework 3.5 or later version to use FusionTime.
+Since FusionTime is distributed along with FusionCharts Suite, download/install the **FusionCharts** package to get access to FusionTime. Note that you will also need .NET Framework 3.5 or later version to use FusionTime.
 
 > The **FusionCharts ASP.NET server-side wrapper** requires **.NET Framework 3.5** or higher.
 
