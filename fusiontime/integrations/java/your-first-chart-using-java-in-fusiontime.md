@@ -10,7 +10,7 @@ We have built a simple `FusionCharts server-side JSP` wrapper, which provides bi
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the `FusionCharts v13.3.3-sr.1` to get access to FusionTime. Note that you will also need Java 6 or later version to use FusionTime.
+Since FusionTime is distributed along with FusionCharts Suite, download/install the **FusionCharts** package to get access to FusionTime. Note that you will also need Java 6 or later version to use FusionTime.
 
 Install FusionCharts and the JSP wrapper component using following steps:
 
@@ -30,10 +30,10 @@ Install FusionCharts and the JSP wrapper component using following steps:
 <div class='tab cdn-tab active'>
 <pre><code class="language-java">
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
 // Include FusionTime file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>

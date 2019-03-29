@@ -10,7 +10,7 @@ We have built a simple `FusionCharts server-side ASP.NET` wrapper, which provide
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the `FusionCharts v13.3.3-sr.1` to get access to FusionTime. Note that you will also need .NET Framework 3.5 or later version to use FusionTime.
+Since FusionTime is distributed along with FusionCharts Suite, download/install the **FusionCharts** package to get access to FusionTime. Note that you will also need .NET Framework 3.5 or later version to use FusionTime.
 
 > The **FusionCharts ASP.NET server-side wrapper** requires **.NET Framework 3.5** or higher.
 
@@ -32,10 +32,10 @@ The consolidated code is shown below:
 <div class='tab cdn-tab active'>
 <pre><code class="language-php">
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
 // Include FusionTime file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -96,7 +96,7 @@ To define the schema, let's create a `schema.json` file and copy the following c
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
 ```json
-Let schema = [{
+[{
     "name": "Time",
     "type": "date",
     "format": "%-m/%-d/%Y"
@@ -127,7 +127,7 @@ Now that we have the schema ready, let's work on the data.
 [Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-aspnet/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
-var data = [
+[
     [
         "1/4/2011",
         16.448
@@ -177,7 +177,7 @@ Now, let's create the files to render the above chart.
 
 ### Render the chart
 
-Once you have the `data` and the `schema` ready, create a `.js` file and copy the following code:
+Once you have the `data` and the `schema` ready, create a `.aspx` file and copy the following code:
 
 ```javascript
 FusionTable fusionTable = new FusionTable(schema, data);
