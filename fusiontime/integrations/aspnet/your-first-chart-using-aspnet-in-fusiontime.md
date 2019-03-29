@@ -177,7 +177,7 @@ Now, let's create the files to render the above chart.
 
 ### Render the chart
 
-Once you have the `data` and the `schema` ready, create a `.js` file and copy the following code:
+Once you have the `data` and the `schema` ready, create a `.aspx` file and copy the following code:
 
 ```javascript
 FusionTable fusionTable = new FusionTable(schema, data);
