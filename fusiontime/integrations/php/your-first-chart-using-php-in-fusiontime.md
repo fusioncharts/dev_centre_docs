@@ -10,7 +10,7 @@ We have built a simple `FusionCharts server-side PHP` wrapper, which provides bi
 
 ## Installation
 
-Since FusionTime is distributed along with FusionCharts Suite, download/install the `FusionCharts v13.3.3-sr.1` to get access to FusionTime. Note that you will also need `PHP 5` or later version to use FusionTime.
+Since FusionTime is distributed along with FusionCharts Suite, download/install the **FusionCharts** package to get access to FusionTime. Note that you will also need `PHP 5` or later version to use FusionTime.
 
 Install FusionCharts and the PHP wrapper component using following steps:
 
@@ -30,10 +30,10 @@ Install FusionCharts and the PHP wrapper component using following steps:
 <div class='tab cdn-tab active'>
 <pre><code class="language-php">
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
 // Include FusionTime file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -121,7 +121,7 @@ Now that we have the schema ready, let's work on the data.
 [Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-aspnet/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
-var data = [
+[
     [
         "1/4/2011",
         16.448

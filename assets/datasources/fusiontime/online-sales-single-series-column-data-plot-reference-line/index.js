@@ -5,8 +5,6 @@
     height: 450,
     dataSource: {
         data: dataStore,
-        chart: {
-        },
         caption: {
             text: 'Online Sales of a SuperStore in the US'
         },
@@ -15,10 +13,10 @@
                 "value": "Sales",
                 "type": "line"
             },
-            "referenceLine": {
+            "referenceLine": [{
                 "label": "Daily Target",
                 "value": 300
-            }
+            }],
         }
     }
 }

@@ -55,9 +55,9 @@ $ npm install fusioncharts --save
 	&lt;!-- Including babel --&gt;
 	&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"&gt;&lt;/script&gt;
 	&lt;!-- Including the fusioncharts core library --&gt;
-	&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
 	&lt;!-- Including the fusiontime file to render charts --&gt;
-	&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
 	&lt;!-- Including react-fusioncharts component --&gt;
 	&lt;script type="text/javascript" src=" https://unpkg.com/react-fusioncharts@3.0.0/dist/react-fusioncharts.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
@@ -316,9 +316,9 @@ class SimpleTimeSeries extends React.Component {
     &lt;!-- Including babel --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusiontime library to render charts --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.timeseries.js"&gt;&lt;/script&gt;
     &lt;!-- Including react-fusioncharts component --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/react-fusioncharts@3.0.0/dist/react-fusioncharts.min.js"&gt;&lt;/script&gt;
     &lt;script type="text/jsx"&gt;
