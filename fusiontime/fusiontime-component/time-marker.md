@@ -125,11 +125,11 @@ xAxis: {
 }
 ```
 
-A sample chart with time spam markers is shown below:
+A sample chart with time span markers is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-3 %}
 
-In the above sample, the time marker has a specific height according to the width and height of the chart. You can also render the time span marker with a line from top to bottom (vertically) of the canvas by setting the value of `type` attribute to **full** within the `time marker` object.
+In the above sample, the time marker has a specific height according to the width and height of the chart. You can also render the time span marker with a line from top to bottom (vertically) of the canvas by setting the value of `type` attribute to **full** within the `timeMarker` object.
 
 Refer to the code given below:
 
