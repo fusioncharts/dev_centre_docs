@@ -17,7 +17,7 @@
             title: 'Pollutants Concentration (in µg/m³)',
             referenceLine: [{
                 label: 'Controlled NMHC',
-                value: '150',
+                value: '350',
                 style: {
                     marker: {
                         fill: '#A4A7D5',
@@ -26,7 +26,7 @@
                 }
             }, {
                 label: 'Controlled NO₂',
-                value: '80',
+                value: '420',
                 style: {
                     marker: {
                         fill: '#87DEDB',
