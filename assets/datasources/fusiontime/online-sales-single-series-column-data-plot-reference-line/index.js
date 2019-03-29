@@ -5,13 +5,6 @@
     height: 450,
     dataSource: {
         data: dataStore,
-        styleDefinition: {
-            "colorstyle": {
-                "fill": "#ffff00"
-            }
-        },
-        chart: {
-        },
         caption: {
             text: 'Online Sales of a SuperStore in the US'
         },
@@ -22,11 +15,7 @@
             },
             "referenceLine": [{
                 "label": "Daily Target",
-                "value": 300,
-                style: {
-                    text: "colorstyle",
-                    marker: "colorstyle"
-                }
+                "value": 300
             }],
         }
     }
