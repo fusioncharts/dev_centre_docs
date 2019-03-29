@@ -14,7 +14,7 @@ In this page, we'll see how to install FusionTime and render an interactive time
 
 Install `FusionTime` and the `ember-fusioncharts` component using the following method:
 
-You can only build time-series charts if you have installed **FusionCharts** package or later, as well as `ember-fusioncharts v2.2.0` or later.
+You can only build time-series charts if you have installed `FusionCharts v13.3.3-sr.1` or later, as well as `ember-fusioncharts v2.2.0` or later.
 
 1. Install the `ember-fusioncharts` module
 
@@ -103,7 +103,7 @@ To define the schema, let's create a `schema.json` file and copy the following c
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
 ```json
-Let schema = [{
+[{
     "name": "Time",
     "type": "date",
     "format": "%-m/%-d/%Y"
@@ -136,7 +136,7 @@ Data can be provided either in JSON format or 2D array format. We will use the 2
 Data for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
-var data = [
+[
     [
         "1/4/2011",
         16.448

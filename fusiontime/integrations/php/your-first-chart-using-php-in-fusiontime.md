@@ -121,7 +121,7 @@ Now that we have the schema ready, let's work on the data.
 [Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-aspnet/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
-var data = [
+[
     [
         "1/4/2011",
         16.448

@@ -149,7 +149,7 @@ Data can be provided either in JSON format or 2D array format. We will use the 2
 [Data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-jquery/data.json) for the above chart is too big to be shown here. A sample of it has been used in the data object defined below:
 
 ```json
-var data = [
+[
     [
         "1/4/2011",
         16.448
