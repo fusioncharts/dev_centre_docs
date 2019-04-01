@@ -61,6 +61,58 @@ If you want to use a different type of authentication apart from the two given a
 MsSqlClass msSql = new MsSqlClass("connectionstring", sourcetype, "sourcename")
 ```
 
+## CSV File
+
+### Local file
+
+The code to fetch data from a CSV file stored in the local computer is given below:
+
+```
+CsvFileSource csvFileSource = new CsvFileSource("filePath");
+```
+
+### File from another network
+
+The code to fetch data from a CSV file stored in another network is given below:
+
+```
+CsvFileSource csvFileSource = new CsvFileSource("filePath", "userName", "password");
+```
+
+### Dispose
+
+The code to dispose the `csvFileSource` object is given below:
+
+```
+csvFileSource.Dispose();
+```
+
+## JSON File
+
+### Local file
+
+The code to fetch data from a JSON file stored in the local computer is given below:
+
+```
+JsonFileSource jsonFileSource = new JsonFileSource("filePath");
+```
+
+### File from another network
+
+The code to fetch data from a JSON file stored in another network is given below:
+
+```
+JsonFileSource jsonFileSource = new JsonFileSource("filePath", "userName", "password");
+```
+
+### Dispose
+
+The code to dispose the `JsonFileSource` object is given below:
+
+```
+jsonFileSource.Dispose();
+```
+
 ## DataModel
 
 ### Create

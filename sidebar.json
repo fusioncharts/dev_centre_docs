@@ -2331,6 +2331,10 @@
             "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-api"
           },
           {
+            "title": "Data Source",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/data-source-data-engine"
+          },
+          {
             "title": "Select Fields",
             "path": "/fusioncharts-aspnet-visualization/data-engine/select-fields"
           },
