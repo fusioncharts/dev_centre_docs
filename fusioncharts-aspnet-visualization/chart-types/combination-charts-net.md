@@ -197,7 +197,7 @@ namespace TestProject
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
-            Charts.CombinationChart combiChart= new Charts.CombinationChart("mscombi2d");
+            Charts.CombinationChart combiChart= new Charts.CombinationChart("mscombi3d");
             // Set threeD
             combiChart.ThreeD = true;
             // set model as data source
@@ -259,7 +259,7 @@ The chart looks like as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination3d.js %}
 
-## Scroll Combination 2D Chart (Single Y)
+## Scroll Combination 2D Chart
 
 Now, let's create a scroll combination 2D chart to plot the **revenue** and the **profit** earned, in dollars, and the **profit** for Financial year 2017 to 2018.
 
