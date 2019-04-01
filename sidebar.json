@@ -2224,6 +2224,10 @@
             "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net"
           },
           {
+            "title": "Combination Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/combination-charts-net"
+          },
+          {
             "title": "Pie and Doughnut Charts",
             "path": "/fusioncharts-aspnet-visualization/chart-types/pie-doughnut-net"
           },
