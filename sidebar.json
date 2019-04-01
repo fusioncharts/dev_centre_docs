@@ -2369,6 +2369,10 @@
           {
             "title": "Pivot",
             "path": "/fusioncharts-aspnet-visualization/data-engine/pivot"
+          },
+          {
+            "title": "Pagination",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/pagination"
           }
         ]
       },
