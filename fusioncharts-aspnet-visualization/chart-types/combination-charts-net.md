@@ -75,8 +75,63 @@ Create the `mscombi2d.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```
-CODE
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using System.Net;
+using System.Text;
+
+namespace TestProject
+{
+    public partial class TestPage : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // initialixe DataModel object
+            DataModel model = new DataModel();
+            // Create object of JsonFileSource. Provide file path as constructor parameter
+            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\mscombi2d.json"));
+            // Add json source in datasources store of model
+            model.DataSources.Add(jsonFileSource);
+            // initialize combination chart object
+            Charts.CombinationChart combiChart= new Charts.CombinationChart("mscombi2d");
+            // set model as data source
+            combiChart.Data.Source = model;
+            // provide field name, which should be rendered as line column
+            combiChart.Data.ColumnPlots("Actual Revenue");
+            // provide field name, which should be rendered as line plot
+            combiChart.Data.LinePlots("Projected Revenue");
+            // provide field name, which should be rendered as area plot
+            combiChart.Data.AreaPlots("Profit");
+            // Set XAxis caption
+            combiChart.XAxis.Text = "Month";
+            // Set YAxis caption
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)";
+            // set chart caption
+            combiChart.Caption.Text = "Harrys's Supermart";
+            // Set chart sub caption
+            combiChart.SubCaption.Text = "Sales analysis of last year";
+            // set width, height
+            combiChart.Width.Pixel(600);
+            combiChart.Height.Pixel(500);
+            // set theme
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render chart
+            Literal1.Text = combiChart.Render();
+        }
+    }
+}
 ```
 
 The `.aspx` template for the above sample is shown below:
@@ -114,8 +169,65 @@ Create a mscombi3d.aspx.cs and refer to the code below:
 
 The code is shown below:
 
-```
-CODE
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using System.Net;
+using System.Text;
+
+namespace TestProject
+{
+    public partial class TestPage : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // initialixe DataModel object
+            DataModel model = new DataModel();
+            // Create object of JsonFileSource. Provide file path as constructor parameter
+            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\mscombi3d.json"));
+            // Add json source in datasources store of model
+            model.DataSources.Add(jsonFileSource);
+            // initialize combination chart object
+            Charts.CombinationChart combiChart= new Charts.CombinationChart("mscombi2d");
+            // Set threeD
+            combiChart.ThreeD = true;
+            // set model as data source
+            combiChart.Data.Source = model;
+            // provide field name, which should be rendered as line column
+            combiChart.Data.ColumnPlots("Actual Revenue");
+            // provide field name, which should be rendered as line plot
+            combiChart.Data.LinePlots("Projected Revenue");
+            // provide field name, which should be rendered as area plot
+            combiChart.Data.AreaPlots("Profit");
+            // Set XAxis caption
+            combiChart.XAxis.Text = "Month";
+            // Set YAxis caption
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)";
+            // set chart caption
+            combiChart.Caption.Text = "Harrys's Supermart";
+            // Set chart sub caption
+            combiChart.SubCaption.Text = "Sales analysis of last year";
+            // set width, height
+            combiChart.Width.Pixel(600);
+            combiChart.Height.Pixel(500);
+            // set theme
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render chart
+            Literal1.Text = combiChart.Render();
+        }
+    }
+}
 ```
 
 The `.aspx` template for the above sample is shown below:
@@ -192,8 +304,69 @@ Create a scrollcombi2d.aspx.cs and refer to the code below:
 
 The code is shown below:
 
-```
-CODE
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using System.Net;
+using System.Text;
+
+namespace TestProject
+{
+    public partial class TestPage : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // initialixe DataModel object
+            DataModel model = new DataModel();
+            // Create object of JsonFileSource. Provide file path as constructor parameter
+            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\scrollcombi2d.json"));
+            // Add json source in datasources store of model
+            model.DataSources.Add(jsonFileSource);
+            // initialize combination chart object
+            Charts.CombinationChart combiChart= new Charts.CombinationChart("scrollcombi2d");
+            // set model as data source
+            combiChart.Data.Source = model;
+            // enable scrolling
+            combiChart.Scrollable = true;
+            // provide field name, which should be rendered as line column
+            combiChart.Data.ColumnPlots("Actual Revenue");
+            // provide field name, which should be rendered as spline area plot
+            combiChart.Data.LinePlots("Projected Revenue");
+            // provide field name, which should be rendered as spline plot
+            combiChart.Data.AreaPlots("Profit");
+            // Set XAxis caption
+            combiChart.XAxis.Text = "Month";
+            // Set YAxis caption
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)";
+            // enable dual y
+            combiChart.DualY = true;
+            // set secondary y axis text
+            combiChart.SecondaryYAxis.Text = "Profit %";
+            // set chart caption
+            combiChart.Caption.Text = "Revenues and Profit";
+            // Set chart sub caption
+            combiChart.SubCaption.Text = "For last year";
+            // set width, height
+            combiChart.Width.Pixel(600);
+            combiChart.Height.Pixel(500);
+            // set theme
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render chart
+            Literal1.Text = combiChart.Render();
+        }
+    }
+}
 ```
 
 The `.aspx` template for the above sample is shown below:
