@@ -63,7 +63,7 @@ MsSqlClass msSql = new MsSqlClass("connectionstring", sourcetype, "sourcename")
 
 ## CSV File
 
-### Local file
+### Local/another network file
 
 The code to fetch data from a CSV file stored in the local computer is given below:
 
@@ -89,7 +89,7 @@ csvFileSource.Dispose();
 
 ## JSON File
 
-### Local file
+### Local/another network file
 
 The code to fetch data from a JSON file stored in the local computer is given below:
 

@@ -2351,6 +2351,10 @@
             "path": "/fusioncharts-aspnet-visualization/data-engine/order-by"
           },
           {
+            "title": "Calculated Column",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/calculated-column"
+          },
+          {
             "title": "GroupBy",
             "path": "/fusioncharts-aspnet-visualization/data-engine/group-by"
           },
