@@ -1,6 +1,6 @@
 ---
 title: Pagination | FusionCharts
-description: This article outlines the steps to work on pagination.
+description: Extract data only from a specific page and return the resultant data into another instance of the DataModel.
 heading: Pagination
 ---
 
