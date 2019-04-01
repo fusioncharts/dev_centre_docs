@@ -26,4 +26,5 @@ DataModel dataModel = model.GetItemsFromPages(2, 3);
 
 In the above code:
 
+- `model` is an object of the source DataModel.
 - `GetItemsFromPages(int, int)` is a method of the `model` object. It extracts records only from pages 2 and 3.
