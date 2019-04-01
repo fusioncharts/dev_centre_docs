@@ -10,7 +10,7 @@ heading: Data Engine API
 
 The code to create a StaticSource is given below:
 
-```
+```csharp
 StaticSource source = new StaticSource(dataTable);
 ```
 
@@ -18,7 +18,7 @@ StaticSource source = new StaticSource(dataTable);
 
 The code to dispose the `StaticSource` object is given below:
 
-```
+```csharp
 source.Dispose()
 ```
 
@@ -34,7 +34,7 @@ Before the FusionCharts DataEngine can fetch data from MSSQL, it needs to connec
 
 If the MSSQL server has SQL authentication, refer to the command given below:
 
-```
+```csharp
 /* create object */
 /* SQL Authentication */
 
@@ -45,7 +45,7 @@ MsSqlClass msSql = new MsSqlClass("username", "password", "servername", "databas
 
 If the MSSQL server has Windows authentication, refer to the command given below:
 
-```
+```csharp
 /* create object */
 /* Windows Authentication */
 MsSqlClass msSql = new MsSqlClass("servername","databasename", sourcetype, "sourcename")|
@@ -55,7 +55,7 @@ MsSqlClass msSql = new MsSqlClass("servername","databasename", sourcetype, "sour
 
 If you want to use a different type of authentication apart from the two given above, you need to provide a connection string to the DataEngine. Refer to the command given below:
 
-```
+```csharp
 /* create object */
 /* provide connection string from user end */
 MsSqlClass msSql = new MsSqlClass("connectionstring", sourcetype, "sourcename")
@@ -67,7 +67,7 @@ MsSqlClass msSql = new MsSqlClass("connectionstring", sourcetype, "sourcename")
 
 The code to fetch data from a CSV file stored in the local computer is given below:
 
-```
+```csharp
 CsvFileSource csvFileSource = new CsvFileSource("filePath");
 ```
 
@@ -75,7 +75,7 @@ CsvFileSource csvFileSource = new CsvFileSource("filePath");
 
 The code to fetch data from a CSV file stored in another network is given below:
 
-```
+```csharp
 CsvFileSource csvFileSource = new CsvFileSource("filePath", "userName", "password");
 ```
 
@@ -83,7 +83,7 @@ CsvFileSource csvFileSource = new CsvFileSource("filePath", "userName", "passwor
 
 The code to dispose the `csvFileSource` object is given below:
 
-```
+```csharp
 csvFileSource.Dispose();
 ```
 
@@ -93,7 +93,7 @@ csvFileSource.Dispose();
 
 The code to fetch data from a JSON file stored in the local computer is given below:
 
-```
+```csharp
 JsonFileSource jsonFileSource = new JsonFileSource("filePath");
 ```
 
@@ -101,7 +101,7 @@ JsonFileSource jsonFileSource = new JsonFileSource("filePath");
 
 The code to fetch data from a JSON file stored in another network is given below:
 
-```
+```csharp
 JsonFileSource jsonFileSource = new JsonFileSource("filePath", "userName", "password");
 ```
 
@@ -109,7 +109,7 @@ JsonFileSource jsonFileSource = new JsonFileSource("filePath", "userName", "pass
 
 The code to dispose the `JsonFileSource` object is given below:
 
-```
+```csharp
 jsonFileSource.Dispose();
 ```
 
@@ -119,7 +119,7 @@ jsonFileSource.Dispose();
 
 The code to create a DataModel is given below:
 
-```
+```csharp
 DataModel model = new DataModel();
 ```
 
@@ -127,7 +127,7 @@ DataModel model = new DataModel();
 
 The code to dispose the `DataModel` object is given below:
 
-```
+```csharp
 model.Dispose()
 ```
 
@@ -135,7 +135,7 @@ model.Dispose()
 
 The code to add a DataSource to the `DataModel` is given below:
 
-```
+```csharp
 model.DataSources.Add(source);
 ```
 
@@ -143,7 +143,7 @@ model.DataSources.Add(source);
 
 The code to retrieve data from the `DataModel` is given below:
 
-```
+```csharp
 DataTable table = model.Data // Output of the data format is DataTable
 ```
 
@@ -153,7 +153,7 @@ DataTable table = model.Data // Output of the data format is DataTable
 
 The code is given below:
 
-```
+```csharp
 List<Schema> modelSchema = model.ColumnSchema
 ```
 
@@ -163,7 +163,7 @@ To set the date/time format of the data, set the `DataSourceDateformat` property
 
 The code is given below:
 
-```
+```csharp
 model.DataSourceDateformat = "MM/dd/yyyy hh:mm tt";
 ```
 
@@ -175,7 +175,7 @@ The code to create instance of `GroupColumn` class is shown below:
 
 > This instance will be used to group more than one column of a tabular data.
 
-```
+```csharp
 GroupColumn model = new GroupColumn {
 	"Sales",
 	"Quantity",
@@ -199,7 +199,7 @@ The code to create instance of `SortColumn` class is shown below:
 
 > This instance will be used to sort more than one column of a tabular data.
 
-```
+```csharp
 SortColumn model = new SortColumn {
 	{"1994",SortColumn.Order.DESC },
   	{"1995",SortColumn.Order.DESC },
@@ -223,7 +223,7 @@ The code to create instance of `Aggregation` class is shown below:
 
 > This instance will be used to aggregate more than one column of a tabular data.
 
-```
+```csharp
 Aggregation model = new Aggregation {
 	{ "Quantity", Aggregation.Function.COUNT },
 	{ "Sales", Aggregation.Function.SUM }
