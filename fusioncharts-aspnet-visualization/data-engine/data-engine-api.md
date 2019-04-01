@@ -237,3 +237,24 @@ The code to dispose the aggregated is given below:
 ```csharp
 model.Dispose()
 ```
+
+## Create/Dispose Calculated Column
+
+### Create
+
+To create a new calculated column, you need to create an instance of the `CalculatedColumns` class. Refer to the code given below:
+
+```csharp
+CalculatedColumns calculatedColumns = new CalculatedColumns {
+    {"SellingPrice - (Cost * Unit)","Profit" },
+    {"ExpiryYear - ManufactureYear","Validity" }
+};
+```
+
+### Dispose
+
+The code to dispose the `calculatedColumns` object is given below:
+
+```csharp
+calculatedColumn.Dispose();
+```
