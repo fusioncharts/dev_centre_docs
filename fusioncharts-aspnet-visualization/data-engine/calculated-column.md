@@ -20,12 +20,12 @@ CalculatedColumns calculatedColumns = new CalculatedColumns {
 In the above code:
 
 - `calculatedColumns` is an object of the `CalculatedColumns` class.
-- "SellingPrice - (Cost \* Unit)" is the expression provided by the user. On program execution, it creates a new column "Profit" with the result of the expression, and generates a new DataModel with the resultant data. Note that "SellingPrice", "Cost", and "Unit" are all columns from `model`, the source DataModel object.
-- "ExpiryYear - ManufactureYear" is the expression provided by the user. On program execution, it creates a new column "Validity", with the result of the expression, and generates a new DataModel with the resultant data. Note that "ManufactureYear" and "ExpiryYear" are both columns from `model`, the source DataModel object.
+- "SellingPrice - (Cost \* Unit)" is the expression provided by the user. On program execution, it creates a new column "Profit" with the result of the expression, and generates a new DataModel with the resultant data. Note that "SellingPrice", "Cost", and "Unit" are all columns from `model`, the source `DataModel` object.
+- "ExpiryYear - ManufactureYear" is the expression provided by the user. On program execution, it creates a new column "Validity", with the result of the expression, and generates a new DataModel with the resultant data. Note that "ManufactureYear" and "ExpiryYear" are both columns from `model`, the source `DataModel` object.
 
 #### Get result in DataModel
 
-The code to get the result from the steps mentioned in the previous section into the DataModel is given below:
+The code to get the result from the steps mentioned in the previous section into the `DataModel` is given below:
 
 ```csharp
 DataModel resultModel = model.AddNewCalculatedColumns(calculatedColumns);
