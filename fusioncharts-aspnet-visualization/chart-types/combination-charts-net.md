@@ -39,11 +39,9 @@ The data for the chart is shown in the table below:
 | November  | 19000          | 22000             | 2000   |
 | December  | 23000          | 23000             | 7000   |
 
-
-
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_chart fusioncharts-net-visualization-combination2d.js %}
 
 Click here to edit the above combination chart.
 
@@ -82,54 +80,12 @@ Create the `mscombi2d.aspx.cs` file and do the following:
 The code is shown below:
 
 ```
-
 CODE
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
 ```
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mscombi2d.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.mscombi2d" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-
-    <title></title>
-
-</head>
-
-<body>
-
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-   
-
-    <form id="form1" runat="server">
-
-        <div>
-
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-
-        </div>
-
-        <div>
-
-            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-
-        </div>
-
-    </form>
-
-</body>
-
-</html>
 
 ```
 
@@ -142,63 +98,24 @@ Create a mscombi3d.aspx.cs and refer to the code below:
 The code is shown below:
 
 ```
-
 CODE
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
 ```
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mscombi3d.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.mscombi3d" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-
-    <title></title>
-
-</head>
-
-<body>
-
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-   
-
-    <form id="form1" runat="server">
-
-        <div>
-
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-
-        </div>
-
-        <div>
-
-            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-
-        </div>
-
-    </form>
-
-</body>
-
-</html>
-
 ```
+
+The chart looks like as shown below:
+
+{% embed_chart fusioncharts-net-visualization-combination3d.js %}
 
 ## 2D Dual Y-axis Combination Chart
 
 Now, let's create a dual y-axis combination chart in 2D. In this chart, we will show a comparison between the revenue, profit, and the profit percentage. The revenue and the profit will be shown as the amount in dollars using the **primary y-axis**, and the profit percentage will be shown in percentage using the **secondary y-axis**.
 
 The data for the chart is shown in the table below:
-
 
 | Month     | Revenues | Profits | Profit % |
 | --------- | -------- | ------- | -------- |
@@ -215,11 +132,9 @@ The data for the chart is shown in the table below:
 | November  | 19000    | 2000    | 10.52    |
 | December  | 23000    | 7000    | 30.43    |
 
-
-
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_chart fusioncharts-net-visualization-combination2ddy.js %}
 
 Click here to edit the above combination chart.
 
@@ -228,54 +143,12 @@ Create a mscombidy2d.aspx.cs and refer to the code below:
 The code is shown below:
 
 ```
-
 CODE
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
 ```
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mscombidy2d.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.mscombidy2d" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-
-    <title></title>
-
-</head>
-
-<body>
-
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-   
-
-    <form id="form1" runat="server">
-
-        <div>
-
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-
-        </div>
-
-        <div>
-
-            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-
-        </div>
-
-    </form>
-
-</body>
-
-</html>
 
 ```
 
@@ -284,7 +157,6 @@ The `.aspx` template for the above sample is shown below:
 Now, let's create a scroll combination 2D chart to plot the **revenue** and the **profit** earned, in dollars, and the **profit** for Financial year 2017 to 2018.
 
 The data for the chart is shown in the table below:
-
 
 | Month           | Actual Revenue | Projected Revenue | Profit |
 | --------------- | -------------- | ----------------- | ------ |
@@ -313,11 +185,9 @@ The data for the chart is shown in the table below:
 | November, 2018  | 29000          | 23000             | 8000   |
 | December, 2018  | 26000          | 25000             | 11000  |
 
-
-
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_chart fusioncharts-net-visualization-combination-scroll2d.js %}
 
 Click here to edit the above combination chart.
 
@@ -326,54 +196,12 @@ Create a scrollcombi2d.aspx.cs and refer to the code below:
 The code is shown below:
 
 ```
-
 CODE
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
 ```
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="scrollcombi2d.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.scrollcombi2d" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-
-    <title></title>
-
-</head>
-
-<body>
-
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-   
-
-    <form id="form1" runat="server">
-
-        <div>
-
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-
-        </div>
-
-        <div>
-
-            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-
-        </div>
-
-    </form>
-
-</body>
-
-</html>
 
 ```
 
@@ -382,7 +210,6 @@ The `.aspx` template for the above sample is shown below:
 Now, let's create a dual y-axis scroll combination 2D chart. Here we will plot the **revenue** and the **profit** earned, in dollars, and the **profit percent** for Financial year 2017 to 2018.
 
 The data for the chart is shown in the table below:
-
 
 | Month           | Actual Revenue | Profit | Profit Percent |
 | --------------- | -------------- | ------ | -------------- |
@@ -411,11 +238,9 @@ The data for the chart is shown in the table below:
 | November, 2018  | 29000          | 8000   | 17.39          |
 | December, 2018  | 26000          | 11000  | 25             |
 
-
-
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_chart fusioncharts-net-visualization-combination-scroll2ddy.js %}
 
 Click here to edit the above combination chart.
 
@@ -424,54 +249,11 @@ Create a scrollcombidy2d.aspx.cs and refer to the code below:
 The code is shown below:
 
 ```
-
 CODE
-
 ```
 
 The `.aspx` template for the above sample is shown below:
 
 ```
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="scrollcombidy2d.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.scrollcombidy2d" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-
-    <title></title>
-
-</head>
-
-<body>
-
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-<script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-   
-
-    <form id="form1" runat="server">
-
-        <div>
-
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-
-        </div>
-
-        <div>
-
-            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
-
-        </div>
-
-    </form>
-
-</body>
-
-</html>
-
 ```
-
