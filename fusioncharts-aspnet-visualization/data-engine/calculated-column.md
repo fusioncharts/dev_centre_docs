@@ -6,7 +6,7 @@ heading: Calculated Column
 
 A calculated column is a column generated as a result of a mathematical expression applied to one or more columns in a `DataModel`. You can provide more than one mathematical expression on multiple columns of a `DataModel`. This will generate a new `DataModel` which will contain the existing and the calculated columns.
 
-#### Create an instance of `CalculatedColumns`
+#### Create
 
 To create a new calculated column, refer to the code below:
 
@@ -36,7 +36,7 @@ In the above code:
 - `model` is an object of the source DataModel.
 - `AddNewCalculatedColumns(calculatedColumns)` is a method of the `model` object.
 
-#### Dispose the `calculatedColumns` instance
+#### Dispose
 
 The code to dispose the `calculatedColumns` object is given below:
 

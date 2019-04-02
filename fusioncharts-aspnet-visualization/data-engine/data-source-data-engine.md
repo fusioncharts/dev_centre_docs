@@ -86,7 +86,7 @@ MsSqlClass msSql = new MsSqlClass("connectionstring", sourcetype, "sourcename")
 
 In the above command:
 
-- `connectionstring` is the connection string.
+- `connectionstring` is a string that specifies information about a data source and the means of connecting to it. The connection string may include attributes such as the **name** of the driver, **server**, **database** and security information such as `username` and `password`.
 - `sourcetype` is the type of data source you want DataEngine to fetch the data from. It is an enum of type `DataBaseClass.SourceType`. It can take the values of `TABLE`, `VIEW`, or `QUERY`.
 - `sourcename` is the name of the data source. If you want the DataEngine to use a table or a view as the source, provide the name of the respective table/view. If you want to use the result of a query as the source, provide the query string.
 
