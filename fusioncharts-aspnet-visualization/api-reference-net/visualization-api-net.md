@@ -821,6 +821,357 @@ Data is an object used to define the values to be plotted for individual data se
 timeSeries.Data.SourcePathHandler = “/path/to/local/DataSourceHandler.ashx”;
 ```
 
+### `Plot Configuration` (time-series)
+
+#### Generic Plot
+
+Generic plot configurations apply to all plot types in your chart. The types of generic plot are given below:
+
+**AnchorStyle object**
+
+Set the anchor style in your chart using the `AnchorStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.AnchorStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.AnchorStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.AnchorStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.AnchorStyle.StrokeWidth = 2;
+```
+
+In the above code:
+
+* `timeSeries`, `PlotConfig`, `Generic`, and `AnchorStyle` are objects.
+
+* `FillColor` is a properties of the `AnchorStyle` object, which accepts the hex code or the name of a color as a string.
+
+* `StrokeLineCap` is a properties of the `AnchorStyle` object. It accepts the shape of the anchor. Here, its value is set as `ROUND` via the `PlotStyleConfigurationObject.LineCap` enum. 
+
+* `StrokeWidth` is a property of `AnchorStyle`, and accepts the thickness of the anchor border as an integer. Here, its value is set as `2`.
+
+**AreaStyle object**
+
+Configure the style of your area plot using the `AreaStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.AreaStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.AreaStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.AreaStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.AreaStyle.StrokeWidth = 2;
+```
+
+**BearStyle object**
+
+Configure the style of your bear plot using the `BearStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.BearStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.BearStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.BearStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.BearStyle.StrokeWidth = 2;
+```
+
+**BullStyle object**
+
+Configure the style of your bull plot using the `BullStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.BullStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.BullStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.BullStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.BullStyle.StrokeWidth = 2;
+```
+
+**ColumnStyle object**
+
+Configure the style of your column plot using the `ColumnStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.ColumnStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.ColumnStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.ColumnStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.ColumnStyle.StrokeWidth = 2;
+```
+
+**LineStyle object**
+
+Configure the style of your bull plot using the `BullStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.LineStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.PlotStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData properties**
+
+Connect the points with null value in your line or area plots using the Boolean type `ConnectNullData` properties of the `Generic` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.ConnectNullData = true;
+```
+
+#### Column Plot
+
+Configure the style of columns in column charts using properties of the `ColumnStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Column.ColumnStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Column.ColumnStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Column.ColumnStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Column.ColumnStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your column chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Column.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Column.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Column.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Column.PlotStyle.StrokeWidth = 2;
+```
+
+#### Line Plot
+
+Configure the style of lines in line charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Line.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Line.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Line.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Line.LineStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your line chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Line.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Line.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Line.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Line.PlotStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData properties**
+
+Connect the points with null value in your line plots using the Boolean type `ConnectNullData` properties of the `Line` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Line.ConnectNullData = true;
+```
+
+#### StepLine plot
+
+Configure the style of lines in step-line charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepLine.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.StepLine.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.StepLine.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.StepLine.LineStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your step-line chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepLine.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.StepLine.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.StepLine.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.StepLine.PlotStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData properties**
+
+Connect the points with null value in your step-line plots using the Boolean type `ConnectNullData` properties of the `StepLine` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepLine.ConnectNullData = true;
+```
+
+#### SmoothLine plot
+
+Configure the style of lines in smooth line charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothLine.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.SmoothLine.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.SmoothLine.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.SmoothLine.LineStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your smooth line chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothLine.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.SmoothLine.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.SmoothLine.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.SmoothLine.PlotStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData properties**
+
+Connect the points with null value in your smooth line plots using the Boolean type `ConnectNullData` properties of the `SmoothLine` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothLine.ConnectNullData = true;
+```
+
+#### Area plot
+
+Configure the style of areas in area charts using properties of the `AreaStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Area.AreaStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Area.AreaStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Area.AreaStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Area.AreaStyle.StrokeWidth = 2;
+```
+
+**LineStyle object**
+
+Configure the style of boundary lines in area charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Area.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Area.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Area.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Area.LineStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData Properties**
+
+Connect the points with null value in your area plot using the Boolean type `ConnectNullData` properties of the `Area` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Area.ConnectNullData = true;
+```
+
+#### StepArea plot
+
+Configure the style of areas in step-area charts using properties of the `AreaStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepArea.AreaStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.StepArea.AreaStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.StepArea.AreaStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.StepArea.AreaStyle.StrokeWidth = 2;
+```
+
+**LineStyle object**
+
+Configure the style of boundary lines of the plot in step-area charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepArea.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.StepArea.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.StepArea.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.StepArea.LineStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData Properties**
+
+Connect the points with null value in your step-area plot using the Boolean type `ConnectNullData` properties of the `Area` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Area.ConnectNullData = true;
+```
+
+#### SmoothArea plot
+
+Configure the style of areas in step-area charts using properties of the `AreaStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothArea.AreaStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.SmoothArea.AreaStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.SmoothArea.AreaStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.SmoothArea.AreaStyle.StrokeWidth = 2;
+```
+
+**LineStyle object**
+
+Configure the style of boundary lines in smooth area charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothArea.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.SmoothArea.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.SmoothArea.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.SmoothArea.LineStyle.StrokeWidth = 2;|
+```
+
+**ConnectNullData Properties**
+
+Connect the points with null value in your smooth area plot using the Boolean type `ConnectNullData` properties of the `SmoothArea` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothArea.ConnectNullData = true;
+```
+
+#### OHLC plot
+
+**BearStyle Object**
+
+Configure bear style OHLC plots using properties of the `BearStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.OHLC.BearStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.OHLC.BearStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.OHLC.BearStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.OHLC.BearStyle.StrokeWidth = 2;
+```
+
+**BullStyle object**
+
+Configure bull style OHLC plots using properties of the `BullStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.OHLC.BullStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.OHLC.BullStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.OHLC.BullStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.OHLC.BullStyle.StrokeWidth = 2;
+```
+
+#### CandleStick plot
+
+**BearStyle Object**
+
+Configure bear style Candlestick plots using properties of the `BearStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.CandleStick.BearStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.CandleStick.BearStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.CandleStick.BearStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.CandleStick.BearStyle.StrokeWidth = 2;
+```
+
+**BullStyle object**
+
+Configure bull style Candlestick plots using properties of the `BullStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.CandleStick.BullStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.CandleStick.BullStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.CandleStick.BullStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.CandleStick.BullStyle.StrokeWidth = 2;
+```
+
 ### `Data Marker`
 
 > `Data marker` API's only have support on **time-series** charts.
