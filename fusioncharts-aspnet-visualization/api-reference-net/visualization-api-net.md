@@ -620,6 +620,12 @@ To configure the y-axis for the **time-series** chart, you can use the following
 		<td><strong>1.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesAggregation<br/>.Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA, TimeSeriesAggregation<br/>.Function.LAST);<strong>5.</strong> timeSeries.YAxes.Plot<br/>.Add("label", false);<br/><br/><strong>6.</strong> timeSeries.YAxes.Plot<br/>.Add("label", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA,<br/> TimeSeriesAggregation.Function<br/>.LAST,false);<br/><br/></td>
 		<td>Add plots when we render multiple data plots in a chart.</td>
 	</tr>
+	<tr>
+		<td>`Orientation`</td>
+		<td>TimeSeriesYAxisObject.OrientationType</td>
+		<td>timeSeries.YAxes.Orientation = TimeSeriesYAxisObject.OrientationType.LEFT;</td>
+		<td>The values of `Orientation` enum can be `LEFT`, or `RIGHT`.</td>
+	</tr>
 </table>
 
 ### `Data` (column, bar, line, area, spline, stack, combination)
