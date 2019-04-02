@@ -51,27 +51,19 @@ Create the `CombinationChart.aspx.cs` file and do the following:
 
 - Create `DataTable`.
 
-- Retrieve data using a database query.
+- Create an object of `JsonFileSource`. Provide file path as constructor parameter.
 
-- Set server name.
+- Add `json` source in datasources store of model.
 
-- Set `DataBase` name.
+- Initialize combination chart object.
 
-- Connect with `DataBase` using a connection string.
+- Set model as the data source
 
-- Create `StaticSource` using the `DataTable`.
+- Provide field name as column, line or area plot for the combination chart.
 
-- Create an instance of `DataModel` class.
+- Set chart's **caption**, **sub-caption**, **width** and **height**.
 
-- Add `DataSource` to the `DataModel`.
-
-- Instantiate Line Chart.
-
-- Set Chart's width and height.
-
-- Set `DataModel` instance as the data source of the chart.
-
-- Set Chart title.
+- Set the **theme** of the chart.
 
 - Finally, use a container using `<div>` to render the chart.
 
@@ -110,7 +102,7 @@ namespace TestProject
             Charts.CombinationChart combiChart= new Charts.CombinationChart("mscombi2d");
             // set model as data source
             combiChart.Data.Source = model;
-            // provide field name, which should be rendered as line column
+            // provide field name, which should be rendered as column plot
             combiChart.Data.ColumnPlots("Actual Revenue");
             // provide field name, which should be rendered as line plot
             combiChart.Data.LinePlots("Projected Revenue");
@@ -381,7 +373,7 @@ The `.aspx` template for the above sample is shown below:
 </html>
 ```
 
-## Scroll Combination 2D Chart
+## Scroll Combination 2D Chart (Single Y)
 
 Now, let's create a scroll combination 2D chart to plot the **revenue** and the **profit** earned, in dollars, and the **profit** for Financial year 2017 to 2018.
 
