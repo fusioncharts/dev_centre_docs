@@ -8,11 +8,15 @@ Combination charts can be rendered either in 2D or 3D, can have single or dual y
 
 In this page, we will learn how to create the following combination charts:
 
-* 2D Single Y-axis Combination Chart
+- 2D Single Y-axis Combination Chart
 
-* 3D Single Y-axis Combination Chart
+- 3D Single Y-axis Combination Chart
 
-* Scroll Combination 2D Chart
+- 2D Dual Y-axis Combination Chart
+
+- Scroll Combination 2D Chart (Single Y)
+
+- Scroll Combination 2D Chart (Dual Y)
 
 ## 2D Single Y-axis Combination Chart
 
@@ -43,33 +47,33 @@ The chart will look as shown below:
 
 Create the `mscombi2d.aspx.cs` file and do the following:
 
-* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+- Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 
-* Create `DataTable`.
+- Create `DataTable`.
 
-* Retrieve data using a database query.
+- Retrieve data using a database query.
 
-* Set server name.
+- Set server name.
 
-* Set `DataBase` name.
+- Set `DataBase` name.
 
-* Connect with `DataBase` using a connection string.
+- Connect with `DataBase` using a connection string.
 
-* Create `StaticSource` using the `DataTable`.
+- Create `StaticSource` using the `DataTable`.
 
-* Create an instance of `DataModel` class.
+- Create an instance of `DataModel` class.
 
-* Add `DataSource` to the `DataModel`.
+- Add `DataSource` to the `DataModel`.
 
-* Instantiate Line Chart.
+- Instantiate Line Chart.
 
-* Set Chart's width and height.
+- Set Chart's width and height.
 
-* Set `DataModel` instance as the data source of the chart.
+- Set `DataModel` instance as the data source of the chart.
 
-* Set Chart title.
+- Set Chart title.
 
-* Finally, use a container using `<div>` to render the chart.
+- Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
 
@@ -259,6 +263,128 @@ The chart looks like as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination3d.js %}
 
+## 2D Dual Y-axis Combination Chart
+
+Now, let's create a dual y-axis combination chart in 2D. In this chart, we will show a comparison between the revenue, profit, and the profit percentage. The revenue and the profit will be shown as the amount in dollars using the **primary y-axis**, and the profit percentage will be shown in percentage using the **secondary y-axis**.
+
+The data for the chart is shown in the table below:
+
+| Month     | Revenues | Profits | Profit % |
+| --------- | -------- | ------- | -------- |
+| January   | 16000    | 4000    | 25       |
+| February  | 20000    | 5000    | 25       |
+| March     | 18000    | 3000    | 16.66    |
+| April     | 19000    | 4000    | 21.05    |
+| May       | 15000    | 1000    | 6.66     |
+| June      | 21000    | 7000    | 33.33    |
+| July      | 16000    | 1000    | 6.25     |
+| August    | 20000    | 4000    | 25       |
+| September | 17000    | 1000    | 5.88     |
+| October   | 22000    | 8000    | 36.36    |
+| November  | 19000    | 2000    | 10.52    |
+| December  | 23000    | 7000    | 30.43    |
+
+The chart will look as shown below:
+
+{% embed_chart fusioncharts-net-visualization-combination2ddy.js %}
+
+Create a mscombidy2d.aspx.cs and refer to the code below:
+
+The code is shown below:
+
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using System.Net;
+using System.Text;
+
+namespace TestProject
+{
+    public partial class TestPage : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // initialixe DataModel object
+            DataModel model = new DataModel();
+            // Create object of JsonFileSource. Provide file path as constructor parameter
+            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\mscombidy2d.json"));
+            // Add json source in datasources store of model
+            model.DataSources.Add(jsonFileSource);
+            // initialize combination chart object
+            Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombidy2d");
+            // set model as data source
+            combiChart.Data.Source = model;
+
+            // provide field name, which should be rendered as line column
+            combiChart.Data.ColumnPlots("Revenues");
+            // provide field name, which should be rendered as spline area plot
+            combiChart.Data.SplineAreaPlots("Profits");
+            // provide field name, which should be rendered as spline plot
+            combiChart.Data.SplinePlots("Profit %");
+            // set parentAxis
+            combiChart.Data.SecondaryYAxisAsParent("Profit %");
+            // Set XAxis caption
+            combiChart.XAxis.Text = "Month";
+            // Set YAxis caption
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)";
+            // enable dual y
+            combiChart.DualY = true;
+            // set secondary y axis text
+            combiChart.SecondaryYAxis.Text = "Profit %";
+            // set chart caption
+            combiChart.Caption.Text = "Revenues and Profit";
+            // Set chart sub caption
+            combiChart.SubCaption.Text = "For last year";
+            // set width, height
+            combiChart.Width.Pixel(600);
+            combiChart.Height.Pixel(500);
+            // set theme
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render chart
+            Literal1.Text = combiChart.Render();
+        }
+    }
+}
+```
+
+The `.aspx` template for the above sample is shown below:
+
+```html
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+</head>
+<body>
+    <script>
+       
+    </script>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+            
+        </div>
+    </form>
+</body>
+</html>
+```
+
 ## Scroll Combination 2D Chart
 
 Now, let's create a scroll combination 2D chart to plot the **revenue** and the **profit** earned, in dollars, and the **profit** for Financial year 2017 to 2018.
@@ -341,6 +467,141 @@ namespace TestProject
             combiChart.Data.LinePlots("Projected Revenue");
             // provide field name, which should be rendered as spline plot
             combiChart.Data.AreaPlots("Profit");
+            // Set XAxis caption
+            combiChart.XAxis.Text = "Month";
+            // Set YAxis caption
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)";
+            // enable dual y
+            combiChart.DualY = true;
+            // set secondary y axis text
+            combiChart.SecondaryYAxis.Text = "Profit %";
+            // set chart caption
+            combiChart.Caption.Text = "Revenues and Profit";
+            // Set chart sub caption
+            combiChart.SubCaption.Text = "For last year";
+            // set width, height
+            combiChart.Width.Pixel(600);
+            combiChart.Height.Pixel(500);
+            // set theme
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render chart
+            Literal1.Text = combiChart.Render();
+        }
+    }
+}
+```
+
+The `.aspx` template for the above sample is shown below:
+
+```html
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+</head>
+<body>
+    <script>
+       
+    </script>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+            
+        </div>
+    </form>
+</body>
+</html>
+```
+
+## Scroll Combination 2D Chart (Dual Y)
+
+Now, let's create a dual y-axis scroll combination 2D chart. Here we will plot the **revenue** and the **profit** earned, in dollars, and the **profit percent** for Financial year 2017 to 2018.
+
+The data for the chart is shown in the table below:
+
+| Month           | Actual Revenue | Profit | Profit Percent |
+| --------------- | -------------- | ------ | -------------- |
+| January, 2017   | 16000          | 4000   | 25             |
+| February, 2017  | 20000          | 5000   | 25             |
+| March, 2017     | 18000          | 3000   | 16.66          |
+| April, 2017     | 19000          | 4000   | 21.05          |
+| May, 2017       | 15000          | 1000   | 6.66           |
+| June, 2017      | 21000          | 7000   | 33.33          |
+| July, 2017      | 16000          | 1000   | 6.25           |
+| August, 2017    | 20000          | 4000   | 25             |
+| September, 2017 | 17000          | 1000   | 5.88           |
+| October, 2017   | 25000          | 8000   | 36.36          |
+| November, 2017  | 19000          | 2000   | 10.52          |
+| December, 2017  | 23000          | 7000   | 30.43          |
+| January, 2018   | 22000          | 6000   | 25             |
+| February, 2018  | 25000          | 5000   | 28             |
+| March, 2018     | 21000          | 7000   | 15.38          |
+| April, 2018     | 23000          | 8000   | 20.83          |
+| May, 2018       | 27000          | 8000   | 15.79          |
+| June, 2018      | 26000          | 9000   | 40.91          |
+| July, 2018      | 24000          | 7000   | 11.11          |
+| August, 2018    | 28000          | 10000  | 31.58          |
+| September, 2018 | 26000          | 9000   | 9.09           |
+| October, 2018   | 27000          | 7000   | 33.33          |
+| November, 2018  | 29000          | 8000   | 17.39          |
+| December, 2018  | 26000          | 11000  | 25             |
+
+The chart will look as shown below:
+
+{% embed_chart fusioncharts-net-visualization-combination-scroll2ddy.js %}
+
+Create a scrollcombidy2d.aspx.cs and refer to the code below:
+
+The code is shown below:
+
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using System.Net;
+using System.Text;
+
+namespace TestProject
+{
+    public partial class TestPage : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // initialixe DataModel object
+            DataModel model = new DataModel();
+            // Create object of JsonFileSource. Provide file path as constructor parameter
+            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\scrollcombidy2d.json"));
+            // Add json source in datasources store of model
+            model.DataSources.Add(jsonFileSource);
+            // initialize combination chart object
+            Charts.CombinationChart combiChart = new Charts.CombinationChart("scrollcombidy2d");
+            // set model as data source
+            combiChart.Data.Source = model;
+            // Enable scrolling
+            combiChart.Scrollable = true;
+            // provide field name, which should be rendered as line column
+            combiChart.Data.ColumnPlots("Revenues");
+            // provide field name, which should be rendered as spline area plot
+            combiChart.Data.SplineAreaPlots("Profits");
+            // provide field name, which should be rendered as spline plot
+            combiChart.Data.SplinePlots("Profit %");
+            // set parentAxis
+            combiChart.Data.SecondaryYAxisAsParent("Profit %");
             // Set XAxis caption
             combiChart.XAxis.Text = "Month";
             // Set YAxis caption
