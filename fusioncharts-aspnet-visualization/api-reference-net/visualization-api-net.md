@@ -745,6 +745,29 @@ Series is an object used to customize the series of data plots. The instances of
 	</tr>
 </table>
 
+**Set Parent Axis**
+
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`PrimaryYAxisAsParent`</td>
+		<td>string[] (All fields which has `ParentAxis` as the `SecondaryYAxis`)</td>
+		<td>combiChart.Data<br/>.SecondaryYAxisAsParent("field3");</td>
+		<td>Set the primary y-axis as parent axis</td>
+	</tr>
+	<tr>
+		<td>`SecondaryYAxisAsParent`</td>
+		<td>string[] (All fields which has `ParentAxis` as the `PrimaryYAxis`)</td>
+		<td>combiChart.Data<br/>.PrimaryYAxisAsParent("field4",”field6”);</td>
+		<td>Sets the secondary y-axis as parent axis</td>
+	</tr>
+</table>
+
 Following are the API's which only have support on **Pie**, **Doughnut**, **Funnel** and **Pyramid** Charts.
 
 ### `Data` (pie, doughnut, pyramid, funnel)
