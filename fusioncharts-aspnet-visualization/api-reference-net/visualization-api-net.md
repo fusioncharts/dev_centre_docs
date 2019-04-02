@@ -602,11 +602,11 @@ To configure the y-axis for the **time-series** chart, you can use the following
 	</tr>
 </table>
 
-### `Data` (column, bar, line, area, spline, stack)
+### `Data` (column, bar, line, area, spline, stack, combination)
 
 Data is an object used to define the values to be plotted for individual data series. The instances in **Data** object is listed below:
 
-* ** source:** FusionCharts Data Model
+* **source:** FusionCharts Data Model
 
 ```csharp
 visualizationObj.Data.Source = dataSource; //dataSource is an instance of the DataModel
@@ -681,6 +681,47 @@ Series is an object used to customize the series of data plots. The instances of
 		<td>Method of `Series` object which accepts conditional query as string.</td>
 		<td>visualisationObj.Data<br/>.ValueFormatting("value > 100 and value < 500")<br/>.`Alpha`(100)<br/>.`Color`("ff0000)<br/>.`Dashed`(false)<br/>.`ShowValue`(true)<br/>.`Link`("www.fusioncharts.com")<br/>.`DisplayValue`("value > 100")<br/>.`ToolText`("country wise sales value")<br/>.`ValuePosition` (ValueFormat.ValuePosition.ABOVE);<br/><strong>Note: </strong>`ValueFormatting` can be applied to a specific series by specifying the series name.<br/>visualisationObj.Data<br/>.ValueFormatting("SERIESNAME", "CONDITION")</td>
 		<td>This instance is used to customize specific values of the chart. Following are the instance methods of `ValueFormatting`:<br/>1. Alpha(integer)<br/>2. Color(Hex Color Code(string))<br/>3. Dashed(boolean)<br/>4. ShowValue(boolean)<br/>5. Link(string)<br/>6. DisplayValue(string)<br/>7. ToolText(string)<br/>8. ValuePosition(Enum)</td>
+	</tr>
+</table>
+
+> Following are the APIs only applicable for combination chart.
+
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`ColumnPlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.ColumnPlots("field1","field2");</td>
+		<td>Sets `column` as plot type</td>
+	</tr>
+	<tr>
+		<td>`LinePlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.LinePlots("field3");</td>
+		<td>Sets `line` as plot type</td>
+	</tr>
+	<tr>
+		<td>`AreaPlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.AreaPlots("field4","field5");</td>
+		<td>Sets `area` as plot type</td>
+	</tr>
+	<tr>
+		<td>`SplinePlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.SplinePlots("field6","field7","field8");</td>
+		<td>Sets `spline` as plot type</td>
+	</tr>
+	<tr>
+		<td>`SplineAreaPlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.SplineAreaPlots("field9");</td>
+		<td>Sets `splineArea` as plot type</td>
 	</tr>
 </table>
 
