@@ -45,7 +45,7 @@ The chart will look as shown below:
 
 ### Render the chart
 
-Create the `mscombi2d.aspx.cs` file and do the following:
+Create the `CombinationChart.aspx.cs` file and do the following:
 
 - Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 
@@ -167,7 +167,7 @@ The `.aspx` template for the above sample is shown below:
 
 Now, let's learn how to create a 3D single y-axis combination chart with the same data. The code remains the same as that of the above chart. The only difference is instead of instantiating a 2D chart you have to instantiate a 3D chart. 
 
-Create a `mscombi3d.aspx.cs` and refer to the code below:
+Create a `CombinationChart.aspx.cs` and refer to the code below:
 
 ```csharp
 using FusionCharts.DataEngine;
@@ -286,7 +286,7 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination2ddy.js %}
 
-Create a `mscombidy2d.aspx.cs` file and refer to the code below:
+Create a `CombinationChart.aspx.cs` file and refer to the code below:
 
 ```csharp
 using FusionCharts.DataEngine;
@@ -418,7 +418,7 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination-scroll2d.js %}
 
-Create a `scrollcombi2d.aspx.cs` file and refer to the code below:
+Create a `CombinationChart.aspx.cs` file and refer to the code below:
 
 ```csharp
 using FusionCharts.DataEngine;
@@ -549,7 +549,7 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination-scroll2ddy.js %}
 
-Create a `scrollcombidy2d.aspx.cs` file and refer to the code below:
+Create a `CombinationChart.aspx.cs` file and refer to the code below:
 
 ```csharp
 using FusionCharts.DataEngine;
