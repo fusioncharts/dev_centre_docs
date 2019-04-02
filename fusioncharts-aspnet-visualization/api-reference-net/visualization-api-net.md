@@ -756,13 +756,13 @@ Series is an object used to customize the series of data plots. The instances of
 	</tr>
 	<tr>
 		<td>`PrimaryYAxisAsParent`</td>
-		<td>string[] (All fields which has `ParentAxis` as the `SecondaryYAxis`)</td>
+		<td>string[] (All fields which has `ParentAxis` as the `PrimaryYAxis`)</td>
 		<td>combiChart.Data<br/>.SecondaryYAxisAsParent("field3");</td>
 		<td>Set the primary y-axis as parent axis</td>
 	</tr>
 	<tr>
 		<td>`SecondaryYAxisAsParent`</td>
-		<td>string[] (All fields which has `ParentAxis` as the `PrimaryYAxis`)</td>
+		<td>string[] (All fields which has `ParentAxis` as the `SecondaryYAxis`)</td>
 		<td>combiChart.Data<br/>.PrimaryYAxisAsParent("field4",”field6”);</td>
 		<td>Sets the secondary y-axis as parent axis</td>
 	</tr>
