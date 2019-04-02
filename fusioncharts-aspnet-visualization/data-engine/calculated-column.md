@@ -4,11 +4,11 @@ description: This article outlines the steps how to render calculated column.
 heading: Calculated Column
 ---
 
-A calculated column is a column generated with the result of a mathematical expression applied to one or more columns in a DataModel. An end user can provide more than one mathematical expression, for which a new calculated column will be generated every time. Note that whenever a method is invoked to generate one or more calculated columns, a new DataModel is generated with the calculated columns.
+A calculated column is a column generated as a result of a mathematical expression applied to one or more columns in a `DataModel`. You can provide more than one mathematical expression on multiple columns of a `DataModel`. This will generate a new `DataModel` which will contain the existing and the calculated columns.
 
 #### Create an instance of `CalculatedColumns`
 
-To create a new calculated column, you need to create an instance of the `CalculatedColumns` class. Refer to the code given below:
+To create a new calculated column, refer to the code below:
 
 ```csharp
 CalculatedColumns calculatedColumns = new CalculatedColumns {
