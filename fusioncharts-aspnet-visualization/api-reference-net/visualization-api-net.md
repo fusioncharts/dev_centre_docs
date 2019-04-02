@@ -263,52 +263,30 @@ visualizationObj.Dispose();
 
 These API's let you configure the cosmetics of chart caption.
 
-| API         | Type                           | Syntax                                                                    | Description                                      |
-| ----------- | ------------------------------ | ------------------------------------------------------------------------- | ------------------------------------------------ |
-| `Text`      | string                         | visualizationObj.Caption.Text = "Chart Title";                            | Sets the caption of the chart                    |
-| `FontSize`  | integer                        | visualizationObj.Caption.FontSize = 16;                                   | Sets the font size of the caption                |
-| `FontName`  | string                         | visualizationObj.Caption.FontName = "Arial";                              | Sets the font of the caption                     |
-| `FontColor` | Hex Color Code                 | visualizationObj.Caption.FontColor = "#ff0000";                           | Sets the font color of the caption               |
-| `Bold`      | boolean                        | visualizationObj.Caption.Bold = false;                                    | Makes the chart caption bold                     |
-| `OnTop`     | boolean                        | visualizationObj.Caption.OnTop = true;                                    | Places the chart caption at the top of the chart |
-| `Alignment` | CaptionObject.CaptionAlignment | visualizationObj.Caption.Alignment = CaptionObject.CaptionAlignment.LEFT; | Sets the alignment of the chart caption          |
-
-In time-series charts, to configure the text alignment of the chart caption, set the value of `TextAlignment` of the `Caption` object.
-
-> The `TextAlignment` properties is only supported in `time-series`. 
-
-Refer to the code below:
-
-```csharp
-timeSeries.Caption.TextAlignment = FusionTimeCaptionObject.Alignment.CENTER
-```
-
-In the code above, the value of `Caption.TextAlignment` has been set to `FusionTimeCaptionObject.Alignment` enum. The value of the enum has been set to `CENTER`.
+| API                                               | Type                              | Syntax                                                                      | Description                                      |
+| ------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------ |
+| `Text`                                            | string                            | visualizationObj.Caption.Text = "Chart Title";                              | Sets the caption of the chart                    |
+| `FontSize`                                        | integer                           | visualizationObj.Caption.FontSize = 16;                                     | Sets the font size of the caption                |
+| `FontName`                                        | string                            | visualizationObj.Caption.FontName = "Arial";                                | Sets the font of the caption                     |
+| `FontColor`                                       | Hex Color Code                    | visualizationObj.Caption.FontColor = "#ff0000";                             | Sets the font color of the caption               |
+| `Bold`                                            | boolean                           | visualizationObj.Caption.Bold = false;                                      | Makes the chart caption bold                     |
+| `OnTop`                                           | boolean                           | visualizationObj.Caption.OnTop = true;                                      | Places the chart caption at the top of the chart |
+| `Alignment` (Not Applicable for time-series)      | CaptionObject.CaptionAlignment    | visualizationObj.Caption.Alignment = CaptionObject.CaptionAlignment.LEFT;   | Sets the alignment of the chart caption          |
+| `TextAlignment` (Applicable only for time-series) | FusionTimeCaptionObject.Alignment | timeSeries.Caption.TextAlignment = FusionTimeCaptionObject.Alignment.CENTER | Sets the alignment of the chart caption          |
 
 ### `SubCaption`
 
 These APIs let you configure the cosmetics of chart sub-caption.
 
-| API         | Type           | Syntax                                                | Description                                    |
-| ----------- | -------------- | ----------------------------------------------------- | ---------------------------------------------- |
-| `Text`      | string         | visualizationObj.SubCaption.Text = "Chart Sub Title"; | Sets the sub-caption of the chart              |
-| `FontSize`  | integer        | visualizationObj.SubCaption.FontSize = 16;            | Sets the font size of the sub-caption          |
-| `FontName`  | string         | visualizationObj.SubCaption.FontName = "Arial";       | Sets the font of the sub-caption               |
-| `FontColor` | Hex Color Code | visualizationObj.SubCaption.FontColor = "#ff0000";    | Sets the font color of the sub-caption         |
-| `Bold`      | boolean        | visualizationObj.SubCaption.Bold = false;             | Makes the sub-caption bold                     |
-| `OnTop`     | boolean        | visualizationObj.SubCaption.OnTop = true;             | Places the sub-caption at the top of the chart |
-
-In time-series charts, to configure the text alignment of the chart subcaption, set the value of `TextAlignment` properties of the `SubCaption` object.
-
-> The `TextAlignment` properties is only supported in `time-series`.
-
-Refer to the code below:
-
-```csharp
-timeSeries.SubCaption.TextAlignment = FusionTimeSubCaptionObject.Alignment.LEFT;
-```
-
-In the code above, the value of `SubCaption.TextAlignment` has been set to `FusionTimeSubCaptionObject.Alignment` enum. The value of the enum has been set to `LEFT`.
+| API                                               | Type                                 | Syntax                                                                           | Description                                    |
+| ------------------------------------------------- | ------------------------------------ | -------------------------------------------------------------------------------- | ---------------------------------------------- |
+| `Text`                                            | string                               | visualizationObj.SubCaption.Text = "Chart Sub Title";                            | Sets the sub-caption of the chart              |
+| `FontSize`                                        | integer                              | visualizationObj.SubCaption.FontSize = 16;                                       | Sets the font size of the sub-caption          |
+| `FontName`                                        | string                               | visualizationObj.SubCaption.FontName = "Arial";                                  | Sets the font of the sub-caption               |
+| `FontColor`                                       | Hex Color Code                       | visualizationObj.SubCaption.FontColor = "#ff0000";                               | Sets the font color of the sub-caption         |
+| `Bold`                                            | boolean                              | visualizationObj.SubCaption.Bold = false;                                        | Makes the sub-caption bold                     |
+| `OnTop`                                           | boolean                              | visualizationObj.SubCaption.OnTop = true;                                        | Places the sub-caption at the top of the chart |
+| `TextAlignment` (Applicable only for time-series) | FusionTimeSubCaptionObject.Alignment | timeSeries.SubCaption.TextAlignment = FusionTimeSubCaptionObject.Alignment.LEFT; | Places the sub-caption at the top of the chart | Sets the alignment of the chart caption |
 
 ### `Labels`
 
