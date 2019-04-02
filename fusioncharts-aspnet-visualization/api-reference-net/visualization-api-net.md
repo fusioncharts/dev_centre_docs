@@ -487,6 +487,16 @@ The syntax to disable the tooltip of the time-series chart is shown below:
 timeSeries.ToolTip.Enable = false; //Boolean
 ```
 
+### `Multi Canvas`
+
+> This API only have support on **time-series** charts.
+
+The syntax to disable more than one canvas in a multivariate chart is shown below:
+
+```csharp
+timeSeries.MultiCanvas.Enable = false;
+```
+
 ### `YAxis`
 
 To configure the y-axis name (title), you can use the following APIs.
@@ -603,6 +613,12 @@ To configure the y-axis for the **time-series** chart, you can use the following
 		<td>TimeSeriesYAxisObject.OrientationType</td>
 		<td>timeSeries.YAxes.Orientation = TimeSeriesYAxisObject.OrientationType.LEFT;</td>
 		<td>The values of `Orientation` enum can be `LEFT`, or `RIGHT`.</td>
+	</tr>
+	<tr>
+		<td>`LogBase`</td>
+		<td>integer</td>
+		<td>timeSeries.YAxes.LogBase = 10;</td>
+		<td>Sets the base of the axis if the time-series chart has a logarithmic y-axis.</td>
 	</tr>
 </table>
 
