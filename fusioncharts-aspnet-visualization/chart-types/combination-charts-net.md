@@ -169,8 +169,6 @@ Now, let's learn how to create a 3D single y-axis combination chart with the sam
 
 Create a `mscombi3d.aspx.cs` and refer to the code below:
 
-The code is shown below:
-
 ```csharp
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
@@ -288,9 +286,7 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination2ddy.js %}
 
-Create a mscombidy2d.aspx.cs and refer to the code below:
-
-The code is shown below:
+Create a `mscombidy2d.aspx.cs` file and refer to the code below:
 
 ```csharp
 using FusionCharts.DataEngine;
@@ -422,9 +418,7 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination-scroll2d.js %}
 
-Create a `scrollcombi2d.aspx.cs` and refer to the code below:
-
-The code is shown below:
+Create a `scrollcombi2d.aspx.cs` file and refer to the code below:
 
 ```csharp
 using FusionCharts.DataEngine;
@@ -555,9 +549,7 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination-scroll2ddy.js %}
 
-Create a scrollcombidy2d.aspx.cs and refer to the code below:
-
-The code is shown below:
+Create a `scrollcombidy2d.aspx.cs` file and refer to the code below:
 
 ```csharp
 using FusionCharts.DataEngine;
