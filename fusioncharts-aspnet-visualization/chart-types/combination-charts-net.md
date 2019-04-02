@@ -96,7 +96,7 @@ using System.Text;
 
 namespace TestProject
 {
-    public partial class TestPage : System.Web.UI.Page
+    public partial class CombinationChart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -188,7 +188,7 @@ using System.Text;
 
 namespace TestProject
 {
-    public partial class TestPage : System.Web.UI.Page
+    public partial class CombinationChart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -307,7 +307,7 @@ using System.Text;
 
 namespace TestProject
 {
-    public partial class TestPage : System.Web.UI.Page
+    public partial class CombinationChart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -439,7 +439,7 @@ using System.Text;
 
 namespace TestProject
 {
-    public partial class TestPage : System.Web.UI.Page
+    public partial class CombinationChart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -570,7 +570,7 @@ using System.Text;
 
 namespace TestProject
 {
-    public partial class TestPage : System.Web.UI.Page
+    public partial class CombinationChart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
