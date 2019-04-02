@@ -8,33 +8,22 @@ A calculated column is a column generated as a result of a mathematical expressi
 
 #### Create
 
-To create a new calculated column, refer to the code below:
+Suppose we have a `DataModel` with three columns in the table, **SellingPrice**, **Cost** and **Unit**. The mathematical formula to calculate the profit is, **SellingPrice - (Cost \* Unit)**. Result of this will be a new `DataModel` with four columns, **SellingPrice**, **Cost**, **Unit** and **Profit**.
+
+To create a new column with the existing ones, refer to the code below:
 
 ```csharp
 CalculatedColumns calculatedColumns = new CalculatedColumns {
-    {"SellingPrice - (Cost * Unit)","Profit" },
-    {"ExpiryYear - ManufactureYear","Validity" }
+    {"SellingPrice - (Cost * Unit)","Profit" }
 };
-```
-
-In the above code:
-
-- `calculatedColumns` is an object of the `CalculatedColumns` class.
-- "SellingPrice - (Cost \* Unit)" is the expression provided by the user. On program execution, it creates a new column "Profit" with the result of the expression, and generates a new DataModel with the resultant data. Note that "SellingPrice", "Cost", and "Unit" are all columns from `model`, the source `DataModel` object.
-- "ExpiryYear - ManufactureYear" is the expression provided by the user. On program execution, it creates a new column "Validity", with the result of the expression, and generates a new DataModel with the resultant data. Note that "ManufactureYear" and "ExpiryYear" are both columns from `model`, the source `DataModel` object.
-
-#### Get result in DataModel
-
-The code to get the result from the steps mentioned in the previous section into the `DataModel` is given below:
-
-```csharp
 DataModel resultModel = model.AddNewCalculatedColumns(calculatedColumns);
 ```
 
 In the above code:
 
+- `calculatedColumns` is an object which holds information of the data to be calculated.
 - `model` is an object of the source DataModel.
-- `AddNewCalculatedColumns(calculatedColumns)` is a method of the `model` object.
+- `resultModel` is the object which holds the resultant data.
 
 #### Dispose
 
