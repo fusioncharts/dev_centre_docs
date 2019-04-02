@@ -589,9 +589,9 @@ namespace TestProject
             // provide field name, which should be rendered as line column
             combiChart.Data.ColumnPlots("Revenues");
             // provide field name, which should be rendered as spline area plot
-            combiChart.Data.SplineAreaPlots("Profits");
+            combiChart.Data.AreaPlots("Profits");
             // provide field name, which should be rendered as spline plot
-            combiChart.Data.SplinePlots("Profit %");
+            combiChart.Data.LinePlots("Profit %");
             // set parentAxis
             combiChart.Data.SecondaryYAxisAsParent("Profit %");
             // Set XAxis caption
