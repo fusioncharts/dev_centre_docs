@@ -116,6 +116,32 @@ stack.ThreeD = true;
 stack.Scrollable = true;
 ```
 
+### Combination
+
+The syntax to create a combination is given below:
+
+```csharp
+Charts.CombinationChart combiChart = new Charts.CombinationChart("id")
+```
+
+**Combi 3D**
+
+```csharp
+combiChart.ThreeD = true;
+```
+
+**Scroll**
+
+```csharp
+combiChart.Scrollable = true;
+```
+
+**Dual Y-Axis**
+
+```csharp
+combiChart.DualY = true;
+```
+
 ### Pie
 
 The syntax to create a pie chart is given below:
@@ -480,6 +506,42 @@ To configure the y-axis name (title), you can use the following APIs.
 | `BorderColor`     | Hex Color Code | visualizationObj.YAxis.BorderColor = "#ffffff"; | Sets the border color of the Y-axis title            |
 | `BGColor`         | Hex Color Code | visualizationObj.YAxis.BGColor = "#000000";     | Sets the background color of the Y-axis title        |
 | `BorderThickness` | integer        | visualizationObj.YAxis.BorderThickness = 2;     | Sets the border thickness of the Y-axis title        |
+
+### `Primary YAxis`
+
+To configure the primary y-axis name (title), you can use the following APIs.
+
+> Applicable only for `Dual YAxis` charts.
+
+| API               | Type           | Syntax                                                 | Description                                                  |
+| ----------------- | -------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
+| `Text`            | string         | visualizationObj.PrimaryYAxis.Text = "YAxis Name";     | Sets the title of the primary Y-axis                         |
+| `FontSize`        | integer        | visualizationObj.PrimaryYAxis.FontSize = 10;           | Sets the font size of the primary Y-axis title               |
+| `FontName`        | string         | visualizationObj.PrimaryYAxis.FontName = "Arial";      | Sets the font name of the primary Y-axis title               |
+| `FontColor`       | Hex Color Code | visualizationObj.PrimaryYAxis.FontColor = "#ff0000";   | Sets the font color of the primary Y-axis title              |
+| `Bold`            | boolean        | visualizationObj.PrimaryYAxis.Bold = true;             | Sets whether the primary Y-axis title is displayed in bold   |
+| `Italic`          | boolean        | visualizationObj.PrimaryYAxis.Italic = false;          | Sets whether the primary Y-axis title is displayed in Italic |
+| `BorderColor`     | Hex Color Code | visualizationObj.PrimaryYAxis.BorderColor = "#ffffff"; | Sets the border color of the primary Y-axis title            |
+| `BGColor`         | Hex Color Code | visualizationObj.PrimaryYAxis.BGColor = "#000000";     | Sets the background color of the primary  Y-axis title       |
+| `BorderThickness` | integer        | visualizationObj.PrimaryYAxis.BorderThickness = 2;     | Sets the border thickness of the primary  Y-axis title       |
+
+### `Secondary YAxis`
+
+To configure the secondary y-axis name (title), you can use the following APIs.
+
+> Applicable only for `Dual YAxis` charts.
+
+| API               | Type           | Syntax                                                   | Description                                                    |
+| ----------------- | -------------- | -------------------------------------------------------- | -------------------------------------------------------------- |
+| `Text`            | string         | visualizationObj.SecondaryYAxis.Text = "YAxis Name";     | Sets the title of the secondary Y-axis                         |
+| `FontSize`        | integer        | visualizationObj.SecondaryYAxis.FontSize = 10;           | Sets the font size of the secondary Y-axis title               |
+| `FontName`        | string         | visualizationObj.SecondaryYAxis.FontName = "Arial";      | Sets the font name of the secondary Y-axis title               |
+| `FontColor`       | Hex Color Code | visualizationObj.SecondaryYAxis.FontColor = "#ff0000";   | Sets the font color of the secondary Y-axis title              |
+| `Bold`            | boolean        | visualizationObj.SecondaryYAxis.Bold = true;             | Sets whether the secondary Y-axis title is displayed in bold   |
+| `Italic`          | boolean        | visualizationObj.SecondaryYAxis.Italic = false;          | Sets whether the secondary Y-axis title is displayed in Italic |
+| `BorderColor`     | Hex Color Code | visualizationObj.SecondaryYAxis.BorderColor = "#ffffff"; | Sets the border color of the secondary Y-axis title            |
+| `BGColor`         | Hex Color Code | visualizationObj.SecondaryYAxis.BGColor = "#000000";     | Sets the background color of the secondary  Y-axis title       |
+| `BorderThickness` | integer        | visualizationObj.SecondaryYAxis.BorderThickness = 2;     | Sets the border thickness of the secondary  Y-axis title       |
 
 To configure the y-axis for the **time-series** chart, you can use the following APIs.
 
