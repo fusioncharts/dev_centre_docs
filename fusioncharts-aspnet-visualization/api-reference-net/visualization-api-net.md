@@ -263,8 +263,6 @@ visualizationObj.Dispose();
 
 These API's let you configure the cosmetics of chart caption.
 
-> Not applicable for `time-series`.
-
 | API         | Type                           | Syntax                                                                    | Description                                      |
 | ----------- | ------------------------------ | ------------------------------------------------------------------------- | ------------------------------------------------ |
 | `Text`      | string                         | visualizationObj.Caption.Text = "Chart Title";                            | Sets the caption of the chart                    |
@@ -275,11 +273,21 @@ These API's let you configure the cosmetics of chart caption.
 | `OnTop`     | boolean                        | visualizationObj.Caption.OnTop = true;                                    | Places the chart caption at the top of the chart |
 | `Alignment` | CaptionObject.CaptionAlignment | visualizationObj.Caption.Alignment = CaptionObject.CaptionAlignment.LEFT; | Sets the alignment of the chart caption          |
 
+In time-series charts, to configure the text alignment of the chart caption, set the value of `TextAlignment` of the `Caption` object.
+
+> The `TextAlignment` properties is only supported in `time-series`. 
+
+Refer to the code below:
+
+```csharp
+timeSeries.Caption.TextAlignment = FusionTimeCaptionObject.Alignment.CENTER
+```
+
+In the code above, the value of `Caption.TextAlignment` has been set to `FusionTimeCaptionObject.Alignment` enum. The value of the enum has been set to `CENTER`.
+
 ### `SubCaption`
 
 These APIs let you configure the cosmetics of chart sub-caption.
-
-> Not applicable for `time-series`.
 
 | API         | Type           | Syntax                                                | Description                                    |
 | ----------- | -------------- | ----------------------------------------------------- | ---------------------------------------------- |
@@ -289,6 +297,18 @@ These APIs let you configure the cosmetics of chart sub-caption.
 | `FontColor` | Hex Color Code | visualizationObj.SubCaption.FontColor = "#ff0000";    | Sets the font color of the sub-caption         |
 | `Bold`      | boolean        | visualizationObj.SubCaption.Bold = false;             | Makes the sub-caption bold                     |
 | `OnTop`     | boolean        | visualizationObj.SubCaption.OnTop = true;             | Places the sub-caption at the top of the chart |
+
+In time-series charts, to configure the text alignment of the chart subcaption, set the value of `TextAlignment` properties of the `SubCaption` object.
+
+> The `TextAlignment` properties is only supported in `time-series`.
+
+Refer to the code below:
+
+```csharp
+timeSeries.SubCaption.TextAlignment = FusionTimeSubCaptionObject.Alignment.LEFT;
+```
+
+In the code above, the value of `SubCaption.TextAlignment` has been set to `FusionTimeSubCaptionObject.Alignment` enum. The value of the enum has been set to `LEFT`.
 
 ### `Labels`
 
@@ -597,7 +617,7 @@ To configure the y-axis for the **time-series** chart, you can use the following
 	<tr>
 		<td>`Plot`</td>
 		<td>object</td>
-		<td><strong>1.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesAggregation<br/>.Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA, TimeSeriesAggregation<br/>.Function.LAST);</td>
+		<td><strong>1.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesAggregation<br/>.Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA, TimeSeriesAggregation<br/>.Function.LAST);<strong>5.</strong> timeSeries.YAxes.Plot<br/>.Add("label", false);<br/><br/><strong>6.</strong> timeSeries.YAxes.Plot<br/>.Add("label", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA,<br/> TimeSeriesAggregation.Function<br/>.LAST,false);<br/><br/></td>
 		<td>Add plots when we render multiple data plots in a chart.</td>
 	</tr>
 </table>
