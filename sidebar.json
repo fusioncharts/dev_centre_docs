@@ -2224,6 +2224,10 @@
             "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net"
           },
           {
+            "title": "Combination Charts",
+            "path": "/fusioncharts-aspnet-visualization/chart-types/combination-charts-net"
+          },
+          {
             "title": "Pie and Doughnut Charts",
             "path": "/fusioncharts-aspnet-visualization/chart-types/pie-doughnut-net"
           },
@@ -2327,6 +2331,10 @@
             "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-api"
           },
           {
+            "title": "Data Source",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/data-source-data-engine"
+          },
+          {
             "title": "Select Fields",
             "path": "/fusioncharts-aspnet-visualization/data-engine/select-fields"
           },
@@ -2343,6 +2351,10 @@
             "path": "/fusioncharts-aspnet-visualization/data-engine/order-by"
           },
           {
+            "title": "Calculated Column",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/calculated-column"
+          },
+          {
             "title": "GroupBy",
             "path": "/fusioncharts-aspnet-visualization/data-engine/group-by"
           },
@@ -2357,6 +2369,10 @@
           {
             "title": "Pivot",
             "path": "/fusioncharts-aspnet-visualization/data-engine/pivot"
+          },
+          {
+            "title": "Pagination",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/pagination"
           }
         ]
       },
