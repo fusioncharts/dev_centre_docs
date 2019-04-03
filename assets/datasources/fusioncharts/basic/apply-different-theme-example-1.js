@@ -61,6 +61,7 @@
 
          var upadateTheme = function (event) {
             var theme = event.target.value;
+            console.log(theme);
             chartRef.setChartAttribute('theme', theme);
          }
 
