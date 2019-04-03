@@ -14,7 +14,7 @@ In this page, we'll see how to install FusionCharts and render a gauge using the
 
 In this section, we will show you how to install FusionCharts Suite XT and the `FusionCharts PHP` wrapper and all the other dependencies on your system.
 
-> The **FusionCharts PHP server-side wrapper** requires **PHP 5** or higher.
+> The **FusionCharts PHP server-side wrapper** requires **PHP 5.6** or higher.
 
 To install the FusionCharts Suite, follow the steps below:
 

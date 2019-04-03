@@ -14,7 +14,7 @@ In this page, we'll see how to install FusionCharts and render a chart using the
 
 Install FusionCharts and the **PHP** wrapper component using any of the following methods:
 
-> The **FusionCharts PHP server-side wrapper** requires **PHP 5** or higher.
+> The **FusionCharts PHP server-side wrapper** requires **PHP 5.6** or higher.
 
 * Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 

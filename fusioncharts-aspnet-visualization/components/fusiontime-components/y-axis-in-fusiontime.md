@@ -86,14 +86,14 @@ The chart will look as shown below:
 
 ### Add a Y-axis
 
-If you want to build a multivariate chart, you will need to create more than one Y-axis. Once you are done creating the first Y-axis, use the `AddAnotherYAxis()` method of the `YAxes` object to create a second Y-axis. You can repeat this process as many times as you need to.
+If you want to build a multivariate chart, you will need to create more than one Y-axis. Once you are done creating the first Y-axis, use the `AddNew()` method of the `YAxes` object to create a second Y-axis. You can repeat this process as many times as you need to.
 
 Refer to the code given below:
 
 ```csharp
 /* add another YAxis */
 /* this is for Multivariate chart */
-timeSeries.YAxes.AddAnotherYAxis();
+timeSeries.YAxes.AddNew();
 ```
 
 The chart will look as shown below:

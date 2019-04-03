@@ -116,6 +116,32 @@ stack.ThreeD = true;
 stack.Scrollable = true;
 ```
 
+### Combination
+
+The syntax to create a combination is given below:
+
+```csharp
+Charts.CombinationChart combiChart = new Charts.CombinationChart("id")
+```
+
+**Combi 3D**
+
+```csharp
+combiChart.ThreeD = true;
+```
+
+**Scroll**
+
+```csharp
+combiChart.Scrollable = true;
+```
+
+**Dual Y-Axis**
+
+```csharp
+combiChart.DualY = true;
+```
+
 ### Pie
 
 The syntax to create a pie chart is given below:
@@ -237,32 +263,30 @@ visualizationObj.Dispose();
 
 These API's let you configure the cosmetics of chart caption.
 
-> Not applicable for `time-series`.
-
-| API         | Type                           | Syntax                                                                    | Description                                      |
-| ----------- | ------------------------------ | ------------------------------------------------------------------------- | ------------------------------------------------ |
-| `Text`      | string                         | visualizationObj.Caption.Text = "Chart Title";                            | Sets the caption of the chart                    |
-| `FontSize`  | integer                        | visualizationObj.Caption.FontSize = 16;                                   | Sets the font size of the caption                |
-| `FontName`  | string                         | visualizationObj.Caption.FontName = "Arial";                              | Sets the font of the caption                     |
-| `FontColor` | Hex Color Code                 | visualizationObj.Caption.FontColor = "#ff0000";                           | Sets the font color of the caption               |
-| `Bold`      | boolean                        | visualizationObj.Caption.Bold = false;                                    | Makes the chart caption bold                     |
-| `OnTop`     | boolean                        | visualizationObj.Caption.OnTop = true;                                    | Places the chart caption at the top of the chart |
-| `Alignment` | CaptionObject.CaptionAlignment | visualizationObj.Caption.Alignment = CaptionObject.CaptionAlignment.LEFT; | Sets the alignment of the chart caption          |
+| API                                               | Type                               | Syntax                                                                      | Description                                                                                                                                           |
+| ------------------------------------------------- | ---------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Text`                                            | string                             | visualizationObj.Caption.Text = "Chart Title";                              | Sets the caption of the chart                                                                                                                         |
+| `FontSize`                                        | integer                            | visualizationObj.Caption.FontSize = 16;                                     | Sets the font size of the caption                                                                                                                     |
+| `FontName`                                        | string                             | visualizationObj.Caption.FontName = "Arial";                                | Sets the font of the caption                                                                                                                          |
+| `FontColor`                                       | Hex Color Code                     | visualizationObj.Caption.FontColor = "#ff0000";                             | Sets the font color of the caption                                                                                                                    |
+| `Bold`                                            | boolean                            | visualizationObj.Caption.Bold = false;                                      | Makes the chart caption bold                                                                                                                          |
+| `OnTop`                                           | boolean                            | visualizationObj.Caption.OnTop = true;                                      | Places the chart caption at the top of the chart                                                                                                      |
+| `Alignment` (Not Applicable for time-series)      | CaptionObject .CaptionAlignment    | visualizationObj.Caption.Alignment = CaptionObject.CaptionAlignment.LEFT;   | Sets the alignment of the chart caption                                                                                                               |
+| `TextAlignment` (Applicable only for time-series) | FusionTimeCaptionObject .Alignment | timeSeries.Caption.TextAlignment = FusionTimeCaptionObject.Alignment.CENTER | Sets the alignment of the chart caption. The values of `TextAlignment` enum can be `CENTER`, `LEFT`, `RIGHT`, `INHERIT`, `INITIAL`, `JUSTIFY`, `NONE` |
 
 ### `SubCaption`
 
 These APIs let you configure the cosmetics of chart sub-caption.
 
-> Not applicable for `time-series`.
-
-| API         | Type           | Syntax                                                | Description                                    |
-| ----------- | -------------- | ----------------------------------------------------- | ---------------------------------------------- |
-| `Text`      | string         | visualizationObj.SubCaption.Text = "Chart Sub Title"; | Sets the sub-caption of the chart              |
-| `FontSize`  | integer        | visualizationObj.SubCaption.FontSize = 16;            | Sets the font size of the sub-caption          |
-| `FontName`  | string         | visualizationObj.SubCaption.FontName = "Arial";       | Sets the font of the sub-caption               |
-| `FontColor` | Hex Color Code | visualizationObj.SubCaption.FontColor = "#ff0000";    | Sets the font color of the sub-caption         |
-| `Bold`      | boolean        | visualizationObj.SubCaption.Bold = false;             | Makes the sub-caption bold                     |
-| `OnTop`     | boolean        | visualizationObj.SubCaption.OnTop = true;             | Places the sub-caption at the top of the chart |
+| API                                               | Type                                  | Syntax                                                                           | Description                                                                                                                                           |
+| ------------------------------------------------- | ------------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Text`                                            | string                                | visualizationObj.SubCaption.Text = "Chart Sub Title";                            | Sets the sub-caption of the chart                                                                                                                     |
+| `FontSize`                                        | integer                               | visualizationObj.SubCaption.FontSize = 16;                                       | Sets the font size of the sub-caption                                                                                                                 |
+| `FontName`                                        | string                                | visualizationObj.SubCaption.FontName = "Arial";                                  | Sets the font of the sub-caption                                                                                                                      |
+| `FontColor`                                       | Hex Color Code                        | visualizationObj.SubCaption.FontColor = "#ff0000";                               | Sets the font color of the sub-caption                                                                                                                |
+| `Bold`                                            | boolean                               | visualizationObj.SubCaption.Bold = false;                                        | Makes the sub-caption bold                                                                                                                            |
+| `OnTop`                                           | boolean                               | visualizationObj.SubCaption.OnTop = true;                                        | Places the sub-caption at the top of the chart                                                                                                        |
+| `TextAlignment` (Applicable only for time-series) | FusionTimeSubCaptionObject .Alignment | timeSeries.SubCaption.TextAlignment = FusionTimeSubCaptionObject.Alignment.LEFT; | Sets the alignment of the chart caption. The values of `TextAlignment` enum can be `CENTER`, `LEFT`, `RIGHT`, `INHERIT`, `INITIAL`, `JUSTIFY`, `NONE` |
 
 ### `Labels`
 
@@ -463,6 +487,16 @@ The syntax to disable the tooltip of the time-series chart is shown below:
 timeSeries.ToolTip.Enable = false; //Boolean
 ```
 
+### `Multi Canvas`
+
+> This API only have support on **time-series** charts.
+
+The syntax to disable more than one canvas in a multivariate chart is shown below:
+
+```csharp
+timeSeries.MultiCanvas.Enable = false;
+```
+
 ### `YAxis`
 
 To configure the y-axis name (title), you can use the following APIs.
@@ -480,6 +514,42 @@ To configure the y-axis name (title), you can use the following APIs.
 | `BorderColor`     | Hex Color Code | visualizationObj.YAxis.BorderColor = "#ffffff"; | Sets the border color of the Y-axis title            |
 | `BGColor`         | Hex Color Code | visualizationObj.YAxis.BGColor = "#000000";     | Sets the background color of the Y-axis title        |
 | `BorderThickness` | integer        | visualizationObj.YAxis.BorderThickness = 2;     | Sets the border thickness of the Y-axis title        |
+
+### `Primary YAxis`
+
+To configure the primary y-axis name (title), you can use the following APIs.
+
+> Applicable only for `Dual YAxis` charts.
+
+| API               | Type           | Syntax                                                 | Description                                                  |
+| ----------------- | -------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
+| `Text`            | string         | visualizationObj.PrimaryYAxis.Text = "YAxis Name";     | Sets the title of the primary Y-axis                         |
+| `FontSize`        | integer        | visualizationObj.PrimaryYAxis.FontSize = 10;           | Sets the font size of the primary Y-axis title               |
+| `FontName`        | string         | visualizationObj.PrimaryYAxis.FontName = "Arial";      | Sets the font name of the primary Y-axis title               |
+| `FontColor`       | Hex Color Code | visualizationObj.PrimaryYAxis.FontColor = "#ff0000";   | Sets the font color of the primary Y-axis title              |
+| `Bold`            | boolean        | visualizationObj.PrimaryYAxis.Bold = true;             | Sets whether the primary Y-axis title is displayed in bold   |
+| `Italic`          | boolean        | visualizationObj.PrimaryYAxis.Italic = false;          | Sets whether the primary Y-axis title is displayed in Italic |
+| `BorderColor`     | Hex Color Code | visualizationObj.PrimaryYAxis.BorderColor = "#ffffff"; | Sets the border color of the primary Y-axis title            |
+| `BGColor`         | Hex Color Code | visualizationObj.PrimaryYAxis.BGColor = "#000000";     | Sets the background color of the primary  Y-axis title       |
+| `BorderThickness` | integer        | visualizationObj.PrimaryYAxis.BorderThickness = 2;     | Sets the border thickness of the primary  Y-axis title       |
+
+### `Secondary YAxis`
+
+To configure the secondary y-axis name (title), you can use the following APIs.
+
+> Applicable only for `Dual YAxis` charts.
+
+| API               | Type           | Syntax                                                   | Description                                                    |
+| ----------------- | -------------- | -------------------------------------------------------- | -------------------------------------------------------------- |
+| `Text`            | string         | visualizationObj.SecondaryYAxis.Text = "YAxis Name";     | Sets the title of the secondary Y-axis                         |
+| `FontSize`        | integer        | visualizationObj.SecondaryYAxis.FontSize = 10;           | Sets the font size of the secondary Y-axis title               |
+| `FontName`        | string         | visualizationObj.SecondaryYAxis.FontName = "Arial";      | Sets the font name of the secondary Y-axis title               |
+| `FontColor`       | Hex Color Code | visualizationObj.SecondaryYAxis.FontColor = "#ff0000";   | Sets the font color of the secondary Y-axis title              |
+| `Bold`            | boolean        | visualizationObj.SecondaryYAxis.Bold = true;             | Sets whether the secondary Y-axis title is displayed in bold   |
+| `Italic`          | boolean        | visualizationObj.SecondaryYAxis.Italic = false;          | Sets whether the secondary Y-axis title is displayed in Italic |
+| `BorderColor`     | Hex Color Code | visualizationObj.SecondaryYAxis.BorderColor = "#ffffff"; | Sets the border color of the secondary Y-axis title            |
+| `BGColor`         | Hex Color Code | visualizationObj.SecondaryYAxis.BGColor = "#000000";     | Sets the background color of the secondary  Y-axis title       |
+| `BorderThickness` | integer        | visualizationObj.SecondaryYAxis.BorderThickness = 2;     | Sets the border thickness of the secondary  Y-axis title       |
 
 To configure the y-axis for the **time-series** chart, you can use the following APIs.
 
@@ -535,16 +605,28 @@ To configure the y-axis for the **time-series** chart, you can use the following
 	<tr>
 		<td>`Plot`</td>
 		<td>object</td>
-		<td><strong>1.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesAggregation<br/>.Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA, TimeSeriesAggregation<br/>.Function.LAST);</td>
+		<td><strong>1.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP");<br/><br/><strong>2.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA);<br/><br/><strong>3.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesAggregation<br/>.Function.LAST);<br/><br/><strong>4.</strong> timeSeries.YAxes.Plot<br/>.Add("GDP", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA, TimeSeriesAggregation<br/>.Function.LAST);<strong>5.</strong> timeSeries.YAxes.Plot<br/>.Add("label", false);<br/><br/><strong>6.</strong> timeSeries.YAxes.Plot<br/>.Add("label", TimeSeriesYAxisObject<br/>.SeriesPlotType.AREA,<br/> TimeSeriesAggregation.Function<br/>.LAST,false);<br/><br/></td>
 		<td>Add plots when we render multiple data plots in a chart.</td>
+	</tr>
+	<tr>
+		<td>`Orientation`</td>
+		<td>TimeSeriesYAxisObject.OrientationType</td>
+		<td>timeSeries.YAxes.Orientation = TimeSeriesYAxisObject.OrientationType.LEFT;</td>
+		<td>The values of `Orientation` enum can be `LEFT`, or `RIGHT`.</td>
+	</tr>
+	<tr>
+		<td>`LogBase`</td>
+		<td>integer</td>
+		<td>timeSeries.YAxes.LogBase = 10;</td>
+		<td>Sets the base of the axis if the time-series chart has a logarithmic y-axis.</td>
 	</tr>
 </table>
 
-### `Data` (column, bar, line, area, spline, stack)
+### `Data` (column, bar, line, area, spline, stack, combination)
 
 Data is an object used to define the values to be plotted for individual data series. The instances in **Data** object is listed below:
 
-* ** source:** FusionCharts Data Model
+* **source:** FusionCharts Data Model
 
 ```csharp
 visualizationObj.Data.Source = dataSource; //dataSource is an instance of the DataModel
@@ -622,6 +704,70 @@ Series is an object used to customize the series of data plots. The instances of
 	</tr>
 </table>
 
+> Following are the APIs only applicable for combination chart.
+
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`ColumnPlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.ColumnPlots("field1","field2");</td>
+		<td>Sets `column` as plot type</td>
+	</tr>
+	<tr>
+		<td>`LinePlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.LinePlots("field3");</td>
+		<td>Sets `line` as plot type</td>
+	</tr>
+	<tr>
+		<td>`AreaPlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.AreaPlots("field4","field5");</td>
+		<td>Sets `area` as plot type</td>
+	</tr>
+	<tr>
+		<td>`SplinePlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.SplinePlots("field6","field7","field8");</td>
+		<td>Sets `spline` as plot type</td>
+	</tr>
+	<tr>
+		<td>`SplineAreaPlots`</td>
+		<td>string[] (Field's name)</td>
+		<td>combiChart.Data<br/>.SplineAreaPlots("field9");</td>
+		<td>Sets `splineArea` as plot type</td>
+	</tr>
+</table>
+
+**Set Parent Axis**
+
+<table>
+	<tr>
+		<th>API</th>
+		<th>Type</th>
+		<th>Syntax</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`PrimaryYAxisAsParent`</td>
+		<td>string[] (All fields which has `ParentAxis` as the `PrimaryYAxis`)</td>
+		<td>combiChart.Data<br/>.SecondaryYAxisAsParent("field3");</td>
+		<td>Set the primary y-axis as parent axis</td>
+	</tr>
+	<tr>
+		<td>`SecondaryYAxisAsParent`</td>
+		<td>string[] (All fields which has `ParentAxis` as the `SecondaryYAxis`)</td>
+		<td>combiChart.Data<br/>.PrimaryYAxisAsParent("field4",”field6”);</td>
+		<td>Sets the secondary y-axis as parent axis</td>
+	</tr>
+</table>
+
 Following are the API's which only have support on **Pie**, **Doughnut**, **Funnel** and **Pyramid** Charts.
 
 ### `Data` (pie, doughnut, pyramid, funnel)
@@ -673,6 +819,357 @@ Data is an object used to define the values to be plotted for individual data se
 
 ```csharp
 timeSeries.Data.SourcePathHandler = “/path/to/local/DataSourceHandler.ashx”;
+```
+
+### `Plot Configuration` (time-series)
+
+#### Generic Plot
+
+Generic plot configurations apply to all plot types in your chart. The types of generic plot are given below:
+
+**AnchorStyle object**
+
+Set the anchor style in your chart using the `AnchorStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.AnchorStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.AnchorStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.AnchorStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.AnchorStyle.StrokeWidth = 2;
+```
+
+In the above code:
+
+* `timeSeries`, `PlotConfig`, `Generic`, and `AnchorStyle` are objects.
+
+* `FillColor` is a properties of the `AnchorStyle` object, which accepts the hex code or the name of a color as a string.
+
+* `StrokeLineCap` is a properties of the `AnchorStyle` object. It accepts the shape of the anchor. Here, its value is set as `ROUND` via the `PlotStyleConfigurationObject.LineCap` enum. 
+
+* `StrokeWidth` is a property of `AnchorStyle`, and accepts the thickness of the anchor border as an integer. Here, its value is set as `2`.
+
+**AreaStyle object**
+
+Configure the style of your area plot using the `AreaStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.AreaStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.AreaStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.AreaStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.AreaStyle.StrokeWidth = 2;
+```
+
+**BearStyle object**
+
+Configure the style of your bear plot using the `BearStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.BearStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.BearStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.BearStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.BearStyle.StrokeWidth = 2;
+```
+
+**BullStyle object**
+
+Configure the style of your bull plot using the `BullStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.BullStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.BullStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.BullStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.BullStyle.StrokeWidth = 2;
+```
+
+**ColumnStyle object**
+
+Configure the style of your column plot using the `ColumnStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.ColumnStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.ColumnStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.ColumnStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.ColumnStyle.StrokeWidth = 2;
+```
+
+**LineStyle object**
+
+Configure the style of your bull plot using the `BullStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.LineStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Generic.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Generic.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Generic.PlotStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData properties**
+
+Connect the points with null value in your line or area plots using the Boolean type `ConnectNullData` properties of the `Generic` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Generic.ConnectNullData = true;
+```
+
+#### Column Plot
+
+Configure the style of columns in column charts using properties of the `ColumnStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Column.ColumnStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Column.ColumnStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Column.ColumnStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Column.ColumnStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your column chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Column.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Column.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Column.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Column.PlotStyle.StrokeWidth = 2;
+```
+
+#### Line Plot
+
+Configure the style of lines in line charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Line.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Line.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Line.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Line.LineStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your line chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Line.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Line.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Line.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Line.PlotStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData properties**
+
+Connect the points with null value in your line plots using the Boolean type `ConnectNullData` properties of the `Line` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Line.ConnectNullData = true;
+```
+
+#### StepLine plot
+
+Configure the style of lines in step-line charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepLine.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.StepLine.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.StepLine.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.StepLine.LineStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your step-line chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepLine.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.StepLine.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.StepLine.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.StepLine.PlotStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData properties**
+
+Connect the points with null value in your step-line plots using the Boolean type `ConnectNullData` properties of the `StepLine` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepLine.ConnectNullData = true;
+```
+
+#### SmoothLine plot
+
+Configure the style of lines in smooth line charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothLine.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.SmoothLine.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.SmoothLine.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.SmoothLine.LineStyle.StrokeWidth = 2;
+```
+
+**PlotStyle object**
+
+Configure the plot style in your smooth line chart using properties of the `PlotStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothLine.PlotStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.SmoothLine.PlotStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.SmoothLine.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.SmoothLine.PlotStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData properties**
+
+Connect the points with null value in your smooth line plots using the Boolean type `ConnectNullData` properties of the `SmoothLine` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothLine.ConnectNullData = true;
+```
+
+#### Area plot
+
+Configure the style of areas in area charts using properties of the `AreaStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Area.AreaStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Area.AreaStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Area.AreaStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Area.AreaStyle.StrokeWidth = 2;
+```
+
+**LineStyle object**
+
+Configure the style of boundary lines in area charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Area.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.Area.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.Area.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.Area.LineStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData Properties**
+
+Connect the points with null value in your area plot using the Boolean type `ConnectNullData` properties of the `Area` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Area.ConnectNullData = true;
+```
+
+#### StepArea plot
+
+Configure the style of areas in step-area charts using properties of the `AreaStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepArea.AreaStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.StepArea.AreaStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.StepArea.AreaStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.StepArea.AreaStyle.StrokeWidth = 2;
+```
+
+**LineStyle object**
+
+Configure the style of boundary lines of the plot in step-area charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.StepArea.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.StepArea.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.StepArea.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.StepArea.LineStyle.StrokeWidth = 2;
+```
+
+**ConnectNullData Properties**
+
+Connect the points with null value in your step-area plot using the Boolean type `ConnectNullData` properties of the `Area` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.Area.ConnectNullData = true;
+```
+
+#### SmoothArea plot
+
+Configure the style of areas in step-area charts using properties of the `AreaStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothArea.AreaStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.SmoothArea.AreaStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.SmoothArea.AreaStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.SmoothArea.AreaStyle.StrokeWidth = 2;
+```
+
+**LineStyle object**
+
+Configure the style of boundary lines in smooth area charts using properties of the `LineStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothArea.LineStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.SmoothArea.LineStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.SmoothArea.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.SmoothArea.LineStyle.StrokeWidth = 2;|
+```
+
+**ConnectNullData Properties**
+
+Connect the points with null value in your smooth area plot using the Boolean type `ConnectNullData` properties of the `SmoothArea` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.SmoothArea.ConnectNullData = true;
+```
+
+#### OHLC plot
+
+**BearStyle Object**
+
+Configure bear style OHLC plots using properties of the `BearStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.OHLC.BearStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.OHLC.BearStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.OHLC.BearStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.OHLC.BearStyle.StrokeWidth = 2;
+```
+
+**BullStyle object**
+
+Configure bull style OHLC plots using properties of the `BullStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.OHLC.BullStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.OHLC.BullStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.OHLC.BullStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.OHLC.BullStyle.StrokeWidth = 2;
+```
+
+#### CandleStick plot
+
+**BearStyle Object**
+
+Configure bear style Candlestick plots using properties of the `BearStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.CandleStick.BearStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.CandleStick.BearStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.CandleStick.BearStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.CandleStick.BearStyle.StrokeWidth = 2;
+```
+
+**BullStyle object**
+
+Configure bull style Candlestick plots using properties of the `BullStyle` object. Refer to the code given below:
+
+```csharp
+timeSeries.PlotConfig.CandleStick.BullStyle.FillColor = "#ff0000";
+timeSeries.PlotConfig.CandleStick.BullStyle.StrokeColor = "#ffffff";
+timeSeries.PlotConfig.CandleStick.BullStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+timeSeries.PlotConfig.CandleStick.BullStyle.StrokeWidth = 2;
 ```
 
 ### `Data Marker`
