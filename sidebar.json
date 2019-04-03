@@ -2161,7 +2161,6 @@
     "icon": "fc_net",
     "description": "Charting library for ASP.NET MVC & ASP.NET WebForms",
     "longDescription": "Learn how to implement FusionCharts in ASP.NET MVC and WebForms using our .NET assembly",
-    "badge": "Beta",
     "children": [
       {
         "title": "Overview",
