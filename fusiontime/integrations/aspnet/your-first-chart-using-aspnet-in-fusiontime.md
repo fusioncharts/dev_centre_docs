@@ -212,16 +212,27 @@ public partial class index : System.Web.UI.Page
 In the above code:
 
 - `schema` and `data` are the variables to comsume informations of `schema` and `data` file.
+  
 - `using()` is used to store the informations of data and schema to the variables.
+
 - Create and initialize `FusionTable` object instance with the constructor parameters of data and schema.
+
 - Create and initialize `TimeSeries` object instance with the constructor parameters of FusionTable object instance.
+
 - The following parameter values have been set for the Chart object of the FusionCharts wrapper constructor:
+
     - Value of `charttype` has been set to `timeseries`.
+
     - Value of `chartID` has been set to `first_chart`.
+
     - Value of `width` has been set to `700`.
+
     - Value of `height` has been set to `450`.
+
     - Value of `data format` has been set to `json`
+
     - The time-series object `timeSeries` has been provided.
+
 -  The `render()` function has been applied to the `Literal1` container to render the chart.
 
 That's it! Your first chart in **ASP.NET** using FusionTime is ready.

@@ -16,6 +16,10 @@ FusionCharts.NET helps you avoid writing messy JavaScript and JSON code within y
 
 - **Visualization** - The visualization module of FusionCharts.NET allows you to render the chart with functional and cosmetic configurations, after receiving the data from the data engine.
 
+To help understand better refer to the illustration below:
+
+<img src="{% site.BASE_URL %}/images/architecture-diagram-fusioncharts-net.png" alt="Data Markers" width="700" height="420">
+
 ## FusionCharts ASP.NET wrapper vs FusionCharts.NET
 
 <table>
