@@ -180,35 +180,48 @@ Now, let's create the files to render the above chart.
 Once you have the `data` and the `schema` ready, create a `.aspx` file and copy the following code:
 
 ```javascript
-FusionTable fusionTable = new FusionTable(schema, data);
-TimeSeries timeSeries = new TimeSeries(fusionTable);
-
-// Wrapper constructor parameters
-// charttype, chartID, width, height, data format, TimeSeries object
-Chart chart = new Chart("timeseries", "first_chart", "700", "450", "json", timeSeries);    	
-Literal1.Text = chart.Render();
+using System;
+using System.Text;
+using System.Collections.Generic;
+using FusionCharts.Charts;
+using System.Net;
+public partial class index : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // Local variables for consuming schema and data information.
+        string schema, data;
+        // Fetch data and schema information from remote url and store these in local schema and data variables.
+        using (WebClient client = new WebClient())
+        {
+            data = client.DownloadString("..PATH/data.json");
+            schema = client.DownloadString("..PATH/schema.json");
+        }
+        // Create and initialize FusionTable object instance with the constructor parameters of data and schema.
+        FusionTable fusionTable = new FusionTable(schema, data);
+        // Create and initialize TimeSeries object instance with the constructor parameters of FusionTable object instance.
+        TimeSeries timeSeries = new TimeSeries(fusionTable);
+        // Wrapper constructor parameters
+        // charttype, chartID, width, height, data format, TimeSeries object
+        Chart chart = new Chart("timeseries", "first_chart", "700", "450", "json", timeSeries);
+        Literal1.Text = chart.Render();
+    }
+}
 ```
 
 In the above code:
 
-* The path of the `data.json` file has been assigned to `data`. Note that if the `data.json` file is stored at an external location, you need to provide the entire path of the file here.
-
-* The path of the `schema.json` file has been assigned to `schema`. Note that if the `schema.json` file is stored at an external location, you need to provide the entire path of the file here.
-
-* The following parameter values have been set for the Chart object of the FusionCharts wrapper constructor:
-
-    * Value of `charttype` has been set to `timeseries`.
-
-    * Value of `chartID` has been set to `first_chart`.
-
-    * Value of `width` has been set to `700`.
-
-    * Value of `height` has been set to `450`.
-
-    * Value of `data format` has been set to `json`
-
-    * The time-series object `timeSeries` has been provided.
-
-* The `render()` function has been applied to the `Literal1` container to render the chart.
+- `schema` and `data` are the variables to comsume informations of `schema` and `data` file.
+- `using()` is used to store the informations of data and schema to the variables.
+- Create and initialize `FusionTable` object instance with the constructor parameters of data and schema.
+- Create and initialize `TimeSeries` object instance with the constructor parameters of FusionTable object instance.
+- The following parameter values have been set for the Chart object of the FusionCharts wrapper constructor:
+    - Value of `charttype` has been set to `timeseries`.
+    - Value of `chartID` has been set to `first_chart`.
+    - Value of `width` has been set to `700`.
+    - Value of `height` has been set to `450`.
+    - Value of `data format` has been set to `json`
+    - The time-series object `timeSeries` has been provided.
+-  The `render()` function has been applied to the `Literal1` container to render the chart.
 
 That's it! Your first chart in **ASP.NET** using FusionTime is ready.

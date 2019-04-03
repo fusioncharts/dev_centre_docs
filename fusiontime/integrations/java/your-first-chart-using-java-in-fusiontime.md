@@ -174,38 +174,68 @@ Now, let's create the files to render the above chart.
 ### Render the chart
 
 Once you have the `data` and the `schema` ready, create a `.jsp` file and copy the following code:
-
+ 
 ```javascript
-FusionCharts.FusionTable fusionTable = new FusionCharts.FusionTable(schema, data);
-FusionCharts.TimeSeries timeSeries = new FusionCharts.TimeSeries(fusionTable);
+// Custom method for pulling the data content from remote location by providing the file url as method parameter.
+public String getContent(String url) throws Exception {
+    URL website = new URL(url);
+    URLConnection connection = website.openConnection();
+    BufferedReader in = new BufferedReader(
+            new InputStreamReader(
+                    connection.getInputStream()));
+    StringBuilder response = new StringBuilder();
+    String inputLine;
+
+    while ((inputLine = in.readLine()) != null) {
+        response.append(inputLine);
+    }
+    in.close();
+    return response.toString();
+}
+
+// Fetch data and schema information from remote url and store these in local schema and data variables.
+String data = getContent("..PATH/data.json");
+String schema = getContent("..PATH/schema.json");
+
+// Create and initialize FusionTable object instance with the constructor parameters of data and schema.
+FusionCharts.FusionTable fusionTable = new FusionCharts.FusionTable(schema, data);  
+// Create and initialize TimeSeries object instance with the constructor parameters of FusionTable object instance.
+FusionCharts.TimeSeries timeSeries = new FusionCharts.TimeSeries(fusionTable);  
 
 // Wrapper constructor parameters
 // charttype, chartID, width, height, renderAt, data format, TimeSeries object
-
 FusionCharts chart = new FusionCharts("timeseries", "MyFirstChart" , "700", "450", "chart-container", "json", timeSeries);
 
 // Render the chart
 chart.render();
- ```
+```
 
 In the above code:
 
-* The following parameter values have been set for the `chart` wrapper constructor:
+- Create a custom method for pulling the data content from remote location.
 
-    * Value of `charttype` has been set to `timeseries`.
+- `schema` and `data` are the variables to comsume informations of `schema` and `data` file.
+  
+- Create and initialize `FusionTable` object instance with the constructor parameters of data and schema.
 
-    * Value of `chartID` has been set to `MyFirstChart`.
+- Create and initialize `TimeSeries` object instance with the constructor parameters of FusionTable object instance.
 
-    * Value of `width` has been set to `700`.
+- The following parameter values have been set for the `chart` wrapper constructor:
 
-    * Value of `height` has been set to `450`.
+    - Value of `charttype` has been set to `timeseries`.
 
-    * Value of `renderAt` has been set to `chart-container`.
+    - Value of `chartID` has been set to `MyFirstChart`.
 
-    * Value of `data format` has been set to `json`.
+    - Value of `width` has been set to `700`.
 
-    * Value of the time-series object has been set to `timeSeries`.
+    - Value of `height` has been set to `450`.
 
-* The `render()` member function of the `jsp-fusioncharts` wrapper has been used to render the chart.
+    - Value of `renderAt` has been set to `chart-container`.
+
+    - Value of `data format` has been set to `json`.
+
+    - Value of the time-series object has been set to `timeSeries`.
+
+- The `render()` member function of the `jsp-fusioncharts` wrapper has been used to render the chart.
 
 That's it! Your first chart in Java using FusionTime is ready.
