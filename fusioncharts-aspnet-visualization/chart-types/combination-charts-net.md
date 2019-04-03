@@ -47,7 +47,7 @@ The chart will look as shown below:
 
 Create the `CombinationChart.aspx.cs` file and do the following:
 
-- Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+- Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files.
 
 - Create `DataTable`.
 
