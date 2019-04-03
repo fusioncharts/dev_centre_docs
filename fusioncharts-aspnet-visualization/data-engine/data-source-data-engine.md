@@ -92,7 +92,7 @@ In the above command:
 
 ## CSV File
 
-### Local/another network file
+### Local File
 
 The code to fetch data from a CSV file stored in the local computer is given below:
 
@@ -127,7 +127,7 @@ In the above code, `csvFileSource` is the object that holds the file configurati
 
 ## JSON File
 
-### Local/another network file
+### Local File
 
 The code to fetch data from a JSON file stored in the local computer is given below:
 
