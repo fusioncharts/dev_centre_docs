@@ -31,7 +31,7 @@ To install, download `FusionCharts.NET` and follow the steps given below:
 
 - Add a reference to the `FusionCharts.DataEngine.dll` and `FusionCharts.Visualization.dll` files into your `ASP.NET` project.
 
-## NuGet download:
+## NuGet download
 
 To use NuGet package, please run the following command in the NuGet Package Manage Console:
 
