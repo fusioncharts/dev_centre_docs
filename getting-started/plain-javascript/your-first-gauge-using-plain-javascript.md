@@ -87,7 +87,7 @@ The angular gauge is shown below:
 
 ## Chart data
 
-The thresholds for the above sample have been defined using the following range:
+The thresholds for the above sample is shown in the table below:
 
 | Range | Color | Hex Code |
 | ----- | ----- | -------- ||
@@ -147,7 +147,7 @@ In the above JSON:
 
 * Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of the dial in an array.
+* Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
