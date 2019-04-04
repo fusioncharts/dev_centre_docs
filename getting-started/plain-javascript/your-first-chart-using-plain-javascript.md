@@ -89,14 +89,14 @@ The data to render the above chart is shown in the table below:
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
-| Venezuela | 290                 |
-| Saudi     | 260                 |
-| Canada    | 180                 |
-| Iran      | 140                 |
-| Russia    | 115                 |
-| UAE       | 100                 |
-| US        | 30                  |
-| China     | 30                  |
+| Venezuela | 290K                |
+| Saudi     | 260K                |
+| Canada    | 180K                |
+| Iran      | 140K                |
+| Russia    | 115K                |
+| UAE       | 100K                |
+| US        | 30K                 |
+| China     | 30K                 |
 
 FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
@@ -146,7 +146,7 @@ In the above JSON data:
 
 - Create the `chart` object to define the elements of the chart.
 
-- Set the `caption`, `subcaption` and `theme` of the chart.
+- Set the `caption` and `subcaption` of the chart.
 
 - Set the value of `xAxisName` attribute to **Country**(first column of the table).
 
@@ -155,6 +155,10 @@ In the above JSON data:
 - In the `data` array, create objects for each row and specify the `label` attribute to represent the Country, for example, **Venezuela**.
   
 - Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries, for example, **290K** for **Venezuela**.
+
+- Set the `numberSuffix` attribute to set the unit of the values.
+
+- Set the `theme` attribute to apply the predefines themes to the chart.
 
 Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
