@@ -60,7 +60,7 @@ FusionCharts export handler gets automatically installed, once you install `Fusi
 
 - Add the following line under <`system.web`> in `web.config`:
 
-```
+```xml
 <httpRuntime targetFramework="4.5" requestValidationMode="2.0" />
 ```
 

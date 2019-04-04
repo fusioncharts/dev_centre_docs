@@ -69,23 +69,23 @@ The angular gauge is shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample have been defined using the following range.
+## Chart data
 
+The thresholds for the above sample is shown in the table below:
 
-| Range  | Color  | Hex Code |
-| ------ | ------ | -------- |
+| Range | Color | Hex Code |
+| ----- | ----- | -------- ||
 | 0-50   | Red    | #F2726F  |
 | 50-75  | Yellow | #FFC533  |
 | 75-100 | Green  | #62B58F  |
 
-So, any score less than 50 (considered bad) is presented in red. Any score between 50 and 75 (considered average) is presented in yellow. Any score above 75 (considered good) is presented in green.
+So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
-## Convert Tabular Data into JSON/XML Format
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
-
-```
+```json
 {
+    // Chart Configuration
     "chart": {
         "caption": "Nordstorm's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
@@ -95,52 +95,47 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "theme": "fusion",
         "showToolTip": "0"
     },
+    // Chart Data
     "colorRange": {
-        "color": [
-            {
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            },
-            {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            },
-            {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }
-        ]
+        "color": [{
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#F2726F"
+        }, {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#FFC533"
+        }, {
+            "minValue": "75",
+            "maxValue": "100",
+            "code": "#62B58F"
+        }]
     },
     "dials": {
-        "dial": [
-            {
-                "value": "81"
-            }
-        ]
+        "dial": [{
+            "value": "81"
+        }]
     }
 }
-
 ```
+
 In the above JSON:
 
 * Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+* Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Specify the hex code of the color within the `color` array.
+* Set the `code` attribute to specify the hex color of respective ranges.
 
 * Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of the dial in an array.
+* Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
+Now that you have the data in JSON format, let's see how to render the chart.
 
 ## Render the Chart
 
