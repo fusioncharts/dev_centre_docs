@@ -103,33 +103,35 @@ Let's start with a simple example of "Countries With Most Oil Reserves" chart, w
 
 To understand the chart components, click [here](/understanding-fusioncharts).
 
-The data for the above chart is shown in the table below:
+## Chart data
+
+The data to render the above chart is shown in the table below:
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
-| Venezuela | 290                 |
-| Saudi     | 260                 |
-| Canada    | 180                 |
-| Iran      | 140                 |
-| Russia    | 115                 |
-| UAE       | 100                 |
-| US        | 30                  |
-| China     | 30                  |
+| Venezuela | 290K                |
+| Saudi     | 260K                |
+| Canada    | 180K                |
+| Iran      | 140K                |
+| Russia    | 115K                |
+| UAE       | 100K                |
+| US        | 30K                 |
+| China     | 30K                 |
 
-## Convert Tabular Data into JSON Format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
 ```json
 {
+    // Chart Configuration
     "chart": {
         "caption": "Countries With Most Oil Reserves [2017-18]",
         "subCaption": "In MMbbl = One Million barrels",
         "xAxisName": "Country",
         "yAxisName": "Reserves (MMbbl)",
         "numberSuffix": "K",
-        "theme": "fusion"
+        "theme": "fusion",
     },
+    // Chart Data
     "data": [{
         "label": "Venezuela",
         "value": "290"
@@ -158,17 +160,29 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[ multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts)charts.
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
 
 In the above JSON data:
 
-* Create the `chart` object to define the elements of the chart.
+- Create the `chart` object to define the elements of the chart.
 
-* Specify the `label` and `value` of each column within the data array.
+- Set the `caption` and `subcaption` of the chart.
+
+- Set the value of `xAxisName` attribute to **Country**(first column of the table).
+
+- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
+
+- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
+  
+- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
+
+- Set the `numberSuffix` attribute to set the unit of the values.
+
+- Set the `theme` attribute to apply the predefines themes to the chart.
 
 Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
-Now that you have converted the tabular data to JSON format, let's see how to render the chart.
+Now that you have the data in JSON format, let's see how to render the chart.
 
 ## Render the Chart
 
