@@ -83,7 +83,9 @@ The Column 2D chart is shown below:
 
 To understand the chart components, click [here](/understanding-fusioncharts).
 
-The data for the above chart is shown in the table below:
+## Chart data
+
+The data to render the above chart is shown in the table below:
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
@@ -96,9 +98,7 @@ The data for the above chart is shown in the table below:
 | US        | 30                  |
 | China     | 30                  |
 
-## Convert tabular data into JSON format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
+FusionCharts accepts data in JSON format. Following code is the **JSON** representation of the above table with the required attributes to render the above chart.
 
 ```json
 {
@@ -142,11 +142,13 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 > Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
 
-In the above JSON data: 
+In the above JSON data:
 
-* Create the `chart` object to define the elements of the chart.
+- Create the `chart` object to define the elements of the chart.
 
-* Specify the `label` and `value` of each column within the `data` array.
+- Set the `caption`, `subcaption` and `theme` of the chart (basic requirements of a chart).
+
+- Create objects for each row and specify the `label` and `value` of each column within the `data` array.
 
 Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
