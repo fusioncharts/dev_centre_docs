@@ -152,9 +152,9 @@ In the above JSON data:
 
 - Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
 
-- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country, for example, **Venezuela**.
+- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
   
-- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries, for example, **290K** for **Venezuela**.
+- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
 
 - Set the `numberSuffix` attribute to set the unit of the values.
 
