@@ -98,7 +98,7 @@ The data to render the above chart is shown in the table below:
 | US        | 30                  |
 | China     | 30                  |
 
-FusionCharts accepts data in JSON format. Following code is the **JSON** representation of the above table with the required attributes to render the above chart.
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
 ```json
 {
@@ -146,13 +146,19 @@ In the above JSON data:
 
 - Create the `chart` object to define the elements of the chart.
 
-- Set the `caption`, `subcaption` and `theme` of the chart (basic requirements of a chart).
+- Set the `caption`, `subcaption` and `theme` of the chart.
 
-- Create objects for each row and specify the `label` and `value` of each column within the `data` array.
+- Set the value of `xAxisName` attribute to **Country**(first column of the table).
+
+- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
+
+- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country, for example, **Venezuela**.
+  
+- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries, for example, **290K** for **Venezuela**.
 
 Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
-Now that you have converted the tabular data to JSON format, let's see how to render the chart.
+Now that you have the data in JSON format, let's see how to render the chart.
 
 ## Render the chart
 
