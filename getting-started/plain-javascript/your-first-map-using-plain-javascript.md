@@ -174,7 +174,7 @@ Following code is the JSON representation of the above table with the required a
 }
 ```
 
-In the above JSON data: 
+In the above JSON data:
 
 * Create the `chart` object to define the elements of the map.
 
