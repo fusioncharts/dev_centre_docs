@@ -2387,6 +2387,10 @@
             "path": "/fusioncharts-aspnet-visualization/api-reference-net/events-net"
           }
         ]
+      },
+      {
+        "title": "Version History",
+        "path": "/fusioncharts-aspnet-visualization/version-history-fusioncharts-net"
       }
     ]
   }

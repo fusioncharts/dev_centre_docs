@@ -23,7 +23,7 @@ Let's take a basic example of tabular data in a DataModel.
 | November  | 19000    | 2000    |
 | December  | 23000    | 7000    |
 
-In the above data, we have columns for **Month**, **Revenue** and **Profit**. The mathematical formula to calculate the **Profit %** is, **(Profit  *100) / Revenue**. To create a new column for **Profit %**, with the existing ones, refer to the code below:
+In the above data, we have columns for **Month**, **Revenue** and **Profit**. The mathematical formula to calculate the **Profit %** is, **(Profit \*100) / Revenue**. To create a new column for **Profit %**, with the existing ones, refer to the code below:
 
 ```csharp
 CalculatedColumns calculatedColumns = new CalculatedColumns {
@@ -62,3 +62,5 @@ calculatedColumn.Dispose();
 ```
 
 In the above code, `calculatedColumn` is the object that holds the names of the columns created with the data derived via the mathematical expressions.
+
+> If the column name of a table includes space, for example, `Order Date` provide it in the mathematical expression as `[Order Date]`.
