@@ -30,11 +30,9 @@
     },
     events: {
         'dataplotClick': function(evt, args) {
-            window.showAlert  = function(str){
-                var arr = str.split(",");    
-                alert("[Example for the 'JavaScript:' prefix] \n" + arr[0] + " juice sales for the last year: " + arr[1]);
+            window.showAlert = function(name, value) {
+                alert("[Example for the 'JavaScript:' prefix] \n" +  name+ " juice sales for the last year: " + value);
             };
-            //alert("Test");
         }
     }
 }
