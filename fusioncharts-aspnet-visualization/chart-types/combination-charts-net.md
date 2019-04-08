@@ -43,6 +43,8 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination2d.js %}
 
+Click [here](https://dotnetfiddle.net/Tkf2vq) to edit the column chart.
+
 ### Render the chart
 
 Create the `CombinationChart.aspx.cs` file and do the following:
@@ -131,33 +133,37 @@ namespace TestProject
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+  <head runat="server">
     <title></title>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-</head>
-<body>
-    <script>
-       
-    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
+  </head>
+  <body>
+    <script></script>
     <form id="form1" runat="server">
-        <div>
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-            
-        </div>
+      <div>
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+      </div>
     </form>
-</body>
+  </body>
 </html>
 ```
 
 ## 3D Single Y-axis Combination Chart
 
-Now, let's learn how to create a 3D single y-axis combination chart with the same data. The code remains the same as that of the above chart. The only difference is instead of instantiating a 2D chart you have to instantiate a 3D chart. 
+Now, let's learn how to create a 3D single y-axis combination chart with the same data. The code remains the same as that of the above chart. The only difference is instead of instantiating a 2D chart you have to instantiate a 3D chart.
 
 Create a `CombinationChart.aspx.cs` and refer to the code below:
 
@@ -225,33 +231,39 @@ namespace TestProject
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+  <head runat="server">
     <title></title>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-</head>
-<body>
-    <script>
-       
-    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
+  </head>
+  <body>
+    <script></script>
     <form id="form1" runat="server">
-        <div>
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-            
-        </div>
+      <div>
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+      </div>
     </form>
-</body>
+  </body>
 </html>
 ```
 
 The chart looks like as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination3d.js %}
+
+Click [here](https://dotnetfiddle.net/cr0sh4) to edit the column chart.
 
 ## 2D Dual Y-axis Combination Chart
 
@@ -277,6 +289,8 @@ The data for the chart is shown in the table below:
 The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination2ddy.js %}
+
+Click [here](https://dotnetfiddle.net/fjhtVY) to edit the column chart.
 
 Create a `CombinationChart.aspx.cs` file and refer to the code below:
 
@@ -349,27 +363,31 @@ namespace TestProject
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+  <head runat="server">
     <title></title>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-</head>
-<body>
-    <script>
-       
-    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
+  </head>
+  <body>
+    <script></script>
     <form id="form1" runat="server">
-        <div>
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-            
-        </div>
+      <div>
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+      </div>
     </form>
-</body>
+  </body>
 </html>
 ```
 
@@ -409,6 +427,8 @@ The data for the chart is shown in the table below:
 The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination-scroll2d.js %}
+
+Click [here](https://dotnetfiddle.net/y6MTkR) to edit the column chart.
 
 Create a `CombinationChart.aspx.cs` file and refer to the code below:
 
@@ -480,27 +500,31 @@ namespace TestProject
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+  <head runat="server">
     <title></title>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-</head>
-<body>
-    <script>
-       
-    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
+  </head>
+  <body>
+    <script></script>
     <form id="form1" runat="server">
-        <div>
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-            
-        </div>
+      <div>
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+      </div>
     </form>
-</body>
+  </body>
 </html>
 ```
 
@@ -540,6 +564,8 @@ The data for the chart is shown in the table below:
 The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-combination-scroll2ddy.js %}
+
+Click [here](https://dotnetfiddle.net/MuaI7i) to edit the column chart.
 
 Create a `CombinationChart.aspx.cs` file and refer to the code below:
 
@@ -613,26 +639,30 @@ namespace TestProject
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+  <head runat="server">
     <title></title>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-</head>
-<body>
-    <script>
-       
-    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
+  </head>
+  <body>
+    <script></script>
     <form id="form1" runat="server">
-        <div>
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-            
-        </div>
+      <div>
+        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+      </div>
     </form>
-</body>
+  </body>
 </html>
 ```
