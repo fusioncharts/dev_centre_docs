@@ -281,27 +281,6 @@ return render(request, 'index.html', {
 })
 ```
 
-### Set up the configuration file
-
-- Add the following code snippet to the `urls.py` file to automatically set the URL to render the chart.
-
-```python
-from django.conf.urls import url
-from.import views
-
-urlpatterns = [
-    url(r'^$', views.chart, name = 'demo'),
-]
-```
-
-- To update the `STATICFILES_DIRS` object, include it to the `settings.py` file.
-
-```python
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "myproject/templates/static"),
-]
-```
-
 ### Render the chart
 
 With all the code in place, rum the following command to render the above chart.
