@@ -91,6 +91,29 @@ Python manage.py collectStatic
 
 That completes the installation of FusionCharts Suite and the Django wrapper.
 
+## Set up the configuration file
+
+Set the configuration file by following the steps below:
+
+**Step 1:** Add the following code snippet to the urls.py file, to automically set the URL to render the chart.
+
+```python
+from django.conf.urls import url
+from.import views
+
+urlpatterns = [
+    url(r'^$', views.chart, name = 'demo'),
+]
+```
+
+**Step 2:** Update the `STATICFILES_DIRS` object by including the following code to `settings.py` file.
+
+```python
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "fc_column2d/templates/static"),
+]
+```
+
 ## Create Your First Chart
 
 Let's create a Column 2D chart using the `django-fusioncharts` wrapper showing the "Countries With Most Oil Reserves".
