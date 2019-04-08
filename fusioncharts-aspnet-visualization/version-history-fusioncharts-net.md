@@ -4,7 +4,7 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version History
 ---
 
-<h2 class="sub-heading">Version 1.0.0 </h2>
+<h2 class="sub-heading">Version 1.0.1</h2>
 
 <p class="release-date">8th April, 2019</p>
 
