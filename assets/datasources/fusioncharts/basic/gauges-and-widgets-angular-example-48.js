@@ -63,7 +63,7 @@
                     dispCon = document.getElementById("alertDiv"),
                     prcnt;
                 //Hiding the table
-                dispCon.style.cssText = "display:none";
+                dispCon && (dispCon.style.cssText = "display:none");
                 prcnt = 0 + parseInt(Math.floor(Math.random() * 100), 10);
                 // data to be fed to the gauge
                 angGauge.feedData("value=" + prcnt);

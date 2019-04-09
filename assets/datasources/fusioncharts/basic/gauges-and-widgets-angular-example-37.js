@@ -122,8 +122,7 @@
                     if (speedScore && diff) {
                         speedScore += scoreArray[flag];
                         flag += 1;
-						evtObj.sender.feedData && evtObj.sender.feedData("value=" + speedScore);
-
+						      evtObj.sender.feedData && evtObj.sender.feedData("value=" + speedScore);
                     }
                 }, 2000);
         },
