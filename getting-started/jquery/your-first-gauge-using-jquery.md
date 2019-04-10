@@ -83,7 +83,7 @@ That completes the installation of FusionCharts and the `jquery-fusioncharts` pl
 
 Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple "Nordstorm Customer Satisfaction Index" gauge as shown below:
+To start with, we'll build a simple "Nordstrom Customer Satisfaction Index" gauge as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
@@ -105,7 +105,7 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -214,7 +214,7 @@ $('document').ready(function () {
     dataSource: {
       // Chart Configuration
       "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -274,7 +274,7 @@ $('document').ready(function () {
                     dataSource: {
                         // Chart Configuration
                         "chart": {
-                            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                            "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                             "lowerLimit": "0",
                             "upperLimit": "100",
                             "showValue": "1",
@@ -337,7 +337,7 @@ $('document').ready(function () {
                     dataSource: {
                         // Chart Configuration
                         "chart": {
-                            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                            "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                             "lowerLimit": "0",
                             "upperLimit": "100",
                             "showValue": "1",

@@ -86,7 +86,7 @@ That completes the installation of FusionCharts and the `vue-fusioncharts` compo
 
 Gauges are powerful tools that can showcase information using a radial scale to display data. 
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below. 
+To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below. 
 
 The angular gauge is shown below:
 
@@ -110,7 +110,7 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -210,7 +210,7 @@ name: 'app',
             "dataFormat": "json",
             "datasource": {
                 "chart": {
-                    "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                     "lowerLimit": "0",
                     "upperLimit": "100",
                     "showValue": "1",
@@ -293,7 +293,7 @@ name: 'app',
                 dataSource: {
                     // Chart Configuration
                     "chart": {
-                        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                         "lowerLimit": "0",
                         "upperLimit": "100",
                         "showValue": "1",
@@ -362,7 +362,7 @@ name: 'app',
                 dataSource: {
                     // Chart Configuration
                     "chart": {
-                        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                         "lowerLimit": "0",
                         "upperLimit": "100",
                         "showValue": "1",

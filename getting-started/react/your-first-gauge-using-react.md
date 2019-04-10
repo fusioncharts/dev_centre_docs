@@ -105,7 +105,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 
 Gauges are powerful tools that can showcase information using a radial or linear scale to display data. 
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
+To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts). 
 
@@ -131,7 +131,7 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -248,7 +248,7 @@ const chartConfigs = {
     dataSource: {
     // Chart Configuration
       "chart": {
-          "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+          "caption": "Nordstrom's Customer Satisfaction Score for 2017",
           "lowerLimit": "0",
           "upperLimit": "100",
           "showValue": "1",
@@ -323,7 +323,7 @@ export default App
         dataSource: {
             // Chart Configuration
             "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                 "lowerLimit": "0",
                 "upperLimit": "100",
                 "showValue": "1",

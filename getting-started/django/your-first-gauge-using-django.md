@@ -87,7 +87,7 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -200,7 +200,7 @@ def myFirstWidget(request):
 
     # The `widgetConfig` dict contains key-value pairs of data for widget attribute
     widgetConfig = OrderedDict()
-    widgetConfig["caption"] = "Nordstorm's Customer Satisfaction Score for 2017"
+    widgetConfig["caption"] = "Nordstrom's Customer Satisfaction Score for 2017"
     widgetConfig["lowerLimit"] = "0"
     widgetConfig["upperLimit"] = "100"
     widgetConfig["showValue"] = "1"
