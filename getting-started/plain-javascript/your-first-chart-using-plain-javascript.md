@@ -14,9 +14,9 @@ Install **FusionCharts** using any of the following steps:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='localfiles'>Local Files</a></li>
+    <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
@@ -198,9 +198,9 @@ The consolidated code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='localfiles'>Local Files</a></li>
+    <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
