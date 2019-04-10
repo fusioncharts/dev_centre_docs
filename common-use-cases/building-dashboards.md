@@ -174,11 +174,11 @@ The HTML code to build this dashboard is given here:
     </style>
     <script
       type="text/javascript"
-      src="fusioncharts/js/fusioncharts.js"
+      src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
     ></script>
     <script
       type="text/javascript"
-      src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"
+      src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
     ></script>
     <script type="text/javascript">
       FusionCharts.ready(function() {
