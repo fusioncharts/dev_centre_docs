@@ -14,19 +14,19 @@ Install **FusionCharts** using any of the following steps:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='localfiles'>Local Files</a></li>
+    <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
+<div class='tab npm-tab'>
 
 <div><strong>To install the `fusioncharts` package via  npm run the command below:</strong></div>
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
 
-<div class='tab cdn-tab'>
+<div class='tab cdn-tab active'>
 <div><strong>To install the **FusionCharts** Suite follow the steps below:</strong></div>
 <div>
     <ol>
@@ -198,12 +198,12 @@ The consolidated code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='localfiles'>Local Files</a></li>
+    <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
+<div class='tab npm-tab'>
 <div class='mt-30'><strong>The `fusioncharts` package for `npm` can be used in two different ways:</strong></div>
 <ul>
     <li>FusionCharts ES module</li>
@@ -347,7 +347,7 @@ chartInstance.render();
 </ul>
 </div>
 
-<div class='tab cdn-tab'>
+<div class='tab cdn-tab active'>
 <pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;

@@ -18,11 +18,11 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 To install the FusionCharts Suite, follow the steps below:
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+- Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
 
-* Copy and paste the `fusioncharts.php` file from `integrations > php > fusioncharts-wrapper` in your project folder.
+- Copy and paste the `fusioncharts.php` file from `integrations > php > fusioncharts-wrapper` in your project folder.
 
-* Include the FusionCharts theme file to apply the style to the charts.
+- Include the FusionCharts theme file to apply the style to the charts.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -39,6 +39,7 @@ To install the FusionCharts Suite, follow the steps below:
 // Include FusionCharts Theme File
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -50,6 +51,7 @@ To install the FusionCharts Suite, follow the steps below:
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -61,7 +63,7 @@ That completes the installation of FusionCharts Suite and the PHP wrapper.
 
 Gauges are powerful tools that can showcase information using a radial or linear scale to display data.
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
+To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
@@ -75,9 +77,9 @@ The thresholds for the above sample is shown in the table below:
 
 | Range | Color | Hex Code |
 | ----- | ----- | -------- ||
-| 0-50   | Red    | #F2726F  |
-| 50-75  | Yellow | #FFC533  |
-| 75-100 | Green  | #62B58F  |
+| 0-50 | Red | #F2726F |
+| 50-75 | Yellow | #FFC533 |
+| 75-100 | Green | #62B58F |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -85,53 +87,59 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
 ```
 
 In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` object to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Set the `code` attribute to specify the hex color of respective ranges.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of customer satisfaction score.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
@@ -145,13 +153,13 @@ To render the chart, follow the steps below:
 
 2. Include the `fusioncharts` library.
 
-3.  Include the FusionCharts theme file to apply the style to the charts.
+3. Include the FusionCharts theme file to apply the style to the charts.
 
-4.  Store the chart configurations in an associative array.
+4. Store the chart configurations in an associative array.
 
-5.  Store the color range in a multidimensional array.
+5. Store the color range in a multidimensional array.
 
-6.  Store the value of the `dial` in an array. 
+6. Store the value of the `dial` in an array.
 
 7. Create a data object within the chart configurations to assign the associative data array to it.
 
@@ -159,17 +167,17 @@ To render the chart, follow the steps below:
 
 9. Create the chart instance and set the following:
 
-    * Set the chart type as `angulargauge`. Each gauge is represented with a unique alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauges with their respective alias [here](/chart-guide/list-of-charts#fusionwidgets-xt).
+   - Set the chart type as `angulargauge`. Each gauge is represented with a unique alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauges with their respective alias [here](/chart-guide/list-of-charts#fusionwidgets-xt).
 
-    * Set the gauge `id`.
+   - Set the gauge `id`.
 
-    * Set the `width` and `height` (in pixels).
+   - Set the `width` and `height` (in pixels).
 
-    * Set the container for the gauge.
+   - Set the container for the gauge.
 
-    * Set the `dataFormat` as JSON.
+   - Set the `dataFormat` as JSON.
 
-    * Embed the `json` data as the value of the `dataSource`.
+   - Embed the `json` data as the value of the `dataSource`.
 
 10. Finally, use a container using `<div>` to render the gauge.
 
@@ -199,19 +207,20 @@ The full code for the above sample is given below:
         &lt;script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
+
 &lt;?php
-    // Widget appearance configuration
-    $arrChartConfig = array(
-        "chart" =&gt; array(
-            "caption" =&gt; "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit" =&gt; "0",
-            "upperLimit" =&gt; "100",
-            "showValue" =&gt; "1",
-            "numberSuffix" =&gt; "%",
-            "theme" =&gt; "fusion",
-            "showToolTip" =&gt; "0"
-        )
-    );
+// Widget appearance configuration
+\$arrChartConfig = array(
+"chart" =&gt; array(
+"caption" =&gt; "Nordstrom's Customer Satisfaction Score for 2017",
+"lowerLimit" =&gt; "0",
+"upperLimit" =&gt; "100",
+"showValue" =&gt; "1",
+"numberSuffix" =&gt; "%",
+"theme" =&gt; "fusion",
+"showToolTip" =&gt; "0"
+)
+);
 
     // Widget color range data
     $colorDataObj = array("color" =&gt; array(
@@ -220,7 +229,7 @@ The full code for the above sample is given below:
         ["minValue" =&gt; "75", "maxValue" =&gt; "100", "code" =&gt; "#62B58F"]
     ));
 
-    // Dial array    
+    // Dial array
     $dial = array();
 
     // Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
@@ -240,13 +249,15 @@ The full code for the above sample is given below:
 
     // Render the Widget
     $Widget-&gt;render();
+
 ?&gt;
-    &lt;center&gt;
-        &lt;div id="widget-container"&gt;Widget will render here!&lt;/div&gt;
-    &lt;/center&gt;
+&lt;center&gt;
+&lt;div id="widget-container"&gt;Widget will render here!&lt;/div&gt;
+&lt;/center&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -267,19 +278,20 @@ The full code for the above sample is given below:
         &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
+
 &lt;?php
-    // Widget appearance configuration
-    $arrChartConfig = array(
-        "chart" =&gt; array(
-            "caption" =&gt; "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit" =&gt; "0",
-            "upperLimit" =&gt; "100",
-            "showValue" =&gt; "1",
-            "numberSuffix" =&gt; "%",
-            "theme" =&gt; "fusion",
-            "showToolTip" =&gt; "0"
-        )
-    );
+// Widget appearance configuration
+\$arrChartConfig = array(
+"chart" =&gt; array(
+"caption" =&gt; "Nordstrom's Customer Satisfaction Score for 2017",
+"lowerLimit" =&gt; "0",
+"upperLimit" =&gt; "100",
+"showValue" =&gt; "1",
+"numberSuffix" =&gt; "%",
+"theme" =&gt; "fusion",
+"showToolTip" =&gt; "0"
+)
+);
 
     // Widget color range data
     $colorDataObj = array("color" =&gt; array(
@@ -288,7 +300,7 @@ The full code for the above sample is given below:
         ["minValue" =&gt; "75", "maxValue" =&gt; "100", "code" =&gt; "#62B58F"]
     ));
 
-    // Dial array    
+    // Dial array
     $dial = array();
 
     // Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
@@ -308,13 +320,15 @@ The full code for the above sample is given below:
 
     // Render the Widget
     $Widget-&gt;render();
+
 ?&gt;
-    &lt;center&gt;
-        &lt;div id="widget-container"&gt;Widget will render here!&lt;/div&gt;
-    &lt;/center&gt;
+&lt;center&gt;
+&lt;div id="widget-container"&gt;Widget will render here!&lt;/div&gt;
+&lt;/center&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -327,8 +341,8 @@ That's it! Your first chart using the FusionCharts PHP wrapper is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if fusioncharts.js was loaded.
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if fusioncharts.js was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
