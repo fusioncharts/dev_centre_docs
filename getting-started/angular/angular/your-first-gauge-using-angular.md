@@ -7,7 +7,7 @@ chartPresent: false
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component which provides bindings for **FusionCharts**. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component which provides bindings for **FusionCharts**. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project.
 
 In this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
 
@@ -33,7 +33,7 @@ That completes the installation of **FusionCharts** and the `angular-fusionchart
 
 ## Create your First gauge
 
-Gauges are powerful tools that can showcase information using a radial scale to display data. 
+Gauges are powerful tools that can showcase information using a radial scale to display data.
 
 To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
@@ -47,9 +47,9 @@ The thresholds for the above sample is shown in the table below:
 
 | Range | Color | Hex Code |
 | ----- | ----- | -------- ||
-| 0-50   | Red    | #F2726F  |
-| 50-75  | Yellow | #FFC533  |
-| 75-100 | Green  | #62B58F  |
+| 0-50 | Red | #F2726F |
+| 50-75 | Yellow | #FFC533 |
+| 75-100 | Green | #62B58F |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -57,53 +57,59 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
 ```
 
 In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` object to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Set the `code` attribute to specify the hex color of respective ranges.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of customer satisfaction score.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
@@ -113,17 +119,17 @@ Now that you have the data in JSON format, let's see how to render the chart.
 
 To render the gauge follow the steps below:
 
-**Step 1:** In 'app.module.ts` include the necessary files and add the dependency. 
+**Step 1:** In 'app.module.ts` include the necessary files and add the dependency.
 
-* Import **angular-fusioncharts** in the root `@NgModule`.
+- Import **angular-fusioncharts** in the root `@NgModule`.
 
-* Import FusionCharts library in the root `@NgModule`.
+- Import FusionCharts library in the root `@NgModule`.
 
-* Import the gauge type.
+- Import the gauge type.
 
-* Include the FusionCharts theme file to apply the style to the gauge.
+- Include the FusionCharts theme file to apply the style to the gauge.
 
-* Pass the `fusioncharts` library, gauge module and the theme.
+- Pass the `fusioncharts` library, gauge module and the theme.
 
 The consolidated code is shown below:
 
@@ -218,22 +224,22 @@ export class AppComponent {
 
 Create the container to render the gauge and set the following:
 
-* Gauge `width and height`
+- Gauge `width and height`
 
-* Gauge type as `angulargauge`. Each gauge type is represented with a unique alias. For Angualar Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+- Gauge type as `angulargauge`. Each gauge type is represented with a unique alias. For Angualar Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-* The data source.
+- The data source.
 
 ```
 <h1>
   {{title}}
 </h1>
 <fusioncharts
-    width="450" 
-    height="250" 
-    type="AngularGauge" 
+    width="450"
+    height="250"
+    type="AngularGauge"
     [dataSource]="dataSource">
-</fusioncharts> 
+</fusioncharts>
 ```
 
 That's it! Your first gauge using `angular-fusioncharts` is ready.
@@ -242,8 +248,8 @@ That's it! Your first gauge using `angular-fusioncharts` is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

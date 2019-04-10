@@ -75,11 +75,11 @@ That completes the installation of **FusionCharts** Suite.
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase information using a radial or linear scale to display data. 
+Gauges are powerful tools that can showcase information using a radial or linear scale to display data.
 
 To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts). 
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 The angular gauge is shown below:
 
@@ -91,9 +91,9 @@ The thresholds for the above sample is shown in the table below:
 
 | Range | Color | Hex Code |
 | ----- | ----- | -------- ||
-| 0-50   | Red    | #F2726F  |
-| 50-75  | Yellow | #FFC533  |
-| 75-100 | Green  | #62B58F  |
+| 0-50 | Red | #F2726F |
+| 50-75 | Yellow | #FFC533 |
+| 75-100 | Green | #62B58F |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -101,53 +101,59 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
 ```
 
 In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` object to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Set the `code` attribute to specify the hex color of respective ranges.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of customer satisfaction score.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
@@ -166,10 +172,11 @@ To render the gauge, follow the steps below:
 4. Add the gauge and the theme as a dependency to the core.
 
 5. Store the chart configurations in a JSON object. In this JSON object:
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
+
+   - Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
+   - Set the width and height (in pixels).
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of the `dataSource`.
 
 6. Add a container (instance) for the gauge.
 
@@ -200,56 +207,57 @@ import AngularGauge from 'fusioncharts/viz/angulargauge';
 
 // Include the fusion theme
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-    
+
 // Add the gauge and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(AngularGauge);
 FusionCharts.addDep(FusionTheme);
-    
+
 // Create an Instance with chart options
 var gaugeInstance = new FusionCharts({
-    type: 'angulargauge', // The gauge type
-    width: '450', // Width of the gauge
-    height: '250', // Height of the gauge
-    dataFormat: 'json', // Data type
-    renderAt:'chart-container', //container where the chart will render
-    dataSource: {
-        // Gauge Configuration
-        "chart": {
-            "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
-            "theme": "fusion",
-            "showToolTip": "0"
-        },
-        // Chart Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
-            }]
-        }
-    }
+type: 'angulargauge', // The gauge type
+width: '450', // Width of the gauge
+height: '250', // Height of the gauge
+dataFormat: 'json', // Data type
+renderAt:'chart-container', //container where the chart will render
+dataSource: {
+// Gauge Configuration
+"chart": {
+"caption": "Nordstrom's Customer Satisfaction Score for 2017",
+"lowerLimit": "0",
+"upperLimit": "100",
+"showValue": "1",
+"numberSuffix": "%",
+"theme": "fusion",
+"showToolTip": "0"
+},
+// Chart Data
+"colorRange": {
+"color": [{
+"minValue": "0",
+"maxValue": "50",
+"code": "#F2726F"
+}, {
+"minValue": "50",
+"maxValue": "75",
+"code": "#FFC533"
+}, {
+"minValue": "75",
+"maxValue": "100",
+"code": "#62B58F"
+}]
+},
+"dials": {
+"dial": [{
+"value": "81"
+}]
+}
+}
 });
 // Render
 gaugeInstance.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 <h4>CJS</h4>
 <pre><code class="language-javascript">
@@ -259,51 +267,51 @@ var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 Widgets(FusionCharts);
 FusionTheme(FusionCharts);
 
-
 // Create an Instance with chart options
 var gaugeInstance = new FusionCharts({
-    type: 'angulargauge', // The gauge type
-    width: '450', // Width of the gauge
-    height: '250', // Height of the gauge
-    dataFormat: 'json', // Data type
-    renderAt:'chart-container', //container where the chart will render
-    dataSource: {
-        // Gauge Configuration
-        "chart": {
-            "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
-            "theme": "fusion",
-            "showToolTip": "0"
-        },
-        // Chart Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
-            }]
-        }
-    }
+type: 'angulargauge', // The gauge type
+width: '450', // Width of the gauge
+height: '250', // Height of the gauge
+dataFormat: 'json', // Data type
+renderAt:'chart-container', //container where the chart will render
+dataSource: {
+// Gauge Configuration
+"chart": {
+"caption": "Nordstrom's Customer Satisfaction Score for 2017",
+"lowerLimit": "0",
+"upperLimit": "100",
+"showValue": "1",
+"numberSuffix": "%",
+"theme": "fusion",
+"showToolTip": "0"
+},
+// Chart Data
+"colorRange": {
+"color": [{
+"minValue": "0",
+"maxValue": "50",
+"code": "#F2726F"
+}, {
+"minValue": "50",
+"maxValue": "75",
+"code": "#FFC533"
+}, {
+"minValue": "75",
+"maxValue": "100",
+"code": "#62B58F"
+}]
+},
+"dials": {
+"dial": [{
+"value": "81"
+}]
+}
+}
 });
 // Render
 gaugeInstance.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -369,7 +377,6 @@ gaugeInstance.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <pre><code class="language-javascript">
@@ -443,8 +450,8 @@ That's it! Your first gauge using Plain JavaScript is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

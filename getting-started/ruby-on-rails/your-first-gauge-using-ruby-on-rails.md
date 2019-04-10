@@ -14,11 +14,11 @@ In this article, we will show you how to install and render a gauge using the **
 
 In this article, we will show you how to download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
 
-* Copy the 'fusionCharts-rails.rb` from `integrations > rubyonrails > fusioncharts-wrapper` in your project folder.
+- Copy the 'fusionCharts-rails.rb`from`integrations > rubyonrails > fusioncharts-wrapper` in your project folder.
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from here.
+- Include the **FusionCharts** JavaScript files, which can be downloaded from here.
 
-* Include the FusionCharts theme file to apply the style to the gauge.
+- Include the FusionCharts theme file to apply the style to the gauge.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -35,6 +35,7 @@ In this article, we will show you how to download and install the **FusionCharts
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -46,16 +47,17 @@ In this article, we will show you how to download and install the **FusionCharts
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
 </div>
 
-* Add the FusionCharts Rail wrapper:
-	* Using RubyGems
-	* Manually
+- Add the FusionCharts Rail wrapper:
+  _ Using RubyGems
+  _ Manually
 
-* Include the FusionCharts Rails wrapper.
+- Include the FusionCharts Rails wrapper.
 
 To add the FusionCharts Rails wrapper, use any of the following processes:
 
@@ -112,9 +114,9 @@ The thresholds for the above sample is shown in the table below:
 
 | Range | Color | Hex Code |
 | ----- | ----- | -------- ||
-| 0-50   | Red    | #F2726F  |
-| 50-75  | Yellow | #FFC533  |
-| 75-100 | Green  | #62B58F  |
+| 0-50 | Red | #F2726F |
+| 50-75 | Yellow | #FFC533 |
+| 75-100 | Green | #62B58F |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -122,53 +124,59 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
 ```
 
 In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` object to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Set the `code` attribute to specify the hex color of respective ranges.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of customer satisfaction score.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
@@ -188,21 +196,21 @@ To render the gauge, follow the steps below:
 
 5. Create an array named `chartDataObj` to save the color range data of the gauge.
 
-6. Create the gauge dial data in the array format (Multiple values can be separated by comma). 
+6. Create the gauge dial data in the array format (Multiple values can be separated by comma).
 
 7. Set te chart data as JSON string.
 
 8. Create the gauge instance and set the following:
 
-	* Set the chart type as `angulargauge`. Each gauge is represented with a unique alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauges with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
+   - Set the chart type as `angulargauge`. Each gauge is represented with a unique alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauges with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
 
-    * Set the `width` and `height` (in pixels).
+   - Set the `width` and `height` (in pixels).
 
-    * Set the container for the chart.
+   - Set the container for the chart.
 
-    * Set the `dataFormat` as JSON.
+   - Set the `dataFormat` as JSON.
 
-    * Embed the `json` data as the value of the `dataSource`.
+   - Embed the `json` data as the value of the `dataSource`.
 
 9. Create a container using `<div>` to render the chart.
 
@@ -215,7 +223,7 @@ class FirstWidget
 
     # Widget rendering
     def self.getWidget
-        
+
         # Widget appearance configuration
         widgetAppearancesConfigObj = {
             "caption" => "Nordstrom's Customer Satisfaction Score for 2017",
@@ -229,22 +237,22 @@ class FirstWidget
 
         # Widget color range data
         colorDataObj = {"color" => [
-                {"minValue" => "0", "maxValue" => "50", "code" => "#F2726F"}, 
+                {"minValue" => "0", "maxValue" => "50", "code" => "#F2726F"},
                 {"minValue" => "50", "maxValue" => "75", "code" => "#FFC533"},
                 {"minValue" => "75", "maxValue" => "100", "code" => "#62B58F"}
             ]
         }
-        
+
         # Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
         widgetDialDataArray = ["81"]
-        
+
         # Dial value in JSON format
         widgetDialDataStr = ""
-        
+
         # Template for dial value
         widgetDialDataTemplate = "{ \"value\": \"%s\" },"
 
-        # Iterates dial data array and converts them proper data format 
+        # Iterates dial data array and converts them proper data format
         widgetDialDataArray.each {|item|
             data = widgetDialDataTemplate % [item]
             widgetDialDataStr.concat(data)
@@ -252,7 +260,7 @@ class FirstWidget
 
         # Removing trailing comma
         widgetDialDataStr = widgetDialDataStr.chop
-        
+
         # Formats dial value(s)
         widgetDialTemplate = "{ \"dial\": [%s]}"
         widgetDialStr = ""
@@ -260,10 +268,10 @@ class FirstWidget
 
         # Final Widget JSON template
         widgetJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"dials\": %s}"
-        
+
         # Final Widget JSON data from template
         widgetJSONStr = widgetJSONTemplate % [widgetAppearancesConfigObj.to_json, colorDataObj.to_json, widgetDialStr]
-        
+
         # Rendering the widget
         widget = Fusioncharts::Chart.new({
             width: "450",
@@ -291,8 +299,8 @@ That's it! Your first gauge using **FusionCharts Rails** wrapper is ready. When 
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

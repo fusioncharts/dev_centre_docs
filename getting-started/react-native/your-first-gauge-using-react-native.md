@@ -6,7 +6,7 @@ heading: Create a Gauge in React Native using FusionCharts
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React Native** component which provides bindings for **FusionCharts**. The `react-native-fusioncharts` component allows you to easily add rich and interactive charts to any **React Native** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React Native** component which provides bindings for **FusionCharts**. The `react-native-fusioncharts` component allows you to easily add rich and interactive charts to any **React Native** project.
 
 In this page, we'll see how to install FusionCharts and render a gauge using the `react-native-fusioncharts` component.
 
@@ -45,9 +45,9 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;FusionCharts&lt;/title&gt;
-    &lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /&gt;
+&lt;title&gt;FusionCharts&lt;/title&gt;
+&lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /&gt;
 
     &lt;style type="text/css"&gt;
         body,
@@ -81,14 +81,15 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
             -webkit-user-select: none;
         }
     &lt;/style&gt;
+
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;div id="chart-container"&gt;
-        &lt;div id="loading-text"&gt;
-            Chart is loading...
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div id="chart-container"&gt;
+&lt;div id="loading-text"&gt;
+Chart is loading...
+&lt;/div&gt;
+&lt;/div&gt;
 
     &lt;script type='text/javascript'&gt;
         "use strict";
@@ -145,7 +146,8 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 &lt;/body&gt;
 
 &lt;/html&gt;
-        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
         <li>Set `libraryPath` property to the FusionCharts component.</li>
         <pre><code class="language-javascript">
@@ -198,16 +200,17 @@ $ npm run prod:android
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;!-- Include the required FusionCharts modules --&gt;
-    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
-    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;!-- Include the required FusionCharts modules --&gt;
+&lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;&lt;/body&gt;
 
 &lt;/html&gt;
-        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
         <li>Add a `build"assets` script in Application's `package.json` file</li>
         <pre><code class="language-javascript">
@@ -228,6 +231,7 @@ $ npm run build:assets
 </div>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </div>
 
 </div>
@@ -253,9 +257,9 @@ The thresholds for the above sample is shown in the table below:
 
 | Range | Color | Hex Code |
 | ----- | ----- | -------- ||
-| 0-50   | Red    | #F2726F  |
-| 50-75  | Yellow | #FFC533  |
-| 75-100 | Green  | #62B58F  |
+| 0-50 | Red | #F2726F |
+| 50-75 | Yellow | #FFC533 |
+| 75-100 | Green | #62B58F |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -263,53 +267,59 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
 ```
 
 In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` object to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Set the `code` attribute to specify the hex color of respective ranges.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of customer satisfaction score.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
@@ -324,10 +334,11 @@ To render the chart, follow the steps below:
 2. Include `react-native-fusioncharts` component
 
 3. Define the chart configuration in a JSON.
-    * Set the gauge type as `angulargauge`.  Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as **json**.
-    * Embed the json data as the value of the `dataSource`.
+
+   - Set the gauge type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
+   - Set the width and height (in pixels).
+   - Set the `dataFormat` as **json**.
+   - Embed the json data as the value of the `dataSource`.
 
 4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
