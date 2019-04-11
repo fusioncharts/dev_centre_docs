@@ -98,11 +98,11 @@ That completes the installation of FusionCharts and the `angularjs-fusioncharts`
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase information using a radial or linear scale to display data. 
+Gauges are powerful tools that can showcase information using a radial or linear scale to display data.
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
+To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts). 
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 The angular gauge is shown below:
 
@@ -114,9 +114,9 @@ The thresholds for the above sample is shown in the table below:
 
 | Range | Color | Hex Code |
 | ----- | ----- | -------- ||
-| 0-50   | Red    | #F2726F  |
-| 50-75  | Yellow | #FFC533  |
-| 75-100 | Green  | #62B58F  |
+| 0-50 | Red | #F2726F |
+| 50-75 | Yellow | #FFC533 |
+| 75-100 | Green | #62B58F |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -124,53 +124,59 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
 ```
 
 In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` object to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Set the `code` attribute to specify the hex color of respective ranges.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of customer satisfaction score.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
@@ -197,9 +203,9 @@ To render the gauge, follow the steps below:
 8. Store the chart configurations in a variable (`myApp`).
 
 9. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. The the `<div>`:
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
-    * Set the width and height (in pixels).
-    * Embed the json data as the value of the `dataSource`.
+   - Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
+   - Set the width and height (in pixels).
+   - Embed the json data as the value of the `dataSource`.
 
 The consolidated code is shown below:
 
@@ -240,7 +246,7 @@ myApp.controller('MyController', ['$scope', function($scope) {
     $scope.dataSource = {
     // Chart Configuration
         "chart": {
-            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+            "caption": "Nordstrom's Customer Satisfaction Score for 2017",
             "lowerLimit": "0",
             "upperLimit": "100",
             "showValue": "1",
@@ -310,7 +316,7 @@ chartInstance.render()
             $scope.myDataSource = {
                 // Chart Configuration
                 "chart": {
-                    "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                     "lowerLimit": "0",
                     "upperLimit": "100",
                     "showValue": "1",
@@ -345,17 +351,17 @@ chartInstance.render()
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <pre><code class="language-javascript">
@@ -375,7 +381,7 @@ chartInstance.render()
             $scope.myDataSource = {
                 // Chart Configuration
                 "chart": {
-                    "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                     "lowerLimit": "0",
                     "upperLimit": "100",
                     "showValue": "1",
@@ -410,14 +416,15 @@ chartInstance.render()
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -430,8 +437,8 @@ That's it! Your first chart using `angularjs-fusioncharts` is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
