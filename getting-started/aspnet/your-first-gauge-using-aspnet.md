@@ -81,17 +81,17 @@ To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisf
 
 The thresholds for the above sample is shown in the table below:
 
-| Range | Color | Hex Code |
-| ----- | ----- | -------- ||
-| 0-50 | Red | #F2726F |
-| 50-75 | Yellow | #FFC533 |
-| 75-100 | Green | #62B58F |
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
 FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
-```json
+```javascript
 {
   // Chart Configuration
   "chart": {
@@ -224,7 +224,7 @@ The consolidated code is shown below:
                 // store chart config name-config value pair
 
                 Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
-                chartConfig.Add("caption", "Nordstrom\'s Customer Satisfaction Score for 2017");
+                chartConfig.Add("caption", "Nordstrom\\'s Customer Satisfaction Score for 2017");
                 chartConfig.Add("lowerLimit", "0");
                 chartConfig.Add("upperLimit", "100");
                 chartConfig.Add("showValue", "1");
