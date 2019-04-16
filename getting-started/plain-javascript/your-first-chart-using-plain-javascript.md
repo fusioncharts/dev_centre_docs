@@ -21,7 +21,22 @@ Install **FusionCharts** using any of the following steps:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab'>
 
-<div><strong>To install the `fusioncharts` package via  npm run the command below:</strong></div>
+<div><strong>Prerequisites</strong></div>
+<div>
+    <ol>
+        <li>Before installing `fusioncharts` package via <strong>npm</strong>, make sure you have <strong>Node.js</strong> installed in your system.</li>
+        <li>Make sure you have a bundler like <strong>webpack</strong> and <strong>parcel</strong> or have a <strong>browserify</strong> installed in your system.</li>
+    </ol>
+</div>
+<div><strong>Create a project folder using the following command:<strong></div>
+<pre><code class="language-bash">$ mkdir projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div><strong>Get inside the directory using `cd` command as shown below:<strong></div>
+<pre><code class="language-bash">$ cd projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
