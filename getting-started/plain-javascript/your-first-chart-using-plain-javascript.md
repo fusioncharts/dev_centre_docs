@@ -26,9 +26,16 @@ Install **FusionCharts** using any of the following steps:
     <ol>
         <li>Before installing `fusioncharts` package via <strong>npm</strong>, make sure you have <strong>Node.js</strong> installed in your system.</li>
         <li>Make sure you have a bundler like <strong>webpack</strong> and <strong>parcel</strong> or have a <strong>browserify</strong> installed in your system.</li>
-        <li>Create a project folder in which you will install the `fusioncharts` package. Get inside the folder using `cd` command in command prompt.
     </ol>
 </div>
+<div>Create a project folder using the following command:</div>
+<pre><code class="language-bash">$ mkdir projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div>Get inside the directory using `cd` command as shown below:</div>
+<pre><code class="language-bash">$ cd projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
 <div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
