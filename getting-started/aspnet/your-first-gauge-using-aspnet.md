@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Gauge Using ASP.NET in FusionCharts
 ---
 
-> ### FusionCharts.NET (BETA)
+> ### FusionCharts.NET
 >
 > We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
 >

@@ -5,7 +5,7 @@ heading: Create Charts in ASP.Net using Database
 chartPresent: true
 ---
 
-> ### FusionCharts.NET (BETA)
+> ### FusionCharts.NET
 >
 > We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
 >
