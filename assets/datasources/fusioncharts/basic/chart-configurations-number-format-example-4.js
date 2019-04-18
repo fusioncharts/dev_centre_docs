@@ -1,5 +1,5 @@
 {
-    type: 'column2d',
+    type: 'bar2d',
     renderAt: 'chart-container',
     width: '450',
     height: '300',
@@ -13,7 +13,7 @@
             "yaxisname": "Amount (In USD)",
             "numberPrefix": "$",
             //Deviation from theme
-            "placeValuesInside": "0",
+            "placeValuesInside": "1",
             "showValues": "1",
             "valueFontColor": "#000000",
             "valueBgColor": "#FFFFFF",
