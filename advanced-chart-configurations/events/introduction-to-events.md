@@ -14,7 +14,7 @@ Take a look at the column chart shown below:
 
 {% embed_chart advanced-charting-events-introduction-example-1.js %}
 
-Roll the mouse pointer over any one pie slice and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
+Roll the mouse pointer over any one data plot and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
 
 For example, if you roll the mouse pointer over the **Senior** slice, the following text is displayed is below the chart:
 **Age group: Senior**
