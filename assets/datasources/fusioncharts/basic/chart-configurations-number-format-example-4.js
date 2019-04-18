@@ -26,7 +26,7 @@
         }, {
             "label": "Q2",
             //Decimal values as below are automatically formatted for output
-            "value": "14570.230"
+            "value": "14570.231"
         }, {
             "label": "Q3",
             "value": "17375"
