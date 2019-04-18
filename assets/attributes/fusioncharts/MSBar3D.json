@@ -1811,7 +1811,7 @@
       {
         "description": "Sets the border transparency for tool tip.",
         "range": "0 - 100",
-        "type": "NUmber",
+        "type": "Number",
         "name": "tooltipBorderAlpha"
       },
       {
