@@ -28,11 +28,11 @@ Install **FusionCharts** using any of the following steps:
         <li>Make sure you have a bundler like <strong>webpack</strong> and <strong>parcel</strong> or have a <strong>browserify</strong> installed in your system.</li>
     </ol>
 </div>
-<div><strong>Create a project folder using the following command:<strong></div>
+<div><strong>Create a project folder using the following command:</strong></div>
 <pre><code class="language-bash">$ mkdir projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 
-<div><strong>Get inside the directory using `cd` command as shown below:<strong></div>
+<div><strong>Get inside the directory using `cd` command as shown below:</strong></div>
 <pre><code class="language-bash">$ cd projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 

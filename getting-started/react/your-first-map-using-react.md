@@ -7,7 +7,7 @@ chartPresent: false
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project.
 
 In this page, we'll see how to install FusionCharts and render a map using the `react-fusionCharts` component.
 
@@ -73,7 +73,6 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 </pre>
 </div>
 
-
 <div class='tab localfiles-tab'>
 <div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
 <div>
@@ -113,9 +112,9 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 </div>
 </div>
 
-## Create you First map
+## Create Your First map
 
-In this section, we will create a visualization using the **World Map** showing the average annual population growth. 
+In this section, we will create a visualization using the **World Map** showing the average annual population growth.
 
 {% embed_chart getting-started-your-first-map.js %}
 
@@ -125,12 +124,12 @@ The data for the above map is represented in the table below:
 
 | State | Entity Name | Value |
 | ----- | ----------- | ----- ||
-| North America | NA          | 82    |
-| South America | SA          | 2.04  |
-| Asia          | AS          | 1.78  |
-| Europe        | EU          | 40    |
-| Africa        | AF          | 2.58  |
-| Australia     | AU          | 1.30  |
+| North America | NA | 82 |
+| South America | SA | 2.04 |
+| Asia | AS | 1.78 |
+| Europe | EU | 40 |
+| Africa | AF | 2.58 |
+| Australia | AU | 1.30 |
 
 In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column.
 
@@ -204,13 +203,13 @@ Following code is the JSON representation of the above table with the required a
 
 In the above JSON data:
 
-* Create the `chart` object to define the elements of the map.
+- Create the `chart` object to define the elements of the map.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+- Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
-* Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
+- Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
 
 The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
@@ -238,13 +237,13 @@ To render the map follow the steps below:
 
 9. Store the map configurations as a JSON object. In this JSON object:
 
-    * Set the map as `world`. For World map, the alias is `world`. Find the complete list of map with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+   - Set the map as `world`. For World map, the alias is `world`. Find the complete list of map with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
-    * Set the width and height (in pixels). 
+   - Set the width and height (in pixels).
 
-    * Set the `dataFormat` as **json**.
+   - Set the `dataFormat` as **json**.
 
-    * Embed the json data as the value of the `dataSource`.
+   - Embed the json data as the value of the `dataSource`.
 
 10. Create the DOM element and pass the react-fusioncharts component directly to the **ReactDOM.render()** method.
 
@@ -564,9 +563,9 @@ export default App
 
 That's it! Your first map using `react-fusioncharts` is ready.
 
-## Render other maps 
+## Render other maps
 
-To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally. 
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally.
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
@@ -803,14 +802,14 @@ export default App
 </div>
 </div>
 
-That's it! The **California** map is ready. 
+That's it! The **California** map is ready.
 
 ## Problem rendering the chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
