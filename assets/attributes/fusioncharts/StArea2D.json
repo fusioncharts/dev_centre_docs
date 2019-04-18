@@ -9,7 +9,7 @@
                 "name": "animation"
             },
             {
-                "description": "This attribute sets the animation duration, if `animation` is set to `1`. \n\nDefault value: 1 sec",
+                "description": "This attribute sets the animation duration of the chart. `animationDuration` attribute is applicable only if animation of the chart is enabled. \n\nDefault value: 1 sec",
                 "range": "In seconds",
                 "type": "Number",
 	    		"Versionsince": "3.11.0",
