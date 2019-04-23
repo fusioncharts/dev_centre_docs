@@ -8,10 +8,10 @@ FusionExport allows you to add page breaks the exported PDF files. To do this, y
 
 - Firstly, export a dashboard for which you want to customize the height and width of the image.
 - Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
-- Create a new instance of the ExportConfig() object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its set() method. You can also pass on an object containing the serialized JSON string representation of the configuration to the set() method.
+- Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
 - Set the value of `templateHeight` less than your content height. This automatically divides the page into multiple pages.
 - You can also set the value of `templateWidth` to control the viewpoint width where the templates are rendered.
-- Create a new instance of the ExportManager() object. To export the chart, pass the instance of ExportConfig() to export(), which is a method of the instance of ExportManager(). This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
+- Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
 - Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
 
 The sample code to set the dimension of the viewport is given below:
