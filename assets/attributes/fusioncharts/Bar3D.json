@@ -1715,7 +1715,7 @@
         "name": "exportFormats"
       },
       {
-        "description": "This attributes sets the modes of export. To enable client-side exporting, set this attribute to client. \n\n__Default value__: 0. \n\n__Note__: Starting v3.12.1, the `exportMode` attribute replaces the `exportAtClientSide` attribute. However, you don’t need to make any changes to the existing setup because, the FusionCharts library comes with the proper mapping already provided.",
+        "description": "This attributes sets the modes of export. To enable client-side exporting, set this attribute to client. \n\n__Default value__: auto. \n\n__Note__: Starting v3.12.1, the `exportMode` attribute replaces the `exportAtClientSide` attribute. However, you don’t need to make any changes to the existing setup because, the FusionCharts library comes with the proper mapping already provided.",
         "type": "String",
         "versionsince": "3.12.1",
         "name": "exportMode"
