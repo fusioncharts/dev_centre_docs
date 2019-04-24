@@ -720,12 +720,6 @@
         "name": "placeXAxisLabelsOnTop"
       },
       {
-        "description": "Sets color of the x-axis of the chart.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "xAxisLineColor"
-      },
-      {
         "description": "This attribute lets you set whether the data labels would show up as rotated labels on the chart.",
         "range": "0/1",
         "type": "Boolean",
