@@ -12,7 +12,7 @@ At first, your exports will look something like this.
 
 In FusionExport, there are two types of watermark when you are exporting chart:
 
-- FusionCharts Trail Mark
+- FusionCharts Trial Mark
 - FusionExport Trial Mark
 
 **IMAGE**
