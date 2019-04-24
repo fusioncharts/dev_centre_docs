@@ -1,6 +1,6 @@
 ---
 title: Add Pagination in exported PDFs | FusionCharts
-description: This article talks about the SDKs used for exporting a dashboard.
+description: This article talks how to add pagination in exported pdfs.
 heading: Add Pagination in exported PDFs
 ---
 

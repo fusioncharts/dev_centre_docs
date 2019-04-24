@@ -2051,10 +2051,11 @@
         "name": "exportFormats"
       },
       {
-        "description": "This attribute when set to __1__, enables the client-side export feature.  \n\n__Default value__: 0",
+        "description": "This attributes sets the modes of export. To enable client-side exporting, set this attribute to client. \n\n__Default value__: 0. \n\n__Note__: Starting v3.12.1, the `exportMode` attribute replaces the `exportAtClientSide` attribute. However, you don’t need to make any changes to the existing setup because, the FusionCharts library comes with the proper mapping already provided.",
         "range": "0/1",
-        "type": "Boolean",
-        "name": "exportAtClientSide"
+        "type": "String",
+        "versionsince": "3.12.1",
+        "name": "exportMode"
       },
       {
         "description": "Whether the menu items related to export (e.g., Save as JPEG etc.) will appear in the context menu of chart.",

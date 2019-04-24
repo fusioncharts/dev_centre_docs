@@ -4,18 +4,12 @@ description: This article tells how to disable watermarks while exporting the ch
 heading: Disable Watermark
 ---
 
-If you are using the trial version there will be two kinds of watermark.
-
-At first, your exports will look something like this.
-
-**IMAGE**
-
 In FusionExport, there are two types of watermark when you are exporting chart:
 
 - FusionCharts Trial Mark
 - FusionExport Trial Mark
 
-**IMAGE**
+![Water Mark](/images/export-chart-with-watermark.png)
 
 Now, let’s see how you can remove the watermarks from your exported chart.
 
