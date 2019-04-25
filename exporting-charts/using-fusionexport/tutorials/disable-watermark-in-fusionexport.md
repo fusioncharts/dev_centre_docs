@@ -19,7 +19,7 @@ Now, let’s see how you can remove the watermarks from your exported chart.
 
 Once you have downloaded the Licensed Version, the chart looks like as shown below:
 
-**IMAGE**
+![FusionExport Water Mark removed](/images/export-chart-without-export-watermark.png)
 
 ## Remove FusionCharts Trial mark
 
