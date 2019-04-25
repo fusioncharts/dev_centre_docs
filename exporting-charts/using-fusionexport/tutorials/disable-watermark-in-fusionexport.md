@@ -47,4 +47,4 @@ To run licensed FusionExport with licensed FusionCharts run:
 
 After removing the watermarks, the chart looks like:
 
-**IMAGE**
+![No Water Mark](/images/export-chart-without-watermark.png)
