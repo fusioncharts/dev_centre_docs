@@ -4,7 +4,7 @@ description: This article tells how to disable watermarks while exporting the ch
 heading: Disable Watermark
 ---
 
-<video width="500" height="350" controls>
+<video width="100%" controls>
   <source src="/videos/disable-watermark-in-fusionexport.mp4" type="video/mp4">
 </video>
 
