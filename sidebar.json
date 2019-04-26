@@ -2108,6 +2108,10 @@
           {
             "title": "Export a D3 chart",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart"
+          },
+          {
+            "title": "Disable Watermark",
+            "path": "/exporting-charts/using-fusionexport/tutorials/disable-watermark-in-fusionexport"
           }
         ]
       },
