@@ -188,6 +188,6 @@ The HTML template for the above code is given below:
 
 The output of the above template looks like as shown below:
 
-**IMAGE**
+![Output](/images/fusionexport-output.png)
 
 Click [here](https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions) to download the above project.
