@@ -4,7 +4,7 @@ description: This article talks about how to update the custom version of Fusion
 heading: Custom Version of FusionCharts in FusionExport
 ---
 
-You can override FusionCharts latest version with your current version by passing your custom FusionCharts directory to the `-L` options of FusionExport.
+You can override the default package version of FusionCharts in FusionExport with your current version by passing your custom FusionCharts directory to the `-L` options of FusionExport.
 
 ```bash
 ./fusionexport -L path/to/fusioncharts/
