@@ -4,10 +4,6 @@ description: This article tells how to disable watermarks while exporting the ch
 heading: Disable Watermark
 ---
 
-<video width="100%" controls>
-  <source src="/videos/disable-watermark-in-fusionexport.mp4" type="video/mp4">
-</video>
-
 In FusionExport, there are two types of watermark when you are exporting chart:
 
 - FusionCharts Trial Mark
@@ -16,6 +12,10 @@ In FusionExport, there are two types of watermark when you are exporting chart:
 ![Water Mark](/images/export-chart-with-watermark.png)
 
 Now, let’s see how you can remove the watermarks from your exported chart.
+
+<video width="100%" controls>
+  <source src="/videos/disable-watermark-in-fusionexport.mp4" type="video/mp4">
+</video>
 
 ## Remove FusionExport Watermark
 
