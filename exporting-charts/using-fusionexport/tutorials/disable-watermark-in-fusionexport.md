@@ -4,6 +4,10 @@ description: This article tells how to disable watermarks while exporting the ch
 heading: Disable Watermark
 ---
 
+<video width="500" height="350" controls>
+  <source src="https://www.loom.com/share/527a63befb2f46dd9b296ae6d6dc6b1b" type="video/mp4">
+</video>
+
 In FusionExport, there are two types of watermark when you are exporting chart:
 
 - FusionCharts Trial Mark
