@@ -19,7 +19,7 @@ Now, let’s see how you can remove the watermarks from your exported chart.
 
 ## Remove FusionExport Watermark
 
-**FusionExport Licensed Version** user can now disable watermark from the chart canvas when downloading the package.
+To remove FusionExport watermark, you need to purchase the licensed version. Contact our [sales team](mailto:sales@fusioncharts.com) to purchase the license. Once you have purchased the license, run the licensed package and export; FusionExport watermark will go away.
 
 Once you have downloaded the Licensed Version, the chart looks like as shown below:
 
@@ -27,7 +27,7 @@ Once you have downloaded the Licensed Version, the chart looks like as shown bel
 
 ## Remove FusionCharts Trial mark
 
-To remove the FusionCharts watermark, you have to buy a FusionCharts licensed version and use the downloaded files as a custom library.
+To remove the FusionCharts watermark, you have to buy a FusionCharts licensed version and use the downloaded files as a custom library. You can either contact our [sales team](mailto:sales@fusioncharts.com) or go to our [pricing page](https://www.fusioncharts.com/buy) to download the licensed package of FusionCharts
 
 You can override the default package version of **FusionCharts** in **FusionExport** with your current version by passing your custom FusionCharts directory to the `-L` options of FusionExport.
 
@@ -38,7 +38,7 @@ You can override the default package version of **FusionCharts** in **FusionExpo
 To remove the FusionCharts watermark, follow the steps below:
 
 - Copy all the files in the `js` folder of your licensed distribution.
-- Place the `js` folder in a folder named `fusioncharts` beside your `fusionexport` file. The folder contains:
+- Place all the files present inside the `js` folder in folder named `fusioncharts` beside your `fusionexport` file. The folder contains:
   - `fusioncharts.js` and all the other files like `fusioncharts.widgets.js`, `fusioncharts.timeseries.js`, fusioncharts.charts.js, etc.
   - Map files in `maps` folder
   - Theme files in `themes` folder.
