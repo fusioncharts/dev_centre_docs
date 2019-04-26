@@ -18,24 +18,23 @@ You can customize the height and width of the exported dashboard images. To do s
 The sample code to customize the dimension is given below:
 
 ```csharp
-// Exporting a dashboard
 const path = require('path');
-// Require FusionExport
 const { ExportManager, ExportConfig } = require('fusionexport-node-client');
-// Instantiate ExportManager
-const exportManager = new ExportManager();
-// Instantiate ExportConfig and add the required configurations
+
 const exportConfig = new ExportConfig();
-exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
-exportConfig.set('templateFilePath', path.join(__dirname, 'resources', 'template.html'));
-exportConfig.set('templateHeight', 900);
-exportConfig.set('templateWidth', 900);
-// provide the export config
-exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
-  exportedFiles.forEach(file => console.log(file));
-}).catch((err) => {
-  console.log(err);
-});
+const exportManager = new ExportManager();
+
+exportConfig.set('chartConfig', path.join(__dirname, 'chart_configs.json'));
+exportConfig.set('templateFilePath', path.join(__dirname, 'template.html'));
+exportConfig.set('templateWidth', 800)
+// exportConfig.set('templateWidth', 1200)
+// exportConfig.set('templateWidth', 1800)
+
+async function run() {
+  const files = await exportManager.export(exportConfig, '.', true);
+  files.forEach((file) => console.log(file));
+}
+run();
 ```
 
 Click [here](https://github.com/fusioncharts/fusionexport-tutorials/blob/master/dimensions/chart_configs.json) to get the JSON data.
@@ -54,12 +53,14 @@ The HTML template for the above code is given below:
       rel="stylesheet"
       type="text/css"
     />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       body {
         font-family: "Source Sans Pro", sans-serif;
         margin: 0;
         background-color: #f8f9fd;
       }
+
       .dashboard-container {
         box-sizing: border-box;
         padding-left: 8px;
@@ -67,32 +68,46 @@ The HTML template for the above code is given below:
         background-color: #f8f9fd;
         padding: 30px;
       }
+
       .dashboard-container .dashboard-row {
         margin-left: -8px;
         margin-right: -8px;
       }
+
       .dashboard-container .dashboard-row:after {
         content: "";
         display: table;
         clear: both;
       }
+
       .dashboard-container .dashboard-row .intro-block,
       .dashboard-container .dashboard-row .chart {
         box-sizing: border-box;
         padding: 8px 8px;
       }
+
       .dashboard-container .dashboard-row .intro-block h1 {
         margin-bottom: 10px;
       }
+
       .dashboard-container .dashboard-row .chart {
-        width: 50%;
+        width: 100%;
         float: left;
       }
+
+      @media (min-width: 1000px) {
+        .dashboard-container .dashboard-row .chart {
+          width: 50%;
+          float: left;
+        }
+      }
+
       .dashboard-container .dashboard-row .chart:first-child {
         box-sizing: border-box;
         float: initial;
         width: 100%;
       }
+
       .dashboard-container .dashboard-row .chart .chart-block {
         background-color: #fff;
         border: 1px solid #f0f1f7;
@@ -100,17 +115,21 @@ The HTML template for the above code is given below:
         padding: 10px;
         box-shadow: 0 2px 10px 0 rgba(33, 35, 68, 0.05) !important;
       }
+
       .pri-chart {
         width: auto;
         height: 600px;
       }
+
       .sec-chart {
         width: auto;
         height: 400px;
       }
+
       .dashboard-container .mt-0 {
         margin-top: 0;
       }
+
       .dashboard-container hr {
         border: none;
         border-top: 1px dotted rgba(49, 49, 49, 0.09);
@@ -118,6 +137,7 @@ The HTML template for the above code is given below:
       }
     </style>
   </head>
+
   <body>
     <div class="dashboard-container">
       <div class="dashboard-row">
@@ -132,27 +152,27 @@ The HTML template for the above code is given below:
       <div class="dashboard-row">
         <div class="chart">
           <div class="chart-block">
-            <div class="pri-chart" id="chart-container-map"></div>
+            <div class="pri-chart" id="chart-container-1"></div>
           </div>
         </div>
         <div class="chart">
           <div class="chart-block">
-            <div class="sec-chart" id="chart-container-top-adv"></div>
+            <div class="sec-chart" id="chart-container-2"></div>
           </div>
         </div>
         <div class="chart">
           <div class="chart-block">
-            <div class="sec-chart" id="chart-container-reg"></div>
+            <div class="sec-chart" id="chart-container-3"></div>
           </div>
         </div>
         <div class="chart">
           <div class="chart-block">
-            <div class="sec-chart" id="chart-container-reg-monthly"></div>
+            <div class="sec-chart" id="chart-container-4"></div>
           </div>
         </div>
         <div class="chart">
           <div class="chart-block">
-            <div class="sec-chart" id="chart-container-product"></div>
+            <div class="sec-chart" id="chart-container-5"></div>
           </div>
         </div>
       </div>
@@ -163,6 +183,6 @@ The HTML template for the above code is given below:
 
 The output of the above template looks like as shown below:
 
-**IMAGE**
+![Output](/images/fusionexport-output.png)
 
 Click [here](https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions) to download the above project.
