@@ -13,9 +13,9 @@ In FusionExport, there are two types of watermark when you are exporting chart:
 
 Now, let’s see how you can remove the watermarks from your exported chart.
 
-<video width="100%" controls>
- <source src="{% site.BASE_URL %}/videos/disable-watermark-in-fusionexport.mp4" type="video/mp4">
-</video>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+    <iframe src="https://www.loom.com/embed/527a63befb2f46dd9b296ae6d6dc6b1b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 
 ## Remove FusionExport Watermark
 
