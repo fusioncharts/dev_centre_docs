@@ -175,7 +175,7 @@ $ npm run prod:android
 
 <div class='tab ios-tab'>
 
-<div><strong>Step 1:</strong> To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</div>
+<div><strong>Step 1:</strong> To install fusioncharts and the `react-native-fusioncharts` component via npm follow the steps below:</div>
 <div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="language-javascript">
     $ npm install react-native-fusioncharts --save
@@ -393,10 +393,10 @@ export default class PlainColumn2D extends Component {
     fetchDataAndSchema() {
         const jsonify = res => res.json();
         const dFetch = fetch(
-        'https://s3.eu-central-1.amazonaws.com/fusion.store/ft/data/line-chart-with-time-axis-data.json'
+        'https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-react-native/data.json'
         ).then(jsonify);
         // This is the remote url to fetch the schema.
-        const sFetch = fetch(  'https://s3.eu-central-1.amazonaws.com/fusion.store/ft/schema/line-chart-with-time-axis-schema.json'
+        const sFetch = fetch(  'https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/integrations-react-native/schema.json'
         ).then(jsonify);
         Promise.all([dFetch, sFetch]).then(res => {
             const data = res[0];
