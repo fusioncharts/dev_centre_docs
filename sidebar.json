@@ -1874,6 +1874,10 @@
             "path": "/fusiontime/integrations/react/your-first-chart-using-react-in-fusiontime"
           },
           {
+            "title": "Create a Chart in React Native",
+            "path": "/fusiontime/integrations/react-native/your-first-chart-using-react-native-in-fusiontime"
+          },
+          {
             "title": "Create a Chart in Vue",
             "path": "/fusiontime/integrations/vuejs/your-first-chart-using-vuejs-in-fusiontime"
           },
