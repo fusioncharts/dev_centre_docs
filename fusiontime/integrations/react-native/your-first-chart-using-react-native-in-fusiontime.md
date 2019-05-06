@@ -165,14 +165,14 @@ Since FusionTime is distributed along with FusionCharts Suite, download/install 
         <li>Set `libraryPath` property to the FusionCharts component.</li>
         <pre><code class="language-javascript">
 &lt;FusionCharts
-......
+...
 libraryPath={{ uri: 'file:///android_asset/fusioncharts.html' }}/&gt;
         </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
         <li>Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.</li>
         <pre><code class="language-javascript">
 "scripts": {
-    ......
+    ...
     "clean:build:android": "rm -rf android/app/build",
     "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
 },
