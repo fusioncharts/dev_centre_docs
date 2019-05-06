@@ -453,7 +453,7 @@ In the above code:
 
 3. Define the chart configuration in a JSON.
     * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels). 
+    * Set the width and height (in pixels).
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
