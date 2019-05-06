@@ -23,7 +23,22 @@ Since FusionTime is distributed along with FusionCharts Suite, download/install 
 
 <div class='tab android-tab active'>
 
-<div><strong>Step 1:</strong> To install fusioncharts and the `react-native-fusioncharts` component via npm follow the steps below:</div>
+<div><strong>Prerequisites</strong></div>
+<div>
+    <ol>
+        <li>Before installing `fusioncharts` package via <strong>npm</strong>, make sure you have <strong>Node.js</strong> installed in your system.</li>
+        <li>Make sure you have a bundler like <strong>webpack</strong> and <strong>parcel</strong> or have a <strong>browserify</strong> installed in your system.</li>
+    </ol>
+</div>
+<div><strong>Create a project folder using the following command:</strong></div>
+<pre><code class="language-bash">$ mkdir projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div><strong>Get inside the directory using `cd` command as shown below:</strong></div>
+<pre><code class="language-bash">$ cd projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div><strong>Step 1:</strong>To install fusioncharts and the `react-native-fusioncharts` component via npm follow the steps below:</div>
 <div>1. Install the `react-native-fusioncharts` module</div>
 <pre><code class="language-javascript">
     $ npm install react-native-fusioncharts --save
@@ -38,8 +53,8 @@ Since FusionTime is distributed along with FusionCharts Suite, download/install 
 <div>
     <ul>
         <li>Create a folder named `assets` under `android/app/src/main` directory if it doesn't exist.</li>
-        <li>Copy `FusionCharts` library files (node_modules/fusioncharts folder) in the `assets` folder.</li>
-        <li>Create a `fusioncharts.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using &lt;script&gt; tag.</li>
+        <li>Copy `FusionCharts` library files (`node_modules/fusioncharts folder`) in the `assets` folder.</li>
+        <li>Create a `fusioncharts.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using `&lt;script&gt;` tag.</li>
         <pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -174,6 +189,21 @@ $ npm run prod:android
 </div>
 
 <div class='tab ios-tab'>
+
+<div><strong>Prerequisites</strong></div>
+<div>
+    <ol>
+        <li>Before installing `fusioncharts` package via <strong>npm</strong>, make sure you have <strong>Node.js</strong> installed in your system.</li>
+        <li>Make sure you have a bundler like <strong>webpack</strong> and <strong>parcel</strong> or have a <strong>browserify</strong> installed in your system.</li>
+    </ol>
+</div>
+<div><strong>Create a project folder using the following command:</strong></div>
+<pre><code class="language-bash">$ mkdir projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div><strong>Get inside the directory using `cd` command as shown below:</strong></div>
+<pre><code class="language-bash">$ cd projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
 <div><strong>Step 1:</strong> To install fusioncharts and the `react-native-fusioncharts` component via npm follow the steps below:</div>
 <div>1. Install the `react-native-fusioncharts` module</div>
@@ -351,6 +381,8 @@ Now, let's create the files to render the above chart.
 
 To render the chart, create a `app.js` file and copy the following code:
 
+> The `JavaScript` code to create a chart in **Android** and **iOS** is same.
+
 ```javascript
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
@@ -460,5 +492,3 @@ In the above code:
 4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
 5. Add `style` to the container of the chart.
-
-> The `JavaScript` code to create a chart in **Android** and **iOS** is same.
