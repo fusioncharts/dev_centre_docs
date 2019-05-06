@@ -54,7 +54,7 @@ Since FusionTime is distributed along with FusionCharts Suite, download/install 
     <ul>
         <li>Create a folder named `assets` under `android/app/src/main` directory if it doesn't exist.</li>
         <li>Copy `FusionCharts` library files (`node_modules/fusioncharts folder`) in the `assets` folder.</li>
-        <li>Create a `fusioncharts.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using &lt;script&gt; tag.</li>
+        <li>Create a `fusioncharts.html` file in `assets` folder. Include the FusionCharts library files in `fusioncharts.html` file using <strong>&lt;script&gt;</strong> tag.</li>
         <pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
