@@ -209,7 +209,7 @@ $ npm run prod:android
 &lt;/html&gt;
         </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-        <li>Add a `build"assets` script in Application's `package.json` file</li>
+        <li>Add a `build:assets` script in Application's `package.json` file</li>
         <pre><code class="language-javascript">
 "scripts": {
     ......
