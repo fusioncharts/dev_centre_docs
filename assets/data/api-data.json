@@ -89,7 +89,7 @@
                                 "type": [
                                     "FusionCharts~dataFormats"
                                 ],
-                                "description": "This is the name of the format of data passed to the `dataSource` option below. Currently, FusionCharts accepts only JSON and XML data. The value for this option is one of the formats specified in [dataFormats](/api/fusioncharts/fusioncharts-properties#dataFormats).",
+                                "description": "This is the name of the format of data passed to the `dataSource` option below. Currently, FusionCharts accepts only JSON and XML data. The value for this option is one of the formats specified in [dataFormats](/api/fusioncharts/fusioncharts-properties).",
                                 "defaultvalue": "",
                                 "optional": true,
                                 "nullable": "",
