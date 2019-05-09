@@ -1902,12 +1902,12 @@
             "path": "/fusiontime/integrations/aspnet/your-first-chart-using-aspnet-in-fusiontime"
           },
           {
-            "title": "Create a Chart in Ruby on Rails",
-            "path": "/fusiontime/integrations/ruby-on-rails/your-first-chart-using-ruby-on-rails-in-fusiontime"
-          },
-          {
             "title": "Create a Chart in Django",
             "path": "/fusiontime/integrations/django/your-first-chart-using-django-in-fusiontime"
+          },
+          {
+            "title": "Create a Chart in Ruby on Rails",
+            "path": "/fusiontime/integrations/ruby-on-rails/your-first-chart-using-ruby-on-rails-in-fusiontime"
           }
         ]
       },
