@@ -12,11 +12,11 @@ We have built a simple FusionCharts server-side `ruby-on-rails` wrapper, which p
 
 In this article, we will show you how to download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system. Since FusionTime is distributed along with FusionCharts Suite, download/install the **FusionCharts** package to get access to FusionTime.
 
-* Copy the `fusionCharts-rails.rb` from `integrations > rubyonrails > fusioncharts-wrapper` in your project folder.
+- Copy the `fusionCharts-rails.rb` from `integrations > rubyonrails > fusioncharts-wrapper` in your project folder.
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from here.
+- Include the **FusionCharts** JavaScript files, which can be downloaded from here.
 
-* Include the **FusionTime** file to render time-series charts.
+- Include the **FusionTime** file to render time-series charts.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -33,6 +33,7 @@ In this article, we will show you how to download and install the **FusionCharts
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -44,15 +45,16 @@ In this article, we will show you how to download and install the **FusionCharts
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
 </div>
 
-* Add the FusionCharts Rail wrapper:
-  * Using RubyGems
-  * Manually
-* Include the FusionCharts Rails wrapper.
+- Add the FusionCharts Rail wrapper:
+  - Using RubyGems
+  - Manually
+- Include the FusionCharts Rails wrapper.
 
 To add the FusionCharts Rails wrapper, use any of the following processes:
 
@@ -111,9 +113,9 @@ The data for the above chart is shown in the table below:
 
 FusionCharts accepts a DataTable as the data source. `DataTable` is a part of `DataStore`, which is a tabular representation of the data. To create the `DataTable`, you need to provide the following:
 
-* `schema` - which defines the properties of the columns.  
+- `schema` - which defines the properties of the columns.
 
-* `data` - values of each row and column of the `DataTable`.
+- `data` - values of each row and column of the `DataTable`.
 
 > For an instance of FusionTime, you can create `n` number of `DataTables`, but only one `DataStore`.
 
@@ -130,27 +132,30 @@ To define the schema, let's create a `schema.json` file and copy the following c
 > It is not mandatory to create the schema in a different `.json` file. You can also define the schema within the `.html` file.
 
 ```json
-[{
+[
+  {
     "name": "Time",
     "type": "date",
     "format": "%-m/%-d/%Y"
-}, {
+  },
+  {
     "name": "Sales",
     "type": "number"
-}]
+  }
+]
 ```
 
 In the above code:
 
-* Each object of the schema maps to a column of the tabular representation of the data.
+- Each object of the schema maps to a column of the tabular representation of the data.
 
-* The `JSON` object has the following attributes:
+- The `JSON` object has the following attributes:
 
-    * name - Specify the name of the column of the tabular representation of data
+  - name - Specify the name of the column of the tabular representation of data
 
-    * type - Specify the type of the column.
+  - type - Specify the type of the column.
 
-    * format - Specify the input format of the date as per your data. In this example, the format is `%-m/%-d/%Y`. To know more about date formats, click [here](https://www.fusioncharts.com/dev/fusiontime/fusiontime-attributes).
+  - format - Specify the input format of the date as per your data. In this example, the format is `%-m/%-d/%Y`. To know more about date formats, click [here](https://www.fusioncharts.com/dev/fusiontime/fusiontime-attributes).
 
 Now that we have the schema ready, let's work on the data.
 
@@ -160,46 +165,28 @@ Now that we have the schema ready, let's work on the data.
 
 ```json
 [
-    [
-        "1/4/2011",
-        16.448
-    ],
-    [
-        "1/5/2011",
-        272.736
-    ],
-    [
-        "1/5/2011",
-        11.784
-    ],
-    [
-        "1/5/2011",
-        3.54
-    ],
-    [
-        "1/6/2011",
-        19.536
-    ],
-    [
-        "1/7/2011",
-        2573.82
-    ],
+  ["1/4/2011", 16.448],
+  ["1/5/2011", 272.736],
+  ["1/5/2011", 11.784],
+  ["1/5/2011", 3.54],
+  ["1/6/2011", 19.536],
+  ["1/7/2011", 2573.82]
 ]
 ```
 
 Create a new `data.json` file, and copy the above code there. Next, copy the entire and replace it with the content of the `data` object in your 'data.json' file.
 
->** **It is not mandatory to create a `data.json` file. You could also do the same in your HTML file.
+> \*\* \*\*It is not mandatory to create a `data.json` file. You could also do the same in your HTML file.
 
 In the above code:
 
-* Each object in the data array corresponds to a row in the tabular representation of the data.
+- Each object in the data array corresponds to a row in the tabular representation of the data.
 
-* Each element in an object is represented by each object of the `schema`. The values in each object of the array represent the following:
+- Each element in an object is represented by each object of the `schema`. The values in each object of the array represent the following:
 
-    * Time according to the format
+  - Time according to the format
 
-    * Total Sales amount
+  - Total Sales amount
 
 We are all set with our data to create the chart.
 
@@ -225,17 +212,17 @@ Once you have the `data` and the `schema` ready, follow the steps below:
 
 7. The following parameter values have been set for the wrapper constructor:
 
-    * Value of `width` has been set to `700`.
+   - Value of `width` has been set to `700`.
 
-    * Value of `height` has been set to `450`.
+   - Value of `height` has been set to `450`.
 
-    * Value of `type` has been set to `timeseries`.
+   - Value of `type` has been set to `timeseries`.
 
-    * Value of `renderAt` has been set to `chartContainer`.
+   - Value of `renderAt` has been set to `chartContainer`.
 
-    * Value of `dataFormat` has been set to `json`
+   - Value of `dataFormat` has been set to `json`
 
-    * The time-series object `timeSeries` has been provided.
+   - The time-series object `timeSeries` has been provided.
 
 8. Create a container using `<div>` to render the chart.
 
@@ -251,8 +238,8 @@ require 'fusioncharts-rails'
 class FirstChart
 def self.getChart
 
-# Declare local variables
-for consuming schema and data information.#Fetch data and schema information from remote url and store these in local schema and data variables.
+# Declare local variables for consuming schema and data information.
+#Fetch data and schema information from remote url and store these in local schema and data variables.
 
 data = open('..PATH/data.json') {
     | f | f.read
@@ -267,8 +254,7 @@ fusionTable = Fusioncharts::FusionTable.new(schema, data)
 # Create and initialize TimeSeries object instance with the constructor parameters of FusionTable object instance.
 timeSeries = Fusioncharts::TimeSeries.new(fusionTable)
 
-# Wrapper constructor parameters# width: Width of the chart, #height: Height of the chart, #type: ChartType, #renderAt: Id of the container where the chart will be rendered, #dataFormat: format of the data, this wrapper
-for timeseries chart type supports only json format, #timeSeries: Accepts only TimeSeries class object instance
+# Wrapper constructor parameters# width: Width of the chart, #height: Height of the chart, #type: ChartType, #renderAt: Id of the container where the chart will be rendered, #dataFormat: format of the data, this wrapper for timeseries chart type supports only json format, #timeSeries: Accepts only TimeSeries class object instance
 
 # Chart rendering
 chart = Fusioncharts::Chart.new({

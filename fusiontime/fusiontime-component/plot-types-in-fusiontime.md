@@ -145,7 +145,9 @@ You can also apply style across all the chart types using `generic` object withi
 ```javascript
 {
   "plotConfig": {
-    "generic": {...}
+    "style": {
+      "generic": {...}
+    }
   }
 }
 ```
@@ -163,15 +165,17 @@ Let's take an example of an area chart where you want to customize the opacity o
 ```javascript
 {
   "plotConfig": {
-    "area": {
-      "line": {
-        "opacity": 1.0
-      },
+    "style": {
       "area": {
-        "opacity": 0.3
-      },
-      "anchor": {
-        "opacity": 0.7
+        "line": {
+          "opacity": 1.0
+        },
+        "area": {
+          "opacity": 0.3
+        },
+        "anchor": {
+          "opacity": 0.7
+        }
       }
     }
   }
@@ -197,53 +201,55 @@ The list of all the plot types and their respective sub-parts are listed below:
 ```javascript
 {
   "plotConfig": {
-    "column": {
-      "plot": Style,
-      "column": Style
-    },
-    "line": {
-      "plot": Style,
-      "line": Style
-    },
-    "smooth-line": {
-      "plot": Style,
-      "line": Style
-    },
-    "step-line": {
-      "plot": Style,
-      "line": Style
-    },
-    "area": {
-      "plot": Style,
-      "line": Style,
-      "area": Style
-    },
-    "smooth-area": {
-      "plot": Style,
-      "line": Style,
-      "area": Style
-    },
-    "step-area": {
-      "plot": Style,
-      "line": Style,
-      "area": Style
-    },
-    "candlestick": {
-      "bear": Style,
-      "bull": Style
-    },
-    "ohlc": {
-      "bear": Style,
-      "bull": Style
-    },
-    "generic": {
-      "plot": Style,
-      "line": Style,
-      "area": Style,
-      "bear": Style,
-      "bull": Style,
-      "column": Style,
-      "anchor": Style
+    "style": {
+      "column": {
+        "plot": Style,
+        "column": Style
+      },
+      "line": {
+        "plot": Style,
+        "line": Style
+      },
+      "smooth-line": {
+        "plot": Style,
+        "line": Style
+      },
+      "step-line": {
+        "plot": Style,
+        "line": Style
+      },
+      "area": {
+        "plot": Style,
+        "line": Style,
+        "area": Style
+      },
+      "smooth-area": {
+        "plot": Style,
+        "line": Style,
+        "area": Style
+      },
+      "step-area": {
+        "plot": Style,
+        "line": Style,
+        "area": Style
+      },
+      "candlestick": {
+        "bear": Style,
+        "bull": Style
+      },
+      "ohlc": {
+        "bear": Style,
+        "bull": Style
+      },
+      "generic": {
+        "plot": Style,
+        "line": Style,
+        "area": Style,
+        "bear": Style,
+        "bull": Style,
+        "column": Style,
+        "anchor": Style
+      }
     }
   }
 }

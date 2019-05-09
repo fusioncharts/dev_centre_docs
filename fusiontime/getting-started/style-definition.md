@@ -318,8 +318,8 @@ You can also apply style across all the chart types using `generic` object withi
 ```javascript
 {
     "plotConfig": {
-        "generic": {
-            ...
+        "style": {
+            "generic": { ... }
         }
     }
 }
