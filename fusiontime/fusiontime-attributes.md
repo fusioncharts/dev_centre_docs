@@ -218,10 +218,12 @@ new FusionCharts({
   type: "timeseries",
   dataSource: {
     plotConfig: {
-      generic: {
-        connectNullData: " " //Set the value to `true` to connect null data
-      } //Style too be applied across the chart
-    }
+			style: {
+				generic: {
+					connectNullData: " " //Set the value to `true` to connect null data
+				} //Style too be applied across the chart
+			}
+		}
   }
 });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -234,10 +236,13 @@ new FusionCharts({
   type: "timeseries",
   dataSource: {
     plotConfig: {
-      line: {
-        connectNullData: " " //Set the value to `true` to connect null data
-    } //Style too be applied only to line data plots
-  }
+			style: {
+				line: {
+					connectNullData: " " //Set the value to `true` to connect null data
+				} //Style too be applied only to line data plots
+			}
+  	}
+	}
 });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>

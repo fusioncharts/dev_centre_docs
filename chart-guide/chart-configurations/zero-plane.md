@@ -10,15 +10,15 @@ The zero plane applies to column, line, scatter, bubble and the area charts. Add
 
 ## Show/Hide the Zero Plane
 
-By default, the zero plane is rendered in any chart that plots both negative and positive values.  To hide the zero plane, set the `showZeroPlane` attribute to `0`. 
+By default, the zero plane is rendered in any chart that plots both negative and positive values. To hide the zero plane, set the `showZeroPlane` attribute to `0`.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "showZeroPlane": "0"
-    }
+  "chart": {
+    "showZeroPlane": "0"
+  }
 }
 ```
 
@@ -32,11 +32,11 @@ Click [here](http://jsfiddle.net/fusioncharts/pxxsdfe0/) to edit the above chart
 
 To customize the zero plane in a 2D chart, the following attributes are used:
 
-* Specify the hex code for the color of the zero plane using the `zeroPlaneColor` attribute.
+- Specify the hex code for the color of the zero plane using the `zeroPlaneColor` attribute.
 
-* Set the thickness (in pixels) of the zero plane using the `zeroPlaneThickness` attribute.
+- Set the thickness (in pixels) of the zero plane using the `zeroPlaneThickness` attribute.
 
-* Set the transparency of the zero plane using the `zeroPlaneAplha` attribute.
+- Set the transparency of the zero plane using the `zeroPlaneAlpha` attribute.
 
 Refer to the code below:
 
@@ -62,13 +62,13 @@ Click [here](http://jsfiddle.net/fusioncharts/ydxdrozz/) to edit the above chart
 
 To customize the zero plane in a 3D chart, the following attributes are used:
 
-* Specify the hex code for the color of the zero plane using the `zeroPlaneColor` attribute.
+- Specify the hex code for the color of the zero plane using the `zeroPlaneColor` attribute.
 
-* Set the transparency of the zero plane using the `zeroPlaneAplha` attribute.
+- Set the transparency of the zero plane using the `zeroPlaneAlpha` attribute.
 
-* Set the `zeroPlaneShowBorder` attribute to `1` to display the border.
+- Set the `zeroPlaneShowBorder` attribute to `1` to display the border.
 
-* Specify the hex code of the border color using the `zeroPlaneBorderColor` attribute.
+- Specify the hex code of the border color using the `zeroPlaneBorderColor` attribute.
 
 Refer to the code below:
 
@@ -99,9 +99,9 @@ To hide the vertical zero plane set the `showVZeroPlane` attribute to `0`. Refer
 
 ```json
 {
-    "chart": {
-        "showVZeroPlane": "0"       
-    }
+  "chart": {
+    "showVZeroPlane": "0"
+  }
 }
 ```
 
@@ -113,22 +113,22 @@ Click [here](http://jsfiddle.net/fusioncharts/1u4f1jpy/) to edit the above chart
 
 To configure the vertical zero plane use the following attributes:
 
-* Specify the hex code of the color for the vertical zero plane using the `vZeroPlaneColor` attribute.
+- Specify the hex code of the color for the vertical zero plane using the `vZeroPlaneColor` attribute.
 
-* Set the thickness (in pixels) of the vertical zero plane using the `vZeroPlaneThickness` attribute.
+- Set the thickness (in pixels) of the vertical zero plane using the `vZeroPlaneThickness` attribute.
 
-* Set the transparency of the vertical zero plane using the `vZeroPlaneAlpha` attribute.
+- Set the transparency of the vertical zero plane using the `vZeroPlaneAlpha` attribute.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "showVZeroPlane": "1",
-        "vZeroPlaneColor": "#cc3300",
-        "vZeroPlaneThickness": "3",
-        "vZeroPlaneAlpha": "90"
-    }
+  "chart": {
+    "showVZeroPlane": "1",
+    "vZeroPlaneColor": "#cc3300",
+    "vZeroPlaneThickness": "3",
+    "vZeroPlaneAlpha": "90"
+  }
 }
 ```
 
@@ -140,15 +140,15 @@ Click [here](http://jsfiddle.net/fusioncharts/8qqeL31d/) to edit the above chart
 
 ## Show/Hide the Zero Plane Value
 
-By default, the data value (`0`) where the zero plane exists on the y-axis is displayed. To hide the zero plane value set the `showZeroPlaneValue` attribute to '0'. 
+By default, the data value (`0`) where the zero plane exists on the y-axis is displayed. To hide the zero plane value set the `showZeroPlaneValue` attribute to '0'.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "showZeroPlaneValue": "0"
-    }
+  "chart": {
+    "showZeroPlaneValue": "0"
+  }
 }
 ```
 
