@@ -10,9 +10,9 @@ FusionExport server accepts export requests from [FusionExport CLI](/exporting-c
 
 Download FusionExport from [here](https://fusioncharts.com/download/fusionexport). After downloading:
 
-* Unzip the downloaded package.
+- Unzip the downloaded package.
 
-* Open the command-line interface and navigate to the directory containing the unzipped files.
+- Open the command-line interface and navigate to the directory containing the unzipped files.
 
 ## Usage
 
@@ -25,7 +25,7 @@ $ chmod +x ./fusionexport
 $ ./fusionexport
 ```
 
-By default, the FusionExport Server starts on **localhost**, and listens to port **1337**. 
+By default, the FusionExport Server starts on **localhost**, and listens to port **1337**.
 
 > FusionExport will run mostly on all the Linux distributions. In case you are unable to run it, use our docker image or reach out to our [engineering team](mailto:fusionexport@fusioncharts.com) or [support team](mailto:support@fusioncharts.com) and we will help you with the integration.
 
@@ -49,7 +49,7 @@ Execute the batch file `fusionexport.bat`:
 $ start fusionexport.bat
 ```
 
-By default, the FusionExport Server starts on **localhost**, and listens to port **1337**. 
+By default, the FusionExport Server starts on **localhost**, and listens to port **1337**.
 
 > When you download FusionExport for Windows, you will find executables like `fusionexport.exe` and `service.exe`. **Do not** run them by double-clicking on the file icons; instead, execute them using either the Command Prompt or the PowerShell.
 
@@ -63,10 +63,6 @@ $ docker-compose up
 
 The above command will complete all the dependencies missing for FusionExport Server. It will start the server and listen to port **1337**.
 
-## Next Steps
+## Next Step
 
-After you have installed FusionCharts Server, install either FusionExport CLI or FusionExport Server SDK for your preferred programming language, or both:
-
-* [Install FusionExport CLI](/exporting-charts/using-fusionexport/installation/install-fusionexport-cli)
-
-* [Install FusionExport Server SDKs](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
+After you have installed FusionCharts Server, install FusionExport Server SDK for your preferred programming language from [here](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks).
