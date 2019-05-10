@@ -2120,22 +2120,6 @@
           {
             "title": "Disable Watermark",
             "path": "/exporting-charts/using-fusionexport/tutorials/disable-watermark-in-fusionexport"
-          },
-          {
-            "title": "Custom Version of FusionCharts in FusionExport",
-            "path": "/exporting-charts/using-fusionexport/tutorials/custom-version-of-fusioncharts-in-fusionexport"
-          },
-          {
-            "title": "Export PDF files in Print Format",
-            "path": "/exporting-charts/using-fusionexport/tutorials/export-pdf-files-in-print-format"
-          },
-          {
-            "title": "Customize the Dimensions of Exported Files",
-            "path": "/exporting-charts/using-fusionexport/tutorials/customize-the-dimensions-of-exported-files"
-          },
-          {
-            "title": "Add Pagination in exported PDFs",
-            "path": "/exporting-charts/using-fusionexport/tutorials/add-pagination-in-exported-pdfs"
           }
         ]
       },

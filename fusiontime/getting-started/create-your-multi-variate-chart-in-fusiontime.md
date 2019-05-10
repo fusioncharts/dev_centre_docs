@@ -12,6 +12,8 @@ The multivariate chart will look as shown below:
 
 {% embed_ftChart online-sales-multi-variate %}
 
+Click [here](https://jsfiddle.net/fusioncharts/yfewbpLq/) to edit the above chart.
+
 The data for the above chart is shown in the table below:
 
 | Order Date | Sales   | Quantity | Shipping Cost |
@@ -48,17 +50,17 @@ let schema = [{
 
 In the above code:
 
-* `schema` is the variable in which the array is saved.
+- `schema` is the variable in which the array is saved.
 
-* The first object creates the first column in the `DataTable`. The first object sets the **date/time** [format](/fusiontime/api-reference/fusiontime-attributes#datetime-format) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
+- The first object creates the first column in the `DataTable`. The first object sets the **date/time** [format](/fusiontime/api-reference/fusiontime-attributes#datetime-format) for the chart. The name of the column has been set to **Time** and the data format has been set to `%-m/%-d/%Y`.
 
-* The next three are the columns for three measures of the chart:
+- The next three are the columns for three measures of the chart:
 
-    * **Sales**.
+  - **Sales**.
 
-    * **Quantity**.
+  - **Quantity**.
 
-    * **Shipping Cost**. 
+  - **Shipping Cost**.
 
 Now that we have the columns ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
@@ -111,17 +113,17 @@ To view the full data click [here](https://raw.githubusercontent.com/fusionchart
 
 In the above code:
 
-* `data` is the variable in which the data array is saved. 
+- `data` is the variable in which the data array is saved.
 
-* For each data plot in the chart, an array is created which consists of values for each row in the `DataTable`. The values in the array represent:
+- For each data plot in the chart, an array is created which consists of values for each row in the `DataTable`. The values in the array represent:
 
-    * **Order date** in the format defined.
+  - **Order date** in the format defined.
 
-    * **Sales** per day
+  - **Sales** per day
 
-    * **Quantity** of the product ordered
+  - **Quantity** of the product ordered
 
-    * **Shipping cost** of the product
+  - **Shipping cost** of the product
 
 We are all set with our data to create the chart.
 
@@ -155,20 +157,21 @@ let fusionDataStore = new DataStore();
 let fusionTable = fusionDataStore.createDataTable(data, schema);
 
 window.charInstance = new FusionCharts({
-    type: 'timeseries',
-    renderAt: 'container',
-    width: "95%",
-    height: 650,
-    dataSource: {
-        data: fusionTable,
-            chart: {
-            },
-            caption: {
-                text: 'Global Online Sales of a SuperStore'
-        }
-    }
+type: 'timeseries',
+renderAt: 'container',
+width: "95%",
+height: 650,
+dataSource: {
+data: fusionTable,
+chart: {
+},
+caption: {
+text: 'Global Online Sales of a SuperStore'
+}
+}
 });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -178,20 +181,20 @@ window.charInstance = new FusionCharts({
 &lt;html lang="en"&gt;
 
 &lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-  &lt;title&gt;FusionCharts TimeSeries&lt;/title&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+&lt;title&gt;FusionCharts TimeSeries&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-  &lt;div id="container"&gt;&lt;/div&gt;
-  &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-  &lt;script src="path/to/local/data.js"&gt;&lt;/script&gt;
-  &lt;script src="path/to/local/schema.js"&gt;&lt;/script&gt;
-  &lt;script&gt;
-    let fusionDataStore = new FusionCharts.DataStore();
-    let fusionTable = fusionDataStore.createDataTable(data, schema);
+&lt;div id="container"&gt;&lt;/div&gt;
+&lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/local/data.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/local/schema.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+let fusionDataStore = new FusionCharts.DataStore();
+let fusionTable = fusionDataStore.createDataTable(data, schema);
 
     new FusionCharts({
       type: 'timeseries',
@@ -207,11 +210,13 @@ window.charInstance = new FusionCharts({
         }
       }
     }).render()
-  &lt;/script&gt;
+
+&lt;/script&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -226,23 +231,22 @@ The chart to showcase the quantity sold will look as shown below:
 
 {% embed_ftChart online-sales-single-series-multiple-measures %}
 
-The code to render the data of **Sales** and **Quantity** column is shown below: 
+The code to render the data of **Sales** and **Quantity** column is shown below:
 
 ```javascript
 window.charInstance = new FusionCharts({
-    type: 'timeseries',
-    renderAt: 'container',
-    width: "95%",
-    height: 650,
-    dataSource: {
-        data: fusionTable,
-            chart: {
-            },
-            "yAxis": ["Sales", "Quantity"],
-            caption: {
-                text: 'Global Online Sales of a SuperStore'
-        }
+  type: "timeseries",
+  renderAt: "container",
+  width: "95%",
+  height: 650,
+  dataSource: {
+    data: fusionTable,
+    chart: {},
+    yAxis: ["Sales", "Quantity"],
+    caption: {
+      text: "Global Online Sales of a SuperStore"
     }
+  }
 });
 ```
 
