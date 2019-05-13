@@ -4,7 +4,7 @@ description: This article talks how to add pagination in exported pdfs.
 heading: Add Pagination in exported PDFs
 ---
 
-FusionExport allows you to add page breaks the exported PDF files.
+FusionExport allows you to add page breaks in exported PDF files.
 
 Before you start, check out the video given below which guides you to add page breaks in exported PDF files.
 
