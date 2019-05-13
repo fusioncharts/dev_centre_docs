@@ -763,8 +763,6 @@ The HTML template for the above code is given below:
 </html>
 ```
 
-The output of the above template looks like as shown below:
-
-![Output](/images/fusionexport-output.png)
+Click [here](https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf) to download the exported PDF file.
 
 Click [here](https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions) to download the above project.
