@@ -24,6 +24,8 @@ A Column 2D chart showcasing the 3 themes mentioned above is given below:
 
 {% embed_ftChart themes-in-fusiontime %}
 
+Click [here](https://jsfiddle.net/fusioncharts/sL9kceau/) to edit the above chart.
+
 The full code of the above sample is given below:
 
 ```html

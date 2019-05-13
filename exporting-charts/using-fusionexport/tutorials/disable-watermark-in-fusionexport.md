@@ -11,6 +11,14 @@ In FusionExport, there are two types of watermark when you are exporting chart:
 
 ![Water Mark](/images/export-chart-with-watermark.png)
 
+Before you start, check out the video given below which guides you to remove the trails marks in FusionExport.
+
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+    <iframe src="https://www.loom.com/embed/527a63befb2f46dd9b296ae6d6dc6b1b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
+Now, let’s see how you can remove the watermarks from your exported chart.
+
 ## Prerequisites
 
 Before you start, ensure that you have:
@@ -20,12 +28,6 @@ Before you start, ensure that you have:
 2. [Downloaded and installed the FusionExport SDK client](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
 
 3. [Export a Dashboard](/exporting-charts/using-fusionexport/installation/export-a-dashboard)
-
-Now, let’s see how you can remove the watermarks from your exported chart.
-
-<div style="position: relative; padding-bottom: 62.5%; height: 0;">
-    <iframe src="https://www.loom.com/embed/527a63befb2f46dd9b296ae6d6dc6b1b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-</div>
 
 ## Remove FusionExport Watermark
 

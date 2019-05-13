@@ -4,16 +4,45 @@ description: This article talks about how to export PDF files in print format.
 heading: Export PDF files in Print Format
 ---
 
-FusionExport allows you to export your PDFs in a print-friendly format. Using `templateFormat` (which only accepts letters) you can export your PDF files in Print-friendly format.
+FusionExport allows you to export your PDFs in a print-friendly format.
 
-To do so, follow the steps given below:
+Before you start, check out the video given below which guides you how to export PDF files in print format.
 
-- Firstly, export a dashboard for which you want to customize the height and width of the image.
-- Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
-- Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its set() method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
-- Set the `type` to `pdf`.
-- Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
-- Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+    <iframe src="https://www.loom.com/share/e9ff3172776345659455b6ef7eb240d3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
+Now, let’s check the steps to export PDF files in print format.
+
+## Prerequisites
+
+Before you start, ensure that you have:
+
+1. [Downloaded and installed FusionExport Server](/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
+
+2. [Downloaded and installed the FusionExport SDK client](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
+
+3. [Export a Dashboard](/exporting-charts/using-fusionexport/installation/export-a-dashboard)
+
+Using `templateFormat` (which only accepts letters) you can export your PDF files in Print-friendly format. `templateFormat`
+is a parameter which accepts the PDF format when you export charts.
+
+Setting the `templateFormat` for a particular PDF page sets the priority over `templateWidth` and `templateHeight` of the exported file.
+
+The list of template formats and their default height and width is given below:
+
+| Format    | Width (inches) | Height (inches) |
+| --------- | -------------- | --------------- |
+| `Letter`  | 8.5            | 11              |
+| `Legal`   | 8.5            | 14              |
+| `Tabloid` | 11             | 17              |
+| `Ledger`  | 17             | 11              |
+| `A0`      | 33.1           | 46.8            |
+| `A1`      | 23.4           | 33.1            |
+| `A2`      | 16.5           | 23.4            |
+| `A3`      | 11.7           | 16.5            |
+| `A4`      | 8.27           | 11.7            |
+| `A5`      | 5.83           | 8.27            |
 
 The sample code to export PDF files in print format is given below:
 
@@ -37,6 +66,15 @@ exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
   console.log(err);
 });
 ```
+
+In the above code:
+
+- Firstly, export a dashboard for which you want to customize the height and width of the image.
+- Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
+- Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its set() method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
+- Set the `type` to `pdf`.
+- Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
+- Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
 
 Click [here](https://github.com/fusioncharts/fusionexport-tutorials/blob/master/dimensions/chart_configs.json) to get the JSON data.
 

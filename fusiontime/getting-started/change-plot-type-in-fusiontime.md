@@ -51,4 +51,6 @@ The chart with the updated plot type is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot %}
 
+Click [here](https://jsfiddle.net/fusioncharts/dw4ntp5a/) to edit the above chart.
+
 FusionTime includes several options to update the plot type of the chart. To know more, click [here](/fusiontime/fusiontime-component/plot-types-in-fusiontime).
