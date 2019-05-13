@@ -24,6 +24,8 @@ A time-series chart with export enabled is shown below. Hover over the <span> ![
 
 {% embed_ftChart online-sales-single-series-export-chart %}
 
+Click [here](https://jsfiddle.net/fusioncharts/2q3ba784/) to edit the above chart.
+
 To enable the export feature, refer to the code below:
 
 ```javascript

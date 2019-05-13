@@ -14,6 +14,8 @@ A chart with default data aggregation is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
+Click [here](https://jsfiddle.net/fusioncharts/gtn85dyk/) to edit the above chart.
+
 In the above chart, note that when you hover on the data plots a tooltip appears which shows the data bin for a specific period of time and the average of the values within that data bin. In this case, the data bin is for 15 days. So the chart shows the average sales value for 15 days.
 
 However, you can change the aggregate function from `average` to any of the following:

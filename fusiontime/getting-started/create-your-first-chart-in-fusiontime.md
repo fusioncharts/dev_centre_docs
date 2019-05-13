@@ -55,6 +55,8 @@ Now that you have installed FusionTime, it's time to create your first time-seri
 
 {% embed_ftChart online-sales-single-series %}
 
+Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/) to edit the above chart.
+
 The data for the above chart is too big to be displayed here. The table below shows the sample data of the above chart:
 
 | Time     | Sales   |
@@ -94,11 +96,12 @@ let schema = [{
 ```
 
 In the above code:
+
 - `schema` is the variable in which the array is saved.
 - Each column in the `DataTable` is represented by a JSON object within the `schema` array. The JSON object has the following attributes:
-    - name - Specify the name of the column.
-    - type - Specify the type of the column.
-    - format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
+  - name - Specify the name of the column.
+  - type - Specify the type of the column.
+  - format - Specify the input format of the date as per you data. In this example, the format is `%-m/%-d/%Y`. To know more on date formats click [here](/fusiontime/fusiontime-attributes).
 
 Now that we have the schema ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
@@ -142,10 +145,11 @@ Create a new `data.json` file, and copy the complete data from [here](https://ra
 > It is not mandatory to create a `data.json` file. You could also do the same in your HTML file.
 
 In the above code:
-* `data` is the variable in which the data array is stored.
-* Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represent the following:
-    * Time according to the format
-    * Total Sales amount
+
+- `data` is the variable in which the data array is stored.
+- Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represent the following:
+  - Time according to the format
+  - Total Sales amount
 
 We are all set with our data to create the chart.
 
@@ -179,18 +183,19 @@ let fusionDataStore = new DataStore();
 let fusionTable = fusionDataStore.createDataTable(data, schema);
 
 window.charInstance = new FusionCharts({
-    type: 'timeseries',
-    renderAt: 'container',
-    width: "90%",
-    height: 650,
-    dataSource: {
-        data: fusionTable,
-        caption: {
-            text: 'Online Sales of a SuperStore'
-        }
-    }
+type: 'timeseries',
+renderAt: 'container',
+width: "90%",
+height: 650,
+dataSource: {
+data: fusionTable,
+caption: {
+text: 'Online Sales of a SuperStore'
+}
+}
 });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -200,25 +205,25 @@ window.charInstance = new FusionCharts({
 &lt;html lang="en"&gt;
 
 &lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-  &lt;title&gt;Create your First Chart&lt;/title&gt;
-  &lt;style type="text/css"&gt;
-  #container {
-    width: 700px;
-  }
-  &lt;/style&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+&lt;title&gt;Create your First Chart&lt;/title&gt;
+&lt;style type="text/css"&gt;
+#container {
+width: 700px;
+}
+&lt;/style&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-  &lt;div id="container"&gt;&lt;/div&gt;
-  &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-  &lt;script src="path/to/local/data.js"&gt;&lt;/script&gt;
-  &lt;script src="path/to/local/schema.js"&gt;&lt;/script&gt;
-  &lt;script&gt;
-    let fusionDataStore = new FusionCharts.DataStore();
-    let fusionTable = fusionDataStore.createDataTable(data, schema);
+&lt;div id="container"&gt;&lt;/div&gt;
+&lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/local/data.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/local/schema.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+let fusionDataStore = new FusionCharts.DataStore();
+let fusionTable = fusionDataStore.createDataTable(data, schema);
 
     new FusionCharts({
         type: 'timeseries',
@@ -232,11 +237,13 @@ window.charInstance = new FusionCharts({
             }
         }
     }).render()
-  &lt;/script&gt;
+
+&lt;/script&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -255,17 +262,17 @@ In the above code:
 
 - Define the chart configuration in the FusionCharts constructor:
 
-    - Set the type as `timeseries`.
+  - Set the type as `timeseries`.
 
-    - Set the chart container as `container` using the `renderAt` property.
+  - Set the chart container as `container` using the `renderAt` property.
 
-    - Set the width and height (in pixels).
+  - Set the width and height (in pixels).
 
-    - Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
+  - Set the name of the `DataTable` as the value of the `data` property of `dataSource`.
 
-    - Set the data to create the chart.
+  - Set the data to create the chart.
 
-    - Specify the caption of the chart using `text` attribute in `caption` object.
+  - Specify the caption of the chart using `text` attribute in `caption` object.
 
 That's it! Your first chart using FusionTime is ready.
 
