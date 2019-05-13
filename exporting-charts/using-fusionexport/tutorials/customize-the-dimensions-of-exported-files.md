@@ -4,7 +4,19 @@ description: This article talks about the SDKs used for exporting a dashboard.
 heading: Customize the Dimensions of Exported Files
 ---
 
-You can customize the height and width of the exported dashboard images. To do so, follow the steps given below:
+You can customize the height and width of the exported dashboard images.
+
+## Prerequisites
+
+Before you start, ensure that you have:
+
+1. [Downloaded and installed FusionExport Server](/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
+
+2. [Downloaded and installed the FusionExport SDK client](/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
+
+3. [Export a Dashboard](/exporting-charts/using-fusionexport/installation/export-a-dashboard)
+
+To customize the height and width of the exported dashboard images, follow the steps given below:
 
 - Firstly, export a dashboard for which you want to customize the height and width of the image.
 - Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
@@ -37,7 +49,564 @@ async function run() {
 run();
 ```
 
-Click [here](https://github.com/fusioncharts/fusionexport-tutorials/blob/master/dimensions/chart_configs.json) to get the JSON data.
+The JSON data of the above chart is shown below:
+
+```json
+[
+  {
+    "type": "mscolumn2d",
+    "renderAt": "chart-container-1",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "caption": "App Publishing Trend",
+        "subcaption": "2012-2016",
+        "xaxisname": "Years",
+        "yaxisname": "Total number of apps in store",
+        "formatnumberscale": "1",
+        "plottooltext": "<b>$dataValue</b> apps were available on <b>$seriesName</b> in $label",
+        "theme": "fusion",
+        "drawcrossline": "1"
+      },
+      "categories": [
+        {
+          "category": [
+            {
+              "label": "2012"
+            },
+            {
+              "label": "2013"
+            },
+            {
+              "label": "2014"
+            },
+            {
+              "label": "2015"
+            },
+            {
+              "label": "2016"
+            }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "seriesname": "iOS App Store",
+          "data": [
+            {
+              "value": "125000"
+            },
+            {
+              "value": "300000"
+            },
+            {
+              "value": "480000"
+            },
+            {
+              "value": "800000"
+            },
+            {
+              "value": "1100000"
+            }
+          ]
+        },
+        {
+          "seriesname": "Google Play Store",
+          "data": [
+            {
+              "value": "70000"
+            },
+            {
+              "value": "150000"
+            },
+            {
+              "value": "350000"
+            },
+            {
+              "value": "600000"
+            },
+            {
+              "value": "1400000"
+            }
+          ]
+        },
+        {
+          "seriesname": "Amazon AppStore",
+          "data": [
+            {
+              "value": "10000"
+            },
+            {
+              "value": "100000"
+            },
+            {
+              "value": "300000"
+            },
+            {
+              "value": "600000"
+            },
+            {
+              "value": "900000"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "msline",
+    "renderAt": "chart-container-2",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "caption": "Reach of Social Media Platforms amoung youth",
+        "yaxisname": "% of youth on this platform",
+        "subcaption": "2012-2016",
+        "showhovereffect": "1",
+        "numbersuffix": "%",
+        "drawcrossline": "1",
+        "plottooltext": "<b>$dataValue</b> of youth were on $seriesName",
+        "theme": "fusion"
+      },
+      "categories": [
+        {
+          "category": [
+            {
+              "label": "2012"
+            },
+            {
+              "label": "2013"
+            },
+            {
+              "label": "2014"
+            },
+            {
+              "label": "2015"
+            },
+            {
+              "label": "2016"
+            }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "seriesname": "Facebook",
+          "data": [
+            {
+              "value": "62"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "66"
+            },
+            {
+              "value": "78"
+            }
+          ]
+        },
+        {
+          "seriesname": "Instagram",
+          "data": [
+            {
+              "value": "16"
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": "42"
+            },
+            {
+              "value": "54"
+            }
+          ]
+        },
+        {
+          "seriesname": "LinkedIn",
+          "data": [
+            {
+              "value": "20"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "27"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "29"
+            }
+          ]
+        },
+        {
+          "seriesname": "Twitter",
+          "data": [
+            {
+              "value": "18"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "24"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "stackedcolumn2d",
+    "renderAt": "chart-container-3",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "caption": "Yearly Energy Production Rate",
+        "subcaption": " Top 5 Developed Countries",
+        "numbersuffix": " TWh",
+        "showsum": "1",
+        "plottooltext": "$label produces <b>$dataValue</b> of energy from $seriesName",
+        "theme": "fusion",
+        "drawcrossline": "1"
+      },
+      "categories": [
+        {
+          "category": [
+            {
+              "label": "Canada"
+            },
+            {
+              "label": "China"
+            },
+            {
+              "label": "Russia"
+            },
+            {
+              "label": "Australia"
+            },
+            {
+              "label": "United States"
+            },
+            {
+              "label": "France"
+            }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "seriesname": "Coal",
+          "data": [
+            {
+              "value": "400"
+            },
+            {
+              "value": "830"
+            },
+            {
+              "value": "500"
+            },
+            {
+              "value": "420"
+            },
+            {
+              "value": "790"
+            },
+            {
+              "value": "380"
+            }
+          ]
+        },
+        {
+          "seriesname": "Hydro",
+          "data": [
+            {
+              "value": "350"
+            },
+            {
+              "value": "620"
+            },
+            {
+              "value": "410"
+            },
+            {
+              "value": "370"
+            },
+            {
+              "value": "720"
+            },
+            {
+              "value": "310"
+            }
+          ]
+        },
+        {
+          "seriesname": "Nuclear",
+          "data": [
+            {
+              "value": "210"
+            },
+            {
+              "value": "400"
+            },
+            {
+              "value": "450"
+            },
+            {
+              "value": "180"
+            },
+            {
+              "value": "570"
+            },
+            {
+              "value": "270"
+            }
+          ]
+        },
+        {
+          "seriesname": "Gas",
+          "data": [
+            {
+              "value": "180"
+            },
+            {
+              "value": "330"
+            },
+            {
+              "value": "230"
+            },
+            {
+              "value": "160"
+            },
+            {
+              "value": "440"
+            },
+            {
+              "value": "350"
+            }
+          ]
+        },
+        {
+          "seriesname": "Oil",
+          "data": [
+            {
+              "value": "60"
+            },
+            {
+              "value": "200"
+            },
+            {
+              "value": "200"
+            },
+            {
+              "value": "50"
+            },
+            {
+              "value": "230"
+            },
+            {
+              "value": "150"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "stackedcolumn2dline",
+    "renderAt": "chart-container-4",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "showvalues": "0",
+        "caption": "Apple's Revenue & Profit",
+        "subcaption": "(2013-2016)",
+        "numberprefix": "$",
+        "numbersuffix": "B",
+        "plottooltext": "Sales of $seriesName in $label was <b>$dataValue</b>",
+        "showhovereffect": "1",
+        "yaxisname": "$ (In billions)",
+        "showsum": "1",
+        "theme": "fusion"
+      },
+      "categories": [
+        {
+          "category": [
+            {
+              "label": "2013"
+            },
+            {
+              "label": "2014"
+            },
+            {
+              "label": "2015"
+            },
+            {
+              "label": "2016"
+            }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "seriesname": "iPhone",
+          "data": [
+            {
+              "value": "21"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": "27"
+            },
+            {
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "seriesname": "iPad",
+          "data": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "seriesname": "Macbooks",
+          "data": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "5.5"
+            }
+          ]
+        },
+        {
+          "seriesname": "Others",
+          "data": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "11"
+            }
+          ]
+        },
+        {
+          "seriesname": "Profit",
+          "plottooltext": "Total profit in $label was <b>$dataValue</b>",
+          "renderas": "Line",
+          "data": [
+            {
+              "value": "17"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "18"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "doughnut3d",
+    "renderAt": "chart-container-5",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "caption": "Top 5 countries with Global Oil Reserves",
+        "subcaption": "MMbbl= One Million barrels",
+        "enablesmartlabels": "1",
+        "showlabels": "1",
+        "numbersuffix": " MMbbl",
+        "usedataplotcolorforlabels": "1",
+        "plottooltext": "$label, <b>$value</b> MMbbl",
+        "theme": "fusion"
+      },
+      "data": [
+        {
+          "label": "Venezuela",
+          "value": "290"
+        },
+        {
+          "label": "Saudi",
+          "value": "260"
+        },
+        {
+          "label": "Canada",
+          "value": "180"
+        },
+        {
+          "label": "Iran",
+          "value": "140"
+        },
+        {
+          "label": "Russia",
+          "value": "115"
+        }
+      ]
+    }
+  }
+]
+```
 
 The HTML template for the above code is given below:
 
