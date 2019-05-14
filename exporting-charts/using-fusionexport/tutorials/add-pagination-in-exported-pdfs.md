@@ -4,13 +4,11 @@ description: This article talks how to add pagination in exported pdfs.
 heading: Add Pagination in exported PDFs
 ---
 
-FusionExport allows you to add page breaks in exported PDF files.
-
-Before you start, check out the video given below which guides you to add page breaks in exported PDF files.
+Pagination is useful when you want to print a document into discrete pages. FusionExport allows you to add page breaks in exported PDF files. Before you start with the code implementations to add pagination, check out the following video which contains the step by step process.
 
 <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/584dbe32ac8e4d9e83bdd44276ee9720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-Now, let’s see how you can add page breaks in exported PDFs.
+Now, let’s check out the basic steps to add page breaks in exported PDFs.
 
 ## Prerequisites
 
@@ -54,7 +52,7 @@ In the above code:
 - Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
 - Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
 
-You can also achieve the same result using `templateFormat` which allows you to export PDF files and print friendly format.
+> You can also achieve the same result using `templateFormat` which allows you to export PDF files and print friendly format.
 
 The code is given below:
 
