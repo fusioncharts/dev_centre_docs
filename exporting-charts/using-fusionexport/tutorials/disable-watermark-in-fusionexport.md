@@ -6,7 +6,7 @@ heading: Disable Watermark
 
 FusionExport is used to export dashboards to images and PDFs. The exported chart using FusionExport consists of two types of watermark:
 
-> The exported chart consists of watermarks only if you are not using the licenced version of FusionExport.
+> The exported chart consists of watermarks only if you are not using the licensed version of FusionExport.
 
 - FusionCharts Trial Mark
 - FusionExport Trial Mark
@@ -52,7 +52,7 @@ You can override the default package version of **FusionCharts** in **FusionExpo
 To remove the FusionCharts watermark, follow the steps below:
 
 - Copy all the files in the `js` folder of your licensed distribution.
-- Place all the files present inside the `js` folder in folder named `fusioncharts` beside your `fusionexport` file.
+- Place all the files present inside the `js` folder in a folder named `fusioncharts` beside your `fusionexport` file.
 
 To run licensed FusionExport with licensed FusionCharts run:
 
