@@ -4,13 +4,13 @@ description: This article talks about how to export PDF files in print format.
 heading: Export PDF files in Print Format
 ---
 
-FusionExport allows you to export your PDFs in a print-friendly format.
+FusionExport allows you to export your exported PDF files in print-friendly format.
 
-Before you start, check out the video given below which guides you how to export PDF files in print format.
+Before you start with the code implementations, check out the following video which contains the step by step process to set the print friendly format for your exported PDF file.
 
 <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/e9ff3172776345659455b6ef7eb240d3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-Now, let’s check the steps to export PDF files in print format.
+Now, let’s check out the basic steps to export PDF files in print format.
 
 ## Prerequisites
 
