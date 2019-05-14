@@ -48,8 +48,6 @@ exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
 
 In the above code:
 
-- Export a dashboard for which you want to customize the height and width of the image.
-- Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
 - Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
 - Set the value of `templateHeight` less than your content height. This automatically divides the page into multiple pages.
 - You can also set the value of `templateWidth` to control the viewpoint width where the templates are rendered.
