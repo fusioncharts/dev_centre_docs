@@ -4,15 +4,13 @@ description: This article talks about how to export PDF files in print format.
 heading: Export PDF files in Print Format
 ---
 
-FusionExport allows you to export your PDFs in a print-friendly format.
+FusionExport allows you to export your exported PDF files in print-friendly format.
 
-Before you start, check out the video given below which guides you how to export PDF files in print format.
+Before you start with the code implementations, check out the following video which contains the step by step process to set the print friendly format for your exported PDF file.
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;">
-    <iframe src="https://www.loom.com/share/e9ff3172776345659455b6ef7eb240d3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-</div>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/e9ff3172776345659455b6ef7eb240d3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-Now, let’s check the steps to export PDF files in print format.
+Now, let’s check out the basic steps to export PDF files in print format.
 
 ## Prerequisites
 
@@ -24,7 +22,7 @@ Before you start, ensure that you have:
 
 3. [Export a Dashboard](/exporting-charts/using-fusionexport/installation/export-a-dashboard)
 
-Using `templateFormat` (which only accepts letters) you can export your PDF files in Print-friendly format. `templateFormat`
+Using `templateFormat` you can export your PDF files in Print-friendly format. `templateFormat`
 is a parameter which accepts the PDF format when you export charts.
 
 Setting the `templateFormat` for a particular PDF page sets the priority over `templateWidth` and `templateHeight` of the exported file.
@@ -69,14 +67,569 @@ exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
 
 In the above code:
 
-- Firstly, export a dashboard for which you want to customize the height and width of the image.
-- Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
 - Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its set() method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
 - Set the `type` to `pdf`.
 - Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
 - Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
 
-Click [here](https://github.com/fusioncharts/fusionexport-tutorials/blob/master/dimensions/chart_configs.json) to get the JSON data.
+The JSON data of the above chart is shown below:
+
+```json
+[
+  {
+    "type": "mscolumn2d",
+    "renderAt": "chart-container-1",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "caption": "App Publishing Trend",
+        "subcaption": "2012-2016",
+        "xaxisname": "Years",
+        "yaxisname": "Total number of apps in store",
+        "formatnumberscale": "1",
+        "plottooltext": "<b>$dataValue</b> apps were available on <b>$seriesName</b> in $label",
+        "theme": "fusion",
+        "drawcrossline": "1"
+      },
+      "categories": [
+        {
+          "category": [
+            {
+              "label": "2012"
+            },
+            {
+              "label": "2013"
+            },
+            {
+              "label": "2014"
+            },
+            {
+              "label": "2015"
+            },
+            {
+              "label": "2016"
+            }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "seriesname": "iOS App Store",
+          "data": [
+            {
+              "value": "125000"
+            },
+            {
+              "value": "300000"
+            },
+            {
+              "value": "480000"
+            },
+            {
+              "value": "800000"
+            },
+            {
+              "value": "1100000"
+            }
+          ]
+        },
+        {
+          "seriesname": "Google Play Store",
+          "data": [
+            {
+              "value": "70000"
+            },
+            {
+              "value": "150000"
+            },
+            {
+              "value": "350000"
+            },
+            {
+              "value": "600000"
+            },
+            {
+              "value": "1400000"
+            }
+          ]
+        },
+        {
+          "seriesname": "Amazon AppStore",
+          "data": [
+            {
+              "value": "10000"
+            },
+            {
+              "value": "100000"
+            },
+            {
+              "value": "300000"
+            },
+            {
+              "value": "600000"
+            },
+            {
+              "value": "900000"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "msline",
+    "renderAt": "chart-container-2",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "caption": "Reach of Social Media Platforms amoung youth",
+        "yaxisname": "% of youth on this platform",
+        "subcaption": "2012-2016",
+        "showhovereffect": "1",
+        "numbersuffix": "%",
+        "drawcrossline": "1",
+        "plottooltext": "<b>$dataValue</b> of youth were on $seriesName",
+        "theme": "fusion"
+      },
+      "categories": [
+        {
+          "category": [
+            {
+              "label": "2012"
+            },
+            {
+              "label": "2013"
+            },
+            {
+              "label": "2014"
+            },
+            {
+              "label": "2015"
+            },
+            {
+              "label": "2016"
+            }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "seriesname": "Facebook",
+          "data": [
+            {
+              "value": "62"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "64"
+            },
+            {
+              "value": "66"
+            },
+            {
+              "value": "78"
+            }
+          ]
+        },
+        {
+          "seriesname": "Instagram",
+          "data": [
+            {
+              "value": "16"
+            },
+            {
+              "value": "28"
+            },
+            {
+              "value": "34"
+            },
+            {
+              "value": "42"
+            },
+            {
+              "value": "54"
+            }
+          ]
+        },
+        {
+          "seriesname": "LinkedIn",
+          "data": [
+            {
+              "value": "20"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "27"
+            },
+            {
+              "value": "22"
+            },
+            {
+              "value": "29"
+            }
+          ]
+        },
+        {
+          "seriesname": "Twitter",
+          "data": [
+            {
+              "value": "18"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "21"
+            },
+            {
+              "value": "24"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "stackedcolumn2d",
+    "renderAt": "chart-container-3",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "caption": "Yearly Energy Production Rate",
+        "subcaption": " Top 5 Developed Countries",
+        "numbersuffix": " TWh",
+        "showsum": "1",
+        "plottooltext": "$label produces <b>$dataValue</b> of energy from $seriesName",
+        "theme": "fusion",
+        "drawcrossline": "1"
+      },
+      "categories": [
+        {
+          "category": [
+            {
+              "label": "Canada"
+            },
+            {
+              "label": "China"
+            },
+            {
+              "label": "Russia"
+            },
+            {
+              "label": "Australia"
+            },
+            {
+              "label": "United States"
+            },
+            {
+              "label": "France"
+            }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "seriesname": "Coal",
+          "data": [
+            {
+              "value": "400"
+            },
+            {
+              "value": "830"
+            },
+            {
+              "value": "500"
+            },
+            {
+              "value": "420"
+            },
+            {
+              "value": "790"
+            },
+            {
+              "value": "380"
+            }
+          ]
+        },
+        {
+          "seriesname": "Hydro",
+          "data": [
+            {
+              "value": "350"
+            },
+            {
+              "value": "620"
+            },
+            {
+              "value": "410"
+            },
+            {
+              "value": "370"
+            },
+            {
+              "value": "720"
+            },
+            {
+              "value": "310"
+            }
+          ]
+        },
+        {
+          "seriesname": "Nuclear",
+          "data": [
+            {
+              "value": "210"
+            },
+            {
+              "value": "400"
+            },
+            {
+              "value": "450"
+            },
+            {
+              "value": "180"
+            },
+            {
+              "value": "570"
+            },
+            {
+              "value": "270"
+            }
+          ]
+        },
+        {
+          "seriesname": "Gas",
+          "data": [
+            {
+              "value": "180"
+            },
+            {
+              "value": "330"
+            },
+            {
+              "value": "230"
+            },
+            {
+              "value": "160"
+            },
+            {
+              "value": "440"
+            },
+            {
+              "value": "350"
+            }
+          ]
+        },
+        {
+          "seriesname": "Oil",
+          "data": [
+            {
+              "value": "60"
+            },
+            {
+              "value": "200"
+            },
+            {
+              "value": "200"
+            },
+            {
+              "value": "50"
+            },
+            {
+              "value": "230"
+            },
+            {
+              "value": "150"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "stackedcolumn2dline",
+    "renderAt": "chart-container-4",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "showvalues": "0",
+        "caption": "Apple's Revenue & Profit",
+        "subcaption": "(2013-2016)",
+        "numberprefix": "$",
+        "numbersuffix": "B",
+        "plottooltext": "Sales of $seriesName in $label was <b>$dataValue</b>",
+        "showhovereffect": "1",
+        "yaxisname": "$ (In billions)",
+        "showsum": "1",
+        "theme": "fusion"
+      },
+      "categories": [
+        {
+          "category": [
+            {
+              "label": "2013"
+            },
+            {
+              "label": "2014"
+            },
+            {
+              "label": "2015"
+            },
+            {
+              "label": "2016"
+            }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "seriesname": "iPhone",
+          "data": [
+            {
+              "value": "21"
+            },
+            {
+              "value": "24"
+            },
+            {
+              "value": "27"
+            },
+            {
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "seriesname": "iPad",
+          "data": [
+            {
+              "value": "8"
+            },
+            {
+              "value": "10"
+            },
+            {
+              "value": "11"
+            },
+            {
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "seriesname": "Macbooks",
+          "data": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "5"
+            },
+            {
+              "value": "5.5"
+            }
+          ]
+        },
+        {
+          "seriesname": "Others",
+          "data": [
+            {
+              "value": "2"
+            },
+            {
+              "value": "4"
+            },
+            {
+              "value": "9"
+            },
+            {
+              "value": "11"
+            }
+          ]
+        },
+        {
+          "seriesname": "Profit",
+          "plottooltext": "Total profit in $label was <b>$dataValue</b>",
+          "renderas": "Line",
+          "data": [
+            {
+              "value": "17"
+            },
+            {
+              "value": "19"
+            },
+            {
+              "value": "13"
+            },
+            {
+              "value": "18"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "doughnut3d",
+    "renderAt": "chart-container-5",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+      "chart": {
+        "caption": "Top 5 countries with Global Oil Reserves",
+        "subcaption": "MMbbl= One Million barrels",
+        "enablesmartlabels": "1",
+        "showlabels": "1",
+        "numbersuffix": " MMbbl",
+        "usedataplotcolorforlabels": "1",
+        "plottooltext": "$label, <b>$value</b> MMbbl",
+        "theme": "fusion"
+      },
+      "data": [
+        {
+          "label": "Venezuela",
+          "value": "290"
+        },
+        {
+          "label": "Saudi",
+          "value": "260"
+        },
+        {
+          "label": "Canada",
+          "value": "180"
+        },
+        {
+          "label": "Iran",
+          "value": "140"
+        },
+        {
+          "label": "Russia",
+          "value": "115"
+        }
+      ]
+    }
+  }
+]
+```
 
 The HTML template for the above code is given below:
 
@@ -199,8 +752,6 @@ The HTML template for the above code is given below:
 </html>
 ```
 
-The output of the above template looks like as shown below:
-
-![Output](/images/fusionexport-output.png)
+Click [here](https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf) to download the exported PDF file in print format.
 
 Click [here](https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions) to download the above project.

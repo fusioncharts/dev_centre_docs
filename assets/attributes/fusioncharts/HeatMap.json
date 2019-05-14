@@ -750,6 +750,12 @@
     "table": "x-Axis Name Cosmetics",
     "attrs": [
       {
+        "description": "Sets the x-axis font family for the text",
+        "range": "Font Name",
+        "type": "String",
+        "name": "xAxisNameFont"
+      },
+      {
         "description": "Sets the x-axis font color",
         "range": "Hex Color Code",
         "type": "Color",
