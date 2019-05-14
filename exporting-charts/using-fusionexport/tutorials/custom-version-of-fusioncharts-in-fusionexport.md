@@ -24,7 +24,7 @@ Before you start, ensure that you have:
 Now, follow the steps to override the default package version of FusionCharts:
 
 - Copy all the files in the `js` folder of your licensed distribution.
-- Place all the files present inside the `js` folder in folder named `fusioncharts` beside your `fusionexport` file.
+- Place all the files present inside the `js` folder in a folder named `fusioncharts` beside your `fusionexport` file.
 - Pass your custom FusionCharts directory to the `-L` options of FusionExport.
 
 To run licensed FusionExport with licensed FusionCharts run:
