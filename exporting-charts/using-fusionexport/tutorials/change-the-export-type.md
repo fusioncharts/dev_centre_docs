@@ -14,8 +14,8 @@ FusionExport supports exporting charts to the following file types:
 * SVG
 * HTML
 * CSV
-* XLS
 * XLSX
+* XLSXX
 
 ## Prerequisites
 

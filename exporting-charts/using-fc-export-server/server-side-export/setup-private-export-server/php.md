@@ -19,13 +19,13 @@ __Step 2__: When an export option is selected, the chart generates the SVG strin
 
 __Step 3__: The export server captures the SVG string.
 
-__Step 4__: The export server invokes a system call triggering __Inkscape__ to convert the FusionCharts generated SVG string (which is passed to the server-side script over AJAX) to __PDF__, __PNG__, and __SVG__. However, __Inkscape__ still has a limitation of generating a JPG file. Hence, __ImageMagick__ is used to create the __JPG__ files. To export chart data as __XLS__, the CSV data generated from the charts is converted to the XLS format.
+__Step 4__: The export server invokes a system call triggering __Inkscape__ to convert the FusionCharts generated SVG string (which is passed to the server-side script over AJAX) to __PDF__, __PNG__, and __SVG__. However, __Inkscape__ still has a limitation of generating a JPG file. Hence, __ImageMagick__ is used to create the __JPG__ files. To export chart data as __XLSX__, the CSV data generated from the charts is converted to the XLSX format.
 
 >  FusionCharts v3.11.0 onwards, images can be processed on client-side for modern browsers (with canvas support). This eliminates the use of third party softwares like __Inkscape__ and __ImageMagick__ for server-side as well as client-side exporting. </p>
 
 __Step 5__: The export handler either writes the exported chart/chart data to disk, based on the configuration provided by the chart, or streams it back to the user as a download.
 
->  Starting v3.11.0, FusionCharts supports exporting chart data as __XLS__. To export the chart data in the XLS format using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively, the FusionCharts export link __export.api3.fusioncharts.com__ can also be used.  </p>
+>  Starting v3.11.0, FusionCharts supports exporting chart data as __XLSX__. To export the chart data in the XLSX format using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively, the FusionCharts export link __export.api3.fusioncharts.com__ can also be used.  </p>
 
 ## Installation
 

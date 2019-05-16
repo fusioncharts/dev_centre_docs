@@ -47,9 +47,9 @@ A multi-level pie chart with inner radius set to `10` looks like:
 
 {% embed_all whats-new-multi-level-pie-example-5.js %}
 
-## Export Multi-level pie chart in CSV or XLS formats
+## Export Multi-level pie chart in CSV or XLSX formats
 
-In version 3.13.0, data from multi-level pie charts can be exported in CSV or XLS formats.
+In version 3.13.0, data from multi-level pie charts can be exported in CSV or XLSX formats.
 
 Refer to the GIF shown below:
 

@@ -54,6 +54,6 @@ This feature uses the HTML5 API; therefore, it is important that modern browsers
 * BLOB (Binary Large OBject, or large binary data as a single entity)
 * base-64 encoding and decoding
 
-These technologies perform the necessary conversion from SVG to the required format (the rendered charts in the JPG, PNG, or PDF formats, or the chart data (in the XLS format). Using the HTML5 API helps to overcome the earlier browser functionality limitations that hampered the implementation of this feature.
+These technologies perform the necessary conversion from SVG to the required format (the rendered charts in the JPG, PNG, or PDF formats, or the chart data (in the XLSX format). Using the HTML5 API helps to overcome the earlier browser functionality limitations that hampered the implementation of this feature.
 
->  FusionCharts supports exporting chart data as XLS starting v3.11.0. Select __Download as XLS__ from the menu in the top-right corner of the chart. </p>
+>  FusionCharts supports exporting chart data as XLSX starting v3.11.0. Select __Download as XLSX__ from the menu in the top-right corner of the chart. </p>

@@ -21,7 +21,7 @@ __Step 4__: The export handler captures the SVG string and uses the SharpVectors
 __Step 5__: The export handler either writes the exported chart/chart data to disk, based on the configuration provided by the chart, or streams it back to the user as a download.
 
 
->  Starting v3.11.0, FusionCharts supports exporting chart data as __XLS__. To export a chart in the XLS format, using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively, the FusionCharts export link, __export.api3.fusioncharts.com__, can also be used.  </p>
+>  Starting v3.11.0, FusionCharts supports exporting chart data as __XLSX__. To export a chart in the XLSX format, using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively, the FusionCharts export link, __export.api3.fusioncharts.com__, can also be used.  </p>
 
 ## Installation
 

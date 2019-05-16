@@ -408,7 +408,7 @@ new FusionCharts({
 	<tr>
 		<td>`exportEnabled`</td>
 		<td>Boolean</td>
-		<td>Whether the chart will allow exporting to images, PDFs, SVG or XLS.</td>
+		<td>Whether the chart will allow exporting to images, PDFs, SVG or XLSX.</td>
 	</tr>
 	<tr>
 		<td>`exportAction`</td>
@@ -438,7 +438,7 @@ new FusionCharts({
 	<tr>
 		<td>`exportTargetWindow`</td>
 		<td>String</td>
-		<td>In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window.</td>
+		<td>In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window.</td>
 	</tr>
 	<tr>
 		<td>`exportFileName`</td>

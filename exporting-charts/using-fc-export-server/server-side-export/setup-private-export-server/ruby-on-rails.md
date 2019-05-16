@@ -18,7 +18,7 @@ __Step 2__: When an export option is selected, the chart generates the SVG strin
 
 __Step 3__: The export server captures the SVG string.
 
-__Step 4__: The export server invokes a system call, triggering __Inkscape__ to convert the FusionCharts generated SVG string (which is passed to the server-side script over AJAX) to __PDF__, __PNG__, and __SVG__. However, __Inkscape__ still has a limitation of generating a JPG file. Hence, __ImageMagick__ is used to create the __JPG__ files. To export chart data as __XLS__, the CSV data generated from the charts is converted to the XLS format.
+__Step 4__: The export server invokes a system call, triggering __Inkscape__ to convert the FusionCharts generated SVG string (which is passed to the server-side script over AJAX) to __PDF__, __PNG__, and __SVG__. However, __Inkscape__ still has a limitation of generating a JPG file. Hence, __ImageMagick__ is used to create the __JPG__ files. To export chart data as __XLSX__, the CSV data generated from the charts is converted to the XLSX format.
 
 >  FusionCharts Suite XT v3.11 onwards processes images on the client-side for modern browsers (with canvas support). This eliminates the use of third party softwares like __Inkscape__ and __ImageMagick__ for server-side as well as client-side exporting.
 
@@ -50,7 +50,7 @@ This creates the following files and directories:
 - __config/fusioncharts_exporter.yml__
 - __tmp/fusioncharts/__
 
-> Starting v3.11.0, FusionCharts supports exporting chart data as __XLS__. To export chart data in the XLS format, using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively the FusionCharts export link, __export.api3.fusioncharts.com__, can also be used.
+> Starting v3.11.0, FusionCharts supports exporting chart data as __XLSX__. To export chart data in the XLSX format, using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively the FusionCharts export link, __export.api3.fusioncharts.com__, can also be used.
 
 ## Inkscape
 

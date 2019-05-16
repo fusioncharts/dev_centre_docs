@@ -737,12 +737,12 @@
        "description": "The following attributes help you control map margins and paddings."
    },
    {
-       "table": "Attributes to allow exporting of map as image, PDF, SVG or XLS",
+       "table": "Attributes to allow exporting of map as image, PDF, SVG or XLSX",
        "attrs": [
            {
                "type": "Boolean",
                "range": "0/1",
-               "description": "Whether the map will allow exporting to images, PDFs, SVG or XLS.  \n\n__Default value__: 0",
+               "description": "Whether the map will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
                "name": "exportEnabled"
            },
            {
@@ -778,7 +778,7 @@
            {
                "type": "String",
                "range": "'_self' or '_blank'",
-               "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
+               "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
                "name": "exportTargetWindow"
            },
            {

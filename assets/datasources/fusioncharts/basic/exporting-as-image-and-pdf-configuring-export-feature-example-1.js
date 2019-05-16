@@ -16,7 +16,7 @@
             "bgAlpha": "50",
             "theme": "fusion",
             "exportEnabled": "1",
-            "exportFormats": "PNG=Export as High Quality Image|PDF=Export as Printable|XLS=Export Chart Data",
+            "exportFormats": "PNG=Export as High Quality Image|PDF=Export as Printable|XLSX=Export Chart Data",
             "exportTargetWindow": "_self",
             "exportFileName": "Monthly_Revenue"
         },

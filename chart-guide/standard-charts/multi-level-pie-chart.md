@@ -89,9 +89,9 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/yw2mf0rj/) to edit the multi-level pie chart.
 
-## Export Multi-level pie chart in CSV or XLS formats
+## Export Multi-level pie chart in CSV or XLSX formats
 
-In version 3.13.0, you can export data from multi-level pie charts in CSV or XLS formats. Set the value of the `enableExport` attribute to `1` to do so.
+In version 3.13.0, you can export data from multi-level pie charts in CSV or XLSX formats. Set the value of the `enableExport` attribute to `1` to do so.
 
 Refer to the code below:
 

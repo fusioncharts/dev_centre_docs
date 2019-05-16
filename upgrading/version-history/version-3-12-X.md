@@ -344,7 +344,7 @@ heading: Version 3.12.x
 
   - _linkClicked_
 
-- The Export as XLS feature is now working as expected even when the chart has datasets with blank or null values.
+- The Export as XLSX feature is now working as expected even when the chart has datasets with blank or null values.
 
 - Overwriting of the values of the `dataIndex` property of the x-axis labels, on scrolling, has been fixed.
 

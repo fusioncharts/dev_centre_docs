@@ -6,7 +6,7 @@ heading: Exporting Charts and Chart Data Using the Auto Export Feature
 chartPresent: true
 ---
 
-FusionCharts Suite XT lets you export charts as images and PDF as well as the chart data in the XLS format. 
+FusionCharts Suite XT lets you export charts as images and PDF as well as the chart data in the XLSX format. 
 To enable chart export, the suite supports the following three modes of export:
 
 * Server-side export

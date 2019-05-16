@@ -221,7 +221,7 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
 - A JS error was thrown while performing a batch export to export multiple charts using `FusionCharts.batchExport()` method and the chart type is not supported. The issue has been fixed.
 
-- While exporting a map into XLS format, the formatted `value` column was getting split into 3 columns. The issue has been fixed.
+- While exporting a map into XLSX format, the formatted `value` column was getting split into 3 columns. The issue has been fixed.
 
 - Chart components like tooltips and events were persisting in the initial location of the chart, even after the chart was shifted via the container. The issue has been resolved.
 
@@ -293,7 +293,7 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
 - Custom fonts from client-side export can now be exported using [useCanvas](/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member) option.
 
-- Data from Multi-level Pie charts can now be exported in CSV or XLS formats.
+- Data from Multi-level Pie charts can now be exported in CSV or XLSX formats.
 
 - In zoomline chart, [maxPeakDataLimit](/chart-attributes/?chart=zoomline&attribute=chart_maxpeakdatalimit) and [minPeakDataLimit](/chart-attributes/?chart=zoomline&attribute=chart_minpeakdatalimit) attributes consider the limits as a range when both the attributes are used.
 
@@ -1103,7 +1103,7 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
 - Category labels were not drawn correctly, if padding was applied to the `<div>` tag.
 
-- A blank XLS file was getting exported when `setChartAttribute()` method was used.
+- A blank XLSX file was getting exported when `setChartAttribute()` method was used.
 
 - If there were multiple charts in a page, the plot values of all charts wouldn't appear unless the rendering animation was completed for all charts.
 
