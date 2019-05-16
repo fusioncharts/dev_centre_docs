@@ -1,17 +1,17 @@
 ---
 permalink: exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-auto-export-feature.html
 title: Exporting Charts and Chart Data Using the Auto Export Feature | FusionCharts
-description: FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats. 
+description: FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats.
 heading: Exporting Charts and Chart Data Using the Auto Export Feature
 chartPresent: true
 ---
 
-FusionCharts Suite XT lets you export charts as images and PDF as well as the chart data in the XLSX format. 
+FusionCharts Suite XT lets you export charts as images and PDF as well as the chart data in the XLSX format.
 To enable chart export, the suite supports the following three modes of export:
 
-* Server-side export
-* Client-side export
-* Auto export
+- Server-side export
+- Client-side export
+- Auto export
 
 While FusionCharts already included support for server-side and client-side exporting, it introduces the auto export feature in its v3.12.1.
 
@@ -72,10 +72,10 @@ The sample chart below showcases the auto export feature. Click/hover over the <
 
 {% embed_all exporting-charts-and-chart-data-using-the-auto-export-feature-example-1.js %}
 
-Switch to the JSON tab of the chart rendered above to see how the `exportEnabled` and `exportMode` attributes are used. 
+Switch to the JSON tab of the chart rendered above to see how the `exportEnabled` and `exportMode` attributes are used.
 
->  Note that when export is enabled, the export mode is set to to __auto__ by default. Therefore, exiplicitly defining the `exportMode` is not needed. However, we've shown it in this example, so that you know how the attribute is used. </p>
+> Note that when export is enabled, the export mode is set to to **auto** by default. Therefore, exiplicitly defining the `exportMode` is not needed. However, we've shown it in this example, so that you know how the attribute is used. </p>
 
->  Starting v3.132.10, the `exportMode` attribute replaces the `exportAtClient Side` attribute.
-A description of the `exportMode` attribute is given in the table above.
-However, you don’t need to make any changes to the existing setup because, starting v3.12.1, the FusionCharts library comes with the proper mapping already provided. </p>
+> Starting v3.132.10, the `exportMode` attribute replaces the `exportAtClient Side` attribute.
+> A description of the `exportMode` attribute is given in the table above.
+> However, you don’t need to make any changes to the existing setup because, starting v3.12.1, the FusionCharts library comes with the proper mapping already provided. </p>

@@ -8,10 +8,10 @@ This section is for users who are using previous version of FusionCharts in thei
 
 ## Overlapped Column 2D and Bar 2D Chart
 
-FusionCharts v3.13 introduces overlapped bar and column charts, where you can have the bars and columns overlap with the base ones. This is very effective to show data with targets vs results.  
+FusionCharts v3.13 introduces overlapped bar and column charts, where you can have the bars and columns overlap with the base ones. This is very effective to show data with targets vs results.
 
-* Overlapped Column 2D Chart
-* Overlapped Bar 2D Chart
+- Overlapped Column 2D Chart
+- Overlapped Bar 2D Chart
 
 The overlapped column 2D chart looks like:
 
@@ -31,7 +31,7 @@ A combination chart with spline and Spline Area as a part of it looks like:
 
 ## Highlight effect in Multi-level Pie chart
 
-`highlightParentPieSlices` and `highlightChildPieSlices` attributes have been introduced in multi-level pie chart to set the direction of the highlight effect of the plots when hovered. 
+`highlightParentPieSlices` and `highlightChildPieSlices` attributes have been introduced in multi-level pie chart to set the direction of the highlight effect of the plots when hovered.
 
 A multi-level pie chart with above attributes look like:
 

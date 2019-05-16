@@ -8,13 +8,13 @@ chartPresent: true
 
 FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats. Starting v3.11.0, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
 
-To enable chart exporting, the chart level attribute `exportEnabled` is set to __1__. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
+To enable chart exporting, the chart level attribute `exportEnabled` is set to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
 
 ![image](/images/exporting-as-image-and-pdf-export-menu.jpg)
 
-To export chart data, select the __Export as XLSX__ option. The XLSX file with the chart data gets downloaded to your machine.
+To export chart data, select the **Export as XLSX** option. The XLSX file with the chart data gets downloaded to your machine.
 
-A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select the __Export as XLSX__ option to export the chart data.
+A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select the **Export as XLSX** option to export the chart data.
 
 {% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 

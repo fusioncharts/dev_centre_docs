@@ -8,9 +8,9 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 
 In this section we will discuss how to:
 
-* [Export Charts as Image and PDF](/getting-started/django/export-charts-using-django#export-charts-as-image-and-pdf)
-* [Modes of Export](/getting-started/django/export-charts-using-django#modes-of-export)
-* [Export Chart Data](/getting-started/django/export-charts-using-django#export-chart-data)
+- [Export Charts as Image and PDF](/getting-started/django/export-charts-using-django#export-charts-as-image-and-pdf)
+- [Modes of Export](/getting-started/django/export-charts-using-django#modes-of-export)
+- [Export Chart Data](/getting-started/django/export-charts-using-django#export-chart-data)
 
 ## Export Charts as Image and PDF
 
@@ -20,7 +20,7 @@ When charts are exported on the client side, the entire exporting process is car
 
 > You must have an active internet connection for this feature to work.
 
-To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over this button to see the dropdown menu with export options, as shown in the image below:
+To enable chart exporting, the `chart` level attribute `exportEnabled` is set to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over this button to see the dropdown menu with export options, as shown in the image below:
 
 ![image](/images/exporting-as-image-and-pdf-export-menu.jpg)
 
@@ -88,7 +88,7 @@ from ..fusioncharts import FusionCharts
 
 def chart(request):
     # Create an object for the column2d chart using the FusionCharts class constructor
-  column2d = FusionCharts("column2d", "ex1", 700, 400, "chart-1", "json", 
+  column2d = FusionCharts("column2d", "ex1", 700, 400, "chart-1", "json",
           # The chart data is passed as a string to the `dataSource` parameter.
         """{
             // Chart Configuration
@@ -129,7 +129,7 @@ def chart(request):
             }]
         }""")
 
-     # returning complete JavaScript and HTML code, which is used to generate chart in the browsers. 
+     # returning complete JavaScript and HTML code, which is used to generate chart in the browsers.
   return  render(request, 'index.html', {'output' : column2d.render(),'chartTitle': 'Export Chart As Image (server-side)'})
 
 ```
@@ -138,15 +138,15 @@ def chart(request):
 
 FusionCharts Suite XT supports the following three modes of export:
 
-* Server-side export
-* Client-side export
-* Auto-export
+- Server-side export
+- Client-side export
+- Auto-export
 
-By default, charts are exported using the auto-export feature. 
+By default, charts are exported using the auto-export feature.
 
 The `exportMode` attribute is used to switch between the different modes of export.
 
-> Starting from version v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute.
+> Starting from version v3.12.1, the `exportMode` attribute **replaces** the `exportAtClientSide` attribute.
 
 To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/configuring-the-export-feature) guide.
 
@@ -154,13 +154,13 @@ To process the export data on your own server, configure one of the export handl
 
 FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.11.0, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
 
-To enable chart exporting, set the chart level attribute `exportEnabled` to __1__. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over the button to see a dropdown menu with the export options, as shown in the image below:
+To enable chart exporting, set the chart level attribute `exportEnabled` to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over the button to see a dropdown menu with the export options, as shown in the image below:
 
 ![image](/images/exporting-as-image-and-pdf-export-menu.jpg)
 
-To export chart data, select the __Export as XLSX__ option. The XLSX file with the chart data gets downloaded to your machine.
+To export chart data, select the **Export as XLSX** option. The XLSX file with the chart data gets downloaded to your machine.
 
-A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the __Export as XLSX__ option to export the chart data.
+A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the **Export as XLSX** option to export the chart data.
 
 {% embed_all exporting-as-image-and-pdf-introduction-example-2.js %}
 
