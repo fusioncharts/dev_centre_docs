@@ -6,7 +6,7 @@ heading: Line, Area and Column charts
 
 > These chart types belong to **FusionCharts XT**.
 
-## Column 2D Krishanu
+## Column 2D Krishanu 
 
 Column and bar charts represent data with rectangular horizontal or vertical bars. The height of the bars is proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis, and the `data labels` are plotted along the x-axis. Whereas in bar charts, the numeric values are plotted along the x-axis, and the data labels are plotted along the y-axis. Column and bar charts are best fitted when you want to compare values. 
 
