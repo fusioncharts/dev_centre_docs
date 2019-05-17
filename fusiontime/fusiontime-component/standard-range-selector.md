@@ -28,7 +28,7 @@ Refer to the code below:
 
 ```javascript
 dataSource: {
-      data: fusionTable,
+      data: dataStore,
       caption: {
         text: 'Online Sales of a SuperStore'
       },
