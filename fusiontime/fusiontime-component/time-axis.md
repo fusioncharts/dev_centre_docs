@@ -26,6 +26,8 @@ A sample chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
+See it live! Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/)
+
 In the above chart, try and change the time period and see how the time axis adjusts automatically to respond to the change occured. For example - try and zoom into the data from the chart canvas.
 
 ## Multiple time columns in data
@@ -43,7 +45,7 @@ new FusionCharts({
 });
 ```
 
-In th above code:
+In the above code:
 
 - Create the `xAxis` object.
 - Set the column name which you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date` is the column name.

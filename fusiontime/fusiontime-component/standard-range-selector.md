@@ -27,16 +27,17 @@ By default, the standard range selector is visible in every chart. However, to t
 Refer to the code below:
 
 ```javascript
-{
-    type: 'timeseries',
-    dataSource: {
-        data: fusionTable,
-        // Show/Hide Standard Range Selector
-        "extensions": {
-            "standardRangeSelector": {
-                "enabled": "0"
-            }
+dataSource: {
+      data: fusionTable,
+      caption: {
+        text: 'Online Sales of a SuperStore'
+      },
+      // Show/Hide Standard Range Selector
+      "extensions": {
+        "standardRangeSelector": {
+          "enabled": "0"
         }
+      }
     }
-}
 ```
+See a live chart with Standard Range Selector disabled. Click [here](https://jsfiddle.net/fusioncharts/r5t8fvsd/).
