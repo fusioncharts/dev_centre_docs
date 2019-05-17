@@ -6,7 +6,7 @@ heading: Create a Chart using FusionCharts
 
 **FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
 
-In this page, we'll see how to install **FusionCharts** library and all the other dependencies on your system and render a chart using Plain JavaScript.
+KRISHANU we'll see how to install **FusionCharts** library and all the other dependencies on your system and render a chart using Plain JavaScript.
 
 ## Installation
 
