@@ -11,7 +11,7 @@ In this section we will discuss how to:
 - [Export Charts as Image and PDF](/getting-started/ember/export-charts-using-ember#export-charts-as-image-and-pdf)
 - [Export Multiple Charts](/getting-started/ember/export-charts-using-ember#export-multiple-charts)
 - [Modes of Export](/getting-started/ember/export-charts-using-ember#modes-of-export)
-- [Export Chart Data](/getting-started/ember/export-charts-using-ember#export-chart-data)
+- [Export Chart Data in XLSX Format](/getting-started/ember/export-charts-using-ember#export-chart-data-in-xlsx-format)
 
 ## Export Charts as Image and PDF
 
@@ -35,23 +35,24 @@ A column 2D chart with export enabled is shown below. Click the <span> ![image](
 
 In this step we will include all the necessary files and add the dependency to create the **Column 2D** chart. The code is given below:
 
-```
+```javascript
 /* eslint-env node */
-'use strict';
+"use strict";
 
-const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+const EmberAddon = require("ember-cli/lib/broccoli/ember-addon");
 
-module.exports = function (defaults) {
-    let app = new EmberAddon(defaults, {
-        // Add options here
-    });
+module.exports = function(defaults) {
+  let app = new EmberAddon(defaults, {
+    // Add options here
+  });
 
-    // Import FusionCharts library
-    app.import('bower_components/fusioncharts/fusioncharts.js');
-    app.import('bower_components/fusioncharts/fusioncharts.charts.js');
-    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');
+  // Import FusionCharts library
+  app.import("node_modules/fusioncharts/fusioncharts.js");
+  app.import("node_modules/fusioncharts/fusioncharts.charts.js");
+  app.import("node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js");
+  app.import("node_modules/fusioncharts/features/excelexport");
 
-    return app.toTree();
+  return app.toTree();
 };
 ```
 
@@ -63,50 +64,59 @@ In the above code, include the necessary libraries and components using import. 
 
 Add the following code to `chart-viewer.js`:
 
-```
-import Component from '@ember/component';
+```javascript
+import Component from "@ember/component";
 
 export default Component.extend({
-    width: 700,
-    height: 400,
-    type: 'column2d',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-            "exportEnabled": "1"
-        },
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
+  width: 700,
+  height: 400,
+  type: "column2d",
+  dataFormat: "json",
+  dataSource: {
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017-18]",
+      subCaption: "In MMbbl = One Million barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      theme: "fusion",
+      exportEnabled: "1"
+    },
+    data: [
+      {
+        label: "Venezuela",
+        value: "290"
+      },
+      {
+        label: "Saudi",
+        value: "260"
+      },
+      {
+        label: "Canada",
+        value: "180"
+      },
+      {
+        label: "Iran",
+        value: "140"
+      },
+      {
+        label: "Russia",
+        value: "115"
+      },
+      {
+        label: "UAE",
+        value: "100"
+      },
+      {
+        label: "US",
+        value: "30"
+      },
+      {
+        label: "China",
+        value: "30"
+      }
+    ]
+  }
 });
 ```
 
@@ -127,14 +137,17 @@ In the above code:
 
 Add the following code to `chart-viewer.hbs`:
 
-```
-{{fusioncharts-xt
-    width=width
-    height=height
-    type=type
-    dataFormat=dataFormat
-    dataSource=dataSource
-}}
+```javascript
+{
+  {
+    fusioncharts - xt;
+    width = width;
+    height = height;
+    type = type;
+    dataFormat = dataFormat;
+    dataSource = dataSource;
+  }
+}
 ```
 
 In the above code, add the `fusioncharts` component to render the chart.
@@ -152,23 +165,24 @@ FusionCharts lets you export multiple charts in a single image at once, in diffe
 
 In this step we will include all the necessary files and add the dependency to create the **Column 2D** chart. The code is given below:
 
-```
+```javascript
 /* eslint-env node */
-'use strict';
+"use strict";
 
-const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+const EmberAddon = require("ember-cli/lib/broccoli/ember-addon");
 
-module.exports = function (defaults) {
-    let app = new EmberAddon(defaults, {
-        // Add options here
-    });
+module.exports = function(defaults) {
+  let app = new EmberAddon(defaults, {
+    // Add options here
+  });
 
-    // Import FusionCharts library
-    app.import('bower_components/fusioncharts/fusioncharts.js');
-    app.import('bower_components/fusioncharts/fusioncharts.charts.js');
-    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');
+  // Import FusionCharts library
+  app.import("node_modules/fusioncharts/fusioncharts.js");
+  app.import("node_modules/fusioncharts/fusioncharts.charts.js");
+  app.import("node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js");
+  app.import("node_modules/fusioncharts/features/excelexport");
 
-    return app.toTree();
+  return app.toTree();
 };
 ```
 
@@ -180,158 +194,218 @@ In the above code, included the necessary libraries and components using import.
 
 Add the following code to `chart-viewer.js`:
 
-```
-import Component from '@ember/component';
+```javascript
+import Component from "@ember/component";
 
 export default Component.extend({
-    width: 700,
-    height: 400,
-    chartType1: 'column2d',
-    dataFormat: 'json',
-    dataSource1: {
-        "chart": {
-          "caption": "Countries With Most Oil Reserves [2017-18]",
-          "subCaption": "In MMbbl = One Million barrels",
-          "xAxisName": "Country",
-          "yAxisName": "Reserves (MMbbl)",
-          "numberSuffix": "K",
-          "theme": "fusion",
-        },
-        "data": [{
-          "label": "Venezuela",
-          "value": "290"
-        }, {
-          "label": "Saudi",
-          "value": "260"
-        }, {
-          "label": "Canada",
-          "value": "180"
-        }, {
-          "label": "Iran",
-          "value": "140"
-        }, {
-          "label": "Russia",
-          "value": "115"
-        }, {
-          "label": "UAE",
-          "value": "100"
-        }, {
-          "label": "US",
-          "value": "30"
-        }, {
-          "label": "China",
-          "value": "30"
-        }]
+  width: 700,
+  height: 400,
+  chartType1: "column2d",
+  dataFormat: "json",
+  dataSource1: {
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017-18]",
+      subCaption: "In MMbbl = One Million barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      theme: "fusion"
     },
-    chartType2: 'stackedcolumn2d',
-    dataSource2: {
-		chart: {
-		    caption: "Yearly Energy Production Rate",
-		    subCaption: " Top 5 Developed Countries",
-		    numbersuffix: " TWh",
-		    showSum: "1",
-		    plotToolText: "$label produces <b>$dataValue</b> of energy from $seriesName",
-		    theme: "fusion"
-		},
-		categories: [{
-		    category: [{
-		        label: "Canada"
-		    }, {
-		        label: "China"
-		    }, {
-		        label: "Russia"
-		    }, {
-		        label: "Australia"
-		    }, {
-		        label: "United States"
-		    }, {
-		        label: "France"
-		    }]
-		}],
-		dataSet: [{
-		    seriesName: "Coal",
-		    data: [{
-		        value: "400"
-		    }, {
-		        value: "830"
-		    }, {
-		        value: "500"
-		    }, {
-		        value: "420"
-		    }, {
-		        value: "790"
-		    }, {
-		        value: "380"
-		    }]
-		}, {
-		    seriesName: "Hydro",
-		    data: [{
-		        value: "350"
-		    }, {
-		        value: "620"
-		    }, {
-		        value: "410"
-		    }, {
-		        value: "370"
-		    }, {
-		        value: "720"
-		    }, {
-		        value: "310"
-		    }]
-		}, {
-		    seriesName: "Nuclear",
-		    data: [{
-		        value: "210"
-		    }, {
-		        value: "400"
-		    }, {
-		        value: "450"
-		    }, {
-		        value: "180"
-		    }, {
-		        value: "570"
-		    }, {
-		        value: "270"
-		    }]
-		}, {
-		    seriesName: "Gas",
-		    data: [{
-		        value: "180"
-		    }, {
-		        value: "330"
-		    }, {
-		        value: "230"
-		    }, {
-		        value: "160"
-		    }, {
-		        value: "440"
-		    }, {
-		        value: "350"
-		    }]
-		}, {
-		    seriesName: "Oil",
-		    data: [{
-		        value: "60"
-		    }, {
-		        value: "200"
-		    }, {
-		        value: "200"
-		    }, {
-		        value: "50"
-		    }, {
-		        value: "230"
-		    }, {
-		        value: "150"
-		    }]
-		}]
-	},
-    actions: {
-        exportPdf() {
-            FusionCharts.batchExport({
-                exportFormat: 'pdf'
-            });
-        }
+    data: [
+      {
+        label: "Venezuela",
+        value: "290"
+      },
+      {
+        label: "Saudi",
+        value: "260"
+      },
+      {
+        label: "Canada",
+        value: "180"
+      },
+      {
+        label: "Iran",
+        value: "140"
+      },
+      {
+        label: "Russia",
+        value: "115"
+      },
+      {
+        label: "UAE",
+        value: "100"
+      },
+      {
+        label: "US",
+        value: "30"
+      },
+      {
+        label: "China",
+        value: "30"
+      }
+    ]
+  },
+  chartType2: "stackedcolumn2d",
+  dataSource2: {
+    chart: {
+      caption: "Yearly Energy Production Rate",
+      subCaption: " Top 5 Developed Countries",
+      numbersuffix: " TWh",
+      showSum: "1",
+      plotToolText:
+        "$label produces <b>$dataValue</b> of energy from $seriesName",
+      theme: "fusion"
+    },
+    categories: [
+      {
+        category: [
+          {
+            label: "Canada"
+          },
+          {
+            label: "China"
+          },
+          {
+            label: "Russia"
+          },
+          {
+            label: "Australia"
+          },
+          {
+            label: "United States"
+          },
+          {
+            label: "France"
+          }
+        ]
+      }
+    ],
+    dataSet: [
+      {
+        seriesName: "Coal",
+        data: [
+          {
+            value: "400"
+          },
+          {
+            value: "830"
+          },
+          {
+            value: "500"
+          },
+          {
+            value: "420"
+          },
+          {
+            value: "790"
+          },
+          {
+            value: "380"
+          }
+        ]
+      },
+      {
+        seriesName: "Hydro",
+        data: [
+          {
+            value: "350"
+          },
+          {
+            value: "620"
+          },
+          {
+            value: "410"
+          },
+          {
+            value: "370"
+          },
+          {
+            value: "720"
+          },
+          {
+            value: "310"
+          }
+        ]
+      },
+      {
+        seriesName: "Nuclear",
+        data: [
+          {
+            value: "210"
+          },
+          {
+            value: "400"
+          },
+          {
+            value: "450"
+          },
+          {
+            value: "180"
+          },
+          {
+            value: "570"
+          },
+          {
+            value: "270"
+          }
+        ]
+      },
+      {
+        seriesName: "Gas",
+        data: [
+          {
+            value: "180"
+          },
+          {
+            value: "330"
+          },
+          {
+            value: "230"
+          },
+          {
+            value: "160"
+          },
+          {
+            value: "440"
+          },
+          {
+            value: "350"
+          }
+        ]
+      },
+      {
+        seriesName: "Oil",
+        data: [
+          {
+            value: "60"
+          },
+          {
+            value: "200"
+          },
+          {
+            value: "200"
+          },
+          {
+            value: "50"
+          },
+          {
+            value: "230"
+          },
+          {
+            value: "150"
+          }
+        ]
+      }
+    ]
+  },
+  actions: {
+    exportPdf() {
+      FusionCharts.batchExport({
+        exportFormat: "pdf"
+      });
     }
+  }
 });
 ```
 
@@ -352,7 +426,7 @@ In the above code:
 
 Add the following code to `chart-viewer.hbs`:
 
-```
+```javascript
 {{fusioncharts-xt
         width=width
         height=height
@@ -393,9 +467,9 @@ The `exportMode` attribute is used to switch between the different modes of expo
 
 To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/configuring-the-export-feature) guide.
 
-## Export Chart Data
+## Export Chart Data in XLSX Format
 
-FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.11.0, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
+FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.13.5, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
 
 To enable chart exporting, set the chart level attribute `exportEnabled` to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over the button to see a dropdown menu with the export options, as shown in the image below:
 
