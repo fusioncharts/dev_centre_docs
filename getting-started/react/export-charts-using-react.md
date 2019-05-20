@@ -11,7 +11,7 @@ In this section we will discuss how to:
 - [Export Charts as Image and PDF](/getting-started/react/export-charts-using-react#export-charts-as-image-and-pdf)
 - [Export Multiple Charts](/getting-started/react/export-charts-using-react#export-multiple-charts)
 - [Modes of Export](/getting-started/react/export-charts-using-react#modes-of-export)
-- [Export Chart Data](/getting-started/react/export-charts-using-react#export-chart-data)
+- [Export Chart Data in XLSX Format](/getting-started/react/export-charts-using-react#export-chart-data-in-xlsx-format)
 
 ## Export Charts as Image and PDF
 
@@ -33,85 +33,92 @@ A column 2D chart with export enabled is shown below. Click the <span> ![image](
 
 The full code of the above sample is given below:
 
-```
-//Including react
-import React, { Component } from 'react';
+```javascript
+//Include react
+import React, { Component } from "react";
 
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
+//Include the react-fusioncharts component
+import ReactDOM from "react-dom";
 
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts/core';
+//Include the fusioncharts library
+import FusionCharts from "fusioncharts/core";
 
-//Including the chart type
-import Column2D from 'fusioncharts/viz/column2d';
+//Include the chart type
+import Column2D from "fusioncharts/viz/column2d";
 
-//Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+//Include the theme as fusion
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+
+// Include the ExcelExport
+import ExcelExport from "fusioncharts/features/excelexport";
 
 //Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme, ExcelExport);
 
 //Creating the JSON object to store the chart configurations
 
 const chartConfigs = {
-    type: 'column2d',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: {
+  type: "column2d", // The chart type
+  width: "700", // Width of the chart
+  height: "400", // Height of the chart
+  dataFormat: "json", // Data type
+  dataSource: {
     // Chart Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "exportEnabled": "1",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017-18]",
+      subCaption: "In MMbbl = One Million barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      exportEnabled: "1",
+      theme: "fusion"
     },
+    // Chart Data
+    data: [
+      {
+        label: "Venezuela",
+        value: "290"
+      },
+      {
+        label: "Saudi",
+        value: "260"
+      },
+      {
+        label: "Canada",
+        value: "180"
+      },
+      {
+        label: "Iran",
+        value: "140"
+      },
+      {
+        label: "Russia",
+        value: "115"
+      },
+      {
+        label: "UAE",
+        value: "100"
+      },
+      {
+        label: "US",
+        value: "30"
+      },
+      {
+        label: "China",
+        value: "30"
+      }
+    ]
+  }
 };
 
 //Your react component
 class Chart extends Component {
-  render () {
-    return (
-      <ReactFC {...chartConfigs} />
-    )
+  render() {
+    return <ReactFC {...chartConfigs} />;
   }
 }
 
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+ReactDOM.render(<Chart />, document.getElementById("root"));
 ```
 
 The above chart has been rendered using the following steps:
