@@ -237,7 +237,7 @@ import Column2D from 'fusioncharts/viz/column2d';
 // Include the fusion theme
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
 
-// Include the ExcelExport from features folder
+// Include the ExcelExport
 import ExcelExport from 'fusioncharts/features/excelexport';
 
 // Add the chart, theme and ExcelExport as dependency

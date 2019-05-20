@@ -206,12 +206,16 @@ import FusionCharts from 'fusioncharts/core';
 import AngularGauge from 'fusioncharts/viz/angulargauge';
 
 // Include the fusion theme
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
-// Add the gauge and theme as dependency
+// Include the ExcelExport
+import ExcelExport from 'fusioncharts/features/excelexport';
+
+// Add the gauge, theme and ExcelExport as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(AngularGauge);
 FusionCharts.addDep(FusionTheme);
+FusionCharts.addDep(ExcelExport);
 
 // Create an Instance with chart options
 var gaugeInstance = new FusionCharts({
@@ -262,10 +266,20 @@ gaugeInstance.render();
 <h4>CJS</h4>
 <pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
+
+// Require widgets from fusioncharts
 var Widgets = require('fusioncharts/fusioncharts.widgets');
+
+// Require theme from fusioncharts
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Require ExcelExport module from fusioncharts
+var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
+
+// Add dependency of widgets, themes and ExcelExport
 Widgets(FusionCharts);
 FusionTheme(FusionCharts);
+ExcelExport(FusionCharts);
 
 // Create an Instance with chart options
 var gaugeInstance = new FusionCharts({
