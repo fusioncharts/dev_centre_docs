@@ -236,10 +236,16 @@ import Column2D from 'fusioncharts/viz/column2d';
 
 // Include the fusion theme
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-// Add the chart and theme as dependency
+
+// Include the ExcelExport from features folder
+import ExcelExport from 'fusioncharts/features/excelexport';
+
+// Add the chart, theme and ExcelExport as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
+FusionCharts.addDep(ExcelExport);
+
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
 type: 'Column2D',
@@ -293,10 +299,20 @@ chartInstance.render();
 <h4>CJS</h4>
 <pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
+
+// Require charts from fusioncharts
 var Charts = require('fusioncharts/fusioncharts.charts');
+
+// Require theme from fusioncharts
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Require ExcelExport module from fusioncharts
+var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
+
+// Add dependency of charts, themes and ExcelExport
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
+ExcelExport(FusionCharts);
 
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
