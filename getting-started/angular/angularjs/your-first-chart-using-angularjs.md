@@ -253,7 +253,7 @@ var Charts = require('fusioncharts/fusioncharts.charts');
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Require ExcelExport module from fusioncharts
+// Require ExcelExport module
 var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
 
 // Add charts, themes and ExcelExport as dependency
