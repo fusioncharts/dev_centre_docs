@@ -20,6 +20,8 @@ A chart with a reference line is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line %}
 
+See it live! Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/).
+
 In the example given above, a reference line appears, parallel to the time axis. Hover on the knob of the reference line to see the label and the value.
 
 ## Add a Reference Line
@@ -51,6 +53,8 @@ Refer to the code given below:
 For multivariate charts, each chart canvas can have its own reference line. A chart with reference lines in each canvas is shown below:
 
 {% embed_ftChart reference-line-in-multivariate-chart %}
+
+See it live! Click [here](https://jsfiddle.net/fusioncharts/1qdLorea/).
 
 The code to render reference lines in each canvas is given below:
 
@@ -85,6 +89,8 @@ In the above code, the reference line is set for both the canvases of the chart.
 In FusionTime, each chart canvas can have endless reference lines. A chart with multiple reference lines on a canvas is shown below:
 
 {% embed_ftChart multiple-reference-line-in-a-chart %}
+
+See it live! Click [here](https://jsfiddle.net/fusioncharts/ymgsv027/).
 
 The code to render multiple reference lines in a canvas is shown below:
 
@@ -182,6 +188,8 @@ The chart after applying the above attributes will look like as shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line-style-definition %}
 
+See it live. Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/).
+
 ### Style Reference Line
 
 You can render the reference lines as dashed lines, instead of the default continuous lines. To do so follow the steps given below:
@@ -222,6 +230,8 @@ Refer to the code given below:
 A chart with a dashed reference line looks like as shown below:
 
 {% embed_ftChart dashed-reference-line-in-a-chart %}
+
+See it live. Click [here](https://jsfiddle.net/fusioncharts/Lrtwzfy3/).
 
 In the above example:
 

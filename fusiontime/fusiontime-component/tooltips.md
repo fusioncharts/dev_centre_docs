@@ -22,6 +22,8 @@ In the given example, hover on the data plot and you will see a consolidated too
 
 By default, the tooltip is displayed. To hide the tooltip set the `showToolTip` attribute to `0`.
 
+See it live! Click [here](https://jsfiddle.net/fusioncharts/34k6zde5/).
+
 Refer to the code below:
 
 ```
@@ -42,6 +44,8 @@ In FusionTime, you can have different canvases for different measures visualized
 
 To disable multiple tooltips, set the `multiCanvasTooltip` attribute to `0`.
 
+See it live! Click [here](https://jsfiddle.net/fusioncharts/6L5tf0x4/).
+
 ### Tooltips in Time Markers
 
 Tooltips help you gain additional, context-sensitive information from [time markers](/fusiontime/fusiontime-component/time-marker). When you hover the mouse pointer over a time marker, a tooltip appears with information on the value of the marker, as well as a description about the data. When a time marker represents a range, the corresponding tooltip displays information on the range instead.
@@ -53,3 +57,5 @@ Tooltips help you gain additional, context-sensitive information from [time mark
 Tooltips can provide additional information about the data represented by [data markers](/fusiontime/fusiontime-component/data-markers). When you hover the mouse pointer over a data marker, a tooltip can appear and display the data value, as well as a small description.
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-data-marker-tooltip.png" alt="Data Marker Tooltip" width="700" height="420">
+
+

@@ -88,6 +88,8 @@ The data marker created using the above code is shown below:
 
 {% embed_ftChart fusioncharts-aspnet-data-markers %}
 
+See it live. Click [here](https://jsfiddle.net/ked5xfgq/).
+
 ## Data Markers in MultiVariate Chart
 
 When representing time-series data, it is important to mark events which have happened on a particular set of data points at a specific time. In order to achieve this, FusionTime allows you to specify data markers for some specific canvases as well.
@@ -144,6 +146,8 @@ In the above code:
 The chart looks as shown below:
 
 {% embed_ftChart data-marker-multi-variate-sample-all-canvas %}
+
+See it live. Click [here](https://jsfiddle.net/fusioncharts/o36h2dzw/).
 
 In the above chart, the data markers have been marked on both the canvases of the chart. There can be a case, where you want to apply a data marker to a particular canvas of a multivariate chart.
 

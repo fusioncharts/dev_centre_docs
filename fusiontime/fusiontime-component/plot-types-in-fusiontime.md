@@ -40,6 +40,8 @@ The time series chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
+See it live. Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/).
+
 To check out the detailed step to render the above chart, click [here](/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
 
 ## Column
@@ -50,6 +52,8 @@ The above time series chart, rendered with column plot is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot %}
 
+See it live. Click [here](https://jsfiddle.net/fusioncharts/dw4ntp5a/).
+
 ## Stacked Column
 
 To render a time series chart with the stacked column as data plot, set the value of `type` attribute to `column` and the value of the `series` to the y-axis value.
@@ -57,6 +61,8 @@ To render a time series chart with the stacked column as data plot, set the valu
 Let’s create a chart showcasing **Unemployment rate in San Jose & SJ Metro Area**.
 
 {% embed_ftChart stacked-column-chart %}
+
+See it live. Click [here](https://jsfiddle.net/fusioncharts/3kwzx28o/).
 
 ## Area
 
@@ -66,6 +72,8 @@ A time series chart, rendered with area plot is shown below:
 
 {% embed_ftChart online-sales-single-series-area-data-plot %}
 
+See it live. Click [here](https://jsfiddle.net/fusioncharts/q8mevkLb/).
+
 ## Stacked Area
 
 To render a time series chart with the stacked area as data plot, set the value of `type` attribute to `area` and the value of the `series` to the y-axis value.
@@ -73,6 +81,8 @@ To render a time series chart with the stacked area as data plot, set the value 
 Let’s create a chart showcasing **total rainfall of Assam and Tripura**. The time series chart looks like:
 
 {% embed_ftChart stacked-area-chart %}
+
+See it live. Click [here](https://jsfiddle.net/fusioncharts/esbz82hx/).
 
 ## Smooth Area
 
@@ -82,6 +92,8 @@ Let’s create a chart showcasing **daily visitors count of a website**. The tim
 
 {% embed_ftChart smooth-area-chart %}
 
+See it live. Click [here](https://jsfiddle.net/fusioncharts/q8mevkLb/).
+
 ## Spline
 
 To render a time series chart with **spline** as data plot, set the value of `type` attribute to `smooth-line`.
@@ -89,6 +101,8 @@ To render a time series chart with **spline** as data plot, set the value of `ty
 Let's create a chart showcasing weather report. The time series chart looks like:
 
 {% embed_ftChart weather-report-spline-data-plot %}
+
+See it live. Click [here](https://jsfiddle.net/fusioncharts/kg9xnt5w/).
 
 ## Step-line
 
@@ -98,6 +112,8 @@ Let's create a chart showcasing weather report. The time series chart looks like
 
 {% embed_ftChart weather-report-step-line-data-plot %}
 
+See it live. Click [here](https://jsfiddle.net/fusioncharts/5vew64tL/).
+
 ## Candlestick
 
 To render a time series chart with **candlestick** as data plot, set the value of `type` attribute to `candlestick`.
@@ -106,6 +122,8 @@ Let's create a chart showing Apple Inc. Stock Price. The time series chart looks
 
 {% embed_ftChart apple-stock-price-candlestick-data-plot %}
 
+See it live. Click [here](https://jsfiddle.net/fusioncharts/v3Lt5zsm/).
+
 ## OHLC
 
 To render a time series chart with **ohlc** as data plot, set the value of `type` attribute to `ohlc`.
@@ -113,6 +131,8 @@ To render a time series chart with **ohlc** as data plot, set the value of `type
 Let's create a chart showing NASDAQ Composite Index. The time series chart looks like:
 
 {% embed_ftChart composite-index-ohlc-data-plot %}
+
+See it live. Click [here](https://jsfiddle.net/fusioncharts/moc7v6uw/).
 
 ## Style Definition
 

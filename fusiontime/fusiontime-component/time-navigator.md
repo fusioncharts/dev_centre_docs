@@ -59,8 +59,9 @@ new FusionCharts({
   type: "timeseries",
   dataSource: {
     chart: {
-      enableNavigator: "0" // Disables time Time Navigator
+      enableNavigator: "0" // Disables Time Navigator
     }
   }
 });
 ```
+See a live chart with Time Navigator disabled. Click [here](https://jsfiddle.net/fusioncharts/975vyr12/).

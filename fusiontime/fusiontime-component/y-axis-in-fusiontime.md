@@ -71,6 +71,8 @@ By applying the above attribute, the chart looks like as shown in the image belo
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-y-axis-on-right.png" alt="Y-axis" width="700" height="420">
 
+See it live! Click [here](https://jsfiddle.net/fusioncharts/gykep2q4/)
+
 ## Set Chart Limits Explicitly
 
 You can set the custom y-axis limits as per your requirement. To do so, apply the following attributes under the `yAxis` object.
@@ -99,6 +101,8 @@ The chart with custom y-axis limits looks as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-y-axis-min-max.png" alt="Y-axis" width="700" height="420">
 
+See it live! Click [here](https://jsfiddle.net/fusioncharts/pswnohk9/).
+
 ## Add Prefix & Suffix
 
 To specify the prefix and suffix of the y-axis values, set the suffix and prefix of the y-axis values using the `suffix` and `prefix` attributes under the `format` object within the `yAxis` object.
@@ -119,6 +123,8 @@ yAxis: [{
 ```
 
 In the above code, prefix has been set as `$`.
+
+See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/xto4hp0n/).
 
 ## Dual Y-axis
 
@@ -167,6 +173,8 @@ In the above code:
 - Set the column name using the `value` attribute under the `plot` object to specify the column which is mapped to the y-axis.
 - Set the y-axis title for both the y-axis using the `title` attribute under the `yAxis` object.
 
+See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/n0axvrf8/).
+
 ## Log Y-Axis
 
 In some scenarios, you might also have data for which instead of a usual linear axis you want a `logarithmic` axis. Logarithmic y-axis means log scale of any base greater than 1. The default base is 10. You can also opt to change the base if required. The charts with logarithmic y-axis are perfect for plotting data that comprises of both small and large values. You can use this to plot data like sales comparison, election results, population growth, etc. A chart with logarithmic y-Axis is shown below:
@@ -197,6 +205,8 @@ To render a chart with logarithmic y-axis refer to the code below:
 
 In the above code, the value of the `type` attribute of `yAxis` object has been set to `log` which renders a chart with the logarithmic y-axis.
 
+See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/rcbm1pg6/).
+
 ## Change Log Base
 
 By default, the base of a chart with logarithmic y-axis is set to 10. You can, however, set the base to any value of your requirement. Just ensure that the base value is any natural number. Set the base attribute to specify the base value for the logarithmic chart.
@@ -225,6 +235,8 @@ The code to set the base of the logarithmic y-axis is shown below:
     }],
 }
 ```
+
+See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/f8akhcjt/).
 
 ## Style Definition
 
@@ -293,3 +305,5 @@ The code to update the cosmetic properties of other elements in **y-axis** is gi
   ]
 }
 ```
+
+See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/v6zmn8p2/).
