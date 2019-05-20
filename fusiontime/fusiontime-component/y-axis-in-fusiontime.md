@@ -56,13 +56,19 @@ By default, the position of the Y-axis is set to left. You can customize the pos
 The code is given below:
 
 ```json
-yAxis: [{
-    plot: {
-        "value": "Sales",
-    },
-    "title": "Sales Value",
-    "orientation": "right",
-}],
+ dataSource: {
+      data: dataStore,
+      caption: {
+        text: 'Online Sales of a SuperStore'
+      },
+      yAxis: [{
+        plot: {
+          "value": "Sales",
+        },
+        "title": "Sales Value",
+        "orientation": "right",
+      }]
+    }
 ```
 
 In the above code, the value of `orientation` attribute has been set to **right** under `yaxis` object.
@@ -83,18 +89,21 @@ You can set the custom y-axis limits as per your requirement. To do so, apply th
 The code is given below:
 
 ```json
-yAxis: [{
-    plot: {
-        "value": "Sales",
-    },
-    "title": "Total Sales",
-    "min": "0",
-    "max": "40000"
-}, {
-    format: {
-        "prefix": "$",
+{
+      data: dataStore,
+      caption: {
+        text: 'Online Sales of a SuperStore'
+      },
+      yAxis: [{
+        plot: {
+          "value": "Sales",
+          "type": "column",
+        },
+        "title": "Total Sales",
+        "min": "0",
+        "max": "350"
+      }]
     }
-}],
 ```
 
 The chart with custom y-axis limits looks as shown in the image below:
@@ -187,6 +196,7 @@ To render a chart with logarithmic y-axis refer to the code below:
 
 ```javascript
 {
+      data: dataStore,
     caption: {
         text: 'Thermal flow of machinery'
     },
@@ -199,7 +209,7 @@ To render a chart with logarithmic y-axis refer to the code below:
         },
         title: 'Heat Flux (in W/m²)',
         type: 'log'
-    }],
+    }]
 }
 ```
 
@@ -219,6 +229,7 @@ The code to set the base of the logarithmic y-axis is shown below:
 
 ```javascript
 {
+      data: fusionTable,
     caption: {
         text: 'Thermal flow of machinery'
     },
@@ -232,7 +243,7 @@ The code to set the base of the logarithmic y-axis is shown below:
         title: 'Heat Flux (in W/m²)',
         type: 'log',
         base: '50'
-    }],
+    }]
 }
 ```
 
@@ -284,26 +295,25 @@ The code to update the cosmetic properties of other elements in **y-axis** is gi
 
 ```json
 {
-  "yAxis": [
-    {
-      "title": "Sales",
-      "style": {
-        "ticks": {
-          "major": Style,
-          "minor": Style,
-          "context": Style
+        data: dataStore,
+        styleDefinition: {
+            "colorstyle": {
+                "fill": "#ff0000"
+            }
         },
-        "text": {
-          "major": Style,
-          "minor": Style,
-          "context": Style
+        chart: {
         },
-        "line": Style,
-        "grid-line": Style
-      }
+        yAxis: {
+            "plot": "Sales",
+            "title": "Sales",
+            style: {
+                title: "colorstyle"
+            }
+        },
+        caption: {
+            text: "Online Sales of a SuperStore"
+        }
     }
-  ]
-}
 ```
 
 See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/v6zmn8p2/).

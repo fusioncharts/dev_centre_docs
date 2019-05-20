@@ -42,6 +42,24 @@ The time series chart is shown below:
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/).
 
+Refer to the code given below:
+
+```javascript
+{
+      data: dataStore,
+      chart: {
+    },
+    caption: {
+        text: 'Online Sales of a SuperStore in the US'
+    },
+    yAxis: {
+        "plot": {
+            "value": "Sales",
+            "type": "line"
+        },
+    }
+}
+```
 To check out the detailed step to render the above chart, click [here](/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
 
 ## Column
@@ -54,6 +72,23 @@ The above time series chart, rendered with column plot is shown below:
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/dw4ntp5a/).
 
+Refer to the code given below:
+
+```javascript
+{
+      data: dataStore,
+      caption: {
+        text: "Online Sales of a SuperStore in the US",
+       },
+      yAxis: {
+        "plot": {
+          "value": "Sales",
+          "type": "column"
+        }
+      }
+}
+```
+
 ## Stacked Column
 
 To render a time series chart with the stacked column as data plot, set the value of `type` attribute to `column` and the value of the `series` to the y-axis value.
@@ -63,6 +98,26 @@ Let’s create a chart showcasing **Unemployment rate in San Jose & SJ Metro Are
 {% embed_ftChart stacked-column-chart %}
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/3kwzx28o/).
+
+Refer to the code given below:
+
+```javascript
+{
+        data: dataStore,
+        chart: {
+        },
+        caption: {
+          text: 'Unemployment Rate in San Jose & SJ Metro Area'
+        },
+        yAxis: [{
+            "plot": {
+                "value": "Unemployment",
+                "type": "column"
+            }
+        }],
+        "series": "City"
+}
+```
 
 ## Area
 
@@ -74,6 +129,23 @@ A time series chart, rendered with area plot is shown below:
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/q8mevkLb/).
 
+Refer to the code given below:
+
+```javascript
+{
+      data: dataStore,
+      caption: {
+        text: "Daily Visitor Count of a Website",
+       },
+       yAxis: {
+        "plot": {
+          "value": "Daily Visitors",
+          "type": "area"
+        }
+      }
+}
+```
+
 ## Stacked Area
 
 To render a time series chart with the stacked area as data plot, set the value of `type` attribute to `area` and the value of the `series` to the y-axis value.
@@ -83,6 +155,26 @@ Let’s create a chart showcasing **total rainfall of Assam and Tripura**. The t
 {% embed_ftChart stacked-area-chart %}
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/esbz82hx/).
+
+Refer to the code given below:
+
+```javascript
+{
+      data: dataStore,
+      chart: {
+        },
+        caption: {
+          text: 'Total Rainfall of Assam and Tripura'
+        },
+        yAxis: [{
+            "plot": {
+                "value": "Rainfall",
+                "type": "area"
+            }
+        }],
+        "series": "State"
+}
+```
 
 ## Smooth Area
 
@@ -94,6 +186,23 @@ Let’s create a chart showcasing **daily visitors count of a website**. The tim
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/q8mevkLb/).
 
+Refer to the code given below:
+
+```javascript
+{
+      data: dataStore,
+      caption: {
+        text: "Daily Visitor Count of a Website",
+       },
+      yAxis: {
+        "plot": {
+          "value": "Daily Visitors",
+          "type": "smooth-area"
+        }
+      }
+}
+```
+
 ## Spline
 
 To render a time series chart with **spline** as data plot, set the value of `type` attribute to `smooth-line`.
@@ -103,6 +212,26 @@ Let's create a chart showcasing weather report. The time series chart looks like
 {% embed_ftChart weather-report-spline-data-plot %}
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/kg9xnt5w/).
+
+Refer to the code given below:
+
+```javascript
+{
+      data: dataStore,
+      caption: {
+        text: "Weather Report",
+       },
+       subCaption: {
+        text: "Analysis of Atmospheric Pressure",
+       },
+      yaxis: {
+        "plot": {
+          "value": "Speed",
+          "type": "smooth-line"
+        }
+      }
+}
+```
 
 ## Step-line
 
@@ -114,6 +243,26 @@ Let's create a chart showcasing weather report. The time series chart looks like
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/5vew64tL/).
 
+Refer to the code given below:
+
+```javascript
+{
+      data: dataStore,
+      caption: {
+        text: "Weather Report",
+       },
+       subCaption: {
+        text: "Analysis of Atmospheric Pressure",
+       },
+      yaxis: {
+        "plot": {
+          "value": "Pressure",
+          "type": "step-line"
+        }
+      }
+}
+```
+
 ## Candlestick
 
 To render a time series chart with **candlestick** as data plot, set the value of `type` attribute to `candlestick`.
@@ -124,6 +273,30 @@ Let's create a chart showing Apple Inc. Stock Price. The time series chart looks
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/v3Lt5zsm/).
 
+Refer to the code given below:
+
+```javascript
+{
+      data: dataStore,
+      styleDefinition: {
+        "colorstyle": {
+            "fill": "#ffff00" //color of the reference line
+        }
+    },
+    chart: {
+    },
+    caption: {
+        text: 'Apple Inc. Stock Price'
+    },
+    yAxis: {
+        "plot": {
+            "value": "Value",
+            "type": "candlestick"
+        },
+    }
+}
+```
+
 ## OHLC
 
 To render a time series chart with **ohlc** as data plot, set the value of `type` attribute to `ohlc`.
@@ -133,6 +306,25 @@ Let's create a chart showing NASDAQ Composite Index. The time series chart looks
 {% embed_ftChart composite-index-ohlc-data-plot %}
 
 See it live. Click [here](https://jsfiddle.net/fusioncharts/moc7v6uw/).
+
+Refer to the code given below:
+
+```javascript
+{
+      data: dataStore,
+      chart: {
+    },
+    caption: {
+        text: 'Online Sales of a SuperStore in the US'
+    },
+    yAxis: {
+        "plot": {
+            "value": "Sales",
+            "type": "ohlc"
+        },
+    }
+    }
+```
 
 ## Style Definition
 

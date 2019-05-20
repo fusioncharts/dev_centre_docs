@@ -28,12 +28,24 @@ Refer to the code below:
 
 ```
 {
-    chart: { },
-    "showToolTip": "0", // Disables the Tooltip
+      data: dataStore,
+      chart: {
+    showTooltip: "0"
+    },
     caption: {
-        text: 'Online Sales of a SuperStore in India & the US'
+        text: 'Online Sales of a SuperStore in the US'
+    },
+    yAxis: {
+        "plot": {
+            "value": "Sales",
+            "type": "line"
+        },
+        "referenceLine": [{
+            "label": "Daily Target",
+            "value": 300,
+ 				}],
     }
-}
+    }
 ```
 
 ### Tooltips in a multivariate chart 
@@ -45,6 +57,35 @@ In FusionTime, you can have different canvases for different measures visualized
 To disable multiple tooltips, set the `multiCanvasTooltip` attribute to `0`.
 
 See it live! Click [here](https://jsfiddle.net/fusioncharts/6L5tf0x4/).
+
+Refer to the code below:
+
+```
+{
+      data: dataStore,
+      chart:{
+      showTooltip: "0"
+      },
+      yAxis: [{
+          plot: 'Sales',
+          title: 'Sales',
+          referenceLine: [{
+            label: 'Controlled Temperature',
+            value: '6'
+          }]
+        },
+        {
+          plot: 'Quantity',
+          title: 'Quantity)',
+          referenceLine: [{
+            label: 'Controlled Carbon mono-oxide',
+            value: '3'
+
+          }]
+        }
+      ],
+}
+```
 
 ### Tooltips in Time Markers
 

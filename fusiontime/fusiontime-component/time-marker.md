@@ -26,18 +26,31 @@ To create a single time instance marker follow the steps below:
 Refer to the code below:
 
 ```javascript
-xAxis: {
-    timemarker: [{
-        start: 'Mar-1982',
-        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
-        timeFormat: "%b-%Y"
-    }],
-}
+{
+      data: dataStore,
+      caption: {
+        text: 'Interest Rate Analysis'
+      },
+      subCaption: {
+        text: 'Federal Reserve (USA)'
+      },
+      xAxis: {
+        plot: "Time",
+        timemarker: [{
+          start: 'Mar-1982',
+          label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
+          timeFormat: "%b-%Y",
+
+        }]
+      }
+    }
 ```
 
 A sample chart with a time marker is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-1 %}
+
+See it live. Click [here](https://jsfiddle.net/fusioncharts/Lrtwzfy3/).
 
 To create repeatable time instance markers, follow the steps given below:
 
@@ -109,13 +122,22 @@ To create the marker just include the `end` attribute along with the other attri
 Refer to the code below:
 
 ```javascript
-xAxis: {
+{
+      data: dataStore,
+      caption: {
+        text: 'Interest Rate Analysis'
+      },
+      subCaption: {
+        text: 'Federal Reserve (USA)'
+      },
+     xAxis: {
     plot: 'Time',
     timemarker: [{
         start: 'Mar-1980',
         end: 'Jun-1983',
         label: 'US inflation peaked at 14.8%.',
         timeFormat: "%b-%Y",
+        type: 'full',
         style: {
             marker: {
                 fill: '#f8b8b7'
@@ -123,11 +145,14 @@ xAxis: {
         }
     }]
 }
+}
 ```
 
 A sample chart with time span markers is shown below:
 
 {% embed_ftChart fusiontime-components-time-marker-3 %}
+
+See it live. Click [here](https://jsfiddle.net/fusioncharts/x8z7jL2a/).
 
 In the above sample, the time marker has a specific height according to the width and height of the chart. You can also render the time span marker with a line from top to bottom (vertically) of the canvas by setting the value of `type` attribute to **full** within the `timeMarker` object.
 

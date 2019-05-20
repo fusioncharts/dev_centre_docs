@@ -33,55 +33,64 @@ To create data markers, follow the steps given below:
 Refer to the code given below:
 
 ```javascript
-dataMarker: [{
-    series: "Interest Rate",
-    time: "Mar-1980",
-    identifier: "H",
-    timeFormat: "%b-%Y",
-    tooltext: "As a part of credit control program, under the leadership of Paul Volcker, the Fed tightened the money supply, allowing the federal fund rates to approach 20 percent."
-}, {
-    series: "Interest Rate",
-    time: "Aug-1982",
-    identifier: "L",
-    timeFormat: "%b-%Y",
-    tooltext: "The FED eases off the monetary brakes, allowing interest rates to fall and the economy to begin a strong recovery."
-}, {
-    series: "Interest Rate",
-    time: "Oct-1987",
-    identifier: "L",
-    timeFormat: "%b-%Y",
-    tooltext: "The FED is forced to ease rate after the stock market crash."
-}, {
-    series: "Interest Rate",
-    time: "May-1989",
-    identifier: "H",
-    timeFormat: "%b-%Y",
-    tooltext: "Liquidity problem forced the Fed to increase rate to nearly 10%."
-}, {
-    series: "Interest Rate",
-    time: "Sept-1992",
-    identifier: "L",
-    timeFormat: "%b-%Y",
-    tooltext: "To fight the jobless economy growth the Fed had to reduce the interest rate to 3%."
-}, {
-    series: "Interest Rate",
-    time: "Jun-2003",
-    identifier: "L",
-    timeFormat: "%b-%Y",
-    tooltext: "Struggling to revive the economy, the FED cuts it’s benchmark rate to 1%."
-}, {
-    series: "Interest Rate",
-    time: "Sep-2007",
-    identifier: "L",
-    timeFormat: "%b-%Y",
-    tooltext: "Fed started reducing the Federal Fund Rate."
-}, {
-    series: "Interest Rate",
-    time: "Dec-2008",
-    identifier: "L",
-    timeFormat: "%b-%Y",
-    tooltext: "Fed reduced the interest rates to sub 0.25% to manage the menace of longest economic downturn since World War 2"
-}],
+{
+      data: dataStore,
+      caption: {
+        text: 'Interest Rate Analysis'
+      },
+      subCaption: {
+        text: 'Federal Reserve (USA)'
+      },
+      dataMarker: [{
+        series: "Interest Rate",
+        time: "Mar-1980",
+        identifier: "H",
+        timeFormat: "%b-%Y",
+        tooltext: "As a part of credit control program, under the leadership of Paul Volcker, the Fed tightened the money supply, allowing the federal fund rates to approach 20 percent."
+      }, {
+        series: "Interest Rate",
+        time: "Aug-1982",
+        identifier: "L",
+        timeFormat: "%b-%Y",
+        tooltext: "The FED eases off the monetary brakes, allowing interest rates to fall and the economy to begin a strong recovery."
+      }, {
+        series: "Interest Rate",
+        time: "Oct-1987",
+        identifier: "L",
+        timeFormat: "%b-%Y",
+        tooltext: "The FED is forced to ease rate after the stock market crash."
+      }, {
+        series: "Interest Rate",
+        time: "May-1989",
+        identifier: "H",
+        timeFormat: "%b-%Y",
+        tooltext: "Liquidity problem forced the Fed to increase rate to nearly 10%."
+      }, {
+        series: "Interest Rate",
+        time: "Sept-1992",
+        identifier: "L",
+        timeFormat: "%b-%Y",
+        tooltext: "To fight the jobless economy growth the Fed had to reduce the interest rate to 3%."
+      }, {
+        series: "Interest Rate",
+        time: "Jun-2003",
+        identifier: "L",
+        timeFormat: "%b-%Y",
+        tooltext: "Struggling to revive the economy, the FED cuts it’s benchmark rate to 1%."
+      }, {
+        series: "Interest Rate",
+        time: "Sep-2007",
+        identifier: "L",
+        timeFormat: "%b-%Y",
+        tooltext: "Fed started reducing the Federal Fund Rate."
+      }, {
+        series: "Interest Rate",
+        time: "Dec-2008",
+        identifier: "L",
+        timeFormat: "%b-%Y",
+        tooltext: "Fed reduced the interest rates to sub 0.25% to manage the menace of longest economic downturn since World War 2"
+      }]
+}
 ```
 
 The data marker created using the above code is shown below:
@@ -117,12 +126,14 @@ Now, let’s add the events held on particular dates in the JSON using data mark
 
 ```json
 {
+      data: dataStore,
   "caption": {
     "text": "La petite boulangerie"
   },
   "subcaption": {
     "text": "Units Sold and Sales over 10 years"
   },
+  plot: 'Time',
   "series": "Item",
   "dataMarker": [
     {

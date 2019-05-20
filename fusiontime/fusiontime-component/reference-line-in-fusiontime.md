@@ -4,7 +4,7 @@ description: This article defines the reference line.
 heading: Reference Lines
 ---
 
-A Reference Line is essentially an arbitrary fixed line, which runs parallel to the time axis and is mapped to a specific value of YAxis. It can help you quickly compare any data point against a fixed value line.
+A Reference Line is essentially an arbitrary fixed line, which runs parallel to the time axis and is mapped to a specific value of Y-axis. It can help you quickly compare any data point against a fixed value line.
 
 Refer to the image below:
 
@@ -12,7 +12,7 @@ Refer to the image below:
 
 The salient features of the reference line:
 
-- A `label` which is by default displayed on the opposite side of the YAxis, when you hover on the knob of the reference line.
+- A `label` which is by default displayed on the opposite side of the Y-axis, when you hover on the knob of the reference line.
 - A `value` is by default displayed in the reflect tag when you hover on the knob of the reference line.
 - A reference line can be customized in terms of shape, size, color, etc.
 
@@ -26,7 +26,7 @@ In the example given above, a reference line appears, parallel to the time axis.
 
 ## Add a Reference Line
 
-You can add a reference line using the following attributes of the `referenceLine` object inside the YAxis object:
+You can add a reference line using the following attributes of the `referenceLine` object inside the `yAxis` object:
 
 - Use the `value` attribute to set the value at which the reference line should appear.
 - Use the `label` attribute to set the text of the label.
@@ -35,17 +35,32 @@ Refer to the code given below:
 
 ```javascript
 {
-    type: 'timeseries',
-    dataSource: {
-        data: dataStore,
-            // Reference Line
-            "referenceLine": [{
-                "label": "Daily Target",
-                "value": 300
-            }],
+      data: dataStore,
+      styleDefinition: {
+        "colorstyle": {
+            "fill": "#ffff00" //color of the reference line
         }
+    },
+    chart: {
+    },
+    caption: {
+        text: 'Online Sales of a SuperStore in the US'
+    },
+    yAxis: {
+        "plot": {
+            "value": "Sales",
+            "type": "line"
+        },
+        "referenceLine": [{
+            "label": "Daily Target",
+            "value": 300,
+            style: {
+                text: "colorstyle",
+                marker: "colorstyle"
+            }
+        }],
     }
-}
+    }
 ```
 
 ## Reference Line in Multivariate chart
