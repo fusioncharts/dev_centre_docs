@@ -11,7 +11,7 @@ In this section we will discuss how to:
 - [Export Charts as Image and PDF](/getting-started/vue/export-charts-using-vuejs#export-charts-as-image-and-pdf)
 - [Export Multiple Charts](/getting-started/vue/export-charts-using-vuejs#export-multiple-charts)
 - [Modes of Export](/getting-started/vue/export-charts-using-vuejs#modes-of-export)
-- [Export Chart Data](/getting-started/vue/export-charts-using-vuejs#export-chart-data)
+- [Export Chart Data in XLSX Format](/getting-started/vue/export-charts-using-vuejs#export-chart-data-in-xlsx-format)
 
 ## Export Charts as Image and PDF
 
@@ -33,64 +33,74 @@ A column 2D chart with export enabled is shown below. Click the <span> ![image](
 
 The full code of the above sample is given below:
 
-```
-import Vue from 'vue';
-import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d'
+```javascript
+import Vue from "vue";
+import VueFusionCharts from "vue-fusioncharts";
+import FusionCharts from "fusioncharts/core";
+import Column2D from "fusioncharts/viz/column2d";
+import ExcelExport from "fusioncharts/features/excelexport";
 
 // register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, Column2D)
+Vue.use(VueFusionCharts, FusionCharts, Column2D, ExcelExport);
 
 // Copy datasource from 'Data' tab
 var dataSource = {
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "exportEnabled": "1", //Export Your Chart
-        "theme": "fusion",
+  // Chart Configuration
+  chart: {
+    caption: "Countries With Most Oil Reserves [2017-18]",
+    subCaption: "In MMbbl = One Million barrels",
+    xAxisName: "Country",
+    yAxisName: "Reserves (MMbbl)",
+    numberSuffix: "K",
+    exportEnabled: "1", //Export Your Chart
+    theme: "fusion"
+  },
+  // Chart Data
+  data: [
+    {
+      label: "Venezuela",
+      value: "290"
     },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
+    {
+      label: "Saudi",
+      value: "260"
+    },
+    {
+      label: "Canada",
+      value: "180"
+    },
+    {
+      label: "Iran",
+      value: "140"
+    },
+    {
+      label: "Russia",
+      value: "115"
+    },
+    {
+      label: "UAE",
+      value: "100"
+    },
+    {
+      label: "US",
+      value: "30"
+    },
+    {
+      label: "China",
+      value: "30"
+    }
+  ]
 };
 
 var app = new Vue({
-    el: '#app',
-    data: {
-        width: '700',
-        height: '400',
-        type: 'column2d',
-        dataFormat: 'json',
-        dataSource: dataSource
-    }
+  el: "#app",
+  data: {
+    width: "700",
+    height: "400",
+    type: "column2d",
+    dataFormat: "json",
+    dataSource: dataSource
+  }
 });
 ```
 
@@ -98,7 +108,9 @@ The above chart has been rendered using the following steps:
 
 1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Include the `ExcelExport` module to export chart data in XLSX format.
+
+3. Store the chart configuration in a JSON object. In the JSON object:
 
    - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height of the chart in pixels.
@@ -106,7 +118,7 @@ The above chart has been rendered using the following steps:
    - Embed the json data as the value of `dataSource`.
    - Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-3. Create a `fusioncharts` directive to render the chart.
+4. Create a `fusioncharts` directive to render the chart.
 
 ## Export Multiple Charts
 
@@ -119,15 +131,16 @@ FusionCharts lets you export multiple charts in a single image at once, in diffe
 
 The full code of the above sample is given below:
 
-```
+```javascript
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
 import Column2D from 'fusioncharts/viz/column2d'
 import StackedColumn2D from 'fusioncharts/viz/stackedcolumn2d';
+import ExcelExport from "fusioncharts/features/excelexport";
 
 // register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, Column2D, StackedColumn2D)
+Vue.use(VueFusionCharts, FusionCharts, Column2D, StackedColumn2D, ExcelExport)
 
 // Copy datasource from 'Data' tab
 var dataSource = {
@@ -308,7 +321,9 @@ The above chart has been rendered using the following steps:
 
 1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Include the `ExcelExport` module to export chart data in XLSX format.
+
+3. Store the chart configuration in a JSON object. In the JSON object:
 
    - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height of the chart in pixels.
@@ -316,9 +331,9 @@ The above chart has been rendered using the following steps:
    - Embed the json data as the value of `dataSource`.
    - Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-3. To export multiple charts on the page add an **event handler** to fire the export operation when the button is clicked.
+4. To export multiple charts on the page add an **event handler** to fire the export operation when the button is clicked.
 
-4. Create a `fusioncharts` directive to render the chart.
+5. Create a `fusioncharts` directive to render the chart.
 
 ## Modes of Export
 
@@ -336,9 +351,9 @@ The `exportMode` attribute is used to switch between the different modes of expo
 
 To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/configuring-the-export-feature) guide.
 
-## Export Chart Data
+## Export Chart Data in XLSX Format
 
-FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.11.0, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
+FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.13.5, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
 
 To enable chart exporting, set the chart level attribute `exportEnabled` to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over the button to see a dropdown menu with the export options, as shown in the image below:
 
