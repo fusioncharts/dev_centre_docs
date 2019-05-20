@@ -10,14 +10,14 @@ Refer to the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-y-axis.png" alt="Y-axis" width="700" height="420">
 
-The `yaxis` object accepts input in two forms of an array.
+The `yAxis` object accepts input in two forms of an array.
 
 - Array of objects
 - Array of strings
 
 An example of an array of objects is shown in the code below:
 
-```json
+```javascript
 yAxis: [{
     plot: {
         value: 'Sales',
@@ -37,7 +37,7 @@ In the above code an array has been created with two objects specifying Y-axes o
 
 An example of an array of strings is shown in the code below:
 
-```json
+```javascript
 "yAxis": [{
     "plot": ["Sales", "Quantity", "Shipping Cost"]
 }]
@@ -55,7 +55,7 @@ By default, the position of the Y-axis is set to left. You can customize the pos
 
 The code is given below:
 
-```json
+```javascript
  dataSource: {
       data: dataStore,
       caption: {
@@ -88,7 +88,7 @@ You can set the custom y-axis limits as per your requirement. To do so, apply th
 
 The code is given below:
 
-```json
+```javascript
 {
       data: dataStore,
       caption: {
@@ -106,7 +106,7 @@ The code is given below:
     }
 ```
 
-The chart with custom y-axis limits looks as shown in the image below:
+The chart with custom Y-axis limits looks as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-y-axis-min-max.png" alt="Y-axis" width="700" height="420">
 
