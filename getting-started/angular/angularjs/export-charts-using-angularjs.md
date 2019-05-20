@@ -393,13 +393,15 @@ The above chart has been rendered using the following steps:
 
 1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
-2. Add the chart and the theme as dependencies to the core.
+2. Include the `ExcelExport` module to export chart data in XLSX format.
 
-3. Store the chart configurations in a JSON object.
+3. Add the chart, theme and ExcelExport as dependencies to the core.
 
-4. To export multiple charts as PDF, set the `batchExport` to PDF.
+4. Store the chart configurations in a JSON object.
 
-5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
+5. To export multiple charts as PDF, set the `batchExport` to PDF.
+
+6. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
    - Set the chart type as `column2d` for the first chart and `stackedcolumn2d` for the second chart. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as JSON.
