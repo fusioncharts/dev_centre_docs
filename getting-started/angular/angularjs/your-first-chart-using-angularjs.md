@@ -98,7 +98,7 @@ That completes the installation of FusionCharts and the `angularjs-fusioncharts`
 
 ## Create your first chart
 
-Let's create a Column 2D chart using the angularjs-fusioncharts component showing the "Countries With Most Oil Reserves". 
+Let's create a Column 2D chart using the angularjs-fusioncharts component showing the "Countries With Most Oil Reserves".
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
@@ -127,45 +127,54 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
+  // Chart Configuration
+  "chart": {
+    "caption": "Countries With Most Oil Reserves [2017-18]",
+    "subCaption": "In MMbbl = One Million barrels",
+    "xAxisName": "Country",
+    "yAxisName": "Reserves (MMbbl)",
+    "numberSuffix": "K",
+    "theme": "fusion"
+  },
+  // Chart Data
+  "data": [
+    {
+      "label": "Venezuela",
+      "value": "290"
     },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
+    {
+      "label": "Saudi",
+      "value": "260"
+    },
+    {
+      "label": "Canada",
+      "value": "180"
+    },
+    {
+      "label": "Iran",
+      "value": "140"
+    },
+    {
+      "label": "Russia",
+      "value": "115"
+    },
+    {
+      "label": "UAE",
+      "value": "100"
+    },
+    {
+      "label": "US",
+      "value": "30"
+    },
+    {
+      "label": "China",
+      "value": "30"
+    }
+  ]
 }
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
 
 In the above JSON data:
 
@@ -178,7 +187,7 @@ In the above JSON data:
 - Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
 
 - In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
-  
+
 - Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
 
 - Set the `numberSuffix` attribute to set the unit of the values.
@@ -207,12 +216,15 @@ To render the chart, follow the steps below:
 
 7. Add the chart and the theme as dependencies to the core.
 
-8. Store the chart configurations in a variable (`myApp`).
+8. Include the `ExcelExport` module to export chart data in XLSX format.
 
-9. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels).
-    * Embed the json data as the value of the `dataSource`.
+9. Store the chart configurations in a variable (`myApp`).
+
+10. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
+
+- Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+- Set the width and height (in pixels).
+- Embed the json data as the value of the `dataSource`.
 
 The consolidated code is shown below:
 
@@ -232,20 +244,22 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
-// Require Chart modules 
+// Require Chart modules
 var Charts = require('fusioncharts/fusioncharts.charts');
 
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Initialize Charts with FusionCharts instance
-Charts(FusionCharts);
+// Require ExcelExport module from fusioncharts
+var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
 
-// Initialize FusionTheme with FusionCharts instance
+// Add charts, themes and ExcelExport as dependency
+Charts(FusionCharts);
 FusionTheme(FusionCharts);
+ExcelExport(FusionCharts);
 
 var myApp = angular.module('myApp', ['ng-fusioncharts']);
 
@@ -375,16 +389,16 @@ chartInstance.render()
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="700" height="400" type="column2d" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts id="my-chart-id" width="700" height="400" type="column2d" dataSource="{{myDataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <pre><code class="language-javascript">
@@ -442,13 +456,14 @@ chartInstance.render()
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="700" height="400" type="column2d" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts id="my-chart-id" width="700" height="400" type="column2d" dataSource="{{myDataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -461,8 +476,8 @@ That's it! Your first chart using `angularjs-fusioncharts` is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
