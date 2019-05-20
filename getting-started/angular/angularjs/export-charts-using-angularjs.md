@@ -11,7 +11,7 @@ In this section we will discuss how to:
 - [Export Charts as Image and PDF](/getting-started/angular/angularjs/export-charts-using-angularjs#export-charts-as-image-and-pdf)
 - [Export Multiple Charts](/getting-started/angular/angularjs/export-charts-using-angularjs#export-multiple-charts)
 - [Modes of Export](/getting-started/angular/angularjs/export-charts-using-angularjs#modes-of-export)
-- [Export Chart Data](/getting-started/angular/angularjs/export-charts-using-angularjs#export-chart-data)
+- [Export Chart Data in XLSX Format](/getting-started/angular/angularjs/export-charts-using-angularjs#export-chart-data-in-xlsx-format)
 
 ## Export Charts as Image and PDF
 
