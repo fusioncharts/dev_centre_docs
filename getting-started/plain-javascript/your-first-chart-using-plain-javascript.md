@@ -198,7 +198,7 @@ To render the chart, follow the steps below:
 
 3. Include the FusionCharts theme file to apply style to the charts.
 
-4. Include the `ExcelExport` module to export charts in XLSX format.
+4. Include the `ExcelExport` module to export chart data in XLSX format.
 
 5. Add the chart, theme and ExcelExport as dependencies to the core.
 

@@ -200,7 +200,7 @@ To render the map follow the steps below:
 
 4. Include the FusionCharts theme file to apply style to the charts.
 
-5. Include the `ExcelExport` module to export charts in XLSX format.
+5. Include the `ExcelExport` module to export chart data in XLSX format.
 
 6. Add the map renderer and map definition as a dependency to the core.
 

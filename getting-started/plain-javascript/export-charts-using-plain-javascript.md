@@ -42,10 +42,14 @@ import Column2D from "fusioncharts/viz/column2d";
 // Include the fusion theme
 import FusionTheme from "fusioncharts/themes/es/fusioncharts.theme.fusion";
 
-// Add the chart and theme as dependency
+// Include the ExcelExport module
+import ExcelExport from "fusioncharts/features/excelexport";
+
+// Add the chart, theme and ExcelExport as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
+FusionCharts.addDep(ExcelExport);
 
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
@@ -110,7 +114,9 @@ The above chart has been rendered using the following steps:
 
 1. Include the necessary library files like `fusioncharts` library, fusion theme file, etc.
 
-2. Store the chart configurations in a JSON object. In this JSON object:
+2. Include the `ExcelExport` module to export chart data in XLSX format.
+
+3. Store the chart configurations in a JSON object. In this JSON object:
 
    - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height (in pixels).
@@ -118,7 +124,7 @@ The above chart has been rendered using the following steps:
    - Embed the json data as the value of the `dataSource`.
    - Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-3. Add a container (instance) for the chart.
+4. Add a container (instance) for the chart.
 
 ### Modes of Export
 
