@@ -169,16 +169,18 @@ To render the gauge, follow the steps below:
 
 3. Include the FusionCharts theme file to apply style to the charts.
 
-4. Add the gauge and the theme as a dependency to the core.
+4. Include the `ExcelExport` module to export charts in XLSX format.
 
-5. Store the chart configurations in a JSON object. In this JSON object:
+5. Add the gauge, theme and ExcelExport as a dependency to the core.
+
+6. Store the chart configurations in a JSON object. In this JSON object:
 
    - Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as JSON.
    - Embed the json data as the value of the `dataSource`.
 
-6. Add a container (instance) for the gauge.
+7. Add a container (instance) for the gauge.
 
 The consolidated code is shown below:
 

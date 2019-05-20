@@ -200,9 +200,13 @@ To render the map follow the steps below:
 
 4. Include the FusionCharts theme file to apply style to the charts.
 
-5. Add the map renderer, map definition and the theme as a dependency to the core.
+5. Include the `ExcelExport` module to export charts in XLSX format.
 
-6. Store the chart configurations as a JSON object. In this JSON object:
+6. Add the map renderer and map definition as a dependency to the core.
+
+7. Add the theme and ExcelExport as a dependency to the core.
+
+8. Store the chart configurations as a JSON object. In this JSON object:
 
    - Set the map type as `world`. Each map is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
@@ -212,7 +216,7 @@ To render the map follow the steps below:
 
    - Embed the json data as the value of the `dataSource`.
 
-7. Add a container (instance) for the chart.
+9. Add a container (instance) for the chart.
 
 The consolidated code is shown below:
 
