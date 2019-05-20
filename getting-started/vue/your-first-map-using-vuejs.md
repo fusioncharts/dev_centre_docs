@@ -6,7 +6,7 @@ heading: Create a Map in Vue Using FusionCharts
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Vue** component which provides bindings for **FusionCharts**. The `vue-fusioncharts` component allows you to easily add rich and interactive charts to any **Vue** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Vue** component which provides bindings for **FusionCharts**. The `vue-fusioncharts` component allows you to easily add rich and interactive charts to any **Vue** project.
 
 In this page, we'll see how to install FusionCharts and render a map using the `vue-fusionCharts` component.
 
@@ -94,7 +94,7 @@ $ npm install fusioncharts --save
 
 ## Create you first map
 
-In this section, we will create a visualization using the **World Map** showing the average annual population growth. 
+In this section, we will create a visualization using the **World Map** showing the average annual population growth.
 
 {% embed_chart getting-started-your-first-map.js %}
 
@@ -102,8 +102,8 @@ In this section, we will create a visualization using the **World Map** showing 
 
 The data for the above map is represented in the table below:
 
-| State | Entity Name | Value |
-| ----- | ----------- | ----- ||
+| State         | Entity Name | Value |
+| ------------- | ----------- | ----- |
 | North America | NA          | 82    |
 | South America | SA          | 2.04  |
 | Asia          | AS          | 1.78  |
@@ -183,13 +183,13 @@ Following code is the JSON representation of the above table with the required a
 
 In the above JSON data:
 
-* Create the `chart` object to define the elements of the map.
+- Create the `chart` object to define the elements of the map.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+- Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
-* Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
+- Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
 
 The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
@@ -199,26 +199,28 @@ Now that you have the data in JSON format, let's learn how to render the map.
 
 To render the map follow the steps below:
 
-1. Include the `vue` component
+1. Include the `vue` component.
 
-2. Include `vue-fusioncharts` component
+2. Include `vue-fusioncharts` component.
 
-3. Include `fusioncharts` core library
+3. Include `fusioncharts` core library.
 
-4. Include the FusionMap renderer. 
+4. Include the FusionMap renderer.
 
 5. Include the map definition file.
 
-6. Include the FusionCharts theme file to apply the style to the charts
+6. Include the FusionCharts theme file to apply the style to the charts.
 
-7. Register the `VueFusionCharts` component
+7. Include the `ExcelExport` module to export chart data in XLSX format.
 
-8. Store the map configurations in a JSON object. In this JSON object:
+8. Register the `VueFusionCharts` component
 
-    * Set the map type as `world`. Each map is represented with a unique chart alias. For World Map, the alias is `world`. Find the complete list of maps with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
+9. Store the map configurations in a JSON object. In this JSON object:
+
+   - Set the map type as `world`. Each map is represented with a unique chart alias. For World Map, the alias is `world`. Find the complete list of maps with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+   - Set the width and height (in pixels).
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of the `dataSource`.
 
 The consolidated code is given below:
 
@@ -238,9 +240,10 @@ import FusionCharts from 'fusioncharts';
 import FusionMaps from 'fusioncharts/fusioncharts.maps';
 import World from 'fusioncharts/maps/fusioncharts.world';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import ExcelExport from 'fusioncharts/features/excelexport';
 
 // Register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, FusionMaps, World, FusionTheme);
+Vue.use(VueFusionCharts, FusionCharts, FusionMaps, World, FusionTheme, ExcelExport);
 export default {
 name: 'app',
     data () {
@@ -521,9 +524,9 @@ name: 'app',
 
 That's it! Your first map using `vue-fusioncharts` is ready.
 
-## Render other maps 
+## Render other maps
 
-To reduce the size of the package FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provide 1600+ maps for you to explore. Download the map files separately if you want to save them locally. 
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provide 1600+ maps for you to explore. Download the map files separately if you want to save them locally.
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
@@ -531,7 +534,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
 
-```
+```bash
 $ npm install fusionmaps
 ```
 
@@ -554,9 +557,10 @@ import FusionCharts from 'fusioncharts';
 import FusionMaps from 'fusioncharts/fusioncharts.maps';
 import California from 'fusionmaps/maps/fusioncharts.california';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import ExcelExport from 'fusioncharts/features/excelexport';
 
 // Register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California, FusionTheme);
+Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California, FusionTheme, ExcelExport);
 export default {
   name: 'app',
   data () {
@@ -751,14 +755,14 @@ export default {
 </div>
 </div>
 
-That's it! The **California** map is ready. 
+That's it! The **California** map is ready.
 
 ## Problem rendering the chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
