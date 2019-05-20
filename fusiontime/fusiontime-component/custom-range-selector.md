@@ -34,15 +34,16 @@ Refer to the code below:
 
 ```javascript
 {
-    type: 'timeseries',
-    dataSource: {
-        data: fusionTable,
-        // Show/Hide Custom Range Selector
-        "extensions": {
-			"customRangeSelector": {
-				"enabled": "0"
-			}
-		}
+      data: dataStore,
+      caption: {
+        text: 'Online Sales of a SuperStore'
+      },
+      // Show/Hide Standard Range Selector
+      "extensions": {
+        "customRangeSelector": {
+          "enabled": "0"
+        }
+      }
     }
-}
 ```
+See a live chart with Custom Range Selector disabled. Click [here](https://jsfiddle.net/fusioncharts/b5av12og/).

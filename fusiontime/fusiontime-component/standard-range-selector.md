@@ -28,16 +28,16 @@ Refer to the code below:
 
 ```javascript
 dataSource: {
-      data: dataStore,
-      caption: {
+    data: dataStore,
+    caption: {
         text: 'Online Sales of a SuperStore'
-      },
-      // Show/Hide Standard Range Selector
-      "extensions": {
+    },
+    // Show/Hide Standard Range Selector
+    "extensions": {
         "standardRangeSelector": {
-          "enabled": "0"
+            "enabled": "0"
         }
-      }
     }
+}
 ```
 See a live chart with Standard Range Selector disabled. Click [here](https://jsfiddle.net/fusioncharts/r5t8fvsd/).
