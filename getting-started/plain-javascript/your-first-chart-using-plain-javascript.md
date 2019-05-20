@@ -235,7 +235,7 @@ import FusionCharts from 'fusioncharts/core';
 import Column2D from 'fusioncharts/viz/column2d';
 
 // Include the fusion theme
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
 // Include the ExcelExport
 import ExcelExport from 'fusioncharts/features/excelexport';
@@ -309,7 +309,7 @@ var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 // Require ExcelExport module from fusioncharts
 var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
 
-// Add dependency of charts, themes and ExcelExport
+// Add charts, themes and ExcelExport as dependency
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
 ExcelExport(FusionCharts);

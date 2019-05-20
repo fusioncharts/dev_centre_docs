@@ -276,7 +276,7 @@ var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 // Require ExcelExport module from fusioncharts
 var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
 
-// Add dependency of widgets, themes and ExcelExport
+// Add widgets, themes and ExcelExport as dependency
 Widgets(FusionCharts);
 FusionTheme(FusionCharts);
 ExcelExport(FusionCharts);
