@@ -9,7 +9,7 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 In this section we will discuss how to:
 
 - [Export Charts as Image and PDF](/getting-started/plain-javascript/export-charts-using-plain-javascript#export-charts-as-image-and-pdf)
-- [Export Chart Data](/getting-started/plain-javascript/export-charts-using-plain-javascript#export-chart-data)
+- [Export Chart Data in XLSX Format](/getting-started/plain-javascript/export-charts-using-plain-javascript#export-chart-data-in-xlsx-format)
 
 ## Export Charts as Image and PDF
 
@@ -31,16 +31,16 @@ A column 2D chart with export enabled is shown below. Click the <span> ![image](
 
 The full code of the above sample is given below:
 
-```
+```javascript
 // Include the core fusioncharts file from core  -
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from "fusioncharts/core";
 
 // Include the chart from viz folder
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
-import Column2D from 'fusioncharts/viz/column2d';
+import Column2D from "fusioncharts/viz/column2d";
 
 // Include the fusion theme
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+import FusionTheme from "fusioncharts/themes/es/fusioncharts.theme.fusion";
 
 // Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
@@ -49,49 +49,58 @@ FusionCharts.addDep(FusionTheme);
 
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
-    type: 'Column2D',
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    renderAt:'chart-container', //container where the chart will render
-    dataSource: {
-        // Chart Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "exportEnabled": "1",
-            "theme": "fusion"
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
+  type: "Column2D",
+  width: "700", // Width of the chart
+  height: "400", // Height of the chart
+  dataFormat: "json", // Data type
+  renderAt: "chart-container", //container where the chart will render
+  dataSource: {
+    // Chart Configuration
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017-18]",
+      subCaption: "In MMbbl = One Million barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      exportEnabled: "1",
+      theme: "fusion"
+    },
+    // Chart Data
+    data: [
+      {
+        label: "Venezuela",
+        value: "290"
+      },
+      {
+        label: "Saudi",
+        value: "260"
+      },
+      {
+        label: "Canada",
+        value: "180"
+      },
+      {
+        label: "Iran",
+        value: "140"
+      },
+      {
+        label: "Russia",
+        value: "115"
+      },
+      {
+        label: "UAE",
+        value: "100"
+      },
+      {
+        label: "US",
+        value: "30"
+      },
+      {
+        label: "China",
+        value: "30"
+      }
+    ]
+  }
 });
 // Render
 chartInstance.render();
@@ -127,9 +136,9 @@ The `exportMode` attribute is used to switch between the different modes of expo
 
 To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/configuring-the-export-feature) guide.
 
-## Export Chart Data
+## Export Chart Data in XLSX Format
 
-FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.11.0, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
+FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.13.5, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
 
 To enable chart exporting, set the chart level attribute `exportEnabled` to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over the button to see a dropdown menu with the export options, as shown in the image below:
 
