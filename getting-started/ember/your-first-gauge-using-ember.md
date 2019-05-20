@@ -42,11 +42,11 @@ The angular gauge is shown below:
 
 The thresholds for the above sample is shown in the table below:
 
-| Range | Color | Hex Code |
-| ----- | ----- | -------- ||
-| 0-50 | Red | #F2726F |
-| 50-75 | Yellow | #FFC533 |
-| 75-100 | Green | #62B58F |
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -118,15 +118,17 @@ To render the gauge using `ember-fusioncharts` component, follow the steps below
 
 **Step 1:** In `ember-cli-build.js` file include the necessary files and add the dependency.
 
-- Import FusionCharts library to your `ember-cli-build.js` file
+- Include FusionCharts library to your `ember-cli-build.js` file.
 
-- Import **FusionWidgets** to render a gauge.
+- Include **FusionWidgets** to render a gauge.
 
-- Import `ember-fusioncharts` to your `ember-cli-build.js` file
+- Include `ember-fusioncharts` to your `ember-cli-build.js` file.
 
-- Import specific modules to your `ember-cli-build.js` file
+- Include specific modules to your `ember-cli-build.js` file.
 
-- Import the FusionCharts theme file to apply the style to the charts
+- Include the FusionCharts theme file to apply the style to the charts.
+
+- Include the `ExcelExport` module to export chart data in XLSX format.
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
@@ -142,11 +144,10 @@ module.exports = function(defaults) {
   });
 
   // Import fusioncharts library
-  app.import("bower_components/fusioncharts/fusioncharts.js");
-  app.import("bower_components/fusioncharts/fusioncharts.widgets.js");
-  app.import(
-    "bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js"
-  );
+  app.import("node_modules/fusioncharts/fusioncharts.js");
+  app.import("node_modules/fusioncharts/fusioncharts.widgets.js");
+  app.import("node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js");
+  app.import("node_modules/fusioncharts/features/excelexport");
   // Use `app.import` to import additional libraries/files
   return app.toTree();
 };
