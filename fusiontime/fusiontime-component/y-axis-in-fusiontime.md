@@ -234,7 +234,7 @@ The code to set the base of the logarithmic y-axis is shown below:
 
 ```javascript
 {
-      data: fusionTable,
+      data: dataStore,
     caption: {
         text: 'Thermal flow of machinery'
     },
