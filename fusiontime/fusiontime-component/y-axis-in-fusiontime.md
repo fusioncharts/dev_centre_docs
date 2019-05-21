@@ -256,7 +256,7 @@ Click [here](https://jsfiddle.net/fusioncharts/f8akhcjt/) to see it in a live ch
 
 ## Style Definition
 
-You can add CSS styling to set the cosmetic properties of Y-axis. To set the styling, instead of creating a separate CSS file, you can define the styling using `StyleDefinition` object.
+You can add CSS styling to set the cosmetic properties of Y-axis. To set the styling, instead of creating a separate CSS file, you can define the styling using `styleDefinition` object.
 
 Now, let's define the `styleDefinition` object and set the **font color** in an object. The code is given below:
 
@@ -268,11 +268,11 @@ styleDefinition: {
 }
 ```
 
-Once the `StyleDefinition` is defined, you can refer it for the various components using `colorstyle` attribute.
+Once the `styleDefinition` is defined, you can refer it for the various components using `colorstyle` attribute.
 
 > In order to understand better, we have named the object as `colorstyle`. You can name the object as per your choice.
 
-The syntax to set the `StyleDefintion` to the Y-axis label is given below:
+The syntax to set the `styleDefintion` to the Y-axis label is given below:
 
 ```json
 {
