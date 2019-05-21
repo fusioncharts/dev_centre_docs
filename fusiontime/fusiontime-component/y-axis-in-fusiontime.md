@@ -1,7 +1,7 @@
 ---
-title: Y-Axis | FusionCharts
-description: This article defines the y-axis.
-heading: Y-Axis
+title: Y-axis | FusionCharts
+description: This article defines the Y-axis.
+heading: Y-axis
 ---
 
 In FusionTime, the `yAxis` object can be specified within the `dataSource` object of the FusionCharts constructor.
@@ -43,7 +43,7 @@ An example of an array of strings is shown in the code below:
 }]
 ```
 
-In the above code an array has been created with two strings specifying y-axis of canvases in a chart.
+In the above code an array has been created with two strings specifying Y-axis of canvases in a chart.
 
 Refer to the chart below:
 
@@ -81,10 +81,10 @@ Click [here](https://jsfiddle.net/fusioncharts/gykep2q4/) to edit the above char
 
 ## Set Chart Limits Explicitly
 
-You can set the custom y-axis limits as per your requirement. To do so, apply the following attributes under the `yAxis` object.
+You can set the custom Y-axis limits as per your requirement. To do so, apply the following attributes under the `yAxis` object.
 
-- Set the lower limit of the y-axis using the `min` attribute.
-- Set the upper limit of the y-axis using the `max` attribute.
+- Set the lower limit of the Y-axis using the `min` attribute.
+- Set the upper limit of the Y-axis using the `max` attribute.
 
 The code is given below:
 
@@ -114,7 +114,7 @@ Click [here](https://jsfiddle.net/fusioncharts/pswnohk9/) to edit the above char
 
 ## Add Prefix & Suffix
 
-To specify the prefix and suffix of the y-axis values, set the suffix and prefix of the y-axis values using the `suffix` and `prefix` attributes under the `format` object within the `yAxis` object.
+To specify the prefix and suffix of the Y-axis values, set the suffix and prefix of the Y-axis values using the `suffix` and `prefix` attributes under the `format` object within the `yAxis` object.
 
 The code is given below:
 
@@ -143,13 +143,13 @@ Click [here](https://jsfiddle.net/fusioncharts/xto4hp0n/) to see it live.
 
 ## Dual Y-axis
 
-In some scenarios, you might have data with two measures of different units. For example - temperature in `degree Celsius` and energy in `kilowatt`. This is where a dual Y-Axis comes handy. You can opt to show both the measures on two different Y-Axis in the same canvas. A chart with dual Y-Axis is shown below:
+In some scenarios, you might have data with two measures of different units. For example - temperature in `degree Celsius` and energy in `kilowatt`. This is where a dual Y-axis comes handy. You can opt to show both the measures on two different Y-axis in the same canvas. A chart with dual Y-axis is shown below:
 
 {% embed_ftChart dual-y-axis-chart %}
 
-The chart above shows a dual y-axis chart created to compare energy consumed with the temperature for the year 2018.
+The chart above shows a dual Y-axis chart created to compare energy consumed with the temperature for the year 2018.
 
-To render a chart with dual y-axis refer to the code below:
+To render a chart with dual Y-axis refer to the code below:
 
 ```javascript
 {
@@ -185,19 +185,19 @@ Click [here](https://jsfiddle.net/fusioncharts/n0axvrf8/) to see it in a live ch
 
 In the above code:
 
-- Set the `multiCanvas` attribute to `false`, which renders the chart with dual y-axis.
-- Set the column name using the `value` attribute under the `plot` object to specify the column which is mapped to the y-axis.
-- Set the y-axis title for both the y-axis using the `title` attribute under the `yAxis` object.
+- Set the `multiCanvas` attribute to `false`, which renders the chart with dual Y-axis.
+- Set the column name using the `value` attribute under the `plot` object to specify the column which is mapped to the Y-axis.
+- Set the Y-axis title for both the Y-axis using the `title` attribute under the `yAxis` object.
 
-## Log Y-Axis
+## Log Y-axis
 
-In some scenarios, you might also have data for which instead of a usual linear axis you want a `logarithmic` axis. Logarithmic y-axis means log scale of any base greater than 1. The default base is 10. You can also opt to change the base if required. The charts with logarithmic y-axis are perfect for plotting data that comprises of both small and large values. You can use this to plot data like sales comparison, election results, population growth, etc. A chart with logarithmic y-Axis is shown below:
+In some scenarios, you might also have data for which instead of a usual linear axis you want a `logarithmic` axis. Logarithmic Y-axis means log scale of any base greater than 1. The default base is 10. You can also opt to change the base if required. The charts with logarithmic Y-axis are perfect for plotting data that comprises of both small and large values. You can use this to plot data like sales comparison, election results, population growth, etc. A chart with logarithmic Y-axis is shown below:
 
 {% embed_ftChart log-y-axis-chart %}
 
-The chart is a logarithmic y-axis chart created to showcase the **Thermal flow of machinery observed** from the east region thermal sensor.
+The chart is a logarithmic Y-axis chart created to showcase the **Thermal flow of machinery observed** from the east region thermal sensor.
 
-To render a chart with logarithmic y-axis refer to the code below:
+To render a chart with logarithmic Y-axis refer to the code below:
 
 ```javascript
 {
@@ -220,17 +220,17 @@ To render a chart with logarithmic y-axis refer to the code below:
 
 Click [here](https://jsfiddle.net/fusioncharts/rcbm1pg6/) to see it in a live chart.
 
-In the above code, the value of the `type` attribute of `yAxis` object has been set to `log` which renders a chart with the logarithmic y-axis.
+In the above code, the value of the `type` attribute of `yAxis` object has been set to `log` which renders a chart with the logarithmic Y-axis.
 
 ## Change Log Base
 
-By default, the base of a chart with logarithmic y-axis is set to 10. You can, however, set the base to any value of your requirement. Just ensure that the base value is any natural number. Set the base attribute to specify the base value for the logarithmic chart.
+By default, the base of a chart with logarithmic Y-axis is set to 10. You can, however, set the base to any value of your requirement. Just ensure that the base value is any natural number. Set the base attribute to specify the base value for the logarithmic chart.
 
 A chart with logarithmic y-axis with `base` set to 50 is shown below:
 
 {% embed_ftChart log-y-axis-chart-different-base %}
 
-The code to set the base of the logarithmic y-axis is shown below:
+The code to set the base of the logarithmic Y-axis is shown below:
 
 ```javascript
 {
@@ -256,7 +256,7 @@ Click [here](https://jsfiddle.net/fusioncharts/f8akhcjt/) to see it in a live ch
 
 ## Style Definition
 
-You can add CSS styling to set the cosmetic properties of y-axis. To set the styling, instead of creating a separate CSS file, you can define the styling using `StyleDefinition` object.
+You can add CSS styling to set the cosmetic properties of Y-axis. To set the styling, instead of creating a separate CSS file, you can define the styling using `StyleDefinition` object.
 
 Now, let's define the `styleDefinition` object and set the **font color** in an object. The code is given below:
 
@@ -272,7 +272,7 @@ Once the `StyleDefinition` is defined, you can refer it for the various componen
 
 > In order to understand better, we have named the object as `colorstyle`. You can name the object as per your choice.
 
-The syntax to set the `StyleDefintion` to the y-axis label is given below:
+The syntax to set the `StyleDefintion` to the Y-axis label is given below:
 
 ```json
 {
@@ -294,7 +294,7 @@ The chart after applying the above attributes will look as shown below:
 
 {% embed_ftChart online-sales-single-series-style-definition-y-axis %}
 
-In the above sample, **font color** of the y-axis label has been changed.
+In the above sample, **font color** of the Y-axis label has been changed.
 
 The code to update the cosmetic properties of other elements in **y-axis** is given below:
 
