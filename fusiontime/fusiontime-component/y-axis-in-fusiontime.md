@@ -77,7 +77,7 @@ By applying the above attribute, the chart looks like as shown in the image belo
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-y-axis-on-right.png" alt="Y-axis" width="700" height="420">
 
-See it live! Click [here](https://jsfiddle.net/fusioncharts/gykep2q4/)
+Click [here](https://jsfiddle.net/fusioncharts/gykep2q4/) to edit the above chart.
 
 ## Set Chart Limits Explicitly
 
@@ -110,7 +110,7 @@ The chart with custom Y-axis limits looks as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-y-axis-min-max.png" alt="Y-axis" width="700" height="420">
 
-See it live! Click [here](https://jsfiddle.net/fusioncharts/pswnohk9/).
+Click [here](https://jsfiddle.net/fusioncharts/pswnohk9/) to edit the above chart.
 
 ## Add Prefix & Suffix
 
@@ -118,22 +118,28 @@ To specify the prefix and suffix of the y-axis values, set the suffix and prefix
 
 The code is given below:
 
-```json
-yAxis: [{
-    plot: {
-        "value": "Sales",
-    },
-    "title": "Total Sales",
-}, {
-    format: {
-        "prefix": "$",
+```javascript
+{
+      data: dataStore,
+      caption: {
+        text: 'Online Sales of a SuperStore'
+      },
+      yAxis: [{
+        plot: {
+          "value": "Sales",
+        },
+        "title": "Total Sales",
+        format: {
+          "prefix": "$",
+          "suffix": "k"
+        }
+      }]
     }
-}],
 ```
 
-In the above code, prefix has been set as `$`.
+In the above code, the prefix has been set as `$` and the suffix as `k`.
 
-See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/xto4hp0n/).
+Click [here](https://jsfiddle.net/fusioncharts/xto4hp0n/) to see it live.
 
 ## Dual Y-axis
 
@@ -175,14 +181,13 @@ To render a chart with dual y-axis refer to the code below:
     }],
 }
 ```
+Click [here](https://jsfiddle.net/fusioncharts/n0axvrf8/) to see it in a live chart.
 
 In the above code:
 
 - Set the `multiCanvas` attribute to `false`, which renders the chart with dual y-axis.
 - Set the column name using the `value` attribute under the `plot` object to specify the column which is mapped to the y-axis.
 - Set the y-axis title for both the y-axis using the `title` attribute under the `yAxis` object.
-
-See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/n0axvrf8/).
 
 ## Log Y-Axis
 
@@ -213,9 +218,9 @@ To render a chart with logarithmic y-axis refer to the code below:
 }
 ```
 
-In the above code, the value of the `type` attribute of `yAxis` object has been set to `log` which renders a chart with the logarithmic y-axis.
+Click [here](https://jsfiddle.net/fusioncharts/rcbm1pg6/) to see it in a live chart.
 
-See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/rcbm1pg6/).
+In the above code, the value of the `type` attribute of `yAxis` object has been set to `log` which renders a chart with the logarithmic y-axis.
 
 ## Change Log Base
 
@@ -247,7 +252,7 @@ The code to set the base of the logarithmic y-axis is shown below:
 }
 ```
 
-See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/f8akhcjt/).
+Click [here](https://jsfiddle.net/fusioncharts/f8akhcjt/) to see it in a live chart.
 
 ## Style Definition
 
@@ -285,7 +290,7 @@ The syntax to set the `StyleDefintion` to the y-axis label is given below:
 
 In the above code, `colorStyle` object is called to set the color of the caption.
 
-The chart after applying the above attributes will look like as shown below:
+The chart after applying the above attributes will look as shown below:
 
 {% embed_ftChart online-sales-single-series-style-definition-y-axis %}
 
@@ -316,4 +321,4 @@ The code to update the cosmetic properties of other elements in **y-axis** is gi
     }
 ```
 
-See it in a live chart. Click [here](https://jsfiddle.net/fusioncharts/v6zmn8p2/).
+Click [here](https://jsfiddle.net/fusioncharts/v6zmn8p2/) to see it in a live chart.
