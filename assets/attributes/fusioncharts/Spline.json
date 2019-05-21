@@ -28,6 +28,12 @@
         "name": "paletteColors"
       },
       {
+        "description": "This attribute lets you control whether empty data sets in your data will be connected to each other OR do they appear as broken data sets.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "connectNullData"
+      },
+      {
         "description": "It sets the configuration whether the x-axis labels will be displayed or not.",
         "range": "0/1",
         "type": "Boolean",

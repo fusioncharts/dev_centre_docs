@@ -20,7 +20,6 @@
             "exportTargetWindow": "_self",
             "exportFileName": "Monthly_Revenue"
         },
-
         "data": [{
             "label": "Jan",
             "value": "420000"
