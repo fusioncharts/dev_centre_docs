@@ -278,19 +278,19 @@ Refer to the code given below:
 ```javascript
 {
       data: dataStore,
-      styleDefinition: {
-        "colorstyle": {
-            "fill": "#ffff00" //color of the reference line
-        }
-    },
-    chart: {
+      chart: {
     },
     caption: {
         text: 'Apple Inc. Stock Price'
     },
     yAxis: {
         "plot": {
-            "value": "Value",
+            "value": {
+              open: "Open",
+              high: "High",
+              low: "Low",
+              close: "Close"
+            },
             "type": "candlestick"
         },
     }
@@ -317,13 +317,18 @@ Refer to the code given below:
     caption: {
         text: 'Online Sales of a SuperStore in the US'
     },
-    yAxis: {
+    yaxis: {
         "plot": {
-            "value": "Sales",
+            "value": {
+              open: "Open",
+              high: "High",
+              low: "Low",
+              close: "Close"
+            },
             "type": "ohlc"
         },
-    }
-    }
+      }
+}
 ```
 
 ## Style Definition
