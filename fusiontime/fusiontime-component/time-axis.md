@@ -26,9 +26,9 @@ A sample chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-See it live! Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/)
+Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/) to edit the above chart.
 
-In the above chart, try and change the time period and see how the time axis adjusts automatically to respond to the change occured. For example - try and zoom into the data from the chart canvas.
+Try and change the time period and see how the time axis adjusts automatically to respond to the change occured. For example - try and zoom into the data from the chart canvas.
 
 ## Multiple time columns in data
 

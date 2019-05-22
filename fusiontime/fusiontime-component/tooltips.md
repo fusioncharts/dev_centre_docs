@@ -22,11 +22,11 @@ In the given example, hover on the data plot and you will see a consolidated too
 
 By default, the tooltip is displayed. To hide the tooltip set the `showToolTip` attribute to `0`.
 
-See it live! Click [here](https://jsfiddle.net/fusioncharts/34k6zde5/).
+Click [here](https://jsfiddle.net/fusioncharts/34k6zde5/) to see how in a live chart.
 
 Refer to the code below:
 
-```
+```javascript
 {
       data: dataStore,
       chart: {
@@ -48,7 +48,7 @@ Refer to the code below:
     }
 ```
 
-### Tooltips in a multivariate chart 
+### Tooltips in a Multivariate Chart 
 
 In FusionTime, you can have different canvases for different measures visualized in a multivariate chart. When you hover on a data plot, by default tooltips get displayed in all the canvases of the chart. Refer to the image below:
 
@@ -60,7 +60,7 @@ See it live! Click [here](https://jsfiddle.net/fusioncharts/6L5tf0x4/).
 
 Refer to the code below:
 
-```
+```javascript
 {
       data: dataStore,
       chart:{

@@ -4,13 +4,11 @@ description: This article outlines the steps to set custom range selector.
 heading: Custom Range Selector
 ---
 
-A custom range selector is an extension which allows you to set the **from** and **to** date/time. It is useful when you already know the exact start and end date/time for which you want to see the data. The custom range selector appears on the top-right corner of the chart canvas.
-
-A custom range selector appears as shown in the image below:
+A custom range selector is an extension, which allows you to set the **From** and **To** date/time. It is useful when you already know the exact start and end date/time, for which you want to see the data. The custom range selector appears on the top-right corner of the chart canvas, as shown in the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-custom-range-selector.png" alt="Custom Range Selector" width="700" height="420">
 
-## Set custom date and time
+## Set Custom Date and Time
 
 To set the custom date and time follow the steps below:
 
@@ -28,7 +26,9 @@ A chart with custom range selector is shown below:
 
 ## Show/Hide Custom Range Selector
 
-By default, the Custom Range Selector is visible in every chart. However, you can turn it off if you want, by setting the value of the `enabled` attribute within the `customRangeSelector` of the `extensions` object to `0`.
+By default, the custom range selector is visible in every chart. However, you can turn it off if you want, by setting the value of the `enabled` attribute within the `customRangeSelector` of the `extensions` object to `0`.
+
+Click [here](https://jsfiddle.net/fusioncharts/b5av12og/) to see a live chart with custom range selector disabled.
 
 Refer to the code below:
 
@@ -38,7 +38,7 @@ Refer to the code below:
       caption: {
         text: 'Online Sales of a SuperStore'
       },
-      // Show/Hide Standard Range Selector
+      // Show/Hide Custom Range Selector
       "extensions": {
         "customRangeSelector": {
           "enabled": "0"
@@ -46,4 +46,3 @@ Refer to the code below:
       }
     }
 ```
-See a live chart with Custom Range Selector disabled. Click [here](https://jsfiddle.net/fusioncharts/b5av12og/).

@@ -103,7 +103,7 @@ The code is given below:
         "min": "0",
         "max": "350"
       }]
-    }
+}
 ```
 
 The chart with custom Y-axis limits looks as shown in the image below:
@@ -262,15 +262,15 @@ Now, let's define the `styleDefinition` object and set the **font color** in an 
 
 ```json
 styleDefinition: {
-    "colorstyle": {
+    "colorStyle": {
         "fill": "#ff0000"
     }
 }
 ```
 
-Once the `styleDefinition` is defined, you can refer it for the various components using `colorstyle` attribute.
+Once the `styleDefinition` is defined, you can refer to it for the various components using `colorStyle` attribute.
 
-> In order to understand better, we have named the object as `colorstyle`. You can name the object as per your choice.
+> In order to help you understand better, we have named the object as `colorStyle`. You can name the object as per your choice.
 
 The syntax to set the `styleDefintion` to the Y-axis label is given below:
 
@@ -281,7 +281,7 @@ The syntax to set the `styleDefintion` to the Y-axis label is given below:
       "plot": "Sales",
       "title": "Sales",
       "style": {
-        "title": "colorstyle"
+        "title": "colorStyle"
       }
     }
   ]
@@ -298,11 +298,11 @@ In the above sample, **font color** of the Y-axis label has been changed.
 
 The code to update the cosmetic properties of other elements in **y-axis** is given below:
 
-```json
+```javascript
 {
         data: dataStore,
         styleDefinition: {
-            "colorstyle": {
+            "colorStyle": {
                 "fill": "#ff0000"
             }
         },
@@ -312,13 +312,13 @@ The code to update the cosmetic properties of other elements in **y-axis** is gi
             "plot": "Sales",
             "title": "Sales",
             style: {
-                title: "colorstyle"
+                title: "colorStyle"
             }
         },
         caption: {
             text: "Online Sales of a SuperStore"
         }
-    }
+}
 ```
 
 Click [here](https://jsfiddle.net/fusioncharts/v6zmn8p2/) to see it in a live chart.

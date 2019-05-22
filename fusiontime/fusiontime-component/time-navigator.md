@@ -28,19 +28,19 @@ The major features of **Time Navigator** include the following:
 
 In this article, we will discuss about the different interactions of the time navigator and how to hide the time navigator.
 
-## Zoom in/out
+## Zoom In/Out
 
 You can use the handles on either side of the active window to select a time period. The data plot in the canvas zooms in/out respectively. This behavior is also applicable when you zoom in/out from the chart canvas, i.e., with the interaction in the chart canvas the time navigator gets updated accordingly. Refer to the image below:
 
 ![Zoom using Time navigator](/gif/fusiontime-nav-zoom.gif)
 
-## Pan the active window
+## Pan the Active Window
 
 You can pan the active window across the time navigator and see the data plots in the canvas update according to the time spread of the active window. Refer to the image below:
 
 ![Pan using Time navigator](/gif/fusiontime-nav-pan.gif)
 
-## Active window labels
+## Active Window Labels
 
 When you hover the mouse pointer over the active window of the time navigator, the time labels appear on both ends of the active window. These labels show the start date/time and the end date/time of the plots in the main chart canvas shown above. You can drag these labels to change the active window.
 
@@ -52,16 +52,18 @@ Refer to the image below:
 
 By default, FusionTime shows the Time Navigator at the bottom of the chart. However, if you don't want to display the Time Navigator, you can hide it using the `enableNavigator` attribute within the `chart` object.
 
+Click [here](https://jsfiddle.net/fusioncharts/975vyr12/) to see a live chart with Time Navigator disabled.
+
 Refer to the code below:
 
 ```javascript
-new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    chart: {
+{
+        data: dataStore,
+        caption: {
+            text: 'Online Sales of a SuperStore'
+        },
+        chart: {
       enableNavigator: "0" // Disables Time Navigator
     }
-  }
-});
+    }
 ```
-See a live chart with Time Navigator disabled. Click [here](https://jsfiddle.net/fusioncharts/975vyr12/).

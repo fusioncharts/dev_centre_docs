@@ -4,7 +4,7 @@ description: This article defines the reference line.
 heading: Reference Lines
 ---
 
-A Reference Line is essentially an arbitrary fixed line, which runs parallel to the time axis and is mapped to a specific value of Y-axis. It can help you quickly compare any data point against a fixed value line.
+A Reference Line is essentially an arbitrary fixed line, which runs parallel to the time axis and is mapped to a specific value of Y-axis. It can help you quickly compare any data point against a line representing a fixed value.
 
 Refer to the image below:
 
@@ -20,7 +20,7 @@ A chart with a reference line is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line %}
 
-See it live! Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/).
+Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/) to see a live chart with a reference line.
 
 In the example given above, a reference line appears, parallel to the time axis. Hover on the knob of the reference line to see the label and the value.
 
@@ -246,7 +246,7 @@ A chart with a dashed reference line looks like as shown below:
 
 {% embed_ftChart dashed-reference-line-in-a-chart %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/Lrtwzfy3/).
+Click [here](https://jsfiddle.net/fusioncharts/Lrtwzfy3/) to see a live chart with a dashed reference line.
 
 In the above example:
 

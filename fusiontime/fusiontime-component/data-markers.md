@@ -6,7 +6,7 @@ heading: Data Marker
 
 Data marker in a chart represents an important event, which occurred on a specific data point. Hovering on a data marker shows additional description of the event in the tooltip.
 
-> Data Markers are not applicable on Stock Charts.
+> Data Markers are not applicable to stock charts.
 
 The image below shows the data marker on a time series chart:
 
@@ -97,9 +97,9 @@ The data marker created using the above code is shown below:
 
 {% embed_ftChart fusioncharts-aspnet-data-markers %}
 
-See it live. Click [here](https://jsfiddle.net/ked5xfgq/).
+Click [here](https://jsfiddle.net/ked5xfgq/) to see a live chart with a data marker.
 
-## Data Markers in MultiVariate Chart
+## Data Markers in Multivariate Chart
 
 When representing time-series data, it is important to mark events which have happened on a particular set of data points at a specific time. In order to achieve this, FusionTime allows you to specify data markers for some specific canvases as well.
 
@@ -124,7 +124,7 @@ For the complete data click [here](https://raw.githubusercontent.com/fusionchart
 
 Now, let’s add the events held on particular dates in the JSON using data markers. The code is shown below:
 
-```json
+```javascript
 {
       data: dataStore,
   "caption": {
@@ -158,16 +158,16 @@ The chart looks as shown below:
 
 {% embed_ftChart data-marker-multi-variate-sample-all-canvas %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/o36h2dzw/).
+Click [here](https://jsfiddle.net/fusioncharts/o36h2dzw/) to see a live chart with data markers.
 
 In the above chart, the data markers have been marked on both the canvases of the chart. There can be a case, where you want to apply a data marker to a particular canvas of a multivariate chart.
 
-**For example:**
+**For Example:**
 
 - The event occured on **2024-9-17** affects both the canvases, i.e., **Units Sold** and the **Sales** of **Cake**.
 - The second event occured on **2027-3-28** affects on the canvas of **Units Sold** on both the items, i.e., **Candy** and **Cookie**.
 
-To apply data marker to the chart for the above scenerio, let's create the data markers one after the other. Follow the steps below:
+To apply data marker to the chart for the above scenerio, let's create the data markers one after the other. Follow the steps given below:
 
 **Step 1**
 
@@ -175,7 +175,7 @@ Data marker on **2024-9-17** will only shown on the `series` for **Cake** and th
 
 Refer to the code:
 
-```json
+```javascript
 {
   "time": "2024-9-17",
   "timeFormat": "%Y-%-m-%-d",
@@ -192,7 +192,7 @@ Data marker on **2024-9-17** will only be shown on the `series` for **Cake** and
 
 Refer to the code:
 
-```json
+```javascript
 {
   "time": "2024-9-17",
   "timeFormat": "%Y-%-m-%-d",
@@ -209,7 +209,7 @@ Data marker on **2027-4-13** will only be shown on the `series` for **Cookie** a
 
 Refer to the code:
 
-```json
+```javascript
 {
   "time": "2027-4-13",
   "timeFormat": "%Y-%-m-%-d",
@@ -226,7 +226,7 @@ Data marker on **2027-4-13** will only be shown on the `series` for **Candy** an
 
 Refer to the code:
 
-```json
+```javascript
 {
   "time": "2027-4-13",
   "timeFormat": "%Y-%-m-%-d",
@@ -239,7 +239,7 @@ Refer to the code:
 
 The consolidated code of the above created data marker is:
 
-```json
+```javascript
 {
   "caption": {
     "text": "La petite boulangerie"
@@ -294,8 +294,6 @@ The consolidated code of the above created data marker is:
 ```
 
 The chart looks as shown below:
-
-<Live Chart>
 
 {% embed_ftChart data-marker-multi-variate-sample %}
 

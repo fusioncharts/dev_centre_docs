@@ -40,7 +40,7 @@ The time series chart is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/).
+Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/) to edit the above chart.
 
 Refer to the code given below:
 
@@ -70,7 +70,7 @@ The above time series chart, rendered with column plot is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/dw4ntp5a/).
+Click [here](https://jsfiddle.net/fusioncharts/dw4ntp5a/) to edit the above chart.
 
 Refer to the code given below:
 
@@ -97,7 +97,7 @@ Let’s create a chart showcasing **Unemployment rate in San Jose & SJ Metro Are
 
 {% embed_ftChart stacked-column-chart %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/3kwzx28o/).
+Click [here](https://jsfiddle.net/fusioncharts/3kwzx28o/) to edit the above chart.
 
 Refer to the code given below:
 
@@ -127,7 +127,7 @@ A time series chart, rendered with area plot is shown below:
 
 {% embed_ftChart online-sales-single-series-area-data-plot %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/q8mevkLb/).
+Click [here](https://jsfiddle.net/fusioncharts/q8mevkLb/) to edit the above chart.
 
 Refer to the code given below:
 
@@ -154,7 +154,7 @@ Let’s create a chart showcasing **total rainfall of Assam and Tripura**. The t
 
 {% embed_ftChart stacked-area-chart %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/esbz82hx/).
+Click [here](https://jsfiddle.net/fusioncharts/esbz82hx/) to edit the above chart.
 
 Refer to the code given below:
 
@@ -184,7 +184,7 @@ Let’s create a chart showcasing **daily visitors count of a website**. The tim
 
 {% embed_ftChart smooth-area-chart %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/q8mevkLb/).
+Click [here](https://jsfiddle.net/fusioncharts/q8mevkLb/) to edit the above chart.
 
 Refer to the code given below:
 
@@ -211,7 +211,7 @@ Let's create a chart showcasing weather report. The time series chart looks like
 
 {% embed_ftChart weather-report-spline-data-plot %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/kg9xnt5w/).
+Click [here](https://jsfiddle.net/fusioncharts/kg9xnt5w/) to edit the above chart.
 
 Refer to the code given below:
 
@@ -241,7 +241,7 @@ Let's create a chart showcasing weather report. The time series chart looks like
 
 {% embed_ftChart weather-report-step-line-data-plot %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/5vew64tL/).
+Click [here](https://jsfiddle.net/fusioncharts/5vew64tL/) to edit the above chart.
 
 Refer to the code given below:
 
@@ -271,7 +271,7 @@ Let's create a chart showing Apple Inc. Stock Price. The time series chart looks
 
 {% embed_ftChart apple-stock-price-candlestick-data-plot %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/v3Lt5zsm/).
+Click [here](https://jsfiddle.net/fusioncharts/v3Lt5zsm/) to edit the above chart.
 
 Refer to the code given below:
 
@@ -305,7 +305,7 @@ Let's create a chart showing NASDAQ Composite Index. The time series chart looks
 
 {% embed_ftChart composite-index-ohlc-data-plot %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/moc7v6uw/).
+Click [here](https://jsfiddle.net/fusioncharts/moc7v6uw/) to edit the above chart.
 
 Refer to the code given below:
 

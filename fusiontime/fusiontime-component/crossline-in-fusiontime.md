@@ -14,8 +14,10 @@ Refer to the image below:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-cross-line.png" alt="CrossLine" width="700" height="420">
 
-See it live! Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/).
+Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/) to see a live chart with crosslines.
 
 In the case of multivariate charts, the vertical crosslines will be visible in each canvas for a particular time instance, whereas the horizontal crossline will appear only on the canvas on which the user is interacting. 
 
 ![Crossline in multivariate](/gif/multivariate-crossline.gif)
+
+Click [here](https://jsfiddle.net/fusioncharts/yfewbpLq/) to see a live multivariate chart with crosslines.
