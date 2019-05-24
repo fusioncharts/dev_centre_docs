@@ -91,7 +91,7 @@ Refer to the code given below:
 
 ## Stacked Column
 
-To render a time series chart with the stacked column as data plot, set the value of `type` attribute to `column` and the value of the `series` to the y-axis value.
+To render a time series chart with the stacked column as data plot, set the value of `type` attribute to `column` and the value of the `series` to the Y-axis value.
 
 Let’s create a chart showcasing **Unemployment rate in San Jose & SJ Metro Area**.
 
@@ -148,9 +148,9 @@ Refer to the code given below:
 
 ## Stacked Area
 
-To render a time series chart with the stacked area as data plot, set the value of `type` attribute to `area` and the value of the `series` to the y-axis value.
+To render a time series chart with the stacked area as data plot, set the value of `type` attribute to `area` and the value of the `series` to the Y-axis value.
 
-Let’s create a chart showcasing **total rainfall of Assam and Tripura**. The time series chart looks like:
+Let’s create a chart showcasing **Total Rainfall of Assam and Tripura**. The time series chart looks like:
 
 {% embed_ftChart stacked-area-chart %}
 
@@ -180,7 +180,7 @@ Refer to the code given below:
 
 To render a time series chart with the smooth area as data plot, set the value of `type` attribute to `smooth-area`.
 
-Let’s create a chart showcasing **daily visitors count of a website**. The time series chart looks like:
+Let’s create a chart showcasing **Daily Visitor Count of a Website**. The time series chart looks like:
 
 {% embed_ftChart smooth-area-chart %}
 
@@ -341,7 +341,7 @@ Data plots can either be styled:
 
 - using **plot configuration**
 
-- or by **y-axis configuration**
+- or by **Y-axis configuration**
 
 ### Plot Configuration
 
@@ -375,7 +375,7 @@ Example:
 
 <img src="{% site.BASE_URL %}/images/area-chart-three-elements.png" alt="Time Axis" width="700" height="420">
 
-In the above image, as you can see an area chart with three elements, a line, an area, and an anchor. You can either style them individually or style them all together.
+In the above image, as you can see an area chart with three elements - a line, an area, and an anchor. You can either style them individually or style them all together.
 
 Let's take an example of an area chart where you want to customize the opacity of the above three elements with different values. The code looks like as shown below:
 
