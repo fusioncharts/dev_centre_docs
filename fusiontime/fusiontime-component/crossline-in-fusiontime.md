@@ -16,7 +16,7 @@ Refer to the image below:
 
 Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/) to see a live chart with crosslines.
 
-In the case of multivariate charts, the vertical crosslines will be visible in each canvas for a particular time instance, whereas the horizontal crossline will appear only on the canvas on which the user is interacting. 
+In the case of multivariate charts, the vertical crosslines will be visible in each canvas for a particular time instance, whereas the horizontal crossline will appear only on the canvas on which the user is interacting.
 
 ![Crossline in multivariate](/gif/multivariate-crossline.gif)
 
