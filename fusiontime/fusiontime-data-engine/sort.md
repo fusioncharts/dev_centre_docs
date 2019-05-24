@@ -1,7 +1,7 @@
 ---
-title: Sort data | FusionCharts
+title: Sort Data | FusionCharts
 description: This article outlines the steps to sort data.
-heading: Sort data
+heading: Sort Data
 ---
 
 One of the major requirements while working with large sets of data is to sort the data in a specific order - most commonly, ascending or descending. 
@@ -32,7 +32,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Ascending Order
 
-When you sort one or more columns in the `DataTable` in ascending order, the data will be arranged from the lowest to the highest values. FusionTime by default sorts data in ascending order. 
+When you sort one or more columns in the `DataTable` in ascending order, the data will be arranged from the lowest to the highest values. By default, FusionTime sorts data in ascending order. 
 
 The code to sort the above table with respect to the `Sales` column in ascending order is given below:
 
@@ -86,11 +86,11 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 1/22/2011 | Australia | 6.318 | 1 | 1.77
 1/24/2011 | United States | 5.94 | 3 | 0.95 
 
-### Comparator function
+### Comparator Function
 
 You can use the JavaScript comparator function to sort the data.
 
-Let's assume you want to sort the aboveDataTableby the total profit in descending order, i.e., the highest sale will appear at the top of the table. The total profit is calculated using `(Sales * Quantity) - Shipping Cost` formula.
+Let's assume you want to sort the above DataTable by the total profit in descending order, i.e., the highest sale will appear at the top of the table. The total profit is calculated using `(Sales * Quantity) - Shipping Cost` formula.
 
 The code to apply this sorting to the above DataTable is given below:
 
@@ -102,7 +102,7 @@ var customSortQuery = FusionCharts.DataStore.Operators.sort((a, b) => {
 var sortedData = dataTable.query(customSortQuery);
 ```
 
-The new DataTable looks like as shown below:
+The new DataTable looks as shown below:
 
 Order Date | Country | Sales | Quantity | Shipping Cost
 ---|---|---|---|---  
