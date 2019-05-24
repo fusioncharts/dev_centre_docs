@@ -71,7 +71,7 @@ The code is given below:
     }
 ```
 
-In the above code, the value of `orientation` attribute has been set to **right** under `yaxis` object.
+In the above code, the value of `orientation` attribute has been set to **right** under `yAxis` object.
 
 By applying the above attribute, the chart looks like as shown in the image below:
 

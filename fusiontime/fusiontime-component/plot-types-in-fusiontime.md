@@ -224,7 +224,7 @@ Refer to the code given below:
        subCaption: {
         text: "Analysis of Atmospheric Pressure",
        },
-      yaxis: {
+      yAxis: {
         "plot": {
           "value": "Speed",
           "type": "smooth-line"
@@ -254,7 +254,7 @@ Refer to the code given below:
        subCaption: {
         text: "Analysis of Atmospheric Pressure",
        },
-      yaxis: {
+      yAxis: {
         "plot": {
           "value": "Pressure",
           "type": "step-line"
@@ -317,7 +317,7 @@ Refer to the code given below:
     caption: {
         text: 'Online Sales of a SuperStore in the US'
     },
-    yaxis: {
+    yAxis: {
         "plot": {
             "value": {
               open: "Open",

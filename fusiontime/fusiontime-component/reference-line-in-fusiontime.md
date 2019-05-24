@@ -105,7 +105,7 @@ In FusionTime, each chart canvas can have endless reference lines. A chart with 
 
 {% embed_ftChart multiple-reference-line-in-a-chart %}
 
-See it live! Click [here](https://jsfiddle.net/fusioncharts/ymgsv027/).
+Click [here](https://jsfiddle.net/fusioncharts/ymgsv027/) to edit the above chart.
 
 The code to render multiple reference lines in a canvas is shown below:
 
@@ -149,7 +149,7 @@ The code to render multiple reference lines in a canvas is shown below:
 
 You can use CSS styling to set the cosmetic properties of a reference line. To set the styling, instead of creating a separate CSS file, define the style properties in the `StyleDefinition` object.
 
-### Customize the line color
+### Customize the Line Color
 
 You can customize the color of the reference line by defining the `styleDefinition` object and set the color in an object. The code is shown below:
 
@@ -161,7 +161,7 @@ styleDefinition: {
 }
 ```
 
-> In order to understand better, we have named the object as `styleReferenceLine`. You can name the object as per your choice.
+> In order to help you understand better, we have named the object as `styleReferenceLine`. You can rename the object as per your choice.
 
 After defining the `StyleDefinition`, use the `styleReferenceLine` as the value of the `stroke` property within the `referenceLine` object to customize the cosmetic properties of the reference line.
 
@@ -180,7 +180,7 @@ Refer to the code below:
     caption: {
         text: 'Online Sales of a SuperStore in the US'
     },
-    yaxis: {
+    yAxis: {
         "plot": {
             "value": "Sales",
             "type": "line"
@@ -203,7 +203,7 @@ The chart after applying the above attributes will look like as shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot-reference-line-style-definition %}
 
-See it live. Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/).
+Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/) to edit the above chart.
 
 ### Style Reference Line
 
@@ -242,11 +242,11 @@ Refer to the code given below:
 }
 ```
 
-A chart with a dashed reference line looks like as shown below:
+A chart with a dashed reference line looks as shown below:
 
 {% embed_ftChart dashed-reference-line-in-a-chart %}
 
-Click [here](https://jsfiddle.net/fusioncharts/Lrtwzfy3/) to see a live chart with a dashed reference line.
+Click [here](https://jsfiddle.net/fusioncharts/2yhbj6fx/) to see a live chart with a dashed reference line.
 
 In the above example:
 
