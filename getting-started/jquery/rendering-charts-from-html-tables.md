@@ -2,7 +2,6 @@
 title: Rendering Charts from HTML Tables | FusionCharts
 description: The FusionCharts jQuery helper exposes methods for rendering charts, where the FusionCharts constructor object is passed as argument to the rendering methods
 heading: Rendering Charts from HTML Tables
-chartPresent: true
 ---
 
 The FusionCharts jQuery helper exposes [methods for rendering charts](/getting-started/jquery/your-first-chart-using-jquery), where the FusionCharts constructor object is passed as an argument to the rendering methods.
