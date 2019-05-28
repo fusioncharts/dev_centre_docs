@@ -55,7 +55,6 @@ Refer to the code below:
 ```json
 {
     "chart": {
-    	...
         "highlightParentPieSlices": "0",
         "highlightChildPieSlices": "1"
     },
@@ -77,7 +76,6 @@ Refer to the code below:
 ```json
 {
     "chart": {
-    	...
         "innerRadius": "10"
     },
 }
@@ -98,7 +96,6 @@ Refer to the code below:
 ```json
 {
     "chart": {
-    	...
         "exportEnabled": "1"
     },
 }
@@ -109,3 +106,25 @@ The chart will look as shown below:
 {% embed_chart standard-charts-multi-level-pie-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/pcmz12Lv/) to edit the multi-level pie chart.
+
+## Show/Hide Category Label and Value
+
+Starting version 3.13.5, you can enable or disable the visibility of labels and values categorically using `showLabel` and `showValue` respectively. For instance:
+
+- Set the value of `showLabel` to `0` to hide a label of a particular category.
+- Set the value of `showValue` to `0` to hide the value of a particular category.
+
+Refer to the code below:
+
+```json
+"category": [{
+    "showlabel": "0",
+    "showvalue": "0"
+}]
+```
+
+The chart will look like as shown below:
+
+{% embed_chart standard-charts-multi-level-pie-chart-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/n2ycfvas/) to edit the above chart.
