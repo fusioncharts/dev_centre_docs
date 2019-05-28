@@ -8,7 +8,7 @@ heading: Overview
 
 `DataStore` is an in-browser store of tabular data. Mainly, the `DataStore` contains the `DataTable` derived from the original data source along with some data operations. You can then perform data operations on this `DataTable` to transform the data as per your requirement. For any operation applied a new `DataTable` is generated keeping the source data intact.
 
-> 'DataStore' accepts both arrays of JSON object or 2D array.
+> 'DataStore' accepts either a JSON object, or a 2D array.
 
 The `DataStore` contains the following:
 

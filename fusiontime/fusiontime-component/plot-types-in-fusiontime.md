@@ -46,8 +46,8 @@ Refer to the code given below:
 
 ```javascript
 {
-      data: dataStore,
-      chart: {
+    data: dataStore,
+    chart: {
     },
     caption: {
         text: 'Online Sales of a SuperStore in the US'

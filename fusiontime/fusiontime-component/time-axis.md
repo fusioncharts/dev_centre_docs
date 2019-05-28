@@ -30,7 +30,7 @@ Click [here](https://jsfiddle.net/fusioncharts/Lut0752a/) to edit the above char
 
 Try and change the time period and see how the time axis adjusts automatically to respond to the change occured. For example - try and zoom into the data from the chart canvas.
 
-## Multiple time columns in data
+## Multiple Time Columns in Data
 
 Let's suppose that you have a tabular data which has multiple date/time columns. For example - Order Date and Shipping Date. The time axis of FusionTime can only represent one date/time column on the timescale. In such a scenario, specify which date/time column you want the time axis to represent. To do so, refer to the code below:
 
@@ -48,8 +48,8 @@ new FusionCharts({
 In the above code:
 
 - Create the `xAxis` object.
-- Set the column name which you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date` is the column name.
+- Set the column name you want to represent on the time axis as the value of the `plot` property. In this case, `Order Date` is the column name.
 
 > If the tabular data has only one date type column, then FT automatically represents it in the `xAxis`.
 
-> If multiple data type columns are available in the tabular data and we do not specify the data type column in `xAxis`, then FT will assign the first date type column in the tabular data to the `xAxis`.
+> If multiple data type columns are available in the tabular data and we do not specify the data type column in `xAxis`, then FusionTime will assign the first date type column in the tabular data to the `xAxis`.
