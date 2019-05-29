@@ -24,6 +24,11 @@ This article contains the list of attributes of FusionTime. The attributes have 
 		<td>Array(Time Marker Configuration)</td>
 		<td>Array of `TimeMarkerConfigs` that will be shown along the axis.</td>
 	</tr>
+	<tr>
+		<td><h3>`STYLE ATTRIBUTES`</h3></td>
+		<td></td>
+		<td></td>
+	</tr>
 </table>
 
 ```javascript
