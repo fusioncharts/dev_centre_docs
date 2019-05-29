@@ -71,7 +71,7 @@ FusionTime allows you to add style to the time navigator of the chart. Time Navi
 
 Refer to the image shown below:
 
-![](null)
+<img src="{% site.BASE_URL %}/images/time-navigator-window-scrollbar.png">
 
 You can customize both the above sub-sections of the time navigator.
 
