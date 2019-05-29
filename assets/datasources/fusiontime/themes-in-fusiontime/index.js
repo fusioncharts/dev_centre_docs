@@ -21,7 +21,7 @@
                     'fusion': 'Fusion',
                     'gammel': 'Gammel',
                     'candy': 'Candy',
-                    'umber': 'umber'
+                    'umber': 'Umber'
                 },
                 themeSelected = 'fusion',
                 chartRef = eventObj.sender;
