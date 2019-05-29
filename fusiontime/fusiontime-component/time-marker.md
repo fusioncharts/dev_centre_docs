@@ -26,11 +26,11 @@ To create a single time instance marker follow the steps below:
 Refer to the code below:
 
 ```javascript
-xAxis: {
-    timemarker: [{
-        start: 'Mar-1982',
-        label: 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
-        timeFormat: "%b-%Y"
+"xAxis": {
+    "timemarker": [{
+        "start": 'Mar-1982',
+        "label": 'Economic downturn was triggered by {br} tight monetary policy in an effort to {br} fight mounting inflation.',
+        "timeFormat": "%b-%Y"
     }],
 }
 ```
@@ -154,3 +154,54 @@ xAxis: {
 A sample chart is shown below:
 
 {% embed_ftChart fusiontime-components-time-span-marker-full %}
+
+## Style Definition
+
+You can set the cosmetic properties of all the parts of a time marker using familiar CSS styling approach by specifying the different style parameters in the 'style' object' of the 'timeMarker' object. Even the cosmetic properties for the hover state of each time marker element can be specified.
+
+The image below highlights the marker-box, marker-line, and the marker-notch of the time marker.
+
+<Image>
+
+The image below highlights the time marker and the text of the time marker.
+
+<IMAGE>
+
+Refer to the code given below:
+
+```javascript
+"dataSource": {
+    "yAxis": [{
+        "timemarker": [{
+            "style": {
+                "marker": { }, // Affects style of marker box, line and notch
+                "marker:hover": { }, // Affects hover style of marker box, line and
+                // notch
+                "marker-box": { },
+                "marker-box:hover": { },
+                "marker-line": { },
+                "marker-line:hover": { },
+                "marker-notch": { },
+                "marker-notch:hover": { },
+                "text": { },
+                "text:hover": { }
+            }
+        }]
+    }]
+}
+```
+
+In the above code:
+
+- Create a `style` object under `timemarker` object to add styling to the different elements of `timemarker`.
+- In the style `object`:
+  - `marker` is used to style the marker box, line, and notch.
+  - `marker:hover` is used to style the marker box, line, and notch when hovered.
+  - `marker-box` is used to style the marker box of the time marker.
+  - `marker-box:hover` is used to style the marker box of the time marker when hovered.
+  - `marker-line` is used to style the marker line of the time marker.
+  - `marker-line:hover` is used to style the marker line of the time marker when hovered.
+  - `marker-notch` is used to style the notch of the time marker.
+  - `marker-notch:hover` is used to style the notch of the time marker when hovered.
+  - `text` is used to style the text of the time marker.
+  - `text:hover` is used to style the text of the time marker when hovered.

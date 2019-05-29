@@ -50,17 +50,132 @@ Refer to the image below:
 
 ## Show/Hide Time Navigator
 
-By default, FusionTime shows the Time Navigator at the bottom of the chart. However, if you don't want to display the Time Navigator, you can hide it using the `enableNavigator` attribute within the `chart` object.
+By default, FusionTime shows the Time Navigator at the bottom of the chart (and the final chart in the case of multivariate charts). However, if you don’t want to display the Time Navigator, you can hide it using the `enabled` attribute within the `navigator` object.
 
 Refer to the code below:
 
 ```javascript
-new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    chart: {
-      enableNavigator: "0" // Disables time Time Navigator
+“dataSource”: {
+    "navigator": {
+        "enabled": “Boolean”
     }
-  }
-});
+}
 ```
+
+## Style Definition
+
+FusionTime allows you to add style to the time navigator of the chart. Time Navigator of a time-series chart can be divided into two sub-sections:
+
+- Window
+- Scroll Bar
+
+Refer to the image shown below:
+
+![](null)
+
+You can customize both the above sub-sections of the time navigator.
+
+> The styling of the time navigator in FusionTime is handled by **SVG** styling.
+
+### Customize the Time Navigator Window
+
+You can customize the **window** of the time navigator using the `style` object under `window` object.
+
+Refer to the code below:
+
+```javascript
+"dataSource": {
+    "navigator": {
+        "enabled": Boolean,
+        "window": {
+            "style": {
+                "handle": {
+                    "padding": "1px"
+                },
+                "handle-grip": {
+                    "padding": "2px"
+                },
+                "mask": {
+                    "color": "#ffffff"
+                }
+            }
+        }
+    }
+}
+```
+
+In the above code:
+
+- Set the value of `enable` attribute to **true** to enable the scroll bar of the time navigator.
+- Create a `style` object under the `window` object to add styling to the scroll bar.
+- In the `style` object:
+  - `handle` used to style the **handle** element of the scroll bar window.
+  - `handle-grip` used to style the handle-grip of the handle element.
+  - `mask` is used to style the mask of the scroll bar window.
+
+### Customize the Scrollbar
+
+You can customize the scroll bar of a time navigator using the `style` object under `scrollbar` object.
+
+Refer to the code below:
+
+```javascript
+"dataSource": {
+    "navigator": {
+        "enabled": Boolean,
+        "scrollbar": {
+            "style": {
+                "button": {
+                    "padding": "10px"
+                },
+                "arrow": {
+                    "color": "#ff0000"
+                },
+                "scroller": {
+                    "padding": "1px"
+                },
+                "grip": {
+                    "color": "#ff00ff"
+                },
+                "track": {
+                    "color": "#ff0fff"
+                }
+            }
+        }
+    }
+}
+```
+
+In the above code:
+
+- Set the value of `enable` attribute to **true** to enable the scroll bar of the time navigator.
+- Create a `style` object under `scrollBar` object to add styling to the scroll bar.
+- In the `style` object:
+  - `button` is used to style the buttons present on the left and right most corner of the scroll bar.
+  - `arrow` is used to style the arrows present inside the buttons of the scroll bar.
+  - `scroller` is used to style the scroller of the scroll bar.
+  - `grip` is used to style the grip of the scroll bar.
+  - `track` is used to style the track of the scroll bar.
+
+### Customize the Grid Line
+
+You can customize the vertical grid-lines of the x-axis in the time navigator using the `grid-line` style in the `xAxis` object.
+
+Refer to the code below:
+
+```javascript
+dataSource: {
+    "xAxis": {
+        "style": {
+            "grid-line": {
+                "color": "#ff0000"
+            }
+        }
+    }
+}
+```
+
+In the above code:
+
+- Create a `style` object under `xAxis` object to customize the grid-line.
+- In the `style` object, `grid-line` styles the vertical grid-line of the x-axis in the time navigator.
