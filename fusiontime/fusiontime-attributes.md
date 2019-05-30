@@ -273,6 +273,34 @@ new FusionCharts({
 
 ## Y Axes
 
+To configure the y-axis of the chart you can create the `yAxis` object under `xaxis` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    yAxis: [
+      {
+        plotType: " ", //To set the plot type out the 'plot' object
+        min: " ", //Minimum value of the axis
+        max: " ", //Maximum value of the axis
+        format: {
+          //Measures
+          prefix: " ",
+          suffix: " "
+        },
+        plot: {
+          //Column header for the measure which is plotted against the Y Axis
+        },
+        type: " ", //Plot type to render the chart
+        title: " ", //Title of the axis
+        aggregation: " " //Aggregate Function
+      }
+    ]
+  }
+});
+```
+
 <table>
 	<tr>
 		<th>Attribute</th>
@@ -321,51 +349,7 @@ new FusionCharts({
 	</tr>
 </table>
 
-```javascript
-new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    yAxis: [
-      {
-        plotType: " ", //To set the plot type out the 'plot' object
-        min: " ", //Minimum value of the axis
-        max: " ", //Maximum value of the axis
-        format: {
-          //Measures
-          prefix: " ",
-          suffix: " "
-        },
-        plot: {
-          //Column header for the measure which is plotted against the Y Axis
-        },
-        type: " ", //Plot type to render the chart
-        title: " ", //Title of the axis
-        aggregation: " " //Aggregate Function
-      }
-    ]
-  }
-});
-```
-
 ## Plot Configuration
-
-<table>
-	<tr>
-		<th>Attributes</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>`generic`</td>
-		<td>Object</td>
-		<td>Style specified within this object is applied across the chart.</td>
-	</tr>
-	<tr>
-		<td>`connectNullData`</td>
-		<td>Boolean</td>
-		<td>Connects the null data for line and area plots.</td>
-	</tr>
-</table>
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -411,6 +395,24 @@ new FusionCharts({
 
 </div>
 </div>
+
+<table>
+	<tr>
+		<th>Attributes</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`generic`</td>
+		<td>Object</td>
+		<td>Style specified within this object is applied across the chart.</td>
+	</tr>
+	<tr>
+		<td>`connectNullData`</td>
+		<td>Boolean</td>
+		<td>Connects the null data for line and area plots.</td>
+	</tr>
+</table>
 
 ## Reference Lines
 
