@@ -4,7 +4,7 @@ description: This article talks about the SDKs used for exporting a dashboard.
 heading: Customize the dimensions of exported files
 ---
 
-FusionExport allows your to export your dashboard in different formats. You can also customize the height and width of the exported image.
+While exporting a dashboard FusionExport allows you to customize the height and width of the exported image. This helps you to specify the exact dimensions as per your requirement.
 
 ## Prerequisites
 
