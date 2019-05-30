@@ -16,6 +16,8 @@ Before you start, ensure that you have:
 
 3. [Export a Dashboard](/exporting-charts/using-fusionexport/installation/export-a-dashboard)
 
+## Customize the dimension
+
 To customize the height and width of the exported dashboard images, follow the steps given below:
 
 - Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
@@ -748,6 +750,4 @@ The HTML template for the above code is given below:
 </html>
 ```
 
-Click [here](https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf) to download the exported PDF file.
-
-Click [here](https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions) to download the above project.
+<div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
