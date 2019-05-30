@@ -45,7 +45,7 @@ new FusionCharts({
 	<tr>
 </table>
 
-### Style Time Axis Components
+#### Style Time Axis Components
 
 You can add style to the x-Axis components using `style` object under `xaxis` object.
 
@@ -222,52 +222,52 @@ new FusionCharts({
 		<th>Description</th>
 	</tr>
 	<tr>
-		<th>`marker`</th>
-		<th>SVGStyle</th>
-		<th>Styles the marker box, line, and notch.</th>
+		<td>`marker`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker box, line, and notch.</td>
 	</tr>
 	<tr>
-		<th>`marker:hover`</th>
-		<th>SVGStyle</th>
-		<th>Styles the marker box, line and notch when hovered.</th>
+		<td>`marker:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker box, line and notch when hovered.</td>
 	</tr>
 	<tr>
-		<th>`marker-box`</th>
-		<th>SVGStyle</th>
-		<th>Styles the marker box of the time marker.</th>
+		<td>`marker-box`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker box of the time marker.</td>
 	</tr><tr>
-		<th>`marker-box:hover`</th>
-		<th>SVGStyle</th>
-		<th>Styles the marker box of the time marker when hovered.</th>
+		<td>`marker-box:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker box of the time marker when hovered.</td>
 	</tr>
 	<tr>
-		<th>`marker-line`</th>
-		<th>SVGStyle</th>
-		<th>Styles the marker line of the time marker.</th>
+		<td>`marker-line`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker line of the time marker.</td>
 	</tr><tr>
-		<th>`marker-line:hover`</th>
-		<th>SVGStyle</th>
-		<th>Styles the marker line of the time marker when hovered.</th>
+		<td>`marker-line:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker line of the time marker when hovered.</td>
 	</tr>
 	<tr>
-		<th>`marker-notch`</th>
-		<th>SVGStyle</th>
-		<th>Styles the notch of the time marker.</th>
+		<td>`marker-notch`</td>
+		<td>SVGStyle</td>
+		<td>Styles the notch of the time marker.</td>
 	</tr>
 	<tr>
-		<th>`marker-notch:hover`</th>
-		<th>SVGStyle</th>
-		<th>Styles the notch of the time marker when hovered.</th>
+		<td>`marker-notch:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the notch of the time marker when hovered.</td>
 	</tr>
 	<tr>
-		<th>`text`</th>
-		<th>SVGStyle</th>
-		<th>Styles the text of the time marker.</th>
+		<td>`text`</td>
+		<td>SVGStyle</td>
+		<td>Styles the text of the time marker.</td>
 	</tr>
 	<tr>
-		<th>`text:hover`</th>
-		<th>SVGStyle</th>
-		<th>Styles the text of the time marker when hovered.</th>
+		<td>`text:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the text of the time marker when hovered.</td>
 	</tr>
 </table>
 
