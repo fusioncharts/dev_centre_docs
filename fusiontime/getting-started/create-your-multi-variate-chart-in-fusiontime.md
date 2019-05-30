@@ -27,7 +27,7 @@ The data for the above chart is shown in the table below:
 
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 
-## Create the `schema`
+## Create the `Schema`
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 
@@ -64,7 +64,7 @@ In the above code:
 
 Now that we have the columns ready for the `DataTable` let's learn how to put the data values into the `DataTable`.
 
-## Create `data`
+## Create the `Data`
 
 To add the data, let's create a `data.json` file and copy the following code:
 
@@ -131,7 +131,7 @@ We are all set with our data to create the chart.
 
 Now, let's create the `.html` file to render the above chart.
 
-## Create `index` file
+## Create the `Index` File
 
 Once the schema and data files are ready it is time to create the `DataTable` and render the chart. To do this, create an `index` file and copy the following code:
 

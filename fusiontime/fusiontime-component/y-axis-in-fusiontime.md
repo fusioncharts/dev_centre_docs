@@ -195,7 +195,7 @@ In some scenarios, you might also have data for which instead of a usual linear 
 
 {% embed_ftChart log-y-axis-chart %}
 
-The chart is a logarithmic Y-axis chart created to showcase the **Thermal flow of machinery observed** from the east region thermal sensor.
+The chart is a logarithmic Y-axis chart created to showcase the **Thermal Flow of Machinery Observed** from the east region thermal sensor.
 
 To render a chart with logarithmic Y-axis refer to the code below:
 
@@ -220,7 +220,7 @@ To render a chart with logarithmic Y-axis refer to the code below:
 
 Click [here](https://jsfiddle.net/fusioncharts/rcbm1pg6/) to see it in a live chart.
 
-In the above code, the value of the `type` attribute of `yAxis` object has been set to `log` which renders a chart with the logarithmic Y-axis.
+In the above code, the value of the `type` attribute of `yAxis` object has been set to `log`, which renders a chart with the logarithmic Y-axis.
 
 ## Change Log Base
 

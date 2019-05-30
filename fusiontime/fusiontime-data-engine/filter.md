@@ -33,7 +33,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Equals
 
-**Equals** is an operation which can be used when you want to filter specific data value. In the above table, the Country column has three countries in it. To filter the data for United States, set the `equals` operator and set its value to United States.
+**Equals** is an operation which you can use to filter specific data values. In the above table, the Country column has three countries in it. To filter the data for United States, use the `equals` operator and set its value to United States.
 
 **Equals** takes two arguments which are:
 
@@ -57,7 +57,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Greater
 
-**Greater** is an operation which can be used when you want to filter the data values greater than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `greater` operator to filter the values greater than **100**.
+**Greater** is an operation which you can use to filter data values greater than a specific numeric value. In the above table, the **Sales** column consists of numeric values. Let's apply the `greater` operator to filter the values greater than **100**.
 
 **Greater** takes two arguments which are:
 
@@ -81,7 +81,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### GreaterEquals
 
-This operation is similar to `greater` filter which can be used when you want to filter the data values greater than a specific numeric value. `greaterEquals` operation is used when you want to filter the data values greater and equal to the specific value. In the above table, the **Quantity** column consists of numeric value. Let's apply the `greaterEquals` operator to filter the values greater and equal to **3**.
+This operation is similar to `greater` filter which you can use to filter data values greater than a specific numeric value. Use `greaterEquals` operation when you want to filter the data values greater and equal to the specific value. In the above table, the **Quantity** column consists of numeric value. Let's apply the `greaterEquals` operator to filter the values greater and equal to **3**.
 
 **GreaterEquals** takes two arguments which are:
 
@@ -110,7 +110,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 
 ### Less
 
-**Less** is an operation which can be used when you want to filter the data values less than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `less` operator to filter the values less than **100**.
+**Less** is an operation which you can use to filter the data values less than a specific numeric value. In the above table, the **Sales** column consists of numeric value. Let's apply the `less` operator to filter the values less than **100**.
 
 **Less** takes two arguments which are:
 
@@ -185,7 +185,7 @@ Order Date | Country | Sales | Quantity | Shipping Cost
 1/24/2011 | India | 59.25 | 5 | 4.27 
 1/26/2011 | India | 79.38 | 3 | 13.82 
 
-### Filter by condition
+### Filter by Condition
 
 Other than the above predefined filters, FusionTime gives an option to filter the data by condition.
 

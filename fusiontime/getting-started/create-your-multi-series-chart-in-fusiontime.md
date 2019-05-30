@@ -27,7 +27,7 @@ The data for the above chart is shown in the table below:
 
 Now, let's check how to prepare the schema and the data for the `DataTable`.
 
-## Create the `schema`
+## Create the `Schema`
 
 To define the schema, let's create a `schema.json` file and copy the following code:
 
@@ -47,7 +47,7 @@ let schema = [{
 
 To understand the `schema.json` in details click [here](/fusiontime/getting-started/create-your-first-chart-in-fusiontime).
 
-## Create `data`
+## Create the `Data`
 
 To add the data, let's create a `data.json` file and copy the following code:
 
@@ -104,7 +104,7 @@ We are all set with our data to create the chart.
 
 > By default, FusionTime applies the average function to aggregate the data and display on the chart. You can change the aggregate function from `average` to any other numeric calculation. To know more click [here](/fusiontime/getting-started/change-default-aggregation).
 
-## Create the `index` file
+## Create the `Index` File
 
 Creating a chart with multiple plots is very simple in FusionTime. You just need to specify the column name in the `series` attribute within [`yaxis`](/fusiontime/fusiontime-component/y-axis-in-fusiontime) object. To do this, create an `index` file and copy the following code:
 

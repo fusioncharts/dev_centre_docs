@@ -100,7 +100,7 @@ The data marker created using the above code is shown below:
 Click [here](https://jsfiddle.net/ked5xfgq/) to see a live chart with a data marker.
 
 ## Data Markers in Multivariate Chart
-
+  
 When representing time-series data, it is important to mark events which have happened on a particular set of data points at a specific time. In order to achieve this, FusionTime allows you to specify data markers for some specific canvases as well.
 
 Let's take an example of the following data.

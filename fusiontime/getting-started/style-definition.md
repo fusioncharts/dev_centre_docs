@@ -161,7 +161,7 @@ You can apply style to a subcaption is the same way as caption.
 }
 ```
 
-## X-Axis
+## X-axis
 
 Styling can be applied to three elements of the X-axis:
 
@@ -187,7 +187,7 @@ Style applied to `tick marks` and `label` is directly applied to the major tick 
 }
 ```
 
-## Y-Axis
+## Y-axis
 
 Styling can be applied to four elements of Y-axis:
 
@@ -327,7 +327,7 @@ You can also apply style across all the chart types using `generic` object withi
 
 > All the supported chart types of time-series chart can be customized using the `plotConfig` object. To know more click [here](/fusiontime/fusiontime-component/plot-types-in-fusiontime#style-definition).
 
-### Y-Axis Configuration
+### Y-axis Configuration
 
 In FusionTime, you can also style the data plots specifically. These styling will be scoped to only the set of plots for which the style has been defined. In the `yAxis` object the `style` object is defined under the `plot` object. The rest of the steps are the same as the plot configuration method.
 

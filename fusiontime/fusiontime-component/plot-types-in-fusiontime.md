@@ -15,7 +15,7 @@ FusionTime supports the following plot types:
 - Stacked Area
 - Smooth Area
 - Spline
-- Step Line
+- Step-line
 - Candlestick
 - OHLC
 

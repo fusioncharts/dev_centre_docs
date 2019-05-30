@@ -65,7 +65,7 @@ In the above code:
 
 ### Data
 
-To add values in each column of the `DataTable` you can provide the data in arrays of JSON object or 2D array. In this article, we will use the 2D array format.
+To add values in each column of the `DataTable` you can provide the data in arrays of JSON object or 2D array. Here, we will use the 2D array format.
 
 The data format is shown below:
 
@@ -83,8 +83,8 @@ let data = [
 In the above code:
 
 - `data` is the variable in which the data array is saved.
-- Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by each object of the `schema`. The values in each row of the array represents the following:
-  _ The name of the Country.
-  _ Time according to the format \* Total Sales amount
+- Each row in the data array corresponds to a row in the `DataTable` and each element in a row are represented by an object of the `schema`. The values in each row of the array represents the following:
+  _ The name of the country.
+  _ Time according to the format \* total sales amount
 
-Next, we will discuss the different operators which you can apply to the `DataTable`.
+Next, we will discuss the different operators you can apply to the `DataTable`.
