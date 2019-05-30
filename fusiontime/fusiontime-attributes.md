@@ -8,7 +8,7 @@ This article contains the list of attributes of FusionTime. The attributes have 
 
 ## Time Axis
 
-The `xAxis` object is used to configure compoments of Time Axis. You can create the `xAxis` object under `dataSource` object.
+The `xAxis` object is used to configure components of Time Axis. You can create the `xAxis` object under `dataSource` object.
 
 **Syntax:**
 
@@ -45,7 +45,7 @@ new FusionCharts({
 	<tr>
 </table>
 
-### Style Time Axis Componemts
+### Style Time Axis Components
 
 You can add style to the x-Axis components using `style` object under `xaxis` object.
 
