@@ -1,7 +1,7 @@
 ---
 title: Export PDF files in Print Format | FusionCharts
 description: This article talks about how to export PDF files in print format.
-heading: Export PDF files in Print Format
+heading: Export PDF Files in Print Format
 ---
 
 FusionExport allows you to export your exported PDF files in print-friendly format.
@@ -751,4 +751,4 @@ The HTML template for the above code is given below:
   </body>
 </html>
 ```
-<div class="btn-holder"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
+<div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
