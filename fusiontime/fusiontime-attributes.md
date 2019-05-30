@@ -43,10 +43,6 @@ new FusionCharts({
 		<td>Array of `TimeMarkerConfigs` that will be shown along the axis.</td>
 	</tr>
 	<tr>
-		<td>`style`</td>
-		<td>Object</td>
-		<td>Object to add style to the components of the `x-Axis`.</td>
-	</tr>
 </table>
 
 ### Style Time Axis Componemts
@@ -82,43 +78,70 @@ new FusionCharts({
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>tick-mark</td>
+		<td>`tick-mark`</td>
 		<td>String</td>
 		<td>Styles both major and minor ticks.</td>
 	</tr>
 	<tr>
-		<td>tick-mark-major</td>
+		<td>`tick-mark-major`</td>
 		<td>String</td>
 		<td>Styles the major tick of the time axis.</td>
 	</tr>
 	<tr>
-		<td>tick-mark-minor</td>
+		<td>`tick-mark-minor`</td>
 		<td>String</td>
 		<td>Styles the minor tick of the time axis.</td>
 	</tr>
 	<tr>
-		<td>label</td>
+		<td>`label`</td>
 		<td>String</td>
 		<td>Styles the labels of major and minor ticks on time axis.</td>
 	</tr>
 	<tr>
-		<td>label-major</td>
+		<td>`label-major`</td>
 		<td>String</td>
 		<td>Styles the labels of major ticks on time axis.</td>
 	</tr>
 	<tr>
-		<td>label-minor</td>
+		<td>`label-minor`</td>
 		<td>String</td>
 		<td>Styles the labels of minor ticks on time axis.</td>
 	</tr>
 	<tr>
-		<td>label-context</td>
+		<td>`label-context`</td>
 		<td>String</td>
 		<td>Styles the contextual label of the time axis.</td>
 	</tr>
 </table>
 
 ## Time Markers
+
+To configure the time marker of the chart you can create the `timemarker` object under `xaxis` object.
+
+```javascript
+new FusionCharts({
+    type: 'timeseries',
+    dataSource: {
+        xAxis {
+            plot: ' ', //Column Name
+            timemarker: [{
+                // Attributes of Time Marker
+                start: ' ', //Start Date
+                end: ' ', //End Date
+                label: ' ', //Label of the Time Axis
+                timeFormat: ' ', //Time format
+                type: 'full', // Full time marker
+                // Define the frequency, at which the cyclic time marker will be repeated.
+                repeat {
+                    unit: ' ', //Defines the time unit for the time marker.
+                    multiplier: ' ', //Defines the multiplier of the time unit.
+                    type: ' ' //Renders the time marker from top to bottom of the canvas
+                }
+            }]
+        }
+    },
+});
+```
 
 <table>
 	<tr>
@@ -128,27 +151,27 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`label`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Sets the label of the time marker.</td>
 	</tr>
 	<tr>
 		<td>`start`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Sets the start time of the marker. Corresponds to the start of the date/time.</td>
 	</tr>
 	<tr>
 		<td>`end`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Sets the end time of the marker. If this is attribute is not specified, the marker is represented as a line and not as a band. Corresponds to the end of the given date/time.</td>
 	</tr>
 	<tr>
 		<td>`timeFormat`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Sets the date/time format and specifies the start and end values for the time marker.</td>
 	</tr>
 	<tr>
 		<td>`unit`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Defines the time unit for the time marker.</td>
 	</tr>
 	<tr>
@@ -158,35 +181,95 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`type`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Setting this attribute to <strong>full</strong> will render the time marker (instance & band) from top to bottom (vertically) of the canvas.</td>
 	</tr>
 </table>
+
+### Style Time Marker Componemts
+
+You can add style to the time marker components using `style` object under `timemarker` object.
 
 ```javascript
 new FusionCharts({
     type: 'timeseries',
     dataSource: {
-		xAxis {
-			plot: ' ', //Column Name
-			timemarker: [{
-				// Attributes of Time Marker
-                start: ' ', //Start Date
-                end: ' ', //End Date
-                label: ' ', //Label of the Time Axis
-                timeFormat: ' ', //Time format
-				type: 'full', // Full time marker
-                // Define the frequency, at which the cyclic time marker will be repeated.
-                repeat {
-			        unit: ' ', //Defines the time unit for the time marker.
-							multiplier: ' ', //Defines the multiplier of the time unit.
-							type: ' ' //Renders the time marker from top to bottom of the canvas
-			    }
+        xAxis {
+            timemarker: [{
+								"style": {
+										"marker": { }, // Affects style of marker box, line and notch
+										"marker:hover": { }, // Affects hover style of marker box, line and
+										// notch
+										"marker-box": { },
+										"marker-box:hover": { },
+										"marker-line": { },
+										"marker-line:hover": { },
+										"marker-notch": { },
+										"marker-notch:hover": { },
+										"text": { },
+										"text:hover": { }
+								}
             }]
-		}
+        }
     },
 });
 ```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<th>`marker`</th>
+		<th>SVGStyle</th>
+		<th>Styles the marker box, line, and notch.</th>
+	</tr>
+	<tr>
+		<th>`marker:hover`</th>
+		<th>SVGStyle</th>
+		<th>Styles the marker box, line and notch when hovered.</th>
+	</tr>
+	<tr>
+		<th>`marker-box`</th>
+		<th>SVGStyle</th>
+		<th>Styles the marker box of the time marker.</th>
+	</tr><tr>
+		<th>`marker-box:hover`</th>
+		<th>SVGStyle</th>
+		<th>Styles the marker box of the time marker when hovered.</th>
+	</tr>
+	<tr>
+		<th>`marker-line`</th>
+		<th>SVGStyle</th>
+		<th>Styles the marker line of the time marker.</th>
+	</tr><tr>
+		<th>`marker-line:hover`</th>
+		<th>SVGStyle</th>
+		<th>Styles the marker line of the time marker when hovered.</th>
+	</tr>
+	<tr>
+		<th>`marker-notch`</th>
+		<th>SVGStyle</th>
+		<th>Styles the notch of the time marker.</th>
+	</tr>
+	<tr>
+		<th>`marker-notch:hover`</th>
+		<th>SVGStyle</th>
+		<th>Styles the notch of the time marker when hovered.</th>
+	</tr>
+	<tr>
+		<th>`text`</th>
+		<th>SVGStyle</th>
+		<th>Styles the text of the time marker.</th>
+	</tr>
+	<tr>
+		<th>`text:hover`</th>
+		<th>SVGStyle</th>
+		<th>Styles the text of the time marker when hovered.</th>
+	</tr>
+</table>
 
 ## Y Axes
 
