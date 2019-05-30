@@ -31,32 +31,51 @@ The sample code to customize the dimension is given below:
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
+
     <li class="active"><a data-toggle="csharp">C#</a></li>
     <li><a data-toggle="java">Java</a></li>
     <li><a data-toggle="php">PHP</a></li>
+    <li><a data-toggle="nodejs">Node.js</a></li>
     <li><a data-toggle="python">Python</a></li>
 </ul>
 
 <div class="tab-content">
 <div class="tab csharp-tab active">
 <pre><code class="language-csharp">
-const path = require('path');
-const { ExportManager, ExportConfig } = require('fusionexport-node-client');
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using FusionCharts.FusionExport.Client; // Import sdk
 
-const exportConfig = new ExportConfig();
-const exportManager = new ExportManager();
+namespace FusionExportTest
+{
+    public static class ExportSingleChart
+    {
+        static void Main(string[] args)
+        {
+            string chartConfigFile = System.Environment.CurrentDirectory + "\\resources\\dashboard_charts.json";
+            string templateFilePath = System.Environment.CurrentDirectory + "\\resources\\template.html";
 
-exportConfig.set('chartConfig', path.join(__dirname, 'chart_configs.json'));
-exportConfig.set('templateFilePath', path.join(__dirname, 'template.html'));
-exportConfig.set('templateWidth', 800)
-// exportConfig.set('templateWidth', 1200)
-// exportConfig.set('templateWidth', 1800)
+            // Instantiate the ExportManager class
+            using (ExportManager exportManager = new ExportManager())
+            {
+                exportConfig.Set("chartConfig", chartConfigFile);
+                exportConfig.Set("templateFilePath", templateFilePath);
+                exportConfig.Set('templateWidth', 1200);
+                exportConfig.Set('templateWidth', 1800);
+                exportConfig.Set("type", "pdf");
+                // Call the Export() method with the export config
+                results.AddRange(exportManager.Export(exportConfig, @"D:\temp\exported-charts", true));
+            }
 
-async function run() {
-  const files = await exportManager.export(exportConfig, '.', true);
-  files.forEach((file) => console.log(file));
+            foreach (string path in results)
+            {
+                Console.WriteLine(path);
+            }
+        }
+    }
 }
-run();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -123,6 +142,29 @@ foreach ($files as $file) {
     echo $file . "\n";
 }
 ?>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class="tab nodejs-tab">
+<pre><code class="language-javascript">
+const path = require('path');
+const { ExportManager, ExportConfig } = require('fusionexport-node-client');
+
+const exportConfig = new ExportConfig();
+const exportManager = new ExportManager();
+
+exportConfig.set('chartConfig', path.join(__dirname, 'chart_configs.json'));
+exportConfig.set('templateFilePath', path.join(__dirname, 'template.html'));
+exportConfig.set('templateWidth', 800)
+// exportConfig.set('templateWidth', 1200)
+// exportConfig.set('templateWidth', 1800)
+
+async function run() {
+ const files = await exportManager.export(exportConfig, '.', true);
+ files.forEach((file) => console.log(file));
+}
+run();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
