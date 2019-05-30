@@ -8,6 +8,24 @@ This article contains the list of attributes of FusionTime. The attributes have 
 
 ## Time Axis
 
+The `xAxis` object is used to configure compoments of Time Axis. You can create the `xAxis` object under `dataSource` object.
+
+**Syntax:**
+
+```javascript
+new FusionCharts({
+    type: 'timeseries',
+    dataSource: {
+		xAxis {
+			plot: ' ', //Column Name
+			timemarker: [{
+				// Attributes of Time Marker
+            }]
+		}
+    },
+});
+```
+
 <table>
 	<tr>
 		<th>Attribute</th>
@@ -25,25 +43,80 @@ This article contains the list of attributes of FusionTime. The attributes have 
 		<td>Array of `TimeMarkerConfigs` that will be shown along the axis.</td>
 	</tr>
 	<tr>
-		<td><h3>`STYLE ATTRIBUTES`</h3></td>
-		<td></td>
-		<td></td>
+		<td>`style`</td>
+		<td>Object</td>
+		<td>Object to add style to the components of the `x-Axis`.</td>
 	</tr>
 </table>
 
+### Style Time Axis Componemts
+
+You can add style to the x-Axis components using `style` object under `xaxis` object.
+
 ```javascript
 new FusionCharts({
-    type: 'timeseries',
-    dataSource: {
+    "type": 'timeseries',
+    "dataSource": {
 		xAxis {
-			plot: ' ', //Column Name
-			timemarker: [{
-				// Attributes of Time Marker
-            }]
+				"plot": ' ', //Column Name
+				"timemarker": [{
+						"style": {
+								"tick-mark": { }, //SVGStyle | String
+								"tick-mark-major": { }, //SVGStyle | String
+								"tick-mark-minor": { }, //SVGStyle | String
+								"label": { }, //SVGStyle | String
+								"label-major": { }, //SVGStyle | String
+								"label-minor": { }, //SVGStyle | String
+								"label-context": { } //SVGStyle | String
+						}
+        }]
 		}
     },
 });
 ```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>tick-mark</td>
+		<td>String</td>
+		<td>Styles both major and minor ticks.</td>
+	</tr>
+	<tr>
+		<td>tick-mark-major</td>
+		<td>String</td>
+		<td>Styles the major tick of the time axis.</td>
+	</tr>
+	<tr>
+		<td>tick-mark-minor</td>
+		<td>String</td>
+		<td>Styles the minor tick of the time axis.</td>
+	</tr>
+	<tr>
+		<td>label</td>
+		<td>String</td>
+		<td>Styles the labels of major and minor ticks on time axis.</td>
+	</tr>
+	<tr>
+		<td>label-major</td>
+		<td>String</td>
+		<td>Styles the labels of major ticks on time axis.</td>
+	</tr>
+	<tr>
+		<td>label-minor</td>
+		<td>String</td>
+		<td>Styles the labels of minor ticks on time axis.</td>
+	</tr>
+	<tr>
+		<td>label-context</td>
+		<td>String</td>
+		<td>Styles the contextual label of the time axis.</td>
+	</tr>
+</table>
 
 ## Time Markers
 
