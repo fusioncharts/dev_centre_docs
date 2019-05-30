@@ -1,7 +1,7 @@
 ---
 title: Custom Version of FusionCharts in FusionExport | FusionCharts
 description: This article talks about how to update the custom version of FusionCharts in FusionExport.
-heading: Custom Version of FusionCharts in FusionExport
+heading: Custom version of FusionCharts in FusionExport
 ---
 
 By default, whenever you download FusionExport it uses the latest version of FusionCharts. However, you might be using an older version of FusionCharts, for example - 3.11. FusionExport allows you to override the default FusionCharts version with the version you are using.
@@ -40,3 +40,13 @@ To run licensed FusionExport with licensed FusionCharts run:
 ```bash
 ./fusionexport -L path/to/fusioncharts/
 ```
+
+## Related Resources
+
+After you have changed the export type for a single chart, we recommend learning how to:
+
+* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+
+* [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+
+* [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
