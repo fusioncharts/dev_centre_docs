@@ -272,7 +272,7 @@ Once the `styleDefinition` is defined, you can refer to it for the various compo
 
 > In order to help you understand better, we have named the object as `colorStyle`. You can name the object as per your choice.
 
-The syntax to set the `styleDefintion` to the Y-axis label is given below:
+The syntax to set the `styleDefinition` to the Y-axis label is given below:
 
 ```json
 {

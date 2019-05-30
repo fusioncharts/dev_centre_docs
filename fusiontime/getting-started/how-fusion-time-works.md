@@ -14,7 +14,7 @@ FusionTime is a JavaScript library that helps you visualize and explore time-ser
 
 In this article, we will discuss the complete flow of how FusionTime works. To start with let’s get an overview of the difference from existing FusionCharts.
 
-## How FusionTime is different from FusionCharts
+## How FusionTime is Different from FusionCharts
 
 While FusionCharts can help you visualize data in dozens of different ways, FusionTime works exclusively with time series data. Unlike other varieties of charts in FusionCharts, which only (till now) accept data in JSON/XML, FusionTime accepts data in rows and columns as a [Datatable](/fusiontime/fusiontime-data-engine/overview). You can then apply different data operations ([filter](/fusiontime/fusiontime-data-engine/filter), [grouping](/fusiontime/fusiontime-data-engine/groupby), etc.) on the `DataTable` to optimize your data as per the requirement.
 
