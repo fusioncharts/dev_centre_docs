@@ -8,7 +8,7 @@ This article contains the list of attributes of FusionTime. The attributes have 
 
 ## Time Axis
 
-The `xAxis` object is used to configure components of Time Axis. You can create the `xAxis` object under `dataSource` object.
+The `xAxis` object is used to configure components of Time Axis. You can create the `xAxis` object under `dataSource`.
 
 **Syntax:**
 
@@ -17,10 +17,10 @@ new FusionCharts({
     type: 'timeseries',
     dataSource: {
 		xAxis {
-			plot: ' ', //Column Name
-			timemarker: [{
-				// Attributes of Time Marker
-            }]
+				plot: ' ', //Column Name
+				timemarker: [{
+					// Attributes of Time Marker
+				}]
 		}
     },
 });
@@ -268,6 +268,122 @@ new FusionCharts({
 		<td>`text:hover`</td>
 		<td>SVGStyle</td>
 		<td>Styles the text of the time marker when hovered.</td>
+	</tr>
+</table>
+
+## Time Navigator
+
+To configure the time navigator of the chart, you can create the `navigator` object under `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    navigator: {
+      enabled: Boolean,
+      scrollbar: {},
+      window: {}
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enabled`</td>
+		<td>Boolean</td>
+		<td>Enables the time navigator of the chart. </td>
+	</tr>
+	<tr>
+		<td>`scrollbar`</td>
+		<td>Object</td>
+		<td>An object in which you can customize the scroll bar of the time navigator.</td>
+	</tr>
+	<tr>
+		<td>`window`</td>
+		<td>Object</td>
+		<td>An object in which you can customize the window of the time navigator.</td>
+	</tr>
+</table>
+
+### Style Time Navigator Componemts
+
+Time Navigator of a time-series chart can be divided into two sub-sections:
+
+- Window
+- Scroll Bar
+
+You can add style to the time marker components using `style` object under `window` and `scrollbar` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    navigator: {
+      enabled: Boolean,
+      scrollbar: {
+        style: {
+          button: {}, //SVGStyle | String
+          arrow: {}, //SVGStyle | String
+          scroller: {}, //SVGStyle | String
+          grip: {}, //SVGStyle | String
+          track: {} //SVGStyle | String
+        }
+      },
+      window: {
+        style: {
+          handle: {}, //SVGStyle | String
+          "handle-grip": {}, //SVGStyle | String
+          mask: {} //SVGStyle | String
+        }
+      }
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+		<td>`button`</td>
+		<td>String</td>
+		<td>Styles the buttons present on the left and right most corner of the scroll bar.</td>
+	</tr>
+		<td>`arrow`</td>
+		<td>String</td>
+		<td>Styles the arrows present inside the buttons of the scroll bar.</td>
+	</tr>
+		<td>`scroller`</td>
+		<td>String</td>
+		<td>Styles the scroller of the scroll bar.</td>
+	</tr>
+		<td>`grip`</td>
+		<td>String</td>
+		<td>Styles the grip of the scroll bar.</td>
+	</tr>
+		<td>`track`</td>
+		<td>String</td>
+		<td>Styles the track of the scroll bar.</td>
+	</tr>
+		<td>`handle`</td>
+		<td>String</td>
+		<td>Styles the handle element of the scroll bar window.</td>
+	</tr>
+		<td>`handle-grip`</td>
+		<td>String</td>
+		<td>Styles the handle-grip of the handle element.</td>
+	</tr>
+		<td>`mask`</td>
+		<td>String</td>
+		<td>Styles the mask of the scroll bar window.</td>
 	</tr>
 </table>
 
