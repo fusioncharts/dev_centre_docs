@@ -4,6 +4,50 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.5</h2>
+
+<p class="release-date">31st May, 2019</p>
+
+<h4 class="sub-heading">Improvement</h4>
+
+- In a multi-level Pie chart, `showLabel` and `showValue` attributes are now supported at the `category` level.
+
+- The file format to export a chart in Excel is now changed from XLS to XLSX.
+
+<h4>Fixes</h4>
+
+- In a multi-series chart, if a series is hidden at the time of rendering and the attribute `transposeAxis` is set as `1`, the y-axis was not scaling properly. This issue is now fixed.
+
+- On exporting charts as PDF from a page which has multiple charts, the exported PDF was not opening properly in other applications, e.g.- Acrobat Reader. This issue is now fixed.
+
+- In a multi-series chart, if a series is hidden at the time of rendering by setting the `visible` attribute to `0`, the chart was throwing a `js` error. This issue is now fixed.
+
+- `connectNullData` is now working fine in spline and multi-series spline charts.
+
+- In a multiaxis line chart with more than 9 series, a js error was thrown on hovering over the legend. This issue is now fixed.
+
+- The Horizontal Bullet chart was throwing a js error and disappears when resized. This issue is now fixed.
+
+- In IE8, charts were not rendering using the minified version of the jQuery plugin. This issue is now fixed.
+
+- Annotation image and Logo is now appearing in android chrome.
+
+- In the Treemap chart, if the plot animation is turned on the navigation bar was visible on rendering the chart. This issue is now fixed.
+
+- The animation was not working while rendering the chart if an image annotation is present. This issue is now fixed.
+
+- `removeMarker()` API is now working fine. Previously, it was throwing a js error.
+
+- The `destroy()` and `hide()` API is now working as intended. Previously, they were throwing js error.
+
+- In Multi series dual y combination chart, the tooltip of the line chart was not visible on hover. This issue is now fixed.
+
+- The legend text alignment was not appearing properly if the attribute `hasRTLText` attribute is set to **1**. This issue is now fixed.
+
+- In the multi-series Column chart, the legend drag feature is now working fine. Previously, if the chart was updated with the same data the legend drag was not working.
+
+- If there are multiple draggable charts in a page, setting the yAxis limit manually on any chart changes the yAxis limit of the last chart automatically. This issue is now fixed.
+
 <h2 class="sub-heading">Version 3.13.4</h2>
 
 <p class="release-date">27th February, 2019</p>
