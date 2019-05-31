@@ -4,7 +4,7 @@ description: This article talks about how to export PDF files in print format.
 heading: Export PDF files in print format
 ---
 
-FusionExport allows you to export your exported PDF files in print-friendly format.
+So far we have seen how to export dashboards as PNG. Let's take a scenario, wherein the requirement is to export the chart in A4 format for a better print output. To do this, you have to go through a lot of changes like adjusting the pixel, create a template, improve the quality, etc. FusionExport allows you to export your PDF files in print-friendly format using the `templateFormat` attribute.
 
 Before you start with the code implementations, check out the following video which contains the step by step process to set the print friendly format for your exported PDF file.
 
@@ -918,18 +918,6 @@ Before you start, ensure that you have:
 
 The sample code to set the dimension of the viewport is given below:
 
-In the above code:
-
-- Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
-- Set the value of `templateHeight` less than your content height. This automatically divides the page into multiple pages.
-- You can also set the value of `templateWidth` to control the viewpoint width where the templates are rendered.
-- Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
-- Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
-
-> You can also achieve the same result using `templateFormat` which allows you to export PDF files and print friendly format.
-
-The code is given below:
-
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
 
@@ -1101,6 +1089,16 @@ exported_files = em.export(export_config, "./exports", True)
 </div>
 </div>
 </div>
+
+In the above code:
+
+- Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
+- Set the value of `templateHeight` less than your content height. This automatically divides the page into multiple pages.
+- You can also set the value of `templateWidth` to control the viewpoint width where the templates are rendered.
+- Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
+- Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
+
+> You can also achieve the same result using `templateFormat` which allows you to export PDF files and print friendly format.
 
 The JSON data to render the above chart is given below:
 
