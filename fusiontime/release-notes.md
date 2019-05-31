@@ -28,7 +28,7 @@ heading: Release Notes
 
   - [Tooltip](/fusiontime/fusiontime-attributes#tooltip) (HTML styling)
 
-<h4>Improvement</h4>
+<h4 class="sub-heading">Improvement</h4>
 
 - Default derived styles for different FusionTime components have been removed. You can now add styles using the `style` object for each component.
 
@@ -50,7 +50,7 @@ heading: Release Notes
 
 - Better error messages are now available if one gives an incorrect axis or plot configuration.
 
-<h4>Fixes</h4>
+<h4 class="sub-heading">Fixes</h4>
 
 - Selecting and applying time from the Custom Range Selector selection box is now working fine.
 
@@ -82,7 +82,7 @@ heading: Release Notes
 
 - Table id was not getting assigned to the child or derived **dataTable**. This issue is now fixed.
 
-<h4>Deprecated</h4>
+<h4 class="sub-heading">Deprecated</h4>
 
 - `enableNavigator` attribute is now deprecated, and the same can be achieved by using the `enabled` attribute inside the `tooltip` object.
 
