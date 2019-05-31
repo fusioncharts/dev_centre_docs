@@ -18,7 +18,7 @@ heading: Release Notes
 
   - [YAxis](/fusiontime/fusiontime-attributes#y-axes) (SVG Styling)
 
-  - Crossline (SVG Styling)
+  - [Crossline](fusiontime/fusiontime-attributes#crossline) (SVG Styling)
 
   - [Time Marker](/fusiontime/fusiontime-attributes#time-markers) (SVG Styling)
 
@@ -26,7 +26,7 @@ heading: Release Notes
 
   - [Time Navigator](fusiontime/fusiontime-attributes#time-navigator) (SVG Styling)
 
-  - Tooltip (HTML Styling)
+  - [Tooltip](/fusiontime/fusiontime-attributes#tooltip) (HTML Styling)
 
 <h4>Improvement</h4>
 

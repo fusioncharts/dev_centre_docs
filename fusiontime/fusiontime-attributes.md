@@ -533,6 +533,84 @@ new FusionCharts({
 	</tr>
 </table>
 
+## Crossline
+
+You can add style to the crossline using `style` object under `crossline` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    crossline: {
+      style: {
+        line: {}, //SVGStyle | String
+        tag: {}, //SVGStyle | String
+        label: {}, //SVGStyle | String
+        "vertical-line": {}, //SVGStyle | String
+        "vertical-tag": {}, //SVGStyle | String
+        "vertical-label": {}, //SVGStyle | String
+        "horizontal-line": {}, //SVGStyle | String
+        "horizontal-tag": {}, //SVGStyle | String
+        "horizontal-label": {} //SVGStyle | String
+      }
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`line`</td>
+		<td>SVGStyle</td>
+		<td>Styles the line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`tag`</td>
+		<td>SVGStyle</td>
+		<td>Styles the tag of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`label`</td>
+		<td>SVGStyle</td>
+		<td>Styles the label of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`vertical-line`</td>
+		<td>SVGStyle</td>
+		<td>Styles the vertical line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`vertical-tag`</td>
+		<td>SVGStyle</td>
+		<td>Styles the tag of the vertical line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`vertical-label`</td>
+		<td>SVGStyle</td>
+		<td>Styles the label of the vertical line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`horizontal-line`</td>
+		<td>SVGStyle</td>
+		<td>Styles the horizontal line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`horizontal-tag`</td>
+		<td>SVGStyle</td>
+		<td>Styles the tag of the horizontal line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`horizontal-label`</td>
+		<td>SVGStyle</td>
+		<td>Styles the label of the horizontal line of the crossline.</td>
+	</tr>
+</table>
+
 ## Reference Lines
 
 To configure the reference line of the chart, you can create the `referenceLine` object under `dataSource`.
