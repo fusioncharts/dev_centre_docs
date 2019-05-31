@@ -110,7 +110,7 @@ That completes the installation of FusionCharts and the `angularjs-fusioncharts`
 
 ## Create your first map
 
-In this section, we will create a visualization using the **World Map** showing the average annual population growth. 
+In this section, we will create a visualization using the **World Map** showing the average annual population growth.
 
 {% embed_chart getting-started-your-first-map.js %}
 
@@ -118,8 +118,8 @@ In this section, we will create a visualization using the **World Map** showing 
 
 The data for the above map is represented in the table below:
 
-| State | Entity Name | Value |
-| ----- | ----------- | ----- ||
+| State         | Entity Name | Value |
+| ------------- | ----------- | ----- |
 | North America | NA          | 82    |
 | South America | SA          | 2.04  |
 | Asia          | AS          | 1.78  |
@@ -199,13 +199,13 @@ Following code is the JSON representation of the above table with the required a
 
 In the above JSON data:
 
-* Create the `chart` object to define the elements of the map.
+- Create the `chart` object to define the elements of the map.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+- Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
-* Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
+- Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
 
 The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
@@ -229,14 +229,16 @@ To render the map follow the steps below:
 
 7. Include the FusionCharts theme file to apply style to the charts.
 
-8. Add the map and the theme as a dependency to the core.
+8. Include the `ExcelExport` module to export chart data in XLSX format.
 
-9. Store the map configurations in a variable (`myApp`).
+9. Add the map, theme and ExcelExport file as a dependency to the core.
 
-10. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
-    * Set the map type as `world`. Each map type is represented with a unique map alias. For World Map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
-    * Set the width and height (in pixels). 
-    * Embed the json data as the value of the `dataSource`.
+10. Store the map configurations in a variable (`myApp`).
+
+11. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
+    - Set the map type as `world`. Each map type is represented with a unique map alias. For World Map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+    - Set the width and height (in pixels).
+    - Embed the json data as the value of the `dataSource`.
 
 The consolidated code is shown below:
 
@@ -256,7 +258,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Reuuire angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require FusionMaps renderer
@@ -268,14 +270,14 @@ var World = require('fusioncharts/maps/fusioncharts.world');
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Initialize Charts with FusionCharts instance
+// Require ExcelExport module from fusioncharts
+var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
+
+// Add maps, themes and ExcelExport as dependency
 FusionMaps(FusionCharts);
-
-// Initialize Map definition File
 World(FusionCharts);
-
-// Initialize FusionTheme with FusionCharts instance
 FusionTheme(FusionCharts);
+ExcelExport(FusionCharts);
 
 var myApp = angular.module('myApp', ['ng-fusioncharts']);
 
@@ -441,17 +443,17 @@ chartInstance.render()
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="800" height="550" type="world" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts id="my-chart-id" width="800" height="550" type="world" dataSource="{{myDataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <pre><code class="language-javascript">
@@ -532,14 +534,15 @@ chartInstance.render()
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="800" height="550" type="world" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts id="my-chart-id" width="800" height="550" type="world" dataSource="{{myDataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -548,9 +551,9 @@ chartInstance.render()
 
 That's it! Your first map using `angularjs-fusioncharts` is ready.
 
-## Render other maps 
+## Render other maps
 
-To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally. 
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally.
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
@@ -891,17 +894,17 @@ chartInstance.render()
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="800" height="550" type="california" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts id="my-chart-id" width="800" height="550" type="california" dataSource="{{myDataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <pre><code class="language-javascript">
@@ -1135,14 +1138,15 @@ chartInstance.render()
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="800" height="550" type="california" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+&lt;div fusioncharts id="my-chart-id" width="800" height="550" type="california" dataSource="{{myDataSource}}"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -1155,8 +1159,8 @@ That's it! The **California** map is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

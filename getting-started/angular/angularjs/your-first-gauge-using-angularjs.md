@@ -196,16 +196,19 @@ To render the gauge, follow the steps below:
 
 5. Include all gauges from Widgets.
 
-6. Include the FusionCharts theme file to apply the style to the charts
+6. Include the FusionCharts theme file to apply the style to the charts.
 
-7. Add the chart and the theme as a dependency to the core
+7. Include the `ExcelExport` module to export chart data in XLSX format.
 
-8. Store the chart configurations in a variable (`myApp`).
+8. Add the chart, theme and ExcelExport as a dependency to the core.
 
-9. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. The the `<div>`:
-   - Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
-   - Set the width and height (in pixels).
-   - Embed the json data as the value of the `dataSource`.
+9. Store the chart configurations in a variable (`myApp`).
+
+10. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. The the `<div>`:
+
+- Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
+- Set the width and height (in pixels).
+- Embed the json data as the value of the `dataSource`.
 
 The consolidated code is shown below:
 
@@ -225,20 +228,22 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
-// Require Chart modules 
+// Require Chart modules
 var Widgets = require('fusioncharts/fusioncharts.widgets');
 
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Initialize Charts with FusionCharts instance
-Widgets(FusionCharts);
+// Require ExcelExport module from fusioncharts
+var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
 
-// Initialize FusionTheme with FusionCharts instance
+// Add widgets, themes and ExcelExport as dependency
+Widgets(FusionCharts);
 FusionTheme(FusionCharts);
+ExcelExport(FusionCharts);
 
 var myApp = angular.module('myApp', ['ng-fusioncharts']);
 

@@ -18,17 +18,17 @@ The `yaxis` object accepts input in two forms of an array.
 An example of an array of objects is shown in the code below:
 
 ```json
-yAxis: [{
-    plot: {
-        value: 'Sales',
+"yAxis": [{
+    "plot": {
+        "value": "Sales",
     },
 }, {
-    plot: {
-        value: 'Quantity',
+    "plot": {
+        "value": "Quantity",
     },
 }, {
-    plot: {
-        value: 'Shipping Cost',
+    "plot": {
+        "value": "Shipping Cost",
     },
 }],
 ```
@@ -56,8 +56,8 @@ By default, the position of the Y-axis is set to left. You can customize the pos
 The code is given below:
 
 ```json
-yAxis: [{
-    plot: {
+"yAxis": [{
+    "plot": {
         "value": "Sales",
     },
     "title": "Sales Value",
@@ -81,15 +81,15 @@ You can set the custom y-axis limits as per your requirement. To do so, apply th
 The code is given below:
 
 ```json
-yAxis: [{
-    plot: {
+"yAxis": [{
+    "plot": {
         "value": "Sales",
     },
     "title": "Total Sales",
     "min": "0",
     "max": "40000"
 }, {
-    format: {
+    "format": {
         "prefix": "$",
     }
 }],
@@ -106,7 +106,7 @@ To specify the prefix and suffix of the y-axis values, set the suffix and prefix
 The code is given below:
 
 ```json
-yAxis: [{
+"yAxis": [{
     plot: {
         "value": "Sales",
     },
@@ -267,29 +267,3 @@ The chart after applying the above attributes will look like as shown below:
 {% embed_ftChart online-sales-single-series-style-definition-y-axis %}
 
 In the above sample, **font color** of the y-axis label has been changed.
-
-The code to update the cosmetic properties of other elements in **y-axis** is given below:
-
-```json
-{
-  "yAxis": [
-    {
-      "title": "Sales",
-      "style": {
-        "ticks": {
-          "major": Style,
-          "minor": Style,
-          "context": Style
-        },
-        "text": {
-          "major": Style,
-          "minor": Style,
-          "context": Style
-        },
-        "line": Style,
-        "grid-line": Style
-      }
-    }
-  ]
-}
-```

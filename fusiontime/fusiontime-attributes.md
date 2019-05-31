@@ -8,6 +8,24 @@ This article contains the list of attributes of FusionTime. The attributes have 
 
 ## Time Axis
 
+The `xAxis` object is used to configure components of Time Axis. You can create the `xAxis` object under `dataSource`.
+
+**Syntax:**
+
+```javascript
+new FusionCharts({
+    type: 'timeseries',
+    dataSource: {
+		xAxis {
+				plot: ' ', //Column Name
+				timemarker: [{
+					// Attributes of Time Marker
+				}]
+		}
+    },
+});
+```
+
 <table>
 	<tr>
 		<th>Attribute</th>
@@ -24,23 +42,106 @@ This article contains the list of attributes of FusionTime. The attributes have 
 		<td>Array(Time Marker Configuration)</td>
 		<td>Array of `TimeMarkerConfigs` that will be shown along the axis.</td>
 	</tr>
+	<tr>
 </table>
+
+#### Style Time Axis Components
+
+You can add style to the x-Axis components using `style` object under `xaxis` object.
 
 ```javascript
 new FusionCharts({
-    type: 'timeseries',
-    dataSource: {
+    "type": 'timeseries',
+    "dataSource": {
 		xAxis {
-			plot: ' ', //Column Name
-			timemarker: [{
-				// Attributes of Time Marker
-            }]
+				"plot": ' ', //Column Name
+				"timemarker": [{
+						"style": {
+								"tick-mark": { }, //SVGStyle | String
+								"tick-mark-major": { }, //SVGStyle | String
+								"tick-mark-minor": { }, //SVGStyle | String
+								"label": { }, //SVGStyle | String
+								"label-major": { }, //SVGStyle | String
+								"label-minor": { }, //SVGStyle | String
+								"label-context": { } //SVGStyle | String
+						}
+        }]
 		}
     },
 });
 ```
 
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`tick-mark`</td>
+		<td>SVGStyle</td>
+		<td>Styles both major and minor ticks.</td>
+	</tr>
+	<tr>
+		<td>`tick-mark-major`</td>
+		<td>SVGStyle</td>
+		<td>Styles the major tick of the time axis.</td>
+	</tr>
+	<tr>
+		<td>`tick-mark-minor`</td>
+		<td>SVGStyle</td>
+		<td>Styles the minor tick of the time axis.</td>
+	</tr>
+	<tr>
+		<td>`label`</td>
+		<td>SVGStyle</td>
+		<td>Styles the labels of major and minor ticks on time axis.</td>
+	</tr>
+	<tr>
+		<td>`label-major`</td>
+		<td>SVGStyle</td>
+		<td>Styles the labels of major ticks on time axis.</td>
+	</tr>
+	<tr>
+		<td>`label-minor`</td>
+		<td>SVGStyle</td>
+		<td>Styles the labels of minor ticks on time axis.</td>
+	</tr>
+	<tr>
+		<td>`label-context`</td>
+		<td>SVGStyle</td>
+		<td>Styles the contextual label of the time axis.</td>
+	</tr>
+</table>
+
 ## Time Markers
+
+To configure the time marker of the chart you can create the `timemarker` object under `xaxis` object.
+
+```javascript
+new FusionCharts({
+    type: 'timeseries',
+    dataSource: {
+        xAxis {
+            plot: ' ', //Column Name
+            timemarker: [{
+                // Attributes of Time Marker
+                start: ' ', //Start Date
+                end: ' ', //End Date
+                label: ' ', //Label of the Time Axis
+                timeFormat: ' ', //Time format
+                type: 'full', // Full time marker
+                // Define the frequency, at which the cyclic time marker will be repeated.
+                repeat {
+                    unit: ' ', //Defines the time unit for the time marker.
+                    multiplier: ' ', //Defines the multiplier of the time unit.
+                    type: ' ' //Renders the time marker from top to bottom of the canvas
+                }
+            }]
+        }
+    },
+});
+```
 
 <table>
 	<tr>
@@ -50,27 +151,27 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`label`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Sets the label of the time marker.</td>
 	</tr>
 	<tr>
 		<td>`start`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Sets the start time of the marker. Corresponds to the start of the date/time.</td>
 	</tr>
 	<tr>
 		<td>`end`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Sets the end time of the marker. If this is attribute is not specified, the marker is represented as a line and not as a band. Corresponds to the end of the given date/time.</td>
 	</tr>
 	<tr>
 		<td>`timeFormat`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Sets the date/time format and specifies the start and end values for the time marker.</td>
 	</tr>
 	<tr>
 		<td>`unit`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Defines the time unit for the time marker.</td>
 	</tr>
 	<tr>
@@ -80,37 +181,242 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`type`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Setting this attribute to <strong>full</strong> will render the time marker (instance & band) from top to bottom (vertically) of the canvas.</td>
 	</tr>
 </table>
+
+### Style Time Marker Componemts
+
+You can add style to the time marker components using `style` object under `timemarker` object.
 
 ```javascript
 new FusionCharts({
     type: 'timeseries',
     dataSource: {
-		xAxis {
-			plot: ' ', //Column Name
-			timemarker: [{
-				// Attributes of Time Marker
-                start: ' ', //Start Date
-                end: ' ', //End Date
-                label: ' ', //Label of the Time Axis
-                timeFormat: ' ', //Time format
-				type: 'full', // Full time marker
-                // Define the frequency, at which the cyclic time marker will be repeated.
-                repeat {
-			        unit: ' ', //Defines the time unit for the time marker.
-							multiplier: ' ', //Defines the multiplier of the time unit.
-							type: ' ' //Renders the time marker from top to bottom of the canvas
-			    }
+        xAxis {
+            timemarker: [{
+								"style": {
+										"marker": { }, // Affects style of marker box, line and notch
+										"marker:hover": { }, // Affects hover style of marker box, line and
+										// notch
+										"marker-box": { },
+										"marker-box:hover": { },
+										"marker-line": { },
+										"marker-line:hover": { },
+										"marker-notch": { },
+										"marker-notch:hover": { },
+										"text": { },
+										"text:hover": { }
+								}
             }]
-		}
+        }
     },
 });
 ```
 
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`marker`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker box, line, and notch.</td>
+	</tr>
+	<tr>
+		<td>`marker:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker box, line and notch when hovered.</td>
+	</tr>
+	<tr>
+		<td>`marker-box`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker box of the time marker.</td>
+	</tr><tr>
+		<td>`marker-box:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker box of the time marker when hovered.</td>
+	</tr>
+	<tr>
+		<td>`marker-line`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker line of the time marker.</td>
+	</tr>
+	<tr>
+		<td>`marker-line:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the marker line of the time marker when hovered.</td>
+	</tr>
+	<tr>
+		<td>`marker-notch`</td>
+		<td>SVGStyle</td>
+		<td>Styles the notch of the time marker.</td>
+	</tr>
+	<tr>
+		<td>`marker-notch:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the notch of the time marker when hovered.</td>
+	</tr>
+	<tr>
+		<td>`text`</td>
+		<td>SVGStyle</td>
+		<td>Styles the text of the time marker.</td>
+	</tr>
+	<tr>
+		<td>`text:hover`</td>
+		<td>SVGStyle</td>
+		<td>Styles the text of the time marker when hovered.</td>
+	</tr>
+</table>
+
+## Time Navigator
+
+To configure the time navigator of the chart, you can create the `navigator` object under `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    navigator: {
+      enabled: Boolean,
+      scrollbar: {},
+      window: {}
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enabled`</td>
+		<td>Boolean</td>
+		<td>Enables the time navigator of the chart. </td>
+	</tr>
+	<tr>
+		<td>`scrollbar`</td>
+		<td>Object</td>
+		<td>An object in which you can customize the scroll bar of the time navigator.</td>
+	</tr>
+	<tr>
+		<td>`window`</td>
+		<td>Object</td>
+		<td>An object in which you can customize the window of the time navigator.</td>
+	</tr>
+</table>
+
+### Style Time Navigator Componemts
+
+Time Navigator of a time-series chart can be divided into two sub-sections:
+
+- Window
+- Scroll Bar
+
+You can add style to the time marker components using `style` object under `window` and `scrollbar` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    navigator: {
+      enabled: Boolean,
+      scrollbar: {
+        style: {
+          button: {}, //SVGStyle | String
+          arrow: {}, //SVGStyle | String
+          scroller: {}, //SVGStyle | String
+          grip: {}, //SVGStyle | String
+          track: {} //SVGStyle | String
+        }
+      },
+      window: {
+        style: {
+          handle: {}, //SVGStyle | String
+          "handle-grip": {}, //SVGStyle | String
+          mask: {} //SVGStyle | String
+        }
+      }
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+		<td>`button`</td>
+		<td>String</td>
+		<td>Styles the buttons present on the left and right most corner of the scroll bar.</td>
+	</tr>
+		<td>`arrow`</td>
+		<td>String</td>
+		<td>Styles the arrows present inside the buttons of the scroll bar.</td>
+	</tr>
+		<td>`scroller`</td>
+		<td>String</td>
+		<td>Styles the scroller of the scroll bar.</td>
+	</tr>
+		<td>`grip`</td>
+		<td>String</td>
+		<td>Styles the grip of the scroll bar.</td>
+	</tr>
+		<td>`track`</td>
+		<td>String</td>
+		<td>Styles the track of the scroll bar.</td>
+	</tr>
+		<td>`handle`</td>
+		<td>String</td>
+		<td>Styles the handle element of the scroll bar window.</td>
+	</tr>
+		<td>`handle-grip`</td>
+		<td>String</td>
+		<td>Styles the handle-grip of the handle element.</td>
+	</tr>
+		<td>`mask`</td>
+		<td>String</td>
+		<td>Styles the mask of the scroll bar window.</td>
+	</tr>
+</table>
+
 ## Y Axes
+
+To configure the y-axis of the chart you can create the `yAxis` object under `xaxis` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    yAxis: [
+      {
+        plotType: " ", //To set the plot type out the 'plot' object
+        min: " ", //Minimum value of the axis
+        max: " ", //Maximum value of the axis
+        format: {
+          //Measures
+          prefix: " ",
+          suffix: " "
+        },
+        plot: {
+          //Column header for the measure which is plotted against the Y Axis
+        },
+        type: " ", //Plot type to render the chart
+        title: " ", //Title of the axis
+        aggregation: " " //Aggregate Function
+      }
+    ]
+  }
+});
+```
 
 <table>
 	<tr>
@@ -160,51 +466,9 @@ new FusionCharts({
 	</tr>
 </table>
 
-```javascript
-new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    yAxis: [
-      {
-        plotType: " ", //To set the plot type out the 'plot' object
-        min: " ", //Minimum value of the axis
-        max: " ", //Maximum value of the axis
-        format: {
-          //Measures
-          prefix: " ",
-          suffix: " "
-        },
-        plot: {
-          //Column header for the measure which is plotted against the Y Axis
-        },
-        type: " ", //Plot type to render the chart
-        title: " ", //Title of the axis
-        aggregation: " " //Aggregate Function
-      }
-    ]
-  }
-});
-```
-
 ## Plot Configuration
 
-<table>
-	<tr>
-		<th>Attributes</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>`generic`</td>
-		<td>Object</td>
-		<td>Style specified within this object is applied across the chart.</td>
-	</tr>
-	<tr>
-		<td>`connectNullData`</td>
-		<td>Boolean</td>
-		<td>Connects the null data for line and area plots.</td>
-	</tr>
-</table>
+To configure the plot of the chart, you can create the `plotConfig` object under `dataSource`.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -251,7 +515,119 @@ new FusionCharts({
 </div>
 </div>
 
+<table>
+	<tr>
+		<th>Attributes</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`generic`</td>
+		<td>Object</td>
+		<td>Style specified within this object is applied across the chart.</td>
+	</tr>
+	<tr>
+		<td>`connectNullData`</td>
+		<td>Boolean</td>
+		<td>Connects the null data for line and area plots.</td>
+	</tr>
+</table>
+
+## Crossline
+
+You can add style to the crossline using `style` object under `crossline` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    crossline: {
+      style: {
+        line: {}, //SVGStyle | String
+        tag: {}, //SVGStyle | String
+        label: {}, //SVGStyle | String
+        "vertical-line": {}, //SVGStyle | String
+        "vertical-tag": {}, //SVGStyle | String
+        "vertical-label": {}, //SVGStyle | String
+        "horizontal-line": {}, //SVGStyle | String
+        "horizontal-tag": {}, //SVGStyle | String
+        "horizontal-label": {} //SVGStyle | String
+      }
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`line`</td>
+		<td>SVGStyle</td>
+		<td>Styles the line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`tag`</td>
+		<td>SVGStyle</td>
+		<td>Styles the tag of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`label`</td>
+		<td>SVGStyle</td>
+		<td>Styles the label of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`vertical-line`</td>
+		<td>SVGStyle</td>
+		<td>Styles the vertical line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`vertical-tag`</td>
+		<td>SVGStyle</td>
+		<td>Styles the tag of the vertical line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`vertical-label`</td>
+		<td>SVGStyle</td>
+		<td>Styles the label of the vertical line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`horizontal-line`</td>
+		<td>SVGStyle</td>
+		<td>Styles the horizontal line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`horizontal-tag`</td>
+		<td>SVGStyle</td>
+		<td>Styles the tag of the horizontal line of the crossline.</td>
+	</tr>
+	<tr>
+		<td>`horizontal-label`</td>
+		<td>SVGStyle</td>
+		<td>Styles the label of the horizontal line of the crossline.</td>
+	</tr>
+</table>
+
 ## Reference Lines
+
+To configure the reference line of the chart, you can create the `referenceLine` object under `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    referenceLine: [
+      {
+        label: " ", //Label of the reference line
+        value: " " //Value of the reference line
+      }
+    ]
+  }
+});
+```
 
 <table>
 	<tr>
@@ -271,21 +647,103 @@ new FusionCharts({
 	</tr>
 </table>
 
+## Tooltip
+
+To configure the tooltip of the chart, you can create the `tooltip` object under the `dataSource`.
+
 ```javascript
 new FusionCharts({
   type: "timeseries",
   dataSource: {
-    referenceLine: [
+    tooltip: {
+      enabled: "false" // Disables the Tooltip
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enables`</td>
+		<td>String</td>
+		<td>Setting this attribute to `true` enables the visibility of the tooltip for the chart.</td>
+	</tr>
+</table>
+
+### Style Tooltip Components
+
+You can add style to the tooltip using `style` object under `tooltip` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    tooltip: {
+      enabled: Boolean,
+      style: {
+        container: {}, //HTMLStyle | String
+        text: {}, //HTMLtyle | String
+        header: {}, //HTMLStyle | String
+        body: {} //HTMLStyle | String
+      }
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`container`</td>
+		<td>HTMLStyle</td>
+		<td>Customizes the containing box of the tooltip.</td>
+	</tr>
+	<tr>
+		<td>`text`</td>
+		<td>HTMLStyle</td>
+		<td>Customizes the text of the tooltip.</td>
+	</tr>
+	<tr>
+		<td>`header`</td>
+		<td>HTMLStyle</td>
+		<td>Customizes the header at the top of the tooltip.</td>
+	</tr>
+	<tr>
+		<td>`body`</td>
+		<td>HTMLStyle</td>
+		<td>Customizes all the text other than the `header` text.</td>
+	</tr>
+</table>
+
+## Data Markers
+
+To configure the data marker of the chart, you can create the `dataMarker` object under the `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    dataMarker: [
       {
-        label: " ", //Label of the reference line
-        value: " " //Value of the reference line
+        seriesName: " ", //Name of the series
+        time: " ", //Time on which the data marker will be shown
+        identifier: " ", //Defines a character to be shown
+        timeFormat: " ", //Format of the date
+        tooltext: " " //Text in the tooltip
       }
     ]
   }
 });
 ```
-
-## Data Markers
 
 <table>
 	<tr>
@@ -324,23 +782,6 @@ new FusionCharts({
 		<td>The text specified in this attribute is displayed in the tooltip when you hover over the data marker.</td>
 	</tr>
 </table>
-
-```javascript
-new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    dataMarker: [
-      {
-        seriesName: " ", //Name of the series
-        time: " ", //Time on which the data marker will be shown
-        identifier: " ", //Defines a character to be shown
-        timeFormat: " ", //Format of the date
-        tooltext: " " //Text in the tooltip
-      }
-    ]
-  }
-});
-```
 
 ## Chart Configuration and Root JSON Attributes
 
@@ -408,7 +849,7 @@ new FusionCharts({
 	<tr>
 		<td>`exportEnabled`</td>
 		<td>Boolean</td>
-		<td>Whether the chart will allow exporting to images, PDFs, SVG or XLS.</td>
+		<td>Whether the chart will allow exporting to images, PDFs, SVG or XLSX.</td>
 	</tr>
 	<tr>
 		<td>`exportAction`</td>
@@ -438,7 +879,7 @@ new FusionCharts({
 	<tr>
 		<td>`exportTargetWindow`</td>
 		<td>String</td>
-		<td>In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window.</td>
+		<td>In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window.</td>
 	</tr>
 	<tr>
 		<td>`exportFileName`</td>

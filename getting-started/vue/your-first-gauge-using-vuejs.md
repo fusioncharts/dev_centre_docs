@@ -96,11 +96,11 @@ The angular gauge is shown below:
 
 The thresholds for the above sample is shown in the table below:
 
-| Range | Color | Hex Code |
-| ----- | ----- | -------- ||
-| 0-50 | Red | #F2726F |
-| 50-75 | Yellow | #FFC533 |
-| 75-100 | Green | #62B58F |
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -180,9 +180,11 @@ To render the gauge, open `App.vue` file and follow the steps below:
 
 5. Include the FusionCharts theme file to apply style to the charts.
 
-6. Register the `vue-fusionCharts` component.
+6. Include the `ExcelExport` module to export chart data in XLSX format.
 
-7. Store the chart configurations in a JSON object. In this JSON object:
+7. Register the `vue-fusionCharts` component.
+
+8. Store the chart configurations in a JSON object. In this JSON object:
 
    - Set the chart type as `angulargauge`. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
    - Set the width and height (in pixels).
@@ -203,8 +205,9 @@ import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
 import AngularGauge from 'fusioncharts/fusioncharts.widgets';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import ExcelExport from 'fusioncharts/features/excelexport';
 
-Vue.use(VueFusionCharts, FusionCharts, AngularGauge, FusionTheme);
+Vue.use(VueFusionCharts, FusionCharts, AngularGauge, FusionTheme, ExcelExport);
 export default {
 name: 'app',
 data () {

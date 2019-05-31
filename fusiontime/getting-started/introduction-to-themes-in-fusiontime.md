@@ -19,8 +19,9 @@ FusionTime ships with the following predefined themes:
 - `fusion`
 - `gammel`
 - `candy`
+- `umber`
 
-A Column 2D chart showcasing the 3 themes mentioned above is given below:
+A time series chart showcasing the 3 themes mentioned above is given below:
 
 {% embed_ftChart themes-in-fusiontime %}
 

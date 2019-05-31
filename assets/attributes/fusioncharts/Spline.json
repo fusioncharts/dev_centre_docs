@@ -28,6 +28,12 @@
         "name": "paletteColors"
       },
       {
+        "description": "This attribute lets you control whether empty data sets in your data will be connected to each other OR do they appear as broken data sets.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "connectNullData"
+      },
+      {
         "description": "It sets the configuration whether the x-axis labels will be displayed or not.",
         "range": "0/1",
         "type": "Boolean",
@@ -1983,7 +1989,7 @@
     "table": "Attributes for Exporting Charts",
     "attrs": [
       {
-        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLS.  \n\n__Default value__: 0",
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "exportEnabled"
@@ -2019,7 +2025,7 @@
         "name": "exportShowMenuItem"
       },
       {
-        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
+        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
         "range": "'_self' or '_blank'",
         "type": "String",
         "name": "exportTargetWindow"
@@ -2031,7 +2037,7 @@
         "name": "exportFileName"
       }
     ],
-    "description": "These attributes allow you to control the saving of chart as image, SVG or XLS."
+    "description": "These attributes allow you to control the saving of chart as image, SVG or XLSX."
   },
   {
     "table": "Data Plot Hover Effects",

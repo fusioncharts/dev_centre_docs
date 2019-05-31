@@ -6,7 +6,7 @@ heading: Configuring the Export Feature
 chartPresent: true
 ---
 
-FusionCharts Suite XT lets you export your charts (as __JPG__, __PNG__, __SVG__, and __PDF__) and chart data (since v3.11.0; as __XLS__) by using its [server-side](/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature) to export charts.
+FusionCharts Suite XT lets you export your charts (as **JPG**, **PNG**, **SVG**, and **PDF**) and chart data (since v3.11.0; as **XLSX**) by using its [server-side](/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature) to export charts.
 
 The exporting feature can be enabled by setting the `exportEnabled` attribute to 1. The mode of export can be selected by setting the `exportMode` attribute to server, client, or auto, as required.
 
@@ -65,7 +65,7 @@ The following is a complete list of `chart` level attributes that can be used to
             <td valign="top" class="text">String</td>
             <td valign="top" class="text"></td>
             <td valign="top" class="text">Lists the formats in which the chart can be exported. Custom labels indicating the exported format can also be configured. Example:
-    `"exportFormats": "PNG=Export as High Quality Image|PDF=Export as Printable|XLS=Export Chart Data"`
+    `"exportFormats": "PNG=Export as High Quality Image|PDF=Export as Printable|XLSX=Export Chart Data"`
             </td>
         </tr>
         <tr>
@@ -86,7 +86,7 @@ The following is a complete list of `chart` level attributes that can be used to
             <td valign="top" class="code">`exportTargetWindow`</td>
             <td valign="top" class="text">String</td>
             <td valign="top" class="text">___self__ or ___blank__</td>
-            <td valign="top" class="text">When a private export server is used and `exportAction` is set to __download__ or __download-save__, this attribute lets you configure whether the exported image/PDF/XLS will open in the same window (as an attachment for download) or in a new window.</td>
+            <td valign="top" class="text">When a private export server is used and `exportAction` is set to __download__ or __download-save__, this attribute lets you configure whether the exported image/PDF/XLSX will open in the same window (as an attachment for download) or in a new window.</td>
         </tr>
         <tr>
             <td valign="top" class="code">`exportCallback`</td>
@@ -125,6 +125,6 @@ The following is a complete list of `chart` level attributes that can be used to
 
 Currently, using the FusionCharts export handler, when a chart having a custom logo is exported as an image, the logo is not present in the generated image. We are introducing an experimental feature, which allows the logo present in the chart to be exported as well and be displayed in the resultant image.
 
-To use this feature, set `exportEnabled` to __1__ (because we are using the server-side export feature), and set `exportHandler` to the url __http&#58;//export.api3.fusioncharts.com/logo/__. Using this exporter, the generated output will contain the logo along with the chart. 
+To use this feature, set `exportEnabled` to **1** (because we are using the server-side export feature), and set `exportHandler` to the url **http&#58;//export.api3.fusioncharts.com/logo/**. Using this exporter, the generated output will contain the logo along with the chart.
 
 > This is an experimental feature and thus might not be a completely reliable solution.

@@ -6,7 +6,7 @@ heading: Create a Chart in React Native using FusionCharts
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React Native** component which provides bindings for **FusionCharts**. The `react-native-fusioncharts` component allows you to easily add rich and interactive charts to any **React Native** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React Native** component which provides bindings for **FusionCharts**. The `react-native-fusioncharts` component allows you to easily add rich and interactive charts to any **React Native** project.
 
 In this page, we'll see how to install FusionCharts and render a chart using the `react-native-fusioncharts` component.
 
@@ -45,9 +45,9 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;FusionCharts&lt;/title&gt;
-    &lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /&gt;
+&lt;title&gt;FusionCharts&lt;/title&gt;
+&lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /&gt;
 
     &lt;style type="text/css"&gt;
         body,
@@ -81,14 +81,15 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
             -webkit-user-select: none;
         }
     &lt;/style&gt;
+
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;div id="chart-container"&gt;
-        &lt;div id="loading-text"&gt;
-            Chart is loading...
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div id="chart-container"&gt;
+&lt;div id="loading-text"&gt;
+Chart is loading...
+&lt;/div&gt;
+&lt;/div&gt;
 
     &lt;script type='text/javascript'&gt;
         "use strict";
@@ -145,7 +146,8 @@ Install **FusionCharts** and the `react-native-fusioncharts` component using any
 &lt;/body&gt;
 
 &lt;/html&gt;
-        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
         <div>To include the specific chart types, individually add the following files using <strong>&lt;script&gt;</strong> tag:</div>
         <div>1. <strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`<br/>
@@ -207,16 +209,17 @@ $ npm run prod:android
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;!-- Include the required FusionCharts modules --&gt;
-    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
-    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;!-- Include the required FusionCharts modules --&gt;
+&lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;&lt;/body&gt;
 
 &lt;/html&gt;
-        </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
         <li>Add a `build:assets` script in Application's `package.json` file</li>
         <pre><code class="language-javascript">
@@ -237,6 +240,7 @@ $ npm run build:assets
 </div>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </div>
 
 </div>
@@ -246,7 +250,7 @@ That completes the installation of FusionCharts and the `react-native-fusionchar
 
 ## Create your first chart
 
-Let's create a Column 2D chart using the react-native-fusioncharts component showing the "Countries With Most Oil Reserves". 
+Let's create a Column 2D chart using the react-native-fusioncharts component showing the "Countries With Most Oil Reserves".
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
@@ -275,45 +279,54 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
+  // Chart Configuration
+  "chart": {
+    "caption": "Countries With Most Oil Reserves [2017-18]",
+    "subCaption": "In MMbbl = One Million barrels",
+    "xAxisName": "Country",
+    "yAxisName": "Reserves (MMbbl)",
+    "numberSuffix": "K",
+    "theme": "fusion"
+  },
+  // Chart Data
+  "data": [
+    {
+      "label": "Venezuela",
+      "value": "290"
     },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
+    {
+      "label": "Saudi",
+      "value": "260"
+    },
+    {
+      "label": "Canada",
+      "value": "180"
+    },
+    {
+      "label": "Iran",
+      "value": "140"
+    },
+    {
+      "label": "Russia",
+      "value": "115"
+    },
+    {
+      "label": "UAE",
+      "value": "100"
+    },
+    {
+      "label": "US",
+      "value": "30"
+    },
+    {
+      "label": "China",
+      "value": "30"
+    }
+  ]
 }
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
 
 In the above JSON data:
 
@@ -326,7 +339,7 @@ In the above JSON data:
 - Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
 
 - In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
-  
+
 - Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
 
 - Set the `numberSuffix` attribute to set the unit of the values.
@@ -341,19 +354,22 @@ Now that you have the data in JSON format, let's see how to render the chart.
 
 To render the chart, follow the steps below:
 
-1. Include **react**
+1. Include **react**.
 
-2. Include `react-native-fusioncharts` component
+2. Include `react-native-fusioncharts` component.
 
-3. Define the chart configuration in a JSON.
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
+3. Include the `ExcelExport` module to export chart data in XLSX format.
 
-4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
+4. Define the chart configuration in a JSON.
 
-5. Add `style` to the container of the chart.
+   - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the width and height (in pixels).
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of the `dataSource`.
+
+5. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
+
+6. Add `style` to the container of the chart.
 
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
@@ -363,96 +379,106 @@ Copy the following code to `app.js` file.
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import FusionCharts from "react-native-fusioncharts";
+import ExcelExport from "fusioncharts/features/excelexport";
 
 export default class PlainColumn2D extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            type: "column2d",
-            width: "700",
-            height: "400",
-            dataFormat: "json",
-            dataSource: {
-                "chart": {
-                    "caption": "Countries With Most Oil Reserves [2017-18]",
-                    "subCaption": "In MMbbl = One Million barrels",
-                    "xAxisName": "Country",
-                    "yAxisName": "Reserves (MMbbl)",
-                    "numberSuffix": "K",
-                    "theme": "fusion"
-                },
-                "data": [{
-                    "label": "Venezuela",
-                    "value": "290"
-                }, {
-                    "label": "Saudi",
-                    "value": "260"
-                }, {
-                    "label": "Canada",
-                    "value": "180"
-                }, {
-                    "label": "Iran",
-                    "value": "140"
-                }, {
-                    "label": "Russia",
-                    "value": "115"
-                }, {
-                    "label": "UAE",
-                    "value": "100"
-                }, {
-                    "label": "US",
-                    "value": "30"
-                }, {
-                    "label": "China",
-                    "value": "30"
-                }]
-            }
-        };
-        this.libraryPath = Platform.select({
-            // Specify fusioncharts.html file location
-            android: {
-                uri: "file:///android_asset/fusioncharts.html"
-            },
-            ios: require("./assets/fusioncharts.html")
-        });
-    }
+    this.state = {
+      type: "column2d",
+      width: "700",
+      height: "400",
+      dataFormat: "json",
+      dataSource: {
+        chart: {
+          caption: "Countries With Most Oil Reserves [2017-18]",
+          subCaption: "In MMbbl = One Million barrels",
+          xAxisName: "Country",
+          yAxisName: "Reserves (MMbbl)",
+          numberSuffix: "K",
+          theme: "fusion"
+        },
+        data: [
+          {
+            label: "Venezuela",
+            value: "290"
+          },
+          {
+            label: "Saudi",
+            value: "260"
+          },
+          {
+            label: "Canada",
+            value: "180"
+          },
+          {
+            label: "Iran",
+            value: "140"
+          },
+          {
+            label: "Russia",
+            value: "115"
+          },
+          {
+            label: "UAE",
+            value: "100"
+          },
+          {
+            label: "US",
+            value: "30"
+          },
+          {
+            label: "China",
+            value: "30"
+          }
+        ]
+      }
+    };
+    this.libraryPath = Platform.select({
+      // Specify fusioncharts.html file location
+      android: {
+        uri: "file:///android_asset/fusioncharts.html"
+      },
+      ios: require("./assets/fusioncharts.html")
+    });
+  }
 
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.header}>A Column 2D Chart</Text>
-                <View style={styles.chartContainer}>
-                <FusionCharts
-                type={this.state.type}
-                width={this.state.width}
-                height={this.state.height}
-                dataFormat={this.state.dataFormat}
-                dataSource={this.state.dataSource}
-                libraryPath={this.libraryPath} // set the libraryPath property
-                />
-                </View>
-            </View>
-        );
-    }
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.header}>A Column 2D Chart</Text>
+        <View style={styles.chartContainer}>
+          <FusionCharts
+            type={this.state.type}
+            width={this.state.width}
+            height={this.state.height}
+            dataFormat={this.state.dataFormat}
+            dataSource={this.state.dataSource}
+            libraryPath={this.libraryPath} // set the libraryPath property
+          />
+        </View>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 10
-    },
-    header: {
-        fontWeight: "bold",
-        fontSize: 20,
-        textAlign: "center",
-        paddingBottom: 10
-    },
-    chartContainer: {
-        height: 400,
-        borderColor: "#000",
-        borderWidth: 1
-    }
+  container: {
+    flex: 1,
+    padding: 10
+  },
+  header: {
+    fontWeight: "bold",
+    fontSize: 20,
+    textAlign: "center",
+    paddingBottom: 10
+  },
+  chartContainer: {
+    height: 400,
+    borderColor: "#000",
+    borderWidth: 1
+  }
 });
 ```
 

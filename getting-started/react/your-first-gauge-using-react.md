@@ -116,11 +116,11 @@ The angular gauge is shown below:
 
 The thresholds for the above sample is shown in the table below:
 
-| Range | Color | Hex Code |
-| ----- | ----- | -------- ||
-| 0-50 | Red | #F2726F |
-| 50-75 | Yellow | #FFC533 |
-| 75-100 | Green | #62B58F |
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -200,9 +200,11 @@ To render the gauge, follow the steps below:
 
 5. Include the FusionCharts theme file to apply style to the charts.
 
-6. Add the gauge and the theme as a dependency to the core.
+6. Include the `ExcelExport` module to export chart data in XLSX format.
 
-7. Store the chart configurations as a JSON object. In this JSON object:
+7. Add the gauge, theme and ExcelExport as a dependency to the core.
+
+8. Store the chart configurations as a JSON object. In this JSON object:
 
    - Set the gauge type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
 
@@ -212,7 +214,7 @@ To render the gauge, follow the steps below:
 
    - Embed the json data as the value of the `dataSource`.
 
-8. Create the DOM element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
+9. Create the DOM element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The consolidated code is shown below:
 
@@ -241,10 +243,13 @@ import Widgets from 'fusioncharts/fusioncharts.widgets';
 // Step 5 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 6 - Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
+// Step 6 - Include the ExcelExport
+import ExcelExport from 'fusioncharts/features/excelexport';
 
-// Step 7 - Creating the JSON object to store the chart configurations
+// Step 7 - Adding the chart, theme and ExcelExport as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme, ExcelExport);
+
+// Step 8 - Creating the JSON object to store the chart configurations
 const chartConfigs = {
     type: 'angulargauge', // The gauge type
     width: '450', // Width of the gauge
@@ -285,7 +290,7 @@ const chartConfigs = {
   }
 };
 
-// Step 8 - Creating the DOM element to pass the react-fusioncharts component 
+// Step 9 - Creating the DOM element to pass the react-fusioncharts component 
 class App extends React.Component {
   render() {
      return (

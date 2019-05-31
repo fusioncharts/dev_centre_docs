@@ -6,7 +6,7 @@ heading: Create a Chart in React using FusionCharts
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project.
 
 In this page, we'll see how to install FusionCharts and render a chart using the `react-fusionCharts` component.
 
@@ -132,45 +132,54 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
+  // Chart Configuration
+  "chart": {
+    "caption": "Countries With Most Oil Reserves [2017-18]",
+    "subCaption": "In MMbbl = One Million barrels",
+    "xAxisName": "Country",
+    "yAxisName": "Reserves (MMbbl)",
+    "numberSuffix": "K",
+    "theme": "fusion"
+  },
+  // Chart Data
+  "data": [
+    {
+      "label": "Venezuela",
+      "value": "290"
     },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
+    {
+      "label": "Saudi",
+      "value": "260"
+    },
+    {
+      "label": "Canada",
+      "value": "180"
+    },
+    {
+      "label": "Iran",
+      "value": "140"
+    },
+    {
+      "label": "Russia",
+      "value": "115"
+    },
+    {
+      "label": "UAE",
+      "value": "100"
+    },
+    {
+      "label": "US",
+      "value": "30"
+    },
+    {
+      "label": "China",
+      "value": "30"
+    }
+  ]
 }
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
 
 In the above JSON data:
 
@@ -183,7 +192,7 @@ In the above JSON data:
 - Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
 
 - In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
-  
+
 - Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
 
 - Set the `numberSuffix` attribute to set the unit of the values.
@@ -206,17 +215,20 @@ To render the chart, follow the steps below:
 
 4. Include the chart type
 
-5. Include the FusionCharts theme file to apply the style to the charts
+5. Include the FusionCharts theme file to apply the style to the charts.
 
-6. Add the chart and the theme as a dependency to the core
+6. Include the `ExcelExport` module to export chart data in XLSX format.
 
-7. Store the chart configurations in a JSON object. In this JSON object:
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
+7. Add the chart, theme and ExcelExport as a dependency to the core.
 
-8. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
+8. Store the chart configurations in a JSON object. In this JSON object:
+
+   - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the width and height (in pixels).
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of the `dataSource`.
+
+9. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The consolidated code is shown below:
 
@@ -230,26 +242,29 @@ The consolidated code is shown below:
 <div class='tab npm-tab active'>
 
 <pre><code class="language-javascript">
-// Step 1 - Including react
+// Step 1 - Include react
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Step 2 - Including the react-fusioncharts component
+// Step 2 - Include the react-fusioncharts component
 import ReactFC from 'react-fusioncharts';
 
-// Step 3 - Including the fusioncharts library
+// Step 3 - Include the fusioncharts library
 import FusionCharts from 'fusioncharts';
 
-// Step 4 - Including the chart type
+// Step 4 - Include the chart type
 import Column2D from 'fusioncharts/fusioncharts.charts';
 
-// Step 5 - Including the theme as fusion
+// Step 5 - Include the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 6 - Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+// Step 6 - Include the ExcelExport
+import ExcelExport from 'fusioncharts/features/excelexport';
 
-// Step 7 - Creating the JSON object to store the chart configurations
+// Step 7 - Adding the chart, theme and ExcelExport as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme, ExcelExport);
+
+// Step 8 - Creating the JSON object to store the chart configurations
 const chartConfigs = {
     type: 'column2d',// The chart type
     width: '700', // Width of the chart
@@ -294,7 +309,7 @@ const chartConfigs = {
     }
 };
 
-// Step 8 - Creating the DOM element to pass the react-fusioncharts component 
+// Step 9 - Creating the DOM element to pass the react-fusioncharts component 
 class App extends React.Component {
   render() {
      return (
@@ -402,7 +417,6 @@ export default App
 </pre>
 </div>
 
-
 <div class='tab localfiles-tab'>
 <pre><code class="language-javascript">
 &lt;html&gt;
@@ -492,8 +506,8 @@ That's it! Your first chart using `react-fusioncharts` is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
