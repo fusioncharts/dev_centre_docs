@@ -60,9 +60,9 @@ Let’s create a chart showcasing **Unemployment rate in San Jose & SJ Metro Are
 
 ## Grouped Column
 
-To render a time series chart with the grouped column, set the
+To render a time series chart with the grouped column, set the value of `plottype` attribute to `column` and the value of the `plot` attribute in the series name.
 
-Let’s create a chart showcasing .
+Let’s create a chart showcasing **Sales Analysis of Grocery and Footwear Store**.
 
 {% embed_ftChart grouped-column-chart %}
 
