@@ -1,7 +1,7 @@
 ---
 title: Export PDF files in Print Format | FusionCharts
 description: This article talks about how to export PDF files in print format.
-heading: Export PDF Files in Print Format
+heading: Export PDF files in print format
 ---
 
 FusionExport allows you to export your exported PDF files in print-friendly format.
@@ -900,13 +900,13 @@ The HTML template for the above code is given below:
 ```
 <div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
 
+## Add pagination
+
 Pagination is useful when you want to print a document into discrete pages. FusionExport allows you to add page breaks in exported PDF files. Before you start with the code implementations to add pagination, check out the following video which contains the step by step process.
 
 <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/584dbe32ac8e4d9e83bdd44276ee9720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 Now, let’s check out the basic steps to add page breaks in exported PDFs.
-
-## Prerequisites
 
 Before you start, ensure that you have:
 
@@ -917,28 +917,6 @@ Before you start, ensure that you have:
 3. [Export a Dashboard](/exporting-charts/using-fusionexport/installation/export-a-dashboard)
 
 The sample code to set the dimension of the viewport is given below:
-
-```csharp
-// Exporting a dashboard
-const path = require('path');
-// Require FusionExport
-const { ExportManager, ExportConfig } = require('fusionexport-node-client');
-// Instantiate ExportManager
-const exportManager = new ExportManager();
-// Instantiate ExportConfig and add the required configurations
-const exportConfig = new ExportConfig();
-exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
-exportConfig.set('templateFilePath', path.join(__dirname, 'resources', 'template.html'));
-exportConfig.set('templateHeight', 900);
-exportConfig.set('templateWidth', 900);
-exportConfig.set('type', 'pdf');
-// provide the export config
-exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
-  exportedFiles.forEach(file => console.log(file));
-}).catch((err) => {
-  console.log(err);
-});
-```
 
 In the above code:
 
@@ -1804,6 +1782,4 @@ The HTML template for the above code is given below:
 </html>
 ```
 
-Click [here](https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf) to download the exported PDF file.
-
-Click [here](https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions) to download the above project.
+<div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
