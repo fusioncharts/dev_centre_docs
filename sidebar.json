@@ -1943,6 +1943,10 @@
             "path": "/fusiontime/fusiontime-component/reference-line-in-fusiontime"
           },
           {
+            "title": "Reference Lines",
+            "path": "/fusiontime/fusiontime-component/tooltip-in-fusiontime"
+          },
+          {
             "title": "Time Marker",
             "path": "/fusiontime/fusiontime-component/time-marker"
           },
@@ -2326,10 +2330,6 @@
               {
                 "title": "Reference Lines",
                 "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/reference-line-in-fusiontime"
-              },
-              {
-                "title": "Tooltip",
-                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/tooltip-in-fusiontime"
               },
               {
                 "title": "Time Marker",
