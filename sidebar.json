@@ -2132,10 +2132,6 @@
           {
             "title": "Customize the Dimensions of Exported Files",
             "path": "/exporting-charts/using-fusionexport/tutorials/customize-the-dimensions-of-exported-files"
-          },
-          {
-            "title": "Add Pagination in exported PDFs",
-            "path": "/exporting-charts/using-fusionexport/tutorials/add-pagination-in-exported-pdfs"
           }
         ]
       },
