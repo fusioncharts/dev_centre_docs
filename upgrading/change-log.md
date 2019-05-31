@@ -10,9 +10,9 @@ heading: Version 3.13.x
 
 <h4 class="sub-heading">Improvement</h4>
 
-- In a multi-level Pie chart, `showLabel` and `showValue` attributes are now supported at the `category` level.
+- In a multi-level pie chart, `showLabel` and `showValue` attributes are now supported at the `category` level.
 
-- The file format to export a chart in Excel is now changed from XLS to XLSX.
+- The file format to export a chart in Excel is now changed from .xls to .xlsx.
 
 <h4>Fixes</h4>
 
