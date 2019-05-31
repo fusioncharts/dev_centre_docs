@@ -900,13 +900,13 @@ The HTML template for the above code is given below:
 ```
 <div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
 
-## Add pagination in exported files
-
 Pagination is useful when you want to print a document into discrete pages. FusionExport allows you to add page breaks in exported PDF files. Before you start with the code implementations to add pagination, check out the following video which contains the step by step process.
 
 <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/584dbe32ac8e4d9e83bdd44276ee9720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 Now, let’s check out the basic steps to add page breaks in exported PDFs.
+
+## Prerequisites
 
 Before you start, ensure that you have:
 
@@ -1804,4 +1804,6 @@ The HTML template for the above code is given below:
 </html>
 ```
 
-<div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
+Click [here](https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf) to download the exported PDF file.
+
+Click [here](https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions) to download the above project.
