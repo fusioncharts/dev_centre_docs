@@ -12,21 +12,21 @@ heading: Version 3.13.x
 
 - In a multi-level pie chart, `showLabel` and `showValue` attributes are now supported at the `category` level.
 
-- The file format to export a chart in Excel is now changed from .xls to .xlsx.
+- The file format to export a chart in Excel is now changed from `.xls` to `.xlsx`.
 
 <h4>Fixes</h4>
 
 - In a multi-series chart, if a series is hidden at the time of rendering and the attribute `transposeAxis` is set as `1`, the y-axis was not scaling properly. This issue is now fixed.
 
-- On exporting charts as PDF from a page which has multiple charts, the exported PDF was not opening properly in other applications, e.g.- Acrobat Reader. This issue is now fixed.
+- On exporting charts as PDF from a page which has multiple charts, the exported PDF was not opening properly in other applications, e.g.,- Acrobat Reader. This issue is now fixed.
 
-- In a multi-series chart, if a series is hidden at the time of rendering by setting the `visible` attribute to `0`, the chart was throwing a `js` error. This issue is now fixed.
+- In a multi-series chart, if a series is hidden at the time of rendering by setting the `visible` attribute to `0`, the chart was throwing a `JS` error. This issue is now fixed.
 
 - `connectNullData` is now working fine in spline and multi-series spline charts.
 
-- In a multiaxis line chart with more than 9 series, a js error was thrown on hovering over the legend. This issue is now fixed.
+- In a multi-axis line chart with more than 9 series, a `JS` error was thrown on hovering over the legend. This issue is now fixed.
 
-- The Horizontal Bullet chart was throwing a js error and disappears when resized. This issue is now fixed.
+- The horizontal bullet chart was throwing a `JS` error and disappear when resized. This issue is now fixed.
 
 - In IE8, charts were not rendering using the minified version of the jQuery plugin. This issue is now fixed.
 

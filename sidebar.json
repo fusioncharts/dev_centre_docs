@@ -2328,6 +2328,10 @@
                 "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/reference-line-in-fusiontime"
               },
               {
+                "title": "Tooltip",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/tooltip-in-fusiontime"
+              },
+              {
                 "title": "Time Marker",
                 "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/time-marker"
               },
