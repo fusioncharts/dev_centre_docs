@@ -35,7 +35,7 @@ Now, follow the steps to override the default package version of FusionCharts:
 - Place all the files present inside the `js` folder in a folder named `fusioncharts` beside your `fusionexport` file.
 - Pass your custom FusionCharts directory to the `-L` options of FusionExport.
 
-To run licensed FusionExport with licensed FusionCharts run:
+To run `FusionExport` with your version of `FusionCharts` run:
 
 ```bash
 ./fusionexport -L path/to/fusioncharts/

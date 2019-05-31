@@ -1781,3 +1781,13 @@ The HTML template for the above code is given below:
 ```
 
 <div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
+
+## Related Resources
+
+After you have changed the export type for a single chart, we recommend learning how to:
+
+* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+
+* [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+
+* [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
