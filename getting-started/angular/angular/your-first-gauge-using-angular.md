@@ -19,13 +19,13 @@ To install **FusionCharts** and the `angular-fusioncharts` component via `npm` f
 
 **Step 1:** Install `angular-fusioncharts`
 
-```
+```bash
 $ npm install angular-fusioncharts --save
 ```
 
 **Step 2:** Install fusioncharts core library
 
-```
+```bash
 $ npm install fusioncharts --save
 ```
 
@@ -45,11 +45,11 @@ The angular gauge is shown below:
 
 The thresholds for the above sample is shown in the table below:
 
-| Range | Color | Hex Code |
-| ----- | ----- | -------- ||
-| 0-50 | Red | #F2726F |
-| 50-75 | Yellow | #FFC533 |
-| 75-100 | Green | #62B58F |
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -129,44 +129,42 @@ To render the gauge follow the steps below:
 
 - Include the FusionCharts theme file to apply the style to the gauge.
 
+- Include the `ExcelExport` module to export chart data in XLSX format.
+
 - Pass the `fusioncharts` library, gauge module and the theme.
 
 The consolidated code is shown below:
 
-```
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+```javascript
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { HttpModule } from "@angular/http";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 
 // Import angular-fusioncharts
-import { FusionChartsModule } from 'angular-fusioncharts';
+import { FusionChartsModule } from "angular-fusioncharts";
 
 // Import FusionCharts library and chart modules
-import * as FusionCharts from 'fusioncharts';
-import * as Widgets from 'fusioncharts/fusioncharts.widgets';
+import * as FusionCharts from "fusioncharts";
+import * as Widgets from "fusioncharts/fusioncharts.widgets";
 
-import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+
+// Import the ExcelExport
+import * as ExcelExport from "fusioncharts/features/excelexport";
 
 // Pass the fusioncharts library and chart modules
-FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
+FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme, ExcelExport);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    FusionChartsModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, FormsModule, HttpModule, FusionChartsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 **Step 2:** Add data to the angular `app.component.ts`
@@ -175,48 +173,54 @@ Set the JSON data within the `AppComponent` class as shown below:
 
 > The code below is same for Angular older and latest versions.
 
-```
-import {Component} from '@angular/core';
+```javascript
+import { Component } from "@angular/core";
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
+  selector: "app-root",
+  templateUrl: "./app.component.html"
 })
 export class AppComponent {
-    dataSource: Object;
-    constructor() {
-        this.dataSource = {
-            "chart": {
-            "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
-            "theme": "fusion",
-            "showToolTip": "0"
-        },
-        // Gauge Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
-            }]
-        }
+  dataSource: Object;
+  constructor() {
+    this.dataSource = {
+      chart: {
+        caption: "Nordstrom's Customer Satisfaction Score for 2017",
+        lowerLimit: "0",
+        upperLimit: "100",
+        showValue: "1",
+        numberSuffix: "%",
+        theme: "fusion",
+        showToolTip: "0"
+      },
+      // Gauge Data
+      colorRange: {
+        color: [
+          {
+            minValue: "0",
+            maxValue: "50",
+            code: "#F2726F"
+          },
+          {
+            minValue: "50",
+            maxValue: "75",
+            code: "#FFC533"
+          },
+          {
+            minValue: "75",
+            maxValue: "100",
+            code: "#62B58F"
+          }
+        ]
+      },
+      dials: {
+        dial: [
+          {
+            value: "81"
+          }
+        ]
+      }
     }; // end of this.dataSource
-} // end of constructor
+  } // end of constructor
 } // end of class AppComponent
 ```
 
@@ -230,15 +234,16 @@ Create the container to render the gauge and set the following:
 
 - The data source.
 
-```
+```html
 <h1>
   {{title}}
 </h1>
 <fusioncharts
-    width="450"
-    height="250"
-    type="AngularGauge"
-    [dataSource]="dataSource">
+  width="450"
+  height="250"
+  type="AngularGauge"
+  [dataSource]="dataSource"
+>
 </fusioncharts>
 ```
 

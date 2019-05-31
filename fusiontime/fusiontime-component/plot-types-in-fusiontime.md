@@ -11,6 +11,7 @@ FusionTime supports the following plot types:
 - Line
 - Column
 - Stacked Column
+- Grouped Column
 - Area
 - Stacked Area
 - Smooth Area
@@ -57,6 +58,14 @@ To render a time series chart with the stacked column as data plot, set the valu
 Let’s create a chart showcasing **Unemployment rate in San Jose & SJ Metro Area**.
 
 {% embed_ftChart stacked-column-chart %}
+
+## Grouped Column
+
+To render a time series chart with the grouped column, set the value of `plottype` attribute to `column` and the value of the `plot` attribute in the series name.
+
+Let’s create a chart showcasing **Sales Analysis of Grocery and Footwear Store**.
+
+{% embed_ftChart grouped-column-chart %}
 
 ## Area
 

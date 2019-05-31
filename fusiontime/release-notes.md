@@ -4,6 +4,88 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 1.1.0</h2>
+
+<p class="release-date">31st May, 2019</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- A new chart - [Grouped column](/fusiontime/fusiontime-component/plot-types-in-fusiontime#grouped-column) (aka multi-series column) is now supported in FusionTime.
+
+- All major FusionTime components can now be styled according to individual brand preference using familiar CSS styling for HTML and SVG objects. Components include:
+
+  - [Time Axis](/fusiontime/fusiontime-attributes#time-axis) (SVG styling)
+
+  - [Y-axis](/fusiontime/fusiontime-attributes#y-axes) (SVG styling)
+
+  - [Crossline](fusiontime/fusiontime-attributes#crossline) (SVG styling)
+
+  - [Time Marker](/fusiontime/fusiontime-attributes#time-markers) (SVG styling)
+
+  - [Data Marker](/fusiontime/fusiontime-attributes#data-markers) (SVG styling)
+
+  - [Time Navigator](fusiontime/fusiontime-attributes#time-navigator) (SVG styling)
+
+  - [Tooltip](/fusiontime/fusiontime-attributes#tooltip) (HTML styling)
+
+<h4>Improvement</h4>
+
+- Default derived styles for different FusionTime components have been removed. You can now add styles using the `style` object for each component.
+
+- Following objects are now available in FusionTime:
+
+  - `timenavigator`
+  - `tooltip`
+  - `crossline`
+
+- The default font of all text is now Helvetica, Arial or Sans-Serif.
+
+- Ordering of elements and stroke for the top border in the stacked area chart has been improved for better visual clarity.
+
+- [Standard range selector](/fusiontime/fusiontime-component/standard-range-selector) (aka SRS) component has been re-designed.
+
+- A new [theme](/fusiontime/getting-started/introduction-to-themes-in-fusiontime), `UMBER`, is now available for FusionTime charts.
+
+- Design choices for existing themes, especially Gammel, have been improved.
+
+- Better error messages are now available if one gives an incorrect axis or plot configuration.
+
+<h4>Fixes</h4>
+
+- Selecting and applying time from the Custom Range Selector selection box is now working fine.
+
+- In Windows hybrid touch devices, the Custom Range Selector calendar is now working properly.
+
+- If for a component styling is provided using both the `dataSource` and `themes`, the theme engine will merge properties from both the sources to display the component.
+
+- In candlestick and OHLC charts the styles of the `bear` and `bull` are now getting applied properly. Previously, the style properties were getting interchanged.
+
+- In candlestick and OHLC charts the color of the `bear` and `bull` were changing at the time of panning. This issue is now fixed.
+
+- Consolidated date in data marker tooltip was showing junk text. This issue is now fixed.
+
+- If the `chart{}` object is not given or left blank, earlier the `setChartAttribute()` API was not working. This issue is now fixed.
+
+- `stroke-width = 0` is now working for anchors from `plotConfig` object.
+
+- Tooltip cosmetics were not getting updated when theme was changed after hovering on the plots. This issue is now fixed.
+
+- Grid line styles in the Y-axis are now properly applied.
+
+- Marker-notch of the time instance marker was shifted below the X-axis. It has been placed correctly now.
+
+- Tooltip padding using styles was not accepting multiple values. This issue is now fixed.
+
+- When the data value is very less, on plot hover, the tooltip overlapped the crossline label. This issue is now fixed.
+
+- Setting the style of the text using `chart.style.text` was not working. This issue is now fixed.
+
+- Table id was not getting assigned to the child or derived **dataTable**. This issue is now fixed.
+
+<h4>Deprecated</h4>
+
+- `enableNavigator` attribute is now deprecated, and the same can be achieved by using the `enabled` attribute inside the `tooltip` object.
+
 <h2 class="sub-heading">Version 1.0.0</h2>
 
 <p class="release-date">27th February, 2019</p>

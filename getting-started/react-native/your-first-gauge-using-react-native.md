@@ -255,11 +255,11 @@ The angular gauge is shown below:
 
 The thresholds for the above sample is shown in the table below:
 
-| Range | Color | Hex Code |
-| ----- | ----- | -------- ||
-| 0-50 | Red | #F2726F |
-| 50-75 | Yellow | #FFC533 |
-| 75-100 | Green | #62B58F |
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -329,113 +329,122 @@ Now that you have the data in JSON format, let's see how to render the chart.
 
 To render the chart, follow the steps below:
 
-1. Include **react**
+1. Include **react**.
 
-2. Include `react-native-fusioncharts` component
+2. Include `react-native-fusioncharts` component.
 
-3. Define the chart configuration in a JSON.
+3. Include the `ExcelExport` module to export chart data in XLSX format.
+
+4. Define the chart configuration in a JSON.
 
    - Set the gauge type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as **json**.
    - Embed the json data as the value of the `dataSource`.
 
-4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
+5. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
-5. Add `style` to the container of the chart.
+6. Add `style` to the container of the chart.
 
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
 Copy the following code to `app.js` file.
 
-```
-import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
-import FusionCharts from 'react-native-fusioncharts';
+```javascript
+import React, { Component } from "react";
+import { Platform, StyleSheet, Text, View } from "react-native";
+import FusionCharts from "react-native-fusioncharts";
+import ExcelExport from "fusioncharts/features/excelexport";
 
 export default class DrillDown extends Component {
-    constructor(props) {
-        super(props);
-        this.apiCaller = null;
-        this.state = {
-            type: 'angulargauge',
-            width: '450',
-            height: '250',
-            dataFormat: 'json',
-            dataSource: {
-                "chart": {
-                    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-                    "lowerLimit": "0",
-                    "upperLimit": "100",
-                    "showValue": "1",
-                    "numberSuffix": "%",
-                    "theme": "fusion",
-                    "showToolTip": "0"
-                },
-                "colorRange": {
-                    "color": [{
-                        "minValue": "0",
-                        "maxValue": "50",
-                        "code": "#F2726F"
-                    }, {
-                        "minValue": "50",
-                        "maxValue": "75",
-                        "code": "#FFC533"
-                    }, {
-                        "minValue": "75",
-                        "maxValue": "100",
-                        "code": "#62B58F"
-                    }]
-                },
-                "dials": {
-                      "dial": [{
-                          "value": "81"
-                      }]
-                }
+  constructor(props) {
+    super(props);
+    this.apiCaller = null;
+    this.state = {
+      type: "angulargauge",
+      width: "450",
+      height: "250",
+      dataFormat: "json",
+      dataSource: {
+        chart: {
+          caption: "Nordstrom's Customer Satisfaction Score for 2017",
+          lowerLimit: "0",
+          upperLimit: "100",
+          showValue: "1",
+          numberSuffix: "%",
+          theme: "fusion",
+          showToolTip: "0"
+        },
+        colorRange: {
+          color: [
+            {
+              minValue: "0",
+              maxValue: "50",
+              code: "#F2726F"
+            },
+            {
+              minValue: "50",
+              maxValue: "75",
+              code: "#FFC533"
+            },
+            {
+              minValue: "75",
+              maxValue: "100",
+              code: "#62B58F"
             }
-        };
-        this.libraryPath = Platform.select({
-            // Specify fusioncharts.html file location
-            android: { uri: 'file:///android_asset/fusioncharts.html' },
-            ios: require('./assets/fusioncharts.html')
-        });
-    }
+          ]
+        },
+        dials: {
+          dial: [
+            {
+              value: "81"
+            }
+          ]
+        }
+      }
+    };
+    this.libraryPath = Platform.select({
+      // Specify fusioncharts.html file location
+      android: { uri: "file:///android_asset/fusioncharts.html" },
+      ios: require("./assets/fusioncharts.html")
+    });
+  }
 
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.header}>A Simple Gauge</Text>
-                <View style={styles.chartContainer}>
-                <FusionCharts
-                type={this.state.type}
-                width={this.state.width}
-                height={this.state.height}
-                dataFormat={this.state.dataFormat}
-                dataSource={this.state.dataSource}
-                libraryPath={this.libraryPath}
-                />
-                </View>
-            </View>
-        );
-    }
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.header}>A Simple Gauge</Text>
+        <View style={styles.chartContainer}>
+          <FusionCharts
+            type={this.state.type}
+            width={this.state.width}
+            height={this.state.height}
+            dataFormat={this.state.dataFormat}
+            dataSource={this.state.dataSource}
+            libraryPath={this.libraryPath}
+          />
+        </View>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 10
-    },
-    header: {
-        fontWeight: 'bold',
-        fontSize: 20,
-        textAlign: 'center',
-        paddingBottom: 10
-    },
-    chartContainer: {
-        height: 400,
-        borderColor: '#000',
-        borderWidth: 1
-    }
+  container: {
+    flex: 1,
+    padding: 10
+  },
+  header: {
+    fontWeight: "bold",
+    fontSize: 20,
+    textAlign: "center",
+    paddingBottom: 10
+  },
+  chartContainer: {
+    height: 400,
+    borderColor: "#000",
+    borderWidth: 1
+  }
 });
 ```
 

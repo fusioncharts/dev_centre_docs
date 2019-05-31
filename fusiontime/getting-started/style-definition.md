@@ -171,19 +171,23 @@ Styling can be applied to three elements of the X-axis:
 
 - Tick marks
 
-Style applied to `tick marks` and `label` is directly applied to the major tick marks and their labels. The values of the style properties for minor tick marks and their labels are derived from the provided style.
+FusionTime allows to the style the major and minor ticks of the time axis individually. The values of the style properties for major and minor tick marks and their labels are derived from the provided style.
 
 **Syntax**:
 
 ```javascript
-{
-  "xAxis": {
-    "style": {
-      "label": Style,
-      "title": Style,
-      "tick-mark": Style
+"DataScource": {
+    "xAxis": {
+        "style": {
+            "tick-mark": SVGStyle | String,
+            "tick-mark-major": SVGStyle | String,
+            "tick-mark-minor": SVGStyle | String,
+            "label": SVGStyle | String,
+            "label-major": SVGStyle | String,
+            "label-minor": SVGStyle | String,
+            "label-context": SVGStyle | String
+        }
     }
-  }
 }
 ```
 
@@ -237,6 +241,63 @@ Styling can be applied to two elements of a reference line:
         }]
     }]
 }
+```
+
+## Tooltip
+
+You can add style to the tooltip using `style` object under `tooltip` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    tooltip: {
+      enabled: Boolean,
+      style: {
+        container: {}, //HTMLStyle | String
+        text: {}, //HTMLtyle | String
+        header: {}, //HTMLStyle | String
+        body: {} //HTMLStyle | String
+      }
+    }
+  }
+});
+```
+
+## Time Navigator
+
+Time Navigator of a time-series chart can be divided into two sub-sections:
+
+- Window
+- Scroll Bar
+
+You can add style to the time marker components using `style` object under `window` and `scrollbar` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    navigator: {
+      enabled: Boolean,
+      scrollbar: {
+        style: {
+          button: {}, //SVGStyle | String
+          arrow: {}, //SVGStyle | String
+          scroller: {}, //SVGStyle | String
+          grip: {}, //SVGStyle | String
+          track: {} //SVGStyle | String
+        }
+      },
+      window: {
+        style: {
+          handle: {}, //SVGStyle | String
+          "handle-grip": {}, //SVGStyle | String
+          mask: {} //SVGStyle | String
+        }
+      }
+    }
+  }
+});
 ```
 
 ## Time Marker

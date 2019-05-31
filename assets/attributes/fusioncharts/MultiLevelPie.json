@@ -1275,7 +1275,7 @@
     "table": "Attributes for Exporting Charts",
     "attrs": [
       {
-        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLS.  \n\n__Default value__: 0",
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "exportEnabled"
@@ -1311,7 +1311,7 @@
         "name": "exportShowMenuItem"
       },
       {
-        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
+        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
         "range": "'_self' or '_blank'",
         "type": "String",
         "name": "exportTargetWindow"
@@ -1323,7 +1323,7 @@
         "name": "exportFileName"
       }
     ],
-    "description": "These attributes allow you to control the saving of chart as image, SVG or XLS."
+    "description": "These attributes allow you to control the saving of chart as image, SVG or XLSX."
   },
   {
     "table": "Data Plot Hover Effects",
@@ -1462,6 +1462,20 @@
         "range": "Numeric Value",
         "type": "Number",
         "name": "value"
+      },
+      {
+        "description": "Allows you to show or hide the label for a specific category on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.13.5",
+        "name": "showLabel"
+      },
+      {
+        "description": "Allows you to show or hide the value for a specific category on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.13.5",
+        "name": "showValue"
       }
     ],
     "description": "The attributes of the `category` object are used to define and customize individual x-axis labels for multi-series charts.",

@@ -162,7 +162,7 @@ heading: Version 3.11.x
 
 - FusionCharts Suite XT introduces the toolbar starting version 3.11.0. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally, providing a uniform and clean look and a meaningful and logical grouping of chart elements.
 
-- Chart data can now be exported in the XLS format.
+- Chart data can now be exported in the XLSX format.
 
 - The batch export feature has been introduced, allowing users to export multiple charts on the same page as a single JPG/PNG image. The `batchExport` API method enables this feature; additionally, it also lets you customize the exported chart images for parameters like the width and height of the exported chart, the background color, transparency, and so on.
 

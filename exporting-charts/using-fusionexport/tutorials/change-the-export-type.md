@@ -8,14 +8,14 @@ heading: Change the export type
 
 FusionExport supports exporting charts to the following file types:
 
-* PNG
-* JPEG
-* PDF
-* SVG
-* HTML
-* CSV
-* XLS
-* XLSX
+- PNG
+- JPEG
+- PDF
+- SVG
+- HTML
+- CSV
+- XLSX
+- XLSXX
 
 ## Prerequisites
 
@@ -40,33 +40,36 @@ The accepted format of configuration is the same as that of charts you can gener
 Except for the case of exporting dashboards, all other exports work on the basis of the chart configuration that you create. Here, we will use the configuration of a simple Column 2D chart.
 
 ```json
-[{
+[
+  {
     "type": "column2d",
     "renderAt": "chart-container",
     "width": "550",
     "height": "350",
     "dataFormat": "json",
     "dataSource": {
-        "chart": {
-            "caption": "Number of visitors in the last 3 days",
-            "subCaption": "Bakersfield Central vs Los Angeles Topanga",
-            "theme": "fusion"
+      "chart": {
+        "caption": "Number of visitors in the last 3 days",
+        "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+        "theme": "fusion"
+      },
+      "data": [
+        {
+          "label": "Mon",
+          "value": "15123"
         },
-        "data": [{
-                "label": "Mon",
-                "value": "15123"
-            },
-            {
-                "label": "Tue",
-                "value": "14233"
-            },
-            {
-                "label": "Wed",
-                "value": "25507"
-            }
-        ]
+        {
+          "label": "Tue",
+          "value": "14233"
+        },
+        {
+          "label": "Wed",
+          "value": "25507"
+        }
+      ]
     }
-}]
+  }
+]
 ```
 
 Based on the above configuration, the exported chart will look like the image below.
@@ -79,7 +82,7 @@ Before you start with the code, we suggest going through the steps that the code
 
 1. Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
 
-2. Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method.  You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method. Use the `set()` method to change the export `type`, by passing any of the [supported types](/exporting-charts/using-fusionexport/tutorials/change-the-export-type#supported-types) as one of its arguments.
+2. Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method. Use the `set()` method to change the export `type`, by passing any of the [supported types](/exporting-charts/using-fusionexport/tutorials/change-the-export-type#supported-types) as one of its arguments.
 
 3. Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
 
@@ -112,13 +115,13 @@ using FusionCharts.FusionExport.Client; // Import sdk
 
 namespace FusionExportTest
 {
-    public static class ChangeType
-    {
-        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT)
-        {
-            // Instantiate the ExportConfig class and add the required configurations
-            ExportConfig exportConfig = new ExportConfig();
-            List<string> results = new List<string>();
+public static class ChangeType
+{
+public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT)
+{
+// Instantiate the ExportConfig class and add the required configurations
+ExportConfig exportConfig = new ExportConfig();
+List<string> results = new List<string>();
 
             // Instantiate the ExportManager class
             using (ExportManager exportManager = new ExportManager())
@@ -143,8 +146,10 @@ namespace FusionExportTest
         }
 
     }
+
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -153,8 +158,8 @@ namespace FusionExportTest
 import com.fusioncharts.fusionexport.client.*; // import sdk
 
 public class Script {
-    public static void main(String[] args) throws Exception {
-        String configPath = "resources/chart-config-file.json";
+public static void main(String[] args) throws Exception {
+String configPath = "resources/chart-config-file.json";
 
         // Instantiate the ExportConfig class and add the required configurations
         ExportConfig config = new ExportConfig();
@@ -170,9 +175,11 @@ public class Script {
         ExportManager manager = new ExportManager();
         // Call the export() method with the export config and the respective callbacks
         manager.export(config, outputDir = ".", unzip = true);
-  }
+
+}
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -184,23 +191,24 @@ public class Script {
   use FusionExport\ExportManager;
   use FusionExport\ExportConfig;
 
-  // Instantiate the ExportConfig class and add the required configurations
-  $exportConfig = new ExportConfig();
+// Instantiate the ExportConfig class and add the required configurations
+$exportConfig = new ExportConfig();
   // Provide path of the chart configuration which we have defined above.  
   // You can also pass the same object as serialized JSON.
   $exportConfig->set('chartConfig', realpath('resources/chart-config-file.json'));
 
-  // ++++++ ATTENTION - MODIFY THE EXPORT TYPE ++++++
-  // OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg' | 'html' | 'csv' | 'xls' | 'xlsx'
-  $exportConfig->set('type', 'jpeg');
+// ++++++ ATTENTION - MODIFY THE EXPORT TYPE ++++++
+// OPTIONS ARE: 'png' (default) | 'jpeg' | 'pdf' | 'svg' | 'html' | 'csv' | 'xls' | 'xlsx'
+\$exportConfig->set('type', 'jpeg');
 
-  // Instantiate the ExportManager class
-  $exportManager = new ExportManager();
+// Instantiate the ExportManager class
+\$exportManager = new ExportManager();
 
-  // Call the export() method with the exportConfig and the respective callbacks
-  $exportManager->export($exportConfig, $outputDir = '.', $unzip = true);
+// Call the export() method with the exportConfig and the respective callbacks
+$exportManager->export($exportConfig, $outputDir = '.', $unzip = true);
 ?>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -213,43 +221,40 @@ const path = require('path');
 
 // Import FusionExport SDK client for Node.js
 const {
-  ExportManager,
-  ExportConfig
+ExportManager,
+ExportConfig
 } = require('fusionexport-node-client');
 
-
-// ********** EXPORT CONFIG ***********
+// \***\*\*\*\*\*** EXPORT CONFIG \***\*\*\*\*\*\***
 
 // Instantiate ExportConfig and add the required configurations
 const exportConfig = new ExportConfig();
 
-
 // Provide path of the chart configuration which we have defined above. // You can also pass the same object as serialized JSON.
 // Results in the default output file being a .png of ‘better’ quality
-exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'chart-config-file.json'));
+exportConfig.set('chartConfig', path.join(\_\_dirname, 'resources', 'chart-config-file.json'));
 
 // ++++++ ATTENTION - MODIFY THE EXPORT QUALITY ++++++
 // OPTIONS ARE: 'good' | 'better' (default) | 'best'
 exportConfig.set('quality', 'best');
 
-
-// ********** EXPORT-MANAGER ***********
+// \***\*\*\*\*\*** EXPORT-MANAGER \***\*\*\*\*\*\***
 
 // Instantiate ExportManager
 const exportManager = new ExportManager();
 
-
-// ***** OUTPUT ******
+// **\*** OUTPUT **\*\***
 
 // Provide the exportConfig
 // Optionally, print the exported file names and error messages, if any
 
 exportManager.export(exportConfig, outputDir = '.', unzip = true).then((exportedFiles) => {
-  exportedFiles.forEach(file => console.log(file));
+exportedFiles.forEach(file => console.log(file));
 }).catch((err) => {
-  console.log(err);
+console.log(err);
 });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -259,9 +264,13 @@ exportManager.export(exportConfig, outputDir = '.', unzip = true).then((exported
 from fusionexport import ExportManager, ExportConfig
 
 # Instantiate the ExportConfig class and add the required configurations
+
 export_config = ExportConfig()
+
 # Provide path of the chart configuration which we have defined above.
+
 # You can also pass the same object as serialized JSON.
+
 export_config["chartConfig"] = read_file("resources/chart-config-file.json")
 
 // ++++++ ATTENTION - MODIFY THE EXPORT TYPE ++++++
@@ -269,15 +278,19 @@ export_config["chartConfig"] = read_file("resources/chart-config-file.json")
 export_config["type"] = "jpeg"
 
 # Provide port and host of FusionExport Service
+
 export_server_host = "127.0.0.1"
 export_server_port = 1337
 
 # Instantiate the ExportManager class
+
 em = ExportManager(export_server_host, export_server_port)
 
 # Call the export() method with the export_config as an argument
+
 em.export(export_config, outputDir = ".", unzip = True)
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -287,8 +300,8 @@ em.export(export_config, outputDir = ".", unzip = True)
 
 After you have changed the export type for a single chart, we recommend learning how to:
 
-* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+- [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
 
-* [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+- [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+- [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)

@@ -4,6 +4,50 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.5</h2>
+
+<p class="release-date">31st May, 2019</p>
+
+<h4 class="sub-heading">Improvement</h4>
+
+- In a multi-level pie chart, `showLabel` and `showValue` attributes are now supported at the `category` level.
+
+- The file format to export a chart in Excel is now changed from `.xls` to `.xlsx`.
+
+<h4>Fixes</h4>
+
+- In a multi-series chart, if a series is hidden at the time of rendering and the attribute `transposeAxis` is set as `1`, the y-axis was not scaling properly. This issue is now fixed.
+
+- On exporting charts as PDF from a page which has multiple charts, the exported PDF was not opening properly in other applications, e.g.,- Acrobat Reader. This issue is now fixed.
+
+- In a multi-series chart, if a series is hidden at the time of rendering by setting the `visible` attribute to `0`, the chart was throwing a `JS` error. This issue is now fixed.
+
+- `connectNullData` is now working fine in spline and multi-series spline charts.
+
+- In a multi-axis line chart with more than 9 series, a `JS` error was thrown on hovering over the legend. This issue is now fixed.
+
+- The horizontal bullet chart was throwing a `JS` error and disappear when resized. This issue is now fixed.
+
+- In IE8, charts were not rendering when using the minified version of the jQuery plugin. This issue is now fixed.
+
+- Annotation image and logo are now appearing in Android Chrome.
+
+- In the Treemap chart, if the plot animation was turned on, the navigation bar was visible on rendering the chart. This issue is now fixed.
+
+- The animation was not working while rendering the chart if an image annotation was present. This issue is now fixed.
+
+- `removeMarker()` API is now working fine. Previously, it was throwing a js error.
+
+- The `destroy()` and `hide()` APIs are now working as intended. Previously, they were throwing `JS` errors.
+
+- In multi-series dual Y-axis combination chart, the tooltip of the line chart was not visible on hover. This issue is now fixed.
+
+- The text alignment in the legend was not working properly if the attribute `hasRTLText` attribute was set to **1**. This issue is now fixed.
+
+- In the multi-series column chart, the legend drag feature is now working as expected. Previously, if the chart was updated with the same data the legend drag was not working.
+
+- If there were multiple draggable charts in a page, setting the Y-axis limit manually on any chart changed the Y-axis limit of the last chart automatically. This issue is now fixed.
+
 <h2 class="sub-heading">Version 3.13.4</h2>
 
 <p class="release-date">27th February, 2019</p>
@@ -221,7 +265,7 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
 - A JS error was thrown while performing a batch export to export multiple charts using `FusionCharts.batchExport()` method and the chart type is not supported. The issue has been fixed.
 
-- While exporting a map into XLS format, the formatted `value` column was getting split into 3 columns. The issue has been fixed.
+- While exporting a map into XLSX format, the formatted `value` column was getting split into 3 columns. The issue has been fixed.
 
 - Chart components like tooltips and events were persisting in the initial location of the chart, even after the chart was shifted via the container. The issue has been resolved.
 
@@ -293,7 +337,7 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
 - Custom fonts from client-side export can now be exported using [useCanvas](/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member) option.
 
-- Data from Multi-level Pie charts can now be exported in CSV or XLS formats.
+- Data from Multi-level Pie charts can now be exported in CSV or XLSX formats.
 
 - In zoomline chart, [maxPeakDataLimit](/chart-attributes/?chart=zoomline&attribute=chart_maxpeakdatalimit) and [minPeakDataLimit](/chart-attributes/?chart=zoomline&attribute=chart_minpeakdatalimit) attributes consider the limits as a range when both the attributes are used.
 
@@ -1103,7 +1147,7 @@ For more information regarding the events, click [here](/api/fusioncharts/fusion
 
 - Category labels were not drawn correctly, if padding was applied to the `<div>` tag.
 
-- A blank XLS file was getting exported when `setChartAttribute()` method was used.
+- A blank XLSX file was getting exported when `setChartAttribute()` method was used.
 
 - If there were multiple charts in a page, the plot values of all charts wouldn't appear unless the rendering animation was completed for all charts.
 

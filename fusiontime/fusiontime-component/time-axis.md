@@ -51,3 +51,43 @@ In th above code:
 > If the tabular data has only one date type column, then FT automatically represents it in the `xAxis`.
 
 > If multiple data type columns are available in the tabular data and we do not specify the data type column in `xAxis`, then FT will assign the first date type column in the tabular data to the `xAxis`.
+
+## Style Definition
+
+Styling can be applied to three elements of the X-axis:
+
+- Labels
+- Title
+- Tick marks
+
+FusionTime allows to the style the major and minor ticks individually. The values of the style properties for major and minor tick marks and their labels are derived from the provided style.
+
+The syntax to customize the ticks and labels of the time axis is given below:
+
+```javascript
+"DataScource": {
+    "xAxis": {
+        "style": {
+            "tick-mark": { },
+            "tick-mark-major": { },
+            "tick-mark-minor": { },
+            "label": { },
+            "label-major": { },
+            "label-minor": { },
+            "label-context": { }
+        }
+    }
+}
+```
+
+In the above code:
+
+- `xAxis` is the object to customize the elements of the x-axis.
+- `style` is the object to apply to style the x-axis.
+- `tick-mark` is used to apply to style to both major and minor ticks.
+- `tick-mark-major` is used to apply to the major ticks of the time axis.
+- `tick-mark-minor` is used to apply to style to the minor ticks of the time axis.
+- `label` is used to set the labels of the ticks.
+- `label-major` is used to set the contextual labels of the major ticks.
+- `label-minor` is used to set the contextual labels of the minor ticks
+- `label-context` is used to set the contextual labels to help understand the timescale.

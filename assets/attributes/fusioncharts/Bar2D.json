@@ -1848,7 +1848,7 @@
       {
         "type": "Boolean",
         "range": "0/1",
-        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLS?",
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX?",
         "name": "exportEnabled"
       },
       {
@@ -1878,7 +1878,7 @@
       {
         "type": "String",
         "range": "'_self' or '_blank'",
-        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window.",
+        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window.",
         "name": "exportTargetWindow"
       },
       {
@@ -1894,7 +1894,7 @@
         "name": "exportFileName"
       }
     ],
-    "description": "These attributes allow you to control the saving of chart as image, SVG or XLS."
+    "description": "These attributes allow you to control the saving of chart as image, SVG or XLSX."
   },
   {
     "table": "Data Plot Hover Effects",
