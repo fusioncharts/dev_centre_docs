@@ -680,17 +680,20 @@ new FusionCharts({
 You can add style to the tooltip using `style` object under `tooltip` object.
 
 ```javascript
-"dataSource": {
- "tooltip": {
-   "enabled": Boolean,
-   "style": {
-     "container": { }, //HTMLStyle | String
-     "text": { }, //HTMLtyle | String
-     "header": { }, //HTMLStyle | String
-     "body": { } //HTMLStyle | String
-   }
- }
-}
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    tooltip: {
+      enabled: Boolean,
+      style: {
+        container: {}, //HTMLStyle | String
+        text: {}, //HTMLtyle | String
+        header: {}, //HTMLStyle | String
+        body: {} //HTMLStyle | String
+      }
+    }
+  }
+});
 ```
 
 <table>

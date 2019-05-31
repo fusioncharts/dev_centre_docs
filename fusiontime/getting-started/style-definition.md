@@ -243,6 +243,63 @@ Styling can be applied to two elements of a reference line:
 }
 ```
 
+## Tooltip
+
+You can add style to the tooltip using `style` object under `tooltip` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    tooltip: {
+      enabled: Boolean,
+      style: {
+        container: {}, //HTMLStyle | String
+        text: {}, //HTMLtyle | String
+        header: {}, //HTMLStyle | String
+        body: {} //HTMLStyle | String
+      }
+    }
+  }
+});
+```
+
+## Time Navigator
+
+Time Navigator of a time-series chart can be divided into two sub-sections:
+
+- Window
+- Scroll Bar
+
+You can add style to the time marker components using `style` object under `window` and `scrollbar` object.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    navigator: {
+      enabled: Boolean,
+      scrollbar: {
+        style: {
+          button: {}, //SVGStyle | String
+          arrow: {}, //SVGStyle | String
+          scroller: {}, //SVGStyle | String
+          grip: {}, //SVGStyle | String
+          track: {} //SVGStyle | String
+        }
+      },
+      window: {
+        style: {
+          handle: {}, //SVGStyle | String
+          "handle-grip": {}, //SVGStyle | String
+          mask: {} //SVGStyle | String
+        }
+      }
+    }
+  }
+});
+```
+
 ## Time Marker
 
 Styling can be applied to two elements of the time marker.
