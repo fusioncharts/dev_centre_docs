@@ -906,7 +906,7 @@ The HTML template for the above code is given below:
 
 ## Related Resources
 
-After you have changed the export type for a single chart, we recommend learning how to:
+After you have customized the dimensions, we recommend learning how to:
 
 * [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
 

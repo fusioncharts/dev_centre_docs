@@ -43,7 +43,7 @@ To run `FusionExport` with your version of `FusionCharts` run:
 
 ## Related Resources
 
-After you have changed the export type for a single chart, we recommend learning how to:
+After you've learnt how to use the custom version of FusionCharts, we recommend to learn how to:
 
 * [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
 
