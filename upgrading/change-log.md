@@ -32,9 +32,9 @@ heading: Version 3.13.x
 
 - Annotation image and logo are now appearing in Android Chrome.
 
-- In the Treemap chart, if the plot animation is turned on the navigation bar was visible on rendering the chart. This issue is now fixed.
+- In the Treemap chart, if the plot animation was turned on, the navigation bar was visible on rendering the chart. This issue is now fixed.
 
-- The animation was not working while rendering the chart if an image annotation is present. This issue is now fixed.
+- The animation was not working while rendering the chart if an image annotation was present. This issue is now fixed.
 
 - `removeMarker()` API is now working fine. Previously, it was throwing a js error.
 
