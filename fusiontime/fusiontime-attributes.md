@@ -468,6 +468,8 @@ new FusionCharts({
 
 ## Plot Configuration
 
+To configure the plot of the chart, you can create the `plotConfig` object under `dataSource`.
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='all'>All Data Plots</a></li>
@@ -533,6 +535,22 @@ new FusionCharts({
 
 ## Reference Lines
 
+To configure the reference line of the chart, you can create the `referenceLine` object under `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    referenceLine: [
+      {
+        label: " ", //Label of the reference line
+        value: " " //Value of the reference line
+      }
+    ]
+  }
+});
+```
+
 <table>
 	<tr>
 		<th>Attribute</th>
@@ -551,21 +569,100 @@ new FusionCharts({
 	</tr>
 </table>
 
+## Tooltip
+
+To configure the tooltip of the chart, you can create the `tooltip` object under the `dataSource`.
+
 ```javascript
 new FusionCharts({
   type: "timeseries",
   dataSource: {
-    referenceLine: [
+    tooltip: {
+      enabled: "false" // Disables the Tooltip
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enables`</td>
+		<td>String</td>
+		<td>Setting this attribute to `true` enables the visibility of the tooltip for the chart.</td>
+	</tr>
+</table>
+
+### Style Tooltip Components
+
+You can add style to the tooltip using `style` object under `tooltip` object.
+
+```javascript
+"dataSource": {
+ "tooltip": {
+   "enabled": Boolean,
+   "style": {
+     "container": { }, //HTMLStyle | String
+     "text": { }, //HTMLtyle | String
+     "header": { }, //HTMLStyle | String
+     "body": { } //HTMLStyle | String
+   }
+ }
+}
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`container`</td>
+		<td>HTMLStyle</td>
+		<td>Customizes the containing box of the tooltip.</td>
+	</tr>
+	<tr>
+		<td>`text`</td>
+		<td>HTMLStyle</td>
+		<td>Customizes the text of the tooltip.</td>
+	</tr>
+	<tr>
+		<td>`header`</td>
+		<td>HTMLStyle</td>
+		<td>Customizes the header at the top of the tooltip.</td>
+	</tr>
+	<tr>
+		<td>`body`</td>
+		<td>HTMLStyle</td>
+		<td>Customizes all the text other than the `header` text.</td>
+	</tr>
+</table>
+
+## Data Markers
+
+To configure the data marker of the chart, you can create the `dataMarker` object under the `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    dataMarker: [
       {
-        label: " ", //Label of the reference line
-        value: " " //Value of the reference line
+        seriesName: " ", //Name of the series
+        time: " ", //Time on which the data marker will be shown
+        identifier: " ", //Defines a character to be shown
+        timeFormat: " ", //Format of the date
+        tooltext: " " //Text in the tooltip
       }
     ]
   }
 });
 ```
-
-## Data Markers
 
 <table>
 	<tr>
@@ -604,23 +701,6 @@ new FusionCharts({
 		<td>The text specified in this attribute is displayed in the tooltip when you hover over the data marker.</td>
 	</tr>
 </table>
-
-```javascript
-new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    dataMarker: [
-      {
-        seriesName: " ", //Name of the series
-        time: " ", //Time on which the data marker will be shown
-        identifier: " ", //Defines a character to be shown
-        timeFormat: " ", //Format of the date
-        tooltext: " " //Text in the tooltip
-      }
-    ]
-  }
-});
-```
 
 ## Chart Configuration and Root JSON Attributes
 

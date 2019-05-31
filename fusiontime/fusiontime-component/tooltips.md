@@ -24,17 +24,14 @@ Tooltips are extremely useful when you want to compare data using a multivariate
 
 In the example given above, you can see the Global Online Sales of a Superstore, with the canvases showcasing the sales, quantities sold, and shipping costs in three different canvases. When you hover the pointer over a particular plot in the Sales canvas, you will notice that tooltips appear in the Quantity and Shipping Cost canvases as well, at the same point. This way, you can easily view consolidated data regarding sales at any point in time.
 
-{% embed_ftChart online-sales-multi-series %}
-
-By default, the tooltip is displayed. To hide the tooltip set the `showToolTip` attribute to `0`.
+By default, the tooltip is displayed. To hide the tooltip set the `enabled` attribute to `false`.
 
 Refer to the code below:
 
 ```javascript
-{
-    "showToolTip": "0", // Disables the Tooltip
-    "caption": {
-        "text": 'Online Sales of a SuperStore in India & the US'
+"dataSource": {
+    "tooltip": {
+        "enabled": "false", // Disables the Tooltip
     }
 }
 ```
