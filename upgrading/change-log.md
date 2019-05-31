@@ -28,9 +28,9 @@ heading: Version 3.13.x
 
 - The horizontal bullet chart was throwing a `JS` error and disappear when resized. This issue is now fixed.
 
-- In IE8, charts were not rendering using the minified version of the jQuery plugin. This issue is now fixed.
+- In IE8, charts were not rendering when using the minified version of the jQuery plugin. This issue is now fixed.
 
-- Annotation image and Logo is now appearing in android chrome.
+- Annotation image and logo are now appearing in Android Chrome.
 
 - In the Treemap chart, if the plot animation is turned on the navigation bar was visible on rendering the chart. This issue is now fixed.
 
