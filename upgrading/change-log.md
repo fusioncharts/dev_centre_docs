@@ -38,15 +38,15 @@ heading: Version 3.13.x
 
 - `removeMarker()` API is now working fine. Previously, it was throwing a js error.
 
-- The `destroy()` and `hide()` API is now working as intended. Previously, they were throwing js error.
+- The `destroy()` and `hide()` APIs are now working as intended. Previously, they were throwing `JS` errors.
 
-- In Multi series dual y combination chart, the tooltip of the line chart was not visible on hover. This issue is now fixed.
+- In multi-series dual Y-axis combination chart, the tooltip of the line chart was not visible on hover. This issue is now fixed.
 
-- The legend text alignment was not appearing properly if the attribute `hasRTLText` attribute is set to **1**. This issue is now fixed.
+- The text alignment in the legend was not working properly if the attribute `hasRTLText` attribute was set to **1**. This issue is now fixed.
 
-- In the multi-series Column chart, the legend drag feature is now working fine. Previously, if the chart was updated with the same data the legend drag was not working.
+- In the multi-series column chart, the legend drag feature is now working as expected. Previously, if the chart was updated with the same data the legend drag was not working.
 
-- If there are multiple draggable charts in a page, setting the yAxis limit manually on any chart changes the yAxis limit of the last chart automatically. This issue is now fixed.
+- If there were multiple draggable charts in a page, setting the Y-axis limit manually on any chart changed the Y-axis limit of the last chart automatically. This issue is now fixed.
 
 <h2 class="sub-heading">Version 3.13.4</h2>
 
