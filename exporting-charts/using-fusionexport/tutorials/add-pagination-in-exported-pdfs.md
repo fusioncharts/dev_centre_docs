@@ -1,16 +1,10 @@
----
-title: Add Pagination in exported PDFs | FusionCharts
-description: This article talks how to add pagination in exported pdfs.
-heading: Add Pagination in exported PDFs
----
+## Add pagination
 
 Pagination is useful when you want to print a document into discrete pages. FusionExport allows you to add page breaks in exported PDF files. Before you start with the code implementations to add pagination, check out the following video which contains the step by step process.
 
 <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/584dbe32ac8e4d9e83bdd44276ee9720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 Now, let’s check out the basic steps to add page breaks in exported PDFs.
-
-## Prerequisites
 
 Before you start, ensure that you have:
 
@@ -22,41 +16,124 @@ Before you start, ensure that you have:
 
 The sample code to set the dimension of the viewport is given below:
 
-```csharp
+<div class="code-wrapper">
+<ul class="code-tabs extra-tabs">
+
+    <li class="active"><a data-toggle="csharp">C#</a></li>
+    <li><a data-toggle="java">Java</a></li>
+    <li><a data-toggle="php">PHP</a></li>
+    <li><a data-toggle="nodejs">Node.js</a></li>
+    <li><a data-toggle="python">Python</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab csharp-tab active">
+<pre><code class="language-csharp">
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using FusionCharts.FusionExport.Client; // Import sdk
+
+namespace FusionExportTest
+{
+    public static class ExportSingleChart
+    {
+        static void Main(string[] args)
+        {
+            string chartConfigFile = System.Environment.CurrentDirectory + "\\resources\\dashboard_charts.json";
+            string templateFilePath = System.Environment.CurrentDirectory + "\\resources\\template.html";
+
+            // Instantiate the ExportManager class
+            using (ExportManager exportManager = new ExportManager())
+            {
+                exportConfig.Set("chartConfig", chartConfigFile);
+                exportConfig.Set("templateFilePath", templateFilePath);
+                exportConfig.Set('templateWidth', 900);
+                exportConfig.Set('templateWidth', 900);
+                exportConfig.Set("type", "pdf");
+                // Call the Export() method with the export config
+                results.AddRange(exportManager.Export(exportConfig, @"D:\temp\exported-charts", true));
+            }
+
+            foreach (string path in results)
+            {
+                Console.WriteLine(path);
+            }
+        }
+    }
+}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+<div class="tab java-tab">
+<pre><code class="language-java">
+import com.fusioncharts.fusionexport.client.*; // import sdk
+
+public class ExportChart {
+    public static void main(String[] args) throws Exception {
+
+    
+        String configPath = "fullpath/resources/static2/resources/multiple.json";
+        String templatePath ="fullpath/resources/static2/resources/template.html";
+
+        // Instantiate the ExportManager class
+        ExportManager em = new ExportManager();
+        
+        // Instantiate the ExportConfig class and add the required configurations
+        ExportConfig config = new ExportConfig();
+        config.set("chartConfig", configPath);
+        config.set("templateFilePath", templatePath);
+        config.set("type", "pdf");
+        config.set("templateWidth", "900");
+        config.set("templateHeight", "900");
+        
+        String[] files = em.export(config,".",true);
+        
+        for(String f : files) {
+            System.out.println(f);
+        }
+    }
+}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class="tab php-tab">
+<pre><code class="language-php">
+<?php
+
 // Exporting a dashboard
-const path = require('path');
-// Require FusionExport
-const { ExportManager, ExportConfig } = require('fusionexport-node-client');
-// Instantiate ExportManager
-const exportManager = new ExportManager();
-// Instantiate ExportConfig and add the required configurations
-const exportConfig = new ExportConfig();
-exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
-exportConfig.set('templateFilePath', path.join(__dirname, 'resources', 'template.html'));
-exportConfig.set('templateHeight', 900);
-exportConfig.set('templateWidth', 900);
-exportConfig.set('type', 'pdf');
-// provide the export config
-exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
-  exportedFiles.forEach(file => console.log(file));
-}).catch((err) => {
-  console.log(err);
-});
-```
 
-In the above code:
+require __DIR__ . '/../vendor/autoload.php';
+// Use the sdk
+use FusionExport\ExportManager;
+use FusionExport\ExportConfig;
 
-- Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
-- Set the value of `templateHeight` less than your content height. This automatically divides the page into multiple pages.
-- You can also set the value of `templateWidth` to control the viewpoint width where the templates are rendered.
-- Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
-- Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
+// Instantiate the ExportConfig class and add the required configurations
+$exportConfig = new ExportConfig();
+$exportConfig->set('chartConfig', realpath(__DIR__ . '/resources/multiple.json'));
+$exportConfig->set('templateFilePath', realpath(__DIR__ . '/resources/template.html'));
+$exportConfig->set('type', 'pdf');
+$exportConfig->set('templateWidth', '900');
+$exportConfig->set('templateHeight', '900');
 
-> You can also achieve the same result using `templateFormat` which allows you to export PDF files and print friendly format.
 
-The code is given below:
+// Instantiate the ExportManager class
+$exportManager = new ExportManager();
+// Call the export() method with the export config
+$files = $exportManager->export($exportConfig, '.', true);
 
-```csharp
+foreach ($files as $file) {
+    echo $file . "\n";
+}
+?>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class="tab nodejs-tab">
+<pre><code class="language-javascript">
 // Exporting a dashboard
 const path = require('path');
 // Require FusionExport
@@ -75,7 +152,51 @@ exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
 }).catch((err) => {
   console.log(err);
 });
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class="tab python-tab">
+<pre><code class="language-python">
+#!/usr/bin/env python
+
+from fusionexport import ExportManager, ExportConfig  # Import sdk
+
+# Instantiate the ExportConfig class and add the required configurations
+export_config = ExportConfig()
+
+export_config["chartConfig"] = "dashboard_charts.json"
+
+export_config["templateFilePath"] = "template.html"
+export_config["type"] = "pdf"
+export_config["templateWidth"] = 900
+export_config["templateHeight"] = 900
+
+
+# Provide port and host of FusionExport Service
+export_server_host = "127.0.0.1"
+export_server_port = 1337
+
+# Instantiate the ExportManager class
+em = ExportManager(export_server_host, export_server_port)
+# Call the export() method with the export config and the output location
+exported_files = em.export(export_config, "./exports", True)
+#print(exported_files)
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+</div>
+</div>
+
+In the above code:
+
+- Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method. You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method.
+- Set the value of `templateHeight` less than your content height. This automatically divides the page into multiple pages.
+- You can also set the value of `templateWidth` to control the viewpoint width where the templates are rendered.
+- Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
+- Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
+
+> You can also achieve the same result using `templateFormat` which allows you to export PDF files and print friendly format.
 
 The JSON data to render the above chart is given below:
 
@@ -757,6 +878,4 @@ The HTML template for the above code is given below:
 </html>
 ```
 
-Click [here](https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf) to download the exported PDF file.
-
-Click [here](https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions) to download the above project.
+<div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>

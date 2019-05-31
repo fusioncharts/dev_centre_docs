@@ -2123,23 +2123,16 @@
           },
           {
             "title": "Custom Version of FusionCharts in FusionExport",
-            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/custom-version-of-fusioncharts-in-fusionexport"
           },
           {
             "title": "Export PDF files in Print Format",
-            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/export-pdf-files-in-print-format"
           },
           {
             "title": "Customize the Dimensions of Exported Files",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/customize-the-dimensions-of-exported-files"
-          },
-          {
-            "title": "Add Pagination in exported PDFs",
-            "visibility": false,
-            "path": "/exporting-charts/using-fusionexport/tutorials/add-pagination-in-exported-pdfs"
           }
         ]
       },
