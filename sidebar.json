@@ -2131,6 +2131,7 @@
           },
           {
             "title": "Customize the Dimensions of Exported Files",
+            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/customize-the-dimensions-of-exported-files"
           }
         ]
