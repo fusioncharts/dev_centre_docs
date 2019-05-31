@@ -58,6 +58,14 @@ Let’s create a chart showcasing **Unemployment rate in San Jose & SJ Metro Are
 
 {% embed_ftChart stacked-column-chart %}
 
+## Grouped Column
+
+To render a time series chart with the grouped column, set the
+
+Let’s create a chart showcasing .
+
+{% embed_ftChart grouped-column-chart %}
+
 ## Area
 
 To render a time series chart with **area** as data plot, set the value of `type` attribute to `area`.

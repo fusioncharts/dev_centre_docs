@@ -171,19 +171,23 @@ Styling can be applied to three elements of the X-axis:
 
 - Tick marks
 
-Style applied to `tick marks` and `label` is directly applied to the major tick marks and their labels. The values of the style properties for minor tick marks and their labels are derived from the provided style.
+FusionTime allows to the style the major and minor ticks of the time axis individually. The values of the style properties for major and minor tick marks and their labels are derived from the provided style.
 
 **Syntax**:
 
 ```javascript
-{
-  "xAxis": {
-    "style": {
-      "label": Style,
-      "title": Style,
-      "tick-mark": Style
+"DataScource": {
+    "xAxis": {
+        "style": {
+            "tick-mark": SVGStyle | String,
+            "tick-mark-major": SVGStyle | String,
+            "tick-mark-minor": SVGStyle | String,
+            "label": SVGStyle | String,
+            "label-major": SVGStyle | String,
+            "label-minor": SVGStyle | String,
+            "label-context": SVGStyle | String
+        }
     }
-  }
 }
 ```
 

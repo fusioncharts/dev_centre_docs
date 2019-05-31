@@ -79,37 +79,37 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`tick-mark`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles both major and minor ticks.</td>
 	</tr>
 	<tr>
 		<td>`tick-mark-major`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the major tick of the time axis.</td>
 	</tr>
 	<tr>
 		<td>`tick-mark-minor`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the minor tick of the time axis.</td>
 	</tr>
 	<tr>
 		<td>`label`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the labels of major and minor ticks on time axis.</td>
 	</tr>
 	<tr>
 		<td>`label-major`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the labels of major ticks on time axis.</td>
 	</tr>
 	<tr>
 		<td>`label-minor`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the labels of minor ticks on time axis.</td>
 	</tr>
 	<tr>
 		<td>`label-context`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the contextual label of the time axis.</td>
 	</tr>
 </table>
@@ -244,7 +244,8 @@ new FusionCharts({
 		<td>`marker-line`</td>
 		<td>SVGStyle</td>
 		<td>Styles the marker line of the time marker.</td>
-	</tr><tr>
+	</tr>
+	<tr>
 		<td>`marker-line:hover`</td>
 		<td>SVGStyle</td>
 		<td>Styles the marker line of the time marker when hovered.</td>
