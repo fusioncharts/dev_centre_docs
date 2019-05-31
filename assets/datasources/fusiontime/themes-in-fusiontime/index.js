@@ -56,8 +56,8 @@
                 input.onchange = upadateTheme;
                 selected && input.setAttribute('checked', '');
 
-                div.appendChild(labelElement);
                 div.appendChild(input);
+                div.appendChild(labelElement);
                 return div;
             }
 
