@@ -11,6 +11,7 @@ FusionTime supports the following plot types:
 - Line
 - Column
 - Stacked Column
+- Grouped Column
 - Area
 - Stacked Area
 - Smooth Area
