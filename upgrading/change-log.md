@@ -12,7 +12,7 @@ heading: Version 3.13.x
 
 - In a multi-level pie chart, `showLabel` and `showValue` attributes are now supported at the `category` level.
 
-- The file format to export a chart in Excel is now changed from `.xls` to `.xlsx`. Please note that if you are downloading the package via NPM, to export a chart in XLSX format, you need to import the `ExcelExport` file.
+- The file format to export a chart in Excel is now changed from `.xls` to `.xlsx`. Please note that if you are downloading the package via NPM, to export a chart in `.xlsx` format, you need to import the `ExcelExport` file.
 
 <h4>Fixes</h4>
 
