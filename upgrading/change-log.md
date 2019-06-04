@@ -4,6 +4,14 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.5-sr.1</h2>
+
+<p class="release-date">4th June, 2019</p>
+
+<h4 class="sub-heading">Fixes</h4>
+
+- A minor bug for ***MSCombiDY2D*** and ***MSCombi2D*** has been fixed.
+
 <h2 class="sub-heading">Version 3.13.5</h2>
 
 <p class="release-date">31st May, 2019</p>
