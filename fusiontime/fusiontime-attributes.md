@@ -151,27 +151,27 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`label`</td>
-		<td>SVGStyle</td>
+		<td>String</td>
 		<td>Sets the label of the time marker.</td>
 	</tr>
 	<tr>
 		<td>`start`</td>
-		<td>SVGStyle</td>
+		<td>String</td>
 		<td>Sets the start time of the marker. Corresponds to the start of the date/time.</td>
 	</tr>
 	<tr>
 		<td>`end`</td>
-		<td>SVGStyle</td>
+		<td>String</td>
 		<td>Sets the end time of the marker. If this is attribute is not specified, the marker is represented as a line and not as a band. Corresponds to the end of the given date/time.</td>
 	</tr>
 	<tr>
 		<td>`timeFormat`</td>
-		<td>SVGStyle</td>
+		<td>String</td>
 		<td>Sets the date/time format and specifies the start and end values for the time marker.</td>
 	</tr>
 	<tr>
 		<td>`unit`</td>
-		<td>SVGStyle</td>
+		<td>String</td>
 		<td>Defines the time unit for the time marker.</td>
 	</tr>
 	<tr>
@@ -181,7 +181,7 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`type`</td>
-		<td>SVGStyle</td>
+		<td>String</td>
 		<td>Setting this attribute to <strong>full</strong> will render the time marker (instance & band) from top to bottom (vertically) of the canvas.</td>
 	</tr>
 </table>
@@ -312,7 +312,7 @@ new FusionCharts({
 	</tr>
 </table>
 
-### Style Time Navigator Componemts
+### Style Time Navigator Components
 
 Time Navigator of a time-series chart can be divided into two sub-sections:
 
@@ -355,35 +355,35 @@ new FusionCharts({
 		<th>Description</th>
 	</tr>
 		<td>`button`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the buttons present on the left and right most corner of the scroll bar.</td>
 	</tr>
 		<td>`arrow`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the arrows present inside the buttons of the scroll bar.</td>
 	</tr>
 		<td>`scroller`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the scroller of the scroll bar.</td>
 	</tr>
 		<td>`grip`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the grip of the scroll bar.</td>
 	</tr>
 		<td>`track`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the track of the scroll bar.</td>
 	</tr>
 		<td>`handle`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the handle element of the scroll bar window.</td>
 	</tr>
 		<td>`handle-grip`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the handle-grip of the handle element.</td>
 	</tr>
 		<td>`mask`</td>
-		<td>String</td>
+		<td>SVGStyle</td>
 		<td>Styles the mask of the scroll bar window.</td>
 	</tr>
 </table>
@@ -669,7 +669,7 @@ new FusionCharts({
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>`enables`</td>
+		<td>`enabled`</td>
 		<td>String</td>
 		<td>Setting this attribute to `true` enables the visibility of the tooltip for the chart.</td>
 	</tr>
@@ -807,11 +807,6 @@ new FusionCharts({
 		<td>Sets the height of the chart canvas.</td>
 	</tr>
 	<tr>
-		<td>`enableNavigator`</td>
-		<td>Boolean</td>
-		<td>Enables/disables the time navigator.</td>
-	</tr>
-	<tr>
 		<td>`animation`</td>
 		<td>Boolean</td>
 		<td>This attribute gives you the option to control animation in your charts. If you do not want to animate any part of the chart, set this as 0.</td>
@@ -840,11 +835,6 @@ new FusionCharts({
 		<td>`showPrintMenuItem`</td>
 		<td>Boolean</td>
 		<td>Whether to show "Print Chart" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke print() JavaScript method of the chart to print the same.</td>
-	</tr>
-	<tr>
-		<td>`showToolTip`</td>
-		<td>Boolean</td>
-		<td>Whether to show tool tip on chart.</td>
 	</tr>
 	<tr>
 		<td>`exportEnabled`</td>
