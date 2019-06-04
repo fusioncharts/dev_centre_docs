@@ -32,7 +32,7 @@ The above chart, when rendered, looks like the following:
 
 The code to render a chart is given below:
 
-```
+```javascript
 //Including Vue
 import Vue from 'vue';
 
@@ -44,115 +44,118 @@ import FusionCharts from 'fusioncharts/core';
 
 //Include the chart type
 import Column2D from 'fusioncharts/viz/column2d'
+import Pie2D from 'fusioncharts/viz/pie2d'
 
 // Register VueFusionCharts component
-Vue.use(VueFusionCharts);
+Vue.use(VueFusionCharts, FusionCharts, Column2D, Pie2D);
 
 var app = new Vue({
     el: '#app',
-    data: {
-        width: '700',
-        height: '400',
-        type: 'column2d',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption": "Top 3 Juice Flavors",
-                "subcaption": "Last year",
-                "xaxisname": "Flavor",
-                "yaxisname": "Amount (In USD)",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0"
-            },
-            "data": [{
-                "label": "Apple",
-                "value": "810000",
-                "link": "newchart-xml-apple"
-            }, {
-                "label": "Cranberry",
-                "value": "620000",
-                "link": "newchart-xml-cranberry"
-            }, {
-                "label": "Grapes",
-                "value": "350000",
-                "link": "newchart-xml-grapes"
-            }],
-            "linkeddata": [{
-                "id": "apple",
-                "linkedchart": {
-                    "chart": {
-                        "caption": "Apple Juice - Quarterly Sales",
-                        "subcaption": "Last year",
-                        "numberprefix": "$",
-                        "theme": "fusion",
-                        "rotateValues": "0",
-                        "plottooltext": "$label, $dataValue,  $percentValue"
-                    },
-                    "data": [{
-                        "label": "Q1",
-                        "value": "157000"
-                    }, {
-                        "label": "Q2",
-                        "value": "172000"
-                    }, {
-                        "label": "Q3",
-                        "value": "206000"
-                    }, {
-                        "label": "Q4",
-                        "value": "275000"
-                    }]
-                }
-            }, {
-                "id": "cranberry",
-                "linkedchart": {
-                    "chart": {
-                        "caption": "Cranberry Juice - Quarterly Sales",
-                        "subcaption": "Last year",
-                        "numberprefix": "$",
-                        "theme": "fusion",
-                        "plottooltext": "$label, $dataValue,  $percentValue"
-                    },
-                    "data": [{
-                        "label": "Q1",
-                        "value": "102000"
-                    }, {
-                        "label": "Q2",
-                        "value": "142000"
-                    }, {
-                        "label": "Q3",
-                        "value": "187000"
-                    }, {
-                        "label": "Q4",
-                        "value": "189000"
-                    }]
-                }
-            }, {
-                "id": "grapes",
-                "linkedchart": {
-                    "chart": {
-                        "caption": "Grapes Juice - Quarterly Sales",
-                        "subcaption": "Last year",
-                        "numberprefix": "$",
-                        "theme": "fusion",
-                        "rotateValues": "0",
-                        "plottooltext": "$label, $dataValue,  $percentValue"
-                    },
-                    "data": [{
-                        "label": "Q1",
-                        "value": "45000"
-                    }, {
-                        "label": "Q2",
-                        "value": "72000"
-                    }, {
-                        "label": "Q3",
-                        "value": "95000"
-                    }, {
-                        "label": "Q4",
-                        "value": "108000"
-                    }]
-                }
-            }]
+    data: function() {
+        return {
+            width: '700',
+            height: '400',
+            type: 'column2d',
+            dataFormat: 'json',
+            dataSource: {
+                "chart": {
+                    "caption": "Top 3 Juice Flavors",
+                    "subcaption": "Last year",
+                    "xaxisname": "Flavor",
+                    "yaxisname": "Amount (In USD)",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "rotateValues": "0"
+                },
+                "data": [{
+                    "label": "Apple",
+                    "value": "810000",
+                    "link": "newchart-xml-apple"
+                }, {
+                    "label": "Cranberry",
+                    "value": "620000",
+                    "link": "newchart-xml-cranberry"
+                }, {
+                    "label": "Grapes",
+                    "value": "350000",
+                    "link": "newchart-xml-grapes"
+                }],
+                "linkeddata": [{
+                    "id": "apple",
+                    "linkedchart": {
+                        "chart": {
+                            "caption": "Apple Juice - Quarterly Sales",
+                            "subcaption": "Last year",
+                            "numberprefix": "$",
+                            "theme": "fusion",
+                            "rotateValues": "0",
+                            "plottooltext": "$label, $dataValue,  $percentValue"
+                        },
+                        "data": [{
+                            "label": "Q1",
+                            "value": "157000"
+                        }, {
+                            "label": "Q2",
+                            "value": "172000"
+                        }, {
+                            "label": "Q3",
+                            "value": "206000"
+                        }, {
+                            "label": "Q4",
+                            "value": "275000"
+                        }]
+                    }
+                }, {
+                    "id": "cranberry",
+                    "linkedchart": {
+                        "chart": {
+                            "caption": "Cranberry Juice - Quarterly Sales",
+                            "subcaption": "Last year",
+                            "numberprefix": "$",
+                            "theme": "fusion",
+                            "plottooltext": "$label, $dataValue,  $percentValue"
+                        },
+                        "data": [{
+                            "label": "Q1",
+                            "value": "102000"
+                        }, {
+                            "label": "Q2",
+                            "value": "142000"
+                        }, {
+                            "label": "Q3",
+                            "value": "187000"
+                        }, {
+                            "label": "Q4",
+                            "value": "189000"
+                        }]
+                    }
+                }, {
+                    "id": "grapes",
+                    "linkedchart": {
+                        "chart": {
+                            "caption": "Grapes Juice - Quarterly Sales",
+                            "subcaption": "Last year",
+                            "numberprefix": "$",
+                            "theme": "fusion",
+                            "rotateValues": "0",
+                            "plottooltext": "$label, $dataValue,  $percentValue"
+                        },
+                        "data": [{
+                            "label": "Q1",
+                            "value": "45000"
+                        }, {
+                            "label": "Q2",
+                            "value": "72000"
+                        }, {
+                            "label": "Q3",
+                            "value": "95000"
+                        }, {
+                            "label": "Q4",
+                            "value": "108000"
+                        }]
+                    }
+                }]
+            }
         }
     },
     methods: {
