@@ -84,7 +84,9 @@ heading: Release Notes
 
 <h4 class="sub-heading">Deprecated</h4>
 
-- `enableNavigator` attribute is now deprecated, and the same can be achieved by using the `enabled` attribute inside the `tooltip` object.
+- `enableNavigator` attribute is now deprecated, and the same can be achieved by using the `enabled` attribute inside the `navigator` object.
+
+- `showTooltip` attribute is now deprecated, and the same can be achieved by using the `enabled` attribute inside the `tooltip` object.
 
 <h2 class="sub-heading">Version 1.0.0</h2>
 
