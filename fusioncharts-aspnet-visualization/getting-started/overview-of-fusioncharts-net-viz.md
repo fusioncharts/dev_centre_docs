@@ -16,7 +16,7 @@ FusionCharts.NET helps you avoid writing messy JavaScript and JSON code within y
 
 - **Visualization** - The visualization module of FusionCharts.NET allows you to render the chart with functional and cosmetic configurations, after receiving the data from the data engine.
 
-To help understand better refer to the illustration below:
+To understand this better, refer to the illustration below:
 
 <img src="{% site.BASE_URL %}/images/architecture-diagram-fusioncharts-net.png" alt="Data Markers" width="700" height="420">
 
@@ -25,7 +25,7 @@ To help understand better refer to the illustration below:
 <table>
 	<tr>
 		<th></th>
-		<th>Asp.Net wrapper</th>
+		<th>ASP.NET wrapper</th>
 		<th>FusionCharts.NET</th>
 	</tr>
 	<tr>
@@ -49,7 +49,7 @@ To help understand better refer to the illustration below:
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
 	<tr>
-		<td>Handle chart structure specific json</td>
+		<td>Handle chart structure specific JSON</td>
 		<td><i class="fc_cross_covered" style="font-size: 25px; color: #bcbccf"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
@@ -59,12 +59,12 @@ To help understand better refer to the illustration below:
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
 	<tr>
-		<td>Page Level theme</td>
+		<td>Page level theme</td>
 		<td><i class="fc_cross_covered" style="font-size: 25px; color: #bcbccf"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
 	<tr>
-		<td>Fully object oriented c#/vb code</td>
+		<td>Fully object oriented C#/VB code</td>
 		<td><i class="fc_cross_covered" style="font-size: 25px; color: #bcbccf"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
 	</tr>
