@@ -40,14 +40,13 @@ import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 
 //Include the FusionCharts library
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from 'fusioncharts';
 
-//Include the chart type
-import Column2D from 'fusioncharts/viz/column2d'
-import Pie2D from 'fusioncharts/viz/pie2d'
+//Include the chart
+import Charts from 'fusioncharts/fusioncharts.charts'
 
 // Register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, Column2D, Pie2D);
+Vue.use(VueFusionCharts, FusionCharts, Charts);
 
 var app = new Vue({
     el: '#app',
