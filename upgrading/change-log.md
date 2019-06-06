@@ -22,6 +22,8 @@ heading: Version 3.13.x
 
 - The file format to export a chart in Excel is now changed from `.xls` to `.xlsx`. Please note that if you are downloading the package via NPM, to export a chart in `.xlsx` format, you need to import the `ExcelExport` file.
 
+- A new [theme](/themes/introduction-to-themes), `UMBER`, is now available for FusionCharts.
+
 <h4>Fixes</h4>
 
 - In a multi-series chart, if a series is hidden at the time of rendering and the attribute `transposeAxis` is set as `1`, the y-axis was not scaling properly. This issue is now fixed.

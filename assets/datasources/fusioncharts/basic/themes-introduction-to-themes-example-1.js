@@ -58,7 +58,8 @@
             'candy': 'Candy',
             'zune': 'Zune',
             'ocean': 'Ocean',
-            'carbon': 'Carbon'
+            'carbon': 'Carbon',
+            'umber': 'Umber'
          },
             themeSelected = 'fusion',
             chartRef = eventObj.sender;

@@ -22,6 +22,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `zune`
 * `ocean`
 * `carbon`
+* `umber` (since v3.13.5)
 
 A Column 2D chart showcasing the 6 themes mentioned above is given below:
 
