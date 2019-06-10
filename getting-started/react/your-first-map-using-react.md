@@ -233,11 +233,9 @@ To render the map follow the steps below:
 
 7. Include the FusionCharts theme file to apply style to the charts.
 
-8. Include the `ExcelExport` module to export chart data in XLSX format.
+8. Add the map renderer, map definition and theme as a dependency to the core.
 
-9. Add the map renderer, map definition, theme and ExcelExport as a dependency to the core.
-
-10. Store the map configurations as a JSON object. In this JSON object:
+9.  Store the map configurations as a JSON object. In this JSON object:
 
 - Set the map as `world`. For World map, the alias is `world`. Find the complete list of map with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
@@ -279,13 +277,10 @@ import World from 'fusioncharts/maps/fusioncharts.world';
 // Step 6 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 7 - Include the ExcelExport
-import ExcelExport from 'fusioncharts/features/excelexport';
-
-// Step 8 - Adding the map as dependency to the core fusioncharts
+// Step 7 - Adding the map as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 
-// Step 9 - Creating the JSON object to store the map configurations
+// Step 8 - Creating the JSON object to store the map configurations
 const chartConfigs = {
     type: 'world',
     width: '800',
@@ -612,11 +607,8 @@ import California from 'fusionmaps/maps/fusioncharts.california';
 // Step 6 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 7 - Include the ExcelExport
-import ExcelExport from 'fusioncharts/features/excelexport';
-
-// Step 8 - Adding the map, theme and ExcelExport as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, FusionMaps, California, FusionTheme, ExcelExport);
+// Step 7 - Adding the map and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
 
 // Step 9 - Creating the JSON object to store the map configurations
 const chartConfigs = {

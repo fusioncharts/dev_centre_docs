@@ -211,11 +211,9 @@ To render the map follow the steps below:
 
 6. Include the FusionCharts theme file to apply the style to the charts.
 
-7. Include the `ExcelExport` module to export chart data in XLSX format.
+7. Register the `VueFusionCharts` component
 
-8. Register the `VueFusionCharts` component
-
-9. Store the map configurations in a JSON object. In this JSON object:
+8. Store the map configurations in a JSON object. In this JSON object:
 
    - Set the map type as `world`. Each map is represented with a unique chart alias. For World Map, the alias is `world`. Find the complete list of maps with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
    - Set the width and height (in pixels).
@@ -240,10 +238,9 @@ import FusionCharts from 'fusioncharts';
 import FusionMaps from 'fusioncharts/fusioncharts.maps';
 import World from 'fusioncharts/maps/fusioncharts.world';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-import ExcelExport from 'fusioncharts/features/excelexport';
 
 // Register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, FusionMaps, World, FusionTheme, ExcelExport);
+Vue.use(VueFusionCharts, FusionCharts, FusionMaps, World, FusionTheme);
 export default {
 name: 'app',
     data () {
@@ -557,10 +554,9 @@ import FusionCharts from 'fusioncharts';
 import FusionMaps from 'fusioncharts/fusioncharts.maps';
 import California from 'fusionmaps/maps/fusioncharts.california';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-import ExcelExport from 'fusioncharts/features/excelexport';
 
 // Register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California, FusionTheme, ExcelExport);
+Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California, FusionTheme);
 export default {
   name: 'app',
   data () {

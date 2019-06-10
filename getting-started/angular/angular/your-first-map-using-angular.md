@@ -149,8 +149,6 @@ To render the chart follow the steps below:
 
 - Import the FusionCharts theme file to apply the style to the charts.
 
-- Include the `ExcelExport` module to export chart data in XLSX format.
-
 - Pass the `fusioncharts` library, map module, and the FusionTheme.
 
 The consolidated code is shown below:
@@ -173,16 +171,12 @@ import * as World from "fusionmaps/maps/fusioncharts.world";
 
 import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-// Import the ExcelExport
-import * as ExcelExport from "fusioncharts/features/excelexport";
-
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(
   FusionCharts,
   FusionMaps,
   World,
-  FusionTheme,
-  ExcelExport
+  FusionTheme
 );
 
 @NgModule({
@@ -332,8 +326,6 @@ After installing fusionmaps package, follow the steps to render the map:
 
 - Import the FusionCharts theme file to apply the style to the charts.
 
-- Include the `ExcelExport` module to export chart data in XLSX format.
-
 - Pass the `fusioncharts` library, map module, and the FusionTheme.
 
 The consolidated code is shown below:
@@ -356,16 +348,12 @@ import * as California from "fusionmaps/maps/fusioncharts.california";
 
 import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-// Import the ExcelExport
-import * as ExcelExport from "fusioncharts/features/excelexport";
-
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(
   FusionCharts,
   FusionMaps,
   California,
-  FusionTheme,
-  ExcelExport
+  FusionTheme
 );
 
 @NgModule({

@@ -49,11 +49,8 @@ import Column2d from "fusioncharts/viz/column2d";
 // Load fusion theme
 import FusionTheme from "fusioncharts/themes/es/fusioncharts.theme.fusion";
 
-// Include the ExcelExport
-import ExcelExport from "fusioncharts/features/excelexport";
-
 // Add dependencies to FusionChartsModule
-FusionChartsModule.fcRoot(FusionCharts, Column2d, FusionTheme, ExcelExport);
+FusionChartsModule.fcRoot(FusionCharts, Column2d, FusionTheme);
 
 @NgModule({
   declarations: [AppComponent],
@@ -70,9 +67,7 @@ In the above code:
 
 2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Include the `ExcelExport` module to export chart data in XLSX format.
-
-4. Add dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app.
 
@@ -195,16 +190,12 @@ import StackedColumn2d from "fusioncharts/viz/stackedcolumn2d";
 // Load fusion theme
 import FusionTheme from "fusioncharts/themes/es/fusioncharts.theme.fusion";
 
-// Include the ExcelExport
-import ExcelExport from "fusioncharts/features/excelexport";
-
 // Add dependencies to FusionChartsModule
 FusionChartsModule.fcRoot(
   FusionCharts,
   Column2d,
   StackedColumn2d,
-  FusionTheme,
-  ExcelExport
+  FusionTheme
 );
 
 @NgModule({
@@ -222,9 +213,7 @@ In the above code:
 
 2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Include the `ExcelExport` module to export chart data in XLSX format.
-
-4. Add dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app.
 

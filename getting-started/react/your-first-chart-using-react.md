@@ -217,18 +217,16 @@ To render the chart, follow the steps below:
 
 5. Include the FusionCharts theme file to apply the style to the charts.
 
-6. Include the `ExcelExport` module to export chart data in XLSX format.
+6. Add the chart and theme and as a dependency to the core.
 
-7. Add the chart, theme and ExcelExport as a dependency to the core.
-
-8. Store the chart configurations in a JSON object. In this JSON object:
+7. Store the chart configurations in a JSON object. In this JSON object:
 
    - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as JSON.
    - Embed the json data as the value of the `dataSource`.
 
-9. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
+8. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The consolidated code is shown below:
 
@@ -258,13 +256,10 @@ import Column2D from 'fusioncharts/fusioncharts.charts';
 // Step 5 - Include the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 6 - Include the ExcelExport
-import ExcelExport from 'fusioncharts/features/excelexport';
+// Step 6 - Adding the chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-// Step 7 - Adding the chart, theme and ExcelExport as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme, ExcelExport);
-
-// Step 8 - Creating the JSON object to store the chart configurations
+// Step 7 - Creating the JSON object to store the chart configurations
 const chartConfigs = {
     type: 'column2d',// The chart type
     width: '700', // Width of the chart

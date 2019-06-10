@@ -358,18 +358,16 @@ To render the chart, follow the steps below:
 
 2. Include `react-native-fusioncharts` component.
 
-3. Include the `ExcelExport` module to export chart data in XLSX format.
-
-4. Define the chart configuration in a JSON.
+3. Define the chart configuration in a JSON.
 
    - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as JSON.
    - Embed the json data as the value of the `dataSource`.
 
-5. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
+4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
-6. Add `style` to the container of the chart.
+5. Add `style` to the container of the chart.
 
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
@@ -379,7 +377,6 @@ Copy the following code to `app.js` file.
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import FusionCharts from "react-native-fusioncharts";
-import ExcelExport from "fusioncharts/features/excelexport";
 
 export default class PlainColumn2D extends Component {
   constructor(props) {
