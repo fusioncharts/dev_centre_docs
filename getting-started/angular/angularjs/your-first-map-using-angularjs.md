@@ -229,13 +229,11 @@ To render the map follow the steps below:
 
 7. Include the FusionCharts theme file to apply style to the charts.
 
-8. Include the `ExcelExport` module to export chart data in XLSX format.
+8. Add the map and theme file as a dependency to the core.
 
-9. Add the map, theme and ExcelExport file as a dependency to the core.
+9.  Store the map configurations in a variable (`myApp`).
 
-10. Store the map configurations in a variable (`myApp`).
-
-11. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
+10. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
     - Set the map type as `world`. Each map type is represented with a unique map alias. For World Map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
     - Set the width and height (in pixels).
     - Embed the json data as the value of the `dataSource`.
@@ -270,14 +268,10 @@ var World = require('fusioncharts/maps/fusioncharts.world');
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Require ExcelExport module from fusioncharts
-var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
-
-// Add maps, themes and ExcelExport as dependency
+// Add maps and themes as dependency
 FusionMaps(FusionCharts);
 World(FusionCharts);
 FusionTheme(FusionCharts);
-ExcelExport(FusionCharts);
 
 var myApp = angular.module('myApp', ['ng-fusioncharts']);
 
@@ -561,7 +555,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
 
-```
+```shell
 $ npm install fusionmaps
 ```
 

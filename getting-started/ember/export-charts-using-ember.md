@@ -50,7 +50,6 @@ module.exports = function(defaults) {
   app.import("node_modules/fusioncharts/fusioncharts.js");
   app.import("node_modules/fusioncharts/fusioncharts.charts.js");
   app.import("node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js");
-  app.import("node_modules/fusioncharts/features/excelexport");
 
   return app.toTree();
 };
@@ -180,7 +179,6 @@ module.exports = function(defaults) {
   app.import("node_modules/fusioncharts/fusioncharts.js");
   app.import("node_modules/fusioncharts/fusioncharts.charts.js");
   app.import("node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js");
-  app.import("node_modules/fusioncharts/features/excelexport");
 
   return app.toTree();
 };

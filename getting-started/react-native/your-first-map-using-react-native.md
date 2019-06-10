@@ -352,18 +352,16 @@ To render the map follow the steps below:
 
 2. Include `react-native-fusioncharts` component
 
-3. Include the `ExcelExport` module to export chart data in XLSX format.
-
-4. Define the chart configuration in a JSON.
+3. Define the chart configuration in a JSON.
 
    - Set the map as `world`. For World map, the alias is `world`. Find the complete list of map with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as **json**.
    - Embed the json data as the value of the `dataSource`.
 
-5. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
+4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
-6. Add `style` to the container of the chart.
+5. Add `style` to the container of the chart.
 
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
@@ -373,7 +371,6 @@ Copy the following code to `app.js` file.
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import FusionCharts from "react-native-fusioncharts";
-import ExcelExport from "fusioncharts/features/excelexport";
 
 export default class DrillDown extends Component {
   constructor(props) {
@@ -520,7 +517,6 @@ After installing `fusionmaps` package, the code to render the map of **Californi
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import FusionCharts from "react-native-fusioncharts";
-import ExcelExport from "fusioncharts/features/excelexport";
 
 export default class DrillDown extends Component {
   constructor(props) {

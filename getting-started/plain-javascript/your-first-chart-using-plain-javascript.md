@@ -198,18 +198,14 @@ To render the chart, follow the steps below:
 
 3. Include the FusionCharts theme file to apply style to the charts.
 
-4. Include the `ExcelExport` module to export chart data in XLSX format.
-
-5. Add the chart, theme and ExcelExport as dependencies to the core.
-
-6. Store the chart configurations in a JSON object. In this JSON object:
+4. Store the chart configurations in a JSON object. In this JSON object:
 
    - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as JSON.
    - Embed the json data as the value of the `dataSource`.
 
-7. Add a container (instance) for the chart.
+5. Add a container (instance) for the chart.
 
 The consolidated code is shown below:
 
@@ -239,14 +235,10 @@ import Column2D from 'fusioncharts/viz/column2d';
 // Include the fusion theme
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
-// Include the ExcelExport
-import ExcelExport from 'fusioncharts/features/excelexport';
-
-// Add the chart, theme and ExcelExport as dependency
+// Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
-FusionCharts.addDep(ExcelExport);
 
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
@@ -308,13 +300,9 @@ var Charts = require('fusioncharts/fusioncharts.charts');
 // Require theme from fusioncharts
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Require ExcelExport module from fusioncharts
-var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
-
-// Add charts, themes and ExcelExport as dependency
+// Add charts and themes as dependency
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
-ExcelExport(FusionCharts);
 
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({

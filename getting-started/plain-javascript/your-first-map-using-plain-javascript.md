@@ -200,13 +200,11 @@ To render the map follow the steps below:
 
 4. Include the FusionCharts theme file to apply style to the charts.
 
-5. Include the `ExcelExport` module to export chart data in XLSX format.
+5. Add the map renderer and map definition as a dependency to the core.
 
-6. Add the map renderer and map definition as a dependency to the core.
+6. Add the theme as a dependency to the core.
 
-7. Add the theme and ExcelExport as a dependency to the core.
-
-8. Store the chart configurations as a JSON object. In this JSON object:
+7. Store the chart configurations as a JSON object. In this JSON object:
 
    - Set the map type as `world`. Each map is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
@@ -216,7 +214,7 @@ To render the map follow the steps below:
 
    - Embed the json data as the value of the `dataSource`.
 
-9. Add a container (instance) for the chart.
+8. Add a container (instance) for the chart.
 
 The consolidated code is shown below:
 
@@ -246,15 +244,11 @@ import World from 'fusioncharts/maps/es/fusioncharts.world';
 // Include the fusion theme
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
 
-// Include the ExcelExport
-import ExcelExport from 'fusioncharts/features/excelexport';
-
-// Add the map, theme and ExcelExport as dependency
+// Add the map and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(FusionMaps);
 FusionCharts.addDep(World);
 FusionCharts.addDep(FusionTheme);
-FusionCharts.addDep(ExcelExport);
 
 // Create an Instance with map options
 var annualPopulation = new FusionCharts({
@@ -338,14 +332,10 @@ var World = require('fusioncharts/maps/fusioncharts.world');
 // Require theme from fusioncharts
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Require ExcelExport module from fusioncharts
-var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
-
-// Add maps, themes and ExcelExport as dependency
+// Add maps and themes as dependency
 FusionMaps(FusionCharts);
 World(FusionCharts);
 FusionTheme(FusionCharts);
-ExcelExport(FusionCharts);
 
 // Create an Instance with map options
 var annualPopulation = new FusionCharts({
@@ -622,7 +612,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
 
-```
+```bash
 $ npm install fusionmaps
 ```
 

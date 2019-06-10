@@ -180,11 +180,9 @@ To render the gauge, open `App.vue` file and follow the steps below:
 
 5. Include the FusionCharts theme file to apply style to the charts.
 
-6. Include the `ExcelExport` module to export chart data in XLSX format.
+6. Register the `vue-fusionCharts` component.
 
-7. Register the `vue-fusionCharts` component.
-
-8. Store the chart configurations in a JSON object. In this JSON object:
+7. Store the chart configurations in a JSON object. In this JSON object:
 
    - Set the chart type as `angulargauge`. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
    - Set the width and height (in pixels).
@@ -205,9 +203,8 @@ import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
 import AngularGauge from 'fusioncharts/fusioncharts.widgets';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-import ExcelExport from 'fusioncharts/features/excelexport';
 
-Vue.use(VueFusionCharts, FusionCharts, AngularGauge, FusionTheme, ExcelExport);
+Vue.use(VueFusionCharts, FusionCharts, AngularGauge, FusionTheme);
 export default {
 name: 'app',
 data () {

@@ -129,8 +129,6 @@ To render the gauge follow the steps below:
 
 - Include the FusionCharts theme file to apply the style to the gauge.
 
-- Include the `ExcelExport` module to export chart data in XLSX format.
-
 - Pass the `fusioncharts` library, gauge module and the theme.
 
 The consolidated code is shown below:
@@ -152,11 +150,8 @@ import * as Widgets from "fusioncharts/fusioncharts.widgets";
 
 import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-// Import the ExcelExport
-import * as ExcelExport from "fusioncharts/features/excelexport";
-
 // Pass the fusioncharts library and chart modules
-FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme, ExcelExport);
+FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
 
 @NgModule({
   declarations: [AppComponent],

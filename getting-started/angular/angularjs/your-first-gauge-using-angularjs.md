@@ -198,13 +198,11 @@ To render the gauge, follow the steps below:
 
 6. Include the FusionCharts theme file to apply the style to the charts.
 
-7. Include the `ExcelExport` module to export chart data in XLSX format.
+7. Add the chart and theme as a dependency to the core.
 
-8. Add the chart, theme and ExcelExport as a dependency to the core.
+8. Store the chart configurations in a variable (`myApp`).
 
-9. Store the chart configurations in a variable (`myApp`).
-
-10. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. The the `<div>`:
+9.  Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. The the `<div>`:
 
 - Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
 - Set the width and height (in pixels).
@@ -237,13 +235,9 @@ var Widgets = require('fusioncharts/fusioncharts.widgets');
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Require ExcelExport module from fusioncharts
-var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
-
-// Add widgets, themes and ExcelExport as dependency
+// Add widgets and themes as dependency
 Widgets(FusionCharts);
 FusionTheme(FusionCharts);
-ExcelExport(FusionCharts);
 
 var myApp = angular.module('myApp', ['ng-fusioncharts']);
 

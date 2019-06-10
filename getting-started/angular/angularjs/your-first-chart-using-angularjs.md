@@ -214,13 +214,9 @@ To render the chart, follow the steps below:
 
 6. Include the FusionCharts theme file to apply style to the charts.
 
-7. Include the `ExcelExport` module to export chart data in XLSX format.
+7. Store the chart configurations in a variable (`myApp`).
 
-8. Add the chart, theme and ExcelExport as dependencies to the core.
-
-9. Store the chart configurations in a variable (`myApp`).
-
-10. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
+8.  Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
 
 - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 - Set the width and height (in pixels).
@@ -253,13 +249,9 @@ var Charts = require('fusioncharts/fusioncharts.charts');
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Require ExcelExport module
-var ExcelExport = require('fusioncharts/fusioncharts.excelexport');
-
-// Add charts, themes and ExcelExport as dependency
+// Add charts and themes as dependency
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
-ExcelExport(FusionCharts);
 
 var myApp = angular.module('myApp', ['ng-fusioncharts']);
 
