@@ -144,8 +144,6 @@ To render the chart follow the steps below:
 
 - Include the FusionCharts theme file to apply style to the charts.
 
-- Include the `ExcelExport` module to export chart data in XLSX format.
-
 - Pass the `fusioncharts` library and chart modules.
 
 The consolidated code is shown below:
@@ -167,11 +165,8 @@ import * as Charts from "fusioncharts/fusioncharts.charts";
 
 import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-// Import the ExcelExport
-import * as ExcelExport from "fusioncharts/features/excelexport";
-
 // Pass the fusioncharts library and chart modules
-FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme, ExcelExport);
+FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
 
 @NgModule({
   declarations: [AppComponent],

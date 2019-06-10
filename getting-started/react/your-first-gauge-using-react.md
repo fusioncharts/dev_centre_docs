@@ -200,11 +200,9 @@ To render the gauge, follow the steps below:
 
 5. Include the FusionCharts theme file to apply style to the charts.
 
-6. Include the `ExcelExport` module to export chart data in XLSX format.
+6. Add the gauge and theme as a dependency to the core.
 
-7. Add the gauge, theme and ExcelExport as a dependency to the core.
-
-8. Store the chart configurations as a JSON object. In this JSON object:
+7. Store the chart configurations as a JSON object. In this JSON object:
 
    - Set the gauge type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
 
@@ -214,7 +212,7 @@ To render the gauge, follow the steps below:
 
    - Embed the json data as the value of the `dataSource`.
 
-9. Create the DOM element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
+8. Create the DOM element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The consolidated code is shown below:
 
@@ -243,13 +241,10 @@ import Widgets from 'fusioncharts/fusioncharts.widgets';
 // Step 5 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 6 - Include the ExcelExport
-import ExcelExport from 'fusioncharts/features/excelexport';
+// Step 6 - Adding the chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
 
-// Step 7 - Adding the chart, theme and ExcelExport as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme, ExcelExport);
-
-// Step 8 - Creating the JSON object to store the chart configurations
+// Step 7 - Creating the JSON object to store the chart configurations
 const chartConfigs = {
     type: 'angulargauge', // The gauge type
     width: '450', // Width of the gauge

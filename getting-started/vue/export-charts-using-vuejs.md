@@ -38,10 +38,9 @@ import Vue from "vue";
 import VueFusionCharts from "vue-fusioncharts";
 import FusionCharts from "fusioncharts/core";
 import Column2D from "fusioncharts/viz/column2d";
-import ExcelExport from "fusioncharts/features/excelexport";
 
 // register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, Column2D, ExcelExport);
+Vue.use(VueFusionCharts, FusionCharts, Column2D);
 
 // Copy datasource from 'Data' tab
 var dataSource = {
@@ -108,9 +107,7 @@ The above chart has been rendered using the following steps:
 
 1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Include the `ExcelExport` module to export chart data in XLSX format.
-
-3. Store the chart configuration in a JSON object. In the JSON object:
+2. Store the chart configuration in a JSON object. In the JSON object:
 
    - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height of the chart in pixels.
@@ -118,7 +115,7 @@ The above chart has been rendered using the following steps:
    - Embed the json data as the value of `dataSource`.
    - Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-4. Create a `fusioncharts` directive to render the chart.
+3. Create a `fusioncharts` directive to render the chart.
 
 ## Export Multiple Charts
 
@@ -137,10 +134,9 @@ import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
 import Column2D from 'fusioncharts/viz/column2d'
 import StackedColumn2D from 'fusioncharts/viz/stackedcolumn2d';
-import ExcelExport from "fusioncharts/features/excelexport";
 
 // register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, Column2D, StackedColumn2D, ExcelExport)
+Vue.use(VueFusionCharts, FusionCharts, Column2D, StackedColumn2D)
 
 // Copy datasource from 'Data' tab
 var dataSource = {
@@ -321,9 +317,7 @@ The above chart has been rendered using the following steps:
 
 1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Include the `ExcelExport` module to export chart data in XLSX format.
-
-3. Store the chart configuration in a JSON object. In the JSON object:
+2. Store the chart configuration in a JSON object. In the JSON object:
 
    - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height of the chart in pixels.
@@ -331,9 +325,9 @@ The above chart has been rendered using the following steps:
    - Embed the json data as the value of `dataSource`.
    - Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-4. To export multiple charts on the page add an **event handler** to fire the export operation when the button is clicked.
+3. To export multiple charts on the page add an **event handler** to fire the export operation when the button is clicked.
 
-5. Create a `fusioncharts` directive to render the chart.
+4. Create a `fusioncharts` directive to render the chart.
 
 ## Modes of Export
 

@@ -49,13 +49,9 @@ var Charts = require("fusioncharts/fusioncharts.charts");
 // Require Fusion theme
 var FusionTheme = require("fusioncharts/themes/fusioncharts.theme.fusion");
 
-// Require ExcelExport module
-var ExcelExport = require("fusioncharts/fusioncharts.excelexport");
-
-// Add charts, themes and ExcelExport as dependency
+// Add charts amd themes as dependency
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
-ExcelExport(FusionCharts);
 
 var myApp = angular.module("myApp", ["ng-fusioncharts"]);
 myApp.controller("MyController", [
@@ -104,13 +100,11 @@ The above chart has been rendered using the following steps:
 
 1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
-2. Include the `ExcelExport` module to export chart data in XLSX format.
+2. Add the chart and theme as dependencies to the core.
 
-3. Add the chart, theme and ExcelExport as dependencies to the core.
+3. Store the chart configurations in a JSON object.
 
-4. Store the chart configurations in a JSON object.
-
-5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
+4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
    - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height (in pixels).
    - Embed the json data as the value of the `dataSource`.
@@ -143,13 +137,9 @@ var Charts = require("fusioncharts/fusioncharts.charts");
 // Require Fusion theme
 var FusionTheme = require("fusioncharts/themes/fusioncharts.theme.fusion");
 
-// Require ExcelExport module
-var ExcelExport = require("fusioncharts/fusioncharts.excelexport");
-
-// Add charts, themes and ExcelExport as dependency
+// Add charts and themes as dependency
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
-ExcelExport(FusionCharts);
 
 var myApp = angular.module("myApp", ["ng-fusioncharts"]);
 myApp.controller("MyController", [
@@ -393,15 +383,11 @@ The above chart has been rendered using the following steps:
 
 1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
-2. Include the `ExcelExport` module to export chart data in XLSX format.
+2. Store the chart configurations in a JSON object.
 
-3. Add the chart, theme and ExcelExport as dependencies to the core.
+3. To export multiple charts as PDF, set the `batchExport` to PDF.
 
-4. Store the chart configurations in a JSON object.
-
-5. To export multiple charts as PDF, set the `batchExport` to PDF.
-
-6. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
+4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
    - Set the chart type as `column2d` for the first chart and `stackedcolumn2d` for the second chart. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as JSON.

@@ -198,11 +198,9 @@ To render the chart, open `App.vue` file and follow the steps below:
 
 5. Include the FusionCharts theme file to apply the style to the charts.
 
-6. Include the `ExcelExport` module to export chart data in XLSX format.
+6. Register the **VueFusionCharts** component
 
-7. Register the **VueFusionCharts** component
-
-8. Store the chart configurations in a JSON object. In this JSON object:
+7. Store the chart configurations in a JSON object. In this JSON object:
 
    - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
@@ -226,9 +224,8 @@ import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
 import Column2D from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-import ExcelExport from 'fusioncharts/features/excelexport';
 
-Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme, ExcelExport);
+Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
 export default {
 name: 'app',
 data() {

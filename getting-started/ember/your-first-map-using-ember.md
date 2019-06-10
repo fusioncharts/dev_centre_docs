@@ -149,8 +149,6 @@ To render the gauge using `ember-fusioncharts` component, follow the steps below
 
 - Import the FusionCharts theme file to apply the style to the charts.
 
-- Import the `ExcelExport` module to export chart data in XLSX format.
-
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
 ```javascript
@@ -169,7 +167,6 @@ module.exports = function(defaults) {
   app.import("node_modules/fusioncharts/fusioncharts.maps.js");
   app.import("node_modules/fusioncharts/fusioncharts.world.js");
   app.import("node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js");
-  app.import("node_modules/fusioncharts/features/excelexport");
   // Use `app.import` to import additional libraries/files
   return app.toTree();
 };
@@ -324,8 +321,6 @@ After installing fusionmaps package, follow the steps to render the map:
 
 - Import the FusionCharts theme file to apply the style to the charts.
 
-- Import the `ExcelExport` module to export chart data in XLSX format.
-
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
 ```javascript
@@ -344,7 +339,6 @@ module.exports = function(defaults) {
   app.import("node_modules/fusioncharts/fusioncharts.maps.js");
   app.import("node_modules/fusionmaps/maps/fusioncharts.california.js");
   app.import("node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js");
-  app.import("node_modules/fusioncharts/features/excelexport");
   // Use `app.import` to import additional libraries/files
   return app.toTree();
 };

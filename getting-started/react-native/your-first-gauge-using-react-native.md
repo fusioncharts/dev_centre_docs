@@ -333,18 +333,16 @@ To render the chart, follow the steps below:
 
 2. Include `react-native-fusioncharts` component.
 
-3. Include the `ExcelExport` module to export chart data in XLSX format.
-
-4. Define the chart configuration in a JSON.
+3. Define the chart configuration in a JSON.
 
    - Set the gauge type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as **json**.
    - Embed the json data as the value of the `dataSource`.
 
-5. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
+4. Specify the location of `fusioncharts.html` for **Android** and **iOS**.
 
-6. Add `style` to the container of the chart.
+5. Add `style` to the container of the chart.
 
 > The `JavaScript` code to create a chart in **Android** and **iOS** is same.
 
@@ -354,7 +352,6 @@ Copy the following code to `app.js` file.
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import FusionCharts from "react-native-fusioncharts";
-import ExcelExport from "fusioncharts/features/excelexport";
 
 export default class DrillDown extends Component {
   constructor(props) {
