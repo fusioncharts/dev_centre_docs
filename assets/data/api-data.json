@@ -30954,15 +30954,6 @@
                       "nullable": "",
                       "subparams": {}
                     },
-                    "sender": {
-                      "name": "sender",
-                      "type": ["Object"],
-                      "description": "Instance of the FusionCharts object that fired this event",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
-                    },
                     "withoutHead": {
                       "name": "withoutHead",
                       "type": ["Boolean"],
