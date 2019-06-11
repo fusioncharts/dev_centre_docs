@@ -27341,7 +27341,7 @@
                   "subparams": {
                     "source": {
                       "name": "source",
-                      "type": ["number"],
+                      "type": ["string"],
                       "description": "Source of the data load request, presently set to __xmlHttpRequest__",
                       "defaultvalue": "",
                       "optional": "",
