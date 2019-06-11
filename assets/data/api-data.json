@@ -15087,8 +15087,8 @@
                 "data": {
                   "name": "data",
                   "subparams": {
-                    "ScrollPosition": {
-                      "name": "ScrollPosition",
+                    "scrollPosition": {
+                      "name": "scrollPosition",
                       "type": ["number"],
                       "description": "Position of the scroll when you finish scrolling",
                       "defaultvalue": "",
