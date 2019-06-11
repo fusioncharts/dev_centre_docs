@@ -10,19 +10,19 @@ A pie chart is a circular chart divided into sectors where the arc length of eac
 
 ## Pie 2D Chart
 
-Let's create our first pie 2D chart which will showcase the split in revenue by product categories for one year. 
+Let's create our first pie 2D chart which will showcase the split in revenue by product categories for one year.
 
 To create a pie 2D chart follow the steps given below:
 
-* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+- In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a pie 2D chart, set `pie2d`.
+- Specify the chart type using the `type` attribute. To render a pie 2D chart, set `pie2d`.
 
-* Set the container object using `renderAt` attribute.
+- Set the container object using `renderAt` attribute.
 
-* Specify the dimension of the chart using `width` and `height` attributes.
+- Specify the dimension of the chart using `width` and `height` attributes.
 
-* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+- Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=pie2d) page of the pie 2D chart.
 
@@ -46,9 +46,9 @@ Click [here](http://jsfiddle.net/fusioncharts/uq2muq97/) to edit the pie 3D char
 
 ## Doughnut 2D Chart
 
-As we know, a doughnut chart is similar to a pie chart. The only difference is that a doughnut chart has a blank center - as the name suggests, it looks like a doughnut. 
+As we know, a doughnut chart is similar to a pie chart. The only difference is that a doughnut chart has a blank center - as the name suggests, it looks like a doughnut.
 
-Let's create our first doughnut 2D chart showcasing the same use case for the pie chart created above. 
+Let's create our first doughnut 2D chart showcasing the same use case for the pie chart created above.
 
 To create a doughnut 2D chart, set the `type` attribute to `doughnut2d`.
 
@@ -76,7 +76,7 @@ Now, let's customize the appearance and properties of pie and doughnut charts.
 
 ## Configure the Animation Direction
 
-By default, when a pie/doughnut chart is loaded for the first time or refreshed, the rendering animation is in the anti-clockwise direction. 
+By default, when a pie/doughnut chart is loaded for the first time or refreshed, the rendering animation is in the anti-clockwise direction.
 However, FusionCharts includes the `animateClockwise` attribute that lets you animate the chart in the clockwise direction. Set the `animateClockwise` attribute to `1` to animate the chart in the clockwise direction.
 
 Refer to the code given below:
@@ -84,7 +84,7 @@ Refer to the code given below:
 ```json
 {
   "chart": {
-      "animateClockwise": "1"
+    "animateClockwise": "1"
   }
 }
 ```
@@ -101,9 +101,9 @@ By default, for a pie chart, the actual data values are shown on the chart as we
 
 To show percent values and actual values in your chart, follow the steps given below:
 
-* Set the `showPercentValues` attribute to `1` to show percent values as data labels.
+- Set the `showPercentValues` attribute to `1` to show percent values as data labels.
 
-* Set the `showPercentInTooltip` attribute to `1` to render the text of tooltip in percentage values.
+- Set the `showPercentInTooltip` attribute to `1` to render the text of tooltip in percentage values.
 
 > The **showPercentValues** and the **showPercentInTooltip** attributes are applicable if you want to show percent values on the chart and actual values in tool-tips for a doughnut chart.
 
@@ -114,7 +114,7 @@ Refer to the code given below:
   "chart": {
     "showPercentValues": "1",
     "showPercentInTooltip": "0"
-  },
+  }
 }
 ```
 
@@ -130,9 +130,9 @@ For a doughnut chart, you can configure the default text that will be rendered o
 
 To customize the center label of your chart, follow the steps given below:
 
-* Specify the text of the center label using the `defaultCenterLabel` attribute.
+- Specify the text of the center label using the `defaultCenterLabel` attribute.
 
-* Specify the hover text of a doughnut slice using the `centerLabel` attribute.
+- Specify the hover text of a doughnut slice using the `centerLabel` attribute.
 
 Refer to the code given below:
 
@@ -141,7 +141,7 @@ Refer to the code given below:
   "chart": {
     "defaultCenterLabel": "Total revenue: $60K",
     "centerLabel": "$value"
-  },
+  }
 }
 ```
 
@@ -155,7 +155,7 @@ Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 2D ch
 
 By default, the pie and doughnut charts allow you to slice out multiple pie/doughnut slices at one time. You can, however, opt to enable slicing-out only one slice at a time.
 
-By default, multiple slicing is enabled. To stop the multiple slicing set the `enableMultiSlicing` attribute to `0`. 
+By default, multiple slicing is enabled. To stop the multiple slicing set the `enableMultiSlicing` attribute to `0`.
 
 Refer to the code given below:
 
@@ -163,7 +163,7 @@ Refer to the code given below:
 {
   "chart": {
     "enableMultiSlicing": "0"
-  },
+  }
 }
 ```
 
@@ -175,9 +175,9 @@ Click [here](http://jsfiddle.net/fusioncharts/jg4k7eny/) to edit the doughnut 2D
 
 ## Disable Smart Labels and Lines
 
-By default, pie and doughnut charts are rendered with smart labels and lines - smart labels are data labels connected to their corresponding pie slices using line segments called smart lines. Smart labels manage overlapping of labels even when a large number of labels are placed in the close vicinity. You can, however, choose to disable these smart labels. 
+By default, pie and doughnut charts are rendered with smart labels and lines - smart labels are data labels connected to their corresponding pie slices using line segments called smart lines. Smart labels manage overlapping of labels even when a large number of labels are placed in the close vicinity. You can, however, choose to disable these smart labels.
 
-To disable the smart labels, set `enableSmartLabels` attribute to `0`. 
+To disable the smart labels, set `enableSmartLabels` attribute to `0`.
 
 Refer to the code given below:
 
@@ -185,7 +185,7 @@ Refer to the code given below:
 {
   "chart": {
     "enableSmartLabels": "0"
-  },
+  }
 }
 ```
 
@@ -201,13 +201,13 @@ Click [here](http://jsfiddle.net/fusioncharts/tom7289j/) to edit the pie 2D char
 
 Apart from enabling and disabling the smart lines, you can also set the cosmetic properties of smart lines. To customize the smart lines, follow the steps given below:
 
-* Specify the hex code for the smart line color using the `smartLineColor` attribute.
+- Specify the hex code for the smart line color using the `smartLineColor` attribute.
 
-* Set the thickness of the smart lines using the `smartLineThickness` attribute.
+- Set the thickness of the smart lines using the `smartLineThickness` attribute.
 
-* Set the transparency of the smart lines using the `smartLineAlpha` attribute. This attribute takes values between 0 (transparent) and 100 (opaque).
+- Set the transparency of the smart lines using the `smartLineAlpha` attribute. This attribute takes values between 0 (transparent) and 100 (opaque).
 
-* Set the `isSmartLineSlanted` attribute to `0` to render the smart lines as straight lines. 
+- Set the `isSmartLineSlanted` attribute to `0` to render the smart lines as straight lines.
 
 Refer to the code given below:
 
@@ -218,7 +218,7 @@ Refer to the code given below:
     "smartLineThickness": "2",
     "smartLineAlpha": "100",
     "isSmartLineSlanted": "0"
-  },
+  }
 }
 ```
 
@@ -230,11 +230,11 @@ Click [here](http://jsfiddle.net/fusioncharts/5xoz8qh1/) to edit the pie 2D char
 
 ## Configuring the Label Distance and Clearance
 
-Now, you already know how to customize the labels and the label lines in a chart. Here let's discuss how to configure the label distance of a chart. 
+Now, you already know how to customize the labels and the label lines in a chart. Here let's discuss how to configure the label distance of a chart.
 
 To configure the label distance and clearance, follow the steps given below:
 
-* Set the distance (in pixels) between the label/value from the pie/doughnut edge using the `labelDistance` attribute. 
+- Set the distance (in pixels) between the label/value from the pie/doughnut edge using the `labelDistance` attribute.
 
 > **Note:** This attribute is applicable only when smart labeling is disabled.
 
@@ -245,7 +245,7 @@ Refer to the code given below:
   "chart": {
     "enableSmartLabels": "0",
     "labelDistance": "5"
-  },
+  }
 }
 ```
 
@@ -262,9 +262,8 @@ Refer to the code given below:
 ```json
 {
   "chart": {
-
     "skipOverlapLabels": "1"
-  },
+  }
 }
 ```
 
@@ -277,9 +276,8 @@ Refer to the code given below:
 ```json
 {
   "chart": {
-
     "pieRadius": "50"
-  },
+  }
 }
 ```
 
@@ -299,7 +297,7 @@ Refer to the code given below:
 {
   "chart": {
     "startingAngle": "45"
-  },
+  }
 }
 ```
 
@@ -321,7 +319,7 @@ Refer to the code given below:
     "label": "Household",
     "value": "49100",
     "isSliced": "1"
-  },
+  }
 }
 ```
 
@@ -341,7 +339,7 @@ Refer to the code given below:
 {
   "chart": {
     "slicingDistance": "10"
-  },
+  }
 }
 ```
 
@@ -353,7 +351,7 @@ Click [here](http://jsfiddle.net/fusioncharts/c5oybzc2/) to edit the pie 2D char
 
 ## Configure the Bevel Effect
 
-For pie/doughnut charts, you can configure the bevel effect to render the chart with 3D effects. Set the `use3DLighting` attribute to `1` to specify whether advanced gradients and shadow effects will be used to create better looking charts. 
+For pie/doughnut charts, you can configure the bevel effect to render the chart with 3D effects. Set the `use3DLighting` attribute to `1` to specify whether advanced gradients and shadow effects will be used to create better looking charts.
 
 Set the 3D radius of the chart using `radius3D` attribute. Using this attribute the radius is set in percentage when the chart is rendered in the 3D lighting mode. It basically helps to set the bevel distance for the pie/doughnut.
 
@@ -363,7 +361,8 @@ Refer to the code given below:
 {
   "chart": {
     "use3DLighting": "1",
-  },
+    "radius3D": "50"
+  }
 }
 ```
 

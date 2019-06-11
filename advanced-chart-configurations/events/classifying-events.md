@@ -1,5 +1,4 @@
 ---
-permalink: advanced-chart-configurations/events/classifying-events.html
 title: Classifying Events | FusionCharts
 description: FusionCharts Suite XT includes a comprehensive set of events that can be used to trigger actions for different stages in the life cycle of a chart. This article gives you a detailed classification of the events in FusionCharts Suite XT.
 heading: Classifying Events
