@@ -14,6 +14,7 @@
             "decimals": "1",
             "enableSmartLabels": "1",
             "use3DLighting": "1",
+            "radius3D": "50",
             "useDataPlotColorForLabels": "1",
             //Theme
             "theme": "fusion"
