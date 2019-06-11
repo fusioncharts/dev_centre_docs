@@ -3603,7 +3603,7 @@
           "access": "",
           "scope": "instance",
           "virtual": false,
-          "description": "Triggered when the default behavior of the [dataLoadRequested](/api/fusioncharts/fusioncharts-events#event-dataLoadRequested) event is cancelled using the `eventObj.preventDefault()` method. Subsequently, all AJAX requests are aborted.",
+          "description": "Triggered when the default behavior of the [beforedataload](/api/fusioncharts/fusioncharts-events#event-beforedataload) event is cancelled using the `eventObj.preventDefault()` method. Subsequently, all AJAX requests are aborted.",
           "examples": {},
           "params": {
             "eventObj": {
