@@ -8259,15 +8259,6 @@
                       "nullable": "",
                       "subparams": {}
                     },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
-                    },
                     "centerLabelText": {
                       "name": "centerLabelText",
                       "type": ["string"],
@@ -8333,15 +8324,6 @@
                   "name": "id",
                   "type": ["string"],
                   "description": "Chart ID",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -8511,15 +8493,6 @@
                       "nullable": "",
                       "subparams": {}
                     },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
-                    },
                     "centerLabelText": {
                       "name": "centerLabelText",
                       "type": ["string"],
@@ -8585,15 +8558,6 @@
                   "name": "id",
                   "type": ["string"],
                   "description": "Chart ID",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -8763,15 +8727,6 @@
                       "nullable": "",
                       "subparams": {}
                     },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
-                    },
                     "centerLabelText": {
                       "name": "centerLabelText",
                       "type": ["string"],
@@ -8837,15 +8792,6 @@
                   "name": "id",
                   "type": ["string"],
                   "description": "Chart ID",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -9015,15 +8961,6 @@
                       "nullable": "",
                       "subparams": {}
                     },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
-                    },
                     "centerLabelText": {
                       "name": "centerLabelText",
                       "type": ["string"],
@@ -9089,15 +9026,6 @@
                   "name": "id",
                   "type": ["string"],
                   "description": "Chart ID",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -9308,15 +9236,6 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
                     }
                   }
                 }
@@ -9410,15 +9329,6 @@
                   "name": "id",
                   "type": ["string"],
                   "description": "Chart ID",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -9614,15 +9524,6 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
                     }
                   }
                 }
@@ -9716,15 +9617,6 @@
                   "name": "id",
                   "type": ["string"],
                   "description": "Chart ID",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -9926,15 +9818,6 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
                     }
                   }
                 }
@@ -10028,15 +9911,6 @@
                   "name": "id",
                   "type": ["string"],
                   "description": "Chart ID",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -10238,15 +10112,6 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
                     }
                   }
                 }
@@ -10340,15 +10205,6 @@
                   "name": "id",
                   "type": ["string"],
                   "description": "Chart ID",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -25277,15 +25133,6 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
                     }
                   }
                 }
@@ -25298,15 +25145,6 @@
                   "name": "type",
                   "type": ["string"],
                   "description": "Type of chart rendered",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -25405,34 +25243,6 @@
                   "name": "detachHandler",
                   "type": ["function"],
                   "description": "Function to allow the listener to remove itself rather than being called externally by the [removeEventListener()](/api/fusioncharts/fusioncharts-methods#removeEventListener) method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition.",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "data": {
-                  "name": "data",
-                  "subparams": {
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
-                    }
-                  }
-                }
-              }
-            },
-            "dataObj": {
-              "name": "dataObj (Deprecated)",
-              "subparams": {
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -25758,15 +25568,6 @@
                       "nullable": "",
                       "subparams": {}
                     },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
-                    },
                     "width": {
                       "name": "width",
                       "type": ["number", "percent"],
@@ -25805,15 +25606,6 @@
                   "name": "drawCount",
                   "type": ["number"],
                   "description": "Number of times the chart is drawn/redrawn",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -26045,15 +25837,6 @@
                 "data": {
                   "name": "data",
                   "subparams": {
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
-                    },
                     "width": {
                       "name": "width",
                       "type": ["number"],
@@ -26097,15 +25880,6 @@
             "dataObj": {
               "name": "dataObj (Deprecated)",
               "subparams": {
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
                 "width": {
                   "name": "width",
                   "type": ["number"],
@@ -29387,15 +29161,6 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering engine used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
                     }
                   }
                 }
@@ -29426,15 +29191,6 @@
                   "name": "height",
                   "type": ["number"],
                   "description": "Chart height",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering engine used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -29573,15 +29329,6 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    },
-                    "renderer": {
-                      "name": "renderer",
-                      "type": ["string"],
-                      "description": "Rendering ending used (__javascript__ or __flash__)",
-                      "defaultvalue": "",
-                      "optional": "",
-                      "nullable": "",
-                      "subparams": {}
                     }
                   }
                 }
@@ -29612,15 +29359,6 @@
                   "name": "height",
                   "type": ["number"],
                   "description": "Chart height",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "renderer": {
-                  "name": "renderer",
-                  "type": ["string"],
-                  "description": "Rendering ending used (__javascript__ or __flash__)",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
