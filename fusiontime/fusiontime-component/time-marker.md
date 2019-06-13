@@ -84,10 +84,10 @@ xAxis: {
         start: 'Mar-1980',
         label: 'US inflation peaked at 14.8%.',
         timeFormat: "%b-%Y",
+        type: 'full'
         repeat: {
             unit: 'Year',
-            multiplier: 5,
-            type: 'full'
+            multiplier: 5
         },
         style: {
             marker: {
