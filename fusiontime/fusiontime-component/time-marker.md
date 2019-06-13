@@ -165,7 +165,7 @@ The image below highlights the marker-box, marker-line, and the marker-notch of 
 
 The image below highlights the time marker and the text of the time marker.
 
-<IMAGE>
+<img src="{% site.BASE_URL %}/images/time-span-marker-text.png" alt="Time Axis" width="700" height="420">
 
 Refer to the code given below:
 
