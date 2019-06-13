@@ -84,10 +84,10 @@ xAxis: {
         start: 'Mar-1980',
         label: 'US inflation peaked at 14.8%.',
         timeFormat: "%b-%Y",
+        type: 'full'
         repeat: {
             unit: 'Year',
-            multiplier: 5,
-            type: 'full'
+            multiplier: 5
         },
         style: {
             marker: {
@@ -161,11 +161,11 @@ You can set the cosmetic properties of all the parts of a time marker using fami
 
 The image below highlights the marker-box, marker-line, and the marker-notch of the time marker.
 
-<Image>
+<img src="{% site.BASE_URL %}/images/fusiontime-time-marker-components.png" alt="Time Axis" width="700" height="420">
 
 The image below highlights the time marker and the text of the time marker.
 
-<IMAGE>
+<img src="{% site.BASE_URL %}/images/time-span-marker-text.png" alt="Time Axis" width="700" height="420">
 
 Refer to the code given below:
 
