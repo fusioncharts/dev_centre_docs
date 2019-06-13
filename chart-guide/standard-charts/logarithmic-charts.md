@@ -10,23 +10,23 @@ Logarithmic charts are similar to normal charts except for the fact that logarit
 
 ## Types
 
-FusionCharts Suite XT offers three types of logarithmic charts:
+FusionCharts Suite XT offers two types of logarithmic charts:
 
-* Log Column 2D Chart
+- Log Column 2D Chart
 
-* Log Line Chart
+- Log Line Chart
 
 ## Features
 
 The FusionCharts Suite XT log charts offer the following features:
 
-* You can select any positive base (apart from 1) for your logarithmic scale.
+- You can select any positive base (apart from 1) for your logarithmic scale.
 
-* Logarithmic y-scale can be inverted to show charts like ranking charts etc.
+- Logarithmic y-scale can be inverted to show charts like ranking charts etc.
 
-* Custom selection of y-axis lower and upper limits possible.
+- Custom selection of y-axis lower and upper limits possible.
 
-* Custom selection of minor divisional lines between any two major divisional lines.
+- Custom selection of minor divisional lines between any two major divisional lines.
 
 ## Log Column 2D Chart
 
@@ -34,15 +34,15 @@ As an example, we will create a log column 2D chart that compares the store foot
 
 To create a log column 2D chart follow the steps given below:
 
-* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+- In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a logarithmic chart, set `logmscolumn2d`.
+- Specify the chart type using the `type` attribute. To render a logarithmic chart, set `logmscolumn2d`.
 
-* Set the container object using `renderAt` attribute.
+- Set the container object using `renderAt` attribute.
 
-* Specify the dimension of the chart using `width` and `height` attributes.
+- Specify the dimension of the chart using `width` and `height` attributes.
 
-* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+- Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=LogMSColumn2D) page of log column 2D chart.
 

@@ -482,12 +482,10 @@ new FusionCharts({
   type: "timeseries",
   dataSource: {
     plotConfig: {
-			style: {
-				generic: {
-					connectNullData: " " //Set the value to `true` to connect null data
-				} //Style too be applied across the chart
-			}
-		}
+		generic: {
+			connectNullData: " " //Set the value to `true` to connect null data
+		} //Style too be applied across the chart
+	}
   }
 });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
