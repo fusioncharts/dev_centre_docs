@@ -161,7 +161,7 @@ You can set the cosmetic properties of all the parts of a time marker using fami
 
 The image below highlights the marker-box, marker-line, and the marker-notch of the time marker.
 
-<Image>
+<img src="{% site.BASE_URL %}/images/fusiontime-time-marker-components.png" alt="Time Axis" width="700" height="420">
 
 The image below highlights the time marker and the text of the time marker.
 
