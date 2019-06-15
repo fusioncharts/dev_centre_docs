@@ -1465,14 +1465,14 @@
               },
               {
                 "title": "Annotations",
-                "child": [
+                "children": [
                   {
                     "title": "Introduction to Annotations",
                     "path": "/chart-guide/chart-configurations/annotations/introduction-to-annotations"
                   },
                   {
                     "title": "Create Annotations",
-                    "child": [
+                    "children": [
                       {
                         "title": "Introduction",
                         "path": "/chart-guide/chart-configurations/annotations/creating-annotations/introduction"
