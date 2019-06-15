@@ -961,7 +961,7 @@ To create an annotation group, all you have to do is create each annotation item
 
 * Set the value of the `autoScale` attribute to `1`, to automatically scale the annotation group, if you resize a chart.
 
-* Set the value of the `scaleText` attribute to `1`, to automatically scale text annotations in the annotation group, if you resize a chart. 
+* Set the value of the `scaleText` attribute to `1`, to automatically scale text annotations in the annotation group, if you resize a chart.
 
 * Set the value of the `scaleImages` attribute to `1`, to automatically scale image annotations in the annotation group, if you resize a chart.
 
@@ -1141,7 +1141,7 @@ Use the following methods to dynamically create, manipulate, and delete annotati
 
 * Add an annotation item to a specified group, using the `addItem(groupId, options, drawImmediate)` method. 
 
-    * Use the `groupId` parameter to specify the id of the group, to which the annotation item will be added. If you leave this parameter` `unspecified, a new group will be created and the annotation item added to it.
+    * Use the `groupId` parameter to specify the id of the group, to which the annotation item will be added. If you leave this parameter unspecified, a new group will be created and the annotation item added to it.
 
     * Use the `options` parameter to define the characteristics of the annotation item to be added.
 
