@@ -6,8 +6,8 @@ heading: Create Annotations
 
 ## Prerequisites
 
-* Create a simple chart using FusionCharts Suite XT
-* Introduction to Annotations
+* [Create a simple chart using FusionCharts Suite XT](/getting-started/plain-javascript/your-first-chart-using-plain-javascript)
+* [Introduction to Annotations](/chart-guide/chart-configurations/annotations/introduction-to-annotations)
 
 FusionCharts Suite XT includes a wide range of charts, gauges, and maps that you can use to plot static as well as real-time data. Annotations, a compelling feature of the product, lets you make your charts self-descriptive and visually engaging.
 

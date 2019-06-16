@@ -6,11 +6,9 @@ heading: Create Image Annotations
 
 ## Prerequisites
 
-* Creating a simple chart using FusionCharts Suite XT
-
-* Introduction to annotations
-
-* Creating simple annotations
+* [Create a simple chart using FusionCharts Suite XT](/getting-started/plain-javascript/your-first-chart-using-plain-javascript)
+* [Introduction to Annotations](/chart-guide/chart-configurations/annotations/introduction-to-annotations)
+* [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-annotations)
 
 The column 2D charts with image annotations look like:
 
