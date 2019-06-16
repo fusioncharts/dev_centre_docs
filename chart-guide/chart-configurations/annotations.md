@@ -552,7 +552,7 @@ The code snippet to position the rectangle annotation is given below:
 {
     "chart": {
         ...
-    }
+    },
     "data": [{
         ...
     }],

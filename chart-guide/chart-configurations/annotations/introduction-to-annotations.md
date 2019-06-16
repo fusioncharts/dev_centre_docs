@@ -8,9 +8,7 @@ Annotations are user-defined objects or shapes drawn on a chart. You can use ann
 
 For a glimpse of how this feature works, look at the example shown below:
 
-Assume that Harry wants to compare sales of the top four chocolate brands at his SuperMart.
-
-A conventional column 2D chart used to show this data will look like the following:
+Assume that Harry wants to compare sales of the top four chocolate brands at his SuperMart. A conventional column 2D chart used to show this data will look like the following:
 
 {% embed_chart chart-configurations-annotations-example-1.js %}
 
@@ -72,4 +70,3 @@ Organizing annotations in groups is useful when you manipulate multiple annotati
     }
 }
 ```
-

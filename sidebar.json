@@ -1461,10 +1461,6 @@
               },
               {
                 "title": "Annotations",
-                "path": "/chart-guide/chart-configurations/annotations"
-              },
-              {
-                "title": "Annotations",
                 "children": [
                   {
                     "title": "Introduction to Annotations",
