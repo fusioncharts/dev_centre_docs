@@ -514,7 +514,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/an9hfrch/) to edit the above chart.
 
-## Positioning Annotations 
+## Positioning Annotations
 
 You can configure positions of annotations either during their creation or after rendering them on a chart/gauge. Position annotation items by setting the positioning attributes (`x`, `y`, `toX`, `toY`, `radius`, and so on) to the required coordinates.
 
