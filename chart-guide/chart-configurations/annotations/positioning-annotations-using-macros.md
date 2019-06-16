@@ -6,11 +6,9 @@ heading: Positioning Annotations Using Macros
 
 ## Prerequisites
 
-* Creating a simple chart using FusionCharts Suite XT
-
-* Introduction to annotations
-
-* Creating simple annotations
+- [Create a simple chart using FusionCharts Suite XT](/getting-started/plain-javascript/your-first-chart-using-plain-javascript)
+- [Introduction to Annotations](/chart-guide/chart-configurations/annotations/introduction-to-annotations)
+- [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-annotations)
 
 Annotation macros are predefined variables you can use to dynamically position individual annotation items. Since macros assume values at runtime, you can use them with all annotation positioning attributes. That way, you can position annotations relative to chart/gauge elements, such as caption, legend, etc. For example, for an annotation item, if you set `"x": "$captionStartX"`, `x` will take the value of the starting x-coordinate of the chart caption.
 
