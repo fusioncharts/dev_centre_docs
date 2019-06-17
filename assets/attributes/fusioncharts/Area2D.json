@@ -110,56 +110,64 @@
       },
       {
         "description": "This attribute allows you to rotate data values, if you opt to show them (using showValues attribute). By default, its value is set to 0.",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "rotateValues"
       },
       { 
-        "description": "Whether to show chart limit values. If not specified `showYAxisValues` attribute overrides this value.",
+        "description": "This attribute allows you to show/hide chart limit values. By default, its value is set to 0. If you do not specify this attribute, the `showYAxisValues` attribute will override it.",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "showLimits"
       },
       {
-        "description": "Whether to show div line values. If not specified `showYAxisValues` attribute overrides this value.",
+        "description": "This attribute allows you to show/hide div line values. By default, its value is set to 0. If you do not specify this attribute, the `showYAxisValues` attribute will override it.",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "showDivLineValues"
       },
       {
-        "description": "FusionCharts XT automatically tries to adjust divisional lines and limit values based on the data provided. However, if you want to set your explicit lower and upper limit values and number of divisional lines, first set this attribute to false. That will disable automatic adjustment of divisional lines.",
+        "description": "This attribute allows you to explicitly specify the number of divisional lines, as well as their lower and upper limit values, when you set its value to 0. By default, its value is set to 1, so that FusionCharts XT can automatically adjust divisional lines and limit values based on chart data.",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "adjustDiv"
       },
       {
-        "description": "The entire chart can now act as a hotspot. Use this URL to define the hotspot link for the chart. The link can be specified in FusionCharts Link format.",
+        "description": "This attribute allows you to specify a hotspot link for the chart, which turns the entire chart into a hotspot. You need to specify the link in the standard link format for FusionCharts.",
         "range": "",
         "type": "String",
         "name": "clickURL"
       },
       {
-        "description": "Sets whether the `clickURL` attribute (that sets a link to which the user is directed when the chart is clicked) overrides the `link` attribute (that sets a link to which the user is directed when a data plot is clicked). \n\nDefault value: 0 (`clickURL` does not override `link`)",
+        "description": "This attribute allows you to set whether the `clickURL` attribute overrides the `link` attribute (which lets you specify a link for data plots). By default, its value is set to 0, so that clickURLcannot override the link attribute.", 
+       "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.7.0",
         "name": "clickURLOverridesPlotLinks"
       },
       {
-        "description": "This attribute lets you set whether the y-axis lower limit will be 0 (in case of all positive values on chart) or should the y-axis lower limit adapt itself to a different figure based on values provided to the chart.",
+        "description": "This attribute allows you to specify whether the lower limit of the Y-axis should be 0, or adapt automatically to a different value based on data values of the chart. By default, its value is set to 0.",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "setAdaptiveYMin"
       },
       {
-        "description": "This attribute, when set to __1__, indicates to the chart that the text (rendered on the chart) may contain RTL characters and the textual display has to be managed accordingly. ",
+        "description": "This attribute allows you to specify whether the data values include RTL (Right to Left) characters, so that FusionCharts can manage the textual display accordingly. By default, its value is set to 0.",
+        "default value": "0",
         "range": "",
         "type": "Number",
         "versionsince": "3.7.0",
         "name": "hasRTLText"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "This attribute allows you to specify whether the context menu of the chart should include the Print Chart item. By default, its value is set to 0. Note that even if you hide the Print Chart item in the context menu, you can still invoke the `print()` JavaScript method to print the chart.",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -179,13 +187,14 @@
         "name": "labelBinSize"
       },
       {
-        "description": "This attribute changes the theme of the chart. There are 4 types of themes which have been made according to the different color combinations.",
-        "range": "‘carbon’, ‘fusion’, ‘ocean’, ‘zune’",
+        "description": "This attribute allows you to change the theme of the chart. FusionCharts offers several themes with different color combinations. By default, its value is set to fusion.",
+        "default value": "fusion",
+        "range": "fusion/gammel/candy/zune/ocean/carbon/umber",
         "type": "String",
         "name": "theme"
       }
     ],
-    "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. "
+    "description": "These attributes allow you to control a variety of functional elements of the chart. For example, you can opt to show/hide data labels and data values, set chart limits and extended properties, and so on."
   },
   {
     "table": "Chart Message-related Attributes",
