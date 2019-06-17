@@ -428,28 +428,159 @@ You can segregate attributes for annotation items into two types, common (which 
 
 <table>
     <tr>
-        <td>Attribute Name</td>
-        <td>Description</td>
+        <th>Attribute Name</th>
+        <th>Description</th>
     </tr>
     <tr>
-        <td>type</td>
+        <td>`type`</td>
         <td>Set it to polygon.</td>
     </tr>
     <tr>
-        <td>sides</td>
+        <td>`sides`</td>
         <td>Specifies the number of sides for the polygon. Its value must be greater than 2.</td>
     </tr>
     <tr>
-        <td>x</td>
+        <td>`x`</td>
         <td>Specifies the x coordinate of the center of the polygon with respect to the leftmost position (taken as zero) of the chart.</td>
     </tr>
     <tr>
-        <td>y</td>
+        <td>`y`</td>
         <td>Specifies the y coordinate of the center of the polygon with respect to the topmost position (taken as zero) of the chart.</td>
     </tr>
     <tr>
-        <td>radius</td>
+        <td>`radius`</td>
         <td>Specifies the radius of the edges of a polygon, in pixels.</td>
+    </tr>
+</table>
+
+### Text
+
+<table>    
+    <tr>
+        <th>`Attribute Name`</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>`type`</td>
+        <td>Set this attribute to text.</td>
+    </tr>
+    <tr>
+        <td>`text`</td>
+        <td>Specifies the text that is to be rendered as the annotation.</td>
+    </tr>
+    <tr>
+        <td>`x`</td>
+        <td>Specifies the x coordinate of the position of the text annotation with respect to the leftmost position (taken as zero) of the chart.</td>
+    </tr>
+    <tr>
+        <td>`y`</td>
+        <td>Specifies the y coordinate of the position of the text annotation with respect to the topmost position (taken as zero) of the chart.</td>
+    </tr>
+    <tr>
+        <td>`font`</td>
+        <td>Specifies the font family for the text annotation.</td>
+    </tr>
+    <tr>
+        <td>`fontSize`</td>
+        <td>Specifies the font size for the text annotation.</td>
+    </tr>
+    <tr>
+        <td>`align`</td>
+        <td>Specifies the horizontal alignment of the text annotation. This attribute takes left, center, and right as values. The default value is center.</td>
+    </tr>
+    <tr>
+        <td>`vAlign`</td>
+        <td>Specifies the vertical alignment of the text annotation. This attribute takes top, middle, and bottom as values. The default value is middle.</td>
+    </tr>
+    <tr>
+        <td>`bold`</td>
+        <td>Specifies whether the text will be in bold. Setting this attribute to 1 renders the text in bold, setting it to 0 (default) removes the bold formatting.</td>
+    </tr>
+    <tr>
+        <td>`italic`</td>
+        <td>Specifies whether the text will be in italic. Setting this attribute to 1 renders the text in italic, setting it to 0 (default) removes the italic formatting.</td>
+    </tr>
+    <tr>
+        <td>`bgColor`</td>
+        <td>Specifies the hex color code for the text annotation's background. For example, a value of #fcfc00 colors the background yellow.</td>
+    </tr>
+    <tr>
+        <td>`leftMargin`</td>
+        <td>Sets a fixed margin, in pixels, to the left of the text.</td>
+    </tr>
+    <tr>
+        <td>`rotateText`</td>
+        <td>Specifies whether the text annotation(s) will be rotated. This attribute takes 0(default), 1, left, and right as values.</td>
+    </tr>
+    <tr>
+        <td>`wrap`</td>
+        <td>Specifies whether text wrapping will be enabled. Setting this attribute to 1 will enable text wrapping, setting it to 0 (default) will disable it.</td>
+    </tr>
+    <tr>
+        <td>`wrapWidth`</td>
+        <td>Specifies the width wrapping dimension for the text. When this width is reached, it will cause the text to break into a new line. The toX and toY attributes can also be set on text if text wrapping dimensions are provided in absolute pixels from annotation group's origin coordinates.</td>
+    </tr>
+    <tr>
+        <td>`wrapHeight`</td>
+        <td>Like the wrapWidth attribute, this attribute applies to the height occupied by the text. Ellipses are appended to the end of text when text overflows beyond allocated vertical space of wrapHeight or toY attributes.</td>
+    </tr>
+</table>
+
+### Path
+
+<table>    
+    <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>`type`</td>
+        <td>Set this attribute to path.</td>
+    </tr>
+    <tr>
+        <td>`path`</td>
+        <td>Specifies the path command and accepts standard SVG path format. For example, the path command "M 10, 10, L 100, 100" signifies that we start drawing from the coordinate at (10,10) pixel using M ( Move to) command and draw a line up to the coordinate (100,100) pixel as specified by the L (Line to) command.</td>
+    </tr>
+    <tr>
+        <td>`x`</td>
+        <td>Specifies the x coordinate of the starting position of the path with respect to the leftmost position (taken as 0) of the chart.</td>
+    </tr>
+    <tr>
+        <td>`y`</td>
+        <td>Specifies the y coordinate of the starting position of the path with respect to the topmost position (taken as 0) of the chart.</td>
+    </tr>
+</table>
+
+### Iamges
+
+<table>
+    <tr>
+        <td>`Attribute`</td>
+        <td>Description</td>
+    </tr>
+    <tr>
+        <td>`type`</td>
+        <td>Set this attribute to image.</td>
+    </tr>
+    <tr>
+        <td>`url`</td>
+        <td>Specifies the location of the image file (jpeg, png, or gif) that is to be rendered on the chart. Chart rendering does not pause for the image to load and as such asynchronously draws them as and when they are loaded. In case you need to load them instantaneously, you may considering preloading the images.</td>
+    </tr>
+    <tr>
+        <td>`x`</td>
+        <td>Specifies the x coordinate of the starting position of the image annotation with respect to the leftmost position (taken as 0) of the chart.</td>
+    </tr>
+    <tr>
+        <td>`y`</td>
+        <td>Specifies the y coordinate of the starting position of the image annotation with respect to the topmost position (taken as 0) of the chart.</td>
+    </tr>
+    <tr>
+        <td>`xscale`</td>
+        <td>Specifies the resize value for the image width.</td>
+    </tr>
+    <tr>
+        <td>`yscale`</td>
+        <td>Specifies the resize value for the image height.</td>
     </tr>
 </table>
 
