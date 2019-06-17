@@ -1460,10 +1460,6 @@
                 "path": "/chart-guide/chart-configurations/legend"
               },
               {
-                "title": "Annotations",
-                "path": "/chart-guide/chart-configurations/annotations"
-              },
-              {
                 "title": "Tick Marks",
                 "path": "/chart-guide/chart-configurations/tick-marks"
               },
@@ -1482,6 +1478,60 @@
               {
                 "title": "Drill-down",
                 "path": "/chart-guide/chart-configurations/drill-down"
+              }
+            ]
+          },
+          {
+            "title": "Using Annotations",
+            "children": [
+              {
+                "title": "Introduction to Annotations",
+                "path": "/chart-guide/chart-configurations/annotations/introduction-to-annotations"
+              },
+              {
+                "title": "Create Annotations",
+                "children": [
+                  {
+                    "title": "Create Text Annotations",
+                    "path": "/chart-guide/chart-configurations/annotations/creating-annotations/create-text-annotations"
+                  },
+                  {
+                    "title": "Create Image Annotations",
+                    "path": "/chart-guide/chart-configurations/annotations/creating-annotations/create-image-annotations"
+                  },
+                  {
+                    "title": "Create Shape Annotations",
+                    "path": "/chart-guide/chart-configurations/annotations/creating-annotations/create-shape-annotations"
+                  },
+                  {
+                    "title": "Create Path Annotations",
+                    "path": "/chart-guide/chart-configurations/annotations/creating-annotations/create-path-annotations"
+                  }
+                ]
+              },
+              {
+                "title": "Positioning Annotations using Absolute Values",
+                "path": "/chart-guide/chart-configurations/annotations/positioning-annotations-using-absolute-values"
+              },
+              {
+                "title": "Positioning Annotations using Macros",
+                "path": "/chart-guide/chart-configurations/annotations/positioning-annotations-using-macros"
+              },
+              {
+                "title": "Grouping Annotations",
+                "path": "/chart-guide/chart-configurations/annotations/grouping-annotations"
+              },
+              {
+                "title": "Dynamically Control Annotations",
+                "path": "/chart-guide/chart-configurations/annotations/dynamically-control-annotations"
+              },
+              {
+                "title": "Real Life Use Cases",
+                "path": "/chart-guide/chart-configurations/annotations/real-life-use-cases"
+              },
+              {
+                "title": "Annotation References",
+                "path": "/chart-guide/chart-configurations/annotations/annotation-references"
               }
             ]
           },
