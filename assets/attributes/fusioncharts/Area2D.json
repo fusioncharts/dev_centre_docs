@@ -3,94 +3,106 @@
     "table": "Functional Attributes",
     "attrs": [
       {
-        "description": "This attribute gives you the option to control animation in your charts. If you do not want to animate any part of the chart, set this as 0.",
+        "description": "This attribute allows you to enable or disable animation in your charts. By default, its value is set to 0. If you want to animate your chart, set the value to 1.",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "animation"
       },
       {
-        "description": "This attribute sets the animation duration of the chart. `animationDuration` attribute is applicable only if animation of the chart is enabled. \n\nDefault value: 1 sec",
+        "description": "This attribute allows you to set the duration of animation for a chart. By default, its value is set to 1 second. Note that this attribute is only applicable if you have enabled animation for your chart.",
+        "default value": "1 second",
         "range": "In seconds",
         "type": "Number",
         "Versionsince": "3.11.0",
         "name": "animationDuration"
       },
       {
-        "description": "FusionCharts XT uses the concept of Color Palettes. Each chart has 5 pre-defined color palettes which you can choose from. Each palette renders the chart in a different color theme. ",
+        "description": "FusionCharts XT uses the concept of color palettes. You can choose one of 5 pre-defined palettes for any chart you build, to render the chart with specific colors.",
         "range": "1-5",
         "type": "Number",
         "name": "palette"
       },
       {
-        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (i.e., column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., `&quot;paletteColors&quot;: &quot;#FF0000, #0372AB, #FF5904...&quot;`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
-        "range": "List of hex color codes separated by comma",
+        "description": "While the `palette` attribute allows you to apply a theme to a chart, it only applies to chart background, canvas, font, and tooltips. The `paletteColors` attribute, on the other hand, allows you to specify a custom comma-separated list of hex color codes for the data items. You can mention this list globally, to apply the custom hex codes to all your charts.",
+        "range": "Comma-separated list of hex color codes",
         "type": "String",
         "name": "paletteColors"
       },
       {
-        "description": "This attribute lets you control whether empty data sets in your data will be connected to each other OR do they appear as broken data sets.",
+        "description": "This attribute allows you control whether empty data sets in your data will be connected to each other. By default, its value is set to 1. If you set the value to 0, your charts will show empty spaces where no data value is present.",
+        "default value": "1",
         "range": "0/1",
         "type": "Boolean",
         "name": "connectNullData"
       },
       {
-        "description": "It sets the configuration whether the x-axis labels will be displayed or not.",
+        "description": "This attribute allows you to display/hide X-axis labels. By default, its value is set to 1",
+        "default value": "1",
         "range": "0/1",
         "type": "Boolean",
         "name": "showLabels"
       },
       {
-        "description": "This attribute can be used to set the maximum height for the x-axis labels (data labels) excluding the x-axis title. If any label goes beyond this height, the label will be truncated. In stagger mode, the number of stagger lines will be reduced if they exceed this value.",
-        "range": "In Pixels",
+        "description": "This attribute allows you to set the maximum height for X-axis data labels (excluding the X-axis title). If any label stretches beyond this height, it is truncated. In STAGGER mode (set using labelDisplay attribute), the number of stagger lines are reduced if they exceed this value.",
+        "range": "values in pixels",
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "maxLabelHeight"
       },
       {
-        "description": "Using this attribute, you can customize the alignment of data labels (x-axis labels). There are 5 options: AUTO, WRAP, STAGGER, ROTATE or NONE. By default, this attribute is set to AUTO mode which means that the alignment of the data labels is determined automatically depending on the size of the chart. WRAP wraps the label text if it is too long to fit in one line. ROTATE rotates the labels vertically. STAGGER divides the labels into multiple lines.",
+        "description": "This attribute allows you to customize the alignment of data labels on the X-axis as: AUTO, WRAP, STAGGER, ROTATE, or NONE. By default, its value is set to AUTO. For further details, click [here](/chart-guide/chart-configurations/data-labels#data-label-display-modes)",
+        "default value": "AUTO",
         "range": "'AUTO', 'WRAP', 'STAGGER', 'ROTATE', 'NONE'",
         "type": "String",
         "name": "labelDisplay"
       },
       {
-        "description": "When enabled in auto mode, long data labels are truncated by adding ellipses to prevent them from overflowing the chart background. The default value is 1.",
+        "description": "This attribute allows you to truncate long data labels by adding ellipses at the end, when you enable it in AUTO mode (set using labelDisplay attribute). This prevents data labels from overflowing the chart background. By default, its value is set to 1.",
+        "default value": "1",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.2.1",
         "name": "useEllipsesWhenOverflow"
       },
       {
-        "description": "This attribute lets you set whether the data labels will show up as rotated labels on the chart.",
+        "description": "This attribute allows you to set whether the data labels should be rotated before they are displayed on the chart.",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "rotateLabels"
       },
       {
-        "description": "If you've opted to show rotated labels on chart, this attribute lets you set the configuration whether the labels will show as slanted labels or fully vertical ones.",
+        "description": "This attribute allows you set whether data labels should be displayed in slanted/vertical manner, when you show rotated labels on a chart (using rotateLabels attribute). By default, its value is set to 0",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "slantLabels"
       },
       {
-        "description": "By default, all the labels are displayed on the chart. However, if you've a set of streaming data (like name of months or days of week), you can opt to show every n-th label for better clarity. This attribute just lets you do so. When a value greater than 1 (n) is set to this attribute, the first label from left and every label at the n-th position from left will be displayed. e.g., a chart showing data for 12 months and set with `labelStep: 3` will show labels for January, April, July, and October. The rest of the labels will be skipped.",
+        "description": "By default, all the labels are displayed on the chart. However, if you have a set of streaming data (like names of months or days of week), the labelStep attribute allows you to display every n-th label, to make the chart look tidier.",
+        "default value": "0",
         "range": "1 or above",
         "type": "Number",
         "name": "labelStep"
       },
       {
-        "description": "If you've opted for STAGGER mode as `labelDisplay`, using this attribute you can control how many lines to stagger the label to. By default, all labels are displayed in a single line.",
+        "description": "If you set STAGGER mode for data labels (using the labelDisplay attribute), the staggerLines attribute allows you to control the number of lines the data labels should be staggered to. By default, all labels are displayed in a single line.",
+        "default value": "0",
         "range": "2 or above",
         "type": "Number",
         "name": "staggerLines"
       },
       {
-        "description": "Sets the configuration whether data values will be displayed along with the data plot on chart.",
+        "description": "This attribute allows you to set whether data values should be displayed along with the data plot in the chart.",
+        "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "showValues"
       },
       {
-        "description": "If you've opted to show data values on the chart, this attribute lets you adjust the vertical alignment of data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of each data value is determined automatically based on the position of each plot point. In ABOVE mode, data values are displayed above the plot points unless a plot point is too close to the upper edge of the canvas while in BELOW mode, data values are displayed below the plot points unless a plot point is too close to the lower edge of the canvas.",
+        "description": "If you show data values on the chart (using showValues attribute), the valuePosition attribute allows you to adjust the vertical alignment of data values with respect to data plots. By default, this attribute is set to AUTO mode. For further details, click [here](/chart-guide/chart-configurations/data-values)",
+        "default value": "AUTO",
         "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
         "type": "String",
         "versionsince": "3.2",
@@ -2134,7 +2146,7 @@
     "table": "Attributes for Exporting Charts",
     "attrs": [
       {
-        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLS.  \n\n__Default value__: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "exportEnabled"
@@ -2170,7 +2182,7 @@
         "name": "exportShowMenuItem"
       },
       {
-        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
+        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
         "range": "'_self' or '_blank'",
         "type": "String",
         "name": "exportTargetWindow"
@@ -2182,7 +2194,7 @@
         "name": "exportFileName"
       }
     ],
-    "description": "These attributes allow you to control the saving of chart as image, SVG or XLSX."
+    "description": "These attributes allow you to control the saving of chart as image, SVG or XLS."
   },
   {
     "table": "Data Plot Hover Effects",
