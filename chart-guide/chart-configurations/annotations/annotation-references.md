@@ -105,91 +105,91 @@ These attributes are defined using the code structure shown below:
         <td>Specifies whether the annotation group will automatically scale, if chart dimensions change. Setting this attribute to 0 disables the automatic scaling of the group, setting it to 1 (default) enables it.</td>
     </tr>
     <tr>
-        <td>scaleText</td>
+        <td>`scaleText`</td>
         <td>Specifies whether text annotations in an annotation group will automatically scale, if chart dimensions change. Setting this attribute to 0 (default) disables the automatic scaling of text annotations, setting it to 1 enables it.</td>
     </tr>
     <tr>
-        <td>scaleImages</td>
+        <td>`scaleImages`</td>
         <td>Specifies whether image annotations in an annotation group will automatically scale, if chart dimensions change. Setting this attribute to 0 (default) disables the automatic scaling of image annotations, setting it to 1 enables it.</td>
     </tr>
     <tr>
-        <td>constrainedScale</td>
+        <td>`constrainedScale`</td>
         <td>Specifies whether annotations will retain their aspect ratio (the height:width ratio) when scaled. Setting this attribute to 0 will disable constrained scaling, setting it to 1 (default) will enable it.</td>
     </tr>
     <tr>
-        <td>showBelow</td>
+        <td>`showBelow`</td>
         <td>Specifies whether the annotation group will overlap the data plots. Setting this attribute to 0 will enable the group to overlap, setting it to 1 (default) will disable it.</td>
     </tr>
     <tr>
-        <td>origW</td>
+        <td>`origW`</td>
         <td>Specifies the original width of the chart, in which the annotation renders as intended. It is used as the reference width while automatically scaling annotations, in the event that a chart is resized.</td>
     </tr>
     <tr>
-        <td>origH</td>
+        <td>`origH`</td>
         <td>Specifies the original height of chart, in which the annotation renders as intended. It is used as the reference height while automatically scaling annotations, in the event that a chart is resized.</td>
     </tr>
     <tr>
-        <td>xShift</td>
+        <td>`xShift`</td>
         <td>The value of this attribute is added to the x coordinate position value of the final annotation items on the x-axis. In other words, if an annotation is placed at 100 pixels left and the value of xShift is set to 50, then the effective value of the x coordinate for the annotation adds up to 150 pixels. When applying scaling, the value of this attribute is included within the scale factor.</td>
     </tr>
     <tr>
-        <td>yShift</td>
+        <td>`yShift`</td>
         <td>Like the xShift attribute, this attribute applies to the y-axis.</td>
     </tr>
     <tr>
-        <td>grpXShift</td>
+        <td>`grpXShift`</td>
         <td>Shifts all annotation groups along the x coordinate. The difference between xShift and this attribute is that, during scaling, xShift is included within the scale factor whereas grpXShift is excluded.</td>
     </tr>
     <tr>
-        <td>grpYShift</td>
+        <td>`grpYShift`</td>
         <td>Like the grpXShift attribute, this attribute applies to the y-axis.</td>
     </tr>
     <tr>
-        <td>alpha</td>
+        <td>`alpha`</td>
         <td>Specifies the transparency for the group. This attribute takes values between 0 (transparent) and 100 (opaque, default).</td>
     </tr>
     <tr>
-        <td>visible</td>
+        <td>`visible`</td>
         <td>Specifies the visibility of the group. Setting this value to 0 hides the group, setting it to 1 (default) shows it.</td>
     </tr>
     <tr>
-        <td>showShadow</td>
+        <td>`showShadow`</td>
         <td>Specifies whether a shadow effect will be shown for the annotation group. Setting this attribute to 1 shows the effect, setting it 0 (default) does not show the effect.</td>
     </tr>
     <tr>
-        <td>color</td>
+        <td>`color`</td>
         <td>Specifies the hex color code for the annotation group.</td>
     </tr>
     <tr>
-        <td>font</td>
+        <td>`font`</td>
         <td>Specifies the font family for the text annotation(s) in the annotation group.</td>
     </tr>
     <tr>
-        <td>fontSize</td>
+        <td>`fontSize`</td>
         <td>Specifies the font size for the text annotation(s).</td>
     </tr>
     <tr>
-        <td>textAlign</td>
+        <td>`textAlign`</td>
         <td>Specifies the horizontal alignment for the text annotation(s).</td>
     </tr>
     <tr>
-        <td>textVAlign</td>
+        <td>`textVAlign`</td>
         <td>Specifies the vertical alignment for the text annotation(s).</td>
     </tr>
     <tr>
-        <td>rotateText</td>
+        <td>`rotateText`</td>
         <td>Specifies whether the text annotation(s) will be rotated. This attribute takes 0(default), 1, left, and right as values.</td>
     </tr>
     <tr>
-        <td>wrapText</td>
+        <td>`wrapText`</td>
         <td>Specifies whether words that are too long to fit in a line should be wrapped to the next line. Setting this attribute to 0 disables wrapping of text, setting it to 1(default) enables it.</td>
     </tr>
     <tr>
-        <td>link</td>
+        <td>`link`</td>
         <td>Specifies the URL to which the user will be redirected, if the annotation group is clicked.</td>
     </tr>
     <tr>
-        <td>toolText</td>
+        <td>`toolText`</td>
         <td>Specifies the tooltip for the annotation group.</td>
     </tr>
 </table>
