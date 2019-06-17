@@ -37,7 +37,7 @@
         "name": "connectNullData"
       },
       {
-        "description": "This attribute allows you to display/hide X-axis labels. By default, its value is set to 1",
+        "description": "This attribute allows you to display/hide X-axis labels. By default, its value is set to 1.",
         "default value": "1",
         "range": "0/1",
         "type": "Boolean",
@@ -51,7 +51,7 @@
         "name": "maxLabelHeight"
       },
       {
-        "description": "This attribute allows you to customize the alignment of data labels on the X-axis as: AUTO, WRAP, STAGGER, ROTATE, or NONE. By default, its value is set to AUTO. For further details, click [here](/chart-guide/chart-configurations/data-labels#data-label-display-modes)",
+        "description": "This attribute allows you to customize the alignment of data labels on the X-axis as: AUTO, WRAP, STAGGER, ROTATE, or NONE. By default, its value is set to AUTO. For further details, click [here](/chart-guide/chart-configurations/data-labels#data-label-display-modes).",
         "default value": "AUTO",
         "range": "'AUTO', 'WRAP', 'STAGGER', 'ROTATE', 'NONE'",
         "type": "String",
@@ -73,7 +73,7 @@
         "name": "rotateLabels"
       },
       {
-        "description": "This attribute allows you set whether data labels should be displayed in slanted/vertical manner, when you show rotated labels on a chart (using rotateLabels attribute). By default, its value is set to 0",
+        "description": "This attribute allows you set whether data labels should be displayed in slanted/vertical manner, when you show rotated labels on a chart (using rotateLabels attribute). By default, its value is set to 0.",
         "default value": "0",
         "range": "0/1",
         "type": "Boolean",
@@ -94,27 +94,27 @@
         "name": "staggerLines"
       },
       {
-        "description": "This attribute allows you to set whether data values should be displayed along with the data plot in the chart.",
+        "description": "This attribute allows you to set whether data values should be displayed along with the data plot in the chart. By default, its value is set to 0.",
         "default value": "0",
         "range": "0/1",
         "type": "Boolean",
         "name": "showValues"
       },
       {
-        "description": "If you show data values on the chart (using showValues attribute), the valuePosition attribute allows you to adjust the vertical alignment of data values with respect to data plots. By default, this attribute is set to AUTO mode. For further details, click [here](/chart-guide/chart-configurations/data-values)",
+        "description": "If you show data values on the chart (using showValues attribute), the valuePosition attribute allows you to adjust the vertical alignment of data values with respect to data plots. By default, this attribute is set to AUTO mode. For further details, click [here](/chart-guide/chart-configurations/data-values).",
         "default value": "AUTO",
-        "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
+        "range": "AUTO/ABOVE/BELOW",
         "type": "String",
         "versionsince": "3.2",
         "name": "valuePosition"
       },
       {
-        "description": "If you've opted to show data values, you can rotate them using this attribute.",
+        "description": "This attribute allows you to rotate data values, if you opt to show them (using showValues attribute). By default, its value is set to 0.",
         "range": "0/1",
         "type": "Boolean",
         "name": "rotateValues"
       },
-      {
+      { 
         "description": "Whether to show chart limit values. If not specified `showYAxisValues` attribute overrides this value.",
         "range": "0/1",
         "type": "Boolean",
