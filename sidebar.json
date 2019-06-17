@@ -1492,10 +1492,6 @@
                 "title": "Create Annotations",
                 "children": [
                   {
-                    "title": "Create Annotations",
-                    "path": "/chart-guide/chart-configurations/annotations/creating-annotations/create-annotations"
-                  },
-                  {
                     "title": "Create Text Annotations",
                     "path": "/chart-guide/chart-configurations/annotations/creating-annotations/create-text-annotations"
                   },

@@ -8,7 +8,6 @@ heading: Create Shape Annotations
 
 * [Create a simple chart using FusionCharts Suite XT](/getting-started/plain-javascript/your-first-chart-using-plain-javascript)
 * [Introduction to Annotations](/chart-guide/chart-configurations/annotations/introduction-to-annotations)
-* [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-annotations)
 
 You can draw annotations in any of the following shapes using FusionCharts Suite XT:
 

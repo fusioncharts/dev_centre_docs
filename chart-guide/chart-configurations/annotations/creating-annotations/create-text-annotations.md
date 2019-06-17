@@ -8,7 +8,6 @@ heading: Create Text Annotations
 
 * [Create a simple chart using FusionCharts Suite XT](/getting-started/plain-javascript/your-first-chart-using-plain-javascript)
 * [Introduction to Annotations](/chart-guide/chart-configurations/annotations/introduction-to-annotations)
-* [Creating simple annotations](/chart-guide/chart-configurations/annotations/creating-annotations/create-annotations)
 
 You can use text annotations to add notes, labels, or any other contextual text information that you may want to make available to your users.
 

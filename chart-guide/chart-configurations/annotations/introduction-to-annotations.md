@@ -70,3 +70,75 @@ Organizing annotations in groups is useful when you manipulate multiple annotati
     }
 }
 ```
+
+## Use Objects to Create Annotations
+
+Use the following objects to create annotations:
+
+* `annotations` is an object that encompasses all the code for generating annotations.
+
+* `groups` is an object array that consolidates multiple annotations into one group. You can create multiple annotation groups for one chart. This is useful when you need to create a complex graphic using individual annotation items.
+
+* `items` is an object array that defines individual annotation items contained in one annotation group.
+
+## Add Different types of Annotations
+
+You can add the following types of annotations to your chart:
+
+- [Text](/chart-guide/chart-configurations/annotations/creating-annotations/create-text-annotations) (custom notes, labels, or paragraphs of text)
+
+- [Image](/chart-guide/chart-configurations/annotations/creating-annotations/create-image-annotations) (external images)
+
+- [Shapes](/chart-guide/chart-configurations/annotations/creating-annotations/create-shape-annotations) (rectangle, polygon, circle, arc, and line)
+
+- [Path](/chart-guide/chart-configurations/annotations/creating-annotations/create-path-annotations)
+
+Refer to the basic JSON structure to create annotations, given below:
+
+```json
+{
+    "chart": {
+        ...
+    },
+    "data": [{
+        ...
+    }],
+    "annotations": {
+        "groups": [{
+            //Annotation group 1
+            //Define a unique identification string for the group.
+            "items": [
+                //Define individual annotation items.
+                { <<-- Annotation Item 1 -->> },
+                { <<-- Annotation Item 2 -->> },
+                ...
+                { <<-- Annotation Item n -->> }
+            ]
+        }, {
+            //Annotation group 2
+            //Define a unique identification string for the group.
+            "items": [
+                //Define individual annotation items.
+                { <<-- Annotation Item 1 -->> },
+                { <<-- Annotation Item 2 -->> },
+                ...
+                { <<-- Annotation Item n -->> }
+            ]
+        }, {
+            //Annotation group n
+            //Define a unique identification string for the group.
+            "items": [
+                //Define individual annotation items.
+                { <<-- Annotation Item 1 -->> },
+                { <<-- Annotation Item 2 -->> },
+                ...
+                { <<-- Annotation Item n -->> }
+            ]
+        }]
+    }
+}
+```
+
+The image of a chart rendered with different types of annotation items is shown below:
+
+![Annotations](/images/chart-configurations-annotations-image-1.jpg)
