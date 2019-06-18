@@ -222,7 +222,7 @@ You can segregate attributes for annotation items into two types, common (which 
     </tr>
     <tr>
         <td>`fillColor`</td>
-        <td>Specifies a list of hex color codes, if the group has to be rendered with a gradient effect. For example, "fillColor": "#ffcc66,#2deaff,#a6992a". This attribute is not applicable to the line, text, and image annotations</td>
+        <td>Specifies a list of hex color codes, if the group has to be rendered with a gradient effect. For examplqe, "fillColor": "#ffcc66,#2deaff,#a6992a". This attribute is not applicable to the line, text, and image annotations</td>
     </tr>
     <tr>
         <td>`fillAlpha`</td>
