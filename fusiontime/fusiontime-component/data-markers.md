@@ -18,8 +18,6 @@ To create data markers, follow the steps given below:
 
 - Create a `dataMarker` object in the `dataSource`.
 
-- Within the `dataMarker` object use the `series` attribute to specify the exact name of the series, against which the data marker will be displayed. If you need to mention the exact name of the series as a combination of a series name and a measure name, then specify it in the format `<series_name>-<measure_name>`.
-
 - Within the `dataMarker` object use the `time` attribute to set the time instance on which the data marker will be displayed.
 
 - Within the `dataMarker` object use the `timeFormat` attribute to set the format of the date/time corresponding to the marker.
