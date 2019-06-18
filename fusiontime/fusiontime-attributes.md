@@ -1068,7 +1068,7 @@ List of predefined date/time format is given below:
 	</tr>
 	<tr>
 		<td>`%%`</td>
-		<td>A literal percent sign (%)</td>
+		<td>A literal percent sign (%). <strong>This token might seem useless, but remember that the tokens reserve the % symbol for their own use. This token acts as an escape character to literally allow a % symbol in a date string.</strong></td>
 	</tr>
 </table>
 
@@ -1085,3 +1085,4 @@ unitDefaultFormats = {
   Millisecond: "%b %d, %Y %H:%M:%S:%L" // Jan 01, 2018 23:34:26:123
 };
 ```
+
