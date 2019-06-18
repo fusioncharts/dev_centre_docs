@@ -94,7 +94,7 @@
         "name": "hasRTLText"
       },
       {
-        "description": "This attribute changes the theme of the chart. There are 4 types of themes which have been made according to the different color combinations.",
+        "description": "This attribute changes the theme of the chart. There are 7 types of themes which have been made according to the different color combinations.",
         "range": "'fusion', 'gammel', 'candy', 'ocean', 'zune', 'carbon', 'umber'",
         "type": "String",
         "name": "theme"
