@@ -1103,4 +1103,3 @@ To handle the above cases, the padding modifiers are listed below:
 | `0` (Zero)       | Zero padding (For example, **12/2/2018**)   |
 
 > The paddings are always placed after every token's % symbol. The default value padding of the date/time format of a time-series chart is `0`.
-
