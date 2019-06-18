@@ -3,42 +3,38 @@
     "table": "Functional Attributes",
     "attrs": [
       {
-        "description": "This attribute allows you to enable or disable animation in your charts. By default, its value is set to 0. If you want to animate your chart, set the value to 1.",
-        "default value": "0",
+        "description": "This attribute allows you to enable or disable animation in your charts. If you want to animate your chart, set the value to 1. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "animation"
       },
       {
-        "description": "This attribute allows you to set the duration of animation for a chart. By default, its value is set to 1 second. Note that this attribute is only applicable if you have enabled animation for your chart.",
-        "default value": "1 second",
+        "description": "This attribute allows you to set the duration of animation for a chart. Note that this attribute is only applicable if you have enabled animation for your chart. \n\nDefault value: 1 second",
         "range": "In seconds",
         "type": "Number",
         "Versionsince": "3.11.0",
         "name": "animationDuration"
       },
       {
-        "description": "FusionCharts XT uses the concept of color palettes. You can choose one of 5 pre-defined palettes for any chart you build, to render the chart with specific colors.",
+        "description": "FusionCharts XT uses the concept of color palettes. You can choose one of the pre-defined palettes for any chart you build, to render the chart with specific colors.",
         "range": "1-5",
         "type": "Number",
         "name": "palette"
       },
       {
-        "description": "While the `palette` attribute allows you to apply a theme to a chart, it only applies to chart background, canvas, font, and tooltips. The `paletteColors` attribute, on the other hand, allows you to specify a custom comma-separated list of hex color codes for the data items. You can mention this list globally, to apply the custom hex codes to all your charts.",
+        "description": "While the `palette` attribute allows you to apply a theme to a chart, it only applies to chart background, canvas, font, and tooltips. The `paletteColors` attribute, on the other hand, allows you to specify a custom comma-separated list of hex color codes for the data items. You can mention this list globally, to apply the custom hex codes to all your charts. For further details, click [here](/chart-guide/chart-configurations/data-plot#color-different-data-plots)",
         "range": "Comma-separated list of hex color codes",
         "type": "String",
         "name": "paletteColors"
       },
       {
-        "description": "This attribute allows you control whether empty data sets in your data will be connected to each other. By default, its value is set to 1. If you set the value to 0, your charts will show empty spaces where no data value is present.",
-        "default value": "1",
+        "description": "This attribute allows you control whether empty data sets in your data will be connected to each other. If you set the value to 0, your charts will show empty spaces where no data value is present. \n\nDefault value: 1",
         "range": "0/1",
         "type": "Boolean",
         "name": "connectNullData"
       },
       {
-        "description": "This attribute allows you to display/hide X-axis labels. By default, its value is set to 1.",
-        "default value": "1",
+        "description": "This attribute allows you to display/hide X-axis labels. \n\nDefault value: 1",
         "range": "0/1",
         "type": "Boolean",
         "name": "showLabels"
@@ -51,87 +47,75 @@
         "name": "maxLabelHeight"
       },
       {
-        "description": "This attribute allows you to customize the alignment of data labels on the X-axis as: AUTO, WRAP, STAGGER, ROTATE, or NONE. By default, its value is set to AUTO. For further details, click [here](/chart-guide/chart-configurations/data-labels#data-label-display-modes).",
-        "default value": "AUTO",
-        "range": "'AUTO', 'WRAP', 'STAGGER', 'ROTATE', 'NONE'",
+        "description": "This attribute allows you to customize the alignment of data labels on the X-axis as: AUTO, WRAP, STAGGER, ROTATE, or NONE. For further details, click [here](/chart-guide/chart-configurations/data-labels#data-label-display-modes). \n\nDefault value: AUTO",
+        "range": "AUTO/WRAP/STAGGER/ROTATE/NONE",
         "type": "String",
         "name": "labelDisplay"
       },
       {
-        "description": "This attribute allows you to truncate long data labels by adding ellipses at the end, when you enable it in AUTO mode (set using labelDisplay attribute). This prevents data labels from overflowing the chart background. By default, its value is set to 1.",
-        "default value": "1",
+        "description": "This attribute allows you to truncate long data labels by adding ellipses at the end, when you enable it in AUTO mode (set using labelDisplay attribute). This prevents data labels from overflowing the chart background. \n\nDefault value: 1",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.2.1",
         "name": "useEllipsesWhenOverflow"
       },
       {
-        "description": "This attribute allows you to set whether the data labels should be rotated before they are displayed on the chart.",
-        "default value": "0",
+        "description": "This attribute allows you to set whether the data labels should be rotated before they are displayed on the chart. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "rotateLabels"
       },
       {
-        "description": "This attribute allows you set whether data labels should be displayed in slanted/vertical manner, when you show rotated labels on a chart (using rotateLabels attribute). By default, its value is set to 0.",
-        "default value": "0",
+        "description": "This attribute allows you set whether data labels should be displayed in slanted/vertical manner, when you show rotated labels on a chart (using rotateLabels attribute). \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "slantLabels"
       },
       {
-        "description": "By default, all the labels are displayed on the chart. However, if you have a set of streaming data (like names of months or days of week), the labelStep attribute allows you to display every n-th label, to make the chart look tidier.",
-        "default value": "0",
+        "description": "By default, all the labels are displayed on the chart. However, if you have a set of streaming data (like names of months or days of week), the labelStep attribute allows you to display every n-th label, to make the chart look tidier. \n\nDefault value: 0",
         "range": "1 or above",
         "type": "Number",
         "name": "labelStep"
       },
       {
-        "description": "If you set STAGGER mode for data labels (using the labelDisplay attribute), the staggerLines attribute allows you to control the number of lines the data labels should be staggered to. By default, all labels are displayed in a single line.",
-        "default value": "0",
+        "description": "If you set STAGGER mode for data labels (using the labelDisplay attribute), the staggerLines attribute allows you to control the number of lines the data labels should be staggered to. For further details, click [here](/chart-guide/chart-configurations/data-labels#staggered-mode-with-stagger-lines). \n\nDefault value: 0",
         "range": "2 or above",
         "type": "Number",
         "name": "staggerLines"
       },
       {
-        "description": "This attribute allows you to set whether data values should be displayed along with the data plot in the chart. By default, its value is set to 0.",
-        "default value": "0",
+        "description": "This attribute allows you to set whether data values should be displayed along with the data plot in the chart. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "showValues"
       },
       {
-        "description": "If you show data values on the chart (using showValues attribute), the valuePosition attribute allows you to adjust the vertical alignment of data values with respect to data plots. By default, this attribute is set to AUTO mode. For further details, click [here](/chart-guide/chart-configurations/data-values).",
-        "default value": "AUTO",
+        "description": "If you show data values on the chart (using showValues attribute), the valuePosition attribute allows you to adjust the vertical alignment of data values with respect to data plots. For further details, click [here](/chart-guide/chart-configurations/data-values). \n\nDefault value: AUTO",
         "range": "AUTO/ABOVE/BELOW",
         "type": "String",
         "versionsince": "3.2",
         "name": "valuePosition"
       },
       {
-        "description": "This attribute allows you to rotate data values, if you opt to show them (using showValues attribute). By default, its value is set to 0.",
-        "default value": "0",
+        "description": "This attribute allows you to rotate data values, if you opt to show them (using showValues attribute). \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "rotateValues"
       },
       { 
-        "description": "This attribute allows you to show/hide chart limit values. By default, its value is set to 0. If you do not specify this attribute, the `showYAxisValues` attribute will override it.",
-        "default value": "0",
+        "description": "This attribute allows you to show/hide chart limit values. By default, its value is set to 0. If you do not specify this attribute, the `showYAxisValues` attribute will override it. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "showLimits"
       },
       {
-        "description": "This attribute allows you to show/hide div line values. By default, its value is set to 0. If you do not specify this attribute, the `showYAxisValues` attribute will override it.",
-        "default value": "0",
+        "description": "This attribute allows you to show/hide div line values. If you do not specify this attribute, the `showYAxisValues` attribute will override it. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "showDivLineValues"
       },
       {
-        "description": "This attribute allows you to explicitly specify the number of divisional lines, as well as their lower and upper limit values, when you set its value to 0. By default, its value is set to 1, so that FusionCharts XT can automatically adjust divisional lines and limit values based on chart data.",
-        "default value": "0",
+        "description": "This attribute allows you to explicitly specify the number of divisional lines, as well as their lower and upper limit values, when you set its value to 0. By default, its value is set to 1. For further details, click [here](/chart-guide/chart-configurations/div-lines-and-grids#customize-the-number-of-divisional-lines). \n\nDefault value: 1",
         "range": "0/1",
         "type": "Boolean",
         "name": "adjustDiv"
@@ -143,52 +127,47 @@
         "name": "clickURL"
       },
       {
-        "description": "This attribute allows you to set whether the `clickURL` attribute overrides the `link` attribute (which lets you specify a link for data plots). By default, its value is set to 0, so that clickURLcannot override the link attribute.", 
-       "default value": "0",
+        "description": "This attribute allows you to set whether the `clickURL` attribute overrides the `link` attribute (which lets you specify a link for data plots). \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.7.0",
         "name": "clickURLOverridesPlotLinks"
       },
       {
-        "description": "This attribute allows you to specify whether the lower limit of the Y-axis should be 0, or adapt automatically to a different value based on data values of the chart. By default, its value is set to 0.",
-        "default value": "0",
+        "description": "This attribute allows you to specify whether the lower limit of the Y-axis should be 0, or adapt automatically to a different value based on data values of the chart. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "setAdaptiveYMin"
       },
       {
-        "description": "This attribute allows you to specify whether the data values include RTL (Right to Left) characters, so that FusionCharts can manage the textual display accordingly. By default, its value is set to 0.",
-        "default value": "0",
-        "range": "",
+        "description": "This attribute allows you to specify whether the data values include RTL (Right to Left) characters, so that FusionCharts can manage the textual display accordingly. \n\nDefault value: 0",
+        "range": "0/1",
         "type": "Number",
         "versionsince": "3.7.0",
         "name": "hasRTLText"
       },
       {
-        "description": "This attribute allows you to specify whether the context menu of the chart should include the Print Chart item. By default, its value is set to 0. Note that even if you hide the Print Chart item in the context menu, you can still invoke the `print()` JavaScript method to print the chart.",
-        "default value": "0",
+        "description": "This attribute allows you to specify whether the context menu of the chart should include the Print Chart item. By default, its value is set to 0. Note that even if you hide the Print Chart item in the context menu, you can still invoke the `print()` JavaScript method to print the chart. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
       },
       {
-        "description": "This attribute is used to skip the data plot without any change in visualization. When set to `1`, minimum one data plot will be rendered within the width of one pixel. \n\n Example, if `plotBinSize: 1`, minimum one column plot will be rendered within the width of one pixel. For line and area charts, minimum of two anchors connecting one single line will be drawn. If `plotBinSize: 0.5`, minimum two column plot will be rendered within the width of one pixel. Data skipping can be disabled by setting this attribute to `0`. \n\n Default value: __0.5__",
-        "range": "In Pixels",
+        "description": "This allows you to skip data plots in long data sets, to render a single unit of a plot (such as a column) rendered within a predefined space. You can disable data plot skipping by setting the value of plotBinSize to 0. For further details, click [here](/chart-guide/standard-charts/line-area-and-column-charts#data-skipping). \n\nDefault value: 0.5",
+        "range": "in pixels",
         "type": "Number",
         "versionsince": "3.12.0",
         "name": "plotBinSize"
       },
       {
-        "description": "This attribute is used to skip the labels of the data plots. When set to `1`, minimum one label will be displayed within the width of one pixel. To disable this label skipping, set this attribute to `0`. \n\nDefault value: __1__",
-        "range": "In Pixels",
+        "description": "This attribute allows you to skip the labels of the data plots. By default, its value is set to 1, which means a single label is displayed within the space of 1 pixel.  You can disable data plot skipping by setting the value of labelBinSize to 0. For further details, click [here](/chart-guide/standard-charts/line-area-and-column-charts#data-skipping). \n\nDefault value: 1",
+        "range": "in pixels",
         "type": "Number",
         "versionsince": "3.12.0",
         "name": "labelBinSize"
       },
       {
-        "description": "This attribute allows you to change the theme of the chart. FusionCharts offers several themes with different color combinations. By default, its value is set to fusion.",
-        "default value": "fusion",
+        "description": "This attribute allows you to change the theme of the chart. FusionCharts offers several themes with different color combinations for you to choose from. For further details, click [here](/themes/introduction-to-themes). \n\nDefault value: fusion",
         "range": "fusion/gammel/candy/zune/ocean/carbon/umber",
         "type": "String",
         "name": "theme"
