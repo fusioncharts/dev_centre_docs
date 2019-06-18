@@ -2034,7 +2034,8 @@
               },
               {
                 "title": "GroupBy",
-                "path": "/fusiontime/fusiontime-data-engine/groupby"
+                "path": "/fusiontime/fusiontime-data-engine/groupby",
+                "visibility": false
               },
               {
                 "title": "Pivot",
