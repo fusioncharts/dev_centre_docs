@@ -24,6 +24,8 @@ To create data markers, follow the steps given below:
 
 - Within the `dataMarker` object use the `type` attribute to define the type of the marker as `flag`.
 
+- Within the `dataMarker` object use the `value` attribute to define the y-axis label.
+
 - Within the `dataMarker` object use the `identifier` attribute to set the character to be displayed within the marker.
 
 - Within the `dataMarker` object use the `tooltext` attribute to set the text to be displayed in the tooltip, when you hover the mouse pointer over the data marker.

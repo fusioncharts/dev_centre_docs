@@ -1068,7 +1068,7 @@ List of predefined date/time format is given below:
 	</tr>
 	<tr>
 		<td>`%%`</td>
-		<td>A literal percent sign (%)</td>
+		<td>A literal percent sign (%). <strong>This token might seem useless, but remember that the tokens reserve the % symbol for their own use. This token acts as an escape character to literally allow a % symbol in a date string.</strong></td>
 	</tr>
 </table>
 
@@ -1085,3 +1085,21 @@ unitDefaultFormats = {
   Millisecond: "%b %d, %Y %H:%M:%S:%L" // Jan 01, 2018 23:34:26:123
 };
 ```
+
+## Paddings
+
+In addition to the tokens listed above, it is often necessary to specify padding within the date/time format. For example - **12/02/2018**, **12/ 2/2018** and **12/2/2018** all represent 2nd December 2018. The only difference between the three dates is that the **day** part of the date string has different padding:
+
+- The first example is padded with a zero.
+- The second example has been padded with space.
+- The third example has no padding.
+
+To handle the above cases, the padding modifiers are listed below:
+
+| Padding          | Description                                 |
+| ---------------- | ------------------------------------------- |
+| `-` (Dash)       | No padding (For example, **12/02/2018**)    |
+| `_` (Underscore) | Space padding (For example, **12/ 2/2018**) |
+| `0` (Zero)       | Zero padding (For example, **12/2/2018**)   |
+
+> The paddings are always placed after every token's % symbol. The default value padding of the date/time format of a time-series chart is `0`.
