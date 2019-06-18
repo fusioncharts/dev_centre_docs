@@ -1098,8 +1098,8 @@ To handle the above cases, the padding modifiers are listed below:
 
 | Padding          | Description                                 |
 | ---------------- | ------------------------------------------- |
-| `_` (Underscore) | Space padding (For example, **12/ 2/2018**) |
 | `-` (Dash)       | No padding (For example, **12/02/2018**)    |
+| `_` (Underscore) | Space padding (For example, **12/ 2/2018**) |
 | `0` (Zero)       | Zero padding (For example, **12/2/2018**)   |
 
 > The paddings are always placed after every token's % symbol. The default value padding of the date/time format of a time-series chart is `0`.
