@@ -1,5 +1,5 @@
 ---
-title: FusionTime Attributes | FusionCharts
+title: FusionTime Attributes | FusionChartsgit 
 description: This article contains the list of fusion time attributes.
 heading: Attributes
 ---
