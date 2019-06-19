@@ -18,7 +18,7 @@
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
+                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes. Know more about them ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
                      },
                      {
@@ -99,7 +99,7 @@
             ]
          },
          {
-            "itemHeader": "Chart with Multiple-series",
+            "itemHeader": "Chart with Multiple Series",
             "imgSrc": "chart-with-multiple-series-img.png",
             "annotations": [{
                   "annotationNumber": "1",
@@ -109,7 +109,7 @@
                   "leftPosition": "67.5%",
                   "topPosition": "84.5%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll etc. Learn more about it ",
+                        "linkDesc": "You can customize look and feel of legend, such as increasing/decreasing legend icon size, defining custom legend icons, enabling legend scroll, etc. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/legend#configure-legend-icon-size"
                      },
                      {
