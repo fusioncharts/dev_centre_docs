@@ -10,7 +10,7 @@ Given below is the list of charts in FusionCharts XT, FusionWidgets XT, and Powe
 
 It offers all the general-purpose charts like column, bar, line, area, pie, combination and stacked charts to advanced charts like combination, scroll, zoom line, XY Plot, Marimekko and Pareto charts.
 
-### Single Series Charts
+### Single-series Charts
 
 Chart Type|JavaScript Alias|
 -|-
