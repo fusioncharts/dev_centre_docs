@@ -12,7 +12,7 @@ Assume that you have to create a theme named **mySampleTheme**, which needs to i
 
     * Set the subcaption to **Harry's SuperMart** throughout the application and ensure that it cannot be changed.
 
-    * Define uniform cosmetics for the caption and subcaption. 
+    * Define uniform cosmetics for the caption and subcaption.
 
     * Enable hover effects for data plots.
 
