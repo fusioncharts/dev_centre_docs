@@ -12,7 +12,7 @@
             "children": [{
                   "title": "Plain JavaScript",
                   "children": [{
-                        "title": "Creating your First Chart",
+                        "title": "Creating Your First Chart",
                         "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
@@ -30,7 +30,7 @@
                      {
                         "title": "Usage Guide",
                         "children": [{
-                              "title": "Configuring your Chart",
+                              "title": "Configuring Your Chart",
                               "path": "/getting-started/plain-javascript/configure-your-chart-using-plain-javascript"
                            },
                            {
@@ -101,7 +101,7 @@
                   "children": [{
                         "title": "AngularJS (v1.x)",
                         "children": [{
-                              "title": "Creating your First Chart",
+                              "title": "Creating Your First Chart",
                               "children": [{
                                     "title": "Your First Chart",
                                     "path": "/getting-started/angular/angularjs/your-first-chart-using-angularjs"
@@ -119,7 +119,7 @@
                            {
                               "title": "Usage Guide",
                               "children": [{
-                                    "title": "Configuring your Chart",
+                                    "title": "Configuring Your Chart",
                                     "path": "/getting-started/angular/angularjs/configure-your-chart-using-angularjs"
                                  },
                                  {
@@ -188,7 +188,7 @@
                      {
                         "title": "Angular (v2.x & Above)",
                         "children": [{
-                              "title": "Creating your First Chart",
+                              "title": "Creating Your First Chart",
                               "children": [{
                                     "title": "Your First Chart",
                                     "path": "/getting-started/angular/angular/your-first-chart-using-angular"
@@ -206,11 +206,11 @@
                            {
                               "title": "Usage Guide",
                               "children": [{
-                                    "title": "Configuring your Chart",
+                                    "title": "Configuring Your Chart",
                                     "path": "/getting-started/angular/angular/configure-your-chart-using-angular"
                                  },
                                  {
-                                    "title": "Adding Drill-Down",
+                                    "title": "Adding Drill Down",
                                     "path": "/getting-started/angular/angular/add-drill-down-using-angular"
                                  },
                                  {
@@ -273,7 +273,7 @@
                {
                   "title": "React",
                   "children": [{
-                        "title": "Creating your First Chart",
+                        "title": "Creating Your First Chart",
                         "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/react/your-first-chart-using-react"
@@ -291,11 +291,11 @@
                      {
                         "title": "Usage Guide",
                         "children": [{
-                              "title": "Configuring your Chart",
+                              "title": "Configuring Your Chart",
                               "path": "/getting-started/react/configure-your-chart-using-react"
                            },
                            {
-                              "title": "Adding Drill-Down Charts",
+                              "title": "Adding Drill Down Charts",
                               "path": "/getting-started/react/add-drill-down-using-react"
                            },
                            {
@@ -360,7 +360,7 @@
                {
                   "title": "React Native",
                   "children": [{
-                        "title": "Creating your First Chart",
+                        "title": "Creating Your First Chart",
                         "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/react-native/your-first-chart-using-react-native"
@@ -1714,7 +1714,7 @@
          }, {
             "title": "Getting Started",
             "children": [{
-                  "title": "Create your First Chart",
+                  "title": "Create Your First Chart",
                   "path": "/fusiontime/getting-started/create-your-first-chart-in-fusiontime"
                },
                {
@@ -2012,7 +2012,7 @@
                   "path": "/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net"
                },
                {
-                  "title": "Create your First Chart",
+                  "title": "Create Your First Chart",
                   "path": "/fusioncharts-aspnet-visualization/getting-started/create-first-chart-using-fusioncharts-net"
                },
                {
@@ -2076,7 +2076,7 @@
          {
             "title": "Chart Components",
             "children": [{
-                  "title": "Caption and Sub-Caption",
+                  "title": "Caption and Sub-caption",
                   "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-caption-sub-caption"
                },
                {
@@ -2088,7 +2088,7 @@
                   "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-data-plot"
                },
                {
-                  "title": "Data Value",
+                  "title": "Data Values",
                   "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-data-value"
                },
                {
