@@ -69,7 +69,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -153,7 +153,7 @@ In the above code:
 
 3. In the `dataSource` object, add `numberPrefix` attribute in `chart` object. Set the `numberPrefix` to `$`.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 

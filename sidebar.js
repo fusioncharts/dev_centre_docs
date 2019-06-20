@@ -1749,11 +1749,11 @@
          }, {
             "title": "Integrations",
             "children": [{
-                  "title": "Create Chart using VueJS",
+                  "title": "Create Chart Using VueJS",
                   "path": "/fusiontime/integrations/your-first-chart-using-vuejs-in-fusiontime"
                },
                {
-                  "title": "Create Chart using React",
+                  "title": "Create Chart Using React",
                   "path": "/fusiontime/integrations/your-first-chart-using-react-in-fusiontime"
                }
             ]

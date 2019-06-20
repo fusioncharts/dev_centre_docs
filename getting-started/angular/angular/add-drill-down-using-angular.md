@@ -1,5 +1,5 @@
 ---
-title: Adding Drill Down using Angular | FusionCharts
+title: Adding Drill Down Using Angular | FusionCharts
 description: This article focuses on drill down charts.
 heading: Adding Drill Down using Angular
 ---
@@ -20,7 +20,7 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 * Supports drill-down to an unlimited number of levels
 
-## Create drill-down charts 
+## Create Drill-down Charts 
 
 As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
 
@@ -30,9 +30,9 @@ The above chart, when rendered, looks like the following:
 
 {% embed_chartData add-drill-down-using-angular-example-1.js json %}
 
-### Setup the Main Module
+### Set Up the Main Module
 
-In this step, we will setup the main module to create the **Column 2d** chart. The code is given below:
+In this step, we will set up the main module to create the **Column 2d** chart. The code is given below:
 
 ```
 // Setup needed in app.module.ts
@@ -79,7 +79,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used in any component throughout your app. We will render our first chart in the main `app.component`.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -237,7 +237,7 @@ In the above code:
     * Create the JSON/XML data for the parent chart. This is called the parent data source.
     * Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 

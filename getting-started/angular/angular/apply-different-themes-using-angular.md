@@ -21,9 +21,9 @@ A chart configured to change the theme, is shown below:
 
 {% embed_chartData apply-different-theme-example-1.js json %}
 
-### Setup the Main Module
+### Set Up the Main Module
 
-In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
+In this step, we will set up the main module to create the **Column 2D** chart. The code is given below:
 
 ```
 // Setup needed in app.module.ts
@@ -85,7 +85,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -167,7 +167,7 @@ In the above code:
 
 4. Create the `onSectionChange` chart instance to apply differnet themes at runtime.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 
@@ -203,11 +203,15 @@ Add the following code to `app.component.html`:
             <input type="radio" name='options' [value]="carbon" [checked]='theme === "carbon"' (change)="onSelectionChange('carbon')" />
             <label>Carbon</label>
         </div>
+        <div>
+            <input type="radio" name='options' [value]="umber" [checked]='theme === "umber"' (change)="onSelectionChange('umber')" />
+            <label>Umber</label>
+        </div>
     </div>
 </div>
 ```
 
-In the above code
+In the above code:
 
 -  Create the `fusioncharts` directive in a template.
 
