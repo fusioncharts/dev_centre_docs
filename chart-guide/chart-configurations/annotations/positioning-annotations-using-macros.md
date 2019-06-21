@@ -1,6 +1,6 @@
 ---
 title: Positioning Annotations Using Macros | FusionCharts
-description: Annotations are user-defined objects or shapes drawn on a chart. Annotations are often required to make interpretation of the chart easy for the end user.
+description: You can dynamically position annotations relative to other elements when rendering charts/gauges, using predefined variables called annotation macros.
 heading: Positioning Annotations Using Macros
 ---
 

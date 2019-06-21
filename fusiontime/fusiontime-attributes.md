@@ -1,5 +1,5 @@
 ---
-title: FusionTime Attributes | FusionCharts
+title: FusionTime Attributes | FusionChartsgit 
 description: This article contains the list of fusion time attributes.
 heading: Attributes
 ---
@@ -733,7 +733,8 @@ new FusionCharts({
     dataMarker: [
       {
         seriesName: " ", //Name of the series
-        time: " ", //Time on which the data marker will be shown
+		time: " ", //Time on which the data marker will be shown
+		value: " ", //Defines the y-axis label
         identifier: " ", //Defines a character to be shown
         timeFormat: " ", //Format of the date
         tooltext: " " //Text in the tooltip

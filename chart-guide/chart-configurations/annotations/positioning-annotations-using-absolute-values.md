@@ -1,6 +1,6 @@
 ---
 title: Positioning Annotations Using Absolute Values | FusionCharts
-description: Annotations are user-defined objects or shapes drawn on a chart. Annotations are often required to make interpretation of the chart easy for the end user.
+description: You can position annotations when creating them or after rendering them in a chart/gauge, setting absolute values as coordinates to attributes.
 heading: Positioning Annotations Using Absolute Values
 ---
 

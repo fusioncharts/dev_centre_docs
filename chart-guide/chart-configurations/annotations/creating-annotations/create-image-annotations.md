@@ -1,6 +1,6 @@
 ---
 title: Create Image Annotations | FusionCharts
-description: Annotations are user-defined objects or shapes drawn on a chart. Annotations are often required to make interpretation of the chart easy for the end user.
+description: Image annotations allow you to highlight context-sensitive information in charts with the help of images in popular formats like JPEG, PNG, and GIF.
 heading: Create Image Annotations
 ---
 
