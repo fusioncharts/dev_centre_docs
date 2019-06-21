@@ -1,6 +1,6 @@
 ---
 title: Annotation References | FusionCharts
-description: Annotations are user-defined objects or shapes drawn on a chart. Annotations are often required to make interpretation of the chart easy for the end user.
+description: You can find an exhaustive list of attributes and macros supported by annotations in FusionCharts Suite XT.
 heading: Annotation References
 ---
 

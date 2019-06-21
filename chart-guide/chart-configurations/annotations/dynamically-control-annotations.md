@@ -1,6 +1,6 @@
 ---
 title: Dynamically Control Annotations | FusionCharts
-description: Annotations are user-defined objects or shapes drawn on a chart. Annotations are often required to make interpretation of the chart easy for the end user.
+description: You can create, update, set the visibility of, or even delete a single annotation or a group of them at runtime with methods through FusionCharts API.
 heading: Dynamically Control Annotations
 ---
 
