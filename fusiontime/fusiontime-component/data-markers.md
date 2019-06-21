@@ -280,10 +280,7 @@ The consolidated code of the above created data marker is:
 
 The chart looks as shown below:
 
-<Live Chart>
-
 {% embed_ftChart data-marker-multi-variate-sample %}
-
 
 ## Style Definition
 
