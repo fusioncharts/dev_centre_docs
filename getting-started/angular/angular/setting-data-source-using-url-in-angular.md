@@ -10,7 +10,7 @@ The only difference between the two methods is the value that is passed to the `
 
 This article explains how you can set the chart data using the URL of the corresponding file using `angular-fusioncharts` component.
 
-## Load data using JSON as URL
+## Load Data Using JSON as URL
 
 Let's build the same revenue chart which we built in the [first example](/getting-started/angular/angular/your-first-chart-using-angular) using JSON, and use a .json file as the data source.
 
@@ -123,7 +123,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render the above chart in the main app.component.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -153,7 +153,7 @@ export class AppComponent {
     * Set the value of the `dataFormat` to **jsonurl**.
     * Provide a static URL to `dataSource` to render the above chart.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 
@@ -172,7 +172,7 @@ In the above code create a `fusioncharts` directive in a template.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
-## Load data using XML as URL
+## Load Data Using XML as URL
 
 The XML representation for the above chart looks as shown below:
 
@@ -240,7 +240,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render the above chart in the main app.component.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -269,7 +269,7 @@ export class AppComponent {
     * Set the value of the `dataFormat` to **xmlurl**.
     * Set a static URL to `dataSource` to render the above chart.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 

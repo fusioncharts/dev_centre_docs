@@ -1,7 +1,7 @@
 ---
-title: Dynamically Add Chart Event Listener using Angular | FusionCharts
+title: Dynamically Add Chart Event Listener Using Angular | FusionCharts
 description: This article tells you how to dynamically add chart event listener to your chart using angular.
-heading: Dynamically Add Chart Event Listener using Angular
+heading: Dynamically Add Chart Event Listener Using Angular
 ---
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, add events at runtime, and remove events at runtime.
@@ -59,7 +59,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -179,7 +179,7 @@ In the above code:
 	* Create the `getMessage` function for the message which gets displayed on clicking the data plots.
 	* Add an event listener to enable the `dataplotClick` event.
 	
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 

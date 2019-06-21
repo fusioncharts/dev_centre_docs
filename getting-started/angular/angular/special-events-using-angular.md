@@ -1,7 +1,7 @@
 ---
-title: Special Events using Angular | FusionCharts
+title: Special Events Using Angular | FusionCharts
 description: This article showcases a draggable column chart with special events.
-heading: Special Events using Angular
+heading: Special Events Using Angular
 ---
 
 FusionCharts Suite XT API offers a wide range of events that you can use to trigger actions for different stages in the life cycle of a chart or when you interact with a chart. For example, events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
@@ -57,7 +57,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 

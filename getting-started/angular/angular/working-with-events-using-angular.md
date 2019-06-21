@@ -1,6 +1,6 @@
 ---
 title: Working with Events | FusionCharts
-description: This article talks about the Events using Angular.
+description: This article talks about the events using Angular.
 heading: Working with Events
 ---
 
@@ -58,7 +58,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -138,7 +138,7 @@ In the above code:
 
 3. Set the `update` function inside the angular context to select the label and the value of the data plot at the time of mouse rollover.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 

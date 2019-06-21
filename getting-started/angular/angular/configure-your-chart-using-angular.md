@@ -1,7 +1,7 @@
 ---
-title: Configuring your Chart using Angular | FusionCharts
+title: Configuring Your Chart Using Angular | FusionCharts
 description: This article focuses on different type of configurations possible using Angular.
-heading: Configuring your Chart using Angular
+heading: Configuring Your Chart Using Angular
 ---
 
 FusionCharts Suite XT includes advanced features that let you add more context to your charts and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
@@ -62,7 +62,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -168,7 +168,7 @@ In the above code:
 
 5. Add `controls.innerHTML` to create the `button` inside the `<div>`.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 
@@ -236,7 +236,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -363,7 +363,7 @@ In the above code:
 
 4. Create a container to render buttons in the chart.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 

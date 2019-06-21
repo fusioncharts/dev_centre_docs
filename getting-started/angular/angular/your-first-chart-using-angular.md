@@ -28,7 +28,7 @@ $ npm install fusioncharts --save
 
 That completes the installation of **FusionCharts** and the `angular-fusioncharts` component.
 
-## Create your first chart
+## Create Your First Chart
 
 Let's create a Column 2D chart using the `angular-fusioncharts` component showing the "Countries With Most Oil Reserves".
 
@@ -40,7 +40,7 @@ The Column 2D chart is shown below:
 
 To understand the chart components, click [here](/understanding-fusioncharts).
 
-## Chart data
+## Chart Data
 
 The data to render the above chart is shown in the table below:
 
@@ -130,7 +130,7 @@ Both the chart object and the data array contain a set of key-value pairs known 
 
 Now that you have the data in JSON format, let's see how to render the chart.
 
-## Render the chart
+## Render the Chart
 
 To render the chart follow the steps below:
 
@@ -277,7 +277,7 @@ Create the chart container and set the following:
 
 That's it! Your first chart using `angular-fusioncharts` is ready.
 
-## Problem rendering the chart?
+## Problem Rendering the Chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 

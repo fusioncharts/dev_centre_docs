@@ -12,7 +12,7 @@ A chart is shown below:
 
 {% embed_chartData lifecycle-event-example-1.js json %}
 
-### Setup the Main Module
+### Set Up the Main Module
 
 In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
 
@@ -64,7 +64,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -168,7 +168,7 @@ In the above code:
     * Event Listerer for `drawComplete` event.
     * Event Listerer for `renderComplete` event.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 

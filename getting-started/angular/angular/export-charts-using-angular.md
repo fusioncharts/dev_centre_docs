@@ -71,7 +71,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -148,7 +148,7 @@ In the above code:
 
 3. Create a `fusioncharts` directive to render the chart.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 
@@ -217,7 +217,7 @@ In the above code:
 
 > The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app.
 
-### Add data to `app.component.ts`
+### Add Data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
 
@@ -454,7 +454,7 @@ In the above code:
 
 4. Create a container to render buttons in the chart.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 
