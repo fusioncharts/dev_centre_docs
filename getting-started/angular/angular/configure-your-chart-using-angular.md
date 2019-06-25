@@ -17,7 +17,7 @@ A chart, configured to update data values dynamically, is shown below (click **U
 
 {% embed_chartData configure-charts-using-angular-example-1.js json %}
 
-### Setup the Main Module
+### Set Up the Main Module
 
 In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
 
@@ -191,7 +191,7 @@ A chart, configured to update the **chart caption**, **sub-caption** alignment a
 
 {% embed_chartData configure-charts-using-react-example-2.js json %}
 
-### Setup the Main Module
+### Set Up the Main Module
 
 In this step, we will setup the main module to create the **Column 2d** chart. The code is given below:
 

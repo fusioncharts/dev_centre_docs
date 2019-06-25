@@ -203,7 +203,7 @@ Add the following code to `app.component.html`:
 </div>
 ```
 
-In the above code 
+In the above code:
 
 * Create the `fusioncharts` directive in a template.
 

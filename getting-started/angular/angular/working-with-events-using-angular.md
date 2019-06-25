@@ -122,7 +122,7 @@ export class AppComponent {
     })
   }
   constructor(private zone: NgZone) {}
-}
+
 ```
 
 In the above code:
@@ -169,6 +169,6 @@ Add the following code to `app.component.html`:
 
 In the above code:
 
-1. Create `fusioncharts` directive inside the template.
-2. Add an event listener to attach the updated fusction from the component.
-3. Add the content which will be displayed when the mouse pointer is rolled over the data plot.
+1. A `fusioncharts` directive has been created inside the template.
+2. An event listener has been created to attach the updated function from the component.
+3. The content (to be displayed when the mouse pointer is rolled over the data plot) has been configured.

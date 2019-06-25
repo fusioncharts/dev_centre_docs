@@ -30,13 +30,13 @@ $ npm install fusioncharts --save
 
 That completes the installation of **FusionCharts** and the `angular-fusioncharts` component.
 
-## Create you First map
+## Create Your First Map
 
 In this section, we will create a visualization using the **World Map** showing the average annual population growth.
 
 {% embed_chart getting-started-your-first-map.js %}
 
-## Map data
+## Map Data
 
 The data for the above map is represented in the table below:
 
@@ -133,7 +133,7 @@ The chart object and the respective arrays contain a set of key-value pairs know
 
 Now that you have the data in JSON format, let's learn how to render the map.
 
-## Render the map
+## Render the Map
 
 To render the chart follow the steps below:
 
@@ -298,7 +298,7 @@ Create the map container and set the following:
 
 That's it! Your first map using `angular-fusioncharts` is ready.
 
-## Render other maps
+## Render Other Maps
 
 To reduce the size of the package FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provide 1600+ maps for you to explore. Download the map files separately if you want to save them locally.
 
@@ -500,7 +500,7 @@ Create the chart container and set the following:
 
 That's it! The **California** map is ready.
 
-## Problem rendering the chart?
+## Problem Rendering the Chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 

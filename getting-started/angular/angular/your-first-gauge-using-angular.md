@@ -31,7 +31,7 @@ $ npm install fusioncharts --save
 
 That completes the installation of **FusionCharts** and the `angular-fusioncharts` component.
 
-## Create your First gauge
+## Create Your First Gauge
 
 Gauges are powerful tools that can showcase information using a radial scale to display data.
 
@@ -41,7 +41,7 @@ The angular gauge is shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-## Chart data
+## Chart Data
 
 The thresholds for the above sample is shown in the table below:
 
@@ -119,7 +119,7 @@ Now that you have the data in JSON format, let's see how to render the chart.
 
 To render the gauge follow the steps below:
 
-**Step 1:** In 'app.module.ts` include the necessary files and add the dependency.
+**Step 1:** In `app.module.ts`, include the necessary files and add the dependency.
 
 - Import **angular-fusioncharts** in the root `@NgModule`.
 
@@ -166,7 +166,7 @@ export class AppModule {}
 
 Set the JSON data within the `AppComponent` class as shown below:
 
-> The code below is same for Angular older and latest versions.
+> The code below is same for older and latest versions of Angular.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -244,7 +244,7 @@ Create the container to render the gauge and set the following:
 
 That's it! Your first gauge using `angular-fusioncharts` is ready.
 
-## Problem rendering the chart?
+## Problem Rendering the Chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
