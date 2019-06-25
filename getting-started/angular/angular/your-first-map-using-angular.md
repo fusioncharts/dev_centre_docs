@@ -1,12 +1,12 @@
 ---
-title: Create a Map in Angular using FusionCharts | FusionCharts
+title: Create a Map in Angular Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the angular-fusioncharts component.
-heading: Create a Map in Angular using FusionCharts
+heading: Create a Map in Angular Using FusionCharts
 ---
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component which provides bindings for **FusionCharts**. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project.
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component, which provides bindings for **FusionCharts**. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project.
 
 In this page, we'll see how to install FusionCharts and render a map using the `angular-fusionCharts` component.
 
