@@ -175,8 +175,8 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-[UK (With Islands)](/maps/spec-sheets/uk7)|maps/uk7|
-[UK (With Counties)](/maps/spec-sheets/ukcountries)|maps/ukcountries|
+[UK (with Islands)](/maps/spec-sheets/uk7)|maps/uk7|
+[UK (with Counties)](/maps/spec-sheets/ukcountries)|maps/ukcountries|
 [England (Region)](/maps/spec-sheets/englandregion)|maps/englandregion|
 [Scotland (Region)](/maps/spec-sheets/scotlandregion)|maps/scotlandregion|
 [Wales](/maps/spec-sheets/wales)|maps/wales|
