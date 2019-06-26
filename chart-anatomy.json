@@ -109,7 +109,7 @@
                   "leftPosition": "67.5%",
                   "topPosition": "84.5%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize look and feel of legend, such as increase/decrease legend icon size, define custom legend icons, enable legend scroll, etc. Learn more about it ",
+                        "linkDesc": "You can customize look and feel of the legend, such as increase/decrease legend icon size, define custom legend icons, enable legend scroll, etc. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/legend#configure-legend-icon-size"
                      },
                      {
