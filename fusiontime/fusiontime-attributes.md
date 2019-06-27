@@ -734,7 +734,7 @@ new FusionCharts({
       {
         seriesName: " ", //Name of the series
 		time: " ", //Time on which the data marker will be shown
-		value: " ", //Defines the y-axis label
+		value: " ", //Specifies the y-axis label on which the data marker will be applied
         identifier: " ", //Defines a character to be shown
         timeFormat: " ", //Format of the date
         tooltext: " " //Text in the tooltip
@@ -759,6 +759,11 @@ new FusionCharts({
 		<td>`time`</td>
 		<td>String</td>
 		<td>Sets the time on which the data marker will be shown. Corresponds to the start of the given date/time.</td>
+	</tr>
+	<tr>
+		<td>`value`</td>
+		<td>String</td>
+		<td>Sets the y-axis label on which the data marker will be applied.</td>
 	</tr>
 	<tr>
 		<td>`timeFormat`</td>
