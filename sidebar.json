@@ -10,7 +10,6 @@
                 "title": "Installation",
                 "path": ""
             },
-
             {
                 "title": "Quick Start",
                 "path": ""
@@ -19,6 +18,9 @@
                 "title": "How does it work?",
                 "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
             }
-        ]
+          ]
+    {
+            "title": "Chart Types",
+            }
     }]
 }]
