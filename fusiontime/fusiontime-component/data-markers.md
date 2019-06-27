@@ -24,7 +24,7 @@ To create data markers, follow the steps given below:
 
 - Within the `dataMarker` object use the `type` attribute to define the type of the marker as `flag`.
 
-- Within the `dataMarker` object use the `value` attribute to define the y-axis label.
+- Within the `dataMarker` object use the `value` attribute to specify the y-axis label on which the data marker will be applied.
 
 - Within the `dataMarker` object use the `identifier` attribute to set the character to be displayed within the marker.
 
@@ -280,10 +280,7 @@ The consolidated code of the above created data marker is:
 
 The chart looks as shown below:
 
-<Live Chart>
-
 {% embed_ftChart data-marker-multi-variate-sample %}
-
 
 ## Style Definition
 
