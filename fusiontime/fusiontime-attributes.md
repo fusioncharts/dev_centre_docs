@@ -732,7 +732,6 @@ new FusionCharts({
   dataSource: {
     dataMarker: [
       {
-        seriesName: " ", //Name of the series
 		time: " ", //Time on which the data marker will be shown
 		value: " ", //Specifies the y-axis label on which the data marker will be applied
         identifier: " ", //Defines a character to be shown
@@ -749,11 +748,6 @@ new FusionCharts({
 		<th>Attribute</th>
 		<th>Type</th>
 		<th>Description</th>
-	</tr>
-	<tr>
-		<td>`seriesName`</td>
-		<td>String</td>
-		<td>This attribute specifies the name of the series on which the data marker will be displayed. If the series is specified as a combination of a series name as well as a measure name, it should be in &lt;series_name&gt;-&lt;measure_name&gt; format.</td>
 	</tr>
 	<tr>
 		<td>`time`</td>
