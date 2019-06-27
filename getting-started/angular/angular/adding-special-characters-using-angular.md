@@ -59,11 +59,11 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
 export class AppModule {}
 ```
 
-In the above code:
+In the above code, you can see how to do the following:
 
-1. Include the necessary libraries and componentsusing import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `angular-fusioncharts`, `fusioncharts`, etc.
 
-2. Load FusionCharts, chart module and the `fusion` theme.
+2. Load FusionCharts, `charts` module and the `fusion` theme.
 
 3. Add dependencies to `FusionChartsModule`.
 
@@ -141,7 +141,7 @@ export class AppComponent {{
 }
 ```
 
-In the above code:
+In the above code you can see how to do the following:
 
 1. Add the JSON data within the `AppComponent` class.
 

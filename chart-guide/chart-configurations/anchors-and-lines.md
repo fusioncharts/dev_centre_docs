@@ -1,16 +1,16 @@
 ---
 title: Anchors and Lines | FusionCharts
-description: Anchors help to identify the data point better in the chart. They also show a tooltip showing the data plot details when the mouse is hovered over them
+description: Anchors help to identify data points quickly in a chart. They also show a tooltip with context-sensitive information about the data plot, when the mouse pointer is hovered over them.
 heading: Anchors and Lines
 ---
 
-Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Anchors show a tooltip showing the data plot details when the mouse is hovered over them and can be linked to other pages as well. In this article, we will discuss different configurations of the anchors.
+Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart. Anchors show a tooltip with context-sensitive information abbout a data plot, when the mouse pointer is hovered over them. An anchor can be linked to other pages as well. In this article, we will discuss different configurations of the anchors.
 
 ![Anchors](/images/chart-configurations-anchors-image-1.png)
 
 ## Hide Anchors
 
-By default, the anchors and their corresponding tooltips are displayed. To hide the anchors set the `drawAnchors` attribute to `0` as shown in the code below:
+By default, the anchors and their corresponding tooltips are displayed. To hide the anchors, set the `drawAnchors` attribute to `0`, as shown in the code below:
 
 ```json
 {
@@ -20,7 +20,7 @@ By default, the anchors and their corresponding tooltips are displayed. To hide 
 }
 ```
 
-A line chart with anchors hidden looks like as shown below:
+A line chart with anchors hidden looks as shown below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-1.js %}
 
@@ -28,7 +28,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5tajR/) to edit the above chart.
 
 ## Customize Anchor Properties
 
-To customize the properties of the anchors, the following attributes are used:
+To customize anchor properties, use the following attributes:
 
 * Specify the number of sides using the `anchorSides` attribute to define the shape of the anchor. Set the value to `3` to draw the anchor shaped like a triangle.
 
@@ -56,13 +56,13 @@ Refer to the code below:
 }
 ```
 
-A line chart with customized anchors looks like as shown below:
+A line chart with customized anchors looks as shown below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/QnFW2/) to edit the above chart.
 
-## Customize Anchors for specific Data Points
+## Customize Anchors for Specific Data Points
 
 To highlight a specific anchor, customize the cosmetics for only that particular anchor. 
 
@@ -87,13 +87,11 @@ Refer to the code below:
             "label": "Tue",
             "value": "42.4"
         }
-        ....
     ]
 }
-
 ```
 
-A line chart with anchors of specific data points customized looks as below:
+A line chart with customized anchors for specific data points looks as shown below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-3.js %}
 
@@ -101,7 +99,7 @@ Click [here](http://jsfiddle.net/fusioncharts/w9ZWt/) to edit the above chart.
 
 ## Add External Images
 
-You can add external images in place of anchors for line and area charts. This allows you to use different images for each anchor and lets you highlight special values. To do so, you have to set the attributes in individual `data` object. The attributes used are:
+You can add external images in place of anchors for line and area charts. This allows you to use different images for each anchor and lets you highlight special values. To do so, you have to set the following attributes in individual `data` objects:
 
 * Specify the URL of the image using the `anchorImageUrl` attribute.
 
@@ -166,7 +164,7 @@ Refer to the code below:
 }
 ```
 
-A line chart with external images in the anchors looks as below:
+A line chart with external images in the anchors looks as shown below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-4.js %}
 

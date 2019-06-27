@@ -34,13 +34,13 @@ In addition to creating annotations, you can:
 
 * Customize the response to user actions using annotation events
 
-Now that you have seen what annotations look like and how useful they can be in making your charts informative go ahead and see how you can create them.
+Now that you have seen what annotations look like and how useful they can be in making your charts informative, go ahead and see how you can create them.
 
 ## How Annotations Work
 
 Annotations are defined inside the `annotations` object. This object has an array of `groups`, and each `group` element has a unique id. The `groups` object contains an array of `items`, each of which contains information on one specific annotation in the chart. 
 
-Organising annotations in groups is useful when you manipulate multiple annotations at once through API calls. Refer to the code below to understand the structure of a simple `annotations` object.
+Organizing annotations in groups is useful when you manipulate multiple annotations at once through API calls. Refer to the code below to understand the structure of a simple `annotations` object.
 
 ```json
 {
@@ -83,7 +83,7 @@ Use the following objects to create annotations:
 
 * `items` is an object array that defines individual annotation items contained in one annotation group.
 
-## Add Different types of Annotations
+## Add Different Types of Annotations
 
 You can add the following types of annotations to your chart:
 
@@ -95,7 +95,7 @@ You can add the following types of annotations to your chart:
 
 * Path connectors (freeform arrows, connectors, callouts, and so on)
 
-Refer to the basic JSON structure to create annotations, given below:
+To create annotations, refer to the basic JSON structure given below:
 
 ```json
 {
