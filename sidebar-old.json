@@ -7,23 +7,32 @@
     "longDescription": "Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
     "children": [
       {
-        "title": "Getting Started",
+        "title": "Overview",
+        "path": "/fusioncharts"
+      },
+      {
+        "title": "Getting Started ",
         "children": [
           {
-              "title": "Installation",
-              "path": ""
-          },
-          
-          {
-              "title": "Quick Start",
-              "path": ""
-          },
-          {
-              "title": "How does it work?",
-              "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
-          },
-                     ]
-      },
+            "title": "Plain JavaScript",
+            "children": [
+              {
+                "title": "Creating your First Chart",
+                "children": [
+                  {
+                    "title": "Your First Chart",
+                    "path": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
+                  },
+                  {
+                    "title": "Your First Gauge",
+                    "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
+                  },
+                  {
+                    "title": "Your First Map",
+                    "path": "/getting-started/plain-javascript/your-first-map-using-plain-javascript"
+                  }
+                ]
+              },
               {
                 "title": "Usage Guide",
                 "children": [
