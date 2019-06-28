@@ -114,6 +114,10 @@
                                         }
 
                                     ]
+                                },
+                                {
+                                    "title": "List of attributes",
+                                    "path": ""
                                 }
                     ]
                 }
