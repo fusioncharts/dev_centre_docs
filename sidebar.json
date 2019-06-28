@@ -62,8 +62,11 @@
                                 {
                                     "title": "Padding & Margin",
                                     "path": ""
-                                },
-                                {
+                                }
+                              
+                            ]
+                        },
+                        {
                                     "title": "Chart components",
                                     "children": [{
                                             "title": "Caption & sub-caption",
@@ -108,8 +111,6 @@
 
                                     ]
                                 }
-                            ]
-                        }
                     ]
                 }
             ]
