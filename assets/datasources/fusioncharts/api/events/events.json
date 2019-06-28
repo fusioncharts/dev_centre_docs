@@ -2954,7 +2954,8 @@
     "name": "beforeLinkedItemClose",
     "kind": "Drill Down",
     "scope": "action",
-    "description": "Triggered just before a linked chart is closed. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/xz4y1uno/ )",
+    "about": "Triggered just before a linked chart is closed.",
+    "description": "Triggered just before a linked chart is closed.",
     "examples": {
       "codeFile": "beforeLinkedItemClose",
       "fiddle": "http://jsfiddle.net/fusioncharts/xz4y1uno/"
