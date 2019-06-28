@@ -5,7 +5,7 @@
     "kind": "Data",
     "scope": "component",
     "about": "I'm dummy description, please fix me.",
-    "description": "Triggered just before chart data is passed to the chart. It is useful if any operations have to be performed on the data before it is applied to the chart.",
+    "description": "just before chart data is passed to the chart. It is useful if any operations have to be performed on the data before it is applied to the chart.",
     "examples": {
       "codeFile": "beforeDataUpdate",
       "fiddle": "https://jsfiddle.net/fusioncharts/b1cadey2/"
