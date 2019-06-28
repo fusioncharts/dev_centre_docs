@@ -16,7 +16,7 @@
                 },
                 {
                     "title": "How does it work?",
-                    "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
+                    "path": ""
                 }
             ]
 
@@ -34,8 +34,8 @@
                             "path": ""
                         },
                         {
-                          "title": "Chart anatomy",
-                          "path": ""
+                            "title": "Chart anatomy",
+                            "path": ""
                         },
                         {
                             "title": "Chart configurations",
