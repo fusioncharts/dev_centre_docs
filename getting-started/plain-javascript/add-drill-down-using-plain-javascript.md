@@ -4,9 +4,9 @@ description: This article focuses on drill down charts.
 heading: Adding Drill Down
 ---
 
-With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
+With FusionCharts, you can create unlimited levels of drill down with a single data source. The parent chart contains all the data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
-You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
+You can drill down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill up, or it can open in a new window or frame.
 
 Create linked charts by following the steps given below:
 
@@ -25,9 +25,9 @@ Once you implement these steps, the FusionCharts JavaScript class takes care of 
 - Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink) function
 - Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
-- Supports drill-down to an unlimited number of levels
+- Supports drill down to an unlimited number of levels
 
-As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
+As an example, we will consider a simple scenario of a parent chart with a single level of drill down.
 
 The parent chart here is a **Column 2D** chart showing yearly sales for the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills down to show a descendant **Column 2D** chart with quarterly sales figures for that flavor.
 
@@ -193,20 +193,20 @@ var chartInstance = new FusionCharts({
 chartInstance.render();
 ```
 
-1. Included the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
+1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
 
 2. Store the chart configurations in a JSON object. In this JSON object:
 
-   - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the chart type as `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as JSON.
-   - Embed the json data as the value of the `dataSource`.
+   - Embed the JSON data as the value of the `dataSource`.
    - Create the JSON/XML data for the parent chart. This is called the parent data source.
    - Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
 3. Add a container (instance) for the chart.
 
-### Create linked charts using Data URL method
+### Create Linked Charts Using Data URL Method﻿
 
 Specify the `link` attribute (which belongs to the data object) for each data plot to link charts using the data URL method. Every time you click on a data plot, the corresponding linked chart will be rendered.
 
@@ -335,7 +335,7 @@ The data structure for the **apple.xml** file is given below:
 
 Likewise, you can create the **cranberry.xml** and the **grapes.xml** files to create linked charts.
 
-### Create linked charts using data string method
+### Create Linked Charts Using Data String Method
 
 For the data string method, `dataformat` accepts either `json` (if the JSON data for the descendant chart is embedded inside the parent chart data) or `xml` (if the XML data for the descendant chart is embedded inside parent chart data) as values. `datasource` takes the value of the unique identifier that refers to the data embedded inside the `linkeddata` array (which in turn contains the JSON data for descendant charts) or the `<linkeddata>` node (which contains the XML data for the descendant charts) in the parent data source.
 
@@ -352,7 +352,7 @@ import Column2D from "fusioncharts/viz/column2d";
 // Include the fusion theme
 import FusionTheme from "fusioncharts/themes/es/fusioncharts.theme.fusion";
 
-// Add the chart and theme as dependency
+// Add the chart and theme as dependencies
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
@@ -484,11 +484,11 @@ var chartInstance = new FusionCharts({
       }
     }
   ]
-}); //render
+}); //Render
 chartInstance.render();
 ```
 
-### Configure events for linked charts
+### Configure Events for Linked Charts
 
 The FusionCharts JavaScript class includes events raised when you open or close linked items, as explained below:
 
@@ -519,7 +519,7 @@ import Column2D from 'fusioncharts/viz/column2d';
 // Include the fusion theme
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
 
-// Add the chart and theme as dependency
+// Add the chart and theme as dependencies
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
@@ -646,10 +646,10 @@ var chartInstance = new FusionCharts({
             }
         }
     ]
-}); //render
+}); //Render
 chartInstance.render();
 ```
 
-Use the events object (under the `dataSource` object) to configure the events raised for a chart.
+Use the `events` object (under the `dataSource` object) to configure the events raised for a chart.
 
-> The `FusionCharts.addEventListener()` static function can be used to trap events globally — i.e. for all charts. For detailed descriptions of the `LinkedChart` events, refer to the [FusionCharts API Reference](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events.html).
+> The `FusionCharts.addEventListener()` static function can be used to trap events globally — i.e., for all charts. For detailed descriptions of the `LinkedChart` events, refer to the [FusionCharts API Reference](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events.html).
