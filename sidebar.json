@@ -5,22 +5,49 @@
     "description": "Plot 95+ charts and 1400+ data-driven maps",
     "longDescription": "Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
     "children": [{
-        "title": "Getting Started",
-        "children": [{
-                "title": "Installation",
-                "path": ""
-            },
-            {
-                "title": "Quick Start",
-                "path": ""
-            },
-            {
-                "title": "How does it work?",
-                "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
-            }
-          ]
-    {
-            "title": "Chart Types",
-            }
-    }]
+            "title": "Getting Started",
+            "children": [{
+                    "title": "Installation",
+                    "path": ""
+                },
+                {
+                    "title": "Quick Start",
+                    "path": ""
+                },
+                {
+                    "title": "How does it work?",
+                    "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
+                }
+            ]
+
+        },
+        {
+            "title": "Chart types",
+            "children": [{
+                    "title": "List of charts",
+                    "path": ""
+                },
+                {
+                    "title": "Column Charts",
+                    "children": [{
+                            "title": "Create column charts",
+                            "path": ""
+                        },
+                        {
+                            "title": "Chart configurations",
+                            "children": [{
+                                    "title": "Change size",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Border & background",
+                                    "path": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }]
