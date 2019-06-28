@@ -1,73 +1,116 @@
 [{
-    "title": "FusionCharts",
-    "header": "FusionCharts Suite XT",
-    "icon": "fc_fusioncharts_xt",
-    "description": "Plot 95+ charts and 1400+ data-driven maps",
-    "longDescription": "Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
-    "children": [{
-            "title": "Getting Started",
-            "children": [{
-                    "title": "Installation",
-                    "path": ""
-                },
-                {
-                    "title": "Quick Start",
-                    "path": ""
-                },
-                {
-                    "title": "How does it work?",
-                    "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
-                }
-            ]
+        "title": "FusionCharts",
+        "header": "FusionCharts Suite XT",
+        "icon": "fc_fusioncharts_xt",
+        "description": "Plot 95+ charts and 1400+ data-driven maps",
+        "longDescription": "Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
+        "children": [{
+                "title": "Getting Started",
+                "children": [{
+                        "title": "Installation",
+                        "path": ""
+                    },
+                    {
+                        "title": "Quick Start",
+                        "path": ""
+                    },
+                    {
+                        "title": "How does it work?",
+                        "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
+                    }
+                ]
 
-        },
-        {
-            "title": "Chart types",
-            "children": [{
-                    "title": "List of charts",
-                    "path": ""
-                },
-                {
-                    "title": "Column Charts",
-                    "children": [{
-                            "title": "Create column charts",
-                            "path": ""
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}]
+            },
+            {
+                "title": "Chart types",
+                "children": [{
+                        "title": "List of charts",
+                        "path": ""
+                    },
+                    {
+                        "title": "Column Charts",
+                        "children": [{
+                                "title": "Create column charts",
+                                "path": ""
+                            },
+                            {
+                                "title": "Chart configurations",
+                                "children": [{
+                                        "title": "Change size",
+                                        "path": ""
+                                    },
+                                    {
+                                        "title": "Border & background",
+                                        "path": ""
+                                    },
+                                    {
+                                        "title": "Fonts",
+                                        "path": ""
+                                    },
+                                    {
+                                        "title": "Number formats",
+                                        "path": ""
+                                    },
+                                    {
+                                        "title": "Chart pallets",
+                                        "path": ""
+                                    },
+                                    {
+                                        "title": "Load external logo",
+                                        "path": ""
+                                    },
+                                    {
+                                        "title": "Padding & Margin",
+                                        "path": ""
+                                    },
+                                    {
+                                        "title": "Chart components",
+                                        "children": [{
+                                                "title": "Caption & sub-caption",
+                                                "path": ""
+                                            },
+                                            {
+                                                "title": "Canvas",
+                                                "path": ""
+                                            },
+                                            {
+                                                "title": "Data plot",
+                                                "path": ""
+                                            },
+                                            {
+                                                "title": "Y-axis",
+                                                "path": ""
+                                            },
+                                            {
+                                                "title": "X-axis",
+                                                "path": ""
+                                            },
+                                            {
+                                                "title": "Trendlines & Trendzones",
+                                                "path": ""
+                                            },
+                                            {
+                                                "title": "Tooltips",
+                                                "path": ""
+                                            },
+                                            {
+                                                "title": "Toolbar",
+                                                "path": ""
+                                            },
+                                            {
+                                                "title": "Legend",
+                                                "path": ""
+                                            },
+                                            {
+                                                "title": "Div lines & grids",
+                                                "path": ""
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
