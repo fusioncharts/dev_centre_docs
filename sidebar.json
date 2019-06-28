@@ -26,16 +26,16 @@
             "children": [{
                     "title": "List of charts",
                     "path": ""
-                },
-                {
-                    "title": "Chart anatomy",
-                    "path": ""
-                },
+                }
                 {
                     "title": "Column Charts",
                     "children": [{
                             "title": "Create column charts",
                             "path": ""
+                        },
+                        {
+                          "title": "Chart anatomy",
+                          "path": ""
                         },
                         {
                             "title": "Chart configurations",
