@@ -34,10 +34,6 @@
                             "path": ""
                         },
                         {
-                            "title": "Chart anatomy",
-                            "path": ""
-                        },
-                        {
                             "title": "Chart configurations",
                             "children": [{
                                     "title": "Change size",
