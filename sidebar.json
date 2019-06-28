@@ -28,6 +28,10 @@
                     "path": ""
                 },
                 {
+                    "title": "Chart anatomy",
+                    "path": ""
+                },
+                {
                     "title": "Column Charts",
                     "children": [{
                             "title": "Create column charts",
