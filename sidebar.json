@@ -11,7 +11,7 @@
                     "path": ""
                 },
                 {
-                    "title": "Quick Start",
+                    "title": "Quick start",
                     "path": ""
                 },
                 {
@@ -28,13 +28,13 @@
                     "path": ""
                 },
                 {
-                    "title": "Column Charts",
+                    "title": "Column charts",
                     "children": [{
-                            "title": "Create column charts",
+                            "title": "Chart anatomy",
                             "path": ""
                         },
                         {
-                            "title": "Chart anatomy",
+                            "title": "Create column charts",
                             "path": ""
                         },
                         {
@@ -124,7 +124,11 @@
                 {
                     "title": "Area Charts",
                     "children": [{
-                            "title": "Create Area charts",
+                            "title": "Chart anatomy",
+                            "path": ""
+                        },
+                        {
+                            "title": "Create area charts",
                             "path": ""
                         },
                         {
@@ -219,7 +223,11 @@
                 {
                     "title": "Line Charts",
                     "children": [{
-                            "title": "Create Line charts",
+                            "title": "Chart anatomy",
+                            "path": ""
+                        },
+                        {
+                            "title": "Create line charts",
                             "path": ""
                         },
                         {
