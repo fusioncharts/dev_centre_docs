@@ -30,10 +30,10 @@
 
         },
         {
-            "title": "Chart types",
+            "title": "Charts",
             "children": [{
-                            "title": "Column charts",
-                            "children": [{
+                    "title": "Column charts",
+                    "children": [{
                             "title": "Chart anatomy",
                             "path": ""
                         },
@@ -312,6 +312,245 @@
                                 },
                                 {
                                     "title": "Div lines & grids",
+                                    "path": ""
+                                }
+
+                            ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
+                        }
+                    ]
+                }
+
+
+            ]
+        },
+        {
+            "title": "Gauges & Widgets",
+            "children": [{
+                    "title": "Angular gauge",
+                    "children": [{
+                            "title": "Gauge anatomy",
+                            "path": ""
+                        },
+                        {
+                            "title": "Create angular gauge",
+                            "path": ""
+                        },
+                        {
+                            "title": "Gauge configurations",
+                            "children": [{
+                                    "title": "Change size",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Border & background",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Number formats",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load external logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                }
+
+                            ]
+                        },
+                        {
+                            "title": "Gauge components",
+                            "children": [{
+                                    "title": "Caption & sub-caption",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Dials",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Ticks",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Tooltips",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Toolbar",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Legend",
+                                    "path": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "Cylinder gauge",
+                    "children": [{
+                            "title": "Gauage anatomy",
+                            "path": ""
+                        },
+                        {
+                            "title": "Create cylinder gauge",
+                            "path": ""
+                        },
+                        {
+                            "title": "Gauge configurations",
+                            "children": [{
+                                    "title": "Change size",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Border & background",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Number formats",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load external logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                }
+
+
+                            ]
+                        },
+                        {
+                            "title": "Chart components",
+                            "children": [{
+                                    "title": "Caption & sub-caption",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Dials",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Ticks",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Tooltips",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Toolbar",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Legend",
+                                    "path": ""
+                                }
+
+                            ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "Linear gauge",
+                    "children": [{
+                            "title": "Gauge anatomy",
+                            "path": ""
+                        },
+                        {
+                            "title": "Create linear gauge",
+                            "path": ""
+                        },
+                        {
+                            "title": "Gauge configurations",
+                            "children": [{
+                                    "title": "Change size",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Border & background",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Number formats",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load external logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Gauge components",
+                            "children": [{
+                                    "title": "Caption & sub-caption",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Dials",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Ticks",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Tooltips",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Toolbar",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Legend",
                                     "path": ""
                                 }
 
