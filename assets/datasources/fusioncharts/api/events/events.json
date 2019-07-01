@@ -448,8 +448,12 @@
     "name": "initialized",
     "kind": "Lifecycle",
     "scope": "component",
-    "description": "Triggered when a new instance of the [FusionCharts](/api/fusioncharts) constructor is created. \n\n>Initialization does not indicate that the chart has rendered; it only indicates that the JavaScript object instance (`new FusionCharts()`) is created and is ready to be operated upon. \n\n \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5atyLua7/ )",
-    "examples": {},
+    "about": "Triggered when a new instance of the FusionCharts constructor is created.",
+    "description": "Triggered when a new instance of the [FusionCharts](/api/fusioncharts) constructor is created. \n\n>Initialization does not indicate that the chart has rendered; it only indicates that the JavaScript object instance (`new FusionCharts()`) is created and is ready to be operated upon.",
+    "examples": {
+      "codeFile": "initialized",
+      "fiddle": "http://jsfiddle.net/fusioncharts/5atyLua7/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -688,9 +692,12 @@
     "name": "legendPointerDragStart",
     "kind": "Legend",
     "scope": "component",
-    "about": "",
-    "description": "Triggered when the user starts dragging the legend pointer of a gradient legend, in the heatmap chart and maps. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7jouh8ds/ )",
-    "examples": {},
+    "about": "Triggered when the user starts dragging the legend pointer of a gradient legend, in the heatmap chart and maps.",
+    "description": "Triggered when the user starts dragging the legend pointer of a gradient legend, in the heatmap chart and maps.",
+    "examples": {
+      "codeFile": "legendPointerDragStart",
+      "fiddle": "http://jsfiddle.net/fusioncharts/7jouh8ds/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -867,8 +874,12 @@
     "name": "legendPointerDragStop",
     "kind": "Legend",
     "scope": "component",
-    "description": "Triggered when the user completes dragging the legend pointer of a gradient legend, in the heatmap chart and maps. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bzp2f5z8/ )",
-    "examples": {},
+    "about": "Triggered when the user completes dragging the legend pointer of a gradient legend, in the heatmap chart and maps.",
+    "description": "Triggered when the user completes dragging the legend pointer of a gradient legend, in the heatmap chart and maps.",
+    "examples": {
+      "codeFile": "legendPointerDragStop",
+      "fiddle": "http://jsfiddle.net/fusioncharts/bzp2f5z8/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -1045,8 +1056,12 @@
     "name": "legendRangeUpdated",
     "kind": "Legend",
     "scope": "component",
+    "about": "Triggered when the range of a gradient legend, in the heat map chart and maps, is updated by dragging the legend pointers.",
     "description": "Triggered when the range of a gradient legend, in the heat map chart and maps, is updated by dragging the legend pointers. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/pboewkxL/ )",
-    "examples": {},
+    "examples": {
+      "codeFile": "legendRangeUpdated",
+      "fiddle": "http://jsfiddle.net/fusioncharts/pboewkxL/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -1223,8 +1238,12 @@
     "name": "dataLoadRequestCompleted",
     "kind": "Data",
     "scope": "component",
-    "description": "__Triggered__ when chart data is successfully loaded from a URL (instead of a static JSON or XML file from the system). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2cvbm0du/ )",
-    "examples": {},
+    "about": "Triggered when chart data is successfully loaded from a URL.",
+    "description": "__Triggered__ when chart data is successfully loaded from a URL (instead of a static JSON or XML file from the system).",
+    "examples": {
+      "codeFile": "dataLoadRequestCompleted",
+      "fiddle": "http://jsfiddle.net/fusioncharts/2cvbm0du/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -1455,7 +1474,8 @@
     "name": "dataLoadError",
     "kind": "Data",
     "scope": "component",
-    "description": "Triggered if an error is encountered while loading data from the specified URL to the chart object. ",
+    "about": "Triggered if an error is encountered while loading data from the specified URL to the chart object.",
+    "description": "Triggered if an error is encountered while loading data from the specified URL to the chart object.",
     "examples": {},
     "params": {
       "eventObj": {
@@ -1633,6 +1653,7 @@
     "name": "dataLoadCancelled",
     "kind": "Data",
     "scope": "component",
+    "about": "Triggered when the default behavior of the `dataLoadRequested` event is cancelled using the `eventObj.preventDefault()` method.",
     "description": "Triggered when the default behavior of the [dataLoadRequested](/api/fusioncharts/fusioncharts-events#event-dataLoadRequested) event is cancelled using the `eventObj.preventDefault()` method. Subsequently, all AJAX requests are aborted.",
     "examples": {},
     "params": {
@@ -1775,8 +1796,12 @@
     "name": "dataLoadRequestCancelled",
     "kind": "Data",
     "scope": "component",
-    "description": "Triggered when the default behavior of the [dataLoadRequested](/api/fusioncharts/fusioncharts-events#event-dataLoadRequested) event is cancelled by calling the `eventObj.preventDefault()` method. The event is internally fired if the data source is a local path or the URL fails internal security checks. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/y1wf07wu/ )",
-    "examples": {},
+    "about": "Triggered when the default behavior of the `dataLoadRequested` event is cancelled by calling the `eventObj.preventDefault()` method.",
+    "description": "Triggered when the default behavior of the [dataLoadRequested](/api/fusioncharts/fusioncharts-events#event-dataLoadRequested) event is cancelled by calling the `eventObj.preventDefault()` method. The event is internally fired if the data source is a local path or the URL fails internal security checks.",
+    "examples": {
+      "codeFile": "dataLoadRequestCancelled",
+      "fiddle": "http://jsfiddle.net/fusioncharts/y1wf07wu/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -2100,8 +2125,12 @@
     "name": "dataUpdated",
     "kind": "Data",
     "scope": "component",
-    "description": "Triggered when chart data is updated and the chart is redrawn, after the [drawComplete](/api/fusioncharts/fusioncharts-events#event-drawComplete) event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/pfmo5pnh/ )",
-    "examples": {},
+    "about": "Triggered when chart data is updated and the chart is redrawn.",
+    "description": "Triggered when chart data is updated and the chart is redrawn, after the [drawComplete](/api/fusioncharts/fusioncharts-events#event-drawComplete) event.",
+    "examples": {
+      "codeFile": "dataUpdated",
+      "fiddle": "http://jsfiddle.net/fusioncharts/pfmo5pnh/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -2296,8 +2325,12 @@
     "name": "dataUpdateCancelled",
     "kind": "Data",
     "scope": "component",
-    "description": "Triggered when the default behavior of the [beforeDataUpdate](/api/fusioncharts/fusioncharts-events#event-beforeDataUpdate) event is cancelled by calling the `eventObj.preventDefault()` method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/0j7tuds4/ )",
-    "examples": {},
+    "about": "Triggered when the default behavior of the `beforeDataUpdate` event is cancelled by calling the `eventObj.preventDefault()` method.",
+    "description": "Triggered when the default behavior of the [beforeDataUpdate](/api/fusioncharts/fusioncharts-events#event-beforeDataUpdate) event is cancelled by calling the `eventObj.preventDefault()` method.",
+    "examples": {
+      "codeFile": "dataUpdateCancelled",
+      "fiddle": "http://jsfiddle.net/fusioncharts/0j7tuds4/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -2492,8 +2525,12 @@
     "name": "dataLoadRequested",
     "kind": "Data",
     "scope": "component",
-    "description": "Triggered when chart data is loaded from a URL instead of a static JSON or XML file from the system. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/j74qLp3x/ )",
-    "examples": {},
+    "about": "Triggered when chart data is loaded from a URL instead of a static JSON or XML file from the system.",
+    "description": "Triggered when chart data is loaded from a URL instead of a static JSON or XML file from the system.",
+    "examples": {
+      "codeFile": "dataLoadRequested",
+      "fiddle": "http://jsfiddle.net/fusioncharts/j74qLp3x/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -2817,8 +2854,12 @@
     "name": "linkedItemOpened",
     "kind": "Drill Down",
     "scope": "action",
-    "description": "Triggered when a linked chart is rendered, after the parent link is clicked. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5p7fttnk/ )",
-    "examples": {},
+    "about": "Triggered when a linked chart is rendered, after the parent link is clicked.",
+    "description": "Triggered when a linked chart is rendered, after the parent link is clicked.",
+    "examples": {
+      "codeFile": "linkedItemOpened",
+      "fiddle": "http://jsfiddle.net/fusioncharts/5p7fttnk/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -3105,8 +3146,12 @@
     "name": "linkedItemClosed",
     "kind": "Drill Down",
     "scope": "action",
-    "description": "Triggered when a linked chart is closed to go back to its parent chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ec7rweda/ )",
-    "examples": {},
+    "about": "Triggered when a linked chart is closed to go back to its parent chart.",
+    "description": "Triggered when a linked chart is closed to go back to its parent chart.",
+    "examples": {
+      "codeFile": "linkedItemClosed",
+      "fiddle": "http://jsfiddle.net/fusioncharts/ec7rweda/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
