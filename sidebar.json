@@ -567,6 +567,43 @@
             ]
         },
         {
+            "title": "Maps",
+            "children": [{
+                    "title": "Installation",
+                    "path": ""
+                },
+                {
+                    "title": "Create a map",
+                    "path": ""
+                },
+                {
+                    "title": "Custom entity IDs",
+                    "path": ""
+                },
+                {
+                    "title": "Markers",
+                    "path": ""
+                },
+                {
+                    "title": "Coloring based on data range",
+                    "path": ""
+                },
+                {
+                    "title": "Listening to map events",
+                    "path": ""
+                },
+                {
+                    "title": "Map spec sheets",
+                    "path": ""
+                },
+                {
+                    "title": "Map marker data",
+                    "path": ""
+                }
+
+            ]
+        },
+        {
             "title": "Advanced Features",
             "children": [{
                     "title": "Drill-down",
