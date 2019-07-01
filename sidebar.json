@@ -17,6 +17,14 @@
                 {
                     "title": "How does it work?",
                     "path": ""
+                },
+                {
+                    "title": "List of charts",
+                    "path": ""
+                },
+                {
+                    "title": "List of maps",
+                    "path": ""
                 }
             ]
 
@@ -24,12 +32,8 @@
         {
             "title": "Chart types",
             "children": [{
-                    "title": "List of charts",
-                    "path": ""
-                },
-                {
-                    "title": "Column charts",
-                    "children": [{
+                            "title": "Column charts",
+                            "children": [{
                             "title": "Chart anatomy",
                             "path": ""
                         },
