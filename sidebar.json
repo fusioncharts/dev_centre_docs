@@ -320,7 +320,25 @@
                     ]
                 }
 
+
             ]
+        },
+        {
+            "title": "Advanced Features",
+            "children": [{
+                    "title": "Drill-down",
+                    "path": ""
+                },
+                {
+                    "title": "Annotations",
+                    "path": ""
+                },
+                {
+                    "title": "Export",
+                    "path": ""
+                }
+            ]
+
         }
     ]
 
