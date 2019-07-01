@@ -1989,12 +1989,9 @@
     "name": "beforedataload",
     "kind": "Data",
     "scope": "component",
-    "about": "",
+    "about": "Triggered when the data is updated to a chart.",
     "description": "Triggered when the data is updated to a chart. This hook can be used by the theme manager to update the chart data.",
-    "examples": {
-      "codeFile": "beforeLinkedItemOpen",
-      "fiddle": "http://jsfiddle.net/fusioncharts/sxewndyu/"
-    },
+    "examples": {},
     "params": {
       "eventObj": {
         "name": "eventObj",
