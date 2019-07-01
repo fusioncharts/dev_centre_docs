@@ -1989,8 +1989,12 @@
     "name": "beforedataload",
     "kind": "Data",
     "scope": "component",
+    "about": "",
     "description": "Triggered when the data is updated to a chart. This hook can be used by the theme manager to update the chart data.",
-    "examples": {},
+    "examples": {
+      "codeFile": "beforeLinkedItemOpen",
+      "fiddle": "http://jsfiddle.net/fusioncharts/sxewndyu/"
+    },
     "params": {
       "eventObj": {
         "name": "eventObj",
@@ -2689,7 +2693,7 @@
     "kind": "Drill Down",
     "scope": "action",
     "about": "Triggered just before a linked item in a LinkedChart is rendered, after the parent link is clicked",
-    "description": "Triggered just before a linked item in a [LinkedChart]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %} is rendered, after the parent link is clicked. It is triggered before the instance of the drill-down chart is instantiated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sxewndyu/ )",
+    "description": "Triggered just before a linked item in a [LinkedChart]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %} is rendered, after the parent link is clicked. It is triggered before the instance of the drill-down chart is instantiated.",
     "examples": {
       "codeFile": "beforeLinkedItemOpen",
       "fiddle": "http://jsfiddle.net/fusioncharts/sxewndyu/"
