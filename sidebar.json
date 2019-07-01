@@ -206,12 +206,13 @@
                                 {
                                     "title": "Div lines & grids",
                                     "path": ""
-                                },
-                                {
-                                    "title": "List of attributes",
-                                    "path": ""
                                 }
+
                             ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
                         }
                     ]
                 }
