@@ -122,100 +122,92 @@
                     ]
                 },
                 {
-                    "title": "Chart types",
+                    "title": "Area Charts",
                     "children": [{
-                            "title": "List of charts",
+                            "title": "Create Area charts",
                             "path": ""
                         },
                         {
-                            "title": "Area Charts",
+                            "title": "Chart configurations",
                             "children": [{
-                                    "title": "Create Area charts",
+                                    "title": "Change size",
                                     "path": ""
                                 },
                                 {
-                                    "title": "Chart configurations",
+                                    "title": "Border & background",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Number formats",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load external logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart components",
                                     "children": [{
-                                            "title": "Change size",
+                                            "title": "Caption & sub-caption",
                                             "path": ""
                                         },
                                         {
-                                            "title": "Border & background",
+                                            "title": "Canvas",
                                             "path": ""
                                         },
                                         {
-                                            "title": "Fonts",
+                                            "title": "Data plot",
                                             "path": ""
                                         },
                                         {
-                                            "title": "Number formats",
+                                            "title": "Anchors",
                                             "path": ""
                                         },
                                         {
-                                            "title": "Chart pallets",
+                                            "title": "Y-axis",
                                             "path": ""
                                         },
                                         {
-                                            "title": "Load external logo",
+                                            "title": "X-axis",
                                             "path": ""
                                         },
                                         {
-                                            "title": "Padding & Margin",
+                                            "title": "Trendlines & Trendzones",
                                             "path": ""
                                         },
                                         {
-                                            "title": "Chart components",
-                                            "children": [{
-                                                    "title": "Caption & sub-caption",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "Canvas",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "Data plot",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "Anchors",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "Y-axis",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "X-axis",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "Trendlines & Trendzones",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "Tooltips",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "Toolbar",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "Legend",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "Div lines & grids",
-                                                    "path": ""
-                                                },
-                                                {
-                                                    "title": "List of attributes",
-                                                    "path": ""
-                                                }
-
-                                            ]
+                                            "title": "Tooltips",
+                                            "path": ""
+                                        },
+                                        {
+                                            "title": "Toolbar",
+                                            "path": ""
+                                        },
+                                        {
+                                            "title": "Legend",
+                                            "path": ""
+                                        },
+                                        {
+                                            "title": "Div lines & grids",
+                                            "path": ""
+                                        },
+                                        {
+                                            "title": "List of attributes",
+                                            "path": ""
                                         }
+
                                     ]
                                 }
                             ]
@@ -225,4 +217,5 @@
             ]
         }
     ]
+
 }]
