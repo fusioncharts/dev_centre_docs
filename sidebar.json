@@ -339,7 +339,25 @@
                 }
             ]
 
+        },
+        {
+            "title": "API reference",
+            "children": [{
+                    "title": "Events",
+                    "path": ""
+                },
+                {
+                    "title": "Methods",
+                    "path": ""
+                },
+                {
+                    "title": "List of attributes",
+                    "path": ""
+                }
+            ]
+
         }
+
     ]
 
 }]
