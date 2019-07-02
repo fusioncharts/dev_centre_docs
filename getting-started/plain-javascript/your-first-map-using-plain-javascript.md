@@ -1,7 +1,7 @@
 ---
-title: Create a Map using FusionCharts | FusionCharts
+title: Create a Map Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the plain javascript.
-heading: Create a Map using FusionCharts
+heading: Create a Map Using FusionCharts
 ---
 
 **FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
@@ -41,13 +41,13 @@ Install **FusionCharts** using any of the following steps:
 <div>The code is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
+    &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Step 2 - Including the map renderer file --&gt;
+    &lt;!-- Step 2 - Include the map renderer file --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "&gt;&lt;/script>
-    &lt;!-- Step 3 - Including the map definition file --&gt;
+    &lt;!-- Step 3 - Include the map definition file --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
-    &lt;!-- Step 4 - Including the fusion theme --&gt;
+    &lt;!-- Step 4 - Include the fusion theme --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -67,13 +67,13 @@ Install **FusionCharts** using any of the following steps:
 <div>The code is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
+    &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including the map renderer file --&gt;
+    &lt;!-- Step 2 - Include the map renderer file --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js "&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the map definition file --&gt;
+    &lt;!-- Step 3 - Include the map definition file --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.world.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 4 - Including the fusion theme --&gt;
+    &lt;!-- Step 4 - Include the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -85,13 +85,13 @@ Install **FusionCharts** using any of the following steps:
 
 That completes the installation of **FusionCharts** Suite.
 
-## Create you First map
+## Create Your First Map
 
 In this section, we will create a visualization using the **World Map** showing the average annual population growth.
 
 {% embed_chart getting-started-your-first-map.js %}
 
-## Map data
+## Map Data
 
 The data for the above map is represented in the table below:
 
@@ -186,9 +186,9 @@ In the above JSON data:
 
 The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
-Now that you have the data in JSON format, let's learn how to render the map.
+Now that you have the data in JSON format, let's render the map.
 
-## Render the map
+## Render the Map
 
 To render the map follow the steps below:
 
