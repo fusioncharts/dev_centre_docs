@@ -6,9 +6,9 @@ heading: Percentage Calculation
 
 Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, percentage calculation, and events.
 
-In the sections below, you can see how to calculate the percentage of a data plot with respect to all the data plots.
+This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots.
 
-A chart configured to calculate the percentage is shown below:
+A chart configured to calculate the percent, is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 
@@ -19,7 +19,7 @@ import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-//Add the chart and the theme as dependencies
+// Add the chart and theme as dependency
 FusionCharts.addDep(Charts);
 FusionCharts.addDep(FusionTheme);
 
@@ -96,11 +96,11 @@ var chartInstance = new FusionCharts({
 chartInstance.render();
 ```
 
-Render the above chart by following the steps given below:
+The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Add the chart and the theme as dependencies.
+2. Add the chart and theme as dependency. 
 
 3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -115,4 +115,4 @@ Render the above chart by following the steps given below:
 	* `dataplotrollout` event resets the default message.
 	* `renderComplete` event calculates and stores the total value of the chart data.
 
-6. Use `addEventListener` to update the events listed above.
+6. `addEventListener` is used to update the above listed events.

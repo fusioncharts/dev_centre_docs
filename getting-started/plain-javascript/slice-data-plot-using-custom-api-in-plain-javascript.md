@@ -1,12 +1,12 @@
 ---
-title: Slice Data Plot Using API | FusionCharts
-description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API.
-heading: Slice Data Plot Using API
+title: Slice Data Plot using API | FusionCharts
+description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API .
+heading: Slice Data Plot using API
 ---
 
-FusionCharts Suite XT includes advanced features, including a wide range of APIs. You can use these in different stages in the life cycle of a chart to configure what should happen when you interact with the chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
+FusionCharts Suite XT includes advanced features that offers a wide range of APIs that you can use for different stages in the ife cycle of a chart or when you interact with a chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
 
-In the sections below, you can see how to slice out the data plots of a Pie 2D chart using chart-specific custom API.
+This article focuses on how you can slice out the data plots of a Pie 2D chart using chart specific custom API.
 
 A chart configured to slice out the data plots of a `pie2d` chart, is shown below:
 
@@ -165,11 +165,11 @@ ReactDOM.render(
 );
 ```
 
-Render the above chart by following the steps given below:
+The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Add the chart and the theme as dependencies. 
+2. Add the chart and theme as dependency. 
 
 3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `pie2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -177,8 +177,8 @@ Render the above chart by following the steps given below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-4. Call the `beforeRender` event to slice the data plot of the chart.
+4. `beforeRender` event is called to slice the data plot of the chart.
 
-5. Create radio buttons inside the `<div>` tags to choose the data plot you want to slice out.
+5. Radio buttons are created inside the `<div>` to choose a data plot you want to slice out.
 
-6. Add functionalities to the radio buttons, to update the chart type at runtime.
+6. Functionalities are added to the radio buttons to update the chart type at runtime.

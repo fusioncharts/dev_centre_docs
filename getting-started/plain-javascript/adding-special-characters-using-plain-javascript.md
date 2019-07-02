@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for adding special c
 heading: Adding Special Characters
 ---
 
-FusionCharts offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale. This article focuses on how you can customize the prefix and suffix of the numbers on the chart.
+FusionCharts offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale. This article focuses on how you customize the prefix and suffix of the numbers on the chart.
 
 To customize the prefix and suffix of the numbers on the chart, use the following attributes:
 
@@ -31,7 +31,7 @@ import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Add the chart and the theme as dependencies.
+// Add the chart and theme as dependency
 FusionCharts.addDep(Charts);
 FusionCharts.addDep(FusionTheme);
 
@@ -89,19 +89,18 @@ var chartInstance = new FusionCharts({
             "value": "730000"
         }]
     }
-});
-// Render
+});// Render
 chartInstance.render();
 ```
 
-Render the above chart by following the steps given below:
+The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Add the chart and the theme as dependencies. 
+2. Add the chart and theme as dependency. 
 
 3. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.

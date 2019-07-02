@@ -14,9 +14,8 @@ FusionCharts Suite XT ships with the following predefined themes:
 - `zune`
 - `ocean`
 - `carbon`
-- `umber` (since v3.13.5)
 
-In the sections below, you can see how to apply different themes to the chart at runtime.﻿ Click any radio button, to see how the look and feel of the chart changes with each theme.
+This article focuses on how you can apply different themes to the chart at runtime. Click any radio button, to see how the look and feel of the chart change with each theme.
 
 A chart configured to change the theme, is shown below:
 
@@ -29,7 +28,7 @@ import FusionCharts from "fusioncharts";
 import Charts from "fusioncharts/fusioncharts.charts";
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-//Add the chart and the theme as dependencies
+// Add the chart and theme as dependency
 FusionCharts.addDep(Charts);
 FusionCharts.addDep(FusionTheme);
 
@@ -184,11 +183,11 @@ var chartInstance = new FusionCharts({
 chartInstance.render();
 ```
 
-Render the above chart by following the steps given below:
+The above chart has been rendered using the following steps:
 
-1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
+1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Add the chart and the theme as dependencies.
+2. Add the chart and theme as dependency.
 
 3. Store the chart configuration in a JSON object. In the JSON object:
 
@@ -197,9 +196,9 @@ Render the above chart by following the steps given below:
    - Set the `dataFormat` as JSON.
    - Embed the json data as the value of `dataSource`.
 
-4. Call the `beforeRender` event to update theme from `fusion` to any other theme.
+4. `beforeRender` event is called to update theme from `fusion` to any other theme.
 
-5. Create radio buttons inside the `<div>` tags to choose a theme from:
+5. Radio buttons are created inside the `<div>` to choose a theme from:
 
    - fusion
    - gammel
@@ -207,6 +206,5 @@ Render the above chart by following the steps given below:
    - zune
    - ocean
    - carbon
-   - umber 
 
-6. Add functionalities to the radio buttons, to update the theme at runtime.
+6. Functionalities are added to the radio buttons to update the theme at runtime.
