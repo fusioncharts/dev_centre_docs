@@ -1,14 +1,14 @@
 ---
-title: Dynamically Add Chart Event Listener using Plain JS | FusionCharts
+title: Dynamically Add Chart Event Listener Using Plain JS | FusionCharts
 description: This article tells you how to dynamically add chart event listener to your chart using plain JS.
-heading: Dynamically Add Chart Event Listener using Plain JS
+heading: Dynamically Add Chart Event Listener Using Plain JS
 ---
 
-FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, add events at runtime, and remove events at runtime.
+FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, and options to add/remove events at runtime.
 
-Events are signals that let you execute specific actions—such as manipulating the DOM, sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. Events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
+Events are signals that let you execute specific actions - such as manipulate the DOM, send data to the server, etc., using JavaScript, in response to any interaction/update for a chart. You can use events to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
-This article focuses on how you can dynamically add/remove event listener to the data plots in the chart.
+In the sections below, you can see how to dynamically add/remove event listener to the data plots in the chart.
 
 A chart is shown below:
 
@@ -21,7 +21,7 @@ import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Add the chart and theme as dependency
+//Add the chart and the theme as dependencies
 FusionCharts.addDep(Charts);
 FusionCharts.addDep(FusionTheme);
 
@@ -135,11 +135,11 @@ var chartInstance = new FusionCharts({
 chartInstance.render();
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps given below:
 
 1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Add the chart and theme as dependency. 
+2. Add the chart and the theme as dependencies. 
 
 3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -154,6 +154,6 @@ The above chart has been rendered using the following steps:
 	* Add an event listener for `dataPlotClick` event when the message is updated with the values of the data plot.
 	* Add a handler is added for the **REMOVE DATAPLOTCLICK EVENT** button. The button resets the chart to default message and removes the event listener.
 
-5. Buttons are created inside the `<div>` to add the event listener to the data plot.
+5. Create buttons inside `<div>` tags to add the event listener to the data plot.
 
-6. Functionalities are added to the button to add/remove the event listener.
+6. Add functionalities to the button, to add/remove the event listener.

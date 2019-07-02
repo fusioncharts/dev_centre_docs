@@ -1,10 +1,10 @@
 ---
-title: Lifecycle Events using Plain JS | FusionCharts
+title: Lifecycle Events Using Plain JS | FusionCharts
 description: The sample in this article lists the basic lifestyle events at the time of rendering the chart.
-heading: Lifecycle Events using Plain JS
+heading: Lifecycle Events Using Plain JS
 ---
 
-Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, and events.
+Events are signals that let you execute specific actions - such as manipulate the DOM, send data to the server, etc., using JavaScript, in response to any interaction/update for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates and events.
 
 The sample in this article lists the basic lifestyle events at the time of rendering the chart.
 
@@ -19,7 +19,7 @@ import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Add the chart and theme as dependency
+//Add the chart and the theme as dependencies
 FusionCharts.addDep(Charts);
 FusionCharts.addDep(FusionTheme);
 
@@ -90,17 +90,17 @@ var chartInstance = new FusionCharts({
 chartInstance.render();
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps given below:
 
-1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
+1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
 
-2. Add the chart and theme as dependency. 
+2. Add the chart and the theme as dependencies.
 
 3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+    * Set the `dataFormat` as `json`.
+    * Embed the JSON data as the value of `dataSource`.
 
 4. In the above sample:
 	* Use the callback handler for `beforeDataUpdate` event.
@@ -108,4 +108,4 @@ The above chart has been rendered using the following steps:
 	* Use the callback handler for `drawComplete` event.
 	* Use the callback handler for `renderComplete` event.
 
-5. Create `<div>` element to display the message.
+5. Create a `<div>` element to display the message.

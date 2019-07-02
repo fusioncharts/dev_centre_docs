@@ -6,11 +6,11 @@ heading: Setting Data Source Using URL
 
 FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a `.json` or `.xml` file and then pass the relative URL of this file as value to the `dataSource` attribute. 
 
-The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
+The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` or `xmlurl`, respectively.
 
 This article explains how you can set the chart data using the URL of the corresponding file.
 
-## Load data using JSON as URL
+## Load Data Using JSON as URL
 
 Let's build the same revenue chart which we built in the [first example](/getting-started/plain-javascript/your-first-chart-using-plain-javascript) using JSON, and use a .json file as the data source.
 
@@ -81,15 +81,13 @@ The code to render the above chart is given below:
 // Include the core fusioncharts file from core  -
 import FusionCharts from 'fusioncharts/core';
 
-// Include the chart from viz folder
-// E.g. - import ChartType from fusioncharts/viz/[ChartType]
+// Include the chart from viz folder, e.g., import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';
 
 // Include the fusion theme
 /import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     
-// Add the chart and theme as dependency
-// E.g. FusionCharts.addDep(ChartType)
+// Add the chart and theme as dependency, e.g., FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
     
@@ -101,27 +99,28 @@ var chartInstance = new FusionCharts({
     dataFormat: 'jsonurl',
     dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json'
 });
+
 // Render
 chartInstance.render();
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps given below:
 
-1. Included the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
+1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type to `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and the height of the chart in pixels.
 
 3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **jsonurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
+    * Set the value of `dataFormat` to **jsonurl**.
+    * Set a static URL to `dataSource`, to render the above chart.
 
 4. Add a container (instance) for the chart.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
-## Load data using XML as URL
+## Load Data Using XML as URL
 
 The XML representation for the above chart looks as shown below:
 
@@ -147,12 +146,11 @@ The code to render the above chart is given below:
 // Include the core fusioncharts file from core  -
 import FusionCharts from 'fusioncharts/core';
 
-// Include the chart from viz folder
-// E.g. - import ChartType from fusioncharts/viz/[ChartType]
+// Include the chart from viz folder, e.g., import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';
 
 // Include the fusion theme
-/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     
 // Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
@@ -167,20 +165,21 @@ var chartInstance = new FusionCharts({
     dataFormat: 'xmlurl',
     dataSource: 'https://static.fusioncharts.com/sample/oilReserves.xml'
 });
+
 // Render
 chartInstance.render();
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps given below:
 
-1. Included the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
+1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
 
-2. Stored the chart configuration in an XML object. In the XML object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels.
+2. Store the chart configuration in an XML object. In the XML object:
+    * Set the chart type to `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and the height of the chart in pixels.
 
 3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **jsonurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
+    * Set the value of `dataFormat` to **jsonurl**.
+    * Set a static URL to `dataSource`, to render the above chart.
 
 4. Add a container (instance) for the chart.

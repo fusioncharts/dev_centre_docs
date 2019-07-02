@@ -4,9 +4,9 @@ description: This article will showcase a sample to change the chart type at run
 heading: Change Chart Type at Runtime
 ---
 
-FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, update chart type at runtime, and events.
+FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include updating chart type at runtime, and events.
 
-This article focuses on how you can change the chart type of the chart at runtime. The chart types used in the sample is:
+In the sections below, you can see how to change the chart type of the chart at runtime. The chart types used in the sample are:
 
 * Column 2D
 * Bar 2D
@@ -23,7 +23,7 @@ import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Add the chart and theme as dependency
+// Add the chart and the theme as dependencies
 FusionCharts.addDep(Charts);
 FusionCharts.addDep(FusionTheme);
 
@@ -145,23 +145,23 @@ var chartInstance = new FusionCharts({
 chartInstance.render();
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps given below:
 
-1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
+1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
 
-2. Add the chart and theme as dependency. 
+2. Add the chart and the theme as dependencies. 
 
 3. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
 
-4. `beforeRender` event is called to update the chart type from `column2d` to `bar2d` or `pie2d`.
+4. Call the `beforeRender` event to update the chart type from `column2d` to `bar2d` or `pie2d`.
 
-5. Radio buttons are created inside the `<div>` to choose a chart type from:
+5. Create radio buttons inside the `<div>` tags to choose a chart type from:
 	* Column 2D
 	* Bar 2D
 	* Pie 2D
 
-6. Functionalities are added to the radio buttons to update the chart type at runtime.
+6. Add functionalities to the radio buttons, to update the chart type at runtime.
