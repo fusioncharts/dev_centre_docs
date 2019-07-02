@@ -1,12 +1,12 @@
 ---
-title: Special Events using Plain JS | FusionCharts
-description: This article showcases a draggable column chart with special events.
-heading: Special Events using Plain JS
+title: Special Events Using Plain JS | FusionCharts
+description: This article showcases a drag-able column chart with special events.
+heading: Special Events Using Plain JS
 ---
 
-FusionCharts Suite XT API offers a wide range of events that you can use to trigger actions for different stages in the life cycle of a chart or when you interact with a chart. For example, events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
+FusionCharts Suite XT API offers a wide range of events that you can use to trigger actions for different stages in the life cycle of a chart, or when you interact with a chart. For example, you can use events to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
-This article focuses on how you can dynamically drag the column and see modified value as text.
+This article focuses on how you can dynamically drag the column and see the modified value as text.
 
 A drag-able column chart is shown below:
 
@@ -19,7 +19,7 @@ import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Add the chart and theme as dependency
+//Add the chart and the theme as dependencies
 FusionCharts.addDep(Charts);
 FusionCharts.addDep(FusionTheme);
 
@@ -125,17 +125,17 @@ var chartInstance = new FusionCharts({
 chartInstance.render();
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps given below:
 
-1. Include the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
+1. Include the necessary libraries (such as the `fusioncharts` library) and components using `import`.
 
-2. Add the chart and theme as dependency. 
+2. Add the chart and the theme as dependencies. 
 
 3. Store the chart configuration in a JSON object. In the JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+    * Set the `dataFormat` as `json`.
+    * Embed the JSON data as the value of `dataSource`.
 
 4. Set the `message` which gets displayed with the rendering of the chart. 
 
@@ -143,4 +143,4 @@ The above chart has been rendered using the following steps:
 	* Use an **event listener** for `dataPlotDragEnd` event.
 	* Use the `dragPlotDragEnd` event to show a message with the dataset, initial value and final value of the dragged column.
 
-6. Create `<div>` element to display the message.
+6. Create a `<div>` element to display the message.

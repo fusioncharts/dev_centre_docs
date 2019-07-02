@@ -6,7 +6,7 @@ heading: Add Annotations
 
 Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
 
-In this article we'll create a **Spline** chart and add annotations to it. A spline chart using annotations to highlight a particular anchor along with text is shown below:
+In this article, we'll create a **Spline** chart and add annotations to it. A spline chart using annotations to highlight a particular anchor along with text is shown below:
 
 {% embed_chartData configure-charts-using-react-example-3.js json %}
 
@@ -113,8 +113,8 @@ The above chart has been rendered using the following steps:
 2. Add the chart and theme as dependency. 
 
 3. Create an instance of the chart with chart options. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+    * Set the `dataFormat` as `json`.
+    * Embed the JSON data as the value of `dataSource`.
     * Create an `annotations` object in the `dataSource`, to specify the cosmetics and functionalities of the annotation.
