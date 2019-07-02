@@ -1,7 +1,7 @@
 ---
-title: Create a Chart using FusionCharts | FusionCharts
+title: Create a Chart Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the plain javascript.
-heading: Create a Chart using FusionCharts
+heading: Create a Chart Using FusionCharts
 ---
 
 **FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
@@ -25,7 +25,7 @@ Install **FusionCharts** using any of the following steps:
 <div>
     <ol>
         <li>Before installing `fusioncharts` package via <strong>npm</strong>, make sure you have <strong>Node.js</strong> installed in your system.</li>
-        <li>Make sure you have a bundler like <strong>webpack</strong> and <strong>parcel</strong> or have a <strong>browserify</strong> installed in your system.</li>
+        <li>Make sure you have a bundler like <strong>webpack</strong> and <strong>parcel</strong> or have <strong>browserify</strong> installed in your system.</li>
     </ol>
 </div>
 <div><strong>Create a project folder using the following command:</strong></div>
@@ -52,9 +52,9 @@ Install **FusionCharts** using any of the following steps:
 <div>The code is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
+    &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Step 2 - Including the fusion theme --&gt;
+    &lt;!-- Step 2 - Include the fusion theme --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -72,9 +72,9 @@ Install **FusionCharts** using any of the following steps:
 <div>The code is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
+    &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including the fusion theme --&gt;
+    &lt;!-- Step 2 - Include the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -86,9 +86,9 @@ Install **FusionCharts** using any of the following steps:
 
 That completes the installation of **FusionCharts** Suite.
 
-## Create your first chart
+## Create Your First Chart
 
-Let's create a Column 2D chart showing the "Countries With Most Oil Reserves".
+Let's create a Column 2D chart showing the "Countries with Most Oil Reserves".
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
@@ -98,7 +98,7 @@ The Column 2D chart is shown below:
 
 To understand the chart components, click [here](/understanding-fusioncharts).
 
-## Chart data
+## Chart Data
 
 The data to render the above chart is shown in the table below:
 
@@ -119,7 +119,7 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 {
   // Chart Configuration
   "chart": {
-    "caption": "Countries With Most Oil Reserves [2017-18]",
+    "caption": "Countries with Most Oil Reserves [2017-18]",
     "subCaption": "In MMbbl = One Million barrels",
     "xAxisName": "Country",
     "yAxisName": "Reserves (MMbbl)",
@@ -186,9 +186,9 @@ In the above JSON data:
 
 Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
-Now that you have the data in JSON format, let's see how to render the chart.
+Now that you have the data in JSON format, let's render the chart.
 
-## Render the chart
+## Render the Chart
 
 To render the chart, follow the steps below:
 
@@ -246,7 +246,7 @@ type: 'Column2D',
 width: '700', // Width of the chart
 height: '400', // Height of the chart
 dataFormat: 'json', // Data type
-renderAt:'chart-container', //container where the chart will render
+renderAt:'chart-container', //Container where the chart will render
 dataSource: {
 // Chart Configuration
 "chart": {
@@ -311,7 +311,7 @@ renderAt: 'chart-container',
 width: '700', // Width of the chart
 height: '400', // Height of the chart
 dataFormat: 'json', // Data type
-renderAt:'chart-container', //container where the chart will render
+renderAt:'chart-container', //Container where the chart will render
 dataSource: {
 // Chart Configuration
 "chart": {
@@ -455,7 +455,7 @@ chartInstance.render();
     dataSource: {
         // Chart Configuration
         "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "caption": "Countries with Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
             "xAxisName": "Country",
             "yAxisName": "Reserves (MMbbl)",
@@ -507,7 +507,7 @@ chartInstance.render();
 
 That's it! Your first chart using Plain JavaScript is ready.
 
-## Problem rendering the chart?
+## Problem Rendering the Chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
