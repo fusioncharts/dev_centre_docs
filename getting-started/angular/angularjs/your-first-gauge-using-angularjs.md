@@ -4,9 +4,9 @@ description: This article outlines the steps to create your first gauge, widget 
 heading: Create a Gauge in AngularJS Using FusionCharts
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angularjs** directive which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
+FusionCharts is a JavaScript charting library that lets you create interactive charts, gauges, maps, and dashboards using JavaScript. We have built a simple and lightweight **Angularjs** directive, which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
 
-In this page, we'll see how to install FusionCharts and render a gauge using the `angularjs-fusionCharts` directive.
+In this page, you will see how to install FusionCharts and render a gauge using the `angularjs-fusionCharts` directive.
 
 ## Installation
 
@@ -96,7 +96,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 
 That completes the installation of FusionCharts and the `angularjs-fusioncharts` directive.
 
-## Create your first gauge
+## Create Your First Gauge
 
 Gauges are powerful tools that can showcase information using a radial or linear scale to display data.
 
@@ -108,7 +108,7 @@ The angular gauge is shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-## Chart data
+## Chart Data
 
 The thresholds for the above sample is shown in the table below:
 
@@ -182,7 +182,7 @@ The chart object and the respective arrays contain a set of key-value pairs know
 
 Now that you have the data in JSON format, let's see how to render the chart.
 
-## Render the gauge
+## Render the Gauge
 
 To render the gauge, follow the steps below:
 
@@ -432,7 +432,7 @@ chartInstance.render()
 
 That's it! Your first chart using `angularjs-fusioncharts` is ready.
 
-## Problem rendering the chart?
+## Problem Rendering the Chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
