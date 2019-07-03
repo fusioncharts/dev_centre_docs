@@ -1,7 +1,7 @@
 ---
-title: Apply Different Themes using Angular | FusionCharts
+title: Apply Different Themes Using Angular | FusionCharts
 description: This article will showcase how to apply different themes to the chart at runtime.
-heading: Apply Different Themes using Angular
+heading: Apply Different Themes Using Angular
 ---
 
 In FusionCharts Suite XT you can manually set the cosmetics and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. FusionCharts Suite ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
@@ -14,6 +14,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 -  `zune`
 -  `ocean`
 -  `carbon`
+-  `umber` (since v3.13.5) 
 
 This article focuses on how you can apply different themes to the chart at runtime using `angular-fusioncharts` component. Click any radio button, to see how the look and feel of the chart change with each theme.
 

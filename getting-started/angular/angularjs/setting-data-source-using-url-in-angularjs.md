@@ -213,6 +213,6 @@ Render the above chart by following the steps mentioned below:
 
 3. To set the datasource using URL:
     * Set the value of `dataFormat` as **xmlurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
+    * Set a static URL as the value of `dataSource` to render the above chart.
 
-4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.
+4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.s

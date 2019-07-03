@@ -4,9 +4,9 @@ description: Using FusionCharts Suite XT, you can create endless levels of drill
 heading: Drill-down
 ---
 
-You can use FusionCharts Suite XT to create drill-down charts. All charts (except for the Zoom line chart) support the drill-down interactivity for data elements - that is, for each chart type, the data plots in a chart (columns in column charts, pie slices in pie charts, etc.) can act as hot-spots. You can create endless levels of drill-down, based on your requirements. 
+You can use FusionCharts Suite XT to create drill down  charts. All charts (except for the Zoom line chart) support the drill down  interactivity for data elements - that is, for each chart type, the data plots in a chart (columns in column charts, pie slices in pie charts, etc.) can act as hot-spots. You can create endless levels of drill down , based on your requirements. 
 
-You can include two types of links for data plots in a drill-down chart:
+You can include two types of links for data plots in a drill down  chart:
 
 ## Simple links
 
@@ -45,7 +45,7 @@ Refer to the code below:
 
 The chart when configured using above feature, looks like as shown below:
 
-{% embed_chart chart-configurations-drill-down-example-1.js %}
+{% embed_chart chart-configurations-drill down -example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/L7vLc9n2/) to edit the above chart.
 
@@ -84,7 +84,7 @@ Refer to the code below:
 
 The chart when configured using above feature, looks like as shown below:
 
-{% embed_chart chart-configurations-drill-down-example-2.js %}
+{% embed_chart chart-configurations-drill down -example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/hs7rz3k1/) to edit the above chart.
 
@@ -168,13 +168,13 @@ Refer to the code below:
 
 The chart when configured using above feature, looks like as shown below:
 
-{% embed_chart chart-configurations-drill-down-example-3.js %}
+{% embed_chart chart-configurations-drill down -example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/28nqcyu7/) to edit the above chart.
 
 ### In a frame
 
-When defining the `link` attribute, precede the target URL with `F-` to open the link in a frame. You can open links in specified frames on the web page, which is useful when you need to create simulated drill-down boards and dashboards.
+When defining the `link` attribute, precede the target URL with `F-` to open the link in a frame. You can open links in specified frames on the web page, which is useful when you need to create simulated drill down  boards and dashboards.
 
 Refer to the code below:
 
@@ -203,7 +203,7 @@ Refer to the code below:
 
 The chart when configured using above feature, looks like as shown below:
 
-{% embed_chart chart-configurations-drill-down-example-4.js %}
+{% embed_chart chart-configurations-drill down -example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/28ru7erc/) to edit the above chart.
 
@@ -238,7 +238,7 @@ Refer to the code below, which sets the chart as a hotspot that, when clicked, o
 
 The chart when configured using above feature, looks like as shown below:
 
-{% embed_chart chart-configurations-drill-down-example-5.js %}
+{% embed_chart chart-configurations-drill down -example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/3q9qzo8h/) to edit the above chart.
 
@@ -258,7 +258,7 @@ Create a thumbnail of a chart, which, when clicked, will open the maximized char
 
 In the above chart, when you click the hotspot, the maximized version of the chart will open in the same window.
 
-{% embed_chart chart-configurations-drill-down-example-6.js %}
+{% embed_chart chart-configurations-drill down -example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/pj9u9ym2/) to edit the above chart.
 
@@ -268,9 +268,9 @@ Drill down to detailed **linked charts** that show data at different levels of d
 
 ### Create and configure linked charts
 
-Using linked charts, you can create unlimited levels of drill-down charts with a single data source. The parent chart contains all chart data—for the parent chart as well as all levels of descendant (child, grandchild) charts. The links to all descendant charts are also defined in the parent chart.
+Using linked charts, you can create unlimited levels of drill down  charts with a single data source. The parent chart contains all chart data—for the parent chart as well as all levels of descendant (child, grandchild) charts. The links to all descendant charts are also defined in the parent chart.
 
-You can drill-down into the descendant charts by clicking the data plot items of the parent chart. The descendant charts can either replace the parent chart, with an option to drill-up, or they can open in new windows or frames.
+You can drill down  into the descendant charts by clicking the data plot items of the parent chart. The descendant charts can either replace the parent chart, with an option to drill-up, or they can open in new windows or frames.
 
 Create linked charts by following the steps given below:
 
@@ -290,15 +290,15 @@ Once you implement the steps above, the FusionCharts JavaScript class takes care
 
 * It uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed.
 
-* It supports drill-down to an unlimited number of levels.
+* It supports drill down  to an unlimited number of levels.
 
-As an example here, we will consider a simple scenario of a parent chart with the single level of drill-down.
+As an example here, we will consider a simple scenario of a parent chart with the single level of drill down .
 
 The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When you click on the data plot for a particular flavor of juice, it drills-down to show a descendant column 2D chart that shows the quarterly sales figures for that flavor.
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart chart-configurations-drill-down-example-7.js %}
+{% embed_chart chart-configurations-drill down -example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/) to edit the above chart.
 
@@ -318,7 +318,7 @@ The syntax for the link attribute is:
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart chart-configurations-drill-down-example-7.js %}
+{% embed_chart chart-configurations-drill down -example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/) to edit the above chart.
 
@@ -544,7 +544,7 @@ The FusionCharts JavaScript class includes events raised when you open or close 
 
 A chart utilizing these events is given below:
 
-{% embed_chart chart-configurations-drill-down-example-8.js %}
+{% embed_chart chart-configurations-drill down -example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/sknyboh5/) to edit the above chart.
 
@@ -681,7 +681,7 @@ Use the events object (under the dataSource object) to configure the events rais
 
 ### Use JavaScript functions as links
 
-Instead of using simple links in drill-down charts, you can also use JavaScript functions, present in the same page, which you can invoke when a data plot on the chart is clicked. FusionCharts provides two ways for setting JavaScript functions as links, as detailed below:
+Instead of using simple links in drill down  charts, you can also use JavaScript functions, present in the same page, which you can invoke when a data plot on the chart is clicked. FusionCharts provides two ways for setting JavaScript functions as links, as detailed below:
 
 The `j-` prefix
 
@@ -703,11 +703,11 @@ Both prefixes are discussed in detail below:
 
 **The j- Prefix**
 
-Take a look at an example of a drill-down chart and its corresponding code, used to link charts using the **j- prefix**, given below. For this example, a JavaScript function, `showAlert`, is defined to show the label and value of the data plot you click. For example, when you click the data plot labeled **Apple**, the `showAlert` function is invoked, and an alert box is displayed with the data value and the label.
+Take a look at an example of a drill down  chart and its corresponding code, used to link charts using the **j- prefix**, given below. For this example, a JavaScript function, `showAlert`, is defined to show the label and value of the data plot you click. For example, when you click the data plot labeled **Apple**, the `showAlert` function is invoked, and an alert box is displayed with the data value and the label.
 
 The chart looks like as shown below:
 
-{% embed_chart chart-configurations-drill-down-example-9.js %}
+{% embed_chart chart-configurations-drill down -example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/cgLLusuL/) to edit the above chart.
 
@@ -734,9 +734,9 @@ For this example, the parameter string contains the data label and data value on
 
 ### The JavaScript: Prefix
 
-An example of a drill-down chart and its corresponding code, that implements linking using the JavaScript: prefix, is given below:
+An example of a drill down  chart and its corresponding code, that implements linking using the JavaScript: prefix, is given below:
 
-{% embed_chart chart-configurations-drill-down-example-10.js %}
+{% embed_chart chart-configurations-drill down -example-10.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/z7vnp56d/) to edit the above chart.
 

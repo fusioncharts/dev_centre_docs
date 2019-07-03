@@ -374,9 +374,9 @@ Here we will look at how one map can be configured to open another map when a us
 
 Shown below is a World population density map. Clicking on the North America entity opens up a US map showing population density by state
 
-{% embed_chart map-guide-adding-drill-down-configurelink.js %}
+{% embed_chart map-guide-adding-drill down -configurelink.js %}
 
-{% embed_data map-guide-adding-drill-down-configurelink.js %}
+{% embed_data map-guide-adding-drill down -configurelink.js %}
 
 This is what we did in the above data structure
 
@@ -670,11 +670,11 @@ Shown below is a US map that shows the functioning of a retail chain. The chain 
 
 Each drilled down chart shows the variation of average shipment cost and the daily shipments for states serviced by that specific distribution center.
 
-{% embed_chart map-guide-adding-drill-down-linkedcharts.js %}
+{% embed_chart map-guide-adding-drill down -linkedcharts.js %}
 
 The data used in the above chart is shown here
 
-{% embed_data map-guide-adding-drill-down-linkedcharts.js %}
+{% embed_data map-guide-adding-drill down -linkedcharts.js %}
 
 This is what we did in the above data structure
 

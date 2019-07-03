@@ -1,14 +1,14 @@
 ---
-permalink: using-with-server-side-languages/tutorials/drill-down-charts-using-php-mysql.html
+permalink: using-with-server-side-languages/tutorials/drill down -charts-using-php-mysql.html
 title: Create Drill-Down Charts using PHP and MySQL | FusionCharts
-description: In this tutorial we take a look at how to create a multi-level drill-down linked chart using PHP and MySQL.
+description: In this tutorial we take a look at how to create a multi-level drill down  linked chart using PHP and MySQL.
 heading: Create Drill-Down Charts using PHP and MySQL
 chartPresent: true
 ---
 
-Quite often, you will be required to let your user to drill-down from yearly data to quarterly data, quarterly data to monthly data (in a chart showing sales figures) or from categories to individual items (in a chart for a retail store). <a href="http://www.fusioncharts.com/download/" target="_blank">FusionCharts Suite XT</a> makes this very easy with __LinkedCharts__, using which you can create unlimited levels of drill-down charts from a single data source in minutes.
+Quite often, you will be required to let your user to drill down  from yearly data to quarterly data, quarterly data to monthly data (in a chart showing sales figures) or from categories to individual items (in a chart for a retail store). <a href="http://www.fusioncharts.com/download/" target="_blank">FusionCharts Suite XT</a> makes this very easy with __LinkedCharts__, using which you can create unlimited levels of drill down  charts from a single data source in minutes.
 
-In this tutorial we take a look at how to create a multi-level drill-down linked chart using PHP and MySQL.
+In this tutorial we take a look at how to create a multi-level drill down  linked chart using PHP and MySQL.
 
 
 ## Pre-requisites:
@@ -22,28 +22,28 @@ To get the code in this article working we need the below softwares installed an
 This stack is popularly called as *AMP(Apache MySQL PHP) stack and when you include the platform on which this stack is running then it becomes either WAMP (Windows Apache MySql PHP) or LAMP (Linux Apache MySQL PHP). So there are lots of vendors who bundle this stack and make it available for download. 
 Once the stack is set up properly:
 
-* Create a project folder called php-mysql-drill-down in the root directory of the web server. You should be able to browse to this folder via any web browser using the `http://localhost/php-mysql-drill-down/` URL.
+* Create a project folder called php-mysql-drill down  in the root directory of the web server. You should be able to browse to this folder via any web browser using the `http://localhost/php-mysql-drill down /` URL.
 
-* Create a blank file named index.php and save it in the php-mysql-drill-down folder.
+* Create a blank file named index.php and save it in the php-mysql-drill down  folder.
 
 
-## Creating drill-down charts
+## Creating drill down  charts
 
-As our sample, we will create a column 2D chart that lets the user drill-down from yearly to quarterly (for the selected year) to monthly (for the selected quarter of the selected year) data.
+As our sample, we will create a column 2D chart that lets the user drill down  from yearly to quarterly (for the selected year) to monthly (for the selected quarter of the selected year) data.
 
 
 ### Step-1: Creating a MySQL database and seeding data into the tables
 
 To create a MySQL database, you will be required to access the MySQL database server. For access to the MySQL database server, we log in using the username (usually root) and password configured during/after the installation. To log in to the MySQL database server, we can use any of the client-side MySQL tools like <a href="https://dev.mysql.com/downloads/workbench/" target="_blank">MySQL Workbench</a> or use phpMyAdmin, which is installed by default with the *AMP stack.
 
-Once we login to the database server, we will use the below commands to create a database for the drill-down sample.
+Once we login to the database server, we will use the below commands to create a database for the drill down  sample.
 
 ```sql
 CREATE DATABASE IF NOT EXISTS drilldown;
 USE drilldown;
 ```
 
-Once the database is created and selected, it's time to create the tables that we need for the drill-down sample. We would require three tables called
+Once the database is created and selected, it's time to create the tables that we need for the drill down  sample. We would require three tables called
 
 * __monthly_sales__: Having the monthly sale data
 * __quarterly_sales__: Having the quarterly sale data
@@ -299,13 +299,13 @@ $result = $dbhandle->query($strQuery) or exit("Error code ({$dbhandle->errno}): 
 
 If the query returns a valid response we'll start preparing the JSON array.
 
-Before we dive into the code, let's see what the JSON data for a multi-level drill-down should look like. There are a couple of important aspects of the data structure of linked charts that should be paid attention to. These are:
+Before we dive into the code, let's see what the JSON data for a multi-level drill down  should look like. There are a couple of important aspects of the data structure of linked charts that should be paid attention to. These are:
 
 1. The `link` attribute: It defines the unique id of the linked data inside the `linkeddata` array. Using this attribute FusionCharts finds out the corresponding data for each linked item.
 
 2. `linkeddata` array: It contains data for individual linked items.
 
-The links should be defined in the format `newchart-dataformat-datasource`. For the data string method, `dataformat` takes JSON and `datasource` takes the value of the unique identifier that refers to the data embedded inside the `linkeddata` array in the parent data source. So the yearly drill-down links will get generated as `newchart-json-2011, newchart-json-2012 ... newchart-json-2016`
+The links should be defined in the format `newchart-dataformat-datasource`. For the data string method, `dataformat` takes JSON and `datasource` takes the value of the unique identifier that refers to the data embedded inside the `linkeddata` array in the parent data source. So the yearly drill down  links will get generated as `newchart-json-2011, newchart-json-2012 ... newchart-json-2016`
 
 We’ll start with the data for the year 2011. In the code below, you can see that there are two levels of linked data, one for the yearly data and another for the quarterly data. The corresponding linked charts are defined inside the `linkeddata` arrays.
 
@@ -1651,10 +1651,10 @@ if ($result) {
 ```
 
 
-The final chart, with two levels of drill-down, will look as shown below:
+The final chart, with two levels of drill down , will look as shown below:
 
-{% embed_chart drill-down-charts-using-php-mysql-example-1.js %}
+{% embed_chart drill down -charts-using-php-mysql-example-1.js %}
 
 <div class="text-center">
-   <a class="btn btn-primary-grad text-uppercase" href="https://cdn.fusioncharts.com/downloads/dev-center-resources/php-mysql-multilevel-drill-down.zip" download title="click me to download"><i class="fc_download"></i>Download the Sample</a>
+   <a class="btn btn-primary-grad text-uppercase" href="https://cdn.fusioncharts.com/downloads/dev-center-resources/php-mysql-multilevel-drill down .zip" download title="click me to download"><i class="fc_download"></i>Download the Sample</a>
 </div>

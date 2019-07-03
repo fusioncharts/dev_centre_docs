@@ -4,9 +4,9 @@ description: This article focuses on drill down charts.
 heading: Adding Drill Down using Vue
 ---
 
-With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
+With FusionCharts, you can create unlimited levels of drill down  with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
-You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
+You can drill down  to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
 
 ### Features of the FusionCharts JavaScript Class
 
@@ -18,17 +18,17 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 * Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
-* Supports drill-down to an unlimited number of levels
+* Supports drill down  to an unlimited number of levels
 
-## Create drill-down 
+## Create drill down  
 
-As an example, we will consider a simple scenario of a parent chart with the single level of drill-down.
+As an example, we will consider a simple scenario of a parent chart with the single level of drill down .
 
 The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When you click on the data plot for a particular flavor of juice, it drills down to show a pie 2D chart that shows the quarterly sales figures for that flavor.
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart add-drill-down-using-angular-example-1.js %}
+{% embed_chart add-drill down -using-angular-example-1.js %}
 
 The code to render a chart is given below:
 

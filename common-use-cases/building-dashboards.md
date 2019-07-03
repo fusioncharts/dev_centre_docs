@@ -671,7 +671,7 @@ This is the most basic form of a dashboard. Many enhancements can be made to thi
 
 - Adding relevant KPIs for each metric that Harry wants to monitor. These KPIs could be purely in text, or use gauges to represent one key value per gauge.
 
-- Add drill-downs to chart, to allow Harry to navigate from top-level data to line-item data.
+- Add drill down s to chart, to allow Harry to navigate from top-level data to line-item data.
 
 - Enable export functionality for charts, in case Harry wants to get a snapshot or PDF, for emailing it to someone.
 

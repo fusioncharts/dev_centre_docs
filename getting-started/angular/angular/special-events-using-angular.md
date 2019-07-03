@@ -190,7 +190,7 @@ In the above code:
     * Add an event listener to get the value when the drag will end.
     * Add the `getMessage` function to display the value of the dragged column.
 
-### Add data to `app.component.html`
+### Add Data to `app.component.html`
 
 Add the following code to `app.component.html`:
 

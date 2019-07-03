@@ -2505,7 +2505,7 @@
           "access": "",
           "scope": "instance",
           "virtual": false,
-          "description": "Triggered just before a linked item in a [LinkedChart]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %} is rendered, after the parent link is clicked. It is triggered before the instance of the drill-down chart is instantiated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sxewndyu/ )",
+          "description": "Triggered just before a linked item in a [LinkedChart]{% linkTo tutorials/advanced-charting/drill down /linkedcharts.md %} is rendered, after the parent link is clicked. It is triggered before the instance of the drill down  chart is instantiated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sxewndyu/ )",
           "examples": {},
           "params": {
             "eventObj": {
@@ -32101,7 +32101,7 @@
           "access": "",
           "scope": "instance",
           "virtual": false,
-          "description": "Configured properties for LinkedCharts.This function accepts all properties that the FusionCharts constructor accepts. Any property passed to this function is applied to the LinkedCharts. If no properties are provided, LinkedCharts will inherit properties from the parent chart. This function lets you configure individual or multiple drill-down levels in linked charts. \n\n__The Overlay Button:__\n\nOther than the usual construction parameters of FusionCharts, this function also accepts configuration for the overlay button of LinkedCharts. When a LinkedChart is rendered on clicking a data point, a button is rendered on the top-right corner of the chart. When this button is clicked, it closes (disposes) the linked chart.\n\nThe cosmetics of this button can be configured by passing an `overlayButton` object as a parameter to this function. This object can have the following properties: \n\n \n\n| Button Parameter | Type | Description |\n|-------|--------|-------|\n| `show` | boolean | Whether to show the button or not |\n| `message` | string | Button label. Default: __Close__ or __Back__  |\n| `bgColor` | string | Background color for the button |\n| `borderColor` | string | Border color for the button |\n| `font` | string | Font family of the button (comma-separated list of fonts) |\n| `fontColor` | string | Color of the button label text |\n| `fontSize` | string | Size of the button label text |\n| `bold` | boolean | Specify whether the button label text is bold formatted |\n| `padding` | number | Padding between the label and the edges of the button |\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zdewk96j/ )",
+          "description": "Configured properties for LinkedCharts.This function accepts all properties that the FusionCharts constructor accepts. Any property passed to this function is applied to the LinkedCharts. If no properties are provided, LinkedCharts will inherit properties from the parent chart. This function lets you configure individual or multiple drill down  levels in linked charts. \n\n__The Overlay Button:__\n\nOther than the usual construction parameters of FusionCharts, this function also accepts configuration for the overlay button of LinkedCharts. When a LinkedChart is rendered on clicking a data point, a button is rendered on the top-right corner of the chart. When this button is clicked, it closes (disposes) the linked chart.\n\nThe cosmetics of this button can be configured by passing an `overlayButton` object as a parameter to this function. This object can have the following properties: \n\n \n\n| Button Parameter | Type | Description |\n|-------|--------|-------|\n| `show` | boolean | Whether to show the button or not |\n| `message` | string | Button label. Default: __Close__ or __Back__  |\n| `bgColor` | string | Background color for the button |\n| `borderColor` | string | Border color for the button |\n| `font` | string | Font family of the button (comma-separated list of fonts) |\n| `fontColor` | string | Color of the button label text |\n| `fontSize` | string | Size of the button label text |\n| `bold` | boolean | Specify whether the button label text is bold formatted |\n| `padding` | number | Padding between the label and the edges of the button |\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zdewk96j/ )",
           "examples": {
             "0": {
               "caption": "",
@@ -32110,7 +32110,7 @@
             },
             "1": {
               "caption": "",
-              "code": "// Configure linked charts to show the first level drill-down as bar chart, the next as line charts and\r// the third level as pie charts.\rmyChart.configureLink([\r    { type: 'bar2d' },\r    { type: 'line' },\r    { type: 'pie2d' }\r]);",
+              "code": "// Configure linked charts to show the first level drill down  as bar chart, the next as line charts and\r// the third level as pie charts.\rmyChart.configureLink([\r    { type: 'bar2d' },\r    { type: 'line' },\r    { type: 'pie2d' }\r]);",
               "type": "js"
             }
           },
@@ -32127,7 +32127,7 @@
             "level": {
               "name": "level",
               "type": ["number"],
-              "description": "To configure a specific level of the drill-down chart, this parameter specifies the level number.",
+              "description": "To configure a specific level of the drill down  chart, this parameter specifies the level number.",
               "defaultvalue": "0",
               "optional": true,
               "nullable": false,

@@ -85,7 +85,7 @@ heading: Version 3.13.x
 
 - The lower limit of the y-axis is now displayed properly when the `yAxisMaxValue` attribute is explicitly set without changing the default value of the `adjustDiv` attribute. Previously, the lower limit was not appearing.
 
-- In Tree map charts, the `dataPlotClick` is triggered even when the `preventDefault` is turned on in the `beforeDrillDown` event to stop the drill-down. This issue has now been fixed.
+- In Tree map charts, the `dataPlotClick` is triggered even when the `preventDefault` is turned on in the `beforeDrillDown` event to stop the drill down . This issue has now been fixed.
 
 - In the Marimekko chart, `$sum` and `$unformattedSum` tooltip macros are now working properly when the `usePercentDistribution` is set to `0`.
 

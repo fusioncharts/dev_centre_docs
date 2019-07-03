@@ -15,9 +15,9 @@ chartPresent: true
 > - ...and many more.
 >   Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
-With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
+With FusionCharts, you can create unlimited levels of drill down  with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
-You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
+You can drill down  to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
 
 ### Features of the FusionCharts JavaScript Class
 
@@ -28,11 +28,11 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 - Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink) function
 - Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
-- Supports drill-down to an unlimited number of levels
+- Supports drill down  to an unlimited number of levels
 
 ## Create drill down
 
-To create drill-down charts follow the steps given below:
+To create drill down  charts follow the steps given below:
 
 1. Create the JSON/XML data for the parent chart. This is called the parent data source.
 
@@ -40,13 +40,13 @@ To create drill-down charts follow the steps given below:
 
 Once you implement these steps, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
 
-As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
+As an example, we will consider a simple scenario of a parent chart with a single level of drill down .
 
 The parent chart here is a **Column 2D** chart showing yearly sales for the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills down to show a descendant **Column 2D** chart with quarterly sales figures for that flavor.
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart add-drill-down-using-angular-example-1.js %}
+{% embed_chart add-drill down -using-angular-example-1.js %}
 
 The JSON data to render the above chart:
 
@@ -264,7 +264,7 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
 
     public partial class DB_DrillDown_Default: System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            // The data for the sample drill-down chart is stored in the DrillDownSSData.json file.
+            // The data for the sample drill down  chart is stored in the DrillDownSSData.json file.
             // To create this chart, chart data will be loaded from the `.json` file.
 
             // Initialize the chart.

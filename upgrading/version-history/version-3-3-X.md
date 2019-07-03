@@ -578,7 +578,7 @@ heading: Version 3.3.x
 
 - Flash maps now displays entity names properly in Apple Mac.
 
-- Entity labels are now click-able to allow drill-down in Flash maps.
+- Entity labels are now click-able to allow drill down  in Flash maps.
 
 - Minor fix related to the position of `Gradient-Legend` pointer in Flash charts.
 

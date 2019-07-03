@@ -7,7 +7,7 @@
     dataSource: {
         "chart": {
             "caption": "Annual Sales Summary (2010-2013)",
-            "subcaption": "Click on a column to drill-down",
+            "subcaption": "Click on a column to drill down ",
             "xaxisname": "Flavor",
             "yaxisname": "Amount (In USD)",
             "numberprefix": "$",
@@ -52,7 +52,7 @@
             "linkedchart": {
                 "chart": {
                     "caption": "Quarterly Sales Summary (2010)",
-                    "subcaption": "Click on a column to drill-down",
+                    "subcaption": "Click on a column to drill down ",
                     "xaxisname": "Quarter",
                     "yaxisname": "Sales",
                     "numberprefix": "$",
@@ -216,7 +216,7 @@
             "linkedchart": {
                 "chart": {
                     "caption": "Quarterly Sales Summary (2011)",
-                    "subcaption": "Click on a column to drill-down",
+                    "subcaption": "Click on a column to drill down ",
                     "yaxisname": "Sales",
                     "showvalues": "0",
                     "bgcolor": "FFFFFF",
@@ -380,7 +380,7 @@
             "linkedchart": {
                 "chart": {
                     "caption": "Quarterly Sales Summary (2012)",
-                    "subcaption": "Click on a column to drill-down",
+                    "subcaption": "Click on a column to drill down ",
                     "yaxisname": "Sales",
                     "showvalues": "0",
                     "bgcolor": "FFFFFF",
@@ -544,7 +544,7 @@
             "linkedchart": {
                 "chart": {
                     "caption": "Quarterly Sales Summary (2013)",
-                    "subcaption": "Click on a column to drill-down",
+                    "subcaption": "Click on a column to drill down ",
                     "yaxisname": "Sales",
                     "showvalues": "0",
                     "bgcolor": "FFFFFF",

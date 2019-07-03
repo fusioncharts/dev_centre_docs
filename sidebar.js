@@ -35,7 +35,7 @@
                            },
                            {
                               "title": "Adding Drill Down",
-                              "path": "/getting-started/plain-javascript/add-drill-down-using-plain-javascript"
+                              "path": "/getting-started/plain-javascript/add-drill down -using-plain-javascript"
                            },
                            {
                               "title": "Adding Annotations",
@@ -124,7 +124,7 @@
                                  },
                                  {
                                     "title": "Adding Drill-Down",
-                                    "path": "/getting-started/angular/angularjs/add-drill-down-using-angularjs"
+                                    "path": "/getting-started/angular/angularjs/add-drill down -using-angularjs"
                                  },
                                  {
                                     "title": "Adding Annotations",
@@ -211,7 +211,7 @@
                                  },
                                  {
                                     "title": "Adding Drill Down",
-                                    "path": "/getting-started/angular/angular/add-drill-down-using-angular"
+                                    "path": "/getting-started/angular/angular/add-drill down -using-angular"
                                  },
                                  {
                                     "title": "Exporting Charts",
@@ -296,7 +296,7 @@
                            },
                            {
                               "title": "Adding Drill Down Charts",
-                              "path": "/getting-started/react/add-drill-down-using-react"
+                              "path": "/getting-started/react/add-drill down -using-react"
                            },
                            {
                               "title": "Adding Annotations",
@@ -379,7 +379,7 @@
                         "title": "Usage Guide",
                         "children": [{
                               "title": "Adding Drill-Down Charts",
-                              "path": "/getting-started/react-native/add-drill-down-using-react-native"
+                              "path": "/getting-started/react-native/add-drill down -using-react-native"
                            },
                            {
                               "title": "Working with Events",
@@ -427,7 +427,7 @@
                            },
                            {
                               "title": "Adding Drill-Down",
-                              "path": "/getting-started/vue/add-drill-down-using-vuejs"
+                              "path": "/getting-started/vue/add-drill down -using-vuejs"
                            },
                            {
                               "title": "Adding Annotations",
@@ -514,7 +514,7 @@
                            },
                            {
                               "title": "Adding Drill-Down",
-                              "path": "/getting-started/jquery/add-drill-down-using-jquery"
+                              "path": "/getting-started/jquery/add-drill down -using-jquery"
                            },
                            {
                               "title": "Exporting Charts",
@@ -605,7 +605,7 @@
                            },
                            {
                               "title": "Adding Drill-Down",
-                              "path": "/getting-started/ember/add-drill-down-using-ember"
+                              "path": "/getting-started/ember/add-drill down -using-ember"
                            },
                            {
                               "title": "Adding Annotations",
@@ -696,7 +696,7 @@
                            },
                            {
                               "title": "Adding Drill-Down",
-                              "path": "/getting-started/php/add-drill-down-using-php"
+                              "path": "/getting-started/php/add-drill down -using-php"
                            },
                            {
                               "title": "Adding Annotations",
@@ -775,7 +775,7 @@
                            },
                            {
                               "title": "Adding Drill-Down",
-                              "path": "/getting-started/java/add-drill-down-using-java"
+                              "path": "/getting-started/java/add-drill down -using-java"
                            },
                            {
                               "title": "Adding Annotations",
@@ -854,7 +854,7 @@
                            },
                            {
                               "title": "Adding Drill-Down",
-                              "path": "/getting-started/aspnet/add-drill-down-using-aspnet"
+                              "path": "/getting-started/aspnet/add-drill down -using-aspnet"
                            },
                            {
                               "title": "Adding Annotations",
@@ -929,7 +929,7 @@
                            },
                            {
                               "title": "Adding Drill-Down",
-                              "path": "/getting-started/django/add-drill-down-using-django"
+                              "path": "/getting-started/django/add-drill down -using-django"
                            },
                            {
                               "title": "Adding Annotations",
@@ -1008,7 +1008,7 @@
                            },
                            {
                               "title": "Adding Drill-Down",
-                              "path": "/getting-started/ruby-on-rails/add-drill-down-using-ruby-on-rails"
+                              "path": "/getting-started/ruby-on-rails/add-drill down -using-ruby-on-rails"
                            },
                            {
                               "title": "Adding Annotations",
@@ -1267,7 +1267,7 @@
                            },
                            {
                               "title": "Add Drill Down to Maps",
-                              "path": "/map-guide/add-drill-down-to-maps"
+                              "path": "/map-guide/add-drill down -to-maps"
                            },
                            {
                               "title": "Map Spec Sheets",
@@ -1389,7 +1389,7 @@
                      },
                      {
                         "title": "Drill-down",
-                        "path": "/chart-guide/chart-configurations/drill-down"
+                        "path": "/chart-guide/chart-configurations/drill down "
                      }
                   ]
                },

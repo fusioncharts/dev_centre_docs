@@ -149,28 +149,27 @@ To render the chart follow the steps below:
 The consolidated code is shown below:
 
 ```javascript
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { FormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
-
+// Setup needed in app.module.ts
+import { NgModule, enableProdMode } from "@angular/core";
 import { AppComponent } from "./app.component";
-
-// Import angular-fusioncharts
+import { BrowserModule } from "@angular/platform-browser";
 import { FusionChartsModule } from "angular-fusioncharts";
 
-// Import FusionCharts library and chart modules
-import * as FusionCharts from "fusioncharts";
-import * as Charts from "fusioncharts/fusioncharts.charts";
+// Load FusionCharts
+import FusionCharts from "fusioncharts/core";
 
-import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+// Load Charts module
+import Column2d from "fusioncharts/viz/column2d";
 
-// Pass the fusioncharts library and chart modules
-FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
+// Load fusion theme
+import FusionTheme from "fusioncharts/themes/es/fusioncharts.theme.fusion";
+
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(FusionCharts, Column2d, FusionTheme);
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, HttpModule, FusionChartsModule],
+  imports: [BrowserModule, FusionChartsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
@@ -192,7 +191,7 @@ To include the specific chart types, individually add the following files using 
 
 Set the JSON data within the `AppComponent` class as shown below:
 
-> The code below is same for Angular older and latest versions.
+> The code given below is the same for both the latest and the older versions of Angular.
 
 ```javascript
 import { Component } from "@angular/core";

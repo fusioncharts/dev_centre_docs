@@ -4,19 +4,19 @@ description: This article focuses on drill down charts.
 heading: Adding Drill Down using PHP
 ---
 
-With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
+With FusionCharts, you can create unlimited levels of drill down  with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
-You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
+You can drill down  to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
 
 Assume that the __fusioncharts_phpsample__ database also includes the __City__ table that stores the population of all cities in all countries. You now need to plot a chart that shows the top 10 most populous countries and the top 10 most populous cities in these countries.
 
-To show data at different levels of a hierarchy, we use drill-down charts. We will now see how you can create a drill-down column 2D chart based on the above scenario, the data for which will be loaded from a database.
+To show data at different levels of a hierarchy, we use drill down  charts. We will now see how you can create a drill down  column 2D chart based on the above scenario, the data for which will be loaded from a database.
 
 The chart thus rendered looks like this:
 
-{% embed_chart adding-drill-down-using-php.js %}
+{% embed_chart adding-drill down -using-php.js %}
 
-To render the above chart, we need two PHP files - `country.php` and `countryDrillDown.php`. The `country.php` file creates a drill-down column 2D chart showing the most populous countries. The `countryDrillDown.php` file creates column 2D charts that show the most populous cities for the country that was selected in the parent chart.
+To render the above chart, we need two PHP files - `country.php` and `countryDrillDown.php`. The `country.php` file creates a drill down  column 2D chart showing the most populous countries. The `countryDrillDown.php` file creates column 2D charts that show the most populous cities for the country that was selected in the parent chart.
 
 The data structure in the `country.php` file is given below:
 

@@ -95,7 +95,7 @@ FusionCharts implements the following model for interacting with a treemap:
 
 #### The initial stage
 
-To drill-down to a leaf node, click directly on that node. For example, click on any node in the Northern Region to change the chart view.
+To drill down  to a leaf node, click directly on that node. For example, click on any node in the Northern Region to change the chart view.
 
 Then, to go back one level up, click on Northern Region in the header of the view, or the ***Back to Parent*** button on the top-right corner of the chart. You can also go directly back to the initial stage. To do so, click the ***Back to Top*** button on the top-right corner of the chart. 
 

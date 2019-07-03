@@ -314,7 +314,7 @@ Refer to the code snippet given below to configures the behavior of the drill do
 
 The map will look as shown below:
 
-{% embed_all map-guide-add-drill-down-to-maps-example-1.js %}
+{% embed_all map-guide-add-drill down -to-maps-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/9ntbpevv/) to edit the above map.
 
@@ -694,7 +694,7 @@ Refer to the data structure of the map, given below:
 
 The map looks like shown below:
 
-{% embed_all map-guide-add-drill-down-to-maps-example-2.js %}
+{% embed_all map-guide-add-drill down -to-maps-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/dcfc6o86/) to edit the above map.
 
@@ -1647,7 +1647,7 @@ Refer to the data structure given below:
 
 For instance, look at the map given below:
 
-{% embed_all map-guide-add-drill-down-to-maps-example-3.js %}
+{% embed_all map-guide-add-drill down -to-maps-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/wcg1c8rr/) to edit the above map.
 

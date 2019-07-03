@@ -2924,7 +2924,7 @@
         "name": "dashed"
       },
       {
-        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars, etc.) and drill-down to other pages. To define the link for data items, use the `link` attribute. You can define links that open in same window, new window, pop-up window or frames. Please see Drill-Down Charts section for more information. Also, you'll need to URL Encode all the special characters (like ? and &) present in the link.",
+        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars, etc.) and drill down  to other pages. To define the link for data items, use the `link` attribute. You can define links that open in same window, new window, pop-up window or frames. Please see Drill-Down Charts section for more information. Also, you'll need to URL Encode all the special characters (like ? and &) present in the link.",
         "range": "",
         "type": "String",
         "name": "link"

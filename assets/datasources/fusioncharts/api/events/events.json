@@ -2688,7 +2688,7 @@
       "name": "beforeLinkedItemOpen",
       "kind": "Drill Down",
       "scope": "action",
-      "description": "Triggered just before a linked item in a [LinkedChart]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %} is rendered, after the parent link is clicked. It is triggered before the instance of the drill-down chart is instantiated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sxewndyu/ )",
+      "description": "Triggered just before a linked item in a [LinkedChart]{% linkTo tutorials/advanced-charting/drill down /linkedcharts.md %} is rendered, after the parent link is clicked. It is triggered before the instance of the drill down  chart is instantiated. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sxewndyu/ )",
       "examples": {},
       "params": {
          "eventObj": {

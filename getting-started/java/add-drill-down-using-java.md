@@ -4,19 +4,19 @@ description: This article focuses on drill down charts.
 heading: Adding Drill Down using Java
 ---
 
-With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
+With FusionCharts, you can create unlimited levels of drill down  with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
-You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
+You can drill down  to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
 
 Let's say that you now need to plot a chart that shows the top 10 most populous countries and the top 10 most populous cities in these countries. Assume that the __fusioncharts_jspsample__ database also includes the __City__ table that stores the population of all cities in all countries. 
 
 Drill-down charts are used to show data at different levels of a hierarchy.
 
-Therefore, the resultant drill-down chart, according to the use-case, looks like this:
+Therefore, the resultant drill down  chart, according to the use-case, looks like this:
 
-{% embed_chart adding-drill-down-using-java.js %}
+{% embed_chart adding-drill down -using-java.js %}
 
-To render the above chart, we need a JSP files —__country.jsp__. The __country.jsp__ file creates a drill-down column 2D chart showing the most populous countries and the most populous cities for countries that will be selected in the parent chart.
+To render the above chart, we need a JSP files —__country.jsp__. The __country.jsp__ file creates a drill down  column 2D chart showing the most populous countries and the most populous cities for countries that will be selected in the parent chart.
 
 The data structure that should go into the __country.jsp__ file is given below:
 
@@ -128,7 +128,7 @@ The data structure that should go into the __country.jsp__ file is given below:
                 For the data string method, dataformat takes JSON and 
                 datasource takes the value of the unique identifier that 
                 refers to the data embedded inside the linkeddata array in 
-                the parent data source. So the Country drill-down links will 
+                the parent data source. So the Country drill down  links will 
                 get generated as newchart-json-IND, newchart-json-CHN ... 
             */    
                 Map<String, String> lv = new HashMap<String, String>();

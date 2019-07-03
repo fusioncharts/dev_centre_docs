@@ -153,9 +153,9 @@ Use the following attributes to text annotations, to add notes, labels, or any o
 
 * Set the type of annotation to be rendered using the `type` attribute. In this instance, set it to `text`.
 
-* Set the x coordinate of the position of the text annotation for the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the X-coordinate of the position of the text annotation for the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the y coordinate of the position of the text annotation for the topmost position (taken as zero) of the chart using the `y` attribute.
+* Set the Y-coordinate of the position of the text annotation for the topmost position (taken as zero) of the chart using the `y` attribute.
 
 * Set the font family for the text annotation using the `font` attribute.
 
@@ -185,7 +185,7 @@ Use the following attributes to text annotations, to add notes, labels, or any o
 
 * Set the maximum height the text can occupy, using the `wrapHeight` attribute. The chart will append ellipses to the end of the annotation whenever the text overflows beyond the vertical space that you allocate using the `wrapHeight` or `toY` attribute.
 
-The text "**Promotional activities for Butterfinger made it surpass Snickers, the highest selling brand for 3 years"** is a text annotation. 
+The text "**Promotional activities for Butterfinger made it surpass Snickers, the highest selling brand for 3 years**" is a text annotation. 
 
 Adding this text to the chart makes it self-descriptive and easy for a user to understand the chart. You can add multiple text annotations on a chart that can be notes, labels, or any text that adds more context to the chart.
 
@@ -217,7 +217,7 @@ The JSON structure for creating text annotations is given below:
 }
 ```
 
-The column 2D chart rendered using text annotations looks like as shown below:
+The column 2D chart rendered using text annotations looks as shown below:
 
 {% embed_chart chart-configurations-annotations-example-3.js %}
 
@@ -354,7 +354,7 @@ The JSON structure to create shape annotation is given below:
 }
 ```
 
-The chart will look like as shown below:
+The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-5.js %}
 

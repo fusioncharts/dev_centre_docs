@@ -8,7 +8,7 @@ In addition to directly specifying the chart data (or the URL for the file in wh
 
 This section showcases how you can do this using the FusionCharts Ruby on Rails wrapper.
 
-As an example, in this section, you will be shown how you can create a drill-down chart by fetching the required data from a database.
+As an example, in this section, you will be shown how you can create a drill down  chart by fetching the required data from a database.
 
 >  Before you proceed, make sure you have [installed and set up the plugin](/getting-started/ruby-on-rails/install-using-ruby-on-rails) correctly.
 
@@ -16,11 +16,11 @@ As an example, in this section, you will be shown how you can create a drill-dow
 
 Assume that you have a **fusioncharts_sample** database that stores the population of all countries in the world, in the **Country** table, and the population of all cities in each country, in the **City** table.
 
-Using this data, you want to plot a column 2D chart showing the top 10 most populous countries in the world. Furthermore, you want to render this column 2D chart as a drill-down chart, where clicking each data plot shows another chart plotting the top 10 populous cities of that country.
+Using this data, you want to plot a column 2D chart showing the top 10 most populous countries in the world. Furthermore, you want to render this column 2D chart as a drill down  chart, where clicking each data plot shows another chart plotting the top 10 populous cities of that country.
 
 >  You can [download](http://dev.mysql.com/doc/index-other.html) this database from the MYSQL website or refer to the sample database available [here](https://dev.mysql.com/doc/world-setup/en/). </p>
 
-The column 2D chart, with the drill-down functionality, that we need to render here looks like this:
+The column 2D chart, with the drill down  functionality, that we need to render here looks like this:
 
 {% embed_chart using-with-server-side-languages-ruby-on-rails-creating-charts-with-data-from-a-database-example-1.js %}
 

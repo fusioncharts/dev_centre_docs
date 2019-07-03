@@ -1,7 +1,7 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    id: 'popular-countries-drill-down',
+    id: 'popular-countries-drill down ',
     width: '600',
     height: '350',
     dataFormat: 'json',
