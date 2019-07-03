@@ -66,8 +66,8 @@
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "67%",
-                  "topPosition": "43%",
+                  "leftPosition": "43%",
+                  "topPosition": "64%",
                   "annotationLinks": []
                },
                {
@@ -75,8 +75,8 @@
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "68.5%",
-                  "topPosition": "5%",
+                  "leftPosition": "5%",
+                  "topPosition": ".64%",
                   "annotationLinks": []
                },
                {
