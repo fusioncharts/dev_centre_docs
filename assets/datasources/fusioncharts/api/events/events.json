@@ -198,15 +198,6 @@
         }
       }
     },
-    "alert": {
-      "heading": "I'm a alert heading",
-      "description": "Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. - Lorem ipsum dolor sit amet -Lorem ipsum dolor sit amet"
-    },
-    "info": {
-      "heading": "I'm a info heading",
-      "description": "Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. - Lorem ipsum dolor sit amet -Lorem ipsum dolor sit amet"
-    }
-  },
   "beforeInitialize": {
     "id": "beforeInitialize",
     "name": "beforeInitialize",
