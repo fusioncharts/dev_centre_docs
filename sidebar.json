@@ -129,7 +129,7 @@
                     "title": "Area Charts",
                     "children": [{
                             "title": "Chart anatomy",
-                            "path": ""
+                            "path": "/understanding-fusioncharts"
                         },
                         {
                             "title": "Create area charts",
