@@ -75,12 +75,21 @@
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "28%",
-                  "topPosition": "70%",
+                  "leftPosition": "53%",
+                  "topPosition": "80%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "6",
+                  "annotationName": "X-Axis Labels",
+                  "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "leftPosition": "53%",
+                  "topPosition": "80%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "7",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
@@ -89,16 +98,16 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "7",
+                  "annotationNumber": "8",
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "5%",
-                  "topPosition": "72%",
+                  "leftPosition": "1%",
+                  "topPosition": "20%",
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "8",
+                  "annotationNumber": "9",
                   "annotationName": "Trendline",
                   "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
@@ -107,7 +116,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "9",
+                  "annotationNumber": "10",
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
@@ -119,7 +128,7 @@
                   }]
                },
                {
-                  "annotationNumber": "10",
+                  "annotationNumber": "11",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
@@ -140,7 +149,7 @@
                   ]
                },
                {
-                  "annotationNumber": "11",
+                  "annotationNumber": "12",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
