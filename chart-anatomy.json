@@ -73,7 +73,7 @@
                {
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Title",
-                  "annotationDesc": "X-Axis refers to title of the x-axis.",
+                  "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "28%",
                   "topPosition": "70%",
@@ -81,18 +81,18 @@
                },
                {
                   "annotationNumber": "6",
-                  "annotationName": "Y-Axis Title",
-                  "annotationDesc": "Y-Axis refers to the title of the y-axis.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationName": "Y-Axis",
+                  "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "5%",
                   "topPosition": "72%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "7",
-                  "annotationName": "Y-Axis",
-                  "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationName": "Y-Axis Title",
+                  "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
                   "leftPosition": "5%",
                   "topPosition": "72%",
                   "annotationLinks": []
