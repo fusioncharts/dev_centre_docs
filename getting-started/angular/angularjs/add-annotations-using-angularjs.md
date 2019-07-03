@@ -1,7 +1,7 @@
 ---
-title: Add Annotations | FusionCharts
+title: Adding Annotations Using AngularJS | FusionCharts
 description: This article focuses on different type of configurations possible using angularjs.
-heading: Add Annotations
+heading: Adding Annotations Using AngularJS
 ---
 
 Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
@@ -19,7 +19,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -28,7 +28,7 @@ var Charts = require('fusioncharts/fusioncharts.charts');
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Initialize Charts with FusionCharts instance
+// Initialize charts with FusionCharts instance
 Charts(FusionCharts);
 
 // Initialize FusionTheme with FusionCharts instance
@@ -133,9 +133,9 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Add the chart and the theme as dependencies to the core.
 
@@ -145,7 +145,7 @@ The above chart has been rendered using the following steps:
 
 5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
     * Set the chart type as `spline`. For Spline chart, the alias is `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels).
+    * Set the width and the height (in pixels).
     * Embed the annotations from `annotations` object.
-    * Set the `dataFormat` as JSON.
-	* Embed the json data from `dataSource`.
+    * Set the `dataFormat` as `json`.
+	* Embed the JSON data from `dataSource`.

@@ -1,31 +1,31 @@
 ---
-title: Exporting Charts | FusionCharts
-description: This article focuses on how you can export your chart using angularjs.
-heading: Exporting Charts
+title: Export Charts Using AngularJS | FusionCharts
+description: This article focuses on how you can export your chart using AngularJS.
+heading: Export Charts Using AngularJS
 ---
 
-FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well. This article focuses on how you can export charts using `angularjs-fusioncharts` component.
+FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, or PDF formats, or even export chart data. This article focuses on how you can export charts using `angularjs-fusioncharts` component.
 
 In this section we will discuss how to:
 
-- [Export Charts as Image and PDF](/getting-started/angular/angularjs/export-charts-using-angularjs#export-charts-as-image-and-pdf)
+- [Export Charts as Image or PDF](/getting-started/angular/angularjs/export-charts-using-angularjs#export-charts-as-image-and-pdf)
 - [Export Multiple Charts](/getting-started/angular/angularjs/export-charts-using-angularjs#export-multiple-charts)
 - [Modes of Export](/getting-started/angular/angularjs/export-charts-using-angularjs#modes-of-export)
 - [Export Chart Data in XLSX Format](/getting-started/angular/angularjs/export-charts-using-angularjs#export-chart-data-in-xlsx-format)
 
 ## Export Charts as Image and PDF
 
-A server-side helper library enables export by conveting the SVG to the required format. You can also export VML as it is converted to SVG internally before exporting. During the export process, the data to be exported is first sent to the FusionCharts servers to be processed, finally generating the output in the required format.
+A server-side helper library enables export by converting the SVG to the required format. You can also export VML as it is converted to SVG internally before exporting. During the export process, the data to be exported is first sent to the FusionCharts servers to be processed, finally generating the output in the required format.
 
-When charts are exported on the client side, the entire exporting process is carried out using the user’s browser. The chart’s SVG is converted into the selected export format and download using the HTML5 `download` attribute.
+When charts are exported on the client side, the entire exporting process is carried out using the user’s browser. The chart’s SVG is converted into the selected export format and downloaded using the HTML5 `download` attribute.
 
 > You must have an active internet connection for this feature to work.
 
-To enable chart exporting, the `chart` level attribute `exportEnabled` is set to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over this button to see the dropdown menu with export options, as shown in the image below:
+To enable chart exporting, set the `chart` level attribute `exportEnabled` to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over this button to see the dropdown menu with export options, as shown in the image below:
 
 ![image](/images/exporting-as-image-and-pdf-export-menu.jpg)
 
-From the menu rendered, select the required format. The chart is downloaded to your machine in the selected format.
+From the dropdown menu, select the required format. The chart is downloaded to your machine in the selected format.
 
 A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the required export format.
 
@@ -49,7 +49,7 @@ var Charts = require("fusioncharts/fusioncharts.charts");
 // Require Fusion theme
 var FusionTheme = require("fusioncharts/themes/fusioncharts.theme.fusion");
 
-// Add charts amd themes as dependency
+// Add charts and themes as dependencies
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
 
@@ -96,9 +96,9 @@ The HTML code of the above sample is given below:
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Add the chart and theme as dependencies to the core.
 
@@ -106,13 +106,13 @@ The above chart has been rendered using the following steps:
 
 4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
    - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-   - Set the width and height (in pixels).
-   - Embed the json data as the value of the `dataSource`.
+   - Set the width and the height (in pixels).
+   - Embed the JSON data as the value of the `dataSource`.
    - Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
 ## Export Multiple Charts
 
-FusionCharts lets you export multiple charts in a single image at once, in different formats. In the sample given below, we have two charts-Column2D and Stacked Column2D chart.
+FusionCharts lets you export multiple charts in a single image at once, in different formats. In the sample given below, there are two charts - a Column2D and a Stacked Column2D chart.
 
 <div  style="background-color: #ffffff;">
 <p>{% embed_chart exporting-as-image-and-pdf-introduction-example-3.js %}</p>
@@ -379,18 +379,18 @@ The HTML code of the above sample is given below:
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Store the chart configurations in a JSON object.
 
-3. To export multiple charts as PDF, set the `batchExport` to PDF.
+3. To export multiple charts as PDF, set the value of `batchExport` to `pdf`.
 
 4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
-   - Set the chart type as `column2d` for the first chart and `stackedcolumn2d` for the second chart. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-   - Set the width and height (in pixels).
-   - Set the `dataFormat` as JSON.
+   - Set the chart type as `column2d` for the first chart and `stackedcolumn2d` for the second chart. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the width and the height (in pixels).
+   - Set the `dataFormat` as `json`.
    - Embed the json data as the value of the `dataSource`.
 
 ## Modes of Export
@@ -399,9 +399,9 @@ FusionCharts Suite XT supports the following three modes of export:
 
 - Server-side export
 - Client-side export
-- Auto-export
+- Auto export
 
-By default, charts are exported using the auto-export feature.
+By default, charts are exported using the auto export feature.
 
 The `exportMode` attribute is used to switch between the different modes of export.
 
@@ -411,7 +411,7 @@ To process the export data on your own server, configure one of the export handl
 
 ## Export Chart Data in XLSX Format
 
-FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.13.5, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
+FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting from v3.13.5, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
 
 To enable chart exporting, set the chart level attribute `exportEnabled` to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over the button to see a dropdown menu with the export options, as shown in the image below:
 
