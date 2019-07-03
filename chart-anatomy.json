@@ -82,8 +82,8 @@
                {
                   "annotationNumber": "6",
                   "annotationName": "Trendline",
-                  "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/trend-lines-and-zones",
+                  "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "43%",
                   "topPosition": "64%",
                   "annotationLinks": []
@@ -98,8 +98,9 @@
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
-                  },
-                  {
+                  }]
+               },
+               {
                   "annotationNumber": "8",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
