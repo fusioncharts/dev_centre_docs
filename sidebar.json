@@ -35,7 +35,7 @@
                     "title": "Column charts",
                     "children": [{
                             "title": "Chart anatomy",
-                            "path": ""
+                            "path": "/understanding-fusioncharts"
                         },
                         {
                             "title": "Create column charts",
@@ -129,7 +129,7 @@
                     "title": "Area Charts",
                     "children": [{
                             "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts"
+                            "path": ""
                         },
                         {
                             "title": "Create area charts",
@@ -228,7 +228,7 @@
                     "title": "Line Charts",
                     "children": [{
                             "title": "Chart anatomy",
-                            "path": ""
+                            "path": "/understanding-fusioncharts"
                         },
                         {
                             "title": "Create line charts",

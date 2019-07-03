@@ -4,8 +4,8 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "Column Chart",
-            "imgSrc": "column-chart-anatomy",
+            "itemHeader": "Line Chart Anatomy",
+            "imgSrc": "line-chart-anatomy",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
