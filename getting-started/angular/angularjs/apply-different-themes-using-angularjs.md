@@ -1,7 +1,7 @@
 ---
-title: Apply Different Themes using AngularJS | FusionCharts
+title: Apply Different Themes Using AngularJS | FusionCharts
 description: This article will showcase how to apply different themes to the chart at runtime.
-heading: Apply Different Themes using AngularJS
+heading: Apply Different Themes Using AngularJS
 ---
 
 In FusionCharts Suite XT you can manually set the cosmetics and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. FusionCharts Suite ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
@@ -14,10 +14,11 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `zune`
 * `ocean`
 * `carbon`
+* `umber` (since v3.13.5)
 
-This article focuses on how you can apply different themes to the chart at runtime using `angularjs-fusioncharts` component. Click any radio button, to see how the look and feel of the chart change with each theme.
+This article focuses on how you can apply different themes to the chart at runtime using the `angularjs-fusioncharts` component. Click any radio button to see how the look and feel of the chart changes with each theme.
 
-A chart configured to change the theme, is shown below:
+A chart configured to change the theme is shown below:
 
 {% embed_chartData apply-different-theme-example-1.js json %}
 
@@ -30,7 +31,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -121,15 +122,19 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
                 <input type="radio" value="carbon" id="carbon_theme_button" ng-click="applyTheme($event)" ng-model="selectedTheme"/>
                 <label for="carbon_theme_button">Carbon</label>
             </div>
+            <div>
+                <input type="radio" value="umber" id="umber_theme_button" ng-click="applyTheme($event)" ng-model="selectedTheme"/>
+                <label for="umber_theme_button">Umber</label>
+            </div>
         </div>
       </div>
   </div>
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Add the chart and the theme as dependencies to the core.
 
@@ -140,9 +145,9 @@ The above chart has been rendered using the following steps:
 	* `applyTheme` to update the `theme` at runtime.
 
 5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels).
-    * Set the `dataFormat` as JSON.
-	* Embed the json data from `dataSource`.
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and the height (in pixels).
+    * Set the `dataFormat` as `json`.
+	  * Embed the JSON data from `dataSource`.
 
-6. Create Radio buttons for **Fusion**, **Gammel**, **Candy**, **Zune**, **Ocean** and **Carbon** chart using `<input>`.
+6. Create radio buttons for **Fusion**, **Gammel**, **Candy**, **Zune**, **Ocean**, **Carbon**, and **Umber** in the chart using the `<input>` tag.
