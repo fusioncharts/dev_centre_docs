@@ -50,7 +50,7 @@
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "85%",
-                  "topPosition": "17%",
+                  "topPosition": "25%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
@@ -66,8 +66,8 @@
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "53%",
-                  "topPosition": "85%",
+                  "leftPosition": "67%",
+                  "topPosition": "43%",
                   "annotationLinks": []
                },
                {
@@ -75,8 +75,8 @@
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "12%",
-                  "topPosition": "46.5%",
+                  "leftPosition": "68.5%",
+                  "topPosition": "5%",
                   "annotationLinks": []
                },
                {
