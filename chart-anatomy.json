@@ -164,6 +164,27 @@
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros"
                      }
                   ]
+               },
+               {
+                  "annotationNumber": "12",
+                  "annotationName": "Export Menu",
+                  "annotationDesc": "Export menu is hamburger menu that appears on top-right of the chart by hovering on which you can export the chart using available options.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "91.5%",
+                  "topPosition": "5%",
+                  "annotationLinks": [{
+                        "linkDesc": "You can enable or disable chart export using attribute exportEnabled, learn more about its usage ",
+                        "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
+                     },
+                     {
+                        "linkDesc": "You can also define export mode like server, client, auto for chart export, learn more about them ",
+                        "linkPath": "/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature"
+                     },
+                     {
+                        "linkDesc": "Look and feel of this menu can also be customized using available attributes, learn more about them ",
+                        "linkPath": "/chart-attributes/area2d"
+                     }
+                  ]
                }
             ]
          },
