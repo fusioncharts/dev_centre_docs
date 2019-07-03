@@ -1,10 +1,10 @@
 ---
-title: Configuring your Chart Using AngularJS | FusionCharts
+title: Configuring Your Chart Using AngularJS | FusionCharts
 description: This article focuses on different type of configurations possible using AngularJS.
-heading: Configuring your Chart using AngularJS
+heading: Configuring Your Chart Using AngularJS
 ---
 
-FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
+FusionCharts Suite XT includes advanced features that let you add context to your chart and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
 
 This article focuses on how you can configure the following using `angularjs-fusioncharts` component:
 
@@ -13,7 +13,7 @@ This article focuses on how you can configure the following using `angularjs-fus
 
 ## Update Chart Data
 
-A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
+A chart configured to dynamically update data values is shown below (click **Update Chart Data** to start):
 
 {% embed_chartData configure-charts-using-angular-example-1.js json %}
 
@@ -26,7 +26,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts  
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -130,9 +130,9 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 <p><a class="btn btn-default" ng-click="updateMyChartData()">Click me to change data</a></p>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Add the chart and the theme as dependencies to the core.
 
@@ -145,13 +145,14 @@ The above chart has been rendered using the following steps:
 6. Add `controls.innerHTML` to create the `button` inside the `<div>`.
 
 7. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels).
-    * Embed the json data as the value of the `dataSource`.
+    * Embed the JSON data as the value of the `dataSource`.﻿
 
 ## Update Chart Attributes
 
-A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
+A chart configured to dynamically update the alignments of **chart caption** and **sub-caption**, as well as the chart **background** is shown below. Click any one of the buttons below the chart to change the alignments of caption and sub-caption, as well as the chart background.
 
 {% embed_chartData configure-charts-using-react-example-2.js json %}
 
@@ -164,7 +165,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -294,23 +295,23 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 </p>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Add the chart and the theme as dependencies to the core.
 
 3. Store the chart configurations in a JSON object. In this JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
+    * Set the `dataFormat` as `json`.
+    * Embed the JSON data as the value of `dataSource`.
 
-4. An event is triggered:
-    * To update the chart caption, sub-capion alignment.
-    * To update the backgroing color.
-    * Reset all the chart data to it's initial version.
+4. Configure an event to do the following when triggered:
+    * Update the alignments of the chart caption and sub-caption.
+    * Update the background color.
+    * Reset all the chart data to its initial version.
 
-5. A container is created to render buttons in the chart.
+5. Create a container to render buttons in the chart.
 
 6. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.

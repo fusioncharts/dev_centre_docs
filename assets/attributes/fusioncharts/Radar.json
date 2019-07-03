@@ -34,12 +34,6 @@
         "name": "showLabels"
       },
       {
-        "description": "Using this attribute, you can customize the alignment of data labels (x-axis labels). There are 5 options: AUTO, WRAP, STAGGER, ROTATE or NONE. By default, this attribute is set to AUTO mode which means that the alignment of the data labels is determined automatically depending on the size of the chart. WRAP wraps the label text if it is too long to fit in one line. ROTATE rotates the labels vertically. STAGGER divides the labels into multiple lines.",
-        "range": "'AUTO', 'WRAP', 'STAGGER', 'ROTATE', 'NONE'",
-        "type": "String",
-        "name": "labelDisplay"
-      },
-      {
         "description": "Sets the configuration whether data values would be displayed along with the data plot on chart.",
         "range": "0/1",
         "type": "Boolean",
