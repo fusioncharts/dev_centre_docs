@@ -196,7 +196,7 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "66.5%",
+                  "leftPosition": "38.5%",
                   "topPosition": "2.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
@@ -217,7 +217,7 @@
                   "annotationName": "Sub-caption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "53.5%",
+                  "leftPosition": "63.5%",
                   "topPosition": "7.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
@@ -234,8 +234,8 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "85%",
-                  "topPosition": "30%",
+                  "leftPosition": "73%",
+                  "topPosition": "38%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
@@ -251,8 +251,8 @@
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "28%",
-                  "topPosition": "70%",
+                  "leftPosition": "32%",
+                  "topPosition": "7%",
                   "annotationLinks": []
                },
                {
@@ -260,8 +260,8 @@
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "53%",
-                  "topPosition": "80%",
+                  "leftPosition": "40%",
+                  "topPosition": "12%",
                   "annotationLinks": []
                },
                {
@@ -269,8 +269,8 @@
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "72%",
-                  "topPosition": "76%",
+                  "leftPosition": "22%",
+                  "topPosition": "66%",
                   "annotationLinks": []
                },
                {
@@ -279,7 +279,7 @@
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "5%",
-                  "topPosition": "72%",
+                  "topPosition": "32%",
                   "annotationLinks": []
                },
                {
@@ -287,8 +287,8 @@
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "1%",
-                  "topPosition": "20%",
+                  "leftPosition": "47%",
+                  "topPosition": "80%",
                   "annotationLinks": []
                },
                {
@@ -296,8 +296,8 @@
                   "annotationName": "Trendline",
                   "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "70%",
-                  "topPosition": "20%",
+                  "leftPosition": "65%",
+                  "topPosition": "50%",
                   "annotationLinks": []
                },
                {
@@ -305,8 +305,8 @@
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "73%",
-                  "topPosition": "51.5%",
+                  "leftPosition": "43%",
+                  "topPosition": "49%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
@@ -339,7 +339,7 @@
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "53%",
-                  "topPosition": "23.5%",
+                  "topPosition": "31.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
@@ -355,8 +355,8 @@
                   "annotationName": "Export Menu",
                   "annotationDesc": "Export menu is hamburger menu that appears on top-right of the chart by hovering on which you can export the chart using available options.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "91.5%",
-                  "topPosition": "5%",
+                  "leftPosition": "77.5%",
+                  "topPosition": "3%",
                   "annotationLinks": [{
                         "linkDesc": "You can enable or disable chart export using attribute exportEnabled, learn more about its usage ",
                         "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
