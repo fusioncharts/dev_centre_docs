@@ -520,7 +520,7 @@
                   "annotationName": "Anchors",
                   "annotationDesc": "Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/anchors-and-lines",
-                  "leftPosition": "86%",
+                  "leftPosition": "87%",
                   "topPosition": "23%",
                   "annotationLinks": []
                },
