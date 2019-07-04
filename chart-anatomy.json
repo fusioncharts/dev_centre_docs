@@ -196,8 +196,8 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "66.5%",
-                  "topPosition": "2.5%",
+                  "leftPosition": "64.5%",
+                  "topPosition": "1%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
@@ -217,7 +217,7 @@
                   "annotationName": "Sub-caption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "53.5%",
+                  "leftPosition": "28.5%",
                   "topPosition": "7.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
@@ -326,8 +326,8 @@
                   "annotationName": "Crossline",
                   "annotationDesc": "Cross line is a vertical line/area used as a quick reference for data plots. Learn more about it ",
                   "annotationDescLinkPath": "/dev/chart-guide/chart-configurations/cross-line",
-                  "leftPosition": "36%",
-                  "topPosition": "55%",
+                  "leftPosition": "49%",
+                  "topPosition": "25%",
                   "annotationLinks": []
                },
                {
