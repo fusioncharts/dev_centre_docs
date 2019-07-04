@@ -234,8 +234,8 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "85%",
-                  "topPosition": "30%",
+                  "leftPosition": "20%",
+                  "topPosition": "20%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
@@ -260,7 +260,7 @@
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "53%",
+                  "leftPosition": "51%",
                   "topPosition": "80%",
                   "annotationLinks": []
                },
@@ -296,8 +296,8 @@
                   "annotationName": "Trendline",
                   "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "70%",
-                  "topPosition": "20%",
+                  "leftPosition": "83%",
+                  "topPosition": "40%",
                   "annotationLinks": []
                },
                {
@@ -305,8 +305,8 @@
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "73%",
-                  "topPosition": "51.5%",
+                  "leftPosition": "18%",
+                  "topPosition": "46.5%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
@@ -314,6 +314,24 @@
                },
                {
                   "annotationNumber": "11",
+                  "annotationName": "Anchors",
+                  "annotationDesc": "Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/anchors-and-lines",
+                  "leftPosition": "83%",
+                  "topPosition": "40%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "12",
+                  "annotationName": "Crossline",
+                  "annotationDesc": "Cross line is a vertical line/area used as a quick reference for data plots. Learn more about it ",
+                  "annotationDescLinkPath": "/dev/chart-guide/chart-configurations/cross-line",
+                  "leftPosition": "78%",
+                  "topPosition": "35%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "13",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
@@ -334,12 +352,12 @@
                   ]
                },
                {
-                  "annotationNumber": "12",
+                  "annotationNumber": "14",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "53%",
-                  "topPosition": "23.5%",
+                  "leftPosition": "78%",
+                  "topPosition": "53.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
