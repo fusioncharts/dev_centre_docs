@@ -5,7 +5,7 @@
     "kind": "Data",
     "scope": "component",
     "about": "Triggered just before chart data is passed to the chart.",
-    "description": "Triggered just before chart data is passed to the chart. \n\n All events, when triggered, will provide two parameters for the handler - __eventObj__ (object containing information generic to all events) and __dataObj__ (object containing information specific to an event). \n\n Scroll down to the table rendered below the chart to view information contained in the dataObj object.",
+    "description": "Triggered just before chart data is passed to the chart. \n\n All events, when triggered, will provide a parameter for the handler - __eventObj__ (object containing information generic to all events).",
     "examples": {
       "codeFile": "beforeDataUpdate",
       "fiddle": "https://jsfiddle.net/fusioncharts/b1cadey2/"
@@ -204,7 +204,7 @@
     "name": "beforeInitialize",
     "kind": "Lifecycle",
     "scope": "component",
-    "about": "",
+    "about": "Triggered every time a new instance of the FusionCharts object is created.",
     "description": "This pre-initialization event is triggered every time a new instance of the [FusionCharts](/api/fusioncharts) object is created. It then triggers a number of modules that need to be setup on every instance of FusionCharts; the event can be used to perform any actions required to be completed before the initialization of each chart.\n\nBecause this event is triggered upon instantiating a new `FusionCharts` object, it is virtually impossible to listen to this event by adding an event listener to the chart. By the time the event listener is attached (using the [addEventListener()](/api/fusioncharts/fusioncharts-methods#addEventListener) method), the event is already fired.\n\nHowever, there are alternate ways that can be used to listen to this event. You can listen to the FusionCharts global events, using the [addEventListener](/api/fusioncharts/fusioncharts-methods#static-addEventListener) static method before even creating a new instance. (The required instance can be identified by the `id` of the chart using `eventObject.sender.id`). You can also pass the event listener as a parameter of the FusionCharts constructor.",
     "examples": {
       "codeFile": "beforeInitialize",
