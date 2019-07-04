@@ -10,7 +10,6 @@
          subCaption: 'Last week',
          theme: 'fusion',
       },
-
       data: [
          {
             label: 'Mon',
