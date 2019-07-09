@@ -347,7 +347,7 @@
                   "annotationDesc": "Export menu is hamburger menu that appears on top-right of the chart by hovering on which you can export the chart using available options.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "91.5%",
-                  "topPosition": "5%",
+                  "topPosition": "84.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can enable or disable chart export using attribute exportEnabled, learn more about its usage ",
                         "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
@@ -367,8 +367,8 @@
                   "annotationName": "Data Values",
                   "annotationDesc": "Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
-                  "leftPosition": "7%",
-                  "topPosition": "35%",
+                  "leftPosition": "27%",
+                  "topPosition": "22%",
                   "annotationLinks": []
                }
             ]
