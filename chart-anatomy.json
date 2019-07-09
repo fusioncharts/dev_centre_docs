@@ -346,8 +346,8 @@
                   "annotationName": "Export Menu",
                   "annotationDesc": "Export menu is hamburger menu that appears on top-right of the chart by hovering on which you can export the chart using available options.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "91.5%",
-                  "topPosition": "84.5%",
+                  "leftPosition": "84.5%",
+                  "topPosition": "5%",
                   "annotationLinks": [{
                         "linkDesc": "You can enable or disable chart export using attribute exportEnabled, learn more about its usage ",
                         "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
