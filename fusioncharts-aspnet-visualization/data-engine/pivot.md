@@ -46,7 +46,7 @@ DataModel pivotModel = model.Pivot(row, column, aggregation);
 
 After applying the pivot operation on the above table, the newly created table looks like shown below:
 
-| Country       | 2011 | 2012 | 2019 |
+| Country       | 2011 | 2012 | 2013 |
 | ------------- | ---- | ---- | ---- |
 | Australia     | 6    | 1    | 3    |
 | United States | 3    | 6    | 3    |
