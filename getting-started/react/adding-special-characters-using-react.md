@@ -26,7 +26,7 @@ A chart configured to customize the prefix of the numbers on the chart is shown 
 
 The full code of the above sample is given below:
 
-```
+```javascript
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import FusionCharts from 'fusioncharts';
@@ -90,6 +90,13 @@ const chartConfigs = {
         }]
     }
 };
+
+//Your react component
+export default class Chart extends Component {
+  render() {
+    return <ReactFC {...chartConfigs} />;
+  }
+}
 
 ReactDOM.render(
   <Chart />,

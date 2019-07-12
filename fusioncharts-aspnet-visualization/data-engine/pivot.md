@@ -1,5 +1,5 @@
 ---
-title: Pivot | FusionCharts
+title: Pivot | FusionCharts.NET
 description: This article outlines the steps how apply pivot to the data.
 heading: Pivot
 ---
@@ -14,35 +14,43 @@ In FusionCharts.NET, when you apply to pivot on an object of the `DataModel` cla
 
 Let's apply pivot operation on the table given below:
 
-Order Date | Country | Sales | Quantity | Shipping Cost
-- | - | - | - | -
-1/22/2011 | Australia | 59.724 | 6 | 27.43
-1/22/2011 | United States | 125.248 | 3 | 3.64
-1/22/2011 | Australia | 6.318 | 1 | 1.77
-1/24/2011 | Australia | 110.808 | 3 | 9.92
-1/24/2011 | United States | 40.08 | 6 | 4.31
-1/24/2011 | India | 59.25 | 5 | 4.27
-1/24/2011 | United States | 5.94 | 3 | 0.95
-1/26/2011 | India | 79.38 | 3 | 13.82
-1/26/2011 | India | 342.51 | 7 | 13.22
+| Order Date | Country       | Sales   | Quantity | Shipping Cost |
+| ---------- | ------------- | ------- | -------- | ------------- |
+| 1/22/2011  | Australia     | 59.724  | 6        | 27.43         |
+| 1/22/2011  | United States | 125.248 | 3        | 3.64          |
+| 1/23/2012  | Australia     | 6.318   | 1        | 1.77          |
+| 1/24/2013  | Australia     | 110.808 | 3        | 9.92          |
+| 1/23/2012  | United States | 40.08   | 6        | 4.31          |
+| 1/22/2011  | India         | 59.25   | 5        | 4.27          |
+| 1/24/2013  | United States | 5.94    | 3        | 0.95          |
+| 1/23/2012  | India         | 79.38   | 3        | 13.82         |
+| 1/24/2013  | India         | 342.51  | 7        | 13.22         |
 
 The code to apply to pivot on the above table using the `Country` and `Order Date` columns, as well as `SUM` as the aggregation function performed on the `Sales` column, is given below:
 
-```
+```javascript
 /* row field(s) of pivot table */ 
 GroupColumn row = new GroupColumn {
-	{ "Country"}               
+    { "Country"}
 };
 /* this will be pivot column */
 GroupColumn column = new GroupColumn();
 column.Add("Order Date", GroupColumn.DateGrouping.YEAR);
 /* aggregation function to be applied */
 Aggregation aggregation = new Aggregation {
-	{ "Sales",Aggregation.Function.SUM }
+    { "Quantity",Aggregation.Function.SUM }
 };
 /* apply Pivot on an existing DataModel - i.e., model */
 DataModel pivotModel = model.Pivot(row, column, aggregation);
 ```
+
+After applying the pivot operation on the above table, the newly created table looks like shown below:
+
+| Country       | 2011 | 2012 | 2013 |
+| ------------- | ---- | ---- | ---- |
+| Australia     | 6    | 1    | 3    |
+| United States | 3    | 6    | 3    |
+| India         | 5    | 3    | 7    |
 
 In the above code:
 
