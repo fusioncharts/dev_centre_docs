@@ -18,13 +18,13 @@ Let's apply pivot operation on the table given below:
 | ---------- | ------------- | ------- | -------- | ------------- |
 | 1/22/2011  | Australia     | 59.724  | 6        | 27.43         |
 | 1/22/2011  | United States | 125.248 | 3        | 3.64          |
-| 1/22/2011  | Australia     | 6.318   | 1        | 1.77          |
-| 1/24/2011  | Australia     | 110.808 | 3        | 9.92          |
-| 1/24/2011  | United States | 40.08   | 6        | 4.31          |
-| 1/24/2011  | India         | 59.25   | 5        | 4.27          |
-| 1/24/2011  | United States | 5.94    | 3        | 0.95          |
-| 1/26/2011  | India         | 79.38   | 3        | 13.82         |
-| 1/26/2011  | India         | 342.51  | 7        | 13.22         |
+| 1/23/2012  | Australia     | 6.318   | 1        | 1.77          |
+| 1/24/2013  | Australia     | 110.808 | 3        | 9.92          |
+| 1/23/2012  | United States | 40.08   | 6        | 4.31          |
+| 1/22/2011  | India         | 59.25   | 5        | 4.27          |
+| 1/24/2013  | United States | 5.94    | 3        | 0.95          |
+| 1/23/2012  | India         | 79.38   | 3        | 13.82         |
+| 1/24/2013  | India         | 342.51  | 7        | 13.22         |
 
 The code to apply to pivot on the above table using the `Country` and `Order Date` columns, as well as `SUM` as the aggregation function performed on the `Sales` column, is given below:
 
