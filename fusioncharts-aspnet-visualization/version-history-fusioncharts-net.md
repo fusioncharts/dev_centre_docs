@@ -8,7 +8,11 @@ heading: Version History
 
 <p class="release-date">12th July, 2019</p>
 
-<h4 class="sub-heading">Fixes</h4>
+<h4 class="sub-heading">Improvement</h4>
+
+- Code optimization.
+
+<h4>Fixes</h4>
 
 - The issues of DataEngine Pivot Operation Aggregation function has now been fixed.
 
