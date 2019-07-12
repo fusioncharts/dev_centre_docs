@@ -1,5 +1,5 @@
 ---
-title: Version History | FusionCharts
+title: Version History | FusionCharts.NET
 description: This section talks about the new features, improvements and fixes for v1.0.1.
 heading: Version History
 ---
