@@ -56,4 +56,4 @@ In the above code:
 
 * `row` is an object of the `GroupColumn` class, which is applied to the `Country` column.
 * `column` is an object of the `GroupColumn` class, which adds the column `Order Date` from the data source to the table created after pivoting, and populates it with data grouped on the basis of years from `Order Date`. Note that `Order Date` is the pivot column in the above sample.
-* `aggregation` is an object of the `Aggregation` class, which is applied to the `Sales` column and accepts the value of a mathematical operator - `SUM`.
+* `aggregation` is an object of the `Aggregation` class, which is applied to the `Quantity` column and accepts the value of a mathematical operator - `SUM`.
