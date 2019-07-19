@@ -11,7 +11,7 @@ heading: Create Column charts
 * Quick Start
 * How it works.
 
-## Column 2D Chart
+## Column chart with single dataplot
 
 Column charts represent data with rectangular vertical bars. The height of the columns is proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis, and the `data labels` are plotted along the x-axis. Column charts are best fitted when you want to compare values. Column charts can be used to plot both nominal and ordinal data. 
 
@@ -21,7 +21,7 @@ The chart is shown below:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/s7t8F/) to edit the column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/s7t8F/) to edit the column chart.
 
 To create the above chart, follow the steps given below:
 
@@ -39,7 +39,9 @@ To create the above chart, follow the steps given below:
 
 - Specify the value for a data item using the `value` attribute within the `data` object.
 
-For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=column2d) page of column 2D chart.
+> If you want to render the above chart as 3D, set the `type` attribute to `column3d`. Click here to view a Column 3D chart.
+
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=column2d) page of column chart.
 
 
 ## Column chart with multiple dataplots
@@ -56,7 +58,7 @@ To create the above chart, follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a multi-series column 2D chart, set `mscolumn2d`.
+* Specify the chart type using the `type` attribute. To render a multi-series column chart, set `mscolumn2d`.
 
 * Set the container object using `renderAt` attribute.
 
@@ -64,9 +66,11 @@ To create the above chart, follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
+> If you want to render the above chart as 3D, set the `type` attribute to `mscolumn3d`. Click here to view a Multi-series Column 3D chart.
+
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=column3d) page of column 3D chart.
 
-## Overlapped column charts
+## Column charts with overlapped dataplots
 
 From version 3.13.0, FusionCharts has come up with a clever and rather effective overlapped column chart to display your data. In this chart, the two data series overlap. The width of the plot for the data series differs which makes the chart easy to compare. 
 
