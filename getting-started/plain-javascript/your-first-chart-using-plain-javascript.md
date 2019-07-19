@@ -307,7 +307,6 @@ FusionTheme(FusionCharts);
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
 type: 'Column2D',
-renderAt: 'chart-container',
 width: '700', // Width of the chart
 height: '400', // Height of the chart
 dataFormat: 'json', // Data type
