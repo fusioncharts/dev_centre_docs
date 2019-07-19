@@ -6,8 +6,7 @@ heading: Line, Area and Column charts
 
 > These chart types belong to **FusionCharts XT**.
 
-> Before going through this we recommend you to go through the following pages:
-
+> Before going through this page we recommend you to go through the following pages:
 * Installation
 * Quick Start
 * How it works.
