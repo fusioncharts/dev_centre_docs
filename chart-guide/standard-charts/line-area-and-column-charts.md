@@ -1,7 +1,7 @@
 ---
-title: Line, Area and Column charts | FusionCharts
-description: The FusionCharts Suite XT standard charts are simple charts used to plot single-series data.
-heading: Line, Area and Column charts
+title: Create Column charts | FusionCharts
+description: The FusionCharts Suite XT standard charts are simple charts used to plot data.
+heading: Create Column charts
 ---
 
 > These chart types belong to **FusionCharts XT**.
@@ -13,7 +13,7 @@ heading: Line, Area and Column charts
 
 ## Column 2D Chart
 
-Column and bar charts represent data with rectangular horizontal or vertical bars. The height of the bars is proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis, and the `data labels` are plotted along the x-axis. Column charts are best fitted when you want to compare values. Column charts can be used to plot both nominal and ordinal data. 
+Column charts represent data with rectangular vertical bars. The height of the columns is proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis, and the `data labels` are plotted along the x-axis. Column charts are best fitted when you want to compare values. Column charts can be used to plot both nominal and ordinal data. 
 
 In this article, we will learn how to create a Column chart and it's variations. First, let's create a simple column chart showcasing the monthly revenue for last one year for Harry's SuperMart. We have plotted the months along the x-axis and the revenue, which is a numeric value, along the y-axis.
 
