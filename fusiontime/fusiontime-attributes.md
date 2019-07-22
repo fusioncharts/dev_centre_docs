@@ -817,7 +817,7 @@ new FusionCharts({
 	<tr>
 		<td>`paletteColors`</td>
 		<td>Array(String)</td>
-		<td>Palette attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (i.e., column, line, pie etc.). Using paletteColors attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., paletteColors: `#FF0000`, `#0372AB`, `#FF5904`.</td>
+		<td>Using paletteColors attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., paletteColors: `#FF0000`, `#0372AB`, `#FF5904`.</td>
 	</tr>
 	<tr>
 		<td>`clickURL`</td>
