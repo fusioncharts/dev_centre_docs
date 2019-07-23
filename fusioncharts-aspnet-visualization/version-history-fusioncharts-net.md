@@ -10,13 +10,15 @@ heading: Version History
 
 <h4 class="sub-heading">Improvement</h4>
 
-- FusionCharts.NET has been releases for **.NET Standard** which enables the support for all available `.NET frameworks`. The supported .NET frameworks are listed below:
+- Starting v1.0.4, FusionCharts.NET has been releases for **.NET Standard** which enables the support for following .NET developer platforms:
   - .NET Framework
   - .NET Core
   - .NET Standard
   - Mono/Xamarin
 
 > You can download the .NET Standard version directly from **NuGet**.
+
+> **FusionCharts.NET Standard** does not support **ASP.NET Export Handler**.
 
 <h2 class="sub-heading">Version 1.0.2</h2>
 

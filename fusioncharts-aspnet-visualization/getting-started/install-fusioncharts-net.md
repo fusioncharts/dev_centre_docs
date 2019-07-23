@@ -45,6 +45,8 @@ Once installed from NuGet, it'll add some assemblies to your web project, and th
 
 FusionCharts export handler gets automatically installed, once you install `FusionCharts.Visualization` NuGet package. However, in order to use it, you need to configure the following:
 
+> Starting v1.0.4, **FusionCharts.NET Standard** does not support **Export Handler**.
+
 - Make sure the `PresentationCore` and `WindowsBase` assemblies are referenced in your web project. These assemblies are automatically referenced when you install the NuGet package, but in case if they are not, you have to manually add them.
 
 - Add these dependencies into `web.config`:
