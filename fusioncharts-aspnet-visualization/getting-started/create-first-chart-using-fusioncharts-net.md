@@ -141,3 +141,5 @@ The `.aspx` template for the above sample is shown below:
 ```
 
 That's it! Your first chart is ready.
+
+You can download the samples for **FusionCharts.NET** from [here](https://github.com/fusioncharts/fusioncharts.net-core-sample).
