@@ -10,7 +10,7 @@ heading: Version History
 
 <h4 class="sub-heading">Improvement</h4>
 
-- FC.NET has been releases for **.NET Standard** which enables the support for all available `.NET frameworks`. The supported .NET frameworks are listed below:
+- FusionCharts.NET has been releases for **.NET Standard** which enables the support for all available `.NET frameworks`. The supported .NET frameworks are listed below:
   - .NET Framework
   - .NET Core
   - .NET Standard
