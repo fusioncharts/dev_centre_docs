@@ -6,6 +6,14 @@ heading: Overview
 
 `FusionCharts.NET` is a charting library for ASP.NET MVC and ASP.NET WebForms, which uses FusionCharts JavaScript (HTML5) library to render interactive charts.
 
+> Starting v1.0.4, FusionCharts.NET has been releases for **.NET Standard** which enables the support for all available `.NET frameworks`. The supported .NET frameworks are listed below:
+- .NET Framework
+- .NET Core
+- .NET Standard
+- Mono/Xamarin
+
+> You can download the .NET Standard version directly from **NuGet**.
+
 FusionCharts.NET helps you avoid writing messy JavaScript and JSON code within your ASP.NET code, by providing an object-oriented paradigm in which you can render charts using C# or VB. It comes with two modules:
 
 - **Data Engine** - The data engine of FusionCharts.NET allows you to store data and perform operations on it. As such, you can transform and optimize the data, before sending it to the chart renderer. In FusionCharts.NET, the chart renderer accepts data only in the form of `DataModel`. The data engine consists of the following:
