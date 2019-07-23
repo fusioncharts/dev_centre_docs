@@ -202,6 +202,102 @@ The chart will look like as shown in the image below:
 
 LIVE CHART
 
+## Inherit plot border color of an area chart
+
+FusionCharts Suite allows you to set the border color of the area chart by inheriting the plot color.
+
+Take a look at the image shown below:
+
+IMAGE
+
+To enable the plot border to inherit the color of an area plot, set the `inheritPlotBorderColor` attribute to `1`. By default, the value of the attribute is set to `0`.
+
+Refer to the code given below:
+
+```
+
+{
+
+    "chart": {
+
+        
+
+        "inheritPlotBorderColor": "1"
+
+    }
+
+}
+
+```
+
+Click here to edit an area chart.
+
+> Note: Other `plotBorder` cosmetic attributes  will work even if this attribute is set to `1`.
+
+You can configure the `inheritPlotBorderColor` attribute for a particular data plot of an area chart with multiple data plots.
+
+Take a look at the image given below:
+
+IMAGE
+
+To inherit the color of the plot border from a particular data plot of an area chart with multiple data plots, set the value of `inheritPlotBorderColor` attribute to `1` under `dataset` object.
+
+Refer to the code given below:
+
+```
+
+{
+
+    "chart": {
+
+        ...
+
+    },
+
+    "categories": [
+
+        {
+
+            "category": [
+
+                ...
+
+            ]
+
+        }
+
+    ],
+
+    "dataset": [
+
+        {
+
+            "seriesname": "Series Name",
+
+            "inheritPlotBorderColor": "1"
+
+            "data": [
+
+                ...
+
+            ]
+
+        },
+
+        
+
+    ]
+
+}
+
+```
+
+The chart looks like as shown below:
+
+LIVE CHART
+
+Click here to edit an area chart with multiple data plots.
+
 ## Dashed data Plot Border
 
 You can set a dashed border for the data plot and can also customize dash-length and the gap between dashes. To do so, the following attributes are used:
