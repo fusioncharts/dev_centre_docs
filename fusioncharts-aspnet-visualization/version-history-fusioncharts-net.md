@@ -16,7 +16,7 @@ heading: Version History
   - .NET Standard
   - Mono/Xamarin
 
-> You can download the .NET Standard version directly from **Nuget**.
+> You can download the .NET Standard version directly from **NuGet**.
 
 <h2 class="sub-heading">Version 1.0.2</h2>
 
