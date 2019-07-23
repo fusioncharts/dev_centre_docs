@@ -162,6 +162,46 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/bofsxted/) to edit the above chart.
 
+## Improve the readability of data Values
+
+Often when data values are placed inside the data plot, the data values are not properly visible. Based on the plot color and the text color of the data values it is sometimes difficult to read them. Refer to the image below:
+
+image
+
+In order to overcome this readability problem, a new attribute is introduced. 
+
+To distinguish the data values from the data plot, set the value of the `textOutline` attribute to `1`. 
+
+Refer to the image below:
+
+image
+
+> The default value `textOutline` attribute is set to `0` (false).
+
+> The outline of the data values will always be **black** or **white** depending on the color and brightness of the text. 
+
+Refer to the code below:
+
+```
+
+{
+
+    "chart": {
+
+        "textOutline": "1"
+
+    }
+
+}
+
+```
+
+> You can apply the `textOutline` attribute only at `chart` level, i.e., it can only be applied globally for all the data values of the chart.
+
+The chart will look like as shown in the image below:
+
+LIVE CHART
+
 ## Dashed data Plot Border
 
 You can set a dashed border for the data plot and can also customize dash-length and the gap between dashes. To do so, the following attributes are used:
