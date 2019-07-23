@@ -36,7 +36,7 @@ To install, download `FusionCharts.NET` and follow the steps given below:
 To use NuGet package, please run the following command in the NuGet Package Manage Console:
 
 ```csharp
-Install-Package FusionCharts.Visualization -Version 1.0.2
+Install-Package FusionCharts.Visualization -Version 1.0.4
 ```
 
 Once installed from NuGet, it'll add some assemblies to your web project, and those assemblies will be automatically referenced to your project. It'll also add FusionCharts JavaScript libraries to your project under `Scripts/FusionCharts/` folder.

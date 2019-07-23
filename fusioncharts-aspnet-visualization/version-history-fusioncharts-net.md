@@ -4,6 +4,20 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version History
 ---
 
+<h2 class="sub-heading">Version 1.0.4</h2>
+
+<p class="release-date">23rd July, 2019</p>
+
+<h4 class="sub-heading">Improvement</h4>
+
+- FC.NET has been releases for **.NET Standard** which enables the support for all available `.NET frameworks`. The supported .NET frameworks are listed below:
+  - .NET Framework
+  - .NET Core
+  - .NET Standard
+  - Mono/Xamarin
+
+> You can download the .NET Standard version directly from **Nuget**.
+
 <h2 class="sub-heading">Version 1.0.2</h2>
 
 <p class="release-date">12th July, 2019</p>
