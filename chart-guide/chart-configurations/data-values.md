@@ -72,46 +72,6 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/c8co0Lgv/) to edit the above chart.
 
-## Improve the readability of data Values
-
-Often when data values are placed inside the data plot, the data values are not properly visible. Based on the plot color and the text color of the data values it is sometimes difficult to read them. Refer to the image below:
-
-image
-
-In order to overcome this readability problem, a new attribute is introduced. 
-
-To distinguish the data values from the data plot, set the value of the `textOutline` attribute to `1`. 
-
-Refer to the image below:
-
-image
-
-> The default value `textOutline` attribute is set to `0` (false).
-
-> The outline of the data values will always be **black** or **white** depending on the color and brightness of the text. 
-
-Refer to the code below:
-
-```
-
-{
-
-    "chart": {
-
-        "textOutline": "1"
-
-    }
-
-}
-
-```
-
-> You can apply the `textOutline` attribute only at `chart` level, i.e., it can only be applied globally for all the data values of the chart.
-
-The chart will look like as shown in the image below:
-
-LIVE CHART
-
 ## Control the visibility of data values
 
 By default, all the data values are hidden for a chart. Setting the `showValues` attribute to `1` under the `chart` object displays all the data values in the chart. Given below is an image of a stacked chart, let's see how a stacked chart renders its data values for each data plot:
@@ -124,27 +84,21 @@ Starting v3.14.0, FusionCharts allows you to control the visibility of data valu
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        "minPlotHeightForValue": "20"
-
+        "minPlotHeightForValue": "15"
     }
-
 }
-
 ```
 
 In the above code, the value of `minPlotHeightForValue` attribute is set to **20px**. In this case, the data values of the data plots with a height of more than 20 pixels will be visible. FusionCharts will disable the data values of the plots with a height of less than 20 pixels.
 
 Now, after applying the `minPlotHeightForValue` attribute, the above chart looks like as shown below:
 
-LIVE CHART
+{% embed_chart minimum-plot-height-for-stacked-chart-example-11.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/t8uecnyv/) to edit the above chart.
 
 In the above chart, we can see that the data values of the data plots with height less than 20 pixels have been disabled.
 
@@ -154,27 +108,21 @@ A similar scenario can occur for a Bubble chart as well. We cannot calculate the
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        "minRadiusForValue": "10"
-
+        "minRadiusForValue": "15"
     }
-
 }
-
 ```
 
 In the above code, the value of the `minRadiusForValue` attribute has been set to **10 pixels**. In this case, the data values of the data plots with a radius of more than 10 pixels will be visible. FusionCharts will disable the data values of the plots with a radius of less than 10 pixels.
 
 A bubble chart looks like as shown below:
 
-LIVE CHART
+{% embed_chart minimum-plot-radius-for-bubble-chart-example-12.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/thL71s9v/) to edit the above chart.
 
 ## Display Data Values outside Columns
 
