@@ -112,6 +112,70 @@ The chart will look like as shown in the image below:
 
 LIVE CHART
 
+## Control the visibility of data values
+
+By default, all the data values are hidden for a chart. Setting the `showValues` attribute to `1` under the `chart` object displays all the data values in the chart. Given below is an image of a stacked chart, let's see how a stacked chart renders its data values for each data plot:
+
+![](null)
+
+In the above image, as you can see the `showValues` attribute has been set to `1` and all the values are getting rendered on their respective data plots. The data values of the data plots with high numeric values are getting rendered properly, but the lower values' data plots are not looking nice to our eyes.
+
+Starting v3.14.0, FusionCharts allows you to control the visibility of data values of the plots by specifying the minimum height of the columns. Data plots less than the minimum height specified will not show the data value text. This will help reduce clutter and improve the readability of the chart.
+
+Refer to the code given below:
+
+```
+
+{
+
+    "chart": {
+
+        "minPlotHeightForValue": "20"
+
+    }
+
+}
+
+```
+
+In the above code, the value of `minPlotHeightForValue` attribute is set to **20px**. In this case, the data values of the data plots with a height of more than 20 pixels will be visible. FusionCharts will disable the data values of the plots with a height of less than 20 pixels.
+
+Now, after applying the `minPlotHeightForValue` attribute, the above chart looks like as shown below:
+
+LIVE CHART
+
+Click here to edit the above chart.
+
+In the above chart, we can see that the data values of the data plots with height less than 20 pixels have been disabled.
+
+### Bubble chart
+
+A similar scenario can occur for a Bubble chart as well. We cannot calculate the height of a bubble chart so a new attribute `minRadiusForValue` has been introduced where u can specify the minimum radius of the bubble to display the data values of the plots.
+
+Refer to the code below:
+
+```
+
+{
+
+    "chart": {
+
+        "minRadiusForValue": "10"
+
+    }
+
+}
+
+```
+
+In the above code, the value of the `minRadiusForValue` attribute has been set to **10 pixels**. In this case, the data values of the data plots with a radius of more than 10 pixels will be visible. FusionCharts will disable the data values of the plots with a radius of less than 10 pixels.
+
+A bubble chart looks like as shown below:
+
+LIVE CHART
+
+Click here to edit the above chart.
+
 ## Display Data Values outside Columns
 
 By default, the data values are displayed within the column data plots. Set the `placeValuesInside` attribute to `1` and display the data values inside the column data plots. Refer to the code below:
