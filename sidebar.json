@@ -1780,7 +1780,7 @@
             "path": "/upgrading/upgrading-from-evaluation-versions"
           },
           {
-            "title": "Upgrade to v3.13.x",
+            "title": "Upgrade to v3.14.x",
             "children": [
               {
                 "title": "Changelog",
@@ -1799,6 +1799,10 @@
           {
             "title": "Version History",
             "children": [
+              {
+                "title": "v3.13.x",
+                "path": "/upgrading/version-history/version-3-13-X"
+              },
               {
                 "title": "v3.12.x",
                 "path": "/upgrading/version-history/version-3-12-X"
