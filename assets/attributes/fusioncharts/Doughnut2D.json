@@ -974,6 +974,20 @@
         "type": "Boolean",
         "versionsince": "3.2.1",
         "name": "useEllipsesWhenOverflow"
+      },
+      {
+        "description": "This attribute places the data labels outside/inside of the doughnut segments. \n\nDefault value: Outside",
+        "range": "Outside, Inside",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "labelPosition"
+      },
+      {
+        "description": "This attribute places the data values outside/inside of the doughnut segments. \n\nDefault value: Outside",
+        "range": "Outside, Inside",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "valuePosition"
       }
     ],
     "description": " In FusionCharts XT, the pie and doughnut charts can now have smart labels and lines. Smart labels/lines are data connector lines which connect the pie/doughnut slices to their respective labels without over-lapping even in cases where there are lots of labels located near each other. You can configure the smart labels/lines properties using the attributes below. "
