@@ -52,6 +52,39 @@ In th above code:
 
 > If multiple data type columns are available in the tabular data and we do not specify the data type column in `xAxis`, then FT will assign the first date type column in the tabular data to the `xAxis`.
 
+## Set the Initial Spread of the Active Window
+
+Starting v1.2.0, FusionTime allows you to set the initial spread of the active window of the time navigator. This flexibility gives you the option to initially load your time-series chart according to your requirements.
+
+To set the initial spread of the active window, create a newly added `initialInterval` object under `xaxis` object. Set the value of the `from` and `to` attribute in the `initialInterval` object.
+
+> The date-time format of the `from` and `to` attributes should be the same as of the value of `time` in **schema**.
+
+Refer to the code below:
+
+```
+"dataSource": {
+    "xaxis": {
+        initialInterval: {
+            from: '2016-01-01 12:00:00',
+            to: '2016-01-31 12:00:00'
+        }
+    }
+}
+
+```
+In the above code:
+
+* Create the `initialInterval` object in the `xaxis` object to specify the spread of time axis on initial loading or rendering.
+
+* In the `initialInterval` object:
+
+    * `from` attribute is used to set the time from where you want your time-series chart to be rendered.
+
+    * `to` attribute is used to set the time up to which you want your time-series chart to be rendered.
+
+> Note: If 'from' is not specified, then the first timestamp of the data will be taken, and if 'to' is not specified, then the last timestamp of data will be considered.
+
 ## Style Definition
 
 Styling can be applied to three elements of the X-axis:

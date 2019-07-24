@@ -120,6 +120,92 @@ The code is given below:
 
 In the above code, prefix has been set as `$`.
 
+## Configure Null Values
+
+FusionTime allows you to connect the data plots even if you have not specified any value for that particular date or dates. Previously by default, the connecting lines were getting rendered with the same style as of the data plots (only applicable for line and area charts). Starting v1.2.0, FusionTime has configured the default connecting lines to dashed lines. So, now if you have a null data in your time-series chart, by default the connecting line is rendered as dashed lines.
+
+The dashed connecting line helps in interpolating the line/area segment differently and enables you to establish the clarity between the recorded data values and the interpolated values.
+
+The default connecting line looks like as shown in the image below:
+
+IMAGE
+
+### Add Styles to Connecting Line
+
+FusionTime allows you to style the connector for the line or area data plot. You can configure the:
+
+* Line thickness,
+
+* Color, and
+
+* type of the connecting line.
+
+Refer to the code given below:
+
+*> The code given below can be used you want to configure the connecting line of a particular data plot. The detailed code to configure all the data plots of the chart is given later in the page.*
+
+```
+
+{
+  "yAxis": [{
+    "plot": [{
+      "type": "line",
+      "connectNullData": "true"
+      "style": {
+        "plot.null": Style Object,
+        "line.null": Style Object,
+        "area.null": Style Object
+      }
+    }]
+  }]
+}
+
+```
+
+In the above code:
+
+* `connectNulldata` attribute has been set to true under `yAxis` object.
+
+* A `style` object has been created under `yAxis` object to style the connecting line for null values.
+
+* `plot.null` object is created to configure the connecting line of the plots in the canvas.
+
+* `plot.null` object is created to configure the connecting line of the line chart.
+
+* `plot.null` object is created to configure the connecting area of the area chart.
+
+The chart looks like shown in the image below:
+
+LIVE CHART
+
+To add styles to all the connecting lines of the data plots in a chart, use the `plotConfig` object as shown below:
+
+```
+
+{
+    "plotConfig": {
+        "line": {
+            "style": {
+                "plot.null": Style Object,
+                "line.null": Style Object
+            }
+        },
+        "area": {
+            "style": {
+                "plot.null": Style Object,
+                "line.null": Style Object,
+                "area.null": Style Object
+            }
+        }
+    }
+}
+
+```
+
+The  chart looks like as shown below:
+
+LIVE CHART
+
 ## Dual Y-axis
 
 In some scenarios, you might have data with two measures of different units. For example - temperature in `degree Celsius` and energy in `kilowatt`. This is where a dual Y-Axis comes handy. You can opt to show both the measures on two different Y-Axis in the same canvas. A chart with dual Y-Axis is shown below:
