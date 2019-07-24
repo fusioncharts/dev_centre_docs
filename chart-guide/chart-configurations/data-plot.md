@@ -168,11 +168,11 @@ In area charts, you can draw the borders of the data plots either only at the to
 
 Take a look at the image with borders on all four sides of the are plot.
 
-IMAGE
+![Four Side Plot Border](/images/area-chart-drawfullareaborder.png)
 
 Now, let's take a look an the image with the border only at the top of an area plot.
 
-IMAGE
+![Top Plot Border](/images/area-chart-drawfullareaborder-top.png)
 
 To set the top border of the area plot follow the steps below:
 
@@ -199,7 +199,7 @@ You can also configure the top border of a particular data plot in an area chart
 
 Take a look at the image given below:
 
-IMAGE
+![Multi-Series Area Chart](/images/draw-full-area-border-multi-series-area-chart.png)
 
 To set the top border of a particular data plot in an area chart with multiple data plots, set the value of `drawFullAreaBorder` attribute to `0` under `dataset` object.
 
@@ -241,46 +241,38 @@ Click [here](http://jsfiddle.net/fusioncharts/5o9wfzd3/) to edit an area chart w
 
 FusionCharts Suite allows you to set the border color of the area chart by inheriting the plot color.
 
-Take a look at the image shown below:
+A chart without inheriting the plot color looks like:
 
-IMAGE
+![Inherit Plot Border Color](/images/area-chart-inheritplotborder.png)
 
 To enable the plot border to inherit the color of an area plot, set the `inheritPlotBorderColor` attribute to `1`. By default, the value of the attribute is set to `0`.
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        
-
+        "showPlotBorder": "1",
         "inheritPlotBorderColor": "1"
-
     }
-
 }
-
 ```
 
-Click here to edit an area chart.
+The chart looks like as shown below:
 
-> Note: Other `plotBorder` cosmetic attributes  will work even if this attribute is set to `1`.
+{% embed_chart chart-configurations-area-plot-inherit-border-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/45a6e8q2/) to edit an area chart.
+
+> Other `plotBorder` cosmetic attributes  will work even if this attribute is set to `1`.
 
 You can configure the `inheritPlotBorderColor` attribute for a particular data plot of an area chart with multiple data plots.
-
-Take a look at the image given below:
-
-IMAGE
 
 To inherit the color of the plot border from a particular data plot of an area chart with multiple data plots, set the value of `inheritPlotBorderColor` attribute to `1` under `dataset` object.
 
 Refer to the code given below:
 
-```
-
+```json
 {
 
     "chart": {
