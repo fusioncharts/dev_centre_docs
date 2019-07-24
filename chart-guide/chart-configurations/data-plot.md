@@ -235,7 +235,7 @@ The chart looks like as shown below:
 
 {% embed_chart chart-configurations-area-plot-border-top-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5o9wfzd3/) to edit an area chart with multiple data plots.
+Click [here](http://jsfiddle.net/fusioncharts/4ygjco5m/) to edit an area chart with multiple data plots.
 
 ## Inherit plot border color of an area chart
 
@@ -274,56 +274,33 @@ Refer to the code given below:
 
 ```json
 {
-
     "chart": {
-
         ...
-
     },
-
     "categories": [
-
         {
-
             "category": [
-
                 ...
-
             ]
-
         }
-
     ],
-
     "dataset": [
-
         {
-
-            "seriesname": "Series Name",
-
+            "seriesname": "Bakersfield Central",
             "inheritPlotBorderColor": "1"
-
             "data": [
-
                 ...
-
             ]
-
-        },
-
-        
-
+        }
     ]
-
 }
-
 ```
 
 The chart looks like as shown below:
 
-LIVE CHART
+{% embed_chart chart-configurations-multi-area-plot-inherit-border-example-11.js %}
 
-Click here to edit an area chart with multiple data plots.
+Click [here](http://jsfiddle.net/fusioncharts/L1kg5jv7/) to edit an area chart with multiple data plots.
 
 ## Dashed data Plot Border
 
@@ -405,6 +382,7 @@ Refer to the code below:
     }
 }
 ```
+
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-8.js %}
