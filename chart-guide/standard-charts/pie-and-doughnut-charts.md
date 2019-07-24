@@ -128,96 +128,67 @@ Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D char
 
 Starting v3.14.0, FusionCharts Suite XT allows you to place the values inside the pie/doughnut slices of a pie and doughnut chart respectively. This helps to improve the overall look as it saves the canvas area outside the chart.
 
-You can place the value inside the slices by setting the value of the newly added attribute `valuePosition` to **inside**. The default value of `valuePosition` attribute is **outside**. 
+You can place the value inside the slices by setting the value of the newly added attribute `valuePosition` to **inside**. The default value of `valuePosition` attribute is **outside**.
 
 > `valuePosition` attribute can only be applied to 2D charts, i.e., pie2d and doughnut2d charts.
 
 Refer to the code below:
 
-```
-
+```json
 {
-
-    chart: {
-
+    "chart": {
         "valuePosition": "inside"
-
     }
-
 }
-
 ```
 
 `valuePosition` attribute can be applied both at `chart` and `data` level, i.e., you can set the position of the individual values of the slices.
 
 Refer to the code below, showing the `valuePosition` attribute for a particular value:
 
-```
-
+```json
 {
-
     "chart": {
-
         ...
-
     },
-
     "data": [{
-
-        "label": "Teenage",
-
-        "value": "1250400",
-
-        "valuePosition": "outside"
-
-    }, {
-
-        "label": "Adult",
-
-        "value": "1463300" 
-
-    }, {
-
-        "label": "Mid-age",
-
-        "value": "1050700"
-
-    }, {
-
-        "label": "Senior",
-
-        "value": "491000"
-
-    }]
-
+            "label": "Food",
+            "value": "285040"
+        },
+        {
+            "label": "Apparels",
+            "value": "146330",
+            "valuePosition": "inside"
+        },
+        {
+            "label": "Electronics",
+            "value": "105070"
+        },
+        {
+            "label": "Household",
+            "value": "49100"
+        }
+    ]
 }
-
 ```
 
 A pie2d with `valuePosition` attribute set to **inside** (at chart level) is shown below:
 
-PIE CHART
+{% embed_chart value-position-inside-pie-chart-example-17.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/3dts9evm/) to edit the above chart.
 
 In a pie/doughnut charts, changing the position of the value can sometimes overlap each other due to the unavailability of space. For this scenario, a new attribute `minAngleForValue` has been introduced which sets the minimum angle of the pie below which the values will not be visible.
 
 Refer to the code below:
 
-```
-
+```json
 {
-
-    chart: {
-
+    "chart": {
         "valuePosition": "inside",
-
-        "minAngleForValue": "90"
-
+        "minAngleForValue": "75"
     }
-
 }
-
 ```
 
 > This attribute will only work if the `valuePosition` attribute is set to `inside`.
@@ -226,102 +197,75 @@ Refer to the code below:
 
 A doughnut chart after applying `valuePosition` and `minAngleForValue` attribute look like:
 
-DOUGHNUT CHART
+{% embed_chart value-position-inside-doughnut-chart-example-18.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2m8fskpa/) to edit the above chart.
 
 ## Place label inside the Pie/Doughnut Chart
 
 Now that you have already customized the position of the values of a pie/doughnut charts, let's see how to place the labels inside the pie/doughnut slices of a pie and doughnut chart respectively.
 
-You can place the label inside the slices by setting the value of the `labelPosition` attribute to `inside**`**. The default value of `labelPosition` attribute is `outside`. 
+You can place the label inside the slices by setting the value of the `labelPosition` attribute to `inside**`**. The default value of `labelPosition` attribute is `outside`.
 
 > `labelPosition` attribute can only be applied to 2D charts, i.e., pie2d and doughnut2d charts.
 
 Refer to the code below:
 
-```
-
+```json
 {
-
-    chart: {
-
+    "chart": {
         "labelPosition": "inside"
-
     }
-
 }
-
 ```
 
 `labelPosition` attribute can be applied both at `chart` and `data` level, i.e., you can set the position of the individual labels of the slices.
 
 Refer to the code below, showing the `labelPosition` attribute for a particular value:
 
-```
-
+```json
 {
-
     "chart": {
-
         ...
-
     },
-
     "data": [{
-
-        "label": "Teenage",
-
-        "value": "1250400",
-
-        "labelPosition": "outside"
-
-    }, {
-
-        "label": "Adult",
-
-        "value": "1463300" 
-
-    }, {
-
-        "label": "Mid-age",
-
-        "value": "1050700"
-
-    }, {
-
-        "label": "Senior",
-
-        "value": "491000"
-
-    }]
-
+            "label": "Food",
+            "value": "285040"
+        },
+        {
+            "label": "Apparels",
+            "value": "146330",
+            "labelPosition": "inside"
+        },
+        {
+            "label": "Electronics",
+            "value": "105070"
+        },
+        {
+            "label": "Household",
+            "value": "49100"
+        }
+    ]
 }
-
 ```
 
 A pie2d with `labelPosition` attribute set to `inside**`** (at chart level) is shown below:
 
-PIE CHART
+{% embed_chart label-position-inside-pie-chart-example-19.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/t8r1js2y/) to edit the above chart.
 
 In a pie/doughnut charts, changing the position of the label can sometimes overlap each other due to the unavailability of space. For this scenario, a new attribute `minAngleForLabel` has been introduced which sets the minimum scale angle to render the label of the pie/doughnut charts.
 
 Refer to the code below:
 
-```
-
+```json
 {
-
-    chart: {
-
+    "chart": {
         "labelPosition": "inside",
-
-        "minAngleForValue": "90"
-
+        "minAngleForLabel": "75"
     }
-
 }
-
 ```
 
 > This attribute will only work if the `valuePosition` attribute is set to `inside`.
@@ -330,7 +274,9 @@ Refer to the code below:
 
 A doughnut chart after applying `labelPosition` and `minAngleForLabel` attribute look like:
 
-DOUGHNUT CHART
+{% embed_chart label-position-inside-pie-chart-example-20.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/w834e0pb/) to edit the above chart.
 
 ## Customize the Center Label for a Doughnut Chart
 
@@ -568,7 +514,6 @@ Refer to the code given below:
     "label": "Household",
     "value": "49100",
     "isSliced": "1"
-  }
 }
 ```
 
