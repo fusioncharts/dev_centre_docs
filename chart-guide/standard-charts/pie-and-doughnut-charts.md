@@ -503,29 +503,38 @@ You can set the radius of the pie chart in percent by setting the value of `pieR
 
 Refer to the image shown below:
 
-IMAGE
+![Percent Value on Pie Chart](/images/percent-value-in-pie-radius.png)
+
+Click [here](http://jsfiddle.net/fusioncharts/7g15v0nq/) to edit the above chart.
 
 In the doughnut chart, you can apply the `pieRadius` attribute to set the radius of the upper threshold of the doughnut chart.
 
 Refer to the image below:
 
-IMAGE
+![Percent Value on Doughnut Chart](/images/pie-radius-in-doughnut-chart.png)
+
+Click [here](http://jsfiddle.net/fusioncharts/eh6rsmnt/) to edit the above chart.
 
 To customize the inner radius of the doughnut chart, set the value of `doughnutRadius` attribute in percent.
 
 Refer to the image below:
 
-IMAGE
+![Doughnut Radius on Doughnut Chart](/images/percent-value-in-doughnut-radius.png)
 
-In the above image, the `doughnutRadius` has been set to **70%** and as you can see that the percent of the radius has been calculated with respect to the upper threshold of the doughnut chart.
+In the above image, the `doughnutRadius` has been set to **80%** and as you can see that the percent of the radius has been calculated with respect to the upper threshold of the doughnut chart.
 
 Refer to the code given below:
 
+```json
+{
+  "chart": {
+    "pieRadius": "90",
+    "doughnutRadius": "80"
+  }
+}
 ```
 
-```
-
-Click [here](http://jsfiddle.net/fusioncharts/rds15mvs/) to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/osezmt87/) to edit the pie 2D chart.
 
 ## Set the Starting Angle
 
