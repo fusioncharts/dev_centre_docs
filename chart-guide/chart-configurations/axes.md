@@ -321,32 +321,24 @@ Click [here](http://jsfiddle.net/fusioncharts/4q55b6z5/) to edit the above chart
 Use the following attributes to set a semi-transparent background in a chosen color of y-axis values:
 
 * Set the background color of the y-axis values using the `yAxisValueBgColor` attribute.
-
 * You can also set the degrees of transparency of the background color using `yAxisValueBgAlpha` attribute.
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
         "yAxisValueBgColor": "#ff0000",
-
-        "yAxisValueBgAlpha": "50"
-
+        "yAxisValueBgAlpha": "40"
     }
-
 }
-
 ```
 
 The chart will look like as shown below:
 
-LIVE CHART
+{% embed_chart configure-background-properties-for-y-axis-values-example-11.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/f78h4k0s/) to edit the above chart.
 
 ## Configure border properties for y-axis values
 
@@ -370,39 +362,26 @@ Use the following attributes to customize the border of the y-axis values:
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        "yAxisValueBorderColor": "",
-
-        "yAxisValueBorderAlpha": "",
-
-        "yAxisValueBorderPadding": "",
-
-        "yAxisValueBorderRadius": "",
-
-        "yAxisValueBorderThickness": "",
-
-        "yAxisValueBorderDashed ": "",
-
-        "yAxisValueBorderDashLen": "",
-
-        "yAxisValueBorderDashGap": ""        
-
+        "yAxisValueBorderColor": "#ff0000",
+        "yAxisValueBorderAlpha": "60",
+        "yAxisValueBorderPadding": "5",
+        "yAxisValueBorderRadius": "2",
+        "yAxisValueBorderThickness": "3",
+        "yAxisValueBorderDashed": "1",
+        "yAxisValueBorderDashLen": "2",
+        "yAxisValueBorderDashGap": "2",
     }
-
 }
-
 ```
 
 The chart will look like as shown in the image below:
 
-Live Chart
+{% embed_chart configure-border-properties-for-y-axis-values-example-12.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/tbq5dxj7/) to edit the above chart.
 
 ## Configure font properties for y-axis values
 
@@ -422,35 +401,24 @@ Use the following attributes to configure the font properties of y-axis values:
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
         "yAxisValueFont": "verdana,sans",
-
         "yAxisValueFontSize": "10px",
-
-        "yAxisValueFontColor": "#555555"
-
-        "yAxisValueFontBold": "1"
-
-        "yAxisValueFontItalic": "1"
-
-        "yAxisValueAlpha": "100"
-
+        "yAxisValueFontColor": "#ff0000",
+        "yAxisValueFontBold": "1",
+        "yAxisValueFontItalic": "1",
+        "yAxisValueAlpha": "50",
     }
-
 }
-
 ```
 
 The chart will look like as shown below:
 
-LIVE CHART
+{% embed_chart configure-font-properties-for-y-axis-values-example-13.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/u8n3k46c/) to edit the above chart.
 
 ## Configure Font Properties for Y-axis Names
 
