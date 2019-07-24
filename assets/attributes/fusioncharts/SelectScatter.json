@@ -2183,10 +2183,10 @@
         "name": "valueBorderDashGap"
       },
       {
-        "description": "Set this attribute to `1` to draw a border on the data value text. \n\n__Default value__: 0",
+        "description": "Set this attribute to `1` to draw a border on the data value text. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
-        "versionSince": "3.14.0",
+        "versionsince": "3.14.0",
         "name": "textOutline"
       }
     ],
