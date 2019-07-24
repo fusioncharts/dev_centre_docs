@@ -721,6 +721,20 @@
         "name": "showYAxisValues"
       },
       {
+        "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Left",
+        "range": "Left, Right",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "xAxisPosition"
+      },
+      {
+        "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Bottom",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "yAxisPosition"
+      },
+      {
         "description": "By default, all div lines show their values. However, you can opt to display every x(th) div line value using this attribute.",
         "range": "1 or above",
         "type": "Number",

@@ -724,10 +724,38 @@
         "name": "showXAxisLine"
       },
       {
+        "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Left",
+        "range": "Left, Right",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "xAxisPosition"
+      },
+      {
+        "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Bottom",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "yAxisPosition"
+      },
+      {
         "description": "Sets the transparency of the x-axis line. Will work only when _showxaxisline_ is set to 1.",
         "range": "0 - 100",
         "type": "Number",
         "name": "axisLineAlpha"
+      },
+      {
+        "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Bottom",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "xAxisPosition"
+      },
+      {
+        "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Left",
+        "range": "Left, Right",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "yAxisPosition"
       },
       {
         "description": "Sets color of the x-axis of the chart.",
