@@ -41,20 +41,26 @@ In FusionCharts Suite XT, previously, the position of the y-axis is always set t
 Refer to the code given below:
 
 ```json
-
-CODE
-
+{
+    "chart": {
+        "yAxisPosition": "right"
+    }
+}
 ```
 
 In the above code, the value of the `yAxisPosition` attribute has been set to **right**.
 
-By applying the above attribute, the chart looks like as shown in the image below:
+By applying the above attribute, the chart looks like as shown below:
 
-IMAGE
+{% embed_chart chart-configurations-axes-sample-y-axis-position-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bh2fxgnq/) to edit the above chart.
 
 For bar charts, the y-axis will appear on top as shown in the chart below:
 
-Live chart
+{% embed_chart chart-configurations-axes-sample-y-axis-position-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ud5baexj/) to edit the above chart.
 
 ## X-Axis Position
 
