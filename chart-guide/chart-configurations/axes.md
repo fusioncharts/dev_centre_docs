@@ -32,6 +32,56 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/9y23m8vq/) to edit the above chart.
 
+## X-Axis Position
+
+With 3.14.0, the position of this axis will be configurable - TOP/BOTTOM for vertical charts, LEFT/RIGHT for horizontal charts.
+
+To change the position of the x-axis to the **top**, set the value of `xAxisPosition` attribute to `top`.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "xAxisPosition": "top"
+    }
+}
+```
+
+> The default value of `xAxisPosition` attribute is `bottom`.
+
+The chart looks like as shown below:
+
+{% embed_chart chart-configurations-axes-sample-x-axis-position-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5Lmk4bo3/) to edit the above chart.
+
+> Changing the position of the x-axis won't change the position of the legend of the chart.
+
+### X-Axis position for bar charts
+
+For horizontal bar charts, the position of the x-axis can be set to `right` or `left`.
+
+> By default, the x-axis of bar charts will always be at the left of the chart.
+
+To change the position of the x-axis to the **right**, set the value of `xAxisPosition` attribute to `right`.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "xAxisPosition": "right"
+    }
+}
+```
+
+The chart looks like as shown below:
+
+{% embed_chart chart-configurations-axes-sample-x-axis-position-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/v9oenc7g/) to edit the above chart.
+
 ## Y-axis position
 
 In FusionCharts Suite XT, previously, the position of the y-axis is always set to left. Starting 3.14.0, you can customize the position of the Y-axis by setting the value of `yAxisPosition` attribute to `right`. This will render a chart with y-axis on right.
@@ -61,56 +111,6 @@ For bar charts, the y-axis will appear on top as shown in the chart below:
 {% embed_chart chart-configurations-axes-sample-y-axis-position-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ud5baexj/) to edit the above chart.
-
-## X-Axis Position
-
-With 3.14.0, the position of this axis will be configurable - TOP/BOTTOM for vertical charts, LEFT/RIGHT for horizontal charts.
-
-To change the position of the x-axis to the **top**, set the value of `xAxisPosition` attribute to `top`.
-
-Refer to the code below:
-
-```json
-{
-    "chart": {
-        "xAxisPosition": "top"
-    }
-}
-```
-
-*> The default value of `xAxisPosition` attribute is `bottom`.*
-
-The chart looks like as shown below:
-
-Live Chart
-
-Click here to edit the above chart.
-
-> Changing the position of the x-axis won't change the position of the legend of the chart.
-
-### X-Axis position for bar charts
-
-For horizontal bar charts, the position of the x-axis can be set to `right` or `left`.
-
-> By default, the x-axis of bar charts will always be at the left of the chart.
-
-To change the position of the x-axis to the **right**, set the value of `xAxisPosition` attribute to `right`.
-
-Refer to the code below:
-
-```json
-{
-    "chart": {
-        "xAxisPosition": "right"
-    }
-}
-```
-
-The chart looks like as shown below:
-
-Live Chart
-
-Click here to edit the above chart.
 
 ## Configure Font Cosmetic Properties
 
