@@ -166,13 +166,17 @@ Click [here](http://jsfiddle.net/fusioncharts/bofsxted/) to edit the above chart
 
 In area charts, you can draw the borders of the data plots either only at the top of an area plot or on all the four sides of the area plot.
 
-Take a look at the image shown below:
+Take a look at the image with borders on all four sides of the are plot.
+
+IMAGE
+
+Now, let's take a look an the image with the border only at the top of an area plot.
 
 IMAGE
 
 To set the top border of the area plot follow the steps below:
 
-* To set the top border of the area chart, set the value of `drawFullAreaBorder` attribute to `0`. This will work only if the `showPlotBorder` is set to `1`. 
+* To set the top border of the area chart, set the value of `drawFullAreaBorder` attribute to `0`. This will work only if the `showPlotBorder` is set to `1`.
 
 * Set the value of `drawFullAreaBorder` to `1` to draw the border around all four sides of an area chart.
 
@@ -180,23 +184,16 @@ To set the top border of the area plot follow the steps below:
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        "drawFullAreaBorder": "0",
-
-        "showPlotBorder": "1"
-
+        "showPlotBorder": "1",
+        "drawFullAreaBorder": "0"
     }
-
 }
-
 ```
 
-Click here to edit an area chart.
+Click [here](http://jsfiddle.net/fusioncharts/h6rvyjax/) to edit an area chart.
 
 You can also configure the top border of a particular data plot in an area chart with multiple data plots.
 
@@ -208,59 +205,37 @@ To set the top border of a particular data plot in an area chart with multiple d
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
         ...
-
     },
-
     "categories": [
-
         {
-
             "category": [
-
                 ...
-
             ]
-
         }
-
     ],
-
     "dataset": [
-
         {
-
-            "seriesname": "Series Name",
-
-            "drawFullAreaBorder": "0"
-
+            "seriesname": "Bakersfield Central",
+            "showPlotBorder": "1",
+            "drawFullAreaBorder": "0",
+            "plotBorderThickness": "3",
             "data": [
-
                 ...
-
             ]
-
-        },
-
-        
-
+        }
     ]
-
 }
-
 ```
 
 The chart looks like as shown below:
 
-LIVE CHART
+{% embed_chart chart-configurations-area-plot-border-top-example-9.js %}
 
-Click here to edit an area chart with multiple data plots.
+Click [here](http://jsfiddle.net/fusioncharts/5o9wfzd3/) to edit an area chart with multiple data plots.
 
 ## Inherit plot border color of an area chart
 
