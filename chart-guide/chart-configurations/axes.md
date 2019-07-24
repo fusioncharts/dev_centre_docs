@@ -13,7 +13,6 @@ The vertical axis on the chart is refered to as the y-axis. Y-Axis refers to the
 Use the following attributes to configure names of axes:
 
 * Specify the title of the X-axis of the chart using the `xAxisName` attribute.
-
 * Specify the title of the Y-axis of the chart using the `yAxisName` attribute.
 
 Refer to the code given below:
@@ -37,11 +36,11 @@ Click [here](http://jsfiddle.net/fusioncharts/9y23m8vq/) to edit the above chart
 
 In FusionCharts Suite XT, previously, the position of the y-axis is always set to left. Starting 3.14.0, you can customize the position of the Y-axis by setting the value of `yAxisPosition` attribute to `right`. This will render a chart with y-axis on right.
 
->* The behavior of primary and secondary Y-Axis is not affected by this.*
+> The behavior of primary and secondary Y-Axis is not affected by this.
 
 Refer to the code given below:
 
-```
+```json
 
 CODE
 
@@ -65,18 +64,12 @@ To change the position of the x-axis to the **top**, set the value of `xAxisPosi
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
         "xAxisPosition": "top"
-
     }
-
 }
-
 ```
 
 *> The default value of `xAxisPosition` attribute is `bottom`.*
@@ -87,30 +80,24 @@ Live Chart
 
 Click here to edit the above chart.
 
-*> Changing the position of the x-axis won't change the position of the legend of the chart.*
+> Changing the position of the x-axis won't change the position of the legend of the chart.
 
 ### X-Axis position for bar charts
 
 For horizontal bar charts, the position of the x-axis can be set to `right` or `left`.
 
-*> By default, the x-axis of bar charts will always be at the left of the chart.*
+> By default, the x-axis of bar charts will always be at the left of the chart.
 
 To change the position of the x-axis to the **right**, set the value of `xAxisPosition` attribute to `right`.
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
         "xAxisPosition": "right"
-
     }
-
 }
-
 ```
 
 The chart looks like as shown below:
@@ -119,7 +106,7 @@ Live Chart
 
 Click here to edit the above chart.
 
-## Configure Font Cosmetic Properties 
+## Configure Font Cosmetic Properties
 
 Configure cosmetic properties like font, color, and size of the X-axis name using the attributes given below:
 
