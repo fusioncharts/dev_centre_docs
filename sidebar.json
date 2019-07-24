@@ -1392,8 +1392,12 @@
                 "path": "/chart-guide/chart-configurations/canvas"
               },
               {
-                "title": "Titles and Axis Names",
-                "path": "/chart-guide/chart-configurations/titles-and-axis-names"
+                "title": "Axes",
+                "path": "/chart-guide/chart-configurations/axes"
+              },
+              {
+                "title": "Captions",
+                "path": "/chart-guide/chart-configurations/caption-and-sub-caption"
               },
               {
                 "title": "Data Plot",
