@@ -76,7 +76,7 @@ Click [here](http://jsfiddle.net/fusioncharts/c8co0Lgv/) to edit the above chart
 
 By default, all the data values are hidden for a chart. Setting the `showValues` attribute to `1` under the `chart` object displays all the data values in the chart. Given below is an image of a stacked chart, let's see how a stacked chart renders its data values for each data plot:
 
-![](null)
+![Visibility Control](/images/minimum-plot-height-for-stacked-chart.png)
 
 In the above image, as you can see the `showValues` attribute has been set to `1` and all the values are getting rendered on their respective data plots. The data values of the data plots with high numeric values are getting rendered properly, but the lower values' data plots are not looking nice to our eyes.
 
@@ -162,7 +162,7 @@ The chart will look like as shown in  the image below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uezpdfff/) to edit the above chart.
 
-You can also opt to show/hide specific data values instead of hiding all of them. Set the `showValue` attribute to `1` under the `data` for that specific data value which you want to display. This setting overrides the `showValues` setting at the `chart` object level. 
+You can also opt to show/hide specific data values instead of hiding all of them. Set the `showValue` attribute to `1` under the `data` for that specific data value which you want to display. This setting overrides the `showValues` setting at the `chart` object level.
 
 Refer to the code below:
 
@@ -179,7 +179,6 @@ Refer to the code below:
         }
     ]
 }
-
 ```
 
 The chart looks like as shown below:
