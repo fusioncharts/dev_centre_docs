@@ -166,13 +166,17 @@ Click [here](http://jsfiddle.net/fusioncharts/bofsxted/) to edit the above chart
 
 In area charts, you can draw the borders of the data plots either only at the top of an area plot or on all the four sides of the area plot.
 
-Take a look at the image shown below:
+Take a look at the image with borders on all four sides of the are plot.
 
-IMAGE
+![Four Side Plot Border](/images/area-chart-drawfullareaborder.png)
+
+Now, let's take a look an the image with the border only at the top of an area plot.
+
+![Top Plot Border](/images/area-chart-drawfullareaborder-top.png)
 
 To set the top border of the area plot follow the steps below:
 
-* To set the top border of the area chart, set the value of `drawFullAreaBorder` attribute to `0`. This will work only if the `showPlotBorder` is set to `1`. 
+* To set the top border of the area chart, set the value of `drawFullAreaBorder` attribute to `0`. This will work only if the `showPlotBorder` is set to `1`.
 
 * Set the value of `drawFullAreaBorder` to `1` to draw the border around all four sides of an area chart.
 
@@ -180,183 +184,123 @@ To set the top border of the area plot follow the steps below:
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        "drawFullAreaBorder": "0",
-
-        "showPlotBorder": "1"
-
+        "showPlotBorder": "1",
+        "drawFullAreaBorder": "0"
     }
-
 }
-
 ```
 
-Click here to edit an area chart.
+Click [here](http://jsfiddle.net/fusioncharts/h6rvyjax/) to edit an area chart.
 
 You can also configure the top border of a particular data plot in an area chart with multiple data plots.
 
 Take a look at the image given below:
 
-IMAGE
+![Multi-Series Area Chart](/images/draw-full-area-border-multi-series-area-chart.png)
 
 To set the top border of a particular data plot in an area chart with multiple data plots, set the value of `drawFullAreaBorder` attribute to `0` under `dataset` object.
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
         ...
-
     },
-
     "categories": [
-
         {
-
             "category": [
-
                 ...
-
             ]
-
         }
-
     ],
-
     "dataset": [
-
         {
-
-            "seriesname": "Series Name",
-
-            "drawFullAreaBorder": "0"
-
+            "seriesname": "Bakersfield Central",
+            "showPlotBorder": "1",
+            "drawFullAreaBorder": "0",
+            "plotBorderThickness": "3",
             "data": [
-
                 ...
-
             ]
-
-        },
-
-        
-
+        }
     ]
-
 }
-
 ```
 
 The chart looks like as shown below:
 
-LIVE CHART
+{% embed_chart chart-configurations-area-plot-border-top-example-9.js %}
 
-Click here to edit an area chart with multiple data plots.
+Click [here](http://jsfiddle.net/fusioncharts/4ygjco5m/) to edit an area chart with multiple data plots.
 
 ## Inherit plot border color of an area chart
 
 FusionCharts Suite allows you to set the border color of the area chart by inheriting the plot color.
 
-Take a look at the image shown below:
+A chart without inheriting the plot color looks like:
 
-IMAGE
+![Inherit Plot Border Color](/images/area-chart-inheritplotborder.png)
 
 To enable the plot border to inherit the color of an area plot, set the `inheritPlotBorderColor` attribute to `1`. By default, the value of the attribute is set to `0`.
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        
-
+        "showPlotBorder": "1",
         "inheritPlotBorderColor": "1"
-
     }
-
 }
-
 ```
 
-Click here to edit an area chart.
+The chart looks like as shown below:
 
-> Note: Other `plotBorder` cosmetic attributes  will work even if this attribute is set to `1`.
+{% embed_chart chart-configurations-area-plot-inherit-border-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/45a6e8q2/) to edit an area chart.
+
+> Other `plotBorder` cosmetic attributes  will work even if this attribute is set to `1`.
 
 You can configure the `inheritPlotBorderColor` attribute for a particular data plot of an area chart with multiple data plots.
-
-Take a look at the image given below:
-
-IMAGE
 
 To inherit the color of the plot border from a particular data plot of an area chart with multiple data plots, set the value of `inheritPlotBorderColor` attribute to `1` under `dataset` object.
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
         ...
-
     },
-
     "categories": [
-
         {
-
             "category": [
-
                 ...
-
             ]
-
         }
-
     ],
-
     "dataset": [
-
         {
-
-            "seriesname": "Series Name",
-
+            "seriesname": "Bakersfield Central",
             "inheritPlotBorderColor": "1"
-
             "data": [
-
                 ...
-
             ]
-
-        },
-
-        
-
+        }
     ]
-
 }
-
 ```
 
 The chart looks like as shown below:
 
-LIVE CHART
+{% embed_chart chart-configurations-multi-area-plot-inherit-border-example-11.js %}
 
-Click here to edit an area chart with multiple data plots.
+Click [here](http://jsfiddle.net/fusioncharts/L1kg5jv7/) to edit an area chart with multiple data plots.
 
 ## Dashed data Plot Border
 
@@ -438,6 +382,7 @@ Refer to the code below:
     }
 }
 ```
+
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-8.js %}
