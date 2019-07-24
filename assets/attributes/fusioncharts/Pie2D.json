@@ -1836,6 +1836,20 @@
         "name": "showValue"
       },
       {
+        "description": "This attribute places the data label outside/inside of a particular pie slice. \n\nDefault value: Outside",
+        "range": "Outside, Inside",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "labelPosition"
+      },
+      {
+        "description": "This attribute places the data value outside/inside of a particular pie slice. \n\nDefault value: Outside",
+        "range": "Outside, Inside",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "valuePosition"
+      },
+      {
         "description": "By default, FusionCharts XT shows the data item name and value as tool tip text for that data item. But, if you want to display more information for the data item as tool tip, you can use this attribute to specify the same.",
         "range": "",
         "type": "String",
