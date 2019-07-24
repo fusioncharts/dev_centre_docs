@@ -281,18 +281,20 @@ new FusionCharts({
       enabled: Boolean,
       scrollbar: {
         style: {
-          button: {}, //SVGStyle | String
-          arrow: {}, //SVGStyle | String
-          scroller: {}, //SVGStyle | String
-          grip: {}, //SVGStyle | String
-          track: {} //SVGStyle | String
+          "button": {}, //SVGStyle | String
+          "arrow": {}, //SVGStyle | String
+          "scroller": {}, //SVGStyle | String
+          "grip": {}, //SVGStyle | String
+          "track": {} //SVGStyle | String
         }
       },
       window: {
         style: {
-          handle: {}, //SVGStyle | String
+          "handle": {}, //SVGStyle | String
           "handle-grip": {}, //SVGStyle | String
-          mask: {} //SVGStyle | String
+          "mask": {} //SVGStyle | String
+          "label": {}, //Style : String
+          "label-background": {} //Style : string  
         }
       }
     }
@@ -444,3 +446,166 @@ A chart's background refers to the whole area, or the container in which it is d
 In the above code, `background` attribute is applied in the `style` object to apply styling the chart background.
 
 > Canvas of the chart can only be styled from the common style definition in `styleDefinition` object.
+
+## Standard Range Selector
+
+Styling can be applied to the buttons of the Standard Range Selector. 
+
+You can add style to the Standard Range Selector using `style` object under `standardRangeSelector` object.
+
+> The `standardRangeSelector` object should be created under `extensions` object.
+
+Syntax:
+
+```
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "standardRangeSelector": {
+                "style": {
+                    "button-text": {}, //Object | String
+                    "button-background": {}, //Object | String
+                    "button-text:hover": {}, //Object | String
+                    "button-background:hover": {}, //Object | String
+                    "button-text:active": {}, //Object | String
+                    "button-background:active": {}, //Object | String
+                    "separator": {} //Object | String
+                }
+            }
+        }
+    }
+})
+
+```
+
+## Custom Range Selector
+
+Styling can be applied to following elements of the Custom Range Selector:
+
+* Title
+
+* Container
+
+* Label
+
+* Button
+
+You can add style to the Custom Range Selector using `style` object under `customRangeSelector` object.
+
+> The `customRangeSelector` object should be created under `extensions` object.
+
+Syntax:
+
+```
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "customRangeSelector": {
+                "style": {
+                    "title-text": {}, //Object | String
+                    "title-icon": {}, //Object | String
+                    "title-text:hover": {}, //Object | String
+                    "title-icon:hover": {}, //Object | String
+                    "title-text:active": {}, //Object | String
+                    "title-icon:active": {}, //Object | String
+                    "container": {}, //Object | String
+                    "label": {}, //Object | String
+                    "button-apply": {}, //Object | String
+                    "button-cancel": {}, //Object | String
+                    "button-apply:hover": {}, //Object | String
+                    "button-cancel:hover": {}, //Object | String
+                    "select": {}, //Object | String
+                    "input": {} //Object | String 
+                }
+            }
+        }
+    }
+})
+
+```
+You can also add a different style to the calendar of the Custom Range Selector by adding following style attributes under `style` object of `customRangeSelector` object.
+
+```
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "customRangeSelector": {
+                "style": {
+                    "cal-month": {}, //Object | String
+                    "cal-month:hover": {}, //Object | String
+                    "cal-header": {}, //Object | String
+                    "cal-header:hover": {}, //Object | String
+                    "cal-subheader": {}, //Object | String
+                    "cal-subheader:hover": {}, //Object | String
+                    "cal-body": {}, //Object | String
+                    "cal-body:hover": {}, //Object | String
+                    "cal-monthname": {}, //Object | String
+                    "cal-monthname:hover": {}, //Object | String
+                    "cal-navprev": {}, //Object | String
+                    "cal-navprev:hover": {}, //Object | String
+                    "cal-navnext": {}, //Object | String
+                    "cal-navnext:hover": {}, //Object | String
+                    "cal-weekend": {}, //Object | String
+                    "cal-weekend:hover": {}, //Object | String
+                    "cal-days": {}, //Object | String
+                    "cal-days:hover": {}, //Object | String
+                    "cal-date": {}, //Object | String
+                    "cal-date:hover": {}, //Object | String
+                    "cal-activedate": {}, //Object | String
+                    "cal-activedate:hover": {}, //Object | String
+                    "cal-selecteddate": {}, //Object | String
+                    "cal-selecteddate:hover": {}, //Object | String
+                    "cal-disableddate": {}, //Object | String
+                    "cal-disableddate:hover": {}, //Object | String
+                }
+            }
+        }
+    }
+})
+
+```
+
+## Y-Axis
+
+Styling can be applied to the y-axis elements using following style objects.
+
+Syntax:
+
+```
+{
+    "yAxis": [{
+        "style": {
+            "tick-mark": {}, //Style
+            "label": {}, //Style
+            "title": {}, //Style
+            "grid-line": {} //Style
+        },
+
+        "plot": [{
+            "value": {}, //String | Object
+            "type": {} //String
+            "style": {
+                "plot": {}, //Style
+                "plot:highlight": {}, //Style
+                "plot:hover": {}, //Style
+                "line": {}, //Style
+                "area": {}, //Style
+                "column": {}, //Style
+                "column:highlight": {}, //Style
+                "column:hover": {}, //Style
+                "anchor:highlight": {}, //Style
+                "anchor:hover": {}, //Style
+                "bear": {}, //Style
+                "bear:highlight": {}, //Style
+                "bear:hover": {}, //Style
+                "bull": {}, //Style
+                "bull:highlight": {}, //Style
+                "bull:hover": {} //Style
+            }
+        }]
+    }]
+}
+```
