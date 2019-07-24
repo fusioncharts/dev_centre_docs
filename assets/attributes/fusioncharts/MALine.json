@@ -1252,6 +1252,13 @@
         "range": "In pixels",
         "type": "Number",
         "name": "valueBorderDashGap"
+      },
+      {
+        "description": "Set this attribute to `1` to draw a border on the data value text. \n\n__Default value__: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionSince": "3.14.0",
+        "name": "textOutline"
       }
     ],
     "description": "These attributes let you configure font, background and border cosmetics, of value text-field that appear for each data plot."
