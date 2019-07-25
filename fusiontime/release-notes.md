@@ -14,11 +14,11 @@ heading: Release Notes
 
 * You can now [remove leading zeros](/fusiontime/fusiontime-attributes#paddings) from dates (e.g., display `01/11/19` as `1/11/19`).
 
-* You can now set the initial spread of the active window by setting the 'from' and 'to' time when the chart is first rendered. 
+* You can now set the [initial spread of the active window](/fusiontime/fusiontime-component/time-navigator#set-the-initial-spread-of-the-active-window) by setting the 'from' and 'to' time when the chart is first rendered.
 
-* You can now define the data binning as per custom requirements.
+* You can now define the data [binning](/fusiontime/getting-started/change-default-aggregation) as per custom requirements.
 
-* A new feature called 'reference zone' is now available. It helps the users know the data plots which fall in the particular zone.
+* A new feature called [reference zone] is now available. It helps the users know the data plots which fall in the particular zone.
 
 * You can now style the line segment which joins the missing data points.
 

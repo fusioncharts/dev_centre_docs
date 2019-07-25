@@ -2005,8 +2005,12 @@
             "path": "/fusiontime/fusiontime-component/predictive-data-fusiontime"
           },
           {
-            "title": "Reference Lines & Zones",
+            "title": "Reference Line",
             "path": "/fusiontime/fusiontime-component/reference-line-in-fusiontime"
+          },
+          {
+            "title": "Reference Zone",
+            "path": "/fusiontime/fusiontime-component/reference-zone-in-fusiontime"
           },
           {
             "title": "Tooltip",
