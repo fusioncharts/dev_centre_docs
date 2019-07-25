@@ -293,7 +293,23 @@ In the above chart, if you hover over the notch of each reference zone, you will
 The code to render the reference zone in a dual Y-Axis chart is given below:
 
 ```json
-
+dataSource: {
+    yAxis: [{
+        plot: 'Temperature',
+        title: 'Temperature (in °C)',
+        referenceLine: [{
+            label: 'Controlled Temperature',
+            value: '6'
+        }]
+    }, {
+        plot: 'Carbon mono-oxide',
+        title: 'CO (in µg/m³)',
+        referenceLine: [{
+            label: 'Controlled Carbon mono-oxide',
+            value: '3'
+        }]
+    }],
+}
 ```
 
 ## Customize a reference zone

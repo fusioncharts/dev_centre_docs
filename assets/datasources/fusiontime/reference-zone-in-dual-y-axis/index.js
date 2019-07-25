@@ -1,9 +1,10 @@
 {
     type: 'timeseries',
     renderAt: 'container',
-    width: 800,
-    height: 600,
+    width: 95%,
+    height: 450,
     dataSource: {
+        data: dataStore,
         chart: {
             multiCanvas: false
         },
@@ -11,69 +12,51 @@
             text: 'Energy & Temperature Measurements'
         },
         yAxis: [{
-                plot: [{
-                    value: 'Energy',
-                    connectNullData: true,
-                    type: 'line'
-                }],
-                format: {
-                    suffix: ' kWh'
-                },
-            }, {
-                plot: [{
-                    value: 'Temperature',
-                    connectNullData: true,
-                    type: 'line'
-                }],
-                format: {
-                    suffix: ' °C'
-                }
-            },
+            plot: [{
+                value: 'Energy',
+                connectNullData: true,
+                type: 'line'
+            }],
             referenceZone: [{
-                label: 'Energy',
-                valueMin: '120',
-                valueMax: '180',
-                style: {
-                    marker: {
-                        fill: '#D2C9FF',
-                        stroke: '#D2C9FF'
-                    },
-                    'marker-text': {
-                        fill: '#000000'
-                    },
-                    'marker:hover': {
-                        fill: '#D2C9FF'
-                    },
-                    'marker-zone:hover': {
-                        "stroke": "#D2C9FF"
-                    },
-                    'marker-notch:hover': {
-                        "stroke": "#D2C9FF"
-                    }
-                }
-            }, {
-                label: 'Temperature',
+                label: 'High energy consumption',
+                valueMin: '170',
+                valueMax: '220',
+            }],
+            format: {
+                suffix: ' kWh'
+            }
+        }, {
+            plot: [{
+                value: 'Temperature',
+                connectNullData: true,
+                type: 'line'
+            }],
+            referenceZone: [{
+                label: 'Cold weather',
                 valueMin: '3',
-                valueMax: '5',
+                valueMax: '4.5',
                 style: {
                     marker: {
-                        fill: '#B4F5E6',
-                        stroke: '#B4F5E6'
+                        fill: '#04F5E6',
+                        stroke: '#04F5E6'
                     },
                     'marker-text': {
                         fill: '#000000'
                     },
                     'marker:hover': {
-                        fill: '#98DECD'
+                        fill: '#08DECD'
                     },
                     'marker-zone:hover': {
-                        "stroke": "#B4F5E6"
+                        "stroke": "#04F5E6"
                     },
                     'marker-notch:hover': {
-                        "stroke": "#B4F5E6"
+                        "stroke": "#04F5E6"
                     }
                 }
-            }]
-        ]
+            }],
+            format: {
+                suffix: ' °C'
+            }
+        }]
     }
 }
