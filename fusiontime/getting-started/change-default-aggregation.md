@@ -8,28 +8,21 @@ FusionTime lets you build charts with large datasets. However, when a dataset co
 
 This is where data aggregation comes in handy. By default, FusionTime automatically groups the data for a specific period of time (For example, 2 months), based on the available pixel of the chart canvas. This automatic grouping of data is known as **data** **binning**. By default, once the data is grouped, FusionTime applies the `average` function to aggregate the data and display it in the chart.
 
-The data bin is always built as per the available pixels in the chart and cannot be configured.
+## Change Default Aggregation
 
 A chart with default data aggregation is shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-In the above chart, note that when you hover on the data plots a tooltip appears which shows the data bin for a specific period of time and the average of the values within that data bin. In this case, the data bin is for 15 days. So the chart shows the average sales value for 15 days.
+In the above chart, note that when you hover on the data plots a tooltip appears which shows the data bin for a specific period of time and the average of the values within that data bin. In this case, the data bin is for 10 days. So the chart shows the average sales value for 10 days.
 
 However, you can change the aggregate function from `average` to any of the following:
 
 - Sum
-
 - Average
-
-- Count
-
 - Min
-
 - Max
-
 - First
-
 - Last
 
 To change the aggregate function refer to the code below:
@@ -53,3 +46,9 @@ new FusionCharts({
 In the above code we have:
 
 - Set the value of the `aggregation` property as `sum` under the `plot` object.
+
+## Change Data Binning
+
+The natural hierarchy of time aids in binning smaller units of time into larger units of time. For example, two bins, each of 12hr size can fall into one bin of 1 day (or 24 hours) bin. A user can zoom into 12hr bin and zoom out to 1-day bin.
+
+The time series charts exploit this behavior of time to create data bins. Though it is suggested to follow the smartly suggested bins for each data, an enthusiastic developer can always modify this.
