@@ -1401,6 +1401,131 @@
     "description": "These attributes let you configure font, background and border cosmetics, of value text-field that appear for each data plot."
   },
   {
+    "table": "Y-Axis Value Cosmetics",
+    "attrs": [
+      {
+        "description": "Set the font family for the Y-axis value texts. \n\nDefault value: verdana,sans",
+        "range": "Font Name",
+        "type": "String",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueFont"
+      },
+      {
+        "description": "Sets the font color for the Y-axis value texts. \n\nDefault value: #555555",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.0",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the font size for the Y-axis value texts. \n\nDefault value: 10 px",
+        "range": "6 - 72",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueFontSize"
+      },
+      {
+        "description": "Displays the Y-axis value texts in bold. \n\nDefault value: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueFontBold"
+      },
+      {
+        "description": "Displays the Y-axis value texts in italic. \n\nDefault value: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueFontItalic"
+      },
+      {
+        "description": "Sets the background color for the Y-axis values.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBgColor"
+      },
+      {
+        "description": "Sets the border color for the Y-axis values.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBorderColor"
+      },
+      {
+        "description": "Sets the transparency for the Y-axis values between transparent (for `0`) and opaque (for `100`). \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueAlpha"
+      },
+      {
+        "description": "Sets the transparency for the Y-axis value backgrounds between transparent (for `0`) and opaque (for `100`).",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBgAlpha"
+      },
+      {
+        "description": "Sets the transparency for the Y-axis values between transparent (for `0`) and opaque (for `100`).",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBorderAlpha"
+      },
+      {
+        "description": "Sets the border padding for the Y-axis values.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBorderPadding"
+      },
+      {
+        "description": "Sets the border radius for the Y-axis values.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBorderRadius"
+      },
+      {
+        "description": "Sets the border thickness for the Y-axis values.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBorderThickness"
+      },
+      {
+        "description": "Makes the Y-axis value borders dashed. \n\nDefault value: 0 (border rendered using straight lines)",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBorderDashed"
+      },
+      {
+        "description": "Sets the lengths of the individual dashes when the Y-axis value borders are dashed.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBorderDashLen"
+      },
+      {
+        "description": "Sets the gaps between individual dashes when the Y-axis value borders are dashed.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueBorderDashGap"
+      },
+      {
+        "description": "Sets a target link for all Y-axis values.",
+        "range": "",
+        "type": "URL",
+        "versionsince": "3.14.0",
+        "name": "yAxisValueLink"
+      }
+    ],
+    "description": "These attributes let you configure font, background and border cosmetics, of the Y-axis value text."
+  },
+  {
     "table": "Scroll Properties",
     "attrs": [
       {
