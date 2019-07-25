@@ -238,17 +238,19 @@ Image
 
 The salient features of a reference zone are:
 
-* You can specify a minimum value and a maximum value to draw a reference zone.
+- You can specify a minimum value and a maximum value to draw a reference zone.
 
-* You can create one or more reference zones on canvas for each y-axis (in case the chart has multiple y-axes).
+- You can create one or more reference zones on canvas for each y-axis (in case the chart has multiple y-axes).
 
-* You can customize the color and other cosmetic properties to each reference zone.
+- You can customize the color and other cosmetic properties to each reference zone.
 
-* When you hover over the reference zone, the data plots falling in the zone get highlighted.
+- When you hover over the reference zone, the data plots falling in the zone get highlighted.
 
 A chart with a reference zone looks like as shown below:
 
-CHART
+temperature-reading-line-plot-reference-zone
+
+{% embed_ftChart temperature-reading-line-plot-reference-zone %}
 
 In the above chart, a reference zone appears parallel to the time axis. Hover on the zone to see the label and the value.
 
