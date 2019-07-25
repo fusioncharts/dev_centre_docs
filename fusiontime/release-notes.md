@@ -18,17 +18,17 @@ heading: Release Notes
 
 * You can now define the data [binning](/fusiontime/getting-started/change-default-aggregation) as per custom requirements.
 
-* A new feature called [reference zone] is now available. It helps the users know the data plots which fall in the particular zone.
+* A new feature called [reference zone](/fusiontime/fusiontime-component/reference-zone-in-fusiontime) is now available. It helps the users know the data plots which fall in the particular zone.
 
-* You can now style the line segment which joins the missing data points.
+* You can now [style the line segment](/fusiontime/fusiontime-component/y-axis-in-fusiontime#configure-null-values) which joins the missing data points.
 
-* A new feature to style the predicted data is now available. You can provide the predicted data and style them differently.
+* A new feature to style the [predicted data](/fusiontime/fusiontime-component/predictive-data-fusiontime) is now available. You can provide the predicted data and style them differently.
 
 <h4 class="sub-heading">Improvement</h4>
 
 * In FusionTime Version 1.2, we have extended the time periods covered by the Standard Range Selector beyond `1Y`, to include `2Y`, `3Y`, `5Y`, and `10Y`.
 
-* You can now apply a number of new style attributes to different components of a time-series chart. 
+* You can now apply a number of new style attributes to different components of a time-series chart.
 
 * The `ignoreCaseExtension` module is now able to selectively ignore some of the keys in the dataSource JSON.
 
