@@ -57,7 +57,7 @@ Take a look at the chart shown below:
 
 {% embed_ftChart binning-not-applied-sample-on-column-chart %}
 
-You can see the data bins moving from {sequence of bins}
+You can see the data bins moving from **2 days** > **1 day** > **12 hrs** > **8 hrs** > **6 hrs** > **4 hrs** > **3 hrs** > **2 hrs** > **1 hr**.
 
 You can always modify this, by specifying the multipliers for each time unit in an array format. Refer to the code below:
 

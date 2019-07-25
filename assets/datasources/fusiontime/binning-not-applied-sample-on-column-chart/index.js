@@ -8,9 +8,6 @@
         caption: {
             text: "Temperature readings of an Italian Town"
         },
-        subCaption: {
-            text: "Specified bins are 1-month, 1-day, 6-hours & 3-hours"
-        },
         yAxis: [{
             "plot": "Temperature",
             "title": "Temperature",
