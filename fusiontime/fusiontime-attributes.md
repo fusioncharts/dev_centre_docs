@@ -17,10 +17,13 @@ new FusionCharts({
     type: 'timeseries',
     dataSource: {
 		xAxis {
-				plot: ' ', //Column Name
-				timemarker: [{
-					// Attributes of Time Marker
-				}]
+			plot: ' ', //Column Name
+			timemarker: [{
+				// Attributes of Time Marker
+			}],
+			binning: { }, //Multipliers for each time unit
+			outputTimeFormat: { }, //date/time format
+			initialInterval: { } //the spread of the active window
 		}
     },
 });
@@ -43,9 +46,24 @@ new FusionCharts({
 		<td>Array of `TimeMarkerConfigs` that will be shown along the axis.</td>
 	</tr>
 	<tr>
+		<td>`binning`</td>
+		<td>Object</td>
+		<td>An object to specify multipliers for each time unit in an array format.</td>
+	</tr>
+	<tr>
+		<td>`outputTimeFormat`</td>
+		<td>Object</td>
+		<td>An object to specify the date-time format for a specific time unit.</td>
+	</tr>
+	<tr>
+		<td>`initialInterval`</td>
+		<td>Object</td>
+		<td>An object to set the initial spread of the active window.</td>
+	</tr>
+	<tr>
 </table>
 
-#### Style Time Axis Components
+#### Style Time Axis
 
 You can add style to the x-Axis components using `style` object under `xaxis` object.
 
@@ -111,6 +129,162 @@ new FusionCharts({
 		<td>`label-context`</td>
 		<td>SVGStyle</td>
 		<td>Styles the contextual label of the time axis.</td>
+	</tr>
+</table>
+
+### Binning
+
+To add multipliers for each time unit you can create a `binning` object under `xaxis` object.
+
+```javascript
+new FusionCharts({
+    type: 'timeseries',
+    dataSource: {
+        xAxis: {
+			binning: {
+				"year": [Array of multipliers] // Ex - [1,2,3,5,10]
+				"month": [Array of multipliers] // Ex - [1,2,3,4,6]
+				"day": [Array of multipliers] // Ex - [1,2,3,5,6,10,15]
+				"hour": [Array of multipliers] // Ex - [1,2,3,4,6,8,12]
+				"minute": [Array of multipliers] // Ex - [1,2,3,4,5,6,10,12,15,20,30]
+				"second": [Array of multipliers] // Ex - [1,2,3,4,5,6,10,12,15,20,30]
+				"millisecond": [Array of multipliers] // Ex - [10,20,50,100,200,250,500]
+			}
+		},
+	}
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`year`</td>
+		<td>Array</td>
+		<td>An array to specify the year's multipliers.</td>
+	</tr>
+	<tr>
+		<td>`month`</td>
+		<td>Array</td>
+		<td>An array to specify the month's multipliers.</td>
+	</tr>
+	<tr>
+		<td>`day`</td>
+		<td>Array</td>
+		<td>An array to specify the days's multipliers.</td>
+	</tr>
+	<tr>
+		<td>`hour`</td>
+		<td>Array</td>
+		<td>An array to specify the hour's multipliers.</td>
+	</tr>
+	<tr>
+		<td>`minute`</td>
+		<td>Array</td>
+		<td>An array to specify the minute's multipliers.</td>
+	</tr>
+	<tr>
+		<td>`second`</td>
+		<td>Array</td>
+		<td>An array to specify the second's multipliers.</td>
+	</tr>
+	<tr>
+		<td>`millisecond`</td>
+		<td>Array</td>
+		<td>An array to specify the millisecond's multipliers.</td>
+	</tr>
+</table>
+
+### Output Time Interval
+
+To specify the date-time format for a specific time unit, create a `outputTimeFormat` object under `xaxis` object.
+
+```javascript
+
+new FusionCharts({
+    type: 'timeseries',
+    dataSource: {
+		xAxis:{
+			outputTimeFormat:{
+				year: " ", //%Y - 2018
+				month: " ", //%B, %Y - September, 2018
+				day: " ", //%B %-d, %Y - November 11, 2018
+				hour: " ", //%b %-d, %Y, %-I %p - Nov 5, 2018, 4 PM
+				minute: " ", //%b %-d, %Y, %-I:%-M %p - Nov 5, 2018, 4:24 PM
+				second: " ", //%b %-d, %Y, %-I:%-M:%-S %p - Nov 5, 2018, 4:25:30 PM
+				millisecond: " " //%b %-d, %Y, %-I:%-M:%-S:%-L %p- Nov 29, 2017, 4:29:12.075 PM
+			}
+		}
+	}
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`year`</td>
+		<td>String</td>
+		<td>Sets the format to specify the year.</td>
+	</tr>
+	<tr>
+		<td>`month`</td>
+		<td>String</td>
+		<td>Sets the format of the month.</td>
+	</tr>
+	<tr>
+		<td>`day`</td>
+		<td>String</td>
+		<td>Sets the format of the day.</td>
+	</tr>
+	<tr>
+		<td>`hour`</td>
+		<td>String</td>
+		<td>Sets the format of hours.</td>
+	</tr>
+	<tr>
+		<td>`minute`</td>
+		<td>String</td>
+		<td>Sets the format of minute.</td>
+	</tr>
+	<tr>
+		<td>`second`</td>
+		<td>String</td>
+		<td>Sets the foramt of seconds.</td>
+	</tr>
+	<tr>
+		<td>`millisecond`</td>
+		<td>String</td>
+		<td>Sets the format of milliseconds.</td>
+	</tr>
+</table>
+
+### Initial Interval
+
+To set the initial spread of the active window of the time navigator create a `initialInterval` object under `xaxis` object.
+
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`from`</td>
+		<td>String</td>
+		<td>Sets the value from where you want the active window to start.</td>
+	</tr>
+	<tr>
+		<td>`to`</td>
+		<td>String</td>
+		<td>Sets the value upto which you want your active window to be displayed.</td>
 	</tr>
 </table>
 

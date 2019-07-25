@@ -4,7 +4,7 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.14.0
 ---
 
-<p class="release-date">25th July, 2019</p>
+<p class="release-date">26th July, 2019</p>
 
 <h4>New Features</h4>
 
