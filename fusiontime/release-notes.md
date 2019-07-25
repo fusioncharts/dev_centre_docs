@@ -26,9 +26,9 @@ heading: Release Notes
 
 <h4 class="sub-heading">Improvement</h4>
 
-* In FusionTime Version 1.2, we have extended the time periods covered by the Standard Range Selector beyond `1Y`, to include `2Y`, `3Y`, `5Y`, and `10Y`.
+* In FusionTime Version 1.2, we have extended the time periods covered by the [Standard Range Selector](/fusiontime/fusiontime-component/standard-range-selector) beyond `1Y`, to include `2Y`, `3Y`, `5Y`, and `10Y`.
 
-* You can now apply a number of new style attributes to different components of a time-series chart.
+* You can now apply a number of new [style attributes](/fusiontime/getting-started/style-definition) to different components of a time-series chart.
 
 * The `ignoreCaseExtension` module is now able to selectively ignore some of the keys in the dataSource JSON.
 
