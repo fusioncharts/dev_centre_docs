@@ -234,7 +234,7 @@ Reference zones are similar to reference lines, except that it marks out an enti
 
 Refer to the image below:
 
-Image
+<img src="{% site.BASE_URL %}/images/reference-zone-in-a-single-series-chart.png" alt="Reference Line" width="700" height="420">
 
 The salient features of a reference zone are:
 
@@ -266,7 +266,7 @@ You can add a reference zone using the following attributes of the `referenceZon
 
 Refer to the code given below:
 
-```
+```json
 {
     type: 'timeseries',
     dataSource: {
@@ -277,17 +277,16 @@ Refer to the code given below:
                 "valueMax": 3000,
                 "valueMin": 2000
             }],
-        }]       
+        }]
     }
 }
-
 ```
 
 ## Reference Zone in Dual Y-axis Chart
 
 For a time-series chart with dual y-axis, you can add reference zones for each y-axis on the canvas. A chart with multiple reference zones for dual y-axis is shown below:
 
-CHART
+{% embed_ftChart reference-zone-in-dual-y-axis %}
 
 In the above chart, if you hover over the notch of each reference zone, you will notice that the minimum and maximum values of the zone will be visible on the axis for which the reference zone has been drawn.
 
@@ -301,8 +300,7 @@ You can use CSS styling to the cosmetic properties of the reference zone. To set
 
 Refer to the code given below:
 
-```
-
+```json
 referenceZone: [{
     label: 'Label',
     valueMin: '2000',
