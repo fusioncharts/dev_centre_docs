@@ -34,18 +34,36 @@ The chart looks like as shown below:
 
 Click [here](/chart-guide/chart-configurations/data-plot#inherit-plot-border-color-of-an-area-chart) to know more.
 
+## Set the radius as a percent value
+
+You can now set the radius of the pie chart in percent by setting the value of `pieRadius` attribute. When you set the value of `pieRadius` in percent, the radius of the pie is calculated with respect to the chart canvas space.
+
+Refer to the image shown below:
+
+![Percent Value on Pie Chart](/images/percent-value-in-pie-radius.png)
+
+Click [here](http://jsfiddle.net/fusioncharts/7g15v0nq/) to know more.
+
+In the doughnut chart, you can apply the `pieRadius` attribute to set the radius of the upper threshold of the doughnut chart.
+
+Refer to the image below:
+
+![Percent Value on Doughnut Chart](/images/pie-radius-in-doughnut-chart.png)
+
+Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) to know more.
+
 <h4>Deprecated</h4>
 
 - Following is the list of deprecated attributes:
 
   - `placeXAxisLabelsOnTop`
 
-	- Treemap specific attributes:
+- Treemap specific attributes:
 
-  		- `labelGlow`
+  - `labelGlow`
 
-  	- `labelGlowIntensity`
+  - `labelGlowIntensity`
 
-  	- `labelGlowColor`
+  - `labelGlowColor`
 
-  	- `labelGlowRadius`
+  - `labelGlowRadius`

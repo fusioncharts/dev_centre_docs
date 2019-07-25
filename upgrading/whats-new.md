@@ -28,7 +28,7 @@ To know more click [here](/chart-guide/chart-configurations/data-plot#top-plot-b
 
 FusionCharts Suite now allows you to set the border color of the area chart by inheriting the plot color.
 
-The chart looks like as shown below:
+The chart looks like as shown in the image below:
 
 {% embed_chart chart-configurations-area-plot-inherit-border-example-10.js %}
 
@@ -38,7 +38,7 @@ Click [here](/chart-guide/chart-configurations/data-plot#inherit-plot-border-col
 
 Starting v3.14.0, FusionCharts allows you to control the visibility of data values of the plots by specifying the minimum height of the columns. Data plots less than the minimum height specified will not show the data value text. This will help reduce clutter and improve the readability of the chart.
 
-The chart will look like as shwon below:
+The chart will look like as shown below:
 
 {% embed_chart minimum-plot-height-for-stacked-chart-example-11.js %}
 
@@ -141,16 +141,6 @@ The chart will look like as shown below:
 {% embed_chart configure-font-properties-for-y-axis-values-example-13.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/u8n3k46c/) to know more.
-
-## Configure Font Properties for Y-axis Names
-
-You can now configure the font properties of the y-axis values.
-
-The chart will look like as shown below:
-
-{% embed_chart chart-configurations-titles-and-axis-names-example-8.js %}
-
-Click [here](/chart-guide/chart-configurations/axes#configure-font-properties-for-y-axis-values) to know more.
 
 ## Improve the readability of data values
 

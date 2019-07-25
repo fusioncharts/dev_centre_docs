@@ -12,15 +12,21 @@ heading: Version 3.14.0
 
 * Version 3.14.0 onwards, you can customize the position of the x-axis and y-axis.
 
-* You can now control the visibility of data values by specifying the threshold values of the data plot. Only the data values greater than the threshold will be visible.
+* You can now control the visibility of data values by specifying the threshold values of the data plot. Only the data values greater than the threshold will be visible. Chart specific attributes for this include, `minHeightForValue` (column or bar encodings) , `minRadiusFor Value` (bubble chart), `minAngelForValue` (pie or doughnut charts)
 
-* Version 3.14.0 onwards, you can specify the radius of a pie/doughnut chart in percentage values instead of numbers.
+* Version 3.14.0 onwards, you can specify the radius of a pie/doughnut chart in both percentage and pixel values.
 
 * In pie/doughnut 2D charts, you can now place data labels and data values inside the slices, using the new `labelPosition` and `valuePosition` attributes, respectively.
 
 * In Version 3.1.4.0, we have introduced a new attribute named `textOutline` to improve the readability of data values. 
 
 * Version 3.14.0 onwards, you can now customize y-axis values using the newly introduced cosmetic attributes. 
+
+<h4>Improvements</h4>
+
+* Version 3.14.0 onwards, you can use the `drawFullAreaBorder` attribute in an area chart, to create a border either around the entire plot or on the top of the area plot only.
+
+* This version onwards, you can insert non-breaking space codes into input strings.
 
 <h4>Fixes</h4>
 
@@ -53,12 +59,6 @@ heading: Version 3.14.0
 * X-axis data labels were not drawing properly, for certain chart widths. At times, the labels were skipped when there was a lack of space, while at other times they would not be displayed at all. The issue has been fixed.
 
 * Pie 3D chart was throwing a JS error when chart data was updated through the "dataPlotClick" event. The issue has been fixed.
-
-<h4>Improvements</h4>
-
-* Version 3.14.0 onwards, you can use the `drawFullAreaBorder` attribute in an area chart, to create a border either around the entire plot or on the top of the area plot only.
-
-* This version onwards, you can insert non-breaking space codes into input strings.
 
 <h4>Deprecated</h4>
 

@@ -12,7 +12,8 @@
             "showPercentInTooltip": "0",
             "decimals": "1",
             //Theme
-            "theme": "fusion"
+            "theme": "fusion",
+            "valuePosition": "inside"
         },
         "data": [{
                 "label": "Food",
@@ -21,7 +22,6 @@
             {
                 "label": "Apparels",
                 "value": "146330",
-                "valuePosition": "inside"
             },
             {
                 "label": "Electronics",
