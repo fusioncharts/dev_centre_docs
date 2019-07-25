@@ -2151,6 +2151,13 @@
         "type": "Boolean",
         "versionsince": "3.14.0",
         "name": "textOutline"
+      },
+      {
+        "description": "Set the minimum radius of a bubble, above which the data values will be visible.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "minRadiusForValue"
       }
     ],
     "description": "These attributes let you configure font, background and border cosmetics, of value text-field that appear for each data plot."

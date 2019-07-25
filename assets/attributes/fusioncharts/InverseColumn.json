@@ -751,21 +751,21 @@
         "type": "Number",
         "name": "xaxislinethickness"
       },
-          {
+      {
         "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Bottom",
         "range": "Top, Bottom",
         "type": "String",
         "versionSince": "3.14.0",
         "name": "xAxisPosition"
-    },
-    {
+      },
+      {
         "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Left",
         "range": "Left, Right",
         "type": "String",
         "versionSince": "3.14.0",
         "name": "yAxisPosition"
-    },
-    {
+      },
+      {
         "description": "Sets color of the x-axis of the chart.",
         "range": "Hex Color Code",
         "type": "Color",
@@ -1318,6 +1318,13 @@
         "type": "Boolean",
         "versionsince": "3.2.1",
         "name": "usePlotGradientColor"
+      },
+      {
+        "description": "Set the minimum height in pixel of a column above which the data values will be visible.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "minPlotHeightForValue"
       }
     ],
     "description": "These attributes let you configure how your column plot would appear on the chart. If the plots can show borders, you can control the border properties using the attributes listed below. Or, if they support gradient fills, you can again configure various properties of the gradient using these attributes. Various other controls over plot cosmetics can be attained using this set of attributes. "

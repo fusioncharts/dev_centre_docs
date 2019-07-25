@@ -714,12 +714,6 @@
         "name": "showXaxisLabels"
       },
       {
-        "description": "This attribute when set to '1', allows you to display the x-axis labels on top of the chart canvas.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "placeXAxisLabelsOnTop"
-      },
-      {
         "description": "This attribute lets you set whether the data labels would show up as rotated labels on the chart.",
         "range": "0/1",
         "type": "Boolean",

@@ -1317,6 +1317,20 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "usePlotGradientColor"
+      },
+      {
+        "description": "If the `showPlotBorder` atrribute is set to `1`, set this  attribute to `0` to draw only the top border of the data plot.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.14.0",
+        "name": "drawFullAreaBorder"
+      },
+      {
+        "description": "Set this attribute to `1` to inherit the data plot color of the area chart as the color of the data plot border.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.14.0",
+        "name": "inheritPlotBorderColor"
       }
     ],
     "description": " These attributes let you configure how your plot (columns, lines, area, pie or any data that you're plotting) will appear on the chart. If the plots can show borders, you can control the border properties using the attributes listed below. Or, if they support gradient fills, you can again configure various properties of the gradient using these attributes. Various other controls over plot cosmetics can be attained using this set of attributes. "

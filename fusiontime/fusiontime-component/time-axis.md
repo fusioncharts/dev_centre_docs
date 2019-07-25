@@ -62,28 +62,27 @@ To set the initial spread of the active window, create a newly added `initialInt
 
 Refer to the code below:
 
-```
+```json
 "dataSource": {
     "xaxis": {
-        initialInterval: {
-            from: '2016-01-01 12:00:00',
-            to: '2016-01-31 12:00:00'
+        "initialInterval": {
+            "from": "2016-01-01 12:00:00",
+            "to": "2016-01-31 12:00:00"
         }
     }
 }
-
 ```
+
 In the above code:
 
-* Create the `initialInterval` object in the `xaxis` object to specify the spread of time axis on initial loading or rendering.
+- Create the `initialInterval` object in the `xaxis` object to specify the spread of time axis on initial loading or rendering.
 
-* In the `initialInterval` object:
+- In the `initialInterval` object:
+  - `from` attribute is used to set the time from where you want your time-series chart to be rendered.
 
-    * `from` attribute is used to set the time from where you want your time-series chart to be rendered.
+  - `to` attribute is used to set the time up to which you want your time-series chart to be rendered.
 
-    * `to` attribute is used to set the time up to which you want your time-series chart to be rendered.
-
-> Note: If 'from' is not specified, then the first timestamp of the data will be taken, and if 'to' is not specified, then the last timestamp of data will be considered.
+> If 'from' is not specified, then the first timestamp of the data will be taken, and if 'to' is not specified, then the last timestamp of data will be considered.
 
 ## Style Definition
 
