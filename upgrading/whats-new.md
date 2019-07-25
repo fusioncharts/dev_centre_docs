@@ -82,7 +82,7 @@ Refer to the image shown below:
 
 ![Percent Value on Pie Chart](/images/percent-value-in-pie-radius.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/7g15v0nq/) to know more.
+Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) to know more.
 
 In the doughnut chart, you can apply the `pieRadius` attribute to set the radius of the upper threshold of the doughnut chart.
 
