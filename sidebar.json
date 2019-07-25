@@ -1895,7 +1895,7 @@
             "path": "/fusiontime/getting-started/fusiontime-json-structure"
           },
           {
-            "title": "Change Default Aggregation",
+            "title": "Data Aggregation & Binning",
             "path": "/fusiontime/getting-started/change-default-aggregation"
           },
           {
