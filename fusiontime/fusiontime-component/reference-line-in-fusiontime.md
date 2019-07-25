@@ -292,7 +292,9 @@ In the above chart, if you hover over the notch of each reference zone, you will
 
 The code to render the reference zone in a dual Y-Axis chart is given below:
 
-CODE
+```json
+
+```
 
 ## Customize a reference zone
 
