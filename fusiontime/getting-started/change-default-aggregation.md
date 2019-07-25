@@ -1,7 +1,7 @@
 ---
-title: Change default aggregation | FusionCharts
+title: Data Aggregation & Binning | FusionCharts
 description: This article outlines the steps to be executed for changing the default aggregation.
-heading: Change default aggregation
+heading: Data Aggregation & Binning
 ---
 
 FusionTime lets you build charts with large datasets. However, when a dataset contains too many records, the resulting chart may not help viewers comprehend the data easily. For instance, consider a scenario, where you have to plot 1,000,000 data points in a line, area, or column chart, on a canvas having dimensions of 500 x 400 pixels. In this case, the chart will try to accommodate all the data points within the available pixels, which will make the chart unreadable.
