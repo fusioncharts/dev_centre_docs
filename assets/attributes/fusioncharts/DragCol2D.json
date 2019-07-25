@@ -1444,6 +1444,13 @@
         "type": "Boolean",
         "versionsince": "3.2.1",
         "name": "usePlotGradientColor"
+      },
+      {
+        "description": "Set the minimum height in pixel of a column above which the data values will be visible.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "minPlotHeightForValue"
       }
     ],
     "description": "These attributes let you configure how your columns would appear on the chart. Various other controls over plot cosmetics can be attained using this set of attributes. "
