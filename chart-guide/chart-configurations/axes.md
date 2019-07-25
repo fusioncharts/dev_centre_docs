@@ -172,7 +172,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/7o7qpcL2/) to edit the above chart.
 
-## Configure Cosmetic Properties of Borders of the Names
+## Configure cosmetic properties of borders of the names
 
 Use the following attributes to configure cosmetic properties of the borders around names of x-axis:
 
@@ -467,7 +467,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/pfsytcca/) to edit the above chart.
 
-## Configure Background Properties of Y-axis Names
+## Configure background properties of Y-axis names
 
 Use the following attributes to set a semi-transparent background in a chosen color for the primary and secondary y-axis names of a multi-series, combination 2D chart:
 
