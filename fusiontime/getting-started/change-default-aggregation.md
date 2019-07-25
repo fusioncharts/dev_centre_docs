@@ -52,3 +52,36 @@ In the above code we have:
 The natural hierarchy of time aids in binning smaller units of time into larger units of time. For example, two bins, each of 12hr size can fall into one bin of 1 day (or 24 hours) bin. A user can zoom into 12hr bin and zoom out to 1-day bin.
 
 The time series charts exploit this behavior of time to create data bins. Though it is suggested to follow the smartly suggested bins for each data, an enthusiastic developer can always modify this.
+
+Take a look at the chart shown below:
+
+{% embed_ftChart binning-sample-on-column-chart %}
+
+You can see the data bins moving from {sequence of bins}
+A developer can always modify this, by specifying the multipliers for each time unit in an array format. For example,
+xAxis:
+
+```json
+{
+    "binning": {
+      "hour": [3, 6] //specify the array of valid multipliers
+    }
+}
+```
+
+The above multipliers for “hour” will limit the binning for “hour” to only 3 hrs and 6 hrs. For the time units where nothing is specified, the smartly determined bins will apply. With the above multipliers for “hour”, the multipliers for other time units (month, day, in this case), will be smartly determined. For example, in this case, when the multipliers of ‘day’ are not specified, the default choices of day binning, like {sequence of day binning options in this example} will prevail.
+For situations where bins for specific time units are not required, one can simply provide an empty array against them. Consider,
+xAxis:
+
+```json
+{
+    "binning": {
+      "month": [],
+      "day": [],
+      "hour": [3, 6],
+      "minute": []
+    }
+}
+```
+
+Here, the empty arrays have been specified for `month`, `day` and `minute`. So, no binning will happen for these time units, and likewise, such time units will not be considered for data binning. A side result of the above json config is that the binning has been restricted by 6hrs on the higher side and 3hrs on the lower side, so maximum and minimum binning has applied.
