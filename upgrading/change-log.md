@@ -4,7 +4,9 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.14.0
 ---
 
-## New Features
+<p class="release-date">25th July, 2019</p>
+
+<h4>New Features</h4>
 
 * We have introduced a new attribute named `inheritPlotBorderColor` for area charts to set the border color of the plot by inheriting the plot color. 
 
@@ -20,7 +22,7 @@ heading: Version 3.14.0
 
 * Version 3.14.0 onwards, you can now customize y-axis values using the newly introduced cosmetic attributes. 
 
-## Fixes
+<h4>Fixes</h4>
 
 * On IE and EDGE browsers, using an Ajax call to display a Gantt chart would sometimes result in the chart not being displayed. The issue has been fixed.
 
@@ -52,7 +54,7 @@ heading: Version 3.14.0
 
 * Pie 3D chart was throwing a JS error when chart data was updated through the "dataPlotClick" event. The issue has been fixed.
 
-## Improvement
+<h4>Improvements</h4>
 
 * Version 3.14.0 onwards, you can use the `drawFullAreaBorder` attribute in an area chart, to create a border either around the entire plot or on the top of the area plot only.
 
