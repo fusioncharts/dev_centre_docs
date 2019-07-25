@@ -4,6 +4,50 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 1.2.0</h2>
+
+<p class="release-date">25th July, 2019</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+* You can now choose the output time format (12 hour/24 hour) for tooltips and X-axis.
+
+* You can now remove leading zeros from dates (e.g., display `01/11/19` as `1/11/19`).
+
+* You can now set the initial spread of the active window by setting the 'from' and 'to' time when the chart is first rendered. 
+
+* You can now define the data binning as per custom requirements.
+
+* A new feature called 'reference zone' is now available. It helps the users know the data plots which fall in the particular zone.
+
+* You can now style the line segment which joins the missing data points.
+
+* A new feature to style the predicted data is now available. You can provide the predicted data and style them differently.
+
+<p class="release-date">Fixes</p>
+
+* For CrossLines, label and anchor tooltip were not in sync. The issue has been fixed.
+
+* In Column charts, some of the columns styled using the `stroke-dasharray` attribute would lose the style when the canvas was zoomed in and out again. The issue has been fixed.
+
+* In Candlestick and OHLC charts, the default plot highlight style was getting overridden when hover style was specified. The issue has been fixed.
+
+* The time axis was getting updated on disabling all datasets via the legend. The issue has been fixed.
+
+* The selection tool of the Custom Range Selector was getting disabled when the Apply button was clicked after selecting a time interval. The issue has been fixed.
+
+* When the Standard Range Selector button was styled with larger font size for `button:hover`, its vertical alignment would be disrupted when the mouse pointer was moved away after hover. The issue has been fixed.
+
+* Tooltip was not appearing for the last plot in the charts. The issue has been fixed.
+
+<p class="release-date">Improvement</p>
+
+* In FusionTime Version 1.2, we have extended the time periods covered by the Standard Range Selector beyond `1Y`, to include `2Y`, `3Y`, `5Y`, and `10Y`.
+
+* You can now apply a number of new style attributes to different components of a time-series chart. 
+
+* The `ignoreCaseExtension` module is now able to selectively ignore some of the keys in the dataSource JSON.
+
 <h2 class="sub-heading">Version 1.1.0</h2>
 
 <p class="release-date">31st May, 2019</p>
