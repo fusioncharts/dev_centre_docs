@@ -1,23 +1,22 @@
 {
-    type: 'timeseries',
-    renderAt: 'container',
-    width: 800,
-    height: 600,
+    type: "timeseries",
+    renderAt: "container",
+    width: "95%",
+    height: "450",
     dataSource: {
-        data: dataStore;
+        data: dataStore,
         caption: {
-            text: 'Footfalls at Mega Store'
+            text: "Footfalls at Mega Store"
         },
         subCaption: {
-            text: 'Predictive footfall (represented in dashed)'
+            text: "Predictive footfall (represented in dashed)"
         },
         yAxis: [{
-            plot: 'Footfall',
-            title: 'Footfall',
+            plot: "Footfall",
+            title: "Footfall",
         }],
         "extensions": {
             "prediction": {
-                //"date": "08/01/18",
                 "style": {
                     "plot": "line"
                 }
