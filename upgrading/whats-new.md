@@ -92,7 +92,7 @@ Refer to the image below:
 
 Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) to know more.
 
-## X-axis Position
+## X-axis position
 
 With 3.14.0, the position of this axis will be configurable - TOP/BOTTOM for vertical charts, LEFT/RIGHT for horizontal charts.
 
@@ -152,7 +152,7 @@ The chart will look like as shown below:
 
 Click [here](/chart-guide/chart-configurations/axes#configure-font-properties-for-y-axis-values) to know more.
 
-## Improve the readability of data Values
+## Improve the readability of data values
 
 Often when data values are placed inside the data plot, the data values are not properly visible. Based on the plot color and the text color of the data values it is sometimes difficult to read them. You can now add outline borders to the data value text for better readability.
 
