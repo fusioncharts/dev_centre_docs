@@ -58,12 +58,12 @@ Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius
 
   - `placeXAxisLabelsOnTop`
 
-	- Treemap specific attributes:
+- Treemap specific attributes:
 
-  		- `labelGlow`
+  - `labelGlow`
 
-  	- `labelGlowIntensity`
+  - `labelGlowIntensity`
 
-  	- `labelGlowColor`
+  - `labelGlowColor`
 
-  	- `labelGlowRadius`
+  - `labelGlowRadius`

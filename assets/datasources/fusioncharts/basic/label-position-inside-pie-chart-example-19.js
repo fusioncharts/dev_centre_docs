@@ -13,7 +13,8 @@
             "decimals": "1",
             //Theme
             "theme": "fusion",
-            "enableSmartLabels": "0"
+            "enableSmartLabels": "0",
+            "labelPosition": "inside"
         },
         "data": [{
                 "label": "Food",
@@ -21,8 +22,8 @@
             },
             {
                 "label": "Apparels",
-                "value": "146330",
-                "labelPosition": "inside"
+                "value": "146330"
+                
             },
             {
                 "label": "Electronics",

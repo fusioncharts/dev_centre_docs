@@ -20,7 +20,8 @@
             "decimals": "0",
             "theme": "fusion",
             "valuePosition": "inside",
-            "minAngleForValue": "75"
+            "minAngleForValue": "75",
+            "enableSmartLabel": "0"
         },
         "data": [{
                 "label": "Food",
