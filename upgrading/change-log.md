@@ -8,25 +8,25 @@ heading: Version 3.14.0
 
 <h4>New Features</h4>
 
-* We have introduced a new attribute named `inheritPlotBorderColor` for area charts to set the border color of the plot by inheriting the plot color. Click [here](/chart-guide/chart-configurations/data-plot#inherit-plot-border-color-of-an-area-chart) to know more.
+* We have introduced a new attribute named [inheritPlotBorderColor](/chart-guide/chart-configurations/data-plot#inherit-plot-border-color-of-an-area-chart) for area charts to set the border color of the plot by inheriting the plot color.
 
-* Version 3.14.0 onwards, you can customize the position of the x-axis. Click [here](/chart-guide/chart-configurations/axes#x-axis-position) to know more.
+* Version 3.14.0 onwards, you can customize the [position](/chart-guide/chart-configurations/axes#x-axis-position) of the x-axis.
 
-* Version 3.14.0 onwards, you can customize the position of the y-axis. Click [here](/chart-guide/chart-configurations/axes#y-axis-position) to know more. 
+* Version 3.14.0 onwards, you can customize the [position](/chart-guide/chart-configurations/axes#y-axis-position) of the y-axis.
 
-* You can now control the visibility of data values by specifying the threshold values of the data plot. Only the data values greater than the threshold will be visible. Chart specific attributes for this include, `minHeightForValue` (column or bar encodings) , `minRadiusFor Value` (bubble chart), `minAngelForValue` (pie or doughnut charts). Click [here](/chart-guide/chart-configurations/data-values#control-the-visibility-of-data-values) to know more.
+* You can now [control the visibility](/chart-guide/chart-configurations/data-values#control-the-visibility-of-data-values) of data values by specifying the threshold values of the data plot. Only the data values greater than the threshold will be visible. Chart specific attributes for this include, `minHeightForValue` (column or bar encodings) , `minRadiusFor Value` (bubble chart), `minAngelForValue` (pie or doughnut charts).
 
-* Version 3.14.0 onwards, you can specify the radius of a pie/doughnut chart in both percentage and pixel values. Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) to know more.
+* Version 3.14.0 onwards, you can specify the [radius](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) of a pie/doughnut chart in both percentage and pixel values.
 
-* In pie/doughnut 2D charts, you can now place data labels and data values inside the slices, using the new `labelPosition` and `valuePosition` attributes, respectively. Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#place-values-inside-the-pie-doughnut-chart) to know more.
+* In pie/doughnut 2D charts, you can now [place data labels and data values](/chart-guide/standard-charts/pie-and-doughnut-charts#place-values-inside-the-pie-doughnut-chart) inside the slices, using the new `labelPosition` and `valuePosition` attributes, respectively.
 
-* In Version 3.1.4.0, we have introduced a new attribute named `textOutline` to improve the readability of data values. 
+* In Version 3.1.4.0, we have introduced a new attribute named [textOutline](/upgrading/whats-new#improve-the-readability-of-data-values) to improve the readability of data values.
 
-* Version 3.14.0 onwards, you can now customize y-axis values using the newly introduced cosmetic attributes. Click [here](/chart-guide/chart-configurations/axes#configure-the-border-properties-of-y-axis-names)
+* Version 3.14.0 onwards, you can now customize y-axis values using the newly introduced [cosmetic attributes](/chart-guide/chart-configurations/axes#configure-the-border-properties-of-y-axis-names).
 
 <h4>Improvements</h4>
 
-* Version 3.14.0 onwards, you can use the `drawFullAreaBorder` attribute in an area chart, to create a border either around the entire plot or on the top of the area plot only. Click [here](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart) to know more.
+* Version 3.14.0 onwards, you can use the [drawFullAreaBorder](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart) attribute in an area chart, to create a border either around the entire plot or on the top of the area plot only.
 
 * This version onwards, you can insert non-breaking space codes into input strings of text elements.
 
