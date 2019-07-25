@@ -142,3 +142,73 @@ In the above code:
     * `marker-notch-connector:hover` is used to style the connector of the notch at the end of the reference zone when hovered.
 
 ## Reference Zone in a MultiVariate Chart
+
+For a time-series chart with multi canvases, you can add reference zones for each canvas  of the chart. A multi-variate time-series chart with reference zones is shown below:
+
+{% embed_ftChart multi-variate-chart-reference-zone %}
+
+In the above chart, if you hover over the notch of each reference zone, you will notice that the the minimum and maximum values of the zone will be visible on the axis for which the reference zone has been drawn on the respective canvases.
+
+The code to render the reference zone in a multi-variate chart is:
+
+```json
+dataSource: {
+    data: dataStore,
+    caption: {
+        text: 'Pollution Control Report'
+    },
+    yAxis: [{
+        plot: 'Temperature',
+        title: 'Temperature (in °C)',
+        referenceZone: [{
+            label: 'Comfortable temp. range',
+            valueMin: '15',
+            valueMax: '25',
+            style: {
+                marker: {
+                    fill: '#D2C9FF',
+                    stroke: '#D2C9FF'
+                },
+                'marker-text': {
+                    fill: '#000000'
+                },
+                'marker:hover': {
+                    fill: '#D2C9FF'
+                },
+                'marker-zone:hover': {
+                    "stroke": "#D2C9FF"
+                },
+                'marker-notch:hover': {
+                    "stroke": "#D2C9FF"
+                }
+            }
+        }]
+    }, {
+        plot: 'Carbon mono-oxide',
+        title: 'CO (in µg/m³)',
+        referenceZone: [{
+            label: 'Acceptable range - CO',
+            valueMin: '1.5',
+            valueMax: '3',
+            style: {
+                marker: {
+                    fill: '#B4F5E6',
+                    stroke: '#B4F5E6'
+                },
+                'marker-text': {
+                    fill: '#000000'
+                },
+                'marker:hover': {
+                    fill: '#98DECD'
+                },
+                'marker-zone:hover': {
+                    "stroke": "#B4F5E6"
+                },
+                'marker-notch:hover': {
+                    "stroke": "#B4F5E6"
+                }
+            }
+        }]
+    }]
+}
+```
