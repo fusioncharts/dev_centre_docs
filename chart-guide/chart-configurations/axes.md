@@ -4,9 +4,9 @@ description: This section talks about the x-axis and y-axis on the chart.
 heading: Configure axes
 ---
 
-X-Axis refers to the categorical axis in FusionCharts. For the vertical charts it currently appears at bottom of the canvas, whereas, for the horizontal charts, it currently appears on the left of the canvas.
+X-axis refers to the categorical axis in FusionCharts. For the vertical charts it currently appears at bottom of the canvas, whereas, for the horizontal charts, it currently appears on the left of the canvas.
 
-The vertical axis on the chart is refered to as the y-axis. Y-Axis refers to the value axis. For the vertical charts it currently appears at left of the canvas, whereas, for the horizontal charts (bar charts), it currently appears on the bottom of the canvas.
+Y-Axis refers to the value axis. For the vertical charts it currently appears at left of the canvas, whereas, for the horizontal charts (bar charts), it currently appears on the bottom of the canvas.
 
 ## Setting Axes Names
 
@@ -32,7 +32,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/9y23m8vq/) to edit the above chart.
 
-## X-Axis Position
+## X-axis Position
 
 With 3.14.0, the position of this axis will be configurable - TOP/BOTTOM for vertical charts, LEFT/RIGHT for horizontal charts.
 
@@ -58,7 +58,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5Lmk4bo3/) to edit the above chart
 
 > Changing the position of the x-axis won't change the position of the legend of the chart.
 
-### X-Axis position for bar charts
+### X-axis position for bar charts
 
 For horizontal bar charts, the position of the x-axis can be set to `right` or `left`.
 
