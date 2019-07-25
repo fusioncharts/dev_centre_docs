@@ -22,8 +22,6 @@ The salient features of a reference zone are:
 
 A chart with a reference zone looks like as shown below:
 
-temperature-reading-line-plot-reference-zone
-
 {% embed_ftChart temperature-reading-line-plot-reference-zone %}
 
 In the above chart, a reference zone appears parallel to the time axis. Hover on the zone to see the label and the value.
@@ -42,7 +40,7 @@ Refer to the code given below:
 
 ```json
 {
-    type: 'timeseries',
+    type: "timeseries",
     dataSource: {
         yAxis: [{
             // Reference Line
@@ -69,18 +67,18 @@ The code to render the reference zone in a dual Y-Axis chart is given below:
 ```json
 dataSource: {
     yAxis: [{
-        plot: 'Temperature',
-        title: 'Temperature (in °C)',
+        plot: "Temperature",
+        title: "Temperature (in °C)",
         referenceLine: [{
-            label: 'Controlled Temperature',
-            value: '6'
+            label: "Controlled Temperature",
+            value: "6"
         }]
     }, {
-        plot: 'Carbon mono-oxide',
-        title: 'CO (in µg/m³)',
+        plot: "Carbon mono-oxide",
+        title: "CO (in µg/m³)",
         referenceLine: [{
-            label: 'Controlled Carbon mono-oxide',
-            value: '3'
+            label: "Controlled Carbon mono-oxide",
+            value: "3"
         }]
     }],
 }
@@ -94,21 +92,21 @@ Refer to the code given below:
 
 ```json
 referenceZone: [{
-    label: 'Label',
-    valueMin: '2000',
-    valueMax: '3000',
+    label: "Label",
+    valueMin: "2000",
+    valueMax: "3000",
     style: {
-        'marker': { },
-        'marker:hover': { },
-        'marker-zone': { },
-        'marker-zone:hover': { },
-        'marker-tag': { },
-        'text': { },
-        'marker-text': { },
-        'marker-notch': { },
-        'marker-notch:hover': { },
-        'marker-notch-connector': { },
-        'marker-notch-connector:hover': { }
+        "marker": { },
+        "marker:hover": { },
+        "marker-zone": { },
+        "marker-zone:hover": { },
+        "marker-tag": { },
+        "text": { },
+        "marker-text": { },
+        "marker-notch": { },
+        "marker-notch:hover": { },
+        "marker-notch-connector": { },
+        "marker-notch-connector:hover": { }
     }
 }]
 ```
@@ -155,56 +153,56 @@ The code to render the reference zone in a multi-variate chart is:
 dataSource: {
     data: dataStore,
     caption: {
-        text: 'Pollution Control Report'
+        text: "Pollution Control Report"
     },
     yAxis: [{
-        plot: 'Temperature',
-        title: 'Temperature (in °C)',
+        plot: "Temperature",
+        title: "Temperature (in °C)",
         referenceZone: [{
-            label: 'Comfortable temp. range',
-            valueMin: '15',
-            valueMax: '25',
+            label: "Comfortable temp. range",
+            valueMin: "15",
+            valueMax: "25",
             style: {
                 marker: {
-                    fill: '#D2C9FF',
-                    stroke: '#D2C9FF'
+                    fill: "#D2C9FF",
+                    stroke: "#D2C9FF"
                 },
-                'marker-text': {
-                    fill: '#000000'
+                "marker-text": {
+                    fill: "#000000"
                 },
-                'marker:hover': {
-                    fill: '#D2C9FF'
+                "marker:hover": {
+                    fill: "#D2C9FF"
                 },
-                'marker-zone:hover': {
+                "marker-zone:hover": {
                     "stroke": "#D2C9FF"
                 },
-                'marker-notch:hover': {
+                "marker-notch:hover": {
                     "stroke": "#D2C9FF"
                 }
             }
         }]
     }, {
-        plot: 'Carbon mono-oxide',
-        title: 'CO (in µg/m³)',
+        plot: "Carbon mono-oxide",
+        title: "CO (in µg/m³)",
         referenceZone: [{
-            label: 'Acceptable range - CO',
-            valueMin: '1.5',
-            valueMax: '3',
+            label: "Acceptable range - CO",
+            valueMin: "1.5",
+            valueMax: "3",
             style: {
                 marker: {
-                    fill: '#B4F5E6',
-                    stroke: '#B4F5E6'
+                    fill: "#B4F5E6",
+                    stroke: "#B4F5E6"
                 },
-                'marker-text': {
-                    fill: '#000000'
+                "marker-text": {
+                    fill: "#000000"
                 },
-                'marker:hover': {
-                    fill: '#98DECD'
+                "marker:hover": {
+                    fill: "#98DECD"
                 },
-                'marker-zone:hover': {
+                "marker-zone:hover": {
                     "stroke": "#B4F5E6"
                 },
-                'marker-notch:hover': {
+                "marker-notch:hover": {
                     "stroke": "#B4F5E6"
                 }
             }

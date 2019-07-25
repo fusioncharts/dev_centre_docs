@@ -1,7 +1,7 @@
 {
-    type: 'timeseries',
-    renderAt: 'container',
-    width: 95%,
+    type: "timeseries",
+    renderAt: "container",
+    width: "95%",
     height: 450,
     dataSource: {
         data: dataStore,
@@ -9,53 +9,53 @@
             multiCanvas: false
         },
         caption: {
-            text: 'Energy & Temperature Measurements'
+            text: "Energy & Temperature Measurements"
         },
         yAxis: [{
             plot: [{
-                value: 'Energy',
+                value: "Energy",
                 connectNullData: true,
-                type: 'line'
+                type: "line"
             }],
             referenceZone: [{
-                label: 'High energy consumption',
-                valueMin: '170',
-                valueMax: '220',
+                label: "High energy consumption",
+                valueMin: "170",
+                valueMax: "220",
             }],
             format: {
-                suffix: ' kWh'
+                suffix: " kWh"
             }
         }, {
             plot: [{
-                value: 'Temperature',
+                value: "Temperature",
                 connectNullData: true,
-                type: 'line'
+                type: "line"
             }],
             referenceZone: [{
-                label: 'Cold weather',
-                valueMin: '3',
-                valueMax: '4.5',
+                label: "Cold weather",
+                valueMin: "3",
+                valueMax: "4.5",
                 style: {
                     marker: {
-                        fill: '#04F5E6',
-                        stroke: '#04F5E6'
+                        fill: "#04F5E6",
+                        stroke: "#04F5E6"
                     },
-                    'marker-text': {
-                        fill: '#000000'
+                    "marker-text": {
+                        fill: "#000000"
                     },
-                    'marker:hover': {
-                        fill: '#08DECD'
+                    "marker:hover": {
+                        fill: "#08DECD"
                     },
-                    'marker-zone:hover': {
+                    "marker-zone:hover": {
                         "stroke": "#04F5E6"
                     },
-                    'marker-notch:hover': {
+                    "marker-notch:hover": {
                         "stroke": "#04F5E6"
                     }
                 }
             }],
             format: {
-                suffix: ' °C'
+                suffix: " °C"
             }
         }]
     }
