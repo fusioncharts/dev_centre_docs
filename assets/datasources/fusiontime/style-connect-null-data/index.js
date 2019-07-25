@@ -1,19 +1,19 @@
 {
-    type: 'timeseries',
-    renderAt: 'container',
-    width: 95%,
+    type: "timeseries",
+    renderAt: "container",
+    width: "95%",
     height: 450,
     dataSource: {
         data: dataStore,
         caption: {
-            text: 'Pollution Report of Yatcha Street'
+            text: "Pollution Report of Yatcha Street"
         },
         subcaption: {
-            text: 'An industrial town'
+            text: "An industrial town"
         },
         yAxis: [{
             plot: [{
-                value: 'Pollution',
+                value: "Pollution",
                 connectNullData: true,
                 "style": {
                     "plot.null": {
@@ -22,8 +22,8 @@
                     },
                 }
             }],
-            title: 'Pollution Concentration (in ppm)',
-            min: '130'
+            title: "Pollution Concentration (in ppm)",
+            min: "130"
         }]
     }
 }

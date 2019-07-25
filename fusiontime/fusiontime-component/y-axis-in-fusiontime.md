@@ -169,9 +169,9 @@ In the above code:
 
 * `plot.null` object is created to configure the connecting line of the plots in the canvas.
 
-* `plot.null` object is created to configure the connecting line of the line chart.
+* `line.null` object is created to configure the connecting line of the line chart.
 
-* `plot.null` object is created to configure the connecting area of the area chart.
+* `area.null` object is created to configure the connecting area of the area chart.
 
 A sample code to style the null data of a simple time-series chart is given below:
 
