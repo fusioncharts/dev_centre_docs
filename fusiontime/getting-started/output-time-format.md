@@ -6,7 +6,7 @@ heading: Change output time format
 
 In a time series chart, time is primarily displayed on the time axis and tooltip of a data plot. With v1.2.0, developers will be able to control the display of output time using standard date-time formats for the specific time unit.
 
-FusionTime supports the following a list of time formats:
+FusionTime supports the following list of time units:
 
 - Year
 - Month
@@ -15,6 +15,8 @@ FusionTime supports the following a list of time formats:
 - Minute
 - Second
 - Millisecond
+
+You can specify the output format for the each of the above units.
 
 Refer the example given below:
 

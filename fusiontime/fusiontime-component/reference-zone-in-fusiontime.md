@@ -30,9 +30,9 @@ In the above chart, a reference zone appears parallel to the time axis. Hover on
 
 You can add a reference zone using the following attributes of the `referenceZone` object inside the `YAxis` object:
 
-* Use the `valueMax` attribute to set the value from where you want to render the reference zone.
+* Use the `valueMax` attribute to set the value up to which you want to create the reference zone.
 
-* Use the `valueMin` attribute to set the value up to which you want to render the reference zone.
+* Use the `valueMin` attribute to set the value from where you want to create the reference zone.
 
 * Use the `label` attribute to set the text of the label.
 
@@ -43,8 +43,8 @@ Refer to the code given below:
     type: "timeseries",
     dataSource: {
         yAxis: [{
-            // Reference Line
-            "referenceLine": [{
+            // Reference Zone
+            "referenceZone": [{
                 "label": "Target",
                 "valueMax": 3000,
                 "valueMin": 2000
@@ -69,14 +69,14 @@ dataSource: {
     yAxis: [{
         plot: "Temperature",
         title: "Temperature (in °C)",
-        referenceLine: [{
+        referenceZone: [{
             label: "Controlled Temperature",
             value: "6"
         }]
     }, {
         plot: "Carbon mono-oxide",
         title: "CO (in µg/m³)",
-        referenceLine: [{
+        referenceZone: [{
             label: "Controlled Carbon mono-oxide",
             value: "3"
         }]

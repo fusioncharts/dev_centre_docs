@@ -645,6 +645,49 @@ new FusionCharts({
 	</tr>
 </table>
 
+## Reference Zone
+
+To configure the reference zone of the chart, you can create the `referenceZone` object under `yAxis` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        yAxis: [{
+            // Reference Zone
+            "referenceZone": [{
+                "label": " ", //Label of the reference zone
+                "valueMax": " ", //Max value of the reference zone
+                "valueMin": " " //Min value of the reference zone
+            }],
+        }]
+    }
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`label`</td>
+		<td>String</td>
+		<td>The label which gets displayed when you hover the reference zones.</td>
+	</tr>
+	<tr>
+		<td>`valueMax`</td>
+		<td>Number</td>
+		<td>This attribute specifies the max value upto which you want to create a reference zone.</td>
+	</tr>
+	<tr>
+		<td>`valueMin`</td>
+		<td>Number</td>
+		<td>This attribute specifies the min value from where you want to create a reference zone.</td>
+	</tr>
+</table>
+
 ## Tooltip
 
 To configure the tooltip of the chart, you can create the `tooltip` object under the `dataSource`.
