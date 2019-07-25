@@ -1899,6 +1899,10 @@
             "path": "/fusiontime/getting-started/change-default-aggregation"
           },
           {
+            "title": "Output Time Format",
+            "path": "/fusiontime/getting-started/output-time-format"
+          },
+          {
             "title": "Change Plot Type",
             "path": "/fusiontime/getting-started/change-plot-type-in-fusiontime"
           },
@@ -1997,7 +2001,11 @@
             "path": "/fusiontime/fusiontime-component/y-axis-in-fusiontime"
           },
           {
-            "title": "Reference Lines",
+            "title": "Predictive Data in FusionTime",
+            "path": "/fusiontime/fusiontime-component/predictive-data-fusiontime"
+          },
+          {
+            "title": "Reference Lines & Zones",
             "path": "/fusiontime/fusiontime-component/reference-line-in-fusiontime"
           },
           {

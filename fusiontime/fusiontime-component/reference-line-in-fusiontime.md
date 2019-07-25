@@ -234,21 +234,23 @@ Reference zones are similar to reference lines, except that it marks out an enti
 
 Refer to the image below:
 
-Image
+<img src="{% site.BASE_URL %}/images/reference-zone-in-a-single-series-chart.png" alt="Reference Line" width="700" height="420">
 
 The salient features of a reference zone are:
 
-* You can specify a minimum value and a maximum value to draw a reference zone.
+- You can specify a minimum value and a maximum value to draw a reference zone.
 
-* You can create one or more reference zones on canvas for each y-axis (in case the chart has multiple y-axes).
+- You can create one or more reference zones on canvas for each y-axis (in case the chart has multiple y-axes).
 
-* You can customize the color and other cosmetic properties to each reference zone.
+- You can customize the color and other cosmetic properties to each reference zone.
 
-* When you hover over the reference zone, the data plots falling in the zone get highlighted.
+- When you hover over the reference zone, the data plots falling in the zone get highlighted.
 
 A chart with a reference zone looks like as shown below:
 
-CHART
+temperature-reading-line-plot-reference-zone
+
+{% embed_ftChart temperature-reading-line-plot-reference-zone %}
 
 In the above chart, a reference zone appears parallel to the time axis. Hover on the zone to see the label and the value.
 
@@ -264,7 +266,7 @@ You can add a reference zone using the following attributes of the `referenceZon
 
 Refer to the code given below:
 
-```
+```json
 {
     type: 'timeseries',
     dataSource: {
@@ -275,23 +277,24 @@ Refer to the code given below:
                 "valueMax": 3000,
                 "valueMin": 2000
             }],
-        }]       
+        }]
     }
 }
-
 ```
 
 ## Reference Zone in Dual Y-axis Chart
 
 For a time-series chart with dual y-axis, you can add reference zones for each y-axis on the canvas. A chart with multiple reference zones for dual y-axis is shown below:
 
-CHART
+{% embed_ftChart reference-zone-in-dual-y-axis %}
 
 In the above chart, if you hover over the notch of each reference zone, you will notice that the minimum and maximum values of the zone will be visible on the axis for which the reference zone has been drawn.
 
 The code to render the reference zone in a dual Y-Axis chart is given below:
 
-CODE
+```json
+
+```
 
 ## Customize a reference zone
 
@@ -299,8 +302,7 @@ You can use CSS styling to the cosmetic properties of the reference zone. To set
 
 Refer to the code given below:
 
-```
-
+```json
 referenceZone: [{
     label: 'Label',
     valueMin: '2000',

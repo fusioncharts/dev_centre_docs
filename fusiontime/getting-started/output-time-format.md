@@ -8,19 +8,19 @@ In a time series chart, time is primarily displayed on the time axis and tooltip
 
 FusionTime supports the following a list of time formats:
 
-* Year
+- Year
 
-* Month
+- Month
 
-* Day
+- Day
 
-* Hour
+- Hour
 
-* Minute
+- Minute
 
-* Second
+- Second
 
-* Millisecond
+- Millisecond
 
 Refer the example given below:
 
