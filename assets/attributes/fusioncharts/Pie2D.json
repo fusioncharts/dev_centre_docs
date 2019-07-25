@@ -970,6 +970,20 @@
         "type": "String",
         "versionSince": "3.14.0",
         "name": "valuePosition"
+      },
+      {
+        "description": "Set the minimum angle for a pie slice, above which the data labels will be visible, provided `labelPosition` is set to `inside`. \n\nDefault value: 0",
+        "range": "0 - 360",
+        "type": "Number",
+        "versionSince": "3.14.0",
+        "name": "minAngleForLabel"
+      },
+      {
+        "description": "Set the minimum angle for a pie slice, above which the data values will be visible, provided `valuePosition` is set to `inside`. \n\nDefault value: 0",
+        "range": "0 - 360",
+        "type": "Number",
+        "versionSince": "3.14.0",
+        "name": "minAngleForValue"
       }
     ],
     "description": " In FusionCharts XT, the pie and doughnut charts can now have smart labels and lines. Smart labels/lines are data connector lines which connect the pie/doughnut slices to their respective labels without over-lapping even in cases where there are lots of labels located near each other. You can configure the smart labels/lines properties using the attributes below. "
