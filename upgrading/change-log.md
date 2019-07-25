@@ -58,5 +58,20 @@ heading: Version 3.14.0
 
 * Version 3.14.0 onwards, you can use the `drawFullAreaBorder` attribute in an area chart, to create a border either around the entire plot or on the top of the area plot only.
 
-* This version onwards, you can insert non-breaking space codes (     ) into input strings.
+* This version onwards, you can insert non-breaking space codes into input strings.
 
+<h4>Deprecated</h4>
+
+- Following is the list of deprecated attributes:
+
+  - `placeXAxisLabelsOnTop`
+
+- Treemap specific attributes:
+
+  - `labelGlow`
+
+  - `labelGlowIntensity`
+
+  - `labelGlowColor`
+
+  - `labelGlowRadius`
