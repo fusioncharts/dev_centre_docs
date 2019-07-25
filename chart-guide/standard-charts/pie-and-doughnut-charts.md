@@ -268,8 +268,6 @@ Refer to the code below:
 
 > This attribute will only work if the `valuePosition` attribute is set to `inside`.
 
-> Like `labelPosition` attribute, `minAngleForLabel` attribute can be applied both at `chart` and `data` level.
-
 A doughnut chart after applying `labelPosition` and `minAngleForLabel` attribute look like:
 
 {% embed_chart label-position-inside-pie-chart-example-20.js %}
@@ -478,7 +476,7 @@ Refer to the code given below:
 }
 ```
 
-Click [here](http://jsfiddle.net/fusioncharts/osezmt87/) to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/osezmt87/) to edit the above chart.
 
 ## Set the Starting Angle
 
