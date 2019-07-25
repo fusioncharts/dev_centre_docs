@@ -688,6 +688,40 @@ new FusionCharts({
 	</tr>
 </table>
 
+### Style Reference Zone
+
+Reference zone of a time-series chart can be styled using `style` object under `referenceZone` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        yAxis: [{
+            // Reference Zone
+            "referenceZone": [{
+                "label": " ", //Label of the reference zone
+                "valueMax": " ", //Max value of the reference zone
+                "valueMin": " ", //Min value of the reference zone
+                style: {
+                    "marker": { }, //Style | String
+                    "marker:hover": { }, //Style | String
+                    "marker-zone": { }, //Style | String
+                    "marker-zone:hover": { }, //Style | String
+                    "marker-tag": { }, //Style | String
+                    "text": { }, //Style | String
+                    "marker-text": { }, //Style | String
+                    "marker-notch": { }, //Style | String
+                    "marker-notch:hover": { }, //Style | String
+                    "marker-notch:hover": { }, //Style | String
+                    "marker-notch-connector": { }, //Style | String
+                    "marker-notch-connector:hover": { } //Style | String
+                }
+            }],
+        }]
+    }
+})
+```
+
 ## Tooltip
 
 To configure the tooltip of the chart, you can create the `tooltip` object under the `dataSource`.
@@ -1036,7 +1070,7 @@ new FusionCharts({
 
 ## Date/time Format
 
-`outputFormat` attribute is used to set the format of the column being grouped. To set the date/time format of the chart, set the value of `outputFormat` attribute as per your requirement.
+`outputTimeFormat` attribute is used to specify the date-time format of the chart. You can specify the date-time format for a specific time unit using `outputTimeFormat`.
 
 List of predefined date/time format is given below:
 

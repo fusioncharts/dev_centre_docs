@@ -4,9 +4,9 @@ description: This article defines how to change the output time format.
 heading: Change output time format
 ---
 
-In a time series chart, time is primarily displayed on the time axis and tooltip of a data plot. With v1.2.0, developers will be able to control the display of output time using standard date-time formats for the specific time unit.
+In a time series chart, time is primarily displayed on the time axis and tooltip of a data plot. With v1.2.0, developers will be able to control the display of output time using standard [date-time formats](/fusiontime/fusiontime-attributes#date-time-format) for the specific time unit.
 
-FusionTime supports the following list of time units:
+FusionTime supports the following time units:
 
 - Year
 - Month
@@ -16,7 +16,7 @@ FusionTime supports the following list of time units:
 - Second
 - Millisecond
 
-You can specify the output format for the each of the above units.
+You can specify the output time format for each time unit. Whenever a data bin occurs with any of the time unit, the output format specified against it will be displayed.
 
 Refer the example given below:
 
