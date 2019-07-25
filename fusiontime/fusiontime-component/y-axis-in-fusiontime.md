@@ -128,24 +128,23 @@ The dashed connecting line helps in interpolating the line/area segment differen
 
 The default connecting line looks like as shown in the image below:
 
-IMAGE
+<img src="{% site.BASE_URL %}/images/fusiontime-component-connectnulldata.png" alt="ConnectNullData" width="700" height="420">
 
 ### Add Styles to Connecting Line
 
 FusionTime allows you to style the connector for the line or area data plot. You can configure the:
 
-* Line thickness,
+- Line thickness,
 
-* Color, and
+- Color, and
 
-* type of the connecting line.
+- type of the connecting line.
 
 Refer to the code given below:
 
-*> The code given below can be used you want to configure the connecting line of a particular data plot. The detailed code to configure all the data plots of the chart is given later in the page.*
+> The code given below can be used you want to configure the connecting line of a particular data plot. The detailed code to configure all the data plots of the chart is given later in the page.
 
-```
-
+```json
 {
   "yAxis": [{
     "plot": [{
@@ -174,37 +173,43 @@ In the above code:
 
 * `plot.null` object is created to configure the connecting area of the area chart.
 
-The chart looks like shown in the image below:
+A sample code to style the null data of a simple time-series chart is given below:
 
-LIVE CHART
-
-To add styles to all the connecting lines of the data plots in a chart, use the `plotConfig` object as shown below:
-
-```
-
+```json
 {
-    "plotConfig": {
-        "line": {
-            "style": {
-                "plot.null": Style Object,
-                "line.null": Style Object
-            }
+    "type": "timeseries",
+    "renderAt": "container",
+    "width": 800,
+    "height": 600,
+    "dataSource": {
+        data: dataStore,
+        "caption": {
+            "text": "Pollution Report of Yatcha Street"
         },
-        "area": {
-            "style": {
-                "plot.null": Style Object,
-                "line.null": Style Object,
-                "area.null": Style Object
-            }
-        }
+        "subcaption": {
+            "text": "An industrial town"
+        },
+        "yAxis": [{
+            "plot": [{
+                "value": "Pollution",
+                "connectNullData": true,
+                "style": {
+                    "plot.null": {
+                        "stroke-dasharray": "-1",
+                        "stroke": "#FF0000"
+                    },
+                }
+            }],
+            "title": "Pollution Concentration (in ppm)",
+            "min": "130"
+        }]
     }
 }
-
 ```
 
 The  chart looks like as shown below:
 
-LIVE CHART
+{% embed_ftChart style-connect-null-data %}
 
 ## Dual Y-axis
 
