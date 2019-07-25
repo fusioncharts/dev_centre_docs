@@ -148,8 +148,6 @@ Often when data values are placed inside the data plot, the data values are not 
 
 The chart will look like as shown below:
 
-LIVE CHART
+{% embed_chart text-outline-pie-chart-example-1.js %}
 
-{% embed_chart chart-configurations-titles-and-axis-names-example-8.js %}
-
-Click [here](/chart-guide/chart-configurations/axes#configure-font-properties-for-y-axis-values) to know more.
+Click [here](http://jsfiddle.net/fusioncharts/dL7yc95j/1/) to edit the chart.
