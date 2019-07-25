@@ -152,3 +152,14 @@ The chart will look like as shown below:
 
 Click [here](/chart-guide/chart-configurations/axes#configure-font-properties-for-y-axis-values) to know more.
 
+## Improve the readability of data Values
+
+Often when data values are placed inside the data plot, the data values are not properly visible. Based on the plot color and the text color of the data values it is sometimes difficult to read them. You can now add outline borders to the data value text for better readability.
+
+The chart will look like as shown below:
+
+LIVE CHART
+
+{% embed_chart chart-configurations-titles-and-axis-names-example-8.js %}
+
+Click [here](/chart-guide/chart-configurations/axes#configure-font-properties-for-y-axis-values) to know more.
