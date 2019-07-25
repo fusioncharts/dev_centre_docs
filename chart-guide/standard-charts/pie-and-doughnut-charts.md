@@ -124,7 +124,7 @@ A pie2D chart configured to show percent values on the chart looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D chart.
 
-## Place values inside the Pie/Doughnut Chart
+## Place values inside the Pie/Doughnut chart
 
 Starting v3.14.0, FusionCharts Suite XT allows you to place the values inside the pie/doughnut slices of a pie and doughnut chart respectively. This helps to improve the overall look as it saves the canvas area outside the chart.
 
@@ -193,8 +193,6 @@ Refer to the code below:
 
 > This attribute will only work if the `valuePosition` attribute is set to `inside`.
 
-> Like `valuePosition` attribute, `minAngleForValue` attribute can be applied both at `chart` and `data` level.
-
 A doughnut chart after applying `valuePosition` and `minAngleForValue` attribute look like:
 
 {% embed_chart value-position-inside-doughnut-chart-example-18.js %}
@@ -249,7 +247,7 @@ Refer to the code below, showing the `labelPosition` attribute for a particular 
 }
 ```
 
-A pie2d with `labelPosition` attribute set to `inside**`** (at chart level) is shown below:
+A pie2d with `labelPosition` attribute set to `inside` (at chart level) is shown below:
 
 {% embed_chart label-position-inside-pie-chart-example-19.js %}
 

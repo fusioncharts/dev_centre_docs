@@ -12,7 +12,8 @@
             "showPercentInTooltip": "0",
             "decimals": "1",
             //Theme
-            "theme": "fusion"
+            "theme": "fusion",
+            "enableSmartLabels": "0"
         },
         "data": [{
                 "label": "Food",
