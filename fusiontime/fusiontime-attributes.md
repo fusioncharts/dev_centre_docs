@@ -63,7 +63,7 @@ new FusionCharts({
 	<tr>
 </table>
 
-#### Style Time Axis
+### Style Time Axis
 
 You can add style to the x-Axis components using `style` object under `xaxis` object.
 
@@ -71,20 +71,20 @@ You can add style to the x-Axis components using `style` object under `xaxis` ob
 new FusionCharts({
     "type": 'timeseries',
     "dataSource": {
-		xAxis {
-				"plot": ' ', //Column Name
-				"timemarker": [{
-						"style": {
-								"tick-mark": { }, //SVGStyle | String
-								"tick-mark-major": { }, //SVGStyle | String
-								"tick-mark-minor": { }, //SVGStyle | String
-								"label": { }, //SVGStyle | String
-								"label-major": { }, //SVGStyle | String
-								"label-minor": { }, //SVGStyle | String
-								"label-context": { } //SVGStyle | String
-						}
-        }]
-		}
+        xAxis {
+            "plot": ' ', //Column Name
+            "xAxis": [{
+                "style": {
+                    "tick-mark": {}, //SVGStyle | String
+                    "tick-mark-major": {}, //SVGStyle | String
+                    "tick-mark-minor": {}, //SVGStyle | String
+                    "label": {}, //SVGStyle | String
+                    "label-major": {}, //SVGStyle | String
+                    "label-minor": {}, //SVGStyle | String
+                    "label-context": {} //SVGStyle | String
+                }
+            }]
+        }
     },
 });
 ```
@@ -169,41 +169,40 @@ new FusionCharts({
 	<tr>
 		<td>`month`</td>
 		<td>Array</td>
-		<td>An array to specify the month's multipliers.</td>
+		<td>An array to specify the month's multipliers. Valid multipliers are: 1, 2, 3, 4, 6.</td>
 	</tr>
 	<tr>
 		<td>`day`</td>
 		<td>Array</td>
-		<td>An array to specify the days's multipliers.</td>
+		<td>An array to specify the days's multipliers. Valid multipliers are: 1, 2, 3, 5, 6, 10, 15.</td>
 	</tr>
 	<tr>
 		<td>`hour`</td>
 		<td>Array</td>
-		<td>An array to specify the hour's multipliers.</td>
+		<td>An array to specify the hour's multipliers. Valid multipliers are: 1, 2, 3, 4, 6, 8, 12.</td>
 	</tr>
 	<tr>
 		<td>`minute`</td>
 		<td>Array</td>
-		<td>An array to specify the minute's multipliers.</td>
+		<td>An array to specify the minute's multipliers. Valid multipliers are: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30.</td>
 	</tr>
 	<tr>
 		<td>`second`</td>
 		<td>Array</td>
-		<td>An array to specify the second's multipliers.</td>
+		<td>An array to specify the second's multipliers. Valid multipliers are: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30.</td>
 	</tr>
 	<tr>
 		<td>`millisecond`</td>
 		<td>Array</td>
-		<td>An array to specify the millisecond's multipliers.</td>
+		<td>An array to specify the millisecond's multipliers. Valid multipliers are: 10, 20, 50, 100, 200, 250, 500.</td>
 	</tr>
 </table>
 
-### Output Time Interval
+### Output Time Format
 
 To specify the date-time format for a specific time unit, create a `outputTimeFormat` object under `xaxis` object.
 
 ```javascript
-
 new FusionCharts({
     type: 'timeseries',
     dataSource: {
@@ -231,37 +230,37 @@ new FusionCharts({
 	<tr>
 		<td>`year`</td>
 		<td>String</td>
-		<td>Sets the format to specify the year.</td>
+		<td>Sets the format of the data bin where the time unit is year.</td>
 	</tr>
 	<tr>
 		<td>`month`</td>
 		<td>String</td>
-		<td>Sets the format of the month.</td>
+		<td>Sets the format of the data bin where the time unit is month.</td>
 	</tr>
 	<tr>
 		<td>`day`</td>
 		<td>String</td>
-		<td>Sets the format of the day.</td>
+		<td>Sets the format of the data bin where the time unit is day.</td>
 	</tr>
 	<tr>
 		<td>`hour`</td>
 		<td>String</td>
-		<td>Sets the format of hours.</td>
+		<td>Sets the format of the data bin where the time unit is hour.</td>
 	</tr>
 	<tr>
 		<td>`minute`</td>
 		<td>String</td>
-		<td>Sets the format of minute.</td>
+		<td>Sets the format of the data bin where the time unit is minute.</td>
 	</tr>
 	<tr>
 		<td>`second`</td>
 		<td>String</td>
-		<td>Sets the foramt of seconds.</td>
+		<td>Sets the format of the data bin where the time unit is second.</td>
 	</tr>
 	<tr>
 		<td>`millisecond`</td>
 		<td>String</td>
-		<td>Sets the format of milliseconds.</td>
+		<td>Sets the format of the data bin where the time unit is millisecond.</td>
 	</tr>
 </table>
 
@@ -269,6 +268,19 @@ new FusionCharts({
 
 To set the initial spread of the active window of the time navigator create a `initialInterval` object under `xaxis` object.
 
+```javascript
+new FusionCharts({
+    "type": 'timeseries',
+    "dataSource": {
+		"xAxis":{
+			"initialInterval": {
+				"from": "2016-01-01 12:00:00",
+				"to": "2016-01-31 12:00:00"
+        	}
+		}
+	}
+})
+```
 
 <table>
 	<tr>
@@ -585,7 +597,8 @@ new FusionCharts({
         },
         type: " ", //Plot type to render the chart
         title: " ", //Title of the axis
-        aggregation: " " //Aggregate Function
+		aggregation: " " //Aggregate Function
+		connectNullData: " " //Set the value to `true` to connect null data
       }
     ]
   }
@@ -637,6 +650,74 @@ new FusionCharts({
 		<td>`type`</td>
 		<td>String</td>
 		<td>This attribute sets the type of the the data plot to render the chart. It is used when you want to specify the chart type under `plot` object.</td>
+	</tr>
+	<tr>
+		<td>`connectNullData`</td>
+		<td>Boolean</td>
+		<td>Connects the null data for line and area plots.</td>
+	</tr>
+</table>
+
+### Style Connecting Lines
+
+You can add style for connecting lines of null data using two methods:
+
+- Under `yAxis` Object
+- Under global `plotConfig` object
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "yAxis": [{
+            "plot": [{
+                "type": "area",
+                "style": {
+                    "plot.null": { } //SVGStyle | String,
+                    "line.null": { } //SVGStyle | String,
+                    "area.null": { } //SVGStyle | String
+                }
+            }]
+        }],
+        "plotConfig": {
+            "line": {
+                "style": {
+                    "plot.null": { } //SVGStyle | String,
+                    "line.null": { } //SVGStyle | String
+                }
+            },
+            "area": {
+                "style": {
+                    "plot.null": { } //SVGStyle | String,
+                    "line.null": { } //SVGStyle | String,
+                    "area.null": { } //SVGStyle | String
+                }
+            }
+        }
+    }
+});
+```
+
+<table>
+	<tr>
+		<th>Attributes</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`plot.null`</td>
+		<td>SVGStyle</td>
+		<td>Styles the connecting line of the plots in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`line.null`</td>
+		<td>SVGStyle</td>
+		<td>Styles the connecting line of the line plots in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`area.null`</td>
+		<td>SVGStyle</td>
+		<td>Styles the connecting line of the area plots in the canvas.</td>
 	</tr>
 </table>
 
@@ -902,12 +983,13 @@ To configure the tooltip of the chart, you can create the `tooltip` object under
 
 ```javascript
 new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    tooltip: {
-      enabled: "false" // Disables the Tooltip
+    type: "timeseries",
+    dataSource: {
+        tooltip: {
+            enabled: "false", // Disables the Tooltip
+            outputTimeFormat: { } //date/time format
+        }
     }
-  }
 });
 ```
 
@@ -922,6 +1004,10 @@ new FusionCharts({
 		<td>String</td>
 		<td>Setting this attribute to `true` enables the visibility of the tooltip for the chart.</td>
 	</tr>
+	<tr>
+		<td>`outputTimeFormat`</td>
+		<td>Object</td>
+		<td>An object to specify the date-time format for a specific time unit.</td>
 </table>
 
 ### Style Tooltip Components
@@ -970,6 +1056,72 @@ new FusionCharts({
 		<td>`body`</td>
 		<td>HTMLStyle</td>
 		<td>Customizes all the text other than the `header` text.</td>
+	</tr>
+</table>
+
+### Output Time Format
+
+To specify the date-time format for a specific time unit, create a `outputTimeFormat` object under `xaxis` object.
+
+```javascript
+new FusionCharts({
+    type: 'timeseries',
+    dataSource: {
+		xAxis:{
+			outputTimeFormat:{
+				year: " ", //%Y - 2018
+				month: " ", //%B, %Y - September, 2018
+				day: " ", //%B %-d, %Y - November 11, 2018
+				hour: " ", //%b %-d, %Y, %-I %p - Nov 5, 2018, 4 PM
+				minute: " ", //%b %-d, %Y, %-I:%-M %p - Nov 5, 2018, 4:24 PM
+				second: " ", //%b %-d, %Y, %-I:%-M:%-S %p - Nov 5, 2018, 4:25:30 PM
+				millisecond: " " //%b %-d, %Y, %-I:%-M:%-S:%-L %p- Nov 29, 2017, 4:29:12.075 PM
+			}
+		}
+	}
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`year`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is year.</td>
+	</tr>
+	<tr>
+		<td>`month`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is month.</td>
+	</tr>
+	<tr>
+		<td>`day`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is day.</td>
+	</tr>
+	<tr>
+		<td>`hour`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is hour.</td>
+	</tr>
+	<tr>
+		<td>`minute`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is minute.</td>
+	</tr>
+	<tr>
+		<td>`second`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is second.</td>
+	</tr>
+	<tr>
+		<td>`millisecond`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is millisecond.</td>
 	</tr>
 </table>
 
