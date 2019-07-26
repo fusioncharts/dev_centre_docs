@@ -63,7 +63,7 @@ new FusionCharts({
 	<tr>
 </table>
 
-#### Style Time Axis
+### Style Time Axis
 
 You can add style to the x-Axis components using `style` object under `xaxis` object.
 
@@ -73,7 +73,7 @@ new FusionCharts({
     "dataSource": {
 		xAxis {
 				"plot": ' ', //Column Name
-				"timemarker": [{
+				"xAxis": [{
 						"style": {
 								"tick-mark": { }, //SVGStyle | String
 								"tick-mark-major": { }, //SVGStyle | String
@@ -707,17 +707,17 @@ new FusionCharts({
 	<tr>
 		<td>`plot.null`</td>
 		<td>SVGStyle</td>
-		<td>Style specified within this object is applied across the chart.</td>
+		<td>Styles the connecting line of the plots in the canvas.</td>
 	</tr>
 	<tr>
 		<td>`line.null`</td>
 		<td>SVGStyle</td>
-		<td>Connects the null data for line and area plots.</td>
+		<td>Styles the connecting line of the line plots in the canvas.</td>
 	</tr>
 	<tr>
 		<td>`area.null`</td>
 		<td>SVGStyle</td>
-		<td>Connects the null data for line and area plots.</td>
+		<td>Styles the connecting line of the area plots in the canvas.</td>
 	</tr>
 </table>
 
