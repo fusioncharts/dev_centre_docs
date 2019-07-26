@@ -574,7 +574,7 @@ new FusionCharts({
 
 ## Y Axes
 
-To configure the y-axis of the chart you can create the `yAxis` object under `xaxis` object.
+To configure the y-axis of the chart you can create the `yAxis` object under `dataSource` object.
 
 ```javascript
 new FusionCharts({
