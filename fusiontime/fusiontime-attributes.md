@@ -465,9 +465,11 @@ new FusionCharts({
     type: "timeseries",
     dataSource: {
         navigator: {
-            enabled: Boolean,
-            scrollbar: { },
-            window: { }
+            "enabled": Boolean,
+            "scrollbar": { },
+			"window": { },
+			"label": { }, //SVGStyle | String
+			"label-background": { } //SVGStyle | String
         }
     }
 });
@@ -493,6 +495,15 @@ new FusionCharts({
 		<td>`window`</td>
 		<td>Object</td>
 		<td>An object in which you can customize the window of the time navigator.</td>
+	</tr>
+		<td>`label`</td>
+		<td>String</td>
+		<td>Styles the label of the window in time navigator.</td>
+	</tr>
+	<tr>
+		<td>`label-background`</td>
+		<td>String</td>
+		<td>Styles the label background of the windoe in time navigator.</td>
 	</tr>
 </table>
 
