@@ -26,7 +26,6 @@
             title: "Daily Visitors Count"
         }],
         tooltip: {
-            enabled: "0", // Disables the Tooltip
             outputTimeFormat: {
                 day: "%d/%m/%y (%a)"
             },
