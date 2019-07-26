@@ -465,9 +465,11 @@ new FusionCharts({
     type: "timeseries",
     dataSource: {
         navigator: {
-            enabled: Boolean,
-            scrollbar: { },
-            window: { }
+            "enabled": Boolean,
+            "scrollbar": { },
+			"window": { },
+			"label": { }, //SVGStyle | String
+			"label-background": { } //SVGStyle | String
         }
     }
 });
@@ -493,6 +495,15 @@ new FusionCharts({
 		<td>`window`</td>
 		<td>Object</td>
 		<td>An object in which you can customize the window of the time navigator.</td>
+	</tr>
+		<td>`label`</td>
+		<td>String</td>
+		<td>Styles the label of the window in time navigator.</td>
+	</tr>
+	<tr>
+		<td>`label-background`</td>
+		<td>String</td>
+		<td>Styles the label background of the windoe in time navigator.</td>
 	</tr>
 </table>
 
@@ -999,7 +1010,7 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`enabled`</td>
-		<td>String</td>
+		<td>Boolean</td>
 		<td>Setting this attribute to `1` enables the visibility of the tooltip for the chart.</td>
 	</tr>
 	<tr>
@@ -1184,6 +1195,36 @@ new FusionCharts({
 
 ## Standard Range Selector
 
+To configure the standard range selector of the chart, you can create the `standardRangeSelector` object under `extensions` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "standardRangeSelector": {
+				"enabled": "1" //Enable or diable the standard range selector
+            }
+        }
+    }
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enabled`</td>
+		<td>Boolean</td>
+		<td>Setting this attribute to `1` enables the visibility of the standard range selector in the chart.</td>
+	</tr>
+</table>
+
+### Style Standard Range Selector
+
 You can add style to the Standard Range Selector using `style` object under `standardRangeSelector` object.
 
 ```javascript
@@ -1247,6 +1288,36 @@ new FusionCharts({
 
 ## Custom Range Selector
 
+To configure the custom range selector of the chart, you can create the `customRangeSelector` object under `extensions` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "customRangeSelector": {
+				"enabled": "1" //Enable or diable the custom range selector
+            }
+        }
+    }
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enabled`</td>
+		<td>Boolean</td>
+		<td>Setting this attribute to `1` enables the visibility of the custom range selector in the chart.</td>
+	</tr>
+</table>
+
+### Style Custom Range Selector
+
 You can add style to the Custom Range Selector using `style` object under `customRangeSelector` object.
 
 ```javascript
@@ -1286,72 +1357,171 @@ new FusionCharts({
 	<tr>
 		<td>`title-text`</td>
 		<td>String</td>
-		<td>Styles the button text of the standard range selector.</td>
+		<td>Styles the title text of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`title-icon`</td>
 		<td>String</td>
-		<td>Styles the background of the button in standard range selector.</td>
+		<td>Styles the title of the icon in custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`title-text:hover`</td>
 		<td>String</td>
-		<td>Styles the button text of the standard range selector when hovered.</td>
+		<td>Styles the title text of the custom range selector when hovered.</td>
 	</tr>
 	<tr>
 		<td>`title-icon:hover`</td>
 		<td>String</td>
-		<td>Styles the button text of the standard range selector when active.</td>
+		<td>Styles the title of the icon in custom range selector when active.</td>
 	</tr>
 	<tr>
 		<td>`title-text:active`</td>
 		<td>Character</td>
-		<td>Styles the background of the button when active.</td>
+		<td>Styles the title text of the custom range selector when active.</td>
 	</tr>
 	<tr>
 		<td>`title-icon:active`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the title of the icon in custom range selector when active.</td>
 	</tr>
 	<tr>
 		<td>`container`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the container of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`label`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the label of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`button-apply`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the apply buttom of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`button-cancel`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the cancelled button of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`button-apply:hover`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the apply button of the custom range selector when hovered.</td>
 	</tr>
 	<tr>
 		<td>`button-cancel:hover`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the cancelled  button of the custom range selector when hovered.</td>
 	</tr>
 	<tr>
 		<td>`select`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the select icon of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`input`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the input box of the custom range selector.</td>
+	</tr>
+</table>
+
+## Predictive Data
+
+To apply the date from where you want to specify the predictive data for the chart, you can create a `prediction` object under `extensions` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "prediction": {
+                "date": " " //The Predictive Data starts from this date
+            }
+        }
+    }
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`date`</td>
+		<td>Date/Time format</td>
+		<td>Sets the start date of the predictive data in the chart.</td>
+	</tr>
+</table>
+
+### Style Predictive Data
+
+You can add style to the predictive data in the chart using `style` object under `prediction` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "prediction": {
+                "style": {
+                    "plot": { }, //SVGStyle | String
+                    "line": { }, //SVGStyle | String
+                    "area": { }, //SVGStyle | String
+                    "column": { }, //SVGStyle | String
+                    "anchor": { }, //SVGStyle | String
+                    "bear": { }, //SVGStyle | String
+                    "bull": { } //SVGStyle | String
+                }
+            }
+        }
+    }
+})
+```
+
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`plot`</td>
+		<td>String</td>
+		<td>Styles all the plots with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`line`</td>
+		<td>String</td>
+		<td>Styles the line plot with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`area`</td>
+		<td>String</td>
+		<td>Styles the area plot with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`column`</td>
+		<td>String</td>
+		<td>Styles the column plot with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`anchor`</td>
+		<td>String</td>
+		<td>Styles the anchors with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`bear`</td>
+		<td>String</td>
+		<td>Styles the bear with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`bull`</td>
+		<td>String</td>
+		<td>Styles the bull with predictive data in the canvas.</td>
 	</tr>
 </table>
 
