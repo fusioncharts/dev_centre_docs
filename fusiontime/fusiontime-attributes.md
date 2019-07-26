@@ -198,12 +198,11 @@ new FusionCharts({
 	</tr>
 </table>
 
-### Output Time Interval
+### Output Time Format
 
 To specify the date-time format for a specific time unit, create a `outputTimeFormat` object under `xaxis` object.
 
 ```javascript
-
 new FusionCharts({
     type: 'timeseries',
     dataSource: {
@@ -269,6 +268,19 @@ new FusionCharts({
 
 To set the initial spread of the active window of the time navigator create a `initialInterval` object under `xaxis` object.
 
+```javascript
+new FusionCharts({
+    "type": 'timeseries',
+    "dataSource": {
+		"xAxis":{
+			"initialInterval": {
+				"from": "2016-01-01 12:00:00",
+				"to": "2016-01-31 12:00:00"
+        	}
+		}
+	}
+})
+```
 
 <table>
 	<tr>
