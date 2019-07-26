@@ -40,3 +40,34 @@ Refer to the code below:
     }
 }
 ```
+## Add styling
+
+Styling can be applied to the buttons of the Standard Range Selector. 
+
+You can add style to the Standard Range Selector using `style` object under `standardRangeSelector` object.
+
+> The `standardRangeSelector` object should be created under `extensions` object.
+
+Syntax:
+
+```
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "standardRangeSelector": {
+                "style": {
+                    "button-text": {}, //Object | String
+                    "button-background": {}, //Object | String
+                    "button-text:hover": {}, //Object | String
+                    "button-background:hover": {}, //Object | String
+                    "button-text:active": {}, //Object | String
+                    "button-background:active": {}, //Object | String
+                    "separator": {} //Object | String
+                }
+            }
+        }
+    }
+})
+
+```
