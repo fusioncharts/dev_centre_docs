@@ -52,6 +52,58 @@ In th above code:
 
 > If multiple data type columns are available in the tabular data and we do not specify the data type column in `xAxis`, then FT will assign the first date type column in the tabular data to the `xAxis`.
 
+FusionTime supports the following time units:
+
+- Year
+- Month
+- Day
+- Hour
+- Minute
+- Second
+- Millisecond
+
+You can customize the output time format for each time unit by specifying date-time tokens for respective time format.
+
+Refer to the example given below:
+
+{% embed_ftChart output-time-format-sample %}
+
+In the above example, we have tried to specify the output time format on the time axis. Refer to the code below:
+
+```json
+"xAxis": {
+    outputTimeFormat: {
+        //year: "",
+        month: "%b'%y (%q)",
+        day: "%d/%m (%a)",
+        //hour: "",
+        //minute: "",
+        //second: "",
+        //millisecond: ""
+    }
+}
+```
+
+In the above code:
+
+* Define the `xAxis` object.
+* Create the `outputTimeFormat` object.
+* Set the custom output time format for month and day as `%b'%y (%q)` and `%d/%m (%a)` respectively.
+
+> If yo do not set the data-time tokens for any time unit, the default formatting for the particular time unit will apply.
+
+The date-time tokens for respective time formats is given below:
+
+Time Unit|Tokens|Example|
+-|-|-
+Year |`%Y`|2018|
+Month |`%b`|Jan|
+Day|`%d`|04|
+Hour|`%-I` `%p`|11 PM|
+Minute |`%-M` `m`|26 m|
+Second|`%-S s`|30 s|
+Millisecond|`%-L ms`|75 ms|
+
 ## Style Definition
 
 Styling can be applied to three elements of the X-axis:

@@ -16,9 +16,9 @@ FusionTime supports the following time units:
 - Second
 - Millisecond
 
-You can specify the output time format for each time unit. Whenever a data bin occurs with any of the time unit, the output format specified against it will be displayed.
+You can customize the output time format for each time unit by specifying date-time tokens for respective time format.
 
-Refer the example given below:
+Refer to the example given below:
 
 {% embed_ftChart output-time-format-sample %}
 
@@ -38,8 +38,24 @@ In the above example, we have tried to specify the output time format on the tim
 }
 ```
 
-Here, we have specified date-time tokens for 'month' and 'day' only. So, for situations when the data bin with time unit of 'month' or 'day' occurs (while zooming in and out of chart), the time will be displayed according to the date-time tokens specified in the above code.
+In the above code:
 
-For situations where the data bins on other time units, the default formatting for the particular time unit will apply.
+* Define the `xAxis` object.
+* Create the `outputTimeFormat` object.
+* Set the custom output time format for month and day as `%b'%y (%q)` and `%d/%m (%a)` respectively.
+
+> If yo do not set the data-time tokens for any time unit, the default formatting for the particular time unit will apply.
+
+The date-time tokens for respective time formats is given below:
+
+Time Unit|Tokens|Example|
+-|-|-
+Year |`%Y`|2018|
+Month |`%b`|Jan|
+Day|`%d`|04|
+Hour|`%-I` `%p`|11 PM|
+Minute |`%-M` `m`|26 m|
+Second|`%-S s`|30 s|
+Millisecond|`%-L ms`|75 ms|
 
 To specify the date-time format in the tooltip, you will have to specify the date-time format for a specific time unit in the `outputTimeFormat` object in `tooltip`.
