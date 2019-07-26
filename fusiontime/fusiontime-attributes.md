@@ -73,17 +73,15 @@ new FusionCharts({
     "dataSource": {
         xAxis {
             "plot": ' ', //Column Name
-            "xAxis": [{
-                "style": {
-                    "tick-mark": {}, //SVGStyle | String
-                    "tick-mark-major": {}, //SVGStyle | String
-                    "tick-mark-minor": {}, //SVGStyle | String
-                    "label": {}, //SVGStyle | String
-                    "label-major": {}, //SVGStyle | String
-                    "label-minor": {}, //SVGStyle | String
-                    "label-context": {} //SVGStyle | String
-                }
-            }]
+			"style": {
+				"tick-mark": {}, //SVGStyle | String
+				"tick-mark-major": {}, //SVGStyle | String
+				"tick-mark-minor": {}, //SVGStyle | String
+				"label": {}, //SVGStyle | String
+				"label-major": {}, //SVGStyle | String
+				"label-minor": {}, //SVGStyle | String
+				"label-context": {} //SVGStyle | String
+			}
         }
     },
 });
@@ -169,32 +167,32 @@ new FusionCharts({
 	<tr>
 		<td>`month`</td>
 		<td>Array</td>
-		<td>An array to specify the month's multipliers. Valid multipliers are: 1, 2, 3, 4, 6.</td>
+		<td>An array to specify the month's multipliers. Valid multipliers are: [1, 2, 3, 4, 6].</td>
 	</tr>
 	<tr>
 		<td>`day`</td>
 		<td>Array</td>
-		<td>An array to specify the days's multipliers. Valid multipliers are: 1, 2, 3, 5, 6, 10, 15.</td>
+		<td>An array to specify the days's multipliers. Valid multipliers are: [1, 2, 3, 5, 6, 10, 15].</td>
 	</tr>
 	<tr>
 		<td>`hour`</td>
 		<td>Array</td>
-		<td>An array to specify the hour's multipliers. Valid multipliers are: 1, 2, 3, 4, 6, 8, 12.</td>
+		<td>An array to specify the hour's multipliers. Valid multipliers are: [1, 2, 3, 4, 6, 8, 12].</td>
 	</tr>
 	<tr>
 		<td>`minute`</td>
 		<td>Array</td>
-		<td>An array to specify the minute's multipliers. Valid multipliers are: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30.</td>
+		<td>An array to specify the minute's multipliers. Valid multipliers are: [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30].</td>
 	</tr>
 	<tr>
 		<td>`second`</td>
 		<td>Array</td>
-		<td>An array to specify the second's multipliers. Valid multipliers are: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30.</td>
+		<td>An array to specify the second's multipliers. Valid multipliers are: [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30].</td>
 	</tr>
 	<tr>
 		<td>`millisecond`</td>
 		<td>Array</td>
-		<td>An array to specify the millisecond's multipliers. Valid multipliers are: 10, 20, 50, 100, 200, 250, 500.</td>
+		<td>An array to specify the millisecond's multipliers. Valid multipliers are: [10, 20, 50, 100, 200, 250, 500].</td>
 	</tr>
 </table>
 
@@ -382,19 +380,19 @@ new FusionCharts({
     dataSource: {
         xAxis {
             timemarker: [{
-								"style": {
-										"marker": { }, // Affects style of marker box, line and notch
-										"marker:hover": { }, // Affects hover style of marker box, line and
-										// notch
-										"marker-box": { },
-										"marker-box:hover": { },
-										"marker-line": { },
-										"marker-line:hover": { },
-										"marker-notch": { },
-										"marker-notch:hover": { },
-										"text": { },
-										"text:hover": { }
-								}
+                "style": {
+                    "marker": { }, // Affects style of marker box, line and notch
+                    "marker:hover": { }, // Affects hover style of marker box, line and
+                    // notch
+                    "marker-box": { },
+                    "marker-box:hover": { },
+                    "marker-line": { },
+                    "marker-line:hover": { },
+                    "marker-notch": { },
+                    "marker-notch:hover": { },
+                    "text": { },
+                    "text:hover": { }
+                }
             }]
         }
     },
@@ -464,14 +462,14 @@ To configure the time navigator of the chart, you can create the `navigator` obj
 
 ```javascript
 new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    navigator: {
-      enabled: Boolean,
-      scrollbar: {},
-      window: {}
+    type: "timeseries",
+    dataSource: {
+        navigator: {
+            enabled: Boolean,
+            scrollbar: { },
+            window: { }
+        }
     }
-  }
 });
 ```
 
@@ -576,7 +574,7 @@ new FusionCharts({
 
 ## Y Axes
 
-To configure the y-axis of the chart you can create the `yAxis` object under `xaxis` object.
+To configure the y-axis of the chart you can create the `yAxis` object under `dataSource` object.
 
 ```javascript
 new FusionCharts({
@@ -929,7 +927,7 @@ new FusionCharts({
 	<tr>
 		<td>`label`</td>
 		<td>String</td>
-		<td>The label which gets displayed when you hover the reference zones.</td>
+		<td>The label which gets displayed when you hover the reference zone.</td>
 	</tr>
 	<tr>
 		<td>`valueMax`</td>
@@ -986,7 +984,7 @@ new FusionCharts({
     type: "timeseries",
     dataSource: {
         tooltip: {
-            enabled: "false", // Disables the Tooltip
+            enabled: "0", // Disables the Tooltip
             outputTimeFormat: { } //date/time format
         }
     }
@@ -1002,7 +1000,7 @@ new FusionCharts({
 	<tr>
 		<td>`enabled`</td>
 		<td>String</td>
-		<td>Setting this attribute to `true` enables the visibility of the tooltip for the chart.</td>
+		<td>Setting this attribute to `1` enables the visibility of the tooltip for the chart.</td>
 	</tr>
 	<tr>
 		<td>`outputTimeFormat`</td>
@@ -1181,6 +1179,179 @@ new FusionCharts({
 		<td>`tooltext`</td>
 		<td>String</td>
 		<td>The text specified in this attribute is displayed in the tooltip when you hover over the data marker.</td>
+	</tr>
+</table>
+
+## Standard Range Selector
+
+You can add style to the Standard Range Selector using `style` object under `standardRangeSelector` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "standardRangeSelector": {
+                "style": {
+                    "button-text": {}, //Object | String
+                    "button-background": {}, //Object | String
+                    "button-text:hover": {}, //Object | String
+                    "button-background:hover": {}, //Object | String
+                    "button-text:active": {}, //Object | String
+                    "button-background:active": {}, //Object | String
+                    "separator": {} //Object | String
+                }
+            }
+        }
+    }
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`button-text`</td>
+		<td>String</td>
+		<td>Styles the button text of the standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`button-background`</td>
+		<td>String</td>
+		<td>Styles the background of the button in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`button-text:hover`</td>
+		<td>String</td>
+		<td>Styles the button text of the standard range selector when hovered.</td>
+	</tr>
+	<tr>
+		<td>`button-text:active`</td>
+		<td>String</td>
+		<td>Styles the button text of the standard range selector when active.</td>
+	</tr>
+	<tr>
+		<td>`button-background:active`</td>
+		<td>Character</td>
+		<td>Styles the background of the button when active.</td>
+	</tr>
+	<tr>
+		<td>`separator`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
+	</tr>
+</table>
+
+## Custom Range Selector
+
+You can add style to the Custom Range Selector using `style` object under `customRangeSelector` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "customRangeSelector": {
+                "style": {
+                    "title-text": {}, //Object | String
+                    "title-icon": {}, //Object | String
+                    "title-text:hover": {}, //Object | String
+                    "title-icon:hover": {}, //Object | String
+                    "title-text:active": {}, //Object | String
+                    "title-icon:active": {}, //Object | String
+                    "container": {}, //Object | String
+                    "label": {}, //Object | String
+                    "button-apply": {}, //Object | String
+                    "button-cancel": {}, //Object | String
+                    "button-apply:hover": {}, //Object | String
+                    "button-cancel:hover": {}, //Object | String
+                    "select": {}, //Object | String
+                    "input": {} //Object | String 
+                }
+            }
+        }
+    }
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`title-text`</td>
+		<td>String</td>
+		<td>Styles the button text of the standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`title-icon`</td>
+		<td>String</td>
+		<td>Styles the background of the button in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`title-text:hover`</td>
+		<td>String</td>
+		<td>Styles the button text of the standard range selector when hovered.</td>
+	</tr>
+	<tr>
+		<td>`title-icon:hover`</td>
+		<td>String</td>
+		<td>Styles the button text of the standard range selector when active.</td>
+	</tr>
+	<tr>
+		<td>`title-text:active`</td>
+		<td>Character</td>
+		<td>Styles the background of the button when active.</td>
+	</tr>
+	<tr>
+		<td>`title-icon:active`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`container`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`label`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`button-apply`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`button-cancel`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`button-apply:hover`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`button-cancel:hover`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`select`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
+	</tr>
+	<tr>
+		<td>`input`</td>
+		<td>String</td>
+		<td>Styles the separator `|` of the dates in standard range selector.</td>
 	</tr>
 </table>
 
