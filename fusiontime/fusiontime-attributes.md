@@ -1355,6 +1355,76 @@ new FusionCharts({
 	</tr>
 </table>
 
+## Predictive Data
+
+You can add style to the predictive data in the chart using `style` object under `prediction` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "prediction": {
+                "date": "",
+                "style": {
+                    "plot": { }, //SVGStyle | String
+                    "line": { }, //SVGStyle | String
+                    "area": { }, //SVGStyle | String
+                    "column": { }, //SVGStyle | String
+                    "anchor": { }, //SVGStyle | String
+                    "bear": { }, //SVGStyle | String
+                    "bull": { } //SVGStyle | String
+                }
+            }
+        }
+    }
+})
+```
+
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`plot`</td>
+		<td>String</td>
+		<td>Styles all the plots with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`line`</td>
+		<td>String</td>
+		<td>Styles the line plot with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`area`</td>
+		<td>String</td>
+		<td>Styles the area plot with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`column`</td>
+		<td>String</td>
+		<td>Styles the column plot with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`anchor`</td>
+		<td>String</td>
+		<td>Styles the anchors with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`bear`</td>
+		<td>String</td>
+		<td>Styles the bear with predictive data in the canvas.</td>
+	</tr>
+	<tr>
+		<td>`bull`</td>
+		<td>String</td>
+		<td>Styles the bull with predictive data in the canvas.</td>
+	</tr>
+</table>
+
 ## Chart Configuration and Root JSON Attributes
 
 <table>
