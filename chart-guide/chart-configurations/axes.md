@@ -1,129 +1,18 @@
 ---
-title: Titles and Axis Names | FusionCharts
-description: This section talks about titles and axis names on the charts. One can insert caption, sub-caption, x-axis name and y-axis name in a chart
-heading: Titles and Axis Names
+title: Axes | FusionCharts
+description: This section talks about the x-axis and y-axis on the chart. 
+heading: Configure axes
 ---
 
-The caption (also called the chart title) is the heading of your chart, whereas a sub-caption is the text that appears just below the caption. In the sections below, you can see how to add a caption, subcaption, x-axis name, and y-axis name to your charts, as well as configure their font properties.
+X-axis refers to the categorical axis in FusionCharts. For the vertical charts it currently appears at bottom of the canvas, whereas, for the horizontal charts, it currently appears on the left of the canvas.
 
-![Titles and Axis Names](/images/chart-configuration-titles-and-axis-names-image-1.png)
-
-Cartesian charts have axes that run along the left and the bottom borders of the canvas. The x-axis runs along the bottom border of the canvas, running from left to right. The y-axis runs along the left border of the canvas, going from the bottom and to the top.
-
-## Set the Caption and Subcaption
-
-* Specify the caption of the chart using the `caption` attribute, which accepts text values.
-
-* Specify the sub-caption of the chart using the `subCaption` attribute, which accepts text values.
-
-Refer to the code given below:
-
-```json
-{
-    "chart": {
-        "caption": "Monthly Revenue",
-        "subCaption": "Last year"
-    }
-}
-```
-
-The chart will look like as shown below:
-
-{% embed_chart chart-configurations-titles-and-axis-names-example-1.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/ubw094z3/) to edit the above chart.
-
-## Customize Font Properties 
-
-Use the following attributes to customize the font color, size, formatting, etc., of the caption.
-
-* Set the caption font family using the `captionFont` attribute.
-
-* Set the caption font color in hex code using the `captionFontColor` attribute.
-
-* Set the caption font size (between `0` and `72`) using the `captionFontSize` attribute.
-
-* Set caption font to bold by setting the value of the `captionFontBold` attribute to `1`.
-
-Refer to the code given below:
-
-```json
-{
-    "chart": {
-        "captionFont": "Arial",
-        "captionFontSize": "18",
-        "captionFontColor": "#993300",
-        "captionFontBold": "1"
-    }
-}
-```
-
-To customize the font color, size, formatting, etc., of the subcaption, use the following attributes:
-
-* Set the subcaption font family using the `subCaptionFont` attribute.
-
-* Set the subcaption font color in hex code using the `subCaptionFontColor` attribute.
-
-* Set the subcaption font size (between `0` and `72`) using the `subCaptionFontSize` attribute.
-
-* Set subcaption font to bold by setting the value of the `subCaptionFontBold` attribute to `1`.
-
-Refer to the code given below:
-
-```json
-{
-    "chart": {
-        "subcaptionFont": "Arial",
-        "subcaptionFontSize": "14",
-        "subcaptionFontColor": "#993300",
-        "subcaptionFontBold": "0"
-    }
-}
-```
-
-The chart with customized caption and subcaption looks like as shown below:
-
-{% embed_chart chart-configurations-titles-and-axis-names-example-2.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/o4xhvc0g/) to edit the above chart.
-
-## Configure Caption Alignment
-
-Use the following attributes to configure caption alignment:
-
-* Specify the horizontal alignment of the caption using the `captionAlignment` attribute, which accepts the values of `left`, `center` (default), and `right`.
-
-* Display the caption at the top of the chart by setting the value of the `captionOnTop` attribute to `1`.
-
-* Align the caption with the canvas area instead of the chart area, by setting the value of the `alignCaptionWithCanvas` attribute to `1`.
-
-* Configure the padding (in pixels) from either edge when the caption is not center aligned, using the `captionHorizontalPadding` attribute.
-
-Refer to the code given below:
-
-```json
-{
-    "chart": {
-        "alignCaptionWithCanvas": "1",
-        "captionHorizontalPadding": "2",
-        "captionOnTop": "0",
-        "captionAlignment": "right"
-    }
-}
-```
-
-The chart will look like as shown below:
-
-{% embed_chart chart-configurations-titles-and-axis-names-example-3.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/bbsmmt84/) to edit the above chart.
+Y-Axis refers to the value axis. For the vertical charts it currently appears at left of the canvas, whereas, for the horizontal charts (bar charts), it currently appears on the bottom of the canvas.
 
 ## Setting Axes Names
 
 Use the following attributes to configure names of axes:
 
 * Specify the title of the X-axis of the chart using the `xAxisName` attribute.
-
 * Specify the title of the Y-axis of the chart using the `yAxisName` attribute.
 
 Refer to the code given below:
@@ -143,7 +32,87 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/9y23m8vq/) to edit the above chart.
 
-## Configure Font Cosmetic Properties 
+## X-axis Position
+
+With 3.14.0, the position of this axis will be configurable - TOP/BOTTOM for vertical charts, LEFT/RIGHT for horizontal charts.
+
+To change the position of the x-axis to the **top**, set the value of `xAxisPosition` attribute to `top`.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "xAxisPosition": "top"
+    }
+}
+```
+
+> The default value of `xAxisPosition` attribute is `bottom`.
+
+The chart looks like as shown below:
+
+{% embed_chart chart-configurations-axes-sample-x-axis-position-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5Lmk4bo3/) to edit the above chart.
+
+> Changing the position of the x-axis won't change the position of the legend of the chart.
+
+### X-axis position for bar charts
+
+For horizontal bar charts, the position of the x-axis can be set to `right` or `left`.
+
+> By default, the x-axis of bar charts will always be at the left of the chart.
+
+To change the position of the x-axis to the **right**, set the value of `xAxisPosition` attribute to `right`.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "xAxisPosition": "right"
+    }
+}
+```
+
+The chart looks like as shown below:
+
+{% embed_chart chart-configurations-axes-sample-x-axis-position-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/v9oenc7g/) to edit the above chart.
+
+## Y-axis position
+
+In FusionCharts Suite XT, previously, the position of the y-axis is always set to left. Starting 3.14.0, you can customize the position of the Y-axis by setting the value of `yAxisPosition` attribute to `right`. This will render a chart with y-axis on right.
+
+> The behavior of primary and secondary Y-Axis is not affected by this.
+
+Refer to the code given below:
+
+```json
+{
+    "chart": {
+        "yAxisPosition": "right"
+    }
+}
+```
+
+In the above code, the value of the `yAxisPosition` attribute has been set to **right**.
+
+By applying the above attribute, the chart looks like as shown below:
+
+{% embed_chart chart-configurations-axes-sample-y-axis-position-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bh2fxgnq/) to edit the above chart.
+
+For bar charts, the y-axis will appear on top as shown in the chart below:
+
+{% embed_chart chart-configurations-axes-sample-y-axis-position-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ud5baexj/) to edit the above chart.
+
+## Configure Font Cosmetic Properties
 
 Configure cosmetic properties like font, color, and size of the X-axis name using the attributes given below:
 
@@ -203,7 +172,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/7o7qpcL2/) to edit the above chart.
 
-## Configure Cosmetic Properties of Borders of the Names
+## Configure cosmetic properties of borders of the names
 
 Use the following attributes to configure cosmetic properties of the borders around names of x-axis:
 
@@ -347,6 +316,110 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/4q55b6z5/) to edit the above chart.
 
+## Configure background properties for y-axis values
+
+Use the following attributes to set a semi-transparent background in a chosen color of y-axis values:
+
+* Set the background color of the y-axis values using the `yAxisValueBgColor` attribute.
+* You can also set the degrees of transparency of the background color using `yAxisValueBgAlpha` attribute.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "yAxisValueBgColor": "#ff0000",
+        "yAxisValueBgAlpha": "40"
+    }
+}
+```
+
+The chart will look like as shown below:
+
+{% embed_chart configure-background-properties-for-y-axis-values-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/f78h4k0s/) to edit the above chart.
+
+## Configure border properties for y-axis values
+
+Use the following attributes to customize the border of the y-axis values:
+
+* Set the border color of the y-axis values using `yAxisValueBorderColor` attribute.
+
+* Set the transparency of the border of the y-axis values using `yAxisValueBorderAlpha` attribute.
+
+* Set the padding (in pixels) of the y-axis values border using `yAxisValueBorderPadding` attribute.
+
+* Set the border radius (in pixels) of the y-axis values using `yAxisValueBorderRadius` attribute.
+
+* Set the border thickness (in pixels) of the y-axis values using `yAxisValueBorderThickness` attribute.
+
+* Make the y-axis values' border dashed using the `yAxisValueBorderDashed` attribute.
+
+* Set the length of each dash (in pixels) for the dashed borders around y-axis values using `yAxisValueBorderDashLen` attribute.
+
+* Set the gap between two consecutive dashes (in pixels) for the dashed borders around the y-axis values using `yAxisValueBorderDashGap` attribute.
+
+Refer to the code given below:
+
+```json
+{
+    "chart": {
+        "yAxisValueBorderColor": "#ff0000",
+        "yAxisValueBorderAlpha": "60",
+        "yAxisValueBorderPadding": "5",
+        "yAxisValueBorderRadius": "2",
+        "yAxisValueBorderThickness": "3",
+        "yAxisValueBorderDashed": "1",
+        "yAxisValueBorderDashLen": "2",
+        "yAxisValueBorderDashGap": "2",
+    }
+}
+```
+
+The chart will look like as shown in the image below:
+
+{% embed_chart configure-border-properties-for-y-axis-values-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/tbq5dxj7/) to edit the above chart.
+
+## Configure font properties for y-axis values
+
+Use the following attributes to configure the font properties of y-axis values:
+
+* Set the font of the y-axis values using `yAxisValueFont` attribute.
+
+* Set the font size (between `0` to `72`) of the y-axis values using `yAxisValueFontSize` attribute.
+
+* Set the font color (in hex codes) of the y-axis using `yAxisValueFontColor` attribute.
+
+* Set the font of the y-axis values to bold using `yAxisValueFontBold` attribute.
+
+* Set the font for the y-axis values to italics using `yAxisValueFontItalic` attribute.
+
+* Set the degree of transparency of the y-axis values using `yAxisValueAlpha` attribute.
+
+Refer to the code given below:
+
+```json
+{
+    "chart": {
+        "yAxisValueFont": "verdana,sans",
+        "yAxisValueFontSize": "10px",
+        "yAxisValueFontColor": "#ff0000",
+        "yAxisValueFontBold": "1",
+        "yAxisValueFontItalic": "1",
+        "yAxisValueAlpha": "50",
+    }
+}
+```
+
+The chart will look like as shown below:
+
+{% embed_chart configure-font-properties-for-y-axis-values-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/u8n3k46c/) to edit the above chart.
+
 ## Configure Font Properties for Y-axis Names
 
 Use the following attributes to configure font properties of a multi-series combination 2D chart with the primary and secondary y-axis names italicized:
@@ -394,7 +467,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/pfsytcca/) to edit the above chart.
 
-## Configure Background Properties of Y-axis Names
+## Configure background properties of Y-axis names
 
 Use the following attributes to set a semi-transparent background in a chosen color for the primary and secondary y-axis names of a multi-series, combination 2D chart:
 

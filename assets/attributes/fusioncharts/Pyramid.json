@@ -871,6 +871,13 @@
         "range": "0 - 100",
         "type": "Number",
         "name": "plotFillAlpha"
+      },
+      {
+        "description": "Set the minimum height in pixel of a column above which the data values will be visible.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.0",
+        "name": "minPlotHeightForValue"
       }
     ],
     "description": "The following attributes are used to customize the appearance of the pyramid. "

@@ -1,7 +1,7 @@
 ---
-title: Reference Lines | FusionCharts
+title: Reference Line | FusionCharts
 description: This article defines the reference line.
-heading: Reference Lines
+heading: Reference Line
 ---
 
 A Reference Line is essentially an arbitrary fixed line, which runs parallel to the time axis and is mapped to a specific value of YAxis. It can help you quickly compare any data point against a fixed value line.
