@@ -52,6 +52,8 @@ In th above code:
 
 > If multiple data type columns are available in the tabular data and we do not specify the data type column in `xAxis`, then FT will assign the first date type column in the tabular data to the `xAxis`.
 
+## Output time format
+
 FusionTime supports the following time units:
 
 - Year
