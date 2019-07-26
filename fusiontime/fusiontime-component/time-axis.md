@@ -52,6 +52,68 @@ In th above code:
 
 > If multiple data type columns are available in the tabular data and we do not specify the data type column in `xAxis`, then FT will assign the first date type column in the tabular data to the `xAxis`.
 
+## Data binning
+
+Binning stages can be defined for the following time units:
+
+* Year
+* Month
+* Day
+* Hour
+* Minute
+* Second
+* Millisecond
+
+Default binning happens for each time unit, and if you want to modify it, you can specify the valid multipliers for each time unit.
+
+Valid multipliers for each time unit are.
+
+```javascript
+new FusionCharts({
+    type: 'timeseries',
+    dataSource: {
+        xAxis: {
+            binning: {
+                "year": [Array of multipliers] // Ex - [1,2,3,5,10]
+                "month": [Array of multipliers] // Ex - [1,2,3,4,6]
+                "day": [Array of multipliers] // Ex - [1,2,3,5,6,10,15]
+                "hour": [Array of multipliers] // Ex - [1,2,3,4,6,8,12]
+                "minute": [Array of multipliers] // Ex - [1,2,3,4,5,6,10,12,15,20,30]
+                "second": [Array of multipliers] // Ex - [1,2,3,4,5,6,10,12,15,20,30]
+                "millisecond": [Array of multipliers] // Ex - [10,20,50,100,200,250,500]
+            }
+        },
+    }
+});
+```
+
+Refer the example below where we have just modified the binning stages for `hour` time unit.
+[Example from above.]
+
+In this case, default binning for other time units will apply.
+
+> Note:  If you do not want a particular time unit to be available in a data binned stage, you can specify an empty array against that time unit. Ex: `year` =[].
+
+### Max bin
+
+To specify the max bin for each chart, you need to provide empty arrays to all the time units which are above your interested time unit (by a natural hierarchy of time).
+
+Refer the code below:
+[Code snippet]
+
+The live chart is:
+[Live chart]
+
+### Min bin
+
+To specify the min bin for each chart, you need to provide empty arrays to all the time units which are above your interested time unit (by a natural hierarchy of time).
+
+Refer the code below:
+[Code snippet]
+
+The live chart is:
+[Live chart]
+
 ## Output time format
 
 FusionTime supports the following time units:
