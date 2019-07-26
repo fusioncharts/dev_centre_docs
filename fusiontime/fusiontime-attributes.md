@@ -71,20 +71,20 @@ You can add style to the x-Axis components using `style` object under `xaxis` ob
 new FusionCharts({
     "type": 'timeseries',
     "dataSource": {
-		xAxis {
-				"plot": ' ', //Column Name
-				"xAxis": [{
-						"style": {
-								"tick-mark": { }, //SVGStyle | String
-								"tick-mark-major": { }, //SVGStyle | String
-								"tick-mark-minor": { }, //SVGStyle | String
-								"label": { }, //SVGStyle | String
-								"label-major": { }, //SVGStyle | String
-								"label-minor": { }, //SVGStyle | String
-								"label-context": { } //SVGStyle | String
-						}
-        }]
-		}
+        xAxis {
+            "plot": ' ', //Column Name
+            "xAxis": [{
+                "style": {
+                    "tick-mark": {}, //SVGStyle | String
+                    "tick-mark-major": {}, //SVGStyle | String
+                    "tick-mark-minor": {}, //SVGStyle | String
+                    "label": {}, //SVGStyle | String
+                    "label-major": {}, //SVGStyle | String
+                    "label-minor": {}, //SVGStyle | String
+                    "label-context": {} //SVGStyle | String
+                }
+            }]
+        }
     },
 });
 ```
@@ -983,12 +983,13 @@ To configure the tooltip of the chart, you can create the `tooltip` object under
 
 ```javascript
 new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    tooltip: {
-      enabled: "false" // Disables the Tooltip
+    type: "timeseries",
+    dataSource: {
+        tooltip: {
+            enabled: "false", // Disables the Tooltip
+            outputTimeFormat: { } //date/time format
+        }
     }
-  }
 });
 ```
 
@@ -1003,6 +1004,10 @@ new FusionCharts({
 		<td>String</td>
 		<td>Setting this attribute to `true` enables the visibility of the tooltip for the chart.</td>
 	</tr>
+	<tr>
+		<td>`outputTimeFormat`</td>
+		<td>Object</td>
+		<td>An object to specify the date-time format for a specific time unit.</td>
 </table>
 
 ### Style Tooltip Components
@@ -1051,6 +1056,72 @@ new FusionCharts({
 		<td>`body`</td>
 		<td>HTMLStyle</td>
 		<td>Customizes all the text other than the `header` text.</td>
+	</tr>
+</table>
+
+### Output Time Format
+
+To specify the date-time format for a specific time unit, create a `outputTimeFormat` object under `xaxis` object.
+
+```javascript
+new FusionCharts({
+    type: 'timeseries',
+    dataSource: {
+		xAxis:{
+			outputTimeFormat:{
+				year: " ", //%Y - 2018
+				month: " ", //%B, %Y - September, 2018
+				day: " ", //%B %-d, %Y - November 11, 2018
+				hour: " ", //%b %-d, %Y, %-I %p - Nov 5, 2018, 4 PM
+				minute: " ", //%b %-d, %Y, %-I:%-M %p - Nov 5, 2018, 4:24 PM
+				second: " ", //%b %-d, %Y, %-I:%-M:%-S %p - Nov 5, 2018, 4:25:30 PM
+				millisecond: " " //%b %-d, %Y, %-I:%-M:%-S:%-L %p- Nov 29, 2017, 4:29:12.075 PM
+			}
+		}
+	}
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`year`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is year.</td>
+	</tr>
+	<tr>
+		<td>`month`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is month.</td>
+	</tr>
+	<tr>
+		<td>`day`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is day.</td>
+	</tr>
+	<tr>
+		<td>`hour`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is hour.</td>
+	</tr>
+	<tr>
+		<td>`minute`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is minute.</td>
+	</tr>
+	<tr>
+		<td>`second`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is second.</td>
+	</tr>
+	<tr>
+		<td>`millisecond`</td>
+		<td>String</td>
+		<td>Sets the format of the data bin where the time unit is millisecond.</td>
 	</tr>
 </table>
 
