@@ -597,7 +597,8 @@ new FusionCharts({
         },
         type: " ", //Plot type to render the chart
         title: " ", //Title of the axis
-        aggregation: " " //Aggregate Function
+		aggregation: " " //Aggregate Function
+		connectNullData: " " //Set the value to `true` to connect null data
       }
     ]
   }
@@ -650,7 +651,52 @@ new FusionCharts({
 		<td>String</td>
 		<td>This attribute sets the type of the the data plot to render the chart. It is used when you want to specify the chart type under `plot` object.</td>
 	</tr>
+	<tr>
+		<td>`connectNullData`</td>
+		<td>Boolean</td>
+		<td>Connects the null data for line and area plots.</td>
+	</tr>
 </table>
+
+### Style Connecting Lines
+
+You can add style for connecting lines of null data using two methods:
+
+- Under `yAxis` Object
+- Under global `plotConfig` object
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "yAxis": [{
+            "plot": [{
+                "type": "area",
+                "style": {
+                    "plot.null": Style,
+                    "line.null": Style,
+                    "area.null": Style
+                }
+            }]
+        }],
+        "plotConfig": {
+            "line": {
+                "style": {
+                    "plot.null": Style,
+                    "line.null": Style
+                }
+            },
+            "area": {
+                "style": {
+                    "plot.null": Style,
+                    "line.null": Style,
+                    "area.null": Style
+                }
+            }
+        }
+    }
+});
+```
 
 ## Plot Configuration
 
