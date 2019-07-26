@@ -1286,72 +1286,72 @@ new FusionCharts({
 	<tr>
 		<td>`title-text`</td>
 		<td>String</td>
-		<td>Styles the button text of the standard range selector.</td>
+		<td>Styles the title text of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`title-icon`</td>
 		<td>String</td>
-		<td>Styles the background of the button in standard range selector.</td>
+		<td>Styles the title of the icon in custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`title-text:hover`</td>
 		<td>String</td>
-		<td>Styles the button text of the standard range selector when hovered.</td>
+		<td>Styles the title text of the custom range selector when hovered.</td>
 	</tr>
 	<tr>
 		<td>`title-icon:hover`</td>
 		<td>String</td>
-		<td>Styles the button text of the standard range selector when active.</td>
+		<td>Styles the title of the icon in custom range selector when active.</td>
 	</tr>
 	<tr>
 		<td>`title-text:active`</td>
 		<td>Character</td>
-		<td>Styles the background of the button when active.</td>
+		<td>Styles the title text of the custom range selector when active.</td>
 	</tr>
 	<tr>
 		<td>`title-icon:active`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the title of the icon in custom range selector when active.</td>
 	</tr>
 	<tr>
 		<td>`container`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the container of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`label`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the label of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`button-apply`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the apply buttom of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`button-cancel`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the cancelled button of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`button-apply:hover`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the apply button of the custom range selector when hovered.</td>
 	</tr>
 	<tr>
 		<td>`button-cancel:hover`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the cancelled  button of the custom range selector when hovered.</td>
 	</tr>
 	<tr>
 		<td>`select`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the select icon of the custom range selector.</td>
 	</tr>
 	<tr>
 		<td>`input`</td>
 		<td>String</td>
-		<td>Styles the separator `|` of the dates in standard range selector.</td>
+		<td>Styles the input box of the custom range selector.</td>
 	</tr>
 </table>
 
