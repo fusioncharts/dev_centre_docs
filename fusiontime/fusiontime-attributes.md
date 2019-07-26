@@ -1357,6 +1357,36 @@ new FusionCharts({
 
 ## Predictive Data
 
+To apply the date from where you want to specify the predictive data for the chart, you can create a `prediction` object under `extensions` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "prediction": {
+                "date": " " //The Predictive Data starts from this date
+            }
+        }
+    }
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`date`</td>
+		<td>Date/Time format</td>
+		<td>Sets the start date of the predictive data in the chart.</td>
+	</tr>
+</table>
+
+### Style Predictive Data
+
 You can add style to the predictive data in the chart using `style` object under `prediction` object.
 
 ```javascript
@@ -1365,7 +1395,6 @@ new FusionCharts({
     dataSource: {
         "extensions": {
             "prediction": {
-                "date": "",
                 "style": {
                     "plot": { }, //SVGStyle | String
                     "line": { }, //SVGStyle | String
