@@ -999,7 +999,7 @@ new FusionCharts({
 	</tr>
 	<tr>
 		<td>`enabled`</td>
-		<td>String</td>
+		<td>Boolean</td>
 		<td>Setting this attribute to `1` enables the visibility of the tooltip for the chart.</td>
 	</tr>
 	<tr>
@@ -1184,6 +1184,36 @@ new FusionCharts({
 
 ## Standard Range Selector
 
+To configure the standard range selector of the chart, you can create the `standardRangeSelector` object under `extensions` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "standardRangeSelector": {
+				"enabled": "1" //Enable or diable the standard range selector
+            }
+        }
+    }
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enabled`</td>
+		<td>Boolean</td>
+		<td>Setting this attribute to `1` enables the visibility of the standard range selector in the chart.</td>
+	</tr>
+</table>
+
+### Style Standard Range Selector
+
 You can add style to the Standard Range Selector using `style` object under `standardRangeSelector` object.
 
 ```javascript
@@ -1246,6 +1276,36 @@ new FusionCharts({
 </table>
 
 ## Custom Range Selector
+
+To configure the custom range selector of the chart, you can create the `customRangeSelector` object under `extensions` object.
+
+```javascript
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "customRangeSelector": {
+				"enabled": "1" //Enable or diable the custom range selector
+            }
+        }
+    }
+})
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enabled`</td>
+		<td>Boolean</td>
+		<td>Setting this attribute to `1` enables the visibility of the custom range selector in the chart.</td>
+	</tr>
+</table>
+
+### Style Custom Range Selector
 
 You can add style to the Custom Range Selector using `style` object under `customRangeSelector` object.
 
