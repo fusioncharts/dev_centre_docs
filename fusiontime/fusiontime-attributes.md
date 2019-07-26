@@ -169,32 +169,32 @@ new FusionCharts({
 	<tr>
 		<td>`month`</td>
 		<td>Array</td>
-		<td>An array to specify the month's multipliers.</td>
+		<td>An array to specify the month's multipliers. Valid multipliers are: 1, 2, 3, 4, 6.</td>
 	</tr>
 	<tr>
 		<td>`day`</td>
 		<td>Array</td>
-		<td>An array to specify the days's multipliers.</td>
+		<td>An array to specify the days's multipliers. Valid multipliers are: 1, 2, 3, 5, 6, 10, 15.</td>
 	</tr>
 	<tr>
 		<td>`hour`</td>
 		<td>Array</td>
-		<td>An array to specify the hour's multipliers.</td>
+		<td>An array to specify the hour's multipliers. Valid multipliers are: 1, 2, 3, 4, 6, 8, 12.</td>
 	</tr>
 	<tr>
 		<td>`minute`</td>
 		<td>Array</td>
-		<td>An array to specify the minute's multipliers.</td>
+		<td>An array to specify the minute's multipliers. Valid multipliers are: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30.</td>
 	</tr>
 	<tr>
 		<td>`second`</td>
 		<td>Array</td>
-		<td>An array to specify the second's multipliers.</td>
+		<td>An array to specify the second's multipliers. Valid multipliers are: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30.</td>
 	</tr>
 	<tr>
 		<td>`millisecond`</td>
 		<td>Array</td>
-		<td>An array to specify the millisecond's multipliers.</td>
+		<td>An array to specify the millisecond's multipliers. Valid multipliers are: 10, 20, 50, 100, 200, 250, 500.</td>
 	</tr>
 </table>
 
@@ -230,37 +230,37 @@ new FusionCharts({
 	<tr>
 		<td>`year`</td>
 		<td>String</td>
-		<td>Sets the format to specify the year.</td>
+		<td>Sets the format of the data bin where the time unit is year.</td>
 	</tr>
 	<tr>
 		<td>`month`</td>
 		<td>String</td>
-		<td>Sets the format of the month.</td>
+		<td>Sets the format of the data bin where the time unit is month.</td>
 	</tr>
 	<tr>
 		<td>`day`</td>
 		<td>String</td>
-		<td>Sets the format of the day.</td>
+		<td>Sets the format of the data bin where the time unit is day.</td>
 	</tr>
 	<tr>
 		<td>`hour`</td>
 		<td>String</td>
-		<td>Sets the format of hours.</td>
+		<td>Sets the format of the data bin where the time unit is hour.</td>
 	</tr>
 	<tr>
 		<td>`minute`</td>
 		<td>String</td>
-		<td>Sets the format of minute.</td>
+		<td>Sets the format of the data bin where the time unit is minute.</td>
 	</tr>
 	<tr>
 		<td>`second`</td>
 		<td>String</td>
-		<td>Sets the foramt of seconds.</td>
+		<td>Sets the format of the data bin where the time unit is second.</td>
 	</tr>
 	<tr>
 		<td>`millisecond`</td>
 		<td>String</td>
-		<td>Sets the format of milliseconds.</td>
+		<td>Sets the format of the data bin where the time unit is millisecond.</td>
 	</tr>
 </table>
 
