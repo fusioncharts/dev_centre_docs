@@ -673,30 +673,53 @@ new FusionCharts({
             "plot": [{
                 "type": "area",
                 "style": {
-                    "plot.null": Style,
-                    "line.null": Style,
-                    "area.null": Style
+                    "plot.null": { } //SVGStyle | String,
+                    "line.null": { } //SVGStyle | String,
+                    "area.null": { } //SVGStyle | String
                 }
             }]
         }],
         "plotConfig": {
             "line": {
                 "style": {
-                    "plot.null": Style,
-                    "line.null": Style
+                    "plot.null": { } //SVGStyle | String,
+                    "line.null": { } //SVGStyle | String
                 }
             },
             "area": {
                 "style": {
-                    "plot.null": Style,
-                    "line.null": Style,
-                    "area.null": Style
+                    "plot.null": { } //SVGStyle | String,
+                    "line.null": { } //SVGStyle | String,
+                    "area.null": { } //SVGStyle | String
                 }
             }
         }
     }
 });
 ```
+
+<table>
+	<tr>
+		<th>Attributes</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`plot.null`</td>
+		<td>SVGStyle</td>
+		<td>Style specified within this object is applied across the chart.</td>
+	</tr>
+	<tr>
+		<td>`line.null`</td>
+		<td>SVGStyle</td>
+		<td>Connects the null data for line and area plots.</td>
+	</tr>
+	<tr>
+		<td>`area.null`</td>
+		<td>SVGStyle</td>
+		<td>Connects the null data for line and area plots.</td>
+	</tr>
+</table>
 
 ## Plot Configuration
 
