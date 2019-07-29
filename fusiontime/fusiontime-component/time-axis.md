@@ -124,7 +124,7 @@ new FusionCharts({
 });
 ```
 
-Refer the example below where we have just modified the binning stages for `hour` time unit.
+Refer the example below where we have just modified the binning stages for `month`, `day` & `hour` time unit.
 
 {% embed_ftChart binning-sample-for-hour %}
 
@@ -134,13 +134,14 @@ In this case, default binning for other time units will apply.
 
 ### Max bin
 
-To specify the max bin for each chart, you need to provide empty arrays to all the time units which are above your interested time unit (by a natural hierarchy of time).
+To specify the max bin for each chart, you need to provide empty arrays to all the time units which are below your interested time unit (by a natural hierarchy of time).
 
 Refer the code below:
 [Code snippet]
 
-The live chart is:
-[Live chart]
+The live chart looks like ash shown below:
+
+{% embed_ftChart binning-sample-max-bin %}
 
 ### Min bin
 
@@ -149,8 +150,9 @@ To specify the min bin for each chart, you need to provide empty arrays to all t
 Refer the code below:
 [Code snippet]
 
-The live chart is:
-[Live chart]
+The live chart looks like ash shown below:
+
+{% embed_ftChart binning-sample-min-bin %}
 
 ## Output time format
 
