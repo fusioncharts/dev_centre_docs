@@ -137,7 +137,25 @@ In this case, default binning for other time units will apply.
 To specify the max bin for each chart, you need to provide empty arrays to all the time units which are below your interested time unit (by a natural hierarchy of time).
 
 Refer the code below:
-[Code snippet]
+
+```javascript
+new FusionCharts({
+    "type": "timeseries",
+    "dataSource": {
+        "xAxis": {
+            "binning": {
+                "year": [1],
+                "month": [],
+                "day": [],
+                "hour": [],
+                "minute": [],
+                "second": [],
+                "millisecond": []
+            }
+        }
+    }
+});
+```
 
 The live chart looks like ash shown below:
 
@@ -148,7 +166,25 @@ The live chart looks like ash shown below:
 To specify the min bin for each chart, you need to provide empty arrays to all the time units which are above your interested time unit (by a natural hierarchy of time).
 
 Refer the code below:
-[Code snippet]
+
+```javascript
+new FusionCharts({
+    "type": "timeseries",
+    "dataSource": {
+        "xAxis": {
+            "binning": {
+                "year": [],
+                "month": [],
+                "day": [],
+                "hour": [1],
+                "minute": [],
+                "second": [],
+                "millisecond": []
+            }
+        }
+    }
+});
+```
 
 The live chart looks like ash shown below:
 
