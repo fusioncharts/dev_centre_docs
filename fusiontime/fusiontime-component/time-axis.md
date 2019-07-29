@@ -125,7 +125,8 @@ new FusionCharts({
 ```
 
 Refer the example below where we have just modified the binning stages for `hour` time unit.
-[Example from above.]
+
+{% embed_ftChart binning-sample-for-hour %}
 
 In this case, default binning for other time units will apply.
 
