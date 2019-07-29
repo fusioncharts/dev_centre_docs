@@ -15,7 +15,7 @@ Follow the steps below for the installation process:
 
 - Download the FusionExport Service 64 bit for Windows.
 
-<img src="{% site.BASE_URL %}/images/download-fusionexport-server-for-windows-service.png" alt="Download FusionExport Server" width="500" height="300">
+<img src="{% site.BASE_URL %}/images/download-fusionexport-server-for-windows-service.png" alt="Download FusionExport Server" width="600" height="360">
 
 - The setup file will be downloaded to the local. Now, run the exe file. The setup wizard will now appear on the screen. Click Next.
 
