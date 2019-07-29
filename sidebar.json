@@ -2111,6 +2111,10 @@
           {
             "title": "Install FusionExport Server SDKs",
             "path": "/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks"
+          },
+          {
+            "title": "Install FusionExport for Windows Service",
+            "path": "/exporting-charts/using-fusionexport/installation/install-fusionexport-for-windows-service"
           }
         ]
       },
