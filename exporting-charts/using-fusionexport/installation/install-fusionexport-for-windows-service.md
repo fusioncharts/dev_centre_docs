@@ -9,7 +9,7 @@ In this article, we elaborate on how to install FusionExport binary on your Wind
 There are two different packages for Windows.
 
 1. **Normal FusionExport Service** - This is like any other FusionExport distribution for different OS, where you just need to execute `fusionexport.sh` or `fusionexport.bat`.
-2. **FusionExport Windows Service** - This is what we will be doing in this installation guide
+2. **FusionExport Windows Service** - This is what we will be doing in this installation guide.
 
 Follow the steps below for the installation process:
 
@@ -21,7 +21,7 @@ Follow the steps below for the installation process:
 
 <img src="{% site.BASE_URL %}/images/click-next-windows-service.png" alt="Click Next for Windows Service" width="700" height="420">
 
-- Now, select the setup type to **Custom** and click Next. 
+- Now, select the setup type to **Custom** and click Next.
 
 > In this case, we allow the option to set up IP and Port Name. If you want to keep the default IP and Port which is **127.0.0.1:1337**, then you should choose Typical.
 
