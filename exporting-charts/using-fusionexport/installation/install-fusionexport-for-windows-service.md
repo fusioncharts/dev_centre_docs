@@ -41,4 +41,4 @@ Follow the steps below for the installation process:
 
 <img src="{% site.BASE_URL %}/images/installation-for-fe-windows-service.png" alt="Install Windows Service" width="700" height="420">
 
-- Please download our SDKs to export your charts and dashboards from [here](http://fusioncharts.com/download/fusionexport).
+Please download our SDKs to export your charts and dashboards from [here](http://fusioncharts.com/download/fusionexport).
