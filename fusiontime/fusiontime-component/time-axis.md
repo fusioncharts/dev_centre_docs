@@ -56,17 +56,54 @@ In th above code:
 
 Binning stages can be defined for the following time units:
 
-* Year
-* Month
-* Day
-* Hour
-* Minute
-* Second
-* Millisecond
+- Year
+- Month
+- Day
+- Hour
+- Minute
+- Second
+- Millisecond
 
 Default binning happens for each time unit, and if you want to modify it, you can specify the valid multipliers for each time unit.
 
-Valid multipliers for each time unit are.
+Valid multipliers for each time unit are:
+
+<table>
+    <tr>
+        <th>Time Units</th>
+        <th>Valid Multipliers</th>
+    </tr>
+    <tr>
+        <td>`Year`</td>
+        <td>1, 2, 3, 5, 10</td>
+    </tr>
+    <tr>
+        <td>`Month`</td>
+        <td>1, 2, 3, 4, 6</td>
+    </tr>
+    <tr>
+        <td>`Day`</td>
+        <td>1, 2, 3, 5, 6, 10, 15</td>
+    </tr>
+    <tr>
+        <td>`Hour`</td>
+        <td>1, 2, 3, 4, 6, 8, 12</td>
+    </tr>
+    <tr>
+        <td>`Minute`</td>
+        <td>1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30</td>
+    </tr>
+    <tr>
+        <td>`Second`</td>
+        <td>1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30</td>
+    </tr>
+    <tr>
+        <td>`Millisecond`</td>
+        <td>10, 20, 50, 100, 200, 250, 500</td>
+    </tr>
+</table>
+
+The structure to apply the above multipliers is shown below:
 
 ```javascript
 new FusionCharts({
@@ -92,7 +129,7 @@ Refer the example below where we have just modified the binning stages for `hour
 
 In this case, default binning for other time units will apply.
 
-> Note:  If you do not want a particular time unit to be available in a data binned stage, you can specify an empty array against that time unit. Ex: `year` =[].
+> If you do not want a particular time unit to be available in a data binned stage, you can specify an empty array against that time unit. Ex: `year` =[].
 
 ### Max bin
 
@@ -134,7 +171,7 @@ Refer to the example given below:
 
 In the above example, we have tried to specify the output time format on the time axis. Refer to the code below:
 
-```json
+```javascript
 "xAxis": {
     outputTimeFormat: {
         //year: "",
@@ -150,23 +187,23 @@ In the above example, we have tried to specify the output time format on the tim
 
 In the above code:
 
-* Define the `xAxis` object.
-* Create the `outputTimeFormat` object.
-* Set the custom output time format for month and day as `%b'%y (%q)` and `%d/%m (%a)` respectively.
+- Define the `xAxis` object.
+- Create the `outputTimeFormat` object.
+- Set the custom output time format for month and day as `%b'%y (%q)` and `%d/%m (%a)` respectively.
 
 > If yo do not set the data-time tokens for any time unit, the default formatting for the particular time unit will apply.
 
 The date-time tokens for respective time formats is given below:
 
-Time Unit|Tokens|Example|
--|-|-
-Year |`%Y`|2018|
-Month |`%b`|Jan|
-Day|`%d`|04|
-Hour|`%-I` `%p`|11 PM|
-Minute |`%-M` `m`|26 m|
-Second|`%-S s`|30 s|
-Millisecond|`%-L ms`|75 ms|
+| Time Unit   | Tokens     | Example |
+| ----------- | ---------- | ------- |
+| Year        | `%Y`       | 2018    |
+| Month       | `%b`       | Jan     |
+| Day         | `%d`       | 04      |
+| Hour        | `%-I` `%p` | 11 PM   |
+| Minute      | `%-M` `m`  | 26 m    |
+| Second      | `%-S s`    | 30 s    |
+| Millisecond | `%-L ms`   | 75 ms   |
 
 ## Style Definition
 
