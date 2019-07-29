@@ -23,10 +23,10 @@
         }],
         xAxis: {
             binning: {
-                "year": [1],
+                "year": [],
                 "month": [],
                 "day": [],
-                "hour": [],
+                "hour": [1],
                 "minute": [],
                 "second": [],
                 "millisecond": []
