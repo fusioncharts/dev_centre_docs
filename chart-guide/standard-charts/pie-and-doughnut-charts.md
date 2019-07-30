@@ -421,6 +421,8 @@ Refer to the code given below:
 
 By default, for pie/doughnut charts, the chart automatically calculates the best fit pie radius based on the data provided. However, you can choose to explicitly set the outer radius of the pie chart. Specify the outer radius of the pie/doughnut chart using `pieRadius` attribute.
 
+> Starting v3.14.0, you can specify the radius of a pie/doughnut chart in both percentage and pixel values.
+
 Refer to the code given below:
 
 ```json
@@ -464,6 +466,8 @@ Refer to the image below:
 ![Doughnut Radius on Doughnut Chart](/images/percent-value-in-doughnut-radius.png)
 
 In the above image, the `doughnutRadius` has been set to **80%** and as you can see that the percent of the radius has been calculated with respect to the upper threshold of the doughnut chart.
+
+> Starting v3.14.0, you can specify the radius of a pie/doughnut chart in both percentage and pixel values.
 
 Refer to the code given below:
 
