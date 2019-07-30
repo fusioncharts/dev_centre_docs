@@ -14,7 +14,7 @@ heading: Version 3.14.0
 
 * Version 3.14.0 onwards, you can customize the [position](/chart-guide/chart-configurations/axes#y-axis-position) of the y-axis.
 
-* You can now [control the visibility](/chart-guide/chart-configurations/data-values#control-the-visibility-of-data-values) of data values by specifying the threshold values of the data plot. Only the data values greater than the threshold will be visible. Chart specific attributes for this include, `minHeightForValue` (column or bar encodings) , `minRadiusFor Value` (bubble chart), `minAngelForValue` (pie or doughnut charts).
+* You can now [control the visibility](/chart-guide/chart-configurations/data-values#control-the-visibility-of-data-values) of data values by specifying the threshold values of the data plot. Only the data values greater than the threshold will be visible. Chart specific attributes for this include, `minHeightForValue` (column or bar encodings) , `minRadiusForValue` (bubble chart), `minAngelForValue` (pie or doughnut charts).
 
 * Version 3.14.0 onwards, you can specify the [radius](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) of a pie/doughnut chart in both percentage and pixel values.
 
