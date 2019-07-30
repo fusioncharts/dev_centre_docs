@@ -1,5 +1,5 @@
 ---
-title: Chanage output time format | FusionCharts
+title: Change output time format | FusionCharts
 description: This article defines how to change the output time format.
 heading: Change output time format
 ---
@@ -48,14 +48,14 @@ In the above code:
 
 The date-time tokens for respective time formats is given below:
 
-Time Unit|Tokens|Example|
--|-|-
-Year |`%Y`|2018|
-Month |`%b`|Jan|
-Day|`%d`|04|
-Hour|`%-I` `%p`|11 PM|
-Minute |`%-M` `m`|26 m|
-Second|`%-S s`|30 s|
-Millisecond|`%-L ms`|75 ms|
+| Time Unit   | Tokens     | Example |
+| ----------- | ---------- | ------- |
+| Year        | `%Y`       | 2018    |
+| Month       | `%b`       | Jan     |
+| Day         | `%d`       | 04      |
+| Hour        | `%-I` `%p` | 11 PM   |
+| Minute      | `%-M` `m`  | 26 m    |
+| Second      | `%-S s`    | 30 s    |
+| Millisecond | `%-L ms`   | 75 ms   |
 
 To specify the date-time format in the tooltip, you will have to specify the date-time format for a specific time unit in the `outputTimeFormat` object in `tooltip`.
