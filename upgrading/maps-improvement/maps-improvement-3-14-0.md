@@ -4,822 +4,822 @@ description: This page consists of list of improvement made in map specification
 heading: Maps Improvement in Version 3.14.0
 ---
 
-* The core maps package has been updated to:
+- The core maps package has been updated to:
 
-    * Updated the specification sheet for Papua New Guinea.
+    - Updated the specification sheet for Papua New Guinea.
 
-    * Updated the specification sheet for Samoa.
+    - Updated the specification sheet for Samoa.
 
-    * Updated the specification sheet for Czech Republic Region maps.
+    - Updated the specification sheet for Czech Republic Region maps.
 
-    * Updated the specification sheet for Thailand Main and 77 separate Province maps:
+    - Updated the specification sheet for Thailand Main and 77 separate Province maps:
 
-        * AmnatCharoen
+        - AmnatCharoen
 
-        * AngThong
+        - AngThong
 
-        * Bangkok
+        - Bangkok
 
-        * BuengKan
+        - BuengKan
 
-        * Buriram
+        - Buriram
 
-        * Chachoengsao
+        - Chachoengsao
 
-        * ChaiNat
+        - ChaiNat
 
-        * Chaiyaphum
+        - Chaiyaphum
 
-        * Chanthaburi
+        - Chanthaburi
 
-        * ChiangMai
+        - ChiangMai
 
-        * ChiangRai
+        - ChiangRai
 
-        * Chonburi
+        - Chonburi
 
-        * Chumphon
+        - Chumphon
 
-        * Kalasin
+        - Kalasin
 
-        * KamphaengPhet
+        - KamphaengPhet
 
-        * Kanchanaburi
+        - Kanchanaburi
 
-        * KhonKaen
+        - KhonKaen
 
-        * Krabi
+        - Krabi
 
-        * Lampang
+        - Lampang
 
-        * Lamphun
+        - Lamphun
 
-        * Loei
+        - Loei
 
-        * Lopburi
+        - Lopburi
 
-        * MaeHongSon
+        - MaeHongSon
 
-        * MahaSarakham
+        - MahaSarakham
 
-        * Mukdahan
+        - Mukdahan
 
-        * NakhonNayok
+        - NakhonNayok
 
-        * NakhonPathom
+        - NakhonPathom
 
-        * NakhonPhanom
+        - NakhonPhanom
 
-        * NakhonRatchasima
+        - NakhonRatchasima
 
-        * NakhonSawan
+        - NakhonSawan
 
-        * NakhonSiThammarat
+        - NakhonSiThammarat
 
-        * Nan
+        - Nan
 
-        * Narathiwat
+        - Narathiwat
 
-        * NongBuaLamPhu
+        - NongBuaLamPhu
 
-        * NongKhai
+        - NongKhai
 
-        * Nonthaburi
+        - Nonthaburi
 
-        * PathumThani
+        - PathumThani
 
-        * Pattani
+        - Pattani
 
-        * PhangNga
+        - PhangNga
 
-        * Phatthalung
+        - Phatthalung
 
-        * Phayao
+        - Phayao
 
-        * Phetchabun
+        - Phetchabun
 
-        * Phetchaburi
+        - Phetchaburi
 
-        * Phichit
+        - Phichit
 
-        * Phitsanulok
+        - Phitsanulok
 
-        * PhraNakhonSiAyutthaya
+        - PhraNakhonSiAyutthaya
 
-        * Phrae
+        - Phrae
 
-        * Phuket
+        - Phuket
 
-        * Prachinburi
+        - Prachinburi
 
-        * PrachuapKhiriKhan
+        - PrachuapKhiriKhan
 
-        * Ranong
+        - Ranong
 
-        * Ratchaburi
+        - Ratchaburi
 
-        * Rayong
+        - Rayong
 
-        * RoiEt
+        - RoiEt
 
-        * SaKaeo
+        - SaKaeo
 
-        * SakonNakhon
+        - SakonNakhon
 
-        * SamutPrakan
+        - SamutPrakan
 
-        * SamutSakhon
+        - SamutSakhon
 
-        * SamutSongkhram
+        - SamutSongkhram
 
-        * Saraburi
+        - Saraburi
 
-        * Satun
+        - Satun
 
-        * SingBuri
+        - SingBuri
 
-        * Sisaket
+        - Sisaket
 
-        * Songkhla
+        - Songkhla
 
-        * Sukhothai
+        - Sukhothai
 
-        * SuphanBuri
+        - SuphanBuri
 
-        * SuratThani
+        - SuratThani
 
-        * Surin
+        - Surin
 
-        * Tak
+        - Tak
 
-        * Trang
+        - Trang
 
-        * Trat
+        - Trat
 
-        * UbonRatchathani
+        - UbonRatchathani
 
-        * UdonThani
+        - UdonThani
 
-        * UthaiThani
+        - UthaiThani
 
-        * Uttaradit
+        - Uttaradit
 
-        * Yala
+        - Yala
 
-        * Yasothon
+        - Yasothon
 
-    * Updated the specification sheet for Burkina Faso Main and 13 separate Region maps:
+    - Updated the specification sheet for Burkina Faso Main and 13 separate Region maps:
 
-        * BoucleduMouhoun
+        - BoucleduMouhoun
 
-        * BurkinaFasoRegion
+        - BurkinaFasoRegion
 
-        * Cascades
+        - Cascades
 
-        * Centre
+        - Centre
 
-        * CentreEst
+        - CentreEst
 
-        * CentreNord
+        - CentreNord
 
-        * CentreOuest
+        - CentreOuest
 
-        * CentreSud
+        - CentreSud
 
-        * Est
+        - Est
 
-        * HautsBassins
+        - HautsBassins
 
-        * Nord
+        - Nord
 
-        * PlateauCentral
+        - PlateauCentral
 
-        * Sahel
+        - Sahel
 
-        * SudOuest
+        - SudOuest
 
-    * Updated the specification sheet for Burkina Faso Provinces maps:
+    - Updated the specification sheet for Burkina Faso Provinces maps:
 
-        * Bale
+        - Bale
 
-        * Bam
+        - Bam
 
-        * Banwa
+        - Banwa
 
-        * Bazega
+        - Bazega
 
-        * Bougouriba
+        - Bougouriba
 
-        * Boulgou
+        - Boulgou
 
-        * Boulkiemde
+        - Boulkiemde
 
-        * Comoe
+        - Comoe
 
-        * Ganzourgou
+        - Ganzourgou
 
-        * Gnagna
+        - Gnagna
 
-        * Gourma
+        - Gourma
 
-        * Bale
+        - Bale
 
-        * Bam
+        - Bam
 
-        * Banwa
+        - Banwa
 
-        * Bazega
+        - Bazega
 
-        * Bougouriba
+        - Bougouriba
 
-        * Boulgou
+        - Boulgou
 
-        * Boulkiemde
+        - Boulkiemde
 
-        * Comoe
+        - Comoe
 
-        * Ganzourgou
+        - Ganzourgou
 
-        * Gnagna
+        - Gnagna
 
-        * Gourma
+        - Gourma
 
-        * Houet
+        - Houet
 
-        * Ioba
+        - Ioba
 
-        * Kadiogo
+        - Kadiogo
 
-        * Kenedougou
+        - Kenedougou
 
-        * Komondjari
+        - Komondjari
 
-        * Kompienga
+        - Kompienga
 
-        * Kossi
+        - Kossi
 
-        * Koulpelogo
+        - Koulpelogo
 
-        * Kouritenga
+        - Kouritenga
 
-        * Kourweogo
+        - Kourweogo
 
-        * Gourma
+        - Gourma
 
-        * Houet
+        - Houet
 
-        * Ioba
+        - Ioba
 
-        * Kadiogo
+        - Kadiogo
 
-        * Kenedougou
+        - Kenedougou
 
-        * Komondjari
+        - Komondjari
 
-        * Kompienga
+        - Kompienga
 
-        * Kossi
+        - Kossi
 
-        * Koulpelogo
+        - Koulpelogo
 
-        * Kouritenga
+        - Kouritenga
 
-        * Kourweogo
+        - Kourweogo
 
-        * Leraba
+        - Leraba
 
-        * Loroum
+        - Loroum
 
-        * Mouhoun
+        - Mouhoun
 
-        * Nahouri
+        - Nahouri
 
-        * Namentenga
+        - Namentenga
 
-        * Nayala
+        - Nayala
 
-        * Noumbiel
+        - Noumbiel
 
-        * Oubritenga
+        - Oubritenga
 
-        * Oudalan
+        - Oudalan
 
-        * Passore
+        - Passore
 
-        * Poni
+        - Poni
 
-        * Leraba
+        - Leraba
 
-        * Loroum
+        - Loroum
 
-        * Mouhoun
+        - Mouhoun
 
-        * Nahouri
+        - Nahouri
 
-        * Namentenga
+        - Namentenga
 
-        * Nayala
+        - Nayala
 
-        * Noumbiel
+        - Noumbiel
 
-        * Oubritenga
+        - Oubritenga
 
-        * Oudalan
+        - Oudalan
 
-        * Passore
+        - Passore
 
-        * Poni
+        - Poni
 
-        * Sanguie
+        - Sanguie
 
-        * Sanmatenga
+        - Sanmatenga
 
-        * Seno
+        - Seno
 
-        * Sissili
+        - Sissili
 
-        * Soum
+        - Soum
 
-        * Sourou
+        - Sourou
 
-        * Tapoa
+        - Tapoa
 
-        * Tuy
+        - Tuy
 
-        * Yagha
+        - Yagha
 
-        * Yatenga
+        - Yatenga
 
-        * Ziro
+        - Ziro
 
-        * Zondoma
+        - Zondoma
 
-        * Zoundweogo
+        - Zoundweogo
 
-    * Updated the specification sheet for Benin Main maps and for 12 separate departments:
+    - Updated the specification sheet for Benin Main maps and for 12 separate departments:
 
-        * Alibori
+        - Alibori
 
-        * Atakora
+        - Atakora
 
-        * Atlantique
+        - Atlantique
 
-        * Borgou
+        - Borgou
 
-        * Collines
+        - Collines
 
-        * Donga
+        - Donga
 
-        * Kouffo
+        - Kouffo
 
-        * Littoral
+        - Littoral
 
-        * Mono
+        - Mono
 
-        * Oueme
+        - Oueme
 
-        * Plateau
+        - Plateau
 
-        * Zou
+        - Zou
 
-    * Updated the specification sheet for the Central African Republic Main maps and 17 separate prefectures:
+    - Updated the specification sheet for the Central African Republic Main maps and 17 separate prefectures:
 
-        * BaminguiBangoran
+        - BaminguiBangoran
 
-        * Bangui
+        - Bangui
 
-        * BasseKotto
+        - BasseKotto
 
-        * HauteKotto
+        - HauteKotto
 
-        * HautMbomou
+        - HautMbomou
 
-        * Kemo
+        - Kemo
 
-        * Lobaye
+        - Lobaye
 
-        * MambereKadei
+        - MambereKadei
 
-        * Mbomou
+        - Mbomou
 
-        * NanaGrebizi
+        - NanaGrebizi
 
-        * NanaMambere
+        - NanaMambere
 
-        * OmbellaMPoko
+        - OmbellaMPoko
 
-        * Ouaka
+        - Ouaka
 
-        * Ouham
+        - Ouham
 
-        * OuhamPende
+        - OuhamPende
 
-        * SanghaMbaere
+        - SanghaMbaere
 
-        * Vakaga
+        - Vakaga
 
-    * Updated the specification sheet for Guinea Bissai Main maps and 9 separate regions:
+    - Updated the specification sheet for Guinea Bissai Main maps and 9 separate regions:
 
-        * Bafata
+        - Bafata
 
-        * Biombo
+        - Biombo
 
-        * Bissau
+        - Bissau
 
-        * Bolama
+        - Bolama
 
-        * Cacheu
+        - Cacheu
 
-        * Gabu
+        - Gabu
 
-        * Oio
+        - Oio
 
-        * Quinara
+        - Quinara
 
-        * Tombali
+        - Tombali
 
-    * Updated the specification sheet for Mali main map and 9 separate regions:
+    - Updated the specification sheet for Mali main map and 9 separate regions:
 
-        * Bamako
+        - Bamako
 
-        * Gao
+        - Gao
 
-        * Kayes
+        - Kayes
 
-        * Kidal
+        - Kidal
 
-        * Koulikoro
+        - Koulikoro
 
-        * Mopti
+        - Mopti
 
-        * Segou
+        - Segou
 
-        * Sikasso
+        - Sikasso
 
-        * Tombouctou
+        - Tombouctou
 
-    * Updated the main district maps of Malawi and main regions with 3 sub region maps:
+    - Updated the main district maps of Malawi and main regions with 3 sub region maps:
 
-        * CentralMalawiRegion
+        - CentralMalawiRegion
 
-        * Malawi
+        - Malawi
 
-        * MalawiRegion
+        - MalawiRegion
 
-        * NorthernMalawiRegion
+        - NorthernMalawiRegion
 
-        * SouthernMalawiRegion
+        - SouthernMalawiRegion
 
-    * Updated the main region of Senegal and 14 separate regions and main departments:
+    - Updated the main region of Senegal and 14 separate regions and main departments:
 
-        * Dakar.html
+        - Dakar.html
 
-        * Diourbel.html
+        - Diourbel.html
 
-        * Fatick.html
+        - Fatick.html
 
-        * Kaffrine.html
+        - Kaffrine.html
 
-        * Kaolack.html
+        - Kaolack.html
 
-        * Kedougou.html
+        - Kedougou.html
 
-        * Kolda.html
+        - Kolda.html
 
-        * Louga.html
+        - Louga.html
 
-        * Matam.html
+        - Matam.html
 
-        * SaintLouis.html
+        - SaintLouis.html
 
-        * Sedhiou.html
+        - Sedhiou.html
 
-        * Senegal.html
+        - Senegal.html
 
-        * SenegalDepartments.html
+        - SenegalDepartments.html
 
-        * Tambacounda.html
+        - Tambacounda.html
 
-        * Thies.html
+        - Thies.html
 
-        * Ziguinchor.html
+        - Ziguinchor.html
 
-    * The following names have been updated in the specification sheet for Ghana Main map and 10 separate regions:
+    - The following names have been updated in the specification sheet for Ghana Main map and 10 separate regions:
 
-        * Ashanti has been renamed as Ashanti Region
+        - Ashanti has been renamed as Ashanti Region
 
-        * Brong-Ahafo has been renamed as Brong-Ahafo Region
+        - Brong-Ahafo has been renamed as Brong-Ahafo Region
 
-        * Central has been renamed as Central Region
+        - Central has been renamed as Central Region
 
-        * Eastern has been renamed as Eastern Region
+        - Eastern has been renamed as Eastern Region
 
-        * Greater Accra has been renamed as Greater Accra Region
+        - Greater Accra has been renamed as Greater Accra Region
 
-        * Northern has been renamed as Northern Region
+        - Northern has been renamed as Northern Region
 
-        * Upper East has been renamed as Upper East Region
+        - Upper East has been renamed as Upper East Region
 
-        * Upper West has been renamed as Upper West Region
+        - Upper West has been renamed as Upper West Region
 
-        * Volta has been renamed as Volta Region
+        - Volta has been renamed as Volta Region
 
-        * Western has been renamed as Western Region
+        - Western has been renamed as Western Region
 
-    * The following maps have been renamed and updated in the specification sheet for Madagascar main province map and 6 separate region maps:
+    - The following maps have been renamed and updated in the specification sheet for Madagascar main province map and 6 separate region maps:
 
-        * Antananarivo has been renamed as Antananarivo Province
+        - Antananarivo has been renamed as Antananarivo Province
 
-        * Antsiranana has been renamed as Antsiranana Province
+        - Antsiranana has been renamed as Antsiranana Province
 
-        * Fianarantsoa has been renamed as Fianarantsoa Province
+        - Fianarantsoa has been renamed as Fianarantsoa Province
 
-        * Mahajanga has been renamed as Mahajanga Province
+        - Mahajanga has been renamed as Mahajanga Province
 
-        * Toamasina has been renamed as Toamasina Province
+        - Toamasina has been renamed as Toamasina Province
 
-        * Toliara has been renamed as Toliara Province
+        - Toliara has been renamed as Toliara Province
 
-    * The following maps have been renamed and updated in the specification sheet for Gabon main map and 9 separate provinces:
+    - The following maps have been renamed and updated in the specification sheet for Gabon main map and 9 separate provinces:
 
-        * Estuaire has been renamed as Estuaire (Libreville)
+        - Estuaire has been renamed as Estuaire (Libreville)
 
-        * Haut-Ogooue has been renamed as Haut-Ogooué (Franceville)
+        - Haut-Ogooue has been renamed as Haut-Ogooué (Franceville)
 
-        * Moyen-Ogooue has been renamed as Moyen-Ogooué (Lambaréné)
+        - Moyen-Ogooue has been renamed as Moyen-Ogooué (Lambaréné)
 
-        * Ngounie has been renamed as Ngounié (Mouila)
+        - Ngounie has been renamed as Ngounié (Mouila)
 
-        * Nyanga has been renamed as Nyanga (Tchibanga)
+        - Nyanga has been renamed as Nyanga (Tchibanga)
 
-        * Ogooue-Ivindo has been renamed as Ogooué-Ivindo (Makokou)
+        - Ogooue-Ivindo has been renamed as Ogooué-Ivindo (Makokou)
 
-        * Ogooue-Lolo has been renamed as Ogooué-Lolo (Koulamoutou)
+        - Ogooue-Lolo has been renamed as Ogooué-Lolo (Koulamoutou)
 
-        * Ogooue-Maritime has been renamed as Ogooué-Maritime (Port-Gentil)
+        - Ogooue-Maritime has been renamed as Ogooué-Maritime (Port-Gentil)
 
-        * Woleu-Ntem has been renamed as Woleu-Ntem (Oyem)
+        - Woleu-Ntem has been renamed as Woleu-Ntem (Oyem)
 
-    * The following maps have been renamed and updated in the specification sheet for Niger main map and 8 separate regions:
+    - The following maps have been renamed and updated in the specification sheet for Niger main map and 8 separate regions:
 
-        * Agadez has been renamed as Agadez Region
+        - Agadez has been renamed as Agadez Region
 
-        * Diffa has been renamed as Diffa Region
+        - Diffa has been renamed as Diffa Region
 
-        * Dosso has been renamed as Dosso Region
+        - Dosso has been renamed as Dosso Region
 
-        * Maradi has been renamed as Maradi Region
+        - Maradi has been renamed as Maradi Region
 
-        * Niamey has been renamed as Niamey (capital district)
+        - Niamey has been renamed as Niamey (capital district)
 
-        * Tahoua has been renamed as Tahoua Region
+        - Tahoua has been renamed as Tahoua Region
 
-        * Tillabery has been renamed as Tillabéri Region
+        - Tillabery has been renamed as Tillabéri Region
 
-        * Zinder has been renamed as Zinder Region
+        - Zinder has been renamed as Zinder Region
 
-    * Updated the specification sheet for 9 separate provinces of South Africa:
+    - Updated the specification sheet for 9 separate provinces of South Africa:
 
-        * EasternCape
+        - EasternCape
 
-        * FreeState
+        - FreeState
 
-        * Gauteng
+        - Gauteng
 
-        * KwaZuluNatal
+        - KwaZuluNatal
 
-        * Limpopo
+        - Limpopo
 
-        * Mpumalanga
+        - Mpumalanga
 
-        * NorthernCape
+        - NorthernCape
 
-        * NorthWestSouthAfrica
+        - NorthWestSouthAfrica
 
-        * WesternCape
+        - WesternCape
 
-    * Updated the specification sheet for Gambia main map and 8 separate regions:
+    - Updated the specification sheet for Gambia main map and 8 separate regions:
 
-        * Banjul
+        - Banjul
 
-        * Basse
+        - Basse
 
-        * Brikama
+        - Brikama
 
-        * Gambia
+        - Gambia
 
-        * Janjanbureh
+        - Janjanbureh
 
-        * Kanifing
+        - Kanifing
 
-        * Kerewan
+        - Kerewan
 
-        * Kuntaur
+        - Kuntaur
 
-        * Mansakonko
+        - Mansakonko
 
-    * Updated and added specification sheet for Ivory Coast main region and 33 separate regions:
+    - Updated and added specification sheet for Ivory Coast main region and 33 separate regions:
 
-        * AbidjanAutonomousDistrict
+        - AbidjanAutonomousDistrict
 
-        * AgnebyTiassa
+        - AgnebyTiassa
 
-        * Bafing
+        - Bafing
 
-        * Bagoue
+        - Bagoue
 
-        * Belier
+        - Belier
 
-        * Bere
+        - Bere
 
-        * Bounkani
+        - Bounkani
 
-        * Cavally
+        - Cavally
 
-        * Folon
+        - Folon
 
-        * Gbeke
+        - Gbeke
 
-        * Gbokle
+        - Gbokle
 
-        * Goh
+        - Goh
 
-        * Gontougo
+        - Gontougo
 
-        * GrandsPonts
+        - GrandsPonts
 
-        * Guemon
+        - Guemon
 
-        * Hambol
+        - Hambol
 
-        * HautSassandra
+        - HautSassandra
 
-        * Iffou
+        - Iffou
 
-        * IndenieDjuablin
+        - IndenieDjuablin
 
-        * IvoryCoastRegions
+        - IvoryCoastRegions
 
-        * Kabadougou
+        - Kabadougou
 
-        * LaMe
+        - LaMe
 
-        * Goh
+        - Goh
 
-        * Gontougo
+        - Gontougo
 
-        * GrandsPonts
+        - GrandsPonts
 
-        * Guemon
+        - Guemon
 
-        * Hambol
+        - Hambol
 
-        * HautSassandra
+        - HautSassandra
 
-        * Iffou
+        - Iffou
 
-        * IndenieDjuablin
+        - IndenieDjuablin
 
-        * IvoryCoastRegions
+        - IvoryCoastRegions
 
-        * Kabadougou
+        - Kabadougou
 
-        * LaMe
+        - LaMe
 
-        * LohDjiboua
+        - LohDjiboua
 
-        * Marahoue
+        - Marahoue
 
-        * Moronou
+        - Moronou
 
-        * NZi
+        - NZi
 
-        * Nawa
+        - Nawa
 
-        * Poro
+        - Poro
 
-        * SanPedro
+        - SanPedro
 
-        * SudComoe
+        - SudComoe
 
-        * Tchologo
+        - Tchologo
 
-        * Tonkpi
+        - Tonkpi
 
-        * Worodougou
+        - Worodougou
 
-        * YamoussoukroAutonomousDistrict
+        - YamoussoukroAutonomousDistrict
 
-    * Chile main map has been updated and renamed with 16 separate region maps. Región de Ñuble has been added as the new entity. The following entities have been renamed:
+    - Chile main map has been updated and renamed with 16 separate region maps. Región de Ñuble has been added as the new entity. The following entities have been renamed:
 
-        * Valparaíso has been renamed as Región de Valparaíso
+        - Valparaíso has been renamed as Región de Valparaíso
 
-        * Aisen del General Carlos Ibanez del Campo has been renamed as Región de Aysén del General Carlos Ibáñez del Campo
+        - Aisen del General Carlos Ibanez del Campo has been renamed as Región de Aysén del General Carlos Ibáñez del Campo
 
-        * Antofagasta has been renamed as Región de Antofagasta
+        - Antofagasta has been renamed as Región de Antofagasta
 
-        * Araucanía has been renamed as Región de La Araucanía
+        - Araucanía has been renamed as Región de La Araucanía
 
-        * Atacama has been renamed as Región de Atacama
+        - Atacama has been renamed as Región de Atacama
 
-        * Bío-Bío has been renamed as Región del Biobío
+        - Bío-Bío has been renamed as Región del Biobío
 
-        * Coquimbo has been renamed as Región de Coquimbo
+        - Coquimbo has been renamed as Región de Coquimbo
 
-        * O'Higgins has been renamed as Región del Libertador General Bernardo O'Higgins
+        - O'Higgins has been renamed as Región del Libertador General Bernardo O'Higgins
 
-        * Los Lagos has been renamed as Región de Los Lagos
+        - Los Lagos has been renamed as Región de Los Lagos
 
-        * Magallanes y Antartica Chilena has been renamed as Región de Magallanes y de la Antártica Chilena
+        - Magallanes y Antartica Chilena has been renamed as Región de Magallanes y de la Antártica Chilena
 
-        * Maule has been renamed as Región del Maule
+        - Maule has been renamed as Región del Maule
 
-        * Santiago Metropolitan Region has been renamed as Región Metropolitana de Santiago
+        - Santiago Metropolitan Region has been renamed as Región Metropolitana de Santiago
 
-        * Tarapacá has been renamed as Región de Tarapacá
+        - Tarapacá has been renamed as Región de Tarapacá
 
-        * Los Ríos has been renamed as Región de Los Ríos
+        - Los Ríos has been renamed as Región de Los Ríos
 
-        * Arica and Parinacota has been renamed as Región de Arica y Parinacota
+        - Arica and Parinacota has been renamed as Región de Arica y Parinacota
 
-    * Sri Lanka main maps have been renamed and updated with 16 separate province maps:
+    - Sri Lanka main maps have been renamed and updated with 16 separate province maps:
 
-        * Central has been renamed as Central Sri Lanka Province
+        - Central has been renamed as Central Sri Lanka Province
 
-        * Eastern has been renamed as Eastern Sri Lanka Province
+        - Eastern has been renamed as Eastern Sri Lanka Province
 
-        * North Central has been renamed as North Central Sri Lanka Province
+        - North Central has been renamed as North Central Sri Lanka Province
 
-        * Northern has been renamed as Northern Sri Lanka Province
+        - Northern has been renamed as Northern Sri Lanka Province
 
-        * North Western has been renamed as North Western Sri Lanka Province
+        - North Western has been renamed as North Western Sri Lanka Province
 
-        * Sabaragamuwa has been renamed as Sabaragamuwa Sri Lanka Province
+        - Sabaragamuwa has been renamed as Sabaragamuwa Sri Lanka Province
 
-        * Southern has been renamed as Southern Sri Lanka Province
+        - Southern has been renamed as Southern Sri Lanka Province
 
-        * Uva has been renamed as Uva Sri Lanka Province
+        - Uva has been renamed as Uva Sri Lanka Province
 
-        * Western has been renamed as Western Sri Lanka Province
+        - Western has been renamed as Western Sri Lanka Province
 
-    * Updated the specification sheet for Mauritania and 13 separate regions:
+    - Updated the specification sheet for Mauritania and 13 separate regions:
 
-        * Adrar
+        - Adrar
 
-        * Assaba
+        - Assaba
 
-        * Brakna
+        - Brakna
 
-        * DakhletNouadhibou
+        - DakhletNouadhibou
 
-        * Gorgol
+        - Gorgol
 
-        * Guidimaka
+        - Guidimaka
 
-        * HodhEchChargui
+        - HodhEchChargui
 
-        * HodhElGharbi
+        - HodhElGharbi
 
-        * Inchiri
+        - Inchiri
 
-        * Nouakchott
+        - Nouakchott
 
-        * Tagant
+        - Tagant
 
-        * TirisZemmour
+        - TirisZemmour
 
-        * Trarza
+        - Trarza
 
-    * The following entities have been added to Uganda main region and 4 separate regions:
+    - The following entities have been added to Uganda main region and 4 separate regions:
 
-        * Central Uganda
+        - Central Uganda
 
-        * Northern Uganda
+        - Northern Uganda
 
-        * Eastern Uganda
+        - Eastern Uganda
 
-        * Southern Uganda
+        - Southern Uganda
 
-    * Guinea map prefectures map and Guinea main has been renamed and updated with 8 separate region maps:
+    - Guinea map prefectures map and Guinea main has been renamed and updated with 8 separate region maps:
 
-        * Boke has been renamed as Boké
+        - Boke has been renamed as Boké
 
-        * Dubreka has been renamed as Dubréka
+        - Dubreka has been renamed as Dubréka
 
-        * Forecariah has been renamed as Forécariah
+        - Forecariah has been renamed as Forécariah
 
-        * Gueckedou has been renamed as Guéckédou
+        - Gueckedou has been renamed as Guéckédou
 
-        * Kerouane has been renamed as Kérouané
+        - Kerouane has been renamed as Kérouané
 
-        * Labe has been renamed as Labé
+        - Labe has been renamed as Labé
 
-        * Lelouma has been renamed as Lélouma
+        - Lelouma has been renamed as Lélouma
 
-        * Nzerekore has been renamed as Nzérékoré
+        - Nzerekore has been renamed as Nzérékoré
 
-        * Telimele has been renamed as Télimélé
+        - Telimele has been renamed as Télimélé
 
-        * Tougue has been renamed as Tougué
+        - Tougue has been renamed as Tougué
 
-    * The district map of West Bengal has been updated.
+    - The district map of West Bengal has been updated.
