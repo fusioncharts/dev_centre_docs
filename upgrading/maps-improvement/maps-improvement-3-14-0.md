@@ -472,37 +472,37 @@ heading: Maps Improvement in Version 3.14.0
 
     * Updated the main region of Senegal and 14 separate regions and main departments:
 
-        * Dakar
+        * Dakar.html
 
-        * Diourbel
+        * Diourbel.html
 
-        * Fatick
+        * Fatick.html
 
-        * Kaffrine
+        * Kaffrine.html
 
-        * Kaolack
+        * Kaolack.html
 
-        * Kedougou
+        * Kedougou.html
 
-        * Kolda
+        * Kolda.html
 
-        * Louga
+        * Louga.html
 
-        * Matam
+        * Matam.html
 
-        * SaintLouis
+        * SaintLouis.html
 
-        * Sedhiou
+        * Sedhiou.html
 
-        * Senegal
+        * Senegal.html
 
-        * SenegalDepartments
+        * SenegalDepartments.html
 
-        * Tambacounda
+        * Tambacounda.html
 
-        * Thies
+        * Thies.html
 
-        * Ziguinchor
+        * Ziguinchor.html
 
     * The following names have been updated in the specification sheet for Ghana Main map and 10 separate regions:
 
@@ -539,3 +539,287 @@ heading: Maps Improvement in Version 3.14.0
         * Toamasina has been renamed as Toamasina Province
 
         * Toliara has been renamed as Toliara Province
+
+    * The following maps have been renamed and updated in the specification sheet for Gabon main map and 9 separate provinces:
+
+        * Estuaire has been renamed as Estuaire (Libreville)
+
+        * Haut-Ogooue has been renamed as Haut-Ogooué (Franceville)
+
+        * Moyen-Ogooue has been renamed as Moyen-Ogooué (Lambaréné)
+
+        * Ngounie has been renamed as Ngounié (Mouila)
+
+        * Nyanga has been renamed as Nyanga (Tchibanga)
+
+        * Ogooue-Ivindo has been renamed as Ogooué-Ivindo (Makokou)
+
+        * Ogooue-Lolo has been renamed as Ogooué-Lolo (Koulamoutou)
+
+        * Ogooue-Maritime has been renamed as Ogooué-Maritime (Port-Gentil)
+
+        * Woleu-Ntem has been renamed as Woleu-Ntem (Oyem)
+
+    * The following maps have been renamed and updated in the specification sheet for Niger main map and 8 separate regions:
+
+        * Agadez has been renamed as Agadez Region
+
+        * Diffa has been renamed as Diffa Region
+
+        * Dosso has been renamed as Dosso Region
+
+        * Maradi has been renamed as Maradi Region
+
+        * Niamey has been renamed as Niamey (capital district)
+
+        * Tahoua has been renamed as Tahoua Region
+
+        * Tillabery has been renamed as Tillabéri Region
+
+        * Zinder has been renamed as Zinder Region
+
+    * Updated the specification sheet for 9 separate provinces of South Africa:
+
+        * EasternCape
+
+        * FreeState
+
+        * Gauteng
+
+        * KwaZuluNatal
+
+        * Limpopo
+
+        * Mpumalanga
+
+        * NorthernCape
+
+        * NorthWestSouthAfrica
+
+        * WesternCape
+
+    * Updated the specification sheet for Gambia main map and 8 separate regions:
+
+        * Banjul
+
+        * Basse
+
+        * Brikama
+
+        * Gambia
+
+        * Janjanbureh
+
+        * Kanifing
+
+        * Kerewan
+
+        * Kuntaur
+
+        * Mansakonko
+
+    * Updated and added specification sheet for Ivory Coast main region and 33 separate regions:
+
+        * AbidjanAutonomousDistrict
+
+        * AgnebyTiassa
+
+        * Bafing
+
+        * Bagoue
+
+        * Belier
+
+        * Bere
+
+        * Bounkani
+
+        * Cavally
+
+        * Folon
+
+        * Gbeke
+
+        * Gbokle
+
+        * Goh
+
+        * Gontougo
+
+        * GrandsPonts
+
+        * Guemon
+
+        * Hambol
+
+        * HautSassandra
+
+        * Iffou
+
+        * IndenieDjuablin
+
+        * IvoryCoastRegions
+
+        * Kabadougou
+
+        * LaMe
+
+        * Goh
+
+        * Gontougo
+
+        * GrandsPonts
+
+        * Guemon
+
+        * Hambol
+
+        * HautSassandra
+
+        * Iffou
+
+        * IndenieDjuablin
+
+        * IvoryCoastRegions
+
+        * Kabadougou
+
+        * LaMe
+
+        * LohDjiboua
+
+        * Marahoue
+
+        * Moronou
+
+        * NZi
+
+        * Nawa
+
+        * Poro
+
+        * SanPedro
+
+        * SudComoe
+
+        * Tchologo
+
+        * Tonkpi
+
+        * Worodougou
+
+        * YamoussoukroAutonomousDistrict
+
+    * Chile main map has been updated and renamed with 16 separate region maps. Región de Ñuble has been added as the new entity. The following entities have been renamed:
+
+        * Valparaíso has been renamed as Región de Valparaíso
+
+        * Aisen del General Carlos Ibanez del Campo has been renamed as Región de Aysén del General Carlos Ibáñez del Campo
+
+        * Antofagasta has been renamed as Región de Antofagasta
+
+        * Araucanía has been renamed as Región de La Araucanía
+
+        * Atacama has been renamed as Región de Atacama
+
+        * Bío-Bío has been renamed as Región del Biobío
+
+        * Coquimbo has been renamed as Región de Coquimbo
+
+        * O'Higgins has been renamed as Región del Libertador General Bernardo O'Higgins
+
+        * Los Lagos has been renamed as Región de Los Lagos
+
+        * Magallanes y Antartica Chilena has been renamed as Región de Magallanes y de la Antártica Chilena
+
+        * Maule has been renamed as Región del Maule
+
+        * Santiago Metropolitan Region has been renamed as Región Metropolitana de Santiago
+
+        * Tarapacá has been renamed as Región de Tarapacá
+
+        * Los Ríos has been renamed as Región de Los Ríos
+
+        * Arica and Parinacota has been renamed as Región de Arica y Parinacota
+
+    * Sri Lanka main maps have been renamed and updated with 16 separate province maps:
+
+        * Central has been renamed as Central Sri Lanka Province
+
+        * Eastern has been renamed as Eastern Sri Lanka Province
+
+        * North Central has been renamed as North Central Sri Lanka Province
+
+        * Northern has been renamed as Northern Sri Lanka Province
+
+        * North Western has been renamed as North Western Sri Lanka Province
+
+        * Sabaragamuwa has been renamed as Sabaragamuwa Sri Lanka Province
+
+        * Southern has been renamed as Southern Sri Lanka Province
+
+        * Uva has been renamed as Uva Sri Lanka Province
+
+        * Western has been renamed as Western Sri Lanka Province
+
+    * Updated the specification sheet for Mauritania and 13 separate regions:
+
+        * Adrar
+
+        * Assaba
+
+        * Brakna
+
+        * DakhletNouadhibou
+
+        * Gorgol
+
+        * Guidimaka
+
+        * HodhEchChargui
+
+        * HodhElGharbi
+
+        * Inchiri
+
+        * Nouakchott
+
+        * Tagant
+
+        * TirisZemmour
+
+        * Trarza
+
+    * The following entities have been added to Uganda main region and 4 separate regions:
+
+        * Central Uganda
+
+        * Northern Uganda
+
+        * Eastern Uganda
+
+        * Southern Uganda
+
+    * Guinea map prefectures map and Guinea main has been renamed and updated with 8 separate region maps:
+
+        * Boke has been renamed as Boké
+
+        * Dubreka has been renamed as Dubréka
+
+        * Forecariah has been renamed as Forécariah
+
+        * Gueckedou has been renamed as Guéckédou
+
+        * Kerouane has been renamed as Kérouané
+
+        * Labe has been renamed as Labé
+
+        * Lelouma has been renamed as Lélouma
+
+        * Nzerekore has been renamed as Nzérékoré
+
+        * Telimele has been renamed as Télimélé
+
+        * Tougue has been renamed as Tougué
+
+    * The district map of West Bengal has been updated.
