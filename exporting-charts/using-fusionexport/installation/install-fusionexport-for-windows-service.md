@@ -27,15 +27,18 @@ Follow the steps below for the installation process:
 
 <img src="{% site.BASE_URL %}/images/custom-click-next-for-windows-service-1.png" alt="Cusom Click Next for Windows Service 1" width="500" height="300">
 
+- Configure the IP address and Port number before setting up FusionExport server.
+
+<img src="{% site.BASE_URL %}/images/configure-ip-address-for-windows-service.png" alt="Configure IP address for Windows Service" width="500" height="300">
+
+- Click on Install to begin installing FusionExport Windows Service.
+
 <img src="{% site.BASE_URL %}/images/custom-click-next-for-windows-service-2.png" alt="Cusom Click Next for Windows Service 2" width="500" height="300">
 
 - Once the wizard is running, FusionExport and all the dependencies get installed.
 
 <img src="{% site.BASE_URL %}/images/install-dependencies-for-windows-service.png" alt="Install dependencies for Windows Service" width="500" height="300">
 
-- Configure the IP address and Port number before setting up FusionExport server.
-
-<img src="{% site.BASE_URL %}/images/configure-ip-address-for-windows-service.png" alt="Configure IP address for Windows Service" width="500" height="300">
 
 - Once the installation is complete, click on Finish. FusionExport will run successfully on the [localhost server](http://127.0.0.1:1337/).
 

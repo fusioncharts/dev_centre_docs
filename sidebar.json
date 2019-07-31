@@ -1787,6 +1787,11 @@
                 "path": "/upgrading/change-log"
               },
               {
+                "title": "Maps Improvement",
+                "path": "/upgrading/maps-improvement/maps-improvement-3-14-0",
+                "visibility": false
+              },
+              {
                 "title": "What's New",
                 "path": "/upgrading/whats-new"
               },

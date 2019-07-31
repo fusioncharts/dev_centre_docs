@@ -14,7 +14,7 @@ heading: Version 3.14.0
 
 * Version 3.14.0 onwards, you can customize the [position](/chart-guide/chart-configurations/axes#y-axis-position) of the y-axis.
 
-* You can now [control the visibility](/chart-guide/chart-configurations/data-values#control-the-visibility-of-data-values) of data values by specifying the threshold values of the data plot. Only the data values greater than the threshold will be visible. Chart specific attributes for this include, `minHeightForValue` (column or bar encodings) , `minRadiusFor Value` (bubble chart), `minAngelForValue` (pie or doughnut charts).
+* You can now [control the visibility](/chart-guide/chart-configurations/data-values#control-the-visibility-of-data-values) of data values by specifying the threshold values of the data plot. Only the data values greater than the threshold will be visible. Chart specific attributes for this include, `minHeightForValue` (column or bar encodings) , `minRadiusForValue` (bubble chart), `minAngelForValue` (pie or doughnut charts).
 
 * Version 3.14.0 onwards, you can specify the [radius](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) of a pie/doughnut chart in both percentage and pixel values.
 
@@ -29,6 +29,8 @@ heading: Version 3.14.0
 * Version 3.14.0 onwards, you can use the [drawFullAreaBorder](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart) attribute in an area chart, to create a border either around the entire plot or on the top of the area plot only.
 
 * This version onwards, you can insert non-breaking space codes into input strings of text elements.
+
+* In this version, 487 core map files have been updated. Click [here](/upgrading/maps-improvement/maps-improvement-3-14-0) to get the list of updated maps.
 
 <h4>Fixes</h4>
 
