@@ -30,6 +30,8 @@ heading: Version 3.14.0
 
 * This version onwards, you can insert non-breaking space codes into input strings of text elements.
 
+* In this version, 487 core map files have been updated. Click [here](/upgrading/maps-improvement/maps-improvement-3-14-0) to get the list of maps updated.
+
 <h4>Fixes</h4>
 
 * On IE and EDGE browsers, using an Ajax call to display a Gantt chart would sometimes result in the chart not being displayed. The issue has been fixed.
