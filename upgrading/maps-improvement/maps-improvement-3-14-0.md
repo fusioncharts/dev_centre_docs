@@ -1,7 +1,7 @@
 ---
-title: Maps Improvement in Version 3.14.0 | FusionCharts
+title: Map Improvements in Version 3.14.0 | FusionCharts
 description: This page consists of list of improvement made in map specification sheet in FusionCharts v3.14.0.
-heading: Maps Improvement in Version 3.14.0
+heading: Map Improvements in Version 3.14.0
 ---
 
 - The core maps package has been updated to:
