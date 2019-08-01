@@ -16,6 +16,8 @@ heading: Version 3.14.X
 
 * You can now render charts in angular using `angular-fusioncharts` wrapper. Previously, the charts were not getting rendered in angular when using `angular-fusioncharts` wrapper of FusionCharts version 3.14.0.
 
+<h2 class="sub-heading">Version 3.14.0</h2>
+
 <p class="release-date">26th July, 2019</p>
 
 <h4>New Features</h4>
