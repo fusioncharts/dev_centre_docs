@@ -6,7 +6,7 @@ heading: Version 3.14.0
 
 <h2 class="sub-heading">Version 3.14.0-sr.1</h2>
 
-<p class="release-date">2nd August, 2019</p>
+<p class="release-date">1st August, 2019</p>
 
 <h4>Improvement</h4>
 
@@ -14,7 +14,7 @@ heading: Version 3.14.0
 
 <h4>Fixes</h4>
 
-* You can now render charts in angular using `angular-fusioncharts` wrapper. Previously, due to some conflicts the charts were not getting rendered in angular when using `angular-fusioncharts` wrapper of FusionCharts version 3.14.0.
+* You can now render charts in angular using `angular-fusioncharts` wrapper. Previously, the charts were not getting rendered in angular when using `angular-fusioncharts` wrapper of FusionCharts version 3.14.0.
 
 <p class="release-date">26th July, 2019</p>
 
