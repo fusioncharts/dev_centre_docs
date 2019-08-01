@@ -6869,6 +6869,17 @@
             "markerData": "/maps/marker-data/thailand"
           },
           {
+            "name": "Thailand (Separate Province)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Amnat Charoen",
+                "alias": "amnatcharoen",
+                "specSheet": "/maps/spec-sheets/amnatcharoen"
+              }
+            ]
+          },
+          {
             "name": "Tibet",
             "alias": "tibet",
             "specSheet": "/maps/spec-sheets/tibet"
