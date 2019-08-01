@@ -472,37 +472,37 @@ heading: Map Improvements in Version 3.14.0
 
     - Updated the main region of Senegal and 14 separate regions and main departments:
 
-        - Dakar.html
+        - Dakar
 
-        - Diourbel.html
+        - Diourbel
 
-        - Fatick.html
+        - Fatick
 
-        - Kaffrine.html
+        - Kaffrine
 
-        - Kaolack.html
+        - Kaolack
 
-        - Kedougou.html
+        - Kedougou
 
-        - Kolda.html
+        - Kolda
 
-        - Louga.html
+        - Louga
 
-        - Matam.html
+        - Matam
 
-        - SaintLouis.html
+        - SaintLouis
 
-        - Sedhiou.html
+        - Sedhiou
 
-        - Senegal.html
+        - Senegal
 
-        - SenegalDepartments.html
+        - SenegalDepartments
 
-        - Tambacounda.html
+        - Tambacounda
 
-        - Thies.html
+        - Thies
 
-        - Ziguinchor.html
+        - Ziguinchor
 
     - The following names have been updated in the specification sheet for Ghana Main map and 10 separate regions:
 
