@@ -1,7 +1,7 @@
 ---
-title: Maps Improvement in Version 3.14.0 | FusionCharts
+title: Map Improvements in Version 3.14.0 | FusionCharts
 description: This page consists of list of improvement made in map specification sheet in FusionCharts v3.14.0.
-heading: Maps Improvement in Version 3.14.0
+heading: Map Improvements in Version 3.14.0
 ---
 
 - The core maps package has been updated to:
@@ -577,26 +577,6 @@ heading: Maps Improvement in Version 3.14.0
         - Tillabery has been renamed as Tillabéri Region
 
         - Zinder has been renamed as Zinder Region
-
-    - Updated the specification sheet for 9 separate provinces of South Africa:
-
-        - EasternCape
-
-        - FreeState
-
-        - Gauteng
-
-        - KwaZuluNatal
-
-        - Limpopo
-
-        - Mpumalanga
-
-        - NorthernCape
-
-        - NorthWestSouthAfrica
-
-        - WesternCape
 
     - Updated the specification sheet for Gambia main map and 8 separate regions:
 
