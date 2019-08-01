@@ -578,26 +578,6 @@ heading: Map Improvements in Version 3.14.0
 
         - Zinder has been renamed as Zinder Region
 
-    - Updated the specification sheet for 9 separate provinces of South Africa:
-
-        - EasternCape
-
-        - FreeState
-
-        - Gauteng
-
-        - KwaZuluNatal
-
-        - Limpopo
-
-        - Mpumalanga
-
-        - NorthernCape
-
-        - NorthWestSouthAfrica
-
-        - WesternCape
-
     - Updated the specification sheet for Gambia main map and 8 separate regions:
 
         - Banjul
