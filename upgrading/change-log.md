@@ -4,6 +4,18 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.14.0
 ---
 
+<h2 class="sub-heading">Version 3.14.0-sr.1</h2>
+
+<p class="release-date">1st August, 2019</p>
+
+<h4>Improvement</h4>
+
+* FusionCharts Angular wrapper is now compatible with Angular 8.
+
+<h4>Fixes</h4>
+
+* You can now render charts in angular using `angular-fusioncharts` wrapper. Previously, the charts were not getting rendered in angular when using `angular-fusioncharts` wrapper of FusionCharts version 3.14.0.
+
 <p class="release-date">26th July, 2019</p>
 
 <h4>New Features</h4>
