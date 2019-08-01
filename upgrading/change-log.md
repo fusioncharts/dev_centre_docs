@@ -1,7 +1,7 @@
 ---
 title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
-heading: Version 3.14.X
+heading: Version 3.14.x
 ---
 
 <h2 class="sub-heading">Version 3.14.0-sr.1</h2>
