@@ -12,9 +12,9 @@ Dimensions (Width x Height): 545x974
 | ID       | Short label | Label                |
 | -------- | ----------- | -------------------- |
 | TH.AC.CH | CH          | Chanuman             |
-| TH.AT.SE | SE          | Senangkhanikhom      |
-| TH.AU.AM | AM          | Mueang Amnat Charoen |
-| TH.BG.HU | HU          | Hua Taphan           |
-| TH.BK.LU | LU          | Lue Amnat            |
-| TH.BR.PH | PH          | Phana                |
-| TH.CC.PA | PA          | Pathum Ratchawongsa  |
+| TH.AC.SE | SE          | Senangkhanikhom      |
+| TH.AC.AM | AM          | Mueang Amnat Charoen |
+| TH.AC.HU | HU          | Hua Taphan           |
+| TH.AC.LU | LU          | Lue Amnat            |
+| TH.AC.PH | PH          | Phana                |
+| TH.AC.PA | PA          | Pathum Ratchawongsa  |
