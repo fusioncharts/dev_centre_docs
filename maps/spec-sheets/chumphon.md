@@ -19,4 +19,3 @@ Dimensions (Width x Height): 545x974
 | TH.CP.PH | PH          | Phato           |
 | TH.CP.SA | SA          | Sawi            |
 | TH.CP.TT | TT          | Thung Tako      |
-
