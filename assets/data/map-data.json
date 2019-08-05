@@ -6881,6 +6881,11 @@
                 "name": "AngThong",
                 "alias": "angthong",
                 "specSheet": "/maps/spec-sheets/angthong"
+              },
+              {
+                "name": "Bangkok",
+                "alias": "bangkok",
+                "specSheet": "/maps/spec-sheets/bangkok"
               }
             ]
           },
