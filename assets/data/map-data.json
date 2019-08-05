@@ -7254,7 +7254,7 @@
               },
               {
                 "name": "Yasothon",
-                "alias": "yasothon",    
+                "alias": "yasothon",
                 "specSheet": "/maps/spec-sheets/yasothon"
               }
             ]
@@ -8276,6 +8276,88 @@
             "alias": "burkinafaso",
             "specSheet": "/maps/spec-sheets/burkinafaso",
             "markerData": "/maps/marker-data/burkinafaso"
+          },
+          {
+            "name": "Burkina Faso (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Boucle du Mouhoun",
+                "alias": "boucledumouhoun",
+                "specSheet": "/maps/spec-sheets/boucledumouhoun"
+              },
+              {
+                "name": "Cascades",
+                "alias": "cascades",
+                "specSheet": "/maps/spec-sheets/cascades"
+              },
+              {
+                "name": "Centre",
+                "alias": "centre",
+                "specSheet": "/maps/spec-sheets/centre"
+              },
+              {
+                "name": "Centre-Est",
+                "alias": "centreest",
+                "specSheet": "/maps/spec-sheets/centreest"
+              },
+              {
+                "name": "Centre-Nord",
+                "alias": "centrenord",
+                "specSheet": "/maps/spec-sheets/centrenord"
+              },
+              {
+                "name": "Centre-Ouest",
+                "alias": "centreouest",
+                "specSheet": "/maps/spec-sheets/centreouest"
+              },
+              {
+                "name": "Centre-Sud",
+                "alias": "centresud",
+                "specSheet": "/maps/spec-sheets/centresud"
+              },
+              {
+                "name": "Est",
+                "alias": "est",
+                "specSheet": "/maps/spec-sheets/est"
+              },
+              {
+                "name": "Hauts-Bassins",
+                "alias": "hautsbassins",
+                "specSheet": "/maps/spec-sheets/hautsbassins"
+              },
+              {
+                "name": "Nord",
+                "alias": "nord",
+                "specSheet": "/maps/spec-sheets/nord"
+              },
+              {
+                "name": "Plateau-Central",
+                "alias": "plateaucentral",
+                "specSheet": "/maps/spec-sheets/plateaucentral"
+              },
+              {
+                "name": "Sahel",
+                "alias": "sahel",
+                "specSheet": "/maps/spec-sheets/sahel"
+              },
+              {
+                "name": "Sud-Ouest",
+                "alias": "sudouest",
+                "specSheet": "/maps/spec-sheets/sudouest"
+              }
+            ]
+          },
+          {
+            "name": "Burkina Faso (Provinces)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Amnat Charoen",
+                "alias": "amnatcharoen",
+                "specSheet": "/maps/spec-sheets/amnatcharoen"
+              }
+            ]
           },
           {
             "name": "Burundi",
