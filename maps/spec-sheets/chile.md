@@ -7,27 +7,23 @@
 Map Name: Chile
 Dimensions (Width x Height): 102x566
 
-
-
-
-
-
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-01|VS|Valparaíso
-02|AI|Aisen del General Carlos Ibanez del Campo
-03|AN|Antofagasta
-04|AR|Araucanía
-05|AT|Atacama
-06|BI|Bío-Bío
-07|CO|Coquimbo
-08|LI|O'Higgins
-09|LL|Los Lagos
-10|MA|Magallanes y Antartica Chilena
-11|ML|Maule
-12|RM|Santiago Metropolitan Region
-13|TA|Tarapacá
-14|LR|Los Ríos
-15|AP|Arica and Parinacota
+| ID    | Short label | Label                                               |
+| ----- | ----------- | --------------------------------------------------- |
+| CL.AP | AP          | Región de Arica y Parinacota                        |
+| CL.TA | TA          | Región de Tarapacá                                  |
+| CL.AN | AN          | Región de Antofagasta                               |
+| CL.AT | AT          | Región de Atacama                                   |
+| CL.CO | CO          | Región de Coquimbo                                  |
+| CL.VS | VS          | Región de Valparaíso                                |
+| CL.RM | RM          | Región Metropolitana de Santiago                    |
+| CL.LI | LI          | Región del Libertador General Bernardo O'Higgins    |
+| CL.ML | ML          | Región del Maule                                    |
+| CL.NB | NB          | Región de Ñuble                                     |
+| CL.BI | BI          | Región del Biobío                                   |
+| CL.AR | AR          | Región de La Araucanía                              |
+| CL.LR | LR          | Región de Los Ríos                                  |
+| CL.LL | LL          | Región de Los Lagos                                 |
+| CL.AI | AI          | Región de Aysén del General Carlos Ibáñez del Campo |
+| CL.MA | MA          | Región de Magallanes y de la Antártica Chilena      |
