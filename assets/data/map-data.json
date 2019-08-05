@@ -6984,13 +6984,8 @@
               },
               {
                 "name": "MaeHongSon",
-                "alias": "maeHongSon",
-                "specSheet": "/maps/spec-sheets/maeHongSon"
-              },
-              {
-                "name": "MahaSarakham",
-                "alias": "mahasarakham",
-                "specSheet": "/maps/spec-sheets/MahaSarakham"
+                "alias": "maehongson",
+                "specSheet": "/maps/spec-sheets/maehongson"
               }
             ]
           },
