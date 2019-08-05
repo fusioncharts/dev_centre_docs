@@ -6886,6 +6886,376 @@
                 "name": "Bangkok",
                 "alias": "bangkok",
                 "specSheet": "/maps/spec-sheets/bangkok"
+              },
+              {
+                "name": "BuengKan",
+                "alias": "buengkan",
+                "specSheet": "/maps/spec-sheets/buengkan"
+              },
+              {
+                "name": "Buriram",
+                "alias": "buriram",
+                "specSheet": "/maps/spec-sheets/buriram"
+              },
+              {
+                "name": "Chachoengsao",
+                "alias": "chachoengsao",
+                "specSheet": "/maps/spec-sheets/chachoengsao"
+              },
+              {
+                "name": "ChaiNat",
+                "alias": "chainat",
+                "specSheet": "/maps/spec-sheets/chainat"
+              },
+              {
+                "name": "Chaiyaphum",
+                "alias": "chaiyaphum",
+                "specSheet": "/maps/spec-sheets/chaiyaphum"
+              },
+              {
+                "name": "Chanthaburi",
+                "alias": "chanthaburi",
+                "specSheet": "/maps/spec-sheets/chanthaburi"
+              },
+              {
+                "name": "ChiangMai",
+                "alias": "chiangmai",
+                "specSheet": "/maps/spec-sheets/chiangmai"
+              },
+              {
+                "name": "ChiangRai",
+                "alias": "chiangrai",
+                "specSheet": "/maps/spec-sheets/chiangrai"
+              },
+              {
+                "name": "Chonburi",
+                "alias": "chonburi",
+                "specSheet": "/maps/spec-sheets/chonburi"
+              },
+              {
+                "name": "Chumphon",
+                "alias": "chumphon",
+                "specSheet": "/maps/spec-sheets/chumphon"
+              },
+              {
+                "name": "Kalasin",
+                "alias": "kalasin",
+                "specSheet": "/maps/spec-sheets/kalasin"
+              },
+              {
+                "name": "KamphaengPhet",
+                "alias": "kamphaengphet",
+                "specSheet": "/maps/spec-sheets/kamphaengphet"
+              },
+              {
+                "name": "Kanchanaburi",
+                "alias": "kanchanaburi",
+                "specSheet": "/maps/spec-sheets/kanchanaburi"
+              },
+              {
+                "name": "KhonKaen",
+                "alias": "khonkaen",
+                "specSheet": "/maps/spec-sheets/khonkaen"
+              },
+              {
+                "name": "Krabi",
+                "alias": "krabi",
+                "specSheet": "/maps/spec-sheets/krabi"
+              },
+              {
+                "name": "Lampang",
+                "alias": "lampang",
+                "specSheet": "/maps/spec-sheets/lampang"
+              },
+              {
+                "name": "Lamphun",
+                "alias": "lamphun",
+                "specSheet": "/maps/spec-sheets/lamphun"
+              },
+              {
+                "name": "Loei",
+                "alias": "loei",
+                "specSheet": "/maps/spec-sheets/loei"
+              },
+              {
+                "name": "Lopburi",
+                "alias": "lopburi",
+                "specSheet": "/maps/spec-sheets/lopburi"
+              },
+              {
+                "name": "MaeHongSon",
+                "alias": "maeHongSon",
+                "specSheet": "/maps/spec-sheets/maeHongSon"
+              },
+              {
+                "name": "MahaSarakham",
+                "alias": "mahasarakham",
+                "specSheet": "/maps/spec-sheets/MahaSarakham"
+              },
+              {
+                "name": "Mukdahan",
+                "alias": "mukdahan",
+                "specSheet": "/maps/spec-sheets/mukdahan"
+              },
+              {
+                "name": "NakhonNayok",
+                "alias": "nakhonnayok",
+                "specSheet": "/maps/spec-sheets/nakhonnayok"
+              },
+              {
+                "name": "NakhonPathom",
+                "alias": "nakhonpathom",
+                "specSheet": "/maps/spec-sheets/nakhonpathom"
+              },
+              {
+                "name": "NakhonPhanom",
+                "alias": "nakhonphanom",
+                "specSheet": "/maps/spec-sheets/nakhonphanom"
+              },
+              {
+                "name": "NakhonRatchasima",
+                "alias": "nakhonratchasima",
+                "specSheet": "/maps/spec-sheets/nakhonratchasima"
+              },
+              {
+                "name": "NakhonSawan",
+                "alias": "nakhonsawan",
+                "specSheet": "/maps/spec-sheets/nakhonsawan"
+              },
+              {
+                "name": "NakhonSiThammarat",
+                "alias": "nakhonsithammarat",
+                "specSheet": "/maps/spec-sheets/nakhonsithammarat"
+              },
+              {
+                "name": "Nan",
+                "alias": "nan",
+                "specSheet": "/maps/spec-sheets/nan"
+              },
+              {
+                "name": "Narathiwat",
+                "alias": "narathiwat",
+                "specSheet": "/maps/spec-sheets/narathiwat"
+              },
+              {
+                "name": "NongBuaLamPhu",
+                "alias": "nongbualamphu",
+                "specSheet": "/maps/spec-sheets/nongbualamphu"
+              },
+              {
+                "name": "NongKhai",
+                "alias": "nongkhai",
+                "specSheet": "/maps/spec-sheets/nongkhai"
+              },
+              {
+                "name": "Nonthaburi",
+                "alias": "nonthaburi",
+                "specSheet": "/maps/spec-sheets/nonthaburi"
+              },
+              {
+                "name": "PathumThani",
+                "alias": "pathumthani",
+                "specSheet": "/maps/spec-sheets/pathumthani"
+              },
+              {
+                "name": "Pattani",
+                "alias": "pattani",
+                "specSheet": "/maps/spec-sheets/pattani"
+              },
+              {
+                "name": "PhangNga",
+                "alias": "phangnga",
+                "specSheet": "/maps/spec-sheets/phangnga"
+              },
+              {
+                "name": "Phatthalung",
+                "alias": "phatthalung",
+                "specSheet": "/maps/spec-sheets/phatthalung"
+              },
+              {
+                "name": "Phayao",
+                "alias": "phayao",
+                "specSheet": "/maps/spec-sheets/phayao"
+              },
+              {
+                "name": "Phetchabun",
+                "alias": "phetchabun",
+                "specSheet": "/maps/spec-sheets/phetchabun"
+              },
+              {
+                "name": "Phetchaburi",
+                "alias": "phetchaburi",
+                "specSheet": "/maps/spec-sheets/phetchaburi"
+              },
+              {
+                "name": "Phichit",
+                "alias": "phichit",
+                "specSheet": "/maps/spec-sheets/phichit"
+              },
+              {
+                "name": "Phitsanulok",
+                "alias": "phitsanulok",
+                "specSheet": "/maps/spec-sheets/phitsanulok"
+              },
+              {
+                "name": "PhraNakhonSiAyutthaya",
+                "alias": "phranakhonsiayutthaya",
+                "specSheet": "/maps/spec-sheets/phranakhonsiayutthaya"
+              },
+              {
+                "name": "Phrae",
+                "alias": "phrae",
+                "specSheet": "/maps/spec-sheets/phrae"
+              },
+              {
+                "name": "Phuket",
+                "alias": "phuket",
+                "specSheet": "/maps/spec-sheets/phuket"
+              },
+              {
+                "name": "Prachinburi",
+                "alias": "prachinburi",
+                "specSheet": "/maps/spec-sheets/prachinburi"
+              },
+              {
+                "name": "PrachuapKhiriKhan",
+                "alias": "prachuapkhirikhan",
+                "specSheet": "/maps/spec-sheets/prachuapkhirikhan"
+              },
+              {
+                "name": "Ranong",
+                "alias": "ranong",
+                "specSheet": "/maps/spec-sheets/ranong"
+              },
+              {
+                "name": "Ratchaburi",
+                "alias": "ratchaburi",
+                "specSheet": "/maps/spec-sheets/ratchaburi"
+              },
+              {
+                "name": "Rayong",
+                "alias": "rayong",
+                "specSheet": "/maps/spec-sheets/rayong"
+              },
+              {
+                "name": "RoiEt",
+                "alias": "roiet",
+                "specSheet": "/maps/spec-sheets/roiet"
+              },
+              {
+                "name": "SaKaeo",
+                "alias": "sakaeo",
+                "specSheet": "/maps/spec-sheets/sakaeo"
+              },
+              {
+                "name": "SakonNakhon",
+                "alias": "sakonnakhon",
+                "specSheet": "/maps/spec-sheets/sakonnakhon"
+              },
+              {
+                "name": "SamutPrakan",
+                "alias": "samutprakan",
+                "specSheet": "/maps/spec-sheets/samutprakan"
+              },
+              {
+                "name": "SamutSakhon",
+                "alias": "samutsakhon",
+                "specSheet": "/maps/spec-sheets/samutsakhon"
+              },
+              {
+                "name": "SamutSongkhram",
+                "alias": "samutsongkhram",
+                "specSheet": "/maps/spec-sheets/samutsongkhram"
+              },
+              {
+                "name": "Saraburi",
+                "alias": "saraburi",
+                "specSheet": "/maps/spec-sheets/saraburi"
+              },
+              {
+                "name": "Satun",
+                "alias": "satun",
+                "specSheet": "/maps/spec-sheets/satun"
+              },
+              {
+                "name": "SingBuri",
+                "alias": "singburi",
+                "specSheet": "/maps/spec-sheets/singburi"
+              },
+              {
+                "name": "Sisaket",
+                "alias": "sisaket",
+                "specSheet": "/maps/spec-sheets/sisaket"
+              },
+              {
+                "name": "Songkhla",
+                "alias": "songkhla",
+                "specSheet": "/maps/spec-sheets/songkhla"
+              },
+              {
+                "name": "Sukhothai",
+                "alias": "sukhothai",
+                "specSheet": "/maps/spec-sheets/sukhothai"
+              },
+              {
+                "name": "SuphanBuri",
+                "alias": "suphanburi",
+                "specSheet": "/maps/spec-sheets/suphanburi"
+              },
+              {
+                "name": "SuratThani",
+                "alias": "suratthani",
+                "specSheet": "/maps/spec-sheets/suratthani"
+              },
+              {
+                "name": "Surin",
+                "alias": "surin",
+                "specSheet": "/maps/spec-sheets/surin"
+              },
+              {
+                "name": "Tak",
+                "alias": "tak",
+                "specSheet": "/maps/spec-sheets/tak"
+              },
+              {
+                "name": "Trang",
+                "alias": "trang",
+                "specSheet": "/maps/spec-sheets/trang"
+              },
+              {
+                "name": "Trat",
+                "alias": "trat",
+                "specSheet": "/maps/spec-sheets/trat"
+              },
+              {
+                "name": "UbonRatchathani",
+                "alias": "ubonratchathani",
+                "specSheet": "/maps/spec-sheets/ubonratchathani"
+              },
+              {
+                "name": "UdonThani",
+                "alias": "udonyhani",
+                "specSheet": "/maps/spec-sheets/udonthani"
+              },
+              {
+                "name": "UthaiThani",
+                "alias": "uthaithani",
+                "specSheet": "/maps/spec-sheets/uthaithani"
+              },
+              {
+                "name": "Uttaradit",
+                "alias": "uttaradit",
+                "specSheet": "/maps/spec-sheets/uttaradit"
+              },
+              {
+                "name": "Yala",
+                "alias": "yala",
+                "specSheet": "/maps/spec-sheets/yala"
+              },
+              {
+                "name": "Yasothon",
+                "alias": "yasothon",    
+                "specSheet": "/maps/spec-sheets/yasothon"
               }
             ]
           },
