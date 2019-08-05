@@ -6875,7 +6875,12 @@
               {
                 "name": "Amnat Charoen",
                 "alias": "amnatcharoen",
-                "specSheet": "/maps/spec-sheets/amnatCharoen"
+                "specSheet": "/maps/spec-sheets/amnatcharoen"
+              },
+              {
+                "name": "AngThong",
+                "alias": "angthong",
+                "specSheet": "/maps/spec-sheets/angthong"
               }
             ]
           },
