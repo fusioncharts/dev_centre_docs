@@ -24,4 +24,3 @@ Dimensions (Width x Height): 545x974
 | TH.LG.SP | SP          | Sop Prap       |
 | TH.LG.HC | HC          | Hang Chat      |
 | TH.LG.PA | PA          | Mueang Pan     |
-
