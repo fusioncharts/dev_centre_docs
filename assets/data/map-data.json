@@ -8266,6 +8266,72 @@
             "markerData": "/maps/marker-data/benin"
           },
           {
+            "name": "Benin (Separate Departments)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Alibori",
+                "alias": "alibori",
+                "specSheet": "/maps/spec-sheets/alibori"
+              },
+              {
+                "name": "Atakora",
+                "alias": "atakora",
+                "specSheet": "/maps/spec-sheets/atakora"
+              },
+              {
+                "name": "Atlantique",
+                "alias": "atlantique",
+                "specSheet": "/maps/spec-sheets/atlantique"
+              },
+              {
+                "name": "Borgou",
+                "alias": "borgou",
+                "specSheet": "/maps/spec-sheets/borgou"
+              },
+              {
+                "name": "Collines",
+                "alias": "collines",
+                "specSheet": "/maps/spec-sheets/collines"
+              },
+              {
+                "name": "Donga",
+                "alias": "donga",
+                "specSheet": "/maps/spec-sheets/donga"
+              },
+              {
+                "name": "Kouffo",
+                "alias": "kouffo",
+                "specSheet": "/maps/spec-sheets/kouffo"
+              },
+              {
+                "name": "Littoral",
+                "alias": "littoral",
+                "specSheet": "/maps/spec-sheets/littoral"
+              },
+              {
+                "name": "Mono",
+                "alias": "mono",
+                "specSheet": "/maps/spec-sheets/mono"
+              },
+              {
+                "name": "Oueme",
+                "alias": "oueme",
+                "specSheet": "/maps/spec-sheets/oueme"
+              },
+              {
+                "name": "Plateau",
+                "alias": "plateau",
+                "specSheet": "/maps/spec-sheets/plateau"
+              },
+              {
+                "name": "Zou",
+                "alias": "zou",
+                "specSheet": "/maps/spec-sheets/zou"
+              }
+            ]
+          },
+          {
             "name": "Botswana",
             "alias": "botswana",
             "specSheet": "/maps/spec-sheets/botswana",
