@@ -7,10 +7,6 @@
 Map Name: Saopaulo
 Dimensions (Width x Height): 1616x1033
 
-
-
-
-
 ### List of Entities
 
 ID | Short label | Label
