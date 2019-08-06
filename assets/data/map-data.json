@@ -8814,10 +8814,61 @@
             "markerData": "/maps/marker-data/guinea"
           },
           {
-            "name": "Guinea-Bissau",
+            "name": "Guinea Bissau",
             "alias": "guineabissau",
             "specSheet": "/maps/spec-sheets/guineabissau",
             "markerData": "/maps/marker-data/guineabissau"
+          },
+          {
+            "name": "Guinea Bissau (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                  "name": "Bafata",
+                  "alias": "bafata",
+                  "specSheet": "/maps/shec-sheets/bafata"
+              },
+              {
+                  "name": "Biombo",
+                  "alias": "biombo",
+                  "specSheet": "/maps/shec-sheets/biombo"
+              },
+              {
+                  "name": "Bissau",
+                  "alias": "bissau",
+                  "specSheet": "/maps/shec-sheets/bissau"
+              },
+              {
+                  "name": "Bolama",
+                  "alias": "bolama",
+                  "specSheet": "/maps/shec-sheets/bolama"
+              },
+              {
+                  "name": "Cacheu",
+                  "alias": "cacheu",
+                  "specSheet": "/maps/shec-sheets/cacheu"
+              },
+              {
+                  "name": "Gabu",
+                  "alias": "gabu",
+                  "specSheet": "/maps/shec-sheets/gabu"
+              },
+              {
+                  "name": "Oio",
+                  "alias": "oio",
+                  "specSheet": "/maps/shec-sheets/oio"
+              },
+              {
+                  "name": "Quinara",
+                  "alias": "quinara",
+                  "specSheet": "/maps/shec-sheets/quinara"
+              },
+              {
+                  "name": "Tombali",
+                  "alias": "tombali",
+                  "specSheet": "/maps/shec-sheets/tombali"
+              }
+            ]
           },
           {
             "name": "Kenya",
