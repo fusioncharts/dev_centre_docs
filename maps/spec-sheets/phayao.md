@@ -9,9 +9,14 @@ Dimensions (Width x Height): 545x974
 
 ### List of Entities
 
-| ID       | Short label | Label               |
-| -------- | ----------- | ------------------- |
-| TH.NN.NN | NN          | Mueang Nakhon Nayok |
-| TH.NN.PP | PP          | Pak Phli            |
-| TH.NN.BN | BN          | Ban Na              |
-| TH.NN.ON | ON          | Ongkharak           |
+| ID        | Short label | Label         |
+| --------- | ----------- | ------------- |
+| TH.PY.PHd | PHd         | Mueang Phayao |
+| TH.PY.CHd | CHd         | Chun          |
+| TH.PY.CKd | CKd         | Chiang Kham   |
+| TH.PY.CMd | CMd         | Chiang Muan   |
+| TH.PY.DKd | DKd         | Dok Khamtai   |
+| TH.PY.POd | POd         | Pong          |
+| TH.PY.MCd | MCd         | Mae Chai      |
+| TH.PY.PSd | PSd         | Phu Sang      |
+| TH.PY.PKd | PKd         | Phu Kamyao    |
