@@ -8421,37 +8421,37 @@
               {
                 "name": "Bale",
                 "alias": "bale",
-                "specSheet": "/maps/spec-sheets/bale"
+                "specSheet": "/maps/spec-sheets/Bale"
               },
               {
                 "name": "Bam",
                 "alias": "bam",
-                "specSheet": "/maps/spec-sheets/bam"
+                "specSheet": "/maps/spec-sheets/Bam"
               },
               {
                 "name": "Banwa",
                 "alias": "banwa",
-                "specSheet": "/maps/spec-sheets/banwa"
+                "specSheet": "/maps/spec-sheets/Banwa"
               },
               {
                 "name": "Bazega",
                 "alias": "bazega",
-                "specSheet": "/maps/spec-sheets/bazega"
+                "specSheet": "/maps/spec-sheets/Bazega"
               },
               {
                 "name": "Bougouriba",
                 "alias": "bougouriba",
-                "specSheet": "/maps/spec-sheets/bougouriba"
+                "specSheet": "/maps/spec-sheets/Bougouriba"
               },
               {
                 "name": "Boulgou",
                 "alias": "boulgou",
-                "specSheet": "/maps/spec-sheets/boulgou"
+                "specSheet": "/maps/spec-sheets/Boulgou"
               },
               {
                 "name": "Boulkiemde",
                 "alias": "boulkiemde",
-                "specSheet": "/maps/spec-sheets/boulkiemde"
+                "specSheet": "/maps/spec-sheets/Boulkiemde"
               },
               {
                 "name": "Comoe",
@@ -8461,187 +8461,187 @@
               {
                 "name": "Ganzourgou",
                 "alias": "ganzourgou",
-                "specSheet": "/maps/spec-sheets/ganzourgou"
+                "specSheet": "/maps/spec-sheets/Ganzourgou"
               },
               {
                 "name": "Gnagna",
                 "alias": "gnagna",
-                "specSheet": "/maps/spec-sheets/gnagna"
+                "specSheet": "/maps/spec-sheets/Gnagna"
               },
               {
                 "name": "Gourma",
                 "alias": "gourma",
-                "specSheet": "/maps/spec-sheets/gourma"
+                "specSheet": "/maps/spec-sheets/Gourma"
               },
               {
                 "name": "Houet",
                 "alias": "houet",
-                "specSheet": "/maps/spec-sheets/houet"
+                "specSheet": "/maps/spec-sheets/Houet"
               },
               {
                 "name": "Ioba",
                 "alias": "ioba",
-                "specSheet": "/maps/spec-sheets/ioba"
+                "specSheet": "/maps/spec-sheets/Ioba"
               },
               {
                 "name": "Kadiogo",
                 "alias": "kadiogo",
-                "specSheet": "/maps/spec-sheets/kadiogo"
+                "specSheet": "/maps/spec-sheets/Kadiogo"
               },
               {
                 "name": "Kenedougou",
                 "alias": "kenedougou",
-                "specSheet": "/maps/spec-sheets/kenedougou"
+                "specSheet": "/maps/spec-sheets/Kenedougou"
               },
               {
                 "name": "Komondjari",
                 "alias": "komondjari",
-                "specSheet": "/maps/spec-sheets/komondjari"
+                "specSheet": "/maps/spec-sheets/Komondjari"
               },
               {
                 "name": "Kompienga",
                 "alias": "kompienga",
-                "specSheet": "/maps/spec-sheets/kompienga"
+                "specSheet": "/maps/spec-sheets/Kompienga"
               },
               {
                 "name": "Kossi",
                 "alias": "kossi",
-                "specSheet": "/maps/spec-sheets/kossi"
+                "specSheet": "/maps/spec-sheets/Kossi"
               },
               {
                 "name": "Koulpelogo",
                 "alias": "koulpelogo",
-                "specSheet": "/maps/spec-sheets/koulpelogo"
+                "specSheet": "/maps/spec-sheets/Koulpelogo"
               },
               {
                 "name": "Kouritenga",
                 "alias": "kouritenga",
-                "specSheet": "/maps/spec-sheets/kouritenga"
+                "specSheet": "/maps/spec-sheets/Kouritenga"
               },
               {
                 "name": "Kourweogo",
                 "alias": "kourweogo",
-                "specSheet": "/maps/spec-sheets/kourweogo"
+                "specSheet": "/maps/spec-sheets/Kourweogo"
               },
               {
                 "name": "Leraba",
                 "alias": "leraba",
-                "specSheet": "/maps/spec-sheets/leraba"
+                "specSheet": "/maps/spec-sheets/Leraba"
               },
               {
                 "name": "Loroum",
                 "alias": "loroum",
-                "specSheet": "/maps/spec-sheets/loroum"
+                "specSheet": "/maps/spec-sheets/Loroum"
               },
               {
                 "name": "Mouhoun",
                 "alias": "mouhoun",
-                "specSheet": "/maps/spec-sheets/mouhoun"
+                "specSheet": "/maps/spec-sheets/Mouhoun"
               },
               {
                 "name": "Nahouri",
                 "alias": "nahouri",
-                "specSheet": "/maps/spec-sheets/nahouri"
+                "specSheet": "/maps/spec-sheets/Nahouri"
               },
               {
                 "name": "Namentenga",
                 "alias": "namentenga",
-                "specSheet": "/maps/spec-sheets/namentenga"
+                "specSheet": "/maps/spec-sheets/Namentenga"
               },
               {
                 "name": "Nayala",
                 "alias": "nayala",
-                "specSheet": "/maps/spec-sheets/nayala"
+                "specSheet": "/maps/spec-sheets/Nayala"
               },
               {
                 "name": "Noumbiel",
                 "alias": "noumbiel",
-                "specSheet": "/maps/spec-sheets/noumbiel"
+                "specSheet": "/maps/spec-sheets/Noumbiel"
               },
               {
                 "name": "Oubritenga",
                 "alias": "oubritenga",
-                "specSheet": "/maps/spec-sheets/oubritenga"
+                "specSheet": "/maps/spec-sheets/Oubritenga"
               },
               {
                 "name": "Oudalan",
                 "alias": "oudalan",
-                "specSheet": "/maps/spec-sheets/oudalan"
+                "specSheet": "/maps/spec-sheets/Oudalan"
               },
               {
                 "name": "Passore",
                 "alias": "passore",
-                "specSheet": "/maps/spec-sheets/passore"
+                "specSheet": "/maps/spec-sheets/Passore"
               },
               {
                 "name": "Poni",
                 "alias": "poni",
-                "specSheet": "/maps/spec-sheets/poni"
+                "specSheet": "/maps/spec-sheets/Poni"
               },
               {
                 "name": "Sanguie",
                 "alias": "sanguie",
-                "specSheet": "/maps/spec-sheets/sanguie"
+                "specSheet": "/maps/spec-sheets/Sanguie"
               },
               {
                 "name": "Sanmatenga",
                 "alias": "sanmatenga",
-                "specSheet": "/maps/spec-sheets/sanmatenga"
+                "specSheet": "/maps/spec-sheets/Sanmatenga"
               },
               {
                 "name": "Seno",
                 "alias": "seno",
-                "specSheet": "/maps/spec-sheets/seno"
+                "specSheet": "/maps/spec-sheets/Seno"
               },
               {
                 "name": "Sissili",
                 "alias": "sissili",
-                "specSheet": "/maps/spec-sheets/sissili"
+                "specSheet": "/maps/spec-sheets/Sissili"
               },
               {
                 "name": "Soum",
                 "alias": "soum",
-                "specSheet": "/maps/spec-sheets/soum"
+                "specSheet": "/maps/spec-sheets/Soum"
               },
               {
                 "name": "Sourou",
                 "alias": "sourou",
-                "specSheet": "/maps/spec-sheets/sourou"
+                "specSheet": "/maps/spec-sheets/Sourou"
               },
               {
                 "name": "Tapoa",
                 "alias": "tapoa",
-                "specSheet": "/maps/spec-sheets/tapoa"
+                "specSheet": "/maps/spec-sheets/Tapoa"
               },
               {
                 "name": "Tuy",
                 "alias": "tuy",
-                "specSheet": "/maps/spec-sheets/tuy"
+                "specSheet": "/maps/spec-sheets/Tuy"
               },
               {
                 "name": "Yagha",
                 "alias": "yagha",
-                "specSheet": "/maps/spec-sheets/yagha"
+                "specSheet": "/maps/spec-sheets/Yagha"
               },
               {
                 "name": "Yatenga",
                 "alias": "yatenga",
-                "specSheet": "/maps/spec-sheets/yatenga"
+                "specSheet": "/maps/spec-sheets/Yatenga"
               },
               {
                 "name": "Ziro",
                 "alias": "ziro",
-                "specSheet": "/maps/spec-sheets/ziro"
+                "specSheet": "/maps/spec-sheets/Ziro"
               },
               {
                 "name": "Zondoma",
                 "alias": "zondoma",
-                "specSheet": "/maps/spec-sheets/zondoma"
+                "specSheet": "/maps/spec-sheets/Zondoma"
               },
               {
                 "name": "Zoundweogo",
                 "alias": "zoundweogo",
-                "specSheet": "/maps/spec-sheets/zoundweogo"
+                "specSheet": "/maps/spec-sheets/Zoundweogo"
               }
             ]
           },
