@@ -8670,6 +8670,102 @@
             "markerData": "/maps/marker-data/centralafricanrepublic"
           },
           {
+            "name": "Central African Republic (Separate Prefectures)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Bamingui Bangoran",
+                "alias": "baminguibangoran",
+                "specSheet": "/maps/spec-sheets/baminguibangoran"
+              },
+              {
+                "name": "Bangui",
+                "alias": "bangui",
+                "specSheet": "/maps/spec-sheets/bangui"
+              },
+              {
+                "name": "BasseKotto",
+                "alias": "bassekotto",
+                "specSheet": "/maps/spec-sheets/bassekotto"
+              },
+              {
+                "name": "Central African Republic",
+                "alias": "centralafricanrepublic",
+                "specSheet": "/maps/spec-sheets/centralafricanrepublic"
+              },
+              {
+                "name": "HauteKotto",
+                "alias": "hautekotto",
+                "specSheet": "/maps/spec-sheets/hautekotto"
+              },
+              {
+                "name": "HautMBomou",
+                "alias": "hautmbomou",
+                "specSheet": "/maps/spec-sheets/hautmbomou"
+              },
+              {
+                "name": "Kemo",
+                "alias": "kemo",
+                "specSheet": "/maps/spec-sheets/kemo"
+              },
+              {
+                "name": "Lobaye",
+                "alias": "lobaye",
+                "specSheet": "/maps/spec-sheets/lobaye"
+              },
+              {
+                "name": "Mambere Kadei",
+                "alias": "mamberekadei",
+                "specSheet": "/maps/spec-sheets/mamberekadei"
+              },
+              {
+                "name": "Mbomou",
+                "alias": "mbomou",
+                "specSheet": "/maps/spec-sheets/mbomou"
+              },
+              {
+                "name": "Nana Grebizi",
+                "alias": "nanagrebizi",
+                "specSheet": "/maps/spec-sheets/nanagrebizi"
+              },
+              {
+                "name": "Nana Mambere",
+                "alias": "nanamambere",
+                "specSheet": "/maps/spec-sheets/nanamambere"
+              },
+              {
+                "name": "Ombella MPoko",
+                "alias": "ombellampoko",
+                "specSheet": "/maps/spec-sheets/ombellampoko"
+              },
+              {
+                "name": "Ouaka",
+                "alias": "ouaka",
+                "specSheet": "/maps/spec-sheets/ouaka"
+              },
+              {
+                "name": "Ouham",
+                "alias": "ouham",
+                "specSheet": "/maps/spec-sheets/ouham"
+              },
+              {
+                "name": "Ouham Pende",
+                "alias": "ouhampende",
+                "specSheet": "/maps/spec-sheets/ouhampende"
+              },
+              {
+                "name": "Sangha Mbaere",
+                "alias": "sanghambaere",
+                "specSheet": "/maps/spec-sheets/sanghambaere"
+              },
+              {
+                "name": "Vakaga",
+                "alias": "vakaga",
+                "specSheet": "/maps/spec-sheets/vakaga"
+              }
+            ]
+          },
+          {
             "name": "Chad",
             "alias": "chad",
             "specSheet": "/maps/spec-sheets/chad",
@@ -8826,47 +8922,47 @@
               {
                 "name": "Bafata",
                 "alias": "bafata",
-                "specSheet": "/maps/shec-sheets/bafata"
+                "specSheet": "/maps/spec-sheets/bafata"
               },
               {
                 "name": "Biombo",
                 "alias": "biombo",
-                "specSheet": "/maps/shec-sheets/biombo"
+                "specSheet": "/maps/spec-sheets/biombo"
               },
               {
                 "name": "Bissau",
                 "alias": "bissau",
-                "specSheet": "/maps/shec-sheets/bissau"
+                "specSheet": "/maps/spec-sheets/bissau"
               },
               {
                 "name": "Bolama",
                 "alias": "bolama",
-                "specSheet": "/maps/shec-sheets/bolama"
+                "specSheet": "/maps/spec-sheets/bolama"
               },
               {
                 "name": "Cacheu",
                 "alias": "cacheu",
-                "specSheet": "/maps/shec-sheets/cacheu"
+                "specSheet": "/maps/spec-sheets/cacheu"
               },
               {
                 "name": "Gabu",
                 "alias": "gabu",
-                "specSheet": "/maps/shec-sheets/gabu"
+                "specSheet": "/maps/spec-sheets/gabu"
               },
               {
                 "name": "Oio",
                 "alias": "oio",
-                "specSheet": "/maps/shec-sheets/oio"
+                "specSheet": "/maps/spec-sheets/oio"
               },
               {
                 "name": "Quinara",
                 "alias": "quinara",
-                "specSheet": "/maps/shec-sheets/quinara"
+                "specSheet": "/maps/spec-sheets/quinara"
               },
               {
                 "name": "Tombali",
                 "alias": "tombali",
-                "specSheet": "/maps/shec-sheets/tombali"
+                "specSheet": "/maps/spec-sheets/tombali"
               }
             ]
           },

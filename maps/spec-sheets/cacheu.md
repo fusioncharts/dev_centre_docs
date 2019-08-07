@@ -17,3 +17,4 @@ Dimensions (Width x Height): 680x420
 | GW.CA.CI | CI          | Caio         |
 | GW.CA.CN | CN          | Canghungo    |
 | GW.CA.SD | SD          | São Domingos |
+ls
