@@ -9003,6 +9003,57 @@
             "markerData": "/maps/marker-data/mali"
           },
           {
+            "name": "Mali (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Bamako",
+                "alias": "bamako",
+                "specSheet": "/maps/spec-sheets/bamako"
+              },
+              {
+                "name": "Gao",
+                "alias": "gao",
+                "specSheet": "/maps/spec-sheets/gao"
+              },
+              {
+                "name": "Kayes",
+                "alias": "kayes",
+                "specSheet": "/maps/spec-sheets/kayes"
+              },
+              {
+                "name": "Kidal",
+                "alias": "kidal",
+                "specSheet": "/maps/spec-sheets/kidal"
+              },
+              {
+                "name": "Koulikoro",
+                "alias": "koulikoro",
+                "specSheet": "/maps/spec-sheets/koulikoro"
+              },
+              {
+                "name": "Mopti",
+                "alias": "mopti",
+                "specSheet": "/maps/spec-sheets/mopti"
+              },
+              {
+                "name": "Ségou",
+                "alias": "segou",
+                "specSheet": "/maps/spec-sheets/segou"
+              },
+              {
+                "name": "Sikasso",
+                "alias": "sikasso",
+                "specSheet": "/maps/spec-sheets/sikasso"
+              },
+              {
+                "name": "Tombouctou",
+                "alias": "tombouctou",
+                "specSheet": "/maps/spec-sheets/tombouctou"
+              }
+            ]
+          },
+          {
             "name": "Mauritania",
             "alias": "mauritania",
             "specSheet": "/maps/spec-sheets/mauritania",
