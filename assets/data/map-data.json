@@ -9114,6 +9114,82 @@
             "markerData": "/maps/marker-data/senegal"
           },
           {
+            "name": "Senegal (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Dakar",
+                "alias": "dakar",
+                "specSheet": "/maps/spec-sheets/dakar"
+              },
+              {
+                "name": "Diourbel",
+                "alias": "diourbel",
+                "specSheet": "/maps/spec-sheets/diourbel"
+              },
+              {
+                "name": "Kaffrine",
+                "alias": "kaffrine",
+                "specSheet": "/maps/spec-sheets/kaffrine"
+              },
+              {
+                "name": "Kaolack",
+                "alias": "kaolack",
+                "specSheet": "/maps/spec-sheets/kaolack"
+              },
+              {
+                "name": "Kedougou",
+                "alias": "kedougou",
+                "specSheet": "/maps/spec-sheets/kedougou"
+              },
+              {
+                "name": "Kolda",
+                "alias": "kolda",
+                "specSheet": "/maps/spec-sheets/kolda"
+              },
+              {
+                "name": "Louga",
+                "alias": "louga",
+                "specSheet": "/maps/spec-sheets/louga"
+              },
+              {
+                "name": "Matam",
+                "alias": "matam",
+                "specSheet": "/maps/spec-sheets/matam"
+              },
+              {
+                "name": "Saint Louis",
+                "alias": "saint louis",
+                "specSheet": "/maps/spec-sheets/saint louis"
+              },
+              {
+                "name": "Sedhiou",
+                "alias": "sedhiou",
+                "specSheet": "/maps/spec-sheets/sedhiou"
+              },
+              {
+                "name": "Senegal Departments",
+                "alias": "senegal departments",
+                "specSheet": "/maps/spec-sheets/senegal departments"
+              },
+              {
+                "name": "Tambacounda",
+                "alias": "tambacounda",
+                "specSheet": "/maps/spec-sheets/tambacounda"
+              },
+              {
+                "name": "Thiès",
+                "alias": "thiès",
+                "specSheet": "/maps/spec-sheets/thiès"
+              },
+              {
+                "name": "Ziguinchor",
+                "alias": "ziguinchor",
+                "specSheet": "/maps/spec-sheets/ziguinchor"
+              }
+            ]
+          },
+          {
             "name": "Seychelles",
             "alias": "seychelles",
             "specSheet": "/maps/spec-sheets/seychelles"
