@@ -8904,6 +8904,62 @@
             "markerData": "/maps/marker-data/ghana"
           },
           {
+            "name": "Ghana (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Ashanti Region",
+                "alias": "ashanti",
+                "specSheet": "/maps/spec-sheets/ashanti"
+              },
+              {
+                "name": "Brong-Ahafo Region",
+                "alias": "brongahafo",
+                "specSheet": "/maps/spec-sheets/brongahafo "
+              },
+              {
+                "name": "Central Region",
+                "alias": "centralghana",
+                "specSheet": "/maps/spec-sheets/centralghana "
+              },
+              {
+                "name": "Eastern Region",
+                "alias": "easternghana",
+                "specSheet": "/maps/spec-sheets/easternghana"
+              },
+              {
+                "name": "Greater Accra Region",
+                "alias": "greateraccra",
+                "specSheet": "/maps/spec-sheets/greateraccra "
+              },
+              {
+                "name": "Northern Region",
+                "alias": "northernghana",
+                "specSheet": "/maps/spec-sheets/northernghana"
+              },
+              {
+                "name": "Upper East Region",
+                "alias": "uppereastghana",
+                "specSheet": "/maps/spec-sheets/uppereastghana"
+              },
+              {
+                "name": "Upper West Region",
+                "alias": "upperwestghana",
+                "specSheet": "/maps/spec-sheets/upperwestghana "
+              },
+              {
+                "name": "Volta Region",
+                "alias": "volta",
+                "specSheet": "/maps/spec-sheets/volta"
+              },
+              {
+                "name": "Western Region",
+                "alias": "westernghana",
+                "specSheet": "/maps/spec-sheets/westernghana"
+              }
+            ]
+          },
+          {
             "name": "Guinea",
             "alias": "guinea",
             "specSheet": "/maps/spec-sheets/guinea",
