@@ -8915,12 +8915,12 @@
               {
                 "name": "Brong-Ahafo Region",
                 "alias": "brongahafo",
-                "specSheet": "/maps/spec-sheets/brongahafo "
+                "specSheet": "/maps/spec-sheets/brongahafo"
               },
               {
                 "name": "Central Region",
                 "alias": "centralghana",
-                "specSheet": "/maps/spec-sheets/centralghana "
+                "specSheet": "/maps/spec-sheets/centralghana"
               },
               {
                 "name": "Eastern Region",
@@ -8930,7 +8930,7 @@
               {
                 "name": "Greater Accra Region",
                 "alias": "greateraccra",
-                "specSheet": "/maps/spec-sheets/greateraccra "
+                "specSheet": "/maps/spec-sheets/greateraccra"
               },
               {
                 "name": "Northern Region",
@@ -8945,7 +8945,7 @@
               {
                 "name": "Upper West Region",
                 "alias": "upperwestghana",
-                "specSheet": "/maps/spec-sheets/upperwestghana "
+                "specSheet": "/maps/spec-sheets/upperwestghana"
               },
               {
                 "name": "Volta Region",
