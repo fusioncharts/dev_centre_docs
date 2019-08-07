@@ -118,3 +118,89 @@ The `.aspx` template for the above sample is shown below:
 </body>
 </html>
 ```
+
+## Scroll Area Chart
+
+Now, let's learn how to create a Scrollable Area Chart. The code remains the same as that of the scroll line chart. The only difference is instead of instantiating a linne chart you have to instantiate an area chart. Create a `ScrollAreaChart.aspx.cs` and refer to the code below:
+
+## Render the Chart
+
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace FusionChartsVisualisationWebFormsSamples.Samples {
+    public partial class ScrollChart : System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable ChartData = new DataTable();
+            string query = "select * from MonthlyRevenue";
+            string connectionstring = null;
+            string serverName = "FusionChartsServer";
+            string databaseName = "FusionchartsSamplesDB";
+            ChartData.Clear();
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
+            using (SqlConnection con = new SqlConnection(connectionstring))
+            {
+                con.Open();
+                using (SqlCommand command = new SqlCommand(query, con))
+                using (SqlDataAdapter da = new SqlDataAdapter(command))
+                {
+                    da.Fill(ChartData);
+                }
+            }
+            StaticSource source = new StaticSource(ChartData);
+            DataModel model = new DataModel();
+            model.DataSources.Add(source);
+            Charts.AreaChart area = new Charts.AreaChart("scroll_chart_db");
+            area.Scrollable = true;
+            area.Data.Source = model;
+            area.Caption.Text = "Sales Trends";
+            area.SubCaption.Text = "2016-2017";
+            area.XAxis.Text = "Month";
+            area.YAxis.Text = "Revenue";
+            area.Width.Pixel(600);
+            area.Height.Pixel(500);
+            Literal1.Text = area.Render();
+        }
+    }
+}
+```
+
+The `.aspx` template for the above sample is shown below:
+
+```html
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollAreaChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollAreaChart" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+       <form id="form1" runat="server">
+        <div>
+            <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
+        </div>
+        <div>
+            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
+        </div>
+    </form>
+</body>
+</html>
+```
+
+The chart is shown below:
+
+{% embed_chart standard-charts-scroll-charts-example-3.js %}
+
+Click [here](https://dotnetfiddle.net/TFomJU) to edit the scroll area chart.
