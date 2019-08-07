@@ -2259,7 +2259,8 @@
           },
           {
             "title": "Filter Chart Data",
-            "path": "/fusioncharts-aspnet-visualization/getting-started/filter-chart-data-using-fusioncharts-net"
+            "path": "/fusioncharts-aspnet-visualization/getting-started/filter-chart-data-using-fusioncharts-net",
+            "visibility": false
           },
           {
             "title": "Change Theme",
@@ -2300,7 +2301,8 @@
           },
           {
             "title": "Scroll Charts",
-            "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net"
+            "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net",
+            "visibility" : false
           },
           {
             "title": "Combination Charts",
@@ -2406,10 +2408,6 @@
             "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-overview"
           },
           {
-            "title": "Data Engine APIs",
-            "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-api"
-          },
-          {
             "title": "Data Source",
             "path": "/fusioncharts-aspnet-visualization/data-engine/data-source-data-engine"
           },
@@ -2452,6 +2450,10 @@
           {
             "title": "Pagination",
             "path": "/fusioncharts-aspnet-visualization/data-engine/pagination"
+          },
+          {
+            "title": "Data Engine APIs",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-api"
           }
         ]
       },

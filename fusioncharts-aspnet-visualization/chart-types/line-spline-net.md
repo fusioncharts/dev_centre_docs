@@ -137,7 +137,110 @@ The `.aspx` template for the above sample is shown below:
 </html>
 
 ```
+## Scroll Line Chart
 
+Now, let's learn how to create a Scrollable Line Chart. The chart will look as shown below:
+
+{% embed_chart standard-charts-scroll-charts-example-2.js %}
+
+Click [here](https://dotnetfiddle.net/Irr2ht) to edit the scroll line chart.
+
+## Render the Chart
+
+Create the `ScrollLineChart.aspx.cs` file and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` .dll files.
+* Create `DataTable`.
+* Retrieve data using database query.
+* Set `serverName`.
+* Set `DataBase` name.
+* Connect with `DataBase` using a `connectionstring`.
+* Create `StaticSource` using the `DataTable`.
+* Create an instance of `DataModel` class.
+* Add `DataSource` to the `DataModel`.
+* Instantiate `column` chart.
+* Set chart width.
+* Set chart height.
+* Set the `Scrollable` property of the chart to `true`.
+* Set `DataModel` instance as the data source of the chart.
+* Set chart title.
+* Finally, use a container using `<div>` to render the chart.
+
+The code is shown below:
+
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace FusionChartsVisualisationWebFormsSamples.Samples {
+    public partial class ScrollChart : System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable ChartData = new DataTable();
+            string query = "select * from MonthlyRevenue";
+            string connectionstring = null;
+            string serverName = "FusionChartsServer";
+            string databaseName = "FusionchartsSamplesDB";
+            ChartData.Clear();
+            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
+            using (SqlConnection con = new SqlConnection(connectionstring))
+            {
+                con.Open();
+                using (SqlCommand command = new SqlCommand(query, con))
+                using (SqlDataAdapter da = new SqlDataAdapter(command))
+                {
+                    da.Fill(ChartData);
+                }
+            }
+            StaticSource source = new StaticSource(ChartData);
+            DataModel model = new DataModel();
+            model.DataSources.Add(source);
+            Charts.LineChart line = new Charts.LineChart("scroll_chart_db");
+            line.Scrollable = true;
+            line.Data.Source = model;
+            line.Caption.Text = "Sales Trends";
+            line.SubCaption.Text = "2016-2017";
+            line.XAxis.Text = "Month";
+            line.YAxis.Text = "Revenue";
+            line.Width.Pixel(600);
+            line.Height.Pixel(500);
+            Literal1.Text = line.Render();
+        }
+    }
+}
+```
+
+The `.aspx` template for the above sample is shown below:
+
+```html
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollLineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollLineChart" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
+        </div>
+        <div>
+            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
+        </div>
+    </form>
+</body>
+</html>
+```
 ## Spline Chart
 
 Now, let's learn how to create a spline chart with the same data. The code remains the same as that of the Line chart. The only difference is instead of instantiating a line chart you have to instantiate a spline chart. Create a `splineChart.aspx.cs` and refer to the code below:
