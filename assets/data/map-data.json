@@ -8978,6 +8978,57 @@
             "markerData": "/maps/marker-data/gabon"
           },
           {
+            "name": "Gabon (Separate Provinces)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Estuaire (Libreville)",
+                "alias": "estuaire",
+                "specSheet": "/maps/spec-sheets/estuaire"
+              },
+              {
+                "name": "Haut-Ogooué (Franceville)",
+                "alias": "hautogooue",
+                "specSheet": "/maps/spec-sheets/hautogooue"
+              },
+              {
+                "name": "Moyen-Ogooué (Lambaréné)",
+                "alias": "moyenogooue",
+                "specSheet": "/maps/spec-sheets/moyenogooue"
+              },
+              {
+                "name": "Ngounié (Mouila)",
+                "alias": "ngounie",
+                "specSheet": "/maps/spec-sheets/ngounie"
+              },
+              {
+                "name": "Nyanga (Tchibanga)",
+                "alias": "nyanga",
+                "specSheet": "/maps/spec-sheets/nyanga"
+              },
+              {
+                "name": "Ogooué-Ivindo (Makokou)",
+                "alias": "ogooueivindo",
+                "specSheet": "/maps/spec-sheets/ogooueivindo"
+              },
+              {
+                "name": "Ogooué-Lolo (Koulamoutou)",
+                "alias": "ogoouelolo",
+                "specSheet": "/maps/spec-sheets/ogoouelolo"
+              },
+              {
+                "name": "Ogooué-Maritime (Port-Gentil)",
+                "alias": "ogoouemaritime",
+                "specSheet": "/maps/spec-sheets/ogoouemaritime"
+              },
+              {
+                "name": "Woleu-Ntem (Oyem)",
+                "alias": "woleuntem",
+                "specSheet": "/maps/spec-sheets/woleuntem"
+              }
+            ]
+          },
+          {
             "name": "Gambia",
             "alias": "gambia",
             "specSheet": "/maps/spec-sheets/gambia",
