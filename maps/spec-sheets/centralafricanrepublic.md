@@ -4,32 +4,27 @@
 
 #### JavaScript Alias: maps/centralafricanrepublic
 
-Map Name: Centralafricanrepublic
-Dimensions (Width x Height): 450x310
-
-
-
-
+Map Name: Central African Republic
+Dimensions (Width x Height): 600x460
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
-CF.BB|BB|Bamingui Bangoran
-CF.BG|BG|Bangui
-CF.BK|BK|Basse Kotto
-CF.HM|HM|Haut Mbomou
-CF.HK|HK|Haute Kotto
-CF.KG|KG|Kemo
-CF.LB|LB|Lobaye
-CF.HS|HS|Mambere-Kadei
-CF.MB|MB|Mbomou
-CF.KB|KB|Nana Grebizi
-CF.NM|NM|Nana Mambere
-CF.MP|MP|Ombella M'poko
-CF.UK|UK|Ouaka
-CF.AC|AC|Ouham
-CF.OP|OP|Ouham Pende
-CF.SE|SE|Sangha Mbaere
+CF.SE|SE|Sangha-Mbaéré
+CF.BG|BG|Bangui (AC)
 CF.VK|VK|Vakaga
-
+CF.BB|BB|Bamingui-Bangoran
+CF.HK|HK|Haute-Kotto
+CF.HM|HM|Haut-Mbomou
+CF.MB|MB|Mbomou
+CF.BK|BK|Basse-Kotto
+CF.UK|UK|Ouaka
+CF.KB|KB|Nana-Grébizi
+CF.KG|KG|Kémo
+CF.AC|AC|Ouham
+CF.MP|MP|Ombella-M\'Poko
+CF.LB|LB|Lobaye
+CF.OP|OP|Ouham-Pendé
+CF.NM|NM|Nana-Mambéré
+CF.HS|HS|Mambéré-Kadéï

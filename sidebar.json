@@ -17,7 +17,7 @@
             "title": "Plain JavaScript",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -37,7 +37,7 @@
                 "title": "Usage Guide",
                 "children": [
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/plain-javascript/configure-your-chart-using-plain-javascript"
                   },
                   {
@@ -113,7 +113,7 @@
                 "title": "AngularJS (v1.x)",
                 "children": [
                   {
-                    "title": "Creating Your First Chart",
+                    "title": "Creating your First Chart",
                     "children": [
                       {
                         "title": "Your First Chart",
@@ -133,11 +133,11 @@
                     "title": "Usage Guide",
                     "children": [
                       {
-                        "title": "Configuring Your Chart",
+                        "title": "Configuring your Chart",
                         "path": "/getting-started/angular/angularjs/configure-your-chart-using-angularjs"
                       },
                       {
-                        "title": "Adding Drill Down",
+                        "title": "Adding Drill-Down",
                         "path": "/getting-started/angular/angularjs/add-drill-down-using-angularjs"
                       },
                       {
@@ -206,7 +206,7 @@
                 "title": "Angular (v2.x & Above)",
                 "children": [
                   {
-                    "title": "Creating Your First Chart",
+                    "title": "Creating your First Chart",
                     "children": [
                       {
                         "title": "Your First Chart",
@@ -226,11 +226,11 @@
                     "title": "Usage Guide",
                     "children": [
                       {
-                        "title": "Configuring Your Chart",
+                        "title": "Configuring your Chart",
                         "path": "/getting-started/angular/angular/configure-your-chart-using-angular"
                       },
                       {
-                        "title": "Adding Drill Down",
+                        "title": "Adding Drill-Down",
                         "path": "/getting-started/angular/angular/add-drill-down-using-angular"
                       },
                       {
@@ -297,7 +297,7 @@
             "title": "React",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -317,11 +317,11 @@
                 "title": "Usage Guide",
                 "children": [
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/react/configure-your-chart-using-react"
                   },
                   {
-                    "title": "Adding Drill Down Charts",
+                    "title": "Adding Drill-Down Charts",
                     "path": "/getting-started/react/add-drill-down-using-react"
                   },
                   {
@@ -390,7 +390,7 @@
             "title": "React Native",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -410,7 +410,7 @@
                 "title": "Usage Guide",
                 "children": [
                   {
-                    "title": "Adding Drill Down Charts",
+                    "title": "Adding Drill-Down Charts",
                     "path": "/getting-started/react-native/add-drill-down-using-react-native"
                   },
                   {
@@ -438,7 +438,7 @@
             "title": "Vue",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -458,11 +458,11 @@
                 "title": "Usage Guide",
                 "children": [
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/vue/configure-your-chart-using-vuejs"
                   },
                   {
-                    "title": "Adding Drill Down",
+                    "title": "Adding Drill-Down",
                     "path": "/getting-started/vue/add-drill-down-using-vuejs"
                   },
                   {
@@ -531,7 +531,7 @@
             "title": "jQuery",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -551,11 +551,11 @@
                 "title": "Usage Guide",
                 "children": [
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/jquery/configure-your-chart-using-jquery"
                   },
                   {
-                    "title": "Adding Drill Down",
+                    "title": "Adding Drill-Down",
                     "path": "/getting-started/jquery/add-drill-down-using-jquery"
                   },
                   {
@@ -628,7 +628,7 @@
             "title": "Ember",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -648,11 +648,11 @@
                 "title": "Usage Guide",
                 "children": [
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/ember/configure-your-chart-using-ember"
                   },
                   {
-                    "title": "Adding Drill Down",
+                    "title": "Adding Drill-Down",
                     "path": "/getting-started/ember/add-drill-down-using-ember"
                   },
                   {
@@ -721,7 +721,7 @@
             "title": "PHP",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -745,11 +745,11 @@
                     "path": "/getting-started/php/create-charts-in-php-using-database"
                   },
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/php/configure-your-chart-using-php"
                   },
                   {
-                    "title": "Adding Drill Down",
+                    "title": "Adding Drill-Down",
                     "path": "/getting-started/php/add-drill-down-using-php"
                   },
                   {
@@ -806,7 +806,7 @@
             "title": "Java",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -830,11 +830,11 @@
                     "path": "/getting-started/java/create-charts-in-java-using-database"
                   },
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/java/configure-your-chart-using-java"
                   },
                   {
-                    "title": "Adding Drill Down",
+                    "title": "Adding Drill-Down",
                     "path": "/getting-started/java/add-drill-down-using-java"
                   },
                   {
@@ -891,7 +891,7 @@
             "title": "ASP.NET",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -915,11 +915,11 @@
                     "path": "/getting-started/aspnet/create-charts-in-aspnet-using-database"
                   },
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/aspnet/configure-your-chart-using-aspnet"
                   },
                   {
-                    "title": "Adding Drill Down",
+                    "title": "Adding Drill-Down",
                     "path": "/getting-started/aspnet/add-drill-down-using-aspnet"
                   },
                   {
@@ -972,7 +972,7 @@
             "title": "Django",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -996,11 +996,11 @@
                     "path": "/getting-started/django/create-charts-in-django-using-database"
                   },
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/django/configure-your-chart-using-django"
                   },
                   {
-                    "title": "Adding Drill Down",
+                    "title": "Adding Drill-Down",
                     "path": "/getting-started/django/add-drill-down-using-django"
                   },
                   {
@@ -1057,7 +1057,7 @@
             "title": "Ruby on Rails",
             "children": [
               {
-                "title": "Creating Your First Chart",
+                "title": "Creating your First Chart",
                 "children": [
                   {
                     "title": "Your First Chart",
@@ -1077,15 +1077,15 @@
                 "title": "Usage Guide",
                 "children": [
                   {
-                    "title": "Create Charts in ROR Using Database",
+                    "title": "Create Charts in ROR using Database",
                     "path": "/getting-started/ruby-on-rails/create-charts-in-ruby-on-rails-using-database"
                   },
                   {
-                    "title": "Configuring Your Chart",
+                    "title": "Configuring your Chart",
                     "path": "/getting-started/ruby-on-rails/configure-your-chart-using-ruby-on-rails"
                   },
                   {
-                    "title": "Adding Drill Down",
+                    "title": "Adding Drill-Down",
                     "path": "/getting-started/ruby-on-rails/add-drill-down-using-ruby-on-rails"
                   },
                   {
@@ -1137,7 +1137,7 @@
         ]
       },
       {
-        "title": "Configuring Your Charts",
+        "title": "Configuring your charts",
         "children": [
           {
             "title": "By Chart Type",
@@ -1162,7 +1162,7 @@
                     "path": "/chart-guide/standard-charts/pie-and-doughnut-charts"
                   },
                   {
-                    "title": "Multi-series Charts",
+                    "title": "Multi-Series Charts",
                     "path": "/chart-guide/standard-charts/multi-series-charts"
                   },
                   {
@@ -1266,7 +1266,7 @@
                     "path": "/chart-guide/standard-charts/spline-charts"
                   },
                   {
-                    "title": "Inverse Y-axis Chart",
+                    "title": "Inverse Y Axis Chart",
                     "path": "/chart-guide/standard-charts/inverse-y-axis-chart"
                   },
                   {
@@ -1290,7 +1290,7 @@
                     "path": "/chart-guide/standard-charts/drag-node-chart"
                   },
                   {
-                    "title": "Real-time Charts\t",
+                    "title": "Real-Time Charts\t",
                     "path": "/chart-guide/standard-charts/real-time-charts"
                   }
                 ]
@@ -1311,7 +1311,7 @@
                     "path": "/chart-guide/gauges-and-widgets/cylinder-gauge"
                   },
                   {
-                    "title": "LED Gauge",
+                    "title": "Led Gauge",
                     "path": "/chart-guide/gauges-and-widgets/led-gauge"
                   },
                   {
@@ -1336,7 +1336,7 @@
                     "path": "/map-guide/setup"
                   },
                   {
-                    "title": "Simple Data-driven Map",
+                    "title": "Simple Data Driven Map",
                     "path": "/map-guide/simple-data-driven-maps"
                   },
                   {
@@ -1424,7 +1424,7 @@
                 "path": "/chart-guide/chart-configurations/chart-palettes"
               },
               {
-                "title": "Chart Limits",
+                "title": "Chart Limits ",
                 "path": "/chart-guide/chart-configurations/chart-limits"
               },
               {
@@ -1514,11 +1514,11 @@
                 ]
               },
               {
-                "title": "Positioning Annotations Using Absolute Values",
+                "title": "Positioning Annotations using Absolute Values",
                 "path": "/chart-guide/chart-configurations/annotations/positioning-annotations-using-absolute-values"
               },
               {
-                "title": "Positioning Annotations Using Macros",
+                "title": "Positioning Annotations using Macros",
                 "path": "/chart-guide/chart-configurations/annotations/positioning-annotations-using-macros"
               },
               {
@@ -1647,7 +1647,7 @@
                 "path": "/common-use-cases/change-chart-properties-at-runtime"
               },
               {
-                "title": "Color Range Use Cases",
+                "title": "Color Range Usecases",
                 "path": "/common-use-cases/color-range-usecases"
               },
               {
@@ -1683,7 +1683,7 @@
                 "path": "/common-use-cases/render-thumbnail-versions-of-chart"
               },
               {
-                "title": "Create Interactive Charts Using PHP and MySQL Database",
+                "title": "Create Interactive Charts using PHP and MySQL Database",
                 "path": "/using-with-server-side-languages/tutorials/php-mysql-charts",
                 "visibility": false
               }
@@ -2059,7 +2059,8 @@
               },
               {
                 "title": "GroupBy",
-                "path": "/fusiontime/fusiontime-data-engine/groupby"
+                "path": "/fusiontime/fusiontime-data-engine/groupby",
+                "visibility": false
               },
               {
                 "title": "Pivot",
@@ -2127,77 +2128,77 @@
         "title": "Tutorials",
         "children": [
           {
-            "title": "Export Chart as Image",
+            "title": "Export chart as image",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-chart-as-image"
           },
           {
-            "title": "Change the Export Type",
+            "title": "Change the export type",
             "path": "/exporting-charts/using-fusionexport/tutorials/change-the-export-type"
           },
           {
-            "title": "Export Charts as Bulk",
+            "title": "Export charts as bulk",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk"
           },
           {
-            "title": "Change the Export Quality",
+            "title": "Change the export quality",
             "path": "/exporting-charts/using-fusionexport/tutorials/change-the-export-quality"
           },
           {
-            "title": "Customize the Width and Height of an Exported Chart",
+            "title": "Customize the width and height of an exported chart",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart"
           },
           {
-            "title": "Export in Bulk Using Multiple JSON Files",
+            "title": "Export in bulk using multiple json files",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files"
           },
           {
-            "title": "Export the Output Files in ZIP Format",
+            "title": "Export the output files as a zip",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip"
           },
           {
-            "title": "Override the Chart Config",
+            "title": "Override the chart config",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/override-the-chart-config"
           },
           {
-            "title": "Export a Dashboard",
+            "title": "Export a dashboard",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-a-dashboard"
           },
           {
-            "title": "Add a Logo or a Heading to the Dashboard",
+            "title": "Add a logo or a heading to the dashboard",
             "path": "/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard"
           },
           {
-            "title": "Convert an SVG Image to PNG/JPEG/PDF Format",
+            "title": "Convert an SVG image to PNG/JPEG/PDF",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf"
           },
           {
-            "title": "Inject Extra JavaScript While Exporting",
+            "title": "Inject extra JavaScript while exporting",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting"
           },
           {
-            "title": "Manipulate the Output Filename",
+            "title": "Manipulate the output filename",
             "path": "/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename"
           },
           {
-            "title": "Enable Logging",
+            "title": "Enable logging",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/enabling-logging"
           },
           {
-            "title": "Save Exported Files to S3",
+            "title": "Save exported files to S3",
             "path": "/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three"
           },
           {
-            "title": "Asynchronous Capture",
+            "title": "Asynchronous capture",
             "path": "/exporting-charts/using-fusionexport/tutorials/asynchronous-capture"
           },
           {
-            "title": "Export a D3 Chart",
+            "title": "Export a D3 chart",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart"
           },
           {
@@ -2209,7 +2210,7 @@
             "path": "/exporting-charts/using-fusionexport/tutorials/custom-version-of-fusioncharts-in-fusionexport"
           },
           {
-            "title": "Export PDF Files in Print Format",
+            "title": "Export PDF files in Print Format",
             "path": "/exporting-charts/using-fusionexport/tutorials/export-pdf-files-in-print-format"
           },
           {
@@ -2282,12 +2283,13 @@
             "path": "/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net"
           },
           {
-            "title": "Create Your First Chart",
+            "title": "Create your First Chart",
             "path": "/fusioncharts-aspnet-visualization/getting-started/create-first-chart-using-fusioncharts-net"
           },
           {
             "title": "Filter Chart Data",
-            "path": "/fusioncharts-aspnet-visualization/getting-started/filter-chart-data-using-fusioncharts-net"
+            "path": "/fusioncharts-aspnet-visualization/getting-started/filter-chart-data-using-fusioncharts-net",
+            "visibility": false
           },
           {
             "title": "Change Theme",
@@ -2324,11 +2326,13 @@
           },
           {
             "title": "Overlapped Charts",
-            "path": "/fusioncharts-aspnet-visualization/chart-types/overlapped-chart-net"
+            "path": "/fusioncharts-aspnet-visualization/chart-types/overlapped-chart-net",
+            "visibility" : false
           },
           {
             "title": "Scroll Charts",
-            "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net"
+            "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net",
+            "visibility" : false
           },
           {
             "title": "Combination Charts",
@@ -2356,7 +2360,7 @@
         "title": "Chart Components",
         "children": [
           {
-            "title": "Caption and Sub-caption",
+            "title": "Caption and Sub-Caption",
             "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-caption-sub-caption"
           },
           {
@@ -2434,10 +2438,6 @@
             "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-overview"
           },
           {
-            "title": "Data Engine APIs",
-            "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-api"
-          },
-          {
             "title": "Data Source",
             "path": "/fusioncharts-aspnet-visualization/data-engine/data-source-data-engine"
           },
@@ -2480,6 +2480,10 @@
           {
             "title": "Pagination",
             "path": "/fusioncharts-aspnet-visualization/data-engine/pagination"
+          },
+          {
+            "title": "Data Engine APIs",
+            "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-api"
           }
         ]
       },

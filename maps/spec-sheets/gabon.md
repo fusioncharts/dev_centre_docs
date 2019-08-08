@@ -7,21 +7,16 @@
 Map Name: Gabon
 Dimensions (Width x Height): 310x340
 
-
-
-
-
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-GA.ES|ES|Estuaire
-GA.HO|HO|Haut-Ogooue
-GA.MO|MO|Moyen-Ogooue
-GA.NG|NG|Ngounie
-GA.NY|NY|Nyanga
-GA.OI|OI|Ogooue-Ivindo
-GA.OL|OL|Ogooue-Lolo
-GA.OM|OM|Ogooue-Maritime
-GA.WN|WN|Woleu-Ntem
-
+| ID    | Short label | Label                         |
+| ----- | ----------- | ----------------------------- |
+| GA.ES | ES          | Estuaire (Libreville)         |
+| GA.HO | HO          | Haut-Ogooué (Franceville)     |
+| GA.MO | MO          | Moyen-Ogooué (Lambaréné)      |
+| GA.NG | NG          | Ngounié (Mouila)              |
+| GA.NY | NY          | Nyanga (Tchibanga)            |
+| GA.OI | OI          | Ogooué-Ivindo (Makokou)       |
+| GA.OL | OL          | Ogooué-Lolo (Koulamoutou)     |
+| GA.OM | OM          | Ogooué-Maritime (Port-Gentil) |
+| GA.WN | WN          | Woleu-Ntem (Oyem)             |
