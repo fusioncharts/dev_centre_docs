@@ -9167,6 +9167,52 @@
             "markerData": "/maps/marker-data/niger"
           },
           {
+            "name": "Niger (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Agadez",
+                "alias": "agadez",
+                "specSheet": "/maps/spec-sheets/agadez"
+              },
+              {
+                "name": "Diffa",
+                "alias": "diffa",
+                "specSheet": "/maps/spec-sheets/diffa"
+              },
+              {
+                "name": "Dosso",
+                "alias": "dosso",
+                "specSheet": "/maps/spec-sheets/dosso"
+              },
+              {
+                "name": "Maradi",
+                "alias": "maradi",
+                "specSheet": "/maps/spec-sheets/maradi"
+              },
+              {
+                "name": "Niamey (capital district)",
+                "alias": "niamey",
+                "specSheet": "/maps/spec-sheets/niamey"
+              },
+              {
+                "name": "Tahoua",
+                "alias": "tahoua",
+                "specSheet": "/maps/spec-sheets/tahoua"
+              },
+              {
+                "name": "Tillabéri",
+                "alias": "tillaberi",
+                "specSheet": "/maps/spec-sheets/tillaberi"
+              },
+              {
+                "name": "Zinder",
+                "alias": "zinder",
+                "specSheet": "/maps/spec-sheets/zinder"
+              }
+            ]
+          },
+          {
             "name": "Nigeria",
             "alias": "nigeria",
             "specSheet": "/maps/spec-sheets/nigeria",
