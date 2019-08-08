@@ -6,7 +6,7 @@ heading: Stacked Charts
 
 > These chart types belong to **FusionCharts XT**.
 
-Stacked charts are similar to [multi-series charts](/chart-guide/standard-charts/multi-series-charts), but plot datasets on top of each other, instead of the clustered side-by-side placement adopted by multi-series charts. Stacked charts help in displaying the cumulative magnitude of two or more data series. They help in representing a data value as a sum of two or more values. Each data series can be distinguished by the color of its section in the stack.
+Stacked charts are used when the focus of the chart is to compare the totals and a part of the totals. In Stacked charts, the datasets are plotted on top of each other. Stacked charts help in displaying the cumulative magnitude of two or more data series. Different colors are used to illustrate the data series in the stack.
 
 The FusionCharts Suite XT includes the following types of stacked charts:
 
