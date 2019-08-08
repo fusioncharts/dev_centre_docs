@@ -9053,11 +9053,6 @@
             "markerData": "/maps/marker-data/malawi"
           },
           {
-            "name": "Malawi Regions",
-            "alias": "malawiregion",
-            "specSheet": "/maps/spec-sheets/malawiregion"
-          },
-          {
             "name": "Malawi (Sub Regions)",
             "marker": false,
             "members": [
