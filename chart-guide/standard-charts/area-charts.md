@@ -14,6 +14,8 @@ The area chart in 2D looks like:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-6.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/x5FBh/) to edit the area chart.
+
 In the above chart:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
@@ -29,8 +31,6 @@ In the above chart:
 To render an area chart with the same use case as above, set the `type` to `area`.
 
 For a detailed list of attributes, refer to the [chart attributes](https://www.fusioncharts.com/dev/chart-attributes?chart=area2d) page of an area chart.
-
-Click [here](http://jsfiddle.net/fusioncharts/x5FBh/) to edit the area chart.
 
 ## Area Chart with Multiple Data Plots
 
