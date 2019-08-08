@@ -1228,7 +1228,7 @@
               {
                 "name": "Nordland",
                 "alias": "nordland",
-                "specSheet": "/maps/spec-sheets/Nordland"
+                "specSheet": "/maps/spec-sheets/nordland"
               },
               {
                 "name": "Oslo",
@@ -3743,8 +3743,8 @@
               },
               {
                 "name": "American Samoa Congressional",
-                "alias": "Americansamoacongressional",
-                "specSheet": "/maps/spec-sheets/Americansamoacongressional"
+                "alias": "americansamoacongressional",
+                "specSheet": "/maps/spec-sheets/americansamoacongressional"
               },
               {
                 "name": "Arizona Congressional",
@@ -4450,8 +4450,8 @@
           },
           {
             "name": "Val Paraiso",
-            "alias": "val paraiso",
-            "specSheet": "/maps/spec-sheets/val paraiso"
+            "alias": "valparaiso",
+            "specSheet": "/maps/spec-sheets/valparaiso"
           }
         ]
       },
@@ -4694,7 +4694,7 @@
       {
         "name": "Asia (No Middle-East)",
         "alias": "asia3",
-        "specSheet": "/maps/spec-sheets/Asia-Middle-East"
+        "specSheet": "/maps/spec-sheets/asia-middle-east"
       },
       {
         "name": "Countries",
@@ -7076,7 +7076,7 @@
               {
                 "name": "MahaSarakham",
                 "alias": "mahasarakham",
-                "specSheet": "/maps/spec-sheets/MahaSarakham"
+                "specSheet": "/maps/spec-sheets/mahasarakham"
               },
               {
                 "name": "Mukdahan",
@@ -9378,8 +9378,8 @@
               },
               {
                 "name": "Senegal Departments",
-                "alias": "senegal departments",
-                "specSheet": "/maps/spec-sheets/senegal departments"
+                "alias": "senegaldepartments",
+                "specSheet": "/maps/spec-sheets/senegaldepartments"
               },
               {
                 "name": "Tambacounda",
@@ -9388,8 +9388,8 @@
               },
               {
                 "name": "Thiès",
-                "alias": "thiès",
-                "specSheet": "/maps/spec-sheets/thiès"
+                "alias": "thies",
+                "specSheet": "/maps/spec-sheets/thies"
               },
               {
                 "name": "Ziguinchor",
@@ -9810,8 +9810,8 @@
               },
               {
                 "name": "Loh Djiboua",
-                "alias": "loh djiboua",
-                "specSheet": "/maps/spec-sheets/loh djiboua"
+                "alias": "lohdjiboua",
+                "specSheet": "/maps/spec-sheets/lohdjiboua"
               },
               {
                 "name": "Marahoue",
