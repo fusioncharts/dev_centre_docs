@@ -12,7 +12,9 @@ In this article, we will learn how to create an Area chart and it's variations. 
 
 The area chart in 2D looks like:
 
-<Insert chart here>
+{% embed_data standard-charts-multi-series-charts-example-6.js %}
+
+In the above chart:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
@@ -40,7 +42,7 @@ For a detailed list of attributes, refer to the [chart attributes](https://www.f
 
 A multi-series area chart looks like:
 
-<Insert chart here>
+{% embed_data standard-charts-multi-series-charts-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/jf73mv1e/) to edit the above multi-series chart.
 
@@ -52,9 +54,9 @@ Let's create a scroll area 2D chart to plot the sales trends for FY 2012 - FY 20
 
 To render a scroll area chart in 2D, change the value of the `type` attribute to `scrollarea2d`. For a detailed list of attributes, refer to the [chart attributes](https://www.fusioncharts.com/dev/chart-attributes/?chart=scrollarea2d) page of scroll area 2D chart.
 
-A single-series scroll area chart in 2D looks like:
+A scroll area chart in 2D looks like:
 
-<Insert chart here>
+{% embed_data standard-charts-scroll-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/7neLV/) to edit the scroll area 2D chart.
 
