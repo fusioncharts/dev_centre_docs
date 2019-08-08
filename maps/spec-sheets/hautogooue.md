@@ -1,0 +1,22 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/hautogooue
+
+Map Name: Haut-Ogooué (Franceville)
+Dimensions (Width x Height): 310x340
+
+### List of Entities
+
+| ID    | Short label | Label                         |
+| ----- | ----------- | ----------------------------- |
+| GA.ES | ES          | Estuaire (Libreville)         |
+| GA.HO | HO          | Haut-Ogooué (Franceville)     |
+| GA.MO | MO          | Moyen-Ogooué (Lambaréné)      |
+| GA.NG | NG          | Ngounié (Mouila)              |
+| GA.NY | NY          | Nyanga (Tchibanga)            |
+| GA.OI | OI          | Ogooué-Ivindo (Makokou)       |
+| GA.OL | OL          | Ogooué-Lolo (Koulamoutou)     |
+| GA.OM | OM          | Ogooué-Maritime (Port-Gentil) |
+| GA.WN | WN          | Woleu-Ntem (Oyem)             |
