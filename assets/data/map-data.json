@@ -9551,9 +9551,9 @@
             "marker": false,
             "members": [
               {
-                "name": "Abidjan",
-                "alias": "abidjan",
-                "specSheet": "/maps/spec-sheets/abidjan"
+                "name": "Abidjan Autonomous District",
+                "alias": "abidjanautonomousdistrict",
+                "specSheet": "/maps/spec-sheets/abidjanautonomousdistrict"
               },
               {
                 "name": "AgnebyTiassa",
