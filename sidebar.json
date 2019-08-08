@@ -133,7 +133,7 @@
                         },
                         {
                             "title": "Create area charts",
-                            "path": "chart-guide/standard-charts/line-area-and-column-charts"
+                            "path": "/chart-guide/standard-charts/area-charts"
                         },
                         {
                             "title": "Chart configurations",
