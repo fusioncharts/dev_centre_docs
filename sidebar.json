@@ -421,6 +421,105 @@
                             "path": ""
                         }
                     ]
+                },
+                {
+                    "title": "Stacked Charts",
+                    "children": [{
+                            "title": "Chart anatomy",
+                            "path": ""
+                        },
+                        {
+                            "title": "Create stacked charts",
+                            "path": ""
+                        },
+                        {
+                            "title": "Chart configurations",
+                            "children": [{
+                                    "title": "Change size",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Border & background",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Number formats",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load external logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                }
+
+
+                            ]
+                        },
+                        {
+                            "title": "Chart components",
+                            "children": [{
+                                    "title": "Caption & sub-caption",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Canvas",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Data plot",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Anchors",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Y-axis",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "X-axis",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Trendlines & Trendzones",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Tooltips",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Toolbar",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Legend",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Div lines & grids",
+                                    "path": ""
+                                }
+
+                            ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
+                        }
+                    ]
                 }
 
 
