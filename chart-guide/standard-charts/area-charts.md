@@ -12,7 +12,7 @@ In this article, we will learn how to create an area chart and it's variations. 
 
 The area chart in 2D looks like:
 
-{% embed_all standard-charts-multi-series-charts-example-6.js %}
+{% embed_all standard-charts-line-area-and-column-charts-example-6.js %}
 
 In the above chart:
 
