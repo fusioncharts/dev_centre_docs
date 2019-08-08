@@ -8,11 +8,11 @@ Area charts are used to display quantitative data. An area chart is similar to t
 
 ## Area Chart with Single Data Plot
 
-In this article, we will learn how to create an Area chart and it's variations. First, let's create a simple area chart showcasing the total number of visitors at Bakersfield Central in a week. We have plotted the days along the x-axis and the number of visitors along the y-axis.
+In this article, we will learn how to create an area chart and it's variations. First, let's create a simple area chart showcasing the total number of visitors at Bakersfield Central in a week. We have plotted the days along the x-axis and the number of visitors along the y-axis.
 
 The area chart in 2D looks like:
 
-{% embed_data standard-charts-multi-series-charts-example-6.js %}
+{% embed_all standard-charts-multi-series-charts-example-6.js %}
 
 In the above chart:
 
@@ -42,7 +42,7 @@ For a detailed list of attributes, refer to the [chart attributes](https://www.f
 
 A multi-series area chart looks like:
 
-{% embed_data standard-charts-multi-series-charts-example-6.js %}
+{% embed_all standard-charts-multi-series-charts-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/jf73mv1e/) to edit the above multi-series chart.
 
@@ -56,7 +56,7 @@ To render a scroll area chart in 2D, change the value of the `type` attribute to
 
 A scroll area chart in 2D looks like:
 
-{% embed_data standard-charts-scroll-charts-example-3.js %}
+{% embed_all standard-charts-scroll-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/7neLV/) to edit the scroll area 2D chart.
 
