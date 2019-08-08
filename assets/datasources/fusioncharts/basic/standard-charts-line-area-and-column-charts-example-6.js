@@ -8,7 +8,7 @@
         "chart": {
             "theme": "fusion",
             "caption": "Number of visitors last week",
-            "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+            "subCaption": "Bakersfield Central",
             "xAxisName": "Day"
         },
         "data": [{
