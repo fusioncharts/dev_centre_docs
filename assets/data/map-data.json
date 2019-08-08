@@ -9035,6 +9035,52 @@
             "markerData": "/maps/marker-data/gambia"
           },
           {
+            "name": "Gambia (Separate Government Areas)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Banjul",
+                "alias": "banjul",
+                "specSheet": "/maps/spec-sheets/banjul"
+              },
+              {
+                "name": "Basse",
+                "alias": "basse",
+                "specSheet": "/maps/spec-sheets/basse"
+              },
+              {
+                "name": "Brikama",
+                "alias": "brikama",
+                "specSheet": "/maps/spec-sheets/brikama"
+              },
+              {
+                "name": "Janjanbureh",
+                "alias": "janjanbureh",
+                "specSheet": "/maps/spec-sheets/janjanbureh"
+              },
+              {
+                "name": "Kanifing",
+                "alias": "kanifing",
+                "specSheet": "/maps/spec-sheets/kanifing"
+              },
+              {
+                "name": "Kerewan",
+                "alias": "kerewan",
+                "specSheet": "/maps/spec-sheets/kerewan"
+              },
+              {
+                "name": "Kuntaur",
+                "alias": "kuntaur",
+                "specSheet": "/maps/spec-sheets/kuntaur"
+              },
+              {
+                "name": "Mansakonko",
+                "alias": "mansakonko",
+                "specSheet": "/maps/spec-sheets/mansakonko"
+              }
+            ]
+          },
+          {
             "name": "Ghana",
             "alias": "ghana",
             "specSheet": "/maps/spec-sheets/ghana",
