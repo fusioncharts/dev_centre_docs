@@ -9542,6 +9542,182 @@
             "specSheet": "/maps/spec-sheets/ismailia"
           },
           {
+            "name": "Ivory Coast",
+            "alias": "ivorycoastregions",
+            "specSheet": "/maps/spec-sheets/ivorycoastregions"
+          },
+          {
+            "name": "Ivory Coast (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Abidjan",
+                "alias": "abidjan",
+                "specSheet": "/maps/spec-sheets/abidjan"
+              },
+              {
+                "name": "AgnebyTiassa",
+                "alias": "agnebytiassa",
+                "specSheet": "/maps/spec-sheets/agnebytiassa"
+              },
+              {
+                "name": "Bafing",
+                "alias": "bafing",
+                "specSheet": "/maps/spec-sheets/bafing"
+              },
+              {
+                "name": "Bagoue",
+                "alias": "bagoue",
+                "specSheet": "/maps/spec-sheets/bagoue"
+              },
+              {
+                "name": "Belier",
+                "alias": "belier",
+                "specSheet": "/maps/spec-sheets/belier"
+              },
+              {
+                "name": "Bere",
+                "alias": "bere",
+                "specSheet": "/maps/spec-sheets/bere"
+              },
+              {
+                "name": "Bounkani",
+                "alias": "bounkani",
+                "specSheet": "/maps/spec-sheets/bounkani"
+              },
+              {
+                "name": "Cavally",
+                "alias": "cavally",
+                "specSheet": "/maps/spec-sheets/cavally"
+              },
+              {
+                "name": "Folon",
+                "alias": "folon",
+                "specSheet": "/maps/spec-sheets/folon"
+              },
+              {
+                "name": "Gbeke",
+                "alias": "gbeke",
+                "specSheet": "/maps/spec-sheets/gbeke"
+              },
+              {
+                "name": "Gbokle",
+                "alias": "gbokle",
+                "specSheet": "/maps/spec-sheets/gbokle"
+              },
+              {
+                "name": "Goh",
+                "alias": "goh",
+                "specSheet": "/maps/spec-sheets/goh"
+              },
+              {
+                "name": "Gontougo",
+                "alias": "gontougo",
+                "specSheet": "/maps/spec-sheets/gontougo"
+              },
+              {
+                "name": "GrandsPonts",
+                "alias": "grandsponts",
+                "specSheet": "/maps/spec-sheets/grandsponts"
+              },
+              {
+                "name": "Guemon",
+                "alias": "guemon",
+                "specSheet": "/maps/spec-sheets/guemon"
+              },
+              {
+                "name": "Hambol",
+                "alias": "hambol",
+                "specSheet": "/maps/spec-sheets/hambol"
+              },
+              {
+                "name": "HautSassandra",
+                "alias": "hautsassandra",
+                "specSheet": "/maps/spec-sheets/hautsassandra"
+              },
+              {
+                "name": "Iffou",
+                "alias": "iffou",
+                "specSheet": "/maps/spec-sheets/iffou"
+              },
+              {
+                "name": "IndenieDjuablin",
+                "alias": "indeniedjuablin",
+                "specSheet": "/maps/spec-sheets/indeniedjuablin"
+              },
+              {
+                "name": "Kabadougou",
+                "alias": "kabadougou",
+                "specSheet": "/maps/spec-sheets/kabadougou"
+              },
+              {
+                "name": "La Me",
+                "alias": "la me",
+                "specSheet": "/maps/spec-sheets/la me"
+              },
+              {
+                "name": "Loh Djiboua",
+                "alias": "loh djiboua",
+                "specSheet": "/maps/spec-sheets/loh djiboua"
+              },
+              {
+                "name": "Marahoue",
+                "alias": "marahoue",
+                "specSheet": "/maps/spec-sheets/marahoue"
+              },
+              {
+                "name": "Moronou",
+                "alias": "moronou",
+                "specSheet": "/maps/spec-sheets/moronou"
+              },
+              {
+                "name": "Nawa",
+                "alias": "nawa",
+                "specSheet": "/maps/spec-sheets/nawa"
+              },
+              {
+                "name": "NZi",
+                "alias": "nzi",
+                "specSheet": "/maps/spec-sheets/nzi"
+              },
+              {
+                "name": "Poro",
+                "alias": "poro",
+                "specSheet": "/maps/spec-sheets/poro"
+              },
+              {
+                "name": "San Pedro",
+                "alias": "sanpedro",
+                "specSheet": "/maps/spec-sheets/sanpedro"
+              },
+              {
+                "name": "Sud Comoe",
+                "alias": "sudcomoe",
+                "specSheet": "/maps/spec-sheets/sudcomoe"
+              },
+              {
+                "name": "Tchologo",
+                "alias": "tchologo",
+                "specSheet": "/maps/spec-sheets/tchologo"
+              },
+              {
+                "name": "Tonkpi",
+                "alias": "tonkpi",
+                "specSheet": "/maps/spec-sheets/tonkpi"
+              },
+              {
+                "name": "Worodougou",
+                "alias": "worodougou",
+                "specSheet": "/maps/spec-sheets/worodougou"
+              },
+              {
+                "name": "Yamoussoukro Autonomous District",
+                "alias": "yamoussoukroautonomousdistrict",
+                "specSheet": "/maps/spec-sheets/yamoussoukroautonomousdistrict"
+              }
+            ]
+          },
+          {
             "name": "Kafr el-Sheikh",
             "alias": "kafralsheikh",
             "specSheet": "/maps/spec-sheets/kafralsheikh"
