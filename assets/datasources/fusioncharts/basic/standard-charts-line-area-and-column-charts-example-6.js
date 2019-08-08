@@ -10,7 +10,7 @@
             "caption": "Number of visitors last week",
             "subCaption": "Bakersfield Central",
             "xAxisName": "Day",
-            "showLables": "1"
+            "showLabels": "1"
         },
         "data": [{
                 "value": "15123"
