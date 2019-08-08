@@ -6,17 +6,10 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-        "theme": "fusion",
-        "caption": "Sales Trends",
-        "subCaption": "(2016 to 2017)",
-        "xAxisname": "Month",
-        "pYAxisName": "Amount",
-        "labelDisplay": "AUTO",
-        "sYAxisName": "Employees",
-        "numberPrefix": "$",
-        "numVisiblePlot": "8",
-        "flatScrollBars": "1",
-        "scrollheight": "10"
+            "theme": "fusion",
+            "caption": "Number of visitors last week",
+            "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+            "xAxisName": "Day"
         },
         "data": [{
                 "value": "15123"
