@@ -4370,6 +4370,92 @@
         "markerData": "/maps/marker-data/chile"
       },
       {
+        "name": "Chile (Separate Regions)",
+        "marker": false,
+        "members": [
+          {
+            "name": "Antofagasta",
+            "alias": "antofagasta",
+            "specSheet": "/maps/spec-sheets/antofagasta"
+          },
+          {
+            "name": "Araucania",
+            "alias": "araucania",
+            "specSheet": "/maps/spec-sheets/araucania"
+          },
+          {
+            "name": "Aricay Parinacota",
+            "alias": "aricayparinacota",
+            "specSheet": "/maps/spec-sheets/aricayparinacota"
+          },
+          {
+            "name": "Atacama",
+            "alias": "atacama",
+            "specSheet": "/maps/spec-sheets/atacama"
+          },
+          {
+            "name": "Aysendel General Carlos Ibanez del Campo",
+            "alias": "aysendelgeneralcarlosibanezdelcampo",
+            "specSheet": "/maps/spec-sheets/aysendelgeneralcarlosibanezdelcampo"
+          },
+          {
+            "name": "Biobio",
+            "alias": "biobio",
+            "specSheet": "/maps/spec-sheets/biobio"
+          },
+          {
+            "name": "Coquimbo",
+            "alias": "coquimbo",
+            "specSheet": "/maps/spec-sheets/coquimbo"
+          },
+          {
+            "name": "Libertador General Bernardo O Higgins",
+            "alias": "libertadorgeneralbernardoohiggins",
+            "specSheet": "/maps/spec-sheets/libertadorgeneralbernardoohiggins"
+          },
+          {
+            "name": "Los Lagos",
+            "alias": "loslagos",
+            "specSheet": "/maps/spec-sheets/loslagos"
+          },
+          {
+            "name": "Los Rios",
+            "alias": "losrios",
+            "specSheet": "/maps/spec-sheets/losrios"
+          },
+          {
+            "name": "Magallanesy de la Antartica Chilena",
+            "alias": "magallanesydelaantarticachilena",
+            "specSheet": "/maps/spec-sheets/magallanesydelaantarticachilena"
+          },
+          {
+            "name": "Maule",
+            "alias": "maule",
+            "specSheet": "/maps/spec-sheets/maule"
+          },
+          {
+            "name": "Metropolitana de Santiago",
+            "alias": "metropolitanadesantiago",
+            "specSheet": "/maps/spec-sheets/metropolitanadesantiago"
+          },
+          {
+            "name": "Nuble",
+            "alias": "nuble",
+            "specSheet": "/maps/spec-sheets/nuble"
+          },
+          {
+            "name": "Tarapaca",
+            "alias": "tarapaca",
+            "specSheet": "/maps/spec-sheets/tarapaca"
+          },
+          {
+            "name": "Val Paraiso",
+            "alias": "val paraiso",
+            "specSheet": "/maps/spec-sheets/val paraiso"
+          }
+        ]
+      },
+      {
         "name": "Colombia",
         "alias": "colombia",
         "specSheet": "/maps/spec-sheets/colombia",
