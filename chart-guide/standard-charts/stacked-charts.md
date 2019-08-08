@@ -18,7 +18,7 @@ The FusionCharts Suite XT includes the following types of stacked charts:
 
 ## Stacked column 2D Chart
 
-As an example, We will now create a stacked column 2D chart to plot the revenue split for each quarter of the current year by product category - food products and non-food products. The data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products.
+As an example, we will now create a stacked column 2D chart to plot the revenue split for each quarter of the current year by product category - food products and non-food products. The data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products.
 
 The stacked column chart in 2D looks like:
 

@@ -8,7 +8,7 @@
         "chart": {
             "theme": "fusion",
             "caption": "Sales Trends",
-            "subCaption": "(2012 to 2013)",
+            "subCaption": "(2016 to 2017)",
             "xAxisname": "Month",
             "pYAxisName": "Amount",
             "labelDisplay": "AUTO",

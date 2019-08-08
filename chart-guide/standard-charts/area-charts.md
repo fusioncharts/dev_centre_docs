@@ -50,7 +50,7 @@ Click [here](http://jsfiddle.net/fusioncharts/jf73mv1e/) to edit the above multi
 
 Scroll charts are used when a large number of data plots are to be plotted within a small space. The scrollbar allows the users to scroll across (along the x-axis) the chart. Scroll charts are used to avoid cluttering of plots, thereby providing a clean look. 
 
-Let's create a scroll area 2D chart to plot the sales trends for FY 2012 - FY 2013.
+Let's create a scroll area 2D chart to plot the sales trends for FY 2016 - FY 2017.
 
 To render a scroll area chart in 2D, change the value of the `type` attribute to `scrollarea2d`. For a detailed list of attributes, refer to the [chart attributes](https://www.fusioncharts.com/dev/chart-attributes/?chart=scrollarea2d) page of scroll area 2D chart.
 
