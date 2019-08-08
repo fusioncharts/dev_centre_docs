@@ -426,7 +426,7 @@
                     "title": "Stacked Charts",
                     "children": [{
                             "title": "Chart anatomy",
-                            "path": "/chart-guide/standard-charts/stacked-charts"
+                            "path": "/chart-guide/standard-charts/area-charts"
                         },
                         {
                             "title": "Create stacked charts",
