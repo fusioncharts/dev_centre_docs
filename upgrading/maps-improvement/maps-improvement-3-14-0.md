@@ -170,273 +170,206 @@ heading: Map Improvements in Version 3.14.0
 
     - Updated the specification sheet for Burkina Faso Main and 13 separate Region maps:
 
-        - BoucleduMouhoun
+        - [BoucleduMouhoun](/maps/spec-sheets/boucledumouhoun)
 
-        - BurkinaFasoRegion
+        - [Cascades](/maps/spec-sheets/cascades)
 
-        - Cascades
+        - [Centre](/maps/spec-sheets/centre)
 
-        - Centre
+        - [CentreEst](/maps/spec-sheets/centreest)
 
-        - CentreEst
+        - [CentreNord](/maps/spec-sheets/centrenord)
 
-        - CentreNord
+        - [CentreOuest](/maps/spec-sheets/centreouest)
 
-        - CentreOuest
+        - [CentreSud](/maps/spec-sheets/centresud)
 
-        - CentreSud
+        - [Est](/maps/spec-sheets/est)
 
-        - Est
+        - [HautsBassins](/maps/spec-sheets/hautsbassins)
 
-        - HautsBassins
+        - [Nord](/maps/spec-sheets/nord)
 
-        - Nord
+        - [PlateauCentral](/maps/spec-sheets/plateaucentral)
 
-        - PlateauCentral
+        - [Sahel](/maps/spec-sheets/sahel)
 
-        - Sahel
-
-        - SudOuest
+        - [SudOuest](/maps/spec-sheets/sudouest)
 
     - Updated the specification sheet for Burkina Faso Provinces maps:
 
-        - Bale
+        - [Bale](/maps/spec-sheets/bale)
 
-        - Bam
+        - [Bam](/maps/spec-sheets/bam)
 
-        - Banwa
+        - [Banwa](/maps/spec-sheets/banwa)
 
-        - Bazega
+        - [Bazega](/maps/spec-sheets/bazega)
 
-        - Bougouriba
+        - [Bougouriba](/maps/spec-sheets/bougouriba)
 
-        - Boulgou
+        - [Boulgou](/maps/spec-sheets/boulgou)
 
-        - Boulkiemde
+        - [Boulkiemde](/maps/spec-sheets/boulkiemde)
 
-        - Comoe
+        - [Comoe](/maps/spec-sheets/comoe)
 
-        - Ganzourgou
+        - [Ganzourgou](/maps/spec-sheets/ganzourgou)
 
-        - Gnagna
+        - [Gnagna](/maps/spec-sheets/gnagna)
 
-        - Gourma
+        - [Gourma](/maps/spec-sheets/gourma)
 
-        - Bale
+        - [Houet](/maps/spec-sheets/houet)
 
-        - Bam
+        - [Ioba](/maps/spec-sheets/ioba)
 
-        - Banwa
+        - [Kadiogo](/maps/spec-sheets/kadiogo)
 
-        - Bazega
+        - [Kenedougou](/maps/spec-sheets/kenedougou)
 
-        - Bougouriba
+        - [Komondjari](/maps/spec-sheets/komondjari)
 
-        - Boulgou
+        - [Kompienga](/maps/spec-sheets/kompienga)
 
-        - Boulkiemde
+        - [Kossi](/maps/spec-sheets/kossi)
 
-        - Comoe
+        - [Koulpelogo](/maps/spec-sheets/koulpelogo)
 
-        - Ganzourgou
+        - [Kouritenga](/maps/spec-sheets/kouritenga)
 
-        - Gnagna
+        - [Kourweogo](/maps/spec-sheets/kourweogo)
 
-        - Gourma
+        - [Leraba](/maps/spec-sheets/leraba)
 
-        - Houet
+        - [Loroum](/maps/spec-sheets/loroum)
 
-        - Ioba
+        - [Mouhoun](/maps/spec-sheets/mouhoun)
 
-        - Kadiogo
+        - [Nahouri](/maps/spec-sheets/nahouri)
 
-        - Kenedougou
+        - [Namentenga](/maps/spec-sheets/namentenga)
 
-        - Komondjari
+        - [Nayala](/maps/spec-sheets/nayala)
 
-        - Kompienga
+        - [Noumbiel](/maps/spec-sheets/noumbiel)
 
-        - Kossi
+        - [Oubritenga](/maps/spec-sheets/oubritenga)
 
-        - Koulpelogo
+        - [Oudalan](/maps/spec-sheets/oudalan)
 
-        - Kouritenga
+        - [Passore](/maps/spec-sheets/passore)
 
-        - Kourweogo
+        - [Poni](/maps/spec-sheets/poni)
 
-        - Gourma
+        - [Sanguie](/maps/spec-sheets/sanguie)
 
-        - Houet
+        - [Sanmatenga](/maps/spec-sheets/sanmatenga)
 
-        - Ioba
+        - [Seno](/maps/spec-sheets/seno)
 
-        - Kadiogo
+        - [Sissili](/maps/spec-sheets/sissili)
 
-        - Kenedougou
+        - [Soum](/maps/spec-sheets/soum)
 
-        - Komondjari
+        - [Sourou](/maps/spec-sheets/sourou)
 
-        - Kompienga
+        - [Tapoa](/maps/spec-sheets/tapoa)
 
-        - Kossi
+        - [Tuy](/maps/spec-sheets/tuy)
 
-        - Koulpelogo
+        - [Yagha](/maps/spec-sheets/yagha)
 
-        - Kouritenga
+        - [Yatenga](/maps/spec-sheets/yatenga)
 
-        - Kourweogo
+        - [Ziro](/maps/spec-sheets/ziro)
 
-        - Leraba
+        - [Zondoma](/maps/spec-sheets/zondoma)
 
-        - Loroum
+        - [Zoundweogo](/maps/spec-sheets/zoundweogo)
 
-        - Mouhoun
 
-        - Nahouri
+    - Updated the specification sheet for [Benin Main](/maps/spec-sheets/benin) maps and for 12 separate departments:
 
-        - Namentenga
+        - [Alibori](/maps/spec-sheets/alibori)
 
-        - Nayala
+        - [Atakora](/maps/spec-sheets/atakora)
 
-        - Noumbiel
+        - [Atlantique](/maps/spec-sheets/atlantique)
 
-        - Oubritenga
+        - [Borgou](/maps/spec-sheets/borgou)
 
-        - Oudalan
+        - [Collines](/maps/spec-sheets/collines)
 
-        - Passore
+        - [Donga](/maps/spec-sheets/donga)
 
-        - Poni
+        - [Kouffo](/maps/spec-sheets/kouffo)
 
-        - Leraba
+        - [Littoral](/maps/spec-sheets/littoral)
 
-        - Loroum
+        - [Mono](/maps/spec-sheets/mono)
 
-        - Mouhoun
+        - [Oueme](/maps/spec-sheets/oueme)
 
-        - Nahouri
+        - [Plateau](/maps/spec-sheets/plateau)
 
-        - Namentenga
+        - [Zou](/maps/spec-sheets/zou)
 
-        - Nayala
+    - Updated the specification sheet for the [Central African Republic Main](/maps/spec-sheets/centralafricanrepublic) maps and 17 separate prefectures:
 
-        - Noumbiel
+        - [Bamingui Bangoran](/maps/spec-sheets/baminguibangoran)
 
-        - Oubritenga
+        - [Bangui](/maps/spec-sheets/bangui)
 
-        - Oudalan
+        - [Basse Kotto](/maps/spec-sheets/bassekotto)
 
-        - Passore
+        - [Haute Kotto](/maps/spec-sheets/hautekotto)
 
-        - Poni
+        - [Haut Mbomou](/maps/spec-sheets/hautmbomou)
 
-        - Sanguie
+        - [Kemo](/maps/spec-sheets/kemo)
 
-        - Sanmatenga
+        - [Lobaye](/maps/spec-sheets/lobaye)
 
-        - Seno
+        - [Mambere Kadei](/maps/spec-sheets/mamberekadei)
 
-        - Sissili
+        - [Mbomou](/maps/spec-sheets/mbomou)
 
-        - Soum
+        - [Nana Grebizi](/maps/spec-sheets/nanagrebizi)
 
-        - Sourou
+        - [Nana Mambere](/maps/spec-sheets/nanamambere)
 
-        - Tapoa
+        - [Ombella MPoko](/maps/spec-sheets/ombellampoko)
 
-        - Tuy
+        - [Ouaka](/maps/spec-sheets/ouaka)
 
-        - Yagha
+        - [Ouham](/maps/spec-sheets/ouham)
 
-        - Yatenga
+        - [Ouham Pende](/maps/spec-sheets/ouhampende)
 
-        - Ziro
+        - [Sangha Mbaere](/maps/spec-sheets/sanghambaere)
 
-        - Zondoma
+        - [Vakaga](/maps/spec-sheets/vakaga)
 
-        - Zoundweogo
+    - Updated the specification sheet for [Guinea Bissau Main](/maps/spec-sheets/guineabissau) maps and 9 separate regions:
 
-    - Updated the specification sheet for Benin Main maps and for 12 separate departments:
+        - [Bafata](/maps/spec-sheets/bafata)
 
-        - Alibori
+        - [Biombo](/maps/spec-sheets/biombo)
 
-        - Atakora
+        - [Bissau](/maps/spec-sheets/bissau)
 
-        - Atlantique
+        - [Bolama](/maps/spec-sheets/bolama)
 
-        - Borgou
+        - [Cacheu](/maps/spec-sheets/cacheu)
 
-        - Collines
+        - [Gabu](/maps/spec-sheets/gabu)
 
-        - Donga
+        - [Oio](/maps/spec-sheets/oio)
 
-        - Kouffo
+        - [Quinara](/maps/spec-sheets/quinara)
 
-        - Littoral
-
-        - Mono
-
-        - Oueme
-
-        - Plateau
-
-        - Zou
-
-    - Updated the specification sheet for the Central African Republic Main maps and 17 separate prefectures:
-
-        - BaminguiBangoran
-
-        - Bangui
-
-        - BasseKotto
-
-        - HauteKotto
-
-        - HautMbomou
-
-        - Kemo
-
-        - Lobaye
-
-        - MambereKadei
-
-        - Mbomou
-
-        - NanaGrebizi
-
-        - NanaMambere
-
-        - OmbellaMPoko
-
-        - Ouaka
-
-        - Ouham
-
-        - OuhamPende
-
-        - SanghaMbaere
-
-        - Vakaga
-
-    - Updated the specification sheet for Guinea Bissai Main maps and 9 separate regions:
-
-        - Bafata
-
-        - Biombo
-
-        - Bissau
-
-        - Bolama
-
-        - Cacheu
-
-        - Gabu
-
-        - Oio
-
-        - Quinara
-
-        - Tombali
+        - [Tombali](/maps/spec-sheets/tombali)
 
     - Updated the specification sheet for Mali main map and 9 separate regions:
 
