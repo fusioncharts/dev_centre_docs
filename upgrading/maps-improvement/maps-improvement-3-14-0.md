@@ -452,167 +452,141 @@ heading: Map Improvements in Version 3.14.0
 
     - The following maps have been renamed and updated in the specification sheet for Madagascar main province map and 6 separate region maps:
 
-        - Antananarivo has been renamed as Antananarivo Province
+        - Antananarivo has been renamed as [Antananarivo Province](/maps/spec-sheets/antananarivo)
 
-        - Antsiranana has been renamed as Antsiranana Province
+        - Antsiranana has been renamed as [Antsiranana Province](/maps/spec-sheets/antsiranana)
 
-        - Fianarantsoa has been renamed as Fianarantsoa Province
+        - Fianarantsoa has been renamed as [Fianarantsoa Province](/maps/spec-sheets/fianarantsoa)
 
-        - Mahajanga has been renamed as Mahajanga Province
+        - Mahajanga has been renamed as [Mahajanga Province](/maps/spec-sheets/mahajanga)
 
-        - Toamasina has been renamed as Toamasina Province
+        - Toamasina has been renamed as [Toamasina Province](/maps/spec-sheets/toamasina)
 
-        - Toliara has been renamed as Toliara Province
+        - Toliara has been renamed as [Toliara Province](/maps/spec-sheets/toliara)
 
-    - The following maps have been renamed and updated in the specification sheet for Gabon main map and 9 separate provinces:
+    - The following maps have been renamed and updated in the specification sheet for [Gabon](/maps/spec-sheets/gabon) main map and 9 separate provinces:
 
-        - Estuaire has been renamed as Estuaire (Libreville)
+        - Estuaire has been renamed as [Estuaire (Libreville)](/maps/spec-sheets/estuaire)
 
-        - Haut-Ogooue has been renamed as Haut-Ogooué (Franceville)
+        - Haut-Ogooue has been renamed as [Haut-Ogooué (Franceville)](/maps/spec-sheets/hautogooue)
 
-        - Moyen-Ogooue has been renamed as Moyen-Ogooué (Lambaréné)
+        - Moyen-Ogooue has been renamed as [Moyen-Ogooué (Lambaréné)](/maps/spec-sheets/moyenogooue)
 
-        - Ngounie has been renamed as Ngounié (Mouila)
+        - Ngounie has been renamed as [Ngounié (Mouila)](/maps/spec-sheets/ngounie)
 
-        - Nyanga has been renamed as Nyanga (Tchibanga)
+        - Nyanga has been renamed as [Nyanga (Tchibanga)](/maps/spec-sheets/nyanga)
 
-        - Ogooue-Ivindo has been renamed as Ogooué-Ivindo (Makokou)
+        - Ogooue-Ivindo has been renamed as [Ogooué-Ivindo (Makokou)](/maps/spec-sheets/ogooueivindo)
 
-        - Ogooue-Lolo has been renamed as Ogooué-Lolo (Koulamoutou)
+        - Ogooue-Lolo has been renamed as [Ogooué-Lolo (Koulamoutou)](/maps/spec-sheets/ogoouelolo)
 
-        - Ogooue-Maritime has been renamed as Ogooué-Maritime (Port-Gentil)
+        - Ogooue-Maritime has been renamed as [Ogooué-Maritime (Port-Gentil)](/maps/spec-sheets/ogoouemaritime)
 
-        - Woleu-Ntem has been renamed as Woleu-Ntem (Oyem)
+        - Woleu-Ntem has been renamed as [Woleu-Ntem (Oyem)](/maps/spec-sheets/woleuntem)
 
     - The following maps have been renamed and updated in the specification sheet for Niger main map and 8 separate regions:
 
-        - Agadez has been renamed as Agadez Region
+        - Agadez has been renamed as [Agadez Region](/maps/spec-sheets/agadez)
 
-        - Diffa has been renamed as Diffa Region
+        - Diffa has been renamed as [Diffa Region](/maps/spec-sheets/diffa)
 
-        - Dosso has been renamed as Dosso Region
+        - Dosso has been renamed as [Dosso Region](/maps/spec-sheets/dosso)
 
-        - Maradi has been renamed as Maradi Region
+        - Maradi has been renamed as [Maradi Region](/maps/spec-sheets/maradi)
 
-        - Niamey has been renamed as Niamey (capital district)
+        - Niamey has been renamed as [Niamey (capital district)](/maps/spec-sheets/niamey)
 
-        - Tahoua has been renamed as Tahoua Region
+        - Tahoua has been renamed as [Tahoua Region](/maps/spec-sheets/tahoua)
 
-        - Tillabery has been renamed as Tillabéri Region
+        - Tillabery has been renamed as [Tillabéri Region](/maps/spec-sheets/tillaberi)
 
-        - Zinder has been renamed as Zinder Region
+        - Zinder has been renamed as [Zinder Region](/maps/spec-sheets/zinder)
 
     - Updated the specification sheet for Gambia main map and 8 separate regions:
 
-        - Banjul
+        - [Banjul](/maps/spec-sheets/banjul)
 
-        - Basse
+        - [Basse](/maps/spec-sheets/basse)
 
-        - Brikama
+        - [Brikama](/maps/spec-sheets/brikama)
 
-        - Gambia
+        - [Janjanbureh](/maps/spec-sheets/janjanbureh)
 
-        - Janjanbureh
+        - [Kanifing](/maps/spec-sheets/kanifing)
 
-        - Kanifing
+        - [Kerewan](/maps/spec-sheets/kerewan)
 
-        - Kerewan
+        - [Kuntaur](/maps/spec-sheets/kuntaur)
 
-        - Kuntaur
+        - [Mansakonko](/maps/spec-sheets/mansakonko)
 
-        - Mansakonko
+    - Updated and added specification sheet for [Ivory Coast](/maps/spec-sheets/ivorycoastregions) main region and 33 separate regions:
 
-    - Updated and added specification sheet for Ivory Coast main region and 33 separate regions:
+        - [AbidjanAutonomousDistrict](/maps/spec-sheets/abidjanautonomousdistrict)
 
-        - AbidjanAutonomousDistrict
+        - [AgnebyTiassa](/maps/spec-sheets/agnebytiassa)
 
-        - AgnebyTiassa
+        - [Bafing](/maps/spec-sheets/bafing)
 
-        - Bafing
+        - [Bagoue](/maps/spec-sheets/bagoue)
 
-        - Bagoue
+        - [Belier](/maps/spec-sheets/belier)
 
-        - Belier
+        - [Bere](/maps/spec-sheets/bere)
 
-        - Bere
+        - [Bounkani](/maps/spec-sheets/bounkani)
 
-        - Bounkani
+        - [Cavally](/maps/spec-sheets/cavally)
 
-        - Cavally
+        - [Folon](/maps/spec-sheets/folon)
 
-        - Folon
+        - [Gbeke](/maps/spec-sheets/gbeke)
 
-        - Gbeke
+        - [Gbokle](/maps/spec-sheets/gbokle)
 
-        - Gbokle
+        - [Goh](/maps/spec-sheets/goh)
 
-        - Goh
+        - [Gontougo](/maps/spec-sheets/gontougo)
 
-        - Gontougo
+        - [GrandsPonts](/maps/spec-sheets/grandsponts)
 
-        - GrandsPonts
+        - [Guemon](/maps/spec-sheets/guemon)
 
-        - Guemon
+        - [Hambol](/maps/spec-sheets/hambol)
 
-        - Hambol
+        - [HautSassandra](/maps/spec-sheets/hautsassandra)
 
-        - HautSassandra
+        - [Iffou](/maps/spec-sheets/iffou)
 
-        - Iffou
+        - [IndenieDjuablin](/maps/spec-sheets/indeniedjuablin)
 
-        - IndenieDjuablin
+        - [Kabadougou](/maps/spec-sheets/kabadougou)
 
-        - IvoryCoastRegions
+        - [LaMe](/maps/spec-sheets/la me)
 
-        - Kabadougou
+        - [LohDjiboua](/maps/spec-sheets/lohdjiboua)
 
-        - LaMe
+        - [Marahoue](/maps/spec-sheets/marahoue)
 
-        - Goh
+        - [Moronou](/maps/spec-sheets/moronou)
 
-        - Gontougo
+        - [NZi](/maps/spec-sheets/nzi)
 
-        - GrandsPonts
+        - [Nawa](/maps/spec-sheets/nawa)
 
-        - Guemon
+        - [Poro](/maps/spec-sheets/poro)
 
-        - Hambol
+        - [SanPedro](/maps/spec-sheets/sanpedro)
 
-        - HautSassandra
+        - [SudComoe](/maps/spec-sheets/sudcomoe)
 
-        - Iffou
+        - [Tchologo](/maps/spec-sheets/tchologo)
 
-        - IndenieDjuablin
+        - [Tonkpi](/maps/spec-sheets/tonkpi)
 
-        - IvoryCoastRegions
+        - [Worodougou](/maps/spec-sheets/worodougou)
 
-        - Kabadougou
-
-        - LaMe
-
-        - LohDjiboua
-
-        - Marahoue
-
-        - Moronou
-
-        - NZi
-
-        - Nawa
-
-        - Poro
-
-        - SanPedro
-
-        - SudComoe
-
-        - Tchologo
-
-        - Tonkpi
-
-        - Worodougou
-
-        - YamoussoukroAutonomousDistrict
+        - [YamoussoukroAutonomousDistrict](/maps/spec-sheets/yamoussoukroautonomousdistrict)
 
     - Chile main map has been updated and renamed with 16 separate region maps. Región de Ñuble has been added as the new entity. The following entities have been renamed:
 
