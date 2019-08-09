@@ -371,25 +371,25 @@ heading: Map Improvements in Version 3.14.0
 
         - [Tombali](/maps/spec-sheets/tombali)
 
-    - Updated the specification sheet for Mali main map and 9 separate regions:
+    - Updated the specification sheet for [Mali main](/maps/spec-sheets/mali) map and 9 separate regions:
 
-        - Bamako
+        - [Bamako](/maps/spec-sheets/bamako)
 
-        - Gao
+        - [Gao](/maps/spec-sheets/gao)
 
-        - Kayes
+        - [Kayes](/maps/spec-sheets/kayes)
 
-        - Kidal
+        - [Kidal](/maps/spec-sheets/kidal)
 
-        - Koulikoro
+        - [Koulikoro](/maps/spec-sheets/koulikoro)
 
-        - Mopti
+        - [Mopti](/maps/spec-sheets/mopti)
 
-        - Segou
+        - [Segou](/maps/spec-sheets/segou)
 
-        - Sikasso
+        - [Sikasso](/maps/spec-sheets/sikasso)
 
-        - Tombouctou
+        - [Tombouctou](/maps/spec-sheets/tombouctou)
 
     - Updated the main district maps of Malawi and main regions with 3 sub region maps:
 
