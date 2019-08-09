@@ -5,36 +5,16 @@
 #### JavaScript Alias: maps/sofia
 
 Map Name: Sofia
-Dimensions (Width x Height): 601x530
-
-
-
-
+Dimensions (Width x Height): 600x460
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
-01|AN|Anton
-02|BG|Botevgrad
-03|BZ|Bozhurishte
-04|CV|Chavdar
-05|CL|Chelopech
-06|DB|Dolna Banya
-07|DR|Dragoman
-08|EP|Elin Pelin
-09|ET|Etropole
-10|GO|Godech
-11|GM|Gorna Malina
-12|IH|Ihtiman
-13|KP|Koprivshtitsa
-14|KN|Kostenets
-15|KB|Kostinbrod
-16|MI|Mirkovo
-17|PI|Pirdop
-18|PR|Pravets
-19|SA|Samokov
-20|SL|Slivnitsa
-21|SV|Svoge
-22|ZL|Zlatitsa
-
+MG.MA.AL|AL|Analalava District (Analalava)
+MG.MA.BN|BN|Bealanana District (Bealanana)
+MG.MA.AH|AH|Antsohihy District (Antsohihy)
+MG.MA.BA|BA|Befandriana-Nord District (Befandriana-Nord)
+MG.MA.PB|PB|Boriziny District (Boriziny)
+MG.MA.MT|MT|Mandritsara District (Mandritsara)
+MG.MA.MP|MP|Mampikony District (Mampikony)
