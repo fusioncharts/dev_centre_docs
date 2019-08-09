@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centralsriLankaprovince
+#### JavaScript Alias: maps/centralsrilankaprovince
 
 Map Name: Central SriLanka Province
 Dimensions (Width x Height): 600x1040
