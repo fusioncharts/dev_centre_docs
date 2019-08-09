@@ -1,0 +1,19 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/boeny
+
+Map Name: Boeny
+Dimensions (Width x Height): 600x460
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|
+MG.MA.SO|SO|Soalala District (Soalala)
+MG.MA.MJ|MJ|Mitsinjo District (Mitsinjo)
+MG.MA.MA|MA|Mahajanga
+MG.MA.MH|MH|Mahajanga II
+MG.MA.MY|MY|Marovoay District (Marovoay)
+MG.MA.AB|AB|Ambatoboeny District (Ambatoboeny)

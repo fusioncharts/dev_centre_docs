@@ -6,689 +6,587 @@ heading: Map Improvements in Version 3.14.0
 
 - The core maps package has been updated to:
 
-    - Updated the specification sheet for Papua New Guinea.
+    - Updated the specification sheet for [Papua New Guinea](/maps/spec-sheets/papuanewguinea).
 
-    - Updated the specification sheet for Samoa.
+    - Updated the specification sheet for [Samoa](/maps/spec-sheets/samoa).
 
-    - Updated the specification sheet for Czech Republic Region maps.
+    - Updated the specification sheet for [Czech Republic Region](/maps/spec-sheets/czechrepublic) maps.
 
     - Updated the specification sheet for Thailand Main and 77 separate Province maps:
 
-        - AmnatCharoen
+        - [AmnatCharoen](/maps/spec-sheets/amnatcharoen)
 
-        - AngThong
+        - [AngThong](/maps/spec-sheets/angthong)
 
-        - Bangkok
+        - [Bangkok](/maps/spec-sheets/bangkok)
 
-        - BuengKan
+        - [BuengKan](/maps/spec-sheets/buengkan)
 
-        - Buriram
+        - [Buriram](/maps/spec-sheets/buriram)
 
-        - Chachoengsao
+        - [Chachoengsao](/maps/spec-sheets/chachoengsao)
 
-        - ChaiNat
+        - [ChaiNat](/maps/spec-sheets/chainat)
 
-        - Chaiyaphum
+        - [Chaiyaphum](/maps/spec-sheets/chaiyaphum)
 
-        - Chanthaburi
+        - [Chanthaburi](/maps/spec-sheets/chanthaburi)
 
-        - ChiangMai
+        - [ChiangMai](/maps/spec-sheets/chiangmai)
 
-        - ChiangRai
+        - [ChiangRai](/maps/spec-sheets/chiangrai)
 
-        - Chonburi
+        - [Chonburi](/maps/spec-sheets/chonburi)
 
-        - Chumphon
+        - [Chumphon](/maps/spec-sheets/chumphon)
 
-        - Kalasin
+        - [Kalasin](/maps/spec-sheets/kalasin)
 
-        - KamphaengPhet
+        - [KamphaengPhet](/maps/spec-sheets/kamphaengphet)
 
-        - Kanchanaburi
+        - [Kanchanaburi](/maps/spec-sheets/kanchanaburi)
 
-        - KhonKaen
+        - [KhonKaen](/maps/spec-sheets/khonkaen)
 
-        - Krabi
+        - [Krabi](/maps/spec-sheets/krabi)
 
-        - Lampang
+        - [Lampang](/maps/spec-sheets/lampang)
 
-        - Lamphun
+        - [Lamphun](/maps/spec-sheets/lamphun)
 
-        - Loei
+        - [Loei](/maps/spec-sheets/loei)
 
-        - Lopburi
+        - [Lopburi](/maps/spec-sheets/lopburi)
 
-        - MaeHongSon
+        - [MaeHongSon](/maps/spec-sheets/maehongson)
 
-        - MahaSarakham
+        - [MahaSarakham](/maps/spec-sheets/mahasarakham)
 
-        - Mukdahan
+        - [Mukdahan](/maps/spec-sheets/mukdahan)
 
-        - NakhonNayok
+        - [NakhonNayok](/maps/spec-sheets/nakhonnayok)
 
-        - NakhonPathom
+        - [NakhonPathom](/maps/spec-sheets/nakhonpathom)
 
-        - NakhonPhanom
+        - [NakhonPhanom](/maps/spec-sheets/nakhonphanom)
 
-        - NakhonRatchasima
+        - [NakhonRatchasima](/maps/spec-sheets/nakhonratchasima)
 
-        - NakhonSawan
+        - [NakhonSawan](/maps/spec-sheets/nakhonsawan)
 
-        - NakhonSiThammarat
+        - [NakhonSiThammarat](/maps/spec-sheets/nakhonsithammarat)
 
-        - Nan
+        - [Nan](/maps/spec-sheets/nan)
 
-        - Narathiwat
+        - [Narathiwat](/maps/spec-sheets/narathiwat)
 
-        - NongBuaLamPhu
+        - [NongBuaLamPhu](/maps/spec-sheets/nongbualamphu)
 
-        - NongKhai
+        - [NongKhai](/maps/spec-sheets/nongkhai)
 
-        - Nonthaburi
+        - [Nonthaburi](/maps/spec-sheets/nonthaburi)
 
-        - PathumThani
+        - [PathumThani](/maps/spec-sheets/pathumthani)
 
-        - Pattani
+        - [Pattani](/maps/spec-sheets/pattani)
 
-        - PhangNga
+        - [PhangNga](/maps/spec-sheets/phangnga)
 
-        - Phatthalung
+        - [Phatthalung](/maps/spec-sheets/phatthalung)
 
-        - Phayao
+        - [Phayao](/maps/spec-sheets/phayao)
 
-        - Phetchabun
+        - [Phetchabun](/maps/spec-sheets/phetchabun)
 
-        - Phetchaburi
+        - [Phetchaburi](/maps/spec-sheets/phetchaburi)
 
-        - Phichit
+        - [Phichit](/maps/spec-sheets/phichit)
 
-        - Phitsanulok
+        - [Phitsanulok](/maps/spec-sheets/phitsanulok)
 
-        - PhraNakhonSiAyutthaya
+        - [PhraNakhonSiAyutthaya](/maps/spec-sheets/phranakhonsiayutthaya)
 
-        - Phrae
+        - [Phrae](/maps/spec-sheets/phrae)
 
-        - Phuket
+        - [Phuket](/maps/spec-sheets/phuket)
 
-        - Prachinburi
+        - [Prachinburi](/maps/spec-sheets/prachinburi)
 
-        - PrachuapKhiriKhan
+        - [PrachuapKhiriKhan](/maps/spec-sheets/prachuapkhirikhan)
 
-        - Ranong
+        - [Ranong](/maps/spec-sheets/ranong)
 
-        - Ratchaburi
+        - [Ratchaburi](/maps/spec-sheets/ratchaburi)
 
-        - Rayong
+        - [Rayong](/maps/spec-sheets/rayong)
 
-        - RoiEt
+        - [RoiEt](/maps/spec-sheets/roiet)
 
-        - SaKaeo
+        - [SaKaeo](/maps/spec-sheets/saKaeo)
 
-        - SakonNakhon
+        - [SakonNakhon](/maps/spec-sheets/sakonnakhon)
 
-        - SamutPrakan
+        - [SamutPrakan](/maps/spec-sheets/samutprakan)
 
-        - SamutSakhon
+        - [SamutSakhon](/maps/spec-sheets/samutsakhon)
 
-        - SamutSongkhram
+        - [SamutSongkhram](/maps/spec-sheets/samutsongkhram)
 
-        - Saraburi
+        - [Saraburi](/maps/spec-sheets/saraburi)
 
-        - Satun
+        - [Satun](/maps/spec-sheets/satun)
 
-        - SingBuri
+        - [SingBuri](/maps/spec-sheets/singburi)
 
-        - Sisaket
+        - [Sisaket](/maps/spec-sheets/sisaket)
 
-        - Songkhla
+        - [Songkhla](/maps/spec-sheets/songkhla)
 
-        - Sukhothai
+        - [Sukhothai](/maps/spec-sheets/sukhothai)
 
-        - SuphanBuri
+        - [SuphanBuri](/maps/spec-sheets/suphanburi)
 
-        - SuratThani
+        - [SuratThani](/maps/spec-sheets/suratthani)
 
-        - Surin
+        - [Surin](/maps/spec-sheets/surin)
 
-        - Tak
+        - [Tak](/maps/spec-sheets/tak)
 
-        - Trang
+        - [Trang](/maps/spec-sheets/trang)
 
-        - Trat
+        - [Trat](/maps/spec-sheets/trat)
 
-        - UbonRatchathani
+        - [UbonRatchathani](/maps/spec-sheets/ubonratchathani)
 
-        - UdonThani
+        - [UdonThani](/maps/spec-sheets/udonthani)
 
-        - UthaiThani
+        - [UthaiThani](/maps/spec-sheets/uthaithani)
 
-        - Uttaradit
+        - [Uttaradit](/maps/spec-sheets/uttaradit)
 
-        - Yala
+        - [Yala](/maps/spec-sheets/yala)
 
-        - Yasothon
+        - [Yasothon](/maps/spec-sheets/yasothon)
 
     - Updated the specification sheet for Burkina Faso Main and 13 separate Region maps:
 
-        - BoucleduMouhoun
+        - [BoucleduMouhoun](/maps/spec-sheets/boucledumouhoun)
 
-        - BurkinaFasoRegion
+        - [Cascades](/maps/spec-sheets/cascades)
 
-        - Cascades
+        - [Centre](/maps/spec-sheets/centre)
 
-        - Centre
+        - [CentreEst](/maps/spec-sheets/centreest)
 
-        - CentreEst
+        - [CentreNord](/maps/spec-sheets/centrenord)
 
-        - CentreNord
+        - [CentreOuest](/maps/spec-sheets/centreouest)
 
-        - CentreOuest
+        - [CentreSud](/maps/spec-sheets/centresud)
 
-        - CentreSud
+        - [Est](/maps/spec-sheets/est)
 
-        - Est
+        - [HautsBassins](/maps/spec-sheets/hautsbassins)
 
-        - HautsBassins
+        - [Nord](/maps/spec-sheets/nord)
 
-        - Nord
+        - [PlateauCentral](/maps/spec-sheets/plateaucentral)
 
-        - PlateauCentral
+        - [Sahel](/maps/spec-sheets/sahel)
 
-        - Sahel
-
-        - SudOuest
+        - [SudOuest](/maps/spec-sheets/sudouest)
 
     - Updated the specification sheet for Burkina Faso Provinces maps:
 
-        - Bale
+        - [Bale](/maps/spec-sheets/bale)
 
-        - Bam
+        - [Bam](/maps/spec-sheets/bam)
 
-        - Banwa
+        - [Banwa](/maps/spec-sheets/banwa)
 
-        - Bazega
+        - [Bazega](/maps/spec-sheets/bazega)
 
-        - Bougouriba
+        - [Bougouriba](/maps/spec-sheets/bougouriba)
 
-        - Boulgou
+        - [Boulgou](/maps/spec-sheets/boulgou)
 
-        - Boulkiemde
+        - [Boulkiemde](/maps/spec-sheets/boulkiemde)
 
-        - Comoe
+        - [Comoe](/maps/spec-sheets/comoe)
 
-        - Ganzourgou
+        - [Ganzourgou](/maps/spec-sheets/ganzourgou)
 
-        - Gnagna
+        - [Gnagna](/maps/spec-sheets/gnagna)
 
-        - Gourma
+        - [Gourma](/maps/spec-sheets/gourma)
 
-        - Bale
+        - [Houet](/maps/spec-sheets/houet)
 
-        - Bam
+        - [Ioba](/maps/spec-sheets/ioba)
 
-        - Banwa
+        - [Kadiogo](/maps/spec-sheets/kadiogo)
 
-        - Bazega
+        - [Kenedougou](/maps/spec-sheets/kenedougou)
 
-        - Bougouriba
+        - [Komondjari](/maps/spec-sheets/komondjari)
 
-        - Boulgou
+        - [Kompienga](/maps/spec-sheets/kompienga)
 
-        - Boulkiemde
+        - [Kossi](/maps/spec-sheets/kossi)
 
-        - Comoe
+        - [Koulpelogo](/maps/spec-sheets/koulpelogo)
 
-        - Ganzourgou
+        - [Kouritenga](/maps/spec-sheets/kouritenga)
 
-        - Gnagna
+        - [Kourweogo](/maps/spec-sheets/kourweogo)
 
-        - Gourma
+        - [Leraba](/maps/spec-sheets/leraba)
 
-        - Houet
+        - [Loroum](/maps/spec-sheets/loroum)
 
-        - Ioba
+        - [Mouhoun](/maps/spec-sheets/mouhoun)
 
-        - Kadiogo
+        - [Nahouri](/maps/spec-sheets/nahouri)
 
-        - Kenedougou
+        - [Namentenga](/maps/spec-sheets/namentenga)
 
-        - Komondjari
+        - [Nayala](/maps/spec-sheets/nayala)
 
-        - Kompienga
+        - [Noumbiel](/maps/spec-sheets/noumbiel)
 
-        - Kossi
+        - [Oubritenga](/maps/spec-sheets/oubritenga)
 
-        - Koulpelogo
+        - [Oudalan](/maps/spec-sheets/oudalan)
 
-        - Kouritenga
+        - [Passore](/maps/spec-sheets/passore)
 
-        - Kourweogo
+        - [Poni](/maps/spec-sheets/poni)
 
-        - Gourma
+        - [Sanguie](/maps/spec-sheets/sanguie)
 
-        - Houet
+        - [Sanmatenga](/maps/spec-sheets/sanmatenga)
 
-        - Ioba
+        - [Seno](/maps/spec-sheets/seno)
 
-        - Kadiogo
+        - [Sissili](/maps/spec-sheets/sissili)
 
-        - Kenedougou
+        - [Soum](/maps/spec-sheets/soum)
 
-        - Komondjari
+        - [Sourou](/maps/spec-sheets/sourou)
 
-        - Kompienga
+        - [Tapoa](/maps/spec-sheets/tapoa)
 
-        - Kossi
+        - [Tuy](/maps/spec-sheets/tuy)
 
-        - Koulpelogo
+        - [Yagha](/maps/spec-sheets/yagha)
 
-        - Kouritenga
+        - [Yatenga](/maps/spec-sheets/yatenga)
 
-        - Kourweogo
+        - [Ziro](/maps/spec-sheets/ziro)
 
-        - Leraba
+        - [Zondoma](/maps/spec-sheets/zondoma)
 
-        - Loroum
+        - [Zoundweogo](/maps/spec-sheets/zoundweogo)
 
-        - Mouhoun
+    - Updated the specification sheet for [Benin Main](/maps/spec-sheets/benin) maps and for 12 separate departments:
 
-        - Nahouri
+        - [Alibori](/maps/spec-sheets/alibori)
 
-        - Namentenga
+        - [Atakora](/maps/spec-sheets/atakora)
 
-        - Nayala
+        - [Atlantique](/maps/spec-sheets/atlantique)
 
-        - Noumbiel
+        - [Borgou](/maps/spec-sheets/borgou)
 
-        - Oubritenga
+        - [Collines](/maps/spec-sheets/collines)
 
-        - Oudalan
+        - [Donga](/maps/spec-sheets/donga)
 
-        - Passore
+        - [Kouffo](/maps/spec-sheets/kouffo)
 
-        - Poni
+        - [Littoral](/maps/spec-sheets/littoral)
 
-        - Leraba
+        - [Mono](/maps/spec-sheets/mono)
 
-        - Loroum
+        - [Oueme](/maps/spec-sheets/oueme)
 
-        - Mouhoun
+        - [Plateau](/maps/spec-sheets/plateau)
 
-        - Nahouri
+        - [Zou](/maps/spec-sheets/zou)
 
-        - Namentenga
+    - Updated the specification sheet for the [Central African Republic Main](/maps/spec-sheets/centralafricanrepublic) maps and 17 separate prefectures:
 
-        - Nayala
+        - [Bamingui Bangoran](/maps/spec-sheets/baminguibangoran)
 
-        - Noumbiel
+        - [Bangui](/maps/spec-sheets/bangui)
 
-        - Oubritenga
+        - [Basse Kotto](/maps/spec-sheets/bassekotto)
 
-        - Oudalan
+        - [Haute Kotto](/maps/spec-sheets/hautekotto)
 
-        - Passore
+        - [Haut Mbomou](/maps/spec-sheets/hautmbomou)
 
-        - Poni
+        - [Kemo](/maps/spec-sheets/kemo)
 
-        - Sanguie
+        - [Lobaye](/maps/spec-sheets/lobaye)
 
-        - Sanmatenga
+        - [Mambere Kadei](/maps/spec-sheets/mamberekadei)
 
-        - Seno
+        - [Mbomou](/maps/spec-sheets/mbomou)
 
-        - Sissili
+        - [Nana Grebizi](/maps/spec-sheets/nanagrebizi)
 
-        - Soum
+        - [Nana Mambere](/maps/spec-sheets/nanamambere)
 
-        - Sourou
+        - [Ombella MPoko](/maps/spec-sheets/ombellampoko)
 
-        - Tapoa
+        - [Ouaka](/maps/spec-sheets/ouaka)
 
-        - Tuy
+        - [Ouham](/maps/spec-sheets/ouham)
 
-        - Yagha
+        - [Ouham Pende](/maps/spec-sheets/ouhampende)
 
-        - Yatenga
+        - [Sangha Mbaere](/maps/spec-sheets/sanghambaere)
 
-        - Ziro
+        - [Vakaga](/maps/spec-sheets/vakaga)
 
-        - Zondoma
+    - Updated the specification sheet for [Guinea Bissau Main](/maps/spec-sheets/guineabissau) maps and 9 separate regions:
 
-        - Zoundweogo
+        - [Bafata](/maps/spec-sheets/bafata)
 
-    - Updated the specification sheet for Benin Main maps and for 12 separate departments:
+        - [Biombo](/maps/spec-sheets/biombo)
 
-        - Alibori
+        - [Bissau](/maps/spec-sheets/bissau)
 
-        - Atakora
+        - [Bolama](/maps/spec-sheets/bolama)
 
-        - Atlantique
+        - [Cacheu](/maps/spec-sheets/cacheu)
 
-        - Borgou
+        - [Gabu](/maps/spec-sheets/gabu)
 
-        - Collines
+        - [Oio](/maps/spec-sheets/oio)
 
-        - Donga
+        - [Quinara](/maps/spec-sheets/quinara)
 
-        - Kouffo
+        - [Tombali](/maps/spec-sheets/tombali)
 
-        - Littoral
+    - Updated the specification sheet for [Mali main](/maps/spec-sheets/mali) map and 9 separate regions:
 
-        - Mono
+        - [Bamako](/maps/spec-sheets/bamako)
 
-        - Oueme
+        - [Gao](/maps/spec-sheets/gao)
 
-        - Plateau
+        - [Kayes](/maps/spec-sheets/kayes)
 
-        - Zou
+        - [Kidal](/maps/spec-sheets/kidal)
 
-    - Updated the specification sheet for the Central African Republic Main maps and 17 separate prefectures:
+        - [Koulikoro](/maps/spec-sheets/koulikoro)
 
-        - BaminguiBangoran
+        - [Mopti](/maps/spec-sheets/mopti)
 
-        - Bangui
+        - [Segou](/maps/spec-sheets/segou)
 
-        - BasseKotto
+        - [Sikasso](/maps/spec-sheets/sikasso)
 
-        - HauteKotto
+        - [Tombouctou](/maps/spec-sheets/tombouctou)
 
-        - HautMbomou
+    - Updated the main district maps of [Malawi](/maps/spec-sheets/malawi) and main regions with 3 sub region maps:
 
-        - Kemo
+        - [CentralMalawiRegion](/maps/spec-sheets/centralmalawiregion)
 
-        - Lobaye
+        - [NorthernMalawiRegion](/maps/spec-sheets/northernmalawiregion)
 
-        - MambereKadei
+        - [SouthernMalawiRegion](/maps/spec-sheets/southernmalawiregion)
 
-        - Mbomou
+    - Updated the main region of [Senegal](/maps/spec-sheets/senegal) and 14 separate regions and main departments:
 
-        - NanaGrebizi
+        - [Dakar](/maps/spec-sheets/dakar)
 
-        - NanaMambere
+        - [Diourbel](/maps/spec-sheets/diourbel)
 
-        - OmbellaMPoko
+        - [Kaffrine](/maps/spec-sheets/kaffrine)
 
-        - Ouaka
+        - [Kaolack](/maps/spec-sheets/kaolack)
 
-        - Ouham
+        - [Kedougou](/maps/spec-sheets/kedougou)
 
-        - OuhamPende
+        - [Kolda](/maps/spec-sheets/kolda)
 
-        - SanghaMbaere
+        - [Louga](/maps/spec-sheets/louga)
 
-        - Vakaga
+        - [Matam](/maps/spec-sheets/matam)
 
-    - Updated the specification sheet for Guinea Bissai Main maps and 9 separate regions:
+        - [SaintLouis](/maps/spec-sheets/saintlouis)
 
-        - Bafata
+        - [Sedhiou](/maps/spec-sheets/sedhiou)
 
-        - Biombo
+        - [SenegalDepartments](/maps/spec-sheets/senegaldepartments)
 
-        - Bissau
+        - [Tambacounda](/maps/spec-sheets/tambacounda)
 
-        - Bolama
+        - [Thies](/maps/spec-sheets/thies)
 
-        - Cacheu
+        - [Ziguinchor](/maps/spec-sheets/ziguinchor)
 
-        - Gabu
+    - The following names have been updated in the specification sheet for [Ghana](/maps/spec-sheets/ghana) Main map and 10 separate regions:
 
-        - Oio
+        - Ashanti has been renamed as [Ashanti Region](/maps/spec-sheets/ashanti)
 
-        - Quinara
+        - Brong-Ahafo has been renamed as [Brong-Ahafo Region](/maps/spec-sheets/brongahafo)
 
-        - Tombali
+        - Central has been renamed as [Central Region](/maps/spec-sheets/centralghana)
 
-    - Updated the specification sheet for Mali main map and 9 separate regions:
+        - Eastern has been renamed as [Eastern Region](/maps/spec-sheets/easternghana)
 
-        - Bamako
+        - Greater Accra has been renamed as [Greater Accra Region](/maps/spec-sheets/greateraccra)
 
-        - Gao
+        - Northern has been renamed as [Northern Region](/maps/spec-sheets/northernghana)
 
-        - Kayes
+        - Upper East has been renamed as [Upper East Region](/maps/spec-sheets/uppereastghana)
 
-        - Kidal
+        - Upper West has been renamed as [Upper West Region](/maps/spec-sheets/upperwestghana)
 
-        - Koulikoro
+        - Volta has been renamed as [Volta Region](/maps/spec-sheets/volta)
 
-        - Mopti
-
-        - Segou
-
-        - Sikasso
-
-        - Tombouctou
-
-    - Updated the main district maps of Malawi and main regions with 3 sub region maps:
-
-        - CentralMalawiRegion
-
-        - Malawi
-
-        - MalawiRegion
-
-        - NorthernMalawiRegion
-
-        - SouthernMalawiRegion
-
-    - Updated the main region of Senegal and 14 separate regions and main departments:
-
-        - Dakar
-
-        - Diourbel
-
-        - Fatick
-
-        - Kaffrine
-
-        - Kaolack
-
-        - Kedougou
-
-        - Kolda
-
-        - Louga
-
-        - Matam
-
-        - SaintLouis
-
-        - Sedhiou
-
-        - Senegal
-
-        - SenegalDepartments
-
-        - Tambacounda
-
-        - Thies
-
-        - Ziguinchor
-
-    - The following names have been updated in the specification sheet for Ghana Main map and 10 separate regions:
-
-        - Ashanti has been renamed as Ashanti Region
-
-        - Brong-Ahafo has been renamed as Brong-Ahafo Region
-
-        - Central has been renamed as Central Region
-
-        - Eastern has been renamed as Eastern Region
-
-        - Greater Accra has been renamed as Greater Accra Region
-
-        - Northern has been renamed as Northern Region
-
-        - Upper East has been renamed as Upper East Region
-
-        - Upper West has been renamed as Upper West Region
-
-        - Volta has been renamed as Volta Region
-
-        - Western has been renamed as Western Region
+        - Western has been renamed as [Western Region](/maps/spec-sheets/westernghana)
 
     - The following maps have been renamed and updated in the specification sheet for Madagascar main province map and 6 separate region maps:
 
-        - Antananarivo has been renamed as Antananarivo Province
+        - Antananarivo has been renamed as [Antananarivo Province](/maps/spec-sheets/antananarivo)
 
-        - Antsiranana has been renamed as Antsiranana Province
+        - Antsiranana has been renamed as [Antsiranana Province](/maps/spec-sheets/antsiranana)
 
-        - Fianarantsoa has been renamed as Fianarantsoa Province
+        - Fianarantsoa has been renamed as [Fianarantsoa Province](/maps/spec-sheets/fianarantsoa)
 
-        - Mahajanga has been renamed as Mahajanga Province
+        - Mahajanga has been renamed as [Mahajanga Province](/maps/spec-sheets/mahajanga)
 
-        - Toamasina has been renamed as Toamasina Province
+        - Toamasina has been renamed as [Toamasina Province](/maps/spec-sheets/toamasina)
 
-        - Toliara has been renamed as Toliara Province
+        - Toliara has been renamed as [Toliara Province](/maps/spec-sheets/toliara)
 
-    - The following maps have been renamed and updated in the specification sheet for Gabon main map and 9 separate provinces:
+    - The following maps have been renamed and updated in the specification sheet for [Gabon](/maps/spec-sheets/gabon) main map and 9 separate provinces:
 
-        - Estuaire has been renamed as Estuaire (Libreville)
+        - Estuaire has been renamed as [Estuaire (Libreville)](/maps/spec-sheets/estuaire)
 
-        - Haut-Ogooue has been renamed as Haut-Ogooué (Franceville)
+        - Haut-Ogooue has been renamed as [Haut-Ogooué (Franceville)](/maps/spec-sheets/hautogooue)
 
-        - Moyen-Ogooue has been renamed as Moyen-Ogooué (Lambaréné)
+        - Moyen-Ogooue has been renamed as [Moyen-Ogooué (Lambaréné)](/maps/spec-sheets/moyenogooue)
 
-        - Ngounie has been renamed as Ngounié (Mouila)
+        - Ngounie has been renamed as [Ngounié (Mouila)](/maps/spec-sheets/ngounie)
 
-        - Nyanga has been renamed as Nyanga (Tchibanga)
+        - Nyanga has been renamed as [Nyanga (Tchibanga)](/maps/spec-sheets/nyanga)
 
-        - Ogooue-Ivindo has been renamed as Ogooué-Ivindo (Makokou)
+        - Ogooue-Ivindo has been renamed as [Ogooué-Ivindo (Makokou)](/maps/spec-sheets/ogooueivindo)
 
-        - Ogooue-Lolo has been renamed as Ogooué-Lolo (Koulamoutou)
+        - Ogooue-Lolo has been renamed as [Ogooué-Lolo (Koulamoutou)](/maps/spec-sheets/ogoouelolo)
 
-        - Ogooue-Maritime has been renamed as Ogooué-Maritime (Port-Gentil)
+        - Ogooue-Maritime has been renamed as [Ogooué-Maritime (Port-Gentil)](/maps/spec-sheets/ogoouemaritime)
 
-        - Woleu-Ntem has been renamed as Woleu-Ntem (Oyem)
+        - Woleu-Ntem has been renamed as [Woleu-Ntem (Oyem)](/maps/spec-sheets/woleuntem)
 
     - The following maps have been renamed and updated in the specification sheet for Niger main map and 8 separate regions:
 
-        - Agadez has been renamed as Agadez Region
+        - Agadez has been renamed as [Agadez Region](/maps/spec-sheets/agadez)
 
-        - Diffa has been renamed as Diffa Region
+        - Diffa has been renamed as [Diffa Region](/maps/spec-sheets/diffa)
 
-        - Dosso has been renamed as Dosso Region
+        - Dosso has been renamed as [Dosso Region](/maps/spec-sheets/dosso)
 
-        - Maradi has been renamed as Maradi Region
+        - Maradi has been renamed as [Maradi Region](/maps/spec-sheets/maradi)
 
-        - Niamey has been renamed as Niamey (capital district)
+        - Niamey has been renamed as [Niamey (capital district)](/maps/spec-sheets/niamey)
 
-        - Tahoua has been renamed as Tahoua Region
+        - Tahoua has been renamed as [Tahoua Region](/maps/spec-sheets/tahoua)
 
-        - Tillabery has been renamed as Tillabéri Region
+        - Tillabery has been renamed as [Tillabéri Region](/maps/spec-sheets/tillaberi)
 
-        - Zinder has been renamed as Zinder Region
+        - Zinder has been renamed as [Zinder Region](/maps/spec-sheets/zinder)
 
     - Updated the specification sheet for Gambia main map and 8 separate regions:
 
-        - Banjul
+        - [Banjul](/maps/spec-sheets/banjul)
 
-        - Basse
+        - [Basse](/maps/spec-sheets/basse)
 
-        - Brikama
+        - [Brikama](/maps/spec-sheets/brikama)
 
-        - Gambia
+        - [Janjanbureh](/maps/spec-sheets/janjanbureh)
 
-        - Janjanbureh
+        - [Kanifing](/maps/spec-sheets/kanifing)
 
-        - Kanifing
+        - [Kerewan](/maps/spec-sheets/kerewan)
 
-        - Kerewan
+        - [Kuntaur](/maps/spec-sheets/kuntaur)
 
-        - Kuntaur
+        - [Mansakonko](/maps/spec-sheets/mansakonko)
 
-        - Mansakonko
+    - Updated and added specification sheet for [Ivory Coast](/maps/spec-sheets/ivorycoastregions) main region and 33 separate regions:
 
-    - Updated and added specification sheet for Ivory Coast main region and 33 separate regions:
+        - [AbidjanAutonomousDistrict](/maps/spec-sheets/abidjanautonomousdistrict)
 
-        - AbidjanAutonomousDistrict
+        - [AgnebyTiassa](/maps/spec-sheets/agnebytiassa)
 
-        - AgnebyTiassa
+        - [Bafing](/maps/spec-sheets/bafing)
 
-        - Bafing
+        - [Bagoue](/maps/spec-sheets/bagoue)
 
-        - Bagoue
+        - [Belier](/maps/spec-sheets/belier)
 
-        - Belier
+        - [Bere](/maps/spec-sheets/bere)
 
-        - Bere
+        - [Bounkani](/maps/spec-sheets/bounkani)
 
-        - Bounkani
+        - [Cavally](/maps/spec-sheets/cavally)
 
-        - Cavally
+        - [Folon](/maps/spec-sheets/folon)
 
-        - Folon
+        - [Gbeke](/maps/spec-sheets/gbeke)
 
-        - Gbeke
+        - [Gbokle](/maps/spec-sheets/gbokle)
 
-        - Gbokle
+        - [Goh](/maps/spec-sheets/goh)
 
-        - Goh
+        - [Gontougo](/maps/spec-sheets/gontougo)
 
-        - Gontougo
+        - [GrandsPonts](/maps/spec-sheets/grandsponts)
 
-        - GrandsPonts
+        - [Guemon](/maps/spec-sheets/guemon)
 
-        - Guemon
+        - [Hambol](/maps/spec-sheets/hambol)
 
-        - Hambol
+        - [HautSassandra](/maps/spec-sheets/hautsassandra)
 
-        - HautSassandra
+        - [Iffou](/maps/spec-sheets/iffou)
 
-        - Iffou
+        - [IndenieDjuablin](/maps/spec-sheets/indeniedjuablin)
 
-        - IndenieDjuablin
+        - [Kabadougou](/maps/spec-sheets/kabadougou)
 
-        - IvoryCoastRegions
+        - [LaMe](/maps/spec-sheets/la me)
 
-        - Kabadougou
+        - [LohDjiboua](/maps/spec-sheets/lohdjiboua)
 
-        - LaMe
+        - [Marahoue](/maps/spec-sheets/marahoue)
 
-        - Goh
+        - [Moronou](/maps/spec-sheets/moronou)
 
-        - Gontougo
+        - [NZi](/maps/spec-sheets/nzi)
 
-        - GrandsPonts
+        - [Nawa](/maps/spec-sheets/nawa)
 
-        - Guemon
+        - [Poro](/maps/spec-sheets/poro)
 
-        - Hambol
+        - [SanPedro](/maps/spec-sheets/sanpedro)
 
-        - HautSassandra
+        - [SudComoe](/maps/spec-sheets/sudcomoe)
 
-        - Iffou
+        - [Tchologo](/maps/spec-sheets/tchologo)
 
-        - IndenieDjuablin
+        - [Tonkpi](/maps/spec-sheets/tonkpi)
 
-        - IvoryCoastRegions
+        - [Worodougou](/maps/spec-sheets/worodougou)
 
-        - Kabadougou
-
-        - LaMe
-
-        - LohDjiboua
-
-        - Marahoue
-
-        - Moronou
-
-        - NZi
-
-        - Nawa
-
-        - Poro
-
-        - SanPedro
-
-        - SudComoe
-
-        - Tchologo
-
-        - Tonkpi
-
-        - Worodougou
-
-        - YamoussoukroAutonomousDistrict
+        - [YamoussoukroAutonomousDistrict](/maps/spec-sheets/yamoussoukroautonomousdistrict)
 
     - Chile main map has been updated and renamed with 16 separate region maps. Región de Ñuble has been added as the new entity. The following entities have been renamed:
 

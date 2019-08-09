@@ -65,23 +65,16 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            string query = "select * from TotalFootfall";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            dt.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(dt);
-                }
-            }
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Day", typeof(System.String));
+            ChartData.Columns.Add("No. of Visitors", typeof(System.Double));
+            ChartData.Rows.Add("Mon", 15123);
+            ChartData.Rows.Add("Tue", 14233);
+            ChartData.Rows.Add("Wed", 23507);
+            ChartData.Rows.Add("Thu", 9110);
+            ChartData.Rows.Add("Fri", 15529);
+            ChartData.Rows.Add("Sat", 20803);
+            ChartData.Rows.Add("Sun", 19202);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
@@ -102,8 +95,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             line.YAxis.Text = "No. of visitors";
 
             line.Legend.Show = false;
-
-            Literal1.Text = line.Render();
+            line.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -112,8 +106,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.LineChart" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -180,26 +172,39 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class ScrollChart : System.Web.UI.Page {
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class ScrollChart : System.Web.UI.Page 
+    {
         protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
-            string query = "select * from MonthlyRevenue";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            ChartData.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+            ChartData.Columns.Add("Month", typeof(System.String));
+            ChartData.Columns.Add("Revenue", typeof(System.Double));
+            ChartData.Rows.Add("Jan 2016", 27400);
+            ChartData.Rows.Add("Feb 2016", 29800);
+            ChartData.Rows.Add("Mar 2016", 25800);
+            ChartData.Rows.Add("Apr 2016", 26800);
+            ChartData.Rows.Add("May 2016", 29600);
+            ChartData.Rows.Add("Jun 2016", 32600);
+            ChartData.Rows.Add("Jul 2016", 31800);
+            ChartData.Rows.Add("Aug 2016", 36700);
+            ChartData.Rows.Add("Sep 2016", 29700);
+            ChartData.Rows.Add("Oct 2016", 31900);
+            ChartData.Rows.Add("Nov 2016", 34800);
+            ChartData.Rows.Add("Dec 2016", 24800);
+            ChartData.Rows.Add("Jan 2017", 26300);
+            ChartData.Rows.Add("Feb 2017", 31800);
+            ChartData.Rows.Add("Mar 2017", 30900);
+            ChartData.Rows.Add("Apr 2017", 33000);
+            ChartData.Rows.Add("May 2017", 36200);
+            ChartData.Rows.Add("Jun 2017", 32100);
+            ChartData.Rows.Add("Jul 2017", 37500);
+            ChartData.Rows.Add("Aug 2017", 38500);
+            ChartData.Rows.Add("Sep 2017", 35400);
+            ChartData.Rows.Add("Oct 2017", 38200);
+            ChartData.Rows.Add("Nov 2017", 33300);
+            ChartData.Rows.Add("Dec 2017", 38300);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
@@ -212,7 +217,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             line.YAxis.Text = "Revenue";
             line.Width.Pixel(600);
             line.Height.Pixel(500);
-            Literal1.Text = line.Render();
+            line.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -221,7 +228,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollLineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollLineChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -263,28 +269,21 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            string query = "select * from TotalFootfall";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            dt.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(dt);
-                }
-            }
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Day", typeof(System.String));
+            ChartData.Columns.Add("No. of Visitors", typeof(System.Double));
+            ChartData.Rows.Add("Mon", 15123);
+            ChartData.Rows.Add("Tue", 14233);
+            ChartData.Rows.Add("Wed", 23507);
+            ChartData.Rows.Add("Thu", 9110);
+            ChartData.Rows.Add("Fri", 15529);
+            ChartData.Rows.Add("Sat", 20803);
+            ChartData.Rows.Add("Sun", 19202);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
 
-            Charts.SplineChart spline = new Charts.SplineChart("spline_chart_db");
+            Charts.SplineChart spline = new Charts.SplineChart("spline_chart");
 
             spline.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             spline.Width.Pixel(700);
@@ -300,8 +299,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             spline.YAxis.Text = "No. of visitors";
 
             spline.Legend.Show = false;
-
-            Literal1.Text = spline.Render();
+            
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -310,8 +310,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="splineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.splineChart" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
