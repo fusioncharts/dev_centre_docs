@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/srilankaprovince
 
-Map Name: SriLanka Province
+Map Name: Sri Lanka Province
 Dimensions (Width x Height): 600x1040
 
 ### List of Entities
