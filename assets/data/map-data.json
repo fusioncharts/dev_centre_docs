@@ -6827,6 +6827,62 @@
             "markerData": "/maps/marker-data/srilanka"
           },
           {
+            "name": "Sri Lanka Province",
+            "alias": "srilankaprovince",
+            "specSheet": "/maps/spec-sheets/srilankaprovince"
+          },
+          {
+            "name": "Sri Lanka (Separate Provinces)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Central Sri Lanka Province",
+                "alias": "centralsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/centralsrilankaprovince"
+              },
+              {
+                "name": "Eastern Sri Lanka Province",
+                "alias": "easternsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/easternsrilankaprovince"
+              },
+              {
+                "name": "North Central Sri Lanka Province",
+                "alias": "northcentralsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/northcentralsrilankaprovince"
+              },
+              {
+                "name": "Northern Sri Lanka Province",
+                "alias": "northernsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/northernsrilankaprovince"
+              },
+              {
+                "name": "North Western Sri Lanka Province",
+                "alias": "northeesternsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/northeesternsrilankaprovince"
+              },
+              {
+                "name": "Sabaragamuwa Sri Lanka Province",
+                "alias": "sabaragamuwasrilankaprovince",
+                "specSheet": "/maps/spec-sheets/sabaragamuwasrilankaprovince"
+              },
+              {
+                "name": "Southern Sri lanka Province",
+                "alias": "southernsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/southernsrilankaprovince"
+              },
+              {
+                "name": "Uva Sri lanka Province",
+                "alias": "uvasrilankaprovince",
+                "specSheet": "/maps/spec-sheets/uvasrilankaprovince"
+              },
+              {
+                "name": "Western Sri lanka Province",
+                "alias": "westernsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/westernsrilankaprovince"
+              }
+            ]
+          },
+          {
             "name": "Taiwan",
             "alias": "taiwan",
             "specSheet": "/maps/spec-sheets/taiwan",
