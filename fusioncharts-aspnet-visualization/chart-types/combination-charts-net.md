@@ -94,17 +94,20 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // initialixe DataModel object
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Single Y-axis Combination Chart 2D";
+
+            // initialize DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\mscombi2d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
-            Charts.CombinationChart combiChart= new Charts.CombinationChart("mscombi2d");
+            Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombi2d");
             // set model as data source
             combiChart.Data.Source = model;
-            // provide field name, which should be rendered as column plot
+            // provide field name, which should be rendered as line column
             combiChart.Data.ColumnPlots("Actual Revenue");
             // provide field name, which should be rendered as line plot
             combiChart.Data.LinePlots("Projected Revenue");
@@ -190,14 +193,17 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Single Y-axis Combination Chart 3D";
+
             // initialixe DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\mscombi3d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi3d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
-            Charts.CombinationChart combiChart= new Charts.CombinationChart("mscombi3d");
+            Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombi3d");
             // Set threeD
             combiChart.ThreeD = true;
             // set model as data source
@@ -317,10 +323,13 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // initialixe DataModel object
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Dual Y-axis Combination Chart 2D";
+
+            // initialize DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\mscombidy2d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombidy2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
@@ -455,14 +464,17 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Single Y-axis Scroll Combination Chart 2D";
+
             // initialixe DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\scrollcombi2d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombi2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
-            Charts.CombinationChart combiChart= new Charts.CombinationChart("scrollcombi2d");
+            Charts.CombinationChart combiChart = new Charts.CombinationChart("scrollcombi2d");
             // set model as data source
             combiChart.Data.Source = model;
             // enable scrolling
@@ -470,17 +482,13 @@ namespace TestProject
             // provide field name, which should be rendered as line column
             combiChart.Data.ColumnPlots("Actual Revenue");
             // provide field name, which should be rendered as spline area plot
-            combiChart.Data.LinePlots("Projected Revenue");
+            combiChart.Data.SplinePlots("Projected Revenue");
             // provide field name, which should be rendered as spline plot
-            combiChart.Data.AreaPlots("Profit");
+            combiChart.Data.SplineAreaPlots("Profit");
             // Set XAxis caption
             combiChart.XAxis.Text = "Month";
             // Set YAxis caption
             combiChart.PrimaryYAxis.Text = "Amount (in USD)";
-            // enable dual y
-            combiChart.DualY = true;
-            // set secondary y axis text
-            combiChart.SecondaryYAxis.Text = "Profit %";
             // set chart caption
             combiChart.Caption.Text = "Revenues and Profit";
             // Set chart sub caption
@@ -592,10 +600,13 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Dual Y-axis Scroll Combination Chart 2D";
+
             // initialixe DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\scrollcombidy2d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombidy2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object

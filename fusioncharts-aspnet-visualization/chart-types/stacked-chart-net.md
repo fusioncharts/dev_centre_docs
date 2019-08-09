@@ -95,25 +95,20 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class StackedChart : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e) {
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class StackedChart : System.Web.UI.Page 
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
             DataTable ChartData = new DataTable();
-            string query = "select * from ProductRevenue";
-            string connetionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            ChartData.Clear();
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+            ChartData.Columns.Add("Quarter", typeof(System.String));
+            ChartData.Columns.Add("Food Products", typeof(System.Double));
+            ChartData.Columns.Add("Non-Food Products", typeof(System.Double));
+            ChartData.Rows.Add("Q1", 11000, 11400);
+            ChartData.Rows.Add("Q2", 15000, 14800);
+            ChartData.Rows.Add("Q3", 13500, 8300);
+            ChartData.Rows.Add("Q4", 15000, 11800);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
@@ -126,7 +121,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             stack.XAxis.Text = "Quarter";
             stack.YAxis.Text = "Revenue";
             stack.Data.Source = model;
-            Literal1.Text = stack.Render();
+            stack.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -135,8 +132,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StackedChart.aspx.cs"
-Inherits="FusionChartsVisualisationWebFormsSamples.Samples.StackedChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head runat="server">
