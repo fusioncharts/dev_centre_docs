@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/easternsriLankaprovince
+#### JavaScript Alias: maps/easternsrilankaprovince
 
 Map Name: Eastern SriLanka Province
 Dimensions (Width x Height): 600x1040
