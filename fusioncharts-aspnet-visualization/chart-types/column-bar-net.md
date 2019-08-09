@@ -110,7 +110,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
 
 <!DOCTYPE html>
 
@@ -259,7 +258,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollColumnChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollColumnChart" %>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -383,8 +382,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OverlappedChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.OverlappedChart" %>
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -466,9 +463,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ``` 
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="barChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.barChart" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">

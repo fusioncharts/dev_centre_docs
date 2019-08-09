@@ -117,7 +117,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollColumnChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollColumnChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -222,7 +221,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollLineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollLineChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -302,7 +300,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollAreaChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollAreaChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
