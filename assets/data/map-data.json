@@ -6827,6 +6827,62 @@
             "markerData": "/maps/marker-data/srilanka"
           },
           {
+            "name": "Sri Lanka Province",
+            "alias": "srilankaprovince",
+            "specSheet": "/maps/spec-sheets/srilankaprovince"
+          },
+          {
+            "name": "Sri Lanka (Separate Provinces)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Central Sri Lanka Province",
+                "alias": "centralsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/centralsrilankaprovince"
+              },
+              {
+                "name": "Eastern Sri Lanka Province",
+                "alias": "easternsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/easternsrilankaprovince"
+              },
+              {
+                "name": "North Central Sri Lanka Province",
+                "alias": "northcentralsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/northcentralsrilankaprovince"
+              },
+              {
+                "name": "Northern Sri Lanka Province",
+                "alias": "northernsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/northernsrilankaprovince"
+              },
+              {
+                "name": "North Western Sri Lanka Province",
+                "alias": "northwesternsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/northwesternsrilankaprovince"
+              },
+              {
+                "name": "Sabaragamuwa Sri Lanka Province",
+                "alias": "sabaragamuwasrilankaprovince",
+                "specSheet": "/maps/spec-sheets/sabaragamuwasrilankaprovince"
+              },
+              {
+                "name": "Southern Sri lanka Province",
+                "alias": "southernsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/southernsrilankaprovince"
+              },
+              {
+                "name": "Uva Sri lanka Province",
+                "alias": "uvasrilankaprovince",
+                "specSheet": "/maps/spec-sheets/uvasrilankaprovince"
+              },
+              {
+                "name": "Western Sri lanka Province",
+                "alias": "westernsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/westernsrilankaprovince"
+              }
+            ]
+          },
+          {
             "name": "Taiwan",
             "alias": "taiwan",
             "specSheet": "/maps/spec-sheets/taiwan",
@@ -9690,6 +9746,158 @@
         "name": "Madagascar (Region)",
         "alias": "madagascarregions",
         "specSheet": "/maps/spec-sheets/madagascarregions"
+      },
+      {
+        "name": "Madagascar (Separate Provinces)",
+        "marker": false,
+        "members": [
+          {
+            "name": "Antananarivo",
+            "alias": "antananarivo",
+            "specSheet": "/maps/spec-sheets/antananarivo"
+          },
+          {
+            "name": "Antsiranana",
+            "alias": "antsiranana",
+            "specSheet": "/maps/spec-sheets/antsiranana"
+          },
+          {
+            "name": "Fianarantsoa",
+            "alias": "fianarantsoa",
+            "specSheet": "/maps/spec-sheets/fianarantsoa"
+          },
+          {
+            "name": "Mahajanga",
+            "alias": "mahajanga",
+            "specSheet": "/maps/spec-sheets/mahajanga"
+          },
+          {
+            "name": "Toamasina",
+            "alias": "toamasina",
+            "specSheet": "/maps/spec-sheets/toamasina"
+          },
+          {
+            "name": "Toliara",
+            "alias": "toliara",
+            "specSheet": "/maps/spec-sheets/toliara"
+          }
+        ]
+      },
+      {
+        "name": "Madagascar (Separate Regions)",
+        "marker": false,
+        "members": [
+          {
+            "name": "Alaotra Mangoro",
+            "alias": "alaotramangoro",
+            "specSheet": "/maps/spec-sheets/alaotramangoro"
+          },
+          {
+            "name": "AmoroniMania",
+            "alias": "amoronimania",
+            "specSheet": "/maps/spec-sheets/amoronimania"
+          },
+          {
+            "name": "Analamanga",
+            "alias": "analamanga",
+            "specSheet": "/maps/spec-sheets/analamanga"
+          },
+          {
+            "name": "Analanjirofo",
+            "alias": "analanjirofo",
+            "specSheet": "/maps/spec-sheets/analanjirofo"
+          },
+          {
+            "name": "Androy",
+            "alias": "androy",
+            "specSheet": "/maps/spec-sheets/androy"
+          },
+          {
+            "name": "Anosy",
+            "alias": "anosy",
+            "specSheet": "/maps/spec-sheets/anosy"
+          },
+          {
+            "name": "AtsimoAndrefana",
+            "alias": "atsimoandrefana",
+            "specSheet": "/maps/spec-sheets/atsimoandrefana"
+          },
+          {
+            "name": "AtsimoAtsinanana",
+            "alias": "atsimoatsinanana",
+            "specSheet": "/maps/spec-sheets/atsimoatsinanana"
+          },
+          {
+            "name": "Atsinanana",
+            "alias": "atsinanana",
+            "specSheet": "/maps/spec-sheets/atsinanana"
+          },
+          {
+            "name": "Betsiboka",
+            "alias": "betsiboka",
+            "specSheet": "/maps/spec-sheets/betsiboka"
+          },
+          {
+            "name": "Boeny",
+            "alias": "boeny",
+            "specSheet": "/maps/spec-sheets/boeny"
+          },
+          {
+            "name": "Bongolava",
+            "alias": "bongolava",
+            "specSheet": "/maps/spec-sheets/bongolava"
+          },
+          {
+            "name": "Diana",
+            "alias": "diana",
+            "specSheet": "/maps/spec-sheets/diana"
+          },
+          {
+            "name": "Haute Matsiatra",
+            "alias": "hautematsiatra",
+            "specSheet": "/maps/spec-sheets/hautematsiatra"
+          },
+          {
+            "name": "Ihorombe",
+            "alias": "ihorombe",
+            "specSheet": "/maps/spec-sheets/ihorombe"
+          },
+          {
+            "name": "Itasy",
+            "alias": "itasy",
+            "specSheet": "/maps/spec-sheets/itasy"
+          },
+          {
+            "name": "Melaky",
+            "alias": "melaky",
+            "specSheet": "/maps/spec-sheets/melaky"
+          },
+          {
+            "name": "Menabe",
+            "alias": "menabe",
+            "specSheet": "/maps/spec-sheets/menabe"
+          },
+          {
+            "name": "Sava",
+            "alias": "sava",
+            "specSheet": "/maps/spec-sheets/sava"
+          },
+          {
+            "name": "Sofia",
+            "alias": "sofia",
+            "specSheet": "/maps/spec-sheets/sofia"
+          },
+          {
+            "name": "Vakinankaratra",
+            "alias": "vakinankaratra",
+            "specSheet": "/maps/spec-sheets/vakinankaratra"
+          },
+          {
+            "name": "VatovavyFitovinany",
+            "alias": "vatovavyfitovinany",
+            "specSheet": "/maps/spec-sheets/vatovavyfitovinany"
+          }
+        ]
       },
       {
         "name": "Sudan",
