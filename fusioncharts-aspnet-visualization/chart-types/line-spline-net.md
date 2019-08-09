@@ -63,25 +63,18 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class SeriesCustomization : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public ActionResult Index()
         {
-            DataTable dt = new DataTable();
-            string query = "select * from TotalFootfall";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            dt.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(dt);
-                }
-            }
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Day", typeof(System.String));
+            ChartData.Columns.Add("No. of Visitors", typeof(System.Double));
+            ChartData.Rows.Add("Mon", 15123);
+            ChartData.Rows.Add("Tue", 14233);
+            ChartData.Rows.Add("Wed", 23507);
+            ChartData.Rows.Add("Thu", 9110);
+            ChartData.Rows.Add("Fri", 15529);
+            ChartData.Rows.Add("Sat", 20803);
+            ChartData.Rows.Add("Sun", 19202);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
@@ -102,8 +95,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             line.YAxis.Text = "No. of visitors";
 
             line.Legend.Show = false;
-
-            Literal1.Text = line.Render();
+            line.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            ViewData["Chart"] = line.Render();
+            return View();
         }
     }
 }
@@ -180,39 +174,45 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class ScrollChart : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e)
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class ScrollChart : System.Web.UI.Page 
+    {
+        public ActionResult Index()
         {
             DataTable ChartData = new DataTable();
-            string query = "select * from MonthlyRevenue";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            ChartData.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+            ChartData.Columns.Add("Day", typeof(System.String));
+            ChartData.Columns.Add("No. of Visitors", typeof(System.Double));
+            ChartData.Rows.Add("Mon", 15123);
+            ChartData.Rows.Add("Tue", 14233);
+            ChartData.Rows.Add("Wed", 23507);
+            ChartData.Rows.Add("Thu", 9110);
+            ChartData.Rows.Add("Fri", 15529);
+            ChartData.Rows.Add("Sat", 20803);
+            ChartData.Rows.Add("Sun", 19202);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
-            Charts.LineChart line = new Charts.LineChart("scroll_chart_db");
-            line.Scrollable = true;
-            line.Data.Source = model;
-            line.Caption.Text = "Sales Trends";
-            line.SubCaption.Text = "2016-2017";
-            line.XAxis.Text = "Month";
-            line.YAxis.Text = "Revenue";
-            line.Width.Pixel(600);
-            line.Height.Pixel(500);
-            Literal1.Text = line.Render();
+
+            Charts.SplineChart spline = new Charts.SplineChart("spline_chart");
+
+            spline.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            spline.Width.Pixel(700);
+            spline.Height.Pixel(400);
+
+            spline.Data.Source = model;
+
+            spline.Caption.Text = "Total Footfall in BakersField Central";
+            spline.Caption.Bold = true;
+
+            spline.SubCaption.Text = "Last Week";
+            spline.XAxis.Text = "Day";
+            spline.YAxis.Text = "No. of visitors";
+
+            spline.Legend.Show = false;
+            
+            ViewData["Chart"] = spline.Render();
+            return View();
         }
     }
 }
@@ -261,30 +261,23 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class SeriesCustomization : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public ActionResult Index()
         {
-            DataTable dt = new DataTable();
-            string query = "select * from TotalFootfall";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            dt.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(dt);
-                }
-            }
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Day", typeof(System.String));
+            ChartData.Columns.Add("No. of Visitors", typeof(System.Double));
+            ChartData.Rows.Add("Mon", 15123);
+            ChartData.Rows.Add("Tue", 14233);
+            ChartData.Rows.Add("Wed", 23507);
+            ChartData.Rows.Add("Thu", 9110);
+            ChartData.Rows.Add("Fri", 15529);
+            ChartData.Rows.Add("Sat", 20803);
+            ChartData.Rows.Add("Sun", 19202);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
 
-            Charts.SplineChart spline = new Charts.SplineChart("spline_chart_db");
+            Charts.SplineChart spline = new Charts.SplineChart("spline_chart");
 
             spline.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             spline.Width.Pixel(700);
@@ -300,8 +293,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             spline.YAxis.Text = "No. of visitors";
 
             spline.Legend.Show = false;
-
-            Literal1.Text = spline.Render();
+            
+            ViewData["Chart"] = spline.Render();
+            return View();
         }
     }
 }

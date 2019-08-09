@@ -47,34 +47,15 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class PyramidChart : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            // Create data table
+        public ActionResult Index()
+    {
             DataTable ChartData = new DataTable();
-
-            // Retrieve data using database query
-            string query = "select [Population], [Global Wealth] from dbo.GlobalWealth";
-            string connetionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            ChartData.Clear();
-
-            // Connection string
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+            ChartData.Columns.Add("Label", typeof(System.String));
+            ChartData.Columns.Add("Value", typeof(System.Double));
+            ChartData.Rows.Add("Top 32 mn (0.7%)", 98.7);
+            ChartData.Rows.Add("Next 361 mn (7.7%)", 101.8);
+            ChartData.Rows.Add("Next 1.1 bn (22.9%)", 33);
+            ChartData.Rows.Add("Last 3.2 bn (68.7%)", 7.3);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
@@ -84,10 +65,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             pyramid.Caption.OnTop = false;
             pyramid.SubCaption.Text = "Credit Suisse 2013";
             pyramid.Width.Pixel(400);
-            pyramid.Height.Pixel(500);
-            Literal1.Text = pyramid.Render();
-        }
+            pyramid.Height.Pixel(400);
+            pyramid.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            ViewData["Chart"] = pyramid.Render();
+            return View();
     }
+  }
 }
 ```
 

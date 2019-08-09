@@ -52,46 +52,35 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class FunnelChart : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e) {
-            // Create data table
-            DataTable primaryData = new DataTable();
 
-            // Retrieve data using database query
-            string query = "select [Website Sections], [Website Visits] from dbo.WebsiteVisits";
-            string connetionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            ChartData.Clear();
-
-            // Connection string
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class FunnelChart : System.Web.UI.Page 
+    {
+        public ActionResult Index()
+        {
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Label", typeof(System.String));
+            ChartData.Columns.Add("Value", typeof(System.Double));
+            ChartData.Rows.Add("Unique Website Visits", 1460000);
+            ChartData.Rows.Add("Programme Details Section Visits", 930000);
+            ChartData.Rows.Add("Attempts to Register", 540000);
+            ChartData.Rows.Add("Successful Registrations", 210000);
+            ChartData.Rows.Add("Logged In", 190000);
+            ChartData.Rows.Add("Purchased on Introductory Offers", 120000);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
-            Charts.FunnelChart funnel = new Charts.FunnelChart("first_Funnel_chart");
+            Widget.FunnelChart funnel = new Widget.FunnelChart("first_Funnel_chart");
             funnel.Data.Source = model;
             funnel.Caption.Text = "Visit to purchase analysis";
             funnel.Caption.Text = "Harry's Supermart";
-            funnel.SubCaption.Text = "Visit to purchase- Conversion Anallysis for last year";
+            funnel.SubCaption.Text = "Visit to purchase- Conversion Analysis for last year";
             funnel.Width.Pixel(600);
             funnel.Height.Pixel(400);
-            Literal1.Text = funnel.Render();
+            funnel.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            ViewData["Chart"] = funnel.Render();
+            return View();
         }
     }
 }

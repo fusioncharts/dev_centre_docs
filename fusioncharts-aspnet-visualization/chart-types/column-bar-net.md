@@ -62,36 +62,21 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class FirstChart: System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-           // Create data table
-            DataTable primaryData = new DataTable();
+        public ActionResult Index()
+        {               
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Programming Language", typeof(System.String));
+            ChartData.Columns.Add("Users", typeof(System.Double));
+            ChartData.Rows.Add("Java",62000);
+            ChartData.Rows.Add("Python",46000);
+            ChartData.Rows.Add("Javascript",38000);
+            ChartData.Rows.Add("C++",31000);
+            ChartData.Rows.Add("C#",27000);
+            ChartData.Rows.Add("PHP",14000);
+            ChartData.Rows.Add("Perl",14000);
 
-            // Retrieve data using database query
-            string query = "select [Languages], [User] from dbo.UserPerLanguage";
-            string connetionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-
-            // Connection string
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(primaryData);
-                }
-            }
             // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
+            StaticSource source = new StaticSource(ChartData);
             // Create instance of DataModel class
             DataModel model = new DataModel();
             // Add DataSource to the DataModel
@@ -105,14 +90,18 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Data.Source = model;
             // Set Chart Title
             column.Caption.Text = "Most popular programming language";
+            // Sset chart sub title
+            column.SubCaption.Text = "2017-2018";
             // hide chart Legend
             column.Legend.Show = false;
             // set XAxis Text
             column.XAxis.Text = "Programming Language";
             // Set YAxis title
             column.YAxis.Text = "User";
-            // Render the chart to 'Literal1' literal control
-            Literal1.Text = column.Render();
+            column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            
+            ViewData["Chart"] = column.Render();
+            return View();
         }
     }
 }
@@ -214,26 +203,39 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class ScrollChart : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e)
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class ScrollChart : System.Web.UI.Page 
+    {
+        public ActionResult Index()
         {
             DataTable ChartData = new DataTable();
-            string query = "select * from MonthlyRevenue";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            ChartData.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+            ChartData.Columns.Add("Month", typeof(System.String));
+            ChartData.Columns.Add("Revenue", typeof(System.Double));
+            ChartData.Rows.Add("Jan 2016", 27400);
+            ChartData.Rows.Add("Feb 2016", 29800);
+            ChartData.Rows.Add("Mar 2016", 25800);
+            ChartData.Rows.Add("Apr 2016", 26800);
+            ChartData.Rows.Add("May 2016", 29600);
+            ChartData.Rows.Add("Jun 2016", 32600);
+            ChartData.Rows.Add("Jul 2016", 31800);
+            ChartData.Rows.Add("Aug 2016", 36700);
+            ChartData.Rows.Add("Sep 2016", 29700);
+            ChartData.Rows.Add("Oct 2016", 31900);
+            ChartData.Rows.Add("Nov 2016", 34800);
+            ChartData.Rows.Add("Dec 2016", 24800);
+            ChartData.Rows.Add("Jan 2017", 26300);
+            ChartData.Rows.Add("Feb 2017", 31800);
+            ChartData.Rows.Add("Mar 2017", 30900);
+            ChartData.Rows.Add("Apr 2017", 33000);
+            ChartData.Rows.Add("May 2017", 36200);
+            ChartData.Rows.Add("Jun 2017", 32100);
+            ChartData.Rows.Add("Jul 2017", 37500);
+            ChartData.Rows.Add("Aug 2017", 38500);
+            ChartData.Rows.Add("Sep 2017", 35400);
+            ChartData.Rows.Add("Oct 2017", 38200);
+            ChartData.Rows.Add("Nov 2017", 33300);
+            ChartData.Rows.Add("Dec 2017", 38300);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
@@ -246,7 +248,10 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             column.YAxis.Text = "Revenue";
             column.Width.Pixel(600);
             column.Height.Pixel(500);
-            Literal1.Text = column.Render();
+            column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+
+            ViewData["Chart"] = column.Render();
+            return View();
         }
     }
 }
@@ -334,25 +339,26 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class OverlappedChart : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e) {
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class OverlappedChart : System.Web.UI.Page 
+    {
+        public ActionResult Index()
+        {
             DataTable ChartData = new DataTable();
-            string query = "select * from RankingTable";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            ChartData.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+            ChartData.Columns.Add("Team", typeof(System.String));
+            ChartData.Columns.Add("Matches", typeof(System.Double));
+            ChartData.Columns.Add("Wins", typeof(System.Double));
+            ChartData.Rows.Add("Boston Red Sox", 88, 57);
+            ChartData.Rows.Add("New York Yankees", 84, 54);
+            ChartData.Rows.Add("Tampa Bay Rays", 86, 42);
+            ChartData.Rows.Add("Toronto Blue Jays", 86, 39);
+            ChartData.Rows.Add("Baltimore Orioles", 85, 24);
+            ChartData.Rows.Add("Cleveland Indians", 85, 46);
+            ChartData.Rows.Add("Detroit Tigers", 88, 38);
+            ChartData.Rows.Add("Minnesota Twins", 83, 35);
+            ChartData.Rows.Add("Chicago White Sox", 86, 29);
+            ChartData.Rows.Add("Kansas City Royals", 86, 25);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
@@ -365,9 +371,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             OverlappedBar.SubCaption.Text = "Teams in the lead";
             OverlappedBar.XAxis.Text = "Position";
             OverlappedBar.YAxis.Text = "Team";
-            OverlappedBar.Width.Pixel(700);
+            OverlappedBar.Width.Pixel(500);
             OverlappedBar.Height.Pixel(400);
-            Literal1.Text = OverlappedBar.Render();
+            OverlappedBar.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+
+            ViewData["Chart"] = OverlappedBar.Render();
+            return View();
         }
     }
 }
@@ -414,36 +423,21 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class FirstChart: System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public ActionResult Index()
         {
-           // Create data table
-            DataTable primaryData = new DataTable();
-
-            // Retrieve data using database query
-            string query = "select [Languages], [User] from dbo.UserPerLanguage";
-            string connetionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-
-            // Connection string
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(primaryData);
-                }
-            }
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Programming Language", typeof(System.String));
+            ChartData.Columns.Add("Users", typeof(System.Double));
+            ChartData.Rows.Add("Java", 62000);
+            ChartData.Rows.Add("Python", 46000);
+            ChartData.Rows.Add("Javascript", 38000);
+            ChartData.Rows.Add("C++", 31000);
+            ChartData.Rows.Add("C#", 27000);
+            ChartData.Rows.Add("PHP", 14000);
+            ChartData.Rows.Add("Perl", 14000);
             // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
+
+            StaticSource source = new StaticSource(ChartData);
 
             // Create instance of DataModel class
             DataModel model = new DataModel();
@@ -463,9 +457,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             // Set Chart Title
             bar.Caption.Text = "Most popular programming language";
-
-            // Render the chart to 'barChartLiteral' literal control
-            Literal1.Text = bar.Render();
+            bar.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            ViewData["Chart"] = bar.Render();
+            return View();
         }
     }
 }

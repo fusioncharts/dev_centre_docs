@@ -55,31 +55,28 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class SeriesCustomization : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e) {
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class SeriesCustomization : System.Web.UI.Page 
+    {
+        public ActionResult Index()
+        {
             DataTable ChartData = new DataTable();
-            string query = "select * from LiquorSales";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            ChartData.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+            ChartData.Columns.Add("Day", typeof(System.String));
+            ChartData.Columns.Add("Sales", typeof(System.Double));
+            ChartData.Rows.Add("Mon", 4123);
+            ChartData.Rows.Add("Tue", 4633);
+            ChartData.Rows.Add("Wed", 5507);
+            ChartData.Rows.Add("Thu", 4910);
+            ChartData.Rows.Add("Fri", 5529);
+            ChartData.Rows.Add("Sat", 5803);
+            ChartData.Rows.Add("Sun", 6202);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
             Charts.AreaChart area = new Charts.AreaChart("area_chart_db");
             area.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            area.Width.Pixel(700);
+            area.Width.Pixel(550);
             area.Height.Pixel(400);
             area.Data.Source = model;
             area.Caption.Text = "Sales of Liquor";
@@ -88,10 +85,13 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             area.XAxis.Text = "Day";
             area.YAxis.Text = "Sales";
             area.Legend.Show = false;
-            Literal1.Text = area.Render();
+            area.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            ViewData["Chart"] = area.Render();
+            return View();
         }
     }
 }
+
 ```
 
 The `.aspx` template for the above sample is shown below:
