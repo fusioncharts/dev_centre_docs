@@ -14,7 +14,7 @@ heading: Map Improvements in Version 3.14.0
 
     - Updated the specification sheet for Thailand Main and 77 separate Province maps:
 
-        - AmnatCharoen
+        - [AmnatCharoen](//maps/spec-sheets/amnatcharoen)
 
         - AngThong
 
