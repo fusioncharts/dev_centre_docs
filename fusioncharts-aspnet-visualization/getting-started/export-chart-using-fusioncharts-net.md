@@ -32,34 +32,19 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           // Create data table
-            DataTable primaryData = new DataTable();
+           DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Programming Language", typeof(System.String));
+            ChartData.Columns.Add("Users", typeof(System.Double));
+            ChartData.Rows.Add("Java",62000);
+            ChartData.Rows.Add("Python",46000);
+            ChartData.Rows.Add("Javascript",38000);
+            ChartData.Rows.Add("C++",31000);
+            ChartData.Rows.Add("C#",27000);
+            ChartData.Rows.Add("PHP",14000);
+            ChartData.Rows.Add("Perl",14000);
 
-            // Retrieve data using database query
-            string query = "select [Languages], [User] from dbo.UserPerLanguage";
-            string connetionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-
-            // Connection string
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(primaryData);
-                }
-            }
             // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
+            StaticSource source = new StaticSource(ChartData);
             // Create instance of DataModel class
             DataModel model = new DataModel();
             // Add DataSource to the DataModel
@@ -67,7 +52,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Instantiate Column Chart
             Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
             // Set Chart's width and height
-            column.Width.Pixel(700);
+            column.Width.Pixel(550);
             column.Height.Pixel(400);
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
@@ -77,12 +62,12 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.XAxis.Text = "Programming Language";
             // Set YAxis title
             column.YAxis.Text = "User";
-			// Configure export settings
-			column.Export.Enabled = true;
-			column.Export.ExportedFileName = "fusioncharts.net_visualizations_exported_files";
-			column.Export.Action = Exporter.ExportAction.DOWNLOAD;
+            // Configure export settings
+            column.Export.Enabled = true;
+            column.Export.ExportedFileName = "fusioncharts.net_visualizations_exported_files";
+            column.Export.Action = Exporter.ExportAction.DOWNLOAD;
+            column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             // Render the chart to 'Literal1' literal control
-
             Literal1.Text = column.Render();
         }
     }

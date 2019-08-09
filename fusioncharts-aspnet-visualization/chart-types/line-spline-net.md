@@ -181,38 +181,47 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
-            ChartData.Columns.Add("Day", typeof(System.String));
-            ChartData.Columns.Add("No. of Visitors", typeof(System.Double));
-            ChartData.Rows.Add("Mon", 15123);
-            ChartData.Rows.Add("Tue", 14233);
-            ChartData.Rows.Add("Wed", 23507);
-            ChartData.Rows.Add("Thu", 9110);
-            ChartData.Rows.Add("Fri", 15529);
-            ChartData.Rows.Add("Sat", 20803);
-            ChartData.Rows.Add("Sun", 19202);
+            ChartData.Columns.Add("Month", typeof(System.String));
+            ChartData.Columns.Add("Revenue", typeof(System.Double));
+            ChartData.Rows.Add("Jan 2016", 27400);
+            ChartData.Rows.Add("Feb 2016", 29800);
+            ChartData.Rows.Add("Mar 2016", 25800);
+            ChartData.Rows.Add("Apr 2016", 26800);
+            ChartData.Rows.Add("May 2016", 29600);
+            ChartData.Rows.Add("Jun 2016", 32600);
+            ChartData.Rows.Add("Jul 2016", 31800);
+            ChartData.Rows.Add("Aug 2016", 36700);
+            ChartData.Rows.Add("Sep 2016", 29700);
+            ChartData.Rows.Add("Oct 2016", 31900);
+            ChartData.Rows.Add("Nov 2016", 34800);
+            ChartData.Rows.Add("Dec 2016", 24800);
+            ChartData.Rows.Add("Jan 2017", 26300);
+            ChartData.Rows.Add("Feb 2017", 31800);
+            ChartData.Rows.Add("Mar 2017", 30900);
+            ChartData.Rows.Add("Apr 2017", 33000);
+            ChartData.Rows.Add("May 2017", 36200);
+            ChartData.Rows.Add("Jun 2017", 32100);
+            ChartData.Rows.Add("Jul 2017", 37500);
+            ChartData.Rows.Add("Aug 2017", 38500);
+            ChartData.Rows.Add("Sep 2017", 35400);
+            ChartData.Rows.Add("Oct 2017", 38200);
+            ChartData.Rows.Add("Nov 2017", 33300);
+            ChartData.Rows.Add("Dec 2017", 38300);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
-
-            Charts.SplineChart spline = new Charts.SplineChart("spline_chart");
-
-            spline.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            spline.Width.Pixel(700);
-            spline.Height.Pixel(400);
-
-            spline.Data.Source = model;
-
-            spline.Caption.Text = "Total Footfall in BakersField Central";
-            spline.Caption.Bold = true;
-
-            spline.SubCaption.Text = "Last Week";
-            spline.XAxis.Text = "Day";
-            spline.YAxis.Text = "No. of visitors";
-
-            spline.Legend.Show = false;
-            
-            ViewData["Chart"] = spline.Render();
-            return View();
+            Charts.LineChart line = new Charts.LineChart("scroll_chart_db");
+            line.Scrollable = true;
+            line.Data.Source = model;
+            line.Caption.Text = "Sales Trends";
+            line.SubCaption.Text = "2016-2017";
+            line.XAxis.Text = "Month";
+            line.YAxis.Text = "Revenue";
+            line.Width.Pixel(600);
+            line.Height.Pixel(500);
+            line.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }

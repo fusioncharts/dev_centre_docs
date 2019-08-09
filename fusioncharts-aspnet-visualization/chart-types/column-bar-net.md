@@ -361,18 +361,18 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
-            Charts.BarChart OverlappedBar = new Charts.BarChart("overlapped_chart_db");
-            OverlappedBar.Overlapped = true;
-            OverlappedBar.Data.Source = model;
-            OverlappedBar.Caption.Text = "Major League Baseball - Season Rankings";
-            OverlappedBar.SubCaption.Text = "Teams in the Lead";
-            OverlappedBar.Caption.Text = "Major league Baseball-Season Rankings";
-            OverlappedBar.SubCaption.Text = "Teams in the lead";
-            OverlappedBar.XAxis.Text = "Position";
-            OverlappedBar.YAxis.Text = "Team";
-            OverlappedBar.Width.Pixel(500);
-            OverlappedBar.Height.Pixel(400);
-            OverlappedBar.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            Charts.ColumnChart OverlappedColumn = new Charts.ColumnChart("overlapped_chart_db");
+            OverlappedColumn.Overlapped = true;
+            OverlappedColumn.Data.Source = model;
+            OverlappedColumn.Caption.Text = "Major League Baseball - Season Rankings";
+            OverlappedColumn.SubCaption.Text = "Teams in the Lead";
+            OverlappedColumn.Caption.Text = "Major league Baseball-Season Rankings";
+            OverlappedColumn.SubCaption.Text = "Teams in the lead";
+            OverlappedColumn.XAxis.Text = "Position";
+            OverlappedColumn.YAxis.Text = "Team";
+            OverlappedColumn.Width.Pixel(600);
+            OverlappedColumn.Height.Pixel(500);
+            OverlappedColumn.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             // Render the chart to 'Literal1' literal control
             Literal1.Text = column.Render();
         }

@@ -137,26 +137,39 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class ScrollChart : System.Web.UI.Page {
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class ScrollChart : System.Web.UI.Page 
+    {
         protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
-            string query = "select * from MonthlyRevenue";
-            string connectionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            ChartData.Clear();
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+            ChartData.Columns.Add("Month", typeof(System.String));
+            ChartData.Columns.Add("Revenue", typeof(System.Double));
+            ChartData.Rows.Add("Jan 2016", 27400);
+            ChartData.Rows.Add("Feb 2016", 29800);
+            ChartData.Rows.Add("Mar 2016", 25800);
+            ChartData.Rows.Add("Apr 2016", 26800);
+            ChartData.Rows.Add("May 2016", 29600);
+            ChartData.Rows.Add("Jun 2016", 32600);
+            ChartData.Rows.Add("Jul 2016", 31800);
+            ChartData.Rows.Add("Aug 2016", 36700);
+            ChartData.Rows.Add("Sep 2016", 29700);
+            ChartData.Rows.Add("Oct 2016", 31900);
+            ChartData.Rows.Add("Nov 2016", 34800);
+            ChartData.Rows.Add("Dec 2016", 24800);
+            ChartData.Rows.Add("Jan 2017", 26300);
+            ChartData.Rows.Add("Feb 2017", 31800);
+            ChartData.Rows.Add("Mar 2017", 30900);
+            ChartData.Rows.Add("Apr 2017", 33000);
+            ChartData.Rows.Add("May 2017", 36200);
+            ChartData.Rows.Add("Jun 2017", 32100);
+            ChartData.Rows.Add("Jul 2017", 37500);
+            ChartData.Rows.Add("Aug 2017", 38500);
+            ChartData.Rows.Add("Sep 2017", 35400);
+            ChartData.Rows.Add("Oct 2017", 38200);
+            ChartData.Rows.Add("Nov 2017", 33300);
+            ChartData.Rows.Add("Dec 2017", 38300);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
@@ -169,6 +182,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             area.YAxis.Text = "Revenue";
             area.Width.Pixel(600);
             area.Height.Pixel(500);
+            area.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             Literal1.Text = area.Render();
         }
     }
