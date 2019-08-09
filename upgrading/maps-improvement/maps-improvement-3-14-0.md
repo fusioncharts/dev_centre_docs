@@ -390,73 +390,65 @@ heading: Map Improvements in Version 3.14.0
 
         - [Tombouctou](/maps/spec-sheets/tombouctou)
 
-    - Updated the main district maps of Malawi and main regions with 3 sub region maps:
+    - Updated the main district maps of [Malawi](/maps/spec-sheets/malawi) and main regions with 3 sub region maps:
 
-        - CentralMalawiRegion
+        - [CentralMalawiRegion](/maps/spec-sheets/centralmalawiregion)
 
-        - Malawi
+        - [NorthernMalawiRegion](/maps/spec-sheets/northernmalawiregion)
 
-        - MalawiRegion
+        - [SouthernMalawiRegion](/maps/spec-sheets/southernmalawiregion)
 
-        - NorthernMalawiRegion
+    - Updated the main region of [Senegal](/maps/spec-sheets/senegal) and 14 separate regions and main departments:
 
-        - SouthernMalawiRegion
+        - [Dakar](/maps/spec-sheets/dakar)
 
-    - Updated the main region of Senegal and 14 separate regions and main departments:
+        - [Diourbel](/maps/spec-sheets/diourbel)
 
-        - Dakar
+        - [Kaffrine](/maps/spec-sheets/kaffrine)
 
-        - Diourbel
+        - [Kaolack](/maps/spec-sheets/kaolack)
 
-        - Fatick
+        - [Kedougou](/maps/spec-sheets/kedougou)
 
-        - Kaffrine
+        - [Kolda](/maps/spec-sheets/kolda)
 
-        - Kaolack
+        - [Louga](/maps/spec-sheets/louga)
 
-        - Kedougou
+        - [Matam](/maps/spec-sheets/matam)
 
-        - Kolda
+        - [SaintLouis](/maps/spec-sheets/saintlouis)
 
-        - Louga
+        - [Sedhiou](/maps/spec-sheets/sedhiou)
 
-        - Matam
+        - [SenegalDepartments](/maps/spec-sheets/senegaldepartments)
 
-        - SaintLouis
+        - [Tambacounda](/maps/spec-sheets/tambacounda)
 
-        - Sedhiou
+        - [Thies](/maps/spec-sheets/thies)
 
-        - Senegal
+        - [Ziguinchor](/maps/spec-sheets/ziguinchor)
 
-        - SenegalDepartments
+    - The following names have been updated in the specification sheet for [Ghana](/maps/spec-sheets/ghana) Main map and 10 separate regions:
 
-        - Tambacounda
+        - Ashanti has been renamed as [Ashanti Region](/maps/spec-sheets/ashanti)
 
-        - Thies
+        - Brong-Ahafo has been renamed as [Brong-Ahafo Region](/maps/spec-sheets/brongahafo)
 
-        - Ziguinchor
+        - Central has been renamed as [Central Region](/maps/spec-sheets/centralghana)
 
-    - The following names have been updated in the specification sheet for Ghana Main map and 10 separate regions:
+        - Eastern has been renamed as [Eastern Region](/maps/spec-sheets/easternghana)
 
-        - Ashanti has been renamed as Ashanti Region
+        - Greater Accra has been renamed as [Greater Accra Region](/maps/spec-sheets/greateraccra)
 
-        - Brong-Ahafo has been renamed as Brong-Ahafo Region
+        - Northern has been renamed as [Northern Region](/maps/spec-sheets/northernghana)
 
-        - Central has been renamed as Central Region
+        - Upper East has been renamed as [Upper East Region](/maps/spec-sheets/uppereastghana)
 
-        - Eastern has been renamed as Eastern Region
+        - Upper West has been renamed as [Upper West Region](/maps/spec-sheets/upperwestghana)
 
-        - Greater Accra has been renamed as Greater Accra Region
+        - Volta has been renamed as [Volta Region](/maps/spec-sheets/volta)
 
-        - Northern has been renamed as Northern Region
-
-        - Upper East has been renamed as Upper East Region
-
-        - Upper West has been renamed as Upper West Region
-
-        - Volta has been renamed as Volta Region
-
-        - Western has been renamed as Western Region
+        - Western has been renamed as [Western Region](/maps/spec-sheets/westernghana)
 
     - The following maps have been renamed and updated in the specification sheet for Madagascar main province map and 6 separate region maps:
 
