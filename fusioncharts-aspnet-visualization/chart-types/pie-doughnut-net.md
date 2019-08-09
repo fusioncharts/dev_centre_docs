@@ -61,7 +61,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class ThreeDChart : System.Web.UI.Page
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {               
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Programming Language", typeof(System.String));
@@ -91,9 +91,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             //set chart sub title
             pie.SubCaption.Text = "2017-2018";
             pie.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            
-            ViewData["Chart"] = pie.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }     
     }
 }
@@ -145,7 +144,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class ThreeDChart : System.Web.UI.Page
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Programming Language", typeof(System.String));
@@ -175,8 +174,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             //set chart sub title
             donut.SubCaption.Text = "2017-2018";
             donut.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            ViewData["Chart"] = donut.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }

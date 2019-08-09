@@ -99,7 +99,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class StackedChart : System.Web.UI.Page 
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Quarter", typeof(System.String));
@@ -122,9 +122,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             stack.YAxis.Text = "Revenue";
             stack.Data.Source = model;
             stack.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            
-            ViewData["Chart"] = stack.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }

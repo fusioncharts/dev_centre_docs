@@ -47,8 +47,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class PyramidChart : System.Web.UI.Page
     {
-        public ActionResult Index()
-    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Label", typeof(System.String));
             ChartData.Columns.Add("Value", typeof(System.Double));
@@ -67,8 +67,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             pyramid.Width.Pixel(400);
             pyramid.Height.Pixel(400);
             pyramid.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            ViewData["Chart"] = pyramid.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
     }
   }
 }

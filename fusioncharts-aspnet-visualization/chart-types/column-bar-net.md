@@ -62,8 +62,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class FirstChart: System.Web.UI.Page
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {               
+            {               
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Programming Language", typeof(System.String));
             ChartData.Columns.Add("Users", typeof(System.Double));
@@ -99,9 +100,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Set YAxis title
             column.YAxis.Text = "User";
             column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            
-            ViewData["Chart"] = column.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -207,7 +207,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class ScrollChart : System.Web.UI.Page 
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Month", typeof(System.String));
@@ -249,9 +249,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Width.Pixel(600);
             column.Height.Pixel(500);
             column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-
-            ViewData["Chart"] = column.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -343,7 +342,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class OverlappedChart : System.Web.UI.Page 
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Team", typeof(System.String));
@@ -374,9 +373,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             OverlappedBar.Width.Pixel(500);
             OverlappedBar.Height.Pixel(400);
             OverlappedBar.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-
-            ViewData["Chart"] = OverlappedBar.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -423,7 +421,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class FirstChart: System.Web.UI.Page
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Programming Language", typeof(System.String));
@@ -458,8 +456,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Set Chart Title
             bar.Caption.Text = "Most popular programming language";
             bar.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            ViewData["Chart"] = bar.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }

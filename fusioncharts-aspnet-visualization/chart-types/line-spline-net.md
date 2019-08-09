@@ -63,7 +63,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class SeriesCustomization : System.Web.UI.Page
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Day", typeof(System.String));
@@ -96,8 +96,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             line.Legend.Show = false;
             line.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            ViewData["Chart"] = line.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -178,7 +178,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class ScrollChart : System.Web.UI.Page 
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Day", typeof(System.String));
@@ -261,7 +261,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class SeriesCustomization : System.Web.UI.Page
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Day", typeof(System.String));
@@ -294,8 +294,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             spline.Legend.Show = false;
             
-            ViewData["Chart"] = spline.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }

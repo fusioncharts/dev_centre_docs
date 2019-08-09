@@ -59,7 +59,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class SeriesCustomization : System.Web.UI.Page 
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Day", typeof(System.String));
@@ -86,8 +86,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             area.YAxis.Text = "Sales";
             area.Legend.Show = false;
             area.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            ViewData["Chart"] = area.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }

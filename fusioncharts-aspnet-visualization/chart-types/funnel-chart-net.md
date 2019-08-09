@@ -57,7 +57,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 {
     public partial class FunnelChart : System.Web.UI.Page 
     {
-        public ActionResult Index()
+        protected void Page_Load(object sender, EventArgs e)
         {
             DataTable ChartData = new DataTable();
             ChartData.Columns.Add("Label", typeof(System.String));
@@ -79,8 +79,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             funnel.Width.Pixel(600);
             funnel.Height.Pixel(400);
             funnel.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-            ViewData["Chart"] = funnel.Render();
-            return View();
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
