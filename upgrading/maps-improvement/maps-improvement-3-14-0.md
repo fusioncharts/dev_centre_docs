@@ -6,11 +6,11 @@ heading: Map Improvements in Version 3.14.0
 
 - The core maps package has been updated to:
 
-    - Updated the specification sheet for Papua New Guinea.
+    - Updated the specification sheet for [Papua New Guinea](/maps/spec-sheets/papuanewguinea).
 
-    - Updated the specification sheet for Samoa.
+    - Updated the specification sheet for [Samoa](/maps/spec-sheets/samoa).
 
-    - Updated the specification sheet for Czech Republic Region maps.
+    - Updated the specification sheet for [Czech Republic Region](/maps/spec-sheets/czechrepublic) maps.
 
     - Updated the specification sheet for Thailand Main and 77 separate Province maps:
 
