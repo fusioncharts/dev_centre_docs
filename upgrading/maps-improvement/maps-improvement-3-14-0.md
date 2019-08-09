@@ -16,157 +16,157 @@ heading: Map Improvements in Version 3.14.0
 
         - [AmnatCharoen](/maps/spec-sheets/amnatcharoen)
 
-        - AngThong
+        - [AngThong](/maps/spec-sheets/angthong)
 
-        - Bangkok
+        - [Bangkok](/maps/spec-sheets/bangkok)
 
-        - BuengKan
+        - [BuengKan](/maps/spec-sheets/buengkan)
 
-        - Buriram
+        - [Buriram](/maps/spec-sheets/buriram)
 
-        - Chachoengsao
+        - [Chachoengsao](/maps/spec-sheets/chachoengsao)
 
-        - ChaiNat
+        - [ChaiNat](/maps/spec-sheets/chainat)
 
-        - Chaiyaphum
+        - [Chaiyaphum](/maps/spec-sheets/chaiyaphum)
 
-        - Chanthaburi
+        - [Chanthaburi](/maps/spec-sheets/chanthaburi)
 
-        - ChiangMai
+        - [ChiangMai](/maps/spec-sheets/chiangmai)
 
-        - ChiangRai
+        - [ChiangRai](/maps/spec-sheets/chiangrai)
 
-        - Chonburi
+        - [Chonburi](/maps/spec-sheets/chonburi)
 
-        - Chumphon
+        - [Chumphon](/maps/spec-sheets/chumphon)
 
-        - Kalasin
+        - [Kalasin](/maps/spec-sheets/kalasin)
 
-        - KamphaengPhet
+        - [KamphaengPhet](/maps/spec-sheets/kamphaengphet)
 
-        - Kanchanaburi
+        - [Kanchanaburi](/maps/spec-sheets/kanchanaburi)
 
-        - KhonKaen
+        - [KhonKaen](/maps/spec-sheets/khonkaen)
 
-        - Krabi
+        - [Krabi](/maps/spec-sheets/krabi)
 
-        - Lampang
+        - [Lampang](/maps/spec-sheets/lampang)
 
-        - Lamphun
+        - [Lamphun](/maps/spec-sheets/lamphun)
 
-        - Loei
+        - [Loei](/maps/spec-sheets/loei)
 
-        - Lopburi
+        - [Lopburi](/maps/spec-sheets/lopburi)
 
-        - MaeHongSon
+        - [MaeHongSon](/maps/spec-sheets/maehongson)
 
-        - MahaSarakham
+        - [MahaSarakham](/maps/spec-sheets/mahasarakham)
 
-        - Mukdahan
+        - [Mukdahan](/maps/spec-sheets/mukdahan)
 
-        - NakhonNayok
+        - [NakhonNayok](/maps/spec-sheets/nakhonnayok)
 
-        - NakhonPathom
+        - [NakhonPathom](/maps/spec-sheets/nakhonpathom)
 
-        - NakhonPhanom
+        - [NakhonPhanom](/maps/spec-sheets/nakhonphanom)
 
-        - NakhonRatchasima
+        - [NakhonRatchasima](/maps/spec-sheets/nakhonratchasima)
 
-        - NakhonSawan
+        - [NakhonSawan](/maps/spec-sheets/nakhonsawan)
 
-        - NakhonSiThammarat
+        - [NakhonSiThammarat](/maps/spec-sheets/nakhonsithammarat)
 
-        - Nan
+        - [Nan](/maps/spec-sheets/nan)
 
-        - Narathiwat
+        - [Narathiwat](/maps/spec-sheets/narathiwat)
 
-        - NongBuaLamPhu
+        - [NongBuaLamPhu](/maps/spec-sheets/nongbualamphu)
 
-        - NongKhai
+        - [NongKhai](/maps/spec-sheets/nongkhai)
 
-        - Nonthaburi
+        - [Nonthaburi](/maps/spec-sheets/nonthaburi)
 
-        - PathumThani
+        - [PathumThani](/maps/spec-sheets/pathumthani)
 
-        - Pattani
+        - [Pattani](/maps/spec-sheets/pattani)
 
-        - PhangNga
+        - [PhangNga](/maps/spec-sheets/phangnga)
 
-        - Phatthalung
+        - [Phatthalung](/maps/spec-sheets/phatthalung)
 
-        - Phayao
+        - [Phayao](/maps/spec-sheets/phayao)
 
-        - Phetchabun
+        - [Phetchabun](/maps/spec-sheets/phetchabun)
 
-        - Phetchaburi
+        - [Phetchaburi](/maps/spec-sheets/phetchaburi)
 
-        - Phichit
+        - [Phichit](/maps/spec-sheets/phichit)
 
-        - Phitsanulok
+        - [Phitsanulok](/maps/spec-sheets/phitsanulok)
 
-        - PhraNakhonSiAyutthaya
+        - [PhraNakhonSiAyutthaya](/maps/spec-sheets/phranakhonsiayutthaya)
 
-        - Phrae
+        - [Phrae](/maps/spec-sheets/phrae)
 
-        - Phuket
+        - [Phuket](/maps/spec-sheets/phuket)
 
-        - Prachinburi
+        - [Prachinburi](/maps/spec-sheets/prachinburi)
 
-        - PrachuapKhiriKhan
+        - [PrachuapKhiriKhan](/maps/spec-sheets/prachuapkhirikhan)
 
-        - Ranong
+        - [Ranong](/maps/spec-sheets/ranong)
 
-        - Ratchaburi
+        - [Ratchaburi](/maps/spec-sheets/ratchaburi)
 
-        - Rayong
+        - [Rayong](/maps/spec-sheets/rayong)
 
-        - RoiEt
+        - [RoiEt](/maps/spec-sheets/roiet)
 
-        - SaKaeo
+        - [SaKaeo](/maps/spec-sheets/saKaeo)
 
-        - SakonNakhon
+        - [SakonNakhon](/maps/spec-sheets/sakonnakhon)
 
-        - SamutPrakan
+        - [SamutPrakan](/maps/spec-sheets/samutprakan)
 
-        - SamutSakhon
+        - [SamutSakhon](/maps/spec-sheets/samutsakhon)
 
-        - SamutSongkhram
+        - [SamutSongkhram](/maps/spec-sheets/samutsongkhram)
 
-        - Saraburi
+        - [Saraburi](/maps/spec-sheets/saraburi)
 
-        - Satun
+        - [Satun](/maps/spec-sheets/satun)
 
-        - SingBuri
+        - [SingBuri](/maps/spec-sheets/singburi)
 
-        - Sisaket
+        - [Sisaket](/maps/spec-sheets/sisaket)
 
-        - Songkhla
+        - [Songkhla](/maps/spec-sheets/songkhla)
 
-        - Sukhothai
+        - [Sukhothai](/maps/spec-sheets/sukhothai)
 
-        - SuphanBuri
+        - [SuphanBuri](/maps/spec-sheets/suphanburi)
 
-        - SuratThani
+        - [SuratThani](/maps/spec-sheets/suratthani)
 
-        - Surin
+        - [Surin](/maps/spec-sheets/surin)
 
-        - Tak
+        - [Tak](/maps/spec-sheets/tak)
 
-        - Trang
+        - [Trang](/maps/spec-sheets/trang)
 
-        - Trat
+        - [Trat](/maps/spec-sheets/trat)
 
-        - UbonRatchathani
+        - [UbonRatchathani](/maps/spec-sheets/ubonratchathani)
 
-        - UdonThani
+        - [UdonThani](/maps/spec-sheets/udonthani)
 
-        - UthaiThani
+        - [UthaiThani](/maps/spec-sheets/uthaithani)
 
-        - Uttaradit
+        - [Uttaradit](/maps/spec-sheets/uttaradit)
 
-        - Yala
+        - [Yala](/maps/spec-sheets/yala)
 
-        - Yasothon
+        - [Yasothon](/maps/spec-sheets/yasothon)
 
     - Updated the specification sheet for Burkina Faso Main and 13 separate Region maps:
 
