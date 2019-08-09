@@ -288,7 +288,6 @@ heading: Map Improvements in Version 3.14.0
 
         - [Zoundweogo](/maps/spec-sheets/zoundweogo)
 
-
     - Updated the specification sheet for [Benin Main](/maps/spec-sheets/benin) maps and for 12 separate departments:
 
         - [Alibori](/maps/spec-sheets/alibori)
