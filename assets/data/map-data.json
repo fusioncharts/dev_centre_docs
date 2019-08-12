@@ -9378,7 +9378,73 @@
           {
             "name": "Mauritania (Separate Regions)",
             "marker": false,
-            "members": []
+            "members": [
+            {
+                "name": "Adrar",
+                "alias": "adrar",
+                "specSheet": "/maps/spec-sheets/adrar"
+            },
+            {
+                "name": "Assaba",
+                "alias": "assaba",
+                "specSheet": "/maps/spec-sheets/assaba"
+            },
+            {
+                "name": "Brakna",
+                "alias": "brakna",
+                "specSheet": "/maps/spec-sheets/brakna"
+            },
+            {
+                "name": "DakhletNouadhibou",
+                "alias": "dakhletnouadhibou",
+                "specSheet": "/maps/spec-sheets/dakhletnouadhibou"
+            },
+            {
+                "name": "Gorgol",
+                "alias": "gorgol",
+                "specSheet": "/maps/spec-sheets/gorgol"
+            },
+            {
+                "name": "Guidimaka",
+                "alias": "guidimaka",
+                "specSheet": "/maps/spec-sheets/guidimaka"
+            },
+            {
+                "name": "HodhEchChargui",
+                "alias": "hodhechchargui",
+                "specSheet": "/maps/spec-sheets/hodhechchargui"
+            },
+            {
+                "name": "HodhElGharbi",
+                "alias": "hodhelgharbi",
+                "specSheet": "/maps/spec-sheets/hodhelgharbi"
+            },
+            {
+                "name": "Inchiri",
+                "alias": "inchiri",
+                "specSheet": "/maps/spec-sheets/inchiri"
+            },
+            {
+                "name": "Nouakchott",
+                "alias": "nouakchott",
+                "specSheet": "/maps/spec-sheets/nouakchott"
+            },
+            {
+                "name": "Tagant",
+                "alias": "tagant",
+                "specSheet": "/maps/spec-sheets/tagant"
+            },
+            {
+                "name": "TirisZemmour",
+                "alias": "tiriszemmour",
+                "specSheet": "/maps/spec-sheets/tiriszemmour"
+            },
+            {
+                "name": "Trarza",
+                "alias": "trarza",
+                "specSheet": "/maps/spec-sheets/trarza"
+            }
+            ]
           },
           {
             "name": "Mauritius",
