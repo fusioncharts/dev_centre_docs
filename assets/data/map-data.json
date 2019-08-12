@@ -9376,6 +9376,77 @@
             "markerData": "/maps/marker-data/mauritania"
           },
           {
+            "name": "Mauritania (Separate Regions)",
+            "marker": false,
+            "members": [
+            {
+                "name": "Adrar",
+                "alias": "adrar",
+                "specSheet": "/maps/spec-sheets/adrar"
+            },
+            {
+                "name": "Assaba",
+                "alias": "assaba",
+                "specSheet": "/maps/spec-sheets/assaba"
+            },
+            {
+                "name": "Brakna",
+                "alias": "brakna",
+                "specSheet": "/maps/spec-sheets/brakna"
+            },
+            {
+                "name": "DakhletNouadhibou",
+                "alias": "dakhletnouadhibou",
+                "specSheet": "/maps/spec-sheets/dakhletnouadhibou"
+            },
+            {
+                "name": "Gorgol",
+                "alias": "gorgol",
+                "specSheet": "/maps/spec-sheets/gorgol"
+            },
+            {
+                "name": "Guidimaka",
+                "alias": "guidimaka",
+                "specSheet": "/maps/spec-sheets/guidimaka"
+            },
+            {
+                "name": "HodhEchChargui",
+                "alias": "hodhechchargui",
+                "specSheet": "/maps/spec-sheets/hodhechchargui"
+            },
+            {
+                "name": "HodhElGharbi",
+                "alias": "hodhelgharbi",
+                "specSheet": "/maps/spec-sheets/hodhelgharbi"
+            },
+            {
+                "name": "Inchiri",
+                "alias": "inchiri",
+                "specSheet": "/maps/spec-sheets/inchiri"
+            },
+            {
+                "name": "Nouakchott",
+                "alias": "nouakchott",
+                "specSheet": "/maps/spec-sheets/nouakchott"
+            },
+            {
+                "name": "Tagant",
+                "alias": "tagant",
+                "specSheet": "/maps/spec-sheets/tagant"
+            },
+            {
+                "name": "TirisZemmour",
+                "alias": "tiriszemmour",
+                "specSheet": "/maps/spec-sheets/tiriszemmour"
+            },
+            {
+                "name": "Trarza",
+                "alias": "trarza",
+                "specSheet": "/maps/spec-sheets/trarza"
+            }
+            ]
+          },
+          {
             "name": "Mauritius",
             "alias": "mauritius",
             "specSheet": "/maps/spec-sheets/mauritius",
@@ -9603,6 +9674,37 @@
             "alias": "uganda",
             "specSheet": "/maps/spec-sheets/uganda",
             "markerData": "/maps/marker-data/uganda"
+          },
+          {
+            "name": "Uganda Regions",
+            "alias": "ugandaregions",
+            "specSheet": "/maps/spec-sheets/ugandaregions"
+          },
+          {
+            "name": "Uganda (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Central Uganda",
+                "alias": "centraluganda",
+                "specSheet": "/maps/spec-sheets/centraluganda"
+              },
+              {
+                "name": "Western Uganda",
+                "alias": "westernuganda",
+                "specSheet": "/maps/spec-sheets/westernuganda"
+              },
+              {
+                "name": "Eastern Uganda",
+                "alias": "easternuganda",
+                "specSheet": "/maps/spec-sheets/easternuganda"
+              },
+              {
+                "name": "Northern Uganda",
+                "alias": "northernuganda",
+                "specSheet": "/maps/spec-sheets/northernuganda"
+              }
+            ]
           },
           {
             "name": "Western Sahara",
