@@ -9605,6 +9605,37 @@
             "markerData": "/maps/marker-data/uganda"
           },
           {
+            "name": "Uganda Regions",
+            "alias": "ugandaregions",
+            "specSheet": "/maps/spec-sheets/ugandaregions"
+          },
+          {
+            "name": "Uganda (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Central Uganda",
+                "alias": "centraluganda",
+                "specSheet": "/maps/spec-sheets/centraluganda"
+              },
+              {
+                "name": "Western Uganda",
+                "alias": "westernuganda",
+                "specSheet": "/maps/spec-sheets/westernuganda"
+              },
+              {
+                "name": "Eastern Uganda",
+                "alias": "easternuganda",
+                "specSheet": "/maps/spec-sheets/easternuganda"
+              },
+              {
+                "name": "Northern Uganda",
+                "alias": "northernuganda",
+                "specSheet": "/maps/spec-sheets/northernuganda"
+              }
+            ]
+          },
+          {
             "name": "Western Sahara",
             "alias": "westernsahara",
             "specSheet": "/maps/spec-sheets/westernsahara",
