@@ -8,7 +8,7 @@
             "title": "Getting Started",
             "children": [{
                     "title": "Installation",
-                    "path": ""
+                    "path": "/chart-guide/standard-charts/line-area-and-column-charts"
                 },
                 {
                     "title": "Quick start",
