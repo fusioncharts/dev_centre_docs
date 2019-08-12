@@ -9376,6 +9376,11 @@
             "markerData": "/maps/marker-data/mauritania"
           },
           {
+            "name": "Mauritania (Separate Regions)",
+            "marker": false,
+            "members": []
+          },
+          {
             "name": "Mauritius",
             "alias": "mauritius",
             "specSheet": "/maps/spec-sheets/mauritius",
