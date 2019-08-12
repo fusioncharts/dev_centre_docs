@@ -31,7 +31,8 @@
         },
         {
             "title": "Charts",
-            "children": [{
+            "children": [
+                {
                     "title": "Column charts",
                     "children": [{
                             "title": "Chart anatomy",
@@ -426,7 +427,7 @@
                     "title": "Stacked Charts",
                     "children": [{
                             "title": "Chart anatomy",
-                            "path": ""
+                            "path": "/understanding-fusioncharts/stacked-chart"
                         },
                         {
                             "title": "Create stacked charts",
