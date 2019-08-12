@@ -642,31 +642,31 @@ heading: Map Improvements in Version 3.14.0
 
     - Updated the specification sheet for Mauritania and 13 separate regions:
 
-        - Adrar
+        - [Adrar](/maps/spec-sheets/adrar)
 
-        - Assaba
+        - [Assaba](/maps/spec-sheets/assaba)
 
-        - Brakna
+        - [Brakna](/maps/spec-sheets/brakna)
 
-        - DakhletNouadhibou
+        - [DakhletNouadhibou](/maps/spec-sheets/dakhletnouadhibou)
 
-        - Gorgol
+        - [Gorgol](/maps/spec-sheets/gorgol)
 
-        - Guidimaka
+        - [Guidimaka](/maps/spec-sheets/guidimaka)
 
-        - HodhEchChargui
+        - [HodhEchChargui](/maps/spec-sheets/hodhechchargui)
 
-        - HodhElGharbi
+        - [HodhElGharbi](/maps/spec-sheets/hodhelgharbi)
 
-        - Inchiri
+        - [Inchiri](/maps/spec-sheets/inchiri)
 
-        - Nouakchott
+        - [Nouakchott](/maps/spec-sheets/nouakchott)
 
-        - Tagant
+        - [Tagant](/maps/spec-sheets/tagant)
 
-        - TirisZemmour
+        - [TirisZemmour](/maps/spec-sheets/tiriszemmour)
 
-        - Trarza
+        - [Trarza](/maps/spec-sheets/trarza)
 
     - The following entities have been added to [Uganda](/maps/spec-sheets/uganda) main region and 4 separate regions:
 
