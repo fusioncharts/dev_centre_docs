@@ -620,25 +620,25 @@ heading: Map Improvements in Version 3.14.0
 
         - Arica and Parinacota has been renamed as Región de Arica y Parinacota
 
-    - Sri Lanka main maps have been renamed and updated with 16 separate province maps:
+    - [Sri Lanka](/maps/spec-sheets/srilanka) main maps have been renamed and updated with 16 separate province maps:
 
-        - Central has been renamed as Central Sri Lanka Province
+        - Central has been renamed as [Central Sri Lanka Province](/maps/spec-sheets/centralsrilankaprovince)
 
-        - Eastern has been renamed as Eastern Sri Lanka Province
+        - Eastern has been renamed as [Eastern Sri Lanka Province](/maps/spec-sheets/easternsrilankaprovince)
 
-        - North Central has been renamed as North Central Sri Lanka Province
+        - North Central has been renamed as [North Central Sri Lanka Province](/maps/spec-sheets/northcentralsrilankaprovince)
 
-        - Northern has been renamed as Northern Sri Lanka Province
+        - Northern has been renamed as [Northern Sri Lanka Province](/maps/spec-sheets/northernsrilankaprovince)
 
-        - North Western has been renamed as North Western Sri Lanka Province
+        - North Western has been renamed as [North Western Sri Lanka Province](/maps/spec-sheets/northwesternsrilankaprovince)
 
-        - Sabaragamuwa has been renamed as Sabaragamuwa Sri Lanka Province
+        - Sabaragamuwa has been renamed as [Sabaragamuwa Sri Lanka Province](/maps/spec-sheets/sabaragamuwasrilankaprovince)
 
-        - Southern has been renamed as Southern Sri Lanka Province
+        - Southern has been renamed as [Southern Sri Lanka Province](/maps/spec-sheets/southernsrilankaprovince)
 
-        - Uva has been renamed as Uva Sri Lanka Province
+        - Uva has been renamed as [Uva Sri Lanka Province](/maps/spec-sheets/uvasrilankaprovince)
 
-        - Western has been renamed as Western Sri Lanka Province
+        - Western has been renamed as [Western Sri Lanka Province](/maps/spec-sheets/westernsrilankaprovince)
 
     - Updated the specification sheet for Mauritania and 13 separate regions:
 
@@ -668,15 +668,15 @@ heading: Map Improvements in Version 3.14.0
 
         - Trarza
 
-    - The following entities have been added to Uganda main region and 4 separate regions:
+    - The following entities have been added to [Uganda](/maps/spec-sheets/uganda) main region and 4 separate regions:
 
-        - Central Uganda
+        - [Central Uganda](/maps/spec-sheets/centraluganda)
 
-        - Northern Uganda
+        - [Northern Uganda](/maps/spec-sheets/westernuganda)
 
-        - Eastern Uganda
+        - [Eastern Uganda](/maps/spec-sheets/easternuganda)
 
-        - Southern Uganda
+        - [Southern Uganda](/maps/spec-sheets/northernuganda)
 
     - Guinea map prefectures map and Guinea main has been renamed and updated with 8 separate region maps:
 
