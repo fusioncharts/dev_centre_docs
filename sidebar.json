@@ -46,7 +46,7 @@
                             "title": "Chart configurations",
                             "children": [{
                                     "title": "Change size",
-                                    "path": ""
+                                    "path": "/chart-guide/standard-charts/column-charts/size-and-type"
                                 },
                                 {
                                     "title": "Border & background",
@@ -72,7 +72,6 @@
                                     "title": "Padding & Margin",
                                     "path": ""
                                 }
-
                             ]
                         },
                         {
@@ -117,7 +116,6 @@
                                     "title": "Div lines & grids",
                                     "path": ""
                                 }
-
                             ]
                         },
                         {
@@ -265,8 +263,6 @@
                                     "title": "Padding & Margin",
                                     "path": ""
                                 }
-
-
                             ]
                         },
                         {
@@ -364,8 +360,6 @@
                                     "title": "Padding & Margin",
                                     "path": ""
                                 }
-
-
                             ]
                         },
                         {
@@ -414,7 +408,6 @@
                                     "title": "Div lines & grids",
                                     "path": ""
                                 }
-
                             ]
                         },
                         {
@@ -463,8 +456,6 @@
                                     "title": "Padding & Margin",
                                     "path": ""
                                 }
-
-
                             ]
                         },
                         {
@@ -522,8 +513,6 @@
                         }
                     ]
                 }
-
-
             ]
         },
         {
@@ -834,9 +823,6 @@
                     "path": ""
                 }
             ]
-
         }
-
     ]
-
 }]
