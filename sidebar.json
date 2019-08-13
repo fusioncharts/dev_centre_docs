@@ -140,7 +140,7 @@
                             "title": "Chart configurations",
                             "children": [{
                                     "title": "Change size",
-                                    "path": ""
+                                    "path": "/understanding-fusioncharts/area-chart"
                                 },
                                 {
                                     "title": "Border & background",
