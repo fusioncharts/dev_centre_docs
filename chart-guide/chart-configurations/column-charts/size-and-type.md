@@ -74,7 +74,7 @@ The code to render a column chart with `width: 500px` and `height 300px` is show
 
 If you want to create a chart that automatically resizes when its parent container (another `<div>` or the entire window) resizes, here's how you can set the `width` and `height` of the chart:
 
-```json
+```javascript
 {
     "type": "column2d",
     "renderAt": "chartContainer",
