@@ -105,3 +105,5 @@ Take a look at an example below, along with the code:
 {% embed_chart chart-configurations-size-and-type-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5Lpu0hrt/) to edit the above chart.
+
+> To set the `width` and `height` for a column chart with multiple dataplots or overlapped dataplots, apply both the attributes same as shown above.
