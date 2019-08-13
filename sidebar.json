@@ -328,7 +328,7 @@
                     "title": "Pie & Doughnut Charts",
                     "children": [{
                             "title": "Chart anatomy",
-                            "path": ""
+                            "path": "/understanding-fusioncharts/pie-doughnut-chart"
                         },
                         {
                             "title": "Create pie & doughnut charts",
