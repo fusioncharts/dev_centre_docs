@@ -46,7 +46,7 @@
                             "title": "Chart configurations",
                             "children": [{
                                     "title": "Change size",
-                                    "path": "/chart-guide/standard-charts/column-charts/size-and-type"
+                                    "path": "/chart-guide/chart-configurations/column-charts/size-and-type"
                                 },
                                 {
                                     "title": "Border & background",
