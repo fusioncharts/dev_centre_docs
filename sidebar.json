@@ -46,15 +46,15 @@
                             "title": "Chart configurations",
                             "children": [{
                                     "title": "Change size",
-                                    "path": "/chart-guide/chart-configurations/column-charts/size-and-type"
+                                    "path": "/chart-guide/chart-configurations/column-charts/size-and-type-column-chart"
                                 },
                                 {
                                     "title": "Border & background",
-                                    "path": "/chart-guide/chart-configurations/column-charts/border-and-background"
+                                    "path": "/chart-guide/chart-configurations/column-charts/border-and-background-column-chart"
                                 },
                                 {
                                     "title": "Fonts",
-                                    "path": ""
+                                    "path": "/chart-guide/chart-configurations/column-charts/fonts-column-chart"
                                 },
                                 {
                                     "title": "Number formats",
