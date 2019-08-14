@@ -122,7 +122,7 @@ heading: Map Improvements in Version 3.14.0
 
         - [RoiEt](/maps/spec-sheets/roiet)
 
-        - [SaKaeo](/maps/spec-sheets/saKaeo)
+        - [SaKaeo](/maps/spec-sheets/sakaeo)
 
         - [SakonNakhon](/maps/spec-sheets/sakonnakhon)
 
@@ -640,7 +640,7 @@ heading: Map Improvements in Version 3.14.0
 
         - Western has been renamed as [Western Sri Lanka Province](/maps/spec-sheets/westernsrilankaprovince)
 
-    - Updated the specification sheet for Mauritania and 13 separate regions:
+    - Updated the specification sheet for [Mauritania](/maps/spec-sheets/mauritania) and 13 separate regions:
 
         - [Adrar](/maps/spec-sheets/adrar)
 
