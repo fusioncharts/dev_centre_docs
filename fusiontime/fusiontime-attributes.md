@@ -1795,6 +1795,18 @@ List of predefined date/time format is given below:
 		<td>Can either be **AM** or **PM**.</td>
 	</tr>
 	<tr>
+		<td>`%q`</td>
+		<td>The quarter of the year (Q1, Q2, Q3, Q4).</td>
+	</tr>
+	<tr>
+		<td>`%Q`</td>
+		<td>The number of milliseconds elapsed since the UNIX epoch (0, 1, 2,...).</td>
+	</tr>
+	<tr>
+		<td>`%s`</td>
+		<td>The number of seconds elapsed since the UNIX epoch (0, 1, 2,...).</td>
+	</tr>
+	<tr>
 		<td>`%S`</td>
 		<td>Second as a decimal number [00, 61].</td>
 	</tr>
