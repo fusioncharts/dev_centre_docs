@@ -122,7 +122,7 @@ heading: Map Improvements in Version 3.14.0
 
         - [RoiEt](/maps/spec-sheets/roiet)
 
-        - [SaKaeo](/maps/spec-sheets/saKaeo)
+        - [SaKaeo](/maps/spec-sheets/sakaeo)
 
         - [SakonNakhon](/maps/spec-sheets/sakonnakhon)
 
