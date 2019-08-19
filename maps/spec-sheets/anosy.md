@@ -9,8 +9,8 @@ Dimensions (Width x Height): 600x460
 
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-MG.TL.BO|BO|Betroka
-MG.TL.AS|AS|Amboasary
-MG.TL.TN|TN|Tolanaro
+| ID       | Short label | Label     |
+| -------- | ----------- | --------- |
+| MG.TL.BO | BO          | Betroka   |
+| MG.TL.AS | AS          | Amboasary |
+| MG.TL.TN | TN          | Tolanaro  |

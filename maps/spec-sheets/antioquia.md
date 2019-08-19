@@ -7,10 +7,6 @@
 Map Name: Antioquia
 Dimensions (Width x Height): 510x400
 
-
-
-
-
 ### List of Entities
 
 ID | Short label | Label
