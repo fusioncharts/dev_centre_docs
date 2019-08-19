@@ -7,13 +7,8 @@
 Map Name: Aruba
 Dimensions (Width x Height): 270x270
 
-
-
-
-
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-CA.AR|AR|Aruba
-
+| ID    | Short label | Label |
+| ----- | ----------- | ----- |
+| CA.AR | AR          | Aruba |
