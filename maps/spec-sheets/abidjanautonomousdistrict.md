@@ -9,6 +9,6 @@ Dimensions (Width x Height): 600x460
 
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-CI.LG.AB|AB|Abidjan
+| ID       | Short label | Label   |
+| -------- | ----------- | ------- |
+| CI.LG.AB | AB          | Abidjan |

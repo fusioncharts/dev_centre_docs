@@ -9,9 +9,9 @@ Dimensions (Width x Height): 600x460
 
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-MG.AV.BO|BO|Bongolava Region
-MG.AV.AG|AG|Analamanga Region
-MG.AV.IT|IT|Itasy Region
-MG.AV.VA|VA|Vakinankaratra Region
+| ID       | Short label | Label                 |
+| -------- | ----------- | --------------------- |
+| MG.AV.BO | BO          | Bongolava Region      |
+| MG.AV.AG | AG          | Analamanga Region     |
+| MG.AV.IT | IT          | Itasy Region          |
+| MG.AV.VA | VA          | Vakinankaratra Region |
