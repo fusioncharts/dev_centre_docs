@@ -18,34 +18,20 @@ FusionTime uses columns and rows as dataTable to feed data to the chart. In the 
 
 The code to apply the `groupBy` is given below:
 
-```
-
+```javascript
 var dataT= dataStore.getDataTable();
-
     var group1 = FusionCharts.DataStore.Operators.groupBy(
-
         [{
-
             column: 'OrderDate',
-
             timeUnit: FusionCharts.DataStore.DatetimeUnits.Month
-
         }],
-
         [{
-
             column: 'Sales',
-
             operation: 'sum',
-
             outputAs: 'Total_Sales'
-
         }]
-
     );
-
     var dataT_1=dataT.query(group1);
-
 ```
 
 In the above code:
@@ -59,7 +45,3 @@ In the above code:
 * Next, set the column on which you want to apply the operation. In this case, the **sum** operation is applied to the **Sales** column. This will calculate the sum of the grouped values.
 
 * In the next step, the above operation is applied to the dataTable and the chart will be rendered using it.
-
-The chart looks like as shown below:
-
-<Live Chart>

@@ -7,12 +7,9 @@
 Map Name: Almaty City
 Dimensions (Width x Height): 421x391
 
-
-
-
-
 ### List of Entities
 
- Id | Short label | Label
----|---|---
-KZ.AC.AC|AC|Almaty City
+ | Id       | Short label | Label       |
+ | -------- | ----------- | ----------- |
+ | KZ.AC.AC | AC          | Almaty City |
+ 

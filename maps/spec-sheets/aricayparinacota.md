@@ -9,7 +9,7 @@ Dimensions (Width x Height): 600x460
 
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-CL.AP.AR|AR|Provincia de Arica
-CL.AP.PR|PR|Provincia de Parinacota
+| ID       | Short label | Label                   |
+| -------- | ----------- | ----------------------- |
+| CL.AP.AR | AR          | Provincia de Arica      |
+| CL.AP.PR | PR          | Provincia de Parinacota |
