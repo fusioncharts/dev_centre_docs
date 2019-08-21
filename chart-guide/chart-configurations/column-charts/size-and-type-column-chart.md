@@ -8,20 +8,64 @@ FusionCharts Suite XT lets you specify the dimensions of charts either in pixels
 
 ## Set Width and Height in Pixels
 
-To set the `width` and `height` you just need to provide the numeric values, and not add "px" at the end of such values. Refer to the code  below:
+To set the `width` and `height` you just need to provide the numeric values, and not add `px` at the end of such values.
 
-```json
+The code to render a column chart with `width: 500px` and `height 300px` is shown below:
+
+```javascript
 {
-    "type": "column2d",
-    "renderAt": "chartContainer",
-    "width": "500", //width of the chart
-    "height": "300", //height of the chart
-    "dataFormat": "json",
-    "dataSource": {
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: 500, //width of the chart
+    height: 300, //height of the chart
+    dataFormat: 'json',
+    dataSource: {
         "chart": {
-            ...
+            "caption": "Monthly revenue",
+            "subCaption": "Last year",
+            "xAxisName": "Month",
+            "yAxisName": "Amount ($)",
+            "numberPrefix": "$",
+            "theme": "fusion"
         },
-        "data": []
+
+        "data": [{
+            "label": "Jan",
+            "value": "420000"
+        }, {
+            "label": "Feb",
+            "value": "810000"
+        }, {
+            "label": "Mar",
+            "value": "720000"
+        }, {
+            "label": "Apr",
+            "value": "550000"
+        }, {
+            "label": "May",
+            "value": "910000"
+        }, {
+            "label": "Jun",
+            "value": "510000"
+        }, {
+            "label": "Jul",
+            "value": "680000"
+        }, {
+            "label": "Aug",
+            "value": "620000"
+        }, {
+            "label": "Sep",
+            "value": "610000"
+        }, {
+            "label": "Oct",
+            "value": "490000"
+        }, {
+            "label": "Nov",
+            "value": "900000"
+        }, {
+            "label": "Dec",
+            "value": "730000"
+        }]
     }
 }
 ```
@@ -30,7 +74,7 @@ To set the `width` and `height` you just need to provide the numeric values, and
 
 If you want to create a chart that automatically resizes when its parent container (another `<div>` or the entire window) resizes, here's how you can set the `width` and `height` of the chart:
 
-```json
+```javascript
 {
     "type": "column2d",
     "renderAt": "chartContainer",
@@ -61,3 +105,5 @@ Take a look at an example below, along with the code:
 {% embed_chart chart-configurations-size-and-type-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5Lpu0hrt/) to edit the above chart.
+
+> To set the `width` and `height` for a column chart with multiple dataplots or overlapped dataplots, apply both the attributes same as shown above.
