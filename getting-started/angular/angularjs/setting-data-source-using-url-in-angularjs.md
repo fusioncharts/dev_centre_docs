@@ -1,16 +1,16 @@
 ---
-title: Setting Data Source Using URL | FusionCharts
+title: Setting Data Source Using URL in AngularJS | FusionCharts
 description: FusionCharts lets you pass the complete JSON/XML chart data using a JSON file or a URL without losing any functionality
-heading: Setting Data Source Using URL
+heading: Setting Data Source Using URL in AngularJS
 ---
 
 FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a `.json` or `.xml` file and then pass the relative URL of this file as value to the `dataSource` attribute. 
 
-The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
+The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as value, depending on the chart data. For the second method, the value is `jsonurl` or `xmlurl`.
 
 This article explains how you can set the chart data using the URL of the corresponding file using `angularjs-fusioncharts` component.
 
-## Load data using JSON as URL
+## Load Data Using JSON as URL
 
 Let's build the same revenue chart which we built in the [first example](/getting-started/angular/angularjs/your-first-chart-using-angularjs) using JSON, and use a .json file as the data source.
 
@@ -84,7 +84,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -120,23 +120,23 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Stored the chart configuration in a JSON object.
 
 3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **jsonurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
+    * Set the value of `dataFormat` to **jsonurl**.
+    * Set a static URL as the value of `dataSource` to render the above chart.
 
 4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels.
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and the height of the chart in pixels.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
-## Load data using XML as URL
+## Load Data Using XML as URL
 
 The XML representation for the above chart looks as shown below:
 
@@ -166,7 +166,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -202,17 +202,17 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
-2. Stored the chart configuration in an XML object. In the XML object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as XML.
+2. Store the chart configuration in an XML object. In the XML object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type to `column2d`. 
+    * Set the `dataFormat` as `xml`.
 
 3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **xmlurl**.
+    * Set the value of `dataFormat` as **xmlurl**.
     * A static URL has been set to `dataSource` to render the above chart.
 
 4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.

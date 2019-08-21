@@ -4,9 +4,9 @@ description: This article outlines the steps to create your first chart, widget 
 heading: Create a Chart in AngularJS Using FusionCharts
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angularjs** directive which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
+FusionCharts is a JavaScript charting library that lets you create interactive charts, gauges, maps, and dashboards using JavaScript. We have built a simple and lightweight **Angularjs** directive, which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
 
-In this page, we'll see how to install FusionCharts and render a chart using the `angularjs-fusionCharts` directive.
+In this page, you will see how to install FusionCharts and render a chart using the `angularjs-fusionCharts` directive.
 
 ## Installation
 
@@ -96,9 +96,9 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 
 That completes the installation of FusionCharts and the `angularjs-fusioncharts` directive.
 
-## Create your first chart
+## Create Your First Chart
 
-Let's create a Column 2D chart using the angularjs-fusioncharts component showing the "Countries With Most Oil Reserves".
+Let's create a Column 2D chart using the `angularjs-fusioncharts` component showing the "Countries with Most Oil Reserves".
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
@@ -108,7 +108,7 @@ The Column 2D chart is shown below:
 
 To understand the chart components, click [here](/understanding-fusioncharts).
 
-## Chart data
+## Chart Data﻿
 
 The data to render the above chart is shown in the table below:
 
@@ -174,7 +174,7 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 }
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, such as the ones for [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), and [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
 
 In the above JSON data:
 
@@ -196,13 +196,13 @@ In the above JSON data:
 
 Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
-Now that you have the data in JSON format, let's see how to render the chart.
+Now that you have the data in JSON format, it's time to render the chart.
 
-## Render the chart
+## Render the Chart
 
 To render the chart, follow the steps below:
 
-1. Include `angularjs` using require.
+1. Include `angularjs` using `require`.
 
 2. Include the `fusioncharts` library.
 
@@ -218,7 +218,7 @@ To render the chart, follow the steps below:
 
 8.  Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
 
-- Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+- Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 - Set the width and height (in pixels).
 - Embed the json data as the value of the `dataSource`.
 
@@ -249,7 +249,7 @@ var Charts = require('fusioncharts/fusioncharts.charts');
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Add charts and themes as dependency
+// Add charts and themes as dependencies
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
 
@@ -312,7 +312,7 @@ chartInstance.render()
 &lt;/body&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
+<div class='mt-30'><strong>To include the specific chart types, add the following files individually using `require`</strong></div>
 <ul>
     <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
     <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
@@ -464,7 +464,7 @@ chartInstance.render()
 
 That's it! Your first chart using `angularjs-fusioncharts` is ready.
 
-## Problem rendering the chart?
+## Problem Rendering the Chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 

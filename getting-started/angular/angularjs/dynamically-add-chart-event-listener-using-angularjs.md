@@ -1,12 +1,12 @@
 ---
-title: Dynamically Add Chart Event Listener using AngularJS | FusionCharts
-description: This article tells you how to dynamically add chart event listener to your chart using angularjs.
-heading: Dynamically Add Chart Event Listener using AngularJS
+title: Dynamically Add Chart Event Listener Using AngularJS | FusionCharts
+description: This article tells you how to dynamically add chart event listener to your chart using AngularJS.
+heading: Dynamically Add Chart Event Listener Using AngularJS
 ---
 
-FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, add events at runtime, and remove events at runtime.
+FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates and option to add/remove events at runtime.
 
-Events are signals that let you execute specific actions—such as manipulating the DOM, sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. Events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
+Events are signals that let you execute specific actions - such as manipulate the DOM, send data to the server, etc., using JavaScript, in response to any interaction/update of a chart. For example, you can use events to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
 This article focuses on how you can dynamically add/remove event listener to the data plots in the chart using `angularjs-fusioncharts` component.
 
@@ -23,7 +23,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -137,15 +137,15 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Add the chart and the theme as dependencies to the core.
 
 3. Store the chart configurations in a variable (`myApp`).
 
-4. Set the `message` and its styling which gets displayed while rendering the chart.
+4. Set the `message` and its styling, which get displayed while rendering the chart.
 
 5. Store the data source in a variable (`dataSource`).
 
@@ -159,8 +159,8 @@ The above chart has been rendered using the following steps:
 	* Set the  handler for **Reset** button. The **Reset** button resets the chart to default message and removes the event listener.
 
 8. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels.
-    * Embed the json data as the value of `dataSource`.
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and the height of the chart in pixels.
+    * Embed the JSON data from `dataSource`.
 
 9. Create a `<div>` to add **buttons** using `<a>`.

@@ -861,8 +861,8 @@
         "name": "radius3D"
       },
       {
-        "description": "This attribute lets you explicitly set the outer radius of the chart. FusionCharts XT automatically calculates the best fit pie radius for the chart. This attribute is useful if you want to enforce one of your own values.",
-        "range": "In Pixels",
+        "description": "This attribute lets you explicitly set the outer radius of the chart. FusionCharts XT automatically calculates the best fit pie radius for the chart. This attribute is useful if you want to enforce one of your own values. Starting v3.14.0, you can specify the radius of a pie chart in both percentage and pixel values.",
+        "range": "In Pixels & Percentage",
         "type": "Number",
         "name": "pieRadius"
       },
@@ -956,6 +956,34 @@
         "type": "Boolean",
         "versionsince": "3.2.1",
         "name": "useEllipsesWhenOverflow"
+      },
+      {
+        "description": "This attribute places the data labels outside/inside of the pie slices. \n\nDefault value: Outside",
+        "range": "Outside, Inside",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "labelPosition"
+      },
+      {
+        "description": "This attribute places the data values outside/inside of the pie slices. \n\nDefault value: Outside",
+        "range": "Outside, Inside",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "valuePosition"
+      },
+      {
+        "description": "Set the minimum angle for a pie slice, above which the data labels will be visible, provided `labelPosition` is set to `inside`. \n\nDefault value: 0",
+        "range": "0 - 360",
+        "type": "Number",
+        "versionSince": "3.14.0",
+        "name": "minAngleForLabel"
+      },
+      {
+        "description": "Set the minimum angle for a pie slice, above which the data values will be visible, provided `valuePosition` is set to `inside`. \n\nDefault value: 0",
+        "range": "0 - 360",
+        "type": "Number",
+        "versionSince": "3.14.0",
+        "name": "minAngleForValue"
       }
     ],
     "description": " In FusionCharts XT, the pie and doughnut charts can now have smart labels and lines. Smart labels/lines are data connector lines which connect the pie/doughnut slices to their respective labels without over-lapping even in cases where there are lots of labels located near each other. You can configure the smart labels/lines properties using the attributes below. "
@@ -1820,6 +1848,20 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showValue"
+      },
+      {
+        "description": "This attribute places the data label outside/inside of a particular pie slice. \n\nDefault value: Outside",
+        "range": "Outside, Inside",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "labelPosition"
+      },
+      {
+        "description": "This attribute places the data value outside/inside of a particular pie slice. \n\nDefault value: Outside",
+        "range": "Outside, Inside",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "valuePosition"
       },
       {
         "description": "By default, FusionCharts XT shows the data item name and value as tool tip text for that data item. But, if you want to display more information for the data item as tool tip, you can use this attribute to specify the same.",

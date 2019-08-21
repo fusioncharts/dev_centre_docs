@@ -5,20 +5,17 @@
 #### JavaScript Alias: maps/gambia
 
 Map Name: Gambia
-Dimensions (Width x Height): 652x191
-
-
-
-
+Dimensions (Width x Height): 600x460
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
 GM.BJ|BJ|Banjul
-GM.MC|MC|Central River
-GM.LR|LR|Lower River
-GM.NB|NB|North Bank
-GM.UR|UR|Upper River
-GM.WE|WE|Western
-
+GM.WE|WE|Brikama
+GM.KF|KF|Kanifing
+GM.NB|NB|Kerewan
+GM.LR|LR|Mansa Konko
+GM.MC|MC|Kuntaur
+GM.CR|CR|Janjanbureh
+GM.UR|UR|Basse

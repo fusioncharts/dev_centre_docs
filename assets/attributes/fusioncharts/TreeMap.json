@@ -829,34 +829,6 @@
         "name": "parentLabelLineHeight"
       },
       {
-        "description": "Sets whether the glow effect will enabled for the node labels. \n\n__Default value__: 1",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.10.0",
-        "name": "labelGlow"
-      },
-      {
-        "description": "Sets the intensity of the glow effect for the node labels. \n\n__Default value__: 100",
-        "range": "0 - 100",
-        "type": "Number",
-        "versionsince": "3.10.0",
-        "name": "labelGlowIntensity"
-      },
-      {
-        "description": "Sets the color of the glow effect for the node labels. \n\n__Default value__: #FFFFFF",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "versionsince": "3.10.0",
-        "name": "labelGlowColor"
-      },
-      {
-        "description": "Sets radius of the glow effect for the node labels. \n\n__Default value__: 2",
-        "range": "0-10",
-        "type": "Number",
-        "versionsince": "3.10.0",
-        "name": "labelGlowRadius"
-      },
-      {
         "description": "Sets the font size for the node labels.",
         "range": "6 - 72",
         "type": "Number",

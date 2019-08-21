@@ -1228,7 +1228,7 @@
               {
                 "name": "Nordland",
                 "alias": "nordland",
-                "specSheet": "/maps/spec-sheets/Nordland"
+                "specSheet": "/maps/spec-sheets/nordland"
               },
               {
                 "name": "Oslo",
@@ -3743,8 +3743,8 @@
               },
               {
                 "name": "American Samoa Congressional",
-                "alias": "Americansamoacongressional",
-                "specSheet": "/maps/spec-sheets/Americansamoacongressional"
+                "alias": "americansamoacongressional",
+                "specSheet": "/maps/spec-sheets/americansamoacongressional"
               },
               {
                 "name": "Arizona Congressional",
@@ -4370,6 +4370,92 @@
         "markerData": "/maps/marker-data/chile"
       },
       {
+        "name": "Chile (Separate Regions)",
+        "marker": false,
+        "members": [
+          {
+            "name": "Antofagasta",
+            "alias": "antofagasta",
+            "specSheet": "/maps/spec-sheets/antofagasta"
+          },
+          {
+            "name": "Araucania",
+            "alias": "araucania",
+            "specSheet": "/maps/spec-sheets/araucania"
+          },
+          {
+            "name": "Aricay Parinacota",
+            "alias": "aricayparinacota",
+            "specSheet": "/maps/spec-sheets/aricayparinacota"
+          },
+          {
+            "name": "Atacama",
+            "alias": "atacama",
+            "specSheet": "/maps/spec-sheets/atacama"
+          },
+          {
+            "name": "Aysendel General Carlos Ibanez del Campo",
+            "alias": "aysendelgeneralcarlosibanezdelcampo",
+            "specSheet": "/maps/spec-sheets/aysendelgeneralcarlosibanezdelcampo"
+          },
+          {
+            "name": "Biobio",
+            "alias": "biobio",
+            "specSheet": "/maps/spec-sheets/biobio"
+          },
+          {
+            "name": "Coquimbo",
+            "alias": "coquimbo",
+            "specSheet": "/maps/spec-sheets/coquimbo"
+          },
+          {
+            "name": "Libertador General Bernardo O Higgins",
+            "alias": "libertadorgeneralbernardoohiggins",
+            "specSheet": "/maps/spec-sheets/libertadorgeneralbernardoohiggins"
+          },
+          {
+            "name": "Los Lagos",
+            "alias": "loslagos",
+            "specSheet": "/maps/spec-sheets/loslagos"
+          },
+          {
+            "name": "Los Rios",
+            "alias": "losrios",
+            "specSheet": "/maps/spec-sheets/losrios"
+          },
+          {
+            "name": "Magallanesy de la Antartica Chilena",
+            "alias": "magallanesydelaantarticachilena",
+            "specSheet": "/maps/spec-sheets/magallanesydelaantarticachilena"
+          },
+          {
+            "name": "Maule",
+            "alias": "maule",
+            "specSheet": "/maps/spec-sheets/maule"
+          },
+          {
+            "name": "Metropolitana de Santiago",
+            "alias": "metropolitanadesantiago",
+            "specSheet": "/maps/spec-sheets/metropolitanadesantiago"
+          },
+          {
+            "name": "Nuble",
+            "alias": "nuble",
+            "specSheet": "/maps/spec-sheets/nuble"
+          },
+          {
+            "name": "Tarapaca",
+            "alias": "tarapaca",
+            "specSheet": "/maps/spec-sheets/tarapaca"
+          },
+          {
+            "name": "Val Paraiso",
+            "alias": "valparaiso",
+            "specSheet": "/maps/spec-sheets/valparaiso"
+          }
+        ]
+      },
+      {
         "name": "Colombia",
         "alias": "colombia",
         "specSheet": "/maps/spec-sheets/colombia",
@@ -4608,7 +4694,7 @@
       {
         "name": "Asia (No Middle-East)",
         "alias": "asia3",
-        "specSheet": "/maps/spec-sheets/Asia-Middle-East"
+        "specSheet": "/maps/spec-sheets/asia-middle-east"
       },
       {
         "name": "Countries",
@@ -6741,6 +6827,62 @@
             "markerData": "/maps/marker-data/srilanka"
           },
           {
+            "name": "Sri Lanka Province",
+            "alias": "srilankaprovince",
+            "specSheet": "/maps/spec-sheets/srilankaprovince"
+          },
+          {
+            "name": "Sri Lanka (Separate Provinces)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Central Sri Lanka Province",
+                "alias": "centralsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/centralsrilankaprovince"
+              },
+              {
+                "name": "Eastern Sri Lanka Province",
+                "alias": "easternsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/easternsrilankaprovince"
+              },
+              {
+                "name": "North Central Sri Lanka Province",
+                "alias": "northcentralsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/northcentralsrilankaprovince"
+              },
+              {
+                "name": "Northern Sri Lanka Province",
+                "alias": "northernsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/northernsrilankaprovince"
+              },
+              {
+                "name": "North Western Sri Lanka Province",
+                "alias": "northwesternsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/northwesternsrilankaprovince"
+              },
+              {
+                "name": "Sabaragamuwa Sri Lanka Province",
+                "alias": "sabaragamuwasrilankaprovince",
+                "specSheet": "/maps/spec-sheets/sabaragamuwasrilankaprovince"
+              },
+              {
+                "name": "Southern Sri lanka Province",
+                "alias": "southernsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/southernsrilankaprovince"
+              },
+              {
+                "name": "Uva Sri lanka Province",
+                "alias": "uvasrilankaprovince",
+                "specSheet": "/maps/spec-sheets/uvasrilankaprovince"
+              },
+              {
+                "name": "Western Sri lanka Province",
+                "alias": "westernsrilankaprovince",
+                "specSheet": "/maps/spec-sheets/westernsrilankaprovince"
+              }
+            ]
+          },
+          {
             "name": "Taiwan",
             "alias": "taiwan",
             "specSheet": "/maps/spec-sheets/taiwan",
@@ -6867,6 +7009,397 @@
             "alias": "thailand",
             "specSheet": "/maps/spec-sheets/thailand",
             "markerData": "/maps/marker-data/thailand"
+          },
+          {
+            "name": "Thailand (Separate Province)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Amnat Charoen",
+                "alias": "amnatcharoen",
+                "specSheet": "/maps/spec-sheets/amnatcharoen"
+              },
+              {
+                "name": "AngThong",
+                "alias": "angthong",
+                "specSheet": "/maps/spec-sheets/angthong"
+              },
+              {
+                "name": "Bangkok",
+                "alias": "bangkok",
+                "specSheet": "/maps/spec-sheets/bangkok"
+              },
+              {
+                "name": "BuengKan",
+                "alias": "buengkan",
+                "specSheet": "/maps/spec-sheets/buengkan"
+              },
+              {
+                "name": "Buriram",
+                "alias": "buriram",
+                "specSheet": "/maps/spec-sheets/buriram"
+              },
+              {
+                "name": "Chachoengsao",
+                "alias": "chachoengsao",
+                "specSheet": "/maps/spec-sheets/chachoengsao"
+              },
+              {
+                "name": "ChaiNat",
+                "alias": "chainat",
+                "specSheet": "/maps/spec-sheets/chainat"
+              },
+              {
+                "name": "Chaiyaphum",
+                "alias": "chaiyaphum",
+                "specSheet": "/maps/spec-sheets/chaiyaphum"
+              },
+              {
+                "name": "Chanthaburi",
+                "alias": "chanthaburi",
+                "specSheet": "/maps/spec-sheets/chanthaburi"
+              },
+              {
+                "name": "ChiangMai",
+                "alias": "chiangmai",
+                "specSheet": "/maps/spec-sheets/chiangmai"
+              },
+              {
+                "name": "ChiangRai",
+                "alias": "chiangrai",
+                "specSheet": "/maps/spec-sheets/chiangrai"
+              },
+              {
+                "name": "Chonburi",
+                "alias": "chonburi",
+                "specSheet": "/maps/spec-sheets/chonburi"
+              },
+              {
+                "name": "Chumphon",
+                "alias": "chumphon",
+                "specSheet": "/maps/spec-sheets/chumphon"
+              },
+              {
+                "name": "Kalasin",
+                "alias": "kalasin",
+                "specSheet": "/maps/spec-sheets/kalasin"
+              },
+              {
+                "name": "KamphaengPhet",
+                "alias": "kamphaengphet",
+                "specSheet": "/maps/spec-sheets/kamphaengphet"
+              },
+              {
+                "name": "Kanchanaburi",
+                "alias": "kanchanaburi",
+                "specSheet": "/maps/spec-sheets/kanchanaburi"
+              },
+              {
+                "name": "KhonKaen",
+                "alias": "khonkaen",
+                "specSheet": "/maps/spec-sheets/khonkaen"
+              },
+              {
+                "name": "Krabi",
+                "alias": "krabi",
+                "specSheet": "/maps/spec-sheets/krabi"
+              },
+              {
+                "name": "Lampang",
+                "alias": "lampang",
+                "specSheet": "/maps/spec-sheets/lampang"
+              },
+              {
+                "name": "Lamphun",
+                "alias": "lamphun",
+                "specSheet": "/maps/spec-sheets/lamphun"
+              },
+              {
+                "name": "Loei",
+                "alias": "loei",
+                "specSheet": "/maps/spec-sheets/loei"
+              },
+              {
+                "name": "Lopburi",
+                "alias": "lopburi",
+                "specSheet": "/maps/spec-sheets/lopburi"
+              },
+              {
+                "name": "MaeHongSon",
+                "alias": "maehongson",
+                "specSheet": "/maps/spec-sheets/maehongson"
+              },
+              {
+                "name": "MahaSarakham",
+                "alias": "mahasarakham",
+                "specSheet": "/maps/spec-sheets/mahasarakham"
+              },
+              {
+                "name": "Mukdahan",
+                "alias": "mukdahan",
+                "specSheet": "/maps/spec-sheets/mukdahan"
+              },
+              {
+                "name": "NakhonNayok",
+                "alias": "nakhonnayok",
+                "specSheet": "/maps/spec-sheets/nakhonnayok"
+              },
+              {
+                "name": "NakhonPathom",
+                "alias": "nakhonpathom",
+                "specSheet": "/maps/spec-sheets/nakhonpathom"
+              },
+              {
+                "name": "NakhonPhanom",
+                "alias": "nakhonphanom",
+                "specSheet": "/maps/spec-sheets/nakhonphanom"
+              },
+              {
+                "name": "NakhonRatchasima",
+                "alias": "nakhonratchasima",
+                "specSheet": "/maps/spec-sheets/nakhonratchasima"
+              },
+              {
+                "name": "NakhonSawan",
+                "alias": "nakhonsawan",
+                "specSheet": "/maps/spec-sheets/nakhonsawan"
+              },
+              {
+                "name": "NakhonSiThammarat",
+                "alias": "nakhonsithammarat",
+                "specSheet": "/maps/spec-sheets/nakhonsithammarat"
+              },
+              {
+                "name": "Nan",
+                "alias": "nan",
+                "specSheet": "/maps/spec-sheets/nan"
+              },
+              {
+                "name": "Narathiwat",
+                "alias": "narathiwat",
+                "specSheet": "/maps/spec-sheets/narathiwat"
+              },
+              {
+                "name": "NongBuaLamPhu",
+                "alias": "nongbualamphu",
+                "specSheet": "/maps/spec-sheets/nongbualamphu"
+              },
+              {
+                "name": "NongKhai",
+                "alias": "nongkhai",
+                "specSheet": "/maps/spec-sheets/nongkhai"
+              },
+              {
+                "name": "Nonthaburi",
+                "alias": "nonthaburi",
+                "specSheet": "/maps/spec-sheets/nonthaburi"
+              },
+              {
+                "name": "PathumThani",
+                "alias": "pathumthani",
+                "specSheet": "/maps/spec-sheets/pathumthani"
+              },
+              {
+                "name": "Pattani",
+                "alias": "pattani",
+                "specSheet": "/maps/spec-sheets/pattani"
+              },
+              {
+                "name": "PhangNga",
+                "alias": "phangnga",
+                "specSheet": "/maps/spec-sheets/phangnga"
+              },
+              {
+                "name": "Phatthalung",
+                "alias": "phatthalung",
+                "specSheet": "/maps/spec-sheets/phatthalung"
+              },
+              {
+                "name": "Phayao",
+                "alias": "phayao",
+                "specSheet": "/maps/spec-sheets/phayao"
+              },
+              {
+                "name": "Phetchabun",
+                "alias": "phetchabun",
+                "specSheet": "/maps/spec-sheets/phetchabun"
+              },
+              {
+                "name": "Phetchaburi",
+                "alias": "phetchaburi",
+                "specSheet": "/maps/spec-sheets/phetchaburi"
+              },
+              {
+                "name": "Phichit",
+                "alias": "phichit",
+                "specSheet": "/maps/spec-sheets/phichit"
+              },
+              {
+                "name": "Phitsanulok",
+                "alias": "phitsanulok",
+                "specSheet": "/maps/spec-sheets/phitsanulok"
+              },
+              {
+                "name": "PhraNakhonSiAyutthaya",
+                "alias": "phranakhonsiayutthaya",
+                "specSheet": "/maps/spec-sheets/phranakhonsiayutthaya"
+              },
+              {
+                "name": "Phrae",
+                "alias": "phrae",
+                "specSheet": "/maps/spec-sheets/phrae"
+              },
+              {
+                "name": "Phuket",
+                "alias": "phuket",
+                "specSheet": "/maps/spec-sheets/phuket"
+              },
+              {
+                "name": "Prachinburi",
+                "alias": "prachinburi",
+                "specSheet": "/maps/spec-sheets/prachinburi"
+              },
+              {
+                "name": "PrachuapKhiriKhan",
+                "alias": "prachuapkhirikhan",
+                "specSheet": "/maps/spec-sheets/prachuapkhirikhan"
+              },
+              {
+                "name": "Ranong",
+                "alias": "ranong",
+                "specSheet": "/maps/spec-sheets/ranong"
+              },
+              {
+                "name": "Ratchaburi",
+                "alias": "ratchaburi",
+                "specSheet": "/maps/spec-sheets/ratchaburi"
+              },
+              {
+                "name": "Rayong",
+                "alias": "rayong",
+                "specSheet": "/maps/spec-sheets/rayong"
+              },
+              {
+                "name": "RoiEt",
+                "alias": "roiet",
+                "specSheet": "/maps/spec-sheets/roiet"
+              },
+              {
+                "name": "SaKaeo",
+                "alias": "sakaeo",
+                "specSheet": "/maps/spec-sheets/sakaeo"
+              },
+              {
+                "name": "SakonNakhon",
+                "alias": "sakonnakhon",
+                "specSheet": "/maps/spec-sheets/sakonnakhon"
+              },
+              {
+                "name": "SamutPrakan",
+                "alias": "samutprakan",
+                "specSheet": "/maps/spec-sheets/samutprakan"
+              },
+              {
+                "name": "SamutSakhon",
+                "alias": "samutsakhon",
+                "specSheet": "/maps/spec-sheets/samutsakhon"
+              },
+              {
+                "name": "SamutSongkhram",
+                "alias": "samutsongkhram",
+                "specSheet": "/maps/spec-sheets/samutsongkhram"
+              },
+              {
+                "name": "Saraburi",
+                "alias": "saraburi",
+                "specSheet": "/maps/spec-sheets/saraburi"
+              },
+              {
+                "name": "Satun",
+                "alias": "satun",
+                "specSheet": "/maps/spec-sheets/satun"
+              },
+              {
+                "name": "SingBuri",
+                "alias": "singburi",
+                "specSheet": "/maps/spec-sheets/singburi"
+              },
+              {
+                "name": "Sisaket",
+                "alias": "sisaket",
+                "specSheet": "/maps/spec-sheets/sisaket"
+              },
+              {
+                "name": "Songkhla",
+                "alias": "songkhla",
+                "specSheet": "/maps/spec-sheets/songkhla"
+              },
+              {
+                "name": "Sukhothai",
+                "alias": "sukhothai",
+                "specSheet": "/maps/spec-sheets/sukhothai"
+              },
+              {
+                "name": "SuphanBuri",
+                "alias": "suphanburi",
+                "specSheet": "/maps/spec-sheets/suphanburi"
+              },
+              {
+                "name": "SuratThani",
+                "alias": "suratthani",
+                "specSheet": "/maps/spec-sheets/suratthani"
+              },
+              {
+                "name": "Surin",
+                "alias": "surin",
+                "specSheet": "/maps/spec-sheets/surin"
+              },
+              {
+                "name": "Tak",
+                "alias": "tak",
+                "specSheet": "/maps/spec-sheets/tak"
+              },
+              {
+                "name": "Trang",
+                "alias": "trang",
+                "specSheet": "/maps/spec-sheets/trang"
+              },
+              {
+                "name": "Trat",
+                "alias": "trat",
+                "specSheet": "/maps/spec-sheets/trat"
+              },
+              {
+                "name": "UbonRatchathani",
+                "alias": "ubonratchathani",
+                "specSheet": "/maps/spec-sheets/ubonratchathani"
+              },
+              {
+                "name": "UdonThani",
+                "alias": "udonthani",
+                "specSheet": "/maps/spec-sheets/udonthani"
+              },
+              {
+                "name": "UthaiThani",
+                "alias": "uthaithani",
+                "specSheet": "/maps/spec-sheets/uthaithani"
+              },
+              {
+                "name": "Uttaradit",
+                "alias": "uttaradit",
+                "specSheet": "/maps/spec-sheets/uttaradit"
+              },
+              {
+                "name": "Yala",
+                "alias": "yala",
+                "specSheet": "/maps/spec-sheets/yala"
+              },
+              {
+                "name": "Yasothon",
+                "alias": "yasothon",
+                "specSheet": "/maps/spec-sheets/yasothon"
+              }
+            ]
           },
           {
             "name": "Tibet",
@@ -7875,6 +8408,72 @@
             "markerData": "/maps/marker-data/benin"
           },
           {
+            "name": "Benin (Separate Departments)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Alibori",
+                "alias": "alibori",
+                "specSheet": "/maps/spec-sheets/alibori"
+              },
+              {
+                "name": "Atakora",
+                "alias": "atakora",
+                "specSheet": "/maps/spec-sheets/atakora"
+              },
+              {
+                "name": "Atlantique",
+                "alias": "atlantique",
+                "specSheet": "/maps/spec-sheets/atlantique"
+              },
+              {
+                "name": "Borgou",
+                "alias": "borgou",
+                "specSheet": "/maps/spec-sheets/borgou"
+              },
+              {
+                "name": "Collines",
+                "alias": "collines",
+                "specSheet": "/maps/spec-sheets/collines"
+              },
+              {
+                "name": "Donga",
+                "alias": "donga",
+                "specSheet": "/maps/spec-sheets/donga"
+              },
+              {
+                "name": "Kouffo",
+                "alias": "kouffo",
+                "specSheet": "/maps/spec-sheets/kouffo"
+              },
+              {
+                "name": "Littoral",
+                "alias": "littoral",
+                "specSheet": "/maps/spec-sheets/littoral"
+              },
+              {
+                "name": "Mono",
+                "alias": "mono",
+                "specSheet": "/maps/spec-sheets/mono"
+              },
+              {
+                "name": "Oueme",
+                "alias": "oueme",
+                "specSheet": "/maps/spec-sheets/oueme"
+              },
+              {
+                "name": "Plateau",
+                "alias": "plateau",
+                "specSheet": "/maps/spec-sheets/plateau"
+              },
+              {
+                "name": "Zou",
+                "alias": "zou",
+                "specSheet": "/maps/spec-sheets/zou"
+              }
+            ]
+          },
+          {
             "name": "Botswana",
             "alias": "botswana",
             "specSheet": "/maps/spec-sheets/botswana",
@@ -7885,6 +8484,308 @@
             "alias": "burkinafaso",
             "specSheet": "/maps/spec-sheets/burkinafaso",
             "markerData": "/maps/marker-data/burkinafaso"
+          },
+          {
+            "name": "Burkina Faso (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Boucle du Mouhoun",
+                "alias": "boucledumouhoun",
+                "specSheet": "/maps/spec-sheets/boucledumouhoun"
+              },
+              {
+                "name": "Cascades",
+                "alias": "cascades",
+                "specSheet": "/maps/spec-sheets/cascades"
+              },
+              {
+                "name": "Centre",
+                "alias": "centre",
+                "specSheet": "/maps/spec-sheets/centre"
+              },
+              {
+                "name": "Centre-Est",
+                "alias": "centreest",
+                "specSheet": "/maps/spec-sheets/centreest"
+              },
+              {
+                "name": "Centre-Nord",
+                "alias": "centrenord",
+                "specSheet": "/maps/spec-sheets/centrenord"
+              },
+              {
+                "name": "Centre-Ouest",
+                "alias": "centreouest",
+                "specSheet": "/maps/spec-sheets/centreouest"
+              },
+              {
+                "name": "Centre-Sud",
+                "alias": "centresud",
+                "specSheet": "/maps/spec-sheets/centresud"
+              },
+              {
+                "name": "Est",
+                "alias": "est",
+                "specSheet": "/maps/spec-sheets/est"
+              },
+              {
+                "name": "Hauts-Bassins",
+                "alias": "hautsbassins",
+                "specSheet": "/maps/spec-sheets/hautsbassins"
+              },
+              {
+                "name": "Nord",
+                "alias": "nord",
+                "specSheet": "/maps/spec-sheets/nord"
+              },
+              {
+                "name": "Plateau-Central",
+                "alias": "plateaucentral",
+                "specSheet": "/maps/spec-sheets/plateaucentral"
+              },
+              {
+                "name": "Sahel",
+                "alias": "sahel",
+                "specSheet": "/maps/spec-sheets/sahel"
+              },
+              {
+                "name": "Sud-Ouest",
+                "alias": "sudouest",
+                "specSheet": "/maps/spec-sheets/sudouest"
+              }
+            ]
+          },
+          {
+            "name": "Burkina Faso (Provinces)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Bale",
+                "alias": "bale",
+                "specSheet": "/maps/spec-sheets/bale"
+              },
+              {
+                "name": "Bam",
+                "alias": "bam",
+                "specSheet": "/maps/spec-sheets/bam"
+              },
+              {
+                "name": "Banwa",
+                "alias": "banwa",
+                "specSheet": "/maps/spec-sheets/banwa"
+              },
+              {
+                "name": "Bazega",
+                "alias": "bazega",
+                "specSheet": "/maps/spec-sheets/bazega"
+              },
+              {
+                "name": "Bougouriba",
+                "alias": "bougouriba",
+                "specSheet": "/maps/spec-sheets/bougouriba"
+              },
+              {
+                "name": "Boulgou",
+                "alias": "boulgou",
+                "specSheet": "/maps/spec-sheets/boulgou"
+              },
+              {
+                "name": "Boulkiemde",
+                "alias": "boulkiemde",
+                "specSheet": "/maps/spec-sheets/boulkiemde"
+              },
+              {
+                "name": "Comoe",
+                "alias": "comoe",
+                "specSheet": "/maps/spec-sheets/comoe"
+              },
+              {
+                "name": "Ganzourgou",
+                "alias": "ganzourgou",
+                "specSheet": "/maps/spec-sheets/ganzourgou"
+              },
+              {
+                "name": "Gnagna",
+                "alias": "gnagna",
+                "specSheet": "/maps/spec-sheets/gnagna"
+              },
+              {
+                "name": "Gourma",
+                "alias": "gourma",
+                "specSheet": "/maps/spec-sheets/gourma"
+              },
+              {
+                "name": "Houet",
+                "alias": "houet",
+                "specSheet": "/maps/spec-sheets/houet"
+              },
+              {
+                "name": "Ioba",
+                "alias": "ioba",
+                "specSheet": "/maps/spec-sheets/ioba"
+              },
+              {
+                "name": "Kadiogo",
+                "alias": "kadiogo",
+                "specSheet": "/maps/spec-sheets/kadiogo"
+              },
+              {
+                "name": "Kenedougou",
+                "alias": "kenedougou",
+                "specSheet": "/maps/spec-sheets/kenedougou"
+              },
+              {
+                "name": "Komondjari",
+                "alias": "komondjari",
+                "specSheet": "/maps/spec-sheets/komondjari"
+              },
+              {
+                "name": "Kompienga",
+                "alias": "kompienga",
+                "specSheet": "/maps/spec-sheets/kompienga"
+              },
+              {
+                "name": "Kossi",
+                "alias": "kossi",
+                "specSheet": "/maps/spec-sheets/kossi"
+              },
+              {
+                "name": "Koulpelogo",
+                "alias": "koulpelogo",
+                "specSheet": "/maps/spec-sheets/koulpelogo"
+              },
+              {
+                "name": "Kouritenga",
+                "alias": "kouritenga",
+                "specSheet": "/maps/spec-sheets/kouritenga"
+              },
+              {
+                "name": "Kourweogo",
+                "alias": "kourweogo",
+                "specSheet": "/maps/spec-sheets/kourweogo"
+              },
+              {
+                "name": "Leraba",
+                "alias": "leraba",
+                "specSheet": "/maps/spec-sheets/leraba"
+              },
+              {
+                "name": "Loroum",
+                "alias": "loroum",
+                "specSheet": "/maps/spec-sheets/loroum"
+              },
+              {
+                "name": "Mouhoun",
+                "alias": "mouhoun",
+                "specSheet": "/maps/spec-sheets/mouhoun"
+              },
+              {
+                "name": "Nahouri",
+                "alias": "nahouri",
+                "specSheet": "/maps/spec-sheets/nahouri"
+              },
+              {
+                "name": "Namentenga",
+                "alias": "namentenga",
+                "specSheet": "/maps/spec-sheets/namentenga"
+              },
+              {
+                "name": "Nayala",
+                "alias": "nayala",
+                "specSheet": "/maps/spec-sheets/nayala"
+              },
+              {
+                "name": "Noumbiel",
+                "alias": "noumbiel",
+                "specSheet": "/maps/spec-sheets/noumbiel"
+              },
+              {
+                "name": "Oubritenga",
+                "alias": "oubritenga",
+                "specSheet": "/maps/spec-sheets/oubritenga"
+              },
+              {
+                "name": "Oudalan",
+                "alias": "oudalan",
+                "specSheet": "/maps/spec-sheets/oudalan"
+              },
+              {
+                "name": "Passore",
+                "alias": "passore",
+                "specSheet": "/maps/spec-sheets/passore"
+              },
+              {
+                "name": "Poni",
+                "alias": "poni",
+                "specSheet": "/maps/spec-sheets/poni"
+              },
+              {
+                "name": "Sanguie",
+                "alias": "sanguie",
+                "specSheet": "/maps/spec-sheets/sanguie"
+              },
+              {
+                "name": "Sanmatenga",
+                "alias": "sanmatenga",
+                "specSheet": "/maps/spec-sheets/sanmatenga"
+              },
+              {
+                "name": "Seno",
+                "alias": "seno",
+                "specSheet": "/maps/spec-sheets/seno"
+              },
+              {
+                "name": "Sissili",
+                "alias": "sissili",
+                "specSheet": "/maps/spec-sheets/sissili"
+              },
+              {
+                "name": "Soum",
+                "alias": "soum",
+                "specSheet": "/maps/spec-sheets/soum"
+              },
+              {
+                "name": "Sourou",
+                "alias": "sourou",
+                "specSheet": "/maps/spec-sheets/sourou"
+              },
+              {
+                "name": "Tapoa",
+                "alias": "tapoa",
+                "specSheet": "/maps/spec-sheets/tapoa"
+              },
+              {
+                "name": "Tuy",
+                "alias": "tuy",
+                "specSheet": "/maps/spec-sheets/tuy"
+              },
+              {
+                "name": "Yagha",
+                "alias": "yagha",
+                "specSheet": "/maps/spec-sheets/yagha"
+              },
+              {
+                "name": "Yatenga",
+                "alias": "yatenga",
+                "specSheet": "/maps/spec-sheets/yatenga"
+              },
+              {
+                "name": "Ziro",
+                "alias": "ziro",
+                "specSheet": "/maps/spec-sheets/ziro"
+              },
+              {
+                "name": "Zondoma",
+                "alias": "zondoma",
+                "specSheet": "/maps/spec-sheets/zondoma"
+              },
+              {
+                "name": "Zoundweogo",
+                "alias": "zoundweogo",
+                "specSheet": "/maps/spec-sheets/zoundweogo"
+              }
+            ]
           },
           {
             "name": "Burundi",
@@ -7909,6 +8810,102 @@
             "alias": "centralafricanrepublic",
             "specSheet": "/maps/spec-sheets/centralafricanrepublic",
             "markerData": "/maps/marker-data/centralafricanrepublic"
+          },
+          {
+            "name": "Central African Republic (Separate Prefectures)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Bamingui Bangoran",
+                "alias": "baminguibangoran",
+                "specSheet": "/maps/spec-sheets/baminguibangoran"
+              },
+              {
+                "name": "Bangui",
+                "alias": "bangui",
+                "specSheet": "/maps/spec-sheets/bangui"
+              },
+              {
+                "name": "BasseKotto",
+                "alias": "bassekotto",
+                "specSheet": "/maps/spec-sheets/bassekotto"
+              },
+              {
+                "name": "Central African Republic",
+                "alias": "centralafricanrepublic",
+                "specSheet": "/maps/spec-sheets/centralafricanrepublic"
+              },
+              {
+                "name": "HauteKotto",
+                "alias": "hautekotto",
+                "specSheet": "/maps/spec-sheets/hautekotto"
+              },
+              {
+                "name": "HautMBomou",
+                "alias": "hautmbomou",
+                "specSheet": "/maps/spec-sheets/hautmbomou"
+              },
+              {
+                "name": "Kemo",
+                "alias": "kemo",
+                "specSheet": "/maps/spec-sheets/kemo"
+              },
+              {
+                "name": "Lobaye",
+                "alias": "lobaye",
+                "specSheet": "/maps/spec-sheets/lobaye"
+              },
+              {
+                "name": "Mambere Kadei",
+                "alias": "mamberekadei",
+                "specSheet": "/maps/spec-sheets/mamberekadei"
+              },
+              {
+                "name": "Mbomou",
+                "alias": "mbomou",
+                "specSheet": "/maps/spec-sheets/mbomou"
+              },
+              {
+                "name": "Nana Grebizi",
+                "alias": "nanagrebizi",
+                "specSheet": "/maps/spec-sheets/nanagrebizi"
+              },
+              {
+                "name": "Nana Mambere",
+                "alias": "nanamambere",
+                "specSheet": "/maps/spec-sheets/nanamambere"
+              },
+              {
+                "name": "Ombella MPoko",
+                "alias": "ombellampoko",
+                "specSheet": "/maps/spec-sheets/ombellampoko"
+              },
+              {
+                "name": "Ouaka",
+                "alias": "ouaka",
+                "specSheet": "/maps/spec-sheets/ouaka"
+              },
+              {
+                "name": "Ouham",
+                "alias": "ouham",
+                "specSheet": "/maps/spec-sheets/ouham"
+              },
+              {
+                "name": "Ouham Pende",
+                "alias": "ouhampende",
+                "specSheet": "/maps/spec-sheets/ouhampende"
+              },
+              {
+                "name": "Sangha Mbaere",
+                "alias": "sanghambaere",
+                "specSheet": "/maps/spec-sheets/sanghambaere"
+              },
+              {
+                "name": "Vakaga",
+                "alias": "vakaga",
+                "specSheet": "/maps/spec-sheets/vakaga"
+              }
+            ]
           },
           {
             "name": "Chad",
@@ -8037,10 +9034,107 @@
             "markerData": "/maps/marker-data/gabon"
           },
           {
+            "name": "Gabon (Separate Provinces)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Estuaire (Libreville)",
+                "alias": "estuaire",
+                "specSheet": "/maps/spec-sheets/estuaire"
+              },
+              {
+                "name": "Haut-Ogooué (Franceville)",
+                "alias": "hautogooue",
+                "specSheet": "/maps/spec-sheets/hautogooue"
+              },
+              {
+                "name": "Moyen-Ogooué (Lambaréné)",
+                "alias": "moyenogooue",
+                "specSheet": "/maps/spec-sheets/moyenogooue"
+              },
+              {
+                "name": "Ngounié (Mouila)",
+                "alias": "ngounie",
+                "specSheet": "/maps/spec-sheets/ngounie"
+              },
+              {
+                "name": "Nyanga (Tchibanga)",
+                "alias": "nyanga",
+                "specSheet": "/maps/spec-sheets/nyanga"
+              },
+              {
+                "name": "Ogooué-Ivindo (Makokou)",
+                "alias": "ogooueivindo",
+                "specSheet": "/maps/spec-sheets/ogooueivindo"
+              },
+              {
+                "name": "Ogooué-Lolo (Koulamoutou)",
+                "alias": "ogoouelolo",
+                "specSheet": "/maps/spec-sheets/ogoouelolo"
+              },
+              {
+                "name": "Ogooué-Maritime (Port-Gentil)",
+                "alias": "ogoouemaritime",
+                "specSheet": "/maps/spec-sheets/ogoouemaritime"
+              },
+              {
+                "name": "Woleu-Ntem (Oyem)",
+                "alias": "woleuntem",
+                "specSheet": "/maps/spec-sheets/woleuntem"
+              }
+            ]
+          },
+          {
             "name": "Gambia",
             "alias": "gambia",
             "specSheet": "/maps/spec-sheets/gambia",
             "markerData": "/maps/marker-data/gambia"
+          },
+          {
+            "name": "Gambia (Separate Government Areas)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Banjul",
+                "alias": "banjul",
+                "specSheet": "/maps/spec-sheets/banjul"
+              },
+              {
+                "name": "Basse",
+                "alias": "basse",
+                "specSheet": "/maps/spec-sheets/basse"
+              },
+              {
+                "name": "Brikama",
+                "alias": "brikama",
+                "specSheet": "/maps/spec-sheets/brikama"
+              },
+              {
+                "name": "Janjanbureh",
+                "alias": "janjanbureh",
+                "specSheet": "/maps/spec-sheets/janjanbureh"
+              },
+              {
+                "name": "Kanifing",
+                "alias": "kanifing",
+                "specSheet": "/maps/spec-sheets/kanifing"
+              },
+              {
+                "name": "Kerewan",
+                "alias": "kerewan",
+                "specSheet": "/maps/spec-sheets/kerewan"
+              },
+              {
+                "name": "Kuntaur",
+                "alias": "kuntaur",
+                "specSheet": "/maps/spec-sheets/kuntaur"
+              },
+              {
+                "name": "Mansakonko",
+                "alias": "mansakonko",
+                "specSheet": "/maps/spec-sheets/mansakonko"
+              }
+            ]
           },
           {
             "name": "Ghana",
@@ -8049,16 +9143,123 @@
             "markerData": "/maps/marker-data/ghana"
           },
           {
+            "name": "Ghana (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Ashanti Region",
+                "alias": "ashanti",
+                "specSheet": "/maps/spec-sheets/ashanti"
+              },
+              {
+                "name": "Brong-Ahafo Region",
+                "alias": "brongahafo",
+                "specSheet": "/maps/spec-sheets/brongahafo"
+              },
+              {
+                "name": "Central Region",
+                "alias": "centralghana",
+                "specSheet": "/maps/spec-sheets/centralghana"
+              },
+              {
+                "name": "Eastern Region",
+                "alias": "easternghana",
+                "specSheet": "/maps/spec-sheets/easternghana"
+              },
+              {
+                "name": "Greater Accra Region",
+                "alias": "greateraccra",
+                "specSheet": "/maps/spec-sheets/greateraccra"
+              },
+              {
+                "name": "Northern Region",
+                "alias": "northernghana",
+                "specSheet": "/maps/spec-sheets/northernghana"
+              },
+              {
+                "name": "Upper East Region",
+                "alias": "uppereastghana",
+                "specSheet": "/maps/spec-sheets/uppereastghana"
+              },
+              {
+                "name": "Upper West Region",
+                "alias": "upperwestghana",
+                "specSheet": "/maps/spec-sheets/upperwestghana"
+              },
+              {
+                "name": "Volta Region",
+                "alias": "volta",
+                "specSheet": "/maps/spec-sheets/volta"
+              },
+              {
+                "name": "Western Region",
+                "alias": "westernghana",
+                "specSheet": "/maps/spec-sheets/westernghana"
+              }
+            ]
+          },
+          {
             "name": "Guinea",
             "alias": "guinea",
             "specSheet": "/maps/spec-sheets/guinea",
             "markerData": "/maps/marker-data/guinea"
           },
           {
-            "name": "Guinea-Bissau",
+            "name": "Guinea Bissau",
             "alias": "guineabissau",
             "specSheet": "/maps/spec-sheets/guineabissau",
             "markerData": "/maps/marker-data/guineabissau"
+          },
+          {
+            "name": "Guinea Bissau (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Bafata",
+                "alias": "bafata",
+                "specSheet": "/maps/spec-sheets/bafata"
+              },
+              {
+                "name": "Biombo",
+                "alias": "biombo",
+                "specSheet": "/maps/spec-sheets/biombo"
+              },
+              {
+                "name": "Bissau",
+                "alias": "bissau",
+                "specSheet": "/maps/spec-sheets/bissau"
+              },
+              {
+                "name": "Bolama",
+                "alias": "bolama",
+                "specSheet": "/maps/spec-sheets/bolama"
+              },
+              {
+                "name": "Cacheu",
+                "alias": "cacheu",
+                "specSheet": "/maps/spec-sheets/cacheu"
+              },
+              {
+                "name": "Gabu",
+                "alias": "gabu",
+                "specSheet": "/maps/spec-sheets/gabu"
+              },
+              {
+                "name": "Oio",
+                "alias": "oio",
+                "specSheet": "/maps/spec-sheets/oio"
+              },
+              {
+                "name": "Quinara",
+                "alias": "quinara",
+                "specSheet": "/maps/spec-sheets/quinara"
+              },
+              {
+                "name": "Tombali",
+                "alias": "tombali",
+                "specSheet": "/maps/spec-sheets/tombali"
+              }
+            ]
           },
           {
             "name": "Kenya",
@@ -8091,16 +9292,159 @@
             "markerData": "/maps/marker-data/malawi"
           },
           {
+            "name": "Malawi (Sub Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Central Region",
+                "alias": "centralmalawiregion",
+                "specSheet": "/maps/spec-sheets/centralmalawiregion"
+              },
+              {
+                "name": "Northern Region",
+                "alias": "northernmalawiregion",
+                "specSheet": "/maps/spec-sheets/northernmalawiregion"
+              },
+              {
+                "name": "Southern Region",
+                "alias": "southernmalawiregion",
+                "specSheet": "/maps/spec-sheets/southernmalawiregion"
+              }
+            ]
+          },
+          {
             "name": "Mali",
             "alias": "mali",
             "specSheet": "/maps/spec-sheets/mali",
             "markerData": "/maps/marker-data/mali"
           },
           {
+            "name": "Mali (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Bamako",
+                "alias": "bamako",
+                "specSheet": "/maps/spec-sheets/bamako"
+              },
+              {
+                "name": "Gao",
+                "alias": "gao",
+                "specSheet": "/maps/spec-sheets/gao"
+              },
+              {
+                "name": "Kayes",
+                "alias": "kayes",
+                "specSheet": "/maps/spec-sheets/kayes"
+              },
+              {
+                "name": "Kidal",
+                "alias": "kidal",
+                "specSheet": "/maps/spec-sheets/kidal"
+              },
+              {
+                "name": "Koulikoro",
+                "alias": "koulikoro",
+                "specSheet": "/maps/spec-sheets/koulikoro"
+              },
+              {
+                "name": "Mopti",
+                "alias": "mopti",
+                "specSheet": "/maps/spec-sheets/mopti"
+              },
+              {
+                "name": "Ségou",
+                "alias": "segou",
+                "specSheet": "/maps/spec-sheets/segou"
+              },
+              {
+                "name": "Sikasso",
+                "alias": "sikasso",
+                "specSheet": "/maps/spec-sheets/sikasso"
+              },
+              {
+                "name": "Tombouctou",
+                "alias": "tombouctou",
+                "specSheet": "/maps/spec-sheets/tombouctou"
+              }
+            ]
+          },
+          {
             "name": "Mauritania",
             "alias": "mauritania",
             "specSheet": "/maps/spec-sheets/mauritania",
             "markerData": "/maps/marker-data/mauritania"
+          },
+          {
+            "name": "Mauritania (Separate Regions)",
+            "marker": false,
+            "members": [
+            {
+                "name": "Adrar",
+                "alias": "adrar",
+                "specSheet": "/maps/spec-sheets/adrar"
+            },
+            {
+                "name": "Assaba",
+                "alias": "assaba",
+                "specSheet": "/maps/spec-sheets/assaba"
+            },
+            {
+                "name": "Brakna",
+                "alias": "brakna",
+                "specSheet": "/maps/spec-sheets/brakna"
+            },
+            {
+                "name": "DakhletNouadhibou",
+                "alias": "dakhletnouadhibou",
+                "specSheet": "/maps/spec-sheets/dakhletnouadhibou"
+            },
+            {
+                "name": "Gorgol",
+                "alias": "gorgol",
+                "specSheet": "/maps/spec-sheets/gorgol"
+            },
+            {
+                "name": "Guidimaka",
+                "alias": "guidimaka",
+                "specSheet": "/maps/spec-sheets/guidimaka"
+            },
+            {
+                "name": "HodhEchChargui",
+                "alias": "hodhechchargui",
+                "specSheet": "/maps/spec-sheets/hodhechchargui"
+            },
+            {
+                "name": "HodhElGharbi",
+                "alias": "hodhelgharbi",
+                "specSheet": "/maps/spec-sheets/hodhelgharbi"
+            },
+            {
+                "name": "Inchiri",
+                "alias": "inchiri",
+                "specSheet": "/maps/spec-sheets/inchiri"
+            },
+            {
+                "name": "Nouakchott",
+                "alias": "nouakchott",
+                "specSheet": "/maps/spec-sheets/nouakchott"
+            },
+            {
+                "name": "Tagant",
+                "alias": "tagant",
+                "specSheet": "/maps/spec-sheets/tagant"
+            },
+            {
+                "name": "TirisZemmour",
+                "alias": "tiriszemmour",
+                "specSheet": "/maps/spec-sheets/tiriszemmour"
+            },
+            {
+                "name": "Trarza",
+                "alias": "trarza",
+                "specSheet": "/maps/spec-sheets/trarza"
+            }
+            ]
           },
           {
             "name": "Mauritius",
@@ -8133,6 +9477,52 @@
             "markerData": "/maps/marker-data/niger"
           },
           {
+            "name": "Niger (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Agadez",
+                "alias": "agadez",
+                "specSheet": "/maps/spec-sheets/agadez"
+              },
+              {
+                "name": "Diffa",
+                "alias": "diffa",
+                "specSheet": "/maps/spec-sheets/diffa"
+              },
+              {
+                "name": "Dosso",
+                "alias": "dosso",
+                "specSheet": "/maps/spec-sheets/dosso"
+              },
+              {
+                "name": "Maradi",
+                "alias": "maradi",
+                "specSheet": "/maps/spec-sheets/maradi"
+              },
+              {
+                "name": "Niamey (capital district)",
+                "alias": "niamey",
+                "specSheet": "/maps/spec-sheets/niamey"
+              },
+              {
+                "name": "Tahoua",
+                "alias": "tahoua",
+                "specSheet": "/maps/spec-sheets/tahoua"
+              },
+              {
+                "name": "Tillabéri",
+                "alias": "tillaberi",
+                "specSheet": "/maps/spec-sheets/tillaberi"
+              },
+              {
+                "name": "Zinder",
+                "alias": "zinder",
+                "specSheet": "/maps/spec-sheets/zinder"
+              }
+            ]
+          },
+          {
             "name": "Nigeria",
             "alias": "nigeria",
             "specSheet": "/maps/spec-sheets/nigeria",
@@ -8155,6 +9545,82 @@
             "alias": "senegal",
             "specSheet": "/maps/spec-sheets/senegal",
             "markerData": "/maps/marker-data/senegal"
+          },
+          {
+            "name": "Senegal (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Dakar",
+                "alias": "dakar",
+                "specSheet": "/maps/spec-sheets/dakar"
+              },
+              {
+                "name": "Diourbel",
+                "alias": "diourbel",
+                "specSheet": "/maps/spec-sheets/diourbel"
+              },
+              {
+                "name": "Kaffrine",
+                "alias": "kaffrine",
+                "specSheet": "/maps/spec-sheets/kaffrine"
+              },
+              {
+                "name": "Kaolack",
+                "alias": "kaolack",
+                "specSheet": "/maps/spec-sheets/kaolack"
+              },
+              {
+                "name": "Kedougou",
+                "alias": "kedougou",
+                "specSheet": "/maps/spec-sheets/kedougou"
+              },
+              {
+                "name": "Kolda",
+                "alias": "kolda",
+                "specSheet": "/maps/spec-sheets/kolda"
+              },
+              {
+                "name": "Louga",
+                "alias": "louga",
+                "specSheet": "/maps/spec-sheets/louga"
+              },
+              {
+                "name": "Matam",
+                "alias": "matam",
+                "specSheet": "/maps/spec-sheets/matam"
+              },
+              {
+                "name": "Saint Louis",
+                "alias": "saintlouis",
+                "specSheet": "/maps/spec-sheets/saintlouis"
+              },
+              {
+                "name": "Sedhiou",
+                "alias": "sedhiou",
+                "specSheet": "/maps/spec-sheets/sedhiou"
+              },
+              {
+                "name": "Senegal Departments",
+                "alias": "senegaldepartments",
+                "specSheet": "/maps/spec-sheets/senegaldepartments"
+              },
+              {
+                "name": "Tambacounda",
+                "alias": "tambacounda",
+                "specSheet": "/maps/spec-sheets/tambacounda"
+              },
+              {
+                "name": "Thiès",
+                "alias": "thies",
+                "specSheet": "/maps/spec-sheets/thies"
+              },
+              {
+                "name": "Ziguinchor",
+                "alias": "ziguinchor",
+                "specSheet": "/maps/spec-sheets/ziguinchor"
+              }
+            ]
           },
           {
             "name": "Seychelles",
@@ -8208,6 +9674,37 @@
             "alias": "uganda",
             "specSheet": "/maps/spec-sheets/uganda",
             "markerData": "/maps/marker-data/uganda"
+          },
+          {
+            "name": "Uganda Regions",
+            "alias": "ugandaregions",
+            "specSheet": "/maps/spec-sheets/ugandaregions"
+          },
+          {
+            "name": "Uganda (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Central Uganda",
+                "alias": "centraluganda",
+                "specSheet": "/maps/spec-sheets/centraluganda"
+              },
+              {
+                "name": "Western Uganda",
+                "alias": "westernuganda",
+                "specSheet": "/maps/spec-sheets/westernuganda"
+              },
+              {
+                "name": "Eastern Uganda",
+                "alias": "easternuganda",
+                "specSheet": "/maps/spec-sheets/easternuganda"
+              },
+              {
+                "name": "Northern Uganda",
+                "alias": "northernuganda",
+                "specSheet": "/maps/spec-sheets/northernuganda"
+              }
+            ]
           },
           {
             "name": "Western Sahara",
@@ -8353,6 +9850,158 @@
         "specSheet": "/maps/spec-sheets/madagascarregions"
       },
       {
+        "name": "Madagascar (Separate Provinces)",
+        "marker": false,
+        "members": [
+          {
+            "name": "Antananarivo",
+            "alias": "antananarivo",
+            "specSheet": "/maps/spec-sheets/antananarivo"
+          },
+          {
+            "name": "Antsiranana",
+            "alias": "antsiranana",
+            "specSheet": "/maps/spec-sheets/antsiranana"
+          },
+          {
+            "name": "Fianarantsoa",
+            "alias": "fianarantsoa",
+            "specSheet": "/maps/spec-sheets/fianarantsoa"
+          },
+          {
+            "name": "Mahajanga",
+            "alias": "mahajanga",
+            "specSheet": "/maps/spec-sheets/mahajanga"
+          },
+          {
+            "name": "Toamasina",
+            "alias": "toamasina",
+            "specSheet": "/maps/spec-sheets/toamasina"
+          },
+          {
+            "name": "Toliara",
+            "alias": "toliara",
+            "specSheet": "/maps/spec-sheets/toliara"
+          }
+        ]
+      },
+      {
+        "name": "Madagascar (Separate Regions)",
+        "marker": false,
+        "members": [
+          {
+            "name": "Alaotra Mangoro",
+            "alias": "alaotramangoro",
+            "specSheet": "/maps/spec-sheets/alaotramangoro"
+          },
+          {
+            "name": "AmoroniMania",
+            "alias": "amoronimania",
+            "specSheet": "/maps/spec-sheets/amoronimania"
+          },
+          {
+            "name": "Analamanga",
+            "alias": "analamanga",
+            "specSheet": "/maps/spec-sheets/analamanga"
+          },
+          {
+            "name": "Analanjirofo",
+            "alias": "analanjirofo",
+            "specSheet": "/maps/spec-sheets/analanjirofo"
+          },
+          {
+            "name": "Androy",
+            "alias": "androy",
+            "specSheet": "/maps/spec-sheets/androy"
+          },
+          {
+            "name": "Anosy",
+            "alias": "anosy",
+            "specSheet": "/maps/spec-sheets/anosy"
+          },
+          {
+            "name": "AtsimoAndrefana",
+            "alias": "atsimoandrefana",
+            "specSheet": "/maps/spec-sheets/atsimoandrefana"
+          },
+          {
+            "name": "AtsimoAtsinanana",
+            "alias": "atsimoatsinanana",
+            "specSheet": "/maps/spec-sheets/atsimoatsinanana"
+          },
+          {
+            "name": "Atsinanana",
+            "alias": "atsinanana",
+            "specSheet": "/maps/spec-sheets/atsinanana"
+          },
+          {
+            "name": "Betsiboka",
+            "alias": "betsiboka",
+            "specSheet": "/maps/spec-sheets/betsiboka"
+          },
+          {
+            "name": "Boeny",
+            "alias": "boeny",
+            "specSheet": "/maps/spec-sheets/boeny"
+          },
+          {
+            "name": "Bongolava",
+            "alias": "bongolava",
+            "specSheet": "/maps/spec-sheets/bongolava"
+          },
+          {
+            "name": "Diana",
+            "alias": "diana",
+            "specSheet": "/maps/spec-sheets/diana"
+          },
+          {
+            "name": "Haute Matsiatra",
+            "alias": "hautematsiatra",
+            "specSheet": "/maps/spec-sheets/hautematsiatra"
+          },
+          {
+            "name": "Ihorombe",
+            "alias": "ihorombe",
+            "specSheet": "/maps/spec-sheets/ihorombe"
+          },
+          {
+            "name": "Itasy",
+            "alias": "itasy",
+            "specSheet": "/maps/spec-sheets/itasy"
+          },
+          {
+            "name": "Melaky",
+            "alias": "melaky",
+            "specSheet": "/maps/spec-sheets/melaky"
+          },
+          {
+            "name": "Menabe",
+            "alias": "menabe",
+            "specSheet": "/maps/spec-sheets/menabe"
+          },
+          {
+            "name": "Sava",
+            "alias": "sava",
+            "specSheet": "/maps/spec-sheets/sava"
+          },
+          {
+            "name": "Sofia",
+            "alias": "sofia",
+            "specSheet": "/maps/spec-sheets/sofia"
+          },
+          {
+            "name": "Vakinankaratra",
+            "alias": "vakinankaratra",
+            "specSheet": "/maps/spec-sheets/vakinankaratra"
+          },
+          {
+            "name": "VatovavyFitovinany",
+            "alias": "vatovavyfitovinany",
+            "specSheet": "/maps/spec-sheets/vatovavyfitovinany"
+          }
+        ]
+      },
+      {
         "name": "Sudan",
         "alias": "sudan",
         "specSheet": "/maps/spec-sheets/sudan"
@@ -8451,6 +10100,182 @@
             "name": "Ismailia",
             "alias": "ismailia",
             "specSheet": "/maps/spec-sheets/ismailia"
+          },
+          {
+            "name": "Ivory Coast",
+            "alias": "ivorycoastregions",
+            "specSheet": "/maps/spec-sheets/ivorycoastregions"
+          },
+          {
+            "name": "Ivory Coast (Separate Regions)",
+            "marker": false,
+            "members": [
+              {
+                "name": "Abidjan Autonomous District",
+                "alias": "abidjanautonomousdistrict",
+                "specSheet": "/maps/spec-sheets/abidjanautonomousdistrict"
+              },
+              {
+                "name": "AgnebyTiassa",
+                "alias": "agnebytiassa",
+                "specSheet": "/maps/spec-sheets/agnebytiassa"
+              },
+              {
+                "name": "Bafing",
+                "alias": "bafing",
+                "specSheet": "/maps/spec-sheets/bafing"
+              },
+              {
+                "name": "Bagoue",
+                "alias": "bagoue",
+                "specSheet": "/maps/spec-sheets/bagoue"
+              },
+              {
+                "name": "Belier",
+                "alias": "belier",
+                "specSheet": "/maps/spec-sheets/belier"
+              },
+              {
+                "name": "Bere",
+                "alias": "bere",
+                "specSheet": "/maps/spec-sheets/bere"
+              },
+              {
+                "name": "Bounkani",
+                "alias": "bounkani",
+                "specSheet": "/maps/spec-sheets/bounkani"
+              },
+              {
+                "name": "Cavally",
+                "alias": "cavally",
+                "specSheet": "/maps/spec-sheets/cavally"
+              },
+              {
+                "name": "Folon",
+                "alias": "folon",
+                "specSheet": "/maps/spec-sheets/folon"
+              },
+              {
+                "name": "Gbeke",
+                "alias": "gbeke",
+                "specSheet": "/maps/spec-sheets/gbeke"
+              },
+              {
+                "name": "Gbokle",
+                "alias": "gbokle",
+                "specSheet": "/maps/spec-sheets/gbokle"
+              },
+              {
+                "name": "Goh",
+                "alias": "goh",
+                "specSheet": "/maps/spec-sheets/goh"
+              },
+              {
+                "name": "Gontougo",
+                "alias": "gontougo",
+                "specSheet": "/maps/spec-sheets/gontougo"
+              },
+              {
+                "name": "GrandsPonts",
+                "alias": "grandsponts",
+                "specSheet": "/maps/spec-sheets/grandsponts"
+              },
+              {
+                "name": "Guemon",
+                "alias": "guemon",
+                "specSheet": "/maps/spec-sheets/guemon"
+              },
+              {
+                "name": "Hambol",
+                "alias": "hambol",
+                "specSheet": "/maps/spec-sheets/hambol"
+              },
+              {
+                "name": "HautSassandra",
+                "alias": "hautsassandra",
+                "specSheet": "/maps/spec-sheets/hautsassandra"
+              },
+              {
+                "name": "Iffou",
+                "alias": "iffou",
+                "specSheet": "/maps/spec-sheets/iffou"
+              },
+              {
+                "name": "IndenieDjuablin",
+                "alias": "indeniedjuablin",
+                "specSheet": "/maps/spec-sheets/indeniedjuablin"
+              },
+              {
+                "name": "Kabadougou",
+                "alias": "kabadougou",
+                "specSheet": "/maps/spec-sheets/kabadougou"
+              },
+              {
+                "name": "La Me",
+                "alias": "la me",
+                "specSheet": "/maps/spec-sheets/la me"
+              },
+              {
+                "name": "Loh Djiboua",
+                "alias": "lohdjiboua",
+                "specSheet": "/maps/spec-sheets/lohdjiboua"
+              },
+              {
+                "name": "Marahoue",
+                "alias": "marahoue",
+                "specSheet": "/maps/spec-sheets/marahoue"
+              },
+              {
+                "name": "Moronou",
+                "alias": "moronou",
+                "specSheet": "/maps/spec-sheets/moronou"
+              },
+              {
+                "name": "Nawa",
+                "alias": "nawa",
+                "specSheet": "/maps/spec-sheets/nawa"
+              },
+              {
+                "name": "NZi",
+                "alias": "nzi",
+                "specSheet": "/maps/spec-sheets/nzi"
+              },
+              {
+                "name": "Poro",
+                "alias": "poro",
+                "specSheet": "/maps/spec-sheets/poro"
+              },
+              {
+                "name": "San Pedro",
+                "alias": "sanpedro",
+                "specSheet": "/maps/spec-sheets/sanpedro"
+              },
+              {
+                "name": "Sud Comoe",
+                "alias": "sudcomoe",
+                "specSheet": "/maps/spec-sheets/sudcomoe"
+              },
+              {
+                "name": "Tchologo",
+                "alias": "tchologo",
+                "specSheet": "/maps/spec-sheets/tchologo"
+              },
+              {
+                "name": "Tonkpi",
+                "alias": "tonkpi",
+                "specSheet": "/maps/spec-sheets/tonkpi"
+              },
+              {
+                "name": "Worodougou",
+                "alias": "worodougou",
+                "specSheet": "/maps/spec-sheets/worodougou"
+              },
+              {
+                "name": "Yamoussoukro Autonomous District",
+                "alias": "yamoussoukroautonomousdistrict",
+                "specSheet": "/maps/spec-sheets/yamoussoukroautonomousdistrict"
+              }
+            ]
           },
           {
             "name": "Kafr el-Sheikh",

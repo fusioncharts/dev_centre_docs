@@ -1,7 +1,7 @@
 ---
-title: Create a Gauge using FusionCharts | FusionCharts
+title: Create a Gauge Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first gauge using the plain javascript.
-heading: Create a Gauge using FusionCharts
+heading: Create a Gauge Using FusionCharts
 ---
 
 **FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
@@ -21,7 +21,7 @@ Install **FusionCharts** using any of the following steps:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<div><strong>To install the `fusioncharts` package via  npm run the command below:</strong></div>
+<div><strong>To install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-PowerShell">
     $ npm install fusioncharts
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -39,9 +39,9 @@ Install **FusionCharts** using any of the following steps:
 <div>The code is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
+    &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Step 2 - Including the fusion theme --&gt;
+    &lt;!-- Step 2 - Include the fusion theme --&gt;
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -59,9 +59,9 @@ Install **FusionCharts** using any of the following steps:
 <div>The code is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
+    &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including the fusion theme --&gt;
+    &lt;!-- Step 2 - Include the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -73,7 +73,7 @@ Install **FusionCharts** using any of the following steps:
 
 That completes the installation of **FusionCharts** Suite.
 
-## Create your first gauge
+## Create Your First Gauge
 
 Gauges are powerful tools that can showcase information using a radial or linear scale to display data.
 
@@ -85,9 +85,9 @@ The angular gauge is shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-## Chart data
+## Chart Data
 
-The thresholds for the above sample is shown in the table below:
+The thresholds for the above sample are shown in the table below:
 
 | Range | Color | Hex Code |
 | ----- | ----- | -------- ||
@@ -95,9 +95,9 @@ The thresholds for the above sample is shown in the table below:
 | 50-75 | Yellow | #FFC533 |
 | 75-100 | Green | #62B58F |
 
-So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
+So, any score less than 50 is bad and is shown in red color. Any score between 50 and 75 is average and is shown in yellow color. Any score above 75 means good and is shown in green color.
 
-FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
+FusionCharts accepts data in **JSON** format. The following code is the JSON representation of the above table with the required attributes to render the above chart.
 
 ```json
 {
@@ -157,9 +157,9 @@ In the above JSON:
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
-Now that you have the data in JSON format, let's see how to render the chart.
+Now that you have the data in JSON format, let's render the gauge.
 
-## Render the gauge
+## Render the Gauge﻿
 
 To render the gauge, follow the steps below:
 
@@ -169,11 +169,11 @@ To render the gauge, follow the steps below:
 
 3. Include the FusionCharts theme file to apply style to the charts.
 
-4. Add the gauge and theme as a dependency to the core.
+4. Add the gauge and the theme as dependencies to the core.
 
 5. Store the chart configurations in a JSON object. In this JSON object:
 
-   - Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
+   - Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
    - Set the width and height (in pixels).
    - Set the `dataFormat` as JSON.
    - Embed the json data as the value of the `dataSource`.
@@ -219,7 +219,7 @@ type: 'angulargauge', // The gauge type
 width: '450', // Width of the gauge
 height: '250', // Height of the gauge
 dataFormat: 'json', // Data type
-renderAt:'chart-container', //container where the chart will render
+renderAt:'chart-container', //Container where the chart will render
 dataSource: {
 // Gauge Configuration
 "chart": {
@@ -279,7 +279,7 @@ type: 'angulargauge', // The gauge type
 width: '450', // Width of the gauge
 height: '250', // Height of the gauge
 dataFormat: 'json', // Data type
-renderAt:'chart-container', //container where the chart will render
+renderAt:'chart-container', //Container where the gauge will render
 dataSource: {
 // Gauge Configuration
 "chart": {
@@ -452,7 +452,7 @@ gaugeInstance.render();
 
 That's it! Your first gauge using Plain JavaScript is ready.
 
-## Problem rendering the chart?
+## Problem Rendering the Chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 

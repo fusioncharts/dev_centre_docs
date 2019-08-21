@@ -7,13 +7,8 @@
 Map Name: Alminya
 Dimensions (Width x Height): 838x262
 
-
-
-
-
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-01|AM|Al-minya
-
+| ID  | Short label | Label    |
+| --- | ----------- | -------- |
+| 01  | AM          | Al-minya |
