@@ -6,7 +6,7 @@
       "contentGroup": [
          {
             "itemHeader": "Stacked Chart",
-            "imgSrc": "heat-map-chart-anatomy.png",
+            "imgSrc": "stacked-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
