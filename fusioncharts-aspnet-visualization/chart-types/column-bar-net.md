@@ -47,7 +47,15 @@ Create the `FirstChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+<pre><code class="language-php">
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -105,7 +113,63 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab local-tab'>
+<pre><code class="language-php">
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class FirstChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            If True Then
+                Dim ChartData As DataTable = New DataTable()
+                ChartData.Columns.Add("Programming Language", GetType(System.String))
+                ChartData.Columns.Add("Users", GetType(System.Double))
+                ChartData.Rows.Add("Java", 62000)
+                ChartData.Rows.Add("Python", 46000)
+                ChartData.Rows.Add("Javascript", 38000)
+                ChartData.Rows.Add("C++", 31000)
+                ChartData.Rows.Add("C#", 27000)
+                ChartData.Rows.Add("PHP", 14000)
+                ChartData.Rows.Add("Perl", 14000)
+                Dim source As StaticSource = New StaticSource(ChartData)
+                Dim model As DataModel = New DataModel()
+                model.DataSources.Add(source)
+                Dim column As Charts.ColumnChart = New Charts.ColumnChart("first_chart")
+                column.Width.Pixel(700)
+                column.Height.Pixel(400)
+                column.Data.Source = model
+                column.Caption.Text = "Most popular programming language"
+                column.SubCaption.Text = "2017-2018"
+                column.Legend.Show = False
+                column.XAxis.Text = "Programming Language"
+                column.YAxis.Text = "User"
+                column.ThemeName = FusionChartsTheme.ThemeName.FUSION
+                Literal1.Text = column.Render()
+            End If
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
