@@ -254,7 +254,15 @@ Create the `ScrollColumnChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
@@ -317,7 +325,79 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class ScrollChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim ChartData As DataTable = New DataTable()
+            ChartData.Columns.Add("Month", GetType(System.String))
+            ChartData.Columns.Add("Revenue", GetType(System.Double))
+            ChartData.Rows.Add("Jan 2016", 27400)
+            ChartData.Rows.Add("Feb 2016", 29800)
+            ChartData.Rows.Add("Mar 2016", 25800)
+            ChartData.Rows.Add("Apr 2016", 26800)
+            ChartData.Rows.Add("May 2016", 29600)
+            ChartData.Rows.Add("Jun 2016", 32600)
+            ChartData.Rows.Add("Jul 2016", 31800)
+            ChartData.Rows.Add("Aug 2016", 36700)
+            ChartData.Rows.Add("Sep 2016", 29700)
+            ChartData.Rows.Add("Oct 2016", 31900)
+            ChartData.Rows.Add("Nov 2016", 34800)
+            ChartData.Rows.Add("Dec 2016", 24800)
+            ChartData.Rows.Add("Jan 2017", 26300)
+            ChartData.Rows.Add("Feb 2017", 31800)
+            ChartData.Rows.Add("Mar 2017", 30900)
+            ChartData.Rows.Add("Apr 2017", 33000)
+            ChartData.Rows.Add("May 2017", 36200)
+            ChartData.Rows.Add("Jun 2017", 32100)
+            ChartData.Rows.Add("Jul 2017", 37500)
+            ChartData.Rows.Add("Aug 2017", 38500)
+            ChartData.Rows.Add("Sep 2017", 35400)
+            ChartData.Rows.Add("Oct 2017", 38200)
+            ChartData.Rows.Add("Nov 2017", 33300)
+            ChartData.Rows.Add("Dec 2017", 38300)
+            Dim source As StaticSource = New StaticSource(ChartData)
+            Dim model As DataModel = New DataModel()
+            model.DataSources.Add(source)
+            Dim column As Charts.ColumnChart = New Charts.ColumnChart("scroll_chart_db")
+            column.Scrollable = True
+            column.Data.Source = model
+            column.Caption.Text = "Sales Trends"
+            column.SubCaption.Text = "2016-2017"
+            column.XAxis.Text = "Month"
+            column.YAxis.Text = "Revenue"
+            column.Width.Pixel(600)
+            column.Height.Pixel(500)
+            column.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = column.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
@@ -389,7 +469,15 @@ Create the `OverlappedChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
@@ -441,7 +529,68 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class OverlappedChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim ChartData As DataTable = New DataTable()
+            ChartData.Columns.Add("Team", GetType(System.String))
+            ChartData.Columns.Add("Matches", GetType(System.Double))
+            ChartData.Columns.Add("Wins", GetType(System.Double))
+            ChartData.Rows.Add("Boston Red Sox", 88, 57)
+            ChartData.Rows.Add("New York Yankees", 84, 54)
+            ChartData.Rows.Add("Tampa Bay Rays", 86, 42)
+            ChartData.Rows.Add("Toronto Blue Jays", 86, 39)
+            ChartData.Rows.Add("Baltimore Orioles", 85, 24)
+            ChartData.Rows.Add("Cleveland Indians", 85, 46)
+            ChartData.Rows.Add("Detroit Tigers", 88, 38)
+            ChartData.Rows.Add("Minnesota Twins", 83, 35)
+            ChartData.Rows.Add("Chicago White Sox", 86, 29)
+            ChartData.Rows.Add("Kansas City Royals", 86, 25)
+            Dim source As StaticSource = New StaticSource(ChartData)
+            Dim model As DataModel = New DataModel()
+            model.DataSources.Add(source)
+            Dim OverlappedColumn As Charts.ColumnChart = New Charts.ColumnChart("overlapped_chart_db")
+            OverlappedColumn.Overlapped = True
+            OverlappedColumn.Data.Source = model
+            OverlappedColumn.Caption.Text = "Major League Baseball - Season Rankings"
+            OverlappedColumn.SubCaption.Text = "Teams in the Lead"
+            OverlappedColumn.Caption.Text = "Major league Baseball-Season Rankings"
+            OverlappedColumn.SubCaption.Text = "Teams in the lead"
+            OverlappedColumn.XAxis.Text = "Position"
+            OverlappedColumn.YAxis.Text = "Team"
+            OverlappedColumn.Width.Pixel(600)
+            OverlappedColumn.Height.Pixel(500)
+            OverlappedColumn.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = column.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
@@ -457,7 +606,7 @@ The `.aspx` template for the above sample is shown below:
     <form id="form1" runat="server">
         <div>
             <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
-        </div>        
+        </div>
     </form>
 </body>
 </html>
@@ -467,7 +616,15 @@ The `.aspx` template for the above sample is shown below:
 
 Now, let's learn how to create a bar chart with the same data. The code remains the same as that of the column chart. The only difference is instead of instantiating a column chart you have to instantiate a bar chart. Create a `barChart.aspx.cs` and refer to the code below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -522,11 +679,61 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class FirstChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim ChartData As DataTable = New DataTable()
+            ChartData.Columns.Add("Programming Language", GetType(System.String))
+            ChartData.Columns.Add("Users", GetType(System.Double))
+            ChartData.Rows.Add("Java", 62000)
+            ChartData.Rows.Add("Python", 46000)
+            ChartData.Rows.Add("Javascript", 38000)
+            ChartData.Rows.Add("C++", 31000)
+            ChartData.Rows.Add("C#", 27000)
+            ChartData.Rows.Add("PHP", 14000)
+            ChartData.Rows.Add("Perl", 14000)
+            Dim source As StaticSource = New StaticSource(ChartData)
+            Dim model As DataModel = New DataModel()
+            model.DataSources.Add(source)
+            Dim bar As Charts.BarChart = New Charts.BarChart("bar_chart")
+            bar.Width.Pixel(500)
+            bar.Height.Pixel(400)
+            bar.Data.Source = model
+            bar.Caption.Text = "Most popular programming language"
+            bar.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = column.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
-``` 
+```html
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
