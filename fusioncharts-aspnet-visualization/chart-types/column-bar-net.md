@@ -55,7 +55,7 @@ The code is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab csharp-tab active'>
-<pre><code class="language-php">
+<pre><code class="language-csharp">
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -119,7 +119,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 </div>
 
 <div class='tab vb-tab'>
-<pre><code class="language-php">
+<pre><code class="language-csharp">
 Imports System
 Imports System.Collections.Generic
 Imports System.Data
