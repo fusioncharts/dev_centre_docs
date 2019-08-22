@@ -49,12 +49,12 @@ The code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='local'>Local Files</a></li>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab cdn-tab active'>
+<div class='tab csharp-tab active'>
 <pre><code class="language-php">
 using System;
 using System.Collections.Generic;
@@ -118,7 +118,7 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 </pre>
 </div>
 
-<div class='tab local-tab'>
+<div class='tab vb-tab'>
 <pre><code class="language-php">
 Imports System
 Imports System.Collections.Generic
