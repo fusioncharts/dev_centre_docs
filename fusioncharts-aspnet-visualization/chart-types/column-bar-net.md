@@ -754,7 +754,6 @@ The `.aspx` template for the above sample is shown below:
     </form>
 </body>
 </html>
-
 ```
 
 The chart will look as shown below:
