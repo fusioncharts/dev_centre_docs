@@ -1,12 +1,12 @@
 ---
 title: Create a chart using Razor Page | FusionCharts
-description: This article outlines the steps to create chart using razor page
+description: This article outlines the steps to create a chart using razor page
 heading: Create a chart using Razor Page
 ---
 
 ASP.NET core Razor page is a page-focused framework for building data-driven, dynamic web applications. Razor pages are mostly used for cross-platform development. FusionCharts.NET allows you to render charts using the razor page.
 
-Now, ;et's create a Column 2D chart showing the "Most popular programming language".
+Now, let's create a Column 2D chart showing the **Most popular programming language**.
 
 The chart will look as shown below:
 
@@ -20,7 +20,7 @@ Now, let's see how to render the chart using Razor page.
 
 To render the chart using razor page, following the steps given below:
 
-- In the ASP.NET core web applicaion, add a razor page named `index.cshtml`.
+- In the ASP.NET core web application, add a razor page named `index.cshtml`.
 
 - Add the following code to the above create razor page:
 
