@@ -372,7 +372,7 @@ FusionCharts.Net has the ability to export the rendered charts in JPG, PNG, SVG,
 
 ### `Palette Colors`
 
-`PaletteColors` allows you to specify your custom list of hex colors for the visualization. The list of colors have to be separated from comma, e.g., "#5d62b5", "#afafaf", "#f2726", "#ffc533", "#62b58f", "#afafaf". The chart will cycle through the list of specified colors and then render the chart accordingly.
+`PaletteColors` allows you to specify your custom list of hex colors for the visualization. The list of colors have to be separated from comma, e.g., `"#5d62b5", "#afafaf", "#f2726", "#ffc533", "#62b58f", "#afafaf"`. The chart will cycle through the list of specified colors and then render the chart accordingly.
 
 **Syntax**
 
