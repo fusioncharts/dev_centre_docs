@@ -12,8 +12,8 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "42.5%",
-                  "topPosition": "10%",
+                  "leftPosition": "68%",
+                  "topPosition": "30.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
@@ -33,8 +33,8 @@
                   "annotationName": "Sub-caption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "67%",
-                  "topPosition": "14%",
+                  "leftPosition": "52%",
+                  "topPosition": "75%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
@@ -50,8 +50,8 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "86%",
-                  "topPosition": "35%",
+                  "leftPosition": "78%",
+                  "topPosition": "25%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
@@ -61,51 +61,6 @@
                         "linkPath": "/chart-guide/chart-configurations/canvas#use-gradient-fill"
                      }
                   ]
-               },
-               {
-                  "annotationNumber": "4",
-                  "annotationName": "X-Axis",
-                  "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "21%",
-                  "topPosition": "55%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "5",
-                  "annotationName": "X-Axis Title",
-                  "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "45.5%",
-                  "topPosition": "63%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "6",
-                  "annotationName": "X-Axis Labels",
-                  "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "79%",
-                  "topPosition": "55%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "7",
-                  "annotationName": "Y-Axis",
-                  "annotationDesc": "Y-Axis refers to line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "19%",
-                  "topPosition": "20%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "8",
-                  "annotationName": "Y-Axis Title",
-                  "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "5.5%",
-                  "topPosition": "36%",
-                  "annotationLinks": []
                },
                {
                   "annotationNumber": "9",
