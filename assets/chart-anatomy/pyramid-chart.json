@@ -5,8 +5,8 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Heatmap Chart",
-            "imgSrc": "heat-map-chart-anatomy.png",
+            "itemHeader": "Pyramid Chart",
+            "imgSrc": "pyramid-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
