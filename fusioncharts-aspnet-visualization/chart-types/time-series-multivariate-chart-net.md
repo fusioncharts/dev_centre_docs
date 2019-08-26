@@ -253,5 +253,3 @@ Refer to the code given below:
   </body>
 </html>
 ```
-
-##
