@@ -42,7 +42,15 @@ Create the `FunnelChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.Visualization;
 using FusionCharts.DataEngine;
 using System;
@@ -84,7 +92,58 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.Visualization
+Imports FusionCharts.DataEngine
+Imports System
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports System.Data
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class FunnelChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim ChartData As DataTable = New DataTable()
+            ChartData.Columns.Add("Label", GetType(System.String))
+            ChartData.Columns.Add("Value", GetType(System.Double))
+            ChartData.Rows.Add("Unique Website Visits", 1460000)
+            ChartData.Rows.Add("Programme Details Section Visits", 930000)
+            ChartData.Rows.Add("Attempts to Register", 540000)
+            ChartData.Rows.Add("Successful Registrations", 210000)
+            ChartData.Rows.Add("Logged In", 190000)
+            ChartData.Rows.Add("Purchased on Introductory Offers", 120000)
+            Dim source As StaticSource = New StaticSource(ChartData)
+            Dim model As DataModel = New DataModel()
+            model.DataSources.Add(source)
+            Dim funnel As Widget.FunnelChart = New Widget.FunnelChart("first_Funnel_chart")
+            funnel.Data.Source = model
+            funnel.Caption.Text = "Visit to purchase analysis"
+            funnel.Caption.Text = "Harry's Supermart"
+            funnel.SubCaption.Text = "Visit to purchase- Conversion Analysis for last year"
+            funnel.Width.Pixel(600)
+            funnel.Height.Pixel(400)
+            funnel.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = column.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 

@@ -1,30 +1,31 @@
 ---
-title: Create Time-series chart | FusionCharts
-description: This article outlines the steps to create time-series chart.
-heading: Create Time-series chart
+title: Add Multiple Data Plots | FusionCharts
+description: This article outlines the steps to add multiple data plots to a time-series chart.
+heading: Add Multiple Data Plots
 ---
 
-Let's create a time-series chart showing the **Online sales of a SuperStore**.
+Previously, we have learned how to create a [simple chart](/fusiontime/getting-started/create-your-first-chart-in-fusiontime) with one data plot. FusionTime allows you to visualize charts with multiple plots.
 
-The chart will look as shown below:
+In this article, we'll create our first chart with multiple plots which will compare online sales of SuperStore in the **US** and **India**.
 
-{% embed_ftChart online-sales-single-series %}
+The chart is shown below:
 
-The sample [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv) for the above chart is shown in the table below:
+{% embed_ftChart online-sales-multi-series %}
 
-| Time     | Sales   |
-| -------- | ------- |
-| 1/4/2011 | 16.448  |
-| 1/5/2011 | 272.736 |
-| 1/5/2011 | 11.784  |
-| 1/5/2011 | 3.54    |
-| 1/6/2011 | 19.536  |
-| 1/7/2011 | 2573.82 |
-| 1/7/2011 | 609.98  |
+The sample data for the above chart is shown in the table below:
 
-Click here to view the full data.
+| Country       | Time       | Sales  |
+| ------------- | ---------- | ------ |
+| United States | 1/4/2011   | 16.448 |
+| United States | 1/5/2011   | 72.736 |
+| United States | 1/5/2011   | 11.784 |
+| India         | 12/31/2014 | 364.59 |
+| India         | 12/31/2014 | 72     |
+| India         | 12/31/2014 | 39.42  |
 
-## Render the Chart
+Click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiSeries.csv) to view the full data.
+
+## Render the chart
 
 Now that you have the data handy, let's build the chart.
 
@@ -78,7 +79,7 @@ namespace FcTest
             DataModel model = new DataModel();
 
             /* create instance of MsSqlClass */
-            CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv");
+            CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiSeries.csv");
 
             /* add msSql object to DataSources of model */
             model.DataSources.Add(source);
@@ -116,7 +117,7 @@ Namespace FcTest
 
         Public Sub ProcessRequest(ByVal context As HttpContext)
             Dim model As DataModel = New DataModel()
-            Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv")
+            Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiSeries.csv")
             model.DataSources.Add(source)
             context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model))
         End Sub
@@ -135,7 +136,7 @@ End Namespace
 </div>
 </div>
 
-Next, create the FirstTimeSeries.cs file and do the following:
+Next, create the `MultipleDataplot.aspx.cs` or `MultipleDataplot.aspx.vb` file and do the following:
 
 - Include the FusionCharts.Visualization .dll file.
 
@@ -154,6 +155,7 @@ Next, create the FirstTimeSeries.cs file and do the following:
 
 <div class='tab csharp-tab active'>
 <pre><code class="language-csharp">
+using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
 using System.Collections.Generic;
@@ -162,18 +164,19 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json;
 
-namespace TestProject
+namespace FcTest
 {
-    public partial class FirstTimeSeries: System.Web.UI.Page
+    public partial class ChartTest : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             Charts.TimeSeriesChart timeSeries = new Charts.TimeSeriesChart("first_timeseries");
-            timeSeries.Data.SourcePathHandler = "DataHandler.ashx";
+            timeSeries.Data.SourcePathHandler = @"DataHandler.ashx";
+            timeSeries.Width.Pixel(700);
+            timeSeries.Height.Pixel(500);
+            timeSeries.SeriesName = "Country";
+            timeSeries.YAxes.Plot.Add("Sales");
             Literal1.Text = timeSeries.Render();
         }
     }
@@ -217,7 +220,7 @@ End Namespace
 </div>
 </div>
 
-Next, open the `FirstTimeSeries.aspx` file and add the following line to it:
+Next, open the `MultipleDataplot.aspx` file and add the following line to it:
 
 `<asp:Literal ID="Literal1" runat="server"></asp:Literal>`
 
@@ -253,91 +256,4 @@ Refer to the code given below:
     </form>
   </body>
 </html>
-```
-
-## Handling Time-Series data
-
-The timeseries chart can deal with very large sets of data, but having too many values in your data can drastically slow down chart rendering on the browser. To counter this, the timeseries chart is designed to receive data as response through the generic handler.
-
-In the generic handler, create an instance of the FusionCharts DataModel and apply any operation if you need. Then call the static method `RenderCompatibleDataInJson` of `TimeSeriesData` class and pass your DataModel instance as parameter. This method will return a JSON with the schema and the data. Write this JSON in your page response. After getting the JSON, the chart rendering engine will extract data and schema, and build a timeseries-compatible JSON for you.
-
-Refer to the code given below:
-
-```csharp
-/* create DataModel instance */
-DataModel model = new DataModel();
-
-/* create instance of MsSqlClass */
-MsSqlClass msSql = new MsSqlClass("server","database",FusionCharts.DataBaseClass.SourceType.QUERY,"query");
-
-/* add msSql object to DataSources of model */
-model.DataSources.Add(msSql);
-
-/* Want to apply operations */
-/* optional */
-/* create object of GroupColumn class */
-
-GroupColumn groupColumn = new GroupColumn
-{
-       {"SellStartDate",GroupColumn.DateGrouping.YEAR },
-       {"Color" }
-};
-
-/* create object of Aggregation class */
-Aggregation aggregation = new Aggregation
-{
-       {"UnitPrice",Aggregation.Function.MAX },
-       {"OrderQty",Aggregation.Function.COUNT }
- };
-
-/* apply GroupingWithAggregation() operation followed by TopRecords() */
-DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, aggregation).TopRecords(20);
-
-/* invoke RenderCompatibleDataInJson() static method of  TimeSeriesData class*/
-/* it will return a JSON */
-/* write the JSON as page response */
- context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(groupingWithAggregation));
-```
-
-> You can use Generic Handler page(.ashx) in web form application as well as MVC application.
-
-In MVC application, if you want to fetch data through **controller** instead of creating a generic handler, do the following:
-
-```csharp
-/* create the controller */
-public ActionResult TimeSeriesDataHandler() {
-
-/* create DataModel instance */ 
-DataModel model = new DataModel();
-/* create instance of MsSqlClass */
-MsSqlClass msSql = new MsSqlClass("server","database",FusionCharts.DataBaseClass.SourceType.QUERY,"query");
-/* add msSql object to DataSources of model */
- model.DataSources.Add(msSql);
-/* Want to apply operations */
-/* optional */
-/* create object of GroupColumn class */
-GroupColumn groupColumn = new GroupColumn {
-       {"SellStartDate",GroupColumn.DateGrouping.YEAR },
-       {"Color" }
-};
-
-/* create object of Aggregation class */
-Aggregation aggregation = new Aggregation {
-       {"UnitPrice",Aggregation.Function.MAX },
-       {"OrderQty",Aggregation.Function.COUNT }
-};
-
-/* apply GroupingWithAggregation() operation followed by TopRecords() */
-DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, aggregation).TopRecords(20);
-
-/* invoke RenderCompatibleDataInJson() static method of  TimeSeriesData class*/
-/* it will return a json, return this json from your controller */
-return Content(TimeSeriesData.RenderCompatibleDataInJson(model), "text/json");
-}
-```
-
-Now pass the path of this handler page or controller name(MVC) in the `SourcePathHandler` property (which accepts a string) of `Data` object.
-
-```csharp
-timeSeries.Data.SourcePathHandler = "/path/to/local/DataSourceHandler.ashx";
 ```
