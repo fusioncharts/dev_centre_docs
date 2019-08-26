@@ -25,6 +25,8 @@ The data for the above chart is shown in the table below:
 | India         | 12/31/2014 | 72     |
 | India         | 12/31/2014 | 39.42  |
 
+Click here to view the full data.
+
 ## Render the chart
 
 Now that you have the data handy, let's build the chart.

@@ -12,7 +12,7 @@ The multivariate chart will look as shown below:
 
 {% embed_ftChart online-sales-multi-variate %}
 
-The data for the above chart is shown in the table below:
+The sample data for the above chart is shown in the table below:
 
 | Order Date | Sales   | Quantity | Shipping Cost |
 | ---------- | ------- | -------- | ------------- |
@@ -22,6 +22,8 @@ The data for the above chart is shown in the table below:
 | 1/6/2011   | 6.54    | 1        | 1.13          |
 | 1/7/2011   | 5.48    | 2        | 0.52          |
 | 1/8/2011   | 76.728  | 3        | 6.69          |
+
+Click here to view the full data.
 
 ## Render the chart
 
@@ -264,7 +266,7 @@ The `.ashx` and `.aspx` files for the single canvas multivariate chart is goven 
 
 > All the other steps to render the single canvas multivariate chart is same as that of multivariate (multi-canvas) chart.
 
-**`.ashx`**
+### `.ashx`
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -353,7 +355,7 @@ End Namespace
 </div>
 </div>
 
-**`.aspx`**
+### `.aspx`
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
