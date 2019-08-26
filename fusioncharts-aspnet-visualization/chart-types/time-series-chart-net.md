@@ -61,34 +61,36 @@ using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Web;
 
-namespace TestProject.DataSources
+namespace FcTest
 {
-    public class FirstChartData : IHttpHandler
+    /// <summary>
+    /// Summary description for DataHandler
+    /// </summary>
+    public class DataHandler : IHttpHandler
     {
+
         public void ProcessRequest(HttpContext context)
         {
-            // set response type
-			context.Response.ContentType = "application/json";
+            /* create DataModel instance */
+            DataModel model = new DataModel();
 
-            // create object of MsSqlClass
-			MsSqlClass msSql = new MsSqlClass("POUSHALI-PC\\SHAREPOINT", "AdventureWorks2008", FusionCharts.DataBaseClass.SourceType.QUERY, "select [Sell Date], [Total Sales] from Production.Product");
+            /* create instance of MsSqlClass */
+            CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv");
 
-            // create object of DataModel class
-			DataModel model = new DataModel();
+            /* add msSql object to DataSources of model */
+            model.DataSources.Add(source);
 
-			// add data sources to model
-			model.DataSources.Add(msSql);
-
-			// convert model to time series acceptable data format
-			// write the converted data in json
+            
             context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model));
         }
-        public bool IsReusable {
-            get{
+
+        public bool IsReusable
+        {
+            get
+            {
                 return false;
             }
         }
@@ -114,7 +116,7 @@ Namespace FcTest
 
         Public Sub ProcessRequest(ByVal context As HttpContext)
             Dim model As DataModel = New DataModel()
-            Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/OnlineSalesSingleSeries.csv")
+            Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv")
             model.DataSources.Add(source)
             context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model))
         End Sub

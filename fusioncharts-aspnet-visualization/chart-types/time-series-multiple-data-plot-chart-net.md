@@ -79,7 +79,7 @@ namespace FcTest
             DataModel model = new DataModel();
 
             /* create instance of MsSqlClass */
-            CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/OnlineSalesMultiSeries.csv");
+            CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiSeries.csv");
 
             /* add msSql object to DataSources of model */
             model.DataSources.Add(source);
@@ -117,7 +117,7 @@ Namespace FcTest
 
         Public Sub ProcessRequest(ByVal context As HttpContext)
             Dim model As DataModel = New DataModel()
-            Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/OnlineSalesMultiSeries.csv")
+            Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiSeries.csv")
             model.DataSources.Add(source)
             context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model))
         End Sub
