@@ -4,19 +4,19 @@ description: This article talks about the Binning.
 heading: Data Binning
 ---
 
-The natural hierarchy of time aids in binning smaller units of time into larger units of time. For example, two bins, each of 12hr size can fall into one bin of 1 day (or 24 hours) bin. A user can zoom into 12hr bin and zoom out to 1-day bin.
+The natural hierarchy of time aids in binning smaller units of time into larger units of time. For example, two bins, each of 12hr size can fall into one bin of 1 day (or 24 hours) bin. A user can **zoom** into 12hr bin and zoom out to 1-day bin.
 
 The time series charts exploit this behavior of time to create data bins. Though it is suggested to follow the smartly suggested bins for each data, an enthusiastic developer can always modify this.
 
 The available methods are listed below:
 
 - `Year(params int[] binArr)`
-- `Month`(params int[] binArr)
-- Day(params int[] binArr)
-- Hour(params int[] binArr)
-- Minute(params int[] binArr)
-- Second(params int[] binArr)
-- MilliSecond(params int[] binArr)
+- `Month(params int[] binArr)`
+- `Day(params int[] binArr)`
+- `Hour(params int[] binArr`)
+- `Minute(params int[] binAr`r)
+- `Second(params int[] binArr)`
+- `MilliSecond(params int[] binArr)`
 
 The syntax to specify the data binning for all the above methods are:
 
