@@ -4,6 +4,16 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version History
 ---
 
+<h2 class="sub-heading">Version 1.0.6</h2>
+
+<p class="release-date">26th August, 2019</p>
+
+<h4 class="sub-heading">New Features</h4>
+
+- Starting v1.0.6, FusionCharts.NET now supports Palette Colors for all chart types.
+
+- You can now define the data binning as per custom requirements.
+
 <h2 class="sub-heading">Version 1.0.4</h2>
 
 <p class="release-date">23rd July, 2019</p>
