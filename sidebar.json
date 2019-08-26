@@ -517,7 +517,7 @@
                     "title": "Pyramid chart",
                     "children": [{
                             "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/stacked-chart"
+                            "path": "/understanding-fusioncharts/pyramid-chart"
                         },
                         {
                             "title": "Create pyramid charts",
@@ -614,7 +614,7 @@
                     "title": "Funnel chart",
                     "children": [{
                             "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/stacked-chart"
+                            "path": "/understanding-fusioncharts/funnel-chart"
                         },
                         {
                             "title": "Create funnel charts",
