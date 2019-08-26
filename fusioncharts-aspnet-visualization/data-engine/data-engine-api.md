@@ -267,6 +267,22 @@ To apply `ends with` filter operation, set the `endsWithOperation` instance of t
 DataModel endsWithOperation = model.Where("Country ends with a");
 ```
 
+### Logical Operator
+
+To apply logical operators to the data, set it's instance of the DataModel as shown below:
+
+**`AND` Operator**
+
+```csharp
+DataModel andOperator = model.Where("Order Date is between 1/22/2011 to 1/24/2011 and Country = United States");
+```
+
+**`OR` Operator**
+
+```csharp
+DataModel orOperator = model.Where("Name starts with I or Name starts with A");
+```
+
 ## Pivot
 
 To apply `pivot` operation to the data, set the `pivotModel` instance of the DataModel as shown below:
