@@ -509,6 +509,22 @@ The syntax to disable more than one canvas in a multivariate chart is shown belo
 timeSeries.MultiCanvas.Enable = false;
 ```
 
+### `Binning`
+
+> `Binning` only have support on **time-series** charts.
+
+The syntax to apply data binning to the chart is shown below:
+
+```csharp
+timeSeries.TimeAxis.Binning.Year(1); // Binning to display yearly data
+timeSeries.TimeAxis.Binning.Month(2,4); // Binning to display monthly data
+timeSeries.TimeAxis.Binning.Day(2); // Binning to display daily data
+timeSeries.TimeAxis.Binning.Hour(1); // Binning to display hourly data
+timeSeries.TimeAxis.Binning.Minute(1,3,5,6); // Binning to display per minute data
+timeSeries.TimeAxis.Binning.Second(2,4); // Binning to display per second data
+timeSeries.TimeAxis.Binning.MilliSecond(5); // Binning to display per millisecond data
+```
+
 ### `YAxis`
 
 To configure the y-axis name (title), you can use the following APIs.
