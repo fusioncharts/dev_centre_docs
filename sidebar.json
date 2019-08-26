@@ -2287,6 +2287,10 @@
             "path": "/fusioncharts-aspnet-visualization/getting-started/create-first-chart-using-fusioncharts-net"
           },
           {
+            "title": "Create a chart using Razor Page",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/fusioncharts-net-using-razor"
+          },
+          {
             "title": "Filter Chart Data",
             "path": "/fusioncharts-aspnet-visualization/getting-started/filter-chart-data-using-fusioncharts-net",
             "visibility": false
