@@ -370,7 +370,7 @@ FusionCharts.Net has the ability to export the rendered charts in JPG, PNG, SVG,
 | `Window`           | Exporter<br/>.ExportTargetWindow | visualizationObj.Export<br/>.Window = Exporter.ExportTargetWindow.BLANK;                                       | Sets whether the exported chart opens in the same window or a new window<br/>1. `BLANK`<br/>2. `SELF`    |
 | `Action`           | Exporter<br/>.ExportAction       | visualizationObj.Export<br/>.Action = Exporter.ExportAction.SAVE;                                              | Sets the action to be performed when the Export chart option is clicked.<br/>1. `SAVE`<br/>2. `DOWNLOAD` |
 
-### `Palette Color`
+### `Palette Colors`
 
 `PaletteColors` allows you to specify your custom list of hex colors for the visualization. The list of colors have to be separated from comma, e.g., "#5d62b5", "#afafaf", "#f2726", "#ffc533", "#62b58f", "#afafaf". The chart will cycle through the list of specified colors and then render the chart accordingly.
 
