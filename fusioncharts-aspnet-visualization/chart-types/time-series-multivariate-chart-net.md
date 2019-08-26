@@ -12,8 +12,6 @@ The multivariate chart will look as shown below:
 
 {% embed_ftChart online-sales-multi-variate %}
 
-Click [here](https://jsfiddle.net/fusioncharts/yfewbpLq/) to edit the above chart.
-
 The data for the above chart is shown in the table below:
 
 | Order Date | Sales   | Quantity | Shipping Cost |
@@ -175,6 +173,7 @@ namespace FcTest
             timeSeries.Data.SourcePathHandler = @"DataHandler.ashx";
             timeSeries.Width.Pixel(700);
             timeSeries.Height.Pixel(500);
+            timeSeries.MultiCanvas.Enable = true;
             Literal1.Text = timeSeries.Render();
         }
     }
@@ -205,6 +204,7 @@ Namespace FcTest
             timeSeries.Data.SourcePathHandler = "DataHandler.ashx"
             timeSeries.Width.Pixel(700)
             timeSeries.Height.Pixel(500)
+            timeSeries.MultiCanvas.Enable = True
             Literal1.Text = timeSeries.Render()
         End Sub
     End Class
@@ -253,3 +253,174 @@ Refer to the code given below:
   </body>
 </html>
 ```
+
+You can render the above multivariate chart in a single canvas.
+
+The chart looks like as shown below:
+
+{% embed_ftChart online-sales-multi-variate-single-canvas %}
+
+The `.ashx` and `.aspx` files for the single canvas multivariate chart is goven below:
+
+> All the other steps to render the single canvas multivariate chart is same as that of multivariate (multi-canvas) chart.
+
+**`.ashx`**
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace FcTest
+{
+    /// <summary>
+    /// Summary description for DataHandler
+    /// </summary>
+    public class DataHandler : IHttpHandler
+    {
+
+        public void ProcessRequest(HttpContext context)
+        {
+            /* create DataModel instance */
+            DataModel model = new DataModel();
+
+            /* create instance of MsSqlClass */
+            CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/OnlineSalesMultiVariate.csv");
+
+            /* add msSql object to DataSources of model */
+            model.DataSources.Add(source);
+
+            
+            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model));
+        }
+
+        public bool IsReusable
+        {
+            get
+            {
+                return false;
+            }
+        }
+    }
+}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Web
+
+Namespace FcTest
+    Public Class DataHandler
+        Implements IHttpHandler
+
+        Public Sub ProcessRequest(ByVal context As HttpContext)
+            Dim model As DataModel = New DataModel()
+            Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/OnlineSalesMultiVariate.csv")
+            model.DataSources.Add(source)
+            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model))
+        End Sub
+
+        Public ReadOnly Property IsReusable As Boolean
+            Get
+                Return False
+            End Get
+        End Property
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
+
+**`.aspx`**
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace FcTest
+{
+    public partial class ChartTest : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Charts.TimeSeriesChart timeSeries = new Charts.TimeSeriesChart("first_timeseries");
+            timeSeries.Data.SourcePathHandler = @"DataHandler.ashx";
+            timeSeries.Width.Pixel(700);
+            timeSeries.Height.Pixel(500);
+            Literal1.Text = timeSeries.Render();
+        }
+    }
+}
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+
+Namespace FcTest
+    Public Partial Class ChartTest
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim timeSeries As Charts.TimeSeriesChart = New Charts.TimeSeriesChart("first_timeseries")
+            timeSeries.Data.SourcePathHandler = "DataHandler.ashx"
+            timeSeries.Width.Pixel(700)
+            timeSeries.Height.Pixel(500)
+            Literal1.Text = timeSeries.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
