@@ -382,7 +382,6 @@ FusionCharts.Net has the ability to export the rendered charts in JPG, PNG, SVG,
 visualization.PaletteColors("#5d62b5", "#afafaf", "#f2726", "#ffc533", "#62b58f", "#afafaf");
 ```
 
-
 ## Chart Specific API's
 
 Following are the API's which only have support on **Column**, **Bar**, **Area**, **Line**, **Spline** and **Stacked** Charts.
