@@ -10,8 +10,8 @@ The time series charts exploit this behavior of time to create data bins. Though
 
 The available methods are listed below:
 
-- Year(params int[] binArr)
-- Month(params int[] binArr)
+- `Year(params int[] binArr)`
+- `Month`(params int[] binArr)
 - Day(params int[] binArr)
 - Hour(params int[] binArr)
 - Minute(params int[] binArr)
