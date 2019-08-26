@@ -513,8 +513,8 @@
                         }
                     ]
                 },
-                 {
-                    "title": "Pyramid chart",
+                {
+                    "title": "Pyramid Chart",
                     "children": [{
                             "title": "Chart anatomy",
                             "path": "/understanding-fusioncharts/pyramid-chart"
@@ -611,7 +611,7 @@
                     ]
                 },
                 {
-                    "title": "Funnel chart",
+                    "title": "Funnel Chart",
                     "children": [{
                             "title": "Chart anatomy",
                             "path": "/understanding-fusioncharts/funnel-chart"
