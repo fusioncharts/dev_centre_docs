@@ -298,7 +298,7 @@ These APIs let you configure the x-axis labels.
 | -------------- | ----------- | --------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | `Show`         | boolean     | visualizationObj.Labels.Show = true;                            | Shows/Hides X-axis labels                                                     |
 | `MaxHeight`    | integer     | visualizationObj.Labels.MaxHeight = 500;                        | Sets maximum height of X-axis labels                                          |
-| `Ellipsis`     | boolean     | visualizationObj.Labels.Ellipsis = true;                        | Truncates X-axis label text when it’s too long, and adds ellipsis at the end |
+| `Ellipsis`     | boolean     | visualizationObj.Labels.Ellipsis = true;                        | Truncates X-axis label text when it’s too long, and adds ellipsis at the end  |
 | `Display`      | LabelFormat | visualizationObj.Labels.Display = LabelFormat.DisplayType.AUTO; | Sets display mode for label to `AUTO`, `WRAP`, `STAGGER`, `ROTATE`, or `NONE` |
 | `Rotate`       | boolean     | visualizationObj.Labels.Rotate  = true;                         | Rotates X-axis labels and displays them in a vertical direction               |
 | `Slant`        | boolean     | visualizationObj.Labels.Slant = true;                           | Displays X-axis labels in a slanted manner                                    |
@@ -369,6 +369,19 @@ FusionCharts.Net has the ability to export the rendered charts in JPG, PNG, SVG,
 | `ExportedFileName` | string                           | visualizationObj.Export<br/>.ExportedFileName = "FusionChartsExportedFile.pdf";                                | Sets the name of the exported file                                                                       |
 | `Window`           | Exporter<br/>.ExportTargetWindow | visualizationObj.Export<br/>.Window = Exporter.ExportTargetWindow.BLANK;                                       | Sets whether the exported chart opens in the same window or a new window<br/>1. `BLANK`<br/>2. `SELF`    |
 | `Action`           | Exporter<br/>.ExportAction       | visualizationObj.Export<br/>.Action = Exporter.ExportAction.SAVE;                                              | Sets the action to be performed when the Export chart option is clicked.<br/>1. `SAVE`<br/>2. `DOWNLOAD` |
+
+### `Palette Color`
+
+`PaletteColors` allows you to specify your custom list of hex colors for the visualization. The list of colors have to be separated from comma, e.g., "#5d62b5", "#afafaf", "#f2726", "#ffc533", "#62b58f", "#afafaf". The chart will cycle through the list of specified colors and then render the chart accordingly.
+
+**Syntax**
+
+```csharp
+// Type: String
+// Argument Type: String Array
+visualization.PaletteColors("#5d62b5", "#afafaf", "#f2726", "#ffc533", "#62b58f", "#afafaf");
+```
+
 
 ## Chart Specific API's
 
