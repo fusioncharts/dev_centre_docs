@@ -222,7 +222,7 @@ Next, open the `FirstTimeSeries.aspx` file and add the following line to it:
 
 Refer to the code given below:
 
-```javascript
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head runat="server">
