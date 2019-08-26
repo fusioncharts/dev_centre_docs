@@ -2327,12 +2327,12 @@
           {
             "title": "Overlapped Charts",
             "path": "/fusioncharts-aspnet-visualization/chart-types/overlapped-chart-net",
-            "visibility" : false
+            "visibility": false
           },
           {
             "title": "Scroll Charts",
             "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net",
-            "visibility" : false
+            "visibility": false
           },
           {
             "title": "Combination Charts",
@@ -2425,6 +2425,10 @@
               {
                 "title": "Tooltip",
                 "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/tooltip"
+              },
+              {
+                "title": "Binning",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/fusioncharts-net-binning"
               }
             ]
           }
