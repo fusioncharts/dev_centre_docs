@@ -18,13 +18,6 @@ Given below is the list of charts in FusionCharts.NET.
 
 - [Stacked Chart](/fusioncharts-aspnet-visualization/chart-types/stacked-chart-net)
 
-- [Overlapped Chart](/fusioncharts-aspnet-visualization/chart-types/column-bar-net#overlapped-charts)
-
-- Scroll Charts
-  - [Scroll Column](/fusioncharts-aspnet-visualization/chart-types/column-bar-net#scroll-column-chart)
-  - [Scroll Line](/fusioncharts-aspnet-visualization/chart-types/line-spline-net#scroll-line-chart)
-  - [Scroll Area](/fusioncharts-aspnet-visualization/chart-types/area-chart-net#scroll-area-chart)
-
 - [Pie Chart](/fusioncharts-aspnet-visualization/chart-types/pie-doughnut-net)
 
 - [Doughnut Chart](/fusioncharts-aspnet-visualization/chart-types/pie-doughnut-net)
