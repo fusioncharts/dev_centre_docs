@@ -33,7 +33,15 @@ Create the `PyramidChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.Visualization;
 using FusionCharts.DataEngine;
 using System;
@@ -72,7 +80,56 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     }
   }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.Visualization
+Imports FusionCharts.DataEngine
+Imports System
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports System.Data
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class PyramidChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim ChartData As DataTable = New DataTable()
+            ChartData.Columns.Add("Label", GetType(System.String))
+            ChartData.Columns.Add("Value", GetType(System.Double))
+            ChartData.Rows.Add("Top 32 mn (0.7%)", 98.7)
+            ChartData.Rows.Add("Next 361 mn (7.7%)", 101.8)
+            ChartData.Rows.Add("Next 1.1 bn (22.9%)", 33)
+            ChartData.Rows.Add("Last 3.2 bn (68.7%)", 7.3)
+            Dim source As StaticSource = New StaticSource(ChartData)
+            Dim model As DataModel = New DataModel()
+            model.DataSources.Add(source)
+            Dim pyramid As Widget.PyramidChart = New Widget.PyramidChart("first_pyramid_chart")
+            pyramid.Data.Source = model
+            pyramid.Caption.Text = "Global Wealth Pyramid"
+            pyramid.Caption.OnTop = False
+            pyramid.SubCaption.Text = "Credit Suisse 2013"
+            pyramid.Width.Pixel(400)
+            pyramid.Height.Pixel(400)
+            pyramid.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = column.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 

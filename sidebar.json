@@ -2287,6 +2287,10 @@
             "path": "/fusioncharts-aspnet-visualization/getting-started/create-first-chart-using-fusioncharts-net"
           },
           {
+            "title": "Create a chart using Razor Page",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/fusioncharts-net-using-razor"
+          },
+          {
             "title": "Filter Chart Data",
             "path": "/fusioncharts-aspnet-visualization/getting-started/filter-chart-data-using-fusioncharts-net",
             "visibility": false
@@ -2327,12 +2331,12 @@
           {
             "title": "Overlapped Charts",
             "path": "/fusioncharts-aspnet-visualization/chart-types/overlapped-chart-net",
-            "visibility" : false
+            "visibility": false
           },
           {
             "title": "Scroll Charts",
             "path": "/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net",
-            "visibility" : false
+            "visibility": false
           },
           {
             "title": "Combination Charts",
@@ -2351,8 +2355,21 @@
             "path": "/fusioncharts-aspnet-visualization/chart-types/pyramid-chart-net"
           },
           {
-            "title": "Time-series Chart",
-            "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-chart-net"
+            "title": "Time-Series Charts",
+            "children": [
+              {
+                "title": "Create Your First Chart",
+                "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-chart-net"
+              },
+              {
+                "title": "Create Multivariate Chart",
+                "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-multivariate-chart-net"
+              },
+              {
+                "title": "Add Multiple Data Plots",
+                "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-multiple-data-plot-chart-net"
+              }
+            ]
           }
         ]
       },
@@ -2425,6 +2442,10 @@
               {
                 "title": "Tooltip",
                 "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/tooltip"
+              },
+              {
+                "title": "Binning",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/fusioncharts-net-binning"
               }
             ]
           }
