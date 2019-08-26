@@ -1,7 +1,7 @@
 ---
-title: Time-series chart | FusionCharts
+title: Create Time-series chart | FusionCharts
 description: This article outlines the steps to create time-series chart.
-heading: Time-series chart
+heading: Create Time-series chart
 ---
 
 Let's create a time-series chart showing the **Online sales of a SuperStore**.

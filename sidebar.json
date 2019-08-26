@@ -2355,8 +2355,21 @@
             "path": "/fusioncharts-aspnet-visualization/chart-types/pyramid-chart-net"
           },
           {
-            "title": "Time-series Chart",
-            "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-chart-net"
+            "title": "Time-Series Charts",
+            "children": [
+              {
+                "title": "Create Your First Chart",
+                "path": "/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net"
+              },
+              {
+                "title": "Create Multivariate Chart",
+                "path": "/fusioncharts-aspnet-visualization/chart-types/column-bar-net"
+              },
+              {
+                "title": "Add Multiple Data Plots",
+                "path": "/fusioncharts-aspnet-visualization/chart-types/line-spline-net"
+              }
+            ]
           }
         ]
       },
