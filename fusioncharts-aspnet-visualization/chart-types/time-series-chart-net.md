@@ -10,7 +10,7 @@ The chart will look as shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-The data for the above chart is shown in the table below:
+The sample data for the above chart is shown in the table below:
 
 | Time     | Sales   |
 | -------- | ------- |
@@ -21,6 +21,8 @@ The data for the above chart is shown in the table below:
 | 1/6/2011 | 19.536  |
 | 1/7/2011 | 2573.82 |
 | 1/7/2011 | 609.98  |
+
+Click here to view the full data.
 
 ## Render the Chart
 

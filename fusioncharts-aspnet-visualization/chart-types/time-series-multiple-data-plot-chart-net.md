@@ -14,7 +14,7 @@ The chart is shown below:
 
 Click [here](https://jsfiddle.net/fusioncharts/1btrzeqa/) to edit the above chart.
 
-The data for the above chart is shown in the table below:
+The sample data for the above chart is shown in the table below:
 
 | Country       | Time       | Sales  |
 | ------------- | ---------- | ------ |
