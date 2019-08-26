@@ -267,6 +267,44 @@ To apply `ends with` filter operation, set the `endsWithOperation` instance of t
 DataModel endsWithOperation = model.Where("Country ends with a");
 ```
 
+## Pivot
+
+To apply `pivot` operation to the data, set the `pivotModel` instance of the DataModel as shown below:
+
+```csharp
+DataModel pivotModel = model.Pivot(row, column, aggregation);
+```
+
+## Pagination
+
+To code to set the page size is given below:
+
+```csharp
+model.PageSize = 15;
+```
+
+The code to get records from specific pages is given below:
+
+```csharp
+DataModel dataModel = model.GetItemsFromPages(2, 3);
+```
+
+## Top
+
+The code to apply `topRecords` operation is given below:
+
+```csharp
+DataModel newModel = model.TopRecords(5);
+```
+
+## Select
+
+The code to apply `select` operation to the data is given below:
+
+```csharp
+DataModel newModel = model.SelectColumns("Country","Sales");
+```
+
 ## Create/Dispose GroupColumn
 
 ### Create
