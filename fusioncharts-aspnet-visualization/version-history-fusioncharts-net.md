@@ -14,7 +14,7 @@ heading: Version History
 
 - You can now define the data binning as per custom requirements.
 
-<h4>Improvements</h4>
+<h4>Improvement</h4>
 
 - Starting v1.0.6, `JsonFileSource` of the DataEngine now supports more **json** format.
 
