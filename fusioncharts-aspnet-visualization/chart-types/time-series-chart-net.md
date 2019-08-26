@@ -10,7 +10,7 @@ The chart will look as shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-The sample data for the above chart is shown in the table below:
+The sample [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv) for the above chart is shown in the table below:
 
 | Time     | Sales   |
 | -------- | ------- |

@@ -23,7 +23,7 @@ The sample data for the above chart is shown in the table below:
 | 1/7/2011   | 5.48    | 2        | 0.52          |
 | 1/8/2011   | 76.728  | 3        | 6.69          |
 
-Click here to view the full data.
+Click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiVariate.csv) to view the full data.
 
 ## Render the chart
 
