@@ -216,7 +216,7 @@ End Namespace
 </div>
 </div>
 
-Next, open the `FirstTimeSeries.aspx` file and add the following line to it:
+Next, open the `Multivariate.aspx` file and add the following line to it:
 
 `<asp:Literal ID="Literal1" runat="server"></asp:Literal>`
 
