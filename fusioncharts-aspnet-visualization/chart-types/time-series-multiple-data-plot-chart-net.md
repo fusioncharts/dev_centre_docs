@@ -23,7 +23,7 @@ The sample data for the above chart is shown in the table below:
 | India         | 12/31/2014 | 72     |
 | India         | 12/31/2014 | 39.42  |
 
-Click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/) to view the full data.
+Click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiSeries.csv) to view the full data.
 
 ## Render the chart
 

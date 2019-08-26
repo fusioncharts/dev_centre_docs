@@ -266,7 +266,7 @@ The `.ashx` and `.aspx` files for the single canvas multivariate chart is goven 
 
 > All the other steps to render the single canvas multivariate chart is same as that of multivariate (multi-canvas) chart.
 
-### `.ashx`
+#### `.ashx`
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -355,7 +355,7 @@ End Namespace
 </div>
 </div>
 
-### `.aspx`
+#### `.aspx`
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
