@@ -13,8 +13,8 @@ The available methods are listed below:
 - `Year(params int[] binArr)`
 - `Month(params int[] binArr)`
 - `Day(params int[] binArr)`
-- `Hour(params int[] binArr`)
-- `Minute(params int[] binAr`r)
+- `Hour(params int[] binArr)`
+- `Minute(params int[] binArr)`
 - `Second(params int[] binArr)`
 - `MilliSecond(params int[] binArr)`
 
