@@ -46,7 +46,15 @@ Create the `DataHandler.ashx` file and do the following:
 
 Refer to the code given below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
@@ -84,7 +92,44 @@ namespace TestProject.DataSources
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Web
+
+Namespace FcTest
+    Public Class DataHandler
+        Implements IHttpHandler
+
+        Public Sub ProcessRequest(ByVal context As HttpContext)
+            Dim model As DataModel = New DataModel()
+            Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/OnlineSalesSingleSeries.csv")
+            model.DataSources.Add(source)
+            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model))
+        End Sub
+
+        Public ReadOnly Property IsReusable As Boolean
+            Get
+                Return False
+            End Get
+        End Property
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 Next, create the FirstTimeSeries.cs file and do the following:
 
@@ -96,7 +141,15 @@ Next, create the FirstTimeSeries.cs file and do the following:
 
 - Provide the value of the `Render()` method to the `Text` property of `Literal1`.
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.Visualization;
 using System;
 using System.Collections.Generic;
@@ -121,7 +174,44 @@ namespace TestProject
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+
+Namespace FcTest
+    Public Partial Class ChartTest
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim timeSeries As Charts.TimeSeriesChart = New Charts.TimeSeriesChart("first_timeseries")
+            timeSeries.Data.SourcePathHandler = "DataHandler.ashx"
+            timeSeries.Width.Pixel(700)
+            timeSeries.Height.Pixel(500)
+            timeSeries.SeriesName = "Country"
+            timeSeries.YAxes.Plot.Add("Sales")
+            Literal1.Text = timeSeries.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 Next, open the `FirstTimeSeries.aspx` file and add the following line to it:
 
