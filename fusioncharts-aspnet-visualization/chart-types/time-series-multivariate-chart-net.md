@@ -136,7 +136,7 @@ End Namespace
 </div>
 </div>
 
-Next, create the FirstTimeSeries.cs or FirstTimeSeries.vb file and do the following:
+Next, create the `Multivariate.aspx.cs` or `Multivariate.aspx.vb` file and do the following:
 
 - Include the FusionCharts.Visualization .dll file.
 
