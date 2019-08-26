@@ -18,6 +18,8 @@ Given below is the list of charts in FusionCharts.NET.
 
 - [Stacked Chart](/fusioncharts-aspnet-visualization/chart-types/stacked-chart-net)
 
+- [Combination Chart](/fusioncharts-aspnet-visualization/chart-types/combination-charts-net)
+
 - [Pie Chart](/fusioncharts-aspnet-visualization/chart-types/pie-doughnut-net)
 
 - [Doughnut Chart](/fusioncharts-aspnet-visualization/chart-types/pie-doughnut-net)
