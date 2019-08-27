@@ -142,4 +142,4 @@ Now, run the following command to see the first chart on the browser:
 npm start
 ```
 
-Now that you have built the first chart using React JS and FusionCharts, it's time to understand the above code and <<How it Works>>.
+Now that you have built the first chart using React JS and FusionCharts, it's time to understand the above code and How it Works.
