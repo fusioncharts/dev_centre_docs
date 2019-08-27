@@ -63,35 +63,21 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     public partial class FirstChart: System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-           // Create data table
-            DataTable primaryData = new DataTable();
+        {               
+            {               
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Programming Language", typeof(System.String));
+            ChartData.Columns.Add("Users", typeof(System.Double));
+            ChartData.Rows.Add("Java",62000);
+            ChartData.Rows.Add("Python",46000);
+            ChartData.Rows.Add("Javascript",38000);
+            ChartData.Rows.Add("C++",31000);
+            ChartData.Rows.Add("C#",27000);
+            ChartData.Rows.Add("PHP",14000);
+            ChartData.Rows.Add("Perl",14000);
 
-            // Retrieve data using database query
-            string query = "select [Languages], [User] from dbo.UserPerLanguage";
-            string connetionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-
-            // Connection string
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(primaryData);
-                }
-            }
             // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
+            StaticSource source = new StaticSource(ChartData);
             // Create instance of DataModel class
             DataModel model = new DataModel();
             // Add DataSource to the DataModel
@@ -105,12 +91,15 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             column.Data.Source = model;
             // Set Chart Title
             column.Caption.Text = "Most popular programming language";
+            // Sset chart sub title
+            column.SubCaption.Text = "2017-2018";
             // hide chart Legend
             column.Legend.Show = false;
             // set XAxis Text
             column.XAxis.Text = "Programming Language";
             // Set YAxis title
             column.YAxis.Text = "User";
+            column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             // Render the chart to 'Literal1' literal control
             Literal1.Text = column.Render();
         }
@@ -121,7 +110,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
 
 <!DOCTYPE html>
 
@@ -138,6 +126,275 @@ The `.aspx` template for the above sample is shown below:
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
         </div>
            </form>
+</body>
+</html>
+```
+
+## Scroll Column chart
+
+Now, let's learn how to create a Scrollable Column Chart. We will create a chart showcasing sales trends of a company in the Financial Year 2016-17. The data will look as shown below:
+
+| Month    | Sales |
+| -------- | ----- |
+| Jan 2016 | 27400 |
+| Feb 2016 | 29800 |
+| Mar 2016 | 25800 |
+| Apr 2016 | 26800 |
+| May 2016 | 29600 |
+| Jun 2016 | 32600 |
+| Jul 2016 | 31800 |
+| Aug 2016 | 36700 |
+| Sep 2016 | 29700 |
+| Oct 2016 | 31900 |
+| Nov 2016 | 34800 |
+| Dec 2016 | 24800 |
+| Jan 2017 | 26300 |
+| Feb 2017 | 31800 |
+| Mar 2017 | 30900 |
+| Apr 2017 | 33000 |
+| May 2017 | 36200 |
+| Jun 2017 | 32100 |
+| Jul 2017 | 37500 |
+| Aug 2017 | 38500 |
+| Sep 2017 | 35400 |
+| Oct 2017 | 38200 |
+| Nov 2017 | 33300 |
+| Dec 2017 | 38300 |
+
+The chart will look as shown below:
+
+{% embed_chart standard-charts-scroll-charts-example-1.js %}
+
+Click [here](https://dotnetfiddle.net/TeDjsE) to edit the scroll column chart.
+
+## Render the Chart
+
+Create the `ScrollColumnChart.aspx.cs` file and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` .dll files.
+* Create `DataTable`.
+* Retrieve data using database query.
+* Set `serverName`.
+* Set `DataBase` name.
+* Connect with `DataBase` using a `connectionstring`.
+* Create `StaticSource` using the `DataTable`.
+* Create an instance of `DataModel` class.
+* Add `DataSource` to the `DataModel`.
+* Instantiate `column` chart.
+* Set chart width.
+* Set chart height.
+* Set the `Scrollable` property of the chart to `true`.
+* Set `DataModel` instance as the data source of the chart.
+* Set chart title.
+* Finally, use a container using `<div>` to render the chart.
+
+The code is shown below:
+
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class ScrollChart : System.Web.UI.Page 
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Month", typeof(System.String));
+            ChartData.Columns.Add("Revenue", typeof(System.Double));
+            ChartData.Rows.Add("Jan 2016", 27400);
+            ChartData.Rows.Add("Feb 2016", 29800);
+            ChartData.Rows.Add("Mar 2016", 25800);
+            ChartData.Rows.Add("Apr 2016", 26800);
+            ChartData.Rows.Add("May 2016", 29600);
+            ChartData.Rows.Add("Jun 2016", 32600);
+            ChartData.Rows.Add("Jul 2016", 31800);
+            ChartData.Rows.Add("Aug 2016", 36700);
+            ChartData.Rows.Add("Sep 2016", 29700);
+            ChartData.Rows.Add("Oct 2016", 31900);
+            ChartData.Rows.Add("Nov 2016", 34800);
+            ChartData.Rows.Add("Dec 2016", 24800);
+            ChartData.Rows.Add("Jan 2017", 26300);
+            ChartData.Rows.Add("Feb 2017", 31800);
+            ChartData.Rows.Add("Mar 2017", 30900);
+            ChartData.Rows.Add("Apr 2017", 33000);
+            ChartData.Rows.Add("May 2017", 36200);
+            ChartData.Rows.Add("Jun 2017", 32100);
+            ChartData.Rows.Add("Jul 2017", 37500);
+            ChartData.Rows.Add("Aug 2017", 38500);
+            ChartData.Rows.Add("Sep 2017", 35400);
+            ChartData.Rows.Add("Oct 2017", 38200);
+            ChartData.Rows.Add("Nov 2017", 33300);
+            ChartData.Rows.Add("Dec 2017", 38300);
+            StaticSource source = new StaticSource(ChartData);
+            DataModel model = new DataModel();
+            model.DataSources.Add(source);
+            Charts.ColumnChart column = new Charts.ColumnChart("scroll_chart_db");
+            column.Scrollable = true;
+            column.Data.Source = model;
+            column.Caption.Text = "Sales Trends";
+            column.SubCaption.Text = "2016-2017";
+            column.XAxis.Text = "Month";
+            column.YAxis.Text = "Revenue";
+            column.Width.Pixel(600);
+            column.Height.Pixel(500);
+            column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
+        }
+    }
+}
+```
+
+The `.aspx` template for the above sample is shown below:
+
+```html
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
+        </div>
+        <div>
+            <input type ="button" value ="Samples" onclick="location.href = 'Index.aspx';" />
+        </div>
+    </form>
+</body>
+</html>
+```
+
+## Overlapped charts
+
+Now, let's learn how to create an Overlapped Chart. We will create a chart showcasing Major League Baseball Rankings. The data will look as shown below:
+
+| Teams              | Matches | Wins |
+| ------------------ | ------- | ---- |
+| Boston Red Sox     | 88      | 57   |
+| New York Yankees   | 84      | 54   |
+| Tampa Bay Rays     | 86      | 42   |
+| Toronto Blue Jays  | 86      | 39   |
+| Baltimore Orioles  | 85      | 24   |
+| Cleveland Indians  | 85      | 46   |
+| Detroit Tigers     | 88      | 38   |
+| Minnesota Twins    | 83      | 35   |
+| Chicago White Sox  | 86      | 29   |
+| Kansas City Royals | 86      | 25   |
+
+The chart will look as shown below:
+
+{% embed_chart fusioncharts-net-overlapped-chart-example-1.js %}
+
+Click [here](https://dotnetfiddle.net/LPXGzz) to edit the overlapped chart.
+
+## Render the Chart
+
+Create the `OverlappedChart.aspx.cs` file and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files.
+* Create `DataTable`.
+* Retrieve data using database query.
+* Set server name.
+* Set DataBase name.
+* Connect with DataBase using a connection string.
+* Create `StaticSource` using the data table.
+* Create an instance of `DataModel` class.
+* Add `DataSource` to the `DataModel`.
+* Instantiate column or bar chart.
+* Set chart width.
+* Set chart height.
+* Set the type of column or bar chart as overlapped.
+* Set `DataModel` instance as the data source of the chart.
+* Set chart title.
+* Finally, use a container using `<div>` to render the chart.
+
+The code is shown below:
+
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class OverlappedChart : System.Web.UI.Page 
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Team", typeof(System.String));
+            ChartData.Columns.Add("Matches", typeof(System.Double));
+            ChartData.Columns.Add("Wins", typeof(System.Double));
+            ChartData.Rows.Add("Boston Red Sox", 88, 57);
+            ChartData.Rows.Add("New York Yankees", 84, 54);
+            ChartData.Rows.Add("Tampa Bay Rays", 86, 42);
+            ChartData.Rows.Add("Toronto Blue Jays", 86, 39);
+            ChartData.Rows.Add("Baltimore Orioles", 85, 24);
+            ChartData.Rows.Add("Cleveland Indians", 85, 46);
+            ChartData.Rows.Add("Detroit Tigers", 88, 38);
+            ChartData.Rows.Add("Minnesota Twins", 83, 35);
+            ChartData.Rows.Add("Chicago White Sox", 86, 29);
+            ChartData.Rows.Add("Kansas City Royals", 86, 25);
+            StaticSource source = new StaticSource(ChartData);
+            DataModel model = new DataModel();
+            model.DataSources.Add(source);
+            Charts.ColumnChart OverlappedColumn = new Charts.ColumnChart("overlapped_chart_db");
+            OverlappedColumn.Overlapped = true;
+            OverlappedColumn.Data.Source = model;
+            OverlappedColumn.Caption.Text = "Major League Baseball - Season Rankings";
+            OverlappedColumn.SubCaption.Text = "Teams in the Lead";
+            OverlappedColumn.Caption.Text = "Major league Baseball-Season Rankings";
+            OverlappedColumn.SubCaption.Text = "Teams in the lead";
+            OverlappedColumn.XAxis.Text = "Position";
+            OverlappedColumn.YAxis.Text = "Team";
+            OverlappedColumn.Width.Pixel(600);
+            OverlappedColumn.Height.Pixel(500);
+            OverlappedColumn.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
+        }
+    }
+}
+```
+
+The `.aspx` template for the above sample is shown below:
+
+```html
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Literal ID ="Literal1" runat ="server"></asp:Literal>
+        </div>        
+    </form>
 </body>
 </html>
 ```
@@ -163,34 +420,19 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           // Create data table
-            DataTable primaryData = new DataTable();
-
-            // Retrieve data using database query
-            string query = "select [Languages], [User] from dbo.UserPerLanguage";
-            string connetionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-
-            // Connection string
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(primaryData);
-                }
-            }
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Programming Language", typeof(System.String));
+            ChartData.Columns.Add("Users", typeof(System.Double));
+            ChartData.Rows.Add("Java", 62000);
+            ChartData.Rows.Add("Python", 46000);
+            ChartData.Rows.Add("Javascript", 38000);
+            ChartData.Rows.Add("C++", 31000);
+            ChartData.Rows.Add("C#", 27000);
+            ChartData.Rows.Add("PHP", 14000);
+            ChartData.Rows.Add("Perl", 14000);
             // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
+
+            StaticSource source = new StaticSource(ChartData);
 
             // Create instance of DataModel class
             DataModel model = new DataModel();
@@ -210,9 +452,9 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 
             // Set Chart Title
             bar.Caption.Text = "Most popular programming language";
-
-            // Render the chart to 'barChartLiteral' literal control
-            Literal1.Text = bar.Render();
+            bar.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -221,9 +463,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ``` 
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="barChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.barChart" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">

@@ -861,14 +861,14 @@
     "table": "Pie / Doughnut Properties",
     "attrs": [
       {
-        "description": "This attribute lets you explicitly set the outer radius of the chart. FusionCharts XT automatically calculates the best fit pie radius for the chart. This attribute is useful if you want to enforce one of your own values.",
-        "range": "In Pixels",
+        "description": "This attribute lets you explicitly set the outer radius of the chart. FusionCharts XT automatically calculates the best fit pie radius for the chart. This attribute is useful if you want to enforce one of your own values. Starting v3.14.0, you can specify the radius of a doughnut chart in both percentage and pixel values.",
+        "range": "In Pixels & Percentage",
         "type": "Number",
         "name": "pieRadius"
       },
       {
-        "description": "This attribute lets you explicitly set the inner radius of the chart. FusionCharts XT automatically calculates the best fit radius for the chart. This attribute is useful if you want to enforce one of your own values.",
-        "range": "In Pixels",
+        "description": "This attribute lets you explicitly set the inner radius of the chart. FusionCharts XT automatically calculates the best fit radius for the chart. This attribute is useful if you want to enforce one of your own values. Starting v3.14.0, you can specify the radius of a doughnut chart in both percentage and pixel values.",
+        "range": "In Pixels & Percentage",
         "type": "Number",
         "name": "doughnutRadius"
       },

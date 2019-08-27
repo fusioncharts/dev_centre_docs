@@ -1,12 +1,12 @@
 ---
-title: Slice Data Plot using API | FusionCharts
+title: Slice Data Plot Using API in AngularJS | FusionCharts
 description: This article will showcase a sample to slice data plot of the pie chart using chart specific custom API .
-heading: Slice Data Plot using API
+heading: Slice Data Plot Using API in AngularJS
 ---
 
-FusionCharts Suite XT includes advanced features that offers a wide range of APIs that you can use for different stages in the ife cycle of a chart or when you interact with a chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
+FusionCharts Suite XT includes advanced features that offer a wide range of APIs. You can use them in different stages of the life cycle of a chart, or when you interact with a chart. These features include completion of rendering of the chart, handling the radio button at runtime, etc.
 
-This article focuses on how you can slice out the data plots of a Pie 2D chart using chart specific custom API. The chart will be rendered using `angular-fusioncharts` component. 
+This article focuses on how you can slice out the data plots of a Pie 2D chart using chart-specific custom API. The chart will be rendered using `angular-fusioncharts` component. 
 
 A chart configured to slice out the data plots of a `pie2d` chart, is shown below:
 
@@ -21,7 +21,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -142,24 +142,24 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Add the chart and the theme as dependencies to the core.
 
 3. Store the chart configurations in a variable (`myApp`).
 
 4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
-    * Set the chart type as `pie2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `pie2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels).
-    * Set the `dataFormat` as JSON.
-    * Embed the json data from `dataSource`.
+    * Set the `dataFormat` as `json`.
+    * Embed the JSON data from `dataSource`.
 
 5. Create a handler for `dataPlotClick` event.
 
 6. Create a handler to initialize events.
 
-7. Using `selectedItem` API, set the scope of the data plots in pie2d chart.
+7. Using `selectedItem` API, set the scope of the data plots in `pie2d` chart.
 
-8. Create Radio buttons using `<input>`.
+8. Create radio buttons using `<input>`.

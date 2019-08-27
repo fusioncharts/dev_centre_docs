@@ -1,14 +1,14 @@
 ---
-title: Percentage Calculation | FusionCharts
+title: Percentage Calculation Using AngularJS | FusionCharts
 description: In this article a sample to calculate the percentage value of the data plot with respect to the total is created.
-heading: Percentage Calculation
+heading: Percentage Calculation Using AngularJS
 ---
 
-Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, percentage calculation, and events.
+Events are signals that let you execute specific actions (such as sending data to the server using JavaScript) in response to any interaction/update for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, percentage calculation, and events.
 
-This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots using `angularjs-fusioncharts` component.
+This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots using the `angularjs-fusioncharts` component.
 
-A chart configured to calculate the percent, is shown below:
+A chart configured to calculate the percentage, is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 
@@ -21,7 +21,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -115,9 +115,9 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Add the chart and the theme as dependencies to the core.
 

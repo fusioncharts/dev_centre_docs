@@ -58,6 +58,89 @@ Tooltips can provide additional information about the data represented by [data 
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-data-marker-tooltip.png" alt="Data Marker Tooltip" width="700" height="420">
 
+## Output time format
+
+FusionTime supports the following time units:
+
+- Year
+- Month
+- Day
+- Hour
+- Minute
+- Second
+- Millisecond
+
+You can customize the output time format for each time unit by specifying date-time tokens for respective time format.
+
+Refer to the example given below:
+
+{% embed_ftChart output-time-format-for-tooltip %}
+
+In the above example, hover on the data plot to view the tooltip with custom output time format. Refer to the code below:
+
+```javascript
+<--
+dataSource: {
+        data: dataStore,
+        chart: {
+            showLegend: "0",
+            paletteColors: "#58EBCA"
+        },
+        caption: {
+            text: "Daily Visitors Count of a Website"
+        },
+        subCaption: {
+            text: "Time format of (data plot) tooltip has been customized"
+        },
+        yAxis: [{
+            plot: {
+                value: "Daily Visitors",
+                type: "smooth-line"
+            },
+            format: {
+                suffix: "k"
+            },
+            title: "Daily Visitors Count"
+        }],
+        -->
+        tooltip: {
+            enabled: "false", // Disables the Tooltip
+            outputTimeFormat: {
+                day: "%d/%m/%y (%a)"
+            },
+            style: {
+                container: {
+                    "border-color": "#000000",
+                    "background-color": "#75748D"
+                },
+                text: {
+                    "color": "#FFFFFF"
+                }
+            }
+        }
+    }
+```
+
+In the above code:
+
+* Define the `tooltip` object.
+* Create the `outputTimeFormat` object.
+* Set the custom output time format for day as `%d/%m/%y (%a)` respectively.
+
+> If yo do not set the data-time tokens for any time unit, the default formatting for the particular time unit will apply.
+
+The date-time tokens for respective time formats is given below:
+
+Time Unit|Tokens|Example|
+-|-|-
+Year |`%Y`|2018|
+Month |`%B, %Y`|September, 2018|
+Day|`%B %-d, %Y`|November 11, 2018|
+Hour|`%b %-d, %Y, %-I %p`|Nov 5, 2018, 4 PM|
+Minute |`%b %-d, %Y, %-I:%-M %p`|Nov 5, 2018, 4:24 PM|
+Second|`%b %-d, %Y, %-I:%-M:%-S %p`|Nov 5, 2018, 4:25:30 PM|
+Millisecond|`%b %-d, %Y, %-I:%-M:%-S:%-L %p`|Nov 29, 2017, 4:29:12.075 PM|
+
 ## Style Definition
 
 FusionTime allows you to customize the tooltip of the chart. All the customizations to the tooltip can be made using the newly introduced `tooltip` object under `dataSource`. The customization effects all the tooltips of the chart, i.e.:

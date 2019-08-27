@@ -62,35 +62,19 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     public partial class ThreeDChart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-            // Create data table
-            DataTable primaryData = new DataTable();
-
-            // Retrieve data using database query
-            string query = "select [languages], [User] from dbo.UserPerLanguage";
-            string connectionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-
-            // Connection string
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(primaryData);
-                }
-            }
+        {               
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Programming Language", typeof(System.String));
+            ChartData.Columns.Add("Users", typeof(System.Double));
+            ChartData.Rows.Add("Java",62000);
+            ChartData.Rows.Add("Python",46000);
+            ChartData.Rows.Add("Javascript",38000);
+            ChartData.Rows.Add("C++",31000);
+            ChartData.Rows.Add("C#",27000);
+            ChartData.Rows.Add("PHP",14000);
+            ChartData.Rows.Add("Perl",14000);
             // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
+            StaticSource source = new StaticSource(ChartData);
             // Create instance of DataModel class
             DataModel model = new DataModel();
             // Add DataSource to the DataModel
@@ -106,9 +90,10 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             pie.Caption.Text = "Most popular programming language";
             //set chart sub title
             pie.SubCaption.Text = "2017-2018";
-            // Render the chart to 'PieChartLiteral' literal control
-            Literal1.Text = pie.Render();
-        }
+            pie.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
+        }     
     }
 }
 ```
@@ -116,8 +101,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PieChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.PieChart" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -161,57 +144,36 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Create data table
-            DataTable primaryData = new DataTable();
-
-            // Retrieve data using database query
-            string query = "select [languages], [User] from dbo.UserPerLanguage";
-            string connectionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-
-            // Connection string
-            connectionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(primaryData);
-                }
-            }
-            
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Programming Language", typeof(System.String));
+            ChartData.Columns.Add("Users", typeof(System.Double));
+            ChartData.Rows.Add("Java", 62000);
+            ChartData.Rows.Add("Python", 46000);
+            ChartData.Rows.Add("Javascript", 38000);
+            ChartData.Rows.Add("C++", 31000);
+            ChartData.Rows.Add("C#", 27000);
+            ChartData.Rows.Add("PHP", 14000);
+            ChartData.Rows.Add("Perl", 14000);
             // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
-
+            StaticSource source = new StaticSource(ChartData);
             // Create instance of DataModel class
             DataModel model = new DataModel();
-
             // Add DataSource to the DataModel
             model.DataSources.Add(source);
-
-            // Instantiate doughnut Chart
-            Charts.DoughnutChart doughnut = new Charts.DoughnutChart("doughnut_chart");
-
+            // Instantiate Pie Chart
+            Charts.DoughnutChart donut = new Charts.DoughnutChart("doughnut_chart");
             // Set Chart's width and height
-            doughnut.Width.Pixel(500);
-            doughnut.Height.Pixel(350);
-
+            donut.Width.Pixel(500);
+            donut.Height.Pixel(400);
             // Set DataModel instance as the data source of the chart
-            doughnut.Data.Source = model;
-
+            donut.Data.Source = model;
             // Set Chart Title
-            doughnut.Caption.Text = "Most popular programming language";
-            doughnut.SubCaption.Text = "2017-2018";
-            // Render the chart to 'doughnutChartLiteral' literal control
-            Literal1.Text = doughnut.Render();
+            donut.Caption.Text = "Most popular programming language";
+            //set chart sub title
+            donut.SubCaption.Text = "2017-2018";
+            donut.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
@@ -220,8 +182,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="doughnutChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.doughnutChart" %>
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">

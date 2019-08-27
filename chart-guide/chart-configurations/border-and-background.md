@@ -21,6 +21,7 @@ Refer to the code below:
     }
 }
 ```
+
 The chart without border will look like as shown below:
 
 {% embed_chart chart-configurations-border-and-background-example-7.js %}
@@ -55,7 +56,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/5vj22scs/) to edit the above chart.
 
-### Customize Chart Background
+## Customize Chart Background
 
 To customize the chart background, the following attributes are used:
 

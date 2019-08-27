@@ -4,7 +4,7 @@ description: This article outlines the steps to create your first map, widget an
 heading: Create Map in AngularJS Using FusionCharts
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angularjs** directive which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
+FusionCharts is a JavaScript charting library that lets you create interactive charts, gauges, maps, and dashboards using JavaScript. We have built a simple and lightweight **Angularjs** directive, which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
 
 In this page, we'll see how to install FusionCharts and render a gauge using the `angularjs-fusionCharts` directive.
 
@@ -108,13 +108,13 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 
 That completes the installation of FusionCharts and the `angularjs-fusioncharts` directive.
 
-## Create your first map
+## Create Your First Map
 
 In this section, we will create a visualization using the **World Map** showing the average annual population growth.
 
 {% embed_chart getting-started-your-first-map.js %}
 
-## Map data
+## Map Data
 
 The data for the above map is represented in the table below:
 
@@ -133,7 +133,7 @@ FusionCharts accepts data in **JSON** format in which the above entities are den
 
 For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+We have detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
 Following code is the JSON representation of the above table with the required attributes to render the above map.
 
@@ -268,7 +268,7 @@ var World = require('fusioncharts/maps/fusioncharts.world');
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-// Add maps and themes as dependency
+// Add maps and themes as dependencies
 FusionMaps(FusionCharts);
 World(FusionCharts);
 FusionTheme(FusionCharts);
@@ -545,7 +545,7 @@ chartInstance.render()
 
 That's it! Your first map using `angularjs-fusioncharts` is ready.
 
-## Render other maps
+## Render Other Maps
 
 To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally.
 
@@ -1149,7 +1149,7 @@ chartInstance.render()
 
 That's it! The **California** map is ready.
 
-## Problem rendering the chart?
+## Problem Rendering the Chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 

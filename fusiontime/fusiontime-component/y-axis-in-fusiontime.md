@@ -120,6 +120,97 @@ The code is given below:
 
 In the above code, prefix has been set as `$`.
 
+## Configure Null Values
+
+FusionTime allows you to connect the data plots even if you have not specified any value for that particular date or dates. Previously by default, the connecting lines were getting rendered with the same style as of the data plots (only applicable for line and area charts). Starting v1.2.0, FusionTime has configured the default connecting lines to dashed lines. So, now if you have a null data in your time-series chart, by default the connecting line is rendered as dashed lines.
+
+The dashed connecting line helps in interpolating the line/area segment differently and enables you to establish the clarity between the recorded data values and the interpolated values.
+
+The default connecting line looks like as shown in the image below:
+
+<img src="{% site.BASE_URL %}/images/fusiontime-component-connectnulldata.png" alt="ConnectNullData" width="700" height="420">
+
+### Add Styles to Connecting Line
+
+FusionTime allows you to style the connector for the line or area data plot. You can configure the:
+
+- Line thickness,
+
+- Color, and
+
+- type of the connecting line.
+
+Refer to the code given below:
+
+> The code given below can be used you want to configure the connecting line of a particular data plot. The detailed code to configure all the data plots of the chart is given later in the page.
+
+```json
+{
+  "yAxis": [{
+    "plot": [{
+      "type": "line",
+      "connectNullData": "true"
+      "style": {
+        "plot.null": Style Object,
+        "line.null": Style Object,
+        "area.null": Style Object
+      }
+    }]
+  }]
+}
+
+```
+
+In the above code:
+
+* `connectNulldata` attribute has been set to true under `yAxis` object.
+
+* A `style` object has been created under `yAxis` object to style the connecting line for null values.
+
+* `plot.null` object is created to configure the connecting line of the plots in the canvas.
+
+* `line.null` object is created to configure the connecting line of the line chart.
+
+* `area.null` object is created to configure the connecting area of the area chart.
+
+A sample code to style the null data of a simple time-series chart is given below:
+
+```json
+{
+    "type": "timeseries",
+    "renderAt": "container",
+    "width": 800,
+    "height": 600,
+    "dataSource": {
+        data: dataStore,
+        "caption": {
+            "text": "Pollution Report of Yatcha Street"
+        },
+        "subcaption": {
+            "text": "An industrial town"
+        },
+        "yAxis": [{
+            "plot": [{
+                "value": "Pollution",
+                "connectNullData": true,
+                "style": {
+                    "plot.null": {
+                        "stroke-dasharray": "-1",
+                        "stroke": "#FF0000"
+                    },
+                }
+            }],
+            "title": "Pollution Concentration (in ppm)",
+            "min": "130"
+        }]
+    }
+}
+```
+
+The  chart looks like as shown below:
+
+{% embed_ftChart style-connect-null-data %}
+
 ## Dual Y-axis
 
 In some scenarios, you might have data with two measures of different units. For example - temperature in `degree Celsius` and energy in `kilowatt`. This is where a dual Y-Axis comes handy. You can opt to show both the measures on two different Y-Axis in the same canvas. A chart with dual Y-Axis is shown below:

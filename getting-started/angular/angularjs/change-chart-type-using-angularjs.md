@@ -1,7 +1,7 @@
 ---
-title: Change Chart Type at Runtime | FusionCharts
+title: Change Chart Type at Runtime Using AngularJS | FusionCharts
 description: This article will showcase a sample to change the chart type at runtime.
-heading: Change Chart Type at Runtime
+heading: Change Chart Type at Runtime Using AngularJS
 ---
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, update chart type at runtime, and events.
@@ -25,7 +25,7 @@ var angular = require('angular');
 // Require FusionCharts 
 var FusionCharts = require('fusioncharts');
 
-// Include angularjs-fusioncharts 
+// Require angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
@@ -123,9 +123,9 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 </div>
 ```
 
-The above chart has been rendered using the following steps:
+Render the above chart by following the steps mentioned below:
 
-1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries (such as `fusioncharts` and `angularjs-fusioncharts`) and components using `require`.
 
 2. Add the chart and the theme as dependencies to the core.
 
@@ -136,9 +136,9 @@ The above chart has been rendered using the following steps:
 	* `buttonClick` to use the stored chart instance reference to change the chart type.
 
 5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels).
-    * Set the `dataFormat` as JSON.
-    * Embed the json data from `dataSource`.
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and the height (in pixels).
+    * Set the `dataFormat` as `json`.
+    * Embed the JSON data from `dataSource`.
 
-6. Create Radio buttons for **column2d**, **bar2d** and **pie2d** chart using `<input>`.
+6. Create radio buttons for **column2d**, **bar2d** and **pie2d** chart using `<input>`.

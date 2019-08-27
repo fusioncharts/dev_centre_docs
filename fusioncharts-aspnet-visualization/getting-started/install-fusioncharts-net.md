@@ -36,14 +36,18 @@ To install, download `FusionCharts.NET` and follow the steps given below:
 To use NuGet package, please run the following command in the NuGet Package Manage Console:
 
 ```csharp
-Install-Package FusionCharts.Visualization -Version 1.0.1
+Install-Package FusionCharts.Visualization -Version 1.0.4
 ```
 
 Once installed from NuGet, it'll add some assemblies to your web project, and those assemblies will be automatically referenced to your project. It'll also add FusionCharts JavaScript libraries to your project under `Scripts/FusionCharts/` folder.
 
+> You can download the samples for **FusionCharts.NET** from [here](https://github.com/fusioncharts/fusioncharts.net-core-sample).
+
 ## Configuring Export Handler
 
 FusionCharts export handler gets automatically installed, once you install `FusionCharts.Visualization` NuGet package. However, in order to use it, you need to configure the following:
+
+> Starting v1.0.4, **FusionCharts.NET Standard** does not support **Export Handler**.
 
 - Make sure the `PresentationCore` and `WindowsBase` assemblies are referenced in your web project. These assemblies are automatically referenced when you install the NuGet package, but in case if they are not, you have to manually add them.
 

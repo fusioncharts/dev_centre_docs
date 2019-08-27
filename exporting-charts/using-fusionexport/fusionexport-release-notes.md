@@ -4,6 +4,28 @@ description: List of changes made in recent release.
 heading: FusionExport Release Notes
 ---
 
+<h2 class="sub-heading">Version 1.1.1</h2>
+
+<p class="release-date">23rd April 2019</p>
+
+<h4 class="sub-heading">Fixes</h4>
+
+- **No more waiting while downloading:** We have reduced the file size from almost 100MB to 30MB. Don't get too excited we just removed the dependcies which are installed when you are running FusionExport for the first time.
+
+<h2 class="sub-heading">Version 1.1.0</h2>
+
+<p class="release-date">13th March 2019</p>
+
+<h4 class="sub-heading">Fixes</h4>
+
+- **No more Cropping:** While exporting sometimes your PDF file was not getting exported as you had hoped. It is not fixed by changing the logic for viewport handling.
+
+- **Annotations work better now:** Few users have reported issues while exporting with annotations. Guess what? It is now fixed.
+
+<h4 class="sub-heading">New Feature</h4>
+
+- **Support for Headers and Footers:** Wait is now over, most requested feature of adding headers and footers is here!
+
 <h2 class="sub-heading">Version 1.0.3</h2>
 
 <p class="release-date">27th February, 2019</p>
