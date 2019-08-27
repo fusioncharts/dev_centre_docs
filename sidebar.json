@@ -7,12 +7,8 @@
     "children": [{
             "title": "Getting Started",
             "children": [{
-                    "title": "Installation",
-                    "path": ""
-                },
-                {
-                    "title": "Quick start",
-                    "path": ""
+                    "title": "Quick Start Guide",
+                    "path": "/getting-started/react/your-first-chart-using-react"
                 },
                 {
                     "title": "How does it work?",
