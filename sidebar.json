@@ -7,24 +7,20 @@
     "children": [{
             "title": "Getting Started",
             "children": [{
-                    "title": "Installation",
-                    "path": ""
-                },
-                {
-                    "title": "Quick start",
-                    "path": ""
+                    "title": "Quick Start Guide",
+                    "path": "/getting-started/react/your-first-chart-using-react"
                 },
                 {
                     "title": "How does it work?",
-                    "path": ""
+                    "path": "/getting-started/react/how-it-works-react"
                 },
                 {
                     "title": "List of charts",
-                    "path": ""
+                    "path": "/chart-guide/list-of-charts"
                 },
                 {
                     "title": "List of maps",
-                    "path": ""
+                    "path": "/map-guide/list-of-maps"
                 }
             ]
 
