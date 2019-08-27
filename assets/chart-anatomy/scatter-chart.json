@@ -108,7 +108,7 @@
                      },
                      {
                         "linkDesc": "You can also customize the text of tooltip and use values plotted on the chart using macros, learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros"
+                        "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros" 
                      }
                   ]
                }

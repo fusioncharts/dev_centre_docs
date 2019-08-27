@@ -91,7 +91,7 @@
                      },
                      {
                         "linkDesc": "You can highlight data plots by hovering over corresponding legend item using plot highlight effect feature, Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/legend#highlight-a-data-series-via-the-legend"
+                        "linkPath": "/chart-guide/chart-configurations/legend#highlight-a-data-series-via-the-legend" 
                      }
                   ]
                }
