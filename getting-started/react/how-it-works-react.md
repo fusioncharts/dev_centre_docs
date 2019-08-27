@@ -78,7 +78,8 @@ export default class App extends React.Component {
         {...chartConfigs}/>
      );
   }
-} */
+}
+*/
 ```
 
 In the above section of the code, do the following:
