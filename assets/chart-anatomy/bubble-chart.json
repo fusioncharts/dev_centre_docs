@@ -5,8 +5,8 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Pyramid Chart",
-            "imgSrc": "pyramid-chart-anatomy.png",
+            "itemHeader": "Bubble Chart",
+            "imgSrc": "bubble-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
