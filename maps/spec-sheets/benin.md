@@ -5,26 +5,21 @@
 #### JavaScript Alias: maps/benin
 
 Map Name: Benin
-Dimensions (Width x Height): 160x280
-
-
-
-
+Dimensions (Width x Height): 600x460
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
+BJ.OU|OU|Ouémé
+BJ.LI|LI|Littoral
+BJ.CF|CF|Kouffo
+BJ.MO|MO|Mono
+BJ.PL|PL|Plateau
 BJ.AL|AL|Alibori
-BJ.AK|AK|Atacora
+BJ.AK|AK|Atakora
 BJ.AQ|AQ|Atlantique
 BJ.BO|BO|Borgou
 BJ.CL|CL|Collines
-BJ.CF|CF|Couffo
 BJ.DO|DO|Donga
-BJ.LI|LI|Littoral
-BJ.MO|MO|Mono
-BJ.OU|OU|Oueme
-BJ.PL|PL|Plateau
 BJ.ZO|ZO|Zou
-

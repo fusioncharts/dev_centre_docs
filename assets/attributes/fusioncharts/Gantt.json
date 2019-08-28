@@ -1221,7 +1221,7 @@
       },
       {
         "description": "Lets you set the transparency of the hover band for both the `categories` and the `processes` objects. This feature is supported by JavaScript Gantt chart only.",
-        "range": "0 - 100",
+        "range": "1 - 100",
         "type": "Number",
         "name": "hoverBandAlpha"
       },
@@ -1239,7 +1239,7 @@
       },
       {
         "description": "Lets you set the transparency of the hover band for multiple `categories` objects. This feature is supported by JavaScript Gantt chart only.",
-        "range": "0 - 100",
+        "range": "1 - 100",
         "type": "Number",
         "name": "categoryHoverBandAlpha"
       },
@@ -1287,7 +1287,7 @@
       },
       {
         "description": "Lets you set the transparency of the hover color of the connector lines. This feature is supported by JavaScript Gantt chart only.",
-        "range": "0 - 100",
+        "range": "1 - 100",
         "type": "Number",
         "name": "connectorHoverAlpha"
       },
@@ -1311,20 +1311,20 @@
       },
       {
         "description": "Lets you set the transparency of the task fill on mouse hover. This feature is supported by JavaScript Gantt chart only.",
-        "range": "0/1",
-        "type": "Boolean",
+        "range": "1 - 100",
+        "type": "Number",
         "name": "taskHoverFillAlpha"
       },
       {
         "description": "Lets you set the hover color of the task bar slack. This attribute is not applicable when `showSlackAsFill` is set to 0. This feature is supported by JavaScript Gantt chart only.",
-        "range": "",
-        "type": "Number",
+        "range": "Hex Color Code",
+        "type": "Color",
         "name": "slackHoverFillColor"
       },
       {
         "description": "Lets you set the transparency of the hover color of the task bar slack fill. This attribute is not applicable when `showSlackAsFill` is set to 0. This feature is supported by JavaScript Gantt chart only.",
-        "range": "0/1",
-        "type": "Boolean",
+        "range": "1 - 100",
+        "type": "Number",
         "name": "slackHoverFillAlpha"
       }
     ],

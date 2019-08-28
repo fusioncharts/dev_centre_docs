@@ -253,7 +253,6 @@ FusionCharts.addDep(FusionTheme);
 // Create an Instance with map options
 var annualPopulation = new FusionCharts({
 type: 'world', // Map type
-renderAt: 'chart-container', // Container
 width: '800', // Width of the chart
 height: '550', // Height of the chart
 dataFormat: 'json', // Data Type
@@ -340,7 +339,6 @@ FusionTheme(FusionCharts);
 // Create an Instance with map options
 var annualPopulation = new FusionCharts({
 type: 'world', // Map type
-renderAt: 'chart-container', // Container
 width: '800', // Width of the chart
 height: '550', // Height of the chart
 dataFormat: 'json', // Data Type

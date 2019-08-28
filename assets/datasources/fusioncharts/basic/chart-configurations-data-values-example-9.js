@@ -12,6 +12,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
+            "showValues": "1",
             "placeValuesInside": "0",
             "rotateValues": "0",
             "valueFont": "Arial",

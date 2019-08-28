@@ -167,6 +167,160 @@ The code is given below:
 model.DataSourceDateformat = "MM/dd/yyyy hh:mm tt";
 ```
 
+## Add Filter
+
+To apply filter to the data of the chart, set the properties of following filter instances:
+
+### Null
+
+To apply the `null` filter to the data of the chart, set the `nullOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel nullOperation = model.Where("Country is null"); //Country is the Column name
+```
+
+### Not Null
+
+To apply the `not null` filter to the data of the chart, set the `notNullOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel notNullOperation = model.Where("Country is not null");
+```
+
+### Equal
+
+To apply `equal` filter operation, set the `equalOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel equalOperation = model.Where("Country = United States");
+```
+
+### Not Equal
+
+To apply `not equal` filter operation, set the `notEqualOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel notEqualOperation = model.Where("Country != United States");
+```
+
+### Greater
+
+To apply `greater` filter operation, set the `greaterOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel greaterOperation = model.Where("Sales > 100");
+```
+
+### Greater or Equal
+
+To apply `greater or equal` filter operation, set the `greaterEqualOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel greaterEqualOperation = model.Where("Quantity >= 3");
+```
+
+### Less
+
+To apply `less` filter operation, set the `lessOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel lessOperation = model.Where("Sales < 100");
+```
+
+### Less or Equal
+
+To apply `less or equal` filter operation, set the `lessEqualOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel lessEqualOperation = model.Where("Quantity <= 3");
+```
+
+### Between
+
+To apply `between` filter operation, set the `betweenOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel betweenOperation = model.Where("Order Date is between 1/22/2011 to 1/24/2011");
+```
+
+### Begins with
+
+To apply `begins with` filter operation, set the `beginsWithOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel beginsWithOperation = model.Where("Country begins with A");
+```
+
+### Contains
+
+To apply `contains` filter operation, set the `containsOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel containsOperation = model.Where("Country contains d");
+```
+
+### Ends with
+
+To apply `ends with` filter operation, set the `endsWithOperation` instance of the DataModel as shown below:
+
+```csharp
+DataModel endsWithOperation = model.Where("Country ends with a");
+```
+
+### Logical Operator
+
+To apply logical operators to the data, set it's instance of the DataModel as shown below:
+
+**`AND` Operator**
+
+```csharp
+DataModel andOperator = model.Where("Order Date is between 1/22/2011 to 1/24/2011 and Country = United States");
+```
+
+**`OR` Operator**
+
+```csharp
+DataModel orOperator = model.Where("Name starts with I or Name starts with A");
+```
+
+## Pivot
+
+To apply `pivot` operation to the data, set the `pivotModel` instance of the DataModel as shown below:
+
+```csharp
+DataModel pivotModel = model.Pivot(row, column, aggregation);
+```
+
+## Pagination
+
+To code to set the page size is given below:
+
+```csharp
+model.PageSize = 15;
+```
+
+The code to get records from specific pages is given below:
+
+```csharp
+DataModel dataModel = model.GetItemsFromPages(2, 3);
+```
+
+## Top
+
+The code to apply `topRecords` operation is given below:
+
+```csharp
+DataModel newModel = model.TopRecords(5);
+```
+
+## Select
+
+The code to apply `select` operation to the data is given below:
+
+```csharp
+DataModel newModel = model.SelectColumns("Country","Sales");
+```
+
 ## Create/Dispose GroupColumn
 
 ### Create

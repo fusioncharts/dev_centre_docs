@@ -71,7 +71,15 @@ Create the `CombinationChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
@@ -94,17 +102,20 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // initialixe DataModel object
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Single Y-axis Combination Chart 2D";
+
+            // initialize DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\mscombi2d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
-            Charts.CombinationChart combiChart= new Charts.CombinationChart("mscombi2d");
+            Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombi2d");
             // set model as data source
             combiChart.Data.Source = model;
-            // provide field name, which should be rendered as column plot
+            // provide field name, which should be rendered as line column
             combiChart.Data.ColumnPlots("Actual Revenue");
             // provide field name, which should be rendered as line plot
             combiChart.Data.LinePlots("Projected Revenue");
@@ -128,7 +139,60 @@ namespace TestProject
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports Newtonsoft.Json.Converters
+Imports Newtonsoft.Json.Serialization
+Imports Newtonsoft.Json
+Imports System.Net
+Imports System.Text
+
+Namespace TestProject
+    Public Partial Class CombinationChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            ViewData("Title") = "FusionCharts asp.net csharp wrapper samples in MVC6"
+            ViewData("Message") = "Single Y-axis Combination Chart 2D"
+            Dim model As DataModel = New DataModel()
+            Dim jsonFileSource As JsonFileSource = New JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi2d.json")
+            model.DataSources.Add(jsonFileSource)
+            Dim combiChart As Charts.CombinationChart = New Charts.CombinationChart("mscombi2d")
+            combiChart.Data.Source = model
+            combiChart.Data.ColumnPlots("Actual Revenue")
+            combiChart.Data.LinePlots("Projected Revenue")
+            combiChart.Data.AreaPlots("Profit")
+            combiChart.XAxis.Text = "Month"
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)"
+            combiChart.Caption.Text = "Harrys's Supermart"
+            combiChart.SubCaption.Text = "Sales analysis of last year"
+            combiChart.Width.Pixel(600)
+            combiChart.Height.Pixel(500)
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = combiChart.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
@@ -167,7 +231,15 @@ Now, let's learn how to create a 3D single y-axis combination chart with the sam
 
 Create a `CombinationChart.aspx.cs` and refer to the code below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
@@ -190,14 +262,17 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Single Y-axis Combination Chart 3D";
+
             // initialixe DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\mscombi3d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi3d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
-            Charts.CombinationChart combiChart= new Charts.CombinationChart("mscombi3d");
+            Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombi3d");
             // Set threeD
             combiChart.ThreeD = true;
             // set model as data source
@@ -226,7 +301,60 @@ namespace TestProject
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports Newtonsoft.Json.Converters
+Imports Newtonsoft.Json.Serialization
+Imports Newtonsoft.Json
+Imports System.Net
+Imports System.Text
+
+Namespace TestProject
+    Public Partial Class CombinationChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            ViewData("Title") = "FusionCharts asp.net csharp wrapper samples in MVC6"
+            ViewData("Message") = "Single Y-axis Combination Chart 3D"
+            Dim model As DataModel = New DataModel()
+            Dim jsonFileSource As JsonFileSource = New JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi2d.json")
+            model.DataSources.Add(jsonFileSource)
+            Dim combiChart As Charts.CombinationChart = New Charts.CombinationChart("mscombi3d")
+            combiChart.Data.Source = model
+            combiChart.Data.ColumnPlots("Actual Revenue")
+            combiChart.Data.LinePlots("Projected Revenue")
+            combiChart.Data.AreaPlots("Profit")
+            combiChart.XAxis.Text = "Month"
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)"
+            combiChart.Caption.Text = "Harrys's Supermart"
+            combiChart.SubCaption.Text = "Sales analysis of last year"
+            combiChart.Width.Pixel(600)
+            combiChart.Height.Pixel(500)
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = combiChart.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
@@ -294,7 +422,15 @@ Click [here](https://dotnetfiddle.net/fjhtVY) to edit the column chart.
 
 Create a `CombinationChart.aspx.cs` file and refer to the code below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
@@ -317,10 +453,13 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // initialixe DataModel object
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Dual Y-axis Combination Chart 2D";
+
+            // initialize DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\mscombidy2d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombidy2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
@@ -358,7 +497,63 @@ namespace TestProject
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports Newtonsoft.Json.Converters
+Imports Newtonsoft.Json.Serialization
+Imports Newtonsoft.Json
+Imports System.Net
+Imports System.Text
+
+Namespace TestProject
+    Public Partial Class CombinationChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            ViewData("Title") = "FusionCharts asp.net csharp wrapper samples in MVC6"
+            ViewData("Message") = "Dual Y-axis Combination Chart 2D"
+            Dim model As DataModel = New DataModel()
+            Dim jsonFileSource As JsonFileSource = New JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombidy2d.json")
+            model.DataSources.Add(jsonFileSource)
+            Dim combiChart As Charts.CombinationChart = New Charts.CombinationChart("mscombidy2d")
+            combiChart.Data.Source = model
+            combiChart.Data.ColumnPlots("Revenues")
+            combiChart.Data.SplineAreaPlots("Profits")
+            combiChart.Data.SplinePlots("Profit %")
+            combiChart.Data.SecondaryYAxisAsParent("Profit %")
+            combiChart.XAxis.Text = "Month"
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)"
+            combiChart.DualY = True
+            combiChart.SecondaryYAxis.Text = "Profit %"
+            combiChart.Caption.Text = "Revenues and Profit"
+            combiChart.SubCaption.Text = "For last year"
+            combiChart.Width.Pixel(600)
+            combiChart.Height.Pixel(500)
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = combiChart.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
@@ -432,7 +627,15 @@ Click [here](https://dotnetfiddle.net/y6MTkR) to edit the column chart.
 
 Create a `CombinationChart.aspx.cs` file and refer to the code below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
@@ -455,14 +658,17 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Single Y-axis Scroll Combination Chart 2D";
+
             // initialixe DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\scrollcombi2d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombi2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
-            Charts.CombinationChart combiChart= new Charts.CombinationChart("scrollcombi2d");
+            Charts.CombinationChart combiChart = new Charts.CombinationChart("scrollcombi2d");
             // set model as data source
             combiChart.Data.Source = model;
             // enable scrolling
@@ -470,17 +676,13 @@ namespace TestProject
             // provide field name, which should be rendered as line column
             combiChart.Data.ColumnPlots("Actual Revenue");
             // provide field name, which should be rendered as spline area plot
-            combiChart.Data.LinePlots("Projected Revenue");
+            combiChart.Data.SplinePlots("Projected Revenue");
             // provide field name, which should be rendered as spline plot
-            combiChart.Data.AreaPlots("Profit");
+            combiChart.Data.SplineAreaPlots("Profit");
             // Set XAxis caption
             combiChart.XAxis.Text = "Month";
             // Set YAxis caption
             combiChart.PrimaryYAxis.Text = "Amount (in USD)";
-            // enable dual y
-            combiChart.DualY = true;
-            // set secondary y axis text
-            combiChart.SecondaryYAxis.Text = "Profit %";
             // set chart caption
             combiChart.Caption.Text = "Revenues and Profit";
             // Set chart sub caption
@@ -495,7 +697,64 @@ namespace TestProject
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports Newtonsoft.Json.Converters
+Imports Newtonsoft.Json.Serialization
+Imports Newtonsoft.Json
+Imports System.Net
+Imports System.Text
+
+Namespace TestProject
+    Public Partial Class CombinationChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            ViewData("Title") = "FusionCharts asp.net csharp wrapper samples in MVC6"
+            ViewData("Message") = "Dual Y-axis Scroll Combination Chart 2D"
+            Dim model As DataModel = New DataModel()
+            Dim jsonFileSource As JsonFileSource = New JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombidy2d.json")
+            model.DataSources.Add(jsonFileSource)
+            Dim combiChart As Charts.CombinationChart = New Charts.CombinationChart("scrollcombidy2d")
+            combiChart.Data.Source = model
+            combiChart.Scrollable = True
+            combiChart.Data.ColumnPlots("Revenues")
+            combiChart.Data.AreaPlots("Profits")
+            combiChart.Data.LinePlots("Profit %")
+            combiChart.Data.SecondaryYAxisAsParent("Profit %")
+            combiChart.XAxis.Text = "Month"
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)"
+            combiChart.DualY = True
+            combiChart.SecondaryYAxis.Text = "Profit %"
+            combiChart.Caption.Text = "Revenues and Profit"
+            combiChart.SubCaption.Text = "For last year"
+            combiChart.Width.Pixel(600)
+            combiChart.Height.Pixel(500)
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = combiChart.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
@@ -569,7 +828,44 @@ Click [here](https://dotnetfiddle.net/MuaI7i) to edit the column chart.
 
 Create a `CombinationChart.aspx.cs` file and refer to the code below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
+
+
+
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+
+
+
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
@@ -592,10 +888,13 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
+            ViewData["Message"] = "Dual Y-axis Scroll Combination Chart 2D";
+
             // initialixe DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
-            JsonFileSource jsonFileSource = new JsonFileSource(Server.MapPath("DataSources\\scrollcombidy2d.json"));
+            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombidy2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
             // initialize combination chart object
@@ -634,7 +933,64 @@ namespace TestProject
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports Newtonsoft.Json.Converters
+Imports Newtonsoft.Json.Serialization
+Imports Newtonsoft.Json
+Imports System.Net
+Imports System.Text
+
+Namespace TestProject
+    Public Partial Class CombinationChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            ViewData("Title") = "FusionCharts asp.net csharp wrapper samples in MVC6"
+            ViewData("Message") = "Dual Y-axis Scroll Combination Chart 2D"
+            Dim model As DataModel = New DataModel()
+            Dim jsonFileSource As JsonFileSource = New JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombidy2d.json")
+            model.DataSources.Add(jsonFileSource)
+            Dim combiChart As Charts.CombinationChart = New Charts.CombinationChart("scrollcombidy2d")
+            combiChart.Data.Source = model
+            combiChart.Scrollable = True
+            combiChart.Data.ColumnPlots("Revenues")
+            combiChart.Data.AreaPlots("Profits")
+            combiChart.Data.LinePlots("Profit %")
+            combiChart.Data.SecondaryYAxisAsParent("Profit %")
+            combiChart.XAxis.Text = "Month"
+            combiChart.PrimaryYAxis.Text = "Amount (in USD)"
+            combiChart.DualY = True
+            combiChart.SecondaryYAxis.Text = "Profit %"
+            combiChart.Caption.Text = "Revenues and Profit"
+            combiChart.SubCaption.Text = "For last year"
+            combiChart.Width.Pixel(600)
+            combiChart.Height.Pixel(500)
+            combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = combiChart.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 

@@ -7,13 +7,8 @@
 Map Name: Alsharqeyah
 Dimensions (Width x Height): 618x593
 
-
-
-
-
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-01|SH|Al-sharqeyah
-
+| ID  | Short label | Label        |
+| --- | ----------- | ------------ |
+| 01  | SH          | Al-sharqeyah |

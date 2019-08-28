@@ -124,6 +124,156 @@ A pie2D chart configured to show percent values on the chart looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D chart.
 
+## Place values inside the Pie/Doughnut chart
+
+Starting v3.14.0, FusionCharts Suite XT allows you to place the values inside the pie/doughnut slices of a pie and doughnut chart respectively. This helps to improve the overall look as it saves the canvas area outside the chart.
+
+You can place the value inside the slices by setting the value of the newly added attribute `valuePosition` to **inside**. The default value of `valuePosition` attribute is **outside**.
+
+> `valuePosition` attribute can only be applied to 2D charts, i.e., pie2d and doughnut2d charts.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "valuePosition": "inside"
+    }
+}
+```
+
+`valuePosition` attribute can be applied both at `chart` and `data` level, i.e., you can set the position of the individual values of the slices.
+
+Refer to the code below, showing the `valuePosition` attribute for a particular value:
+
+```json
+{
+    "chart": {
+        ...
+    },
+    "data": [{
+            "label": "Food",
+            "value": "285040"
+        },
+        {
+            "label": "Apparels",
+            "value": "146330",
+            "valuePosition": "inside"
+        },
+        {
+            "label": "Electronics",
+            "value": "105070"
+        },
+        {
+            "label": "Household",
+            "value": "49100"
+        }
+    ]
+}
+```
+
+A pie2d with `valuePosition` attribute set to **inside** (at chart level) is shown below:
+
+{% embed_chart value-position-inside-pie-chart-example-17.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/3dts9evm/) to edit the above chart.
+
+In a pie/doughnut charts, changing the position of the value can sometimes overlap each other due to the unavailability of space. For this scenario, a new attribute `minAngleForValue` has been introduced which sets the minimum angle of the pie below which the values will not be visible.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "valuePosition": "inside",
+        "minAngleForValue": "75"
+    }
+}
+```
+
+> This attribute will only work if the `valuePosition` attribute is set to `inside`.
+
+A doughnut chart after applying `valuePosition` and `minAngleForValue` attribute look like:
+
+{% embed_chart value-position-inside-doughnut-chart-example-18.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2m8fskpa/) to edit the above chart.
+
+## Place label inside the Pie/Doughnut Chart
+
+Now that you have already customized the position of the values of a pie/doughnut charts, let's see how to place the labels inside the pie/doughnut slices of a pie and doughnut chart respectively.
+
+You can place the label inside the slices by setting the value of the `labelPosition` attribute to `inside**`**. The default value of `labelPosition` attribute is `outside`.
+
+> `labelPosition` attribute can only be applied to 2D charts, i.e., pie2d and doughnut2d charts.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "labelPosition": "inside"
+    }
+}
+```
+
+`labelPosition` attribute can be applied both at `chart` and `data` level, i.e., you can set the position of the individual labels of the slices.
+
+Refer to the code below, showing the `labelPosition` attribute for a particular value:
+
+```json
+{
+    "chart": {
+        ...
+    },
+    "data": [{
+            "label": "Food",
+            "value": "285040"
+        },
+        {
+            "label": "Apparels",
+            "value": "146330",
+            "labelPosition": "inside"
+        },
+        {
+            "label": "Electronics",
+            "value": "105070"
+        },
+        {
+            "label": "Household",
+            "value": "49100"
+        }
+    ]
+}
+```
+
+A pie2d with `labelPosition` attribute set to `inside` (at chart level) is shown below:
+
+{% embed_chart label-position-inside-pie-chart-example-19.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/t8r1js2y/) to edit the above chart.
+
+In a pie/doughnut charts, changing the position of the label can sometimes overlap each other due to the unavailability of space. For this scenario, a new attribute `minAngleForLabel` has been introduced which sets the minimum scale angle to render the label of the pie/doughnut charts.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "labelPosition": "inside",
+        "minAngleForLabel": "75"
+    }
+}
+```
+
+> This attribute will only work if the `valuePosition` attribute is set to `inside`.
+
+A doughnut chart after applying `labelPosition` and `minAngleForLabel` attribute look like:
+
+{% embed_chart label-position-inside-pie-chart-example-20.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/w834e0pb/) to edit the above chart.
+
 ## Customize the Center Label for a Doughnut Chart
 
 For a doughnut chart, you can configure the default text that will be rendered on the center label. You can also configure the text that will be rendered on the center label when the mouse pointer is hovered over one of the doughnut slices.
@@ -271,6 +421,8 @@ Refer to the code given below:
 
 By default, for pie/doughnut charts, the chart automatically calculates the best fit pie radius based on the data provided. However, you can choose to explicitly set the outer radius of the pie chart. Specify the outer radius of the pie/doughnut chart using `pieRadius` attribute.
 
+> Starting v3.14.0, you can specify the radius of a pie/doughnut chart in both percentage and pixel values.
+
 Refer to the code given below:
 
 ```json
@@ -286,6 +438,49 @@ A pie chart with the outer radius customized looks like this:
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/rds15mvs/) to edit the pie 2D chart.
+
+## Set the radius as a percent value
+
+Now, you already know how to customize the radius of the pie/doughnut chart. Here let's discuss how to configure the radius of the pie/doughnut chart using percent values.
+
+You can set the radius of the pie chart in percent by setting the value of `pieRadius` attribute. When you set the value of `pieRadius` in percent, the radius of the pie is calculated with respect to the chart canvas space.
+
+Refer to the image shown below:
+
+![Percent Value on Pie Chart](/images/percent-value-in-pie-radius.png)
+
+Click [here](http://jsfiddle.net/fusioncharts/7g15v0nq/) to edit the above chart.
+
+In the doughnut chart, you can apply the `pieRadius` attribute to set the radius of the upper threshold of the doughnut chart.
+
+Refer to the image below:
+
+![Percent Value on Doughnut Chart](/images/pie-radius-in-doughnut-chart.png)
+
+Click [here](http://jsfiddle.net/fusioncharts/eh6rsmnt/) to edit the above chart.
+
+To customize the inner radius of the doughnut chart, set the value of `doughnutRadius` attribute in percent.
+
+Refer to the image below:
+
+![Doughnut Radius on Doughnut Chart](/images/percent-value-in-doughnut-radius.png)
+
+In the above image, the `doughnutRadius` has been set to **80%** and as you can see that the percent of the radius has been calculated with respect to the upper threshold of the doughnut chart.
+
+> Starting v3.14.0, you can specify the radius of a pie/doughnut chart in both percentage and pixel values.
+
+Refer to the code given below:
+
+```json
+{
+  "chart": {
+    "pieRadius": "90",
+    "doughnutRadius": "80"
+  }
+}
+```
+
+Click [here](http://jsfiddle.net/fusioncharts/osezmt87/) to edit the above chart.
 
 ## Set the Starting Angle
 
@@ -319,7 +514,6 @@ Refer to the code given below:
     "label": "Household",
     "value": "49100",
     "isSliced": "1"
-  }
 }
 ```
 

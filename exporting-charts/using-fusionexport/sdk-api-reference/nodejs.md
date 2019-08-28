@@ -14,9 +14,9 @@ The constructor of ExportManager takes a config object that can contain host and
 
 **Parameters**
 
-Name | Type | Default Value | Description
---- | --- | --- | ---
-config | Object | {} | The host and port values which will be used when connecting to FusionExport server
+| Name   | Type   | Default Value | Description                                                                        |
+| ------ | ------ | ------------- | ---------------------------------------------------------------------------------- |
+| config | Object | {}            | The host and port values which will be used when connecting to FusionExport server |
 
 **Example**
 
@@ -35,11 +35,11 @@ It returns a promise that resolves to the array filenames of the exported files 
 
 **Parameters**
 
-Name | Type | Default Value | Required | Description
---- | --- | --- | --- | ---
-exportConfig | ExportConfig |  | Yes | Instance of the ExportConfig which will include all export configurations
-outputDirPath | String | . | No | Directory where you want to save the exported file. By default the file will be saved in the same directory from where the script is executed. This field is optional.
-unzipFlag | Boolean | false | No | This parameter allows you to decompress your output bundle into separate files. To allow this behaviour pass true. This field is optional.
+| Name          | Type         | Default Value | Required | Description                                                                                                                                                            |
+| ------------- | ------------ | ------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| exportConfig  | ExportConfig |               | Yes      | Instance of the ExportConfig which will include all export configurations                                                                                              |
+| outputDirPath | String       | .             | No       | Directory where you want to save the exported file. By default the file will be saved in the same directory from where the script is executed. This field is optional. |
+| unzipFlag     | Boolean      | false         | No       | This parameter allows you to decompress your output bundle into separate files. To allow this behaviour pass true. This field is optional.                             |
 
 **Returns**
 
@@ -77,10 +77,10 @@ Takes two argument first one as the key second one as the value. You can find mo
 
 **Parameters**
 
-Name | Type | Default Value | Required | Description
---- | --- | --- | --- | ---
-key | String | null | Yes | Name of the config
-value | String, Number or Boolean | null | Yes | Value of the config
+|       |                           |      | Name | Type                | Default Value | Required | Description        |     |     |     |
+| ----- | ------------------------- | ---- | ---- | ------------------- | ------------- | -------- | ------------------ | --- | --- | --- |
+|       |                           |      | key  | String              | null          | Yes      | Name of the config |     |     |     |
+| value | String, Number or Boolean | null | Yes  | Value of the config |
 
 **Returns**
 
@@ -98,9 +98,9 @@ Takes one argument as the key and returns the value.
 
 **Parameters**
 
-Name | Type | Default Value | Required | Description
---- | --- | --- | --- | ---
-key | String | null | Yes | Name of the config
+|     |     | Name | Type   | Default Value | Required | Description        |     |     |
+| --- | --- | ---- | ------ | ------------- | -------- | ------------------ | --- | --- |
+|     |     | key  | String | null          | Yes      | Name of the config |     |     |
 
 **Returns**
 
@@ -118,9 +118,9 @@ Takes one argument as the key and returns a boolean if it is set or not.
 
 **Parameters**
 
-Name | Type | Default Value | Required | Description
---- | --- | --- | --- | ---
-key | String | null | Yes | Name of the config
+|     | Name | Type   | Default Value | Required | Description        |     |
+| --- | ---- | ------ | ------------- | -------- | ------------------ | --- |
+|     | key  | String | null          | Yes      | Name of the config |     |
 
 **Returns**
 
@@ -138,9 +138,9 @@ Takes one argument as the key and removes that value if it was set.
 
 **Parameters**
 
-Name | Type | Default Value | Required | Description
---- | --- | --- | --- | ---
-key | String | null | Yes | Name of the config
+| Name | Type   | Default Value | Required | Description        |
+| ---- | ------ | ------------- | -------- | ------------------ |
+| key  | String | null          | Yes      | Name of the config |
 
 **Returns**
 
@@ -192,6 +192,75 @@ This option is useful to export your SVG files to the file formats supported by 
 
 ```javascript
 exportConfig.set('inputSVG', 'resources/vector.svg')
+```
+
+#### `template`
+
+Accepts only the template string. Throws an exception if data provided by the user is not a string.
+
+* **Type:** String
+
+**Example**
+
+```javascript
+exportConfig.set('template', '<html>...</html>');
+```
+
+#### `templateWidth`
+
+Sets the width of the viewport in which it will get rendered. Throws an exception when the data provided by the user is not a string or when the parse value of the string is NaN.
+
+* **Type:** String/Number
+
+**Example**
+
+```javascript
+// With a number
+exportConfig.set('templateWidth', 1200);
+
+// With a string
+exportConfig.set('templateWidth', '1200');
+```
+
+#### `templateHeight`
+
+Sets the height of the viewport in which it will get rendered. Throws an exception when the data provided by the user is not a string or when the parsed value of the string is NaN.
+
+* **Type:** String/Number
+
+**Example**
+
+```javascript
+// With a number
+exportConfig.set('templateHeight', 3000);
+
+// With a string
+exportConfig.set('templateHeight', '3000');
+```
+
+#### `templateFormat`
+
+Sets the format of the PDF pages during a PDF export. This option takes priority over templateWidth and templateHeight. Throws an exception when the data provided by the user is not a string or when the format is not in the supported set.
+
+* **Type:** String
+
+**The available options are:**
+
+* `Letter`: 8.5in x 11in
+* `Legal`: 8.5in x 14in
+* `Tabloid`: 11in x 17in
+* `Ledger`: 17in x 11in
+* `A0`: 33.1in x 46.8in
+* `A1`: 23.4in x 33.1in
+* `A2`: 16.5in x 23.4in
+* `A3`: 11.7in x 16.5in
+* `A4`: 8.27in x 11.7in
+* `A5`: 5.83in x 8.27in
+
+**Example**
+
+```javascript
+exportConfig.set('templateFormat', 'A4');
 ```
 
 #### `templateFilePath`

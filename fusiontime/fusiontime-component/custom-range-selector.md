@@ -46,3 +46,91 @@ Refer to the code below:
     }
 }
 ```
+## Add styling
+
+Styling can be applied to following elements of the Custom Range Selector:
+
+* Title
+
+* Container
+
+* Label
+
+* Button
+
+You can add style to the Custom Range Selector using `style` object under `customRangeSelector` object.
+
+> The `customRangeSelector` object should be created under `extensions` object.
+
+Syntax:
+
+```
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "customRangeSelector": {
+                "style": {
+                    "title-text": {}, //Object | String
+                    "title-icon": {}, //Object | String
+                    "title-text:hover": {}, //Object | String
+                    "title-icon:hover": {}, //Object | String
+                    "title-text:active": {}, //Object | String
+                    "title-icon:active": {}, //Object | String
+                    "container": {}, //Object | String
+                    "label": {}, //Object | String
+                    "button-apply": {}, //Object | String
+                    "button-cancel": {}, //Object | String
+                    "button-apply:hover": {}, //Object | String
+                    "button-cancel:hover": {}, //Object | String
+                    "select": {}, //Object | String
+                    "input": {} //Object | String 
+                }
+            }
+        }
+    }
+})
+
+```
+You can also add a different style to the calendar of the Custom Range Selector by adding following style attributes under `style` object of `customRangeSelector` object.
+
+```
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "customRangeSelector": {
+                "style": {
+                    "cal-month": {}, //Object | String
+                    "cal-month:hover": {}, //Object | String
+                    "cal-header": {}, //Object | String
+                    "cal-header:hover": {}, //Object | String
+                    "cal-subheader": {}, //Object | String
+                    "cal-subheader:hover": {}, //Object | String
+                    "cal-body": {}, //Object | String
+                    "cal-body:hover": {}, //Object | String
+                    "cal-monthname": {}, //Object | String
+                    "cal-monthname:hover": {}, //Object | String
+                    "cal-navprev": {}, //Object | String
+                    "cal-navprev:hover": {}, //Object | String
+                    "cal-navnext": {}, //Object | String
+                    "cal-navnext:hover": {}, //Object | String
+                    "cal-weekend": {}, //Object | String
+                    "cal-weekend:hover": {}, //Object | String
+                    "cal-days": {}, //Object | String
+                    "cal-days:hover": {}, //Object | String
+                    "cal-date": {}, //Object | String
+                    "cal-date:hover": {}, //Object | String
+                    "cal-activedate": {}, //Object | String
+                    "cal-activedate:hover": {}, //Object | String
+                    "cal-selecteddate": {}, //Object | String
+                    "cal-selecteddate:hover": {}, //Object | String
+                    "cal-disableddate": {}, //Object | String
+                    "cal-disableddate:hover": {}, //Object | String
+                }
+            }
+        }
+    }
+})
+
+```

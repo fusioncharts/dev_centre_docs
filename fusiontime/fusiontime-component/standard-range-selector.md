@@ -12,7 +12,7 @@ The three sections of Standard Range Selector are:
 
 - **All** - Selects all of the available data values.
 
-- **Contextual time periods** - 1Y | 6M | 3M | 1M | 15D | etc. - You can select and display data for the last one year, six months, three months, one month, or 15 days of the currently visible time interval, respectively. The options of the contextual time periods will vary based on the atomicity of the data and the current data displayed.
+- **Contextual time periods** - 10Y | 5Y | 3Y | 2Y | 1Y | 6M | 3M | 1M | 15D | etc. - You can select and display data for the last ten years, five years, three years, two years, one year, six months, three months, one month, or 15 days of the currently visible time interval, respectively. The options of the contextual time periods will vary based on the atomicity of the data and the current data displayed.
 
 - **Business friendly dates** - YTD | QTD | MTD | WTD - YTD, QTD, MTD, and WTD display data from the beginning of the last year, quarter, month, or week (respectively) of the total time interval in the data to the present date. These options will apppear only if the data is of the current year, quarter, month and week.
 
@@ -39,4 +39,35 @@ Refer to the code below:
         }
     }
 }
+```
+## Add styling
+
+Styling can be applied to the buttons of the Standard Range Selector. 
+
+You can add style to the Standard Range Selector using `style` object under `standardRangeSelector` object.
+
+> The `standardRangeSelector` object should be created under `extensions` object.
+
+Syntax:
+
+```
+new FusionCharts({
+    type: "timeseries",
+    dataSource: {
+        "extensions": {
+            "standardRangeSelector": {
+                "style": {
+                    "button-text": {}, //Object | String
+                    "button-background": {}, //Object | String
+                    "button-text:hover": {}, //Object | String
+                    "button-background:hover": {}, //Object | String
+                    "button-text:active": {}, //Object | String
+                    "button-background:active": {}, //Object | String
+                    "separator": {} //Object | String
+                }
+            }
+        }
+    }
+})
+
 ```

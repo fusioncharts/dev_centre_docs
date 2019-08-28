@@ -83,7 +83,15 @@ Create the `StackedChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
@@ -95,25 +103,20 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class StackedChart : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e) {
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class StackedChart : System.Web.UI.Page 
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
             DataTable ChartData = new DataTable();
-            string query = "select * from ProductRevenue";
-            string connetionstring = null;
-            string serverName = "FusionChartsServer";
-            string databaseName = "FusionchartsSamplesDB";
-            ChartData.Clear();
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+            ChartData.Columns.Add("Quarter", typeof(System.String));
+            ChartData.Columns.Add("Food Products", typeof(System.Double));
+            ChartData.Columns.Add("Non-Food Products", typeof(System.Double));
+            ChartData.Rows.Add("Q1", 11000, 11400);
+            ChartData.Rows.Add("Q2", 15000, 14800);
+            ChartData.Rows.Add("Q3", 13500, 8300);
+            ChartData.Rows.Add("Q4", 15000, 11800);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
@@ -126,17 +129,70 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             stack.XAxis.Text = "Quarter";
             stack.YAxis.Text = "Revenue";
             stack.Data.Source = model;
-            Literal1.Text = stack.Render();
+            stack.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class StackedChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim ChartData As DataTable = New DataTable()
+            ChartData.Columns.Add("Quarter", GetType(System.String))
+            ChartData.Columns.Add("Food Products", GetType(System.Double))
+            ChartData.Columns.Add("Non-Food Products", GetType(System.Double))
+            ChartData.Rows.Add("Q1", 11000, 11400)
+            ChartData.Rows.Add("Q2", 15000, 14800)
+            ChartData.Rows.Add("Q3", 13500, 8300)
+            ChartData.Rows.Add("Q4", 15000, 11800)
+            Dim source As StaticSource = New StaticSource(ChartData)
+            Dim model As DataModel = New DataModel()
+            model.DataSources.Add(source)
+            Dim stack As Charts.StackedChart = New Charts.StackedChart("stacked_chart_db")
+            stack.Width.Pixel(700)
+            stack.Height.Pixel(400)
+            stack.Caption.Text = "Revenue split by product aategory"
+            stack.Caption.Bold = True
+            stack.SubCaption.Text = "for current year"
+            stack.XAxis.Text = "Quarter"
+            stack.YAxis.Text = "Revenue"
+            stack.Data.Source = model
+            stack.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = column.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StackedChart.aspx.cs"
-Inherits="FusionChartsVisualisationWebFormsSamples.Samples.StackedChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head runat="server">

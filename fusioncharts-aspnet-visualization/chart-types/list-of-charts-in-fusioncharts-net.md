@@ -18,9 +18,7 @@ Given below is the list of charts in FusionCharts.NET.
 
 - [Stacked Chart](/fusioncharts-aspnet-visualization/chart-types/stacked-chart-net)
 
-- [Overlapped Chart](/fusioncharts-aspnet-visualization/chart-types/overlapped-chart-net)
-
-- [Scroll Chart](/fusioncharts-aspnet-visualization/chart-types/scroll-charts-net)
+- [Combination Chart](/fusioncharts-aspnet-visualization/chart-types/combination-charts-net)
 
 - [Pie Chart](/fusioncharts-aspnet-visualization/chart-types/pie-doughnut-net)
 

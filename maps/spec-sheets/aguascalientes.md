@@ -7,23 +7,18 @@
 Map Name: Aguascalientes
 Dimensions (Width x Height): 740x570
 
-
-
-
-
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-MX.AG.AG|AG|Aguascalientes
-MX.AG.AS|AS|Asientos
-MX.AG.CA|CA|Calvillo
-MX.AG.CO|CO|Cosío
-MX.AG.LL|LL|El Llano
-MX.AG.JM|JM|Jesús María
-MX.AG.PA|PA|Pabellón de Arteaga
-MX.AG.RR|RR|Rincón de Romos
-MX.AG.SF|SF|San Francisco de los Romo
-MX.AG.SG|SG|San José de Gracia
-MX.AG.TE|TE|Tepezalá
-
+| ID       | Short label | Label                     |
+| -------- | ----------- | ------------------------- |
+| MX.AG.AG | AG          | Aguascalientes            |
+| MX.AG.AS | AS          | Asientos                  |
+| MX.AG.CA | CA          | Calvillo                  |
+| MX.AG.CO | CO          | Cosío                     |
+| MX.AG.LL | LL          | El Llano                  |
+| MX.AG.JM | JM          | Jesús María               |
+| MX.AG.PA | PA          | Pabellón de Arteaga       |
+| MX.AG.RR | RR          | Rincón de Romos           |
+| MX.AG.SF | SF          | San Francisco de los Romo |
+| MX.AG.SG | SG          | San José de Gracia        |
+| MX.AG.TE | TE          | Tepezalá                  |

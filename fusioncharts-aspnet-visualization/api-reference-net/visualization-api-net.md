@@ -298,7 +298,7 @@ These APIs let you configure the x-axis labels.
 | -------------- | ----------- | --------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | `Show`         | boolean     | visualizationObj.Labels.Show = true;                            | Shows/Hides X-axis labels                                                     |
 | `MaxHeight`    | integer     | visualizationObj.Labels.MaxHeight = 500;                        | Sets maximum height of X-axis labels                                          |
-| `Ellipsis`     | boolean     | visualizationObj.Labels.Ellipsis = true;                        | Truncates X-axis label text when it’s too long, and adds ellipsis at the end |
+| `Ellipsis`     | boolean     | visualizationObj.Labels.Ellipsis = true;                        | Truncates X-axis label text when it’s too long, and adds ellipsis at the end  |
 | `Display`      | LabelFormat | visualizationObj.Labels.Display = LabelFormat.DisplayType.AUTO; | Sets display mode for label to `AUTO`, `WRAP`, `STAGGER`, `ROTATE`, or `NONE` |
 | `Rotate`       | boolean     | visualizationObj.Labels.Rotate  = true;                         | Rotates X-axis labels and displays them in a vertical direction               |
 | `Slant`        | boolean     | visualizationObj.Labels.Slant = true;                           | Displays X-axis labels in a slanted manner                                    |
@@ -369,6 +369,18 @@ FusionCharts.Net has the ability to export the rendered charts in JPG, PNG, SVG,
 | `ExportedFileName` | string                           | visualizationObj.Export<br/>.ExportedFileName = "FusionChartsExportedFile.pdf";                                | Sets the name of the exported file                                                                       |
 | `Window`           | Exporter<br/>.ExportTargetWindow | visualizationObj.Export<br/>.Window = Exporter.ExportTargetWindow.BLANK;                                       | Sets whether the exported chart opens in the same window or a new window<br/>1. `BLANK`<br/>2. `SELF`    |
 | `Action`           | Exporter<br/>.ExportAction       | visualizationObj.Export<br/>.Action = Exporter.ExportAction.SAVE;                                              | Sets the action to be performed when the Export chart option is clicked.<br/>1. `SAVE`<br/>2. `DOWNLOAD` |
+
+### `Palette Colors`
+
+`PaletteColors` allows you to specify your custom list of hex colors for the visualization. The list of colors have to be separated from comma, e.g., `"#5d62b5", "#afafaf", "#f2726", "#ffc533", "#62b58f", "#afafaf"`. The chart will cycle through the list of specified colors and then render the chart accordingly.
+
+**Syntax**
+
+```csharp
+// Type: String
+// Argument Type: String Array
+visualization.PaletteColors("#5d62b5", "#afafaf", "#f2726", "#ffc533", "#62b58f", "#afafaf");
+```
 
 ## Chart Specific API's
 
@@ -495,6 +507,22 @@ The syntax to disable more than one canvas in a multivariate chart is shown belo
 
 ```csharp
 timeSeries.MultiCanvas.Enable = false;
+```
+
+### `Binning`
+
+> `Binning` only have support on **time-series** charts.
+
+The syntax to apply data binning to the chart is shown below:
+
+```csharp
+timeSeries.TimeAxis.Binning.Year(1); // Binning to display yearly data
+timeSeries.TimeAxis.Binning.Month(2,4); // Binning to display monthly data
+timeSeries.TimeAxis.Binning.Day(2); // Binning to display daily data
+timeSeries.TimeAxis.Binning.Hour(1); // Binning to display hourly data
+timeSeries.TimeAxis.Binning.Minute(1,3,5,6); // Binning to display per minute data
+timeSeries.TimeAxis.Binning.Second(2,4); // Binning to display per second data
+timeSeries.TimeAxis.Binning.MilliSecond(5); // Binning to display per millisecond data
 ```
 
 ### `YAxis`
