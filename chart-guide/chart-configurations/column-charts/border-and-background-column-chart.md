@@ -6,6 +6,8 @@ heading: Borders and Backgrounds
 
 A chart's background refers to the whole area on which it is drawn, and it is enclosed by the chart border, the rectangle around a chart's background.
 
+> To configure the border and background of the chart, we will only update the [FusionCharts Constructor](/getting-started/react/how-it-works-react#create-fusioncharts-constructor). Rest of the code remains same as shown in [Create Column Charts](/chart-guide/standard-charts/line-area-and-column-charts#column-chart-with-single-dataplot).
+
 ![Border and Background](/images/chart-configurations-border-and-background-image-1.png)
 
 ## Show/Hide Chart Borders

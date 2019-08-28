@@ -6,6 +6,8 @@ heading: Number Format
 
 FusionCharts Suite XT offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale.
 
+> To configure the number format in the chart, we will only update the [FusionCharts Constructor](/getting-started/react/how-it-works-react#create-fusioncharts-constructor). Rest of the code remains same as shown in [Create Column Charts](/chart-guide/standard-charts/line-area-and-column-charts#column-chart-with-single-dataplot).
+
 ## Round off Decimal Places
 
 To round off the decimals for all the numbers on the chart set the number of decimal places to which all the numbers on the chart will be rounded off to using the `decimals` attribute. Valid range is from `0` to `10`.

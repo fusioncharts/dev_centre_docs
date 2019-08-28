@@ -6,6 +6,8 @@ heading: Fonts
 
 Font properties include the font family, size, and color for the text rendered inside and outside the chart canvas.
 
+> To configure the font properties of the chart, we will only update the [FusionCharts Constructor](/getting-started/react/how-it-works-react#create-fusioncharts-constructor). Rest of the code remains same as shown in [Create Column Charts](/chart-guide/standard-charts/line-area-and-column-charts#column-chart-with-single-dataplot).
+
 ## Customize Base Font Group
 
 The base font group is used to customize the font properties for the text rendered on the chart itself. To customize the base fonts follow the steps given below:
