@@ -6,6 +6,8 @@ heading: Change the Size
 
 FusionCharts Suite XT lets you specify the dimensions of charts either in pixels or percentage values, relative to the containers. If the size is specified in pixels, then the dimensions of a chart remain constant, no matter the viewing device or screen size. However, if the dimensions are set as a percentage of the container, the chart converts that `%` value into pixels while rendering. When the container size changes, the chart is automatically resized accordingly.
 
+> To configure the size of the chart, we will only update the [FusionCharts Constructor](/getting-started/react/how-it-works-react#create-fusioncharts-constructor). Rest of the code remains same as shown in [Create Column Charts](/chart-guide/standard-charts/line-area-and-column-charts#column-chart-with-single-dataplot).
+
 ## Set Width and Height in Pixels
 
 To set the `width` and `height` you just need to provide the numeric values, and not add `px` at the end of such values.
