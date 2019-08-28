@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for rendering Fusion
 heading: How It Works?
 ---
 
-In this section, you will see how the different sections of the code for the first chart work. Before going through this article, refer to the <<Installation>> and <<Quick Start Guide>> to get started.
+In this section, you will see how the different sections of the code for the first chart work. Before going through this article, refer to the [Quick Start Guide](/getting-started/react/your-first-chart-using-react) to get started.
 
 ## Import the libraries
 
