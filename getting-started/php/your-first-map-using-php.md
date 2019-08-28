@@ -18,7 +18,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 To install the FusionCharts Suite, follow the steps below:
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
 * Copy and paste the `fusioncharts.php` file from `integrations > php > fusioncharts-wrapper` in your project folder.
 

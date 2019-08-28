@@ -4,7 +4,7 @@ description: In this section we will learn how to create a simple map showing th
 heading: Simple Data Driven Maps
 ---
 
-> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite) while upgrading to __v3.13.0__.
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite-xt) while upgrading to __v3.13.0__.
 
 In the map given below, you can see the populations of the different continents in the world. 
 

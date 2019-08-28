@@ -4,7 +4,7 @@ description: If you need to extend this further, you can tap into the JavaScript
 heading: Listening to Map Events
 ---
 
-> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite) while upgrading to **v3.13.0**.
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite-xt) while upgrading to **v3.13.0**.
 
 You can use FusionCharts Suite XT to configure standard interactivity for items like markers, tooltips and legend, through the map attributes itself. However, if you need to extend this further, you can tap into the JavaScript events raised by each map, and then build your custom behavior over it. You can listen to events related to `entities`, `markers`, and `connectors`, which are specific to maps. You can also use these events to tightly integrate maps with your own applications and add interactivity to your visualizations.
 

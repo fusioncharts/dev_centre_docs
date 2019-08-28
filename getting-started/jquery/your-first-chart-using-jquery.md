@@ -60,7 +60,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
 <div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="language-html">
 &lt;head&gt;
