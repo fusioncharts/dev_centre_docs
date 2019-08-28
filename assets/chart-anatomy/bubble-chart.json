@@ -12,8 +12,8 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "30.5%",
-                  "topPosition": "68.5%",
+                  "leftPosition": "35.5%",
+                  "topPosition": "16.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
@@ -33,8 +33,8 @@
                   "annotationName": "Sub-caption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "52%",
-                  "topPosition": "75%",
+                  "leftPosition": "57%",
+                  "topPosition": "22%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
@@ -50,8 +50,8 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "78%",
-                  "topPosition": "25%",
+                  "leftPosition": "90%",
+                  "topPosition": "27%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
@@ -76,51 +76,22 @@
                },
                {
                   "annotationNumber": "5",
-                  "annotationName": "Legend",
-                  "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
-                  "annotationDescLinkPath": null,
-                  "leftPosition": "65%",
-                  "topPosition": "69%",
-                  "annotationLinks": [{
-                        "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll etc. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/legend#configure-legend-icon-size"
-                     },
-                     {
-                        "linkDesc": "You can customize legend position on the chart either to right or bottom of the chart. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/legend#set-the-legend-position"
-                     },
-                     {
-                        "linkDesc": "You can highlight data plots by hovering over corresponding legend item using plot highlight effect feature, Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/legend#highlight-a-data-series-via-the-legend"
-                     }
-                  ]
-               },
-               {
-                  "annotationNumber": "6",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "83.5%",
-                  "topPosition": "42.5%",
+                  "leftPosition": "75.5%",
+                  "topPosition": "40.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
                      },
                      {
                         "linkDesc": "You can also customize the text of tooltip and use values plotted on the chart using macros, learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros"
+                        "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros" 
                      }
                   ]
-               },
-               {
-                  "annotationNumber": "7",
-                  "annotationName": "Data Values",
-                  "annotationDesc": "Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
-                  "leftPosition": "83%",
-                  "topPosition": "54%",
-                  "annotationLinks": []
                }
+               
             ]
          }
       ]
