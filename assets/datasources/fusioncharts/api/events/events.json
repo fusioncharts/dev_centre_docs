@@ -6,7 +6,6 @@
     "scope": "component",
     "about": "Triggered just before chart data is passed to the chart.",
     "description": "Triggered just before chart data is passed to the chart. \n\n All events, when triggered, will provide a parameter for the handler - __eventObj__ (object containing information generic to all events).",
-    "sudocode": "{\r\n   events: {\r\n    beforeDataUpdate: function(eventObj, dataObj) {\r\n        ...\r\n    },\r\n    beforeRender: function(eventObj, dataObj) {\r\n        ...\r\n    }\r\n   },\r\n}",
     "examples": {
       "codeFile": "beforeDataUpdate",
       "fiddle": "https://jsfiddle.net/fusioncharts/b1cadey2/"
