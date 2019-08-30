@@ -463,7 +463,7 @@ Let's customize the mean in box and whisker chart.
 
 ### Show/Hide the Mean Icon
 
-To show the mean deviation icon in the legend set the `showMean` attribute to `1`. This attribute will specify whether the icon representing the mean of the dataset will be shown in the legend. The default value of this attribute is `0` which hides the icon. 
+To show the mean icon in the legend set the `showMean` attribute to `1`. This attribute will specify whether the icon representing the mean of the dataset will be shown in the legend. The default value of this attribute is `0` which hides the icon.
 
 > The above attribute can be used with the chart, dataset and data objects.
 
@@ -476,6 +476,7 @@ Refer to the code given below:
     }
 }
 ```
+
 A box and whisker chart with the mean icon shown in the legend looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-7.js %}
