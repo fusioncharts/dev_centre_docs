@@ -89,7 +89,7 @@ Refer to the code below:
 ```javascript
 “dataSource”: {
     "navigator": {
-        "enabled": “Boolean”
+        "enabled": 1
     }
 }
 ```
@@ -118,7 +118,7 @@ Refer to the code below:
 ```javascript
 "dataSource": {
     "navigator": {
-        "enabled": Boolean,
+        "enabled": 1,
         "window": {
             "style": {
                 "handle": {
@@ -154,7 +154,7 @@ Refer to the code below:
 ```javascript
 "dataSource": {
     "navigator": {
-        "enabled": Boolean,
+        "enabled": 1,
         "scrollbar": {
             "style": {
                 "button": {
