@@ -492,7 +492,7 @@ To customize the mean icon in the box and whisker chart, follow the points given
 
 * Set the `meanIconShape` attribute to specify the shape of the mean icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the mean icon is the triangle (i.e., a polygon with three sides).
 
-* Set the `meanIconColor` attribute to specify the hex color code of the mean icon.
+* Set the `meanIconColor` attribute to specify the hex color code of the mean icon. This attribute works only when the value of `meanIconShape` attribute is set to `polygon`.
 
 * Set the `meanIconAlpha` attribute to set the transparency of the mean icon. This attribute takes values between `0` (transparent) and `100` (opaque).
 
