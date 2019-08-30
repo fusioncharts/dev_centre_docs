@@ -4,20 +4,20 @@ description: All maps in FusionCharts Suite XT have pre defined unique internal 
 heading: Custom Entity IDs
 ---
 
-> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite) while upgrading to __v3.13.0__.
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite-xt) while upgrading to __v3.13.0__.
 
 All maps in FusionCharts Suite XT have predefined unique internal IDs to reference each entity. However, if you need to name these entities differently, you can do that by creating custom IDs for entities on a map. Apart from re-defining identities, you can also re-define the short name and long name of each identity, and use these as the label or tooltip of the map.
 
 Consider the example dataset given in the table below. It shows the population numbers for the different continents. It also has columns for the "FusionCharts Internal ID" for each continent and a custom defined Desired ID.
 
-Continent|Desired ID|FusionCharts Internal ID|Population (in millions)|
--|-|-|-
-North America|NAM|NA|515|
-South America|SAM|SA|373|
-Europe|EUR|EU|727|
-Africa|AFR|AF|885|
-Asia|ASI|AS|3875|
-Australia|AUS|AU|32|
+| Continent     | Desired ID | FusionCharts Internal ID | Population (in millions) |
+| ------------- | ---------- | ------------------------ | ------------------------ |
+| North America | NAM        | NA                       | 515                      |
+| South America | SAM        | SA                       | 373                      |
+| Europe        | EUR        | EU                       | 727                      |
+| Africa        | AFR        | AF                       | 885                      |
+| Asia          | ASI        | AS                       | 3875                     |
+| Australia     | AUS        | AU                       | 32                       |
 
 In this example, assume that you want to rename the internal ID for North America from `NA` to `NAM`, that of South America from `SA` to `SAM`, and so on. You can do this by defining new IDs for entities within the `entitydef` array as part of the `dataSource` of the map.
 

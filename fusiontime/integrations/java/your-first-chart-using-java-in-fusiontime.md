@@ -16,7 +16,7 @@ Install FusionCharts and the JSP wrapper component using following steps:
 
 * Copy and paste the `fusioncharts.java` file from `integrations > java > fusioncharts-wrapper` in your project folder.
 
-* Include the FusionCharts JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+* Include the FusionCharts JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
 * Include the **FusionTime** file to render time-series charts.
 
