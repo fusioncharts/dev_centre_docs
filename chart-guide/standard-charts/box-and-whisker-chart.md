@@ -504,12 +504,13 @@ Refer to the code below:
     "chart": {
         "meanIconRadius": "5",
         "meanIconSides": "3",
-        "meanIconShape": "triangle",
-        "meanIconColor": "ff0000,
+        "meanIconShape": "polygon",
+        "meanIconColor": "ff0000",
         "meanIconAlpha": "70"
     }
 }
 ```
+
 The  chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-8.js %}
@@ -531,6 +532,7 @@ Refer to the code given below:
     }
 }
 ```
+
 A box and whisker chart rendered with mean connectors looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-9.js %}
