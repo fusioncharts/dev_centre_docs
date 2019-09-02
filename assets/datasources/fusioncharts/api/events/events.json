@@ -672,14 +672,6 @@
           }
         }
       }
-    },
-    "info": {
-      "heading": "",
-      "description": ""
-    },
-    "alert": {
-      "heading": "",
-      "description": ""
     }
   },
   "legendPointerDragStart": {
