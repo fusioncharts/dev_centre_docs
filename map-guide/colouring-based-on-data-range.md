@@ -4,7 +4,7 @@ description: A gradient scale allows you to specify colors associated with speci
 heading: Coloring Based on Data Range
 ---
 
-> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite) while upgrading to __v3.13.0__.
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite-xt) while upgrading to __v3.13.0__.
 
 You have to use color ranges to define entity colors based on values, in order to set up a [simple data driven map](/map-guide/simple-data-driven-maps). Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 
 

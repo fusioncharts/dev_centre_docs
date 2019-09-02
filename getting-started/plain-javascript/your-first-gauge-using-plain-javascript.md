@@ -52,7 +52,7 @@ Install **FusionCharts** using any of the following steps:
 <div><strong>To install the **FusionCharts** Suite follow the steps below:</strong></div>
 <div>
     <ol>
-        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
         <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>

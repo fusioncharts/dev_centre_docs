@@ -39,7 +39,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install the FusionCharts package and the `vue-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionCharts map renderer.</div>
 <div class='mt-20'>5. Include the map definition file.</div>
 <div class='mt-20'>6. Include the FusionCharts theme file to apply style to the charts.</div>
@@ -66,7 +66,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install the FusionCharts package and the `vue-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionCharts map renderer.</div>
 <div class='mt-20'>5. Include the map definition file.</div>
 <div class='mt-20'>6. Include the FusionCharts theme file to apply style to the charts.</div>

@@ -4,7 +4,7 @@ description: Maps as part of FusionCharts Suite XT support two types of drill do
 heading: Add Drill Down to Maps
 ---
 
-> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite) while upgrading to __v3.13.0__.
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite-xt) while upgrading to __v3.13.0__.
 
 Using the simple drill down method, you can specify custom URLs or JavaScript methods to be invoked for each entity or marker on your map. When you click on the respective entity, the map will invoke that method, or redirect to the specific URL. If it's a URL, you can configure whether to open the URL in the same page, a new window, a pop-up, or a frame.
 

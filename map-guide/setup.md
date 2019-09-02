@@ -6,7 +6,7 @@ heading: Setup
 
 ## Install maps
 
-> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite) while upgrading to __v3.13.0__.
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite-xt) while upgrading to __v3.13.0__.
 
 You install maps automatically, as part of the FusionCharts Suite XT package. For detailed instructions on installing FusionCharts Suite XT or FusionMaps XT, click [here](/installation/client-side-frameworks/install-using-plainjs). Once installed, ensure that `fusioncharts.js` and `fusioncharts.maps.js` files are present in the `fusioncharts` folder. If you want to use any specific map, you also need to paste its definition files in the `fusioncharts/maps/folder`.
 

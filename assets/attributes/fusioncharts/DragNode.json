@@ -2623,6 +2623,12 @@
         "name": "imageNode"
       },
       {
+        "description": "This attribute is used to specify the URL of an external image (JPG/PNG) on the node of the chart.",
+        "range": "URL",
+        "type": "FusionCharts Link Format",
+        "name": "imageURL"
+      },
+      {
         "description": "Vertical alignment of image in the node - TOP, MIDDLE or BOTTOM",
         "range": "TOP, MIDDLE or BOTTOM",
         "type": "String",
@@ -2737,7 +2743,7 @@
         "name": "hoverRadius"
       }
     ],
-    "description": "Attributes of the `data` object, child of the `dataset` object, are used to define the values to be plotted for individual data series.\n\nThe `dataset` and `data` objects defined for one data series look like this:\n\n<pre class=\"language-javascript\"><code>\n\"dataset\"[\n{\n\"seriesname\": \"Previous Year\",\n\"data\": [\n{\n\"value\": \"10000\",\n\"value\": \"11500\",\n\"value\": \"12500\",\n\"value\": \"15000\"\n}\n]\n}\n]\n</code></pre>"
+    "description": "Attributes of the `data` object, child of the `dataset` object, are used to define the values to be plotted for individual data series."
   },
   {
     "table": "The connectors Object",
