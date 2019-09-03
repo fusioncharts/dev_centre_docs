@@ -13,7 +13,6 @@
         /**
          * @description
          * Triggered when the default behavior of the dataLoadRequested event is cancelled by calling the eventObj.preventDefault() method.
-         *
          * @param {Object} eventObj: An object containing all the details related to this event like eventId, sender (the chart object itself), etc.
          * @param {Object} dataObj: An object containing all the details related to the data being loaded like data format, url, etc.
          */
