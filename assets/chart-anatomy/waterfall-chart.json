@@ -5,8 +5,8 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Kagi Chart",
-            "imgSrc": "kagi-chart-anatomy.png",
+            "itemHeader": "Waterfall Chart",
+            "imgSrc": "waterfall-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
