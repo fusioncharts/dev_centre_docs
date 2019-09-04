@@ -73,15 +73,6 @@
                },
                {
                   "annotationNumber": "5",
-                  "annotationName": "X-Axis Title",
-                  "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "46%",
-                  "topPosition": "76%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "6",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
@@ -90,7 +81,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "7",
+                  "annotationNumber": "6",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
@@ -99,7 +90,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "8",
+                  "annotationNumber": "7",
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
@@ -108,7 +99,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "9",
+                  "annotationNumber": "8",
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
@@ -120,7 +111,7 @@
                   }]
                },
                {
-                  "annotationNumber": "10",
+                  "annotationNumber": "9",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
