@@ -1466,9 +1466,88 @@
                     ]
                 },
                 {
+                    "title": "Bulb gauge",
+                    "children": [{
+                            "title": "Gauge anatomy",
+                            "path": ""
+                        },
+                        {
+                            "title": "Create Bulb gauge",
+                            "path": ""
+                        },
+                        {
+                            "title": "Gauge configurations",
+                            "children": [{
+                                    "title": "Change size",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Border & background",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Number formats",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load external logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                }
+
+
+                            ]
+                        },
+                        {
+                            "title": "Chart components",
+                            "children": [{
+                                    "title": "Caption & sub-caption",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Dials",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Ticks",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Tooltips",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Toolbar",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Legend",
+                                    "path": ""
+                                }
+
+                            ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
+                        }
+                    ]
+                },
+                {
                     "title": "Cylinder gauge",
                     "children": [{
-                            "title": "Gauage anatomy",
+                            "title": "Gauge anatomy",
                             "path": ""
                         },
                         {
