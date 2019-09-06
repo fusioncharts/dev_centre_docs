@@ -81,6 +81,7 @@ It offers all the general-purpose charts like column, bar, line, area, pie, comb
 | Chart Type                                                          | JavaScript Alias      |
 | ------------------------------------------------------------------- | --------------------- |
 | [Scroll Column 2D](/chart-attributes/scrollcolumn2d)                | scrollcolumn2d        |
+| [Scroll Bar 2D](/chart-attributes/scrollbar2d)                      | scrollbar2d           |
 | [Scroll Line 2D](/chart-attributes/scrollline2d)                    | scrollline2d          |
 | [Scroll Area 2D](/chart-attributes/scrollarea2d)                    | scrollarea2d          |
 | [Scroll Stacked Column 2D](/chart-attributes/scrollstackedcolumn2d) | scrollstackedcolumn2d |
