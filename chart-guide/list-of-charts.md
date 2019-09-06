@@ -63,7 +63,10 @@ It offers all the general-purpose charts like column, bar, line, area, pie, comb
 | [Multi-series Column 3D + Line - Single Y Axis](/chart-attributes/mscolumnline3d)                | mscolumnline3d          |
 | [Stacked Column2D + Line single Y Axis](/chart-attributes/stackedcolumn2dline)                   | stackedcolumn2dline     |
 | [Stacked Column3D + Line single Y Axis](/chart-attributes/stackedcolumn3dline)                   | stackedcolumn3dline     |
+| [Stacked Column2D + Line Dual Y Axis](/chart-attributes/stackedcolumn2dlinedy)                   | stackedcolumn2dlinedy   |
+| [Stacked Area + Line Dual Y Axis](/chart-attributes/stackedarea2dlinedy)                         | stackedarea2dlinedy     |
 | [Multi-series 2D Dual Y Combination Chart (Column + Line + Area)](/chart-attributes/mscombidy2d) | mscombidy2d             |
+| [Multi-series 3D Dual Y Combination Chart (Column + Line + Area)](/chart-attributes/mscombidy3d) | mscombidy3d             |
 | [Multi-series Column 3D + Line - Dual Y Axis](/chart-attributes/mscolumn3dlinedy)                | mscolumn3dlinedy        |
 | [Stacked Column 3D + Line Dual Y Axis](/chart-attributes/stackedcolumn3dlinedy)                  | stackedcolumn3dlinedy   |
 | [Multi-series Stacked Column 2D + Line Dual Y Axis](/chart-attributes/msstackedcolumn2dlinedy)   | msstackedcolumn2dlinedy |
@@ -78,16 +81,18 @@ It offers all the general-purpose charts like column, bar, line, area, pie, comb
 
 ### Scroll Charts
 
-| Chart Type                                                          | JavaScript Alias      |
-| ------------------------------------------------------------------- | --------------------- |
-| [Scroll Column 2D](/chart-attributes/scrollcolumn2d)                | scrollcolumn2d        |
-| [Scroll Bar 2D](/chart-attributes/scrollbar2d)                      | scrollbar2d           |
-| [Scroll Line 2D](/chart-attributes/scrollline2d)                    | scrollline2d          |
-| [Scroll Area 2D](/chart-attributes/scrollarea2d)                    | scrollarea2d          |
-| [Scroll Stacked Column 2D](/chart-attributes/scrollstackedcolumn2d) | scrollstackedcolumn2d |
-| [Scroll Stacked Bar 2D](/chart-attributes/scrollstackedbar2d)       | scrollstackedbar2d    |
-| [Scroll Combination 2D (Single Y)](/chart-attributes/scrollcombi2d) | scrollcombi2d         |
-| [Scroll Combination 2D (Dual Y)](/chart-attributes/scrollcombidy2d) | scrollcombidy2d       |
+| Chart Type                                                                                                  | JavaScript Alias              |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| [Scroll Column 2D](/chart-attributes/scrollcolumn2d)                                                        | scrollcolumn2d                |
+| [Scroll Bar 2D](/chart-attributes/scrollbar2d)                                                              | scrollbar2d                   |
+| [Scroll Line 2D](/chart-attributes/scrollline2d)                                                            | scrollline2d                  |
+| [Scroll Area 2D](/chart-attributes/scrollarea2d)                                                            | scrollarea2d                  |
+| [Scroll Stacked Column 2D](/chart-attributes/scrollstackedcolumn2d)                                         | scrollstackedcolumn2d         |
+| [Scroll Stacked Bar 2D](/chart-attributes/scrollstackedbar2d)                                               | scrollstackedbar2d            |
+| [Scroll Combination 2D (Single Y)](/chart-attributes/scrollcombi2d)                                         | scrollcombi2d                 |
+| [Scroll Combination 2D (Dual Y)](/chart-attributes/scrollcombidy2d)                                         | scrollcombidy2d               |
+| [Scroll Multi-series Stacked Column 2D + Line Dual Y Axis](/chart-attributes/scrollmsstackedcolumn2dlinedy) | scrollmsstackedcolumn2dlinedy |
+| [Scroll Multi-series Stacked Column 2D](/chart-attributes/scrollmsstackedcolumn2d)                          | scrollmsstackedcolumn2d       |
 
 ## FusionWidgets XT
 
