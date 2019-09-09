@@ -476,6 +476,13 @@
 		"xls": false
 	},
 	{
+		"name": "Scroll Bar 2D",
+		"json": "ScrollBar2D",
+		"code": "xt-attr-scrollbar.js",
+		"alias": "scrollbar2d",
+		"xls": false
+	},
+	{
 		"name": "Scroll Column 2D",
 		"json": "ScrollColumn2D",
 		"code": "xt-attr-scrollcolumn2d.js",
