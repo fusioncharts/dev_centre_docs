@@ -15,7 +15,7 @@
             "labeldisplay": "WRAP",
             "linethickness": "3",
             "numVisiblePlot": "12",
-            "scrollheight": "10",
+            "scrollWidth": "10",
             "flatScrollBars": "1",
             "scrollShowButtons": "0",
             "scrollColor": "#cccccc",
