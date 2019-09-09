@@ -12,11 +12,15 @@ The types of scroll charts available in the FusionCharts Suite XT are :
 
 - Scroll Column 2D Chart
 
+- Scroll Bar 2D Chart
+
 - Scroll Line 2D Chart
 
 - Scroll Area 2D Chart
 
 - Scroll Stacked Column 2D Chart
+
+- Scroll Stacked Bar 2D Chart
 
 - Scroll Combination 2D Chart (Single Y)
 

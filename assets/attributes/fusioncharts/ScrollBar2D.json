@@ -22,7 +22,7 @@
         "name": "animationDuration"
       },
       {
-        "description": "FusionCharts XT uses the concept of Color Palettes. Each chart has 5 pre-defined color palettes which you can choose from. Each palette renders the chart in a different color theme. ",
+        "description": "FusionCharts XT offers the concept of Color Palettes. Each chart has 5 pre-defined color palettes which you can choose from. Each palette renders the chart in a different color theme. ",
         "range": "1-5",
         "type": "Number",
         "name": "palette"
@@ -40,48 +40,29 @@
         "name": "showLabels"
       },
       {
-        "description": "This attribute can be used to set the maximum height for the x-axis labels (data labels) excluding the x-axis title. If any label goes beyond this height, the label will be truncated. In stagger mode, the number of stagger lines will be reduced if they exceed this value.",
-        "range": "In Pixels",
-        "versionsince": "3.5.0",
-        "type": "Number",
-        "name": "maxLabelHeight"
-      },
-      {
-        "description": "Using this attribute, you can customize the alignment of data labels (x-axis labels). There are 5 options: AUTO, WRAP, STAGGER, ROTATE or NONE. By default, this attribute is set to AUTO mode which means that the alignment of the data labels is determined automatically depending on the size of the chart. WRAP wraps the label text if it is too long to fit in one line. ROTATE rotates the labels vertically. STAGGER divides the labels into multiple lines.",
-        "range": "'AUTO', 'WRAP', 'STAGGER', 'ROTATE', 'NONE'",
-        "type": "String",
-        "name": "labelDisplay"
-      },
-      {
-        "description": "When enabled in auto mode, long data labels are truncated by adding ellipses to prevent them from overflowing the chart background. The default value is 1.",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.2.1",
-        "name": "useEllipsesWhenOverflow"
-      },
-      {
-        "description": "This attribute lets you set whether the data labels will show up as rotated labels on the chart.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "rotateLabels"
-      },
-      {
-        "description": "If you've opted to show rotated labels on chart, this attribute lets you set the configuration whether the labels will show as slanted labels or fully vertical ones.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "slantLabels"
-      },
-      {
         "description": "By default, all the labels are displayed on the chart. However, if you've a set of streaming data (like name of months or days of week), you can opt to show every n-th label for better clarity. This attribute just lets you do so. When a value greater than 1 (n) is set to this attribute, the first label from left and every label at the n-th position from left will be displayed. e.g., a chart showing data for 12 months and set with `labelStep: 3` will show labels for January, April, July, and October. The rest of the labels will be skipped.",
         "range": "1 or above",
         "type": "Number",
         "name": "labelStep"
       },
       {
-        "description": "If you've opted for STAGGER mode as `labelDisplay`, using this attribute you can control how many lines to stagger the label to. By default, all labels are displayed in a single line.",
-        "range": "2 or above",
+        "description": "Restricts the maximum length of data labels in terms of percentage of the charts width that the data labels can occupy. If a data label is longer than the specified percentage width then it will either be wrapped or get truncated, subject to availability of vertical space. Unnecessary space is not reserved for the data labels, in case all of them are shorter than the specified maximum width.",
+        "range": "1-100",
         "type": "Number",
-        "name": "staggerLines"
+        "name": "maxLabelWidthPercent"
+      },
+      {
+        "description": "Restricts the minimum length of data labels in terms of percentage of the chart's width that the data labels can occupy. The space thus calculated stays reserved even if the label width is less than the minimum width.",
+        "range": "1-100",
+        "type": "Number",
+        "name": "minLabelWidthPercent"
+      },
+      {
+        "description": "This attribute lets you set whether the overflowing data labels will be truncated by adding ellipses.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2.1",
+        "name": "useEllipsesWhenOverflow"
       },
       {
         "description": "Sets the configuration whether data values will be displayed along with the data plot on chart.",
@@ -90,19 +71,13 @@
         "name": "showValues"
       },
       {
-        "description": "If you've opted to show data values, you can rotate them using this attribute.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "rotateValues"
-      },
-      {
         "description": "If you've opted to show data values, you can show them inside the columns using this attribute. By default, the data values show outside the column.",
         "range": "0/1",
         "type": "Boolean",
         "name": "placeValuesInside"
       },
       {
-        "description": "Whether to show chart limit values. If not specified `showYAxisValues` attribute overrides this value.",
+        "description": "Whether to show chart limit values.If not specified `showYAxisValues` attribute overrides this value.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showLimits"
@@ -114,7 +89,7 @@
         "name": "showDivLineValues"
       },
       {
-        "description": "Whether to apply the shadow effects for data plot.",
+        "description": "Whether to show bar shadows.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showShadow"
@@ -139,10 +114,10 @@
         "name": "clickURLOverridesPlotLinks"
       },
       {
-        "description": "Maximum allowed column width",
+        "description": "Sets the maximum allowed bar height.",
         "range": "In Pixels",
         "type": "Number",
-        "name": "maxColWidth"
+        "name": "maxBarHeight"
       },
       {
         "description": "This attribute lets you set whether the y-axis lower limit will be 0 (in case of all positive values on chart) or should the y-axis lower limit adapt itself to a different figure based on values provided to the chart.",
@@ -151,10 +126,11 @@
         "name": "setAdaptiveYMin"
       },
       {
-        "description": "When the chart renders, you can opt to scroll to the end of the chart (to show data at extreme right) by setting this attribute as 1.",
+        "description": "Uses the same data plot color for data labels.",
         "range": "0/1",
         "type": "Boolean",
-        "name": "scrollToEnd"
+        "versionsince": "3.5.0",
+        "name": "useDataPlotColorForLabels"
       },
       {
         "description": "This attribute, when set to __1__, indicates to the chart that the text (rendered on the chart) may contain RTL characters and the textual display has to be managed accordingly. ",
@@ -162,12 +138,6 @@
         "type": "Number",
         "versionsince": "3.7.0",
         "name": "hasRTLText"
-      },
-      {
-        "description": "This attribute lets you enable/disable the highlight effect, in the form of a `fadeout`, for the data plots corresponding to a legend item. When this attribute is enabled and the mouse pointer is hovered over a legend item label, plots belonging to the other data series fadeout, by reducing their opacity.\n\n The fadeout effect can be customized by specifying the fadeout color and opacity using the `color` and `alpha` attributes. Eg. `fadeout|color=#ff0000, alpha=60`",
-        "range": "",
-        "type": "String",
-        "name": "plotHighlightEffect"
       },
       {
         "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
@@ -740,17 +710,30 @@
     "table": "Chart Axis Configuration Attributes",
     "attrs": [
       {
-        "description": "If you hide a dataset using legend icon, this attribute (when set to `1`) will compute the axes limit with respect to maximum and minimum value of the visible dataset(s). \n\nDefault value: 0",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.11.0",
-        "name": "transposeAxis"
-      },
-      {
         "description": "This attribute if set to _0_, hides the x-axis of the chart. \n\n__Default value__: 1",
         "range": "0/1",
         "type": "Boolean",
         "name": "showXAxisLine"
+      },
+      {
+        "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Left",
+        "range": "Left, Right",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "xAxisPosition"
+      },
+      {
+        "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Bottom",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "yAxisPosition"
+      },
+      {
+        "description": "Sets the transparency of the x-axis line. Will work only when _showxaxisline_ is set to 1.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "axisLineAlpha"
       },
       {
         "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Bottom",
@@ -773,28 +756,23 @@
         "name": "xAxisLineColor"
       },
       {
-        "description": "Sets the thickness of the x-axis line of the chart.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "xAxisLineThickness"
-      },
-      {
-        "description": "This attribute if set to _0_, hides the y-axis of the chart. \n\n__Default value__: 1",
+        "description": "This attribute when set to '1', allows you to align the x-axis name with respect to the height of the chart. When set to '0', the x-axis name is aligned with respect to the height of the canvas.",
         "range": "0/1",
         "type": "Boolean",
-        "name": "showYAxisLine"
+        "versionsince": "3.2.2",
+        "name": "centerXaxisName"
       },
       {
-        "description": "Sets color of the y-axis of the chart.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "yAxisLineColor"
+        "description": "If you do not wish to rotate x-axis name, set this as 0. It specifically comes to use when you've special characters (UTF8) in your x-axis name that do not show up in rotated mode.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "rotateXAxisName"
       },
       {
-        "description": "Sets the thickness of the y-axis line of the chart.",
-        "range": "In Pixels",
+        "description": "If you opt to not rotate x-axis name, you can choose a maximum width that will be applied to x-axis name.",
+        "range": "(In Pixels)",
         "type": "Number",
-        "name": "yAxisLineThickness"
+        "name": "xAxisNameWidth"
       },
       {
         "description": "FusionCharts XT y-axis is divided into vertical sections using div (divisional) lines. Each div line assumes a value based on its position. Using this attribute you can set whether to show those div line (y-axis) values or not. This attribute shows or hides the y-axis divisional lines and limits. The values of `showLimits` and `showDivLineValues`, if specified explicitly, overrides the value of this attribute.",
@@ -807,18 +785,6 @@
         "range": "1 or above",
         "type": "Number",
         "name": "yAxisValuesStep"
-      },
-      {
-        "description": "If you do not wish to rotate y-axis name, set this as 0. It specifically comes to use when you've the special characters (UTF-8) in your y-axis name that do not show up in rotated mode.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "rotateYAxisName"
-      },
-      {
-        "description": "If you opt to not rotate y-axis name, you can choose a maximum width that will be applied to y-axis name.",
-        "range": "(In Pixels)",
-        "type": "Number",
-        "name": "yAxisNameWidth"
       },
       {
         "description": "This attribute helps you explicitly set the lower limit of the chart. If you don't specify this value, it is automatically calculated by FusionCharts XT based on the data provided by you.",
@@ -1156,12 +1122,6 @@
         "name": "bgImageScale"
       },
       {
-        "description": "This attribute if set to _1_, shows a border around the canvas of the chart. \n\n__Default value__: 0",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showcanvasborder"
-      },
-      {
         "description": "This attribute sets the background color for the chart canvas. You can set any hex color code as the value of this attribute. To specify a gradient as canvas background color, separate the hex color codes of each color in the gradient using comma. Example: #FF5904, #FFFFFF.",
         "range": "Hex Color Code",
         "type": "Color",
@@ -1184,6 +1144,12 @@
         "range": "0-360",
         "type": "Number",
         "name": "canvasBgAngle"
+      },
+      {
+        "description": "This attribute if set to _1_, shows a border around the canvas of the chart. \n\n__Default value__: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showcanvasborder"
       },
       {
         "description": "Lets you specify canvas border color.",
@@ -1264,7 +1230,7 @@
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "If you wish to plot columns with round edges and fill them with a glass effect gradient, set this attribute to 1. The following functionalities will not work when this attribute is set to 1: `showShadow` attribute doesn't work any more. If you want to remove shadow from columns, you'll have to over-ride the shadow with a new shadow style (applied to DATAPLOT) with alpha as 0. Plot fill properties like gradient color, angle etc. will not work any more, as the colors for gradient are now calculated by the chart itself. Plot border properties also do not work in this mode. Also, you cannot render the border as dashed in this mode.",
+        "description": "If you wish to plot bars with round edges and fill them with a glass effect gradient, set this attribute to 1. The following functionalities will not work when this attribute is set to 1: `showShadow` attribute doesn't work any more. Plot fill properties like gradient color, angle etc. will not work any more, as the colors for gradient are now calculated by the chart itself. Plot border properties also do not work in this mode. Also, you cannot render the border as dashed in this mode.",
         "range": "0/1",
         "type": "Boolean",
         "name": "useRoundEdges"
@@ -1282,16 +1248,16 @@
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for column, area, pie border",
-        "range": "0-5",
-        "type": "Number",
-        "name": "plotBorderThickness"
-      },
-      {
         "description": "Alpha for column, area, pie border",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
+      },
+      {
+        "description": "Thickness for column, area, pie border",
+        "range": "0-5",
+        "type": "Number",
+        "name": "plotBorderThickness"
       },
       {
         "description": "Whether the border around the data plots should be rendered using dashed lines. \n\n__Default value__: 0 (border rendered using straight lines)",
@@ -1330,13 +1296,19 @@
         "name": "plotFillAlpha"
       },
       {
-        "description": "You can globally add a gradient color to the entire plot of chart by specifying the second color as this attribute. For example, if you've specified individual colors for your columns and now you want a gradient that ends in white. You need to specify FFFFFF (white) as this color and the chart will now draw plots as gradient.",
+        "description": "You can globally add a gradient color to the entire plot of chart by specifying the second color as this attribute. For example, if you've specified individual colors for your dataplots and now you want a gradient that ends in white. You need to specify FFFFFF (white) as this color and the chart will now draw plots as gradient.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "plotGradientColor"
       },
       {
-        "description": "Set the minimum height in pixel of a column above which the data values will be visible.",
+        "description": "Gradient color is a color added globally to the entire plot of chart by specifying the second color in an attribute. This attribute sets the gradient color to _true_. \n\n__Default value__: 1",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "usePlotGradientColor"
+      },
+      {
+        "description": "Set the minimum height in pixel of a bar above which the data values will be visible.",
         "range": "In Pixels",
         "type": "Number",
         "versionsince": "3.14.0",
@@ -1692,22 +1664,22 @@
         "name": "showZeroPlaneValue"
       },
       {
-        "description": "Whether to show alternate colored horizontal grid bands.",
+        "description": "Whether to show alternate colored vertical grid bands.",
         "range": "0/1",
         "type": "Boolean",
-        "name": "showAlternateHGridColor"
+        "name": "showAlternateVGridColor"
       },
       {
-        "description": "Color of the alternate horizontal grid bands.",
+        "description": "Color of the alternate vertical grid bands.",
         "range": "Hex Color Code",
         "type": "Color",
-        "name": "alternateHGridColor"
+        "name": "alternateVGridColor"
       },
       {
-        "description": "Alpha (transparency) of the alternate horizontal grid bands.",
+        "description": "Alpha (transparency) of the alternate vertical grid bands.",
         "range": "0 - 100",
         "type": "Number",
-        "name": "alternateHGridAlpha"
+        "name": "alternateVGridAlpha"
       }
     ],
     "description": " Using this set of attributes, you can control the properties of divisional lines, zero plane and alternate color bands. Divisional Lines are horizontal or vertical lines running through the canvas. Each divisional line signifies a smaller unit of the entire axis thus aiding the users in interpreting the chart. The zero plane is a 2D/3D plane that signifies the 0 position on the chart. If there are no negative numbers on the chart, you won't see a visible zero plane. Alternate color bands are colored blocks between two successive divisional lines. "
@@ -1957,7 +1929,7 @@
         "name": "formatNumber"
       },
       {
-        "description": "Configuration whether to add K (thousands) and M (millions) to a number after truncating and rounding it - e.g., if `formatNumberScale` is set to 1, 10434 will become 1.04K (with decimalPrecision set to 2 places). Same with numbers in millions - an M will be added at the end.",
+        "description": "Configuration whether to add K (thousands) and M (millions) to a number after truncating and rounding it - e.g., if `formatNumberScale` is set to 1, 1043 will become 1.04K (with decimals set to 2 places). Same with numbers in millions - an M will be added at the end.",
         "range": "0/1",
         "type": "Boolean",
         "name": "formatNumberScale"
@@ -2015,7 +1987,7 @@
         "name": "numberPrefix"
       },
       {
-        "description": "Using this attribute, you could add prefix to all the numbers visible on the graph. For example, to represent all figures quantified as per annum on the chart, you could specify this attribute to '/a' to show like 40000/a, 50000/a.",
+        "description": "Using this attribute, you could add a suffix to all the numbers visible on the graph. For example, to represent all figures quantified as per annum on the chart, you could specify this attribute to '/a' to show like 40000/a, 50000/a.",
         "range": "Character",
         "type": "String",
         "name": "numberSuffix"
@@ -2107,6 +2079,287 @@
       }
     ],
     "description": " Using the attributes below, you can define the generic font properties for all the text on the chart. These attributes allow you a high level control over font properties. If you intend to specify font properties for individual chart elements (like Caption, sub-caption etc.), you'll need to use the Styles feature of FusionCharts XT. Using Styles, you can also specify advanced font properties like Bold, Italics, HTML Mode etc. "
+  },
+  {
+    "table": "Tooltip Attributes",
+    "attrs": [
+      {
+        "description": "Whether to show tool tip on chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showToolTip"
+      },
+      {
+        "description": "Background color for tool tip.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "toolTipBgColor"
+      },
+      {
+        "description": "Font color for the tool-tip.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "toolTipColor"
+      },
+      {
+        "description": "Border color for tool tip.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "toolTipBorderColor"
+      },
+      {
+        "description": "Sets the border transparency for tool tip.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "tooltipBorderAlpha"
+      },
+      {
+        "description": "The character specified as the value of this attribute separates the name and value displayed in tool tip.",
+        "range": "",
+        "type": "String",
+        "name": "toolTipSepChar"
+      },
+      {
+        "description": "Whether to show shadow for tool-tips on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showToolTipShadow"
+      },
+      {
+        "description": "Sets the transparency of the tooltip.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "tooltipbgalpha"
+      },
+      {
+        "description": "Sets the border radius of the tooltip.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "tooltipborderradius"
+      },
+      {
+        "description": "Sets the border thickness of the tooltip.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "tooltipborderthickness"
+      },
+      {
+        "description": "This attribute sets the vertical space between the value and the border of the tooltip. If you want more space between the value and the border, you can use this attribute to control it.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "toolTipPadding"
+      },
+      {
+        "description": "Specify custom text for the tooltip \n\n You can either specify a constant string as the tooltip text or you can use variable values from the data level by prefixing a __$__ to the attribute name, for example, __$name__, __$value__.",
+        "range": "",
+        "type": "String",
+        "name": "plottooltext"
+      }
+    ],
+    "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details. "
+  },
+  {
+    "table": "Toolbar Attributes",
+    "attrs": [
+      {
+        "description": "Where to position the toolbar on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",
+        "range": "TL, TR, BL, BR, CC",
+        "type": "String",
+        "versionsince": "3.11.3",
+        "name": "toolbarPosition"
+      },
+      {
+        "description": "Sets the toolbox position on the chart with respect to x-axis.",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.11.3",
+        "name": "toolbarX"
+      },
+      {
+        "description": "Sets the toolbox position on the chart with respect to y-axis.",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.11.3",
+        "name": "toolbarY"
+      },
+      {
+        "description": "Sets the horizontal alignment of the toolbar on the chart.",
+        "range": "Left, Right",
+        "type": "String",
+        "versionsince": "3.11.3",
+        "name": "toolbarHAlign"
+      },
+      {
+        "description": "Sets the vertical alignment of the toolbar on the chart",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionsince": "3.11.3",
+        "name": "toolbarVAlign"
+      },
+      {
+        "description": "Sets the color of the toolbar buttons.",
+        "range": "Any (color code without the # prefix)",
+        "type": "Color",
+        "name": "toolbarButtonColor"
+      },
+      {
+        "description": "Enables/disables display of tooltips for toolbar buttons.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showToolBarButtonTooltext"
+      },
+      {
+        "description": "You can change the scale of the toolbar by specifying a value for this attribute.",
+        "range": "",
+        "type": "Number",
+        "name": "toolbarButtonScale"
+      }
+    ],
+    "description": "Using this set of attributes, you can customize the toolbar on the chart. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping."
+  },
+  {
+    "table": "Attributes for Exporting Charts",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX?",
+        "name": "exportEnabled"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether the menu items related to export (e.g., Save as JPEG etc.) will appear in the context menu of chart.",
+        "name": "exportShowMenuItem"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Lets you configure what output formats to allow for export of chart, in the export context menu, and also customize the label for each menu item. The attribute value should be a pipe (&#124;) delimited separated key-value pair. Example: `exportFormats: 'PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File'`",
+        "name": "exportFormats"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "In case of server side exporting, this refers to the path of the server-side export handler (the ready-to-use scripts that we provide).In case of client-side exporting, this refers to the DOM-Id of FusionCharts Export component that is embedded in your web page, along with the chart.",
+        "name": "exportHandler"
+      },
+      {
+        "type": "String",
+        "range": "'save' or 'download'",
+        "description": "In case of server-side exporting, the action specifies whether the exported image will be sent back to client as download, or whether it'll be saved on the server.",
+        "name": "exportAction"
+      },
+      {
+        "type": "String",
+        "range": "'_self' or '_blank'",
+        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window.",
+        "name": "exportTargetWindow"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Name of JavaScript function that'll be called back when export process has finished in case of:Client side exportBatch exportServer-side export using 'save' as action",
+        "name": "exportCallback"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Using this attribute you can specify the name (excluding the extension) of the output (export) file.",
+        "name": "exportFileName"
+      }
+    ],
+    "description": "These attributes allow you to control the saving of chart as image, SVG or XLSX."
+  },
+  {
+    "table": "Data Plot Hover Effects",
+    "attrs": [
+      {
+        "description": "Whether to enable hover effect on charts for all elements",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showHoverEffect"
+      },
+      {
+        "description": "Whether to enable hover effect on charts for data plots (e.g., column, pie) only",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "plotHoverEffect"
+      },
+      {
+        "description": "Specifies the hover color for the data plots",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "plotFillHoverColor"
+      },
+      {
+        "description": "Specifies the hover alpha for data plots",
+        "range": "1 - 100",
+        "type": "Number",
+        "name": "plotFillHoverAlpha"
+      },
+      {
+        "description": "This attribute specifies the hover color for the bars.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "barHoverColor"
+      },
+      {
+        "description": "This attribute specifies the transparency of the bar when you hover.",
+        "range": "1 - 100",
+        "type": "Number",
+        "name": "barHoverAlpha"
+      },
+      {
+        "description": "Specifies the gradient color for the data plots when hovered. For example, if you've specified individual colors and now you want hover color that ends in white, You need to specify it.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "plotHoverGradientColor"
+      },
+      {
+        "description": "Helps you specify the ratio of gradient colors when hovered.",
+        "range": "",
+        "type": "Number",
+        "name": "plotHoverRatio"
+      },
+      {
+        "description": "This attribute specifies the angle of the gradient color when hovered.",
+        "range": "",
+        "type": "Number",
+        "name": "plotHoverAngle"
+      },
+      {
+        "description": "Sets the color of the border of plot when hovered.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "plotBorderHoverColor"
+      },
+      {
+        "description": "Sets the thickness of the border of plot when hovered.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "plotBorderHoverThickness"
+      },
+      {
+        "description": "When a data plot is hovered, this attribute is used to specify whether the data plot border will be rendered as a dashed line. \n\n__Default value__: 0 (border rendered using straight lines)",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "plotBorderHoverDashed"
+      },
+      {
+        "description": "When a data plot is hovered, this attribute is used to set the length of each dash if the border around the data plots are rendered using dashed lines.",
+        "range": "In pixels",
+        "type": "Number",
+        "name": "plotBorderHoverDashLen"
+      },
+      {
+        "description": "When a data plot is hovered, this attribute is used to set the gap between consecutive dashes if the border around the data plots are rendered using dashed lines.",
+        "range": "In pixels",
+        "type": "Number",
+        "name": "plotBorderHoverDashGap"
+      }
+    ],
+    "description": "If you wish to show an effect on the data plot (column, line anchor, pie etc.) when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."
   },
   {
     "table": "Data Label Cosmetics",
@@ -2234,269 +2487,6 @@
     "description": "These attributes let you configure the cosmetics of all data labels of the chart."
   },
   {
-    "table": "Tooltip Attributes",
-    "attrs": [
-      {
-        "description": "Whether to show tool tip on chart.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showToolTip"
-      },
-      {
-        "description": "Background color for tool tip.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "toolTipBgColor"
-      },
-      {
-        "description": "Font color for the tool-tip.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "toolTipColor"
-      },
-      {
-        "description": "Border color for tool tip.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "toolTipBorderColor"
-      },
-      {
-        "description": "Sets the border transparency for tool tip.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "tooltipBorderAlpha"
-      },
-      {
-        "description": "The character specified as the value of this attribute separates the name and value displayed in tool tip.",
-        "range": "",
-        "type": "String",
-        "name": "toolTipSepChar"
-      },
-      {
-        "description": "For scroll charts, FusionCharts XT shows the following information in tool tip (unless tool text is explicitly defined): &quot;Series Name, Category Name, Data Value&quot;. This attribute lets you control whether series name will show up in tool tip or not.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "seriesNameInToolTip"
-      },
-      {
-        "description": "Whether to show shadow for tool-tips on the chart.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showToolTipShadow"
-      },
-      {
-        "description": "Specify custom text for the tooltip \n\n You can either specify a constant string as the tooltip text or you can use variable values from the data level by prefixing a __$__ to the attribute name, for example, __$name__, __$value__.",
-        "range": "",
-        "type": "String",
-        "name": "plottooltext"
-      }
-    ],
-    "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details. "
-  },
-  {
-    "table": "Toolbar Attributes",
-    "attrs": [
-      {
-        "description": "Where to position the toolbar on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",
-        "range": "TL, TR, BL, BR, CC",
-        "type": "String",
-        "versionsince": "3.11.3",
-        "name": "toolbarPosition"
-      },
-      {
-        "description": "Sets the toolbox position on the chart with respect to x-axis.",
-        "range": "",
-        "type": "Number",
-        "versionsince": "3.11.3",
-        "name": "toolbarX"
-      },
-      {
-        "description": "Sets the toolbox position on the chart with respect to y-axis.",
-        "range": "",
-        "type": "Number",
-        "versionsince": "3.11.3",
-        "name": "toolbarY"
-      },
-      {
-        "description": "Sets the horizontal alignment of the toolbar on the chart.",
-        "range": "Left, Right",
-        "type": "String",
-        "versionsince": "3.11.3",
-        "name": "toolbarHAlign"
-      },
-      {
-        "description": "Sets the vertical alignment of the toolbar on the chart",
-        "range": "Top, Bottom",
-        "type": "String",
-        "versionsince": "3.11.3",
-        "name": "toolbarVAlign"
-      },
-      {
-        "description": "Sets the color of the toolbar buttons.",
-        "range": "Any (color code without the # prefix)",
-        "type": "Color",
-        "name": "toolbarButtonColor"
-      },
-      {
-        "description": "Enables/disables display of tooltips for toolbar buttons.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showToolBarButtonTooltext"
-      },
-      {
-        "description": "You can change the scale of the toolbar by specifying a value for this attribute.",
-        "range": "",
-        "type": "Number",
-        "name": "toolbarButtonScale"
-      }
-    ],
-    "description": "Using this set of attributes, you can customize the toolbar on the chart. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping."
-  },
-  {
-    "table": "Attributes for Exporting Charts",
-    "attrs": [
-      {
-        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "exportEnabled"
-      },
-      {
-        "description": "In case of server-side exporting, the action specifies whether the exported image will be sent back to client as download, or whether it'll be saved on the server. \n\n__Default value__: download",
-        "range": "'save' or 'download'",
-        "type": "String",
-        "name": "exportAction"
-      },
-      {
-        "description": "In case of server side exporting, this refers to the path of the server-side export handler (the ready-to-use scripts that we provide).",
-        "range": "",
-        "type": "String",
-        "name": "exportHandler"
-      },
-      {
-        "description": "Lets you configure what output formats to allow for export of chart, in the export context menu, and also customize the label for each menu item. The attribute value should be a pipe (&#124;) delimited separated key-value pair. Example: `exportFormats: 'PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File'`",
-        "range": "",
-        "type": "String",
-        "name": "exportFormats"
-      },
-      {
-        "description": "This attributes sets the modes of export. To enable client-side exporting, set this attribute to __client__. \n\n__Default value__: auto. \n\n__Note__: Starting v3.12.1, the `exportMode` attribute replaces the `exportAtClientSide` attribute. However, you don’t need to make any changes to the existing setup because, the FusionCharts library comes with the proper mapping already provided.",
-        "type": "String",
-        "versionsince": "3.12.1",
-        "name": "exportMode"
-      },
-      {
-        "description": "Whether the menu items related to export (e.g., Save as JPEG etc.) will appear in the context menu of chart.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "exportShowMenuItem"
-      },
-      {
-        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
-        "range": "'_self' or '_blank'",
-        "type": "String",
-        "name": "exportTargetWindow"
-      },
-      {
-        "description": "Using this attribute you can specify the name (excluding the extension) of the output (export) file.",
-        "range": "",
-        "type": "String",
-        "name": "exportFileName"
-      }
-    ],
-    "description": "These attributes allow you to control the saving of chart as image, SVG or XLSX."
-  },
-  {
-    "table": "Data Plot Hover Effects",
-    "attrs": [
-      {
-        "description": "Whether to enable hover effect on charts for all elements",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showHoverEffect"
-      },
-      {
-        "description": "Whether to enable hover effect on charts for data plots (e.g., column, pie) only",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "plotHoverEffect"
-      },
-      {
-        "description": "Specifies the hover color for the data plots",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "plotFillHoverColor"
-      },
-      {
-        "description": "Specifies the hover alpha for data plots",
-        "range": "1 - 100",
-        "type": "Number",
-        "name": "plotFillHoverAlpha"
-      },
-      {
-        "description": "This attribute specifies the hover color for the columns.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "columnHoverColor"
-      },
-      {
-        "description": "This attribute specifies the transparency of the column when you hover.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "columnHoverAlpha"
-      },
-      {
-        "description": "Specifies the gradient color for the data plots when hovered. For example, if you've specified individual colors and now you want hover color that ends in white, You need to specify it.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "plotHoverGradientColor"
-      },
-      {
-        "description": "Helps you specify the ratio of gradient colors when hovered.",
-        "range": "",
-        "type": "Number",
-        "name": "plotHoverRatio"
-      },
-      {
-        "description": "This attribute specifies the angle of the gradient color when hovered.",
-        "range": "",
-        "type": "Number",
-        "name": "plotHoverAngle"
-      },
-      {
-        "description": "Sets the color of the border of plot when hovered.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "plotBorderHoverColor"
-      },
-      {
-        "description": "Sets the thickness of the border of plot when hovered.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "plotBorderHoverThickness"
-      },
-      {
-        "description": "When a data plot is hovered, this attribute is used to specify whether the data plot border will be rendered as a dashed line. \n\n__Default value__: 0 (border rendered using straight lines)",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "plotBorderHoverDashed"
-      },
-      {
-        "description": "When a data plot is hovered, this attribute is used to set the length of each dash if the border around the data plots are rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "plotBorderHoverDashLen"
-      },
-      {
-        "description": "When a data plot is hovered, this attribute is used to set the gap between consecutive dashes if the border around the data plots are rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "plotBorderHoverDashGap"
-      }
-    ],
-    "description": "If you wish to show an effect on the data plot (column, line anchor, pie etc.) when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."
-  },
-  {
     "table": "Chart Padding & Margins",
     "attrs": [
       {
@@ -2506,37 +2496,37 @@
         "name": "captionPadding"
       },
       {
-        "description": "Using this, you can set the distance between the top end of x-axis title and the bottom end of data labels (or canvas, if data labels are not to be shown).",
+        "description": "Using this, you can set the distance between the x-axis title and left end of data labels (or canvas, if data labels are not to be shown).",
         "range": "In Pixels",
         "type": "Number",
         "name": "xAxisNamePadding"
       },
       {
-        "description": "Using this, you can set the distance between the right end of y-axis title and the start of y-axis values (or canvas, if the y-axis values are not to be shown).",
+        "description": "Using this, you can set the distance between the y-axis title and the start of y-axis values (or canvas, if the y-axis values are not to be shown).",
         "range": "In Pixels",
         "type": "Number",
         "name": "yAxisNamePadding"
       },
       {
-        "description": "This attribute helps you set the horizontal space between the canvas left edge and the y-axis values or trend line values (on left/right side). This is particularly useful, when you want more space between your canvas and y-axis values.",
+        "description": "This attribute helps you set the vertical space between the canvas bottom edge and the y-axis values. This is particularly useful, when you want more space between your canvas and y-axis values.",
         "range": "In Pixels",
         "type": "Number",
         "name": "yAxisValuesPadding"
       },
       {
-        "description": "This attribute sets the vertical space between the labels and canvas bottom edge. If you want more space between the canvas and the x-axis labels, you can use this attribute to control it.",
+        "description": "This attribute sets the horizontal space between the labels and canvas left edge. If you want more space between the canvas and the x-axis labels, you can use this attribute to control it.",
         "range": "In Pixels",
         "type": "Number",
         "name": "labelPadding"
       },
       {
-        "description": "It sets the vertical space between the end of columns and start of value textboxes. This basically helps you control the space you want between your columns/anchors and the value textboxes.",
+        "description": "It sets the horizontal space between the end of bars and start of value textboxes. This basically helps you control the space you want between your bars and the value textboxes.",
         "range": "In Pixels",
         "type": "Number",
         "name": "valuePadding"
       },
       {
-        "description": "On a column chart, there is spacing defined between two columns. By default, the spacing is set to 20% of canvas width. If you intend to increase or decrease the spacing between columns, you can do so using this attribute. For example, if you wanted all columns to stick to each other without any space in between, you can set `plotSpacePercent` to 0. Similarly, if you want very thin columns, you can set `plotSpacePercent` to its max value of 80.",
+        "description": "On a bar chart, there is spacing defined between two bars. By default, the spacing is set to 20% of canvas width. If you intend to increase or decrease the spacing between bars, you can do so using this attribute. For example, if you wanted all bars to stick to each other without any space in between, you can set `plotSpacePercent` to 0. Similarly, if you want very thin bars, you can set `plotSpacePercent` to its max value of 80.",
         "range": "0-80 (In Percent)",
         "type": "Number",
         "name": "plotSpacePercent"
@@ -2566,10 +2556,10 @@
         "name": "chartBottomMargin"
       },
       {
-        "description": "Padding of legend from right/bottom side of canvas",
+        "description": "Lets you set the space between the canvas border and first & last data points",
         "range": "In Pixels",
         "type": "Number",
-        "name": "legendPadding"
+        "name": "canvasPadding"
       },
       {
         "description": "This attribute lets you control the space between the start of chart canvas and the start (x) of chart. In case of 2D charts, the canvas is the visible rectangular box. In case of 3D charts, the canvas box is the imaginary box around the 3D canvas. Using this attribute, you can control the amount of empty space between the chart left side and canvas left side. By default, FusionCharts XT automatically calculates this space depending on the elements to be placed on the chart. However, if you want to over-ride this value with a higher value, you can use this attribute to specify the same. Please note that you cannot specify a margin lower than what has been calculated by the chart. This attribute is particularly useful, when you've multiple charts placed in a page and want all their canvas start position to align with each other - so in such a case, you can set same margin value (a value large enough that it doesn't get rejected by chart owing to it being lower than the calculated value) for all such charts in the page.",
@@ -2596,7 +2586,7 @@
         "name": "canvasBottomMargin"
       }
     ],
-    "description": " The following attributes help you control chart margins and paddings. FusionCharts XT allows you to manually customize the padding of various elements on the chart to allow advanced manipulation and control over chart visualization. Padding in FusionCharts XT is always defined in pixels, until the attribute itself suggests some other scale (like `plotSpacePercent`, which configures the spacing using percentage values). You can also define the chart margins. Chart Margins refer to the empty space left on the top, bottom, left and right of the chart. That means, FusionCharts XT will not plot anything in that space. It's not necessary for you to specify any padding/margin values. FusionCharts Suite XT automatically assumes the best values for the same, if you do not specify the same. "
+    "description": " The following attributes help you control chart margins and paddings. FusionCharts Suite XT allows you manually customize the padding of various elements on the chart to allow advanced manipulation and control over chart visualization. Padding in FusionCharts XT is always defined in pixels, unless the attribute itself suggests some other scale (like `plotSpacePercent`, which configures the spacing using percentage values). You can also define the chart margins. Chart Margins refer to the empty space left on the top, bottom, left and right of the chart. That means, FusionCharts Suite XT will not plot anything in that space. It's not necessary for you to specify any padding/margin values. FusionCharts Suite XT automatically assumes the best values for the same, if you do not specify the same. "
   },
   {
     "table": "The categories Object",
@@ -2762,7 +2752,7 @@
   },
   {
     "table": "Vertical Data Separator Lines",
-    "path": "category",
+    "path": "data",
     "attrs": [
       {
         "description": "Set this attribute to __true__ to render a vertical data separator line.",
@@ -2843,260 +2833,23 @@
         "name": "labelVAlign"
       }
     ],
-    "description": "Vertical data separator lines help you separate data blocks. These lines run through the height of the chart, thereby segregating the data into two different blocks. Vertical lines are defined as shown in the example below: \n\n<pre class=\"language-javascript\"><code>\n\"categories\": [{\n\t\"category\": [{\n\t\t\t\"label\": \"Grade 1\",\n\t\t},\n\t\t{\n\t\t\t\"vLine\": \"true\",\n\t\t\t\"label\": \"Appraisal\"\n\t\t}]\n\t}]\n</code></pre>\n You can configure the cosmetics of vertical separator lines using the following attributes: "
-  },
-  {
-    "table": "The dataset Object",
-    "path": "dataset",
-    "attrs": [
-      {
-        "description": "Lets you specify the series name for a particular dataset. For example, if you're plotting a chart to indicate monthly sales analysis for 2005 and 2006, the `seriesName` for the first dataset will be 2005 and that of the second will be 2006. The `seriesName` of a dataset is shown in legend.",
-        "range": "",
-        "type": "String",
-        "name": "seriesName"
-      },
-      {
-        "description": "This attribute sets the color using which columns, lines, area of that dataset will be drawn. For column chart, you can specify a list of comma separated hex codes to get a gradient plot",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "color"
-      },
-      {
-        "description": "This attribute sets the alpha (transparency) of the entire dataset.",
-        "range": "0 - 100 or Comma Separated List",
-        "type": "String",
-        "name": "alpha"
-      },
-      {
-        "description": "If you've opted to show columns as gradients, this attribute lets you control the ratio of each color.",
-        "range": "Comma separated list of ratios",
-        "type": "String",
-        "name": "ratio"
-      },
-      {
-        "description": "Whether to show the values for this dataset.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showValues"
-      },
-      {
-        "description": "Whether this dataset will appear as dashed.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "dashed"
-      },
-      {
-        "description": "Whether to include the seriesName of this dataset in legend.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "includeInLegend"
-      },
-      {
-        "description": "Sets whether a dataset will be visible on the chart, when the chart is first loaded. This attribute overrides the `initiallyHidden` attribute. \n\n __Default Value__ : 1",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.10.0",
-        "name": "visible"
-      },
-      {
-        "description": "This attribute can set the hover color for data plots of a particular dataset.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "hoverColor"
-      },
-      {
-        "description": "This attribute sets the transparency for data plots of a particular dataset when hovered.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "hoverAlpha"
-      },
-      {
-        "description": "This attribute sets the gradient color for data plots of a particular dataset on hover.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "hoverGradientColor"
-      },
-      {
-        "description": "This attribute sets the ratio of gradient colors when hovered.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "hoverRatio"
-      },
-      {
-        "description": "This attribute specifies the angle of the gradient color when hovered.",
-        "range": "0 - 360",
-        "type": "Number",
-        "name": "hoverAngle"
-      },
-      {
-        "description": "This attribute sets the border color for data plots of a particular dataset on hover.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "borderHoverColor"
-      },
-      {
-        "description": "This attribute sets the border's transparency for data plots of a particular dataset on hover.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "borderHoverAlpha"
-      },
-      {
-        "description": "This attribute sets the thickness for data plot's border of a particular dataset on hover.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "borderHoverThickness"
-      },
-      {
-        "description": "When a data plot is hovered, this attribute is used to specify whether a data plot border will be rendered as a dashed line. \n\n__Default value__: 0 (border rendered using straight lines)",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "borderHoverDashed"
-      },
-      {
-        "description": "When a data plot is hovered, this attribute is used to set the length of each dash if the border around a data plot is rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "borderHoverDashLen"
-      },
-      {
-        "description": "When a data plot is hovered, this attribute is used to set the gap between consecutive dashes if the border around a data plot is rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "borderHoverDashGap"
-      }
-    ],
-    "description": "Each `dataset` object contains a series of data. For example, for a monthly sales comparison chart for two successive years, the first data-set would contain the data for first year and the next one for the second year. You can provide data-set level cosmetics so that all data within that data-set will be plotted in the same color/alpha/etc. Depending on the chart type, there are a number of attributes that you can define for each `dataset` object."
-  },
-  {
-    "table": "The data Object",
-    "path": "data",
-    "attrs": [
-      {
-        "description": "For scroll charts, you can define the alpha of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its alpha at &quot;set&quot; level using this attribute.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "alpha"
-      },
-      {
-        "description": "You can individually opt to show/hide values of individual data items using this attribute. This value over-rides the dataset level value.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showValue"
-      },
-      {
-        "description": "Whether the border of this data item should appear as dashed. This is particularly useful when you want to highlight a data (such as forecast or trend etc.). This value over-rides the dataset level value.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "dashed"
-      },
-      {
-        "description": "Numerical value for the data item. This value will be plotted on the chart.",
-        "range": "",
-        "type": "Number",
-        "name": "value"
-      },
-      {
-        "description": "If instead of the numerical value of this data, you wish to display a custom string value, you can specify the same here. Examples are annotation for a data item etc.",
-        "range": " ",
-        "type": "String",
-        "name": "displayValue"
-      },
-      {
-        "description": "For scroll charts, you can define the color of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its color at &quot;set&quot; level using this attribute. ",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "color"
-      },
-      {
-        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see &quot;Drill-Down &gt; Using JavaScript Functions as Links&quot; for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
-        "range": "",
-        "type": "String",
-        "name": "link"
-      },
-      {
-        "description": "By default, FusionCharts XT shows the series name, category name, and value as tool tip text for that data item. But, if you want to display more information for the data item as tool tip, you can use this attribute to specify the same.",
-        "range": "",
-        "type": "String",
-        "name": "toolText"
-      },
-      {
-        "description": "This attribute can set the hover color for a particular data plot.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "hoverColor"
-      },
-      {
-        "description": "This attribute sets the transparency for a particular data plot when hovered.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "hoverAlpha"
-      },
-      {
-        "description": "This attribute sets the gradient color of the data plot on hover.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "hoverGradientColor"
-      },
-      {
-        "description": "This attribute sets the ratio of gradient colors when hovered.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "hoverRatio"
-      },
-      {
-        "description": "This attribute specifies the angle of the gradient color when hovered.",
-        "range": "0 - 360",
-        "type": "Number",
-        "name": "hoverAngle"
-      },
-      {
-        "description": "This attribute sets the border color of a particular data plot on hover.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "borderHoverColor"
-      },
-      {
-        "description": "This attribute sets the border thickness for a particular data plot on hover.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "borderHoverAlpha"
-      },
-      {
-        "description": "This attribute sets the thickness for a data plot's border on hover.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "borderHoverThickness"
-      },
-      {
-        "description": "When a data plot is hovered, this attribute is used to specify whether a data plot border will be rendered as a dashed line. \n\n__Default value__: 0 (border rendered using straight lines)",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "borderHoverDashed"
-      },
-      {
-        "description": "When a data plot is hovered, this attribute is used to set the length of each dash if the border around a data plot is rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "borderHoverDashLen"
-      },
-      {
-        "description": "When a data plot is hovered, this attribute is used to set the gap between consecutive dashes if the border around a data plot is rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "borderHoverDashGap"
-      }
-    ],
-    "description": "Attributes of the `data` object, child of the `dataset` object, are used to define the values to be plotted for individual data series.\n\nThe `dataset` and `data` objects defined for one data series are shown in the example below:\n\n<pre class=\"language-javascript\"><code>\n\"dataset\": [{\n\t\"data\": [{\n\t\t\t\"value\": \"10000\",\n\t\t},\n\t\t{\n\t\t\t\"value\": \"11500\",\n\t\t},\n\t\t{\n\t\t\t\"value\": \"12500\",\n\t\t},\n\t\t{\n\t\t\t\"value\": \"15000\"\n\t\t}]\n}]\n</code></pre>"
+    "description": "Vertical data separator lines help you separate data blocks. These lines run through the height of the chart, thereby segregating the data into two different blocks. Vertical lines are defined as shown in the example below: \n\n<pre class=\"language-javascript\"><code>\n\"data\": [{\n\t\t\t\"label\": \"Grade 1\",\n\t\t},\n\t\t{\n\t\t\t\"vLine\": \"true\",\n\t\t\t\"label\": \"Appraisal\"\n\t\t}]\n\t}]\n</code></pre>\n You can configure the cosmetics of vertical separator lines using the following attributes: "
   },
   {
     "table": "Trend-lines",
     "path": "line",
     "attrs": [
       {
-        "description": "Whether to show the trend line value on left side or right side of chart. This is particularly useful when the trend line display values on the chart are colliding with divisional lines values on the chart.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "valueOnRight"
+        "description": "The starting value for the trendline. Say, if you want to plot a slanted trendline from value 102 to 109, the `startValue` will be 102.",
+        "range": "Numeric Value",
+        "type": "Number",
+        "name": "startValue"
+      },
+      {
+        "description": "The ending y-axis value for the trendline. Say, if you want to plot a slanted trendline from value 102 to 109, the `endValue` will be 109. If you do not specify a value for `endValue`, it will automatically assume the same value as `startValue`.",
+        "range": "Numeric Value",
+        "type": "Number",
+        "name": "endValue"
       },
       {
         "description": "If you want to display a string caption for the trend line by its side, you can use this attribute. Example: `displayValue='Last Month High'`. When you don't supply this attribute, it automatically takes the value of `startValue`.",
@@ -3151,18 +2904,6 @@
         "range": "In pixels",
         "type": "Number",
         "name": "dashGap"
-      },
-      {
-        "description": "The starting value for the trendline. Say, if you want to plot a slanted trendline from value 102 to 109, the `startValue` will be 102.",
-        "range": "Numeric Value",
-        "type": "Number",
-        "name": "startValue"
-      },
-      {
-        "description": "The ending y-axis value for the trendline. Say, if you want to plot a slanted trendline from value 102 to 109, the `endValue` will be 109. If you do not specify a value for `endValue`, it will automatically assume the same value as `startValue`.",
-        "range": "Numeric Value",
-        "type": "Number",
-        "name": "endValue"
       },
       {
         "description": "Custom tool-text for this trendline/zone.",
@@ -3320,6 +3061,6 @@
         "name": "trendValueBorderDashGap"
       }
     ],
-    "description": "These attributes let you customize the text displayed with a trend-line. \n\n__Note__: These attributes belong to the `chart` object and  not to the `line` object (child of the `trendline` object). They are, therefore, applied to all trend-lines on your chart. "
+    "description": "These attributes let you customize the display value set for trend-lines. \n\n__Note__: These attributes belong to the `chart` object and  not to the `line` object (child of the `trendline` object). They are, therefore, applied to all trend-lines on your chart. "
   }
 ]
