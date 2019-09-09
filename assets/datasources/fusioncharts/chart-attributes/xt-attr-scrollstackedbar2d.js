@@ -1,5 +1,5 @@
 {
-    type: 'scrollstackedcolumn2d',
+    type: 'scrollStackedBar2D',
     dataFormat: 'json',
     renderAt: 'chart-container',
     width: '100%',

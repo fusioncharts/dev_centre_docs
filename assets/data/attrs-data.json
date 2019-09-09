@@ -511,6 +511,13 @@
 		"xls": false
 	},
 	{
+		"name": "Scroll Stacked Bar 2D",
+		"json": "ScrollStackedBar2D",
+		"code": "xt-attr-scrollstackedbar2d.js",
+		"alias": "scrollstackedbar2d",
+		"xls": false
+	},
+	{
 		"name": "Scroll Stacked Column 2D",
 		"json": "ScrollStackedCol2D",
 		"code": "xt-attr-stackedscrollcolumn.js",
