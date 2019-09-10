@@ -511,6 +511,13 @@
 		"xls": false
 	},
 	{
+		"name": "Scroll Multi-series Stacked Column 2D",
+		"json": "ScrollMSStCol2D",
+		"code": "xt-attr-scrollmsstackedcolumn2d.js",
+		"alias": "scrollmsstackedcolumn2d",
+		"xls": false
+	},
+	{
 		"name": "Scroll Multi-series Stacked Column 2D + Line (Dual Y)",
 		"json": "ScrollMSStCol2DLineDY",
 		"code": "xt-attr-scrollmsstackedcolumn2dlinedy.js",
