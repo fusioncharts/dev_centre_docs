@@ -1392,7 +1392,7 @@
                     "title": "Angular gauge",
                     "children": [{
                             "title": "Gauge anatomy",
-                            "path": "/understanding-fusioncharts/gauges-and-widgets/angular-gauge"
+                            "path": "/understanding-fusioncharts/angular-gauge"
                         },
                         {
                             "title": "Create angular gauge",
