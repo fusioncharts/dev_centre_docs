@@ -1,5 +1,5 @@
 {
-    type: 'scrollarea2d',
+    type: 'scrollmsstackedcolumn2dlinedy',
     dataFormat: 'json',
     renderAt: 'chart-container',
     width: '100%',
