@@ -26,7 +26,11 @@ The combination charts available in the FusionCharts Suite XT are:
 
 * Stacked Column 3D Line Single Y-axis Chart
 
+* Stacked Column 2D Line Dual Y-axis Chart
+
 * Stacked Column 3D Line Dual Y-axis Chart
+
+* Stacked Area 2D Line Dual Y-axis Chart
 
 * Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
@@ -144,9 +148,9 @@ Click [here](http://jsfiddle.net/fusioncharts/gu8jk5yj/) to edit the stacked col
 
 ## Stacked Column 3D Line Dual Y-axis Chart
 
-To render the stacked column 3D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn3dline` to `stackedcolumn3dlinedy`. Rest of the data structure remains the same.
+To render the stacked column 3D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn2dlinedy` to `stackedcolumn3dlinedy`. Rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=stackedcolumn3dlinedy) page of stacked column 2D line single y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=stackedcolumn3dlinedy) page of stacked column 3D line dual y-axis chart.
 
 The above stacked column 3D line looks like:
 
