@@ -26,6 +26,10 @@ The types of scroll charts available in the FusionCharts Suite XT are :
 
 - Scroll Combination 2D Chart (Dual Y)
 
+- Scroll Multi-series Stacked Column 2D
+
+- Scroll Multi-series Stacked Column 2D + Line (Dual Y)
+
 ## Scroll Column 2D Chart
 
 Let's create a scroll column 2D chart to plot the sales trends for FY 2012 - FY 2013.
