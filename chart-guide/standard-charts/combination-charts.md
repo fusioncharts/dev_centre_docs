@@ -18,6 +18,8 @@ The combination charts available in the FusionCharts Suite XT are:
 
 * 2D Dual Y-axis Combination Chart
 
+* 3D Dual Y-axis Combination Chart
+
 * Column 3D + Line Single Y-axis Chart
 
 * Column 3D + Line Dual Y-axis Chart
