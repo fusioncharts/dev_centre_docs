@@ -238,6 +238,13 @@
 		"xls": true
 	},
 	{
+		"name": "Multi-series 3D Dual Y Combination Chart (Column + Line + Area + Spline)",
+		"json": "Combi3DDY",
+		"code": "xt-attr-mscombidy3d.js",
+		"alias": "mscombidy3d",
+		"xls": true
+	},
+	{
 		"name": "Multi-series 3D Single Y Combination Chart (Column + Line + Area + Spline)",
 		"json": "Combi3D",
 		"code": "xt-attr-combi3d.js",
