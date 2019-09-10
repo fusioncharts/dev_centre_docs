@@ -91,7 +91,7 @@ It offers all the general-purpose charts like column, bar, line, area, pie, comb
 | [Scroll Stacked Bar 2D](/chart-attributes/scrollstackedbar2d)                                               | scrollstackedbar2d            |
 | [Scroll Combination 2D (Single Y)](/chart-attributes/scrollcombi2d)                                         | scrollcombi2d                 |
 | [Scroll Combination 2D (Dual Y)](/chart-attributes/scrollcombidy2d)                                         | scrollcombidy2d               |
-| [Scroll Multi-series Stacked Column 2D + Line Dual Y Axis](/chart-attributes/scrollmsstackedcolumn2dlinedy) | scrollmsstackedcolumn2dlinedy |
+| [Scroll Multi-series Stacked Column 2D + Line Dual Y Axis](/chart-attributes/ScrollMSStackedColumn2DLineDY) | scrollmsstackedcolumn2dlinedy |
 | [Scroll Multi-series Stacked Column 2D](/chart-attributes/scrollmsstackedcolumn2d)                          | scrollmsstackedcolumn2d       |
 
 ## FusionWidgets XT
