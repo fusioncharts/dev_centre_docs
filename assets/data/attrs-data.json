@@ -602,6 +602,13 @@
 		"xls": true
 	},
 	{
+		"name": "Stacked Area 2D Line Dual Y-axis Chart",
+		"json": "StArea2DLineDY",
+		"code": "xt-attr-stackedarea2dlinedy.js",
+		"alias": "stackedarea2dlinedy",
+		"xls": true
+	},
+	{
 		"name": "Stacked Bar 2D",
 		"json": "StBar2D",
 		"code": "xt-attr-stackedbar2d.js",
@@ -620,6 +627,13 @@
 		"json": "StCol2D",
 		"code": "xt-attr-stackedcolumn2d.js",
 		"alias": "stackedcolumn2d",
+		"xls": true
+	},
+	{
+		"name": "Stacked Column 2D Line Dual Y-axis Chart",
+		"json": "StCol2DLineDY",
+		"code": "xt-attr-stackedcolumn2dlinedy.js",
+		"alias": "stackedcolumn2dlinedy",
 		"xls": true
 	},
 	{

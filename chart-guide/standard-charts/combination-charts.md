@@ -156,7 +156,7 @@ The above stacked column 3D line looks like:
 
 {% embed_all standard-charts-combination-chart-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7chax01w/) to edit the stacked column 2D line single y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/7chax01w/) to edit the stacked column 3D line dual y-axis chart.
 
 ## Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
