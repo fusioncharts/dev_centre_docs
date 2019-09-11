@@ -791,36 +791,11 @@
         "name": "transposeAxis"
       },
       {
-        "description": "This attribute if set to _0_, hides the x-axis of the chart. \n\n__Default value__: 1",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showXAxisLine"
-      },
-      {
-        "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Bottom",
-        "range": "Top, Bottom",
-        "type": "String",
-        "versionSince": "3.14.0",
-        "name": "xAxisPosition"
-      },
-      {
         "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Left",
         "range": "Left, Right",
         "type": "String",
         "versionSince": "3.14.0",
         "name": "yAxisPosition"
-      },
-      {
-        "description": "Sets color of the x-axis of the chart.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "xAxisLineColor"
-      },
-      {
-        "description": "Sets the thickness of the x-axis line of the chart.",
-        "range": "In Pixels",
-        "type": "Number",
-        "name": "xAxisLineThickness"
       },
       {
         "description": "This attribute if set to _0_, hides the y-axis of the chart. \n\n__Default value__: 1",
@@ -1460,12 +1435,6 @@
     "table": "Data Plot Cosmetics",
     "attrs": [
       {
-        "description": "If you wish to plot columns with round edges and fill them with a glass effect gradient, set this attribute to 1. The following functionalities will not work when this attribute is set to 1: `showShadow` attribute doesn't work any more. If you want to remove shadow from columns, you'll have to over-ride the shadow with a new shadow style (applied to DATAPLOT) with alpha as 0. Plot fill properties like gradient color, angle etc. will not work any more, as the colors for gradient are now calculated by the chart itself. Plot border properties also do not work in this mode. Also, you cannot render the border as dashed in this mode.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "useRoundEdges"
-      },
-      {
         "description": "Whether the column, area border will show up.",
         "range": "0/1",
         "type": "Boolean",
@@ -1478,58 +1447,16 @@
         "name": "plotBorderColor"
       },
       {
-        "description": "Thickness for column, area border",
-        "range": "0-5",
-        "type": "Number",
-        "name": "plotBorderThickness"
-      },
-      {
         "description": "Alpha for column, area border",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotBorderAlpha"
       },
       {
-        "description": "Whether the border around the data plots should be rendered using dashed lines. \n\n__Default value__: 0 (border rendered using straight lines)",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "plotBorderDashed"
-      },
-      {
-        "description": "Sets the length of each dash when the border around the data plots are rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "plotBorderDashLen"
-      },
-      {
-        "description": "Sets the gap between two consecutive dashes when the border around the data plots are rendered using dashed lines.",
-        "range": "In pixels",
-        "type": "Number",
-        "name": "plotBorderDashGap"
-      },
-      {
-        "description": "If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill angle for gradient.",
-        "range": "0-360",
-        "type": "Number",
-        "name": "plotFillAngle"
-      },
-      {
-        "description": "If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the ratio for gradient.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "plotFillRatio"
-      },
-      {
         "description": "If you've opted to fill the plot (column, area etc.) as gradient, this attribute lets you set the fill alpha for gradient.",
         "range": "0 - 100",
         "type": "Number",
         "name": "plotFillAlpha"
-      },
-      {
-        "description": "You can globally add a gradient color to the entire plot of chart by specifying the second color as this attribute. For example, if you've specified individual colors for your columns and now you want a gradient that ends in white. You need to specify FFFFFF (white) as this color and the chart will now draw plots as gradient.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "plotGradientColor"
       },
       {
         "description": "Color using which the lines on the chart will be drawn.",
@@ -1566,12 +1493,6 @@
         "range": "In pixels",
         "type": "Number",
         "name": "lineDashGap"
-      },
-      {
-        "description": "Gradient color is a color added globally to the entire plot of chart by specifying the second color in an attribute. This attribute sets the gradient color to _true_. \n\n__Default value__: 1",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "usePlotGradientColor"
       },
       {
         "description": "If the `showPlotBorder` atrribute is set to `1`, set this  attribute to `0` to draw only the top border of the data plot.",
@@ -1984,24 +1905,6 @@
         "type": "Boolean",
         "versionsince": "3.2.2 - SR3",
         "name": "showZeroPlaneValue"
-      },
-      {
-        "description": "Whether to show alternate colored horizontal grid bands.",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showAlternateHGridColor"
-      },
-      {
-        "description": "Color of the alternate horizontal grid bands.",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "alternateHGridColor"
-      },
-      {
-        "description": "Alpha (transparency) of the alternate horizontal grid bands.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "alternateHGridAlpha"
       }
     ],
     "description": " Using this set of attributes, you can control the properties of divisional lines, zero plane and alternate color bands. Divisional Lines are horizontal or vertical lines running through the canvas. Each divisional line signifies a smaller unit of the entire axis thus aiding the users in interpreting the chart. The zero plane is a 2D/3D plane that signifies the 0 position on the chart. If there are no negative numbers on the chart, you won't see a visible zero plane. Alternate color bands are colored blocks between two successive divisional lines. "
