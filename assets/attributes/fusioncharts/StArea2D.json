@@ -140,6 +140,12 @@
         "name": "clickURLOverridesPlotLinks"
       },
       {
+        "description": "This attribute is used to show sum of all the data plots in a given stacked area. By default this attribute is set to 1. If you do not want to show the sum of all the area plots, set this attribute to 0.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showSum"
+      },
+      {
         "description": "Setting this attribute to 1 helps in depicting the values in percentage figures.",
         "range": "0/1",
         "type": "Boolean",
