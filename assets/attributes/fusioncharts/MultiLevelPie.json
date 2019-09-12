@@ -840,7 +840,7 @@
         "name": "plotFillColor"
       },
       {
-        "description": "Fill color for all the pies.",
+        "description": "Lets you set the thinkness of the pie border.",
         "range": "In Pixels",
         "type": "Number",
         "name": "pieborderthickness"
