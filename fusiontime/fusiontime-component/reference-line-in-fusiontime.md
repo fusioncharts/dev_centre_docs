@@ -36,7 +36,8 @@ Refer to the code given below:
     type: 'timeseries',
     dataSource: {
         data: dataStore,
-            // Reference Line
+        yaxis: {
+            //Reference Line
             "referenceLine": [{
                 "label": "Daily Target",
                 "value": 300
