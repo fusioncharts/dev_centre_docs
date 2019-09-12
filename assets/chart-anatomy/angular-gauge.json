@@ -77,25 +77,25 @@
                   "annotationDesc": "Upper Limit refers to the highest point in the reference scale used in the gauge. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "68%",
-                  "topPosition": "57%",
+                  "topPosition": "54%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "6",
-                  "annotationName": "Y-Axis",
-                  "annotationDesc": "Y-Axis refers to a line of values on a gauge that runs vertically (up-down) through zero. Learn more about them ",
+                  "annotationName": "Gauge Scale",
+                  "annotationDesc": "The gauge scale displays all possible values between the lower and upper limits. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "18%",
-                  "topPosition": "14%",
+                  "leftPosition": "38%",
+                  "topPosition": "33%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "7",
-                  "annotationName": "Y-Axis Title",
-                  "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
+                  "annotationName": "Tick Mark",
+                  "annotationDesc": "Tick marks are placed at regular intervals on the gauge scale, to indicate data values. Learn more about them ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "6.5%",
-                  "topPosition": "44%",
+                  "leftPosition": "62.5%",
+                  "topPosition": "40%",
                   "annotationLinks": []
                },
                {
