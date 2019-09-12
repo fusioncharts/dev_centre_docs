@@ -1447,7 +1447,7 @@
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.14.0",
-        "name": "valueFontColor"
+        "name": "yAxisValueFontColor"
       },
       {
         "description": "Sets the font size for the Y-axis value texts. \n\nDefault value: 10 px",
