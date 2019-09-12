@@ -840,7 +840,7 @@
         "name": "plotFillColor"
       },
       {
-        "description": "Fill color for all the pies.",
+        "description": "Lets you set the thinkness of the pie border.",
         "range": "In Pixels",
         "type": "Number",
         "name": "pieborderthickness"
@@ -1336,30 +1336,6 @@
     "table": "Data Plot Hover Effects",
     "attrs": [
       {
-        "description": "Whether to enable hover effect on charts for all elements",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "showHoverEffect"
-      },
-      {
-        "description": "Whether to enable hover effect on charts for data plots (e.g., column, pie) only",
-        "range": "0/1",
-        "type": "Boolean",
-        "name": "plotHoverEffect"
-      },
-      {
-        "description": "Specifies the hover color for the data plots",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "plotFillHoverColor"
-      },
-      {
-        "description": "Specifies the hover alpha for data plots",
-        "range": "1 - 100",
-        "type": "Number",
-        "name": "plotFillHoverAlpha"
-      },
-      {
         "description": "Whether to use the hover fill color for the pies.",
         "range": "0/1",
         "type": "Boolean",
@@ -1370,6 +1346,12 @@
         "range": "Hex Color Code",
         "type": "Color",
         "name": "hoverFillColor"
+      },
+      {
+        "description": "Specifies the transparency of the data plots when hovered.",
+        "range": "1 - 100",
+        "type": "Number",
+        "name": "hoverFillAlpha"
       }
     ],
     "description": "If you wish to show an effect on the data plot when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."

@@ -1,4 +1,4 @@
-x---
+---
 title: Setting Data Source Using URL | FusionCharts
 description: FusionCharts lets you pass the complete JSON/XML chart data using a JSON file or a URL without losing any functionality
 heading: Setting Data Source Using URL
@@ -18,16 +18,16 @@ Let's build the same revenue chart which we built in the [first example](/gettin
 
 The data for this chart is represented in the table below:
 
-Country|No. of Oil Reserves|
--|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 The JSON representation for the above table looks as shown below:
 
