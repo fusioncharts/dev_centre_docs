@@ -111,19 +111,19 @@
                   }]
                },
                {
-                  "annotationNumber": "8",
+                  "annotationNumber": "9",
                   "annotationName": "Data Value",
                   "annotationDesc": "Data value refers to the number displayed in a text box placed right below the angular gauge, which shows the data value of the location where the pointer is being hovered at the moment.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "42%",
                   "topPosition": "56%",
                   "annotationLinks": [{
-                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
+                     "linkDesc": "You can customize the way your data value looks using colors, font, and font properties, using available attributes. Learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-value"
                   }]
                },
                {
-                  "annotationNumber": "9",
+                  "annotationNumber": "10",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
