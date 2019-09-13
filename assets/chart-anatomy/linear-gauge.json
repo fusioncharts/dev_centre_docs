@@ -85,8 +85,8 @@
                   "annotationName": "Gauge Scale",
                   "annotationDesc": "The gauge scale displays all possible values between the lower and upper limits. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "38%",
-                  "topPosition": "33%",
+                  "leftPosition": "40%",
+                  "topPosition": "50%",
                   "annotationLinks": []
                },
                {
@@ -94,8 +94,8 @@
                   "annotationName": "Tick Mark",
                   "annotationDesc": "Tick marks are placed at regular intervals on the gauge scale, to indicate data values. Learn more about them ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "62.5%",
-                  "topPosition": "40%",
+                  "leftPosition": "55%",
+                  "topPosition": "43%",
                   "annotationLinks": []
                },
                {
@@ -103,8 +103,8 @@
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the dial in an angular gauge, the sphere in a bulb gauge, the thermometer in a thermometer gauge, and so on.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "33%",
-                  "topPosition": "45%",
+                  "leftPosition": "36%",
+                  "topPosition": "41.5%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
@@ -112,6 +112,18 @@
                },
                {
                   "annotationNumber": "9",
+                  "annotationName": "Data Value",
+                  "annotationDesc": "Data value refers to the number displayed in a text box placed right below the angular gauge, which shows the data value of the location where the pointer is being hovered at the moment.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "49%",
+                  "topPosition": "72%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way your data value looks using colors, font, and font properties, using available attributes. Learn more about their usage ",
+                     "linkPath": "/chart-guide/chart-configurations/data-value"
+                  }]
+               },
+               {
+                  "annotationNumber": "10",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
