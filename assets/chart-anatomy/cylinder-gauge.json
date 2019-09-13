@@ -85,8 +85,8 @@
                   "annotationName": "Gauge Scale",
                   "annotationDesc": "The gauge scale displays all possible values between the lower and upper limits. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "53%",
-                  "topPosition": "31%",
+                  "leftPosition": "53.5%",
+                  "topPosition": "40%",
                   "annotationLinks": []
                },
                {
@@ -108,6 +108,18 @@
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
+                  }]
+               },
+               {
+                  "annotationNumber": "8",
+                  "annotationName": "Data Value",
+                  "annotationDesc": "Data value refers to the number displayed in a text box placed right below the angular gauge, which shows the data value of the location where the pointer is being hovered at the moment.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "42%",
+                  "topPosition": "56%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
+                     "linkPath": "/chart-guide/chart-configurations/data-value"
                   }]
                },
                {
