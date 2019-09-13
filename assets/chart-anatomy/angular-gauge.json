@@ -103,10 +103,10 @@
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the dial in an angular gauge, the sphere in a bulb gauge, the thermometer in a thermometer gauge, and so on.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "43%",
+                  "leftPosition": "33%",
                   "topPosition": "45%",
                   "annotationLinks": [{
-                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
+                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
                   }]
                },
