@@ -60,7 +60,7 @@
                {
                   "annotationNumber": "4",
                   "annotationName": "Tooltip",
-                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
+                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "57%",
                   "topPosition": "41.5%",
