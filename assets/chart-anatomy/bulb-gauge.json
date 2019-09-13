@@ -6,7 +6,7 @@
       "contentGroup": [
          {
             "itemHeader": "Angular Gauge",
-            "imgSrc": "angular-gauge-anatomy.png",
+            "imgSrc": "bulb-gauge-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
