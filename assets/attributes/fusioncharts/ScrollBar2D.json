@@ -2752,6 +2752,291 @@
     "description": "The attributes of the `category` object are used to define and customize individual x-axis labels for scroll charts."
   },
   {
+    "table": "The dataset Object",
+    "path": "dataset",
+    "attrs": [
+      {
+        "description": "Lets you specify the series name for a particular dataset. For example, if you're plotting a chart to indicate monthly sales analysis for 2005 and 2006, the `seriesName` for the first dataset will be 2005 and that of the second will be 2006. The `seriesName` of a dataset is shown in legend.",
+        "range": "",
+        "type": "String",
+        "name": "seriesName"
+      },
+      {
+        "description": "This attribute sets the color using which columns, lines, area of that dataset will be drawn. For column chart, you can specify a list of comma separated hex codes to get a gradient plot",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "color"
+      },
+      {
+        "description": "This attribute sets the alpha (transparency) of the entire dataset.",
+        "range": "0 - 100 or Comma Separated List",
+        "type": "String",
+        "name": "alpha"
+      },
+      {
+        "description": "If you've opted to show columns as gradients, this attribute lets you control the ratio of each color.",
+        "range": "Comma separated list of ratios",
+        "type": "String",
+        "name": "ratio"
+      },
+      {
+        "description": "Whether to show the values for this dataset.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showValues"
+      },
+      {
+        "description": "Specifies the font color of data values for a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the background color of value text for a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBgColor"
+      },
+      {
+        "description": "Sets the border color around the value text for a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBorderColor"
+      },
+      {
+        "description": "Whether this dataset will appear as dashed.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "dashed"
+      },
+      {
+        "description": "Whether to include the seriesName of this dataset in legend.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "includeInLegend"
+      },
+      {
+        "description": "Sets whether a dataset will be visible on the chart, when the chart is first loaded. This attribute overrides the `initiallyHidden` attribute. \n\n __Default Value__ : 1",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.10.0",
+        "name": "visible"
+      },
+      {
+        "description": "This attribute can set the hover color for data plots of a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "hoverColor"
+      },
+      {
+        "description": "This attribute sets the transparency for data plots of a particular dataset when hovered.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "hoverAlpha"
+      },
+      {
+        "description": "This attribute sets the gradient color for data plots of a particular dataset on hover.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "hoverGradientColor"
+      },
+      {
+        "description": "This attribute sets the ratio of gradient colors when hovered.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "hoverRatio"
+      },
+      {
+        "description": "This attribute specifies the angle of the gradient color when hovered.",
+        "range": "0 - 360",
+        "type": "Number",
+        "name": "hoverAngle"
+      },
+      {
+        "description": "This attribute sets the border color for data plots of a particular dataset on hover.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "borderHoverColor"
+      },
+      {
+        "description": "This attribute sets the border's transparency for data plots of a particular dataset on hover.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "borderHoverAlpha"
+      },
+      {
+        "description": "This attribute sets the thickness for data plot's border of a particular dataset on hover.",
+        "range": "In pixels",
+        "type": "Number",
+        "name": "borderHoverThickness"
+      },
+      {
+        "description": "When a data plot is hovered, this attribute is used to specify whether a data plot border will be rendered as a dashed line. \n\n__Default value__: 0 (border rendered using straight lines)",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "borderHoverDashed"
+      },
+      {
+        "description": "When a data plot is hovered, this attribute is used to set the length of each dash if the border around a data plot is rendered using dashed lines.",
+        "range": "In pixels",
+        "type": "Number",
+        "name": "borderHoverDashLen"
+      },
+      {
+        "description": "When a data plot is hovered, this attribute is used to set the gap between consecutive dashes if the border around a data plot is rendered using dashed lines.",
+        "range": "In pixels",
+        "type": "Number",
+        "name": "borderHoverDashGap"
+      }
+    ],
+    "description": "Each `dataset` object contains a series of data. For example, for a monthly sales comparison chart for two successive years, the first data-set would contain the data for first year and the next one for the second year. You can provide data-set level cosmetics so that all data within that data-set will be plotted in the same color/alpha/etc. Depending on the chart type, there are a number of attributes that you can define for each `dataset` object."
+  },
+  {
+    "table": "The data Object",
+    "path": "data",
+    "attrs": [
+      {
+        "description": "For scroll charts, you can define the alpha of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its alpha at &quot;set&quot; level using this attribute.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "alpha"
+      },
+      {
+        "description": "You can individually opt to show/hide values of individual data items using this attribute. This value over-rides the dataset level value.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showValue"
+      },
+      {
+        "description": "Specifies the font color of a data value for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the background color of a value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBgColor"
+      },
+      {
+        "description": "Sets the border color around the value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBorderColor"
+      },
+      {
+        "description": "Whether the border of this data item should appear as dashed. This is particularly useful when you want to highlight a data (such as forecast or trend etc.). This value over-rides the dataset level value.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "dashed"
+      },
+      {
+        "description": "Numerical value for the data item. This value will be plotted on the chart.",
+        "range": "",
+        "type": "Number",
+        "name": "value"
+      },
+      {
+        "description": "If instead of the numerical value of this data, you wish to display a custom string value, you can specify the same here. Examples are annotation for a data item etc.",
+        "range": " ",
+        "type": "String",
+        "name": "displayValue"
+      },
+      {
+        "description": "For scroll charts, you can define the color of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its color at &quot;set&quot; level using this attribute. ",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "color"
+      },
+      {
+        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see &quot;Drill-Down &gt; Using JavaScript Functions as Links&quot; for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
+        "range": "",
+        "type": "String",
+        "name": "link"
+      },
+      {
+        "description": "By default, FusionCharts XT shows the series name, category name, and value as tool tip text for that data item. But, if you want to display more information for the data item as tool tip, you can use this attribute to specify the same.",
+        "range": "",
+        "type": "String",
+        "name": "toolText"
+      },
+      {
+        "description": "This attribute can set the hover color for a particular data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "hoverColor"
+      },
+      {
+        "description": "This attribute sets the transparency for a particular data plot when hovered.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "hoverAlpha"
+      },
+      {
+        "description": "This attribute sets the gradient color of the data plot on hover.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "hoverGradientColor"
+      },
+      {
+        "description": "This attribute sets the ratio of gradient colors when hovered.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "hoverRatio"
+      },
+      {
+        "description": "This attribute specifies the angle of the gradient color when hovered.",
+        "range": "0 - 360",
+        "type": "Number",
+        "name": "hoverAngle"
+      },
+      {
+        "description": "This attribute sets the border color of a particular data plot on hover.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "borderHoverColor"
+      },
+      {
+        "description": "This attribute sets the border thickness for a particular data plot on hover.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "borderHoverAlpha"
+      },
+      {
+        "description": "This attribute sets the thickness for a data plot's border on hover.",
+        "range": "In pixels",
+        "type": "Number",
+        "name": "borderHoverThickness"
+      },
+      {
+        "description": "When a data plot is hovered, this attribute is used to specify whether a data plot border will be rendered as a dashed line. \n\n__Default value__: 0 (border rendered using straight lines)",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "borderHoverDashed"
+      },
+      {
+        "description": "When a data plot is hovered, this attribute is used to set the length of each dash if the border around a data plot is rendered using dashed lines.",
+        "range": "In pixels",
+        "type": "Number",
+        "name": "borderHoverDashLen"
+      },
+      {
+        "description": "When a data plot is hovered, this attribute is used to set the gap between consecutive dashes if the border around a data plot is rendered using dashed lines.",
+        "range": "In pixels",
+        "type": "Number",
+        "name": "borderHoverDashGap"
+      }
+    ],
+    "description": "Attributes of the `data` object, child of the `dataset` object, are used to define the values to be plotted for individual data series.\n\nThe `dataset` and `data` objects defined for one data series are shown in the example below:\n\n<pre class=\"language-javascript\"><code>\n\"dataset\": [{\n\t\"data\": [{\n\t\t\t\"value\": \"10000\",\n\t\t},\n\t\t{\n\t\t\t\"value\": \"11500\",\n\t\t},\n\t\t{\n\t\t\t\"value\": \"12500\",\n\t\t},\n\t\t{\n\t\t\t\"value\": \"15000\"\n\t\t}]\n}]\n</code></pre>"
+  },
+  {
     "table": "Vertical Data Separator Lines",
     "path": "data",
     "attrs": [

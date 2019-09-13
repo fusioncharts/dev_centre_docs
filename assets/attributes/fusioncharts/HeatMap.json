@@ -2453,6 +2453,27 @@
         "name": "showValue"
       },
       {
+        "description": "Specifies the font color of a data value for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the background color of a value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBgColor"
+      },
+      {
+        "description": "Sets the border color around the value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBorderColor"
+      },
+      {
         "description": "For Multi-series charts, you can define the alpha of data-sets at dataset level. However, if you wish to highlight a particular data element, you can specify its alpha at &quot;set&quot; level using this attribute.",
         "range": "0 - 100",
         "type": "Number",

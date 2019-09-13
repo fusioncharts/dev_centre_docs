@@ -3697,6 +3697,27 @@
         "name": "showValues"
       },
       {
+        "description": "Specifies the font color of data values for a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the background color of value text for a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBgColor"
+      },
+      {
+        "description": "Sets the border color around the value text for a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBorderColor"
+      },
+      {
         "description": "Sets whether a dataset will be visible on the chart, when the chart is first loaded. This attribute overrides the `initiallyHidden` attribute. \n\n __Default Value__ : 1",
         "range": "0/1",
         "type": "Boolean",
@@ -3954,6 +3975,27 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showValue"
+      },
+      {
+        "description": "Specifies the font color of a data value for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the background color of a value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBgColor"
+      },
+      {
+        "description": "Sets the border color around the value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBorderColor"
       },
       {
         "description": "This attribute can set the hover color for a particular data plot.",
