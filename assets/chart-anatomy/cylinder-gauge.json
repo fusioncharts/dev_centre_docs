@@ -115,8 +115,8 @@
                   "annotationName": "Data Value",
                   "annotationDesc": "Data value refers to the number displayed in a text box placed right below the angular gauge, which shows the data value of the location where the pointer is being hovered at the moment.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "42%",
-                  "topPosition": "56%",
+                  "leftPosition": "49%",
+                  "topPosition": "72%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data value looks using colors, font, and font properties, using available attributes. Learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-value"
