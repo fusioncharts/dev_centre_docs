@@ -12,8 +12,8 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the gauge title) is the heading of your gauge. You can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "33.5%",
-                  "topPosition": "15.5%",
+                  "leftPosition": "28.5%",
+                  "topPosition": "16.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
@@ -30,23 +30,6 @@
                },
                {
                   "annotationNumber": "2",
-                  "annotationName": "Sub-caption",
-                  "annotationDesc": "The sub-caption (also called the gauge subtitle) is the sub-heading of your gauge. You can add custom text for sub-caption, as well as configure its font properties.",
-                  "annotationDescLinkPath": null,
-                  "leftPosition": "57%",
-                  "topPosition": "22%",
-                  "annotationLinks": [{
-                        "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
-                     },
-                     {
-                        "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
-                     }
-                  ]
-               },
-               {
-                  "annotationNumber": "3",
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the gauge data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
@@ -63,43 +46,7 @@
                   ]
                },
                {
-                  "annotationNumber": "4",
-                  "annotationName": "Lower Limit",
-                  "annotationDesc": "Lower Limit refers to the lowest point in the reference scale used in the gauge. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "29%",
-                  "topPosition": "57%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "5",
-                  "annotationName": "Upper Limit",
-                  "annotationDesc": "Upper Limit refers to the highest point in the reference scale used in the gauge. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "68%",
-                  "topPosition": "54%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "6",
-                  "annotationName": "Gauge Scale",
-                  "annotationDesc": "The gauge scale displays all possible values between the lower and upper limits. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "38%",
-                  "topPosition": "33%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "7",
-                  "annotationName": "Tick Mark",
-                  "annotationDesc": "Tick marks are placed at regular intervals on the gauge scale, to indicate data values. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "62.5%",
-                  "topPosition": "40%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "8",
+                  "annotationNumber": "3",
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the dial in an angular gauge, the sphere in a bulb gauge, the thermometer in a thermometer gauge, and so on.",
                   "annotationDescLinkPath": null,
@@ -111,7 +58,7 @@
                   }]
                },
                {
-                  "annotationNumber": "9",
+                  "annotationNumber": "4",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
