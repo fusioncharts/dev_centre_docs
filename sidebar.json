@@ -1469,7 +1469,7 @@
                     "title": "Bulb gauge",
                     "children": [{
                             "title": "Gauge anatomy",
-                            "path": ""
+                            "path": "/understanding-fusioncharts/bulb-gauge"
                         },
                         {
                             "title": "Create Bulb gauge",
@@ -1548,7 +1548,7 @@
                     "title": "Cylinder gauge",
                     "children": [{
                             "title": "Gauge anatomy",
-                            "path": ""
+                            "path": "/understanding-fusioncharts/cylinder-gauge"
                         },
                         {
                             "title": "Create cylinder gauge",
@@ -1627,7 +1627,7 @@
                     "title": "Linear gauge",
                     "children": [{
                             "title": "Gauge anatomy",
-                            "path": ""
+                            "path": "/understanding-fusioncharts/linear-gauge"
                         },
                         {
                             "title": "Create linear gauge",
