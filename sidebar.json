@@ -1624,6 +1624,164 @@
                     ]
                 },
                 {
+                    "title": "LED gauge",
+                    "children": [{
+                            "title": "Gauge anatomy",
+                            "path": "/understanding-fusioncharts/led-gauge"
+                        },
+                        {
+                            "title": "Create LED gauge",
+                            "path": ""
+                        },
+                        {
+                            "title": "Gauge configurations",
+                            "children": [{
+                                    "title": "Change size",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Border & background",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Number formats",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load external logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                }
+
+
+                            ]
+                        },
+                        {
+                            "title": "Chart components",
+                            "children": [{
+                                    "title": "Caption & sub-caption",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Dials",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Ticks",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Tooltips",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Toolbar",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Legend",
+                                    "path": ""
+                                }
+
+                            ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
+                        }
+                    ]
+                },
+                 {
+                    "title": "Thermometer gauge",
+                    "children": [{
+                            "title": "Gauge anatomy",
+                            "path": "/understanding-fusioncharts/thermometer-gauge"
+                        },
+                        {
+                            "title": "Create Thermometer gauge",
+                            "path": ""
+                        },
+                        {
+                            "title": "Gauge configurations",
+                            "children": [{
+                                    "title": "Change size",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Border & background",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Number formats",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load external logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                }
+
+
+                            ]
+                        },
+                        {
+                            "title": "Gauge components",
+                            "children": [{
+                                    "title": "Caption & sub-caption",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Dials",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Ticks",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Tooltips",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Toolbar",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Legend",
+                                    "path": ""
+                                }
+
+                            ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
+                        }
+                    ]
+                },
+                {
                     "title": "Linear gauge",
                     "children": [{
                             "title": "Gauge anatomy",
@@ -1700,8 +1858,6 @@
                         }
                     ]
                 }
-
-
             ]
         },
         {
