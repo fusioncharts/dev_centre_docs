@@ -74,6 +74,15 @@
                },
                {
                   "annotationNumber": "6",
+                  "annotationName": "Value Display",
+                  "annotationDesc": "The value display shows the data value of the plot point where the mouse pointer is placed. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "leftPosition": "51%",
+                  "topPosition": "50%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "7",
                   "annotationName": "Tick Mark",
                   "annotationDesc": "Tick marks are placed at regular intervals on the gauge scale, to indicate data values. Learn more about them ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
