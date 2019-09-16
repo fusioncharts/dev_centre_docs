@@ -62,7 +62,7 @@
                      }
                   ]
                },
-                {
+               {
                   "annotationNumber": "4",
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
