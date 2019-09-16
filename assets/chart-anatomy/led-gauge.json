@@ -74,8 +74,8 @@
                },
                {
                   "annotationNumber": "6",
-                  "annotationName": "Value Display",
-                  "annotationDesc": "The value display shows the data value of the plot point where the mouse pointer is placed. Learn more about it ",
+                  "annotationName": " Chart Value",
+                  "annotationDesc": "The chart value displays the data value of the plot point where the mouse pointer is placed. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "41%",
                   "topPosition": "52%",
