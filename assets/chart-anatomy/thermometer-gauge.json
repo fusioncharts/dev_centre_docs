@@ -12,7 +12,7 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the gauge title) is the heading of your gauge. You can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "33.5%",
+                  "leftPosition": "34.5%",
                   "topPosition": "15.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
@@ -33,8 +33,8 @@
                   "annotationName": "Sub-caption",
                   "annotationDesc": "The sub-caption (also called the gauge subtitle) is the sub-heading of your gauge. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "57%",
-                  "topPosition": "22%",
+                  "leftPosition": "54%",
+                  "topPosition": "21%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
