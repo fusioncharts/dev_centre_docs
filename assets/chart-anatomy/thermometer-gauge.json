@@ -5,8 +5,8 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Angular Gauge",
-            "imgSrc": "angular-gauge-anatomy.png",
+            "itemHeader": "Thermometer Gauge",
+            "imgSrc": "thermometer-gauge-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
