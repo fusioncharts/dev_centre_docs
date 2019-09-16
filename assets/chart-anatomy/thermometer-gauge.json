@@ -50,7 +50,7 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the gauge data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "80%",
+                  "leftPosition": "70%",
                   "topPosition": "30%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
