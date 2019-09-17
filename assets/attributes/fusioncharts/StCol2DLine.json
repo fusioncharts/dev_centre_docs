@@ -754,21 +754,21 @@
         "type": "Boolean",
         "name": "showXAxisLine"
       },
-          {
+      {
         "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Bottom",
         "range": "Top, Bottom",
         "type": "String",
         "versionSince": "3.14.0",
         "name": "xAxisPosition"
-    },
-    {
+      },
+      {
         "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Left",
         "range": "Left, Right",
         "type": "String",
         "versionSince": "3.14.0",
         "name": "yAxisPosition"
-    },
-    {
+      },
+      {
         "description": "Sets color of the x-axis of the chart.",
         "range": "Hex Color Code",
         "type": "Color",
@@ -2910,6 +2910,27 @@
         "name": "showValues"
       },
       {
+        "description": "Specifies the font color of data values for a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the background color of value text for a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBgColor"
+      },
+      {
+        "description": "Sets the border color around the value text for a particular dataset.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBorderColor"
+      },
+      {
         "description": "This attribute lets you adjust the vertical alignment of data values for all dataplots in the dataset. The alignment is set with respect to the position of the dataplots on the chart. By default, the attribute is set to AUTO mode in which the alignment of each data value is determined automatically based on the position of each plot point. In ABOVE mode, data values are displayed above the plot points unless a plot point is too close to the upper edge of the canvas. While in BELOW mode, data values are displayed below the plot points unless a plot point is too close to the lower edge of the canvas. The attribute will function only if showValue attribute is set to 1 in this particular dataset.",
         "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
         "type": "String",
@@ -3049,6 +3070,27 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showValue"
+      },
+      {
+        "description": "Specifies the font color of a data value for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the background color of a value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBgColor"
+      },
+      {
+        "description": "Sets the border color around the value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBorderColor"
       },
       {
         "description": "If you've opted to show a particular data value on the chart, this attribute lets you adjust the vertical alignment of individual data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of a data value is determined automatically based on the position of its plot point. In ABOVE mode, a data value is displayed above the plot point unless a plot point is too close to the upper edge of the canvas while in BELOW mode, a data value is displayed below the plot point unless a plot point is too close to the lower edge of the canvas.",
