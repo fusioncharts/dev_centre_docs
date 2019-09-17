@@ -5,8 +5,8 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Waterfall Chart",
-            "imgSrc": "waterfall-chart-anatomy.png",
+            "itemHeader": "Marimekko Chart",
+            "imgSrc": "marimekko-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
