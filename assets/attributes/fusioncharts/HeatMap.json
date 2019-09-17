@@ -1417,13 +1417,13 @@
     "table": "Data Label Cosmetics",
     "attrs": [
       {
-        "description": "It sets the configuration whether the x-axis labels will be displayed or not.",
+        "description": "It sets the configuration whether the categorical axis labels will be displayed or not.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showLabels"
       },
       {
-        "description": "This attribute can be used to set the maximum height for the x-axis labels (data labels) excluding the x-axis title. If any label goes beyond this height, the label will be truncated. In stagger mode, the number of stagger lines will be reduced if they exceed this value.",
+        "description": "This attribute can be used to set the maximum height for the categorical axis labels (data labels) excluding the axis title. If any label goes beyond this height, the label will be truncated. In stagger mode, the number of stagger lines will be reduced if they exceed this value.",
         "range": "In Pixels",
         "versionsince": "3.5.0",
         "type": "Number",
@@ -1442,118 +1442,118 @@
         "name": "minLabelWidthPercent"
       },
       {
-        "description": "Using this attribute, you can customize the alignment of data labels (x-axis labels). There are 5 options: AUTO, WRAP, STAGGER, ROTATE or NONE. By default, this attribute is set to AUTO mode which means that the alignment of the data labels is determined automatically depending on the size of the chart. WRAP wraps the label text if it is too long to fit in one line. ROTATE rotates the labels vertically. STAGGER divides the labels into multiple lines.",
+        "description": "Using this attribute, you can customize the alignment of data labels (categorical axis labels). There are 5 options: AUTO, WRAP, STAGGER, ROTATE or NONE. By default, this attribute is set to AUTO mode which means that the alignment of the data labels is determined automatically depending on the size of the chart. WRAP wraps the label text if it is too long to fit in one line. ROTATE rotates the labels vertically. STAGGER divides the labels into multiple lines.",
         "range": "'AUTO', 'WRAP', 'STAGGER', 'ROTATE', 'NONE'",
         "type": "String",
         "name": "labelDisplay"
       },
       {
-        "description": "Sets the x-axis label font family for the text.",
+        "description": "Sets the categorical axis label font family for the text.",
         "range": "Font Name",
         "type": "String",
         "versionsince": "3.5.0",
         "name": "labelFont"
       },
       {
-        "description": "Sets the x-axis label font color.",
+        "description": "Sets the categorical axis label font color.",
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.5.0",
         "name": "labelFontColor"
       },
       {
-        "description": "Specifies the x-axis label font size.",
+        "description": "Specifies the categorical axis label font size.",
         "range": "6 - 72",
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelFontSize"
       },
       {
-        "description": "Flag indicating whether x-axis label font should be bold or not.",
+        "description": "Flag indicating whether categorical axis label font should be bold or not.",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.5.0",
         "name": "labelFontBold"
       },
       {
-        "description": "Flag indicating whether x-axis label font should be italicized or not.",
+        "description": "Flag indicating whether categorical axis label font should be italicized or not.",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.5.0",
         "name": "labelFontItalic"
       },
       {
-        "description": "Sets the background color for x-axis label text.",
+        "description": "Sets the background color for categorical axis label text.",
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.5.0",
         "name": "labelBgColor"
       },
       {
-        "description": "Sets the color of the border around the x-axis label text.",
+        "description": "Sets the color of the border around the categorical axis label text.",
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.5.0",
         "name": "labelBorderColor"
       },
       {
-        "description": "Sets the x-axis label alpha for both font and background.",
+        "description": "Sets the categorical axis label alpha for both font and background.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelAlpha"
       },
       {
-        "description": "Sets the x-axis label background alpha.",
+        "description": "Sets the categorical axis label background alpha.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelBgAlpha"
       },
       {
-        "description": "Sets the x-axis label border alpha.",
+        "description": "Sets the categorical axis label border alpha.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelBorderAlpha"
       },
       {
-        "description": "Sets the x-axis label border padding.",
+        "description": "Sets the categorical axis label border padding.",
         "range": "In Pixels",
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelBorderPadding"
       },
       {
-        "description": "Sets the x-axis label border radius.",
+        "description": "Sets the categorical axis label border radius.",
         "range": "In Pixels",
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelBorderRadius"
       },
       {
-        "description": "Sets the x-axis label border thickness.",
+        "description": "Sets the categorical axis label border thickness.",
         "range": "In Pixels",
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelBorderThickness"
       },
       {
-        "description": "Whether the border around x-axis labels should be rendered using dashed lines. \n\n__Default value__: 0 (border rendered using straight lines)",
+        "description": "Whether the border around categorical axis labels should be rendered using dashed lines. \n\n__Default value__: 0 (border rendered using straight lines)",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.5.0",
         "name": "labelBorderDashed"
       },
       {
-        "description": "Sets the length of each dash when the border around the x-axis labels are rendered using dashed lines.",
+        "description": "Sets the length of each dash when the border around the categorical axis labels are rendered using dashed lines.",
         "range": "In pixels",
         "type": "Number",
         "versionsince": "3.5.0",
         "name": "labelBorderDashLen"
       },
       {
-        "description": "Sets the gap between two consecutive dashes when the border around x-axis labels are rendered using dashed lines.",
+        "description": "Sets the gap between two consecutive dashes when the border around categorical axis labels are rendered using dashed lines.",
         "range": "In pixels",
         "type": "Number",
         "versionsince": "3.5.0",
