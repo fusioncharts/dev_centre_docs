@@ -311,15 +311,6 @@
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros"
                      }
                   ]
-               },
-               {
-                  "annotationNumber": "12",
-                  "annotationName": "Data Values",
-                  "annotationDesc": "Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
-                  "leftPosition": "27%",
-                  "topPosition": "22%",
-                  "annotationLinks": []
                }
             ]
          },
