@@ -12,8 +12,8 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "66.5%",
-                  "topPosition": "2.5%",
+                  "leftPosition": "20.5%",
+                  "topPosition": "39.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
@@ -33,8 +33,8 @@
                   "annotationName": "Sub-caption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "53.5%",
-                  "topPosition": "7.5%",
+                  "leftPosition": "22.5%",
+                  "topPosition": "48.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
@@ -64,60 +64,6 @@
                },
                {
                   "annotationNumber": "4",
-                  "annotationName": "X-Axis",
-                  "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "28%",
-                  "topPosition": "70%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "5",
-                  "annotationName": "X-Axis Title",
-                  "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "53%",
-                  "topPosition": "80%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "6",
-                  "annotationName": "X-Axis Labels",
-                  "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "72%",
-                  "topPosition": "76%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "7",
-                  "annotationName": "Y-Axis",
-                  "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "5%",
-                  "topPosition": "72%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "8",
-                  "annotationName": "Y-Axis Title",
-                  "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "1%",
-                  "topPosition": "20%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "9",
-                  "annotationName": "Trendline",
-                  "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "70%",
-                  "topPosition": "20%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "10",
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
@@ -129,7 +75,7 @@
                   }]
                },
                {
-                  "annotationNumber": "11",
+                  "annotationNumber": "5",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
@@ -150,7 +96,7 @@
                   ]
                },
                {
-                  "annotationNumber": "12",
+                  "annotationNumber": "6",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
@@ -163,27 +109,6 @@
                      {
                         "linkDesc": "You can also customize the text of tooltip and use values plotted on the chart using macros, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros"
-                     }
-                  ]
-               },
-               {
-                  "annotationNumber": "13",
-                  "annotationName": "Export Menu",
-                  "annotationDesc": "Export menu is hamburger menu that appears on top-right of the chart by hovering on which you can export the chart using available options.",
-                  "annotationDescLinkPath": null,
-                  "leftPosition": "91.5%",
-                  "topPosition": "5%",
-                  "annotationLinks": [{
-                        "linkDesc": "You can enable or disable chart export using attribute exportEnabled, learn more about its usage ",
-                        "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
-                     },
-                     {
-                        "linkDesc": "You can also define export mode like server, client, auto for chart export, learn more about them ",
-                        "linkPath": "/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature"
-                     },
-                     {
-                        "linkDesc": "Look and feel of this menu can also be customized using available attributes, learn more about them ",
-                        "linkPath": "/chart-attributes/area2d"
                      }
                   ]
                }
