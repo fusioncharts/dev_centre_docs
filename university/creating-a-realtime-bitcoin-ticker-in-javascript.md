@@ -39,8 +39,6 @@ By the end of this tutorial, you will be able to build a Real-Time Cryptocurrenc
 ></script>
 ```
 
----
-
 ## Including and Initializing Cryptonator API
 
 The Cryptonator API data source is defined at the top of the script tag. The API returns a [JSON](https://www.json.org/) dump, which we have converted as the JavaScript object "data" (passed on to this function as an argument).
@@ -53,7 +51,9 @@ Navigate to the requested URL, and the values returned should be visible in the 
 
 > **IMPORTANT :** You may encounter a CORS issue while using the Cryptonator API, where your server may be blocked after sending repeated requests to the API. You can learn more about the CORS issue you may face here: [http://cors.io/](http://cors.io/) . One quick way to bypass the CORS issue is by using AWS Lambda for server-less architecture or setting up a backend server and making requests via it. Use the below syntax to resolve the issue.
 
+```js
 const api_url = 'https://cors.io/?https://api.cryptonator.com/api/ticker/';
+```
 
 Let’s get into the detailed code snippets to understand the ticker better.
 
@@ -88,7 +88,7 @@ Given below is the table which describes the functions and their corresponding o
 ## Creating the Chart Container
 
 Every chart displayed on a web page is rendered within a unique [HTML](https://html.com/) container.
-We will use the <div> element for creating the HTML container for our chart.
+We will use the `<div>` element for creating the HTML container for our chart.
 
 Given below is the code for creating the chart container:
 
@@ -113,8 +113,6 @@ To create a real-time chart follow the steps given below:
 -  Set **refreshinterval** to 2, the chart gets updated every 2 sec.
 -  The dimension of the chart is specified using **width** and **height** attributes.
 -  The type of data (JSON/XML) you want to pass to the chart object is defined using the **dataFormat** attribute.
-
----
 
 Since we have the JSON data and the chart container in place, we will now create the FusionCharts instance. The details required to render the chart, like the chart type, the chart ID, chart dimensions, the HTML container ID, the data format and so on, will be passed to this chart instance.
 
