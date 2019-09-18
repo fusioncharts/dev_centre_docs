@@ -5,7 +5,7 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Spark Win-Loss Chart",
+            "itemHeader": "Spark Win Loss Chart",
             "imgSrc": "spark-win-loss-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
