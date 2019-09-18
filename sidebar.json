@@ -2052,13 +2052,13 @@
                     ]
                 },
                 {
-                    "title": "Spark Win-Loss Charts",
+                    "title": "Spark Win Loss Charts",
                     "children": [{
                             "title": "Chart anatomy",
                             "path": "/understanding-fusioncharts/spark-win-loss-chart"
                         },
                         {
-                            "title": "Create Spark Win-Loss Charts",
+                            "title": "Create Spark Win Loss Charts",
                             "path": "/chart-guide/standard-charts/spark-win-loss-chart"
                         },
                         {
