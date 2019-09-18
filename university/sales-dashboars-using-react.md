@@ -4,6 +4,7 @@ description: In this tutorial, we’ll be creating a Sales dashboard by fetching
 heading: Building a Sales Dashboard using React Framework
 date: 2019/06/10
 featured: false
+author: Rahul Kumar
 ---
 
 In any organization, revenue is key for growth, and the sales team manages this. For the sales team, it is important to understand how many leads from marketing efforts and organic sources converted to opportunities, and how many of these opportunities were sent pricing quotes. This leads to a pipeline of these deals and their respective revenue – which is the indicative revenue that sales can expect in that timespan (for a month or a quarter). Further, some of these deals in pipeline become lost opportunities due to multiple reasons (competitors, pricing too high, or certain features not available in the product). Finally a subset of these deals in pipeline convert to actual customers.

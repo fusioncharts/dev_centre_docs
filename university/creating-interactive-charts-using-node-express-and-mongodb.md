@@ -4,6 +4,7 @@ description: A 9 Step tutorial that teaches you how to build fast and interactiv
 heading: Create Charts using Node.js, ExpressJS and Mongodb
 date: 2019/01/24
 featured: true
+author: Rahul Kumar
 ---
 
 In the recent years an unexpected programming language has been dominating the server side scene. This programming language was only being used for client side programming. It is none other than our very own **JavaScript**. The change in the fortunes of JavaScript can be attributed to the introduction of a server side framework called **Node.js**.

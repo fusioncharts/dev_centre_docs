@@ -4,6 +4,7 @@ description: In this tutorial, we’ll be creating a Sales dashboard by fetching
 heading: 6 Data Visualization Trends For The Present Day
 date: 2019/06/23
 featured: true
+author: Dishank Tiwari
 ---
 
 Data visualization can be an incredible driver for communicating key business information. It helps present a visual narrative that’s easier to digest for those without the time to pour over large swaths of text (think CxOs, busy senior management, or even millennials with a time crunch).
