@@ -430,7 +430,7 @@ timestamp can be observed. The y-axis is configured dynamically in such a way th
 drastic change in price, the axis of the chart gets modified accordingly. After you have implemented
 all the steps in this tutorial, your final dashboard will look like this:
 
-![](/images/real-time-data-api-for-the-bitcoin-ticker.png)
+![](/images/real-time-cryptocurrency-dashboard.png)
 
 You can find the entire source code for the Bitcoin Ticker here → [Source Code
 Link](https://github.com/sowmyaraj92/cryptocurrency_ticker)
