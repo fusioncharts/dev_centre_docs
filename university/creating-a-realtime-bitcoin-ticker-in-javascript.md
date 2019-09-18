@@ -2,7 +2,7 @@
 title: Creating a Real-Time Bitcoin Ticker in Javascript | FusionCharts
 description: In this tutorial, we’ll be creating a Real-Time Bitcoin Ticker using Cryptonator API.
 heading: Creating a Real-Time Bitcoin Ticker in JavaScript
-author: Sowmya
+author: sowmya
 date: 2019/01/22
 featured: true
 ---
