@@ -6,13 +6,13 @@ heading: Create a Chart Using ASP.NET in FusionCharts
 
 > ### FusionCharts.NET
 >
-> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
 >
 > - Provide raw data and FusionCharts.NET automatically converts the data into JSON.
-> - Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> - Dynamically slice and dice data to derive insights using the [data engine](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
 > - All methods and properties are available in Visual Studio intellisense.
 > - ...and many more.
->   Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+>   Get it now. Click [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
 ## Overview
 
