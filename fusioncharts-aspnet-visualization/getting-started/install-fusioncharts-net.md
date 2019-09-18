@@ -76,3 +76,5 @@ FusionCharts export handler gets automatically installed, once you install `Fusi
   - `FusionCharts.SharpVectors.Model.dll`
   - `FusionCharts.SharpVectors.Rendering.Wpf.dll`
   - `FusionCharts.SharpVectors.Runtime.dll`
+
+> As you have downloaded and configured your web application, let's now see how can you [Create your First Chart](/fusioncharts-aspnet-visualization/getting-started/create-first-chart-using-fusioncharts-net).
