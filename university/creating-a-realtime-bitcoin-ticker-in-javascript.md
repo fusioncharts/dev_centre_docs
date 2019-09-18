@@ -22,13 +22,14 @@ By the end of this tutorial, you will be able to build a Real-Time Cryptocurrenc
 
 ## Including Dependencies
 
-**Before we start, we need to set up the following dependencies:**
-**1.FusionCharts Core JS Files (**[**Download Link**](https://www.fusioncharts.com/download/)**)**
-**2.**[**Cryptonator API**](https://api.cryptonator.com/api)
+Before we start, we need to set up the following dependencies:
+
+1.FusionCharts Core JS Files (**[**Download Link**](https://www.fusioncharts.com/download/)**)
+2.[**Cryptonator API**](https://api.cryptonator.com/api)
 
 **NOTE : Include the core JS files (inside the <head> tag) downloaded as part of the FusionCharts package, in the HTML file:**
 
-```html
+```js
 <script
    type="text/javascript"
    src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
@@ -78,12 +79,12 @@ To send a request to a server, **open()** method of the XMLHttpRequest object is
 
 Given below is the table which describes the functions and their corresponding outcomes.
 
-| bitcoinDataHandler()      | Returns the price for Bitcoin.                                            |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **ethereumDataHandler()** | **Returns the price for Ethereum.**                                       |
-| **litecoinDataHandler()** | **Returns the price for Litecoin.**                                       |
-| **clientDateTime()**      | **Returns the current timestamp for the chart.**                          |
-| **updateData()**          | **The chart is referenced with its ID and the data is fed to the chart.** |
+| bitcoinDataHandler()  | Returns the price for Bitcoin.                                        |
+| --------------------- | --------------------------------------------------------------------- |
+| ethereumDataHandler() | Returns the price for Ethereum                                        |
+| litecoinDataHandler() | Returns the price for Litecoin                                        |
+| clientDateTime()      | Returns the current timestamp for the chart                           |
+| updateData()          | The chart is referenced with its ID and the data is fed to the chart. |
 
 ## Creating the Chart Container
 
@@ -124,7 +125,9 @@ var fusioncharts = new FusionCharts({
    width: '100%',
    height: '350',
    dataFormat: 'json',
-   /* The data source required to render the real-time chart is given below: */
+```
+The data source required to render the real-time chart is given below: */
+```js
    dataSource: {
       chart: {
          caption: 'Bitcoin Ticker',
@@ -255,7 +258,7 @@ HTML Section:-
 
 JavaScript Section:-
 
-```html
+```js
 <script>
    //Fetch the price of Ethereum
    const eth_api_url = 'https://api.cryptonator.com/api/ticker/eth-usd';
