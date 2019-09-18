@@ -2526,5 +2526,47 @@
             "path": "/fusioncharts-aspnet-visualization/version-history-fusioncharts-net"
          }
       ]
+   },
+   {
+      "title": "University",
+      "icon": "fc_net",
+      "description": "basic university",
+      "longDescription": "",
+      "visibility": false,
+      "children": [
+         {
+            "title": "Overview",
+            "path": "/university"
+         },
+         {
+            "title": "Tutorials",
+            "children": [
+               {
+                  "title": "6 Data Visualization Trends For The Present Day",
+                  "path": "/university/6-data-visualization-trends-for-the-present-day"
+               },
+               {
+                  "title": "All You Need To Know About Candlesticks",
+                  "path": "/university/all-you-need-to-know-about-candleticks"
+               },
+               {
+                  "title": "Create Charts using Node.js, ExpressJS and Mongodb",
+                  "path": "/university/creating-interactive-charts-using-node-express-and-mongodb"
+               },
+               {
+                  "title": "Creating a Real-Time Bitcoin Ticker in JavaScript",
+                  "path": "/university/creating-a-realtime-bitcoin-ticker-in-javascript"
+               },
+               {
+                  "title": "Building a Sales Dashboard using React Framework",
+                  "path": "/university/sales-dashboars-using-react"
+               },
+               {
+                  "title": "When to use them and when not to",
+                  "path": "/university/when-to-use-them-and-when-not-to"
+               }
+            ]
+         }
+      ]
    }
 ]
