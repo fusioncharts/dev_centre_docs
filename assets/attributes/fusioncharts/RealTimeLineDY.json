@@ -2701,6 +2701,34 @@
         "name": "canvasPadding"
       },
       {
+        "description": "This attribute lets you set the space between the left of the canvas border and the canvas of the chart. This attribute is particularly useful when your data plot gets clipped by the left border of the canvas. Using this attribute, you can control the amount of empty space between the chart left side and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasLeftPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the right of the canvas border and the canvas  of the chart. This attribute is particularly useful when your data plot gets clipped by the right border of the canvas. Using this attribute, you can control the amount of empty space between the chart right side and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasRightPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the top of the canvas border and the canvas of the chart. This attribute is particularly useful when your data plot gets clipped by the top border of the canvas. Using this attribute, you can control the amount of empty space between the chart's top and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasTopPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the bottom of the canvas border and the canvas of the chart. This attribute is particularly useful when your data plot gets clipped by the bottom border of the canvas. Using this attribute, you can control the amount of empty space between the chart's bottom and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasBottomPadding"
+      },
+      {
         "description": "Using this, you can set the distance between the top end of x-axis title and the bottom end of data labels (or canvas, if data labels are not to be shown).",
         "range": "In pixels",
         "type": "Number",
