@@ -148,7 +148,7 @@
                   "leftPosition": "69%",
                   "topPosition": "46.5%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
+                        "linkDesc": "You can customize padding, size and other properties of tooltip. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
                      },
                      {
