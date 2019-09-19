@@ -2,7 +2,7 @@
 title: Developer Tutorial | Building a Sales Dashboard using React Framework
 description: In this tutorial, we’ll be creating a Sales dashboard by fetching data using Google Sheets API.
 heading: Developer Tutorial | Building a Sales Dashboard using React Framework
-author: Sowmya
+author: sowmya
 date: 2019/03/27
 featured: true
 ---
