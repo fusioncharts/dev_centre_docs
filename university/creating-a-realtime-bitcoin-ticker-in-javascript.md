@@ -7,7 +7,7 @@ date: 2019/01/22
 featured: true
 ---
 
-Bitcoin, the popular cryptocurrency that’s going to replace traditional fiat currency in the future - say many crypto enthusiasts. Well, that’s a fact that’s becoming more of fiction, specially after last year, when Bitcoin prices rose up astronomically to potentially hit the \$20,000 mark. While the entire world has been hoping for Bitcoin to rise and stabilize, in reality the currency has fallen and remains unstable.
+Bitcoin, the popular cryptocurrency that’s going to replace traditional fiat currency in the future - say many crypto enthusiasts. Well, that’s a fact that’s becoming more of fiction, specially after last year, when Bitcoin prices rose up astronomically to potentially hit the $20,000 mark. While the entire world has been hoping for Bitcoin to rise and stabilize, in reality the currency has fallen and remains unstable.
 
 As more trading portals and online websites monitor bitcoin price fluctuations, it’s very important to monitor these real-time changes during trading of bitcoin and other crypto currencies.
 On that note, we have built a real-time bitcoin ticker dashboard. This tutorial gives a step by step guide on how to create this mini dashboard, using [JavaScript](https://www.javascript.com/), Bitcoin API and FusionCharts.
@@ -16,7 +16,7 @@ By the end of this tutorial, you will be able to build a Real-Time Cryptocurrenc
 
 ![](/images/real-time-cryptocurrency-dashboard.png)
 
-    Check out the Bitcoin Ticker Live Dashboard [here](https://sowmyaraj92.github.io/cryptocurrency_ticker/).
+Check out the Bitcoin Ticker Live Dashboard [here](https://sowmyaraj92.github.io/cryptocurrency_ticker/).
 
 > The 3 KPIs on top showcase real-time values of top cryptocurrencies like Bitcoin, Litecoin and Ethereum. This line-chart below the KPIs demonstrate a Bitcoin Ticker where the variation in bitcoin prices are captured. The x-axis denotes the timestamp variation and y-axis indicates the bitcoin prices in \$.
 
@@ -24,7 +24,8 @@ By the end of this tutorial, you will be able to build a Real-Time Cryptocurrenc
 
 Before we start, we need to set up the following dependencies:
 
-1.FusionCharts Core JS Files- [Download Link](https://www.fusioncharts.com/download/)
+1.FusionCharts Core JS Files- **[Download Link]**(https://www.fusioncharts.com/download/)
+<br>
 2.[Cryptonator API](https://api.cryptonator.com/api)
 
 **NOTE : Include the core JS files (inside the <head> tag) downloaded as part of the FusionCharts package, in the HTML file:**
@@ -73,19 +74,20 @@ The components present in the page are :
 The [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object can be used to request data from a web server.
 To send a request to a server, **open()** method of the XMLHttpRequest object is used.
 
-| open(method, url, async)| Specifies the type of request |
-| method | the type of request: GET or POST |
-| url | the server (file) location |
-| async | true (asynchronous) or false (synchronous) |
+| open(method, url, async) | Specifies the type of request              |
+| ------------------------ | ------------------------------------------ |
+| method                   | the type of request: GET or POST           |
+| url                      | the server (file) location                 |
+| async                    | true (asynchronous) or false (synchronous) |
 
 ## JS Implementation: Functions and Descriptions
 
 Given below is the table which describes the functions and their corresponding outcomes.
 
 | functions | outcome |
+| --------- | ------- |
 
-| bitcoinDataHandler()  | Returns the price for Bitcoin.                                        |
-| --------------------- | --------------------------------------------------------------------- |
+| bitcoinDataHandler()  | Returns the price for Bitcoin                                        |
 | ethereumDataHandler() | Returns the price for Ethereum                                        |
 | litecoinDataHandler() | Returns the price for Litecoin                                        |
 | clientDateTime()      | Returns the current timestamp for the chart                           |
