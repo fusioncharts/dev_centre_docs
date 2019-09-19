@@ -2589,11 +2589,6 @@
             "title": "Create a Combination Chart using FusionCharts in .NET Framework Web Form",
             "path": "university/create-combination-chart-dotnet-webform"
           },
-
-          {
-            "title": "Create a Funnel Chart using FusionCharts and MVC in ASP.NET",
-            "path": "university/create-funnel-chart-fusionchart-mvc-dotnet"
-          },
           {
             "title": "When to use them and when not to",
             "path": "/university/when-to-use-them-and-when-not-to"
