@@ -1,5 +1,5 @@
 ---
-title: Create a Funnel Chart | FusionCharts
+title: Create a Funnel Chart using ASP.NET Framework
 description: In this tutorial, we’ll be creating a Funnel Chart using Fusioncharts and ASP.NET
 heading: Create a Funnel Chart Using FusionCharts and ASP.NET Web Form in .NET Framework
 date: 2019/06/23

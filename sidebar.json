@@ -2566,6 +2566,10 @@
             "path": "/university/learn-how-to-export-a-dashboard-fusionexport"
           },
           {
+            "title": "Create a Funnel Chart using ASP.NET Framework",
+            "path": "university/create-a-funnel-chart-using-fusioncharts-and-aspdotnet"
+          },
+          {
             "title": "When to use them and when not to",
             "path": "/university/when-to-use-them-and-when-not-to"
           }
