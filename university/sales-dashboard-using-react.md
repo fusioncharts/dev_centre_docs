@@ -30,6 +30,7 @@ Check out the [Live Dashboard here](https://sowmyaraj92.github.io/sales-dashboar
 ## Including Dependencies
 
 **Step 1: Including React**
+<br>
 Using `Create React-App` is one of the best way to set up the development environment. This provides the latest JavaScript features, enhances the developer experience and optimises the app for production.
 
 Open the terminal, go ahead and enter:
@@ -42,44 +43,46 @@ Open the terminal, go ahead and enter:
 `my-sales` is the working directory where React Boilerplate will be installed along with all the utilities and dependencies.
 
 
-> Note: The working directory should contain a ****[**package.json**](https://docs.npmjs.com/files/package.json). If the package is not present, then you can create it with the command : `npm init -y`
+> Note: The working directory should contain a [package.json](https://docs.npmjs.com/files/package.json). If the package is not present, then you can create it with the command : `npm init -y`
 
 
 **Step 2: Including Bootstrap** 
+<br>
 We will be using Bootstrap to create the layout and user-interface for our app. So, in the terminal go ahead and enter:
 
 ```bash
-    npm install bootstrap --save
+   $ npm install bootstrap --save
 ```
 
-**Step 3: Including FusionCharts Core Package and its React Component**
+**Step 3: Including FusionCharts Core Package and its React Component** 
+<br>
 We will be using **FusionCharts** to render the charts in our dashboard. To install FusionCharts, open the terminal and enter:
 
 ```bash
-    npm install fusioncharts --save
+    $ npm install fusioncharts --save
 ```
 
 The React-component provided by FusionCharts can be used to add JS charts in our app without any difficulty. To check them out, click [here](https://github.com/fusioncharts/react-fusioncharts-component).
 
 ```bash
-    npm install react-fusioncharts --save
+   $ npm install react-fusioncharts --save
 ```
 
-**Step 4: Including FusionMaps Package**
+**Step 4: Including FusionMaps Package** 
+<br>
 To render maps, install `fusionmaps` package which contains all the map definition files as shown below:
 
 ```bash
-    $ npm install fusionmaps
+    $ npm install fusionmaps --save
 ```
 
 # Importing the Charts Using React Component
-
 The dashboard comprises of 3 charts: Multi-series Column 2D, Maps and Multi-series Line charts. The detailing of each of them are given below:
 
 **Multi-Series Column 2D**
 The multi-series column 2D chart is used to plot data for multiple datasets. This chart is also used to analyse and compare data points grouped in sub-categories. It has vertically aligned rectangular bars on one axis with discrete values shown on the other. There is a legend for each of the bars plotted. Hovering over the rectangular bar displays the coordinate value of the attribute. Furthermore,  the length of a column is proportional to the values it represents. This chart can be used to visualize data such as the revenue for an year/quarter, sales transactions involving opportunities, pipelines etc. Click [here](https://www.fusioncharts.com/charts/column-bar-charts/grouped-column-chart-with-multiple-series) to read more about Multi-Series Column 2D.
 
-******Multi-Series Line Charts**
+**Multi-Series Line Charts**
 The multi-series line chart is used to visualize trends and relationships in multiple datasets. It consists of various data points connected using line segments, where each point represents a single value. It is widely used to show continuous data like opportunities in pipeline, closed opportunities etc. Take a detailed look at Multi-Series Line Charts [here](https://www.fusioncharts.com/charts/line-area-charts/line-chart-with-multiple-series). 
 
 **Maps**
@@ -380,7 +383,8 @@ Now that our layout is ready, we will define functionality for elements and feed
 The above code snippet will create one KPI for `Revenue Target`. Likewise, we will create cards for all the 4 KPIs for the Sales Dashboard.
 
 **Creating the Charts Section:**
-We will use `col` and `card` components of Bootstrap to create the Chart Layout. `**containerBackgroundOpacity**` is an attribute which is used to manipulate  the background opacity of the charts.
+
+We will use `col` and `card` components of Bootstrap to create the Chart Layout. `containerBackgroundOpacity` is an attribute which is used to manipulate  the background opacity of the charts.
 
 ```html
 
@@ -462,7 +466,7 @@ If you’ve followed the above steps till now you should have a functional dashb
 Hope the tutorial helped you create this Sales Dashboard using Google Sheets. Now, you can go ahead and add UI elements, styles, more charts and a lot more features.
 
 
-> **You can download Fusion Charts Package for React stack from here** [**Sign up for Fusion Charts**](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=react)**.**
+> **You can download Fusion Charts Package for React stack from here** - [**Sign up for Fusion Charts**](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=react)**.**
 
 A sales dashboard plays a crucial role in giving the peeps at sales an up-to-date view of their organisation’s sales health so that they can make desired revenue predictions, visualize successfully closed deals and also identify key areas for optimisation.
 
