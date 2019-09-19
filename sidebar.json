@@ -2143,6 +2143,98 @@
                         }
                     ]
                 },
+                 {
+                    "title": "Drag Node Charts",
+                    "children": [{
+                            "title": "Chart anatomy",
+                            "path": "/understanding-fusioncharts/drag-node-chart"
+                        },
+                        {
+                            "title": "Create Drag Node Charts",
+                            "path": "/chart-guide/standard-charts/drag-node-chart"
+                        },
+                        {
+                            "title": "Chart configurations",
+                            "children": [{
+                                    "title": "Change Size",
+                                    "path": "/chart-guide/chart-configurations/column-charts/size-and-type-column-chart"
+                                },
+                                {
+                                    "title": "Border & Background",
+                                    "path": "/chart-guide/chart-configurations/column-charts/border-and-background-column-chart"
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": "/chart-guide/chart-configurations/column-charts/fonts-column-chart"
+                                },
+                                {
+                                    "title": "Number Formats",
+                                    "path": "/chart-guide/chart-configurations/column-charts/number-formats-column-chart"
+                                },
+                                {
+                                    "title": "Chart Pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load External Logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Chart Components",
+                            "children": [{
+                                    "title": "Caption & sub-caption",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Canvas",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Data plot",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Y-axis",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "X-axis",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Trendlines & Trendzones",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Tooltips",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Toolbar",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Legend",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Div lines & grids",
+                                    "path": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
+                        }
+                    ]
+                },
                 {
                     "title": "Box and Whisker Charts",
                     "children": [{
