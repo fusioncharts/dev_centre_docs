@@ -444,3 +444,5 @@ all the steps in this tutorial, your final dashboard will look like this:
 ![](/images/real-time-cryptocurrency-dashboard.png)
 
 You can find the entire source code for the Bitcoin Ticker here → [Source Code Link](https://github.com/sowmyaraj92/cryptocurrency_ticker)
+
+With the increase in data collection and aggregation, businesses now feel the need for better data visualization to take more informed decisions. FusionCharts has been successful in visualizing data sources across different industry use-cases with 28,000 customers and love from over 750,000 developers world wide. Learn more about FusionCharts and it’s new products like Data-Stories, Dashboards, Export products and more. Happy Visualizing!

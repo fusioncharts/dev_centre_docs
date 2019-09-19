@@ -30,7 +30,7 @@ Check out the [Live Dashboard here](https://sowmyaraj92.github.io/sales-dashboar
 ## Including Dependencies
 
 **Step 1: Including React**
-<br>
+
 Using `Create React-App` is one of the best way to set up the development environment. This provides the latest JavaScript features, enhances the developer experience and optimises the app for production.
 
 Open the terminal, go ahead and enter:
@@ -47,7 +47,7 @@ Open the terminal, go ahead and enter:
 
 
 **Step 2: Including Bootstrap** 
-<br>
+
 We will be using Bootstrap to create the layout and user-interface for our app. So, in the terminal go ahead and enter:
 
 ```bash
@@ -55,7 +55,7 @@ We will be using Bootstrap to create the layout and user-interface for our app. 
 ```
 
 **Step 3: Including FusionCharts Core Package and its React Component** 
-<br>
+
 We will be using **FusionCharts** to render the charts in our dashboard. To install FusionCharts, open the terminal and enter:
 
 ```bash
@@ -69,7 +69,7 @@ The React-component provided by FusionCharts can be used to add JS charts in our
 ```
 
 **Step 4: Including FusionMaps Package** 
-<br>
+
 To render maps, install `fusionmaps` package which contains all the map definition files as shown below:
 
 ```bash
@@ -202,7 +202,8 @@ Now let’s divide our dashboard into 3 parts:
 2. KPI Section
 3. Charts Section
 
-**Creating the Navigation Section:** <br>
+**Creating the Navigation Section:** 
+
 To create the navigation bar,  we will be using the `navbar` component of Bootstrap. Just below the navigation bar holds a component with a drop-down for `Year` and  `Quarter`. Below is the HTML snippet for the same:
 
 ```html
@@ -283,7 +284,8 @@ We will now create a `container` to house both the KPI and Chart sections of the
     </div>
 ```
 
-**Creating the KPI Section:**<br>
+**Creating the KPI Section:**
+
 To create this, we will use the `Card` component of Bootstrap to create the layout for our KPI section. Below is the HTML snippet for the same:
 
 ```html
@@ -381,7 +383,7 @@ Now that our layout is ready, we will define functionality for elements and feed
 
 The above code snippet will create one KPI for `Revenue Target`. Likewise, we will create cards for all the 4 KPIs for the Sales Dashboard.
 
-**Creating the Charts Section:** <br>
+**Creating the Charts Section:** 
 We will use `col` and `card` components of Bootstrap to create the Chart Layout. `containerBackgroundOpacity` is an attribute which is used to manipulate  the background opacity of the charts.
 
 ```html
