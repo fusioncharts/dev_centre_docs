@@ -16,19 +16,20 @@ By the end of this tutorial, you will be able to build a Real-Time Cryptocurrenc
 
 ![](/images/real-time-cryptocurrency-dashboard.png)
 
-    Check out the Bitcoin Ticker Live Dashboard [here](https://sowmyaraj92.github.io/cryptocurrency_ticker/).
+Check out the Bitcoin Ticker Live Dashboard [here](https://sowmyaraj92.github.io/cryptocurrency_ticker/).
 
 > The 3 KPIs on top showcase real-time values of top cryptocurrencies like Bitcoin, Litecoin and Ethereum. This line-chart below the KPIs demonstrate a Bitcoin Ticker where the variation in bitcoin prices are captured. The x-axis denotes the timestamp variation and y-axis indicates the bitcoin prices in \$.
 
 ## Including Dependencies
 
-**Before we start, we need to set up the following dependencies:**
-**1.FusionCharts Core JS Files (**[**Download Link**](https://www.fusioncharts.com/download/)**)**
-**2.**[**Cryptonator API**](https://api.cryptonator.com/api)
+Before we start, we need to set up the following dependencies:
+
+1.FusionCharts Core JS Files- [Download Link](https://www.fusioncharts.com/download/)
+<br> 2.[Cryptonator API](https://api.cryptonator.com/api)
 
 **NOTE : Include the core JS files (inside the <head> tag) downloaded as part of the FusionCharts package, in the HTML file:**
 
-```html
+```js
 <script
    type="text/javascript"
    src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
@@ -72,18 +73,23 @@ The components present in the page are :
 The [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object can be used to request data from a web server.
 To send a request to a server, **open()** method of the XMLHttpRequest object is used.
 
-| **open(method, url, async)** | **Specifies the type of request**<br> <br>**\*\***method: the type of request: GET or POST**<br>**url: the server (file) location**<br>**async: true (asynchronous) or false (synchronous)**<br> \*\*** |
+| open(method, url, async) | Specifies the type of request              |
+| ------------------------ | ------------------------------------------ |
+| method                   | the type of request: GET or POST           |
+| url                      | the server (file) location                 |
+| async                    | true (asynchronous) or false (synchronous) |
 
 ## JS Implementation: Functions and Descriptions
 
 Given below is the table which describes the functions and their corresponding outcomes.
 
-| bitcoinDataHandler()      | Returns the price for Bitcoin.                                            |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **ethereumDataHandler()** | **Returns the price for Ethereum.**                                       |
-| **litecoinDataHandler()** | **Returns the price for Litecoin.**                                       |
-| **clientDateTime()**      | **Returns the current timestamp for the chart.**                          |
-| **updateData()**          | **The chart is referenced with its ID and the data is fed to the chart.** |
+| functions             | outcome                                                              |
+| --------------------- | -------------------------------------------------------------------- |
+| bitcoinDataHandler()  | Returns the price for Bitcoin                                        |
+| ethereumDataHandler() | Returns the price for Ethereum                                       |
+| litecoinDataHandler() | Returns the price for Litecoin                                       |
+| clientDateTime()      | Returns the current timestamp for the chart                          |
+| updateData()          | The chart is referenced with its ID and the data is fed to the chart |
 
 ## Creating the Chart Container
 
@@ -124,7 +130,11 @@ var fusioncharts = new FusionCharts({
    width: '100%',
    height: '350',
    dataFormat: 'json',
-   /* The data source required to render the real-time chart is given below: */
+```
+
+The data source required to render the real-time chart is given below: \*/
+
+```js
    dataSource: {
       chart: {
          caption: 'Bitcoin Ticker',
@@ -255,7 +265,7 @@ HTML Section:-
 
 JavaScript Section:-
 
-```html
+```js
 <script>
    //Fetch the price of Ethereum
    const eth_api_url = 'https://api.cryptonator.com/api/ticker/eth-usd';
@@ -432,5 +442,6 @@ all the steps in this tutorial, your final dashboard will look like this:
 
 ![](/images/real-time-cryptocurrency-dashboard.png)
 
-You can find the entire source code for the Bitcoin Ticker here → [Source Code
-Link](https://github.com/sowmyaraj92/cryptocurrency_ticker)
+You can find the entire source code for the Bitcoin Ticker here → [Source Code Link](https://github.com/sowmyaraj92/cryptocurrency_ticker)
+
+With the increase in data collection and aggregation, businesses now feel the need for better data visualization to take more informed decisions. FusionCharts has been successful in visualizing data sources across different industry use-cases with 28,000 customers and love from over 750,000 developers world wide. Learn more about FusionCharts and it’s new products like Data-Stories, Dashboards, Export products and more. Happy Visualizing!
