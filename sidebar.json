@@ -1,25 +1,20 @@
-[
-   {
+[{
       "title": "FusionCharts",
       "header": "FusionCharts Suite XT",
       "icon": "fc_fusioncharts_xt",
       "description": "Plot 95+ charts and 1400+ data-driven maps",
       "longDescription": "Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
-      "children": [
-         {
+      "children": [{
             "title": "Overview",
             "path": "/fusioncharts"
          },
          {
             "title": "Getting Started ",
-            "children": [
-               {
+            "children": [{
                   "title": "Plain JavaScript",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
                            },
@@ -35,8 +30,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Configuring your Chart",
                               "path": "/getting-started/plain-javascript/configure-your-chart-using-plain-javascript"
                            },
@@ -62,17 +56,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/plain-javascript/slice-data-plot-using-custom-api-in-plain-javascript"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/plain-javascript/slice-data-plot-using-custom-api-in-plain-javascript"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/plain-javascript/change-chart-type-using-plain-javascript"
                                  },
@@ -108,14 +99,11 @@
                },
                {
                   "title": "Angular",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "AngularJS (v1.x)",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Creating your First Chart",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Your First Chart",
                                     "path": "/getting-started/angular/angularjs/your-first-chart-using-angularjs"
                                  },
@@ -131,8 +119,7 @@
                            },
                            {
                               "title": "Usage Guide",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Configuring your Chart",
                                     "path": "/getting-started/angular/angularjs/configure-your-chart-using-angularjs"
                                  },
@@ -158,17 +145,14 @@
                                  },
                                  {
                                     "title": "Working with APIs",
-                                    "children": [
-                                       {
-                                          "title": "Slice Data Plot",
-                                          "path": "/getting-started/angular/angularjs/slice-data-plot-using-custom-api-in-angularjs"
-                                       }
-                                    ]
+                                    "children": [{
+                                       "title": "Slice Data Plot",
+                                       "path": "/getting-started/angular/angularjs/slice-data-plot-using-custom-api-in-angularjs"
+                                    }]
                                  },
                                  {
                                     "title": "Working with Events",
-                                    "children": [
-                                       {
+                                    "children": [{
                                           "title": "Change Chart Type",
                                           "path": "/getting-started/angular/angularjs/change-chart-type-using-angularjs"
                                        },
@@ -204,11 +188,9 @@
                      },
                      {
                         "title": "Angular (v2.x & Above)",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Creating your First Chart",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Your First Chart",
                                     "path": "/getting-started/angular/angular/your-first-chart-using-angular"
                                  },
@@ -224,8 +206,7 @@
                            },
                            {
                               "title": "Usage Guide",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Configuring your Chart",
                                     "path": "/getting-started/angular/angular/configure-your-chart-using-angular"
                                  },
@@ -247,17 +228,14 @@
                                  },
                                  {
                                     "title": "Working with APIs",
-                                    "children": [
-                                       {
-                                          "title": "Slice Data Plot",
-                                          "path": "/getting-started/angular/angular/slice-data-plot-using-custom-api-in-angular"
-                                       }
-                                    ]
+                                    "children": [{
+                                       "title": "Slice Data Plot",
+                                       "path": "/getting-started/angular/angular/slice-data-plot-using-custom-api-in-angular"
+                                    }]
                                  },
                                  {
                                     "title": "Working with Events",
-                                    "children": [
-                                       {
+                                    "children": [{
                                           "title": "Change Chart Type",
                                           "path": "/getting-started/angular/angular/change-chart-type-using-angular"
                                        },
@@ -295,11 +273,9 @@
                },
                {
                   "title": "React",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/react/your-first-chart-using-react"
                            },
@@ -315,8 +291,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Configuring your Chart",
                               "path": "/getting-started/react/configure-your-chart-using-react"
                            },
@@ -342,17 +317,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/react/slice-data-plot-using-custom-api-in-react"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/react/slice-data-plot-using-custom-api-in-react"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/react/change-chart-type-using-react"
                                  },
@@ -388,11 +360,9 @@
                },
                {
                   "title": "React Native",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/react-native/your-first-chart-using-react-native"
                            },
@@ -408,15 +378,13 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Adding Drill-Down Charts",
                               "path": "/getting-started/react-native/add-drill-down-using-react-native"
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/react-native/change-chart-type-using-react-native"
                                  },
@@ -436,11 +404,9 @@
                },
                {
                   "title": "Vue",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/vue/your-first-chart-using-vuejs"
                            },
@@ -456,8 +422,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Configuring your Chart",
                               "path": "/getting-started/vue/configure-your-chart-using-vuejs"
                            },
@@ -483,17 +448,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/vue/slice-data-plot-using-custom-api-in-vuejs"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/vue/slice-data-plot-using-custom-api-in-vuejs"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/vue/change-chart-type-using-vuejs"
                                  },
@@ -529,11 +491,9 @@
                },
                {
                   "title": "jQuery",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/jquery/your-first-chart-using-jquery"
                            },
@@ -549,8 +509,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Configuring your Chart",
                               "path": "/getting-started/jquery/configure-your-chart-using-jquery"
                            },
@@ -576,17 +535,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/jquery/slice-data-plot-using-custom-api-in-jquery"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/jquery/slice-data-plot-using-custom-api-in-jquery"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/jquery/change-chart-type-using-jquery"
                                  },
@@ -626,11 +582,9 @@
                },
                {
                   "title": "Ember",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/ember/your-first-chart-using-ember"
                            },
@@ -646,8 +600,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Configuring your Chart",
                               "path": "/getting-started/ember/configure-your-chart-using-ember"
                            },
@@ -673,17 +626,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/ember/slice-data-plot-using-custom-api-in-ember"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/ember/slice-data-plot-using-custom-api-in-ember"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/ember/change-chart-type-using-ember"
                                  },
@@ -719,11 +669,9 @@
                },
                {
                   "title": "PHP",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/php/your-first-chart-using-php"
                            },
@@ -739,8 +687,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Create Charts in PHP using Database",
                               "path": "/getting-started/php/create-charts-in-php-using-database"
                            },
@@ -770,17 +717,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/php/slice-data-plot-using-custom-api-in-php"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/php/slice-data-plot-using-custom-api-in-php"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/php/change-chart-type-using-php"
                                  },
@@ -804,11 +748,9 @@
                },
                {
                   "title": "Java",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/java/your-first-chart-using-java"
                            },
@@ -824,8 +766,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Create Charts in JAVA using Database",
                               "path": "/getting-started/java/create-charts-in-java-using-database"
                            },
@@ -855,17 +796,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/java/slice-data-plot-using-custom-api-in-java"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/java/slice-data-plot-using-custom-api-in-java"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/java/change-chart-type-using-java"
                                  },
@@ -889,11 +827,9 @@
                },
                {
                   "title": "ASP.NET",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/aspnet/your-first-chart-using-aspnet"
                            },
@@ -909,8 +845,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Create Charts in ASP.NET using Database",
                               "path": "/getting-started/aspnet/create-charts-in-aspnet-using-database"
                            },
@@ -936,17 +871,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/aspnet/slice-data-plot-using-custom-api-in-aspnet"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/aspnet/slice-data-plot-using-custom-api-in-aspnet"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/aspnet/change-chart-type-using-aspnet"
                                  },
@@ -970,11 +902,9 @@
                },
                {
                   "title": "Django",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/django/your-first-chart-using-django"
                            },
@@ -990,8 +920,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Create Charts in Django using Database",
                               "path": "/getting-started/django/create-charts-in-django-using-database"
                            },
@@ -1021,17 +950,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/django/slice-data-plot-using-custom-api-in-django"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/django/slice-data-plot-using-custom-api-in-django"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/django/change-chart-type-using-django"
                                  },
@@ -1055,11 +981,9 @@
                },
                {
                   "title": "Ruby on Rails",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Creating your First Chart",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Your First Chart",
                               "path": "/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails"
                            },
@@ -1075,8 +999,7 @@
                      },
                      {
                         "title": "Usage Guide",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Create Charts in ROR using Database",
                               "path": "/getting-started/ruby-on-rails/create-charts-in-ruby-on-rails-using-database"
                            },
@@ -1102,17 +1025,14 @@
                            },
                            {
                               "title": "Working with APIs",
-                              "children": [
-                                 {
-                                    "title": "Slice Data Plot",
-                                    "path": "/getting-started/ruby-on-rails/slice-data-plot-using-custom-api-in-ruby-on-rails"
-                                 }
-                              ]
+                              "children": [{
+                                 "title": "Slice Data Plot",
+                                 "path": "/getting-started/ruby-on-rails/slice-data-plot-using-custom-api-in-ruby-on-rails"
+                              }]
                            },
                            {
                               "title": "Working with Events",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Change Chart Type",
                                     "path": "/getting-started/ruby-on-rails/change-chart-type-using-ruby-on-rails"
                                  },
@@ -1138,11 +1058,9 @@
          },
          {
             "title": "Configuring your charts",
-            "children": [
-               {
+            "children": [{
                   "title": "By Chart Type",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Chart Components",
                         "path": "/understanding-fusioncharts"
                      },
@@ -1152,8 +1070,7 @@
                      },
                      {
                         "title": "Charts",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Line, Area and Column Charts",
                               "path": "/chart-guide/standard-charts/line-area-and-column-charts"
                            },
@@ -1297,8 +1214,7 @@
                      },
                      {
                         "title": "Gauges and Widgets",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Angular Gauge",
                               "path": "/chart-guide/gauges-and-widgets/angular-gauge"
                            },
@@ -1326,8 +1242,7 @@
                      },
                      {
                         "title": "Maps",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "List of Maps",
                               "path": "/map-guide/list-of-maps"
                            },
@@ -1361,8 +1276,7 @@
                            },
                            {
                               "title": "Map Spec Sheets",
-                              "children": [
-                                 {
+                              "children": [{
                                     "title": "Map Marker Data",
                                     "path": "/maps/marker-data/"
                                  },
@@ -1378,8 +1292,7 @@
                },
                {
                   "title": "By Chart Component",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Size and Type",
                         "path": "/chart-guide/chart-configurations/size-and-type"
                      },
@@ -1487,15 +1400,13 @@
                },
                {
                   "title": "Using Annotations",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Introduction to Annotations",
                         "path": "/chart-guide/chart-configurations/annotations/introduction-to-annotations"
                      },
                      {
                         "title": "Create Annotations",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Create Text Annotations",
                               "path": "/chart-guide/chart-configurations/annotations/creating-annotations/create-text-annotations"
                            },
@@ -1541,8 +1452,7 @@
                },
                {
                   "title": "Using Themes",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Introduction to Themes",
                         "path": "/themes/introduction-to-themes"
                      },
@@ -1558,8 +1468,7 @@
                },
                {
                   "title": "Exporting Charts",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Exporting Charts as Image and PDF",
                         "path": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
                      },
@@ -1569,8 +1478,7 @@
                      },
                      {
                         "title": "Modes of Export",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Exporting Charts and Chart Data Using the Server-side Export Feature",
                               "path": "/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature"
                            },
@@ -1594,8 +1502,7 @@
                      },
                      {
                         "title": "Export Handler",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "ASP.NET",
                               "path": "/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net"
                            },
@@ -1625,8 +1532,7 @@
                },
                {
                   "title": "Common Use Cases",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Building a Dashboard",
                         "path": "/common-use-cases/building-dashboards"
                      },
@@ -1693,11 +1599,9 @@
          },
          {
             "title": "API Reference",
-            "children": [
-               {
+            "children": [{
                   "title": "Attributes",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Chart Attributes",
                         "path": "/chart-attributes/"
                      },
@@ -1709,15 +1613,13 @@
                },
                {
                   "title": "JavaScript Methods & Events",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "FusionCharts",
                         "path": "/api/fusioncharts"
                      },
                      {
                         "title": "Events",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Introduction to Events",
                               "path": "/advanced-chart-configurations/events/introduction-to-events"
                            },
@@ -1749,8 +1651,7 @@
                      },
                      {
                         "title": "Namespaces",
-                        "children": [
-                           {
+                        "children": [{
                               "title": "Debugger",
                               "path": "/api/fusioncharts/namespaces/debugger"
                            },
@@ -1774,15 +1675,13 @@
          },
          {
             "title": "Upgrading",
-            "children": [
-               {
+            "children": [{
                   "title": "Upgrade from Evaluation Versions",
                   "path": "/upgrading/upgrading-from-evaluation-versions"
                },
                {
                   "title": "Upgrade to v3.14.x",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Changelog",
                         "path": "/upgrading/change-log"
                      },
@@ -1803,8 +1702,7 @@
                },
                {
                   "title": "Version History",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "v3.13.x",
                         "path": "/upgrading/version-history/version-3-13-X"
                      },
@@ -1875,15 +1773,13 @@
       "description": "Plot high performance time-series visualizations",
       "longDescription": "Learn how to create time-series and stock charts in JavaScript",
       "icon": "fc_fusiontime",
-      "children": [
-         {
+      "children": [{
             "title": "Overview",
             "path": "/fusiontime/getting-started/how-fusion-time-works"
          },
          {
             "title": "Getting Started",
-            "children": [
-               {
+            "children": [{
                   "title": "Create Your First Chart",
                   "path": "/fusiontime/getting-started/create-your-first-chart-in-fusiontime"
                },
@@ -1927,8 +1823,7 @@
          },
          {
             "title": "Integrations",
-            "children": [
-               {
+            "children": [{
                   "title": "Create a Chart in Angular",
                   "path": "/fusiontime/integrations/angular/your-first-chart-using-angular-in-fusiontime"
                },
@@ -1980,8 +1875,7 @@
          },
          {
             "title": "FusionTime Components",
-            "children": [
-               {
+            "children": [{
                   "title": "Time Axis",
                   "path": "/fusiontime/fusiontime-component/time-axis"
                },
@@ -2037,15 +1931,13 @@
          },
          {
             "title": "FusionTime Data Layer",
-            "children": [
-               {
+            "children": [{
                   "title": "Overview",
                   "path": "/fusiontime/fusiontime-data-engine/overview"
                },
                {
                   "title": "DataTable Operations",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Select",
                         "path": "/fusiontime/fusiontime-data-engine/select"
                      },
@@ -2097,15 +1989,13 @@
       "icon": "fc_fusionexport",
       "description": "Export full Dashboards as PDFs for use in reports and emails",
       "longDescription": "Learn how to export full dashboards in your server",
-      "children": [
-         {
+      "children": [{
             "title": "Overview",
             "path": "/exporting-charts/using-fusionexport/overview"
          },
          {
             "title": "Installation",
-            "children": [
-               {
+            "children": [{
                   "title": "Install FusionExport Server",
                   "path": "/exporting-charts/using-fusionexport/installation/install-fusionexport-server"
                },
@@ -2126,8 +2016,7 @@
          },
          {
             "title": "Tutorials",
-            "children": [
-               {
+            "children": [{
                   "title": "Export chart as image",
                   "path": "/exporting-charts/using-fusionexport/tutorials/export-chart-as-image"
                },
@@ -2222,15 +2111,13 @@
          },
          {
             "title": "API Reference",
-            "children": [
-               {
+            "children": [{
                   "title": "FusionExport Server",
                   "path": "/exporting-charts/using-fusionexport/fusionexport-server"
                },
                {
                   "title": "SDK API Reference",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "C#",
                         "path": "/exporting-charts/using-fusionexport/sdk-api-reference/c-sharp"
                      },
@@ -2270,15 +2157,13 @@
       "icon": "fc_net",
       "description": "Charting library for ASP.NET MVC & ASP.NET WebForms",
       "longDescription": "Learn how to implement FusionCharts in ASP.NET MVC and WebForms using our .NET assembly",
-      "children": [
-         {
+      "children": [{
             "title": "Overview",
             "path": "/fusioncharts-aspnet-visualization/getting-started/overview-of-fusioncharts-net-viz"
          },
          {
             "title": "Getting Started",
-            "children": [
-               {
+            "children": [{
                   "title": "Installation",
                   "path": "/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net"
                },
@@ -2307,8 +2192,7 @@
          },
          {
             "title": "Chart Types",
-            "children": [
-               {
+            "children": [{
                   "title": "List of Charts",
                   "path": "/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net"
                },
@@ -2356,8 +2240,7 @@
                },
                {
                   "title": "Time-Series Charts",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Create Your First Chart",
                         "path": "/fusioncharts-aspnet-visualization/chart-types/time-series-chart-net"
                      },
@@ -2375,8 +2258,7 @@
          },
          {
             "title": "Chart Components",
-            "children": [
-               {
+            "children": [{
                   "title": "Caption and Sub-Caption",
                   "path": "/fusioncharts-aspnet-visualization/components/fusioncharts-net-caption-sub-caption"
                },
@@ -2406,8 +2288,7 @@
                },
                {
                   "title": "Time-series Components",
-                  "children": [
-                     {
+                  "children": [{
                         "title": "Time Axis",
                         "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/time-axis"
                      },
@@ -2453,8 +2334,7 @@
          },
          {
             "title": "Data Engine",
-            "children": [
-               {
+            "children": [{
                   "title": "Overview",
                   "path": "/fusioncharts-aspnet-visualization/data-engine/data-engine-overview"
                },
@@ -2510,8 +2390,7 @@
          },
          {
             "title": "API Reference",
-            "children": [
-               {
+            "children": [{
                   "title": "Visualization API",
                   "path": "/fusioncharts-aspnet-visualization/api-reference-net/visualization-api-net"
                },
@@ -2532,15 +2411,13 @@
       "icon": "fc_net",
       "description": "basic university",
       "longDescription": "",
-      "children": [
-         {
+      "children": [{
             "title": "Overview",
             "path": "/university"
          },
          {
             "title": "Tutorials",
-            "children": [
-               {
+            "children": [{
                   "title": "6 Data Visualization Trends For The Present Day",
                   "path": "/university/6-data-visualization-trends-for-the-present-day"
                },
@@ -2558,7 +2435,7 @@
                },
                {
                   "title": "Building a Sales Dashboard using React Framework",
-                  "path": "/university/sales-dashboars-using-react"
+                  "path": "/university/sales-dashboard-using-react"
                },
                {
                   "title": "When to use them and when not to",
