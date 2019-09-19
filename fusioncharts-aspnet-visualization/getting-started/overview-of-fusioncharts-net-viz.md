@@ -37,6 +37,11 @@ Starting v1.0.4, FusionCharts.NET has been released for **.NET Standard** which 
 		<th>FusionCharts.NET</th>
 	</tr>
 	<tr>
+		<td>Compatibility</td>
+		<td>ASP.NET Framework</td>
+		<td>ASP.NET Framework, ASP.NET Core, ASP.NET Standard, Mono/Xamarin</td>
+	</tr>
+	<tr>
 		<td>Data from different sources</td>
 		<td><i class="fc_cross_covered" style="font-size: 25px; color: #bcbccf"></i></td>
 		<td><i class="fc_select" style="color: #48b884 !important; font-size: 25px;"></i></td>
