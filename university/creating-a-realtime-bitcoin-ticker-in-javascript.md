@@ -2,7 +2,7 @@
 title: Creating a Real-Time Bitcoin Ticker in Javascript | FusionCharts
 description: In this tutorial, we’ll be creating a Real-Time Bitcoin Ticker using Cryptonator API.
 heading: Creating a Real-Time Bitcoin Ticker in JavaScript
-author: sowmya
+author: Sowmya
 date: 2019/01/22
 featured: true
 ---
@@ -24,7 +24,7 @@ Check out the Bitcoin Ticker Live Dashboard [here](https://sowmyaraj92.github.io
 
 Before we start, we need to set up the following dependencies:
 
-1.FusionCharts Core JS Files- **[Download Link]**(https://www.fusioncharts.com/download/)
+1.FusionCharts Core JS Files- [Download Link](https://www.fusioncharts.com/download/)
 <br>
 2.[Cryptonator API](https://api.cryptonator.com/api)
 
@@ -84,14 +84,13 @@ To send a request to a server, **open()** method of the XMLHttpRequest object is
 
 Given below is the table which describes the functions and their corresponding outcomes.
 
-| functions | outcome |
-| --------- | ------- |
-
+| functions             | outcome                                                              |
+| --------------------- | -------------------------------------------------------------------- |
 | bitcoinDataHandler()  | Returns the price for Bitcoin                                        |
-| ethereumDataHandler() | Returns the price for Ethereum                                        |
-| litecoinDataHandler() | Returns the price for Litecoin                                        |
-| clientDateTime()      | Returns the current timestamp for the chart                           |
-| updateData()          | The chart is referenced with its ID and the data is fed to the chart. |
+| ethereumDataHandler() | Returns the price for Ethereum                                       |
+| litecoinDataHandler() | Returns the price for Litecoin                                       |
+| clientDateTime()      | Returns the current timestamp for the chart                          |
+| updateData()          | The chart is referenced with its ID and the data is fed to the chart |
 
 ## Creating the Chart Container
 
