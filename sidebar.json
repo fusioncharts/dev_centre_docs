@@ -2424,12 +2424,24 @@
                 "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/custom-range-selector"
               },
               {
+                "title": "Crossline",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/crossline-in-fcnet"
+              },
+              {
                 "title": "Y-axis",
                 "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/y-axis-in-fusiontime"
               },
               {
+                "title": "Predictive Data",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/predictive-data-in-fcnet"
+              },
+              {
                 "title": "Reference Lines",
                 "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/reference-line-in-fusiontime"
+              },
+              {
+                "title": "Reference Zone",
+                "path": "/fusioncharts-aspnet-visualization/components/fusiontime-components/reference-zone-in-fcnet"
               },
               {
                 "title": "Time Marker",
