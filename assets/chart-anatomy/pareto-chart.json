@@ -112,7 +112,7 @@
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "73%",
+                  "leftPosition": "42%",
                   "topPosition": "51.5%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
