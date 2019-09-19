@@ -199,7 +199,7 @@ As you can see above, we have added few more resources like Google Fonts which a
     </div>
 
 ```
-In the code snippet above you can `id="chart-container-top-adv` determines the mapping between chart configuration and the `div` where chart will get rendered. These ids are mapped in chart configurations against `renderAt` attribute. Sample chart configuration for the same is given below:
+In the code snippet above you can `id=chart-container-top-adv` determines the mapping between chart configuration and the `div` where chart will get rendered. These ids are mapped in chart configurations against `renderAt` attribute. Sample chart configuration for the same is given below:
 
 ```js
 

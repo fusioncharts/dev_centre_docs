@@ -138,7 +138,7 @@ Note : Save the key generated (mine is `AIzaSyCn_qxApnW1By0E3DZmIOJeXkT_RtYuYHo`
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_3E77B58C1BDB4283EA0AA5749F06200EAFD47D75D433E88A9C19E349F3F702AF_1548746333873_Screenshot+2019-01-29+12.47.15.png)
 
 
-From the “API Restrictions”, select the “Google Sheets API” and save it. Now, let’s connect Google Sheets API and fetch the data.
+From the “**API Restrictions**”, select the “**Google Sheets API**” and save it. Now, let’s connect Google Sheets API and fetch the data.
 
 
 ## Connecting Google Sheets API and fetching data
