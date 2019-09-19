@@ -2566,8 +2566,33 @@
             "path": "/university/learn-how-to-export-a-dashboard-fusionexport"
           },
           {
-            "title": "Create a Funnel Chart using ASP.NET Framework",
+            "title": "Create a Funnel Chart using FusionCharts and ASP.NET Web Form",
             "path": "/university/create-a-funnel-chart-using-fusioncharts-and-dotnet"
+          },
+          {
+            "title": "Create a Funnel Chart using FusionCharts and MVC in ASP.NET",
+            "path": "university/create-funnel-chart-fusionchart-mvc-dotnet"
+          },
+          {
+            "title": "Create a Column Chart using ASP.NET Framework",
+            "path": "/university/create-a-column-chart-using-fusioncharts-and-dotnet"
+          },
+          {
+            "title": "Render FusionCharts in MVC using .NET",
+            "path": "university/render-fusioncharts-mvc-using-dotnet"
+          },
+          {
+            "title": "Create a Combination Chart using FusionCharts in .NET MVC",
+            "path": "university/create-combination-chart-using-fusioncharts-and-dotnetmvc"
+          },
+          {
+            "title": "Create a Combination Chart using FusionCharts in .NET Framework Web Form",
+            "path": "university/create-combination-chart-dotnet-webform"
+          },
+
+          {
+            "title": "Create a Funnel Chart using FusionCharts and MVC in ASP.NET",
+            "path": "university/create-funnel-chart-fusionchart-mvc-dotnet"
           },
           {
             "title": "When to use them and when not to",
