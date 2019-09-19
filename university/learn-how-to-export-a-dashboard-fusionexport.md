@@ -19,30 +19,35 @@ We have built a dashboard for you using FusionCharts and Vue.js and made it [ope
 
 The tech stack used for the dashboard is Laravel (backend) and Vue.js (frontend). Let’s get started now, open the terminal and enter:
 
-
+```bash
     $ git clone git@bitbucket.org:fusioncharts/fusionexport-dashboard-sample-php.git
     $ cd fusionexport-dashboard-sample-php
-![](https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1558690290272_Screenshot+2019-05-24+15.01.14.png)
-
+```
 
 The project structure after cloning the repository will look like the snapshot:
 
-**Including Node.js Modules**
+![](https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1558690290272_Screenshot+2019-05-24+15.01.14.png)
+
+
+**Including Node.js Modules** <br>
 After cloning the directory, install all the Node.js modules for the client side. We have also written a custom script which will compile all the resources so that the dashboard is up and running. 
 
-
+```bash
     $ npm install && npm run prod
+```
 
-**Including PHP Modules**
+**Including PHP Modules** <br>
 Composer is the tool used for dependency management in PHP. It allows you to declare the PHP libraries as per the project requirements (installing them in a directory) and will manage them for you. Similar to Node.js modules, install Laravel modules as well:
 
-
+```bash
     $ composer install
+```
 
 To load the localhost server on the browser, enter in the terminal as below:
 
-
+```bash
     $ php artisan serve
+```
 
 Visit http://localhost:8000 to confirm that the dashboard is running on your localhost server. 
 
@@ -69,7 +74,7 @@ Diagram below would give you a better understanding of the overall flow:
 
 ## Adding a new endpoint for export
 
-The back-end code in **Laravel** lies within `app` folder. Let’s add a new route called `api.php` in the `**routes**` folder which will handle the export related API end point. This end point will be used by our Vue.js project to send the request to export the dashboard from client side. 
+The back-end code in **Laravel** lies within `app` folder. Let’s add a new route called `api.php` in the `routes` folder which will handle the export related API end point. This end point will be used by our Vue.js project to send the request to export the dashboard from client side. 
 
 ```php
     <?php
@@ -85,13 +90,15 @@ The routes in `routes/api.php` are stateless and are assigned the `api` middlewa
 
 Before we go ahead and export a single chart, we need to install FusionExport server on our machine and set it up in out Laravel project as well. To download the FusionExport server, click [here](https://www.fusioncharts.com/download/fusionexport). Once you have downloaded FusionExport, run the server by running following command:
 
-
+```bash
     $ ./fusionexport
+    ```
 
 This will start the FusionExport server on your [localhost:1337.](http://localhost:1337) Now that we have FusionExport export server running, let’s install the PHP SDK client for FusionExport using composer:
 
-
+```php
     composer require fusioncharts/fusionexport
+```
 
 To use the SDK in your project, let’s create a PHP file and name it as `ExportController.php` and place it under `app/Http/Controllers/API/` Now go ahead and add this in the file:
 
@@ -192,7 +199,7 @@ As you can see above, we have added few more resources like Google Fonts which a
     </div>
 
 ```
-In the code snippet above you can `id="chart-container-top-adv``"` determines the mapping between chart configuration and the `div` where chart will get rendered. These `id``'``s` are mapped in chart configurations against `renderAt` attribute. Sample chart configuration for the same is given below:
+In the code snippet above you can `id="chart-container-top-adv` determines the mapping between chart configuration and the `div` where chart will get rendered. These id`s are mapped in chart configurations against `renderAt` attribute. Sample chart configuration for the same is given below:
 
 ```js
 
@@ -285,7 +292,7 @@ The stylesheet contains all the styles and CSS techniques for our dashboard. Thi
 
 ## Send Export request from Vue.js app
 
-Now that our backend is setup, let’s go ahead and add an Export Button ****in the file `**ExportHandle.vue**` file, which on-click exports the dashboard into PDF format. As explained earlier, this should send a request to **/export/dashboard-download.** The request should include chart configurations and other details like header text.
+Now that our backend is setup, let’s go ahead and add an Export Button in the file `ExportHandle.vue` file, which on-click exports the dashboard into PDF format. As explained earlier, this should send a request to `/export/dashboard-download`. The request should include chart configurations and other details like header text.
 
 ```html
                 <button
@@ -299,7 +306,7 @@ Now that our backend is setup, let’s go ahead and add an Export Button ****in 
 
 For those who don’t know Vue.js, in the above code we are calling `exportClickListener` method when button is clicked. The button is disabled for a particular time span before enabling it again for further export. Also, how we are using FusionExport in Laravel is explained in the next section but let us assume that you are getting a PDF file as a response.
 
-The `ExportHandle.vue` ****houses the code for sending requests to the baseUrl, retrieving the header text and chart configs, and returning the response as a pdf file. ****
+The `ExportHandle.vue` houses the code for sending requests to the baseUrl, retrieving the header text and chart configs, and returning the response as a pdf file.
 
 ```js
      methods:{
@@ -408,7 +415,7 @@ Being the end-user, you can go ahead and add more UI elements like full width ch
 Let’s build the template for the exported PDF inclusive of a full width map and the header along with all the other charts.
 
 ```html
-    ...
+    Insert code here
         <style>
            -- Insert stylesheet here --
         </style>
@@ -439,7 +446,7 @@ Let’s build the template for the exported PDF inclusive of a full width map an
             ...
       </body>
     </html>
-
+```
 
 If you’ve followed the above steps till now you should have a functional dashboard with export functionality in an executable format. Take a look at the live dashboard [here](http://localhost:8000/).
 
@@ -458,6 +465,6 @@ Hope this tutorial helped you export the dashboard using FusionExport. With [Fus
 
 > **You can download FusionExport for any tech stack from here: Sign up for** [**FusionExport**](https://www.fusioncharts.com/download/fusionexport)
 
-Before we part ways, you can take a look at our live dashboards such as [Online Retail Dashboard](https://www.fusioncharts.com/dashboards/online-retail-dashboard), Sales Dashboard, [Technology Dashboard](https://www.fusioncharts.com/dashboards/technology-dashboard), and [Web-Series Dashboard](https://www.fusioncharts.com/dashboards/web-series-dashboard) to see the power of FusionCharts as well as FusionExport.
+Before we part ways, you can take a look at our live dashboards such as [Online Retail Dashboard](https://www.fusioncharts.com/dashboards/online-retail-dashboard), [Technology Dashboard](https://www.fusioncharts.com/dashboards/technology-dashboard), and [Web-Series Dashboard](https://www.fusioncharts.com/dashboards/web-series-dashboard) to see the power of FusionCharts as well as FusionExport.
 
 
