@@ -144,6 +144,7 @@ Use references to both **FusionCharts.DataEngine** and **FusionCharts.Visualizat
 Insert the code given below within the **PageLoad()** event of the **FunnelChart.aspx.cs** page, to render the Funnel chart. In this example, you will fetch data from DataTable. However, you can also fetch data from SQL Server, a JSON file, or a CSV file. 
 
 
+```
 **// Create Data table**
 
 *DataTable ChartData = new DataTable();*
@@ -209,6 +210,7 @@ Insert the code given below within the **PageLoad()** event of the **FunnelChart
 **// Render chart in Literal**
 
 *Literal1.Text = funnel.Render();*
+```
 
 ### Rendered Widget
 
