@@ -26,7 +26,7 @@ The tech stack used for the dashboard is Laravel (backend) and Vue.js (frontend)
 
 The project structure after cloning the repository will look like the snapshot:
 
-<img src="https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1558690290272_Screenshot+2019-05-24+15.01.14.png" alt="Project Structure" height="42" width="42">
+<img src="https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1558690290272_Screenshot+2019-05-24+15.01.14.png" alt="Project Structure" height="100" width="200">
 
 
 **Including Node.js Modules** 
