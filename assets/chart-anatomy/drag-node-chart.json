@@ -59,11 +59,11 @@
                },
                {
                   "annotationNumber": "4",
-                  "annotationName": "Tooltip",
-                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
+                  "annotationName": "Node Menu",
+                  "annotationDesc": "A hamburger menu is displayed at the top right corner of the chart. You can click on it to add a node, a connector, or a label. You can also save the chart after modifying it by clicking and dragging one or more nodes. You can also restore the chart to a previous state.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "53%",
-                  "topPosition": "23.5%",
+                  "leftPosition": "81%",
+                  "topPosition": "4.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
