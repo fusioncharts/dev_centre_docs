@@ -145,71 +145,71 @@ Insert the code given below within the **PageLoad()** event of the **FunnelChart
 
 
 ```
-**// Create Data table**
+// Create Data table
 
-*DataTable ChartData = new DataTable();*
+DataTable ChartData = new DataTable();
 
-**// Add columns to data table**
+// Add columns to data table
 
-*ChartData.Columns.Add("Label", typeof(System.String));*
+ChartData.Columns.Add("Label", typeof(System.String));
 
-*ChartData.Columns.Add("Value", typeof(System.Double));*
+ChartData.Columns.Add("Value", typeof(System.Double));
 
-**// Add rows to data table**
+// Add rows to data table
 
-*ChartData.Rows.Add("Unique Website Visits", 1460000);*
+ChartData.Rows.Add("Unique Website Visits", 1460000);
 
-*ChartData.Rows.Add("Programme Details Section Visits", 930000);*
+ChartData.Rows.Add("Programme Details Section Visits", 930000);
 
-*ChartData.Rows.Add("Attempts to Register", 540000);*
+ChartData.Rows.Add("Attempts to Register", 540000);
 
-*ChartData.Rows.Add("Successful Registrations", 210000);*
+ChartData.Rows.Add("Successful Registrations", 210000);
 
-*ChartData.Rows.Add("Logged In", 190000);*
+ChartData.Rows.Add("Logged In", 190000);
 
-*ChartData.Rows.Add("Purchased on Introductory Offers", 120000);*
+ChartData.Rows.Add("Purchased on Introductory Offers", 120000);
 
-**// Create Static Source with the data table**
+// Create Static Source with the data table
 
-*StaticSource source = new StaticSource(ChartData);*
+StaticSource source = new StaticSource(ChartData);
 
-**// Create an instance of DataModel**
+// Create an instance of DataModel
 
-*DataModel model = new DataModel();*
+DataModel model = new DataModel();
 
-**// Add data sources to DataModel**
+// Add data sources to DataModel
 
-*model.DataSources.Add(source);*
+model.DataSources.Add(source);
 
-**// Instantiate the Funnel Chart, which is under the Widget class**
+// Instantiate the Funnel Chart, which is under the Widget class
 
-*Widget.FunnelChart funnel = new Widget.FunnelChart("first_Funnel_chart");*
+Widget.FunnelChart funnel = new Widget.FunnelChart("first_Funnel_chart");
 
-**// Set model object as the data source of funnel**
+// Set model object as the data source of funnel
 
-*funnel.Data.Source = model;*
+funnel.Data.Source = model;
 
-**// Set caption**
+// Set caption
 
-*funnel.Caption.Text = "Visit to purchase analysis";*
+funnel.Caption.Text = "Visit to purchase analysis";
 
-**// Set subcaption**
+// Set subcaption
 
-*funnel.SubCaption.Text = "Visit to purchase- Conversion Analysis for last year";*
+funnel.SubCaption.Text = "Visit to purchase- Conversion Analysis for last year";
 
-**// Set width and height of the chart**
+// Set width and height of the chart
 
-*funnel.Width.Pixel(600);*
+funnel.Width.Pixel(600);
 
-*funnel.Height.Pixel(400);*
+funnel.Height.Pixel(400);
 
-**// Set chart theme**
+// Set chart theme
 
-*funnel.ThemeName = FusionChartsTheme.ThemeName.FUSION;*
+funnel.ThemeName = FusionChartsTheme.ThemeName.FUSION;
 
-**// Render chart in Literal**
+// Render chart in Literal
 
-*Literal1.Text = funnel.Render();*
+Literal1.Text = funnel.Render();
 ```
 
 ### Rendered Widget
