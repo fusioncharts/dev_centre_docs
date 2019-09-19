@@ -29,7 +29,7 @@
                   ]
                },
                {
-                  "annotationNumber": "3",
+                  "annotationNumber": "2",
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
@@ -46,7 +46,7 @@
                   ]
                },
                {
-                  "annotationNumber": "4",
+                  "annotationNumber": "3",
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
@@ -58,7 +58,7 @@
                   }]
                },
                {
-                  "annotationNumber": "5",
+                  "annotationNumber": "4",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
