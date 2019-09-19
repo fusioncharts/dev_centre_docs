@@ -126,7 +126,7 @@ Once the project is created, you’ll be re-directed to Google Developer API das
 
 Once you find it, click “**Enable**” . The API is now enabled and you will be able to read and write into Google Sheets.
 
-From the sidebar, navigate to “Credentials” and click on “Create credentials” button and select “API Key”. Also, click on the “Restrict Key” and set a name for the same. (I’ve set it to `Sa``les``DashboardAPIKey`).
+From the sidebar, navigate to “**Credentials**” and click on “**Create credentials**” button and select “**API Key**”. Also, click on the “**Restrict Key**” and set a name for the same. (I’ve set it to `SalesDashboardAPIKey`).
 
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_3E77B58C1BDB4283EA0AA5749F06200EAFD47D75D433E88A9C19E349F3F702AF_1548746564747_Screenshot+2019-01-29+12.52.15.png)
@@ -202,7 +202,7 @@ Now let’s divide our dashboard into 3 parts:
 2. KPI Section
 3. Charts Section
 
-**Creating the Navigation Section:**
+**Creating the Navigation Section:** <br>
 To create the navigation bar,  we will be using the `navbar` component of Bootstrap. Just below the navigation bar holds a component with a drop-down for `Year` and  `Quarter`. Below is the HTML snippet for the same:
 
 ```html
@@ -283,8 +283,7 @@ We will now create a `container` to house both the KPI and Chart sections of the
     </div>
 ```
 
-**Creating the KPI Section:**
-
+**Creating the KPI Section:**<br>
 To create this, we will use the `Card` component of Bootstrap to create the layout for our KPI section. Below is the HTML snippet for the same:
 
 ```html
@@ -382,8 +381,7 @@ Now that our layout is ready, we will define functionality for elements and feed
 
 The above code snippet will create one KPI for `Revenue Target`. Likewise, we will create cards for all the 4 KPIs for the Sales Dashboard.
 
-**Creating the Charts Section:**
-
+**Creating the Charts Section:** <br>
 We will use `col` and `card` components of Bootstrap to create the Chart Layout. `containerBackgroundOpacity` is an attribute which is used to manipulate  the background opacity of the charts.
 
 ```html

@@ -199,7 +199,7 @@ As you can see above, we have added few more resources like Google Fonts which a
     </div>
 
 ```
-In the code snippet above you can `id="chart-container-top-adv` determines the mapping between chart configuration and the `div` where chart will get rendered. These id`s are mapped in chart configurations against `renderAt` attribute. Sample chart configuration for the same is given below:
+In the code snippet above you can `id="chart-container-top-adv` determines the mapping between chart configuration and the `div` where chart will get rendered. These ids are mapped in chart configurations against `renderAt` attribute. Sample chart configuration for the same is given below:
 
 ```js
 
@@ -228,7 +228,7 @@ In the code snippet above you can `id="chart-container-top-adv` determines the m
 
 ## Adding style to the PDF
 
-The stylesheet contains all the styles and CSS techniques for our dashboard. This has to be embedded within the `**<style>**` ```*Insert code here*` ```**</style>**` block of the template. For this tutorial, I have already made some CSS using Bootstrap which you’ll find below:
+The stylesheet contains all the styles and CSS techniques for our dashboard. This has to be embedded within the `<style> Insert code here </style>` block of the template. For this tutorial, I have already made some CSS using Bootstrap which you’ll find below:
 
 ```css
     <style>
