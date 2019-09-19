@@ -2411,6 +2411,7 @@
       "icon": "fc_net",
       "description": "basic university",
       "longDescription": "",
+      "visibility": false,
       "children": [{
             "title": "Overview",
             "path": "/university"

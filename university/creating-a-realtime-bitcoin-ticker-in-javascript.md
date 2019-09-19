@@ -2,7 +2,7 @@
 title: Creating a Real-Time Bitcoin Ticker in Javascript | FusionCharts
 description: In this tutorial, we’ll be creating a Real-Time Bitcoin Ticker using Cryptonator API.
 heading: Creating a Real-Time Bitcoin Ticker in JavaScript
-author: Sowmya
+author: sowmya
 date: 2019/01/22
 featured: true
 ---
@@ -24,8 +24,8 @@ By the end of this tutorial, you will be able to build a Real-Time Cryptocurrenc
 
 Before we start, we need to set up the following dependencies:
 
-1.FusionCharts Core JS Files (**[**Download Link**](https://www.fusioncharts.com/download/)**)
-2.[**Cryptonator API**](https://api.cryptonator.com/api)
+1.FusionCharts Core JS Files- [Download Link](https://www.fusioncharts.com/download/)
+2.[Cryptonator API](https://api.cryptonator.com/api)
 
 **NOTE : Include the core JS files (inside the <head> tag) downloaded as part of the FusionCharts package, in the HTML file:**
 
@@ -73,11 +73,16 @@ The components present in the page are :
 The [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object can be used to request data from a web server.
 To send a request to a server, **open()** method of the XMLHttpRequest object is used.
 
-| **open(method, url, async)** | **Specifies the type of request**<br> <br>**\*\***method: the type of request: GET or POST**<br>**url: the server (file) location**<br>**async: true (asynchronous) or false (synchronous)**<br> \*\*** |
+| open(method, url, async)| Specifies the type of request |
+| method | the type of request: GET or POST |
+| url | the server (file) location |
+| async | true (asynchronous) or false (synchronous) |
 
 ## JS Implementation: Functions and Descriptions
 
 Given below is the table which describes the functions and their corresponding outcomes.
+
+| functions | outcome |
 
 | bitcoinDataHandler()  | Returns the price for Bitcoin.                                        |
 | --------------------- | --------------------------------------------------------------------- |
@@ -126,7 +131,9 @@ var fusioncharts = new FusionCharts({
    height: '350',
    dataFormat: 'json',
 ```
+
 The data source required to render the real-time chart is given below: */
+
 ```js
    dataSource: {
       chart: {
@@ -433,7 +440,6 @@ timestamp can be observed. The y-axis is configured dynamically in such a way th
 drastic change in price, the axis of the chart gets modified accordingly. After you have implemented
 all the steps in this tutorial, your final dashboard will look like this:
 
-![](/images/real-time-data-api-for-the-bitcoin-ticker.png)
+![](/images/real-time-cryptocurrency-dashboard.png)
 
-You can find the entire source code for the Bitcoin Ticker here → [Source Code
-Link](https://github.com/sowmyaraj92/cryptocurrency_ticker)
+You can find the entire source code for the Bitcoin Ticker here → [Source Code Link](https://github.com/sowmyaraj92/cryptocurrency_ticker)

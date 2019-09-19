@@ -34,9 +34,10 @@ Using `Create React-App` is one of the best way to set up the development enviro
 
 Open the terminal, go ahead and enter:
 
-
+```bash
     npx create-react-app my-sales
     cd my-sales
+```
 
 `my-sales` is the working directory where React Boilerplate will be installed along with all the utilities and dependencies.
 
@@ -47,24 +48,30 @@ Open the terminal, go ahead and enter:
 **Step 2: Including Bootstrap** 
 We will be using Bootstrap to create the layout and user-interface for our app. So, in the terminal go ahead and enter:
 
-
+```bash
     npm install bootstrap --save
+```
 
 **Step 3: Including FusionCharts Core Package and its React Component**
 We will be using **FusionCharts** to render the charts in our dashboard. To install FusionCharts, open the terminal and enter:
 
-
+```bash
     npm install fusioncharts --save
+```
 
 The React-component provided by FusionCharts can be used to add JS charts in our app without any difficulty. To check them out, click [here](https://github.com/fusioncharts/react-fusioncharts-component).
 
-
+```bash
     npm install react-fusioncharts --save
+```
 
 **Step 4: Including FusionMaps Package**
 To render maps, install `fusionmaps` package which contains all the map definition files as shown below:
 
+```bash
     $ npm install fusionmaps
+```
+
 # Importing the Charts Using React Component
 
 The dashboard comprises of 3 charts: Multi-series Column 2D, Maps and Multi-series Line charts. The detailing of each of them are given below:
@@ -90,7 +97,7 @@ Take for example, to plot a world map, the `type` attribute is set to **world**.
 For detailed explanation on maps, visit this [link](https://www.fusioncharts.com/dev/getting-started/react/your-first-map-using-react).
 To import the charts and react-component, follow the code below:
 
-
+```js
     import React from 'react';
     import FusionCharts from 'fusioncharts';
     import Charts from 'fusioncharts/fusioncharts.charts';
@@ -101,6 +108,7 @@ To import the charts and react-component, follow the code below:
     import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
     
     ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Maps, World, FusionTheme); 
+```
 
 Now, we have added all the dependencies for our dashboard app, so let’s go and set-up Google Sheets API.
 
@@ -179,8 +187,8 @@ Below is the code to fetch the response from the JSON data:
           this.setState({ items: rows}, () => this.getData('All','2016'));   
     });
     }
-
 ```
+
 # Building the Sales dashboard
 
 We’ll be using Bootstrap 4 to build the dashboard structure. With new components, responsive structures and styles, it is a consistent framework that supports all browsers.
@@ -261,6 +269,7 @@ To create the navigation bar,  we will be using the `navbar` component of Bootst
               </div>
             
 ```
+
 We will now create a `container` to house both the KPI and Chart sections of the dashboard. Take a look at the HTML snippet below:
 
 ```html
@@ -268,7 +277,6 @@ We will now create a `container` to house both the KPI and Chart sections of the
     //KPI section
     
     //Charts Section
-    
     </div>
 ```
 
