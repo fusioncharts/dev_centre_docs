@@ -18,6 +18,30 @@ heading: Create a Chart Using ASP.NET in FusionCharts
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple server-side **ASP.NET** wrapper for FusionCharts. The `FusionCharts server-side ASP.NET` wrapper lets you easily add rich and interactive charts to any ASP.NET project. Using the wrapper, you can create charts in your browsers, without writing any JavaScript code.
 
+FusionCharts allows you to follow two different approaches to render charts using ASP.NET:
+
+- ASP.NET wrapper
+
+- FusionCharts.NET Visualization library
+
+We recommend you to use FusionCharts.NET library over ASP.NET wrapper, as the library comes with some advantages listed below:
+
+- FusionCharts.NET library is compatible with ASP.NET Framework, ASP.NET Core, ASP.NET Standard, Mono/Xamarin whereas ASP.NET wrapper is only compatible with ASP.NET Framework.
+
+- FusionCharts.NET library has the ability to accept data from different sources.
+
+- FusionCharts.NET library accepts remote data.
+
+- FusionCharts.NET library allows operations on data.
+
+- FusionCharts.NET library has the ability to handle chart structure-specific json.
+
+- FusionCharts.NET library has the ability of conditional data plot formatting.
+
+- Using FusionCharts.NET library you can specify a page-level theme.
+
+- You can write fully object-oriented c#/VB code when using the FusionCharts.NET library.
+
 In this page, we'll see how to install FusionCharts and render a chart using the `FusionCharts server-side ASP.NET` wrapper.
 
 ## Installation
