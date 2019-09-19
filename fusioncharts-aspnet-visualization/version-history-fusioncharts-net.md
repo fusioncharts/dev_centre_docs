@@ -1,8 +1,30 @@
 ---
 title: Version History | FusionCharts.NET
-description: This section talks about the new features, improvements and fixes for v1.0.1.
+description: This section talks about the new features, improvements and fixes for v1.0.7.
 heading: Version History
 ---
+
+<h2 class="sub-heading">Version 1.0.7</h2>
+
+<p class="release-date">20th September, 2019</p>
+
+<h4 class="sub-heading">New Features</h4>
+
+- Starting v1.0.7, FusionCharts.NET introduces the following features and components for the time-series charts:
+    - Style Cross Line
+    - Reference Zone
+    - Set Output Time format
+    - Set Initial Interval
+    - Set Predictive Date and add Style
+    - Suppress Exception
+
+<h4>Improvement</h4>
+
+- If the total number of records is less than the number of records to be extracted from the top, instead of throwing an exception, all records will be extracted from the top. 
+
+<h4>Deprecated</h4>
+
+- TimeSeriesData.RenderCompatibleDataInJson(model);
 
 <h2 class="sub-heading">Version 1.0.6</h2>
 
