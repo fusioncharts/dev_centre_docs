@@ -2571,7 +2571,7 @@
           },
           {
             "title": "Create a Funnel Chart using FusionCharts and MVC in ASP.NET",
-            "path": "university/create-funnel-chart-fusionchart-mvc-dotnet"
+            "path": "/university/create-funnel-chart-fusionchart-mvc-dotnet"
           },
           {
             "title": "Create a Column Chart using ASP.NET Framework",
@@ -2579,7 +2579,7 @@
           },
           {
             "title": "Render FusionCharts in MVC using .NET",
-            "path": "university/render-fusioncharts-mvc-using-dotnet"
+            "path": "/university/render-fusioncharts-mvc-using-dotnet"
           },
           {
             "title": "Create a Combination Chart using FusionCharts in .NET MVC",
