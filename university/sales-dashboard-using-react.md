@@ -153,8 +153,7 @@ The Google sheet for KPI data :
 
 The Google sheet for the Map Data(year 2016):
 
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1551856811645_Screenshot+2019-03-06+12.49.10.png" alt="Google Sheet Map Data" height="400" width="600">
-
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1551856811645_Screenshot+2019-03-06+12.49.10.png" alt="Google Sheet Map Data" height="300" width="600">
 
 
 
