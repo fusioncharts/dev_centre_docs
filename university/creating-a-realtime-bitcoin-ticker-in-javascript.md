@@ -14,7 +14,7 @@ On that note, we have built a real-time bitcoin ticker dashboard. This tutorial 
 
 By the end of this tutorial, you will be able to build a Real-Time Cryptocurrency Dashboard like this:
 
-<img src="/images/real-time-cryptocurrency-dashboard.png" alt="Bitcoin Ticker" height="550" width="800">
+<img src="{% site.BASE_URL %}/images/real-time-cryptocurrency-dashboard.png" alt="Bitcoin Ticker" height="550" width="800">
 
 
 Check out the Bitcoin Ticker Live Dashboard [here](https://sowmyaraj92.github.io/cryptocurrency_ticker/).
@@ -49,7 +49,7 @@ The Cryptonator API data source is defined at the top of the script tag. The API
 Given below is the API URL, this will fetch the real-time data for the Bitcoin Ticker: [**https://api.cryptonator.com/api/ticker/btc-usd**](https://api.cryptonator.com/api/ticker/btc-usd)
 
 
-<img src="/images/real-time-cryptocurrency-dashboard.png" alt="Crytocurrency API" height="550" width="800">
+<img src="{% site.BASE_URL %}/images/real-time-cryptocurrency-dashboard.png" alt="Crytocurrency API" height="550" width="800">
 
 
 Navigate to the requested URL, and the values returned should be visible in the browser. Furthermore, replace `btc-usd` with the currency codes like `eth-usd`, `ltc-usd` to fetch the values of Ethereum and Litecoin.
@@ -446,7 +446,7 @@ drastic change in price, the axis of the chart gets modified accordingly. After 
 all the steps in this tutorial, your final dashboard will look like this:
 
 
-<img src="/images/real-time-cryptocurrency-dashboard.png" alt="Real-time Bitcoin Ticker" height="550" width="800">
+<img src="{% site.BASE_URL %}/images/real-time-cryptocurrency-dashboard.png" alt="Real-time Bitcoin Ticker" height="550" width="800">
 
 
 You can find the entire source code for the Bitcoin Ticker here → [Source Code Link](https://github.com/sowmyaraj92/cryptocurrency_ticker)

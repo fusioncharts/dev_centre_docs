@@ -29,7 +29,7 @@ FusionCharts.NET provides you with two modules:
 
 The diagram given below may help you understand the architecture of FusionCharts.NET:
 
-<img src="/images/create-combination-chart-dotnet-webform-image-1.png" alt="Architecture of FusionCharts.NET" height="550" width="800">
+<img src="{% site.BASE_URL %}/images/create-combination-chart-dotnet-webform-image-1.png" alt="Architecture of FusionCharts.NET" height="550" width="800">
 
 ## Overview of Combination Charts
 
@@ -61,7 +61,7 @@ Create a web application in visual studio. To do so, open Visual Studio and foll
 
 - Finally, click on **Create**
 
-<img src="/images/create-combination-chart-dotnet-webform-image-2.png" alt="Application in Visual Studio" height="550" width="800">
+<img src="{% site.BASE_URL %}/images/create-combination-chart-dotnet-webform-image-2.png" alt="Application in Visual Studio" height="550" width="800">
 
 **Step 2**
 
@@ -131,7 +131,7 @@ Add reference of FusionCharts.NET in this application. To do so:
 
 - Click **Ok**.
 
-<img src="/images/create-combination-chart-dotnet-webform-image-5.png" alt="FusionCharts.NET application" height="550" width="800">
+<img src="{% site.BASE_URL %}/images/create-combination-chart-dotnet-webform-image-5.png" alt="FusionCharts.NET application" height="550" width="800">
 
 **Step 7**
 
