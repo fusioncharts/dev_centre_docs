@@ -68,7 +68,7 @@ The components present in the page are :
 2. Cryptocurrency Values
 3. Bitcoin Ticker
 
-## **Fetching the JSON Data**
+## Fetching the JSON Data
 
 The [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object can be used to request data from a web server.
 To send a request to a server, **open()** method of the XMLHttpRequest object is used.
