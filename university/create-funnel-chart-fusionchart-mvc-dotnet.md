@@ -4,7 +4,7 @@ description: In this tutorial, we’ll be creating a Funnel Chart using Fusionch
 heading: Rendering Funnel Chart Using FusionCharts and MVC in .NET Framework
 date: 2019/06/23
 featured: true
-author: Rahul Kumar
+author: Rahul
 ---
 ## Overview
 
@@ -40,7 +40,7 @@ Before you can build charts with FusionCharts.NET, you need to configure your sy
 
 FusionCharts.NET supports many different types of charts. You can find them all listed [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to render a funnel chart in .NET. 
 
-### Step 1
+**Step 1**
 
 Create a web application in Visual Studio. Open Visual Studio and follow the steps mentioned below:
 
@@ -56,7 +56,7 @@ Create a web application in Visual Studio. Open Visual Studio and follow the ste
 
 ![](Create Funnel Charts Using FusionCharts in .NET MVC_images/image_1.png)
 
-### Step 2
+**Step 2**
 
 Next, you have to add Fusioncharts JavaScript files to this project. Right click on the **Scripts** folder and follow the steps mentioned below:
 
@@ -68,7 +68,7 @@ When you are done, the Solution Explorer will look like the following:
 
 ![](Create Funnel Charts Using FusionCharts in .NET MVC_images/image_2.png)
 
-### Step 3
+**Step 3**
 
 Now, add a new **View** in this project. The chart will be rendered inside this view. To do so, right click on the **Views** folder and follow the steps mentioned below:
 
@@ -86,37 +86,39 @@ Now, add a new **View** in this project. The chart will be rendered inside this 
 
 ![](Create Funnel Charts Using FusionCharts in .NET MVC_images/image_3.png)
 
-### Step 4
+**Step 4**
 
 Now, add reference of FusionCharts JavaScript files and necessary tags in this view. Navigate to the **FunnelChart.cshtml** page and add the following lines:
 
-*@{ Layout = null; }*
+```html
+@{ Layout = null; }
 
-*<html>*
+<html>
 
-*<head>*
+<head>
 
-*    <script src="@Url.Content("/Scripts/FusionCharts/FusionCharts.js")"></script>*
+<script src="@Url.Content("/Scripts/FusionCharts/FusionCharts.js")"></script>
 
-*    <script src="@Url.Content("/Scripts/FusionCharts/fusioncharts.widgets.js")"></script>*
+<script src="@Url.Content("/Scripts/FusionCharts/fusioncharts.widgets.js")"></script>
 
-*<script src="@Url.Content("/Scripts/FusionCharts/themes/fusioncharts.theme.fusion.js")"></script>*
+<script src="@Url.Content("/Scripts/FusionCharts/themes/fusioncharts.theme.fusion.js")"></script>
 
-*</head>*
+</head>
 
-*<body>*
+<body>
 
-*    <div>*
+    <div>
 
-*        <div id="chartContainer">@Html.Raw(ViewData["Chart"])</div>*
+        <div id="chartContainer">@Html.Raw(ViewData["Chart"])</div>
 
-*    </div>*
+    </div>
 
-*</body>*
+</body>
 
-*</html>*
+</html>
+```
 
-### Step 5
+**Step 5**
 
 It's time to add reference of FusionCharts.NET in this application. To do so, right click on **References** and follow the steps mentioned below:
 
@@ -128,97 +130,99 @@ It's time to add reference of FusionCharts.NET in this application. To do so, ri
 
 ![](Create Funnel Charts Using FusionCharts in .NET MVC_images/image_4.png)
 
-### Step 6
+**Step 6**
 
 Now you need to use **FusionCharts.DataEngine** and **FusionCharts.Visualization** reference in controller. To do that, open the **Controller** folder. Then, open the **HomeController.cs** file and add the following lines:
 
-*using FusionCharts.DataEngine;*
+```
+using FusionCharts.DataEngine;
 
-*using FusionCharts.Visualization;*
+using FusionCharts.Visualization;
+```
 
-### Step 7
+**Step 7**
 
-Open **HomeController.cs** and add a new action, **FunnelChart()**. This action will return the chart rendering string to **FunnelChart.cshtml**. Within this action, you need to write the code to build a chart object. In this example, you will fetch data from a DataTable. Apart from this, you can also fetch data from SQL Server, a JSON file, or a CSV file
-
-. 
+Open **HomeController.cs** and add a new action, **FunnelChart()**. This action will return the chart rendering string to **FunnelChart.cshtml**. Within this action, you need to write the code to build a chart object. In this example, you will fetch data from a DataTable. Apart from this, you can also fetch data from SQL Server, a JSON file, or a CSV file. 
 
 Add the following code in the **FunnelChart** action:
 
-*public ActionResult FunnelChart()*
+```js
+public ActionResult FunnelChart()
 
-*{*
+{
 
-***    // Create Data table***
+    // Create Data table
 
-*    DataTable ChartData = new DataTable();*
+    DataTable ChartData = new DataTable();
 
-***    // Add column to data table***
+    // Add column to data table
 
-*    ChartData.Columns.Add("Label", typeof(System.String));*
+    ChartData.Columns.Add("Label", typeof(System.String));
 
-*    ChartData.Columns.Add("Value", typeof(System.Double));*
+       ChartData.Columns.Add("Value", typeof(System.Double));
 
-***    // Add rows to data table***
+   // Add rows to data table
 
-*    ChartData.Rows.Add("Unique Website Visits", 1460000);*
+     ChartData.Rows.Add("Unique Website Visits", 1460000);
 
-*    ChartData.Rows.Add("Programme Details Section Visits", 930000);*
+    ChartData.Rows.Add("Programme Details Section Visits", 930000);
 
-*    ChartData.Rows.Add("Attempts to Register", 540000);*
+    ChartData.Rows.Add("Attempts to Register", 540000);
 
-*    ChartData.Rows.Add("Successful Registrations", 210000);*
+     ChartData.Rows.Add("Successful Registrations", 210000);
 
-*    ChartData.Rows.Add("Logged In", 190000);*
+     ChartData.Rows.Add("Logged In", 190000);
 
-*    ChartData.Rows.Add("Purchased on Introductory Offers", 120000);*
+    ChartData.Rows.Add("Purchased on Introductory Offers", 120000);
 
-***    // Create Static source with the data table***
+   // Create Static source with the data table
 
-*    StaticSource source = new StaticSource(ChartData);*
+  StaticSource source = new StaticSource(ChartData);
 
-***    // Create an instance of DataModel***
+   // Create an instance of DataModel
 
-*    DataModel model = new DataModel();*
+   DataModel model = new DataModel();
 
-***    // Add data sources to DataModel***
+    // Add data sources to DataModel
 
-*    model.DataSources.Add(source);*
+   model.DataSources.Add(source);
 
-***    // Instantiate the Funnel Chart, it is under Widget class***
+    // Instantiate the Funnel Chart, it is under Widget class
 
-*    Widget.FunnelChart funnel = new Widget.FunnelChart("first_Funnel_chart");*
+   Widget.FunnelChart funnel = new Widget.FunnelChart("first_Funnel_chart");
 
-***    // Set model object as the data source of funnel***
+    // Set model object as the data source of funnel
 
-*    funnel.Data.Source = model;*
+     funnel.Data.Source = model;
 
-***    // Set caption***
+   // Set caption
 
-*    funnel.Caption.Text = "Visit to purchase analysis";*
+     funnel.Caption.Text = "Visit to purchase analysis";*
 
-***    // Set Sub caption***
+   // Set Sub caption***
 
-*    funnel.SubCaption.Text = "Visit to purchase- Conversion Analysis for last year";*
+     funnel.SubCaption.Text = "Visit to purchase- Conversion Analysis for last year";
 
-***    // Set height and width of the chart***
+   // Set height and width of the chart
 
-*    funnel.Width.Pixel(600);*
+    funnel.Width.Pixel(600);
 
-*    funnel.Height.Pixel(400);*
+    funnel.Height.Pixel(400);
 
-***    // Set chart theme***
+    // Set chart theme
 
-*    funnel.ThemeName = FusionChartsTheme.ThemeName.FUSION;*
+     funnel.ThemeName = FusionChartsTheme.ThemeName.FUSION;
 
-***    // Set chart rendering string in ViewData as a key-value pair***
+   // Set chart rendering string in ViewData as a key-value pair
 
-*    ViewData["Chart"] = funnel.Render();*
+     ViewData["Chart"] = funnel.Render();
 
-***    // Return the view***
+   // Return the view
 
-*    return View();*
+     return View();
 
-*}*
+}
+```
 
 ### Rendered Widget
 

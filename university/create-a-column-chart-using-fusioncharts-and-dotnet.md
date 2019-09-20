@@ -4,7 +4,7 @@ description: In this tutorial, we’ll be creating a Column Chart using Fusionch
 heading: Create a Column Chart Using FusionCharts and ASP.NET Framework
 date: 2019/06/23
 featured: true
-author: Rahul Kumar
+author: Rahul
 ---
 ## Overview
 
@@ -48,7 +48,7 @@ Before you can build charts with FusionCharts.NET, you need to configure your sy
 
 FusionCharts.NET supports many different types of charts. You can find them all listed [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to create a column chart with FusionCharts .NET and ASP.NET.
 
-### Step 1
+**Step 1**
 
 Create a web application in Visual Studio. Open Visual Studio and follow the steps mentioned below:
 
@@ -64,7 +64,7 @@ Create a web application in Visual Studio. Open Visual Studio and follow the ste
 
 ![](Create Column Charts Using FusionCharts in ASP .NET_images/image_1.png)
 
-### Step 2
+**Step 2**
 
 Now, add Fusioncharts JS files to this project. To do so:
 
@@ -84,7 +84,7 @@ Now, browse to the location where you have downloaded the FusionCharts JavaScrip
 
 ![](Create Column Charts Using FusionCharts in ASP .NET_images/image_2.png)
 
-### Step 3
+**Step 3**
 
 Now, add a web form, inside which FusionCharts.NET will render the chart. To add the form:
 
@@ -98,29 +98,33 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 ![](Create Column Charts Using FusionCharts in ASP .NET_images/image_3.png)
 
-### Step 4
+**Step 4**
 
 Add reference of FusionCharts JS and theme files file in the .aspx page of your solution. Navigate to the **ColumnChart.aspx** page. Within the code, add the following lines inside <script> tags.
 
-*<script type="text/javascript" src="Scripts/fusioncharts.js"></script>*
+```
+<script type="text/javascript" src="Scripts/fusioncharts.js"></script>
 
-*<script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>*
+<script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>
+```
 
-### Step 5
+**Step 5**
 
 Now, add a Literal control in **ColumnChart.aspx** page. Copy and paste the code given below:
 
-*<form id="form1" runat="server">*
+```html
+<form id="form1" runat="server">
 
-*  <div>*
+  <div>
 
-*    <asp:Literal ID="Literal1" runat="server"></asp:Literal>*
+    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
 
-*  </div>*
+  </div>
 
-*</form>*
+</form>
+```
 
-### Step 6
+**Step 6**
 
 Add reference of FusionCharts.NET in this application. To do so:
 
@@ -134,7 +138,7 @@ Add reference of FusionCharts.NET in this application. To do so:
 
 ![](Create Column Charts Using FusionCharts in ASP .NET_images/image_4.png)
 
-### Step 7
+**Step 7**
 
 Use references to both **FusionCharts.DataEngine** and **FusionCharts.Visualization**. Navigate to the **ColumnChart.aspx.cs** page and add the following lines at the top of the code:
 
@@ -142,91 +146,93 @@ Use references to both **FusionCharts.DataEngine** and **FusionCharts.Visualizat
 
 *using FusionCharts.Visualization;*
 
-### Step 8
+**Step 8**
 
 Insert the code given below within the **PageLoad()** event of the **ColumnChart.aspx.cs** page, to render the Column chart. In this example, you will fetch data from DataTable. However, you can also fetch data from SQL Server, a JSON file, or a CSV file.
 
-***// Create data table to store data***
+```js
+// Create data table to store data
 
-*DataTable ChartData = new DataTable();*
+DataTable ChartData = new DataTable();
 
-***// Add columns to data table***
+// Add columns to data table
 
-*ChartData.Columns.Add("Programming Language", typeof(System.String));*
+ChartData.Columns.Add("Programming Language", typeof(System.String));
 
-*ChartData.Columns.Add("Users", typeof(System.Double));*
+ChartData.Columns.Add("Users", typeof(System.Double));
 
-***// Add rows to data table***
+// Add rows to data table
 
-*ChartData.Rows.Add("Java", 62000);*
+ChartData.Rows.Add("Java", 62000);
 
-*ChartData.Rows.Add("Python", 46000);*
+ChartData.Rows.Add("Python", 46000);
 
-*ChartData.Rows.Add("Javascript", 38000);*
+ChartData.Rows.Add("Javascript", 38000);
 
-*ChartData.Rows.Add("C++", 31000);*
+ChartData.Rows.Add("C++", 31000);
 
-*ChartData.Rows.Add("C#", 27000);*
+ChartData.Rows.Add("C#", 27000);
 
-*ChartData.Rows.Add("PHP", 14000);*
+ChartData.Rows.Add("PHP", 14000);
 
-*ChartData.Rows.Add("Perl", 14000);*
+ChartData.Rows.Add("Perl", 14000);
 
-***// Create static source with this data table***
+// Create static source with this data table
 
-*StaticSource source = new StaticSource(ChartData);*
+StaticSource source = new StaticSource(ChartData);
 
-***// Create instance of DataModel class***
+// Create instance of DataModel class
 
-*DataModel model = new DataModel();*
+DataModel model = new DataModel();
 
-***// Add DataSource to the DataModel***
+// Add DataSource to the DataModel
 
-*model.DataSources.Add(source);*
+model.DataSources.Add(source);
 
-***// Instantiate Column Chart***
+// Instantiate Column Chart
 
-***// "first-chart" is chart id***
+// "first-chart" is chart id
 
-*Charts.ColumnChart column = new Charts.ColumnChart("first_chart");*
+Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
 
-***// Set the width and the height of the chart in pixels***
+// Set the width and the height of the chart in pixels
 
-*column.Width.Pixel(700);*
+column.Width.Pixel(700);
 
-*column.Height.Pixel(400);*
+column.Height.Pixel(400);
 
-***// Set DataModel instance as the data source of the chart***
+// Set DataModel instance as the data source of the chart
 
-*column.Data.Source = model;*
+column.Data.Source = model;
 
-***// Set Chart Caption***
+// Set Chart Caption
 
-*column.Caption.Text = "Most popular programming language";*
+column.Caption.Text = "Most popular programming language";
 
-***// Set chart Subcaption***
+// Set chart Subcaption
 
-*column.SubCaption.Text = "2017-2018";*
+column.SubCaption.Text = "2017-2018";
 
-***// Hide chart Legend***
+// Hide chart Legend
 
-*column.Legend.Show = false;*
+column.Legend.Show = false;
 
-***// Set X-axis text***
+// Set X-axis text
 
-*column.XAxis.Text = "Programming Language";*
+column.XAxis.Text = "Programming Language";
 
-***// Set Y-axis text***
+// Set Y-axis text
 
-*column.YAxis.Text = "User";*
+column.YAxis.Text = "User";
 
-***// Set chart theme***
+// Set chart theme
 
-*column.ThemeName = FusionChartsTheme.ThemeName.FUSION;*
+column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
 
-***// Render chart in Literal***
+// Render chart in Literal
 
-*Literal1.Text = column.Render();*
+Literal1.Text = column.Render();
+```
 
 ### Rendered Chart
 
@@ -246,7 +252,9 @@ Click [here](https://dotnetfiddle.net/nxmoKm) to edit a column chart with multip
 
 If you set the **ThreeD** property to **true** (using the code shown below), the Visualization Engine will render a 3D column chart.
 
-*column.ThreeD = true;*
+```js
+column.ThreeD = true;
+```
 
 Click [here](https://dotnetfiddle.net/kSc5WZ) to edit a ThreeD column chart.
 
@@ -254,7 +262,9 @@ Click [here](https://dotnetfiddle.net/kSc5WZ) to edit a ThreeD column chart.
 
 If the DataModel has two or more value columns and you set the **Overlapped** property to **true**, then the Visualization Engine will render an overlapped column chart.
 
-*column.Overlapped = true;*
+```js
+column.Overlapped = true;
+```
 
 Click [here](https://dotnetfiddle.net/1HYSai) to edit an overlapped column chart.
 
@@ -262,6 +272,8 @@ Click [here](https://dotnetfiddle.net/1HYSai) to edit an overlapped column chart
 
 If you set the **Scrollable** property to **true** (using the code shown below), the Visualization Engine will render a Scrollable Column chart.
 
-*column.Scrollable = true;*
+```js
+column.Scrollable = true;
+```
 
 Click [here](https://dotnetfiddle.net/TeDjsE) to edit a scrollable column chart.

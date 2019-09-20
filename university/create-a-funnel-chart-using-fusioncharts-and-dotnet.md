@@ -4,7 +4,7 @@ description: In this tutorial, we’ll be creating a Funnel Chart using Fusionch
 heading: Create a Funnel Chart Using FusionCharts and ASP.NET Web Form in .NET Framework
 date: 2019/06/23
 featured: true
-author: Rahul Kumar
+author: Rahul
 ---
 
 ## Overview
@@ -133,10 +133,10 @@ Add a reference to FusionCharts.NET in this application. To do so:
 
 Use references to both **FusionCharts.DataEngine** and **FusionCharts.Visualization**. Navigate to the **FunnelChart.aspx.cs** page and add the following lines at the top of the code:
 
-```bash
-*using FusionCharts.DataEngine;*
+```
+using FusionCharts.DataEngine;*
 
-*using FusionCharts.Visualization;*
+using FusionCharts.Visualization;*
 ```
 
 **Step 8**
@@ -144,7 +144,7 @@ Use references to both **FusionCharts.DataEngine** and **FusionCharts.Visualizat
 Insert the code given below within the **PageLoad()** event of the **FunnelChart.aspx.cs** page, to render the Funnel chart. In this example, you will fetch data from DataTable. However, you can also fetch data from SQL Server, a JSON file, or a CSV file. 
 
 
-```
+```js
 // Create Data table
 
 DataTable ChartData = new DataTable();
