@@ -23,37 +23,37 @@ FusionCharts.NET is structured into two major modules - the Data Engine and the 
 
 The Data Engine of FusionCharts.NET helps you store data and run different data operations on it. You can optimize and transform the data the way you need before you send it to the Visualization Engine for rendering. The Data Engine consists of the following:
 
-    * **Data Source**, which receives the raw data and creates an object to provide the data to the DataModel.
+* **Data Source**, which receives the raw data and creates an object to provide the data to the DataModel.
 
-    * **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine.
+* **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine.
 
-    * **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
+* **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
 
 ### Prerequisites
 
 Before you can build charts with FusionCharts.NET, you need to configure your system to have these loaded:
 
--  Visual Studio IDE and .NET Framework v3.5 (or later)
+* Visual Studio IDE and .NET Framework v3.5 (or later)
 
--  FusionCharts Suite XT, which you can download from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?version=2&utm_expid=.oTKMCb4yRvC-v0Bh2zt4KA.1&utm_referrer=https%3A%2F%2Fwww.fusioncharts.com%2Fdownload%2Ffusioncharts-suite-xt%3Fversion%3D2).
+* FusionCharts Suite XT, which you can download from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?version=2&utm_expid=.oTKMCb4yRvC-v0Bh2zt4KA.1&utm_referrer=https%3A%2F%2Fwww.fusioncharts.com%2Fdownload%2Ffusioncharts-suite-xt%3Fversion%3D2).
 
--  FusionCharts.NET assembly, which you can get [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net).
+* FusionCharts.NET assembly, which you can get [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net).
 
-FusionCharts.NET supports many different types of charts. You can find them all listed [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to create a column chart with FusionCharts .NET and ASP.NET.
+FusionCharts.NET supports many different types of charts. You can find them all listed [here](/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to create a column chart with FusionCharts .NET and ASP.NET.
 
 ### Step 1
 
 Create a web application in visual studio. Open Visual Studio and follow the steps mentioned below:
 
--  Click on **Create a New Project** → **ASP.NET Web Application (.NET Framework)**
+- Click on **Create a New Project** → **ASP.NET Web Application (.NET Framework)**
 
--  Type the project name.
+- Type the project name.
 
--  Click on **Create**.
+- Click on **Create**.
 
--  Click on **MVC** (as shown in the screenshot below).
+- Click on **MVC** (as shown in the screenshot below).
 
--  Click on **Create**.
+- Click on **Create**.
 
 ![](Render FusionCharts in MVC Using .NET Framework_images/image_1.png)
 
@@ -61,9 +61,9 @@ Create a web application in visual studio. Open Visual Studio and follow the ste
 
 Now, add Fusioncharts JavaScript files to this project. Right-click on **Scripts** folder and do the following:
 
--  Click on **Add Existing Item**.
+- Click on **Add Existing Item**.
 
--  Browse to FusionCharts JavaScript files and add them one by one.
+- Browse to FusionCharts JavaScript files and add them one by one.
 
 When you are done, the solution explorer will look like the following:
 
@@ -73,17 +73,17 @@ When you are done, the solution explorer will look like the following:
 
 Now, add a new **View** in this project. The chart will be rendered inside this view. To do so, right-click on the **Views** folder and follow the steps mentioned below:
 
--  Click on **Add**
+- Click on **Add**
 
--  Click on **View…**
+- Click on **View…**
 
--  Click on **MVC 5 View**
+- Click on **MVC 5 View**
 
--  Click on **Add**
+- Click on **Add**
 
--  Type the name of the View as **ColumnChart** (as shown in the screenshot below)
+- Type the name of the View as **ColumnChart** (as shown in the screenshot below)
 
--  Click on **Add**.
+- Click on **Add**.
 
 ![](Render FusionCharts in MVC Using .NET Framework_images/image_3.png)
 
