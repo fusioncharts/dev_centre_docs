@@ -52,7 +52,8 @@ To load the localhost server on the browser, enter in the terminal as below:
 
 Visit http://localhost:8000 to confirm that the dashboard is running on your localhost server.
 
-![](https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1560842422944_Screenshot+2019-06-17+16.59.462.png)
+
+<img src="https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1560842422944_Screenshot+2019-06-17+16.59.462.png" alt="Wealth Dashboard" height="550" width="800">
 
 > Let’s take a look at the live-link of of the Wealth Management Dashboard [here](http://localhost:8000/).
 
@@ -340,6 +341,7 @@ We have declared `actions.js` within the store folder where all the chart config
 
 ![](https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1557909325887_Screenshot+2019-05-15+14.04.26.png)
 
+
 ## Exporting multiple charts
 
 Now, let’s move further and export multiple charts from the dashboard. I have built the code snippet for the modified template as given below:
@@ -401,7 +403,8 @@ Additionally, we are adding extra CSS for dashboard container and primary chart.
 
 As mentioned earlier, `id` for all the `div`s should be mapped properly in the chart configurations against `renderAt` component. The output for multiple chart exports will resemble the snapshot below:
 
-![](https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1568713859958_Screenshot+2019-09-17+15.20.30.png)
+
+<img src="https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1568713859958_Screenshot+2019-09-17+15.20.30.png" alt="Multiple Charts " height="550" width="800">
 
 ## Customize the layout dynamically
 
