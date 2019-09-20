@@ -101,7 +101,7 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 **Step 4**
 
-Add reference of FusionCharts JS and theme files file in the .aspx page of your solution. Navigate to the **ColumnChart.aspx** page. Within the code, add the following lines inside <script> tags.
+Add reference of FusionCharts JS and theme files file in the .aspx page of your solution. Navigate to the **ColumnChart.aspx** page. Within the code, add the following lines inside `<script>` tags.
 
 ```html
 <script type="text/javascript" src="Scripts/fusioncharts.js"></script>
