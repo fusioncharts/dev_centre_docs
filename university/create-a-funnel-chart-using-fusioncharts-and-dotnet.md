@@ -93,6 +93,7 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 <img src ="Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_3.png">
 
+
 **Step 4**
 
 Add a reference to FusionCharts JS and theme files file in the .aspx page of your solution. Navigate to the **FunnelChart.aspx** page. Within the code, add the following lines inside <script> tags.
