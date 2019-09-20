@@ -11,18 +11,22 @@ heading: Version History
 <h4 class="sub-heading">New Features</h4>
 
 - Starting v1.0.7, FusionCharts.NET introduces the following features and components for the time-series charts:
-    - Style Cross Line
-    - Reference Zone
-    - Set Output Time format
-    - Set Initial Interval
-    - Set Predictive Date and add Style
-    - Suppress Exception
+
+  - Style Cross Line
+  - Reference Zone
+  - Set Output Time format
+  - Set Initial Interval
+  - Set Predictive Date and add Style
+
+- Exception Handling has been introduced to Visualization Engine of FusionCharts.NET library.
+
+- Custure has been introduced to DataEngine.
 
 <h4>Improvement</h4>
 
 - If the total number of records is less than the number of records to be extracted from the top, instead of throwing an exception, all records will be extracted from the top.
 
-- `TimeSeriesData.RenderCompatibleDataInJson(model);` has been replaced by `TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”);`. 
+- `TimeSeriesData.RenderCompatibleDataInJson(model);` has been replaced by `TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”);`.
 
 <h4>Deprecated</h4>
 

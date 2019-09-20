@@ -4,8 +4,6 @@ description: This article tells about the exception handling in FusionCharts.NET
 heading: Exception Handling
 ---
 
-Exception Handling
-
 FusionCharts.NET helps you avoid writing messy JavaScript and JSON code within your ASP.NET code, by providing an object-oriented paradigm in which you can render charts using C# or VB. Starting v1.0.7, FusionCharts.NET has introduced a new class called `Exceptions` in Visualization Engine. Using this class, you can choose whether to suppress the exception or not.
 
 ## How Exception Works
