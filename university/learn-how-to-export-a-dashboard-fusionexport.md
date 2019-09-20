@@ -85,15 +85,16 @@ The routes in `routes/api.php` are stateless and are assigned the `api` middlewa
 
 Before we go ahead and export a single chart, we need to install FusionExport server on our machine and set it up in out Laravel project as well. To download the FusionExport server, click [here](https://www.fusioncharts.com/download/fusionexport). Once you have downloaded FusionExport, run the server by running following command:
 
-````bash
+```bash
     $ ./fusionexport
-    ```
+```
+
 
 This will start the FusionExport server on your [localhost:1337.](http://localhost:1337) Now that we have FusionExport export server running, let’s install the PHP SDK client for FusionExport using composer:
 
 ```php
     composer require fusioncharts/fusionexport
-````
+```
 
 To use the SDK in your project, let’s create a PHP file and name it as `ExportController.php` and place it under `app/Http/Controllers/API/` Now go ahead and add this in the file:
 
