@@ -12,20 +12,16 @@ In any organisation, revenue is key for growth, and the sales team manages this.
 
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1553682434784_blog_sales_dashboard.png" alt="Sales Dashboard" height="550" width="800">
 
-
 For sales managers and revenue stakeholders in a company, it’s very important to understand different patterns of opportunities, pipeline and closed deals to ascertain predictability in revenue. This Sales Dashboard allows the sales team to understand trends, figure out unprofitable months/quarters and discover which parts of the sales cycle need more bandwidth, process optimisation or rethinking the strategy of selling itself.
 
 To create this dashboard we will be using React, a JavaScript library for building user interfaces; FusionCharts, a JavaScript based charting library and Google Sheets API. Using FusionCharts’ React component you can create charts which are responsive, interactive,  APIs, animation, drill-downs, real-time updates, and even full exporting of charts & dashboards without any hassle.
 
 Before we get started, lets take a look at the Sales dashboard you’ll be able to create at the end of this tutorial.
 
-
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1552893230125_Screenshot+2019-03-18+at+12.41.58+PM+2.png" alt="Final Dashboard" height="550" width="800">
-
 
 Check out the [Live Dashboard here](https://sowmyaraj92.github.io/sales-dashboard-gsheetsapi-react/)! 
 
-----------
 ## Including Dependencies
 
 **Step 1: Including React**
@@ -41,9 +37,7 @@ Open the terminal, go ahead and enter:
 
 `my-sales` is the working directory where React Boilerplate will be installed along with all the utilities and dependencies.
 
-
 > Note: The working directory should contain a [package.json](https://docs.npmjs.com/files/package.json). If the package is not present, then you can create it with the command : `npm init -y`
-
 
 **Step 2: Including Bootstrap** 
 
@@ -85,8 +79,7 @@ The multi-series column 2D chart is used to plot data for multiple datasets. Thi
 The multi-series line chart is used to visualize trends and relationships in multiple datasets. It consists of various data points connected using line segments, where each point represents a single value. It is widely used to show continuous data like opportunities in pipeline, closed opportunities etc. Take a detailed look at Multi-Series Line Charts [here](https://www.fusioncharts.com/charts/line-area-charts/line-chart-with-multiple-series). 
 
 **Maps**
-FusionCharts offers more than 1400+ maps to plot geographical data like revenue by regions, population by state and survey effectively. To render the maps, you need to download the map definition files from [here](https://www.fusioncharts.com/download/map-definition-files) and copy-paste the maps folder within your FusionCharts directory. 
-
+FusionCharts offers more than 1400+ maps to plot geographical data like revenue by regions, population by state and survey effectively. To render the maps, you need to download the map definition files from [here](https://www.fusioncharts.com/download/map-definition-files) and copy-paste the maps folder within your FusionCharts directory.
 
 There are multiple ways to install them, for more details you can check out this [developer documentation page](https://www.fusioncharts.com/dev/map-guide/setup).
 
@@ -120,8 +113,6 @@ We will be creating a new project for the dashboard app on [Google Developer API
 
 Once the project is created, you’ll be re-directed to Google Developer API dashboard. Now, we will enable Google Sheets API for our app. For this in the APIs box, click “**Go to APIs overview**”. Once you click “**Enable APIs and Services**” you’ll be presented with the API Library and we’ll go ahead and search for “**Google Sheets API**”. 
 
-
-
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_3E77B58C1BDB4283EA0AA5749F06200EAFD47D75D433E88A9C19E349F3F702AF_1548746437962_Screenshot+2019-01-29+12.50.09.png" alt="Google Developer API Dashboard" height="550" width="800">
 
 
@@ -129,18 +120,13 @@ Once you find it, click “**Enable**” . The API is now enabled and you will b
 
 From the sidebar, navigate to “**Credentials**” and click on “**Create credentials**” button and select “**API Key**”. Also, click on the “**Restrict Key**” and set a name for the same. (I’ve set it to `SalesDashboardAPIKey`).
 
-
-
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_3E77B58C1BDB4283EA0AA5749F06200EAFD47D75D433E88A9C19E349F3F702AF_1548746564747_Screenshot+2019-01-29+12.52.15.png" alt="Google Developer Dashboard" height="550" width="800">
 
-
-Note : Save the key generated (mine is `AIzaSyCn_qxApnW1By0E3DZmIOJeXkT_RtYuYHo`), since we will need this key to pull the data from our Google Sheets later.
+> Save the key generated (mine is `AIzaSyCn_qxApnW1By0E3DZmIOJeXkT_RtYuYHo`), since we will need this key to pull the data from our Google Sheets later.
 
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_3E77B58C1BDB4283EA0AA5749F06200EAFD47D75D433E88A9C19E349F3F702AF_1548746333873_Screenshot+2019-01-29+12.47.15.png" alt="Google Sheets API" height="550" width="800">
 
-
 From the “**API Restrictions**”, select the “**Google Sheets API**” and save it. Now, let’s connect Google Sheets API and fetch the data.
-
 
 ## Connecting Google Sheets API and fetching data
 
@@ -150,12 +136,9 @@ The Google sheet for KPI data :
 
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1551856811740_Screenshot+2019-03-06+12.48.28.png" alt="Google Sheet Data" height="550" width="800">
 
-
 The Google sheet for the Map Data(year 2016):
 
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1551856811645_Screenshot+2019-03-06+12.49.10.png" alt="Google Sheet Map Data" height="300" width="600">
-
-
 
 The **componentDidMount()**is invoked immediately after a component is mounted. This is exactly where AJAX requests and DOM or state updates should occur.
 Below is the code to fetch the response from the JSON data:
@@ -188,7 +171,7 @@ Now let’s divide our dashboard into 3 parts:
 2. KPI Section
 3. Charts Section
 
-**Creating the Navigation Section:** 
+**Creating the Navigation Section**
 
 To create the navigation bar,  we will be using the `navbar` component of Bootstrap. Just below the navigation bar holds a component with a drop-down for `Year` and  `Quarter`. Below is the HTML snippet for the same:
 
