@@ -23,8 +23,8 @@ Download the relevant Node.js installer for your operating system from <a href="
 
 To verify if the installation went fine:
 
--  Open Command Terminal and run the following command: `$ node -v` to get the version of the nodejs installed in your system.
--  Run the command node to open up a REPL (Read Evaluate Print Loop) console and try out a small command as shown below:
+- Open Command Terminal and run the following command: `$ node -v` to get the version of the nodejs installed in your system.
+- Run the command node to open up a REPL (Read Evaluate Print Loop) console and try out a small command as shown below:
 
 ```bash
 node
@@ -36,9 +36,9 @@ Hello World
 
 The libraries or frameworks leveraging Node platform are distributed in the form of packages and these packages can be installed using the `Node Package Manager (npm)` tool which comes with the Nodejs installation. ExpressJS is one such package. These packages can be installed globally or installed for specific application. Follow the steps below to install ExpressJS for a specific application:
 
--  Create a new directory: `$ mkdir node-fusioncharts-demo`
--  Change to the new directory `$ cd node-fusioncharts-demo`
--  Install express for specific application `$ npm install express`
+- Create a new directory: `$ mkdir node-fusioncharts-demo`
+- Change to the new directory `$ cd node-fusioncharts-demo`
+- Install express for specific application `$ npm install express`
 
 After the installation you will find a new folder **node_modules** created. This is where all your application specific packages are stored.
 
@@ -48,8 +48,8 @@ MongoDB is an open-source, document database designed for ease of development an
 
 Two very frequently used commands of MongoDB are: **mongod** and **mongo** .
 
--  **mongod**: This command is used to run the MongoDB daemon which manages the data storage and retrieval. By default it runs on the port 27017.
--  **mongo**: This command is used to run all our MongoDB queries. One can insert, retrieve, update and delete data as well as create indexes through this tool. It connects to the MongoDB daemon running on the port 27017
+- **mongod**: This command is used to run the MongoDB daemon which manages the data storage and retrieval. By default it runs on the port 27017.
+- **mongo**: This command is used to run all our MongoDB queries. One can insert, retrieve, update and delete data as well as create indexes through this tool. It connects to the MongoDB daemon running on the port 27017
 
 ## Populating data in MongoDB
 
@@ -57,51 +57,51 @@ For this article we are going to consider the variation of price of Petrol and D
 
 ```json
 [
-   {
-      "month": "Jan",
-      "petrol": 64.72,
-      "diesel": 52.49
-   },
-   {
-      "month": "Feb",
-      "petrol": 62.81,
-      "diesel": 50.72
-   },
-   {
-      "month": "Mar",
-      "petrol": 66.18,
-      "diesel": 54.06
-   },
-   {
-      "month": "Apr",
-      "petrol": 65.17,
-      "diesel": 51.74
-   },
-   {
-      "month": "May",
-      "petrol": 72.94,
-      "diesel": 57.23
-   },
-   {
-      "month": "Jun",
-      "petrol": 73.77,
-      "diesel": 55.83
-   },
-   {
-      "month": "Jul",
-      "petrol": 70.7,
-      "diesel": 52.59
-   },
-   {
-      "month": "Aug",
-      "petrol": 66.72,
-      "diesel": 47.54
-   },
-   {
-      "month": "Sept",
-      "petrol": 64.61,
-      "diesel": 47.02
-   }
+  {
+    "month": "Jan",
+    "petrol": 64.72,
+    "diesel": 52.49
+  },
+  {
+    "month": "Feb",
+    "petrol": 62.81,
+    "diesel": 50.72
+  },
+  {
+    "month": "Mar",
+    "petrol": 66.18,
+    "diesel": 54.06
+  },
+  {
+    "month": "Apr",
+    "petrol": 65.17,
+    "diesel": 51.74
+  },
+  {
+    "month": "May",
+    "petrol": 72.94,
+    "diesel": 57.23
+  },
+  {
+    "month": "Jun",
+    "petrol": 73.77,
+    "diesel": 55.83
+  },
+  {
+    "month": "Jul",
+    "petrol": 70.7,
+    "diesel": 52.59
+  },
+  {
+    "month": "Aug",
+    "petrol": 66.72,
+    "diesel": 47.54
+  },
+  {
+    "month": "Sept",
+    "petrol": 64.61,
+    "diesel": 47.02
+  }
 ]
 ```
 
@@ -151,11 +151,11 @@ If you are familiar with Java, you would remember using a MySQL Connector Jar to
 
 Let us develop the REST API by following the steps listed below:
 
--  Import the express and mongodb packages to be used in the application.
--  Connect to MongoDB instance running locally.
--  Implement method to fetch the data from Database.
--  Create express server and REST API end-point.
--  Launch the express app on a port.
+- Import the express and mongodb packages to be used in the application.
+- Connect to MongoDB instance running locally.
+- Implement method to fetch the data from Database.
+- Create express server and REST API end-point.
+- Launch the express app on a port.
 
 #### Step 1 : Import the Express and Mongodb Packages to be used in the Application
 
@@ -163,9 +163,9 @@ We make use of the require() function to import the required packages by passing
 
 ```javascript
 //import express package
-var express = require('express');
+var express = require("express");
 //import mongodb package
-var mongodb = require('mongodb');
+var mongodb = require("mongodb");
 ```
 
 #### Step 2 : Connect to MongoDB instance running locally
@@ -197,10 +197,10 @@ While we implement the method to fetch db, we also need to parse and construct t
 
 ```json
 {
-   "_id": ObjectId("55e5c5191873f247b61bd91b"),
-   "month": "Jan",
-   "petrol": 64.72,
-   "diesel": 52.49
+  "_id": ObjectId("55e5c5191873f247b61bd91b"),
+  "month": "Jan",
+  "petrol": 64.72,
+  "diesel": 52.49
 }
 ```
 
@@ -223,45 +223,45 @@ The above form will help us to extract categories array as well as data set very
 
 ```javascript
 function getData() {
-   //use the find() API and pass an empty query object to retrieve all records
-   dbObject
-      .collection('fuel_price')
-      .find({})
-      .toArray(function(err, docs) {
-         if (err) throw err;
-         var monthArray = [];
-         var petrolPrices = [];
-         var dieselPrices = [];
+  //use the find() API and pass an empty query object to retrieve all records
+  dbObject
+    .collection("fuel_price")
+    .find({})
+    .toArray(function(err, docs) {
+      if (err) throw err;
+      var monthArray = [];
+      var petrolPrices = [];
+      var dieselPrices = [];
 
-         for (index in docs) {
-            var doc = docs[index];
-            //category array
-            var month = doc['month'];
-            //series 1 values array
-            var petrol = doc['petrol'];
-            //series 2 values array
-            var diesel = doc['diesel'];
-            monthArray.push({ label: month });
-            petrolPrices.push({ value: petrol });
-            dieselPrices.push({ value: diesel });
-         }
+      for (index in docs) {
+        var doc = docs[index];
+        //category array
+        var month = doc["month"];
+        //series 1 values array
+        var petrol = doc["petrol"];
+        //series 2 values array
+        var diesel = doc["diesel"];
+        monthArray.push({ label: month });
+        petrolPrices.push({ value: petrol });
+        dieselPrices.push({ value: diesel });
+      }
 
-         var dataset = [
-            {
-               seriesname: 'Petrol Price',
-               data: petrolPrices,
-            },
-            {
-               seriesname: 'Diesel Price',
-               data: dieselPrices,
-            },
-         ];
+      var dataset = [
+        {
+          seriesname: "Petrol Price",
+          data: petrolPrices
+        },
+        {
+          seriesname: "Diesel Price",
+          data: dieselPrices
+        }
+      ];
 
-         var response = {
-            dataset: dataset,
-            categories: monthArray,
-         };
-      });
+      var response = {
+        dataset: dataset,
+        categories: monthArray
+      };
+    });
 }
 ```
 
@@ -272,8 +272,8 @@ Let us expose the REST API at the URL /fuelPrices. We will modify the getData() 
 ```javascript
 //create express app
 var app = express();
-app.get('/fuelPrices', function(req, res) {
-   getData(res);
+app.get("/fuelPrices", function(req, res) {
+  getData(res);
 });
 ```
 
@@ -282,8 +282,8 @@ app.get('/fuelPrices', function(req, res) {
 Express app is launched by listening to some unused port as shown below:
 
 ```javascript
-app.listen('3300', function() {
-   console.log('Server up: localhost:3300');
+app.listen("3300", function() {
+  console.log("Server up: localhost:3300");
 });
 ```
 
@@ -309,26 +309,29 @@ Base template, main.handlebars, is constructed as shown below:
 <!-- Filename: main.handlebars -->
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8" />
-      <link
-         rel="stylesheet"
-         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-      />
-      <title>FusionCharts Sample</title>
-   </head>
-   <body>
-      <div class="container">
-         {{{body}}}
-      </div>
-      <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/AJAX/libs/handlebars.js/4.0.0/handlebars.js"></script>
-      <script src="/public/js/fusioncharts_demo.js" charset="utf-8"></script>
-      <script src="/public/js/fusioncharts.js"></script>
-      <script src="/public/js/fusioncharts.charts.js"></script>
-      <script src="/public/js/fusioncharts.theme.zune.js"></script>
-   </body>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <title>FusionCharts Sample</title>
+  </head>
+  <body>
+    <div class="container">
+      {{{body}}}
+    </div>
+    <script
+      src="http://code.jquery.com/jquery-2.1.4.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/AJAX/libs/handlebars.js/4.0.0/handlebars.js"></script>
+    <script src="/public/js/fusioncharts_demo.js" charset="utf-8"></script>
+    <script src="/public/js/fusioncharts.js"></script>
+    <script src="/public/js/fusioncharts.charts.js"></script>
+    <script src="/public/js/fusioncharts.theme.zune.js"></script>
+  </body>
 </html>
 ```
 
@@ -342,47 +345,50 @@ Let us now see the code for the template that will contain the chart. The name o
 
 Let us get back to the expressjs server code i.e server.js and do the following:
 
--  Setup handlebars template engine with main.handlebars as default layout.
+- Setup handlebars template engine with main.handlebars as default layout.
 
 ```html
 <!-- Filename: main.handlebars -->
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8" />
-      <link
-         rel="stylesheet"
-         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-      />
-      <title>FusionCharts Sample</title>
-   </head>
-   <body>
-      <div class="container">
-         {{{body}}}
-      </div>
-      <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/AJAX/libs/handlebars.js/4.0.0/handlebars.js"></script>
-      <script src="/public/js/fusioncharts_demo.js" charset="utf-8"></script>
-      <script src="/public/js/fusioncharts.js"></script>
-      <script src="/public/js/fusioncharts.charts.js"></script>
-      <script src="/public/js/fusioncharts.theme.zune.js"></script>
-   </body>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <title>FusionCharts Sample</title>
+  </head>
+  <body>
+    <div class="container">
+      {{{body}}}
+    </div>
+    <script
+      src="http://code.jquery.com/jquery-2.1.4.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/AJAX/libs/handlebars.js/4.0.0/handlebars.js"></script>
+    <script src="/public/js/fusioncharts_demo.js" charset="utf-8"></script>
+    <script src="/public/js/fusioncharts.js"></script>
+    <script src="/public/js/fusioncharts.charts.js"></script>
+    <script src="/public/js/fusioncharts.theme.zune.js"></script>
+  </body>
 </html>
 ```
 
--  Defining an endpoint to serve static resources like JavaScript resources
+- Defining an endpoint to serve static resources like JavaScript resources
 
 ```javascript
 // Defining middleware to serve static files
-app.use('/public', express.static('public'));
+app.use("/public", express.static("public"));
 ```
 
 A new endpoint to render the view:
 
 ```javascript
-app.get('/', function(req, res) {
-   res.render('chart');
+app.get("/", function(req, res) {
+  res.render("chart");
 });
 ```
 
@@ -391,14 +397,14 @@ Let us work on building the JavaScript code for making an AJAX call to get the d
 ```javascript
 var chartData;
 $(function() {
-   $.AJAX({
-      url: 'http://localhost:3300/fuelPrices',
-      type: 'GET',
-      success: function(data) {
-         chartData = data;
-         console.log(data);
-      },
-   });
+  $.AJAX({
+    url: "http://localhost:3300/fuelPrices",
+    type: "GET",
+    success: function(data) {
+      chartData = data;
+      console.log(data);
+    }
+  });
 });
 ```
 
@@ -429,8 +435,8 @@ And for this we will make use of Handlebars template at the client side i.e we w
 The placeholders identified by {{ }} are handlebar constructs. Let us get back to the JavaScript AJAX call we had made. Within the success function we will use `Handlebars.compile()` to compile the client side template and then invoke the compiled template with the data obtained from server as shown below:
 
 ```javascript
-var template = Handlebars.compile($('#tabular-template').html());
-$('#table-location').html(template(data));
+var template = Handlebars.compile($("#tabular-template").html());
+$("#table-location").html(template(data));
 ```
 
 If you want to see the app we have built so far in action, just run the following command from the app directory: `node server.js`. You will see Server up: `http://localhost:3300` printed. Open the URL `http://localhost:3300/` to see the table as shown in the below image:
@@ -441,45 +447,45 @@ If you want to see the app we have built so far in action, just run the followin
 
 In this section we will add code for rendering the chart. Let us build the chart step-by-step as shown below:
 
--  Create chart properties object
+- Create chart properties object
 
 ```javascript
 var chartProperties = {
-   caption: 'Variation of Petrol and Diesel price in Bangalore',
-   numberprefix: 'Rs',
-   xAxisName: 'Month',
-   yAxisName: 'Price',
+  caption: "Variation of Petrol and Diesel price in Bangalore",
+  numberprefix: "Rs",
+  xAxisName: "Month",
+  yAxisName: "Price"
 };
 ```
 
--  Create categories array object
+- Create categories array object
 
 ```javascript
 var categoriesArray = [
-   {
-      category: data['categories'],
-   },
+  {
+    category: data["categories"]
+  }
 ];
 ```
 
--  Create FusionCharts object for multiseries line
+- Create FusionCharts object for multiseries line
 
 ```javascript
 var lineChart = new FusionCharts({
-   type: 'msline',
-   renderAt: 'chart-location',
-   width: '100Ω',
-   height: '600',
-   dataFormat: 'json',
-   dataSource: {
-      chart: chartProperties,
-      categories: categoriesArray,
-      dataset: data['dataset'],
-   },
+  type: "msline",
+  renderAt: "chart-location",
+  width: "100Ω",
+  height: "600",
+  dataFormat: "json",
+  dataSource: {
+    chart: chartProperties,
+    categories: categoriesArray,
+    dataset: data["dataset"]
+  }
 });
 ```
 
--  Render the chart using the `render()` API.
+- Render the chart using the `render()` API.
 
 ```javascript
 lineChart.render();
