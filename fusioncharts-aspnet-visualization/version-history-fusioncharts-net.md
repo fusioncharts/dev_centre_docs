@@ -12,11 +12,11 @@ heading: Version History
 
 - Starting v1.0.7, FusionCharts.NET introduces the following features and components for the time-series charts:
 
-  - Style Cross Line
+  - Cross Line
   - Reference Zone
-  - Set Output Time format
-  - Set Initial Interval
-  - Set Predictive Date and add Style
+  - Output Time format
+  - Initial Interval
+  - Predictive Date
 
 - Exception Handling has been introduced to Visualization Engine of FusionCharts.NET library.
 
