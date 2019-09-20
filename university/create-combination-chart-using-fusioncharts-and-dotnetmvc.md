@@ -21,11 +21,11 @@ As you can see, FusionCharts.NET is structured into two major modules - the Data
 
 The Data Engine of FusionCharts.NET lets you store data and perform various operations on it. That way, you get plenty of options to optimize and transform the data to suit your requirements, before you send it to the chart renderer. The Data Engine consists of the following:
 
-    * **Data Sources**, which receives the raw data and creates an object to provide the data to the DataModel.
+- **Data Sources**, which receives the raw data and creates an object to provide the data to the DataModel.
 
-    * **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine.
+- **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine.
 
-    * **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
+- **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
 
 ### Visualization Engine
 
