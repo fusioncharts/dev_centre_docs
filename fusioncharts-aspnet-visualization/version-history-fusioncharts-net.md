@@ -12,15 +12,15 @@ heading: Version History
 
 - Starting v1.0.7, FusionCharts.NET introduces the following features and components for the time-series charts:
 
-  - Style Cross Line
-  - Reference Zone
-  - Set Output Time format
-  - Set Initial Interval
-  - Set Predictive Date and add Style
+  - [Cross Line](/fusioncharts-aspnet-visualization/components/fusiontime-components/crossline-in-fcnet)
+  - [Predictive Date](/fusioncharts-aspnet-visualization/components/fusiontime-components/predictive-data-in-fcnet)
+  - [Reference Zone](/fusioncharts-aspnet-visualization/components/fusiontime-components/reference-zone-in-fcnet)
+  - [Output Time format](/fusioncharts-aspnet-visualization/api-reference-net/visualization-api-net#output-time-format)
+  - [Initial Interval](/fusioncharts-aspnet-visualization/api-reference-net/visualization-api-net#initial-interval)
 
-- Exception Handling has been introduced to Visualization Engine of FusionCharts.NET library.
+- [Exception Handling](/fusioncharts-aspnet-visualization/getting-started/exception-handling-in-fcnet) has been introduced to Visualization Engine of FusionCharts.NET library.
 
-- Custure has been introduced to DataEngine.
+- [Custure](/fusioncharts-aspnet-visualization/data-engine/culture) has been introduced to DataEngine.
 
 <h4>Improvement</h4>
 
