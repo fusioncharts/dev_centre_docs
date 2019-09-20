@@ -19,9 +19,9 @@ As you can see, FusionCharts.NET is structured into two major modules - the Data
 ### Data Engine 
 
 The Data Engine of FusionCharts.NET lets you store data and perform various operations on it. That way, you get plenty of options to optimize and transform the data to suit your requirements, before you send it to the chart renderer. The Data Engine consists of the following:
-    * **Data Sources**, which receives the raw data and creates an object to provide the data to the DataModel.
-    * **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine. 
-    * **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
+  * **Data Sources**, which receives the raw data and creates an object to provide the data to the DataModel.
+  * **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine. 
+  * **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
   
 ## Prerequisite
 
@@ -86,7 +86,7 @@ It's time to add reference of FusionCharts.NET in this application. To do so, ri
 * Click on **Add Reference**
 * Browse to and add both **FusionCharts.Visualization.dll** and **FusionCharts.DataEngine.dll** (as shown in the screenshot below)
 * Click **Ok**.
-* 
+  
 ![](Create Funnel Charts Using FusionCharts in .NET MVC_images/image_4.png)
 
 **Step 6**
