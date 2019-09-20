@@ -397,7 +397,7 @@ Additionally, we are adding extra CSS for dashboard container and primary chart.
 
 As mentioned earlier, `id` for all the `div`s should be mapped properly in the chart configurations against `renderAt` component. The output for multiple chart exports will resemble the snapshot below:
 
-<img src="https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1568713859958_Screenshot+2019-09-17+15.20.30.png" alt="Multiple Charts " height="550" width="800">
+<img src="{% site.BASE_URL %}/images/fusionexport-full-dashboard-output.png" alt="Multiple Charts " height="550" width="800">
 
 ## Customize the layout dynamically
 
