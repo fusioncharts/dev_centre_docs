@@ -66,7 +66,7 @@ Now that we have set up the dashboard, let’s take a step back and plan how we 
 
 Diagram below would give you a better understanding of the overall flow:
 
-![FusionExport - FlowChart - Download dashboard as a PDF](https://www.fusioncharts.com/dev/images/FusionExport-Flowchart.png)
+![FusionExport - FlowChart - Download dashboard as a PDF](/images/FusionExport-Flowchart.png)
 
 ## Adding a new endpoint for export
 
@@ -334,7 +334,7 @@ The `ExportHandle.vue` houses the code for sending requests to the baseUrl, retr
 
 We have declared `actions.js` within the store folder where all the chart configurations are pre-defined. The `RenderChart.vue` caters to all the needs for `chartConfigs`. To understand and learn about the chart configurations better, take a look at code snippet on Vue [here](https://github.com/fusioncharts/fusionexport-dashboard-sample-php/blob/master/resources/js/components/RenderChart.vue). Once everything is configured properly, clicking on the Export button will send a PDF in return. The output dashboard will look like the snapshot below:
 
-![](https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1557909325887_Screenshot+2019-05-15+14.04.26.png)
+![](/images/fusionexport-output-scroll-column.png)
 
 ## Exporting multiple charts
 
