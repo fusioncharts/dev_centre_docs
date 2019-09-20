@@ -29,7 +29,7 @@ FusionCharts.NET provides you with two modules:
 
 The diagram given below may help you understand the architecture of FusionCharts.NET:
 
-<img src="/images/create-a-funnel-chart-using-fusioncharts-and-dotnet-image-1.png" alt="Architecture of FusionCharts.NET" height="750" width="520">
+<img src="/images/create-a-funnel-chart-using-fusioncharts-and-dotnet-image-1.png" alt="Architecture of FusionCharts.NET" height="550" width="800">
 
 ## Prerequisites
 
@@ -57,7 +57,7 @@ Create a web application in visual studio. To do so, open Visual Studio and foll
 
 - Finally, click on **Create**.
 
-<img src="/images/create-a-funnel-chart-using-fusioncharts-and-dotnet-image-2.png" alt="Web Application in Visual Studio" height="750" width="520">
+<img src="/images/create-a-funnel-chart-using-fusioncharts-and-dotnet-image-2.png" alt="Web Application in Visual Studio" height="550" width="800">
 
 ### Step 2
 
@@ -131,7 +131,7 @@ Add a reference to FusionCharts.NET in this application. To do so:
 
 - Click **Ok**.
 
-<img src="/images/create-a-funnel-chart-using-fusioncharts-and-dotnet-image-5.png" alt="FusionCharts.NET application" height="750" width="520">
+<img src="/images/create-a-funnel-chart-using-fusioncharts-and-dotnet-image-5.png" alt="FusionCharts.NET application" height="550" width="800">
 
 ### Step 7
 
