@@ -24,7 +24,7 @@ heading: Version History
 
 <h4>Deprecated</h4>
 
-- TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”);
+- TimeSeriesData.RenderCompatibleDataInJson(model);
 
 <h2 class="sub-heading">Version 1.0.6</h2>
 
