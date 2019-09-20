@@ -34,7 +34,7 @@ Before you can build charts with FusionCharts.NET, you need to configure your sy
 - FusionCharts.NET assembly, which you can get [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net).
   FusionCharts.NET supports many different types of charts. You can find them all listed [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to render a funnel chart in .NET.
 
-### Step 1
+**Step 1**
 
 Create a web application in Visual Studio. Open Visual Studio and follow the steps mentioned below:
 
@@ -46,7 +46,7 @@ Create a web application in Visual Studio. Open Visual Studio and follow the ste
 
 <img src="/images/create-funnel-chart-fusionchart-mvc-dotnet-image-2.png" alt="Web Application" height="550" width="800">
 
-### Step 2
+**Step 2**
 
 Next, you have to add Fusioncharts JavaScript files to this project. Right click on the **Scripts** folder and follow the steps mentioned below:
 
@@ -57,7 +57,7 @@ When you are done, the Solution Explorer will look like the following:
 
 ![Fusioncharts JavaScript files](/images/create-funnel-chart-fusionchart-mvc-dotnet-image-3.png)
 
-### Step 3
+**Step 3**
 
 Now, add a new **View** in this project. The chart will be rendered inside this view. To do so, right click on the **Views** folder and follow the steps mentioned below:
 
@@ -70,7 +70,7 @@ Now, add a new **View** in this project. The chart will be rendered inside this 
 
 ![View Files](/images/create-funnel-chart-fusionchart-mvc-dotnet-image-4.png)
 
-### Step 4
+**Step 4**
 
 Now, add reference of FusionCharts JavaScript files and necessary tags in this view. Navigate to the **FunnelChart.cshtml** page and add the following lines:
 
@@ -90,7 +90,7 @@ Now, add reference of FusionCharts JavaScript files and necessary tags in this v
 </html>
 ```
 
-### Step 5
+**Step 5**
 
 It's time to add reference of FusionCharts.NET in this application. To do so, right click on **References** and follow the steps mentioned below:
 
@@ -100,7 +100,7 @@ It's time to add reference of FusionCharts.NET in this application. To do so, ri
 
 <img src="/images/create-funnel-chart-fusionchart-mvc-dotnet-image-5.png" alt="Add Reference of FusionCharts.NET" height="550" width="800">
 
-### Step 6
+**Step 6**
 
 Now you need to use **FusionCharts.DataEngine** and **FusionCharts.Visualization** reference in controller. To do that, open the **Controller** folder. Then, open the **HomeController.cs** file and add the following lines:
 
@@ -109,7 +109,7 @@ using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 ```
 
-### Step 7
+**Step 7**
 
 Open **HomeController.cs** and add a new action, **FunnelChart()**. This action will return the chart rendering string to **FunnelChart.cshtml**. Within this action, you need to write the code to build a chart object. In this example, you will fetch data from a DataTable. Apart from this, you can also fetch data from SQL Server, a JSON file, or a CSV file.
 
@@ -168,7 +168,7 @@ public ActionResult FunnelChart() {
 }
 ```
 
-### Rendered Widget
+## Rendered Widget
 
 The output chart will look as shown below:
 

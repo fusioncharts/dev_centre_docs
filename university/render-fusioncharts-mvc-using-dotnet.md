@@ -27,7 +27,7 @@ The Data Engine of FusionCharts.NET helps you store data and run different data 
 
 - **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
 
-### Prerequisites
+## Prerequisites
 
 Before you can build charts with FusionCharts.NET, you need to configure your system to have these loaded:
 
@@ -39,7 +39,7 @@ Before you can build charts with FusionCharts.NET, you need to configure your sy
 
 FusionCharts.NET supports many different types of charts. You can find them all listed [here](/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to create a column chart with FusionCharts .NET and ASP.NET.
 
-### Step 1
+**Step 1**
 
 Create a web application in visual studio. Open Visual Studio and follow the steps mentioned below:
 
@@ -55,7 +55,7 @@ Create a web application in visual studio. Open Visual Studio and follow the ste
 
 <img src="/images/render-fusioncharts-mvc-using-dotnet-image-2.png" alt="Web Application in visual studio" height="550" width="800">
 
-### Step 2
+**Step 2**
 
 Now, add Fusioncharts JavaScript files to this project. Right-click on **Scripts** folder and do the following:
 
@@ -67,7 +67,7 @@ When you are done, the solution explorer will look like the following:
 
 ![Fusioncharts JS files](/images/render-fusioncharts-mvc-using-dotnet-image-3.png)
 
-### Step 3
+**Step 3**
 
 Now, add a new **View** in this project. The chart will be rendered inside this view. To do so, right-click on the **Views** folder and follow the steps mentioned below:
 
@@ -85,7 +85,7 @@ Now, add a new **View** in this project. The chart will be rendered inside this 
 
 ![View Project](/images/render-fusioncharts-mvc-using-dotnet-image-4.png)
 
-### Step 4
+**Step 4**
 
 Now, add reference of FusionCharts JavaScript files and necessary tags in this view. Navigate to the **ColumnChart.cshtml** page and add the following lines:
 
@@ -105,7 +105,7 @@ Now, add reference of FusionCharts JavaScript files and necessary tags in this v
 </html>
 ```
 
-### Step 5
+**Step 5**
 
 It's time to add reference to FusionCharts.NET in this application. To do so, right-click on **References** and follow the steps mentioned below:
 
@@ -117,7 +117,7 @@ It's time to add reference to FusionCharts.NET in this application. To do so, ri
 
 <img src="/images/render-fusioncharts-mvc-using-dotnet-image-5.png" alt="Add reference to FusionCharts.NET" height="550" width="800">
 
-### Step 6
+**Step 6**
 
 Next, you need to use references to **FusionCharts.DataEngine** and **FusionCharts.Visualization** in the controller. To do that, open the **Controller** folder and add the following lines to the **HomeController.cs** file:
 
@@ -126,7 +126,7 @@ using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 ```
 
-### Step 7
+**Step 7**
 
 Open **HomeController.cs** and add a new action, **ColumnChart()**. This action will return the chart rendering string to **ColumnChart.cshtml**. Within this action, you need to write the code to build a chart object. In this example, you will fetch data from a DataTable. Apart from this, you can also fetch data from SQL Server, a JSON file, or a CSV file.
 
@@ -195,7 +195,7 @@ public ActionResult ColumnChart() {
 }
 ```
 
-### Rendered Chart
+## Rendered Chart
 
 The output chart will look like the screenshot given below:
 
@@ -203,13 +203,13 @@ The output chart will look like the screenshot given below:
 
 Click [here](https://dotnetfiddle.net/nVVeWE) to edit the column chart.
 
-### Render Column Chart with Multiple Series
+## Render Column Chart with Multiple Series
 
 If the DataModel has more than one value column, the Visualization Engine will automatically render a Multi Series Column Chart.
 
 Click [here](https://dotnetfiddle.net/nxmoKm) to edit a column chart with multiple value fields.
 
-### Render 3D Column Chart
+## Render 3D Column Chart
 
 If you set the **ThreeD** property to **true** (using the code shown below), the Visualization Engine will render a 3D column chart.
 
@@ -219,7 +219,7 @@ column.ThreeD = true;
 
 Click [here](https://dotnetfiddle.net/kSc5WZ) to edit a ThreeD column chart.
 
-### Render Overlapped Column Chart
+## Render Overlapped Column Chart
 
 If the DataModel has two or more value columns and you set the **Overlapped** property to **true**, then the Visualization Engine will render an overlapped column chart.
 
@@ -229,7 +229,7 @@ column.Overlapped = true;
 
 Click [here](https://dotnetfiddle.net/1HYSai) to edit an overlapped column chart.
 
-### Render Scrollable Column Chart
+## Render Scrollable Column Chart
 
 If you set the **Scrollable** property to **true** (using the code shown below), the Visualization Engine will render a Scrollable Column chart.
 

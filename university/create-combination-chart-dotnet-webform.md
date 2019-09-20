@@ -47,7 +47,7 @@ Before you can build charts with FusionCharts.NET, you need to install the follo
 
 FusionCharts.NET supports many different types of charts. You can find them all listed [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to render a combination chart in .NET MVC.
 
-### Step 1
+**Step 1**
 
 Create a web application in visual studio. To do so, open Visual Studio and follow the steps mentioned below:
 
@@ -63,7 +63,7 @@ Create a web application in visual studio. To do so, open Visual Studio and foll
 
 <img src="/images/create-combination-chart-dotnet-webform-image-2.png" alt="Application in Visual Studio" height="550" width="800">
 
-### Step 2
+**Step 2**
 
 Now, add Fusioncharts JS files to this project. To do so:
 
@@ -83,7 +83,7 @@ Now, browse to the location where you have downloaded the FusionCharts JavaScrip
 
 ![Fusioncharts JS files](/images/create-combination-chart-dotnet-webform-image-3.png)
 
-### Step 3
+**Step 3**
 
 Now, add a web form, inside which FusionCharts.NET will render the chart. To add the form:
 
@@ -109,7 +109,7 @@ Add reference of FusionCharts JS and theme files file in the .aspx page of your 
 ></script>
 ```
 
-### Step 5
+**Step 5**
 
 Now, add a Literal control in **CombiChart.aspx** page. Copy and paste the code given below:
 
@@ -119,7 +119,7 @@ Now, add a Literal control in **CombiChart.aspx** page. Copy and paste the code 
 </form>
 ```
 
-### Step 6
+**Step 6**
 
 Add reference of FusionCharts.NET in this application. To do so:
 
@@ -133,7 +133,7 @@ Add reference of FusionCharts.NET in this application. To do so:
 
 <img src="/images/create-combination-chart-dotnet-webform-image-5.png" alt="FusionCharts.NET application" height="550" width="800">
 
-### Step 7
+**Step 7**
 
 Use references to both **FusionCharts.DataEngine** and **FusionCharts.Visualization**. Navigate to the **CombiChart.aspx.cs** page and add the following lines at the top of the code:
 
@@ -142,7 +142,7 @@ using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 ```
 
-### Step 8
+**Step 8**
 
 Insert the code given below within the **PageLoad()** event of the **CombiChart.aspx.cs** page, to render the Combination chart. In this example, you will fetch data from a JSON file stored in the FusionCharts repository on GitHub. However, you can also fetch data from SQL Server or a CSV file.
 
