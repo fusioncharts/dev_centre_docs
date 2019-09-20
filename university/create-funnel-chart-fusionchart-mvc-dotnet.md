@@ -174,5 +174,6 @@ public ActionResult FunnelChart() {
 
 The output chart will look as shown below:
 
-![](Create Funnel Charts Using FusionCharts in .NET MVC_images/image_5.png)
+![Output](/images/create-funnel-chart-fusionchart-mvc-dotnet-image-6.png)
+
 Click [here](https://dotnetfiddle.net/FWAZel) to edit a funnel chart.
