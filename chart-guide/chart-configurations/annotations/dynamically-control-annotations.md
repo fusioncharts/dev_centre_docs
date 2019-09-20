@@ -15,15 +15,15 @@ You can use methods available within FusionCharts Suite XT to create, update, se
 
 Use the following methods to dynamically create, manipulate, and delete annotations:
 
-- Add a group that can hold multiple annotation items within it, using the `addGroup(options)` method. Use the `options` parameter to define the characteristics of the group. 
+- Add a group that can hold multiple annotation items within it, using the `addGroup(options)` method. Use the `options` parameter to define the characteristics of the group.
 
-- Add an annotation item to a specified group, using the `addItem(groupId, options, drawImmediate)` method. 
+- Add an annotation item to a specified group, using the `addItem(groupId, options, drawImmediate)` method.
 
-    - Use the `groupId` parameter to specify the id of the group, to which the annotation item will be added. If you leave this parameter unspecified, a new group will be created and the annotation item added to it.
+  - Use the `groupId` parameter to specify the id of the group, to which the annotation item will be added. If you leave this parameter unspecified, a new group will be created and the annotation item added to it.
 
-    - Use the `options` parameter to define the characteristics of the annotation item to be added.
+  - Use the `options` parameter to define the characteristics of the annotation item to be added.
 
-    - Use the `drawImmediate` parameter to specify whether the annotation item has to be drawn immediately, or not. This property is of the Boolean type and accepts either true or false as values.
+  - Use the `drawImmediate` parameter to specify whether the annotation item has to be drawn immediately, or not. This property is of the Boolean type and accepts either true or false as values.
 
 - Show a specific annotation group or item on the chart, using the `show(id)` method. Use the `id` parameter to specify the identification string of the group or item to be shown.
 
@@ -31,13 +31,13 @@ Use the following methods to dynamically create, manipulate, and delete annotati
 
 - Update the properties of a specific annotation group, or an individual item in a specific group, using the `update(id,{key:value})` method.
 
-    - Use the `id` parameter to specify the identification string of the group or item to be updated.
+  - Use the `id` parameter to specify the identification string of the group or item to be updated.
 
-    - Use the `key` parameter to specify the property of the annotation group or item to be updated.
+  - Use the `key` parameter to specify the property of the annotation group or item to be updated.
 
-    - Use the `value` parameter to specify the new value for the property of the annotation group or item to be updated.
+  - Use the `value` parameter to specify the new value for the property of the annotation group or item to be updated.
 
-- Remove a specific group or an annotation item, using the `destroy(id)` method. Use the `id` parameter to specify the identification string of the group or item to be removed. 
+- Remove a specific group or an annotation item, using the `destroy(id)` method. Use the `id` parameter to specify the identification string of the group or item to be removed.
 
 - Removes all annotation groups and items within the groups, using the clear() method.
 
@@ -45,41 +45,49 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "caption": "Total footfall in Bakersfield Central",
-        "subCaption": "Last week",
-        "xAxisName": "Day",
-        "yAxisName": "No. of Visitors",
-        "showValues": "1",
-        "theme": "fusion"
+  "chart": {
+    "caption": "Total footfall in Bakersfield Central",
+    "subCaption": "Last week",
+    "xAxisName": "Day",
+    "yAxisName": "No. of Visitors",
+    "showValues": "1",
+    "theme": "fusion"
+  },
+  "annotations": {
+    "origw": "400",
+    "origh": "300",
+    "autoscale": "1"
+  },
+  "data": [
+    {
+      "label": "Mon",
+      "value": "15123"
     },
-    "annotations": {
-        "origw": "400",
-        "origh": "300",
-        "autoscale": "1"
+    {
+      "label": "Tue",
+      "value": "14233"
     },
-    "data": [{
-        "label": "Mon",
-        "value": "15123"
-    }, {
-        "label": "Tue",
-        "value": "14233"
-    }, {
-        "label": "Wed",
-        "value": "25507"
-    }, {
-        "label": "Thu",
-        "value": "9110"
-    }, {
-        "label": "Fri",
-        "value": "15529"
-    }, {
-        "label": "Sat",
-        "value": "20803"
-    }, {
-        "label": "Sun",
-        "value": "19202"
-    }]
+    {
+      "label": "Wed",
+      "value": "25507"
+    },
+    {
+      "label": "Thu",
+      "value": "9110"
+    },
+    {
+      "label": "Fri",
+      "value": "15529"
+    },
+    {
+      "label": "Sat",
+      "value": "20803"
+    },
+    {
+      "label": "Sun",
+      "value": "19202"
+    }
+  ]
 }
 ```
 

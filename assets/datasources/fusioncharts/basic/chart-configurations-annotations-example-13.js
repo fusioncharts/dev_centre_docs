@@ -96,10 +96,11 @@
 
             //Code for showing/hiding the annotation-Start
 
-            var annotations = evt.sender.annotations;
+
 
             //Code for changing the color of the rectangle annotation - Start
             document.getElementById('update_annotation').onclick = function() {
+                var annotations = evt.sender.annotations;
                 annotations.update('dyn-labelBG', {
                     "fillColor": "#123456"
                 });
@@ -108,6 +109,7 @@
             //Code for changing the color of the rectangle annotation - End
 
             document.getElementById('destroy_annotation').onclick = function() {
+                var annotations = evt.sender.annotations;
                 annotations.destroy('totalFootfall');
                 document.getElementById('add_annotation').disabled = false;
                 document.getElementById('update_annotation').disabled = true;
