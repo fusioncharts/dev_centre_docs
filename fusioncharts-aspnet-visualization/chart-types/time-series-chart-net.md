@@ -84,7 +84,7 @@ namespace FcTest
             model.DataSources.Add(source);
 
             
-            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model));
+            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”));
         }
 
         public bool IsReusable
@@ -118,7 +118,7 @@ Namespace FcTest
             Dim model As DataModel = New DataModel()
             Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv")
             model.DataSources.Add(source)
-            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model))
+            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”))
         End Sub
 
         Public ReadOnly Property IsReusable As Boolean
@@ -332,7 +332,7 @@ DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, a
 
 /* invoke RenderCompatibleDataInJson() static method of  TimeSeriesData class*/
 /* it will return a json, return this json from your controller */
-return Content(TimeSeriesData.RenderCompatibleDataInJson(model), "text/json");
+return Content(TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”), "text/json");
 }
 ```
 
