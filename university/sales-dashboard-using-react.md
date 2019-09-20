@@ -436,7 +436,7 @@ If you’ve followed the above steps till now you should have a functional dashb
 Hope the tutorial helped you create this Sales Dashboard using Google Sheets. Now, you can go ahead and add UI elements, styles, more charts and a lot more features.
 
 
-> **You can download Fusion Charts Package for React stack from here** - [**Sign up for Fusion Charts**](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=react)**.**
+> **You can download FusionCharts Package for React stack from here** - [**Sign up for FusionCharts**](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=react)**.**
 
 A sales dashboard plays a crucial role in giving the peeps at sales an up-to-date view of their organisation’s sales health so that they can make desired revenue predictions, visualize successfully closed deals and also identify key areas for optimisation.
 
