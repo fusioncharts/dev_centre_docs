@@ -29,7 +29,7 @@ FusionCharts.NET provides you with two modules:
 
 The diagram given below may help you understand the architecture of FusionCharts.NET:
 
-![](Create Combination Charts Using FusionCharts in .NET_images/image_0.png)
+<img src="/images/create-combination-chart-dotnet-webform-image-1.png" alt="Architecture of FusionCharts.NET" height="550" width="800">
 
 ## Overview of Combination Charts
 
@@ -61,7 +61,7 @@ Create a web application in visual studio. To do so, open Visual Studio and foll
 
 - Finally, click on **Create**
 
-![](Create Combination Charts Using FusionCharts in .NET_images/image_1.png)
+<img src="/images/create-combination-chart-dotnet-webform-image-2.png" alt="Application in Visual Studio" height="550" width="800">
 
 ### Step 2
 
@@ -81,7 +81,7 @@ Now, add Fusioncharts JS files to this project. To do so:
 
 Now, browse to the location where you have downloaded the FusionCharts JavaScript files, to add them to the **Script** folder. After you add the files, the Solution Explorer will look like the screenshot given below:
 
-![](Create Combination Charts Using FusionCharts in .NET_images/image_2.png)
+![Fusioncharts JS files](/images/create-combination-chart-dotnet-webform-image-3.png)
 
 ### Step 3
 
@@ -95,7 +95,7 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 - Click **Ok**.
 
-![](Create Combination Charts Using FusionCharts in .NET_images/image_3.png)
+![Web Form](/images/create-combination-chart-dotnet-webform-image-4.png)
 
 **Step 4**
 
@@ -131,7 +131,7 @@ Add reference of FusionCharts.NET in this application. To do so:
 
 - Click **Ok**.
 
-![](Create Combination Charts Using FusionCharts in .NET_images/image_4.png)
+<img src="/images/create-combination-chart-dotnet-webform-image-5.png" alt="FusionCharts.NET application" height="550" width="800">
 
 ### Step 7
 
@@ -202,7 +202,7 @@ public ActionResult CombiChart() {
 
 The output chart will look as shown below:
 
-![](Create Combination Charts Using FusionCharts in .NET_images/image_5.png)
+<img src="/images/create-combination-chart-dotnet-webform-image-6.png" alt="Chart Rendered" height="550" width="800">
 
 Click [here](https://dotnetfiddle.net/Tkf2vq) to edit this chart.
 
