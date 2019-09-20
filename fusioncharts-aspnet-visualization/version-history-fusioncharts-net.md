@@ -22,6 +22,8 @@ heading: Version History
 
 - If the total number of records is less than the number of records to be extracted from the top, instead of throwing an exception, all records will be extracted from the top.
 
+- `TimeSeriesData.RenderCompatibleDataInJson(model);` has been replaced by `TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”);`. 
+
 <h4>Deprecated</h4>
 
 - TimeSeriesData.RenderCompatibleDataInJson(model);
