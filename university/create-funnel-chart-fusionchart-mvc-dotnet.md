@@ -148,7 +148,7 @@ public ActionResult FunnelChart() {
     funnel.Data.Source = model;
 
     // Set caption
-    funnel.Caption.Text = "Visit to purchase analysis";*
+    funnel.Caption.Text = "Visit to purchase analysis";
 
     // Set Sub caption***
     funnel.SubCaption.Text = "Visit to purchase- Conversion Analysis for last year";

@@ -136,8 +136,8 @@ Add a reference to FusionCharts.NET in this application. To do so:
 Use references to both **FusionCharts.DataEngine** and **FusionCharts.Visualization**. Navigate to the **FunnelChart.aspx.cs** page and add the following lines at the top of the code:
 
 ```csharp
-using FusionCharts.DataEngine;*
-using FusionCharts.Visualization;*
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
 ```
 
 **Step 8**

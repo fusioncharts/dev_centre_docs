@@ -465,8 +465,8 @@ timeSeries.StandardRangeSelector.Enable = true; //Boolean
 
 To configure the crossline, you can use the following APIs.
 
-| API                    | Type                         | Syntax | Description |
-| ---------------------- | ---------------------------- | ------ | ----------- |
+| API                    | Type                         |
+| ---------------------- | ---------------------------- |
 | `HorizontalLineStyle`  | PlotStyleConfigurationObject |
 | `HorizontalLabelStyle` | PlotStyleConfigurationObject |
 | `HorizontalTagStyle`   | PlotStyleConfigurationObject |
@@ -476,6 +476,10 @@ To configure the crossline, you can use the following APIs.
 | `VerticalLineStyle`    | PlotStyleConfigurationObject |
 | `VerticalLabelStyle`   | PlotStyleConfigurationObject |
 | `VerticaTagStyle`      | PlotStyleConfigurationObject |
+
+THe code to style the crossline using above properties is given below:
+
+
 
 The style properties under `PlotStyleConfigurationObject` is listed below:
 
