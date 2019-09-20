@@ -2302,6 +2302,10 @@
           {
             "title": "Export Charts",
             "path": "/fusioncharts-aspnet-visualization/getting-started/export-chart-using-fusioncharts-net"
+          },
+          {
+            "title": "Exception Handling",
+            "path": "/fusioncharts-aspnet-visualization/getting-started/exception-handling-in-fcnet"
           }
         ]
       },
