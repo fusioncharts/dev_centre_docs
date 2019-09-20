@@ -17,15 +17,15 @@ FusionCharts.NET uses FusionCharts (HTML5) JavaScript library to render interact
 
 FusionCharts.NET provides you with two modules:
 
--  **Data Engine**: The data engine of FusionCharts.NET lets you store data and perform operations on it. This way, you can transform and optimize the data before sending it to the chart renderer. The data engine consists of the following:
+* **Data Engine**: The data engine of FusionCharts.NET lets you store data and perform operations on it. This way, you can transform and optimize the data before sending it to the chart renderer. The data engine consists of the following:
 
-   -  **Data Sources**: It receives the raw data and creates an object to provide the data to the DataModel.
+    * **Data Sources**: It receives the raw data and creates an object to provide the data to the DataModel.
 
-   -  **Data Operations**: These can be applied on existing DataModels. A new DataModel is created automatically, whenever you apply an operation on an existing DataModel.
+    * **Data Operations**: These can be applied on existing DataModels. A new DataModel is created automatically, whenever you apply an operation on an existing DataModel. 
 
-   -  **Data Model**: The DataModel receives and stores the optimized data. You have to provide a DataModel to the Visualization Engine of FusionCharts.NET, to render charts. Keep in mind that in FusionCharts.NET, the visualization engine can only accept data in the form of a DataModel.
+    * **Data Model**: The DataModel receives and stores the optimized data. You have to provide a DataModel to the Visualization Engine of FusionCharts.NET, to render charts. Keep in mind that in FusionCharts.NET, the visualization engine can only accept data in the form of a DataModel.
 
--  **Visualization Engine**: The visualization engine of FusionCharts.NET lets you render a chart with functional and cosmetic configurations, after receiving the data from the data engine.
+* **Visualization Engine**: The visualization engine of FusionCharts.NET lets you render a chart with functional and cosmetic configurations, after receiving the data from the data engine.
 
 The diagram given below may help you understand the architecture of FusionCharts.NET:
 
@@ -35,27 +35,27 @@ The diagram given below may help you understand the architecture of FusionCharts
 
 Before you start building charts with FusionCharts.NET, you need to install the following programs on your computer:
 
--  Visual Studio IDE and .NET Framework v3.5 (or later)
+* Visual Studio IDE and .NET Framework v3.5 (or later)
 
--  FusionCharts Suite XT, which you can download from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?version=2&utm_expid=.oTKMCb4yRvC-v0Bh2zt4KA.1&utm_referrer=https%3A%2F%2Fwww.fusioncharts.com%2Fdownload%2Ffusioncharts-suite-xt%3Fversion%3D2).
+* FusionCharts Suite XT, which you can download from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?version=2&utm_expid=.oTKMCb4yRvC-v0Bh2zt4KA.1&utm_referrer=https%3A%2F%2Fwww.fusioncharts.com%2Fdownload%2Ffusioncharts-suite-xt%3Fversion%3D2).
 
--  FusionCharts.NET assembly, which you can get [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net).
+* FusionCharts.NET assembly, which you can get [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net).
 
-FusionCharts.NET supports different types of charts. You can find them all listed [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to render a funnel chart in ASP.NET.
+FusionCharts.NET supports different types of charts. You can find them all listed [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to render a funnel chart in ASP.NET. 
 
 **Step 1**
 
 Create a web application in visual studio. To do so, open Visual Studio and follow the steps mentioned below:
 
--  Click on **Create a new Project** → **ASP.NET Web Application (.NET Framework)**
+* Click on **Create a new Project** → **ASP.NET Web Application (.NET Framework)**
 
--  Type the name of your project
+* Type the name of your project 
 
--  Click on **Create**
+* Click on **Create**
 
--  Click on **Empty** (as shown in the screenshot below).
+* Click on **Empty** (as shown in the screenshot below).
 
--  Finally, click on **Create**.
+* Finally, click on **Create**.
 
 ![](Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_1.png)
 
@@ -63,17 +63,17 @@ Create a web application in visual studio. To do so, open Visual Studio and foll
 
 Now, add Fusioncharts JS files to this project. To do so:
 
--  Create a folder named **Script** and copy the FusionCharts JavaScript source file in it.
+* Create a folder named **Script** and copy the FusionCharts JavaScript source file in it.
 
--  Right-click on the name of the solution.
+* Right-click on the name of the solution.
 
--  Click on **Add** → **New Folder**
+* Click on **Add** → **New Folder**
 
--  Name the new folder **Script**.
+* Name the new folder **Script**.
 
--  Right-click on the **Script** folder
+* Right-click on the **Script** folder
 
--  Click **Add Existing Item**.
+* Click **Add Existing Item**.
 
 Now, browse to the location where you have downloaded the FusionCharts JavaScript files, to add them to the **Script** folder. After you add the files, the solution explorer will look as in the screenshot you can see below:
 
@@ -83,13 +83,13 @@ Now, browse to the location where you have downloaded the FusionCharts JavaScrip
 
 Now, add a web form, inside which FusionCharts.NET will render the chart. To add the form:
 
--  Right-click on the solution
+* Right-click on the solution
 
--  Click **Add** → **Web Form**
+* Click **Add** → **Web Form**
 
--  Name the web form **FunnelChart**
+* Name the web form **FunnelChart**
 
--  Click **Ok**.
+* Click **Ok**.
 
 ![](Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_3.png)
 
@@ -97,11 +97,11 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 Add a reference to FusionCharts JS and theme files file in the .aspx page of your solution. Navigate to the **FunnelChart.aspx** page. Within the code, add the following lines inside <script> tags.
 
-_<script type="text/javascript" src="Scripts/fusioncharts.js"></script>_
+*<script type="text/javascript" src="Scripts/fusioncharts.js"></script>*
 
-_<script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>_
+*<script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>*
 
-_<script src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"></script> _
+*<script src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"></script> *  
 
 **Step 5**
 
@@ -109,8 +109,8 @@ Now, add a Literal control in **FunnelChart.aspx** page. Copy and paste the code
 
 ```html
 <form id="form1" runat="server">
-   <div>
-      <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+  <div>
+    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
    </div>
 </form>
 ```
@@ -119,13 +119,13 @@ Now, add a Literal control in **FunnelChart.aspx** page. Copy and paste the code
 
 Add a reference to FusionCharts.NET in this application. To do so:
 
--  Right click on **References**
+* Right click on **References**
 
--  Click on **Add Reference**
+* Click on **Add Reference**
 
--  From the Reference Manager window, browse to the **FusionCharts.Visualization.dll** and **FusionCharts.DataEngine.dll** files. Add both to the application.
+* From the Reference Manager window, browse to the **FusionCharts.Visualization.dll** and **FusionCharts.DataEngine.dll** files. Add both to the application.
 
--  Click **Ok**.
+* Click **Ok**.
 
 ![](Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_4.png)
 
@@ -141,7 +141,8 @@ using FusionCharts.Visualization;*
 
 **Step 8**
 
-Insert the code given below within the **PageLoad()** event of the **FunnelChart.aspx.cs** page, to render the Funnel chart. In this example, you will fetch data from DataTable. However, you can also fetch data from SQL Server, a JSON file, or a CSV file.
+Insert the code given below within the **PageLoad()** event of the **FunnelChart.aspx.cs** page, to render the Funnel chart. In this example, you will fetch data from DataTable. However, you can also fetch data from SQL Server, a JSON file, or a CSV file. 
+
 
 ```js
 // Create Data table
@@ -219,3 +220,4 @@ The output chart will look as shown below:
 ![](Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_5.png)
 
 Click [here](https://dotnetfiddle.net/FWAZel) to edit a funnel chart.
+

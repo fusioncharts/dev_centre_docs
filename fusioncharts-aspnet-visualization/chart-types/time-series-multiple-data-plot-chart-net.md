@@ -85,7 +85,7 @@ namespace FcTest
             model.DataSources.Add(source);
 
             
-            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model));
+            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”));
         }
 
         public bool IsReusable
@@ -119,7 +119,7 @@ Namespace FcTest
             Dim model As DataModel = New DataModel()
             Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiSeries.csv")
             model.DataSources.Add(source)
-            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model))
+            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”))
         End Sub
 
         Public ReadOnly Property IsReusable As Boolean

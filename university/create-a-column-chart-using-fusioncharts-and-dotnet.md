@@ -103,23 +103,16 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 Add reference of FusionCharts JS and theme files file in the .aspx page of your solution. Navigate to the **ColumnChart.aspx** page. Within the code, add the following lines inside <script> tags.
 
-<<<<<<< HEAD
 ```
 <script type="text/javascript" src="Scripts/fusioncharts.js"></script>
 
 <script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>
 ```
-=======
-_<script type="text/javascript" src="Scripts/fusioncharts.js"></script>_
-
-_<script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>_
->>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 **Step 5**
 
 Now, add a Literal control in **ColumnChart.aspx** page. Copy and paste the code given below:
 
-<<<<<<< HEAD
 ```html
 <form id="form1" runat="server">
 
@@ -131,17 +124,6 @@ Now, add a Literal control in **ColumnChart.aspx** page. Copy and paste the code
 
 </form>
 ```
-=======
-_<form id="form1" runat="server">_
-
--  <div>*
-
--  <asp:Literal ID="Literal1" runat="server"></asp:Literal>\*
-
--  </div>*
-
-_</form>_
->>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 **Step 6**
 
@@ -169,7 +151,6 @@ _using FusionCharts.Visualization;_
 
 Insert the code given below within the **PageLoad()** event of the **ColumnChart.aspx.cs** page, to render the Column chart. In this example, you will fetch data from DataTable. However, you can also fetch data from SQL Server, a JSON file, or a CSV file.
 
-<<<<<<< HEAD
 ```js
 // Create data table to store data
 
@@ -253,89 +234,6 @@ column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
 
 Literal1.Text = column.Render();
 ```
-=======
-**_// Create data table to store data_**
-
-_DataTable ChartData = new DataTable();_
-
-**_// Add columns to data table_**
-
-_ChartData.Columns.Add("Programming Language", typeof(System.String));_
-
-_ChartData.Columns.Add("Users", typeof(System.Double));_
-
-**_// Add rows to data table_**
-
-_ChartData.Rows.Add("Java", 62000);_
-
-_ChartData.Rows.Add("Python", 46000);_
-
-_ChartData.Rows.Add("Javascript", 38000);_
-
-_ChartData.Rows.Add("C++", 31000);_
-
-_ChartData.Rows.Add("C#", 27000);_
-
-_ChartData.Rows.Add("PHP", 14000);_
-
-_ChartData.Rows.Add("Perl", 14000);_
-
-**_// Create static source with this data table_**
-
-_StaticSource source = new StaticSource(ChartData);_
-
-**_// Create instance of DataModel class_**
-
-_DataModel model = new DataModel();_
-
-**_// Add DataSource to the DataModel_**
-
-_model.DataSources.Add(source);_
-
-**_// Instantiate Column Chart_**
-
-**_// "first-chart" is chart id_**
-
-_Charts.ColumnChart column = new Charts.ColumnChart("first_chart");_
-
-**_// Set the width and the height of the chart in pixels_**
-
-_column.Width.Pixel(700);_
-
-_column.Height.Pixel(400);_
-
-**_// Set DataModel instance as the data source of the chart_**
-
-_column.Data.Source = model;_
-
-**_// Set Chart Caption_**
-
-_column.Caption.Text = "Most popular programming language";_
-
-**_// Set chart Subcaption_**
-
-_column.SubCaption.Text = "2017-2018";_
-
-**_// Hide chart Legend_**
-
-_column.Legend.Show = false;_
-
-**_// Set X-axis text_**
-
-_column.XAxis.Text = "Programming Language";_
-
-**_// Set Y-axis text_**
-
-_column.YAxis.Text = "User";_
-
-**_// Set chart theme_**
-
-_column.ThemeName = FusionChartsTheme.ThemeName.FUSION;_
-
-**_// Render chart in Literal_**
-
-_Literal1.Text = column.Render();_
->>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 ### Rendered Chart
 
@@ -355,13 +253,9 @@ Click [here](https://dotnetfiddle.net/nxmoKm) to edit a column chart with multip
 
 If you set the **ThreeD** property to **true** (using the code shown below), the Visualization Engine will render a 3D column chart.
 
-<<<<<<< HEAD
 ```js
 column.ThreeD = true;
 ```
-=======
-_column.ThreeD = true;_
->>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 Click [here](https://dotnetfiddle.net/kSc5WZ) to edit a ThreeD column chart.
 
@@ -369,13 +263,9 @@ Click [here](https://dotnetfiddle.net/kSc5WZ) to edit a ThreeD column chart.
 
 If the DataModel has two or more value columns and you set the **Overlapped** property to **true**, then the Visualization Engine will render an overlapped column chart.
 
-<<<<<<< HEAD
 ```js
 column.Overlapped = true;
 ```
-=======
-_column.Overlapped = true;_
->>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 Click [here](https://dotnetfiddle.net/1HYSai) to edit an overlapped column chart.
 
@@ -383,12 +273,8 @@ Click [here](https://dotnetfiddle.net/1HYSai) to edit an overlapped column chart
 
 If you set the **Scrollable** property to **true** (using the code shown below), the Visualization Engine will render a Scrollable Column chart.
 
-<<<<<<< HEAD
 ```js
 column.Scrollable = true;
 ```
-=======
-_column.Scrollable = true;_
->>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 Click [here](https://dotnetfiddle.net/TeDjsE) to edit a scrollable column chart.

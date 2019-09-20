@@ -459,6 +459,33 @@ The Standard Range Selector lets you select and focus on data within standard ti
 timeSeries.StandardRangeSelector.Enable = true; //Boolean
 ```
 
+### `Crossline`
+
+> `Crossline` only have support on **time-series** charts.
+
+To configure the crossline, you can use the following APIs.
+
+| API                    | Type                         | Syntax | Description |
+| ---------------------- | ---------------------------- | ------ | ----------- |
+| `HorizontalLineStyle`  | PlotStyleConfigurationObject |
+| `HorizontalLabelStyle` | PlotStyleConfigurationObject |
+| `HorizontalTagStyle`   | PlotStyleConfigurationObject |
+| `LineStyle`            | PlotStyleConfigurationObject |
+| `LabelStyle`           | PlotStyleConfigurationObject |
+| `TagStyle`             | PlotStyleConfigurationObject |
+| `VerticalLineStyle`    | PlotStyleConfigurationObject |
+| `VerticalLabelStyle`   | PlotStyleConfigurationObject |
+| `VerticaTagStyle`      | PlotStyleConfigurationObject |
+
+The style properties under `PlotStyleConfigurationObject` is listed below:
+
+| Properties        | Type           |
+| ----------------- | -------------- |
+| `FillColor`       | string {set;}  |
+| `StrokeColor`     | string {set;}  |
+| `StrokeLineCap`   | LineCap {set;} |
+| `StrokeLineWidth` | Int {set;}     |
+
 ### `Reference Line`
 
 > `Reference line` only have support on **time-series** charts.
@@ -468,6 +495,78 @@ A Reference Line is essentially an arbitrary fixed line (mapped to the Y-axis), 
 ```csharp
 timeSeries.ReferenceLine.Add("label", value); // (string, double)
 ```
+
+### `Reference Zone`
+
+> `Reference zone` only have support on **time-series** charts.
+
+In FusionCharts.NET, a reference zone has two fixed values filled by a color. You can use `n` number of reference zones in a canvas. The syntax to add the max, min and label of the reference zone is listed below:
+
+| API        | Type    | Syntax                                       | Description                                                      |
+| ---------- | ------- | -------------------------------------------- | ---------------------------------------------------------------- |
+| `Value`    | Integer | vizObj.YAxes.ReferenceZone.Value = 20000;    | Sets the value of the reference zone                             |
+| `Min`      | Integer | vizObj.YAxes.ReferenceZone.Min = 10000;      | Sets the value up to which you want to create the reference zone |
+| `Max`      | Integer | vizObj.YAxes.ReferenceZone.Max = 150000;     | Sets the value from where you want to create the reference zone  |
+| `Label`    | String  | vizObj.YAxes.ReferenceZone.Label = "Sample}; | Sets the text of the label                                       |
+| `AddNew()` | Method  | vizObj.YAxes.ReferenceZone.AddNew();         | Is used to add multiple reference zone                           |
+
+### `Initial Interval`
+
+> `Initial interval` only have support on **time-series** charts.
+
+In FusionCharts.NET, initial interval is used to specify the time span for which you want the chart to be rendered.
+
+| API    | Type             | Syntax                                                           | Description                                 |
+| ------ | ---------------- | ---------------------------------------------------------------- | ------------------------------------------- |
+| `From` | Date/Time Format | vizObj.TimeAxis.InitialInterval.From = new DateTime(1996, 4, 2); | Sets the start time of the initial interval |
+| `To`   | Date/Time Format | vizObj.TimeAxis.InitialInterval.To = new DateTime(1994, 8, 4);   | Sets the end time of the initial interval   |
+
+### `Output Time Format`
+
+> `Output Time Format` only have support on **time-series** charts.
+
+The properties of the output time format is listed below:
+
+| API                 | Type             | Syntax                                                                           | Description                                 |
+| ------------------- | ---------------- | -------------------------------------------------------------------------------- | ------------------------------------------- |
+| `YearFormat`        | Date/Time Format | vizObj.TimeAxis.OutputTime.YearFormat = "%Y";                                    | Sets the output time format in years.       |
+| `MonthFormat`       | Date/Time Format | vizObj.TimeAxis.OutputTime.MonthFormat = "%B, %Y";                               | Sets the output time format in months.      |
+| `DayFormat`         | Date/Time Format | vizObj.TimeAxis.OutputTime.DayFormat = "%B %-d, %Y";                             | Sets the output time format in days         |
+| `HourFormat`        | Date/Time Format | vizObj.TimeAxis.OutputTime.HourFormat = "%b %-d, %Y, %-I %p";                    | Sets the output time format to hours        |
+| `MinuteFormat`      | Date/Time Format | vizObj.TimeAxis.OutputTime.MinuteFormat = "%b %-d, %Y, %-I:%-M %p";              | Sets the output time format to minutes      |
+| `SecondFormat`      | Date/Time Format | vizObj.TimeAxis.OutputTime.SecondFormat = "%b %-d, %Y, %-I:%-M:%-S %p";          | Sets the output time format to seconds      |
+| `MilliSecondFormat` | Date/Time Format | vizObj.TimeAxis.OutputTime.MilliSecondFormat = "%b %-d, %Y, %-I:%-M:%-S:%-L %p"; | Sets the output time format to milliseconds |
+
+### `Predictive Data`
+
+> `Predictive Data` only have support on **time-series** charts.
+
+The syntax to add predictive data to the chart is:
+
+```csharp
+vizObj.PredictiveData.PredictionDate = new DateTime(2018, 2, 1);
+```
+
+The properties to add style to the predictive data is listed below:
+
+| API         | Type                         | Syntax | Description |
+| ----------- | ---------------------------- | ------ | ----------- |
+| AnchorStyle | PlotStyleConfigurationObject |
+| AreaStyle   | PlotStyleConfigurationObject |
+| BearStyle   | PlotStyleConfigurationObject |
+| BullStyle   | PlotStyleConfigurationObject |
+| ColumnStyle | PlotStyleConfigurationObject |
+| LineStyle   | PlotStyleConfigurationObject |
+| PlotStyle   | PlotStyleConfigurationObject |
+
+The style properties under `PlotStyleConfigurationObject` is listed below:
+
+| Properties        | Type                |
+| ----------------- | ------------------- |
+| `FillColor`       | string {set;}       |
+| `StrokeColor`     | string {set;}       |
+| `StrokeLineCap`   | enum LineCap {set;} |
+| `StrokeLineWidth` | Int {set;}          |
 
 ### `URL`
 
