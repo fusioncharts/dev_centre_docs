@@ -20,7 +20,7 @@ heading: Version History
 
 <h4>Improvement</h4>
 
-- If the total number of records is less than the number of records to be extracted from the top, instead of throwing an exception, all records will be extracted from the top. 
+- If the total number of records is less than the number of records to be extracted from the top, instead of throwing an exception, all records will be extracted from the top.
 
 <h4>Deprecated</h4>
 
