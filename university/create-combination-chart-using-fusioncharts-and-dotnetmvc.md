@@ -1,7 +1,7 @@
 ---
 title: Create a Combination Chart using FusionCharts in .NET MVC
 description: In this tutorial, we’ll be creating a Combination Chart using Fusioncharts and .NET MVC
-heading: Create a Column Chart Using FusionCharts and ASP.NET Web Form in .NET MVC Framework
+heading: Create a Combination Chart Using FusionCharts and ASP.NET Web Form in .NET MVC Framework
 date: 2019/06/23
 featured: true
 author: rahul
