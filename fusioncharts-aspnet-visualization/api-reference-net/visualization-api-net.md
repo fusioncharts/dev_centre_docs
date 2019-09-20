@@ -17,7 +17,7 @@ Charts.ColumnChart column= new Charts.ColumnChart("Chart_Id");
 **Column 3D**
 
 ```csharp
-column.ThreeD = true; 
+column.ThreeD = true;
 ```
 
 **Overlapped**
@@ -43,7 +43,7 @@ Charts.BarChart bar= new Charts.BarChart("Chart_Id");
 **Bar 3D**
 
 ```csharp
-bar.ThreeD = true; 
+bar.ThreeD = true;
 ```
 
 **Overlapped**
@@ -86,9 +86,9 @@ Charts.AreaChart area = new Charts.AreaChart("Chart_Id");
 
 The available stacked charts are:
 
-* Bar
-* Column
-* Area
+- Bar
+- Column
+- Area
 
 The syntax to create a stacked chart is given below:
 
@@ -107,7 +107,7 @@ stack.StackType = Charts.StackedChart.StackChartType.AREA; //Stacked Area
 **Stacked 3D**
 
 ```csharp
-stack.ThreeD = true; 
+stack.ThreeD = true;
 ```
 
 **Scroll**
@@ -153,7 +153,7 @@ Charts.PieChart pie = new Charts.PieChart("Chart_Id");
 **Pie 3D**
 
 ```csharp
-pie.ThreeD = true; 
+pie.ThreeD = true;
 ```
 
 ### Doughnut
@@ -167,7 +167,7 @@ Charts.DoughnutChart doughnut = new Charts.DoughnutChart("Chart_Id");
 **Doughnut 3D**
 
 ```csharp
-doughnut.ThreeD = true; 
+doughnut.ThreeD = true;
 ```
 
 ### Funnel
@@ -210,12 +210,12 @@ visualizationObj.Render(); // visualizationObj is the chart object
 
 Applies predefined themes to the chart. FusionCharts.Net visualization ships with the following predefined themes:
 
-* `fusion`
-* `gammel`
-* `candy`
-* `zune`
-* `ocean`
-* `carbon`
+- `fusion`
+- `gammel`
+- `candy`
+- `zune`
+- `ocean`
+- `carbon`
 
 **Syntax**
 
@@ -300,11 +300,11 @@ These APIs let you configure the x-axis labels.
 | `MaxHeight`    | integer     | visualizationObj.Labels.MaxHeight = 500;                        | Sets maximum height of X-axis labels                                          |
 | `Ellipsis`     | boolean     | visualizationObj.Labels.Ellipsis = true;                        | Truncates X-axis label text when it’s too long, and adds ellipsis at the end  |
 | `Display`      | LabelFormat | visualizationObj.Labels.Display = LabelFormat.DisplayType.AUTO; | Sets display mode for label to `AUTO`, `WRAP`, `STAGGER`, `ROTATE`, or `NONE` |
-| `Rotate`       | boolean     | visualizationObj.Labels.Rotate  = true;                         | Rotates X-axis labels and displays them in a vertical direction               |
+| `Rotate`       | boolean     | visualizationObj.Labels.Rotate = true;                          | Rotates X-axis labels and displays them in a vertical direction               |
 | `Slant`        | boolean     | visualizationObj.Labels.Slant = true;                           | Displays X-axis labels in a slanted manner                                    |
-| `StaggerLines` | integer     | visualizationObj.Labels.StaggerLines  = 2;                      | Displays data labels across multiple levels                                   |
+| `StaggerLines` | integer     | visualizationObj.Labels.StaggerLines = 2;                       | Displays data labels across multiple levels                                   |
 | `Step`         | integer     | visualizationObj.Labels.Step = 1;                               | Displays every nth data label (where n is the step value), skipping the rest  |
-| `Binsize`      | integer     | visualizationObj.Labels.BinSize  = 1;                           | Sets the minimum width of a label in pixels (with a minimum value of 1)       |
+| `Binsize`      | integer     | visualizationObj.Labels.BinSize = 1;                            | Sets the minimum width of a label in pixels (with a minimum value of 1)       |
 
 ### `Values`
 
@@ -477,9 +477,88 @@ To configure the crossline, you can use the following APIs.
 | `VerticalLabelStyle`   | PlotStyleConfigurationObject |
 | `VerticaTagStyle`      | PlotStyleConfigurationObject |
 
-THe code to style the crossline using above properties is given below:
+The code to style the crossline using above properties is given below:
 
+#### Horizontal Line
 
+```csharp
+vizObj.CrossLine.Style.HorizonatlLineStyle.FillColor = "#aecd5f";
+vizObj.CrossLine.Style.HorizonatlLineStyle.StrokeColor = "#0000ff";
+vizObj.CrossLine.Style.HorizonatlLineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+vizObj.CrossLine.Style.HorizonatlLineStyle.StrokeWidth = 2;
+```
+
+#### Horizontal Label
+
+```csharp
+vizObj.CrossLine.Style.HorizontalLabelStyle.FillColor = "#aecd5f";
+vizObj.CrossLine.Style.HorizontalLabelStyle.StrokeColor = "#0000ff";
+vizObj.CrossLine.Style.HorizontalLabelStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+vizObj.CrossLine.Style.HorizontalLabelStyle.StrokeWidth = 2;
+```
+
+#### Horizontal Tag
+
+```csharp
+vizObj.CrossLine.Style.HorizontalTagStyle.FillColor = "#aecd5f";
+vizObj.CrossLine.Style.HorizontalTagStyle.StrokeColor = "#0000ff";
+vizObj.CrossLine.Style.HorizontalTagStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+vizObj.CrossLine.Style.HorizontalTagStyle.StrokeWidth = 2;
+```
+
+#### Line
+
+```csharp
+vizObj.CrossLine.Style.LineStyle.FillColor = "#aecd5f";
+vizObj.CrossLine.Style.LineStyle.StrokeColor = "#0000ff";
+vizObj.CrossLine.Style.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+vizObj.CrossLine.Style.LineStyle.StrokeWidth = 2;
+```
+
+#### Label
+
+```csharp
+vizObj.CrossLine.Style.LabelStyle.FillColor = "#aecd5f";
+vizObj.CrossLine.Style.LabelStyle.StrokeColor = "#0000ff";
+vizObj.CrossLine.Style.LabelStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+vizObj.CrossLine.Style.LabelStyle.StrokeWidth = 2;
+```
+
+#### Tag
+
+```csharp
+vizObj.CrossLine.Style.TagStyle.FillColor = "#aecd5f";
+vizObj.CrossLine.Style.TagStyle.StrokeColor = "#0000ff";
+vizObj.CrossLine.Style.TagStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+vizObj.CrossLine.Style.TagStyle.StrokeWidth = 2;
+```
+
+#### Vertical Line
+
+```csharp
+vizObj.CrossLine.Style.VerticalLineStyle.FillColor = "#aecd5f";
+vizObj.CrossLine.Style.VerticalLineStyle.StrokeColor = "#0000ff";
+vizObj.CrossLine.Style.VerticalLineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+vizObj.CrossLine.Style.VerticalLineStyle.StrokeWidth = 2;
+```
+
+#### Vertical Label
+
+```csharp
+vizObj.CrossLine.Style.VerticalLabelStyle.FillColor = "#aecd5f";
+vizObj.CrossLine.Style.VerticalLabelStyle.StrokeColor = "#0000ff";
+vizObj.CrossLine.Style.VerticalLabelStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+vizObj.CrossLine.Style.VerticalLabelStyle.StrokeWidth = 2;
+```
+
+#### Vertical Tag
+
+```csharp
+vizObj.CrossLine.Style.VerticalTagStyle.FillColor = "#aecd5f";
+vizObj.CrossLine.Style.VerticalTagStyle.StrokeColor = "#0000ff";
+vizObj.CrossLine.Style.VerticalTagStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.ROUND;
+vizObj.CrossLine.Style.VerticalTagStyle.StrokeWidth = 2;
+```
 
 The style properties under `PlotStyleConfigurationObject` is listed below:
 
@@ -553,8 +632,8 @@ vizObj.PredictiveData.PredictionDate = new DateTime(2018, 2, 1);
 
 The properties to add style to the predictive data is listed below:
 
-| API         | Type                         | Syntax | Description |
-| ----------- | ---------------------------- | ------ | ----------- |
+| API         | Type                         |
+| ----------- | ---------------------------- |
 | AnchorStyle | PlotStyleConfigurationObject |
 | AreaStyle   | PlotStyleConfigurationObject |
 | BearStyle   | PlotStyleConfigurationObject |
@@ -562,6 +641,71 @@ The properties to add style to the predictive data is listed below:
 | ColumnStyle | PlotStyleConfigurationObject |
 | LineStyle   | PlotStyleConfigurationObject |
 | PlotStyle   | PlotStyleConfigurationObject |
+
+The code to style the crossline using above properties is given below:
+
+#### Anchor Style
+
+```csharp
+vizObj.PredictiveData.AnchorStyle.FillColor = "#aecdef";
+vizObj.PredictiveData.AnchorStyle.StrokeColor = "#aecdef";
+vizObj.PredictiveData.AnchorStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.SQUARE;
+vizObj.PredictiveData.AnchorStyle.StrokeWidth = 2;
+```
+
+#### Area Style
+
+```csharp
+vizObj.PredictiveData.AreaStyle.FillColor = "#aecdef";
+vizObj.PredictiveData.AreaStyle.StrokeColor = "#aecdef";
+vizObj.PredictiveData.AreaStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.SQUARE;
+vizObj.PredictiveData.AreaStyle.StrokeWidth = 2;
+```
+
+#### Bear Style
+
+```csharp
+vizObj.PredictiveData.BearStyle.FillColor = "#aecdef";
+vizObj.PredictiveData.BearStyle.StrokeColor = "#aecdef";
+vizObj.PredictiveData.BearStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.SQUARE;
+vizObj.PredictiveData.BearStyle.StrokeWidth = 2;
+```
+
+#### Bull Style
+
+```csharp
+vizObj.PredictiveData.BullStyle.FillColor = "#aecdef";
+vizObj.PredictiveData.BullStyle.StrokeColor = "#aecdef";
+vizObj.PredictiveData.BullStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.SQUARE;
+vizObj.PredictiveData.BullStyle.StrokeWidth = 2;
+```
+
+#### Column Style
+
+```csharp
+vizObj.PredictiveData.ColumnStyle.FillColor = "#aecdef";
+vizObj.PredictiveData.ColumnStyle.StrokeColor = "#aecdef";
+vizObj.PredictiveData.ColumnStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.SQUARE;
+vizObj.PredictiveData.ColumnStyle.StrokeWidth = 2;
+```
+
+#### Line Style
+
+```csharp
+vizObj.PredictiveData.LineStyle.FillColor = "#aecdef";
+vizObj.PredictiveData.LineStyle.StrokeColor = "#aecdef";
+vizObj.PredictiveData.LineStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.SQUARE;
+vizObj.PredictiveData.LineStyle.StrokeWidth = 2;
+```
+
+#### Plot Style
+
+```csharp
+vizObj.PredictiveData.PlotStyle.FillColor = "#aecdef";
+vizObj.PredictiveData.PlotStyle.StrokeColor = "#aecdef";
+vizObj.PredictiveData.PlotStyle.StrokeLineCap = PlotStyleConfigurationObject.LineCap.SQUARE;
+vizObj.PredictiveData.PlotStyle.StrokeWidth = 2;
+```
 
 The style properties under `PlotStyleConfigurationObject` is listed below:
 
@@ -661,8 +805,8 @@ To configure the primary y-axis name (title), you can use the following APIs.
 | `Bold`            | boolean        | visualizationObj.PrimaryYAxis.Bold = true;             | Sets whether the primary Y-axis title is displayed in bold   |
 | `Italic`          | boolean        | visualizationObj.PrimaryYAxis.Italic = false;          | Sets whether the primary Y-axis title is displayed in Italic |
 | `BorderColor`     | Hex Color Code | visualizationObj.PrimaryYAxis.BorderColor = "#ffffff"; | Sets the border color of the primary Y-axis title            |
-| `BGColor`         | Hex Color Code | visualizationObj.PrimaryYAxis.BGColor = "#000000";     | Sets the background color of the primary  Y-axis title       |
-| `BorderThickness` | integer        | visualizationObj.PrimaryYAxis.BorderThickness = 2;     | Sets the border thickness of the primary  Y-axis title       |
+| `BGColor`         | Hex Color Code | visualizationObj.PrimaryYAxis.BGColor = "#000000";     | Sets the background color of the primary Y-axis title        |
+| `BorderThickness` | integer        | visualizationObj.PrimaryYAxis.BorderThickness = 2;     | Sets the border thickness of the primary Y-axis title        |
 
 ### `Secondary YAxis`
 
@@ -679,8 +823,8 @@ To configure the secondary y-axis name (title), you can use the following APIs.
 | `Bold`            | boolean        | visualizationObj.SecondaryYAxis.Bold = true;             | Sets whether the secondary Y-axis title is displayed in bold   |
 | `Italic`          | boolean        | visualizationObj.SecondaryYAxis.Italic = false;          | Sets whether the secondary Y-axis title is displayed in Italic |
 | `BorderColor`     | Hex Color Code | visualizationObj.SecondaryYAxis.BorderColor = "#ffffff"; | Sets the border color of the secondary Y-axis title            |
-| `BGColor`         | Hex Color Code | visualizationObj.SecondaryYAxis.BGColor = "#000000";     | Sets the background color of the secondary  Y-axis title       |
-| `BorderThickness` | integer        | visualizationObj.SecondaryYAxis.BorderThickness = 2;     | Sets the border thickness of the secondary  Y-axis title       |
+| `BGColor`         | Hex Color Code | visualizationObj.SecondaryYAxis.BGColor = "#000000";     | Sets the background color of the secondary Y-axis title        |
+| `BorderThickness` | integer        | visualizationObj.SecondaryYAxis.BorderThickness = 2;     | Sets the border thickness of the secondary Y-axis title        |
 
 To configure the y-axis for the **time-series** chart, you can use the following APIs.
 
@@ -757,25 +901,25 @@ To configure the y-axis for the **time-series** chart, you can use the following
 
 Data is an object used to define the values to be plotted for individual data series. The instances in **Data** object is listed below:
 
-* **source:** FusionCharts Data Model
+- **source:** FusionCharts Data Model
 
 ```csharp
 visualizationObj.Data.Source = dataSource; //dataSource is an instance of the DataModel
 ```
 
-* **CategoryField**(string field_name)
+- **CategoryField**(string field_name)
 
 ```csharp
 visualizationObj.Data.CategoryField("country");
 ```
 
-* **SeriesFields**(params string[ ] fields_name)
+- **SeriesFields**(params string[ ] fields_name)
 
 ```csharp
 visualizationObj.Data.SeriesFields("Sales,Total_Purchase");
 ```
 
-* **Categories**: Category Object
+- **Categories**: Category Object
 
 <table>
 	<tr>
@@ -810,7 +954,7 @@ visualizationObj.Data.SeriesFields("Sales,Total_Purchase");
 	</tr>
 </table>
 
-* **Series:** Series Object
+- **Series:** Series Object
 
 Series is an object used to customize the series of data plots. The instances of the DataModel in **Series** object is listed below:
 
@@ -971,13 +1115,13 @@ timeSeries.PlotConfig.Generic.AnchorStyle.StrokeWidth = 2;
 
 In the above code:
 
-* `timeSeries`, `PlotConfig`, `Generic`, and `AnchorStyle` are objects.
+- `timeSeries`, `PlotConfig`, `Generic`, and `AnchorStyle` are objects.
 
-* `FillColor` is a properties of the `AnchorStyle` object, which accepts the hex code or the name of a color as a string.
+- `FillColor` is a properties of the `AnchorStyle` object, which accepts the hex code or the name of a color as a string.
 
-* `StrokeLineCap` is a properties of the `AnchorStyle` object. It accepts the shape of the anchor. Here, its value is set as `ROUND` via the `PlotStyleConfigurationObject.LineCap` enum. 
+- `StrokeLineCap` is a properties of the `AnchorStyle` object. It accepts the shape of the anchor. Here, its value is set as `ROUND` via the `PlotStyleConfigurationObject.LineCap` enum.
 
-* `StrokeWidth` is a property of `AnchorStyle`, and accepts the thickness of the anchor border as an integer. Here, its value is set as `2`.
+- `StrokeWidth` is a property of `AnchorStyle`, and accepts the thickness of the anchor border as an integer. Here, its value is set as `2`.
 
 **AreaStyle object**
 
