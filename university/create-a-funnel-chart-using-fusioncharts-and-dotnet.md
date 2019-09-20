@@ -7,8 +7,6 @@ featured: true
 author: rahul
 ---
 
-## Overview
-
 FusionCharts.NET is a charting library for ASP.NET WebForms and MVC. It works with all .NET Framework editions, such as .NET Core and .NET Standard.
 
 FusionCharts.NET uses FusionCharts (HTML5) JavaScript library to render interactive charts. The simple methods and properties provided in the suite help you render charts in C#.NET or VB.NET, without writing messy JavaScript or JSON code.
