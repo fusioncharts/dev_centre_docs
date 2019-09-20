@@ -218,11 +218,13 @@ Click [here](https://dotnetfiddle.net/Tkf2vq) to edit this chart.
 
 ## Combination Chart with Dual Y-Axis
 
-If you set the **DualY** property to **true** (using the code shown below), the Visualization Engine will render a chart with a secondary Y-axis. Click [here](https://dotnetfiddle.net/fjhtVY) to edit a live Dual Y-axis chart.
+If you set the **DualY** property to **true** (using the code shown below), the Visualization Engine will render a chart with a secondary Y-axis.
 
 ```csharp
 combiChart.DualY = true;
 ```
+
+Click [here](https://dotnetfiddle.net/fjhtVY) to edit a live Dual Y-axis chart.
 
 ## Render 3D Combination Chart
 
