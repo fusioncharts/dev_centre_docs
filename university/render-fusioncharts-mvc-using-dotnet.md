@@ -13,7 +13,7 @@ FusionCharts.NET is an extensive charting library for ASP.NET WebForms and MVC, 
 
 You can see the basic architecture of FusionCharts.NET in the diagram given below:
 
-<img src="/images/render-fusioncharts-mvc-using-dotnet-image-1.png" alt="Architecture of FusionCharts.NET" height="550" width="800">
+<img src="{% site.BASE_URL %}/images/render-fusioncharts-mvc-using-dotnet-image-1.png" alt="Architecture of FusionCharts.NET" height="550" width="800">
 
 FusionCharts.NET is structured into two major modules - the Data Engine and the Visualization Engine. The former processes the data, while the latter renders the chart on the browser.
 
@@ -53,7 +53,7 @@ Create a web application in visual studio. Open Visual Studio and follow the ste
 
 - Click on **Create**.
 
-<img src="/images/render-fusioncharts-mvc-using-dotnet-image-2.png" alt="Web Application in visual studio" height="550" width="800">
+<img src="{% site.BASE_URL %}/images/render-fusioncharts-mvc-using-dotnet-image-2.png" alt="Web Application in visual studio" height="550" width="800">
 
 **Step 2**
 
@@ -115,7 +115,7 @@ It's time to add reference to FusionCharts.NET in this application. To do so, ri
 
 - Click **Ok**.
 
-<img src="/images/render-fusioncharts-mvc-using-dotnet-image-5.png" alt="Add reference to FusionCharts.NET" height="550" width="800">
+<img src="{% site.BASE_URL %}/images/render-fusioncharts-mvc-using-dotnet-image-5.png" alt="Add reference to FusionCharts.NET" height="550" width="800">
 
 **Step 6**
 

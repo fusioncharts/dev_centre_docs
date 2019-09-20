@@ -2548,9 +2548,9 @@
       ]
    },
    {
-      "title": "University",
-      "icon": "fc_net",
-      "description": "basic university",
+      "title": "FusionCharts University",
+      "icon": "fc_university",
+      "description": "Learn how to use FusionCharts products for your next dashboard",
       "longDescription": "",
       "visibility": false,
       "children": [
