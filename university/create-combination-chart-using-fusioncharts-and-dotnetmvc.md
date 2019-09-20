@@ -15,7 +15,7 @@ FusionCharts.NET is a popular charting library for ASP.NET WebForms, Razor Page 
 
 You can understand the basic architecture of FusionCharts.NET at a glance from the diagram given below:
 
-![](Create Combination Charts Using FusionCharts in .NET MVC \_images/image_0.png)
+<img src="/images/create-combination-chart-using-fusioncharts-and-dotnetmvc-image-1.png" alt="Architecture of FusionCharts.NET" height="550" width="800">
 
 As you can see, FusionCharts.NET is structured into two major modules - the Data Engine and the Visualization Engine. The first one deals with the data, while the second takes care of the rendering process and displays the chart on the browser.
 
@@ -41,11 +41,11 @@ Combination charts help you plot multiple data sets on the same chart. You also 
 
 Before you can build charts with FusionCharts.NET, you need to configure your system to have these loaded:
 
--  Visual studio IDE and .NET framework v3.5 (or later)
+- Visual studio IDE and .NET framework v3.5 (or later)
 
--  FusionCharts Suite XT, which you can download from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?version=2&utm_expid=.oTKMCb4yRvC-v0Bh2zt4KA.1&utm_referrer=https%3A%2F%2Fwww.fusioncharts.com%2Fdownload%2Ffusioncharts-suite-xt%3Fversion%3D2).
+- FusionCharts Suite XT, which you can download from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?version=2&utm_expid=.oTKMCb4yRvC-v0Bh2zt4KA.1&utm_referrer=https%3A%2F%2Fwww.fusioncharts.com%2Fdownload%2Ffusioncharts-suite-xt%3Fversion%3D2).
 
--  FusionCharts.NET assembly, which you can get [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net).
+- FusionCharts.NET assembly, which you can get [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net).
 
 FusionCharts.NET supports many different types of charts. You can find them all listed [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to render a combination chart in .NET.
 
@@ -53,207 +53,186 @@ FusionCharts.NET supports many different types of charts. You can find them all 
 
 Create a web application in visual studio. Open Visual Studio and follow the steps mentioned below:
 
--  Click on **Create a New Project** → **ASP.NET Web Application (.NET Framework)**
+- Click on **Create a New Project** → **ASP.NET Web Application (.NET Framework)**
 
--  Type the project name.
+- Type the project name.
 
--  Click on **Create**.
+- Click on **Create**.
 
--  Click on **MVC** (as shown in the screenshot below).
+- Click on **MVC** (as shown in the screenshot below).
 
--  Click on **Create**.
+- Click on **Create**.
 
-![](Create Combination Charts Using FusionCharts in .NET MVC \_images/image_1.png)
+<img src="/images/create-combination-chart-using-fusioncharts-and-dotnetmvc-image-2.png" alt="Web Application in Visual Studio" height="550" width="800">
 
 ### Step 2
 
 It's time to add Fusioncharts JavaScript files in this project. Right click on **Scripts** folder and follow the steps mentioned below:
 
--  Click on **Add Existing Item**.
+- Click on **Add Existing Item**.
 
--  Browse to FusionCharts JavaScript files and add them.
+- Browse to FusionCharts JavaScript files and add them.
 
 When you are done, the Solution Explorer will look like the following:
 
-![](Create Combination Charts Using FusionCharts in .NET MVC \_images/image_2.png)
+![Fusioncharts JS files](/images/create-combination-chart-using-fusioncharts-and-dotnetmvc-image-3.png)
 
 ### Step 3
 
 Now, add a new **View** in this project. The chart will be rendered inside this view. To do so, right click on the **Views** folder and follow the steps mentioned below:
 
--  Click on **Add**
+- Click on **Add**
 
--  Click on **View…**
+- Click on **View…**
 
--  Click on **MVC 5 View**
+- Click on **MVC 5 View**
 
--  Click on **Add**
+- Click on **Add**
 
--  Type the name of the View as **CombiChart** (as shown in the screenshot below)
+- Type the name of the View as **CombiChart** (as shown in the screenshot below)
 
--  Click on **Add**.
+- Click on **Add**.
 
-![](Create Combination Charts Using FusionCharts in .NET MVC \_images/image_3.png)
+![View in project](/images/create-combination-chart-using-fusioncharts-and-dotnetmvc-image-3.png)
 
 ### Step 4
 
 Now, add reference of FusionCharts JavaScript files and necessary tags in this view. Navigate to the **CombiChart.cshtml** page and add the following lines:
 
-_@{ Layout = null; }_
+```html
+@{ Layout = null; }
 
-_<html>_
+<html>
 
-_<head>_
-
--  <script src="@Url.Content("/Scripts/FusionCharts/FusionCharts.js")"></script>*
-
--  <script src="@Url.Content("/Scripts/FusionCharts/themes/fusioncharts.theme.fusion.js")"></script>*
-
-_</head>_
-
-_<body>_
-
--  <div>*
-
--          <div id="chartContainer">@Html.Raw(ViewData["Chart"])</div>*
-
--  </div>*
-
-_</body>_
-
-_</html>_
+<head>
+    <script src="@Url.Content("/Scripts/FusionCharts/FusionCharts.js")"></script>
+    <script src="@Url.Content("/Scripts/FusionCharts/themes/fusioncharts.theme.fusion.js")"></script>
+</head>
+<body>
+    <div>
+        <div id="chartContainer">@Html.Raw(ViewData["Chart"])</div>
+    </div>
+</body>
+</html>
+```
 
 ### Step 5
 
 It's time to add reference of FusionCharts.NET in this application. To do so, right click on **References** and follow the steps mentioned below:
 
--  Click on **Add Reference**
+- Click on **Add Reference**
 
--  Browse to and add both **FusionCharts.Visualization.dll** and **FusionCharts.DataEngine.dll** (as shown in the screenshot below)
+- Browse to and add both **FusionCharts.Visualization.dll** and **FusionCharts.DataEngine.dll** (as shown in the screenshot below)
 
--  Click **Ok**.
+- Click **Ok**.
 
-![](Create Combination Charts Using FusionCharts in .NET MVC \_images/image_4.png)
+<img src="/images/create-combination-chart-using-fusioncharts-and-dotnetmvc-image-5.png" alt="Add Reference to FusionCharts.NET application" height="550" width="800">
 
 ### Step 6
 
 Now you need to use **FusionCharts.DataEngine** and **FusionCharts.Visualization** reference in controller. To do that, open the **Controller** folder and add the following lines to the **HomeController.cs** file:
 
-_using FusionCharts.DataEngine;_
-
-_using FusionCharts.Visualization;_
+```csharp
+using FusionCharts.DataEngine;
+using FusionCharts.Visualization;
+```
 
 ### Step 7
 
-Open **HomeController.cs** and add a new action, **CombiChart()**. This action will return the chart rendering string to **CombiChart.cshtml**. In this example, you are fetching data from a JSON file, stored in the FusionCharts GitHub repository. Apart from this, you can also fetch data from SQL Server, or from a CSV file
-
-.
+Open **HomeController.cs** and add a new action, **CombiChart()**. This action will return the chart rendering string to **CombiChart.cshtml**. In this example, you are fetching data from a JSON file, stored in the FusionCharts GitHub repository. Apart from this, you can also fetch data from SQL Server, or from a CSV file.
 
 Add the following code in the **CombiChart** action:
 
-_public ActionResult CombiChart()_
+```csharp
+public ActionResult CombiChart() {
 
-_{_
+    // Initialize DataModel object
+    DataModel model = new DataModel();
 
-**_ // Initialize DataModel object_**
+    // Create object of JsonFileSource. Provide the file path as a parameter for the constructor
+    JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi2d.json");
 
--  DataModel model = new DataModel();\*
+    // Add json source in DataSources store of model
+    model.DataSources.Add(jsonFileSource);
 
-**_ // Create object of JsonFileSource. Provide the file path as a parameter for the constructor_**
+    // Initialize combination chart object
+    Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombi2d");
 
--  JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi2d.json");\*
+    // Set model as data source
+    combiChart.Data.Source = model;
 
-**_ // Add json source in DataSources store of model_**
+    // Provide field name, which should be rendered as line column
+    combiChart.Data.ColumnPlots("Actual Revenue");
 
--  model.DataSources.Add(jsonFileSource);\*
+    // Provide field name, which should be rendered as line plot
+    combiChart.Data.LinePlots("Projected Revenue");
 
-**_ // Initialize combination chart object_**
+    // Provide field name, which should be rendered as area plot
+    combiChart.Data.AreaPlots("Profit");
 
--  Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombi2d");\*
+    // Set XAxis caption
+    combiChart.XAxis.Text = "Month";
 
-**_ // Set model as data source_**
+    // Set YAxis caption
+    combiChart.PrimaryYAxis.Text = "Amount (in USD)";
 
--  combiChart.Data.Source = model;\*
+    // Set chart caption
+    combiChart.Caption.Text = "Harry's Supermart";
 
-**_ // Provide field name, which should be rendered as line column_**
+    // Set chart sub caption
+    combiChart.SubCaption.Text = "Sales analysis of last year";
 
--  combiChart.Data.ColumnPlots("Actual Revenue");\*
+    // Set the width and the height of the chart
+    combiChart.Width.Pixel(600);
+    combiChart.Height.Pixel(500);
 
-**_ // Provide field name, which should be rendered as line plot_**
+    // Set the theme
+    combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
 
--  combiChart.Data.LinePlots("Projected Revenue");\*
+    // Set chart rendering string in ViewData as a key-value pair
+    ViewData["Chart"] = combiChart.Render();
 
-**_ // Provide field name, which should be rendered as area plot_**
+    // Return the view
+    return View();
 
--  combiChart.Data.AreaPlots("Profit");\*
-
-**_ // Set XAxis caption_**
-
--  combiChart.XAxis.Text = "Month";\*
-
-**_ // Set YAxis caption_**
-
--  combiChart.PrimaryYAxis.Text = "Amount (in USD)";\*
-
-**_ // Set chart caption_**
-
--  combiChart.Caption.Text = "Harry's Supermart";\*
-
-**_ // Set chart sub caption_**
-
--  combiChart.SubCaption.Text = "Sales analysis of last year";\*
-
-**_ // Set the width and the height of the chart_**
-
--  combiChart.Width.Pixel(600);\*
-
--  combiChart.Height.Pixel(500);\*
-
-**_ // Set the theme_**
-
--  combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;\*
-
-**_ // Set chart rendering string in ViewData as a key-value pair_**
-
--  ViewData["Chart"] = combiChart.Render();\*
-
-**_ // Return the view_**
-
--  return View();\*
-
-_}_
+}
+```
 
 ### Rendered Chart
 
 The output will look as shown below:
 
-![](Create Combination Charts Using FusionCharts in .NET MVC \_images/image_5.png)
+![Output](/images/create-combination-chart-using-fusioncharts-and-dotnetmvc-image-6.png)
 
 Click [here](https://dotnetfiddle.net/Tkf2vq) to edit this chart.
 
 ## List of Plot Types You Can Create Using FusionCharts .NET
 
--  Column
+- Column
 
--  Area
+- Area
 
--  Line
+- Line
 
--  Spline
+- Spline
 
--  SplineArea
+- SplineArea
 
 ## Combination Chart with Dual Y-Axis
 
 If you set the **DualY** property to **true** (using the code shown below), the Visualization Engine will render a chart with a secondary Y-axis. Click [here](https://dotnetfiddle.net/fjhtVY) to edit a live Dual Y-axis chart.
 
-_combiChart.DualY = true;_
+```csharp
+combiChart.DualY = true;
+```
 
 ## Render 3D Combination Chart
 
 If you set the **ThreeD** property to **true** (using the code shown below), the Visualization Engine will render a 3D combination chart.
 
-_combiChart.ThreeD = true;_
+```csharp
+combiChart.ThreeD = true;
+```
 
 Click [here](https://dotnetfiddle.net/cr0sh4) to edit a ThreeD combination chart.
 
@@ -261,6 +240,8 @@ Click [here](https://dotnetfiddle.net/cr0sh4) to edit a ThreeD combination chart
 
 If you set the **Scrollable** property to **true** (using the code shown below), the Visualization Engine will render a Scrollable Combination chart
 
-_combiChart.Scrollable = true;_
+```csharp
+combiChart.Scrollable = true;
+```
 
 Click [here](https://dotnetfiddle.net/y6MTkR) to edit a scrollable combination chart.

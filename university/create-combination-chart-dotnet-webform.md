@@ -202,7 +202,7 @@ public ActionResult CombiChart() {
 
 The output chart will look as shown below:
 
-<img src="/images/create-combination-chart-dotnet-webform-image-6.png" alt="Chart Rendered" height="550" width="800">
+![Output](/images/create-combination-chart-dotnet-webform-image-6.png)
 
 Click [here](https://dotnetfiddle.net/Tkf2vq) to edit this chart.
 
