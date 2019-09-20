@@ -92,7 +92,7 @@ There are multiple ways to install them, for more details you can check out this
 
 For any map visualization, it is important to provide the correct value for the `id` keys. The table below displays the region with their corresponding entity name.
 
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1551855177764_Screenshot+2019-03-06+12.22.33.png" alt="Tabular column with region and entity name" height="80" width="100">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1551855177764_Screenshot+2019-03-06+12.22.33.png" alt="Tabular column with region and entity name" height="200" width="300">
 
 Take for example, to plot a world map, the `type` attribute is set to **world**.
 
@@ -153,7 +153,7 @@ The Google sheet for KPI data :
 
 The Google sheet for the Map Data(year 2016):
 
-<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1551856811645_Screenshot+2019-03-06+12.49.10.png" alt="Google Sheet Map Data" height="550" width="800">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_7427EBC7185B7DD83869C61DCCB51C03D7340BBCACABE89DCD4C59B34871A8BB_1551856811645_Screenshot+2019-03-06+12.49.10.png" alt="Google Sheet Map Data" height="400" width="600">
 
 
 
@@ -179,7 +179,7 @@ Below is the code to fetch the response from the JSON data:
     }
 ```
 
-# Building the Sales dashboard
+## Building the Sales dashboard
 
 We’ll be using Bootstrap 4 to build the dashboard structure. With new components, responsive structures and styles, it is a consistent framework that supports all browsers.
 
@@ -371,6 +371,7 @@ Now that our layout is ready, we will define functionality for elements and feed
 The above code snippet will create one KPI for `Revenue Target`. Likewise, we will create cards for all the 4 KPIs for the Sales Dashboard.
 
 **Creating the Charts Section:** 
+
 We will use `col` and `card` components of Bootstrap to create the Chart Layout. `containerBackgroundOpacity` is an attribute which is used to manipulate  the background opacity of the charts.
 
 ```html
