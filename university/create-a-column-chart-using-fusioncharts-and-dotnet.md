@@ -23,11 +23,11 @@ As you can see, FusionCharts.NET is structured into two major modules - the Data
 
 The Data Engine of FusionCharts.NET lets you store data and perform various operations on it. That way, you get plenty of options to optimize and transform the data to suit your requirements, before you send it to the Visualization Engine. The Data Engine consists of the following:
 
-    * **Data Sources**, which receives the raw data and creates an object to provide the data to the DataModel.
+  * **Data Sources**, which receives the raw data and creates an object to provide the data to the DataModel.
 
-    * **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine.
+  * **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine.
 
-    * **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
+  * **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
 
 ### Visualization Engine
 
@@ -103,9 +103,8 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 Add reference of FusionCharts JS and theme files file in the .aspx page of your solution. Navigate to the **ColumnChart.aspx** page. Within the code, add the following lines inside <script> tags.
 
-```
+```html
 <script type="text/javascript" src="Scripts/fusioncharts.js"></script>
-
 <script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>
 ```
 
@@ -139,13 +138,16 @@ Add reference of FusionCharts.NET in this application. To do so:
 
 ![](Create Column Charts Using FusionCharts in ASP .NET_images/image_4.png)
 
+
 **Step 7**
 
 Use references to both **FusionCharts.DataEngine** and **FusionCharts.Visualization**. Navigate to the **ColumnChart.aspx.cs** page and add the following lines at the top of the code:
 
-_using FusionCharts.DataEngine;_
+```
+using FusionCharts.DataEngine;
 
-_using FusionCharts.Visualization;_
+using FusionCharts.Visualization;
+```
 
 **Step 8**
 
@@ -253,15 +255,18 @@ Click [here](https://dotnetfiddle.net/nxmoKm) to edit a column chart with multip
 
 If you set the **ThreeD** property to **true** (using the code shown below), the Visualization Engine will render a 3D column chart.
 
+
 ```js
 column.ThreeD = true;
 ```
 
 Click [here](https://dotnetfiddle.net/kSc5WZ) to edit a ThreeD column chart.
 
+
 ### Render Overlapped Column Chart
 
 If the DataModel has two or more value columns and you set the **Overlapped** property to **true**, then the Visualization Engine will render an overlapped column chart.
+
 
 ```js
 column.Overlapped = true;
@@ -269,9 +274,11 @@ column.Overlapped = true;
 
 Click [here](https://dotnetfiddle.net/1HYSai) to edit an overlapped column chart.
 
+
 ### Render Scrollable Column Chart
 
 If you set the **Scrollable** property to **true** (using the code shown below), the Visualization Engine will render a Scrollable Column chart.
+
 
 ```js
 column.Scrollable = true;

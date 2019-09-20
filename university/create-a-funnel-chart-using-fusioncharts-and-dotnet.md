@@ -97,11 +97,13 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 Add a reference to FusionCharts JS and theme files file in the .aspx page of your solution. Navigate to the **FunnelChart.aspx** page. Within the code, add the following lines inside <script> tags.
 
-*<script type="text/javascript" src="Scripts/fusioncharts.js"></script>*
+```html
+<script type="text/javascript" src="Scripts/fusioncharts.js"></script>
 
-*<script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>*
+<script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>
 
-*<script src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"></script> *  
+<script src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"></script>
+``` 
 
 **Step 5**
 
