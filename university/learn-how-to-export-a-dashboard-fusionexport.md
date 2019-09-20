@@ -89,7 +89,6 @@ Before we go ahead and export a single chart, we need to install FusionExport se
     $ ./fusionexport
 ```
 
-
 This will start the FusionExport server on your [localhost:1337.](http://localhost:1337) Now that we have FusionExport export server running, let’s install the PHP SDK client for FusionExport using composer:
 
 ```php
@@ -158,32 +157,32 @@ Let’s go ahead and create the `single.html` in `templates` folder in the same 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>Wealth Management</title>
-      <link
-         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"
-         rel="stylesheet"
-         type="text/css"
-      />
-      <style>
-         -- Include the stylesheet here --
-      </style>
-   </head>
-   <body>
-      <div class="dashboard-container">
-         -- Insert Code here to add header --
-         <div class="dashboard-row">
-            <div class="chart">
-               <div class="chart-block">
-                  <div class="sec-chart" id="chart-container-top-adv"></div>
-               </div>
-            </div>
-         </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Wealth Management</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      -- Include the stylesheet here --
+    </style>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      -- Insert Code here to add header --
+      <div class="dashboard-row">
+        <div class="chart">
+          <div class="chart-block">
+            <div class="sec-chart" id="chart-container-top-adv"></div>
+          </div>
+        </div>
       </div>
-   </body>
+    </div>
+  </body>
 </html>
 ```
 
@@ -191,11 +190,11 @@ As you can see above, we have added few more resources like Google Fonts which a
 
 ```html
 <div class="dashboard-row">
-   <div class="chart">
-      <div class="chart-block">
-         <div class="sec-chart" id="chart-container-top-adv"></div>
-      </div>
-   </div>
+  <div class="chart">
+    <div class="chart-block">
+      <div class="sec-chart" id="chart-container-top-adv"></div>
+    </div>
+  </div>
 </div>
 ```
 
@@ -295,9 +294,13 @@ The stylesheet contains all the styles and CSS techniques for our dashboard. Thi
 Now that our backend is setup, let’s go ahead and add an Export Button in the file `ExportHandle.vue` file, which on-click exports the dashboard into PDF format. As explained earlier, this should send a request to `/export/dashboard-download`. The request should include chart configurations and other details like header text.
 
 ```html
-<button type="button" class="btn export-handle-button" @click="exportClickListener">
-   <i class="icn icn-download" />
-   <span>Export Dashboard</span>
+<button
+  type="button"
+  class="btn export-handle-button"
+  @click="exportClickListener"
+>
+  <i class="icn icn-download" />
+  <span>Export Dashboard</span>
 </button>
 ```
 
@@ -305,7 +308,7 @@ For those who don’t know Vue.js, in the above code we are calling `exportClick
 
 The `ExportHandle.vue` houses the code for sending requests to the baseUrl, retrieving the header text and chart configs, and returning the response as a pdf file.
 
-````js
+```js
      methods:{
           async exportClickListener(evt) {
                 const button = evt.currentTarget;
@@ -331,52 +334,48 @@ The `ExportHandle.vue` houses the code for sending requests to the baseUrl, retr
                 download(res.data, 'Wealth Dashboard.pdf', 'application/pdf');
             },
     }
-    ```
+```
 
-We have declared `actions.js`  within the store folder where all the chart configurations are pre-defined. The `RenderChart.vue` caters to all the needs for `chartConfigs`. To understand and learn about the chart configurations better, take a look at code snippet on Vue [here](https://github.com/fusioncharts/fusionexport-dashboard-sample-php/blob/master/resources/js/components/RenderChart.vue). Once everything is configured properly, clicking on the Export button will send a PDF in return. The output dashboard will look like the snapshot below:
+We have declared `actions.js` within the store folder where all the chart configurations are pre-defined. The `RenderChart.vue` caters to all the needs for `chartConfigs`. To understand and learn about the chart configurations better, take a look at code snippet on Vue [here](https://github.com/fusioncharts/fusionexport-dashboard-sample-php/blob/master/resources/js/components/RenderChart.vue). Once everything is configured properly, clicking on the Export button will send a PDF in return. The output dashboard will look like the snapshot below:
 
 ![](https://paper-attachments.dropbox.com/s_895EF4DFD46BA2E9B3E0A252BD9983111FC6A393D3A167306EA208CBDDB0B816_1557909325887_Screenshot+2019-05-15+14.04.26.png)
-
-
 
 ## Exporting multiple charts
 
 Now, let’s move further and export multiple charts from the dashboard. I have built the code snippet for the modified template as given below:
 
 ```html
-    ...
-    <body>
-        <div class="dashboard-container">
-          -- Insert Code here to add header --
-              <div class="dashboard-row">
-                 <div class="chart">
-                </div>
+<body>
+  <div class="dashboard-container">
+    -- Insert Code here to add header --
+    <div class="dashboard-row">
+      <div class="chart"></div>
 
-                <div class="chart">
-                    <div class="chart-block">
-                        <div class="sec-chart" id="chart-container-top-adv"></div>
-                    </div>
-                </div>
-
-                <div class="chart">
-                    <div class="chart-block">
-                        <div class="sec-chart" id="chart-container-reg"></div>
-                    </div>
-                </div>
-                <div class="chart">
-                    <div class="chart-block">
-                        <div class="sec-chart" id="chart-container-reg-monthly"></div>
-                    </div>
-                </div>
-                 <div class="chart">
-                    <div class="chart-block">
-                        <div class="sec-chart" id="chart-container-product"></div>
-                    </div>
-                </div>
-            </div>
+      <div class="chart">
+        <div class="chart-block">
+          <div class="sec-chart" id="chart-container-top-adv"></div>
         </div>
-    </body>
-````
+      </div>
+
+      <div class="chart">
+        <div class="chart-block">
+          <div class="sec-chart" id="chart-container-reg"></div>
+        </div>
+      </div>
+      <div class="chart">
+        <div class="chart-block">
+          <div class="sec-chart" id="chart-container-reg-monthly"></div>
+        </div>
+      </div>
+      <div class="chart">
+        <div class="chart-block">
+          <div class="sec-chart" id="chart-container-product"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+```
 
 Additionally, we are adding extra CSS for dashboard container and primary chart. Below code snippet has to embedded along with the existing stylesheet.
 
@@ -411,9 +410,9 @@ Being the end-user, you can go ahead and add more UI elements like full width ch
 Let’s build the template for the exported PDF inclusive of a full width map and the header along with all the other charts.
 
 ```html
-    Insert code here
+Insert code here
         <style>
-           -- Insert stylesheet here --
+           Insert stylesheet here
         </style>
     </head>
     <body>
@@ -453,8 +452,6 @@ Anytime you get stuck or for any references, check out the source code from [thi
 FusionExport enables you to download live HighCharts dashboards, D3.js dashboards (and not just individual charts), keeping the layout intact. Hence, dynamically adding live elements like logo, data tables, and grids have become super easy now. With a single click, you can make it a downloadable report as well. Go ahead and explore a whole new level of visualising data and building dashboards.
 
 Also, take a look at “**How to export dashboards from** [**D3.js**](https://www.fusioncharts.com/demos/dashboards/d3-dashboard-sample-with-export/) **and** [**HighCharts**](https://www.fusioncharts.com/demos/dashboards/highcharts-dashboard-sample-with-export/)” build by their in-house developers.
-
----
 
 Hope this tutorial helped you export the dashboard using FusionExport. With [FusionExport](https://www.fusioncharts.com/fusionexport), you can now go ahead and create more charts and visualisations without any hassle of export functionality.
 
