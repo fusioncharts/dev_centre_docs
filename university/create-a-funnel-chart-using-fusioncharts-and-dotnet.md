@@ -91,7 +91,7 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 * Click **Ok**.
 
-![](Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_3.png)
+<img src ="Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_3.png">
 
 **Step 4**
 
@@ -129,7 +129,8 @@ Add a reference to FusionCharts.NET in this application. To do so:
 
 * Click **Ok**.
 
-![](Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_4.png)
+<img src="Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_4.png">
+
 
 **Step 7**
 
@@ -219,7 +220,7 @@ Literal1.Text = funnel.Render();
 
 The output chart will look as shown below:
 
-![](Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_5.png)
+<img src ="Create a Funnel Chart Using FusionCharts and ASP.NET_images/image_5.png">
 
 Click [here](https://dotnetfiddle.net/FWAZel) to edit a funnel chart.
 
