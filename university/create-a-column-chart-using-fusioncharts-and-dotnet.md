@@ -4,8 +4,9 @@ description: In this tutorial, we’ll be creating a Column Chart using Fusionch
 heading: Create a Column Chart Using FusionCharts and ASP.NET Framework
 date: 2019/06/23
 featured: true
-author: Rahul
+author: rahul
 ---
+
 ## Overview
 
 FusionCharts.NET is a popular charting library for ASP.NET WebForms, Razor Page and MVC, in .NET Framework, .NET Core and .NET Standard. It utilizes the FusionCharts JavaScript (HTML5) library to render interactive charts. This lets you avoid writing complex JavaScript and JSON code. Instead, you can simply use the methods and properties provided by FusionCharts .NET to render charts in C# or VB.NET.
@@ -18,13 +19,13 @@ You can understand the basic architecture of FusionCharts.NET at a glance from t
 
 As you can see, FusionCharts.NET is structured into two major modules - the Data Engine and the Visualization Engine. The first one deals with the data, while the second takes care of the rendering process and displays the chart on the browser.
 
-### Data Engine 
+### Data Engine
 
 The Data Engine of FusionCharts.NET lets you store data and perform various operations on it. That way, you get plenty of options to optimize and transform the data to suit your requirements, before you send it to the Visualization Engine. The Data Engine consists of the following:
 
     * **Data Sources**, which receives the raw data and creates an object to provide the data to the DataModel.
 
-    * **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine. 
+    * **Data Operations**, which you can apply to a DataModel, to create another optimized DataModel. You can send any of these DataModels to the Visualization Engine.
 
     * **DataModel**, which receives and stores optimized data. The Visualization Engine of FusionCharts.NET can only accept data in the form of a DataModel to render a chart.
 
@@ -40,11 +41,11 @@ One of the most ubiquitous types of charts, column charts consist of vertical ba
 
 Before you can build charts with FusionCharts.NET, you need to configure your system to have these loaded:
 
-* Visual Studio IDE and .NET Framework v3.5 (or later)
+-  Visual Studio IDE and .NET Framework v3.5 (or later)
 
-* FusionCharts Suite XT, which you can download from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?version=2&utm_expid=.oTKMCb4yRvC-v0Bh2zt4KA.1&utm_referrer=https%3A%2F%2Fwww.fusioncharts.com%2Fdownload%2Ffusioncharts-suite-xt%3Fversion%3D2).
+-  FusionCharts Suite XT, which you can download from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?version=2&utm_expid=.oTKMCb4yRvC-v0Bh2zt4KA.1&utm_referrer=https%3A%2F%2Fwww.fusioncharts.com%2Fdownload%2Ffusioncharts-suite-xt%3Fversion%3D2).
 
-* FusionCharts.NET assembly, which you can get [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net).
+-  FusionCharts.NET assembly, which you can get [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net).
 
 FusionCharts.NET supports many different types of charts. You can find them all listed [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/chart-types/list-of-charts-in-fusioncharts-net). In this blog, you will see how to create a column chart with FusionCharts .NET and ASP.NET.
 
@@ -52,15 +53,15 @@ FusionCharts.NET supports many different types of charts. You can find them all 
 
 Create a web application in Visual Studio. Open Visual Studio and follow the steps mentioned below:
 
-* Click on **Create a New Project** → **ASP.NET Web Application (.NET Framework)**
+-  Click on **Create a New Project** → **ASP.NET Web Application (.NET Framework)**
 
-* Type the project name.
+-  Type the project name.
 
-* Click on **Create**.
+-  Click on **Create**.
 
-* Click on **Empty** (as shown in the screenshot below).
+-  Click on **Empty** (as shown in the screenshot below).
 
-* Click on **Create**.
+-  Click on **Create**.
 
 ![](Create Column Charts Using FusionCharts in ASP .NET_images/image_1.png)
 
@@ -68,17 +69,17 @@ Create a web application in Visual Studio. Open Visual Studio and follow the ste
 
 Now, add Fusioncharts JS files to this project. To do so:
 
-* Create a folder named **Script** and copy the FusionCharts JavaScript source file in it.
+-  Create a folder named **Script** and copy the FusionCharts JavaScript source file in it.
 
-* Right click on the name of the solution.
+-  Right click on the name of the solution.
 
-* Click on **Add** → **New Folder**
+-  Click on **Add** → **New Folder**
 
-* Name the new folder **Script**.
+-  Name the new folder **Script**.
 
-* Right click on the **Script** folder
+-  Right click on the **Script** folder
 
-* Click **Add Existing Item**.
+-  Click **Add Existing Item**.
 
 Now, browse to the location where you have downloaded the FusionCharts JavaScript files, to add them to the **Script** folder. After you add the files, the solution explorer will look as in the screenshot you can see below:
 
@@ -88,13 +89,13 @@ Now, browse to the location where you have downloaded the FusionCharts JavaScrip
 
 Now, add a web form, inside which FusionCharts.NET will render the chart. To add the form:
 
-* Right click on the solution
+-  Right click on the solution
 
-* Click **Add** → **Web Form**
+-  Click **Add** → **Web Form**
 
-* Name the web form **ColumnChart**
+-  Name the web form **ColumnChart**
 
-* Click **Ok**.
+-  Click **Ok**.
 
 ![](Create Column Charts Using FusionCharts in ASP .NET_images/image_3.png)
 
@@ -102,16 +103,23 @@ Now, add a web form, inside which FusionCharts.NET will render the chart. To add
 
 Add reference of FusionCharts JS and theme files file in the .aspx page of your solution. Navigate to the **ColumnChart.aspx** page. Within the code, add the following lines inside <script> tags.
 
+<<<<<<< HEAD
 ```
 <script type="text/javascript" src="Scripts/fusioncharts.js"></script>
 
 <script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>
 ```
+=======
+_<script type="text/javascript" src="Scripts/fusioncharts.js"></script>_
+
+_<script type="text/javascript" src="Scripts/fusioncharts.theme.fusion.js"></script>_
+>>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 **Step 5**
 
 Now, add a Literal control in **ColumnChart.aspx** page. Copy and paste the code given below:
 
+<<<<<<< HEAD
 ```html
 <form id="form1" runat="server">
 
@@ -123,18 +131,29 @@ Now, add a Literal control in **ColumnChart.aspx** page. Copy and paste the code
 
 </form>
 ```
+=======
+_<form id="form1" runat="server">_
+
+-  <div>*
+
+-  <asp:Literal ID="Literal1" runat="server"></asp:Literal>\*
+
+-  </div>*
+
+_</form>_
+>>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 **Step 6**
 
 Add reference of FusionCharts.NET in this application. To do so:
 
-* Right click on **References**
+-  Right click on **References**
 
-* Click on **Add Reference**
+-  Click on **Add Reference**
 
-* From the Reference Manager window, browse to the **FusionCharts.Visualization.dll** and **FusionCharts.DataEngine.dll** files. Add both to the application (as shown in the screenshot below).
+-  From the Reference Manager window, browse to the **FusionCharts.Visualization.dll** and **FusionCharts.DataEngine.dll** files. Add both to the application (as shown in the screenshot below).
 
-* Click **Ok**.
+-  Click **Ok**.
 
 ![](Create Column Charts Using FusionCharts in ASP .NET_images/image_4.png)
 
@@ -142,14 +161,15 @@ Add reference of FusionCharts.NET in this application. To do so:
 
 Use references to both **FusionCharts.DataEngine** and **FusionCharts.Visualization**. Navigate to the **ColumnChart.aspx.cs** page and add the following lines at the top of the code:
 
-*using FusionCharts.DataEngine;*
+_using FusionCharts.DataEngine;_
 
-*using FusionCharts.Visualization;*
+_using FusionCharts.Visualization;_
 
 **Step 8**
 
 Insert the code given below within the **PageLoad()** event of the **ColumnChart.aspx.cs** page, to render the Column chart. In this example, you will fetch data from DataTable. However, you can also fetch data from SQL Server, a JSON file, or a CSV file.
 
+<<<<<<< HEAD
 ```js
 // Create data table to store data
 
@@ -233,6 +253,89 @@ column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
 
 Literal1.Text = column.Render();
 ```
+=======
+**_// Create data table to store data_**
+
+_DataTable ChartData = new DataTable();_
+
+**_// Add columns to data table_**
+
+_ChartData.Columns.Add("Programming Language", typeof(System.String));_
+
+_ChartData.Columns.Add("Users", typeof(System.Double));_
+
+**_// Add rows to data table_**
+
+_ChartData.Rows.Add("Java", 62000);_
+
+_ChartData.Rows.Add("Python", 46000);_
+
+_ChartData.Rows.Add("Javascript", 38000);_
+
+_ChartData.Rows.Add("C++", 31000);_
+
+_ChartData.Rows.Add("C#", 27000);_
+
+_ChartData.Rows.Add("PHP", 14000);_
+
+_ChartData.Rows.Add("Perl", 14000);_
+
+**_// Create static source with this data table_**
+
+_StaticSource source = new StaticSource(ChartData);_
+
+**_// Create instance of DataModel class_**
+
+_DataModel model = new DataModel();_
+
+**_// Add DataSource to the DataModel_**
+
+_model.DataSources.Add(source);_
+
+**_// Instantiate Column Chart_**
+
+**_// "first-chart" is chart id_**
+
+_Charts.ColumnChart column = new Charts.ColumnChart("first_chart");_
+
+**_// Set the width and the height of the chart in pixels_**
+
+_column.Width.Pixel(700);_
+
+_column.Height.Pixel(400);_
+
+**_// Set DataModel instance as the data source of the chart_**
+
+_column.Data.Source = model;_
+
+**_// Set Chart Caption_**
+
+_column.Caption.Text = "Most popular programming language";_
+
+**_// Set chart Subcaption_**
+
+_column.SubCaption.Text = "2017-2018";_
+
+**_// Hide chart Legend_**
+
+_column.Legend.Show = false;_
+
+**_// Set X-axis text_**
+
+_column.XAxis.Text = "Programming Language";_
+
+**_// Set Y-axis text_**
+
+_column.YAxis.Text = "User";_
+
+**_// Set chart theme_**
+
+_column.ThemeName = FusionChartsTheme.ThemeName.FUSION;_
+
+**_// Render chart in Literal_**
+
+_Literal1.Text = column.Render();_
+>>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 ### Rendered Chart
 
@@ -252,9 +355,13 @@ Click [here](https://dotnetfiddle.net/nxmoKm) to edit a column chart with multip
 
 If you set the **ThreeD** property to **true** (using the code shown below), the Visualization Engine will render a 3D column chart.
 
+<<<<<<< HEAD
 ```js
 column.ThreeD = true;
 ```
+=======
+_column.ThreeD = true;_
+>>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 Click [here](https://dotnetfiddle.net/kSc5WZ) to edit a ThreeD column chart.
 
@@ -262,9 +369,13 @@ Click [here](https://dotnetfiddle.net/kSc5WZ) to edit a ThreeD column chart.
 
 If the DataModel has two or more value columns and you set the **Overlapped** property to **true**, then the Visualization Engine will render an overlapped column chart.
 
+<<<<<<< HEAD
 ```js
 column.Overlapped = true;
 ```
+=======
+_column.Overlapped = true;_
+>>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 Click [here](https://dotnetfiddle.net/1HYSai) to edit an overlapped column chart.
 
@@ -272,8 +383,12 @@ Click [here](https://dotnetfiddle.net/1HYSai) to edit an overlapped column chart
 
 If you set the **Scrollable** property to **true** (using the code shown below), the Visualization Engine will render a Scrollable Column chart.
 
+<<<<<<< HEAD
 ```js
 column.Scrollable = true;
 ```
+=======
+_column.Scrollable = true;_
+>>>>>>> df4f090017b98956bb00b148f51e5d904dcd5894
 
 Click [here](https://dotnetfiddle.net/TeDjsE) to edit a scrollable column chart.

@@ -4,7 +4,7 @@ description: In this tutorial, we’ll be creating a Sales dashboard by fetching
 heading: All You Need To Know About Candlesticks
 date: 2009/06/23
 featured: true
-author: Rahul Kumar
+author: rahul
 ---
 
 These 3 charts are the cornerstone of most business dashboards.

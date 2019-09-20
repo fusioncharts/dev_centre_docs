@@ -2,12 +2,12 @@
 title: Creating a Real-Time Bitcoin Ticker in Javascript | FusionCharts
 description: In this tutorial, we’ll be creating a Real-Time Bitcoin Ticker using Cryptonator API.
 heading: Creating a Real-Time Bitcoin Ticker in JavaScript
-author: Sowmya
+author: sowmya
 date: 2019/01/22
 featured: true
 ---
 
-Bitcoin, the popular cryptocurrency that’s going to replace traditional fiat currency in the future - say many crypto enthusiasts. Well, that’s a fact that’s becoming more of fiction, specially after last year, when Bitcoin prices rose up astronomically to potentially hit the $20,000 mark. While the entire world has been hoping for Bitcoin to rise and stabilize, in reality the currency has fallen and remains unstable.
+Bitcoin, the popular cryptocurrency that’s going to replace traditional fiat currency in the future - say many crypto enthusiasts. Well, that’s a fact that’s becoming more of fiction, specially after last year, when Bitcoin prices rose up astronomically to potentially hit the \$20,000 mark. While the entire world has been hoping for Bitcoin to rise and stabilize, in reality the currency has fallen and remains unstable.
 
 As more trading portals and online websites monitor bitcoin price fluctuations, it’s very important to monitor these real-time changes during trading of bitcoin and other crypto currencies.
 On that note, we have built a real-time bitcoin ticker dashboard. This tutorial gives a step by step guide on how to create this mini dashboard, using [JavaScript](https://www.javascript.com/), Bitcoin API and FusionCharts.
@@ -25,8 +25,7 @@ Check out the Bitcoin Ticker Live Dashboard [here](https://sowmyaraj92.github.io
 Before we start, we need to set up the following dependencies:
 
 1.FusionCharts Core JS Files- [Download Link](https://www.fusioncharts.com/download/)
-<br>
-2.[Cryptonator API](https://api.cryptonator.com/api)
+<br> 2.[Cryptonator API](https://api.cryptonator.com/api)
 
 **NOTE : Include the core JS files (inside the <head> tag) downloaded as part of the FusionCharts package, in the HTML file:**
 
@@ -133,7 +132,7 @@ var fusioncharts = new FusionCharts({
    dataFormat: 'json',
 ```
 
-The data source required to render the real-time chart is given below: */
+The data source required to render the real-time chart is given below: \*/
 
 ```js
    dataSource: {
