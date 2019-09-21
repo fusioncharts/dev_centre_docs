@@ -26,6 +26,26 @@ LIVE CHART
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-stacked-bar-2d-chart) to know more.
 
+## Scroll Multi-series Stacked Column 2D
+
+Starting v3.14.1, FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D chart. The alias name to render the scroll multi-series stacked column 2D chart is `scrollMSStackedColumn2D`. Set the value of `type` attribute to `scrollMSStackedColumn2D` to render a scroll multi-series stacked column 2D chart.
+
+A scroll multi-series stacked column 2D chart looks like:
+
+LIVE CHART
+
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d) to know more.
+
+## Scroll Multi-series Stacked Column 2D + Line Dual Y-Axis Chart
+
+Starting v3.14.1, FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D + line dual y-axis chart. The alias name to render the scroll multi-series stacked column 2D + line dual y-axis chart is `scrollMSStackedColumn2DLineDy`. Set the value of `type` attribute to `scrollMSStackedColumn2DLineDy` to render the chart.
+
+A scroll multi-series stacked column 2D + line dual y-axis chart looks like:
+
+LIVE CHART
+
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart) to know more.
+
 ## Export Chart Data in CSV Format
 
 FusionCharts Suite XT allows you to export chart data in CSV format.
