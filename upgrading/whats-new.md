@@ -71,7 +71,16 @@ Click here to know more.
 FusionCharts Suite XT allows you to export chart data in CSV format.
 
 A column 2D chart with export enabled is shown below. Click the IMAGE menu button and select the **Export as CSV** option to export the chart data.
-
 {% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
 Click [here](/exporting-charts/using-fc-export-server/exporting-chart-data) to know more.
+
+## Display the Cumulative Sum of Stacked Area Chart
+
+FusionCharts Suite XT allows you to show the sum of the stacked area plots above the area plot. To show the sum of all the stacked data plots, set the `showSum` attribute to `1`.
+
+A stacked area 2D chart with a cumulative sum looks like:
+
+{% embed_chart display-the-cumulative-sum-of-stacked-area-chart.js %}
+
+Click [here](/chart-guide/standard-charts/stacked-charts#display-the-cumulative-sum) to know more.

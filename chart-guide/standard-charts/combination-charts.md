@@ -148,18 +148,6 @@ The above stacked column 3D line looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/gu8jk5yj/) to edit the stacked column 3D line single y-axis chart.
 
-## Stacked Column 3D Line Dual Y-axis Chart
-
-To render the stacked column 3D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn2dlinedy` to `stackedcolumn3dlinedy`. Rest of the data structure remains the same.
-
-For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=stackedcolumn3dlinedy) page of stacked column 3D line dual y-axis chart.
-
-The above stacked column 3D line looks like:
-
-{% embed_all standard-charts-combination-chart-example-10.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/7chax01w/) to edit the stacked column 3D line dual y-axis chart.
-
 ## Stacked Column 2D Line Dual Y-axis Chart
 
 To render the stacked column 2D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn3dline` to `stackedcolumn2dlinedy`. The rest of the data structure remains the same.
@@ -171,6 +159,18 @@ The stacked column 2D line dual y-axis chart looks like:
 LIVE CHART
 
 Click here to edit the stacked column 2D line dual y-axis chart.
+
+## Stacked Column 3D Line Dual Y-axis Chart
+
+To render the stacked column 3D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn2dlinedy` to `stackedcolumn3dlinedy`. Rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=stackedcolumn3dlinedy) page of stacked column 3D line dual y-axis chart.
+
+The above stacked column 3D line looks like:
+
+{% embed_all standard-charts-combination-chart-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/7chax01w/) to edit the stacked column 3D line dual y-axis chart.
 
 ## Stacked Area 2D Line Dual Y-axis Chart
 
