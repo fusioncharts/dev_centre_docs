@@ -46,16 +46,6 @@ LIVE CHART
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart) to know more.
 
-## Stacked Area 2D Line Dual Y-axis Chart
-
-FusionCharts Suite XT introduces a new combination chart, i.e., stacked area 2D line dual y-axis. The alias name to render the stacked area 2D line dual y-axis chart is `stackedarea2dlinedy`. Set the value of `type` attribute to `stackedarea2dlinedy` to render the chart.
-
-A stacked area 2D line dual y-axis chart looks like as shown below:
-
-LIVE CHART
-
-Click here to know more.
-
 ## Stacked Column 2D Line Dual Y-axis Chart
 
 FusionCharts Suite XT introduces a new combination chart, i.e., stacked column 2D line dual y-axis. The alias name to render the stacked column 2D line dual y-axis chart is `stackedcolumn2dlinedy`. Set the value of `type` attribute to `stackedcolumn2dlinedy` to render the chart.
@@ -64,7 +54,17 @@ A stacked column 2D line dual y-axis chart looks like as shown below:
 
 LIVE CHART
 
-Click here to know more.
+Click [here](/chart-guide/standard-charts/combination-charts#stacked-column-2d-line-dual-y-axis-chart) to know more.
+
+## Stacked Area 2D Line Dual Y-axis Chart
+
+FusionCharts Suite XT introduces a new combination chart, i.e., stacked area 2D line dual y-axis. The alias name to render the stacked area 2D line dual y-axis chart is `stackedarea2dlinedy`. Set the value of `type` attribute to `stackedarea2dlinedy` to render the chart.
+
+A stacked area 2D line dual y-axis chart looks like as shown below:
+
+LIVE CHART
+
+Click [here](/chart-guide/standard-charts/combination-charts#stacked-area-2d-line-dual-y-axis-chart) to know more.
 
 ## 3D Dual Y-axis Combination Chart
 
@@ -74,7 +74,7 @@ A dual y-axis combination chart in 3D looks like as shown below:
 
 {% embed_all standard-charts-combination-chart-example-13.js %}
 
-Click here to know more.
+Click [here](/chart-guide/standard-charts/combination-charts#3d-dual-y-axis-combination-chart) to know more.
 
 ## Export Chart Data in CSV Format
 
