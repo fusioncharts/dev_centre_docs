@@ -1,8 +1,36 @@
 ---
 title: Version History | FusionCharts.NET
-description: This section talks about the new features, improvements and fixes for v1.0.1.
+description: This section talks about the new features, improvements and fixes for v1.0.7.
 heading: Version History
 ---
+
+<h2 class="sub-heading">Version 1.0.7</h2>
+
+<p class="release-date">20th September, 2019</p>
+
+<h4 class="sub-heading">New Features</h4>
+
+- Starting v1.0.7, FusionCharts.NET introduces the following features and components for the time-series charts:
+
+  - [Cross Line](/fusioncharts-aspnet-visualization/components/fusiontime-components/crossline-in-fcnet)
+  - [Predictive Date](/fusioncharts-aspnet-visualization/components/fusiontime-components/predictive-data-in-fcnet)
+  - [Reference Zone](/fusioncharts-aspnet-visualization/components/fusiontime-components/reference-zone-in-fcnet)
+  - [Output Time format](/fusioncharts-aspnet-visualization/api-reference-net/visualization-api-net#output-time-format)
+  - [Initial Interval](/fusioncharts-aspnet-visualization/api-reference-net/visualization-api-net#initial-interval)
+
+- [Exception Handling](/fusioncharts-aspnet-visualization/getting-started/exception-handling-in-fcnet) has been introduced to Visualization Engine of FusionCharts.NET library.
+
+- [Custure](/fusioncharts-aspnet-visualization/data-engine/culture) has been introduced to DataEngine.
+
+<h4>Improvement</h4>
+
+- If the total number of records is less than the number of records to be extracted from the top, instead of throwing an exception, all records will be extracted from the top.
+
+- `TimeSeriesData.RenderCompatibleDataInJson(model);` has been replaced by `TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”);`.
+
+<h4>Deprecated</h4>
+
+- TimeSeriesData.RenderCompatibleDataInJson(model);
 
 <h2 class="sub-heading">Version 1.0.6</h2>
 

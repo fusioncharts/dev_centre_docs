@@ -8,6 +8,30 @@ FusionTime is a JavaScript charting library that helps you visualize, and explor
 
 We have built a simple `FusionCharts server-side ASP.NET` wrapper, which provides bindings for FusionTime. The `FusionCharts server-side ASP.NET` wrapper allows you to easily add interactive time-series charts to any ASP.NET project.
 
+FusionCharts allows you to follow two different approaches to render charts using ASP.NET:
+
+- ASP.NET server-side wrapper
+
+- FusionCharts.NET Visualization library
+
+We recommend you to use FusionCharts.NET library over ASP.NET wrapper, as the library comes with some advantages listed below:
+
+- FusionCharts.NET library is compatible with ASP.NET Framework, ASP.NET Core, ASP.NET Standard, Mono/Xamarin whereas ASP.NET wrapper is only compatible with ASP.NET Framework.
+
+- FusionCharts.NET library has the ability to accept data from different sources.
+
+- FusionCharts.NET library accepts remote data.
+
+- FusionCharts.NET library allows operations on data.
+
+- FusionCharts.NET library has the ability to handle chart structure-specific json.
+
+- FusionCharts.NET library has the ability of conditional data plot formatting.
+
+- Using FusionCharts.NET library you can specify a page-level theme.
+
+- You can write fully object-oriented c#/VB code when using the FusionCharts.NET library.
+
 ## Installation
 
 Since FusionTime is distributed along with FusionCharts Suite, download/install the **FusionCharts** package to get access to FusionTime. Note that you will also need .NET Framework 3.5 or later version to use FusionTime.
