@@ -92,6 +92,20 @@ A scroll stacked column 2D chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/t3SKj/) to edit the scroll stacked column 2D chart.
 
+## Scroll Stacked Bar 2D Chart
+
+Let's create a scroll stacked bar 2D chart. The example will plot the sales comparison w.r.t. the products and services for FY 2018-FY 2019.
+
+To render a scroll stacked bar chart in 2D, change the value of the `type` attribute to `scrollStackedBar2D`.
+
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/scrollstackedbar2d) page of the scroll stacked bar 2D chart.
+
+A scroll stacked bar 2D chart looks like:
+
+LIVE CHART
+
+Click here to edit the above chart.
+
 ## Scroll Combination 2D Chart
 
 Now, we will create a scroll combination 2D chart to plot the revenue and the profit earned, in dollars, and the profit for FY 2017-FY 2018.
