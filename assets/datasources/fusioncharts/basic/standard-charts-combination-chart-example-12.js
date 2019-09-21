@@ -14,7 +14,6 @@
             "numberPrefix": "$",
             "sNumberSuffix": "%",
             "sYAxisMaxValue": "50",
-
             //Cosmetics
             "divlineAlpha": "100",
             "divlineColor": "#999999",

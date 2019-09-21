@@ -96,6 +96,22 @@ In the above sample, let's plot the **Profit %** in `spline` and **Profit** in `
 
 Click [here](http://jsfiddle.net/fusioncharts/ocn63gv8/) to edit the dual y-axis combination chart with `spline` and `splineArea` as data plots.
 
+## 3D Dual Y-axis Combination Chart
+
+Now, let's create a dual y-axis combination chart in 3D. For this, change the value of the `type` attribute from `mscombidy2d` to `mscombidy3d`.
+
+In this chart, we will show a comparison between the revenue, profit, and the profit percentage. The revenue and the profit will be shown as the amount in dollars, but the profit percentage will require a different unit - percentage. These cannot be plotted on a single y-axis. FusionCharts Suite XT allows you to have two y-axes, a primary y-axis, and a secondary y-axis if you have two data of two different numeric units to plot.
+
+Therefore, we've plotted the amount in USD on the primary y-axis (the one on the left) and the profit % on the secondary y-axis (the one on the right).
+
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=mscombidy3d) page of a 3D dual y-axis combination chart.
+
+A dual y-axis combination chart in 3D looks like as shown below:
+
+{% embed_all standard-charts-combination-chart-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/vfLta47y/) to edit the dual y-axis combination chart in 3D.
+
 ## Column 3D + Line Single Y-axis Chart
 
 Now, let's create a column and line multi-series chart in 3D. For this, set the value of the `type` attribute to `mscolumnline3d`.
