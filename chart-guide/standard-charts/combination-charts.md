@@ -160,19 +160,17 @@ The above stacked column 3D line looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/7chax01w/) to edit the stacked column 3D line dual y-axis chart.
 
-## Multi Series Stacked Column 2D + Line Dual Y-axis Chart
+## Stacked Column 2D Line Dual Y-axis Chart
 
-To render the multi-series stacked column + line dual y-axis chart in 2D, set the value of `type` attribute to `msstackedcolumn2dlinedy`.
+To render the stacked column 2D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn3dline` to `stackedcolumn2dlinedy`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=msstackedcolumn2dlinedy) page of multi-series stacked column 2D line dual y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/stackedcolumn2dlinedy) page of the stacked column 2D line dual y-axis chart.
 
-The chart looks like:
+The stacked column 2D line dual y-axis chart looks like:
 
-{% embed_all standard-charts-combination-chart-example-11.js %}
+LIVE CHART
 
-Click [here](http://jsfiddle.net/fusioncharts/8d3px3xp/) to edit the stacked column 2D line dual y-axis chart.
-
-Now, let's customize the appearance and properties of the combination charts.
+Click here to edit the stacked column 2D line dual y-axis chart.
 
 ## Stacked Area 2D Line Dual Y-axis Chart
 
@@ -186,17 +184,19 @@ LIVE CHART
 
 Click here to edit the stacked area 2D line dual y-axis chart.
 
-## Stacked Column 2D Line Dual Y-axis Chart
+## Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
-To render the stacked column 2D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn3dline` to `stackedcolumn2dlinedy`. The rest of the data structure remains the same.
+To render the multi-series stacked column + line dual y-axis chart in 2D, set the value of `type` attribute to `msstackedcolumn2dlinedy`.
 
-For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/stackedcolumn2dlinedy) page of the stacked column 2D line dual y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=msstackedcolumn2dlinedy) page of multi-series stacked column 2D line dual y-axis chart.
 
-The stacked column 2D line dual y-axis chart looks like:
+The chart looks like:
 
-LIVE CHART
+{% embed_all standard-charts-combination-chart-example-11.js %}
 
-Click here to edit the stacked column 2D line dual y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/8d3px3xp/) to edit the stacked column 2D line dual y-axis chart.
+
+Now, let's customize the appearance and properties of the combination charts.
 
 ## Plot Trend Elements
 
