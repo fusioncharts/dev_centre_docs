@@ -46,6 +46,26 @@ LIVE CHART
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart) to know more.
 
+## Stacked Area 2D Line Dual Y-axis Chart
+
+FusionCharts Suite XT introduces a new combination chart, i.e., stacked area 2D line dual y-axis. The alias name to render the stacked area 2D line dual y-axis chart is `stackedarea2dlinedy`. Set the value of `type` attribute to `stackedarea2dlinedy` to render the chart.
+
+A stacked area 2D line dual y-axis chart looks like as shown below:
+
+LIVE CHART
+
+Click here to know more.
+
+## Stacked Column 2D Line Dual Y-axis Chart
+
+FusionCharts Suite XT introduces a new combination chart, i.e., stacked column 2D line dual y-axis. The alias name to render the stacked column 2D line dual y-axis chart is `stackedcolumn2dlinedy`. Set the value of `type` attribute to `stackedcolumn2dlinedy` to render the chart.
+
+A stacked column 2D line dual y-axis chart looks like as shown below:
+
+LIVE CHART
+
+Click here to know more.
+
 ## Export Chart Data in CSV Format
 
 FusionCharts Suite XT allows you to export chart data in CSV format.
