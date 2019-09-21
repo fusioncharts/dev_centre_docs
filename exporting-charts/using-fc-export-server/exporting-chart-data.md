@@ -4,7 +4,7 @@ description: FusionCharts lets you export the rendered charts in the JPG, PNG, S
 heading: Exporting Chart Data
 ---
 
-FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats. FusionCharts also allows you to export chart data in XLSX format (as an Excel spreadsheet). Starting v3.14.1, FusionCharts Suite XT introduces exporting chart data in the CSV format (as an Excel spreadsheet).
+FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats. FusionCharts also allows you to export chart data in XLSX format (as an Excel spreadsheet). Starting v3.14.1, FusionCharts Suite XT introduces exporting chart data in the **CSV** format.
 
 To enable chart exporting, the chart level attribute `exportEnabled` is set to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
 
