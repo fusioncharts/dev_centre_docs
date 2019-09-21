@@ -146,6 +146,30 @@ Click [here](http://jsfiddle.net/fusioncharts/cVXNg/) to edit the scroll combina
 
 Now, let's customize the appearance and properties of the charts.
 
+## Scroll Multi-series Stacked Column 2D
+
+Let's create a scrollable multi-series stacked column 2D by setting the value of the `type` attribute to `scrollMSStackedColumn2D`.
+
+For the detailed list of attributes, refer to the [chart attributes](/chart-attributes/scrollmsstackedcolumn2d) page of scroll multi-series stacked column 2D chart.
+
+The scroll multi-series stacked column 2D chart thus looks like as shown below:
+
+LIVE CHART
+
+Click here to edit the above chart.
+
+## Scroll Multi-series Stacked Column 2D + Line Dual Y-Axis Chart
+
+Let's create a scrollable multi-series stacked column 2D and line chart with dual y-axis. Create the chart by setting the value of the `type` attribute to `scrollMSStackedColumn2DLineDy`.
+
+For the detailed list of attributes, refer to the [chart attributes](/chart-attributes/scrollmsstackedcolumn2dlinedy) page of scroll multi-series stacked column 2D + line dual y-axis chart.
+
+The scroll multi-series stacked column 2D + line dual y-axis chart thus looks like as shown below:
+
+LIVE CHART
+
+Click here to edit the above chart.
+
 ## Configure the Number of Visible Data Plots
 
 Scroll charts are generally used to avoid cluttering. With that in FusionCharts, you can also configure the number of data plots that will be visible in the scroll pane when the chart is first loaded. To configure this specify the number of visible plots using the `numVisiblePlot` attribute.
