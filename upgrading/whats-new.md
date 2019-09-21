@@ -28,7 +28,7 @@ Click [here](/chart-guide/standard-charts/scroll-charts#scroll-stacked-bar-2d-ch
 
 ## Scroll Multi-series Stacked Column 2D
 
-Starting v3.14.1, FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D chart. The alias name to render the scroll multi-series stacked column 2D chart is `scrollMSStackedColumn2D`. Set the value of `type` attribute to `scrollMSStackedColumn2D` to render a scroll multi-series stacked column 2D chart.
+FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D chart. The alias name to render the scroll multi-series stacked column 2D chart is `scrollMSStackedColumn2D`. Set the value of `type` attribute to `scrollMSStackedColumn2D` to render a scroll multi-series stacked column 2D chart.
 
 A scroll multi-series stacked column 2D chart looks like:
 
@@ -38,7 +38,7 @@ Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stac
 
 ## Scroll Multi-series Stacked Column 2D + Line Dual Y-Axis Chart
 
-Starting v3.14.1, FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D + line dual y-axis chart. The alias name to render the scroll multi-series stacked column 2D + line dual y-axis chart is `scrollMSStackedColumn2DLineDy`. Set the value of `type` attribute to `scrollMSStackedColumn2DLineDy` to render the chart.
+FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D + line dual y-axis chart. The alias name to render the scroll multi-series stacked column 2D + line dual y-axis chart is `scrollMSStackedColumn2DLineDy`. Set the value of `type` attribute to `scrollMSStackedColumn2DLineDy` to render the chart.
 
 A scroll multi-series stacked column 2D + line dual y-axis chart looks like:
 
@@ -63,6 +63,16 @@ FusionCharts Suite XT introduces a new combination chart, i.e., stacked column 2
 A stacked column 2D line dual y-axis chart looks like as shown below:
 
 LIVE CHART
+
+Click here to know more.
+
+## 3D Dual Y-axis Combination Chart
+
+FusionCharts Suite XT allows you to render a dual y-axis combination chart in 3D. The alias name to render the dual y-axis combination chart in 3D is `mscombidy3d`. Set the value of `type` attribute to `mscombidy3d` to render the chart.
+
+A dual y-axis combination chart in 3D looks like as shown below:
+
+{% embed_all standard-charts-combination-chart-example-13.js %}
 
 Click here to know more.
 
