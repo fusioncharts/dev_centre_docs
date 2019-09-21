@@ -54,9 +54,21 @@ The scroll column 2D chart for the above code looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/nAa33/) to edit the scroll column 2D chart.
 
+## Scroll Bar 2D Chart
+
+Now, let's create a scroll bar 2D chart. To render a scroll bar chart in 2D, change the value of the `type` attribute from `scrollColumn2D` to `scrollBar2D`. The rest of the data structure remains the same.
+
+For the detailed list of attributes, refer to the chart attributes page of the scroll bar 2D chart.
+
+A single-series scroll bar 2D chart looks like:
+
+LIVE CHART
+
+Click here to edit the scroll bar 2D chart.
+
 ## Scroll Line 2D Chart
 
-Now, let's create a scroll line 2D chart. To render a scroll line chart in 2D, change the value of the `type` attribute from `scrollColumn2d` to `scrollline2d`. The rest of the data structure remains the same.
+Now, let's create a scroll line 2D chart. To render a scroll line chart in 2D, change the value of the `type` attribute from `scrollBar2D` to `scrollline2d`. The rest of the data structure remains the same.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/?chart=scrollline2d) page of scroll line 2D chart.
 
