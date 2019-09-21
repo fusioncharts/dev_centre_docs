@@ -26,7 +26,7 @@ LIVE CHART
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-stacked-bar-2d-chart) to know more.
 
-## Exporting Chart Data in CSV Format
+## Export Chart Data in CSV Format
 
 FusionCharts Suite XT allows you to export chart data in CSV format.
 

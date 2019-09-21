@@ -1,6 +1,6 @@
 ---
 title: Exporting Chart Data | FusionCharts
-description: FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats. To enable server-side exporting, attribute exportEnabled is set to 1
+description: FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats. FusionCharts also allows you to export chart data in XLSX & CSV format.
 heading: Exporting Chart Data
 ---
 
