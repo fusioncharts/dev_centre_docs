@@ -2,8 +2,8 @@
     type: 'InverseMSColumn2D',
     dataFormat: 'json',
     renderAt: 'chart-container',
-    width: '700',
-    height: '400',
+    width: '680',
+    height: '390',
     dataSource: {
         "chart": {
             "theme": "fusion",
