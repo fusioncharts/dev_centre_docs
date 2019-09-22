@@ -104,4 +104,4 @@ The column chart with customized data value look like as shown below:
 
 LIVE CHART
 
-Click here to know more.
+Click [here](/chart-guide/chart-configurations/data-values#customize-data-value-of-an-individual-data-plot) to know more.
