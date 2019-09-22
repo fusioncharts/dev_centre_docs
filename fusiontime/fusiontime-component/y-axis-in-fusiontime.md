@@ -163,51 +163,55 @@ Refer to the code given below:
 
 In the above code:
 
-* `connectNulldata` attribute has been set to true under `yAxis` object.
+- `connectNulldata` attribute has been set to true under `yAxis` object.
 
-* A `style` object has been created under `yAxis` object to style the connecting line for null values.
+- A `style` object has been created under `yAxis` object to style the connecting line for null values.
 
-* `plot.null` object is created to configure the connecting line of the plots in the canvas.
+- `plot.null` object is created to configure the connecting line of the plots in the canvas.
 
-* `line.null` object is created to configure the connecting line of the line chart.
+- `line.null` object is created to configure the connecting line of the line chart.
 
-* `area.null` object is created to configure the connecting area of the area chart.
+- `area.null` object is created to configure the connecting area of the area chart.
 
 A sample code to style the null data of a simple time-series chart is given below:
 
 ```json
 {
-    "type": "timeseries",
-    "renderAt": "container",
-    "width": 800,
-    "height": 600,
-    "dataSource": {
-        data: dataStore,
-        "caption": {
-            "text": "Pollution Report of Yatcha Street"
-        },
-        "subcaption": {
-            "text": "An industrial town"
-        },
-        "yAxis": [{
-            "plot": [{
-                "value": "Pollution",
-                "connectNullData": true,
-                "style": {
-                    "plot.null": {
-                        "stroke-dasharray": "-1",
-                        "stroke": "#FF0000"
-                    },
-                }
-            }],
-            "title": "Pollution Concentration (in ppm)",
-            "min": "130"
-        }]
-    }
+  "type": "timeseries",
+  "renderAt": "container",
+  "width": 800,
+  "height": 600,
+  "dataSource": {
+    "data": dataStore,
+    "caption": {
+      "text": "Pollution Report of Yatcha Street"
+    },
+    "subcaption": {
+      "text": "An industrial town"
+    },
+    "yAxis": [
+      {
+        "plot": [
+          {
+            "value": "Pollution",
+            "connectNullData": true,
+            "style": {
+              "plot.null": {
+                "stroke-dasharray": "-1",
+                "stroke": "#FF0000"
+              }
+            }
+          }
+        ],
+        "title": "Pollution Concentration (in ppm)",
+        "min": "130"
+      }
+    ]
+  }
 }
 ```
 
-The  chart looks like as shown below:
+The chart looks like as shown below:
 
 {% embed_ftChart style-connect-null-data %}
 
@@ -287,6 +291,43 @@ To render a chart with logarithmic y-axis refer to the code below:
 ```
 
 In the above code, the value of the `type` attribute of `yAxis` object has been set to `log` which renders a chart with the logarithmic y-axis.
+
+## Grid bands
+
+Grid bands are horizontal bands running along with the canvas. They enable easier visual reference while panning the chart. FusionTime gives you support for alternate grid bands on the y-axis.
+
+Refer to the image below:
+
+Annotated Image
+
+To create grid bands, follow the steps given below:
+
+- Within the `yAxis` object, set the value of `showGridband` attribute to `1`.
+
+- Add style to the grid band using `grid-band` object in the `style` object under `yAxis` object.
+
+> The only styling which can be added to the grid band is its fill color.
+
+Refer to the code given below:
+
+```javascript
+"dataSource": {
+    yAxis:{
+        "showGridband": "1",
+        "style": {
+            "grid-band": {
+                fill: "#D8D8D8"
+            }
+        }
+    }
+}
+```
+
+In the above chart, fill color of the grid band is set to **#D8D8D8**.
+
+A time-series chart rendered using y-axis grid bands is shown below:
+
+LIVE CHART
 
 ## Change Log Base
 
