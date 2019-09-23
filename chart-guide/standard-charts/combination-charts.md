@@ -110,7 +110,7 @@ A dual y-axis combination chart in 3D looks like as shown below:
 
 {% embed_all standard-charts-combination-chart-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/vfLta47y/) to edit the dual y-axis combination chart in 3D.
+Click [here](http://jsfiddle.net/fusioncharts/wt5ps19k/) to edit the dual y-axis combination chart in 3D.
 
 ## Column 3D + Line Single Y-axis Chart
 
