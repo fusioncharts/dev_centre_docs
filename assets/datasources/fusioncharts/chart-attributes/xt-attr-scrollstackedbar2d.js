@@ -1,8 +1,8 @@
 {
     type: 'scrollstackedbar2d',
     renderAt: 'container',
-    width: '700',
-    height: '500',
+    width: '100%',
+    height: '100%',
     dataFormat: 'json',
     dataSource: {
         chart: {
@@ -11,7 +11,7 @@
             "caption": "Video games sales breakup",
             "subcaption": "Across different markets (In Million USD)",
             "numbersuffix": "M",
-            plottooltext: "<b>$seriesName</b><hr>$label: <b>$dataValue</b>"
+            "plottooltext": "<b>$seriesName</b><hr>$label: <b>$dataValue</b>"
 
         },
         categories: [{

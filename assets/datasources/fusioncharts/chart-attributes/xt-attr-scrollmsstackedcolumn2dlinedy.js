@@ -1,8 +1,8 @@
 {
     type: 'scrollmsstackedcolumn2dlinedy',
     renderAt: 'container',
-    width: '600',
-    height: '450',
+    width: '100%',
+    height: '100%',
     dataFormat: 'json',
     dataSource: {
         chart: {

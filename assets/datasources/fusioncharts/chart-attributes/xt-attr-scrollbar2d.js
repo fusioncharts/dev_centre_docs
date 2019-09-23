@@ -1,8 +1,8 @@
 {
     type: 'scrollbar2d',
     renderAt: 'container',
-    width: '600',
-    height: '500',
+    width: '100%',
+    height: '100%',
     dataFormat: 'json',
     dataSource: {
         "chart": {
