@@ -106,9 +106,7 @@ Click [here](http://jsfiddle.net/fusioncharts/t3SKj/) to edit the scroll stacked
 
 ## Scroll Stacked Bar 2D Chart
 
-Let's create a scroll stacked bar 2D chart. The example will plot the sales comparison w.r.t. the products and services for FY 2018-FY 2019.
-
-To render a scroll stacked bar chart in 2D, change the value of the `type` attribute to `scrollStackedBar2D`.
+Let's create a scroll stacked bar 2D chart. To render a scroll stacked bar chart in 2D, change the value of the `type` attribute to `scrollStackedBar2D`.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/scrollstackedbar2d) page of the scroll stacked bar 2D chart.
 
