@@ -116,4 +116,4 @@ The gauge with reverse color scale looks like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-28.js %}
 
-Click [here ](https://www.fusioncharts.com/dev/chart-guide/gauges-and-widgets/linear-gauge)to know more.
+Click [here](/chart-guide/gauges-and-widgets/linear-gauge#reverse-the-order-of-the-color-scale) to know more.
