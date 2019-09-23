@@ -102,7 +102,7 @@ FusionCharts also allows you to customize the properties of data value for an in
 
 The column chart with customized data value look like as shown below:
 
-LIVE CHART
+{% embed_chart chart-configurations-data-values-example-11.js %}
 
 Click [here](/chart-guide/chart-configurations/data-values#customize-data-value-of-an-individual-data-plot) to know more.
 

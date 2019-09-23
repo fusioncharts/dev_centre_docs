@@ -416,19 +416,24 @@ Refer to code below:
   "chart": {},
   "data": [
     {
-      "label": "Jan",
-      "value": "4200000",
+      "label": "Q1",
+      "value": "1950000",
       "valueFontColor": "#ff0000"
     },
     {
-      "label": "Feb",
-      "value": "810000",
-      "valueBgColor": "#ffffff",
-      "valueBorderColor": "#ff00ff"
+      "label": "Q2",
+      "value": "1450000",
+      "valueFontColor": "#ffffff",
+      "valueBgColor": "#000000",
+      "valueBorderColor": "#ff0000"
     },
     {
-      "label": "Mar",
-      "value": "720000"
+      "label": "Q3",
+      "value": "1730000"
+    },
+    {
+      "label": "Q4",
+      "value": "2120000"
     }
   ]
 }
@@ -436,6 +441,6 @@ Refer to code below:
 
 The column chart with customized data value look like as shown below:
 
-LIVE CHART
+{% embed_chart chart-configurations-data-values-example-11.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/v7409d3m/) to edit the above chart.
