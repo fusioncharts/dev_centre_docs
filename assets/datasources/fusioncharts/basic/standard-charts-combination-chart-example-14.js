@@ -1,8 +1,8 @@
 {
     type: 'stackedarea2dlinedy',
     renderAt: 'container',
-    width: '100%',
-    height: '100%',
+    width: '550',
+    height: '500',
     dataFormat: 'json',
     dataSource: {
         "chart": {

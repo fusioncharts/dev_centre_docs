@@ -52,7 +52,7 @@ FusionCharts Suite XT introduces a new combination chart, i.e., stacked column 2
 
 A stacked column 2D line dual y-axis chart looks like as shown below:
 
-LIVE CHART
+{% embed_all standard-charts-combination-chart-example-15.js %}
 
 Click [here](/chart-guide/standard-charts/combination-charts#stacked-column-2d-line-dual-y-axis-chart) to know more.
 
@@ -62,7 +62,7 @@ FusionCharts Suite XT introduces a new combination chart, i.e., stacked area 2D 
 
 A stacked area 2D line dual y-axis chart looks like as shown below:
 
-LIVE CHART
+{% embed_all standard-charts-combination-chart-example-14.js %}
 
 Click [here](/chart-guide/standard-charts/combination-charts#stacked-area-2d-line-dual-y-axis-chart) to know more.
 

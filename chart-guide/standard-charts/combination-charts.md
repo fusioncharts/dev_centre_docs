@@ -172,9 +172,9 @@ For a detailed list of attributes, refer to the [chart attributes](/chart-attrib
 
 The stacked column 2D line dual y-axis chart looks like:
 
-LIVE CHART
+{% embed_all standard-charts-combination-chart-example-15.js %}
 
-Click here to edit the stacked column 2D line dual y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/nkr4v76L/) to edit the stacked column 2D line dual y-axis chart.
 
 ## Stacked Column 3D Line Dual Y-axis Chart
 
@@ -196,9 +196,9 @@ For a detailed list of attributes, refer to the [chart attributes](/chart-attrib
 
 The stacked area 2D line dual y-axis chart looks like:
 
-LIVE CHART
+{% embed_all standard-charts-combination-chart-example-14.js %}
 
-Click here to edit the stacked area 2D line dual y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/9qrfu4tn/) to edit the stacked area 2D line dual y-axis chart.
 
 ## Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
