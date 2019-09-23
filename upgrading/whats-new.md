@@ -12,7 +12,7 @@ FusionCharts Suite XT adds a scrolling feature to the bar 2D chart. The alias na
 
 A single-series scroll bar 2D chart looks like:
 
-LIVE CHART
+{% embed_all standard-charts-scroll-charts-example-10.js %}
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-bar-2d-chart) to know more.
 
