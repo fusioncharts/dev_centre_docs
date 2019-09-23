@@ -1,8 +1,8 @@
 {
     type: 'mscombi3d',
     renderAt: 'container',
-    width: '750',
-    height: '500',
+    width: '680',
+    height: '450',
     dataFormat: 'json',
     dataSource: {
         chart: {
