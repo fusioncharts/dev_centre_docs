@@ -114,9 +114,9 @@ For a detailed list of attributes, refer to the [chart attributes](/chart-attrib
 
 A scroll stacked bar 2D chart looks like:
 
-LIVE CHART
+{% embed_all standard-charts-scroll-charts-example-11.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/nwf6em24/) to edit the above chart.
 
 ## Scroll Combination 2D Chart
 

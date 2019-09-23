@@ -22,7 +22,7 @@ FusionCharts Suite XT adds a scrolling feature to the stacked bar 2D chart. The 
 
 A scroll stacked bar 2D chart looks like:
 
-LIVE CHART
+{% embed_all standard-charts-scroll-charts-example-11.js %}
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-stacked-bar-2d-chart) to know more.
 
