@@ -132,7 +132,7 @@ Click [here](http://jsfiddle.net/fusioncharts/6Y3jt/) to edit the scroll stacked
 
 ## Scroll Combination 2D Dual Y-axis Chart
 
-To create a scroll combination 2D chart with a dual y-axis, change the value of the `type` attribute to `scrollcombidy2d`. Here we will plot the revenue and the profit earned, in dollars, and the profit percent for FY 2017-FY 2018.
+To create a scroll combination 2D chart with a dual y-axis, change the value of the `type` attribute to `scrollcombidy2d`. Here we will plot the revenue and the profit earned, in dollars, and the profit percent for FY 2018-FY 2019.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/?chart=scrollcombidy2d) page of croll combination 2D dual y-axis chart.
 
