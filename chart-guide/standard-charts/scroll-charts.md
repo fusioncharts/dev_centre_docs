@@ -62,9 +62,9 @@ For the detailed list of attributes, refer to the [chart attributes](/chart-attr
 
 A single-series scroll bar 2D chart looks like:
 
-LIVE CHART
+{% embed_all standard-charts-scroll-charts-example-10.js %}
 
-Click here to edit the scroll bar 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/zheqn0xc/) to edit the scroll bar 2D chart.
 
 ## Scroll Line 2D Chart
 
