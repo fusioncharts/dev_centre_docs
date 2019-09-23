@@ -363,13 +363,13 @@ Click [here](http://jsfiddle.net/fusioncharts/ZVKw9/) to edit the above gauge.
 
 The gauge shown above is rendered with two check boxes below it: **Pointer on Top** and **Pointer at Bottom**. If you select the **Pointer on Top** check box, the pointer is shown along the top edge of the gauge; if you select the **Pointer at Bottom** checkbox, the pointer is shown along the bottom edge of the gauge.
 
-Reverse the Order of the Color Scale
+## Reverse the Order of the Color Scale
 
 By default, the order of the color scale of a horizontal linear gauge is set from left to right side of the gauge. Starting v3.14.1, FusionCharts allows you to reverse (right to left) the order of the color scale of the gauge.
 
 To reverse the order of the color scale of the linear gauge, set the value of `reverseScale` attribute to `1`.
 
-**Note:** To reverse the order of the color scale using `reverseScale` attribute, set the value of `editMode` attribute to `1`.
+> To reverse the order of the color scale using `reverseScale` attribute, set the value of `editMode` attribute to `1`.
 
 Refer to the code below:
 

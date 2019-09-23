@@ -105,3 +105,15 @@ The column chart with customized data value look like as shown below:
 LIVE CHART
 
 Click [here](/chart-guide/chart-configurations/data-values#customize-data-value-of-an-individual-data-plot) to know more.
+
+## Reverse the Color Scale of the Linear Gauge
+
+FusionCharts allows you to reverse (right to left) the order of the color scale of the gauge.
+
+To reverse the order of the color scale of the linear gauge, set the value of `reverseScale` attribute to `1`.
+
+The gauge with reverse color scale looks like as shown below:
+
+{% embed_chart gauges-and-widgets-linear-example-28.js %}
+
+Click [here ](https://www.fusioncharts.com/dev/chart-guide/gauges-and-widgets/linear-gauge)to know more.
