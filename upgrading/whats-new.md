@@ -32,7 +32,7 @@ FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 
 
 A scroll multi-series stacked column 2D chart looks like:
 
-LIVE CHART
+{% embed_all standard-charts-scroll-charts-example-12.js %}
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d) to know more.
 
@@ -42,7 +42,7 @@ FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 
 
 A scroll multi-series stacked column 2D + line dual y-axis chart looks like:
 
-LIVE CHART
+{% embed_all standard-charts-scroll-charts-example-13.js %}
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart) to know more.
 

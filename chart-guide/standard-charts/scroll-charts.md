@@ -152,9 +152,9 @@ For the detailed list of attributes, refer to the [chart attributes](/chart-attr
 
 The scroll multi-series stacked column 2D chart thus looks like as shown below:
 
-LIVE CHART
+{% embed_all standard-charts-scroll-charts-example-12.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/83f0oy9a/) to edit the above chart.
 
 ## Scroll Multi-series Stacked Column 2D + Line Dual Y-Axis Chart
 
@@ -164,9 +164,9 @@ For the detailed list of attributes, refer to the [chart attributes](/chart-attr
 
 The scroll multi-series stacked column 2D + line dual y-axis chart thus looks like as shown below:
 
-LIVE CHART
+{% embed_all standard-charts-scroll-charts-example-13.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/y6smqx5o/) to edit the above chart.
 
 ## Configure the Number of Visible Data Plots
 
