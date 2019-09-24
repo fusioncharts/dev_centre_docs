@@ -117,3 +117,14 @@ The gauge with reverse color scale looks like as shown below:
 {% embed_chart gauges-and-widgets-linear-example-28.js %}
 
 Click [here](/chart-guide/gauges-and-widgets/linear-gauge#reverse-the-order-of-the-color-scale) to know more.
+
+## Set Canvas Padding
+
+FusionCharts Suite XT allows you to add space between the canvas border and the particular side of the chart canvas. To do so, the following attributes are used:
+
+- `canvasLeftPadding`
+- `canvasRightPadding`
+- `canvasTopPadding`
+- `canvasBottomPadding`
+
+Click [here](/chart-guide/chart-configurations/chart-paddings-and-margins#set-canvas-padding) to know more.
