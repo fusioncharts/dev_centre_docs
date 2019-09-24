@@ -20,7 +20,7 @@ heading: Version History
 
 - [Exception Handling](/fusioncharts-aspnet-visualization/getting-started/exception-handling-in-fcnet) has been introduced to Visualization Engine of FusionCharts.NET library.
 
-- [Custure](/fusioncharts-aspnet-visualization/data-engine/culture) has been introduced to DataEngine.
+- [Culture](/fusioncharts-aspnet-visualization/data-engine/culture) has been introduced to DataEngine.
 
 <h4>Improvement</h4>
 
