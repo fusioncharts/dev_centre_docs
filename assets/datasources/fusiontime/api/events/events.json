@@ -1,0 +1,233 @@
+[
+   {
+      "name": "timeMarkerRollOver",
+      "shortDescription": "This event is fired when a user hovers over time marker.",
+      "description": "This event is fired when a user hovers over time instant marker’s box or a time span marker’s rectangular area.",
+      "example": {
+         "source": "store",
+         "slug": "simple-timeseries-chart-event-dataplotclick"
+      },
+      "tags": ["Hover", "Time Marker"],
+      "syntax": "{\r\n    \"datasource\":{\r\n        \"chart\": {\r\n            // ...\r\n        },\r\n        \"data\":[\r\n            // ...\r\n        ]\r\n    },\r\n    \"events\": {\r\n        \"timeMarkerRollOver\": function(ev) {\r\n            console.log(ev);\r\n        }\r\n  }\r\n}",
+      "params": [
+         {
+            "name": "Parameters",
+            "header": "Parameters",
+            "subparams": [
+               {
+                  "name": "start",
+                  "type": "number",
+                  "description": "The UNIX timestamp corresponding to the start time of the bin in which the plot being clicked exists."
+               },
+               {
+                  "name": "end",
+                  "type": "number",
+                  "description": "The UNIX timestamp corresponding to the end time of the bin in which the plot being clicked exists."
+               },
+               {
+                  "name": "startText",
+                  "type": "string",
+                  "description": "The `start` timestamp represented in a human readable format."
+               },
+               {
+                  "name": "endText",
+                  "type": "string",
+                  "description": "The `end` timestamp represented in a human readable format."
+               },
+               {
+                  "name": "formatter",
+                  "type": "string",
+                  "description": "The formatter string used to format the `start` and `end` timestamps as `startText` and `endText` respectively."
+               },
+               {
+                  "name": "label",
+                  "type": "string[]",
+                  "description": "An array of time marker labels."
+               },
+               {
+                  "name": "type",
+                  "type": "string",
+                  "description": "The type of the time marker - `full` or `minimal`."
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "name": "dataPlotClick",
+      "shortDescription": "This event is fired when a data plot is clicked.",
+      "description": "This event is fired when a data plot is clicked.",
+      "info": "The payload data of event object will vary slightly based on plot type. Refer to parameter tables below to know more.",
+      "example": {
+         "source": "local",
+         "slug": "dataPlotClick"
+      },
+      "tags": ["Click", "Data Plot"],
+      "syntax": "{\r\n    \"dataSource\": {\r\n        \"chart\": {\r\n            // ...\r\n        },\r\n        \"data\":[\r\n            // ...\r\n        ]\r\n    },\r\n    \"events\": {\r\n        \"dataPlotClick\": function(ev) {\r\n            console.log(ev);\r\n        }\r\n    }\r\n}",
+      "params": [
+         {
+            "name": "Common across all plots",
+            "header": "Common across all plots",
+            "subparams": [
+               {
+                  "name": "start",
+                  "type": "number",
+                  "description": "The UNIX timestamp corresponding to the start time of the bin in which the plot being clicked exists."
+               },
+               {
+                  "name": "end",
+                  "type": "number",
+                  "description": "The UNIX timestamp corresponding to the end time of the bin in which the plot being clicked exists."
+               },
+               {
+                  "name": "startText",
+                  "type": "string",
+                  "description": "The `start` timestamp represented in a human readable format."
+               },
+               {
+                  "name": "endText",
+                  "type": "string",
+                  "description": "The `end` timestamp represented in a human readable format."
+               },
+               {
+                  "name": "timeFormatter",
+                  "type": "string",
+                  "description": "The formatter string used to represent the `start`/`end` timestamps as `startText`/`endText`."
+               },
+               {
+                  "name": "plotType",
+                  "type": "string",
+                  "description": "The type of the plot being clicked - `column`, `line`, `stepLine`, `smoothLine`, `area`, `stepArea`, `smoothArea`, `candlestick` or `ohlc`."
+               },
+               {
+                  "name": "series",
+                  "type": "string",
+                  "description": "The name of the series that the plot belongs to."
+               },
+               {
+                  "name": "seriesValue",
+                  "type": "string",
+                  "description": "The value of the `series` that the plot represents."
+               },
+               {
+                  "name": "binUnit",
+                  "type": "string",
+                  "description": "The unit of time being represented in the bin - `millisecond`, `second`, `minute`, `hour`, `day`, `month` or `year`."
+               },
+               {
+                  "name": "binMultiplier",
+                  "type": "number",
+                  "description": "The multiplier of the `binUnit` being displayed."
+               },
+               {
+                  "name": "aggregation",
+                  "type": "string",
+                  "description": "The aggregation strategy used aggregate the values in the bin - `sum`, `average`, `min`, `max`, `first`, `last`."
+               }
+            ]
+         },
+         {
+            "name": "Column, Line, Step Line, Smooth Line, Area, Step Area, Smooth Area",
+            "header": "Column, Line, Step Line, Smooth Line, Area, Step Area, Smooth Area",
+            "subparams": [
+               {
+                  "name": "measure",
+                  "type": "string",
+                  "description": "The name of the measure being represented by the plot."
+               },
+               {
+                  "name": "binValue",
+                  "type": "number",
+                  "description": "The raw aggregated value being represented by the plot."
+               },
+               {
+                  "name": "binValueFormatted",
+                  "type": "string",
+                  "description": "The aggregated `binValue` being displayed by the plot, after formatting."
+               }
+            ]
+         },
+         {
+            "name": "Candlestick, OHLC",
+            "header": "Candlestick, OHLC",
+            "subparams": [
+               {
+                  "name": "measure",
+                  "type": "string",
+                  "description": "The name of the measure being represented as the `close` value of the plot."
+               },
+               {
+                  "name": "measureOpen",
+                  "type": "string",
+                  "description": "The name of the measure being represented as the `open` value of the plot."
+               },
+               {
+                  "name": "measureHigh",
+                  "type": "string",
+                  "description": "The name of the measure being represented as the `high` value of the plot."
+               },
+               {
+                  "name": "measureLow",
+                  "type": "string",
+                  "description": "The name of the measure being represented as the `low` value of the plot."
+               },
+               {
+                  "name": "measureClose",
+                  "type": "string",
+                  "description": "The name of the measure being represented as the `close` value of the plot."
+               },
+               {
+                  "name": "binValue",
+                  "type": "number",
+                  "description": "The raw aggregated `close` value being represented by the plot."
+               },
+               {
+                  "name": "binValueFormatted",
+                  "type": "string",
+                  "description": "The aggregated `close` value being displayed by the plot, after formatting."
+               },
+               {
+                  "name": "binOpen",
+                  "type": "number",
+                  "description": "The raw aggregated `open` value being represented by the plot."
+               },
+               {
+                  "name": "binOpenFormatted",
+                  "type": "string",
+                  "description": "The aggregated `open` value being displayed by the plot, after formatting."
+               },
+               {
+                  "name": "binHigh",
+                  "type": "number",
+                  "description": "The raw aggregated `high` value being represented by the plot."
+               },
+               {
+                  "name": "binHighFormatted",
+                  "type": "string",
+                  "description": "The aggregated `high` value being displayed by the plot, after formatting."
+               },
+               {
+                  "name": "binLow",
+                  "type": "number",
+                  "description": "The raw aggregated `low` value being represented by the plot."
+               },
+               {
+                  "name": "binLowFormatted",
+                  "type": "string",
+                  "description": "The aggregated `low` value being displayed by the plot, after formatting."
+               },
+               {
+                  "name": "binClose",
+                  "type": "number",
+                  "description": "The raw aggregated `close` value being represented by the plot."
+               },
+               {
+                  "name": "binCloseFormatted",
+                  "type": "string",
+                  "description": "The aggregated `close` value being displayed by the plot, after formatting."
+               }
+            ]
+         }
+      ]
+   }
+]
