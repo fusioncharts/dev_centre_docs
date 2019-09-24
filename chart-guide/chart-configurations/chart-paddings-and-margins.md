@@ -184,8 +184,16 @@ Refer to the code below:
 
 > You can also set the above attributes individually to add space to the particular side of the chart canvas.
 
-The bubble chart looks like as shown below:
+Now, let’s look at the chart given below:
+
+{% embed_chart chart-configurations-chart-paddings-and-margins-example-9.js %}
+
+As you can see in the above chart, the bubble for **Reebok** is getting partially cropped by the canvas border. You can prevent this from happening and display the entire bubble, by applying the `canvasTopPadding` attribute to the chart.
+
+In the above chart, when you set the value of `canvasTopPadding` attribute to `15`, it will look as shown below:
 
 {% embed_chart chart-configurations-chart-paddings-and-margins-example-8.js %}
+
+As you can see in the above chart, the bubble for **Reebok** is now fully visible.
 
 Click [here](http://jsfiddle.net/fusioncharts/5amt92Le/) to edit the above chart.
