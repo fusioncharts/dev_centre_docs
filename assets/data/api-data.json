@@ -27638,7 +27638,7 @@
                   "anchorBgColor": {
                       "name": "anchorBgColor",
                       "type": ["hex color code"],
-                      "description": "Sets the background color of an anchor. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the background color of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27647,7 +27647,7 @@
                   "anchorBgAlpha": {
                       "name": "anchorBgAlpha",
                       "type": ["number"],
-                      "description": "Sets the background transparency of an anchor. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the background transparency of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27656,7 +27656,7 @@
                   "anchorAlpha": {
                       "name": "anchorAlpha",
                       "type": ["number"],
-                      "description": "Sets the transparency of an anchor. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the transparency of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27665,7 +27665,7 @@
                   "anchorBorderColor": {
                       "name": "anchorBorderColor",
                       "type": ["hex color code"],
-                      "description": "Sets the color of the anchor border. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the color of the anchor border. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27674,7 +27674,7 @@
                   "anchorBorderThickness": {
                       "name": "anchorBorderThickness",
                       "type": ["number"],
-                      "description": "Sets the thickness of the anchor border. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the thickness of the anchor border. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27683,7 +27683,7 @@
                   "anchorRadius": {
                       "name": "anchorRadius",
                       "type": ["number"],
-                      "description": "Sets the radius of an anchor. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the radius of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27692,7 +27692,7 @@
                   "anchorSides": {
                       "name": "anchorSides",
                       "type": ["number"],
-                      "description": "Sets the number of sides of an anchor. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the number of sides of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27701,7 +27701,7 @@
                   "anchorStartAngle": {
                       "name": "anchorStartAngle",
                       "type": ["number"],
-                      "description": "Sets the starting angle of an anchor. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the starting angle of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27710,7 +27710,7 @@
                   "anchorHoverColor": {
                       "name": "anchorHoverColor",
                       "type": ["hex color code"],
-                      "description": "Sets the color of an anchor when it is hovered over. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the color of an anchor when it is hovered over. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27719,7 +27719,7 @@
                   "anchorHoverAlpha": {
                       "name": "anchorHoverAlpha",
                       "type": ["number"],
-                      "description": "Sets the transparency of an anchor when it is hovered over. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the transparency of an anchor when it is hovered over. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27728,7 +27728,7 @@
                   "anchorHoverSides": {
                       "name": "anchorHoverSides",
                       "type": ["number"],
-                      "description": "Sets the number of sides an anchor has when it is hovered over. \n\n >Applicable on the Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "description": "Sets the number of sides an anchor has when it is hovered over. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
