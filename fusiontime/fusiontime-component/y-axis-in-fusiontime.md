@@ -312,14 +312,19 @@ Refer to the code given below:
 
 ```javascript
 "dataSource": {
-    yAxis:{
+    yAxis: [{
+        plot: {
+            value: 'Heat Flux'
+        },
+        title: 'Heat Flux (in W/m²)',
         "showGridband": "1",
         "style": {
             "grid-band": {
-                fill: "#D8D8D8"
+                "fill": "#f5f5ef"
             }
         }
-    }
+        // type: 'log'
+    }]
 }
 ```
 
@@ -327,7 +332,7 @@ In the above chart, fill color of the grid band is set to **#D8D8D8**.
 
 A time-series chart rendered using y-axis grid bands is shown below:
 
-LIVE CHART
+{% embed_ftChart grid-band-in-line-chart %}
 
 ## Change Log Base
 
