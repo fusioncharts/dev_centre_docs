@@ -54,7 +54,7 @@ heading: Version 3.14.x
 
 - Extra spaces are no longer truncated when you include non-breaking space codes (`&nbsp;` `&#160;` or `&#xA0;`) in lines of text.
 
-- In this version, 487 core map files have been updated. Click [here](/upgrading/maps-improvement/maps-improvement-3-14-1) to get the list of updated maps.
+- In this version, 77 core map files have been updated. Click [here](/upgrading/maps-improvement/maps-improvement-3-14-1) to get the list of updated maps.
 
 <h4>Fixes</h4>
 

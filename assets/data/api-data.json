@@ -27539,7 +27539,7 @@
                   "borderColor": {
                       "name": "borderColor",
                       "type": ["hex color code"],
-                      "description": "Sets the color of the plot border. \n\n >Applicable on the Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+                      "description": "Sets the color of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -27548,7 +27548,7 @@
                   "borderAlpha": {
                       "name": "borderAlpha",
                       "type": ["number"],
-                      "description": "Sets the transparency of the plot border. \n\n >Applicable on the Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+                      "description": "Sets the transparency of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
