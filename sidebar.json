@@ -1792,6 +1792,11 @@
                 "visibility": false
               },
               {
+                "title": "Maps Improvement",
+                "path": "/upgrading/maps-improvement/maps-improvement-3-14-1",
+                "visibility": false
+              },
+              {
                 "title": "What's New",
                 "path": "/upgrading/whats-new"
               },
