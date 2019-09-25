@@ -12,23 +12,23 @@ heading: Version 3.14.x
 
 - Starting v3.14.1, you have seven new types of charts available, which are as follows:
 
-  - [Scroll Bar 2D Chart](https://www.fusioncharts.com/dev/upgrading/whats-new#scroll-bar-2d-chart)
+  - [Scroll Bar 2D Chart](/upgrading/whats-new#scroll-bar-2d-chart)
 
-  - [Scroll Stacked Bar 2D Chart](https://www.fusioncharts.com/dev/upgrading/whats-new#scroll-stacked-bar-2d-chart)
+  - [Scroll Stacked Bar 2D Chart](/upgrading/whats-new#scroll-stacked-bar-2d-chart)
 
-  - [Scroll Multi-series Stacked Column 2D](https://www.fusioncharts.com/dev/upgrading/whats-new#scroll-multi-series-stacked-column-2d)
+  - [Scroll Multi-series Stacked Column 2D](/upgrading/whats-new#scroll-multi-series-stacked-column-2d)
 
-  - [Scroll Multi-series Stacked Column 2D + Line Dual Y-Axis Chart](https://www.fusioncharts.com/dev/upgrading/whats-new#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart)
+  - [Scroll Multi-series Stacked Column 2D + Line Dual Y-Axis Chart](/upgrading/whats-new#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart)
 
-  - [Stacked Column 2D Line Dual Y-axis Chart](https://www.fusioncharts.com/dev/upgrading/whats-new#stacked-column-2d-line-dual-y-axis-chart)
+  - [Stacked Column 2D Line Dual Y-axis Chart](/upgrading/whats-new#stacked-column-2d-line-dual-y-axis-chart)
 
-  - [Stacked Area 2D Line Dual Y-axis Chart](https://www.fusioncharts.com/dev/upgrading/whats-new#stacked-area-2d-line-dual-y-axis-chart)
+  - [Stacked Area 2D Line Dual Y-axis Chart](/upgrading/whats-new#stacked-area-2d-line-dual-y-axis-chart)
 
-  - [3D Dual Y-axis Combination Chart](https://www.fusioncharts.com/dev/upgrading/whats-new#3d-dual-y-axis-combination-chart)
+  - [3D Dual Y-axis Combination Chart](/upgrading/whats-new#3d-dual-y-axis-combination-chart)
 
-- Chart data can now be [exported in CSV format](https://www.fusioncharts.com/dev/upgrading/whats-new#export-chart-data-in-csv-format) from the hamburger menu.
+- Chart data can now be [exported in CSV format](/upgrading/whats-new#export-chart-data-in-csv-format) from the hamburger menu.
 
-- You can now [reverse (right to left)](https://www.fusioncharts.com/dev/upgrading/whats-new#reverse-the-color-scale-of-the-linear-gauge) the order of the color scale in a horizontal linear gauge.
+- You can now [reverse (right to left)](/upgrading/whats-new#reverse-the-color-scale-of-the-linear-gauge) the order of the color scale in a horizontal linear gauge.
 
 - You now have the option to use four new attributes to [control padding](http://paradocs.fusioncharts.net:4001/chart-guide/chart-configurations/chart-paddings-and-margins#set-canvas-padding), which prevents data plots along the edges of the canvas from getting clipped:
 
@@ -44,9 +44,9 @@ heading: Version 3.14.x
 
 - Existing data plot events, like dataPlotClick, dataPlotRollOver, dataPlorRollOut, etc, will also have cosmetic information of the plots.
 
-- You can now display the cumulative [sum of stacked area plots](https://www.fusioncharts.com/dev/upgrading/whats-new#display-the-cumulative-sum-of-stacked-area-chart) above the topmost area plot.
+- You can now display the cumulative [sum of stacked area plots](/upgrading/whats-new#display-the-cumulative-sum-of-stacked-area-chart) above the topmost area plot.
 
-- Some attributes of data plot cosmetics like `valueFontColor`, `valueBgColor` and `valueBorderColor` will now apply at data series and individual [data point level](https://www.fusioncharts.com/dev/upgrading/whats-new#customize-data-value-of-an-individual-data-plot).
+- Some attributes of data plot cosmetics like `valueFontColor`, `valueBgColor` and `valueBorderColor` will now apply at data series and individual [data point level](/upgrading/whats-new#customize-data-value-of-an-individual-data-plot).
 
 - You can now set `yAxisMinValue`, even if all the values on the Y-axis are `null`. Earlier, it would default to `0`.
 
