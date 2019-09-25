@@ -12,7 +12,7 @@ FusionCharts Suite XT adds a scrolling feature to the bar 2D chart. The alias na
 
 A single-series scroll bar 2D chart looks like:
 
-{% embed_chart standard-charts-scroll-charts-example-10.js %}
+{% embed_all standard-charts-scroll-charts-example-10.js %}
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-bar-2d-chart) to know more.
 
@@ -22,7 +22,7 @@ FusionCharts Suite XT adds a scrolling feature to the stacked bar 2D chart. The 
 
 A scroll stacked bar 2D chart looks like:
 
-{% embed_chart standard-charts-scroll-charts-example-11.js %}
+{% embed_all standard-charts-scroll-charts-example-11.js %}
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-stacked-bar-2d-chart) to know more.
 
@@ -32,7 +32,7 @@ FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 
 
 A scroll multi-series stacked column 2D chart looks like:
 
-{% embed_chart standard-charts-scroll-charts-example-12.js %}
+{% embed_all standard-charts-scroll-charts-example-12.js %}
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d) to know more.
 
@@ -42,7 +42,7 @@ FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 
 
 A scroll multi-series stacked column 2D + line dual y-axis chart looks like:
 
-{% embed_chart standard-charts-scroll-charts-example-13.js %}
+{% embed_all standard-charts-scroll-charts-example-13.js %}
 
 Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart) to know more.
 
@@ -52,7 +52,7 @@ FusionCharts Suite XT introduces a new combination chart, i.e., stacked column 2
 
 A stacked column 2D line dual y-axis chart looks like as shown below:
 
-{% embed_chart standard-charts-combination-chart-example-15.js %}
+{% embed_all standard-charts-combination-chart-example-15.js %}
 
 Click [here](/chart-guide/standard-charts/combination-charts#stacked-column-2d-line-dual-y-axis-chart) to know more.
 
@@ -62,7 +62,7 @@ FusionCharts Suite XT introduces a new combination chart, i.e., stacked area 2D 
 
 A stacked area 2D line dual y-axis chart looks like as shown below:
 
-{% embed_chart standard-charts-combination-chart-example-14.js %}
+{% embed_all standard-charts-combination-chart-example-14.js %}
 
 Click [here](/chart-guide/standard-charts/combination-charts#stacked-area-2d-line-dual-y-axis-chart) to know more.
 
@@ -72,7 +72,7 @@ FusionCharts Suite XT allows you to render a dual y-axis combination chart in 3D
 
 A dual y-axis combination chart in 3D looks like as shown below:
 
-{% embed_chart standard-charts-combination-chart-example-13.js %}
+{% embed_all standard-charts-combination-chart-example-13.js %}
 
 Click [here](/chart-guide/standard-charts/combination-charts#3d-dual-y-axis-combination-chart) to know more.
 
@@ -82,7 +82,7 @@ FusionCharts Suite XT allows you to export chart data in CSV format.
 
 A column 2D chart with export enabled is shown below. Click the IMAGE menu button and select the **Export as CSV** option to export the chart data.
 
-{% embed_chart exporting-as-image-and-pdf-introduction-example-1.js %}
+{% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
 Click [here](/exporting-charts/using-fc-export-server/exporting-chart-data) to know more.
 
