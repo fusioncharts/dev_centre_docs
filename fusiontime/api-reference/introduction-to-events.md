@@ -8,7 +8,7 @@ A FusionCharts Time-Series chart emits events in order to allow developers to ho
 
 As an example, refer to the following sample:
 
-LIVE SAMPLE
+{% embed_ftChart introduction-to-events-sample %}
 
 In the above sample, whenever the time spread on the time axis (or xAxis) changes, an event called `selectionChange` is fired. It carries information about the start and end of the time spread (on time axis or xAxis) and the size of each bin which is encoded as a single data plot.
 
