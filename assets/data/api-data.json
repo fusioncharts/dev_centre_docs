@@ -30919,7 +30919,1150 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    }
+                    },
+                    "color": {
+                      "name": "color",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "alpha": {
+                      "name": "alpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderColor": {
+                      "name": "borderColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderAlpha": {
+                      "name": "borderAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderThickness": {
+                      "name": "borderThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderDashed": {
+                      "name": "borderDashed",
+                      "type": ["boolean"],
+                      "description": "Makes the plot border dashed. \n\n >Applicable on the Column chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "gradientColor": {
+                      "name": "gradientColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color gradient of the plot. \n\n >Applicable on the Column chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverColor": {
+                      "name": "hoverColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot when it is hovered over. \n\n >Applicable on the: \n -Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts.  \n - Scatter chart and its variants. \n - Bubble Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverAlpha": {
+                      "name": "hoverAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot when it is hovered over. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts.  \n - Scatter chart and its variants. \n - Bubble Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverScale": {
+                      "name": "hoverScale",
+                      "type": ["number"],
+                      "description": "Sets the scale for enlargement of a plot when hovered over. \n\n >Applicable on the Bubble Charts \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderHoverColor": {
+                      "name": "borderHoverColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot border when it is hovered over. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderHoverAlpha": {
+                      "name": "borderHoverAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot border when it is hovered over. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderHoverThickness": {
+                      "name": "borderHoverThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the plot border when it is hovered over. \n\n >Applicable on the: \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorBgColor": {
+                      "name": "anchorBgColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the background color of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorBgAlpha": {
+                      "name": "anchorBgAlpha",
+                      "type": ["number"],
+                      "description": "Sets the background transparency of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorAlpha": {
+                      "name": "anchorAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorBorderColor": {
+                      "name": "anchorBorderColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the anchor border. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorBorderThickness": {
+                      "name": "anchorBorderThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the anchor border. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorRadius": {
+                      "name": "anchorRadius",
+                      "type": ["number"],
+                      "description": "Sets the radius of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorSides": {
+                      "name": "anchorSides",
+                      "type": ["number"],
+                      "description": "Sets the number of sides of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorStartAngle": {
+                      "name": "anchorStartAngle",
+                      "type": ["number"],
+                      "description": "Sets the starting angle of an anchor. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorHoverColor": {
+                      "name": "anchorHoverColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of an anchor when it is hovered over. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorHoverAlpha": {
+                      "name": "anchorHoverAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of an anchor when it is hovered over. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "anchorHoverSides": {
+                      "name": "anchorHoverSides",
+                      "type": ["number"],
+                      "description": "Sets the number of sides an anchor has when it is hovered over. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Scatter chart and its variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "dashed": {
+                      "name": "dashed",
+                      "type": ["boolean"],
+                      "description": "Makes the plot border dashed. \n\n >Applicable on the: \n - Line & Area chart and their variants. \n - Candlestick Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "valuePosition": {
+                      "name": "valuePosition",
+                      "type": ["string"],
+                      "description": "Adjusts vertical alignment of data values with respect to data plots. \n\n >Applicable on the Line & Area chart and their variants. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "showLabel": {
+                      "name": "showLabel",
+                      "type": ["boolean"],
+                      "description": "Displays or hides data labels. \n\n >Applicable on the: \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "showValue": {
+                      "name": "showValue",
+                      "type": ["boolean"],
+                      "description": "Displays or hides data values. \n\n >Applicable on the: \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Scatter chart and its variants. \n - Heatmap Chart. \n - BoxAndWhisker Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal & Vertical Bullet Graph. \n - Horizontal Linear Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "label": {
+                      "name": "label",
+                      "type": ["string"],
+                      "description": "Sets the label of a plot slice. \n\n >Applicable on the: \n - Funnel Chart. \n - Pyramid Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "isSliced": {
+                      "name": "isSliced",
+                      "type": ["string"],
+                      "description": "Makes the plot sliced. \n\n >Applicable on the: \n - Funnel Chart. \n - Pyramid Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "labelFont": {
+                      "name": "labelFont",
+                      "type": ["string"],
+                      "description": "Sets the font of the label of a plot slice. \n\n >Applicable on the Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "labelFontColor": {
+                      "name": "labelFontColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the font color of the label of a plot slice. \n\n >Applicable on the Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "labelLink": {
+                      "name": "labelLink",
+                      "type": ["string"],
+                      "description": "Links a label to a target object. \n\n >Applicable on the Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "dashed": {
+                      "name": "dashed",
+                      "type": ["string"],
+                      "description": "Makes a data plot dashed. \n\n >Applicable on the Pie2D & Doughnut2D chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "labelPosition": {
+                      "name": "labelPosition",
+                      "type": ["string"],
+                      "description": "Sets the position of a plot label. \n\n >Applicable on the Pie2D & Doughnut2D chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "valuePosition": {
+                      "name": "valuePosition",
+                      "type": ["string"],
+                      "description": "Sets the position of a plot value. \n\n >Applicable on the Pie2D & Doughnut2D chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "is3dOnHover": {
+                      "name": "is3dOnHover",
+                      "type": ["boolean"],
+                      "description": "Makes a data plot 3D when hovered over. \n\n >Applicable on the Bubble Charts \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "use3DLighting": {
+                      "name": "use3DLighting",
+                      "type": ["boolean"],
+                      "description": "Applies 3D lighting on a data plot when hovered over. \n\n >Applicable on the Bubble Charts \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "fillColor": {
+                      "name": "fillColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the fill color of a data plot. \n\n >Applicable on the Treemap. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "fontColor": {
+                      "name": "fontColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the font color of a label text. \n\n >Applicable on the Treemap. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "showPlotBorder": {
+                      "name": "showPlotBorder",
+                      "type": ["boolean"],
+                      "description": "Show or hide a plot border. \n\n >Applicable on the: \n - MultiLevel Pie Chart. \n - Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "open": {
+                      "name": "open",
+                      "type": ["boolean"],
+                      "description": "Sets the opening price for a set. \n\n >Applicable on the Candlestick Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "close": {
+                      "name": "close",
+                      "type": ["boolean"],
+                      "description": "Sets the closing price for a set. \n\n >Applicable on the Candlestick Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "high": {
+                      "name": "high",
+                      "type": ["string"],
+                      "description": "Sets the high price for a set. \n\n >Applicable on the Candlestick Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "low": {
+                      "name": "low",
+                      "type": ["string"],
+                      "description": "Sets the low price for a set. \n\n >Applicable on the Candlestick Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "volume": {
+                      "name": "volume",
+                      "type": ["number"],
+                      "description": "Sets the volume of transaction. \n\n >Applicable on the Candlestick Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "displayValue": {
+                      "name": "displayValue",
+                      "type": ["boolean"],
+                      "description": "Shows the plot value above a data plot. \n\n >Applicable on the Candlestick Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "colorRangeLabel": {
+                      "name": "colorRangeLabel",
+                      "type": ["string"],
+                      "description": "Sets the color range labels in hex code. \n\n >Applicable on the Heatmap Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "value": {
+                      "name": "value",
+                      "type": ["string"],
+                      "description": "Displays the value of a data plot. \n\n >Applicable on the: \n - BoxAndWhisker Chart. \n - Horizontal Linear Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperBoxColor": {
+                      "name": "upperBoxColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the upper quartile box. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperBoxAlpha": {
+                      "name": "upperBoxAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the upper quartile box. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerBoxColor": {
+                      "name": "lowerBoxColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the lower quartile box. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerBoxAlpha": {
+                      "name": "lowerBoxAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the lower quartile box. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperQuartileColor": {
+                      "name": "upperQuartileColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the upper quartile line. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperQuartileThickness": {
+                      "name": "upperQuartileThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the upper quartile line. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperQuartileAlpha": {
+                      "name": "upperQuartileAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the upper quartile line. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerQuartileColor": {
+                      "name": "lowerQuartileColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the lower quartile line. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerQuartileThickness": {
+                      "name": "lowerQuartileThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the lower quartile line. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerQuartileAlpha": {
+                      "name": "lowerQuartileAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the lower quartile line. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperBoxBorderColor": {
+                      "name": "upperBoxBorderColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the upper quartile box border. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperBoxBorderThickness": {
+                      "name": "upperBoxBorderThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the upper quartile box border. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperBoxBorderAlpha": {
+                      "name": "upperBoxBorderAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the upper quartile box border. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerBoxBorderColor": {
+                      "name": "lowerBoxBorderColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the lower quartile box border. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerBoxBorderThickness": {
+                      "name": "lowerBoxBorderThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the lower quartile box border. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerBoxBorderAlpha": {
+                      "name": "lowerBoxBorderAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the lower quartile box border. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperWhiskerColor": {
+                      "name": "upperWhiskerColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the upper whisker. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperWhiskerThickness": {
+                      "name": "upperWhiskerThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the upper whisker. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "upperWhiskerAlpha": {
+                      "name": "upperWhiskerAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the upper whisker. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerWhiskerColor": {
+                      "name": "lowerWhiskerColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the lower whisker. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerWhiskerThickness": {
+                      "name": "lowerWhiskerThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the lower whisker. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "lowerWhiskerAlpha": {
+                      "name": "lowerWhiskerAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the lower whisker. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "outliers": {
+                      "name": "outliers",
+                      "type": ["string"],
+                      "description": "Specifies values greater than the maximum value in the set of data provided. \n\n >Applicable on the BoxAndWhisker Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "baseWidth": {
+                      "name": "baseWidth",
+                      "type": ["number"],
+                      "description": "Width of the bottom part of the dial (the part connected to pivot). \n\n >Applicable on the Angular Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "bgColor": {
+                      "name": "bgColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the background color for the chart. \n\n >Applicable on the: \n - Angular Gauge. \n - Gantt Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "bgAlpha": {
+                      "name": "bgAlpha",
+                      "type": ["hex color code"],
+                      "description": "Sets the background transparency for the chart. \n\n >Applicable on the: \n - Horizontal Linear Gauge. \n - Gantt Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "editMode": {
+                      "name": "editMode",
+                      "type": ["boolean"],
+                      "description": "Make a dial editable. \n\n >Applicable on the: \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "radius": {
+                      "name": "radius",
+                      "type": ["number"],
+                      "description": "Set the radius of a dial. \n\n >Applicable on the: \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "rearExtension": {
+                      "name": "rearExtension",
+                      "type": ["string"],
+                      "description": "Extends the dial beyond the pivot. \n\n >Applicable on the Angular Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "topWidth": {
+                      "name": "topWidth",
+                      "type": ["number"],
+                      "description": "Set the width of the top part of the dial. \n\n >Applicable on the Angular Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "valueX": {
+                      "name": "valueX",
+                      "type": ["number"],
+                      "description": "Sets the X-coordinate for the value textbox. \n\n >Applicable on the Angular Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "valueY": {
+                      "name": "valueY",
+                      "type": ["number"],
+                      "description": "Sets the Y-coordinate for the value textbox. \n\n >Applicable on the Angular Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "baseRadius": {
+                      "name": "baseRadius",
+                      "type": ["number"],
+                      "description": "Sets the radius of the vertices of the pivot end of the dial. \n\n >Applicable on the Angular Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "plotAsDot": {
+                      "name": "plotAsDot",
+                      "type": ["boolean"],
+                      "description": "Plots the value as dot or bar. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "plotFillPercent": {
+                      "name": "plotFillPercent",
+                      "type": ["boolean"],
+                      "description": "Sets the width percentage of the color range that the plot fill bar should occupy. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "plotFillColor": {
+                      "name": "plotFillColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the fill color of the plot bar. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "plotFillAlpha": {
+                      "name": "plotFillAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot bar. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "plotBorderColor": {
+                      "name": "plotBorderColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot border. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "plotBorderThickness": {
+                      "name": "plotBorderThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the plot border. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "plotBorderAlpha": {
+                      "name": "plotBorderAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot border. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "target": {
+                      "name": "target",
+                      "type": ["number"],
+                      "description": "Sets a target line for the bullet. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "targetColor": {
+                      "name": "targetColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the target line. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "targetThickness": {
+                      "name": "targetThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the target line. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "targetFillPercent": {
+                      "name": "targetFillPercent",
+                      "type": ["boolean"],
+                      "description": "Sets the width percentage of the color range that the target fill bar should occupy. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "targetCapStyle": {
+                      "name": "targetCapStyle",
+                      "type": ["string"],
+                      "description": "Specifies the shape for the ends of the target line. \n\n >Applicable on the Horizontal & Vertical Bullet Graph. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "sides": {
+                      "name": "sides",
+                      "type": ["number"],
+                      "description": "Number of sides a pointer should have. \n\n >Applicable on the Horizontal Linear Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "toolText": {
+                      "name": "toolText",
+                      "type": ["string"],
+                      "description": "Sets the custom tool text for a pointer. \n\n >Applicable on the Horizontal Linear Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "thmBulbRadius": {
+                      "name": "thmBulbRadius",
+                      "type": ["number"],
+                      "description": "Sets the thermometer bulb radius. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "thmHeight": {
+                      "name": "thmHeight",
+                      "type": ["number"],
+                      "description": "Sets the thermometer scale height. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "thmfillcolor": {
+                      "name": "thmfillcolor",
+                      "type": ["hex color code"],
+                      "description": "Sets the thermometer fill color. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "thmGlassColor": {
+                      "name": "thmGlassColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the glass color of the thermometer. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "gaugeFillColor": {
+                      "name": "gaugeFillColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the fill color of the thermometer gauge. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "gaugeFillAlpha": {
+                      "name": "gaugeFillAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the thermometer gauge. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "showGaugeBorder": {
+                      "name": "showGaugeBorder",
+                      "type": ["number"],
+                      "description": "Shows the border of the thermometer gauge. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "gaugeBorderColor": {
+                      "name": "gaugeBorderColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the border color of the thermometer gauge. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "gaugeBorderThickness": {
+                      "name": "gaugeBorderThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the border of the thermometer gauge. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "gaugeBorderAlpha": {
+                      "name": "gaugeBorderAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the border of the thermometer gauge. \n\n >Applicable on the Thermometer Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "cylOriginX": {
+                      "name": "cylOriginX",
+                      "type": ["number"],
+                      "description": "Sets the origin X-coordinate for the cylinder. \n\n >Applicable on the Cylinder Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "cylOriginY": {
+                      "name": "cylOriginY",
+                      "type": ["number"],
+                      "description": "Sets the origin Y-coordinate for the cylinder. \n\n >Applicable on the Cylinder Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "cylRadius": {
+                      "name": "cylRadius",
+                      "type": ["number"],
+                      "description": "Sets the radius of the cylinder gauge. \n\n >Applicable on the Cylinder Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "cylHeight": {
+                      "name": "cylHeight",
+                      "type": ["number"],
+                      "description": "Sets the height of the cylinder gauge. \n\n >Applicable on the Cylinder Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "cylYScale": {
+                      "name": "cylYScale",
+                      "type": ["number"],
+                      "description": "Sets the scale of the cylinder gauge. \n\n >Applicable on the Cylinder Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "cylFillColor": {
+                      "name": "cylFillColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the fill color of the cylinder gauge. \n\n >Applicable on the Cylinder Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "cylGlassColor": {
+                      "name": "cylGlassColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the glass color of the cylinder gauge. \n\n >Applicable on the Cylinder Gauge. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "font": {
+                      "name": "font",
+                      "type": ["string"],
+                      "description": "Sets the font face of a label text. \n\n >Applicable on the Gantt Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "fontColor": {
+                      "name": "fontColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the font color of a label text. \n\n >Applicable on the Gantt Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "fontSize": {
+                      "name": "fontSize",
+                      "type": ["number"],
+                      "description": "Sets the font size of a label text. \n\n >Applicable on the Gantt Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "align": {
+                      "name": "align",
+                      "type": ["string"],
+                      "description": "Sets the alignment of a label text. \n\n >Applicable on the Gantt Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "allowDrag": {
+                      "name": "allowDrag",
+                      "type": ["boolean"],
+                      "description": "Enables or disables dragging. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "numSides": {
+                      "name": "numSides",
+                      "type": ["number"],
+                      "description": "Defines the number of sides when node shape is set as polygon. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "imageNode": {
+                      "name": "imageNode",
+                      "type": ["string"],
+                      "description": "Assigns a GIF/JPG/PNG image to a node. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "imageAlign": {
+                      "name": "imageAlign",
+                      "type": ["number"],
+                      "description": "Sets the alignment of the GIF/JPG/PNG image assigned to a node. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "imageWidth": {
+                      "name": "imageWidth",
+                      "type": ["number"],
+                      "description": "Sets the width of the GIF/JPG/PNG image assigned to a node. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "imageHeight": {
+                      "name": "imageHeight",
+                      "type": ["number"],
+                      "description": "Sets the height of the GIF/JPG/PNG image assigned to a node. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "labelAlign": {
+                      "name": "labelAlign",
+                      "type": ["number"],
+                      "description": "Sets the vertical alignment of the label in a node. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverHeight": {
+                      "name": "hoverHeight",
+                      "type": ["number"],
+                      "description": "Sets the height of a node when hovered over. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverWidth": {
+                      "name": "hoverWidth",
+                      "type": ["number"],
+                      "description": "Sets the width of a node when hovered over. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverRadius": {
+                      "name": "hoverRadius",
+                      "type": ["number"],
+                      "description": "Sets the radius of a node when hovered over. \n\n >Applicable on the Drag Node Chart. \n\n",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  }
                   }
                 }
               }
