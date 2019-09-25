@@ -66,7 +66,11 @@
          "source": "local",
          "slug": "dataPlotClick"
       },
-      "tags": ["Click", "Data Plot"],
+      "tags": {
+         "action": "Click",
+         "component": "",
+         "lifecycle": ""
+      },
       "syntax": "{\r\n    \"dataSource\": {\r\n        \"chart\": {\r\n            // ...\r\n        },\r\n        \"data\":[\r\n            // ...\r\n        ]\r\n    },\r\n    \"events\": {\r\n        \"dataPlotClick\": function(ev) {\r\n            console.log(ev);\r\n        }\r\n    }\r\n}",
       "params": [
          {
