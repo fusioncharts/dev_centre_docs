@@ -1,6 +1,6 @@
 ---
 title: Map Improvements in Version 3.14.1 | FusionCharts
-description: This page consists of list of improvement made in map specification sheet in FusionCharts v3.14.1.
+description: This page consists of list of improvement made in map specification sheets in FusionCharts v3.14.1.
 heading: Map Improvements in Version 3.14.1
 ---
 
