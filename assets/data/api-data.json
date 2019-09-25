@@ -28187,7 +28187,7 @@
                   "bgAlpha": {
                       "name": "bgAlpha",
                       "type": ["hex color code"],
-                      "description": "Sets the background transparency for the chart. \n\n >Applicable on the Horizontal Linear Gauge. \n - Gantt Chart. \n\n",
+                      "description": "Sets the background transparency for the chart. \n\n >Applicable on the: \n - Horizontal Linear Gauge. \n - Gantt Chart. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
@@ -28196,7 +28196,7 @@
                   "editMode": {
                       "name": "editMode",
                       "type": ["boolean"],
-                      "description": "Make a dial editable. \n\n >Applicable on the Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
+                      "description": "Make a dial editable. \n\n >Applicable on the: \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
                       "defaultvalue": "",
                       "optional": "",
                       "nullable": "",
