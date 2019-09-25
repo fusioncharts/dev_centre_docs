@@ -7,7 +7,11 @@
          "source": "store",
          "slug": "simple-timeseries-chart-event-dataplotclick"
       },
-      "tags": ["Hover", "Time Marker"],
+      "tags": {
+         "action": "Click",
+         "component": "Data Plot",
+         "lifecycle": ""
+      },
       "syntax": "{\r\n    \"datasource\":{\r\n        \"chart\": {\r\n            // ...\r\n        },\r\n        \"data\":[\r\n            // ...\r\n        ]\r\n    },\r\n    \"events\": {\r\n        \"timeMarkerRollOver\": function(ev) {\r\n            console.log(ev);\r\n        }\r\n  }\r\n}",
       "params": [
          {
