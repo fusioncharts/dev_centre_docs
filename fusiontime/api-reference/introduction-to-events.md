@@ -6,13 +6,7 @@ heading: Introduction to Events
 
 A FusionCharts Time-Series chart emits events in order to allow developers to hook into certain occurrences that happen in the lifecycle of the chart. Events are triggered by the chart to send a signal to the outside world that a change in its state has occurred. Interacting with various chart components (using a mouse, for example) may also emit events. Developers can programmatically listen to these events and customize their implementations as desired.
 
-As an example, refer to the following sample:
-
-{% embed_ftChart introduction-to-events-sample %}
-
-In the above sample, whenever the time spread on the time axis (or xAxis) changes, an event called `selectionChange` is fired. It carries information about the start and end of the time spread (on time axis or xAxis) and the size of each bin which is encoded as a single data plot.
-
-The spread of time axis can change from multiple user interactions - zooming, panning on chart canvas, selecting some standard range from SRS, specifying a valid range from CRS, dragging the handle bar of the mask in time navigator, or as a result of any other method; and whenever it changes, this event is fired.
+In a time-series chart, the spread of time axis can change from multiple user interactions - zooming, panning on chart canvas, selecting some standard range from SRS, specifying a valid range from CRS, dragging the handle bar of the mask in time navigator, or as a result of any other method; and whenever it changes, this event is fired.
 
 So, if a developer wants to be notified of **any** change in spread of the time axis, he can use this event.
 
