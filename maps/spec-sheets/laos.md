@@ -7,10 +7,6 @@
 Map Name: Laos
 Dimensions (Width x Height): 270x310
 
-
-
-
-
 ### List of Entities
 
 ID | Short label | Label
