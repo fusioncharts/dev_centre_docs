@@ -28348,7 +28348,7 @@
                 }
               }
             }
-          },
+          }
         },
         "dataplotRollOut": {
           "id": "event-dataplotRollOut",
