@@ -2094,7 +2094,7 @@
             "children": [
               {
                 "title": "Introduction to Events",
-                "path": "/fusiontime/fusiontime-data-engine/fusiontime-events"
+                "path": "/fusiontime/api-reference/introduction-to-events"
               },
               {
                 "title": "List of Events",
