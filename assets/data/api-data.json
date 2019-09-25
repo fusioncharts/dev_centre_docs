@@ -21840,7 +21840,106 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    }
+                    },
+                    "color": {
+                      "name": "color",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "alpha": {
+                      "name": "alpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot."
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderColor": {
+                      "name": "borderColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot border",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderAlpha": {
+                      "name": "borderAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot border",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderThickness": {
+                      "name": "borderThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the plot border",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderDashed": {
+                      "name": "borderDashed",
+                      "type": ["boolean"],
+                      "description": "Makes the plot border dashed.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "gradientColor": {
+                      "name": "gradientColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color gradient of the plot.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverColor": {
+                      "name": "hoverColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot when it is hovered over.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverAlpha": {
+                      "name": "hoverAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot when it is hovered over.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderHoverColor": {
+                      "name": "borderHoverColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot border when it is hovered over.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderHoverAlpha": {
+                      "name": "borderHoverAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot border when it is hovered over.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  }
                   }
                 }
               }
@@ -22029,7 +22128,106 @@
                       "optional": "",
                       "nullable": "",
                       "subparams": {}
-                    }
+                    },
+                    "color": {
+                      "name": "color",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "alpha": {
+                      "name": "alpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot."
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderColor": {
+                      "name": "borderColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot border",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderAlpha": {
+                      "name": "borderAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot border",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderThickness": {
+                      "name": "borderThickness",
+                      "type": ["number"],
+                      "description": "Sets the thickness of the plot border",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderDashed": {
+                      "name": "borderDashed",
+                      "type": ["boolean"],
+                      "description": "Makes the plot border dashed.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "gradientColor": {
+                      "name": "gradientColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color gradient of the plot.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverColor": {
+                      "name": "hoverColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot when it is hovered over.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "hoverAlpha": {
+                      "name": "hoverAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot when it is hovered over.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderHoverColor": {
+                      "name": "borderHoverColor",
+                      "type": ["hex color code"],
+                      "description": "Sets the color of the plot border when it is hovered over.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  },
+                  "borderHoverAlpha": {
+                      "name": "borderHoverAlpha",
+                      "type": ["number"],
+                      "description": "Sets the transparency of the plot border when it is hovered over.",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                  }
                   }
                 }
               }
