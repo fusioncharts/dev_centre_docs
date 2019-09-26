@@ -10356,6 +10356,27 @@
         "specSheet": "/maps/spec-sheets/sudanwosouthsudan"
       },
       {
+        "name": "Sudan (Administrative Regions)",
+        "marker": false,
+        "members": [
+          {
+            "name": "Central Darfur",
+            "alias": "centraldarfur",
+            "specSheet": "/maps/spec-sheets/centraldarfur"
+          },
+          {
+            "name": "East Darfur",
+            "alias": "eastdarfur",
+            "specSheet": "/maps/spec-sheets/eastdarfur"
+          },
+          {
+            "name": "West Kurdufan",
+            "alias": "westkurdufan",
+            "specSheet": "/maps/spec-sheets/westkurdufan"
+          }
+        ]
+      },
+      {
         "name": "South Sudan",
         "alias": "southsudan",
         "specSheet": "/maps/spec-sheets/southsudan"
