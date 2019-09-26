@@ -334,6 +334,72 @@ A time-series chart rendered using y-axis grid bands is shown below:
 
 {% embed_ftChart grid-band-in-line-chart %}
 
+## Enable/Disable Automatic Number Formatting
+
+By default, FusionTime formats the y-axis values displayed on the charts using a predefined default format. You can disable the default formatting of the y-axis values to display the raw data in the chart. To disable the default formatting of the y-axis values, set the value of `defaultFormat` attribute to `0` under `format` object.
+
+> The sample formatting applied to the data values visible in the reflect tags, in the tooltip of both data plot and crossline.
+
+Refer to the code below:
+
+```javascript
+dataSource: {
+    yAxis: [{
+        format: {
+        defaultFormat: 0
+        }
+    }],
+}
+```
+
+In the above code, the value of `defaultFormat` attribute has been set to **0**.
+
+> When the `defaultFormat` attribute is set to `false`, all the numbers of a numeric **value** is shown up to 12 significant digits.
+
+The chart rendered with the unformatted data value looks like shown below:
+
+{% embed_ftChart number-formatting-in-fusiontime-using-default-format %}
+
+## Round off the Numeric Values
+
+To round off the y-axis values in a time series chart, give the rounding off value to the `round` attribute.
+
+Refer to the code below:
+
+```javascript
+dataSource: {
+    yAxis: [{
+        format: {
+            round: "1"
+        }
+    }],
+}
+```
+
+In the above code, the value of the `round` attribute is set to **1**, i.e., the time series chart will be displayed with the y-axis values rounded off till three decimal places.
+
+The chart rendered with the `round` attribute set to **1** looks like shown below:
+
+{% embed_ftChart round-off-the-numeric-values %}
+
+The rounding off the y-axis values of a time series charts works in two ways:
+
+- When the value of `round` attribute is set as **positive**, it controls the number of decimal characters after the decimal point.
+
+- Whereas, when set to **negative**, it controls the rounding of the values to the nearest 10s, 100s, 1000s, etc.
+
+Refer to the table below:
+
+| Value   | Round | Rounded value |
+| ------- | ----- | ------------- |
+| 3.14159 | 3     | 3.142         |
+| 3.14159 | 2     | 3.14          |
+| 3.14159 | 1     | 3.1           |
+| 3.14159 | 0     | 3             |
+| 9746.25 | -1    | 9750          |
+| 9746.25 | -2    | 9700          |
+| 9746.25 | -3    | 10000         |
+
 ## Change Log Base
 
 By default, the base of a chart with logarithmic y-axis is set to 10. You can, however, set the base to any value of your requirement. Just ensure that the base value is any natural number. Set the base attribute to specify the base value for the logarithmic chart.
