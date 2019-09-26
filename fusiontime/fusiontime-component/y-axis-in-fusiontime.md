@@ -334,7 +334,7 @@ A time-series chart rendered using y-axis grid bands is shown below:
 
 {% embed_ftChart grid-band-in-line-chart %}
 
-## Enable/Disable Automatic Number Formatting
+## Automatic Number Formatting
 
 By default, FusionTime formats the y-axis values displayed on the charts using a predefined default format. You can disable the default formatting of the y-axis values to display the raw data in the chart. To disable the default formatting of the y-axis values, set the value of `defaultFormat` attribute to `0` under `format` object.
 
