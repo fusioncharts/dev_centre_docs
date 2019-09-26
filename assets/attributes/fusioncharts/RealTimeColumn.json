@@ -1054,7 +1054,7 @@
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.14.0",
-        "name": "valueFontColor"
+        "name": "yAxisValueFontColor"
       },
       {
         "description": "Sets the font size for the Y-axis value texts. \n\nDefault value: 10 px",
@@ -2195,7 +2195,7 @@
     "table": "Attributes for Exporting Charts",
     "attrs": [
       {
-        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG, XLSX or CSV format.  \n\n__Default value__: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "exportEnabled"

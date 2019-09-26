@@ -5,11 +5,7 @@
 #### JavaScript Alias: maps/philippines
 
 Map Name: Philippines
-Dimensions (Width x Height): 580x780
-
-
-
-
+Dimensions (Width x Height): 440x590
 
 ### List of Entities
 
@@ -43,7 +39,7 @@ PH.CB|CB|Cebu
 PH.CL|CL|Compostela Valley
 PH.NC|NC|Cotabato
 PH.DV|DV|Davao del Norte
-PH.DS|DS|Davao del Sur
+PH.DR|DR|Davao del Sur
 PH.DC|DC|Davao Occidental
 PH.DO|DO|Davao Oriental
 PH.DI|DI|Dinagat Islands
@@ -96,3 +92,4 @@ PH.ZN|ZN|Zamboanga del Norte
 PH.ZS|ZS|Zamboanga del Sur
 PH.ZY|ZY|Zamboanga Sibugay
 PH.ST|ST|Surigao del Norte
+PH.ZC|ZC|Zamboanga City

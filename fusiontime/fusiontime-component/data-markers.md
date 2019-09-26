@@ -4,11 +4,9 @@ description: This article outlines the steps to configure Data Markers.
 heading: Data Marker
 ---
 
-Data marker in a chart represents an important event, which occurred on a specific data point. Hovering on a data marker shows additional description of the event in the tooltip.
+Data marker in a chart represents an important event, which occurred on a specific data point. Hovering on a data marker shows an additional description of the event in the tooltip.
 
-> Data Markers are not applicable on Stock Charts.
-
-The image below shows the data marker on a time series chart:
+The image below shows the default data marker on a time series chart:
 
 <img src="{% site.BASE_URL %}/images/fusiontime-component-data-markers.png" alt="Data Markers" width="700" height="420">
 
@@ -87,6 +85,31 @@ dataMarker: [{
 The data marker created using the above code is shown below:
 
 {% embed_ftChart fusioncharts-aspnet-data-markers %}
+
+Starting v1.3.0, FusionTime gives you an option of one more type of data marker, i.e., `pin` which can be used while rendering a time series chart.
+
+The image below shows the pin type data marker on a time series chart:
+
+IMAGE
+
+The code to render a time series chart with `pin` type data marker is shown below:
+
+```javascript
+dataMarker: [
+  {
+    series: "Interest Rate",
+    time: "Mar-1980",
+    type: "pin", //data Marker set to pin
+    identifier: "H",
+    timeFormat: "%b-%Y",
+    tooltext: "As a part of credit control program."
+  }
+];
+```
+
+A time-series chart with pin type data marker looks like as shown below:
+
+LIVE CHART
 
 ## Data Markers in MultiVariate Chart
 

@@ -7,20 +7,16 @@
 Map Name: Kenya
 Dimensions (Width x Height): 290x330
 
-
-
-
-
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
-01|CE|Central
-02|CO|Coast
-03|EA|Eastern
+01|CE|Central Kenya
+02|CO|Coastal Kenya
+03|EA|East Kenya
 05|NA|Nairobi
-06|NE|North Eastern
+06|NE|Northeast Kenya
 07|NY|Nyanza
 08|RV|Rift Valley
-09|WE|Western
+09|WE|West Kenya
 

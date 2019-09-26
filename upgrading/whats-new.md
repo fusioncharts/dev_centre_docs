@@ -4,150 +4,127 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.14.0.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.14.1.
 
-## Top plot border of an area chart
+## Scroll Bar 2D Chart
 
-In area charts, you can now draw the borders of the data plots only at the top of an area plot.
+FusionCharts Suite XT adds a scrolling feature to the bar 2D chart. The alias name to render the scrollable bar 2D chart is `scrollBar2D`. Set the value of `type` attribute to `scrollBar2D` to render a scrollable bar 2D chart.
 
-The image below shows the border only at the top of an area plot.
+A single-series scroll bar 2D chart looks like:
 
-![Top Plot Border](/images/area-chart-drawfullareaborder-top.png)
+{% embed_chart standard-charts-scroll-charts-example-10.js %}
 
-To know more click [here](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart).
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-bar-2d-chart) to know more.
 
-You can also configure the top border of a particular data plot in an area chart with multiple data plots.
+## Scroll Stacked Bar 2D Chart
 
-Take a look at the image given below:
+FusionCharts Suite XT adds a scrolling feature to the stacked bar 2D chart. The alias name to render the scroll stacked bar 2D chart is `scrollStackedBar2D`. Set the value of `type` attribute to `scrollStackedBar2D` to render a scroll stacked bar 2D chart.
 
-![Multi-Series Area Chart](/images/draw-full-area-border-multi-series-area-chart.png)
+A scroll stacked bar 2D chart looks like:
 
-To know more click [here](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart).
+{% embed_chart standard-charts-scroll-charts-example-11.js %}
 
-## Inherit plot border color of an area chart
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-stacked-bar-2d-chart) to know more.
 
-FusionCharts Suite now allows you to set the border color of the area chart by inheriting the plot color.
+## Scroll Multi-series Stacked Column 2D
 
-The chart looks like as shown in the image below:
+FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D chart. The alias name to render the scroll multi-series stacked column 2D chart is `scrollMSStackedColumn2D`. Set the value of `type` attribute to `scrollMSStackedColumn2D` to render a scroll multi-series stacked column 2D chart.
 
-{% embed_chart chart-configurations-area-plot-inherit-border-example-10.js %}
+A scroll multi-series stacked column 2D chart looks like:
 
-Click [here](/chart-guide/chart-configurations/data-plot#inherit-plot-border-color-of-an-area-chart) to know more.
+{% embed_chart standard-charts-scroll-charts-example-12.js %}
 
-## Control the visibility of data values
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d) to know more.
 
-Starting v3.14.0, FusionCharts allows you to control the visibility of data values of the plots by specifying the minimum height of the columns. Data plots less than the minimum height specified will not show the data value text. This will help reduce clutter and improve the readability of the chart.
+## Scroll Multi-series Stacked Column 2D + Line Dual Y-Axis Chart
 
-The chart will look like as shown below:
+FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D + line dual y-axis chart. The alias name to render the scroll multi-series stacked column 2D + line dual y-axis chart is `scrollMSStackedColumn2DLineDy`. Set the value of `type` attribute to `scrollMSStackedColumn2DLineDy` to render the chart.
 
-{% embed_chart minimum-plot-height-for-stacked-chart-example-11.js %}
+A scroll multi-series stacked column 2D + line dual y-axis chart looks like:
 
-Click [here](/chart-guide/chart-configurations/data-values#control-the-visibility-of-data-values) to know more.
+{% embed_chart standard-charts-scroll-charts-example-13.js %}
 
-In the above chart, we can see that the data values of the data plots with height less than 20 pixels have been disabled.
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart) to know more.
 
-### Bubble chart
+## Stacked Column 2D Line Dual Y-axis Chart
 
-A similar scenario can occur for a Bubble chart as well. We cannot calculate the height of a bubble chart so a new attribute `minRadiusForValue` has been introduced where u can specify the minimum radius of the bubble to display the data values of the plots.
+FusionCharts Suite XT introduces a new combination chart, i.e., stacked column 2D line dual y-axis. The alias name to render the stacked column 2D line dual y-axis chart is `stackedcolumn2dlinedy`. Set the value of `type` attribute to `stackedcolumn2dlinedy` to render the chart.
 
-A bubble chart looks like as shown below:
+A stacked column 2D line dual y-axis chart looks like as shown below:
 
-{% embed_chart minimum-plot-radius-for-bubble-chart-example-12.js %}
+{% embed_chart standard-charts-combination-chart-example-15.js %}
 
-Click [here](/chart-guide/chart-configurations/data-values#bubble-chart) to know more.
+Click [here](/chart-guide/standard-charts/combination-charts#stacked-column-2d-line-dual-y-axis-chart) to know more.
 
-### Pie/Doughnut chart
+## Stacked Area 2D Line Dual Y-axis Chart
 
-Starting v3.14.0, FusionCharts Suite XT allows you to place the values inside the pie/doughnut slices of a pie and doughnut chart respectively. This helps to improve the overall look as it saves the canvas area outside the chart.
+FusionCharts Suite XT introduces a new combination chart, i.e., stacked area 2D line dual y-axis. The alias name to render the stacked area 2D line dual y-axis chart is `stackedarea2dlinedy`. Set the value of `type` attribute to `stackedarea2dlinedy` to render the chart.
 
-The chart will look liks as shown below:
+A stacked area 2D line dual y-axis chart looks like as shown below:
 
-{% embed_chart value-position-inside-pie-chart-example-17.js %}
+{% embed_chart standard-charts-combination-chart-example-14.js %}
 
-Click [here](/chart-guide/chart-configurations/data-values#pie-doughnut-chart) to know more.
+Click [here](/chart-guide/standard-charts/combination-charts#stacked-area-2d-line-dual-y-axis-chart) to know more.
 
-In pie/doughnut chart, changing the position of the value can sometimes overlap each other due to the unavailability of space. For this scenario, a new attribute `minAngleForValue` has been introduced which sets the minimum angle of the pie below which the values will not be visible.
+## 3D Dual Y-axis Combination Chart
 
-The chart will look like as shown below:
+FusionCharts Suite XT allows you to render a dual y-axis combination chart in 3D. The alias name to render the dual y-axis combination chart in 3D is `mscombidy3d`. Set the value of `type` attribute to `mscombidy3d` to render the chart.
 
-{% embed_chart value-position-inside-doughnut-chart-example-18.js %}
+A dual y-axis combination chart in 3D looks like as shown below:
 
-Click [here](/chart-guide/chart-configurations/data-values#pie-doughnut-chart) to know more.
+{% embed_chart standard-charts-combination-chart-example-13.js %}
 
-## Set the radius as a percent value
+Click [here](/chart-guide/standard-charts/combination-charts#3d-dual-y-axis-combination-chart) to know more.
 
-You can now set the radius of the pie chart in percent by setting the value of `pieRadius` attribute. When you set the value of `pieRadius` in percent, the radius of the pie is calculated with respect to the chart canvas space.
+## Export Chart Data in CSV Format
 
-Refer to the image shown below:
+FusionCharts Suite XT allows you to export chart data in CSV format.
 
-![Percent Value on Pie Chart](/images/percent-value-in-pie-radius.png)
+A column 2D chart with export enabled is shown below. Click the IMAGE menu button and select the **Export as CSV** option to export the chart data.
 
-Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) to know more.
+{% embed_chart exporting-as-image-and-pdf-introduction-example-1.js %}
 
-In the doughnut chart, you can apply the `pieRadius` attribute to set the radius of the upper threshold of the doughnut chart.
+Click [here](/exporting-charts/using-fc-export-server/exporting-chart-data) to know more.
 
-Refer to the image below:
+## Display the Cumulative Sum of Stacked Area Chart
 
-![Percent Value on Doughnut Chart](/images/pie-radius-in-doughnut-chart.png)
+FusionCharts Suite XT allows you to show the sum of the stacked area plots above the area plot. To show the sum of all the stacked data plots, set the `showSum` attribute to `1`.
 
-Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) to know more.
+A stacked area 2D chart with a cumulative sum looks like:
 
-## X-axis position
+{% embed_chart display-the-cumulative-sum-of-stacked-area-chart.js %}
 
-With 3.14.0, the position of this axis will be configurable - TOP/BOTTOM for vertical charts, LEFT/RIGHT for horizontal charts.
+Click [here](/chart-guide/standard-charts/stacked-charts#display-the-cumulative-sum) to know more.
 
-The chart looks like as shown below:
+## Customize Data Value of an individual Data Plot
 
-{% embed_chart chart-configurations-axes-sample-x-axis-position-13.js %}
+FusionCharts also allows you to customize the properties of data value for an individual data plot. The difference is, to customize all the data values in a chart, you have to specify the attributes under `chart` object. Whereas to customize a data value of a single plot, specify the attributes under `data` object.
 
-Click [here](/chart-guide/chart-configurations/axes#x-axis-position) to know more.
+The column chart with customized data value look like as shown below:
 
-## Y-axis position
+{% embed_chart chart-configurations-data-values-example-11.js %}
 
-Starting 3.14.0, you can customize the position of the Y-axis by setting the value of `yAxisPosition` attribute to `right`. This will render a chart with y-axis on right.
+Click [here](/chart-guide/chart-configurations/data-values#customize-data-value-of-an-individual-data-plot) to know more.
 
-The chart looks like as shown below:
+## Reverse the Color Scale of the Linear Gauge
 
-{% embed_chart chart-configurations-axes-sample-y-axis-position-11.js %}
+FusionCharts allows you to reverse (right to left) the order of the color scale of the gauge.
 
-Click [here](/chart-guide/chart-configurations/axes#y-axis-position) to know more.
+To reverse the order of the color scale of the linear gauge, set the value of `reverseScale` attribute to `1`.
 
-## Configure background properties for y-axis values
+The gauge with reverse color scale looks like as shown below:
 
-You can now configure the background properties of the y-axis values.
+{% embed_chart gauges-and-widgets-linear-example-28.js %}
 
-The chart will look like as shown below:
+Click [here](/chart-guide/gauges-and-widgets/linear-gauge#reverse-the-order-of-the-color-scale) to know more.
 
-{% embed_chart configure-background-properties-for-y-axis-values-example-11.js %}
+## Set Canvas Padding
 
-Click [here](/chart-guide/chart-configurations/axes#configure-background-properties-of-y-axis-names) to know more.
+FusionCharts Suite XT allows you to add space between the canvas border and the particular side of the chart canvas. To do so, the following attributes are used:
 
-## Configure border properties for y-axis values
+- `canvasLeftPadding`
+- `canvasRightPadding`
+- `canvasTopPadding`
+- `canvasBottomPadding`
 
-You can now configure the border properties of the y-axis values.
-
-The chart will look like as shown below:
-
-{% embed_chart configure-border-properties-for-y-axis-values-example-12.js %}
-
-Click [here](/chart-guide/chart-configurations/axes#configure-the-border-properties-of-y-axis-names) to know more.
-
-## Configure font properties for y-axis values
-
-You can now configure the font properties of the y-axis values.
-
-The chart will look like as shown below:
-
-{% embed_chart configure-font-properties-for-y-axis-values-example-13.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/u8n3k46c/) to know more.
-
-## Improve the readability of data values
-
-Often when data values are placed inside the data plot, the data values are not properly visible. Based on the plot color and the text color of the data values it is sometimes difficult to read them. You can now add outline borders to the data value text for better readability.
-
-The chart will look like as shown below:
-
-{% embed_chart text-outline-pie-chart-example-1.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/dL7yc95j/1/) to edit the chart.
+Click [here](/chart-guide/chart-configurations/chart-paddings-and-margins#set-canvas-padding) to know more.
