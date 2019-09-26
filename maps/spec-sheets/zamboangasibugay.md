@@ -5,29 +5,25 @@
 #### JavaScript Alias: maps/zamboangasibugay
 
 Map Name: Zamboanga Sibugay
-Dimensions (Width x Height): 610x570
-
-
-
-
+Dimensions (Width x Height): 440x590
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
-PH.ZS.AI | AI | Alicia
-PH.ZS.BU | BU | Buug
-PH.ZS.DP | DP | Diplahan
-PH.ZS.IE | IE | Imelda
-PH.ZS.II | II | Ipil
-PH.ZS.KB | KB | Kabasalan
-PH.ZS.MB | MB | Mabuhay
-PH.ZS.ML | ML | Malangas
-PH.ZS.NG | NG | Naga
-PH.ZS.OU | OU | Olutanga
-PH.ZS.PY | PY | Payao
-PH.ZS.RS | RS | Roseller Lim
-PH.ZS.SA | SA | Siay
-PH.ZS.TL | TL | Talusan
-PH.ZS.TT | TT | Titay
-PH.ZS.TN | TN | Tungawan
+PH.ZY.AI|AI|Alicia
+PH.ZY.BU|BU|Buug
+PH.ZY.DP|DP|Diplahan
+PH.ZY.IE|IE|Imelda
+PH.ZY.II|II|Ipil
+PH.ZY.KB|KB|Kabasalan
+PH.ZY.MB|MB|Mabuhay
+PH.ZY.ML|ML|Malangas
+PH.ZY.NG|NG|Naga
+PH.ZY.OU|OU|Olutanga
+PH.ZY.PY|PY|Payao
+PH.ZY.RS|RS|Roseller Lim
+PH.ZY.SA|SA|Siay
+PH.ZY.TL|TL|Talusan
+PH.ZY.TT|TT|Titay
+PH.ZY.TN|TN|Tungawan

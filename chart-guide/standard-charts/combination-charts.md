@@ -12,23 +12,29 @@ Combination charts are similar to [multi-series charts](/chart-guide/standard-ch
 
 The combination charts available in the FusionCharts Suite XT are:
 
-* 2D Single Y-axis Combination Chart
+- 2D Single Y-axis Combination Chart
 
-* 3D Single Y-axis Combination Chart
+- 3D Single Y-axis Combination Chart
 
-* 2D Dual Y-axis Combination Chart
+- 2D Dual Y-axis Combination Chart
 
-* Column 3D + Line Single Y-axis Chart
+- 3D Dual Y-axis Combination Chart
 
-* Column 3D + Line Dual Y-axis Chart
+- Column 3D + Line Single Y-axis Chart
 
-* Stacked Column 2D Line Single Y-axis Chart
+- Column 3D + Line Dual Y-axis Chart
 
-* Stacked Column 3D Line Single Y-axis Chart
+- Stacked Column 2D Line Single Y-axis Chart
 
-* Stacked Column 3D Line Dual Y-axis Chart
+- Stacked Column 3D Line Single Y-axis Chart
 
-* Multi Series Stacked Column 2D + Line Dual Y-axis Chart
+- Stacked Column 2D Line Dual Y-axis Chart
+
+- Stacked Column 3D Line Dual Y-axis Chart
+
+- Stacked Area 2D Line Dual Y-axis Chart
+
+- Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
 ## 2D Single Y-axis Combination Chart
 
@@ -36,15 +42,15 @@ Let's create our first combination chart to showcase the comparison of actual re
 
 To create a single y-axis combination chart in 2D follow the steps below:
 
-* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+- In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a multi-series combination chart, set `mscombi2D`.
+- Specify the chart type using the `type` attribute. To render a multi-series combination chart, set `mscombi2D`.
 
-* Set the container object using `renderAt` attribute.
+- Set the container object using `renderAt` attribute.
 
-* Specify the dimension of the chart using `width` and `height` attributes.
+- Specify the dimension of the chart using `width` and `height` attributes.
 
-* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+- Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=mscombi2d) page of single y-axis combination chart.
 
@@ -82,13 +88,29 @@ A 2D combination chart with dual y-axis looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/S52bN/) to edit the dual y-axis combination chart in 2D.
 
-You can also build the above combination chart using Spline and Spline Area. To define any one of the dataset to spline or spline area, set the `renderAs` attribute to `spline` or `splineArea` respectively. 
+You can also build the above combination chart using Spline and Spline Area. To define any one of the dataset to spline or spline area, set the `renderAs` attribute to `spline` or `splineArea` respectively.
 
 In the above sample, let's plot the **Profit %** in `spline` and **Profit** in `splineArea`. With these changes, the chart looks like this:
 
 {% embed_all standard-charts-combination-chart-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ocn63gv8/) to edit the dual y-axis combination chart with `spline` and `splineArea` as data plots.
+
+## 3D Dual Y-axis Combination Chart
+
+Now, let's create a dual y-axis combination chart in 3D. For this, change the value of the `type` attribute from `mscombidy2d` to `mscombidy3d`.
+
+In this chart, we will show a comparison between the revenue, profit, and the profit percentage. The revenue and the profit will be shown as the amount in dollars, but the profit percentage will require a different unit - percentage. These cannot be plotted on a single y-axis. FusionCharts Suite XT allows you to have two y-axes, a primary y-axis, and a secondary y-axis if you have two data of two different numeric units to plot.
+
+Therefore, we've plotted the amount in USD on the primary y-axis (the one on the left) and the profit % on the secondary y-axis (the one on the right).
+
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=mscombidy3d) page of a 3D dual y-axis combination chart.
+
+A dual y-axis combination chart in 3D looks like as shown below:
+
+{% embed_all standard-charts-combination-chart-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wt5ps19k/) to edit the dual y-axis combination chart in 3D.
 
 ## Column 3D + Line Single Y-axis Chart
 
@@ -142,17 +164,41 @@ The above stacked column 3D line looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/gu8jk5yj/) to edit the stacked column 3D line single y-axis chart.
 
+## Stacked Column 2D Line Dual Y-axis Chart
+
+To render the stacked column 2D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn3dline` to `stackedcolumn2dlinedy`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/stackedcolumn2dlinedy) page of the stacked column 2D line dual y-axis chart.
+
+The stacked column 2D line dual y-axis chart looks like:
+
+{% embed_all standard-charts-combination-chart-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/nkr4v76L/) to edit the stacked column 2D line dual y-axis chart.
+
 ## Stacked Column 3D Line Dual Y-axis Chart
 
-To render the stacked column 3D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn3dline` to `stackedcolumn3dlinedy`. Rest of the data structure remains the same.
+To render the stacked column 3D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn2dlinedy` to `stackedcolumn3dlinedy`. Rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=stackedcolumn3dlinedy) page of stacked column 2D line single y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=stackedcolumn3dlinedy) page of stacked column 3D line dual y-axis chart.
 
 The above stacked column 3D line looks like:
 
 {% embed_all standard-charts-combination-chart-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7chax01w/) to edit the stacked column 2D line single y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/7chax01w/) to edit the stacked column 3D line dual y-axis chart.
+
+## Stacked Area 2D Line Dual Y-axis Chart
+
+Now let's see how can you create a stacked area 2D and line chart with dual y-axis. To render the chart, change the value of the `type` attribute from `stackedcolumn3dlinedy` to `stackedarea2dlinedy`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/stackedarea2dlinedy) page of the stacked area 2D line dual y-axis chart.
+
+The stacked area 2D line dual y-axis chart looks like:
+
+{% embed_all standard-charts-combination-chart-example-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/9qrfu4tn/) to edit the stacked area 2D line dual y-axis chart.
 
 ## Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
@@ -174,17 +220,17 @@ For a dual y-axis chart, you can plot trend-lines for both, the primary y-axis a
 
 To plot a trend-lines on a chart, follow the steps given below:
 
-* Create a `trendlines` object to render one or more than one trend-lines.
+- Create a `trendlines` object to render one or more than one trend-lines.
 
-* Create a `line` object for a particular trend-line.
+- Create a `line` object for a particular trend-line.
 
-* In `line` object, set the `startValue` attribute to specify the starting value for the trend-line. Whereas, set the `endValue` to specify the ending value for the trend-line.
+- In `line` object, set the `startValue` attribute to specify the starting value for the trend-line. Whereas, set the `endValue` to specify the ending value for the trend-line.
 
-* Set the `color` attribute to specify the hex code for the color. This attribute is used when you render the trend-line and its associated text.
+- Set the `color` attribute to specify the hex code for the color. This attribute is used when you render the trend-line and its associated text.
 
-* Set the `displayValue` attribute to specify a string caption to be displayed with the trend-line.
+- Set the `displayValue` attribute to specify a string caption to be displayed with the trend-line.
 
-* Specify the `isTrendZone` attribute to set whether a chart will be rendered with a trend-line or a trend-zone. The default value for this attribute is `1`, which renders the trend-zone. Setting it to `0` will render a trend-line.
+- Specify the `isTrendZone` attribute to set whether a chart will be rendered with a trend-line or a trend-zone. The default value for this attribute is `1`, which renders the trend-zone. Setting it to `0` will render a trend-line.
 
 > This attribute belongs to the line object, which in turn belongs to the trendlines object.
 
@@ -201,10 +247,10 @@ Refer to the code given below:
   "trendlines": [{
     "line": [{
       "startValue": "18833",
-      "color": "#0075c2",   
+      "color": "#0075c2",
       "valuePadding": "20",
       "displayvalue": "Average{br}Revenue"
-    }, 
+    },
     {
       "startValue": "21",
       "parentYAxis": "s",
@@ -214,6 +260,7 @@ Refer to the code given below:
   }]
 }
 ```
+
 A combination chart rendered with two trend-lines looks like this:
 
 {% embed_chart standard-charts-combination-chart-example-4.js %}
@@ -229,7 +276,7 @@ Refer to the code given below:
 ```json
 {
   "chart": {
-    "primaryAxisOnLeft" : "0"
+    "primaryAxisOnLeft": "0"
   }
 }
 ```

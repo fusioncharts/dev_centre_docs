@@ -770,21 +770,21 @@
         "type": "Boolean",
         "name": "showXAxisLine"
       },
-          {
+      {
         "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Bottom",
         "range": "Top, Bottom",
         "type": "String",
         "versionSince": "3.14.0",
         "name": "xAxisPosition"
-    },
-    {
+      },
+      {
         "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Left",
         "range": "Left, Right",
         "type": "String",
         "versionSince": "3.14.0",
         "name": "yAxisPosition"
-    },
-    {
+      },
+      {
         "description": "Sets color of the x-axis of the chart.",
         "range": "Hex Color Code",
         "type": "Color",
@@ -1637,7 +1637,7 @@
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.14.0",
-        "name": "valueFontColor"
+        "name": "yAxisValueFontColor"
       },
       {
         "description": "Sets the font size for the Y-axis value texts. \n\nDefault value: 10 px",
@@ -2313,7 +2313,7 @@
     "table": "Attributes for Exporting Charts",
     "attrs": [
       {
-        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG, XLSX or CSV format.  \n\n__Default value__: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "exportEnabled"
@@ -2583,6 +2583,34 @@
         "name": "canvasPadding"
       },
       {
+        "description": "This attribute lets you set the space between the left of the canvas border and the canvas of the chart. This attribute is particularly useful when your data plot gets clipped by the left border of the canvas. Using this attribute, you can control the amount of empty space between the chart left side and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasLeftPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the right of the canvas border and the canvas  of the chart. This attribute is particularly useful when your data plot gets clipped by the right border of the canvas. Using this attribute, you can control the amount of empty space between the chart right side and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasRightPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the top of the canvas border and the canvas of the chart. This attribute is particularly useful when your data plot gets clipped by the top border of the canvas. Using this attribute, you can control the amount of empty space between the chart's top and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasTopPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the bottom of the canvas border and the canvas of the chart. This attribute is particularly useful when your data plot gets clipped by the bottom border of the canvas. Using this attribute, you can control the amount of empty space between the chart's bottom and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasBottomPadding"
+      },
+      {
         "description": "Amount of empty space that you want to put on the left side of your chart. Nothing is rendered in this space.",
         "range": "In Pixels",
         "type": "Number",
@@ -2684,6 +2712,27 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showValue"
+      },
+      {
+        "description": "Specifies the font color of a data value for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the background color of a value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBgColor"
+      },
+      {
+        "description": "Sets the border color around the value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBorderColor"
       },
       {
         "description": "By default, FusionCharts XT shows the data item name and value as tool tip text for that data item. But, if you want to display more information for the data item as tool tip, you can use this attribute to specify the same.",

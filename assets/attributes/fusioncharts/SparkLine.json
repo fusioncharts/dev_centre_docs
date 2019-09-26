@@ -1320,7 +1320,7 @@
     "table": "Attributes for Exporting Charts",
     "attrs": [
       {
-        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG, XLSX or CSV format.  \n\n__Default value__: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "exportEnabled"
@@ -1517,6 +1517,27 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showValue"
+      },
+      {
+        "description": "Specifies the font color of a data value for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueFontColor"
+      },
+      {
+        "description": "Sets the background color of a value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBgColor"
+      },
+      {
+        "description": "Sets the border color around the value text for an individual data plot.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.14.1",
+        "name": "valueBorderColor"
       }
     ],
     "description": "n single-series charts, each instance of the `data` object represents a data value to be plotted on the chart. For a single-series chart, one instance of the `data` object looks as shown in the example below:\n\n<pre class=\"language-javascript\"><code>\n\"data\"[{\n\t\t\"label\": \"Jan\",\n\t\t\"value\": \"10000\"\n\t}]\n</code></pre>\n\nAttributes of the `data` object are used to set and configure the data values for the chart."

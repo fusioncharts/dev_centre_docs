@@ -7,32 +7,28 @@
 Map Name: Bhutan
 Dimensions (Width x Height): 780x440
 
-
-
-
-
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
 BT.BU|BU|Bumthang
-BT.CK|CK|Chhukha
-BT.CR|CR|Chirang
-BT.DA|DA|Daga
+BT.CK|CK|Chukha
+BT.CR|CR|Tsirang
+BT.DA|DA|Dagana
 BT.GA|GA|Gasa
-BT.GE|GE|Geylegphug
-BT.HA|HA|Ha
-BT.LH|LH|Lhuntshi
+BT.GE|GE|Sarpang
+BT.HA|HA|Haa
+BT.LH|LH|Lhuntse
 BT.MO|MO|Mongar
 BT.PR|PR|Paro
-BT.PM|PM|Pemagatsel
+BT.PM|PM|Pemagatshel
 BT.PN|PN|Punakha
-BT.SM|SM|Samchi
+BT.SM|SM|Samtse
 BT.SJ|SJ|Samdrup Jongkhar
-BT.SG|SG|Shemgang
-BT.TY|TY|Tashi Yangtse
-BT.TA|TA|Tashigang
+BT.SG|SG|Zhemgang
+BT.TA|TA|Trashigang
 BT.TM|TM|Thimphu
-BT.TO|TO|Tongsa
-BT.WP|WP|Wangdi Phodrang
+BT.TO|TO|Trongsa
+BT.TY|TY|Trashiyangtse
+BT.WP|WP|Wangdue Phodrang
 

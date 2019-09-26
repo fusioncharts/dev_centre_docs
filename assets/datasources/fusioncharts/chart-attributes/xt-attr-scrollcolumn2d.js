@@ -7,7 +7,7 @@
     dataSource: {
         "chart": {
             "caption": "Sales Trends",
-            "subcaption": "FY 2012 - FY 2013",
+            "subcaption": "FY 2018 - FY 2019",
             "xaxisname": "Month",
             "yaxisname": "Revenue",
             "showvalues": "1",
