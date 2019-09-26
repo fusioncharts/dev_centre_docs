@@ -2109,7 +2109,7 @@
           },
           {
             "title": "Methods",
-            "path": "/fusiontime/fusiontime-data-engine/fusiontime-events"
+            "path": "/fusiontime/api/fusiontime-methods"
           }
         ]
       },
