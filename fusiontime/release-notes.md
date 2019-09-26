@@ -14,7 +14,7 @@ heading: Release Notes
 
 - FusionTime v1.3.0 onward, you can display alternate [grid bands](/fusiontime/fusiontime-component/y-axis-in-fusiontime#grid-bands) on the Y-axis.
 
-- FusionTime now offers a new type of data marker - pin.
+- FusionTime now offers a new type of [data marker](/fusiontime/fusiontime-component/data-markers) - pin.
 
 <h4>Improvement</h4>
 
