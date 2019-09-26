@@ -3456,7 +3456,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           },
           {
             "name": "data.version",
@@ -3534,7 +3534,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           },
           {
             "name": "data.type",
@@ -3607,7 +3607,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           }
         ]
       }
@@ -3675,7 +3675,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           },
           {
             "name": "data.type",
@@ -3778,7 +3778,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           },
           {
             "name": "data.type",
@@ -3881,7 +3881,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           }
         ]
       }
@@ -3949,7 +3949,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           },
           {
             "name": "data.drawCount",
@@ -4037,7 +4037,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           }
         ]
       }
@@ -4105,7 +4105,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           }
         ]
       }
@@ -4173,7 +4173,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           },
           {
             "name": "data.currentWidth",
@@ -4261,7 +4261,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           },
           {
             "name": "data.id",
@@ -4374,7 +4374,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           },
           {
             "name": "data.currentWidth",
@@ -4462,7 +4462,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           }
         ]
       }
@@ -4530,7 +4530,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           }
         ]
       }
@@ -4598,7 +4598,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           }
         ]
       }
@@ -4666,7 +4666,7 @@
           {
             "name": "detachHandler",
             "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
           },
           {
             "name": "data.duration",
