@@ -91,7 +91,7 @@ There are currently two types of data markers:
 - Flag type (default)
 - Pin type
 
-The pin type data marker was introduced in FT 1.3.
+The pin type data marker has been introduced in FusionTime v1.3.0.
 
 The image below shows the pin type data marker on a time series chart:
 
