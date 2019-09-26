@@ -609,6 +609,8 @@ new FusionCharts({
 		aggregation: " " //Aggregate Function
 		connectNullData: " " //Set the value to `true` to connect null data
 		showGridband: " ", //Set the value to `1` to show Grid Band
+		defaultFormat: " ", //Default Format of the number
+		round: " " //Round of the y-axis value
       }
     ]
   }
@@ -670,6 +672,16 @@ new FusionCharts({
 		<td>`showGridband`</td>
 		<td>Boolean</td>
 		<td>Horizontal bands running along with the canvas.</td>
+	</tr>
+	<tr>
+		<td>`defaultFormat`</td>
+		<td>Boolean</td>
+		<td>Disable the default formatting of the y-axis values to display the raw data.</td>
+	</tr>
+	<tr>
+		<td>`round`</td>
+		<td>Boolean</td>
+		<td>Round off the y-axis values..</td>
 	</tr>
 </table>
 
