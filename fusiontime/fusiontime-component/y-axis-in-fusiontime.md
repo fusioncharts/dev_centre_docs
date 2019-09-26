@@ -312,7 +312,7 @@ dataSource: {
 }
 ```
 
-In the above code, the value of the `round` attribute is set to **1**, i.e., the time series chart will be displayed with the y-axis values rounded off till three decimal places.
+In the above code, the value of the `round` attribute is set to **1**, i.e., the time series chart will be displayed with the y-axis values rounded off till one decimal places.
 
 The chart rendered with the `round` attribute set to **1** looks like shown below:
 
