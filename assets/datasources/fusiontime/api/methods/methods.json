@@ -1,0 +1,91 @@
+{
+   "header": "FusionTime Methods",
+   "description": "",
+   "methods": {
+      "clone": {
+         "id": "clone",
+         "name": "clone",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Creates a copy of a chart instance, creating a new chart with identical construction properties of the chart being cloned. The cloned chart, assigned an auto-generated ID, is rendered in a container DOM element that is explicitly provided. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2rmuz6j8/ )",
+         "examples": {},
+         "params": {
+            "overrides": {
+               "name": "overrides",
+               "type": ["object"],
+               "description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new [FusionCharts](/api/fusioncharts) instance.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": true,
+               "subparams": {}
+            },
+            "argsOnly": {
+               "name": "argsOnly",
+               "type": ["boolean"],
+               "description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionCharts instance, and therefore, create a clone.",
+               "defaultvalue": "false",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "chartType": {
+         "id": "chartType",
+         "name": "chartType",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Gets or sets the chart type of a FusionCharts instance. To __get__ the current chart type, call this function without any parameters. To __set__ a new chart type, pass the chart type as the first parameter to this function. When a new chart type is set, the chart is automatically re-rendered and the [chartTypeChanged](/api/fusioncharts/fusioncharts-events#event-chartTypeChanged) event is triggered. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/71tywkuf/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Render a column chart and on click of a button toggle it from column to pie and vice versa.\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: 'column2d',\n        renderAt: 'chart-container',\n        dataSource: 'weekly-sales.json',\n        dataFormat: 'jsonurl'\n    }).render();\n\n    // Assign the functionality of toggling chart type when clicked on\n    // a button (with an id toggle-chart-type).\n    document.getElementById('toggle-chart-type').onclick = function () {\n        if (chart.chartType() === 'column2d') {\n            chart.chartType('pie2d');\n        }\n        else {\n            chart.chartType('column2d');\n        }\n    };\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "value": {
+               "name": "value",
+               "type": ["string"],
+               "description": "New chart type to set",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "options": {
+               "name": "options",
+               "type": ["object"],
+               "description": "When changing the chart type, additional options can be passed to this method to update chart data and re-render the chart. \n\n>These additional options will be ignored if the `value` parameter is not specified. \n\n",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {
+                  "dataSource": {
+                     "name": "dataSource",
+                     "type": ["string", "object"],
+                     "description": "New source of data while changing the chart type",
+                     "defaultvalue": "",
+                     "optional": "",
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "dataFormat": {
+                     "name": "dataFormat",
+                     "type": ["FusionCharts~dataFormats"],
+                     "description": "Data format for the new data source. If this is not provided, then the existing/default data format is used. \n\n >If the `dataSource` parameter is not provided, the `dataFormat` parameter is ignored.\n\n",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  }
+               }
+            }
+         }
+      }
+   }
+}
