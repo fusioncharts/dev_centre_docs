@@ -181,6 +181,8 @@ The code to set the base of the logarithmic y-axis is shown below:
 
 Grid bands are horizontal bands running along with the canvas. They enable easier visual reference while panning the chart. FusionTime gives you support for alternate grid bands on the y-axis.
 
+> Grid bands are not applicable for log type of y-axis.
+
 Refer to the image below:
 
 <img src="{% site.BASE_URL %}/images/y-axis-grid-band.png" alt="Data Markers" width="680" height="400">
