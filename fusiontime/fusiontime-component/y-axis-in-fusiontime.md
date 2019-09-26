@@ -298,7 +298,7 @@ Grid bands are horizontal bands running along with the canvas. They enable easie
 
 Refer to the image below:
 
-Annotated Image
+<img src="{% site.BASE_URL %}/images/y-axis-grid-band.png" alt="Data Markers" width="680" height="400">
 
 To create grid bands, follow the steps given below:
 
