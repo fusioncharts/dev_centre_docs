@@ -1,0 +1,1933 @@
+{
+   "header": "FusionTime Methods",
+   "description": "",
+   "methods": {
+      "static-getObjectReference": {
+         "id": "static-getObjectReference",
+         "name": "getObjectReference",
+         "kind": "function",
+         "access": "",
+         "scope": "static",
+         "virtual": false,
+         "description": "Returns the `DOMElement` created inside the chart container by FusionCharts. This is equivalent to accessing the `DOMElement` using the [ref](/api/fusioncharts/fusioncharts-properties#ref) property. \n\n >The returned `DOMElement` here is the `<span>` element created by FusionCharts to render the chart, and not the the container element specified as the value of the `renderAt` attribute. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/mtjbjm1x/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Iterate on all charts rendered on a page and move them to a common location\rvar sidebar = document.getElementById('sidebar-html-div'), // assuming that your common container is this\r    chart;\r\rfor (chart in FusionCharts.items) {\r    sidebar.appendChild(FusionCharts.getObjectReference(chart).parentNode);\r}\r\r// The above can be done without using this deprecated getObjectReference method.\rfor (chart in FusionCharts.items) {\r    chart = FusionCharts.items[chart];\r    chart.ref && sidebar.appendChild(chart.ref.parentNode);\r}",
+               "type": "js"
+            }
+         },
+         "params": {
+            "id": {
+               "name": "id",
+               "type": ["string"],
+               "description": "ID of the chart, whose `DOMElement` is to be referenced.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "clone": {
+         "id": "clone",
+         "name": "clone",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Creates a copy of a chart instance, creating a new chart with identical construction properties of the chart being cloned. The cloned chart, assigned an auto-generated ID, is rendered in a container DOM element that is explicitly provided. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/2rmuz6j8/ )",
+         "examples": {},
+         "params": {
+            "overrides": {
+               "name": "overrides",
+               "type": ["object"],
+               "description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new [FusionCharts](/api/fusioncharts) instance.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": true,
+               "subparams": {}
+            },
+            "argsOnly": {
+               "name": "argsOnly",
+               "type": ["boolean"],
+               "description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionCharts instance, and therefore, create a clone.",
+               "defaultvalue": "false",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "chartType": {
+         "id": "chartType",
+         "name": "chartType",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Gets or sets the chart type of a FusionCharts instance. To __get__ the current chart type, call this function without any parameters. To __set__ a new chart type, pass the chart type as the first parameter to this function. When a new chart type is set, the chart is automatically re-rendered and the [chartTypeChanged](/api/fusioncharts/fusioncharts-events#event-chartTypeChanged) event is triggered. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/71tywkuf/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Render a column chart and on click of a button toggle it from column to pie and vice versa.\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: 'column2d',\n        renderAt: 'chart-container',\n        dataSource: 'weekly-sales.json',\n        dataFormat: 'jsonurl'\n    }).render();\n\n    // Assign the functionality of toggling chart type when clicked on\n    // a button (with an id toggle-chart-type).\n    document.getElementById('toggle-chart-type').onclick = function () {\n        if (chart.chartType() === 'column2d') {\n            chart.chartType('pie2d');\n        }\n        else {\n            chart.chartType('column2d');\n        }\n    };\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "value": {
+               "name": "value",
+               "type": ["string"],
+               "description": "New chart type to set",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "options": {
+               "name": "options",
+               "type": ["object"],
+               "description": "When changing the chart type, additional options can be passed to this method to update chart data and re-render the chart. \n\n>These additional options will be ignored if the `value` parameter is not specified. \n\n",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {
+                  "dataSource": {
+                     "name": "dataSource",
+                     "type": ["string", "object"],
+                     "description": "New source of data while changing the chart type",
+                     "defaultvalue": "",
+                     "optional": "",
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "dataFormat": {
+                     "name": "dataFormat",
+                     "type": ["FusionCharts~dataFormats"],
+                     "description": "Data format for the new data source. If this is not provided, then the existing/default data format is used. \n\n >If the `dataSource` parameter is not provided, the `dataFormat` parameter is ignored.\n\n",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  }
+               }
+            }
+         }
+      },
+      "static-addEventListener": {
+         "id": "static-addEventListener",
+         "name": "addEventListener",
+         "kind": "function",
+         "access": "",
+         "scope": "static",
+         "virtual": false,
+         "description": "Listens to events across all FusionCharts instances on a page and executes custom functions when an event is triggered. \n\n >To listen to an event triggered by a specific chart, the non-static [addEventListener](/api/fusioncharts/fusioncharts-methods#addEventListener) method is used. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/j6053o2z/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Show a message when a number of charts have been rendered on a page.\rFusionCharts.ready(function {\r    var counter = 0,\r        threshold = 3;\r\r    FusionCharts.addEventListener(\"rendered\", function (eventObject) {\r        counter++;\r        if (counter > threshold) {\r            alert(\"More than \" + threshold + \"charts rendered!\");\r        }\r    });\r});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "type": {
+               "name": "type",
+               "type": ["string", "array"],
+               "description": "Type (name) of the event to listen to. To register the listener for multiple events in the same registration call, provide all event names as an array.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "listener": {
+               "name": "listener",
+               "type": ["FusionCharts~eventListener"],
+               "description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "static-removeEventListener": {
+         "id": "static-removeEventListener",
+         "name": "removeEventListener",
+         "kind": "function",
+         "access": "",
+         "scope": "static",
+         "virtual": false,
+         "description": "Removes the event listener(s) bound to an event. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/tgkqLkg1/ )",
+         "examples": {},
+         "params": {
+            "type": {
+               "name": "type",
+               "type": ["string", "array"],
+               "description": "Type (name) of the event whose listener(s) has to be removed",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "listener": {
+               "name": "listener",
+               "type": ["function"],
+               "description": "Listener function to remove",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "static-ready": {
+         "id": "static-ready",
+         "name": "ready",
+         "kind": "function",
+         "access": "",
+         "scope": "static",
+         "virtual": false,
+         "description": "Allows to register callback functions that are executed when the FusionCharts library is ready to be used. In general, the FusionCharts framework is ready after the `DOMContentLoaded` browser event has been triggered and all the initial dependent files/modules are available. \n\nMultiple callbacks can be attached by calling this function any number of times. Callback functions are executed even when attached after the FusionCharts framework is ready.Therefore, it is recommended that all entry-point and initialization codes are written within the `ready()` function. This also helps to neatly organize all the code in a script file or the page `<head>` tag as well as contextually separate code from HTML blocks.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5p35uucq/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Render a chart within a chart container `div` element.\rFusionCharts.ready(function (FusionCharts) {\r    var chart = new FusionCharts({\r        type: \"column2d\",\r        renderAt: \"chart-container-div\",\r        dataSource: \"my-chart-data.json\",\r        dataFormat: \"jsonurl\"\r    });\r    // Since we are in the `ready` block, the `chart-container-div`\r    // element should be available by now.\r    chart.render();\r});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "readyCallback": {
+               "name": "readyCallback",
+               "type": ["FusionCharts~readyCallback"],
+               "description": "Callback function executed when the FusionCharts framework is ready",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "args": {
+               "name": "args",
+               "type": ["*"],
+               "description": "Argument to be passed to the callback function",
+               "defaultvalue": "[FusionCharts](/api/fusioncharts)",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "context": {
+               "name": "context",
+               "type": ["function"],
+               "description": "To execute a function, passed using the `fn` parameter, in a different scope than the default [FusionCharts](/api/fusioncharts) scope, pass the appropriate class object here.",
+               "defaultvalue": "[FusionCharts](/api/fusioncharts)",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "addEventListener": {
+         "id": "addEventListener",
+         "name": "addEventListener",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Used to listen to events triggered by a specific chart. \n\n >To listen to events triggered by all charts on a page, the static [addEventListener()](/api/fusioncharts/fusioncharts-methods#static-addEventListener) method is used. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/cnmcj73q/ )",
+         "examples": {},
+         "params": {
+            "type": {
+               "name": "type",
+               "type": ["string", "array"],
+               "description": "Type (name) of the event to listen to. To register the listener for multiple events in the same registration call, provide all event names as an array.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "listener": {
+               "name": "listener",
+               "type": ["FusionCharts~eventListener"],
+               "description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "removeEventListener": {
+         "id": "removeEventListener",
+         "name": "removeEventListener",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Removes the event listener(s) bound to an event using the [addEventListener()](/api/fusioncharts/fusioncharts-methods#addEventListener) method. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6bq7b7y5/ )",
+         "examples": {},
+         "params": {
+            "type": {
+               "name": "type",
+               "type": ["string", "array"],
+               "description": "Type (name) of the event whose listener(s) has to be removed",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "listener": {
+               "name": "listener",
+               "type": ["function"],
+               "description": "Listener function to remove",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "configureLink": {
+         "id": "configureLink",
+         "name": "configureLink",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Configured properties for LinkedCharts.This function accepts all properties that the FusionCharts constructor accepts. Any property passed to this function is applied to the LinkedCharts. If no properties are provided, LinkedCharts will inherit properties from the parent chart. This function lets you configure individual or multiple drill-down levels in linked charts. \n\n__The Overlay Button:__\n\nOther than the usual construction parameters of FusionCharts, this function also accepts configuration for the overlay button of LinkedCharts. When a LinkedChart is rendered on clicking a data point, a button is rendered on the top-right corner of the chart. When this button is clicked, it closes (disposes) the linked chart.\n\nThe cosmetics of this button can be configured by passing an `overlayButton` object as a parameter to this function. This object can have the following properties: \n\n \n\n| Button Parameter | Type | Description |\n|-------|--------|-------|\n| `show` | boolean | Whether to show the button or not |\n| `message` | string | Button label. Default: __Close__ or __Back__  |\n| `bgColor` | string | Background color for the button |\n| `borderColor` | string | Border color for the button |\n| `font` | string | Font family of the button (comma-separated list of fonts) |\n| `fontColor` | string | Color of the button label text |\n| `fontSize` | string | Size of the button label text |\n| `bold` | boolean | Specify whether the button label text is bold formatted |\n| `padding` | number | Padding between the label and the edges of the button |\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zdewk96j/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "myChart.configureLink({\r    type: 'pie2d', // Set the linked-charts configuration to load all linked charts as Pie\r    width: '80%', // The width of the charts would be 80% of their parent container\r    overlayButton: {\r        message: ' X ', // Set the button to show letter \"X\"\r        bgColor:'#999999',\r        borderColor: '#cccccc'\r    }\r});",
+               "type": "js"
+            },
+            "1": {
+               "caption": "",
+               "code": "// Configure linked charts to show the first level drill-down as bar chart, the next as line charts and\r// the third level as pie charts.\rmyChart.configureLink([\r    { type: 'bar2d' },\r    { type: 'line' },\r    { type: 'pie2d' }\r]);",
+               "type": "js"
+            }
+         },
+         "params": {
+            "param": {
+               "name": "param",
+               "type": ["object", "array"],
+               "description": "Configuration properties for the LinkedCharts. To configure multiple levels at once, pass the level numbers as an array to this parameter. To configure the overlay button, pass the `overlayButton` object to this parameter.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "level": {
+               "name": "level",
+               "type": ["number"],
+               "description": "To configure a specific level of the drill-down chart, this parameter specifies the level number.",
+               "defaultvalue": "0",
+               "optional": true,
+               "nullable": false,
+               "subparams": {}
+            }
+         }
+      },
+      "setChartAttribute": {
+         "id": "setChartAttribute",
+         "name": "setChartAttribute",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Updates a chart's attributes with a new attribute-value pair, thus updating the chart's data definition root (the `<chart>` node in the XML data or the `chart` object in the JSON data). \n\nThis function is useful when  a chart's configuration has to be updated after it has been rendered once. The function internally retrieves the last data set for the chart using the [getJSONData()](/api/fusioncharts/fusioncharts-methods#getJSONData) method ( or the [getXMLData()](/api/fusioncharts/fusioncharts-methods#getXMLData) method, for XML data). It then updates the `chart` object (or the `<chart>` element) using the new attribute-value pair and sets this data back to the chart. \n\n >Setting the value of an attribute to __null__ will cause the attribute to be removed from the definition and set to its default value. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/opmjvkaa/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Here we would render a chart in a DOM element with an id, say \"chart-container\", and upon clicking the\n// chart, we would toggle the visibility of its legend.\nFusionCharts.ready(function () {\n    FusionCharts.render({\n        id: 'salesChart',\n        type: 'pie2d',\n        renderAt: 'chart-container',\n\n        dataSource: {\n            chart: {\n                caption: 'Revenue distribution'\n            },\n            data: [\n                { value: '22', label: 'Redistribution' },\n                { value: '54', label: 'Internal Circulation' },\n                { value: '24', label: 'Sale' },\n            ]\n        },\n\n        events: {\n            chartClick: function (event) {\n                var chart = event.sender,\n                    // Check whether legend is currently visible by fetching the showLegend attribute\n                    legendVisible = !!+chart.getChartAttribute('showLegend');\n\n                // Set the opposite of the current state of the legend's visibility.\n                chart.setChartAttribute('showLegend', legendVisible ? '0' : '1');\n            }\n        }\n    });\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "attributes": {
+               "name": "attributes",
+               "type": ["object", "string"],
+               "description": "To set/update multiple attributes at once, an object containing all the key-value pairs is passed. In case of a single value, a string that is the key (the attribute name) is passed.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "value": {
+               "name": "value",
+               "type": ["string"],
+               "description": "If the `attributes` parameter is a single string value, the `value` parameter contains the value for that key.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": true,
+               "subparams": {}
+            }
+         }
+      },
+      "getChartAttribute": {
+         "id": "getChartAttribute",
+         "name": "getChartAttribute",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetches value of chart attributes explicitly applied to the root `chart` object (or the `<chart>` node element). \n\n >To fetch a list of __all__ attributes, do not pass any parameters to this function. \n\n If any attribute requested is not set for the chart or is internally computed but not explicitly set, the value is returned as __undefined__. For example, for multi-series column 2D charts, the default value of the  `showLegends` attribute is __1__. However, if the attribute is not included in the chart definition and its value is requested, the function returns __undefined__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/1z2hbnmp/ )",
+         "examples": {},
+         "params": {
+            "attribute": {
+               "name": "attribute",
+               "type": ["string", "array"],
+               "description": "To fetch the value of a single attribute, pass the attribute name as a string. For multiple attributes, pass an array of attribute names. Values will be returned in the order of the attribute names in the array.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "getXMLData": {
+         "id": "getXMLData",
+         "name": "getXMLData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetches chart data in the XML format. This function needs to be called on an existing chart; if called on a chart that has no data set for it, it returns an empty `<chart />` element. \n\n >The `getXMLData()` function is shorthand for `chart.getChartData('xml')`.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/4jwu53rL/ )",
+         "examples": {},
+         "params": {}
+      },
+      "setXMLData": {
+         "id": "setXMLData",
+         "name": "setXMLData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Sets chart data in the XML data format. When this function is called on a chart that has already rendered, it immediately updates the chart with the new data. The function can also be used to set data for a new chart. \n\n >A preferrable alternative to using this method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n \n\n >The `setXMLData()` function is shorthand for the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) method, where the data format is set to __xml__. So, calling `chart.setXMLData('<chart>...</chart')` is the same as calling `chart.setChartData('<chart>...</chart>', 'xml')`. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/opL8nfoc/ )",
+         "examples": {},
+         "params": {
+            "data": {
+               "name": "data",
+               "type": ["string", "object"],
+               "description": "XML data to be set for the chart, as a string",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "setXMLUrl": {
+         "id": "setXMLUrl",
+         "name": "setXMLUrl",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetches chart data from the URL provided, in the XML format. When this function is called on a chart that has already rendered, it immediately updates the chart with the new data. The function can also be used to set data for a new chart. \n\n >A preferrable alternative to using this method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n \n\n >The `setXMLUrl()` function is shorthand for the [setChartDataUrl()](/api/fusioncharts/fusioncharts-methods#setChartDataUrl) method, where the data format of the URL is set to __xmlurl__. So, calling `chart.setXMLUrl('data.xml')` is the same as calling `chart.chart.setChartDataUrl('data.xml', 'xmlurl')`. \n\n ",
+         "examples": {},
+         "params": {
+            "url": {
+               "name": "url",
+               "type": ["string"],
+               "description": "Path to the XML data file",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "setChartDataUrl": {
+         "id": "setChartDataUrl",
+         "name": "setChartDataUrl",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetches chart data from the URL provided and passes it to the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) method. \n\nIf the chart is already rendered, it is updated with the new data as soon as it is fetched from the URL. If the chart is not rendered, data is fetched from the URL and stored locally till the chart is rendered. \n\n >It is __not__ recommended to use this method to set data for a new chart. A preferrable alternative is to pass the URL as value to the `dataSource` attribute in the `FusionCharts` constructor. \n\n \n\n >FusionCharts uses `AJAX` to transport data. Therefore, ensure that the chart is running from a web-server to prevent the browsers' restrictions of fetching local (`file://`) files. \n\n",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Render a chart and fetch data from a JSON file and then when a button is pressed, change the data.\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: \"column2d\",\n        renderAt: \"chart-container\",\n        dataSource: \"weekly-sales.json\",\n        dataFormat: \"jsonurl\"\n    }).render();\n\n    // Assign the functionality of updating data to a button which already\n    // exists in page body and has a specific Id.\n    document.getElementById(\"data-update-button\").onclick = function () {\n        // Specify the new Url to fetch data from.\n        chart.setChartDataUrl(\"average-employee-sales.json\", \"json\");\n    };\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "url": {
+               "name": "url",
+               "type": ["string"],
+               "description": "URL to fetch the chart data",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "format": {
+               "name": "format",
+               "type": ["FusionCharts~dataFormats"],
+               "description": "Format of the data being fetched. If the value for this parameter is not a valid [dataFormat](/api/fusioncharts/fusioncharts-properties#dataFormats), then the default or previously set data format is assumed. \n\n >If the data format is already known, then the [setJSONUrl()](/api/fusioncharts/fusioncharts-methods#setJSONUrl) or the [setXMLUrl()](/api/fusioncharts/fusioncharts-methods#setXMLUrl) methods can be used. \n\n",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "setChartData": {
+         "id": "setChartData",
+         "name": "setChartData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/r4jjewey/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Create a chart in a page and pass data to it in `JSON` format and on click of a\n// button update it with newer data.\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: \"pie2d\",\n        renderAt: \"chart-container\",\n\n                   dataSource: {\n            chart: {\n                caption: \"Market Share\",\n                showPercentage: \"1\"\n            },\n            data: [\n                { label: \"Current Prototype\", value: \"30\" },\n                { label: \"Revised Prototype\", value: \"35\" },\n                { label: \"Previous Prototype\", value: \"25\" },\n                { label: \"Recalled Prototype\", value: \"10\" }\n            ]\n        },\n        dataFormat: \"json\"\n    }).render();\n\n    // Set data on the chart using the setChartData function when a button is clicked.\n    document.getElementById(\"update-data\").onclick = function () {\n        chart.setChartData({\n            chart: {\n                caption: \"Market Share Impact\",\n                numberPrefix: \"USD\"\n            },\n            data: [\n                { label: \"Current Prototype\", value: \"13773\" },\n                { label: \"Revised Prototype\", value: \"16069\" },\n                { label: \"Previous Prototype\", value: \"11477\" },\n                { label: \"Recalled Prototype\", value: \"4591\" }\n            ]\n        }, \"json\");\n    };\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "data": {
+               "name": "data",
+               "type": ["string", "object"],
+               "description": "Data to be passed to the chart",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "format": {
+               "name": "format",
+               "type": ["FusionCharts~dataFormats"],
+               "description": "Format of the data being passed. If the value for this parameter is not a valid [dataFormat](/api/fusioncharts/fusioncharts-properties#dataFormats), then the default or previously set data format is assumed. \n\n >If the data format is already known, then the [setJSONData()](/api/fusioncharts/fusioncharts-methods#setJSONData) or the [setXMLData()](/api/fusioncharts/fusioncharts-methods#setXMLData) methods can be used. \n\n",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "getChartData": {
+         "id": "getChartData",
+         "name": "getChartData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetches the data set for a chart, in one of the valid [dataFormats](/api/fusioncharts/fusioncharts-properties#dataFormats). The function needs to be called on an existing chart. If called on a chart that has no data, it returns an empty `chart` object for __json__ data, an empty `<chart />` node for __xml__ data, and an empty string for __csv__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/n7b46yy6/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Render a chart and upon click of a button alert the chart's data in\n// CSV format.\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: \"column2d\",\n        renderAt: \"chart-container\",\n        dataSource: \"weekly-sales.json\",\n        dataFormat: \"jsonurl\"\n    }).render();\n\n    // Assign the functionality of retrieving and alerting CSV data to\n    // click event of a button\n    document.getElementById(\"alert-csv-data\").onclick = function () {\n        alert(chart.getChartData(\"csv\"));\n    };\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "format": {
+               "name": "format",
+               "type": ["FusionCharts~dataFormats"],
+               "description": "Format in which chart data has to be retrieved",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "dataReady": {
+         "id": "dataReady",
+         "name": "dataReady",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Determines whether a chart will render properly with the data set on it. This includes data that is set using the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) or [setChartDataUrl()](/api/fusioncharts/fusioncharts-methods#setChartDataUrl) methods. \n\nIf the function is unable to determine whether data is ready or not, it returns __undefined__. \n\n \n\nThe function returns __true__ or __false__ only after the chart has rendered (the `renderComplete` event is triggered). The function returns false when:   no data is set     faulty data is set    data is incompatible with the chart type; for example, single-series data is set for a multi-series chart.\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/k6d1yac3/ )",
+         "examples": {},
+         "params": {
+            "available": {
+               "name": "available",
+               "type": ["boolean"],
+               "description": "Setting this parameter to __true__ returns the status of the data, irrespective of its compatibility with the chart type. In that case, this function will return __false__ if data provided to the chart triggers the [dataLoadError](/api/fusioncharts/fusioncharts-events#event-dataLoadError) or [dataInvalid](/api/fusioncharts/fusioncharts-events#event-dataInvalid) events",
+               "defaultvalue": "false",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "static-transcodeData": {
+         "id": "static-transcodeData",
+         "name": "transcodeData",
+         "kind": "function",
+         "access": "",
+         "scope": "static",
+         "virtual": false,
+         "description": "FusionCharts supports a number of formats in which data can be provided. Click [here](/api/fusioncharts/fusioncharts-properties#dataFormats) to view the list of formats supported. This function allows data to be transcoded from one supported format to another, without initializing a new instance of FusionCharts. It is very useful when you already have a set of data stored or prepared in one FusionCharts data format and want to convert it to another format. The fact that we do not need to instantiate a new FusionCharts instance speeds the conversion process. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ypu35q7t/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// We would convert JSON data that is already in FusionCharts data format into CSV data format.\nFusionCharts.ready(function () {\n    var salesData = {\n        chart: {\n            caption: \"Harry's SuperMart\",\n            subCaption: \"Top 5 stores in last month by revenue\",\n        },\n        data:[{\n            label: \"Bakersfield Central\",\n            value: \"880000\"\n        },\n        {\n            label: \"Garden Groove harbour\",\n            value: \"730000\"\n        },\n        {\n            label: \"Los Angeles Topanga\",\n            value: \"590000\"\n        },\n        {\n            label: \"Compton-Rancho Dom\",\n            value: \"520000\"\n        },\n        {\n            label: \"Daly City Serramonte\",\n            value: \"330000\"\n        }]\n    };\n\n    // Alert the data after converting it to CSV data format.\n    alert(FusionCharts.transcodeData(salesData, 'json', 'csv'));\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "data": {
+               "name": "data",
+               "type": ["string", "object"],
+               "description": "Data to transcode",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {},
+               "typeNotSupportedMessagepe": ["string", "object"]
+            },
+            "source": {
+               "name": "source",
+               "type": ["FusionCharts~dataFormats"],
+               "description": "Source format",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "target": {
+               "name": "target",
+               "type": ["FusionCharts~dataFormats"],
+               "description": "Target format",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "advanced": {
+               "name": "advanced",
+               "type": ["boolean"],
+               "description": "Request the transcoding to return data in a verbose format where it returns the conversion result along with additional trancosing information. In advanced mode, the returned data of this function is in the following format:  \n\n| Property | Type | Description |\n|-------|--------|\n| `data` | object, string | Result of the transcoding process |\n| `error` | object | Object containing the error message | ",
+               "defaultvalue": "false",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "feedData": {
+         "id": "feedData",
+         "name": "feedData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Feeds real-time data to real-time charts and gauges. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/zcjktzg0/ )",
+         "examples": {},
+         "params": {
+            "stream": {
+               "name": "stream",
+               "type": ["string"],
+               "description": "Real-time data for charts and gauges",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "getData": {
+         "id": "getData",
+         "name": "getData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Returns the value of the data set for real-time charts and gauges.",
+         "examples": {},
+         "params": {}
+      },
+      "getDataWithId": {
+         "id": "getDataWithId",
+         "name": "getDataWithId",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Returns a three-dimensional array that contains the data and the dataset IDs. Once the reference for the chart is obtained, this function can be invoked to retrieve data. \r\r [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3yt4pee2/ )",
+         "examples": {},
+         "params": {}
+      },
+      "setData": {
+         "id": "setData",
+         "name": "setData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Feeds real-time data to real-time charts and gauges. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/5mrzsrc7/ )",
+         "examples": {},
+         "params": {
+            "value": {
+               "name": "value",
+               "type": ["number"],
+               "description": "Numeric value to feed to the real-time chart/gauge. For single-value gauges (LEDs, bulb, cylinder, and thermometer gauges), this is the only parameter required.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "label": {
+               "name": "label",
+               "type": ["string"],
+               "description": "For the angular gauge and the horizontal linear gauge, this parameter specifies the dial number.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "stopUpdate": {
+         "id": "stopUpdate",
+         "name": "stopUpdate",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Stops a self-updating real-time chart/gauge from polling the server for real-time updates.",
+         "examples": {},
+         "params": {}
+      },
+      "restartUpdate": {
+         "id": "restartUpdate",
+         "name": "restartUpdate",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Resumes real-time updates for a chart/gauge.",
+         "examples": {},
+         "params": {}
+      },
+      "isUpdateActive": {
+         "id": "isUpdateActive",
+         "name": "isUpdateActive",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Returns __true__ if real-time update is enabled for a chart. Returns __false__ is real-time update is stopped using the [stopUpdate()](/api/fusioncharts/fusioncharts-methods#stopUpdate) method. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/gj5zotfj/ )",
+         "examples": {},
+         "params": {}
+      },
+      "clearChart": {
+         "id": "clearChart",
+         "name": "clearChart",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Clears the entire chart canvas when a real-time chart is being updated. \n\n >An alternative to calling this function is using the __Clear Chart__ option from the real-time context menu, on real-time charts. To activate the real-time context menu, set the `showRTMenuItem` (under the `chart` object) to __1__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d7gt6e9L/ )",
+         "examples": {},
+         "params": {}
+      },
+      "setDataURL": {
+         "id": "setDataURL",
+         "name": "setDataURL (Deprecated API)",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Sets the URL to fetch the XML chart data from. \n\n This method can be called only after the [loaded](/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. Alternatively, the [setXMLUrl()](/api/fusioncharts/fusioncharts-methods#setXMLUrl) method can be used, which does not have this limitation. \n\n",
+         "examples": {},
+         "params": {}
+      },
+      "getDataForId": {
+         "id": "getDataForId",
+         "name": "getDataForId",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Returns data for the given pointer (for real-time horizontal linear gauge) or dial (for real-time angular gauge) using its defined ID. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/wby0e9kr/ )",
+         "examples": {},
+         "params": {}
+      },
+      "setDataForId": {
+         "id": "setDataForId",
+         "name": "setDataForId",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Sets data for a given pointer (for real-time horizontal linear gauge) or dial (for real-time angular gauge) using its defined ID. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3opr6pfd/ )",
+         "examples": {},
+         "params": {}
+      },
+      "hasRendered": {
+         "id": "hasRendered",
+         "name": "hasRendered",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Returns __true__ if the chart has rendered successfully, __false__ if it has not. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/eg9tbq2c/ )",
+         "examples": {},
+         "params": {}
+      },
+      "setTransparent": {
+         "id": "setTransparent",
+         "name": "setTransparent (Deprecated)",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Sets the background color of the __container DOM element__, within which the chart is rendered, as transparent. \n\n >This is not to be confused with the chart's background.\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/og8ubfn2/ )",
+         "examples": {},
+         "params": {
+            "transparency": {
+               "name": "transparency",
+               "type": ["boolean"],
+               "description": "Passing `true` implies that the chart is transparent.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "isPlotItemSliced": {
+         "id": "isPlotItemSliced",
+         "name": "isPlotItemSliced",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Checks whether a particular slice of the pie/doughnut chart is sliced-out or sliced-in. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/L52ad73x/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Render a pie 2d chart with some data in sliced out state, provide data index\n// in an input textfield and get the sliced state of the pie on click of a button\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: \"pie2d\",\n        renderAt: \"chart-container\",\n        dataSource: \"data.json\",\n        dataFormat: \"jsonurl\"\n    }).render();\n\n    // Get the sliced state of a pie returned when clicked on a button\n    // (with an id pie-sliced-state). It picks the data index from\n    // an input textfield (with id pie-data-index).\n    document.getElementById(\"pie-sliced-state\").onclick = function () {\n        var dataIndex = document.getElementById(\"pie-data-index\").value,\n            slicedState = chart.isPlotItemSliced(dataIndex);\n    };\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "index": {
+               "name": "index",
+               "type": ["number"],
+               "description": "Index of the pie/doughnut slice being checked",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "slicePlotItem": {
+         "id": "slicePlotItem",
+         "name": "slicePlotItem",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Slices in/slices out a pie/doughnut slice. \n\n >You have to provide a  callback Function if `asyncRender` is set to `1` (default) where you get the svg-string as a parameter of the callback function. The boolean value determines if the plot item is sliced (true) or not (false). The callback implementation does not require the user to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9ed6s2rr/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Render a pie 2d chart, provide data index in an input textfield\n// and toggle the sliced state of the pie on click of a button\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: \"pie2d\",\n        renderAt: \"chart-container\",\n        dataSource: \"data.json\",\n        dataFormat: \"jsonurl\"\n    }).render();\n\n    // Toggle the sliced state of the pie when clicked on a button\n    // (with an id pie-sliced-state). It picks the data index from\n    // an input textfield (with id pie-data-index).\n    document.getElementById(\"pie-sliced-state\").onclick = function () {\n        var dataIndex = document.getElementById(\"pie-data-index\").value;\n        chart.slicePlotItem(dataIndex);\n    };\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "index": {
+               "name": "index",
+               "type": ["number"],
+               "description": "Index of the pie/doughnut slice",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "slice": {
+               "name": "slice",
+               "type": ["boolean"],
+               "description": "If set to __true__, it will slice out a slice, which is in the sliced-in state. If the slice is already in the sliced-out state, the state is retained.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "callBackFN( sliced)": {
+               "name": "callBackFN( sliced)",
+               "type": ["slicePlotItem-callBack"],
+               "description": "callBackFN is called only when `slicePlotItem()` completes its execution.",
+               "defaultvalue": "",
+               "optional": "true",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "centerLabel": {
+         "id": "centerLabel",
+         "name": "centerLabel",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Configures the center label in a doughnut chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/kq3yvpef/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Render a doughnut 2d chart and set center label with some\n// configuring params on click of a button\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: \"doughnut2d\",\n        renderAt: \"chart-container\",\n        dataSource: \"data.json\",\n        dataFormat: \"jsonurl\"\n    }).render();\n\n    // Assign the functionality of setting the center label when clicked on\n    // a button (with an id set-center-label).\n    document.getElementById(\"set-center-label\").onclick = function () {\n        chart.centerLabel(\"The central label\", {bold: true, toolText: \"center label tooltext\"});\n    };\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "labelText": {
+               "name": "labelText",
+               "type": ["string"],
+               "description": "Text to be displayed as the center label in the doughnut chart",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "options": {
+               "name": "options",
+               "type": ["object"],
+               "description": "Optional parameter holding a host of configurable parameters, like the cosmetic properties, for the center label. \n\n >The properties are case sensitive.\n\n",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {
+                  "font": {
+                     "name": "font",
+                     "type": ["string"],
+                     "description": "Font face for the label text",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "fontSize": {
+                     "name": "fontSize",
+                     "type": ["string"],
+                     "description": "Font size of the label text",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "bold": {
+                     "name": "bold",
+                     "type": ["boolean"],
+                     "description": "Specifies whether bold formatting will be applied for the label text",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "italic": {
+                     "name": "italic",
+                     "type": ["boolean"],
+                     "description": "Specifies whether the label text will be in italics",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "color": {
+                     "name": "color",
+                     "type": ["hexcolor"],
+                     "description": "Font color for the label text",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "alpha": {
+                     "name": "alpha",
+                     "type": ["alpha"],
+                     "description": "Font opacity for the label text",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "hoverColor": {
+                     "name": "hoverColor",
+                     "type": ["hexcolor"],
+                     "description": "Hover color for the label text",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "hoverAlpha": {
+                     "name": "hoverAlpha",
+                     "type": ["alpha"],
+                     "description": "Hover opacity for the label text",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "bgColor": {
+                     "name": "bgColor",
+                     "type": ["hexcolor"],
+                     "description": "Background color for the label",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "bgAlpha": {
+                     "name": "bgAlpha",
+                     "type": ["alpha"],
+                     "description": "Opacity of the label background",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "borderColor": {
+                     "name": "borderColor",
+                     "type": ["hexcolor"],
+                     "description": "Border color for the label background",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "borderAlpha": {
+                     "name": "borderAlpha",
+                     "type": ["alpha"],
+                     "description": "Opacity of the label background border",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "borderThickness": {
+                     "name": "borderThickness",
+                     "type": ["number"],
+                     "description": "Thickness of the label background border",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "borderRadius": {
+                     "name": "borderRadius",
+                     "type": ["number"],
+                     "description": "Radius for a rounded label background border",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "padding": {
+                     "name": "padding",
+                     "type": ["number"],
+                     "description": "Padding between the extremities of the label and the inner periphery of the doughnut. For a rectangular label background, it is relative to any of the four corners. For a circular background, is the gap between the two concentric circles-the background border and the inner periphery.",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "textPadding": {
+                     "name": "textPadding",
+                     "type": ["number"],
+                     "description": "For a rectangular label background, it is the gutter between the text and the background border. For a circular background, it is the minimum space between the background border and the containing circle of the text.",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "toolText": {
+                     "name": "toolText",
+                     "type": ["string"],
+                     "description": "Tooltip text for the label",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  }
+               }
+            }
+         }
+      },
+      "startingAngle": {
+         "id": "startingAngle",
+         "name": "startingAngle",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Rotates the pie/doughnut chart to a specific angle or by a specific angle. The mode of operation is controlled by the optional second parameter. \n\n > Starting angle of a pie/doughnut chart is the angle at which the starting face of the first data slice is aligned to. Each subsequent pie/doughnut slice is then drawn in the counter clock-wise direction. \n\n >You have to provide a  callback Function if `asyncRender` is set to `1` (default) where you get the angle provided as input as a parameter of the callback function.The callback implementation does not require to listen to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/3j1rskjp/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// Render a pie 2d chart and rotate the chart by 90 degrees on click of a button\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: \"pie2d\",\n        renderAt: \"chart-container\",\n        dataSource: \"data.json\",\n        dataFormat: \"jsonurl\"\n    }).render();\n\n    // Assign the functionality of rotating the chart by 90 degrees when clicked on\n    // a button (with an id rotate-chart).\n    document.getElementById(\"rotate-chart\").onclick = function () {\n        chart.startingAngle(90, true);\n    };\n});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "angle": {
+               "name": "angle",
+               "type": ["degrees"],
+               "description": "Angle measure by which the pie/doughnut chart will be rotated",
+               "defaultvalue": "0",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "relative": {
+               "name": "relative",
+               "type": ["boolean"],
+               "description": "Mode of operation for the rotation. Specifies whether the angle being set is relative to the current angle or is w.r.t absolute 0",
+               "defaultvalue": "false",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "callBackFN(angle)": {
+               "name": "callBackFN(angle)",
+               "type": ["startingAngle-callBack"],
+               "description": "callBackFN is called only when `startingAngle()` completes its execution.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "zoomOut": {
+         "id": "zoomOut",
+         "name": "zoomOut",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Zooms out the zoom line chart by one level. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/97u88ocp/ )",
+         "examples": {},
+         "params": {}
+      },
+      "zoomTo": {
+         "id": "zoomTo",
+         "name": "zoomTo",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Zooms the zoom line chart to view a specific range of data. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/594wd3uu/ )",
+         "examples": {},
+         "params": {
+            "startIndex": {
+               "name": "startIndex",
+               "type": ["number"],
+               "description": "Index of the data point starting at which the chart will be zoomed into",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "endIndex": {
+               "name": "endIndex",
+               "type": ["number"],
+               "description": "Index of the data point until which the chart will be zoomed into",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "resetChart": {
+         "id": "resetChart",
+         "name": "resetChart",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Resets all the zooming, panning, and pinning actions performed on a zoom line chart.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/neon8qgu/ )",
+         "examples": {},
+         "params": {}
+      },
+      "setZoomMode": {
+         "id": "setZoomMode",
+         "name": "setZoomMode",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Switches between the zoom mode and pin mode of a zoom line chart programmatically. \n\n >You can manually switch between the zoom mode and the pin mode by clicking a button in the top-right corner of the zoom line chart. Click [here](/chart-guide/standard-charts/zoom-line-charts) to read about how the zoom line chart works under each mode.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/194d0pc2/ )",
+         "examples": {},
+         "params": {
+            "yes": {
+               "name": "yes",
+               "type": ["boolean"],
+               "description": "Set to __true__ to activate the zoom mode, set to __false__ to activate the pin mode",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "getViewStartIndex": {
+         "id": "getViewStartIndex",
+         "name": "getViewStartIndex",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Returns the index of the first visible data point (in order of its definition in the source data) on the canvas of a zoom line chart. \n\n >You have to provide a  callback function if `asyncRender` is set to `1` (default) where you get the starting index as a parameter of the callback function.The callback implementation does not require to listen to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/b2ou6L7h/ )",
+         "examples": {},
+         "params": {
+            "callBackFN(index)": {
+               "name": "callBackFN(index)",
+               "type": ["getViewStartIndex-callBack"],
+               "description": "callBackFN is called only when `getViewStartIndex()` completes its execution.",
+               "defaultvalue": "",
+               "optional": "true",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "getViewEndIndex": {
+         "id": "getViewEndIndex",
+         "name": "getViewEndIndex",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Returns the index of the last visible data point (in order of its definition in the source data) on the canvas of a zoom line chart. \n\n >You have to provide a  callback function if `asyncRender` is set to `1` (default) where you get the starting index as a parameter of the callback function.The callback implementation does not require to listen to the `renderComplete` event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/sr8o7jtp/ )",
+         "examples": {},
+         "params": {
+            "callBackFN(index)": {
+               "name": "callBackFN(index)",
+               "type": ["getViewEndIndex-callBack"],
+               "description": "callBackFN is called only when `getViewEndIndex()` completes its execution.",
+               "defaultvalue": "",
+               "optional": "true",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "scrollTo": {
+         "id": "scrollTo",
+         "name": "scrollTo",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Scrolls the zoom-line chart to a particular position. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6dLsruag/ )",
+         "examples": {},
+         "params": {
+            "scrollPosition": {
+               "name": "scrollPosition",
+               "type": ["Number"],
+               "description": "scrollTo is called to scroll the chart. \n\n __Range :__ 0 - 1",
+               "defaultvalue": "0",
+               "optional": "true",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "print": {
+         "id": "print",
+         "name": "print",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Prints individual charts. It hides all elements on a page except the chart to print and then invokes the page printing function (`window.print()`). \n\n >This function works only for charts that have rendered completely, i.e. only after the [renderComplete](/api/fusioncharts/fusioncharts-events#event-renderComplete) event has been triggered. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/snq2znxq/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "// In this snippet of code, we will render a chart on a page and\n// call the print method on the chart on click of a button.\nFusionCharts.ready(function () {\n   FusionCharts.render({\n       type: 'column2d',\n       dataFormat: 'jsonurl',\n       dataSource: 'data.json',\n\n       // assuming an HTML div element exists on the page\n       renderAt: 'chart-container-div'\n\n       events: {\n           renderComplete: function (event) {\n               // assuming a button exists on page with a specific id\n               var button = document.getElementById('print-button');\n               button.onclick = function () {\n                   event.sender.print();\n               };\n           }\n       }\n\n   });\n});"
+            }
+         },
+         "params": {
+            "options": {
+               "name": "options",
+               "type": ["object"],
+               "description": "Object containing the printing options configured",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {
+                  "hideButtons": {
+                     "name": "hideButtons",
+                     "type": ["boolean"],
+                     "description": "Hides all buttons on the chart",
+                     "defaultvalue": "true",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  }
+               }
+            }
+         }
+      },
+      "exportChart": {
+         "id": "exportChart",
+         "name": "exportChart",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Exports a chart as an image or as a PDF document. \n\nTo enable exporting of a chart, the `exportEnabled` attribute (of the `chart` object) should be set to __1__. \n\n When exporting is done programmatically using this method, the export configuration is passed as parameters to this function. \n\n >The `exportChart` function remains undefined until the [loaded](/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. The exporting process is initiated only after the [renderComplete](/api/fusioncharts/fusioncharts-events#event-renderComplete) event is triggered.\n\n To read on how you can export charts using the export-related context menu, click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/73xgmacm/ )",
+         "examples": {},
+         "params": {
+            "options": {
+               "name": "options",
+               "type": ["object"],
+               "description": "The `exportChart` method takes the following parameters:",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {
+                  "exportFormat": {
+                     "name": "exportFormat",
+                     "type": ["string"],
+                     "description": "A chart can be exported in one of the following formats:  \n\n | Export Format | Description | \n\n | --------- | :-------------| \n\n | `png`| Exports the charts in the high quality lossless PNG format | \n\n | `jpg` | Exports the chart in the high quality JPEG image format       | \n\n | `pdf` | Exports the chart as a PDF document |",
+                     "defaultvalue": "png",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "exportFileName": {
+                     "name": "exportFileName",
+                     "type": ["string"],
+                     "description": "File name for the chart being exported, excluding the extension. The extension is automatically appended depending on the value of `exportFormat` parameter.",
+                     "defaultvalue": "FusionCharts",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "exportTargetWindow": {
+                     "name": "exportTargetWindow",
+                     "type": ["string"],
+                     "description": "When the `exportAction` parameter is set to `download` as , this parameter lets you configure whether the return image or PDF will open in the same window (as an attachment for download), or in a new browser window (`_blank`).",
+                     "defaultvalue": "_self",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "exportHandler": {
+                     "name": "exportHandler",
+                     "type": ["string"],
+                     "description": "URL of the export server",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "exportAction": {
+                     "name": "exportAction",
+                     "type": ["string"],
+                     "description": "Specifies whether the exported image will be sent back to the browser as download, or whether it will be saved on to the server.  \n\n | Action Value | Description | \n\n | ----------| :------------------------| \n\n | `download` | The exported chart image or PDF will be downloaded as file. | \n\n | `save` | The exported chart will be saved on the server.| \n\n \n\n >For the charts to be saved on the server, you would need to setup your own export handling server. \n\n",
+                     "defaultvalue": "download",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "exportCallback": {
+                     "name": "exportCallback",
+                     "type": ["function"],
+                     "description": "Callback JavaScript function executed when the export process is complete. If this parameter is not assigned a value, then the `window.FC_Exported` is executed.",
+                     "defaultvalue": "FC_Exported",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  }
+               }
+            }
+         }
+      },
+      "static-batchExport": {
+         "id": "static-batchExport",
+         "name": "batchExport",
+         "kind": "function",
+         "access": "",
+         "scope": "static",
+         "virtual": false,
+         "description": "Exports multiple charts in a single image. This method either takes __no arguments__ or takes __an object as an argument__. \r\r[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/vga0prev/ )",
+         "examples": {},
+         "params": {
+            "imageWidth": {
+               "name": "imageWidth",
+               "type": ["number"],
+               "description": "Width of the exported image (of the charts)",
+               "defaultvalue": "Maximum chart width + 10",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "imageHeight": {
+               "name": "imageHeight",
+               "type": ["number"],
+               "description": "Height of the exported image (of the charts)",
+               "defaultvalue": "(Total height of all charts + 5) * (number of charts + 1)",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "charts": {
+               "name": "charts",
+               "type": ["object"],
+               "description": "The configuration required for the chart(s) being exported can be provided in this object using the attributes given below:",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {
+                  "id": {
+                     "name": "id",
+                     "type": ["string"],
+                     "description": "Valid FusionCharts ID, to attach the chart on the main image",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "x": {
+                     "name": "x",
+                     "type": ["number"],
+                     "description": "x-coordinate for positioning the exported image",
+                     "defaultvalue": "5",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "y": {
+                     "name": "y",
+                     "type": ["number"],
+                     "description": "y-coordinate for positioning the exported image",
+                     "defaultvalue": "previous chart's y-coordinate + 5",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "width": {
+                     "name": "width",
+                     "type": ["number"],
+                     "description": "Custom width for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+                     "defaultvalue": "Current chart width",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "heigt": {
+                     "name": "height",
+                     "type": ["number"],
+                     "description": "Custom height for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+                     "defaultvalue": "Current chart height",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  }
+               }
+            },
+            "background": {
+               "name": "background",
+               "type": ["object"],
+               "description": "The configuration required for the exported image's background can be provided in this object using the attributes given below:",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {
+                  "bgColor": {
+                     "name": "bgColor",
+                     "type": ["hexcolor"],
+                     "description": "Background color for the exported image",
+                     "defaultvalue": "#ffffff",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "bgImage": {
+                     "name": "bgImage",
+                     "type": ["string"],
+                     "description": "Background image for the exported images",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "bgImageAlpha": {
+                     "name": "bgImageAlpha",
+                     "type": ["number"],
+                     "description": "Transparency of the background image",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "bgImageX": {
+                     "name": "bgImageX",
+                     "type": ["number"],
+                     "description": "Starting x-coordinate for positioning the background image",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "bgImageY": {
+                     "name": "bgImageY",
+                     "type": ["number"],
+                     "description": "Starting y-coordinate for positioning the background image",
+                     "defaultvalue": "",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "bgImageWidth": {
+                     "name": "bgImageWidth",
+                     "type": ["number"],
+                     "description": "Width of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+                     "defaultvalue": "Original width of the image",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  },
+                  "bgImageHeight": {
+                     "name": "bgImageHeight",
+                     "type": ["number"],
+                     "description": "Height of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+                     "defaultvalue": "Original height of the image",
+                     "optional": true,
+                     "nullable": "",
+                     "subparams": {}
+                  }
+               }
+            },
+            "exportTargetWindow": {
+               "name": "exportTargetWindow",
+               "type": ["string"],
+               "description": "Set to `_self` to open the exported image in the same window \n\n Set to `_blank` to open the exported image in a new window",
+               "defaultvalue": "_self",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "exportAction": {
+               "name": "exportAction",
+               "type": ["string"],
+               "description": "Set to `_save` to save the exported image on the server \n\n Set to `_download` to send back the image to the client as a download",
+               "defaultvalue": "_download",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "exportFileName": {
+               "name": "exportFileName",
+               "type": ["string"],
+               "description": "Default file name (excluding the extension) for the exported image",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "exportHandler": {
+               "name": "exportHandler",
+               "type": ["string"],
+               "description": "__For server-side exporting__: Path of the export handler (the ready-to-use scripts provided by FusionCharts) \n\n __For client-side exporting__: DOM ID of the FusionCharts Export Component embedded in the web page, along with the chart",
+               "defaultvalue": "_download",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "exportFormats": {
+               "name": "exportFormats",
+               "type": ["string"],
+               "description": "List of formats in which the chart can be exported \n\n The formats are separated using the *|* (pipe) character.",
+               "defaultvalue": "_download",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "exportCallback": {
+               "name": "exportCallback",
+               "type": ["string"],
+               "description": "Name of the JavaScript function that is called when the export process finishes",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "exportAtClientSide": {
+               "name": "exportAtClientSide",
+               "type": ["string"],
+               "description": "Set to `1` to enable client-side exporting",
+               "defaultvalue": "_download",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "getSVGString": {
+         "id": "getSVGString",
+         "name": "getSVGString",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetches the SVG of a chart, created by FusionCharts while rendering the chart, as a string. \n\n >This function can be called __only__ after the chart has rendered. \n\n >You have to provide a  callback Function if `asyncRender` is set to `1` (default) where you get the svg-string as a parameter of the callback function. The callback implementation does not require to listen to the renderComplete event. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/pxum77g5/ )",
+         "examples": {},
+         "params": {
+            "callBackFN( svgString )": {
+               "name": "callBackFN( svgString )",
+               "type": ["getSVGString-callBack"],
+               "description": "callBackFN is called only when `getSVGString()` completes its execution.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "keepImages": {
+               "name": "keepImages",
+               "type": ["keepImages"],
+               "description": "To get the images present in the chart from the SVG string, set the parameter of `keepImages` object to `1`.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "lockResize": {
+         "id": "lockResize",
+         "name": "lockResize",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Controls a chart’s automatic resizing ability when its dimensions are in percentage. This function has to be called before a chart has rendered. Using the [hasRendered()](/api/fusioncharts/fusioncharts-methods#hasRendered) method can be useful here. If the `lockResize()` function is called without a parameter, it returns the current state of the resize lock.",
+         "examples": {},
+         "params": {
+            "state": {
+               "name": "state",
+               "type": ["boolean"],
+               "description": "Setting this parameter to __true__ will lock the automatic percentage-based resizing. If resize is already locked, sending `false` unlocks it.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "showChartMessage": {
+         "id": "showChartMessage",
+         "name": "showChartMessage",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Shows a text message on a chart. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/28uysjtz/ )",
+         "examples": {},
+         "params": {
+            "text": {
+               "name": "text",
+               "type": ["string"],
+               "description": "Text message to be displayed",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "modal": {
+               "name": "modal",
+               "type": ["boolean"],
+               "description": "Boolean value to indicate whether the message will be shown on an overlay button or on the chart.",
+               "defaultvalue": "false",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "cancelable": {
+               "name": "cancelable",
+               "type": ["boolean"],
+               "description": "If set to __true__, the modal can be closed by clicking. Defaults to __false__. \n\n >Applicable only if `modal` is set to __true__. \n\n",
+               "defaultvalue": "false",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "static-formatNumber": {
+         "id": "static-formatNumber",
+         "name": "formatNumber",
+         "kind": "function",
+         "access": "",
+         "scope": "static",
+         "virtual": false,
+         "description": "Formats input numbers based on the formatting configuration passed. The function can be called globally on the [FusionCharts](/api/fusioncharts) object or on a specific instance of FusionCharts Suite XT. \n\n When called globally on the FusionCharts object, the function applies the configuration settings to all numbers on the chart. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/fhswaana/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "console.log(FusionCharts.formatNumber(1234.5)); // logs \"1.2K\"\r\rconsole.log(FusionCharts.formatNumber(1234.5, {\r    numberPrefix: \"$\"\r})); // logs \"$1.2K\"",
+               "type": "js"
+            },
+            "1": {
+               "caption": "",
+               "code": "// Calling number formatter on a chart instance when `renderComplete` event is fired.\rFusionCharts.ready(function () {\r    // Render a chart within a chart container `div` element.\r    var chart = new FusionCharts({\r        type: 'column2d',\r        renderAt: 'chart-container-div',\r        dataFormat: 'json',\r        dataSource: {\r            chart: {\r                caption: \"Quarterly sales summary\",\r                numberPrefix: \"$\",\r                decimals: \"2\",\r                forceDecimals: \"1\"\r            }\r            data: [\r                { label: \"Q1\", value: \"213345\"},\r                { label: \"Q2\", value: \"192672\"},\r                { label: \"Q3\", value: \"201238\"},\r                { label: \"Q4\", value: \"209881\"},\r            ]\r        },\r\r        events: {\r            renderComplete: function (eventObj) {\r                // Call the formatNumber function of the specific chart we rendered.\r                console.log(eventObj.sender.formatNumber(1234.5)); // logs \"$1.23K\"\r            }\r        }\r    });\r    chart.render();\r});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "num": {
+               "name": "num",
+               "type": ["number"],
+               "description": "Number to be formatted",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "type": {
+               "name": "type",
+               "type": ["string"],
+               "description": "When called globally on the FusionCharts object, the function applies the configuration settings to all numbers on the chart. This parameter selectively formats numbers based on chart elements, by taking __yaxisvalues__, __xaxisvalues__, and __datalabels__ as values.",
+               "defaultvalue": "datalabels",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "config": {
+               "name": "config",
+               "type": ["object"],
+               "description": "Optional number formatting attributes to override the default number formatting options of a chart \n\n >While calling `formatNumber` on the `FusionCharts` object, this becomes the second parameter.\n\n",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "getJSONData": {
+         "id": "getJSONData",
+         "name": "getJSONData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetches chart data in the JSON format. This function needs to be called on an existing chart; if called on a chart that has no data set for it, it returns an empty `chart` object. \n\n >This function is shorthand for `chart.getChartData('json')`.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/bkhLqh6o/ )",
+         "examples": {},
+         "params": {}
+      },
+      "setJSONData": {
+         "id": "setJSONData",
+         "name": "setJSONData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Sets chart data in the JSON data format. When this function is called on a chart that has already rendered, it immediately updates the chart with the new data. The function can also be used to set data for a new chart. \n\n >A preferrable alternative to using this method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n \n\n >The `setJSONData()` function is shorthand for the [setChartData()](/api/fusioncharts/fusioncharts-methods#setChartData) method, where the data format is set to __json__. So, calling `chart.setXMLData({'chart': ...})` is the same as calling `chart.setChartData({'chart': ...}, 'json')`. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/d2wtLzuq/ )",
+         "examples": {},
+         "params": {
+            "data": {
+               "name": "data",
+               "type": ["string", "object"],
+               "description": "JSON data to be set for the chart, as a string or as a JavaScript object",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "setJSONUrl": {
+         "id": "setJSONUrl",
+         "name": "setJSONUrl",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetches chart data from the URL provided, in the JSON format. When this function is called on a chart that has already rendered, it immediately updates the chart with the new data. The function can also be used to set data for a new chart.  \n\n >A preferrable alternative to using this method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n \n\n >The `setJSONUrl()` function is shorthand for the [setChartDataUrl()](/api/fusioncharts/fusioncharts-methods#setChartDataUrl) method, where the data format of the URL is set to __jsonurl__. So, calling `chart.setJSONUrl('data.json')` is the same as calling `chart.setChartDataUrl('data.json', 'jsonurl')`. \n\n",
+         "examples": {},
+         "params": {
+            "url": {
+               "name": "url",
+               "type": ["string"],
+               "description": "Path to the JSON data file",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "getCSVData": {
+         "id": "getCSVData",
+         "name": "getCSVData",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetch chart data set in the CSV format. \n\nThe data returned is the closest possible comma-separated value representation that has been provided to the chart. The exported data does not contain any functional or cosmetic attribute that was set on the chart. However, the following chart attributes can be set to customise the CSV output: \n\n| Chart Attribute | Type | Description |\n|-------|--------|---------|\n| `exportDataSeparator` | string | Sets the CSV delimiter string. Default: __,__ (comma) |\n| `exportDataQualifier` | string | Sets the CSV qualifier string. Default: __{quot}__ |\n| `exportDataFormattedVal` | boolean | Sets whether the output will be a formatted string or a pure number |\n| `exportErrorColumns` | boolean | Forces error output on the error bar, error line, and error scatter charts |  \n\n For the `exportDataSeparator` and `exportDataQualifier` attributes, you can provide the quotation mark, the apostrophe, and the tab character using the __{quot}__, __{apos}__ and __{tab}__ short-codes, respectively.\n\nThis function needs to be called on an existing chart that has been loaded and has a valid data. If this function is called on a chart which has no data set on it, it returns an empty stringokay.\n\n >As of now, the CSV data generator uses heuristic methods to determine the nature of the output because the method does not internally have access to the chart-type being used. As such, when the chart type cannot determined from the data itself, this method falls back to a generic output format. \n\n >This function is the shorthand for  `chart.getChartData('csv')`. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/L486ydop/ )",
+         "examples": {},
+         "params": {}
+      },
+      "getDataAsCSV": {
+         "id": "getDataAsCSV",
+         "name": "getDataAsCSV",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Fetch chart data as comma-separated values. The delimiter can be changed by passing relevant chart attributes. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/1Lz082uv/ )",
+         "examples": {},
+         "params": {}
+      },
+      "render": {
+         "id": "render",
+         "name": "render",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Renders a chart inside a container element on a page. If the chart is already rendered, it can be re-rendered inside the same container DOM element or a different element. \n\n Creating a chart using `new FusionCharts()` only creates a JavaScript instance for the chart; this function is called to render the chart. Usually, the `renderAt` construction parameter specifies the element on the page, inside which the chart will be rendered. If `renderAt` is not provided, then the container element is specified as the parameter to this function.\n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/7uccgq4m/ )",
+         "examples": {},
+         "params": {
+            "containerElement": {
+               "name": "containerElement",
+               "type": ["string", "DOMElement"],
+               "description": "Reference or ID of the DOM element inside which the chart is to be rendered. If this argument is not provided, it is assumed that the `renderAt` attribute is provided during chart creation.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "insertMode": {
+               "name": "insertMode",
+               "type": ["FusionCharts~DOMInsertModes"],
+               "description": "Method for inserting the chart's DOM element within the `containerElement`. Click [here](/api/fusioncharts/fusioncharts-properties#DOMInsertModes) to read more about  the DOM insert modes.",
+               "defaultvalue": "replace",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "callback": {
+               "name": "callback",
+               "type": ["FusionCharts~renderCallback"],
+               "description": "Callback function executed after the chart is successfully rendered. If the last parameter to the `render()` function is a function, it is treated as a callback.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "resizeTo": {
+         "id": "resizeTo",
+         "name": "resizeTo",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Resizes the chart to the specified width and height. The values for the width and height are passed, in pixels or percentage, as parameters to this function. If the function is called without any parameters, it __returns__ the current value of the chart width and height. \n\n This function is useful in controlling the chart dimensions based on changes in the dimensions of a resizable dialog box. It is also useful in resizing charts for responsive layouts, based on device orientation change. \n\n \n\n >When the chart dimensions are set in percentage, the chart partially redraws itself when the chart container is resized. The chart uses a very low-profile polling, at an interval of __300 ms__ to check whether the container has effectively resized. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/Ljzfo7sL/ )",
+         "examples": {},
+         "params": {
+            "width": {
+               "name": "width",
+               "type": ["number", "percent"],
+               "description": "Chart width to set, in pixels or percentage",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            },
+            "height": {
+               "name": "height",
+               "type": ["number", "percent"],
+               "description": "Chart height to set, in pixels or percentage",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "dispose": {
+         "id": "dispose",
+         "name": "dispose",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Disposes a chart completely, when called on an instance of FusionCharts. This clears the entire chart object and removes it from the DOM tree structure. When the chart is successfully disposed, `chartInstance.disposed` is set to __true__. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/xb8ymqoa/ )",
+         "examples": {},
+         "params": {}
+      },
+      "configure": {
+         "id": "configure",
+         "name": "configure",
+         "kind": "function",
+         "access": "",
+         "scope": "instance",
+         "virtual": false,
+         "description": "Configures status messages that are displayed while rendering a chart. For example, while a chart’s data is being fetched from a remote URL, the chart will display the message __Retrieving data. Please wait.__ \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qtwd3o2q/ )",
+         "examples": {},
+         "params": {
+            "option": {
+               "name": "option",
+               "type": ["FusionCharts~chartStatusMessages"],
+               "description": "To configure a single attribute, specify the attribute (the key) as a string. To configure multiple attributes, this can be an object having key-value pairs of all configuration options.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "value": {
+               "name": "value",
+               "type": ["string"],
+               "description": "If the `option` parameter has a single value as the key, this parameter is the value of that key.",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      },
+      "static-render": {
+         "id": "static-render",
+         "name": "render",
+         "kind": "function",
+         "access": "",
+         "scope": "static",
+         "virtual": false,
+         "description": "Uses a one-line argument parameter to render FusionCharts directly into the container specified in the arguments.\n\nCalling this function directly is same as creating a new instance of `FusionCharts` and calling `.render()` on it. For example, `var chart = FusionCharts.render({...});` is same as `var chart = new FusionCharts({...}); ... chart.render();`. \n\n[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/36j8o492/ )",
+         "examples": {
+            "0": {
+               "caption": "",
+               "code": "FusionCharts.ready(function () {\r    var chart = FusionCharts.render({\r        type: \"column2d\",\r        renderAt: \"chart-container-div\",\r        dataSource: \"data.json\",\r        dataFormat: \"jsonurl\"\r    });\r});",
+               "type": "js"
+            }
+         },
+         "params": {
+            "options": {
+               "name": "options",
+               "type": ["object"],
+               "description": "Chart configuration options required to create a chart. The options must include the `renderAt` parameter for the chart to render instantly.",
+               "defaultvalue": "",
+               "optional": "",
+               "nullable": "",
+               "subparams": {}
+            },
+            "callback": {
+               "name": "callback",
+               "type": ["FusionCharts~renderCallback"],
+               "description": "Callback function executed when the chart is successfully rendered",
+               "defaultvalue": "",
+               "optional": true,
+               "nullable": "",
+               "subparams": {}
+            }
+         }
+      }
+   }
+}
