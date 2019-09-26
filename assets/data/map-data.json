@@ -8800,6 +8800,17 @@
             "markerData": "/maps/marker-data/cameroon"
           },
           {
+            "name": "Cameroon Regions",
+            "marker": false,
+            "members": [
+              {
+                "name": "Adamawa",
+                "alias": "adamawa",
+                "specSheet": "/maps/spec-sheets/adamawa"
+              }
+            ]
+          },
+          {
             "name": "Cape Verde",
             "alias": "capeverde",
             "specSheet": "/maps/spec-sheets/capeverde",
