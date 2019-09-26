@@ -175,7 +175,7 @@
          "access": "",
          "scope": "",
          "virtual": false,
-         "description": "Sets the provided unit and multiplier as the current binning in the chart by adjusting spread of time on the focus canvases. The provided multiplier must be a valid multiplier for the given time unit (as per the currently active binning rules in the chart). If it is not, then there is no visible effect of calling this method. If the multiplier is not provided, it is assumed to be 1. If the unit is not provided, there should be no visible effect of calling this method. \n 1.Must be a valid standard bins? \n 2.Restrict right, if left can not be extended further update right \n 3.Best visual is achieved by 1 month binning, user provided 2months, shall that change the viz? ",
+         "description": "Sets the provided unit and multiplier as the current binning in the chart by adjusting spread of time on the focus canvases. The provided multiplier must be a valid multiplier for the given time unit (as per the currently active binning rules in the chart). If it is not, then there is no visible effect of calling this method. If the multiplier is not provided, it is assumed to be 1. If the unit is not provided, there should be no visible effect of calling this method. \n\n 1.Must be a valid standard bins? \n\n 2.Restrict right, if left can not be extended further update right. \n\n 3.Best visual is achieved by 1 month binning, user provided 2months, shall that change the viz? ",
          "examples": {
             "0": {
                "caption": "",
