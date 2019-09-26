@@ -4832,6 +4832,129 @@
             "markerData": "/maps/marker-data/bhutan"
           },
           {
+            "name": "Bhutan Districts",
+            "marker": false,
+            "members": [
+              {
+                "name": "Bumthang",
+                "alias": "bumthang",
+                "specSheet": "/maps/spec-sheets/bumthang"
+              },
+
+              {
+                "name": "Chukha",
+                "alias": "chukha",
+                "specSheet": "/maps/spec-sheets/chukha"
+              },
+
+              {
+                "name": "Tsirang",
+                "alias": "tsirang",
+                "specSheet": "/maps/spec-sheets/tsirang"
+              },
+
+              {
+                "name": "Dagana",
+                "alias": "dagana",
+                "specSheet": "/maps/spec-sheets/dagana"
+              },
+
+              {
+                "name": "Gasa",
+                "alias": "gasa",
+                "specSheet": "/maps/spec-sheets/gasa"
+              },
+
+              {
+                "name": "Sarpang",
+                "alias": "sarpang",
+                "specSheet": "/maps/spec-sheets/sarpang"
+              },
+
+              {
+                "name": "Haa",
+                "alias": "haa",
+                "specSheet": "/maps/spec-sheets/haa"
+              },
+
+              {
+                "name": "Lhuntse",
+                "alias": "lhuntse",
+                "specSheet": "/maps/spec-sheets/lhuntse"
+              },
+
+              {
+                "name": "Mongar",
+                "alias": "mongar",
+                "specSheet": "/maps/spec-sheets/mongar"
+              },
+
+              {
+                "name": "Paro",
+                "alias": "paro",
+                "specSheet": "/maps/spec-sheets/paro"
+              },
+              {
+                "name": "Pemagatshel",
+                "alias": "pemagatshel",
+                "specSheet": "/maps/spec-sheets/pemagatshel"
+              },
+
+              {
+                "name": "Punakha",
+                "alias": "punakha",
+                "specSheet": "/maps/spec-sheets/punakha"
+              },
+
+              {
+                "name": "Samtse",
+                "alias": "samtse",
+                "specSheet": "/maps/spec-sheets/samtse"
+              },
+
+              {
+                "name": "Samdrup Jongkhar",
+                "alias": "samdrupjongkhar",
+                "specSheet": "/maps/spec-sheets/samdrupjongkhar"
+              },
+
+              {
+                "name": "Zhemgang",
+                "alias": "zhemgang",
+                "specSheet": "/maps/spec-sheets/zhemgang"
+              },
+
+              {
+                "name": "Trashigang",
+                "alias": "trashigang",
+                "specSheet": "/maps/spec-sheets/trashigang"
+              },
+
+              {
+                "name": "Thimphu",
+                "alias": "thimphu",
+                "specSheet": "/maps/spec-sheets/thimphu"
+              },
+
+              {
+                "name": "Trongsa",
+                "alias": "trongsa",
+                "specSheet": "/maps/spec-sheets/trongsa"
+              },
+
+              {
+                "name": "Trashiyangtse",
+                "alias": "trashiyangtse",
+                "specSheet": "/maps/spec-sheets/trashiyangtse"
+              },
+              {
+                "name": "Wangdue Phodrang",
+                "alias": "wangduephodrang",
+                "specSheet": "/maps/spec-sheets/wangduephodrang"
+              }
+            ]
+          },
+          {
             "name": "Brunei",
             "alias": "brunei",
             "specSheet": "/maps/spec-sheets/brunei",

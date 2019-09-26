@@ -362,6 +362,8 @@ The chart rendered with the unformatted data value looks like shown below:
 
 ## Round off the Numeric Values
 
+> It is an experimental feature.
+
 To round off the y-axis values in a time series chart, give the rounding off value to the `round` attribute.
 
 Refer to the code below:
