@@ -10,7 +10,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"beforeRender\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
     "params": [{
@@ -92,7 +92,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"renderComplete\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -180,7 +180,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"renderCancelled\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -263,7 +263,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"rendered\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -331,7 +331,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"noDataToDisplay\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -399,7 +399,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"beforeDataUpdate\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -492,7 +492,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"dataUpdateCancelled\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -585,7 +585,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"dataUpdated\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -1150,7 +1150,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"chartTypeInvalid\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
