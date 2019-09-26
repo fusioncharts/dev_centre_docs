@@ -68,7 +68,7 @@ Click [here](/chart-guide/standard-charts/combination-charts#stacked-area-2d-lin
 
 ## 3D Dual Y-axis Combination Chart
 
-FusionCharts Suite XT allows you to render a dual y-axis combination chart in 3D. The alias name to render the dual y-axis combination chart in 3D is `mscombidy3d`. Set the value of `type` attribute to `mscombidy3d` to render the chart.
+FusionCharts Suite XT now allows you to render a dual y-axis combination chart in 3D. The alias name to render the dual y-axis combination chart in 3D is `mscombidy3d`. Set the value of `type` attribute to `mscombidy3d` to render the chart.
 
 A dual y-axis combination chart in 3D looks like as shown below:
 

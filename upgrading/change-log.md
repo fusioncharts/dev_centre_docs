@@ -60,8 +60,6 @@ heading: Version 3.14.x
 
 - In a Heatmap chart, if no `data` property was given, the chart was throwing a `JS` error. This issue has now been fixed.
 
-- In the multilevel pie chart, the default plot color got changed. The issue has now been fixed.
-
 - A multilevel pie chart without a root category no longer displays a 'No data to display' message.
 
 - `drawLabel` function is now working properly for the bar chart.
