@@ -681,7 +681,7 @@ new FusionCharts({
 	<tr>
 		<td>`round`</td>
 		<td>Boolean</td>
-		<td>Round off the y-axis values..</td>
+		<td>Round off the y-axis values.</td>
 	</tr>
 </table>
 

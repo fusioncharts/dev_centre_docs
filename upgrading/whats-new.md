@@ -80,7 +80,7 @@ Click [here](/chart-guide/standard-charts/combination-charts#3d-dual-y-axis-comb
 
 FusionCharts Suite XT allows you to export chart data in CSV format.
 
-A column 2D chart with export enabled is shown below. Click the IMAGE menu button and select the **Export as CSV** option to export the chart data.
+A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select the **Export as CSV** option to export the chart data.
 
 {% embed_chart exporting-as-image-and-pdf-introduction-example-1.js %}
 
