@@ -1,6 +1,6 @@
 {
    "header": "FusionTime Methods",
-   "description": "description",
+   "description": "FusionTime offers wide variety of methods for controlling the chart behaviour ranging from exporting, loading data, resizing, set binning of the time-series charts etc. Find the comprehensive list of methods below.",
    "methods": {
       "setBinning": {
          "id": "setBinning",

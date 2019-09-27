@@ -6,13 +6,13 @@ heading: Map Improvements in Version 3.14.1
 
 - The core maps package has been updated to:
 
-  - Updated the specification sheet for Sudan Without South Sudan and 2 separate province maps:
+  - Updated the specification sheet for [Sudan Without South Sudan](/maps/spec-sheets/sudanwosouthsudan) and 2 separate province maps:
 
-    - Central Darfur
+    - [Central Darfur](/maps/spec-sheets/centraldarfur)
 
-    - East Darfur
+    - [East Darfur](/maps/spec-sheets/eastdarfur)
 
-    - West Kurdufan
+    - [West Kurdufan](/maps/spec-sheets/westkurdufan)
 
   - The following names have been updated in the specification sheet for Sudan Without South Sudan map:
 
