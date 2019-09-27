@@ -545,7 +545,7 @@
             "exportHandler": {
                "name": "exportHandler",
                "type": ["string"],
-               "description": "__For server-side exporting__: Path of the export handler (the ready-to-use scripts provided by FusionCharts) \n\n __For client-side exporting__: DOM ID of the FusionCharts Export Component embedded in the web page, along with the chart",
+               "description": "__For server-side exporting__: Path of the export handler (the ready-to-use scripts provided by FusionTime) \n\n __For client-side exporting__: DOM ID of the FusionTime Export Component embedded in the web page, along with the chart",
                "defaultvalue": "_download",
                "optional": "",
                "nullable": "",
@@ -591,7 +591,7 @@
          "params": {
             "format": {
                "name": "format",
-               "type": ["FusionCharts~dataFormats"],
+               "type": ["dataFormats"],
                "description": "Format in which chart data has to be retrieved",
                "defaultvalue": "",
                "optional": "",
@@ -607,7 +607,7 @@
          "access": "",
          "scope": "instance",
          "virtual": false,
-         "description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n",
+         "description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionTime constructor. \n\n",
          "params": {
             "data": {
                "name": "data",
@@ -620,7 +620,7 @@
             },
             "format": {
                "name": "format",
-               "type": ["FusionCharts~dataFormats"],
+               "type": ["dataFormats"],
                "description": "Format of the data being passed. If the value for this parameter is not a valid [dataFormat](/api/fusioncharts/fusioncharts-properties#dataFormats), then the default or previously set data format is assumed. \n\n >If the data format is already known, then the [setJSONData()](/api/fusioncharts/fusioncharts-methods#setJSONData) or the [setXMLData()](/api/fusioncharts/fusioncharts-methods#setXMLData) methods can be used. \n\n",
                "defaultvalue": "",
                "optional": true,
@@ -700,7 +700,7 @@
             },
             "listener": {
                "name": "listener",
-               "type": ["FusionCharts~eventListener"],
+               "type": ["eventListener"],
                "description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
                "defaultvalue": "",
                "optional": "",
@@ -747,7 +747,7 @@
          "access": "",
          "scope": "static",
          "virtual": false,
-         "description": "Return the DOM element created by FusionCharts in which charts will be rendered `<span>`",
+         "description": "Return the DOM element created by FusionTime in which charts will be rendered `<span>`",
          "params": {
             "id": {
                "name": "id",
@@ -778,7 +778,7 @@
                "type": [
                   "object"
                ],
-               "description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new [FusionCharts](/api/fusioncharts) instance.",
+               "description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new FusionTime instance.",
                "defaultvalue": "",
                "optional": true,
                "nullable": true,
@@ -789,7 +789,7 @@
                "type": [
                   "boolean"
                ],
-               "description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionCharts instance, and therefore, create a clone.",
+               "description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionTime instance, and therefore, create a clone.",
                "defaultvalue": "false",
                "optional": true,
                "nullable": "",
@@ -804,14 +804,14 @@
          "access": "",
          "scope": "static",
          "virtual": false,
-         "description": "Accepts a function as an argument and that is executed by FusionCharts when the page is ready (library loaded, DOM elements rendered).",
+         "description": "Accepts a function as an argument and that is executed by FusionTime when the page is ready (library loaded, DOM elements rendered).",
          "params": {
             "readyCallback": {
                "name": "readyCallback",
                "type": [
-                  "FusionCharts~readyCallback"
+                  "readyCallback"
                ],
-               "description": "Callback function executed when the FusionCharts framework is ready",
+               "description": "Callback function executed when the FusionTime framework is ready",
                "defaultvalue": "",
                "optional": "",
                "nullable": "",
@@ -1069,7 +1069,7 @@
             "insertMode": {
                "name": "insertMode",
                "type": [
-                  "FusionCharts~DOMInsertModes"
+                  "DOMInsertModes"
                ],
                "description": "Method for inserting the chart's DOM element within the `containerElement`. Click [here](/api/fusioncharts/fusioncharts-properties#DOMInsertModes) to read more about  the DOM insert modes.",
                "defaultvalue": "replace",
@@ -1080,7 +1080,7 @@
             "callback": {
                "name": "callback",
                "type": [
-                  "FusionCharts~renderCallback"
+                  "renderCallback"
                ],
                "description": "Callback function executed after the chart is successfully rendered. If the last parameter to the `render()` function is a function, it is treated as a callback.",
                "defaultvalue": "",
@@ -1114,7 +1114,7 @@
             "option": {
                "name": "option",
                "type": [
-                  "FusionCharts~chartStatusMessages"
+                  "chartStatusMessages"
                ],
                "description": "To configure a single attribute, specify the attribute (the key) as a string. To configure multiple attributes, this can be an object having key-value pairs of all configuration options.",
                "defaultvalue": "",

@@ -18,7 +18,7 @@ heading: Release Notes
 
 <h4>Improvement</h4>
 
-- By default, the chart formats the data values. Now, you can see unformatted (or raw) data values. One can also format the data values with round attributes (decimal places, tens, hundreds, etc). These will reflect wherever data values are visible.
+- By default, the chart formats the data values. Now, you can see unformatted (or raw) data values. One can also format the data values with `round` attribute (decimal places, tens, hundreds, etc). These will reflect wherever data values are visible.
 
 - Earlier, if you mentioned the name of aggregation in uppercase or camelcase, you would get a JS error. Now, if you mention the name of an aggregation that is included in FusionCharts, it will work without error, no matter which case (upper, lower, or camel) you name it in. However, if you define your own custom aggregation, then you need to follow a few naming regulations, as follows:
 
