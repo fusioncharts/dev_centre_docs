@@ -20,7 +20,7 @@ heading: FusionExport Release Notes
 
 - **Supports for PDF header & footer:** Behold, the most requested feature for FusionExport is here. Now you can add headers and footers without any hassle. Just mention them in the configurations and you are done!
 
-- **Run as a background service in Linux based environments:** Now you can run FusionExport as a background service by providing --daemon option. No no need to split your screen.
+- **Run as a background service in Linux based environments:** Now you can run FusionExport as a background service by providing `--daemon` option. No no need to split your screen.
 
 <h4>Improvements</h4>
 
