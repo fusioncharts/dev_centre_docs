@@ -13,7 +13,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"beforeRender\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": " {\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeRender\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -99,6 +99,79 @@
       "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"renderComplete\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
+    "params": [
+      {
+        "name": "eventObj",
+        "header": "eventObj",
+        "subparams": [
+          {
+            "name": "eventType",
+            "type": "string",
+            "description": "Type (name) of the event triggered"
+          },
+          {
+            "name": "eventId",
+            "type": "number",
+            "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered."
+          },
+          {
+            "name": "sender",
+            "type": "FusionCharts",
+            "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property."
+          },
+          {
+            "name": "cancelled",
+            "type": "boolean",
+            "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to true when `eventObj.stopPropagation()` is called."
+          },
+          {
+            "name": "stopPropagation",
+            "type": "function",
+            "description": "Function called from within a listener to prevent subsequent listeners from being executed."
+          },
+          {
+            "name": "defaultPrevented",
+            "type": "boolean",
+            "description": "Boolean attribute that indicates whether the default action of the event was defaultPrevented; set to **true** when `eventObj.preventDefault()` is called."
+          },
+          {
+            "name": "preventDefault",
+            "type": "function",
+            "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the beforeResize event, the chart will not be resized and the resizeCancelled event will be triggered"
+          },
+          {
+            "name": "detached",
+            "type": "boolean",
+            "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          },
+          {
+            "name": "detachHandler",
+            "type": "function",
+            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          },
+          {
+            "name": "data.width",
+            "type": "number",
+            "description": "Chart width"
+          },
+          {
+            "name": "data.height",
+            "type": "number",
+            "description": "Chart height"
+          },
+          {
+            "name": "data.drawCount",
+            "type": "number",
+            "description": "number of times the chart is drawn/redrawn"
+          },
+          {
+            "name": "data.displayingMessage",
+            "type": "boolean",
+            "description": "Boolean attribute indicating whether a message is configured for the chart"
+          }
+        ]
+      }
+    ]
   },
 
   {
@@ -1176,106 +1249,6 @@
       "lifecycle": ""
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"legendItemClicked\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
-<<<<<<< HEAD
-    "params": [{
-      "name": "eventObj",
-      "header": "eventObj",
-      "subparams": [{
-          "name": "eventType",
-          "type": "string",
-          "description": "Type (name) of the event triggered"
-        },
-        {
-          "name": "eventId",
-          "type": "number",
-          "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered."
-        },
-        {
-          "name": "sender",
-          "type": "FusionCharts",
-          "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property."
-        },
-        {
-          "name": "cancelled",
-          "type": "boolean",
-          "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to true when `eventObj.stopPropagation()` is called."
-        },
-        {
-          "name": "stopPropagation",
-          "type": "function",
-          "description": "Function called from within a listener to prevent subsequent listeners from being executed."
-        },
-        {
-          "name": "defaultPrevented",
-          "type": "boolean",
-          "description": "Boolean attribute that indicates whether the default action of the event was defaultPrevented; set to **true** when `eventObj.preventDefault()` is called."
-        },
-        {
-          "name": "preventDefault",
-          "type": "function",
-          "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the beforeResize event, the chart will not be resized and the resizeCancelled event will be triggered"
-        },
-        {
-          "name": "detached",
-          "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
-        },
-        {
-          "name": "detachHandler",
-          "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
-        },
-        {
-          "name": "data.id",
-          "type": "string",
-          "description": "Chart ID"
-        },
-        {
-          "name": "data.chartX",
-          "type": "number",
-          "description": "x-coordinate of the pointer, relative to the chart"
-        },
-        {
-          "name": "data.chartY",
-          "type": "number",
-          "description": "y-coordinate of the pointer, relative to the chart"
-        },
-        {
-          "name": "data.pageX",
-          "type": "number",
-          "description": "x-coordinate of the pointer, relative to the chart"
-        },
-        {
-          "name": "data.pageY",
-          "type": "number",
-          "description": "y-coordinate of the pointer, relative to the chart"
-        },
-        {
-          "name": "data.datasetName",
-          "type": "string",
-          "description": "Dataset to which the data plot belongs"
-        },
-        {
-          "name": "data.dataIndex",
-          "type": "number",
-          "description": "Index of the data plot, in the order of its definition in the dataset"
-        },
-        {
-          "name": "data.visible",
-          "type": "boolean",
-          "description": "Visibility status of the legend item (true if shown, false if hidden)"
-        },
-        {
-          "name": "data.preventDefaults",
-          "type": "function",
-          "description": ""
-        }
-
-
-
-      ]
-    }]
-=======
     "params": [
       {
         "name": "eventObj",
@@ -1374,7 +1347,6 @@
         ]
       }
     ]
->>>>>>> 23e158e90cfdfbb946d698fab150534ca825fe32
   },
 
   {
