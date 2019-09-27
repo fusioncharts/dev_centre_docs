@@ -1,6 +1,6 @@
 [{
     "name": "beforeRender",
-    "shortDescription": "This event is fired just before a chart is rendered.",
+    "shortDescription": "Triggers just before a chart is rendered.",
     "description": "This event is fired just before a chart is rendered.",
     "info": "Triggered before a chart is to be rendered. Calling `event.preventDefault()` from within the handler of this event will cancel the rendering process. The rendering process is triggered when the `FusionCharts#render()` method is called.",
     "example": {
@@ -10,7 +10,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"beforeRender\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
     "params": [{
@@ -54,7 +54,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -82,8 +82,8 @@
 
   {
     "name": "renderComplete",
-    "shortDescription": "This event is fired when a chart is rendered using FusionCharts#render()` method, the `FusionCharts#chartType()` method, or the `FusionCharts#setChartData()` method",
-    "description": "Triggered every time a chart is rendered using the `FusionCharts#render()` method, the `FusionCharts#chartType()` method, or the `FusionCharts#setChartData()` method. It is also triggered every time chart data is successfully updated, which triggers a re-render internally.",
+    "shortDescription": "Triggers when a chart is rendered using `FusionCharts#render()` method, the `FusionCharts#chartType()` method, or the `FusionCharts#setChartData()` method.",
+    "description": "This event is fired every time a chart is rendered using the `FusionCharts#render()` method, the `FusionCharts#chartType()` method, or the `FusionCharts#setChartData()` method. It is also triggered every time chart data is successfully updated, which triggers a re-render internally.",
     "info": "The difference between this event and the rendered event is that the rendered event is triggered only when the FusionCharts#render() method is called.",
     "example": {
       "header": "Example",
@@ -92,7 +92,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"renderComplete\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -136,7 +136,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -170,8 +170,8 @@
 
   {
     "name": "renderCancelled",
-    "shortDescription": "Triggered when the default behavior of the `beforeRender` event is cancelled using the `event.preventDefault()` from within the handler for the `beforeRender` event.",
-    "description": "Triggered when the default behavior of the `beforeRender` event is cancelled using the `event.preventDefault()` from within the handler for the `beforeRender` event.",
+    "shortDescription": "Triggers when the default behavior of the `beforeRender` event is cancelled using the `event.preventDefault()` from within the handler for the `beforeRender` event.",
+    "description": "This event is fired when the default behavior of the `beforeRender` event is cancelled using the `event.preventDefault()` from within the handler for the `beforeRender` event.",
     "info": "",
     "example": {
       "header": "Example",
@@ -180,7 +180,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"renderCancelled\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -224,7 +224,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -254,7 +254,7 @@
   {
     "name": "rendered",
     "shortDescription": "The event is fired when the chart completes drawing, after the `FusionCharts#render()` or the `FusionCharts#chartType()` method is called.",
-    "description": "Triggered when the chart completes drawing, after the `FusionCharts#render()` or the `FusionCharts#chartType()` method is called. The chart renders if the data provided is correct; otherwise, an error message is rendered.A call to this event is made only once, even if new data may be supplied later. It can be used to invoke any further JavaScript methods on the chart or to change chart data.",
+    "description": "Triggers when the chart completes drawing, after the `FusionCharts#render()` or the `FusionCharts#chartType()` method is called. The chart renders if the data provided is correct; otherwise, an error message is rendered.A call to this event is made only once, even if new data may be supplied later. It can be used to invoke any further JavaScript methods on the chart or to change chart data.",
     "info": "If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in this event handler, for example, by using `setTimeout`.",
     "example": {
       "header": "Example",
@@ -263,7 +263,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"rendered\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -307,7 +307,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -322,7 +322,7 @@
   {
     "name": "noDataToDisplay",
     "shortDescription": "The event is fired when no data is passed to the chart. It can be used to show an error message or take a corrective measure.",
-    "description": "Triggered when no data is passed to the chart. It can be used to show an error message or take a corrective measure.",
+    "description": "Triggers when no data is passed to the chart. It can be used to show an error message or take a corrective measure.",
     "info": "",
     "example": {
       "header": "Example",
@@ -331,7 +331,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"noDataToDisplay\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -375,7 +375,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -399,7 +399,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"beforeDataUpdate\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -443,7 +443,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -492,7 +492,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"dataUpdateCancelled\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -536,7 +536,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -585,7 +585,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"dataUpdated\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -629,7 +629,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -722,7 +722,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -840,7 +840,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -958,7 +958,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -1076,7 +1076,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -1150,7 +1150,7 @@
     "tags": {
       "action": "",
       "component": "",
-      "lifecycle": "lifecycle"
+      "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"chartTypeInvalid\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -1194,7 +1194,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -1262,7 +1262,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -1377,7 +1377,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -1485,7 +1485,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -1593,7 +1593,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -1721,7 +1721,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -1824,7 +1824,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -1951,7 +1951,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -2019,7 +2019,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -2087,7 +2087,7 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
@@ -2101,7 +2101,7 @@
 
   {
     "name": "dataMarkerRollOver",
-    "shortDescription": "This event is fired when a user hovers over a data marker.",
+    "shortDescription": "Triggers when a user hovers over a data marker.",
     "description": "Triggered when a user hovers over a data marker.",
     "info": "",
     "example": {
@@ -2184,7 +2184,7 @@
 
   {
     "name": "dataMarkerRollOut",
-    "shortDescription": "This event is fired when a user hovers out of a data marker.",
+    "shortDescription": "Triggers when a user hovers out of a data marker.",
     "description": "Triggered when a user hovers out of a data marker.",
     "info": "",
     "example": {
@@ -2267,7 +2267,7 @@
 
   {
     "name": "dataMarkerClick",
-    "shortDescription": "This event is fired when a user clicks on a data marker.",
+    "shortDescription": "Triggers when a user clicks on a data marker.",
     "description": "Triggered when a user clicks on a data marker.",
     "info": "",
     "example": {
@@ -2350,7 +2350,7 @@
 
   {
     "name": "timeMarkerRollOver",
-    "shortDescription": "This event is fired when a user hovers over a time instant marker’s box or a time span marker’s rectangular area.",
+    "shortDescription": "Triggers when a user hovers over a time instant marker’s box or a time span marker’s rectangular area.",
     "description": "Triggered when a user hovers over a time instant marker’s box or a time span marker’s rectangular area.",
     "info": "",
     "example": {
@@ -2408,7 +2408,7 @@
 
   {
     "name": "timeMarkerRollOut",
-    "shortDescription": "This event is fired when a user hovers out of a time instant marker’s box or a time span marker’s rectangular area.",
+    "shortDescription": "Triggers when a user hovers out of a time instant marker’s box or a time span marker’s rectangular area.",
     "description": "Triggered when a user hovers out of a time instant marker’s box or a time span marker’s rectangular area.",
     "info": "",
     "example": {
@@ -2467,7 +2467,7 @@
 
   {
     "name": "timeMarkerClick",
-    "shortDescription": "This event is fired when a user clicks on a time instant marker’s box or a time span marker’s rectangular area.",
+    "shortDescription": "Triggers when a user clicks on a time instant marker’s box or a time span marker’s rectangular area.",
     "description": "Triggered when a user clicks on a time instant marker’s box or a time span marker’s rectangular area.",
     "info": "",
     "example": {
@@ -2526,7 +2526,7 @@
 
   {
     "name": "referenceLineRollOver",
-    "shortDescription": "This event is fired when a user hovers over the notch of a reference line.",
+    "shortDescription": "Triggers when a user hovers over the notch of a reference line.",
     "description": "Triggered when a user hovers over the notch of a reference line.",
     "info": "",
     "example": {
@@ -2563,7 +2563,7 @@
 
   {
     "name": "referenceLineRollOut",
-    "shortDescription": "This event is fired when a user hovers out of the notch of a reference line.",
+    "shortDescription": "Triggers when a user hovers out of the notch of a reference line.",
     "description": "Triggered when a user hovers out of the notch of a reference line.",
     "info": "",
     "example": {
@@ -2575,7 +2575,7 @@
       "component": "Reference line",
       "lifecycle": ""
     },
-    "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"referenceLineRollOutl\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
+    "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"referenceLineRollOut\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
       "name": "eventObj",
       "header": "eventObj",
@@ -2601,7 +2601,7 @@
 
   {
     "name": "referenceLineClick",
-    "shortDescription": "This event is fired when a user clicks on the notch of a reference line.",
+    "shortDescription": "Triggers when a user clicks on the notch of a reference line.",
     "description": "Triggered when a user clicks on the notch of a reference line.",
     "info": "",
     "example": {
@@ -2639,7 +2639,7 @@
 
   {
     "name": "referenceZoneRollOver",
-    "shortDescription": "This event is fired when a user hovers over a reference zone’s notches.",
+    "shortDescription": "Triggers when a user hovers over a reference zone’s notches.",
     "description": "Triggered when a user hovers over a reference zone’s notches.",
     "info": "",
     "example": {
@@ -2687,7 +2687,7 @@
 
   {
     "name": "referenceZoneRollOut",
-    "shortDescription": "This event is fired when a user hovers out of a reference zone’s notches.",
+    "shortDescription": "Triggers when a user hovers out of a reference zone’s notches.",
     "description": "Triggered when a user hovers out of a reference zone’s notches.",
     "info": "",
     "example": {
@@ -2735,7 +2735,7 @@
 
   {
     "name": "referenceZoneClick",
-    "shortDescription": "This event is fired when a user clicks on a reference zone’s notches",
+    "shortDescription": "Triggers when a user clicks on a reference zone’s notches",
     "description": "Triggered when a user clicks on a reference zone’s notches",
     "info": "",
     "example": {
@@ -2783,7 +2783,7 @@
 
   {
     "name": "dataPlotClick",
-    "shortDescription": "This event is fired when a data plot is clicked.",
+    "shortDescription": "Triggers when a data plot is clicked.",
     "description": "This event is fired when a data plot is clicked.",
     "info": "The payload data of event object will vary slightly based on plot type. Refer to parameter tables below to know more.",
     "example": {
@@ -2961,7 +2961,7 @@
 
   {
     "name": "dataPlotRollOver",
-    "shortDescription": "This event is fired when a data plot is hovered upon.",
+    "shortDescription": "Triggers when a data plot is hovered upon.",
     "description": "This event is fired when a data plot is hovered upon.",
     "info": "The payload data of event object will vary slightly based on plot type.",
     "example": {
@@ -3139,7 +3139,7 @@
 
   {
     "name": "dataPlotRollOut",
-    "shortDescription": "This event is fired when a data plot is hovered out.",
+    "shortDescription": "Triggers when a data plot is hovered out.",
     "description": "This event is fired when a data plot is hovered out.",
     "info": "The payload data of event object will vary slightly based on plot type.",
     "example": {
@@ -3316,8 +3316,8 @@
   },
   {
     "name": "ready",
-    "shortDescription": "This event is fired when library is ready to be used.",
-    "description": "This event is fired when the FusionCharts library is ready to be used. By the time this event is raised, the browser's DOM is ready to be interacted with, which corresponds to the DOMContentLoaded event of browsers. In older browsers, where `DOMContentLoaded` is not fired, the ready event corresponds to the load event of the page. In case the FusionCharts library is included in the page when the `DOMContentLoaded` event is already fired (i.e. the script is loaded asynchronously using `AJAX` or by using script deferring methods) the ready event is still fired to ensure the integrity of all the listeners.\n In many ways the nature of this event is similar to the `jQuery(document).ready` function of the jQuery library and the `Ext.onReady` function of the ExtJS library. One should interact with FusionCharts (i.e. create new charts, set options, etc.) only after this event has been fired. This event also helps you to neatly write your code in separate script files and in the page `<head>` thus keeping scripts from being a part of your page `<body>` \n An alternate (and shorthand) method to subscribing the ready event is to use the `FusionCharts.ready` function. One advantage that the ready function has over the ready event is that the event is fired only once during the life-cycle of a page while functions passed to the ready function are executed even when attached after the ready event has been fired. /n This is a library level event and as such can be only listened via the FusionChart object on the FusionCharts class alone. It will not be fired if it is subscribed to from individual chart instances.",
+    "shortDescription": "Triggers when library is ready to be used.",
+    "description": "This event is fired when the FusionCharts library is ready to be used. By the time this event is raised, the browser's DOM is ready to be interacted with, which corresponds to the DOMContentLoaded event of browsers. In older browsers, where `DOMContentLoaded` is not fired, the ready event corresponds to the load event of the page. In case the FusionCharts library is included in the page when the `DOMContentLoaded` event is already fired (i.e. the script is loaded asynchronously using `AJAX` or by using script deferring methods) the ready event is still fired to ensure the integrity of all the listeners.\n In many ways the nature of this event is similar to the `jQuery(document).ready` function of the jQuery library and the `Ext.onReady` function of the ExtJS library. One should interact with FusionCharts (i.e. create new charts, set options, etc.) only after this event has been fired. This event also helps you to neatly write your code in separate script files and in the page `<head>` thus keeping scripts from being a part of your page `<body>` \n An alternate (and shorthand) method to subscribing the ready event is to use the `FusionCharts.ready` function. One advantage that the ready function has over the ready event is that the event is fired only once during the life-cycle of a page while functions passed to the ready function are executed even when attached after the ready event has been fired. \n This is a library level event and as such can be only listened via the FusionChart object on the FusionCharts class alone. It will not be fired if it is subscribed to from individual chart instances.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -3369,12 +3369,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when ``eventObj.detachHandler()`` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         },
         {
           "name": "data.version",
@@ -3444,12 +3444,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when ``eventObj.detachHandler()`` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         },
         {
           "name": "data.type",
@@ -3514,12 +3514,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when ``eventObj.detachHandler()`` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         }
 
       ]
@@ -3580,12 +3580,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when ``eventObj.detachHandler()`` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         },
         {
           "name": "data.type",
@@ -3681,12 +3681,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when ``eventObj.detachHandler()`` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         },
         {
           "name": "data.type",
@@ -3782,12 +3782,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         }
       ]
     }]
@@ -3847,12 +3847,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         },
         {
           "name": "data.drawCount",
@@ -3932,12 +3932,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         }
       ]
     }]
@@ -3997,12 +3997,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         }
       ]
     }]
@@ -4062,12 +4062,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         },
         {
           "name": "data.currentWidth",
@@ -4147,12 +4147,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         },
         {
           "name": "data.id",
@@ -4257,12 +4257,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         },
         {
           "name": "data.currentWidth",
@@ -4342,12 +4342,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         }
       ]
     }]
@@ -4407,12 +4407,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         }
       ]
     }]
@@ -4472,12 +4472,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         }
       ]
     }]
@@ -4537,12 +4537,12 @@
         {
           "name": "detached",
           "type": "boolean",
-          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when eventObj.detachHandler() is called."
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to true when `eventObj.detachHandler()` is called."
         },
         {
           "name": "detachHandler",
           "type": "function",
-          "description": "Function to allow the listener to remove itself rather than being called externally by the removeEventListener() method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
         },
         {
           "name": "data.duration",
@@ -4555,7 +4555,7 @@
   {
     "name": "selectionChange",
     "shortDescription": "Triggered whenever a user performs an action which results in the spread of time changing on the focus canvases ",
-    "description": "These actions include:\n After every instance of a panning/zooming action from a focus canvas.\n After selecting a standard range of time from the Standard Range Selector.\n After applying a valid range of time from the Custom Range Selector.\n After every instance of a panning/zooming action using the time navigator’s window.\n When using an API which affects the focused spread of time in the chart:/n FusionCharts#setCurrentTimeSelection/n `FusionCharts#setBinSize`/n `FusionCharts#setJSONData`/n `FusionCharts#render`/n",
+    "description": "These actions include:\n After every instance of a panning/zooming action from a focus canvas.\n After selecting a standard range of time from the Standard Range Selector.\n After applying a valid range of time from the Custom Range Selector.\n After every instance of a panning/zooming action using the time navigator’s window.\n When using an API which affects the focused spread of time in the chart:\n FusionCharts#setCurrentTimeSelection\n `FusionCharts#setBinSize`\n `FusionCharts#setJSONData`\n `FusionCharts#render`\n",
     "example": {
       "header": "Example",
       "slug": ""
