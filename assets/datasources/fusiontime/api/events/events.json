@@ -1,9 +1,9 @@
 [
   {
     "name": "beforeRender",
-    "shortDescription": "This event is fired just before a chart is rendered.",
+    "shortDescription": "Triggers just before a chart is rendered.",
     "description": "This event is fired just before a chart is rendered.",
-    "info": "Triggered before a chart is to be rendered. Calling `event.preventDefault()` from within the handler of this event will cancel the rendering process. The rendering process is triggered when the `FusionCharts#render()` method is called.",
+    "info": "Calling `event.preventDefault()` from within the handler of this event will cancel the rendering process. The rendering process is triggered when the `FusionCharts#render()` method is called.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -13,7 +13,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"beforeRender\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": " {\\r\\n            \\\"chart\\\": {\\r\\n            \/\/ ...\\r\\n            },\\r\\n            \\\"data\\\":[\\r\\n            \/\/ ...\\r\\n            ]\\r\\n         },\\r\\n         \\\"events\\\": {\\r\\n            \\\"beforeRender\\\": function(ev) {\\r\\n            console.log(ev);\\r\\n            }\\r\\n         }",
     "params": [
       {
         "name": "eventObj",
@@ -86,8 +86,8 @@
 
   {
     "name": "renderComplete",
-    "shortDescription": "This event is fired when a chart is rendered using FusionCharts#render()` method, the `FusionCharts#chartType()` method, or the `FusionCharts#setChartData()` method",
-    "description": "Triggered every time a chart is rendered using the `FusionCharts#render()` method, the `FusionCharts#chartType()` method, or the `FusionCharts#setChartData()` method. It is also triggered every time chart data is successfully updated, which triggers a re-render internally.",
+    "shortDescription": "Triggers when a chart is rendered using `FusionCharts#render()` method, the `FusionCharts#chartType()` method, or the `FusionCharts#setChartData()` method.",
+    "description": "This event is fired every time a chart is rendered using the `FusionCharts#render()` method, the `FusionCharts#chartType()` method, or the `FusionCharts#setChartData()` method. It is also triggered every time chart data is successfully updated, which triggers a re-render internally.",
     "info": "The difference between this event and the rendered event is that the rendered event is triggered only when the FusionCharts#render() method is called.",
     "example": {
       "header": "Example",
@@ -99,85 +99,12 @@
       "lifecycle": "Lifecycle"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"renderComplete\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
-    "params": [
-      {
-        "name": "eventObj",
-        "header": "eventObj",
-        "subparams": [
-          {
-            "name": "eventType",
-            "type": "string",
-            "description": "Type (name) of the event triggered"
-          },
-          {
-            "name": "eventId",
-            "type": "number",
-            "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered."
-          },
-          {
-            "name": "sender",
-            "type": "FusionCharts",
-            "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property."
-          },
-          {
-            "name": "cancelled",
-            "type": "boolean",
-            "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to true when `eventObj.stopPropagation()` is called."
-          },
-          {
-            "name": "stopPropagation",
-            "type": "function",
-            "description": "Function called from within a listener to prevent subsequent listeners from being executed."
-          },
-          {
-            "name": "defaultPrevented",
-            "type": "boolean",
-            "description": "Boolean attribute that indicates whether the default action of the event was defaultPrevented; set to **true** when `eventObj.preventDefault()` is called."
-          },
-          {
-            "name": "preventDefault",
-            "type": "function",
-            "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the beforeResize event, the chart will not be resized and the resizeCancelled event will be triggered"
-          },
-          {
-            "name": "detached",
-            "type": "boolean",
-            "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
-          },
-          {
-            "name": "detachHandler",
-            "type": "function",
-            "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
-          },
-          {
-            "name": "data.width",
-            "type": "number",
-            "description": "Chart width"
-          },
-          {
-            "name": "data.height",
-            "type": "number",
-            "description": "Chart height"
-          },
-          {
-            "name": "data.drawCount",
-            "type": "number",
-            "description": "number of times the chart is drawn/redrawn"
-          },
-          {
-            "name": "data.displayingMessage",
-            "type": "boolean",
-            "description": "Boolean attribute indicating whether a message is configured for the chart"
-          }
-        ]
-      }
-    ]
   },
 
   {
     "name": "renderCancelled",
-    "shortDescription": "Triggered when the default behavior of the `beforeRender` event is cancelled using the `event.preventDefault()` from within the handler for the `beforeRender` event.",
-    "description": "Triggered when the default behavior of the `beforeRender` event is cancelled using the `event.preventDefault()` from within the handler for the `beforeRender` event.",
+    "shortDescription": "Triggers when the default behavior of the `beforeRender` event is cancelled using the `event.preventDefault()` from within the handler for the `beforeRender` event.",
+    "description": "This event is fired when the default behavior of the `beforeRender` event is cancelled using the `event.preventDefault()` from within the handler for the `beforeRender` event.",
     "info": "",
     "example": {
       "header": "Example",
@@ -261,8 +188,8 @@
 
   {
     "name": "rendered",
-    "shortDescription": "The event is fired when the chart completes drawing, after the `FusionCharts#render()` or the `FusionCharts#chartType()` method is called.",
-    "description": "Triggered when the chart completes drawing, after the `FusionCharts#render()` or the `FusionCharts#chartType()` method is called. The chart renders if the data provided is correct; otherwise, an error message is rendered.A call to this event is made only once, even if new data may be supplied later. It can be used to invoke any further JavaScript methods on the chart or to change chart data.",
+    "shortDescription": "Triggers when the chart completes drawing, after the `FusionCharts#render()` or the `FusionCharts#chartType()` method is called.",
+    "description": "The event is fired when the chart completes drawing, after the `FusionCharts#render()` or the `FusionCharts#chartType()` method is called. The chart renders if the data provided is correct; otherwise, an error message is rendered.A call to this event is made only once, even if new data may be supplied later. It can be used to invoke any further JavaScript methods on the chart or to change chart data.",
     "info": "If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in this event handler, for example, by using `setTimeout`.",
     "example": {
       "header": "Example",
@@ -331,8 +258,8 @@
 
   {
     "name": "noDataToDisplay",
-    "shortDescription": "The event is fired when no data is passed to the chart. It can be used to show an error message or take a corrective measure.",
-    "description": "Triggered when no data is passed to the chart. It can be used to show an error message or take a corrective measure.",
+    "shortDescription": "Triggers when no data is passed to the chart.",
+    "description": "The event is fired when no data is passed to the chart. It can be used to show an error message or take a corrective measure.",
     "info": "",
     "example": {
       "header": "Example",
@@ -401,8 +328,8 @@
 
   {
     "name": "beforeDataUpdate",
-    "shortDescription": "Triggered just before chart data is passed to the chart. ",
-    "description": "Triggered just before chart data is passed to the chart. It is useful if any operations have to be performed on the data before it is applied to the chart.",
+    "shortDescription": "Triggers just before chart data is passed to the chart. ",
+    "description": "This event is fired just before chart data is passed to the chart. It is useful if any operations have to be performed on the data before it is applied to the chart.",
     "info": "",
     "example": {
       "header": "Example",
@@ -496,8 +423,8 @@
 
   {
     "name": "dataUpdateCancelled",
-    "shortDescription": "The event is fired when the default behavior of the `beforeDataUpdate` event is cancelled by calling `event.preventDefault()` from within the handler for `beforeDataUpdate`.",
-    "description": "Triggered when the default behavior of the `beforeDataUpdate` event is cancelled by calling `event.preventDefault()` from within the handler for `beforeDataUpdate`.",
+    "shortDescription": "Triggers when the default behavior of the `beforeDataUpdate` event is cancelled by calling `event.preventDefault()` from within the handler for `beforeDataUpdate`.",
+    "description": "This event is fired when the default behavior of the `beforeDataUpdate` event is cancelled by calling `event.preventDefault()` from within the handler for `beforeDataUpdate`.",
     "info": "",
     "example": {
       "header": "Example",
@@ -591,8 +518,8 @@
 
   {
     "name": "dataUpdated",
-    "shortDescription": "The event is fired when chart data is updated and the chart is redrawn, after the `drawComplete` event.",
-    "description": "Triggered when chart data is updated and the chart is redrawn, after the drawComplete event.",
+    "shortDescription": "Triggers when chart data is updated and the chart is redrawn, after the `drawComplete` event.",
+    "description": "The event is fired when chart data is updated and the chart is redrawn, after the drawComplete event.",
     "info": "",
     "example": {
       "header": "Example",
@@ -686,8 +613,8 @@
 
   {
     "name": "chartMouseMove",
-    "shortDescription": "The event is fired when the mouse pointer is moved over a chart.",
-    "description": "Triggered when the mouse pointer is moved over a chart. The event arguments pass useful information related to pointer location, relative to the chart and the page, that can be used for positioning elements like annotations or integrating charts with custom tooltip libraries.",
+    "shortDescription": "Triggers when the mouse pointer is moved over the chart.",
+    "description": "This event is fired when the mouse pointer is moved over the chart. The event arguments pass useful information related to pointer location, relative to the chart and the page, that can be used for positioning elements like annotations or integrating charts with custom tooltip libraries.",
     "info": "By default, a FusionCharts chart does not trigger this event until is enabled to do so. To enable this event for a chart, set the `enableChartMouseMoveEvent` attribute to 1.",
     "example": {
       "header": "Example",
@@ -806,8 +733,8 @@
 
   {
     "name": "chartRollOver",
-    "shortDescription": "Triggered every time the mouse pointer is rolled over a chart.",
-    "description": "Triggered every time the mouse pointer is rolled over a chart.",
+    "shortDescription": "Triggers every time the mouse pointer is rolled over the chart.",
+    "description": "This event is fired every time the mouse pointer is rolled over the chart.",
     "info": "",
     "example": {
       "header": "Example",
@@ -926,8 +853,8 @@
 
   {
     "name": "chartRollOut",
-    "shortDescription": "Triggered every time the mouse pointer is rolled out from over a chart.",
-    "description": "Triggered every time the mouse pointer is rolled out from over a chart.",
+    "shortDescription": "Triggers every time the mouse pointer is rolled out from the chart.",
+    "description": "This event is fired every time the mouse pointer is rolled out from the chart.",
     "info": "",
     "example": {
       "header": "Example",
@@ -1046,8 +973,8 @@
 
   {
     "name": "chartClick",
-    "shortDescription": "The event is fired every time a chart is clicked.",
-    "description": "Triggered every time a chart is clicked.",
+    "shortDescription": "Triggers every time the chart is clicked.",
+    "description": "This event is fired every time the chart is clicked.",
     "info": "",
     "example": {
       "header": "Example",
@@ -1166,8 +1093,8 @@
 
   {
     "name": "chartTypeInvalid",
-    "shortDescription": "The event is fired when the given chart type is invalid or the chart type is not specified.",
-    "description": "Triggered when the given chart type is invalid or the chart type is not specified.",
+    "shortDescription": "Triggers when the given chart type is invalid or the chart type is not specified.",
+    "description": "The event is fired when the given chart type is invalid or the chart type is not specified.",
     "info": "",
     "example": {
       "header": "Example",
@@ -1236,8 +1163,8 @@
 
   {
     "name": "legendItemClicked",
-    "shortDescription": "Triggered when a legend item is clicked.",
-    "description": "Triggered when a legend item is clicked.",
+    "shortDescription": "Triggers when the legend item is clicked.",
+    "description": "This event is fired when the legend item is clicked.",
     "info": "",
     "example": {
       "header": "Example",
@@ -1249,6 +1176,106 @@
       "lifecycle": ""
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"legendItemClicked\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
+<<<<<<< HEAD
+    "params": [{
+      "name": "eventObj",
+      "header": "eventObj",
+      "subparams": [{
+          "name": "eventType",
+          "type": "string",
+          "description": "Type (name) of the event triggered"
+        },
+        {
+          "name": "eventId",
+          "type": "number",
+          "description": "Unique ID associated with the event. Internally, it is an incrementing counter that can also be used to verify the order in which the event was triggered."
+        },
+        {
+          "name": "sender",
+          "type": "FusionCharts",
+          "description": "Instance of the FusionCharts object that fired this event. Events that are fired by the framework (and not by individual charts) have the framework as this property."
+        },
+        {
+          "name": "cancelled",
+          "type": "boolean",
+          "description": "Boolean attribute that indicates whether an event's propagation was cancelled; set to true when `eventObj.stopPropagation()` is called."
+        },
+        {
+          "name": "stopPropagation",
+          "type": "function",
+          "description": "Function called from within a listener to prevent subsequent listeners from being executed."
+        },
+        {
+          "name": "defaultPrevented",
+          "type": "boolean",
+          "description": "Boolean attribute that indicates whether the default action of the event was defaultPrevented; set to **true** when `eventObj.preventDefault()` is called."
+        },
+        {
+          "name": "preventDefault",
+          "type": "function",
+          "description": "Function to prevent the default action of an event. For example, if the `eventObj.preventDefault()` function is called for the beforeResize event, the chart will not be resized and the resizeCancelled event will be triggered"
+        },
+        {
+          "name": "detached",
+          "type": "boolean",
+          "description": "Boolean attribute that indicates whether a listener has been detached and will no longer be executed; set to **true** when `eventObj.detachHandler()` is called."
+        },
+        {
+          "name": "detachHandler",
+          "type": "function",
+          "description": "Function to allow the listener to remove itself rather than being called externally by the `removeEventListener()` method. It is useful for one-time event listening or for special situations when the event is no longer required to be listened when it has been triggered with a specific condition."
+        },
+        {
+          "name": "data.id",
+          "type": "string",
+          "description": "Chart ID"
+        },
+        {
+          "name": "data.chartX",
+          "type": "number",
+          "description": "x-coordinate of the pointer, relative to the chart"
+        },
+        {
+          "name": "data.chartY",
+          "type": "number",
+          "description": "y-coordinate of the pointer, relative to the chart"
+        },
+        {
+          "name": "data.pageX",
+          "type": "number",
+          "description": "x-coordinate of the pointer, relative to the chart"
+        },
+        {
+          "name": "data.pageY",
+          "type": "number",
+          "description": "y-coordinate of the pointer, relative to the chart"
+        },
+        {
+          "name": "data.datasetName",
+          "type": "string",
+          "description": "Dataset to which the data plot belongs"
+        },
+        {
+          "name": "data.dataIndex",
+          "type": "number",
+          "description": "Index of the data plot, in the order of its definition in the dataset"
+        },
+        {
+          "name": "data.visible",
+          "type": "boolean",
+          "description": "Visibility status of the legend item (true if shown, false if hidden)"
+        },
+        {
+          "name": "data.preventDefaults",
+          "type": "function",
+          "description": ""
+        }
+
+
+
+      ]
+    }]
+=======
     "params": [
       {
         "name": "eventObj",
@@ -1347,12 +1374,13 @@
         ]
       }
     ]
+>>>>>>> 23e158e90cfdfbb946d698fab150534ca825fe32
   },
 
   {
     "name": "legendItemRollOver",
-    "shortDescription": "Triggered when the mouse pointer is rolled over a legend item.",
-    "description": "Triggered when the mouse pointer is rolled over a legend item.",
+    "shortDescription": "Triggers when the mouse pointer is rolled over the legend item.",
+    "description": "This event is fired when the mouse pointer is rolled over the legend item.",
     "info": "",
     "example": {
       "header": "Example",
@@ -1461,8 +1489,8 @@
 
   {
     "name": "legendItemRollout",
-    "shortDescription": "Triggered when the mouse pointer is rolled out from over a legend item.",
-    "description": "Triggered when the mouse pointer is rolled out from over a legend item.",
+    "shortDescription": "Triggers when the mouse pointer is rolled out from the legend item.",
+    "description": "This event is fired when the mouse pointer is rolled out from the legend item.",
     "info": "",
     "example": {
       "header": "Example",
@@ -1571,8 +1599,8 @@
 
   {
     "name": "beforeExport",
-    "shortDescription": "Triggered just before the exporting process of a chart begins, through the export context menu or when the `FusionCharts#exportChart()` method is called.",
-    "description": "Triggered just before the exporting process of a chart begins, through the export context menu or when the `FusionCharts#exportChart()` method is called.",
+    "shortDescription": "Triggers just before the exporting process of a chart begins, through the export context menu or when the `FusionCharts#exportChart()` method is called.",
+    "description": "This event is fired just before the exporting process of a chart begins, through the export context menu or when the `FusionCharts#exportChart()` method is called.",
     "info": "",
     "example": {
       "header": "Example",
@@ -1701,8 +1729,8 @@
 
   {
     "name": "exported",
-    "shortDescription": "The event is fired when a chart exports successfully.",
-    "description": "Triggered when a chart exports successfully.",
+    "shortDescription": "Triggers when the chart exports successfully.",
+    "description": "This event is fired when the chart exports successfully.",
     "info": "",
     "example": {
       "header": "Example",
@@ -1806,8 +1834,8 @@
 
   {
     "name": "exportCancelled",
-    "shortDescription": "Triggered when the default behavior of the `beforeExport` event is cancelled by calling the `event.preventDefault()` method from the handler of the `beforeExport` event.",
-    "description": "Triggered when the default behavior of the `beforeExport` event is cancelled by calling the `event.preventDefault()` method from the handler of the `beforeExport` event.",
+    "shortDescription": "Triggers when the default behavior of the `beforeExport` event is cancelled by calling the `event.preventDefault()` method from the handler of the `beforeExport` event.",
+    "description": "This event is fired when the default behavior of the `beforeExport` event is cancelled by calling the `event.preventDefault()` method from the handler of the `beforeExport` event.",
     "info": "",
     "example": {
       "header": "Example",
@@ -1936,8 +1964,8 @@
 
   {
     "name": "beforePrint",
-    "shortDescription": "The event is fired before the printing process for a chart begins, after the `FusionCharts#print()` method is called on the chart.",
-    "description": "Triggered before the printing process for a chart begins, after the `FusionCharts#print()` method is called on the chart.",
+    "shortDescription": "Triggers before the printing process for a chart begins, after the `FusionCharts#print()` method is called on the chart.",
+    "description": "This event is fired before the printing process for a chart begins, after the `FusionCharts#print()` method is called on the chart.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2006,8 +2034,8 @@
 
   {
     "name": "printComplete",
-    "shortDescription": "The event is fired when the user confirms or cancels printing through the browser's print dialog box.",
-    "description": "Triggered when the user confirms or cancels printing through the browser's print dialog box.",
+    "shortDescription": "Triggers when the user confirms or cancels printing through the browser's print dialog box.",
+    "description": "This event is fired when the user confirms or cancels printing through the browser's print dialog box.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2076,8 +2104,8 @@
 
   {
     "name": "printCancelled",
-    "shortDescription": "The event is fired when the default behavior of the `beforePrint` event is cancelled by calling the `event.preventDefault()` method from the handler for the `beforePrint` event.",
-    "description": "Triggered when the default behavior of the `beforePrint` event is cancelled by calling the `event.preventDefault()` method from the handler for the `beforePrint` event.",
+    "shortDescription": "Triggers when the default behavior of the `beforePrint` event is cancelled by calling the `event.preventDefault()` method from the handler for the `beforePrint` event.",
+    "description": "This event is fired when the default behavior of the `beforePrint` event is cancelled by calling the `event.preventDefault()` method from the handler for the `beforePrint` event.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2146,8 +2174,8 @@
 
   {
     "name": "dataMarkerRollOver",
-    "shortDescription": "This event is fired when a user hovers over a data marker.",
-    "description": "Triggered when a user hovers over a data marker.",
+    "shortDescription": "Triggers when a user hovers over the data marker.",
+    "description": "This event is fired when a user hovers over the data marker.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2231,8 +2259,8 @@
 
   {
     "name": "dataMarkerRollOut",
-    "shortDescription": "This event is fired when a user hovers out of a data marker.",
-    "description": "Triggered when a user hovers out of a data marker.",
+    "shortDescription": "Triggers when a user hovers out of the data marker.",
+    "description": "This event is fired when a user hovers out of the data marker.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2316,8 +2344,8 @@
 
   {
     "name": "dataMarkerClick",
-    "shortDescription": "This event is fired when a user clicks on a data marker.",
-    "description": "Triggered when a user clicks on a data marker.",
+    "shortDescription": "Triggers when a user clicks on a data marker.",
+    "description": "This event is fired when a user clicks on a data marker.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2401,8 +2429,8 @@
 
   {
     "name": "timeMarkerRollOver",
-    "shortDescription": "This event is fired when a user hovers over a time instant marker’s box or a time span marker’s rectangular area.",
-    "description": "Triggered when a user hovers over a time instant marker’s box or a time span marker’s rectangular area.",
+    "shortDescription": "Triggers when a user hovers over a time instant marker’s box or a time span marker’s rectangular area.",
+    "description": "This event is fired when a user hovers over a time instant marker’s box or a time span marker’s rectangular area.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2461,8 +2489,8 @@
 
   {
     "name": "timeMarkerRollOut",
-    "shortDescription": "This event is fired when a user hovers out of a time instant marker’s box or a time span marker’s rectangular area.",
-    "description": "Triggered when a user hovers out of a time instant marker’s box or a time span marker’s rectangular area.",
+    "shortDescription": "Triggers when a user hovers out of a time instant marker’s box or a time span marker’s rectangular area.",
+    "description": "This event is fired when a user hovers out of a time instant marker’s box or a time span marker’s rectangular area.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2521,8 +2549,8 @@
 
   {
     "name": "timeMarkerClick",
-    "shortDescription": "This event is fired when a user clicks on a time instant marker’s box or a time span marker’s rectangular area.",
-    "description": "Triggered when a user clicks on a time instant marker’s box or a time span marker’s rectangular area.",
+    "shortDescription": "Triggers when a user clicks on a time instant marker’s box or a time span marker’s rectangular area.",
+    "description": "This event is fired when a user clicks on a time instant marker’s box or a time span marker’s rectangular area.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2581,8 +2609,8 @@
 
   {
     "name": "referenceLineRollOver",
-    "shortDescription": "This event is fired when a user hovers over the notch of a reference line.",
-    "description": "Triggered when a user hovers over the notch of a reference line.",
+    "shortDescription": "Triggers when a user hovers over the notch of a reference line.",
+    "description": "This event is fired when a user hovers over the notch of a reference line.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2621,8 +2649,8 @@
 
   {
     "name": "referenceLineRollOut",
-    "shortDescription": "This event is fired when a user hovers out of the notch of a reference line.",
-    "description": "Triggered when a user hovers out of the notch of a reference line.",
+    "shortDescription": "Triggers when a user hovers out of the notch of a reference line.",
+    "description": "This event is fired when a user hovers out of the notch of a reference line.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2661,8 +2689,8 @@
 
   {
     "name": "referenceLineClick",
-    "shortDescription": "This event is fired when a user clicks on the notch of a reference line.",
-    "description": "Triggered when a user clicks on the notch of a reference line.",
+    "shortDescription": "Triggers when a user clicks on the notch of a reference line.",
+    "description": "This event is fired when a user clicks on the notch of a reference line.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2701,8 +2729,8 @@
 
   {
     "name": "referenceZoneRollOver",
-    "shortDescription": "This event is fired when a user hovers over a reference zone’s notches.",
-    "description": "Triggered when a user hovers over a reference zone’s notches.",
+    "shortDescription": "Triggers when a user hovers over a reference zone’s notches.",
+    "description": "This event is fired when a user hovers over a reference zone’s notches.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2751,8 +2779,8 @@
 
   {
     "name": "referenceZoneRollOut",
-    "shortDescription": "This event is fired when a user hovers out of a reference zone’s notches.",
-    "description": "Triggered when a user hovers out of a reference zone’s notches.",
+    "shortDescription": "Triggers when a user hovers out of the reference zone’s notches.",
+    "description": "This event is fired when a user hovers out of the reference zone’s notches.",
     "info": "",
     "example": {
       "header": "Example",
@@ -2801,8 +2829,8 @@
 
   {
     "name": "referenceZoneClick",
-    "shortDescription": "This event is fired when a user clicks on a reference zone’s notches",
-    "description": "Triggered when a user clicks on a reference zone’s notches",
+    "shortDescription": "Triggers when a user clicks on a reference zone’s notches",
+    "description": "This event is fired when a user clicks on a reference zone’s notches",
     "info": "",
     "example": {
       "header": "Example",
@@ -2851,8 +2879,8 @@
 
   {
     "name": "dataPlotClick",
-    "shortDescription": "This event is fired when a data plot is clicked.",
-    "description": "This event is fired when a data plot is clicked.",
+    "shortDescription": "Triggers when the data plot is clicked.",
+    "description": "This event is fired when the data plot is clicked.",
     "info": "The payload data of event object will vary slightly based on plot type. Refer to parameter tables below to know more.",
     "example": {
       "header": "Example",
@@ -3033,8 +3061,8 @@
 
   {
     "name": "dataPlotRollOver",
-    "shortDescription": "This event is fired when a data plot is hovered upon.",
-    "description": "This event is fired when a data plot is hovered upon.",
+    "shortDescription": "Triggers when the data plot is hovered upon.",
+    "description": "This event is fired when the data plot is hovered upon.",
     "info": "The payload data of event object will vary slightly based on plot type.",
     "example": {
       "header": "Example",
@@ -3215,7 +3243,7 @@
 
   {
     "name": "dataPlotRollOut",
-    "shortDescription": "This event is fired when a data plot is hovered out.",
+    "shortDescription": "Triggers when a data plot is hovered out.",
     "description": "This event is fired when a data plot is hovered out.",
     "info": "The payload data of event object will vary slightly based on plot type.",
     "example": {
@@ -3396,7 +3424,7 @@
   },
   {
     "name": "ready",
-    "shortDescription": "This event is fired when library is ready to be used.",
+    "shortDescription": "Triggers when the library is ready to be used.",
     "description": "This event is fired when the FusionCharts library is ready to be used. By the time this event is raised, the browser's DOM is ready to be interacted with, which corresponds to the DOMContentLoaded event of browsers. In older browsers, where `DOMContentLoaded` is not fired, the ready event corresponds to the load event of the page. In case the FusionCharts library is included in the page when the `DOMContentLoaded` event is already fired (i.e. the script is loaded asynchronously using `AJAX` or by using script deferring methods) the ready event is still fired to ensure the integrity of all the listeners.\n In many ways the nature of this event is similar to the `jQuery(document).ready` function of the jQuery library and the `Ext.onReady` function of the ExtJS library. One should interact with FusionCharts (i.e. create new charts, set options, etc.) only after this event has been fired. This event also helps you to neatly write your code in separate script files and in the page `<head>` thus keeping scripts from being a part of your page `<body>` \n An alternate (and shorthand) method to subscribing the ready event is to use the `FusionCharts.ready` function. One advantage that the ready function has over the ready event is that the event is fired only once during the life-cycle of a page while functions passed to the ready function are executed even when attached after the ready event has been fired. This is a library level event and as such can be only listened via the FusionChart object on the FusionCharts class alone. It will not be fired if it is subscribed to from individual chart instances.",
     "example": {
       "header": "Example",
@@ -3474,8 +3502,8 @@
   },
   {
     "name": "loaded",
-    "shortDescription": "This event is triggered when FusionCharts library is downloaded.",
-    "description": "Triggered when FusionCharts has finished downloading itself in the client environment. It indicates that the all the resources required to render a FusionCharts chart is ready and that a chart can be rendered. This event can be used to hide any loader components that you might have on your page \n",
+    "shortDescription": "Triggers when FusionCharts library is downloaded.",
+    "description": "This event is fired when FusionCharts has finished downloading itself in the client environment. It indicates that the all the resources required to render a FusionCharts chart is ready and that a chart can be rendered. This event can be used to hide any loader components that you might have on your page \n",
     "example": {
       "header": "Example",
       "slug": ""
@@ -3547,8 +3575,8 @@
   },
   {
     "name": "containerNotFound",
-    "shortDescription": "Triggered if the container is either not found or not provided after invoking  FusionCharts#render.",
-    "description": "Triggered if the container is either not found or not provided after invoking  FusionCharts#render.",
+    "shortDescription": "Triggers if the container is either not found or not provided after invoking  FusionCharts#render.",
+    "description": "This event is fired if the container is either not found or not provided after invoking  FusionCharts#render.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -3615,8 +3643,8 @@
   },
   {
     "name": "beforeInitialize",
-    "shortDescription": "This event is triggered every time a new instance of FusionCharts is created.",
-    "description": "This pre-initialization event is triggered every time a new instance of FusionCharts is created. It then triggers a number of modules that need to be setup on every instance of FusionCharts; the event can be used to perform any actions required to be completed before the initialization of each chart.\n Because this event is triggered upon instantiating a new FusionCharts object, it is impossible to listen to this event by adding an event listener to the chart. By the time the event listener is attached (using the `FusionCharts#addEventListener` method), the event will already have been already fired.\n However, there are alternate ways that can be used to listen to this event. You can listen to the FusionCharts global events, using the `FusionCharts.addEventListener` static method before even creating a new instance. The required instance of FusionCharts can then be identified from within the event handler by using `event.sender.id`. You can also pass the event listener for the correct event within the `events` object when creating an instance of FusionCharts",
+    "shortDescription": "Triggers every time a new instance of FusionCharts is created.",
+    "description": "This pre-initialization event is fired every time a new instance of FusionCharts is created. It then triggers a number of modules that need to be setup on every instance of FusionCharts; the event can be used to perform any actions required to be completed before the initialization of each chart.\n Because this event is triggered upon instantiating a new FusionCharts object, it is impossible to listen to this event by adding an event listener to the chart. By the time the event listener is attached (using the `FusionCharts#addEventListener` method), the event will already have been already fired.\n However, there are alternate ways that can be used to listen to this event. You can listen to the FusionCharts global events, using the `FusionCharts.addEventListener` static method before even creating a new instance. The required instance of FusionCharts can then be identified from within the event handler by using `event.sender.id`. You can also pass the event listener for the correct event within the `events` object when creating an instance of FusionCharts",
     "example": {
       "header": "Example",
       "slug": ""
@@ -3718,8 +3746,8 @@
   },
   {
     "name": "initialized",
-    "shortDescription": "This event is triggered when a new instance of FusionCharts is created.",
-    "description": "Triggered when a new instance of FusionCharts is created. Initialization does not indicate that the chart has rendered; it only indicates that the JavaScript object instance (using `new FusionCharts({...}))` is created and is ready to be operated upon.",
+    "shortDescription": "Triggers when a new instance of FusionCharts is created.",
+    "description": "This event is fired when a new instance of FusionCharts is created. Initialization does not indicate that the chart has rendered; it only indicates that the JavaScript object instance (using `new FusionCharts({...}))` is created and is ready to be operated upon.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -3821,8 +3849,8 @@
   },
   {
     "name": "beforeDraw",
-    "shortDescription": "Triggered when the chart is redrawn because of a data update, resize, change of chart message, or change of chart type.",
-    "description": "Triggered when the chart is redrawn because of a data update, resize, change of chart message, or change of chart type.",
+    "shortDescription": "Triggers when the chart is redrawn because of a data update, resize, change of chart message, or change of chart type.",
+    "description": "This event is fired when the chart is redrawn because of a data update, resize, change of chart message, or change of chart type.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -3889,8 +3917,8 @@
   },
   {
     "name": "drawComplete",
-    "shortDescription": "Triggered when the chart draws for the first time or is redrawn because of a data update, resize, change of chart message, or change of chart type",
-    "description": "Triggered when the chart draws for the first time or is redrawn because of a data update, resize, change of chart message, or change of chart type.",
+    "shortDescription": "Triggers when the chart draws for the first time or is redrawn because of a data update, resize, change of chart message, or change of chart type",
+    "description": "This event is fired when the chart draws for the first time or is redrawn because of a data update, resize, change of chart message, or change of chart type.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -3977,8 +4005,8 @@
   },
   {
     "name": "drawCancelled",
-    "shortDescription": "Triggered when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
-    "description": "Triggered when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
+    "shortDescription": "Triggers when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
+    "description": "This event is fired when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4045,8 +4073,8 @@
   },
   {
     "name": "drawCancelled",
-    "shortDescription": "Triggered when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
-    "description": "Triggered when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
+    "shortDescription": "Triggers when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
+    "description": "This event is fired when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4113,8 +4141,8 @@
   },
   {
     "name": "beforeResize",
-    "shortDescription": "Triggered before a chart is resized.",
-    "description": "Triggered before a chart is resized.",
+    "shortDescription": "Triggers before a chart is resized.",
+    "description": "This event is fired before a chart is resized.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4201,8 +4229,8 @@
   },
   {
     "name": "resized",
-    "shortDescription": "Triggered when a chart is resized.",
-    "description": "Triggered when a chart is resized either by calling `FusionCharts#resizeTo()` or by changing the dimensions of the chart container element, when the dimensions of the chart have been provided in the percentage format.",
+    "shortDescription": "Triggers when the chart is resized.",
+    "description": "This event is fired when the chart is resized either by calling `FusionCharts#resizeTo()` or by changing the dimensions of the chart container element, when the dimensions of the chart have been provided in the percentage format.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4314,8 +4342,8 @@
   },
   {
     "name": "resizeCancelled",
-    "shortDescription": "Triggered when event.preventDefault() is called from within the handler of the beforeResize event.",
-    "description": "Triggered when event.preventDefault() is called from within the handler of the beforeResize event. This cancels any FusionCharts#resizeTo() invocations.",
+    "shortDescription": "Triggers when event.preventDefault() is called from within the handler of the beforeResize event.",
+    "description": "This event is fired when event.preventDefault() is called from within the handler of the beforeResize event. This cancels any FusionCharts#resizeTo() invocations.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4402,8 +4430,8 @@
   },
   {
     "name": "beforeDispose",
-    "shortDescription": "Triggered before a chart is deleted and cleaned from the memory.",
-    "description": "This event is triggered before a chart is deleted and cleaned from the DOM and the browser’s memory.",
+    "shortDescription": "Triggers before the chart is deleted and cleaned from the memory.",
+    "description": "This event is fired before the chart is deleted and cleaned from the DOM and the browser’s memory.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4470,8 +4498,8 @@
   },
   {
     "name": "disposed",
-    "shortDescription": "Triggered when a chart is deleted and cleaned from the DOM and the browser’s memory. ",
-    "description": "Usually, this event is triggered by the `FusionCharts#dispose()` method. FusionCharts also triggers it when an already rendered chart is re-rendered. Unused charts should always be disposed to avoid memory-leaks within an application or dashboard.",
+    "shortDescription": "Triggers when the chart is deleted and cleaned from the DOM and the browser’s memory. ",
+    "description": "Usually, this event is fired by the `FusionCharts#dispose()` method. FusionCharts also triggers it when an already rendered chart is re-rendered. Unused charts should always be disposed to avoid memory-leaks within an application or dashboard.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4538,8 +4566,8 @@
   },
   {
     "name": "disposeCancelled",
-    "shortDescription": "Triggered when the `beforeDispose` event is cancelled. ",
-    "description": "This event is triggered when the default behaviour of the `beforeDispose` event is cancelled using `event.preventDefault()` from a handler attached to the `beforeDispose` event.",
+    "shortDescription": "Triggers when the `beforeDispose` event is cancelled. ",
+    "description": "This event is fired when the default behaviour of the `beforeDispose` event is cancelled using `event.preventDefault()` from a handler attached to the `beforeDispose` event.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4606,8 +4634,8 @@
   },
   {
     "name": "animationInvoked",
-    "shortDescription": "Triggered when the animation is started in the chart. ",
-    "description": "Triggered when the animation is started in the chart.",
+    "shortDescription": "Triggers when the animation is started in the chart. ",
+    "description": "This event is fired when the animation is started in the chart.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4679,7 +4707,7 @@
   },
   {
     "name": "selectionChange",
-    "shortDescription": "Triggered whenever a user performs an action which results in the spread of time changing on the focus canvases ",
+    "shortDescription": "Triggers whenever a user performs an action which results in the spread of time changing on the focus canvases ",
     "description": "These actions include: \n After every instance of a panning/zooming action from a focus canvas. \n After selecting a standard range of time from the Standard Range Selector. \n After applying a valid range of time from the Custom Range Selector. \n After every instance of a panning/zooming action using the time navigator’s window. \n When using an API which affects the focused spread of time in the chart: \n FusionCharts#setCurrentTimeSelection \n `FusionCharts#setBinSize` \n `FusionCharts#setJSONData` \n `FusionCharts#render` \n",
     "example": {
       "header": "Example",
@@ -4722,8 +4750,8 @@
   },
   {
     "name": "standardRangeSelect",
-    "shortDescription": "This event should be triggered when a standard period is selected from the Standard Range Selector. ",
-    "description": "This event should be triggered when a standard period is selected from the Standard Range Selector.",
+    "shortDescription": "Triggers when a standard period is selected from the Standard Range Selector. ",
+    "description": "This event is fired when a standard period is selected from the Standard Range Selector.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4760,8 +4788,8 @@
   },
   {
     "name": "customRangeSelect",
-    "shortDescription": "This event should be triggered when a valid custom period is applied from the Custom Range Selector ",
-    "description": "This event should be triggered when a valid custom period is applied from the Custom Range Selector.",
+    "shortDescription": "Triggers when a valid custom period is applied from the Custom Range Selector ",
+    "description": "This event is fired when a valid custom period is applied from the Custom Range Selector.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4808,8 +4836,8 @@
   },
   {
     "name": "timeNavBrushStart",
-    "shortDescription": "This event should be fired at the start of the user’s interaction with the time navigator’s window. ",
-    "description": "This event should be fired at the start of the user’s interaction with the time navigator’s window.",
+    "shortDescription": "Triggers at the start of the user’s interaction with the time navigator’s window. ",
+    "description": "This event is fired at the start of the user’s interaction with the time navigator’s window.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4861,8 +4889,8 @@
   },
   {
     "name": "timeNavBrush",
-    "shortDescription": " This event should be fired on every instance of the window being dragged/squeezed by the user. ",
-    "description": "This event should be fired on every instance of the window being dragged/squeezed by the user.",
+    "shortDescription": "Triggers on every instance of the window being dragged/squeezed by the user. ",
+    "description": "This event is fired on every instance of the window being dragged/squeezed by the user.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4914,8 +4942,8 @@
   },
   {
     "name": "timeNavBrushEnd",
-    "shortDescription": "This event should be fired at the end of the user’s interaction with the time navigator’s window.",
-    "description": "This event should be fired at the end of the user’s interaction with the time navigator’s window.",
+    "shortDescription": "Triggers at the end of the user’s interaction with the time navigator’s window.",
+    "description": "This event is fired at the end of the user’s interaction with the time navigator’s window.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -4967,8 +4995,8 @@
   },
   {
     "name": "canvasDragStart",
-    "shortDescription": "This event should be fired at the start of the user’s drag interaction with a chart canvas.",
-    "description": "This event should be fired at the start of the user’s drag interaction with a chart canvas.",
+    "shortDescription": "Triggers at the start of the user’s drag interaction with a chart canvas.",
+    "description": "This event is fired at the start of the user’s drag interaction with a chart canvas.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -5000,8 +5028,8 @@
   },
   {
     "name": "canvasDrag",
-    "shortDescription": "This event should be fired on every instance of the canvas being dragged by the user.",
-    "description": "This event should be fired on every instance of the canvas being dragged by the user.",
+    "shortDescription": "Triggers on every instance of the canvas being dragged by the user.",
+    "description": "This event is fired on every instance of the canvas being dragged by the user.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -5033,8 +5061,8 @@
   },
   {
     "name": "canvasDragEnd",
-    "shortDescription": "This event should be fired at the end of the user’s drag interaction with a chart canvas.",
-    "description": "This event should be fired at the end of the user’s drag interaction with a chart canvas.",
+    "shortDescription": "Triggers at the end of the user’s drag interaction with a chart canvas.",
+    "description": "This event is fired at the end of the user’s drag interaction with a chart canvas.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -5066,8 +5094,8 @@
   },
   {
     "name": "canvasDblTap",
-    "shortDescription": "This event should be fired after a user’s double tap interaction on a canvas.",
-    "description": "This event should be fired after a user’s double tap interaction on a canvas.",
+    "shortDescription": "Triggers after a user’s double tap interaction on a canvas.",
+    "description": "This event is fired after a user’s double tap interaction on a canvas.",
     "example": {
       "header": "Example",
       "slug": ""
@@ -5099,8 +5127,8 @@
   },
   {
     "name": "canvasWheel",
-    "shortDescription": "This event should be fired on every instance of a user’s wheel interaction on a canvas.",
-    "description": "This event should be fired on every instance of a user’s wheel interaction on a canvas.",
+    "shortDescription": "Triggers on every instance of a user’s wheel interaction on a canvas.",
+    "description": "This event is fired on every instance of a user’s wheel interaction on a canvas.",
     "example": {
       "header": "Example",
       "slug": ""
