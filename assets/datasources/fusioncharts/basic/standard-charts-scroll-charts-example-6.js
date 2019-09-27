@@ -1,14 +1,14 @@
 {
     type: 'scrollcombidy2d',
     renderAt: 'chart-container',
-    width: '700',
-    height: '400',
+    width: '680',
+    height: '390',
     dataFormat: 'json',
     dataSource: {
         "chart": {
             "theme": "fusion",
             "caption": "Revenues and Profits",
-            "subCaption": "(2016 to 2017)",
+            "subCaption": "(2018 to 2019)",
             "xAxisname": "Month",
             "pYAxisName": "Amount (In USD)",
             "sYAxisName": "Profit %",

@@ -20,7 +20,7 @@ Starting v1.0.7, FusionCharts.NET introduces a new property named **Culture** wh
 
 ## Code
 
-- **Culture:** type `CultureInfo` (`System.Globalization.CulturInfo`)
+- **Culture:** type `CultureInfo` (`System.Globalization.CultureInfo`)
 
 - **Default:** InvariantCulture
 

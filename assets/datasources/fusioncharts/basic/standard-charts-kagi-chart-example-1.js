@@ -1,8 +1,8 @@
 {
     type: 'kagi',
     renderAt: 'chart-container',
-    width: '700',
-    height: '400',
+    width: '680',
+    height: '390',
     dataFormat: 'json',
     dataSource: {
         "chart": {

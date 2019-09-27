@@ -16,7 +16,9 @@ A chart with default data aggregation is shown below:
 
 In the above chart, note that when you hover on the data plots a tooltip appears which shows the data bin for a specific period of time and the average of the values within that data bin. In this case, the data bin is for 10 days. So the chart shows the average sales value for 10 days.
 
-However, you can change the aggregate function from `average` to any of the following:
+However, you can change the aggregation function from `average` to any of the following:
+
+> These are reserve keywords for aggregation function which are used by FusionTime. You can also apply your custom function, but the name should not be the same as given below.
 
 - Sum
 - Average
@@ -25,7 +27,7 @@ However, you can change the aggregate function from `average` to any of the foll
 - First
 - Last
 
-To change the aggregate function refer to the code below:
+To change the aggregation function refer to the code below:
 
 ```javascript
 new FusionCharts({
@@ -63,9 +65,9 @@ You can always modify this, by specifying the multipliers for each time unit in 
 
 ```json
 {
-    "binning": {
-      "hour": [3, 6] //specify the array of valid multipliers
-    }
+  "binning": {
+    "hour": [3, 6] //specify the array of valid multipliers
+  }
 }
 ```
 
@@ -75,12 +77,12 @@ xAxis:
 
 ```json
 {
-    "binning": {
-      "month": [],
-      "day": [],
-      "hour": [3, 6],
-      "minute": []
-    }
+  "binning": {
+    "month": [],
+    "day": [],
+    "hour": [3, 6],
+    "minute": []
+  }
 }
 ```
 
