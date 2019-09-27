@@ -98,7 +98,7 @@ Click [here](/chart-guide/standard-charts/stacked-charts#display-the-cumulative-
 
 ## Customize Data Value of an individual Data Plot
 
-FusionCharts also allows you to customize the properties of data value for an individual data plot. The difference is, to customize all the data values in a chart, you have to specify the attributes under `chart` object. Whereas to customize a data value of a single plot, specify the attributes under `data` object.
+FusionCharts also allows you to customize the properties of data value for an individual data plot. To customize all the data values in a chart, you have to specify the attributes under `chart` object. Whereas to customize a data value of a single plot, specify the attributes under `data` object.
 
 The column chart with customized data value look like as shown below:
 
