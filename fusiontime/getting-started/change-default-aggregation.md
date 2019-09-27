@@ -18,6 +18,8 @@ In the above chart, note that when you hover on the data plots a tooltip appears
 
 However, you can change the aggregate function from `average` to any of the following:
 
+> These are reserve keywords for aggregation function which are used by FusionTime. You can also apply your custom function, but the name should not be the same as given below.
+
 - Sum
 - Average
 - Min
@@ -63,9 +65,9 @@ You can always modify this, by specifying the multipliers for each time unit in 
 
 ```json
 {
-    "binning": {
-      "hour": [3, 6] //specify the array of valid multipliers
-    }
+  "binning": {
+    "hour": [3, 6] //specify the array of valid multipliers
+  }
 }
 ```
 
@@ -75,12 +77,12 @@ xAxis:
 
 ```json
 {
-    "binning": {
-      "month": [],
-      "day": [],
-      "hour": [3, 6],
-      "minute": []
-    }
+  "binning": {
+    "month": [],
+    "day": [],
+    "hour": [3, 6],
+    "minute": []
+  }
 }
 ```
 
