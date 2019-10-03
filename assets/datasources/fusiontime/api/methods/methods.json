@@ -10,13 +10,6 @@
          "scope": "",
          "virtual": false,
          "description": "Overrides the binning rules followed by the chart with the binning rules provided to this API. If some time unit is missing from the input binning rules, then the default multipliers for that time unit will be used by the chart. If any incorrect multipliers are provided to a unit, they will be ignored.",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Iterate on all charts rendered on a page and move them to a common location\rvar sidebar = document.getElementById('sidebar-html-div'), // assuming that your common container is this\r    chart;\r\rfor (chart in FusionCharts.items) {\r    sidebar.appendChild(FusionCharts.getObjectReference(chart).parentNode);\r}\r\r// The above can be done without using this deprecated getObjectReference method.\rfor (chart in FusionCharts.items) {\r    chart = FusionCharts.items[chart];\r    chart.ref && sidebar.appendChild(chart.ref.parentNode);\r}",
-               "type": "js"
-            }
-         },
          "params": {
             "millisecond": {
                "name": "millisecond",
@@ -93,13 +86,6 @@
          "scope": "",
          "virtual": false,
          "description": "Returns the binning rules that are being followed by the chart. If any custom binning rules are in effect, the returned rules will take into account the modifications made by them as well.",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Iterate on all charts rendered on a page and move them to a common location\rvar sidebar = document.getElementById('sidebar-html-div'), // assuming that your common container is this\r    chart;\r\rfor (chart in FusionCharts.items) {\r    sidebar.appendChild(FusionCharts.getObjectReference(chart).parentNode);\r}\r\r// The above can be done without using this deprecated getObjectReference method.\rfor (chart in FusionCharts.items) {\r    chart = FusionCharts.items[chart];\r    chart.ref && sidebar.appendChild(chart.ref.parentNode);\r}",
-               "type": "js"
-            }
-         },
          "params": {
             "millisecond": {
                "name": "millisecond",
@@ -175,14 +161,7 @@
          "access": "",
          "scope": "",
          "virtual": false,
-         "description": "Sets the provided unit and multiplier as the current binning in the chart by adjusting spread of time on the focus canvases. The provided multiplier must be a valid multiplier for the given time unit (as per the currently active binning rules in the chart). If it is not, then there is no visible effect of calling this method. If the multiplier is not provided, it is assumed to be 1. If the unit is not provided, there should be no visible effect of calling this method. \n 1.Must be a valid standard bins? \n 2.Restrict right, if left can not be extended further update right \n 3.Best visual is achieved by 1 month binning, user provided 2months, shall that change the viz? ",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Iterate on all charts rendered on a page and move them to a common location\rvar sidebar = document.getElementById('sidebar-html-div'), // assuming that your common container is this\r    chart;\r\rfor (chart in FusionCharts.items) {\r    sidebar.appendChild(FusionCharts.getObjectReference(chart).parentNode);\r}\r\r// The above can be done without using this deprecated getObjectReference method.\rfor (chart in FusionCharts.items) {\r    chart = FusionCharts.items[chart];\r    chart.ref && sidebar.appendChild(chart.ref.parentNode);\r}",
-               "type": "js"
-            }
-         },
+         "description": "Sets the provided unit and multiplier as the current binning in the chart by adjusting spread of time on the focus canvases. The provided multiplier must be a valid multiplier for the given time unit (as per the currently active binning rules in the chart). If it is not, then there is no visible effect of calling this method. If the multiplier is not provided, it is assumed to be 1. If the unit is not provided, there should be no visible effect of calling this method. \n\n 1.Must be a valid standard bins? \n\n 2.Restrict right, if left can not be extended further update right. \n\n 3.Best visual is achieved by 1 month binning, user provided 2months, shall that change the viz? ",
          "params": {
             "unit": {
                "name": "unit",
@@ -214,13 +193,6 @@
          "scope": "",
          "virtual": false,
          "description": "Provides information about the binning applied in the chart when the method was invoked.",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Iterate on all charts rendered on a page and move them to a common location\rvar sidebar = document.getElementById('sidebar-html-div'), // assuming that your common container is this\r    chart;\r\rfor (chart in FusionCharts.items) {\r    sidebar.appendChild(FusionCharts.getObjectReference(chart).parentNode);\r}\r\r// The above can be done without using this deprecated getObjectReference method.\rfor (chart in FusionCharts.items) {\r    chart = FusionCharts.items[chart];\r    chart.ref && sidebar.appendChild(chart.ref.parentNode);\r}",
-               "type": "js"
-            }
-         },
          "params": {
             "unit": {
                "name": "unit",
@@ -252,13 +224,6 @@
          "scope": "",
          "virtual": false,
          "description": "Updates the start and end time of the time selection on the focus canvases. This will also result in a change across all of the chart’s components accordingly.",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Iterate on all charts rendered on a page and move them to a common location\rvar sidebar = document.getElementById('sidebar-html-div'), // assuming that your common container is this\r    chart;\r\rfor (chart in FusionCharts.items) {\r    sidebar.appendChild(FusionCharts.getObjectReference(chart).parentNode);\r}\r\r// The above can be done without using this deprecated getObjectReference method.\rfor (chart in FusionCharts.items) {\r    chart = FusionCharts.items[chart];\r    chart.ref && sidebar.appendChild(chart.ref.parentNode);\r}",
-               "type": "js"
-            }
-         },
          "params": {
             "start": {
                "name": "start",
@@ -290,13 +255,6 @@
          "scope": "",
          "virtual": false,
          "description": "Provides start and end UNIX timestamps of the visible window of the time axis.",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Iterate on all charts rendered on a page and move them to a common location\rvar sidebar = document.getElementById('sidebar-html-div'), // assuming that your common container is this\r    chart;\r\rfor (chart in FusionCharts.items) {\r    sidebar.appendChild(FusionCharts.getObjectReference(chart).parentNode);\r}\r\r// The above can be done without using this deprecated getObjectReference method.\rfor (chart in FusionCharts.items) {\r    chart = FusionCharts.items[chart];\r    chart.ref && sidebar.appendChild(chart.ref.parentNode);\r}",
-               "type": "js"
-            }
-         },
          "params": {
             "start": {
                "name": "start",
@@ -328,7 +286,6 @@
          "scope": "instance",
          "virtual": false,
          "description": "Resizes the chart to the specified width and height. The values for the width and height are passed, in pixels or percentage, as parameters to this function. If the function is called without any parameters, it __returns__ the current value of the chart width and height. \n\n This function is useful in controlling the chart dimensions based on changes in the dimensions of a resizable dialog box. It is also useful in resizing charts for responsive layouts, based on device orientation change. \n\n \n\n >When the chart dimensions are set in percentage, the chart partially redraws itself when the chart container is resized. The chart uses a very low-profile polling, at an interval of __300 ms__ to check whether the container has effectively resized. \n\n",
-         "examples": {},
          "params": {
             "width": {
                "name": "width",
@@ -588,7 +545,7 @@
             "exportHandler": {
                "name": "exportHandler",
                "type": ["string"],
-               "description": "__For server-side exporting__: Path of the export handler (the ready-to-use scripts provided by FusionCharts) \n\n __For client-side exporting__: DOM ID of the FusionCharts Export Component embedded in the web page, along with the chart",
+               "description": "__For server-side exporting__: Path of the export handler (the ready-to-use scripts provided by FusionTime) \n\n __For client-side exporting__: DOM ID of the FusionTime Export Component embedded in the web page, along with the chart",
                "defaultvalue": "_download",
                "optional": "",
                "nullable": "",
@@ -631,17 +588,10 @@
          "scope": "instance",
          "virtual": false,
          "description": "Return the data using with the chart has been rendered.",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Render a chart and upon click of a button alert the chart's data in\n// CSV format.\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: \"column2d\",\n        renderAt: \"chart-container\",\n        dataSource: \"weekly-sales.json\",\n        dataFormat: \"jsonurl\"\n    }).render();\n\n    // Assign the functionality of retrieving and alerting CSV data to\n    // click event of a button\n    document.getElementById(\"alert-csv-data\").onclick = function () {\n        alert(chart.getChartData(\"csv\"));\n    };\n});",
-               "type": "js"
-            }
-         },
          "params": {
             "format": {
                "name": "format",
-               "type": ["FusionCharts~dataFormats"],
+               "type": ["dataFormats"],
                "description": "Format in which chart data has to be retrieved",
                "defaultvalue": "",
                "optional": "",
@@ -657,14 +607,7 @@
          "access": "",
          "scope": "instance",
          "virtual": false,
-         "description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionCharts constructor. \n\n",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Create a chart in a page and pass data to it in `JSON` format and on click of a\n// button update it with newer data.\nFusionCharts.ready(function () {\n    var chart = new FusionCharts({\n        type: \"pie2d\",\n        renderAt: \"chart-container\",\n\n                   dataSource: {\n            chart: {\n                caption: \"Market Share\",\n                showPercentage: \"1\"\n            },\n            data: [\n                { label: \"Current Prototype\", value: \"30\" },\n                { label: \"Revised Prototype\", value: \"35\" },\n                { label: \"Previous Prototype\", value: \"25\" },\n                { label: \"Recalled Prototype\", value: \"10\" }\n            ]\n        },\n        dataFormat: \"json\"\n    }).render();\n\n    // Set data on the chart using the setChartData function when a button is clicked.\n    document.getElementById(\"update-data\").onclick = function () {\n        chart.setChartData({\n            chart: {\n                caption: \"Market Share Impact\",\n                numberPrefix: \"USD\"\n            },\n            data: [\n                { label: \"Current Prototype\", value: \"13773\" },\n                { label: \"Revised Prototype\", value: \"16069\" },\n                { label: \"Previous Prototype\", value: \"11477\" },\n                { label: \"Recalled Prototype\", value: \"4591\" }\n            ]\n        }, \"json\");\n    };\n});",
-               "type": "js"
-            }
-         },
+         "description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionTime constructor. \n\n",
          "params": {
             "data": {
                "name": "data",
@@ -677,7 +620,7 @@
             },
             "format": {
                "name": "format",
-               "type": ["FusionCharts~dataFormats"],
+               "type": ["dataFormats"],
                "description": "Format of the data being passed. If the value for this parameter is not a valid [dataFormat](/api/fusioncharts/fusioncharts-properties#dataFormats), then the default or previously set data format is assumed. \n\n >If the data format is already known, then the [setJSONData()](/api/fusioncharts/fusioncharts-methods#setJSONData) or the [setXMLData()](/api/fusioncharts/fusioncharts-methods#setXMLData) methods can be used. \n\n",
                "defaultvalue": "",
                "optional": true,
@@ -715,13 +658,6 @@
          "scope": "instance",
          "virtual": false,
          "description": "Updates a chart's attributes with a new attribute-value pair, thus updating the chart's data definition root (the `<chart>` node in the XML data or the `chart` object in the JSON data).",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Here we would render a chart in a DOM element with an id, say \"chart-container\", and upon clicking the\n// chart, we would toggle the visibility of its legend.\nFusionCharts.ready(function () {\n    FusionCharts.render({\n        id: 'salesChart',\n        type: 'pie2d',\n        renderAt: 'chart-container',\n\n        dataSource: {\n            chart: {\n                caption: 'Revenue distribution'\n            },\n            data: [\n                { value: '22', label: 'Redistribution' },\n                { value: '54', label: 'Internal Circulation' },\n                { value: '24', label: 'Sale' },\n            ]\n        },\n\n        events: {\n            chartClick: function (event) {\n                var chart = event.sender,\n                    // Check whether legend is currently visible by fetching the showLegend attribute\n                    legendVisible = !!+chart.getChartAttribute('showLegend');\n\n                // Set the opposite of the current state of the legend's visibility.\n                chart.setChartAttribute('showLegend', legendVisible ? '0' : '1');\n            }\n        }\n    });\n});",
-               "type": "js"
-            }
-         },
          "params": {
             "attributes": {
                "name": "attributes",
@@ -764,7 +700,7 @@
             },
             "listener": {
                "name": "listener",
-               "type": ["FusionCharts~eventListener"],
+               "type": ["eventListener"],
                "description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
                "defaultvalue": "",
                "optional": "",
@@ -811,14 +747,7 @@
          "access": "",
          "scope": "static",
          "virtual": false,
-         "description": "Return the DOM element created by FusionCharts in which charts will be rendered `<span>`",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Iterate on all charts rendered on a page and move them to a common location\rvar sidebar = document.getElementById('sidebar-html-div'), // assuming that your common container is this\r    chart;\r\rfor (chart in FusionCharts.items) {\r    sidebar.appendChild(FusionCharts.getObjectReference(chart).parentNode);\r}\r\r// The above can be done without using this deprecated getObjectReference method.\rfor (chart in FusionCharts.items) {\r    chart = FusionCharts.items[chart];\r    chart.ref && sidebar.appendChild(chart.ref.parentNode);\r}",
-               "type": "js"
-            }
-         },
+         "description": "Return the DOM element created by FusionTime in which charts will be rendered `<span>`",
          "params": {
             "id": {
                "name": "id",
@@ -849,7 +778,7 @@
                "type": [
                   "object"
                ],
-               "description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new [FusionCharts](/api/fusioncharts) instance.",
+               "description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new FusionTime instance.",
                "defaultvalue": "",
                "optional": true,
                "nullable": true,
@@ -860,7 +789,7 @@
                "type": [
                   "boolean"
                ],
-               "description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionCharts instance, and therefore, create a clone.",
+               "description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionTime instance, and therefore, create a clone.",
                "defaultvalue": "false",
                "optional": true,
                "nullable": "",
@@ -875,21 +804,14 @@
          "access": "",
          "scope": "static",
          "virtual": false,
-         "description": "Accepts a function as an argument and that is executed by FusionCharts when the page is ready (library loaded, DOM elements rendered).",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// Render a chart within a chart container `div` element.\rFusionCharts.ready(function (FusionCharts) {\r    var chart = new FusionCharts({\r        type: \"column2d\",\r        renderAt: \"chart-container-div\",\r        dataSource: \"my-chart-data.json\",\r        dataFormat: \"jsonurl\"\r    });\r    // Since we are in the `ready` block, the `chart-container-div`\r    // element should be available by now.\r    chart.render();\r});",
-               "type": "js"
-            }
-         },
+         "description": "Accepts a function as an argument and that is executed by FusionTime when the page is ready (library loaded, DOM elements rendered).",
          "params": {
             "readyCallback": {
                "name": "readyCallback",
                "type": [
-                  "FusionCharts~readyCallback"
+                  "readyCallback"
                ],
-               "description": "Callback function executed when the FusionCharts framework is ready",
+               "description": "Callback function executed when the FusionTime framework is ready",
                "defaultvalue": "",
                "optional": "",
                "nullable": "",
@@ -961,12 +883,6 @@
          "scope": "instance",
          "virtual": false,
          "description": "Prints individual charts. It hides all elements on a page except the chart to print and then invokes the page printing function (`window.print()`).",
-         "examples": {
-            "0": {
-               "caption": "",
-               "code": "// In this snippet of code, we will render a chart on a page and\n// call the print method on the chart on click of a button.\nFusionCharts.ready(function () {\n   FusionCharts.render({\n       type: 'column2d',\n       dataFormat: 'jsonurl',\n       dataSource: 'data.json',\n\n       // assuming an HTML div element exists on the page\n       renderAt: 'chart-container-div'\n\n       events: {\n           renderComplete: function (event) {\n               // assuming a button exists on page with a specific id\n               var button = document.getElementById('print-button');\n               button.onclick = function () {\n                   event.sender.print();\n               };\n           }\n       }\n\n   });\n});"
-            }
-         },
          "params": {
             "options": {
                "name": "options",
@@ -1153,7 +1069,7 @@
             "insertMode": {
                "name": "insertMode",
                "type": [
-                  "FusionCharts~DOMInsertModes"
+                  "DOMInsertModes"
                ],
                "description": "Method for inserting the chart's DOM element within the `containerElement`. Click [here](/api/fusioncharts/fusioncharts-properties#DOMInsertModes) to read more about  the DOM insert modes.",
                "defaultvalue": "replace",
@@ -1164,7 +1080,7 @@
             "callback": {
                "name": "callback",
                "type": [
-                  "FusionCharts~renderCallback"
+                  "renderCallback"
                ],
                "description": "Callback function executed after the chart is successfully rendered. If the last parameter to the `render()` function is a function, it is treated as a callback.",
                "defaultvalue": "",
@@ -1198,7 +1114,7 @@
             "option": {
                "name": "option",
                "type": [
-                  "FusionCharts~chartStatusMessages"
+                  "chartStatusMessages"
                ],
                "description": "To configure a single attribute, specify the attribute (the key) as a string. To configure multiple attributes, this can be an object having key-value pairs of all configuration options.",
                "defaultvalue": "",

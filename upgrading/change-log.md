@@ -50,7 +50,7 @@ heading: Version 3.14.x
 
 - You can now set `yAxisMinValue`, even if all the values on the Y-axis are `null`. Earlier, it would default to `0`.
 
-- In our attempt to be better accessibility compliant, the hierarchy of some DOM elements has been re-ordered.
+- In our attempt to be better accessibility compliant, the hierarchy of some DOM elements have been re-ordered.
 
 - Extra spaces are no longer truncated when you include non-breaking space codes (`&nbsp;` `&#160;` or `&#xA0;`) in lines of text.
 
