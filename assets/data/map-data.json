@@ -4693,7 +4693,7 @@
       },
       {
         "name": "Asia (No Middle-East)",
-        "alias": "asia3",
+        "alias": "asia-middle-east",
         "specSheet": "/maps/spec-sheets/asia-middle-east"
       },
       {
