@@ -40,8 +40,6 @@ heading: Version 3.14.x
 
   - `canvasRightPadding`
 
-- In a Pie chart, disabling a pie slice with 0 values using `showZeroPies` attribute will now also disable the palette color of that particular pie slice. Previously, the palette color was getting shifted to the next rendered pie slice.
-
 <h4>Improvements</h4>
 
 - Existing data plot events, like dataPlotClick, dataPlotRollOver, dataPlorRollOut, etc, will also have cosmetic information of the plots.
