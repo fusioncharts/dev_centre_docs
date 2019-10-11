@@ -16,7 +16,7 @@ In FusionCharts.NET, you can customize data labels in the following ways with th
 
 To hide the data labels, set the value of the `ShowLabel` properties to `false`. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Categories.CategoryFormatting("C#").ShowLabel("false");
 ```
 
@@ -28,7 +28,7 @@ The chart will look as shown below:
 
 Set the tooltip text for the data label as string to the `ToolText` properties. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Categories.CategoryFormatting("C#").ToolText("Programming Language:C#");
 ```
 
@@ -40,15 +40,15 @@ The chart will look as shown below:
 
 Customize the font properties of the data label using the following:
 
-* Set the font size as an integer using the `FontSize` properties.
-* Set the font type as string using the `FontName` properties.
-* Set the font color as hex code using the `FontColor` properties.
-* Display the title as bold by setting the `Bold` properties to `true`.
-* Display the title as bold by setting the `Italic` properties to `true`.
+- Set the font size as an integer using the `FontSize` properties.
+- Set the font type as string using the `FontName` properties.
+- Set the font color as hex code using the `FontColor` properties.
+- Display the title as bold by setting the `Bold` properties to `true`.
+- Display the title as bold by setting the `Italic` properties to `true`.
 
 Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Categories.CategoryFormatting("C#").FontSize(18);
 visualizationObj.Data.Categories.CategoryFormatting("C#").FontName("Arial");
 visualizationObj.Data.Categories.CategoryFormatting("C#").FontColor("#5d62b5");
@@ -64,7 +64,7 @@ The chart will look as shown below:
 
 To link a data label to an external resource, set the value of the `LabelLink` properties to the link of the resource. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Categories.CategoryFormatting("C#").LabelLink("https://www.fusioncharts.com/");
 ```
 
@@ -72,13 +72,13 @@ The chart will look as shown below:
 
 {% embed_chart fusioncharts-net-visualization-data-label-link-example-4.js %}
 
-In the above chart click on the xaxis label `C#`.  
+In the above chart click on the xaxis label `C#`.
 
 ### Set Border Color of Label
 
 Set the border color of the label as hex code using the `BorderColor` properties. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Categories.CategoryFormatting("C#").BorderColor("#87919b");
 ```
 
@@ -90,7 +90,7 @@ The chart will look as shown below:
 
 Set the background color of the label as hex code using the `BGColor` properties. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Categories.CategoryFormatting("C#").BGColor("d9d9d9");
 ```
 
@@ -102,7 +102,7 @@ The chart will look as shown below:
 
 Set the transparency of the label between `0` (transparent) and `100` (opaque) using the `Alpha` properties. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Data.Categories.CategoryFormatting("C#").Alpha(50);
 ```
 
