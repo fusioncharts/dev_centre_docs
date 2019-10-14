@@ -1360,17 +1360,8 @@
                     "path": "/map-guide/add-drill-down-to-maps"
                   },
                   {
-                    "title": "Map Spec Sheets",
-                    "children": [
-                      {
-                        "title": "Map Marker Data",
-                        "path": "/maps/marker-data/"
-                      },
-                      {
-                        "title": "Map Specification Sheets",
-                        "path": "/maps/spec-sheets/"
-                      }
-                    ]
+                    "title": "Map Specification Sheets",
+                    "path": "/maps/spec-sheets/"
                   }
                 ]
               }
