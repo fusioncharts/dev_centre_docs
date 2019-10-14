@@ -4,7 +4,7 @@ description: Using FusionCharts Suite XT, you can create endless levels of drill
 heading: Drill-down
 ---
 
-You can use FusionCharts Suite XT to create drill-down charts. All charts (except for the Zoom line chart) support the drill-down interactivity for data elements - that is, for each chart type, the data plots in a chart (columns in column charts, pie slices in pie charts, etc.) can act as hot-spots. You can create endless levels of drill-down, based on your requirements. 
+You can use FusionCharts Suite XT to create drill-down charts. All charts (except for the Zoom line chart) support the drill-down interactivity for data elements - that is, for each chart type, the data plots in a chart (columns in column charts, pie slices in pie charts, etc.) can act as hot-spots. You can create endless levels of drill-down, based on your requirements.
 
 You can include two types of links for data plots in a drill-down chart:
 
@@ -23,23 +23,19 @@ Refer to the code below:
     "chart": {
        ...
     },
-    "data": [
-        {
-            "label": "Apple",
-            "value": "810000",
-            "link": "http://fusioncharts.com"
-        },
-        {
-            "label": "Cranberry",
-            "value": "620000",
-            "link": "http://fusioncharts.com"
-        },
-        {
-            "label": "Grapes",
-            "value": "350000",
-            "link": "http://fusioncharts.com"
-        }
-    ]
+    "data": [{
+        "label": "Apple",
+        "value": "810000",
+        "link": "https://en.wikipedia.org/wiki/Apple"
+    }, {
+        "label": "Cranberry",
+        "value": "620000",
+        "link": "https://en.wikipedia.org/wiki/Cranberry"
+    }, {
+        "label": "Grapes",
+        "value": "350000",
+        "link": "https://en.wikipedia.org/wiki/Grape"
+    }]
 }
 ```
 
@@ -53,7 +49,7 @@ Click [here](http://jsfiddle.net/fusioncharts/L7vLc9n2/) to edit the above chart
 
 ### In a new page
 
-Precede the link you pass as the value of the `link` attribute with `n-`, to open the link in a new tab of the browser every time you click on the hotspot. 
+Precede the link you pass as the value of the `link` attribute with `n-`, to open the link in a new tab of the browser every time you click on the hotspot.
 
 Refer to the code below:
 
@@ -92,54 +88,53 @@ Note that, internally, the chart decodes the URL that you set as the link. Befor
 
 ```json
 {
-    "chart": {
-        "unescapeLinks": "0"
-    }
+  "chart": {
+    "unescapeLinks": "0"
+  }
 }
-
 ```
 
 ### In a pop-up window
 
 When defining the `link` attribute, precede the target URL with `P-` to open the link in a popup window. Also, use the following attributes to customize the popup window:
 
-* Specify the height of the pop-up window, in pixels, using the `height` attribute.
+- Specify the height of the pop-up window, in pixels, using the `height` attribute.
 
-* Specify the width of the pop-up window, in pixels, using the `width` attribute.
+- Specify the width of the pop-up window, in pixels, using the `width` attribute.
 
-* Specify whether the user can manually resize the popup window by dragging its edges/ corners, by setting the `resizable` attribute to `yes`. 
+- Specify whether the user can manually resize the popup window by dragging its edges/ corners, by setting the `resizable` attribute to `yes`.
 
-* Specify whether scrollbars will be shown in the pop-up window, by setting the `scrollbars` attribute to `yes`.
+- Specify whether scrollbars will be shown in the pop-up window, by setting the `scrollbars` attribute to `yes`.
 
-* Specify whether a menu bar will be shown at the top of the pop-up window, by setting the `menubar` attribute to `yes`.
+- Specify whether a menu bar will be shown at the top of the pop-up window, by setting the `menubar` attribute to `yes`.
 
-* Specify whether a toolbar will be shown in the pop-up window, by setting the `toolbar` attribute to `yes`.
+- Specify whether a toolbar will be shown in the pop-up window, by setting the `toolbar` attribute to `yes`.
 
-* Specify whether the address bar will be shown in the pop-up window, by setting the `location` attribute to `yes`.
+- Specify whether the address bar will be shown in the pop-up window, by setting the `location` attribute to `yes`.
 
-* Specify whether any additional toolbar (for example, the Links bar in IE) will be shown in the pop-up window, by setting the `directories` attribute to `yes`.
+- Specify whether any additional toolbar (for example, the Links bar in IE) will be shown in the pop-up window, by setting the `directories` attribute to `yes`.
 
-* Specify whether the status bar will be shown in the pop-up window, by setting the `status` attribute to `yes`.
+- Specify whether the status bar will be shown in the pop-up window, by setting the `status` attribute to `yes`.
 
-* Specify the distance, in pixels, of the pop-up window from the left edge of the screen, using the `left` attribute. 
+- Specify the distance, in pixels, of the pop-up window from the left edge of the screen, using the `left` attribute.
 
-* Specify the distance, in pixels, of the pop-up window from the top edge of the screen, using the `top` attribute.
+- Specify the distance, in pixels, of the pop-up window from the top edge of the screen, using the `top` attribute.
 
-* Specify whether the pop-up window will be opened in fullscreen mode, by setting the `fullscreen` attribute to `yes`.
+- Specify whether the pop-up window will be opened in fullscreen mode, by setting the `fullscreen` attribute to `yes`.
 
 > Note that these attributes only work in the Internet Explorer browser. If you use the Netscape Navigator browser, replace the attributes with the ones given below:
 
-* Replace `left` with `screenX`.
+- Replace `left` with `screenX`.
 
-* Replace `top` with `screenY`.
+- Replace `top` with `screenY`.
 
 Follow the steps given below:
 
-* Specify the `detailsWin` as the name of the new pop-up window in which the target URL will be rendered.
+- Specify the `detailsWin` as the name of the new pop-up window in which the target URL will be rendered.
 
-* Configure the functional attributes using its cosmetic and functional attributes.
+- Configure the functional attributes using its cosmetic and functional attributes.
 
-* Specify the URL of the encoded link. Use a hyphen as the separator between the attributes and the link.
+- Specify the URL of the encoded link. Use a hyphen as the separator between the attributes and the link.
 
 Refer to the code below:
 
@@ -215,15 +210,15 @@ Set an entire chart as a hotspot using the `clickURL` attribute, which accepts a
 
 You can configure the target URL to:
 
-* Open in the same window
+- Open in the same window
 
-* Open in a new window
+- Open in a new window
 
-* Open in another frame
+- Open in another frame
 
-* Open in a new popup window
+- Open in a new popup window
 
-* Invoke existing JavaScript functions
+- Invoke existing JavaScript functions
 
 Refer to the code below, which sets the chart as a hotspot that, when clicked, opens the homepage of FusionCharts website in a new tab:
 
@@ -282,15 +277,15 @@ Once you implement the steps above, the FusionCharts JavaScript class takes care
 
 ### Features of the FusionCharts JavaScript Class
 
-* It automatically creates and shows a detailed descendant chart, when you click on the corresponding data plot item link in the parent chart.
+- It automatically creates and shows a detailed descendant chart, when you click on the corresponding data plot item link in the parent chart.
 
-* It clones all chart configuration settings from the parent chart to create the descendant charts.
+- It clones all chart configuration settings from the parent chart to create the descendant charts.
 
-* It accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods.html#configureLink) function.
+- It accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods.html#configureLink) function.
 
-* It uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed.
+- It uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed.
 
-* It supports drill-down to an unlimited number of levels.
+- It supports drill-down to an unlimited number of levels.
 
 As an example here, we will consider a simple scenario of a parent chart with the single level of drill-down.
 
@@ -304,15 +299,15 @@ Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/) to edit the above chart
 
 ### Create linked charts using Data URL method
 
-Specify the `link` attribute (which belongs to the data object) for each data plot, to link charts using the data URL method. Every time you click on a data plot, the corresponding linked chart will be rendered. 
+Specify the `link` attribute (which belongs to the data object) for each data plot, to link charts using the data URL method. Every time you click on a data plot, the corresponding linked chart will be rendered.
 
 The syntax for the link attribute is:
 
 ```json
 {
-    "chart": {
-        "link": "newchart-dataformat-datasource"        
-    }
+  "chart": {
+    "link": "newchart-dataformat-datasource"
+  }
 }
 ```
 
@@ -328,56 +323,66 @@ The data structure needed to render the parent chart given above using the data 
 
 ```json
 {
-    "chart": {
-        "caption": "Top 3 Juice Flavors",
-        "subcaption": "Last year",
-        "xaxisname": "Flavor",
-        "yaxisname": "Amount (In USD)",
-        "numberprefix": "$",
-        "theme": "fusion",
-        "plottooltext": "$label, $dataValue,  $percentValue"
+  "chart": {
+    "caption": "Top 3 Juice Flavors",
+    "subcaption": "Last year",
+    "xaxisname": "Flavor",
+    "yaxisname": "Amount (In USD)",
+    "numberprefix": "$",
+    "theme": "fusion",
+    "plottooltext": "$label, $dataValue,  $percentValue"
+  },
+  "data": [
+    {
+      "label": "Apple",
+      "value": "810000",
+      "link": "newchart-jsonurl-apple.json"
     },
-    "data": [{
-        "label": "Apple",
-        "value": "810000",
-        "link": "newchart-jsonurl-apple.json"
-    }, {
-        "label": "Cranberry",
-        "value": "620000",
-        "link": "newchart-jsonurl-cranberry.json"
-    }, {
-        "label": "Grapes",
-        "value": "350000",
-        "link": "newchart-jsonurl-grapes.json"
-    }]
+    {
+      "label": "Cranberry",
+      "value": "620000",
+      "link": "newchart-jsonurl-cranberry.json"
+    },
+    {
+      "label": "Grapes",
+      "value": "350000",
+      "link": "newchart-jsonurl-grapes.json"
+    }
+  ]
 }
 ```
+
 From the data shown above, you can understand that when the user clicks the first data plot, the chart sources the data to render the subsequent linked chart from the **apple.json** file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the cranberry.json and grapes.json files.
 
 The **apple.json** file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last year. The data structure for the **apple.json** file is given below:
 
 ```json
 {
-    "chart": {
-        "caption": "Apple Juice - Quarterly Sales",
-        "subcaption": "Last year",
-        "numberprefix": "$",
-        "theme": "fusion",
-        "plottooltext": "$label, $dataValue,  $percentValue"
+  "chart": {
+    "caption": "Apple Juice - Quarterly Sales",
+    "subcaption": "Last year",
+    "numberprefix": "$",
+    "theme": "fusion",
+    "plottooltext": "$label, $dataValue,  $percentValue"
+  },
+  "data": [
+    {
+      "label": "Q1",
+      "value": "157000"
     },
-    "data": [{
-        "label": "Q1",
-        "value": "157000"
-    }, {
-        "label": "Q2",
-        "value": "172000"
-    }, {
-        "label": "Q3",
-        "value": "206000"
-    }, {
-        "label": "Q4",
-        "value": "275000"
-    }]
+    {
+      "label": "Q2",
+      "value": "172000"
+    },
+    {
+      "label": "Q3",
+      "value": "206000"
+    },
+    {
+      "label": "Q4",
+      "value": "275000"
+    }
+  ]
 }
 ```
 
@@ -386,23 +391,36 @@ Similarly, the cranberry.json and the grapes.json files contain the data to plot
 If you are using XML data for the chart, refer to the data structure for the parent chart given below:
 
 ```html
-<chart caption="Top 3 Juice Flavors" subcaption="Last year" xaxisname="Flavor" yaxisname="Amount (In USD)" numberprefix="$" theme="fusion" plottooltext="$label, $dataValue,  $percentValue" animation="0">
-
-<set label="Apple" value="810000" link="newchart-xmlurl-apple.xml" />
-<set label="Cranberry" value="620000" link="newchart-xmlurl-cranberry.xml" />
-<set label="Grapes" value="350000" link="newchart-xmlurl-grapes.xml" />
+<chart
+  caption="Top 3 Juice Flavors"
+  subcaption="Last year"
+  xaxisname="Flavor"
+  yaxisname="Amount (In USD)"
+  numberprefix="$"
+  theme="fusion"
+  plottooltext="$label, $dataValue,  $percentValue"
+  animation="0"
+>
+  <set label="Apple" value="810000" link="newchart-xmlurl-apple.xml" />
+  <set label="Cranberry" value="620000" link="newchart-xmlurl-cranberry.xml" />
+  <set label="Grapes" value="350000" link="newchart-xmlurl-grapes.xml" />
 </chart>
 ```
 
 Similarly, the data structure for the **apple.xml** file is given below:
 
 ```html
-<chart caption="Apple Juice - Quarterly Sales" subcaption="Last year" numberprefix="$" theme="fusion" plottooltext="$label, $dataValue,  $percentValue">
-
-<set label="Q1" value="157000" />
-<set label="Q2" value="172000" />
-<set label="Q3" value="206000" />
-<set label="Q4" value="275000" />
+<chart
+  caption="Apple Juice - Quarterly Sales"
+  subcaption="Last year"
+  numberprefix="$"
+  theme="fusion"
+  plottooltext="$label, $dataValue,  $percentValue"
+>
+  <set label="Q1" value="157000" />
+  <set label="Q2" value="172000" />
+  <set label="Q3" value="206000" />
+  <set label="Q4" value="275000" />
 </chart>
 ```
 
@@ -416,117 +434,131 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "caption": "Top 3 Juice Flavors",
-        "subcaption": "Last year",
-        "xaxisName": "Flavor",
-        "yaxisName": "Amount (In USD)",
-        "numberPrefix": "$",
-        "theme": "fusion",
-        "rotateValues": "0"
+  "chart": {
+    "caption": "Top 3 Juice Flavors",
+    "subcaption": "Last year",
+    "xaxisName": "Flavor",
+    "yaxisName": "Amount (In USD)",
+    "numberPrefix": "$",
+    "theme": "fusion",
+    "rotateValues": "0"
+  },
+  "data": [
+    {
+      "label": "Apple",
+      "value": "810000",
+      "link": "newchart-xml-apple"
     },
-    "data": [{
-        "label": "Apple",
-        "value": "810000",
-        "link": "newchart-xml-apple"
-    }, {
-        "label": "Cranberry",
-        "value": "620000",
-        "link": "newchart-xml-cranberry"
-    }, {
-        "label": "Grapes",
-        "value": "350000",
-        "link": "newchart-xml-grapes"
-    }],
-    "linkeddata": [{
-        "id": "apple",
-        "linkedchart": {
-            "chart": {
-                "caption": "Apple Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "xaxisname": "Quarter",
-                "yaxisname": "Amount (In USD)",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "157000"
-            },
-            {
-                "label": "Q2",
-                "value": "172000"
-            },
-            {
-                "label": "Q3",
-                "value": "206000"
-            },
-            {
-                "label": "Q4",
-                "value": "275000",
-                "rotateValues": "0"
-            }]
-        }
-    }, {
-        "id": "cranberry",
-        "linkedchart": {
-            "chart": {
-                "caption": "Cranberry Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "xaxisname": "Quarter",
-                "yaxisname": "Amount (In USD)",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "102000"
-            },
-            {
-                "label": "Q2",
-                "value": "142000"
-            },
-            {
-                "label": "Q3",
-                "value": "187000"
-            },
-            {
-                "label": "Q4",
-                "value": "189000"
-            }]
-        }
-    }, {
-        "id": "grapes",
-        "linkedchart": {
-            "chart": {
-                "caption": "Grape Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "xaxisname": "Quarter",
-                "yaxisname": "Amount (In USD)",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "45000"
-            },
-            {
-                "label": "Q2",
-                "value": "72000"
-            },
-            {
-                "label": "Q3",
-                "value": "95000"
-            },
-            {
-                "label": "Q4",
-                "value": "108000"
-            }]
-        }
-    }]
+    {
+      "label": "Cranberry",
+      "value": "620000",
+      "link": "newchart-xml-cranberry"
+    },
+    {
+      "label": "Grapes",
+      "value": "350000",
+      "link": "newchart-xml-grapes"
+    }
+  ],
+  "linkeddata": [
+    {
+      "id": "apple",
+      "linkedchart": {
+        "chart": {
+          "caption": "Apple Juice - Quarterly Sales",
+          "subcaption": "Last year",
+          "xaxisname": "Quarter",
+          "yaxisname": "Amount (In USD)",
+          "numberprefix": "$",
+          "theme": "fusion",
+          "rotateValues": "0"
+        },
+        "data": [
+          {
+            "label": "Q1",
+            "value": "157000"
+          },
+          {
+            "label": "Q2",
+            "value": "172000"
+          },
+          {
+            "label": "Q3",
+            "value": "206000"
+          },
+          {
+            "label": "Q4",
+            "value": "275000",
+            "rotateValues": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cranberry",
+      "linkedchart": {
+        "chart": {
+          "caption": "Cranberry Juice - Quarterly Sales",
+          "subcaption": "Last year",
+          "xaxisname": "Quarter",
+          "yaxisname": "Amount (In USD)",
+          "numberprefix": "$",
+          "theme": "fusion",
+          "rotateValues": "0"
+        },
+        "data": [
+          {
+            "label": "Q1",
+            "value": "102000"
+          },
+          {
+            "label": "Q2",
+            "value": "142000"
+          },
+          {
+            "label": "Q3",
+            "value": "187000"
+          },
+          {
+            "label": "Q4",
+            "value": "189000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "grapes",
+      "linkedchart": {
+        "chart": {
+          "caption": "Grape Juice - Quarterly Sales",
+          "subcaption": "Last year",
+          "xaxisname": "Quarter",
+          "yaxisname": "Amount (In USD)",
+          "numberprefix": "$",
+          "theme": "fusion",
+          "rotateValues": "0"
+        },
+        "data": [
+          {
+            "label": "Q1",
+            "value": "45000"
+          },
+          {
+            "label": "Q2",
+            "value": "72000"
+          },
+          {
+            "label": "Q3",
+            "value": "95000"
+          },
+          {
+            "label": "Q4",
+            "value": "108000"
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
 
@@ -534,13 +566,13 @@ Refer to the code below:
 
 The FusionCharts JavaScript class includes events raised when you open or close linked items, as detailed below:
 
-* `beforeLinkedItemOpen` is fired every time a linked item is about to open, right after you click the link in the parent chart.
+- `beforeLinkedItemOpen` is fired every time a linked item is about to open, right after you click the link in the parent chart.
 
-* `linkedItemOpened` is fired every time a linked (descendant) chart is rendered.
+- `linkedItemOpened` is fired every time a linked (descendant) chart is rendered.
 
-* `beforeLinkedItemClosed` is fired every time the linked chart is closed and the parent chart is rendered. This happens whenever you navigate back to the parent chart by clicking on the Back button at the top right corner of the linked chart.
+- `beforeLinkedItemClosed` is fired every time the linked chart is closed and the parent chart is rendered. This happens whenever you navigate back to the parent chart by clicking on the Back button at the top right corner of the linked chart.
 
-* `linkedItemClosed` is fired every time a linked chart is closed, and before the parent chart is reopened.
+- `linkedItemClosed` is fired every time a linked chart is closed, and before the parent chart is reopened.
 
 A chart utilizing these events is given below:
 
@@ -693,11 +725,11 @@ To use this, place the function name and the parameter after the `JavaScript:` n
 
 Note:
 
-* Due to some security policies, you can no longer use `eval`, as well as some of the features of `Javascript:` prefix.
+- Due to some security policies, you can no longer use `eval`, as well as some of the features of `Javascript:` prefix.
 
-* You cannot pass special characters like **(**, **)**, **-**, **%** as parameters when you call a function.
+- You cannot pass special characters like **(**, **)**, **-**, **%** as parameters when you call a function.
 
-* You cannot define a function, or pass multiple functions, after the `Javascript:` prefix.
+- You cannot define a function, or pass multiple functions, after the `Javascript:` prefix.
 
 Both prefixes are discussed in detail below:
 
@@ -718,17 +750,17 @@ Following is the HTML code:
 <!-- Drill-down: Simple Link Open in Same Page. Attribute: # link -->
 <script language="JavaScript" src="fusioncharts/js/fusioncharts.js"></script>
 <script language="JavaScript">
-    <!--
-    function showAlert(myVar) {
-        window.alert(myVar);
-    }
-    -->
+  <!--
+  function showAlert(myVar) {
+      window.alert(myVar);
+  }
+  -->
 </script>
 ```
 
-In the code snippet given above, `showAlert` is a custom function that is present in the HTML page that embeds the chart. **Apple, $810K** is the parameter value passed to the function. As mentioned before, you can only pass one one string parameter to the JavaScript function using the **j- prefix**.
+In the code snippet given above, `showAlert` is a custom function that is present in the HTML page that embeds the chart. **Apple, \$810K** is the parameter value passed to the function. As mentioned before, you can only pass one one string parameter to the JavaScript function using the **j- prefix**.
 
-Now, when you click the data plot labeled **Apple**, the string **Apple, $810K** is passed as a parameter to the `showAlert` function.
+Now, when you click the data plot labeled **Apple**, the string **Apple, \$810K** is passed as a parameter to the `showAlert` function.
 
 For this example, the parameter string contains the data label and data value only for demonstration purposes. For actual implementations, you can pass identifier numbers or strings of data. When a user clicks the link, the identifiers are sent back to the JavaScript function for further actions (for example, loading detailed data for that identifier using AJAX, or any such tasks—the possibilities are endless).
 
@@ -751,14 +783,14 @@ The code for the above example is given below:
 <!-- Drill-down: Simple Link Open in Same Page. Attribute: # link -->
 <script language="JavaScript" src="fusioncharts/js/fusioncharts.js"></script>
 <script language="JavaScript">
-    <!--
-    function showAlert(myVar) {
-        window.alert(myVar);
-    }
-    -->
+  <!--
+  function showAlert(myVar) {
+      window.alert(myVar);
+  }
+  -->
 </script>
 ```
 
-**Apple** and **$810K** are passed as two parameters to the showAlert function— **Apple** is passed as a string parameter and **$810K** is passed as a numeric parameter.
+**Apple** and **\$810K** are passed as two parameters to the showAlert function— **Apple** is passed as a string parameter and **\$810K** is passed as a numeric parameter.
 
 Now, when the data plot labeled **Apple** is clicked, the showAlert function is invoked and the two parameters are passed to it.
