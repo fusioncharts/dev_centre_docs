@@ -1,9 +1,9 @@
 {
-    type: 'zoomline',
-    renderAt: 'chart-container',
-    width: '600',
-    height: '400',
-    dataFormat: 'json',
+    type: "zoomline",
+    renderAt: "chart-container",
+    width: "600",
+    height: "400",
+    dataFormat: "json",
     dataSource: {
         "chart": {
             "caption": "Unique Website Visitors",
