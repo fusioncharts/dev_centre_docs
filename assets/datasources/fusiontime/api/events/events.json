@@ -4666,7 +4666,7 @@
       "component": "SRS",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"standardRangeSelect\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": " {\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"standardRangeSelect\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4704,7 +4704,7 @@
       "component": "CRS",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"customRangeSelect\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"customRangeSelect\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4752,7 +4752,7 @@
       "component": "Time nav",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"timeNavBrushStart\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"timeNavBrushStart\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4805,7 +4805,7 @@
       "component": "Time nav",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"timeNavBrush\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"timeNavBrush\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4858,7 +4858,7 @@
       "component": "Time nav",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"timeNavBrushEnd\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"timeNavBrushEnd\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4911,7 +4911,7 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"canvasDragStart\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDragStart\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4944,7 +4944,7 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"canvasDrag\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDrag\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4977,7 +4977,7 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"canvasDragEnd\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDragEnd\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -5010,7 +5010,7 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"canvasDblTap\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDblTap\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -5043,7 +5043,7 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"canvasWheel\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasWheel\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
