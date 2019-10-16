@@ -9560,8 +9560,8 @@
             "markerData": "/maps/marker-data/kenya"
           },
           {
-            "name": "Kenya Countries",
-            "alias": "kenyacountries",
+            "name": "Kenya Counties",
+            "alias": "kenyacounties",
             "specSheet": "/maps/spec-sheets/kenyacounties"
           },
           {
