@@ -78,6 +78,8 @@ heading: Map Improvements in Version 3.14.1
 
   - The main Kenya province map has been created.
 
+  - Map of Kenya with countries has been updated.
+
   - Maps have been created for the following provinces of Kenya:
 
     - Central Kenya
