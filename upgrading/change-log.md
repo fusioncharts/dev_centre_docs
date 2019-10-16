@@ -30,7 +30,7 @@ heading: Version 3.14.x
 
 - You can now [reverse (right to left)](/upgrading/whats-new#reverse-the-color-scale-of-the-linear-gauge) the order of the color scale in a horizontal linear gauge.
 
-- You now have the option to use four new attributes to [control padding](http://paradocs.fusioncharts.net:4001/chart-guide/chart-configurations/chart-paddings-and-margins#set-canvas-padding), which prevents data plots along the edges of the canvas from getting clipped:
+- You now have the option to use four new attributes to [control padding](/chart-guide/chart-configurations/chart-paddings-and-margins#set-canvas-padding), which prevents data plots along the edges of the canvas from getting clipped:
 
   - `canvasTopPadding`
 
@@ -42,7 +42,7 @@ heading: Version 3.14.x
 
 <h4>Improvements</h4>
 
-- Existing data plot events, like dataPlotClick, dataPlotRollOver, dataPlorRollOut, etc, will also have cosmetic information of the plots.
+- Existing data plot events, like `dataPlotClick`, `dataPlotRollOver`, `dataPlotRollOut`, etc, will also have cosmetic information of the plots.
 
 - You can now display the cumulative [sum of stacked area plots](/upgrading/whats-new#display-the-cumulative-sum-of-stacked-area-chart) above the topmost area plot.
 
