@@ -6,256 +6,256 @@ heading: Map Improvements in Version 3.14.1
 
 - The core maps package has been updated to:
 
-  - Updated the specification sheet for Sudan Without South Sudan and 2 separate province maps:
+  - Updated the specification sheet for [Sudan Without South Sudan](/maps/spec-sheets/sudanwosouthsudan) and 2 separate province maps:
 
-    - Central Darfur
+    - [Central Darfur](/maps/spec-sheets/centraldarfur)
 
-    - East Darfur
+    - [East Darfur](/maps/spec-sheets/eastdarfur)
 
-    - West Kurdufan
+    - [West Kurdufan](/maps/spec-sheets/westkurdufan)
 
   - The following names have been updated in the specification sheet for Sudan Without South Sudan map:
 
-    - "Al Jazirah (Gezira)" renamed as "Al Jazirah"
+    - Al Jazirah (Gezira) renamed as Al Jazirah
 
-    - "Al Qadarif (Gedarif)" renamed as "Al Qadarif"
+    - Al Qadarif (Gedarif) renamed as Al Qadarif
 
   - The following names have been updated in the specification sheet for Cameroon main map:
 
-    - "Adamaoua" renamed as "Adamawa"
+    - Adamaoua renamed as Adamawa
 
-    - "Centre" renamed as "Central Cameroon"
+    - Centre renamed as Central Cameroon
 
-    - "Est" renamed as "East Cameroon"
+    - Est renamed as East Cameroon
 
-    - "Extreme Nord" renamed as "Far North Cameroon"
+    - Extreme Nord renamed as Far North Cameroon
 
-    - "Littoral" renamed as "Littoral Cameroon"
+    - Littoral renamed as Littoral Cameroon
 
-    - "Nord" renamed as "North Cameroon"
+    - Nord renamed as North Cameroon
 
-    - "Nord Ouest" renamed as "Northwest Cameroon"
+    - Nord Ouest renamed as Northwest Cameroon
 
-    - "Ouest" renamed as "West Cameroon"
+    - Ouest renamed as West Cameroon
 
-    - "Sud" renamed as "South Cameroon"
+    - Sud renamed as South Cameroon
 
-    - "Sud Ouest" renamed as "Southwest Cameroon"
+    - Sud Ouest renamed as Southwest Cameroon
 
   - New map files have been added for the following 10 regions of Cameroon:
 
-    - Adamawa
+    - [Adamawa](/maps/spec-sheets/adamawa)
 
-    - Central Cameroon
+    - [Central Cameroon](/maps/spec-sheets/centralcameroon)
 
-    - East Cameroon
+    - [East Cameroon](/maps/spec-sheets/eastcameroon)
 
-    - Far North Cameroon
+    - [Far North Cameroon](/maps/spec-sheets/farnorthcameroon)
 
-    - Littoral Cameroon
+    - [Littoral Cameroon](/maps/spec-sheets/littoralcameroon)
 
-    - North Cameroon
+    - [North Cameroon](/maps/spec-sheets/northcameroon)
 
-    - Northwest Cameroon
+    - [Northwest Cameroon](/maps/spec-sheets/northwestcameroon)
 
-    - West Cameroon
+    - [West Cameroon](/maps/spec-sheets/westcameroon)
 
-    - South Cameroon
+    - [South Cameroon](/maps/spec-sheets/southcameroon)
 
-    - Southwest Cameroon
+    - [Southwest Cameroon](/maps/spec-sheets/southwestcameroon)
 
-  - In the main map for Kenya, the following entities have been renamed:
+  - In the main map for [Kenya](/maps/spec-sheets/kenya), the following entities have been renamed:
 
-    - "Central" renamed as "Central Kenya"
+    - Central renamed as Central Kenya
 
-    - "Coast" renamed as "Coastal Kenya"
+    - Coast renamed as Coastal Kenya
 
-    - "Eastern" renamed as "East Kenya"
+    - Eastern renamed as East Kenya
 
-    - "North Eastern" renamed as "Northeast Kenya"
+    - North Eastern renamed as Northeast Kenya
 
-    - "Western" renamed as "West Kenya"
+    - Western renamed as West Kenya
 
-  - The main Kenya province map has been created.
+  - The main [Kenya Province](/maps/spec-sheets/kenya) map has been created.
 
-  - Map of Kenya with Counties has been created.
+  - The [Kenya Counties](/maps/spec-sheets/kenyacounties) map has been created.
 
-  - Maps have been created for the following provinces of Kenya:
+  - Maps have been created for the following provinces of [Kenya](/maps/spec-sheets/kenya):
 
-    - Central Kenya
+    - [Central Kenya](/maps/spec-sheets/centralkenya)
 
-    - Coastal Kenya
+    - [Coastal Kenya](/maps/spec-sheets/coastalkenya)
 
-    - East Kenya
+    - [East Kenya](/maps/spec-sheets/eastkenya)
 
-    - Nairobi
+    - [Nairobi](/maps/spec-sheets/nairobi)
 
-    - Northeast Kenya
+    - [Northeast Kenya](/maps/spec-sheets/northeastkenya)
 
-    - Nyanza
+    - [Nyanza](/maps/spec-sheets/nyanza)
 
-    - Rift Valley
+    - [Rift Valley](/maps/spec-sheets/riftvalley)
 
-    - West Kenya
+    - [West Kenya](/maps/spec-sheets/westkenya)
 
-  - The following entities have been renamed in the main map for Laos:
+  - The following entities have been renamed in the main map for [Laos](/maps/spec-sheets/laos):
 
-    - "Attapu" renamed as "Attapeu"
+    - Attapu renamed as Attapeu
 
-    - "Bolikhamxai" renamed as "Bolikhamsai"
+    - Bolikhamxai renamed as Bolikhamsai
 
-    - "Houaphan" renamed as "Hua Phan"
+    - Houaphan renamed as Hua Phan
 
-    - "Khammouan" renamed as "Khammouane"
+    - Khammouan renamed as Khammouane
 
-    - "Louang Namtha" renamed as "Luang Namtha"
+    - Louang Namtha renamed as Luang Namtha
 
-    - "Louangphabang" renamed as "Luang Prabang"
+    - Louangphabang renamed as Luang Prabang
 
-    - "Oudomxai" renamed as "Oudomxay"
+    - Oudomxai renamed as Oudomxay
 
-    - "Vientiane Prefecture" renamed as "Vientiane Capital"
+    - Vientiane Prefecture renamed as Vientiane Capital
 
-    - "Xaignabouli" renamed as "Sayabouly"
+    - Xaignabouli renamed as Sayabouly
 
-    - "Xaisomboun" renamed as "Xaisomboun Province"
+    - Xaisomboun renamed as Xaisomboun Province
 
-    - "Xekong" renamed as "Sekong"
+    - Xekong renamed as Sekong
 
-    - "Xiangkhoang" renamed as "Xieng Khouang"
+    - Xiangkhoang renamed as Xieng Khouang
 
-  - Separate maps have been created for the following provinces of Laos:
+  - Separate maps have been created for the following provinces of [Laos](/maps/spec-sheets/laos):
 
-    - Attapeu
+    - [Attapeu](/maps/spec-sheets/attapeu)
 
-    - Bokeo
+    - [Bokeo](/maps/spec-sheets/bokeo)
 
-    - Bolikhamsai
+    - [Bolikhamsai](/maps/spec-sheets/bolikhamsai)
 
-    - Champasak
+    - [Champasak](/maps/spec-sheets/champasak)
 
-    - Hua Phan
+    - [Hua Phan](/maps/spec-sheets/huaphan)
 
-    - Khammouane
+    - [Khammouane](/maps/spec-sheets/khammouane)
 
-    - Luang Namtha
+    - [Luang Namtha](/maps/spec-sheets/luangnamtha)
 
-    - Luang Prabang
+    - [Luang Prabang](/maps/spec-sheets/luangprabang)
 
-    - Oudomxay
+    - [Oudomxay](/maps/spec-sheets/oudomxay)
 
-    - Phongsali
+    - [Phongsali](/maps/spec-sheets/phongsali)
 
-    - Salavan
+    - [Salavan](/maps/spec-sheets/salavan)
 
-    - Savannakhet
+    - [Savannakhet](/maps/spec-sheets/savannakhet)
 
-    - Vientiane Province
+    - [Vientiane Province](/maps/spec-sheets/vientianeprovince)
 
-    - Vientiane Capital
+    - [Vientiane Capital](/maps/spec-sheets/vientianecapital)
 
-    - Sayabouly
+    - [Sayabouly](/maps/spec-sheets/sayabouly)
 
-    - Xaisomboun Province
+    - [Xaisomboun Province](/maps/spec-sheets/xaisombounprovince)
 
-    - Sekong
+    - [Sekong](/maps/spec-sheets/sekong)
 
-    - Xieng Khouang
+    - [Xieng Khouang](/maps/spec-sheets/xiengkhouang)
 
-  - The following entities have been renamed in the main map for Bhutan:
+  - The following entities have been renamed in the main map for [Bhutan](/maps/spec-sheets/bhutan):
 
-    - "Chhukha" renamed as "Chukha"
+    - Chhukha renamed as Chukha
 
-    - "Chirang" renamed as "Tsirang"
+    - Chirang renamed as Tsirang
 
-    - "Daga" renamed as "Dagana"
+    - Daga renamed as Dagana
 
-    - "Geylegphug" renamed as "Sarpang"
+    - Geylegphug renamed as Sarpang
 
-    - "Ha" renamed as "Haa"
+    - Ha renamed as Haa
 
-    - "Lhuntshi" renamed as "Lhuntse"
+    - Lhuntshi renamed as Lhuntse
 
-    - "Pemagatsel" renamed as "Pemagatshel"
+    - Pemagatsel renamed as Pemagatshel
 
-    - "Samchi" renamed as "Samtse"
+    - Samchi renamed as Samtse
 
-    - "Shemgang" renamed as "Zhemgang"
+    - Shemgang renamed as Zhemgang
 
-    - "Tashigang" renamed as "Trashigang"
+    - Tashigang renamed as Trashigang
 
-    - "Tongsa" renamed as "Trongsa"
+    - Tongsa renamed as Trongsa
 
-    - "Tashi Yangtse" renamed as "Trashiyangtse"
+    - Tashi Yangtse renamed as Trashiyangtse
 
-    - "Wangdi Phodrang" renamed as "Wangdue Phodrang"
+    - Wangdi Phodrang renamed as Wangdue Phodrang
 
-  - The following district maps have been created for Bhutan:
+  - The following district maps have been created for [Bhutan](/maps/spec-sheets/bhutan):
 
-    - Bumthang
+    - [Bumthang](/maps/spec-sheets/bumthang)
 
-    - Chukha
+    - [Chukha](/maps/spec-sheets/chukha)
 
-    - Tsirang
+    - [Tsirang](/maps/spec-sheets/tsirang)
 
-    - Dagana
+    - [Dagana](/maps/spec-sheets/dagana)
 
-    - Gasa
+    - [Gasa](/maps/spec-sheets/gasa)
 
-    - Sarpang
+    - [Sarpang](/maps/spec-sheets/sarpang)
 
-    - Haa
+    - [Haa](/maps/spec-sheets/haa)
 
-    - Lhuntse
+    - [Lhuntse](/maps/spec-sheets/lhuntse)
 
-    - Mongar
+    - [Mongar](/maps/spec-sheets/mongar)
 
-    - Paro
+    - [Paro](/maps/spec-sheets/paro)
 
-    - Pemagatshel
+    - [Pemagatshel](/maps/spec-sheets/pemagatshel)
 
-    - Punakha
+    - [Punakha](/maps/spec-sheets/punakha)
 
-    - Samtse
+    - [Samtse](/maps/spec-sheets/samtse)
 
-    - Samdrup Jongkhar
+    - [Samdrup Jongkhar](/maps/spec-sheets/samdrupjongkhar)
 
-    - Zhemgang
+    - [Zhemgang](/maps/spec-sheets/zhemgang)
 
-    - Trashigang
+    - [Trashigang](/maps/spec-sheets/trashigang)
 
-    - Thimphu
+    - [Thimphu](/maps/spec-sheets/thimphu)
 
-    - Trongsa
+    - [Trongsa](/maps/spec-sheets/trongsa)
 
-    - Trashiyangtse
+    - [Trashiyangtse](/maps/spec-sheets/trashiyangtse)
 
-    - Wangdue Phodrang
+    - [Wangdue Phodrang](/maps/spec-sheets/wangduephodrang)
 
-  - The main map for Cambodia has been updated with one new region.
+  - The main map for [Cambodia](/maps/spec-sheets/cambodia) has been updated with one new region.
 
-  - The main map for the Philippines administrative regions has been updated.
+  - The main map for the [Philippines administrative regions](/maps/spec-sheets/philippinesregion) has been updated.
 
-  - Separate maps for the following administrative regions have been created:
+  - Separate maps for the following [Philippines administrative regions](/maps/spec-sheets/philippinesregion) have been created:
 
-    - Central Visayas
+    - [Central Visayas](/maps/spec-sheets/centralvisayas)
 
-    - Western Visayas
+    - [Western Visayas](/maps/spec-sheets/westernvisayas)
 
-    - Zamboanga Peninsula
+    - [Zamboanga Peninsula](/maps/spec-sheets/zamboangapeninsula)
 
-  - The map of the Philippines has been updated.
+  - The map of the [Philippines](/maps/spec-sheets/philippines) has been updated.
 
-  - Separate maps have been created for the following 6 provinces of the Philippines:
+  - Separate maps have been created for the following 6 [Philippines provinces](/maps/spec-sheets/philippines):
 
-    - Pampanga
+    - [Pampanga](/maps/spec-sheets/pampanga)
 
-    - Quezon
+    - [Quezon](/maps/spec-sheets/quezon)
 
-    - Sulu
+    - [Sulu](/maps/spec-sheets/sulu)
 
-    - TawiTawi
+    - [TawiTawi](/maps/spec-sheets/tawitawi)
 
-    - Zamboanga City
+    - [Zamboanga City](/maps/spec-sheets/zamboangacity)
 
-    - Zamboanga Sibugay
+    - [Zamboanga Sibugay](/maps/spec-sheets/zamboangasibugay)
