@@ -9560,6 +9560,11 @@
             "markerData": "/maps/marker-data/kenya"
           },
           {
+            "name": "Kenya Countries",
+            "alias": "kenyacountries",
+            "specSheet": "/maps/spec-sheets/kenyacounties"
+          },
+          {
             "name": "Kenya (Provinces)",
             "marker": false,
             "members": [
