@@ -4694,7 +4694,7 @@
       {
         "name": "Asia (No Middle-East)",
         "alias": "asia3",
-        "specSheet": "/maps/spec-sheets/asia-middle-east"
+        "specSheet": "/maps/spec-sheets/asia3"
       },
       {
         "name": "Countries",
@@ -9558,6 +9558,11 @@
             "alias": "kenya",
             "specSheet": "/maps/spec-sheets/kenya",
             "markerData": "/maps/marker-data/kenya"
+          },
+          {
+            "name": "Kenya Counties",
+            "alias": "kenyacounties",
+            "specSheet": "/maps/spec-sheets/kenyacounties"
           },
           {
             "name": "Kenya (Provinces)",

@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/asia-middle-east
+#### JavaScript Alias: maps/asia3
 
 Map Name: Asia (No Middle-East)
 Dimensions (Width x Height): 650x630

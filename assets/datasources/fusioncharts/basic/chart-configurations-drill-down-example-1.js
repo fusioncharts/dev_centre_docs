@@ -17,15 +17,15 @@
         "data": [{
             "label": "Apple",
             "value": "810000",
-            "link": "http://fusioncharts.com"
+            "link": "https://en.wikipedia.org/wiki/Apple"
         }, {
             "label": "Cranberry",
             "value": "620000",
-            "link": "http://fusioncharts.com"
+            "link": "https://en.wikipedia.org/wiki/Cranberry"
         }, {
             "label": "Grapes",
             "value": "350000",
-            "link": "http://fusioncharts.com"
+            "link": "https://en.wikipedia.org/wiki/Grape"
         }]
     }
 }
