@@ -2863,7 +2863,7 @@
       "component": "Data Plot",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"dataPlotClick\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"dataPlotClick\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "Common across all plots",
@@ -3045,7 +3045,7 @@
       "component": "Data Plot",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"dataPlotRollOver\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"dataPlotRollOver\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "Common across all plots",
@@ -3227,7 +3227,7 @@
       "component": "Data Plot",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"dataPlotRollOut\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"dataPlotRollOut\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "Common across all plots",
@@ -3407,7 +3407,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"ready\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"ready\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -3485,7 +3485,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"loaded\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"loaded\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -3558,7 +3558,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"containerNotFound\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"containerNotFound\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -3626,7 +3626,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"beforeInitialize\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeInitialize\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -3729,7 +3729,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"initialized\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"initialized\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -3832,7 +3832,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"beforeDraw\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeDraw\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -3900,7 +3900,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"drawComplete\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        \/\/ ...\r\n    },\r\n    \"data\": [\r\n        \/\/ ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"drawComplete\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -3989,7 +3989,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"drawCancelled\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        \/\/ ...\r\n    },\r\n    \"data\": [\r\n        \/\/ ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"drawCancelled\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4057,7 +4057,7 @@
       "component": "Chart",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"beforeResize\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        \/\/ ...\r\n    },\r\n    \"data\": [\r\n        \/\/ ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeResize\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4145,7 +4145,7 @@
       "component": "Chart",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"resized\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        \/\/ ...\r\n    },\r\n    \"data\": [\r\n        \/\/ ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"resized\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
@@ -4258,7 +4258,7 @@
       "component": "Chart",
       "lifecycle": ""
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"resizeCancelled\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": "{\r\n    \"chart\": {\r\n        \/\/ ...\r\n    },\r\n    \"data\": [\r\n        \/\/ ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"resizeCancelled\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
