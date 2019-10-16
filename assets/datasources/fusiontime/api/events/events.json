@@ -17,7 +17,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -102,7 +102,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -192,7 +192,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -277,7 +277,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -347,7 +347,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -417,7 +417,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -512,7 +512,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -607,7 +607,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -702,7 +702,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -822,7 +822,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -942,7 +942,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -1062,7 +1062,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -1182,7 +1182,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -1252,7 +1252,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -1367,7 +1367,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -1477,7 +1477,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -1587,7 +1587,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -1717,7 +1717,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -1822,7 +1822,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -1952,7 +1952,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -2022,7 +2022,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -2092,7 +2092,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -2162,7 +2162,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "timestamp",
@@ -2247,7 +2247,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "timestamp",
@@ -2332,7 +2332,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "timestamp",
@@ -2417,7 +2417,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -2477,7 +2477,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -2537,7 +2537,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -2597,7 +2597,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "label",
@@ -2637,7 +2637,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "label",
@@ -2677,7 +2677,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "label",
@@ -2717,7 +2717,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "label",
@@ -2767,7 +2767,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "label",
@@ -2817,7 +2817,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "label",
@@ -3411,7 +3411,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -3489,7 +3489,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -3562,7 +3562,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -3630,7 +3630,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -3733,7 +3733,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -3836,7 +3836,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -3904,7 +3904,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -3993,7 +3993,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -4061,7 +4061,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -4149,7 +4149,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -4262,7 +4262,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -4350,7 +4350,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -4418,7 +4418,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -4486,7 +4486,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -4554,7 +4554,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "eventType",
@@ -4627,7 +4627,7 @@
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -4666,11 +4666,11 @@
       "component": "SRS",
       "lifecycle": ""
     },
-    "syntax": " {\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"standardRangeSelect\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": " {\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"standardRangeSelect\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "unit",
@@ -4704,11 +4704,11 @@
       "component": "CRS",
       "lifecycle": ""
     },
-    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"customRangeSelect\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"customRangeSelect\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -4749,14 +4749,14 @@
     },
     "tags": {
       "action": "Drag",
-      "component": "Time nav",
+      "component": "Time Navigator",
       "lifecycle": ""
     },
-    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"timeNavBrushStart\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"timeNavBrushStart\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -4802,14 +4802,14 @@
     },
     "tags": {
       "action": "Drag",
-      "component": "Time nav",
+      "component": "Time Navigator",
       "lifecycle": ""
     },
-    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"timeNavBrush\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"timeNavBrush\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -4855,14 +4855,14 @@
     },
     "tags": {
       "action": "Drag",
-      "component": "Time nav",
+      "component": "Time Navigator",
       "lifecycle": ""
     },
-    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"timeNavBrushEnd\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"timeNavBrushEnd\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -4911,11 +4911,11 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDragStart\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDragStart\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -4944,11 +4944,11 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDrag\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDrag\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -4977,11 +4977,11 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDragEnd\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDragEnd\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -5010,11 +5010,11 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDblTap\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasDblTap\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
@@ -5043,11 +5043,11 @@
       "component": "Canvas",
       "lifecycle": ""
     },
-    "syntax": "{\r\n\t\"chart\": {\r\n\t\t\/\/ ...\r\n\t},\r\n\t\"data\": [\r\n\t\t\/\/ ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasWheel\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
+    "syntax": "{\r\n\t\"chart\": {\r\n\t\t// ...\r\n\t},\r\n\t\"data\": [\r\n\t\t// ...\r\n\t]\r\n},\r\n\"events\": {\r\n\t\"canvasWheel\": function (ev) {\r\n\t\tconsole.log(ev);\r\n\t}\r\n}",
     "params": [
       {
         "name": "eventObj",
-        "header": "eventObj",
+        "header": "Event Object Parameters",
         "subparams": [
           {
             "name": "start",
