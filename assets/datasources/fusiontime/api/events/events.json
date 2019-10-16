@@ -13,7 +13,7 @@
       "component": "",
       "lifecycle": "Lifecycle"
     },
-    "syntax": " {\r\n            \"chart\": {\r\n            // ...\r\n            },\r\n            \"data\":[\r\n            // ...\r\n            ]\r\n         },\r\n         \"events\": {\r\n            \"beforeRender\": function(ev) {\r\n            console.log(ev);\r\n            }\r\n         }",
+    "syntax": " {\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeRender\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
     "params": [
       {
         "name": "eventObj",
