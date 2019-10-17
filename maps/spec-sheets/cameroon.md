@@ -21,4 +21,3 @@ CM.NW|NW|Northwest Cameroon
 CM.OU|OU|West Cameroon
 CM.SU|SU|South Cameroon
 CM.SW|SW|Southwest Cameroon
-

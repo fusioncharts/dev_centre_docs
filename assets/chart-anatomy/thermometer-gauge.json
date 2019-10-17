@@ -5,21 +5,21 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Bubble Chart",
-            "imgSrc": "bubble-chart-anatomy.png",
+            "itemHeader": "Thermometer Gauge",
+            "imgSrc": "thermometer-gauge-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
-                  "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
+                  "annotationDesc": "The caption (also called the gauge title) is the heading of your gauge. You can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "35.5%",
-                  "topPosition": "16.5%",
+                  "leftPosition": "34.5%",
+                  "topPosition": "15.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
+                        "linkDesc": "You can customize font properties and cosmetics of caption using attributes. Know more about them. ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
                      },
                      {
@@ -31,10 +31,10 @@
                {
                   "annotationNumber": "2",
                   "annotationName": "Sub-caption",
-                  "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
+                  "annotationDesc": "The sub-caption (also called the gauge subtitle) is the sub-heading of your gauge. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "57%",
-                  "topPosition": "22%",
+                  "leftPosition": "54%",
+                  "topPosition": "21%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
@@ -48,10 +48,10 @@
                {
                   "annotationNumber": "3",
                   "annotationName": "Canvas Area",
-                  "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
+                  "annotationDesc": "Canvas area refers to the area in which the gauge data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "90%",
-                  "topPosition": "27%",
+                  "leftPosition": "70%",
+                  "topPosition": "30%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
@@ -64,79 +64,69 @@
                },
                {
                   "annotationNumber": "4",
-                  "annotationName": "X-Axis",
-                  "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
+                  "annotationName": "Lower Limit",
+                  "annotationDesc": "Lower Limit refers to the lowest point in the reference scale used in the gauge. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "35%",
-                  "topPosition": "54%",
+                  "leftPosition": "51.5%",
+                  "topPosition": "61%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "5",
-                  "annotationName": "X-Axis Title",
-                  "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
+                  "annotationName": "Upper Limit",
+                  "annotationDesc": "Upper Limit refers to the highest point in the reference scale used in the gauge. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "38%",
-                  "topPosition": "63%",
+                  "leftPosition": "41%",
+                  "topPosition": "27%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "6",
-                  "annotationName": "X-Axis Labels",
-                  "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
+                  "annotationName": "Gauge Scale",
+                  "annotationDesc": "The gauge scale displays all possible values between the lower and upper limits. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "81%",
-                  "topPosition": "53%",
+                  "leftPosition": "54.4%",
+                  "topPosition": "38%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "7",
-                  "annotationName": "Y-Axis",
-                  "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "19%",
-                  "topPosition": "20%",
+                  "annotationName": "Tick Mark",
+                  "annotationDesc": "Tick marks are placed at regular intervals on the gauge scale, to indicate data values. Learn more about them ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "leftPosition": "46%",
+                  "topPosition": "44%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "8",
-                  "annotationName": "Y-Axis Title",
-                  "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "11%",
-                  "topPosition": "34%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "9",
                   "annotationName": "Data Plot",
-                  "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
+                  "annotationDesc": "Data plot refers to the columns of the dial in an angular gauge, the sphere in a bulb gauge, the thermometer in a thermometer gauge, and so on.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "45%",
-                  "topPosition": "30%",
+                  "leftPosition": "41%",
+                  "topPosition": "53%",
                   "annotationLinks": [{
-                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
+                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
                   }]
                },
                {
-                  "annotationNumber": "10",
+                  "annotationNumber": "9",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "75.5%",
-                  "topPosition": "40.5%",
+                  "leftPosition": "55%",
+                  "topPosition": "53%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
                      },
                      {
-                        "linkDesc": "You can also customize the text of tooltip and use values plotted on the chart using macros, learn more about it ",
+                        "linkDesc": "You can also customize the text of tooltip and use values plotted on the gauge using macros, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros" 
                      }
                   ]
                }
-               
             ]
          }
       ]
