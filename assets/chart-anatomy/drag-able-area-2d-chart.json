@@ -4,8 +4,8 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "Horizontal Bullet Graph",
-            "imgSrc": "horizontal-bullet-graph-anatomy.png",
+            "itemHeader": "Column Chart",
+            "imgSrc": "column-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
