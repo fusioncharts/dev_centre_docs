@@ -679,7 +679,7 @@
                   "topPosition": "46.5%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
-                     "linkPath": "/chart-guide/chart-configurations/data-plot" 
+                     "linkPath": "/chart-guide/chart-configurations/data-plot"
                   }]
                },
                {
