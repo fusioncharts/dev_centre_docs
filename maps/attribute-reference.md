@@ -3,8 +3,6 @@ title: Attribute Reference | FusionCharts
 heading: Attribute Reference
 description: This sections talks about the attributes used to render different types of maps in FusionCharts Suite XT.
 layout: page
-permalink: maps/attribute-reference.html
-chartPresent: true
 ---
 
 Example of USA Chart:

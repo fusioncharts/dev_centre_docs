@@ -70,7 +70,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
-        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
         <li>Include the `angularjs-fusioncharts` directive.</li>
         <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>

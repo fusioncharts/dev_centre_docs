@@ -4,7 +4,7 @@ description: You can add custom defined markers on any map. Markers can be used 
 heading: Adding Markers
 ---
 
-> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite) while upgrading to __v3.13.0__.
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/fusioncharts-suite-xt) while upgrading to __v3.13.0__.
 
 You can add custom defined markers to any map within FusionCharts Suite XT, to represent locations like cities, junctions, houses, office locations, malls or any other entity with a geographic location.
 

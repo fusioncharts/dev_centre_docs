@@ -989,11 +989,6 @@
     "description": "FusionMaps XT allows user-defined markers on the map. Markers are custom defined points on the map, which help you pin-point locations like cities, houses, malls, junctions etc. Using the properties listed below, you can configure the various aspects of the markers."
   },
   {
-    "table": "The markers object",
-    "attrs": [],
-    "description": "All data pertinent to markers (applicable marker shapes, definitions for zones in which markers will be applied) is defined within the `markers` object and its child objects."
-  },
-  {
     "table": "The definition object (child of the markers object)",
     "path": "definition",
     "attrs": [

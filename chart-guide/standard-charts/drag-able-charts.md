@@ -193,7 +193,7 @@ To snap to the nearest divisional lines, follow the steps given below:
 
 * Specify the `snapToDivOnly` attribute to set the dragging of the data points till the nearest divisional lines on the chart. The data points cannot acquire a value between any two divisional lines and, as such, they will always fall on divisional line value.
 
-* When dragging the area plots, snap them to the nearest divisional line on the chart. To do so, just set the `snapToDiv` attribute as 1. The difference between this attribute and the `snapToDivOnly` attribute is that `snapToDivOnlyattribute` (when set to 1) allows you to drag the data points onto a div line. But using this attribute, you can create a "sticky" kind of interface, so that when the data point is dropped near a divisional line, it assumes the divisional line value. However, if it is dropped at a farther location, it will stay where it is.
+* When dragging the area plots, snap them to the nearest divisional line on the chart. To do so, just set the `snapToDiv` attribute as 1. The difference between this attribute and the `snapToDivOnly` attribute is that `snapToDivOnly` attribute (when set to 1) allows you to drag the data points onto a div line. But using this attribute, you can create a "sticky" kind of interface, so that when the data point is dropped near a divisional line, it assumes the divisional line value. However, if it is dropped at a farther location, it will stay where it is.
 
 * Set the `snapToDivRelaxation` attribute to specify the distance in pixels from the divisional lines where the data points will behave sticky.
 **Note**: This attribute works only when the `snapToDiv` attribute is set to `1`.

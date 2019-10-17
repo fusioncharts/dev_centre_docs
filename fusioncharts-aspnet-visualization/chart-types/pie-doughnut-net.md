@@ -45,7 +45,15 @@ Create the `PieChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
@@ -96,7 +104,58 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         }     
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class ThreeDChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim ChartData As DataTable = New DataTable()
+            ChartData.Columns.Add("Programming Language", GetType(System.String))
+            ChartData.Columns.Add("Users", GetType(System.Double))
+            ChartData.Rows.Add("Java", 62000)
+            ChartData.Rows.Add("Python", 46000)
+            ChartData.Rows.Add("Javascript", 38000)
+            ChartData.Rows.Add("C++", 31000)
+            ChartData.Rows.Add("C#", 27000)
+            ChartData.Rows.Add("PHP", 14000)
+            ChartData.Rows.Add("Perl", 14000)
+            Dim source As StaticSource = New StaticSource(ChartData)
+            Dim model As DataModel = New DataModel()
+            model.DataSources.Add(source)
+            Dim pie As Charts.PieChart = New Charts.PieChart("pie_chart")
+            pie.Width.Pixel(500)
+            pie.Height.Pixel(400)
+            pie.Data.Source = model
+            pie.Caption.Text = "Most popular programming language"
+            pie.SubCaption.Text = "2017-2018"
+            pie.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = column.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
@@ -126,7 +185,15 @@ The `.aspx` template for the above sample is shown below:
 
 Now, let's learn how to create a doughnut chart with the same data. The code remains the same as that of the Pie chart. The only difference is instead of instantiating a pie chart you have to instantiate a doughnut chart. Create a `doughnutChart.aspx.cs` and refer to the code below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 
@@ -177,7 +244,58 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class ThreeDChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim ChartData As DataTable = New DataTable()
+            ChartData.Columns.Add("Programming Language", GetType(System.String))
+            ChartData.Columns.Add("Users", GetType(System.Double))
+            ChartData.Rows.Add("Java", 62000)
+            ChartData.Rows.Add("Python", 46000)
+            ChartData.Rows.Add("Javascript", 38000)
+            ChartData.Rows.Add("C++", 31000)
+            ChartData.Rows.Add("C#", 27000)
+            ChartData.Rows.Add("PHP", 14000)
+            ChartData.Rows.Add("Perl", 14000)
+            Dim source As StaticSource = New StaticSource(ChartData)
+            Dim model As DataModel = New DataModel()
+            model.DataSources.Add(source)
+            Dim donut As Charts.DoughnutChart = New Charts.DoughnutChart("doughnut_chart")
+            donut.Width.Pixel(500)
+            donut.Height.Pixel(400)
+            donut.Data.Source = model
+            donut.Caption.Text = "Most popular programming language"
+            donut.SubCaption.Text = "2017-2018"
+            donut.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = column.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 

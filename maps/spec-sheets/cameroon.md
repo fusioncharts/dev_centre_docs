@@ -7,22 +7,18 @@
 Map Name: Cameroon
 Dimensions (Width x Height): 440x590
 
-
-
-
-
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
-CM.AD|AD|Adamaoua
-CM.CE|CE|Centre
-CM.ES|ES|Est
-CM.EN|EN|Extreme Nord
-CM.LT|LT|Littoral
-CM.NO|NO|Nord
-CM.NW|NW|Nord Ouest
-CM.OU|OU|Ouest
-CM.SU|SU|Sud
-CM.SW|SW|Sud Ouest
+CM.AD|AD|Adamawa
+CM.CE|CE|Central Cameroon
+CM.ES|ES|East Cameroon
+CM.EN|EN|Far North Cameroon
+CM.LT|LT|Littoral Cameroon
+CM.NO|NO|North Cameroon
+CM.NW|NW|Northwest Cameroon
+CM.OU|OU|West Cameroon
+CM.SU|SU|South Cameroon
+CM.SW|SW|Southwest Cameroon
 

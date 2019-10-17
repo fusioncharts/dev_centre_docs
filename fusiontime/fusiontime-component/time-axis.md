@@ -140,24 +140,24 @@ Refer the code below:
 
 ```javascript
 new FusionCharts({
-    "type": "timeseries",
-    "dataSource": {
-        "xAxis": {
-            "binning": {
-                "year": [1],
-                "month": [],
-                "day": [],
-                "hour": [],
-                "minute": [],
-                "second": [],
-                "millisecond": []
-            }
-        }
+  type: "timeseries",
+  dataSource: {
+    xAxis: {
+      binning: {
+        year: [1],
+        month: [],
+        day: [],
+        hour: [],
+        minute: [],
+        second: [],
+        millisecond: []
+      }
     }
+  }
 });
 ```
 
-The live chart looks like ash shown below:
+The live chart looks like as shown below:
 
 {% embed_ftChart binning-sample-max-bin %}
 
@@ -169,20 +169,20 @@ Refer the code below:
 
 ```javascript
 new FusionCharts({
-    "type": "timeseries",
-    "dataSource": {
-        "xAxis": {
-            "binning": {
-                "year": [],
-                "month": [],
-                "day": [],
-                "hour": [1],
-                "minute": [],
-                "second": [],
-                "millisecond": []
-            }
-        }
+  type: "timeseries",
+  dataSource: {
+    xAxis: {
+      binning: {
+        year: [],
+        month: [1],
+        day: [],
+        hour: [],
+        minute: [],
+        second: [],
+        millisecond: []
+      }
     }
+  }
 });
 ```
 

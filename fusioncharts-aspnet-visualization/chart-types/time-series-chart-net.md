@@ -1,7 +1,7 @@
 ---
-title: Time-series chart | FusionCharts
+title: Create Time-series chart | FusionCharts
 description: This article outlines the steps to create time-series chart.
-heading: Time-series chart
+heading: Create Time-series chart
 ---
 
 Let's create a time-series chart showing the **Online sales of a SuperStore**.
@@ -10,7 +10,7 @@ The chart will look as shown below:
 
 {% embed_ftChart online-sales-single-series %}
 
-The data for the above chart is shown in the table below:
+The sample [data](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv) for the above chart is shown in the table below:
 
 | Time     | Sales   |
 | -------- | ------- |
@@ -21,6 +21,8 @@ The data for the above chart is shown in the table below:
 | 1/6/2011 | 19.536  |
 | 1/7/2011 | 2573.82 |
 | 1/7/2011 | 609.98  |
+
+Click here to view the full data.
 
 ## Render the Chart
 
@@ -46,45 +48,92 @@ Create the `DataHandler.ashx` file and do the following:
 
 Refer to the code given below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Web;
 
-namespace TestProject.DataSources
+namespace FcTest
 {
-    public class FirstChartData : IHttpHandler
+    /// <summary>
+    /// Summary description for DataHandler
+    /// </summary>
+    public class DataHandler : IHttpHandler
     {
+
         public void ProcessRequest(HttpContext context)
         {
-            // set response type
-			context.Response.ContentType = "application/json";
+            /* create DataModel instance */
+            DataModel model = new DataModel();
 
-            // create object of MsSqlClass
-			MsSqlClass msSql = new MsSqlClass("POUSHALI-PC\\SHAREPOINT", "AdventureWorks2008", FusionCharts.DataBaseClass.SourceType.QUERY, "select [Sell Date], [Total Sales] from Production.Product");
+            /* create instance of MsSqlClass */
+            CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv");
 
-            // create object of DataModel class
-			DataModel model = new DataModel();
+            /* add msSql object to DataSources of model */
+            model.DataSources.Add(source);
 
-			// add data sources to model
-			model.DataSources.Add(msSql);
-
-			// convert model to time series acceptable data format
-			// write the converted data in json
-            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model));
+            
+            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”));
         }
-        public bool IsReusable {
-            get{
+
+        public bool IsReusable
+        {
+            get
+            {
                 return false;
             }
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Web
+
+Namespace FcTest
+    Public Class DataHandler
+        Implements IHttpHandler
+
+        Public Sub ProcessRequest(ByVal context As HttpContext)
+            Dim model As DataModel = New DataModel()
+            Dim source As CsvFileSource = New CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv")
+            model.DataSources.Add(source)
+            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”))
+        End Sub
+
+        Public ReadOnly Property IsReusable As Boolean
+            Get
+                Return False
+            End Get
+        End Property
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 Next, create the FirstTimeSeries.cs file and do the following:
 
@@ -96,7 +145,15 @@ Next, create the FirstTimeSeries.cs file and do the following:
 
 - Provide the value of the `Render()` method to the `Text` property of `Literal1`.
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.Visualization;
 using System;
 using System.Collections.Generic;
@@ -121,7 +178,44 @@ namespace TestProject
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.DataEngine
+Imports FusionCharts.Visualization
+Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+
+Namespace FcTest
+    Public Partial Class ChartTest
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim timeSeries As Charts.TimeSeriesChart = New Charts.TimeSeriesChart("first_timeseries")
+            timeSeries.Data.SourcePathHandler = "DataHandler.ashx"
+            timeSeries.Width.Pixel(700)
+            timeSeries.Height.Pixel(500)
+            timeSeries.SeriesName = "Country"
+            timeSeries.YAxes.Plot.Add("Sales")
+            Literal1.Text = timeSeries.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 Next, open the `FirstTimeSeries.aspx` file and add the following line to it:
 
@@ -130,8 +224,6 @@ Next, open the `FirstTimeSeries.aspx` file and add the following line to it:
 Refer to the code given below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true"
-CodeBehind="FirstTimeSeries.aspx.cs" Inherits="TestProject.FirstTimeSeries" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head runat="server">
@@ -240,7 +332,7 @@ DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, a
 
 /* invoke RenderCompatibleDataInJson() static method of  TimeSeriesData class*/
 /* it will return a json, return this json from your controller */
-return Content(TimeSeriesData.RenderCompatibleDataInJson(model), "text/json");
+return Content(TimeSeriesData.RenderCompatibleDataInJson(model,suppress,”chartId”), "text/json");
 }
 ```
 

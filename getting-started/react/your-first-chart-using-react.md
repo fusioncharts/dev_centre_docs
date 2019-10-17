@@ -20,8 +20,117 @@ Once you finish installing NodeJS, open the command prompt.  Then, follow the st
 
 Run the following command to install React JS on your computer:
 
-```
-npm install --save react
+<div class='tab localfiles-tab'>
+<div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the [React](https://reactjs.org/)core library.</li>
+        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
+        <li>Include the `react-fusioncharts` component.</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
+    </ol>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Including react  --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
+    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 4 - Including the react-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 5 - Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
+
+That completes the installation of FusionCharts and the react-fusioncharts component.
+
+## Create your first chart
+
+Let's create a Column 2D chart using the react-fusioncharts component showing the "Countries With Most Oil Reserves".
+
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+
+The Column 2D chart is shown below:
+
+{% embed_chart getting-started-your-first-chart-example-1.js %}
+
+To understand the chart components, click [here](/understanding-fusioncharts).
+
+## Chart data
+
+The data to render the above chart is shown in the table below:
+
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290K                |
+| Saudi     | 260K                |
+| Canada    | 180K                |
+| Iran      | 140K                |
+| Russia    | 115K                |
+| UAE       | 100K                |
+| US        | 30K                 |
+| China     | 30K                 |
+
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
+
+```json
+{
+  // Chart Configuration
+  "chart": {
+    "caption": "Countries With Most Oil Reserves [2017-18]",
+    "subCaption": "In MMbbl = One Million barrels",
+    "xAxisName": "Country",
+    "yAxisName": "Reserves (MMbbl)",
+    "numberSuffix": "K",
+    "theme": "fusion"
+  },
+  // Chart Data
+  "data": [
+    {
+      "label": "Venezuela",
+      "value": "290"
+    },
+    {
+      "label": "Saudi",
+      "value": "260"
+    },
+    {
+      "label": "Canada",
+      "value": "180"
+    },
+    {
+      "label": "Iran",
+      "value": "140"
+    },
+    {
+      "label": "Russia",
+      "value": "115"
+    },
+    {
+      "label": "UAE",
+      "value": "100"
+    },
+    {
+      "label": "US",
+      "value": "30"
+    },
+    {
+      "label": "China",
+      "value": "30"
+    }
+  ]
+}
 ```
 
 ### Install `react-fusioncharts`

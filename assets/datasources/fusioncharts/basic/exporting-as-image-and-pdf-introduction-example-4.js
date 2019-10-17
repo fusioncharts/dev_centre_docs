@@ -2,8 +2,8 @@
     type: 'stackedcolumn2d',
     renderAt: 'chart-container1',
     id: 'chart2',
-    width: '700',
-    height: '400',
+    width: '680',
+    height: '390',
     dataFormat: 'json',
     dataSource: {
         "chart": {

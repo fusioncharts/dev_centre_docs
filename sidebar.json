@@ -1,1505 +1,3072 @@
 [{
-    "title": "FusionCharts",
-    "header": "FusionCharts Suite XT",
-    "icon": "fc_fusioncharts_xt",
-    "description": "Plot 95+ charts and 1400+ data-driven maps",
-    "longDescription": "Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
-    "children": [{
-            "title": "Getting Started",
-            "children": [{
-                    "title": "Quick Start Guide",
-                    "path": "/getting-started/react/your-first-chart-using-react"
-                },
-                {
-                    "title": "How does it work?",
-                    "path": "/getting-started/react/how-it-works-react"
-                },
-                {
-                    "title": "List of charts",
-                    "path": "/chart-guide/list-of-charts"
-                },
-                {
-                    "title": "List of maps",
-                    "path": "/map-guide/list-of-maps"
-                }
-            ]
+	"title": "FusionCharts",
+	"header": "FusionCharts Suite XT",
+	"icon": "fc_fusioncharts_xt",
+	"description": "Plot 95+ charts and 1400+ data-driven maps",
+	"longDescription": "Learn how to implement FusionCharts XT, FusionWidgets XT, PowerCharts XT and FusionMaps XT",
+	"children": [{
+			"title": "Getting Started",
+			"children": [{
+					"title": "Quick Start Guide",
+					"path": "/getting-started/react/your-first-chart-using-react"
+				},
+				{
+					"title": "How does it work?",
+					"path": "/getting-started/react/how-it-works-react"
+				},
+				{
+					"title": "List of charts",
+					"path": "/chart-guide/list-of-charts"
+				},
+				{
+					"title": "List of maps",
+					"path": "/map-guide/list-of-maps"
+				}
+			]
 
-        },
-        {
-            "title": "Charts",
-            "children": [
-                {
-                    "title": "Column charts",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/column-chart"
-                        },
-                        {
-                            "title": "Create column charts",
-                            "path": "/chart-guide/standard-charts/line-area-and-column-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change Size",
-                                    "path": "/chart-guide/chart-configurations/column-charts/size-and-type-column-chart"
-                                },
-                                {
-                                    "title": "Border & Background",
-                                    "path": "/chart-guide/chart-configurations/column-charts/border-and-background-column-chart"
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": "/chart-guide/chart-configurations/column-charts/fonts-column-chart"
-                                },
-                                {
-                                    "title": "Number Formats",
-                                    "path": "/chart-guide/chart-configurations/column-charts/number-formats-column-chart"
-                                },
-                                {
-                                    "title": "Chart Pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load External Logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart Components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Area Charts",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/area-chart"
-                        },
-                        {
-                            "title": "Create area charts",
-                            "path": "/chart-guide/standard-charts/area-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-
-
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Line Charts",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/line-chart"
-                        },
-                        {
-                            "title": "Create line charts",
-                            "path": ""
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Pie & Doughnut Charts",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/pie-doughnut-chart"
-                        },
-                        {
-                            "title": "Create pie & doughnut charts",
-                            "path": "/chart-guide/standard-charts/pie-and-doughnut-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Stacked Charts",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/stacked-chart"
-                        },
-                        {
-                            "title": "Create stacked charts",
-                            "path": "/chart-guide/standard-charts/stacked-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Pyramid Chart",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/pyramid-chart"
-                        },
-                        {
-                            "title": "Create pyramid charts",
-                            "path": "/chart-guide/standard-charts/stacked-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Scatter Chart",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/scatter-chart"
-                        },
-                        {
-                            "title": "Create Scatter Charts",
-                            "path": "/chart-guide/standard-charts/scatter-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Bubble Chart",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/bubble-chart"
-                        },
-                        {
-                            "title": "Create Bubble Charts",
-                            "path": "/chart-guide/standard-charts/bubble-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Radar Chart",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/radar-chart"
-                        },
-                        {
-                            "title": "Create Radar Charts",
-                            "path": "/chart-guide/standard-charts/radar-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Candlestick Chart",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/candlestick-chart"
-                        },
-                        {
-                            "title": "Create Candlestick Charts",
-                            "path": "/chart-guide/standard-charts/candlestick-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Funnel Chart",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/funnel-chart"
-                        },
-                        {
-                            "title": "Create funnel charts",
-                            "path": "/chart-guide/standard-charts/stacked-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
-
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Heat Map Charts",
-                    "children": [{
-                            "title": "Chart anatomy",
-                            "path": "/understanding-fusioncharts/heat-map-chart"
-                        },
-                        {
-                            "title": "Create heat map charts",
-                            "path": "/chart-guide/standard-charts/heat-map-charts"
-                        },
-                        {
-                            "title": "Chart configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
+		},
+		{
+			"title": "Charts",
+			"children": [{
+					"title": "Column Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/column-chart"
+						},
+						{
+							"title": "Create column charts",
+							"path": "/chart-guide/standard-charts/line-area-and-column-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change Size",
+									"path": "/chart-guide/chart-configurations/column-charts/size-and-type-column-chart"
+								},
+								{
+									"title": "Border & Background",
+									"path": "/chart-guide/chart-configurations/column-charts/border-and-background-column-chart"
+								},
+								{
+									"title": "Fonts",
+									"path": "/chart-guide/chart-configurations/column-charts/fonts-column-chart"
+								},
+								{
+									"title": "Number Formats",
+									"path": "/chart-guide/chart-configurations/column-charts/number-formats-column-chart"
+								},
+								{
+									"title": "Chart Pallets",
+									"path": ""
+								},
+								{
+									"title": "Load External Logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart Components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Area Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/area-chart"
+						},
+						{
+							"title": "Create area charts",
+							"path": "/chart-guide/standard-charts/area-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
 
 
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Canvas",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Data plot",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Anchors",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Y-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "X-axis",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Trendlines & Trendzones",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Div lines & grids",
-                                    "path": ""
-                                }
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
 
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "title": "Gauges & Widgets",
-            "children": [{
-                    "title": "Angular gauge",
-                    "children": [{
-                            "title": "Gauge anatomy",
-                            "path": ""
-                        },
-                        {
-                            "title": "Create angular gauge",
-                            "path": ""
-                        },
-                        {
-                            "title": "Gauge configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Line Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/line-chart"
+						},
+						{
+							"title": "Create line charts",
+							"path": ""
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
 
-                            ]
-                        },
-                        {
-                            "title": "Gauge components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Dials",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Ticks",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Cylinder gauge",
-                    "children": [{
-                            "title": "Gauage anatomy",
-                            "path": ""
-                        },
-                        {
-                            "title": "Create cylinder gauge",
-                            "path": ""
-                        },
-                        {
-                            "title": "Gauge configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Pie & Doughnut Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/pie-doughnut-chart"
+						},
+						{
+							"title": "Create pie & doughnut charts",
+							"path": "/chart-guide/standard-charts/pie-and-doughnut-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Stacked Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/stacked-chart"
+						},
+						{
+							"title": "Create stacked charts",
+							"path": "/chart-guide/standard-charts/stacked-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Pyramid Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/pyramid-chart"
+						},
+						{
+							"title": "Create pyramid charts",
+							"path": "/chart-guide/standard-charts/stacked-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Step Line Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/step-line-chart"
+						},
+						{
+							"title": "Create Step Line Charts",
+							"path": "/chart-guide/standard-charts/step-line-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Scatter Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/scatter-chart"
+						},
+						{
+							"title": "Create Scatter Charts",
+							"path": "/chart-guide/standard-charts/scatter-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Pareto Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/pareto-chart"
+						},
+						{
+							"title": "Create Pareto Charts",
+							"path": "/chart-guide/standard-charts/pareto-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Overlapped Column Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/overlapped-column-chart"
+						},
+						{
+							"title": "Create Overlapped Column Charts",
+							"path": "/chart-guide/standard-charts/overlapped-column-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Overlapped Bar Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/overlapped-bar-chart"
+						},
+						{
+							"title": "Create Overlapped Bar Charts",
+							"path": "/chart-guide/standard-charts/overlapped-bar-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Bubble Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/bubble-chart"
+						},
+						{
+							"title": "Create Bubble Charts",
+							"path": "/chart-guide/standard-charts/bubble-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Kagi Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/kagi-chart"
+						},
+						{
+							"title": "Create kagi charts",
+							"path": "/chart-guide/standard-charts/stacked-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Radar Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/radar-chart"
+						},
+						{
+							"title": "Create Radar Charts",
+							"path": "/chart-guide/standard-charts/radar-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Candlestick Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/candlestick-chart"
+						},
+						{
+							"title": "Create Candlestick Charts",
+							"path": "/chart-guide/standard-charts/candlestick-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Funnel Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/funnel-chart"
+						},
+						{
+							"title": "Create funnel charts",
+							"path": "/chart-guide/standard-charts/stacked-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Marimekko Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/marimekko-chart"
+						},
+						{
+							"title": "Create Marimekko charts",
+							"path": ""
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Gantt Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/gantt-chart"
+						},
+						{
+							"title": "Create Gantt charts",
+							"path": ""
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Treemap Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/treemap-chart"
+						},
+						{
+							"title": "Create Marimekko charts",
+							"path": ""
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Waterfall Chart",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/waterfall-chart"
+						},
+						{
+							"title": "Create Waterfall Charts",
+							"path": "/chart-guide/standard-charts/stacked-charts"
+						},
+						{
+							"title": "Chart Configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Spark Line Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/spark-line-chart"
+						},
+						{
+							"title": "Create Spark Line charts",
+							"path": "/chart-guide/standard-charts/spark-line-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change Size",
+									"path": "/chart-guide/chart-configurations/column-charts/size-and-type-column-chart"
+								},
+								{
+									"title": "Border & Background",
+									"path": "/chart-guide/chart-configurations/column-charts/border-and-background-column-chart"
+								},
+								{
+									"title": "Fonts",
+									"path": "/chart-guide/chart-configurations/column-charts/fonts-column-chart"
+								},
+								{
+									"title": "Number Formats",
+									"path": "/chart-guide/chart-configurations/column-charts/number-formats-column-chart"
+								},
+								{
+									"title": "Chart Pallets",
+									"path": ""
+								},
+								{
+									"title": "Load External Logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart Components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Spark Column Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/spark-column-chart"
+						},
+						{
+							"title": "Create Spark Column Charts",
+							"path": "/chart-guide/standard-charts/spark-column-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change Size",
+									"path": "/chart-guide/chart-configurations/column-charts/size-and-type-column-chart"
+								},
+								{
+									"title": "Border & Background",
+									"path": "/chart-guide/chart-configurations/column-charts/border-and-background-column-chart"
+								},
+								{
+									"title": "Fonts",
+									"path": "/chart-guide/chart-configurations/column-charts/fonts-column-chart"
+								},
+								{
+									"title": "Number Formats",
+									"path": "/chart-guide/chart-configurations/column-charts/number-formats-column-chart"
+								},
+								{
+									"title": "Chart Pallets",
+									"path": ""
+								},
+								{
+									"title": "Load External Logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart Components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Spark Win Loss Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/spark-win-loss-chart"
+						},
+						{
+							"title": "Create Spark Win Loss Charts",
+							"path": "/chart-guide/standard-charts/spark-win-loss-chart"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change Size",
+									"path": "/chart-guide/chart-configurations/column-charts/size-and-type-column-chart"
+								},
+								{
+									"title": "Border & Background",
+									"path": "/chart-guide/chart-configurations/column-charts/border-and-background-column-chart"
+								},
+								{
+									"title": "Fonts",
+									"path": "/chart-guide/chart-configurations/column-charts/fonts-column-chart"
+								},
+								{
+									"title": "Number Formats",
+									"path": "/chart-guide/chart-configurations/column-charts/number-formats-column-chart"
+								},
+								{
+									"title": "Chart Pallets",
+									"path": ""
+								},
+								{
+									"title": "Load External Logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart Components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Drag Node Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/drag-node-chart"
+						},
+						{
+							"title": "Create Drag Node Charts",
+							"path": "/chart-guide/standard-charts/drag-node-chart"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change Size",
+									"path": "/chart-guide/chart-configurations/column-charts/size-and-type-column-chart"
+								},
+								{
+									"title": "Border & Background",
+									"path": "/chart-guide/chart-configurations/column-charts/border-and-background-column-chart"
+								},
+								{
+									"title": "Fonts",
+									"path": "/chart-guide/chart-configurations/column-charts/fonts-column-chart"
+								},
+								{
+									"title": "Number Formats",
+									"path": "/chart-guide/chart-configurations/column-charts/number-formats-column-chart"
+								},
+								{
+									"title": "Chart Pallets",
+									"path": ""
+								},
+								{
+									"title": "Load External Logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart Components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Box and Whisker Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/box-and-whisker-chart"
+						},
+						{
+							"title": "Create Box and Whisker Charts",
+							"path": "/chart-guide/standard-charts/box-and-whisker-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change Size",
+									"path": "/chart-guide/chart-configurations/column-charts/size-and-type-column-chart"
+								},
+								{
+									"title": "Border & Background",
+									"path": "/chart-guide/chart-configurations/column-charts/border-and-background-column-chart"
+								},
+								{
+									"title": "Fonts",
+									"path": "/chart-guide/chart-configurations/column-charts/fonts-column-chart"
+								},
+								{
+									"title": "Number Formats",
+									"path": "/chart-guide/chart-configurations/column-charts/number-formats-column-chart"
+								},
+								{
+									"title": "Chart Pallets",
+									"path": ""
+								},
+								{
+									"title": "Load External Logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Chart Components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Heat Map Charts",
+					"children": [{
+							"title": "Chart anatomy",
+							"path": "/understanding-fusioncharts/heat-map-chart"
+						},
+						{
+							"title": "Create heat map charts",
+							"path": "/chart-guide/standard-charts/heat-map-charts"
+						},
+						{
+							"title": "Chart configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
 
 
-                            ]
-                        },
-                        {
-                            "title": "Chart components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Dials",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Ticks",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                }
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Canvas",
+									"path": ""
+								},
+								{
+									"title": "Data plot",
+									"path": ""
+								},
+								{
+									"title": "Anchors",
+									"path": ""
+								},
+								{
+									"title": "Y-axis",
+									"path": ""
+								},
+								{
+									"title": "X-axis",
+									"path": ""
+								},
+								{
+									"title": "Trendlines & Trendzones",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								},
+								{
+									"title": "Div lines & grids",
+									"path": ""
+								}
 
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                },
-                {
-                    "title": "Linear gauge",
-                    "children": [{
-                            "title": "Gauge anatomy",
-                            "path": ""
-                        },
-                        {
-                            "title": "Create linear gauge",
-                            "path": ""
-                        },
-                        {
-                            "title": "Gauge configurations",
-                            "children": [{
-                                    "title": "Change size",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Border & background",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Fonts",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Number formats",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Chart pallets",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Load external logo",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Padding & Margin",
-                                    "path": ""
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Gauge components",
-                            "children": [{
-                                    "title": "Caption & sub-caption",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Dials",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Ticks",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Tooltips",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Toolbar",
-                                    "path": ""
-                                },
-                                {
-                                    "title": "Legend",
-                                    "path": ""
-                                }
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Gauges & Widgets",
+			"children": [{
+					"title": "Angular gauge",
+					"children": [{
+							"title": "Gauge anatomy",
+							"path": "/understanding-fusioncharts/angular-gauge"
+						},
+						{
+							"title": "Create angular gauge",
+							"path": ""
+						},
+						{
+							"title": "Gauge configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
 
-                            ]
-                        },
-                        {
-                            "title": "List of attributes",
-                            "path": ""
-                        }
-                    ]
-                }
+							]
+						},
+						{
+							"title": "Gauge components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Dials",
+									"path": ""
+								},
+								{
+									"title": "Ticks",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Bulb gauge",
+					"children": [{
+							"title": "Gauge anatomy",
+							"path": "/understanding-fusioncharts/bulb-gauge"
+						},
+						{
+							"title": "Create Bulb gauge",
+							"path": ""
+						},
+						{
+							"title": "Gauge configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
 
 
-            ]
-        },
-        {
-            "title": "Maps",
-            "children": [{
-                    "title": "Installation",
-                    "path": ""
-                },
-                {
-                    "title": "Create a map",
-                    "path": ""
-                },
-                {
-                    "title": "Custom entity IDs",
-                    "path": ""
-                },
-                {
-                    "title": "Markers",
-                    "path": ""
-                },
-                {
-                    "title": "Coloring based on data range",
-                    "path": ""
-                },
-                {
-                    "title": "Listening to map events",
-                    "path": ""
-                },
-                {
-                    "title": "Map spec sheets",
-                    "path": ""
-                },
-                {
-                    "title": "Map marker data",
-                    "path": ""
-                }
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Dials",
+									"path": ""
+								},
+								{
+									"title": "Ticks",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								}
 
-            ]
-        },
-        {
-            "title": "Advanced Features",
-            "children": [{
-                    "title": "Drill-down",
-                    "path": ""
-                },
-                {
-                    "title": "Annotations",
-                    "path": ""
-                },
-                {
-                    "title": "Export",
-                    "path": ""
-                }
-            ]
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Cylinder gauge",
+					"children": [{
+							"title": "Gauge anatomy",
+							"path": "/understanding-fusioncharts/cylinder-gauge"
+						},
+						{
+							"title": "Create cylinder gauge",
+							"path": ""
+						},
+						{
+							"title": "Gauge configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
 
-        },
-        {
-            "title": "API reference",
-            "children": [{
-                    "title": "Events",
-                    "path": ""
-                },
-                {
-                    "title": "Methods",
-                    "path": ""
-                },
-                {
-                    "title": "List of attributes",
-                    "path": ""
-                }
-            ]
-        }
-    ]
+
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Dials",
+									"path": ""
+								},
+								{
+									"title": "Ticks",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "LED gauge",
+					"children": [{
+							"title": "Gauge anatomy",
+							"path": "/understanding-fusioncharts/led-gauge"
+						},
+						{
+							"title": "Create LED gauge",
+							"path": ""
+						},
+						{
+							"title": "Gauge configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+
+
+							]
+						},
+						{
+							"title": "Chart components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Dials",
+									"path": ""
+								},
+								{
+									"title": "Ticks",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Thermometer gauge",
+					"children": [{
+							"title": "Gauge anatomy",
+							"path": "/understanding-fusioncharts/thermometer-gauge"
+						},
+						{
+							"title": "Create Thermometer gauge",
+							"path": ""
+						},
+						{
+							"title": "Gauge configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+
+
+							]
+						},
+						{
+							"title": "Gauge components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Dials",
+									"path": ""
+								},
+								{
+									"title": "Ticks",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				},
+				{
+					"title": "Linear gauge",
+					"children": [{
+							"title": "Gauge anatomy",
+							"path": "/understanding-fusioncharts/linear-gauge"
+						},
+						{
+							"title": "Create linear gauge",
+							"path": ""
+						},
+						{
+							"title": "Gauge configurations",
+							"children": [{
+									"title": "Change size",
+									"path": ""
+								},
+								{
+									"title": "Border & background",
+									"path": ""
+								},
+								{
+									"title": "Fonts",
+									"path": ""
+								},
+								{
+									"title": "Number formats",
+									"path": ""
+								},
+								{
+									"title": "Chart pallets",
+									"path": ""
+								},
+								{
+									"title": "Load external logo",
+									"path": ""
+								},
+								{
+									"title": "Padding & Margin",
+									"path": ""
+								}
+							]
+						},
+						{
+							"title": "Gauge components",
+							"children": [{
+									"title": "Caption & sub-caption",
+									"path": ""
+								},
+								{
+									"title": "Dials",
+									"path": ""
+								},
+								{
+									"title": "Ticks",
+									"path": ""
+								},
+								{
+									"title": "Tooltips",
+									"path": ""
+								},
+								{
+									"title": "Toolbar",
+									"path": ""
+								},
+								{
+									"title": "Legend",
+									"path": ""
+								}
+
+							]
+						},
+						{
+							"title": "List of attributes",
+							"path": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Maps",
+			"children": [{
+					"title": "Installation",
+					"path": ""
+				},
+				{
+					"title": "Create a map",
+					"path": ""
+				},
+				{
+					"title": "Custom entity IDs",
+					"path": ""
+				},
+				{
+					"title": "Markers",
+					"path": ""
+				},
+				{
+					"title": "Coloring based on data range",
+					"path": ""
+				},
+				{
+					"title": "Listening to map events",
+					"path": ""
+				},
+				{
+					"title": "Map spec sheets",
+					"path": ""
+				},
+				{
+					"title": "Map marker data",
+					"path": ""
+				}
+
+			]
+		},
+		{
+			"title": "Advanced Features",
+			"children": [{
+					"title": "Drill-down",
+					"path": ""
+				},
+				{
+					"title": "Annotations",
+					"path": ""
+				},
+				{
+					"title": "Export",
+					"path": ""
+				}
+			]
+
+		},
+		{
+			"title": "API reference",
+			"children": [{
+					"title": "Events",
+					"path": ""
+				},
+				{
+					"title": "Methods",
+					"path": ""
+				},
+				{
+					"title": "List of attributes",
+					"path": ""
+				}
+			]
+		}
+	]
 }]
