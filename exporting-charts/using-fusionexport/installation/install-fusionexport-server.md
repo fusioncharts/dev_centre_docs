@@ -25,7 +25,7 @@ $ chmod +x ./fusionexport
 $ ./fusionexport
 ```
 
-By default, the FusionExport Server starts on `**localhost`, and listens to port `**1337`.
+By default, the FusionExport Server starts on `localhost`, and listens to port `1337`.
 
 ### Linux
 
@@ -36,7 +36,7 @@ $ chmod +x ./fusionexport
 $ ./fusionexport
 ```
 
-By default, the FusionExport Server starts on `**localhost`, and listens to port `**1337`.
+By default, the FusionExport Server starts on `localhost`, and listens to port `1337`.
 
 However, if you are running it on Linux servers then you may face few issues before the FusionExport server starts. In such cases run following commands in case as per your package manager (either DEB or RPM):
 
