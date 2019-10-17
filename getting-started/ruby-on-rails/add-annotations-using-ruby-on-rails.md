@@ -12,7 +12,7 @@ In this article we'll create a **Spline** chart and add annotations using **Fusi
 
 The code to render the above sample is given below:
 
-```
+```ruby
 <%
     require 'fusioncharts-rails'
     def getChart
@@ -90,8 +90,8 @@ The code to render the above sample is given below:
                 "value": "2"
             }]
         }
-        
-        # Chart rendering 
+
+        # Chart rendering
         chart = Fusioncharts::Chart.new({
             width: "700",
             height: "400",
@@ -105,7 +105,7 @@ The code to render the above sample is given below:
 
 The HTML template of the above sample is shown below:
 
-```
+```html
 <div style="width: 100%; display: block;" align="center">
     <div id="chartContainer">
         <%= getChart.render() %>

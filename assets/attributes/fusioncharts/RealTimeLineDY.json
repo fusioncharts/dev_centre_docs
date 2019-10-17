@@ -1211,7 +1211,7 @@
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.14.0",
-        "name": "valueFontColor"
+        "name": "yAxisValueFontColor"
       },
       {
         "description": "Sets the font size for the Y-axis value texts. \n\nDefault value: 10 px",
@@ -2545,7 +2545,7 @@
     "table": "Attributes for Exporting Charts",
     "attrs": [
       {
-        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG, XLSX or CSV format.  \n\n__Default value__: 0",
         "range": "0/1",
         "type": "Boolean",
         "name": "exportEnabled"
@@ -2699,6 +2699,34 @@
         "range": "In pixels",
         "type": "Number",
         "name": "canvasPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the left of the canvas border and the canvas of the chart. This attribute is particularly useful when your data plot gets clipped by the left border of the canvas. Using this attribute, you can control the amount of empty space between the chart left side and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasLeftPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the right of the canvas border and the canvas  of the chart. This attribute is particularly useful when your data plot gets clipped by the right border of the canvas. Using this attribute, you can control the amount of empty space between the chart right side and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasRightPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the top of the canvas border and the canvas of the chart. This attribute is particularly useful when your data plot gets clipped by the top border of the canvas. Using this attribute, you can control the amount of empty space between the chart's top and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasTopPadding"
+      },
+      {
+        "description": "This attribute lets you set the space between the bottom of the canvas border and the canvas of the chart. This attribute is particularly useful when your data plot gets clipped by the bottom border of the canvas. Using this attribute, you can control the amount of empty space between the chart's bottom and data plot which might get clipped.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.14.1",
+        "name": "canvasBottomPadding"
       },
       {
         "description": "Using this, you can set the distance between the top end of x-axis title and the bottom end of data labels (or canvas, if data labels are not to be shown).",

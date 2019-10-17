@@ -56,7 +56,7 @@ Set the value of the `allowDrag` attribute to `1` to make a node draggable.
 
 Refer to the code below:
 
-```json
+```javascript
 {
 	"chart": {
 		"allowDrag": "1"
@@ -76,7 +76,7 @@ You can either render drag-node charts in the edit mode (in which you can add, e
 
 Refer to the code below:
 
-```json
+```javascript
 {
 	"chart": {
 		"viewMode": "1"
@@ -176,7 +176,7 @@ When you create a new node, a JavaScript event, named `nodeAdded`, is raised. Yo
 
 Refer to the code below:
 
-```json
+```javascript
 chartInstance.addEventListener('nodeadded', function(e, a){
     //Your code here
 });
@@ -204,7 +204,7 @@ When you edit a node, a JavaScript event named `nodeUpdated` is raised. You can 
 
 The code snippet required to trap this event is given below:
 
-```json
+```javascript
 chartInstance.addEventListener('nodeupdated', function(e, a){
     //Your code here
 });
@@ -224,7 +224,7 @@ When you delete a node, a JavaScript event named `nodeDeleted` is raised. You ca
 
 The code snippet required to trap this event is given below:
 
-```json
+```javascript
 chartInstance.addEventListener('nodedeleted', function(e, a){
     //Your code here
 });
@@ -308,7 +308,7 @@ When you create a new connector, a JavaScript event named `connectorAdded` is ra
 
 The code snippet required to trap this event is given below:
 
-```json
+```javascript
 chartInstance.addEventListener('connectoradded', function(e, a) {
     //Your code here
 });
@@ -338,7 +338,7 @@ When you edit a connector, a JavaScript event named `connectorUpdated` is raised
 
 The code snippet required to trap this event is given below:
 
-```json
+```javascript
 chartInstance.addEventListener('connectorupdated', function(e, a) {
     //Your code here
 });
@@ -358,7 +358,7 @@ When you delete a connector, a JavaScript event named `connectorDeleted` is rais
 
 The code snippet required to trap this event is given below:
 
-```json
+```javascript
 chartInstance.addEventListener('connectordeleted', function(e, a) {
     //Your code here
 });
@@ -428,7 +428,7 @@ When you create a new label, a JavaScript event named `labelAdded` is raised. Yo
 
 The code snippet required to trap this event is given below:
 
-```json
+```javascript
 chartInstance.addEventListener("labeladded", function(e, a) {
     //Your code here
 });
@@ -448,7 +448,7 @@ When you delete a label, a JavaScript event named `labelDeleted` is raised. You 
 
 The code snippet required to trap this event is given below:
 
-```json
+```javascript
 chartInstance.addEventListener('labeldeleted', function(e, a) {
     //Your code here
 });
@@ -474,7 +474,7 @@ To enable data submission to server-side script, you need to make sure that the 
 
 Use the following code snippet to add the **Submit** option to your menu:
 
-```json
+```javascript
 {
     "chart": {
         "enableSubmit": "1"
@@ -496,7 +496,7 @@ Use the following attributes to show/hide and define the form properties for the
 
 You can see how the server-side PHP script is used to submit data, in the code snippet given below:
 
-```
+```javascript
 <?php
 //File to write
 $filename = 'xml/dragNodeData.xml';
@@ -531,7 +531,7 @@ In a drag-node chart, you can update data in real-time. To access the updated JS
 
 In this section, you will see how to read the updated data using JavaScript functions present on the same page. Once the chart is rendered, you can access the updated chart data as JSON, simply by calling the `getJSONData()` function on the chart. Use the following code snippet to do so:
 
-```
+```javascript
 //Get a reference to our chart
 var ourChart = FusionCharts("NodeChart");
 

@@ -79,7 +79,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     <ol>
         <li>1. Include the [React](https://reactjs.org/)core library.</li>
         <li>2. Include [Babel](https://babeljs.io/) for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>3. Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>3. Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
         <li>4. Include the FusionMap renderer. </li>
         <li>5. Include the map definition file.</li>
         <li>6. Include the `react-fusioncharts` module.</li>

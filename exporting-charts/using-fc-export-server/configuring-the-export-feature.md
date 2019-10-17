@@ -1,12 +1,10 @@
 ---
-permalink: exporting-charts/using-fc-export-server/configuring-the-export-feature.html
 title: Configuring the Export Feature | FusionCharts
 description: FusionCharts Suite XT lets you export your charts and chart data by using one from its three modes of export- server-side export, client-side export, and auto export.
 heading: Configuring the Export Feature
-chartPresent: true
 ---
 
-FusionCharts Suite XT lets you export your charts (as **JPG**, **PNG**, **SVG**, and **PDF**) and chart data (since v3.11.0; as **XLSX**) by using its [server-side](/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature) to export charts.
+FusionCharts Suite XT lets you export your charts (as **JPG**, **PNG**, **SVG**, and **PDF**) and chart data ( as **XLSX** and **CSV**) by using its [server-side](/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature) to export charts.
 
 The exporting feature can be enabled by setting the `exportEnabled` attribute to 1. The mode of export can be selected by setting the `exportMode` attribute to server, client, or auto, as required.
 

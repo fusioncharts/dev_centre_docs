@@ -18,15 +18,15 @@
         "data": [{
             "label": "Apple",
             "value": "810000",
-            "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://fusioncharts.com"
-        }, {
+            "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-https://en.wikipedia.org/wiki/Apple"
+          }, {
             "label": "Cranberry",
             "value": "620000",
-            "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://www.fusioncharts.com/explore/charts/"
-        }, {
+            "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-https://en.wikipedia.org/wiki/Cranberry"
+          }, {
             "label": "Grapes",
             "value": "350000",
-            "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://blog.fusioncharts.com/"
-        }]
+            "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-https://en.wikipedia.org/wiki/Grape"
+          }]
     }
 }

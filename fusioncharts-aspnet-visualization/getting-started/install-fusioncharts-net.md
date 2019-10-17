@@ -36,7 +36,7 @@ To install, download `FusionCharts.NET` and follow the steps given below:
 To use NuGet package, please run the following command in the NuGet Package Manage Console:
 
 ```csharp
-Install-Package FusionCharts.Visualization -Version 1.0.4
+Install-Package FusionCharts.Visualization -Version 1.0.7
 ```
 
 Once installed from NuGet, it'll add some assemblies to your web project, and those assemblies will be automatically referenced to your project. It'll also add FusionCharts JavaScript libraries to your project under `Scripts/FusionCharts/` folder.
@@ -76,3 +76,5 @@ FusionCharts export handler gets automatically installed, once you install `Fusi
   - `FusionCharts.SharpVectors.Model.dll`
   - `FusionCharts.SharpVectors.Rendering.Wpf.dll`
   - `FusionCharts.SharpVectors.Runtime.dll`
+
+> As you have downloaded and configured your web application, let's now see how can you [Create your First Chart](/fusioncharts-aspnet-visualization/getting-started/create-first-chart-using-fusioncharts-net).

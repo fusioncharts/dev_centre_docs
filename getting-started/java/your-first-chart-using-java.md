@@ -18,7 +18,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 * Copy and paste the `fusioncharts.java` file from `integrations > java > fusioncharts-wrapper` in your project folder.
 
-* Include the FusionCharts JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+* Include the FusionCharts JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
 * Include the FusionCharts theme file to apply the style to the charts.
 

@@ -39,7 +39,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install FusionTime and the `vue-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/) core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionTime file to render time-series charts</div>
 <pre><code class="language-html">
 &lt;head&gt;
@@ -60,7 +60,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install FusionTime and the `vue-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionTime file to render time-series charts.</div>
 <pre><code class="language-html">
 &lt;head&gt;

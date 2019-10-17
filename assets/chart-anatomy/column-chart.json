@@ -3,8 +3,7 @@
    "subHeader": "To know how FusionCharts works it is important to understand the various components and concepts of a chart",
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
-      "contentGroup": [
-         {
+      "contentGroup": [{
             "itemHeader": "Column Chart",
             "imgSrc": "column-chart-anatomy.png",
             "annotations": [{

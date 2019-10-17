@@ -108,7 +108,7 @@ If you are executing the template code without any changes, the chart configurat
 <code_executed_from_this_directory>/resources/chart-config-file.json
 ```
 
-The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes](/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
+The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite-xt). Refer to [Chart Attributes](/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
 
 > Observe the use of the `renderAt` attribute for each of the chart configurations. The value of `renderAt` must be the exact same string as the value of the `id` attribute, for its corresponding `div` in the HTML template.
 

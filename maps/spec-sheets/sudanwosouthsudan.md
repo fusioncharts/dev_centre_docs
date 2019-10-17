@@ -22,7 +22,7 @@ SD.KA|KA|Kassala
 SD.KH|KH|Khartoum
 SD.ND|ND|North Darfur
 SD.NK|NK|North Kurdufan
-SD.NO|NO|Northern
+SD.NO|NO|Northern Sudan
 SD.RS|RS|Red Sea
 SD.RN|RN|River Nile
 SD.SI|SI|Sennar
