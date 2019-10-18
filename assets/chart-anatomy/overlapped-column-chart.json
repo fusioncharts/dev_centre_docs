@@ -50,8 +50,8 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "92%",
-                  "topPosition": "35%",
+                  "leftPosition": "75%",
+                  "topPosition": "20%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
