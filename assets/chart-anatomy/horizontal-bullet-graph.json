@@ -32,8 +32,8 @@
                   "annotationName": "Sub-caption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "53.5%",
-                  "topPosition": "7.5%",
+                  "leftPosition": "21.5%",
+                  "topPosition": "40.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
@@ -49,8 +49,8 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "85%",
-                  "topPosition": "30%",
+                  "leftPosition": "70%",
+                  "topPosition": "28%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
@@ -66,21 +66,12 @@
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "28%",
-                  "topPosition": "70%",
+                  "leftPosition": "73%",
+                  "topPosition": "44%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "5",
-                  "annotationName": "X-Axis Title",
-                  "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "53%",
-                  "topPosition": "80%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "6",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
