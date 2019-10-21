@@ -1,5 +1,4 @@
 {
-    id: "footfallChart-2",
     type: 'realtimecolumn',
     renderAt: 'chart-container',
     width: '600',
@@ -94,7 +93,7 @@
         },
         'rendered': function(evt, args) {
             //JS Message handler function, displaying the current data in a div
-            displayData = function(strMsgId, strMsgTitle, strMsgText, strMsgType) {
+            window.displayData = function(strMsgId, strMsgTitle, strMsgText, strMsgType) {
                 var div = document.getElementById('data');
                 div.innerHTML = strMsgTitle + strMsgText;
             }

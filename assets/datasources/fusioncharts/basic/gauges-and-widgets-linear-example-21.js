@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cpu-linear-gauge-21',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -41,9 +40,10 @@
     },
     "events": {
         "rendered": function(evtObj, argObj) {
-            evtObj.sender.intervalVar = setInterval(function() {
+           var chartRef = evtObj.sender;
+           chartRef.intervalVar = setInterval(function() {
                 var prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
-                FusionCharts.items["cpu-linear-gauge-21"].feedData("value=" + prcnt);
+                chartRef.feedData("value=" + prcnt);
             }, 5000);
         },
         "disposed": function(evtObj, argObj) {

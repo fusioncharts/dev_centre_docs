@@ -79,7 +79,7 @@
                     //We need to create a querystring format incremental update, containing
                     //label in hh:mm:ss format
                     //and a value (random).
-                    currDate = new Date(),
+                    var currDate = new Date(),
                     label = formatTime(currDate.getHours()) + ":" + formatTime(currDate.getMinutes()) + ":" + formatTime(currDate.getSeconds()),
                     //Get random number between 1 & 5 - rounded
                     transactions = Math.round(Math.random() * 4) + 1,

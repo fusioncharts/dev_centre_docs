@@ -27,49 +27,49 @@ In this article, we will create a chart by applying couple of filter operations 
 
 > In the chart, **Order Date** Column will be represented using x-axis, whereas **Sales** column will be represented in the y-axis.
 
-Order Date | Country | Sales
----|---|---
-1/1/2011 | Australia | 120.366
-1/1/2011 | Australia | 55.242
-1/3/2011 | Australia | 276.102
-1/3/2011 | Australia | 35.883
-1/4/2011 | United States | 16.448
-1/5/2011 | United States | 272.736
-1/5/2011 | United States | 11.784
-1/6/2011 | United States | 19.536
-1/7/2011 | United States | 6.54
-1/7/2011 | United States | 5.48
-1/8/2011 | United States | 76.728
-1/8/2011 | United States | 10.43
-1/10/2011 | Australia | 1475.095
-1/10/2011 | United States | 9.344
-1/11/2011 | India | 141.57
-1/11/2011 | United States | 51.94
-1/11/2011 | United States | 2.89
-1/12/2011 | United States | 9.94
-1/13/2011 | Australia | 15.93
-1/14/2011 | United States | 1325.85
-1/14/2011 | United States | 572.58
-1/15/2011 | United States | 61.96
-1/16/2011 | United States | 149.95
-1/17/2011 | United States | 18.588
-1/17/2011 | Australia | 18.576
-1/19/2011 | United States | 64.864
-1/20/2011 | United States | 181.47
-1/20/2011 | Australia | 138.753
-1/21/2011 | United States | 1067.94
-1/21/2011 | United States | 6.63
-1/22/2011 | Australia | 59.724
-1/24/2011 | India | 59.25
-1/24/2011 | United States | 5.94
-1/26/2011 | India | 79.38
-1/26/2011 | India | 342.51
-1/27/2011 | United States | 141.96
-1/27/2011 | United States | 489.92
-1/27/2011 | United States | 10.68
-1/28/2011 | Australia | 531.522
-1/29/2011 | United States | 3.928
-1/31/2011 | Australia | 838.593
+| Order Date | Country       | Sales    |
+| ---------- | ------------- | -------- |
+| 1/1/2011   | Australia     | 120.366  |
+| 1/1/2011   | Australia     | 55.242   |
+| 1/3/2011   | Australia     | 276.102  |
+| 1/3/2011   | Australia     | 35.883   |
+| 1/4/2011   | United States | 16.448   |
+| 1/5/2011   | United States | 272.736  |
+| 1/5/2011   | United States | 11.784   |
+| 1/6/2011   | United States | 19.536   |
+| 1/7/2011   | United States | 6.54     |
+| 1/7/2011   | United States | 5.48     |
+| 1/8/2011   | United States | 76.728   |
+| 1/8/2011   | United States | 10.43    |
+| 1/10/2011  | Australia     | 1475.095 |
+| 1/10/2011  | United States | 9.344    |
+| 1/11/2011  | India         | 141.57   |
+| 1/11/2011  | United States | 51.94    |
+| 1/11/2011  | United States | 2.89     |
+| 1/12/2011  | United States | 9.94     |
+| 1/13/2011  | Australia     | 15.93    |
+| 1/14/2011  | United States | 1325.85  |
+| 1/14/2011  | United States | 572.58   |
+| 1/15/2011  | United States | 61.96    |
+| 1/16/2011  | United States | 149.95   |
+| 1/17/2011  | United States | 18.588   |
+| 1/17/2011  | Australia     | 18.576   |
+| 1/19/2011  | United States | 64.864   |
+| 1/20/2011  | United States | 181.47   |
+| 1/20/2011  | Australia     | 138.753  |
+| 1/21/2011  | United States | 1067.94  |
+| 1/21/2011  | United States | 6.63     |
+| 1/22/2011  | Australia     | 59.724   |
+| 1/24/2011  | India         | 59.25    |
+| 1/24/2011  | United States | 5.94     |
+| 1/26/2011  | India         | 79.38    |
+| 1/26/2011  | India         | 342.51   |
+| 1/27/2011  | United States | 141.96   |
+| 1/27/2011  | United States | 489.92   |
+| 1/27/2011  | United States | 10.68    |
+| 1/28/2011  | Australia     | 531.522  |
+| 1/29/2011  | United States | 3.928    |
+| 1/31/2011  | Australia     | 838.593  |
 
 Using the above tabular data, you can build a chart that looks like the one shown below:
 
@@ -177,8 +177,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Instantiate Column Chart
             Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
             // Set Chart's width and height
-            column.Width = "700";
-            column.Height = "400";
+            column.Width.Pixel(700);
+            column.Height.Pixel(400);
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
             // Set Chart Title
@@ -203,8 +203,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">

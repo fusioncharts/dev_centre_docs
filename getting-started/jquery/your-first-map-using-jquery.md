@@ -44,12 +44,12 @@ $ npm install fusioncharts --save
     &lt;!-- Include jQuery --&gt;
     &lt;script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
     &lt;!-- Include fusioncharts core library file --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Include fusioncharts map definition files --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
     &lt;!-- Include fusion theme file --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;!-- Include fusioncharts jquery plugin --&gt;
     &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
 &lt;/head&gt;
@@ -92,42 +92,40 @@ In this section, we will create a visualization using the **World Map** showing 
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for this chart is represented in the table below:
+## Map data
 
-State|Entity Name|Value||
--|-|-|-
-North America|NA|82||
-South America|SA|2.04||
-Asia|AS|1.78||
-Europe|EU|40||
-Africa|AF|2.58||
-Australia|AU|1.30||
+The data for the above map is represented in the table below:
 
-## Convert tabular data into JSON format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format.
+| State | Entity Name | Value |
+| ----- | ----------- | ----- ||
+| North America | NA          | 82    |
+| South America | SA          | 2.04  |
+| Asia          | AS          | 1.78  |
+| Europe        | EU          | 40    |
+| Africa        | AF          | 2.58  |
+| Australia     | AU          | 1.30  |
 
 In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column.
 
-However, when you convert the data into a format (JSON or XML) supported by FusionCharts, the entities are denoted by the `id` key in the `data` object.
+FusionCharts accepts data in **JSON** format in which the above entities are denoted by the `id` key in the `data` object.
 
 For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
- In this example, we will use the JSON format, as shown below:
+Following code is the JSON representation of the above table with the required attributes to render the above map.
 
 ```JSON
 {
     // Map Configuration
     "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        "labelsepchar": ": ",
-        "entityFillHoverColor": "#FFF9C4",
-        "theme": "fusion"
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
@@ -177,7 +175,7 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
 }
 ```
 
-In the above JSON data: 
+In the above JSON data:
 
 * Create the `chart` object to define the elements of the map.
 
@@ -185,11 +183,11 @@ In the above JSON data:
 
 * Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
-* Create the `data` array to define the id of the continents and their corresponding values along with configurations.
+* Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
 
-The `chart` object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
+The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the map.
+Now that you have the data in JSON format, let's learn how to render the map.
 
 ## Render the map
 
@@ -320,12 +318,12 @@ $('document').ready(function () {
         &lt;!-- Include jQuery --&gt;
         &lt;script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts core library file --&gt;
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts map definition files --&gt;
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
         &lt;!-- Include fusion theme file --&gt;
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts jquery plugin --&gt;
         &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
     &lt;/head&gt;
@@ -585,12 +583,12 @@ $('document').ready(function () {
         &lt;!-- Include jQuery --&gt;
         &lt;script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts core library file --&gt;
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts map definition files --&gt;
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
         &lt;!-- Include fusion theme file --&gt;
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts jquery plugin --&gt;
         &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
     &lt;/head&gt;

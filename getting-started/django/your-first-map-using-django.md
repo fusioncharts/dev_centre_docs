@@ -20,7 +20,7 @@ To install the FusionCharts Suite, follow the steps below:
 
 * Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder.
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
 * Include the map renderer file.
 
@@ -36,13 +36,13 @@ To install the FusionCharts Suite, follow the steps below:
 <div class='tab cdn-tab active'>
 <pre><code class="language-php">
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="{% "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script>
+&lt;script type="text/javascript" src="{% "https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script>
 
 // Include FusionCharts maps file
-&lt;script type="text/javascript" src="{% "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js" %}"&gt;&lt;/script>
+&lt;script type="text/javascript" src="{% "https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js" %}"&gt;&lt;/script>
 
 // Include FusionCharts Theme file
-&lt;script type="text/javascript" src="{% "http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script>
+&lt;script type="text/javascript" src="{% "https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -74,42 +74,40 @@ The chart will look like as shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for this chart is represented in the table below:
+## Map data
 
-State|Entity Name|Value|
--|-|-
-North America|NA|82|
-South America|SA|2.04|
-Asia|AS|1.78|
-Europe|EU|40|
-Africa|AF|2.58|
-Australia|AU|1.30|
+The data for the above map is represented in the table below:
 
-## Convert tabular data into JSON format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format.
+| State | Entity Name | Value |
+| ----- | ----------- | ----- ||
+| North America | NA          | 82    |
+| South America | SA          | 2.04  |
+| Asia          | AS          | 1.78  |
+| Europe        | EU          | 40    |
+| Africa        | AF          | 2.58  |
+| Australia     | AU          | 1.30  |
 
 In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column.
 
-However, when you convert the data into a format (JSON or XML) supported by FusionCharts, the entities are denoted by the id key in the data object.
+FusionCharts accepts data in **JSON** format in which the above entities are denoted by the `id` key in the `data` object.
 
-For any map visualization, it is important to provide the correct value for the id keys. For example, if you want to denote Africa, the value for the corresponding id must be AF and not AFR.
+For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create.
+We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
-In this example, we will use the JSON format, as shown below:
+Following code is the JSON representation of the above table with the required attributes to render the above map.
 
-```
+```JSON
 {
     // Map Configuration
     "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        "labelsepchar": ": ",
-        "entityFillHoverColor": "#FFF9C4",
-        "theme": "fusion"
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
@@ -167,11 +165,11 @@ In the above JSON data:
 
 * Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
-* Create the `data` array to define the id of the continents and their corresponding values along with configurations.
+* Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
 
 The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the map.
+Now that you have the data in JSON format, let's learn how to render the map.
 
 ## Render the Map
 
@@ -317,10 +315,10 @@ The HTML template of the above sample is shown below:
 &lt;head&gt;
     &lt;title&gt;FC-python wrapper&lt;/title&gt;
     {% load static %}
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js" %}"&gt;&lt;/script>
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js" %}"&gt;&lt;/script>
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js" %}"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js" %}"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
@@ -523,10 +521,10 @@ The HTML template of the above sample is shown below:
 &lt;head&gt;
     &lt;title&gt;FC-python wrapper&lt;/title&gt;
     {% load static %}
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script>
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js" %}"&gt;&lt;/script>
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js" %}"&gt;&lt;/script>
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js" %}"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js" %}"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script>
 &lt;/head&gt;
 
 &lt;body&gt;

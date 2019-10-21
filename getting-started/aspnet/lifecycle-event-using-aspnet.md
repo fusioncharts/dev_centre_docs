@@ -4,19 +4,21 @@ description: The sample in this article lists the basic lifestyle events at the 
 heading: Lifecycle Events using ASP.NET
 ---
 
-> ### FusionCharts.NET (BETA)
-We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
-> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
-> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
-> * All methods and properties are available in Visual Studio intellisense.
-> * ...and many more.
-> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+> ### FusionCharts.NET
+>
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
+>
+> - Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> - Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> - All methods and properties are available in Visual Studio intellisense.
+> - ...and many more.
+>   Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
-Events are signals that let you execute specific actions — such as sending data to the server, and so on — using JavaScript, in response to any interactions/updates for a chart. 
+Events are signals that let you execute specific actions — such as sending data to the server, and so on — using JavaScript, in response to any interactions/updates for a chart.
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart **updates** and **events**.
 
-The sample in this article lists the basic **lifecycle events** at the *time of rendering the chart* using **FusionCharts ASP.NET `C#` & `VB` wrapper**. A chart is shown below:
+The sample in this article lists the basic **lifecycle events** at the _time of rendering the chart_ using **FusionCharts ASP.NET `C#` & `VB` wrapper**. A chart is shown below:
 
 {% embed_chartData lifecycle-event-server-side-example-1.js json %}
 
@@ -90,16 +92,16 @@ The HTML template for `aspx` file is shown below:
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
 &lt;head runat="server"&gt;
-    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
-    &lt;title&gt;FusionCharts | sample to showcase one product life cycle event attachment&lt;/title&gt;
+&lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+&lt;title&gt;FusionCharts | sample to showcase one product life cycle event attachment&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script&gt;
-        function onDataLoaded() {
-            document.getElementById("dataLoaded").innerHTML = "chart data is loaded successfully";
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+function onDataLoaded() {
+document.getElementById("dataLoaded").innerHTML = "chart data is loaded successfully";
 
         }
     &lt;/script&gt;
@@ -115,11 +117,11 @@ The HTML template for `aspx` file is shown below:
                 &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
     &lt;/form&gt;
 
-
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -132,16 +134,16 @@ The HTML template for `aspx` file is shown below:
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
 &lt;head runat="server"&gt;
-    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
-    &lt;title&gt;FusionCharts | sample to showcase one product life cycle event attachment&lt;/title&gt;
+&lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+&lt;title&gt;FusionCharts | sample to showcase one product life cycle event attachment&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script&gt;
-        function onDataLoaded() {
-            document.getElementById("dataLoaded").innerHTML = "chart data is loaded successfully";
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+function onDataLoaded() {
+document.getElementById("dataLoaded").innerHTML = "chart data is loaded successfully";
 
         }
     &lt;/script&gt;
@@ -157,27 +159,27 @@ The HTML template for `aspx` file is shown below:
                 &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
     &lt;/form&gt;
 
-
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
 </div>
 </div>
 
-Apart from the usual boilerplate, the sample __C#/VB__ code provided above corresponds to the following tasks:
+Apart from the usual boilerplate, the sample **C#/VB** code provided above corresponds to the following tasks:
 
-1. Import and resolve the dependencies like `System`, and  `FusionCharts.Charts`.
+1. Import and resolve the dependencies like `System`, and `FusionCharts.Charts`.
 
 2. Define a class `Pages_ProductLifeCycleEvent` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `Pages_ProductLifeCycleEvent` is inherited.
 
 3. Within the class `Pages_ProductLifeCycleEvent`, define `Page_Load()`:
-    * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
-    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
-    * Add the events you want to add to your chart, using the `onDataLoaded()` method. In this case, those methods are defined as JavaScript functions in the corresponding `.aspx` file.
-    * Render the chart using the `onDataLoaded()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, followed by some JavaScript functions and buttons, and finally within a `<form><div>` render the chart.
+   - Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
+   - Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
+   - Add the events you want to add to your chart, using the `onDataLoaded()` method. In this case, those methods are defined as JavaScript functions in the corresponding `.aspx` file.
+   - Render the chart using the `onDataLoaded()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js`, followed by some JavaScript functions and buttons, and finally within a `<form><div>` render the chart.
 
 > Refer to [Column 2D chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts) for more information on the configuration and data for this chart type.

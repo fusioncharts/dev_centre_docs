@@ -14,7 +14,7 @@ A chart configured to calculate the percent, is shown below:
 
 The code to render a chart using `require` is given below:
 
-```
+```javascript
 // Include fusioncharts
 var FusionCharts = require('fusioncharts');
 

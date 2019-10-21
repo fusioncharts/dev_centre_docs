@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '700',
-    height: '400',
+    width: '680',
+    height: '390',
     dataFormat: 'json',
     dataSource: {
         // Chart Configuration
@@ -69,7 +69,7 @@
             var btnContainer = document.createElement('div'),
                 str;
 
-            // buttons 
+            // buttons
             str = '<button id="bgColorBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Change Chart Background</button>&nbsp&nbsp';
             str += '<button id="captionAlignBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Make Caption Text Left-Aligned</button>&nbsp&nbsp';
             str += '<button id="resetAttrBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Reset Attributes</button>';

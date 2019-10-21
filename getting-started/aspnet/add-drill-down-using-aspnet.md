@@ -5,13 +5,15 @@ heading: Adding Drill Down using ASP.NET
 chartPresent: true
 ---
 
-> ### FusionCharts.NET (BETA)
-We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
-> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
-> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
-> * All methods and properties are available in Visual Studio intellisense.
-> * ...and many more.
-> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+> ### FusionCharts.NET
+>
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
+>
+> - Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> - Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> - All methods and properties are available in Visual Studio intellisense.
+> - ...and many more.
+>   Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
 With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
@@ -19,16 +21,16 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 ### Features of the FusionCharts JavaScript Class
 
-* Automatically creates and shows a detailed descendant chart when you click on the corresponding data plot item linked in the parent chart
+- Automatically creates and shows a detailed descendant chart when you click on the corresponding data plot item linked in the parent chart
 
-* Clones all chart configuration settings from the parent chart to create the descendant charts
+- Clones all chart configuration settings from the parent chart to create the descendant charts
 
-* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink) function
-* Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
+- Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink) function
+- Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
-* Supports drill-down to an unlimited number of levels
+- Supports drill-down to an unlimited number of levels
 
-## Create drill down 
+## Create drill down
 
 To create drill-down charts follow the steps given below:
 
@@ -50,103 +52,126 @@ The JSON data to render the above chart:
 
 ```json
 {
-    "chart": {
-        "caption": "Top 3 Juice Flavors",
-        "subcaption": "Last year",
-        "xaxisname": "Flavor",
-        "yaxisname": "Amount (In USD)",
-        "numberprefix": "$",
-        "theme": "fusion",
-        "rotateValues": "0"
+  "chart": {
+    "caption": "Top 3 Juice Flavors",
+    "subcaption": "Last year",
+    "xaxisname": "Flavor",
+    "yaxisname": "Amount (In USD)",
+    "numberprefix": "$",
+    "theme": "fusion",
+    "rotateValues": "0"
+  },
+  "data": [
+    {
+      "label": "Apple",
+      "value": "810000",
+      "link": "newchart-xml-apple"
     },
-    "data": [{
-        "label": "Apple",
-        "value": "810000",
-        "link": "newchart-xml-apple"
-    }, {
-        "label": "Cranberry",
-        "value": "620000",
-        "link": "newchart-xml-cranberry"
-    }, {
-        "label": "Grapes",
-        "value": "350000",
-        "link": "newchart-xml-grapes"
-    }],
-    "linkeddata": [{
-        "id": "apple",
-        "linkedchart": {
-            "chart": {
-                "caption": "Apple Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "157000"
-            }, {
-                "label": "Q2",
-                "value": "172000"
-            }, {
-                "label": "Q3",
-                "value": "206000"
-            }, {
-                "label": "Q4",
-                "value": "275000"
-            }]
-        }
-    }, {
-        "id": "cranberry",
-        "linkedchart": {
-            "chart": {
-                "caption": "Cranberry Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "102000"
-            }, {
-                "label": "Q2",
-                "value": "142000"
-            }, {
-                "label": "Q3",
-                "value": "187000"
-            }, {
-                "label": "Q4",
-                "value": "189000"
-            }]
-        }
-    }, {
-        "id": "grapes",
-        "linkedchart": {
-            "chart": {
-                "caption": "Grapes Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "45000"
-            }, {
-                "label": "Q2",
-                "value": "72000"
-            }, {
-                "label": "Q3",
-                "value": "95000"
-            }, {
-                "label": "Q4",
-                "value": "108000"
-            }]
-        }
-    }]
+    {
+      "label": "Cranberry",
+      "value": "620000",
+      "link": "newchart-xml-cranberry"
+    },
+    {
+      "label": "Grapes",
+      "value": "350000",
+      "link": "newchart-xml-grapes"
+    }
+  ],
+  "linkeddata": [
+    {
+      "id": "apple",
+      "linkedchart": {
+        "chart": {
+          "caption": "Apple Juice - Quarterly Sales",
+          "subcaption": "Last year",
+          "numberprefix": "$",
+          "theme": "fusion",
+          "rotateValues": "0",
+          "plottooltext": "$label, $dataValue,  $percentValue"
+        },
+        "data": [
+          {
+            "label": "Q1",
+            "value": "157000"
+          },
+          {
+            "label": "Q2",
+            "value": "172000"
+          },
+          {
+            "label": "Q3",
+            "value": "206000"
+          },
+          {
+            "label": "Q4",
+            "value": "275000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cranberry",
+      "linkedchart": {
+        "chart": {
+          "caption": "Cranberry Juice - Quarterly Sales",
+          "subcaption": "Last year",
+          "numberprefix": "$",
+          "theme": "fusion",
+          "plottooltext": "$label, $dataValue,  $percentValue"
+        },
+        "data": [
+          {
+            "label": "Q1",
+            "value": "102000"
+          },
+          {
+            "label": "Q2",
+            "value": "142000"
+          },
+          {
+            "label": "Q3",
+            "value": "187000"
+          },
+          {
+            "label": "Q4",
+            "value": "189000"
+          }
+        ]
+      }
+    },
+    {
+      "id": "grapes",
+      "linkedchart": {
+        "chart": {
+          "caption": "Grapes Juice - Quarterly Sales",
+          "subcaption": "Last year",
+          "numberprefix": "$",
+          "theme": "fusion",
+          "rotateValues": "0",
+          "plottooltext": "$label, $dataValue,  $percentValue"
+        },
+        "data": [
+          {
+            "label": "Q1",
+            "value": "45000"
+          },
+          {
+            "label": "Q2",
+            "value": "72000"
+          },
+          {
+            "label": "Q3",
+            "value": "95000"
+          },
+          {
+            "label": "Q4",
+            "value": "108000"
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
 
@@ -179,7 +204,9 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
           &lt;/div&gt;
         &lt;/body&gt;
     &lt;/html&gt;
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -193,16 +220,18 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
         &lt;title&gt;FusionCharts - Drill Down Example&lt;/title&gt;
         &lt;!-- FusionCharts script tag --&gt;
         &lt;script type=&quot;text/javascript&quot; src=&quot;../../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
-        &lt;!-- End --&gt; 
+        &lt;!-- End --&gt;
     &lt;/head&gt;
     &lt;body&gt;
         Fusioncharts will render below
         &lt;div style=&quot;text-align:center&quot;&gt;
-            &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;           
+            &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
     &lt;/body&gt;
     &lt;/html&gt;
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -245,7 +274,9 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
             Literal1.Text = sales.Render();
         }
     }
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -268,7 +299,7 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
         Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
             ' This page demonstrates the ease of generating charts using FusionCharts.
             ' For this chart, we've used a predefined DrillDownSSData.json (contained in /Data/ folder)
-            ' Ideally, you would NOT use a physical data file. Instead you'll have 
+            ' Ideally, you would NOT use a physical data file. Instead you'll have
             ' your own ASP.NET scripts virtually relay the JSON / XML data document.
             ' For a head-start, we've kept this example very simple.
 
@@ -278,7 +309,9 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
             Literal1.Text = sales.Render()
         End Sub
     End Class
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 

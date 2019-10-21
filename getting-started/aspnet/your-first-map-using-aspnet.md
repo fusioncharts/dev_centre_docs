@@ -4,13 +4,15 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Map Using ASP.NET
 ---
 
-> ### FusionCharts.NET (BETA)
-We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
-> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
-> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
-> * All methods and properties are available in Visual Studio intellisense.
-> * ...and many more.
-> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+> ### FusionCharts.NET
+>
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
+>
+> - Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> - Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> - All methods and properties are available in Visual Studio intellisense.
+> - ...and many more.
+>   Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
 ## Overview
 
@@ -26,11 +28,11 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 To install the FusionCharts Suite, follow the steps below:
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+- Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
-* Copy the **FusionCharts.cs** or **FusionCharts.vb** class (C#/VB) file from `integrations > asp.net-cs >fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
+- Copy the **FusionCharts.cs** or **FusionCharts.vb** class (C#/VB) file from `integrations > asp.net-cs >fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
 
-* Include the **FusionCharts** theme file to apply the style to the maps.
+- Include the **FusionCharts** theme file to apply the style to the maps.
 
 The consolidated code is shown below:
 
@@ -44,14 +46,15 @@ The consolidated code is shown below:
 <div class='tab cdn-tab active'>
 <pre><code class="language-php">
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
 // Include FusionCharts maps file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
 
 // Include FusionCharts Theme file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -66,13 +69,14 @@ The consolidated code is shown below:
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
 </div>
 </div>
 
-That completes the installation of FusionCharts Suite and the `asp-net-wrapper`. 
+That completes the installation of FusionCharts Suite and the `asp-net-wrapper`.
 
 ## Create Your First Map
 
@@ -80,44 +84,42 @@ We will create a visualization using the World Map showing the average annual po
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for this map is represented in the table below:
+## Map data
 
-State|Entity Name|Value|
--|-|-
-North America|NA|82|
-South America|SA|2.04|
-Asia|AS|1.78|
-Europe|EU|40|
-Africa|AF|2.58|
-Australia|AU|1.30|
+The data for the above map is represented in the table below:
 
-## Convert Tabular Data into JSON Format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format.
+| State | Entity Name | Value |
+| ----- | ----------- | ----- ||
+| North America | NA | 82 |
+| South America | SA | 2.04 |
+| Asia | AS | 1.78 |
+| Europe | EU | 40 |
+| Africa | AF | 2.58 |
+| Australia | AU | 1.30 |
 
 In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column.
 
-However, when you convert the data into a format **(JSON** or **XML**) supported by FusionCharts, the entities are denoted by the `id` key in the `data` object.
+FusionCharts accepts data in **JSON** format in which the above entities are denoted by the `id` key in the `data` object.
 
-For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding id must be `AF` and not `AFR`.
+For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct ids of the maps you want to create.
+We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
-In this example, we will use the JSON format, as shown below:
+Following code is the JSON representation of the above table with the required attributes to render the above map.
 
-```
+```JSON
 {
     // Map Configuration
     "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        "labelsepchar": ": ",
-        "entityFillHoverColor": "#FFF9C4",
-        "theme": "fusion"
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
     },
-    // Aesthetics ranges synced with the slider
+    // Aesthetics; ranges synced with the slider
     "colorrange": {
         "minvalue": "0",
         "code": "#FFE0B2",
@@ -163,22 +165,21 @@ In this example, we will use the JSON format, as shown below:
         "showLabel": "1"
     }]
 }
-
 ```
 
 In the above JSON data:
 
-* Create the `chart` object to define and configure elements of the map.
+- Create the `chart` object to define the elements of the map.
 
-* Create the `color` array within the `colorRange` array and use the `color` attribute to sync data ranges with colors in the slider.
+- Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
-* Create the data array to define the `id` of the continents and their corresponding values along with configurations.
+- Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
 
-The `chart` object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the map.
+The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the map.
+Now that you have the data in JSON format, let's learn how to render the map.
 
 ## Render the Map
 
@@ -206,17 +207,17 @@ To render the map, follow the steps below:
 
 11. Create the map instance and set the following:
 
-    * Set the map type as `world`. Each map is represented with a unique alias. For California map, the alias is `california`. Find the complete list of map types with their respective aliases[ here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+    - Set the map type as `world`. Each map is represented with a unique alias. For California map, the alias is `california`. Find the complete list of map types with their respective aliases[ here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
-    * Set the map `id`.
+    - Set the map `id`.
 
-    * Set the `width` and `height` (in pixels).
+    - Set the `width` and `height` (in pixels).
 
-    * Set the container for the map.
+    - Set the container for the map.
 
-    * Set the `dataFormat` as **JSON**.
+    - Set the `dataFormat` as **JSON**.
 
-    * Embed the `json` data as the value of the `dataSource`.
+    - Embed the `json` data as the value of the `dataSource`.
 
 12. Finally, use a container using `<div>` to render the map.
 
@@ -238,8 +239,8 @@ using FusionCharts.Charts;
 
 public partial class firstmap : System.Web.UI.Page
 {
-    //Create colorRange class
-    //It will store Min range Max range and specific color code for each range
+//Create colorRange class
+//It will store Min range Max range and specific color code for each range
 
     class ColorRange
     {
@@ -361,8 +362,10 @@ public partial class firstmap : System.Web.UI.Page
         //render map
         Literal1.Text = MyFirstMap.Render();
     }
+
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class='tab vb-tab'>
@@ -524,7 +527,9 @@ public partial class firstmap : System.Web.UI.Page
     End Sub
 
     End Class
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -547,10 +552,10 @@ The HTML template is shown below:
         &lt;title&gt;fusioncharts&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt; 
-        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt; 
-        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script&gt; 
-        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt; 
+        &lt;script src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt; 
+        &lt;script src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt; 
+        &lt;script src=" https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script&gt; 
+        &lt;script src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt; 
             &lt;asp:Literal ID="Literal1" runat="server"&gt;Chart will appear here&lt;/asp:Literal&gt;
         &lt;/div&gt;
     &lt;/body&gt;
@@ -567,10 +572,10 @@ The HTML template is shown below:
         &lt;title&gt;fusioncharts&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
-       &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+       &lt;script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+        &lt;script src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
+        &lt;script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
                 &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
@@ -612,8 +617,8 @@ using FusionCharts.Charts;
 
 public partial class MapTest : System.Web.UI.Page
 {
-    //Create colorRange class
-    //It will store Min range Max range and specific color code for each range
+//Create colorRange class
+//It will store Min range Max range and specific color code for each range
 
     class ColorRange
     {
@@ -794,9 +799,11 @@ public partial class MapTest : System.Web.UI.Page
         //render map
         Literal1.Text = MyFirstMap.Render();
     }
+
 }
 
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class='tab vb-tab'>
@@ -1017,6 +1024,7 @@ Partial Class MapTest
 End Class
 
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -1043,16 +1051,18 @@ The HTML template is shown below:
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+        &lt;script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+        &lt;script src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
+        &lt;script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
     &lt;/body&gt;
 
     &lt;/html&gt;
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab vb-tab">
@@ -1060,23 +1070,24 @@ The HTML template is shown below:
     &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="MapTest.aspx.vb" Inherits="MapTest" %&gt;
 
 &lt;!DOCTYPE html&gt;
-    &lt;html xmlns="  http://www.w3.org/1999/xhtml" &gt;
-    &lt;head runat="server"&gt;
-        &lt;title&gt;fusioncharts&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-       &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt; 
-        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt; 
-        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script&gt; 
-        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt; 
-        &lt;form id="form1" runat="server"&gt;
-            &lt;div&gt;
-                &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-            &lt;/div&gt;
-        &lt;/form&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
+&lt;html xmlns=" http://www.w3.org/1999/xhtml" &gt;
+&lt;head runat="server"&gt;
+&lt;title&gt;fusioncharts&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;
+&lt;script src=" https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script&gt;
+&lt;script src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;form id="form1" runat="server"&gt;
+&lt;div&gt;
+&lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -1088,8 +1099,8 @@ That's it! The California map is ready.
 
 In case there is an error, and you are unable to see the map, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

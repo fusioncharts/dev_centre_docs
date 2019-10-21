@@ -15,7 +15,7 @@
             "tickValueDistance": "15",
             "theme": "fusion"
         },
-        "colorRange": { // color range to 
+        "colorRange": { // color range to
             "color": [{
                 "minValue": "0",
                 "maxValue": "50",
@@ -41,7 +41,7 @@
         },
         "alerts": {
             "alert": [{
-                // alert range 
+                // alert range
                 "minvalue": "70",
                 "maxvalue": "100",
                 // call JavaScript function
@@ -53,8 +53,7 @@
     },
     events: {
         "beforeRender": function(evtObj, argObj) {
-            var showAlert,
-                divElement = document.createElement('div');
+            var divElement = document.createElement('div');
             divElement.setAttribute('id', 'alertDiv');
             argObj.container.parentNode.insertBefore(divElement, argObj.container.nextSibling);
         },
@@ -63,13 +62,14 @@
                 var angGauge = evtObj.sender,
                     dispCon = document.getElementById("alertDiv");
                 //Hiding the table
-                dispCon.style.cssText = "display:none";
+                dispCon && (dispCon.style.cssText = "display:none");
                 prcnt = 0 + parseInt(Math.floor(Math.random() * 100), 10);
                 // data to be fed to the gauge
                 angGauge.feedData("value=" + prcnt);
 
             }, 5000); // feed data every 5 seconds
-            showAlert = function(msg) {
+
+            window.showAlert = function(msg) {
                 var dispCon = document.getElementById("alertDiv"),
                     str = "",
                     tdStyle = "border:1px solid;border-color:#cccccc;width:50%;font-weight: bold;font-size: 14px;padding:    3px;text-align:center",

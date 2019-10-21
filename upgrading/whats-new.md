@@ -4,63 +4,127 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.13.0.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.14.1.
 
-## Overlapped Column 2D and Bar 2D Chart
+## Scroll Bar 2D Chart
 
-FusionCharts v3.13 introduces overlapped bar and column charts, where you can have the bars and columns overlap with the base ones. This is very effective to show data with targets vs results.  
+FusionCharts Suite XT adds a scrolling feature to the bar 2D chart. The alias name to render the scrollable bar 2D chart is `scrollBar2D`. Set the value of `type` attribute to `scrollBar2D` to render a scrollable bar 2D chart.
 
-* Overlapped Column 2D Chart
-* Overlapped Bar 2D Chart
+A single-series scroll bar 2D chart looks like:
 
-The overlapped column 2D chart looks like:
+{% embed_chart standard-charts-scroll-charts-example-10.js %}
 
-{% embed_all whats-new-overlapped-chart-example-1.js %}
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-bar-2d-chart) to know more.
 
-The overlapped bar 2D chart looks like:
+## Scroll Stacked Bar 2D Chart
 
-{% embed_all whats-new-overlapped-chart-example-2.js %}
+FusionCharts Suite XT adds a scrolling feature to the stacked bar 2D chart. The alias name to render the scroll stacked bar 2D chart is `scrollStackedBar2D`. Set the value of `type` attribute to `scrollStackedBar2D` to render a scroll stacked bar 2D chart.
 
-## Spline and Spline area charts in Combination Chart
+A scroll stacked bar 2D chart looks like:
 
-Spline and Spline area charts can now be built as a part of combination charts. To define any one of the dataset to spline or spline area, set the `renderAs` attribute to `spline` or `splineArea` respectively.
+{% embed_chart standard-charts-scroll-charts-example-11.js %}
 
-A combination chart with spline and Spline Area as a part of it looks like:
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-stacked-bar-2d-chart) to know more.
 
-{% embed_all whats-new-combination-spline-chart-example-3.js %}
+## Scroll Multi-series Stacked Column 2D
 
-## Highlight effect in Multi-level Pie chart
+FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D chart. The alias name to render the scroll multi-series stacked column 2D chart is `scrollMSStackedColumn2D`. Set the value of `type` attribute to `scrollMSStackedColumn2D` to render a scroll multi-series stacked column 2D chart.
 
-`highlightParentPieSlices` and `highlightChildPieSlices` attributes have been introduced in multi-level pie chart to set the direction of the highlight effect of the plots when hovered. 
+A scroll multi-series stacked column 2D chart looks like:
 
-A multi-level pie chart with above attributes look like:
+{% embed_chart standard-charts-scroll-charts-example-12.js %}
 
-{% embed_all whats-new-multi-level-pie-example-4.js %}
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d) to know more.
 
-For the detailed description of the attributes, click [here](/chart-attributes/?chart=multilevelpie).
+## Scroll Multi-series Stacked Column 2D + Line Dual Y-Axis Chart
 
-## Configure Inner Radius of Multi-level Pie chart
+FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D + line dual y-axis chart. The alias name to render the scroll multi-series stacked column 2D + line dual y-axis chart is `scrollMSStackedColumn2DLineDy`. Set the value of `type` attribute to `scrollMSStackedColumn2DLineDy` to render the chart.
 
-`InnerRadius` attribute has been introduced to multi-level pie chart which is useful if you want to enforce one of your own values. This attribute explicitly sets the inner radius of the chart.
+A scroll multi-series stacked column 2D + line dual y-axis chart looks like:
 
-A multi-level pie chart with inner radius set to `10` looks like:
+{% embed_chart standard-charts-scroll-charts-example-13.js %}
 
-{% embed_all whats-new-multi-level-pie-example-5.js %}
+Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart) to know more.
 
-## Export Multi-level pie chart in CSV or XLS formats
+## Stacked Column 2D Line Dual Y-axis Chart
 
-In version 3.13.0, data from multi-level pie charts can be exported in CSV or XLS formats.
+FusionCharts Suite XT introduces a new combination chart, i.e., stacked column 2D line dual y-axis. The alias name to render the stacked column 2D line dual y-axis chart is `stackedcolumn2dlinedy`. Set the value of `type` attribute to `stackedcolumn2dlinedy` to render the chart.
 
-Refer to the GIF shown below:
+A stacked column 2D line dual y-axis chart looks like as shown below:
 
-![Multi-Level Pie Chart](/gif/export-feature-in-multi-level-pie.gif)
+{% embed_chart standard-charts-combination-chart-example-15.js %}
 
-## Set the Limits of Zoomline Chart
+Click [here](/chart-guide/standard-charts/combination-charts#stacked-column-2d-line-dual-y-axis-chart) to know more.
 
-In version 3.13.0, behavior for `maxPeakDataLimit` and `minPeakDataLimit` attributes in zoomline charts have been updated. Value greater than `maxPeakDataLimit` will be considered as peak data and is included in initial display of zoomline. Whereas value lower than `minPeakDataLimit` will also be included as peak data.
+## Stacked Area 2D Line Dual Y-axis Chart
 
-For the detailed desctiption of the attributes, click [here](/chart-guide/standard-charts/zoom-line-charts#customize-the-peak-data-limits).
+FusionCharts Suite XT introduces a new combination chart, i.e., stacked area 2D line dual y-axis. The alias name to render the stacked area 2D line dual y-axis chart is `stackedarea2dlinedy`. Set the value of `type` attribute to `stackedarea2dlinedy` to render the chart.
 
-The zoomline chart with above attributes look like:
+A stacked area 2D line dual y-axis chart looks like as shown below:
 
-{% embed_all whats-new-zoomline-chart-example-6.js %}
+{% embed_chart standard-charts-combination-chart-example-14.js %}
+
+Click [here](/chart-guide/standard-charts/combination-charts#stacked-area-2d-line-dual-y-axis-chart) to know more.
+
+## 3D Dual Y-axis Combination Chart
+
+FusionCharts Suite XT now allows you to render a dual y-axis combination chart in 3D. The alias name to render the dual y-axis combination chart in 3D is `mscombidy3d`. Set the value of `type` attribute to `mscombidy3d` to render the chart.
+
+A dual y-axis combination chart in 3D looks like as shown below:
+
+{% embed_chart standard-charts-combination-chart-example-13.js %}
+
+Click [here](/chart-guide/standard-charts/combination-charts#3d-dual-y-axis-combination-chart) to know more.
+
+## Export Chart Data in CSV Format
+
+FusionCharts Suite XT allows you to export chart data in CSV format.
+
+A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select the **Export as CSV** option to export the chart data.
+
+{% embed_chart exporting-as-image-and-pdf-introduction-example-1.js %}
+
+Click [here](/exporting-charts/using-fc-export-server/exporting-chart-data) to know more.
+
+## Display the Cumulative Sum of Stacked Area Chart
+
+FusionCharts Suite XT allows you to show the sum of the stacked area plots above the area plot. To show the sum of all the stacked data plots, set the `showSum` attribute to `1`.
+
+A stacked area 2D chart with a cumulative sum looks like:
+
+{% embed_chart display-the-cumulative-sum-of-stacked-area-chart.js %}
+
+Click [here](/chart-guide/standard-charts/stacked-charts#display-the-cumulative-sum) to know more.
+
+## Customize Data Value of an individual Data Plot
+
+FusionCharts also allows you to customize the properties of data value for an individual data plot. To customize all the data values in a chart, you have to specify the attributes under `chart` object. Whereas to customize a data value of a single plot, specify the attributes under `data` object.
+
+The column chart with customized data value look like as shown below:
+
+{% embed_chart chart-configurations-data-values-example-11.js %}
+
+Click [here](/chart-guide/chart-configurations/data-values#customize-data-value-of-an-individual-data-plot) to know more.
+
+## Reverse the Color Scale of the Linear Gauge
+
+FusionCharts allows you to reverse (right to left) the order of the color scale of the gauge.
+
+To reverse the order of the color scale of the linear gauge, set the value of `reverseScale` attribute to `1`.
+
+The gauge with reverse color scale looks like as shown below:
+
+{% embed_chart gauges-and-widgets-linear-example-28.js %}
+
+Click [here](/chart-guide/gauges-and-widgets/linear-gauge#reverse-the-order-of-the-color-scale) to know more.
+
+## Set Canvas Padding
+
+FusionCharts Suite XT allows you to add space between the canvas border and the particular side of the chart canvas. To do so, the following attributes are used:
+
+- `canvasLeftPadding`
+- `canvasRightPadding`
+- `canvasTopPadding`
+- `canvasBottomPadding`
+
+Click [here](/chart-guide/chart-configurations/chart-paddings-and-margins#set-canvas-padding) to know more.

@@ -8,12 +8,12 @@ In FusionCharts Suite XT you can manually set the cosmetics and functional attri
 
 FusionCharts Suite XT ships with the following predefined themes:
 
-* `fusion` (since v3.13.0)
-* `gammel` (since v3.13.0)
-* `candy` (since v3.13.0)
-* `zune`
-* `ocean`
-* `carbon`
+-  `fusion` (since v3.13.0)
+-  `gammel` (since v3.13.0)
+-  `candy` (since v3.13.0)
+-  `zune`
+-  `ocean`
+-  `carbon`
 
 This article focuses on how you can apply different themes to the chart at runtime using `angular-fusioncharts` component. Click any radio button, to see how the look and feel of the chart change with each theme.
 
@@ -157,10 +157,11 @@ In the above code:
 1. Add the JSON data within the `AppComponent` class.
 
 2. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+
+   -  Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   -  Set the width and height of the chart in pixels.
+   -  Set the `dataFormat` as JSON.
+   -  Embed the json data as the value of `dataSource`.
 
 3. Save the chart instance in `chartObj`.
 
@@ -206,8 +207,8 @@ Add the following code to `app.component.html`:
 </div>
 ```
 
-In the above code 
+In the above code
 
-* Create the `fusioncharts` directive in a template.
+-  Create the `fusioncharts` directive in a template.
 
-* Create the Radio buttons for **fusion**, **gammel**, **candy**, **zune**, **ocean** and **carbon** themes using `<input>`.
+-  Create the Radio buttons for **fusion**, **gammel**, **candy**, **zune**, **ocean** and **carbon** themes using `<input>`.

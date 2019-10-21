@@ -7,7 +7,7 @@ chartPresent: false
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project.
 
 In this page, we'll see how to install FusionCharts and render a map using the `react-fusionCharts` component.
 
@@ -60,19 +60,18 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     &lt;!-- Including babel --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts library to render maps --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script> 
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
     &lt;!-- Including react-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
@@ -80,7 +79,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     <ol>
         <li>1. Include the [React](https://reactjs.org/)core library.</li>
         <li>2. Include [Babel](https://babeljs.io/) for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>3. Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>3. Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
         <li>4. Include the FusionMap renderer. </li>
         <li>5. Include the map definition file.</li>
         <li>6. Include the `react-fusioncharts` module.</li>
@@ -113,36 +112,34 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 </div>
 </div>
 
-## Create you First map
+## Create Your First map
 
-In this section, we will create a visualization using the **World Map** showing the average annual population growth. 
+In this section, we will create a visualization using the **World Map** showing the average annual population growth.
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for this chart is represented in the table below:
+## Map data
 
-State|Entity Name|Value||
--|-|-|-
-North America|NA|82||
-South America|SA|2.04||
-Asia|AS|1.78||
-Europe|EU|40||
-Africa|AF|2.58||
-Australia|AU|1.30||
+The data for the above map is represented in the table below:
 
-## Convert tabular data into JSON format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format.
+| State         | Entity Name | Value |
+| ------------- | ----------- | ----- |
+| North America | NA          | 82    |
+| South America | SA          | 2.04  |
+| Asia          | AS          | 1.78  |
+| Europe        | EU          | 40    |
+| Africa        | AF          | 2.58  |
+| Australia     | AU          | 1.30  |
 
 In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column.
 
-However, when you convert the data into a format (JSON or XML) supported by FusionCharts, the entities are denoted by the `id` key in the `data` object.
+FusionCharts accepts data in **JSON** format in which the above entities are denoted by the `id` key in the `data` object.
 
 For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
- In this example, we will use the JSON format, as shown below:
+Following code is the JSON representation of the above table with the required attributes to render the above map.
 
 ```JSON
 {
@@ -204,19 +201,19 @@ We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/m
 }
 ```
 
-In the above JSON data: 
+In the above JSON data:
 
-* Create the `chart` object to define the elements of the map.
+- Create the `chart` object to define the elements of the map.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+- Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
-* Create the `data` array to define the id of the continents and their corresponding values along with configurations.
+- Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
 
 The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the map.
+Now that you have the data in JSON format, let's learn how to render the map.
 
 ## Render the map
 
@@ -236,19 +233,19 @@ To render the map follow the steps below:
 
 7. Include the FusionCharts theme file to apply style to the charts.
 
-8. Add the map renderer, map definition and the theme as a dependency to the core.
+8. Add the map renderer, map definition and theme as a dependency to the core.
 
-9. Store the map configurations as a JSON object. In this JSON object:
+9.  Store the map configurations as a JSON object. In this JSON object:
 
-    * Set the map as `world`. For World map, the alias is `world`. Find the complete list of map with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+- Set the map as `world`. For World map, the alias is `world`. Find the complete list of map with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
-    * Set the width and height (in pixels). 
+- Set the width and height (in pixels).
 
-    * Set the `dataFormat` as **json**.
+- Set the `dataFormat` as **json**.
 
-    * Embed the json data as the value of the `dataSource`.
+- Embed the json data as the value of the `dataSource`.
 
-10. Create the DOM element and pass the react-fusioncharts component directly to the **ReactDOM.render()** method.
+11. Create the DOM element and pass the react-fusioncharts component directly to the **ReactDOM.render()** method.
 
 The consolidated code is given below:
 
@@ -347,7 +344,7 @@ const chartConfigs = {
         }]
     }
 }
-// Step 8 - Creating the DOM element to pass the react-fusioncharts component 
+// Step 10 - Creating the DOM element to pass the react-fusioncharts component 
 class App extends React.Component {
   render() {
      return (
@@ -372,14 +369,14 @@ export default App
     &lt;!-- Including babel --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts library to render maps --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script> 
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
     &lt;!-- Including react-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
     &lt;script type="text/jsx"&gt;
     ReactFC.fcRoot(FusionCharts);
     const chartConfigs = {
@@ -566,9 +563,9 @@ export default App
 
 That's it! Your first map using `react-fusioncharts` is ready.
 
-## Render other maps 
+## Render other maps
 
-To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally. 
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally.
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
@@ -576,7 +573,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
 
-```
+```bash
 $ npm install fusionmaps
 ```
 
@@ -610,10 +607,10 @@ import California from 'fusionmaps/maps/fusioncharts.california';
 // Step 6 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 7 - Adding the map as dependency to the core fusioncharts
+// Step 7 - Adding the map and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
 
-// Step 8 - Creating the JSON object to store the map configurations
+// Step 9 - Creating the JSON object to store the map configurations
 const chartConfigs = {
     type: 'maps/california',
     width: '800',
@@ -647,7 +644,7 @@ const chartConfigs = {
         "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
     }
 };
-// Step 8 - Creating the DOM element to pass the react-fusioncharts component 
+// Step 10 - Creating the DOM element to pass the react-fusioncharts component 
 class App extends React.Component {
   render() {
      return (
@@ -672,14 +669,14 @@ export default App
     &lt;!-- Including babel --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts library to render maps --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script> 
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
     &lt;!-- Including react-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
     &lt;script type="text/jsx"&gt;
     ReactFC.fcRoot(FusionCharts);
     const chartConfigs = {
@@ -805,14 +802,14 @@ export default App
 </div>
 </div>
 
-That's it! The **California** map is ready. 
+That's it! The **California** map is ready.
 
 ## Problem rendering the chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

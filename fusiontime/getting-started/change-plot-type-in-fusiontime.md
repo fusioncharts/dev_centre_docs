@@ -4,7 +4,7 @@ description: This article outlines the steps to change the plot type.
 heading: Change Plot Type
 ---
 
-Plot refers to a line in a line chart, a column in the column chart or an area in the area chart. 
+Plot refers to a line in the line chart, a column in the column chart or an area in the area chart.
 
 In this article, we'll see how to change the [plot types](/fusiontime/fusiontime-component/plot-types-in-fusiontime) of the chart.
 
@@ -16,40 +16,41 @@ The chart is shown below:
 
 To change the plot type of the above chart change the code below in the `index.html` file:
 
-```
+```javascript
 let fusionDataStore = new FusionCharts.DataStore();
 let fusionTable = fusionDataStore.createDataTable(data, schema);
 
 new FusionCharts({
-    type: 'timeseries',
-	renderAt: 'container',
-	width: "95%",
-	height: 650,
-	dataSource: {
-        data: fusionTable,
-        chart: {
-        },
-        caption: {
-          text: 'Online Sales of a SuperStore in the US'
-        },
-        yaxis: {
-            "plot": {
-                "value": "Sales",
-                "type": "column"  
-            }
-        }
+  type: "timeseries",
+  renderAt: "container",
+  width: "95%",
+  height: 650,
+  dataSource: {
+    data: fusionTable,
+    chart: {},
+    caption: {
+      text: "Online Sales of a SuperStore in the US"
+    },
+    yaxis: {
+      plot: {
+        value: "Sales",
+        type: "column"
+      }
     }
-}).render()
+  }
+}).render();
 ```
 
 In the above code:
 
-* Create `plot` object for `y-axis` in `dataSource`.
+- Create `plot` object for `y-axis` in `dataSource`.
 
-* Set the `type` attribute to `column`.
+- Set the `type` attribute to `column`.
 
 The chart with the updated plot type is shown below:
 
 {% embed_ftChart online-sales-single-series-column-data-plot %}
+
+Click [here](https://jsfiddle.net/fusioncharts/dw4ntp5a/) to edit the above chart.
 
 FusionTime includes several options to update the plot type of the chart. To know more, click [here](/fusiontime/fusiontime-component/plot-types-in-fusiontime).

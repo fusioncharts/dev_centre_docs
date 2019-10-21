@@ -24,7 +24,7 @@
             "plotToolText": "<div>Sales : <b>$$value</b></div>",
             "targettooltext": "Target : <b>$$targetvalue</b>",
             "theme": "fusion",
-            "dataStreamURL": "dummy-url-abcdefg.php",
+            "dataStreamURL": "/dummy-url-abcdefg.php",
             "refreshInterval": "5"
         },
         "colorRange": {

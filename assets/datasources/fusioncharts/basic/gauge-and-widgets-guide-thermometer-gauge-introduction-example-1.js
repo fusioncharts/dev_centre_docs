@@ -52,9 +52,10 @@
     },
     "events": {
         "initialized": function(evt, arg) {
-            evt.sender.dataUpdate = setInterval(function() {
+         var chartRef = evt.sender;
+         chartRef.dataUpdate = setInterval(function() {
                 var value,
-                    prevTemp = evt.sender.getData(),
+                    prevTemp = chartRef.getData(),
                     mainTemp = (Math.random() * 10) * (-1),
                     diff = Math.abs(prevTemp - mainTemp);
 
@@ -65,10 +66,11 @@
                     value = prevTemp - diff;
                 }
 
-                evt.sender.feedData("&value=" + value);
+                chartRef.feedData("&value=" + value);
 
             }, 3000);
-            updateAnnotation = function(evtObj, argObj) {
+
+            chartRef.updateAnnotation = function(evtObj, argObj) {
                 var code,
                     chartObj = evtObj.sender,
                     val = chartObj.getData(),
@@ -87,10 +89,10 @@
             };
         },
         'renderComplete': function(evt, arg) {
-            updateAnnotation(evt, arg);
+            evt.sender.updateAnnotation(evt, arg);
         },
         'realtimeUpdateComplete': function(evt, arg) {
-            updateAnnotation(evt, arg);
+            evt.sender.updateAnnotation(evt, arg);
         },
         'disposed': function(evt, arg) {
             clearInterval(evt.sender.dataUpdate);

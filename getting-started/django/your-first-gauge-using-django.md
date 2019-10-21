@@ -16,11 +16,11 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 > The **FusionCharts Django** wrapper requires Python 2.7 or higher.
 
-* Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder.
+- Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder.
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+- Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
-* Include the FusionCharts theme file to apply the style to the charts.
+- Include the FusionCharts theme file to apply the style to the charts.
 
 The consolidated given below:
 
@@ -35,9 +35,9 @@ The consolidated given below:
 <pre><code class="language-php">
 {% load static %}
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 // Include FusionCharts Theme file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
@@ -69,78 +69,79 @@ The angular gauge is shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample have been defined using the following range.
+## Chart data
 
+The thresholds for the above sample is shown in the table below:
 
-Range|Color|Hex Code|
--|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
+| Range | Color | Hex Code |
+| ----- | ----- | -------- ||
+| 0-50 | Red | #F2726F |
+| 50-75 | Yellow | #FFC533 |
+| 75-100 | Green | #62B58F |
 
-So, any score less than 50 (considered bad) is presented in red. Any score between 50 and 75 (considered average) is presented in yellow. Any score above 75 (considered good) is presented in green.
+So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
-## Convert Tabular Data into JSON/XML Format
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
-
-```
+```json
 {
-    "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    "colorRange": {
-        "color": [
-            {
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            },
-            {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            },
-            {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }
-        ]
-    },
-    "dials": {
-        "dial": [
-            {
-                "value": "81"
-            }
-        ]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
-
 ```
+
 In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Specify the hex code of the color within the `color` array.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of the dial in an array.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
+Now that you have the data in JSON format, let's see how to render the chart.
 
 ## Render the Chart
 
@@ -169,19 +170,20 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 12. Enter data for the `dial` using an array, wherein each element is a JSON object having the `value` as keys.
 
 13. Create the gauge instance and set the following:
-    * Set the chart type as `angulargauge`. Find the complete list of gauge types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-    * Set the gauge `id`.
+    - Set the chart type as `angulargauge`. Find the complete list of gauge types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-    * Set the `width` and `height` (in pixels).
+    - Set the gauge `id`.
 
-    * Set the container for the chart.
+    - Set the `width` and `height` (in pixels).
 
-    * Set the `dataFormat` as JSON.
+    - Set the container for the chart.
 
-    * Embed the `json` data as the value of the `dataSource`.
+    - Set the `dataFormat` as JSON.
 
-    * Pass the gauge data to the `dataSource` parameter.
+    - Embed the `json` data as the value of the `dataSource`.
+
+    - Pass the gauge data to the `dataSource` parameter.
 
 14. Finally, use a container using `<div>` to render the gauge.
 
@@ -205,7 +207,7 @@ def myFirstWidget(request):
 
     # The `widgetConfig` dict contains key-value pairs of data for widget attribute
     widgetConfig = OrderedDict()
-    widgetConfig["caption"] = "Nordstorm's Customer Satisfaction Score for 2017"
+    widgetConfig["caption"] = "Nordstrom's Customer Satisfaction Score for 2017"
     widgetConfig["lowerLimit"] = "0"
     widgetConfig["upperLimit"] = "100"
     widgetConfig["showValue"] = "1"
@@ -241,7 +243,7 @@ def myFirstWidget(request):
     dataSource["dials"] = dialData
 
     # Iterate through the data in `dialValues` and insert into the `dialData["dial"]` list.
-    # The data for the `dial`should be in an array wherein each element of the 
+    # The data for the `dial`should be in an array wherein each element of the
     # array is a JSON object# having the `value` as keys.
     for i in range(len(dialValues)):
         dialData["dial"].append({
@@ -271,18 +273,19 @@ The HTML template of the above sample is shown below:
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;FC-python wrapper&lt;/title&gt;
-    {% load static %}
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
+&lt;title&gt;FC-python wrapper&lt;/title&gt;
+{% load static %}
+&lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% static "https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;div id="myFirstchart-container"&gt;{{ output|safe }}&lt;/div&gt;
+&lt;div id="myFirstchart-container"&gt;{{ output|safe }}&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -293,18 +296,19 @@ The HTML template of the above sample is shown below:
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;title&gt;FC-python wrapper&lt;/title&gt;
-    {% load static %}
-    &lt;script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
+&lt;title&gt;FC-python wrapper&lt;/title&gt;
+{% load static %}
+&lt;script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;div id="myFirstchart-container"&gt;{{ output|safe }}&lt;/div&gt;
+&lt;div id="myFirstchart-container"&gt;{{ output|safe }}&lt;/div&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -316,9 +320,8 @@ That's it! Your first gauge using the FusionCharts Django wrapper is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click <<here>> to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click <<here>> to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
-
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

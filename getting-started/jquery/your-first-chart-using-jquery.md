@@ -46,11 +46,11 @@ $ npm install fusioncharts --save
     &lt;!-- jQuery --&gt;
     &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
     &lt;!-- FusionCharts --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- jQuery-FusionCharts --&gt;
     &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
     &lt;!-- Fusion Theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -60,7 +60,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
 <div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="language-html">
 &lt;head&gt;
@@ -84,33 +84,34 @@ That completes the installation of FusionCharts and the `jquery-fusioncharts` pl
 
 ## Create your First Chart
 
-Let's create a Column 2D chart using the `jquery-fusioncharts` plugin showing the "Countries With Most Oil Reserves". 
+Let's create a Column 2D chart using the `jquery-fusioncharts` plugin showing the "Countries With Most Oil Reserves".
 
-FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 The Column 2D chart is shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-The data for the above chart is shown in the table below:
+To understand the chart components, click [here](/understanding-fusioncharts).
 
+## Chart data
 
-Country|No. of Oil Reserves||
--|-|-
-Venezuela|290||
-Saudi|260||
-Canada|180||
-Iran|140||
-Russia|115||
-UAE|100||
-US|30||
-China|30||
+The data to render the above chart is shown in the table below:
 
-## Convert tabular data into JSON format
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290K                |
+| Saudi     | 260K                |
+| Canada    | 180K                |
+| Iran      | 140K                |
+| Russia    | 115K                |
+| UAE       | 100K                |
+| US        | 30K                 |
+| China     | 30K                 |
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
-```javascript
+```json
 {
     // Chart Configuration
     "chart": {
@@ -150,17 +151,29 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
 
-In the above JSON data: 
+In the above JSON data:
 
-* Create the `chart` object to define the elements of the chart.
+- Create the `chart` object to define the elements of the chart.
 
-* Specify the `label` and `value` of each column within the `data` array.
+- Set the `caption` and `subcaption` of the chart.
+
+- Set the value of `xAxisName` attribute to **Country**(first column of the table).
+
+- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
+
+- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
+  
+- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
+
+- Set the `numberSuffix` attribute to set the unit of the values.
+
+- Set the `theme` attribute to apply the predefines themes to the chart.
 
 Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
-Now that you have converted the tabular data to JSON format, let's see how to render the chart.
+Now that you have the data in JSON format, let's see how to render the chart.
 
 ## Render the chart
 
@@ -277,9 +290,9 @@ $('document').ready(function () {
         &lt;!-- Include jQuery --&gt;
         &lt;script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts core library file --&gt;
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
         &lt;!-- Include fusion theme file --&gt;
-        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
         &lt;!-- Include fusioncharts jquery plugin --&gt;
         &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
     &lt;/head&gt;

@@ -1,7 +1,6 @@
 {
     type: 'hled',
     renderAt: 'chart-container',
-    id: 'myHLED',
     width: '300',
     height: '200',
     dataFormat: 'json',
@@ -23,7 +22,7 @@
             "useSameFillBgColor": "1",
 
             "chartBottomMargin": "20",
-            "dataStreamURL": "dummy-url-led-data.php",
+            "dataStreamURL": "/dummy-url-led-data.php",
             "refreshInterval": "5",
             "theme": "fusion"
         },

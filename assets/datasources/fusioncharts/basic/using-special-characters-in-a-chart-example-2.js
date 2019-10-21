@@ -1,10 +1,9 @@
-{ 
+{
     type: 'column2d',
     renderAt: 'chart-container2',
     width: '550',
     height: '350',
     dataFormat: 'json',
-    id: 'revenue-chart2',
     dataSource: {
         "chart": {
             "caption": "Harry's SuperMart",

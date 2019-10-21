@@ -34,7 +34,7 @@ The following points must be kept in mind while upgrading only a specific sub pr
 
   * __FusionCharts XT__ : If you are upgrading from an evaluation version of FusionCharts XT, you will need to copy the `fusioncharts.charts.js` and `fusioncharts.js` files from the `js` folder to your working directory and include or update that in your source code.
 
-  * __PowerCharts XT__ : In case, you are upgrading from an evaluation version of PowerCharts XT, you need to download the latest PowerCharts XT pack and copy `fusioncharts.charts.js` and `fusioncharts.js` files from the `js` folder to your working directory and include or update that in your source code.
+  * __PowerCharts XT__ : In case, you are upgrading from an evaluation version of PowerCharts XT, you need to download the latest PowerCharts XT pack and copy `fusioncharts.charts.js`, `fusioncharts.js` and `fusioncharts.powercharts.js` files from the `js` folder to your working directory and include or update that in your source code.
 
   * __FusionWidgets XT__ : Similarly, if you are upgrading from an evaluation version of FusionWidgets XT, you need to copy `fusioncharts.js`, `fusioncharts.widgets.js`, and `fusioncharts.gantt.js` files from the `js` folder to your working directory and include or update that in your source code.
 

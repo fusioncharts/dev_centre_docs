@@ -1,1470 +1,1442 @@
 [
-    {
-        "table": "Functional Attributes",
-        "attrs": [
-            {
-                "description": "This attribute gives you the option to control animation in your charts. If you do not want to animate any part of the chart, set this as 0.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "animation"
-            },
-            {
-                "description": "This attribute sets the animation duration, if `animation` is set to `1`. \n\nDefault value: 1 sec",
-                "range": "In seconds",
-                "type": "Number",
-	    		"Versionsince": "3.11.0",
-                "name": "animationDuration"
-            },
-            {
-                "description": "When enabled in auto mode, long data labels are truncated by adding ellipses to prevent them from overflowing the chart background. \n\n__Default value__: 1",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "useEllipsesWhenOverflow"
-            },
-            {
-                "description": "When you right click on the chart it shows a context menu. This attribute allows you to show or hide the &quot;Print&quot; option in the context menu.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showPrintMenuItem"
-            },
-            {
-                "description": "Using this attribute, you can set the tiling algorithm for the treemap chart. \n\n__Default value__: squarified",
-                "range": "`sliceanddice`, `squarified`",
-                "type": "Enum",
-                "versionsince": "3.10.0",
-                "name": "algorithm"
-            },
-            {
-                "description": "If you opt to choose `sliceanddice` algorithm, using `slidingMode` you can set different views for your chart. \n\nDefault value : alternate",
-                "range": "alternate, horizontal, vertical",
-                "type": "String",
-                "versionsince": "3.11.0",
-                "name": "slicingMode"
-            },
-            {
-                "description": "When this attribute is set to __0__, it hides the parent node and the available space is used up by the leaf nodes. \n\n__Default value__: 1",                
-                "range": "0/1",
-                "type": "Boolean",
-                "versionsince": "3.10.0",
-                "name": "showParent"
-            },
-            {
-                "description": "Using this attribute you can set the navigation bar which will either show the traversed path and will provide an ability to switch to any parent node in a click or a basic navigation bar which will only display the parent node.",
-                "range": "0/1",
-                "type": "Boolean",
-                "versionsince": "3.11.0",
-                "name": "showNavigationBar"
-            },
-            {
-                "description": "This attribute sets whether the child node label will be shown or hidden. \n\n__Default value__: 0 (hidden)",
-                "range": "0/1",
-                "type": "Boolean",
-                "versionsince": "3.10.1",
-                "name": "showChildLabels"
-            },
-            {
-                "description": "This attributes sets the level of the depth for the chart which will be displayed at any given point of time. \n\nDefault value : Maximum depth",
-                "range": "0 - nth level",
-                "type": "Integer",
-                "versionsince": "3.11.0",
-                "name": "maxDepth"
-            },
-            {
-                "description": "This attribute lets you enable/disable the highlight effect, in the form of a `fadeout`, for the data plots corresponding to a legend item. When this attribute is enabled and the mouse pointer is hovered over a legend item label, plots belonging to the other data series fadeout, by reducing their opacity.\n\n The fadeout effect can be customized by specifying the fadeout color and opacity using the `color` and `alpha` attributes. Eg. `fadeout|color=#ff0000, alpha=60`",
-                "range": "",
-                "type": "String",
-                "name": "plotHighlightEffect"
-            }
-        ],
-        "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show or hide the parent nodes, change the tiling algorithm, and so on."
-    },
-    {
-        "table": "Chart Message-related Attributes",
-        "path": "FusionCharts",
-        "attrs": [
-        	{
-                "description": "This attribute allows to set a custom font for all chart messages.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.5.0",
-                "name": "baseChartMessageFont"
-            },
-            {
-                "description": "This attribute allows to set a custom font size for all chart messages.",
-                "range": "In pixels",
-                "type": "Number",
-                "versionsince": "3.5.0",
-                "name": "baseChartMessageFontSize"
-            },
-            {
-                "description": "This attribute allows to set a custom font color for all chart messages.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.5.0",
-                "name": "baseChartMessageColor"
-            },
-            {
-                "description": "This attribute allows to set a custom horizontal alignment for all images displayed as chart messages. \n\nDefault value: middle",
-                "range": "left, middle, right",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "baseChartMessageImageHAlign"
-            },
-            {
-                "description": "This attribute allows to set a custom vertical alignment for all images displayed as chart messages. \n\nDefault value: middle",
-                "range": "top, middle, bottom",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "baseChartMessageImageVAlign"
-            },
-            {
-                "description": "This attribute allows to set a transparency for all images displayed as chart messages. \n\nDefault value: 100",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "baseChartMessageImageAlpha"
-            },
-            {
-                "description": "This attribute allows to set a scale for magnifying all images displayed as chart messages. \n\nDefault value: 100",
-                "range": "0-300",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "baseChartMessageImageScale"
-            },
-            {
-                "description": "This attribute allows to set the message to be displayed when a chart begins to load. To display an image as the chart message, prefix __I-__ to the image URL.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "loadMessage"
-            },
-            {
-                "description": "This attribute allows to set the font for the message displayed when a chart begins to load.",
-                "range": "Font Name",
-                "type": "String",
-                "versionsince": "3.5.0",
-                "name": "loadMessageFont"
-            },
-            {
-                "description": "This attribute allows to set the font size for the message displayed when a chart begins to load.",
-                "range": "In pixels",
-                "type": "Number",
-                "versionsince": "3.5.0",
-                "name": "loadMessageFontSize"
-            },
-            {
-                "description": "This attribute allows to set the font color for the message displayed when a chart begins to load.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.5.0",
-                "name": "loadMessageColor"
-            },
-            {
-                "description": "If an image is displayed as the chart `loadMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
-                "range": "left, middle, right",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "loadMessageImageHAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `loadMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
-                "range": "top, middle, bottom",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "loadMessageImageVAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `loadMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "loadMessageImageAlpha"
-            },
-            {
-                "description": "If an image is displayed as the chart `loadMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
-                "range": "0-300",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "loadMessageImageScale"
-            },
-            {
-                "description": "This attribute allows to set the message to be displayed when the specified chart type is not supported. To display an image as the chart message, prefix __I-__ to the image URL.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "typeNotSupportedMessage"
-            },
-            {
-                "description": "This attribute allows to set the font for the message displayed when the specified chart type is not supported.",
-                "range": "Font Name",
-                "type": "String",
-                "versionsince": "3.5.0",
-                "name": "typeNotSupportedMessageFont"
-            },
-            {
-                "description": "This attribute allows to set the font size for the message displayed when the specified chart type is not supported.",
-                "range": "In pixels",
-                "type": "Number",
-                "versionsince": "3.5.0",
-                "name": "typeNotSupportedMessageFontSize"
-            },
-            {
-                "description": "This attribute allows to set the font color for the message displayed when the specified chart type is not supported.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.5.0",
-                "name": "typeNotSupportedMessageColor"
-            },
-            {
-                "description": "If an image is displayed as the chart `typeNotSupportedMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
-                "range": "left, middle, right",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "typeNotSupportedMessageImageHAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `typeNotSupportedMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
-                "range": "top, middle, bottom",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "typeNotSupportedMessageImageVAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `typeNotSupportedMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "typeNotSupportedMessageImageAlpha"
-            },
-            {
-                "description": "If an image is displayed as the chart `typeNotSupportedMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
-                "range": "0-300",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "typeNotSupportedMessageImageScale"
-            },
-            {
-                "description": "This attribute allows to set the message to be displayed if an error is encountered while rendering the chart. To display an image as the chart message, prefix __I-__ to the image URL.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "renderErrorMessage"
-            },    
-            {
-                "description": "This attribute allows to set a font for the message displayed if an error is encountered while rendering the chart.",
-                "range": "Font Name",
-                "type": "String",
-                "versionsince": "3.5.0",
-                "name": "renderErrorMessageFont"
-            },
-            {
-                "description": "This attribute allows to set the font size for the message displayed if an error is encountered while rendering the chart.",
-                "range": "In pixels",
-                "type": "Number",
-                "versionsince": "3.5.0",
-                "name": "renderErrorMessageFontSize"
-            },
-            {
-                "description": "This attribute allows to set the font color for the message displayed if an error is encountered while rendering the chart.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.5.0",
-                "name": "renderErrorMessageColor"
-            },
-            {
-                "description": "If an image is displayed as the chart `renderErrorMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
-                "range": "left, middle, right",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "renderErrorMessageImageHAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `renderErrorMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
-                "range": "top, middle, bottom",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "renderErrorMessageImageVAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `renderErrorMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "renderErrorMessageImageAlpha"
-            },
-            {
-                "description": "If an image is displayed as the chart `renderErrorMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
-                "range": "0-300",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "renderErrorMessageImageScale"
-            },
-            {
-                "description": "This attribute allows to set the message to be displayed when chart data begins loading. To display an image as the chart message, prefix __I-__ to the image URL.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataLoadStartMessage"
-            },    
-            {
-                "description": "This attribute allows to set a font for the message displayed when chart data begins loading.",
-                "range": "Font Name",
-                "type": "String",
-                "versionsince": "3.5.0",
-                "name": "dataLoadStartMessageFont"
-            },
-            {
-                "description": "This attribute allows to set the font size for the message displayed when chart data begins loading.",
-                "range": "In pixels",
-                "type": "String",
-                "versionsince": "3.5.0",
-                "name": "dataLoadStartMessageFontSize"
-            },
-            {
-                "description": "This attribute allows to set the font color for the message displayed when chart data begins loading.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.5.0",
-                "name": "dataLoadStartMessageColor"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataLoadStartMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
-                "range": "left, middle, right",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataLoadStartMessageImageHAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataLoadStartMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
-                "range": "top, middle, bottom",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataLoadStartMessageImageVAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataLoadStartMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "dataLoadStartMessageImageAlpha"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataLoadStartMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
-                "range": "0-300",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "dataLoadStartMessageImageScale"
-            },
-            {
-                "description": "This attribute allows to set the message to be displayed if the data loaded for a chart is empty. To display an image as the chart message, prefix __I-__ to the image URL.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataEmptyMessage"
-            },
-            {
-                "description": "This attribute allows to set the font for the message displayed if the data loaded for a chart is empty",
-                "range": "Font Name",
-                "type": "String",
-                "versionsince": "3.5.0",
-                "name": "dataEmptyMessageFont"
-            },
-            {
-                "description": "This attribute allows to set the font size for the message displayed if the data loaded for a chart is empty.",
-                "range": "In pixels",
-                "type": "Number",
-                "versionsince": "3.5.0",
-                "name": "dataEmptyMessageFontSize"
-            },
-            {
-                "description": "This attribute allows to set the font color for the message displayed if the data loaded for a chart is empty.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.5.0",
-                "name": "dataEmptyMessageColor"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataEmptyMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
-                "range": "left, middle, right",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataEmptyMessageImageHAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataEmptyMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
-                "range": "top, middle, bottom",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataEmptyMessageImageVAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataEmptyMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "dataEmptyMessageImageAlpha"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataEmptyMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
-                "range": "0-300",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "dataEmptyMessageImageScale"
-            },
-            {
-                "description": "This attribute allows to set the message to be displayed if an error is encountered while loading chart data. To display an image as the chart message, prefix __I-__ to the image URL.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataLoadErrorMessage"
-            },    
-            {
-                "description": "This attribute allows to set a font for the message displayed if an error is encountered while loading chart data.",
-                "range": "Font Name",
-                "type": "String",
-                "versionsince": "3.5.0",
-                "name": "dataLoadErrorMessageFont"
-            },
-            {
-                "description": "This attribute allows to set the font size for the message displayed if an error is encountered while loading chart data.",
-                "range": "In pixels",
-                "type": "Number",
-                "versionsince": "3.5.0",
-                "name": "dataLoadErrorMessageFontSize"
-            },
-            {
-                "description": "This attribute allows to set the font color for the message displayed if an error is encountered while loading chart data.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.5.0",
-                "name": "dataLoadErrorMessageColor"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataLoadErrorMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
-                "range": "left, middle, right",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataLoadErrorMessageImageHAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataLoadErrorMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
-                "range": "top, middle, bottom",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataLoadErrorMessageImageVAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataLoadErrorMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "dataLoadErrorMessageImageAlpha"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataLoadErrorMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
-                "range": "0-300",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "dataLoadErrorMessageImageScale"
-            },
-            {
-                "description": "This attribute allows to set the message to be displayed if the data to be loaded for the chart is invalid. To display an image as the chart message, prefix __I-__ to the image URL.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataInvalidMessage"
-            },
-            {
-                "description": "This attribute allows to set the font for the message displayed if the specified chart data is invalid.",
-                "range": "Font Name",
-                "type": "String",
-                "versionsince": "3.5.0",
-                "name": "dataInvalidMessageFont"
-            },
-            {
-                "description": "This attribute allows to set the font size for the message displayed if the specified chart data is invalid.",
-                "range": "In pixels",
-                "type": "Number",
-                "versionsince": "3.5.0",
-                "name": "dataInvalidMessageFontSize"
-            },
-            {
-                "description": "This attribute allows to set the font color for the message displayed if the specified chart data is invalid.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.5.0",
-                "name": "dataInvalidMessageColor"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataInvalidMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
-                "range": "left, middle, right",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataInvalidMessageImageHAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataInvalidMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
-                "range": "top, middle, bottom",
-                "type": "String",
-                "versionsince": "3.7.0",
-                "name": "dataInvalidMessageImageVAlign"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataInvalidMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "dataInvalidMessageImageAlpha"
-            },
-            {
-                "description": "If an image is displayed as the chart `dataInvalidMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
-                "range": "0-300",
-                "type": "Number",
-                "versionsince": "3.7.0",
-                "name": "dataInvalidMessageImageScale"
-            }
-        ],
-        "description": "These attributes let you set and configure custom chart messages, using text as well as images. These attributes are supported in FusionCharts constructor (`FusionCharts({ })`)."
-    },
-    {
-        "table": "Chart Titles and Axis Names",
-        "attrs": [
-            {
-                "description": "Caption of the chart.",
-                "type": "String",
-                "name": "caption"
-            },
-            {
-                "description": "Sub-caption of the chart.",
-                "type": "String",
-                "name": "subCaption"
-            }
-        ],
-        "description": "Using these attributes, you can set the chart caption and sub-caption."
-    },
-    {
-        "table": "Chart Caption Cosmetics",
-        "attrs": [
-            {
-                "description": "Sets horizontal alignment of caption",
-                "range": "\"left\", \"center\", \"right\"",
-                "type": "String",
-                "name": "captionAlignment"
-            },
-            {
-                "description": "Sets whether caption should be on top of the data plot area",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "captionOnTop"
-            },
-            {
-                "description": "Sets the caption font size (in pixels)",
-                "range": "6 - 72",
-                "type": "Number",
-                "name": "captionFontSize"
-            },
-            {
-                "description": "Sets the sub-caption font size (in pixels)",
-                "range": "6 - 72",
-                "type": "Number",
-                "name": "subCaptionFontSize"
-            },
-            {
-                "description": "Sets the caption font family",
-                "range": "Font Name",
-                "type": "String",
-                "name": "captionFont"
-            },
-            {
-                "description": "Sets the sub-caption font family",
-                "range": "Font Name",
-                "type": "String",
-                "name": "subCaptionFont"
-            },
-            {
-                "description": "Sets the caption font color",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "captionFontColor"
-            },
-            {
-                "description": "Sets the sub-caption font color",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "subCaptionFontColor"
-            },
-            {
-                "description": "Sets whether the caption should be bold formatted",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "captionFontBold"
-            },
-            {
-                "description": "Sets whether the sub-caption should be bold formatted",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "subCaptionFontBold"
-            },
-            {
-                "description": "Sets whether the caption is aligned with the canvas (if set to __1__) or with the entire chart area (if set to __0__).",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "alignCaptionWithCanvas"
-            },
-            {
-                "description": "Sets the padding for the chart caption (in pixels) if the caption is not centre aligned. \n\nWill be ignored if caption is centre aligned.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "captionHorizontalPadding"
-            }
-        ],
-        "description": "These attributes let you configure the cosmetics of the chart caption and sub-caption."
-    },
-    {
-        "table": "Chart Cosmetics",
-        "attrs": [
-            {
-                "description": "Sets whether to show a border around the chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showBorder"
-            },
-            {
-                "description": "Sets the chart border color.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "borderColor"
-            },
-            {
-                "description": "Sets the chart border thickness.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "borderThickness"
-            },
-            {
-                "description": "Sets the chart border's transparency.",
-                "range": "0 - 100",
-                "type": "Number",
-                "name": "borderAlpha"
-            },
-            {
-                "description": "Sets the chart background color. You can set any hex color code as the value of this attribute. To specify a gradient as background color, separate the hex color codes of each color in the gradient using comma. Example: `#FF5904, #FFFFFF`.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "bgColor"
-            },
-            {
-                "description": "Sets the chart background transparency. If you have opted for gradient background, you need to set a list of alpha(s) separated by comma.",
-                "range": "0 - 100",
-                "type": "Number",
-                "name": "bgAlpha"
-            },
-            {
-                "description": "If you have opted for a gradient background, this attribute lets you set the ratio of each color constituent.",
-                "range": "0 - 100",
-                "type": "Number",
-                "name": "bgRatio"
-            },
-            {
-                "description": "Angle of the background color, in case of a gradient.",
-                "range": "0-360",
-                "type": "Number",
-                "name": "bgAngle"
-            },
-            {
-                "description": "To place any image (JPG/PNG/GIF) as background of the chart, enter the (path and) name of the background image. It should be in the same domain as the chart.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.2.",
-                "name": "bgImage"
-            },
-            {
-                "description": "Sets the background image transparency.",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.2.",
-                "name": "bgImageAlpha"
-            },
-            {
-                "description": "Helps you specify the mode in which the background image is to be displayed. \n\nPossibel values: \n__stretch__: Expands the image to fit the entire chart area, without maintaining original image constraints. \n__tile__: The image is repeated as a pattern on the entire chart area. \n__fit__: Fits the image proportionately on the chart area. \n__fill__: The entire chart area is proportionately filled with the image. \n__center__: The image is positioned at the center of the chart area. \n__none__: Default mode.",
-                "range": "stretch, tile, fit, fill, center, none",
-                "type": "String",
-                "versionsince": "3.2.1",
-                "name": "bgImageDisplayMode"
-            },
-            {
-                "description": "Sets the vertical alignment of the background image.",
-                "range": "left, center, right",
-                "type": "String",
-                "versionsince": "3.2.1",
-                "name": "bgImageValign"
-            },
-            {
-                "description": "Sets the horizontal alignment of the background image.",
-                "range": "left, center, right",
-                "type": "String",
-                "versionsince": "3.2.1",
-                "name": "bgImageHalign"
-            },
-            {
-                "description": "Sets the magnifying value for the background image. This attribute will only work when the attribute `bgImageDisplayMode` is set to __none__, __center__, or __tile__.",
-                "range": "0-300",
-                "type": "Number",
-                "versionsince": "3.2.1",
-                "name": "bgImageScale"
-            },
-            {
-                "description": "Lets you specify the URL to load an external logo (JPEG/PNG) to your chart. Due to cross domain security restrictions, it is advised to use a logo from the same domain name as your charts.",
-                "range": "URL",
-                "type": "String",
-                "name": "logoURL"
-            },
-            {
-                "description": "This attribute helps you set the amount of empty space that you want to put on the left side of your logo image. Nothing is rendered in this space.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "logoLeftMargin"
-            },
-            {
-                "description": "This attribute helps you set the amount of empty space that you want to put on top of your logo image. Nothing is rendered in this space.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "logoTopMargin"
-            },
-            {
-                "description": "Sets the logo position on the chart. \n\nPossible values: \n__TL__: Top-left \n__TR__: Top-right \n__BR__: Bottom right \n__BL__: Bottom left \n__CC__: Center of screen",
-                "range": "TL, TR, BL, BR, CC",
-                "type": "String",
-                "name": "logoPosition"
-            },
-            {
-                "description": "Sets the logo transparency.",
-                "range": "0 - 100",
-                "type": "Number",
-                "name": "logoAlpha"
-            },
-            {
-                "description": "Sets the magnifying scale of the externally loaded logo at run-time.",
-                "range": "0-300",
-                "type": "Number",
-                "name": "logoScale"
-            },
-            {
-                "description": "If you want to link the logo to an external URL, specify the link in this attribute. The link can be in the FusionCharts Link Format, allowing you to link to new windows, pop-ups, frames etc.",
-                "range": "Url",
-                "type": "String",
-                "name": "logoLink"
-            },
-            {
-                "description": "Sets the background color only for those nodes which are not leaf nodes. \n\n__Default value__: #E5E5E5",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.10.0",
-                "name": "defaultParentBgColor"
-            },
-            {
-                "description": "Groups all leaf nodes belonging to a parent node and visualizes them as masked units when hovered upon. \n\n__Default value__: 0",
-                "range": "0/1",
-                "type": "Boolean",
-                "versionsince": "3.10.0",
-                "name": "highlightParentsOnHover"
-            },
-            {
-                "description": "Sets the tooltip text rendered when the mouse pointer is hovered over the __Back to Top__ button, in the top-right corner of the chart. \n\n__Default value__: Back to Top",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.10.0",
-                "name": "btnResetChartTooltext"
-            },
-            {
-                "description": "Sets the tooltip text rendered when the mouse pointer is hovered over the __Back to Parent__ button, in the top-right corner of the chart. \n\n__Default value__: Back to Parent",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.10.0",
-                "name": "btnBackChartTooltext"
-            },
-            {
-                "description": "Sets the fill color for individual rectangles",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.10.0",
-                "name": "fillColor"
-            },
-            {
-                "description": "Lets you specify font color for the texts of the rectangles in set label.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.10.0",
-                "name": "fontcolor"
-            }
-        ],
-        "description": "The following attributes let you configure chart cosmetics like background color, background alpha, canvas color & alpha etc. "
-    },
-    {
-        "table": "Data Plot Cosmetics",
-        "attrs": [
-            {
-                "description": "Sets the border color for the node.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "plotBorderColor"
-            },
-            {
-                "description": "Sets the border thickness for the node.",
-                "range": "0-5",
-                "type": "Number",
-                "name": "plotBorderThickness"
-            }
-        ],
-        "description": "These attributes let you configure how your plot (columns, lines, area, pie or any data that you're plotting) would appear on the chart. If the plots can show borders, you can control the border properties using the attributes listed below. Or, if they support gradient fills, you can again configure various properties of the gradient using these attributes. Various other controls over plot cosmetics can be attained using this set of attributes. "
-    },
-    {
-        "table": "Data Label Cosmetics",
-        "attrs": [
-            {
-                "description": "Sets the line height, in pixels, for the parent node label. \n\n__Default value__: 12 ",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.10.0",
-                "name": "parentLabelLineHeight"
-            },
-            {
-                "description": "Sets whether the glow effect will enabled for the node labels. \n\n__Default value__: 1",
-                "range": "0/1",
-                "type": "Boolean",
-                "versionsince": "3.10.0",
-                "name": "labelGlow"
-            },
-            {
-                "description": "Sets the intensity of the glow effect for the node labels. \n\n__Default value__: 100",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.10.0",
-                "name": "labelGlowIntensity"
-            },
-            {
-                "description": "Sets the color of the glow effect for the node labels. \n\n__Default value__: #FFFFFF",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.10.0",
-                "name": "labelGlowColor"
-            },
-            {
-                "description": "Sets radius of the glow effect for the node labels. \n\n__Default value__: 2",
-                "range": "0-10",
-                "type": "Number",
-                "versionsince": "3.10.0",
-                "name": "labelGlowRadius"
-            },
-            {
-                "description": "Sets the font size for the node labels.",
-                "range": "6 - 72",
-                "type": "Number",
-                "name": "labelFontSize"
-            },
-            {
-                "description": "Sets the font family for the node labels.",
-                "range": "Font Names",
-                "type": "String",
-                "name": "labelFont"
-            },
-            {
-                "description": "Sets the font color for all the node labels.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "labelFontColor"
-            },
-            {
-                "description": "Sets whether the node labels will be bold formatted. \n\n__Default value__: 0",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "labelFontBold"
-            },
-            {
-                "description": "Sets whether the node labels will be formatted in italics. \n\n__Default value__: 0",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "labelFontItalic"
-            }
-        ],
-        "description": "These attributes let you configure the cosmetics of the node labels rendered on the chart."
-    },
-    {
-        "table": "Chart Padding & Margins",
-        "attrs": [
-            {
-                "description": "Lets you control the space (in pixels) between the sub-caption and top of the chart canvas. If the sub-caption is not defined, it controls the space between caption and top of chart canvas. If neither caption, nor sub-caption is defined, this padding does not come into play.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "captionPadding"
-            },
-            {
-                "description": "Amount of empty space that you want to put on the left side of your chart. Nothing is rendered in this space.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "chartLeftMargin"
-            },
-            {
-                "description": "Amount of empty space that you want to put on the right side of your chart. Nothing is rendered in this space.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "chartRightMargin"
-            },
-            {
-                "description": "Amount of empty space that you want to put on the top of your chart. Nothing is rendered in this space.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "chartTopMargin"
-            },
-            {
-                "description": "Amount of empty space that you want to put at the bottom of your chart. Nothing is rendered in this space.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "chartBottomMargin"
-            },
-            {
-                "description": "Padding of legend from right or bottom side of canvas",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "legendPadding"
-            },
-            {
-                "description": "Lets you control the space between the start of chart canvas and the start (x) of chart. In case of 2D charts, the canvas is the visible rectangular box. Using this attribute, you can control the amount of empty space between the chart left side and canvas left side. By default, the chart automatically calculates this space depending on the elements to be placed on the chart. However, if you want to over-ride this value with a higher value, you can use this attribute to specify the same. Please note that you cannot specify a margin lower than what has been calculated by the chart. This attribute is particularly useful, when you have multiple charts placed in a page and want all their canvas start position to align with each other - so in such a case, you can set same margin value (a value large enough that it does not get rejected by chart owing to it being lower than the calculated value) for all such charts in the page.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "canvasLeftMargin"
-            },
-            {
-                "description": "Like `canvasLeftMargin`, lets you set the space between end of canvas and end of chart.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "canvasRightMargin"
-            },
-            {
-                "description": "Like `canvasLeftMargin`, lets you set the space between top of canvas and top of chart.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "canvasTopMargin"
-            },
-            {
-                "description": "Like `canvasLeftMargin`, this attribute lets you set the space between bottom of canvas and bottom of chart.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "canvasBottomMargin"
-            },
-            {
-                "description": "Lets you configure the horizontal padding (space) between the parent rectangle and the logical container where children get plotted. \n\n__Default value__: 5",
-                "range": "In Pixels",
-                "type": "Number",
-                "versionsince": "3.10.0",
-                "name": "horizontalPadding"
-            },
-            {
-                "description": "Lets you configure the vertical padding (space) between the parent rectangle and the logical container where children get plotted. \n\n__Default value__: 5",
-                "range": "In Pixels",
-                "type": "Number",
-                "versionsince": "3.10.0",
-                "name": "verticalPadding"
-            }
-        ],
-        "description": "The following attributes help you control chart margins and paddings. FusionCharts Suite XT allows you manually customize the padding of various elements on the chart to allow advanced manipulation and control over chart visualization. Padding in FusionCharts Suite  XT is always defined in pixels, unless the attribute itself suggests some other scale (like `plotSpacePercent`, which configures the spacing using percentage values). You can also define the chart margins. Chart Margins refer to the empty space left on the top, bottom, left and right of the chart. That means, FusionCharts Suite  XT would not plot anything in that space. It is not necessary for you to specify any padding or margin values. FusionCharts Suite  XT automatically assumes the best values for the same, if you do not specify the same. "
-    },
-    {
-        "table": "Tooltip Attributes",
-        "attrs": [
-            {
-                "description": "Whether to show tool tip on chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showToolTip"
-            },
-            {
-                "description": "Background color for the tool tip.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "toolTipBgColor"
-            },
-            {
-                "description": "Font color for the tool-tip.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "toolTipColor"
-            },
-            {
-                "description": "Border color for tool tip.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "toolTipBorderColor"
-            },
-            {
-            	"description": "Sets the border transparency for tool tip.",
-                "range": "0 - 100",
-                "type": "NUmber",
-                "name": "tooltipBorderAlpha"	
-            },
-            {
-                "description": "The character specified as the value of this attribute separates the data label and data value displayed in the tool tip.",
-                "range": "",
-                "type": "String",
-                "name": "toolTipSepChar"
-            },
-            {
-                "description": "Specify custom text for the tooltip \n\n You can either specify a constant string as the tooltip text or you can use variable values from the data level by prefixing a __$__ to the attribute name, for example, __$name__, __$value__.",
-                "range": "",
-                "type": "String",
-                "name": "plottooltext"
-            }
-        ],
-        "description": "These attributes let you control the tool tip formatting."
-    },
-    {
-        "table": "Toolbar Attributes",
-        "attrs": [
-            {
-                "description": "Where to position the toolbar on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",
-                "range": "TL, TR, BL, BR, CC",
-                "type": "String",
-                "versionsince": "3.11.3",
-                "name": "toolbarPosition"
-            },
-            {
-                "description": "Sets the toolbox position on the chart with respect to x-axis.",
-                "range": "",
-                "type": "Number",
-                "versionsince": "3.11.3",
-                "name": "toolbarX"
-            },
-            {
-                "description": "Sets the toolbox position on the chart with respect to y-axis.",
-                "range": "",
-                "type": "Number",
-                "versionsince": "3.11.3",
-                "name": "toolbarY"
-            },
-            {
-                "description": "Sets the horizontal alignment of the toolbar on the chart.",
-                "range": "Left, Right",
-                "type": "String",
-                "versionsince": "3.11.3",
-                "name": "toolbarHAlign"
-            },
-            {
-                "description": "Sets the vertical alignment of the toolbar on the chart",
-                "range": "Top, Bottom",
-                "type": "String",
-                "versionsince": "3.11.3",
-                "name": "toolbarVAlign"
-            },
-            {
-                "description": "Sets the color of the toolbar buttons.",
-                "range": "Any (color code without the # prefix)",
-                "type": "Color",
-                "name": "toolbarButtonColor"
-            },
-            {
-                "description": "Enables/disables display of tooltips for toolbar buttons.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showToolBarButtonTooltext"
-            },
-            {
-                "description": "You can change the scale of the toolbar by specifying a value for this attribute.",
-                "range": "",
-                "type": "Number",
-                "name": "toolbarButtonScale"
-            },
-            {
-                "description": "You can reverse the order in which the toolbar icons are rendered using this attribute.",
-                "range": "0/1",
-                "type": "Boolean",
-                "versionsince": "3.12.1",
-                "name": "reverseToolbarIcons"
-            }
-        ],
-        "description": "Using this set of attributes, you can customize the toolbar on the chart. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping."
-    },
-    {
-        "table": "Attributes for Exporting Charts",
-        "attrs": [
-            {
-                "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLS.  \n\n__Default value__: 0",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "exportEnabled"
-            },
-            {
-                "description": "In case of server-side exporting, the action specifies whether the exported image will be sent back to client as download, or whether it'll be saved on the server. \n\n__Default value__: download",
-                "range": "'save' or 'download'",
-                "type": "String",
-                "name": "exportAction"
-            },
-            {
-                "description": "In case of server side exporting, this refers to the path of the server-side export handler (the ready-to-use scripts that we provide).",
-                "range": "",
-                "type": "String",
-                "name": "exportHandler"
-            },
-            {
-                "description": "Lets you configure what output formats to allow for export of chart, in the export context menu, and also customize the label for each menu item. The attribute value should be a pipe (&#124;) delimited separated key-value pair. Example: `exportFormats: 'PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File'`",
-                "range": "",
-                "type": "String",
-                "name": "exportFormats"
-            },
-            {
-                "description": "This attribute when set to __1__, enables the client-side export feature.  \n\n__Default value__: 0",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "exportAtClientSide"
-            },
-            {
-                "description": "Whether the menu items related to export (e.g., Save as JPEG etc.) will appear in the context menu of chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "exportShowMenuItem"
-            },
-            {
-                "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
-                "range": "'_self' or '_blank'",
-                "type": "String",
-                "name": "exportTargetWindow"
-            },
-            {
-                "description": "Using this attribute you can specify the name (excluding the extension) of the output (export) file.",
-                "range": "",
-                "type": "String",
-                "name": "exportFileName"
-            }
-        ],
-        "description": "These attributes allow you to control the saving of chart as image, SVG or XLS."
-    },
-    {
-        "table": "Data Plot Hover Effects",
-        "attrs": [
-            {
-                "description": "Whether to enable hover effect on charts for all elements",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showHoverEffect"
-            },
-            {
-                "description": "Whether to enable hover effect on charts for data plots (e.g., column, pie) only",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "plotHoverEffect"
-            },
-            {
-                "description": "Specifies the hover color for the data plots",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "plotFillHoverColor"
-            },
-            {
-                "description": "Specifies the hover alpha for data plots",
-                "range": "1 - 100",
-                "type": "Number",
-                "name": "plotFillHoverAlpha"
-            }
-        ],
-        "description": "If you wish to show an effect on the data plot (column, line anchor, pie etc.) when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."
-    },
-    {
-        "table": "Legend Properties",
-        "attrs": [
-            {
-                "description": "Sets whether to show legend on the chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showLegend"
-            },
-            {
-                "description": "Sets whether legend keys should be bold formatted.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "legendItemFontBold"
-            },
-            {
-                "description": "Sets the legend item font",
-                "range": "Font Name",
-                "type": "String",
-                "name": "legendItemFont"
-            },
-            {
-                "description": "Sets the legend item font size",
-                "range": "6 - 72",
-                "type": "Number",
-                "name": "legendItemFontSize"
-            },
-            {
-                "description": "Sets the legend item font color",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "legendItemFontColor"
-            },
-            {
-                "description": "Enables to set a caption for the entire legend",
-                "range": " ",
-                "type": "String",
-                "name": "legendCaption"
-            },
-            {
-                "description": "Sets the legend caption horizontal alignment .",
-                "range": "\"left\", \"center\", \"right\"",
-                "type": "String",
-                "name": "legendCaptionAlignment"
-            },
-            {
-                "description": "Sets whether legend caption should be bold formatted",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "legendCaptionFontBold"
-            },
-            {
-                "description": "Sets the legend caption font",
-                "range": "Font Name",
-                "type": "String",
-                "name": "legendCaptionFont"
-            },
-            {
-                "description": "Sets the legend caption font size",
-                "range": "6 - 72",
-                "type": "Number",
-                "name": "legendCaptionFontSize"
-            },
-            {
-                "description": "Sets the legend caption font color",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "legendCaptionFontColor"
-            },
-            {
-                "description": "Sets the legend position on the chart. The legend can be plotted at two positions on the chart - below (__BOTTOM__) the chart and to the right (__RIGHT__) of the chart.",
-                "range": "BOTTOM or RIGHT",
-                "type": "String",
-                "name": "legendPosition"
-            },
-            {
-                "description": "Sets the legend background color.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "legendBgColor"
-            },
-            {
-                "description": "Sets the legend background transparency.",
-                "range": "0 - 100",
-                "type": "Number",
-                "name": "legendBgAlpha"
-            },
-            {
-                "description": "Sets the legend border color.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "legendBorderColor"
-            },
-            {
-                "description": "Sets the legend border thickness.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "legendBorderThickness"
-            },
-            {
-                "description": "Sets the legend border's transparency.",
-                "range": "0 - 100",
-                "type": "Number",
-                "name": "legendBorderAlpha"
-            },
-            {
-                "description": "Sets whether to show a shadow for legend.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "legendShadow"
-            },
-            {
-                "description": "Sets whether the legend will be drag-able. If set to __1__, end viewers of the chart can drag the legend around on the chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "legendAllowDrag"
-            },
-            {
-                "description": "Sets the color of the gradient legend scale.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "legendScaleLineColor"
-            },
-            {
-                "description": "Sets the transparency of the gradient legend scale.",
-                "range": "0 - 100",
-                "type": "NUmber",
-                "name": "legendScaleLineAlpha"
-            },
-            {
-                "description": "Sets the thickness of the gradient legend scale.",
-                "range": "0-5",
-                "type": "Number",
-                "name": "legendScaleLineThickness"
-            },
-            {
-                "description": "Sets color for the gradient legend's axis border.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "versionsince": "3.11.0",
-                "name": "legendaxisbordercolor"
-            },
-            {
-                "description": "Sets transparency for the gradient legend's axis border.",
-                "range": "0 - 100",
-                "type": "Number",
-                "versionsince": "3.11.0",
-                "name": "legendaxisborderalpha"
-            }
-        ],
-        "description": "In multi-series charts, the series name of each data-set shows up in the legend of the chart. If you do not need the legend, you can opt to hide the same. Also, the legend can be placed at the bottom of the chart or to the right of the chart. Using the attributes below, you can configure the functional and cosmetic properties of the legend. "
-    },
-    {
-        "table": "Font Properties",
-        "attrs": [
-            {
-                "description": "Sets the font face (family) for all the text (data labels, values etc.) on chart. If you specify the `outCnvBaseFont` attribute also, then this attribute controls only the font face of the text within the chart canvas bounds.",
-                "range": "Font Name",
-                "type": "String",
-                "name": "baseFont"
-            },
-            {
-                "description": "Sets the base font size for all the text that lies within the chart canvas.",
-                "range": "6 - 72",
-                "type": "Number",
-                "name": "baseFontSize"
-            },
-            {
-                "description": "Sets the base font color for all the text that lies within the chart canvas.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "baseFontColor"
-            },
-            {
-                "description": "Sets the base font family for all the text that lies outside the chart canvas.",
-                "range": "Font Name",
-                "type": "String",
-                "name": "outCnvBaseFont"
-            },
-            {
-                "description": "Sets the base font size for all the text that lies outside the chart canvas.",
-                "range": "6 - 72",
-                "type": "Number",
-                "name": "outCnvBaseFontSize"
-            },
-            {
-                "description": "Sets the base font color for all the text that lies outside the chart canvas..",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "outCnvBaseFontColor"
-            }
-        ],
-        "description": "Using the attributes below, you can define the generic font properties for all the text on the chart. These attributes allow you a high level control over font properties. If you intend to specify font properties for individual chart elements (like Caption, sub-caption etc.), you'll need to use the Styles feature of PowerCharts XT. Using Styles, you can also specify advanced font properties like Bold, Italics, HTML Mode etc. "
-    },
-    {
-        "table": "The data Object",
-        "path": "data",
-        "attrs": [
-            {
-                "description": "Sets the label for a node. \n\n __Note__: The `label` attribute replaces the `name` attribute. Previously, either one of the attributes could be used to set the label. Support for the `name` attribute has been discontinued since v3.10.0.",
-                "range": "",
-                "type": "String",
-                "name": "label"
-            },
-            {
-                "description": "Sets the value and maps the area of the rectangle (node).",
-                "range": "",
-                "type": "Number",
-                "name": "value"
-            },
-            {
-                "description": "Sets the secondary value and maps the color of the rectangle (node).",
-                "range": "",
-                "type": "Number",
-                "versionsince": "3.10.0",
-                "name": "sValue"
-            },
-            {
-                "description": "Sets the fill color for a node",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "fillcolor"
-            },
-            {
-                "description": "Sets the font color for a node label",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "fontColor"
-            }
-        ],
-        "description": "In single-series charts, each instance of the `data` object represents a data value to be plotted on the chart. For a single-series chart, one instance of the `data` object looks as shown in the example below:\n\n<pre class=\"language-javascript\"><code>\n\"data\"[{\n\t\t\"label\": \"Jan\",\n\t\t\"value\": \"10000\"\n\t}]\n</code></pre>\n\nThe following attributes of the `data` object are used to set and configure data values for the treemap chart."
-    },
-    {
-        "table": "The colorRange Object",
-        "path": "colorRange",
-        "attrs": [
-            {
-                "description": "Sets the lower limit label for the gradient scale.",
-                "range": "",
-                "type": "String",
-                "name": "startLabel"
-            },
-            {
-                "description": "Sets the upper limit label for the gradient scale.",
-                "range": "",
-                "type": "String",
-                "name": "endLabel"
-            },
-            {
-                "description": "Sets whether the gradient legend will be displayed.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "gradient"
-            },
-            {
-                "description": "Sets whether the data values will be rendered in percentage.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "mapByPercent"
-            },
-            {
-                "description": "Sets the minimum value or the lower limit of the numeric range and the gradient scale.",
-                "range": "",
-                "type": "Number",
-                "name": "minValue"
-            }
-        ],
-        "description": "Attributes of the `colorRange` object for the treemap chart are used to define the type of legend, the lower limit of the scale, and the start and end labels. Note that the `colorRange` object is not used to collectively configure all ranges; the `color` object (child of the `colorRange` object) is used to do that."
-    },
-    {
-        "table": "The color Object",
-        "path": "color",
-        "attrs": [
-            {
-                "description": "Sets the color for a numeric range.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "code"
-            },
-            {
-                "description": "Sets the label for a numeric range. The label appears on the gradient scale. \n\n __Note__: The `label` attribute replaces the `name` attribute. Previously, either one of the attributes could be used to set the label. Support for the `name` attribute has been discontinued since v3.10.0.",
-                "range": "",
-                "type": "String",
-                "name": "label"
-            },
-            {
-                "description": "Sets the upper limit of a numeric range.",
-                "range": "",
-                "type": "Number",
-                "name": "maxValue"
-            },
-            {
-                "description": "Sets the lower limit of a numeric range.",
-                "range": "",
-                "type": "Number",
-                "name": "minValue"
-            }
-        ],
-        "description": "The attributes of the `color` object, child of the `colorRange` object, are used to configure individual numeric ranges for categorizing the treemap chart nodes."
-    }
+  {
+    "table": "Functional Attributes",
+    "attrs": [
+      {
+        "description": "This attribute gives you the option to control animation in your charts. If you do not want to animate any part of the chart, set this as 0.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "animation"
+      },
+      {
+        "description": "This attribute sets the animation duration of the chart. `animationDuration` attribute is applicable only if animation of the chart is enabled. \n\nDefault value: 1 sec",
+        "range": "In seconds",
+        "type": "Number",
+        "Versionsince": "3.11.0",
+        "name": "animationDuration"
+      },
+      {
+        "description": "When enabled in auto mode, long data labels are truncated by adding ellipses to prevent them from overflowing the chart background. \n\n__Default value__: 1",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "useEllipsesWhenOverflow"
+      },
+      {
+        "description": "When you right click on the chart it shows a context menu. This attribute allows you to show or hide the &quot;Print&quot; option in the context menu.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showPrintMenuItem"
+      },
+      {
+        "description": "Using this attribute, you can set the tiling algorithm for the treemap chart. \n\n__Default value__: squarified",
+        "range": "`sliceanddice`, `squarified`",
+        "type": "Enum",
+        "versionsince": "3.10.0",
+        "name": "algorithm"
+      },
+      {
+        "description": "If you opt to choose `sliceanddice` algorithm, using `slicingMode` you can set different views for your chart. \n\nDefault value : alternate",
+        "range": "alternate, horizontal, vertical",
+        "type": "String",
+        "versionsince": "3.11.0",
+        "name": "slicingMode"
+      },
+      {
+        "description": "When this attribute is set to __0__, it hides the parent node and the available space is used up by the leaf nodes. \n\n__Default value__: 1",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.10.0",
+        "name": "showParent"
+      },
+      {
+        "description": "Using this attribute you can set the navigation bar which will either show the traversed path and will provide an ability to switch to any parent node in a click or a basic navigation bar which will only display the parent node.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.11.0",
+        "name": "showNavigationBar"
+      },
+      {
+        "description": "This attribute sets whether the child node label will be shown or hidden. \n\n__Default value__: 0 (hidden)",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.10.1",
+        "name": "showChildLabels"
+      },
+      {
+        "description": "This attributes sets the level of the depth for the chart which will be displayed at any given point of time. \n\nDefault value : Maximum depth",
+        "range": "0 - nth level",
+        "type": "Integer",
+        "versionsince": "3.11.0",
+        "name": "maxDepth"
+      },
+      {
+        "description": "This attribute lets you enable/disable the highlight effect, in the form of a `fadeout`, for the data plots corresponding to a legend item. When this attribute is enabled and the mouse pointer is hovered over a legend item label, plots belonging to the other data series fadeout, by reducing their opacity.\n\n The fadeout effect can be customized by specifying the fadeout color and opacity using the `color` and `alpha` attributes. Eg. `fadeout|color=#ff0000, alpha=60`",
+        "range": "",
+        "type": "String",
+        "name": "plotHighlightEffect"
+      }
+    ],
+    "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show or hide the parent nodes, change the tiling algorithm, and so on."
+  },
+  {
+    "table": "Chart Message-related Attributes",
+    "path": "FusionCharts",
+    "attrs": [
+      {
+        "description": "This attribute allows to set a custom font for all chart messages.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "baseChartMessageFont"
+      },
+      {
+        "description": "This attribute allows to set a custom font size for all chart messages.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "baseChartMessageFontSize"
+      },
+      {
+        "description": "This attribute allows to set a custom font color for all chart messages.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "baseChartMessageColor"
+      },
+      {
+        "description": "This attribute allows to set a custom horizontal alignment for all images displayed as chart messages. \n\nDefault value: middle",
+        "range": "left, middle, right",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "baseChartMessageImageHAlign"
+      },
+      {
+        "description": "This attribute allows to set a custom vertical alignment for all images displayed as chart messages. \n\nDefault value: middle",
+        "range": "top, middle, bottom",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "baseChartMessageImageVAlign"
+      },
+      {
+        "description": "This attribute allows to set a transparency for all images displayed as chart messages. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "baseChartMessageImageAlpha"
+      },
+      {
+        "description": "This attribute allows to set a scale for magnifying all images displayed as chart messages. \n\nDefault value: 100",
+        "range": "0-300",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "baseChartMessageImageScale"
+      },
+      {
+        "description": "This attribute allows to set the message to be displayed when a chart begins to load. To display an image as the chart message, prefix __I-__ to the image URL.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "loadMessage"
+      },
+      {
+        "description": "This attribute allows to set the font for the message displayed when a chart begins to load.",
+        "range": "Font Name",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "loadMessageFont"
+      },
+      {
+        "description": "This attribute allows to set the font size for the message displayed when a chart begins to load.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "loadMessageFontSize"
+      },
+      {
+        "description": "This attribute allows to set the font color for the message displayed when a chart begins to load.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "loadMessageColor"
+      },
+      {
+        "description": "If an image is displayed as the chart `loadMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
+        "range": "left, middle, right",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "loadMessageImageHAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `loadMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
+        "range": "top, middle, bottom",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "loadMessageImageVAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `loadMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "loadMessageImageAlpha"
+      },
+      {
+        "description": "If an image is displayed as the chart `loadMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
+        "range": "0-300",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "loadMessageImageScale"
+      },
+      {
+        "description": "This attribute allows to set the message to be displayed when the specified chart type is not supported. To display an image as the chart message, prefix __I-__ to the image URL.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "typeNotSupportedMessage"
+      },
+      {
+        "description": "This attribute allows to set the font for the message displayed when the specified chart type is not supported.",
+        "range": "Font Name",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "typeNotSupportedMessageFont"
+      },
+      {
+        "description": "This attribute allows to set the font size for the message displayed when the specified chart type is not supported.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "typeNotSupportedMessageFontSize"
+      },
+      {
+        "description": "This attribute allows to set the font color for the message displayed when the specified chart type is not supported.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "typeNotSupportedMessageColor"
+      },
+      {
+        "description": "If an image is displayed as the chart `typeNotSupportedMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
+        "range": "left, middle, right",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "typeNotSupportedMessageImageHAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `typeNotSupportedMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
+        "range": "top, middle, bottom",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "typeNotSupportedMessageImageVAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `typeNotSupportedMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "typeNotSupportedMessageImageAlpha"
+      },
+      {
+        "description": "If an image is displayed as the chart `typeNotSupportedMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
+        "range": "0-300",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "typeNotSupportedMessageImageScale"
+      },
+      {
+        "description": "This attribute allows to set the message to be displayed if an error is encountered while rendering the chart. To display an image as the chart message, prefix __I-__ to the image URL.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "renderErrorMessage"
+      },
+      {
+        "description": "This attribute allows to set a font for the message displayed if an error is encountered while rendering the chart.",
+        "range": "Font Name",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "renderErrorMessageFont"
+      },
+      {
+        "description": "This attribute allows to set the font size for the message displayed if an error is encountered while rendering the chart.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "renderErrorMessageFontSize"
+      },
+      {
+        "description": "This attribute allows to set the font color for the message displayed if an error is encountered while rendering the chart.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "renderErrorMessageColor"
+      },
+      {
+        "description": "If an image is displayed as the chart `renderErrorMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
+        "range": "left, middle, right",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "renderErrorMessageImageHAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `renderErrorMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
+        "range": "top, middle, bottom",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "renderErrorMessageImageVAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `renderErrorMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "renderErrorMessageImageAlpha"
+      },
+      {
+        "description": "If an image is displayed as the chart `renderErrorMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
+        "range": "0-300",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "renderErrorMessageImageScale"
+      },
+      {
+        "description": "This attribute allows to set the message to be displayed when chart data begins loading. To display an image as the chart message, prefix __I-__ to the image URL.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataLoadStartMessage"
+      },
+      {
+        "description": "This attribute allows to set a font for the message displayed when chart data begins loading.",
+        "range": "Font Name",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "dataLoadStartMessageFont"
+      },
+      {
+        "description": "This attribute allows to set the font size for the message displayed when chart data begins loading.",
+        "range": "In pixels",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "dataLoadStartMessageFontSize"
+      },
+      {
+        "description": "This attribute allows to set the font color for the message displayed when chart data begins loading.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "dataLoadStartMessageColor"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataLoadStartMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
+        "range": "left, middle, right",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataLoadStartMessageImageHAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataLoadStartMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
+        "range": "top, middle, bottom",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataLoadStartMessageImageVAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataLoadStartMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "dataLoadStartMessageImageAlpha"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataLoadStartMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
+        "range": "0-300",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "dataLoadStartMessageImageScale"
+      },
+      {
+        "description": "This attribute allows to set the message to be displayed if the data loaded for a chart is empty. To display an image as the chart message, prefix __I-__ to the image URL.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataEmptyMessage"
+      },
+      {
+        "description": "This attribute allows to set the font for the message displayed if the data loaded for a chart is empty",
+        "range": "Font Name",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "dataEmptyMessageFont"
+      },
+      {
+        "description": "This attribute allows to set the font size for the message displayed if the data loaded for a chart is empty.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "dataEmptyMessageFontSize"
+      },
+      {
+        "description": "This attribute allows to set the font color for the message displayed if the data loaded for a chart is empty.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "dataEmptyMessageColor"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataEmptyMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
+        "range": "left, middle, right",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataEmptyMessageImageHAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataEmptyMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
+        "range": "top, middle, bottom",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataEmptyMessageImageVAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataEmptyMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "dataEmptyMessageImageAlpha"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataEmptyMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
+        "range": "0-300",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "dataEmptyMessageImageScale"
+      },
+      {
+        "description": "This attribute allows to set the message to be displayed if an error is encountered while loading chart data. To display an image as the chart message, prefix __I-__ to the image URL.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataLoadErrorMessage"
+      },
+      {
+        "description": "This attribute allows to set a font for the message displayed if an error is encountered while loading chart data.",
+        "range": "Font Name",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "dataLoadErrorMessageFont"
+      },
+      {
+        "description": "This attribute allows to set the font size for the message displayed if an error is encountered while loading chart data.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "dataLoadErrorMessageFontSize"
+      },
+      {
+        "description": "This attribute allows to set the font color for the message displayed if an error is encountered while loading chart data.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "dataLoadErrorMessageColor"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataLoadErrorMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
+        "range": "left, middle, right",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataLoadErrorMessageImageHAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataLoadErrorMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
+        "range": "top, middle, bottom",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataLoadErrorMessageImageVAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataLoadErrorMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "dataLoadErrorMessageImageAlpha"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataLoadErrorMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
+        "range": "0-300",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "dataLoadErrorMessageImageScale"
+      },
+      {
+        "description": "This attribute allows to set the message to be displayed if the data to be loaded for the chart is invalid. To display an image as the chart message, prefix __I-__ to the image URL.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataInvalidMessage"
+      },
+      {
+        "description": "This attribute allows to set the font for the message displayed if the specified chart data is invalid.",
+        "range": "Font Name",
+        "type": "String",
+        "versionsince": "3.5.0",
+        "name": "dataInvalidMessageFont"
+      },
+      {
+        "description": "This attribute allows to set the font size for the message displayed if the specified chart data is invalid.",
+        "range": "In pixels",
+        "type": "Number",
+        "versionsince": "3.5.0",
+        "name": "dataInvalidMessageFontSize"
+      },
+      {
+        "description": "This attribute allows to set the font color for the message displayed if the specified chart data is invalid.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.5.0",
+        "name": "dataInvalidMessageColor"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataInvalidMessage`, this attribute allows to set a custom horizontal alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageHAlign` attribute",
+        "range": "left, middle, right",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataInvalidMessageImageHAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataInvalidMessage`, this attribute allows to set a custom vertical alignment for the image. \n\nDefault value: value assigned to the `baseChartMessageImageVAlign` attribute",
+        "range": "top, middle, bottom",
+        "type": "String",
+        "versionsince": "3.7.0",
+        "name": "dataInvalidMessageImageVAlign"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataInvalidMessage`, this attribute allows to set the transparency of the image. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "dataInvalidMessageImageAlpha"
+      },
+      {
+        "description": "If an image is displayed as the chart `dataInvalidMessage`, this attribute allows to set the scale for magnifying the image. \n\nDefault value: 100",
+        "range": "0-300",
+        "type": "Number",
+        "versionsince": "3.7.0",
+        "name": "dataInvalidMessageImageScale"
+      }
+    ],
+    "description": "These attributes let you set and configure custom chart messages, using text as well as images. These attributes are supported in FusionCharts constructor (`FusionCharts({ })`)."
+  },
+  {
+    "table": "Chart Titles and Axis Names",
+    "attrs": [
+      {
+        "description": "Caption of the chart.",
+        "type": "String",
+        "name": "caption"
+      },
+      {
+        "description": "Sub-caption of the chart.",
+        "type": "String",
+        "name": "subCaption"
+      }
+    ],
+    "description": "Using these attributes, you can set the chart caption and sub-caption."
+  },
+  {
+    "table": "Chart Caption Cosmetics",
+    "attrs": [
+      {
+        "description": "Sets horizontal alignment of caption",
+        "range": "\"left\", \"center\", \"right\"",
+        "type": "String",
+        "name": "captionAlignment"
+      },
+      {
+        "description": "Sets whether caption should be on top of the data plot area",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "captionOnTop"
+      },
+      {
+        "description": "Sets the caption font size (in pixels)",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "captionFontSize"
+      },
+      {
+        "description": "Sets the sub-caption font size (in pixels)",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "subCaptionFontSize"
+      },
+      {
+        "description": "Sets the caption font family",
+        "range": "Font Name",
+        "type": "String",
+        "name": "captionFont"
+      },
+      {
+        "description": "Sets the sub-caption font family",
+        "range": "Font Name",
+        "type": "String",
+        "name": "subCaptionFont"
+      },
+      {
+        "description": "Sets the caption font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "captionFontColor"
+      },
+      {
+        "description": "Sets the sub-caption font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "subCaptionFontColor"
+      },
+      {
+        "description": "Sets whether the caption should be bold formatted",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "captionFontBold"
+      },
+      {
+        "description": "Sets whether the sub-caption should be bold formatted",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "subCaptionFontBold"
+      },
+      {
+        "description": "Sets whether the caption is aligned with the canvas (if set to __1__) or with the entire chart area (if set to __0__).",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "alignCaptionWithCanvas"
+      },
+      {
+        "description": "Sets the padding for the chart caption (in pixels) if the caption is not centre aligned. \n\nWill be ignored if caption is centre aligned.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "captionHorizontalPadding"
+      }
+    ],
+    "description": "These attributes let you configure the cosmetics of the chart caption and sub-caption."
+  },
+  {
+    "table": "Chart Cosmetics",
+    "attrs": [
+      {
+        "description": "Sets whether to show a border around the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showBorder"
+      },
+      {
+        "description": "Sets the chart border color.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "borderColor"
+      },
+      {
+        "description": "Sets the chart border thickness.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "borderThickness"
+      },
+      {
+        "description": "Sets the chart border's transparency.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "borderAlpha"
+      },
+      {
+        "description": "Sets the chart background color. You can set any hex color code as the value of this attribute. To specify a gradient as background color, separate the hex color codes of each color in the gradient using comma. Example: `#FF5904, #FFFFFF`.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "bgColor"
+      },
+      {
+        "description": "Sets the chart background transparency. If you have opted for gradient background, you need to set a list of alpha(s) separated by comma.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "bgAlpha"
+      },
+      {
+        "description": "If you have opted for a gradient background, this attribute lets you set the ratio of each color constituent.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "bgRatio"
+      },
+      {
+        "description": "Angle of the background color, in case of a gradient.",
+        "range": "0-360",
+        "type": "Number",
+        "name": "bgAngle"
+      },
+      {
+        "description": "To place any image (JPG/PNG/GIF) as background of the chart, enter the (path and) name of the background image. It should be in the same domain as the chart.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.2.",
+        "name": "bgImage"
+      },
+      {
+        "description": "Sets the background image transparency.",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.2.",
+        "name": "bgImageAlpha"
+      },
+      {
+        "description": "Helps you specify the mode in which the background image is to be displayed. \n\nPossibel values: \n__stretch__: Expands the image to fit the entire chart area, without maintaining original image constraints. \n__tile__: The image is repeated as a pattern on the entire chart area. \n__fit__: Fits the image proportionately on the chart area. \n__fill__: The entire chart area is proportionately filled with the image. \n__center__: The image is positioned at the center of the chart area. \n__none__: Default mode.",
+        "range": "stretch, tile, fit, fill, center, none",
+        "type": "String",
+        "versionsince": "3.2.1",
+        "name": "bgImageDisplayMode"
+      },
+      {
+        "description": "Sets the vertical alignment of the background image.",
+        "range": "left, center, right",
+        "type": "String",
+        "versionsince": "3.2.1",
+        "name": "bgImageValign"
+      },
+      {
+        "description": "Sets the horizontal alignment of the background image.",
+        "range": "left, center, right",
+        "type": "String",
+        "versionsince": "3.2.1",
+        "name": "bgImageHalign"
+      },
+      {
+        "description": "Sets the magnifying value for the background image. This attribute will only work when the attribute `bgImageDisplayMode` is set to __none__, __center__, or __tile__.",
+        "range": "0-300",
+        "type": "Number",
+        "versionsince": "3.2.1",
+        "name": "bgImageScale"
+      },
+      {
+        "description": "Lets you specify the URL to load an external logo (JPEG/PNG) to your chart. Due to cross domain security restrictions, it is advised to use a logo from the same domain name as your charts.",
+        "range": "URL",
+        "type": "String",
+        "name": "logoURL"
+      },
+      {
+        "description": "This attribute helps you set the amount of empty space that you want to put on the left side of your logo image. Nothing is rendered in this space.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "logoLeftMargin"
+      },
+      {
+        "description": "This attribute helps you set the amount of empty space that you want to put on top of your logo image. Nothing is rendered in this space.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "logoTopMargin"
+      },
+      {
+        "description": "Sets the logo position on the chart. \n\nPossible values: \n__TL__: Top-left \n__TR__: Top-right \n__BR__: Bottom right \n__BL__: Bottom left \n__CC__: Center of screen",
+        "range": "TL, TR, BL, BR, CC",
+        "type": "String",
+        "name": "logoPosition"
+      },
+      {
+        "description": "Sets the logo transparency.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "logoAlpha"
+      },
+      {
+        "description": "Sets the magnifying scale of the externally loaded logo at run-time.",
+        "range": "0-300",
+        "type": "Number",
+        "name": "logoScale"
+      },
+      {
+        "description": "If you want to link the logo to an external URL, specify the link in this attribute. The link can be in the FusionCharts Link Format, allowing you to link to new windows, pop-ups, frames etc.",
+        "range": "Url",
+        "type": "String",
+        "name": "logoLink"
+      },
+      {
+        "description": "Sets the background color only for those nodes which are not leaf nodes. \n\n__Default value__: #E5E5E5",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.10.0",
+        "name": "defaultParentBgColor"
+      },
+      {
+        "description": "Groups all leaf nodes belonging to a parent node and visualizes them as masked units when hovered upon. \n\n__Default value__: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.10.0",
+        "name": "highlightParentsOnHover"
+      },
+      {
+        "description": "Sets the tooltip text rendered when the mouse pointer is hovered over the __Back to Top__ button, in the top-right corner of the chart. \n\n__Default value__: Back to Top",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.10.0",
+        "name": "btnResetChartTooltext"
+      },
+      {
+        "description": "Sets the tooltip text rendered when the mouse pointer is hovered over the __Back to Parent__ button, in the top-right corner of the chart. \n\n__Default value__: Back to Parent",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.10.0",
+        "name": "btnBackChartTooltext"
+      },
+      {
+        "description": "Sets the fill color for individual rectangles",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.10.0",
+        "name": "fillColor"
+      },
+      {
+        "description": "Lets you specify font color for the texts of the rectangles in set label.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.10.0",
+        "name": "fontcolor"
+      }
+    ],
+    "description": "The following attributes let you configure chart cosmetics like background color, background alpha, canvas color & alpha etc. "
+  },
+  {
+    "table": "Data Plot Cosmetics",
+    "attrs": [
+      {
+        "description": "Sets the border color for the node.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "plotBorderColor"
+      },
+      {
+        "description": "Sets the border thickness for the node.",
+        "range": "0-5",
+        "type": "Number",
+        "name": "plotBorderThickness"
+      }
+    ],
+    "description": "These attributes let you configure how your plot (columns, lines, area, pie or any data that you're plotting) would appear on the chart. If the plots can show borders, you can control the border properties using the attributes listed below. Or, if they support gradient fills, you can again configure various properties of the gradient using these attributes. Various other controls over plot cosmetics can be attained using this set of attributes. "
+  },
+  {
+    "table": "Data Label Cosmetics",
+    "attrs": [
+      {
+        "description": "Sets the line height, in pixels, for the parent node label. \n\n__Default value__: 12 ",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.10.0",
+        "name": "parentLabelLineHeight"
+      },
+      {
+        "description": "Sets the font size for the node labels.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "labelFontSize"
+      },
+      {
+        "description": "Sets the font family for the node labels.",
+        "range": "Font Names",
+        "type": "String",
+        "name": "labelFont"
+      },
+      {
+        "description": "Sets the font color for all the node labels.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "labelFontColor"
+      },
+      {
+        "description": "Sets whether the node labels will be bold formatted. \n\n__Default value__: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "labelFontBold"
+      },
+      {
+        "description": "Sets whether the node labels will be formatted in italics. \n\n__Default value__: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "labelFontItalic"
+      }
+    ],
+    "description": "These attributes let you configure the cosmetics of the node labels rendered on the chart."
+  },
+  {
+    "table": "Chart Padding & Margins",
+    "attrs": [
+      {
+        "description": "Lets you control the space (in pixels) between the sub-caption and top of the chart canvas. If the sub-caption is not defined, it controls the space between caption and top of chart canvas. If neither caption, nor sub-caption is defined, this padding does not come into play.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "captionPadding"
+      },
+      {
+        "description": "Amount of empty space that you want to put on the left side of your chart. Nothing is rendered in this space.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "chartLeftMargin"
+      },
+      {
+        "description": "Amount of empty space that you want to put on the right side of your chart. Nothing is rendered in this space.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "chartRightMargin"
+      },
+      {
+        "description": "Amount of empty space that you want to put on the top of your chart. Nothing is rendered in this space.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "chartTopMargin"
+      },
+      {
+        "description": "Amount of empty space that you want to put at the bottom of your chart. Nothing is rendered in this space.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "chartBottomMargin"
+      },
+      {
+        "description": "Padding of legend from right or bottom side of canvas",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "legendPadding"
+      },
+      {
+        "description": "Lets you control the space between the start of chart canvas and the start (x) of chart. In case of 2D charts, the canvas is the visible rectangular box. Using this attribute, you can control the amount of empty space between the chart left side and canvas left side. By default, the chart automatically calculates this space depending on the elements to be placed on the chart. However, if you want to over-ride this value with a higher value, you can use this attribute to specify the same. Please note that you cannot specify a margin lower than what has been calculated by the chart. This attribute is particularly useful, when you have multiple charts placed in a page and want all their canvas start position to align with each other - so in such a case, you can set same margin value (a value large enough that it does not get rejected by chart owing to it being lower than the calculated value) for all such charts in the page.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "canvasLeftMargin"
+      },
+      {
+        "description": "Like `canvasLeftMargin`, lets you set the space between end of canvas and end of chart.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "canvasRightMargin"
+      },
+      {
+        "description": "Like `canvasLeftMargin`, lets you set the space between top of canvas and top of chart.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "canvasTopMargin"
+      },
+      {
+        "description": "Like `canvasLeftMargin`, this attribute lets you set the space between bottom of canvas and bottom of chart.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "canvasBottomMargin"
+      },
+      {
+        "description": "Lets you configure the horizontal padding (space) between the parent rectangle and the logical container where children get plotted. \n\n__Default value__: 5",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.10.0",
+        "name": "horizontalPadding"
+      },
+      {
+        "description": "Lets you configure the vertical padding (space) between the parent rectangle and the logical container where children get plotted. \n\n__Default value__: 5",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.10.0",
+        "name": "verticalPadding"
+      }
+    ],
+    "description": "The following attributes help you control chart margins and paddings. FusionCharts Suite XT allows you manually customize the padding of various elements on the chart to allow advanced manipulation and control over chart visualization. Padding in FusionCharts Suite  XT is always defined in pixels, unless the attribute itself suggests some other scale (like `plotSpacePercent`, which configures the spacing using percentage values). You can also define the chart margins. Chart Margins refer to the empty space left on the top, bottom, left and right of the chart. That means, FusionCharts Suite  XT would not plot anything in that space. It is not necessary for you to specify any padding or margin values. FusionCharts Suite  XT automatically assumes the best values for the same, if you do not specify the same. "
+  },
+  {
+    "table": "Tooltip Attributes",
+    "attrs": [
+      {
+        "description": "Whether to show tool tip on chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showToolTip"
+      },
+      {
+        "description": "Background color for the tool tip.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "toolTipBgColor"
+      },
+      {
+        "description": "Font color for the tool-tip.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "toolTipColor"
+      },
+      {
+        "description": "Border color for tool tip.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "toolTipBorderColor"
+      },
+      {
+        "description": "Sets the border transparency for tool tip.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "tooltipBorderAlpha"
+      },
+      {
+        "description": "The character specified as the value of this attribute separates the data label and data value displayed in the tool tip.",
+        "range": "",
+        "type": "String",
+        "name": "toolTipSepChar"
+      },
+      {
+        "description": "Specify custom text for the tooltip \n\n You can either specify a constant string as the tooltip text or you can use variable values from the data level by prefixing a __$__ to the attribute name, for example, __$name__, __$value__.",
+        "range": "",
+        "type": "String",
+        "name": "plottooltext"
+      }
+    ],
+    "description": "These attributes let you control the tool tip formatting."
+  },
+  {
+    "table": "Toolbar Attributes",
+    "attrs": [
+      {
+        "description": "Where to position the toolbar on the chart: TL - Top-left TR - Top-right BR - Bottom right BL - Bottom left CC - Center of screen",
+        "range": "TL, TR, BL, BR, CC",
+        "type": "String",
+        "versionsince": "3.11.3",
+        "name": "toolbarPosition"
+      },
+      {
+        "description": "Sets the toolbox position on the chart with respect to x-axis.",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.11.3",
+        "name": "toolbarX"
+      },
+      {
+        "description": "Sets the toolbox position on the chart with respect to y-axis.",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.11.3",
+        "name": "toolbarY"
+      },
+      {
+        "description": "Sets the horizontal alignment of the toolbar on the chart.",
+        "range": "Left, Right",
+        "type": "String",
+        "versionsince": "3.11.3",
+        "name": "toolbarHAlign"
+      },
+      {
+        "description": "Sets the vertical alignment of the toolbar on the chart",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionsince": "3.11.3",
+        "name": "toolbarVAlign"
+      },
+      {
+        "description": "Sets the color of the toolbar buttons.",
+        "range": "Any (color code without the # prefix)",
+        "type": "Color",
+        "name": "toolbarButtonColor"
+      },
+      {
+        "description": "Enables/disables display of tooltips for toolbar buttons.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showToolBarButtonTooltext"
+      },
+      {
+        "description": "You can change the scale of the toolbar by specifying a value for this attribute.",
+        "range": "",
+        "type": "Number",
+        "name": "toolbarButtonScale"
+      },
+      {
+        "description": "You can reverse the order in which the toolbar icons are rendered using this attribute.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.12.1",
+        "name": "reverseToolbarIcons"
+      }
+    ],
+    "description": "Using this set of attributes, you can customize the toolbar on the chart. The advantage of having a toolbar is that it manages all the UI action elements (context menus, checkboxes, buttons) centrally. This provides a clean, uniform look and a better, more meaningful and logical grouping."
+  },
+  {
+    "table": "Attributes for Exporting Charts",
+    "attrs": [
+      {
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG, XLSX or CSV format.  \n\n__Default value__: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "exportEnabled"
+      },
+      {
+        "description": "In case of server-side exporting, the action specifies whether the exported image will be sent back to client as download, or whether it'll be saved on the server. \n\n__Default value__: download",
+        "range": "'save' or 'download'",
+        "type": "String",
+        "name": "exportAction"
+      },
+      {
+        "description": "In case of server side exporting, this refers to the path of the server-side export handler (the ready-to-use scripts that we provide).",
+        "range": "",
+        "type": "String",
+        "name": "exportHandler"
+      },
+      {
+        "description": "Lets you configure what output formats to allow for export of chart, in the export context menu, and also customize the label for each menu item. The attribute value should be a pipe (&#124;) delimited separated key-value pair. Example: `exportFormats: 'PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File'`",
+        "range": "",
+        "type": "String",
+        "name": "exportFormats"
+      },
+      {
+        "description": "This attributes sets the modes of export. To enable client-side exporting, set this attribute to __client__. \n\n__Default value__: auto. \n\n__Note__: Starting v3.12.1, the `exportMode` attribute replaces the `exportAtClientSide` attribute. However, you don’t need to make any changes to the existing setup because, the FusionCharts library comes with the proper mapping already provided.",
+        "type": "String",
+        "versionsince": "3.12.1",
+        "name": "exportMode"
+      },
+      {
+        "description": "Whether the menu items related to export (e.g., Save as JPEG etc.) will appear in the context menu of chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "exportShowMenuItem"
+      },
+      {
+        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
+        "range": "'_self' or '_blank'",
+        "type": "String",
+        "name": "exportTargetWindow"
+      },
+      {
+        "description": "Using this attribute you can specify the name (excluding the extension) of the output (export) file.",
+        "range": "",
+        "type": "String",
+        "name": "exportFileName"
+      }
+    ],
+    "description": "These attributes allow you to control the saving of chart as image, SVG or XLSX."
+  },
+  {
+    "table": "Data Plot Hover Effects",
+    "attrs": [
+      {
+        "description": "Whether to enable hover effect on charts for all elements",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showHoverEffect"
+      },
+      {
+        "description": "Whether to enable hover effect on charts for data plots (e.g., column, pie) only",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "plotHoverEffect"
+      },
+      {
+        "description": "Specifies the hover color for the data plots",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "plotFillHoverColor"
+      },
+      {
+        "description": "Specifies the hover alpha for data plots",
+        "range": "1 - 100",
+        "type": "Number",
+        "name": "plotFillHoverAlpha"
+      }
+    ],
+    "description": "If you wish to show an effect on the data plot (column, line anchor, pie etc.) when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."
+  },
+  {
+    "table": "Legend Properties",
+    "attrs": [
+      {
+        "description": "Sets whether to show legend on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showLegend"
+      },
+      {
+        "description": "Sets whether legend keys should be bold formatted.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendItemFontBold"
+      },
+      {
+        "description": "Sets the legend item font",
+        "range": "Font Name",
+        "type": "String",
+        "name": "legendItemFont"
+      },
+      {
+        "description": "Sets the legend item font size",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "legendItemFontSize"
+      },
+      {
+        "description": "Sets the legend item font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendItemFontColor"
+      },
+      {
+        "description": "Enables to set a caption for the entire legend",
+        "range": " ",
+        "type": "String",
+        "name": "legendCaption"
+      },
+      {
+        "description": "Sets the legend caption horizontal alignment .",
+        "range": "\"left\", \"center\", \"right\"",
+        "type": "String",
+        "name": "legendCaptionAlignment"
+      },
+      {
+        "description": "Sets whether legend caption should be bold formatted",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendCaptionFontBold"
+      },
+      {
+        "description": "Sets the legend caption font",
+        "range": "Font Name",
+        "type": "String",
+        "name": "legendCaptionFont"
+      },
+      {
+        "description": "Sets the legend caption font size",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "legendCaptionFontSize"
+      },
+      {
+        "description": "Sets the legend caption font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendCaptionFontColor"
+      },
+      {
+        "description": "Sets the legend position on the chart. The legend can be plotted at two positions on the chart - below (__BOTTOM__) the chart and to the right (__RIGHT__) of the chart.",
+        "range": "BOTTOM or RIGHT",
+        "type": "String",
+        "name": "legendPosition"
+      },
+      {
+        "description": "Sets the legend background color.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendBgColor"
+      },
+      {
+        "description": "Sets the legend background transparency.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "legendBgAlpha"
+      },
+      {
+        "description": "Sets the legend border color.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendBorderColor"
+      },
+      {
+        "description": "Sets the legend border thickness.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "legendBorderThickness"
+      },
+      {
+        "description": "Sets the legend border's transparency.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "legendBorderAlpha"
+      },
+      {
+        "description": "Sets whether to show a shadow for legend.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendShadow"
+      },
+      {
+        "description": "Sets whether the legend will be drag-able. If set to __1__, end viewers of the chart can drag the legend around on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendAllowDrag"
+      },
+      {
+        "description": "Sets the color of the gradient legend scale.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendScaleLineColor"
+      },
+      {
+        "description": "Sets the transparency of the gradient legend scale.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "legendScaleLineAlpha"
+      },
+      {
+        "description": "Sets the thickness of the gradient legend scale.",
+        "range": "0-5",
+        "type": "Number",
+        "name": "legendScaleLineThickness"
+      },
+      {
+        "description": "Sets color for the gradient legend's axis border.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.11.0",
+        "name": "legendaxisbordercolor"
+      },
+      {
+        "description": "Sets transparency for the gradient legend's axis border.",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.11.0",
+        "name": "legendaxisborderalpha"
+      }
+    ],
+    "description": "In multi-series charts, the series name of each data-set shows up in the legend of the chart. If you do not need the legend, you can opt to hide the same. Also, the legend can be placed at the bottom of the chart or to the right of the chart. Using the attributes below, you can configure the functional and cosmetic properties of the legend. "
+  },
+  {
+    "table": "Font Properties",
+    "attrs": [
+      {
+        "description": "Sets the font face (family) for all the text (data labels, values etc.) on chart. If you specify the `outCnvBaseFont` attribute also, then this attribute controls only the font face of the text within the chart canvas bounds.",
+        "range": "Font Name",
+        "type": "String",
+        "name": "baseFont"
+      },
+      {
+        "description": "Sets the base font size for all the text that lies within the chart canvas.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "baseFontSize"
+      },
+      {
+        "description": "Sets the base font color for all the text that lies within the chart canvas.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "baseFontColor"
+      },
+      {
+        "description": "Sets the base font family for all the text that lies outside the chart canvas.",
+        "range": "Font Name",
+        "type": "String",
+        "name": "outCnvBaseFont"
+      },
+      {
+        "description": "Sets the base font size for all the text that lies outside the chart canvas.",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "outCnvBaseFontSize"
+      },
+      {
+        "description": "Sets the base font color for all the text that lies outside the chart canvas..",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "outCnvBaseFontColor"
+      }
+    ],
+    "description": "Using the attributes below, you can define the generic font properties for all the text on the chart. These attributes allow you a high level control over font properties. If you intend to specify font properties for individual chart elements (like Caption, sub-caption etc.), you'll need to use the Styles feature of PowerCharts XT. Using Styles, you can also specify advanced font properties like Bold, Italics, HTML Mode etc. "
+  },
+  {
+    "table": "The data Object",
+    "path": "data",
+    "attrs": [
+      {
+        "description": "Sets the label for a node. \n\n __Note__: The `label` attribute replaces the `name` attribute. Previously, either one of the attributes could be used to set the label. Support for the `name` attribute has been discontinued since v3.10.0.",
+        "range": "",
+        "type": "String",
+        "name": "label"
+      },
+      {
+        "description": "Sets the value and maps the area of the rectangle (node).",
+        "range": "",
+        "type": "Number",
+        "name": "value"
+      },
+      {
+        "description": "Sets the secondary value and maps the color of the rectangle (node).",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.10.0",
+        "name": "sValue"
+      },
+      {
+        "description": "Sets the fill color for a node",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "fillcolor"
+      },
+      {
+        "description": "Sets the font color for a node label",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "fontColor"
+      }
+    ],
+    "description": "In single-series charts, each instance of the `data` object represents a data value to be plotted on the chart. For a single-series chart, one instance of the `data` object looks as shown in the example below:\n\n<pre class=\"language-javascript\"><code>\n\"data\"[{\n\t\t\"label\": \"Jan\",\n\t\t\"value\": \"10000\"\n\t}]\n</code></pre>\n\nThe following attributes of the `data` object are used to set and configure data values for the treemap chart."
+  },
+  {
+    "table": "The colorRange Object",
+    "path": "colorRange",
+    "attrs": [
+      {
+        "description": "Sets the lower limit label for the gradient scale.",
+        "range": "",
+        "type": "String",
+        "name": "startLabel"
+      },
+      {
+        "description": "Sets the upper limit label for the gradient scale.",
+        "range": "",
+        "type": "String",
+        "name": "endLabel"
+      },
+      {
+        "description": "Sets whether the gradient legend will be displayed.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "gradient"
+      },
+      {
+        "description": "Sets whether the data values will be rendered in percentage.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "mapByPercent"
+      },
+      {
+        "description": "Sets the minimum value or the lower limit of the numeric range and the gradient scale.",
+        "range": "",
+        "type": "Number",
+        "name": "minValue"
+      }
+    ],
+    "description": "Attributes of the `colorRange` object for the treemap chart are used to define the type of legend, the lower limit of the scale, and the start and end labels. Note that the `colorRange` object is not used to collectively configure all ranges; the `color` object (child of the `colorRange` object) is used to do that."
+  },
+  {
+    "table": "The color Object",
+    "path": "color",
+    "attrs": [
+      {
+        "description": "Sets the color for a numeric range.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "code"
+      },
+      {
+        "description": "Sets the label for a numeric range. The label appears on the gradient scale. \n\n __Note__: The `label` attribute replaces the `name` attribute. Previously, either one of the attributes could be used to set the label. Support for the `name` attribute has been discontinued since v3.10.0.",
+        "range": "",
+        "type": "String",
+        "name": "label"
+      },
+      {
+        "description": "Sets the upper limit of a numeric range.",
+        "range": "",
+        "type": "Number",
+        "name": "maxValue"
+      },
+      {
+        "description": "Sets the lower limit of a numeric range.",
+        "range": "",
+        "type": "Number",
+        "name": "minValue"
+      }
+    ],
+    "description": "The attributes of the `color` object, child of the `colorRange` object, are used to configure individual numeric ranges for categorizing the treemap chart nodes."
+  }
 ]

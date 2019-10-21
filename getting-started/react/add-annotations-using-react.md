@@ -12,101 +12,119 @@ In this article we'll create a **Spline** chart and add annotations using `react
 
 The full code of the above sample is given below:
 
-```
-import React from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts';
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-import ReactFC from 'react-fusioncharts';
-import FusionTime from 'fusioncharts/themes/fusioncharts.theme.fusion';
+```javascript
+// Step 1 - Include react
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactFC.fcRoot(FusionCharts, PowerCharts, FusionTime);
+// Step 2 - Include the react-fusioncharts component
+import ReactFC from "react-fusioncharts";
 
+// Step 3 - Include the fusioncharts library
+import FusionCharts from "fusioncharts";
+
+// Step 4 - Include the chart type
+import Column2D from "fusioncharts/fusioncharts.charts";
+import PowerCharts from "fusioncharts/fusioncharts.powercharts";
+
+// Step 5 - Include the theme as fusion
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+
+// Step 6 - Adding the chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+// Step 7 - Creating the JSON object to store the chart configurations
 const chartConfigs = {
-    type: 'spline',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
+    type: "line",
+    width: "700",
+    height: "400",
+    dataFormat: "json",
     dataSource: {
-        "chart": {
-            "caption": "Average Monthly Temperature in Texas",
-            "yAxisName": "Average Monthly Temperature",
-            "anchorradius": "5",
-            "plotToolText": "Average temperature in $label is <b>$dataValue</b>",
-            "showHoverEffect": "1",
-            "showvalues": "0",
-            "numberSuffix": "°C",
-            "theme": "fusion",
-            "anchorBgColor": "#72D7B2",
-            "paletteColors": "#72D7B2"
+        chart: {
+            caption: "Average Monthly Temperature in Texas",
+            yAxisName: "Average Monthly Temperature",
+            anchorradius: "5",
+            plotToolText: "Average temperature in $label is <b>$dataValue</b>",
+            showHoverEffect: "1",
+            showvalues: "0",
+            numberSuffix: "°C",
+            theme: "fusion",
+            anchorBgColor: "#72D7B2",
+            paletteColors: "#72D7B2"
         },
-        "annotations": {
-            "groups": [{
-                "id": "anchor-highlight",
-                "items": [{
-                    "id": "high-star",
-                    "type": "circle",
-                    "x": "$dataset.0.set.7.x",
-                    "y": "$dataset.0.set.7.y",
-                    "radius": "12",
-                    "color": "#cc0000",
-                    "border": "2",
-                    "borderColor": "#0075c2"
-                }, {
-                    "id": "label",
-                    "type": "text",
-                    "text": "Hottest Month",
-                    "fillcolor": "#0075c2",
-                    "rotate": "90",
-                    "x": "$dataset.0.set.7.x+75",
-                    "y": "$dataset.0.set.7.y-2"
-                }]
+        annotations: {
+            groups: [{
+                id: "anchor-highlight",
+                items: [{
+                        id: "high-star",
+                        type: "circle",
+                        x: "$dataset.0.set.7.x",
+                        y: "$dataset.0.set.7.y",
+                        radius: "12",
+                        color: "#cc0000",
+                        border: "2",
+                        borderColor: "#0075c2"
+                    }, {
+                        id: "label",
+                        type: "text",
+                        text: "Hottest Month",
+                        fillcolor: "#0075c2",
+                        rotate: "90",
+                        x: "$dataset.0.set.7.x+75",
+                        y: "$dataset.0.set.7.y-2"
+                    }
+                ]
             }]
         },
-        "data": [{
-            "label": "Jan",
-            "value": "1"
-        }, {
-            "label": "Feb",
-            "value": "5"
-        }, {
-            "label": "Mar",
-            "value": "10"
-        }, {
-            "label": "Apr",
-            "value": "12"
-        }, {
-            "label": "May",
-            "value": "14"
-        }, {
-            "label": "Jun",
-            "value": "16"
-        }, {
-            "label": "Jul",
-            "value": "20"
-        }, {
-            "label": "Aug",
-            "value": "22"
-        }, {
-            "label": "Sep",
-            "value": "20"
-        }, {
-            "label": "Oct",
-            "value": "16"
-        }, {
-            "label": "Nov",
-            "value": "7"
-        }, {
-            "label": "Dec",
-            "value": "2"
-        }]
-    },
+        data: [{
+                label: "Jan",
+                value: "1"
+            }, {
+                label: "Feb",
+                value: "5"
+            }, {
+                label: "Mar",
+                value: "10"
+            }, {
+                label: "Apr",
+                value: "12"
+            }, {
+                label: "May",
+                value: "14"
+            }, {
+                label: "Jun",
+                value: "16"
+            }, {
+                label: "Jul",
+                value: "20"
+            }, {
+                label: "Aug",
+                value: "22"
+            }, {
+                label: "Sep",
+                value: "20"
+            }, {
+                label: "Oct",
+                value: "16"
+            }, {
+                label: "Nov",
+                value: "7"
+            }, {
+                label: "Dec",
+                value: "2"
+            }
+        ]
+    }
 };
 
-ReactDOM.render(
-    <ReactFC {...chartConfigs} />,
-    document.getElementById('root'),
-);
+// Step 9 - Creating the DOM element to pass the react-fusioncharts component
+export default class App extends React.Component {
+    render() {
+        return <ReactFC {
+            ...chartConfigs
+        } />;
+    }
+}
 ```
 
 The above chart has been rendered using the following steps:

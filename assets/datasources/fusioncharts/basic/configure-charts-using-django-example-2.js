@@ -1,8 +1,7 @@
 {
     type: 'column2d',
-    renderAt: 'chart-1',
-    width: '700',
-    height: '400',
+    width: '680',
+    height: '390',
     dataFormat: 'json',
     dataSource: {
         // Chart Configuration

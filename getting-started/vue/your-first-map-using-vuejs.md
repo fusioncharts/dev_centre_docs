@@ -6,7 +6,7 @@ heading: Create a Map in Vue Using FusionCharts
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Vue** component which provides bindings for **FusionCharts**. The `vue-fusioncharts` component allows you to easily add rich and interactive charts to any **Vue** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Vue** component which provides bindings for **FusionCharts**. The `vue-fusioncharts` component allows you to easily add rich and interactive charts to any **Vue** project.
 
 In this page, we'll see how to install FusionCharts and render a map using the `vue-fusionCharts` component.
 
@@ -39,7 +39,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install the FusionCharts package and the `vue-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionCharts map renderer.</div>
 <div class='mt-20'>5. Include the map definition file.</div>
 <div class='mt-20'>6. Include the FusionCharts theme file to apply style to the charts.</div>
@@ -50,13 +50,13 @@ $ npm install fusioncharts --save
     &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 4 - Including the map renderer file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
     &lt;!-- Step 5 - Including the map definition file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
     &lt;!-- Step 6 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -66,7 +66,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install the FusionCharts package and the `vue-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionCharts map renderer.</div>
 <div class='mt-20'>5. Include the map definition file.</div>
 <div class='mt-20'>6. Include the FusionCharts theme file to apply style to the charts.</div>
@@ -94,36 +94,34 @@ $ npm install fusioncharts --save
 
 ## Create you first map
 
-In this section, we will create a visualization using the **World Map** showing the average annual population growth. 
+In this section, we will create a visualization using the **World Map** showing the average annual population growth.
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for this chart is represented in the table below:
+## Map data
 
-State|Entity Name|Value|
--|-|-|-
-North America|NA|82|
-South America|SA|2.04|
-Asia|AS|1.78|
-Europe|EU|40|
-Africa|AF|2.58|
-Australia|AU|1.30|
+The data for the above map is represented in the table below:
 
-## Convert tabular data into JSON format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format.
+| State         | Entity Name | Value |
+| ------------- | ----------- | ----- |
+| North America | NA          | 82    |
+| South America | SA          | 2.04  |
+| Asia          | AS          | 1.78  |
+| Europe        | EU          | 40    |
+| Africa        | AF          | 2.58  |
+| Australia     | AU          | 1.30  |
 
 In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column.
 
-However, when you convert the data into a format (JSON or XML) supported by FusionCharts, the entities are denoted by the `id` key in the `data` object.
+FusionCharts accepts data in **JSON** format in which the above entities are denoted by the `id` key in the `data` object.
 
 For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
-In this example, we will use the JSON format, as shown below:
+Following code is the JSON representation of the above table with the required attributes to render the above map.
 
-```javascript
+```JSON
 {
     // Map Configuration
     "chart": {
@@ -183,44 +181,44 @@ In this example, we will use the JSON format, as shown below:
 }
 ```
 
-In the above JSON data: 
+In the above JSON data:
 
-* Create the `chart` object to define the elements of the map.
+- Create the `chart` object to define the elements of the map.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+- Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
-* Create the `data` array to define the id of the continents and their corresponding values along with configurations.
+- Create the `data` array to define the id of the continents and their corresponding values along with configurations. For example, the first object under `data` array contains the `id` and `value` of **North America** as **NA** and **.82** respectively.
 
-The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
+The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the map.
+Now that you have the data in JSON format, let's learn how to render the map.
 
 ## Render the map
 
 To render the map follow the steps below:
 
-1. Include the `vue` component
+1. Include the `vue` component.
 
-2. Include `vue-fusioncharts` component
+2. Include `vue-fusioncharts` component.
 
-3. Include `fusioncharts` core library
+3. Include `fusioncharts` core library.
 
-4. Include the FusionMap renderer. 
+4. Include the FusionMap renderer.
 
 5. Include the map definition file.
 
-6. Include the FusionCharts theme file to apply the style to the charts
+6. Include the FusionCharts theme file to apply the style to the charts.
 
 7. Register the `VueFusionCharts` component
 
 8. Store the map configurations in a JSON object. In this JSON object:
 
-    * Set the map type as `world`. Each map is represented with a unique chart alias. For World Map, the alias is `world`. Find the complete list of maps with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
+   - Set the map type as `world`. Each map is represented with a unique chart alias. For World Map, the alias is `world`. Find the complete list of maps with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+   - Set the width and height (in pixels).
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of the `dataSource`.
 
 The consolidated code is given below:
 
@@ -338,11 +336,11 @@ name: 'app',
     &lt;!-- Including vue-fusioncharts component --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
@@ -523,9 +521,9 @@ name: 'app',
 
 That's it! Your first map using `vue-fusioncharts` is ready.
 
-## Render other maps 
+## Render other maps
 
-To reduce the size of the package FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provide 1600+ maps for you to explore. Download the map files separately if you want to save them locally. 
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provide 1600+ maps for you to explore. Download the map files separately if you want to save them locally.
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
@@ -533,7 +531,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
 
-```
+```bash
 $ npm install fusionmaps
 ```
 
@@ -627,12 +625,12 @@ export default {
     &lt;!-- Including vue-fusioncharts component --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Including map files --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.california.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.california.js"&gt;&lt;/script>
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
@@ -753,14 +751,14 @@ export default {
 </div>
 </div>
 
-That's it! The **California** map is ready. 
+That's it! The **California** map is ready.
 
 ## Problem rendering the chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

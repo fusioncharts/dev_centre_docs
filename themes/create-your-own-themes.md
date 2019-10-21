@@ -12,7 +12,7 @@ Assume that you have to create a theme named **mySampleTheme**, which needs to i
 
     * Set the subcaption to **Harry's SuperMart** throughout the application and ensure that it cannot be changed.
 
-    * Define uniform cosmetics for the caption and subcaption. 
+    * Define uniform cosmetics for the caption and subcaption.
 
     * Enable hover effects for data plots.
 
@@ -126,7 +126,7 @@ Given below is a stepwise procedure for creating this theme:
 
 Refer to the code for the new theme, given below:
 
-```json
+```javascript
 //The `FusionCharts.register()` API is used to register the new theme in the FusionCharts core.
 FusionCharts.register('theme', {
     name: 'mySampleTheme',
@@ -134,9 +134,9 @@ FusionCharts.register('theme', {
         base: {
             chart: {
                 paletteColors: '#0075c2,#1aaf5d,#f2c500',
-                subCaption: 'Harry's SuperMart !important', //The !important directive is used to ensure that the subcaption cannot be overriden in the theme definition or in the chart data.
-                captionFontSize: '14'
-                subCaptionFontSize: '12'
+                subCaption: 'Harry\'s SuperMart !important', //The !important directive is used to ensure that the subcaption cannot be overriden in the theme definition or in the chart data.
+                captionFontSize: '14',
+                subCaptionFontSize: '12',
                 captionFontBold: '1',
                 subCaptionFontBold: '0',
                 showHoverEffect: '1',
@@ -153,10 +153,12 @@ FusionCharts.register('theme', {
         column2d: {
             dataset: {
                 data: function(dataObj) {
-                    color: (Number(dataObj.value) < 0 ? "#3333FF" : "#CC0000"),
+                    return {
+                        color: (Number(dataObj.value) < 0 ? "#3333FF" : "#CC0000")
+                    }
                 }
             }
-        }
+        },
         bubble: {
             chart: {
                 drawQuadrant: '1',
@@ -169,7 +171,7 @@ FusionCharts.register('theme', {
                 regressionLineThickness: '3',
                 regressionLineAlpha: '70'  
             }]
-        }
+        },
         pie2d: {
             chart: {
                 showPercentInToolTip: '1',
@@ -178,9 +180,9 @@ FusionCharts.register('theme', {
         },
         zoomline: {
             chart: {
-                anchorMinRenderDistance : '20'                
+                anchorMinRenderDistance : '20'
             }
-        },        
+        },
         gantt: {
             processes: [{
                 headerFont: 'Arial',
@@ -191,7 +193,7 @@ FusionCharts.register('theme', {
                 headerAlign: 'left',
                 headerVAlign: 'bottom'
             }]
-        },      
+        },
         geo: {
             chart: {
                 showLabels: '1',
@@ -201,7 +203,7 @@ FusionCharts.register('theme', {
                 entityFillHoverAlpha: '60',
                 markerFillHoverColor: '#8AE65C',
                 markerFillHoverAlpha: '60',
-            }
+            },
             marker: {
                 connector: {
                     thickness: '4',

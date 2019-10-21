@@ -1,6 +1,6 @@
 var controls = document.createElement('div');
 
-  exportChart = function() {
+  window.exportChart = function() {
     FusionCharts.batchExport({
       exportFormat: 'pdf'
     });

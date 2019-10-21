@@ -53,7 +53,7 @@ A chart is composed of a host of elements. The general elements and how to hide 
          </td>
          <td><code>showCanvasBorder: "0"</code>
             <code>numDivLines: "0"</code>
-            <code>showAxisLimitGridLines: "0"</code>
+            <code>showAxisLimitgrid-lines: "0"</code>
          </td>
          <td>Hide canvas along with grid lines
          </td>

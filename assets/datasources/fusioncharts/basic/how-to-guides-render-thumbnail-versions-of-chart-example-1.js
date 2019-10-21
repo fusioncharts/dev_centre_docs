@@ -115,24 +115,24 @@
 
             // Create instance of all charts (including current one)
             var revenueChartColumn = evt.sender.clone({
-                id: 'revenue-chart-column',
+                id: 'revenue-chart-column_1',
                 events: {}
             });
             var revenueChartPie = evt.sender.clone({
                 type: 'pie2d',
-                id: 'revenue-chart-pie',
+                id: 'revenue-chart-pie_1',
                 events: {}
             });
             var revenueChartBar = evt.sender.clone({
                 type: 'bar2d',
-                id: 'revenue-chart-bar',
+                id: 'revenue-chart-bar_1',
                 events: {}
             });
 
             // create thumbnails for all the three charts
-            createThumbNail('revenue-chart-column', 100, 100, 'thumbnail-column');
-            createThumbNail('revenue-chart-pie', 100, 100, 'thumbnail-pie');
-            createThumbNail('revenue-chart-bar', 100, 100, 'thumbnail-bar');
+            createThumbNail('revenue-chart-column_1', 100, 100, 'thumbnail-column');
+            createThumbNail('revenue-chart-pie_1', 100, 100, 'thumbnail-pie');
+            createThumbNail('revenue-chart-bar_1', 100, 100, 'thumbnail-bar');
         }
     }
 }

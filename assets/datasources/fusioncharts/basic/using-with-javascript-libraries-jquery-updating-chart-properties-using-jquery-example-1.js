@@ -71,7 +71,7 @@
 
             // set css styles for "input" elements in controls div
             var input = controllers.getElementsByTagName('input');
-            for (i = 0; i < input.length; i++) {
+            for (var i = 0; i < input.length; i++) {
                 if (input[i].getAttribute('type') == 'text') input[i].style.cssText = 'max-width: 50px;';
             }
 

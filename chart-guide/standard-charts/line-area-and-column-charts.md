@@ -8,25 +8,25 @@ heading: Line, Area and Column charts
 
 ## Column 2D 
 
-Column and bar charts represent data with rectangular horizontal or vertical bars. The height of the bars is proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis, and the `data labels` are plotted along the x-axis. Whereas in bar charts, the numeric values are plotted along the x-axis, and the data labels are plotted along the y-axis. Column and bar charts are best fitted when you want to compare values. 
+Column and bar charts represent data with rectangular horizontal or vertical bars. The height of the bars is proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis, and the `data labels` are plotted along the x-axis. Whereas in bar charts, the numeric values are plotted along the x-axis, and the data labels are plotted along the y-axis. Column and bar charts are best fitted when you want to compare values.
 
 In this sample, let's create our first column chart showcasing the monthly revenue for last one year for Harry's SuperMart. We have plotted the months along the x-axis and the revenue, which is a numeric value, along the y-axis.
 
 To create a single-series column 2D chart, follow the steps given below:
 
-* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+- In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `column2d`.
+- Specify the chart type using the `type` attribute. To render a column chart, set `column2d`.
 
-* Set the container object using `renderAt` attribute.
+- Set the container object using `renderAt` attribute.
 
-* Specify the dimension of the chart using `width` and `height` attributes.
+- Specify the dimension of the chart using `width` and `height` attributes.
 
-* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+- Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-* Depending on the value passed to the `dataFormat`, set the `dataSource` attribute (JSON/XML) from where the data will be fetched.
+- Depending on the value passed to the `dataFormat`, set the `dataSource` attribute (JSON/XML) from where the data will be fetched.
 
-* Specify the value for a data item using the `value` attribute within the `data` object. 
+- Specify the value for a data item using the `value` attribute within the `data` object.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=column2d) page of column 2D chart.
 
@@ -74,7 +74,7 @@ Click [here](http://jsfiddle.net/fusioncharts/b03dgzvv/) to edit the bar 3D char
 
 ## Line Chart
 
-Line charts are commonly used to showcase the trend in data over time whereas area charts are used to display quantitative data. Information in a line or area chart is plotted on the x- and y-axis; data values are plotted using data points that are connected using line segments. 
+Line charts are commonly used to showcase the trend in data over time whereas area charts are used to display quantitative data. Information in a line or area chart is plotted on the x- and y-axis; data values are plotted using data points that are connected using line segments.
 
 In the sample, let's create a line chart showcasing total footfall at Bakersfield Central. We have plotted the days along the x-axis and the number of visitors along the y-axis.
 
@@ -102,7 +102,7 @@ A single-series area chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/x5FBh/) to edit the area chart.
 
-Now, let's customize the appearance and properties of the charts. 
+Now, let's customize the appearance and properties of the charts.
 
 ## Plot Trend Elements
 
@@ -112,15 +112,15 @@ Trend-lines are reference horizontal or vertical lines which aid in interpretati
 
 To plot a trend-line on a chart, follow the steps given below:
 
-* Create a `trendlines` object to render one or more than one trend-lines.
+- Create a `trendlines` object to render one or more than one trend-lines.
 
-* Create a `line` object for a particular trend-line.
+- Create a `line` object for a particular trend-line.
 
-* In `line` object, set the `startValue` attribute to specify the starting value for the trend-line. Set the `endValue` to specify the end value for the trend-line.
+- In `line` object, set the `startValue` attribute to specify the starting value for the trend-line. Set the `endValue` to specify the end value for the trend-line.
 
-* Set the `color` attribute to specify the hex code for the color. Use this attribute to render the trend-line and its associated text.
+- Set the `color` attribute to specify the hex code for the color. Use this attribute to render the trend-line and its associated text.
 
-* Set the `displayValue` attribute to display a string caption with the trend-line.
+- Set the `displayValue` attribute to display a string caption with the trend-line.
 
 Given below is the JSON code to include trend-line on your chart:
 
@@ -146,7 +146,7 @@ A quarterly sales summary chart rendered with a trend-line to show the target va
 
 Click [here](http://jsfiddle.net/fusioncharts/aktyv9jm/) to edit the column chart.
 
-**Trend-zone** is used to show a range of target values. The trend-zone uses the same attributes as the trend-line. `isTrendZone` is the attribute which is used to specify whether a chart will be rendered with a trend-line or a trend-zone. Setting this attribute to `0` will render a trend-line, setting it to `1` (default) will render a trend-zone. 
+**Trend-zone** is used to show a range of target values. The trend-zone uses the same attributes as the trend-line. `isTrendZone` is the attribute which is used to specify whether a chart will be rendered with a trend-line or a trend-zone. Setting this attribute to `0` will render a trend-line, setting it to `1` (default) will render a trend-zone.
 
 A quarterly sales summary chart rendered with a trend-zone to show a range of target values looks like this:
 
@@ -162,28 +162,32 @@ Vertical (or horizontal in case of bar charts) separator lines are elements that
 
 To plot vertical line in your chart, follow the steps given below:
 
-* Set the `vLine` attribute to `true` to render a vertical line on the chart.
+- Set the `vLine` attribute to `true` to render a vertical line on the chart.
 
-* Specify the `label` attribute to set the label for the vertical line. This label will be rendered along the x-axis.
+- Specify the `label` attribute to set the label for the vertical line. This label will be rendered along the x-axis.
 
-* Set the position of the vertical line using `linePosition` attribute. This attribute is positioned relative to the two data points between which it is to be plotted. 
+- Set the position of the vertical line using `linePosition` attribute. This attribute is positioned relative to the two data points between which it is to be plotted.
 
 Given below is the JSON code to include a vertical line on your chart:
 
 ```json
 {
-	"chart": {
-		...
-	},
-	"data": [],
-	"trendlines": [{
-	    "line": [{
-	        "vline": "true",
-    		"label": "Weekend Start",
-        	"color": "#29C3BE",
-    		"linePosition": "0.7"
-	    }]
-	}]
+  "chart": {
+	  ...
+  },
+  "data": [],
+  "trendlines": [
+    {
+      "line": [
+        {
+          "vline": "true",
+          "label": "Weekend Start",
+          "color": "#29C3BE",
+          "linePosition": "0.7"
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -207,16 +211,16 @@ An example of a chart, where you can dynamically change the chart type, looks li
 
 Visualization plays a crucial role in data science, helping data scientists to make sense of the underlying patterns within data, even before any other computation begins. With v3.12.0, FusionCharts has evolved to consume a large amount of data in standard charts.
 
-What if you want to render 10000 data points in a single series chart with a dimension of 500x400 pixels for the line, area, and column charts. So if we take the width of the canvas as 500 pixels, an average of 20 data plots will be drawn every width of a pixel which is not very informative with respect to visualization. 
+What if you want to render 10000 data points in a single series chart with a dimension of 500x400 pixels for the line, area, and column charts. So if we take the width of the canvas as 500 pixels, an average of 20 data plots will be drawn every width of a pixel which is not very informative with respect to visualization.
 
 **Data skipping** is a concept which has been introduced to draw only those plots in the canvas which actually creates a data trend without hampering the performance of the chart.
 
 Given below is the list of attributes with the help of which you can customize your data skipping:
 
-* Set `plotBinSize` attribute to `1`, to render minimum one data plot within the width of one pixel. Example, if `plotBinSize: 1`, minimum one column plot will be rendered within the width of one pixel.
-For line and area charts, minimum of two anchors connecting one single line will be drawn. If `plotBinSize: 0.5`, minimum two column plot on each pixel (width )will be rendered. 
+- Set `plotBinSize` attribute to `1`, to render minimum one data plot within the width of one pixel. Example, if `plotBinSize: 1`, minimum one column plot will be rendered within the width of one pixel.
+  For line and area charts, minimum of two anchors connecting one single line will be drawn. If `plotBinSize: 0.5`, minimum two column plot on each pixel (width )will be rendered.
 
-* Set the `labelBinSize` attribute to `1`, to display minimum one label in the width of one pixel.
+- Set the `labelBinSize` attribute to `1`, to display minimum one label in the width of one pixel.
 
 > To disable this label skipping, set this attribute to `0`.
 

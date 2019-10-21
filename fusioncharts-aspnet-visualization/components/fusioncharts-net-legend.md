@@ -26,7 +26,7 @@ visualizationObj.Legend.Show = false;
 
 Set the title of the legend as string using the `Text` properties. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.Legend.Caption = "column chart Legend section";
 ```
 
@@ -42,10 +42,10 @@ visualizationObj.Legend.Position = LegendObject.LegendPosition.Bottom;|
 
 Customize the font properties of the legend title using the following:
 
-* Set the font size as an integer using the `FontSize` properties.
-* Set the font type as string using the `FontName` properties.
-* Set the font color as hex code using the `FontColor` properties.
-* Display the title as bold by setting the `Bold` properties to `true`.
+- Set the font size as an integer using the `FontSize` properties.
+- Set the font type as string using the `FontName` properties.
+- Set the font color as hex code using the `FontColor` properties.
+- Display the title as bold by setting the `Bold` properties to `true`.
 
 Refer to the code given below:
 

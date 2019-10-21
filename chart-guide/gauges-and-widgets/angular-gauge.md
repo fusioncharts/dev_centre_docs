@@ -36,9 +36,9 @@ Dials are used to point to the desired value on the radial scale. You can point 
 
 Tick marks are the calibration marks on the radial scale to help interpret the reading. You can draw two types of tick marks on the chart:
 
-* Major Tick Marks – These are the bigger lines around the radial scale.
+-  Major Tick Marks – These are the bigger lines around the radial scale.
 
-* Minor Tick Marks – These are the smaller lines enclosed within the bigger lines.
+-  Minor Tick Marks – These are the smaller lines enclosed within the bigger lines.
 
 For all the tick marks, you can specify the color, height, and thickness. You can also specify the number of tick marks that you want to have on the chart, as well as choose whether to show/hide the tick mark values.
 
@@ -52,7 +52,7 @@ You can define trend points, arcs or markers on the angular gauge chart. For exa
 
 ### Annotations
 
-Using annotations,  you can draw custom shapes, display text, or load images on the gauge.
+Using annotations, you can draw custom shapes, display text, or load images on the gauge.
 
 Take a look at a standard angular gauge enlisting the various basic components:
 
@@ -64,85 +64,89 @@ Click [here](http://jsfiddle.net/fusioncharts/77QP6/) to edit the above chart.
 
 As an example, create an angular gauge that indicates the customer satisfaction score for the last week at Harry's SuperMart. To create the angular gauge by plotting the customer satisfaction score, do the following:
 
-* Specify the type using the `type` attribute. To render Angular gauge, set `angulargauge`.
+-  Specify the type using the `type` attribute. To render Angular gauge, set `angulargauge`.
 
-* Set the container object using `renderAt` attribute.
+-  Set the container object using `renderAt` attribute.
 
-* Specify the dimension of the chart using `width` and `height` attributes.
+-  Specify the dimension of the chart using `width` and `height` attributes.
 
-* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+-  Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-* Define the minimum value as `0` and the maximum value as `100`.
+-  Define the minimum value as `0` and the maximum value as `100`.
 
-* Divide the gauge scale into three regions, indicating a bad, a satisfactory, and a good customer satisfaction index. Color code the three regions in red, yellow, and green, respectively.
+-  Divide the gauge scale into three regions, indicating a bad, a satisfactory, and a good customer satisfaction index. Color code the three regions in red, yellow, and green, respectively.
 
-* Point the dial of the angular gauge to a certain value (say, 67).
+-  Point the dial of the angular gauge to a certain value (say, 67).
 
 Define the scale on which the score will be plotted, as shown in the table below:
 
-Range|What it means|Color |
--|-|-
-0-50%|Bad customer satisfaction|Red|
-50-75%|Moderate customer satisfaction|Yellow|
-75-100%|Good customer satisfaction|Green|
+| Range   | What it means                  | Color  |
+| ------- | ------------------------------ | ------ |
+| 0-50%   | Bad customer satisfaction      | Red    |
+| 50-75%  | Moderate customer satisfaction | Yellow |
+| 75-100% | Good customer satisfaction     | Green  |
 
 Use the following attributes to create a simple angular gauge with the data given above:
 
-* Specify the lower limit (or the minimum value) of the gauge scale using the `lowerLimit` attribute.
+-  Specify the lower limit (or the minimum value) of the gauge scale using the `lowerLimit` attribute.
 
-* Specify the upper limit (or the maximum value) of the gauge scale using the `upperLimit` attribute.
+-  Specify the upper limit (or the maximum value) of the gauge scale using the `upperLimit` attribute.
 
-* Specify the label to be displayed with the lower limit value on the gauge scale, using the `lowerLimitDisplay` attribute.
+-  Specify the label to be displayed with the lower limit value on the gauge scale, using the `lowerLimitDisplay` attribute.
 
-* Specify the label to be displayed with the upper limit value on the gauge scale, using the `upperLimitDisplay` attribute.
+-  Specify the label to be displayed with the upper limit value on the gauge scale, using the `upperLimitDisplay` attribute.
 
-* Render the data value along with the gauge by setting the value of the `showValue` attribute to `1`.
+-  Render the data value along with the gauge by setting the value of the `showValue` attribute to `1`.
 
-* Show the data value (if being rendered) below the pivot, by setting the value of the `valueBelowPivot` attribute to `1`.
+-  Show the data value (if being rendered) below the pivot, by setting the value of the `valueBelowPivot` attribute to `1`.
 
-* Specify the lower limit of a color range using the `minValue` attribute.
+-  Specify the lower limit of a color range using the `minValue` attribute.
 
-* Specify the upper limit of a color range using the `maxValue` attribute.
+-  Specify the upper limit of a color range using the `maxValue` attribute.
 
-* Specify the value that should be plotted on the gauge scale, using the `value` attribute.
+-  Specify the value that should be plotted on the gauge scale, using the `value` attribute.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "caption": "Customer Satisfaction Score",
-        "subcaption": "Last week",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "lowerLimitDisplay": "Bad",
-        "upperLimitDisplay": "Good",
-        "showValue": "1",
-        "valueBelowPivot": "1",
-        "theme": "fusion"
-    },
-    "colorRange": {
-        "color": [{
+   "chart": {
+      "caption": "Customer Satisfaction Score",
+      "subcaption": "Last week",
+      "lowerLimit": "0",
+      "upperLimit": "100",
+      "lowerLimitDisplay": "Bad",
+      "upperLimitDisplay": "Good",
+      "showValue": "1",
+      "valueBelowPivot": "1",
+      "theme": "fusion"
+   },
+   "colorRange": {
+      "color": [
+         {
             "minValue": "0",
             "maxValue": "50",
             "code": "#e44a00"
-        },
-        {
+         },
+         {
             "minValue": "50",
             "maxValue": "75",
             "code": "#f8bd19"
-        },
-        {
+         },
+         {
             "minValue": "75",
             "maxValue": "100",
             "code": "#6baa01"
-        }]
-    },
-    "dials": {
-        "dial": [{
+         }
+      ]
+   },
+   "dials": {
+      "dial": [
+         {
             "value": "67"
-        }]
-    }
+         }
+      ]
+   }
 }
 ```
 
@@ -160,18 +164,18 @@ An angular gauge is usually rendered with solid colors filled in the background.
 
 Use the following attributes to configure the gradient fill for the gauge:
 
-* Specify the gradient fill formula for the gauge scale using the `gaugeFillMix` attribute. Note that the color constituents are applied from the inner side to the outer side of the scale, which means that the color you specify first will be applied to the inner radius and the subsequent colors will move out towards the outer radius.
+-  Specify the gradient fill formula for the gauge scale using the `gaugeFillMix` attribute. Note that the color constituents are applied from the inner side to the outer side of the scale, which means that the color you specify first will be applied to the inner radius and the subsequent colors will move out towards the outer radius.
 
-* specify the ratio in which each of the colors specified for the gradient fill will be applied to the gauge scale using the `gaugeFillRatio` attribute. Note that if you set this attribute as empty, it instructs the gauge to automatically distribute the gradient color constituents.
+-  specify the ratio in which each of the colors specified for the gradient fill will be applied to the gauge scale using the `gaugeFillRatio` attribute. Note that if you set this attribute as empty, it instructs the gauge to automatically distribute the gradient color constituents.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
-        "gaugeFillRatio": "15"
-    },
+   "chart": {
+      "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
+      "gaugeFillRatio": "15"
+   }
 }
 ```
 
@@ -189,9 +193,9 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "showGaugeBorder": "0"
-    },
+   "chart": {
+      "showGaugeBorder": "0"
+   }
 }
 ```
 
@@ -207,9 +211,9 @@ Click [here](http://jsfiddle.net/fusioncharts/qmfofgwk/) to edit the above chart
 
 Use the following attributes to individually configure the color and transparency of the border of each range on the gauge scale:
 
-* Specify the hex code for the color that will be applied to the range border, using the `borderColor` attribute.
+-  Specify the hex code for the color that will be applied to the range border, using the `borderColor` attribute.
 
-* Set the transparency for the range border (between `0` for transparent and `100` for opaque) using the `borderAlpha` attribute.
+-  Set the transparency for the range border (between `0` for transparent and `100` for opaque) using the `borderAlpha` attribute.
 
 Note: To configure borders individually for each color range, use the attributes that belong to the `color` object, which in turn belongs to the `colorRange` object.
 
@@ -217,14 +221,15 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-    },
-    "colorRange": {
-        "color": [{
+   "chart": {},
+   "colorRange": {
+      "color": [
+         {
             "borderColor": "#780101",
             "borderAlpha": "100"
-        }]
-    },
+         }
+      ]
+   }
 }
 ```
 
@@ -238,21 +243,21 @@ Click [here](http://jsfiddle.net/fusioncharts/ACBTf/) to edit the above chart.
 
 Use the following attributes to configure the entire border of the gauge scale at once:
 
-* Specify the hex code of the color to be used to render the entire border of the gauge, using the `gaugeBorderColor` attribute.
+-  Specify the hex code of the color to be used to render the entire border of the gauge, using the `gaugeBorderColor` attribute.
 
-* Specify the thickness, in pixels, for the entire border of the gauge, using the `gaugeBorderThickness` attribute.
+-  Specify the thickness, in pixels, for the entire border of the gauge, using the `gaugeBorderThickness` attribute.
 
-* Specify the transparency for the entire border of the gauge (between `0` for transparent and `100` for opaque) using the `gaugeBorderAlpha` attribute.
+-  Specify the transparency for the entire border of the gauge (between `0` for transparent and `100` for opaque) using the `gaugeBorderAlpha` attribute.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "gaugeBorderColor": "#111111",
-        "gaugeBorderThickness": "1",
-        "gaugeBorderAlpha": "100"
-    },
+   "chart": {
+      "gaugeBorderColor": "#111111",
+      "gaugeBorderThickness": "1",
+      "gaugeBorderAlpha": "100"
+   }
 }
 ```
 
@@ -270,9 +275,9 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "gaugeBorderColor": "{dark-30}"
-    },
+   "chart": {
+      "gaugeBorderColor": "{dark-30}"
+   }
 }
 ```
 
@@ -286,18 +291,18 @@ Click [here](http://jsfiddle.net/fusioncharts/PwP4L/) to edit the above chart.
 
 Based on the data values provided, the gauge automatically calculates the outer and inner radii for the color range scale. You can, however, explicitly set the radii for the gauge using the following attributes:
 
-* Specify the outer radius (in pixels) for the color range scale, using the `gaugeOuterRadius` attribute.
+-  Specify the outer radius (in pixels) for the color range scale, using the `gaugeOuterRadius` attribute.
 
-* Specify the inner radius (in pixels) for the color range scale, using the `gaugeInnerRadius` attribute. Note that this attribute can take two types of values - either as exact pixels or as a percentage of the outer radius.
+-  Specify the inner radius (in pixels) for the color range scale, using the `gaugeInnerRadius` attribute. Note that this attribute can take two types of values - either as exact pixels or as a percentage of the outer radius.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "gaugeOuterRadius": "180",
-        "gaugeInnerRadius": "120"
-    },
+   "chart": {
+      "gaugeOuterRadius": "180",
+      "gaugeInnerRadius": "120"
+   }
 }
 ```
 
@@ -319,9 +324,9 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "pivotRadius": "10"
-    },
+   "chart": {
+      "pivotRadius": "10"
+   }
 }
 ```
 
@@ -335,18 +340,18 @@ Click [here](http://jsfiddle.net/fusioncharts/C2rW2/) to edit the above chart.
 
 Use the following attributes to configure pivot border cosmetics:
 
-* Specify the hex code of the color that will be applied to the pivot border, using the `pivotBorderColor` attribute.
+-  Specify the hex code of the color that will be applied to the pivot border, using the `pivotBorderColor` attribute.
 
-* Specify the transparency of the pivot border (between `0` for transparent and `100` for opaque) using the `pivotBorderAlpha` attribute.
+-  Specify the transparency of the pivot border (between `0` for transparent and `100` for opaque) using the `pivotBorderAlpha` attribute.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "pivotBorderColor": "#333333",
-        "pivotBorderAlpha": "100"
-    },
+   "chart": {
+      "pivotBorderColor": "#333333",
+      "pivotBorderAlpha": "100"
+   }
 }
 ```
 
@@ -360,18 +365,18 @@ Click [here](http://jsfiddle.net/fusioncharts/hqC87/) to edit the above chart.
 
 Use the following attributes to configure pivot fill cosmetics:
 
-* Specify the hex code of the fill color for the pivot, using the `pivotFillColor` attribute.
+-  Specify the hex code of the fill color for the pivot, using the `pivotFillColor` attribute.
 
-* Specify the transparency for the fill color for the pivot (between `0` for transparent and `100` for opaque) using the `pivotFillAlpha` attribute.
+-  Specify the transparency for the fill color for the pivot (between `0` for transparent and `100` for opaque) using the `pivotFillAlpha` attribute.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "pivotFillColor": "#5599CC",
-        "pivotFillAlpha": "100"
-    },
+   "chart": {
+      "pivotFillColor": "#5599CC",
+      "pivotFillAlpha": "100"
+   }
 }
 ```
 
@@ -385,19 +390,19 @@ Click [here](http://jsfiddle.net/fusioncharts/56cXa/) to edit the above chart.
 
 The `pivotFillColor` attribute fills the pivot with a single solid color. However, you can also fill the pivot with a gradient fill, by using the attributes given below:
 
-* Specify the gradient fill formula using the `pivotFillMix` attribute.
+-  Specify the gradient fill formula using the `pivotFillMix` attribute.
 
-* Specify the ratio in which the gradient color constituents will be applied to the pivot, using the `pivotFillRatio` attribute.
+-  Specify the ratio in which the gradient color constituents will be applied to the pivot, using the `pivotFillRatio` attribute.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "pivotFillColor": "#1122CC",
-        "pivotFillMix": "{dark-50},{light-30},{dark-40}",
-        "pivotFillRatio": "70,30"
-    },
+   "chart": {
+      "pivotFillColor": "#1122CC",
+      "pivotFillMix": "{dark-50},{light-30},{dark-40}",
+      "pivotFillRatio": "70,30"
+   }
 }
 ```
 
@@ -415,9 +420,9 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "pivotFillType": "linear"
-    },
+   "chart": {
+      "pivotFillType": "linear"
+   }
 }
 ```
 
@@ -435,11 +440,11 @@ With FusionCharts Suite XT, you can configure dials in angular gauges for severa
 
 Use the following attributes to configure the borders of a dial:
 
-* Specify the hex code of the color that will be used to render the dial border, using the `borderColor` attribute.
+-  Specify the hex code of the color that will be used to render the dial border, using the `borderColor` attribute.
 
-* Specify the thickness (in pixels) of the dial border using the `borderThickness` attribute.
+-  Specify the thickness (in pixels) of the dial border using the `borderThickness` attribute.
 
-* Specify the transparency of the border of the dial (between `0` for transparent and `100` for opaque) using the `borderAlpha` attribute.
+-  Specify the transparency of the border of the dial (between `0` for transparent and `100` for opaque) using the `borderAlpha` attribute.
 
 Refer to the code below:
 
@@ -505,9 +510,9 @@ Click [here](http://jsfiddle.net/fusioncharts/VbvM4/) to edit the above chart.
 
 By default, the gauge automatically configures the radius of the dial. However, you can also explicitly specify the radius for the dial, as well as the rear extension (extension on the opposite side), using the following attributes:
 
-* Specify the radius for the dial (in pixels) using the `radius` attribute.
+-  Specify the radius for the dial (in pixels) using the `radius` attribute.
 
-* Specify the distance (in pixels) by which the dial will extend beyond the pivot, in the opposite direction, using the `rearExtension` attribute.
+-  Specify the distance (in pixels) by which the dial will extend beyond the pivot, in the opposite direction, using the `rearExtension` attribute.
 
 Refer to the code below:
 
@@ -540,9 +545,9 @@ Click [here](http://jsfiddle.net/fusioncharts/B9Q68/) to edit the above chart.
 
 If you Increase the base and the top width of a dial, you can increase the thickness of both. That way, you can create different dial shapes to suit your design requirements. Use the following attributes to do so:
 
-* Specify the width (in pixels) of the bottom of the dial (the part connected to the pivot), using the `baseWidth` attribute.
+-  Specify the width (in pixels) of the bottom of the dial (the part connected to the pivot), using the `baseWidth` attribute.
 
-* Specify the width (in pixels) of the top of the dial, using the `topWidth` attribute.
+-  Specify the width (in pixels) of the top of the dial, using the `topWidth` attribute.
 
 Refer to the code below:
 
@@ -575,17 +580,17 @@ Click [here](http://jsfiddle.net/fusioncharts/E2rz2/) to edit the above chart.
 
 You can use hover effects to modify how the dial reacts when you hover the mouse pointer over it. Use the following attributes to configure hover effects:
 
-* Set the value of the `showHoverEffect` attribute to `1`, to enable hover effect for the gauge elements.
+-  Set the value of the `showHoverEffect` attribute to `1`, to enable hover effect for the gauge elements.
 
-* Specify the hex code for the color to be used to render the dial when you hover the mouse pointer over it, using the `bgHoverColor` attribute.
+-  Specify the hex code for the color to be used to render the dial when you hover the mouse pointer over it, using the `bgHoverColor` attribute.
 
-* Specify the transparency (between `0` for transparent and `100` for opaque) for the dial when you hover the mouse pointer over it, using the `bgHoverAlpha` attribute.
+-  Specify the transparency (between `0` for transparent and `100` for opaque) for the dial when you hover the mouse pointer over it, using the `bgHoverAlpha` attribute.
 
-* Specifies the hex code for the color that will be used to render the border of the dial when you hover the mouse pointer over it, using the `borderHoverColor` attribute.
+-  Specifies the hex code for the color that will be used to render the border of the dial when you hover the mouse pointer over it, using the `borderHoverColor` attribute.
 
-* Specify the transparency (between `0` for transparent and `100` for opaque) for the border of the dial when you hover the mouse pointer over it, using the `borderHoverAlpha` attribute.
+-  Specify the transparency (between `0` for transparent and `100` for opaque) for the border of the dial when you hover the mouse pointer over it, using the `borderHoverAlpha` attribute.
 
-* Specify the thickness for the border of the dial when you hover the mouse pointer over it, using the `borderHoverThickness` attribute.
+-  Specify the thickness for the border of the dial when you hover the mouse pointer over it, using the `borderHoverThickness` attribute.
 
 Refer to the code below:
 
@@ -677,7 +682,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/RXe47/) to edit the above chart.
 
-The above sample replaces the hard-coded value with the macro $value. Now, whenever you roll the mouse pointer over the dial, the current value of the dial will be displayed along with the text set in the `tooltext` attribute of the `dial` element.
+The above sample replaces the hard-coded value with the macro \$value. Now, whenever you roll the mouse pointer over the dial, the current value of the dial will be displayed along with the text set in the `tooltext` attribute of the `dial` element.
 
 To see a detailed list of available macros, please refer to [this](/chart-guide/chart-configurations/tool-tips#introduction-to-macros) link.
 
@@ -728,98 +733,105 @@ Click [here](http://jsfiddle.net/fusioncharts/7L2PT/) to edit the above chart.
 
 Apart from configuring the appearance of the dial, you can also show/hide dial values and configure their placement. Use the following attributes to configure dial values:
 
-* Display the value of the dial, by setting the value of the `showValue` attribute to `1`.
+-  Display the value of the dial, by setting the value of the `showValue` attribute to `1`.
 
-* Specify the x-position of the `value` text field using the `valueX` attribute.
+-  Specify the x-position of the `value` text field using the `valueX` attribute.
 
-* Specify the y-position of the `value` text-field using the `valueY` attribute.
+-  Specify the y-position of the `value` text-field using the `valueY` attribute.
 
-* Specify the font family to be used to render the values on the gauge, using the `valueFont` attribute.
+-  Specify the font family to be used to render the values on the gauge, using the `valueFont` attribute.
 
-* Specify the hex code of the color that will be used to render the value, using the `valueFontColor` attribute.
+-  Specify the hex code of the color that will be used to render the value, using the `valueFontColor` attribute.
 
-* Set the font size for the value (between `0` and `72`) using the `valueFontSize` attribute.
+-  Set the font size for the value (between `0` and `72`) using the `valueFontSize` attribute.
 
-* Set the value of the `valueFontBold` attribute to `1`, to apply bold formatting to the value.
+-  Set the value of the `valueFontBold` attribute to `1`, to apply bold formatting to the value.
 
-* Set the value of the `valueFontItalic` attribute to `1`, to apply italic formatting to the value.
+-  Set the value of the `valueFontItalic` attribute to `1`, to apply italic formatting to the value.
 
-* Specify the hex code for the color that will be used to render the background of the value, using the `valueBgColor` attribute.
+-  Specify the hex code for the color that will be used to render the background of the value, using the `valueBgColor` attribute.
 
-* Specify the hex code for the color that will be used to render a border around the value text, using the `valueBorderColor` attribute.
+-  Specify the hex code for the color that will be used to render a border around the value text, using the `valueBorderColor` attribute.
 
-* Set the transparency (between `0` for transparent and `100` for opaque) of the value using the `valueAlpha` attribute.
+-  Set the transparency (between `0` for transparent and `100` for opaque) of the value using the `valueAlpha` attribute.
 
-* Set the transparency (between `0` for transparent and `100` for opaque) of the font of the value using the `valueFontAlpha` attribute.
+-  Set the transparency (between `0` for transparent and `100` for opaque) of the font of the value using the `valueFontAlpha` attribute.
 
-* Set the transparency (between `0` for transparent and `100` for opaque) of the value background using the `valueBgAlpha` attribute.
+-  Set the transparency (between `0` for transparent and `100` for opaque) of the value background using the `valueBgAlpha` attribute.
 
-* Set the transparency (between `0` for transparent and `100` for opaque) of the value border using the `valueBorderAlpha` attribute.
+-  Set the transparency (between `0` for transparent and `100` for opaque) of the value border using the `valueBorderAlpha` attribute.
 
-* Specify the thickness (in pixels) for the value border, using the `valueBorderThickness` attribute.
+-  Specify the thickness (in pixels) for the value border, using the `valueBorderThickness` attribute.
 
-* Specify the radius (in pixels) for the value border, using the `valueBorderRadius` attribute.
+-  Specify the radius (in pixels) for the value border, using the `valueBorderRadius` attribute.
 
-* Set the value of the `valueBorderDashed` attribute to `1`, to render the border around the value using dashed lines.
+-  Set the value of the `valueBorderDashed` attribute to `1`, to render the border around the value using dashed lines.
 
-* Specify the length (in pixels) of each dash (if you render the value border using dashed lines), using the `valueBorderDashLen` attribute.
+-  Specify the length (in pixels) of each dash (if you render the value border using dashed lines), using the `valueBorderDashLen` attribute.
 
-* Specify the gap (in pixels) between two consecutive dashes (if you render the value border using dashed lines), using the `valueBorderDashGap` attribute.
+-  Specify the gap (in pixels) between two consecutive dashes (if you render the value border using dashed lines), using the `valueBorderDashGap` attribute.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "caption": "Average Customer Satisfaction Score",
-        "subcaption": "Last year vs Current year",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "valueFontSize": "16",
-        "valueFontBold": "1",
-        "valueBgColor": "#cccccc",
-        "valueBorderColor": "#999999",
-        "valueAlpha": "80",
-        "valueBorderThickness": "2",
-        "valueBorderRadius": "2",
-        "valueBorderDashed": "1",
-        "valueBorderDashGap": "2",
-        "valueBorderDashLen": "5",
-        "gaugeFillMix": "{dark-40},{light-40},{dark-20}",
-        "theme": "fusion"
-    },
-    "colorRange": {
-        "color": [{
+   "chart": {
+      "caption": "Average Customer Satisfaction Score",
+      "subcaption": "Last year vs Current year",
+      "lowerLimit": "0",
+      "upperLimit": "100",
+      "valueFontSize": "16",
+      "valueFontBold": "1",
+      "valueBgColor": "#cccccc",
+      "valueBorderColor": "#999999",
+      "valueAlpha": "80",
+      "valueBorderThickness": "2",
+      "valueBorderRadius": "2",
+      "valueBorderDashed": "1",
+      "valueBorderDashGap": "2",
+      "valueBorderDashLen": "5",
+      "gaugeFillMix": "{dark-40},{light-40},{dark-20}",
+      "theme": "fusion"
+   },
+   "colorRange": {
+      "color": [
+         {
             "minValue": "0",
             "maxValue": "50",
             "code": "#e44a00"
-        }, {
+         },
+         {
             "minValue": "50",
             "maxValue": "75",
             "code": "#f8bd19"
-        }, {
+         },
+         {
             "minValue": "75",
             "maxValue": "100",
             "code": "#6baa01"
-        }]
-    },
-    "dials": {
-        "dial": [{
+         }
+      ]
+   },
+   "dials": {
+      "dial": [
+         {
             "value": "67",
             "showValue": "1",
             "valueX": "190",
             "valueY": "180",
             "tooltext": "Last year's average : $value",
             "rearExtension": "15"
-        }, {
+         },
+         {
             "value": "78",
             "showValue": "1",
             "valueX": "260",
             "valueY": "220",
             "tooltext": "Current year's average : $value",
             "rearExtension": "15"
-        }]
-    }
+         }
+      ]
+   }
 }
 ```
 
@@ -857,18 +869,18 @@ Refer to the code below:
 
 Use the following attributes to show/hide tick marks and values:
 
-* Set the value of the `showTickMarks` attribute to `0`, to hide tick marks.
+-  Set the value of the `showTickMarks` attribute to `0`, to hide tick marks.
 
-* Set the value of the `showTickValues` attribute to `0`, to hide tick values.
+-  Set the value of the `showTickValues` attribute to `0`, to hide tick values.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "showTickMarks": "0",
-        "showTickValues": "0"
-    },
+   "chart": {
+      "showTickMarks": "0",
+      "showTickValues": "0"
+   }
 }
 ```
 
@@ -882,18 +894,18 @@ Click [here](http://jsfiddle.net/fusioncharts/mT4uH/) to edit the above chart.
 
 By default, the tick marks and tick values are rendered outside the gauge scale. However, you can configure them to be placed inside the gauge, using the following attributes:
 
-* Set the value of the `placeTicksInside` attribute to `1`, to place tick marks inside the gauge.
+-  Set the value of the `placeTicksInside` attribute to `1`, to place tick marks inside the gauge.
 
-* Set the value of the `placeValuesInside` attribute to `1`, to place tick values inside the gauge.
+-  Set the value of the `placeValuesInside` attribute to `1`, to place tick values inside the gauge.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "placeTicksInside": "1",
-        "placeValuesInside": "1"
-    },
+   "chart": {
+      "placeTicksInside": "1",
+      "placeValuesInside": "1"
+   }
 }
 ```
 
@@ -907,18 +919,18 @@ Click [here](http://jsfiddle.net/fusioncharts/GySkt/) to edit the above chart.
 
 Based on the data you provide, the gauge automatically decides the number of major and minor tick marks to render. However, you can use the following attributes to explicitly specify the number of major and minor tick marks:
 
-* Specify the number of major tick marks to be rendered on the gauge scale, using the `majorTMNumber` attribute.
+-  Specify the number of major tick marks to be rendered on the gauge scale, using the `majorTMNumber` attribute.
 
-* Specify the number of minor tick marks to be rendered on the gauge scale, using the `minorTMNumber` attribute.
+-  Specify the number of minor tick marks to be rendered on the gauge scale, using the `minorTMNumber` attribute.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "majorTMNumber": "9",
-        "minorTMNumber": "4"
-    },
+   "chart": {
+      "majorTMNumber": "9",
+      "minorTMNumber": "4"
+   }
 }
 ```
 
@@ -932,36 +944,36 @@ Click [here](http://jsfiddle.net/fusioncharts/sq4RC/) to edit the above chart.
 
 You can customize the color, transparency, height, and thickness of of the major and minor tick marks, using the following attributes:
 
-* Specify the hex code of the color of the major tick marks using the `majorTMColor` attribute.
+-  Specify the hex code of the color of the major tick marks using the `majorTMColor` attribute.
 
-* Specify the transparency (between `0` for transparent and `100` for opaque) of the major tick marks using the `majorTMAlpha` attribute.
+-  Specify the transparency (between `0` for transparent and `100` for opaque) of the major tick marks using the `majorTMAlpha` attribute.
 
-* Specify the height of the major tick marks using the `majorTMHeight` attribute.
+-  Specify the height of the major tick marks using the `majorTMHeight` attribute.
 
-* Specify the thickness of the major tick marks using the `majorTMThickness` attribute.
+-  Specify the thickness of the major tick marks using the `majorTMThickness` attribute.
 
-* Specify the hex code of the color of the minor tick marks using the `minorTMColor` attribute.
+-  Specify the hex code of the color of the minor tick marks using the `minorTMColor` attribute.
 
-* Specify the transparency (between `0` for transparent and `100` for opaque) of the minor tick marks, using the `minorTMAlpha` attribute.
+-  Specify the transparency (between `0` for transparent and `100` for opaque) of the minor tick marks, using the `minorTMAlpha` attribute.
 
-* Specify the height of the minor tick marks using the `minorTMHeight` attribute.
+-  Specify the height of the minor tick marks using the `minorTMHeight` attribute.
 
-* Specify the thickness of the minor tick marks using the `minorTMThickness` attribute.
+-  Specify the thickness of the minor tick marks using the `minorTMThickness` attribute.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "majorTMColor": "#333333",
-        "majorTMAlpha": "100",
-        "majorTMHeight": "15",
-        "majorTMThickness": "2",
-        "minorTMColor": "#666666",
-        "minorTMAlpha": "100",
-        "minorTMHeight": "12",
-        "minorTMThickness": "1"
-    },
+   "chart": {
+      "majorTMColor": "#333333",
+      "majorTMAlpha": "100",
+      "majorTMHeight": "15",
+      "majorTMThickness": "2",
+      "minorTMColor": "#666666",
+      "minorTMAlpha": "100",
+      "minorTMHeight": "12",
+      "minorTMThickness": "1"
+   }
 }
 ```
 
@@ -979,9 +991,9 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "tickValueStep": "2"
-    },
+   "chart": {
+      "tickValueStep": "2"
+   }
 }
 ```
 
@@ -995,18 +1007,18 @@ Click [here](http://jsfiddle.net/fusioncharts/n3qt2/) to edit the above chart.
 
 You can show decimal numbers as tick values. For these decimal numbers, you can configure how many digits are rendered after the decimal point and whether digits are forced to display values after the decimal point. Use the following attributes to do so:
 
-* Specify the number of digits to be rendered after the decimal point, using the `tickValueDecimals` attribute.
+-  Specify the number of digits to be rendered after the decimal point, using the `tickValueDecimals` attribute.
 
-* Set the value of the `forceTickValueDecimals` attribute to `1`, to force tick values to show decimal places.
+-  Set the value of the `forceTickValueDecimals` attribute to `1`, to force tick values to show decimal places.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "tickValueDecimals": "1",
-        "forceTickValueDecimals": "1"
-    },
+   "chart": {
+      "tickValueDecimals": "1",
+      "forceTickValueDecimals": "1"
+   }
 }
 ```
 
@@ -1020,21 +1032,21 @@ Click [here](http://jsfiddle.net/fusioncharts/cPR9z/) to edit the above chart.
 
 You can set the distance between tick values, using the following attributes:
 
-* Specify the distance (in pixels) between tick marks and their corresponding values, using the `tickValueDistance` attribute.
+-  Specify the distance (in pixels) between tick marks and their corresponding values, using the `tickValueDistance` attribute.
 
-* Set the value of the `manageValueOverLapping` attribute to `1`, to automatically eliminate overlapping of tick values and trend values.
+-  Set the value of the `manageValueOverLapping` attribute to `1`, to automatically eliminate overlapping of tick values and trend values.
 
-* Set the value of the `autoAlignTickValues` attribute to `1`, to force the gauge to automatically place tick values. That way, you can reduce overlapping of the tick values with the gauge.
+-  Set the value of the `autoAlignTickValues` attribute to `1`, to force the gauge to automatically place tick values. That way, you can reduce overlapping of the tick values with the gauge.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "autoAlignTickValues": "1",
-        "manageValueOverLapping": "1",
-        "tickValueDistance": "25"
-    },
+   "chart": {
+      "autoAlignTickValues": "1",
+      "manageValueOverLapping": "1",
+      "tickValueDistance": "25"
+   }
 }
 ```
 
@@ -1050,25 +1062,25 @@ Trend points are elements that you use to show a target value on the gauge. For 
 
 Add a simple trend point to the gauge and customize it, using the following attributes:
 
-* Specify the starting value for the trend point using the `startValue` attribute.
+-  Specify the starting value for the trend point using the `startValue` attribute.
 
-* Display a label for the trend point, using the `displayValue` attribute. Note that if you do not specify a label, then the chart will display the data value at the trend point.
+-  Display a label for the trend point, using the `displayValue` attribute. Note that if you do not specify a label, then the chart will display the data value at the trend point.
 
-* Specify whether the trend point value will be rendered inside the gauge, by setting the value of the `valueInside` attribute to `1`.
+-  Specify whether the trend point value will be rendered inside the gauge, by setting the value of the `valueInside` attribute to `1`.
 
-* Specify the hex code of the color to be used to render the trend point and its associated text, using the `color` attribute.
+-  Specify the hex code of the color to be used to render the trend point and its associated text, using the `color` attribute.
 
-* Specify the thickness of the trend point (in pixels) using the `thickness` attribute.
+-  Specify the thickness of the trend point (in pixels) using the `thickness` attribute.
 
-* Specify the radius of the trendpoint (in pixels) using the `radius` attribute.
+-  Specify the radius of the trendpoint (in pixels) using the `radius` attribute.
 
-* Specify whether you want to render the trend point as a dashed line, by setting the value of the `dashed` attribute to `1`.
+-  Specify whether you want to render the trend point as a dashed line, by setting the value of the `dashed` attribute to `1`.
 
-* Specify the length of each dash (in pixels), if the trend point will be rendered as a dashed line, using the `dashLen` attribute.
+-  Specify the length of each dash (in pixels), if the trend point will be rendered as a dashed line, using the `dashLen` attribute.
 
-* Specify the gap between each dash (in pixels), if the trend point will be rendered as a dashed line, using the `dashGap` attribute.
+-  Specify the gap between each dash (in pixels), if the trend point will be rendered as a dashed line, using the `dashGap` attribute.
 
-* Specify the distance (in pixels) between a trend line and its corresponding value, using the `trendValueDistance` attribute.
+-  Specify the distance (in pixels) between a trend line and its corresponding value, using the `trendValueDistance` attribute.
 
 Note: These attributes belong to the `point` object, which in turn belongs to the `trendpoints` object.
 
@@ -1118,15 +1130,15 @@ Click [here](http://jsfiddle.net/fusioncharts/M5u7c/) to edit the above chart.
 
 For each trend point, you can show a triangular marker and customize it. Use the following attributes to do so:
 
-* Set a marker to be rendered for each trend point on the gauge, by setting the value of the `useMarker` attribute to `1`.
+-  Set a marker to be rendered for each trend point on the gauge, by setting the value of the `useMarker` attribute to `1`.
 
-* Specify the hex code of the color to be used to render the marker, using the `markerColor` attribute.
+-  Specify the hex code of the color to be used to render the marker, using the `markerColor` attribute.
 
-* Specify the hex code of the color to be used to render the border of the marker, using the `markerBorderColor` attribute.
+-  Specify the hex code of the color to be used to render the border of the marker, using the `markerBorderColor` attribute.
 
-* Specify the radius (in pixels) of the marker, using the `markerRadius` attribute.
+-  Specify the radius (in pixels) of the marker, using the `markerRadius` attribute.
 
-* Specify the tooltip text to be rendered when you hover the mouse pointer over the marker, using the `markerTooltext` attribute.
+-  Specify the tooltip text to be rendered when you hover the mouse pointer over the marker, using the `markerTooltext` attribute.
 
 Refer to the code below:
 
@@ -1168,9 +1180,9 @@ Click [here](http://jsfiddle.net/fusioncharts/MEtf5/) to edit the above chart.
 
 You can create trend-arcs to represent a range of values, instead of a single value. Use the following attributes to do so:
 
-* Specify the starting value for the trend arc, using the `startValue` attribute.
+-  Specify the starting value for the trend arc, using the `startValue` attribute.
 
-* Specify the ending value for the trend arc, using the `endValue` attribute.
+-  Specify the ending value for the trend arc, using the `endValue` attribute.
 
 Refer to the code below:
 
@@ -1208,17 +1220,17 @@ Click [here](http://jsfiddle.net/fusioncharts/CLRvS/) to edit the above chart.
 
 Use the following attributes to customize the functional and cosmetic properties of a trend arc:
 
-* Specify the radius (in pixels) of the trend arc, using the `radius` attribute.
+-  Specify the radius (in pixels) of the trend arc, using the `radius` attribute.
 
-* Specify the radius (in pixels) of the inner side of the arc, using the `innerRadius` attribute.
+-  Specify the radius (in pixels) of the inner side of the arc, using the `innerRadius` attribute.
 
-* Specify the hex code of the color to be used to render the trend arc, using the `color` attribute.
+-  Specify the hex code of the color to be used to render the trend arc, using the `color` attribute.
 
-* Set the transparency (between `0` for transparent and `100` for opaque) of the trend arc using the `alpha` attribute.
+-  Set the transparency (between `0` for transparent and `100` for opaque) of the trend arc using the `alpha` attribute.
 
-* Hide the border around the trend arc by setting the value of the `showBorder` attribute to `1`.
+-  Hide the border around the trend arc by setting the value of the `showBorder` attribute to `1`.
 
-* Specify the hex code of the color to be used to render the trend arc border, using the `borderColor` attribute.
+-  Specify the hex code of the color to be used to render the trend arc border, using the `borderColor` attribute.
 
 Refer to the code below:
 
@@ -1265,17 +1277,17 @@ Using FusionCharts Suite XT, you can draw the angular gauge from virtually any s
 
 Use the following attributes of the `chart` object to create charts of various angles and from various starting points:
 
-* Set the angle (between `-360` and `360`) at which the gauge will start drawing, using the `gaugeStartAngle` attribute.
+-  Set the angle (between `-360` and `360`) at which the gauge will start drawing, using the `gaugeStartAngle` attribute.
 
-* Set the angle (between `-360` and `360`) at which the gauge will finish drawing, using the `gaugeEndAngle` attribute.
+-  Set the angle (between `-360` and `360`) at which the gauge will finish drawing, using the `gaugeEndAngle` attribute.
 
-* Manually specify the x - coordinate at which the center of the gauge will be placed, using the `gaugeOriginX` attribute.
+-  Manually specify the x - coordinate at which the center of the gauge will be placed, using the `gaugeOriginX` attribute.
 
-* Manually specify the y-coordinate at which the center of the gauge will be placed, using the `gaugeOriginY` attribute. Note that the `gaugeOriginX` and `gaugeOriginY` attributes are useful when you design gauges with small angles or use custom objects to draw certain objects, and need to set the exact center position.
+-  Manually specify the y-coordinate at which the center of the gauge will be placed, using the `gaugeOriginY` attribute. Note that the `gaugeOriginX` and `gaugeOriginY` attributes are useful when you design gauges with small angles or use custom objects to draw certain objects, and need to set the exact center position.
 
-* Specify the outer radius (in pixels) for the color range scale, using the `gaugeOuterRadius` attribute.
+-  Specify the outer radius (in pixels) for the color range scale, using the `gaugeOuterRadius` attribute.
 
-* Specify the inner radius (in pixels) for the color range scale, using the `gaugeInnerRadius` attribute. Note that this attribute can take two types of values, either as exact pixels, or as a percentage of the outer radius.
+-  Specify the inner radius (in pixels) for the color range scale, using the `gaugeInnerRadius` attribute. Note that this attribute can take two types of values, either as exact pixels, or as a percentage of the outer radius.
 
 ## Configure gauge angles
 
@@ -1289,10 +1301,10 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "gaugeStartAngle": "0",
-        "gaugeEndAngle": "90"
-    },
+   "chart": {
+      "gaugeStartAngle": "0",
+      "gaugeEndAngle": "90"
+   }
 }
 ```
 
@@ -1312,10 +1324,10 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "gaugeStartAngle": "45",
-        "gaugeEndAngle": "135"
-    },
+   "chart": {
+      "gaugeStartAngle": "45",
+      "gaugeEndAngle": "135"
+   }
 }
 ```
 
@@ -1335,9 +1347,9 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "gaugeOriginY": "230"
-    },
+   "chart": {
+      "gaugeOriginY": "230"
+   }
 }
 ```
 
@@ -1353,15 +1365,15 @@ Click [here](http://jsfiddle.net/fusioncharts/o4cfv31a/) to edit the above chart
 
 To enable the dynamic resizing feature, you need to :
 
-* Set the gauge size in percentage.
+-  Set the gauge size in percentage.
 
-* Set the container dimensions such that it can resize dynamically when the browser resizes or due to other changes taking place in the page (like when an element is added/removed or due to user interaction).
+-  Set the container dimensions such that it can resize dynamically when the browser resizes or due to other changes taking place in the page (like when an element is added/removed or due to user interaction).
 
 Whenever you resize the container element, the gauge can also dynamically resize itself instantly. Use the following attributes to enable this feature:
 
-* Specify whether the gauge will dynamically resize when its parent container is resized, by setting the value of the `manageResize` attribute to `1`. Note that this attribute is not applicable when you set the `autoScale` attribute to `0`.
+-  Specify whether the gauge will dynamically resize when its parent container is resized, by setting the value of the `manageResize` attribute to `1`. Note that this attribute is not applicable when you set the `autoScale` attribute to `0`.
 
-* Specify the original width and height of the chart and then set the `autoScale` attribute to 1, if you've defined chart parameters (gauge origin, coordinates, etc.) using a specific chart size and now want to scale the chart to a different size.
+-  Specify the original width and height of the chart and then set the `autoScale` attribute to 1, if you've defined chart parameters (gauge origin, coordinates, etc.) using a specific chart size and now want to scale the chart to a different size.
 
 Refer to the code below:
 
@@ -1396,7 +1408,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-{% embed_chart gauges-and-widgets-angular-example-35.js %}
+{% embed_chart gauges-and-widgets-angular-example-35.js width:400px height:300px display:inline-block %}
 
 Click [here](http://jsfiddle.net/fusioncharts/wLLzwssf/) to edit the above chart.
 
@@ -1428,9 +1440,9 @@ To take care of this scenario, you need to pass the original width and height (a
 
 The `origW` and `origH`attributes function as follows:
 
-* Specify the original width of the gauge using the `origW` attribute, if you want to dynamically resize the chart. It refers to the width based on which the various elements of the gauge have been manually configured.
+-  Specify the original width of the gauge using the `origW` attribute, if you want to dynamically resize the chart. It refers to the width based on which the various elements of the gauge have been manually configured.
 
-* Specify the original height of the gauge using the `origH` attribute, if you want to dynamically resize the chart. It refers to the height based on which the various elements of the gauge have been manually configured.
+-  Specify the original height of the gauge using the `origH` attribute, if you want to dynamically resize the chart. It refers to the height based on which the various elements of the gauge have been manually configured.
 
 Refer to the code below:
 
@@ -1461,7 +1473,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-36.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/v5f4szq0/ "@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/v5f4szq0/ '@open-newtab') to edit the above chart.
 
 The sample given above is calculated with a original width of 390 pixels and original height of 300 pixels. You can also see that a host of attributes (`gaugeOriginX`, `gaugeOriginY`, and `gaugeOuterRadius`, as well as `valueX` and `valueY` on the `dial` object) have been defined with fixed coordinate values. Now, if you have to render this chart with any values other than 390 pixels wide and 300 pixels tall, several of the gauge elements may not be positioned as intended. To solve this issue, you can define `origw` and `origh` attributes to `390` and `300` respectively, in the `chart` object, and provide a different width and height (`300` and `280`) for the chart. The chart will still appear as expected. In a similar way, you can also dynamically scale and resize the annotations present in a gauge.
 
@@ -1473,31 +1485,31 @@ Gauges can be set to update in real time, either programmatically or by polling 
 
 Real-time gauges can be made more intuitive by setting an alert that indicates when a defined set of threshold data values are reached.
 
-For example, if you are monitoring the CPU utilization on the server and want to display a warning message when it goes above 70%, you can set an alert using the __Alert Manager__.
+For example, if you are monitoring the CPU utilization on the server and want to display a warning message when it goes above 70%, you can set an alert using the **Alert Manager**.
 
 An `alert` object contains the following attributes:
 
-* Specify the `minValue` attribute to set the minimum value for the alert range. For example, to define an alert for the range 0 - 50, `minValue` will be `0`(inclusive).
+-  Specify the `minValue` attribute to set the minimum value for the alert range. For example, to define an alert for the range 0 - 50, `minValue` will be `0`(inclusive).
 
-* Specify the `maxValue` attribute to set the maximum value for the alert range. For example, to define an alert for the range 0-50, `maxValue` will be 50 (inclusive).
+-  Specify the `maxValue` attribute to set the maximum value for the alert range. For example, to define an alert for the range 0-50, `maxValue` will be 50 (inclusive).
 
-* `action` attribute is to used when the value on the gauge matches an alert range. Possible values for the this attribute are:
+-  `action` attribute is to used when the value on the gauge matches an alert range. Possible values for the this attribute are:
 
-  * `CALLJS` – Calls a JavaScript function that is specified in the `param` attribute (explained below).
-  * `SHOWANNOTATION` –  Displays an annotation item or a group. The group id of the annotation  is specified in `param` attribute.
+   -  `CALLJS` – Calls a JavaScript function that is specified in the `param` attribute (explained below).
+   -  `SHOWANNOTATION` – Displays an annotation item or a group. The group id of the annotation is specified in `param` attribute.
 
-* `param` attribute is used to set the action of the parameter depending on the type of action:
+-  `param` attribute is used to set the action of the parameter depending on the type of action:
 
-  * `CALLJS` -   takes the name of JavaScript function and its parameters
-  * `SHOWANNOTATION` - takes the ID of the annotation items or a .
+   -  `CALLJS` - takes the name of JavaScript function and its parameters
+   -  `SHOWANNOTATION` - takes the ID of the annotation items or a .
 
 Due to some security policies, usage of `eval` has been removed and some of the features of param attribute has been deprecated:
 
-* Special characters like `(`, `)`, `-` and `,` cannot be passed as a parameter while function call.
-* Multiple functions cannot be passed after `param` attribute.
-* A function cannot be defined after `param` attribute.
+-  Special characters like `(`, `)`, `-` and `,` cannot be passed as a parameter while function call.
+-  Multiple functions cannot be passed after `param` attribute.
+-  A function cannot be defined after `param` attribute.
 
-Let's create a sample to show the server CPU utilization of __akme.com__. The angular gauge is configured with three color-coded bands to identify levels of utilization of the server. When the CPU utilization is over 70%, an alert is set to display a warning message. The message to be displayed is passed to the `showAlert()` JavaScript method.
+Let's create a sample to show the server CPU utilization of **akme.com**. The angular gauge is configured with three color-coded bands to identify levels of utilization of the server. When the CPU utilization is over 70%, an alert is set to display a warning message. The message to be displayed is passed to the `showAlert()` JavaScript method.
 
 The code snippet to set up the alert manager is as follows:
 
@@ -1525,9 +1537,9 @@ Click [here](http://jsfiddle.net/fusioncharts/k6he33en/) to edit the above chart
 
 The container element for `alert` is `alerts`, which is a child of the `chart` element. `alert` is an array of objects where every object defines a threshold range (alert range). One of the following actions can be specified with any alert range:
 
-* Call a JavaScript function
+-  Call a JavaScript function
 
-* Show a predefined annotation
+-  Show a predefined annotation
 
 > Make sure that the alert ranges do not overlap.
 
@@ -1609,15 +1621,15 @@ You can use the angular gauge in FusionCharts Suite XT as an input control, to v
 
 ### Convert a normal gauge to an editable gauge
 
-You can convert a  normal angular gauge to an editable gauge, by either converting all its dials to editable ones, or just specific ones. Specify whether the gauge will be rendered as editable, by setting the value of the `editMode` attribute to `1`. If a gauge has multiple dials and you want to make all of them editable, define the `editMode` attribute for the `chart` object. If a gauge has multiple dials and you only want to make specific dials editable, define the `editMode` attribute as a part of the `dial` object, which belongs to the `dials` object.
+You can convert a normal angular gauge to an editable gauge, by either converting all its dials to editable ones, or just specific ones. Specify whether the gauge will be rendered as editable, by setting the value of the `editMode` attribute to `1`. If a gauge has multiple dials and you want to make all of them editable, define the `editMode` attribute for the `chart` object. If a gauge has multiple dials and you only want to make specific dials editable, define the `editMode` attribute as a part of the `dial` object, which belongs to the `dials` object.
 
 To make all of the dials editable, refer to the code below:
 
 ```json
 {
-    "chart": {
-        "editMode": "1"
-    },
+   "chart": {
+      "editMode": "1"
+   }
 }
 ```
 
@@ -1679,11 +1691,11 @@ When you use the real time data format, you need to create a data provider (prim
 
 The real time data format for the angular gauge depends on:
 
-* Whether you've multiple dials on the chart or a single dial.
+-  Whether you've multiple dials on the chart or a single dial.
 
-* Whether you want to provide data by pointer numerical index or by their defined IDs, if you have multiple pointers.
+-  Whether you want to provide data by pointer numerical index or by their defined IDs, if you have multiple pointers.
 
-* Commands for the chart - like stop update.
+-  Commands for the chart - like stop update.
 
 ### Update a single pointer
 
@@ -1745,20 +1757,20 @@ After stopping the update, you can restart it by using client-side JavaScript.
 
 Use the following parameters to build a real time gauge that can stream data from a URL you provide:
 
-* Use the `dataStreamURL` parameter to set the path of the page, which is supposed to relay real time data to the chart. If you have special characters as a part of your data stream URL, like `?` or `&`, then you need to encode the entire URL in `dataStreamURL`. This page needs to be on the same sub-domain on which you host the chart and invoke it from. Otherwise, security will restrict it from accessing the data and hence the real time feature won't work. Example: `dataStreamURL`=`'liveQuote.aspx?name=xyz'`
+-  Use the `dataStreamURL` parameter to set the path of the page, which is supposed to relay real time data to the chart. If you have special characters as a part of your data stream URL, like `?` or `&`, then you need to encode the entire URL in `dataStreamURL`. This page needs to be on the same sub-domain on which you host the chart and invoke it from. Otherwise, security will restrict it from accessing the data and hence the real time feature won't work. Example: `dataStreamURL`=`'liveQuote.aspx?name=xyz'`
 
-* Use the `refreshInterval` parameter to specify the number of seconds after which The gauge will look  for new data.
+-  Use the `refreshInterval` parameter to specify the number of seconds after which The gauge will look for new data.
 
-* Use the `dataStamp` parameter to add a constantly changing data stamp to the real time data URL, so as to maintain a state. A data stamp is basically a token of information that passes with each update to the chart and back to the server, helping in easily identifying the last data sent to the gauge.
+-  Use the `dataStamp` parameter to add a constantly changing data stamp to the real time data URL, so as to maintain a state. A data stamp is basically a token of information that passes with each update to the chart and back to the server, helping in easily identifying the last data sent to the gauge.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/serverLoad.php",
-        "refreshInterval": "10"
-    },
+   "chart": {
+      "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/serverLoad.php",
+      "refreshInterval": "10"
+   }
 }
 ```
 
@@ -1790,19 +1802,19 @@ You can use the powerful API collection provided into the FusionCharts JavaScrip
 
 Use the following JavaScript API methods used to configure the real time angular gauge to receive real time updates:
 
-* Use the `feedData(strData)` method to feed real time data to the gauge using JavaScript. The data has to be in the same format as that provided by the real time data provider page.
+-  Use the `feedData(strData)` method to feed real time data to the gauge using JavaScript. The data has to be in the same format as that provided by the real time data provider page.
 
-* Use the `getData(dialIndex)` method to get the data for a given dial index on the gauge. The first dial is represented by index 1, the second by 2, and so on.
+-  Use the `getData(dialIndex)` method to get the data for a given dial index on the gauge. The first dial is represented by index 1, the second by 2, and so on.
 
-* Use the `getDataForId(dialId)` method to get the data for a given dial using its defined ID.
+-  Use the `getDataForId(dialId)` method to get the data for a given dial using its defined ID.
 
-* Use the `setData(dialIndex, value)` method to set data for a given dial index on the chart. The first dial is represented by index 1, the second by 2, and so on.
+-  Use the `setData(dialIndex, value)` method to set data for a given dial index on the chart. The first dial is represented by index 1, the second by 2, and so on.
 
-* Use the `setDataForId(dialId, value)` attribute to set data for a given dial using its defined ID.
+-  Use the `setDataForId(dialId, value)` attribute to set data for a given dial using its defined ID.
 
-* Use the `stopUpdate()` method to stop the gauge from self-updating.
+-  Use the `stopUpdate()` method to stop the gauge from self-updating.
 
-* Use the `restartUpdate()` method to resume self-update of the gauge, if you need to stop it.
+-  Use the `restartUpdate()` method to resume self-update of the gauge, if you need to stop it.
 
 Refer to the code below:
 
@@ -1880,25 +1892,25 @@ You can use the following events to track real time updates on gauges:
 
 The `realTimeUpdateComplete` event is raised every time the real time gauge updates itself with new data. This event is raised in any of the following cases:
 
-* real time update using `datastreamURL`.
+-  real time update using `datastreamURL`.
 
-* real time update using JavaScript API (using `setData`, `feedData`, `setDataForIdfunctions`).
+-  real time update using JavaScript API (using `setData`, `feedData`, `setDataForIdfunctions`).
 
-* real time update of the gauge through user interaction (through edit mode).
+-  real time update of the gauge through user interaction (through edit mode).
 
 The event arguments provided in the advanced model that you can use are:
 
-* `eventObject`: This object contains the eventId, eventType, and sender properties.
+-  `eventObject`: This object contains the eventId, eventType, and sender properties.
 
-* `argumentsObject`: This object contains the values of the updated data and the previous data.
+-  `argumentsObject`: This object contains the values of the updated data and the previous data.
 
 The `realTimeUpdateError` event is raised when an error occurs while performing real time update using datastreamURL.
 
 The event arguments provided in the advanced model that you can use are:
 
-* `eventObject`: This object contains `eventId`, `eventType` and `sender` properties.
+-  `eventObject`: This object contains `eventId`, `eventType` and `sender` properties.
 
-* `argumentsObject`: This object contains the `httpStatus` property, which contains the HTTP Error status value as number.
+-  `argumentsObject`: This object contains the `httpStatus` property, which contains the HTTP Error status value as number.
 
 Refer to the code below:
 
@@ -1966,23 +1978,23 @@ Click [here](http://jsfiddle.net/fusioncharts/bmpxxz4v/) to edit the above chart
 
 If the chart renders initially, but does not update in real time, do the following:
 
-* Check whether you have specified a correct and valid path for the `dataStreamURL` attribute in the JSON/ XML data.
+-  Check whether you have specified a correct and valid path for the `dataStreamURL` attribute in the JSON/ XML data.
 
-* Check whether you have specified a valid value for the `refreshInterval` attribute in the data.
+-  Check whether you have specified a valid value for the `refreshInterval` attribute in the data.
 
-* Check whether the `dataStreamURL` attribute is returning the correct data. To test this, just open your browser and run this page. It should return the data in text format.
+-  Check whether the `dataStreamURL` attribute is returning the correct data. To test this, just open your browser and run this page. It should return the data in text format.
 
-* Check whether the output data contains any carriage returns (new-line characters) or HTML elements. In many scripting languages, these are automatically added. If they are, you need to remove them.
+-  Check whether the output data contains any carriage returns (new-line characters) or HTML elements. In many scripting languages, these are automatically added. If they are, you need to remove them.
 
-* Check whether the page that provides the incremental data update to the charts is hosted on the same sub-domain in which the charts are hosted. Otherwise, due to security restrictions, the charts won't be able to receive the updates. Due to security restrictions, charts are allowed to retrieve data only from the same subdomain in which the charts are residing. Data can only be loaded from a domain that is an exact match to the location of the charts, including sub-domains. For this reason, a chart residing at `server1.mydomain.com` will not be able to access data from `mydomain.com`.
+-  Check whether the page that provides the incremental data update to the charts is hosted on the same sub-domain in which the charts are hosted. Otherwise, due to security restrictions, the charts won't be able to receive the updates. Due to security restrictions, charts are allowed to retrieve data only from the same subdomain in which the charts are residing. Data can only be loaded from a domain that is an exact match to the location of the charts, including sub-domains. For this reason, a chart residing at `server1.mydomain.com` will not be able to access data from `mydomain.com`.
 
 > If you want to load data from a different domain, you can set up a proxy page at the same subdomain that will actually request data from the distant domain and then relay it to the charts. You must be able to upload and run a server-side script on a server in the same domain as the charts. In this method, a chart accesses the script, which loads the information, retrieves it and returns the information back to the chart. This method is best feasible if the server hosting the data is not under your control (for example, a public source or a web service).
 
 While accessing any of the JavaScript API methods listed above, if you get an error like "... is not a function of ...",
 
-* Check whether you are calling the JavaScript API method before the chart has loaded and rendered. You need to use an event listener for the `rendered` event of the gauge to track the loading of the gauge.
+-  Check whether you are calling the JavaScript API method before the chart has loaded and rendered. You need to use an event listener for the `rendered` event of the gauge to track the loading of the gauge.
 
-* Check whether you have provided all the required `.js` files of the FusionCharts library and no other JavaScript error is encountered.
+-  Check whether you have provided all the required `.js` files of the FusionCharts library and no other JavaScript error is encountered.
 
 ## Log real time messages
 
@@ -1994,37 +2006,37 @@ FusionCharts Suite XT introduces a new concept of streaming and showing real tim
 
 Use the following attributes to set up the message logger for a real time angular gauge:
 
-* Set the value of the `useMessageLog` attribute to `1`, to enable message logger for the gauge.
+-  Set the value of the `useMessageLog` attribute to `1`, to enable message logger for the gauge.
 
-* Use the `showRTMenuItem` attribute to specify whether the real time update-related menu items (like Start/Stop Update) will be shown in the message logger menu.
+-  Use the `showRTMenuItem` attribute to specify whether the real time update-related menu items (like Start/Stop Update) will be shown in the message logger menu.
 
-* Use the `showRTMenuItem` attribute to specify the width of the message logger window with respect to the entire gauge width.
+-  Use the `showRTMenuItem` attribute to specify the width of the message logger window with respect to the entire gauge width.
 
-* Use the `messageLogWPercent` attribute to specify the width of the message logger window with respect to the entire gauge width.
+-  Use the `messageLogWPercent` attribute to specify the width of the message logger window with respect to the entire gauge width.
 
-* Use the `messageLogHPercent` attribute to specify the height of the message logger window with respect to the entire gauge height.
+-  Use the `messageLogHPercent` attribute to specify the height of the message logger window with respect to the entire gauge height.
 
-* Use the `messageLogShowTitle` attribute to specify whether a title will be shown for the message logger window.
+-  Use the `messageLogShowTitle` attribute to specify whether a title will be shown for the message logger window.
 
-* Use the `messageLogTitle` attribute to specify the title for the message logger, if you choose to show it. Note that the title is rendered at the top-left corner of the gauge.
+-  Use the `messageLogTitle` attribute to specify the title for the message logger, if you choose to show it. Note that the title is rendered at the top-left corner of the gauge.
 
-* Use the `messageLogColor` attribute to specify the hex code of the color to be applied to the entire message log window.
+-  Use the `messageLogColor` attribute to specify the hex code of the color to be applied to the entire message log window.
 
-* Use the `messageGoesToLog` attribute to specify whether the messages streamed to the gauge should be logged in the in-built message log window. With FusionCharts Suite XT, you can display messages streamed to the gauge in the message log window, or pass them to a JavaScript function.
+-  Use the `messageGoesToLog` attribute to specify whether the messages streamed to the gauge should be logged in the in-built message log window. With FusionCharts Suite XT, you can display messages streamed to the gauge in the message log window, or pass them to a JavaScript function.
 
-* Use the `messageGoesToJS` attribute to specify whether messages streamed from the server should be passed to a local JavaScript function.
+-  Use the `messageGoesToJS` attribute to specify whether messages streamed from the server should be passed to a local JavaScript function.
 
-* Use the `messageJSHandler` attribute to specify the name of the JavaScript function that will handle the messages streamed from the server, if you choose to do so. This will help you create your custom functions to react to messages streamed from the server.
+-  Use the `messageJSHandler` attribute to specify the name of the JavaScript function that will handle the messages streamed from the server, if you choose to do so. This will help you create your custom functions to react to messages streamed from the server.
 
-* Use the `messagePassAllToJS` attribute to specify whether all parameters of a message envelope will be passed to the the custom JavaScript function. Note that a message envelope contains the following four parameters: `Message ID`, `Message Title`, `Message Text`, and `Message Type`. Use the `messageGoesToJS` attribute to pass only the `Message Text` parameter to the JavaScript function. Use the `messagePassAllToJS` attribute to pass all the four parameters to the JavaScript function instead.
+-  Use the `messagePassAllToJS` attribute to specify whether all parameters of a message envelope will be passed to the the custom JavaScript function. Note that a message envelope contains the following four parameters: `Message ID`, `Message Title`, `Message Text`, and `Message Type`. Use the `messageGoesToJS` attribute to pass only the `Message Text` parameter to the JavaScript function. Use the `messagePassAllToJS` attribute to pass all the four parameters to the JavaScript function instead.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "useMessageLog": "1"
-    }
+   "chart": {
+      "useMessageLog": "1"
+   }
 }
 ```
 
@@ -2040,28 +2052,28 @@ Click [here](http://jsfiddle.net/fusioncharts/zqz1apsr/) to edit the above chart
 
 Each real time update you make to the chart can result in addition of message(s) to the logger. Use the following attributes in the real time data stream to stream messages:
 
-* Use the `msgId` attribute to specify a unique ID for each message. This is useful when you need to track your messages in your custom JavaScript function and need to refer to this ID to take actions. This ID is not displayed in the logger window; it is directly passed to the JavaScript function.
+-  Use the `msgId` attribute to specify a unique ID for each message. This is useful when you need to track your messages in your custom JavaScript function and need to refer to this ID to take actions. This ID is not displayed in the logger window; it is directly passed to the JavaScript function.
 
-* Use the `msgTitle` attribute to specify the title for the message that will be displayed in the message logger window. The title can also be passed to other JavaScript functions.
+-  Use the `msgTitle` attribute to specify the title for the message that will be displayed in the message logger window. The title can also be passed to other JavaScript functions.
 
-* Use the `msgText` attribute to contain the actual text of the message that will be displayed on the message logger window. The text of the message can also be passed to other JavaScript functions.
+-  Use the `msgText` attribute to contain the actual text of the message that will be displayed on the message logger window. The text of the message can also be passed to other JavaScript functions.
 
-* Use the `msgType` attribute to specify the type for each message streamed. This is required because each message type is rendered using a different text style in the message logger to aid instant interpretation. The message types that can be streamed are `INFO`, `ERROR`, `LITERAL`, and `LINK`. `INFO` is rendered using normal font properties, `ERROR` is highlighted in a shade of red, `LITERALS` are rendered in code-like blocks, and `LINK` renders as a clickable link.
+-  Use the `msgType` attribute to specify the type for each message streamed. This is required because each message type is rendered using a different text style in the message logger to aid instant interpretation. The message types that can be streamed are `INFO`, `ERROR`, `LITERAL`, and `LINK`. `INFO` is rendered using normal font properties, `ERROR` is highlighted in a shade of red, `LITERALS` are rendered in code-like blocks, and `LINK` renders as a clickable link.
 
-* Use the `msgGoesToLog` attribute to specify whether the messages streamed from the server will be made visible in the message logger of the gauge. By default, this attribute takes its value from the messageGoesToLog attribute defined for the `chart` object.
+-  Use the `msgGoesToLog` attribute to specify whether the messages streamed from the server will be made visible in the message logger of the gauge. By default, this attribute takes its value from the messageGoesToLog attribute defined for the `chart` object.
 
-* Use the `msgGoesToJS` attribute to specify whether the messages streamed from the server should be passed to the JavaScript handler. By default, this attribute takes its value from the messageGoesToJS attribute defined for the `chart` object.
+-  Use the `msgGoesToJS` attribute to specify whether the messages streamed from the server should be passed to the JavaScript handler. By default, this attribute takes its value from the messageGoesToJS attribute defined for the `chart` object.
 
-* Use the `clearLog` attribute to specify whether you want to clear the message history currently showing in the gauge. To clear the message history, set the value of this attribute to `1` and return it as a part of the data stream.
+-  Use the `clearLog` attribute to specify whether you want to clear the message history currently showing in the gauge. To clear the message history, set the value of this attribute to `1` and return it as a part of the data stream.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/streamErrorMessages.php",
-        "useMessageLog": "1"
-    }
+   "chart": {
+      "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/streamErrorMessages.php",
+      "useMessageLog": "1"
+   }
 }
 ```
 
@@ -2176,9 +2188,9 @@ var myFunction = function(strMsgId, strMsgTitle, strMsgText, strMsgType){
 
 Using FusionCharts Suite XT, you can configure the message logger, in order to:
 
-* Show/hide the logger
+-  Show/hide the logger
 
-* Clear the logger
+-  Clear the logger
 
 A real time angular gauge with its message logger configured using JavaScript API looks like the following:
 
@@ -2190,10 +2202,10 @@ In order to manipulate the message logger using JavaScript API you need to get a
 
 Use the following JavaScript API methods to configure the message logger:
 
-* Use the `showLog()` method to show the log, if it has been hidden.
+-  Use the `showLog()` method to show the log, if it has been hidden.
 
-* Use the `hideLog()` method to hide the log, if it has been shown.
+-  Use the `hideLog()` method to hide the log, if it has been shown.
 
-* Use the `clearLog()` method to clear the contents of the log.
+-  Use the `clearLog()` method to clear the contents of the log.
 
 > Here we have used the `feedData()` method of the FusionCharts API to provide real time update. You can pass these updates from the server through data-provider pages using the `dataStreamURL` attribute. You can call the JavaScript APIs of a chart only after it has rendered. You can use the `Rendered` event listener to check if a chart has rendered.

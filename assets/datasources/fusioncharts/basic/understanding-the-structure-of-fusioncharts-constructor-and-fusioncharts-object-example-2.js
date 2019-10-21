@@ -48,22 +48,21 @@
               container = document.createElement('DIV'),
               p = document.createElement('p');
 
-          btn.setAttribute("value","PRINT CHART DATA");          
-          btn.setAttribute("type","button");          
+          btn.setAttribute("value","PRINT CHART DATA");
+          btn.setAttribute("type","button");
           btn.setAttribute("class", "btn");
-          
+
           container.setAttribute("class","btn-group")
           container.appendChild(btn);
           container.appendChild(p);
 
           args.container.parentNode.insertBefore(container, args.container.nextSibling);
-          
+
           btn.onclick = function(){
-              var chartObj = FusionCharts("sample-chart-1");
+              var chartObj = FusionCharts("sample-chart-2");
               var chartData = chartObj.getJSONData()['data'];
               p.innerHTML = JSON.stringify(chartData);
-          }; 
+          };
         }
     }
 }
-    

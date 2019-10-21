@@ -18,7 +18,7 @@
             //Tooltext
             "plottooltext": "Current Temperature: $value°C",
 
-            "dataStreamURL": "dummy-url-bulbData.php",
+            "dataStreamURL": "/dummy-url-bulbData.php",
             "refreshInterval": "5",
             //Theme
             "theme": "fusion"

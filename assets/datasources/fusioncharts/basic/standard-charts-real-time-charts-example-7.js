@@ -33,35 +33,33 @@
     },
     "events": {
         "rendered": function(e) {
-			var chartRef = e.sender;
-            var flag = 0;
+           var chartRef = e.sender;
+           var flag = 0;
 
-            function addLeadingZero(num) {
-                return (num <= 9) ? ("0" + num) : num;
+           function addLeadingZero(num) {
+              return (num <= 9) ? ("0" + num) : num;
 
-            }
+           }
 
-            function updateData() {
-                // Get reference to the chart using its ID
-                // var chartRef = e.sender,
-                    // We need to create a querystring format incremental update, containing
-                    // label in hh:mm:ss format
-                    // and a value (random).
-                    currDate = new Date(),
-                    label = addLeadingZero(currDate.getHours()) + ":" +
+           function updateData() {
+              // We need to create a querystring format incremental update, containing
+              // label in hh:mm:ss format
+              // and a value (random).
+              var currDate = new Date(),
+                 label = addLeadingZero(currDate.getHours()) + ":" +
                     addLeadingZero(currDate.getMinutes()) + ":" +
                     addLeadingZero(currDate.getSeconds()),
-                    // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
-                    randomValue = Math.floor(Math.random() * 50) / 100 + 35.25,
+                 // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
+                 randomValue = Math.floor(Math.random() * 50) / 100 + 35.25,
 
-                    // Build Data String in format &label=...&value=...
-                    strData = "&label=" + label + "&value=" + randomValue;
-                flag = flag + 1;
-                if (flag % 7 === 0) {
-                    strData = "&label=" + label + "&value=" + randomValue + "&vline=1&vLineLabel=Price Checked&vLineColor=#666666&vLineThickness=2&vLineDashed=1";
-                }
-                // Feed it to chart.
-                chartRef.feedData && chartRef.feedData(strData);
+                 // Build Data String in format &label=...&value=...
+                 strData = "&label=" + label + "&value=" + randomValue;
+              flag = flag + 1;
+              if (flag % 7 === 0) {
+                 strData = "&label=" + label + "&value=" + randomValue + "&vline=1&vLineLabel=Price Checked&vLineColor=#666666&vLineThickness=2&vLineDashed=1";
+              }
+              // Feed it to chart.
+              chartRef.feedData && chartRef.feedData(strData);
             }
 
             e.sender.chartInterval = setInterval(function() {

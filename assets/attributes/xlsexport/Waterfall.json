@@ -1,256 +1,251 @@
 [
-    {
-        "table": "Functional Attributes",
-        "attrs": [
-            {
-                "description": "Sets the configuration whether data values would be displayed along with the data plot on chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showValues"
-            },
-            {
-                "description": "Whether to add a summation column as the last column in chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "showSumAtEnd"
-            },
-             {
-                "description": "If you have opted to add a summation column as the last column of chart, this attribute lets you set the label for the same.",
-                "range": " ",
-                "type": "String",
-                "name": "sumLabel"
-            },
-            {
-                "description": "The entire chart can now act as a hotspot. Use this URL to define the hotspot link for the chart. The link can be specified in FusionCharts Link Format.",
-                "range": "",
-                "type": "String",
-                "name": "clickURL"
-            }
-            
-        ],
-        "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show or hide data labels, data values. You can also set chart limits and extended properties. "
-    },
-   
-    {
-        "table": "Chart Titles and Axis Names",
-        "attrs": [
-            {
-                "description": "Y-axis title of the chart.",
-                "type": "String",
-                "name": "yAxisName"
-            },
-            {
-                "description": "Sub-caption of the chart.",
-                "type": "String",
-                "name": "subCaption"
-            },
-            {
-                "description": "X-axis title of the chart.",
-                "type": "String",
-                "name": "xAxisName"
-            },
-            {
-                "description": "Caption of the chart.",
-                "type": "String",
-                "name": "caption"
-            }
-        ],
-        "description": "Using these attributes, you can set the various headings and titles of chart like caption, sub-caption, x-axis and y-axis names etc. "
-    },
-    {
-        "table": "Chart Caption Cosmetics",
-        "attrs": [
-            
-            {
-                "description": "Sets the caption font size in pixels",
-                "range": "6 - 72",
-                "type": "Number",
-                "name": "captionFontSize"
-            },
-            {
-                "description": "Sets the sub-caption font size (in pixels)",
-                "range": "6 - 72",
-                "type": "Number",
-                "name": "subCaptionFontSize"
-            },
-            {
-                "description": "Whether the caption font should be displayed in bold",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "captionFontBold"
-            },
-            {
-                "description": "Whether the sub caption font should be displayed in bold",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "subCaptionFontBold"
-            }
-        ],
-        "description": "These attributes let you configure the cosmetics of chart caption and sub-caption."
-
-   },
-    {
-        "table": "Chart Cosmetics",
-        "attrs": [
-            {
-                "description": "To place any image (JPG/PNG/GIF) as background of the chart, enter the (path and) name of the background image. It should be in the same domain as the chart.",
-                "range": "",
-                "type": "String",
-                "versionsince": "3.2.",
-                "name": "bgImage"
-            },
-             {
-                "description": "You can load an external logo (JPEG/PNG) to your chart, this attribute lets you specify the URL. Due to cross domain security restrictions it is advised to use a logo from the same domain name as your charts.",
-                "range": "URL",
-                "type": "String",
-                "name": "logoURL"
-            }
-        ],
-        "description": "The following attributes let you configure chart cosmetics like background color, background alpha, canvas color & alpha etc. "
+  {
+    "table": "Functional Attributes",
+    "attrs": [
+      {
+        "description": "Sets the configuration whether data values would be displayed along with the data plot on chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showValues"
+      },
+      {
+        "description": "Whether to add a summation column as the last column in chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showSumAtEnd"
+      },
+      {
+        "description": "If you have opted to add a summation column as the last column of chart, this attribute lets you set the label for the same.",
+        "range": " ",
+        "type": "String",
+        "name": "sumLabel"
+      },
+      {
+        "description": "The entire chart can now act as a hotspot. Use this URL to define the hotspot link for the chart. The link can be specified in FusionCharts Link Format.",
+        "range": "",
+        "type": "String",
+        "name": "clickURL"
+      }
+    ],
+    "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show or hide data labels, data values. You can also set chart limits and extended properties. "
   },
-    {
-        "table": "Number Formatting",
-        "attrs": [
-            {
-                "description": "This configuration determines whether the numbers displayed on the chart will be formatted using commas, for example, 40,000 if 'formatNumber': '1'; and 40000 if 'formatNumber': '0';.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "formatNumber"
-            },
-            {
-                "description": "Configuration whether to add K (thousands) and M (millions) to a number after truncating and rounding it - for example, if `formatNumberScale` is set to 1, 10434 would become 1.04K (with `decimalPrecision` set to 2 places). Same with numbers in millions - an M will be added at the end.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "formatNumberScale"
-            },
- 
-            {
-                "description": "Using this attribute, you could add prefix to all the numbers visible on the graph. For example, to represent all dollars figure on the chart, you could specify this attribute to $ to show like $40000, $50000.",
-                "range": "Character",
-                "type": "String",
-                "name": "numberPrefix"
-            },
-            {
-                "description": "Using this attribute, you could add prefix to all the numbers visible on the graph. For example, to represent all figures quantified as per annum on the chart, you could specify this attribute to '/a' to show like 40000/a, 50000/a.",
-                "range": "Character",
-                "type": "String",
-                "name": "numberSuffix"
-            },
-           
-            {
-                "description": "This attribute helps you specify the character to be used as the thousands separator in a number.",
-                "range": "Character",
-                "type": "String",
-                "name": "thousandSeparator"
-            },
-            {
-                "description": "This option helps you specify the position of the thousand separator.",
-                "range": " ",
-                "type": "Number",
-                "versionsince": "3.2.1",
-                "name": "thousandSeparatorPosition"
-            },
-            {
-                "description": "Number of decimal places to which all numbers on the chart would be rounded to.",
-                "range": "0-10",
-                "type": "Number",
-                "name": "decimals"
-            },
-            {
-                "description": "Whether to add 0 padding at the end of decimal numbers. For example, if you set decimals as 2 and a number is 23.4. If `forceDecimals` is set to 1, the number will automatically be converted to 23.40 (note the extra 0 at the end).",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "forceDecimals"
-            }
-        ],
-        "description": "PowerCharts XT offers you a lot of options to format your numbers on the chart. Using the attributes below, you can control a myriad of options like: Formatting of commas and decimals Number prefixes and suffixes Decimal places to which the numbers would round to Scaling of numbers based on a user defined scale Custom number input formats "
-    },
-   
-    {
-        "table": "Attributes for Exporting Charts",
-        "attrs": [
-            {
-                "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLS.  \n\n__Default value__: 0",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "exportEnabled"
-            },
-            {
-                "description": "In case of server-side exporting, the action specifies whether the exported image will be sent back to client as download, or whether it'll be saved on the server. \n\n__Default value__: download",
-                "range": "'save' or 'download'",
-                "type": "String",
-                "name": "exportAction"
-            },
-            {
-                "description": "In case of server side exporting, this refers to the path of the server-side export handler (the ready-to-use scripts that we provide).",
-                "range": "",
-                "type": "String",
-                "name": "exportHandler"
-            },
-            {
-                "description": "Lets you configure what output formats to allow for export of chart, in the export context menu, and also customize the label for each menu item. The attribute value should be a pipe (&#124;) delimited separated key-value pair. Example: `exportFormats: 'PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File'`",
-                "range": "",
-                "type": "String",
-                "name": "exportFormats"
-            },
-            {
-                "description": "This attribute when set to __1__, enables the client-side export feature.  \n\n__Default value__: 0",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "exportAtClientSide"
-            },
-            {
-                "description": "Whether the menu items related to export (e.g., Save as JPEG etc.) will appear in the context menu of chart.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "exportShowMenuItem"
-            },
-            {
-                "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
-                "range": "'_self' or '_blank'",
-                "type": "String",
-                "name": "exportTargetWindow"
-            },
-            {
-                "description": "Using this attribute you can specify the name (excluding the extension) of the output (export) file.",
-                "range": "",
-                "type": "String",
-                "name": "exportFileName"
-            }
-        ],
-        "description": "These attributes allow you to control the saving of chart as image, SVG or XLS."
-    },
-    {
-        "table": "The data Object",
-        "path": "data",
-        "attrs": [
-            {
-                "description": "Whether the set value should represent the sum of previous set values in the water fall chart. You can put a sum column at any position in the chart (barring the first position, as you need at least one data point to calculate sum).",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "isSum"
-            },
-            {
-                "description": "Whether the sum represents the cumulative sum (of all the columns to the left of this sum column) or non-cumulative sum (of all the columns to the left of this column, but after the last sum column).",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "cumulative"
-            },
-            {
-                "description": "This attribute determines the label for the data item. The label appears on the x-axis of chart.\n\n __Note__: The `label` attribute replaces the `name` attribute. Previously, either one of the attributes could be used to set the label. Support for the `name` attribute has been discontinued since v3.10.0.",
-                "range": "",
-                "type": "String",
-                "name": "label"
-            },
-            {
-                "description": "Numerical value for the data item. This value would be plotted on the chart.",
-                "range": "",
-                "type": "Number",
-                "name": "value"
-            }
-        ],
-        "description": "In single-series charts, each instance of the `data` object represents a data value to be plotted on the chart. For a single-series chart, one instance of the `data` object looks as shown in the example below:\n\n<pre class=\"language-javascript\"><code>\n\"data\"[{\n\t\t\"label\": \"Jan\",\n\t\t\"value\": \"10000\"\n\t}]\n</code></pre>\n\nAttributes of the `data` object are used to set and configure the data values for the chart."
-    }
-  
- 
+
+  {
+    "table": "Chart Titles and Axis Names",
+    "attrs": [
+      {
+        "description": "Y-axis title of the chart.",
+        "type": "String",
+        "name": "yAxisName"
+      },
+      {
+        "description": "Sub-caption of the chart.",
+        "type": "String",
+        "name": "subCaption"
+      },
+      {
+        "description": "X-axis title of the chart.",
+        "type": "String",
+        "name": "xAxisName"
+      },
+      {
+        "description": "Caption of the chart.",
+        "type": "String",
+        "name": "caption"
+      }
+    ],
+    "description": "Using these attributes, you can set the various headings and titles of chart like caption, sub-caption, x-axis and y-axis names etc. "
+  },
+  {
+    "table": "Chart Caption Cosmetics",
+    "attrs": [
+      {
+        "description": "Sets the caption font size in pixels",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "captionFontSize"
+      },
+      {
+        "description": "Sets the sub-caption font size (in pixels)",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "subCaptionFontSize"
+      },
+      {
+        "description": "Whether the caption font should be displayed in bold",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "captionFontBold"
+      },
+      {
+        "description": "Whether the sub caption font should be displayed in bold",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "subCaptionFontBold"
+      }
+    ],
+    "description": "These attributes let you configure the cosmetics of chart caption and sub-caption."
+  },
+  {
+    "table": "Chart Cosmetics",
+    "attrs": [
+      {
+        "description": "To place any image (JPG/PNG/GIF) as background of the chart, enter the (path and) name of the background image. It should be in the same domain as the chart.",
+        "range": "",
+        "type": "String",
+        "versionsince": "3.2.",
+        "name": "bgImage"
+      },
+      {
+        "description": "You can load an external logo (JPEG/PNG) to your chart, this attribute lets you specify the URL. Due to cross domain security restrictions it is advised to use a logo from the same domain name as your charts.",
+        "range": "URL",
+        "type": "String",
+        "name": "logoURL"
+      }
+    ],
+    "description": "The following attributes let you configure chart cosmetics like background color, background alpha, canvas color & alpha etc. "
+  },
+  {
+    "table": "Number Formatting",
+    "attrs": [
+      {
+        "description": "This configuration determines whether the numbers displayed on the chart will be formatted using commas, for example, 40,000 if 'formatNumber': '1'; and 40000 if 'formatNumber': '0';.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "formatNumber"
+      },
+      {
+        "description": "Configuration whether to add K (thousands) and M (millions) to a number after truncating and rounding it - for example, if `formatNumberScale` is set to 1, 10434 would become 1.04K (with `decimalPrecision` set to 2 places). Same with numbers in millions - an M will be added at the end.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "formatNumberScale"
+      },
+
+      {
+        "description": "Using this attribute, you could add prefix to all the numbers visible on the graph. For example, to represent all dollars figure on the chart, you could specify this attribute to $ to show like $40000, $50000.",
+        "range": "Character",
+        "type": "String",
+        "name": "numberPrefix"
+      },
+      {
+        "description": "Using this attribute, you could add prefix to all the numbers visible on the graph. For example, to represent all figures quantified as per annum on the chart, you could specify this attribute to '/a' to show like 40000/a, 50000/a.",
+        "range": "Character",
+        "type": "String",
+        "name": "numberSuffix"
+      },
+
+      {
+        "description": "This attribute helps you specify the character to be used as the thousands separator in a number.",
+        "range": "Character",
+        "type": "String",
+        "name": "thousandSeparator"
+      },
+      {
+        "description": "This option helps you specify the position of the thousand separator.",
+        "range": " ",
+        "type": "Number",
+        "versionsince": "3.2.1",
+        "name": "thousandSeparatorPosition"
+      },
+      {
+        "description": "Number of decimal places to which all numbers on the chart would be rounded to.",
+        "range": "0-10",
+        "type": "Number",
+        "name": "decimals"
+      },
+      {
+        "description": "Whether to add 0 padding at the end of decimal numbers. For example, if you set decimals as 2 and a number is 23.4. If `forceDecimals` is set to 1, the number will automatically be converted to 23.40 (note the extra 0 at the end).",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "forceDecimals"
+      }
+    ],
+    "description": "PowerCharts XT offers you a lot of options to format your numbers on the chart. Using the attributes below, you can control a myriad of options like: Formatting of commas and decimals Number prefixes and suffixes Decimal places to which the numbers would round to Scaling of numbers based on a user defined scale Custom number input formats "
+  },
+
+  {
+    "table": "Attributes for Exporting Charts",
+    "attrs": [
+      {
+        "description": "Whether the chart will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "exportEnabled"
+      },
+      {
+        "description": "In case of server-side exporting, the action specifies whether the exported image will be sent back to client as download, or whether it'll be saved on the server. \n\n__Default value__: download",
+        "range": "'save' or 'download'",
+        "type": "String",
+        "name": "exportAction"
+      },
+      {
+        "description": "In case of server side exporting, this refers to the path of the server-side export handler (the ready-to-use scripts that we provide).",
+        "range": "",
+        "type": "String",
+        "name": "exportHandler"
+      },
+      {
+        "description": "Lets you configure what output formats to allow for export of chart, in the export context menu, and also customize the label for each menu item. The attribute value should be a pipe (&#124;) delimited separated key-value pair. Example: `exportFormats: 'PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File'`",
+        "range": "",
+        "type": "String",
+        "name": "exportFormats"
+      },
+      {
+        "description": "This attribute when set to __1__, enables the client-side export feature.  \n\n__Default value__: 0",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "exportAtClientSide"
+      },
+      {
+        "description": "Whether the menu items related to export (e.g., Save as JPEG etc.) will appear in the context menu of chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "exportShowMenuItem"
+      },
+      {
+        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
+        "range": "'_self' or '_blank'",
+        "type": "String",
+        "name": "exportTargetWindow"
+      },
+      {
+        "description": "Using this attribute you can specify the name (excluding the extension) of the output (export) file.",
+        "range": "",
+        "type": "String",
+        "name": "exportFileName"
+      }
+    ],
+    "description": "These attributes allow you to control the saving of chart as image, SVG or XLSX."
+  },
+  {
+    "table": "The data Object",
+    "path": "data",
+    "attrs": [
+      {
+        "description": "Whether the set value should represent the sum of previous set values in the water fall chart. You can put a sum column at any position in the chart (barring the first position, as you need at least one data point to calculate sum).",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "isSum"
+      },
+      {
+        "description": "Whether the sum represents the cumulative sum (of all the columns to the left of this sum column) or non-cumulative sum (of all the columns to the left of this column, but after the last sum column).",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "cumulative"
+      },
+      {
+        "description": "This attribute determines the label for the data item. The label appears on the x-axis of chart.\n\n __Note__: The `label` attribute replaces the `name` attribute. Previously, either one of the attributes could be used to set the label. Support for the `name` attribute has been discontinued since v3.10.0.",
+        "range": "",
+        "type": "String",
+        "name": "label"
+      },
+      {
+        "description": "Numerical value for the data item. This value would be plotted on the chart.",
+        "range": "",
+        "type": "Number",
+        "name": "value"
+      }
+    ],
+    "description": "In single-series charts, each instance of the `data` object represents a data value to be plotted on the chart. For a single-series chart, one instance of the `data` object looks as shown in the example below:\n\n<pre class=\"language-javascript\"><code>\n\"data\"[{\n\t\t\"label\": \"Jan\",\n\t\t\"value\": \"10000\"\n\t}]\n</code></pre>\n\nAttributes of the `data` object are used to set and configure the data values for the chart."
+  }
 ]

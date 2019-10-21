@@ -70,7 +70,7 @@
 
             // set css styles for "input" elements in controls div
             var input = controls.getElementsByTagName('input');
-            for (i = 0; i < input.length; i++) {
+            for (var i = 0; i < input.length; i++) {
                 input[i].style.cssText = 'margin:2px; font-size:11px;';
             }
         },

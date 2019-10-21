@@ -129,7 +129,7 @@
                 var chartRef = evt.sender,
                     dispCon = document.getElementById("tableView");
                 //Hiding the table
-                dispCon.style.cssText = "display:none";
+                dispCon && (dispCon.style.cssText = "display:none");
                 //We need to create a querystring format incremental update, containing
                 //label in hh:mm:ss format
                 //and a value (random).

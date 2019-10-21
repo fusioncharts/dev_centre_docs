@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cs-linear-gauge-26',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -17,7 +16,7 @@
             "valueFontSize": "11",
             "valueFontBold": "0",
             "dataStreamUrl": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-linear-gauge-real-time-gauges-php-2.php",
-            "refreshInterval": "10"
+            "refreshInterval": "2"
         },
         "colorRange": {
             "color": [{
@@ -44,31 +43,36 @@
         }
 
     },
-    "events": {
-        'beforeRender': function(evtObj, argObj) {
-            // creating div for controllers
-            var controllers = document.createElement('div');
-            // Create radio buttons inside div
-            controllers.innerHTML = '<input type="button" value="Stop Update" id="toggleBtn" style="margin-left:5px;margin-top:5px;font-size:13px;padding:2px;" />';
-            argObj.container.appendChild(controllers);
-            controllers.setAttribute('id', 'controllers');
-        },
-        'renderComplete': function(evtObj, argObj) {
+   "events": {
+      'beforeRender': function(evtObj, argObj) {
+         var controllers = document.createElement('div'),
+            btn = document.createElement('button'),
+            chartRef = evtObj.sender;
 
-            var isStopped = false,
-                startStopUpdate = function() {
-                    if (!isStopped) {
-                        isStopped = true;
-                        document.getElementById("toggleBtn").value = "Restart Update";
-                        FusionCharts.items["cs-linear-gauge-26"].stopUpdate();
-                    } else {
-                        isStopped = false;
-                        document.getElementById("toggleBtn").value = "Stop Update";
-                        FusionCharts.items["cs-linear-gauge-26"].restartUpdate();
-                    }
-                }
+         btn.style.cssText = "background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px; margin-top: 10px;";
+         btn.innerText = "Stop Update";
+         controllers.appendChild(btn);
+         argObj.container.appendChild(controllers);
+         chartRef.toggleBtn = btn;
+      },
+      'renderComplete': function(evtObj, argObj) {
 
-            document.getElementById("toggleBtn").addEventListener("click", startStopUpdate);
-        }
-    }
+         var isStopped = false,
+            chartRef = evtObj.sender;
+
+         var startStopUpdate = function () {
+            if (!isStopped) {
+               isStopped = true;
+               chartRef.toggleBtn.innerText = "Restart Update";
+               chartRef.stopUpdate();
+            } else {
+               isStopped = false;
+               chartRef.toggleBtn.innerText = "Stop Update";
+               chartRef.restartUpdate();
+            }
+         }
+
+         chartRef.toggleBtn.onclick = startStopUpdate;
+      }
+   }
 }

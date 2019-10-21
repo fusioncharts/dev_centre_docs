@@ -4,15 +4,17 @@ description: FusionCharts lets you pass the complete JSON/XML chart data using a
 heading: Setting Data Source Using URL
 ---
 
-> ### FusionCharts.NET (BETA)
-We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
-> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
-> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
-> * All methods and properties are available in Visual Studio intellisense.
-> * ...and many more.
-> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+> ### FusionCharts.NET
+>
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
+>
+> - Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> - Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> - All methods and properties are available in Visual Studio intellisense.
+> - ...and many more.
+>   Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
-FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a `.json` or `.xml` file and then pass the relative URL of this file as value to the `dataSource` attribute. 
+FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a `.json` or `.xml` file and then pass the relative URL of this file as value to the `dataSource` attribute.
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
@@ -26,16 +28,16 @@ Let's build the same revenue chart which we built in the [first example](/gettin
 
 The data for this chart is represented in the table below:
 
-Country|No. of Oil Reserves|
--|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 The JSON representation for the above table looks as shown below:
 
@@ -99,19 +101,20 @@ using FusionCharts.Charts;
 
 public partial class JsonUrlData : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        //data url
-        string jsonDataUrl = "oilReserves.json";
-        // create chart instance
-        // parameter
-        // chart type, chart id, chart width, chart height, data format, data source
-        Chart columnChart = new Chart("column2d", "first_chart", "700", "400", "jsonurl", jsonDataUrl);
-        //render chart
-        Literal1.Text = columnChart.Render();
-    }
+protected void Page_Load(object sender, EventArgs e)
+{
+//data url
+string jsonDataUrl = "oilReserves.json";
+// create chart instance
+// parameter
+// chart type, chart id, chart width, chart height, data format, data source
+Chart columnChart = new Chart("column2d", "first_chart", "700", "400", "jsonurl", jsonDataUrl);
+//render chart
+Literal1.Text = columnChart.Render();
+}
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -122,7 +125,7 @@ Partial Class JsonDataUrl
 Inherits System.Web.UI.Page
 
 Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-'store chart  data url as  string
+'store chart data url as string
 Dim jsonDataUrl As String
 jsonDataUrl = "oilReserves.json"
 'create gauge instance
@@ -133,6 +136,7 @@ Literal1.Text = columnChart.Render()
 End Sub
 End Class
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -157,25 +161,26 @@ The HTML template for `aspx` file is shown below:
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
 &lt;head runat="server"&gt;
-    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
-    &lt;title&gt;FusionCharts | Chart using data from JSON URL&lt;/title&gt;
+&lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+&lt;title&gt;FusionCharts | Chart using data from JSON URL&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;form id="form1" runat="server"&gt;
-        &lt;h3&gt;Chart using data from JSON URL&lt;/h3&gt;
-        &lt;div&gt;
-            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-        &lt;/div&gt;
-        &lt;div&gt;&lt;span&gt;
-                &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
-    &lt;/form&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;form id="form1" runat="server"&gt;
+&lt;h3&gt;Chart using data from JSON URL&lt;/h3&gt;
+&lt;div&gt;
+&lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;span&gt;
+&lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/form&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -187,22 +192,23 @@ The HTML template for `aspx` file is shown below:
 
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;head runat="server"&gt;
-    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
-    &lt;title&gt;FusionCharts | Chart using data from JSON URL&lt;/title&gt;
+&lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+&lt;title&gt;FusionCharts | Chart using data from JSON URL&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-   &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;form id="form1" runat="server"&gt;
-        &lt;h3&gt;Chart using data from JSON URL&lt;/h3&gt;
-        &lt;div&gt;
-             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;     
-        &lt;/div&gt;
-        &lt;div&gt;&lt;span&gt;&lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server"/&gt;&lt;/span&gt;&lt;/div&gt;
-    &lt;/form&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;form id="form1" runat="server"&gt;
+&lt;h3&gt;Chart using data from JSON URL&lt;/h3&gt;
+&lt;div&gt;
+&lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;  
+ &lt;/div&gt;
+&lt;div&gt;&lt;span&gt;&lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server"/&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/form&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -211,20 +217,21 @@ The HTML template for `aspx` file is shown below:
 
 The above chart has been rendered using the following steps:
 
-1. Import and resolve the dependencies like `System`, and  `FusionCharts.Charts`.
+1. Import and resolve the dependencies like `System`, and `FusionCharts.Charts`.
 
-2. Define a class `CommonThemeUsage` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `CommonThemeUsage` is inherited. 
+2. Define a class `CommonThemeUsage` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `CommonThemeUsage` is inherited.
 
-3. Within the class `CommonThemeUsage`, define `Page_Load()`: 
-    * Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
-    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
-    * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include __all theme files__), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+3. Within the class `CommonThemeUsage`, define `Page_Load()`:
+
+   - Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
+   - Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
+   - Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include **all theme files**), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of `dataSource`.
 
 4. To set the datasource using URL:
-    * Set the value of the `dataFormat` to **jsonurl**.
-    * Set the static URL to `dataSource` to render the above chart.
+   - Set the value of the `dataFormat` to **jsonurl**.
+   - Set the static URL to `dataSource` to render the above chart.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -244,6 +251,7 @@ The XML representation for the above chart looks as shown below:
     <set label='China ' value='30 ' />
 </chart>
 ```
+
 Copy this into a file called `oilReserves.xml` and store it in the same folder as your HTML page.
 
 > If you are using multilingual characters in your XML, make sure you save the XML data with UTF-8 encoding.
@@ -264,19 +272,20 @@ using FusionCharts.Charts;
 
 public partial class XmlDataUrl : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        //data url
-        string xmlDataUrl = "oilReserves.xml";
-        // create chart instance
-        // parameter
-        // chart type, chart id, chart width, chart height, data format, data source
-        Chart columnChart = new Chart("column2d", "first_chart", "700", "400", "xmlurl", xmlDataUrl);
-        //render chart
-        Literal1.Text = columnChart.Render();
-    }
+protected void Page_Load(object sender, EventArgs e)
+{
+//data url
+string xmlDataUrl = "oilReserves.xml";
+// create chart instance
+// parameter
+// chart type, chart id, chart width, chart height, data format, data source
+Chart columnChart = new Chart("column2d", "first_chart", "700", "400", "xmlurl", xmlDataUrl);
+//render chart
+Literal1.Text = columnChart.Render();
+}
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -320,22 +329,23 @@ The HTML template for `aspx` file is shown below:
 
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;head runat="server"&gt;
-    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
-    &lt;title&gt;FusionCharts | Chart using data from XML URL&lt;/title&gt;
+&lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+&lt;title&gt;FusionCharts | Chart using data from XML URL&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-   &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;form id="form1" runat="server"&gt;
-        &lt;h3&gt;Chart using data from XML URL&lt;/h3&gt;
-        &lt;div&gt;
-             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;     
-        &lt;/div&gt;
-        &lt;div&gt;&lt;span&gt;&lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server"/&gt;&lt;/span&gt;&lt;/div&gt;
-    &lt;/form&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;form id="form1" runat="server"&gt;
+&lt;h3&gt;Chart using data from XML URL&lt;/h3&gt;
+&lt;div&gt;
+&lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;  
+ &lt;/div&gt;
+&lt;div&gt;&lt;span&gt;&lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server"/&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/form&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -348,25 +358,26 @@ The HTML template for `aspx` file is shown below:
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
 &lt;head runat="server"&gt;
-    &lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
-    &lt;title&gt;FusionCharts | Chart using data from XML URL&lt;/title&gt;
+&lt;link href="../Styles/SampleStyleSheet.css" rel="stylesheet" /&gt;
+&lt;title&gt;FusionCharts | Chart using data from XML URL&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;form id="form1" runat="server"&gt;
-        &lt;h3&gt;Chart using data from XML URL&lt;/h3&gt;
-        &lt;div&gt;
-            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-        &lt;/div&gt;
-        &lt;div&gt;&lt;span&gt;
-                &lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
-    &lt;/form&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;form id="form1" runat="server"&gt;
+&lt;h3&gt;Chart using data from XML URL&lt;/h3&gt;
+&lt;div&gt;
+&lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;span&gt;
+&lt;asp:HyperLink id="hyperlink1" NavigateUrl="../Default.aspx" Text="Go Back" runat="server" /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/form&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -375,17 +386,18 @@ The HTML template for `aspx` file is shown below:
 
 The above chart has been rendered using the following steps:
 
-1. Import and resolve the dependencies like `System`, and  `FusionCharts.Charts`.
+1. Import and resolve the dependencies like `System`, and `FusionCharts.Charts`.
 
-2. Define a class `CommonThemeUsage` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `CommonThemeUsage` is inherited. 
+2. Define a class `CommonThemeUsage` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `CommonThemeUsage` is inherited.
 
-3. Within the class `CommonThemeUsage`, define `Page_Load()`: 
-    * Declare a string `jsonData` and use it to assign the chart configuration as a XML string.
-    * Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
-    * Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include __all theme files__), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
-    * Set the `dataFormat` as XML.
-    * Embed the json data as the value of `dataSource`.
+3. Within the class `CommonThemeUsage`, define `Page_Load()`:
+
+   - Declare a string `jsonData` and use it to assign the chart configuration as a XML string.
+   - Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
+   - Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include **all theme files**), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
+   - Set the `dataFormat` as XML.
+   - Embed the json data as the value of `dataSource`.
 
 4. To set the datasource using URL:
-    * Set the value of the `dataFormat` to **xmlurl**.
-    * Set the static URL to `dataSource` to render the above chart.
+   - Set the value of the `dataFormat` to **xmlurl**.
+   - Set the static URL to `dataSource` to render the above chart.

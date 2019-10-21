@@ -1,7 +1,6 @@
 {
     type: 'cylinder',
     dataFormat: 'json',
-    id: 'fuelMeter-5',
     renderAt: 'chart-container',
     width: '250',
     height: '350',
@@ -17,7 +16,7 @@
             "numberSuffix": " ltrs",
             "showValue": "0",
             "chartBottomMargin": "60",
-            "dataStreamURL": "dummyErrorURL/cylinderData.php"
+            "dataStreamURL": "/dummyErrorURL/cylinderData.php"
         },
         "value": "110"
     },

@@ -1,8 +1,8 @@
 {
     type: 'realtimeline',
     renderAt: 'chart-container',
-    width: '700',
-    height: '400',
+    width: '680',
+    height: '390',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -38,12 +38,10 @@
             }
 
             function updateData() {
-                // Get reference to the chart using its ID
-                // var chartRef = FusionCharts("stockRealTimeChart"),
                     // We need to create a querystring format incremental update, containing
                     // label in hh:mm:ss format
                     // and a value (random).
-                    currDate = new Date(),
+                   var currDate = new Date(),
                     label = addLeadingZero(currDate.getHours()) + ":" +
                     addLeadingZero(currDate.getMinutes()) + ":" +
                     addLeadingZero(currDate.getSeconds()),

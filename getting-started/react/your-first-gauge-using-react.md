@@ -7,7 +7,7 @@ chartPresent: false
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project.
 
 In this page, we'll see how to install FusionCharts and render a gauge using the `react-fusionCharts` component.
 
@@ -57,16 +57,15 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
     &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 4 - Including the react-fusioncharts component--&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Step 5 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 </div>
-
 
 <div class='tab localfiles-tab'>
 <div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
@@ -74,7 +73,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     <ol>
         <li>Include the [React](https://reactjs.org/)core library.</li>
         <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
         <li>Include the `react-fusioncharts` component.</li>
         <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
@@ -103,83 +102,89 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase information using a radial or linear scale to display data. 
+Gauges are powerful tools that can showcase information using a radial or linear scale to display data.
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
+To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts). 
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 The angular gauge is shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample have been defined using the following range:
+## Chart data
 
-Range|Color|Hex Code|
--|-|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
+The thresholds for the above sample is shown in the table below:
+
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
-## Convert tabular data into JSON format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
 ```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
 ```
 
-In the above JSON: 
+In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Specify the hex code of the color within the `color` array.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of the dial in an array.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
+Now that you have the data in JSON format, let's see how to render the chart.
 
 ## Render the gauge
 
@@ -195,17 +200,17 @@ To render the gauge, follow the steps below:
 
 5. Include the FusionCharts theme file to apply style to the charts.
 
-6. Add the gauge and the theme as a dependency to the core.
+6. Add the gauge and theme as a dependency to the core.
 
 7. Store the chart configurations as a JSON object. In this JSON object:
 
-    * Set the gauge type as `angulargauge`.  Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
+   - Set the gauge type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
 
-    * Set the width and height (in pixels). 
+   - Set the width and height (in pixels).
 
-    * Set the `dataFormat` as **json**.
+   - Set the `dataFormat` as **json**.
 
-    * Embed the json data as the value of the `dataSource`.
+   - Embed the json data as the value of the `dataSource`.
 
 8. Create the DOM element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
@@ -236,7 +241,7 @@ import Widgets from 'fusioncharts/fusioncharts.widgets';
 // Step 5 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 6 - Adding the chart as dependency to the core fusioncharts
+// Step 6 - Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
 
 // Step 7 - Creating the JSON object to store the chart configurations
@@ -248,7 +253,7 @@ const chartConfigs = {
     dataSource: {
     // Chart Configuration
       "chart": {
-          "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+          "caption": "Nordstrom's Customer Satisfaction Score for 2017",
           "lowerLimit": "0",
           "upperLimit": "100",
           "showValue": "1",
@@ -280,7 +285,7 @@ const chartConfigs = {
   }
 };
 
-// Step 8 - Creating the DOM element to pass the react-fusioncharts component 
+// Step 9 - Creating the DOM element to pass the react-fusioncharts component 
 class App extends React.Component {
   render() {
      return (
@@ -305,13 +310,13 @@ export default App
     &lt;!-- Including babel --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts library to render charts --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.charts.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.charts.js"&gt;&lt;/script> 
     &lt;!-- Including react-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
     &lt;script type="text/jsx"&gt;
     ReactFC.fcRoot(FusionCharts);
     const chartConfigs = {
@@ -323,7 +328,7 @@ export default App
         dataSource: {
             // Chart Configuration
             "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                 "lowerLimit": "0",
                 "upperLimit": "100",
                 "showValue": "1",
@@ -458,8 +463,8 @@ That's it! Your first gauge using `react-fusioncharts` is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

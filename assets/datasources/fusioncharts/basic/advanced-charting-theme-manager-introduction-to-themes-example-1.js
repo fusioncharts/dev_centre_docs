@@ -3,7 +3,6 @@
     renderAt: 'chart-container',
     width: '500',
     height: '300',
-    id: "rev-fc-chart",
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -51,54 +50,62 @@
         }]
     },
     events: {
-        'beforeRender': function(evt, args) {
-            // creating div for theme controllers
-            var scriptElem, controllers = document.createElement('div'),
-                themeCollection = {
-                'zune': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.zune.js',
-                'ocean': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.ocean.js',
-                'carbon': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.carbon.js'
-            };
-            for(var theme in themeCollection) {
-                scriptElem = document.createElement('script');
-                scriptElem.setAttribute('type', 'text/javascript');
-                scriptElem.setAttribute('src', themeCollection[theme]);
-                scriptElem.async = false;
-                args.container.parentNode.insertBefore(scriptElem, args.container.nextSibling);
+      'beforeRender': function(eventObj, args) {
+         var options = {
+            'fusion': 'Fusion',
+            'gammel': 'Gammel',
+            'candy': 'Candy',
+            'zune': 'Zune',
+            'ocean': 'Ocean',
+            'carbon': 'Carbon'
+         },
+            themeSelected = 'fusion',
+            chartRef = eventObj.sender;
 
-            }
-            // form radio buttons inside div
-            controllers.innerHTML = '<label><input type="radio" name="theme-options" id="fusion-chckbx" value="zune"> Zune</label><label><input type="radio" name="theme-options" value="ocean"> Ocean</label><label><input type="radio" name="theme-options" value="carbon"> Carbon</label><label><input type="button" value="Apply Theme" id="set-theme"></label>';
-            controllers.setAttribute('id', 'controllers');
+         var container = args.container;
+         var radioContainer = document.createElement('div');
 
-            // setting css styles for controllers div
-            controllers.style.cssText = "font-family:'Helvetica Neue', Arial; font-size:14px; margin-left:90px;";
+         radioContainer.style.cssText = "text-align: center; width: 100%;"
+         var spanLabel = document.createElement('span');
+         spanLabel.innerText = "Choose a theme: ";
 
-            // setting css styles for labels inside controllers div
-            var labels = controllers.getElementsByTagName('label');
-            for (i = 0; i < labels.length; i++) {
-                labels[i].style.cssText = 'padding: 0 5px !important;';
-            }
+         var upadateTheme = function (event) {
+            var theme = event.target.value;
+            chartRef.setChartAttribute('theme', theme);
+         }
 
-            args.container.appendChild(controllers);
-            //Button click handler
-            document.getElementById("set-theme").onclick = function() {
-                //Get name of the selected theme from radio
-                var radios = document.getElementsByName("theme-options"),
-                    len = radios && radios.length,
-                    isSelected, radElem, i;
+         function radioWrapper(value, label, selected = false) {
+            const div = document.createElement('div');
+            const input = document.createElement('input');
+            const labelElement = document.createElement('label');
 
-                for (i = 0; i < len; i += 1) {
-                    radElem = radios[i];
-                    isSelected = radElem && radios[i].checked;
+            div.style.cssText = "display: inline-block; margin:10px 5px;";
+            labelElement.style.cssText = "margin-right: 5px;";
 
-                    if (isSelected) {
-                        //Update chart theme
-                        FusionCharts.items["rev-fc-chart"].setChartAttribute('theme', radElem.value);
-                    }
-                }
-            }
-            
-        }
+            labelElement.innerText = label;
+            labelElement.setAttribute('for', value)
+
+            input.id = value;
+            input.type = 'radio';
+            input.name = "theme"
+            input.value = value
+            input.onchange = upadateTheme;
+            selected && input.setAttribute('checked', '');
+
+            div.appendChild(labelElement);
+            div.appendChild(input);
+            return div;
+         }
+
+
+         for (const key in options) {
+            var label = options[key];
+            var selected = themeSelected === key;
+            var radioOption = radioWrapper(key, label, selected);
+            radioContainer.appendChild(radioOption);
+         }
+
+         container.appendChild(radioContainer);
+      }
     }
 }

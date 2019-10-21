@@ -6,18 +6,18 @@ heading: Overlapped Charts
 
 Now, let's learn how to create an Overlapped Chart. We will create a chart showcasing Major League Baseball Rankings. The data will look as shown below:
 
-Teams|Matches|Wins
--|-|-
-Boston Red Sox|88|57
-New York Yankees|84|54
-Tampa Bay Rays|86|42
-Toronto Blue Jays|86|39
-Baltimore Orioles|85|24
-Cleveland Indians|85|46
-Detroit Tigers|88|38
-Minnesota Twins|83|35
-Chicago White Sox|86|29
-Kansas City Royals|86|25
+| Teams              | Matches | Wins |
+| ------------------ | ------- | ---- |
+| Boston Red Sox     | 88      | 57   |
+| New York Yankees   | 84      | 54   |
+| Tampa Bay Rays     | 86      | 42   |
+| Toronto Blue Jays  | 86      | 39   |
+| Baltimore Orioles  | 85      | 24   |
+| Cleveland Indians  | 85      | 46   |
+| Detroit Tigers     | 88      | 38   |
+| Minnesota Twins    | 83      | 35   |
+| Chicago White Sox  | 86      | 29   |
+| Kansas City Royals | 86      | 25   |
 
 The chart will look as shown below:
 
@@ -91,8 +91,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             OverlappedBar.SubCaption.Text = "Teams in the lead";
             OverlappedBar.XAxis.Text = "Position";
             OverlappedBar.YAxis.Text = "Team";
-            OverlappedBar.Width = "700";
-            OverlappedBar.Height = "700";
+            OverlappedBar.Width.Pixel(700);
+            OverlappedBar.Height.Pixel(400);
             Literal1.Text = OverlappedBar.Render();
         }
     }
@@ -102,8 +102,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OverlappedChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.OverlappedChart" %>
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">

@@ -4,23 +4,26 @@ description: This article will showcase how to apply different themes to the cha
 heading: Apply Different Themes using ASP.NET
 ---
 
-> ### FusionCharts.NET (BETA)
-We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
-> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
-> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
-> * All methods and properties are available in Visual Studio intellisense.
-> * ...and many more.
-> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+> ### FusionCharts.NET
+>
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
+>
+> - Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> - Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> - All methods and properties are available in Visual Studio intellisense.
+> - ...and many more.
+>   Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
 In FusionCharts Suite XT you can manually set the cosmetics and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. FusionCharts Suite ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
 
 FusionCharts Suite XT ships with the following predefined themes:
-* `fusion` (since v3.13.0)
-* `gammel` (since v3.13.0)
-* `candy` (since v3.13.0)
-* `zune`
-* `ocean`
-* `carbon`
+
+- `fusion` (since v3.13.0)
+- `gammel` (since v3.13.0)
+- `candy` (since v3.13.0)
+- `zune`
+- `ocean`
+- `carbon`
 
 This article focuses on how you can apply different themes to the chart at runtime using FusionCharts ASP.NET `C#` & `VB` wrapper. Click any radio button, to see how the look and feel of the chart change with each theme.
 
@@ -43,17 +46,18 @@ using System;
 using FusionCharts.Charts;
 
 public partial class CommonThemeUsage: System.Web.UI.Page {
-    protected void Page_Load(object sender, EventArgs e) {
-        // store chart data as json string
-        string jsonData;
-        jsonData = "{'chart':{'caption':'Countries With Most Oil Reserves [2017-18]','subCaption':'In MMbbl = One Million barrels','xAxisName':'Country','yAxisName':'Reserves (MMbbl)','numberSuffix':'K','theme':'fusion'},'data':[{'label':'Venezuela','value':'290'},{'label':'Saudi','value':'260'},{'label':'Canada','value':'180'},{'label':'Iran','value':'140'},{'label':'Russia','value':'115'},{'label':'UAE','value':'100'},{'label':'US','value':'30'},{'label':'China','value':'30'}]}";
-        // create chart instance for chart
-        Chart columnChart = new Chart("column2d", "column_chart", "700", "400", "json", jsonData);
-        // render chart
-        Literal1.Text = columnChart.Render();
-    }
+protected void Page_Load(object sender, EventArgs e) {
+// store chart data as json string
+string jsonData;
+jsonData = "{'chart':{'caption':'Countries With Most Oil Reserves [2017-18]','subCaption':'In MMbbl = One Million barrels','xAxisName':'Country','yAxisName':'Reserves (MMbbl)','numberSuffix':'K','theme':'fusion'},'data':[{'label':'Venezuela','value':'290'},{'label':'Saudi','value':'260'},{'label':'Canada','value':'180'},{'label':'Iran','value':'140'},{'label':'Russia','value':'115'},{'label':'UAE','value':'100'},{'label':'US','value':'30'},{'label':'China','value':'30'}]}";
+// create chart instance for chart
+Chart columnChart = new Chart("column2d", "column_chart", "700", "400", "json", jsonData);
+// render chart
+Literal1.Text = columnChart.Render();
+}
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -97,17 +101,17 @@ The HTML template for `aspx` file is shown below:
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
 &lt;head runat="server"&gt;
-    &lt;title&gt;FusionCharts | Applying Different Themes&lt;/title&gt;
+&lt;title&gt;FusionCharts | Applying Different Themes&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body style="font-family: Helvetica Neue, Arial; font-size: 16px;"&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.gammel.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.candy.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.gammel.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.candy.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
 
     &lt;form id="form1" runat="server"&gt;
         &lt;h3&gt;Applying Different Themes&lt;/h3&gt;
@@ -167,6 +171,7 @@ The HTML template for `aspx` file is shown below:
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -179,17 +184,17 @@ The HTML template for `aspx` file is shown below:
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 
 &lt;head runat="server"&gt;
-    &lt;title&gt;FusionCharts | Applying Different Themes&lt;/title&gt;
+&lt;title&gt;FusionCharts | Applying Different Themes&lt;/title&gt;
 &lt;/head&gt;
 
 &lt;body style="font-family: Helvetica Neue, Arial; font-size: 16px;"&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.gammel.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.candy.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.gammel.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.candy.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
 
     &lt;form id="form1" runat="server"&gt;
         &lt;h3&gt;Applying Different Themes&lt;/h3&gt;
@@ -249,21 +254,22 @@ The HTML template for `aspx` file is shown below:
 
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
 </div>
 </div>
 
-Apart from the usual boilerplate, the sample __C#/VB__ code provided above corresponds to the following tasks:
+Apart from the usual boilerplate, the sample **C#/VB** code provided above corresponds to the following tasks:
 
-1. Import and resolve the dependencies like `System`, and  `FusionCharts.Charts`.
+1. Import and resolve the dependencies like `System`, and `FusionCharts.Charts`.
 
-2. Define a class `CommonThemeUsage` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `CommonThemeUsage` is inherited. 
+2. Define a class `CommonThemeUsage` inherited from `System.Web.UI.Page`. Correspondingly, in the `.aspx` file, `CommonThemeUsage` is inherited.
 
-3. Within the class `CommonThemeUsage`, define `Page_Load()`: 
-	* Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
-	* Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
-	* Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include __all theme files__), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
+3. Within the class `CommonThemeUsage`, define `Page_Load()`:
+   - Declare a string `jsonData` and use it to assign the chart configuration as a JSON string.
+   - Create an instance of `Chart` (defined within `FusionCharts.Charts`), and assign it the necessary attributes of a Column 2D chart. See the source code comments for the attributes used. Of particular importance is the attribute `chartType`, which in this case is `column2d`. Find the complete list of chart types with their respective alias [here](/chart-guide/list-of-charts).
+   - Render the chart using the `[instanceName].Render()` method. Correspondingly, in the `.aspx` file, include the necessary chart and theme libraries modules using the `<script>` tags, like `fusioncharts.js`, `fusioncharts.theme.fusion.js` (for this case, include **all theme files**), followed by some JavaScript functions and radio buttons, and finally within a `<form><div>` render the chart.
 
 > Refer to [Column 2D chart](/chart-guide/standard-charts/line-area-and-column-charts) for more information on the configuration and data for this chart type.

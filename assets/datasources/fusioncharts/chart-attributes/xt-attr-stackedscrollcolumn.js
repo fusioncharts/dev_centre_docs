@@ -7,7 +7,7 @@
     dataSource: {
         "chart": {
             "caption": "Sales Comparison",
-            "subCaption": "(FY 2012 to FY 2013)",
+            "subCaption": "(2018 to 2019)",
             "xaxisname": "Month",
             "yaxisname": "Revenue",
             "numberprefix": "$",
@@ -18,53 +18,53 @@
         },
         "categories": [{
             "category": [{
-                "label": "Jan 2012"
+                "label": "Jan 2018"
             }, {
-                "label": "Feb 2012"
+                "label": "Feb 2018"
             }, {
-                "label": "Mar 2012"
+                "label": "Mar 2018"
             }, {
-                "label": "Apr 2012"
+                "label": "Apr 2018"
             }, {
-                "label": "May 2012"
+                "label": "May 2018"
             }, {
-                "label": "Jun 2012"
+                "label": "Jun 2018"
             }, {
-                "label": "Jul 2012"
+                "label": "Jul 2018"
             }, {
-                "label": "Aug 2012"
+                "label": "Aug 2018"
             }, {
-                "label": "Sep 2012"
+                "label": "Sep 2018"
             }, {
-                "label": "Oct 2012"
+                "label": "Oct 2018"
             }, {
-                "label": "Nov 2012"
+                "label": "Nov 2018"
             }, {
-                "label": "Dec 2012"
+                "label": "Dec 2018"
             }, {
-                "label": "Jan 2013"
+                "label": "Jan 2019"
             }, {
-                "label": "Feb 2013"
+                "label": "Feb 2019"
             }, {
-                "label": "Mar 2013"
+                "label": "Mar 2019"
             }, {
-                "label": "Apr 2013"
+                "label": "Apr 2019"
             }, {
-                "label": "May 2013"
+                "label": "May 2019"
             }, {
-                "label": "Jun 2013"
+                "label": "Jun 2019"
             }, {
-                "label": "Jul 2013"
+                "label": "Jul 2019"
             }, {
-                "label": "Aug 2013"
+                "label": "Aug 2019"
             }, {
-                "label": "Sep 2013"
+                "label": "Sep 2019"
             }, {
-                "label": "Oct 2013"
+                "label": "Oct 2019"
             }, {
-                "label": "Nov 2013"
+                "label": "Nov 2019"
             }, {
-                "label": "Dec 2013"
+                "label": "Dec 2019"
             }]
         }],
         "dataset": [{

@@ -1,7 +1,6 @@
 {
     type: 'thermometer',
     renderAt: 'chart-container',
-    id: 'myThm',
     width: '240',
     height: '300',
     dataFormat: 'json',
@@ -39,16 +38,17 @@
             controllers.setAttribute('id', 'controllers');
         },
         "renderComplete": function(evtObj, argObj) {
-            flag = 0;
+            var flag = 0,
+               chartRef = evtObj.sender;
 
             function stopStartUpdate() {
                 if (flag === 0) {
                     document.getElementById('btnSU').value = "Restart Update";
-                    FusionCharts.items['myThm'].stopUpdate();
+                    chartRef.stopUpdate();
                     flag = 1;
                 } else {
                     document.getElementById('btnSU').value = "Stop Update";
-                    FusionCharts.items['myThm'].restartUpdate();
+                    chartRef.restartUpdate();
                     flag = 0;
                 }
             }

@@ -2,8 +2,8 @@
     type: 'stackedcolumn2d',
     renderAt: 'chart-container1',
     id: 'chart2',
-    width: '700',
-    height: '400',
+    width: '680',
+    height: '390',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -110,13 +110,13 @@
         "beforerender": function(evt, args){
             var controls = document.createElement('div');
 
-            exportChart = function() {
+            window.exportChart = function() {
                 FusionCharts.batchExport({
                     exportFormat: 'pdf',
                      charts:[{
                             "id":"chart1"
                         },{
-                            "id":"chart2"    
+                            "id":"chart2"
                     }]
                 });
             };

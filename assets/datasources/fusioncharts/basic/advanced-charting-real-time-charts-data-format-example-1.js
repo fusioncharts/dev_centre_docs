@@ -1,5 +1,4 @@
 {
-    id: "stockRealTimeChart",
     type: 'realtimeline',
     renderAt: 'chart-container',
     width: '500',

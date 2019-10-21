@@ -4,7 +4,7 @@ description: FusionCharts lets you pass the complete JSON/XML chart data using a
 heading: Setting Data Source Using URL
 ---
 
-FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a `.json` or `.xml` file and then pass the relative URL of this file as value to the `dataSource` attribute. 
+FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a `.json` or `.xml` file and then pass the relative URL of this file as value to the `dataSource` attribute.
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
@@ -18,16 +18,16 @@ Let's build the same revenue chart which we built in the [first example](/gettin
 
 The data for this chart is represented in the table below:
 
-Country|No. of Oil Reserves|
--|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290                 |
+| Saudi     | 260                 |
+| Canada    | 180                 |
+| Iran      | 140                 |
+| Russia    | 115                 |
+| UAE       | 100                 |
+| US        | 30                  |
+| China     | 30                  |
 
 The JSON representation for the above table looks as shown below:
 
@@ -79,7 +79,7 @@ In this step, we will create an instance of the chart type as **column2d**, set 
 
 The code to render a chart using `require` is given below:
 
-```
+```javascript
 //Include fusioncharts
 var FusionCharts = require('fusioncharts');
 
@@ -136,7 +136,7 @@ The above chart has been rendered using the following steps:
 
 The XML representation for the above chart looks as shown below:
 
-```
+```html
 <chart caption='Countries With Most Oil Reserves [2017-18] ' subcaption='In MMbbl = One Million barrels ' xaxisname='Country ' yaxisname='Reserves (MMbbl) ' numberprefix='K ' theme='fusion '>
     <set label='Venezuela ' value='290 ' />
     <set label='Saudi ' value='260 ' />
@@ -148,6 +148,7 @@ The XML representation for the above chart looks as shown below:
     <set label='China ' value='30 ' />
 </chart>
 ```
+
 Copy this into a file called `oilReserves.xml` and store it in the same folder as your HTML page.
 
 > If you are using multilingual characters in your XML, make sure you save the XML data with UTF-8 encoding.
@@ -156,7 +157,7 @@ In this step, we will create an instance of the chart type as **column2d**, set 
 
 The code to render a chart using `require` is given below:
 
-```
+```javascript
 var FusionCharts = require('fusioncharts');
 var Charts = require('fusioncharts/fusioncharts.charts');
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');

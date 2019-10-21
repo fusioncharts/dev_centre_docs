@@ -1,7 +1,6 @@
 {
     type: 'cylinder',
     renderAt: 'chart-container',
-    id: 'cs-cylinder-gauge-3',
     width: '250',
     height: '350',
     dataFormat: 'json',

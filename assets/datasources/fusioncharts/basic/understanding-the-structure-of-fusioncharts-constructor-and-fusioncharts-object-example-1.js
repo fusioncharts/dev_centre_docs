@@ -1,6 +1,5 @@
 {
   type : "pie2d",//type of the chart to be rendered
-  id : "sample-chart-1",//id of the chart - required to refer to the chart
   width : "500",//width of the chart
   height: "400",//height of the chart
   dataFormat:"json", //format of the data passed to the dataSource property
@@ -43,24 +42,23 @@
     "beforeRender": function(evt, args) {
           var btn = document.createElement('input'),
               container = document.createElement('DIV'),
-              p = document.createElement('p');
+              p = document.createElement('p'),
+              chartRef = evt.sender;
 
-          btn.setAttribute("value","PRINT CHART DATA");          
+          btn.setAttribute("value","PRINT CHART DATA");
           btn.setAttribute("type","button");
           btn.setAttribute("class", "btn");
-          
+
           container.setAttribute("class","btn-group")
           container.appendChild(btn);
           container.appendChild(p);
 
           args.container.parentNode.insertBefore(container, args.container.nextSibling);
-          
+
           btn.onclick = function(){
-              var chartObj = FusionCharts("sample-chart-1");
-              var chartData = chartObj.getJSONData()['data'];
+              var chartData = chartRef.getJSONData()['data'];
               p.innerHTML = JSON.stringify(chartData);
-          }; 
+          };
         }
     }
 }
-    

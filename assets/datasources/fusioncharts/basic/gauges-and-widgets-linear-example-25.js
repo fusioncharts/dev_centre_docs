@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cs-linear-gauge-25',
     width: '400',
     height: '170',
     dataFormat: 'json',

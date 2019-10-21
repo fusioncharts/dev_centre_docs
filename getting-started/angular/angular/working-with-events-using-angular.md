@@ -14,7 +14,7 @@ Take a look at the Column 2D chart shown below:
 
 Roll the mouse pointer over any one data plot and see how the text (the data label and the value) rendered below the chart changes.
 
-For example, if you roll the mouse pointer over the __Canada__ data plot, the following text is displayed below the chart:
+For example, if you roll the mouse pointer over the **Canada** data plot, the following text is displayed below the chart:
 
 **You are currently hovering over Canada whose value is 180**
 
@@ -22,37 +22,30 @@ For example, if you roll the mouse pointer over the __Canada__ data plot, the fo
 
 In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
 
-```
+```javascript
 // Setup needed in app.module.ts
-import { NgModule, enableProdMode } from '@angular/core'
-import { AppComponent } from './app.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { FusionChartsModule } from 'angular-fusioncharts';
+import { NgModule, enableProdMode } from "@angular/core";
+import { AppComponent } from "./app.component";
+import { BrowserModule } from "@angular/platform-browser";
+import { FusionChartsModule } from "angular-fusioncharts";
 
 // Load FusionCharts
-import * as FusionCharts from 'fusioncharts';
+import * as FusionCharts from "fusioncharts";
 // Load Charts module
-import * as Charts from 'fusioncharts/fusioncharts.charts';
+import * as Charts from "fusioncharts/fusioncharts.charts";
 // Load fusion theme
-import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
+import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
 // Add dependencies to FusionChartsModule
 FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FusionChartsModule
-  ],
-  providers: [
-  ],
-  bootstrap: [ AppComponent ]
+  declarations: [AppComponent],
+  imports: [BrowserModule, FusionChartsModule],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}
 ```
 
 In the above code:
@@ -69,7 +62,7 @@ In the above code:
 
 Add the following code to `app.component.ts`:
 
-```
+```javascript
 // In app.component.ts
 import {
   Component,
@@ -137,10 +130,11 @@ In the above code:
 1. Add the JSON data within the `AppComponent` class.
 
 2. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+
+   - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the width and height of the chart in pixels.
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of `dataSource`.
 
 3. Set the `update` function inside the angular context to select the label and the value of the data plot at the time of mouse rollover.
 
@@ -148,27 +142,33 @@ In the above code:
 
 Add the following code to `app.component.html`:
 
-```
-<!-- in app.component.html--><div class="card shadow">
-    <div class="card-body chart-wrapper">
-        <div class="chart-wrapper-inner">
-            <fusioncharts
-                width="700" 
-                height="400"
-                type="column2d"
-                [dataSource]="dataSource"
-                [events]="events"
-                (dataplotRollOver)="update($event)">    <!-- Added event listener to attach update function from component -->
-            </fusioncharts>
-            <p style="font-size:20px;font-weight: 300;">You're are currently hovering over <u>{{selectedLabel || "______"}}</u> whose value is <u>{{selectedValue || "_______"}} </u></p>
-        </div>
+```html
+<!-- in app.component.html-->
+<div class="card shadow">
+  <div class="card-body chart-wrapper">
+    <div class="chart-wrapper-inner">
+      <fusioncharts
+        width="700"
+        height="400"
+        type="column2d"
+        [dataSource]="dataSource"
+        [events]="events"
+        (dataplotRollOver)="update($event)"
+      >
+        <!-- Added event listener to attach update function from component -->
+      </fusioncharts>
+      <p style="font-size:20px;font-weight: 300;">
+        You're are currently hovering over
+        <u>{{selectedLabel || "______"}}</u> whose value is
+        <u>{{selectedValue || "_______"}} </u>
+      </p>
     </div>
+  </div>
 </div>
+```
 
 In the above code:
 
 1. Create `fusioncharts` directive inside the template.
-
 2. Add an event listener to attach the updated fusction from the component.
-
 3. Add the content which will be displayed when the mouse pointer is rolled over the data plot.

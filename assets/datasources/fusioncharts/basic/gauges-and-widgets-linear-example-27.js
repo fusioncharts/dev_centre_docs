@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cpu-linear-gauge-27',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -65,27 +64,28 @@
             }]
         }
     },
-    "events": {
-        "rendered": function(evtObj, argObj) {
-            evtObj.sender.intervalVar = setInterval(function() {
-                var prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
-                FusionCharts.items["cpu-linear-gauge-27"].feedData("value=" + prcnt);
-            }, 5000);
-        },
-        "realTimeUpdateComplete": function(evt, arg) {
-            var annotations = evt.sender.annotations,
-                percentValue = evt.sender.getData(1),
-                colorVal = "#" + ((percentValue > 70) ? "ff6650" : "f6bd11");
-            annotations && annotations.update('rangeText', {
-                "text": "Currently Utilizing " + percentValue + "%"
-            });
-            annotations && annotations.update('rangeBg', {
-                "fillcolor": colorVal
-            });
+   "events": {
+      "rendered": function(evtObj, argObj) {
+         var chartRef = evtObj.sender;
+         chartRef.intervalVar = setInterval(function () {
+            var prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
+            chartRef.feedData("value=" + prcnt);
+         }, 5000);
+      },
+      "realTimeUpdateComplete": function(evt, arg) {
+         var annotations = evt.sender.annotations,
+            percentValue = evt.sender.getData(1),
+            colorVal = "#" + ((percentValue > 70) ? "ff6650" : "f6bd11");
+         annotations && annotations.update('rangeText', {
+            "text": "Currently Utilizing " + percentValue + "%"
+         });
+         annotations && annotations.update('rangeBg', {
+            "fillcolor": colorVal
+         });
 
-        },
-        "disposed": function(evtObj, argObj) {
-            clearInterval(evtObj.sender.intervalVar);
-        }
-    }
+      },
+      "disposed": function(evtObj, argObj) {
+         clearInterval(evtObj.sender.intervalVar);
+      }
+   }
 }

@@ -14,15 +14,15 @@ Click [here](https://dotnetfiddle.net/Dw6gBV) to edit the column chart.
 
 The data for the above chart is shown in the table below:
 
-Programming Language|Users
--|-
-Java|62000
-Python|46000
-JavaScript|38000
-C++|31000
-C#|27000
-PHP|14000
-Perl|14000
+| Programming Language | Users |
+| -------------------- | ----- |
+| Java                 | 62000 |
+| Python               | 46000 |
+| JavaScript           | 38000 |
+| C++                  | 31000 |
+| C#                   | 27000 |
+| PHP                  | 14000 |
+| Perl                 | 14000 |
 
 Now that you have the tabular data ready, let's see how to render the chart.
 
@@ -64,34 +64,19 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           // Create data table
-            DataTable primaryData = new DataTable();
+           DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Programming Language", typeof(System.String));
+            ChartData.Columns.Add("Users", typeof(System.Double));
+            ChartData.Rows.Add("Java",62000);
+            ChartData.Rows.Add("Python",46000);
+            ChartData.Rows.Add("Javascript",38000);
+            ChartData.Rows.Add("C++",31000);
+            ChartData.Rows.Add("C#",27000);
+            ChartData.Rows.Add("PHP",14000);
+            ChartData.Rows.Add("Perl",14000);
 
-            // Retrieve data using database query
-            string query = "select [Languages], [User] from dbo.UserPerLanguage";
-            string connetionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            primaryData.Clear();
-
-            // Connection string
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(primaryData);
-                }
-            }
             // Create static source with this data table
-            StaticSource source = new StaticSource(primaryData);
+            StaticSource source = new StaticSource(ChartData);
             // Create instance of DataModel class
             DataModel model = new DataModel();
             // Add DataSource to the DataModel
@@ -99,16 +84,20 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
             // Instantiate Column Chart
             Charts.ColumnChart column = new Charts.ColumnChart("first_chart");
             // Set Chart's width and height
-            column.Width = "700";
-            column.Height = "400";
+            column.Width.Pixel(700);
+            column.Height.Pixel(400);
             // Set DataModel instance as the data source of the chart
             column.Data.Source = model;
             // Set Chart Title
             column.Caption.Text = "Most popular programming language";
+            // Sset chart sub title
+            column.SubCaption.Text = "2017-2018";
+            
             // set XAxis Text
             column.XAxis.Text = "Programming Language";
             // Set YAxis title
             column.YAxis.Text = "User";
+            column.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             // Render the chart to 'Literal1' literal control
             Literal1.Text = column.Render();
         }
@@ -119,8 +108,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FirstChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FirstChart" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -141,3 +128,5 @@ The `.aspx` template for the above sample is shown below:
 ```
 
 That's it! Your first chart is ready.
+
+You can download the samples for **FusionCharts.NET** from [here](https://github.com/fusioncharts/fusioncharts.net-core-sample).

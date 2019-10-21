@@ -8,32 +8,32 @@ heading: Scroll charts
 
 Now, let's learn how to create a Scrollable Column Chart. We will create a chart showcasing sales trends of a company in the Financial Year 2016-17. The data will look as shown below:
 
-Month|Sales
--|-
-Jan 2016|27400
-Feb 2016|29800
-Mar 2016|25800
-Apr 2016|26800
-May 2016|29600
-Jun 2016|32600
-Jul 2016|31800
-Aug 2016|36700
-Sep 2016|29700
-Oct 2016|31900
-Nov 2016|34800
-Dec 2016|24800
-Jan 2017|26300
-Feb 2017|31800
-Mar 2017|30900
-Apr 2017|33000
-May 2017|36200
-Jun 2017|32100
-Jul 2017|37500
-Aug 2017|38500
-Sep 2017|35400
-Oct 2017|38200
-Nov 2017|33300
-Dec 2017|38300
+| Month    | Sales |
+| -------- | ----- |
+| Jan 2016 | 27400 |
+| Feb 2016 | 29800 |
+| Mar 2016 | 25800 |
+| Apr 2016 | 26800 |
+| May 2016 | 29600 |
+| Jun 2016 | 32600 |
+| Jul 2016 | 31800 |
+| Aug 2016 | 36700 |
+| Sep 2016 | 29700 |
+| Oct 2016 | 31900 |
+| Nov 2016 | 34800 |
+| Dec 2016 | 24800 |
+| Jan 2017 | 26300 |
+| Feb 2017 | 31800 |
+| Mar 2017 | 30900 |
+| Apr 2017 | 33000 |
+| May 2017 | 36200 |
+| Jun 2017 | 32100 |
+| Jul 2017 | 37500 |
+| Aug 2017 | 38500 |
+| Sep 2017 | 35400 |
+| Oct 2017 | 38200 |
+| Nov 2017 | 33300 |
+| Dec 2017 | 38300 |
 
 The chart will look as shown below:
 
@@ -106,8 +106,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             column.SubCaption.Text = "2016-2017";
             column.XAxis.Text = "Month";
             column.YAxis.Text = "Revenue";
-            column.Width = "600";
-            column.Height = "500";
+            column.Width.Pixel(600);
+            column.Height.Pixel(500);
             Literal1.Text = column.Render();
         }
     }
@@ -117,7 +117,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollColumnChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollColumnChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -211,8 +210,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             line.SubCaption.Text = "2016-2017";
             line.XAxis.Text = "Month";
             line.YAxis.Text = "Revenue";
-            line.Width = "600";
-            line.Height = "500";
+            line.Width.Pixel(600);
+            line.Height.Pixel(500);
             Literal1.Text = line.Render();
         }
     }
@@ -222,7 +221,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollLineChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollLineChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -249,7 +247,7 @@ Now, let's learn how to create a Scrollable Area Chart. The code remains the sam
 
 ## Render the Chart
 
-```
+```csharp
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
@@ -291,8 +289,8 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
             area.SubCaption.Text = "2016-2017";
             area.XAxis.Text = "Month";
             area.YAxis.Text = "Revenue";
-            area.Width = "600";
-            area.Height = "500";
+            area.Width.Pixel(600);
+            area.Height.Pixel(500);
             Literal1.Text = area.Render();
         }
     }
@@ -302,7 +300,6 @@ namespace FusionChartsVisualisationWebFormsSamples.Samples {
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScrollAreaChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.ScrollAreaChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">

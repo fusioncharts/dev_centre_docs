@@ -60,7 +60,7 @@
             str += '    </tr>';
 
             //Preparing html string to create the table with data
-            for (i = 0; i < dataArr.length; i++) {
+            for (var i = 0; i < dataArr.length; i++) {
                 if (dataArr[i][0] !== null) {
                     str += '    <tr>';
                     str += '        <td width="50%" style="padding:3px">' + dataArr[i][0] + '</td>';

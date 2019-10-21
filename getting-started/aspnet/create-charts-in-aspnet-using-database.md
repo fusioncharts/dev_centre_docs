@@ -5,21 +5,23 @@ heading: Create Charts in ASP.Net using Database
 chartPresent: true
 ---
 
-> ### FusionCharts.NET (BETA)
-We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
-> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
-> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
-> * All methods and properties are available in Visual Studio intellisense.
-> * ...and many more.
-> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+> ### FusionCharts.NET
+>
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
+>
+> - Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> - Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> - All methods and properties are available in Visual Studio intellisense.
+> - ...and many more.
+>   Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
 In addition to directly specifying the chart data (or the URL for the file in which the chart data is stored) directly in the JSON/XML code, you can also fetch data for the chart from a database.
 
 This section showcases how you can do this using the FusionCharts ASP.NET wrapper to create a multi-series line chart by fetching data from a database.
 
->  Although you can create all FusionCharts chart types using this method, in this section we will focus on only this one example these two examples. </p>
+> Although you can create all FusionCharts chart types using this method, in this section we will focus on only this one example these two examples.
 
->  Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your web application. </p>
+> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">**FusionCharts.dll**</a> file in the **Bin** folder of your web application.
 
 ## Creating a Multi-series Line Chart
 
@@ -30,6 +32,7 @@ A multi-series line chart that shows the factory output by quantity for three fa
 Assume that you have a **factoryDB** database with the **factory_output** table that shows the number of units produced by three factories daily, from January 1, 2003 to January 20, 2003. In this example, you will be shown how you can use the FusionCharts ASP.NET wrapper and fetch data from this database to create the above multi-series line chart.
 
 The data structure that goes into the **../DBExample/MSCharts.aspx** file is given below:
+
 <div class="code-wrapper">
 <ul class='code-tabs'>
   <li class='active'><a data-toggle='json'>C#</a></li>
@@ -37,55 +40,59 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="language-aspnet">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;MSCharts.aspx.cs&quot; Inherits=&quot;DBExample_MSCharts&quot; %&gt;
 
-	&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
-	&lt;html&gt;
-	    &lt;head&gt;
-			&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
-			&lt;title&gt;FusionCharts - Simple&lt;/title&gt;
-			&lt;!-- FusionCharts script tag --&gt;
-			&lt;script type=&quot;text/javascript&quot; src=&quot;../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
-			&lt;!-- End --&gt;
-		&lt;/head&gt;
-		&lt;body&gt;
-		  &lt;div style=&quot;text-align:center&quot;&gt;
-		      &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;
-		  &lt;/div&gt;
-		&lt;/body&gt;
-	&lt;/html&gt;
+    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+    		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+    		&lt;title&gt;FusionCharts - Simple&lt;/title&gt;
+    		&lt;!-- FusionCharts script tag --&gt;
+    		&lt;script type=&quot;text/javascript&quot; src=&quot;../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+    		&lt;!-- End --&gt;
+    	&lt;/head&gt;
+    	&lt;body&gt;
+    	  &lt;div style=&quot;text-align:center&quot;&gt;
+    	      &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;
+    	  &lt;/div&gt;
+    	&lt;/body&gt;
+    &lt;/html&gt;
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="language-aspnet">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;index.aspx.vb&quot; Inherits=&quot;Samples_DBExample_index&quot; %&gt;
 
-	&lt;!DOCTYPE html&gt;
-	&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
-	&lt;head runat=&quot;server&quot;&gt;
-		&lt;title&gt;FusionCharts with Database&lt;/title&gt;
-		&lt;script type=&quot;text/javascript&quot; src=&quot;../../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
-		&lt;!-- End --&gt; 
-	&lt;/head&gt;
-	&lt;body&gt;
-	  Fusioncharts will render below
-	  &lt;div style=&quot;text-align:center&quot;&gt;
-	      &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;           
-	  &lt;/div&gt;
-	&lt;/body&gt;
-	&lt;/html&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+    &lt;head runat=&quot;server&quot;&gt;
+    	&lt;title&gt;FusionCharts with Database&lt;/title&gt;
+    	&lt;script type=&quot;text/javascript&quot; src=&quot;../../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+    	&lt;!-- End --&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      Fusioncharts will render below
+      &lt;div style=&quot;text-align:center&quot;&gt;
+          &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
 </div>
 </div>
 
-
 The data structure that goes into the code behind **../DBExample/MSCharts.aspx.cs** file is given below:
+
 <div class="code-wrapper">
 <ul class='code-tabs'>
   <li class='active'><a data-toggle='json'>C#</a></li>
@@ -93,7 +100,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="language-aspnet">
   using System;
   using System.Collections;
   using System.Configuration;
@@ -105,16 +112,16 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
   using System.Web.UI.WebControls;
   using System.Web.UI.WebControls.WebParts;
 
-  // Use the `FusionCharts.Charts` namespace to be able to use classes and methods required to // create charts.
-  using FusionCharts.Charts;
+// Use the `FusionCharts.Charts` namespace to be able to use classes and methods required to // create charts.
+using FusionCharts.Charts;
 
-  using System.Text;
-  using System.Data.Odbc;
-  using DataConnection;
-  using System.Data.OleDb;
+using System.Text;
+using System.Data.Odbc;
+using DataConnection;
+using System.Data.OleDb;
 
-  public partial class DBExample_MSCharts: System.Web.UI.Page {
-      protected void Page_Load(object sender, EventArgs e)
+public partial class DBExample_MSCharts: System.Web.UI.Page {
+protected void Page_Load(object sender, EventArgs e)
 
       {
           // Create the `xmlData` StringBuilder object to store the data fetched
@@ -212,13 +219,15 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
           // Render the chart.
           Literal1.Text = factoryOutput.Render();
       }
-  }
+
+}
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="language-aspnet">
     Imports System.Collections
     Imports System.Configuration
     Imports System.Data
@@ -336,8 +345,10 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
         ' Render the chart.
         Literal1.Text = factoryOutput.Render()
       End Sub
-    End Class    
+    End Class
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 

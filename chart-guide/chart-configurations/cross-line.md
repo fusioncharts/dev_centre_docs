@@ -14,11 +14,11 @@ By default, the cross line is turned off. To show the crossline set the `drawCro
 
 ```json
 {
-    "chart": {
-        "drawCrossLine": "1"
-    }
+  "chart": {
+    "drawCrossLine": "1"
+  }
 }
- ```
+```
 
 A chart with crossline will look like as shown below:
 
@@ -32,9 +32,9 @@ Specify the hex code of the cross line color using the `crossLineColor` attribut
 
 ```json
 {
-    "chart": {
-        "crosslinecolor": "#ccbb7a"
-    }
+  "chart": {
+    "crosslinecolor": "#ccbb7a"
+  }
 }
 ```
 
@@ -50,9 +50,9 @@ Set the opacity of the crossline using the `crossLineAlpha` attribute. Refer to 
 
 ```json
 {
-    "chart": {
-        "crossLineAlpha": "50"
-    }
+  "chart": {
+    "crossLineAlpha": "50"
+  }
 }
 ```
 
@@ -68,9 +68,9 @@ By default, the cross line animation is disabled. Set the `crossLineAnimation` a
 
 ```json
 {
-    "chart": {
-        "crossLineAnimation": "1"
-    }
+  "chart": {
+    "crossLineAnimation": "1"
+  }
 }
 ```
 
@@ -78,9 +78,9 @@ If you have enabled animation, set the animation duration for the cross line of 
 
 ```json
 {
-    "chart": {
-        "crossLineAnimationDuration": "0.7"
-    }
+  "chart": {
+    "crossLineAnimationDuration": "0.7"
+  }
 }
 ```
 
@@ -92,17 +92,17 @@ Click [here](http://jsfiddle.net/fusioncharts/jLcL5eaz/) to edit the above chart
 
 ## Set Tooltip Background Color
 
-A tooltip is a common element, used to display information whenever you hover over a particular data point. A consolidated tooltip has been introduced with the cross line which can be used to get the detailed information of the hovered plots in a multi-series chart. 
+A tooltip is a common element, used to display information whenever you hover over a particular data point. A consolidated tooltip has been introduced with the cross line which can be used to get the detailed information of the hovered plots in a multi-series chart.
 
-By default, the tooltip takes the color of the dataplot. Set the `plotColorInTooltip` attribute to `0`  to turn off the color of the plot in the tooltip. 
+By default, the tooltip takes the color of the dataplot. Set the `plotColorInTooltip` attribute to `0` to turn off the color of the plot in the tooltip.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "plotColorinTooltip": "0"
-    }
+  "chart": {
+    "plotColorinTooltip": "0"
+  }
 }
 ```
 
@@ -116,9 +116,9 @@ Set `tooltipGrayOutColor` attribute to specify the color of the unfocused plot i
 
 ```json
 {
-    "chart": {
-        "tooltipGrayOutColor": "#ff0000"
-    }
+  "chart": {
+    "tooltipGrayOutColor": "#ff0000"
+  }
 }
 ```
 
@@ -132,9 +132,9 @@ Specify the hex code of the tooltip background color using the `toolTipBgColor` 
 
 ```json
 {
-    "chart": {
-        "toolTipBgColor": "#ffffff"
-    }
+  "chart": {
+    "toolTipBgColor": "#ffffff"
+  }
 }
 ```
 
@@ -148,18 +148,18 @@ Click [here](http://jsfiddle.net/fusioncharts/x2jvt5rh/) to edit the above chart
 
 To customize the tooltip border, the following attributes are used:
 
-* Specify the hex code of the tooltip border color using the `toolTipBorderColor` attribute. 
+- Specify the hex code of the tooltip border color using the `toolTipBorderColor` attribute.
 
-* Set the thickness of the border using the `toolTipBorderThicknes` attribute.
+- Set the thickness of the border using the `toolTipBorderThickness` attribute.
 
-Refer to the code below: 
+Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "toolTipBorderColor": "#545454",
-        "toolTipBorderThickness": "5"
-    }
+  "chart": {
+    "toolTipBorderColor": "#545454",
+    "toolTipBorderThickness": "5"
+  }
 }
 ```
 
@@ -175,9 +175,9 @@ Specify the character to separate the name and the value displayed in the toolti
 
 ```json
 {
-    "chart": {
-        "toolTipSepChar": ","
-    }
+  "chart": {
+    "toolTipSepChar": ","
+  }
 }
 ```
 
@@ -193,9 +193,9 @@ By default, the tooltip shadow is visible. To hide the tooltip shadow set the `s
 
 ```json
 {
-    "chart": {
-        "showTooltipShadow": "0"
-    }
+  "chart": {
+    "showTooltipShadow": "0"
+  }
 }
 ```
 

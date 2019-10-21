@@ -19,7 +19,7 @@
             "gaugeBorderThickness": "2",
             "gaugeBorderAlpha": "30",
             "thmOriginX": "100",
-            "dataStreamURL": "dummy-url-thermometerData.php",
+            "dataStreamURL": "/dummy-url-thermometerData.php",
             "refreshInterval": "5",
             "theme": "fusion"
         },

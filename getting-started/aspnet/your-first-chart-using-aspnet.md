@@ -4,17 +4,43 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Chart Using ASP.NET in FusionCharts
 ---
 
-> ### FusionCharts.NET (BETA)
-We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
-> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
-> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
-> * All methods and properties are available in Visual Studio intellisense.
-> * ...and many more.
-> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+> ### FusionCharts.NET
+>
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
+>
+> - Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> - Dynamically slice and dice data to derive insights using the [data engine](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> - All methods and properties are available in Visual Studio intellisense.
+> - ...and many more.
+>   Get it now. Click [here](https://www.fusioncharts.com/dev/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
 ## Overview
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple server-side **ASP.NET** wrapper for FusionCharts. The `FusionCharts server-side ASP.NET` wrapper lets you easily add rich and interactive charts to any ASP.NET project. Using the wrapper, you can create charts in your browsers, without writing any JavaScript code.
+
+FusionCharts allows you to follow two different approaches to render charts using ASP.NET:
+
+- ASP.NET wrapper
+
+- FusionCharts.NET Visualization library
+
+We recommend you to use FusionCharts.NET library over ASP.NET wrapper, as the library comes with some advantages listed below:
+
+- FusionCharts.NET library is compatible with ASP.NET Framework, ASP.NET Core, ASP.NET Standard, Mono/Xamarin whereas ASP.NET wrapper is only compatible with ASP.NET Framework.
+
+- FusionCharts.NET library has the ability to accept data from different sources.
+
+- FusionCharts.NET library accepts remote data.
+
+- FusionCharts.NET library allows operations on data.
+
+- FusionCharts.NET library has the ability to handle chart structure-specific json.
+
+- FusionCharts.NET library has the ability of conditional data plot formatting.
+
+- Using FusionCharts.NET library you can specify a page-level theme.
+
+- You can write fully object-oriented c#/VB code when using the FusionCharts.NET library.
 
 In this page, we'll see how to install FusionCharts and render a chart using the `FusionCharts server-side ASP.NET` wrapper.
 
@@ -24,11 +50,11 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 > The **FusionCharts ASP.NET server-side wrapper** requires **.NET Framework 3.5** or higher.
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+- Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
-* Copy the FusionCharts.cs or FusionCharts.vb class (C#/VB) file from `integrations > asp.net-cs >fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
+- Copy the FusionCharts.cs or FusionCharts.vb class (C#/VB) file from `integrations > asp.net-cs >fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
 
-* Include the **FusionCharts** theme file to apply the style to the charts.
+- Include the **FusionCharts** theme file to apply the style to the charts.
 
 The consolidated code is shown below:
 
@@ -42,11 +68,12 @@ The consolidated code is shown below:
 <div class='tab cdn-tab active'>
 <pre><code class="language-php">
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
 // Include FusionCharts Theme file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -58,6 +85,7 @@ The consolidated code is shown below:
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -73,71 +101,97 @@ Let's create a Column 2D chart using the `asp-net-wrapper` showing the "Countrie
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-The data for the above chart is shown in the table below:
+To understand the chart components, click [here](/understanding-fusioncharts).
 
-Country|No. of Oil Reserves|
--|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+## Chart data
 
-## Convert Tabular Data into JSON Format
+The data to render the above chart is shown in the table below:
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290K                |
+| Saudi     | 260K                |
+| Canada    | 180K                |
+| Iran      | 140K                |
+| Russia    | 115K                |
+| UAE       | 100K                |
+| US        | 30K                 |
+| China     | 30K                 |
 
-```JSON
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
+
+```json
 {
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion"
+  // Chart Configuration
+  "chart": {
+    "caption": "Countries With Most Oil Reserves [2017-18]",
+    "subCaption": "In MMbbl = One Million barrels",
+    "xAxisName": "Country",
+    "yAxisName": "Reserves (MMbbl)",
+    "numberSuffix": "K",
+    "theme": "fusion"
+  },
+  // Chart Data
+  "data": [
+    {
+      "label": "Venezuela",
+      "value": "290"
     },
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
+    {
+      "label": "Saudi",
+      "value": "260"
+    },
+    {
+      "label": "Canada",
+      "value": "180"
+    },
+    {
+      "label": "Iran",
+      "value": "140"
+    },
+    {
+      "label": "Russia",
+      "value": "115"
+    },
+    {
+      "label": "UAE",
+      "value": "100"
+    },
+    {
+      "label": "US",
+      "value": "30"
+    },
+    {
+      "label": "China",
+      "value": "30"
+    }
+  ]
 }
 ```
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts), [multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), and [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
 
 In the above JSON data:
 
-* Create the `chart` object to define the elements of the chart.
+- Create the `chart` object to define the elements of the chart.
 
-* Specify the `label` and `value` of each column within the `data` array.
+- Set the `caption` and `subcaption` of the chart.
 
-Both the chart object and the data array contain a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart.
+- Set the value of `xAxisName` attribute to **Country**(first column of the table).
 
-Now that you have converted the tabular data to JSON format, let's see how to render the chart.
+- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
+
+- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
+
+- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
+
+- Set the `numberSuffix` attribute to set the unit of the values.
+
+- Set the `theme` attribute to apply the predefines themes to the chart.
+
+Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
+
+Now that you have the data in JSON format, let's see how to render the chart.
 
 ## Render the Chart
 
@@ -155,17 +209,17 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 7. Create the chart instance and set the following:
 
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-    * Set the chart `id`.
+   - Set the chart `id`.
 
-    * Set the `width` and `height` (in pixels).
+   - Set the `width` and `height` (in pixels).
 
-    * Set the container for the chart.
+   - Set the container for the chart.
 
-    * Set the `dataFormat` as JSON.
+   - Set the `dataFormat` as JSON.
 
-    * Embed the `json` data as the value of the `dataSource`.
+   - Embed the `json` data as the value of the `dataSource`.
 
 8. Finally, use a container using `<div>` to render the chart.
 
@@ -240,7 +294,9 @@ The consolidated code is shown below:
 
         }
     }
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class='tab vb-tab'>
@@ -272,20 +328,20 @@ The consolidated code is shown below:
     chartConfig.Add("numberSuffix", "k")
     chartConfig.Add("theme", "fusion")
 
-   'json data to use as chart data source
-    jsonData.Append("{'chart':{")
-    For Each config In chartConfig
-    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
-    Next
-    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
-    'build  data object from label-value pair
-     data.Append("'data':[")
-     For Each pair In dataValuePair
-    data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value)
-    Next
-    data.Replace(",", "]", data.Length - 1, 1)
-    jsonData.Append(data.ToString())
-    jsonData.Append("}")
+'json data to use as chart data source
+jsonData.Append("{'chart':{")
+For Each config In chartConfig
+jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
+Next
+jsonData.Replace(",", "},", jsonData.Length - 1, 1)
+'build data object from label-value pair
+data.Append("'data':[")
+For Each pair In dataValuePair
+data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value)
+Next
+data.Replace(",", "]", data.Length - 1, 1)
+jsonData.Append(data.ToString())
+jsonData.Append("}")
 
     'Create chart instance
     'charttype, chartID, width, height, data format, data
@@ -296,7 +352,9 @@ The consolidated code is shown below:
      End Sub
 
      End Class
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -323,15 +381,17 @@ The HTML template is shown below:
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;div style="text-align:center"&gt;
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
     &lt;/body&gt;
 
     &lt;/html&gt;
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab vb-tab">
@@ -343,8 +403,8 @@ The HTML template is shown below:
         &lt;title&gt;fusioncharts&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
                 &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
@@ -364,8 +424,8 @@ That's it! Your first chart using the `FusionCharts asp-net-wrapper` is ready.
 
 In case there is an error, and you are unable to see the map, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

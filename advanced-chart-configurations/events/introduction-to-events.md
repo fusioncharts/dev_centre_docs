@@ -14,10 +14,11 @@ Take a look at the column chart shown below:
 
 {% embed_chart advanced-charting-events-introduction-example-1.js %}
 
-Roll the mouse pointer over any one pie slice and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
-For example, if you roll the mouse pointer over the __Senior__ slice, the following text is displayed is below the chart:
-__Age group: Senior__
-__No. of visitors: 491000__
+Roll the mouse pointer over any one data plot and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
+
+For example, if you roll the mouse pointer over the **Senior** slice, the following text is displayed is below the chart:
+**Age group: Senior**
+**No. of visitors: 491000**
 
 This happens because the `dataPlotRollOver` and the `dataPlotRollOut` events are configured for this pie chart. Every time, the mouse pointer is rolled over any pie slice, the `dataPlotRollOver` event is triggered. In response to this event, the text shown below the chart is updated to reflect the details for that pie slice.
 Every time, the mouse pointer is rolled out of a pie slice, the `dataPlotRollOut` event is triggered. In response to this event, the text below the chart returns to its original value.

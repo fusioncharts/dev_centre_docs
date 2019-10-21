@@ -90,12 +90,10 @@
             }
 
             function updateData() {
-                // Get reference to the chart using its ID
-                // var chartRef = FusionCharts("stockMonitor"),
                     //We need to create a querystring format incremental update, containing
                     //label in hh:mm:ss format
                     //and a value (random).
-                    currDate = new Date(),
+                    var currDate = new Date(),
                     label = formatTime(currDate.getHours()) + ":" + formatTime(currDate.getMinutes()) + ":" + formatTime(currDate.getSeconds()),
                     //Get random number between 35.25 & 30.75 - rounded to 2 decimal places
                     hrys = Math.floor(Math.random() *

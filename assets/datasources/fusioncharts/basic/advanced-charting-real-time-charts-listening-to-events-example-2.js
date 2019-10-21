@@ -1,5 +1,4 @@
 {
-    id: "realtimechart-2",
     type: 'realtimecolumn',
     renderAt: 'chart-container',
     width: '600',
@@ -10,7 +9,7 @@
             "caption": "Harry's Supermart - Bakersfield Central",
             "subCaption": "Footfalls",
             "showrealtimevalue": "1",
-            "dataStreamURL": "dummy-data.php",
+            "dataStreamURL": "/dummy-data.php",
             "paletteColors": "#008ee4,#9b59b6",
             "borderAlpha": "0",
             "yaxismaxvalue": "20",

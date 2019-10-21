@@ -6,14 +6,14 @@ heading: Funnel chart
 
 Now, let's learn how to create a Funnel chart. We will create a chart showcasing the purchase-conversion analysis ofa a website. The data will look as shown below:
 
-Wesite Sections|Website Visits
--|-
-Unique Website Visits|1460000
-Programme Details Section Visits|930000
-Attempts to Register|540000
-Successful Registrations|210000
-Logged In|190000
-Purchased on Introductory Offers|120000
+| Wesite Sections                  | Website Visits |
+| -------------------------------- | -------------- |
+| Unique Website Visits            | 1460000        |
+| Programme Details Section Visits | 930000         |
+| Attempts to Register             | 540000         |
+| Successful Registrations         | 210000         |
+| Logged In                        | 190000         |
+| Purchased on Introductory Offers | 120000         |
 
 The chart will look as shown below:
 
@@ -42,7 +42,15 @@ Create the `FunnelChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```csharp
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab csharp-tab active'>
+<pre><code class="language-csharp">
 using FusionCharts.Visualization;
 using FusionCharts.DataEngine;
 using System;
@@ -52,55 +60,94 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
-namespace FusionChartsVisualisationWebFormsSamples.Samples {
-    public partial class FunnelChart : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e) {
-            // Create data table
-            DataTable primaryData = new DataTable();
 
-            // Retrieve data using database query
-            string query = "select [Website Sections], [Website Visits] from dbo.WebsiteVisits";
-            string connetionstring = null;
-
-            // Servevr name
-            string serverName = "FusionChartsServer";
-
-            // DataBase name
-            string databaseName = "FusionChartsSamplesDB";
-            ChartData.Clear();
-
-            // Connection string
-            connetionstring = "Data Source=" + serverName + ";Initial Catalog=" + databaseName + ";Trusted_Connection=true;";
-
-            using (SqlConnection con = new SqlConnection(connetionstring))
-            {
-                con.Open();
-                using (SqlCommand command = new SqlCommand(query, con))
-                using (SqlDataAdapter da = new SqlDataAdapter(command))
-                {
-                    da.Fill(ChartData);
-                }
-            }
+namespace FusionChartsVisualisationWebFormsSamples.Samples 
+{
+    public partial class FunnelChart : System.Web.UI.Page 
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable ChartData = new DataTable();
+            ChartData.Columns.Add("Label", typeof(System.String));
+            ChartData.Columns.Add("Value", typeof(System.Double));
+            ChartData.Rows.Add("Unique Website Visits", 1460000);
+            ChartData.Rows.Add("Programme Details Section Visits", 930000);
+            ChartData.Rows.Add("Attempts to Register", 540000);
+            ChartData.Rows.Add("Successful Registrations", 210000);
+            ChartData.Rows.Add("Logged In", 190000);
+            ChartData.Rows.Add("Purchased on Introductory Offers", 120000);
             StaticSource source = new StaticSource(ChartData);
             DataModel model = new DataModel();
             model.DataSources.Add(source);
-            Charts.FunnelChart funnel = new Charts.FunnelChart("first_Funnel_chart");
+            Widget.FunnelChart funnel = new Widget.FunnelChart("first_Funnel_chart");
             funnel.Data.Source = model;
             funnel.Caption.Text = "Visit to purchase analysis";
             funnel.Caption.Text = "Harry's Supermart";
-            funnel.SubCaption.Text = "Visit to purchase- Conversion Anallysis for last year";
-            funnel.Width = "600";
-            funnel.Height = "400";
-            Literal1.Text = funnel.Render();
+            funnel.SubCaption.Text = "Visit to purchase- Conversion Analysis for last year";
+            funnel.Width.Pixel(600);
+            funnel.Height.Pixel(400);
+            funnel.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+            // Render the chart to 'Literal1' literal control
+            Literal1.Text = column.Render();
         }
     }
 }
-```
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+<div class='tab vb-tab'>
+<pre><code class="language-csharp">
+Imports FusionCharts.Visualization
+Imports FusionCharts.DataEngine
+Imports System
+Imports System.Collections.Generic
+Imports System.Linq
+Imports System.Web
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports System.Data
+
+Namespace FusionChartsVisualisationWebFormsSamples.Samples
+    Public Partial Class FunnelChart
+        Inherits System.Web.UI.Page
+
+        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim ChartData As DataTable = New DataTable()
+            ChartData.Columns.Add("Label", GetType(System.String))
+            ChartData.Columns.Add("Value", GetType(System.Double))
+            ChartData.Rows.Add("Unique Website Visits", 1460000)
+            ChartData.Rows.Add("Programme Details Section Visits", 930000)
+            ChartData.Rows.Add("Attempts to Register", 540000)
+            ChartData.Rows.Add("Successful Registrations", 210000)
+            ChartData.Rows.Add("Logged In", 190000)
+            ChartData.Rows.Add("Purchased on Introductory Offers", 120000)
+            Dim source As StaticSource = New StaticSource(ChartData)
+            Dim model As DataModel = New DataModel()
+            model.DataSources.Add(source)
+            Dim funnel As Widget.FunnelChart = New Widget.FunnelChart("first_Funnel_chart")
+            funnel.Data.Source = model
+            funnel.Caption.Text = "Visit to purchase analysis"
+            funnel.Caption.Text = "Harry's Supermart"
+            funnel.SubCaption.Text = "Visit to purchase- Conversion Analysis for last year"
+            funnel.Width.Pixel(600)
+            funnel.Height.Pixel(400)
+            funnel.ThemeName = FusionChartsTheme.ThemeName.FUSION
+            Literal1.Text = column.Render()
+        End Sub
+    End Class
+End Namespace
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+</div>
+</div>
 
 The `.aspx` template for the above sample is shown below:
 
 ```html
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FunnelChart.aspx.cs" Inherits="FusionChartsVisualisationWebFormsSamples.Samples.FunnelChart" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">

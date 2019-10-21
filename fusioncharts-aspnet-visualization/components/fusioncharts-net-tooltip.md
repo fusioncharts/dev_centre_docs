@@ -18,7 +18,7 @@ You can customize tooltips by using different properties of the `ToolTip` object
 
 To hide tooltips, set the value of the `Show` properties to `true`. Refer to the code given below:
 
-```
+```csharp
 visualizationObj.ToolTip.Show = true;
 ```
 

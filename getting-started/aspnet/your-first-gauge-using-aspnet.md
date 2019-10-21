@@ -4,13 +4,15 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Gauge Using ASP.NET in FusionCharts
 ---
 
-> ### FusionCharts.NET (BETA)
-We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
-> * Provide raw data and FusionCharts.NET automatically converts the data into JSON.
-> * Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
-> * All methods and properties are available in Visual Studio intellisense.
-> * ...and many more.
-> Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
+> ### FusionCharts.NET
+>
+> We have released FusionCharts.NET which brings the seamless support of FusionCharts JavaScript charting library to Microsoft .NET Framework. [Download](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net) it now to take advantage of the following powerful features:
+>
+> - Provide raw data and FusionCharts.NET automatically converts the data into JSON.
+> - Dynamically slice and dice data to derive insights using the [data engine](/fusioncharts-aspnet-visualization/data-engine/data-engine-overview).
+> - All methods and properties are available in Visual Studio intellisense.
+> - ...and many more.
+>   Get it now. Click [here](/fusioncharts-aspnet-visualization/getting-started/install-fusioncharts-net)!
 
 ## Overview
 
@@ -24,11 +26,11 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 > The **FusionCharts ASP.NET server-side wrapper** requires **.NET Framework 3.5** or higher.
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+- Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).
 
-* Copy the FusionCharts.cs or FusionCharts.vb class (C#/VB) file from `integrations > asp.net-cs > fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
+- Copy the FusionCharts.cs or FusionCharts.vb class (C#/VB) file from `integrations > asp.net-cs > fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
 
-* Include the **FusionCharts** theme file to apply the style to the gauges.
+- Include the **FusionCharts** theme file to apply the style to the gauges.
 
 The consolidated code is shown below:
 
@@ -42,11 +44,12 @@ The consolidated code is shown below:
 <div class='tab cdn-tab active'>
 <pre><code class="language-php">
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
 // Include FusionCharts Theme file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -58,6 +61,7 @@ The consolidated code is shown below:
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -73,77 +77,79 @@ To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisf
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample have been defined using the following range.
+## Chart data
 
-Range|Color|Hex Code|
--|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
+The thresholds for the above sample is shown in the table below:
 
-So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
-## Convert Tabular Data into JSON/XML Format
+So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
-Now that you have the tabular data ready, it's time to convert it into JSON/XML format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
-```					
+```javascript
 {
-    "chart": {
-        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    "colorRange": {
-        "color": [
-            {
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            },
-            {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            },
-            {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }
-        ]
-    },
-    "dials": {
-        "dial": [
-            {
-                "value": "81"
-            }
-        ]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
 ```
 
 In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Specify the hex code of the color within the `color` array.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of the dial in an array.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
+Now that you have the data in JSON format, let's see how to render the chart.
 
 ## Render the Gauge
 
@@ -163,17 +169,17 @@ To render the chart, follow the steps below:
 
 7. Create the chart instance and set the following:
 
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-    * Set the gauge `id`.
+   - Set the gauge `id`.
 
-    * Set the `width` and `height` (in pixels).
+   - Set the `width` and `height` (in pixels).
 
-    * Set the container for the gauge.
+   - Set the container for the gauge.
 
-    * Set the `dataFormat` as JSON.
+   - Set the `dataFormat` as JSON.
 
-    * Embed the `json` data as the value of the `dataSource`.
+   - Embed the `json` data as the value of the `dataSource`.
 
 8. Finally, use a container using `<div>` to render the gauge.
 
@@ -218,7 +224,7 @@ The consolidated code is shown below:
                 // store chart config name-config value pair
 
                 Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
-                chartConfig.Add("caption", "Nordstrom\'s Customer Satisfaction Score for 2017");
+                chartConfig.Add("caption", "Nordstrom\\'s Customer Satisfaction Score for 2017");
                 chartConfig.Add("lowerLimit", "0");
                 chartConfig.Add("upperLimit", "100");
                 chartConfig.Add("showValue", "1");
@@ -276,7 +282,9 @@ The consolidated code is shown below:
             }
         }
     }
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab vb-tab">
@@ -331,7 +339,9 @@ The consolidated code is shown below:
     Literal1.Text = MyFirstChart.Render()
     End Sub
     End Class
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -358,15 +368,17 @@ The HTML template is shown below:
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;div style="text-align:center"&gt;
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
     &lt;/body&gt;
 
     &lt;/html&gt;
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab vb-tab">
@@ -378,8 +390,8 @@ The HTML template is shown below:
         &lt;title&gt;fusioncharts&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
                 &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
@@ -399,8 +411,8 @@ That's it! Your first gauge using the FusionCharts ASP.NET wrapper is ready.
 
 In case there is an error, and you are unable to see the map, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

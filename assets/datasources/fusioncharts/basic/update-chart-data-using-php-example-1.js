@@ -1,8 +1,8 @@
 {
     type: 'angularGauge',
     renderAt: 'chart-container',
-    width: '700',
-    height: '400',
+    width: '680',
+    height: '390',
     dataFormat: 'json',
     dataSource: {
         // chart configuration
@@ -40,24 +40,29 @@
     events: {
         "beforeRender": function(evt, args) {
             var controls = document.createElement('div'),
-                chartRef = evt.sender;
-            chartRef.getRandomNumber = function() {
+                chartRef = evt.sender,
+                btn = document.createElement('button');
+
+            getRandomNumber = function() {
                 var max = 250,
                     min = 0;
                 return Math.round(((max - min) * Math.random()) + min);
             }
 
-            updateData = function() {
+            var updateData = function() {
                 //clones data
                 var data = Object.assign({}, chartRef.getJSONData());
                 data.dials.dial[0].id = 'dial1';
-                data.dials.dial[0].value = chartRef.getRandomNumber();
-
-
+                data.dials.dial[0].value = getRandomNumber();
                 chartRef.setJSONData(data);
             };
-            controls.innerHTML = '<button style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;" onClick="updateData()" >Update Dial</button>';
+
+            btn.style.cssText = "background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;";
+            btn.innerText = "Update Dial";
+            btn.onclick = updateData;
+
             controls.style.cssText = 'text-align: center; width: 100%;';
+            controls.appendChild(btn);
             args.container.appendChild(controls);
         }
     }

@@ -70,15 +70,7 @@
             }, {
                 "value": "10"
             }]
-        }],
-        "alerts": {
-            "alert": [{
-                "minvalue": "15",
-                "maxvalue": "20",
-                "action": "callJS",
-                "param": ""
-            }]
-        }
+        }]
     },
     events: {
         'rendered': function(evt, args) {

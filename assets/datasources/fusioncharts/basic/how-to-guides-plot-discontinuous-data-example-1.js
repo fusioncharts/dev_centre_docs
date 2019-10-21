@@ -1,7 +1,6 @@
 {
     type: 'line',
     renderAt: 'chart-container',
-    id: 'pd-chart',
     width: '500',
     height: '300',
     dataFormat: 'json',
@@ -55,6 +54,7 @@
     },
     events: {
         'beforeRender': function(evt, args) {
+            var chartRef = evt.sender;
             // create wrapper div for radio controls
             controllers = document.createElement('div');
             controllers.setAttribute('id', 'controllers');
@@ -74,17 +74,18 @@
             }
 
             // select radio-button according to current type
-            document.getElementById('radio-' + (FusionCharts.items['pd-chart'].chartType() == 'line' ? 'line' : 'column')).setAttribute('checked', 'true');
+            document.getElementById('radio-' + (chartRef.chartType() == 'line' ? 'line' : 'column')).setAttribute('checked', 'true');
         },
         "renderComplete": function() {
+            var chartRef = evt.sender;
             // in the initialized event check create handlers for line, column radio buttons
             var radioButtons = document.getElementsByName('chart-options'),
                 i, length;
-            for (i = 0, length = radioButtons.length; i < length; i++) {
+            for (var i = 0, length = radioButtons.length; i < length; i++) {
                 radioButtons[i].addEventListener('change', function() {
                     var radioButton = this;
                     if (radioButton.checked) {
-                        FusionCharts.items['pd-chart'].chartType(radioButton.value);
+                        chartRef.chartType(radioButton.value);
                     }
                 });
             }

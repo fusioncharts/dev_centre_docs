@@ -39,7 +39,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install the FusionCharts package and the `vue-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="language-html">
 &lt;head&gt;
@@ -48,9 +48,9 @@ $ npm install fusioncharts --save
     &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 4 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
@@ -60,7 +60,7 @@ $ npm install fusioncharts --save
 <div class='mt-30'><strong>To install the FusionCharts package and the `vue-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
+<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="language-html">
 &lt;head&gt;
@@ -84,81 +84,87 @@ That completes the installation of FusionCharts and the `vue-fusioncharts` compo
 
 ## Create your First Gauge
 
-Gauges are powerful tools that can showcase information using a radial scale to display data. 
+Gauges are powerful tools that can showcase information using a radial scale to display data.
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below. 
+To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
 The angular gauge is shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample have been defined using the following range:
+## Chart data
 
-Range|Color|Hex Code||
--|-|-|-
-0-50|Red|#F2726F||
-50-75|Yellow|#FFC533||
-75-100|Green|#62B58F||
+The thresholds for the above sample is shown in the table below:
+
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
-## Convert tabular data into JSON format
+FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
-
-```javascript
+```json
 {
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+  // Chart Configuration
+  "chart": {
+    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+    "lowerLimit": "0",
+    "upperLimit": "100",
+    "showValue": "1",
+    "numberSuffix": "%",
+    "theme": "fusion",
+    "showToolTip": "0"
+  },
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "81"
+      }
+    ]
+  }
 }
 ```
 
-In the above JSON: 
+In the above JSON:
 
-* Create the `chart` object to define the elements of the gauge.
+- Create the `chart` object to define the elements of the gauge.
 
-* Create the `colorRange` array to set the color associated with the specific range of values.
+- Create the `colorRange` object to set the color associated with the specific range of values.
 
-* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
+- Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-* Specify the hex code of the color within the `color` array.
+- Set the `code` attribute to specify the hex color of respective ranges.
 
-* Create the `dials` object to represent the customer satisfaction score.
+- Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` object under `dials` object to set the value of the dial in an array.
+- Create the `dial` object under `dials` object to set the value of customer satisfaction score.
 
-The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
+The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
+Now that you have the data in JSON format, let's see how to render the chart.
 
 ## Render the gauge
 
@@ -178,10 +184,10 @@ To render the gauge, open `App.vue` file and follow the steps below:
 
 7. Store the chart configurations in a JSON object. In this JSON object:
 
-    * Set the chart type as `angulargauge`. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
+   - Set the chart type as `angulargauge`. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt).
+   - Set the width and height (in pixels).
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of the `dataSource`.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -201,65 +207,66 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 Vue.use(VueFusionCharts, FusionCharts, AngularGauge, FusionTheme);
 export default {
 name: 'app',
-    data () {
-        return {
-            "type": "angulargauge",
-            "renderAt": "chart-container",
-            "width": "550",
-            "height": "350",
-            "dataFormat": "json",
-            "datasource": {
-                "chart": {
-                    "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                    "lowerLimit": "0",
-                    "upperLimit": "100",
-                    "showValue": "1",
-                    "numberSuffix": "%",
-                    "theme": "fusion",
-                    "showToolTip": "0"
-                },
-                // Chart Data
-                "colorRange": {
-                    "color": [{
-                        "minValue": "0",
-                        "maxValue": "50",
-                        "code": "#F2726F"
-                    }, {
-                        "minValue": "50",
-                        "maxValue": "75",
-                        "code": "#FFC533"
-                    }, {
-                        "minValue": "75",
-                        "maxValue": "100",
-                        "code": "#62B58F"
-                    }]
-                },
-                "dials": {
-                    "dial": [{
-                        "value": "81"
-                    }]
-                }
-            }
-        }
-    }
+data () {
+return {
+"type": "angulargauge",
+"renderAt": "chart-container",
+"width": "550",
+"height": "350",
+"dataFormat": "json",
+"datasource": {
+"chart": {
+"caption": "Nordstrom's Customer Satisfaction Score for 2017",
+"lowerLimit": "0",
+"upperLimit": "100",
+"showValue": "1",
+"numberSuffix": "%",
+"theme": "fusion",
+"showToolTip": "0"
+},
+// Chart Data
+"colorRange": {
+"color": [{
+"minValue": "0",
+"maxValue": "50",
+"code": "#F2726F"
+}, {
+"minValue": "50",
+"maxValue": "75",
+"code": "#FFC533"
+}, {
+"minValue": "75",
+"maxValue": "100",
+"code": "#62B58F"
+}]
+},
+"dials": {
+"dial": [{
+"value": "81"
+}]
+}
+}
+}
+}
 }
 &lt;/script&gt;
 
 &lt;template&gt;
-    &lt;div id="app"&gt;
-        &lt;div id="chart-container"&gt;
-            &lt;fusioncharts
-            :type="type"
-            :width="width"
-            :height="height"
-            :dataformat="dataformat"
-            :datasource="datasource"
-            &gt;
-            &lt;/fusioncharts&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div id="app"&gt;
+&lt;div id="chart-container"&gt;
+&lt;fusioncharts
+:type="type"
+:width="width"
+:height="height"
+:dataformat="dataformat"
+:datasource="datasource"
+&gt;
+&lt;/fusioncharts&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/template&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -271,10 +278,10 @@ name: 'app',
     &lt;!-- Including vue-fusioncharts component --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"&gt;&lt;/script>    
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"&gt;&lt;/script>    
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
@@ -293,7 +300,7 @@ name: 'app',
                 dataSource: {
                     // Chart Configuration
                     "chart": {
-                        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                         "lowerLimit": "0",
                         "upperLimit": "100",
                         "showValue": "1",
@@ -362,7 +369,7 @@ name: 'app',
                 dataSource: {
                     // Chart Configuration
                     "chart": {
-                        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                         "lowerLimit": "0",
                         "upperLimit": "100",
                         "showValue": "1",
@@ -410,8 +417,8 @@ That's it! Your first gauge using `vue-fusioncharts` is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

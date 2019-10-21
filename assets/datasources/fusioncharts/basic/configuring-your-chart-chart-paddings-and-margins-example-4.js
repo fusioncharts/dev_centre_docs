@@ -36,7 +36,7 @@
             var radElem,
                 radio = document.getElementsByTagName('input'),
                 flag = 1;
-            for (i = 0; i < radio.length; i++) {
+            for (var i = 0; i < radio.length; i++) {
                 radElem = radio[i];
                 if (radElem.type === 'radio') {
                     radElem.onclick = function() {

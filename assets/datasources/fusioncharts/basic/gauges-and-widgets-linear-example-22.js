@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cpu-linear-gauge-22',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -57,14 +56,15 @@
     },
     "events": {
         "rendered": function(evtObj, argObj) {
-            evtObj.sender.intervalVar = setInterval(function() {
-                //Updating widget with randomly generated values
-                //Range 60-70%
-                var ggPrcnt = 60 + parseInt(Math.floor(Math.random() * 10), 10),
-                    //Range 75-85%
-                    bcPrcnt = 75 + parseInt(Math.floor(Math.random() * 10), 10);
-                FusionCharts.items["cpu-linear-gauge-22"].feedData("value=" + ggPrcnt + "|" + bcPrcnt);
-            }, 5000);
+           var chartRef = evtObj.sender;
+           chartRef.intervalVar = setInterval(function () {
+              //Updating widget with randomly generated values
+              //Range 60-70%
+              var ggPrcnt = 60 + parseInt(Math.floor(Math.random() * 10), 10),
+                 //Range 75-85%
+                 bcPrcnt = 75 + parseInt(Math.floor(Math.random() * 10), 10);
+              chartRef.feedData("value=" + ggPrcnt + "|" + bcPrcnt);
+           }, 5000);
         },
         "disposed": function(evtObj, argObj) {
             clearInterval(evtObj.sender.intervalVar);

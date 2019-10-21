@@ -1,6 +1,5 @@
 {
     type: 'selectscatter',
-    id: 'chartId',
     renderAt: 'chart-container',
     width: '500',
     height: '350',
@@ -25,7 +24,7 @@
             "showformbtn": "1",
             "formAction": "#",
             "submitdataasxml": "1",
-            "showRegressionLine": "1", //render the chart with regression lines            
+            "showRegressionLine": "1", //render the chart with regression lines
             "showYOnX": "0" //draw regression lines in the X on Y mode
         },
         "categories": [{

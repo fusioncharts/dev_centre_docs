@@ -80,7 +80,7 @@
                 numVals = estimatedOrigValues.length,
                 i,
                 val;
-            for (i = 0; i < numVals; i += 1) {
+            for (var i = 0; i < numVals; i += 1) {
                 val = estimatedOrigValues[i];
                 document.getElementById('est-' + (i + 1)).innerHTML = val;
             }

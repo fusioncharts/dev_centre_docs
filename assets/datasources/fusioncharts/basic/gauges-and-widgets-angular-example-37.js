@@ -111,7 +111,7 @@
                     }
                     diff = (score - speedScore);
 
-                    for (i = 0; i < 5; i++) {
+                    for (var i = 0; i < 5; i++) {
                         percent = num - (i * 5);
                         scoreArray[i] = diff * (percent / 100);
                     }
@@ -122,8 +122,7 @@
                     if (speedScore && diff) {
                         speedScore += scoreArray[flag];
                         flag += 1;
-						evtObj.sender.feedData && evtObj.sender.feedData("value=" + speedScore);
-
+						      evtObj.sender.feedData && evtObj.sender.feedData("value=" + speedScore);
                     }
                 }, 2000);
         },

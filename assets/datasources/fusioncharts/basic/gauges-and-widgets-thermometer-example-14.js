@@ -19,7 +19,7 @@
             "gaugeBorderThickness": "2",
             "gaugeBorderAlpha": "30",
             "thmOriginX": "100",
-            "dataStreamURL": "resources/php/dummyUrl.php",
+            "dataStreamURL": "/dummyUrl.php",
             "refreshInterval": "5",
             "theme": "fusion"
         },

@@ -8,10 +8,10 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 
 In this section we will discuss how to:
 
-* [Export Charts as Image and PDF](/getting-started/jquery/export-charts-using-jquery#export-charts-as-image-and-pdf)
-* [Export Multiple Charts](/getting-started/jquery/export-charts-using-jquery#export-multiple-charts)
-* [Modes of Export](/getting-started/jquery/export-charts-using-jquery#modes-of-export)
-* [Export Chart Data](/getting-started/jquery/export-charts-using-jquery#export-chart-data)
+- [Export Charts as Image and PDF](/getting-started/jquery/export-charts-using-jquery#export-charts-as-image-and-pdf)
+- [Export Multiple Charts](/getting-started/jquery/export-charts-using-jquery#export-multiple-charts)
+- [Modes of Export](/getting-started/jquery/export-charts-using-jquery#modes-of-export)
+- [Export Chart Data](/getting-started/jquery/export-charts-using-jquery#export-chart-data)
 
 ## Export Charts as Image and PDF
 
@@ -21,7 +21,7 @@ When charts are exported on the client side, the entire exporting process is car
 
 > You must have an active internet connection for this feature to work.
 
-To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over this button to see the dropdown menu with export options, as shown in the image below:
+To enable chart exporting, the `chart` level attribute `exportEnabled` is set to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over this button to see the dropdown menu with export options, as shown in the image below:
 
 ![image](/images/exporting-as-image-and-pdf-export-menu.jpg)
 
@@ -102,7 +102,7 @@ The HTML template of the above sample is shown below:
 
 ```html
 <div id="chart-container">
-    FusionCharts will render here
+  FusionCharts will render here
 </div>
 ```
 
@@ -110,16 +110,17 @@ The above chart has been rendered using the following steps:
 
 1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Resolve charts as dependency for `fusioncharts`, `theme` file and `jquery-fusioncharts`. 
+2. Resolve charts as dependency for `fusioncharts`, `theme` file and `jquery-fusioncharts`.
 
 3. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
-    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-3. Create an HTML template to render the chart.
+   - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the width and height of the chart in pixels.
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of `dataSource`.
+   - Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+
+4. Create an HTML template to render the chart.
 
 ## Export Multiple Charts
 
@@ -314,7 +315,7 @@ btn.addEventListener('click', function() {
     charts:[{
         "id":"chart1"
     },{
-        "id":"chart2"    
+        "id":"chart2"
     }]
   });
 });
@@ -325,46 +326,47 @@ btn.addEventListener('click', function() {
 2. Resolve charts as dependency for `fusioncharts`, `theme` file and `jquery-fusioncharts`.
 
 3. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
-    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-3. Use FusionChart's jQuery method `insertFusionCharts()` to create FusionCharts.
+   - Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the width and height of the chart in pixels.
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of `dataSource`.
+   - Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-4. To export multiple charts on the page, add an **event handler** to fire the export operation when the button is clicked.
+4. Use FusionChart's jQuery method `insertFusionCharts()` to create FusionCharts.
+
+5. To export multiple charts on the page, add an **event handler** to fire the export operation when the button is clicked.
 
 ## Modes of Export
 
 FusionCharts Suite XT supports the following three modes of export:
 
-* Server-side export
-* Client-side export
-* Auto-export
+- Server-side export
+- Client-side export
+- Auto-export
 
-By default, charts are exported using the auto-export feature. 
+By default, charts are exported using the auto-export feature.
 
 The `exportMode` attribute is used to switch between the different modes of export.
 
-> Starting from version v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute.
+> Starting from version v3.12.1, the `exportMode` attribute **replaces** the `exportAtClientSide` attribute.
 
 To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/configuring-the-export-feature) guide.
 
 ## Export Chart Data
 
-FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.11.0, FusionCharts Suite XT introduces exporting chart data in the XLS format (as an Excel spreadsheet).
+FusionCharts lets you export the rendered charts in JPG, PNG, SVG, and PDF formats. Starting v3.11.0, FusionCharts Suite XT introduces exporting chart data in the XLSX format (as an Excel spreadsheet).
 
-To enable chart exporting, set the chart level attribute `exportEnabled` to __1__. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over the button to see a dropdown menu with the export options, as shown in the image below:
+To enable chart exporting, set the chart level attribute `exportEnabled` to **1**. The <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over the button to see a dropdown menu with the export options, as shown in the image below:
 
 ![image](/images/exporting-as-image-and-pdf-export-menu.jpg)
 
-To export chart data, select the __Export as XLS__ option. The XLS file with the chart data gets downloaded to your machine.
+To export chart data, select the **Export as XLSX** option. The XLSX file with the chart data gets downloaded to your machine.
 
-A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the __Export as XLS__ option to export the chart data.
+A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the **Export as XLSX** option to export the chart data.
 
 {% embed_all exporting-as-image-and-pdf-introduction-example-2.js %}
 
-> To export a chart in the XLS format using server-side exporting, it is mandatory that the exporting server has the latest code, available in the FusionCharts package. Alternatively, you can also use the FusionCharts export link, `export.api3.fusioncharts.com`. For client-side exporting, the exporting chart data feature is supported only by modern browsers with canvas support (except Safari and IE9). You can still export your charts, without including the configurable data.
+> To export a chart in the XLSX format using server-side exporting, it is mandatory that the exporting server has the latest code, available in the FusionCharts package. Alternatively, you can also use the FusionCharts export link, `export.api3.fusioncharts.com`. For client-side exporting, the exporting chart data feature is supported only by modern browsers with canvas support (except Safari and IE9). You can still export your charts, without including the configurable data.
 
 > To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/configuring-the-export-feature) guide.

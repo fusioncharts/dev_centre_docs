@@ -1,1604 +1,1598 @@
 [
-   {
-       "table": "Functional Attributes",
-       "attrs": [
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether entity labels will be shown or hidden \n\n__Default value__: 0 (hidden)",
-               "name": "showLabels"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether entity names will be shown as a part of map labels \n\nThis attribute works only when the `showLabels` attribute is set to __1__.",
-               "name": "includeNameInLabels"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether entity values will be shown as a part of map labels \n\nThis attribute works only when the `showLabels` attribute is set to __1__.",
-               "name": "includeValueInLabels"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether an entity's short name or long name will be a part of the map label \n\n __Default value__: 1 (the short name is used in the label) \n\nThis attribute works only when the `showLabels` attribute is set to __1__.",
-               "name": "useSNameInLabels"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether an entity's short name or long name will be a part of the tooltip for an entity \n\n __Default value__: 1 (the long name is used in the tooltip) \n\nThis attribute works only when the `showLabels` attribute is set to __1__.",
-               "name": "useSNameInToolTip"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether a shadow effect will be applied to the map \n\n__Default value__: 0 (the effect is not applied)",
-               "name": "showShadow"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Sets the map caption",
-               "name": "caption"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Sets the map sub-caption",
-               "name": "subCaption"
-           },
-           {
-               "type": "String",
-               "range": "top-left, top-right, bottom-left, bottom-right and top-center",
-               "description": "Sets the caption and sub-caption position \n\n__Default value__: top-center",
-               "name": "captionPosition"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "The entire map can act as a hotspot. This attribute is used to specify the URL to define the hotspot link for the map. The link can be specified in FusionCharts Link Format.",
-               "name": "clickURL"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether the tooltip will shown for entities that don't have a value assigned in the JSON data",
-               "name": "hoverOnEmpty"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Sets the menu item label for the custom context menu item",
-               "name": "aboutMenuItemLabel"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether entity labels will be shown above or below the markers on a map \n\n __Default value__: 1 (the labels appear above the markers)",
-               "name": "entityLabelsOnTop"
-           }
-       ],
-       "description": "These attributes let you control a variety of functional elements on the map. For example, you can opt to show/hide entity labels, display them above/below the markers, and so on."
-   },
-   {
-       "table": "Map Cosmetics",
-       "attrs": [
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether a border will be shown around the canvas \n\n __Default value__: 0 (the canvas border is hidden)",
-               "name": "showCanvasBorder"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the color for the canvas border, if the border is shown",
-               "name": "canvasBorderColor"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Sets the thickness for the canvas border, if the border is shown",
-               "name": "canvasBorderThickness"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the transparency for the canvas border, if the border is shown",
-               "name": "canvasBorderAlpha"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "Sets the background color for the map \n\n To apply a gradient color background, specify a comma-separated list of the hex color codes to be used",
-               "name": "bgColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the background transparency \n\n To set the transparency for a gradient background, specify a comma-separated list of the transparency value for each color.",
-               "name": "bgAlpha"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "For a gradient backgrouns, sets the ratio of each color constituent.",
-               "name": "bgRatio"
-           },
-           {
-               "type": "Number",
-               "range": "0-360",
-               "description": "For a gradient backgrouns, sets the angle of each color constituent.",
-               "name": "bgAngle"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Sets an image as the map background by taking the path and name of the image as the value",
-               "name": "bgImage"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the transparency of the background image",
-               "name": "bgImageAlpha"
-           },
-           {
-               "type": "String",
-               "range": "stretch, tile, fit, fill, center, none",
-               "description": "Sets the display mode for the background image \n\n Acceptable values include: \n\n __stretch__: Image is expanded to fit the entire map area, without maintaining original constraints \n\n __tile__: Image is repeated as a pattern on the entire map area \n\n __fit__: Image is made to fit proportionately on the map area \n\n __fill__: Image is made to proportionately fill the entire map area \n\n __center__: Image is positioned at the center of the map area \n\n __none__: None of the above modes are applied \n\n __Default value__: none",
-               "name": "bgImageDisplayMode"
-           },
-           {
-               "type": "String",
-               "range": "top, middle, bottom",
-               "description": "Sets the vertical alignment of the background image",
-               "name": "bgImageVAlign"
-           },
-           {
-               "type": "String",
-               "range": "left, middle, right",
-               "description": "Sets the horizontal alignment of the background image",
-               "name": "bgImageHAlign"
-           },
-           {
-               "type": "Number",
-               "range": "0-300",
-               "description": "Sets the magnifying scale for the background image \n\n This attribute will only work when `bgImageDisplayMode` is set to __none__, __center__, or __tile__.",
-               "name": "bgImageScale"
-           },
-           {
-               "type": "String",
-               "range": "URL",
-               "description": "Sets the path to load external logo (image file) on the map",
-               "name": "logoURL"
-           },
-           {
-               "type": "String",
-               "range": "TL, TR, BL, BR, CC",
-               "description": "Sets the logo position \n\n Acceptable values include: __TL__ (top-left), __TR__ (top-right), __BL__ (bottom-left), __BR__ (bottom-right), __CC__ (center of the screen)",
-               "name": "logoPosition"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the logo transparency",
-               "name": "logoAlpha"
-           },
-           {
-               "type": "Number",
-               "range": "0-300",
-               "description": "Sets the magnifying scale for the logo",
-               "name": "logoScale"
-           },
-           {
-               "type": "String",
-               "range": "URL",
-               "description": "Links the logo to an external URL, specify the link in this attribute. The link can be in FusionCharts Link Format, allowing you to link to new windows, pop-ups, frames etc.",
-               "name": "logoLink"
-           }
-       ],
-       "description": "The following attributes let you configure map cosmetics like background color, background alpha etc."
-   },
-   {
-       "table": "Map Entities Cosmetics",
-       "attrs": [
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether the entity borders will be shown or hidden \n\n __Default value__: 1 (the borders are shown)",
-               "name": "showBorder"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the border color for map entities",
-               "name": "borderColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the border transparency for map entities",
-               "name": "borderAlpha"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the default fill color for the entities, if no color range has been specified",
-               "name": "fillColor"
-           },
-           {
-               "type": "Alpha",
-               "range": "0-100",
-               "description": "Sets the transparency for the fill color of the entities",
-               "name": "fillAlpha"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether the entities will be rendered in a different color—specified using the `hoverColor` attribute—when the mouse pointer is hovered over them",
-               "name": "useHoverColor"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the color that will be applied to an entity when the mouse pointer is hovered over it",
-               "name": "hoverColor"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets a default color for enities that are not assigned any value in the map data",
-               "name": "nullEntityColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets a default transparency for enities that are not assigned any value in the map data",
-               "name": "nullEntityAlpha"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether the tooltip for the entities will be shown or hidden \n\n __Default value__: 1 (the tooltip is shown)",
-               "name": "showEntityToolTip"
-           },
-           {
-               "type": "Hex Color Code",
-               "range": "",
-               "description": "Specifies the color of the static label connector. This attribute is used when you want to explicitly define the color of the label connector. If not set, the label connector color is taken from connectorColor attribute.",
-               "name": "labelConnectorColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Specifies the transparency of the static label connector. This attribute is used when you want to explicitly define the transparency of the label connector. If not set, the label connector alpha is taken from connectorAlpha attribute.",
-               "name": "labelConnectorAlpha"
-           }
-       ],
-       "description": "These attributes let you configure how your entities will appear on the map."
-   },
-   {
-       "table": "Number Formatting",
-       "attrs": [
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether the numbers displayed on the map will be formatted using commas \n\n For example, when `formatNumber` is set to __1__, the number will be rendered as 40,000; when `formatNumber` is set to __0__, it will be rendered as 40000.",
-               "name": "formatNumber"
-           },
-           {
-               "type": "Number",
-               "range": "0-10",
-               "description": "Sets the number of decimal places to which all numbers on the map will be rounded to.",
-               "name": "decimals"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether zero padding will be forced for decimal numbers \n\n For example, if you limit the maximum number of digits after the decimal point  to 2, a number like 55.344 will be rounded to 55.34. This does not mean that all numbers will be displayed with a fixed number of decimal places. For instance 55 will not be displayed as 55.00 and 55.1 will not become 55.10. To have fixed number of decimal places attached to all the numbers, set this attribute to 1.",
-               "name": "forceDecimals"
-           },
-           {
-               "type": "String",
-               "range": "Character",
-               "description": "Sets a prefix for the numbers on the map \n\n For example, to represent all dollars figure on the map, set this attribute to __$__. The numbers will then be rendered as $40000, $50000. \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "numberPrefix"
-           },
-           {
-               "type": "String",
-               "range": "Character",
-               "description": "Sets a suffix for the numbers on the map \n\n For example, to represent all numbers quantified as per annum, set this attribute to ' /a'. The numbers will then be rendered as 40000/a, 50000/a and so on. \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information. ",
-               "name": "numberSuffix"
-           },
-           {
-               "type": "String",
-               "range": "Character",
-               "description": "Sets the character to be used as the decimal separator for the numbers on the map \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "decimalSeparator"
-           },
-           {
-               "type": "String",
-               "range": "Character",
-               "description": "Sets the character to be used as the thousand separator for the numbers on the map \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "thousandSeparator"
-           },
-           {
-               "type": "List of comma separated Numbers",
-               "range": "",
-               "description": "Sets the number of digits after which the thousand separator should be positioned \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "thousandSeparatorPosition"
-           },
-           {
-               "type": "String",
-               "range": "Character",
-               "description": "In some countries, commas are used as decimal separators and dots as thousand separators. If your chart data is in XML andyou specify such values, it returns an error while converting to number. So, FusionMaps XT accepts the input decimal and thousand separator from user, so that it can convert it accordingly into the required format. This attribute lets you input the decimal separator. \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "inDecimalSeparator"
-           },
-           {
-               "type": "String",
-               "range": "Character",
-               "description": "In some countries, commas are used as decimal separators and dots as thousand separators. If your chart data is in XML andyou specify such values, it returns an error while converting to number. So, FusionMaps XT accepts the input decimal and thousand separator from user, so that it can convert it accordingly into the required format. This attribute lets you input the decimal separator. \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "inThousandSeparator"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether the suffix __K__ (for thousands) and __M__ (for millions) will be added to a number after it is truncated and rounded off. \n\n For example, when `formatNumberScale` is set to __1__, the number 1043 will be rendered as 1.04K (assuming `decimals` is set to __2__). \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "formatNumberScale"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Sets the default unit of the numbers on the map \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "defaultNumberScale"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Sets the unit for each block of the number scale \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "numberScaleUnit"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Sets the range for each block on the number scale \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "numberScaleValue"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether recursive scaling will be enabled for the numbers on the map \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "scaleRecursively"
-           },
-           {
-               "type": "Number",
-               "range": "",
-               "description": "Sets the number of recursions to complete during recusrive scaling \n\n Setting this attribute to __1__ completes the entire set of recursion \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "maxScaleRecursion"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Sets the separator character for the scales generated after recursion \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
-               "name": "scaleSeparator"
-           }
-       ],
-       "description": ""
-   },
-   {
-       "table": "Legend Properties",
-       "attrs": [
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether the legend will be shown or hidden",
-               "name": "showLegend"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether legend interaction will be enabled or disbaled \n\n Entities can be shown or hidden from the map by clicking the associated legend item. ",
-               "name": "interactiveLegend"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether the legend can be made dragable \n\n Setting this attribute to __1__ enables dragging the legend anywhere around the chart. \n\n __Default value__: 0 \n\n __Note__: This attribute does not refer to the dragable sliders on a gradient legend, but to the complete legend.",
-               "name": "legendAllowDrag"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Sets the legend caption",
-               "name": "legendCaption"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "You can reverse the ordering of the legend items in the legend by setting this attribute to 1.",
-               "name": "reverseLegend"
-           },
-           {
-               "type": "String",
-               "range": "BOTTOM or RIGHT",
-               "description": "Positions the legend to render below the map or to the right of the map \n\n __Default value__: BOTTOM",
-               "name": "legendPosition"
-           },
-           {
-               "type": "Number",
-               "range": "0-5",
-               "description": "Sets the magnifying scale for the legend icons \n\n __Default value__: 1",
-               "name": "legendIconScale"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Sets whether the shadow effect will be applied to the legend",
-               "name": "legendShadow"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the legend background color",
-               "name": "legendBgColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the legend background transparency",
-               "name": "legendBgAlpha"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the legend border color",
-               "name": "legendBorderColor"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Sets the legend border thickness",
-               "name": "legendBorderThickness"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the legend border transparency",
-               "name": "legendBorderAlpha"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the legend scroll bar background color \n\n A scroll bar is rendered in the legend if there are too many legend items.",
-               "name": "legendScrollBgColor"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the legend scroll bar color \n\n A scroll bar is rendered in the legend if there are too many legend items. ",
-               "name": "legendScrollBarColor"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the color for the legend scroll bar buttons \n\n A scroll bar is rendered in the legend if there are too many legend items.",
-               "name": "legendScrollBtnColor"
-           },
-           {
-               "description": "Sets the gradient legend pointer color",
-               "range": "Hex Color Code",
-               "type": "Color",
-               "versionsince": "3.10.0",
-               "name": "legendPointerColor"
-           },
-           {
-               "description": "Sets the gradient legend pointer transparency",
-               "range": "0-100",
-               "type": "Number",
-               "versionsince": "3.10.0",
-               "name": "legendPointerAlpha"
-           },
-           {
-               "type": "Number",
-               "range": "",
-               "description": "Sets the gradient legend pointer border thickness",
-               "name": "legendPointerBorderThickness"
-           },
-           {
-               "description": "Sets the gradient legend pointer border transparency",
-               "range": "0-100",
-               "type": "Number",
-               "versionsince": "3.10.0",
-               "name": "legendPointerBorderAlpha"
-           },
-           {
-               "description": "Sets the gradient legend pointer border color",
-               "range": "Hex color code",
-               "type": "Color",
-               "versionsince": "3.10.0",
-               "name": "legendPointerBorderColor"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the color of the line showing the gradient legend numeric scale",
-               "name": "legendScaleLineColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the opacity of the line showing the gradient legend numeric scale",
-               "name": "legendScaleLineAlpha"
-           },
-           {
-               "type": "Number",
-               "range": "",
-               "description": "Sets the thickness of the line showing the gradient legend numeric scale",
-               "name": "legendScaleLineThickness"
-           }
-       ],
-       "description": "If you've defined color ranges, the color range names appear in a legend. The following attributes let you customize the functional and cosmetic properties for the legend such as the legend position, legend border color, and so on."
-   },
-   {
-       "table": "The data Object",
-       "path": "data",
-       "attrs": [
-           {
-               "type": "Number",
-               "range": "",
-               "description": "Numeric value of the &lt;entity&gt;.",
-               "name": "value"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "If you want to display your custom value for each entity (apart from it's long name, short name or value), you can specify it here.",
-               "name": "displayValue"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Lets you specify a custom tool text for the entity.",
-               "name": "toolText"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Lets you specify a custom color for the entity. If color range is defined, each entity takes its color from the range it belongs to. However, if you need to force a color for an entity (over-riding the range value), you can specify the hex color code here.",
-               "name": "color"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Custom alpha (transparency) for the entity",
-               "name": "alpha"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "If you want to link the entity to a URL, you can specify the URL in FusionCharts format. The link can open in same window, new window, pop-up, frames or as JavaScript functions.Please see the section `Drill Down Maps` to learn more about this.",
-               "name": "link"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "If you want the label of this particular entity to appear in a different font (other from the one defined in STYLES/map element), specify the font face here.",
-               "name": "font"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "If you want the label of this particular entity to appear in a different font size (other from the one defined in STYLES/map element), specify the font size here.",
-               "name": "fontSize"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "If you want the label of this particular entity to appear in a different font color (other from the one defined in STYLES/map element), specify the font color here.",
-               "name": "fontColor"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "If you want the label of this particular entity to appear bold (other from the one defined in STYLES/map element), set this as 1.",
-               "name": "fontBold"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show the label for this entity? This attribute over-rides the value specified for showLabels attribute for &lt;map&gt; element.",
-               "name": "showLabel"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show tooltip for the entity. Default value is 1.",
-               "name": "showToolTip"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "Sets a color to the label connector line (if any).",
-               "name": "labelConnectorColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Specifies the transparency of the label connector line (if any).",
-               "name": "labelConnectorAlpha"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show hover color when user hovers mouse over entity. Set this attribute to 0 to disable hover color.",
-               "name": "useHoverColor"
-           }
-       ],
-       "description": "The data object is used to create entities for the map."
-   },
-   {
-       "table": "Tool-tip",
-       "attrs": [
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show tool tip on map? When this attribute is set to 0, all the tooltips including entity tooltips, marker toolitps and connector tooltips are disabled.",
-               "name": "showToolTip"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Background Color for tool tip.",
-               "name": "toolTipBgColor"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Border Color for tool tip.",
-               "name": "toolTipBorderColor"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "The character specified as the value of this attribute separates the name and value displayed in tool tip.",
-               "name": "toolTipSepChar"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show shadow for tool-tips on the map.",
-               "name": "showToolTipShadow"
-           }
-       ],
-       "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details."
-   },
-   {
-       "table": "Font Properties",
-       "attrs": [
-           {
-               "type": "String",
-               "range": "Font Name",
-               "description": "This attribute lets you set the font face (family) of all the text (data labels, values etc.) on map.",
-               "name": "baseFont"
-           },
-           {
-               "type": "Number",
-               "range": "0-72",
-               "description": "This attribute sets the base font size of the map i.e., all the values and the names in the map which lie on the canvas will be displayed using the font size provided here.",
-               "name": "baseFontSize"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "This attribute sets the base font color of the map i.e., all the values and the names in the map which lie on the canvas will be displayed using the font color provided here.",
-               "name": "baseFontColor"
-           }
-       ],
-       "description": "Using the attributes below, you can define the generic font properties for the text on the map."
-   },
-   {
-       "table": "Map Padding & Margins",
-       "attrs": [
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Padding of legend from right/bottom side of map",
-               "name": "legendPadding"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Amount of empty space that you want to put on the left side of your map. Nothing is rendered in this space.",
-               "name": "chartLeftMargin"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Amount of empty space that you want to put on the right side of your map. Nothing is rendered in this space.",
-               "name": "chartRightMargin"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Amount of empty space that you want to put on the top of your map. Nothing is rendered in this space.",
-               "name": "chartTopMargin"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Amount of empty space that you want to put on the bottom of your map. Nothing is rendered in this space.",
-               "name": "chartBottomMargin"
-           }
-       ],
-       "description": "The following attributes help you control map margins and paddings."
-   },
-   {
-       "table": "Attributes to allow exporting of map as image, PDF, SVG or XLS",
-       "attrs": [
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether the map will allow exporting to images, PDFs, SVG or XLS.  \n\n__Default value__: 0",
-               "name": "exportEnabled"
-           },
-           {
-               "type": "String",
-               "range": "'save' or 'download'",
-               "description": "In case of server-side exporting, the action specifies whether the exported image will be sent back to client as download, or whether it'll be saved on the server. \n\n__Default value__: download",
-               "name": "exportAction"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "In case of server side exporting, this refers to the path of the server-side export handler (the ready-to-use scripts that we provide).",
-               "name": "exportHandler"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Lets you configure what output formats to allow for export of map, in the export context menu, and also customize the label for each menu item. The attribute value should be a pipe (&#124;) delimited separated key-value pair. Example: exportFormats: `PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File`",
-               "name": "exportFormats"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "This attribute when set to __1__, enables the client-side export feature.  \n\n__Default value__: 0",
-               "name": "exportAtClientSide"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether the menu items related to export (e.g., Save as JPEG etc.) will appear in the context menu of map.",
-               "name": "exportShowMenuItem"
-           },
-           {
-               "type": "String",
-               "range": "'_self' or '_blank'",
-               "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLS will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
-               "name": "exportTargetWindow"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Using this attribute you can specify the name (excluding the extension) of the output (export) file.",
-               "name": "exportFileName"
-           }
-
-       ],
-       "description": "These attributes allow you to control the saving of map as image."
-   },
-   {
-       "table": "Marker Properties",
-       "attrs": [
-           {
-               "type": "String",
-               "range": "Font Name",
-               "description": "This attribute sets the font face for all the defined marker labels. You can over-ride this using STYLES.",
-               "name": "markerFont"
-           },
-           {
-               "type": "Number",
-               "range": "0-72",
-               "description": "This attribute sets the font size for all the defined marker labels on the map. You can over-ride this using STYLES.",
-               "name": "markerFontSize"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "This attribute sets the font color for all the defined marker labels on the map. You can over-ride this using STYLES.",
-               "name": "markerFontColor"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show tool tips for the defined markers?",
-               "name": "showMarkerToolTip"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "You can opt to show/hide label for all the markers on the map using this attribute.",
-               "name": "showMarkerLabels"
-           },
-           {
-               "type": "Number",
-               "range": "Pixels",
-               "description": "This attribute lets you set a global label padding between the marker icon and its label. You can later over-ride the label padding for each individual marker too.",
-               "name": "markerLabelPadding"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "This attribute lets you set a common background color for all the defined markers on the map. You can later over-ride individual marker colors by using SHAPE definitions.",
-               "name": "markerBgColor"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "This attribute lets you set a common border color for all the defined markers on the map. You can later over-ride individual marker border colors by using SHAPE definitions.",
-               "name": "markerBorderColor"
-           },
-           {
-               "type": "Number",
-               "range": "Pixels",
-               "description": "This attribute lets you set a common radius for all the defined markers on the map. You can later over-ride individual marker border colors by using SHAPE definitions.",
-               "name": "markerRadius"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the color of the marker connectors. Also, if labelConnectorColor is not set in XML/JSON data, the same color is applied to the label connector lines (if any) on the map.",
-               "name": "connectorColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the opacity of the marker connectors. Also, if labelConnectorAlpha is not set in XML/JSON data, the same opacity is applied to the label connector lines (if any) on the map.",
-               "name": "connectorAlpha"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Lets you enable hover effect for this specific entity",
-               "name": "showHoverEffect"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "Fll color for this specific marker on hover",
-               "name": "fillHoverColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Alpha for this specific marker on hover",
-               "name": "fillHoverAlpha"
-           },
-           {
-               "type": "Comma separated Numbers",
-               "range": "Sums up to 100",
-               "description": "Fill ratio for this specific marker on hover",
-               "name": "fillHoverRatio"
-           },
-           {
-               "type": "Number",
-               "range": "0-360",
-               "description": "Fill angle for this specific marker on hover",
-               "name": "fillHoverAngle"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Border thickness for this specific marker on hover",
-               "name": "borderHoverThickness"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "Border color for this specific marker on hover",
-               "name": "borderHoverColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Border alpha for this specific marker on hover",
-               "name": "borderHoverAlpha"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Sets the color of the marker connectors.This attribute is deprecated. Use connectorColor instead.",
-               "name": "markerConnColor - deprecated"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Sets the opacity of the marker connectorsThis attribute is deprecated. Use connectorAlpha instead.",
-               "name": "markerConnAlpha - deprecated"
-           },
-           {
-               "type": "Number",
-               "range": "Pixels",
-               "description": "If you've defined any marker connectors, this attribute lets you set the thickness of all those connectors.",
-               "name": "connectorThickness or markerConnThickness - deprecated"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show or hide tooltip for all marker connectors present in a map. The default value is 1.",
-               "name": "showConnectorToolTip"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether the marker connector line should appear as dashed?",
-               "name": "connectorDashed or markerConnDashed - deprecated"
-           },
-           {
-               "type": "Number",
-               "range": "Pixels",
-               "description": "If marker connector line is to appear as dash, this attribute lets you set the dash length of each part of dash.",
-               "name": "connectorDashLen or markerConnDashLen - deprecated"
-           },
-           {
-               "type": "Number",
-               "range": "Pixels",
-               "description": "If marker connector line is to appear as dash, this attribute lets you set the dash gap of each part of dash.",
-               "name": "connectorDashGap or markerConnDashGap - deprecated"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "This attribute lets you to scale the markers automatically with respect to the map dimensions. By default, this attribute is set to 0.",
-               "name": "autoScaleMarkers"
-           },
-           {
-               "type": "Color",
-               "range": "0/1",
-               "description": "Using this attribute, you can specify the fill color for the marker shape (hex color code without #). If you specify a comma separated list of hex color codes (without #), FusionMaps XT will use those colors to form a gradient.",
-               "name": "markerFillColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Used to specify the fill alpha. In case of gradients, you'll need to specify a comma separated list of alpha.",
-               "name": "markerFillAlpha"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "If you're using gradient fills for the marker, this attribute lets you set the ratio (on a scale of 0-100) for the gradient component colors.",
-               "name": "markerFillRatio"
-           },
-           {
-               "type": "Number",
-               "range": "0-360",
-               "description": "If you're using gradient fills for the marker, this attribute lets you set the angle for the gradient.",
-               "name": "markerFillAngle"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Border alpha for the marker shape.",
-               "name": "markerBorderAlpha"
-           }
-       ],
-       "description": "FusionMaps XT allows user-defined markers on the map. Markers are custom defined points on the map, which help you pin-point locations like cities, houses, malls, junctions etc. Using the properties listed below, you can configure the various aspects of the markers."
-   },
-   {
-       "table": "The markers object",
-       "attrs": [],
-       "description": "All data pertinent to markers (applicable marker shapes, definitions for zones in which markers will be applied) is defined within the `markers` object and its child objects."
-   },
-   {
-       "table": "The definition object (child of the markers object)",
-       "path": "definition",
-       "attrs": [
-           {
-               "type": "Alphanumeric",
-               "range": "",
-               "description": "Unique ID for the zone",
-               "name": "id"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Using this attribute, you can set the shape that this marker will assume on the map already defined. ",
-               "name": "shapeId"
-           },
-           {
-               "type": "Number",
-               "range": "",
-               "description": "Relative X-position of the marker.",
-               "name": "x"
-           },
-           {
-               "type": "Number",
-               "range": "",
-               "description": "Relative Y-position of the marker.",
-               "name": "y"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "You can over-ride the labels for each marker during its application. This label will over-ride the label specified during definition.",
-               "name": "label"
-           },
-           {
-               "type": "String",
-               "range": "LEFT, RIGHT, CENTER, TOP, BOTTOM",
-               "description": "Like label, you can also over-ride the label position for each marker during its application.",
-               "name": "labelPos"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "If you need to provide custom tool text for a marker, you can do so using this attribute.",
-               "name": "toolText"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "If you need your marker to link to other pages, when clicked, define the link here. The link can open in same window, new window, pop-up, frames, throw events etc. Please see `Drill Down Maps` section for more information on link format.",
-               "name": "link"
-           },
-           {
-               "type": "Number",
-               "range": "0-5",
-               "description": "If you're using the same shape (shapeId) to represent multiple markers on the map, you can have them differ in size using this attribute. This attributes set the scaling of a particular marker. Valid values are floating numbers between 0 and 5.",
-               "name": "scale"
-           },
-           {
-               "type": "number",
-               "range": "In pixels",
-               "description": "In case of arc, circle or polygon, this attribute lets you set the radius of the same. The value of the radius attribute in &lt;shape&gt; element overrides the value of this attribute.",
-               "name": "radius"
-           }
-       ],
-       "description": "The `markers` object is used to define and apply markers to a map. The `definition` object is used to define the zones on the map within which the markers will be placed."
-   },
-   {
-       "table": "The application object (child of the markers object)",
-       "path": "application",
-       "attrs": [
-           {
-               "type": "Alphanumeric",
-               "range": "",
-               "description": "ID that matches the marker application to its definition. If you specify an ID which has not been defined previously, you'll see an error in the debug window.",
-               "name": "id"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Using this attribute, you can set the shape that this marker will assume on the map. FusionMaps XT offers 4 default shapes - circle, arc, triangle or diamond. You can also define your custom shapes and then refer to those.",
-               "name": "shapeId"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "You can over-ride the labels for each marker during its application. This label will over-ride the label specified during definition.",
-               "name": "label"
-           },
-           {
-               "type": "String",
-               "range": "LEFT, RIGHT, CENTER, TOP, BOTTOM",
-               "description": "Like label, you can also over-ride the label position for each marker during its application.",
-               "name": "labelPos"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "If you need to provide custom tool text for a marker, you can do so using this attribute.",
-               "name": "toolText"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "If you need your marker to link to other pages, when clicked, define the link here. The link can open in same window, new window, pop-up, frames, throw events etc. Please see \"Drill Down Maps\" section for more information on link format.",
-               "name": "link"
-           },
-           {
-               "type": "Number",
-               "range": "0-5",
-               "description": "If you're using the same shape (shapeId) to represent multiple markers on the map, you can have them differ in size using this attribute. This attributes set the scaling of a particular marker. Valid values are floating numbers between 0 and 5.",
-               "name": "scale"
-           }
-       ],
-       "description": "The `markers` object is used to define and apply markers to a map. The `application` object is used to map markers shapes to zones on the map."
-   },
-   {
-       "table": "The shapes object (child of the markers object)",
-       "path": "shapes",
-       "attrs": [
-           {
-               "type": "Alphanumeric",
-               "range": "",
-               "description": "Each shape needs to be given a unique Id. During application, you'll directly refer to the ID of each shape to plot it on the map.",
-               "name": "id"
-           },
-           {
-               "type": "String",
-               "range": "CIRCLE, ARC, POLYGON, IMAGE",
-               "description": "type specifies what kind of shape the marker will draw as. Valid values are circle, arc, polygon or image. So, if you want to create a pentagon, select polygon for this attribute and then later set sides to 5.",
-               "name": "type"
-           },
-           {
-               "type": "String",
-               "range": "URL",
-               "description": "If you're using an image marker shape, you necessarily need to specify it's URL. FusionMaps XT can load GIF, JPEG and PNG files from the same sub-domain only (owing to cross browser security restrictions).",
-               "name": "url"
-           },
-           {
-               "type": "Number",
-               "range": "3-20",
-               "description": "If you've opted to plot a polygon shaped marker, you can specify the number of sides the polygon will have, using this attribute. Valid values are 3-20.",
-               "name": "sides"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "This attribute lets you configure the alpha of the entire marker.",
-               "name": "alpha"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "This attribute lets you set the distance (in pixels) between your marker shape and the marker label.",
-               "name": "labelPadding"
-           },
-           {
-               "type": "Color",
-               "range": "In Pixels",
-               "description": "Using this attribute, you can specify the fill color for the marker shape (hex color code without #). If you specify a comma separated list of hex color codes (without #), FusionMaps XT will use those colors to form a gradient.",
-               "name": "fillColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Used to specify the fill alpha. In case of gradients, you'll need to specify a comma separated list of alpha.",
-               "name": "fillAlpha"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "If you're using gradient fills for the marker, this attribute lets you set the ratio (on a scale of 0-100) for the gradient component colors.",
-               "name": "fillRatio"
-           },
-           {
-               "type": "Number",
-               "range": "0-360",
-               "description": "If you're using gradient fills for the marker, this attribute lets you set the angle for the gradient.",
-               "name": "fillAngle"
-           },
-           {
-               "type": "String",
-               "range": "LINEAR, RADIAL",
-               "description": "If you're using gradient fills for the marker, this attribute lets you set the pattern for gradient - valid values are `linear` or `radial`.",
-               "name": "fillPattern"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show border for the marker shape?",
-               "name": "showBorder"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Border color for the marker shape.",
-               "name": "borderColor"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Border thickness for the marker shape.",
-               "name": "borderThickness"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Border alpha for the marker shape.",
-               "name": "borderAlpha"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "In case of arc, circle or polygon, this attribute lets you set the radius of the same.",
-               "name": "radius"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "In case of arc, this attribute lets you set the inner radius of the same.",
-               "name": "innerRadius"
-           },
-           {
-               "type": "Number",
-               "range": "0-360",
-               "description": "In case of arc or polygon, this attribute lets you set the starting draw angle.",
-               "name": "startAngle"
-           },
-           {
-               "type": "Number",
-               "range": "0-360",
-               "description": "In case of arc, this attribute lets you set the ending draw angle.",
-               "name": "endAngle"
-           },
-           {
-               "type": "Number",
-               "range": "0-1000",
-               "description": "This attribute lets you dynamically re-scale the x-scale of your images after they've been loaded. Valid range is 0-1000.",
-               "name": "xScale"
-           },
-           {
-               "type": "Number",
-               "range": "0-1000",
-               "description": "This attribute lets you dynamically re-scale the y-scale of your images after they've been loaded. Valid range is 0-1000.",
-               "name": "yScale"
-           },
-           {
-               "type": "String",
-               "range": "TOP, MIDDLE, BOTTOM",
-               "description": "When using an image marker, you can specify how the image will vertically align with respect to the marker's y position using this attribute. Valid values are `top`, `middle` and `bottom`. For markers which are simple icons, you can use the middle vertical align. In that case, the image will vertically be at the center position of the marker. However, if you've an image icon like a pin-point or a needle with its pointer faced downwards, you'll need to set the vertical alignment position to `top`, so that the pointer exactly points to the given marker location. Horizontally, the images are always aligned centrally.",
-               "name": "vAlign"
-           }
-       ],
-       "description": "The `markers` object is used to define and apply markers to a map. The `shapes` object is used to define the shapes that will be applied as markers."
-   },
-   {
-       "table": "The connectors object (child of the markers object)",
-       "path": "connectors",
-       "attrs": [
-           {
-               "type": "String",
-               "range": "",
-               "description": "Id of the marker from where the connector will start.",
-               "name": "from"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Id of the marker where the connector will end.",
-               "name": "to"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Each connector can also link to an external URL. For this attribute, you can specify the link for the connector in FusionCharts Link format.",
-               "name": "link"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Each connector can have a visible text label. This attribute lets you set the text.",
-               "name": "label"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "If you want to set a custom tool text for the connectors, this attribute lets you do so.",
-               "name": "toolText"
-           },
-           {
-               "type": "Number",
-               "range": "0-10",
-               "description": "Thickness of the connector line.",
-               "name": "thickness"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Color of the connector line.",
-               "name": "color"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Alpha (transparency) of the connector line.",
-               "name": "alpha"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether the connector line should appear as dashed?",
-               "name": "dashed"
-           },
-           {
-               "type": "Number",
-               "range": "0-10",
-               "description": "If the connector line is to appear as dashed, this attribute defines the length of each dashed line.",
-               "name": "dashLen"
-           },
-           {
-               "type": "Number",
-               "range": "0-10",
-               "description": "If the connector line is to appear as dashed, this attribute defines the gap between each dashed line.",
-               "name": "dashGap"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Lets you enable hover effect for this specific connector",
-               "name": "showHoverEffect"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "Color for this specific connector on hover",
-               "name": "hoverColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Alpha for this specific connector on hover",
-               "name": "hoverAlpha"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Border thickness for this specific connector on hover",
-               "name": "hoverThickness"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show tooltip for the connector. Default value is 1.",
-               "name": "showToolTip"
-           }
-       ],
-       "description": "The `markers` object is used to define and apply markers to a map. The `connectors` object is used to draw connectors to connect markers to other markers or marker labels."
-   },
-   {
-       "table": "The entityDef object",
-       "path": "entityDef",
-       "attrs": [
-           {
-               "type": "String",
-               "range": "",
-               "description": "The internal and default ID of any entity of the map.",
-               "name": "internalId"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "The new ID of any entity of the map which overrides the internal ID.",
-               "name": "newId"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "The short descriptive name of an entity.",
-               "name": "sName"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "The long descriptive name of an entity.",
-               "name": "lName"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Lets you enable hover effect for this specific entity",
-               "name": "showHoverEffect"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Sets the value for maginifying an entity's border when the entity is hovered upon",
-               "name": "entityBorderHoverThickness"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "Fill color for the specific entity on hover",
-               "name": "fillHoverColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Alpha for the specific entity on hover",
-               "name": "fillHoverAlpha"
-           },
-           {
-               "type": "Comma separated Numbers",
-               "range": "Sums up to 100",
-               "description": "If hover color is defined as a gradient using, this attribute lets you specify the distribution of those colors in a ratio that should sum to 100",
-               "name": "fillHoverRatio"
-           },
-           {
-               "type": "Number",
-               "range": "0-360",
-               "description": "Fill angle for the specific entity on hover",
-               "name": "fillHoverAngle"
-           }
-       ],
-       "description": "FusionMaps XT allows you to redefine the ID, short name, and long name of an entity, using the `entityDef` object. This object contains the following attributes:"
-   },
-   {
-       "table": "The colorRange object",
-       "path": "colorRange",
-       "attrs": [
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Whether to show Gradient Legend. Default value is 0.",
-               "name": "gradient"
-           },
-           {
-               "type": "Number",
-               "range": "",
-               "description": "Sets the minimum value or the lower limit of the numeric range and Gradient Legend.",
-               "name": "minValue"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Specifies the starting color of the lower limit of Gradient Legend.",
-               "name": "code"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Starting opacity of Gradient Legend. Default value is 100.",
-               "name": "alpha"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Specifies the label for the lower limit of Gradient Legend.",
-               "name": "startLabel"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Specifies the label for the upper limit of Gradient Legend.",
-               "name": "endLabel"
-           }
-       ],
-       "description": "The `colorRange` object is used to define ranges for categorizing entities on a map based on their data values. This object contains the attributes to define the range scale. __Note__: The `colorRange` object is not used to collectively configure all ranges; the `color` object (child of the `colorRange` object) is used to do that."
-   },
-   {
-       "table": "The color object (child of the `colorRange` object)",
-       "path": "color",
-       "attrs": [
-           {
-               "type": "Number",
-               "range": "",
-               "description": "Lower limit of range.",
-               "name": "minValue"
-           },
-           {
-               "type": "Number",
-               "range": "",
-               "description": "Upper limit of range.",
-               "name": "maxValue"
-           },
-           {
-               "type": "String",
-               "range": "",
-               "description": "Text representation of range (to be shown in legend).",
-               "name": "displayValue"
-           },
-           {
-               "type": "Color",
-               "range": "Hex Color Code",
-               "description": "Hex color code (without #) for the range.",
-               "name": "code"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Transparency (0-100) for the entities belonging to that range.",
-               "name": "alpha"
-           }
-       ],
-       "description": "The `color` object is used to define individual ranges using the following attributes:"
-   },
-   {
-       "table": "Hover effects",
-       "attrs": [
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Lets you enable hover effect for entities and markers in the map",
-               "name": "showHoverEffect"
-           },
-           {
-               "type": "Boolean",
-               "range": "0/1",
-               "description": "Lets you enable hover effect just for entities on the map",
-               "name": "showEntityHoverEffect"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "Specifies the fill color for a map entity  on hover",
-               "name": "entityFillHoverColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Specifies the alpha for a map entity on hover",
-               "name": "entityFillHoverAlpha"
-           },
-           {
-               "type": "Comma separated Numbers",
-               "range": "Sums up to 100",
-               "description": "Specifies the fill ratio for an map entity on hover",
-               "name": "entityFillHoverRatio"
-           },
-           {
-               "type": "Number",
-               "range": "0-360",
-               "description": "Specifies the fill angle for a map entity on hover",
-               "name": "entityFillHoverAngle"
-           },
-           {
-               "type": "Color",
-               "range": "N/A",
-               "description": "Specifies the fill color for a map marker on hover",
-               "name": "markerFillHoverColor"
-           },
-           {
-               "type": "Number",
-               "range": "0-100",
-               "description": "Specifies the fill alpha for a map marker on hover",
-               "name": "markerFillHoverAlpha"
-           },
-           {
-               "type": "Number",
-               "range": "0-360",
-               "description": "Specifies the fill angle for a map marker on hover",
-               "name": "markerFillHoverAngle"
-           },
-           {
-               "type": "Comma separated Numbers",
-               "range": "Sums up to 100",
-               "description": "Specifies the fill ratio for a map marker on hover",
-               "name": "markerFillHoverRatio"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Specifies the border thickness for a map marker on hover",
-               "name": "markerBorderHoverThickness"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "Specifies the border color for a map marker on hover",
-               "name": "markerBorderHoverColor"
-           },
-           {
-               "type": "Number (1-100)",
-               "range": "In Pixels",
-               "description": "Specifies the border alpha for a map marker on hover",
-               "name": "markerBorderHoverAlpha"
-           },
-           {
-               "type": "Color",
-               "range": "",
-               "description": "Specifies the fill color for a map connector on hover",
-               "name": "connectorHoverColor"
-           },
-           {
-               "type": "Number",
-               "range": "In Pixels",
-               "description": "Specifies the border thickness for a map connector on hover",
-               "name": "connectorHoverThickness"
-           },
-           {
-               "type": "Number",
-               "range": "0 -100",
-               "description": "Specifies the border alpha for a map connector on hover",
-               "name": "connectorHoverAlpha"
-           }
-       ],
-       "description": "The hover effect attributes let you customize the resultant effect on the entities when the mouse pointer is hovered over them."
-   }
+  {
+    "table": "Functional Attributes",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether entity labels will be shown or hidden \n\n__Default value__: 0 (hidden)",
+        "name": "showLabels"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether entity names will be shown as a part of map labels \n\nThis attribute works only when the `showLabels` attribute is set to __1__.",
+        "name": "includeNameInLabels"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether entity values will be shown as a part of map labels \n\nThis attribute works only when the `showLabels` attribute is set to __1__.",
+        "name": "includeValueInLabels"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether an entity's short name or long name will be a part of the map label \n\n __Default value__: 1 (the short name is used in the label) \n\nThis attribute works only when the `showLabels` attribute is set to __1__.",
+        "name": "useSNameInLabels"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether an entity's short name or long name will be a part of the tooltip for an entity \n\n __Default value__: 1 (the long name is used in the tooltip) \n\nThis attribute works only when the `showLabels` attribute is set to __1__.",
+        "name": "useSNameInToolTip"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether a shadow effect will be applied to the map \n\n__Default value__: 0 (the effect is not applied)",
+        "name": "showShadow"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Sets the map caption",
+        "name": "caption"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Sets the map sub-caption",
+        "name": "subCaption"
+      },
+      {
+        "type": "String",
+        "range": "top-left, top-right, bottom-left, bottom-right and top-center",
+        "description": "Sets the caption and sub-caption position \n\n__Default value__: top-center",
+        "name": "captionPosition"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "The entire map can act as a hotspot. This attribute is used to specify the URL to define the hotspot link for the map. The link can be specified in FusionCharts Link Format.",
+        "name": "clickURL"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether the tooltip will shown for entities that don't have a value assigned in the JSON data",
+        "name": "hoverOnEmpty"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Sets the menu item label for the custom context menu item",
+        "name": "aboutMenuItemLabel"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether entity labels will be shown above or below the markers on a map \n\n __Default value__: 1 (the labels appear above the markers)",
+        "name": "entityLabelsOnTop"
+      }
+    ],
+    "description": "These attributes let you control a variety of functional elements on the map. For example, you can opt to show/hide entity labels, display them above/below the markers, and so on."
+  },
+  {
+    "table": "Map Cosmetics",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether a border will be shown around the canvas \n\n __Default value__: 0 (the canvas border is hidden)",
+        "name": "showCanvasBorder"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the color for the canvas border, if the border is shown",
+        "name": "canvasBorderColor"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Sets the thickness for the canvas border, if the border is shown",
+        "name": "canvasBorderThickness"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the transparency for the canvas border, if the border is shown",
+        "name": "canvasBorderAlpha"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "Sets the background color for the map \n\n To apply a gradient color background, specify a comma-separated list of the hex color codes to be used",
+        "name": "bgColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the background transparency \n\n To set the transparency for a gradient background, specify a comma-separated list of the transparency value for each color.",
+        "name": "bgAlpha"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "For a gradient backgrouns, sets the ratio of each color constituent.",
+        "name": "bgRatio"
+      },
+      {
+        "type": "Number",
+        "range": "0-360",
+        "description": "For a gradient backgrouns, sets the angle of each color constituent.",
+        "name": "bgAngle"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Sets an image as the map background by taking the path and name of the image as the value",
+        "name": "bgImage"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the transparency of the background image",
+        "name": "bgImageAlpha"
+      },
+      {
+        "type": "String",
+        "range": "stretch, tile, fit, fill, center, none",
+        "description": "Sets the display mode for the background image \n\n Acceptable values include: \n\n __stretch__: Image is expanded to fit the entire map area, without maintaining original constraints \n\n __tile__: Image is repeated as a pattern on the entire map area \n\n __fit__: Image is made to fit proportionately on the map area \n\n __fill__: Image is made to proportionately fill the entire map area \n\n __center__: Image is positioned at the center of the map area \n\n __none__: None of the above modes are applied \n\n __Default value__: none",
+        "name": "bgImageDisplayMode"
+      },
+      {
+        "type": "String",
+        "range": "top, middle, bottom",
+        "description": "Sets the vertical alignment of the background image",
+        "name": "bgImageVAlign"
+      },
+      {
+        "type": "String",
+        "range": "left, middle, right",
+        "description": "Sets the horizontal alignment of the background image",
+        "name": "bgImageHAlign"
+      },
+      {
+        "type": "Number",
+        "range": "0-300",
+        "description": "Sets the magnifying scale for the background image \n\n This attribute will only work when `bgImageDisplayMode` is set to __none__, __center__, or __tile__.",
+        "name": "bgImageScale"
+      },
+      {
+        "type": "String",
+        "range": "URL",
+        "description": "Sets the path to load external logo (image file) on the map",
+        "name": "logoURL"
+      },
+      {
+        "type": "String",
+        "range": "TL, TR, BL, BR, CC",
+        "description": "Sets the logo position \n\n Acceptable values include: __TL__ (top-left), __TR__ (top-right), __BL__ (bottom-left), __BR__ (bottom-right), __CC__ (center of the screen)",
+        "name": "logoPosition"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the logo transparency",
+        "name": "logoAlpha"
+      },
+      {
+        "type": "Number",
+        "range": "0-300",
+        "description": "Sets the magnifying scale for the logo",
+        "name": "logoScale"
+      },
+      {
+        "type": "String",
+        "range": "URL",
+        "description": "Links the logo to an external URL, specify the link in this attribute. The link can be in FusionCharts Link Format, allowing you to link to new windows, pop-ups, frames etc.",
+        "name": "logoLink"
+      }
+    ],
+    "description": "The following attributes let you configure map cosmetics like background color, background alpha etc."
+  },
+  {
+    "table": "Map Entities Cosmetics",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether the entity borders will be shown or hidden \n\n __Default value__: 1 (the borders are shown)",
+        "name": "showBorder"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the border color for map entities",
+        "name": "borderColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the border transparency for map entities",
+        "name": "borderAlpha"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the default fill color for the entities, if no color range has been specified",
+        "name": "fillColor"
+      },
+      {
+        "type": "Alpha",
+        "range": "0-100",
+        "description": "Sets the transparency for the fill color of the entities",
+        "name": "fillAlpha"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether the entities will be rendered in a different color—specified using the `hoverColor` attribute—when the mouse pointer is hovered over them",
+        "name": "useHoverColor"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the color that will be applied to an entity when the mouse pointer is hovered over it",
+        "name": "hoverColor"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets a default color for enities that are not assigned any value in the map data",
+        "name": "nullEntityColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets a default transparency for enities that are not assigned any value in the map data",
+        "name": "nullEntityAlpha"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether the tooltip for the entities will be shown or hidden \n\n __Default value__: 1 (the tooltip is shown)",
+        "name": "showEntityToolTip"
+      },
+      {
+        "type": "Hex Color Code",
+        "range": "",
+        "description": "Specifies the color of the static label connector. This attribute is used when you want to explicitly define the color of the label connector. If not set, the label connector color is taken from connectorColor attribute.",
+        "name": "labelConnectorColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Specifies the transparency of the static label connector. This attribute is used when you want to explicitly define the transparency of the label connector. If not set, the label connector alpha is taken from connectorAlpha attribute.",
+        "name": "labelConnectorAlpha"
+      }
+    ],
+    "description": "These attributes let you configure how your entities will appear on the map."
+  },
+  {
+    "table": "Number Formatting",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether the numbers displayed on the map will be formatted using commas \n\n For example, when `formatNumber` is set to __1__, the number will be rendered as 40,000; when `formatNumber` is set to __0__, it will be rendered as 40000.",
+        "name": "formatNumber"
+      },
+      {
+        "type": "Number",
+        "range": "0-10",
+        "description": "Sets the number of decimal places to which all numbers on the map will be rounded to.",
+        "name": "decimals"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether zero padding will be forced for decimal numbers \n\n For example, if you limit the maximum number of digits after the decimal point  to 2, a number like 55.344 will be rounded to 55.34. This does not mean that all numbers will be displayed with a fixed number of decimal places. For instance 55 will not be displayed as 55.00 and 55.1 will not become 55.10. To have fixed number of decimal places attached to all the numbers, set this attribute to 1.",
+        "name": "forceDecimals"
+      },
+      {
+        "type": "String",
+        "range": "Character",
+        "description": "Sets a prefix for the numbers on the map \n\n For example, to represent all dollars figure on the map, set this attribute to __$__. The numbers will then be rendered as $40000, $50000. \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "numberPrefix"
+      },
+      {
+        "type": "String",
+        "range": "Character",
+        "description": "Sets a suffix for the numbers on the map \n\n For example, to represent all numbers quantified as per annum, set this attribute to ' /a'. The numbers will then be rendered as 40000/a, 50000/a and so on. \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information. ",
+        "name": "numberSuffix"
+      },
+      {
+        "type": "String",
+        "range": "Character",
+        "description": "Sets the character to be used as the decimal separator for the numbers on the map \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "decimalSeparator"
+      },
+      {
+        "type": "String",
+        "range": "Character",
+        "description": "Sets the character to be used as the thousand separator for the numbers on the map \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "thousandSeparator"
+      },
+      {
+        "type": "List of comma separated Numbers",
+        "range": "",
+        "description": "Sets the number of digits after which the thousand separator should be positioned \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "thousandSeparatorPosition"
+      },
+      {
+        "type": "String",
+        "range": "Character",
+        "description": "In some countries, commas are used as decimal separators and dots as thousand separators. If your chart data is in XML andyou specify such values, it returns an error while converting to number. So, FusionMaps XT accepts the input decimal and thousand separator from user, so that it can convert it accordingly into the required format. This attribute lets you input the decimal separator. \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "inDecimalSeparator"
+      },
+      {
+        "type": "String",
+        "range": "Character",
+        "description": "In some countries, commas are used as decimal separators and dots as thousand separators. If your chart data is in XML andyou specify such values, it returns an error while converting to number. So, FusionMaps XT accepts the input decimal and thousand separator from user, so that it can convert it accordingly into the required format. This attribute lets you input the decimal separator. \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "inThousandSeparator"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether the suffix __K__ (for thousands) and __M__ (for millions) will be added to a number after it is truncated and rounded off. \n\n For example, when `formatNumberScale` is set to __1__, the number 1043 will be rendered as 1.04K (assuming `decimals` is set to __2__). \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "formatNumberScale"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Sets the default unit of the numbers on the map \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "defaultNumberScale"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Sets the unit for each block of the number scale \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "numberScaleUnit"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Sets the range for each block on the number scale \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "numberScaleValue"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether recursive scaling will be enabled for the numbers on the map \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "scaleRecursively"
+      },
+      {
+        "type": "Number",
+        "range": "",
+        "description": "Sets the number of recursions to complete during recusrive scaling \n\n Setting this attribute to __1__ completes the entire set of recursion \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "maxScaleRecursion"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Sets the separator character for the scales generated after recursion \n\n Click [here](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) for more information.",
+        "name": "scaleSeparator"
+      }
+    ],
+    "description": ""
+  },
+  {
+    "table": "Legend Properties",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether the legend will be shown or hidden",
+        "name": "showLegend"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether legend interaction will be enabled or disbaled \n\n Entities can be shown or hidden from the map by clicking the associated legend item. ",
+        "name": "interactiveLegend"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether the legend can be made dragable \n\n Setting this attribute to __1__ enables dragging the legend anywhere around the chart. \n\n __Default value__: 0 \n\n __Note__: This attribute does not refer to the dragable sliders on a gradient legend, but to the complete legend.",
+        "name": "legendAllowDrag"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Sets the legend caption",
+        "name": "legendCaption"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "You can reverse the ordering of the legend items in the legend by setting this attribute to 1.",
+        "name": "reverseLegend"
+      },
+      {
+        "type": "String",
+        "range": "BOTTOM or RIGHT",
+        "description": "Positions the legend to render below the map or to the right of the map \n\n __Default value__: BOTTOM",
+        "name": "legendPosition"
+      },
+      {
+        "type": "Number",
+        "range": "0-5",
+        "description": "Sets the magnifying scale for the legend icons \n\n __Default value__: 1",
+        "name": "legendIconScale"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Sets whether the shadow effect will be applied to the legend",
+        "name": "legendShadow"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the legend background color",
+        "name": "legendBgColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the legend background transparency",
+        "name": "legendBgAlpha"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the legend border color",
+        "name": "legendBorderColor"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Sets the legend border thickness",
+        "name": "legendBorderThickness"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the legend border transparency",
+        "name": "legendBorderAlpha"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the legend scroll bar background color \n\n A scroll bar is rendered in the legend if there are too many legend items.",
+        "name": "legendScrollBgColor"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the legend scroll bar color \n\n A scroll bar is rendered in the legend if there are too many legend items. ",
+        "name": "legendScrollBarColor"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the color for the legend scroll bar buttons \n\n A scroll bar is rendered in the legend if there are too many legend items.",
+        "name": "legendScrollBtnColor"
+      },
+      {
+        "description": "Sets the gradient legend pointer color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.10.0",
+        "name": "legendPointerColor"
+      },
+      {
+        "description": "Sets the gradient legend pointer transparency",
+        "range": "0-100",
+        "type": "Number",
+        "versionsince": "3.10.0",
+        "name": "legendPointerAlpha"
+      },
+      {
+        "type": "Number",
+        "range": "",
+        "description": "Sets the gradient legend pointer border thickness",
+        "name": "legendPointerBorderThickness"
+      },
+      {
+        "description": "Sets the gradient legend pointer border transparency",
+        "range": "0-100",
+        "type": "Number",
+        "versionsince": "3.10.0",
+        "name": "legendPointerBorderAlpha"
+      },
+      {
+        "description": "Sets the gradient legend pointer border color",
+        "range": "Hex color code",
+        "type": "Color",
+        "versionsince": "3.10.0",
+        "name": "legendPointerBorderColor"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the color of the line showing the gradient legend numeric scale",
+        "name": "legendScaleLineColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the opacity of the line showing the gradient legend numeric scale",
+        "name": "legendScaleLineAlpha"
+      },
+      {
+        "type": "Number",
+        "range": "",
+        "description": "Sets the thickness of the line showing the gradient legend numeric scale",
+        "name": "legendScaleLineThickness"
+      }
+    ],
+    "description": "If you've defined color ranges, the color range names appear in a legend. The following attributes let you customize the functional and cosmetic properties for the legend such as the legend position, legend border color, and so on."
+  },
+  {
+    "table": "The data Object",
+    "path": "data",
+    "attrs": [
+      {
+        "type": "Number",
+        "range": "",
+        "description": "Numeric value of the &lt;entity&gt;.",
+        "name": "value"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "If you want to display your custom value for each entity (apart from it's long name, short name or value), you can specify it here.",
+        "name": "displayValue"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Lets you specify a custom tool text for the entity.",
+        "name": "toolText"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Lets you specify a custom color for the entity. If color range is defined, each entity takes its color from the range it belongs to. However, if you need to force a color for an entity (over-riding the range value), you can specify the hex color code here.",
+        "name": "color"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Custom alpha (transparency) for the entity",
+        "name": "alpha"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "If you want to link the entity to a URL, you can specify the URL in FusionCharts format. The link can open in same window, new window, pop-up, frames or as JavaScript functions.Please see the section `Drill Down Maps` to learn more about this.",
+        "name": "link"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "If you want the label of this particular entity to appear in a different font (other from the one defined in STYLES/map element), specify the font face here.",
+        "name": "font"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "If you want the label of this particular entity to appear in a different font size (other from the one defined in STYLES/map element), specify the font size here.",
+        "name": "fontSize"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "If you want the label of this particular entity to appear in a different font color (other from the one defined in STYLES/map element), specify the font color here.",
+        "name": "fontColor"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "If you want the label of this particular entity to appear bold (other from the one defined in STYLES/map element), set this as 1.",
+        "name": "fontBold"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show the label for this entity? This attribute over-rides the value specified for showLabels attribute for &lt;map&gt; element.",
+        "name": "showLabel"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show tooltip for the entity. Default value is 1.",
+        "name": "showToolTip"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "Sets a color to the label connector line (if any).",
+        "name": "labelConnectorColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Specifies the transparency of the label connector line (if any).",
+        "name": "labelConnectorAlpha"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show hover color when user hovers mouse over entity. Set this attribute to 0 to disable hover color.",
+        "name": "useHoverColor"
+      }
+    ],
+    "description": "The data object is used to create entities for the map."
+  },
+  {
+    "table": "Tool-tip",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show tool tip on map? When this attribute is set to 0, all the tooltips including entity tooltips, marker toolitps and connector tooltips are disabled.",
+        "name": "showToolTip"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Background Color for tool tip.",
+        "name": "toolTipBgColor"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Border Color for tool tip.",
+        "name": "toolTipBorderColor"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "The character specified as the value of this attribute separates the name and value displayed in tool tip.",
+        "name": "toolTipSepChar"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show shadow for tool-tips on the map.",
+        "name": "showToolTipShadow"
+      }
+    ],
+    "description": "These attributes let you control the tool tip. You can set the background color, border color, separator character and few other details."
+  },
+  {
+    "table": "Font Properties",
+    "attrs": [
+      {
+        "type": "String",
+        "range": "Font Name",
+        "description": "This attribute lets you set the font face (family) of all the text (data labels, values etc.) on map.",
+        "name": "baseFont"
+      },
+      {
+        "type": "Number",
+        "range": "0-72",
+        "description": "This attribute sets the base font size of the map i.e., all the values and the names in the map which lie on the canvas will be displayed using the font size provided here.",
+        "name": "baseFontSize"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "This attribute sets the base font color of the map i.e., all the values and the names in the map which lie on the canvas will be displayed using the font color provided here.",
+        "name": "baseFontColor"
+      }
+    ],
+    "description": "Using the attributes below, you can define the generic font properties for the text on the map."
+  },
+  {
+    "table": "Map Padding & Margins",
+    "attrs": [
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Padding of legend from right/bottom side of map",
+        "name": "legendPadding"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Amount of empty space that you want to put on the left side of your map. Nothing is rendered in this space.",
+        "name": "chartLeftMargin"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Amount of empty space that you want to put on the right side of your map. Nothing is rendered in this space.",
+        "name": "chartRightMargin"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Amount of empty space that you want to put on the top of your map. Nothing is rendered in this space.",
+        "name": "chartTopMargin"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Amount of empty space that you want to put on the bottom of your map. Nothing is rendered in this space.",
+        "name": "chartBottomMargin"
+      }
+    ],
+    "description": "The following attributes help you control map margins and paddings."
+  },
+  {
+    "table": "Attributes to allow exporting of map as image, PDF, SVG or XLSX",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether the map will allow exporting to images, PDFs, SVG or XLSX.  \n\n__Default value__: 0",
+        "name": "exportEnabled"
+      },
+      {
+        "type": "String",
+        "range": "'save' or 'download'",
+        "description": "In case of server-side exporting, the action specifies whether the exported image will be sent back to client as download, or whether it'll be saved on the server. \n\n__Default value__: download",
+        "name": "exportAction"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "In case of server side exporting, this refers to the path of the server-side export handler (the ready-to-use scripts that we provide).",
+        "name": "exportHandler"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Lets you configure what output formats to allow for export of map, in the export context menu, and also customize the label for each menu item. The attribute value should be a pipe (&#124;) delimited separated key-value pair. Example: exportFormats: `PNG=Export as High Quality Image&#124;JPG&#124;PDF=Export as PDF File`",
+        "name": "exportFormats"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "This attribute when set to __1__, enables the client-side export feature.  \n\n__Default value__: 0",
+        "name": "exportAtClientSide"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether the menu items related to export (e.g., Save as JPEG etc.) will appear in the context menu of map.",
+        "name": "exportShowMenuItem"
+      },
+      {
+        "type": "String",
+        "range": "'_self' or '_blank'",
+        "description": "In case of server-side exporting and when using download as action, this lefts you configure whether the return image, PDF, SVG or XLSX will open in same window (as an attachment for download), or whether it will open in a new window. \n\n__Default value__: _self",
+        "name": "exportTargetWindow"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Using this attribute you can specify the name (excluding the extension) of the output (export) file.",
+        "name": "exportFileName"
+      }
+    ],
+    "description": "These attributes allow you to control the saving of map as image."
+  },
+  {
+    "table": "Marker Properties",
+    "attrs": [
+      {
+        "type": "String",
+        "range": "Font Name",
+        "description": "This attribute sets the font face for all the defined marker labels. You can over-ride this using STYLES.",
+        "name": "markerFont"
+      },
+      {
+        "type": "Number",
+        "range": "0-72",
+        "description": "This attribute sets the font size for all the defined marker labels on the map. You can over-ride this using STYLES.",
+        "name": "markerFontSize"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "This attribute sets the font color for all the defined marker labels on the map. You can over-ride this using STYLES.",
+        "name": "markerFontColor"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show tool tips for the defined markers?",
+        "name": "showMarkerToolTip"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "You can opt to show/hide label for all the markers on the map using this attribute.",
+        "name": "showMarkerLabels"
+      },
+      {
+        "type": "Number",
+        "range": "Pixels",
+        "description": "This attribute lets you set a global label padding between the marker icon and its label. You can later over-ride the label padding for each individual marker too.",
+        "name": "markerLabelPadding"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "This attribute lets you set a common background color for all the defined markers on the map. You can later over-ride individual marker colors by using SHAPE definitions.",
+        "name": "markerBgColor"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "This attribute lets you set a common border color for all the defined markers on the map. You can later over-ride individual marker border colors by using SHAPE definitions.",
+        "name": "markerBorderColor"
+      },
+      {
+        "type": "Number",
+        "range": "Pixels",
+        "description": "This attribute lets you set a common radius for all the defined markers on the map. You can later over-ride individual marker border colors by using SHAPE definitions.",
+        "name": "markerRadius"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the color of the marker connectors. Also, if labelConnectorColor is not set in XML/JSON data, the same color is applied to the label connector lines (if any) on the map.",
+        "name": "connectorColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the opacity of the marker connectors. Also, if labelConnectorAlpha is not set in XML/JSON data, the same opacity is applied to the label connector lines (if any) on the map.",
+        "name": "connectorAlpha"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Lets you enable hover effect for this specific entity",
+        "name": "showHoverEffect"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "Fll color for this specific marker on hover",
+        "name": "fillHoverColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Alpha for this specific marker on hover",
+        "name": "fillHoverAlpha"
+      },
+      {
+        "type": "Comma separated Numbers",
+        "range": "Sums up to 100",
+        "description": "Fill ratio for this specific marker on hover",
+        "name": "fillHoverRatio"
+      },
+      {
+        "type": "Number",
+        "range": "0-360",
+        "description": "Fill angle for this specific marker on hover",
+        "name": "fillHoverAngle"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Border thickness for this specific marker on hover",
+        "name": "borderHoverThickness"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "Border color for this specific marker on hover",
+        "name": "borderHoverColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Border alpha for this specific marker on hover",
+        "name": "borderHoverAlpha"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Sets the color of the marker connectors.This attribute is deprecated. Use connectorColor instead.",
+        "name": "markerConnColor - deprecated"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Sets the opacity of the marker connectorsThis attribute is deprecated. Use connectorAlpha instead.",
+        "name": "markerConnAlpha - deprecated"
+      },
+      {
+        "type": "Number",
+        "range": "Pixels",
+        "description": "If you've defined any marker connectors, this attribute lets you set the thickness of all those connectors.",
+        "name": "connectorThickness or markerConnThickness - deprecated"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show or hide tooltip for all marker connectors present in a map. The default value is 1.",
+        "name": "showConnectorToolTip"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether the marker connector line should appear as dashed?",
+        "name": "connectorDashed or markerConnDashed - deprecated"
+      },
+      {
+        "type": "Number",
+        "range": "Pixels",
+        "description": "If marker connector line is to appear as dash, this attribute lets you set the dash length of each part of dash.",
+        "name": "connectorDashLen or markerConnDashLen - deprecated"
+      },
+      {
+        "type": "Number",
+        "range": "Pixels",
+        "description": "If marker connector line is to appear as dash, this attribute lets you set the dash gap of each part of dash.",
+        "name": "connectorDashGap or markerConnDashGap - deprecated"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "This attribute lets you to scale the markers automatically with respect to the map dimensions. By default, this attribute is set to 0.",
+        "name": "autoScaleMarkers"
+      },
+      {
+        "type": "Color",
+        "range": "0/1",
+        "description": "Using this attribute, you can specify the fill color for the marker shape (hex color code without #). If you specify a comma separated list of hex color codes (without #), FusionMaps XT will use those colors to form a gradient.",
+        "name": "markerFillColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Used to specify the fill alpha. In case of gradients, you'll need to specify a comma separated list of alpha.",
+        "name": "markerFillAlpha"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "If you're using gradient fills for the marker, this attribute lets you set the ratio (on a scale of 0-100) for the gradient component colors.",
+        "name": "markerFillRatio"
+      },
+      {
+        "type": "Number",
+        "range": "0-360",
+        "description": "If you're using gradient fills for the marker, this attribute lets you set the angle for the gradient.",
+        "name": "markerFillAngle"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Border alpha for the marker shape.",
+        "name": "markerBorderAlpha"
+      }
+    ],
+    "description": "FusionMaps XT allows user-defined markers on the map. Markers are custom defined points on the map, which help you pin-point locations like cities, houses, malls, junctions etc. Using the properties listed below, you can configure the various aspects of the markers."
+  },
+  {
+    "table": "The definition object (child of the markers object)",
+    "path": "definition",
+    "attrs": [
+      {
+        "type": "Alphanumeric",
+        "range": "",
+        "description": "Unique ID for the zone",
+        "name": "id"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Using this attribute, you can set the shape that this marker will assume on the map already defined. ",
+        "name": "shapeId"
+      },
+      {
+        "type": "Number",
+        "range": "",
+        "description": "Relative X-position of the marker.",
+        "name": "x"
+      },
+      {
+        "type": "Number",
+        "range": "",
+        "description": "Relative Y-position of the marker.",
+        "name": "y"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "You can over-ride the labels for each marker during its application. This label will over-ride the label specified during definition.",
+        "name": "label"
+      },
+      {
+        "type": "String",
+        "range": "LEFT, RIGHT, CENTER, TOP, BOTTOM",
+        "description": "Like label, you can also over-ride the label position for each marker during its application.",
+        "name": "labelPos"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "If you need to provide custom tool text for a marker, you can do so using this attribute.",
+        "name": "toolText"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "If you need your marker to link to other pages, when clicked, define the link here. The link can open in same window, new window, pop-up, frames, throw events etc. Please see `Drill Down Maps` section for more information on link format.",
+        "name": "link"
+      },
+      {
+        "type": "Number",
+        "range": "0-5",
+        "description": "If you're using the same shape (shapeId) to represent multiple markers on the map, you can have them differ in size using this attribute. This attributes set the scaling of a particular marker. Valid values are floating numbers between 0 and 5.",
+        "name": "scale"
+      },
+      {
+        "type": "number",
+        "range": "In pixels",
+        "description": "In case of arc, circle or polygon, this attribute lets you set the radius of the same. The value of the radius attribute in &lt;shape&gt; element overrides the value of this attribute.",
+        "name": "radius"
+      }
+    ],
+    "description": "The `markers` object is used to define and apply markers to a map. The `definition` object is used to define the zones on the map within which the markers will be placed."
+  },
+  {
+    "table": "The application object (child of the markers object)",
+    "path": "application",
+    "attrs": [
+      {
+        "type": "Alphanumeric",
+        "range": "",
+        "description": "ID that matches the marker application to its definition. If you specify an ID which has not been defined previously, you'll see an error in the debug window.",
+        "name": "id"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Using this attribute, you can set the shape that this marker will assume on the map. FusionMaps XT offers 4 default shapes - circle, arc, triangle or diamond. You can also define your custom shapes and then refer to those.",
+        "name": "shapeId"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "You can over-ride the labels for each marker during its application. This label will over-ride the label specified during definition.",
+        "name": "label"
+      },
+      {
+        "type": "String",
+        "range": "LEFT, RIGHT, CENTER, TOP, BOTTOM",
+        "description": "Like label, you can also over-ride the label position for each marker during its application.",
+        "name": "labelPos"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "If you need to provide custom tool text for a marker, you can do so using this attribute.",
+        "name": "toolText"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "If you need your marker to link to other pages, when clicked, define the link here. The link can open in same window, new window, pop-up, frames, throw events etc. Please see \"Drill Down Maps\" section for more information on link format.",
+        "name": "link"
+      },
+      {
+        "type": "Number",
+        "range": "0-5",
+        "description": "If you're using the same shape (shapeId) to represent multiple markers on the map, you can have them differ in size using this attribute. This attributes set the scaling of a particular marker. Valid values are floating numbers between 0 and 5.",
+        "name": "scale"
+      }
+    ],
+    "description": "The `markers` object is used to define and apply markers to a map. The `application` object is used to map markers shapes to zones on the map."
+  },
+  {
+    "table": "The shapes object (child of the markers object)",
+    "path": "shapes",
+    "attrs": [
+      {
+        "type": "Alphanumeric",
+        "range": "",
+        "description": "Each shape needs to be given a unique Id. During application, you'll directly refer to the ID of each shape to plot it on the map.",
+        "name": "id"
+      },
+      {
+        "type": "String",
+        "range": "CIRCLE, ARC, POLYGON, IMAGE",
+        "description": "type specifies what kind of shape the marker will draw as. Valid values are circle, arc, polygon or image. So, if you want to create a pentagon, select polygon for this attribute and then later set sides to 5.",
+        "name": "type"
+      },
+      {
+        "type": "String",
+        "range": "URL",
+        "description": "If you're using an image marker shape, you necessarily need to specify it's URL. FusionMaps XT can load GIF, JPEG and PNG files from the same sub-domain only (owing to cross browser security restrictions).",
+        "name": "url"
+      },
+      {
+        "type": "Number",
+        "range": "3-20",
+        "description": "If you've opted to plot a polygon shaped marker, you can specify the number of sides the polygon will have, using this attribute. Valid values are 3-20.",
+        "name": "sides"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "This attribute lets you configure the alpha of the entire marker.",
+        "name": "alpha"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "This attribute lets you set the distance (in pixels) between your marker shape and the marker label.",
+        "name": "labelPadding"
+      },
+      {
+        "type": "Color",
+        "range": "In Pixels",
+        "description": "Using this attribute, you can specify the fill color for the marker shape (hex color code without #). If you specify a comma separated list of hex color codes (without #), FusionMaps XT will use those colors to form a gradient.",
+        "name": "fillColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Used to specify the fill alpha. In case of gradients, you'll need to specify a comma separated list of alpha.",
+        "name": "fillAlpha"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "If you're using gradient fills for the marker, this attribute lets you set the ratio (on a scale of 0-100) for the gradient component colors.",
+        "name": "fillRatio"
+      },
+      {
+        "type": "Number",
+        "range": "0-360",
+        "description": "If you're using gradient fills for the marker, this attribute lets you set the angle for the gradient.",
+        "name": "fillAngle"
+      },
+      {
+        "type": "String",
+        "range": "LINEAR, RADIAL",
+        "description": "If you're using gradient fills for the marker, this attribute lets you set the pattern for gradient - valid values are `linear` or `radial`.",
+        "name": "fillPattern"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show border for the marker shape?",
+        "name": "showBorder"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Border color for the marker shape.",
+        "name": "borderColor"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Border thickness for the marker shape.",
+        "name": "borderThickness"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Border alpha for the marker shape.",
+        "name": "borderAlpha"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "In case of arc, circle or polygon, this attribute lets you set the radius of the same.",
+        "name": "radius"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "In case of arc, this attribute lets you set the inner radius of the same.",
+        "name": "innerRadius"
+      },
+      {
+        "type": "Number",
+        "range": "0-360",
+        "description": "In case of arc or polygon, this attribute lets you set the starting draw angle.",
+        "name": "startAngle"
+      },
+      {
+        "type": "Number",
+        "range": "0-360",
+        "description": "In case of arc, this attribute lets you set the ending draw angle.",
+        "name": "endAngle"
+      },
+      {
+        "type": "Number",
+        "range": "0-1000",
+        "description": "This attribute lets you dynamically re-scale the x-scale of your images after they've been loaded. Valid range is 0-1000.",
+        "name": "xScale"
+      },
+      {
+        "type": "Number",
+        "range": "0-1000",
+        "description": "This attribute lets you dynamically re-scale the y-scale of your images after they've been loaded. Valid range is 0-1000.",
+        "name": "yScale"
+      },
+      {
+        "type": "String",
+        "range": "TOP, MIDDLE, BOTTOM",
+        "description": "When using an image marker, you can specify how the image will vertically align with respect to the marker's y position using this attribute. Valid values are `top`, `middle` and `bottom`. For markers which are simple icons, you can use the middle vertical align. In that case, the image will vertically be at the center position of the marker. However, if you've an image icon like a pin-point or a needle with its pointer faced downwards, you'll need to set the vertical alignment position to `top`, so that the pointer exactly points to the given marker location. Horizontally, the images are always aligned centrally.",
+        "name": "vAlign"
+      }
+    ],
+    "description": "The `markers` object is used to define and apply markers to a map. The `shapes` object is used to define the shapes that will be applied as markers."
+  },
+  {
+    "table": "The connectors object (child of the markers object)",
+    "path": "connectors",
+    "attrs": [
+      {
+        "type": "String",
+        "range": "",
+        "description": "Id of the marker from where the connector will start.",
+        "name": "from"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Id of the marker where the connector will end.",
+        "name": "to"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Each connector can also link to an external URL. For this attribute, you can specify the link for the connector in FusionCharts Link format.",
+        "name": "link"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Each connector can have a visible text label. This attribute lets you set the text.",
+        "name": "label"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "If you want to set a custom tool text for the connectors, this attribute lets you do so.",
+        "name": "toolText"
+      },
+      {
+        "type": "Number",
+        "range": "0-10",
+        "description": "Thickness of the connector line.",
+        "name": "thickness"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Color of the connector line.",
+        "name": "color"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Alpha (transparency) of the connector line.",
+        "name": "alpha"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether the connector line should appear as dashed?",
+        "name": "dashed"
+      },
+      {
+        "type": "Number",
+        "range": "0-10",
+        "description": "If the connector line is to appear as dashed, this attribute defines the length of each dashed line.",
+        "name": "dashLen"
+      },
+      {
+        "type": "Number",
+        "range": "0-10",
+        "description": "If the connector line is to appear as dashed, this attribute defines the gap between each dashed line.",
+        "name": "dashGap"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Lets you enable hover effect for this specific connector",
+        "name": "showHoverEffect"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "Color for this specific connector on hover",
+        "name": "hoverColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Alpha for this specific connector on hover",
+        "name": "hoverAlpha"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Border thickness for this specific connector on hover",
+        "name": "hoverThickness"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show tooltip for the connector. Default value is 1.",
+        "name": "showToolTip"
+      }
+    ],
+    "description": "The `markers` object is used to define and apply markers to a map. The `connectors` object is used to draw connectors to connect markers to other markers or marker labels."
+  },
+  {
+    "table": "The entityDef object",
+    "path": "entityDef",
+    "attrs": [
+      {
+        "type": "String",
+        "range": "",
+        "description": "The internal and default ID of any entity of the map.",
+        "name": "internalId"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "The new ID of any entity of the map which overrides the internal ID.",
+        "name": "newId"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "The short descriptive name of an entity.",
+        "name": "sName"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "The long descriptive name of an entity.",
+        "name": "lName"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Lets you enable hover effect for this specific entity",
+        "name": "showHoverEffect"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Sets the value for maginifying an entity's border when the entity is hovered upon",
+        "name": "entityBorderHoverThickness"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "Fill color for the specific entity on hover",
+        "name": "fillHoverColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Alpha for the specific entity on hover",
+        "name": "fillHoverAlpha"
+      },
+      {
+        "type": "Comma separated Numbers",
+        "range": "Sums up to 100",
+        "description": "If hover color is defined as a gradient using, this attribute lets you specify the distribution of those colors in a ratio that should sum to 100",
+        "name": "fillHoverRatio"
+      },
+      {
+        "type": "Number",
+        "range": "0-360",
+        "description": "Fill angle for the specific entity on hover",
+        "name": "fillHoverAngle"
+      }
+    ],
+    "description": "FusionMaps XT allows you to redefine the ID, short name, and long name of an entity, using the `entityDef` object. This object contains the following attributes:"
+  },
+  {
+    "table": "The colorRange object",
+    "path": "colorRange",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Whether to show Gradient Legend. Default value is 0.",
+        "name": "gradient"
+      },
+      {
+        "type": "Number",
+        "range": "",
+        "description": "Sets the minimum value or the lower limit of the numeric range and Gradient Legend.",
+        "name": "minValue"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Specifies the starting color of the lower limit of Gradient Legend.",
+        "name": "code"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Starting opacity of Gradient Legend. Default value is 100.",
+        "name": "alpha"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Specifies the label for the lower limit of Gradient Legend.",
+        "name": "startLabel"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Specifies the label for the upper limit of Gradient Legend.",
+        "name": "endLabel"
+      }
+    ],
+    "description": "The `colorRange` object is used to define ranges for categorizing entities on a map based on their data values. This object contains the attributes to define the range scale. __Note__: The `colorRange` object is not used to collectively configure all ranges; the `color` object (child of the `colorRange` object) is used to do that."
+  },
+  {
+    "table": "The color object (child of the `colorRange` object)",
+    "path": "color",
+    "attrs": [
+      {
+        "type": "Number",
+        "range": "",
+        "description": "Lower limit of range.",
+        "name": "minValue"
+      },
+      {
+        "type": "Number",
+        "range": "",
+        "description": "Upper limit of range.",
+        "name": "maxValue"
+      },
+      {
+        "type": "String",
+        "range": "",
+        "description": "Text representation of range (to be shown in legend).",
+        "name": "displayValue"
+      },
+      {
+        "type": "Color",
+        "range": "Hex Color Code",
+        "description": "Hex color code (without #) for the range.",
+        "name": "code"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Transparency (0-100) for the entities belonging to that range.",
+        "name": "alpha"
+      }
+    ],
+    "description": "The `color` object is used to define individual ranges using the following attributes:"
+  },
+  {
+    "table": "Hover effects",
+    "attrs": [
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Lets you enable hover effect for entities and markers in the map",
+        "name": "showHoverEffect"
+      },
+      {
+        "type": "Boolean",
+        "range": "0/1",
+        "description": "Lets you enable hover effect just for entities on the map",
+        "name": "showEntityHoverEffect"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "Specifies the fill color for a map entity  on hover",
+        "name": "entityFillHoverColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Specifies the alpha for a map entity on hover",
+        "name": "entityFillHoverAlpha"
+      },
+      {
+        "type": "Comma separated Numbers",
+        "range": "Sums up to 100",
+        "description": "Specifies the fill ratio for an map entity on hover",
+        "name": "entityFillHoverRatio"
+      },
+      {
+        "type": "Number",
+        "range": "0-360",
+        "description": "Specifies the fill angle for a map entity on hover",
+        "name": "entityFillHoverAngle"
+      },
+      {
+        "type": "Color",
+        "range": "N/A",
+        "description": "Specifies the fill color for a map marker on hover",
+        "name": "markerFillHoverColor"
+      },
+      {
+        "type": "Number",
+        "range": "0-100",
+        "description": "Specifies the fill alpha for a map marker on hover",
+        "name": "markerFillHoverAlpha"
+      },
+      {
+        "type": "Number",
+        "range": "0-360",
+        "description": "Specifies the fill angle for a map marker on hover",
+        "name": "markerFillHoverAngle"
+      },
+      {
+        "type": "Comma separated Numbers",
+        "range": "Sums up to 100",
+        "description": "Specifies the fill ratio for a map marker on hover",
+        "name": "markerFillHoverRatio"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Specifies the border thickness for a map marker on hover",
+        "name": "markerBorderHoverThickness"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "Specifies the border color for a map marker on hover",
+        "name": "markerBorderHoverColor"
+      },
+      {
+        "type": "Number (1-100)",
+        "range": "In Pixels",
+        "description": "Specifies the border alpha for a map marker on hover",
+        "name": "markerBorderHoverAlpha"
+      },
+      {
+        "type": "Color",
+        "range": "",
+        "description": "Specifies the fill color for a map connector on hover",
+        "name": "connectorHoverColor"
+      },
+      {
+        "type": "Number",
+        "range": "In Pixels",
+        "description": "Specifies the border thickness for a map connector on hover",
+        "name": "connectorHoverThickness"
+      },
+      {
+        "type": "Number",
+        "range": "0 -100",
+        "description": "Specifies the border alpha for a map connector on hover",
+        "name": "connectorHoverAlpha"
+      }
+    ],
+    "description": "The hover effect attributes let you customize the resultant effect on the entities when the mouse pointer is hovered over them."
+  }
 ]

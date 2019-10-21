@@ -4,131 +4,66 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.13.0.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.14.0.
 
-## Updated Options Menu
+## Top plot border of an area chart
 
-The **restore** and **submit** button in select-scatter and drag-able chart has been moved to options menu. From v3.13.0 if you want to restore or submit your chart, click on the respective option in the options menu at the top right corner of the canvas.
+In area charts, you can now draw the borders of the data plots only at the top of an area plot.
 
-The options menu looks like shown below:
+The image below shows the border only at the top of an area plot.
 
-![Change Axis Limits](/gif/standard-charts-drag-able-charts-gif-1.gif)
+![Top Plot Border](/images/area-chart-drawfullareaborder-top.png)
 
-Following is the list of attributes which have been replaced with new ones:
+To know more click [here](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart).
 
-Old Attribute|New Attribute
---|--
-`showFormBtn` (deprecated)|`enableSubmit`
-`formBtnTitle` (deprecated)|`submitText`
-`showRestoreBtn` (deprecated)|`enableRestore`
-`restoreBtnTitle` (deprecated)|`restoreText`
+You can also configure the top border of a particular data plot in an area chart with multiple data plots.
 
-## Inversed Data Plot
+Take a look at the image given below:
 
-The inverse y-axis charts are similar to the normal column charts, except that the y-axis in these charts are inverted. The lower limit and upper limit value positions are swapped in the inverse y-axis chart. In v3.13.0 inverse chart comes with a new appearance, i.e., the data plots (column and area) will now appear from the top of the canvas.
+![Multi-Series Area Chart](/images/draw-full-area-border-multi-series-area-chart.png)
 
-> The inverse data plots (column and area) will be applicable to the charts with positive y-axis range (> = 0).  
+To know more click [here](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart).
 
-The new visualization of the inverse chart looks like:
+## Inherit plot border color of an area chart
 
-{% embed_all changed-behavior-inverse-charts-example-1.js %}
+FusionCharts Suite now allows you to set the border color of the area chart by inheriting the plot color.
 
-> If you like to view the chart as in older version (3.12.2), contact [support@fusioncharts.com](support@fusioncharts.com).
+The chart looks like as shown below:
 
-## Secondary Data Plots overlap Primary Data Plots
+{% embed_chart chart-configurations-area-plot-inherit-border-example-10.js %}
 
-From version 3.13.0 visualization of dual y-axis multi-series chart is changed. Now, if the data plots for both the axes are set as column, the secondary plots overlaps the primary plots.
+Click [here](/chart-guide/chart-configurations/data-plot#inherit-plot-border-color-of-an-area-chart) to know more.
 
-The multi-series chart with both the data plots set as column looks like:
+## Set the radius as a percent value
 
-{% embed_all changed-behavior-multi-series-example-2.js %}
+You can now set the radius of the pie chart in percent by setting the value of `pieRadius` attribute. When you set the value of `pieRadius` in percent, the radius of the pie is calculated with respect to the chart canvas space.
 
-> If you like to view the chart as in older version (3.12.2), contact [support@fusioncharts.com](support@fusioncharts.com).
+Refer to the image shown below:
 
-## npm Package Updated for Angular
+![Percent Value on Pie Chart](/images/percent-value-in-pie-radius.png)
 
-From v3.13.0, following packages for angular has been remaned:
+Click [here](http://jsfiddle.net/fusioncharts/7g15v0nq/) to know more.
 
-* `angular-fusioncharts` has been renamed to `angularjs-fusioncharts`.
+In the doughnut chart, you can apply the `pieRadius` attribute to set the radius of the upper threshold of the doughnut chart.
 
-Install `angularjs-fusioncharts` wrapper using following command:
+Refer to the image below:
 
-```
-npm install angularjs-fusioncharts --save
-```
+![Percent Value on Doughnut Chart](/images/pie-radius-in-doughnut-chart.png)
 
-* `angular2-fusioncharts` has been renamed to `angular-fusioncharts`.
+Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) to know more.
 
-Install `angular-fusioncharts` wrapper using following command:
+<h4>Deprecated</h4>
 
-```
-npm install angular-fusioncharts --save
-```
+- Following is the list of deprecated attributes:
 
-* `angular4-fusioncharts` has been renamed to `angular-fusioncharts`.
+  - `placeXAxisLabelsOnTop`
 
-Install `angular-fusioncharts` wrapper using following command:
+- Treemap specific attributes:
 
-```
-npm install angular-fusioncharts --save
-```
+  - `labelGlow`
 
-## Updated FusionCharts Suite XT Download Package 
+  - `labelGlowIntensity`
 
-Since, v3.13.0 the FusionCharts Suite XT download package folder structure is updated. The downloaded package will now contain a folder named **integrations**. This folder consists all the front end and server side wrappers under respective folders with their native export handlers if applicable. The folder structure of the downloaded package is shown below:
+  - `labelGlowColor`
 
-![Folder Structure](/gif/upgrading-plugins.gif)
-
-## Removed Attributes and Methods
-
-Following are the list of attributes which have been removed from the FusionCharts XT Suite:
-
-* `Annrenderdelay`
-
-* `btnTextColor`
-
-* `btnFontSize`
-
-* `formBtnWidth`
-
-* `formBtnBorderColor`
-
-* `formBtnBgColor`
-
-* `btnPadding`
-
-* `btnSpacing`
-
-* `restoreBtnWidth`
-
-* `restoreBtnBorderColor`
-
-* `restoreBtnBgColor`
-
-* `clickBubbles`
-
-* The deprecated methods `getXML()` & `setDataXML()` have been removed.
-
-* The deprecated method `setCurrentRenderer()` has been removed.
-
-* The method `getChartFromId()` has been removed. Use `getObjectReference()` instead.
-
-* The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
-
-## Deprecated
-
-* `showFormBtn` (deprecated)
-
-* `formBtnTitle` (deprecated)
-
-* `showRestoreBtn` (deprecated)
-
-* `restoreBtnTitle` (deprecated)
-
-* `setTransparent()` method is deprecated. Use `containerBackgroundOpacity` instead.
-
-* `ref` property is deprecated. Use `getObjectReference()` instead.
-
-* `dataXMLInvalid` event is deprecated. Use `dataInvalid` instead.
-
-* `Fusioncharts.Version` is deprecated.
+  - `labelGlowRadius`
