@@ -1769,6 +1769,103 @@
                         }
                     ]
                 },
+                {
+                    "title": "Error Scatter Chart",
+                    "children": [{
+                            "title": "Error Scatter Chart anatomy",
+                            "path": "/understanding-fusioncharts/error-scatter-chart-anatomy"
+                        },
+                        {
+                            "title": "Create Error Scatter Charts",
+                            "path": "/chart-guide/standard-charts/error-scatter-chart-anatomy"
+                        },
+                        {
+                            "title": "Chart configurations",
+                            "children": [{
+                                    "title": "Change size",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Border & background",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Fonts",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Number formats",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Chart pallets",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Load external logo",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Padding & Margin",
+                                    "path": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Chart components",
+                            "children": [{
+                                    "title": "Caption & sub-caption",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Canvas",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Data plot",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Anchors",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Y-axis",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "X-axis",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Trendlines & Trendzones",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Tooltips",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Toolbar",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Legend",
+                                    "path": ""
+                                },
+                                {
+                                    "title": "Div lines & grids",
+                                    "path": ""
+                                }
+
+                            ]
+                        },
+                        {
+                            "title": "List of attributes",
+                            "path": ""
+                        }
+                    ]
+                },
 				{
 					"title": "Funnel Chart",
 					"children": [{
