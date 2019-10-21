@@ -1579,11 +1579,11 @@
                     "title": "Error Line Chart",
                     "children": [{
                             "title": "Error Line Chart Anatomy",
-                            "path": "/understanding-fusioncharts/error-line-chart-anatomy"
+                            "path": "/understanding-fusioncharts/error-line-chart"
                         },
                         {
                             "title": "Create Error Line Charts",
-                            "path": "/chart-guide/standard-charts/error-line-chart-anatomy"
+                            "path": "/chart-guide/standard-charts/error-line-charts"
                         },
                         {
                             "title": "Chart configurations",
@@ -1676,11 +1676,11 @@
                     "title": "Error Bar Chart",
                     "children": [{
                             "title": "Error Bar Chart anatomy",
-                            "path": "/understanding-fusioncharts/error-bar-chart-anatomy"
+                            "path": "/understanding-fusioncharts/error-bar-chart"
                         },
                         {
                             "title": "Create Error Bar Charts",
-                            "path": "/chart-guide/standard-charts/error-bar-chart-anatomy"
+                            "path": "/chart-guide/standard-charts/error-bar-charts"
                         },
                         {
                             "title": "Chart configurations",
@@ -1773,11 +1773,11 @@
                     "title": "Error Scatter Chart",
                     "children": [{
                             "title": "Error Scatter Chart anatomy",
-                            "path": "/understanding-fusioncharts/error-scatter-chart-anatomy"
+                            "path": "/understanding-fusioncharts/error-scatter-chart"
                         },
                         {
                             "title": "Create Error Scatter Charts",
-                            "path": "/chart-guide/standard-charts/error-scatter-chart-anatomy"
+                            "path": "/chart-guide/standard-charts/error-scatter-charts"
                         },
                         {
                             "title": "Chart configurations",
