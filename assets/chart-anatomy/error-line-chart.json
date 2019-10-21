@@ -4,7 +4,7 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "Column Chart",
+            "itemHeader": "Error Line Chart",
             "imgSrc": "error-line-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
