@@ -219,7 +219,6 @@ Create the `ScrollLineChart.aspx.cs` file and do the following:
 * Optionally, set the chart theme as `fusion`.
 * Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
-
 The code is shown below:
 
 <div class="code-wrapper">
