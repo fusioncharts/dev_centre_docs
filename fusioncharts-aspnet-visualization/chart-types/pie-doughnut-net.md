@@ -30,21 +30,20 @@ Create the `PieChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
-* Retrieve data using database query.
-* Set server name.
-* Set `DataBase` name.
-* Connect with `DataBase` using a connection string.
-* Create `StaticSource` using the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
+* Add two columns and multiple rows to the `DataTable`.
 * Add `DataSource` to the `DataModel`.
-* Instantiate Pie Chart.
-* Set Chart's width and height.
+* Instantiate Pie chart.
+* Set chart `width` and `height`.
 * Set `DataModel` instance as the data source of the chart.
-* Set Chart title.
-* Finally, use a container using `<div>` to render the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
 
+```
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='csharp'>C#</a></li>
@@ -156,6 +155,7 @@ End Namespace
 </div>
 </div>
 </div>
+```
 
 The `.aspx` template for the above sample is shown below:
 
@@ -183,8 +183,29 @@ The `.aspx` template for the above sample is shown below:
 
 ## Doughnut Chart
 
-Now, let's learn how to create a doughnut chart with the same data. The code remains the same as that of the Pie chart. The only difference is instead of instantiating a pie chart you have to instantiate a doughnut chart. Create a `doughnutChart.aspx.cs` and refer to the code below:
+Now, let's learn how to create a doughnut chart with the same data. The code remains the same as that of the Pie chart. The only difference is instead of instantiating a pie chart you have to instantiate a doughnut chart. 
 
+## Render the Chart
+
+Create a `doughnutChart.aspx.cs` and do the following:
+
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
+* Create an instance of `DataModel` class.
+* Add two columns and multiple rows to the `DataTable`.
+* Add `DataSource` to the `DataModel`.
+* Instantiate Doughnut chart.
+* Set chart `width` and `height`.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
+
+```
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='csharp'>C#</a></li>
@@ -296,6 +317,7 @@ End Namespace
 </div>
 </div>
 </div>
+```
 
 The `.aspx` template for the above sample is shown below:
 
