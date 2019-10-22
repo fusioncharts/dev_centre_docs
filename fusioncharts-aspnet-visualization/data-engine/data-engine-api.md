@@ -276,7 +276,7 @@ The code is given below:
 model.Culture = new CultureInfo("en-us");
 ``` 
 
-To set the date format of the `model`, set the maximum year (till which the dates will be returned in `yy` format) to the `Calendar`.
+To set the maximum year till which the dates will be returned with the year in `yy` format, set the `year` value to `TwoDigitYearMax` under `Calendar`.
 
 The code is given below:
 
