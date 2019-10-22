@@ -43,7 +43,6 @@ Create the `PieChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='csharp'>C#</a></li>
@@ -123,7 +122,6 @@ Imports System.Web.UI.WebControls
 Namespace FusionChartsVisualisationWebFormsSamples.Samples
     Public Partial Class ThreeDChart
         Inherits System.Web.UI.Page
-
         Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
             Dim ChartData As DataTable = New DataTable()
             ChartData.Columns.Add("Programming Language", GetType(System.String))
@@ -204,7 +202,6 @@ Create a `doughnutChart.aspx.cs` and do the following:
 
 The code is shown below:
 
-
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='csharp'>C#</a></li>
@@ -284,7 +281,6 @@ Imports System.Web.UI.WebControls
 Namespace FusionChartsVisualisationWebFormsSamples.Samples
     Public Partial Class ThreeDChart
         Inherits System.Web.UI.Page
-
         Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
             Dim ChartData As DataTable = New DataTable()
             ChartData.Columns.Add("Programming Language", GetType(System.String))
