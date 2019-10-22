@@ -223,7 +223,7 @@ Applies predefined themes to the chart. FusionCharts.Net visualization ships wit
 visualizationObj.Theme = FusionChartsTheme.ThemeName.FUSION //Fusion Theme is applied
 ```
 
-### Exception Handling
+### `Exception Handling`
 
 The three properties of the Exception handling is listed below:
 
