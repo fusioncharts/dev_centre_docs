@@ -43,7 +43,7 @@ Create the `PieChart.aspx.cs` file and do the following:
 
 The code is shown below:
 
-```
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='csharp'>C#</a></li>
@@ -155,7 +155,6 @@ End Namespace
 </div>
 </div>
 </div>
-```
 
 The `.aspx` template for the above sample is shown below:
 
@@ -205,7 +204,7 @@ Create a `doughnutChart.aspx.cs` and do the following:
 
 The code is shown below:
 
-```
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='csharp'>C#</a></li>
@@ -317,7 +316,6 @@ End Namespace
 </div>
 </div>
 </div>
-```
 
 The `.aspx` template for the above sample is shown below:
 
