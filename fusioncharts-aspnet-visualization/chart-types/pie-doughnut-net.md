@@ -186,7 +186,6 @@ Now, let's learn how to create a doughnut chart with the same data. The code rem
 
 Create a `doughnutChart.aspx.cs` and do the following:
 
-
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
 * Create a `StaticSource` using the `DataTable`.

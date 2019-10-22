@@ -223,6 +223,16 @@ Applies predefined themes to the chart. FusionCharts.Net visualization ships wit
 visualizationObj.Theme = FusionChartsTheme.ThemeName.FUSION //Fusion Theme is applied
 ```
 
+### Exception Handling
+
+The three properties of the Exception handling is listed below:
+
+| Properties   | Type              | Snippet                                           |
+| ------------ | ----------------- | ------------------------------------------------- |
+| `Suppress`   | bool {set;}       | vizObj.Exceptions.Suppress = true;                |
+| `IsOccurred` | bool {get;}       | bool hasException = vizObj.Exceptions.IsOccurred; |
+| `Details`    | Exception {get; } | Exception e = vizObj.Exceptions.Details;          |
+
 ### `Height`
 
 Sets the height of the canvas.
