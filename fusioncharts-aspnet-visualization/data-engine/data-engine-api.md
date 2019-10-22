@@ -266,6 +266,25 @@ The code is given below:
 model.DataSourceDateformat = "MM/dd/yyyy hh:mm tt";
 ```
 
+## Set Culture
+
+To set the culture to `en-US`, set the `Culture` of the `model`.
+
+The code is given below:
+
+```csharp
+model.Culture = new CultureInfo("en-us");
+``` 
+
+To set the date format of the `model`, set the maximum year (till which the dates will be returned in `yy` format) to the `Calendar`.
+
+The code is given below:
+
+```csharp
+model.Culture.Calendar.TwoDigitYearMax = 2010;
+```
+
+
 ## Add Filter
 
 To apply filter to the data of the chart, set the properties of following filter instances:
