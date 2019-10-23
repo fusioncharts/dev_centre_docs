@@ -1,10 +1,10 @@
 ---
-title: Area chart | FusionCharts
+title: Area Chart | FusionCharts
 description: This article outlines the steps of how to create the area chart.
-heading: Area chart
+heading: Area Chart
 ---
 
-Now, let's learn how to create an Area Chart. We will create an Area chart showing "Weekly Liquor Sales". The data will look as shown below:
+Now, let's learn how to create an area chart. We will create an area chart showing "Weekly Liquor Sales". The data will look as shown below:
 
 | Day       | Sales(in USD) |
 | --------- | ------------- |

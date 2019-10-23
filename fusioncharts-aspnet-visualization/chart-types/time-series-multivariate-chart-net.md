@@ -25,7 +25,7 @@ The sample data for the above chart is shown in the table below:
 
 Click [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiVariate.csv) to view the full data.
 
-## Render the chart
+## Render the Chart
 
 Now that you have the data handy, let's build the chart.
 

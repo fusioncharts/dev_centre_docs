@@ -1,7 +1,7 @@
 ---
-title: Column and Bar charts | FusionCharts
-description: This article outlines the steps to create column and Bar charts
-heading: Column and Bar charts
+title: Column and Bar Charts | FusionCharts
+description: This article outlines the steps to create column and bar charts
+heading: Column and Bar Charts
 ---
 
 Let's create a Column 2D chart showing the "Most popular programming language".
@@ -26,7 +26,7 @@ The data for the above chart is shown in the table below:
 
 Now that you have the tabular data ready, let's see how to render the chart.
 
-## Render the chart
+## Render the Chart
 
 Create the `ColumnChart.aspx.cs` file and do the following:
 
@@ -192,7 +192,7 @@ The `.aspx` template for the above sample is shown below:
 </html>
 ```
 
-## Scroll Column chart
+## Scroll Column Chart
 
 Now, let's learn how to create a Scrollable Column Chart. We will create a chart showcasing sales trends of a company in the Financial Year 2016-17. The data will look as shown below:
 
@@ -417,7 +417,7 @@ The `.aspx` template for the above sample is shown below:
 </html>
 ```
 
-## Overlapped charts
+## Overlapped Charts
 
 Now, let's learn how to create an Overlapped Chart. We will create a chart showcasing Major League Baseball Rankings. The data will look as shown below:
 

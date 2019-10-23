@@ -8,15 +8,15 @@ Combination charts can be rendered either in 2D or 3D, can have single or dual y
 
 In this page, we will learn how to create the following combination charts:
 
-- 2D Single Y-axis Combination Chart
+* 2D Single Y-axis Combination Chart
 
-- 3D Single Y-axis Combination Chart
+* 3D Single Y-axis Combination Chart
 
-- 2D Dual Y-axis Combination Chart
+* 2D Dual Y-axis Combination Chart
 
-- Scroll Combination 2D Chart (Single Y)
+* Scroll Combination 2D Chart (Single Y)
 
-- Scroll Combination 2D Chart (Dual Y)
+* Scroll Combination 2D Chart (Dual Y)
 
 ## 2D Single Y-axis Combination Chart
 
@@ -49,25 +49,25 @@ Click [here](https://dotnetfiddle.net/Tkf2vq) to edit the column chart.
 
 Create the `CombinationChart.aspx.cs` file and do the following:
 
-- Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files.
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files.
 
-- Create `DataTable`.
+* Create `DataTable`.
 
-- Create an object of `JsonFileSource`. Provide file path as constructor parameter.
+* Create an object of `JsonFileSource`. Provide file path as constructor parameter.
 
-- Add `json` source in datasources store of model.
+* Add `json` source in datasources store of model.
 
-- Initialize combination chart object.
+* Initialize combination chart object.
 
-- Set model as the data source
+* Set model as the data source
 
-- Provide field name as column, line or area plot for the combination chart.
+* Provide field name as column, line or area plot for the combination chart.
 
-- Set chart's **caption**, **sub-caption**, **width** and **height**.
+* Set chart's **caption**, **sub-caption**, **width** and **height**.
 
-- Set the **theme** of the chart.
+* Set the **theme** of the chart.
 
-- Finally, use a container using `<div>` to render the chart.
+* Finally, use a container using `<div>` to render the chart.
 
 The code is shown below:
 
@@ -278,36 +278,36 @@ namespace TestProject
             ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
             ViewData["Message"] = "Single Y-axis Combination Chart 3D";
 
-            // initialixe DataModel object
+            // Initialize DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
             JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi3d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
-            // initialize combination chart object
+            // Initialize combination chart object
             Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombi3d");
             // Set threeD
             combiChart.ThreeD = true;
-            // set model as data source
+            // Set model as data source
             combiChart.Data.Source = model;
-            // provide field name, which should be rendered as line column
+            // Provide field name, which should be rendered as line column
             combiChart.Data.ColumnPlots("Actual Revenue");
-            // provide field name, which should be rendered as line plot
+            // Provide field name, which should be rendered as line plot
             combiChart.Data.LinePlots("Projected Revenue");
-            // provide field name, which should be rendered as area plot
+            // Provide field name, which should be rendered as area plot
             combiChart.Data.AreaPlots("Profit");
             // Set XAxis caption
             combiChart.XAxis.Text = "Month";
             // Set YAxis caption
             combiChart.PrimaryYAxis.Text = "Amount (in USD)";
-            // set chart caption
+            // Set chart caption
             combiChart.Caption.Text = "Harrys's Supermart";
             // Set chart sub caption
             combiChart.SubCaption.Text = "Sales analysis of last year";
-            // set width, height
+            // Set width, height
             combiChart.Width.Pixel(600);
             combiChart.Height.Pixel(500);
-            // set theme
+            // Set theme
             combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             // Render chart
             Literal1.Text = combiChart.Render();
@@ -490,30 +490,30 @@ namespace TestProject
             // set model as data source
             combiChart.Data.Source = model;
 
-            // provide field name, which should be rendered as line column
+            // Provide field name, which should be rendered as line column
             combiChart.Data.ColumnPlots("Revenues");
-            // provide field name, which should be rendered as spline area plot
+            // Provide field name, which should be rendered as spline area plot
             combiChart.Data.SplineAreaPlots("Profits");
-            // provide field name, which should be rendered as spline plot
+            // Provide field name, which should be rendered as spline plot
             combiChart.Data.SplinePlots("Profit %");
-            // set parentAxis
+            // Set parentAxis
             combiChart.Data.SecondaryYAxisAsParent("Profit %");
             // Set XAxis caption
             combiChart.XAxis.Text = "Month";
             // Set YAxis caption
             combiChart.PrimaryYAxis.Text = "Amount (in USD)";
-            // enable dual y
+            // Enable dual y
             combiChart.DualY = true;
-            // set secondary y axis text
+            // Set secondary y axis text
             combiChart.SecondaryYAxis.Text = "Profit %";
-            // set chart caption
+            // Set chart caption
             combiChart.Caption.Text = "Revenues and Profit";
             // Set chart sub caption
             combiChart.SubCaption.Text = "For last year";
-            // set width, height
+            // Set width, height
             combiChart.Width.Pixel(600);
             combiChart.Height.Pixel(500);
-            // set theme
+            // Set theme
             combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             // Render chart
             Literal1.Text = combiChart.Render();
@@ -655,7 +655,7 @@ Create a `CombinationChart.aspx.cs` file and do the following:
 * Create an object of `JsonFileSource` with the JSON file path.
 * Add `JsonFileSource` as data source to the `DataModel`.
 * Instantiate Combination Chart.
-* Set chart width and height.
+* Set chart `width` and `height`.
 * Set `DataModel` instance as the data source of the chart.
 * Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
 * Optionally, set the chart theme as `fusion`.
@@ -695,36 +695,36 @@ namespace TestProject
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            // initialixe DataModel object
+            // Initialize DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
             JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombi2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
-            // initialize combination chart object
+            // Initialize combination chart object
             Charts.CombinationChart combiChart = new Charts.CombinationChart("scrollcombi2d");
-            // set model as data source
+            // Set model as data source
             combiChart.Data.Source = model;
-            // enable scrolling
+            // Enable scrolling
             combiChart.Scrollable = true;
-            // provide field name, which should be rendered as line column
+            // Provide field name, which should be rendered as line column
             combiChart.Data.ColumnPlots("Actual Revenue");
-            // provide field name, which should be rendered as spline area plot
+            // Provide field name, which should be rendered as spline area plot
             combiChart.Data.SplinePlots("Projected Revenue");
-            // provide field name, which should be rendered as spline plot
+            // Provide field name, which should be rendered as spline plot
             combiChart.Data.SplineAreaPlots("Profit");
             // Set XAxis caption
             combiChart.XAxis.Text = "Month";
             // Set YAxis caption
             combiChart.PrimaryYAxis.Text = "Amount (in USD)";
-            // set chart caption
+            // Set chart caption
             combiChart.Caption.Text = "Revenues and Profit";
             // Set chart sub caption
             combiChart.SubCaption.Text = "For last year";
-            // set width, height
+            // Set width, height
             combiChart.Width.Pixel(600);
             combiChart.Height.Pixel(500);
-            // set theme
+            // Set theme
             combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             // Render chart
             Literal1.Text = combiChart.Render();
@@ -938,42 +938,42 @@ namespace TestProject
             ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
             ViewData["Message"] = "Dual Y-axis Scroll Combination Chart 2D";
 
-            // initialixe DataModel object
+            // Initialize DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
             JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/scrollcombidy2d.json");
             // Add json source in datasources store of model
             model.DataSources.Add(jsonFileSource);
-            // initialize combination chart object
+            // Initialize combination chart object
             Charts.CombinationChart combiChart = new Charts.CombinationChart("scrollcombidy2d");
-            // set model as data source
+            // Set model as data source
             combiChart.Data.Source = model;
             // Enable scrolling
             combiChart.Scrollable = true;
-            // provide field name, which should be rendered as line column
+            // Provide field name, which should be rendered as line column
             combiChart.Data.ColumnPlots("Revenues");
-            // provide field name, which should be rendered as spline area plot
+            // Provide field name, which should be rendered as spline area plot
             combiChart.Data.AreaPlots("Profits");
-            // provide field name, which should be rendered as spline plot
+            // Provide field name, which should be rendered as spline plot
             combiChart.Data.LinePlots("Profit %");
-            // set parentAxis
+            // Set parentAxis
             combiChart.Data.SecondaryYAxisAsParent("Profit %");
             // Set XAxis caption
             combiChart.XAxis.Text = "Month";
             // Set YAxis caption
             combiChart.PrimaryYAxis.Text = "Amount (in USD)";
-            // enable dual y
+            // Enable dual y
             combiChart.DualY = true;
-            // set secondary y axis text
+            // Set secondary y axis text
             combiChart.SecondaryYAxis.Text = "Profit %";
-            // set chart caption
+            // Set chart caption
             combiChart.Caption.Text = "Revenues and Profit";
             // Set chart sub caption
             combiChart.SubCaption.Text = "For last year";
-            // set width, height
+            // Set width, height
             combiChart.Width.Pixel(600);
             combiChart.Height.Pixel(500);
-            // set theme
+            // Set theme
             combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
             // Render chart
             Literal1.Text = combiChart.Render();
