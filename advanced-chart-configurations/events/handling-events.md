@@ -10,8 +10,8 @@ FusionCharts Suite XT includes an exhaustive set of events that let you interact
 
 To configure events for charts, you need to:
 
-* Decide the event you want to configure and the response you want when it is triggered
-* Create an event listener that ‘listens’ for the event being triggered and executes the required response
+- Decide the event you want to configure and the response you want when it is triggered
+- Create an event listener that ‘listens’ for the event being triggered and executes the required response
 
 This article describes how events in FusionCharts Suite XT are handled.
 
@@ -33,15 +33,17 @@ To configure the `renderComplete` event for the column 2D chart, first define th
 
 A listener function is a JavaScript function that accepts two optional arguments: `eventObj` and `eventArgs`. These arguments receive information specific to the event to which the listener is attached.
 
-<p class='text-info'>
-For more details on the arguments passed to the event listeners, read the [FusionCharts API reference for event listeners](/api/fusioncharts/fusioncharts-typedefs#eventlistener).
-</p>
+> For more details on the arguments passed to the event listeners, read the [FusionCharts API reference for event listeners](/api/fusioncharts/fusioncharts-typedefs#eventlistener).
 
 The code snippet to define an event listener is shown below:
 
 ```javascript
-var myEventListener = function (eventObj, eventArgs) {
-   console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
+var myEventListener = function(eventObj, eventArgs) {
+  console.log(
+    eventObj.eventType +
+      " was raised by the chart whose ID is " +
+      eventObj.sender.id
+  );
 };
 ```
 
@@ -52,24 +54,19 @@ This is done using the `addEventListener()` function, available on every instanc
 
 For the `renderComplete` event in the above example, the listener is added right before the chart is rendered.
 
-<p class='text-info'>
-It is not mandatory for all events to be registered before the `renderComplete` event is called. They can be registered just before you need to call them.
-</p>
+> It is not mandatory for all events to be registered before the `renderComplete` event is called. They can be registered just before you need to call them.
 
 The `addEventListener()` function takes the following two parameters:
 
-| Parameter | Type | Description|
-| --------- | :----| :----------|
-| `type` | string, Array[string] | The name of the event to which a listener will be attached. The event name is not case sensitive. To register multiple events in the same registration call, provide them as an array of event names. |
-| `listener` | [FusionCharts~eventListener](/api/fusioncharts/fusioncharts-typedefs#eventlistener) | The listener function that will be executed when the event is fired. |
-
+| Parameter  | Type                                                                                | Description                                                                                                                                                                                           |
+| ---------- | ----------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`     | string, Array[string]                                                               | The name of the event to which a listener will be attached. The event name is not case sensitive. To register multiple events in the same registration call, provide them as an array of event names. |
+| `listener` | [FusionCharts~eventListener](/api/fusioncharts/fusioncharts-typedefs#eventlistener) | The listener function that will be executed when the event is fired.                                                                                                                                  |
 
 Once the listener function is defined, the line of code shown below is used to attach the listener function to the event:
 
 ```javascript
-...
 revenueChart.addEventListener(“renderComplete”, myEventListener);
-...
 ```
 
 Your column 2D chart is now configured to listen to the `renderComplete` event.
@@ -78,56 +75,59 @@ Your column 2D chart is now configured to listen to the `renderComplete` event.
 
 Open the JavaScript console (the listener function is configured to log a message in the console) to see the following message:
 
-__renderComplete event was raised by the chart whose ID is chartobject-2.__
+**renderComplete event was raised by the chart whose ID is chartobject-2.**
 
 The complete data structure of the chart, with the listener definition, is given below:
 
 ```javascript
-
-FusionCharts.ready(function () {
+FusionCharts.ready(function() {
   var revenueChart = new FusionCharts({
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '400',
-        height: '300',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption": "Quarterly Revenue for FY2013-2014",
-                "subCaption": "Harry's SuperMart",
-                "xAxisName": "Quarter",
-                "yAxisName": "Revenue",
-                "numberPrefix": "$",
-                "theme": "fusion"
-            },
-            "data": [
-                {
-                    "label": "Q1",
-                    "value": "420000"
-                },
-                {
-                    "label": "Q2",
-                    "value": "810000"
-                },
-                {
-                    "label": "Q3",
-                    "value": "720000"
-                },
-                {
-                    "label": "Q4",
-                    "value": "550000"
-                }
-            ]
-
-            }
-    });
-
-    var myEventListener = function (eventObj, eventArgs) {console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
-      };
-
-    revenueChart.addEventListener("renderComplete", myEventListener);
-    revenueChart.render();
+    type: "column2d",
+    renderAt: "chart-container",
+    width: "400",
+    height: "300",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Quarterly Revenue for FY2013-2014",
+        subCaption: "Harry's SuperMart",
+        xAxisName: "Quarter",
+        yAxisName: "Revenue",
+        numberPrefix: "$",
+        theme: "fusion"
+      },
+      data: [
+        {
+          label: "Q1",
+          value: "420000"
+        },
+        {
+          label: "Q2",
+          value: "810000"
+        },
+        {
+          label: "Q3",
+          value: "720000"
+        },
+        {
+          label: "Q4",
+          value: "550000"
+        }
+      ]
+    }
   });
+
+  var myEventListener = function(eventObj, eventArgs) {
+    console.log(
+      eventObj.eventType +
+        " was raised by the chart whose ID is " +
+        eventObj.sender.id
+    );
+  };
+
+  revenueChart.addEventListener("renderComplete", myEventListener);
+  revenueChart.render();
+});
 ```
 
 ### Embedding the Listener Function Inside the Event Listener
@@ -137,11 +137,13 @@ In the example above, the listener function is defined separately using the `myE
 This is how the code will then be re-written:
 
 ```javascript
-...
 revenueChart.addEventListener("renderComplete", function(eventObj, eventArgs) {
-   console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
+  console.log(
+    eventObj.eventType +
+      " was raised by the chart whose ID is " +
+      eventObj.sender.id
+  );
 });
-...
 ```
 
 ### Passing Event Listeners During Chart Creation
@@ -151,14 +153,11 @@ Another more unified way to pass all event listeners for a chart is to do so whi
 The `renderComplete` event for the above column 2D chart can thus be configured as:
 
 ```javascript
-...
- events:{
-            'renderComplete': function(eventObj, args) {
-               console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
-            }
-        }
-
-...
+events:{
+    'renderComplete': function(eventObj, args) {
+        console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
+    }
+}
 ```
 
 ## Listening to Events Triggered for All Charts on a Page
@@ -168,20 +167,22 @@ Events can be attached to the `windows.FusionCharts` object. Attaching events to
 Add the following code lines to the JS code for the above column 2D chart configured for the `renderComplete` event:
 
 ```javascript
-...
 FusionCharts.addEventListener("renderComplete", function(eventObj, eventArgs) {
-   console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
+  console.log(
+    eventObj.eventType +
+      " was raised by the chart whose ID is " +
+      eventObj.sender.id
+  );
 });
-...
 ```
 
 When the JavaScript console is opened on a page with multiple charts, a list of messages in the console show that the`renderComplete` event has been triggered for all charts on the page.
 
 ## Listening to Multiple Events Triggered for One Chart
-To listen to multiple events for one chart __using just one event listener__, use the code snippet shown below:
+
+To listen to multiple events for one chart **using just one event listener**, use the code snippet shown below:
 
 ```javascript
-...
 var myEventListener = function (eventObj, eventArgs) {
    console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
 };
@@ -192,7 +193,6 @@ myChart.addEventListener("renderComplete", myEventListener);
 myChart.addEventListener("disposed", myEventListener);
 
 });
-...
 ```
 
 The above code configures four events, to be triggered during different stages of the chart’s lifecycle.
@@ -202,59 +202,61 @@ To optimize the above code, the last four lines of event attachment can be reduc
 This is how the revised code then looks:
 
 ```javascript
-...
-revenueChart.addEventListener(["initialized",
-   "dataUpdated",
-   "renderComplete",
-   "disposed"], function (eventObj, eventArgs) {
-   console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
-});
-...
+revenueChart.addEventListener(
+  ["initialized", "dataUpdated", "renderComplete", "disposed"],
+  function(eventObj, eventArgs) {
+    console.log(
+      eventObj.eventType +
+        " was raised by the chart whose ID is " +
+        eventObj.sender.id
+    );
+  }
+);
 ```
 
 ## Cancelling Event Listeners
+
 The `preventDefault()` function is used to cancel the execution of the listener function of an event. The function is used with the `eventObj` parameter—`eventObj.preventDefault()`—of the listener function.
 
 For example, if you were to use this function with the `beforeRender` event of the chart, the result will be that the chart won’t render.
 
 ## Removing Event Listeners
+
 To curb needless memory consumption by charts on a page, it is advisable to remove all event listeners that are not required.
 
 The two functions that you can use to remove event listeners are:
 
-* `removeEventListener()`
-* `detachHandler()`
+- `removeEventListener()`
+- `detachHandler()`
 
 ### The `removeEventListener()` Function
+
 Event listeners attached globally on all charts can be removed by calling the `removeEventListener()` function on the `FusionCharts` object.
 
 The `removeEventListener()` function takes the following two parameters:
 
-| Parameter | Type | Description|
-| --------- | :----| :----------|
-| `type` | string, Array[string] | The name of the event whose listener has to be removed. To remove listeners for multiple events (using the same listener) at once, provide the event names as an array. |
-| `listener` | function | The listener function that will be removed. |
+| Parameter  | Type                  | Description                                                                                                                                                             |
+| ---------- | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`     | string, Array[string] | The name of the event whose listener has to be removed. To remove listeners for multiple events (using the same listener) at once, provide the event names as an array. |
+| `listener` | function              | The listener function that will be removed.                                                                                                                             |
 
 ### The `detachHandler()` Function
 
 The `detachHandler()` function is used to remove/stop a listener from listening to an event.
 
-One of the applications of this function is  to restrict listening to an event only for the first instance of trigger.
+One of the applications of this function is to restrict listening to an event only for the first instance of trigger.
 
 The code snippet below shows how you can use this function:
 
 ```javascript
-...
-var func = function (eventObj) {
-   console.log("Data was updated for the first time in chart");
-   // Call detachHandler to stop listening to this event
-   eventObj.detachHandler(a, b);
+var func = function(eventObj) {
+  console.log("Data was updated for the first time in chart");
+  // Call detachHandler to stop listening to this event
+  eventObj.detachHandler(a, b);
 };
 
 revenueChart.addEventListener("dataUpdated", func);
-
 revenueChart.addEventListener("renderComplete", func);
-...
 ```
 
 The above code executes the listener when the `dataUpdated` event is triggered for the first time; after this execution, the listener detaches itself from the event.

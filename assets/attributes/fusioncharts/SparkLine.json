@@ -53,7 +53,7 @@
         "name": "paletteThemeColor"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -836,7 +836,7 @@
         "name": "anchorImagePadding"
       }
     ],
-    "description": "In line charts, anchors (or marker points) are polygons which appear at the joint of two consecutive line points. These are indicators to show the position of data points. The anchors handle tool tips and links for the data points. So, if you opt to not render anchors on a chart, the tool tips and links won't function. You can, however, hide them by setting alpha to 0 and still enable tool tips and links. In area charts, anchors are set transparent by default. In case you wish to show the anchor, use anchorAlpha=&quot;100&quot; attribute. You can customize all the facets of anchors using the properties below."
+    "description": "In line charts, anchors (or marker points) are polygons which appear at the joint of two consecutive line points. These are indicators to show the position of data points. The anchors handle tool tips and links for the data points. So, if you opt to not render anchors on a chart, the tool tips and links won't function. You can, however, hide them by setting alpha to 0 and still enable tool tips and links. In area charts, anchors are set transparent by default. In case you wish to show the anchor, use anchorAlpha=\"100\" attribute. You can customize all the facets of anchors using the properties below."
   },
   {
     "table": "Open, close, high & low properties",
@@ -1507,7 +1507,7 @@
         "name": "displayValue"
       },
       {
-        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see &quot;Drill-Down &gt; Using JavaScript Functions as Links&quot; for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
+        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see \"Drill-Down &gt; Using JavaScript Functions as Links\" for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
         "range": "",
         "type": "String",
         "name": "link"

@@ -14,9 +14,9 @@ These attributes are defined using the code structure shown below:
 
 ```json
 {
-    "annotations": {
-        // Define the general configuration attributes here.
-    }
+  "annotations": {
+    // Define the general configuration attributes here.
+  }
 }
 ```
 
@@ -75,11 +75,13 @@ These attributes are defined using the code structure shown below:
 
 ```json
 {
-    "annotations": {
-        "groups": [{
-            //Define the group configuration attributes here.
-        }]
-    }
+  "annotations": {
+    "groups": [
+      {
+        //Define the group configuration attributes here.
+      }
+    ]
+  }
 }
 ```
 
@@ -551,7 +553,7 @@ You can segregate attributes for annotation items into two types, common (which 
     </tr>
 </table>
 
-### Iamges
+### Images
 
 <table>
     <tr>
@@ -598,7 +600,7 @@ Use the following macros to position annotations within charts and gauges:
 
 - Position annotations around a legend using the `$legendStartX`, `$legendStartY`, `$legendEndX`, `$legendEndY`, `$legendWidth`, and `$legendHeight` macros. Note that these macros are only applicable to Cartesian charts.
 
-- Position annotations around gauges using the `$gaugeStartX`, `$gaugeStartY`, `$gaugeEndX`, `$gaugeEndY`, `$gaugeCenterX`, and `$gaugeCenterY` macros. 
+- Position annotations around gauges using the `$gaugeStartX`, `$gaugeStartY`, `$gaugeEndX`, `$gaugeEndY`, `$gaugeCenterX`, and `$gaugeCenterY` macros.
 
 - Position annotations with respect to the start angle and end angle of an angular gauge, using the `$gaugeStartAngle` and `$gaugeEndAngle` macros respectively.
 
@@ -608,46 +610,46 @@ Use the following macros to position annotations within charts and gauges:
 
 - Position annotations with respect to half-width of the entire funnel or pyramid plot, using the `$plotSemiWidth` macro.
 
-## Use sub-token macros to position annotations 
+## Use sub-token macros to position annotations
 
 Use the following sub-token macros to position annotations with respect to datasets and axes:
 
-### $dataset
+### \$dataset
 
-Use the $dataset macro to add the position information of the plots in a dataset to the annotation. You can apply the "dataset_index [separator] set [separator] set_index [separator] position_key" sub token to the macro. 
+Use the \$dataset macro to add the position information of the plots in a dataset to the annotation. You can apply the "dataset_index [separator] set [separator] set_index [separator] position_key" sub token to the macro.
 
-Possible values you can assign to the position_key include `X`, `Y`, `STARTX`, `STARTY`, `ENDX`, `ENDY`, `CENTERX`, and `CENTERY`. 
+Possible values you can assign to the position_key include `X`, `Y`, `STARTX`, `STARTY`, `ENDX`, `ENDY`, `CENTERX`, and `CENTERY`.
 
 For example, you can use the following values to position a rectangle above the second column in a column chart:
 
-- x:$dataset.0.set.1.STARTX
+- x:\$dataset.0.set.1.STARTX
 
-- y:$dataset.0.set.1.STARTY
+- y:\$dataset.0.set.1.STARTY
 
-- tox:$dataset.0.set.1.STARTX+100
+- tox:\$dataset.0.set.1.STARTX+100
 
-- toy:$dataset.0.set.1.STARTY-40
+- toy:\$dataset.0.set.1.STARTY-40
 
-### $yaxis
+### \$yaxis
 
-Use the $yaxis macro to add the position information of the y-axis labels to the annotation. You can apply the "yaxis_index [separator] label [separator] label_index [separator] position_key" sub token to the macro.
+Use the \$yaxis macro to add the position information of the y-axis labels to the annotation. You can apply the "yaxis_index [separator] label [separator] label_index [separator] position_key" sub token to the macro.
 
 Possible values you can assign to the position_key include `X`, `Y`, `STARTX`, `STARTY`, `ENDX`, `ENDY`, `CENTERX`, and `CENTERY`.
 
 For example, you can position a text on the y axis, using the following values:
 
-- x: $yaxis.0.label.1.startx -12
+- x: \$yaxis.0.label.1.startx -12
 
-- y: $yaxis.0.label.0.starty - 5
+- y: \$yaxis.0.label.0.starty - 5
 
-### $xaxis
+### \$xaxis
 
-Use the $xaxis macro to add the position information of the x-axis labels to the annotation. You can apply the "xaxis_index [separator] label [separator] label_index [separator] position_key" sub-token to the macro.
+Use the \$xaxis macro to add the position information of the x-axis labels to the annotation. You can apply the "xaxis_index [separator] label [separator] label_index [separator] position_key" sub-token to the macro.
 
 Possible values you can assign to the position_key are the same as the ones you can use with the `$yaxis` macro.
 
 For example, you can position a text on the x axis, using the following values:
 
-- x: $xaxis.label.1.startx+2
+- x: \$xaxis.label.1.startx+2
 
-- y: $xaxis.label.0.starty+3
+- y: \$xaxis.label.0.starty+3

@@ -32,18 +32,17 @@ Create the `FirstChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
-* Retrieve data using database query.
-* Set server name.
-* Set `DataBase` name.
-* Retrieve data from database and store it in a `DataTable` object.
+* 
 * Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
+* Add two columns and multiple rows to the `DataTable`.
 * Add `DataSource` to the `DataModel`.
 * Instantiate Column Chart
 * Set chart width and height
 * Set `DataModel` instance as the data source of the chart.
-* Set chart title.
-* Finally, use a container using `<div>` to render the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
 
