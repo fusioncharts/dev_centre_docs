@@ -28,18 +28,16 @@ Create the `AreaChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
-* Retrieve data using database query.
-* Set server name.
-* Set `DataBase` name.
-* Connect with `DataBase` using a connection string.
-* Create `StaticSource` using the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
+* Add two columns and multiple rows to the `DataTable`.
 * Add `DataSource` to the `DataModel`.
-* Instantiate Area Chart.
-* Set chart width and height.
+* Instantiate Area chart.
+* Set chart `width` and `height`.
 * Set `DataModel` instance as the data source of the chart.
-* Set chart caption.
-* Finally, use a container using `<div>` to render the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
 
@@ -183,9 +181,27 @@ The `.aspx` template for the above sample is shown below:
 
 ## Scroll Area Chart
 
-Now, let's learn how to create a Scrollable Area Chart. The code remains the same as that of the scroll line chart. The only difference is instead of instantiating a linne chart you have to instantiate an area chart. Create a `ScrollAreaChart.aspx.cs` and refer to the code below:
+Now, let's learn how to create a Scrollable Area Chart. The code remains the same as that of the scroll line chart. The only difference is instead of instantiating a linne chart you have to instantiate an area chart. 
 
 ## Render the Chart
+
+Create a `ScrollAreaChart.aspx.cs` file and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
+* Create an instance of `DataModel` class.
+* Add two columns and multiple rows to the `DataTable`.
+* Add `DataSource` to the `DataModel`.
+* Instantiate Area chart.
+* Set chart `width` and `height`.
+* Set the `Scrollable` property of the chart to `true`.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
