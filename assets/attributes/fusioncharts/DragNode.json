@@ -40,7 +40,7 @@
         "name": "palette"
       },
       {
-        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (that is, column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma, for example, `&quot;paletteColors&quot;: &quot;#FF0000, #0372AB, #FF5904...&quot;`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
+        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (that is, column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma, for example, `\"paletteColors\": \"#FF0000, #0372AB, #FF5904...\"`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
         "range": "List of hex color codes separated by comma",
         "type": "String",
         "name": "paletteColors"
@@ -127,7 +127,7 @@
         "name": "clickURLOverridesPlotLinks"
       },
       {
-        "description": "When you right click on the chart it shows a context menu. This attribute allows you to show or hide the &quot;Print&quot; option in the context menu.",
+        "description": "When you right click on the chart it shows a context menu. This attribute allows you to show or hide the \"Print\" option in the context menu.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -648,7 +648,7 @@
         "name": "formTarget"
       },
       {
-        "description": "Lets you configure the text for the submit option. By default, it is &quot;Submit&quot;.",
+        "description": "Lets you configure the text for the submit option. By default, it is \"Submit\".",
         "range": " ",
         "type": "String",
         "name": "submitText"
@@ -666,13 +666,13 @@
         "name": "enableRestore"
       },
       {
-        "description": "Lets you configure the text for the restore option. By default, it's &quot;Restore&quot;",
+        "description": "Lets you configure the text for the restore option. By default, it's \"Restore\"",
         "range": "",
         "type": "String",
         "name": "restoreText"
       }
     ],
-    "description": "The drag-node charts allow you to submit the updated data on chart to a form (or JavaScript functions). Using the attributes below, you can configure the form and submit option in menu. The drag chart also allows a &quot;Restore Chart&quot; option whose properties can be configured using the attributes listed below. "
+    "description": "The drag-node charts allow you to submit the updated data on chart to a form (or JavaScript functions). Using the attributes below, you can configure the form and submit option in menu. The drag chart also allows a \"Restore Chart\" option whose properties can be configured using the attributes listed below. "
   },
   {
     "table": "Chart Titles and Axis Names",
@@ -2671,7 +2671,7 @@
         "name": "label"
       },
       {
-        "description": "For Multi-series and Combination charts, you can define the color of data-sets at dataset level. However, if you wish to highlight a particular data element, you can specify it's color at &quot;set&quot; level using this attribute. ",
+        "description": "For Multi-series and Combination charts, you can define the color of data-sets at dataset level. However, if you wish to highlight a particular data element, you can specify it's color at \"set\" level using this attribute. ",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "color"
@@ -2689,7 +2689,7 @@
         "name": "toolText"
       },
       {
-        "description": "You can define the alpha of data-sets at dataset level. However, if you wish to highlight a particular data element, you can specify it's alpha at &quot;set&quot; level using this attribute.",
+        "description": "You can define the alpha of data-sets at dataset level. However, if you wish to highlight a particular data element, you can specify it's alpha at \"set\" level using this attribute.",
         "range": "0-100",
         "type": "Number",
         "name": "alpha"
