@@ -32,10 +32,10 @@ Create the `ColumnChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
 * Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
-* Add two columns and multiple rows to the `DataTable`.
-* Add `DataSource` to the `DataModel`.
+* Add `StaticSource` as data source to the `DataModel`.
 * Instantiate Column Chart
 * Set chart width and height
 * Set `DataModel` instance as the data source of the chart.
@@ -235,10 +235,10 @@ Create the `ScrollColumnChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
 * Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
-* Add two columns and multiple rows to the `DataTable`.
-* Add `DataSource` to the `DataModel`.
+* Add `StaticSource` as data source to the `DataModel`.
 * Instantiate Column Chart
 * Set chart width and height
 * Set `DataModel` instance as the data source of the chart.
@@ -446,10 +446,10 @@ Create the `OverlappedChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
 * Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
-* Add two columns and multiple rows to the `DataTable`.
-* Add `DataSource` to the `DataModel`.
+* Add `StaticSource` as data source to the `DataModel`.
 * Instantiate Column or Bar chart.
 * Set chart `width` and `height`.
 * Set the `type` of column or bar chart as `overlapped`.
@@ -605,7 +605,26 @@ The `.aspx` template for the above sample is shown below:
 
 ## Bar Chart
 
-Now, let's learn how to create a bar chart with the same data. The code remains the same as that of the column chart. The only difference is instead of instantiating a column chart you have to instantiate a bar chart. Create a `barChart.aspx.cs` and refer to the code below:
+Now, let's learn how to create a bar chart with the same data. The code remains the same as that of the column chart. The only difference is instead of instantiating a column chart you have to instantiate a bar chart. 
+
+## Render the Chart
+
+Create a `barChart.aspx.cs` and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
+* Create an instance of `DataModel` class.
+* Add `StaticSource` as data source to the `DataModel`.
+* Instantiate Bar Chart
+* Set chart width and height
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

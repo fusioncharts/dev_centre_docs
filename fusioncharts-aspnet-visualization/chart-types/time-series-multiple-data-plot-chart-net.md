@@ -75,13 +75,13 @@ namespace FcTest
 
         public void ProcessRequest(HttpContext context)
         {
-            /* create DataModel instance */
+            /* Create DataModel instance */
             DataModel model = new DataModel();
 
-            /* create instance of MsSqlClass */
+            /* Create instance of CsvFileSource */
             CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiSeries.csv");
 
-            /* add msSql object to DataSources of model */
+            
             model.DataSources.Add(source);
 
             

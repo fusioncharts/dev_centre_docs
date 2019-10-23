@@ -31,21 +31,17 @@ Now that you have the data handy, let's build the chart.
 
 Create the `DataHandler.ashx` file and do the following:
 
-- Include the `FusionCharts.DataEngine.dll` file.
+* Include the `FusionCharts.DataEngine.dll` file.
 
-- Include the `FusionCharts.Visualization.dll` file.
+* Include the `FusionCharts.Visualization.dll` file.
 
-- Set response content type as "application/json".
+* Set response content type as "application/json".
 
-- Create an object of the `MsSqlClass`.
+* Create an object of the `DataModel` class.
 
-- Create an object of the `DataModel` class.
+* Convert the model to a data format the time series can accept.
 
-- Add the object of `MsSqlClass` to the data source of data model.
-
-- Convert the model to a data format the time series can accept.
-
-- Write the converted data into a JSON file.
+* Write the converted data into a JSON file.
 
 Refer to the code given below:
 
@@ -75,13 +71,13 @@ namespace FcTest
 
         public void ProcessRequest(HttpContext context)
         {
-            /* create DataModel instance */
+            
             DataModel model = new DataModel();
 
-            /* create instance of MsSqlClass */
+            
             CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesMultiVariate.csv");
 
-            /* add msSql object to DataSources of model */
+            
             model.DataSources.Add(source);
 
             
@@ -294,13 +290,12 @@ namespace FcTest
 
         public void ProcessRequest(HttpContext context)
         {
-            /* create DataModel instance */
             DataModel model = new DataModel();
 
-            /* create instance of MsSqlClass */
+            /* Create instance of CsvFileSource */
             CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/OnlineSalesMultiVariate.csv");
 
-            /* add msSql object to DataSources of model */
+            
             model.DataSources.Add(source);
 
             

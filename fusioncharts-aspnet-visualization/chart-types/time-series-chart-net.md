@@ -30,21 +30,21 @@ Now that you have the data handy, let's build the chart.
 
 Create the `DataHandler.ashx` file and do the following:
 
-- Include the `FusionCharts.DataEngine.dll` file.
+* Include the `FusionCharts.DataEngine.dll` file.
 
-- Include the `FusionCharts.Visualization.dll` file.
+* Include the `FusionCharts.Visualization.dll` file.
 
-- Set response content type as "application/json".
+* Set response content type as "application/json".
 
-- Create an object of the `MsSqlClass`.
+* Create an object of `CsvFileSource` with file path.
 
-- Create an object of the `DataModel` class.
+* Create an object of the `DataModel` class.
 
-- Add the object of `MsSqlClass` to the data source of data model.
+* Add the object of `CsvFileSource` to the data source of data model.
 
-- Convert the model to a data format the time series can accept.
+* Convert the model to a data format the time series can accept.
 
-- Write the converted data into a JSON file.
+* Write the converted data into a JSON file.
 
 Refer to the code given below:
 
@@ -74,13 +74,13 @@ namespace FcTest
 
         public void ProcessRequest(HttpContext context)
         {
-            /* create DataModel instance */
+            
             DataModel model = new DataModel();
 
-            /* create instance of MsSqlClass */
+            
             CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv");
 
-            /* add msSql object to DataSources of model */
+           
             model.DataSources.Add(source);
 
             
@@ -267,31 +267,9 @@ Refer to the code given below:
 /* create DataModel instance */
 DataModel model = new DataModel();
 
-/* create instance of MsSqlClass */
-MsSqlClass msSql = new MsSqlClass("server","database",FusionCharts.DataBaseClass.SourceType.QUERY,"query");
-
-/* add msSql object to DataSources of model */
-model.DataSources.Add(msSql);
-
-/* Want to apply operations */
-/* optional */
-/* create object of GroupColumn class */
-
-GroupColumn groupColumn = new GroupColumn
-{
-       {"SellStartDate",GroupColumn.DateGrouping.YEAR },
-       {"Color" }
-};
-
-/* create object of Aggregation class */
-Aggregation aggregation = new Aggregation
-{
-       {"UnitPrice",Aggregation.Function.MAX },
-       {"OrderQty",Aggregation.Function.COUNT }
- };
-
-/* apply GroupingWithAggregation() operation followed by TopRecords() */
-DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, aggregation).TopRecords(20);
+CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv");
+           
+model.DataSources.Add(source);
 
 /* invoke RenderCompatibleDataInJson() static method of  TimeSeriesData class*/
 /* it will return a JSON */
@@ -309,26 +287,10 @@ public ActionResult TimeSeriesDataHandler() {
 
 /* create DataModel instance */ 
 DataModel model = new DataModel();
-/* create instance of MsSqlClass */
-MsSqlClass msSql = new MsSqlClass("server","database",FusionCharts.DataBaseClass.SourceType.QUERY,"query");
-/* add msSql object to DataSources of model */
- model.DataSources.Add(msSql);
-/* Want to apply operations */
-/* optional */
-/* create object of GroupColumn class */
-GroupColumn groupColumn = new GroupColumn {
-       {"SellStartDate",GroupColumn.DateGrouping.YEAR },
-       {"Color" }
-};
 
-/* create object of Aggregation class */
-Aggregation aggregation = new Aggregation {
-       {"UnitPrice",Aggregation.Function.MAX },
-       {"OrderQty",Aggregation.Function.COUNT }
-};
+CsvFileSource source = new CsvFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusioncharts-net/OnlineSalesSingleSeries.csv");
 
-/* apply GroupingWithAggregation() operation followed by TopRecords() */
-DataModel groupingWithAggregation = model.GroupingWithAggregation(groupColumn, aggregation).TopRecords(20);
+model.DataSources.Add(source);
 
 /* invoke RenderCompatibleDataInJson() static method of  TimeSeriesData class*/
 /* it will return a json, return this json from your controller */

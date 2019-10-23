@@ -28,10 +28,10 @@ Create the `AreaChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
 * Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
-* Add two columns and multiple rows to the `DataTable`.
-* Add `DataSource` to the `DataModel`.
+* Add `StaticSource` as data source to the `DataModel`.
 * Instantiate Area chart.
 * Set chart `width` and `height`.
 * Set `DataModel` instance as the data source of the chart.
