@@ -3619,7 +3619,7 @@
     "description": "This pre-initialization event is fired every time a new instance of FusionCharts is created. It then triggers a number of modules that need to be setup on every instance of FusionCharts; the event can be used to perform any actions required to be completed before the initialization of each chart.\n Because this event is triggered upon instantiating a new FusionCharts object, it is impossible to listen to this event by adding an event listener to the chart. By the time the event listener is attached (using the `FusionCharts#addEventListener` method), the event will already have been already fired.\n However, there are alternate ways that can be used to listen to this event. You can listen to the FusionCharts global events, using the `FusionCharts.addEventListener` static method before even creating a new instance. The required instance of FusionCharts can then be identified from within the event handler by using `event.sender.id`. You can also pass the event listener for the correct event within the `events` object when creating an instance of FusionCharts",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-beforeInitialize"
     },
     "tags": {
       "action": "",
