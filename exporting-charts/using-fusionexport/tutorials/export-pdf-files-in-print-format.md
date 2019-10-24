@@ -54,6 +54,7 @@ The sample code to export PDF files in print format is given below:
     <li><a data-toggle="php">PHP</a></li>
     <li><a data-toggle="nodejs">Node.js</a></li>
     <li><a data-toggle="python">Python</a></li>
+
 </ul>
 
 <div class="tab-content">
@@ -67,12 +68,12 @@ using FusionCharts.FusionExport.Client; // Import sdk
 
 namespace FusionExportTest
 {
-    public static class ExportSingleChart
-    {
-        static void Main(string[] args)
-        {
-            string chartConfigFile = System.Environment.CurrentDirectory + "\\resources\\dashboard_charts.json";
-            string templateFilePath = System.Environment.CurrentDirectory + "\\resources\\template.html";
+public static class ExportSingleChart
+{
+static void Main(string[] args)
+{
+string chartConfigFile = System.Environment.CurrentDirectory + "\\resources\\dashboard_charts.json";
+string templateFilePath = System.Environment.CurrentDirectory + "\\resources\\template.html";
 
             // Instantiate the ExportManager class
             using (ExportManager exportManager = new ExportManager())
@@ -91,8 +92,10 @@ namespace FusionExportTest
             }
         }
     }
+
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab java-tab">
@@ -100,30 +103,31 @@ namespace FusionExportTest
 import com.fusioncharts.fusionexport.client.*; // import sdk
 
 public class ExportChart {
-    public static void main(String[] args) throws Exception {
+public static void main(String[] args) throws Exception {
 
-    
         String configPath = "fullpath/resources/static2/resources/multiple.json";
         String templatePath ="fullpath/resources/static2/resources/template.html";
 
         // Instantiate the ExportManager class
         ExportManager em = new ExportManager();
-        
+
         // Instantiate the ExportConfig class and add the required configurations
         ExportConfig config = new ExportConfig();
         config.set("chartConfig", configPath);
         config.set("templateFilePath", templatePath);
         config.set("type", "pdf");
         config.set("templateFormat", "letter");
-        
+
         String[] files = em.export(config,".",true);
-        
+
         for(String f : files) {
             System.out.println(f);
         }
     }
+
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab php-tab">
@@ -132,18 +136,17 @@ public class ExportChart {
 
 // Exporting a dashboard
 
-require __DIR__ . '/../vendor/autoload.php';
+require **DIR** . '/../vendor/autoload.php';
 // Use the sdk
 use FusionExport\ExportManager;
 use FusionExport\ExportConfig;
 
 // Instantiate the ExportConfig class and add the required configurations
 $exportConfig = new ExportConfig();
-$exportConfig->set('chartConfig', realpath(__DIR__ . '/resources/multiple.json'));
+$exportConfig->set('chartConfig', realpath(**DIR** . '/resources/multiple.json'));
 $exportConfig->set('templateFilePath', realpath(__DIR__ . '/resources/template.html'));
 $exportConfig->set('type', 'pdf');
-$exportConfig->set('templateFormat', 'letter');
-
+\$exportConfig->set('templateFormat', 'letter');
 
 // Instantiate the ExportManager class
 $exportManager = new ExportManager();
@@ -151,10 +154,11 @@ $exportManager = new ExportManager();
 $files = $exportManager->export($exportConfig, '.', true);
 
 foreach ($files as $file) {
-    echo $file . "\n";
+echo \$file . "\n";
 }
 ?>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab nodejs-tab">
@@ -184,29 +188,33 @@ exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
 <pre><code class="language-python">
 #!/usr/bin/env python
 
-from fusionexport import ExportManager, ExportConfig  # Import sdk
+from fusionexport import ExportManager, ExportConfig # Import sdk
 
 # Instantiate the ExportConfig class and add the required configurations
+
 export_config = ExportConfig()
 
 export_config["chartConfig"] = "dashboard_charts.json"
 
 export_config["templateFilePath"] = "template.html"
 export_config["type"] = "pdf"
-export_config["templateWidth"] = 1200
-export_config["templateHeight"] = 1800
-
+export_config["templateFormat"] = "letter"
 
 # Provide port and host of FusionExport Service
+
 export_server_host = "127.0.0.1"
 export_server_port = 1337
 
 # Instantiate the ExportManager class
+
 em = ExportManager(export_server_host, export_server_port)
+
 # Call the export() method with the export config and the output location
+
 exported_files = em.export(export_config, "./exports", True)
 #print(exported_files)
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -898,14 +906,15 @@ The HTML template for the above code is given below:
   </body>
 </html>
 ```
+
 <div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
 
 ## Related Resources
 
 After you have exported the chart in PDF, we recommend learning how to:
 
-* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+- [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
 
-* [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+- [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+- [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
