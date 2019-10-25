@@ -11,8 +11,8 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "66.5%",
-                  "topPosition": "2.5%",
+                  "leftPosition": "30.5%",
+                  "topPosition": "5.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
