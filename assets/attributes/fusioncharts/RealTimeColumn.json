@@ -41,7 +41,7 @@
         "name": "paletteThemeColor"
       },
       {
-        "description": "The `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of dataplots (i.e., column, line, area etc.). The `paletteThemeColor` attribute allows to specify your own palette derived from a particular hex color that is applied to chart background, canvas, font, tool-tips and also dataplots. Using `paletteColors` attribute, you can specify your custom list of hex colors for the dataplots only. The list of colors have to be separated by comma e.g., `&quot;paletteColors&quot;: &quot;#FF0000, #0372AB, #FF5904...&quot;`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
+        "description": "The `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of dataplots (i.e., column, line, area etc.). The `paletteThemeColor` attribute allows to specify your own palette derived from a particular hex color that is applied to chart background, canvas, font, tool-tips and also dataplots. Using `paletteColors` attribute, you can specify your custom list of hex colors for the dataplots only. The list of colors have to be separated by comma e.g., `\"paletteColors\": \"#FF0000, #0372AB, #FF5904...\"`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
         "range": "List of hex color codes separated by comma",
         "type": "String",
         "name": "paletteColors"
@@ -53,7 +53,7 @@
         "name": "showRTMenuItem"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -1362,7 +1362,7 @@
         "name": "messageLogShowTitle"
       },
       {
-        "description": "If you've opted to show the title for message logger, you can define your custom title here. Examples are &quot;Error log&quot;, &quot;Server History&quot; etc. The title displays at the top left corner of chart.",
+        "description": "If you've opted to show the title for message logger, you can define your custom title here. Examples are \"Error log\", \"Server History\" etc. The title displays at the top left corner of chart.",
         "range": "0/1",
         "type": "String",
         "name": "messageLogTitle"
@@ -2787,13 +2787,13 @@
     "path": "data",
     "attrs": [
       {
-        "description": "For multi-series charts, you can define the alpha of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its alpha at &quot;set&quot; level using this attribute.",
+        "description": "For multi-series charts, you can define the alpha of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its alpha at \"set\" level using this attribute.",
         "range": "0 - 100",
         "type": "Number",
         "name": "alpha"
       },
       {
-        "description": "For multi-series charts, you can define the color of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its color at &quot;set&quot; level using this attribute. ",
+        "description": "For multi-series charts, you can define the color of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its color at \"set\" level using this attribute. ",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "color"
@@ -2817,7 +2817,7 @@
         "name": "showValue"
       },
       {
-        "description": "By default, FusionWidgets XT shows the &quot;`label`, `value`&quot; as tooltip text for that data item. But, if you want to display more information for the data item as tooltip, you can use this attribute to specify the same.",
+        "description": "By default, FusionWidgets XT shows the \"`label`, `value`\" as tooltip text for that data item. But, if you want to display more information for the data item as tooltip, you can use this attribute to specify the same.",
         "range": "",
         "type": "String",
         "name": "toolText"

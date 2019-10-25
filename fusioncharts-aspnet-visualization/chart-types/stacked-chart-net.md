@@ -64,22 +64,19 @@ Click [here](https://dotnetfiddle.net/RqWwld) to edit the stacked chart.
 
 Create the `StackedChart.aspx.cs` file and do the following:
 
-- Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files.
-- Create `DataTable`.
-- Retrieve data using database query.
-- Set server name.
-- Set `DataBase` name.
-- Connect with `DataBase` using a connection string.
-- Create `StaticSource` using the data table.
-- Create an instance of `DataModel` class.
-- Add `DataSource` to the `DataModel`.
-- Instantiate Stacked Chart.
-- Set chart width.
-- Set chart height.
-- Set the type of stacked chart as `BAR`, `COLUMN`, or `AREA`.
-- Set `DataModel` instance as the data source of the chart.
-- Set Chart title.
-- Finally, use a container using `<div>` to render the chart.
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
+* Create an instance of `DataModel` class.
+* * Add `DataSource` to the `DataModel`.
+* Instantiate Stacked chart.
+* Set chart `width` and `height`.
+* Set the type of stacked chart as `BAR`, `COLUMN`, or `AREA`.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
 

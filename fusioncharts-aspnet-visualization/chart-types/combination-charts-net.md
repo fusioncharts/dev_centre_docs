@@ -229,7 +229,20 @@ CodeBehind="CombinationChart.aspx.cs" Inherits="TestProject.TestPage" %>
 
 Now, let's learn how to create a 3D single y-axis combination chart with the same data. The code remains the same as that of the above chart. The only difference is instead of instantiating a 2D chart you have to instantiate a 3D chart.
 
-Create a `CombinationChart.aspx.cs` and refer to the code below:
+Create a `CombinationChart.aspx.cs` and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create an object of DataModel.
+* Create an object of `JsonFileSource` with the JSON file path.
+* Add `JsonFileSource` as data source to the `DataModel`.
+* Instantiate Combination Chart.
+* Set chart width and height.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -420,7 +433,20 @@ The chart will look as shown below:
 
 Click [here](https://dotnetfiddle.net/fjhtVY) to edit the column chart.
 
-Create a `CombinationChart.aspx.cs` file and refer to the code below:
+Create a `CombinationChart.aspx.cs` file and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create an object of DataModel.
+* Create an object of `JsonFileSource` with the JSON file path.
+* Add `JsonFileSource` as data source to the `DataModel`.
+* Instantiate Combination Chart.
+* Set chart width and height.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -453,9 +479,6 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
-            ViewData["Message"] = "Dual Y-axis Combination Chart 2D";
-
             // initialize DataModel object
             DataModel model = new DataModel();
             // Create object of JsonFileSource. Provide file path as constructor parameter
@@ -625,7 +648,20 @@ The chart will look as shown below:
 
 Click [here](https://dotnetfiddle.net/y6MTkR) to edit the column chart.
 
-Create a `CombinationChart.aspx.cs` file and refer to the code below:
+Create a `CombinationChart.aspx.cs` file and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create an object of DataModel.
+* Create an object of `JsonFileSource` with the JSON file path.
+* Add `JsonFileSource` as data source to the `DataModel`.
+* Instantiate Combination Chart.
+* Set chart width and height.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -658,8 +694,6 @@ namespace TestProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ViewData["Title"] = "FusionCharts asp.net csharp wrapper samples in MVC6";
-            ViewData["Message"] = "Single Y-axis Scroll Combination Chart 2D";
 
             // initialixe DataModel object
             DataModel model = new DataModel();
@@ -826,7 +860,20 @@ The chart will look as shown below:
 
 Click [here](https://dotnetfiddle.net/MuaI7i) to edit the column chart.
 
-Create a `CombinationChart.aspx.cs` file and refer to the code below:
+Create a `CombinationChart.aspx.cs` file and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create an object of DataModel.
+* Create an object of `JsonFileSource` with the JSON file path.
+* Add `JsonFileSource` as data source to the `DataModel`.
+* Instantiate Combination Chart.
+* Set chart width and height.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

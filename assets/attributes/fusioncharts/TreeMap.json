@@ -22,7 +22,7 @@
         "name": "useEllipsesWhenOverflow"
       },
       {
-        "description": "When you right click on the chart it shows a context menu. This attribute allows you to show or hide the &quot;Print&quot; option in the context menu.",
+        "description": "When you right click on the chart it shows a context menu. This attribute allows you to show or hide the \"Print\" option in the context menu.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"

@@ -265,6 +265,26 @@ Chart Type|JavaScript Alias|
 [Azerbaijan](/maps/spec-sheets/azerbaijan)|maps/azerbaijan|
 [Bangladesh](/maps/spec-sheets/bangladesh)|maps/bangladesh|
 [Bhutan](/maps/spec-sheets/bhutan)|maps/bhutan|
+[Bumthang](/maps/spec-sheets/bumthang)|maps/bumthang|
+[Chukha](/maps/spec-sheets/chukha)|maps/chukha|
+[Tsirang](/maps/spec-sheets/tsirang)|maps/tsirang|
+[Dagana](/maps/spec-sheets/dagana)|maps/dagana|
+[Gasa](/maps/spec-sheets/gasa)|maps/gasa|
+[Sarpang](/maps/spec-sheets/sarpang)|maps/sarpang|
+[Haa](/maps/spec-sheets/haa)|maps/haa|
+[Lhuntse](/maps/spec-sheets/lhuntse)|maps/lhuntse|
+[Mongar](/maps/spec-sheets/mongar)|maps/mongar|
+[Paro](/maps/spec-sheets/paro)|maps/paro|
+[Pemagatshel](/maps/spec-sheets/pemagatshel)|maps/pemagatshel|
+[Punakha](/maps/spec-sheets/punakha)|maps/punakha|
+[Samtse](/maps/spec-sheets/samtse)|maps/samtse|
+[Samdrup Jongkhar](/maps/spec-sheets/samdrupjongkhar)|maps/samdrupjongkhar|
+[Zhemgang](/maps/spec-sheets/zhemgang)|maps/zhemgang|
+[Trashigang](/maps/spec-sheets/trashigang)|maps/trashigang|
+[Thimphu](/maps/spec-sheets/thimphu)|maps/thimphu|
+[Trongsa](/maps/spec-sheets/trongsa)|maps/trongsa|
+[Trashiyangtse](/maps/spec-sheets/trashiyangtse)|maps/trashiyangtse|
+[Wangdue Phodrang](/maps/spec-sheets/wangduephodrang)|maps/wangduephodrang|
 [Brunei](/maps/spec-sheets/brunei)|maps/brunei|
 [Burma](/maps/spec-sheets/burma)|maps/burma|
 [Cambodia](/maps/spec-sheets/cambodia)|maps/cambodia|
@@ -279,12 +299,40 @@ Chart Type|JavaScript Alias|
 [Japan](/maps/spec-sheets/japan)|maps/japan|
 [Kazakhstan](/maps/spec-sheets/kazakhstan)|maps/kazakhstan|
 [Laos](/maps/spec-sheets/laos)|maps/laos|
+[Attapeu](/maps/spec-sheets/attapeu)|maps/attapeu|
+[Bokeo](/maps/spec-sheets/bokeo)|maps/bokeo|
+[Bolikhamsai](/maps/spec-sheets/bolikhamsai)|maps/bolikhamsai|
+[Champasak](/maps/spec-sheets/champasak)|maps/champasak|
+[Hua Phan](/maps/spec-sheets/huaphan)|maps/huaphan|
+[Khammouane](/maps/spec-sheets/khammouane)|maps/khammouane|
+[Luang Namtha](/maps/spec-sheets/luangnamtha)|maps/luangnamtha|
+[Luang Prabang](/maps/spec-sheets/luangprabang)|maps/luangprabang|
+[Oudomxay](/maps/spec-sheets/oudomxay)|maps/oudomxay|
+[Phongsali](/maps/spec-sheets/phongsali)|maps/phongsali|
+[Salavan](/maps/spec-sheets/salavan)|maps/salavan|
+[Savannakhet](/maps/spec-sheets/savannakhet)|maps/savannakhet|
+[Vientiane Province](/maps/spec-sheets/vientianeprovince)|maps/vientianeprovince|
+[Vientiane Capital](/maps/spec-sheets/vientianecapital)|maps/vientianecapital|
+[Sayabouly](/maps/spec-sheets/sayabouly)|maps/sayabouly|
+[Xaisomboun Province](/maps/spec-sheets/xaisombounprovince)|maps/xaisombounprovince|
+[Sekong](/maps/spec-sheets/sekong)|maps/sekong|
+[Xieng Khouang](/maps/spec-sheets/xiengkhouang)|maps/xiengkhouang|
 [Macau](/maps/spec-sheets/macau)|maps/macau|
 [Malaysia](/maps/spec-sheets/malaysia)|maps/malaysia|
 [Mongolia](/maps/spec-sheets/mongolia)|maps/mongolia|
 [Nepal](/maps/spec-sheets/nepal)|maps/nepal|
 [North Korea](/maps/spec-sheets/northkorea)|maps/northkorea|
 [Philippines](/maps/spec-sheets/philippines)|maps/philippines|
+[Philippines administrative regions](/maps/spec-sheets/philippinesregion)|maps/philippinesregion|
+[Central Visayas](/maps/spec-sheets/centralvisayas)|maps/centralvisayas|
+[Western Visayas](/maps/spec-sheets/westernvisayas)|maps/westernvisayas|
+[Zamboanga Peninsula](/maps/spec-sheets/zamboangapeninsula)|maps/zamboangapeninsula|
+[Pampanga](/maps/spec-sheets/pampanga)|maps/pampanga|
+[Quezon](/maps/spec-sheets/quezon)|maps/quezon|
+[Sulu](/maps/spec-sheets/sulu)|maps/sulu|
+[TawiTawi](/maps/spec-sheets/tawitawi)|maps/tawitawi|
+[Zamboanga City](/maps/spec-sheets/zamboangacity)|maps/zamboangacity|
+[Zamboanga Sibugay](/maps/spec-sheets/zamboangasibugay)|maps/zamboangasibugay|
 [Russia](/maps/spec-sheets/russia)|maps/russia|
 [Singapore](/maps/spec-sheets/singapore)|maps/singapore|
 [South Korea](/maps/spec-sheets/southkorea)|maps/southkorea|
@@ -455,6 +503,16 @@ Chart Type|JavaScript Alias|
 [Burkina Faso](/maps/spec-sheets/burkinafaso)|maps/burkinafaso|
 [Burundi](/maps/spec-sheets/burundi)|maps/burundi|
 [Cameroon](/maps/spec-sheets/cameroon)|maps/cameroon|
+[Adamawa](/maps/spec-sheets/adamawa)|maps/adamawa| 
+[Central Cameroon](/maps/spec-sheets/centralcameroon)|maps/centralcameroon|
+[East Cameroon](/maps/spec-sheets/eastcameroon)maps/eastcameroon|
+[Far North Cameroon](/maps/spec-sheets/farnorthcameroon)maps/farnorthcameroon|
+[Littoral Cameroon](/maps/spec-sheets/littoralcameroon)maps/littoralcameroon|
+[North Cameroon](/maps/spec-sheets/northcameroon)maps/northcameroon|
+[Northwest Cameroon](/maps/spec-sheets/northwestcameroon)maps/northwestcameroon|
+[West Cameroon](/maps/spec-sheets/westcameroon)maps/westcameroon|
+[South Cameroon](/maps/spec-sheets/southcameroon)maps/southcameroon|
+[Southwest Cameroon](/maps/spec-sheets/southwestcameroon)maps/southwestcameroon|
 [Cape Verde](/maps/spec-sheets/capeverde)|maps/capeverde|
 [Central African Republic](/maps/spec-sheets/centralafricanrepublic)|maps/centralafricanrepublic|
 [Chad](/maps/spec-sheets/chad)|maps/chad|
@@ -472,7 +530,43 @@ Chart Type|JavaScript Alias|
 [Ghana](/maps/spec-sheets/ghana)|maps/ghana|
 [Guinea](/maps/spec-sheets/guinea)|maps/guinea|
 [Guinea-Bissau](/maps/spec-sheets/guineabissau)|maps/guineabissau|
+[Ivory Coast](/maps/spec-sheets/ivorycoastregions)|maps/ivorycoastregions|
+[AbidjanAutonomousDistrict](/maps/spec-sheets/abidjanautonomousdistrict)|maps/abidjanautonomousdistrict|
+[AgnebyTiassa](/maps/spec-sheets/agnebytiassa)|maps/agnebytiassa|
+[Bafing](/maps/spec-sheets/bafing)|maps/bafing|
+[Bagoue](/maps/spec-sheets/bagoue)|maps/bagoue|
+[Belier](/maps/spec-sheets/belier)|maps/belier|
+[Bere](/maps/spec-sheets/bere)|maps/bere|
+[Bounkani](/maps/spec-sheets/bounkani)|maps/bounkani|
+[Cavally](/maps/spec-sheets/cavally)|maps/cavally|
+[Folon](/maps/spec-sheets/folon)|maps/folon|
+[Gbeke](/maps/spec-sheets/gbeke)|maps/gbeke|
+[Gbokle](/maps/spec-sheets/gbokle)|maps/gbokle|
+[Goh](/maps/spec-sheets/goh)|maps/goh|
+[Gontougo](/maps/spec-sheets/gontougo)|maps/gontougo|
+[GrandsPonts](/maps/spec-sheets/grandsponts)|maps/grandsponts|
+[Guemon](/maps/spec-sheets/guemon)|maps/guemon|
+[Hambol](/maps/spec-sheets/hambol)|maps/hambol|
+[HautSassandra](/maps/spec-sheets/hautsassandra)|maps/hautsassandra|
+[Iffou](/maps/spec-sheets/iffou)|maps/iffou|
+[IndenieDjuablin](/maps/spec-sheets/indeniedjuablin)|maps/indeniedjuablin|
+[Kabadougou](/maps/spec-sheets/kabadougou)|maps/kabadougou|
+[LaMe](/maps/spec-sheets/lame)|maps/lame|
+[LohDjiboua](/maps/spec-sheets/lohdjiboua)|maps/lohdjiboua|
+[Marahoue](/maps/spec-sheets/marahoue)|maps/marahoue|
+[Moronou](/maps/spec-sheets/moronou)|maps/moronou|
+[NZi](/maps/spec-sheets/nzi)|maps/nzi|
+[Nawa](/maps/spec-sheets/nawa)|maps/nawa|
+[Poro](/maps/spec-sheets/poro)|maps/poro|
+[SanPedro](/maps/spec-sheets/sanpedro)|maps/sanpedro|
+[SudComoe](/maps/spec-sheets/sudcomoe)|maps/sudcomoe|
+[Tchologo](/maps/spec-sheets/tchologo)|maps/tchologo|
+[Tonkpi](/maps/spec-sheets/tonkpi)|maps/tonkpi|
+[Worodougou](/maps/spec-sheets/worodougou)|maps/worodougou|
+[YamoussoukroAutonomousDistrict](/maps/spec-sheets/yamoussoukroautonomousdistrict)|maps/yamoussoukroautonomousdistrict|
 [Kenya](/maps/spec-sheets/kenya)|maps/kenya|
+[Kenya Counties](/maps/spec-sheets/kenyacounties)|maps/kenyacounties|
+[Kenya Province](/maps/spec-sheets/kenya)|maps/kenya|
 [Lesotho](/maps/spec-sheets/lesotho)|maps/lesotho|
 [Liberia](/maps/spec-sheets/liberia)|maps/liberia|
 [Libya](/maps/spec-sheets/libya)|maps/libya|
@@ -502,6 +596,10 @@ Chart Type|JavaScript Alias|
 [Togo](/maps/spec-sheets/togo)|maps/togo|
 [Tunisia](/maps/spec-sheets/tunisia)|maps/tunisia|
 [Uganda](/maps/spec-sheets/uganda)|maps/uganda|
+[Central Uganda](/maps/spec-sheets/centraluganda)|maps/centraluganda|
+[Northern Uganda](/maps/spec-sheets/northernuganda)|maps/northernuganda|
+[Eastern Uganda](/maps/spec-sheets/easternuganda)|maps/easternuganda|
+[Southern Uganda](/maps/spec-sheets/southernuganda)|maps/southernuganda|
 [Western Sahara](/maps/spec-sheets/westernsahara)|maps/westernsahara|
 [Zambia](/maps/spec-sheets/zambia)|maps/zambia|
 [Zimbabwe](/maps/spec-sheets/zimbabwe)|maps/zimbabwe|
