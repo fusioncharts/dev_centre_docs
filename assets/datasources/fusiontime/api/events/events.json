@@ -181,7 +181,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-renderCancelled"
     },
     "tags": {
       "action": "",
@@ -266,7 +266,7 @@
     "info": "If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in this event handler, for example, by using `setTimeout`.",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-rendered"
     },
     "tags": {
       "action": "",
@@ -4138,7 +4138,7 @@
     "description": "This event is fired when the chart is resized either by calling `FusionCharts#resizeTo()` or by changing the dimensions of the chart container element, when the dimensions of the chart have been provided in the percentage format.",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-resized"
     },
     "tags": {
       "action": "Resize",
@@ -4251,7 +4251,7 @@
     "description": "This event is fired when event.preventDefault() is called from within the handler of the beforeResize event. This cancels any FusionCharts#resizeTo() invocations.",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-resizeCancelled"
     },
     "tags": {
       "action": "Resize",
