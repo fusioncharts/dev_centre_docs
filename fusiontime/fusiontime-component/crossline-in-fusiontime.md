@@ -56,4 +56,4 @@ In the above code:
   - `vertical-label` is used to specifically style the vertical label of the crossline.
   - `horizontal-line` is used to specifically style the horizontal line of the crossline.
   - `horizontal-tag` is used to specifically style the horizontal tag of the crossline.
-  - `horizontal-label` is used to specifically style the horizonta
+  - `horizontal-label` is used to specifically style the horizontal label of the crossline.
