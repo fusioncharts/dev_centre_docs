@@ -66,8 +66,8 @@
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "73%",
-                  "topPosition": "51.5%",
+                  "leftPosition": "55%",
+                  "topPosition": "51%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
@@ -75,27 +75,6 @@
                },
                {
                   "annotationNumber": "5",
-                  "annotationName": "Legend",
-                  "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
-                  "annotationDescLinkPath": null,
-                  "leftPosition": "47.5%",
-                  "topPosition": "93.5%",
-                  "annotationLinks": [{
-                        "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll etc. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/legend#configure-legend-icon-size"
-                     },
-                     {
-                        "linkDesc": "You can customize legend position on the chart either to right or bottom of the chart. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/legend#set-the-legend-position"
-                     },
-                     {
-                        "linkDesc": "You can highlight data plots by hovering over corresponding legend item using plot highlight effect feature, Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/legend#highlight-a-data-series-via-the-legend"
-                     }
-                  ]
-               },
-               {
-                  "annotationNumber": "6",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
