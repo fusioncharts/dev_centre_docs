@@ -406,7 +406,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-beforedataupdate"
     },
     "tags": {
       "action": "",
@@ -811,7 +811,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-chartRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -931,7 +931,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-chartRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -1051,7 +1051,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-chartClick"
     },
     "tags": {
       "action": "Click",
@@ -1241,7 +1241,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-legendItemClicked"
     },
     "tags": {
       "action": "Click",
@@ -1356,7 +1356,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-legendItemRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -1466,7 +1466,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-legendItemRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -1576,7 +1576,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-beforeExport"
     },
     "tags": {
       "action": "Export",
@@ -1706,7 +1706,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-exported"
     },
     "tags": {
       "action": "Export",
@@ -1811,7 +1811,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-exportCancelled"
     },
     "tags": {
       "action": "Export",
@@ -3893,7 +3893,7 @@
     "description": "This event is fired when the chart draws for the first time or is redrawn because of a data update, resize, change of chart message, or change of chart type.",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-drawComplete"
     },
     "tags": {
       "action": "",
