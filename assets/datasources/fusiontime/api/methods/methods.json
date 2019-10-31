@@ -243,8 +243,7 @@
 					"subparams": {}
 				}
 			}
-		}
-	},
+		},
 
 	"setTimeSelection": {
 		"id": "setTimeSelection",
@@ -1311,4 +1310,5 @@
 			}
 		}
 	}
+}
 }
