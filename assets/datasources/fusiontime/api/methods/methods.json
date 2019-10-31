@@ -684,7 +684,7 @@
 		"examples": {
 			"0": {
 				"caption": "",
-				"code": "var year_2018 = {\r\n\t\/\/Enter data for year 2018\r\n}\r\n\r\nvar year_2019 ={\r\n\t\/\/Enter data for year 2019\r\n}\r\nFusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \t        renderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\r\n\t\t}\r\n\t}).render();\r\n\r\n var year_data = document.getElementById(\"year\").value;\r\n    if (year_data == \"2018\")\r\n\/\/setChartData sets the data for a chart\r\n    \tmyChart.setChartData(year_2018, \"json\");\r\n   \t\t\telse if (year_data ==\"2019\")\r\n   \t\t\t\tmyChart.setChartData(year_2019, \"json\"); \r\n});",
+				"code": "var year_2018 = {\r\n\t\/\/Enter data for year 2018\r\n}\r\n\r\nvar year_2019 ={\r\n\t\/\/Enter data for year 2019\r\n}\r\nFusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\r\n\t\t}\r\n\t}).render();\r\n\r\n var year_data = document.getElementById(\"year\").value;\r\n    if (year_data == \"2018\")\r\n\/\/setChartData sets the data for a chart\r\n    \tmyChart.setChartData(year_2018, \"json\");\r\n   \t\t\telse if (year_data ==\"2019\")\r\n   \t\t\t\tmyChart.setChartData(year_2019, \"json\"); \r\n});",
 				"type": "js"
 			}
 		},
@@ -720,7 +720,7 @@
 		"examples": {
 			"0": {
 				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \t        renderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\r\ndocument.getElementById(\"chart1\").innerHTML = \"Current theme: \" + myChart.getChartAttribute(\"theme\");\r\n  \r\n\/\/getChartAttribute fetches the value of chart attribute explicitly\r\n  function getAtt() {\r\n\r\n       var select = document.getElementById(\"chart1\");\r\n       myChart.setChartAttribute(\"theme\", select.value);\r\n document.getElementById(\"current_value\").innerHTML = \"Current theme: \" + myChart.getChartAttribute(\"theme\");\r\n\r\n    }\r\n    document.getElementById(\"theme-type\").addEventListener(\"change\", getAtt);\r\n});",
+				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\r\ndocument.getElementById(\"chart1\").innerHTML = \"Current theme: \" + myChart.getChartAttribute(\"theme\");\r\n  \r\n\/\/getChartAttribute fetches the value of chart attribute explicitly\r\n  function getAtt() {\r\n\r\n       var select = document.getElementById(\"chart1\");\r\n       myChart.setChartAttribute(\"theme\", select.value);\r\n document.getElementById(\"current_value\").innerHTML = \"Current theme: \" + myChart.getChartAttribute(\"theme\");\r\n\r\n    }\r\n    document.getElementById(\"theme-type\").addEventListener(\"change\", getAtt);\r\n});",
 				"type": "js"
 			}
 		},
@@ -748,7 +748,7 @@
 		"examples": {
 			"0": {
 				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \t        renderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\t\t}\r\n\t}).render();\r\n\r\n\/\/setChartAttribute updates the chart's attributes with new attribute-value\r\n function setAtt() {\r\n       var select = document.getElementById(\"chart1\");\r\n       myChart.setChartAttribute(\"theme\", select.value);\r\n\r\n\r\n    }\r\n\r\n    document.getElementById(\"chart1\").addEventListener(\"change\", setAtt);\r\n\r\n});",
+				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\t\t}\r\n\t}).render();\r\n\r\n\/\/setChartAttribute updates the chart's attributes with new attribute-value\r\n function setAtt() {\r\n       var select = document.getElementById(\"chart1\");\r\n       myChart.setChartAttribute(\"theme\", select.value);\r\n\r\n\r\n    }\r\n\r\n    document.getElementById(\"chart1\").addEventListener(\"change\", setAtt);\r\n\r\n});",
 				"type": "js"
 			}
 		},
