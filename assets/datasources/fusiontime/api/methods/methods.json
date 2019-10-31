@@ -1022,7 +1022,7 @@
 		"examples": {
 			"0": {
 				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data:fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n  \/\/print() invokes the page printing function to print the chart\r\n function print() {\r\n        myChart.print();\r\n    }\r\n   \r\n    document.getElementById(\"print\").addEventListener(\"click\", print);\r\n    \/\/document.getElementById(\"print_p\").addEventListener(\"click\", printP);\r\n\r\n});",
+				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data:fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n  \/\/print() invokes the page printing function to print the chart\r\n function print() {\r\n        myChart.print();\r\n    }   \r\n    document.getElementById(\"print\").addEventListener(\"click\", print);\r\n\r\n});",
 				"type": "js"
 			}
 		},
