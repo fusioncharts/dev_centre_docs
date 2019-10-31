@@ -370,7 +370,7 @@
 		"examples": {
          "0": {
 				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \t        renderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\u200B\r\n\t\/\/Locking the automatic percentage-based resizing. If resize is already locked, sending false unlocks it.\r\n\tmyChart.lockResize(true);\r\n});",
+				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\u200B\r\n\t\/\/Locking the automatic percentage-based resizing. If resize is already locked, sending false unlocks it.\r\n\tmyChart.lockResize(true);\r\n});",
 				"type": "js"
 			}
       },
@@ -827,7 +827,7 @@
 		"examples": {
 			"0": {
 				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \t        renderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\/\/removing an event attached to the chart\r\n\tmyChart.removeEventListener(\"dataPlotClick\", \"onDataPlotClick\");\r\n});",
+				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\/\/removing an event attached to the chart\r\n\tmyChart.removeEventListener(\"dataPlotClick\", \"onDataPlotClick\");\r\n});",
 				"type": "js"
 			}
 		},
