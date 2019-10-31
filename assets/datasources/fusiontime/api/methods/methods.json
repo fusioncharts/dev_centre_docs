@@ -988,7 +988,7 @@
 		"examples": {
          "0": {
 				"caption": "",
-				"code": "",
+				"code": "FusionCharts.ready(function () {\r\n  var year_2016 = {\r\n    \/\/Enter data for year 2016\r\n}\r\n  var year_2017 = {\r\n    \/\/Enter data for year 2017\r\n}\r\n   var year_2018 = {\r\n    \/\/Enter data for year 2018\r\n}\r\nvar year_2019 ={\r\n    \/\/Enter data for year 2019\r\n}\r\n    var myChart = new FusionCharts({\r\n        type: \"timeseries\",\r\n       renderAt: \"container\",\r\n        width: \"100%\",\r\n        height: 400,\r\n        id: \"chart1\",\r\n        dataSource: year_2018\r\n    });\r\n    function render() {\r\n        var data = document.getElementById(\"data\").value;\r\n\r\n        if (data == \"2016\") {\r\n            myChart.setChartData(year_2016);\r\n        } else if (data == \"2017\") {\r\n            myChart.setChartData(year_2017);\r\n        } else if (data == \"2018\") {\r\n            myChart.setChartData(year_2018);\r\n        } else if (data == \"2019\") {\r\n            myChart.setChartData(year_2019);\r\n       }\r\n\r\n        myChart.render();\r\n        var flag = myChart.dataReady();\r\n        var msg = document.getElementById(\"msg\");\r\n        if (flag) {\r\n            msg.innerHTML = \"Data valid. Scroll down to view the chart.\";\r\n        } else {\r\n            msg.innerHTML = \"Data invalid\";\r\n        }\r\n    }\r\n\r\n    document.getElementById(\"rend\").addEventListener(\"click\", render);\r\n});\r\n});",
 				"type": "js"
 			}
       },
