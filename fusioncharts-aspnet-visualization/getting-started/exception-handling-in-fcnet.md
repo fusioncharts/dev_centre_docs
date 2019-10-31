@@ -77,23 +77,22 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FcTest
+namespace FcTest 
 {
-public partial class ChartTest : System.Web.UI.Page
-{
-protected void Page_Load(object sender, EventArgs e)
-{
-// create column object
-Charts.ColumnChart column = new Charts.ColumnChart("id");
-// set suppress exception true
-column.Exceptions.Suppress = true;
-// set column chart width
-column.Width.Pixel(800);
-// render chart
-Literal1.Text = column.Render()
-
-}
-}
+    public partial class ChartTest: System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e) 
+        {
+           // create column object
+           Charts.ColumnChart column = new Charts.ColumnChart("id");
+           // set suppress exception true
+           column.Exceptions.Suppress = true;
+           // set column chart width
+           column.Width.Pixel(800);
+           // render chart
+           Literal1.Text = column.Render()
+        }
+    }
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
@@ -181,27 +180,24 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace FcTest
+namespace FcTest 
 {
-public partial class ChartTest : System.Web.UI.Page
-{
-protected void Page_Load(object sender, EventArgs e)
-{
-
-// create timeSeries object
-Charts.TimeSeriesChart timeSeries = new Charts.TimeSeriesChart("id");
-// set data source handler path
-timeSeries.Data.SourcePathHandler = @"DataHandler.ashx";
-// set suppress exception true
-timeSeries.Exceptions.Suppress = true;
-// set timeSeries chart width
-timeSeries.Width.Pixel(800);
-// render chart
-Literal1.Text = timeSeries.Render()
-
-}
-}
-
+    public partial class ChartTest: System.Web.UI.Page 
+    {
+      protected void Page_Load(object sender, EventArgs e) 
+      {
+           // create timeSeries object
+           Charts.TimeSeriesChart timeSeries = new Charts.TimeSeriesChart("id");
+           // set data source handler path
+           timeSeries.Data.SourcePathHandler = @ "DataHandler.ashx";
+           // set suppress exception true
+           timeSeries.Exceptions.Suppress = true;
+           // set timeSeries chart width
+           timeSeries.Width.Pixel(800);
+           // render chart
+           Literal1.Text = timeSeries.Render()
+      }
+    }
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
@@ -258,36 +254,33 @@ using System.Web;
 using FusionCharts.DataEngine;
 using FusionCharts.Visualization;
 using System;
-namespace FcTest
+namespace FcTest 
 {
-    public class DataHandler : IHttpHandler
+    public class DataHandler: IHttpHandler 
     {
-
-        public void ProcessRequest(HttpContext context)
+        public void ProcessRequest(HttpContext context) 
         {
-            // extract chart id
-    		string chartId = context.Request["id"];
-    		// extract exception suppress setting
-            bool suppress = string.Equals(context.Request["suppressexception"],"1") ? true : false;
-    		// creatae jsonFileSource object
-            JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/predictive-data-in-fusiontime/data.json");
-    		// create model object
-            DataModel model = new DataModel();
-    		// jsonFileSource in model DataSources
-            model.DataSources.Add(jsonFileSource);
-
-            context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model,suppress,chartId));
+           // extract chart id
+           string chartId = context.Request["id"];
+           // extract exception suppress setting
+           bool suppress = string.Equals(context.Request["suppressexception"], "1") ? true : false;
+           // creatae jsonFileSource object
+           JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/predictive-data-in-fusiontime/data.json");
+           // create model object
+           DataModel model = new DataModel();
+           // jsonFileSource in model DataSources
+           model.DataSources.Add(jsonFileSource);
+           context.Response.Write(TimeSeriesData.RenderCompatibleDataInJson(model, suppress, chartId));
         }
-
-        public bool IsReusable
+    
+        public bool IsReusable 
         {
-            get
-            {
-                return false;
-            }
+           get 
+           {
+            return false;
+           }
         }
     }
-
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 

@@ -22,7 +22,7 @@
         "name": "palette"
       },
       {
-        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (i.e., column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., `&quot;paletteColors&quot;: &quot;#FF0000, #0372AB, #FF5904...&quot;`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
+        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (i.e., column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., `\"paletteColors\": \"#FF0000, #0372AB, #FF5904...\"`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
         "range": "List of hex color codes separated by comma",
         "type": "String",
         "name": "paletteColors"
@@ -133,7 +133,7 @@
         "name": "plotHighlightEffect"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -2140,7 +2140,7 @@
         "name": "toolTipSepChar"
       },
       {
-        "description": "For multi-series charts, FusionCharts XT shows the following information in tool tip (unless tool text is explicitly defined): &quot;Series Name, Category Name, Data Value&quot;. This attribute lets you control whether series name will show up in tool tip or not.",
+        "description": "For multi-series charts, FusionCharts XT shows the following information in tool tip (unless tool text is explicitly defined): \"Series Name, Category Name, Data Value\". This attribute lets you control whether series name will show up in tool tip or not.",
         "range": "0/1",
         "type": "Boolean",
         "name": "seriesNameInToolTip"
@@ -2900,13 +2900,13 @@
     "path": "data",
     "attrs": [
       {
-        "description": "For multi-series charts, you can define the alpha of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its alpha at &quot;set&quot; level using this attribute.",
+        "description": "For multi-series charts, you can define the alpha of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its alpha at \"set\" level using this attribute.",
         "range": "0 - 100",
         "type": "Number",
         "name": "alpha"
       },
       {
-        "description": "For multi-series charts, you can define the color of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its color at &quot;set&quot; level using this attribute. ",
+        "description": "For multi-series charts, you can define the color of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its color at \"set\" level using this attribute. ",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "color"
@@ -2924,7 +2924,7 @@
         "name": "displayValue"
       },
       {
-        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see &quot;Drill-Down &gt; Using JavaScript Functions as Links&quot; for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
+        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see \"Drill-Down &gt; Using JavaScript Functions as Links\" for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
         "range": "",
         "type": "String",
         "name": "link"

@@ -22,7 +22,7 @@
         "name": "palette"
       },
       {
-        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (i.e., column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., `&quot;paletteColors&quot;: &quot;#FF0000, #0372AB, #FF5904...&quot;`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
+        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (i.e., column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., `\"paletteColors\": \"#FF0000, #0372AB, #FF5904...\"`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
         "range": "List of hex color codes separated by comma",
         "type": "String",
         "name": "paletteColors"
@@ -85,7 +85,7 @@
       },
       {
         "description": "If you've opted to show data values of the line series on the chart, this attribute lets you adjust the vertical alignment of data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of each data value is determined automatically based on the position of each plot point. In ABOVE mode, data values are displayed above the plot points unless a plot point is too close to the upper edge of the canvas while in BELOW mode, data values are displayed below the plot points unless a plot point is too close to the lower edge of the canvas.",
-        "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
+        "range": "\"ABOVE\", \"BELOW\", \"AUTO\"",
         "type": "String",
         "versionsince": "3.2",
         "name": "valuePosition"
@@ -202,7 +202,7 @@
         "name": "hasRTLText"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -2729,7 +2729,7 @@
         "name": "label"
       },
       {
-        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see &quot;Drill-Down &gt; Using JavaScript Functions as Links&quot; for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
+        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see \"Drill-Down &gt; Using JavaScript Functions as Links\" for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
         "range": "",
         "type": "String",
         "name": "link"

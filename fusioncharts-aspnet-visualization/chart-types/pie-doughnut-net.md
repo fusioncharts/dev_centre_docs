@@ -30,18 +30,16 @@ Create the `PieChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
-* Retrieve data using database query.
-* Set server name.
-* Set `DataBase` name.
-* Connect with `DataBase` using a connection string.
-* Create `StaticSource` using the `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
-* Add `DataSource` to the `DataModel`.
-* Instantiate Pie Chart.
-* Set Chart's width and height.
+* Add `StaticSource` as data source to the `DataModel`.
+* Instantiate Pie chart.
+* Set chart `width` and `height`.
 * Set `DataModel` instance as the data source of the chart.
-* Set Chart title.
-* Finally, use a container using `<div>` to render the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
 
@@ -124,7 +122,6 @@ Imports System.Web.UI.WebControls
 Namespace FusionChartsVisualisationWebFormsSamples.Samples
     Public Partial Class ThreeDChart
         Inherits System.Web.UI.Page
-
         Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
             Dim ChartData As DataTable = New DataTable()
             ChartData.Columns.Add("Programming Language", GetType(System.String))
@@ -183,7 +180,26 @@ The `.aspx` template for the above sample is shown below:
 
 ## Doughnut Chart
 
-Now, let's learn how to create a doughnut chart with the same data. The code remains the same as that of the Pie chart. The only difference is instead of instantiating a pie chart you have to instantiate a doughnut chart. Create a `doughnutChart.aspx.cs` and refer to the code below:
+Now, let's learn how to create a doughnut chart with the same data. The code remains the same as that of the Pie chart. The only difference is instead of instantiating a pie chart you have to instantiate a doughnut chart. 
+
+## Render the Chart
+
+Create a `doughnutChart.aspx.cs` and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
+* Create an instance of `DataModel` class.
+* Add `StaticSource` as data source to the `DataModel`.
+* Instantiate Doughnut chart.
+* Set chart `width` and `height`.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -264,7 +280,6 @@ Imports System.Web.UI.WebControls
 Namespace FusionChartsVisualisationWebFormsSamples.Samples
     Public Partial Class ThreeDChart
         Inherits System.Web.UI.Page
-
         Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
             Dim ChartData As DataTable = New DataTable()
             ChartData.Columns.Add("Programming Language", GetType(System.String))

@@ -41,7 +41,7 @@
         "name": "paletteThemeColor"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -1688,7 +1688,7 @@
         "name": "link"
       },
       {
-        "description": "By default, FusionWidgets XT shows the &quot;`label, value`&quot; as tooltip text for that data item. But, if you want to display more information for the data item as tooltip, you can use this attribute to specify the same.",
+        "description": "By default, FusionWidgets XT shows the \"`label, value`\" as tooltip text for that data item. But, if you want to display more information for the data item as tooltip, you can use this attribute to specify the same.",
         "range": "",
         "type": "String",
         "name": "toolText"

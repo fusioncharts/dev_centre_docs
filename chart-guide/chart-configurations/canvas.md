@@ -135,6 +135,8 @@ The canvas can be configured to have a 3D effect. To do so, follow the steps giv
 
 - Set the depth of the canvas background using the `canvasBgDepth` attribute.
 
+> The 3D effect can only be applied to the 3D charts.
+
 Refer to the code below:
 
 ```json

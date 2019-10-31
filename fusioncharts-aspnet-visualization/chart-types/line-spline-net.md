@@ -32,18 +32,16 @@ Create the `LineChart.aspx.cs` file and do the following:
 
 * Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
-* Retrieve data using database query.
-* Set server name.
-* Set `DataBase` name.
-* Connect with `DataBase` using a connection string.
-* Create `StaticSource` using the `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
-* Add `DataSource` to the `DataModel`.
-* Instantiate Line Chart.
-* Set Chart's width and height.
+* Add `StaticSource` as data source to the `DataModel`.
+* Instantiate Line chart.
+* Set chart `width` and `height`.
 * Set `DataModel` instance as the data source of the chart.
-* Set Chart title.
-* Finally, use a container using `<div>` to render the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
 
@@ -207,22 +205,19 @@ Click [here](https://dotnetfiddle.net/Irr2ht) to edit the scroll line chart.
 
 Create the `ScrollLineChart.aspx.cs` file and do the following:
 
-* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` .dll files.
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
-* Retrieve data using database query.
-* Set `serverName`.
-* Set `DataBase` name.
-* Connect with `DataBase` using a `connectionstring`.
-* Create `StaticSource` using the `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
-* Add `DataSource` to the `DataModel`.
-* Instantiate `column` chart.
-* Set chart width.
-* Set chart height.
+* Add `StaticSource` as data source to the `DataModel`.
+* Instantiate Line chart.
+* Set chart `width` and `height`.
 * Set the `Scrollable` property of the chart to `true`.
 * Set `DataModel` instance as the data source of the chart.
-* Set chart title.
-* Finally, use a container using `<div>` to render the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
 
@@ -396,7 +391,27 @@ The `.aspx` template for the above sample is shown below:
 
 ## Spline Chart
 
-Now, let's learn how to create a spline chart with the same data. The code remains the same as that of the Line chart. The only difference is instead of instantiating a line chart you have to instantiate a spline chart. Create a `splineChart.aspx.cs` and refer to the code below:
+Now, let's learn how to create a spline chart with the same data. The code remains the same as that of the Line chart. The only difference is instead of instantiating a line chart you have to instantiate a spline chart. 
+
+## Render the Chart
+
+Create a `splineChart.aspx.cs` and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
+* Create an instance of `DataModel` class.
+* Add `StaticSource` as data source to the `DataModel`.
+* Instantiate Line chart.
+* Set chart `width` and `height`.
+* Set the `Scrollable` property of the chart to `true`.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
