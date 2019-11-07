@@ -469,6 +469,13 @@
 		"xls": false
 	},
 	{
+		"name": "Sankey",
+		"json": "Sankey",
+		"code": "xt-attr-sankey.js",
+		"alias": "sankey",
+		"xls": true
+	},
+	{
 		"name": "Scatter Chart",
 		"json": "Scatter",
 		"code": "xt-attr-scatter.js",
