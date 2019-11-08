@@ -4459,7 +4459,7 @@
     "description": "This event is fired when a standard period is selected from the Standard Range Selector.",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-standardRangeSelect"
     },
     "tags": {
       "action": "Click",
@@ -4494,7 +4494,7 @@
     "description": "This event is fired when a valid custom period is applied from the Custom Range Selector.",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-customRangeSelect"
     },
     "tags": {
       "action": "Click",
