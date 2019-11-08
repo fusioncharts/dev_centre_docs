@@ -469,7 +469,7 @@
 		"xls": false
 	},
 	{
-		"name": "Sankey",
+		"name": "Sankey Diagram",
 		"json": "Sankey",
 		"code": "xt-attr-sankey.js",
 		"alias": "sankey",

@@ -605,6 +605,18 @@
     "description": "The following attributes let you configure chart cosmetics like background color, background alpha, canvas color & alpha etc. "
   },
   {
+    "table": "Legend Properties",
+    "attrs": [
+      {
+        "description": "Whether to show legend on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "showLegend"
+      }
+    ],
+    "description": "In a chart, the series name of each dataset shows up in the legend of the chart. If you do not need the legend, you can opt to hide the same. Also, the legend can be placed at the bottom of the chart or to the right of the chart. Using the attributes below, you can configure the functional and cosmetic properties of the legend. "
+  },
+  {
     "table": "Number Formatting",
     "attrs": [
       {
