@@ -771,6 +771,33 @@
     "description": ""
   },
   {
+    "table": "Link Cosmetics",
+    "attrs": [
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "linkColor"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "linkAlpha"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "linkCurvature"
+      }
+    ],
+    "description": ""
+  },
+  {
     "table": "Legend Properties",
     "attrs": [
       {
@@ -1091,6 +1118,33 @@
       }
     ],
     "description": "These attributes allow you to control the saving of chart as image, SVG or XLSX."
+  },
+  {
+    "table": "Data Plot Hover Effects",
+    "attrs": [
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "highlightEffect"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeHoverAlpha"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "linkHoverAlpha"
+      }
+    ],
+    "description": "If you wish to show an effect on the data plot (column, line anchor, pie etc.) when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."
   },
   {
     "table": "Chart Padding & Margins",
