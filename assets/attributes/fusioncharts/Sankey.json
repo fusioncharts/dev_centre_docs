@@ -605,6 +605,172 @@
     "description": "The following attributes let you configure chart cosmetics like background color, background alpha, canvas color & alpha etc. "
   },
   {
+    "table": "Node Label Configuration",
+    "attrs": [
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "showNodeLabels"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "showNodeValues"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "rotateNodeLabels"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelPosition"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeColor"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeAlpha"
+      }
+    ],
+    "description": ""
+  },
+  {
+    "table": "Node Label Cosmetics",
+    "attrs": [
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelFont"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelFontColor"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelAlpha"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelBgColor"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelBorderColor"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelBorderThickness"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelFontSize"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelFontBold"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelFontItalic"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelborderradius"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelBorderPadding"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelBorderDash"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelBorderDashed"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelBorderDashlen"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelBorderDashgap"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "textOutline"
+      }
+    ],
+    "description": ""
+  },
+  {
     "table": "Legend Properties",
     "attrs": [
       {
