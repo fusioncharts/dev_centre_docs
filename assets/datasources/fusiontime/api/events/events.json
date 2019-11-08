@@ -2473,7 +2473,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-referenceLineRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -2509,7 +2509,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-referenceLineRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -2545,7 +2545,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-referenceLineClick"
     },
     "tags": {
       "action": "Click",
@@ -2581,7 +2581,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-referenceZoneRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -2627,7 +2627,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-referenceZoneRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -2673,7 +2673,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-referenceZoneClick"
     },
     "tags": {
       "action": "Click",
