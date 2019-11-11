@@ -2305,12 +2305,12 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-timeMarkerRollOver"
     },
     "tags": {
       "action": "Hover",
       "component": "Time marker",
-      "lifecycle": "fusiontime-event-timeMarkerRollOver"
+      "lifecycle": ""
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"timeMarkerRollOver\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
