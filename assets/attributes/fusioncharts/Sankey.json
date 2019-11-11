@@ -1333,5 +1333,60 @@
       }
     ],
     "description": ""
+  },
+  {
+    "table": "The Links Object",
+    "attrs": [
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "from"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "to"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "value"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "color"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "alpha"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "hoverAlpha"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "curvature"
+      }
+    ],
+    "description": ""
   }
 ]
