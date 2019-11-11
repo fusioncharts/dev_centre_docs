@@ -2062,7 +2062,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-dataMarkerRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -2143,7 +2143,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-dataMarkerRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -2224,7 +2224,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-dataMarkerClick"
     },
     "tags": {
       "action": "Click",
