@@ -2310,7 +2310,7 @@
     "tags": {
       "action": "Hover",
       "component": "Time marker",
-      "lifecycle": ""
+      "lifecycle": "fusiontime-event-timeMarkerRollOver"
     },
     "syntax": "{\r\n   \"chart\": {\r\n     // ...\r\n   },\r\n   \"data\":[\r\n     // ...\r\n   ]\r\n },\r\n \"events\": {\r\n   \"timeMarkerRollOver\": function(ev) {\r\n     console.log(ev);\r\n   }\r\n }",
     "params": [{
@@ -2361,7 +2361,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-timeMarkerRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -2417,7 +2417,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-timeMarkerClick"
     },
     "tags": {
       "action": "Click",
