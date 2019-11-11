@@ -32,6 +32,13 @@
         "range": "'fusion', 'gammel', 'candy', 'ocean', 'zune', 'carbon', 'umber'",
         "type": "String",
         "name": "theme"
+      },
+      {
+        "description": "",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.15.0",
+        "name": "enableDrag"
       }
     ],
     "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. "
@@ -603,6 +610,54 @@
       }
     ],
     "description": "The following attributes let you configure chart cosmetics like background color, background alpha, canvas color & alpha etc. "
+  },
+  {
+    "table": "Node Label Configuration",
+    "attrs": [
+      {
+        "description": "",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.15.0",
+        "name": "inheritLabelColorFromNode"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.15.0",
+        "name": "nodeLabelPadding"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.15.0",
+        "name": "nodeSpacing"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeWidth"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeRelaxation"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "nodeLinkPadding"
+      }
+    ],
+    "description": ""
   },
   {
     "table": "Node Label Configuration",
@@ -1181,5 +1236,102 @@
       }
     ],
     "description": " The following attributes help you control chart margins and paddings. FusionCharts Suite XT allows you to manually customize the padding of various elements on the chart to allow advanced manipulation and control over chart visualization. Padding in FusionCharts Suite XT is always defined in pixels, unless the attribute itself suggests some other scale (like `plotSpacePercent`, which configures the spacing using percentage values). You can also define the chart margins. Chart Margins refer to the empty space left on the top, bottom, left and right of the chart. That means, FusionCharts Suite XT will not plot anything in that space. It's not necessary for you to specify any padding/margin values. FusionCharts Suite XT automatically assumes the best values for the same, if you do not specify the same. "
+  },
+  {
+    "table": "The Node Object",
+    "attrs": [
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "label"
+      },
+      {
+        "description": "",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.15.0",
+        "name": "showLabel"
+      },
+      {
+        "description": "",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.15.0",
+        "name": "showValue"
+      },
+      {
+        "description": "",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.15.0",
+        "name": "rotateLabel"
+      },
+      {
+        "description": "",
+        "range": "",
+        "type": "",
+        "versionsince": "3.15.0",
+        "name": "labelPosition"
+      },
+      {
+        "description": "",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.15.0",
+        "name": "textOutline"
+      },
+      {
+        "description": "",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.15.0",
+        "name": "labelFontColor"
+      },
+      {
+        "description": "",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.15.0",
+        "name": "labelAlpha"
+      },
+      {
+        "description": "",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.15.0",
+        "name": "Labelbgcolor"
+      },
+      {
+        "description": "",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.15.0",
+        "name": "Labelbordercolor"
+      },
+      {
+        "description": "",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.15.0",
+        "name": "color"
+      },
+      {
+        "description": "",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.15.0",
+        "name": "alpha"
+      },
+      {
+        "description": "",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.15.0",
+        "name": "hoveralpha"
+      }
+    ],
+    "description": ""
   }
 ]
