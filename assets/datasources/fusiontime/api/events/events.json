@@ -3659,7 +3659,7 @@
     "description": "This event is fired when the chart is redrawn because of a data update, resize, change of chart message, or change of chart type.",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-beforeDraw"
     },
     "tags": {
       "action": "",
