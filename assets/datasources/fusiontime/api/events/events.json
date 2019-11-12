@@ -3394,7 +3394,7 @@
     "description": "This event is fired if the container is either not found or not provided after invoking  FusionCharts#render.",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-containerNotFound"
     },
     "tags": {
       "action": "",
