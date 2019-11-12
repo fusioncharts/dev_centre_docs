@@ -4349,7 +4349,7 @@
     "description": "This event is fired when the animation is started in the chart.",
     "example": {
       "header": "Example",
-      "slug": ""
+      "slug": "fusiontime-event-animationInvoked"
     },
     "tags": {
       "action": "",
