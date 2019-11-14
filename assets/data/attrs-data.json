@@ -672,6 +672,13 @@
 		"xls": false
 	},
 	{
+		"name": "Sunburst",
+		"json": "Sunburst",
+		"code": "xt-attr-sunburst.js",
+		"alias": "sunburst",
+		"xls": false
+	},
+	{
 		"name": "Tree Map Chart",
 		"json": "TreeMap",
 		"code": "xt-attr-treemap.js",
