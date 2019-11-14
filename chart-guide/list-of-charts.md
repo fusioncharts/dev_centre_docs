@@ -192,6 +192,9 @@ It offers a set of advanced charts for domain-specific usage like network diagra
 
 | Chart Type                                                 | JavaScript Alias |
 | ---------------------------------------------------------- | ---------------- |
+| [Chord Diagram](/chart-attributes/chord)                   | chord            |
+| [Sankey Diagram](/chart-attributes/sankey)                 | sankey           |
+| [Sunburst](/chart-attributes/sunburst)                     | sunburst         |
 | [Treemap Chart](/chart-attributes/treemap)                 | treemap          |
 | [Radar Chart](/chart-attributes/radar)                     | radar            |
 | [Heat Map Chart](/chart-attributes/heatmap)                | heatmap          |
