@@ -87,7 +87,8 @@
     "info": "The difference between this event and the rendered event is that the rendered event is triggered only when the FusionCharts#render() method is called.",
     "example": {
       "header": "Example",
-      "slug": "fusiontime-event-renderComplete"
+      "slug": "fusiontime-event-renderComplete",
+      "renderBtn": true
     },
     "tags": {
       "action": "",
@@ -254,7 +255,8 @@
     "info": "If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in this event handler, for example, by using `setTimeout`.",
     "example": {
       "header": "Example",
-      "slug": "fusiontime-event-rendered"
+      "slug": "fusiontime-event-rendered",
+      "renderBtn": true
     },
     "tags": {
       "action": "",
