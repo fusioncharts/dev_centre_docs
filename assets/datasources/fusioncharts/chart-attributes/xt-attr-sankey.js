@@ -1,8 +1,8 @@
 {
     type: "sankey",
     renderAt: "container",
-    width: "850",
-    height: "600",
+    width: "100%",
+    height: "100%",
     dataFormat: "json",
     dataSource: {
         "chart": {
