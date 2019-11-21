@@ -1420,8 +1420,8 @@
       "description": "The following attributes help you control chart margins and paddings. "
     },
     {
-      "table": "The category Object",
-      "path": "category",
+      "table": "The Data Object",
+      "path": "data",
       "attrs": [
         {
           "description": "Alpha for the pie.",
@@ -1474,8 +1474,8 @@
           "name": "showValue"
         }
       ],
-      "description": "The attributes of the `category` object are used to define and customize individual x-axis labels for multi-series charts.",
-      "description": "For a multi-level pie chart, the `category` object is used to define product categories that will be shown on the chart. For defining sub-categories, the `category` object for the sub-category is nested within the `category` object of the main category."
+      "description": "The attributes of the `data` object are used to define and customize individual labels for the charts.",
+      "
     }
   ]
   
