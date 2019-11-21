@@ -49,7 +49,7 @@ After downloading the fusioncharts components, add `django-fusioncharts` wrapper
 
 The directory structure will look like this:
 
-![Django Folder Structure](/images/django-folder-structure.png)
+<img src="{% site.BASE_URL %}/images/django-folder-structure.png" width="300" height="500" alt="Django Folder Structure">
 
 ### Preparing the Data
 
@@ -363,7 +363,7 @@ Now go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) and that's it!
 
 ### See your Chart
 
-You should be able to see the chart as shown below.
+You should be able to see the chart as shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
