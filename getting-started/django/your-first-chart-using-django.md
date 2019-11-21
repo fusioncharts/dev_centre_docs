@@ -37,7 +37,7 @@ python manage.py startapp fusioncharts
 
 Download the FusionCharts library to get the `django-fusioncharts` wrapper from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=django).
 
-The trial version does not have any feature or time restriction. It just includes a link to [www.fusioncharts.com](http://www.fusioncharts.com/) in your chart. If you would like to use charts for commercial usage, without this link, [please purchase a license](https://fusioncharts.com/buy). If you're an existing customer, you can [download your licensed version here](https://puc.fusioncharts.com/).
+
 
 After downloading the fusioncharts components, add `django-fusioncharts` wrapper and Fusioncharts Javascript files in your project as below:
 
@@ -125,7 +125,7 @@ dataSource["data"].append({"label": 'China', "value": '30'})
 
 ### Configure your Chart
 
-Now that the data's ready, you've to work on the styling, the positioning and giving your chart a context. First, we add the chart attributes in the views.py file.
+Now that the data's ready, you've to work on the styling, the positioning and giving your chart a context. First, we add the chart attributes in the `views.py` file.
 
 ```javascript
 # The `chartConfig` dict contains key-value pairs of data for chart attribute
