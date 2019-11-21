@@ -10,19 +10,19 @@
             "showPlotBorder": "1",
             "animation": "1",
             "paletteColors": "8BBA00, F6BD0F, FF654F, AFD8F8, FDB398, CDC309, B1D0D2, FAD1B9, B8A79E, D7CEA5, C4B3CE, E9D3BE, EFE9AD, CEA7A2, B2D9BA",
-            "animationDuration": "2",
+            "animationDuration": "2"
         },
         data: [{
                 "id": "Flare",
                 "parent": "",
                 "label": "Flare",
-                "value": "",
+                "value": "1"
             },
             {
                 "id": "Analytics",
                 "parent": "Flare",
                 "label": "Analytics",
-                "value": ""
+                "value": "1"
             },
             {
                 "id": "Cluster",
