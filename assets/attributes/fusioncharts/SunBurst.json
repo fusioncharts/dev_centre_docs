@@ -1474,8 +1474,7 @@
           "name": "showValue"
         }
       ],
-      "description": "The attributes of the `data` object are used to define and customize individual labels for the charts.",
-      "
+      "description": "The attributes of the `data` object are used to define and customize individual labels for the charts."
     }
   ]
   
