@@ -14,29 +14,24 @@ The FusionCharts Django wrapper requires Python 2.7 or higher.
 
 ### Prerequisite
 
-You need to have a django project setup before proceeding any further. If not, you can follow the below steps to initiate the project. Find more about how to configure Django[ here](https://docs.djangoproject.com/en/2.2/topics/install/).
+You need to have a django project setup before proceeding any further. If not, you can follow the below steps to initiate the project. Find more about how to configure Django [here](https://docs.djangoproject.com/en/2.2/topics/install/).
 
 Open the terminal and enter the following commands:
 
-* Create a new django project (Eg. - FusionChartsProject):
+- Create a new django project (Eg. - FusionChartsProject):
 
-```
-
+```javascript
 django-admin startproject FusionChartsProject
-
 cd FusionChartsProject
-
 ```
 
-* Create a new django app (Eg.- fusioncharts) in the project directory:
+- Create a new django app (Eg.- fusioncharts) in the project directory:
 
-```
-
+```javascript
 python manage.py startapp fusioncharts
-
 ```
 
-* Open the `settings.py` file and add the name of the django app in the `'INSTALLED_APPS'` .
+- Open the `settings.py` file and add the name of the django app in the `'INSTALLED_APPS'` .
 
 ### Installation & Including Dependencies
 
@@ -46,13 +41,13 @@ Download the FusionCharts library to get the `django-fusioncharts` wrapper below
 
 The trial version does not have any feature or time restriction. It just includes a link to [www.fusioncharts.com](http://www.fusioncharts.com/) in your chart. If you would like to use charts for commercial usage, without this link, [please purchase a license](https://fusioncharts.com/buy). If you're an existing customer, you can [download your licensed version here](https://puc.fusioncharts.com/).
 
-After downloading the fusioncharts components, add `django-fusioncharts` wrapper and Fusioncharts Javascript files in your project  as below:
+After downloading the fusioncharts components, add `django-fusioncharts` wrapper and Fusioncharts Javascript files in your project as below:
 
-* Copy the `fusioncharts.py` file from your downloaded FusionCharts Library. It is present at - `Integrations > django > fusioncharts-wrapper` . Paste it in the fusioncharts app directory.
+- Copy the `fusioncharts.py` file from your downloaded FusionCharts Library. It is present at - `Integrations > django > fusioncharts-wrapper` . Paste it in the fusioncharts app directory.
 
-* Create a `static` folder inside fusioncharts (app) directory. Within the static folder, create another folder with the same name as that of the app (`fusioncharts`) and copy all the Javascript files from the downloaded FusionCharts library (`fusioncharts-suite-xt > js`) in it.
+- Create a `static` folder inside fusioncharts (app) directory. Within the static folder, create another folder with the same name as that of the app (`fusioncharts`) and copy all the Javascript files from the downloaded FusionCharts library (`fusioncharts-suite-xt > js`) in it.
 
-* Create a `template` folder inside the fusioncharts (app) directory.
+- Create a `template` folder inside the fusioncharts (app) directory.
 
 The directory structure will look like this:
 
@@ -62,59 +57,54 @@ The directory structure will look like this:
 
 Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
-
-Country|No. of Oil Reserves|
--|-
-Venezuela|290K|
-Saudi|260K|
-Canada|180K|
-Iran|140K|
-Russia|115K|
-UAE|100K|
-US|30K|
-China|30K|
-
-
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290K                |
+| Saudi     | 260K                |
+| Canada    | 180K                |
+| Iran      | 140K                |
+| Russia    | 115K                |
+| UAE       | 100K                |
+| US        | 30K                 |
+| China     | 30K                 |
 
 Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in **JSON** format. First let's create a dictionary in `views.py` file where we will store all the values and then it will get converted to a JSON object.
 
-```
-
+```javascript
 // Preparing the chart data
+dataSource = OrderedDict()
 
-	   dataSource = OrderedDict()
+# The `chartData` dict contains key-value pairs of data
 
-  # The `chartData` dict contains key-value pairs of data
+chartData = OrderedDict()
 
-   chartData = OrderedDict()
+chartData["Venezuela"] = 290
 
-   chartData["Venezuela"] = 290
+chartData["Saudi"] = 260
 
-   chartData["Saudi"] = 260
+chartData["Canada"] = 180
 
-   chartData["Canada"] = 180
+chartData["Iran"] = 140
 
-   chartData["Iran"] = 140
+chartData["Russia"] = 115
 
-   chartData["Russia"] = 115
+chartData["UAE"] = 100
 
-   chartData["UAE"] = 100
+chartData["US"] = 30
 
-   chartData["US"] = 30
+chartData["China"] = 30
 
-   chartData["China"] = 30
+dataSource["data"] = []
 
-   dataSource["data"] = []
+# Convert the data in the `chartData`array into a format that can be consumed by FusionCharts.
 
-   # Convert the data in the `chartData`array into a format that can be consumed by FusionCharts.
+# The data for the chart should be in an array wherein each element of the array
 
-   # The data for the chart should be in an array wherein each element of the array
+# is a JSON object# having the `label` and `value` as keys.
 
-   # is a JSON object# having the `label` and `value` as keys.
-
-  # Insert the data in `chartData` into the `dataSource['data']` list.
+# Insert the data in `chartData` into the `dataSource['data']` list.
 
 dataSource["data"].append({"label": 'Venezuela', "value": '290'})
 
@@ -133,40 +123,37 @@ dataSource["data"].append({"label": 'UAE', "value": '100'})
 dataSource["data"].append({"label": 'US', "value": '30'})
 
 dataSource["data"].append({"label": 'China', "value": '30'})
-
 ```
 
 ### Configure your Chart
 
 Now that the data's ready, you've to work on the styling, the positioning and giving your chart a context. First, we add the chart attributes in the views.py file.
 
+```javascript
+# The `chartConfig` dict contains key-value pairs of data for chart attribute
+
+chartConfig = OrderedDict()
+
+chartConfig["caption"] = "Countries With Most Oil Reserves [2017-18]"
+
+chartConfig["subCaption"] = "In MMbbl = One Million barrels"
+
+chartConfig["xAxisName"] = "Country"
+
+chartConfig["yAxisName"] = "Reserves (MMbbl)"
+
+chartConfig["numberSuffix"] = "K"
+
+chartConfig["theme"] = "fusion"
+
+dataSource["chart"] = chartConfig
 ```
 
- # The `chartConfig` dict contains key-value pairs of data for chart attribute
+- Create an `index.html` file inside the `template` folder (created previously in the fusioncharts directory) to create the **container** for the chart and to include the FusionCharts Javascript files and FusionCharts theme file to apply the style to the charts.
 
-   chartConfig = OrderedDict()
-
-   chartConfig["caption"] = "Countries With Most Oil Reserves [2017-18]"
-
-   chartConfig["subCaption"] = "In MMbbl = One Million barrels"
-
-   chartConfig["xAxisName"] = "Country"
-
-   chartConfig["yAxisName"] = "Reserves (MMbbl)"
-
-   chartConfig["numberSuffix"] = "K"
-
-   chartConfig["theme"] = "fusion"
-
-                dataSource["chart"] = chartConfig
+      			Local
 
 ```
-
-* Create an `index.html` file inside the `template` folder (created previously in the fusioncharts directory) to create the **container** for the chart and to include the FusionCharts Javascript files and FusionCharts theme file to apply the style to the charts.
-
-			Local
-
-```	
 
 <!DOCTYPE html>
 
@@ -196,7 +183,7 @@ Now that the data's ready, you've to work on the styling, the positioning and gi
 
 ```
 
-			CDN
+    		CDN
 
 ```
 
@@ -224,7 +211,7 @@ Now that the data's ready, you've to work on the styling, the positioning and gi
 
 ```
 
-* Update the path of static files and templates in the `settings.py` file. Add the template location in the `DIRS` in `TEMPLATES` list on the `settings.py` file. Refer to the code below:
+- Update the path of static files and templates in the `settings.py` file. Add the template location in the `DIRS` in `TEMPLATES` list on the `settings.py` file. Refer to the code below:
 
 ```
 
@@ -234,13 +221,13 @@ Now that the data's ready, you've to work on the styling, the positioning and gi
 
 Create a new variable as `STATIC_ROOT` and Update the location of static files in the `settings.py` file. Refer to the code below:
 
-```	
+```
 
 STATIC_ROOT = 'FusionChartsProject/fusioncharts/static'
 
 ```
 
-* Run the collectstatic command to collect the static files from the installed apps and copy them in STATICFILE_STORAGE defined in `STATIC_ROOT`  :
+- Run the collectstatic command to collect the static files from the installed apps and copy them in STATICFILE_STORAGE defined in `STATIC_ROOT` :
 
 ```
 
@@ -252,9 +239,9 @@ python manage.py collectstatic
 
 Let's create a Column 2D Chart using the `django-fusioncharts` wrapper showing "Countries with most Oil Reserves".
 
-* Add the following code in the `views.py` file.
+- Add the following code in the `views.py` file.
 
-* The `views.py` file will have the `chart constructor`, `attributes` and the `datasource` required to render the chart. The consolidated code is shown below:
+- The `views.py` file will have the `chart constructor`, `attributes` and the `datasource` required to render the chart. The consolidated code is shown below:
 
 ```
 
@@ -354,7 +341,7 @@ dataSource["data"].append({"label": 'China', "value": '30'})
 
 ```
 
-* Create a new file `urls.py` in the `fusioncharts` (app) directory and add the following code to automatically set the URL to render the chart.
+- Create a new file `urls.py` in the `fusioncharts` (app) directory and add the following code to automatically set the URL to render the chart.
 
 ```
 
@@ -372,9 +359,9 @@ urlpatterns = [
 
 ```
 
-	This will call the function `myFirstChart()` from `views.py` file and will create a location to display the chart at this particular address.
+    This will call the function `myFirstChart()` from `views.py` file and will create a location to display the chart at this particular address.
 
-* If you look into your main project directory (`FusionChartsProject`), there is another `urls.py` file. In that file, add another path which points to `urls.py` file in the app (`fusioncharts`) directory.
+- If you look into your main project directory (`FusionChartsProject`), there is another `urls.py` file. In that file, add another path which points to `urls.py` file in the app (`fusioncharts`) directory.
 
 ```
 
