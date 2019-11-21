@@ -35,9 +35,7 @@ python manage.py startapp fusioncharts
 
 ### Installation & Including Dependencies
 
-Download the FusionCharts library to get the `django-fusioncharts` wrapper below:
-
-<form appears here>
+Download the FusionCharts library to get the `django-fusioncharts` wrapper from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=django).
 
 The trial version does not have any feature or time restriction. It just includes a link to [www.fusioncharts.com](http://www.fusioncharts.com/) in your chart. If you would like to use charts for commercial usage, without this link, [please purchase a license](https://fusioncharts.com/buy). If you're an existing customer, you can [download your licensed version here](https://puc.fusioncharts.com/).
 
@@ -51,7 +49,7 @@ After downloading the fusioncharts components, add `django-fusioncharts` wrapper
 
 The directory structure will look like this:
 
-![](null)
+![Django Folder Structure](/images/django-folder-structure.png)
 
 ### Preparing the Data
 
@@ -151,88 +149,69 @@ dataSource["chart"] = chartConfig
 
 - Create an `index.html` file inside the `template` folder (created previously in the fusioncharts directory) to create the **container** for the chart and to include the FusionCharts Javascript files and FusionCharts theme file to apply the style to the charts.
 
-      			Local
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='local'>Local</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-```
+<div class='tab local-tab active'>
+<pre><code class="language-javascript">
+&lt;!DOCTYPE html%gt;
+&lt;html%gt;
+&lt;head%gt;
+    &lt;title%gt;FC-python wrapper&lt;/title%gt;
+    {% load static %}
+    &lt;script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"%gt;&lt;/script%gt;
+    &lt;script type="text/javascript" src="{% static "fusioncharts/fusioncharts.charts.js" %}"%gt;&lt;/script%gt;
+    &lt;script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"%gt;&lt;/script%gt;
+    &lt;/head%gt;
+    &lt;body%gt;
+        &lt;div id="myFirstchart-container"%gt;{{ output|safe }}&lt;/div%gt;
+    &lt;/body%gt;
+&lt;/html%gt;
 
-<!DOCTYPE html>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-<html>
+</pre>
+</div>
+<div class='tab cdn-tab'>
+<pre><code class="language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;FC-python wrapper&lt;/title&gt;
+        &lt;script type="text/javascript" src="[https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js](https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id="myFirstchart-container"&gt;{{ output|safe }}&lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-<head>
-
-  <title>FC-python wrapper</title>
-
-  {% load static %}
-
-  <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-
-  <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.charts.js" %}"></script>
-
-<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
-
-</head>
-
-<body>
-
-  <div id="myFirstchart-container">{{ output|safe }}</div>
-
-</body>
-
-</html>
-
-```
-
-    		CDN
-
-```
-
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-<title>FC-python wrapper</title>
-
-<script type="text/javascript" src="[https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js](https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)"></script>
-
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-</head>
-
-<body>
-
-<div id="myFirstchart-container">{{ output|safe }}</div>
-
-</body>
-
-</html>
-
-```
+</pre>
+</div>
+</div>
+</div>
 
 - Update the path of static files and templates in the `settings.py` file. Add the template location in the `DIRS` in `TEMPLATES` list on the `settings.py` file. Refer to the code below:
 
-```
-
+```javascript
 'DIRS': ['FusionChartsProject/fusioncharts/templates'],
-
 ```
 
 Create a new variable as `STATIC_ROOT` and Update the location of static files in the `settings.py` file. Refer to the code below:
 
-```
-
-STATIC_ROOT = 'FusionChartsProject/fusioncharts/static'
-
+```javascript
+STATIC_ROOT = "FusionChartsProject/fusioncharts/static";
 ```
 
 - Run the collectstatic command to collect the static files from the installed apps and copy them in STATICFILE_STORAGE defined in `STATIC_ROOT` :
 
-```
-
+```javascript
 python manage.py collectstatic
-
 ```
 
 ### Create your Chart
@@ -243,8 +222,7 @@ Let's create a Column 2D Chart using the `django-fusioncharts` wrapper showing "
 
 - The `views.py` file will have the `chart constructor`, `attributes` and the `datasource` required to render the chart. The consolidated code is shown below:
 
-```
-
+```javascript
 from django.shortcuts import render
 
 from django.http import HttpResponse
@@ -338,13 +316,11 @@ dataSource["data"].append({"label": 'China', "value": '30'})
        'output': column2D.render()
 
    })
-
 ```
 
 - Create a new file `urls.py` in the `fusioncharts` (app) directory and add the following code to automatically set the URL to render the chart.
 
-```
-
+```javascript
 from django.contrib import admin
 
 from django.urls import path
@@ -356,15 +332,13 @@ urlpatterns = [
    path('', views.myFirstChart , name="demo"),
 
 ]
-
 ```
 
-    This will call the function `myFirstChart()` from `views.py` file and will create a location to display the chart at this particular address.
+> This will call the function `myFirstChart()` from `views.py` file and will create a location to display the chart at this particular address.
 
 - If you look into your main project directory (`FusionChartsProject`), there is another `urls.py` file. In that file, add another path which points to `urls.py` file in the app (`fusioncharts`) directory.
 
-```
-
+```javascript
 from django.contrib import admin
 
 from django.urls import path, include
@@ -374,19 +348,15 @@ urlpatterns = [
    path('admin/', admin.site.urls),
 
    path('', include('fusioncharts.urls'))
-
 ]
-
 ```
 
 ### Render the Chart
 
 With the container for the chart created in the `index.html`, run the following command to render the chart:
 
-```
-
+```javascript
 python manage.py runserver
-
 ```
 
 Now go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) and that's it!
@@ -395,7 +365,7 @@ Now go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) and that's it!
 
 You should be able to see the chart as shown below.
 
-<<<<<<< Sample chart >>>>>>>
+{% embed_chart getting-started-your-first-chart.js %}
 
 If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
 
