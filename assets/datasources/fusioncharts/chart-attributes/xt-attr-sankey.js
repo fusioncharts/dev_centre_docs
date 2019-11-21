@@ -1,369 +1,318 @@
 {
-    type: 'sankey',
-    renderAt: 'chart-container',
-    width: '100%',
-    height: '100%',
-    dataFormat: 'json',
+    type: "sankey",
+    renderAt: "container",
+    width: "850",
+    height: "600",
+    dataFormat: "json",
     dataSource: {
         "chart": {
-            "caption": "Sales of Beer & Ice-cream vs Temperature",
-            "subCaption": "Los Angeles Topanga",
-            "baseFont": "Helvetica Neue,Arial",
-            "xAxisName": "Average Day Temperature",
-            "yAxisName": "Sales (In USD)",
-            "xAxisMinValue": "23",
-            "xAxisMaxValue": "95",
-            "yNumberPrefix": "$",
-            "xNumberSuffix": "&deg; F",
-            "theme": "fusion"
+            basefont: "IBM Plex Sans",
+            orientation: "orientation",
+            caption: "FusionCharts Sankey Diagram",
+            captionpadding: "40",
+            captionfontsize: "30",
+            captionfontcolor: "ededed",
+            bgcolor: "#262932",
+            bgalpha: 100,
+            basefontsize: "14",
+            linkcolor: "blend",
+            plothighlighteffect: "fadeout",
+            nodelabelfontcolor: "ededed",
+            legendBgAlpha: "0",
+            legendBorderThickness: "0",
+            legendBorderAlpha: "0",
+            legendShadow: "0",
+            legendItemFontSize: "12",
+            legendItemFontColor: "#ededed",
+            drawCustomLegendIcon: "1",
+            legendIconSides: "2",
+            showborder: "0",
+            legendIconBorderThickness: "0",
+            legendItemHiddenColor: "#CCCCCC",
         },
-        "categories": [{
-            "verticalLineDashed": "1",
-            "verticalLineDashLen": "1",
-            "verticalLineDashGap": "1",
-            "verticalLineThickness": "1",
-            "verticalLineColor": "#000000",
-            "category": [{
-                "x": "23",
-                "label": "23\xB0 F",
-                "showverticalline": "0"
-            }, {
-                "x": "32",
-                "label": "32\xB0 F",
-                "showverticalline": "1"
-            }, {
-                "x": "50",
-                "label": "50\xB0 F",
-                "showverticalline": "1"
-            }, {
-                "x": "68",
-                "label": "68\xB0 F",
-                "showverticalline": "1"
-            }, {
-                "x": "80",
-                "label": "80\xB0 F",
-                "showverticalline": "1"
-            }, {
-                "x": "95",
-                "label": "95\xB0 F",
-                "showverticalline": "1"
-            }]
-        }],
-        "dataset": [{
-            "seriesname": "Ice Cream",
-            "showregressionline": "1",
-            "data": [{
-                "x": "23",
-                "y": "1560"
-            }, {
-                "x": "24",
-                "y": "1500"
-            }, {
-                "x": "24",
-                "y": "1680"
-            }, {
-                "x": "25",
-                "y": "1780"
-            }, {
-                "x": "25",
-                "y": "1620"
-            }, {
-                "x": "26",
-                "y": "1810"
-            }, {
-                "x": "27",
-                "y": "2310"
-            }, {
-                "x": "29",
-                "y": "2620"
-            }, {
-                "x": "31",
-                "y": "2500"
-            }, {
-                "x": "32",
-                "y": "2410"
-            }, {
-                "x": "35",
-                "y": "2880"
-            }, {
-                "x": "36",
-                "y": "3910"
-            }, {
-                "x": "34",
-                "y": "3960"
-            }, {
-                "x": "38",
-                "y": "4080"
-            }, {
-                "x": "40",
-                "y": "4190"
-            }, {
-                "x": "41",
-                "y": "4170"
-            }, {
-                "x": "42",
-                "y": "4280"
-            }, {
-                "x": "54",
-                "y": "5180"
-            }, {
-                "x": "53",
-                "y": "5770"
-            }, {
-                "x": "55",
-                "y": "5900"
-            }, {
-                "x": "56",
-                "y": "5940"
-            }, {
-                "x": "58",
-                "y": "6090"
-            }, {
-                "x": "61",
-                "y": "6086"
-            }, {
-                "x": "67",
-                "y": "6100"
-            }, {
-                "x": "68",
-                "y": "6200"
-            }, {
-                "x": "70",
-                "y": "6360"
-            }, {
-                "x": "75",
-                "y": "6450"
-            }, {
-                "x": "79",
-                "y": "6650"
-            }, {
-                "x": "80",
-                "y": "6710"
-            }, {
-                "x": "79",
-                "y": "6975"
-            }, {
-                "x": "82",
-                "y": "7000"
-            }, {
-                "x": "85",
-                "y": "7150"
-            }, {
-                "x": "86",
-                "y": "7160"
-            }, {
-                "x": "86",
-                "y": "7200"
-            }, {
-                "x": "88",
-                "y": "7230"
-            }, {
-                "x": "87",
-                "y": "7210"
-            }, {
-                "x": "86",
-                "y": "7480"
-            }, {
-                "x": "89",
-                "y": "7540"
-            }, {
-                "x": "89",
-                "y": "7400"
-            }, {
-                "x": "90",
-                "y": "7500"
-            }, {
-                "x": "92",
-                "y": "7640"
-            }]
-        }, {
-            "seriesname": "Beer",
-            "showregressionline": "1",
-            "data": [{
-                "x": "23",
-                "y": "3160"
-            }, {
-                "x": "24",
-                "y": "3000"
-            }, {
-                "x": "24",
-                "y": "3080"
-            }, {
-                "x": "25",
-                "y": "3680"
-            }, {
-                "x": "25",
-                "y": "3320"
-            }, {
-                "x": "26",
-                "y": "3810"
-            }, {
-                "x": "27",
-                "y": "5310"
-            }, {
-                "x": "29",
-                "y": "3620"
-            }, {
-                "x": "31",
-                "y": "4100"
-            }, {
-                "x": "32",
-                "y": "3910"
-            }, {
-                "x": "35",
-                "y": "4280"
-            }, {
-                "x": "36",
-                "y": "4210"
-            }, {
-                "x": "34",
-                "y": "4160"
-            }, {
-                "x": "38",
-                "y": "4480"
-            }, {
-                "x": "40",
-                "y": "4890"
-            }, {
-                "x": "41",
-                "y": "4770"
-            }, {
-                "x": "42",
-                "y": "4880"
-            }, {
-                "x": "54",
-                "y": "4980"
-            }, {
-                "x": "53",
-                "y": "4770"
-            }, {
-                "x": "55",
-                "y": "4900"
-            }, {
-                "x": "56",
-                "y": "4940"
-            }, {
-                "x": "58",
-                "y": "4990"
-            }, {
-                "x": "61",
-                "y": "5086"
-            }, {
-                "x": "67",
-                "y": "5100"
-            }, {
-                "x": "68",
-                "y": "4700"
-            }, {
-                "x": "70",
-                "y": "5360"
-            }, {
-                "x": "75",
-                "y": "5150"
-            }, {
-                "x": "79",
-                "y": "5450"
-            }, {
-                "x": "80",
-                "y": "5010"
-            }, {
-                "x": "79",
-                "y": "4975"
-            }, {
-                "x": "82",
-                "y": "5400"
-            }, {
-                "x": "85",
-                "y": "5150"
-            }, {
-                "x": "86",
-                "y": "5460"
-            }, {
-                "x": "86",
-                "y": "5000"
-            }, {
-                "x": "88",
-                "y": "5200"
-            }, {
-                "x": "87",
-                "y": "5410"
-            }, {
-                "x": "86",
-                "y": "5480"
-            }, {
-                "x": "89",
-                "y": "5440"
-            }, {
-                "x": "89",
-                "y": "5300"
-            }, {
-                "x": "90",
-                "y": "5500"
-            }, {
-                "x": "92",
-                "y": "5240"
-            }]
-        }],
-        "vtrendlines": [{
-            "line": [{
-                "startvalue": "23",
-                "endvalue": "32",
-                "istrendzone": "1",
-                "displayvalue": " ",
-                "color": "#adebff",
-                "alpha": "25"
-            }, {
-                "startvalue": "23",
-                "endvalue": "32",
-                "istrendzone": "1",
-                "alpha": "0",
-                "displayvalue": "Very cold"
-            }, {
-                "startvalue": "32",
-                "endvalue": "50",
-                "istrendzone": "1",
-                "displayvalue": " ",
-                "color": "#adebff",
-                "alpha": "15"
-            }, {
-                "startvalue": "32",
-                "endvalue": "50",
-                "istrendzone": "1",
-                "alpha": "0",
-                "displayvalue": "Cold"
-            }, {
-                "startvalue": "50",
-                "endvalue": "68",
-                "istrendzone": "1",
-                "alpha": "0",
-                "displayvalue": "Moderate"
-            }, {
-                "startvalue": "68",
-                "endvalue": "80",
-                "istrendzone": "1",
-                "alpha": "0",
-                "displayvalue": "Hot"
-            }, {
-                "startvalue": "68",
-                "endvalue": "80",
-                "istrendzone": "1",
-                "displayvalue": " ",
-                "color": "#f2a485",
-                "alpha": "15"
-            }, {
-                "startvalue": "80",
-                "endvalue": "95",
-                "istrendzone": "1",
-                "alpha": "0",
-                "displayvalue": "Very hot"
-            }, {
-                "startvalue": "80",
-                "endvalue": "95",
-                "istrendzone": "1",
-                "displayvalue": " ",
-                "color": "#f2a485",
-                "alpha": "25"
-            }]
-        }]
+        "nodes": [{
+                "label": "Brazil",
+                "nodeWidth": 10
+            },
+            {
+                "label": "Canada",
+                "nodeWidth": 10
+            },
+            {
+                "label": "Mexico",
+                "nodeWidth": 10
+            },
+            {
+                "label": "USA",
+                "nodeWidth": 10
+            },
+            {
+                "label": "Portugal",
+                "nodeWidth": 10
+            },
+            {
+                "label": "France",
+                "nodeWidth": 10
+            },
+            {
+                "label": "Spain",
+                "nodeWidth": 10
+            },
+            {
+                "label": "England",
+                "nodeWidth": 10
+            },
+            {
+                "label": "South Africa",
+                "nodeWidth": 10
+            },
+            {
+                "label": "Angola",
+                "nodeWidth": 10
+            },
+            {
+                "label": "Senegal",
+                "nodeWidth": 10
+            },
+            {
+                "label": "Mali",
+                "nodeWidth": 10
+            },
+            {
+                "label": "Morocco",
+                "nodeWidth": 10
+            }
+        ],
+        "links": [{
+                "from": "Brazil",
+                "to": "Portugal",
+                "value": 5
+            },
+            {
+                "from": "Brazil",
+                "to": "France",
+                "value": 1
+            },
+            {
+                "from": "Brazil",
+                "to": "Spain",
+                "value": 1
+            },
+            {
+                "from": "Brazil",
+                "to": "England",
+                "value": 1
+            },
+            {
+                "from": "Canada",
+                "to": "Portugal",
+                "value": 1
+            },
+            {
+                "from": "Canada",
+                "to": "France",
+                "value": 5
+            },
+            {
+                "from": "Canada",
+                "to": "England",
+                "value": 1
+            },
+            {
+                "from": "Mexico",
+                "to": "Portugal",
+                "value": 1
+            },
+            {
+                "from": "Mexico",
+                "to": "France",
+                "value": 1
+            },
+            {
+                "from": "Mexico",
+                "to": "Spain",
+                "value": 5
+            },
+            {
+                "from": "Mexico",
+                "to": "England",
+                "value": 1
+            },
+            {
+                "from": "USA",
+                "to": "Portugal",
+                "value": 1
+            },
+            {
+                "from": "USA",
+                "to": "France",
+                "value": 1
+            },
+            {
+                "from": "USA",
+                "to": "Spain",
+                "value": 1
+            },
+            {
+                "from": "USA",
+                "to": "England",
+                "value": 5
+            },
+            {
+                "from": "Portugal",
+                "to": "Angola",
+                "value": 2
+            },
+            {
+                "from": "Portugal",
+                "to": "Senegal",
+                "value": 1
+            },
+            {
+                "from": "Portugal",
+                "to": "Morocco",
+                "value": 1
+            },
+            {
+                "from": "Portugal",
+                "to": "South Africa",
+                "value": 3
+            },
+            {
+                "from": "France",
+                "to": "Angola",
+                "value": 1
+            },
+            {
+                "from": "France",
+                "to": "Senegal",
+                "value": 3
+            },
+            {
+                "from": "France",
+                "to": "Mali",
+                "value": 3
+            },
+            {
+                "from": "France",
+                "to": "Morocco",
+                "value": 3
+            },
+            {
+                "from": "France",
+                "to": "South Africa",
+                "value": 1
+            },
+            {
+                "from": "Spain",
+                "to": "Senegal",
+                "value": 1
+            },
+            {
+                "from": "Spain",
+                "to": "Morocco",
+                "value": 3
+            },
+            {
+                "from": "Spain",
+                "to": "South Africa",
+                "value": 1
+            },
+            {
+                "from": "England",
+                "to": "Angola",
+                "value": 1
+            },
+            {
+                "from": "England",
+                "to": "Senegal",
+                "value": 1
+            },
+            {
+                "from": "England",
+                "to": "Morocco",
+                "value": 2
+            },
+            {
+                "from": "England",
+                "to": "South Africa",
+                "value": 7
+            },
+            {
+                "from": "South Africa",
+                "to": "China",
+                "value": 5
+            },
+            {
+                "from": "South Africa",
+                "to": "India",
+                "value": 1
+            },
+            {
+                "from": "South Africa",
+                "to": "Japan",
+                "value": 3
+            },
+            {
+                "from": "Angola",
+                "to": "China",
+                "value": 5
+            },
+            {
+                "from": "Angola",
+                "to": "India",
+                "value": 1
+            },
+            {
+                "from": "Angola",
+                "to": "Japan",
+                "value": 3
+            },
+            {
+                "from": "Senegal",
+                "to": "China",
+                "value": 5
+            },
+            {
+                "from": "Senegal",
+                "to": "India",
+                "value": 1
+            },
+            {
+                "from": "Senegal",
+                "to": "Japan",
+                "value": 3
+            },
+            {
+                "from": "Mali",
+                "to": "China",
+                "value": 5
+            },
+            {
+                "from": "Mali",
+                "to": "India",
+                "value": 1
+            },
+            {
+                "from": "Mali",
+                "to": "Japan",
+                "value": 3
+            },
+            {
+                "from": "Morocco",
+                "to": "China",
+                "value": 5
+            },
+            {
+                "from": "Morocco",
+                "to": "India",
+                "value": 1
+            },
+            {
+                "from": "Morocco",
+                "to": "Japan",
+                "value": 3
+            }
+        ]
     }
 }
