@@ -49,7 +49,7 @@ After downloading the fusioncharts components, add `django-fusioncharts` wrapper
 
 The directory structure will look like this:
 
-<img src="{% site.BASE_URL %}/images/django-folder-structure.png" width="300" height="420" alt="Django Folder Structure">
+<img src="{% site.BASE_URL %}/images/django-folder-structure.png" width="250" height="350" alt="Django Folder Structure">
 
 ### Preparing the Data
 
