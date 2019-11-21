@@ -38,12 +38,11 @@ python manage.py startapp fusioncharts
 Download the FusionCharts library to get the `django-fusioncharts` wrapper from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=django).
 
 
-
 After downloading the fusioncharts components, add `django-fusioncharts` wrapper and Fusioncharts Javascript files in your project as below:
 
 - Copy the `fusioncharts.py` file from your downloaded FusionCharts Library. It is present at - `Integrations > django > fusioncharts-wrapper` . Paste it in the fusioncharts app directory.
 
-- Create a `static` folder inside fusioncharts (app) directory. Within the static folder, create another folder with the same name as that of the app (`fusioncharts`) and copy all the Javascript files from the downloaded FusionCharts library (`fusioncharts-suite-xt > js`) in it.
+- Create a `static` folder inside fusioncharts (app) directory. Within the static folder, create another folder with the same name as that of the app (`fusioncharts`) and copy all the Javascript files from the downloaded FusionCharts library (`fusioncharts-suite-xt > js`) inside `static>fusioncharts` directory.
 
 - Create a `template` folder inside the fusioncharts (app) directory.
 
@@ -359,11 +358,8 @@ With the container for the chart created in the `index.html`, run the following 
 python manage.py runserver
 ```
 
-Now go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) and that's it!
+Now go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) and you should be able to see the chart as shown below.
 
-### See your Chart
-
-You should be able to see the chart as shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
