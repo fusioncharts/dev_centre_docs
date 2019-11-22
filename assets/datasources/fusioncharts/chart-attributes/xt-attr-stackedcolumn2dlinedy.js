@@ -1,8 +1,8 @@
 {
     type: 'stackedcolumn2dlinedy',
     renderAt: 'container',
-    width: '550',
-    height: '500',
+    width: '100%',
+    height: '100%',
     dataFormat: 'json',
     dataSource: {
         chart: {
