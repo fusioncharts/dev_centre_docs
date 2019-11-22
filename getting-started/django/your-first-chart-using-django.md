@@ -157,19 +157,19 @@ dataSource["chart"] = chartConfig
 
 <div class='tab local-tab active'>
 <pre><code class="language-javascript">
-&lt;!DOCTYPE html%gt;
-&lt;html%gt;
-&lt;head%gt;
-    &lt;title%gt;FC-python wrapper&lt;/title%gt;
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+    &lt;title>FC-python wrapper&lt;/title>
     {% load static %}
-    &lt;script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"%gt;&lt;/script%gt;
-    &lt;script type="text/javascript" src="{% static "fusioncharts/fusioncharts.charts.js" %}"%gt;&lt;/script%gt;
-    &lt;script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"%gt;&lt;/script%gt;
-    &lt;/head%gt;
-    &lt;body%gt;
-        &lt;div id="myFirstchart-container"%gt;{{ output|safe }}&lt;/div%gt;
-    &lt;/body%gt;
-&lt;/html%gt;
+    &lt;script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}">&lt;/script>
+    &lt;script type="text/javascript" src="{% static "fusioncharts/fusioncharts.charts.js" %}">&lt;/script>
+    &lt;script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}">&lt;/script>
+    &lt;/head>
+    &lt;body>
+        &lt;div id="myFirstchart-container">{{ output|safe }}&lt;/div>
+    &lt;/body>
+&lt;/html>
 
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
