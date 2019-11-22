@@ -3120,12 +3120,6 @@
         "name": "alpha"
       },
       {
-        "description": "If you want to define your own colors for the data items on chart, use this attribute to specify color for the data item. ",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "color"
-      },
-      {
         "description": "Whether the border of this data item should appear as dashed. This is particularly useful when you want to highlight a data (such as forecast or trend etc.).",
         "range": "0/1",
         "type": "Boolean",

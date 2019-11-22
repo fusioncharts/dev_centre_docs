@@ -24,9 +24,9 @@
         xAxis: {
             binning: {
                 "year": [],
-                "month": [],
+                "month": [1],
                 "day": [],
-                "hour": [1],
+                "hour": [],
                 "minute": [],
                 "second": [],
                 "millisecond": []
