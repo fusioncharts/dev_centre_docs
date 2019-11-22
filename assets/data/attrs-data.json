@@ -673,7 +673,7 @@
 	},
 	{
 		"name": "Sunburst",
-		"json": "Sunburst",
+		"json": "SunBurst",
 		"code": "xt-attr-sunburst.js",
 		"alias": "sunburst",
 		"xls": false
