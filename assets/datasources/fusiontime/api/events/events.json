@@ -326,7 +326,8 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-nodatatodisplay"
+      "slug": "fusiontime-event-nodatatodisplay",
+      "renderBtn": true
     },
     "tags": {
       "action": "",
@@ -786,7 +787,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-chartRollOver"
+      "slug": "fusiontime-event-chartRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -903,7 +904,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-chartRollOut"
+      "slug": "fusiontime-event-chartRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -1020,7 +1021,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-chartClick"
+      "slug": "fusiontime-event-chartClick"
     },
     "tags": {
       "action": "Click",
@@ -1204,7 +1205,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-legendItemClicked"
+      "slug": "fusiontime-event-legendItemClicked"
     },
     "tags": {
       "action": "Click",
@@ -1316,7 +1317,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-legendItemRollOver"
+      "slug": "fusiontime-event-legendItemRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -1423,7 +1424,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-legendItemRollOut"
+      "slug": "fusiontime-event-legendItemRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -4324,7 +4325,7 @@
     "description": "This event is fired when the default behaviour of the `beforeDispose` event is cancelled using `event.preventDefault()` from a handler attached to the `beforeDispose` event.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-disposeCancelled"
+      "slug": "fusiontime-event-disposeCancelled"
     },
     "tags": {
       "action": "Dispose",
