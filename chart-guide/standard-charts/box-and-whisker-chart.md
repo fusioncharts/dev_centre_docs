@@ -928,3 +928,23 @@ A box and whisker chart with outlier values shown on the chart looks like this:
 {% embed_chart standard-charts-box-and-whisker-chart-example-22.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/oukgfmca/) to edit the above chart.
+
+## Specify Visibility of Categories
+
+In a box and whisker chart, you can specify the number of categories that should be visible on the canvas. To do so, set the value of the attribute `numVisiblePlot` to the number of categories you want to display. A scrollbar will automatically appear if there are too many plots to fit within the canvas.
+
+Refer to the code given below:
+
+```json
+{
+    "chart": {
+        "numVisiblePlot": "3"
+    }
+}
+```
+
+A box and whisker chart with a scroll bar looks like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-23.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2h8uj470/) to edit the above chart.
