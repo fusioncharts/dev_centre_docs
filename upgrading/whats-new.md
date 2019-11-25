@@ -4,127 +4,56 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.14.1.
+This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.15.0.
 
-## Scroll Bar 2D Chart
+It's been a while since we introduced a new chart. So this time around, we thought why not surprise you and bring in three new charts, highly requested by you, that aid in visualizing newer forms of data.
 
-FusionCharts Suite XT adds a scrolling feature to the bar 2D chart. The alias name to render the scrollable bar 2D chart is `scrollBar2D`. Set the value of `type` attribute to `scrollBar2D` to render a scrollable bar 2D chart.
+## Sankey Diagram
 
-A single-series scroll bar 2D chart looks like:
+Sankey Diagram is a type of flow diagram that depicts the flow of resources (material, energy, cost, etc.) from one node to another. A Sankey Diagram can be drawn in either a **horizontal layout (default)** or a **vertical layout**. A Sankey Diagram with horizontal orientation looks as shown below:
 
-{% embed_chart standard-charts-scroll-charts-example-10.js %}
+LIVE CHART
 
-Click [here](/chart-guide/standard-charts/scroll-charts#scroll-bar-2d-chart) to know more.
+There are `n` nodes in the Sankey Diagram provided above. A link connects any two nodes that are related to one another (i.e, a flow happens between them). If you hover over a node, you will see all the links (or relationships) associated with it. Hovering on a link will show all nodes associated with it.
 
-## Scroll Stacked Bar 2D Chart
+Click here to know more.
 
-FusionCharts Suite XT adds a scrolling feature to the stacked bar 2D chart. The alias name to render the scroll stacked bar 2D chart is `scrollStackedBar2D`. Set the value of `type` attribute to `scrollStackedBar2D` to render a scroll stacked bar 2D chart.
+## Sunburst Diagram
 
-A scroll stacked bar 2D chart looks like:
+A Sunburst chart is used to visualize relationships within hierarchical data. It shows hierarchy through a series of concentric rings, where each ring corresponds to a level in the hierarchy. Each ring can have multiple segments; each segment showing the contribution of a particular dimension in that hierarchy. Focussing on a segment in the ring gives a sense of the part to the whole relationship of this dimension with respect to its parent ring segment.
 
-{% embed_chart standard-charts-scroll-charts-example-11.js %}
+> A Sunburst chart shares similarities with a Ring Chart, Multi-level Pie Chart, Belt Chart, and a Radial Treemap.
 
-Click [here](/chart-guide/standard-charts/scroll-charts#scroll-stacked-bar-2d-chart) to know more.
+A Sunburst chart looks as follows:
 
-## Scroll Multi-series Stacked Column 2D
+LIVE CHART
 
-FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D chart. The alias name to render the scroll multi-series stacked column 2D chart is `scrollMSStackedColumn2D`. Set the value of `type` attribute to `scrollMSStackedColumn2D` to render a scroll multi-series stacked column 2D chart.
+Click here to know more.
 
-A scroll multi-series stacked column 2D chart looks like:
+## Chord Diagram
 
-{% embed_chart standard-charts-scroll-charts-example-12.js %}
+A chord diagram is a graphical way to represent flow relationship between specific entities in transitioning data. The entities (called **nodes**) are drawn along the circumference of a circular layout. The flow relationships (called **links**) are represented by arcs that connect the nodes.
 
-Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d) to know more.
+> Chord Diagrams are also referred to as Radial Network Diagram, Chord Layout, or Dependency Wheel.
 
-## Scroll Multi-series Stacked Column 2D + Line Dual Y-Axis Chart
+A simple Chord Diagram looks as shown below:
 
-FusionCharts Suite XT adds a scrolling feature to a multi-series stacked column 2D + line dual y-axis chart. The alias name to render the scroll multi-series stacked column 2D + line dual y-axis chart is `scrollMSStackedColumn2DLineDy`. Set the value of `type` attribute to `scrollMSStackedColumn2DLineDy` to render the chart.
+LIVE CHART
 
-A scroll multi-series stacked column 2D + line dual y-axis chart looks like:
+In the above diagram, there are `n` nodes. A link connects a pair of nodes where a relationship exists. Hovering on a node shows all the links (or relationships) associated with it. Likewise, hovering on a link shows the related nodes.
 
-{% embed_chart standard-charts-scroll-charts-example-13.js %}
+Click here to know more.
 
-Click [here](/chart-guide/standard-charts/scroll-charts#scroll-multi-series-stacked-column-2d-line-dual-y-axis-chart) to know more.
+## New Functionalities in Box and Whisker Chart
 
-## Stacked Column 2D Line Dual Y-axis Chart
+A box and whisker chart is a statistical chart that is used to examine and summarize a range of data values. Starting v3.15.0, FusionCharts Suite XT has introduced the following features in the existing box and whisker chart:
 
-FusionCharts Suite XT introduces a new combination chart, i.e., stacked column 2D line dual y-axis. The alias name to render the stacked column 2D line dual y-axis chart is `stackedcolumn2dlinedy`. Set the value of `type` attribute to `stackedcolumn2dlinedy` to render the chart.
+- You can apply a custom color to the icon borders.
 
-A stacked column 2D line dual y-axis chart looks like as shown below:
+- Use the `showValue` attribute to display the values of the plot (`min`, `q1`, `median`, `q3`, and `max`).
 
-{% embed_chart standard-charts-combination-chart-example-15.js %}
+- In a box and whisker chart, you can place data values either `above`, or `below` the icons. By default, the values are displayed above the icons. However, now you can change the position of the values using the attributes introduced in v3.15.0.
 
-Click [here](/chart-guide/standard-charts/combination-charts#stacked-column-2d-line-dual-y-axis-chart) to know more.
+- You can now specify pre-processed data, instead of the value array you provided earlier. Instead, you can directly provide values of specific functions like `min`, `q1`, `median`, `q3`, and `max`, to draw a box and whisker plot.
 
-## Stacked Area 2D Line Dual Y-axis Chart
-
-FusionCharts Suite XT introduces a new combination chart, i.e., stacked area 2D line dual y-axis. The alias name to render the stacked area 2D line dual y-axis chart is `stackedarea2dlinedy`. Set the value of `type` attribute to `stackedarea2dlinedy` to render the chart.
-
-A stacked area 2D line dual y-axis chart looks like as shown below:
-
-{% embed_chart standard-charts-combination-chart-example-14.js %}
-
-Click [here](/chart-guide/standard-charts/combination-charts#stacked-area-2d-line-dual-y-axis-chart) to know more.
-
-## 3D Dual Y-axis Combination Chart
-
-FusionCharts Suite XT now allows you to render a dual y-axis combination chart in 3D. The alias name to render the dual y-axis combination chart in 3D is `mscombidy3d`. Set the value of `type` attribute to `mscombidy3d` to render the chart.
-
-A dual y-axis combination chart in 3D looks like as shown below:
-
-{% embed_chart standard-charts-combination-chart-example-13.js %}
-
-Click [here](/chart-guide/standard-charts/combination-charts#3d-dual-y-axis-combination-chart) to know more.
-
-## Export Chart Data in CSV Format
-
-FusionCharts Suite XT allows you to export chart data in CSV format.
-
-A column 2D chart with export enabled is shown below. Click the <span> ![image](/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select the **Export as CSV** option to export the chart data.
-
-{% embed_chart exporting-as-image-and-pdf-introduction-example-1.js %}
-
-Click [here](/exporting-charts/using-fc-export-server/exporting-chart-data) to know more.
-
-## Display the Cumulative Sum of Stacked Area Chart
-
-FusionCharts Suite XT allows you to show the sum of the stacked area plots above the area plot. To show the sum of all the stacked data plots, set the `showSum` attribute to `1`.
-
-A stacked area 2D chart with a cumulative sum looks like:
-
-{% embed_chart display-the-cumulative-sum-of-stacked-area-chart.js %}
-
-Click [here](/chart-guide/standard-charts/stacked-charts#display-the-cumulative-sum) to know more.
-
-## Customize Data Value of an individual Data Plot
-
-FusionCharts also allows you to customize the properties of data value for an individual data plot. To customize all the data values in a chart, you have to specify the attributes under `chart` object. Whereas to customize a data value of a single plot, specify the attributes under `data` object.
-
-The column chart with customized data value look like as shown below:
-
-{% embed_chart chart-configurations-data-values-example-11.js %}
-
-Click [here](/chart-guide/chart-configurations/data-values#customize-data-value-of-an-individual-data-plot) to know more.
-
-## Reverse the Color Scale of the Linear Gauge
-
-FusionCharts allows you to reverse (right to left) the order of the color scale of the gauge.
-
-To reverse the order of the color scale of the linear gauge, set the value of `reverseScale` attribute to `1`.
-
-The gauge with reverse color scale looks like as shown below:
-
-{% embed_chart gauges-and-widgets-linear-example-28.js %}
-
-Click [here](/chart-guide/gauges-and-widgets/linear-gauge#reverse-the-order-of-the-color-scale) to know more.
-
-## Set Canvas Padding
-
-FusionCharts Suite XT allows you to add space between the canvas border and the particular side of the chart canvas. To do so, the following attributes are used:
-
-- `canvasLeftPadding`
-- `canvasRightPadding`
-- `canvasTopPadding`
-- `canvasBottomPadding`
-
-Click [here](/chart-guide/chart-configurations/chart-paddings-and-margins#set-canvas-padding) to know more.
+- You can specify the number of categories that should be visible on the canvas.
