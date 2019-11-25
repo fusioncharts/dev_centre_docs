@@ -6,7 +6,7 @@
     "example": {
       "header": "Example",
       "slug": "fusiontime-event-beforeRender",
-      "renderBtn":true
+      "renderBtn": true
 
     },
     "tags": {
@@ -2506,7 +2506,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-referenceLineRollOver"
+      "slug": "fusiontime-event-referenceLineRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -2543,7 +2543,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-referenceLineRollOut"
+      "slug": "fusiontime-event-referenceLineRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -2580,7 +2580,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-referenceLineClick"
+      "slug": "fusiontime-event-referenceLineClick"
     },
     "tags": {
       "action": "Click",
