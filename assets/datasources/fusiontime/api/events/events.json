@@ -5,8 +5,8 @@
     "info": "Calling `event.preventDefault()` from within the handler of this event will cancel the rendering process. The rendering process is triggered when the `FusionCharts#render()` method is called.",
     "example": {
       "header": "Example",
-      "slug": "fusiontime-event-beforeRender",
-      "renderBtn": true
+      "slug": "fusiontime-event-beforeRender"
+
 
     },
     "tags": {
