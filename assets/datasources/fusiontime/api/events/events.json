@@ -5,7 +5,7 @@
     "info": "Calling `event.preventDefault()` from within the handler of this event will cancel the rendering process. The rendering process is triggered when the `FusionCharts#render()` method is called.",
     "example": {
       "header": "Example",
-      "slug": "fusiontime-event-beforeRender"
+      "_slug": "fusiontime-event-beforeRender"
 
     },
     "tags": {
@@ -88,7 +88,7 @@
     "info": "The difference between this event and the rendered event is that the rendered event is triggered only when the FusionCharts#render() method is called.",
     "example": {
       "header": "Example",
-      "slug": "fusiontime-event-renderComplete"
+      "_slug": "fusiontime-event-renderComplete"
 
     },
     "tags": {
@@ -258,7 +258,7 @@
     "info": "If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in this event handler, for example, by using `setTimeout`.",
     "example": {
       "header": "Example",
-      "slug": "fusiontime-event-rendered"
+      "_slug": "fusiontime-event-rendered"
 
     },
     "tags": {
