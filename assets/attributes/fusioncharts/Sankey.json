@@ -1226,6 +1226,7 @@
   },
   {
     "table": "The Node Object",
+    "path": "nodes",
     "attrs": [
       {
         "description": "This attribute lets you specify the label text for the node. If you omit this, the node will not be displayed.",
@@ -1316,6 +1317,7 @@
   },
   {
     "table": "The Links Object",
+    "path": "links",
     "attrs": [
       {
         "description": "This attribute lets you specify the `id` of the `from` node of a link. This is a mandatory attribute. If you omit this attribute, the link will not be rendered.",
