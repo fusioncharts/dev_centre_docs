@@ -8,7 +8,7 @@ The legend is a chart element that allows you to display the series name for eac
 
 In the screenshot below, you can see the legend rendered below the time series. You can see each dataset represented by an icon.
 
-<img src="{% site.BASE_URL %}/images/fusiontime-component-legend.png" alt="Custom Range Selector" width="700" height="420">
+<img src="{% site.BASE_URL %}/images/time-component-legend.png" alt="Custom Range Selector" width="700" height="420">
 
 ### Show/Hide the Legend
 
