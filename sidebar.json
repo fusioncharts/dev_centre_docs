@@ -2031,6 +2031,10 @@
             "path": "/fusiontime/fusiontime-component/data-markers"
           },
           {
+            "title": "Legend",
+            "path": "/fusiontime/fusiontime-component/legend-in-fusiontime"
+          },
+          {
             "title": "Plot Types",
             "path": "/fusiontime/fusiontime-component/plot-types-in-fusiontime"
           }
