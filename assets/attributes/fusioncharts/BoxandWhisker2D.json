@@ -83,6 +83,41 @@
         "name": "showValues"
       },
       {
+        "description": "This attribute lets you display the mean value of the plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMeanValues"
+      },
+      {
+        "description": "This attribute lets you display the mean deviation value of a plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMDValues"
+      },
+      {
+        "description": "This attribute lets you display the standard deviation value of a plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showSDValues"
+      },
+      {
+        "description": "This attribute lets you display the quartile deviation value of a plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showQDValues"
+      },
+      {
+        "description": "This attribute lets you display the outlier value of a plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showOutlierValues"
+      },
+      {
         "description": "If you have opted to show data values, you can rotate them using this attribute.",
         "range": "0/1",
         "type": "Boolean",
@@ -234,6 +269,13 @@
         "name": "meanIconAlpha"
       },
       {
+        "description": "This attribute lets you set the border color of the mean icon.",
+        "range": "Hex color code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "meanIconBorderColor"
+      },
+      {
         "description": "This attribute allows you to set the shape of the standard deviation icon.",
         "range": "polygon/spoke",
         "type": "string",
@@ -262,6 +304,13 @@
         "range": "0 - 100",
         "type": "Number",
         "name": "SDIconAlpha"
+      },
+      {
+        "description": "This attribute lets you set the border color of the standard deviation icon.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "SDIconBorderColor"
       },
       {
         "description": "This attribute allows you to set the shape of the quartile deviation icon.",
@@ -294,6 +343,13 @@
         "name": "QDIconAlpha"
       },
       {
+        "description": "This attribute lets you set the border color of the quartile deviation icon.",
+        "range": "Hex color code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "QDIconBorderColor"
+      },
+      {
         "description": "This attribute allows you to set the shape of the median icon.",
         "range": "polygon/spoke",
         "type": "String",
@@ -322,6 +378,13 @@
         "range": "0 - 100",
         "type": "Number",
         "name": "MDIconAlpha"
+      },
+      {
+        "description": "This attribute lets you set the border color of the mean deviation icon.",
+        "range": "Hex color code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "MDIconBorderColor"
       },
       {
         "description": "This attribute allows you to draw a line connecting all the mean icons of multiple set of data.",
@@ -376,6 +439,13 @@
         "range": "0 - 100",
         "type": "Number",
         "name": "outlierIconAlpha"
+      },
+      {
+        "description": "This attribute lets you set the border color of the outlier icon.",
+        "range": "Hex color code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "outlierIconBorderColor"
       },
       {
         "description": "This attribute allows you to skip a null value and draw a line connecting the icons of multiple set of data. This is applicable for the mean icon and all the other deviation icons.",
@@ -3096,6 +3166,41 @@
         "name": "showValues"
       },
       {
+        "description": "This attribute lets you display the mean value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMeanValues"
+      },
+      {
+        "description": "This attribute lets you display the mean deviation value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMDValues"
+      },
+      {
+        "description": "This attribute lets you display the standard deviation value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showSDValues"
+      },
+      {
+        "description": "This attribute lets you display the quartile deviation value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showQDValues"
+      },
+      {
+        "description": "This attribute lets you display the outlier value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showOutlierValues"
+      },
+      {
         "description": "Specifies the font color of data values for a particular dataset.",
         "range": "Hex Color Code",
         "type": "Color",
@@ -3644,6 +3749,41 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showValue"
+      },
+      {
+        "description": "This attribute lets you display the mean value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMeanValue"
+      },
+      {
+        "description": "This attribute lets you display the mean deviation value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMDValue"
+      },
+      {
+        "description": "This attribute lets you display the standard deviation value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showSDValue"
+      },
+      {
+        "description": "This attribute lets you display the quartile deviation value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showQDValue"
+      },
+      {
+        "description": "This attribute lets you display the outlier value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showOutlierValue"
       },
       {
         "description": "Specifies the font color of a data value for an individual data plot.",
