@@ -3,6 +3,13 @@
     "table": "Functional Attributes",
     "attrs": [
       {
+        "description": "This attribute lets you specify whether the Sankey Diagram should have a vertical or horizontal orientation. \n\nDefault value: horizontal",
+        "range": "vertical / horizontal",
+        "type": "String",
+        "versionsince": "3.15.0",
+        "name": "orientation"
+      },
+      {
         "description": "This attribute gives you the option to control animation in your charts. If you do not want to animate any part of the chart, set this as 0.",
         "range": "0/1",
         "type": "Boolean",
@@ -34,7 +41,7 @@
         "name": "theme"
       },
       {
-        "description": "",
+        "description": "This attribute allows you to enable/disable dragging of nodes in a chart.",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.15.0",
@@ -615,242 +622,222 @@
     "table": "Node Label Configuration",
     "attrs": [
       {
-        "description": "",
+        "description": "This attribute allows you to enforce whether or not a label should inherit its color from the corresponding node. \n\nDefault value: 1",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "inheritLabelColorFromNode"
       },
       {
-        "description": "",
-        "range": "",
+        "description": "This attribute lets you set the spacing between the label and the node. It is not applicable when a node label is placed inside the node.",
+        "range": "In pixels",
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeLabelPadding"
       },
       {
-        "description": "",
-        "range": "",
+        "description": "This attribute lets you set the spacing between two labels in a column. It is not applicable is nodeRelaxation is enabled. \n\nDefault value: 8",
+        "range": "In pixels",
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeSpacing"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to set the width of a node. \n\nDefault value: 20",
+        "range": "In Pixels",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeWidth"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to specify whether nodes in the chart will automatically be repositioned to create an organized look. \n\nDefault value: 1",
+        "range": "0 / 1",
+        "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "nodeRelaxation"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to set the space between a node and the corresponding link.",
+        "range": "In Pixels",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeLinkPadding"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "table": "Node Label Configuration",
-    "attrs": [
+      },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you specify whether or not node labels should be displayed. \n\nDefault value: 1",
+        "range": "0 / 1",
+        "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "showNodeLabels"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you specify whether or not node values should be displayed. \n\nDefault value: 1",
+        "range": "0 / 1",
+        "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "showNodeValues"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you specify whether or not node labels should be rotated and displayed. \n\nDefault value: 1",
+        "range": "0 / 1",
+        "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "rotateNodeLabels"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you position the labels with respect to the nodes. \n\nDefault value: inside",
+        "range": "start, inside, end",
+        "type": "String",
         "versionsince": "3.15.0",
         "name": "nodeLabelPosition"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to specify the color of the node.",
+        "range": "Hex Color Code",
+        "type": "Color",
         "versionsince": "3.15.0",
         "name": "nodeColor"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the transparency of the node between `0` for transparent and `100` for opaque.",
+        "range": "0 - 100",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeAlpha"
       }
     ],
-    "description": ""
+    "description": "The attributes in this section let you customize several functional aspects of a node label."
   },
   {
     "table": "Node Label Cosmetics",
     "attrs": [
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the font family for the node label text.",
+        "range": "Font Name",
+        "type": "String",
         "versionsince": "3.15.0",
         "name": "nodeLabelFont"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the font color for the node label text.",
+        "range": "Hex Color Code",
+        "type": "Color",
         "versionsince": "3.15.0",
         "name": "nodeLabelFontColor"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the transparency of the node label between `0` for transparent and `100` for opaque.",
+        "range": "0 - 100",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeLabelAlpha"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to set the background color of the node label.",
+        "range": "Hex Color Code",
+        "type": "Color",
         "versionsince": "3.15.0",
         "name": "nodeLabelBgColor"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to set the color of the node label border.",
+        "range": "Hex Color Code",
+        "type": "Color",
         "versionsince": "3.15.0",
         "name": "nodeLabelBorderColor"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to set the thickness of the node label border.",
+        "range": "In pixels",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeLabelBorderThickness"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the font size of the node label text.",
+        "range": "0 - 72",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeLabelFontSize"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you specify whether or not the node label text should be displayed in bold. \n\nDefault value: 0",
+        "range": "0 / 1",
+        "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "nodeLabelFontBold"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you specify whether or not the node label text should be displayed in italic. \n\nDefault value: 0",
+        "range": "0 / 1",
+        "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "nodeLabelFontItalic"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the radius of the node label border.",
+        "range": "In pixels",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeLabelborderradius"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the space between the node label border and the node.",
+        "range": "In Pixels",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeLabelBorderPadding"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
-        "versionsince": "3.15.0",
-        "name": "nodeLabelBorderDash"
-      },
-      {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you specify whether or not the border of the node label should be dashed. \n\nDefault value: 0",
+        "range": "0 / 1",
+        "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "nodeLabelBorderDashed"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to set the length of every dash in the border of the node label. It only works if the value of `nodeLabelBorderDashed` attribute is set to `1`.",
+        "range": "In pixels",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeLabelBorderDashlen"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to set the space between two consecutive dashes in the border of the node label. It only works if the value of `nodeLabelBorderDashed` attribute is set to `1`.",
+        "range": "In pixels",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeLabelBorderDashgap"
-      },
-      {
-        "description": "",
-        "range": "",
-        "type": "",
-        "versionsince": "3.15.0",
-        "name": "textOutline"
       }
     ],
-    "description": ""
+    "description": "The attributes in this section let you customize several cosmetic aspects of a node label."
   },
   {
     "table": "Link Cosmetics",
     "attrs": [
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to specify the color of the link.",
+        "range": "Hex Color Code",
+        "type": "Color",
         "versionsince": "3.15.0",
         "name": "linkColor"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the transparency of the link between `0` for transparent and `100` for opaque.",
+        "range": "0 - 100",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "linkAlpha"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you specify whether the link should be drawn straight or curved. \n\nDefault value: 1",
+        "range": "0 - 1",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "linkCurvature"
       }
     ],
-    "description": ""
+    "description": "The attributes in this section let you customize several functional and cosmetic aspects of a link."
   },
   {
     "table": "Legend Properties",
@@ -1178,23 +1165,23 @@
     "table": "Data Plot Hover Effects",
     "attrs": [
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you specify whether the link should be highlighted when hovered upon.",
+        "range": "0 / 1",
+        "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "highlightEffect"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the transparency of the node when hovered over, between `0` for transparent and `100` for opaque.",
+        "range": "0 - 100",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeHoverAlpha"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the transparency of the link when hovered over, between `0` for transparent and `100` for opaque.",
+        "range": "0 - 100",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "linkHoverAlpha"
       }
@@ -1241,152 +1228,145 @@
     "table": "The Node Object",
     "attrs": [
       {
-        "description": "",
+        "description": "This attribute lets you specify the label text for the node. If you omit this, the node will not be displayed.",
         "range": "",
-        "type": "",
+        "type": "String",
         "versionsince": "3.15.0",
         "name": "label"
       },
       {
-        "description": "",
+        "description": "This attribute lets you specify whether or not node label should be displayed. \n\nDefault value: 1",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "showLabel"
       },
       {
-        "description": "",
+        "description": "This attribute lets you specify whether or not node value should be displayed. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "showValue"
       },
       {
-        "description": "",
+        "description": "This attribute lets you specify whether or not node label should be rotated and displayed. \n\nDefault value: 0",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.15.0",
         "name": "rotateLabel"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you position the labels with respect to the nodes. \n\nDefault value: end",
+        "range": "start, inside, end",
+        "type": "String",
         "versionsince": "3.15.0",
         "name": "labelPosition"
       },
       {
-        "description": "",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.15.0",
-        "name": "textOutline"
-      },
-      {
-        "description": "",
+        "description": "This attribute lets you set the font color for the node label text.",
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.15.0",
         "name": "labelFontColor"
       },
       {
-        "description": "",
+        "description": "This attribute lets you set the transparency of the node label between `0` for transparent and `100` for opaque.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "labelAlpha"
       },
       {
-        "description": "",
+        "description": "This attribute allows you to set the background color of the node label.",
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.15.0",
         "name": "Labelbgcolor"
       },
       {
-        "description": "",
+        "description": "This attribute allows you to set the color of the node label border.",
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.15.0",
         "name": "Labelbordercolor"
       },
       {
-        "description": "",
+        "description": "This attribute allows you to specify the color of the node.",
         "range": "Hex Color Code",
         "type": "Color",
         "versionsince": "3.15.0",
         "name": "color"
       },
       {
-        "description": "",
+        "description": "This attribute lets you set the transparency of the node between `0` for transparent and `100` for opaque.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "alpha"
       },
       {
-        "description": "",
+        "description": "This attribute lets you set the transparency of the node when hovered over, between `0` for transparent and `100` for opaque.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "hoveralpha"
       }
     ],
-    "description": ""
+    "description": "The attributes in this section let you customize several functional and cosmetic aspects of a node."
   },
   {
     "table": "The Links Object",
     "attrs": [
       {
-        "description": "",
+        "description": "This attribute lets you specify the `id` of the `from` node of a link. This is a mandatory attribute. If you omit this attribute, the link will not be rendered.",
         "range": "",
-        "type": "",
+        "type": "String",
         "versionsince": "3.15.0",
         "name": "from"
       },
       {
-        "description": "",
+        "description": "This attribute lets you specify the `id` of the `to` node of a link. This is a mandatory attribute. If you omit this attribute, the link will not be rendered.",
         "range": "",
-        "type": "",
+        "type": "String",
         "versionsince": "3.15.0",
         "name": "to"
       },
       {
-        "description": "",
+        "description": "This attribute lets you set the value of the link. If you set this to `0`, the link will not be displayed.",
         "range": "",
-        "type": "",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "value"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute allows you to specify the color of the link.",
+        "range": "Hex Color Code",
+        "type": "Color",
         "versionsince": "3.15.0",
         "name": "color"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the transparency of the link between `0` for transparent and `100` for opaque.",
+        "range": "0 - 100",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "alpha"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you set the transparency of the link when hovered over, between `0` for transparent and `100` for opaque.",
+        "range": "0 - 100",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "hoverAlpha"
       },
       {
-        "description": "",
-        "range": "",
-        "type": "",
+        "description": "This attribute lets you specify whether the link should be drawn straight or curved.",
+        "range": "0 - 1",
+        "type": "Number",
         "versionsince": "3.15.0",
         "name": "curvature"
       }
     ],
-    "description": ""
+    "description": "The attributes in this section let you customize several functional and cosmetic aspects of a link."
   }
 ]
