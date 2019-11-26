@@ -497,6 +497,8 @@ To customize the mean icon in the box and whisker chart, follow the points given
 
 * Set the `meanIconAlpha` attribute to set the transparency of the mean icon. This attribute takes values between `0` (transparent) and `100` (opaque).
 
+* Set the value of the `meanIconBorderColor` attribute to the hexadecimal color code of the mean icon border color you want to display.
+
 Refer to the code below:
 
 ```json
@@ -505,8 +507,9 @@ Refer to the code below:
         "meanIconRadius": "5",
         "meanIconSides": "3",
         "meanIconShape": "polygon",
-        "meanIconColor": "ff0000",
-        "meanIconAlpha": "70"
+        "meanIconColor": "#ffffff",
+        "meanIconAlpha": "70",
+        "meanIconBorderColor": "#ff0000"
     }
 }
 ```
@@ -603,19 +606,23 @@ To customize the mean deviation icon, follow the points given below:
 
 * Set the `mdIconAlpha` attribute to set the transparency of the mean deviation icon. This attribute takes values between `0` (transparent) and `100` (opaque).
 
+* Set the value of the `mdIconBorderColor` attribute to the hexadecimal code of the mean deviation icon border color you want to display.
+
 Refer to the code below:
 
-```json
+```javascript
 {
     "chart": {
-        "mdIconRadius": "5"
-        "mdIconSides": "5"
+        "mdIconRadius": "5",
+        "mdIconSides": "5",
         //"mdIconShape": "triangle"
-        "mdIconColor": "ff0000"
-        "mdIconAlpha": "70"
+        "mdIconColor": "#fff00f",
+        "mdIconAlpha": "70",
+        "mdIconBorderColor": "#ff0000"
     }
 }
 ```
+
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-12.js %}
@@ -702,19 +709,23 @@ To customize the standard deviation icon, follow the points given below:
 
 * Set the `sdIconAlpha` attribute to set the transparency of the standard deviation icon. This attribute takes values between `0` (transparent) and `100` (opaque).
 
+* Set the value of the `sdIconBorderColor` attribute to the hexadecimal code of the standard deviation icon border color you want to display.
+
 Refer to the code given below:
 
-```json
+```javascript
 {
     "chart": {
         "sdIconRadius": "5",
         "sdIconSides": "5",
         "sdIconShape": "triangle",
-        "sdIconColor": "ff0000",
-        "sdIconAlpha": "70"
+        "sdIconColor": "#ff000f",
+        "sdIconAlpha": "70",
+        "sdIconBorderColor": "#ff0000"
     }
 }
 ```
+
 A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-15.js %}
@@ -736,6 +747,7 @@ Refer to the code given below:
     }
 }
 ```
+
 A box and whisker chart rendered with a standard deviation connector looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-16.js %}
@@ -757,6 +769,7 @@ Refer to the code given below:
     }
 }
 ```
+
 ## Configuring Quartile Deviation
 
 The distance between the upper quartile and the lower quartile is called the interquartile range. Quartile deviation is half the distance between the two quartiles, i.e., half the interquartile range. It is also called the semi-interquartile range.
@@ -778,6 +791,7 @@ Refer to the code given below:
     }
 }
 ```
+
 A box and whisker chart with the quartile deviation icon shown in the legend box looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-17.js %}
@@ -800,20 +814,23 @@ To customize the quartile deviation icon, follow the points given below:
 
 * Set the `qdIconAlpha` attribute to set the transparency of the quartile deviation icon. This attribute takes values between `0` (transparent) and `100` (opaque).
 
+* Set the value of the `qdIconBorderColor` attribute to the hexadecimal code of the quartile deviation icon border color you want to display.
+
 Refer to the code below:
 
-```json
+```javascript
 {
     "chart": {
         "qdIconRadius": "5",
         "qdIconSides": "5",
         "qdIconShape": "triangle",
-        "qdIconColor": "ff0000",
-        "qdIconAlpha": "70"
+        "qdIconColor": "#fff00f",
+        "qdIconAlpha": "70",
+        "qdIconBorderColor": "#ff0000"
     }
 }
-
 ```
+
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-18.js %}
@@ -836,6 +853,7 @@ Refer to the code given below:
 }
 
 ```
+
 A box and whisker chart rendered with a quartile deviation connector looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-19.js %}
@@ -858,7 +876,6 @@ Refer to the code given below:
 }
 
 ```
-A box and whisker chart with the quartile deviation null data connected looks like this:
 
 ## Configuring Outliers
 
@@ -882,25 +899,29 @@ To customize the outlier icon, follow the points given below:
 
 * Set the `outlierIconAlpha` attribute to set the transparency of the outlier icon. This attribute takes values between `0` (transparent) and `100` (opaque).
 
+* Set the value of the `outlierIconBorderColor` attribute to the hexadecimal code of the outlier icon border color you want to display.
+
 > All the attributes listed above belong to the `data` object (under `dataset` object).
 
 Refer to the code below:
 
-```json
+```javascript
 {
     "chart": {
         ...
     },
     "data": {
-        "outliers": "1"
+        "outliers": "1",
         "outlierIconRadius": "5",
         "outlierIconSides": "5",
         "outlierIconShape": "triangle",
-        "outlierIconColor": "ff0000",
-        "outlierIconAlpha": "70"
+        "outlierIconColor": "#fff00f",
+        "outlierIconAlpha": "70",
+        "outlierIconBorderColor": "#ff0000"
     }
 }
 ```
+
 A box and whisker chart with outliers looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-20.js %}
@@ -948,3 +969,25 @@ A box and whisker chart with a scroll bar looks like as shown below:
 {% embed_chart standard-charts-box-and-whisker-chart-example-23.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/2h8uj470/) to edit the above chart.
+
+## Specifying Pre-processed Data
+
+FusionCharts v3.15.0 onwards, you can also specify pre-processed data to a box and whisker chart, instead of the value array you provided earlier. Instead, you can directly provide values of specific functions like `min`, `q1`, `median`, `q3`, and `max`, to draw a box and whisker plot. Specifying the values can reduce the number of calculations happening in the chart, and speed up rendering.
+
+> You also need to provide specific values like `mean`, `md`, `sd`, `qd`, and `outlier` to draw the respective markers.
+
+You can specify the following attributes directly within the `data` object:
+
+- `min`
+- `q1`
+- `median`
+-  `q3`
+- `max`
+- `mean`
+- `md`
+- `sd`
+- `outlier`
+
+If you want to explicitly provide the data through the above attributes, you need to specify all of `min`, `max`, `q1`, `q3`, and `median` values. If you avoid mentioning any of these, it will result in a null plot. You can also mention `mean`, `sd`, `qd`, `md`, or `outlier`, to display it in the plot. Unless you mention them, you will not be able to assign attributes related to them. For instance, if you do not provide `sd`, you will not be able to `showMD`, `showMDValue`, etc.
+
+> If you explicitly mention `min`, `max`, `q1`, `q3`, and `median` along with the value array, then the value array will be ignored.
