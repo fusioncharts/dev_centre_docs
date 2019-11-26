@@ -42,6 +42,13 @@
 		"xls": true
 	},
 	{
+		"name": "Chord",
+		"json": "Chord",
+		"code": "xt-attr-chord.js",
+		"alias": "chord",
+		"xls": false
+	},
+	{
 		"name": "Column 2D",
 		"json": "Column2D",
 		"code": "xt-attr-column2d.js",
