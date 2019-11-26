@@ -3201,6 +3201,7 @@
         "Versionsince": "3.15.0",
         "name": "showOutlierValues"
       },
+      
       {
         "description": "Specifies the font color of data values for a particular dataset.",
         "range": "Hex Color Code",

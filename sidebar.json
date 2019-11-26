@@ -1771,11 +1771,16 @@
             "path": "/upgrading/upgrading-from-evaluation-versions"
           },
           {
-            "title": "Upgrade to v3.14.x",
+            "title": "Upgrade to v3.15.x",
             "children": [
               {
                 "title": "Changelog",
                 "path": "/upgrading/change-log"
+              },
+              {
+                "title": "Maps Improvement",
+                "path": "/upgrading/maps-improvement/maps-improvement-3-15-0",
+                "visibility": false
               },
               {
                 "title": "Maps Improvement",
