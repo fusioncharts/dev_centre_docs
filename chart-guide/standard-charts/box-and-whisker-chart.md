@@ -950,6 +950,40 @@ A box and whisker chart with outlier values shown on the chart looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/oukgfmca/) to edit the above chart.
 
+## Show the Icon Value
+
+Use the `showValue` attribute to display the values of plot (`min`, `q1`, `median`, `q3`, and `max`). By default, the value of `showValue` is set to `1`. However, if you want to see individual values, you can use the following attributes:
+
+- Set the value of the `showMeanValue` attribute to `1` to display the mean value.
+- Set the value of the `showMDValue` attribute to `1` to display the mean deviation value.
+- Set the value of the `showSDValue` attribute to `1` to display the standard deviation value.
+- Set the value of the `showQDValue` attribute to `1` to display the quartile deviation value.
+- Set the value of the `showOutlierValue` attribute to `1` to display the outlier value. 
+
+> If you set the value of any of the attributes listed above, the value of the `showValue` attribute will be set to `0`, unless you explicitly set it to `1`.
+
+## Position Icon Values
+
+In a box and whisker chart, you can place data values either `above`, or `below` the icons. By default, the values are displayed above the icons. However, you can change the position of the values using one of the attributes listed below:
+
+- Set the value of the attribute `meanValuePosition` to `below` to display the mean value below the icon instead of the default `above`.
+- Set the value of the attribute `MDValuePosition` to `below` to display the mean deviation value below the icon instead of the default `above`.
+- Set the value of the attribute `SDValuePosition` to `below` to display the standard deviation value below the icon instead of the default `above`.
+- Set the value of the attribute `QDValuePosition` to `below` to display the quartile deviation value below the icon instead of the default `above`.
+- Set the value of the attribute `outlierValuePosition` to `below` to display the outlier value below the icon instead of the default `above`.
+
+## Set Hover Effects of Icons
+
+You can specify the shape (`polygon` or `spoke`) that should show when an icon is hovered over. Set the number of sides or spokes using the attribute `meanIconSides`. Use the following attributes to do so:
+
+- Use the attribute `meanIconShape` to specify the shape of the mean icon on hover.
+- Use the attribute `MDIconShape` to specify the shape of the mean deviation icon on hover.
+- Use the attribute `SDIconShape` to specify the shape of the standard deviation icon on hover.
+- Use the attribute `QDIconShape` to specify the shape of the quartile deviation icon on hover.
+- Use the attribute `outlierIconShape` to specify the shape of the outlier icon on hover.
+
+By default, the shape is set to `polygon` with the value of `meanIconSides` set to three, i.e., a triangle.
+
 ## Specify Visibility of Categories
 
 In a box and whisker chart, you can specify the number of categories that should be visible on the canvas. To do so, set the value of the attribute `numVisiblePlot` to the number of categories you want to display. A scrollbar will automatically appear if there are too many plots to fit within the canvas.
