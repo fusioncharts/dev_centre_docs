@@ -117,6 +117,7 @@
         "Versionsince": "3.15.0",
         "name": "showOutlierValues"
       },
+      
       {
         "description": "If you have opted to show data values, you can rotate them using this attribute.",
         "range": "0/1",
