@@ -7,22 +7,25 @@
     dataSource: {
         "chart": {
             "theme": "fusion",
+            "caption": "Flare Data Store Segregation",
+            "subcaption": "Click on the segments to Drill-down",
             "showPlotBorder": "1",
             "animation": "1",
-            "paletteColors": "8BBA00, F6BD0F, FF654F, AFD8F8, FDB398, CDC309, B1D0D2, FAD1B9, B8A79E, D7CEA5, C4B3CE, E9D3BE, EFE9AD, CEA7A2, B2D9BA",
-            "animationDuration": "2"
+            "paletteColors": "#ffffff, #A88CCC, #77ECC8, #97FAA4, #CFF69D, #EED482, #FFAE91, #FE93B5, #D98ACF, #7BCDE8, #94A8E9",
+            "animationDuration": "2",
+            "centerAngle": "360"
         },
         data: [{
                 "id": "Flare",
                 "parent": "",
                 "label": "Flare",
-                "value": "1"
+                "value": "",
             },
             {
                 "id": "Analytics",
                 "parent": "Flare",
                 "label": "Analytics",
-                "value": "1"
+                "value": ""
             },
             {
                 "id": "Cluster",
@@ -363,49 +366,49 @@
             },
             {
                 "id": "DragForce",
-                "parent": "Pjysics",
+                "parent": "Physics",
                 "label": "DragForce",
                 "value": "1082"
             },
             {
                 "id": "GravityForce",
-                "parent": "Pjysics",
+                "parent": "Physics",
                 "label": "GravityForce",
                 "value": "1336"
             },
             {
                 "id": "IForce",
-                "parent": "Pjysics",
+                "parent": "Physics",
                 "label": "IForce",
                 "value": "319"
             },
             {
                 "id": "NBodyForce",
-                "parent": "Pjysics",
+                "parent": "Physics",
                 "label": "NBodyForce",
                 "value": "10498"
             },
             {
                 "id": "Particle",
-                "parent": "Pjysics",
+                "parent": "Physics",
                 "label": "Particle",
                 "value": "2822"
             },
             {
                 "id": "Simulation",
-                "parent": "Pjysics",
+                "parent": "Physics",
                 "label": "Simulation",
                 "value": "9983"
             },
             {
                 "id": "Spring",
-                "parent": "Pjysics",
+                "parent": "Physics",
                 "label": "Spring",
                 "value": "2213"
             },
             {
                 "id": "SpringForce",
-                "parent": "Pjysics",
+                "parent": "Physics",
                 "label": "SpringForce",
                 "value": "1681"
             },
@@ -542,7 +545,7 @@
                 "value": "970"
             },
             {
-                "id": "Query",
+                "id": "Query1",
                 "parent": "Query",
                 "label": "Query",
                 "value": "13896"
