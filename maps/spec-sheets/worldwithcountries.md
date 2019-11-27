@@ -5,12 +5,7 @@
 #### JavaScript Alias: maps/worldwithcountries
 
 Map Name: World with Countries
-Dimensions (Width x Height): 2194x1120
-
-
-
-
-
+Dimensions (Width x Height): 440x590
 
 ### List of Entities
 
@@ -141,9 +136,6 @@ ID | Short label | Label
 123|TM|Turkmenistan
 124|UZ|Uzbekistan
 125|VN|Vietnam
-126|TW|Taiwan
-127|HK|Hong Kong
-128|MO|Macau
 129|AL|Albania
 130|AD|Andorra
 131|AT|Austria
@@ -160,7 +152,7 @@ ID | Short label | Label
 142|DE|Germany
 143|GR|Greece
 144|HU|Hungary
-145|IC|Iceland
+145|IS|Iceland
 146|IR|Ireland
 147|IT|Italy
 148|LV|Latvia
@@ -206,7 +198,7 @@ ID | Short label | Label
 189|NC|New Caledonia
 190|BA|Bahrain
 191|IZ|Iraq
-192|IS|Israel
+192|IE|Israel
 193|JO|Jordan
 194|KU|Kuwait
 195|LB|Lebanon

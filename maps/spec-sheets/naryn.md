@@ -2,17 +2,17 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/tonga
+#### JavaScript Alias: maps/naryn
 
-Map Name: Tonga Map
+Map Name: Naryn Map
 Dimensions (Width x Height): 440x590
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
-TO.TT|TT|Tongatapu
-TO.VA|VA|Vava'u
-TO.HA|HA|Ha'apai
-TO.EU|EU|'Eua
-TO.ON|ON|Ongo Niua
+KG.NA.AT|AT|Ak-Talaa
+KG.NA.AH|AH|At-Bashy
+KG.NA.JU|JU|Jumgal
+KG.NA.KO|KO|Kochkor
+KG.NA.NA|NA|Naryn

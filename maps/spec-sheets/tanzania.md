@@ -4,12 +4,8 @@
 
 #### JavaScript Alias: maps/tanzania
 
-Map Name: Tanzania
-Dimensions (Width x Height): 560x570
-
-
-
-
+Map Name: Tanzania Map
+Dimensions (Width x Height): 440x590
 
 ### List of Entities
 
@@ -38,7 +34,11 @@ TZ.SH|SH|Shinyanga
 TZ.SD|SD|Singida
 TZ.TB|TB|Tabora
 TZ.TN|TN|Tanga
-TZ.ZS|ZS|Zanzibar Central and South
-TZ.ZN|ZN|Zanzibar North
-TZ.ZW|ZW|Zanzibar West (Urban)
-
+TZ.ZN|ZN|Unguja North
+TZ.ZS|ZS|Unguja South
+TZ.ZW|ZW|Mjini Magharibi
+TZ.GE|GE|Geita
+TZ.KA|KA|Katavi
+TZ.NJ|NJ|Njombe
+TZ.SI|SI|Simiyu
+TZ.SO|SO|Songwe

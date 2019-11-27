@@ -4,24 +4,25 @@
 
 #### JavaScript Alias: maps/trinidadandtobago
 
-Map Name: Trinidadandtobago
-Dimensions (Width x Height): 610x570
-
-
-
-
+Map Name: Trinidad and Tobago Map
+Dimensions (Width x Height): 440x590
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
-TT.CA|CA|Caroni
-TT.MA|MA|Mayaro
-TT.NA|NA|Nariva
-TT.SA|SA|Saint Andrew
-TT.SD|SD|Saint David
-TT.SG|SG|Saint George
-TT.SP|SP|Saint Patrick
+TT.PS|PS|Port of Spain
+TT.SF|SF|San Fernando
+TT.CH|CH|Chaguanas
+TT.AR|AR|Arima
+TT.PF|PF|Point Fortin
+TT.CT|CT|Couva–Tabaquite–Talparo
+TT.DM|DM|Diego Martin
+TT.MR|MR|Mayaro–Rio Claro
+TT.PD|PD|Penal–Debe
+TT.PT|PT|Princes Town
+TT.SL|SL|San Juan–Laventille
+TT.SN|SN|Sangre Grande
+TT.SI|SI|Siparia
+TT.TP|TP|Tunapuna–Piarco
 TT.TO|TO|Tobago
-TT.VI|VI|Victoria
-
