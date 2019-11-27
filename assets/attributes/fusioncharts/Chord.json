@@ -678,8 +678,8 @@
         "name": "showNodeLabels"
       },
       {
-        "description": "This attribute lets you position the labels with respect to the nodes. \n\nDefault value: inside",
-        "range": "start, inside, end",
+        "description": "This attribute lets you position the labels with respect to the nodes. \n\nDefault value: tangential",
+        "range": "inside, outside, tangential",
         "type": "String",
         "versionsince": "3.15.0",
         "name": "nodeLabelPosition"
