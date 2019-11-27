@@ -9,8 +9,8 @@ Dimensions (Width x Height): 440x590
 
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-DO.CI|CI|Cibao
-DO.SU|SU|Sur
-DO.ES|ES|Este
+| ID    | Short label | Label |
+| ----- | ----------- | ----- |
+| DO.CI | CI          | Cibao |
+| DO.SU | SU          | Sur   |
+| DO.ES | ES          | Este  |
