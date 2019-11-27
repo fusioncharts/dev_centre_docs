@@ -4732,7 +4732,7 @@
     "description": "This event is fired at the start of the user’s drag interaction with a chart canvas.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasDragStart"
+      "slug": "fusiontime-event-canvasDragStart"
     },
     "tags": {
       "action": "Drag",
@@ -4762,7 +4762,7 @@
     "description": "This event is fired on every instance of the canvas being dragged by the user.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasDrag"
+      "slug": "fusiontime-event-canvasDrag"
     },
     "tags": {
       "action": "Drag",
@@ -4792,7 +4792,7 @@
     "description": "This event is fired at the end of the user’s drag interaction with a chart canvas.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasDragEnd"
+      "slug": "fusiontime-event-canvasDragEnd"
     },
     "tags": {
       "action": "Drag",
@@ -4822,7 +4822,7 @@
     "description": "This event is fired after a user’s double tap interaction on a canvas.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasDblTap"
+      "slug": "fusiontime-event-canvasDblTap"
     },
     "tags": {
       "action": "Double Click",
@@ -4852,7 +4852,7 @@
     "description": "This event is fired on every instance of a user’s wheel interaction on a canvas.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasWheel"
+      "slug": "fusiontime-event-canvasWheel"
     },
     "tags": {
       "action": "Wheel",
