@@ -1,10 +1,8 @@
 ---
 title: Real-Time Dynamic Data Update | FusionCharts
 description: This article defines how to use time-series charts to display dynamically updating time series data.
-heading: Real-Time Dynamic Data Update
+heading: Real-Time Data Update
 ---
-
-Real-Time Dynamic Data Update
 
 FusionTime v2.0 onwards, you can use time-series charts to display dynamically updating time series data.
 
