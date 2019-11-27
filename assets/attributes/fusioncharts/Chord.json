@@ -70,20 +70,20 @@
       },
       {
         "description": "This attribute lets you set the starting angle of a Chord Diagram in degree. \n\nDefault value: 0",
-        "range": "0 / 360",
+        "range": "0 - 360",
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "startingAngle"
       },
       {
-        "description": "This attribute lets you set the total angle of a Chord Diagram in degree. \n\nDefault value: 360",
+        "description": "This attribute lets you set the total angle of a Chord Diagram in degree.",
         "range": "0 - 360",
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "totalAngle"
       },
       {
-        "description": "This attribute lets you set the transparency of un-hovered nodes and links when one node/link is hovered over, between `0` for transparent and `100` for opaque. \n\nDefault value: 30",
+        "description": "This attribute lets you set the transparency of un-hovered nodes and links when one node/link is hovered over, between `0` for transparent and `100` for opaque.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.15.0",
@@ -685,14 +685,14 @@
         "name": "nodeLabelPosition"
       },
       {
-        "description": "This attribute lets you set the thickness of a node. \n\nDefault value: 15",
+        "description": "This attribute lets you set the thickness of a node.",
         "range": "",
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeThickness"
       },
       {
-        "description": "This attribute lets you set the transparency of a node when hovered over, between `0` for transparent and `100` for opaque. \n\nDefault value: 100",
+        "description": "This attribute lets you set the transparency of a node when hovered over, between `0` for transparent and `100` for opaque.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.15.0",
@@ -706,7 +706,7 @@
         "name": "showNodeBorder"
       },
       {
-        "description": "This attribute lets you set the percentage of the total circumference that should be provided to disabled nodes. \n\nDefault value: 0.01",
+        "description": "This attribute lets you set the percentage of the total circumference that should be provided to disabled nodes.",
         "range": "0 - 1",
         "type": "Number",
         "versionsince": "3.15.0",
@@ -720,14 +720,14 @@
         "name": "nodeBorderDashed"
       },
       {
-        "description": "This attribute allows you to set the length of every dash in the border of the node label. It only works if the value of `nodeBorderDashed` attribute is set to `1`. \n\nDefault value: 2",
+        "description": "This attribute allows you to set the length of every dash in the border of the node label. It only works if the value of `nodeBorderDashed` attribute is set to `1`.",
         "range": "In pixels",
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "nodeBorderDashedLen"
       },
       {
-        "description": "This attribute allows you to set the space between two consecutive dashes in the border of the node label. It only works if the value of `nodeBorderDashed` attribute is set to `1`. \n\nDefault value: 1",
+        "description": "This attribute allows you to set the space between two consecutive dashes in the border of the node label. It only works if the value of `nodeBorderDashed` attribute is set to `1`.",
         "range": "In pixels",
         "type": "Number",
         "versionsince": "3.15.0",
@@ -748,7 +748,7 @@
         "name": "nodeBorderThickness"
       },
       {
-        "description": "This attribute lets you set the transparency of the node border, between `0` for transparent and `100` for opaque. \n\nDefault value: 100",
+        "description": "This attribute lets you set the transparency of the node border, between `0` for transparent and `100` for opaque.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.15.0",
@@ -761,7 +761,7 @@
     "table": "Node Label Configuration",
     "attrs": [
       {
-        "description": "This attribute lets you set the spacing between the two nodes. It is not applicable is nodeRelaxation is enabled. \n\nDefault value: 2",
+        "description": "This attribute lets you set the spacing between the two nodes. It is not applicable is nodeRelaxation is enabled.",
         "range": "In pixels",
         "type": "Number",
         "versionsince": "3.15.0",
@@ -809,7 +809,7 @@
     "table": "Links Configuration",
     "attrs": [
       {
-        "description": "This attribute lets you set the transparency of a link when hovered over, between `0` for transparent and `100` for opaque. \n\nDefault value: 100",
+        "description": "This attribute lets you set the transparency of a link when hovered over, between `0` for transparent and `100` for opaque.",
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.15.0",
