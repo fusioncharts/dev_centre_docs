@@ -1094,45 +1094,6 @@ new FusionCharts({
 	</tr>
 </table>
 
-## Legend
-
-To configure the legend of the chart, you can create the `legend` object under the `dataSource`.
-
-```javascript
-new FusionCharts({
-  type: "timeseries",
-  dataSource: {
-    legend: {
-    	enabled: '1', //Enable / Disable legend
-		item: [{
-			value: 'Series A' // name of visible legend item
-			initiallyhidden: 1, // boolean attribute (default 0) to control the visibility of plot
-		}, {
-			value: 'Series B'
-			initiallyhidden: 0,
-		}]
-	}
-  }
-});
-```
-
-<table>
-	<tr>
-		<th>Attribute</th>
-		<th>Type</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>`enabled`</td>
-		<td>Boolean</td>
-		<td>This attribute lets you show/hide the legend, when included under the `legend` object.</td>
-	</tr>
-	<tr>
-		<td>`initiallyhidden`</td>
-		<td>Object</td>
-		<td>This attribute lets you keep the legend hidden when the chart is initially rendered.</td>
-</table>
-
 ## Output Time Format
 
 To specify the date-time format for a specific time unit, create a `outputTimeFormat` object under `xaxis` object.
@@ -1197,6 +1158,45 @@ new FusionCharts({
 		<td>String</td>
 		<td>Sets the format of the data bin where the time unit is millisecond.</td>
 	</tr>
+</table>
+
+## Legend
+
+To configure the legend of the chart, you can create the `legend` object under the `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    legend: {
+    	enabled: '1', //Enable / Disable legend
+		item: [{
+			value: 'Series A' // name of visible legend item
+			initiallyhidden: 1, // boolean attribute (default 0) to control the visibility of plot
+		}, {
+			value: 'Series B'
+			initiallyhidden: 0,
+		}]
+	}
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enabled`</td>
+		<td>Boolean</td>
+		<td>This attribute lets you show/hide the legend, when included under the `legend` object.</td>
+	</tr>
+	<tr>
+		<td>`initiallyhidden`</td>
+		<td>Object</td>
+		<td>This attribute lets you keep the legend hidden when the chart is initially rendered.</td>
 </table>
 
 ## Data Markers
