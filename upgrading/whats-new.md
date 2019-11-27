@@ -16,7 +16,7 @@ A Sunburst chart is used to visualize relationships within hierarchical data. It
 
 A Sunburst chart looks as follows:
 
-LIVE CHART
+{% embed_chart sunburst-chart-example-1.js %}
 
 Click here to know more.
 
