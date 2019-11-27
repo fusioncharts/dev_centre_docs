@@ -10,9 +10,7 @@ In this article, we will see how chart data can be updated dynamically in Fusion
 
 A real-time chart looks as shown below:
 
-LIVE CHART
-
-Click [here] to edit the above chart.
+{% embed_ftChart real-time-data %}
 
 The initial data for the above chart is shown below:
 
