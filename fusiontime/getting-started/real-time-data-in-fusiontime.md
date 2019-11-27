@@ -12,21 +12,7 @@ A real-time chart looks as shown below:
 
 {% embed_ftChart real-time-data %}
 
-The initial data for the above chart is shown below:
-
-[[Table]]
-
-Now, let's create the schema for the above table.
-
-[[Schema]]
-
-To define the schema, create a `schema.json` file and copy the following code:
-
-```
-
-```
-
-### Dynamically Update Chart Data
+## Dynamically Update Chart Data
 
 To automatically update chart data, invoke the `FusionCharts#feedData` API. This API accepts an array of rows of data as an optional parameter. Note that if you do not provide an array of rows, or if the array of rows is empty, the invocation will be ignored by the chart.
 
@@ -45,7 +31,7 @@ declare class FusionCharts {
 
 In the above code, you can see how `feedData` has been used to add new rows to the datatable. This addition will happen after the time interval you declare. When you render this chart, you will see it asynchronously render the new data values in the plot.The axes, range selectors, time navigator, legends, etc., will also be updated.
 
-### Configure Time Spread
+## Configure Time Spread
 
 When there are a large number of data values constantly being fed into a chart, it can slow down browser performance, or even cause a browser crash. To avoid this, use the optional chart level attribute `timeSpread`, to specify the total time interval you want to display in the chart at a given instant.
 
