@@ -1198,8 +1198,20 @@
                     "path": "/chart-guide/standard-charts/treemap"
                   },
                   {
+                    "title": "Sunburst",
+                    "path": "/chart-guide/standard-charts/sunburst-chart"
+                  },
+                  {
                     "title": "Heat Map Chart",
                     "path": "/chart-guide/standard-charts/heat-map-chart"
+                  },
+                  {
+                    "title": "Sankey Diagram",
+                    "path": "/chart-guide/standard-charts/sankey-diagram"
+                  },
+                  {
+                    "title": "Chord Diagram",
+                    "path": "/chart-guide/standard-charts/chord-diagram"
                   },
                   {
                     "title": "Gantt Chart",
