@@ -1885,6 +1885,6 @@ To handle the above cases, the padding modifiers are listed below:
 
 > The paddings are always placed after every token's % symbol. The default value padding of the date/time format of a time-series chart is `0`.
 
-## Apply CSS to the chart
+## Apply CSS Transform
 
 FusionTime allows you to resize the chart container of the chart using `applyCSSTransform` attribute. The chart is automatically resized when the container is resized. If a tooltip was active at the time of resizing, it is repositioned properly.
