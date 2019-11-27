@@ -4,6 +4,22 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 2.0.0</h2>
+
+<p class="release-date">5th December, 2019</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- FusionTime 2.0 onwards, you can build time-series charts with real time data.
+
+- You can now set variable heights to different canvases in a multivariate chart.
+
+- FusionTime 2.0 onwards, you can render charts with the legend initially hidden, using the newly introduced attribute `initiallyHidden`.
+
+- You can now use the attribute `applyCSSTransform` to modify CSS files for charts in FusionTime.
+
+- Custom Range Selector in FusionTime is now mobile-responsive.
+
 <h2 class="sub-heading">Version 1.3.0</h2>
 
 <p class="release-date">27th September, 2019</p>
