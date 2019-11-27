@@ -7,12 +7,14 @@ heading: Create a Chart Using Django
 ## Quick Start
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple **Django** wrapper for FusionCharts. The `FusionCharts Django` wrapper lets you easily add rich and interactive charts to any Django project. Using the wrapper, you can create charts in your browsers, without writing any JavaScript code.
+
 Let us see how to install FusionCharts and render a chart using the django-fusioncharts wrapper.
 >The FusionCharts Django wrapper requires Python 2.7 or higher.
 
 ### Prerequisite
 
 You need to have a django project setup before proceeding any further. If not, you can follow the below steps to initiate the project. Find more about how to configure Django [here](https://docs.djangoproject.com/en/2.2/topics/install/).
+
 Open the terminal and enter the following commands:
 - Create a new django project (Eg. - FusionChartsProject):
 
@@ -59,6 +61,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | China     | 30K                 |
 
 Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
+
 FusionCharts accepts the data in **JSON** format. First let's create a dictionary in `views.py` file where we will store all the values and then it will get converted to a JSON object.
 
 ```javascript
