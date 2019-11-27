@@ -18,7 +18,7 @@ A Sunburst chart looks as follows:
 
 {% embed_chart sunburst-chart-example-1.js %}
 
-Click here to know more.
+Click [here](/chart-guide/standard-charts/sunburst-chart) to know more.
 
 ## Sankey Diagram
 

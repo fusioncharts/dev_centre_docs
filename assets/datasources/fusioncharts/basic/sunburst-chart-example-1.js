@@ -1,8 +1,8 @@
 {
     type: 'sunburst',
     renderAt: 'container',
-    width: '600',
-    height: '500',
+    width: '650',
+    height: '650',
     dataFormat: 'json',
     dataSource: {
         "chart": {
