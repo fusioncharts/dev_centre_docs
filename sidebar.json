@@ -1913,6 +1913,10 @@
             "path": "/fusiontime/getting-started/change-plot-type-in-fusiontime"
           },
           {
+            "title": "Real-Time Data Update",
+            "path": "/fusiontime/getting-started/real-time-data-in-fusiontime"
+          },
+          {
             "title": "Style Definition",
             "path": "/fusiontime/getting-started/style-definition"
           },
