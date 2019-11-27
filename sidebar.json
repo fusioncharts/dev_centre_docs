@@ -1780,7 +1780,8 @@
         "children": [
           {
             "title": "Upgrade from Evaluation Versions",
-            "path": "/upgrading/upgrading-from-evaluation-versions"
+            "path": "/upgrading/upgrading-from-evaluation-versions",
+            "visibility": false
           },
           {
             "title": "Upgrade to v3.15.x",
