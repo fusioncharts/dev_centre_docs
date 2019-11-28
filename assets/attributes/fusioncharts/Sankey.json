@@ -685,7 +685,7 @@
         "name": "rotateNodeLabels"
       },
       {
-        "description": "This attribute lets you position the labels with respect to the nodes. \n\nDefault value: inside",
+        "description": "This attribute lets you position the labels with respect to the nodes. \n\nDefault value: end",
         "range": "start, inside, end",
         "type": "String",
         "versionsince": "3.15.0",
