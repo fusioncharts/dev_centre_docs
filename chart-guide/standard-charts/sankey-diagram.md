@@ -64,7 +64,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-sankey-diagram-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ejnospL1/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ejnospL1/) to edit the above diagram.
 
 ### No Node Sankey
 
@@ -72,15 +72,19 @@ If you set the value of the `nodeWidth` attribute to `0` under the `chart` objec
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+  "chart": {
+    "nodeWidth": "0";
+  }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/edwup75x/) to edit the above diagram.
 
 ### Blend Mode
 
@@ -88,15 +92,19 @@ The Sankey Diagram supports a `blend` mode for link colors. To apply this mode, 
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+  "chart": {
+    "linkColor": "blend";
+  }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/7vj02hxd/) to edit the chart.
 
 ### Drag
 
@@ -104,15 +112,19 @@ You can drag a node in a Sankey Diagram in a vertical direction for horizontal S
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "enableDrag": "1"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bLd6g9ju/) to edit the above diagram.
 
 ### Link Curvature
 
@@ -124,15 +136,19 @@ You can set the curvature of all links globally in a chart. To do so, set the va
 
 Refer to the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "linkCurvature": "0"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/76aLxkct/) to edit the above diagram.
 
 ## Customizations of a Sankey Diagram
 
@@ -142,19 +158,23 @@ In the following sections, you will see the options for customizing nodes and li
 
 #### Set Node Width
 
-You can set the width of nodes across the chart. To do so, set the value of the `nodeWidth` attribute to the desired value. By default, it is set to 20 pixels.
+You can set the width of nodes across the chart. To do so, set the value of the `nodeWidth` attribute to the desired value.
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+  "chart": {
+    "nodeWidth": "5";
+  }
+}
 ```
 
 The chart will look as shown below:
 
 <chart>
+
+Click [here](http://jsfiddle.net/fusioncharts/r0bcdw8y/) to edit the above diagram.
 
 #### Position Node Label
 
@@ -372,7 +392,7 @@ The chart will look as shown below:
 
 <Live Chart>
 
-Click <<here>> to edit the above chart.
+Click <<here>> to edit the above diagram.
 
 ### Link Customizations
 
@@ -404,7 +424,7 @@ A Sankey diagram with straight links look like as shown below:
 
 LIVE CHART
 
-Click here to edit the above chart.
+Click here to edit the above diagram.
 
 #### Set Padding between Nodes and Links
 
@@ -430,7 +450,7 @@ A Sankey diagram with `20` pixels of space between the node and the link looks l
 
 LIVE CHART
 
-Click here to edit the above chart.
+Click here to edit the above diagram.
 
 ### Link Cosmetics
 
