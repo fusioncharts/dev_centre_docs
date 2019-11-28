@@ -172,7 +172,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/r0bcdw8y/) to edit the above diagram.
 
@@ -190,15 +190,19 @@ By default, the value of `nodeLabelPosition` is set to `end`.
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "nodeLabelPosition": "right"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/1w2jc4gn/) to edit the above diagram.
 
 #### Hide Node Labels
 
