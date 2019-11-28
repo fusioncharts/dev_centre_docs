@@ -250,10 +250,12 @@ To display the node values in the chart, set the value of the `showNodeValues` a
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "showNodeValues": "1"
+    }
+}
 ```
 
 The chart will look as shown below:
