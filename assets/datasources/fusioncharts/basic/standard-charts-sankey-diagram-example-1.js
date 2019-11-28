@@ -12,7 +12,8 @@
             captionFontColor: "#333333",
             captionFontSize: 18,
             legendPosition: "bottom",
-            linkcolor: 'blend'
+            linkcolor: 'blend',
+            theme: "fusion"
         },
         nodes: [{
                 label: "Netherlands"
