@@ -210,15 +210,19 @@ If the labels of the node create clutter in your Sankey diagram, FusionCharts al
 
 Refer to the code below:
 
-```
-
-Code
-
+```javascript
+{
+    "chart": {
+        "showNodeLabels": "0"
+    }
+}
 ```
 
 The chart looks like as shown below:
 
-LIVE CHART
+{% embed_chart standard-charts-sankey-diagram-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/y1g3czs6/) to edit the above diagram.
 
 To hide the specific label of a node, set the value of `showLabel` attribute to 0. The `showLabel` attribute should be called inside `nodes` array.
 
