@@ -3,14 +3,11 @@
     renderAt: "container",
     id: "sankey-chart",
     width: "700",
-    height: "400",
+    height: "450",
     dataFormat: "json",
     dataSource: {
         chart: {
             caption: "Immigrant Flow for Last Month (In Millions)",
-            captionAlignment: "left",
-            captionFontColor: "#333333",
-            captionFontSize: 18,
             legendPosition: "bottom",
             linkcolor: 'blend',
             theme: "fusion"
