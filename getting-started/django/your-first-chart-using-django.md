@@ -30,7 +30,8 @@ python manage.py startapp fusioncharts
 
 ## Installation & Including Dependencies
 
-Download the FusionCharts library to get the `django-fusioncharts` wrapper from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=django).
+Download the FusionCharts library to get the `django-fusioncharts` wrapper. 
+<a href='https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=django' class="btn btn-primary-grad btn-sm">Download FusionCharts library</a>
 
 After downloading the fusioncharts components, add `django-fusioncharts` wrapper and Fusioncharts Javascript files in your project as below:
 - Copy the `fusioncharts.py` file from your downloaded FusionCharts Library. It is present at - `Integrations > django > fusioncharts-wrapper` . Paste it in the fusioncharts app directory.
