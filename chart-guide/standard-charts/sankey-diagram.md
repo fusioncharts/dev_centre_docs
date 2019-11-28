@@ -10,7 +10,7 @@ Sankey Diagram is a type of flow diagram that depicts the flow of resources (mat
 
 A Sankey Diagram can be drawn in either a **horizontal layout (default)** or a **vertical layout**. A Sankey Diagram with horizontal orientation looks as shown below:
 
-<<Live Chart>>
+{% embed_chart standard-charts-sankey-diagram-example-1.js %}
 
 Click [here] to edit the chart.
 
