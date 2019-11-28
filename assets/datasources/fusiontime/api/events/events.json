@@ -4632,7 +4632,7 @@
     "description": "This event is fired on every instance of the window being dragged/squeezed by the user.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeNavBrush"
+      "slug": "fusiontime-event-timeNavBrush"
     },
     "tags": {
       "action": "Drag",
