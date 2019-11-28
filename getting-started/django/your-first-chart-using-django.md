@@ -253,6 +253,6 @@ Now go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) and you should be abl
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](support@fusioncharts.com). to get in touch with our support team.
 
 That's it! Your first chart using `django-fusioncharts` wrapper is ready.
