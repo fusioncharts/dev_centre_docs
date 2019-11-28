@@ -4,14 +4,12 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Chart Using Django
 ---
 
-## Quick Start
-
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple **Django** wrapper for FusionCharts. The `FusionCharts Django` wrapper lets you easily add rich and interactive charts to any Django project. Using the wrapper, you can create charts in your browsers, without writing any JavaScript code.
 
 Let us see how to install FusionCharts and render a chart using the django-fusioncharts wrapper.
 >The FusionCharts Django wrapper requires Python 2.7 or higher.
 
-### Prerequisite
+## Prerequisite
 
 You need to have a django project setup before proceeding any further. If not, you can follow the below steps to initiate the project. Find more about how to configure Django [here](https://docs.djangoproject.com/en/2.2/topics/install/).
 
@@ -30,7 +28,7 @@ python manage.py startapp fusioncharts
 
 - Open the `settings.py` file and add the name of the django app in the `'INSTALLED_APPS'` .
 
-### Installation & Including Dependencies
+## Installation & Including Dependencies
 
 Download the FusionCharts library to get the `django-fusioncharts` wrapper from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=django).
 
@@ -45,7 +43,7 @@ The directory structure will look like this:
 
 <img src="{% site.BASE_URL %}/images/django-folder-structure.png" width="250" height="350" alt="Django Folder Structure">
 
-### Preparing the Data
+## Preparing the Data
 
 Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
@@ -81,7 +79,7 @@ dataSource["data"].append({"label": 'US', "value": '30'})
 dataSource["data"].append({"label": 'China', "value": '30'})
 ```
 
-### Configure your Chart
+## Configure your Chart
 
 Now that the data's ready, you've to work on the styling, the positioning and giving your chart a context. First, we add the chart attributes in the `views.py` file.
 
@@ -166,7 +164,7 @@ STATIC_ROOT = "FusionChartsProject/fusioncharts/static";
 python manage.py collectstatic
 ```
 
-### Create your Chart
+## Create your Chart
 
 Let's create a Column 2D Chart using the `django-fusioncharts` wrapper showing "Countries with most Oil Reserves".
 - Add the following code in the `views.py` file.
@@ -243,7 +241,7 @@ urlpatterns = [
    path('', include('fusioncharts.urls'))
 ]
 ```
-### Render the Chart
+## Render the Chart
 
 With the container for the chart created in the `index.html`, run the following command to render the chart:
 
@@ -255,6 +253,6 @@ Now go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) and you should be abl
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com). to get in touch with our support team.
 
 That's it! Your first chart using `django-fusioncharts` wrapper is ready.
