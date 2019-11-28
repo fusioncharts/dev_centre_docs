@@ -14,7 +14,7 @@ A Sankey Diagram can be drawn in either a **horizontal layout (default)** or a *
 
 Click [here](http://jsfiddle.net/fusioncharts/7vj02hxd/) to edit the chart.
 
-There are `n` nodes in the Sankey Diagram provided above. A link connects any two nodes that are related to one another (i.e, a flow happens between them). If you hover over a node, you will see all the links (or relationships) associated with it. Hovering on a link will show all nodes associated with it.
+There are `19` nodes in the Sankey Diagram provided above. A link connects any two nodes that are related to one another (i.e, a flow happens between them). If you hover over a node, you will see all the links (or relationships) associated with it. Hovering on a link will show all nodes associated with it.
 
 ## Important Concepts Related to Sankey Diagram
 
@@ -52,15 +52,19 @@ The orientation of a Sankey Diagram can be either horizontal or vertical. To do 
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+  "chart": {
+    "orientation": "vertical";
+  }
+}
 ```
 
 The chart will look as shown below:
 
 <chart>
+
+Click [here](http://jsfiddle.net/fusioncharts/ejnospL1/) to edit the above chart.
 
 ### No Node Sankey
 
@@ -162,7 +166,7 @@ You can position a node label at the start, in the end, or inside a node. To do 
 
 By default, the value of `nodeLabelPosition` is set to `end`.
 
-> You can position the node labels of the Sankey diagram only when the value of `showNodeLabels` attribute is set to `1`. The default of this attribute is `1`.
+> You can position the node labels of the Sankey diagram only when the value of `showNodeLabels` value attribute is set to `1`. The default of this attribute is `1`.
 
 Use the code given below:
 
