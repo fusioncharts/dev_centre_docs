@@ -228,15 +228,21 @@ To hide the specific label of a node, set the value of `showLabel` attribute to 
 
 Refer to the code below:
 
-```
-
-Code
-
+```javascript
+{
+    "chart": { },
+    "nodes": [{
+        "label": "Netherlands",
+        "showLabel": "0" //Disable Label of a particular node
+    }]
+}
 ```
 
 The chart will look as shown below:
 
-LIVE CHART
+{% embed_chart standard-charts-sankey-diagram-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/dh8cswz9/) to edit the above diagram.
 
 #### Show Node Values
 
