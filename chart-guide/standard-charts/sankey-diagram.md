@@ -62,7 +62,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ejnospL1/) to edit the above chart.
 
