@@ -4,11 +4,15 @@ description: This article outlines the steps to configure legends of a time-seri
 heading: Legend
 ---
 
-The legend is a chart element that allows you to display the series name for each dataset, in a chart. You can click on the icon for one of the datasets to disable its plots in the chart. This is useful when you want to focus on a single dataset of a multivariate or a multi-series chart.
+The legend is a chart element that allows you to display the series name for each dataset in a chart. A chart should have the utmost one legend. Each legend can have a lot of legend items. Each legend item has a key and a name. In FusionTime, currently the key is a rectangular box filled with the color of the series (or plot) it represents; and the name is the name of the series (or plot).
+
+The legend comes in very handy when we have multiple colored plots. It helps in easily identifying the plot. Legends are interactive by nature. You can click on a legend item to disable the plot associated with it
 
 In the screenshot below, you can see the legend rendered below the time series. You can see each dataset represented by an icon.
 
 <img src="{% site.BASE_URL %}/images/time-component-legend.png" alt="Custom Range Selector" width="700" height="420">
+
+> Legend Items cannot be showed in stock charts.
 
 ### Show/Hide the Legend
 
@@ -27,9 +31,9 @@ legend: {
 }
 ```
 
-### Keep Legend Initially Hidden
+### Initially Hidden Legend item
 
-To keep the legend hidden when the chart is initially rendered, set the value of the `initiallyhidden` attribute to `1` within the `item` object under the `legend` object.
+To keep the legend item hidden when the chart is initially rendered, set the value of the `initiallyhidden` attribute to `1` within the `item` object under the `legend` object.
 
 Refer to the code below:
 
