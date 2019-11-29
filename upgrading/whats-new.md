@@ -26,9 +26,9 @@ Sankey Diagram is a type of flow diagram that depicts the flow of resources (mat
 
 {% embed_chart standard-charts-sankey-diagram-example-1.js %}
 
-There are `n` nodes in the Sankey Diagram provided above. A link connects any two nodes that are related to one another (i.e, a flow happens between them). If you hover over a node, you will see all the links (or relationships) associated with it. Hovering on a link will show all nodes associated with it.
+There are **19** nodes in the Sankey Diagram provided above. A link connects any two nodes that are related to one another (i.e, a flow happens between them). If you hover over a node, you will see all the links (or relationships) associated with it. Hovering on a link will show all nodes associated with it.
 
-Click here to know more.
+Click [here](/chart-guide/standard-charts/sankey-diagram) to know more.
 
 ## Chord Diagram
 
