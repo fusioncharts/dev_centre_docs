@@ -260,7 +260,9 @@ Use the code given below:
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/7kjdu2cs/) to edit the above diagram.
 
 > To display the label for any specific node in the diagram, set the value of `showValue` attribute under `nodes` array.
 
@@ -270,15 +272,19 @@ You can rotate node labels to a vertical position instead of the default horizon
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "rotateNodeLabels": "1"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/gzy8efoc/) to edit the above diagram.
 
 #### Set Padding between Nodes
 
@@ -288,15 +294,19 @@ You can add white space between consecutive nodes to make the chart look less cl
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "nodeSpacing": "10"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2rbsfac1/) to edit the above diagram.
 
 #### Configure Node Relaxation
 
