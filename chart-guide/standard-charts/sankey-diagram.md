@@ -316,15 +316,19 @@ You can disable this behavior by setting the value of the `nodeRelaxation` attri
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "nodeRelaxation": "0"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wpc43r2a/) to edit the above diagram.
 
 ### Node Cosmetics
 
