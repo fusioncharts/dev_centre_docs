@@ -555,14 +555,26 @@ You can set the transparency of all links globally in a chart. To do so, set the
 
 Refer to the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "linkAlpha": "50"
+    },
+    "links": [
+        {
+          "from": "Germany",
+          "to": "European Union",
+          "value": 1468990,
+          "alpha": "100"
+        }
+    ]
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-20.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/rhgn3mo0/) to edit the above diagram.
 
 In the above chart, you can see that all nodes, except the one with its `alpha` value set to `0` locally, are opaque.
