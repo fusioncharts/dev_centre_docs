@@ -558,7 +558,7 @@ Refer to the code given below:
 ```javascript
 {
     "chart": {
-        "linkAlpha": "50"
+        "linkAlpha": "20"
     },
     "links": [
         {
@@ -575,6 +575,6 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-sankey-diagram-example-20.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rhgn3mo0/) to edit the above diagram.
+Click [here](http://jsfiddle.net/fusioncharts/fv8rjxyo/) to edit the above diagram.
 
-In the above chart, you can see that all nodes, except the one with its `alpha` value set to `0` locally, are opaque.
+In the above chart, you can see the transparency of all the links are set to `20` except for the link from Germany to European Union.
