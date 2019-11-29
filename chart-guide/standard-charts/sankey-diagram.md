@@ -338,21 +338,29 @@ You can apply the following customizations to the appearance of a node.
 
 #### Set Node Color
 
-You can set the color of all nodes, across the Sankey Diagram. To do so, set the value of the `nodeColor` attribute to the hexadecimal value of the desired color, and include it within the respective node object. However, if you want to set the color of a single node, set the value of the `color` attribute to the hex code of the desired color and include it within the `nodes` object for that particular node.
+You can set the color of all nodes, across the Sankey Diagram. To do so, set the value of the `nodeColor` attribute to the hexadecimal value of the desired color, and include it within the `chart` object. However, if you want to set the color of a single node, set the value of the `color` attribute to the hex code of the desired color and include it within the `nodes` object for that particular node.
 
 > If you set the color of a node both globally (under `chart` object) and locally (under `node` object), the local value will override the global value.
 
 Refer to the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "nodeColor": "#FFA816" //Applied to all the nodes in the diagram
+    },
+    "nodes": [{
+        "label": "China",
+        "color": "#ff0000" //Applied only to node of China
+    }]
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/c854fvpj/) to edit the above diagram.
 
 In the above chart, you can see that all nodes, except the one whose color has been set locally, are of the same color.
 
