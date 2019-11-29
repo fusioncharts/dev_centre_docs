@@ -362,7 +362,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/c854fvpj/) to edit the above diagram.
 
-In the above chart, you can see that all nodes, except the one whose color has been set locally, are of the same color.
+In the above chart, you can see that all nodes are of same color, except China's color which has been set locally.
 
 #### Set Node Transparency
 
@@ -372,17 +372,25 @@ Note: If you set the transparency of a node both globally (under `chart` object)
 
 Refer to the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "nodeAlpha": "50" //Applied to all the nodes in the diagram
+    },
+    "nodes": [{
+        "label": "China",
+        "alpha": "100" //Applied only to node of China
+    }]
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-16.js %}
 
-In the above chart, you can see that all nodes, except the one with its `alpha` value set to `0` locally, are opaque.
+Click [here](http://jsfiddle.net/fusioncharts/bovj87u9/) to edit the above diagram.
+
+In the above chart, you can see that all nodes are opaque, except China for which the value of `alpha` is set to `100` locally.
 
 #### Node Label Cosmetics
 
@@ -420,17 +428,32 @@ You can apply a series of cosmetic modifications to node labels. They are listed
 
 Use the code given below to apply the customizations listed above to your chart:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "nodeLabelFont": "",
+        "nodeLabelFontColor": "",
+        "nodeLabelAlpha": "",
+        "nodeLabelBgColor": "",
+        "nodeLabelBorderColor": "",
+        "nodeLabelFontSize": "",
+        "nodeLabelFontBold": "",
+        "nodeLabelFontItalic": "",
+        "nodeLabelBorderRadius": "",
+        "nodeLabelBorderPadding": "",
+        "nodeLabelBorderDashed": "",
+        "nodeLabelBorderDashLen": "",
+        "nodeLabelBorderDashGap": "",
+        "inheritLabelColorFromNode": ""
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<Live Chart>
+{% embed_chart standard-charts-sankey-diagram-example-17.js %}
 
-Click <<here>> to edit the above diagram.
+Click [here](http://jsfiddle.net/fusioncharts/dbxy4nrf/) to edit the above diagram.
 
 ### Link Customizations
 
@@ -444,25 +467,19 @@ FusionCharts allows you to add straight links to your Sankey diagram instead of 
 
 Refer to the code below:
 
-```
-
+```javascript
 {
-
     "chart": {
-
         "linkCurvature": "0"
-
     }
-
 }
-
 ```
 
 A Sankey diagram with straight links look like as shown below:
 
-LIVE CHART
+{% embed_chart standard-charts-sankey-diagram-example-6.js %}
 
-Click here to edit the above diagram.
+Click [here](http://jsfiddle.net/fusioncharts/76aLxkct/) to edit the above diagram.
 
 #### Set Padding between Nodes and Links
 
@@ -470,25 +487,19 @@ You can add white space between nodes and links to make the chart look less clut
 
 Refer to the code below:
 
-```
-
+```javascript
 {
-
     "chart": {
-
         "nodeLinkPadding": "20"
-
     }
-
 }
-
 ```
 
 A Sankey diagram with `20` pixels of space between the node and the link looks like:
 
-LIVE CHART
+{% embed_chart standard-charts-sankey-diagram-example-18.js %}
 
-Click here to edit the above diagram.
+Click [here](http://jsfiddle.net/fusioncharts/4boxqLjk/) to edit the above diagram.
 
 ### Link Cosmetics
 
@@ -512,17 +523,29 @@ You can set the color of all links globally. To do so, set the value of the `lin
 
 Refer to the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "linkColor": "#FFA817"
+    },
+    "links": [
+        {
+          "from": "Germany",
+          "to": "European Union",
+          "value": 1468990,
+          "color": "#ff0000"
+        }
+    ]
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sankey-diagram-example-19.js %}
 
-In the above chart, you can see that all links, except the one whose color has been set locally, are of the same color.
+Click [here](http://jsfiddle.net/fusioncharts/rhgn3mo0/) to edit the above diagram.
+
+In the above chart, you can see that all links are of same color, except the links from Germany to European Union which has been set locally.
 
 #### Set Link Transparency
 
