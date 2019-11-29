@@ -1,317 +1,179 @@
 {
     type: "sankey",
     renderAt: "container",
+    id: "sankey-chart",
     width: "100%",
     height: "100%",
     dataFormat: "json",
     dataSource: {
-        "chart": {
-            basefont: "IBM Plex Sans",
-            orientation: "orientation",
-            caption: "FusionCharts Sankey Diagram",
-            captionpadding: "40",
-            captionfontsize: "30",
-            captionfontcolor: "#ededed",
-            bgcolor: "#262932",
-            bgalpha: 100,
-            basefontsize: "14",
-            linkcolor: "blend",
-            plothighlighteffect: "fadeout",
-            nodelabelfontcolor: "#ededed",
-            legendBgAlpha: "0",
-            legendBorderThickness: "0",
-            legendBorderAlpha: "0",
-            legendShadow: "0",
-            legendItemFontSize: "12",
-            legendItemFontColor: "#ededed",
-            drawCustomLegendIcon: "1",
-            legendIconSides: "2",
-            showborder: "0",
-            legendIconBorderThickness: "0",
-            legendItemHiddenColor: "#CCCCCC",
+        chart: {
+            caption: "Immigrant Flow for Last Month (In Millions)",
+            legendPosition: "bottom",
+            linkcolor: 'blend',
+            theme: "fusion"
         },
-        "nodes": [{
-                "label": "Brazil",
-                "nodeWidth": 10
+        nodes: [{
+                label: "Netherlands"
             },
             {
-                "label": "Canada",
-                "nodeWidth": 10
+                label: "Canada"
             },
             {
-                "label": "Mexico",
-                "nodeWidth": 10
+                label: "Belgium"
             },
             {
-                "label": "USA",
-                "nodeWidth": 10
+                label: "Italy"
             },
             {
-                "label": "Portugal",
-                "nodeWidth": 10
+                label: "Mexico"
             },
             {
-                "label": "France",
-                "nodeWidth": 10
+                label: "Russia"
             },
             {
-                "label": "Spain",
-                "nodeWidth": 10
+                label: "Spain"
             },
             {
-                "label": "England",
-                "nodeWidth": 10
+                label: "South Korea"
             },
             {
-                "label": "South Africa",
-                "nodeWidth": 10
+                label: "Germany"
             },
             {
-                "label": "Angola",
-                "nodeWidth": 10
+                label: "China"
             },
             {
-                "label": "Senegal",
-                "nodeWidth": 10
+                label: "European Union"
             },
             {
-                "label": "Mali",
-                "nodeWidth": 10
+                label: "Japan"
             },
             {
-                "label": "Morocco",
-                "nodeWidth": 10
+                label: "United Kingdom"
+            },
+            {
+                label: "United States"
+            },
+            {
+                label: "France"
+            },
+            {
+                label: "Hong Kong"
+            },
+            {
+                label: "Switzerland"
+            },
+            {
+                label: "Austria"
+            },
+            {
+                label: "Sweden"
             }
         ],
-        "links": [{
-                "from": "Brazil",
-                "to": "Portugal",
-                "value": 5
+        links: [{
+                from: "Netherlands",
+                to: "European Union",
+                value: 798744
             },
             {
-                "from": "Brazil",
-                "to": "France",
-                "value": 1
+                from: "Germany",
+                to: "European Union",
+                value: 1468990
             },
             {
-                "from": "Brazil",
-                "to": "Spain",
-                "value": 1
+                from: "European Union",
+                to: "France",
+                value: 745931
             },
             {
-                "from": "Brazil",
-                "to": "England",
-                "value": 1
+                from: "European Union",
+                to: "United States",
+                value: 660541
             },
             {
-                "from": "Canada",
-                "to": "Portugal",
-                "value": 1
+                from: "Canada",
+                to: "United States",
+                value: 594546
             },
             {
-                "from": "Canada",
-                "to": "France",
-                "value": 5
+                from: "Belgium",
+                to: "European Union",
+                value: 628796
             },
             {
-                "from": "Canada",
-                "to": "England",
-                "value": 1
+                from: "China",
+                to: "Hong Kong",
+                value: 400571
             },
             {
-                "from": "Mexico",
-                "to": "Portugal",
-                "value": 1
+                from: "China",
+                to: "United States",
+                value: 526454
             },
             {
-                "from": "Mexico",
-                "to": "France",
-                "value": 1
+                from: "European Union",
+                to: "United Kingdom",
+                value: 520318
             },
             {
-                "from": "Mexico",
-                "to": "Spain",
-                "value": 5
+                from: "China",
+                to: "European Union",
+                value: 560536
             },
             {
-                "from": "Mexico",
-                "to": "England",
-                "value": 1
+                from: "Italy",
+                to: "European Union",
+                value: 539556
             },
             {
-                "from": "USA",
-                "to": "Portugal",
-                "value": 1
+                from: "Mexico",
+                to: "United States",
+                value: 492715
             },
             {
-                "from": "USA",
-                "to": "France",
-                "value": 1
+                from: "Russia",
+                to: "European Union",
+                value: 385778
             },
             {
-                "from": "USA",
-                "to": "Spain",
-                "value": 1
+                from: "Spain",
+                to: "European Union",
+                value: 365191
             },
             {
-                "from": "USA",
-                "to": "England",
-                "value": 5
+                from: "China",
+                to: "Japan",
+                value: 312062
             },
             {
-                "from": "Portugal",
-                "to": "Angola",
-                "value": 2
+                from: "European Union",
+                to: "Switzerland",
+                value: 328609
             },
             {
-                "from": "Portugal",
-                "to": "Senegal",
-                "value": 1
+                from: "South Korea",
+                to: "China",
+                value: 229073
             },
             {
-                "from": "Portugal",
-                "to": "Morocco",
-                "value": 1
+                from: "European Union",
+                to: "Austria",
+                value: 244913
             },
             {
-                "from": "Portugal",
-                "to": "South Africa",
-                "value": 3
+                from: "Japan",
+                to: "United States",
+                value: 206091
             },
             {
-                "from": "France",
-                "to": "Angola",
-                "value": 1
+                from: "European Union",
+                to: "Sweden",
+                value: 204849
             },
             {
-                "from": "France",
-                "to": "Senegal",
-                "value": 3
-            },
-            {
-                "from": "France",
-                "to": "Mali",
-                "value": 3
-            },
-            {
-                "from": "France",
-                "to": "Morocco",
-                "value": 3
-            },
-            {
-                "from": "France",
-                "to": "South Africa",
-                "value": 1
-            },
-            {
-                "from": "Spain",
-                "to": "Senegal",
-                "value": 1
-            },
-            {
-                "from": "Spain",
-                "to": "Morocco",
-                "value": 3
-            },
-            {
-                "from": "Spain",
-                "to": "South Africa",
-                "value": 1
-            },
-            {
-                "from": "England",
-                "to": "Angola",
-                "value": 1
-            },
-            {
-                "from": "England",
-                "to": "Senegal",
-                "value": 1
-            },
-            {
-                "from": "England",
-                "to": "Morocco",
-                "value": 2
-            },
-            {
-                "from": "England",
-                "to": "South Africa",
-                "value": 7
-            },
-            {
-                "from": "South Africa",
-                "to": "China",
-                "value": 5
-            },
-            {
-                "from": "South Africa",
-                "to": "India",
-                "value": 1
-            },
-            {
-                "from": "South Africa",
-                "to": "Japan",
-                "value": 3
-            },
-            {
-                "from": "Angola",
-                "to": "China",
-                "value": 5
-            },
-            {
-                "from": "Angola",
-                "to": "India",
-                "value": 1
-            },
-            {
-                "from": "Angola",
-                "to": "Japan",
-                "value": 3
-            },
-            {
-                "from": "Senegal",
-                "to": "China",
-                "value": 5
-            },
-            {
-                "from": "Senegal",
-                "to": "India",
-                "value": 1
-            },
-            {
-                "from": "Senegal",
-                "to": "Japan",
-                "value": 3
-            },
-            {
-                "from": "Mali",
-                "to": "China",
-                "value": 5
-            },
-            {
-                "from": "Mali",
-                "to": "India",
-                "value": 1
-            },
-            {
-                "from": "Mali",
-                "to": "Japan",
-                "value": 3
-            },
-            {
-                "from": "Morocco",
-                "to": "China",
-                "value": 5
-            },
-            {
-                "from": "Morocco",
-                "to": "India",
-                "value": 1
-            },
-            {
-                "from": "Morocco",
-                "to": "Japan",
-                "value": 3
+                from: "Germany",
+                to: "United States",
+                value: 184287
             }
         ]
     }
