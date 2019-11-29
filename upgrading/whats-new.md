@@ -24,7 +24,7 @@ Click [here](/chart-guide/standard-charts/sunburst-chart) to know more.
 
 Sankey Diagram is a type of flow diagram that depicts the flow of resources (material, energy, cost, etc.) from one node to another. A Sankey Diagram can be drawn in either a **horizontal layout (default)** or a **vertical layout**. A Sankey Diagram with horizontal orientation looks as shown below:
 
-LIVE CHART
+{% embed_chart standard-charts-sankey-diagram-example-1.js %}
 
 There are `n` nodes in the Sankey Diagram provided above. A link connects any two nodes that are related to one another (i.e, a flow happens between them). If you hover over a node, you will see all the links (or relationships) associated with it. Hovering on a link will show all nodes associated with it.
 
