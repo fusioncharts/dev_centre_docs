@@ -6,17 +6,17 @@ heading: Map Improvements in Version 3.15.0
 
 - In the core maps package:
 
-  - Updated the specification sheet for [Trinidad and Tobago](/maps/spec-sheets/trinidadandtobago)[maps/trinidadandtobago].
+  - Updated the specification sheet for [Trinidad and Tobago](/maps/spec-sheets/trinidadandtobago).
 
-  - Added new map and specification sheet for [Provinces of Italy](/maps/spec-sheets/italyprovince)[maps/italyprovince].
+  - Added new map and specification sheet for [Provinces of Italy](/maps/spec-sheets/italyprovince).
 
-  - Updated the specification sheet for [Ukraine](/maps/spec-sheets/ukraine)[maps/ukraine] with the following regions:
+  - Updated the specification sheet for [Ukraine](/maps/spec-sheets/ukraine) with the following regions:
 
     - Kiev
 
     - Sevastopol
 
-  - Updated the specification sheet for [Hungary](/maps/spec-sheets/hungary)[maps/hungary] with the following:
+  - Updated the specification sheet for [Hungary](/maps/spec-sheets/hungary) with the following:
 
     - Renamed "Budapest" as "Capital City of Budapest".
 
@@ -26,9 +26,9 @@ heading: Map Improvements in Version 3.15.0
 
     - Renamed short label of "Pest" from "PE" to "PT".
 
-  - Added new map and specification sheet for Municipalities of [Latvia](/maps/spec-sheets/latviamunicipalities)[maps/latviamunicipalities].
+  - Added new map and specification sheet for Municipalities of [Latvia](/maps/spec-sheets/latviamunicipalities).
 
-  - Updated in the main map of [Kyrgyzstan](/maps/spec-sheets/kyrgyzstan)[maps/kyrgyzstan] with the following:
+  - Updated in the main map of [Kyrgyzstan](/maps/spec-sheets/kyrgyzstan) with the following:
 
     - "Jalal Abad" renamed as "Jalal-Abad"
 
@@ -40,25 +40,25 @@ heading: Map Improvements in Version 3.15.0
 
   - Added new maps for the following 9 districts of Kyrgyzstan:
 
-    - [Batken](/maps/spec-sheets/batken)[maps/batken]
+    - [Batken](/maps/spec-sheets/batken)
 
-    - [Bishkek City](/maps/spec-sheets/bishkekcity)[maps/bishkekcity]
+    - [Bishkek City](/maps/spec-sheets/bishkekcity)
 
-    - [Chuy](/maps/spec-sheets/chuy)[maps/chuy]
+    - [Chuy](/maps/spec-sheets/chuy)
 
-    - [Issyk-Kul](/maps/spec-sheets/issykkul)[maps/issykkul]
+    - [Issyk-Kul](/maps/spec-sheets/issykkul)
 
-    - [Jalal-Abad](/maps/spec-sheets/jalalabad)[maps/jalalabad]
+    - [Jalal-Abad](/maps/spec-sheets/jalalabad)
 
-    - [Naryn](/maps/spec-sheets/naryn)[maps/naryn]
+    - [Naryn](/maps/spec-sheets/naryn)
 
-    - [Osh](/maps/spec-sheets/osh)[maps/osh]
+    - [Osh](/maps/spec-sheets/osh)
 
-    - [Osh City](/maps/spec-sheets/oshcity)[maps/oshcity]
+    - [Osh City](/maps/spec-sheets/oshcity)
 
-    - [Talas](/maps/spec-sheets/talas)[maps/talas]
+    - [Talas](/maps/spec-sheets/talas)
 
-  - Updated main map for [Tanzania](/maps/spec-sheets/tanzania)[maps/tanzania] with the following regions:
+  - Updated main map for [Tanzania](/maps/spec-sheets/tanzania) with the following regions:
 
     - "Zanzibar West (Urban)" renamed as "Mjini Magharibi (Zanzibar West (Urban))".
 
@@ -66,7 +66,7 @@ heading: Map Improvements in Version 3.15.0
 
     - "Zanzibar Central and South" renamed as "Unguja South (Zanzibar Central/South)".
 
-  - Added the following entities to the main map for [Tanzania](/maps/spec-sheets/tanzania)[maps/tanzania]:
+  - Added the following entities to the main map for [Tanzania](/maps/spec-sheets/tanzania):
 
     - Geita
 
@@ -78,13 +78,13 @@ heading: Map Improvements in Version 3.15.0
 
     - Songwe
 
-  - Added a new map and specification sheet for [Finland](/maps/spec-sheets/finland)[maps/finland].
+  - Added a new map and specification sheet for [Finland](/maps/spec-sheets/finland).
 
-  - Updated main map for [Tonga](/maps/spec-sheets/tonga)[maps/tonga] with the following entity:
+  - Updated main map for [Tonga](/maps/spec-sheets/tonga) with the following entity:
 
     - Ongo Niua
 
-  - Updated main map for [Lebanon](/maps/spec-sheets/lebanon)[maps/lebanon] with the following entities:
+  - Updated main map for [Lebanon](/maps/spec-sheets/lebanon) with the following entities:
 
     - "An Nabatiyah" renamed as "Nabatieh".
 
@@ -92,20 +92,20 @@ heading: Map Improvements in Version 3.15.0
 
     - "South" renamed as "South Lebanon".
 
-  - Updated map for [World with Countries](/maps/spec-sheets/worldwithcountries)[maps/worldwithcountries] with the following:
+  - Updated map for [World with Countries](/maps/spec-sheets/worldwithcountries) with the following:
 
     - Updated border between Finland and Estonia.
 
-  - Added new map and specification sheet for [Sierra Leone Main Provinces](/maps/spec-sheets/sierraleoneprovinces)[maps/sierraleoneprovinces].
+  - Added new map and specification sheet for [Sierra Leone Main Provinces](/maps/spec-sheets/sierraleoneprovinces).
 
-  - Updated map and specification sheet for [Dominican Republic Regions](/maps/spec-sheets/dominicanrepublicregions)[maps/dominicanrepublicregions].
+  - Updated map and specification sheet for [Dominican Republic Regions](/maps/spec-sheets/dominicanrepublicregions.
 
-  - Added separate maps and specification sheets for following [Dominican Republic Regions](/maps/spec-sheets/dominicanrepublicregions)[maps/dominicanrepublicregions]:
+  - Added separate maps and specification sheets for following [Dominican Republic Regions](/maps/spec-sheets/dominicanrepublicregions:
 
-    - [Cibao](/maps/spec-sheets/cibao)[maps/cibao]
+    - [Cibao](/maps/spec-sheets/cibao)
 
-    - [Este](/maps/spec-sheets/este)[maps/este]
+    - [Este](/maps/spec-sheets/este)
 
-    - [Sur](/maps/spec-sheets/sur)[maps/sur]
+    - [Sur](/maps/spec-sheets/sur)
 
-  - Added new map and specification sheet for [Czech Republic Districts](/maps/spec-sheets/czechrepublicdistricts)[maps/czechrepublicdistricts].
+  - Added new map and specification sheet for [Czech Republic Districts](/maps/spec-sheets/czechrepublicdistricts).
