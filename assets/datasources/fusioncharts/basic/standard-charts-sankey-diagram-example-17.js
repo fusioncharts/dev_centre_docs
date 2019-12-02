@@ -342,7 +342,7 @@
             },
             {
                 label: "Label Font Color",
-                value: "#ff0ff0",
+                value: "#000fff",
                 attr: "nodeLabelFontColor"
             },
             {
