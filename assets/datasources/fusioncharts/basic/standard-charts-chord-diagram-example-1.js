@@ -2,8 +2,8 @@
     type: "chord",
     renderAt: "chart-container",
     id: "chord-chart",
-    width: "100%",
-    height: "100%",
+    width: "700",
+    height: "500",
     dataFormat: "json",
     dataSource: {
         chart: {
