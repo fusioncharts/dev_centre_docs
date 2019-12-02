@@ -4,19 +4,31 @@ description: A chord diagram is a graphical way to represent flow relationship b
 heading: Chord Diagram
 ---
 
-Chord Diagram
-
 [This chart type belongs to PowerCharts XT]
 
 A chord diagram is a graphical way to represent flow relationship between specific entities in transitioning data. The entities (called **nodes**) are drawn along the circumference of a circular layout. The flow relationships (called **links**) are represented by arcs that connect the nodes. The links are colored according to the rule of dominance of transitioning data. It is a visually pleasing way and hence a popular choice among data visualization enthusiasts.
 
 > Chord Diagrams are also referred to as Radial Network Diagram, Chord Layout, or Dependency Wheel.
 
+To create a chord diagram follow the steps given below:
+
+- In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+- Specify the chart type using the `type` attribute. To render a chord diagram, set `chord`.
+
+- Set the container object using `renderAt` attribute.
+
+- Specify the dimension of the chart using `width` and `height` attributes.
+
+- Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/chord) page of chord diagram.
+
 A simple Chord Diagram looks as shown below:
 
 {% embed_chart standard-charts-chord-diagram-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uovzr4ea/) to edit the chart.
+Click [here](http://jsfiddle.net/fusioncharts/uovzr4ea/) to edit the diagram.
 
 In the above diagram, there are **6** nodes. A link connects a pair of nodes where a relationship exists. Hovering on a node shows all the links (or relationships) associated with it. Likewise, hovering on a link shows the related nodes. Self linking nodes can also exist.
 
