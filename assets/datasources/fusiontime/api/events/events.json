@@ -4582,7 +4582,7 @@
     "description": "This event is fired at the start of the user’s interaction with the time navigator’s window.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeNavBrushStart"
+      "slug": "fusiontime-event-timeNavBrushStart"
     },
     "tags": {
       "action": "Drag",
@@ -4682,7 +4682,7 @@
     "description": "This event is fired at the end of the user’s interaction with the time navigator’s window.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeNavBrushEnd"
+      "slug": "fusiontime-event-timeNavBrushEnd"
     },
     "tags": {
       "action": "Drag",
