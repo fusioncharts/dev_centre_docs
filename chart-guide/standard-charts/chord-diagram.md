@@ -166,15 +166,19 @@ You can choose not to display node labels, to make the chart look less cluttered
 
 Use the code given below:
 
-```
-
-<code>
-
+```javacript
+{
+    "chart": {
+        "showNodeLabels": "0"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/f6a4ek5c/) to edit the above diagram.
 
 ### Set Starting Chart Angle
 
@@ -182,15 +186,19 @@ You can set the starting angle, to specify from where in the circular layout the
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+	"chart": {
+		“startingAngle”: "120"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-8.js %}
+
+Click [here](https://jsfiddle.net/fusioncharts/5xndvpe7/) to edit the above diagram.
 
 ### Set Total Chart Angle
 
@@ -198,15 +206,19 @@ You can set the total angle that the chord diagram will cover when initially ren
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "totalAngle": "270"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/s4hy3ne2/) to edit the above diagram.
 
 ### Add Padding between Node and Link
 
@@ -214,15 +226,19 @@ You can introduce white space between a node and its link to make the chart look
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+    "chart": {
+        "nodeLinkPadding": "10"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/hjkv1c75/) to edit the above diagram.
 
 ### Show Link Value When Hovered
 
