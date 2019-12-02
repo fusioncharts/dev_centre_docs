@@ -305,6 +305,8 @@
             var chartContainer = dataObj.container;
 
             var radioInputsWrapper = document.createElement('div');
+            radioInputsWrapper.style.maxWidth = "900px";
+            radioInputsWrapper.style.margin = "0 auto";
 
             var eventHandler = function(attr, val) {
                 console.log(attr, val);
