@@ -309,7 +309,6 @@
             radioInputsWrapper.style.margin = "0 auto";
 
             var eventHandler = function(attr, val) {
-                console.log(attr, val);
                 chartRef.setChartAttribute(attr, val);
 
             };
