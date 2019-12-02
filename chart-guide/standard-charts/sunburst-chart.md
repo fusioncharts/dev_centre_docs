@@ -38,7 +38,7 @@ In the above chart, you can see how different segments of the chart representing
 
 ### Visualizing Hierarchy in Data
 
-A Sunburst diagram can display a near-infinite number of levels of data hierarchy. Note that if there is only one level of hierarchy in data, the chart would become a doughnut chart. Levels are represented by concentric rings, with the top level of the hierarchy at the center and deeper levels radiating farther away.
+A Sunburst diagram can display a near-infinite number of levels of data hierarchy. Note that if there is only one level of hierarchy in data, the chart would become a [doughnut](/chart-guide/standard-charts/pie-and-doughnut-charts#doughnut-2d-chart) chart. Levels are represented by concentric rings, with the top level of the hierarchy at the center and deeper levels radiating farther away.
 
 The individual segment in each level of the hierarchy is referred to as a `node`. Any ring segment without a **child node** is a **leaf node**. Any node without a **parent node** is a **root node**.
 
@@ -74,23 +74,19 @@ By default, when you click on a node (except the root nodes on the first and the
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
-"chart": {
-
+	"chart": {
         "allowDrillToNode": "0"
-
-      }
-
+    }
 }
-
 ```
 
 The chart will look as shown below:
 
-<<Chart>>
+{% embed_chart standard-charts-sunburst-chart-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0ztw4qo8/) to edit this chart.
 
 ### Specify Value of Inner Radius
 
@@ -98,23 +94,19 @@ When a root has only one parent node, the value of `innerRadius` is set to `0` b
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
-"chart": {
-
-        "innerRadius": "30"
-
-      }
-
+	"chart": {
+        "innerRadius": "40"
+    }
 }
-
 ```
 
 The chart will look as shown below:
 
-<<Chart>>
+{% embed_chart standard-charts-sunburst-chart-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0urya5pw/) to edit this chart.
 
 ### Set Center Angle
 
@@ -123,22 +115,18 @@ Imagine a line bisecting the Sunburst Diagram. The angle that line makes with th
 Use the code given below:
 
 ```
-
 {
-
-"chart": {
-
+	"chart": {
         "centerAngle": "90"
-
-      }
-
+    }
 }
-
 ```
 
 The chart will look as shown below:
 
-<<Chart>>
+{% embed_chart standard-charts-sunburst-chart-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ga7563nw/) to edit this chart.
 
 In the above chart, you can see that the value of `centerAngle` is set to `90`.
 
