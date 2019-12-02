@@ -13,9 +13,7 @@
             "paletteColors": "#ffffff, #A88CCC, #77ECC8, #97FAA4, #CFF69D, #EED482, #FFAE91, #FE93B5, #D98ACF, #7BCDE8, #94A8E9", //Fill Color
             "animationDuration": "2",
             "centerAngle": "90",
-            "hoverFillColor": "#FF0000",
-            "hoverFillAlpha": "50",
-            "unfocussedAlpha": "50"
+            "highlightChildPieSlices": "1"
         },
         data: [{
                 "id": "Flare",

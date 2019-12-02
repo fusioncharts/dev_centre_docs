@@ -236,23 +236,19 @@ In a sunburst chart, parent nodes (all the way to the root node) are highlighted
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
 	"chart": {
-
 		"highlightChildPieSlices": "1"
-
 	}
-
 }
-
 ```
 
 The chart will look as shown below:
 
-<<chart>>
+{% embed_chart standard-charts-sunburst-chart-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/p94jehbn/) to edit this chart.
 
 #### Set Transparency of Unrelated Nodes
 
