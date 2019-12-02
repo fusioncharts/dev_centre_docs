@@ -2336,7 +2336,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeMarkerRollOver"
+      "slug": "fusiontime-event-timeMarkerRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -2393,7 +2393,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeMarkerRollOut"
+      "slug": "fusiontime-event-timeMarkerRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -2450,7 +2450,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeMarkerClick"
+      "slug": "fusiontime-event-timeMarkerClick"
     },
     "tags": {
       "action": "Click",
