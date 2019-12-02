@@ -38,11 +38,11 @@ A chord diagram is a graphical way to represent flow relationship between specif
 
 A simple Chord Diagram looks as shown below:
 
-LIVE CHART
+{% embed_chart standard-charts-chord-diagram-example-1.js %}
 
 In the above diagram, there are `n` nodes. A link connects a pair of nodes where a relationship exists. Hovering on a node shows all the links (or relationships) associated with it. Likewise, hovering on a link shows the related nodes.
 
-Click here to know more.
+Click [here](/chart-guide/standard-charts/chord-diagram) to know more.
 
 ## New Functionalities in Box and Whisker Chart
 

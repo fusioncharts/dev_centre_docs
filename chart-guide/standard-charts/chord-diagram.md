@@ -18,7 +18,7 @@ A simple Chord Diagram looks as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uovzr4ea/) to edit the chart.
 
-In the above diagram, there are `n` nodes. A link connects a pair of nodes where a relationship exists. Hovering on a node shows all the links (or relationships) associated with it. Likewise, hovering on a link shows the related nodes. Self linking nodes can also exist.
+In the above diagram, there are **6** nodes. A link connects a pair of nodes where a relationship exists. Hovering on a node shows all the links (or relationships) associated with it. Likewise, hovering on a link shows the related nodes. Self linking nodes can also exist.
 
 ## Salient Features of a Chord Diagram
 
@@ -126,18 +126,12 @@ You can specify the radius of the chart in percentage value. To do so, set the d
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
-	"chart": {
-
-		"chordRadius": "100"
-
-	}
-
+    "chart": {
+        "chordRadius": "100"
+    }
 }
-
 ```
 
 The chart will look as shown below:
@@ -150,8 +144,7 @@ You can place node labels inside the corresponding nodes. To do this, set the va
 
 Use the code given below:
 
-```
-
+```javascript
 <code>
 
 ```
