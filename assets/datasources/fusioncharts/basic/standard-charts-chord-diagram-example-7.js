@@ -1,7 +1,6 @@
 {
     type: "chord",
     renderAt: "chart-container",
-    id: "chord-chart",
     width: "700",
     height: "500",
     dataFormat: "json",
