@@ -312,31 +312,36 @@
 
             };
 
-            var createRadioNode = function(list) {
-                list.forEach(item => {
+            var createRadioNode = function(list){
+                list.forEach(item =>{
                     var rad = document.createElement("input");
                     rad.type = "radio";
                     rad.name = "node";
                     rad.value = item.value;
                     rad.id = item.value;
-
+                    
+                    rad.style.display = "inline-block";
+                    rad.style.verticalAlign = "center";
+                    rad.style.marginRight = "5px";
+                    
                     rad.onclick = eventHandler.bind(this, item.attr, item.value);
                     var label = document.createElement('label');
                     label.style.color = "#000";
                     label.innerText = item.label;
-
+                    label.style.display = "inline-block";
+                    label.style.verticalAlign = "center";
+                    
                     var div = document.createElement('div');
-                    div.classList = "node-label-wrapper";
-                    div.style.display = "inline-block";
-                    div.style.minWidth = "33%";
-                    div.style.textAlign = "center";
-                    div.style.marginRight = "5px";
+                     div.style.display = "inline-block";
+                     div.style.minWidth = "33%"
+                     div.style.padding = "5px 15px 5px 5px";
                     div.appendChild(rad);
                     div.appendChild(label);
-
+                     
                     radioInputsWrapper.appendChild(div);
-                })
-            }
+                }) 
+                 
+             }
 
             var listItems = [{
                 label: "Label Font",
