@@ -194,7 +194,7 @@ Use the code given below:
 {
 	"chart": {
 		"hoverFillColor": "#FF0000",
-		"hoverFillAlpha": "100",
+		"hoverFillAlpha": "50",
 		"unfocussedAlpha": "50"
 	}
 }
@@ -256,23 +256,19 @@ When you hover the pointer over a node, all nodes (except the hovered node and i
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
 	"chart": {
-
-		"unfocussedAlpha": "100"
-
+		"unfocussedAlpha": "20"
 	}
-
 }
-
 ```
 
 The chart will look as shown below:
 
-<<Chart>>
+{% embed_chart standard-charts-sunburst-chart-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/p94jehbn/) to edit this chart.
 
 #### Set Transparency of Hovered Node
 
