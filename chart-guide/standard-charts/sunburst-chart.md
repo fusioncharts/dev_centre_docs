@@ -114,7 +114,7 @@ Imagine a line bisecting the Sunburst Diagram. The angle that line makes with th
 
 Use the code given below:
 
-```
+```javascript
 {
 	"chart": {
         "centerAngle": "90"
@@ -138,29 +138,25 @@ The `totalAngle` attribute directly controls how the Sunburst diagram looks. For
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
-"chart": {
-
+	"chart": {
         "totalAngle": "180"
-
-      }
-
+    }
 }
-
 ```
 
 The chart will look as shown below:
 
-<<Chart>>
+{% embed_chart standard-charts-sunburst-chart-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/frb9x0pv/) to edit this chart.
 
 In the above chart, the value of `totalAngle` is set to `180`, resulting in a half Sunburst.
 
 ### Set Fill Color
 
-You can specify the color of the nodes. To do so, set the value of the `fillColor` attribute to the hexadecimal code of the desired color. Note that if you do not specify any `fillColor`, the nodes are colored as follows:
+You can specify the color of the nodes. To do so, set the value of the `paletteColors` attribute to the hexadecimal code of the desired color. Note that if you do not specify any color, the nodes are colored as follows:
 
 - Each node in the first level of the hierarchy has different colors from the default palette. If there is only one root node, coloring logic is applied from the level after the one with the root node. For more than one root node, the coloring logic is applied from the root level.
 
@@ -168,23 +164,19 @@ You can specify the color of the nodes. To do so, set the value of the `fillColo
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
-"chart": {
-
-        "fillColor": "#FF0000"
-
-      }
-
+	"chart": {
+       "paletteColors": "ffffff, A88CCC, 77ECC8, 97FAA4, CFF69D, EED482, FFAE91, FE93B5, D98ACF, 7BCDE8, 94A8E9",
+    }
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sunburst-chart-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ftbcj4gx/) to edit this chart.
 
 ### Configure Hover Effects
 
@@ -198,27 +190,21 @@ You can configure several hover effects that occur when you hover over a node. T
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
 	"chart": {
-
 		"hoverFillColor": "#FF0000",
-
 		"hoverFillAlpha": "100",
-
 		"unfocussedAlpha": "50"
-
 	}
-
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sunburst-chart-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0fqryv7b/) to edit this chart.
 
 ### Configure Inner Radius
 
