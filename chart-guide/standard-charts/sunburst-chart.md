@@ -268,7 +268,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-sunburst-chart-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/p94jehbn/) to edit this chart.
+Click [here](http://jsfiddle.net/fusioncharts/zpnwo61k/) to edit this chart.
 
 #### Set Transparency of Hovered Node
 
@@ -276,23 +276,19 @@ When you hover over a node, it becomes opaque. This behavior is controlled by th
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
 	"chart": {
-
-		"hoverFillAlpha": "0"
-
+		"hoverFillAlpha": "20"
 	}
-
 }
-
 ```
 
 The chart will look as shown below:
 
-<<Chart>>
+{% embed_chart standard-charts-sunburst-chart-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/n4s8t29y/) to edit this chart.
 
 #### Configure Fill Color of Hovered Node
 
@@ -300,20 +296,16 @@ By default, a hovered node retains its color when hovered. This is controlled by
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
 	"chart": {
-
 		"hoverFillColor": "#FF0000"
-
 	}
-
 }
-
 ```
 
 The chart will look as shown below:
 
-<<Chart>>
+{% embed_chart standard-charts-sunburst-chart-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/byrhf409/) to edit this chart.
