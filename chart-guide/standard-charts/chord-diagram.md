@@ -240,37 +240,25 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/hjkv1c75/) to edit the above diagram.
 
-### Show Link Value When Hovered
-
-You can choose to display both the names and values of the nodes of either end of a link in the tooltip, when you hover the pointer over the link. To do so, set the value of the `showLinkValueOnHover` attribute to `1`. If you set this value to `0` instead, only the names of the nodes associated with the link will be displayed in the tooltip.
-
-Use the code given below:
-
-```
-
-<code>
-
-```
-
-The chart will look as shown below:
-
-<chart>
-
 ### Make a Pre Transition Chart
 
 You can make a pre transition chord diagram instead of the default post transition one. To do so, set the value of the `mode` attribute to `pre`.
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+	"chart": {
+		"mode": "pre"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-11.js %}
+
+Click [here](https://jsfiddle.net/fusioncharts/kbw7s0Lv/) to edit the above diagram.
 
 ### Modify Link Color
 
@@ -278,12 +266,16 @@ By default, links in a Chord Diagram inherit the color of the dominant node conn
 
 Use the code given below:
 
-```
-
-<code>
-
+```javascript
+{
+	"chart": {
+		"linkColorByDominance": "0"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-12.js %}
+
+Click [here](https://jsfiddle.net/fusioncharts/f364vw5h/) to edit the above diagram.

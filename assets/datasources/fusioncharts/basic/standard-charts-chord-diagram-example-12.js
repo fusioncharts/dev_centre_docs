@@ -12,8 +12,7 @@
             nodeLabelPosition: "outside",
             showLegend: 0,
             theme: "fusion",
-            mode: "post",
-            nodeLinkPadding: "10"
+            linkColorByDominance: "0"
         },
         nodes: [{
                 label: "India"
