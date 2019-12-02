@@ -336,13 +336,74 @@
             }
 
             var listItems = [{
-                label: "Label Background Color",
-                value: '#ff0000',
-                attr: 'nodeLabelBgColor'
-            }, {
+                label: "Label Font",
+                value: "Arial",
+                attr: "nodeLabelFont"
+            },
+            {
+                label: "Label Font Color",
+                value: "#ff0ff0",
+                attr: "nodeLabelFontColor"
+            },
+            {
                 label: "Label Transparency",
-                value: 30,
-                attr: 'nodeLabelAlpha'
+                value: "50",
+                attr: "nodeLabelAlpha"
+            },
+            {
+                label: "Label Background Color",
+                value: "#ff0000",
+                attr: "nodeLabelBgColor"
+            },
+            {
+                label: "Label Border Color",
+                value: "#000000",
+                attr: "nodeLabelBorderColor"
+            },
+            {
+                label: "Label Font Size",
+                value: "13",
+                attr: "nodeLabelFontSize"
+            },
+            {
+                label: "Bold Label Font",
+                value: "1",
+                attr: "nodeLabelFontBold"
+            },
+            {
+                label: "Italic Label Font",
+                value: "1",
+                attr: "nodeLabelFontItalic"
+            },
+            {
+                label: "Label Border Radius",
+                value: "5",
+                attr: "nodeLabelBorderRadius"
+            },
+            {
+                label: "Label Border Padding",
+                value: "5",
+                attr: "nodeLabelBorderPadding"
+            },
+            {
+                label: "Label Border Dashed",
+                value: "1",
+                attr: "nodeLabelBorderDashed"
+            },
+            {
+                label: "Length of the Dashed Border",
+                value: "3",
+                attr: "nodeLabelBorderDashLen"
+            },
+            {
+                label: "Gap Between the Dashed Border",
+                value: "2",
+                attr: "nodeLabelBorderDashGap"
+            },
+            {
+                label: "Inherit Label Color",
+                value: "1",
+                attr: "inheritLabelColorFromNode"
             }];
 
             createRadioNode(listItems);
