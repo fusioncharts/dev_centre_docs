@@ -11,6 +11,7 @@
             "showPlotBorder": "1",
             "animation": "1",
             "paletteColors": "#ffffff, #A88CCC, #77ECC8, #97FAA4, #CFF69D, #EED482, #FFAE91, #FE93B5, #D98ACF, #7BCDE8, #94A8E9", //Fill Color
+            "showBorder": "0",
             "animationDuration": "2",
             "centerAngle": "90",
             "highlightChildPieSlices": "1"
