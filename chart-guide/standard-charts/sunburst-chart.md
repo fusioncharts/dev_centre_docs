@@ -4,11 +4,11 @@ description: A Sunburst chart is used to visualize relationships within hierarch
 heading: Sunburst
 ---
 
-[This chart type belongs to PowerCharts XT]
+> This chart type belongs to PowerCharts XT
 
 A Sunburst chart is used to visualize relationships within hierarchical data. It shows hierarchy through a series of concentric rings, where each ring corresponds to a level in the hierarchy. Each ring can have multiple segments; each segment showing the contribution of a particular dimension in that hierarchy. Focussing on a segment in the ring gives a sense of the part to the whole relationship of this dimension with respect to its parent ring segment.
 
-The Sunburst chart is most effective at showing how one ring is broken into its contributing pieces (i.e, sequential segments). It is a space-filling visualization that uses a radial, rather than a rectangular layout (like a Treemap).
+The Sunburst chart is most effective at showing how one ring is broken into its contributing pieces (i.e, sequential segments). It is a space-filling visualization that uses a radial, rather than a rectangular layout (like a [Treemap](/chart-guide/standard-charts/treemap)).
 
 > A Sunburst chart shares similarities with a Ring Chart, Multi-level Pie Chart, Belt Chart, and a Radial Treemap.
 
@@ -28,7 +28,7 @@ For a detailed list of attributes, refer to the [chart attributes](/chart-attrib
 
 A Sunburst chart looks as follows:
 
-<<Live Chart>>
+{% embed_chart standard-charts-sunburst-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/onu3sm2t/) to edit this chart.
 
