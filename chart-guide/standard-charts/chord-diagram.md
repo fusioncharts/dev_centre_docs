@@ -188,9 +188,9 @@ Use the code given below:
 
 ```javascript
 {
-	"chart": {
-		“startingAngle”: "120"
-	}
+    "chart": {
+        “startingAngle”: "120"
+    }
 }
 ```
 
@@ -248,9 +248,9 @@ Use the code given below:
 
 ```javascript
 {
-	"chart": {
-		"mode": "pre"
-	}
+    "chart": {
+        "mode": "pre"
+    }
 }
 ```
 
@@ -268,9 +268,9 @@ Use the code given below:
 
 ```javascript
 {
-	"chart": {
-		"linkColorByDominance": "0"
-	}
+    "chart": {
+        "linkColorByDominance": "0"
+    }
 }
 ```
 
