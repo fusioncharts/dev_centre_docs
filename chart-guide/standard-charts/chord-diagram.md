@@ -54,23 +54,19 @@ When you click on a node in a Chord Diagram, it is disabled and links associated
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
-	"chart": {
-
-		"enableToggle": "0"
-
-	}
-
+    "chart": {
+        "enableToggle": "0"
+    }
 }
-
 ```
 
 The chart will look as shown below:
 
-<<Chart>>
+{% embed_chart standard-charts-chord-diagram-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/hqe7fogu/) to edit the above diagram.
 
 ### Set Node Spacing
 
@@ -78,23 +74,19 @@ You can introduce white space between two adjacent nodes to reduce clutter in th
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
-	"chart": {
-
-		"nodeSpacing": "5"
-
-	}
-
+    "chart": {
+        "nodeSpacing": "15"
+    }
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/cf54pvxo/) to edit the above diagram.
 
 ### Set Node Thickness
 
@@ -102,18 +94,12 @@ You can specify the thickness of a single node, or globally, of all nodes in the
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
-	"chart": {
-
-		"nodeThickness": "15"
-
-	}
-
+    "chart": {
+        "nodeThickness": "15"
+    }
 }
-
 ```
 
 The chart will look as shown below:
@@ -140,13 +126,16 @@ The chart will look as shown below:
 
 ### Position Node Labels
 
-You can place node labels inside the corresponding nodes. To do this, set the value of the `nodeLabelPosition` attribute to `inside`.
+Node label positions can be set to `tangential` (default), `outside`, or `inside`. To position node labels manually, set the desired position to the `nodeLabelPosition` attribute.
 
 Use the code given below:
 
 ```javascript
-<code>
-
+{
+	"chart": {
+		"nodeLabelPosition": "inside"
+	}
+}
 ```
 
 The chart will look as shown below:

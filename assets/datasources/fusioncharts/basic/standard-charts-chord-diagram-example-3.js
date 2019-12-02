@@ -12,7 +12,8 @@
             nodeLabelPosition: "outside",
             showLegend: 0,
             theme: "fusion",
-            mode: "post"
+            mode: "post",
+            nodeSpacing: "15"
         },
         nodes: [{
                 label: "India"
