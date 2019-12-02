@@ -212,23 +212,19 @@ You can configure the inner radius of a Sunburst chart. To do so, set the value 
 
 Use the code given below:
 
-```
-
+```javascript
 {
-
 	"chart": {
-
 		"innerRadius": "40"
-
 	}
-
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-sunburst-chart-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0urya5pw/) to edit this chart.
 
 ### Configure Highlight Effects
 
