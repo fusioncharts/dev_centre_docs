@@ -10,7 +10,6 @@
             caption: "Interconnecting Flights across Countries, 2019",
             subcaption: "A Horizontal Sankey with options to configure the node attributes",
             theme: "fusion",
-            orientation: "horizontal",
             linkAlpha: 30,
             linkHoverAlpha: 60,
             nodeLabelPosition: "start"
@@ -334,7 +333,6 @@
 
                     radioInputsWrapper.appendChild(div);
                 })
-
             }
 
             var listItems = [{
@@ -342,7 +340,7 @@
                 value: '#ff0000',
                 attr: 'nodeLabelBgColor'
             }, {
-                label: "Label two",
+                label: "Label Transparency",
                 value: 30,
                 attr: 'nodeLabelAlpha'
             }];
