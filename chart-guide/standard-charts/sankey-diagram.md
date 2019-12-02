@@ -8,6 +8,20 @@ heading: Sankey Diagram
 
 Sankey Diagram is a type of flow diagram that depicts the flow of resources (material, energy, cost, etc.) from one node to another. The start and endpoints of each flow are called **nodes** and the flow paths between them are called **links**. There can only be one link between a pair of nodes. The value of the flow between each pair of nodes is encoded by the width of the link. The coloration of the links help establish visual mapping with their respective nodes.
 
+To create a sankey diagram follow the steps given below:
+
+- In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+- Specify the chart type using the `type` attribute. To render a sankey diagram, set `sankey`.
+
+- Set the container object using `renderAt` attribute.
+
+- Specify the dimension of the chart using `width` and `height` attributes.
+
+- Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/sankey) page of sankey diagram.
+
 A Sankey Diagram can be drawn in either a **horizontal layout (default)** or a **vertical layout**. A Sankey Diagram with horizontal orientation looks as shown below:
 
 {% embed_chart standard-charts-sankey-diagram-example-1.js %}
