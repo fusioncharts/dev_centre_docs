@@ -328,6 +328,8 @@
                     var div = document.createElement('div');
                     div.classList = "node-label-wrapper";
                     div.style.display = "inline-block";
+                    div.style.minWidth = "33%";
+                    div.style.textAlign = "center";
                     div.style.marginRight = "5px";
                     div.appendChild(rad);
                     div.appendChild(label);
