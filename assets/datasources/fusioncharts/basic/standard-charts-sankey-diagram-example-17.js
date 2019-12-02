@@ -328,7 +328,7 @@
 
                     var div = document.createElement('div');
                     div.style.display = "inlineBlock";
-                    //  div.style.marginRight = "5px";
+                    div.style.marginRight = "5px";
                     div.appendChild(rad);
                     div.appendChild(label);
 
@@ -338,7 +338,7 @@
             }
 
             var listItems = [{
-                label: "Label one",
+                label: "Label Background Color",
                 value: '#ff0000',
                 attr: 'nodeLabelBgColor'
             }, {
