@@ -104,7 +104,9 @@ Use the code given below:
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/k54j9Lsz/) to edit the above diagram.
 
 ### Set Chart Radius
 
@@ -122,7 +124,9 @@ Use the code given below:
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ch9ntze8/) to edit the above diagram.
 
 ### Position Node Labels
 
@@ -132,15 +136,17 @@ Use the code given below:
 
 ```javascript
 {
-	"chart": {
-		"nodeLabelPosition": "inside"
-	}
+    "chart": {
+        "nodeLabelPosition": "inside"
+    }
 }
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart standard-charts-chord-diagram-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/pev4x2bo/) to edit the above diagram.
 
 ### Hide Node Labels
 
