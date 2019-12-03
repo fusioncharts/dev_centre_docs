@@ -1819,6 +1819,10 @@
             "title": "Version History",
             "children": [
               {
+                "title": "v3.14.x",
+                "path": "/upgrading/version-history/version-3-14-X"
+              },
+              {
                 "title": "v3.13.x",
                 "path": "/upgrading/version-history/version-3-13-X"
               },
