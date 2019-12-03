@@ -1038,12 +1038,6 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showToolTipShadow"
-      },
-      {
-        "description": "Specify custom text for the tooltip \n\n You can either specify a constant string as the tooltip text or you can use variable values from the data level by prefixing a __$__ to the attribute name, for example, __$name__, __$value__.",
-        "range": "",
-        "type": "String",
-        "name": "plottooltext"
       }
     ],
     "description": "These attributes let you control the tooltip. You can set the background color, border color, separator character and few other details. "
@@ -1184,6 +1178,12 @@
         "type": "Number",
         "versionsince": "3.15.0",
         "name": "linkHoverAlpha"
+      },
+      {
+        "description": "This attribute lets you enable/disable the highlight effect, in the form of a `fadeout`, for the data plots corresponding to a legend item. When this attribute is enabled and the mouse pointer is hovered over a legend item label, plots belonging to the other data series fadeout, by reducing their opacity.\n\n The fadeout effect can be customized by specifying the fadeout color and opacity using the `color` and `alpha` attributes. Eg. `fadeout|color=#ff0000, alpha=60`",
+        "range": "",
+        "type": "String",
+        "name": "plotHighlightEffect"
       }
     ],
     "description": "If you wish to show an effect on the data plot (column, line anchor, pie etc.) when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."

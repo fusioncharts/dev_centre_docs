@@ -10,11 +10,11 @@ heading: Release Notes
 
 <h4 class="sub-heading">New Feature</h4>
 
-- FusionTime 2.0 onwards, you can build time-series charts with real time data.
+- FusionTime 2.0 onwards, you can build time-series charts with [real time data](/fusiontime/getting-started/real-time-data-in-fusiontime).
 
 - You can now set variable heights to different canvases in a multivariate chart.
 
-- FusionTime 2.0 onwards, you can render charts with the legend initially hidden, using the newly introduced attribute `initiallyHidden`.
+- FusionTime 2.0 onwards, you can render charts with the [legend](/fusiontime/fusiontime-component/legend-in-fusiontime) initially hidden, using the newly introduced attribute `initiallyHidden`.
 
 - You can now use the attribute `applyCSSTransform` to modify CSS files for charts in FusionTime.
 

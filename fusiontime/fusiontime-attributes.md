@@ -1797,6 +1797,11 @@ new FusionCharts({
 		<td>String</td>
 		<td>If an image is displayed as the chart dataInvalidMessage, this attribute allows to set a custom vertical alignment for the image. <strong>Default Value:</strong> baseChartMessageImageHAlign</td>
 	</tr>
+	<tr>
+		<td>`canvasHeightProportion`</td>
+		<td>String</td>
+		<td>This attribute allows you to set variable heights to the canvases in a multivariate chart in the form of ratios, i.e., 1:2:1, 1:2:3, etc.</td>
+	</tr>
 </table>
 
 ## Date/time Format
