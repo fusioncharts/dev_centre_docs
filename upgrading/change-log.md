@@ -12,15 +12,15 @@ heading: Version 3.15.x
 
 - FusionCharts Version 3.15.0 introduces 3 new chart types - the Sankey Diagram, the Sunburst Chart, and the Chord Diagram. All of these charts belong to PowerCharts XT.
 
-  - The **Sankey Diagram** is a type of flow diagram, which depicts the flow of resources from one point to another.
+  - The [Sankey Diagram](/chart-guide/standard-charts/sankey-diagram) is a type of flow diagram, which depicts the flow of resources from one point to another.
 
-  - The **Chord Diagram** is a graphical method of displaying flows or connections among relatable entities.
+  - The [Chord Diagram](chart-guide/standard-charts/chord-diagram) is a graphical method of displaying flows or connections among relatable entities.
 
-  - The **Sunburst Chart** helps in visualizing relationships within hierarchical data. It displays hierarchy through a series of concentric rings, each of which corresponds to a different level within the hierarchy.
+  - The [Sunburst Chart](/chart-guide/standard-charts/sunburst-chart) helps in visualizing relationships within hierarchical data. It displays hierarchy through a series of concentric rings, each of which corresponds to a different level within the hierarchy.
 
-- Starting v3.15.0, scrolling can be enabled in the box and whisker chart. You can use `numVisiblePlot` attribute to control the number of plot points visible on the chart canvas.
+- Starting v3.15.0, [scrolling](/chart-guide/standard-charts/box-and-whisker-chart#specify-visibility-of-categories) can be enabled in the box and whisker chart. You can use `numVisiblePlot` attribute to control the number of plot points visible on the chart canvas.
 
-- The `min`, `q1`, `median`, `q3`, `max`, `mean`, `median`, `md`, `sd`, and `outlier` of the box and whisker chart can now be directly mentioned within the data object. So from now on, box and whisker chart can be used in two ways:
+- The `min`, `q1`, `median`, `q3`, `max`, `mean`, `median`, `md`, `sd`, and `outlier` of the [box and whisker](/chart-guide/standard-charts/box-and-whisker-chart#specifying-pre-processed-data) chart can now be directly mentioned within the data object. So from now on, box and whisker chart can be used in two ways:
 
   - Provide values and expect the chart to determine the summarised values.
 
