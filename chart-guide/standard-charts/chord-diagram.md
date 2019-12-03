@@ -26,7 +26,7 @@ For a detailed list of attributes, refer to the [chart attributes](/chart-attrib
 
 A simple Chord Diagram looks as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-1.js %}
+{% embed_all standard-charts-chord-diagram-example-1.js %}
 
 In the above diagram, there are **6** nodes. A link connects a pair of nodes where a relationship exists. Hovering on a node shows all the links (or relationships) associated with it. Likewise, hovering on a link shows the related nodes. Self linking nodes can also exist.
 
@@ -74,7 +74,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-2.js %}
+{% embed_all standard-charts-chord-diagram-example-2.js %}
 
 ### Set Node Spacing
 
@@ -92,7 +92,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-3.js %}
+{% embed_all standard-charts-chord-diagram-example-3.js %}
 
 ### Set Node Thickness
 
@@ -110,7 +110,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-4.js %}
+{% embed_all standard-charts-chord-diagram-example-4.js %}
 
 ### Set Chart Radius
 
@@ -128,7 +128,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-5.js %}
+{% embed_all standard-charts-chord-diagram-example-5.js %}
 
 ### Position Node Labels
 
@@ -146,7 +146,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-6.js %}
+{% embed_all standard-charts-chord-diagram-example-6.js %}
 
 ### Hide Node Labels
 
@@ -164,7 +164,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-7.js %}
+{% embed_all standard-charts-chord-diagram-example-7.js %}
 
 ### Set Starting Chart Angle
 
@@ -182,7 +182,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-8.js %}
+{% embed_all standard-charts-chord-diagram-example-8.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/5xndvpe7/) to edit the above diagram.
 
@@ -202,7 +202,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-9.js %}
+{% embed_all standard-charts-chord-diagram-example-9.js %}
 
 ### Add Padding between Node and Link
 
@@ -220,7 +220,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-10.js %}
+{% embed_all standard-charts-chord-diagram-example-10.js %}
 
 ### Make a Pre Transition Chart
 
@@ -238,7 +238,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-11.js %}
+{% embed_all standard-charts-chord-diagram-example-11.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/kbw7s0Lv/) to edit the above diagram.
 
@@ -258,6 +258,6 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-chord-diagram-example-12.js %}
+{% embed_all standard-charts-chord-diagram-example-12.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/f364vw5h/) to edit the above diagram.
