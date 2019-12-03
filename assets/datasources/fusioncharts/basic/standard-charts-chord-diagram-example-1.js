@@ -33,7 +33,6 @@
             }
         ],
         links: [
-
             {
                 from: "India",
                 to: "Canada",
