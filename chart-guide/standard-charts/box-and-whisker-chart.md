@@ -134,14 +134,10 @@ For a detailed list of attributes, refer to the [chart attributes](/chart-attrib
 
 Refer to the code given below:
 
-```json
+```javascript
 {
-    "chart": {
-        ...
-    },
-    "categories": [{
-        ...
-    }],
+    "chart": { },
+    "categories": [{ }],
     "dataset": [{
             "seriesname": "Male",
             "lowerBoxColor": "#0075c2",
@@ -176,7 +172,7 @@ For the detailed list of attributes to configure legend, refer to the API refere
 
 Refer to the code given below:
 
-```json
+```javascript
 {
     "chart": {
     	"showLegend": "1",
@@ -184,8 +180,8 @@ Refer to the code given below:
     }
 
 }
-
 ```
+
 A simple box and whisker chart rendered with a legend looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-2.js %}
