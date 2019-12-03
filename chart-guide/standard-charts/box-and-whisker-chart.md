@@ -520,6 +520,28 @@ The  chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/mf3g5cgo/) to edit the above chart.
 
+### Show Mean Icon Value
+
+To enable the mean icon value of the box and whisker chart, set the value of `showMeanValue` attribute to **1**.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "showMeanValue": "1"
+    }
+}
+```
+
+> When the above attribute is enabled, the chart will always display the corresponding value, even if the attributes `showValue` or `showValues` is disabled or enabled.
+
+The  chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/mf3g5cgo/) to edit the above chart.
+
 ### Draw Mean Connectors
 
 For multiple data plots, you can draw a line to connect the mean values of each data plot. To draw the mean connectors, set the value of `drawMeanConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean for multiple sets of data. The default value of this attribute is `0`.
@@ -629,6 +651,28 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/t24afhfs/) to edit the above chart.
 
+### Show Mean Deviation Icon Value
+
+To enable the mean deviation icon value of the box and whisker chart, set the value of `showMDValue` attribute to **1**.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "showMDValue": "1"
+    }
+}
+```
+
+> When the above attribute is enabled, the chart will always display the corresponding value, even if the attributes `showValue` or `showValues` is disabled or enabled.
+
+The  chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-24.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/xy8tdk0j/) to edit the above chart.
+
 ### Draw Mean Deviation Connectors
 
 For multiple data plots, you can draw a line to connect the mean deviation icons of each data plot. To draw the mean connectors, set the value of `drawMDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean deviation for multiple sets of data. The default value of this attribute is `0`.
@@ -731,6 +775,28 @@ A box and whisker chart with the standard deviation icon shown in the legend box
 {% embed_chart standard-charts-box-and-whisker-chart-example-15.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/u47qrcte/) to edit the above chart.
+
+### Show Standard Deviation Icon Value
+
+To enable the standard deviation icon value of the box and whisker chart, set the value of `showSDValue` attribute to **1**.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "showSDValue": "1"
+    }
+}
+```
+
+> When the above attribute is enabled, the chart will always display the corresponding value, even if the attributes `showValue` or `showValues` is disabled or enabled.
+
+The  chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-25.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/x5L4fdju/) to edit the above chart.
 
 ### Draw Standard Deviation Connectors
 
@@ -949,18 +1015,6 @@ A box and whisker chart with outlier values shown on the chart looks like this:
 {% embed_chart standard-charts-box-and-whisker-chart-example-22.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/oukgfmca/) to edit the above chart.
-
-## Show the Icon Value
-
-Use the `showValue` attribute to display the values of plot (`min`, `q1`, `median`, `q3`, and `max`). By default, the value of `showValue` is set to `1`. However, if you want to see individual values, you can use the following attributes:
-
-- Set the value of the `showMeanValue` attribute to `1` to display the mean value.
-- Set the value of the `showMDValue` attribute to `1` to display the mean deviation value.
-- Set the value of the `showSDValue` attribute to `1` to display the standard deviation value.
-- Set the value of the `showQDValue` attribute to `1` to display the quartile deviation value.
-- Set the value of the `showOutlierValue` attribute to `1` to display the outlier value. 
-
-> If you set the value of any of the attributes listed above, the value of the `showValue` attribute will be set to `0`, unless you explicitly set it to `1`.
 
 ## Position Icon Values
 

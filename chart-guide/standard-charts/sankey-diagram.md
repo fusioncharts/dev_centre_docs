@@ -278,7 +278,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/7kjdu2cs/) to edit the above diagram.
 
-> To display the label for any specific node in the diagram, set the value of `showValue` attribute under `nodes` array.
+> To display the value for any specific node in the diagram, set the value of `showValue` attribute under `nodes` array.
 
 #### Rotate Node Labels
 
