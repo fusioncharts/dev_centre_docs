@@ -9,10 +9,13 @@
         chart: {
             caption: "Interconnecting Flights across Countries, 2019",
             subcaption: "A Horizontal Sankey with options to configure the node attributes",
-            theme: "fusion",
             linkAlpha: 30,
             linkHoverAlpha: 60,
-            nodeLabelPosition: "start"
+            nodeLabelPosition: "start",
+            bgColor: "ffffff",
+            showborder: "0",
+            legendPosition:  "bottom",
+            legendBorderColor: "ffffff",
         },
         nodes: [{
                 label: "Brazil",

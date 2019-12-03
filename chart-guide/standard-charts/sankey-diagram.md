@@ -445,20 +445,20 @@ Use the code given below to apply the customizations listed above to your chart:
 ```javascript
 {
     "chart": {
-        "nodeLabelFont": "",
-        "nodeLabelFontColor": "",
-        "nodeLabelAlpha": "",
-        "nodeLabelBgColor": "",
-        "nodeLabelBorderColor": "",
-        "nodeLabelFontSize": "",
-        "nodeLabelFontBold": "",
-        "nodeLabelFontItalic": "",
-        "nodeLabelBorderRadius": "",
-        "nodeLabelBorderPadding": "",
-        "nodeLabelBorderDashed": "",
-        "nodeLabelBorderDashLen": "",
-        "nodeLabelBorderDashGap": "",
-        "inheritLabelColorFromNode": ""
+        "nodeLabelFont": "Arial",
+        "nodeLabelFontColor": "#000fff",
+        "nodeLabelAlpha": "50",
+        "nodeLabelBgColor": "#ff0000",
+        "nodeLabelBorderColor": "#000000",
+        "nodeLabelFontSize": "13",
+        "nodeLabelFontBold": "1",
+        "nodeLabelFontItalic": "1",
+        "nodeLabelBorderRadius": "5",
+        "nodeLabelBorderPadding": "5",
+        "nodeLabelBorderDashed": "1",
+        "nodeLabelBorderDashLen": "3",
+        "nodeLabelBorderDashGap": "2",
+        "inheritLabelColorFromNode": "1"
     }
 }
 ```
