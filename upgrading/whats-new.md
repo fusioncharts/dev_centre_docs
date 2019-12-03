@@ -48,12 +48,47 @@ Click [here](/chart-guide/standard-charts/chord-diagram) to know more.
 
 A box and whisker chart is a statistical chart that is used to examine and summarize a range of data values. Starting v3.15.0, FusionCharts Suite XT has introduced the following features in the existing box and whisker chart:
 
-- You can apply a custom color to the icon borders.
+- Scrolling feature has now been enabled in the box and whiser chart.
 
-- Use the `showValue` attribute to display the values of the plot (`min`, `q1`, `median`, `q3`, and `max`).
+- You can apply a custom color to the icon borders. You can use `numVisiblePlot` attribute to control the number of plot points visible on the chart canvas.
 
-- In a box and whisker chart, you can place data values either `above`, or `below` the icons. By default, the values are displayed above the icons. However, now you can change the position of the values using the attributes introduced in v3.15.0.
+- Box and whisker chart can now be used in two different ways:
 
-- You can now specify pre-processed data, instead of the value array you provided earlier. Instead, you can directly provide values of specific functions like `min`, `q1`, `median`, `q3`, and `max`, to draw a box and whisker plot.
+  - Provide values and expect the chart to determine the summarised values.
+  - Provide summarised values to a box and whisker plot.
 
-- You can specify the number of categories that should be visible on the canvas.
+- Five new attributes have been introduced to explicitly set the data values of the mean, MD, SD, QD and outlier.
+
+  - `showMeanValue`
+
+  - `showMDValue`
+
+  - `showSDValue`
+
+  - `showQDValue`
+
+  - `showOutlierValue`
+
+- New attributes have been introduced to set the position of the values for mean, MD, SD, QD and outlier.
+
+  - `meanValuePosition`
+
+  - `MDValuePosition`
+
+  - `SDValuePosition`
+
+  - `QDValuePosition`
+
+  - `outlierValuePosition`
+
+- You can now add custom color to the border of the icons of mean, MD, SD, QD and outlier.
+
+  - `meanIconBorderColor`
+
+  - `MDIconBorderColor`
+
+  - `SDIconBorderColor`
+
+  - `QDIconBorderColor`
+
+  - `outlierIconBorderColor`
