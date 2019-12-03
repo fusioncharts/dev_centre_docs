@@ -28,6 +28,8 @@ A simple Chord Diagram looks as shown below:
 
 {% embed_all standard-charts-chord-diagram-example-1.js %}
 
+Click [here](https://jsfiddle.net/fusioncharts/f5upy4vm/) to edit the above diagram.
+
 In the above diagram, there are **6** nodes. A link connects a pair of nodes where a relationship exists. Hovering on a node shows all the links (or relationships) associated with it. Likewise, hovering on a link shows the related nodes. Self linking nodes can also exist.
 
 ## Salient Features of a Chord Diagram
@@ -76,6 +78,8 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-chord-diagram-example-2.js %}
 
+Click [here](https://jsfiddle.net/fusioncharts/q9yb7cm2/) to edit the above diagram.
+
 ### Set Node Spacing
 
 You can introduce white space between two adjacent nodes to reduce clutter in the chart. To do so, assign the value of the desired white space to the attribute `nodeSpacing`.
@@ -93,6 +97,8 @@ Use the code given below:
 The chart will look as shown below:
 
 {% embed_all standard-charts-chord-diagram-example-3.js %}
+
+Click [here](https://jsfiddle.net/fusioncharts/7c5dL0oh/) to edit the above diagram.
 
 ### Set Node Thickness
 
@@ -112,6 +118,8 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-chord-diagram-example-4.js %}
 
+Click [here](https://jsfiddle.net/fusioncharts/puonxjtf/) to edit the above diagram.
+
 ### Set Chart Radius
 
 You can specify the radius of the chart in percentage value. To do so, set the desired value to the attribute `chordRadius`.
@@ -129,6 +137,8 @@ Use the code given below:
 The chart will look as shown below:
 
 {% embed_all standard-charts-chord-diagram-example-5.js %}
+
+Click [here](https://jsfiddle.net/fusioncharts/zv0gxhL6/) to edit the above diagram.
 
 ### Position Node Labels
 
@@ -148,6 +158,8 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-chord-diagram-example-6.js %}
 
+Click [here](https://jsfiddle.net/fusioncharts/krcL2tgp/) to edit the above diagram.
+
 ### Hide Node Labels
 
 You can choose not to display node labels, to make the chart look less cluttered. To do so, set the value of the attribute `showNodeLabels` to `0`.
@@ -165,6 +177,8 @@ Use the code given below:
 The chart will look as shown below:
 
 {% embed_all standard-charts-chord-diagram-example-7.js %}
+
+Click [here](https://jsfiddle.net/fusioncharts/zaufsLn2/) to edit the above diagram.
 
 ### Set Starting Chart Angle
 
@@ -204,6 +218,8 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-chord-diagram-example-9.js %}
 
+Click [here](https://jsfiddle.net/fusioncharts/4nm7opwc/) to edit the above diagram.
+
 ### Add Padding between Node and Link
 
 You can introduce white space between a node and its link to make the chart look cleaner. To do so, set the value of the `nodeLinkPadding` attribute to the desired amount.
@@ -221,6 +237,8 @@ Use the code given below:
 The chart will look as shown below:
 
 {% embed_all standard-charts-chord-diagram-example-10.js %}
+
+Click [here](https://jsfiddle.net/fusioncharts/w5efcaqv/) to edit the above diagram.
 
 ### Make a Pre Transition Chart
 

@@ -471,8 +471,6 @@ Click [here](http://jsfiddle.net/fusioncharts/dbxy4nrf/) to edit the above diagr
 
 ### Link Customizations
 
-> It is mandatory to specify the links object.
-
 #### Straight Link Sankey
 
 FusionCharts allows you to add straight links to your Sankey diagram instead of the default links. To do this, set the value of `linkCurvature` attribute to `0`.
