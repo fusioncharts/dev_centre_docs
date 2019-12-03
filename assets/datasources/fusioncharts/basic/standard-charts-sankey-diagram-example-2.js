@@ -2,8 +2,8 @@
     type: "sankey",
     renderAt: "container",
     id: "sankey-chart",
-    width: "700",
-    height: "550",
+    width: "6500",
+    height: "520",
     dataFormat: "json",
     dataSource: {
         chart: {
