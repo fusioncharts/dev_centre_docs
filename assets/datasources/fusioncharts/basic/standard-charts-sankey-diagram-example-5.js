@@ -9,7 +9,7 @@
         chart: {
             caption: "Immigrant Flow for Last Month (In Millions)",
             legendPosition: "bottom",
-            enableDrag: "1",
+            enableDrag: "0",
             theme: "fusion"
         },
         nodes: [{

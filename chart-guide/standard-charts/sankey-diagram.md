@@ -129,7 +129,7 @@ Use the code given below:
 ```javascript
 {
     "chart": {
-        "enableDrag": "1"
+        "enableDrag": "0"
     }
 }
 ```
