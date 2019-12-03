@@ -32422,7 +32422,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered when a data plot is clicked.",
+					"description": "Triggered when a link is clicked.",
 					"examples": {},
 					"params": {
 						"eventObj": {
