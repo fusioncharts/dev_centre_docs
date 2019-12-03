@@ -1460,14 +1460,14 @@
         "name": "value"
       },
       {
-        "description": "Allows you to show or hide the label for a specific category on the chart.",
+        "description": "Allows you to show or hide the label for a specific node on the chart.",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.13.5",
         "name": "showLabel"
       },
       {
-        "description": "Allows you to show or hide the value for a specific category on the chart.",
+        "description": "Allows you to show or hide the value for a specific node on the chart.",
         "range": "0/1",
         "type": "Boolean",
         "versionsince": "3.13.5",
