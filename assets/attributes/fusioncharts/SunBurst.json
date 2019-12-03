@@ -1365,7 +1365,7 @@
         "range": "0 - 100",
         "type": "Number",
         "versionsince": "3.15.0",
-        "name": "hoverFillAlpha"
+        "name": "unfocussedAlpha"
       }
     ],
     "description": "If you wish to show an effect on the data plot when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."
@@ -1379,13 +1379,6 @@
         "type": "Boolean",
         "Versionsince": "3.13.0",
         "name": "highlightParentPieSlices"
-      },
-      {
-        "description": "This attribute sets the direction of highlighting plots when hovered. The default value of this attribute is `0`, by which the plots are highlighted from the current node to its leaf node. When this attribute is set to `1`, the direction of the highlight gets reversed, i.e., all the leaf node will be highlighted from the current hovered node.",
-        "range": "0/1",
-        "type": "Boolean",
-        "Versionsince": "3.13.0",
-        "name": "highlightChildPieSlices"
       }
     ],
     "description": "If you wish to show a hightlight effect on the nodes (from parent node to child node and vice versa) when the user hovers his mouse over the parent node, these attributes lets you highlight the hovered node and all its children till the leaves."
