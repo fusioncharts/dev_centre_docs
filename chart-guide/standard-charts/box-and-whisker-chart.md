@@ -1012,6 +1012,28 @@ A box and whisker chart with outliers looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/y9wzdwur/) to edit the above chart.
 
+### Show Outliers Icon Value
+
+To enable the outliers icon value of the box and whisker chart, set the value of `showOutlierValue` attribute to **1**.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "showOutlierValue": "1"
+    }
+}
+```
+
+> When the above attribute is enabled, the chart will always display the corresponding value, even if the attributes `showValue` or `showValues` is disabled or enabled.
+
+The  chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-27.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wxLrj4yq/) to edit the above chart.
+
 ### Show Outliers beyond the Range
 
 For the chart shown above, all outliers provided as values to the `outliers` attribute are in the range of the y-axis scale. However, there can be instances where the outlier values lie outside the range of the y-axis. In this case, by default, such outlier values are not shown on the chart to maintain the visual integrity of the data plots.
