@@ -17,7 +17,7 @@
             "mdIconSides": "5",
             //"mdIconShape": "triangle"
             "mdIconColor": "#fff00f",
-            "showMDValue": "1"
+            "showMDValues": "1"
         },
         "categories": [{
             "category": [{

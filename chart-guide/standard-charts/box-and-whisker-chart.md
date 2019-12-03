@@ -518,14 +518,14 @@ Click [here](http://jsfiddle.net/fusioncharts/mf3g5cgo/) to edit the above chart
 
 ### Show Mean Icon Value
 
-To enable the mean icon value of the box and whisker chart, set the value of `showMeanValue` attribute to **1**.
+To enable the mean icon value of the box and whisker chart, set the value of `showMeanValues` attribute to **1**.
 
 Refer to the code given below:
 
 ```javascript
 {
     "chart": {
-        "showMeanValue": "1"
+        "showMeanValues": "1"
     }
 }
 ```
@@ -649,14 +649,14 @@ Click [here](http://jsfiddle.net/fusioncharts/t24afhfs/) to edit the above chart
 
 ### Show Mean Deviation Icon Value
 
-To enable the mean deviation icon value of the box and whisker chart, set the value of `showMDValue` attribute to **1**.
+To enable the mean deviation icon value of the box and whisker chart, set the value of `showMDValues` attribute to **1**.
 
 Refer to the code given below:
 
 ```javascript
 {
     "chart": {
-        "showMDValue": "1"
+        "showMDValues": "1"
     }
 }
 ```
@@ -774,14 +774,14 @@ Click [here](http://jsfiddle.net/fusioncharts/u47qrcte/) to edit the above chart
 
 ### Show Standard Deviation Icon Value
 
-To enable the standard deviation icon value of the box and whisker chart, set the value of `showSDValue` attribute to **1**.
+To enable the standard deviation icon value of the box and whisker chart, set the value of `showSDValues` attribute to **1**.
 
 Refer to the code given below:
 
 ```javascript
 {
     "chart": {
-        "showSDValue": "1"
+        "showSDValues": "1"
     }
 }
 ```
@@ -901,14 +901,14 @@ Click [here](http://jsfiddle.net/fusioncharts/abk7goL7/) to edit the above chart
 
 ### Show Quartile Deviation Icon Value
 
-To enable the quartile deviation icon value of the box and whisker chart, set the value of `showQDValue` attribute to **1**.
+To enable the quartile deviation icon value of the box and whisker chart, set the value of `showQDValues` attribute to **1**.
 
 Refer to the code given below:
 
 ```javascript
 {
     "chart": {
-        "showQDValue": "1"
+        "showQDValues": "1"
     }
 }
 ```
@@ -1014,21 +1014,21 @@ Click [here](http://jsfiddle.net/fusioncharts/y9wzdwur/) to edit the above chart
 
 ### Show Outliers Icon Value
 
-To enable the outliers icon value of the box and whisker chart, set the value of `showOutlierValue` attribute to **1**.
+To enable the outliers icon value of the box and whisker chart, set the value of `showOutlierValues` attribute to **1**.
 
 Refer to the code given below:
 
 ```javascript
 {
     "chart": {
-        "showOutlierValue": "1"
+        "showOutlierValues": "1"
     }
 }
 ```
 
 > When the above attribute is enabled, the chart will always display the corresponding value, even if the attributes `showValue` or `showValues` is disabled or enabled.
 
-The  chart will look like as shown below:
+The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-27.js %}
 

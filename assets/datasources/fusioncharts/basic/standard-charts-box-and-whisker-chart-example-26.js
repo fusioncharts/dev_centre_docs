@@ -19,7 +19,7 @@
             "qdIconColor": "#fff00f",
             "qdIconAlpha": "70",
             "qdIconBorderColor": "#ff0000",
-            "showQDValue": "1"
+            "showQDValues": "1"
         },
         "categories": [{
             "category": [{

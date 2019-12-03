@@ -16,7 +16,7 @@
             "yaxismaxvalue": "80000",
             //Showing out of range outliers
             "showAllOutliers ": "1",
-            "showOutlierValue": "1"
+            "showOutlierValues": "1"
         },
         "categories": [{
             "category": [{

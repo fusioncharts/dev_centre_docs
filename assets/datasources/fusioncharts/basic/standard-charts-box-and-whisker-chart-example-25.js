@@ -19,7 +19,7 @@
             "sdIconColor": "#ff000f",
             "sdIconAlpha": "70",
             "sdIconBorderColor": "#ff0000",
-            "showSDValue": "1"
+            "showSDValues": "1"
         },
         "categories": [{
             "category": [{

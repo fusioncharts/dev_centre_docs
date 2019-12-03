@@ -18,7 +18,8 @@
             //"meanIconShape": "triangle",
             "meanIconColor": "#ffffff",
             "meanIconAlpha": "70",
-            "meanIconBorderColor": "#ff0000"
+            "meanIconBorderColor": "#ff0000",
+            "showMeanValues": "1"
         },
         "categories": [{
             "category": [{
