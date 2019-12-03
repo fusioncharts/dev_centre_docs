@@ -22,7 +22,7 @@
         "name": "palette"
       },
       {
-        "description": "The entire chart can now act as a hotspot. Use this URL to define the hotspot link for the chart. The link can be specified in FusionCharts Link Format.",
+        "description": "The entire chart can now act as a hotspot. Use this URL to define the hotspot link for the chart. The link can be specified in FusionCharts Link Format. This attribute will work on the sunburst chart only when the `allowDrillToNode` attribute is set to `0`.",
         "range": "",
         "type": "String",
         "name": "clickURL"
@@ -781,7 +781,7 @@
         "name": "logoScale"
       },
       {
-        "description": "If you want to link the logo to an external URL, specify the link in this attribute. The link can be in FusionCharts Link Format, allowing you to link to new windows, pop-ups, frames etc.",
+        "description": "If you want to link the logo to an external URL, specify the link in this attribute. The link can be in FusionCharts Link Format, allowing you to link to new windows, pop-ups, frames etc. \n This attribute will work on the sunburst chart only when the `allowDrillToNode` attribute is set to `0`.",
         "range": "URL",
         "type": "String",
         "name": "logoLink"
