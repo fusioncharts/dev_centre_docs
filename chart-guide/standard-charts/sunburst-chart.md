@@ -1,7 +1,7 @@
 ---
-title: Sunburst | FusionCharts
+title: Sunburst Chart | FusionCharts
 description: A Sunburst chart is used to visualize relationships within hierarchical data. It shows hierarchy through a series of concentric rings, where each ring corresponds to a level in the hierarchy.
-heading: Sunburst
+heading: Sunburst Chart
 ---
 
 > This chart type belongs to PowerCharts XT
