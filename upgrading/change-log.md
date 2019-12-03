@@ -70,7 +70,7 @@ heading: Version 3.15.x
 
     - `outlierIconBorderColor`
 
-Previously, only the default black border was visible for the above icons.
+    Previously, only the default black border was visible for the above icons.
 
 - In Radar Charts, long labels and the chart border were displaced when the `radarRadius` was explicitly mentioned and the chart was resized. This version onwards, the chart has been optimized for resizing, to ensure such issues no longer occur.
 
