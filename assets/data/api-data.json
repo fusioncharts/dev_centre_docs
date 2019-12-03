@@ -27719,7 +27719,7 @@
 										"color": {
 											"name": "color",
 											"type": ["hex color code"],
-											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n\n",
+											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -27728,7 +27728,7 @@
 										"alpha": {
 											"name": "alpha",
 											"type": ["number"],
-											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n\n",
+											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -28977,7 +28977,7 @@
 								"label": {
 									"name": "label",
 									"type": ["string"],
-									"description": "Label text of the data plot \n\n >Applicable to the drag-node chart. \n\n",
+									"description": "Label text of the data plot \n\n >Applicable to: \n - Drag-node chart \n - Sankey Diagram \n\n",
 									"defaultvalue": "",
 									"optional": "",
 									"nullable": "",
@@ -28996,6 +28996,24 @@
 									"name": "isSliced",
 									"type": ["boolean"],
 									"description": "__true__ if the pie/doughnut slice (in the pie/doughnut chart) was sliced before the event was triggered \n\n >Applicable to the pie and doughnut charts. \n\n",
+									"defaultvalue": "",
+									"optional": "",
+									"nullable": "",
+									"subparams": {}
+								},
+                                "sourceLinks": {
+									"name": "sourceLinks",
+									"type": ["string"],
+									"description": "This parameter accepts an array of strings, which indicates the links that start from the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+									"defaultvalue": "",
+									"optional": "",
+									"nullable": "",
+									"subparams": {}
+								},
+                                "targetLinks": {
+									"name": "targetLinks",
+									"type": ["string"],
+									"description": "This parameter accepts an array of strings, which indicates the links that end at the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
 									"defaultvalue": "",
 									"optional": "",
 									"nullable": "",
@@ -29330,7 +29348,7 @@
 										"color": {
 											"name": "color",
 											"type": ["hex color code"],
-											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n\n",
+											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -29339,7 +29357,7 @@
 										"alpha": {
 											"name": "alpha",
 											"type": ["number"],
-											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n\n",
+											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -30588,7 +30606,7 @@
 								"label": {
 									"name": "label",
 									"type": ["string"],
-									"description": "Label text of the data plot \n\n >Applicable to the drag-node chart. \n\n",
+									"description": "Label text of the data plot \n\n >Applicable to: \n - Drag-node chart. \n - Sankey Diagram. \n\n",
 									"defaultvalue": "",
 									"optional": "",
 									"nullable": "",
@@ -30607,6 +30625,24 @@
 									"name": "isSliced",
 									"type": ["boolean"],
 									"description": "__true__ if the pie/doughnut slice (in a pie/doughnut chart) was sliced before the event was triggered \n\n >Applicable to the pie and doughnut charts. \n\n",
+									"defaultvalue": "",
+									"optional": "",
+									"nullable": "",
+									"subparams": {}
+								},
+                                "sourceLinks": {
+									"name": "sourceLinks",
+									"type": ["string"],
+									"description": "This parameter accepts an array of strings, which indicates the links that start from the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+									"defaultvalue": "",
+									"optional": "",
+									"nullable": "",
+									"subparams": {}
+								},
+                                "targetLinks": {
+									"name": "targetLinks",
+									"type": ["string"],
+									"description": "This parameter accepts an array of strings, which indicates the links that end at the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
 									"defaultvalue": "",
 									"optional": "",
 									"nullable": "",
@@ -30941,7 +30977,7 @@
 										"color": {
 											"name": "color",
 											"type": ["hex color code"],
-											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n\n",
+											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -30950,7 +30986,7 @@
 										"alpha": {
 											"name": "alpha",
 											"type": ["number"],
-											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n\n",
+											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -32199,7 +32235,7 @@
 								"label": {
 									"name": "label",
 									"type": ["string"],
-									"description": "Label text of the data plot \n\n >Applicable to the drag-node chart. \n\n",
+									"description": "Label text of the data plot \n\n >Applicable to the: \n Drag-node chart \n Sankey Diagram \n\n",
 									"defaultvalue": "",
 									"optional": "",
 									"nullable": "",
@@ -32222,6 +32258,225 @@
 									"optional": "",
 									"nullable": "",
 									"subparams": {}
+								},
+                                "sourceLinks": {
+									"name": "sourceLinks",
+									"type": ["string"],
+									"description": "This parameter accepts an array of strings, which indicates the links that start from the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+									"defaultvalue": "",
+									"optional": "",
+									"nullable": "",
+									"subparams": {}
+								},
+                                "targetLinks": {
+									"name": "targetLinks",
+									"type": ["string"],
+									"description": "This parameter accepts an array of strings, which indicates the links that end at the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+									"defaultvalue": "",
+									"optional": "",
+									"nullable": "",
+									"subparams": {}
+								}
+							}
+						}
+					}
+				},
+				"linkRollOver": {
+					"id": "event-linkRollOver",
+					"name": "linkRollOver",
+					"kind": "event",
+					"access": "",
+					"scope": "instance",
+					"virtual": false,
+					"description": "Triggered when the mouse pointer is rolled over the.",
+					"examples": {},
+					"params": {
+						"eventObj": {
+							"name": "eventObj",
+							"subparams": {
+								"data": {
+									"name": "data",
+									"subparams": {
+										"value": {
+											"name": "value",
+											"type": ["number"],
+											"description": "Value assigned to the link that triggered this event",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"color": {
+											"name": "color",
+											"type": ["hex color code"],
+											"description": "Sets the color of the link. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"alpha": {
+											"name": "alpha",
+											"type": ["number"],
+											"description": "Sets the transparency of the link. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"from": {
+											"name": "from",
+											"type": ["number"],
+											"description": "This parameter accepts an array of strings, which indicates the node from which the clicked link begins. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"to": {
+											"name": "to",
+											"type": ["number"],
+											"description": "This parameter accepts an array of strings, which indicates the node at which the clicked link ends. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"linkRollOut": {
+					"id": "event-linkRollOut",
+					"name": "linkRollOut",
+					"kind": "event",
+					"access": "",
+					"scope": "instance",
+					"virtual": false,
+					"description": "Triggered when the mouse pointer is rolled out from over a link.",
+					"examples": {},
+					"params": {
+						"eventObj": {
+							"name": "eventObj",
+							"subparams": {
+								"data": {
+									"name": "data",
+									"subparams": {
+										"value": {
+											"name": "value",
+											"type": ["number"],
+											"description": "Value assigned to the link that triggered this event",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"color": {
+											"name": "color",
+											"type": ["hex color code"],
+											"description": "Sets the color of the link. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"alpha": {
+											"name": "alpha",
+											"type": ["number"],
+											"description": "Sets the transparency of the link. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"from": {
+											"name": "from",
+											"type": ["number"],
+											"description": "This parameter accepts an array of strings, which indicates the node from which the clicked link begins. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"to": {
+											"name": "to",
+											"type": ["number"],
+											"description": "This parameter accepts an array of strings, which indicates the node at which the clicked link ends. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"linkClick": {
+					"id": "event-linkClick",
+					"name": "linkClick",
+					"kind": "event",
+					"access": "",
+					"scope": "instance",
+					"virtual": false,
+					"description": "Triggered when a data plot is clicked.",
+					"examples": {},
+					"params": {
+						"eventObj": {
+							"name": "eventObj",
+							"subparams": {
+								"data": {
+									"name": "data",
+									"subparams": {
+										"value": {
+											"name": "value",
+											"type": ["number"],
+											"description": "Value assigned to the link that triggered this event",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"color": {
+											"name": "color",
+											"type": ["hex color code"],
+											"description": "Sets the color of the link. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"alpha": {
+											"name": "alpha",
+											"type": ["number"],
+											"description": "Sets the transparency of the link. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"from": {
+											"name": "from",
+											"type": ["number"],
+											"description": "This parameter accepts an array of strings, which indicates the node from which the clicked link begins. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"to": {
+											"name": "to",
+											"type": ["number"],
+											"description": "This parameter accepts an array of strings, which indicates the node at which the clicked link ends. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										}
+									}
 								}
 							}
 						}
