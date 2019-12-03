@@ -206,26 +206,6 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0fqryv7b/) to edit this chart.
 
-### Configure Inner Radius
-
-You can configure the inner radius of a Sunburst chart. To do so, set the value of the `innerRadius` attribute to the desired value. If you want to assign a custom value to `innerRadius` where a root node has multiple parent nodes, ensure that it is greater than `30`. If you provide a value less than `30`, the value will be ignored and the chart will maintain a value of `30`.
-
-Use the code given below:
-
-```javascript
-{
-	"chart": {
-		"innerRadius": "40"
-	}
-}
-```
-
-The chart will look as shown below:
-
-{% embed_chart standard-charts-sunburst-chart-example-8.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/0urya5pw/) to edit this chart.
-
 ### Configure Highlight Effects
 
 The Sunburst chart supports several highlight effects, which are activated when you move the mouse pointer over relevant elements in the chart.
