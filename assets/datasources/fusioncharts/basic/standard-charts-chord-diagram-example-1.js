@@ -9,7 +9,7 @@
             caption: "Different countries Gross Export",
             subcaption: "in 2017",
             nodeLabelPosition: "outside",
-            showLegend: 0,
+            showLegend: "0",
             theme: "fusion",
             mode: "post"
         },
