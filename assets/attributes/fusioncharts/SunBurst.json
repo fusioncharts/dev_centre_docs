@@ -1442,7 +1442,7 @@
         "name": "label"
       },
       {
-        "description": "Link for the pie.",
+        "description": "Link for the sunburst. This attribute will work on the sunburst chart only when the `allowDrillToNode` attribute is set to `0`.",
         "range": "",
         "type": "String",
         "name": "link"

@@ -26,7 +26,7 @@ For a detailed list of attributes, refer to the [chart attributes](/chart-attrib
 
 A simple Chord Diagram looks as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-1.js %}
+{% embed_chart standard-charts-chord-diagram-example-1.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/f5upy4vm/) to edit the above diagram.
 
@@ -76,7 +76,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-2.js %}
+{% embed_chart standard-charts-chord-diagram-example-2.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/q9yb7cm2/) to edit the above diagram.
 
@@ -96,7 +96,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-3.js %}
+{% embed_chart standard-charts-chord-diagram-example-3.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/7c5dL0oh/) to edit the above diagram.
 
@@ -116,7 +116,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-4.js %}
+{% embed_chart standard-charts-chord-diagram-example-4.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/puonxjtf/) to edit the above diagram.
 
@@ -136,7 +136,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-5.js %}
+{% embed_chart standard-charts-chord-diagram-example-5.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/zv0gxhL6/) to edit the above diagram.
 
@@ -156,7 +156,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-6.js %}
+{% embed_chart standard-charts-chord-diagram-example-6.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/krcL2tgp/) to edit the above diagram.
 
@@ -176,7 +176,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-7.js %}
+{% embed_chart standard-charts-chord-diagram-example-7.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/zaufsLn2/) to edit the above diagram.
 
@@ -196,7 +196,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-8.js %}
+{% embed_chart standard-charts-chord-diagram-example-8.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/5xndvpe7/) to edit the above diagram.
 
@@ -216,7 +216,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-9.js %}
+{% embed_chart standard-charts-chord-diagram-example-9.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/4nm7opwc/) to edit the above diagram.
 
@@ -236,7 +236,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-10.js %}
+{% embed_chart standard-charts-chord-diagram-example-10.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/w5efcaqv/) to edit the above diagram.
 
@@ -256,7 +256,7 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-11.js %}
+{% embed_chart standard-charts-chord-diagram-example-11.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/kbw7s0Lv/) to edit the above diagram.
 
@@ -276,6 +276,6 @@ Use the code given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-chord-diagram-example-12.js %}
+{% embed_chart standard-charts-chord-diagram-example-12.js %}
 
 Click [here](https://jsfiddle.net/fusioncharts/f364vw5h/) to edit the above diagram.
