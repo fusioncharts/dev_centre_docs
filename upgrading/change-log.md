@@ -74,7 +74,7 @@ heading: Version 3.15.x
 
 - In Radar Charts, long labels and the chart border were displaced when the `radarRadius` was explicitly mentioned and the chart was resized. This version onwards, the chart has been optimized for resizing, to ensure such issues no longer occur.
 
-- In this version, 31 core map files have been updated. Click [here](/upgrading/maps-improvement/maps-improvement-3-14-1) to get the list of updated maps.
+- In this version, 31 core map files have been updated. Click [here](/upgrading/maps-improvement/maps-improvement-3-15-0) to get the list of updated maps.
 
 ### Fixes
 
