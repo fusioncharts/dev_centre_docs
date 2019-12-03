@@ -154,7 +154,7 @@ You can choose not to display node labels, to make the chart look less cluttered
 
 Use the code given below:
 
-```javacript
+```javascript
 {
     "chart": {
         "showNodeLabels": "0"
