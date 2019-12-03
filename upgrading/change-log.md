@@ -44,7 +44,7 @@ heading: Version 3.15.x
 
     - `showOutlierValue`
 
-  When any of the above attributes are explicitly enabled, the chart will always display the corresponding value, even if the attributes `showValue` or `showValues` is disabled or enabled. `showValue` and `showValues` attributes are always used to set the values to the plots of the chart
+  When any of the above attributes are explicitly enabled, the chart will always display the corresponding value, even if the attributes `showValue` or `showValues` is disabled or enabled.
 
   - Position of the values (mean, MD, SD, QD, and outlier) can now be displayed either **above** or **below** the data plot using the following attributes:
 
