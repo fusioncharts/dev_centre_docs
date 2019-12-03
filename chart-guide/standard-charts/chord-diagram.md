@@ -189,7 +189,7 @@ Use the code given below:
 ```javascript
 {
     "chart": {
-        “startingAngle”: "120"
+        "startingAngle": "120"
     }
 }
 ```
