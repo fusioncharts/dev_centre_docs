@@ -230,16 +230,16 @@ Click [here](http://jsfiddle.net/fusioncharts/0urya5pw/) to edit this chart.
 
 The Sunburst chart supports several highlight effects, which are activated when you move the mouse pointer over relevant elements in the chart.
 
-#### Highlight Child Segments
+#### Highlight Parent Segments
 
-In a sunburst chart, parent nodes (all the way to the root node) are highlighted when you hover the pointer over a child node. This is controlled by the attribute `highlightChildPieSlices`, whose value is set to `0` by default. To instead highlight all child nodes when you hover the pointer over a parent node, set the value of `highlightChildPieSlices` to `1`.
+In a sunburst chart, parent nodes (all the way to the root node) are highlighted when you hover the pointer over a child node. This is controlled by the attribute `highlightParentPieSlices`, whose value is set to `1` by default.
 
 Use the code given below:
 
 ```javascript
 {
 	"chart": {
-		"highlightChildPieSlices": "1"
+		"highlightParentPieSlices": "0"
 	}
 }
 ```

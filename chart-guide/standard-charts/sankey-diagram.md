@@ -430,7 +430,7 @@ You can apply a series of cosmetic modifications to node labels. They are listed
 
 - Set the border radius of the node label using the `nodeLabelBorderRadius` attribute.
 
-- Set the border padding of the node label using the `nodeLabelBorderPadding` attribute.
+- Set the space between the node label border and the node label using the `nodeLabelBorderPadding` attribute.
 
 - Set the node label border style to dashed using the `nodeLabelBorderDashed` attribute.
 

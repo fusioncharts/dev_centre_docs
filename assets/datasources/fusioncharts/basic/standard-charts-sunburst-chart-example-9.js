@@ -14,7 +14,7 @@
             "showBorder": "0",
             "animationDuration": "2",
             "centerAngle": "90",
-            "highlightChildPieSlices": "1"
+            "highlightChildPieSlices": "0"
         },
         data: [{
                 "id": "Flare",

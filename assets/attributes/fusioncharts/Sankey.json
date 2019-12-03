@@ -782,7 +782,7 @@
         "name": "nodeLabelborderradius"
       },
       {
-        "description": "This attribute lets you set the space between the node label border and the node.",
+        "description": "This attribute lets you set the space between the node label border and the node label.",
         "range": "In Pixels",
         "type": "Number",
         "versionsince": "3.15.0",
