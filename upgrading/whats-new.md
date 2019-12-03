@@ -16,7 +16,7 @@ A Sunburst chart is used to visualize relationships within hierarchical data. It
 
 A Sunburst chart looks as follows:
 
-{% embed_chart sunburst-chart-example-1.js %}
+{% embed_chart standard-charts-sunburst-chart-example-1.js %}
 
 Click [here](/chart-guide/standard-charts/sunburst-chart) to know more.
 
@@ -37,6 +37,8 @@ A chord diagram is a graphical way to represent flow relationship between specif
 > Chord Diagrams are also referred to as Radial Network Diagram, Chord Layout, or Dependency Wheel.
 
 A simple Chord Diagram looks as shown below:
+
+{% embed_chart standard-charts-chord-diagram-example-1.js %}
 
 In the above diagram, there are `n` nodes. A link connects a pair of nodes where a relationship exists. Hovering on a node shows all the links (or relationships) associated with it. Likewise, hovering on a link shows the related nodes.
 
