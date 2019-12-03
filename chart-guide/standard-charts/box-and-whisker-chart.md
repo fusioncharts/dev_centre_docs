@@ -899,6 +899,28 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/abk7goL7/) to edit the above chart.
 
+### Show Quartile Deviation Icon Value
+
+To enable the quartile deviation icon value of the box and whisker chart, set the value of `showQDValue` attribute to **1**.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "showQDValue": "1"
+    }
+}
+```
+
+> When the above attribute is enabled, the chart will always display the corresponding value, even if the attributes `showValue` or `showValues` is disabled or enabled.
+
+The  chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-26.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/e2zywcqj/) to edit the above chart.
+
 ### Draw Quartile Deviation Connectors
 
 For multiple data plots, you can draw a line to connect the quartile deviation icons of each data plot. To draw the connectors, set the value of `drawQDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the quartile deviation for multiple sets of data. The default value of this attribute is `0`.
