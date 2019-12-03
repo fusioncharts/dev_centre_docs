@@ -28,7 +28,7 @@ A Sankey Diagram can be drawn in either a **horizontal layout (default)** or a *
 
 Click [here](http://jsfiddle.net/fusioncharts/7vj02hxd/) to edit the chart.
 
-There are **19** nodes in the Sankey Diagram provided above. A link connects any two nodes that are related to one another (i.e, a flow happens between them). If you hover over a node, you will see all the links (or relationships) associated with it. Hovering on a link will show all nodes associated with it.
+There are **19** nodes in the Sankey Diagram provided above. A link connects any two nodes that are related to one another (i.e, a flow happens between them). If you hover over a node, you will see all the links (or relationships) associated with it. Hovering on a link will show both are nodes associated with it.
 
 ## Important Concepts Related to Sankey Diagram
 
