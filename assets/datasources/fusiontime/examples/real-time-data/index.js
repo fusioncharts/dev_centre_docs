@@ -39,8 +39,6 @@
                     ceilMin
                 );
             };
-
-            cons
         },
         rendered: function(eventObj) {
             var chartRef = eventObj.sender;
