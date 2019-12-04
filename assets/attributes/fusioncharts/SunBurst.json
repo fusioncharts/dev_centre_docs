@@ -1424,16 +1424,18 @@
     "path": "data",
     "attrs": [
       {
-        "description": "Alpha for the pie.",
-        "range": "0 - 100",
-        "type": "Number",
-        "name": "alpha"
+        "description": "Allows you to show or hide the label for a specific node on the chart.",
+        "range": "0/1",
+        "type": "String",
+        "versionsince": "3.15.0",
+        "name": "id"
       },
       {
-        "description": "Color for the pie",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "color"
+        "description": "Allows you to show or hide the value for a specific node on the chart.",
+        "range": "0/1",
+        "type": "String",
+        "versionsince": "3.15.0",
+        "name": "parent"
       },
       {
         "description": "Display value for the pie. \n\n __Note__: The `label` attribute replaces the `name` attribute. Previously, either one of the attributes could be used to set the label. Support for the `name` attribute has been discontinued since v3.10.0.",
@@ -1442,36 +1444,10 @@
         "name": "label"
       },
       {
-        "description": "Link for the sunburst. This attribute will work on the sunburst chart only when the `allowDrillToNode` attribute is set to `0`.",
-        "range": "",
-        "type": "String",
-        "name": "link"
-      },
-      {
-        "description": "The tooltip defined in the `data` object appears only when the mouse cursor is hovered over the individual slices. However, this will not appear when the cursor is moved over the data labels (except for a situation when long labels are automatically truncated with ellipses. In this situation, if the mouse cursor is hovered over a truncated label, the tooltip will appear with the full label). In case you want to set a short label and show the full label in tooltip, define the full label using this attribute within the `category` object. The tooltip with the full label will appear only when the mouse is hovered on the particular slice.",
-        "range": "",
-        "type": "String",
-        "name": "toolText"
-      },
-      {
         "description": "It is mandatory to specify values of the leaf nodes. Value can also be specified to a node which has a child, but it’s value should be greater than or equal to the summed values of its children. Else the specified value will be ignored, and a value which is equal to the summed values of its children will be assigned to the node.",
         "range": "Numeric Value",
         "type": "Number",
         "name": "value"
-      },
-      {
-        "description": "Allows you to show or hide the label for a specific node on the chart.",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.13.5",
-        "name": "showLabel"
-      },
-      {
-        "description": "Allows you to show or hide the value for a specific node on the chart.",
-        "range": "0/1",
-        "type": "Boolean",
-        "versionsince": "3.13.5",
-        "name": "showValue"
       }
     ],
     "description": "The attributes of the `data` object are used to define and customize individual labels for the charts."
