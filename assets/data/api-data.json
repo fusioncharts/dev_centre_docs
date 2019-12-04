@@ -31717,8 +31717,8 @@
 										},
 										"from": {
 											"name": "from",
-											"type": ["number"],
-											"description": "This parameter accepts an array of strings, which indicates the node from which the clicked link begins. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"type": ["string"],
+											"description": "This parameter accept strings, which indicates the node from which the clicked link begins. \n\n >Applicable only on Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -31726,7 +31726,7 @@
 										},
 										"to": {
 											"name": "to",
-											"type": ["number"],
+											"type": ["string"],
 											"description": "This parameter accepts an array of strings, which indicates the node at which the clicked link ends. \n\n >Applicable only on Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
@@ -31784,8 +31784,8 @@
 										},
 										"from": {
 											"name": "from",
-											"type": ["number"],
-											"description": "This parameter accepts an array of strings, which indicates the node from which the clicked link begins. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"type": ["string"],
+											"description": "This parameter accept strings, which indicates the node from which the clicked link begins. \n\n >Applicable only on Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -31793,8 +31793,8 @@
 										},
 										"to": {
 											"name": "to",
-											"type": ["number"],
-											"description": "This parameter accepts an array of strings, which indicates the node at which the clicked link ends. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"type": ["string"],
+											"description": "This parameter accept strings, which indicates the node at which the clicked link ends. \n\n >Applicable only on Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -31851,8 +31851,8 @@
 										},
 										"from": {
 											"name": "from",
-											"type": ["number"],
-											"description": "This parameter accepts an array of strings, which indicates the node from which the clicked link begins. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"type": ["string"],
+											"description": "This parameter accept strings, which indicates the node from which the clicked link begins. \n\n >Applicable only on Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -31860,8 +31860,8 @@
 										},
 										"to": {
 											"name": "to",
-											"type": ["number"],
-											"description": "This parameter accepts an array of strings, which indicates the node at which the clicked link ends. \n\n >Applicable only on Sankey Diagram. \n\n",
+											"type": ["string"],
+											"description": "This parameter accept strings, which indicates the node at which the clicked link ends. \n\n >Applicable only on Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
