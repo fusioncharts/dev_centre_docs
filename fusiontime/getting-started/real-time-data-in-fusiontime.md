@@ -35,11 +35,6 @@ In the above code, you can see how `feedData` has been used to add new rows to t
 
 The table you initially provide to the chart is cloned when you use `FusionCharts#feedData`. Any operation on the initial table does not affect the chart any longer. If you want to add data directly to the table instead, you need to use the `DataStore#appendRows` API. Any updates you make to the table now will also be reflected in any visualization using the table.
 
-Refer to the code given below:
-
-```javascript
-```
-
 ## Configure Time Spread
 
 When there are a large number of data values constantly being fed into a chart, it can slow down browser performance, or even cause a browser crash. To avoid this, use the optional chart level attribute `timeSpread`, to specify the total time interval you want to display in the chart at a given instant.
