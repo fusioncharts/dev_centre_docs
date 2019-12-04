@@ -27719,7 +27719,7 @@
 										"color": {
 											"name": "color",
 											"type": ["hex color code"],
-											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
+											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -27728,7 +27728,7 @@
 										"alpha": {
 											"name": "alpha",
 											"type": ["number"],
-											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
+											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -27737,7 +27737,7 @@
 										"borderColor": {
 											"name": "borderColor",
 											"type": ["hex color code"],
-											"description": "Sets the color of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+											"description": "Sets the color of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Candlestick Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -27746,7 +27746,7 @@
 										"borderAlpha": {
 											"name": "borderAlpha",
 											"type": ["number"],
-											"description": "Sets the transparency of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+											"description": "Sets the transparency of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -27755,7 +27755,7 @@
 										"borderThickness": {
 											"name": "borderThickness",
 											"type": ["number"],
-											"description": "Sets the thickness of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
+											"description": "Sets the thickness of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -27953,7 +27953,7 @@
 										"showLabel": {
 											"name": "showLabel",
 											"type": ["boolean"],
-											"description": "Displays or hides data labels. \n\n >Applicable on the: \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n\n",
+											"description": "Displays or hides data labels. \n\n >Applicable on the: \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -28043,7 +28043,7 @@
 										"showPlotBorder": {
 											"name": "showPlotBorder",
 											"type": ["boolean"],
-											"description": "Show or hide a plot border. \n\n >Applicable on the: \n - MultiLevel Pie Chart. \n - Horizontal & Vertical Bullet Graph. \n\n",
+											"description": "Show or hide a plot border. \n\n >Applicable on the: \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Horizontal & Vertical Bullet Graph. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -29348,7 +29348,7 @@
 										"color": {
 											"name": "color",
 											"type": ["hex color code"],
-											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
+											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -29357,7 +29357,7 @@
 										"alpha": {
 											"name": "alpha",
 											"type": ["number"],
-											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
+											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -29366,7 +29366,7 @@
 										"borderColor": {
 											"name": "borderColor",
 											"type": ["hex color code"],
-											"description": "Sets the color of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+											"description": "Sets the color of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Candlestick Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -29375,7 +29375,7 @@
 										"borderAlpha": {
 											"name": "borderAlpha",
 											"type": ["number"],
-											"description": "Sets the transparency of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+											"description": "Sets the transparency of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -29384,7 +29384,7 @@
 										"borderThickness": {
 											"name": "borderThickness",
 											"type": ["number"],
-											"description": "Sets the thickness of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
+											"description": "Sets the thickness of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -29582,7 +29582,7 @@
 										"showLabel": {
 											"name": "showLabel",
 											"type": ["boolean"],
-											"description": "Displays or hides data labels. \n\n >Applicable on the: \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n\n",
+											"description": "Displays or hides data labels. \n\n >Applicable on the: \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -29672,7 +29672,7 @@
 										"showPlotBorder": {
 											"name": "showPlotBorder",
 											"type": ["boolean"],
-											"description": "Show or hide a plot border. \n\n >Applicable on the: \n - MultiLevel Pie Chart. \n - Horizontal & Vertical Bullet Graph. \n\n",
+											"description": "Show or hide a plot border. \n\n >Applicable on the: \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Horizontal & Vertical Bullet Graph. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -30977,7 +30977,7 @@
 										"color": {
 											"name": "color",
 											"type": ["hex color code"],
-											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
+											"description": "Sets the color of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n - Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n - Bulb. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -30986,7 +30986,7 @@
 										"alpha": {
 											"name": "alpha",
 											"type": ["number"],
-											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
+											"description": "Sets the transparency of the plot. \n\n >Applicable on the: \n - Column chart and its variants. \n - Line chart and its variants. \n Area Chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - Bubble Chart. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Candlestick Chart. \n - Heatmap Chart. \n - Funnel Chart. \n - Pyramid Chart. \n - Drag Node Chart. \n - Sankey Diagram. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -30995,7 +30995,7 @@
 										"borderColor": {
 											"name": "borderColor",
 											"type": ["hex color code"],
-											"description": "Sets the color of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Candlestick Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+											"description": "Sets the color of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Candlestick Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -31004,7 +31004,7 @@
 										"borderAlpha": {
 											"name": "borderAlpha",
 											"type": ["number"],
-											"description": "Sets the transparency of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
+											"description": "Sets the transparency of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Angular Gauge. \n - Funnel Chart. \n - Pyramid Chart. \n - Horizontal Linear Gauge. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -31013,7 +31013,7 @@
 										"borderThickness": {
 											"name": "borderThickness",
 											"type": ["number"],
-											"description": "Sets the thickness of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - MultiLevel Pie Chart. \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
+											"description": "Sets the thickness of the plot border. \n\n >Applicable on the: \n - Column chart and its variants. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Angular Gauge. \n - Horizontal Linear Gauge. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -31211,7 +31211,7 @@
 										"showLabel": {
 											"name": "showLabel",
 											"type": ["boolean"],
-											"description": "Displays or hides data labels. \n\n >Applicable on the: \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n\n",
+											"description": "Displays or hides data labels. \n\n >Applicable on the: \n - Pie2D, Pie3D & Doughnut2D, Doughnut3D charts. \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
@@ -31301,7 +31301,7 @@
 										"showPlotBorder": {
 											"name": "showPlotBorder",
 											"type": ["boolean"],
-											"description": "Show or hide a plot border. \n\n >Applicable on the: \n - MultiLevel Pie Chart. \n - Horizontal & Vertical Bullet Graph. \n\n",
+											"description": "Show or hide a plot border. \n\n >Applicable on the: \n - MultiLevel Pie Chart. \n - Sunburst Chart. \n - Horizontal & Vertical Bullet Graph. \n\n",
 											"defaultvalue": "",
 											"optional": "",
 											"nullable": "",
