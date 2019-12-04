@@ -13,7 +13,8 @@
     events: {
         /* setting required functions and variables before rendering the chart */
         beforerender: function(eventObj, dataObj) {
-            var chartRef = eventObj.sender;
+            const chartRef = eventObj.sender;
+            const { data } = dataStore.getData();
 
             chartRef.lastTimeStr = data[data.length - 1][0];
 
@@ -41,25 +42,25 @@
         },
         rendered: function(eventObj) {
             var chartRef = eventObj.sender;
-            // let {
-            //     lastTimeStr
-            // } = chartRef;
-            // const {
-            //     getNextRandomDate,
-            //     fd,
-            //     randBetween
-            // } = chartRef;
+            let {
+                lastTimeStr
+            } = chartRef;
+            const {
+                getNextRandomDate,
+                fd,
+                randBetween
+            } = chartRef;
 
-            chartRef.lastTimeStr = chartRef.getNextRandomDate(chartRef.lastTimeStr);
-            let newDate = new Date(chartRef.lastTimeStr);
-            let formattedNewDate = chartRef.fd(newDate);
+            lastTimeStr = getNextRandomDate(lastTimeStr);
+            let newDate = new Date(lastTimeStr);
+            let formattedNewDate = fd(newDate);
 
             chartRef.setIntervalId = setInterval(() => {
-                newDate = chartRef.getNextRandomDate(formattedNewDate);
-                formattedNewDate = chartRef.fd(newDate);
+                newDate = getNextRandomDate(formattedNewDate);
+                formattedNewDate = fd(newDate);
                 chartRef.feedData([
-                    [formattedNewDate, chartRef.randBetween(13, 45), "Kuala Lumpur"],
-                    [formattedNewDate, chartRef.randBetween(13, 45), "Panama City"]
+                    [formattedNewDate, randBetween(13, 45), "Kuala Lumpur"],
+                    [formattedNewDate, randBetween(13, 45), "Panama City"]
                 ]);
             }, 1000);
         },
