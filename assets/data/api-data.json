@@ -28768,256 +28768,53 @@
 											"optional": "",
 											"nullable": "",
 											"subparams": {}
+										},
+										"sourceLinks": {
+											"name": "sourceLinks",
+											"type": ["string"],
+											"description": "This parameter accepts an array of strings, which indicates the links that start from the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"targetLinks": {
+											"name": "targetLinks",
+											"type": ["string"],
+											"description": "This parameter accepts an array of strings, which indicates the links that end at the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"nodeId": {
+											"name": "nodeId",
+											"type": ["string"],
+											"description": "This parameter accepts the ID of the node, on which the event is fired. \n\n >Applicable to the Sunburst Chart. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"nodeParentId": {
+											"name": "nodeParentId",
+											"type": ["string"],
+											"description": "This parameter accepts the ID of the parent of the node, on which the event is fired. \n\n >Applicable to the Sunburst Chart. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"childrenCount": {
+											"name": "childrenCount",
+											"type": ["string"],
+											"description": "This parameter accepts the number of children of the node, on which the event is fired. \n\n >Applicable to the Sunburst Chart. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
 										}
 									}
-								}
-							}
-						},
-						"dataObj": {
-							"name": "dataObj (Deprecated)",
-							"subparams": {
-								"chartX": {
-									"name": "chartX",
-									"type": ["number"],
-									"description": "x-coordinate of the pointer, relative to the chart",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"chartY": {
-									"name": "chartY",
-									"type": ["number"],
-									"description": "y-coordinate of the pointer, relative to the chart",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"pageX": {
-									"name": "pageX",
-									"type": ["number"],
-									"description": "x-coordinate of the pointer, relative to the page",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"pageY": {
-									"name": "pageY",
-									"type": ["number"],
-									"description": "y-coordinate of the pointer, relative to the page",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"id": {
-									"name": "id",
-									"type": ["string"],
-									"description": "Data ID (applicable only to the drag-node chart)",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"dataIndex": {
-									"name": "dataIndex",
-									"type": ["number"],
-									"description": "Index of the data plot, in the order of its definition in the source data",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"datasetIndex": {
-									"name": "datasetIndex",
-									"type": ["number"],
-									"description": "Index of the dataset that the data plot belongs to, in the order of its definition in the source data",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"datasetName": {
-									"name": "datasetName",
-									"type": ["string"],
-									"description": "Name of the dataset that the data plot belongs to",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"link": {
-									"name": "link",
-									"type": ["string"],
-									"description": "URL to which the user will be redirected, if the data plot is clicked",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"toolText": {
-									"name": "toolText",
-									"type": ["string"],
-									"description": "Text displayed when the mouse pointer is hovered over the data plot",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"value": {
-									"name": "value",
-									"type": ["number"],
-									"description": "Value assigned to the data plot that triggered this event",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"dataValue": {
-									"name": "dataValue",
-									"type": ["number"],
-									"description": "Value assigned to the data plot that triggered this event",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"categoryLabel": {
-									"name": "categoryLabel",
-									"type": ["string"],
-									"description": "x-axis label corresponding to the data plot that triggered this event ",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"displayValue": {
-									"name": "displayValue",
-									"type": ["number"],
-									"description": "Formatted value (for decimal places, suffixes, and so on) displayed for the data plot that triggered this event",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"x": {
-									"name": "x",
-									"type": ["number"],
-									"description": "x-coordinate of the data plot \n\n >Applicable to the bubble chart and drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"y": {
-									"name": "y",
-									"type": ["number"],
-									"description": "y-coordinate of the data plot \n\n >Applicable to the bubble chart and drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"z": {
-									"name": "z",
-									"type": ["number"],
-									"description": "z-coordinate of the data plot \n\n >Applicable to the bubble chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"shape": {
-									"name": "shape",
-									"type": ["string"],
-									"description": "Shape of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"width": {
-									"name": "width",
-									"type": ["number"],
-									"description": "Width of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"height": {
-									"name": "height",
-									"type": ["number"],
-									"description": "Height of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"radius": {
-									"name": "radius",
-									"type": ["number"],
-									"description": "Radius of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"sides": {
-									"name": "sides",
-									"type": ["number"],
-									"description": "Number of sides the data plot shape has \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"label": {
-									"name": "label",
-									"type": ["string"],
-									"description": "Label text of the data plot \n\n >Applicable to: \n - Drag-node chart \n - Sankey Diagram \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"sourceType": {
-									"name": "sourceType",
-									"type": ["string"],
-									"description": "Type of element that triggered the event \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"isSliced": {
-									"name": "isSliced",
-									"type": ["boolean"],
-									"description": "__true__ if the pie/doughnut slice (in the pie/doughnut chart) was sliced before the event was triggered \n\n >Applicable to the pie and doughnut charts. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-                                "sourceLinks": {
-									"name": "sourceLinks",
-									"type": ["string"],
-									"description": "This parameter accepts an array of strings, which indicates the links that start from the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-                                "targetLinks": {
-									"name": "targetLinks",
-									"type": ["string"],
-									"description": "This parameter accepts an array of strings, which indicates the links that end at the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
 								}
 							}
 						}
@@ -30397,256 +30194,53 @@
 											"optional": "",
 											"nullable": "",
 											"subparams": {}
+										},
+										"sourceLinks": {
+											"name": "sourceLinks",
+											"type": ["string"],
+											"description": "This parameter accepts an array of strings, which indicates the links that start from the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"targetLinks": {
+											"name": "targetLinks",
+											"type": ["string"],
+											"description": "This parameter accepts an array of strings, which indicates the links that end at the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"nodeId": {
+											"name": "nodeId",
+											"type": ["string"],
+											"description": "This parameter accepts the ID of the node, on which the event is fired. \n\n >Applicable to the Sunburst Chart. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"nodeParentId": {
+											"name": "nodeParentId",
+											"type": ["string"],
+											"description": "This parameter accepts the ID of the parent of the node, on which the event is fired. \n\n >Applicable to the Sunburst Chart. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"childrenCount": {
+											"name": "childrenCount",
+											"type": ["string"],
+											"description": "This parameter accepts the number of children of the node, on which the event is fired. \n\n >Applicable to the Sunburst Chart. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
 										}
 									}
-								}
-							}
-						},
-						"dataObj": {
-							"name": "dataObj (Deprecated)",
-							"subparams": {
-								"chartX": {
-									"name": "chartX",
-									"type": ["number"],
-									"description": "x-coordinate of the pointer, relative to the chart",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"chartY": {
-									"name": "chartY",
-									"type": ["number"],
-									"description": "y-coordinate of the pointer, relative to the chart",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"pageX": {
-									"name": "pageX",
-									"type": ["number"],
-									"description": "x-coordinate of the pointer, relative to the page",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"pageY": {
-									"name": "pageY",
-									"type": ["number"],
-									"description": "y-coordinate of the pointer, relative to the page",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"id": {
-									"name": "id",
-									"type": ["string"],
-									"description": "Data ID (applicable only to the drag-node chart)",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"dataIndex": {
-									"name": "dataIndex",
-									"type": ["number"],
-									"description": "Index of the data plot, in the order of its definition in the source data",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"datasetIndex": {
-									"name": "datasetIndex",
-									"type": ["number"],
-									"description": "Index of the dataset that the data plot belongs to, in the order of its definition in the source data",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"datasetName": {
-									"name": "datasetName",
-									"type": ["string"],
-									"description": "Name of the dataset that the data plot belongs to",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"link": {
-									"name": "link",
-									"type": ["string"],
-									"description": "URL, if configured, to which the user will be redirected",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"toolText": {
-									"name": "toolText",
-									"type": ["string"],
-									"description": "Text displayed when the mouse pointer is hovered over the data plot",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"value": {
-									"name": "value",
-									"type": ["number"],
-									"description": "Value assigned to the data plot that triggered this event",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"dataValue": {
-									"name": "dataValue",
-									"type": ["number"],
-									"description": "Value assigned to the data plot that triggered this event",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"categoryLabel": {
-									"name": "categoryLabel",
-									"type": ["string"],
-									"description": "x-axis label corresponding to the data plot that triggered this event ",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"displayValue": {
-									"name": "displayValue",
-									"type": ["number"],
-									"description": "Formatted value (for decimal places, suffixes, and so on) displayed for the data plot that triggered this event",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"x": {
-									"name": "x",
-									"type": ["number"],
-									"description": "x-coordinate of the data plot \n\n >Applicable to the bubble chart and drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"y": {
-									"name": "y",
-									"type": ["number"],
-									"description": "y-coordinate of the data plot \n\n >Applicable to the bubble chart and drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"z": {
-									"name": "z",
-									"type": ["number"],
-									"description": "z-coordinate of the data plot \n\n >Applicable to the bubble chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"shape": {
-									"name": "shape",
-									"type": ["string"],
-									"description": "Shape of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"width": {
-									"name": "width",
-									"type": ["number"],
-									"description": "Width of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"height": {
-									"name": "height",
-									"type": ["number"],
-									"description": "Height of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"radius": {
-									"name": "radius",
-									"type": ["number"],
-									"description": "Radius of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"sides": {
-									"name": "sides",
-									"type": ["number"],
-									"description": "Number of sides the data plot shape has \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"label": {
-									"name": "label",
-									"type": ["string"],
-									"description": "Label text of the data plot \n\n >Applicable to: \n - Drag-node chart. \n - Sankey Diagram. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"sourceType": {
-									"name": "sourceType",
-									"type": ["string"],
-									"description": "Type of element that triggered the event \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"isSliced": {
-									"name": "isSliced",
-									"type": ["boolean"],
-									"description": "__true__ if the pie/doughnut slice (in a pie/doughnut chart) was sliced before the event was triggered \n\n >Applicable to the pie and doughnut charts. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-                                "sourceLinks": {
-									"name": "sourceLinks",
-									"type": ["string"],
-									"description": "This parameter accepts an array of strings, which indicates the links that start from the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-                                "targetLinks": {
-									"name": "targetLinks",
-									"type": ["string"],
-									"description": "This parameter accepts an array of strings, which indicates the links that end at the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
 								}
 							}
 						}
@@ -32026,256 +31620,53 @@
 											"optional": "",
 											"nullable": "",
 											"subparams": {}
+										},
+										"sourceLinks": {
+											"name": "sourceLinks",
+											"type": ["string"],
+											"description": "This parameter accepts an array of strings, which indicates the links that start from the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"targetLinks": {
+											"name": "targetLinks",
+											"type": ["string"],
+											"description": "This parameter accepts an array of strings, which indicates the links that end at the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"nodeId": {
+											"name": "nodeId",
+											"type": ["string"],
+											"description": "This parameter accepts the ID of the node, on which the event is fired. \n\n >Applicable to the Sunburst Chart. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"nodeParentId": {
+											"name": "nodeParentId",
+											"type": ["string"],
+											"description": "This parameter accepts the ID of the parent of the node, on which the event is fired. \n\n >Applicable to the Sunburst Chart. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
+										},
+										"childrenCount": {
+											"name": "childrenCount",
+											"type": ["string"],
+											"description": "This parameter accepts the number of children of the node, on which the event is fired. \n\n >Applicable to the Sunburst Chart. \n\n",
+											"defaultvalue": "",
+											"optional": "",
+											"nullable": "",
+											"subparams": {}
 										}
 									}
-								}
-							}
-						},
-						"dataObj": {
-							"name": "dataObj (Deprecated)",
-							"subparams": {
-								"chartX": {
-									"name": "chartX",
-									"type": ["number"],
-									"description": "x-coordinate of the pointer, relative to the chart",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"chartY": {
-									"name": "chartY",
-									"type": ["number"],
-									"description": "y-coordinate of the pointer, relative to the chart",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"pageX": {
-									"name": "pageX",
-									"type": ["number"],
-									"description": "x-coordinate of the pointer, relative to the page",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"pageY": {
-									"name": "pageY",
-									"type": ["number"],
-									"description": "y-coordinate of the pointer, relative to the page",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"id": {
-									"name": "id",
-									"type": ["string"],
-									"description": "Data ID (applicable only to the drag-node chart)",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"dataIndex": {
-									"name": "dataIndex",
-									"type": ["number"],
-									"description": "Index of the data plot, in the order of its definition in the source data",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"datasetIndex": {
-									"name": "datasetIndex",
-									"type": ["number"],
-									"description": "Index of the dataset that the data plot belongs to, in the order of its definition in the source data",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"datasetName": {
-									"name": "datasetName",
-									"type": ["string"],
-									"description": "Name of the dataset that the data plot belongs to",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"link": {
-									"name": "link",
-									"type": ["string"],
-									"description": "URL to which the user will be redirected, if the data plot is clicked",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"toolText": {
-									"name": "toolText",
-									"type": ["string"],
-									"description": "Text displayed when the mouse pointer is hovered over the data plot",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"value": {
-									"name": "value",
-									"type": ["number"],
-									"description": "Value assigned to the data plot that triggered this event",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"dataValue": {
-									"name": "dataValue",
-									"type": ["number"],
-									"description": "Value assigned to the data plot that triggered this event",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"categoryLabel": {
-									"name": "categoryLabel",
-									"type": ["string"],
-									"description": "x-axis label corresponding to the data plot that triggered this event ",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"displayValue": {
-									"name": "displayValue",
-									"type": ["number"],
-									"description": "Formatted value (for decimal places, suffixes, and so on) displayed for the data plot that triggered this event",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"x": {
-									"name": "x",
-									"type": ["number"],
-									"description": "x-coordinate of the data plot \n\n >Applicable to the bubble chart and drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"y": {
-									"name": "y",
-									"type": ["number"],
-									"description": "y-coordinate of the data plot \n\n >Applicable to the bubble chart and drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"z": {
-									"name": "z",
-									"type": ["number"],
-									"description": "z-coordinate of the data plot \n\n >Applicable to the bubble chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"shape": {
-									"name": "shape",
-									"type": ["string"],
-									"description": "Shape of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"width": {
-									"name": "width",
-									"type": ["number"],
-									"description": "Width of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"height": {
-									"name": "height",
-									"type": ["number"],
-									"description": "Height of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"radius": {
-									"name": "radius",
-									"type": ["number"],
-									"description": "Radius of the data plot \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"sides": {
-									"name": "sides",
-									"type": ["number"],
-									"description": "Number of sides the data plot shape has \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"label": {
-									"name": "label",
-									"type": ["string"],
-									"description": "Label text of the data plot \n\n >Applicable to the: \n Drag-node chart \n Sankey Diagram \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"sourceType": {
-									"name": "sourceType",
-									"type": ["string"],
-									"description": "Type of element that triggered the event \n\n >Applicable to the drag-node chart. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-								"isSliced": {
-									"name": "isSliced",
-									"type": ["boolean"],
-									"description": "__true__ if the pie/doughnut slice (in a pie/doughnut chart) was sliced before the event was triggered \n\n >Applicable to the pie and doughnut charts. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-                                "sourceLinks": {
-									"name": "sourceLinks",
-									"type": ["string"],
-									"description": "This parameter accepts an array of strings, which indicates the links that start from the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
-								},
-                                "targetLinks": {
-									"name": "targetLinks",
-									"type": ["string"],
-									"description": "This parameter accepts an array of strings, which indicates the links that end at the clicked node. \n\n >Applicable to the Sankey Diagram. \n\n",
-									"defaultvalue": "",
-									"optional": "",
-									"nullable": "",
-									"subparams": {}
 								}
 							}
 						}
