@@ -10,15 +10,15 @@
 			"scope": "",
 			"virtual": false,
 			"description": "Overrides the binning rules followed by the chart with the binning rules provided to this API. If some time unit is missing from the input binning rules, then the default multipliers for that time unit will be used by the chart. If any incorrect multipliers are provided to a unit, they will be ignored.",
-         "examples": {
+			"examples": {
 				"0": {
 					"caption": "",
-               "code": "\/\/DataStore: In-browser store of tabular data\r\nvar dataStore = new FusionCharts.DataStore();\r\nnew FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    id: \"binning-API-methods\",\r\n    width: \"100%\",\r\n    height: 600,\r\n    dataSource: {\r\n      caption: {\r\n        text: \"Sales Analysis\"\r\n      },\r\n      subcaption: {\r\n        text: \"Grocery\"\r\n      },\r\n      yAxis: [{\r\n        plot: {\r\n          value: \"Grocery Sales Value\",\r\n          \"type\": \"column\"\r\n        },\r\n        format: {\r\n          prefix: \"$\"\r\n        },\r\n        title: \"Sale Value\"\r\n      }],\r\n\/\/Fetch the data and schema to create the DataTable\r\n      data: dataStore.createDataTable(data, schema)\r\n    }\r\n\r\n  }).render()\r\n})\r\n\r\n\/\/Set Binning Method\r\ndocument.getElementById(\"setBin\").addEventListener(\"click\", function() {\r\n  FusionCharts.items[\"binning-API-methods\"].setBinning({\r\n    \"year\": [1],\r\n    \"month\": [2],\r\n    \"day\": [2],\r\n    \"minute\": []\r\n  })\r\n  document.getElementById(\"showMessage\").innerHTML = \"Current bin is now set to 1-year, 2-months & 2-day\";\r\n});\r\n\r\n\/\/Get Binning Method\r\ndocument.getElementById(\"getBin\").addEventListener(\"click\", function() {\r\n\r\n  var bin = FusionCharts.items[\"binning-API-methods\"].getBinning();\r\n  document.getElementById(\"showMessage\").innerHTML = \"Current Bin : \" +\r\n    bin.year + \"-\" + \"year\" + ((bin.year == 1) ? \" \" : \"s\") + \", \" +\r\n    bin.month + \"-\" + \"month\" + ((bin.month == 1) ? \" \" : \"s\") + \" & \" +\r\n    bin.day + \"-\" + \"day\" + ((bin.day == 1) ? \" \" : \"s\");\r\n\r\n});",
-               "type": "js"
+					"code": "\/\/DataStore: In-browser store of tabular data\r\nvar dataStore = new FusionCharts.DataStore();\r\nnew FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    id: \"binning-API-methods\",\r\n    width: \"100%\",\r\n    height: 600,\r\n    dataSource: {\r\n      caption: {\r\n        text: \"Sales Analysis\"\r\n      },\r\n      subcaption: {\r\n        text: \"Grocery\"\r\n      },\r\n      yAxis: [{\r\n        plot: {\r\n          value: \"Grocery Sales Value\",\r\n          \"type\": \"column\"\r\n        },\r\n        format: {\r\n          prefix: \"$\"\r\n        },\r\n        title: \"Sale Value\"\r\n      }],\r\n\/\/Fetch the data and schema to create the DataTable\r\n      data: dataStore.createDataTable(data, schema)\r\n    }\r\n\r\n  }).render()\r\n})\r\n\r\n\/\/Set Binning Method\r\ndocument.getElementById(\"setBin\").addEventListener(\"click\", function() {\r\n  FusionCharts.items[\"binning-API-methods\"].setBinning({\r\n    \"year\": [1],\r\n    \"month\": [2],\r\n    \"day\": [2],\r\n    \"minute\": []\r\n  })\r\n  document.getElementById(\"showMessage\").innerHTML = \"Current bin is now set to 1-year, 2-months & 2-day\";\r\n});\r\n\r\n\/\/Get Binning Method\r\ndocument.getElementById(\"getBin\").addEventListener(\"click\", function() {\r\n\r\n  var bin = FusionCharts.items[\"binning-API-methods\"].getBinning();\r\n  document.getElementById(\"showMessage\").innerHTML = \"Current Bin : \" +\r\n    bin.year + \"-\" + \"year\" + ((bin.year == 1) ? \" \" : \"s\") + \", \" +\r\n    bin.month + \"-\" + \"month\" + ((bin.month == 1) ? \" \" : \"s\") + \" & \" +\r\n    bin.day + \"-\" + \"day\" + ((bin.day == 1) ? \" \" : \"s\");\r\n\r\n});",
+					"type": "js"
 				}
 			},
-         
-         "params": {
+
+			"params": {
 				"millisecond": {
 					"name": "millisecond",
 					"type": ["number"],
@@ -94,15 +94,15 @@
 			"scope": "",
 			"virtual": false,
 			"description": "Returns the binning rules that are being followed by the chart. If any custom binning rules are in effect, the returned rules will take into account the modifications made by them as well.",
-         "examples": {
+			"examples": {
 				"0": {
 					"caption": "",
-               "code": "\/\/DataStore: In-browser store of tabular data\r\nvar dataStore = new FusionCharts.DataStore();\r\nnew FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    id: \"binning-API-methods\",\r\n    width: \"100%\",\r\n    height: 600,\r\n    dataSource: {\r\n      caption: {\r\n        text: \"Sales Analysis\"\r\n      },\r\n      subcaption: {\r\n        text: \"Grocery\"\r\n      },\r\n      yAxis: [{\r\n        plot: {\r\n          value: \"Grocery Sales Value\",\r\n          \"type\": \"column\"\r\n        },\r\n        format: {\r\n          prefix: \"$\"\r\n        },\r\n        title: \"Sale Value\"\r\n      }],\r\n\/\/Fetch the data and schema to create the DataTable\r\n      data: dataStore.createDataTable(data, schema)\r\n    }\r\n\r\n  }).render()\r\n})\r\n\r\n\/\/Set Binning Method\r\ndocument.getElementById(\"setBin\").addEventListener(\"click\", function() {\r\n  FusionCharts.items[\"binning-API-methods\"].setBinning({\r\n    \"year\": [1],\r\n    \"month\": [2],\r\n    \"day\": [2],\r\n    \"minute\": []\r\n  })\r\n  document.getElementById(\"showMessage\").innerHTML = \"Current bin is now set to 1-year, 2-months & 2-day\";\r\n});\r\n\r\n\/\/Get Binning Method\r\ndocument.getElementById(\"getBin\").addEventListener(\"click\", function() {\r\n\r\n  var bin = FusionCharts.items[\"binning-API-methods\"].getBinning();\r\n  document.getElementById(\"showMessage\").innerHTML = \"Current Bin : \" +\r\n    bin.year + \"-\" + \"year\" + ((bin.year == 1) ? \" \" : \"s\") + \", \" +\r\n    bin.month + \"-\" + \"month\" + ((bin.month == 1) ? \" \" : \"s\") + \" & \" +\r\n    bin.day + \"-\" + \"day\" + ((bin.day == 1) ? \" \" : \"s\");\r\n\r\n});",
-               "type": "js"
+					"code": "\/\/DataStore: In-browser store of tabular data\r\nvar dataStore = new FusionCharts.DataStore();\r\nnew FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    id: \"binning-API-methods\",\r\n    width: \"100%\",\r\n    height: 600,\r\n    dataSource: {\r\n      caption: {\r\n        text: \"Sales Analysis\"\r\n      },\r\n      subcaption: {\r\n        text: \"Grocery\"\r\n      },\r\n      yAxis: [{\r\n        plot: {\r\n          value: \"Grocery Sales Value\",\r\n          \"type\": \"column\"\r\n        },\r\n        format: {\r\n          prefix: \"$\"\r\n        },\r\n        title: \"Sale Value\"\r\n      }],\r\n\/\/Fetch the data and schema to create the DataTable\r\n      data: dataStore.createDataTable(data, schema)\r\n    }\r\n\r\n  }).render()\r\n})\r\n\r\n\/\/Set Binning Method\r\ndocument.getElementById(\"setBin\").addEventListener(\"click\", function() {\r\n  FusionCharts.items[\"binning-API-methods\"].setBinning({\r\n    \"year\": [1],\r\n    \"month\": [2],\r\n    \"day\": [2],\r\n    \"minute\": []\r\n  })\r\n  document.getElementById(\"showMessage\").innerHTML = \"Current bin is now set to 1-year, 2-months & 2-day\";\r\n});\r\n\r\n\/\/Get Binning Method\r\ndocument.getElementById(\"getBin\").addEventListener(\"click\", function() {\r\n\r\n  var bin = FusionCharts.items[\"binning-API-methods\"].getBinning();\r\n  document.getElementById(\"showMessage\").innerHTML = \"Current Bin : \" +\r\n    bin.year + \"-\" + \"year\" + ((bin.year == 1) ? \" \" : \"s\") + \", \" +\r\n    bin.month + \"-\" + \"month\" + ((bin.month == 1) ? \" \" : \"s\") + \" & \" +\r\n    bin.day + \"-\" + \"day\" + ((bin.day == 1) ? \" \" : \"s\");\r\n\r\n});",
+					"type": "js"
 				}
 			},
-         
-         "params": {
+
+			"params": {
 				"millisecond": {
 					"name": "millisecond",
 					"type": ["number"],
@@ -245,1082 +245,1100 @@
 			}
 		},
 
-	"setTimeSelection": {
-		"id": "setTimeSelection",
-		"name": "setTimeSelection",
-		"kind": "function",
-		"access": "",
-		"scope": "",
-		"virtual": false,
-		"description": "Updates the start and end time of the time selection on the focus canvases. This will also result in a change across all of the chart’s components accordingly.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "\/\/DataStore: In-browser store of tabular data\r\nvar dataStore = new FusionCharts.DataStore();\r\nvar ftChart = new FusionCharts({\r\n      type: \"timeseries\",\r\n      renderAt: \"container\",\r\n      width: 800,\r\n      height: 550,\r\n      dataSource: {\r\n        chart: {},\r\n        caption: {\r\n          text: \"Daily Visitors Count of a Website\"\r\n        },\r\n        yAxis: [{\r\n          plot: {\r\n            value: \"Daily Visitors\",\r\n            type: \"smooth-area\"\r\n          },\r\n          title: \"Daily Visitors Count\",\r\n          format: {\r\n            suffix: \"k\"\r\n          }\r\n        }],\r\n      \/\/ Fetch the data and schema to create the DataTable\r\n        data: dataStore.createDataTable(data, schema)\r\n      }\r\n    }).render();\r\n\r\n  \/\/ getSelection() fetches the start and end time\r\n    function getSelection() {\r\n      var s = new Date(ftChart.getTimeSelection().start);\r\n      var e = new Date(ftChart.getTimeSelection().end);\r\n      document.getElementById(\"test\").style.display = \"none\";\r\n      document.getElementById(\"setMessage\").innerHTML = \"Current selection range : \" + s.getDate() + \"\/\" + (s.getMonth()+1) + \"\/\" + s.getFullYear() + \" to \" + e.getDate() + \"\/\" + (e.getMonth()+1) + \"\/\" + e.getFullYear();\r\n    };\r\n   \/\/setSelection() sets the start and end time\r\n    function setSelection() {\r\n      document.getElementById(\"setMessage\").innerHTML = \"Select a range from the above range picker\";\r\n      document.getElementById(\"test\").style.display = \"inline\";\r\n      $(function() {\r\n      var smoment = moment([2016, 0, 1]);\r\n      var emoment = moment([2018, 11, 12]);\r\n      $(\"input[name=\"daterange\"]\").daterangepicker({\r\n        opens: \"left\",\r\n        startDate: smoment,\r\n        endDate: emoment\r\n      }, function(start, end, label) {\r\n       \r\n        var s = new Date([start.format(\"YYYY\"), start.format(\"MM\"), start.format(\"DD\")]);\r\n        var e = new Date([end.format(\"YYYY\"), end.format(\"MM\"), end.format(\"DD\")]);\r\n        \r\n        ftChart.setTimeSelection({\r\n          end: s.getTime(),\r\n          start: e.getTime() \r\n        });\r\n        \r\n      });\r\n    });\r\n    };\r\n    document.getElementById(\"getSelection\").addEventListener(\"click\", getSelection);\r\n    document.getElementById(\"setSelection\").addEventListener(\"click\", setSelection);\r\n\r\n  }) }",
-				"type": "js"
-			}
-		},
-		"params": {
-			"start": {
-				"name": "start",
-				"type": ["string"],
-				"description": "The UNIX timestamp corresponding to the time at which to start the time selection visible on the focus canvases.",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"end": {
-				"name": "end",
-				"type": ["number"],
-				"description": "The UNIX timestamp corresponding to the time at which to end the time selection visible on the focus canvases.",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			}
-
-		}
-	},
-
-	"getTimeSelection": {
-		"id": "getTimeSelection",
-		"name": "getTimeSelection",
-		"kind": "function",
-		"access": "",
-		"scope": "",
-		"virtual": false,
-		"description": "Provides start and end UNIX timestamps of the visible window of the time axis.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "\/\/DataStore: In-browser store of tabular data\r\nvar dataStore = new FusionCharts.DataStore();\r\nvar ftChart = new FusionCharts({\r\n      type: \"timeseries\",\r\n      renderAt: \"container\",\r\n      width: 800,\r\n      height: 550,\r\n      dataSource: {\r\n        chart: {},\r\n        caption: {\r\n          text: \"Daily Visitors Count of a Website\"\r\n        },\r\n        yAxis: [{\r\n          plot: {\r\n            value: \"Daily Visitors\",\r\n            type: \"smooth-area\"\r\n          },\r\n          title: \"Daily Visitors Count\",\r\n          format: {\r\n            suffix: \"k\"\r\n          }\r\n        }],\r\n      \/\/ Fetch the data and schema to create the DataTable\r\n        data: dataStore.createDataTable(data, schema)\r\n      }\r\n    }).render();\r\n\r\n  \/\/ getSelection() fetches the start and end time\r\n    function getSelection() {\r\n      var s = new Date(ftChart.getTimeSelection().start);\r\n      var e = new Date(ftChart.getTimeSelection().end);\r\n      document.getElementById(\"test\").style.display = \"none\";\r\n      document.getElementById(\"setMessage\").innerHTML = \"Current selection range : \" + s.getDate() + \"\/\" + (s.getMonth()+1) + \"\/\" + s.getFullYear() + \" to \" + e.getDate() + \"\/\" + (e.getMonth()+1) + \"\/\" + e.getFullYear();\r\n    };\r\n   \/\/setSelection() sets the start and end time\r\n    function setSelection() {\r\n      document.getElementById(\"setMessage\").innerHTML = \"Select a range from the above range picker\";\r\n      document.getElementById(\"test\").style.display = \"inline\";\r\n      $(function() {\r\n      var smoment = moment([2016, 0, 1]);\r\n      var emoment = moment([2018, 11, 12]);\r\n      $(\"input[name=\"daterange\"]\").daterangepicker({\r\n        opens: \"left\",\r\n        startDate: smoment,\r\n        endDate: emoment\r\n      }, function(start, end, label) {\r\n       \r\n        var s = new Date([start.format(\"YYYY\"), start.format(\"MM\"), start.format(\"DD\")]);\r\n        var e = new Date([end.format(\"YYYY\"), end.format(\"MM\"), end.format(\"DD\")]);\r\n        \r\n        ftChart.setTimeSelection({\r\n          end: s.getTime(),\r\n          start: e.getTime() \r\n        });\r\n        \r\n      });\r\n    });\r\n    };\r\n    document.getElementById(\"getSelection\").addEventListener(\"click\", getSelection);\r\n    document.getElementById(\"setSelection\").addEventListener(\"click\", setSelection);\r\n\r\n  }) }",
-				"type": "js"
-			}
-		},
-		"params": {
-			"start": {
-				"name": "start",
-				"type": ["string"],
-				"description": "The UNIX timestamp corresponding to the time at which to start the time selection visible on the focus canvases.",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"end": {
-				"name": "end",
-				"type": ["number"],
-				"description": "The UNIX timestamp corresponding to the time at which to end the time selection visible on the focus canvases.",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			}
-
-		}
-	},
-
-	"resizeTo": {
-		"id": "resizeTo",
-		"name": "resizeTo",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Resizes the chart to the specified width and height. The values for the width and height are passed, in pixels or percentage, as parameters to this function. If the function is called without any parameters, it __returns__ the current value of the chart width and height. \n\n This function is useful in controlling the chart dimensions based on changes in the dimensions of a resizable dialog box. It is also useful in resizing charts for responsive layouts, based on device orientation change. \n\n \n\n >When the chart dimensions are set in percentage, the chart partially redraws itself when the chart container is resized. The chart uses a very low-profile polling, at an interval of __300 ms__ to check whether the container has effectively resized. \n\n",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \t        renderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\r\n\t\/\/Resize the chart\r\n\tmyChart.resizeTo(\"100%\", \"500\");\r\n});",
-				"type": "js"
-			}
-		},
-
-		"params": {
-			"width": {
-				"name": "width",
-				"type": ["number", "percent"],
-				"description": "Chart width to set, in pixels or percentage",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			},
-			"height": {
-				"name": "height",
-				"type": ["number", "percent"],
-				"description": "Chart height to set, in pixels or percentage",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-
-	"lockResize": {
-		"id": "lockResize",
-		"name": "lockResize",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Allows users to controls whether the chart will be dynamically resizable or not when rendered using percent height and width.",
-		"examples": {
-         "0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\u200B\r\n\t\/\/Locking the automatic percentage-based resizing. If resize is already locked, sending false unlocks it.\r\n\tmyChart.lockResize(true);\r\n});",
-				"type": "js"
-			}
-      },
-		"params": {
-			"state": {
-				"name": "state",
-				"type": ["boolean"],
-				"description": "Setting this parameter to __true__ will lock the automatic percentage-based resizing. If resize is already locked, sending `false` unlocks it.",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"getSVGString": {
-		"id": "getSVGString",
-		"name": "getSVGString",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Returns the SVG string of a chart. This function can be called only after the chart has rendered.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    width: \"450\",\r\n    height: \"350\",\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n\/\/Returns the SVG string of the chart\r\n  function svgString() {\r\n   \r\n\t\t\t\tmyChart.getSVGString(function(svg){\r\n        \tdocument.getElementById(\"msg\").appendChild(        document.createTextNode(svg));\r\n\t\t\t\t});\r\n        \r\n    }\r\n    document.getElementById(\"get\").addEventListener(\"click\", svgString);\r\n  })\r\n});",
-				"type": "js"
-			}
-		},
-
-		"params": {
-			"callBackFN( svgString )": {
-				"name": "callBackFN( svgString )",
-				"type": ["getSVGString-callBack"],
-				"description": "callBackFN is called only when `getSVGString()` completes its execution.",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			},
-			"keepImages": {
-				"name": "keepImages",
-				"type": ["keepImages"],
-				"description": "To get the images present in the chart from the SVG string, set the parameter of `keepImages` object to `1`.",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"batchExport": {
-		"id": "batchExport",
-		"name": "batchExport",
-		"kind": "function",
-		"access": "",
-		"scope": "static",
-		"virtual": false,
-		"description": "Exports multiple charts in a single image. This method either takes __no arguments__ or takes __an object as an argument__. \r\r",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "\/\/batchExport exports multiple charts in a single image\r\nbatchExportConfig1 = function() {  \r\nFusionCharts.batchExport({\r\n    \"charts\": [{\r\n      \"id\": \"chart1\",\r\n    }],\r\n    \"exportFileName\": \"batchExport\",\r\n    \"exportFormat\": \"jpg\",\r\n    \"exportAtClientSide\": \"1\"\r\n  })\r\n}\r\n  \r\nFusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    id: \"chart1\",\r\n    renderAt: \"container\",\r\n    width: \"450\",\r\n    height: \"350\",\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n  \r\n  })\r\n});",
-				"type": "js"
-			}
-		},
-
-		"params": {
-			"imageWidth": {
-				"name": "imageWidth",
-				"type": ["number"],
-				"description": "Width of the exported image (of the charts)",
-				"defaultvalue": "Maximum chart width + 10",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"imageHeight": {
-				"name": "imageHeight",
-				"type": ["number"],
-				"description": "Height of the exported image (of the charts)",
-				"defaultvalue": "(Total height of all charts + 5) * (number of charts + 1)",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"charts": {
-				"name": "charts",
-				"type": ["object"],
-				"description": "The configuration required for the chart(s) being exported can be provided in this object using the attributes given below:",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {
-					"id": {
-						"name": "id",
-						"type": ["string"],
-						"description": "Valid FusionCharts ID, to attach the chart on the main image",
-						"defaultvalue": "",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"x": {
-						"name": "x",
-						"type": ["number"],
-						"description": "x-coordinate for positioning the exported image",
-						"defaultvalue": "5",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"y": {
-						"name": "y",
-						"type": ["number"],
-						"description": "y-coordinate for positioning the exported image",
-						"defaultvalue": "previous chart's y-coordinate + 5",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"width": {
-						"name": "width",
-						"type": ["number"],
-						"description": "Custom width for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
-						"defaultvalue": "Current chart width",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"heigt": {
-						"name": "height",
-						"type": ["number"],
-						"description": "Custom height for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
-						"defaultvalue": "Current chart height",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					}
+		"setTimeSelection": {
+			"id": "setTimeSelection",
+			"name": "setTimeSelection",
+			"kind": "function",
+			"access": "",
+			"scope": "",
+			"virtual": false,
+			"description": "Updates the start and end time of the time selection on the focus canvases. This will also result in a change across all of the chart’s components accordingly.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "\/\/DataStore: In-browser store of tabular data\r\nvar dataStore = new FusionCharts.DataStore();\r\nvar ftChart = new FusionCharts({\r\n      type: \"timeseries\",\r\n      renderAt: \"container\",\r\n      width: 800,\r\n      height: 550,\r\n      dataSource: {\r\n        chart: {},\r\n        caption: {\r\n          text: \"Daily Visitors Count of a Website\"\r\n        },\r\n        yAxis: [{\r\n          plot: {\r\n            value: \"Daily Visitors\",\r\n            type: \"smooth-area\"\r\n          },\r\n          title: \"Daily Visitors Count\",\r\n          format: {\r\n            suffix: \"k\"\r\n          }\r\n        }],\r\n      \/\/ Fetch the data and schema to create the DataTable\r\n        data: dataStore.createDataTable(data, schema)\r\n      }\r\n    }).render();\r\n\r\n  \/\/ getSelection() fetches the start and end time\r\n    function getSelection() {\r\n      var s = new Date(ftChart.getTimeSelection().start);\r\n      var e = new Date(ftChart.getTimeSelection().end);\r\n      document.getElementById(\"test\").style.display = \"none\";\r\n      document.getElementById(\"setMessage\").innerHTML = \"Current selection range : \" + s.getDate() + \"\/\" + (s.getMonth()+1) + \"\/\" + s.getFullYear() + \" to \" + e.getDate() + \"\/\" + (e.getMonth()+1) + \"\/\" + e.getFullYear();\r\n    };\r\n   \/\/setSelection() sets the start and end time\r\n    function setSelection() {\r\n      document.getElementById(\"setMessage\").innerHTML = \"Select a range from the above range picker\";\r\n      document.getElementById(\"test\").style.display = \"inline\";\r\n      $(function() {\r\n      var smoment = moment([2016, 0, 1]);\r\n      var emoment = moment([2018, 11, 12]);\r\n      $(\"input[name=\"daterange\"]\").daterangepicker({\r\n        opens: \"left\",\r\n        startDate: smoment,\r\n        endDate: emoment\r\n      }, function(start, end, label) {\r\n       \r\n        var s = new Date([start.format(\"YYYY\"), start.format(\"MM\"), start.format(\"DD\")]);\r\n        var e = new Date([end.format(\"YYYY\"), end.format(\"MM\"), end.format(\"DD\")]);\r\n        \r\n        ftChart.setTimeSelection({\r\n          end: s.getTime(),\r\n          start: e.getTime() \r\n        });\r\n        \r\n      });\r\n    });\r\n    };\r\n    document.getElementById(\"getSelection\").addEventListener(\"click\", getSelection);\r\n    document.getElementById(\"setSelection\").addEventListener(\"click\", setSelection);\r\n\r\n  }) }",
+					"type": "js"
 				}
 			},
-			"background": {
-				"name": "background",
-				"type": ["object"],
-				"description": "The configuration required for the exported image's background can be provided in this object using the attributes given below:",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {
-					"bgColor": {
-						"name": "bgColor",
-						"type": ["hexcolor"],
-						"description": "Background color for the exported image",
-						"defaultvalue": "#ffffff",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"bgImage": {
-						"name": "bgImage",
-						"type": ["string"],
-						"description": "Background image for the exported images",
-						"defaultvalue": "",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"bgImageAlpha": {
-						"name": "bgImageAlpha",
-						"type": ["number"],
-						"description": "Transparency of the background image",
-						"defaultvalue": "",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"bgImageX": {
-						"name": "bgImageX",
-						"type": ["number"],
-						"description": "Starting x-coordinate for positioning the background image",
-						"defaultvalue": "",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"bgImageY": {
-						"name": "bgImageY",
-						"type": ["number"],
-						"description": "Starting y-coordinate for positioning the background image",
-						"defaultvalue": "",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"bgImageWidth": {
-						"name": "bgImageWidth",
-						"type": ["number"],
-						"description": "Width of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
-						"defaultvalue": "Original width of the image",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"bgImageHeight": {
-						"name": "bgImageHeight",
-						"type": ["number"],
-						"description": "Height of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
-						"defaultvalue": "Original height of the image",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					}
+			"params": {
+				"start": {
+					"name": "start",
+					"type": ["string"],
+					"description": "The UNIX timestamp corresponding to the time at which to start the time selection visible on the focus canvases.",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"end": {
+					"name": "end",
+					"type": ["number"],
+					"description": "The UNIX timestamp corresponding to the time at which to end the time selection visible on the focus canvases.",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				}
+
+			}
+		},
+
+		"getTimeSelection": {
+			"id": "getTimeSelection",
+			"name": "getTimeSelection",
+			"kind": "function",
+			"access": "",
+			"scope": "",
+			"virtual": false,
+			"description": "Provides start and end UNIX timestamps of the visible window of the time axis.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "\/\/DataStore: In-browser store of tabular data\r\nvar dataStore = new FusionCharts.DataStore();\r\nvar ftChart = new FusionCharts({\r\n      type: \"timeseries\",\r\n      renderAt: \"container\",\r\n      width: 800,\r\n      height: 550,\r\n      dataSource: {\r\n        chart: {},\r\n        caption: {\r\n          text: \"Daily Visitors Count of a Website\"\r\n        },\r\n        yAxis: [{\r\n          plot: {\r\n            value: \"Daily Visitors\",\r\n            type: \"smooth-area\"\r\n          },\r\n          title: \"Daily Visitors Count\",\r\n          format: {\r\n            suffix: \"k\"\r\n          }\r\n        }],\r\n      \/\/ Fetch the data and schema to create the DataTable\r\n        data: dataStore.createDataTable(data, schema)\r\n      }\r\n    }).render();\r\n\r\n  \/\/ getSelection() fetches the start and end time\r\n    function getSelection() {\r\n      var s = new Date(ftChart.getTimeSelection().start);\r\n      var e = new Date(ftChart.getTimeSelection().end);\r\n      document.getElementById(\"test\").style.display = \"none\";\r\n      document.getElementById(\"setMessage\").innerHTML = \"Current selection range : \" + s.getDate() + \"\/\" + (s.getMonth()+1) + \"\/\" + s.getFullYear() + \" to \" + e.getDate() + \"\/\" + (e.getMonth()+1) + \"\/\" + e.getFullYear();\r\n    };\r\n   \/\/setSelection() sets the start and end time\r\n    function setSelection() {\r\n      document.getElementById(\"setMessage\").innerHTML = \"Select a range from the above range picker\";\r\n      document.getElementById(\"test\").style.display = \"inline\";\r\n      $(function() {\r\n      var smoment = moment([2016, 0, 1]);\r\n      var emoment = moment([2018, 11, 12]);\r\n      $(\"input[name=\"daterange\"]\").daterangepicker({\r\n        opens: \"left\",\r\n        startDate: smoment,\r\n        endDate: emoment\r\n      }, function(start, end, label) {\r\n       \r\n        var s = new Date([start.format(\"YYYY\"), start.format(\"MM\"), start.format(\"DD\")]);\r\n        var e = new Date([end.format(\"YYYY\"), end.format(\"MM\"), end.format(\"DD\")]);\r\n        \r\n        ftChart.setTimeSelection({\r\n          end: s.getTime(),\r\n          start: e.getTime() \r\n        });\r\n        \r\n      });\r\n    });\r\n    };\r\n    document.getElementById(\"getSelection\").addEventListener(\"click\", getSelection);\r\n    document.getElementById(\"setSelection\").addEventListener(\"click\", setSelection);\r\n\r\n  }) }",
+					"type": "js"
 				}
 			},
-			"exportTargetWindow": {
-				"name": "exportTargetWindow",
-				"type": ["string"],
-				"description": "Set to `_self` to open the exported image in the same window \n\n Set to `_blank` to open the exported image in a new window",
-				"defaultvalue": "_self",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"exportAction": {
-				"name": "exportAction",
-				"type": ["string"],
-				"description": "Set to `_save` to save the exported image on the server \n\n Set to `_download` to send back the image to the client as a download",
-				"defaultvalue": "_download",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"exportFileName": {
-				"name": "exportFileName",
-				"type": ["string"],
-				"description": "Default file name (excluding the extension) for the exported image",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"exportHandler": {
-				"name": "exportHandler",
-				"type": ["string"],
-				"description": "__For server-side exporting__: Path of the export handler (the ready-to-use scripts provided by FusionTime) \n\n __For client-side exporting__: DOM ID of the FusionTime Export Component embedded in the web page, along with the chart",
-				"defaultvalue": "_download",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"exportFormats": {
-				"name": "exportFormats",
-				"type": ["string"],
-				"description": "List of formats in which the chart can be exported \n\n The formats are separated using the *|* (pipe) character.",
-				"defaultvalue": "_download",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"exportCallback": {
-				"name": "exportCallback",
-				"type": ["string"],
-				"description": "Name of the JavaScript function that is called when the export process finishes",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"exportAtClientSide": {
-				"name": "exportAtClientSide",
-				"type": ["string"],
-				"description": "Set to `1` to enable client-side exporting",
-				"defaultvalue": "_download",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
+			"params": {
+				"start": {
+					"name": "start",
+					"type": ["string"],
+					"description": "The UNIX timestamp corresponding to the time at which to start the time selection visible on the focus canvases.",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"end": {
+					"name": "end",
+					"type": ["number"],
+					"description": "The UNIX timestamp corresponding to the time at which to end the time selection visible on the focus canvases.",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				}
 
-	"getChartData": {
-		"id": "getChartData",
-		"name": "getChartData",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Fetches the data set when a chart has been rendered.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "<select id=\"data_format\">\r\n     \t    <option value=\"csv\">CSV<\/option>\r\n     \t    <option value=\"json\">JSON<\/option>\r\n     \t<\/select>     \t\r\n\r\nFusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\r\nvar format = document.getElementById(\"data_format\").value;\r\n\/\/getChartData fetches the data set for a chart\r\nvar data = FusionCharts.getChartData(format);\r\n}",
-				"type": "js"
 			}
 		},
 
-		"params": {
-			"format": {
-				"name": "format",
-				"type": ["dataFormats"],
-				"description": "Format in which chart data has to be retrieved",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"setChartData": {
-		"id": "setChartData",
-		"name": "setChartData",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionTime constructor. \n\n",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "var year_2018 = {\r\n\t\/\/Enter data for year 2018\r\n}\r\n\r\nvar year_2019 ={\r\n\t\/\/Enter data for year 2019\r\n}\r\nFusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\r\n\t\t}\r\n\t}).render();\r\n\r\n var year_data = document.getElementById(\"year\").value;\r\n    if (year_data == \"2018\")\r\n\/\/setChartData sets the data for a chart\r\n    \tmyChart.setChartData(year_2018, \"json\");\r\n   \t\t\telse if (year_data ==\"2019\")\r\n   \t\t\t\tmyChart.setChartData(year_2019, \"json\"); \r\n});",
-				"type": "js"
-			}
-		},
-		"params": {
-			"data": {
-				"name": "data",
-				"type": ["string", "object"],
-				"description": "Data to be passed to the chart",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
+		"resizeTo": {
+			"id": "resizeTo",
+			"name": "resizeTo",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Resizes the chart to the specified width and height. The values for the width and height are passed, in pixels or percentage, as parameters to this function. If the function is called without any parameters, it __returns__ the current value of the chart width and height. \n\n This function is useful in controlling the chart dimensions based on changes in the dimensions of a resizable dialog box. It is also useful in resizing charts for responsive layouts, based on device orientation change. \n\n \n\n >When the chart dimensions are set in percentage, the chart partially redraws itself when the chart container is resized. The chart uses a very low-profile polling, at an interval of __300 ms__ to check whether the container has effectively resized. \n\n",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \t        renderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\r\n\t\/\/Resize the chart\r\n\tmyChart.resizeTo(\"100%\", \"500\");\r\n});",
+					"type": "js"
+				}
 			},
-			"format": {
-				"name": "format",
-				"type": ["dataFormats"],
-				"description": "Format of the data being passed. If the value for this parameter is not a valid [dataFormat](/api/fusioncharts/fusioncharts-properties#dataFormats), then the default or previously set data format is assumed. \n\n >If the data format is already known, then the [setJSONData()](/api/fusioncharts/fusioncharts-methods#setJSONData) or the [setXMLData()](/api/fusioncharts/fusioncharts-methods#setXMLData) methods can be used. \n\n",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"getChartAttribute": {
-		"id": "getChartAttribute",
-		"name": "getChartAttribute",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Fetches value of chart attributes explicitly applied to the root `chart` object (or the `<chart>` node element).",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\r\ndocument.getElementById(\"chart1\").innerHTML = \"Current theme: \" + myChart.getChartAttribute(\"theme\");\r\n  \r\n\/\/getChartAttribute fetches the value of chart attribute explicitly\r\n  function getAtt() {\r\n\r\n       var select = document.getElementById(\"chart1\");\r\n       myChart.setChartAttribute(\"theme\", select.value);\r\n document.getElementById(\"current_value\").innerHTML = \"Current theme: \" + myChart.getChartAttribute(\"theme\");\r\n\r\n    }\r\n    document.getElementById(\"theme-type\").addEventListener(\"change\", getAtt);\r\n});",
-				"type": "js"
-			}
-		},
 
-		"params": {
-			"attribute": {
-				"name": "attribute",
-				"type": ["string", "array"],
-				"description": "To fetch the value of a single attribute, pass the attribute name as a string. For multiple attributes, pass an array of attribute names. Values will be returned in the order of the attribute names in the array.",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"setChartAttribute": {
-		"id": "setChartAttribute",
-		"name": "setChartAttribute",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Updates a chart's attributes with a new attribute-value pair, thus updating the chart's data definition root (the `<chart>` node in the XML data or the `chart` object in the JSON data).",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\t\t}\r\n\t}).render();\r\n\r\n\/\/setChartAttribute updates the chart's attributes with new attribute-value\r\n function setAtt() {\r\n       var select = document.getElementById(\"chart1\");\r\n       myChart.setChartAttribute(\"theme\", select.value);\r\n\r\n\r\n    }\r\n\r\n    document.getElementById(\"chart1\").addEventListener(\"change\", setAtt);\r\n\r\n});",
-				"type": "js"
-			}
-		},
-		"params": {
-			"attributes": {
-				"name": "attributes",
-				"type": ["object", "string"],
-				"description": "To set/update multiple attributes at once, an object containing all the key-value pairs is passed. In case of a single value, a string that is the key (the attribute name) is passed.",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"value": {
-				"name": "value",
-				"type": ["string"],
-				"description": "If the `attributes` parameter is a single string value, the `value` parameter contains the value for that key.",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": true,
-				"subparams": {}
-			}
-		}
-	},
-	"addEventListener": {
-		"id": "addEventListener",
-		"name": "addEventListener",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Used to attach an event to the chart.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\r\n\t\t}\r\n\t}).render();\r\n\/\/attaching an event to the chart using addEventListener()\r\n\tmyChart.addEventListener(\"dataPlotClick\", \"onDataPlotClick\");\r\n});",
-				"type": "js"
-			}
-		},
-
-		"params": {
-			"type": {
-				"name": "type",
-				"type": ["string", "array"],
-				"description": "Type (name) of the event to listen to. To register the listener for multiple events in the same registration call, provide all event names as an array.",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"listener": {
-				"name": "listener",
-				"type": ["eventListener"],
-				"description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"removeEventListener": {
-		"id": "removeEventListener",
-		"name": "removeEventListener",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Used to remove an event attached to the chart.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\/\/removing an event attached to the chart\r\n\tmyChart.removeEventListener(\"dataPlotClick\", \"onDataPlotClick\");\r\n});",
-				"type": "js"
-			}
-		},
-
-		"params": {
-			"type": {
-				"name": "type",
-				"type": ["string", "array"],
-				"description": "Type (name) of the event whose listener(s) has to be removed",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"listener": {
-				"name": "listener",
-				"type": ["function"],
-				"description": "Listener function to remove",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-
-	"static-getObjectReference": {
-		"id": "static-getObjectReference",
-		"name": "getObjectReference",
-		"kind": "function",
-		"access": "",
-		"scope": "static",
-		"virtual": false,
-		"description": "Return the DOM element created by FusionTime in which charts will be rendered `<span>`",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    id: \"chart_1\",\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data:fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n   \/\/replaceSVG() replaces the SVG element\r\nfunction replaceSVG() {\r\n        var chart = FusionCharts.getObjectReference(\"chart_1\");\r\n        chart.innerHTML = \"<span class=\"rep_text\">The svg element of the chart is replaced by this text<\/span>\";\r\n    }\r\n\/\/reDrawSVG() redraws the chart\r\n    function reDrawSVG() {\r\n        myChart.render();\r\n    }\r\n    document.getElementById(\"get_ref\").addEventListener(\"click\", replaceSVG);\r\n    document.getElementById(\"redraw\").addEventListener(\"click\", reDrawSVG);\r\n\r\n});",
-				"type": "js"
-			}
-		},
-
-		"params": {
-			"id": {
-				"name": "id",
-				"type": [
-					"string"
-				],
-				"description": "ID of the chart, whose `DOMElement` is to be referenced.",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-
-	"clone": {
-		"id": "clone",
-		"name": "clone",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Creates a copy of a chart instance, creating a new chart with identical construction properties of the chart being cloned. The cloned chart, assigned an auto-generated ID, is rendered in a container DOM element that is explicitly provided.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n\/\/exact_copy() creates a copy of the chart\r\n   function exact_copy() {\r\n        var cloned_chart = myChart.clone();\r\n        console.log(cloned_chart);\r\n        cloned_chart.render(\"cloned-chart-container\");\r\n    }\r\n    document.getElementById(\"exact_copy\").addEventListener(\"click\", exact_copy);\r\n\r\n});",
-				"type": "js"
-			}
-		},
-
-		"params": {
-			"overrides": {
-				"name": "overrides",
-				"type": [
-					"object"
-				],
-				"description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new FusionTime instance.",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": true,
-				"subparams": {}
-			},
-			"argsOnly": {
-				"name": "argsOnly",
-				"type": [
-					"boolean"
-				],
-				"description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionTime instance, and therefore, create a clone.",
-				"defaultvalue": "false",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"static-ready": {
-		"id": "static-ready",
-		"name": "ready",
-		"kind": "function",
-		"access": "",
-		"scope": "static",
-		"virtual": false,
-		"description": "Accepts a function as an argument and that is executed by FusionTime when the page is ready (library loaded, DOM elements rendered).",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "\/\/ready() checks if the library is loaded and DOM elements are rendered\r\nfunction ready() {\r\n    var rend = document.getElementById(\"render\");\r\n    rend.hidden = false;\r\n    rend.addEventListener(\"click\", renderChart);\r\n\r\n\r\n  function renderChart() {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart1\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n\r\n}\r\n}",
-				"type": "js"
-			}
-		},
-		"params": {
-			"readyCallback": {
-				"name": "readyCallback",
-				"type": [
-					"readyCallback"
-				],
-				"description": "Callback function executed when the FusionTime framework is ready",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"args": {
-				"name": "args",
-				"type": [
-					"*"
-				],
-				"description": "Argument to be passed to the callback function",
-				"defaultvalue": "[FusionCharts](/api/fusioncharts)",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			},
-			"context": {
-				"name": "context",
-				"type": [
-					"function"
-				],
-				"description": "To execute a function, passed using the `fn` parameter, in a different scope than the default [FusionCharts](/api/fusioncharts) scope, pass the appropriate class object here.",
-				"defaultvalue": "[FusionCharts](/api/fusioncharts)",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"dataReady": {
-		"id": "dataReady",
-		"name": "dataReady",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Determines whether a chart will render properly with the data set and returns true or false.",
-		"examples": {
-         "0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n  var year_2016 = {\r\n    \/\/Enter data for year 2016\r\n}\r\n  var year_2017 = {\r\n    \/\/Enter data for year 2017\r\n}\r\n   var year_2018 = {\r\n    \/\/Enter data for year 2018\r\n}\r\nvar year_2019 ={\r\n    \/\/Enter data for year 2019\r\n}\r\n    var myChart = new FusionCharts({\r\n        type: \"timeseries\",\r\n       renderAt: \"container\",\r\n        width: \"100%\",\r\n        height: 400,\r\n        id: \"chart1\",\r\n        dataSource: year_2018\r\n    });\r\n    function render() {\r\n        var data = document.getElementById(\"data\").value;\r\n\r\n        if (data == \"2016\") {\r\n            myChart.setChartData(year_2016);\r\n        } else if (data == \"2017\") {\r\n            myChart.setChartData(year_2017);\r\n        } else if (data == \"2018\") {\r\n            myChart.setChartData(year_2018);\r\n        } else if (data == \"2019\") {\r\n            myChart.setChartData(year_2019);\r\n       }\r\n\r\n        myChart.render();\r\n        var flag = myChart.dataReady();\r\n        var msg = document.getElementById(\"msg\");\r\n        if (flag) {\r\n            msg.innerHTML = \"Data valid. Scroll down to view the chart.\";\r\n        } else {\r\n            msg.innerHTML = \"Data invalid\";\r\n        }\r\n    }\r\n\r\n    document.getElementById(\"rend\").addEventListener(\"click\", render);\r\n});\r\n});",
-				"type": "js"
-			}
-      },
-		"params": {
-			"available": {
-				"name": "available",
-				"type": [
-					"boolean"
-				],
-				"description": "Setting this parameter to __true__ returns the status of the data, irrespective of its compatibility with the chart type. In that case, this function will return __false__ if data provided to the chart triggers the [dataLoadError](/api/fusioncharts/fusioncharts-events#event-dataLoadError) or [dataInvalid](/api/fusioncharts/fusioncharts-events#event-dataInvalid) events",
-				"defaultvalue": "false",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"hasRendered": {
-		"id": "hasRendered",
-		"name": "hasRendered",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Returns true if the chart has rendered successfully, false if it has not.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data:fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  });\r\n   \r\n var msg = document.getElementById(\"render_status\");\r\n    var flag = myChart.hasRendered();\r\n\/\/to check whether the chart has rendered or not\r\n    if (!flag) {\r\n        msg.innerHTML = \"Chart not rendered\";\r\n\r\n    }\r\n    function render() {\r\n        myChart.render();\r\n        msg.innerHTML = \"Chart rendered\";\r\n    }\r\n\r\n    document.getElementById(\"render\").addEventListener(\"click\", render);\r\n\r\n});",
-				"type": "js"
-			}
-		},
-		"params": {}
-	},
-	"print": {
-		"id": "print",
-		"name": "print",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Prints individual charts. It hides all elements on a page except the chart to print and then invokes the page printing function (`window.print()`).",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data:fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n  \/\/print() invokes the page printing function to print the chart\r\n function print() {\r\n        myChart.print();\r\n    }   \r\n    document.getElementById(\"print\").addEventListener(\"click\", print);\r\n\r\n});",
-				"type": "js"
-			}
-		},
-		"params": {
-			"options": {
-				"name": "options",
-				"type": [
-					"object"
-				],
-				"description": "Object containing the printing options configured",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {
-					"hideButtons": {
-						"name": "hideButtons",
-						"type": [
-							"boolean"
-						],
-						"description": "Hides all buttons on the chart",
-						"defaultvalue": "true",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					}
+			"params": {
+				"width": {
+					"name": "width",
+					"type": ["number", "percent"],
+					"description": "Chart width to set, in pixels or percentage",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				},
+				"height": {
+					"name": "height",
+					"type": ["number", "percent"],
+					"description": "Chart height to set, in pixels or percentage",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
 				}
 			}
-		}
-	},
-	"exportChart": {
-		"id": "exportChart",
-		"name": "exportChart",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Exports a chart as an image or as a PDF document.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n  \/\/export_chart() exports the chart as a pdf or image\r\n   function export_chart() {\r\n        var format = document.getElementById(\"format\").value;\r\n        myChart.exportChart({\r\n            \"exportFormat\": format\r\n        });\r\n    }\r\n    document.getElementById(\"export\").addEventListener(\"click\", export_chart);\r\n});\r\n});",
-				"type": "js"
+		},
+
+		"lockResize": {
+			"id": "lockResize",
+			"name": "lockResize",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Allows users to controls whether the chart will be dynamically resizable or not when rendered using percent height and width.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\u200B\r\n\t\/\/Locking the automatic percentage-based resizing. If resize is already locked, sending false unlocks it.\r\n\tmyChart.lockResize(true);\r\n});",
+					"type": "js"
+				}
+			},
+			"params": {
+				"state": {
+					"name": "state",
+					"type": ["boolean"],
+					"description": "Setting this parameter to __true__ will lock the automatic percentage-based resizing. If resize is already locked, sending `false` unlocks it.",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"getSVGString": {
+			"id": "getSVGString",
+			"name": "getSVGString",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Returns the SVG string of a chart. This function can be called only after the chart has rendered.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    width: \"450\",\r\n    height: \"350\",\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n\/\/Returns the SVG string of the chart\r\n  function svgString() {\r\n   \r\n\t\t\t\tmyChart.getSVGString(function(svg){\r\n        \tdocument.getElementById(\"msg\").appendChild(        document.createTextNode(svg));\r\n\t\t\t\t});\r\n        \r\n    }\r\n    document.getElementById(\"get\").addEventListener(\"click\", svgString);\r\n  })\r\n});",
+					"type": "js"
+				}
+			},
+
+			"params": {
+				"callBackFN( svgString )": {
+					"name": "callBackFN( svgString )",
+					"type": ["getSVGString-callBack"],
+					"description": "callBackFN is called only when `getSVGString()` completes its execution.",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				},
+				"keepImages": {
+					"name": "keepImages",
+					"type": ["keepImages"],
+					"description": "To get the images present in the chart from the SVG string, set the parameter of `keepImages` object to `1`.",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"batchExport": {
+			"id": "batchExport",
+			"name": "batchExport",
+			"kind": "function",
+			"access": "",
+			"scope": "static",
+			"virtual": false,
+			"description": "Exports multiple charts in a single image. This method either takes __no arguments__ or takes __an object as an argument__. \r\r",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "\/\/batchExport exports multiple charts in a single image\r\nbatchExportConfig1 = function() {  \r\nFusionCharts.batchExport({\r\n    \"charts\": [{\r\n      \"id\": \"chart1\",\r\n    }],\r\n    \"exportFileName\": \"batchExport\",\r\n    \"exportFormat\": \"jpg\",\r\n    \"exportAtClientSide\": \"1\"\r\n  })\r\n}\r\n  \r\nFusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    id: \"chart1\",\r\n    renderAt: \"container\",\r\n    width: \"450\",\r\n    height: \"350\",\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n  \r\n  })\r\n});",
+					"type": "js"
+				}
+			},
+
+			"params": {
+				"imageWidth": {
+					"name": "imageWidth",
+					"type": ["number"],
+					"description": "Width of the exported image (of the charts)",
+					"defaultvalue": "Maximum chart width + 10",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"imageHeight": {
+					"name": "imageHeight",
+					"type": ["number"],
+					"description": "Height of the exported image (of the charts)",
+					"defaultvalue": "(Total height of all charts + 5) * (number of charts + 1)",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"charts": {
+					"name": "charts",
+					"type": ["object"],
+					"description": "The configuration required for the chart(s) being exported can be provided in this object using the attributes given below:",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {
+						"id": {
+							"name": "id",
+							"type": ["string"],
+							"description": "Valid FusionCharts ID, to attach the chart on the main image",
+							"defaultvalue": "",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"x": {
+							"name": "x",
+							"type": ["number"],
+							"description": "x-coordinate for positioning the exported image",
+							"defaultvalue": "5",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"y": {
+							"name": "y",
+							"type": ["number"],
+							"description": "y-coordinate for positioning the exported image",
+							"defaultvalue": "previous chart's y-coordinate + 5",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"width": {
+							"name": "width",
+							"type": ["number"],
+							"description": "Custom width for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+							"defaultvalue": "Current chart width",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"heigt": {
+							"name": "height",
+							"type": ["number"],
+							"description": "Custom height for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+							"defaultvalue": "Current chart height",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						}
+					}
+				},
+				"background": {
+					"name": "background",
+					"type": ["object"],
+					"description": "The configuration required for the exported image's background can be provided in this object using the attributes given below:",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {
+						"bgColor": {
+							"name": "bgColor",
+							"type": ["hexcolor"],
+							"description": "Background color for the exported image",
+							"defaultvalue": "#ffffff",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"bgImage": {
+							"name": "bgImage",
+							"type": ["string"],
+							"description": "Background image for the exported images",
+							"defaultvalue": "",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"bgImageAlpha": {
+							"name": "bgImageAlpha",
+							"type": ["number"],
+							"description": "Transparency of the background image",
+							"defaultvalue": "",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"bgImageX": {
+							"name": "bgImageX",
+							"type": ["number"],
+							"description": "Starting x-coordinate for positioning the background image",
+							"defaultvalue": "",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"bgImageY": {
+							"name": "bgImageY",
+							"type": ["number"],
+							"description": "Starting y-coordinate for positioning the background image",
+							"defaultvalue": "",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"bgImageWidth": {
+							"name": "bgImageWidth",
+							"type": ["number"],
+							"description": "Width of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+							"defaultvalue": "Original width of the image",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"bgImageHeight": {
+							"name": "bgImageHeight",
+							"type": ["number"],
+							"description": "Height of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+							"defaultvalue": "Original height of the image",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						}
+					}
+				},
+				"exportTargetWindow": {
+					"name": "exportTargetWindow",
+					"type": ["string"],
+					"description": "Set to `_self` to open the exported image in the same window \n\n Set to `_blank` to open the exported image in a new window",
+					"defaultvalue": "_self",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"exportAction": {
+					"name": "exportAction",
+					"type": ["string"],
+					"description": "Set to `_save` to save the exported image on the server \n\n Set to `_download` to send back the image to the client as a download",
+					"defaultvalue": "_download",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"exportFileName": {
+					"name": "exportFileName",
+					"type": ["string"],
+					"description": "Default file name (excluding the extension) for the exported image",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"exportHandler": {
+					"name": "exportHandler",
+					"type": ["string"],
+					"description": "__For server-side exporting__: Path of the export handler (the ready-to-use scripts provided by FusionTime) \n\n __For client-side exporting__: DOM ID of the FusionTime Export Component embedded in the web page, along with the chart",
+					"defaultvalue": "_download",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"exportFormats": {
+					"name": "exportFormats",
+					"type": ["string"],
+					"description": "List of formats in which the chart can be exported \n\n The formats are separated using the *|* (pipe) character.",
+					"defaultvalue": "_download",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"exportCallback": {
+					"name": "exportCallback",
+					"type": ["string"],
+					"description": "Name of the JavaScript function that is called when the export process finishes",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"exportAtClientSide": {
+					"name": "exportAtClientSide",
+					"type": ["string"],
+					"description": "Set to `1` to enable client-side exporting",
+					"defaultvalue": "_download",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				}
 			}
 		},
 
-		"params": {
-			"options": {
-				"name": "options",
-				"type": [
-					"object"
-				],
-				"description": "The `exportChart` method takes the following parameters:",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {
-					"exportFormat": {
-						"name": "exportFormat",
-						"type": [
-							"string"
-						],
-						"description": "A chart can be exported in one of the following formats:  \n\n | Export Format | Description | \n\n | --------- | :-------------| \n\n | `png`| Exports the charts in the high quality lossless PNG format | \n\n | `jpg` | Exports the chart in the high quality JPEG image format       | \n\n | `pdf` | Exports the chart as a PDF document |",
-						"defaultvalue": "png",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"exportFileName": {
-						"name": "exportFileName",
-						"type": [
-							"string"
-						],
-						"description": "File name for the chart being exported, excluding the extension. The extension is automatically appended depending on the value of `exportFormat` parameter.",
-						"defaultvalue": "FusionCharts",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"exportTargetWindow": {
-						"name": "exportTargetWindow",
-						"type": [
-							"string"
-						],
-						"description": "When the `exportAction` parameter is set to `download` as , this parameter lets you configure whether the return image or PDF will open in the same window (as an attachment for download), or in a new browser window (`_blank`).",
-						"defaultvalue": "_self",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"exportHandler": {
-						"name": "exportHandler",
-						"type": [
-							"string"
-						],
-						"description": "URL of the export server",
-						"defaultvalue": "",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"exportAction": {
-						"name": "exportAction",
-						"type": [
-							"string"
-						],
-						"description": "Specifies whether the exported image will be sent back to the browser as download, or whether it will be saved on to the server.  \n\n | Action Value | Description | \n\n | ----------| :------------------------| \n\n | `download` | The exported chart image or PDF will be downloaded as file. | \n\n | `save` | The exported chart will be saved on the server.| \n\n \n\n >For the charts to be saved on the server, you would need to setup your own export handling server. \n\n",
-						"defaultvalue": "download",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
-					},
-					"exportCallback": {
-						"name": "exportCallback",
-						"type": [
-							"function"
-						],
-						"description": "Callback JavaScript function executed when the export process is complete. If this parameter is not assigned a value, then the `window.FC_Exported` is executed.",
-						"defaultvalue": "FC_Exported",
-						"optional": true,
-						"nullable": "",
-						"subparams": {}
+		"getChartData": {
+			"id": "getChartData",
+			"name": "getChartData",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Fetches the data set when a chart has been rendered.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "<select id=\"data_format\">\r\n     \t    <option value=\"csv\">CSV<\/option>\r\n     \t    <option value=\"json\">JSON<\/option>\r\n     \t<\/select>     \t\r\n\r\nFusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\r\nvar format = document.getElementById(\"data_format\").value;\r\n\/\/getChartData fetches the data set for a chart\r\nvar data = FusionCharts.getChartData(format);\r\n}",
+					"type": "js"
+				}
+			},
+
+			"params": {
+				"format": {
+					"name": "format",
+					"type": ["dataFormats"],
+					"description": "Format in which chart data has to be retrieved",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"setChartData": {
+			"id": "setChartData",
+			"name": "setChartData",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionTime constructor. \n\n",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "var year_2018 = {\r\n\t\/\/Enter data for year 2018\r\n}\r\n\r\nvar year_2019 ={\r\n\t\/\/Enter data for year 2019\r\n}\r\nFusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\r\n\t\t}\r\n\t}).render();\r\n\r\n var year_data = document.getElementById(\"year\").value;\r\n    if (year_data == \"2018\")\r\n\/\/setChartData sets the data for a chart\r\n    \tmyChart.setChartData(year_2018, \"json\");\r\n   \t\t\telse if (year_data ==\"2019\")\r\n   \t\t\t\tmyChart.setChartData(year_2019, \"json\"); \r\n});",
+					"type": "js"
+				}
+			},
+			"params": {
+				"data": {
+					"name": "data",
+					"type": ["string", "object"],
+					"description": "Data to be passed to the chart",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"format": {
+					"name": "format",
+					"type": ["dataFormats"],
+					"description": "Format of the data being passed. If the value for this parameter is not a valid [dataFormat](/api/fusioncharts/fusioncharts-properties#dataFormats), then the default or previously set data format is assumed. \n\n >If the data format is already known, then the [setJSONData()](/api/fusioncharts/fusioncharts-methods#setJSONData) or the [setXMLData()](/api/fusioncharts/fusioncharts-methods#setXMLData) methods can be used. \n\n",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"getChartAttribute": {
+			"id": "getChartAttribute",
+			"name": "getChartAttribute",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Fetches value of chart attributes explicitly applied to the root `chart` object (or the `<chart>` node element).",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\r\ndocument.getElementById(\"chart1\").innerHTML = \"Current theme: \" + myChart.getChartAttribute(\"theme\");\r\n  \r\n\/\/getChartAttribute fetches the value of chart attribute explicitly\r\n  function getAtt() {\r\n\r\n       var select = document.getElementById(\"chart1\");\r\n       myChart.setChartAttribute(\"theme\", select.value);\r\n document.getElementById(\"current_value\").innerHTML = \"Current theme: \" + myChart.getChartAttribute(\"theme\");\r\n\r\n    }\r\n    document.getElementById(\"theme-type\").addEventListener(\"change\", getAtt);\r\n});",
+					"type": "js"
+				}
+			},
+
+			"params": {
+				"attribute": {
+					"name": "attribute",
+					"type": ["string", "array"],
+					"description": "To fetch the value of a single attribute, pass the attribute name as a string. For multiple attributes, pass an array of attribute names. Values will be returned in the order of the attribute names in the array.",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"setChartAttribute": {
+			"id": "setChartAttribute",
+			"name": "setChartAttribute",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Updates a chart's attributes with a new attribute-value pair, thus updating the chart's data definition root (the `<chart>` node in the XML data or the `chart` object in the JSON data).",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\t\t}\r\n\t}).render();\r\n\r\n\/\/setChartAttribute updates the chart's attributes with new attribute-value\r\n function setAtt() {\r\n       var select = document.getElementById(\"chart1\");\r\n       myChart.setChartAttribute(\"theme\", select.value);\r\n\r\n\r\n    }\r\n\r\n    document.getElementById(\"chart1\").addEventListener(\"change\", setAtt);\r\n\r\n});",
+					"type": "js"
+				}
+			},
+			"params": {
+				"attributes": {
+					"name": "attributes",
+					"type": ["object", "string"],
+					"description": "To set/update multiple attributes at once, an object containing all the key-value pairs is passed. In case of a single value, a string that is the key (the attribute name) is passed.",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"value": {
+					"name": "value",
+					"type": ["string"],
+					"description": "If the `attributes` parameter is a single string value, the `value` parameter contains the value for that key.",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": true,
+					"subparams": {}
+				}
+			}
+		},
+		"addEventListener": {
+			"id": "addEventListener",
+			"name": "addEventListener",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Used to attach an event to the chart.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {\r\n\r\n\t\t}\r\n\t}).render();\r\n\/\/attaching an event to the chart using addEventListener()\r\n\tmyChart.addEventListener(\"dataPlotClick\", \"onDataPlotClick\");\r\n});",
+					"type": "js"
+				}
+			},
+
+			"params": {
+				"type": {
+					"name": "type",
+					"type": ["string", "array"],
+					"description": "Type (name) of the event to listen to. To register the listener for multiple events in the same registration call, provide all event names as an array.",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"listener": {
+					"name": "listener",
+					"type": ["eventListener"],
+					"description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"removeEventListener": {
+			"id": "removeEventListener",
+			"name": "removeEventListener",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Used to remove an event attached to the chart.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n\/\/removing an event attached to the chart\r\n\tmyChart.removeEventListener(\"dataPlotClick\", \"onDataPlotClick\");\r\n});",
+					"type": "js"
+				}
+			},
+
+			"params": {
+				"type": {
+					"name": "type",
+					"type": ["string", "array"],
+					"description": "Type (name) of the event whose listener(s) has to be removed",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"listener": {
+					"name": "listener",
+					"type": ["function"],
+					"description": "Listener function to remove",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+
+		"static-getObjectReference": {
+			"id": "static-getObjectReference",
+			"name": "getObjectReference",
+			"kind": "function",
+			"access": "",
+			"scope": "static",
+			"virtual": false,
+			"description": "Return the DOM element created by FusionTime in which charts will be rendered `<span>`",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    id: \"chart_1\",\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data:fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n   \/\/replaceSVG() replaces the SVG element\r\nfunction replaceSVG() {\r\n        var chart = FusionCharts.getObjectReference(\"chart_1\");\r\n        chart.innerHTML = \"<span class=\"rep_text\">The svg element of the chart is replaced by this text<\/span>\";\r\n    }\r\n\/\/reDrawSVG() redraws the chart\r\n    function reDrawSVG() {\r\n        myChart.render();\r\n    }\r\n    document.getElementById(\"get_ref\").addEventListener(\"click\", replaceSVG);\r\n    document.getElementById(\"redraw\").addEventListener(\"click\", reDrawSVG);\r\n\r\n});",
+					"type": "js"
+				}
+			},
+
+			"params": {
+				"id": {
+					"name": "id",
+					"type": [
+						"string"
+					],
+					"description": "ID of the chart, whose `DOMElement` is to be referenced.",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+
+		"clone": {
+			"id": "clone",
+			"name": "clone",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Creates a copy of a chart instance, creating a new chart with identical construction properties of the chart being cloned. The cloned chart, assigned an auto-generated ID, is rendered in a container DOM element that is explicitly provided.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n\/\/exact_copy() creates a copy of the chart\r\n   function exact_copy() {\r\n        var cloned_chart = myChart.clone();\r\n        console.log(cloned_chart);\r\n        cloned_chart.render(\"cloned-chart-container\");\r\n    }\r\n    document.getElementById(\"exact_copy\").addEventListener(\"click\", exact_copy);\r\n\r\n});",
+					"type": "js"
+				}
+			},
+
+			"params": {
+				"overrides": {
+					"name": "overrides",
+					"type": [
+						"object"
+					],
+					"description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new FusionTime instance.",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": true,
+					"subparams": {}
+				},
+				"argsOnly": {
+					"name": "argsOnly",
+					"type": [
+						"boolean"
+					],
+					"description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionTime instance, and therefore, create a clone.",
+					"defaultvalue": "false",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"static-ready": {
+			"id": "static-ready",
+			"name": "ready",
+			"kind": "function",
+			"access": "",
+			"scope": "static",
+			"virtual": false,
+			"description": "Accepts a function as an argument and that is executed by FusionTime when the page is ready (library loaded, DOM elements rendered).",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "\/\/ready() checks if the library is loaded and DOM elements are rendered\r\nfunction ready() {\r\n    var rend = document.getElementById(\"render\");\r\n    rend.hidden = false;\r\n    rend.addEventListener(\"click\", renderChart);\r\n\r\n\r\n  function renderChart() {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart1\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n\r\n}\r\n}",
+					"type": "js"
+				}
+			},
+			"params": {
+				"readyCallback": {
+					"name": "readyCallback",
+					"type": [
+						"readyCallback"
+					],
+					"description": "Callback function executed when the FusionTime framework is ready",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"args": {
+					"name": "args",
+					"type": [
+						"*"
+					],
+					"description": "Argument to be passed to the callback function",
+					"defaultvalue": "[FusionCharts](/api/fusioncharts)",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				},
+				"context": {
+					"name": "context",
+					"type": [
+						"function"
+					],
+					"description": "To execute a function, passed using the `fn` parameter, in a different scope than the default [FusionCharts](/api/fusioncharts) scope, pass the appropriate class object here.",
+					"defaultvalue": "[FusionCharts](/api/fusioncharts)",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"dataReady": {
+			"id": "dataReady",
+			"name": "dataReady",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Determines whether a chart will render properly with the data set and returns true or false.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n  var year_2016 = {\r\n    \/\/Enter data for year 2016\r\n}\r\n  var year_2017 = {\r\n    \/\/Enter data for year 2017\r\n}\r\n   var year_2018 = {\r\n    \/\/Enter data for year 2018\r\n}\r\nvar year_2019 ={\r\n    \/\/Enter data for year 2019\r\n}\r\n    var myChart = new FusionCharts({\r\n        type: \"timeseries\",\r\n       renderAt: \"container\",\r\n        width: \"100%\",\r\n        height: 400,\r\n        id: \"chart1\",\r\n        dataSource: year_2018\r\n    });\r\n    function render() {\r\n        var data = document.getElementById(\"data\").value;\r\n\r\n        if (data == \"2016\") {\r\n            myChart.setChartData(year_2016);\r\n        } else if (data == \"2017\") {\r\n            myChart.setChartData(year_2017);\r\n        } else if (data == \"2018\") {\r\n            myChart.setChartData(year_2018);\r\n        } else if (data == \"2019\") {\r\n            myChart.setChartData(year_2019);\r\n       }\r\n\r\n        myChart.render();\r\n        var flag = myChart.dataReady();\r\n        var msg = document.getElementById(\"msg\");\r\n        if (flag) {\r\n            msg.innerHTML = \"Data valid. Scroll down to view the chart.\";\r\n        } else {\r\n            msg.innerHTML = \"Data invalid\";\r\n        }\r\n    }\r\n\r\n    document.getElementById(\"rend\").addEventListener(\"click\", render);\r\n});\r\n});",
+					"type": "js"
+				}
+			},
+			"params": {
+				"available": {
+					"name": "available",
+					"type": [
+						"boolean"
+					],
+					"description": "Setting this parameter to __true__ returns the status of the data, irrespective of its compatibility with the chart type. In that case, this function will return __false__ if data provided to the chart triggers the [dataLoadError](/api/fusioncharts/fusioncharts-events#event-dataLoadError) or [dataInvalid](/api/fusioncharts/fusioncharts-events#event-dataInvalid) events",
+					"defaultvalue": "false",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"hasRendered": {
+			"id": "hasRendered",
+			"name": "hasRendered",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Returns true if the chart has rendered successfully, false if it has not.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data:fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  });\r\n   \r\n var msg = document.getElementById(\"render_status\");\r\n    var flag = myChart.hasRendered();\r\n\/\/to check whether the chart has rendered or not\r\n    if (!flag) {\r\n        msg.innerHTML = \"Chart not rendered\";\r\n\r\n    }\r\n    function render() {\r\n        myChart.render();\r\n        msg.innerHTML = \"Chart rendered\";\r\n    }\r\n\r\n    document.getElementById(\"render\").addEventListener(\"click\", render);\r\n\r\n});",
+					"type": "js"
+				}
+			},
+			"params": {}
+		},
+		"print": {
+			"id": "print",
+			"name": "print",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Prints individual charts. It hides all elements on a page except the chart to print and then invokes the page printing function (`window.print()`).",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data:fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n  \/\/print() invokes the page printing function to print the chart\r\n function print() {\r\n        myChart.print();\r\n    }   \r\n    document.getElementById(\"print\").addEventListener(\"click\", print);\r\n\r\n});",
+					"type": "js"
+				}
+			},
+			"params": {
+				"options": {
+					"name": "options",
+					"type": [
+						"object"
+					],
+					"description": "Object containing the printing options configured",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {
+						"hideButtons": {
+							"name": "hideButtons",
+							"type": [
+								"boolean"
+							],
+							"description": "Hides all buttons on the chart",
+							"defaultvalue": "true",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						}
 					}
 				}
 			}
-		}
-	},
-	"showChartMessage": {
-		"id": "showChartMessage",
-		"name": "showChartMessage",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Shows a text message on a chart.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n \/\/show() displays a text message on the chart\r\nfunction show() {\r\n\r\n        var mode = document.getElementById(\"mode\");\r\n        var msg = document.getElementById(\"chart_message\").value.trim();\r\n        if (msg !== \"\" && mode.selectedIndex !== 0) {\r\n            myChart.render();\r\n            if (mode.value == \"onchart\") {\r\n                myChart.showChartMessage(msg);\r\n            } else if (mode.value == \"overlay\") {\r\n                myChart.showChartMessage(msg, true);\r\n            } else if (mode.value == \"overlaycan\") {\r\n                myChart.showChartMessage(msg, true, true);\r\n            }\r\n        }\r\n    }\r\n    document.getElementById(\"show_message\").addEventListener(\"click\", show);\r\n\r\n\r\n});",
-				"type": "js"
-			}
 		},
+		"exportChart": {
+			"id": "exportChart",
+			"name": "exportChart",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Exports a chart as an image or as a PDF document.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n  \/\/export_chart() exports the chart as a pdf or image\r\n   function export_chart() {\r\n        var format = document.getElementById(\"format\").value;\r\n        myChart.exportChart({\r\n            \"exportFormat\": format\r\n        });\r\n    }\r\n    document.getElementById(\"export\").addEventListener(\"click\", export_chart);\r\n});\r\n});",
+					"type": "js"
+				}
+			},
 
-		"params": {
-			"text": {
-				"name": "text",
-				"type": [
-					"string"
-				],
-				"description": "Text message to be displayed",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
-			},
-			"modal": {
-				"name": "modal",
-				"type": [
-					"boolean"
-				],
-				"description": "Boolean value to indicate whether the message will be shown on an overlay button or on the chart.",
-				"defaultvalue": "false",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			},
-			"cancelable": {
-				"name": "cancelable",
-				"type": [
-					"boolean"
-				],
-				"description": "If set to __true__, the modal can be closed by clicking. Defaults to __false__. \n\n >Applicable only if `modal` is set to __true__. \n\n",
-				"defaultvalue": "false",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"render": {
-		"id": "render",
-		"name": "render",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Renders a chart inside a container element on a page. If the chart is already rendered, it can be re-rendered inside the same container DOM element or a different element.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render(); \/\/render() renders the chart",
-				"type": "js"
-			}
-		},
-		"params": {
-			"containerElement": {
-				"name": "containerElement",
-				"type": [
-					"string",
-					"DOMElement"
-				],
-				"description": "Reference or ID of the DOM element inside which the chart is to be rendered. If this argument is not provided, it is assumed that the `renderAt` attribute is provided during chart creation.",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			},
-			"insertMode": {
-				"name": "insertMode",
-				"type": [
-					"DOMInsertModes"
-				],
-				"description": "Method for inserting the chart's DOM element within the `containerElement`. Click [here](/api/fusioncharts/fusioncharts-properties#DOMInsertModes) to read more about  the DOM insert modes.",
-				"defaultvalue": "replace",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			},
-			"callback": {
-				"name": "callback",
-				"type": [
-					"renderCallback"
-				],
-				"description": "Callback function executed after the chart is successfully rendered. If the last parameter to the `render()` function is a function, it is treated as a callback.",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
-			}
-		}
-	},
-	"dispose": {
-		"id": "dispose",
-		"name": "Dispose",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Disposes a chart completely, when called on an instance of FusionCharts. This clears the entire chart object and removes it from the DOM tree structure. When the chart is successfully disposed, `chartInstance.disposed` is set to __true__.",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n   \r\n var status = document.getElementById(\"state\");\r\n    var state = myChart.disposed;\r\n\r\n    if (state === undefined) {\r\n        status.innerHTML = \"false\";\r\n    }\r\n\/\/dis() disposes the chart\r\n    function dis() {\r\n        myChart.dispose();\r\n        status.innerHTML = myChart.disposed;\r\n    }\r\n    document.getElementById(\"dispose\").addEventListener(\"click\", dis);\r\n\r\n});",
-				"type": "js"
+			"params": {
+				"options": {
+					"name": "options",
+					"type": [
+						"object"
+					],
+					"description": "The `exportChart` method takes the following parameters:",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {
+						"exportFormat": {
+							"name": "exportFormat",
+							"type": [
+								"string"
+							],
+							"description": "A chart can be exported in one of the following formats:  \n\n | Export Format | Description | \n\n | --------- | :-------------| \n\n | `png`| Exports the charts in the high quality lossless PNG format | \n\n | `jpg` | Exports the chart in the high quality JPEG image format       | \n\n | `pdf` | Exports the chart as a PDF document |",
+							"defaultvalue": "png",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"exportFileName": {
+							"name": "exportFileName",
+							"type": [
+								"string"
+							],
+							"description": "File name for the chart being exported, excluding the extension. The extension is automatically appended depending on the value of `exportFormat` parameter.",
+							"defaultvalue": "FusionCharts",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"exportTargetWindow": {
+							"name": "exportTargetWindow",
+							"type": [
+								"string"
+							],
+							"description": "When the `exportAction` parameter is set to `download` as , this parameter lets you configure whether the return image or PDF will open in the same window (as an attachment for download), or in a new browser window (`_blank`).",
+							"defaultvalue": "_self",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"exportHandler": {
+							"name": "exportHandler",
+							"type": [
+								"string"
+							],
+							"description": "URL of the export server",
+							"defaultvalue": "",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"exportAction": {
+							"name": "exportAction",
+							"type": [
+								"string"
+							],
+							"description": "Specifies whether the exported image will be sent back to the browser as download, or whether it will be saved on to the server.  \n\n | Action Value | Description | \n\n | ----------| :------------------------| \n\n | `download` | The exported chart image or PDF will be downloaded as file. | \n\n | `save` | The exported chart will be saved on the server.| \n\n \n\n >For the charts to be saved on the server, you would need to setup your own export handling server. \n\n",
+							"defaultvalue": "download",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						},
+						"exportCallback": {
+							"name": "exportCallback",
+							"type": [
+								"function"
+							],
+							"description": "Callback JavaScript function executed when the export process is complete. If this parameter is not assigned a value, then the `window.FC_Exported` is executed.",
+							"defaultvalue": "FC_Exported",
+							"optional": true,
+							"nullable": "",
+							"subparams": {}
+						}
+					}
+				}
 			}
 		},
-		"params": {}
-	},
-	"configure": {
-		"id": "configure",
-		"name": "configure",
-		"kind": "function",
-		"access": "",
-		"scope": "instance",
-		"virtual": false,
-		"description": "Configures status messages that are displayed while rendering a chart. For example, while a chart's data is being fetched from a remote URL, the chart will display the message __Retrieving data. Please wait.__ ",
-		"examples": {
-			"0": {
-				"caption": "",
-				"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      \"data\": [\r\n\r\n            ],\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  });\r\n   \/\/rendering the chart\r\n function render() {\r\n\/\/configuring the display message\r\n        myChart.configure({\r\n            \"dataEmptyMessage\": \"No data to load. Please check the data source.\"\r\n        });\r\n        myChart.render();\r\n\r\n    }\r\n\r\n    document.getElementById(\"render\").addEventListener(\"click\", render);\r\n});",
-				"type": "js"
+		"showChartMessage": {
+			"id": "showChartMessage",
+			"name": "showChartMessage",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Shows a text message on a chart.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n \/\/show() displays a text message on the chart\r\nfunction show() {\r\n\r\n        var mode = document.getElementById(\"mode\");\r\n        var msg = document.getElementById(\"chart_message\").value.trim();\r\n        if (msg !== \"\" && mode.selectedIndex !== 0) {\r\n            myChart.render();\r\n            if (mode.value == \"onchart\") {\r\n                myChart.showChartMessage(msg);\r\n            } else if (mode.value == \"overlay\") {\r\n                myChart.showChartMessage(msg, true);\r\n            } else if (mode.value == \"overlaycan\") {\r\n                myChart.showChartMessage(msg, true, true);\r\n            }\r\n        }\r\n    }\r\n    document.getElementById(\"show_message\").addEventListener(\"click\", show);\r\n\r\n\r\n});",
+					"type": "js"
+				}
+			},
+
+			"params": {
+				"text": {
+					"name": "text",
+					"type": [
+						"string"
+					],
+					"description": "Text message to be displayed",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"modal": {
+					"name": "modal",
+					"type": [
+						"boolean"
+					],
+					"description": "Boolean value to indicate whether the message will be shown on an overlay button or on the chart.",
+					"defaultvalue": "false",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				},
+				"cancelable": {
+					"name": "cancelable",
+					"type": [
+						"boolean"
+					],
+					"description": "If set to __true__, the modal can be closed by clicking. Defaults to __false__. \n\n >Applicable only if `modal` is set to __true__. \n\n",
+					"defaultvalue": "false",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
 			}
 		},
-		"params": {
-			"option": {
-				"name": "option",
-				"type": [
-					"chartStatusMessages"
-				],
-				"description": "To configure a single attribute, specify the attribute (the key) as a string. To configure multiple attributes, this can be an object having key-value pairs of all configuration options.",
-				"defaultvalue": "",
-				"optional": "",
-				"nullable": "",
-				"subparams": {}
+		"render": {
+			"id": "render",
+			"name": "render",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Renders a chart inside a container element on a page. If the chart is already rendered, it can be re-rendered inside the same container DOM element or a different element.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render(); \/\/render() renders the chart",
+					"type": "js"
+				}
 			},
-			"value": {
-				"name": "value",
-				"type": [
-					"string"
-				],
-				"description": "If the `option` parameter has a single value as the key, this parameter is the value of that key.",
-				"defaultvalue": "",
-				"optional": true,
-				"nullable": "",
-				"subparams": {}
+			"params": {
+				"containerElement": {
+					"name": "containerElement",
+					"type": [
+						"string",
+						"DOMElement"
+					],
+					"description": "Reference or ID of the DOM element inside which the chart is to be rendered. If this argument is not provided, it is assumed that the `renderAt` attribute is provided during chart creation.",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				},
+				"insertMode": {
+					"name": "insertMode",
+					"type": [
+						"DOMInsertModes"
+					],
+					"description": "Method for inserting the chart's DOM element within the `containerElement`. Click [here](/api/fusioncharts/fusioncharts-properties#DOMInsertModes) to read more about  the DOM insert modes.",
+					"defaultvalue": "replace",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				},
+				"callback": {
+					"name": "callback",
+					"type": [
+						"renderCallback"
+					],
+					"description": "Callback function executed after the chart is successfully rendered. If the last parameter to the `render()` function is a function, it is treated as a callback.",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
 			}
+		},
+		"dispose": {
+			"id": "dispose",
+			"name": "Dispose",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Disposes a chart completely, when called on an instance of FusionCharts. This clears the entire chart object and removes it from the DOM tree structure. When the chart is successfully disposed, `chartInstance.disposed` is set to __true__.",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      data: fusionTable,\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  }).render();\r\n   \r\n var status = document.getElementById(\"state\");\r\n    var state = myChart.disposed;\r\n\r\n    if (state === undefined) {\r\n        status.innerHTML = \"false\";\r\n    }\r\n\/\/dis() disposes the chart\r\n    function dis() {\r\n        myChart.dispose();\r\n        status.innerHTML = myChart.disposed;\r\n    }\r\n    document.getElementById(\"dispose\").addEventListener(\"click\", dis);\r\n\r\n});",
+					"type": "js"
+				}
+			},
+			"params": {}
+		},
+		"configure": {
+			"id": "configure",
+			"name": "configure",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Configures status messages that are displayed while rendering a chart. For example, while a chart's data is being fetched from a remote URL, the chart will display the message __Retrieving data. Please wait.__ ",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "FusionCharts.ready(function () {\r\n    var myChart = new FusionCharts({\r\n    type: \"timeseries\",\r\n    renderAt: \"chart-container\",\r\n    width: \"90%\",\r\n    height: 490,\r\n    dataSource: {\r\n      \"data\": [\r\n\r\n            ],\r\n      chart: {\r\n      exportEnabled: 1\r\n      },\r\n      caption: {\r\n        text: \"Online Sales of a SuperStore in the US\"\r\n      },\r\n      yAxis: {\r\n        \"plot\": {\r\n          \"value\": \"Sales\",\r\n          \"type\": \"line\"\r\n        },\r\n      }\r\n    }\r\n  });\r\n   \/\/rendering the chart\r\n function render() {\r\n\/\/configuring the display message\r\n        myChart.configure({\r\n            \"dataEmptyMessage\": \"No data to load. Please check the data source.\"\r\n        });\r\n        myChart.render();\r\n\r\n    }\r\n\r\n    document.getElementById(\"render\").addEventListener(\"click\", render);\r\n});",
+					"type": "js"
+				}
+			},
+			"params": {
+				"option": {
+					"name": "option",
+					"type": [
+						"chartStatusMessages"
+					],
+					"description": "To configure a single attribute, specify the attribute (the key) as a string. To configure multiple attributes, this can be an object having key-value pairs of all configuration options.",
+					"defaultvalue": "",
+					"optional": "",
+					"nullable": "",
+					"subparams": {}
+				},
+				"value": {
+					"name": "value",
+					"type": [
+						"string"
+					],
+					"description": "If the `option` parameter has a single value as the key, this parameter is the value of that key.",
+					"defaultvalue": "",
+					"optional": true,
+					"nullable": "",
+					"subparams": {}
+				}
+			}
+		},
+		"feedData": {
+			"id": "feedData",
+			"name": "FeedData",
+			"kind": "function",
+			"access": "",
+			"scope": "instance",
+			"virtual": false,
+			"description": "Adds data to chart in real-time",
+			"examples": {
+				"0": {
+					"caption": "",
+					"code": "\/\/ update date\r\n    const getNextRandomDate = d => new Date(new Date(d).getTime() + 1000);\r\n    \r\n    const fd = (d) => {\r\n        var e = new Date(d.getTime()- (d.getTimezoneOffset())*60000).toISOString()\r\n        var f = e.split(\".\")[0]\r\n        var g = f.split(\"T\")\r\n        var h = g.join(\" \")\r\n        return h\r\n    }\r\n    \/\/ random data generator\r\n    const randBetween = (min, max) => {\r\n      const ceilMin = Math.ceil(min);\r\n\r\n      return (\r\n        Math.floor(Math.random() * (Math.floor(max) - ceilMin + 1)) + ceilMin\r\n      );\r\n    };\r\n    \/\/ Fusioncharts data store\r\n    const dataStore = new FusionCharts.DataStore().createDataTable(data, schema);\r\n    \/\/ time series chart instance\r\n    const realtimeChart = new FusionCharts({\r\n      type: \"timeseries\",\r\n      renderAt: \"chart-container\",\r\n      width: \"100%\",\r\n      height: \"600\",\r\n      dataSource: {\r\n        data: dataStore,\r\n        yAxis: { plottype: \"area\" },\r\n        series: \"City\"\r\n      }\r\n    });\r\n\r\n    let lastTimeStr = data[data.length - 1][0];\r\n\r\n    realtimeChart.addEventListener(\r\n      \"rendered\",\r\n      ({\r\n        sender: realtimeChart\r\n      }) => {\r\n        lastTimeStr = getNextRandomDate(lastTimeStr);\r\n        console.log(\"new lastTimeStr:\",lastTimeStr)\r\n        let newDate = new Date(lastTimeStr);\r\n        console.log(\"newDate without format:\",newDate)\r\n        let formattedNewDate = fd(newDate);\r\n        console.log(\"new Date first time:\",formattedNewDate)\r\n        \r\n        let incrementor = setInterval(() => {\r\n          console.log(\"formattedNewDate before randomizing:\",formattedNewDate);\r\n          newDate = getNextRandomDate(formattedNewDate);\r\n          formattedNewDate =fd(newDate);\r\n\r\n          realtimeChart.feedData([\r\n            [formattedNewDate, randBetween(13, 45), \"Kuala Lumpur\"],\r\n            [formattedNewDate, randBetween(13, 45), \"Panama City\"]\r\n          ]);\r\n        }, 1000);\r\n      });\r\n    realtimeChart.render();",
+					"type": "js"
+				}
+			},
+			"params": {}
 		}
+
 	}
-}
 }
