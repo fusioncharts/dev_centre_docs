@@ -636,7 +636,7 @@
         "name": "nodeLabelPadding"
       },
       {
-        "description": "This attribute lets you set the spacing between two labels in a column. It is not applicable is nodeRelaxation is enabled.",
+        "description": "This attribute lets you set the spacing between two labels in a column. It is not applicable if nodeRelaxation is enabled.",
         "range": "In pixels",
         "type": "Number",
         "versionsince": "3.15.0",

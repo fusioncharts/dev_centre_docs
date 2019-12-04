@@ -239,7 +239,7 @@ Use the code given below:
 ```javascript
 {
 	"chart": {
-		"unfocussedAlpha": "20"
+		"unfocussedAlpha": "70"
 	}
 }
 ```

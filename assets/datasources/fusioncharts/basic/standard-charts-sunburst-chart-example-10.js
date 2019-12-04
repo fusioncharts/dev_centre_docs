@@ -14,7 +14,7 @@
             "showBorder": "0",
             "animationDuration": "2",
             "centerAngle": "90",
-            "unfocussedAlpha": "20"
+            "unfocussedAlpha": "70"
         },
         data: [{
                 "id": "Flare",
