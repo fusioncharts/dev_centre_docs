@@ -1329,7 +1329,7 @@
 			"access": "",
 			"scope": "instance",
 			"virtual": false,
-			"description": "Adds data to chart in real-time",
+			"description": "Adds data to the chart in real-time.",
 			"examples": {
 				"0": {
 					"caption": "",
