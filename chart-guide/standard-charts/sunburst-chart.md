@@ -26,6 +26,8 @@ To create a sunburst chart follow the steps given below:
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes/sunburst) page of sunburst chart.
 
+> To render a sunburst chart specify the values of all the leaf nodes. If any of the leaf node value is not specified, the chart will show **No Data to Display Message**.
+
 A Sunburst chart looks as follows:
 
 {% embed_chart standard-charts-sunburst-chart-example-1.js %}
