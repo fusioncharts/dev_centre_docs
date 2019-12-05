@@ -5,7 +5,7 @@
     "info": "Calling `event.preventDefault()` from within the handler of this event will cancel the rendering process. The rendering process is triggered when the `FusionCharts#render()` method is called.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-beforeRender",
+      "slug": "fusiontime-event-beforeRender",
       "_renderBtn": true
 
 
@@ -90,7 +90,7 @@
     "info": "The difference between this event and the rendered event is that the rendered event is triggered only when the FusionCharts#render() method is called.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-renderComplete"
+      "slug": "fusiontime-event-renderComplete"
 
     },
     "tags": {
@@ -260,7 +260,7 @@
     "info": "If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in this event handler, for example, by using `setTimeout`.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-rendered"
+      "slug": "fusiontime-event-rendered"
 
     },
     "tags": {
@@ -3701,7 +3701,7 @@
     "description": "This event is fired when the chart is redrawn because of a data update, resize, change of chart message, or change of chart type.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-beforeDraw"
+      "slug": "fusiontime-event-beforeDraw"
     },
     "tags": {
       "action": "",
@@ -4392,7 +4392,7 @@
     "description": "This event is fired when the animation is started in the chart.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-animationInvoked"
+      "slug": "fusiontime-event-animationInvoked"
     },
     "tags": {
       "action": "",
