@@ -847,9 +847,225 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showLegend"
+      },
+      {
+        "description": "Whether legend keys should be displayed in bold",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendItemFontBold"
+      },
+      {
+        "description": "Sets legend item font",
+        "range": "Font Name",
+        "type": "String",
+        "name": "legendItemFont"
+      },
+      {
+        "description": "Sets legend item font size",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "legendItemFontSize"
+      },
+      {
+        "description": "Sets legend item font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendItemFontColor"
+      },
+      {
+        "description": "Sets legend item font color on hover",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendItemHoverFontColor"
+      },
+      {
+        "description": "The legend can be plotted at two positions on the chart - below (BOTTOM) the chart and to the right (RIGHT) of the chart.",
+        "range": "BOTTOM or RIGHT",
+        "type": "String",
+        "name": "legendPosition"
+      },
+      {
+        "description": "Sets the legend caption horizontal alignment .",
+        "range": "\"left\", \"center\", \"right\"",
+        "type": "String",
+        "name": "legendCaptionAlignment"
+      },
+      {
+        "description": "Whether legend caption should be displayed in bold",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendCaptionFontBold"
+      },
+      {
+        "description": "Sets legend caption font",
+        "range": "Font Name",
+        "type": "String",
+        "name": "legendCaptionFont"
+      },
+      {
+        "description": "Sets legend caption font size",
+        "range": "6 - 72",
+        "type": "Number",
+        "name": "legendCaptionFontSize"
+      },
+      {
+        "description": "Sets legend caption font color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendCaptionFontColor"
+      },
+      {
+        "description": "You can add a caption for the entire legend by setting the same here.",
+        "range": " ",
+        "type": "String",
+        "name": "legendCaption"
+      },
+      {
+        "description": "Sets the color that applies on both text font and icon when they are in a  disabled / hidden state",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendItemHiddenColor"
+      },
+      {
+        "description": "Scaling of legend icon is possible in FusionCharts XT. This attribute lets you control the size of legend icon.",
+        "range": "1-5",
+        "type": "Number",
+        "versionsince": "3.2",
+        "name": "legendIconScale"
+      },
+      {
+        "description": "Background color for the legend.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendBgColor"
+      },
+      {
+        "description": "Background alpha for the legend.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "legendBgAlpha"
+      },
+      {
+        "description": "Border Color for the legend.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendBorderColor"
+      },
+      {
+        "description": "Border thickness for the legend.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "legendBorderThickness"
+      },
+      {
+        "description": "Border alpha for the legend.",
+        "range": "0 - 100",
+        "type": "Number",
+        "name": "legendBorderAlpha"
+      },
+      {
+        "description": "Whether to show a shadow for legend.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendShadow"
+      },
+      {
+        "description": "The legend can be made drag-able by setting this attribute to 1. End viewers of the chart can drag the legend around on the chart.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "legendAllowDrag"
+      },
+      {
+        "description": "If you've too many items on the legend, a scroll bar shows up on the same. This attribute lets you configure the background color of the scroll bar.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "name": "legendScrollBgColor"
+      },
+      {
+        "description": "You can reverse the ordering of datasets in the legend by setting this attribute to 1.",
+        "range": "0/1",
+        "type": "Boolean",
+        "name": "reverseLegend"
+      },
+      {
+        "description": "If your chart contains multiple series, the legend is displayed as a grid comprising of multiple legend keys. With the help of this attribute you can specify the number of columns that are to be displayed in the legend.",
+        "range": "Positive Integer",
+        "type": "Number",
+        "versionsince": "3.2",
+        "name": "legendNumColumns"
+      },
+      {
+        "description": "Whether to minimize legend item text wrapping.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.2",
+        "name": "minimiseWrappingInLegend"
+      },
+      {
+        "description": "Specifies whether drawing a custom legend icon will be enabled. All legend icon customization attributes will work only if this feature is enabled. \n\nDefault value: 0 (disabled)",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.8.0",
+        "name": "drawCustomLegendIcon"
+      },
+      {
+        "description": "Sets the border color for the legend icon. \n\nDefault value: Data plot border color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.8.0",
+        "name": "legendIconBorderColor"
+      },
+      {
+        "description": "Sets the background color for the legend icon. \n\nDefault value: Data plot fill color",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "versionsince": "3.8.0",
+        "name": "legendIconBgColor"
+      },
+      {
+        "description": "Sets the legend icon transparency. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconAlpha"
+      },
+      {
+        "description": "Sets the legend icon background transparency. \n\nDefault value: 100",
+        "range": "0 - 100",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconBgAlpha"
+      },
+      {
+        "description": "Sets the number of sides for the legend icon. \n\nDefault value: 4",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconSides"
+      },
+      {
+        "description": "Sets the thickness of the legend icon border. \n\nDefault value: 1",
+        "range": "1-5",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconBorderThickness"
+      },
+      {
+        "description": "Sets the starting angle of for drawing the legend icon. \n\nDefault value: 45",
+        "range": "",
+        "type": "Number",
+        "versionsince": "3.8.0",
+        "name": "legendIconStartAngle"
+      },
+      {
+        "description": "This attribute if set to `0`, the legend box will be center aligned with respect to the entire width of the chart only if the total width of the legend box is more than the canvas width. By default, the legend box is center aligned with respect to the canvas width and it remains the same if the width of the legend box is less than the canvas width.",
+        "range": "0/1",
+        "type": "Boolean",
+        "versionsince": "3.10.0",
+        "name": "alignLegendWithCanvas"
       }
     ],
-    "description": "In a chart, the series name of each dataset shows up in the legend of the chart. If you do not need the legend, you can opt to hide the same. Also, the legend can be placed at the bottom of the chart or to the right of the chart. Using the attributes below, you can configure the functional and cosmetic properties of the legend. "
+    "description": "In multi-series charts, the series name of each dataset shows up in the legend of the chart. If you do not need the legend, you can opt to hide the same. Also, the legend can be placed at the bottom of the chart or to the right of the chart. Using the attributes below, you can configure the functional and cosmetic properties of the legend. "
   },
   {
     "table": "Number Formatting",
