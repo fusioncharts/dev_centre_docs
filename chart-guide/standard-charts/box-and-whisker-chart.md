@@ -558,6 +558,27 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/bes674uc/) to edit the above chart.
 
+### Set Hover Effect of Mean Icon
+
+You can specify the shape (`polygon` or `spoke`) that should be visible when the mean icon is hovered over. Use the `meanIconShape` attribute to do so. Set the number of sides or spokes using the attribute `meanIconSides`.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "meanIconSides": "5",
+        "meanIconShape": "spoke"
+    }
+}
+```
+
+The chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-33.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bes674uc/) to edit the above chart.
+
 ### Draw Mean Connectors
 
 For multiple data plots, you can draw a line to connect the mean values of each data plot. To draw the mean connectors, set the value of `drawMeanConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean for multiple sets of data. The default value of this attribute is `0`.
@@ -1132,7 +1153,7 @@ Refer to the code given below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-32.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wxLrj4yq/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/m0oetzyg/) to edit the above chart.
 
 ### Show Outliers beyond the Range
 
