@@ -854,9 +854,9 @@ Refer to the code given below:
 
 The chart will look like as shown below:
 
-{% embed_chart standard-charts-box-and-whisker-chart-example-25.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-30.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/x5L4fdju/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/rtg8y5em/) to edit the above chart.
 
 ### Draw Standard Deviation Connectors
 
@@ -985,6 +985,26 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/e2zywcqj/) to edit the above chart.
 
+### Position Quartile Deviation Icon Value
+
+In a box and whisker chart, you can position the quartile deviation icon value using the `QDValuePosition` attribute. When you set the value of this attribute to `below`, the quartile deviation value is displayed below the quartile deviation icon instead of the default above.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "QDValuePosition": "below"
+    }
+}
+```
+
+The chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-31.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/y1rjt7z3/) to edit the above chart.
+
 ### Draw Quartile Deviation Connectors
 
 For multiple data plots, you can draw a line to connect the quartile deviation icons of each data plot. To draw the connectors, set the value of `drawQDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the quartile deviation for multiple sets of data. The default value of this attribute is `0`.
@@ -1093,6 +1113,24 @@ Refer to the code given below:
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-27.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wxLrj4yq/) to edit the above chart.
+
+### Position Outlier Icon Value
+
+In a box and whisker chart, you can position the outlier icon value using the `outlierValuePosition` attribute. When you set the value of this attribute to `below`, the outlier value is displayed below the outlier icon instead of the default above.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "outlierValuePosition": "below"
+    }
+}
+```
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-32.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/wxLrj4yq/) to edit the above chart.
 
