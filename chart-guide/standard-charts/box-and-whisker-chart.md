@@ -732,6 +732,27 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/znmLdera/) to edit the above chart.
 
+### Set Hover Effect of Mean Deviation Icon
+
+You can specify the shape (`polygon` or `spoke`) that should be visible when the mean deviation icon is hovered over. Use the `MDIconShape` attribute to do so. Set the number of sides or spokes using the attribute `MDIconSides`.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "MDIconSides": "5",
+        "MDIconShape": "spoke"
+    }
+}
+```
+
+The chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-34.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/vx20mtbn/) to edit the above chart.
+
 ### Draw Mean Deviation Connectors
 
 For multiple data plots, you can draw a line to connect the mean deviation icons of each data plot. To draw the mean connectors, set the value of `drawMDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean deviation for multiple sets of data. The default value of this attribute is `0`.
@@ -876,6 +897,27 @@ Refer to the code given below:
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-30.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/rtg8y5em/) to edit the above chart.
+
+### Set Hover Effect of Standard Deviation Icon
+
+You can specify the shape (`polygon` or `spoke`) that should be visible when the standard deviation icon is hovered over. Use the `SDIconShape` attribute to do so. Set the number of sides or spokes using the attribute `SDIconSides`.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "SDIconSides": "5",
+        "SDIconShape": "spoke"
+    }
+}
+```
+
+The chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-35.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/rtg8y5em/) to edit the above chart.
 
