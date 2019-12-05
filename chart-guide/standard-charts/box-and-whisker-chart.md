@@ -919,7 +919,7 @@ The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-35.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rtg8y5em/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/q0hav4fj/) to edit the above chart.
 
 ### Draw Standard Deviation Connectors
 
@@ -1067,6 +1067,27 @@ The chart will look like as shown below:
 {% embed_chart standard-charts-box-and-whisker-chart-example-31.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/y1rjt7z3/) to edit the above chart.
+
+### Set Hover Effect of Quartile Deviation Icon
+
+You can specify the shape (`polygon` or `spoke`) that should be visible when the quartile deviation icon is hovered over. Use the `QDIconShape` attribute to do so. Set the number of sides or spokes using the attribute `QDIconSides`.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "QDIconSides": "5",
+        "QDIconShape": "spoke"
+    }
+}
+```
+
+The chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-36.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/s8gLhckr/) to edit the above chart.
 
 ### Draw Quartile Deviation Connectors
 
