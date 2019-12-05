@@ -577,7 +577,7 @@ The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-33.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bes674uc/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cw8jvsr9/) to edit the above chart.
 
 ### Draw Mean Connectors
 
