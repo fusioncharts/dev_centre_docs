@@ -1198,8 +1198,20 @@
                     "path": "/chart-guide/standard-charts/treemap"
                   },
                   {
+                    "title": "Sunburst Chart",
+                    "path": "/chart-guide/standard-charts/sunburst-chart"
+                  },
+                  {
                     "title": "Heat Map Chart",
                     "path": "/chart-guide/standard-charts/heat-map-chart"
+                  },
+                  {
+                    "title": "Sankey Diagram",
+                    "path": "/chart-guide/standard-charts/sankey-diagram"
+                  },
+                  {
+                    "title": "Chord Diagram",
+                    "path": "/chart-guide/standard-charts/chord-diagram"
                   },
                   {
                     "title": "Gantt Chart",
@@ -1772,7 +1784,7 @@
             "visibility": false
           },
           {
-            "title": "Upgrade to v3.14.x",
+            "title": "Upgrade to v3.15.x",
             "children": [
               {
                 "title": "Changelog",
@@ -1780,12 +1792,17 @@
               },
               {
                 "title": "Maps Improvement",
-                "path": "/upgrading/maps-improvement/maps-improvement-3-14-0",
+                "path": "/upgrading/maps-improvement/maps-improvement-3-15-0",
                 "visibility": false
               },
               {
                 "title": "Maps Improvement",
                 "path": "/upgrading/maps-improvement/maps-improvement-3-14-1",
+                "visibility": false
+              },
+              {
+                "title": "Maps Improvement",
+                "path": "/upgrading/maps-improvement/maps-improvement-3-14-0",
                 "visibility": false
               },
               {
@@ -1801,6 +1818,10 @@
           {
             "title": "Version History",
             "children": [
+              {
+                "title": "v3.14.x",
+                "path": "/upgrading/version-history/version-3-14-X"
+              },
               {
                 "title": "v3.13.x",
                 "path": "/upgrading/version-history/version-3-13-X"
@@ -1907,6 +1928,10 @@
           {
             "title": "Change Plot Type",
             "path": "/fusiontime/getting-started/change-plot-type-in-fusiontime"
+          },
+          {
+            "title": "Real-Time Data Update",
+            "path": "/fusiontime/getting-started/real-time-data-in-fusiontime"
           },
           {
             "title": "Style Definition",
@@ -2025,6 +2050,10 @@
           {
             "title": "Data Marker",
             "path": "/fusiontime/fusiontime-component/data-markers"
+          },
+          {
+            "title": "Legend",
+            "path": "/fusiontime/fusiontime-component/legend-in-fusiontime"
           },
           {
             "title": "Plot Types",

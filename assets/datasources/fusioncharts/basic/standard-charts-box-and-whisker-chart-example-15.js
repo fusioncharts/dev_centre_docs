@@ -16,8 +16,9 @@
             "sdIconRadius": "5",
             "sdIconSides": "5",
             "sdIconShape": "triangle",
-            "sdIconColor": "ff0000",
-            "sdIconAlpha": "70"
+            "sdIconColor": "#ff000f",
+            "sdIconAlpha": "70",
+            "sdIconBorderColor": "#ff0000"
         },
         "categories": [{
             "category": [{

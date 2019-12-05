@@ -16,8 +16,10 @@
             "meanIconRadius": "5",
             "meanIconSides": "3",
             //"meanIconShape": "triangle",
-            "meanIconColor": "ff0000",
-            "meanIconAlpha": "70"
+            "meanIconColor": "#ffffff",
+            "meanIconAlpha": "70",
+            "meanIconBorderColor": "#ff0000",
+            "showMeanValues": "1"
         },
         "categories": [{
             "category": [{

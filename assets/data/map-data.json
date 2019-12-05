@@ -1070,10 +1070,20 @@
             ]
           },
           {
+            "name": "Italian Provinces Map",
+            "alias": "italyprovince",
+            "specSheet": "/maps/spec-sheets/italyprovince"
+          },
+          {
             "name": "Latvia",
             "alias": "latvia",
             "specSheet": "/maps/spec-sheets/latvia",
             "markerData": "/maps/marker-data/latvia"
+          },
+          {
+            "name": "Latvia Municipalities Map",
+            "alias": "latviamunicipalities",
+            "specSheet": "/maps/spec-sheets/latviamunicipalities"
           },
           {
             "name": "Liechtenstein",
@@ -2608,6 +2618,32 @@
         "specSheet": "/maps/spec-sheets/dominicanrepublic",
         "markerData": "/maps/marker-data/dominicanrepublic"
       },
+      {
+        "name": "Dominican Republic Regions Map",
+        "alias": "dominicanrepublicregions",
+        "specSheet": "/maps/spec-sheets/dominicanrepublicregions"
+      },
+      {
+        "name": "Dominican Republic (Regions)",
+        "marker": false,
+        "members": [
+        {
+          "name": "Cibao",
+          "alias": "cibao",
+          "specSheet": "/maps/spec-sheets/cibao"
+        },
+        {
+          "name": "Este Map",
+          "alias": "este",
+          "specSheet": "/maps/spec-sheets/este"
+        },
+        {
+          "name": "Sur Map",
+          "alias": "sur",
+          "specSheet": "/maps/spec-sheets/sur"
+        }
+      ]
+      },  
       {
         "name": "Dominican Republic (Separate Provinces)",
         "marker": false,
@@ -8163,6 +8199,62 @@
             "markerData": "/maps/marker-data/kyrgyzstan"
           },
           {
+            "name": "Kyrgyzstan Districts Map",
+            "alias": "kyrgyzstandistricts",
+            "specSheet": "/maps/spec-sheets/kyrgyzstandistricts"
+          },
+          {
+            "name": "Kyrgyzstan Districts Map",
+            "marker": false,
+            "members": [
+              {
+                "name": "Batken Map",
+                "alias": "batken",
+                "specSheet": "/maps/spec-sheets/batken"
+              },
+              {
+                "name": "BishkekCity Map",
+                "alias": "bishkekcity",
+                "specSheet": "/maps/spec-sheets/bishkekcity"
+              },
+              {
+                "name": "Chuy Map",
+                "alias": "chuy",
+                "specSheet": "/maps/spec-sheets/chuy"
+              },
+              {
+                "name": "IssykKul Map",
+                "alias": "issykkul",
+                "specSheet": "/maps/spec-sheets/issykkul"
+              },
+              {
+                "name": "JalalAbad Map",
+                "alias": "jalalabad",
+                "specSheet": "maps/jalalabad"
+              },
+              {
+                "name": "Naryn Map",
+                "alias": "naryn",
+                "specSheet": "/maps/spec-sheets/naryn"
+              },
+              {
+                "name": "Osh Map",
+                "alias": "osh",
+                "specSheet": "/maps/spec-sheets/osh"
+              },
+              {
+                "name": "OshCity Map",
+                "alias": "oshcity",
+                "specSheet": "/maps/spec-sheets/oshcity"
+              },
+              {
+                "name": "Talas Map",
+                "alias": "talas",
+                "specSheet": "/maps/spec-sheets/talas"
+              }
+            ]
+          }, 
+          {
             "name": "Lebanon",
             "alias": "lebanon",
             "specSheet": "/maps/spec-sheets/lebanon",
@@ -9981,6 +10073,11 @@
             "alias": "sierraleone",
             "specSheet": "/maps/spec-sheets/sierraleone",
             "markerData": "/maps/marker-data/sierraleone"
+          },
+          {
+            "name": "SierraLeoneProvinces Map",
+            "alias": "sierraleoneprovinces",
+            "specSheet": "/maps/spec-sheets/sierraleoneprovinces"
           },
           {
             "name": "Somalia",

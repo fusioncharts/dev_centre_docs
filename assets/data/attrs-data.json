@@ -42,6 +42,13 @@
 		"xls": true
 	},
 	{
+		"name": "Chord",
+		"json": "Chord",
+		"code": "xt-attr-chord.js",
+		"alias": "chord",
+		"xls": false
+	},
+	{
 		"name": "Column 2D",
 		"json": "Column2D",
 		"code": "xt-attr-column2d.js",
@@ -469,6 +476,13 @@
 		"xls": false
 	},
 	{
+		"name": "Sankey Diagram",
+		"json": "Sankey",
+		"code": "xt-attr-sankey.js",
+		"alias": "sankey",
+		"xls": true
+	},
+	{
 		"name": "Scatter Chart",
 		"json": "Scatter",
 		"code": "xt-attr-scatter.js",
@@ -662,6 +676,13 @@
 		"json": "MSStepLine",
 		"code": "xt-attr-msstepline.js",
 		"alias": "msstepline",
+		"xls": false
+	},
+	{
+		"name": "Sunburst",
+		"json": "SunBurst",
+		"code": "xt-attr-sunburst.js",
+		"alias": "sunburst",
 		"xls": false
 	},
 	{
