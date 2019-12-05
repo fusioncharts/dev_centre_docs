@@ -1214,9 +1214,32 @@ Refer to the code given below:
 }
 ```
 
+The chart looks like as shown below:
+
 {% embed_chart standard-charts-box-and-whisker-chart-example-32.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/m0oetzyg/) to edit the above chart.
+
+### Set Hover Effect of Outlier Icon
+
+You can specify the shape (`polygon` or `spoke`) that should be visible when the outlier icon is hovered over. Use the `outlierIconShape` attribute to do so. Set the number of sides or spokes using the attribute `outlierIconSides`.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "outlierIconSides": "5",
+        "outlierIconShape": "spoke"
+    }
+}
+```
+
+The chart looks like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-37.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/td27vynh/) to edit the above chart.
 
 ### Show Outliers beyond the Range
 
