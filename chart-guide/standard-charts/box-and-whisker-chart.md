@@ -149,7 +149,6 @@ Refer to the code given below:
         }
     ]
 }
-
 ```
 
 The box and whisker chart looks like:
