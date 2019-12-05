@@ -709,7 +709,7 @@ The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-29.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xy8tdk0j/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/znmLdera/) to edit the above chart.
 
 ### Draw Mean Deviation Connectors
 
@@ -831,6 +831,26 @@ Refer to the code given below:
 ```
 
 > When the above attribute is enabled, the chart will always display the corresponding value, even if the attributes `showValue` or `showValues` is disabled or enabled.
+
+The chart will look like as shown below:
+
+{% embed_chart standard-charts-box-and-whisker-chart-example-25.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/x5L4fdju/) to edit the above chart.
+
+### Position Standard Deviation Icon Value
+
+In a box and whisker chart, you can position the standard deviation icon value using the `SDValuePosition` attribute. When you set the value of this attribute to `below`, the standard deviation value is displayed below the standard deviation icon instead of the default above.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "SDValuePosition": "below"
+    }
+}
+```
 
 The chart will look like as shown below:
 
