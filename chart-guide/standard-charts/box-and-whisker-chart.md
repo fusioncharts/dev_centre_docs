@@ -158,6 +158,14 @@ The box and whisker chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/qLvZF/) to edit the box and whisker chart.
 
+## Specifying Pre-processed Data
+
+FusionCharts v3.15.0 onwards, you can also specify pre-processed data to a box and whisker chart, instead of the value array you provided earlier. Instead, you can directly provide values of specific functions like `min`, `q1`, `median`, `q3`, and `max`, to draw a box and whisker plot. Specifying the values can reduce the number of calculations happening in the chart, and speed up rendering.
+
+> If you explicitly mention `min`, `max`, `q1`, `q3`, and `median` along with the value array, then the value array will be ignored.
+
+If you want to explicitly provide the data through the above attributes, you need to specify all of `min`, `max`, `q1`, `q3`, and `median` values.
+
 ## Add Legends to the chart
 
 FusionCharts Suite XT supports `legend` for the box and whisker chart. Legend allows you to display single color icons for numeric numbers.
@@ -1282,25 +1290,3 @@ A box and whisker chart with a scroll bar looks like as shown below:
 {% embed_chart standard-charts-box-and-whisker-chart-example-23.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/2h8uj470/) to edit the above chart.
-
-## Specifying Pre-processed Data
-
-FusionCharts v3.15.0 onwards, you can also specify pre-processed data to a box and whisker chart, instead of the value array you provided earlier. Instead, you can directly provide values of specific functions like `min`, `q1`, `median`, `q3`, and `max`, to draw a box and whisker plot. Specifying the values can reduce the number of calculations happening in the chart, and speed up rendering.
-
-> You also need to provide specific values like `mean`, `md`, `sd`, `qd`, and `outlier` to draw the respective markers.
-
-You can specify the following attributes directly within the `data` object:
-
-- `min`
-- `q1`
-- `median`
-- `q3`
-- `max`
-- `mean`
-- `md`
-- `sd`
-- `outlier`
-
-If you want to explicitly provide the data through the above attributes, you need to specify all of `min`, `max`, `q1`, `q3`, and `median` values. If you avoid mentioning any of these, it will result in a null plot. You can also mention `mean`, `sd`, `qd`, `md`, or `outlier`, to display it in the plot. Unless you mention them, you will not be able to assign attributes related to them. For instance, if you do not provide `sd`, you will not be able to `showMD`, `showMDValue`, etc.
-
-> If you explicitly mention `min`, `max`, `q1`, `q3`, and `median` along with the value array, then the value array will be ignored.
