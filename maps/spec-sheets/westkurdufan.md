@@ -9,6 +9,6 @@ Dimensions (Width x Height): 563x500
 
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-SD.WK.WK|WK|West Kurdufan
+| ID       | Short label | Label         |
+| -------- | ----------- | ------------- |
+| SD.WK.WK | WK          | West Kurdufan |

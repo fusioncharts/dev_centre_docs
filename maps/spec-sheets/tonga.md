@@ -4,19 +4,15 @@
 
 #### JavaScript Alias: maps/tonga
 
-Map Name: Tonga
-Dimensions (Width x Height): 200x530
-
-
-
-
+Map Name: Tonga Map
+Dimensions (Width x Height): 440x590
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
-TO.EU|EU|'Eua
-TO.HA|HA|Ha'apai
 TO.TT|TT|Tongatapu
 TO.VA|VA|Vava'u
-
+TO.HA|HA|Ha'apai
+TO.EU|EU|'Eua
+TO.ON|ON|Ongo Niua
