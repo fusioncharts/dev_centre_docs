@@ -14,6 +14,8 @@ heading: Release Notes
 
 - You can now set variable heights to different canvases in a multivariate chart.
 
+- You can now use the `height` property of the `navigator` object to assign a custom height to the time navigator.
+
 - FusionTime 2.0 onwards, you can render charts with the [legend](/fusiontime/fusiontime-component/legend-in-fusiontime) initially hidden, using the newly introduced attribute `initiallyHidden`.
 
 - You can now use the attribute `applyCSSTransform` to modify CSS files for charts in FusionTime.
