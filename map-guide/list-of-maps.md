@@ -494,115 +494,81 @@ To render these maps, you need to download the map definition files from [here](
 
 ## Africa
 
-| Chart Type                                                                         | JavaScript Alias                    |
-| ---------------------------------------------------------------------------------- | ----------------------------------- |
-| [Algeria](/maps/spec-sheets/algeria)                                               | maps/algeria                        |
-| [Angola](/maps/spec-sheets/angola)                                                 | maps/angola                         |
-| [Benin](/maps/spec-sheets/benin)                                                   | maps/benin                          |
-| [Botswana](/maps/spec-sheets/botswana)                                             | maps/botswana                       |
-| [Burkina Faso](/maps/spec-sheets/burkinafaso)                                      | maps/burkinafaso                    |
-| [Burundi](/maps/spec-sheets/burundi)                                               | maps/burundi                        |
-| [Cameroon](/maps/spec-sheets/cameroon)                                             | maps/cameroon                       |
-| [Adamawa](/maps/spec-sheets/adamawa)                                               | maps/adamawa                        |
-| [Central Cameroon](/maps/spec-sheets/centralcameroon)                              | maps/centralcameroon                |
-| [East Cameroon](/maps/spec-sheets/eastcameroon)                                    | maps/eastcameroon                   |
-| [Far North Cameroon](/maps/spec-sheets/farnorthcameroon)                           | maps/farnorthcameroon               |
-| [Littoral Cameroon](/maps/spec-sheets/littoralcameroon)                            | maps/littoralcameroon               |
-| [North Cameroon](/maps/spec-sheets/northcameroon)                                  | maps/northcameroon                  |
-| [Northwest Cameroon](/maps/spec-sheets/northwestcameroon)                          | maps/northwestcameroon              |
-| [West Cameroon](/maps/spec-sheets/westcameroon)                                    | maps/westcameroon                   |
-| [South Cameroon](/maps/spec-sheets/southcameroon)                                  | maps/southcameroon                  |
-| [Southwest Cameroon](/maps/spec-sheets/southwestcameroon)                          | maps/southwestcameroon              |
-| [Cape Verde](/maps/spec-sheets/capeverde)                                          | maps/capeverde                      |
-| [Central African Republic](/maps/spec-sheets/centralafricanrepublic)               | maps/centralafricanrepublic         |
-| [Chad](/maps/spec-sheets/chad)                                                     | maps/chad                           |
-| [Comoros](/maps/spec-sheets/comoros)                                               | maps/comoros                        |
-| [Congo](/maps/spec-sheets/congo)                                                   | maps/congo                          |
-| [Cote Divoire](/maps/spec-sheets/cotedivoire)                                      | maps/cotedivoire                    |
-| [Democratic Republic of the Congo](/maps/spec-sheets/democraticrepublicofcongo)    | maps/democraticrepublicofcongo      |
-| [Djibouti](/maps/spec-sheets/djibouti)                                             | maps/djibouti                       |
-| [Egypt](/maps/spec-sheets/egypt)                                                   | maps/egypt                          |
-| [Equatorial Guinea](/maps/spec-sheets/equatorialguinea)                            | maps/equatorialguinea               |
-| [Eritrea](/maps/spec-sheets/eritrea)                                               | maps/eritrea                        |
-| [Ethiopia](/maps/spec-sheets/ethiopia)                                             | maps/ethiopia                       |
-| [Gabon](/maps/spec-sheets/gabon)                                                   | maps/gabon                          |
-| [Gambia](/maps/spec-sheets/gambia)                                                 | maps/gambia                         |
-| [Ghana](/maps/spec-sheets/ghana)                                                   | maps/ghana                          |
-| [Guinea](/maps/spec-sheets/guinea)                                                 | maps/guinea                         |
-| [Guinea-Bissau](/maps/spec-sheets/guineabissau)                                    | maps/guineabissau                   |
-| [Ivory Coast](/maps/spec-sheets/ivorycoastregions)                                 | maps/ivorycoastregions              |
-| [AbidjanAutonomousDistrict](/maps/spec-sheets/abidjanautonomousdistrict)           | maps/abidjanautonomousdistrict      |
-| [AgnebyTiassa](/maps/spec-sheets/agnebytiassa)                                     | maps/agnebytiassa                   |
-| [Bafing](/maps/spec-sheets/bafing)                                                 | maps/bafing                         |
-| [Bagoue](/maps/spec-sheets/bagoue)                                                 | maps/bagoue                         |
-| [Belier](/maps/spec-sheets/belier)                                                 | maps/belier                         |
-| [Bere](/maps/spec-sheets/bere)                                                     | maps/bere                           |
-| [Bounkani](/maps/spec-sheets/bounkani)                                             | maps/bounkani                       |
-| [Cavally](/maps/spec-sheets/cavally)                                               | maps/cavally                        |
-| [Folon](/maps/spec-sheets/folon)                                                   | maps/folon                          |
-| [Gbeke](/maps/spec-sheets/gbeke)                                                   | maps/gbeke                          |
-| [Gbokle](/maps/spec-sheets/gbokle)                                                 | maps/gbokle                         |
-| [Goh](/maps/spec-sheets/goh)                                                       | maps/goh                            |
-| [Gontougo](/maps/spec-sheets/gontougo)                                             | maps/gontougo                       |
-| [GrandsPonts](/maps/spec-sheets/grandsponts)                                       | maps/grandsponts                    |
-| [Guemon](/maps/spec-sheets/guemon)                                                 | maps/guemon                         |
-| [Hambol](/maps/spec-sheets/hambol)                                                 | maps/hambol                         |
-| [HautSassandra](/maps/spec-sheets/hautsassandra)                                   | maps/hautsassandra                  |
-| [Iffou](/maps/spec-sheets/iffou)                                                   | maps/iffou                          |
-| [IndenieDjuablin](/maps/spec-sheets/indeniedjuablin)                               | maps/indeniedjuablin                |
-| [Kabadougou](/maps/spec-sheets/kabadougou)                                         | maps/kabadougou                     |
-| [LaMe](/maps/spec-sheets/lame)                                                     | maps/lame                           |
-| [LohDjiboua](/maps/spec-sheets/lohdjiboua)                                         | maps/lohdjiboua                     |
-| [Marahoue](/maps/spec-sheets/marahoue)                                             | maps/marahoue                       |
-| [Moronou](/maps/spec-sheets/moronou)                                               | maps/moronou                        |
-| [NZi](/maps/spec-sheets/nzi)                                                       | maps/nzi                            |
-| [Nawa](/maps/spec-sheets/nawa)                                                     | maps/nawa                           |
-| [Poro](/maps/spec-sheets/poro)                                                     | maps/poro                           |
-| [SanPedro](/maps/spec-sheets/sanpedro)                                             | maps/sanpedro                       |
-| [SudComoe](/maps/spec-sheets/sudcomoe)                                             | maps/sudcomoe                       |
-| [Tchologo](/maps/spec-sheets/tchologo)                                             | maps/tchologo                       |
-| [Tonkpi](/maps/spec-sheets/tonkpi)                                                 | maps/tonkpi                         |
-| [Worodougou](/maps/spec-sheets/worodougou)                                         | maps/worodougou                     |
-| [YamoussoukroAutonomousDistrict](/maps/spec-sheets/yamoussoukroautonomousdistrict) | maps/yamoussoukroautonomousdistrict |
-| [Kenya](/maps/spec-sheets/kenya)                                                   | maps/kenya                          |
-| [Kenya Counties](/maps/spec-sheets/kenyacounties)                                  | maps/kenyacounties                  |
-| [Kenya Province](/maps/spec-sheets/kenya)                                          | maps/kenya                          |
-| [Lesotho](/maps/spec-sheets/lesotho)                                               | maps/lesotho                        |
-| [Liberia](/maps/spec-sheets/liberia)                                               | maps/liberia                        |
-| [Libya](/maps/spec-sheets/libya)                                                   | maps/libya                          |
-| [Madagascar](/maps/spec-sheets/madagascar)                                         | maps/madagascar                     |
-| [Madagascar (Regions)](/maps/spec-sheets/madagascarregions)                        | madagascarregions                   |
-| [Malawi](/maps/spec-sheets/malawi)                                                 | maps/malawi                         |
-| [Mali](/maps/spec-sheets/mali)                                                     | maps/mali                           |
-| [Mauritania](/maps/spec-sheets/mauritania)                                         | maps/mauritania                     |
-| [Mauritius](/maps/spec-sheets/mauritius)                                           | maps/mauritius                      |
-| [Morocco](/maps/spec-sheets/morocco)                                               | maps/morocco                        |
-| [Mozambique](/maps/spec-sheets/mozambique)                                         | maps/mozambique                     |
-| [Namibia](/maps/spec-sheets/namibia)                                               | maps/namibia                        |
-| [Niger](/maps/spec-sheets/niger)                                                   | maps/niger                          |
-| [Nigeria](/maps/spec-sheets/nigeria)                                               | maps/nigeria                        |
-| [Rwanda](/maps/spec-sheets/rwanda)                                                 | maps/rwanda                         |
-| [Sao Tome and Principe](/maps/spec-sheets/saotomeandprincipe)                      | maps/saotomeandprincipe             |
-| [Senegal](/maps/spec-sheets/senegal)                                               | maps/senegal                        |
-| [Seychelles](/maps/spec-sheets/seychelles)                                         | maps/seychelles                     |
-| [Sierra Leone](/maps/spec-sheets/sierraleone)                                      | maps/sierraleone                    |
-| [Somalia](/maps/spec-sheets/somalia)                                               | maps/somalia                        |
-| [South Africa](/maps/spec-sheets/southafrica)                                      | maps/southafrica                    |
-| [South Sudan](/maps/spec-sheets/southsudan)                                        | maps/southsudan                     |
-| [Sudan](/maps/spec-sheets/sudan)                                                   | maps/sudan                          |
-| [Sudan Wo South Sudan](/maps/spec-sheets/sudanwosouthsudan)                        | maps/sudanwosouthsudan              |
-| [Swaziland](/maps/spec-sheets/swaziland)                                           | maps/swaziland                      |
-| [Tanzania](/maps/spec-sheets/tanzania)                                             | maps/tanzania                       |
-| [Togo](/maps/spec-sheets/togo)                                                     | maps/togo                           |
-| [Tunisia](/maps/spec-sheets/tunisia)                                               | maps/tunisia                        |
-| [Uganda](/maps/spec-sheets/uganda)                                                 | maps/uganda                         |
-| [Central Uganda](/maps/spec-sheets/centraluganda)                                  | maps/centraluganda                  |
-| [Northern Uganda](/maps/spec-sheets/northernuganda)                                | maps/northernuganda                 |
-| [Eastern Uganda](/maps/spec-sheets/easternuganda)                                  | maps/easternuganda                  |
-| [Southern Uganda](/maps/spec-sheets/southernuganda)                                | maps/southernuganda                 |
-| [Western Sahara](/maps/spec-sheets/westernsahara)                                  | maps/westernsahara                  |
-| [Zambia](/maps/spec-sheets/zambia)                                                 | maps/zambia                         |
-| [Zimbabwe](/maps/spec-sheets/zimbabwe)                                             | maps/zimbabwe                       |
+| Chart Type                                                                      | JavaScript Alias               |
+| ------------------------------------------------------------------------------- | ------------------------------ |
+| [Algeria](/maps/spec-sheets/algeria)                                            | maps/algeria                   |
+| [Angola](/maps/spec-sheets/angola)                                              | maps/angola                    |
+| [Benin](/maps/spec-sheets/benin)                                                | maps/benin                     |
+| [Botswana](/maps/spec-sheets/botswana)                                          | maps/botswana                  |
+| [Burkina Faso](/maps/spec-sheets/burkinafaso)                                   | maps/burkinafaso               |
+| [Burundi](/maps/spec-sheets/burundi)                                            | maps/burundi                   |
+| [Cameroon](/maps/spec-sheets/cameroon)                                          | maps/cameroon                  |
+| [Adamawa](/maps/spec-sheets/adamawa)                                            | maps/adamawa                   |
+| [Central Cameroon](/maps/spec-sheets/centralcameroon)                           | maps/centralcameroon           |
+| [East Cameroon](/maps/spec-sheets/eastcameroon)                                 | maps/eastcameroon              |
+| [Far North Cameroon](/maps/spec-sheets/farnorthcameroon)                        | maps/farnorthcameroon          |
+| [Littoral Cameroon](/maps/spec-sheets/littoralcameroon)                         | maps/littoralcameroon          |
+| [North Cameroon](/maps/spec-sheets/northcameroon)                               | maps/northcameroon             |
+| [Northwest Cameroon](/maps/spec-sheets/northwestcameroon)                       | maps/northwestcameroon         |
+| [West Cameroon](/maps/spec-sheets/westcameroon)                                 | maps/westcameroon              |
+| [South Cameroon](/maps/spec-sheets/southcameroon)                               | maps/southcameroon             |
+| [Southwest Cameroon](/maps/spec-sheets/southwestcameroon)                       | maps/southwestcameroon         |
+| [Cape Verde](/maps/spec-sheets/capeverde)                                       | maps/capeverde                 |
+| [Central African Republic](/maps/spec-sheets/centralafricanrepublic)            | maps/centralafricanrepublic    |
+| [Chad](/maps/spec-sheets/chad)                                                  | maps/chad                      |
+| [Comoros](/maps/spec-sheets/comoros)                                            | maps/comoros                   |
+| [Congo](/maps/spec-sheets/congo)                                                | maps/congo                     |
+| [Cote Divoire](/maps/spec-sheets/cotedivoire)                                   | maps/cotedivoire               |
+| [Democratic Republic of the Congo](/maps/spec-sheets/democraticrepublicofcongo) | maps/democraticrepublicofcongo |
+| [Djibouti](/maps/spec-sheets/djibouti)                                          | maps/djibouti                  |
+| [Egypt](/maps/spec-sheets/egypt)                                                | maps/egypt                     |
+| [Equatorial Guinea](/maps/spec-sheets/equatorialguinea)                         | maps/equatorialguinea          |
+| [Eritrea](/maps/spec-sheets/eritrea)                                            | maps/eritrea                   |
+| [Ethiopia](/maps/spec-sheets/ethiopia)                                          | maps/ethiopia                  |
+| [Gabon](/maps/spec-sheets/gabon)                                                | maps/gabon                     |
+| [Gambia](/maps/spec-sheets/gambia)                                              | maps/gambia                    |
+| [Ghana](/maps/spec-sheets/ghana)                                                | maps/ghana                     |
+| [Guinea](/maps/spec-sheets/guinea)                                              | maps/guinea                    |
+| [Guinea-Bissau](/maps/spec-sheets/guineabissau)                                 | maps/guineabissau              |
+| [Kenya](/maps/spec-sheets/kenya)                                                | maps/kenya                     |
+| [Kenya Counties](/maps/spec-sheets/kenyacounties)                               | maps/kenyacounties             |
+| [Kenya Province](/maps/spec-sheets/kenya)                                       | maps/kenya                     |
+| [Lesotho](/maps/spec-sheets/lesotho)                                            | maps/lesotho                   |
+| [Liberia](/maps/spec-sheets/liberia)                                            | maps/liberia                   |
+| [Libya](/maps/spec-sheets/libya)                                                | maps/libya                     |
+| [Madagascar](/maps/spec-sheets/madagascar)                                      | maps/madagascar                |
+| [Madagascar (Regions)](/maps/spec-sheets/madagascarregions)                     | madagascarregions              |
+| [Malawi](/maps/spec-sheets/malawi)                                              | maps/malawi                    |
+| [Mali](/maps/spec-sheets/mali)                                                  | maps/mali                      |
+| [Mauritania](/maps/spec-sheets/mauritania)                                      | maps/mauritania                |
+| [Mauritius](/maps/spec-sheets/mauritius)                                        | maps/mauritius                 |
+| [Morocco](/maps/spec-sheets/morocco)                                            | maps/morocco                   |
+| [Mozambique](/maps/spec-sheets/mozambique)                                      | maps/mozambique                |
+| [Namibia](/maps/spec-sheets/namibia)                                            | maps/namibia                   |
+| [Niger](/maps/spec-sheets/niger)                                                | maps/niger                     |
+| [Nigeria](/maps/spec-sheets/nigeria)                                            | maps/nigeria                   |
+| [Rwanda](/maps/spec-sheets/rwanda)                                              | maps/rwanda                    |
+| [Sao Tome and Principe](/maps/spec-sheets/saotomeandprincipe)                   | maps/saotomeandprincipe        |
+| [Senegal](/maps/spec-sheets/senegal)                                            | maps/senegal                   |
+| [Seychelles](/maps/spec-sheets/seychelles)                                      | maps/seychelles                |
+| [Sierra Leone](/maps/spec-sheets/sierraleone)                                   | maps/sierraleone               |
+| [Somalia](/maps/spec-sheets/somalia)                                            | maps/somalia                   |
+| [South Africa](/maps/spec-sheets/southafrica)                                   | maps/southafrica               |
+| [South Sudan](/maps/spec-sheets/southsudan)                                     | maps/southsudan                |
+| [Sudan](/maps/spec-sheets/sudan)                                                | maps/sudan                     |
+| [Sudan Wo South Sudan](/maps/spec-sheets/sudanwosouthsudan)                     | maps/sudanwosouthsudan         |
+| [Swaziland](/maps/spec-sheets/swaziland)                                        | maps/swaziland                 |
+| [Tanzania](/maps/spec-sheets/tanzania)                                          | maps/tanzania                  |
+| [Togo](/maps/spec-sheets/togo)                                                  | maps/togo                      |
+| [Tunisia](/maps/spec-sheets/tunisia)                                            | maps/tunisia                   |
+| [Uganda](/maps/spec-sheets/uganda)                                              | maps/uganda                    |
+| [Central Uganda](/maps/spec-sheets/centraluganda)                               | maps/centraluganda             |
+| [Northern Uganda](/maps/spec-sheets/northernuganda)                             | maps/northernuganda            |
+| [Eastern Uganda](/maps/spec-sheets/easternuganda)                               | maps/easternuganda             |
+| [Southern Uganda](/maps/spec-sheets/southernuganda)                             | maps/southernuganda            |
+| [Western Sahara](/maps/spec-sheets/westernsahara)                               | maps/westernsahara             |
+| [Zambia](/maps/spec-sheets/zambia)                                              | maps/zambia                    |
+| [Zimbabwe](/maps/spec-sheets/zimbabwe)                                          | maps/zimbabwe                  |
 
 ## Europe
 
@@ -1237,37 +1203,71 @@ To render these maps, you need to download the map definition files from [here](
 
 ### Egypt Maps
 
-| Chart Type                                      | JavaScript Alias  |
-| ----------------------------------------------- | ----------------- |
-| [6th October](/maps/spec-sheets/sixoctober)     | maps/sixoctober   |
-| [Al-minya](/maps/spec-sheets/alminya)           | maps/alminya      |
-| [Asyut](/maps/spec-sheets/asyut)                | maps/asyut        |
-| [Aswan](/maps/spec-sheets/aswan)                | maps/aswan        |
-| [Alexandria](/maps/spec-sheets/alexandria)      | maps/alexandria   |
-| [Bahera](/maps/spec-sheets/bahera)              | maps/bahera       |
-| [Bani-swaif](/maps/spec-sheets/baniswaif)       | maps/baniswaif    |
-| [Cairo](/maps/spec-sheets/cairo)                | maps/cairo        |
-| [Daqahliya](/maps/spec-sheets/daqahliya)        | maps/daqahliya    |
-| [Domyat](/maps/spec-sheets/domyat)              | maps/domyat       |
-| [Fayoum](/maps/spec-sheets/fayoum)              | maps/fayoum       |
-| [Gharbiya](/maps/spec-sheets/gharbiya)          | maps/gharbiya     |
-| [Giza](/maps/spec-sheets/giza)                  | maps/giza         |
-| [Helwan](/maps/spec-sheets/helwan)              | maps/helwan       |
-| [Ismailia](/maps/spec-sheets/ismailia)          | maps/ismailia     |
-| [Kafr-Alsheikh](/maps/spec-sheets/kafralsheikh) | maps/kafralsheikh |
-| [Luxer](/maps/spec-sheets/luxer)                | maps/luxer        |
-| [Matrouh](/maps/spec-sheets/matrouh)            | maps/matrouh      |
-| [Monofiya](/maps/spec-sheets/monofiya)          | maps/monofiya     |
-| [North Sinai](/maps/spec-sheets/northsinai)     | maps/northsinai   |
-| [Port Said](/maps/spec-sheets/portsaid)         | maps/portsaid     |
-| [Qalyoubiya](/maps/spec-sheets/qalyoubiya)      | maps/qalyoubiya   |
-| [Qina](/maps/spec-sheets/qina)                  | maps/qina         |
-| [Red Sea](/maps/spec-sheets/redsea)             | maps/redsea       |
-| [Al-sharqeyah](/maps/spec-sheets/alsharqeyah)   | maps/alsharqeyah  |
-| [South Sinai](/maps/spec-sheets/southsinai)     | maps/southsinai   |
-| [Suhaj](/maps/spec-sheets/suhaj)                | maps/suhaj        |
-| [Suez](/maps/spec-sheets/suez)                  | maps/suez         |
-| [Wady Gadid](/maps/spec-sheets/wadygadid)       | maps/wadygadid    |
+| Chart Type                                                                         | JavaScript Alias                    |
+| ---------------------------------------------------------------------------------- | ----------------------------------- |
+| [6th October](/maps/spec-sheets/sixoctober)                                        | maps/sixoctober                     |
+| [Al-minya](/maps/spec-sheets/alminya)                                              | maps/alminya                        |
+| [Asyut](/maps/spec-sheets/asyut)                                                   | maps/asyut                          |
+| [Aswan](/maps/spec-sheets/aswan)                                                   | maps/aswan                          |
+| [Alexandria](/maps/spec-sheets/alexandria)                                         | maps/alexandria                     |
+| [Bahera](/maps/spec-sheets/bahera)                                                 | maps/bahera                         |
+| [Bani-swaif](/maps/spec-sheets/baniswaif)                                          | maps/baniswaif                      |
+| [Cairo](/maps/spec-sheets/cairo)                                                   | maps/cairo                          |
+| [Daqahliya](/maps/spec-sheets/daqahliya)                                           | maps/daqahliya                      |
+| [Domyat](/maps/spec-sheets/domyat)                                                 | maps/domyat                         |
+| [Fayoum](/maps/spec-sheets/fayoum)                                                 | maps/fayoum                         |
+| [Gharbiya](/maps/spec-sheets/gharbiya)                                             | maps/gharbiya                       |
+| [Giza](/maps/spec-sheets/giza)                                                     | maps/giza                           |
+| [Helwan](/maps/spec-sheets/helwan)                                                 | maps/helwan                         |
+| [Ismailia](/maps/spec-sheets/ismailia)                                             | maps/ismailia                       |
+| [Kafr-Alsheikh](/maps/spec-sheets/kafralsheikh)                                    | maps/kafralsheikh                   |
+| [Luxer](/maps/spec-sheets/luxer)                                                   | maps/luxer                          |
+| [Matrouh](/maps/spec-sheets/matrouh)                                               | maps/matrouh                        |
+| [Monofiya](/maps/spec-sheets/monofiya)                                             | maps/monofiya                       |
+| [North Sinai](/maps/spec-sheets/northsinai)                                        | maps/northsinai                     |
+| [Port Said](/maps/spec-sheets/portsaid)                                            | maps/portsaid                       |
+| [Qalyoubiya](/maps/spec-sheets/qalyoubiya)                                         | maps/qalyoubiya                     |
+| [Qina](/maps/spec-sheets/qina)                                                     | maps/qina                           |
+| [Red Sea](/maps/spec-sheets/redsea)                                                | maps/redsea                         |
+| [Al-sharqeyah](/maps/spec-sheets/alsharqeyah)                                      | maps/alsharqeyah                    |
+| [South Sinai](/maps/spec-sheets/southsinai)                                        | maps/southsinai                     |
+| [Suhaj](/maps/spec-sheets/suhaj)                                                   | maps/suhaj                          |
+| [Suez](/maps/spec-sheets/suez)                                                     | maps/suez                           |
+| [Wady Gadid](/maps/spec-sheets/wadygadid)                                          | maps/wadygadid                      |
+| [Ivory Coast](/maps/spec-sheets/ivorycoastregions)                                 | maps/ivorycoastregions              |
+| [AbidjanAutonomousDistrict](/maps/spec-sheets/abidjanautonomousdistrict)           | maps/abidjanautonomousdistrict      |
+| [AgnebyTiassa](/maps/spec-sheets/agnebytiassa)                                     | maps/agnebytiassa                   |
+| [Bafing](/maps/spec-sheets/bafing)                                                 | maps/bafing                         |
+| [Bagoue](/maps/spec-sheets/bagoue)                                                 | maps/bagoue                         |
+| [Belier](/maps/spec-sheets/belier)                                                 | maps/belier                         |
+| [Bere](/maps/spec-sheets/bere)                                                     | maps/bere                           |
+| [Bounkani](/maps/spec-sheets/bounkani)                                             | maps/bounkani                       |
+| [Cavally](/maps/spec-sheets/cavally)                                               | maps/cavally                        |
+| [Folon](/maps/spec-sheets/folon)                                                   | maps/folon                          |
+| [Gbeke](/maps/spec-sheets/gbeke)                                                   | maps/gbeke                          |
+| [Gbokle](/maps/spec-sheets/gbokle)                                                 | maps/gbokle                         |
+| [Goh](/maps/spec-sheets/goh)                                                       | maps/goh                            |
+| [Gontougo](/maps/spec-sheets/gontougo)                                             | maps/gontougo                       |
+| [GrandsPonts](/maps/spec-sheets/grandsponts)                                       | maps/grandsponts                    |
+| [Guemon](/maps/spec-sheets/guemon)                                                 | maps/guemon                         |
+| [Hambol](/maps/spec-sheets/hambol)                                                 | maps/hambol                         |
+| [HautSassandra](/maps/spec-sheets/hautsassandra)                                   | maps/hautsassandra                  |
+| [Iffou](/maps/spec-sheets/iffou)                                                   | maps/iffou                          |
+| [IndenieDjuablin](/maps/spec-sheets/indeniedjuablin)                               | maps/indeniedjuablin                |
+| [Kabadougou](/maps/spec-sheets/kabadougou)                                         | maps/kabadougou                     |
+| [LaMe](/maps/spec-sheets/lame)                                                     | maps/lame                           |
+| [LohDjiboua](/maps/spec-sheets/lohdjiboua)                                         | maps/lohdjiboua                     |
+| [Marahoue](/maps/spec-sheets/marahoue)                                             | maps/marahoue                       |
+| [Moronou](/maps/spec-sheets/moronou)                                               | maps/moronou                        |
+| [NZi](/maps/spec-sheets/nzi)                                                       | maps/nzi                            |
+| [Nawa](/maps/spec-sheets/nawa)                                                     | maps/nawa                           |
+| [Poro](/maps/spec-sheets/poro)                                                     | maps/poro                           |
+| [SanPedro](/maps/spec-sheets/sanpedro)                                             | maps/sanpedro                       |
+| [SudComoe](/maps/spec-sheets/sudcomoe)                                             | maps/sudcomoe                       |
+| [Tchologo](/maps/spec-sheets/tchologo)                                             | maps/tchologo                       |
+| [Tonkpi](/maps/spec-sheets/tonkpi)                                                 | maps/tonkpi                         |
+| [Worodougou](/maps/spec-sheets/worodougou)                                         | maps/worodougou                     |
+| [YamoussoukroAutonomousDistrict](/maps/spec-sheets/yamoussoukroautonomousdistrict) | maps/yamoussoukroautonomousdistrict |
 
 ## Oceania
 

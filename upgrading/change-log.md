@@ -4,6 +4,14 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.15.x
 ---
 
+<h2 class="sub-heading">Version 3.15.0-sr.1</h2>
+
+<p class="release-date">6th December, 2019</p>
+
+<h4>Fixes</h4>
+
+- The APIs `getJSONData()` and `getXMLData()` now work properly in Sunburst charts. Previously, these were erroneously returning nested objects, such as subcategories along with categories.
+
 <h2 class="sub-heading">Version 3.15.0</h2>
 
 <p class="release-date">5th December, 2019</p>
@@ -26,7 +34,7 @@ heading: Version 3.15.x
 
   - Provide summarised values to a box and whisker plot.
 
-### Improvements
+<h4>Improvements</h4>
 
 - In Treemap, the attribute `navigationBarHeight` can now be used to control the height of the navigation bar of the chart after drill down.
 
@@ -76,7 +84,7 @@ heading: Version 3.15.x
 
 - In this version, 31 core map files have been updated. Click [here](/upgrading/maps-improvement/maps-improvement-3-15-0) to get the list of updated maps.
 
-### Fixes
+<h4>Fixes</h4>
 
 - In a box and whisker chart, when hovered over an icon (for mean, MD, SD, QD, or outlier) where `meanIconShape`, `MDIconShape`, `SDIconShape`, `QDIconShape`, or `outlierIconShape` is set to **spoke**, the spokes now get highlighted properly.
 

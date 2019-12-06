@@ -469,7 +469,8 @@ new FusionCharts({
       scrollbar: {},
       window: {},
       label: {}, //SVGStyle | String
-      "label-background": {} //SVGStyle | String
+      "label-background": {}, //SVGStyle | String
+      height: Number
     }
   }
 });
@@ -504,6 +505,11 @@ new FusionCharts({
 		<td>`label-background`</td>
 		<td>String</td>
 		<td>Styles the label background of the windoe in time navigator.</td>
+	</tr>
+	<tr>
+		<td>`height`</td>
+		<td>Number</td>
+		<td>An attribute to set the height of the time naviagator. You can also set the ratio with respect height of the canvas using `canvasHeightProportion` attribute where the fourth ratio will represent the height of the time navigator.</td>
 	</tr>
 </table>
 
@@ -1800,7 +1806,7 @@ new FusionCharts({
 	<tr>
 		<td>`canvasHeightProportion`</td>
 		<td>String</td>
-		<td>This attribute allows you to set variable heights to the canvases in a multivariate chart in the form of ratios, i.e., 1:2:1, 1:2:3, etc.</td>
+		<td>This attribute allows you to set variable heights to the canvases in a multivariate chart in the form of ratios, i.e., 1:2:1, 1:2:3:4, etc.</td>
 	</tr>
 </table>
 
