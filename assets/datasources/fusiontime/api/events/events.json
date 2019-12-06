@@ -3366,7 +3366,7 @@
     "description": "This event is fired when FusionCharts has finished downloading itself in the client environment. It indicates that the all the resources required to render a FusionCharts chart is ready and that a chart can be rendered. This event can be used to hide any loader components that you might have on your page \n",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-loaded"
+      "slug": "fusiontime-event-loaded"
     },
     "tags": {
       "action": "",
