@@ -509,7 +509,7 @@ new FusionCharts({
 	<tr>
 		<td>`height`</td>
 		<td>Number</td>
-		<td>An attribute to set the height of the time naviagator.</td>
+		<td>An attribute to set the height of the time naviagator. You can also set the ratio with respect height of the canvas using `canvasHeightProportion` attribute where the fourth ratio will represent the height of the time navigator.</td>
 	</tr>
 </table>
 
