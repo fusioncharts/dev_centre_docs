@@ -5,7 +5,7 @@
     "info": "Calling `event.preventDefault()` from within the handler of this event will cancel the rendering process. The rendering process is triggered when the `FusionCharts#render()` method is called.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-beforeRender",
+      "slug": "fusiontime-event-beforeRender",
       "_renderBtn": true
 
 
@@ -90,7 +90,7 @@
     "info": "The difference between this event and the rendered event is that the rendered event is triggered only when the FusionCharts#render() method is called.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-renderComplete"
+      "slug": "fusiontime-event-renderComplete"
 
     },
     "tags": {
@@ -260,7 +260,7 @@
     "info": "If chart animation is enabled, this event is triggered before the animation process. In case you need to perform any action after the animation has completed, you will need to add an appropriate time delay in this event handler, for example, by using `setTimeout`.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-rendered"
+      "slug": "fusiontime-event-rendered"
 
     },
     "tags": {
@@ -2336,7 +2336,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeMarkerRollOver"
+      "slug": "fusiontime-event-timeMarkerRollOver"
     },
     "tags": {
       "action": "Hover",
@@ -2393,7 +2393,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeMarkerRollOut"
+      "slug": "fusiontime-event-timeMarkerRollOut"
     },
     "tags": {
       "action": "Hover",
@@ -2450,7 +2450,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeMarkerClick"
+      "slug": "fusiontime-event-timeMarkerClick"
     },
     "tags": {
       "action": "Click",
@@ -3366,7 +3366,7 @@
     "description": "This event is fired when FusionCharts has finished downloading itself in the client environment. It indicates that the all the resources required to render a FusionCharts chart is ready and that a chart can be rendered. This event can be used to hide any loader components that you might have on your page \n",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-loaded"
+      "slug": "fusiontime-event-loaded"
     },
     "tags": {
       "action": "",
@@ -3701,7 +3701,7 @@
     "description": "This event is fired when the chart is redrawn because of a data update, resize, change of chart message, or change of chart type.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-beforeDraw"
+      "slug": "fusiontime-event-beforeDraw"
     },
     "tags": {
       "action": "",
@@ -4392,7 +4392,7 @@
     "description": "This event is fired when the animation is started in the chart.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-animationInvoked"
+      "slug": "fusiontime-event-animationInvoked"
     },
     "tags": {
       "action": "",
@@ -4502,7 +4502,7 @@
     "description": "This event is fired when a standard period is selected from the Standard Range Selector.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-standardRangeSelect"
+      "slug": "fusiontime-event-standardRangeSelect"
     },
     "tags": {
       "action": "Click",
@@ -4537,7 +4537,7 @@
     "description": "This event is fired when a valid custom period is applied from the Custom Range Selector.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-customRangeSelect"
+      "slug": "fusiontime-event-customRangeSelect"
     },
     "tags": {
       "action": "Click",
@@ -4582,7 +4582,7 @@
     "description": "This event is fired at the start of the user’s interaction with the time navigator’s window.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeNavBrushStart"
+      "slug": "fusiontime-event-timeNavBrushStart"
     },
     "tags": {
       "action": "Drag",
@@ -4632,7 +4632,7 @@
     "description": "This event is fired on every instance of the window being dragged/squeezed by the user.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeNavBrush"
+      "slug": "fusiontime-event-timeNavBrush"
     },
     "tags": {
       "action": "Drag",
@@ -4682,7 +4682,7 @@
     "description": "This event is fired at the end of the user’s interaction with the time navigator’s window.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-timeNavBrushEnd"
+      "slug": "fusiontime-event-timeNavBrushEnd"
     },
     "tags": {
       "action": "Drag",
@@ -4732,7 +4732,7 @@
     "description": "This event is fired at the start of the user’s drag interaction with a chart canvas.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasDragStart"
+      "slug": "fusiontime-event-canvasDragStart"
     },
     "tags": {
       "action": "Drag",
@@ -4762,7 +4762,7 @@
     "description": "This event is fired on every instance of the canvas being dragged by the user.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasDrag"
+      "slug": "fusiontime-event-canvasDrag"
     },
     "tags": {
       "action": "Drag",
@@ -4792,7 +4792,7 @@
     "description": "This event is fired at the end of the user’s drag interaction with a chart canvas.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasDragEnd"
+      "slug": "fusiontime-event-canvasDragEnd"
     },
     "tags": {
       "action": "Drag",
@@ -4822,7 +4822,7 @@
     "description": "This event is fired after a user’s double tap interaction on a canvas.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasDblTap"
+      "slug": "fusiontime-event-canvasDblTap"
     },
     "tags": {
       "action": "Double Click",
@@ -4852,7 +4852,7 @@
     "description": "This event is fired on every instance of a user’s wheel interaction on a canvas.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-canvasWheel"
+      "slug": "fusiontime-event-canvasWheel"
     },
     "tags": {
       "action": "Wheel",
