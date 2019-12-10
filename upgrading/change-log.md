@@ -22,7 +22,7 @@ heading: Version 3.15.x
 
   - The [Sankey Diagram](/chart-guide/standard-charts/sankey-diagram) is a type of flow diagram, which depicts the flow of resources from one point to another.
 
-  - The [Chord Diagram](chart-guide/standard-charts/chord-diagram) is a graphical method of displaying flows or connections among relatable entities.
+  - The [Chord Diagram](/chart-guide/standard-charts/chord-diagram) is a graphical method of displaying flows or connections among relatable entities.
 
   - The [Sunburst Chart](/chart-guide/standard-charts/sunburst-chart) helps in visualizing relationships within hierarchical data. It displays hierarchy through a series of concentric rings, each of which corresponds to a different level within the hierarchy.
 
