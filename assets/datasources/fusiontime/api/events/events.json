@@ -1577,7 +1577,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-beforeExport"
+      "slug": "fusiontime-event-beforeExport"
     },
     "tags": {
       "action": "Export",
@@ -1707,7 +1707,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-exported"
+      "slug": "fusiontime-event-exported"
     },
     "tags": {
       "action": "Export",
@@ -1942,7 +1942,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-beforePrint"
+      "slug": "fusiontime-event-beforePrint"
     },
     "tags": {
       "action": "Print",
@@ -2012,7 +2012,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-printComplete"
+      "slug": "fusiontime-event-printComplete"
     },
     "tags": {
       "action": "Print",
@@ -3401,7 +3401,7 @@
     "description": "This event is fired when the FusionCharts library is ready to be used. By the time this event is raised, the browser's DOM is ready to be interacted with, which corresponds to the DOMContentLoaded event of browsers. In older browsers, where `DOMContentLoaded` is not fired, the ready event corresponds to the load event of the page. In case the FusionCharts library is included in the page when the `DOMContentLoaded` event is already fired (i.e. the script is loaded asynchronously using `AJAX` or by using script deferring methods) the ready event is still fired to ensure the integrity of all the listeners.\n In many ways the nature of this event is similar to the `jQuery(document).ready` function of the jQuery library and the `Ext.onReady` function of the ExtJS library. One should interact with FusionCharts (i.e. create new charts, set options, etc.) only after this event has been fired. This event also helps you to neatly write your code in separate script files and in the page `<head>` thus keeping scripts from being a part of your page `<body>` \n An alternate (and shorthand) method to subscribing the ready event is to use the `FusionCharts.ready` function. One advantage that the ready function has over the ready event is that the event is fired only once during the life-cycle of a page while functions passed to the ready function are executed even when attached after the ready event has been fired. This is a library level event and as such can be only listened via the FusionChart object on the FusionCharts class alone. It will not be fired if it is subscribed to from individual chart instances.",
     "example": {
       "header": "Example",
-      "_slug": ""
+      "slug": "fusiontime-event-ready"
     },
     "tags": {
       "action": "",
@@ -3620,7 +3620,7 @@
     "description": "This pre-initialization event is fired every time a new instance of FusionCharts is created. It then triggers a number of modules that need to be setup on every instance of FusionCharts; the event can be used to perform any actions required to be completed before the initialization of each chart.\n Because this event is triggered upon instantiating a new FusionCharts object, it is impossible to listen to this event by adding an event listener to the chart. By the time the event listener is attached (using the `FusionCharts#addEventListener` method), the event will already have been already fired.\n However, there are alternate ways that can be used to listen to this event. You can listen to the FusionCharts global events, using the `FusionCharts.addEventListener` static method before even creating a new instance. The required instance of FusionCharts can then be identified from within the event handler by using `event.sender.id`. You can also pass the event listener for the correct event within the `events` object when creating an instance of FusionCharts",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-beforeInitialize"
+      "slug": "fusiontime-event-beforeInitialize"
     },
     "tags": {
       "action": "",
@@ -3894,7 +3894,7 @@
     "description": "This event is fired when the chart draws for the first time or is redrawn because of a data update, resize, change of chart message, or change of chart type.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-drawComplete"
+      "slug": "fusiontime-event-drawComplete"
     },
     "tags": {
       "action": "",
@@ -4051,7 +4051,7 @@
     "description": "This event is fired before a chart is resized.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-beforeResize"
+      "slug": "fusiontime-event-beforeResize"
     },
     "tags": {
       "action": "Resize",
@@ -4139,7 +4139,7 @@
     "description": "This event is fired when the chart is resized either by calling `FusionCharts#resizeTo()` or by changing the dimensions of the chart container element, when the dimensions of the chart have been provided in the percentage format.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-resized"
+      "slug": "fusiontime-event-resized"
     },
     "tags": {
       "action": "Resize",
@@ -4252,7 +4252,7 @@
     "description": "This event is fired when event.preventDefault() is called from within the handler of the beforeResize event. This cancels any FusionCharts#resizeTo() invocations.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-resizeCancelled"
+      "slug": "fusiontime-event-resizeCancelled"
     },
     "tags": {
       "action": "Resize",
