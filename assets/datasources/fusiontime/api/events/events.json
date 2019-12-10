@@ -692,7 +692,7 @@
     "info": "By default, a FusionCharts chart does not trigger this event until is enabled to do so. To enable this event for a chart, set the `enableChartMouseMoveEvent` attribute to 1.",
     "example": {
       "header": "Example",
-      "_slug": ""
+      "slug": "fusiontime-event-chartMouseMove"
     },
     "tags": {
       "action": "Hover",
@@ -3552,7 +3552,7 @@
     "description": "This event is fired if the container is either not found or not provided after invoking  FusionCharts#render.",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-containerNotFound"
+      "slug": "fusiontime-event-containerNotFound"
     },
     "tags": {
       "action": "",
