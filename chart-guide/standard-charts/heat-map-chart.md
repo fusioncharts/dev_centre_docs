@@ -4,6 +4,8 @@ description: A heat map chart is a specialized chart that uses colors to represe
 heading: Heat Map Chart
 ---
 
+{% embed_chartAnatomy heat-map-chart.json %}
+
 > This chart type belongs to **PowerCharts XT**.
 
 A heat map chart is a specialized chart that uses colors to represent data values in a table. You will find it most useful when you need to plot large and complex data.
