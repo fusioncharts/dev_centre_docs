@@ -29,7 +29,7 @@ declare class FusionCharts {
 }
 ```
 
-In the above code, you can see how `feedData` has been used to add new rows to the chart. This addition will happen after the time interval you declare. When you render this chart, you will see it asynchronously render the new data values in the plot.The axes, range selectors, time navigator, legends, etc., will also be updated.
+In the above code, you can see how `feedData` has been used to add new rows to the chart. This addition will happen after the time interval you declare. When you render this chart, you will see it asynchronously render the new data values in the plot. The axes, range selectors, time navigator, legends, etc., will also be updated.
 
 ## Add Data Directly to Table
 
@@ -55,7 +55,7 @@ Define `timeSpread` in terms of `unit`, which accepts one of the following value
 
 - `year`
 
-You can also assign a `multiplier` (default value: 1) to the time period. Note that you can omit the `multiplier` if you want, but the `unit` is mandatory. If you skip the `unit`, then the `timeSpread` attribute will be ignored.
+You can also assign a `multiplier` (default value: **1**) to the time period. Note that you can omit the `multiplier` if you want, but the `unit` is mandatory. If you skip the `unit`, then the `timeSpread` attribute will be ignored.
 
 > If you omit `timeSpread`, or provide an invalid one, then any time period in the existing data that can support four bins of time in the time navigator will be picked up as the value of `timeSpread`.
 
