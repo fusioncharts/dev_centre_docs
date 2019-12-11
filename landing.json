@@ -283,6 +283,15 @@
             "link": "https://docs.fusioncharts.com/archive/3.4.0/"
           }
         ]
+      },
+      "fusiontime": {
+        "title": "v2.0.0",
+        "children": [
+          {
+            "title": "v1.1.1",
+            "link": "https://docs.fusioncharts.com/archive/1.1.0/"
+          }
+        ]
       }
     }
   ]
