@@ -1172,7 +1172,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": ""
+      "slug": "invalid-chart-type-event"
     },
     "tags": {
       "action": "",
