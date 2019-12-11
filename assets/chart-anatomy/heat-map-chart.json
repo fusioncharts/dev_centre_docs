@@ -39,7 +39,7 @@
             "topPosition": "14%",
             "annotationLinks": [
               {
-                "linkDesc": "Learn how to add sub-caption [here](/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption)",
+                "linkDesc": "Learn how to add sub-caption [here](https://www.fusioncharts.com/dev/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption)",
                 "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
               },
               {
