@@ -8,6 +8,8 @@ heading: Angular Gauge
 
 Angular gauges are essentially like the speedometer or the fuel gauge of a car. You can use an angular gauge (also called a meter or dial gauge) to display a specific data point, using a dial over a radial scale with defined limits. You can associate colors with sections of the data to indicate specific ranges within the data, e.g., green for satisfactory, yellow for caution, and red for alarm.
 
+{% embed_chartAnatomy angular-gauge.json %}
+
 ## Basics of an angular gauge
 
 A simple angular gauge looks like the following:

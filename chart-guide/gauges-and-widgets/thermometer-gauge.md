@@ -8,6 +8,8 @@ heading: Thermometer Gauge
 
 A thermometer gauge is used to display temperatures. The fill level of the thermometer indicates the temperature data that you want to display. The thermometer gauge is a real-time gauge, which can update its data at every specified interval, without requiring any page refreshes. The thermometer gauge does NOT need a predefined color range. Instead, it takes in the fill color as an attribute and uses that color to fill up the thermometer.
 
+{% embed_chartAnatomy thermometer-gauge.json %}
+
 ## Simple thermometer gauge example
 
 You can use the thermometer gauge shown below as a real-time temperature monitor for the fictional Central Cold Store.

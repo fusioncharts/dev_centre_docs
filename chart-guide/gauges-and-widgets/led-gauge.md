@@ -10,6 +10,8 @@ An LED Gauge is similar to an angular gauge chart, but with a horizontal/vertica
 
 LED gauges are of two types - horizontal and vertical. The horizontal LED gauge has the bar placed horizontally, while the vertical LED has it vertically. LED Gauges are used in financial applications like management dashboards, factory operation output reports, etc.
 
+{% embed_chartAnatomy led-gauge.json %}
+
 ## Basics of LED gauges
 
 The LED gauge (horizontal/vertical) is defined by its minimum and maximum values. Within that scale, you can create various ranges to classify your data. For example, you might define a range called "Best" that consists of values between 60 and 100. You might also define a range called "Weak" that consists of values between 30 and 60. For each range, you define a color, which helps in visually distinguishing the ranges from each other.

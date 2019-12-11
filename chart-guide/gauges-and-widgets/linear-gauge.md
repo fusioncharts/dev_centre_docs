@@ -8,6 +8,8 @@ heading: Linear Gauge
 
 A linear gauge uses a horizontal scale to display the data range along with a fully configurable data pointer (or multiple pointers) to indicate the data value on the scale. The FusionCharts Suite XT linear gauge is a real-time gauge, which can update its data at specified intervals, without requiring any page refreshes.
 
+{% embed_chartAnatomy linear-gauge.json %}
+
 ## Basics of a linear gauge
 
 A simple linear gauge looks like the following:

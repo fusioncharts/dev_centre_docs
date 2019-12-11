@@ -6,6 +6,8 @@ heading: Cylinder Gauge
 
 The cylinder gauge is represented by a vertical cylinder, whose fill level is defined by the data value you plot. You can use it to report inventory levels, fuel levels, etc. The cylinder gauge is a real-time chart, which can update its data after intervals you specify, without any page refreshes. What makes a cylinder gauge different from other gauges is that this gauge can only be rendered with one fill color. You cannot create a cylinder gauge with color ranges.
 
+{% embed_chartAnatomy cylinder-gauge.json %}
+
 ## Simple cylinder gauge example
 
 You can use the cylinder gauge shown below, to monitor the diesel level in the generator at Bakersfield Central.

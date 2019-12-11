@@ -8,6 +8,8 @@ heading: Bulb Gauge
 
 Bulb gauge is used to indicate a specific dataset by utilizing a circle that indicates whether the monitored data is within defined limits, and if it is, then which limit does it belong to. Colors for the bulb can be selected to suit the application such as green for satisfactory, yellow for caution, and red for alarm.
 
+{% embed_chartAnatomy bulb-gauge.json %}
+
 ## Basics of the bulb gauge
 
 The bulb gauge is one of the simplest gauges in all. It is used in a variety of applications including financial dashboards, machine controller screens etc., where a single value or state indicator is required.
