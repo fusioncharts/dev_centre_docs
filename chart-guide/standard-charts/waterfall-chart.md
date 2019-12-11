@@ -8,6 +8,8 @@ heading: Waterfall Chart
 
 A waterfall (cascade) chart is a special type of column chart that is used to show how an initial value is increased and decreased by a series of intermediate values, leading to a final value.
 
+{% embed_chartAnatomy waterfall-chart.json %}
+
 Let's create our first waterfall chart which will showcase the profit and loss analysis.
 
 To create a waterfall chart follow the steps given below:
