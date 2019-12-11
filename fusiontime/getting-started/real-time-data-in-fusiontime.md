@@ -6,7 +6,7 @@ heading: Real-Time Data Update
 
 FusionTime v2.0 onwards, you can use time-series charts to display dynamically updating time series data.
 
-In this article, we will see how chart data can be updated dynamically in FusionTime, using the API `FusionCharts#feedData`. This API periodically updates the chart with fresh data. With the addition of new data, a concern of the total time period which is being shown in the chart often becomes a concern. To mitigate it, an optional chart level control called 'timeSpread' has also been introduced to the time-series charts.
+In this article, we will see how chart data can be updated dynamically in FusionTime, using the API `FusionCharts#feedData`. This API periodically updates the chart with fresh data. With the addition of new data, a concern of the total time period which is being shown in the chart often becomes a concern. To mitigate it, an optional chart level control called `timeSpread` has also been introduced to the time-series charts.
 
 A real-time chart looks as shown below:
 
