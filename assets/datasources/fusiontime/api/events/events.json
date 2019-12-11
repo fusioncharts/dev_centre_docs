@@ -182,7 +182,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-renderCancelled"
+      "slug": "renderCancelled-fusiontime-event"
     },
     "tags": {
       "action": "",
