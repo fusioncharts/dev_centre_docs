@@ -8,6 +8,8 @@ heading: Gantt Chart
 
 The Gantt chart is a specialized chart that you can use, to display various timelines, such as project timelines, development timelines, etc.
 
+{% embed_chartAnatomy gantt-chart.json %}
+
 ## Basics of the Gantt chart
 
 A Gantt chart is a date/time-based chart, with which you can plot tasks visually, with their exact start and end dates/times. You can also define milestones for the project, which assert how much of the project should be completed at a given point in time. That way, you can keep track of the project progress and plan remedial actions to bring the project back on course, if there is a delay.
