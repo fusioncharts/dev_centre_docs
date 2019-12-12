@@ -1812,7 +1812,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "exportCancelled-fusiontime-event"
+      "slug": "exportCancelled-fusiontime-event"
     },
     "tags": {
       "action": "Export",
@@ -3983,7 +3983,7 @@
     "description": "This event is fired when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
     "example": {
       "header": "Example",
-      "_slug": "drawCancelled-fusiontime-event"
+      "slug": "drawCancelled-fusiontime-event"
     },
     "tags": {
       "action": "",
