@@ -10,6 +10,8 @@ heading: Line, Area and Column charts
 
 Column and bar charts represent data with rectangular horizontal or vertical bars. The height of the bars is proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis, and the `data labels` are plotted along the x-axis. Whereas in bar charts, the numeric values are plotted along the x-axis, and the data labels are plotted along the y-axis. Column and bar charts are best fitted when you want to compare values.
 
+{% embed_chartAnatomy column-chart.json %}
+
 In this sample, let's create our first column chart showcasing the monthly revenue for last one year for Harry's SuperMart. We have plotted the months along the x-axis and the revenue, which is a numeric value, along the y-axis.
 
 To create a single-series column 2D chart, follow the steps given below:
@@ -76,6 +78,8 @@ Click [here](http://jsfiddle.net/fusioncharts/b03dgzvv/) to edit the bar 3D char
 
 Line charts are commonly used to showcase the trend in data over time whereas area charts are used to display quantitative data. Information in a line or area chart is plotted on the x- and y-axis; data values are plotted using data points that are connected using line segments.
 
+{% embed_chartAnatomy line-chart.json %}
+
 In the sample, let's create a line chart showcasing total footfall at Bakersfield Central. We have plotted the days along the x-axis and the number of visitors along the y-axis.
 
 To render a line chart, set the `type` attribute to `line`.
@@ -91,6 +95,8 @@ Click [here](http://jsfiddle.net/fusioncharts/xb9TG/) to edit the line chart.
 ## Area Chart
 
 An area chart is similar to the line chart, with the difference that the area marked by the anchors and line segments is filled.
+
+{% embed_chartAnatomy area-chart.json %}
 
 To render an area chart with the same use case as above, set the `type` to `area`.
 
