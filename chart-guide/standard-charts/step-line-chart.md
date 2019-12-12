@@ -10,6 +10,8 @@ A step line chart is used to visualize trends for a particular event which is no
 
 Essentially, trends are quite apparent from the general slope of a line chart. However, when the lines take distorted shapes for a specific segment of data points, it becomes very difficult to determine the drift. This is where the significance of a step line chart comes in. For a given set of data, where a line chart shows the generic deviation of the data points, a step line chart not only enables you to compare the magnitude and change in values at different points of the same series but also helps you discern the intermittent pattern of the trend at the same time.
 
+{% embed_chartAnatomy step-line-chart.json %}
+
 Let's create our first step line chart where we will compare the revenue earned with the expense incurred in the last year. The step-like composition of the data segments gives an accurate representation of the revenue and expense for each month.
 
 To create a multi-series step line chart follow the steps given below:
