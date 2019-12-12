@@ -407,7 +407,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-beforedataupdate"
+      "slug": "fusiontime-event-beforeDataUpdate"
     },
     "tags": {
       "action": "",
@@ -1812,7 +1812,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-exportCancelled"
+      "_slug": "exportCancelled-fusiontime-event"
     },
     "tags": {
       "action": "Export",
@@ -2082,7 +2082,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-printCancelled"
+      "slug": "printCancelled-fusiontime-event"
     },
     "tags": {
       "action": "Print",
@@ -3983,7 +3983,7 @@
     "description": "This event is fired when `event.preventDefault()` is called from within the handler for the `beforeDraw` event.",
     "example": {
       "header": "Example",
-      "_slug": ""
+      "_slug": "drawCancelled-fusiontime-event"
     },
     "tags": {
       "action": "",
@@ -4340,7 +4340,7 @@
     "description": "This event is fired before the chart is deleted and cleaned from the DOM and the browser’s memory.",
     "example": {
       "header": "Example",
-      "_slug": ""
+      "slug": "before-dispose-event"
     },
     "tags": {
       "action": "Dispose",
