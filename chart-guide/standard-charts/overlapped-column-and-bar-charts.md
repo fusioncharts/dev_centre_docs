@@ -15,6 +15,10 @@ The different types of overlapped charts available in the FusionCharts Suite XT 
 
 ## Overlapped Column 2D Chart
 
+An overlapped column 2D chart consists of two or more sets of overlapped columns as seen in the image below:
+
+{% embed_chartAnatomy overlapped-column-chart.json %}
+
 In this sample let's create an **Overlapped Column 2D** chart comparing the "Healthcare Expenditure per capita" between public and private sectors.
 
 To create an **Overlapped Column 2D** chart follow the steps given below:
@@ -38,6 +42,10 @@ An overlapped column 2D chart looks like:
 Click [here](http://jsfiddle.net/fusioncharts/yaqert65/) to edit the above overlapped column 2D chart.
 
 ## Overlapped Bar 2D Chart
+
+An overlapped bar 2D chart consists of two or more sets of overlapped bars as seen in the image below:
+
+{% embed_chartAnatomy overlapped-bar-chart.json %}
 
 To render an overlapped bar 2D chart, change the value of `type` attribute from `overlappedColumn2D` to `overlappedBar2D`. The rest of the data structure remains the same.
 
