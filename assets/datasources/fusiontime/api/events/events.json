@@ -4408,7 +4408,7 @@
     "description": "Usually, this event is fired by the `FusionCharts#dispose()` method. FusionCharts also triggers it when an already rendered chart is re-rendered. Unused charts should always be disposed to avoid memory-leaks within an application or dashboard.",
     "example": {
       "header": "Example",
-      "_slug": ""
+      "slug": "disposed-event"
     },
     "tags": {
       "action": "Dispose",
