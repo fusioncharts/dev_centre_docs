@@ -44,6 +44,10 @@ With FusionCharts Suite XT, you can build three types of spark charts -
 
 ## Create a Spark Line Chart
 
+A spark line chart looks as follows:
+
+{% embed_chartAnatomy spark-line-chart.json %}
+
 To create a spark line chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
@@ -537,6 +541,10 @@ Click [here](http://jsfiddle.net/fusioncharts/fwaL5/) to edit the above chart.
 
 ## Create a spark column chart
 
+A spark column chart looks as follows:
+
+{% embed_chartAnatomy spark-column-chart.json %}
+
 To create a spark column chart change the value of the `type` attribute from `sparkline` to `sparkcolumn`. The rest of the data structure remains the same.
 
 The chart will look like the following:
@@ -750,6 +758,10 @@ The chart will look like the following:
 Click [here](http://jsfiddle.net/fusioncharts/UhMzX/) to edit the above chart.
 
 ## Create spark win/loss charts
+
+A spark win/loss chart looks as follows:
+
+{% embed_chartAnatomy spark-win-loss-chart.json %}
 
 To create a spark column chart change the value of the `type` attribute from `sparkcolumns` to `sparkwinloss`. The rest of the data structure remains the same.
 
