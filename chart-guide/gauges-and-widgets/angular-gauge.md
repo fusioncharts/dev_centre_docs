@@ -10,7 +10,7 @@ Angular gauges are essentially like the speedometer or the fuel gauge of a car. 
 
 {% embed_chartAnatomy angular-gauge.json %}
 
-## Basics of an angular gauge
+## Basics of an Angular Gauge
 
 A simple angular gauge looks like the following:
 
@@ -20,21 +20,21 @@ Click [here](http://jsfiddle.net/fusioncharts/qaemety9/) to edit the above chart
 
 As you can see in the example given above, you can create a gauge by defining the minimum and maximum values (referred to as lower limit and upper limit). Within that scale, you can create various qualitative ranges (color ranges) to classify your data. The purpose is to classify a value as belonging to a predetermined range. For example, you may define a range called "Best" that consists of values between 60 and 100. Or you might create a range called "Weak" that consists of values between 30 and 60. For each range, you can define a color, to visually distinguish the ranges from each other.
 
-## Elements of the gauge
+## Elements of Angular Gauge
 
 An angular gauge consists of the following elements:
 
-### Color range
+### Color Range
 
 An angular gauge displays the data values on a radial scale. The radial scale is marked by a lower limit and an upper limit, i.e. the minimum and maximum values that can be plotted. Within that scale, you can create various sections to classify your data - each section can have a different background color, border color, etc,. to differentiate them from one another. These sections are called color ranges. In the above chart, we have 3 color ranges marked as green, yellow, and red. There can be any number of color ranges. For each color range, you need to specify the minimum and maximum values and the hex color code for the range.
 
 Each color range should have it's own unique range value. So, if you define a range as 0-50, set the minimum value of the next range as 50, so that there is no overlap with the previous section. Similarly, if you set the upper limit of the chart as 100, set the maximum value of the last range as 100.
 
-### Dials (data indicators)
+### Dials (Data Indicators)
 
 Dials are used to point to the desired value on the radial scale. You can point to more than one value using multiple dials. Each dial can have its individual properties, like color (border and background), width (both base and top), radius, and value.
 
-### Tick marks
+### Tick Marks
 
 Tick marks are the calibration marks on the radial scale to help interpret the reading. You can draw two types of tick marks on the chart:
 
@@ -62,7 +62,7 @@ Take a look at a standard angular gauge enlisting the various basic components:
 
 Click [here](http://jsfiddle.net/fusioncharts/77QP6/) to edit the above chart.
 
-## Simple angular gauge example
+## A Simple Angular Gauge
 
 As an example, create an angular gauge that indicates the customer satisfaction score for the last week at Harry's SuperMart. To create the angular gauge by plotting the customer satisfaction score, do the following:
 
@@ -152,7 +152,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-3.js %}
 
@@ -160,7 +160,7 @@ Click [here](http://jsfiddle.net/fusioncharts/qaemety9/) to edit the above chart
 
 The angular gauge chart in the FusionCharts Suite XT offers configuration options that you can use to improve the visual representation of the gauge.
 
-## Configure the gauge gradient fill
+## Configure the Gauge Gradient Fill
 
 An angular gauge is usually rendered with solid colors filled in the background. To enhance the visual representation of charts, use a gradient fill for the background.
 
@@ -181,13 +181,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/577w5/) to edit the above chart.
 
-## Show/hide the gauge border
+## Show/Hide the Gauge Border
 
 Set the value of the `showGaugeBorder` attribute to `0`, to hide the gauge border.
 
@@ -201,7 +201,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-5.js %}
 
@@ -209,7 +209,7 @@ Click [here](http://jsfiddle.net/fusioncharts/qmfofgwk/) to edit the above chart
 
 > In the above sample, the shadow has been hidden through the use of the `fusion` theme. Shadows might interfere with the border color.
 
-## Configure border cosmetics for each color range
+## Configure Border Cosmetics for each Color Range
 
 Use the following attributes to individually configure the color and transparency of the border of each range on the gauge scale:
 
@@ -235,13 +235,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ACBTf/) to edit the above chart.
 
-## Configure the entire border for the gauge at once
+## Configure the Entire Border for the Gauge
 
 Use the following attributes to configure the entire border of the gauge scale at once:
 
@@ -263,13 +263,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/B2g8Q/) to edit the above chart.
 
-## Set the border color as a derivative of the fill color
+## Set Border Color as Derivative of the Fill Color
 
 Specify the derivative of the fill color that should be applied to the border, using the `gaugeBorderColor` attribute.
 
@@ -283,13 +283,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/PwP4L/) to edit the above chart.
 
-## Configure outer and inner radius
+## Configure Outer and Inner Radius
 
 Based on the data values provided, the gauge automatically calculates the outer and inner radii for the color range scale. You can, however, explicitly set the radii for the gauge using the following attributes:
 
@@ -308,17 +308,17 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/44E7B/) to edit the above chart.
 
-## Configure pivot properties
+## Configure Pivot Properties
 
 Like the range scale and the border of the angular gauge, you can also configure the pivot that points to a data value on the range scale.
 
-### Set the pivot radius
+### Set the Pivot Radius
 
 The gauge automatically calculates the pivot radius based on the data values that you provide. However, you can also explicitly set the pivot radius (in pixels), using the `pivotRadius` attribute.
 
@@ -332,13 +332,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-10.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/C2rW2/) to edit the above chart.
 
-## Configure pivot border cosmetics
+## Configure Pivot Border Cosmetics
 
 Use the following attributes to configure pivot border cosmetics:
 
@@ -357,13 +357,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/hqC87/) to edit the above chart.
 
-## Configure pivot fill cosmetics
+## Configure Pivot Fill Cosmetics
 
 Use the following attributes to configure pivot fill cosmetics:
 
@@ -382,13 +382,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/56cXa/) to edit the above chart.
 
-## Configure the pivot fill color with a gradient fill mix
+## Configure the Pivot Fill Color with a Gradient Fill Mix
 
 The `pivotFillColor` attribute fills the pivot with a single solid color. However, you can also fill the pivot with a gradient fill, by using the attributes given below:
 
@@ -408,13 +408,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-13.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/8MzDD/) to edit the above chart.
 
-## Configure the pivot fill with a linear gradient
+## Configure the Pivot Fill with a Linear Gradient
 
 Specify whether the gradient fill for the pivot should be linear or radial, by setting the value of the `pivotFillType` attribute to `linear` or `radial` (default), respectively.
 
@@ -428,17 +428,17 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-14.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/neAZZ/) to edit the above chart.
 
-## Configure dials
+## Configure Dials
 
 With FusionCharts Suite XT, you can configure dials in angular gauges for several cosmetic and functional properties.
 
-### Configure the border
+### Configure the Border
 
 Use the following attributes to configure the borders of a dial:
 
@@ -472,7 +472,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-15.js %}
 
@@ -502,13 +502,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-16.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/VbvM4/) to edit the above chart.
 
-## Configure the radius and the rear extension
+## Configure the Radius and the Rear Extension
 
 By default, the gauge automatically configures the radius of the dial. However, you can also explicitly specify the radius for the dial, as well as the rear extension (extension on the opposite side), using the following attributes:
 
@@ -537,13 +537,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-17.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/B9Q68/) to edit the above chart.
 
-## Configure base and top widths
+## Configure Base and Top Widths
 
 If you Increase the base and the top width of a dial, you can increase the thickness of both. That way, you can create different dial shapes to suit your design requirements. Use the following attributes to do so:
 
@@ -572,13 +572,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-18.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/E2rz2/) to edit the above chart.
 
-## Configure hover effects
+## Configure Hover Effects
 
 You can use hover effects to modify how the dial reacts when you hover the mouse pointer over it. Use the following attributes to configure hover effects:
 
@@ -619,13 +619,13 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-51.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/jJM7e/) to edit the above chart.
 
-## Add custom tool-text for the dial
+## Add Custom Tooltext for the Dial
 
 Specify the text that will be rendered as the tooltip when you hover the mouse pointer over it, using the `tooltext` attribute.
 
@@ -649,7 +649,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-49.js %}
 
@@ -678,7 +678,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-50.js %}
 
@@ -725,7 +725,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-19.js %}
 
@@ -837,7 +837,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-20.js %}
 
@@ -886,7 +886,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-21.js %}
 
@@ -911,7 +911,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-22.js %}
 
@@ -936,7 +936,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-23.js %}
 
@@ -979,7 +979,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-24.js %}
 
@@ -999,7 +999,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-25.js %}
 
@@ -1024,7 +1024,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-26.js %}
 
@@ -1052,7 +1052,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-27.js %}
 
@@ -1122,7 +1122,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-28.js %}
 
@@ -1172,7 +1172,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-29.js %}
 
@@ -1212,7 +1212,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-30.js %}
 
@@ -1265,7 +1265,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-31.js %}
 
@@ -1310,7 +1310,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-32.js %}
 
@@ -1333,7 +1333,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-33.js %}
 
@@ -1355,7 +1355,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-34.js %}
 
@@ -1408,7 +1408,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-35.js width:400px height:300px display:inline-block %}
 
@@ -1471,7 +1471,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-36.js %}
 
@@ -1611,7 +1611,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-37.js %}
 
@@ -1635,7 +1635,7 @@ To make all of the dials editable, refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-38.js %}
 
@@ -1667,7 +1667,7 @@ To make only one of the dials editable, refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-39.js %}
 
@@ -1776,7 +1776,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-40.js %}
 
@@ -1880,7 +1880,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-41.js %}
 
@@ -1970,7 +1970,7 @@ events: {
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-42.js %}
 
@@ -2042,7 +2042,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-43.js %}
 
@@ -2079,7 +2079,7 @@ Refer to the code below:
 }
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-44.js %}
 
@@ -2108,7 +2108,7 @@ You can see an example of message type `ERROR`, given below:
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84&msgType=ERROR
 ```
 
-The gauge will look like as shown below:
+The gauge will look as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-45.js %}
 
