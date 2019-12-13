@@ -153,9 +153,9 @@
         "name": "QDIconShape"
       },
       {
-        "description": "This attribute lets you specify the shape that should be displayed when the outlier icon is hovered over. \n\nDefault value: 3",
-        "range": "",
-        "type": "Number",
+        "description": "This attribute lets you specify the shape that should be displayed when the outlier icon is hovered over. \n\nDefault value: Polygon",
+        "range": "Polygon, Spoke",
+        "type": "String",
         "Versionsince": "3.15.0",
         "name": "outlierIconShape"
       },

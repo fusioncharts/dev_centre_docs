@@ -238,7 +238,6 @@ The code is given below:
     "title": "Total Sales",
     "min": "0",
     "max": "40000"
-}, {
     "format": {
         "prefix": "$",
     }
