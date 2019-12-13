@@ -209,7 +209,7 @@ Click [here](http://jsfiddle.net/fusioncharts/qmfofgwk/) to edit the above chart
 
 > In the above sample, the shadow has been hidden through the use of the `fusion` theme. Shadows might interfere with the border color.
 
-## Configure Border Cosmetics for each Color Range
+## Configure Border Cosmetics for Each Color Range
 
 Use the following attributes to individually configure the color and transparency of the border of each range on the gauge scale:
 
