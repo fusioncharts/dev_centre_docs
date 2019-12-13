@@ -597,7 +597,7 @@
     "info": "",
     "example": {
       "header": "Example",
-      "_slug": "fusiontime-event-dataUpdated"
+      "slug": "fusiontime-event-dataUpdated"
     },
     "tags": {
       "action": "",
@@ -4617,7 +4617,7 @@
     "description": "These actions include: \n After every instance of a panning/zooming action from a focus canvas. \n After selecting a standard range of time from the Standard Range Selector. \n After applying a valid range of time from the Custom Range Selector. \n After every instance of a panning/zooming action using the time navigator’s window. \n When using an API which affects the focused spread of time in the chart: \n FusionCharts#setCurrentTimeSelection \n `FusionCharts#setBinSize` \n `FusionCharts#setJSONData` \n `FusionCharts#render` \n",
     "example": {
       "header": "Example",
-      "_slug": ""
+      "slug": "selection-change-event"
     },
     "tags": {
       "action": "Zoom/Pan",
