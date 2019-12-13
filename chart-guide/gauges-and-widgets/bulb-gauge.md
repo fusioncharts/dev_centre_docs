@@ -305,7 +305,7 @@ Click [here](http://jsfiddle.net/fusioncharts/0ehkf2sx/) to edit the above chart
 
 The bulb gauge is a realtime chart, which can continuously request new data from the server and display the same, without involving any page refreshes. The chart initializes itself, loads new data periodically, and auto-updates to reflect the current state of data. There are two different ways to update the bulb gauge; one method directly polls data from the server while the other retrieves data using JavaScript API methods.
 
-## Configure real-time updates using JavaScript API
+## Configure Realtime Updates Using JavaScript API
 
 ### Realtime Data Format
 
