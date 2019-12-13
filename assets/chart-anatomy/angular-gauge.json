@@ -5,7 +5,7 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Angular Gauge",
+            "_itemHeader": "Angular Gauge",
             "imgSrc": "angular-gauge-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
@@ -19,7 +19,7 @@
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
                      },
                      {
-                        "linkDesc": "You can customize font properties and cosmetics of caption using attributes. Know more about them. ",
+                        "linkDesc": "You can customize font properties and cosmetics of caption using attributes. Know more about them ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
                      },
                      {
