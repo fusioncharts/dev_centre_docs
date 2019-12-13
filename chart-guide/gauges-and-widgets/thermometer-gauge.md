@@ -10,7 +10,7 @@ A thermometer gauge is used to display temperatures. The fill level of the therm
 
 {% embed_chartAnatomy thermometer-gauge.json %}
 
-## Simple thermometer gauge example
+## Simple Thermometer Gauge Example
 
 You can use the thermometer gauge shown below as a real-time temperature monitor for the fictional Central Cold Store.
 
@@ -18,13 +18,13 @@ You can use the thermometer gauge shown below as a real-time temperature monitor
 
 Click [here](http://jsfiddle.net/fusioncharts/3BNH3/) to edit the above gauge.
 
-## Elements of thermometer gauges
+## Elements of Thermometer Gauges
 
 In the image below, you can see the basic elements of a thermometer gauge labeled:
 
 ![Thermometer-gauge](/images/thermometer-gauge-introduction-1.png)
 
-### Thermometer fill
+### Thermometer Fill
 
 You can decipher the value being illustrated, by looking at the fill level in a thermometer gauge.
 
@@ -48,7 +48,7 @@ You can display the current temperature value indicated by the thermometer fill,
 
 With annotations, you can draw your own custom shapes, add text, or even load images on the chart.
 
-## Create a thermometer gauge
+## Create a Thermometer Gauge
 
 Use the following attributes to create a simple thermometer gauge:
 
@@ -90,7 +90,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/LZWyr/) to edit the above gauge.
 
-## Customize the gauge fill
+## Customize the Gauge Fill
 
 Use the following attributes to customize the gauge fill:
 
@@ -115,7 +115,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/6UFzr/) to edit the above gauge.
 
-## Customize the gauge borders
+## Customize the Gauge Borders
 
 Use the following attributes to customize the thermometer gauge border :
 
@@ -146,7 +146,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/8r7RV/) to edit the above gauge.
 
-## Manually set the thermometer radius and height
+## Manually Set the Thermometer Radius and Height
 
 You can let the gauge automatically calculate the best thermometer radius and height based on the data you provide, or explicitly set them yourself. Use the following attributes to manually set the thermometer radius and height:
 
@@ -171,7 +171,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/gpX6k/) to edit the above gauge.
 
-## Hide the temperature value
+## Hide the Temperature Value
 
 Set the value of the `showValue` attribute to `0`, to hide temperature values on the gauge. Note that by default, the gauge displays the temperature values.
 
@@ -191,7 +191,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/V73nQ/) to edit the above gauge.
 
-## Show/hide tick marks and tick values
+## Show/hide Tick Marks and Tick Values
 
 Use the following attributes to hide the tick marks and tick values. Note that by default, the gauge displays everything:
 
@@ -216,7 +216,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/tQ985/) to edit the above gauge.
 
-## Configure tick marks and tick values
+## Configure Tick Marks and Tick Values
 
 Use the following attributes to configure the tick marks and tick values:
 
@@ -262,7 +262,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/JZ36w/) to edit the above gauge.
 
-## Customize tick marks
+## Customize Tick Marks
 
 Use the following attributes to customize the cosmetic properties of tick marks:
 
@@ -299,7 +299,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uHBcn/) to edit the above gauge.
 
-## Configure hover effects
+## Configure Hover Effects
 
 Set the value of the `showHoverEffect` attribute `1`, to enable hover/touch effects for the thermometer gauge.
 
@@ -319,7 +319,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/hyvLk5d8/) to edit the above gauge.
 
-## Configure real-time updates using JavaScript API
+## Configure Realtime Updates Using JavaScript API
 
 When you invoke the data provider page on the server end, it outputs the new data in the real time data format. The real time data format depends on:
 
@@ -383,7 +383,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/gfqnj2oc/) to edit the above gauge.
 
-## Configure real time updates using server-side script
+## Configure Realtime Updates Using Server-side Script
 
 Use the following parameters to configure real time updates using server-side scripts:
 
@@ -410,7 +410,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/zc2Ldvjs/) to edit the above gauge.
 
-## Stop/restart updates
+## Stop/Restart Updates
 
 Use the following JavaScript API methods to stop and restart real time updates to a thermometer gauge:
 
@@ -463,11 +463,11 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/pt2t929n/) to edit the above gauge.
 
-## Configure real time events
+## Configure Realtime Events
 
 FusionCharts Suite XT introduces two events, `realTimeUpdateComplete` and `realTimeUpdateError`, to track real time updates on gauges. 
 
-### Use the `realTimeUpdateComplete` event
+### Use the `realTimeUpdateComplete` Event
 
 The `realTimeUpdateComplete` event is raised whenever the real time thermometer gauge updates itself with new data, or more specifically, in the following cases:
 
@@ -546,7 +546,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/hmx9wxtg/) to edit the above gauge.
 
-### Use the `realTimeUpdateError` event
+### Use the `realTimeUpdateError` Event
 
 The `realTimeUpdateError` event is raised when an error occurs while performing real time update using `datastreamURL`. The event arguments provided in the advanced model are as follows:
 
@@ -588,6 +588,6 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/16nftft4/) to edit the above gauge.
 
-## Troubleshoot real time gauges
+## Troubleshoot Realtime Gauges
 
 While accessing any of the JavaScript methods listed above, if you get an error like `"... is not a function of ..."`, make sure that you are NOT running the chart from the local file system (C:\ , D:\). Instead, run the chart from behind a server (localhost - IIS, Apache, etc.). This is because the default security settings do not allow the chart to perform JavaScript interaction on the local file system, unless you specifically set them otherwise.
