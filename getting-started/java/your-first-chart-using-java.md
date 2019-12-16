@@ -19,9 +19,9 @@ Download the FusionCharts library to get the `jsp-fusioncharts` wrapper.
 
 <a href='https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=java' class="btn btn-primary-grad btn-sm">Download FusionCharts library</a>
 
-Create a new Java dynamic web project (we have named it as FusionchartsJava) and follow the steps below:
+Create a new Java dynamic web project (we have named it as `FusionchartsJava`) and follow the steps below:
 
-- Create a new package named as `fusioncharts` inside `Java resources > src` . Now copy the `jsp-fusioncharts` wrapper (`fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper`) to the newly created fusioncharts package (`Java resources > src>fusioncharts`).
+- Create a new package named as `fusioncharts` inside `Java resources > src`. Now copy the `jsp-fusioncharts` wrapper (`fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper`) to the newly created fusioncharts package (`Java resources > src>fusioncharts`).
 
 - Copy the `js` directory (Only for Local Files) which contains all the javascript files (fusioncharts-suite-xt > js) in the `WebContent` folder present in the project(FusionchartsJava) directory.
 
