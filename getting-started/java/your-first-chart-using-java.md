@@ -154,15 +154,15 @@ Let's create a Column 2D Chart using the `jsp-fusioncharts` wrapper showing "Cou
 <pre><code class="language-php">
   &lt;%@ page language=_"java"_ contentType=_"text/html; charset=ISO-8859-1"_ pageEncoding=_"ISO-8859-1"_%&gt;
   &lt;%@page import=_"java.util._"_ %&gt;
-  &lt;%@page import=_"fusioncharts.FusionCharts"\* %&gt; &lt; !DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-  "http://www.w3.org/TR/html4/loose.dtd" &gt;
-  &lt; html &gt;
-      &lt; head &gt;
-      &lt; meta http - equiv = * "Content-Type" * content = * "text/html; charset=ISO-8859-1" * &gt;
-      &lt; title &gt; FusionCharts | My First Chart &lt; /title&gt; &lt; script type = "text/javascript"
-  src = "https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" &gt; &lt; /script&gt; &lt; script type = "text/javascript"
-  src = "https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" &gt; &lt; /script&gt; &lt; body &gt;
-      &lt; div id = * "chart" * &gt; &lt; /div&gt;
+  &lt;%@page import=_"fusioncharts.FusionCharts"\* %&gt; &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd"&gt;
+  &lt;html&gt;
+      &lt;head&gt;
+      &lt;meta http - equiv = * "Content-Type" * content = * "text/html; charset=ISO-8859-1" *&gt;
+      &lt;title&gt; FusionCharts | My First Chart &lt;/title&gt; &lt;script type = "text/javascript"
+  src = "https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt; &lt;/script&gt; &lt;script type = "text/javascript"
+  src = "https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt; &lt;/script&gt; &lt;body&gt;
+      &lt;div id = * "chart" *&gt; &lt;/div&gt;
   &lt;%
               // store chart config name-config value pair
               Map&lt;String, String&gt; chartConfig = new HashMap&lt;String, String&gt;();
@@ -212,7 +212,7 @@ Let's create a Column 2D Chart using the `jsp-fusioncharts` wrapper showing "Cou
                   jsonData.toString()
               );
           %&gt;
-  &lt;%= firstChart.render() %&gt; &lt; /body&gt; &lt; /html&gt;
+  &lt;%= firstChart.render() %&gt; &lt;/body&gt; &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
@@ -222,13 +222,13 @@ Let's create a Column 2D Chart using the `jsp-fusioncharts` wrapper showing "Cou
 <pre><code class="language-php">
   &lt;%@ page language=*"java"* contentType=*"text/html; charset=ISO-8859-1"* pageEncoding=*"ISO-8859-1"*%&gt;
   &lt;%@page import=*"java.util.*"* %&gt;
-  &lt;%@page import=*"fusioncharts.FusionCharts"* %&gt; &lt; !DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-  "http://www.w3.org/TR/html4/loose.dtd" &gt;
-  &lt; html &gt;
-      &lt; head &gt;
-      &lt; meta http - equiv = * "Content-Type" * content = * "text/html; charset=ISO-8859-1" * &gt;
-      &lt; title &gt; FusionCharts | My First Chart &lt; /title&gt; &lt; script type = * "text/javascript" * src = * "*${pageContext.request.contextPath}*/js/fusioncharts.js" * &gt; &lt; /script&gt; &lt; script type = * "text/javascript" * src = * "*${pageContext.request.contextPath}*/js/themes/fusioncharts.theme.fusion.js" * &gt; &lt; /script&gt; &lt; body &gt;
-      &lt; div id = * "chart" * &gt; &lt; /div&gt;
+  &lt;%@page import=*"fusioncharts.FusionCharts"* %&gt; &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd"&gt;
+  &lt;html&gt;
+      &lt;head&gt;
+      &lt;meta http - equiv = * "Content-Type" * content = * "text/html; charset=ISO-8859-1" *&gt;
+      &lt;title&gt; FusionCharts | My First Chart &lt;/title&gt; &lt;script type = * "text/javascript" * src = * "*${pageContext.request.contextPath}*/js/fusioncharts.js" *&gt; &lt;/script&gt; &lt;script type = * "text/javascript" * src = * "*${pageContext.request.contextPath}*/js/themes/fusioncharts.theme.fusion.js" *&gt; &lt;/script&gt; &lt;body&gt;
+      &lt;div id = * "chart" *&gt; &lt;/div&gt;
   &lt;%
               // store chart config name-config value pair
               Map&lt;String, String&gt; chartConfig = new HashMap&lt;String, String&gt;();
@@ -278,7 +278,7 @@ Let's create a Column 2D Chart using the `jsp-fusioncharts` wrapper showing "Cou
                   jsonData.toString()
               );
           %&gt;
-  &lt;%= firstChart.render() %&gt; &lt; /body&gt; &lt; /html&gt;
+  &lt;%= firstChart.render() %&gt; &lt;/body&gt; &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
