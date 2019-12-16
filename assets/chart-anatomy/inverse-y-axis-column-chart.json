@@ -4,7 +4,7 @@
    "content": {
       "header": "Below you can find different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "_Inverse Y-axis Column Chart",
+            "_itemHeader": "Inverse Y-axis Column Chart",
             "imgSrc": "inverse-y-axis-column-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
