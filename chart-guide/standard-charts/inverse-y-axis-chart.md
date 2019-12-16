@@ -20,6 +20,8 @@ The FusionCharts Suite XT includes the following three types of inverse axis cha
 
 ## Inverse Y-axis Column Chart 
 
+{% embed_chartAnatomy inverse-y-axis-column-chart.json %}
+
 Let's create an inverse y-axis chart showcasing Average page load time of hsm.com. In the sample you will observe that when you render the chart, the lower limit value is rendered at the top and the upper limit value is rendered at the bottom - which renders the inverse data plots.
 
 To create an inverse y-axis chart follow the steps given below: 
