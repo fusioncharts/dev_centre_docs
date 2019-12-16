@@ -29,7 +29,7 @@ Create a new Java dynamic web project (we have named it as FusionchartsJava) and
 
 The directory structure will look like this:
 
-<img src="{% site.BASE_URL %}/images/java-folder-structure.png" width="250" height="350" alt="Java Folder Structure">
+<img src="{% site.BASE_URL %}/images/java-folder-structure.png" width="300" height="450" alt="Java Folder Structure">
 
 ## Configure your chart
 
