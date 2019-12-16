@@ -46,6 +46,8 @@ Click [here](http://jsfiddle.net/fusioncharts/WEJLC/) to edit the above inverse 
 
 ## Inverse Y-axis Area Chart
 
+{% embed_chartAnatomy inverse-y-axis-area-chart.json %}
+
 You have seen how an inverse y-axis column chart looks. To render an inverse y-axis area chart, change the value of the `type` attribute from `inverseMSColumn2D` to `inverseMSArea`. The rest of the data structure remains the same.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=InverseMSArea) page of inverse y-axis area chart.
@@ -57,6 +59,8 @@ An inverse y-axis multi-series area chart looks like this:
 Click [here](http://jsfiddle.net/fusioncharts/S38mg/) to edit the above inverse y-axis area chart.
 
 ## Inverse Y-axis Line Chart 
+
+{% embed_chartAnatomy inverse-y-axis-line-chart.json %}
 
 To render an inverse y-axis area chart, change the value of the `type` attribute from `inverseMSArea` to `inverseMSLine`. The rest of the data structure remains the same.
 
