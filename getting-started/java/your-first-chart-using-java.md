@@ -290,7 +290,7 @@ Let's create a Column 2D Chart using the `jsp-fusioncharts` wrapper showing "Cou
 
 With the container for the chart created in `index.jsp` file, run this file on the local server, which by default runs on localhost:8080 .You should be able to see the chart as shown below.
 
-{% embed_chart getting-started-your-first-chart.js %}
+{% embed_chart getting-started-your-first-chart-java.js %}
 
 If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
