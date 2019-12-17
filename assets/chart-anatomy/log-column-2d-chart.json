@@ -4,7 +4,7 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "_itemHeader": "Log Column 2D Chart Anatomy",
+            "itemHeader": "Log Column 2D Chart Anatomy",
             "imgSrc": "log-column-2D-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
