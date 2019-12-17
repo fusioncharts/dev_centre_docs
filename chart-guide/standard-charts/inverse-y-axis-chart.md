@@ -10,7 +10,7 @@ The inverse y-axis charts are similar to the normal column charts, except that t
 
 > The inverse data plots (column and area) will be applicable to the charts with positive y-axis range (> = 0).
 
-The FusionCharts Suite XT includes the following three types of inverse axis charts:
+The FusionCharts Suite XT includes the following three types of inverse y-axis charts:
 
 * Inverse Y-axis Column Chart
 
@@ -20,7 +20,7 @@ The FusionCharts Suite XT includes the following three types of inverse axis cha
 
 ## Inverse Y-axis Column Chart 
 
-An inverse Y-axis column chart looks as shown below:
+An inverse y-axis column chart looks as shown below:
 
 {% embed_chartAnatomy inverse-y-axis-column-chart.json %}
 
@@ -48,7 +48,7 @@ Click [here](http://jsfiddle.net/fusioncharts/WEJLC/) to edit the above inverse 
 
 ## Inverse Y-axis Area Chart
 
-An inverse Y-axis area chart looks as shown below:
+An inverse y-axis area chart looks as shown below:
 
 {% embed_chartAnatomy inverse-y-axis-area-chart.json %}
 
@@ -64,7 +64,7 @@ Click [here](http://jsfiddle.net/fusioncharts/S38mg/) to edit the above inverse 
 
 ## Inverse Y-axis Line Chart 
 
-An inverse Y-axis line chart looks as shown below:
+An inverse y-axis line chart looks as shown below:
 
 {% embed_chartAnatomy inverse-y-axis-line-chart.json %}
 
