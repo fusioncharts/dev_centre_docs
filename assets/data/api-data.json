@@ -14115,7 +14115,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered when the mouse pointer is rolled over the x-axis label of a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/dorpb31c/ )",
+					"description": "Triggered when the mouse pointer is rolled over the tick labels of x-axis or y-axis. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/dorpb31c/ )",
 					"examples": {},
 					"params": {
 						"eventObj": {
@@ -14349,7 +14349,7 @@
 					"access": "",
 					"scope": "instance",
 					"virtual": false,
-					"description": "Triggered when the mouse pointer is rolled out from over the x-axis label of a data plot. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qxh0obn7/ )",
+					"description": "Triggered when the mouse pointer is rolled out from the tick labels of x-axis or y-axis. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/qxh0obn7/ )",
 					"examples": {},
 					"params": {
 						"eventObj": {
