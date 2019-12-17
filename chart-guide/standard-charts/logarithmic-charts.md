@@ -58,6 +58,10 @@ Click [here](http://jsfiddle.net/fusioncharts/kEeUR/) to edit the log column 2D 
 
 ## Log Line 2D Chart
 
+A log line 2D chart looks as follows:
+
+{% embed_chartAnatomy log-line-2D-chart.json %}
+
 Now, let's create a log line 2D chart that compares the store footfalls with the online visits for one year. To render a log line 2D chart, change the value of the `type` attribute from `logmscolumn2d` to `logmsline`. The rest of the data structure remains the same.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=LogMSLine) page of log line 2D chart.
