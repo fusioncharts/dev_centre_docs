@@ -11,8 +11,8 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "64.5%",
-                  "topPosition": "1%",
+                  "leftPosition": "31.5%",
+                  "topPosition": "9%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
@@ -32,8 +32,8 @@
                   "annotationName": "Sub-caption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "28.5%",
-                  "topPosition": "7.5%",
+                  "leftPosition": "51.5%",
+                  "topPosition": "14.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
@@ -49,7 +49,7 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "20%",
+                  "leftPosition": "62%",
                   "topPosition": "20%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
@@ -63,65 +63,11 @@
                },
                {
                   "annotationNumber": "4",
-                  "annotationName": "X-Axis",
-                  "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "28%",
-                  "topPosition": "70%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "5",
-                  "annotationName": "X-Axis Title",
-                  "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "51%",
-                  "topPosition": "80%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "6",
-                  "annotationName": "X-Axis Labels",
-                  "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "72%",
-                  "topPosition": "76%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "7",
-                  "annotationName": "Y-Axis",
-                  "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "5%",
-                  "topPosition": "72%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "8",
-                  "annotationName": "Y-Axis Title",
-                  "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "1%",
-                  "topPosition": "20%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "9",
-                  "annotationName": "Trendline",
-                  "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "83%",
-                  "topPosition": "40%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "10",
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "18%",
-                  "topPosition": "46.5%",
+                  "leftPosition": "46.5%",
+                  "topPosition": "52%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
@@ -132,8 +78,8 @@
                   "annotationName": "Anchors",
                   "annotationDesc": "Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/anchors-and-lines",
-                  "leftPosition": "86%",
-                  "topPosition": "25%",
+                  "leftPosition": "53%",
+                  "topPosition": "32.5%",
                   "annotationLinks": []
                },
                {
