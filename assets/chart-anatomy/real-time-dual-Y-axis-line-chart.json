@@ -4,8 +4,8 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "Multi-series Spline Chart Anatomy",
-            "imgSrc": "multi-series-spline-chart.png",
+            "itemHeader": "Real-time Dual Y-axis Line Chart Anatomy",
+            "imgSrc": "real-time-dual-y-axis-line-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",

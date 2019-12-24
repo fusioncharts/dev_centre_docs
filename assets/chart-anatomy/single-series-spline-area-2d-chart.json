@@ -4,8 +4,8 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "Multi-series Spline Chart Anatomy",
-            "imgSrc": "multi-series-spline-chart.png",
+            "itemHeader": "Single Series Spline Area 2D Chart Anatomy",
+            "imgSrc": "single-series-spline-area-2d-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
