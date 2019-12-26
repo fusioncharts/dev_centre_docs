@@ -66,7 +66,7 @@
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "95%",
+                  "leftPosition": "91%",
                   "topPosition": "62%",
                   "annotationLinks": []
                },
@@ -75,8 +75,8 @@
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "57%",
-                  "topPosition": "75%",
+                  "leftPosition": "56%",
+                  "topPosition": "74%",
                   "annotationLinks": []
                },
                {
@@ -102,7 +102,7 @@
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "0%",
+                  "leftPosition": "2%",
                   "topPosition": "36%",
                   "annotationLinks": []
                },
@@ -112,7 +112,7 @@
                   "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "36%",
-                  "topPosition": "44%",
+                  "topPosition": "22%",
                   "annotationLinks": []
                },
                {
@@ -129,20 +129,11 @@
                },
                {
                   "annotationNumber": "11",
-                  "annotationName": "Anchors",
-                  "annotationDesc": "Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/anchors-and-lines",
-                  "leftPosition": "82%",
-                  "topPosition": "25%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "12",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "75.5%",
-                  "topPosition": "82.5%",
+                  "leftPosition": "76%",
+                  "topPosition": "81.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll etc. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/legend#configure-legend-icon-size"
@@ -162,8 +153,8 @@
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "70%",
-                  "topPosition": "23.5%",
+                  "leftPosition": "71%",
+                  "topPosition": "32.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
