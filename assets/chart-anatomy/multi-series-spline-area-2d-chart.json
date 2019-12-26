@@ -84,14 +84,14 @@
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "75%",
+                  "leftPosition": "67.5%",
                   "topPosition": "67%",
                   "annotationLinks": []
                },
                {
                   "annotationNumber": "7",
                   "annotationName": "Y-Axis",
-                  "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
+                  "annotationDesc": "Y-Axis refers to line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "12%",
                   "topPosition": "3%",
@@ -111,7 +111,7 @@
                   "annotationName": "Trendline",
                   "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "36%",
+                  "leftPosition": "41.5%",
                   "topPosition": "22%",
                   "annotationLinks": []
                },
