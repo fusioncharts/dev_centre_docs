@@ -4,45 +4,50 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Chart in Angular Using FusionCharts
 ---
 
-## Overview
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight Angular component which provides bindings for FusionCharts. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any Angular project.
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component which provides bindings for **FusionCharts**. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project.
+On this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
 
-In this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
+## Prerequisite
 
-## Installation
+Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`.
 
-To install **FusionCharts** and the `angular-fusioncharts` component via `npm` follow the steps below:
+- Angular requires Node.js version 10.9.0 or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
 
-**Step 1:** Install `angular-fusioncharts`
+- To download and install npm packages, you must have an npm package manager. run `npm -v` in a terminal/console window, to check that if have the npm client installed.
 
-```bash
-$ npm install angular-fusioncharts --save
+Follow the steps mentioned [here](https://angular.io/guide/setup-local) to initiate the project using Angular CLI.
+
+## Installation and Including Dependencies
+
+Install the angular-fusioncharts and fusioncharts modules by the following command
+
+```javascript
+npm install fusioncharts angular-fusioncharts --save
 ```
 
-**Step 2:** Install fusioncharts core library
+After installing the fusioncharts components, you can replace the code in `app.module.ts` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.
 
-```bash
-$ npm install fusioncharts --save
+```javascript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+*//import { AppRoutingModule } from './app-routing.module';*
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+*// Import FusionCharts library and chart modules*
+import * as FusionCharts from 'fusioncharts';
+import * as charts from 'fusioncharts/fusioncharts.charts';
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+*// Pass the fusioncharts library and chart modules*
+FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
 ```
 
-That completes the installation of **FusionCharts** and the `angular-fusioncharts` component.
+## Preparing the data
 
-## Create Your First Chart
-
-Let's create a Column 2D chart using the `angular-fusioncharts` component showing the "Countries With Most Oil Reserves".
-
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-The Column 2D chart is shown below:
-
-{% embed_chart getting-started-your-first-chart.js %}
-
-To understand the chart components, click [here](/understanding-fusioncharts).
-
-## Chart Data
-
-The data to render the above chart is shown in the table below:
+Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
@@ -55,144 +60,104 @@ The data to render the above chart is shown in the table below:
 | US        | 30K                 |
 | China     | 30K                 |
 
-FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
 
-```json
-{
-  // Chart Configuration
-  "chart": {
-    "caption": "Countries With Most Oil Reserves [2017-18]",
-    "subCaption": "In MMbbl = One Million barrels",
-    "xAxisName": "Country",
-    "yAxisName": "Reserves (MMbbl)",
-    "numberSuffix": "K",
-    "theme": "fusion"
-  },
-  // Chart Data
-  "data": [
-    {
-      "label": "Venezuela",
-      "value": "290"
-    },
-    {
-      "label": "Saudi",
-      "value": "260"
-    },
-    {
-      "label": "Canada",
-      "value": "180"
-    },
-    {
-      "label": "Iran",
-      "value": "140"
-    },
-    {
-      "label": "Russia",
-      "value": "115"
-    },
-    {
-      "label": "UAE",
-      "value": "100"
-    },
-    {
-      "label": "US",
-      "value": "30"
-    },
-    {
-      "label": "China",
-      "value": "30"
-    }
-  ]
-}
-```
-
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, such as [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
-
-In the above JSON data:
-
-- Create the `chart` object to define the elements of the chart.
-
-- Set the `caption` and `subcaption` of the chart.
-
-- Set the value of `xAxisName` attribute to **Country**(first column of the table).
-
-- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
-
-- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
-
-- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
-
-- Set the `numberSuffix` attribute to set the unit of the values.
-
-- Set the `theme` attribute to apply the predefines themes to the chart.
-
-Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
-
-Now that you have the data in JSON format, let's see how to render the chart.
-
-## Render the Chart
-
-To render the chart follow the steps below:
-
-**Step 1:** In `app.module.ts` include the necessary files and add the dependency.
-
-- Import `angular-fusioncharts` in the root `@NgModule`.
-
-- Import FusionCharts library in the root `@NgModule`.
-
-- Import the chart type.
-
-- Include the FusionCharts theme file to apply style to the charts.
-
-- Pass the `fusioncharts` library and chart modules.
-
-The consolidated code is shown below:
+FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
 ```javascript
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { FormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
+// Preparing the chart data
+const chartData = [
+  {
+    label: "Venezuela",
+    value: "290"
+  },
+  {
+    label: "Saudi",
+    value: "260"
+  },
+  {
+    label: "Canada",
+    value: "180"
+  },
+  {
+    label: "Iran",
+    value: "140"
+  },
+  {
+    label: "Russia",
+    value: "115"
+  },
+  {
+    label: "UAE",
+    value: "100"
+  },
+  {
+    label: "US",
+    value: "30"
+  },
+  {
+    label: "China",
+    value: "30"
+  }
+];
+```
 
-import { AppComponent } from "./app.component";
+## Configure your Chart
 
-// Import angular-fusioncharts
-import { FusionChartsModule } from "angular-fusioncharts";
+Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
-// Import FusionCharts library and chart modules
-import * as FusionCharts from "fusioncharts";
-import * as Charts from "fusioncharts/fusioncharts.charts";
+```javascript
+// Create the datasource
+    this.dataSource = {
 
-import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+    // Chart Configuration
+      chart: {
+        caption: "Countries With Most Oil Reserves [2017-18]",
+        subCaption: "In MMbbl = One Million barrels",
+        xAxisName: "Country",
+        yAxisName: "Reserves (MMbbl)",
+        numberSuffix: "K",
+        theme: "fusion"
+      },
 
-// Pass the fusioncharts library and chart modules
-FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
+        // Chart Data - from step 2
+        "data": chartData
+    }
+};
+```
 
+Understand more about your chart and its components [here](https://www.fusioncharts.com/dev/understanding-fusioncharts).
+
+## Render the chart
+
+Get ready to render your first chart finally with the steps below:
+
+**Step 1**: In `app.module.ts` include the necessary files and import the fusioncharts dependency in `@NgModule`. The consolidated code is shown below:
+
+```javascript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+*// Import FusionCharts library and chart modules*
+import * as FusionCharts from 'fusioncharts';
+import * as charts from 'fusioncharts/fusioncharts.charts';
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+*// Pass the fusioncharts library and chart modules*
+
+FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, HttpModule, FusionChartsModule],
+  imports: [BrowserModule,FusionChartsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
 ```
 
-To include the specific chart types, individually add the following files using `import`:
-
-- PowerCharts - `fusioncharts/fusioncharts.powercharts`
-- Widgets - `fusioncharts/fusioncharts.widgets`
-- Gantt - `fusioncharts/fusioncharts.gantt`
-- Treemap - `fusioncharts/fusioncharts.treemap`
-- Zoomscatter - `fusioncharts/fusioncharts.zoomscatter`
-- Zoomline - `fusioncharts/fusioncharts.zoomline`
-- Overlapped Bar - `fusioncharts/fusioncharts.overlappedbar2d`
-- Overlapped Column - `fusioncharts/fusioncharts.overlappedcolumn2d`
-
-**Step 2:** Add data to the angular `app.component.ts`
-
-Set the JSON data within the `AppComponent` class as shown below:
-
-> The code below is same for Angular older and latest versions.
+**Step 2**: Specify the chart data within the AppComponent class in `app.component.ts` file.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -212,7 +177,7 @@ export class AppComponent {
         numberSuffix: "K",
         theme: "fusion"
       },
-      // Chart Data
+      *// Chart Data*
       data: [
         {
           label: "Venezuela",
@@ -225,47 +190,35 @@ export class AppComponent {
         {
           label: "Canada",
           value: "180"
-        },
-        {
+        }, {
           label: "Iran",
           value: "140"
-        },
-        {
+        }, {
           label: "Russia",
           value: "115"
-        },
-        {
+        }, {
           label: "UAE",
           value: "100"
-        },
-        {
+        }, {
           label: "US",
           value: "30"
-        },
-        {
+        }, {
           label: "China",
           value: "30"
         }
       ]
-    }; // end of this.dataSource
-  } // end of constructor
-} // end of class AppComponent
+    }; *// end of this.dataSource*
+  } *// end of constructor*
+} *// end of class AppComponent*
 ```
 
-**Step 3:** Now use `fusioncharts` component in `app.component.html`.
-
-Create the chart container and set the following:
-
-- Chart `width` and `height`
-
-- Chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-- The data source.
+**Step 3**: Now using the fusioncharts component create the chart container in `app.component.html` and set the `width`, `height`, `type` attributes as shown.
 
 ```html
 <h1>
   {{title}}
 </h1>
+
 <fusioncharts
   width="700"
   height="400"
@@ -275,14 +228,12 @@ Create the chart container and set the following:
 </fusioncharts>
 ```
 
+## See your Chart
+
+You should be able to see the chart as shown below.
+
+{% embed_chart getting-started-your-first-chart.js %}
+
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click here to get in touch with our support team.
+
 That's it! Your first chart using `angular-fusioncharts` is ready.
-
-## Problem Rendering the Chart?
-
-In case there is an error, and you are unable to see the chart, check for the following:
-
-- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
-
-- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
-
-- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

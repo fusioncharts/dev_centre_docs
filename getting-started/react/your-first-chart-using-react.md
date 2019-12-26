@@ -10,7 +10,7 @@ On this page, you'll see how to install FusionCharts and render a chart using th
 
 ## Prerequisite
 
-### Setting up a react project
+You need to have a react project setup before proceeding any further. If not, you can follow the below steps to initiate the project.
 
 Follow the steps given to initiate the project. One of the best ways to set up the development environment is using `create-react-app`. Find more about it [here](https://create-react-app.dev/docs/getting-started).
 
