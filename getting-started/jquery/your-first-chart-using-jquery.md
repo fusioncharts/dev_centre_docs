@@ -29,18 +29,13 @@ Before you begin, make sure your development environment includes `Node.js` and 
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 <div class='mt-30'><strong>You can install the fusioncharts components by following any of the methods below:</strong></div>
-<div class='mt-20'>Install the `jquery-fusioncharts` plugin</div>
 <pre><code class="language-javascript">
-$ npm install jquery-fusioncharts --save
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div class='mt-20'>2. Install the `fusioncharts` package</div>
-<pre><code class="language-javascript">
-$ npm install fusioncharts --save
+    $ npm install jquery-fusioncharts fusioncharts --save
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 <div class='mt-30'>After installing the fusioncharts components, add the references for the dependencies within `index.js`. Import all the required dependencies to get started.</div>
 <pre><code class="language-javascript">
+//Including FusionCharts Dependencies
 var FusionCharts = require('fusioncharts');
 var Charts = require('fusioncharts/fusioncharts.charts');
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
@@ -188,8 +183,6 @@ Understand more about your chart and its components [here](https://www.fusioncha
 
 Get ready to render your first chart finally with the steps below:
 
-**Step 1**: In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:
-
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='npm'>NPM</a></li>
@@ -198,6 +191,7 @@ Get ready to render your first chart finally with the steps below:
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
+<div><strong>Step 1</strong>: In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
 <pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
 var Charts = require('fusioncharts/fusioncharts.charts');
@@ -253,18 +247,6 @@ $('document').ready(function () {
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
-<ul>
-    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
-    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
-    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
-    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
-    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
-    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
-    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
-    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
-</ul>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 <div class='mt-30'><strong>Step 2: Specify the chart container within the `index.html` file.</strong></div>
 <pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
