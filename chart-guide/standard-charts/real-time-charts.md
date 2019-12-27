@@ -102,6 +102,10 @@ Click [here](http://jsfiddle.net/fusioncharts/43fJn/) to edit the realtime line 
 
 ## Realtime Area Chart
 
+A realtime area chart looks as follows:
+
+{% embed_chartAnatomy real-time-area-chart.json %}
+
 To create a realtime area chart, set the `type` attribute to `realtimearea` chart. The rest of the data structure remains the same.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimearea) page of realtime area chart.
@@ -127,6 +131,10 @@ A realtime stacked area chart looks like:
 Click [here](http://jsfiddle.net/fusioncharts/C8mkW/) to edit the realtime stacked area chart.
 
 ## Realtime Column Chart
+
+A realtime column chart looks as follows:
+
+{% embed_chartAnatomy real-time-column-chart.json %}
 
 In the above samples, we rendered realtime line and area charts. Let's now create a realtime column charts showcasing number of online transactions per second on the e-commerce site.
 
@@ -155,6 +163,10 @@ A realtime stacked column chart looks like:
 Click [here](http://jsfiddle.net/fusioncharts/bLUw5/) to edit the realtime stacked column chart.
 
 ## Realtime Dual Y-axis Line Chart
+
+A realtime dual y-axis line chart looks as follows:
+
+{% embed_chartAnatomy real-time-dual-y-axis-line-chart.json %}
 
 To create a realtime dual y-axis line chart, set the `type` attribute to `realtimelinedy`.
 
