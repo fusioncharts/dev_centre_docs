@@ -39,7 +39,7 @@ $ npm install jquery-fusioncharts --save
 $ npm install fusioncharts --save
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<div class='mt-30'><strong>After installing the fusioncharts components, add the references for the dependencies within `index.js`. Import all the required dependencies to get started.</strong></div>
+<div class='mt-30'>After installing the fusioncharts components, add the references for the dependencies within `index.js`. Import all the required dependencies to get started.</div>
 <pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
 var Charts = require('fusioncharts/fusioncharts.charts');
