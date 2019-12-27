@@ -74,6 +74,10 @@ The format of realtime data for realtime charts depends on:
 
 ## RealTime Line Chart
 
+A realtime line chart looks as follows:
+
+{% embed_chartAnatomy real-time-line-chart.json %}
+
 Let's create our first realtime line chart showcasing the stock price monitoring at Harry's SuperMart.
 
 To create a realtime chart follow the steps given below:
