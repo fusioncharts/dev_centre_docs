@@ -41,12 +41,12 @@ Install the react-fusioncharts and fusioncharts modules using the following comm
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<div><strong>To install fusioncharts and the `react-fusioncharts` component via npm using the command mentioned below:</strong></div>
+<div>To install fusioncharts and the `react-fusioncharts` component via npm using the command mentioned below:</div>
 <pre><code class="language-javascript">
     $ npm install fusioncharts react-fusioncharts --save
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<div><strong>After installing the fusioncharts components, you can replace the code in App.js file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</strong></div>
+<div>After installing the fusioncharts components, you can replace the code in App.js file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
 <pre><code class="language-javascript">
     *// Step 1 - Include react*
     import React from 'react';
