@@ -22,7 +22,7 @@ The FusionCharts Suite XT includes the following types of stacked charts:
 
 * Stacked Bar 3D Chart
 
-## Stacked column 2D Chart
+## Stacked Column 2D Chart
 
 As an example, we will create a stacked column 2D chart to plot the revenue split for each quarter of the current year by product category - food products and non-food products. The data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products, instead of alongside as in multi-series charts.
 
@@ -139,9 +139,9 @@ A 100% stacked column 2D chart looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/pcgxjcLb/) to edit the above stacked column 2D chart.
 
-## Show Percent Values in Tool-Tips
+## Show Percent Values in Tooltips
 
-By default, actual data values are rendered in tool-tips. Set the `showPercentInToolTip`  to `1` to show the percentage values in tool-tips.
+By default, actual data values are rendered in tool-tips. Set the `showPercentInToolTip`  to `1` to show the percentage values in tooltips.
 
 Refer to the code given below:
 
@@ -152,7 +152,7 @@ Refer to the code given below:
   },
 }
 ```
-A stacked column chart configured to show percent values in tool-tips looks like this:
+A stacked column chart configured to show percent values in tooltips looks like this:
 
 {% embed_chart standard-charts-stacked-charts-example-8.js %}
 
