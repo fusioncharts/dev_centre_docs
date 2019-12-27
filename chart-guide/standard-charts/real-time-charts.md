@@ -72,7 +72,7 @@ The format of real-time data for real-time charts depends on:
 
 * the commands for the chart.
 
-## Real-Time Line chart
+## Real-Time Line Chart
 
 Let's create our first real-time line chart showcasing the stock price monitoring at Harry's SuperMart.
 
@@ -96,7 +96,7 @@ A real-time line chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/43fJn/) to edit the real-time line chart.
 
-## Real Time Area chart
+## Real Time Area Chart
 
 To create a real-time area chart, set the `type` attribute to `realtimearea` chart. The rest of the data structure remains the same.
 
@@ -108,7 +108,7 @@ A real-time area chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/kdfX7/) to edit the real-time area chart.
 
-## Real Time Stacked Area chart
+## Real Time Stacked Area Chart
 
 Now, let's create a real-time stacked area chart showcasing the number of live visitors in every 5 seconds interval.
 
@@ -122,7 +122,7 @@ A real-time stacked area chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/C8mkW/) to edit the real-time stacked area chart.
 
-## Real Time Column chart
+## Real Time Column Chart
 
 In the above samples, we rendered real-time line and area charts. Let's now create a real-time column charts showcasing number of online transactions per second on the e-commerce site.
 
@@ -136,7 +136,7 @@ A real-time column chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/NvJat/) to edit the real-time column chart.
 
-## Real Time Stacked Column chart
+## Real Time Stacked Column Chart
 
 FusionCharts also supports real-time stacked column chart. Here the sample below will showcase the number of live visitors on site, updated every 5 seconds.
 
@@ -150,7 +150,7 @@ A real-time stacked column chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/bLUw5/) to edit the real-time stacked column chart.
 
-## Real Time Dual Y-axis Line chart
+## Real Time Dual Y-axis Line Chart
 
 To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`.
 
@@ -192,7 +192,7 @@ If working over HTTP and need to ensure that you utilize the bandwidth efficient
 ```
 Here, the values 23, 25, and 24 correspond to the first dataset, 43, 47, and 45 correspond to the second dataset, and 45, 47, and 49 correspond to the third dataset. All values for one dataset are separated by a comma, all datasets are separated by the | (pipe character)
 
-## Attributes to Update the chart
+## Attributes to Update the Chart
 
 Assume that you plot a real-time line chart to monitor stock prices for Harry's SuperMart. On this monitoring chart, the stock price is checked at every seventh instance of data update. You want to add a vertical trend-line that helps you keep track of every instance when the price is checked.
 
@@ -213,7 +213,7 @@ Click [here](http://jsfiddle.net/fusioncharts/k703vvrm/) to edit the real-time l
 
 ### The Label Attribute
 
-#### Update the label as a part of Real-Time data
+#### Update the label as Part of Real-Time data
 
 Consider that you are plotting a real-time multi-series line chart that indicates the load on three servers. The time is plotted on the x-axis, and the corresponding load for all three servers is plotted on the y-axis. With each incremental data, you will now also have to provide the label for the x-axis along with the data value for the y-axis.
 
@@ -250,9 +250,9 @@ To do this, you can provide the incremental data to the chart in the following f
 ```
 The link in the above data has been URL Encoded because it contains special characters like `&`, `%`, etc.
 
-### The ToolText Attribute
+### The Tooltext Attribute
 
-To update the tool-text, you can provide the corresponding incremental data to the chart in the following format:
+To update the tooltext, you can provide the corresponding incremental data to the chart in the following format:
 
 ```
 &label=11:45&toolText=12/3/2007 11:45:23 AM &value=23|43|45
@@ -590,7 +590,7 @@ ALERT|
 -
 Footfall exceeded average|
 
-## Configure the alert manager for individual datasets
+## Configure the Alert Manager for Individual Datasets
 
 In real-time charts, you can control the datasets that are checked by the alert manager to raise any events.
 
@@ -674,7 +674,7 @@ The following two steps are involved in configuring and using the message logger
 
 * Configure the real-time data provider page to broadcast/stream messages to the logger.
 
-### Configure the message logger
+### Configure the Message Logger
 
 To configure the message logger, follow the steps given below:
 
@@ -733,7 +733,7 @@ By default, this attribute takes its value from the `messageGoesToJS` attribute 
 
 In the next section, let's look at different examples of real-time updates that can be streamed to the message logger.
 
-## Examples of Real-Time Update
+## Examples of Realtime Update
 
 ### Simple Example
 
@@ -815,7 +815,7 @@ Refer to the chart below:
 
 Click [here](http://jsfiddle.net/fusioncharts/u7h1arjq/) to edit the real-time column chart.
 
-## Use the client-side JavaScript API
+## Use the Client Side JavaScript API
 
 Using the client-side JavaScript API, you can manipulate the message logger to show/hide the logger or clear the message history.
 
@@ -872,7 +872,7 @@ The chart view can be cleared:
 
 Now, let's discuss how you can clear the chart view using each of the above listed methods.
 
-## Clear the chart from the Server
+## Clear the Chart from the Server
 
 Consider the following scenario: You are plotting the values of a certain counter, in real-time, 24/7. At the start of each day, you want to clear the existing data being shown on the chart (of the previous day).
 
@@ -914,7 +914,7 @@ A real-time column chart configured to do this looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/qbp4t2hj/) to edit the real-time column chart.
 
-## Clear chart using JavaScript API
+## Clear Chart Using JavaScript API
 
 Real-time charts expose a JavaScript API that enables you to clear charts at the client-side. To do this, you need to:
 
@@ -934,7 +934,7 @@ Click [here](http://jsfiddle.net/fusioncharts/yvvypqbg/) to edit the real-time c
 
 Now, let's check out how to feed data for the real-time charts.
 
-## Feed Data using JavaScript
+## Feed Data Using JavaScript
 
 When feeding data using the JavaScript API, ensure that the format of the data feed is same as that specified by the real-time data provider page.
 
@@ -954,7 +954,7 @@ A real-time line chart for which data is set using the `feedData(strData)` metho
 
 Click [here](http://jsfiddle.net/fusioncharts/rngL29jb/) to edit the real-time line chart.
 
-## Retrieve Data using JavaScript
+## Retrieve Data Using JavaScript
 
 Real-time charts allow you to get the current view of data (i.e., the data which is currently being shown on the chart) using JavaScript.
 
@@ -968,7 +968,7 @@ You can get data using:
 
 * The `getData()` method
 
-### The FC_ChartUpdated() method
+### The FC_ChartUpdated() Method
 
 Real-time charts let you track data updates for the real-time chart(s) rendered on a page. Configure charts to notify new data fetches and data updates by calling the `FC_ChartUpdated(DOMId)` JavaScript method.
 
@@ -1022,7 +1022,7 @@ FusionCharts("mychart").addEventListener("RealtimeUpdateError",
 );
 ```
 
-### The getData() method
+### The getData() Method
 
 For any real-time chart present in the HTML page, you can use the `getData()` method to get the current chart data in a JavaScript array.
 
@@ -1119,11 +1119,11 @@ The FusionCharts JavaScript Class API provides some events for real-time charts.
 
 In the advanced model, two event parameters are passed to the event listener function. The first parameter, `eventObject` is is structurally common for all events. The second parameter, `argumentsObject` contains event specific properties.
 
-## Event parameters in the simple model
+## Event Parameters in the Simple Model
 
 In the simple events model, most events (except the `FC_Exported` and the `FC_Resized` events) provide the DOM Id of the source chart - the chart that raised the event.
 
-## Event parameters in the advanced model
+## Event Parameters in the Advanced Model
 
 In the advanced model, two event parameters are passed to the event listener function. The first parameter, `eventObject` is is structurally common for all events. The second parameter, `argumentsObject` contains event specific properties.
 
@@ -1139,9 +1139,9 @@ The details of these objects are explained below:
 
 For more information on simple and advanced events and the `argumentsObject` for each event, refer to the [FusionCharts Events API](/api/fusioncharts/fusioncharts-events) page.
 
-## Real-time Events
+## Realtime Events
 
-### The realtimeUpdateComplete event
+### The realtimeUpdateComplete Event
 
 The FusionCharts JavaScript Class API `realTimeUpdateComplete` event is raised every time a real-time chart or gauge updates itself with new data.
 
@@ -1212,7 +1212,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Whether your chart JavaScript files and JSON/XML data are on the same sub-domain. Cross domain data loading is not allowed.
 
-* Whether your JSON/XML and chart file names are in accordance with the naming conventions imposed by your operating system
+* Whether your JSON/XML and chart file names are in accordance with the naming conventions imposed by your operating system.
 
 **If you get the "Invalid Data." message, it means that the JSON/XML data is malformed. Check it again for common errors like:**
 
