@@ -10,7 +10,7 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`.
+Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from CDN or Local Files.
 
 - jQuery requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
 
