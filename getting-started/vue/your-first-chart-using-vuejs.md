@@ -47,7 +47,7 @@ You can install the fusioncharts components by following any of the methods belo
 npm install fusioncharts vue-fusioncharts --save
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<div class='mt-30'>After installing the fusioncharts components, you can replace the code in src %gt; App.vue file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
+<div class='mt-30'>After installing the fusioncharts components, you can replace the code in src > App.vue file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
 <pre><code class="language-javascript">
 // Include Dependencies
 import Vue from 'vue';
@@ -299,18 +299,6 @@ dataSource
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `import`</strong></div>
-<ul>
-    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
-    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
-    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
-    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
-    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
-    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
-    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
-    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
-</ul>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </div>
 
 <div class='tab cdn-tab'>
