@@ -4,15 +4,15 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "Single Series Spline Area 2D Chart Anatomy",
+            "_itemHeader": "Single Series Spline Area 2D Chart Anatomy",
             "imgSrc": "single-series-spline-area-2d-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "64.5%",
-                  "topPosition": "1%",
+                  "leftPosition": "37%",
+                  "topPosition": "2%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
