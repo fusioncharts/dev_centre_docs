@@ -265,6 +265,22 @@ $('document').ready(function () {
     <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
 </ul>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+<div class='mt-30'><strong>Step 2: Specify the chart container within the `index.html` file.</strong></div>
+<pre><code class="language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Getting Started&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="chart-container"&gt;Fusioncharts will render here&lt;/div&gt;
+    &lt;script src="main.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div class='mt-30'><strong>Step 3: Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.</strong></div>
 </div>
 <div class='tab cdn-tab'>
 <pre><code class="language-html">
@@ -404,23 +420,6 @@ $('document').ready(function () {
 
 </div>
 </div>
-
-**Step 2**: Specify the chart container within the `index.html` file.
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Getting Started</title>
-  </head>
-  <body>
-    <div id="chart-container">Fusioncharts will render here</div>
-    <script src="main.js"></script>
-  </body>
-</html>
-```
-
-**Step 3**: Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.
 
 ## See your chart
 
