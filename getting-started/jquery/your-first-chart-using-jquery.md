@@ -28,7 +28,7 @@ Before you begin, make sure your development environment includes `Node.js` and 
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
-<div class='mt-30'><strong>To install FusionCharts and the `jquery-fusioncharts` plugin via npm follow the steps below:</strong></div>
+<div class='mt-30'><strong>You can install the fusioncharts components by following any of the methods below:</strong></div>
 <div class='mt-20'>Install the `jquery-fusioncharts` plugin</div>
 <pre><code class="language-javascript">
 $ npm install jquery-fusioncharts --save
@@ -39,6 +39,21 @@ $ npm install jquery-fusioncharts --save
 $ npm install fusioncharts --save
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+<div class='mt-30'><strong>After installing the fusioncharts components, add the references for the dependencies within `index.js`. Import all the required dependencies to get started.</strong></div>
+<pre><code class="language-javascript">
+var FusionCharts = require('fusioncharts');
+var Charts = require('fusioncharts/fusioncharts.charts');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+var $ = require('jquery');
+var jQueryFusionCharts = require('jquery-fusioncharts');
+
+Charts(FusionCharts);_ // Resolve Charts as dependency for FusionCharts_
+
+FusionTheme(FusionCharts);_ // Resolve Fusion theme as dependency for FusionCharts_
+
+jQueryFusionCharts(FusionCharts); _//Resolve jQueryFusionCharts as dependency for FusionCharts_
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </div>
 
 <div class='tab cdn-tab'>
@@ -85,22 +100,6 @@ $ npm install fusioncharts --save
 
 </div>
 </div>
-
-After installing the fusioncharts components, add the references for the dependencies within `index.js`. Import all the required dependencies to get started.
-
-```javascript
-var FusionCharts = require('fusioncharts');
-var Charts = require('fusioncharts/fusioncharts.charts');
-var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-var $ = require('jquery');
-var jQueryFusionCharts = require('jquery-fusioncharts');
-
-Charts(FusionCharts);* // Resolve Charts as dependency for FusionCharts*
-
-FusionTheme(FusionCharts);*  // Resolve Fusion theme as dependency for FusionCharts*
-
-jQueryFusionCharts(FusionCharts); *//Resolve jQueryFusionCharts as dependency for FusionCharts*
-```
 
 That completes the installation of `FusionCharts` and the `jquery-fusioncharts` plugin.
 
