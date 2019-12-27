@@ -42,11 +42,11 @@ var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 var $ = require('jquery');
 var jQueryFusionCharts = require('jquery-fusioncharts');
 
-Charts(FusionCharts);_ // Resolve Charts as dependency for FusionCharts_
+Charts(FusionCharts); // Resolve Charts as dependency for FusionCharts
 
-FusionTheme(FusionCharts);_ // Resolve Fusion theme as dependency for FusionCharts_
+FusionTheme(FusionCharts); // Resolve Fusion theme as dependency for FusionCharts
 
-jQueryFusionCharts(FusionCharts); _//Resolve jQueryFusionCharts as dependency for FusionCharts_
+jQueryFusionCharts(FusionCharts); //Resolve jQueryFusionCharts as dependency for FusionCharts
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </div>
@@ -113,7 +113,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along the x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along the x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
