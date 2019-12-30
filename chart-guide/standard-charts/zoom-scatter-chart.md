@@ -10,7 +10,7 @@ The FusionCharts Suite XT zoom-scatter chart, a special type of chart, is an ext
 
 The zoom-scatter chart is primarily used to find correlations between datasets. Correlations in the chart can be determined by visual patterns in the data. Higher the number of data points, higher is the accuracy of the correlations. The zoom-scatter chart is capable of handling more than a million data points in modern canvas supported browsers (including IE9+).
 
-## Create a Zoom Scatter chart
+## Create a Zoom Scatter Chart
 
 Let's create a chart which compares the admission rate (in percent) with the average annual returns on the degree (in percent) for five majors and over a period of 20 years.
 
