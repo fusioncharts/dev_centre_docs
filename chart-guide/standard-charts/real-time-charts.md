@@ -314,7 +314,7 @@ To stop the chart from the polling the server for realtime updates, you can send
 ```
 After you have stopped updates for a chart, you can restart updates either by user interaction or by using client side JavaScript API.
 
-## Send Messages Pertinent
+## Send Pertinent Messages
 
 For realtime charts that show the message logger, update various parameters for the message logger in realtime.
 
