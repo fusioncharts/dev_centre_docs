@@ -4,7 +4,7 @@
    "content": {
       "header": "Below you can find different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "Chart with Single Series",
+            "_itemHeader": "Chart with Single Series",
             "imgSrc": "chart-with-single-series-img.png",
             "annotations": [{
                   "annotationNumber": "1",

@@ -4,7 +4,7 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "Area Chart Anatomy",
+            "_itemHeader": "Area Chart Anatomy",
             "imgSrc": "area-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
