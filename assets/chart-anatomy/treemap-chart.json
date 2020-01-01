@@ -5,7 +5,7 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Treemap Chart",
+            "_itemHeader": "Treemap Chart Anatomy",
             "imgSrc": "treemap-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
