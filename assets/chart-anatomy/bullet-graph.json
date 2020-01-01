@@ -4,8 +4,8 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "_itemHeader": "Bar Chart Anatomy",
-            "imgSrc": "bar-chart-anatomy.png",
+            "_itemHeader": "Bullet Graph Anatomy",
+            "imgSrc": "bullet-graph-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
