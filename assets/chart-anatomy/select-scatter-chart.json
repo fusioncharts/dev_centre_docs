@@ -11,7 +11,7 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "32.5%",
+                  "leftPosition": "37%",
                   "topPosition": "2%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
@@ -32,7 +32,7 @@
                   "annotationName": "Sub-caption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "57%",
+                  "leftPosition": "66%",
                   "topPosition": "7.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
@@ -49,7 +49,7 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "85%",
+                  "leftPosition": "78%",
                   "topPosition": "2%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
@@ -66,8 +66,8 @@
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "90%",
-                  "topPosition": "68%",
+                  "leftPosition": "92%",
+                  "topPosition": "61%",
                   "annotationLinks": []
                },
                {
@@ -75,8 +75,8 @@
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "47%",
-                  "topPosition": "80%",
+                  "leftPosition": "46%",
+                  "topPosition": "74%",
                   "annotationLinks": []
                },
                {
@@ -111,7 +111,7 @@
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "18%",
+                  "leftPosition": "28%",
                   "topPosition": "46.5%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
@@ -120,29 +120,11 @@
                },
                {
                   "annotationNumber": "10",
-                  "annotationName": "Anchors",
-                  "annotationDesc": "Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/anchors-and-lines",
-                  "leftPosition": "78%",
-                  "topPosition": "25%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "11",
-                  "annotationName": "Crossline",
-                  "annotationDesc": "Cross line is a vertical line/area used as a quick reference for data plots. Learn more about it ",
-                  "annotationDescLinkPath": "/dev/chart-guide/chart-configurations/cross-line",
-                  "leftPosition": "72.5%",
-                  "topPosition": "16%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "12",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "78%",
-                  "topPosition": "53.5%",
+                  "leftPosition": "52%",
+                  "topPosition": "32.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
