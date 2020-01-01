@@ -62,6 +62,8 @@ Click [here](http://jsfiddle.net/fusioncharts/z14fubaq/) to edit the stacked col
 
 To render a stacked area chart in 2D, change the value of the `type` attribute from `stackedcolumn3d` to `stackedarea2d`. The rest of the data structure remains the same.
 
+{% embed_chartAnatomy stacked-area-chart.json %}
+
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=stackedarea2d) page of stacked area 2D chart.
 
 A stacked area chart in 2D looks like:
