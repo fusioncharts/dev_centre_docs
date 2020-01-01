@@ -114,7 +114,7 @@ Now, let's customize the appearance and properties of the charts.
 
 The trend elements on a chart include trendlines and trendzones.
 
-Trend-lines are reference horizontal or vertical lines which aid in interpretation of data. They can be used to set context or define limits and targets. For example, while plotting quarterly sales of a company, you might want to use a trendline to depict the target sales. Trend-zones are similar to trendlines except that they mark out an entire zone rather than just a line.
+Trendlines are horizontal or vertical reference lines, which aid in interpretation of data. They can be used to set context or define limits and targets. For example, while plotting quarterly sales of a company, you might want to use a trendline to depict the target sales. Trendzones are similar to trendlines except that they mark out an entire zone rather than just a line.
 
 To plot a trendline on a chart, follow the steps given below:
 
@@ -152,7 +152,7 @@ A quarterly sales summary chart rendered with a trendline to show the target val
 
 Click [here](http://jsfiddle.net/fusioncharts/aktyv9jm/) to edit the column chart.
 
-**Trend-zone** is used to show a range of target values. The trendzone uses the same attributes as the trendline. `isTrendZone` is the attribute which is used to specify whether a chart will be rendered with a trendline or a trendzone. Setting this attribute to `0` will render a trendline, setting it to `1` (default) will render a trendzone.
+**Trendzone** is used to show a range of target values. The trendzone uses the same attributes as the trendline. `isTrendZone` is the attribute which is used to specify whether a chart will be rendered with a trendline or a trendzone. Setting this attribute to `0` will render a trendline, setting it to `1` (default) will render a trendzone.
 
 A quarterly sales summary chart rendered with a trendzone to show a range of target values looks like this:
 
