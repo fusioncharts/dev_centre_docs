@@ -52,7 +52,11 @@ Click [here](http://jsfiddle.net/fusioncharts/xL3py/) to edit the column 3D char
 
 ## Bar 2D Chart
 
-Now, let's create a bar 2D chart. In the chart below, we have shown five stores in a supermarket that have highest sales. The sales figures are plotted along the x-axis, and the store names are plotted along the y-axis.
+Now, let's create a bar 2D chart. 
+
+{% embed_chartAnatomy bar-chart.json %}
+
+In the chart below, we have shown five stores in a supermarket that have highest sales. The sales figures are plotted along the x-axis, and the store names are plotted along the y-axis.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=bar2d) page of bar 2D chart.
 
