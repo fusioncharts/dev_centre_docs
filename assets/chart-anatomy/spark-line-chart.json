@@ -64,6 +64,15 @@
                },
                {
                   "annotationNumber": "4",
+                  "annotationName": "Data Values",
+                  "annotationDesc": "Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
+                  "leftPosition": "59%",
+                  "topPosition": "58%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "5",
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
