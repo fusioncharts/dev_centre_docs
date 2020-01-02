@@ -75,7 +75,7 @@
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "47%",
+                  "leftPosition": "41%",
                   "topPosition": "80%",
                   "annotationLinks": []
                },
@@ -84,8 +84,8 @@
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "66.5%",
-                  "topPosition": "72%",
+                  "leftPosition": "59.5%",
+                  "topPosition": "71.5%",
                   "annotationLinks": []
                },
                {
@@ -102,7 +102,7 @@
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "3%",
+                  "leftPosition": "-2%",
                   "topPosition": "40%",
                   "annotationLinks": []
                },
