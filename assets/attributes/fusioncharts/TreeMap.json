@@ -56,6 +56,13 @@
         "name": "showNavigationBar"
       },
       {
+        "description": "When you set the value of the `parentLabelLineHeight` attribute to a particular value and drill down to a child level chart, the child chart header is assigned the default height once more. \n\n If you want to assign the same header height to the parent chart as well as the child chart, use the `navigationBarHeight` attribute. Note that you can only assign a fixed range of values to this attribute, depending on the chart height. For instance, if the chart has a height of 350 px, you can only set the value of `navigationBarHeight` between 26px and 40 px. If you assign a value greater than 40 px to this attribute, it will be ignored.",
+        "range": "In Pixels",
+        "type": "Number",
+        "versionsince": "3.15.0",
+        "name": "navigationbarheight"
+      },
+      {
         "description": "This attribute sets whether the child node label will be shown or hidden. \n\n__Default value__: 0 (hidden)",
         "range": "0/1",
         "type": "Boolean",

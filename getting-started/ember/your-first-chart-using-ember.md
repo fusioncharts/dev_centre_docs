@@ -4,47 +4,41 @@ description: This article outlines the steps to create your first chart, widget 
 heading: Create a Chart in Ember Using FusionCharts
 ---
 
-## Overview
-
 The **ember-fusioncharts** component, provide bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.
 
-In this page, we'll see how to install FusionCharts and render a chart using the `ember-fusionCharts` component.
+On this page, we'll see how to install FusionCharts and render a chart using the `ember-fusionCharts` component.
 
-## Installation
+## Prerequisite
 
-To install **FusionCharts** and the `ember-fusioncharts` component via `npm` follow the steps below:
+Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`.
 
-**Step 1:** Install `fusioncharts` core library
+- Ember requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
 
-```bash
-$ npm install fusioncharts --save
+- To download and install npm packages, you must have an npm package manager. run `npm -v` in a terminal/console window, to check if have the npm client installed.
+
+Follow the steps mentioned [here](https://guides.emberjs.com/release/getting-started/quick-start/) to initiate the project using Ember CLI.
+
+## Installation and including dependencies
+
+To install `FusionCharts` and the `ember-fusioncharts` component via npm follow the steps below:
+
+**Step 1**: Install `fusioncharts` core library
+
+```javascript
+npm install fusioncharts --save
 ```
 
-**Step 2:** Install `ember-fusioncharts`
+**Step 2**: Install `ember-fusioncharts` component
 
-You can install `ember-fusioncharts` component for any of the following CLI:
-
-```bash
-$ ember install ember-fusioncharts
+```javascript
+ember install ember-fusioncharts
 ```
 
-That completes the installation of **FusionCharts** and the `ember-fusioncharts` component.
+That completes the installation of `FusionCharts` and the `ember-fusioncharts` component.
 
-## Create your first chart
+## Preparing the data
 
-Let's create a Column 2D chart using the `ember-fusioncharts` component showing the "Countries With Most Oil Reserves".
-
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-The Column 2D chart is shown below:
-
-{% embed_chart getting-started-your-first-chart.js %}
-
-To understand the chart components, click [here](/understanding-fusioncharts).
-
-## Chart data
-
-The data to render the above chart is shown in the table below:
+Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
@@ -57,103 +51,83 @@ The data to render the above chart is shown in the table below:
 | US        | 30K                 |
 | China     | 30K                 |
 
-FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
 
-```json
-{
-  // Chart Configuration
-  "chart": {
-    "caption": "Countries With Most Oil Reserves [2017-18]",
-    "subCaption": "In MMbbl = One Million barrels",
-    "xAxisName": "Country",
-    "yAxisName": "Reserves (MMbbl)",
-    "numberSuffix": "K",
-    "theme": "fusion"
+FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
+
+```javascript
+// Preparing the chart data
+const chartData = [
+  {
+    label: "Venezuela",
+    value: "290"
   },
-  // Chart Data
-  "data": [
-    {
-      "label": "Venezuela",
-      "value": "290"
-    },
-    {
-      "label": "Saudi",
-      "value": "260"
-    },
-    {
-      "label": "Canada",
-      "value": "180"
-    },
-    {
-      "label": "Iran",
-      "value": "140"
-    },
-    {
-      "label": "Russia",
-      "value": "115"
-    },
-    {
-      "label": "UAE",
-      "value": "100"
-    },
-    {
-      "label": "US",
-      "value": "30"
-    },
-    {
-      "label": "China",
-      "value": "30"
-    }
-  ]
-}
+  {
+    label: "Saudi",
+    value: "260"
+  },
+  {
+    label: "Canada",
+    value: "180"
+  },
+  {
+    label: "Iran",
+    value: "140"
+  },
+  {
+    label: "Russia",
+    value: "115"
+  },
+  {
+    label: "UAE",
+    value: "100"
+  },
+  {
+    label: "US",
+    value: "30"
+  },
+  {
+    label: "China",
+    value: "30"
+  }
+];
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+## Configure your chart
 
-In the above JSON data:
+Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
-- Create the `chart` object to define the elements of the chart.
+```javascript
+// Create the datasource
+dataSource = {
+  // Chart Configuration
+  chart: {
+    caption: "Countries With Most Oil Reserves [2017-18]",
+    subCaption: "In MMbbl = One Million barrels",
+    xAxisName: "Country",
+    yAxisName: "Reserves (MMbbl)",
+    numberSuffix: "K",
+    theme: "fusion"
+  },
+  // Chart Data - from step 2
+  data: chartData
+};
+```
 
-- Set the `caption` and `subcaption` of the chart.
-
-- Set the value of `xAxisName` attribute to **Country**(first column of the table).
-
-- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
-
-- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
-
-- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
-
-- Set the `numberSuffix` attribute to set the unit of the values.
-
-- Set the `theme` attribute to apply the predefines themes to the chart.
-
-Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
-
-Now that you have the data in JSON format, let's see how to render the chart.
+Understand more about your chart and its components [here](https://www.fusioncharts.com/dev/understanding-fusioncharts).
 
 ## Render the chart
 
-To render the chart using `ember-fusioncharts` component, follow the steps below:
+Get ready to render your first chart using `ember-fusioncharts` component finally with the steps below:
 
-**Step 1:** In `ember-cli-build.js` file include the necessary files and add the dependency.
+**Step 1**: In `ember-cli-build.js` file include the necessary files and add the dependency.
 
-- Import FusionCharts library to your `ember-cli-build.js` file
-
-- Import `ember-fusioncharts` to your `ember-cli-build.js` file
-
-- Import specific modules to your `ember-cli-build.js` file
-
-- Import the FusionCharts theme file to apply the style to the charts
-
-> If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
+> If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be an asset to use in that environment.
 
 ```javascript
-/* eslint-env node */
-"use strict";
-
+/ _eslint-env node_ /;
+("use strict");
 const EmberApp = require("ember-cli/lib/broccoli/ember-app");
-
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
@@ -163,41 +137,30 @@ module.exports = function(defaults) {
   app.import("node_modules/fusioncharts/fusioncharts.js");
   app.import("node_modules/fusioncharts/fusioncharts.charts.js");
   app.import("node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js");
+
   // Use `app.import` to import additional libraries/files
   return app.toTree();
 };
 ```
 
-To include specific chart types, individually add the following files using `import`:
-
-- **PowerCharts** - `fusioncharts/fusioncharts.powercharts`
-- **Widgets** - `fusioncharts/fusioncharts.widgets`
-- **Gantt** - `fusioncharts/fusioncharts.gantt`
-- **Treemap** - `fusioncharts/fusioncharts.treemap`
-- **Zoomscatter** - `fusioncharts/fusioncharts.zoomscatter`
-- **Zoomline** - `fusioncharts/fusioncharts.zoomline`
-- **Overlapped Bar** - `fusioncharts/fusioncharts.overlappedbar2d`
-- **Overlapped Column** - `fusioncharts/fusioncharts.overlappedcolumn2d`
-
-**Step 2:** Create Component and specify the chart data in `chart-viewer.js` file
+**Step 2**: Create a component and specify the chart data in `chart-viewer.js` file
 
 - Create a simple component (e.g. chart-viewer) to render your chart.
 
-- Add data to `chart-viewer.js` file
-
-- Set the chart `width` and `height`
-
-- Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-- Set the data source
-
-```bash
-$ ember g component chart-viewer
+```javascript
+ember g component chart-viewer
 ```
+
+OR
+
+```javascript
+ember generate component-class chart-viewer
+```
+
+- Set the chart's `width`, `height`, `type` and the `dataSource` in `chart-viewer.js` file.
 
 ```javascript
 import Component from "@ember/component";
-
 const myDataSource = {
   chart: {
     caption: "Countries With Most Oil Reserves [2017-18]",
@@ -242,44 +205,48 @@ const myDataSource = {
       value: "30"
     }
   ]
-}; // end of this.dataSource
-
-export default Component.extend({
-  title: "Ember FusionCharts Sample",
-  width: 700,
-  height: 400,
-  type: "column2d",
-  dataFormat: "json",
-  dataSource: myDataSource
-});
+};
 ```
 
-**Step 3:** Add data to `chart-viewer.hbs`
+**Step 3**: Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
 
-Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
-
-```html
-<h1>{{ title }}</h1>
-{{fusioncharts-xt width=width height=height type=type dataFormat=dataFormat
-dataSource=dataSource }}
+```javascript
+<h1>{{ title }}</h1>;
+{
+  {
+    fusioncharts - xt;
+    width = width;
+    height = height;
+    type = type;
+    dataFormat = dataFormat;
+    dataSource = dataSource;
+  }
+}
 ```
 
-**Step 4:** Add data to `application.hbs`
+**Step 4**: Add `chart-viewer` component to your `application.hbs` template:
 
-Add `chart-viewer` component to your `application.hbs` template:
-
-```html
-{{chart-viewer}} {{outlet}}
+```javascript
+{
+  {
+    chart - viewer;
+  }
+}
+{
+  {
+    outlet;
+  }
+}
 ```
+
+## See your chart
+
+You should be able to see the chart as shown below.
+
+{% embed_chart getting-started-your-first-chart.js %}
+
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+
+If you are getting a **this.\$()** error on the page, check this [link](https://guides.emberjs.com/release/configuring-ember/optional-features/) and implement the `jquery-integration` to fix the error.
 
 That's it! Your first chart using `ember-fusioncharts` is ready.
-
-## Problem rendering the chart?
-
-In case there is an error, and you are unable to see the chart, check for the following:
-
-- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
-
-- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
-
-- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

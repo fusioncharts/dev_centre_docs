@@ -4,15 +4,33 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Chart in React using FusionCharts
 ---
 
-## Overview
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight React component that provides bindings for FusionCharts. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any React project.
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project.
+On this page, you'll see how to install FusionCharts and render a chart using the `react-fusionCharts` component.
 
-In this page, we'll see how to install FusionCharts and render a chart using the `react-fusionCharts` component.
+## Setting up a React project
 
-## Installation
+You need to have a react project setup before proceeding any further. If not, you can follow the below steps to initiate the project.
 
-Install **FusionCharts** and the `react-fusioncharts` component using any of the following methods:
+Follow the steps given to initiate the project. One of the best ways to set up the development environment is using `create-react-app`. Find more about it [here](https://create-react-app.dev/docs/getting-started).
+
+Open the terminal, go ahead and enter:
+
+```javascript
+npx create-react-app first-fusioncharts-project
+cd first-fusioncharts-project
+npm start
+```
+
+`first-fusioncharts-project` is the working directory where React Boilerplate will be installed along with all the utilities and dependencies.
+
+> The working directory should contain a `package.json`. If the package is not present, you can create it using the `npm init -y` command.
+
+Now, open [http://localhost:3000/](http://localhost:3000/) to see your React app.
+
+## Installation and including dependencies
+
+Install the react-fusioncharts and fusioncharts modules using the following command:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -23,16 +41,33 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<div><strong>To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</strong></div>
-<div>1. Install the `react-fusioncharts` module</div>
+<div>To install fusioncharts and the `react-fusioncharts` component via npm using the command mentioned below:</div>
 <pre><code class="language-javascript">
-    $ npm install react-fusioncharts --save
+    $ npm install fusioncharts react-fusioncharts --save
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<div>2. Install the `fusioncharts` JS files</div>
+<div>After installing the fusioncharts components, you can replace the code in App.js file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
 <pre><code class="language-javascript">
-    $ npm install fusioncharts --save
+    *// Step 1 - Include react*
+    import React from 'react';
+
+    *// Step 2 - Include the react-fusioncharts component*
+    import ReactFC from 'react-fusioncharts';
+
+    *// Step 3 - Include the fusioncharts library*
+    import FusionCharts from 'fusioncharts';
+
+    *// Step 4 - Include the chart type*
+    import Column2D from 'fusioncharts/fusioncharts.charts';
+
+    *// Step 5 - Include the theme as fusion*
+    import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+    *// Step 6 - Adding the chart and theme as dependency to the core fusioncharts*
+    ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 
@@ -99,23 +134,9 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 </div>
 </div>
 
-That completes the installation of FusionCharts and the react-fusioncharts component.
+## Preparing the data
 
-## Create your first chart
-
-Let's create a Column 2D chart using the react-fusioncharts component showing the "Countries With Most Oil Reserves".
-
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-The Column 2D chart is shown below:
-
-{% embed_chart getting-started-your-first-chart-example-1.js %}
-
-To understand the chart components, click [here](/understanding-fusioncharts).
-
-## Chart data
-
-The data to render the above chart is shown in the table below:
+Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in the tabular form below.
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
@@ -128,107 +149,82 @@ The data to render the above chart is shown in the table below:
 | US        | 30K                 |
 | China     | 30K                 |
 
-FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
 
-```json
-{
-  // Chart Configuration
-  "chart": {
-    "caption": "Countries With Most Oil Reserves [2017-18]",
-    "subCaption": "In MMbbl = One Million barrels",
-    "xAxisName": "Country",
-    "yAxisName": "Reserves (MMbbl)",
-    "numberSuffix": "K",
-    "theme": "fusion"
+FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
+
+```javascript
+// Preparing the chart data
+const chartData = [
+  {
+    label: "Venezuela",
+    value: "290"
   },
-  // Chart Data
-  "data": [
-    {
-      "label": "Venezuela",
-      "value": "290"
-    },
-    {
-      "label": "Saudi",
-      "value": "260"
-    },
-    {
-      "label": "Canada",
-      "value": "180"
-    },
-    {
-      "label": "Iran",
-      "value": "140"
-    },
-    {
-      "label": "Russia",
-      "value": "115"
-    },
-    {
-      "label": "UAE",
-      "value": "100"
-    },
-    {
-      "label": "US",
-      "value": "30"
-    },
-    {
-      "label": "China",
-      "value": "30"
-    }
-  ]
-}
+  {
+    label: "Saudi",
+    value: "260"
+  },
+  {
+    label: "Canada",
+    value: "180"
+  },
+  {
+    label: "Iran",
+    value: "140"
+  },
+  {
+    label: "Russia",
+    value: "115"
+  },
+  {
+    label: "UAE",
+    value: "100"
+  },
+  {
+    label: "US",
+    value: "30"
+  },
+  {
+    label: "China",
+    value: "30"
+  }
+];
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+## Configure your chart
 
-In the above JSON data:
+Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
-- Create the `chart` object to define the elements of the chart.
+```javascript
+// Create a JSON object to store the chart configurations
+const chartConfigs = {
+  type: "column2d", // The chart type
+  width: "700", // Width of the chart
+  height: "400", // Height of the chart
+  dataFormat: "json", // Data type
+  dataSource: {
+    // Chart Configuration
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017-18]",
+      subCaption: "In MMbbl = One Million barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      theme: "fusion"
+    },
+    // Chart Data - from step 2
+    data: chartData
+  }
+};
+```
 
-- Set the `caption` and `subcaption` of the chart.
+> The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
-- Set the value of `xAxisName` attribute to **Country**(first column of the table).
-
-- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
-
-- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
-
-- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
-
-- Set the `numberSuffix` attribute to set the unit of the values.
-
-- Set the `theme` attribute to apply the predefines themes to the chart.
-
-Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
-
-Now that you have the data in JSON format, let's see how to render the chart.
+Understand more about your chart and its components [here](/understanding-fusioncharts).
 
 ## Render the chart
 
-To render the chart, follow the steps below:
-
-1. Include **react**
-
-2. Include `react-fusioncharts`
-
-3. Include the `fusioncharts` library
-
-4. Include the chart type
-
-5. Include the FusionCharts theme file to apply the style to the charts.
-
-6. Add the chart and theme and as a dependency to the core.
-
-7. Store the chart configurations in a JSON object. In this JSON object:
-
-   - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-   - Set the width and height (in pixels).
-   - Set the `dataFormat` as JSON.
-   - Embed the json data as the value of the `dataSource`.
-
-8. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
-
-The consolidated code is shown below:
+Get ready to render your first chart finally. Use this consolidated code shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -240,81 +236,91 @@ The consolidated code is shown below:
 <div class='tab npm-tab active'>
 
 <pre><code class="language-javascript">
-// Step 1 - Include react
-import React from 'react';
-import ReactDOM from 'react-dom';
+// STEP 1 - Include Dependencies
+// Include react
+import React from "react";
+import ReactDOM from "react-dom";
 
-// Step 2 - Include the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
+// Include the react-fusioncharts component
+import ReactFC from "react-fusioncharts";
 
-// Step 3 - Include the fusioncharts library
-import FusionCharts from 'fusioncharts';
+// Include the fusioncharts library
+import FusionCharts from "fusioncharts";
 
-// Step 4 - Include the chart type
-import Column2D from 'fusioncharts/fusioncharts.charts';
+// Include the chart type
+import Column2D from "fusioncharts/fusioncharts.charts";
 
-// Step 5 - Include the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+// Include the theme as fusion
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-// Step 6 - Adding the chart and theme as dependency to the core fusioncharts
+// Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-// Step 7 - Creating the JSON object to store the chart configurations
+// STEP 2 - Chart Data
+const chartData = [
+  {
+    label: "Venezuela",
+    value: "290"
+  },
+  {
+    label: "Saudi",
+    value: "260"
+  },
+  {
+    label: "Canada",
+    value: "180"
+  },
+  {
+    label: "Iran",
+    value: "140"
+  },
+  {
+    label: "Russia",
+    value: "115"
+  },
+  {
+    label: "UAE",
+    value: "100"
+  },
+  {
+    label: "US",
+    value: "30"
+  },
+  {
+    label: "China",
+    value: "30"
+  }
+];
+
+// STEP 3 - Creating the JSON object to store the chart configurations
 const chartConfigs = {
-    type: 'column2d',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: { 
-        // Chart Configuration 
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
+  type: "column2d", // The chart type
+  width: "700", // Width of the chart
+  height: "400", // Height of the chart
+  dataFormat: "json", // Data type
+  dataSource: {
+    // Chart Configuration
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017-18]",
+      subCaption: "In MMbbl = One Million barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      theme: "fusion"
+    },
+    // Chart Data
+    data: chartData
+  }
 };
 
-// Step 9 - Creating the DOM element to pass the react-fusioncharts component 
+// STEP 4 - Creating the DOM element to pass the react-fusioncharts component
 class App extends React.Component {
   render() {
-     return (
-     &lt;ReactFC
-        {...chartConfigs}/&gt;
-     );
+    return %lt;ReactFC {...chartConfigs} /%gt;;
   }
 }
 
-export default App
+export default App;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 
@@ -495,14 +501,12 @@ export default App
 </div>
 </div>
 
+## See your chart
+
+You should be able to see the chart as shown below.
+
+{% embed_chart getting-started-your-first-chart.js %}
+
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+
 That's it! Your first chart using `react-fusioncharts` is ready.
-
-## Problem rendering the chart?
-
-In case there is an error, and you are unable to see the chart, check for the following:
-
-- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
-
-- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
-
-- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

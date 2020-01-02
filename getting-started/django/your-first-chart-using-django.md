@@ -7,19 +7,22 @@ heading: Create a Chart Using Django
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple **Django** wrapper for FusionCharts. The `FusionCharts Django` wrapper lets you easily add rich and interactive charts to any Django project. Using the wrapper, you can create charts in your browsers, without writing any JavaScript code.
 
 Let us see how to install FusionCharts and render a chart using the django-fusioncharts wrapper.
->The FusionCharts Django wrapper requires Python 2.7 or higher.
+
+> The FusionCharts Django wrapper requires Python 2.7 or higher.
 
 ## Prerequisite
 
 You need to have a django project setup before proceeding any further. If not, you can follow the below steps to initiate the project. Find more about how to configure Django [here](https://docs.djangoproject.com/en/2.2/topics/install/).
 
 Open the terminal and enter the following commands:
+
 - Create a new django project (Eg. - FusionChartsProject):
 
 ```javascript
 django-admin startproject FusionChartsProject
 cd FusionChartsProject
 ```
+
 - Create a new django app (Eg.- fusioncharts) in the project directory:
 
 ```javascript
@@ -30,11 +33,12 @@ python manage.py startapp fusioncharts
 
 ## Installation & Including Dependencies
 
-Download the FusionCharts library to get the `django-fusioncharts` wrapper. 
+Download the FusionCharts library to get the `django-fusioncharts` wrapper.
 
 <a href='https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=django' class="btn btn-primary-grad btn-sm">Download FusionCharts library</a>
 
 After downloading the fusioncharts components, add `django-fusioncharts` wrapper and Fusioncharts Javascript files in your project as below:
+
 - Copy the `fusioncharts.py` file from your downloaded FusionCharts Library. It is present at - `Integrations > django > fusioncharts-wrapper` . Paste it in the fusioncharts app directory.
 
 - Create a `static` folder inside fusioncharts (app) directory. Within the static folder, create another folder with the same name as that of the app (`fusioncharts`) and copy all the Javascript files from the downloaded FusionCharts library (`fusioncharts-suite-xt > js`) inside `static>fusioncharts` directory.
@@ -169,6 +173,7 @@ python manage.py collectstatic
 ## Create your Chart
 
 Let's create a Column 2D Chart using the `django-fusioncharts` wrapper showing "Countries with most Oil Reserves".
+
 - Add the following code in the `views.py` file.
 
 - The `views.py` file will have the `chart constructor`, `attributes` and the `datasource` required to render the chart. The consolidated code is shown below:
@@ -243,6 +248,7 @@ urlpatterns = [
    path('', include('fusioncharts.urls'))
 ]
 ```
+
 ## Render the Chart
 
 With the container for the chart created in the `index.html`, run the following command to render the chart:
