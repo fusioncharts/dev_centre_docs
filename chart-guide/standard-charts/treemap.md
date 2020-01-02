@@ -8,6 +8,8 @@ heading: Treemap
 
 Treemapping is a visual representation of an information tree created using the tree data structure. It is displayed as 2D nested rectangles, representing the nodes and leaves of the tree data and their relations with each other.
 
+{% embed_chartAnatomy treemap-chart.json %}
+
 A simple treemap will look like as shown below:
 
 {% embed_all standard-charts-treemap-example-1.js %}

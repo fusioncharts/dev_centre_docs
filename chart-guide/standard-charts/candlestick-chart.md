@@ -26,6 +26,8 @@ The FusionCharts Suite XT candlestick chart offers you a powerful and interactiv
 
 * Option to draw vertical indicator lines at any point on the x-axis.
 
+{% embed_chartAnatomy candlestick-chart.json %}
+
 ## Create a Candlestick Chart
 
 As an example, we will create a candlestick chart that shows the daily stock price for Harry's SuperMart (stock name HRYS) for the last two months.

@@ -1,0 +1,143 @@
+{
+   "header": "Chart Anatomy",
+   "subHeader": "To know how FusionCharts works it is important to understand the various components and concepts of a chart",
+   "content": {
+      "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+      "contentGroup": [
+         {
+            "itemHeader": "Pareto Chart",
+            "imgSrc": "pareto-chart-anatomy.png",
+            "annotations": [{
+                  "annotationNumber": "1",
+                  "annotationName": "Caption",
+                  "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "66%",
+                  "topPosition": "7%",
+                  "annotationLinks": [{
+                        "linkDesc": "Learn how to add caption ",
+                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                     },
+                     {
+                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                     },
+                     {
+                        "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "2",
+                  "annotationName": "Sub-caption",
+                  "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "40.5%",
+                  "topPosition": "12.5%",
+                  "annotationLinks": [{
+                        "linkDesc": "Learn how to add sub-caption ",
+                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                     },
+                     {
+                        "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "3",
+                  "annotationName": "Canvas Area",
+                  "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "90%",
+                  "topPosition": "30%",
+                  "annotationLinks": [{
+                        "linkDesc": "You can customize border for canvas, learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
+                     },
+                     {
+                        "linkDesc": "You can customize background color for canvas, as well as add gradient fill to it. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/canvas#use-gradient-fill"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "4",
+                  "annotationName": "X-Axis",
+                  "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "leftPosition": "19%",
+                  "topPosition": "68%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "5",
+                  "annotationName": "X-Axis Title",
+                  "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "leftPosition": "55%",
+                  "topPosition": "77%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "6",
+                  "annotationName": "X-Axis Labels",
+                  "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "leftPosition": "65.5%",
+                  "topPosition": "72%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "7",
+                  "annotationName": "Y-Axis",
+                  "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "leftPosition": "13%",
+                  "topPosition": "14%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "8",
+                  "annotationName": "Y-Axis Title",
+                  "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "leftPosition": "9%",
+                  "topPosition": "38%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "9",
+                  "annotationName": "Data Plot",
+                  "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "42%",
+                  "topPosition": "51.5%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
+                     "linkPath": "/chart-guide/chart-configurations/data-plot"
+                  }]
+               },
+               {
+                  "annotationNumber": "10",
+                  "annotationName": "Tooltip",
+                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "leftPosition": "38%",
+                  "topPosition": "37%",
+                  "annotationLinks": [{
+                        "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
+                     },
+                     {
+                        "linkDesc": "You can also customize the text of tooltip and use values plotted on the chart using macros, learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros"
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}

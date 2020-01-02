@@ -10,6 +10,8 @@ Use Pyramid charts to compare data, such as the sales data of a product for a ye
 
 As you know, each segment in a pyramid chart represents a dataset with the height of the segment representing the value for that dataset. To distinguish segments from one another, you can configure them individually for their background, border, etc. Adjacent to the pyramid segments, the label and value of that pyramid can be displayed.
 
+{% embed_chartAnatomy pyramid-chart.json %}
+
 ## Salient features
 
 - Click on Interactive pyramid slices to separate them from the main pyramid.

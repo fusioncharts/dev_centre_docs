@@ -1,0 +1,109 @@
+{
+   "header": "Chart Anatomy",
+   "subHeader": "To know how FusionCharts works, it is important to understand the various components and concepts of a chart",
+   "content": {
+      "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+      "contentGroup": [
+         {
+            "itemHeader": "LED Gauge",
+            "imgSrc": "led-gauge-anatomy.png",
+            "annotations": [{
+                  "annotationNumber": "1",
+                  "annotationName": "Caption",
+                  "annotationDesc": "The caption (also called the gauge title) is the heading of your gauge. You can add custom text for the caption, as well as configure its font properties and cosmetics.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "35%",
+                  "topPosition": "31%",
+                  "annotationLinks": [{
+                        "linkDesc": "Learn how to add caption ",
+                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                     },
+                     {
+                        "linkDesc": "You can customize font properties and cosmetics of caption using attributes. Know more about them. ",
+                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                     },
+                     {
+                        "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "2",
+                  "annotationName": "Canvas Area",
+                  "annotationDesc": "Canvas area refers to the area in which the gauge data is plotted, excluding the area where titles, legends, and axis names are rendered.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "78%",
+                  "topPosition": "30%",
+                  "annotationLinks": [{
+                        "linkDesc": "You can customize border for canvas, learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
+                     },
+                     {
+                        "linkDesc": "You can customize background color for canvas, as well as add gradient fill to it. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/canvas#use-gradient-fill"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "3",
+                  "annotationName": "Lower Limit",
+                  "annotationDesc": "Lower Limit refers to the lowest point in the reference scale used in the gauge. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "leftPosition": "22.5%",
+                  "topPosition": "49%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "4",
+                  "annotationName": "Upper Limit",
+                  "annotationDesc": "Upper Limit refers to the highest point in the reference scale used in the gauge. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "leftPosition": "70%",
+                  "topPosition": "49%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "5",
+                  "annotationName": "Gauge Scale",
+                  "annotationDesc": "The gauge scale displays all possible values between the lower and upper limits. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "leftPosition": "51%",
+                  "topPosition": "50%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "6",
+                  "annotationName": " Chart Value",
+                  "annotationDesc": "The chart value displays the data value of the plot point where the mouse pointer is placed. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "leftPosition": "41%",
+                  "topPosition": "52%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "7",
+                  "annotationName": "Tick Mark",
+                  "annotationDesc": "Tick marks are placed at regular intervals on the gauge scale, to indicate data values. Learn more about them ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "leftPosition": "55.5%",
+                  "topPosition": "41%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "8",
+                  "annotationName": "Data Plot",
+                  "annotationDesc": "Data plot refers to the columns of the dial in an angular gauge, the sphere in a bulb gauge, the thermometer in a thermometer gauge, and so on.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "32%",
+                  "topPosition": "40.5%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
+                     "linkPath": "/chart-guide/chart-configurations/data-plot"
+                  }]
+               }
+            ]
+         }
+      ]
+   }
+}

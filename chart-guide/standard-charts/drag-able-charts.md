@@ -6,7 +6,7 @@ heading: Drag-able Charts
 
 > These chart types belong to **PowerCharts XT**.
 
-Drag-able charts are a special set of charts that allow you to visually manipulate the data on a chart and then submit it back. These charts can be used intensively for simulations, financial planning, etc.** **Drag-able charts allow you to visually morph the data to update the figures in the chart. These charts derive their basic features from the multi-series column, the multi-series line, and the multi-series area charts.
+Drag-able charts are a special set of charts that allow you to visually manipulate the data on a chart and then submit it back. These charts can be used intensively for simulations, financial planning, etc. Drag-able charts allow you to visually morph the data to update the figures in the chart. These charts derive their basic features from the multi-series column, the multi-series line, and the multi-series area charts.
 
 FusionCharts Suite XT offers the following three types of drag-able charts:
 

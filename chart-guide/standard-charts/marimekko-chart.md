@@ -16,6 +16,8 @@ The following three dimensions of marketing data can be represented using a Mari
 
 * Individual share of competitors in a market segment
 
+{% embed_chartAnatomy marimekko-chart.json %}
+
 ## Create a Marimekko Chart
 
 Let's create a simple Marimekko chart that shows the top 3 Electronic Brands (Bose, Dell, and Apple) in the top 3 revenue earning states (California, Washington, and Nevada).

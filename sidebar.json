@@ -1137,7 +1137,7 @@
         ]
       },
       {
-        "title": "Configuring your charts",
+        "title": "Configuring Your Charts",
         "children": [
           {
             "title": "By Chart Type",
@@ -1162,7 +1162,7 @@
                     "path": "/chart-guide/standard-charts/pie-and-doughnut-charts"
                   },
                   {
-                    "title": "Multi-Series Charts",
+                    "title": "Multi-series Charts",
                     "path": "/chart-guide/standard-charts/multi-series-charts"
                   },
                   {
@@ -1278,7 +1278,7 @@
                     "path": "/chart-guide/standard-charts/spline-charts"
                   },
                   {
-                    "title": "Inverse Y Axis Chart",
+                    "title": "Inverse Y-axis Chart",
                     "path": "/chart-guide/standard-charts/inverse-y-axis-chart"
                   },
                   {
@@ -1323,7 +1323,7 @@
                     "path": "/chart-guide/gauges-and-widgets/cylinder-gauge"
                   },
                   {
-                    "title": "Led Gauge",
+                    "title": "LED Gauge",
                     "path": "/chart-guide/gauges-and-widgets/led-gauge"
                   },
                   {
@@ -1483,7 +1483,7 @@
                 "path": "/chart-guide/chart-configurations/toolbar"
               },
               {
-                "title": "Drill-down",
+                "title": "Drill Down",
                 "path": "/chart-guide/chart-configurations/drill-down"
               }
             ]
@@ -1517,11 +1517,11 @@
                 ]
               },
               {
-                "title": "Positioning Annotations using Absolute Values",
+                "title": "Positioning Annotations Using Absolute Values",
                 "path": "/chart-guide/chart-configurations/annotations/positioning-annotations-using-absolute-values"
               },
               {
-                "title": "Positioning Annotations using Macros",
+                "title": "Positioning Annotations Using Macros",
                 "path": "/chart-guide/chart-configurations/annotations/positioning-annotations-using-macros"
               },
               {
@@ -1686,7 +1686,7 @@
                 "path": "/common-use-cases/render-thumbnail-versions-of-chart"
               },
               {
-                "title": "Create Interactive Charts using PHP and MySQL Database",
+                "title": "Create Interactive Charts Using PHP and MySQL Database",
                 "path": "/using-with-server-side-languages/tutorials/php-mysql-charts",
                 "visibility": false
               }

@@ -10,7 +10,9 @@ An LED Gauge is similar to an angular gauge chart, but with a horizontal/vertica
 
 LED gauges are of two types - horizontal and vertical. The horizontal LED gauge has the bar placed horizontally, while the vertical LED has it vertically. LED Gauges are used in financial applications like management dashboards, factory operation output reports, etc.
 
-## Basics of LED gauges
+{% embed_chartAnatomy led-gauge.json %}
+
+## Basics of LED Gauges
 
 The LED gauge (horizontal/vertical) is defined by its minimum and maximum values. Within that scale, you can create various ranges to classify your data. For example, you might define a range called "Best" that consists of values between 60 and 100. You might also define a range called "Weak" that consists of values between 30 and 60. For each range, you define a color, which helps in visually distinguishing the ranges from each other.
 
@@ -26,13 +28,13 @@ A vertical LED gauge rendered to indicate fuel levels looks like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/5Bd2f/) to edit the above gauge.
 
-## Elements of LED gauges
+## Elements of LED Gauges
 
 In the image below, you can see the basic elements of an LED gauge.
 
 ![Led-gauge](/images/led-gauge-introduction-1.jpg)
 
-## Color range
+## Color Range
 
 You can create various ranges within the minimum and maximum values of an LED gauge. You can create as many ranges as you need. For each range, you need to specify the minimum and maximum limits, a name (rendered as the label for the range), and the hex code for the color of the range.
 
@@ -44,11 +46,11 @@ In the sample LED gauges shown above, the lower limit is 0 and the upper limit i
 
 * 75-100: `#6baa01`
 
-## LED bars and gaps
+## LED Bars and Gaps
 
 The LED bars are the actual data indicators in an LED gauge. The LED bars fill up the container in a ratio that suggests the chart value.
 
-## Tick marks
+## Tick Marks
 
 Tick marks are the calibration marks on the horizontal (or vertical, for the vertical LED) scale to help interpret the reading. There are two types of tick marks which you can draw on the chart:
 
@@ -56,7 +58,7 @@ Tick marks are the calibration marks on the horizontal (or vertical, for the ver
 
 * Minor tick marks – These are the smaller lines enclosed within the bigger lines.
 
-## Chart value
+## Chart Value
 
 The chart value indicates the value of the gauge in numeric terms.
 
@@ -64,7 +66,7 @@ The chart value indicates the value of the gauge in numeric terms.
 
 Annotations let you draw your own custom shapes, text, or load images on the chart.
 
-## Create an LED gauge
+## Create an LED Gauge
 
 To create an LED gauge use the attributes given below:
 
@@ -92,7 +94,7 @@ The chart with `type` attribute set to `vled` will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/5Bd2f/) to edit the above gauge.
 
-## Specify the background color
+## Specify the Background Color
 
 Use the `gaugeFillColor` attribute to specify the hex code of the color to be applied to the gauge background.
 
@@ -112,7 +114,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/hcdL2h1q/) to edit the above gauge.
 
-## Use a single color for LED fill and background
+## Use a Single Color for LED Fill and Background
 
 When you divide the LED scale into color ranges, the LED bars in each zone take up the fill color of that color range. You can, however, render the LED background using a single fill color (the color of the range to which the current value belongs).
 
@@ -139,7 +141,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/BabW7/) to edit the above gauge.
 
-## Show/Hide the gauge border
+## Show/Hide the Gauge Border
 
 Set the value of the `showGaugeBorder` attribute to specify whether the border for the LED gauge should be displayed
 
@@ -159,7 +161,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/UZuye/) to edit the above gauge.
 
-## Customize gauge border properties
+## Customize Gauge Border Properties
 
 Use the following attributes to customize the gauge border:
 
@@ -187,7 +189,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Z547j/) to edit the above gauge.
 
-## Configure LED bar size and gap
+## Configure LED Bar Size and Gap
 
 By default, the gauge determines the bar size and the gap automatically, based on the data provided by you. However, you can explicitly specify the bar size and gap. Use the following attributes to do so:
 
@@ -214,7 +216,7 @@ Click [here](http://jsfiddle.net/fusioncharts/bq9gM/) to edit the above gauge.
 
 > To make the LEDs appear continuous, you can set `ledGap` to `0`.
 
-## Show/hide chart value
+## Show/Hide Chart Value
 
 Set the value of the `showValue` attribute to `1`, to specify whether the current data value, or the chart value, should be displayed.
 
@@ -234,7 +236,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/A5EWt/) to edit the above gauge.
 
-## Show/hide tick marks and tick values
+## Show/Hide Tick Marks and Tick Values
 
 Use the following attributes to show/hide tick marks and tick values:
 
@@ -259,7 +261,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/94uyv/) to edit the above gauge.
 
-## Configure tick marks and tick values
+## Configure Tick Marks and Tick Values
 
 By default, the tick marks and values are placed below the gauge in the horizontal LED gauge and to the right in the vertical LED gauge. However, you can explicitly configure the position of tick marks and tick values as required. Use the following attributes to configure tick marks and tick values:
 
@@ -307,7 +309,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/hduMV/) to edit the above gauge.
 
-## Configure tick mark and tick value cosmetics
+## Configure Tick Marks and Tick Value Cosmetics
 
 You can also use FusionCharts Suite XT to configure the cosmetics of major and minor tick marks. Use the following attributes to do so:
 
@@ -347,7 +349,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/zHfPX/) to edit the above gauge.
 
-## Configure hover effects
+## Configure Hover Effects
 
 Using FusionCharts Suite XT, you can display hover effects for the gauge. Set the value of the `showHoverEffect` attribute to `1`, to enable hover effects for an LED gauge. 
 
@@ -367,11 +369,11 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ah36v6e0/) to edit the above gauge.
 
-## Real time LED gauge
+## Realtime LED Gauge
 
 The LED gauge is a real time chart, which can continuously request new data from the server and display the same, without involving any page refreshes. The chart initializes itself, loads new data every n seconds, and silently updates itself to reflect the current state of data. There are two different ways you can update the LED gauge; one method directly polls data from the server while the other retrieves data using JavaScript API methods.
 
-## Real time data format
+## Realtime Data Format
 
 When you invoke the data provider page on the server end, it outputs the new data in the real time data format. The real time data format depends on:
 
@@ -389,7 +391,7 @@ Use the following JavaScript API methods used to update a pointer:
 
 * Use the `setData(value)` method to set the data for the gauge. The value should be within the limits of the gauge.
 
-## Configure real time updates using server-side script
+## Configure Realtime Updates Using Server-side Script
 
 Use the following parameters to configure real time updates using server-side scripts:
 
@@ -416,7 +418,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/abb2xdL4/) to edit the above gauge.
 
-## Stop/restart updates
+## Stop/Restart Updates
 
 Use the following JavaScript API methods to stop and restart real time updates to an LED gauge:
 
@@ -476,11 +478,11 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/q32kuqm4/) to edit the above gauge.
 
-## Configure real time events
+## Configure Realtime Events
 
 FusionCharts Suite XT introduces two events, `realTimeUpdateComplete` and `realTimeUpdateError`, to track real time updates on gauges. 
 
-### Use the `realTimeUpdateComplete` event
+### Use the `realTimeUpdateComplete` Event
 
 The `realTimeUpdateComplete` event is raised whenever the real time LED gauge updates itself with new data, or more specifically, in the following cases:
 
@@ -562,7 +564,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uas6cu6L/) to edit the above gauge.
 
-### Use the `realTimeUpdateError` event
+### Use the `realTimeUpdateError` Event
 
 The `realTimeUpdateError` event is raised when an error occurs while performing real time update using `datastreamURL`. The event arguments provided in the advanced model are as follows:
 
@@ -607,6 +609,6 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/60ubophr/) to edit the above gauge.
 
-## Troubleshoot real time gauges
+## Troubleshoot Realtime Gauges
 
 While accessing any of the JavaScript methods listed above, if you get an error like `"... is not a function of ..."`, make sure that you are NOT running the chart from the local file system (C:\ , D:\). Instead, run the chart from behind a server (localhost - IIS, Apache, etc.). This is because the default security settings do not allow the chart to perform JavaScript interaction on the local file system, unless otherwise specifically set.

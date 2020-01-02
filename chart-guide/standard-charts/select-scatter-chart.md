@@ -8,6 +8,8 @@ heading: Select-scatter Chart
 
 The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points. Essentially, it is an extension of the XY plot chart (scatter chart) with the added functionality of selecting any number of points on the chart and returning them to the server, or JavaScript functions, for further processing.
 
+{% embed_chartAnatomy select-scatter-chart.json %}
+
 This can be used for a variety of purposes, where you want your users to visually select data from the scatter chart. As an example, we will plot a select-scatter chart to show the products sold and the price points earned, for televisions and cell phones at Harry's SuperMart in one week.
 
 To create a select-scatter chart follow the steps given below:
