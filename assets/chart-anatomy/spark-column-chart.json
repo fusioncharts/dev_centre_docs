@@ -50,8 +50,8 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "80%",
-                  "topPosition": "30%",
+                  "leftPosition": "70%",
+                  "topPosition": "33%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
@@ -76,15 +76,6 @@
                },
                {
                   "annotationNumber": "5",
-                  "annotationName": "Data Values",
-                  "annotationDesc": "Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
-                  "leftPosition": "59%",
-                  "topPosition": "58%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "6",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
