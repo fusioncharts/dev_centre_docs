@@ -64,10 +64,6 @@ Click [here](http://jsfiddle.net/fusioncharts/3x4xcn70/) to edit the above multi
 
 ## Multi-series Bar 2D Chart
 
-A multi-series bar 2D chart looks as shown below:
-
-{% embed_chartAnatomy ms-bar-chart.json %}
-
 Let's move ahead to create a multi-series bar chart in 2D which will show sales as per two major categories in different stores for last month.
 
 To render a multi-series bar chart in 2D, set the `type` to `msbar2d`.
@@ -93,10 +89,6 @@ The multi-series bar chart in 3D looks like:
 Click [here](http://jsfiddle.net/fusioncharts/X9xPM/) to edit the above multi-series chart.
 
 ## Multi-series Line Chart
-
-A multi-series line 2D chart looks as shown below:
-
-{% embed_chartAnatomy ms-line-chart.json %}
 
 Now, let's create a multi-series line chart which will show the comparison between the number of visitors in malls in a week. The line segments for both datasets, one for the last week and one for the current week, have been rendered using different colors. This makes it easy to interpret and compare the data.
 
