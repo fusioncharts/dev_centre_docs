@@ -12,8 +12,6 @@ A bullet graph is a variation of a bar graph and serves as a lightweight replace
 
 The bullet graph features a single, primary measure (for example, current year-to-date revenue) and  compares that measure to one or more other measures to enrich its meaning (for example, compared to a target). It then displays the context of qualitative ranges of performance, such as poor, satisfactory, and good.
 
-{% embed_chartAnatomy bullet-graph.json %}
-
 ## Types of bullet graphs
 
 You can orient bullet graphs horizontally or vertically. You can even stack multiple graphs to compare several measures at once.
