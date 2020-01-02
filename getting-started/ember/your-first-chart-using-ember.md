@@ -243,7 +243,7 @@ const myDataSource = {
 
 You should be able to see the chart as shown below.
 
-{% embed_chart getting-started-your-first-chart-java.js %}
+{% embed_chart getting-started-your-first-chart.js %}
 
 If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
