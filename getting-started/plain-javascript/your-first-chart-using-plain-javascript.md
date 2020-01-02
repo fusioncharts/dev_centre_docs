@@ -198,6 +198,8 @@ Understand more about your chart and its components[ here](https://www.fusioncha
 
 ## Render the chart
 
+Get ready to render your first chart finally with the steps below:
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='cdn'>CDN</a></li>
