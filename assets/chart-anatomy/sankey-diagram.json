@@ -61,7 +61,7 @@
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "65%",
+                  "leftPosition": "86.5%",
                   "topPosition": "69%",
                   "annotationLinks": [
                      {
