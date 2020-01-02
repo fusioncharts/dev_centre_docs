@@ -16,6 +16,8 @@ Common application areas for radar charts include:
 
 * Product comparison
 
+{% embed_chartAnatomy radar-chart.json %}
+
 As an example, we will create our first radar chart that plots the results of a customer feedback survey based on five categories. The radar chart will be used to compare the results for each category and determine what service needs improvement.
 
 To create a radar chart follow the steps given below:

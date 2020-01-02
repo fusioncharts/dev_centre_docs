@@ -8,6 +8,8 @@ heading: Stacked Charts
 
 Stacked charts are similar to [multi-series charts](/chart-guide/standard-charts/multi-series-charts), but plot datasets on top of each other, instead of the clustered side-by-side placement adopted by multi-series charts. Stacked charts help in displaying the cumulative magnitude of two or more data series. They help in representing a data value as a sum of two or more values. Each data series can be distinguished by the color of its section in the stack.
 
+{% embed_chartAnatomy stacked-chart.json %}
+
 The FusionCharts Suite XT includes the following types of stacked charts:
 
 * Stacked Column 2D Chart
@@ -20,7 +22,7 @@ The FusionCharts Suite XT includes the following types of stacked charts:
 
 * Stacked Bar 3D Chart
 
-## Stacked column 2D Chart
+## Stacked Column 2D Chart
 
 As an example, we will create a stacked column 2D chart to plot the revenue split for each quarter of the current year by product category - food products and non-food products. The data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products, instead of alongside as in multi-series charts.
 
@@ -59,6 +61,8 @@ Click [here](http://jsfiddle.net/fusioncharts/z14fubaq/) to edit the stacked col
 ## Stacked Area 2D Chart
 
 To render a stacked area chart in 2D, change the value of the `type` attribute from `stackedcolumn3d` to `stackedarea2d`. The rest of the data structure remains the same.
+
+{% embed_chartAnatomy stacked-area-chart.json %}
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=stackedarea2d) page of stacked area 2D chart.
 
@@ -137,9 +141,9 @@ A 100% stacked column 2D chart looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/pcgxjcLb/) to edit the above stacked column 2D chart.
 
-## Show Percent Values in Tool-Tips
+## Show Percent Values in Tooltips
 
-By default, actual data values are rendered in tool-tips. Set the `showPercentInToolTip`  to `1` to show the percentage values in tool-tips.
+By default, actual data values are rendered in tool-tips. Set the `showPercentInToolTip`  to `1` to show the percentage values in tooltips.
 
 Refer to the code given below:
 
@@ -150,7 +154,7 @@ Refer to the code given below:
   },
 }
 ```
-A stacked column chart configured to show percent values in tool-tips looks like this:
+A stacked column chart configured to show percent values in tooltips looks like this:
 
 {% embed_chart standard-charts-stacked-charts-example-8.js %}
 

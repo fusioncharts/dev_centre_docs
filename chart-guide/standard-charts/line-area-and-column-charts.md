@@ -10,6 +10,8 @@ heading: Line, Area and Column charts
 
 Column and bar charts represent data with rectangular horizontal or vertical bars. The height of the bars is proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis, and the `data labels` are plotted along the x-axis. Whereas in bar charts, the numeric values are plotted along the x-axis, and the data labels are plotted along the y-axis. Column and bar charts are best fitted when you want to compare values.
 
+{% embed_chartAnatomy column-chart.json %}
+
 In this sample, let's create our first column chart showcasing the monthly revenue for last one year for Harry's SuperMart. We have plotted the months along the x-axis and the revenue, which is a numeric value, along the y-axis.
 
 To create a single-series column 2D chart, follow the steps given below:
@@ -50,7 +52,11 @@ Click [here](http://jsfiddle.net/fusioncharts/xL3py/) to edit the column 3D char
 
 ## Bar 2D Chart
 
-Now, let's create a bar 2D chart. In the chart below, we have shown five stores in a supermarket that have highest sales. The sales figures are plotted along the x-axis, and the store names are plotted along the y-axis.
+Now, let's create a bar 2D chart. 
+
+{% embed_chartAnatomy bar-chart.json %}
+
+In the chart below, we have shown five stores in a supermarket that have highest sales. The sales figures are plotted along the x-axis, and the store names are plotted along the y-axis.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=bar2d) page of bar 2D chart.
 
@@ -76,6 +82,8 @@ Click [here](http://jsfiddle.net/fusioncharts/b03dgzvv/) to edit the bar 3D char
 
 Line charts are commonly used to showcase the trend in data over time whereas area charts are used to display quantitative data. Information in a line or area chart is plotted on the x- and y-axis; data values are plotted using data points that are connected using line segments.
 
+{% embed_chartAnatomy line-chart.json %}
+
 In the sample, let's create a line chart showcasing total footfall at Bakersfield Central. We have plotted the days along the x-axis and the number of visitors along the y-axis.
 
 To render a line chart, set the `type` attribute to `line`.
@@ -92,6 +100,8 @@ Click [here](http://jsfiddle.net/fusioncharts/xb9TG/) to edit the line chart.
 
 An area chart is similar to the line chart, with the difference that the area marked by the anchors and line segments is filled.
 
+{% embed_chartAnatomy area-chart.json %}
+
 To render an area chart with the same use case as above, set the `type` to `area`.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=area2d) page of area chart.
@@ -106,23 +116,23 @@ Now, let's customize the appearance and properties of the charts.
 
 ## Plot Trend Elements
 
-The trend elements on a chart include trend-lines and trend-zones.
+The trend elements on a chart include trendlines and trendzones.
 
-Trend-lines are reference horizontal or vertical lines which aid in interpretation of data. They can be used to set context or define limits and targets. For example, while plotting quarterly sales of a company, you might want to use a trend-line to depict the target sales. Trend-zones are similar to trend-lines except that they mark out an entire zone rather than just a line.
+Trendlines are horizontal or vertical reference lines, which aid in interpretation of data. They can be used to set context or define limits and targets. For example, while plotting quarterly sales of a company, you might want to use a trendline to depict the target sales. Trendzones are similar to trendlines except that they mark out an entire zone rather than just a line.
 
-To plot a trend-line on a chart, follow the steps given below:
+To plot a trendline on a chart, follow the steps given below:
 
-- Create a `trendlines` object to render one or more than one trend-lines.
+- Create a `trendlines` object to render one or more than one trendline.
 
-- Create a `line` object for a particular trend-line.
+- Create a `line` object for a particular trendline.
 
-- In `line` object, set the `startValue` attribute to specify the starting value for the trend-line. Set the `endValue` to specify the end value for the trend-line.
+- In `line` object, set the `startValue` attribute to specify the starting value for the trendline. Set the `endValue` to specify the end value for the trendline.
 
-- Set the `color` attribute to specify the hex code for the color. Use this attribute to render the trend-line and its associated text.
+- Set the `color` attribute to specify the hex code for the color. Use this attribute to render the trendline and its associated text.
 
-- Set the `displayValue` attribute to display a string caption with the trend-line.
+- Set the `displayValue` attribute to display a string caption with the trendline.
 
-Given below is the JSON code to include trend-line on your chart:
+Given below is the JSON code to include trendline on your chart:
 
 ```json
 {
@@ -140,15 +150,15 @@ Given below is the JSON code to include trend-line on your chart:
 }
 ```
 
-A quarterly sales summary chart rendered with a trend-line to show the target value looks like this:
+A quarterly sales summary chart rendered with a trendline to show the target value looks like this:
 
 {% embed_chart standard-charts-line-area-and-column-charts-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/aktyv9jm/) to edit the column chart.
 
-**Trend-zone** is used to show a range of target values. The trend-zone uses the same attributes as the trend-line. `isTrendZone` is the attribute which is used to specify whether a chart will be rendered with a trend-line or a trend-zone. Setting this attribute to `0` will render a trend-line, setting it to `1` (default) will render a trend-zone.
+**Trendzone** is used to show a range of target values. The trendzone uses the same attributes as the trendline. `isTrendZone` is the attribute which is used to specify whether a chart will be rendered with a trendline or a trendzone. Setting this attribute to `0` will render a trendline, setting it to `1` (default) will render a trendzone.
 
-A quarterly sales summary chart rendered with a trend-zone to show a range of target values looks like this:
+A quarterly sales summary chart rendered with a trendzone to show a range of target values looks like this:
 
 {% embed_chart standard-charts-line-area-and-column-charts-example-8.js %}
 

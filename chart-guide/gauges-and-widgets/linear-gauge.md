@@ -8,7 +8,9 @@ heading: Linear Gauge
 
 A linear gauge uses a horizontal scale to display the data range along with a fully configurable data pointer (or multiple pointers) to indicate the data value on the scale. The FusionCharts Suite XT linear gauge is a real-time gauge, which can update its data at specified intervals, without requiring any page refreshes.
 
-## Basics of a linear gauge
+{% embed_chartAnatomy linear-gauge.json %}
+
+## Basics of a Linear Gauge
 
 A simple linear gauge looks like the following:
 
@@ -22,7 +24,7 @@ The gauge scale extends between predefined minimum and maximum values. Within th
 
 You can make use of configuration options to configure the linear gauge into just about any kind of sliding gauge, meter, or mechanism for output. You can build different kinds of gauges, including factory/instrument gauges, range meter, slider, tank/ vessel fill indicator, Volt/ Amp/ Ohm Meter, and more.
 
-## Elements of the linear gauge
+## Elements of the Linear Gauge
 
 ### Horizontal Scale
 
@@ -259,7 +261,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/6a9Tb/) to edit the above gauge.
 
-## Add tool text and a link to the pointer
+## Add Tooltext and a Link to the Pointer
 
 Use the following attributes to add a tool-text and an external link for the pointer:
 
@@ -306,7 +308,7 @@ Click [here](http://jsfiddle.net/fusioncharts/K99bA/) to edit the above gauge.
 
 To add multiple pointers, you only need to create multiple instances of the `pointer` object, which belongs to the `pointers` object.
 
-## Configure the pointer value
+## Configure the Pointer Value
 
 Use the following attributes to configure the pointer value:
 
@@ -341,7 +343,7 @@ Click [here](http://jsfiddle.net/fusioncharts/Mn2d5/) to edit the above gauge.
 
 > The gauge shown above is rendered with two check boxes below it: **Show Value** and **Place Value Above Pointer**. If you select the **Show Value** checkbox, the value of the pointer is shown; if you clear it, the value is hidden. If you select the **Place Value Above Pointer** checkbox, the value is placed above the pointer; if you clear it, the value is shown below.
 
-## Configure pointer position
+## Configure Pointer Position
 
 You can configure the linear gauge to show the pointer along the top edge or the bottom edge of the gauge. Set the value of the `pointerOnTop` attribute to `0` to show it at the bottom, or to `1` to show it at the top.
 
@@ -388,7 +390,7 @@ The gauge with reverse color scale looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0x7312tq/) to edit the above chart.
 
-## Configure gauge gradient mix
+## Configure Gauge Gradient Mix
 
 Use the following attributes to configure the gauge gradient mix:
 
@@ -413,7 +415,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Uen3g/) to edit the above gauge.
 
-## Configure gauge borders
+## Configure Gauge Borders
 
 Use the following attributes to configure gauge borders:
 
@@ -444,7 +446,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ZN6df/) to edit the above gauge.
 
-## Hide gauge labels
+## Hide Gauge Labels
 
 To hide the gauge labels, simply set the value of the `showGaugeLabels` attribute to `0`.
 
@@ -468,7 +470,7 @@ Look at the **Show Labels?** checkbox rendered below the above linear gauge. If 
 
 > An alternate way to not show gauge labels is by not initializing the `label` attribute for the `color` object.
 
-## Configure hover effects for the pointer
+## Configure Hover Effects for the Pointer
 
 You can use hover effects to improve the visual representation of your gauge. Simply configure the pointer cosmetics to change when you hover the mouse pointer over it. Use the following attributes to configure hover effects for the gauge
 
@@ -510,7 +512,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5zu86/) to edit the above gauge.
 
 Using FusionCharts Suite XT, you can configure several functional and cosmetic properties for tick marks and tick values.
 
-## Show/hide tick marks and tick values
+## Show/hide Tick Marks and Tick Values
 
 Use the following attributes to show/hide tick marks in linear gauges:
 
@@ -535,7 +537,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/5YYkT/) to edit the above gauge.
 
-## Configure tick values
+## Configure Tick Values
 
 When you have a large number of tick marks on the gauge scale, showing all tick values can make the gauge appear cluttered. To avoid this, you can show every nth tick value on the gauge scale. You can also configure whether decimal values are to be rendered as tick values and the number of digits that should appear after the decimal point.
 
@@ -565,7 +567,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/pVKYU/) to edit the above gauge.
 
-## Configure positions of tick marks and tick values
+## Configure Positions of Tick Marks and Tick Values
 
 By default, the tick marks are placed outside the gauge, below the gauge scale. The tick values are also rendered outside the gauge. You can, however, configure the position of tick marks and tick values based on your requirements.
 
@@ -595,7 +597,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Zy3ku/) to edit the above gauge.
 
-## Configure the number of major and minor tick marks
+## Configure the Number of Major and Minor Tick Marks
 
 By default, the gauge automatically decides the number of major and minor tick marks to be rendered, based on the data you provide. However, you can explicitly specify the number of tick marks to be rendered.
 
@@ -627,7 +629,7 @@ Click [here](http://jsfiddle.net/fusioncharts/8a6Bx/) to edit the above gauge.
 
 > In the linear gauge above, you can see the the number of major and minor tick marks explicitly set to 9 and 5, respectively.
 
-## Configure cosmetics for tick marks
+## Configure Cosmetics for Tick Marks
 
 Use the following attributes to configure cosmetic properties, such as color, transparency, height, and thickness, of major and minor tick marks:
 
@@ -670,7 +672,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/rd45T/) to edit the above gauge.
 
-## Configure tick mark and tick value padding
+## Configure Tick Mark and Tick Value Padding
 
 By default, the gauge automatically decides the padding distance for tick marks and tick values. However, you can explicitly specify the padding distance. Use the following attributes to do so:
 
@@ -695,11 +697,11 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/8swzd/) to edit the above gauge.
 
-## Trend points
+## Trend Points
 
 Trend points are elements that can be used to show a target value on the gauge, for example, the target customer satisfaction score, optimum server utilization, etc.
 
-### Add a simple trend point
+### Add a Simple Trend Point
 
 Use the following attributes to add and customize a trend point for a linear gauge:
 
@@ -753,7 +755,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/LH9pn/) to edit the above gauge.
 
-## Add a trend point with a marker
+## Add a Trend Point with a Marker
 
 Use the following attributes to add and customize a trend point with a marker:
 
@@ -799,7 +801,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/rRN2s/) to edit the above gauge.
 
-## Add trend zones to a linear gauge
+## Add Trend Zones to a Linear Gauge
 
 You can use trend zones to represent a range of values, instead of a single value. Use the following attributes to add a trend zone to a linear gauge:
 
@@ -845,7 +847,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/fkY6g/) to edit the above gauge.
 
-## Create an editable linear gauge
+## Create an Editable Linear Gauge
 
 You can use the linear gauge in FusionCharts Suite XT as an input control, to visually drag and change the value of pointer. Once you update the value, you can use client-side JavaScript events to retrieve it from the chart. To create an editable linear gauge, set the value of the `editMode` attribute to `1`.
 
@@ -868,7 +870,7 @@ Click [here](http://jsfiddle.net/fusioncharts/QTEg7/) to edit the above gauge.
 
 > If a gauge has multiple pointers and all have them have to be made editable, the **editMode** attribute is defined for the `chart` object. If a gauge has multiple pointers and only specific ones have to be made editable, the `editMode` attribute is defined as a part of the `pointer` object, which belongs to the `pointers` object.
 
-## Create editable gauges in an earlier version
+## Create Editable Gauges in an Earlier Version
 
 If you are using an earlier version of FusionCharts versions, here's how you can create an editable gauge:
 
@@ -876,11 +878,11 @@ Once you change the value of the gauge, the gauge automatically calls the FC_Cha
 
 To look at the HTML + JavaScript code required to retrieve data from the gauge when you change the value, click [here](http://docs.fusioncharts.com/widgets/Contents/Linear/Edit.html).
 
-## Create a real-time linear gauge
+## Create a Realtime Linear Gauge
 
 There are two ways you can update the linear gauge. The first is to retrieve data using JavaScript API methods, while the second is to directly poll data from the server.
 
-## Retrieve data using JavaScript API
+## Retrieve Data Using JavaScript API
 
 The real-time data format of your linear gauge depends on:
 
@@ -930,7 +932,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/r3onjpnt/) to edit the above gauge.
 
-### Update multiple pointers
+### Update Multiple Pointers
 
 If you have defined multiple pointers, you can update them all at one go, as shown in the following output from the real-time data provider page:
 
@@ -970,7 +972,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/czrprd22/) to edit the above gauge.
 
-### Update pointer(s) using the named ID
+### Update Pointer(s) Using the Named ID
 
 You can update pointers by defining a unique ID for each pointer and then passing the updated data value to the ID. To do so, use the code snippet shown below:
 
@@ -1054,7 +1056,7 @@ Click [here](http://jsfiddle.net/fusioncharts/p7Lausdw/) to edit the above gauge
 
 > Call the JavaScript APIs of a chart only after it has rendered.
 
-### Retrieve data from the gauge
+### Retrieve Data from the Gauge
 
 You can retrieve data from gauge once the data has been updated. The data structure you need to retrieve updated data is as follows:
 
@@ -1137,7 +1139,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ee9711vk/) to edit the above gauge.
 
-### Retrieve data using server-side script
+### Retrieve Data Using Server-side Script
 
 Use the following parameters to configure real-time updates using server-side scripts:
 
@@ -1164,7 +1166,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/yy0bp783/) to edit the above gauge.
 
-## Stop/restart updates
+## Stop/Restart Updates
 
 Use the following JavaScript API methods to stop and restart receiving real-time updates:
 
@@ -1230,7 +1232,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/px5muLjh/) to edit the above gauge.
 
-## Configure Real-time Events
+## Configure Realtime Events
 
 In FusionCharts Suite XT, you can use two events to track real-time updates on gauges:
 

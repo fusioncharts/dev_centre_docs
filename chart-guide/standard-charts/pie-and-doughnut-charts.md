@@ -8,6 +8,8 @@ heading: Pie and Doughnut Charts
 
 A pie chart is a circular chart divided into sectors where the arc length of each sector, its central angle, and its area is proportional to the quantity it represents. A doughnut chart is similar to a pie chart and facilities similar kind of data analysis. FusionCharts Suite XT includes the pie and doughnut charts to plot data that needs to be shown as a percent of the whole.
 
+{% embed_chartAnatomy pie-chart.json %}
+
 ## Pie 2D Chart
 
 Let's create our first pie 2D chart which will showcase the split in revenue by product categories for one year.
@@ -47,6 +49,8 @@ Click [here](http://jsfiddle.net/fusioncharts/uq2muq97/) to edit the pie 3D char
 ## Doughnut 2D Chart
 
 As we know, a doughnut chart is similar to a pie chart. The only difference is that a doughnut chart has a blank center - as the name suggests, it looks like a doughnut.
+
+{% embed_chartAnatomy doughnut-chart.json %}
 
 Let's create our first doughnut 2D chart showcasing the same use case for the pie chart created above.
 

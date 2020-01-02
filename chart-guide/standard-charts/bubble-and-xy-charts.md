@@ -12,6 +12,8 @@ Bubble and Scatter charts are used for plotting data that can be defined in term
 
 Scatter charts are used for plotting data that is defined in terms of two numeric parameters. Scatter charts are multi-series charts, but their data format is slightly different from that of conventional multi-series charts.
 
+{% embed_chartAnatomy scatter-chart.json %}
+
 Let's create a scatter chart plotted for two numeric values - the average day temperature (plotted on the x-axis and the sales (in USD) of beer and ice-cream (plotted on the y-axis); the chart shows how the temperature affects the sales revenue of beer and ice-cream.
 
 To create a scatter chart follow the steps given below:
@@ -37,6 +39,8 @@ Click [here](http://jsfiddle.net/fusioncharts/6deM9/) to edit the scatter chart.
 ## Bubble Charts
 
 Bubble charts are used for plotting data that is defined in terms of three numeric parameters. The third numeric parameter is indicated by the diameter of the bubble. The JSON/XML format of a bubble chart is slightly different from that of a scatter chart, and this is because the bubble chart plots an additional numeric parameter.
+
+{% embed_chartAnatomy bubble-chart.json %}
 
 So let's create a bubble chart showing sales analysis of shoes of different brands for Harry's SuperMart for last month. Specify the chart type using the `type` attribute. To render a bubble chart, set `bubble`.
 

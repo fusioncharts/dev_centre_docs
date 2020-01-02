@@ -10,6 +10,8 @@ A Pareto chart, named after Vilfredo Pareto, is a type of chart that combines th
 
 The left vertical axis or the primary axis shows the frequency of occurrence, the cost, or other important units of measurement. The right vertical axis or the secondary axis shows the cumulative percentage of the total number of occurrences, the total cost, or the total of a specific unit of measurement.
 
+{% embed_chartAnatomy pareto-chart.json %}
+
 The two types of Pareto charts available are:
 
 * Pareto 2D
