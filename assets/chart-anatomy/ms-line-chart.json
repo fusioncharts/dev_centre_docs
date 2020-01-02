@@ -4,7 +4,7 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "_itemHeader": "Line Chart Anatomy",
+            "_itemHeader": "Multi-series Line Chart Anatomy",
             "imgSrc": "ms-line-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
