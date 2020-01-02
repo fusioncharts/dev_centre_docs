@@ -78,7 +78,7 @@
                   "annotationName": "Data Values",
                   "annotationDesc": "Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
-                  "leftPosition": "70%",
+                  "leftPosition": "59%",
                   "topPosition": "58%",
                   "annotationLinks": []
                },
