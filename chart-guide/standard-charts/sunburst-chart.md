@@ -10,6 +10,8 @@ A Sunburst chart is used to visualize relationships within hierarchical data. It
 
 The Sunburst chart is most effective at showing how one ring is broken into its contributing pieces (i.e, sequential segments). It is a space-filling visualization that uses a radial, rather than a rectangular layout (like a [Treemap](/chart-guide/standard-charts/treemap)).
 
+{% embed_chartAnatomy sunburst-diagram.json %}
+
 > A Sunburst chart shares similarities with a Ring Chart, Multi-level Pie Chart, Belt Chart, and a Radial Treemap.
 
 To create a sunburst chart follow the steps given below:

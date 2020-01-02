@@ -10,7 +10,7 @@ Bulb gauge is used to indicate a specific dataset by utilizing a circle that ind
 
 {% embed_chartAnatomy bulb-gauge.json %}
 
-## Basics of the bulb gauge
+## Basics of the Bulb Gauge
 
 The bulb gauge is one of the simplest gauges in all. It is used in a variety of applications including financial dashboards, machine controller screens etc., where a single value or state indicator is required.
 
@@ -22,7 +22,7 @@ Click [here](http://jsfiddle.net/fusioncharts/VpXyL/) to edit the above chart.
 
 The gauge is defined by minimum and maximum values. Within that scale you can create various ranges to classify your data. Depending on the range that the data value belongs, the bulb color will change and display the value set accordingly.
 
-## Elements of the bulb gauge
+## Elements of the Bulb Gauge
 
 A bulb gauge consists of the following elements:
 
@@ -34,19 +34,19 @@ Before going into the details of each of them, let us have a look at a bulb gaug
 
 ![Bulb-gauge](/images/bulb-gauge-introduction-1.png)
 
-## Color range
+## Color Range
 
 On a bulb gauge scale, you can create any number of ranges to classify your data. For each range, you will have to specify the minimum and maximum values, a name for the range that will be displayed as the label, and the hex code for the color that will be used to indicate the range.
 
 > Each color range should have its own unique range index. For example, if a range is defined as 0-50, the next range should have the minimum value as 50 necessarily. Similarly, if the upper limit of the chart is 100, the last range should have max value as 100 for the chart to function properly.
 
-## Value textbox
+## Value Textbox
 
 The value textbox helps you show the value indicated by the gauge in numeric terms or you can show the color range label as value for showing current status. You can also opt to hide it.
 
 Next, we will  discuss on how to create a bulb gauge.
 
-## Create a bulb gauge
+## Create a Bulb Gauge
 
 In our first bulb gauge, we will be plotting Attrition Rate from 0-100%. The final outcome will be as shown below:
 
@@ -76,7 +76,7 @@ To create a bulb gauge:
 
 * Pass the data value to the gauge, 12 in the above gauge. Since 12 lies in the 1st predetermined region, i.e. of the Low Attrition rate, the entire bulb is shown in green.
 
-## Set the value range
+## Set the Value Range
 
 To set the range of the value for the bulb gauge, define the lower and upper limits of the gauge scale. To define the limits, we use the `lowerLimit` and `upperLimit` attributes of the `<chart>` element.
 
@@ -94,7 +94,7 @@ Also set the number suffix character (the character which will show up at the en
 
 There are other attributes of the `<chart>` element which we will not be delving into now, because of this being a really basic gauge. For a detailed list you can check the [chart attributes](/chart-attributes?chart=bulb) page of bulb gauge.
 
-## Define the color range
+## Define the Color Range
 
 As we discussed earlier, this gauge has 3 color ranges. To define the color range:
 
@@ -148,7 +148,7 @@ Click [here](http://jsfiddle.net/fusioncharts/j8C6H/) to edit the above chart.
 
 Now that we have created our first bulb gauge, let's see how to configure some of the properties of the bulb gauge.  
 
-## Configure the gauge border
+## Configure the Gauge Border
 
 To configure the border of the bulb gauge refer to the code below:
 
@@ -171,7 +171,7 @@ The bulb gauge will look as shown in the image below:
 
 Click [here](http://jsfiddle.net/fusioncharts/5Cn5W/) to edit the above chart.
 
-## Use gradient fill mix for the border
+## Use Gradient Fill Mix for the Border
 
 The `gaugeBorderColor` attribute is used to apply a single solid color to the gauge border, where the border color can be different from the fill color for the gauge. Using a gradient fill mix, you can render the border in a color that is darker or lighter than the fill color used for the gauge. 
 
@@ -193,7 +193,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/tpq8mLk3/) to edit the above chart.
 
-## Configure the origin and the radius
+## Configure the Origin and the Radius
 
 By default, the gauge automatically determines its origin and radius based on the data you provide. However, FusionCharts Suite XT also allows you to explicitly specify the origin and radius of the gauge.
 
@@ -223,7 +223,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Gk7q7/) to edit the above chart.
 
-## Render the bulb gauge in 2D
+## Render the Bulb Gauge in 2D
 
 By default, the bulb gauge is rendered with a 3D look and feel. However, you can opt to render the bulb gauge in 2D.
 
@@ -243,7 +243,7 @@ The gauge will look  like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/56f6C/) to edit the above chart.
 
-## Place the value inside the gauge
+## Place the Value Inside the Gauge
 
 By default, the gauge value is rendered outside the gauge. FusionCharts Suite XT allows you to render the value inside the gauge.
 
@@ -263,7 +263,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/BM6ZH/) to edit the above chart.
 
-## Render the range name as gauge label
+## Render the Range Name as Gauge Label
 
 By default, the current numerical value of the gauge is rendered on the gauge. Instead, you can opt to show the name of the range within the gauge.
 
@@ -283,7 +283,7 @@ The gauge will look  like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/rNCL6/) to edit the above chart.
 
-## Configure the hover effect
+## Configure the Hover Effect
 
 FusionCharts Suite XT allows you to display hover effects for the gauge. Set the `showHoverEffect` attribute to `1` in order to apply the view the hover effects. Refer to the code below:
 
@@ -301,13 +301,13 @@ The gauge will look  like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0ehkf2sx/) to edit the above chart.
 
-## Real-time Bulb Gauge
+## Realtime Bulb Gauge
 
-The bulb gauge is a real-time chart, which can continuously request new data from the server and display the same, without involving any page refreshes. The chart initializes itself, loads new data periodically, and auto-updates to reflect the current state of data. There are two different ways to update the bulb gauge; one method directly polls data from the server while the other retrieves data using JavaScript API methods.
+The bulb gauge is a realtime chart, which can continuously request new data from the server and display the same, without involving any page refreshes. The chart initializes itself, loads new data periodically, and auto-updates to reflect the current state of data. There are two different ways to update the bulb gauge; one method directly polls data from the server while the other retrieves data using JavaScript API methods.
 
-## Configure real-time updates using JavaScript API
+## Configure Realtime Updates Using JavaScript API
 
-### Real-time Data Format
+### Realtime Data Format
 
 The data provider page on the server's end, when invoked by the bulb gauge, will output the new data in the real-time data format.
 
@@ -321,7 +321,7 @@ The real-time data format for gauges depends on:
 
 Let's quickly see examples of each one of them.
 
-### Data Value update
+### Data Value Update
 
 In the simplest form, if you're looking to update the bulb gauge, you need to output the data in the following format:
 
@@ -339,7 +339,7 @@ For a detailed list of JavaScript API used to configure real-time updates refer 
 
 > You can also configure using  server-side scripts. For a detailed list of attributes refer to the [chart attributes](/chart-attributes?chart=bulb) page.
 
-## Stop/Restart updates
+## Stop/Restart Updates
 
 In order to stop the chart from polling the server for any more real-time updates, send the following command from server to do so:
 
@@ -357,7 +357,7 @@ After stopping the update, it can be restarted either using user interaction (ri
 
 Click [here](http://jsfiddle.net/fusioncharts/kx978uey/) to edit the above chart.
 
-## Configure real-time events
+## Configure Realtime Events
 
 FusionCharts Suite XT introduces two events, `realTimeUpdateComplete` and `realTimeUpdateError`, to track real-time updates on gauges.
 
@@ -373,6 +373,6 @@ A bulb gauge configured to listen to the `realTimeUpdateError` event looks like 
 
 Click [here](http://jsfiddle.net/fusioncharts/37geybvf/) to edit the above chart.
 
-## Troubleshoot real-time gauges
+## Troubleshoot Realtime Gauges
 
 While accessing any of the JavaScript methods listed above, if you get an error like `"... is not a function of ..."`, make sure that you are NOT running the chart from the local file system (C:\ , D:\). Instead, run the chart from behind a server (localhost - IIS, Apache etc.). This is because the default security settings do not allow the chart to perform JavaScript interactions on the local file system.

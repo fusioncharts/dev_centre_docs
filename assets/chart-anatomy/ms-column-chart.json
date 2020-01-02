@@ -1,6 +1,6 @@
 {
             "itemHeader": "Chart with Multiple Series",
-            "imgSrc": "chart-with-multiple-series-img.png",
+            "imgSrc": "ms-column-chart-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Legend",

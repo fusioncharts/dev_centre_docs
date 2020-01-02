@@ -8,6 +8,8 @@ heading: Multi-level Pie Chart
 
 The multi-level pie chart is a special type of chart that allows you to show symmetrical and asymmetrical tree structures in a consolidated pie-like structure. It presents the entire hierarchical data in a single-screen snapshot, which makes it a preferred choice over a tree view. Also, the pie slices can assume numerical values and thereby divide the visual segments in a ratio based on the numerical values. The chart also offers advanced interactivity options like visual path tracing from any child to parent.
 
+{% embed_chartAnatomy multi-level-pie-chart.json %}
+
 This chart can be used to show various types of data like:
 
 - Organization structure

@@ -8,6 +8,8 @@ heading: Chord Diagram
 
 A chord diagram is a graphical way to represent flow relationship between specific entities in transitioning data. The entities (called **nodes**) are drawn along the circumference of a circular layout. The flow relationships (called **links**) are represented by arcs that connect the nodes. The links are colored according to the rule of dominance of transitioning data. It is a visually pleasing way and hence a popular choice among data visualization enthusiasts.
 
+{% embed_chartAnatomy chord-diagram.json %}
+
 > Chord Diagrams are also referred to as Radial Network Diagram, Chord Layout, or Dependency Wheel.
 
 To create a chord diagram follow the steps given below:
