@@ -26,7 +26,7 @@ Create a project inside the new installed XAMPP. Go to `XAMPP>htdocs` and create
 
 - Create an index.php file in the PHP FusionCharts directory.
 
-### Preparing the Data
+## Preparing the Data
 
 Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
@@ -67,7 +67,7 @@ for($i = 0; $i < count($arrChartData); $i++) {
 }
 ```
 
-### Configure your Chart
+## Configure your Chart
 
 Now that the data's ready, you've to work on the styling, the positioning and giving your chart a context. Follow the steps below:
 
