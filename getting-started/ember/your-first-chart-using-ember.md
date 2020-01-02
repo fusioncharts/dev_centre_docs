@@ -24,13 +24,13 @@ To install `FusionCharts` and the `ember-fusioncharts` component via npm follow 
 
 **Step 1**: Install `fusioncharts` core library
 
-```shellscript
+```javascript
 npm install fusioncharts --save
 ```
 
 **Step 2**: Install `ember-fusioncharts` component
 
-```shellscript
+```javascript
 ember install ember-fusioncharts
 ```
 
@@ -114,7 +114,7 @@ dataSource = {
 };
 ```
 
-Understand more about your chart and its components[ here](https://www.fusioncharts.com/dev/understanding-fusioncharts).
+Understand more about your chart and its components [here](https://www.fusioncharts.com/dev/understanding-fusioncharts).
 
 ## Render the chart
 
@@ -147,13 +147,13 @@ module.exports = function(defaults) {
 
 - Create a simple component (e.g. chart-viewer) to render your chart.
 
-```shellscript
+```javascript
 ember g component chart-viewer
 ```
 
 OR
 
-```shellscript
+```javascript
 ember generate component-class chart-viewer
 ```
 
