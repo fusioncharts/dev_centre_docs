@@ -5,7 +5,7 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
             "_itemHeader": "Sunburst Diagram Anatomy",
-            "imgSrc": "sunburst-diagram.png",
+            "imgSrc": "sunburst-diagram-anatomy.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
