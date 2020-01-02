@@ -1,4 +1,9 @@
 {
+            "header": "Chart Anatomy",
+            "subHeader": "To know how FusionCharts works it is important to understand the various components and concepts of a chart",
+            "content": {
+            "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+            "contentGroup": [{
             "_itemHeader": "Doughnut Chart Anatomy",
             "imgSrc": "doughnut-chart-anatomy.png",
             "annotations": [{
@@ -131,3 +136,6 @@
                }
             ]
          }
+      ]
+   }
+}
