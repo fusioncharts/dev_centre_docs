@@ -50,7 +50,7 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "85%",
+                  "leftPosition": "65%",
                   "topPosition": "30%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
@@ -67,8 +67,8 @@
                   "annotationName": "Data Values",
                   "annotationDesc": "Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
-                  "leftPosition": "59%",
-                  "topPosition": "58%",
+                  "leftPosition": "74.5%",
+                  "topPosition": "42.5%",
                   "annotationLinks": []
                },
                {
