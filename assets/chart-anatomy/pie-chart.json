@@ -54,7 +54,7 @@
                   "topPosition": "38%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize the data plots. Learn more about it ",
-                        "linkPath": "/chart-guide/standard-charts/pie-and-doughnut-charts#customize-the-center-label-for-a-doughnut-chart"
+                        "linkPath": "/chart-guide/chart-configurations/data-plot"
                      }
                   ]
                },
@@ -62,7 +62,7 @@
                   "annotationNumber": "4",
                   "annotationName": "Data Labels",
                   "annotationDesc": "Data labels refers to the labels associated with each pie slice. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/standard-charts/pie-and-doughnut-charts",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-labels",
                   "leftPosition": "27%",
                   "topPosition": "60%",
                   "annotationLinks": []
@@ -71,7 +71,7 @@
                   "annotationNumber": "5",
                   "annotationName": "Data Values",
                   "annotationDesc": "Data values refers to values associated with each pie slice. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/standard-charts/pie-and-doughnut-charts",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
                   "leftPosition": "70%",
                   "topPosition": "68%",
                   "annotationLinks": []
@@ -122,16 +122,16 @@
                   "leftPosition": "82.5%",
                   "topPosition": "12%",
                   "annotationLinks": [{
-                        "linkDesc": "You can enable or disable chart export using attribute exportEnabled, learn more about its usage ",
+                        "linkDesc": "You can enable or disable chart export using attribute `exportEnabled`. Learn more about its usage ",
                         "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
                      },
                      {
-                        "linkDesc": "You can also define export mode like server, client, auto for chart export, learn more about them ",
+                        "linkDesc": "You can also define export mode like `server`, `client`, or `auto` for chart export. Learn more about them ",
                         "linkPath": "/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature"
                      },
                      {
-                        "linkDesc": "Look and feel of this menu can also be customized using available attributes, learn more about them ",
-                        "linkPath": "/chart-attributes/area2d"
+                        "linkDesc": "Look and feel of this menu can also be customized using available attributes. Learn more about them ",
+                        "linkPath": "/exporting-charts/using-fc-export-server/configuring-the-export-feature"
                      }
                   ]
                }
