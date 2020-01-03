@@ -16,11 +16,11 @@
                   "topPosition": "11.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes. Know more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
                         "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
@@ -30,18 +30,18 @@
                },
                {
                   "annotationNumber": "2",
-                  "annotationName": "Sub-caption",
-                  "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
+                  "annotationName": "Subcaption",
+                  "annotationDesc": "The subcaption (also called the chart subtitle) is the subheading of your chart. You can add custom text for subcaption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "58%",
                   "topPosition": "16%",
                   "annotationLinks": [{
-                        "linkDesc": "Learn how to add sub-caption ",
+                        "linkDesc": "Learn how to add subcaption ",
                         "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkDesc": "Font properties and cosmetics of subcaption can also be customized using attributes. Learn more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
                },
