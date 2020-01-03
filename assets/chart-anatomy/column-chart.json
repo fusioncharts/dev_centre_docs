@@ -15,15 +15,15 @@
                   "topPosition": "2.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add the caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
                         "linkDesc": "You can customize font properties and cosmetics of the caption using attributes. Know more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
                         "linkDesc": "You can customize the alignment of the caption. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#configure-caption-alignment"
                      }
                   ]
                },
@@ -36,11 +36,11 @@
                   "topPosition": "7.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
                         "linkDesc": "You can customize font properties and cosmetics of the sub-caption using attributes. Learn more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
                },
@@ -82,8 +82,8 @@
                {
                   "annotationNumber": "6",
                   "annotationName": "Tooltip",
-                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/tool-tips",
                   "leftPosition": "53%",
                   "topPosition": "43.5%",
                   "annotationLinks": [{

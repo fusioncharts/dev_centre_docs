@@ -53,7 +53,7 @@
                   "leftPosition": "75%",
                   "topPosition": "30%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize border for canvas, learn more about it ",
+                        "linkDesc": "You can customize border for canvas. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
                      },
                      {
