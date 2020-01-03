@@ -16,15 +16,15 @@
                   "topPosition": "16.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes. Know more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
                         "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#configure-caption-alignment"
                      }
                   ]
                },
@@ -41,7 +41,7 @@
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of subcaption can also be customized using attributes. Learn more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
                },
@@ -67,8 +67,8 @@
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "35%",
-                  "topPosition": "54%",
+                  "leftPosition": "80%",
+                  "topPosition": "52%",
                   "annotationLinks": []
                },
                {
@@ -76,8 +76,8 @@
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "It refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "38%",
-                  "topPosition": "63%",
+                  "leftPosition": "43%",
+                  "topPosition": "67%",
                   "annotationLinks": []
                },
                {
@@ -85,8 +85,8 @@
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the X-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "81%",
-                  "topPosition": "53%",
+                  "leftPosition": "59.5%",
+                  "topPosition": "56%",
                   "annotationLinks": []
                },
                {
