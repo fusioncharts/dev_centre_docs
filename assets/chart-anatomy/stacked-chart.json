@@ -33,8 +33,8 @@
                   "annotationName": "Subcaption",
                   "annotationDesc": "The subcaption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for subcaption, as well as configure its font properties. Learn more about it ",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "42.5%",
-                  "topPosition": "17%",
+                  "leftPosition": "57%",
+                  "topPosition": "16.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add subcaption ",
                         "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
@@ -104,7 +104,7 @@
                   "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
                   "leftPosition": "7%",
-                  "topPosition": "35%",
+                  "topPosition": "40%",
                   "annotationLinks": []
                },
                {
@@ -145,7 +145,7 @@
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "65%",
+                  "leftPosition": "65.5%",
                   "topPosition": "25.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of tooltips. Learn more about them ",
@@ -162,8 +162,8 @@
                   "annotationName": "Export Menu",
                   "annotationDesc": "Export menu is hamburger menu that appears on top-right of the chart by hovering on which you can export the chart using available options.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "84.5%",
-                  "topPosition": "5%",
+                  "leftPosition": "85.5%",
+                  "topPosition": "9%",
                   "annotationLinks": [{
                         "linkDesc": "You can enable or disable chart export using attribute `exportEnabled`. Learn more about its usage ",
                         "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
