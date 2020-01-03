@@ -10,7 +10,7 @@
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
-                  "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
+                  "annotationDesc": "The caption (also called the chart title) is the heading of your chart. You can add custom text for the caption, as well as configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "34%",
                   "topPosition": "10.5%",
@@ -19,7 +19,7 @@
                         "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
+                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes. Know more about them ",
                         "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
@@ -67,8 +67,8 @@
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
-                  "leftPosition": "34%",
-                  "topPosition": "67%",
+                  "leftPosition": "80%",
+                  "topPosition": "63%",
                   "annotationLinks": []
                },
                {
@@ -85,8 +85,8 @@
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "72%",
-                  "topPosition": "70%",
+                  "leftPosition": "38.5%",
+                  "topPosition": "66%",
                   "annotationLinks": []
                },
                {
@@ -112,7 +112,7 @@
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "73%",
+                  "leftPosition": "74%",
                   "topPosition": "51.5%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
