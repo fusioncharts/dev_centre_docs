@@ -30,7 +30,7 @@
                {
                   "annotationNumber": "2",
                   "annotationName": "Subcaption",
-                  "annotationDesc": "The subcaption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
+                  "annotationDesc": "The subcaption (also called the chart subtitle) is the subheading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "70.5%",
                   "topPosition": "6.5%",
@@ -123,8 +123,8 @@
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "32.5%",
-                  "topPosition": "78.5%",
+                  "leftPosition": "32%",
+                  "topPosition": "81.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll etc. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/legend#configure-legend-icon-size"
