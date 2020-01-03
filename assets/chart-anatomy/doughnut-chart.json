@@ -15,7 +15,7 @@
                   "topPosition": "5.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
@@ -36,7 +36,7 @@
                   "topPosition": "10.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
@@ -53,15 +53,15 @@
                   "topPosition": "38%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize the data plots, learn more about it ",
-                        "linkPath": "/chart-guide/standard-charts/pie-and-doughnut-charts#customize-the-center-label-for-a-doughnut-chart"
+                        "linkPath": "/chart-guide/chart-configurations/data-plot"
                      }
                   ]
                },
                {
                   "annotationNumber": "4",
                   "annotationName": "Data Labels",
-                  "annotationDesc": "Data labels refers to the lables associated with each pie slcie. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/standard-charts/pie-and-doughnut-charts",
+                  "annotationDesc": "Data labels refer to the labels associated with each pie slice. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-labels",
                   "leftPosition": "21%",
                   "topPosition": "42%",
                   "annotationLinks": []
@@ -69,8 +69,8 @@
                {
                   "annotationNumber": "5",
                   "annotationName": "Data Values",
-                  "annotationDesc": "Data values refers to values associated with each pie slcie. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/standard-charts/pie-and-doughnut-charts",
+                  "annotationDesc": "Data values refer to values associated with each pie slice. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
                   "leftPosition": "68%",
                   "topPosition": "30%",
                   "annotationLinks": []
@@ -83,7 +83,7 @@
                   "leftPosition": "69%",
                   "topPosition": "84%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll etc. Learn more about it ",
+                        "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll, etc. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/legend#configure-legend-icon-size"
                      },
                      {
@@ -104,16 +104,16 @@
                   "leftPosition": "78.5%",
                   "topPosition": "4%",
                   "annotationLinks": [{
-                        "linkDesc": "You can enable or disable chart export using attribute exportEnabled, learn more about its usage ",
+                        "linkDesc": "You can enable or disable chart export using attribute `exportEnabled`. Learn more about its usage ",
                         "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
                      },
                      {
-                        "linkDesc": "You can also define export mode like server, client, auto for chart export, learn more about them ",
+                        "linkDesc": "You can also define export mode like `server`, `client`, or `auto` for chart export. Learn more about them ",
                         "linkPath": "/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature"
                      },
                      {
-                        "linkDesc": "Look and feel of this menu can also be customized using available attributes, learn more about them ",
-                        "linkPath": "/chart-attributes/area2d"
+                        "linkDesc": "Look and feel of this menu can also be customized using available attributes. Learn more about them ",
+                        "linkPath": "/exporting-charts/using-fc-export-server/configuring-the-export-feature"
                      }
                   ]
                }
