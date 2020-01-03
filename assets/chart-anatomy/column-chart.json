@@ -64,7 +64,7 @@
                {
                   "annotationNumber": "4",
                   "annotationName": "X-Axis",
-                  "annotationDesc": "X-Axis refers to a line on a chart that runs horizontally (left-right). Learn more about it ",
+                  "annotationDesc": "X-Axis refers to a line on a chart that runs horizontally (left to right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "16%",
                   "topPosition": "84%",
@@ -73,7 +73,7 @@
                {
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Labels",
-                  "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
+                  "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the X-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
                   "leftPosition": "72%",
                   "topPosition": "89.5%",
