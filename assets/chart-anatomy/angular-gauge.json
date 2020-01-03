@@ -16,15 +16,15 @@
                   "topPosition": "15.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
                         "linkDesc": "You can customize font properties and cosmetics of caption using attributes. Know more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
                         "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#configure-caption-alignment"
                      }
                   ]
                },
