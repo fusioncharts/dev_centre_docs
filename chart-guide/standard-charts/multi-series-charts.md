@@ -24,7 +24,11 @@ The different types of multi-series charts available in the FusionCharts Suite X
 
 ## Multi-series Column 2D Chart
 
-In this sample, let's create a multi-series column 2D chart showcasing the comparison between quarterly revenue earned for the previous year and the current year. The columns for both datasets, one for the previous year and one for the current year, have been rendered using different colors. This makes it easy to interpret and compare the data.
+A multi-series column 2D chart looks as shown below:
+
+{% embed_chartAnatomy ms-column-chart.json %}
+
+Let's create a multi-series column 2D chart showcasing the comparison between quarterly revenue earned for the previous year and the current year. The columns for both datasets, one for the previous year and one for the current year, have been rendered using different colors. This makes it easy to interpret and compare the data.
 
 To create a multi-series column 2D chart follow the steps given below:
 

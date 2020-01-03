@@ -36,6 +36,8 @@ Features of a funnel chart that you may find useful:
 
 * Link each funnel slice to a different target.
 
+{% embed_chartAnatomy funnel-chart.json %}
+
 ## Create a Funnel Chart
 
 We will create a funnel chart that shows the purchase-conversion analysis, using the data provided in the table below. It will filter out data to finally show how many people who visited the website actually purchased something.

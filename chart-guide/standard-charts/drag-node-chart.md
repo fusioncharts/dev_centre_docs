@@ -10,6 +10,8 @@ The drag node chart is a specialized type of chart that shows each data set as a
 
 You can also take visual inputs from other users using this chart and then submit the final positions of the nodes to your scripts for further processing.
 
+{% embed_chartAnatomy drag-node-chart.json %}
+
 ## Features of a drag-node chart
 
 Using a drag-node chart, you can:

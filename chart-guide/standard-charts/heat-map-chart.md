@@ -10,7 +10,9 @@ A heat map chart is a specialized chart that uses colors to represent data value
 
 ## Basics of a heat map chart
 
-You can use the heat map chart to plot data like employee attendance records, a periodic table, tracking investments in the stock market, comparing the performance of different companies, etc. You can set different colors for different levels of data. For example, if you use the heat map chart to plot employee attendance records, you can use colors like red, yellow, blue and green to indicate a bad, average, good, and excellent grade, respectively, based on percentage values. Once the chart, you will be able to easily distinguish the four grades.
+You can use the heat map chart to plot data like employee attendance records, a periodic table, tracking investments in the stock market, comparing the performance of different companies, etc. You can set different colors for different levels of data. For example, if you use the heat map chart to plot employee attendance records, you can use colors like red, yellow, blue and green to indicate a bad, average, good, and excellent grade, respectively, based on percentage values. Once the chart is rendered, you will be able to easily distinguish the four grades.
+
+{% embed_chartAnatomy heat-map-chart.json %}
 
 ## Features of a heat map chart
 

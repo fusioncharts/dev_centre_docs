@@ -24,6 +24,8 @@ FusionCharts Suite XT includes four types of spline charts:
 
 A single-series spline 2D chart draws a single fitted curve through the data points.
 
+{% embed_chartAnatomy single-series-spline-2d-chart.json %}
+
 To create a single-series spline 2D chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
@@ -46,6 +48,8 @@ Click [here](http://jsfiddle.net/fusioncharts/9C9pj/) to edit the single-series 
 
 ## Multi-Series Spline Chart
 
+{% embed_chartAnatomy multi-series-spline-chart.json %}
+
 To render a multi-series spline chart:
 
 * Set the `type` attribute to `msspline`.
@@ -64,6 +68,8 @@ Click [here](http://jsfiddle.net/fusioncharts/tnt27/) to edit the multi-series s
 
 A multi-series spline area 2D chart is nothing but a conventional area with a smoothed curve drawn through the data points in the series. It allows you to plot data for multiple data sets.
 
+{% embed_chartAnatomy multi-series-spline-area-2d-chart.json %}
+
 To render a multi-series spline area 2D chart:
 
 * Set the `type` attribute to `mssplinearea`.
@@ -81,6 +87,8 @@ Click [here](http://jsfiddle.net/fusioncharts/W9Bn6/) to edit the multi-series s
 ## Single-Series Spline Area 2D Chart
 
 To render a single-series spline area chart, set the `type` attribute to `splinearea`.
+
+{% embed_chartAnatomy single-series-spline-area-2d-chart.json %}
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=splinearea) page of single-series spline area 2D chart.
 
