@@ -115,7 +115,7 @@
                   "leftPosition": "73%",
                   "topPosition": "51.5%",
                   "annotationLinks": [{
-                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
+                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
                      "linkPath": "/chart-guide/chart-configurations/data-plot"
                   }]
                },
@@ -127,7 +127,7 @@
                   "leftPosition": "32.5%",
                   "topPosition": "78.5%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll etc. Learn more about it ",
+                        "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll, etc. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/legend#configure-legend-icon-size"
                      },
                      {
@@ -135,7 +135,7 @@
                         "linkPath": "/chart-guide/chart-configurations/legend#set-the-legend-position"
                      },
                      {
-                        "linkDesc": "You can highlight data plots by hovering over corresponding legend item using plot highlight effect feature, Learn more about it ",
+                        "linkDesc": "You can highlight data plots by hovering over corresponding legend item using plot highlight effects. Learn more about them ",
                         "linkPath": "/chart-guide/chart-configurations/legend#highlight-a-data-series-via-the-legend"
                      }
                   ]
@@ -148,11 +148,11 @@
                   "leftPosition": "65%",
                   "topPosition": "25.5%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
+                        "linkDesc": "You can customize padding, size and other properties of tooltips. Learn more about them ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
                      },
                      {
-                        "linkDesc": "You can also customize the text of tooltip and use values plotted on the chart using macros, learn more about it ",
+                        "linkDesc": "You can also customize the text of tooltip and use values plotted on the chart using macros. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros"
                      }
                   ]
@@ -165,15 +165,15 @@
                   "leftPosition": "84.5%",
                   "topPosition": "5%",
                   "annotationLinks": [{
-                        "linkDesc": "You can enable or disable chart export using attribute exportEnabled, learn more about its usage ",
+                        "linkDesc": "You can enable or disable chart export using attribute `exportEnabled`. Learn more about its usage ",
                         "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
                      },
                      {
-                        "linkDesc": "You can also define export mode like server, client, auto for chart export, learn more about them ",
+                        "linkDesc": "You can also define export mode like `server`, `client`, or `auto` for chart export. Learn more about them ",
                         "linkPath": "/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature"
                      },
                      {
-                        "linkDesc": "Look and feel of this menu can also be customized using available attributes, learn more about them ",
+                        "linkDesc": "Look and feel of this menu can also be customized using available attributes. Learn more about them ",
                         "linkPath": "/chart-attributes/area2d"
                      }
                   ]

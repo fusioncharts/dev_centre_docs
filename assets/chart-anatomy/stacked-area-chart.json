@@ -126,7 +126,7 @@
                   "leftPosition": "32%",
                   "topPosition": "81.5%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll etc. Learn more about it ",
+                        "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll, etc. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/legend#configure-legend-icon-size"
                      },
                      {
@@ -134,7 +134,7 @@
                         "linkPath": "/chart-guide/chart-configurations/legend#set-the-legend-position"
                      },
                      {
-                        "linkDesc": "You can highlight data plots by hovering over corresponding legend item using plot highlight effect feature, Learn more about it ",
+                        "linkDesc": "You can highlight data plots by hovering over corresponding legend item using plot highlight effects. Learn more about them ",
                         "linkPath": "/chart-guide/chart-configurations/legend#highlight-a-data-series-via-the-legend"
                      }
                   ]
