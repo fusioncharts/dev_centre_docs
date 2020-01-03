@@ -29,17 +29,17 @@
                },
                {
                   "annotationNumber": "2",
-                  "annotationName": "Sub-caption",
-                  "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for the sub-caption. You can also configure its font properties.",
+                  "annotationName": "Subcaption",
+                  "annotationDesc": "The subcaption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for the sub-caption. You can also configure its font properties.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "67.5%",
                   "topPosition": "7.5%",
                   "annotationLinks": [{
-                        "linkDesc": "Learn how to add sub-caption ",
+                        "linkDesc": "Learn how to add subcaption ",
                         "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
-                        "linkDesc": "You can customize font properties and cosmetics of the sub-caption using attributes. Learn more about them ",
+                        "linkDesc": "You can customize font properties and cosmetics of the subcaption using attributes. Learn more about them ",
                         "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
