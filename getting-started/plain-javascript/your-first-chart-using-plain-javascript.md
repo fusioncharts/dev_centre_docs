@@ -198,7 +198,24 @@ Understand more about your chart and its components[ here](https://www.fusioncha
 
 ## Render the chart
 
-Get ready to render your first chart finally with the steps below:
+To render the chart, follow the steps below:
+
+1. Include the `fusioncharts` library.
+
+2. Include the chart type.
+
+3. Include the FusionCharts theme file to apply style to the charts.
+
+4. Store the chart configurations in a JSON object. In this JSON object:
+
+   - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+   - Set the width and height (in pixels).
+   - Set the `dataFormat` as JSON.
+   - Embed the json data as the value of the `dataSource`.
+
+5. Add a container (instance) for the chart.
+
+The consolidated code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
