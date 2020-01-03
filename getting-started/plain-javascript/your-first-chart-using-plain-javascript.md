@@ -215,6 +215,7 @@ Get ready to render your first chart finally with the steps below:
 </ul>
 <div  class='mt-30'><strong>The steps to render the chart for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
+<div  class='mt-30'><strong>Step 1:</strong> In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
 <pre><code class="language-javascript">
 // Include the core fusioncharts file from core  -
 import FusionCharts from 'fusioncharts/core';
@@ -237,7 +238,7 @@ type: 'Column2D',
 width: '700', // Width of the chart
 height: '400', // Height of the chart
 dataFormat: 'json', // Data type
-renderAt:'chart-container', //Container where the chart will render
+renderAt: 'chart-container', //Container where the chart will render
 dataSource: {
 // Chart Configuration
 "chart": {
@@ -301,7 +302,7 @@ type: 'Column2D',
 width: '700', // Width of the chart
 height: '400', // Height of the chart
 dataFormat: 'json', // Data type
-renderAt:'chart-container', //Container where the chart will render
+renderAt: 'chart-container', //Container where the chart will render
 dataSource: {
 // Chart Configuration
 "chart": {
@@ -345,17 +346,23 @@ chartInstance.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
-<ul>
-    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
-    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
-    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
-    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
-    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
-    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
-    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
-    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
-</ul>
+<div class='mt-30'><strong>Step 2:</strong> Specify the chart container within the `index.html` file.</div>
+<pre><code class="language-javascript">
+&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Getting Started&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="chart-container"&gt;Fusioncharts will render here&lt;/div&gt;
+    &lt;script src="main.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div class='mt-30'><strong>Step 3:</strong> Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.</div>
+
 </div>
 
 <div class='tab cdn-tab active'>
@@ -364,9 +371,9 @@ chartInstance.render();
 &lt;head&gt;
 &lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
 &lt;!-- Include fusioncharts core library --&gt;
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;!-- Include fusion theme --&gt;
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
     FusionCharts.ready(function(){
     var fusioncharts = new FusionCharts({
