@@ -31,7 +31,7 @@
                {
                   "annotationNumber": "2",
                   "annotationName": "Subcaption",
-                  "annotationDesc": "The subcaption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for subcaption, as well as configure its font properties. Learn more about it ",
+                  "annotationDesc": "The subcaption (also called the chart subtitle) is the subheading of your chart. You can add custom text for subcaption, as well as configure its font properties. Learn more about it ",
                   "annotationDescLinkPath": null,
                   "leftPosition": "57%",
                   "topPosition": "16.5%",
