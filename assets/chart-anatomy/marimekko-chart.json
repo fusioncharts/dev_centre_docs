@@ -76,8 +76,8 @@
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "It refers to title of the X-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "55%",
-                  "topPosition": "77%",
+                  "leftPosition": "45%",
+                  "topPosition": "70%",
                   "annotationLinks": []
                },
                {
