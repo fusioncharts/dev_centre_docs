@@ -37,11 +37,11 @@
                   "topPosition": "22%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
                },
@@ -66,7 +66,7 @@
                   "annotationNumber": "4",
                   "annotationName": "Lower Limit",
                   "annotationDesc": "Lower Limit refers to the lowest point in the reference scale used in the gauge. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/chart-limits",
                   "leftPosition": "29%",
                   "topPosition": "57%",
                   "annotationLinks": []
@@ -75,7 +75,7 @@
                   "annotationNumber": "5",
                   "annotationName": "Upper Limit",
                   "annotationDesc": "Upper Limit refers to the highest point in the reference scale used in the gauge. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/chart-limits",
                   "leftPosition": "68%",
                   "topPosition": "54%",
                   "annotationLinks": []
@@ -93,7 +93,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Tick Mark",
                   "annotationDesc": "Tick marks are placed at regular intervals on the gauge scale, to indicate data values. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/tick-marks",
                   "leftPosition": "62.5%",
                   "topPosition": "40%",
                   "annotationLinks": []
@@ -114,7 +114,7 @@
                   "annotationNumber": "9",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/tool-tips",
                   "leftPosition": "66%",
                   "topPosition": "62.5%",
                   "annotationLinks": [{
