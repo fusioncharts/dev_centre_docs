@@ -4,8 +4,8 @@
    "content": {
       "header": "Below you can find different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "_itemHeader": "Inverse Y-axis Area Chart",
-            "imgSrc": "inverse-y-axis-area-chart.png",
+            "_itemHeader": "Inverse Y-axis Line Chart",
+            "imgSrc": "inverse-y-axis-line-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
