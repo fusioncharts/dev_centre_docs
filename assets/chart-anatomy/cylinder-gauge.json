@@ -66,7 +66,7 @@
                   "annotationNumber": "4",
                   "annotationName": "Lower Limit",
                   "annotationDesc": "Lower Limit refers to the lowest point in the reference scale used in the gauge. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "58%",
                   "topPosition": "62%",
                   "annotationLinks": []
@@ -93,7 +93,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Tick Mark",
                   "annotationDesc": "Tick marks are placed at regular intervals on the gauge scale, to indicate data values. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "47.5%",
                   "topPosition": "40%",
                   "annotationLinks": []

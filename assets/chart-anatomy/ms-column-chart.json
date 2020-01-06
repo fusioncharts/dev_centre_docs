@@ -101,7 +101,7 @@
                   "annotationNumber": "8",
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "-2%",
                   "topPosition": "40%",
                   "annotationLinks": []

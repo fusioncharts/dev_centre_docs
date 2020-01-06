@@ -66,7 +66,7 @@
                   "annotationNumber": "4",
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "19%",
                   "topPosition": "70%",
                   "annotationLinks": []
@@ -93,7 +93,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "6.5%",
                   "topPosition": "44%",
                   "annotationLinks": []
