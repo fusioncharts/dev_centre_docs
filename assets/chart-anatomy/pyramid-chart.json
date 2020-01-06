@@ -37,7 +37,7 @@
                   "topPosition": "75%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
@@ -78,7 +78,7 @@
                   "annotationNumber": "5",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "83.5%",
                   "topPosition": "42.5%",
                   "annotationLinks": [{

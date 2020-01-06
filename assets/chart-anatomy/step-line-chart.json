@@ -37,7 +37,7 @@
                   "topPosition": "12.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
@@ -75,7 +75,7 @@
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "52.5%",
                   "topPosition": "69%",
                   "annotationLinks": []
@@ -84,7 +84,7 @@
                   "annotationNumber": "6",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "83.5%",
                   "topPosition": "63%",
                   "annotationLinks": []
@@ -93,7 +93,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "7%",
                   "topPosition": "15%",
                   "annotationLinks": []
@@ -144,7 +144,7 @@
                   "annotationNumber": "11",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "53%",
                   "topPosition": "23.5%",
                   "annotationLinks": [{
@@ -213,7 +213,7 @@
                   "topPosition": "17%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
@@ -251,7 +251,7 @@
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "55%",
                   "topPosition": "72%",
                   "annotationLinks": []
@@ -260,7 +260,7 @@
                   "annotationNumber": "6",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "72%",
                   "topPosition": "70%",
                   "annotationLinks": []
@@ -269,7 +269,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "13%",
                   "topPosition": "68%",
                   "annotationLinks": []
@@ -320,7 +320,7 @@
                   "annotationNumber": "11",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "53%",
                   "topPosition": "23.5%",
                   "annotationLinks": [{
@@ -398,7 +398,7 @@
                   "topPosition": "7.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
@@ -436,7 +436,7 @@
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "40%",
                   "topPosition": "12%",
                   "annotationLinks": []
@@ -445,7 +445,7 @@
                   "annotationNumber": "6",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "22%",
                   "topPosition": "66%",
                   "annotationLinks": []
@@ -454,7 +454,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "80%",
                   "topPosition": "72%",
                   "annotationLinks": []
@@ -472,7 +472,7 @@
                   "annotationNumber": "9",
                   "annotationName": "Trendline",
                   "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "65%",
                   "topPosition": "50%",
                   "annotationLinks": []
@@ -514,7 +514,7 @@
                   "annotationNumber": "12",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "53%",
                   "topPosition": "31.5%",
                   "annotationLinks": [{
@@ -583,7 +583,7 @@
                   "topPosition": "7.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
@@ -621,7 +621,7 @@
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "51%",
                   "topPosition": "80%",
                   "annotationLinks": []
@@ -630,7 +630,7 @@
                   "annotationNumber": "6",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "72%",
                   "topPosition": "76%",
                   "annotationLinks": []
@@ -639,7 +639,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "5%",
                   "topPosition": "72%",
                   "annotationLinks": []
@@ -657,7 +657,7 @@
                   "annotationNumber": "9",
                   "annotationName": "Trendline",
                   "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "83%",
                   "topPosition": "40%",
                   "annotationLinks": []
@@ -717,7 +717,7 @@
                   "annotationNumber": "14",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "78%",
                   "topPosition": "53.5%",
                   "annotationLinks": [{
@@ -786,7 +786,7 @@
                   "topPosition": "7.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
@@ -824,7 +824,7 @@
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "53%",
                   "topPosition": "80%",
                   "annotationLinks": []
@@ -833,7 +833,7 @@
                   "annotationNumber": "6",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "72%",
                   "topPosition": "78%",
                   "annotationLinks": []
@@ -842,7 +842,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to  line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "5%",
                   "topPosition": "72%",
                   "annotationLinks": []
@@ -860,7 +860,7 @@
                   "annotationNumber": "9",
                   "annotationName": "Trendline",
                   "annotationDesc": "Trend lines are reference horizontal or vertical lines which help to interpret data.. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "49%",
                   "topPosition": "35%",
                   "annotationLinks": []
@@ -911,7 +911,7 @@
                   "annotationNumber": "13",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "78%",
                   "topPosition": "53.5%",
                   "annotationLinks": [{
@@ -980,7 +980,7 @@
                   "topPosition": "20.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
@@ -1044,7 +1044,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "64%",
                   "topPosition": "38.5%",
                   "annotationLinks": [{
@@ -1113,7 +1113,7 @@
                   "topPosition": "20.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
@@ -1177,7 +1177,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "64%",
                   "topPosition": "38.5%",
                   "annotationLinks": [{

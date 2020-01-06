@@ -75,7 +75,7 @@
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "It refers to title of the X-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "55%",
                   "topPosition": "77%",
                   "annotationLinks": []
@@ -84,7 +84,7 @@
                   "annotationNumber": "6",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the X-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "65.5%",
                   "topPosition": "72%",
                   "annotationLinks": []
@@ -93,7 +93,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "17%",
                   "topPosition": "9%",
                   "annotationLinks": []
@@ -123,7 +123,7 @@
                   "annotationNumber": "10",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "38%",
                   "topPosition": "37%",
                   "annotationLinks": [{
