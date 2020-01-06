@@ -30,7 +30,7 @@
                },
                {
                   "annotationNumber": "2",
-                  "annotationName": "Sub-caption",
+                  "annotationName": "Subcaption",
                   "annotationDesc": "The sub-caption (also called the gauge subtitle) is the sub-heading of your gauge. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "54%",
