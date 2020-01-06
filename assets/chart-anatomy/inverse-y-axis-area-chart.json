@@ -11,8 +11,8 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart. You can add custom text for the caption. You can also configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "76.5%",
-                  "topPosition": "2.5%",
+                  "leftPosition": "38%",
+                  "topPosition": "5.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add the caption ", 
                         "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
@@ -30,16 +30,16 @@
                {
                   "annotationNumber": "2",
                   "annotationName": "Subcaption",
-                  "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for the sub-caption. You can also configure its font properties.",
+                  "annotationDesc": "The subcaption (also called the chart subtitle) is the subheading of your chart. You can add custom text for the sub-caption. You can also configure its font properties.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "67.5%",
-                  "topPosition": "7.5%",
+                  "leftPosition": "53.5%",
+                  "topPosition": "12%",
                   "annotationLinks": [{
-                        "linkDesc": "Learn how to add sub-caption ",
+                        "linkDesc": "Learn how to add subcaption ",
                         "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
-                        "linkDesc": "You can customize font properties and cosmetics of the sub-caption using attributes. Learn more about them ",
+                        "linkDesc": "You can customize font properties and cosmetics of the subcaption using attributes. Learn more about them ",
                         "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
@@ -49,8 +49,8 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "85%",
-                  "topPosition": "17%",
+                  "leftPosition": "78%",
+                  "topPosition": "8%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize the canvas border. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
@@ -66,8 +66,8 @@
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to a line on a chart that runs horizontally (left-right). Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "53%",
-                  "topPosition": "85%",
+                  "leftPosition": "83%",
+                  "topPosition": "13%",
                   "annotationLinks": []
                },
                {
@@ -75,8 +75,8 @@
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "It refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "14.5%",
-                  "topPosition": "31.5%",
+                  "leftPosition": "44%",
+                  "topPosition": "68%",
                   "annotationLinks": []
                },
                {
@@ -84,8 +84,8 @@
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the X-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "72%",
-                  "topPosition": "89.5%",
+                  "leftPosition": "64%",
+                  "topPosition": "74%",
                   "annotationLinks": []
                },
                {
@@ -93,8 +93,8 @@
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to a line on a chart that runs vertically (up-down) through zero. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "12%",
-                  "topPosition": "46.5%",
+                  "leftPosition": "14%",
+                  "topPosition": "6.5%",
                   "annotationLinks": []
                },
                {
@@ -102,8 +102,8 @@
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "It refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
-                  "leftPosition": "2%",
-                  "topPosition": "48%",
+                  "leftPosition": "0%",
+                  "topPosition": "43%",
                   "annotationLinks": []
                },
                {
@@ -111,8 +111,8 @@
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "53%",
-                  "topPosition": "43.5%",
+                  "leftPosition": "81%",
+                  "topPosition": "42%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of a tooltip. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
