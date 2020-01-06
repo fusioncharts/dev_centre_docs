@@ -6,11 +6,21 @@ heading: Create a Chart Using FusionCharts
 
 **FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
 
-In this page, we'll see how to install **FusionCharts** library and all the other dependencies on your system and render a chart using Plain JavaScript.
+On this page, we'll see how to install **FusionCharts** library and all the other dependencies on your system and render a chart using Plain JavaScript.
 
-## Installation
+## Prerequisite
 
-Install **FusionCharts** using any of the following steps:
+Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from CDN or Local Files.
+
+- jQuery requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
+
+- To download and install npm packages, you must have an npm package manager. Run `npm -v` in a terminal/console window, to check that if have the npm client installed.
+
+> Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `**npx webpack**` command in the terminal to ensure that the build is successful.
+
+## Installation and including dependencies
+
+You can install the fusioncharts components by following any of the methods below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -39,6 +49,25 @@ Install **FusionCharts** using any of the following steps:
 <div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+<div>After installing the fusioncharts components, you can replace the code in `index.js` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
+<pre><code class="language-javascript">
+// Include the core fusioncharts file from core
+import FusionCharts from 'fusioncharts/core';
+
+// Include the chart from viz folder
+import Column2D from 'fusioncharts/viz/column2d';
+
+// Include the fusion theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+
+// Add the chart and theme as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(Column2D);
+FusionCharts.addDep(FusionTheme);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+
 </div>
 
 <div class='tab cdn-tab active'>
@@ -84,23 +113,11 @@ Install **FusionCharts** using any of the following steps:
 </div>
 </div>
 
-That completes the installation of **FusionCharts** Suite.
+That completes the installation of `FusionCharts` Suite.
 
-## Create Your First Chart
+## Preparing the data
 
-Let's create a Column 2D chart showing the "Countries with Most Oil Reserves".
-
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-The Column 2D chart is shown below:
-
-{% embed_chart getting-started-your-first-chart.js %}
-
-To understand the chart components, click [here](/understanding-fusioncharts).
-
-## Chart Data
-
-The data to render the above chart is shown in the table below:
+Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
@@ -113,82 +130,73 @@ The data to render the above chart is shown in the table below:
 | US        | 30K                 |
 | China     | 30K                 |
 
-FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as `data labels` along the x-axis and 'No. of oil reserves' as `data values` along y-axis. Let us prepare the data for a single-series chart.
 
-```json
-{
-  // Chart Configuration
-  "chart": {
-    "caption": "Countries with Most Oil Reserves [2017-18]",
-    "subCaption": "In MMbbl = One Million barrels",
-    "xAxisName": "Country",
-    "yAxisName": "Reserves (MMbbl)",
-    "numberSuffix": "K",
-    "theme": "fusion"
+FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
+
+```javascript
+// Preparing the chart data
+const chartData = [
+  {
+    label: "Venezuela",
+    value: "290"
   },
-  // Chart Data
-  "data": [
-    {
-      "label": "Venezuela",
-      "value": "290"
-    },
-    {
-      "label": "Saudi",
-      "value": "260"
-    },
-    {
-      "label": "Canada",
-      "value": "180"
-    },
-    {
-      "label": "Iran",
-      "value": "140"
-    },
-    {
-      "label": "Russia",
-      "value": "115"
-    },
-    {
-      "label": "UAE",
-      "value": "100"
-    },
-    {
-      "label": "US",
-      "value": "30"
-    },
-    {
-      "label": "China",
-      "value": "30"
-    }
-  ]
-}
+  {
+    label: "Saudi",
+    value: "260"
+  },
+  {
+    label: "Canada",
+    value: "180"
+  },
+  {
+    label: "Iran",
+    value: "140"
+  },
+  {
+    label: "Russia",
+    value: "115"
+  },
+  {
+    label: "UAE",
+    value: "100"
+  },
+  {
+    label: "US",
+    value: "30"
+  },
+  {
+    label: "China",
+    value: "30"
+  }
+];
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+## Configure your chart
 
-In the above JSON data:
+Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
-- Create the `chart` object to define the elements of the chart.
+```javascript
+// Create the datasource
+    dataSource: {
+    // Chart Configuration
+      chart: {
+        caption: "Countries With Most Oil Reserves [2017-18]",
+        subCaption: "In MMbbl = One Million barrels",
+        xAxisName: "Country",
+        yAxisName: "Reserves (MMbbl)",
+        numberSuffix: "K",
+        theme: "fusion"
+      },
+        // Chart Data - from step 2
+        "data": chartData
+    }
+};
+```
 
-- Set the `caption` and `subcaption` of the chart.
+Understand more about your chart and its components[ here](https://www.fusioncharts.com/dev/understanding-fusioncharts).
 
-- Set the value of `xAxisName` attribute to **Country**(first column of the table).
-
-- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
-
-- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
-
-- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
-
-- Set the `numberSuffix` attribute to set the unit of the values.
-
-- Set the `theme` attribute to apply the predefines themes to the chart.
-
-Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
-
-Now that you have the data in JSON format, let's render the chart.
-
-## Render the Chart
+## Render the chart
 
 To render the chart, follow the steps below:
 
@@ -224,6 +232,7 @@ The consolidated code is shown below:
 </ul>
 <div  class='mt-30'><strong>The steps to render the chart for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
+<div  class='mt-30'><strong>Step 1:</strong> In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
 <pre><code class="language-javascript">
 // Include the core fusioncharts file from core  -
 import FusionCharts from 'fusioncharts/core';
@@ -246,7 +255,7 @@ type: 'Column2D',
 width: '700', // Width of the chart
 height: '400', // Height of the chart
 dataFormat: 'json', // Data type
-renderAt:'chart-container', //Container where the chart will render
+renderAt: 'chart-container', //Container where the chart will render
 dataSource: {
 // Chart Configuration
 "chart": {
@@ -310,7 +319,7 @@ type: 'Column2D',
 width: '700', // Width of the chart
 height: '400', // Height of the chart
 dataFormat: 'json', // Data type
-renderAt:'chart-container', //Container where the chart will render
+renderAt: 'chart-container', //Container where the chart will render
 dataSource: {
 // Chart Configuration
 "chart": {
@@ -354,17 +363,23 @@ chartInstance.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
-<ul>
-    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
-    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
-    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
-    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
-    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
-    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
-    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
-    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
-</ul>
+<div class='mt-30'><strong>Step 2:</strong> Specify the chart container within the `index.html` file.</div>
+<pre><code class="language-javascript">
+&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Getting Started&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="chart-container"&gt;Fusioncharts will render here&lt;/div&gt;
+    &lt;script src="main.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div class='mt-30'><strong>Step 3:</strong> Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.</div>
+
 </div>
 
 <div class='tab cdn-tab active'>
@@ -373,9 +388,9 @@ chartInstance.render();
 &lt;head&gt;
 &lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
 &lt;!-- Include fusioncharts core library --&gt;
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;!-- Include fusion theme --&gt;
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
     FusionCharts.ready(function(){
     var fusioncharts = new FusionCharts({
@@ -504,14 +519,12 @@ chartInstance.render();
 </div>
 </div>
 
+## See your chart
+
+You should be able to see the chart as shown below.
+
+{% embed_chart getting-started-your-first-chart.js %}
+
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+
 That's it! Your first chart using Plain JavaScript is ready.
-
-## Problem Rendering the Chart?
-
-In case there is an error, and you are unable to see the chart, check for the following:
-
-- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](support@fusioncharts.com) to get in touch with our support team.
-
-- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
-
-- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
