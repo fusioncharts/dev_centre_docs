@@ -74,7 +74,7 @@
                   }]
                },
                {
-                  "annotationNumber": "4",
+                  "annotationNumber": "5",
                   "annotationName": "Data Label",
                   "annotationDesc": "Data labels are the names of the data points that are displayed on the x-axis of a chart.",
                   "annotationDescLinkPath": null,
@@ -86,7 +86,7 @@
                   }]
                },
                {
-                  "annotationNumber": "5",
+                  "annotationNumber": "6",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
