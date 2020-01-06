@@ -77,7 +77,7 @@
                   "annotationNumber": "5",
                   "annotationName": "X-Axis",
                   "annotationDesc": "X-Axis refers to a line on a chart that runs horizontally (left to right). Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes",
                   "leftPosition": "16%",
                   "topPosition": "84%",
                   "annotationLinks": []
@@ -85,8 +85,8 @@
                {
                   "annotationNumber": "6",
                   "annotationName": "X-Axis Title",
-                  "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDesc": "It refers to title of the x-axis. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "14.5%",
                   "topPosition": "31.5%",
                   "annotationLinks": []
@@ -95,7 +95,7 @@
                   "annotationNumber": "7",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the X-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "72%",
                   "topPosition": "89.5%",
                   "annotationLinks": []
@@ -104,7 +104,7 @@
                   "annotationNumber": "8",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to a line on a chart that runs vertically (up-down) through zero. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
                   "leftPosition": "8%",
                   "topPosition": "5.5%",
                   "annotationLinks": []
@@ -112,8 +112,8 @@
                {
                   "annotationNumber": "9",
                   "annotationName": "Y-Axis Title",
-                  "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDesc": "It refers to the title of the y-axis. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
                   "leftPosition": "2%",
                   "topPosition": "48%",
                   "annotationLinks": []
