@@ -96,8 +96,8 @@
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to a line on a chart that runs vertically (up-down) through zero. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
-                  "leftPosition": "12%",
-                  "topPosition": "46.5%",
+                  "leftPosition": "8%",
+                  "topPosition": "5.5%",
                   "annotationLinks": []
                },
                {
