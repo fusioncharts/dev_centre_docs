@@ -61,7 +61,7 @@
                   "annotationNumber": "4",
                   "annotationName": "Node Menu",
                   "annotationDesc": "A hamburger menu is displayed at the top right corner of the chart. You can click on it to add a node, a connector, or a label. You can also save the chart after modifying it by clicking and dragging one or more nodes. You can also restore the chart to a previous state.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "81%",
                   "topPosition": "4.5%",
                   "annotationLinks": [{

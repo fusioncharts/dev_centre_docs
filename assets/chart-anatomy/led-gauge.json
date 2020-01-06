@@ -58,7 +58,7 @@
                   "annotationNumber": "4",
                   "annotationName": "Upper Limit",
                   "annotationDesc": "Upper Limit refers to the highest point in the reference scale used in the gauge. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "70%",
                   "topPosition": "49%",
                   "annotationLinks": []
@@ -67,7 +67,7 @@
                   "annotationNumber": "5",
                   "annotationName": "Gauge Scale",
                   "annotationDesc": "The gauge scale displays all possible values between the lower and upper limits. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "51%",
                   "topPosition": "50%",
                   "annotationLinks": []
@@ -76,7 +76,7 @@
                   "annotationNumber": "6",
                   "annotationName": " Chart Value",
                   "annotationDesc": "The chart value displays the data value of the plot point where the mouse pointer is placed. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "41%",
                   "topPosition": "52%",
                   "annotationLinks": []

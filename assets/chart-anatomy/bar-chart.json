@@ -74,7 +74,7 @@
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "11.5%",
                   "topPosition": "29%",
                   "annotationLinks": []
@@ -83,7 +83,7 @@
                   "annotationNumber": "6",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "30%",
                   "topPosition": "75%",
                   "annotationLinks": []

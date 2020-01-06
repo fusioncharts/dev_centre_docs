@@ -84,7 +84,7 @@
                   "annotationNumber": "6",
                   "annotationName": "Gauge Scale",
                   "annotationDesc": "The gauge scale displays all possible values between the lower and upper limits. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "38%",
                   "topPosition": "33%",
                   "annotationLinks": []
