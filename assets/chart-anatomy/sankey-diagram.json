@@ -61,7 +61,7 @@
                   "annotationName": "Node",
                   "annotationDesc": "The start and endpoints of each flow in a Sankey/Chord Diagram are called nodes. Learn more about them ",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "30%",
+                  "leftPosition": "58%",
                   "topPosition": "30%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize various aspects of a node, including its size, color, label, padding, etc. Learn more about them ",
@@ -73,8 +73,8 @@
                   "annotationName": "Link",
                   "annotationDesc": "The flow paths between any two nodes in a Sankey/Chord Diagram are called links. Learn more about them ",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "30%",
-                  "topPosition": "30%",
+                  "leftPosition": "38%",
+                  "topPosition": "20%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize various aspects of a link, including its color, curvature, value, etc. Learn more about them ",
                      "linkPath": "/chart-guide/standard-charts/sankey-diagram#link"
