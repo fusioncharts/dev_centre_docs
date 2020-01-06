@@ -75,6 +75,30 @@
                },
                {
                   "annotationNumber": "5",
+                  "annotationName": "Node",
+                  "annotationDesc": "The start and endpoints of each flow in a Sankey/Chord Diagram are called nodes. Learn more about them ",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "30%",
+                  "topPosition": "30%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize various aspects of a node, including its size, color, label, padding, etc. Learn more about them ",
+                     "linkPath": "/chart-guide/standard-charts/sankey-diagram#node"
+                  }]
+               },
+               {
+                  "annotationNumber": "6",
+                  "annotationName": "Link",
+                  "annotationDesc": "The flow paths between any two nodes in a Sankey/Chord Diagram are called links. Learn more about them ",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "30%",
+                  "topPosition": "30%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize various aspects of a link, including its color, curvature, value, etc. Learn more about them ",
+                     "linkPath": "/chart-guide/standard-charts/sankey-diagram#link"
+                  }]
+               },
+               {
+                  "annotationNumber": "7",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",

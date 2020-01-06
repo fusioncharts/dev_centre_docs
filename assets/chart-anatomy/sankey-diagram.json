@@ -58,6 +58,30 @@
                },
                {
                   "annotationNumber": "4",
+                  "annotationName": "Node",
+                  "annotationDesc": "The start and endpoints of each flow in a Sankey/Chord Diagram are called nodes. Learn more about them ",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "30%",
+                  "topPosition": "30%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize various aspects of a node, including its size, color, label, padding, etc. Learn more about them ",
+                     "linkPath": "/chart-guide/standard-charts/sankey-diagram#node"
+                  }]
+               },
+               {
+                  "annotationNumber": "5",
+                  "annotationName": "Link",
+                  "annotationDesc": "The flow paths between any two nodes in a Sankey/Chord Diagram are called links. Learn more about them ",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "30%",
+                  "topPosition": "30%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize various aspects of a link, including its color, curvature, value, etc. Learn more about them ",
+                     "linkPath": "/chart-guide/standard-charts/sankey-diagram#link"
+                  }]
+               },
+               {
+                  "annotationNumber": "6",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
