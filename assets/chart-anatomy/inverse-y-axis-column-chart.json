@@ -11,8 +11,8 @@
                   "annotationName": "Caption",
                   "annotationDesc": "The caption (also called the chart title) is the heading of your chart. You can add custom text for the caption. You can also configure its font properties and cosmetics.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "38%",
-                  "topPosition": "5.5%",
+                  "leftPosition": "31%",
+                  "topPosition": "6.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add the caption ", 
                         "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
@@ -76,7 +76,7 @@
                   "annotationDesc": "It refers to title of the x-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "44%",
-                  "topPosition": "68%",
+                  "topPosition": "77%",
                   "annotationLinks": []
                },
                {
@@ -84,8 +84,8 @@
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the X-axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "64%",
-                  "topPosition": "74%",
+                  "leftPosition": "61%",
+                  "topPosition": "70%",
                   "annotationLinks": []
                },
                {
@@ -102,8 +102,8 @@
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "It refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
-                  "leftPosition": "0%",
-                  "topPosition": "43%",
+                  "leftPosition": "6%",
+                  "topPosition": "41%",
                   "annotationLinks": []
                },
                {
@@ -111,8 +111,8 @@
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "81%",
-                  "topPosition": "42%",
+                  "leftPosition": "68.5%",
+                  "topPosition": "42.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of a tooltip. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
