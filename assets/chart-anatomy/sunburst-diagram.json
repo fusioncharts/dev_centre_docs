@@ -78,8 +78,8 @@
                   "annotationName": "Data Label",
                   "annotationDesc": "Data labels are the names of the data points that are displayed on the x-axis of a chart.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "45.5%",
-                  "topPosition": "56.5%",
+                  "leftPosition": "67%",
+                  "topPosition": "54%",
                   "annotationLinks": [{
                      "linkDesc": "You can configure the arrangement and display properties for data labels. Learn more about it ",
                      "linkPath": "/chart-guide/chart-configurations/data-labels"
