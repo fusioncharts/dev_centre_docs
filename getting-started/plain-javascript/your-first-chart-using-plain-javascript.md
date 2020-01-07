@@ -12,10 +12,6 @@ On this page, we'll see how to install **FusionCharts** library and all the othe
 
 Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from CDN or Local Files.
 
-- jQuery requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
-
-- To download and install npm packages, you must have an npm package manager. Run `npm -v` in a terminal/console window, to check that if have the npm client installed.
-
 > Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `**npx webpack**` command in the terminal to ensure that the build is successful.
 
 ## Installation and including dependencies
@@ -31,13 +27,6 @@ You can install the fusioncharts components by following any of the methods belo
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab'>
 
-<div><strong>Prerequisites</strong></div>
-<div>
-    <ol>
-        <li>Before installing `fusioncharts` package via <strong>npm</strong>, make sure you have <strong>Node.js</strong> installed in your system.</li>
-        <li>Make sure you have a bundler like <strong>webpack</strong> and <strong>parcel</strong> or have <strong>browserify</strong> installed in your system.</li>
-    </ol>
-</div>
 <div><strong>Create a project folder using the following command:</strong></div>
 <pre><code class="language-bash">$ mkdir projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
