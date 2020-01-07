@@ -76,6 +76,18 @@
                },
                {
                   "annotationNumber": "5",
+                  "annotationName": "Data Label",
+                  "annotationDesc": "Data labels are the names of the data points that are displayed on the x-axis of a chart.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "67%",
+                  "topPosition": "54%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can configure the arrangement and display properties for data labels. Learn more about it ",
+                     "linkPath": "/chart-guide/chart-configurations/data-labels"
+                  }]
+               },
+               {
+                  "annotationNumber": "6",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
