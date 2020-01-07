@@ -28,7 +28,7 @@ Real-time charts are charts used in livestock monitoring These charts first pres
 
 Real-time charts support the following features:
 
-* Multiple datasets with real time update for each of them
+* Multiple datasets with real-time update for each of them
 
 * Multiple data updated in each update, i.e., a single pull to the server can come back with any number of data values updated.
 
@@ -50,7 +50,7 @@ Real-time charts support the following features:
 
 * Interactive legend to show/hide datasets in line/area/column charts
 
-* Real-time vertical divisional lines and trend-lines are supported
+* Real-time vertical divisional lines and trendlines are supported
 
 * Context menu to help users to enable/disable real-time updates
 
@@ -68,11 +68,15 @@ The format of real-time data for real-time charts depends on:
 
 * The attributes you want to update for each dataset - like the label, color, link, toolText, etc.
 
-* Whether you are passing empty data to the chart
+* Whether you are passing empty data to the chart.
 
-* the commands for the chart.
+* The commands for the chart.
 
-## Real-Time Line chart
+## Real-time Line Chart
+
+A realtime line chart looks as shown below:
+
+{% embed_chartAnatomy real-time-line-chart.json %}
 
 Let's create our first real-time line chart showcasing the stock price monitoring at Harry's SuperMart.
 
@@ -90,19 +94,15 @@ To create a real-time chart follow the steps given below:
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimeline) page of real-time line chart.
 
-A real-time line chart looks like:
-
 {% embed_chart standard-charts-real-time-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/43fJn/) to edit the real-time line chart.
 
-## Real Time Area Chart
-
-A realtime area chart looks as shown below:
-
-{% embed_chartAnatomy real-time-area-chart.json %}
+## Real-time Area Chart
 
 To create a real-time area chart, set the `type` attribute to `realtimearea` chart. The rest of the data structure remains the same.
+
+{% embed_chartAnatomy real-time-area-chart.json %}
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimearea) page of real-time area chart.
 
@@ -112,9 +112,11 @@ A real-time area chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/kdfX7/) to edit the real-time area chart.
 
-## Real Time Stacked Area chart
+## Real-time Stacked Area Chart
 
 Now, let's create a real-time stacked area chart showcasing the number of live visitors in every 5 seconds interval.
+
+{% embed_chartAnatomy real-time-stacked-area-chart.json %}
 
 To create a real-time chart, set the `type` attribute to `realtimestackedarea`.
 
@@ -126,9 +128,11 @@ A real-time stacked area chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/C8mkW/) to edit the real-time stacked area chart.
 
-## Real Time Column chart
+## Real-time Column Chart
 
 In the above samples, we rendered real-time line and area charts. Let's now create a real-time column charts showcasing number of online transactions per second on the e-commerce site.
+
+{% embed_chartAnatomy real-time-column-chart.json %}
 
 To create a real-time column chart, set the `type` attribute to `realtimecolumn`.
 
@@ -140,9 +144,11 @@ A real-time column chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/NvJat/) to edit the real-time column chart.
 
-## Real Time Stacked Column chart
+## Real-time Stacked Column Chart
 
 FusionCharts also supports real-time stacked column chart. Here the sample below will showcase the number of live visitors on site, updated every 5 seconds.
+
+{% embed_chartAnatomy real-time-stacked-column-chart.json %}
 
 To create a real-time stacked column chart, set the `type` attribute to `realtimestackedcolumn`.
 
@@ -154,9 +160,11 @@ A real-time stacked column chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/bLUw5/) to edit the real-time stacked column chart.
 
-## Real Time Dual Y-axis Line chart
+## Real-time Dual Y-axis Line Chart
 
-To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`.
+To create a real-time dual y-axis line chart, set the `type` attribute to `realtimelinedy`.
+
+{% embed_chartAnatomy real-time-dual-y-axis-line-chart.json %}
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimelinedy) page of real-time dual y-axis line chart.
 
