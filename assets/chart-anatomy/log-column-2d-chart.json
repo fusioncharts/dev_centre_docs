@@ -4,7 +4,7 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "itemHeader": "Log Column 2D Chart Anatomy",
+            "_itemHeader": "Log Column 2D Chart Anatomy",
             "imgSrc": "log-column-2D-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
@@ -199,8 +199,8 @@
                         "linkPath": "/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature"
                      },
                      {
-                        "linkDesc": "Look and feel of this menu can also be customized using available attributes, learn more about them ",
-                        "linkPath": "/chart-attributes/area2d"
+                        "linkDesc": "Look and feel of this menu can also be customized using available attributes. Learn more about them ",
+                        "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
                      }
                   ]
                }
