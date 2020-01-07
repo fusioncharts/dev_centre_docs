@@ -108,6 +108,8 @@ Click [here](http://jsfiddle.net/fusioncharts/T5C6h/) to edit the above multi-se
 
 To render a multi-series area chart the same use case as above, set the `type` to `msarea`.
 
+{% embed_chartAnatomy ms-area-chart.json %}
+
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=MSArea) page of multi-series area 2D chart.
 
 A multi-series area chart looks like:
