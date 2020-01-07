@@ -74,10 +74,6 @@ The format of real-time data for real-time charts depends on:
 
 ## Real-time Line Chart
 
-A realtime line chart looks as shown below:
-
-
-
 Let's create our first real-time line chart showcasing the stock price monitoring at Harry's SuperMart.
 
 To create a real-time chart follow the steps given below:
@@ -101,8 +97,6 @@ Click [here](http://jsfiddle.net/fusioncharts/43fJn/) to edit the real-time line
 ## Real-time Area Chart
 
 To create a real-time area chart, set the `type` attribute to `realtimearea` chart. The rest of the data structure remains the same.
-
-{% embed_chartAnatomy real-time-area-chart.json %}
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimearea) page of real-time area chart.
 

@@ -4,7 +4,7 @@
    "content": {
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "_itemHeader": "Realtime Line Chart Anatomy",
+            "_itemHeader": "Real-time Line Chart Anatomy",
             "imgSrc": "real-time-line-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
