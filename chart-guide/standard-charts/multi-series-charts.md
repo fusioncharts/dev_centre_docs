@@ -94,6 +94,8 @@ Now, let's create a multi-series line chart which will show the comparison betwe
 
 To render a multi-series line chart, set the `type` to `msline`.
 
+{% embed_chartAnatomy ms-line-chart.json %}
+
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=msline) page of multi-series line 2D chart.
 
 A multi-series line chart looks like:
