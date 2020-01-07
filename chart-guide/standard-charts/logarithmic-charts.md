@@ -32,6 +32,7 @@ The FusionCharts Suite XT log charts offer the following features:
 
 A log column 2D chart looks as follows:
 
+{% embed_chartAnatomy log-column-2d-chart.json %}
 
 As an example, we will create a log column 2D chart that compares the store footfalls with the online visits for one year.
 
