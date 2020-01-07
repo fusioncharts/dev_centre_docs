@@ -76,7 +76,7 @@ The format of real-time data for real-time charts depends on:
 
 A realtime line chart looks as shown below:
 
-{% embed_chartAnatomy real-time-line-chart.json %}
+
 
 Let's create our first real-time line chart showcasing the stock price monitoring at Harry's SuperMart.
 
@@ -157,8 +157,6 @@ Click [here](http://jsfiddle.net/fusioncharts/bLUw5/) to edit the real-time stac
 ## Real-time Dual Y-axis Line Chart
 
 To create a real-time dual y-axis line chart, set the `type` attribute to `realtimelinedy`.
-
-{% embed_chartAnatomy real-time-dual-y-axis-line-chart.json %}
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimelinedy) page of real-time dual y-axis line chart.
 
