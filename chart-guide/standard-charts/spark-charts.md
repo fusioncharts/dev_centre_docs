@@ -371,7 +371,7 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "lineAlpha": "0"      
+        "lineAlpha": "0"
     },
 }
 ```
