@@ -116,8 +116,6 @@ Click [here](http://jsfiddle.net/fusioncharts/kdfX7/) to edit the real-time area
 
 Now, let's create a real-time stacked area chart showcasing the number of live visitors in every 5 seconds interval.
 
-{% embed_chartAnatomy real-time-stacked-area-chart.json %}
-
 To create a real-time chart, set the `type` attribute to `realtimestackedarea`.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimestackedarea) page of real-time stacked area chart.
@@ -132,8 +130,6 @@ Click [here](http://jsfiddle.net/fusioncharts/C8mkW/) to edit the real-time stac
 
 In the above samples, we rendered real-time line and area charts. Let's now create a real-time column charts showcasing number of online transactions per second on the e-commerce site.
 
-{% embed_chartAnatomy real-time-column-chart.json %}
-
 To create a real-time column chart, set the `type` attribute to `realtimecolumn`.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=realtimecolumn) page of real-time column chart.
@@ -147,8 +143,6 @@ Click [here](http://jsfiddle.net/fusioncharts/NvJat/) to edit the real-time colu
 ## Real-time Stacked Column Chart
 
 FusionCharts also supports real-time stacked column chart. Here the sample below will showcase the number of live visitors on site, updated every 5 seconds.
-
-{% embed_chartAnatomy real-time-stacked-column-chart.json %}
 
 To create a real-time stacked column chart, set the `type` attribute to `realtimestackedcolumn`.
 
