@@ -96,7 +96,11 @@ A real-time line chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/43fJn/) to edit the real-time line chart.
 
-## Real Time Area chart
+## Real Time Area Chart
+
+A realtime area chart looks as shown below:
+
+{% embed_chartAnatomy real-time-area-chart.json %}
 
 To create a real-time area chart, set the `type` attribute to `realtimearea` chart. The rest of the data structure remains the same.
 
