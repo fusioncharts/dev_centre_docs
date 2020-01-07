@@ -1,8 +1,8 @@
 {
-   "header": "Chart Anatomy",
-   "subHeader": "To know how FusionCharts works it is important to understand the various components and concepts of a chart",
+   "header": "Chart Components (Anatomy)",
+   "subHeader": "To know how FusionCharts works, it is important to understand the various components and concepts of a chart",
    "content": {
-      "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+      "header": "Below you can find different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
             "_itemHeader": "Multi-series Line Chart Anatomy",
             "imgSrc": "ms-line-chart-anatomy.png",
