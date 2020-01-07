@@ -49,17 +49,17 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 </pre>
 <div>After installing the fusioncharts components, you can replace the code in `index.js` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
 <pre><code class="language-javascript">
-    //  Require AngularJS
-    var angular = require('angular');
+//  Require AngularJS
+var angular = require('angular');
 
-    // Require FusionCharts
-    var FusionCharts = require('fusioncharts');
+// Require FusionCharts
+var FusionCharts = require('fusioncharts');
 
-    // Require Chart modules
-    var Charts = require('fusioncharts/fusioncharts.charts');
+// Require Chart modules
+var Charts = require('fusioncharts/fusioncharts.charts');
 
-    // Initialize Charts with FusionCharts instance
-    Charts(FusionCharts);
+// Initialize Charts with FusionCharts instance
+Charts(FusionCharts);
 
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
@@ -138,7 +138,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with countries as data labels along x-axis and **No. of oil reserves** as data values along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
@@ -215,7 +215,7 @@ To render the chart, follow the steps given below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<div class='mt-30'><strong>Step 1:</strong>In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
+<div class='mt-30'><strong>Step 1:</strong> In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
 <pre><code class="language-javascript">
 //  Require AngularJS
 var angular = require('angular');
@@ -262,7 +262,7 @@ data: [
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-<div class='mt-30'><strong>Step 2:</strong>Specify the chart configurations within the `index.html` file.</div>
+<div class='mt-30'><strong>Step 2:</strong> Specify the chart configurations within the `index.html` file.</div>
 <div>
     <ul>
         <li>Store the chart configurations in a variable (`myApp`).</li>
@@ -270,7 +270,7 @@ data: [
     </ul>
 </div>
 
-<pre><code class="language-javascript">
+<pre><code class="language-html">
 &lt;!doctype html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -291,7 +291,7 @@ data: [
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<div class='mt-30'><strong>Step 3:</strong>Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.</div>
+<div class='mt-30'><strong>Step 3:</strong> Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.</div>
 </div>
 
 <div class='tab cdn-tab'>
