@@ -78,8 +78,8 @@
                   "annotationName": "Data Values",
                   "annotationDesc": "Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
-                  "leftPosition": "74.5%",
-                  "topPosition": "42.5%",
+                  "leftPosition": "87%",
+                  "topPosition": "46%",
                   "annotationLinks": []
                },
                {
@@ -87,7 +87,7 @@
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "65%",
+                  "leftPosition": "66s%",
                   "topPosition": "40.5%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
