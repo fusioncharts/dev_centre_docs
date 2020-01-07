@@ -744,7 +744,6 @@ Refer to the code below:
 ```json
 {
     "chart": {
-      
         "highHoverColor": "#b0fdb0",
         "lowHoverColor": "#fcb0b0"
     },
