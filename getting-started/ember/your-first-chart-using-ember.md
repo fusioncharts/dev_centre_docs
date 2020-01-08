@@ -22,16 +22,8 @@ Follow the steps mentioned [here](https://guides.emberjs.com/release/getting-sta
 
 To install `FusionCharts` and the `ember-fusioncharts` component via npm follow the steps below:
 
-**Step 1**: Install `fusioncharts` core library
-
 ```javascript
-npm install fusioncharts --save
-```
-
-**Step 2**: Install `ember-fusioncharts` component
-
-```javascript
-ember install ember-fusioncharts
+npm install ember-fusioncharts fusioncharts --save
 ```
 
 That completes the installation of `FusionCharts` and the `ember-fusioncharts` component.
@@ -99,7 +91,7 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 
 ```javascript
 // Create the datasource
-dataSource = {
+const dataSource = {
   // Chart Configuration
   chart: {
     caption: "Countries With Most Oil Reserves [2017-18]",
@@ -113,8 +105,6 @@ dataSource = {
   data: chartData
 };
 ```
-
-Understand more about your chart and its components [here](https://www.fusioncharts.com/dev/understanding-fusioncharts).
 
 ## Render the chart
 
@@ -145,22 +135,53 @@ module.exports = function(defaults) {
 
 **Step 2**: Create a component and specify the chart data in `chart-viewer.js` file
 
-- Create a simple component (e.g. chart-viewer) to render your chart.
 
 ```javascript
-ember g component chart-viewer
+ember g component chart-viewer && ember generate component-class chart-viewer
 ```
 
-OR
-
-```javascript
-ember generate component-class chart-viewer
-```
-
-- Set the chart's `width`, `height`, `type` and the `dataSource` in `chart-viewer.js` file.
+Set the chart's `width`, `height`, `type` and the `dataSource` in `chart-viewer.js` file.
 
 ```javascript
 import Component from "@ember/component";
+
+// STEP 2 : Preparing the chart data
+const chartData = [
+  {
+    label: "Venezuela",
+    value: "290"
+  },
+  {
+    label: "Saudi",
+    value: "260"
+  },
+  {
+    label: "Canada",
+    value: "180"
+  },
+  {
+    label: "Iran",
+    value: "140"
+  },
+  {
+    label: "Russia",
+    value: "115"
+  },
+  {
+    label: "UAE",
+    value: "100"
+  },
+  {
+    label: "US",
+    value: "30"
+  },
+  {
+    label: "China",
+    value: "30"
+  }
+];
+
+// STEP 3 : Set chart configurations
 const myDataSource = {
   chart: {
     caption: "Countries With Most Oil Reserves [2017-18]",
@@ -171,40 +192,7 @@ const myDataSource = {
     theme: "fusion"
   },
   // Chart Data
-  data: [
-    {
-      label: "Venezuela",
-      value: "290"
-    },
-    {
-      label: "Saudi",
-      value: "260"
-    },
-    {
-      label: "Canada",
-      value: "180"
-    },
-    {
-      label: "Iran",
-      value: "140"
-    },
-    {
-      label: "Russia",
-      value: "115"
-    },
-    {
-      label: "UAE",
-      value: "100"
-    },
-    {
-      label: "US",
-      value: "30"
-    },
-    {
-      label: "China",
-      value: "30"
-    }
-  ]
+  data: chartData
 };
 ```
 
@@ -212,31 +200,19 @@ const myDataSource = {
 
 ```javascript
 <h1>{{ title }}</h1>;
-{
-  {
-    fusioncharts - xt;
-    width = width;
-    height = height;
-    type = type;
-    dataFormat = dataFormat;
-    dataSource = dataSource;
-  }
-}
+{{fusioncharts - xt
+  width = width
+  height = height
+  type = type
+  dataFormat = dataFormat
+  dataSource = dataSource}}
 ```
 
 **Step 4**: Add `chart-viewer` component to your `application.hbs` template:
 
 ```javascript
-{
-  {
-    chart - viewer;
-  }
-}
-{
-  {
-    outlet;
-  }
-}
+{{chart - viewer}}
+{{outlet}}
 ```
 
 ## See your chart
