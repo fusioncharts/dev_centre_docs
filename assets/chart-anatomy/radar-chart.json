@@ -16,32 +16,32 @@
                   "topPosition": "11.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
                         "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#configure-caption-alignment"
                      }
                   ]
                },
                {
                   "annotationNumber": "2",
-                  "annotationName": "Sub-caption",
+                  "annotationName": "Subcaption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "61%",
                   "topPosition": "19%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
                },
@@ -76,6 +76,18 @@
                },
                {
                   "annotationNumber": "5",
+                  "annotationName": "Data Label",
+                  "annotationDesc": "Data labels are the names of the data points that are displayed on the x-axis of a chart.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "74%",
+                  "topPosition": "38%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can configure the arrangement and display properties for data labels. Learn more about it ",
+                     "linkPath": "/chart-guide/chart-configurations/data-labels"
+                  }]
+               },
+               {
+                  "annotationNumber": "6",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
