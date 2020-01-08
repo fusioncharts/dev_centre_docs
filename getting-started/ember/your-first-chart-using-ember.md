@@ -112,7 +112,7 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 
 ```javascript
 // Create the datasource
-const dataSource = {
+const myDataSource = {
   // Chart Configuration
   chart: {
     caption: "Countries With Most Oil Reserves [2017-18]",
