@@ -63,7 +63,7 @@ Before you begin, make sure your development environment includes `Node.js` and 
 </div>
 
 <div class='tab npm-tab'>
-<div class='mt-30'><strong>You can install the fusioncharts components by following any of the methods below:</strong></div>
+<div class='mt-30'>You can install the `jquery-fusioncharts` and `fusioncharts` components through npm as shown below</div>
 <pre><code class="language-javascript">
     $ npm install jquery-fusioncharts fusioncharts --save
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
