@@ -26,7 +26,7 @@ To install `FusionCharts` and the `ember-fusioncharts` component via npm follow 
 npm install ember-fusioncharts fusioncharts --save
 ```
 
-In `ember-cli-build.js` file include the necessary files to add the Fusioncharts dependency.
+Include the necessary files to add the `fusioncharts` dependencies in `ember-cli-build.js` file in the project root directory .
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be an asset to use in that environment.
 
@@ -64,7 +64,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as `data labels` along x-axis and 'No. of oil reserves' as `data values` along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
@@ -137,7 +137,7 @@ Get ready to render your first chart using `ember-fusioncharts` component finall
 ember g component chart-viewer && ember generate component-class chart-viewer
 ```
 
-Set the chart's `width`, `height`, `type` and the `dataSource` in `chart-viewer.js` file.
+Set the chart's `width`, `height`, `type` and the `dataSource` in `app/components/chart-viewer.js` file.
 
 ```javascript
 import Component from "@ember/component";
@@ -191,9 +191,18 @@ const myDataSource = {
   // Chart Data
   data: chartData
 };
+
+export default Component.extend({
+  title: 'Ember FusionCharts Sample',
+  width: 600,
+  height: 400,
+  type: 'column2d',
+  dataFormat: 'json',
+  dataSource: myDataSource
+});
 ```
 
-**Step 2**: Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
+**Step 2**: Add `fusioncharts` component to your `chart-viewer.hbs` template (present in `app/components` folder) to render the chart:
 
 ```javascript
 <h1>{{ title }}</h1>;
@@ -205,7 +214,7 @@ const myDataSource = {
   dataSource = dataSource}}
 ```
 
-**Step 3**: Add `chart-viewer` component to your `application.hbs` template:
+**Step 3**: Add `chart-viewer` component to your `application.hbs` template (present in `app/templates` folder):
 
 ```javascript
 {{chart-viewer}}
@@ -218,7 +227,7 @@ You should be able to see the chart as shown below.
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. 
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly.
 
 > If you are getting a **this.$()** error on the page, check this [link](https://guides.emberjs.com/release/configuring-ember/optional-features/) and implement the `jquery-integration` to fix the error.
 
