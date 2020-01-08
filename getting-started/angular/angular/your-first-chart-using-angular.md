@@ -183,11 +183,11 @@ export class AppComponent {
       "data": chartData
     };
     this.dataSource = dataSource
-  } // end of constructor
-} // end of class AppComponent
+  }
+}
 ```
 
-**Step 3**: Now using the fusioncharts component create the chart container in `app.component.html` and set the `width`, `height`, `type` attributes as shown.
+**Step 2**: Now using the fusioncharts component create the chart container in `app.component.html` and set the `width`, `height`, `type` attributes as shown.
 
 ```html
 <h1>
