@@ -10,38 +10,38 @@
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
-                  "annotationDesc": "The caption (also called the chart title) is the heading of your chart, you can add custom text for the caption, as well as configure its font properties and cosmetics.",
+                  "annotationDesc": "The caption (also called the chart title) is the heading of your chart. You can add custom text for the caption, as well as configure its font properties and cosmetics. Learn more about it ",
                   "annotationDescLinkPath": null,
                   "leftPosition": "67.5%",
                   "topPosition": "10%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes. Know more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
                         "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#configure-caption-alignment"
                      }
                   ]
                },
                {
                   "annotationNumber": "2",
-                  "annotationName": "Sub-caption",
+                  "annotationName": "Subcaption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "42.5%",
                   "topPosition": "20.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes. Learn more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
                },
@@ -53,16 +53,16 @@
                   "leftPosition": "40%",
                   "topPosition": "38%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize the data plots, learn more about it ",
-                        "linkPath": "/chart-guide/standard-charts/pie-and-doughnut-charts#customize-the-center-label-for-a-doughnut-chart"
+                        "linkDesc": "You can customize the data plots. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/data-plot"
                      }
                   ]
                },
                {
                   "annotationNumber": "4",
                   "annotationName": "Data Labels",
-                  "annotationDesc": "Data labels refers to the lables associated with each pie slcie. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/standard-charts/pie-and-doughnut-charts",
+                  "annotationDesc": "Data labels refers to the labels associated with each pie slice. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-labels",
                   "leftPosition": "27%",
                   "topPosition": "60%",
                   "annotationLinks": []
@@ -70,8 +70,8 @@
                {
                   "annotationNumber": "5",
                   "annotationName": "Data Values",
-                  "annotationDesc": "Data values refers to values associated with each pie slcie. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/standard-charts/pie-and-doughnut-charts",
+                  "annotationDesc": "Data values refers to values associated with each pie slice. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
                   "leftPosition": "70%",
                   "topPosition": "68%",
                   "annotationLinks": []
@@ -79,7 +79,7 @@
                {
                   "annotationNumber": "6",
                   "annotationName": "Legend",
-                  "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
+                  "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color. Learn more about them ",
                   "annotationDescLinkPath": null,
                   "leftPosition": "47.5%",
                   "topPosition": "83.5%",
@@ -101,7 +101,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "64%",
                   "topPosition": "38.5%",
                   "annotationLinks": [{
@@ -122,16 +122,16 @@
                   "leftPosition": "82.5%",
                   "topPosition": "12%",
                   "annotationLinks": [{
-                        "linkDesc": "You can enable or disable chart export using attribute exportEnabled, learn more about its usage ",
+                        "linkDesc": "You can enable or disable chart export using attribute `exportEnabled`. Learn more about its usage ",
                         "linkPath": "/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf"
                      },
                      {
-                        "linkDesc": "You can also define export mode like server, client, auto for chart export, learn more about them ",
+                        "linkDesc": "You can also define export mode like `server`, `client`, or `auto` for chart export. Learn more about them ",
                         "linkPath": "/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature"
                      },
                      {
-                        "linkDesc": "Look and feel of this menu can also be customized using available attributes, learn more about them ",
-                        "linkPath": "/chart-attributes/area2d"
+                        "linkDesc": "Look and feel of this menu can also be customized using available attributes. Learn more about them ",
+                        "linkPath": "/exporting-charts/using-fc-export-server/configuring-the-export-feature"
                      }
                   ]
                }
