@@ -22,9 +22,9 @@ Before you begin, make sure your development environment includes `Node.js` and 
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
     <li><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='local'>Local Files</a></li>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
@@ -161,23 +161,20 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 
 ```javascript
 // Create the datasource
-    dataSource: {
-    // Chart Configuration
-      chart: {
+const dataSource = {
+// Chart Configuration
+    chart: {
         caption: "Countries With Most Oil Reserves [2017-18]",
         subCaption: "In MMbbl = One Million barrels",
         xAxisName: "Country",
         yAxisName: "Reserves (MMbbl)",
         numberSuffix: "K",
         theme: "fusion"
-      },
-        // Chart Data - from step 2
-        "data": chartData
-    }
+    },
+    // Chart Data - from step 2
+    "data": chartData
 };
 ```
-
-Understand more about your chart and its components [here](https://www.fusioncharts.com/dev/understanding-fusioncharts).
 
 ## Render the chart
 
@@ -185,9 +182,9 @@ Get ready to render your first chart finally with the steps below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
     <li><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='local'>Local Files</a></li>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
