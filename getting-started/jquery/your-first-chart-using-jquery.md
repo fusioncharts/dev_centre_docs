@@ -28,12 +28,8 @@ Before you begin, make sure your development environment includes `Node.js` and 
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab cdn-tab'>
-<div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
-<div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
-<div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files.</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
+<div class='tab cdn-tab active'>
+<div class='mt-30'>To install the FusionCharts package and the `jquery-fusioncharts` component include the following code in the html file</div>
 <pre><code class="language-html">
 &lt;head&gt;
     &lt;!-- jQuery --&gt;
@@ -50,11 +46,7 @@ Before you begin, make sure your development environment includes `Node.js` and 
 </div>
 
 <div class='tab local-tab'>
-<div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
-<div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
-<div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
+<div class='mt-30'>Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
 <pre><code class="language-html">
 &lt;head&gt;
     &lt;!-- jQuery --&gt;
@@ -70,7 +62,7 @@ Before you begin, make sure your development environment includes `Node.js` and 
 </pre>
 </div>
 
-<div class='tab npm-tab active'>
+<div class='tab npm-tab'>
 <div class='mt-30'><strong>You can install the fusioncharts components by following any of the methods below:</strong></div>
 <pre><code class="language-javascript">
     $ npm install jquery-fusioncharts fusioncharts --save
@@ -191,7 +183,7 @@ Get ready to render your first chart finally with the steps below:
     <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab cdn-tab'>
+<div class='tab cdn-tab active'>
 <pre><code class="language-html">
 &lt;html&gt;
     &lt;head&gt;
@@ -331,7 +323,7 @@ Get ready to render your first chart finally with the steps below:
 </pre>
 </div>
 
-<div class='tab npm-tab active'>
+<div class='tab npm-tab'>
 <div><strong>Step 1</strong>: In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
 <pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
