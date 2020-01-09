@@ -22,34 +22,6 @@ npm install react-native-fusioncharts fusioncharts --save
 
 To setup the react-native-fusioncharts component, follow the steps given below:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='android'>Android</a></li>
-    <li><a data-toggle='ios'>iOS</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab android-tab active'>
-<div>
-    <ul>
-        <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
-        <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-    </ul>
-</div>
-</div>
-
-<div class='tab ios-tab'>
-<div>    
-    <ul>
-        <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
-        <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-    </ul>
-</div>
-</div>
-
-</div>
-</div>
-
 That completes the installation of FusionCharts and the react-native-fusioncharts component.
 
 ## Preparing the Data
