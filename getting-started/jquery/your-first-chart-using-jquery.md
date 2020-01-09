@@ -225,24 +225,27 @@ Get ready to render your first chart finally with the steps below:
             }, {
                 label: "China",
                 value: "30"
-            }];
-            // STEP 3 - Chart configurations
-            const chartConfigs = {
+            }]
+            //STEP 3 - Chart Configurations
+        	const chartConfigs = {
                 type: "column2d",
                 width: "700",
                 height: "400",
                 dataFormat: "json",
-                chart: {
-                    caption: "Countries With Most Oil Reserves [2017-18]",
-                    subCaption: "In MMbbl = One Million barrels",
-                    xAxisName: "Country",
-                    yAxisName: "Reserves (MMbbl)",
-                    numberSuffix: "K",
-                    theme: "fusion"
-                },
-                // Chart Data - from step 2
-                "data": chartData
-            };
+                dataSource: {
+                    // Chart Configuration
+                    "chart": {
+                        "caption": "Countries With Most Oil Reserves [2017-18]",
+                        "subCaption": "In MMbbl = One Million barrels",
+                        "xAxisName": "Country",
+                        "yAxisName": "Reserves (MMbbl)",
+                        "numberSuffix": "K",
+                        "theme": "fusion",
+                    },
+                    // Chart Data
+                    "data": chartData
+                }
+            }
             // Create a chart container
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts(chartConfigs);
@@ -296,23 +299,26 @@ Get ready to render your first chart finally with the steps below:
                 label: "China",
                 value: "30"
             }];
-            // STEP 3 - Chart configurations
-            const chartConfigs = {
+          //STEP 3 - Chart Configurations
+        	const chartConfigs = {
                 type: "column2d",
                 width: "700",
                 height: "400",
                 dataFormat: "json",
-                chart: {
-                    caption: "Countries With Most Oil Reserves [2017-18]",
-                    subCaption: "In MMbbl = One Million barrels",
-                    xAxisName: "Country",
-                    yAxisName: "Reserves (MMbbl)",
-                    numberSuffix: "K",
-                    theme: "fusion"
-                },
-                // Chart Data - from step 2
-                "data": chartData
-            };
+                dataSource: {
+                    // Chart Configuration
+                    "chart": {
+                        "caption": "Countries With Most Oil Reserves [2017-18]",
+                        "subCaption": "In MMbbl = One Million barrels",
+                        "xAxisName": "Country",
+                        "yAxisName": "Reserves (MMbbl)",
+                        "numberSuffix": "K",
+                        "theme": "fusion",
+                    },
+                    // Chart Data
+                    "data": chartData
+                }
+            }
             // Create a chart container
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts(chartConfigs);
@@ -363,23 +369,26 @@ $('document').ready(function () {
         label: "China",
         value: "30"
     }];
-    // STEP 3 - Chart configurations
+    //STEP 3 - Chart Configurations
     const chartConfigs = {
         type: "column2d",
         width: "700",
         height: "400",
         dataFormat: "json",
-        chart: {
-            caption: "Countries With Most Oil Reserves [2017-18]",
-            subCaption: "In MMbbl = One Million barrels",
-            xAxisName: "Country",
-            yAxisName: "Reserves (MMbbl)",
-            numberSuffix: "K",
-            theme: "fusion"
-        },
-        // Chart Data - from step 2
-        "data": chartData
-    };
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": chartData
+        }
+    }
     $("#chart-container").insertFusionCharts(chartConfigs);
 });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
