@@ -222,7 +222,7 @@ const styles = StyleSheet.create({
 
 You should be able to see the chart as shown below.
 
-<<<<<sample chart>>>>>
+{% embed_chart getting-started-your-first-chart.js %}
 
 Add the following script in the application's `package.json` file to bundle your assets when you want to generate a signed APK.
 
