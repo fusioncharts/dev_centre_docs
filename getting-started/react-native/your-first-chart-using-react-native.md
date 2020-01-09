@@ -257,3 +257,29 @@ const chartData = [
 ## Configure Your Chart
 
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
+
+```javascript
+// Create the datasource
+    dataSource = {
+    // Chart Configuration
+      chart: {
+        caption: "Countries With Most Oil Reserves [2017-18]",
+        subCaption: "In MMbbl = One Million barrels",
+        xAxisName: "Country",
+        yAxisName: "Reserves (MMbbl)",
+        numberSuffix: "K",
+        theme: "fusion"
+      },
+    // Chart Data - from step 2
+    "data": chartData
+    }
+};
+```
+
+## Render the Chart
+
+Finally, get ready to render your first chart using the `react-native-fusioncharts` component. Follow the steps mentioned below:
+
+> The JavaScript code to create a chart in Android and iOS is the same.
+
+Copy the following code to app.js file.
