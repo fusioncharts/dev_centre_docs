@@ -10,9 +10,11 @@ On this page, we'll see how to install **FusionCharts** library and all the othe
 
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from CDN or Local Files.
+Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from **CDN** or **Local Files**.
+
 > Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run **npx webpack** command in the terminal to ensure that the build is successful.
-Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm.
+
+Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a jQuery project through npm.
 
 ## Installation and including dependencies
 
@@ -63,7 +65,7 @@ FusionCharts.addDep(FusionTheme);
 <div>To install the **FusionCharts** Suite follow the steps below:</div>
 <div>
     <ol>
-        <li>Include the **FusionCharts** JavaScript files from CDN in your html file.</li>
+        <li>Include the **FusionCharts** JavaScript files from CDN in the html file.</li>
         <li>Include the theme file.</li>
     </ol>
 </div>
