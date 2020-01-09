@@ -22,13 +22,48 @@ Before you begin, make sure your development environment includes `Node.js` and 
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='local'>Local Files</a></li>
+    <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
-<div class='mt-30'><strong>You can install the fusioncharts components by following any of the methods below:</strong></div>
+
+<div class='tab cdn-tab active'>
+<div class='mt-30'>To install the FusionCharts package and the `jquery-fusioncharts` component include the following code in the html file</div>
+<pre><code class="language-html">
+&lt;head&gt;
+    &lt;!-- jQuery --&gt;
+    &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
+    &lt;!-- FusionCharts --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;!-- jQuery-FusionCharts --&gt;
+    &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
+    &lt;!-- Fusion Theme --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;/head&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab local-tab'>
+<div class='mt-30'>Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
+<pre><code class="language-html">
+&lt;head&gt;
+    &lt;!-- jQuery --&gt;
+    &lt;script type="text/javascript" src="path/to/local/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;!-- FusionCharts --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- jQuery-FusionCharts --&gt;
+    &lt;script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Fusion Theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab npm-tab'>
+<div class='mt-30'>You can install the `jquery-fusioncharts` and `fusioncharts` components through npm as shown below</div>
 <pre><code class="language-javascript">
     $ npm install jquery-fusioncharts fusioncharts --save
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -49,48 +84,6 @@ FusionTheme(FusionCharts); // Resolve Fusion theme as dependency for FusionChart
 jQueryFusionCharts(FusionCharts); //Resolve jQueryFusionCharts as dependency for FusionCharts
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-</div>
-
-<div class='tab cdn-tab'>
-<div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
-<div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
-<div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files.</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
-<pre><code class="language-html">
-&lt;head&gt;
-    &lt;!-- jQuery --&gt;
-    &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
-    &lt;!-- FusionCharts --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- jQuery-FusionCharts --&gt;
-    &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
-    &lt;!-- Fusion Theme --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-&lt;/head&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-<div class='tab local-tab'>
-<div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
-<div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
-<div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
-<pre><code class="language-html">
-&lt;head&gt;
-    &lt;!-- jQuery --&gt;
-    &lt;script type="text/javascript" src="path/to/local/jquery.min.js"&gt;&lt;/script&gt;
-    &lt;!-- FusionCharts --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- jQuery-FusionCharts --&gt;
-    &lt;script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Fusion Theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
 </div>
 
 </div>
@@ -160,24 +153,24 @@ const chartData = [
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
 ```javascript
-// Create the datasource
-    dataSource: {
-    // Chart Configuration
-      chart: {
+// Chart Configuration
+const chartConfigs = {
+    type: "column2d",
+    width: "700",
+    height: "400",
+    dataFormat: "json",
+    chart: {
         caption: "Countries With Most Oil Reserves [2017-18]",
         subCaption: "In MMbbl = One Million barrels",
         xAxisName: "Country",
         yAxisName: "Reserves (MMbbl)",
         numberSuffix: "K",
         theme: "fusion"
-      },
-        // Chart Data - from step 2
-        "data": chartData
-    }
+    },
+    // Chart Data - from step 2
+    "data": chartData
 };
 ```
-
-Understand more about your chart and its components [here](https://www.fusioncharts.com/dev/understanding-fusioncharts).
 
 ## Render the chart
 
@@ -185,86 +178,12 @@ Get ready to render your first chart finally with the steps below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='local'>Local Files</a></li>
+    <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
-<div><strong>Step 1</strong>: In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
-<pre><code class="language-javascript">
-var FusionCharts = require('fusioncharts');
-var Charts = require('fusioncharts/fusioncharts.charts');
-var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-var $ = require('jquery');
-var jQueryFusionCharts = require('jquery-fusioncharts');
-$('document').ready(function () {
-    Charts(FusionCharts);* // Resolve Charts as dependency for FusionCharts*
-    FusionTheme(FusionCharts);*  // Resolve Fusion theme as dependency for FusionCharts*
-    jQueryFusionCharts(FusionCharts);* //Resolve jQueryFusionCharts as dependency for FusionCharts*
-    $("#chart-container").insertFusionCharts({
-        type: "column2d",
-        width: "700",
-        height: "400",
-        dataFormat: "json",
-        dataSource: {
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme":"fusion"
-            },
-            "data": [
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }
-    });
-});
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
-</pre>
-<div class='mt-30'><strong>Step 2: Specify the chart container within the `index.html` file.</strong></div>
-<pre><code class="language-javascript">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Getting Started&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id="chart-container"&gt;Fusioncharts will render here&lt;/div&gt;
-    &lt;script src="main.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-
-<div class='mt-30'><strong>Step 3: Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.</strong></div>
-</div>
-<div class='tab cdn-tab'>
+<div class='tab cdn-tab active'>
 <pre><code class="language-html">
 &lt;html&gt;
     &lt;head&gt;
@@ -279,50 +198,52 @@ $('document').ready(function () {
     &lt;/head&gt;
     &lt;body&gt;
         &lt;script type="text/javascript"&gt;
+            //STEP 2 - Chart Data
+            const chartData = [{
+                label: "Venezuela",
+                value: "290"
+            }, {
+                label: "Saudi",
+                value: "260"
+            }, {
+                label: "Canada",
+                value: "180"
+            }, {
+                label: "Iran",
+                value: "140"
+            }, {
+                label: "Russia",
+                value: "115"
+            }, {
+                label: "UAE",
+                value: "100"
+            }, {
+                label: "US",
+                value: "30"
+            }, {
+                label: "China",
+                value: "30"
+            }];
+            // STEP 3 - Chart configurations
+            const chartConfigs = {
+                type: "column2d",
+                width: "700",
+                height: "400",
+                dataFormat: "json",
+                chart: {
+                    caption: "Countries With Most Oil Reserves [2017-18]",
+                    subCaption: "In MMbbl = One Million barrels",
+                    xAxisName: "Country",
+                    yAxisName: "Reserves (MMbbl)",
+                    numberSuffix: "K",
+                    theme: "fusion"
+                },
+                // Chart Data - from step 2
+                "data": chartData
+            };
+            // Create a chart container
             $('document').ready(function () {
-                $("#chart-container").insertFusionCharts({
-                    type: "column2d",
-                    width: "700",
-                    height: "400",
-                    dataFormat: "json",
-                    dataSource: {
-                        // Chart Configuration
-                        "chart": {
-                            "caption": "Countries With Most Oil Reserves [2017-18]",
-                            "subCaption": "In MMbbl = One Million barrels",
-                            "xAxisName": "Country",
-                            "yAxisName": "Reserves (MMbbl)",
-                            "numberSuffix": "K",
-                            "theme": "fusion",
-                        },
-                        // Chart Data
-                        "data": [{
-                            "label": "Venezuela",
-                            "value": "290"
-                        }, {
-                            "label": "Saudi",
-                            "value": "260"
-                        }, {
-                            "label": "Canada",
-                            "value": "180"
-                        }, {
-                            "label": "Iran",
-                            "value": "140"
-                        }, {
-                            "label": "Russia",
-                            "value": "115"
-                        }, {
-                            "label": "UAE",
-                            "value": "100"
-                        }, {
-                            "label": "US",
-                            "value": "30"
-                        }, {
-                            "label": "China",
-                            "value": "30"
-                        }]
-                    }
-                });
+                $("#chart-container").insertFusionCharts(chartConfigs);
             });
         &lt;/script&gt;
         &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
@@ -347,50 +268,52 @@ $('document').ready(function () {
     &lt;/head&gt;
     &lt;body&gt;
         &lt;script type="text/javascript"&gt;
+            //STEP 2 - Chart Data
+            const chartData = [{
+                label: "Venezuela",
+                value: "290"
+            }, {
+                label: "Saudi",
+                value: "260"
+            }, {
+                label: "Canada",
+                value: "180"
+            }, {
+                label: "Iran",
+                value: "140"
+            }, {
+                label: "Russia",
+                value: "115"
+            }, {
+                label: "UAE",
+                value: "100"
+            }, {
+                label: "US",
+                value: "30"
+            }, {
+                label: "China",
+                value: "30"
+            }];
+            // STEP 3 - Chart configurations
+            const chartConfigs = {
+                type: "column2d",
+                width: "700",
+                height: "400",
+                dataFormat: "json",
+                chart: {
+                    caption: "Countries With Most Oil Reserves [2017-18]",
+                    subCaption: "In MMbbl = One Million barrels",
+                    xAxisName: "Country",
+                    yAxisName: "Reserves (MMbbl)",
+                    numberSuffix: "K",
+                    theme: "fusion"
+                },
+                // Chart Data - from step 2
+                "data": chartData
+            };
+            // Create a chart container
             $('document').ready(function () {
-                $("#chart-container").insertFusionCharts({
-                    type: "column2d",
-                    width: "700",
-                    height: "400",
-                    dataFormat: "json",
-                    dataSource: {
-                        // Chart Configuration
-                        "chart": {
-                            "caption": "Countries With Most Oil Reserves [2017-18]",
-                            "subCaption": "In MMbbl = One Million barrels",
-                            "xAxisName": "Country",
-                            "yAxisName": "Reserves (MMbbl)",
-                            "numberSuffix": "K",
-                            "theme": "fusion",
-                        },
-                        // Chart Data
-                        "data": [{
-                            "label": "Venezuela",
-                            "value": "290"
-                        }, {
-                            "label": "Saudi",
-                            "value": "260"
-                        }, {
-                            "label": "Canada",
-                            "value": "180"
-                        }, {
-                            "label": "Iran",
-                            "value": "140"
-                        }, {
-                            "label": "Russia",
-                            "value": "115"
-                        }, {
-                            "label": "UAE",
-                            "value": "100"
-                        }, {
-                            "label": "US",
-                            "value": "30"
-                        }, {
-                            "label": "China",
-                            "value": "30"
-                        }]
-                    }
-                });
+                $("#chart-container").insertFusionCharts(chartConfigs);
             });
         &lt;/script&gt;
         &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
@@ -398,6 +321,84 @@ $('document').ready(function () {
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+</div>
+
+<div class='tab npm-tab'>
+<div><strong>Step 1</strong>: In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
+<pre><code class="language-javascript">
+var FusionCharts = require('fusioncharts');
+var Charts = require('fusioncharts/fusioncharts.charts');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+var $ = require('jquery');
+var jQueryFusionCharts = require('jquery-fusioncharts');
+$('document').ready(function () {
+    Charts(FusionCharts);* // Resolve Charts as dependency for FusionCharts*
+    FusionTheme(FusionCharts);*  // Resolve Fusion theme as dependency for FusionCharts*
+    jQueryFusionCharts(FusionCharts);* //Resolve jQueryFusionCharts as dependency for FusionCharts*
+    //STEP 2 - Chart Data
+    const chartData = [{
+        label: "Venezuela",
+        value: "290"
+    }, {
+        label: "Saudi",
+        value: "260"
+    }, {
+        label: "Canada",
+        value: "180"
+    }, {
+        label: "Iran",
+        value: "140"
+    }, {
+        label: "Russia",
+        value: "115"
+    }, {
+        label: "UAE",
+        value: "100"
+    }, {
+        label: "US",
+        value: "30"
+    }, {
+        label: "China",
+        value: "30"
+    }];
+    // STEP 3 - Chart configurations
+    const chartConfigs = {
+        type: "column2d",
+        width: "700",
+        height: "400",
+        dataFormat: "json",
+        chart: {
+            caption: "Countries With Most Oil Reserves [2017-18]",
+            subCaption: "In MMbbl = One Million barrels",
+            xAxisName: "Country",
+            yAxisName: "Reserves (MMbbl)",
+            numberSuffix: "K",
+            theme: "fusion"
+        },
+        // Chart Data - from step 2
+        "data": chartData
+    };
+    $("#chart-container").insertFusionCharts(chartConfigs);
+});
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+<div class='mt-30'><strong>Step 2: Specify the chart container within the `index.html` file.</strong></div>
+<pre><code class="language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Getting Started&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="chart-container"&gt;Fusioncharts will render here&lt;/div&gt;
+    &lt;script src="main.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div class='mt-30'><strong>Step 3: Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.</strong></div>
 </div>
 
 </div>
