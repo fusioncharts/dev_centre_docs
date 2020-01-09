@@ -16,7 +16,7 @@ We are assuming that you are having a react-native project up and running. If no
 
 Install the react-native-fusioncharts and fusioncharts components via npm.
 
-```shellscript
+```javascript
 npm install react-native-fusioncharts fusioncharts --save
 ```
 
