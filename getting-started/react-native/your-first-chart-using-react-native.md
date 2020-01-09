@@ -16,249 +16,182 @@ We are assuming that you are having a react-native project up and running. If no
 
 Install the react-native-fusioncharts and fusioncharts components via npm.
 
-`npm install react-native-fusioncharts fusioncharts --save`
+```shellscript
+npm install react-native-fusioncharts fusioncharts --save
+```
 
 To setup the react-native-fusioncharts component, follow the steps given below:
 
-    ANDROID
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='android'>Android</a></li>
+    <li><a data-toggle='ios'>iOS</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-- Create a folder named assets under android/app/src/main directory if it doesn't exist.
+<div class='tab android-tab active'>
+<div>
+    <ul>
+        <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
+        <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+    </ul>
+</div>
+</div>
 
-- Copy FusionCharts library files from node_modules/fusioncharts folder to the newly created assets folder.
+<div class='tab ios-tab'>
+<div>    
+    <ul>
+        <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
+        <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+    </ul>
+</div>
+</div>
 
-      	<<<Image>>>
+</div>
+</div>
 
-- To avoid file duplications, remove package.json file from assets/fusioncharts/package.json
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='android'>Android</a></li>
+    <li><a data-toggle='ios'>iOS</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-- Create a fusioncharts.html file in assets folder and include the following code
-
-```
-
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-<title>FusionCharts</title>
-
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-
-    <style type="text/css">
-
+<div class='tab android-tab active'>
+<div>
+    <ul>
+        <li>To avoid file duplications, remove package.json file from assets/fusioncharts/package.json</li>
+        <li>Create a fusioncharts.html file in assets folder and include the following code</li>
+    </ul>
+</div>
+<pre><code class="language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;FusionCharts&lt;/title&gt;
+&lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /&gt;
+    &lt;style type="text/css"&gt;
         body,
-
         html {
-
             margin: 0;
-
             padding: 0;
-
             overflow: hidden;
-
             font-size: 13px;
-
         }
-
         #chart-container {
-
             width: 100%;
-
             height: 100%;
-
             top: 0;
-
             left: 0;
-
             right: 0;
-
             bottom: 0;
-
             position: absolute;
-
             user-select: none;
-
             -webkit-user-select: none;
-
             overflow: hidden;
-
         }
-
         #loading-text {
-
             position: absolute;
-
             top: 50%;
-
             left: 50%;
-
             transform: translate(-50%, -50%);
-
             -webkit-transform: translate(-50%, -50%);
-
             user-select: none;
-
             -webkit-user-select: none;
-
         }
-
-    </style>
-
-</head>
-
-<body>
-
-<div id="chart-container">
-
-<div id="loading-text">
-
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="chart-container"&gt;
+&lt;div id="loading-text"&gt;
 Chart is loading...
-
-</div>
-
-</div>
-
-    <script type='text/javascript'>
-
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;script type='text/javascript'&gt;
         "use strict";
-
         (function() {
-
             var a = Promise.resolve(),
-
                 b = {},
-
                 c = {};
-
             (function d() {
-
                 var f = function() {
-
                     function g() {
-
                         return Math.floor(65536 * (1 + Math.random())).toString(16).substring(1)
-
                     }
-
                     return g() + g() + "-" + g() + "-" + g() + "-" + g() + "-" + g() + g() + g()
-
                 };
-
                 window.webViewBridge = {
-
                     send: function send(g, h, i, j) {
-
                         i = i || function() {}, j = j || function() {};
-
                         var k = {
-
                                 targetFunc: g,
-
                                 data: h || {},
-
                                 msgId: f()
-
                             },
-
                             l = JSON.stringify(k);
-
                         a = a.then(function() {
-
                             return new Promise(function(m, n) {
-
                                 b[k.msgId] = {
-
                                     resolve: m,
-
                                     reject: n
-
                                 }, c[k.msgId] = {
-
                                     onsuccess: i,
-
                                     onerror: j
-
                                 }, window.postMessage(l)
-
                             })
-
                         }).catch(function() {})
-
                     }
-
                 }, window.document.addEventListener("message", function(g) {
-
                     var h;
-
                     try {
-
                         h = JSON.parse(g.data)
-
                     } catch (i) {
-
                         return
-
                     }
-
                     b[h.msgId] && (b[h.msgId].resolve(), delete b[h.msgId]), h.args && c[h.msgId] && (h.isSuccessfull ? c[h.msgId].onsuccess.apply(null, h.args) : c[h.msgId].onerror.apply(null, h.args), delete c[h.msgId])
-
                 })
-
             })()
-
         })();
+    &lt;/script&gt;
+    &lt;!-- Include the required FusionCharts modules --&gt;
+    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
+    &lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 
-    </script>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-    <!-- Include the required FusionCharts modules -->
+</div>
 
-    <script type='text/javascript' src="fusioncharts/fusioncharts.js"></script>
+<div class='tab ios-tab'>
+<div>
+    <ul>
+        <li>Create a fusioncharts-tpl.html file in the <strong>assets</strong> folder. Include the FusionCharts library files in fusioncharts.html as shown below.</li>
+    </ul>
+</div>
+<pre><code class="language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;!-- Include the required FusionCharts modules --&gt;
+&lt;script type='text/javascript' src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-    <script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"></script>
+</div>
 
-    <script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
-
-</body>
-
-</html>
-
-```
-
-    iOS
-
-- Create a folder named **assets** in your project root if it doesn't exist.
-
-- Copy FusionCharts library files from node_modules/fusioncharts folder to the newly created **assets** folder.
-
-      	<<<Image>>>
-
-- Create a fusioncharts-tpl.html file in the **assets** folder. Include the FusionCharts library files in fusioncharts.html as shown below.
-
-```
-
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-<!-- Include the required FusionCharts modules -->
-
-<script type='text/javascript' src="fusioncharts/fusioncharts.js"></script>
-
-<script type='text/javascript' src="fusioncharts/fusioncharts.charts.js"></script>
-
-<script type='text/javascript' src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
-
-</head>
-
-<body></body>
-
-</html>
-
-```
+</div>
+</div>
 
 That completes the installation of FusionCharts and the react-native-fusioncharts component.
 
