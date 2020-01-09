@@ -215,3 +215,45 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will look as shown below.
+
+```javascript
+// Preparing the chart data
+const chartData = [
+  {
+    label: "Venezuela",
+    value: "290"
+  },
+  {
+    label: "Saudi",
+    value: "260"
+  },
+  {
+    label: "Canada",
+    value: "180"
+  },
+  {
+    label: "Iran",
+    value: "140"
+  },
+  {
+    label: "Russia",
+    value: "115"
+  },
+  {
+    label: "UAE",
+    value: "100"
+  },
+  {
+    label: "US",
+    value: "30"
+  },
+  {
+    label: "China",
+    value: "30"
+  }
+];
+```
+
+## Configure Your Chart
+
+Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
