@@ -10,9 +10,12 @@ On this page, we'll see how to install **FusionCharts** library and all the othe
 
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from CDN or Local Files.
+Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. 
+> You can skip this step and proceed on if you are including the dependencies from CDN or Local Files.
 
-> Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `**npx webpack**` command in the terminal to ensure that the build is successful.
+Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run **npx webpack** command in the terminal to ensure that the build is successful.
+
+Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm.
 
 ## Installation and including dependencies
 
@@ -60,10 +63,10 @@ FusionCharts.addDep(FusionTheme);
 </div>
 
 <div class='tab cdn-tab active'>
-<div><strong>To install the **FusionCharts** Suite follow the steps below:</strong></div>
+<div>To install the **FusionCharts** Suite follow the steps below:</div>
 <div>
     <ol>
-        <li>Include the **FusionCharts** JavaScript files from CDN.</li>
+        <li>Include the **FusionCharts** JavaScript files from CDN in your html file.</li>
         <li>Include the theme file.</li>
     </ol>
 </div>
@@ -166,45 +169,31 @@ const chartData = [
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
 ```javascript
-// Create the datasource
-    dataSource: {
-    // Chart Configuration
-      chart: {
+// Chart Configuration
+const chartConfig = {
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '700',
+    height: '400',
+    dataFormat: 'json',
+    chart: {
         caption: "Countries With Most Oil Reserves [2017-18]",
         subCaption: "In MMbbl = One Million barrels",
         xAxisName: "Country",
         yAxisName: "Reserves (MMbbl)",
         numberSuffix: "K",
         theme: "fusion"
-      },
-        // Chart Data - from step 2
-        "data": chartData
-    }
+    },
+    // Chart Data - from step 2
+    "data": chartData
 };
 ```
 
-Understand more about your chart and its components[ here](https://www.fusioncharts.com/dev/understanding-fusioncharts).
+Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 ## Render the chart
 
-To render the chart, follow the steps below:
-
-1. Include the `fusioncharts` library.
-
-2. Include the chart type.
-
-3. Include the FusionCharts theme file to apply style to the charts.
-
-4. Store the chart configurations in a JSON object. In this JSON object:
-
-   - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-   - Set the width and height (in pixels).
-   - Set the `dataFormat` as JSON.
-   - Embed the json data as the value of the `dataSource`.
-
-5. Add a container (instance) for the chart.
-
-The consolidated code is shown below:
+The consolidated code to render the chart is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -220,8 +209,8 @@ The consolidated code is shown below:
     <li>FusionCharts CJS module</li>
 </ul>
 <div  class='mt-30'><strong>The steps to render the chart for both the modules are shown below:</strong></div>
-<h4>ES6</h4>
 <div  class='mt-30'><strong>Step 1:</strong> In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
+<h4>ES6</h4>
 <pre><code class="language-javascript">
 // Include the core fusioncharts file from core  -
 import FusionCharts from 'fusioncharts/core';
@@ -238,52 +227,57 @@ import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
 
-// Create an Instance with chart options
-var chartInstance = new FusionCharts({
-type: 'Column2D',
-width: '700', // Width of the chart
-height: '400', // Height of the chart
-dataFormat: 'json', // Data type
-renderAt: 'chart-container', //Container where the chart will render
-dataSource: {
-// Chart Configuration
-"chart": {
-"caption": "Countries With Most Oil Reserves [2017-18]",
-"subCaption": "In MMbbl = One Million barrels",
-"xAxisName": "Country",
-"yAxisName": "Reserves (MMbbl)",
-"numberSuffix": "K",
-"theme": "fusion"
-},
-// Chart Data
-"data": [{
-"label": "Venezuela",
-"value": "290"
-}, {
-"label": "Saudi",
-"value": "260"
-}, {
-"label": "Canada",
-"value": "180"
-}, {
-"label": "Iran",
-"value": "140"
-}, {
-"label": "Russia",
-"value": "115"
-}, {
-"label": "UAE",
-"value": "100"
-}, {
-"label": "US",
-"value": "30"
-}, {
-"label": "China",
-"value": "30"
-}]
-}
-});
-// Render
+//STEP 2 - Chart Data
+const chartData = [{
+    "label": "Venezuela",
+    "value": "290"
+  }, {
+    "label": "Saudi",
+    "value": "260"
+  }, {
+    "label": "Canada",
+    "value": "180"
+  }, {
+    "label": "Iran",
+    "value": "140"
+  }, {
+    "label": "Russia",
+    "value": "115"
+  }, {
+    "label": "UAE",
+    "value": "100"
+  }, {
+    "label": "US",
+    "value": "30"
+  }, {
+    "label": "China",
+    "value": "30"
+}];
+
+//STEP 3 - Chart Configurations
+const chartConfig = {
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '100%',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        // Chart Data
+        "data": chartData
+    }
+};
+  
+// STEP 4 - Create an Instance with chart options and render the chart
+var chartInstance = new FusionCharts(chartConfig);
 chartInstance.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
@@ -302,52 +296,57 @@ var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
 
-// Create an Instance with chart options
-var chartInstance = new FusionCharts({
-type: 'Column2D',
-width: '700', // Width of the chart
-height: '400', // Height of the chart
-dataFormat: 'json', // Data type
-renderAt: 'chart-container', //Container where the chart will render
-dataSource: {
-// Chart Configuration
-"chart": {
-"caption": "Countries With Most Oil Reserves [2017-18]",
-"subCaption": "In MMbbl = One Million barrels",
-"xAxisName": "Country",
-"yAxisName": "Reserves (MMbbl)",
-"numberSuffix": "K",
-"theme": "fusion"
-},
-// Chart Data
-"data": [{
-"label": "Venezuela",
-"value": "290"
-}, {
-"label": "Saudi",
-"value": "260"
-}, {
-"label": "Canada",
-"value": "180"
-}, {
-"label": "Iran",
-"value": "140"
-}, {
-"label": "Russia",
-"value": "115"
-}, {
-"label": "UAE",
-"value": "100"
-}, {
-"label": "US",
-"value": "30"
-}, {
-"label": "China",
-"value": "30"
-}]
-}
-});
-// Render
+//STEP 2 - Chart Data
+const chartData = [{
+    "label": "Venezuela",
+    "value": "290"
+  }, {
+    "label": "Saudi",
+    "value": "260"
+  }, {
+    "label": "Canada",
+    "value": "180"
+  }, {
+    "label": "Iran",
+    "value": "140"
+  }, {
+    "label": "Russia",
+    "value": "115"
+  }, {
+    "label": "UAE",
+    "value": "100"
+  }, {
+    "label": "US",
+    "value": "30"
+  }, {
+    "label": "China",
+    "value": "30"
+}];
+
+//STEP 3 - Chart Configurations
+const chartConfig = {
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '100%',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        // Chart Data
+        "data": chartData
+    }
+};
+
+// STEP 4 - Create an Instance with chart options and render
+var chartInstance = new FusionCharts(chartConfig);
 chartInstance.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
@@ -381,11 +380,38 @@ chartInstance.render();
 &lt;!-- Include fusion theme --&gt;
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-    FusionCharts.ready(function(){
-    var fusioncharts = new FusionCharts({
+    //STEP 2 - Chart Data
+    const chartData = [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }];
+
+    //STEP 3 - Chart Configurations
+	const chartConfig = {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '700',
+    width: '100%',
     height: '400',
     dataFormat: 'json',
     dataSource: {
@@ -399,33 +425,11 @@ chartInstance.render();
             "theme": "fusion",
         },
         // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
+        "data": chartData
     }
-});
+	};
+    FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts(chartConfig);
     fusioncharts.render();
     });
 &lt;/script&gt;
@@ -448,17 +452,44 @@ chartInstance.render();
 &lt;!-- Include fusion theme --&gt;
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-    FusionCharts.ready(function(){
-    var fusioncharts = new FusionCharts({
+    //STEP 2 - Chart Data
+    const chartData = [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }];
+
+    //STEP 3 - Chart Configurations
+	const chartConfig = {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '700',
+    width: '100%',
     height: '400',
     dataFormat: 'json',
     dataSource: {
         // Chart Configuration
         "chart": {
-            "caption": "Countries with Most Oil Reserves [2017-18]",
+            "caption": "Countries With Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
             "xAxisName": "Country",
             "yAxisName": "Reserves (MMbbl)",
@@ -466,33 +497,11 @@ chartInstance.render();
             "theme": "fusion",
         },
         // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
+        "data": chartData
     }
-});
+	};
+    FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts(chartConfig);
     fusioncharts.render();
     });
 &lt;/script&gt;
