@@ -194,3 +194,24 @@ Chart is loading...
 
 </div>
 </div>
+
+That completes the installation of FusionCharts and the react-native-fusioncharts component.
+
+## Preparing the Data
+
+Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
+
+| Country   | No. of Oil Reserves |
+| --------- | ------------------- |
+| Venezuela | 290K                |
+| Saudi     | 260K                |
+| Canada    | 180K                |
+| Iran      | 140K                |
+| Russia    | 115K                |
+| UAE       | 100K                |
+| US        | 30K                 |
+| China     | 30K                 |
+
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
+
+FusionCharts accepts the data in JSON format. So the above data in the tabular form will look as shown below.
