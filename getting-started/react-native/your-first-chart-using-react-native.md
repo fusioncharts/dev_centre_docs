@@ -62,8 +62,8 @@ IMAGE
 <div class='tab android-tab active'>
 <div>
     <ul>
-        <li>To avoid file duplications, remove package.json file from assets/fusioncharts/package.json</li>
-        <li>Create a fusioncharts.html file in assets folder and include the following code</li>
+        <li>To avoid file duplications, remove `package.json` file from <strong>assets/fusioncharts/package.json</strong></li>
+        <li>Create a `fusioncharts.html` file in assets folder and include the following code</li>
     </ul>
 </div>
 <pre><code class="language-javascript">
@@ -165,8 +165,6 @@ Chart is loading...
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
 <div>
     <ul>
         <li>Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.</li>
@@ -210,7 +208,9 @@ Chart is loading...
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 <li>Add a `build:assets` script in Application's package.json file</li>
+
 <pre><code class="language-javascript">
 "scripts": {
     ......
@@ -220,7 +220,8 @@ Chart is loading...
 </pre>
 <div>
     <ul>
-        <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder. <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
+        <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder. 
+        <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
         <li>Run the following command before running the application:</li>
     </ul>
 </div>
@@ -250,7 +251,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will look as shown below.
 
