@@ -36,9 +36,11 @@ To include the react-native-fusioncharts component, follow the steps given below
 </div>
 
 <div class='tab ios-tab'>
-<div>    
-        <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
-        <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+<div>
+  <ul style="margin-left:-10px">
+    <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
+    <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+  </ul>
 </div>
 </div>
 
@@ -56,8 +58,10 @@ IMAGE
 
 <div class='tab android-tab active'>
 <div>
-        <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
-        <li>Create a `fusioncharts.html` file in assets folder and include the following code</li>
+  <ul style="margin-left:-10px">
+    <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
+    <li>Create a `fusioncharts.html` file in assets folder and include the following code</li>
+  </ul>
 </div>
 <pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
@@ -159,33 +163,37 @@ Chart is loading...
 </pre>
 
 <div>
+  <ul style="margin-left:-10px">
     <li>
-Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.
+    Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.
     </li>
-    <pre>
-      <code class="language-javascript">
-        "scripts": {
-            ......
-            "clean:build:android": "rm -rf android/app/build",
-            "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
-        },
-      </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-    </pre>
-    <li>Run the following command before generating the signed APK:</li>
-    <pre>
-      <code class="language-javascript">
-        npm run prod:android
-      </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-    </pre>
+  </ul>
+  <pre>
+    <code class="language-javascript">
+      "scripts": {
+          ......
+          "clean:build:android": "rm -rf android/app/build",
+          "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
+      },
+    </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+  </pre>
+  <ul><li>Run the following command before generating the signed APK:</li></ul>
+  <pre>
+    <code class="language-javascript">
+      npm run prod:android
+    </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+  </pre>
 </div>
 
 </div>
 
 <div class='tab ios-tab'>
 <div>
+  <ul style="margin-left:-10px">
     <li>
         Create a fusioncharts-tpl.html file in the <strong>assets</strong> folder. Include the FusionCharts library files in fusioncharts.html as shown below.
     </li>
+  </ul>
 </div>
 <pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
@@ -200,9 +208,8 @@ Add the following script in Application's `package.json` file to bundle your ass
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-<li>Add a `build:assets` script in Application's package.json file</li>
+<ul style="margin-left:-10px"><li>Add a `build:assets` script in Application's package.json file</li></ul>
 
 <pre><code class="language-javascript">
 "scripts": {
@@ -212,9 +219,11 @@ Add the following script in Application's `package.json` file to bundle your ass
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 <div>
-  <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder.<br/>
-  <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
-  <li>Run the following command before running the application:</li>
+  <ul style="margin-left:-10px">
+    <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder.<br/>
+    <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
+    <li>Run the following command before running the application:</li>
+  </ul>
 </div>
 <pre><code class="language-javascript">
 npm run build:assets
