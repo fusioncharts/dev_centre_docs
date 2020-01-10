@@ -33,8 +33,8 @@ To include the react-native-fusioncharts component, follow the steps given below
     <ul>
         <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
         <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-        <li><img src="{% site.BASE_URL %}/images/java-folder-structure.png" width="300" height="450" alt="Java Folder Structure"></li>
     </ul>
+    <img src="{% site.BASE_URL %}/images/java-folder-structure.png" alt="Java Folder Structure">
 </div>
 </div>
 
@@ -167,6 +167,27 @@ Chart is loading...
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
+<div>
+    <ul>
+        <li>Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.</li>
+    </ul>
+    <pre>
+      <code class="language-javascript">
+        "scripts": {
+            ......
+            "clean:build:android": "rm -rf android/app/build",
+            "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
+        },
+      </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+    </pre>
+    <div>Run the following command before generating the signed APK:</div>
+    <pre>
+      <code class="language-javascript">
+        npm run prod:android
+      </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+    </pre>
+</div>
+
 </div>
 
 <div class='tab ios-tab'>
@@ -190,6 +211,23 @@ Chart is loading...
 </pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
+<pre><code class="language-javascript">
+"scripts": {
+    ......
+    "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts"
+},
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+<div>
+    <ul>
+        <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder. <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
+        <li>Run the following command before running the application:</li>
+    </ul>
+</div>
+<pre><code class="language-javascript">
+npm run build:assets
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -259,20 +297,19 @@ const chartData = [
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
 ```javascript
-// Create the datasource
-    dataSource = {
-    // Chart Configuration
-      chart: {
-        caption: "Countries With Most Oil Reserves [2017-18]",
-        subCaption: "In MMbbl = One Million barrels",
-        xAxisName: "Country",
-        yAxisName: "Reserves (MMbbl)",
-        numberSuffix: "K",
-        theme: "fusion"
-      },
-    // Chart Data - from step 2
-    "data": chartData
-    }
+// Chart Configuration
+const dataSource = {
+  chart: {
+    caption: "Countries With Most Oil Reserves [2017-18]",
+    subCaption: "In MMbbl = One Million barrels",
+    xAxisName: "Country",
+    yAxisName: "Reserves (MMbbl)",
+    numberSuffix: "K",
+    theme: "fusion"
+  },
+  // Chart Data - from step 2
+  "data": chartData
+  }
 };
 ```
 
@@ -291,7 +328,19 @@ import FusionCharts from "react-native-fusioncharts";
 export default class PlainColumn2D extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    //STEP 2 - Chart Data
+    const chartData = [
+      {label: "Venezuela", value: "290"},
+      {label: "Saudi", value: "260"},
+      {label: "Canada", value: "180"},
+      {label: "Iran", value: "140"},
+      {label: "Russia", value: "115"},
+      {label: "UAE", value: "100"},
+      {label: "US", value: "30"},
+      {label: "China", value: "30"}
+    ];
+    //STEP 3 - Chart Configurations
+    const chartConfig = {
       type: "column2d",
       width: "100%",
       height: "400",
@@ -305,42 +354,10 @@ export default class PlainColumn2D extends Component {
           numberSuffix: "K",
           theme: "fusion"
         },
-        data: [
-          {
-            label: "Venezuela",
-            value: "290"
-          },
-          {
-            label: "Saudi",
-            value: "260"
-          },
-          {
-            label: "Canada",
-            value: "180"
-          },
-          {
-            label: "Iran",
-            value: "140"
-          },
-          {
-            label: "Russia",
-            value: "115"
-          },
-          {
-            label: "UAE",
-            value: "100"
-          },
-          {
-            label: "US",
-            value: "30"
-          },
-          {
-            label: "China",
-            value: "30"
-          }
-        ]
+        data: chartData
       }
     };
+    this.state = chartConfig;
     this.libraryPath = Platform.select({
       // Specify fusioncharts.html file location
       android: {
