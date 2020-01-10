@@ -62,7 +62,7 @@ IMAGE
 <div class='tab android-tab active'>
 <div>
     <ul>
-        <li>To avoid file duplications, remove `package.json` file from <strong>assets/fusioncharts/package.json</strong></li>
+        <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
         <li>Create a `fusioncharts.html` file in assets folder and include the following code</li>
     </ul>
 </div>
@@ -219,11 +219,9 @@ Chart is loading...
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 <div>
-    <ul>
         <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder. 
         <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
         <li>Run the following command before running the application:</li>
-    </ul>
 </div>
 <pre><code class="language-javascript">
 npm run build:assets
@@ -299,19 +297,25 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 
 ```javascript
 // Chart Configuration
-const dataSource = {
-  chart: {
-    caption: "Countries With Most Oil Reserves [2017-18]",
-    subCaption: "In MMbbl = One Million barrels",
-    xAxisName: "Country",
-    yAxisName: "Reserves (MMbbl)",
-    numberSuffix: "K",
-    theme: "fusion"
-  },
-  // Chart Data - from step 2
-  "data": chartData
+const chartConfig = {
+  type: "column2d",
+  width: "100%",
+  height: "400",
+  dataFormat: "json",
+  dataSource: {
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017-18]",
+      subCaption: "In MMbbl = One Million barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      theme: "fusion"
+    },
+    data: chartData
+  }
 };
 ```
+> The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
 ## Render the Chart
 

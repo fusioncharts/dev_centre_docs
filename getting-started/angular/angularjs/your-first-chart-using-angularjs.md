@@ -197,6 +197,7 @@ const dataSource = {
     }
 };
 ```
+> The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
 ## Render the chart
 
