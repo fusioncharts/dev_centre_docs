@@ -14,16 +14,16 @@
                   "leftPosition": "27%",
                   "topPosition": "4%",
                   "annotationLinks": [{
-                        "linkDesc": "Learn how to add caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkDesc": "Learn how to add the caption ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkDesc": "You can customize font properties and cosmetics of the caption using attributes. Know more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
-                        "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                        "linkDesc": "You can customize the alignment of the caption. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#configure-caption-alignment"
                      }
                   ]
                },
@@ -35,11 +35,11 @@
                   "leftPosition": "78%",
                   "topPosition": "2.5%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize border for canvas, learn more about it ",
+                        "linkDesc": "You can customize the canvas border. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
                      },
                      {
-                        "linkDesc": "You can customize background color for canvas, as well as add gradient fill to it. Learn more about it ",
+                        "linkDesc": "You can customize the background color for canvas, as well as add a gradient fill to it. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#use-gradient-fill"
                      }
                   ]
@@ -58,6 +58,30 @@
                },
                {
                   "annotationNumber": "4",
+                  "annotationName": "Node",
+                  "annotationDesc": "The start and endpoints of each flow in a Sankey/Chord Diagram are called nodes. Learn more about them ",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "58%",
+                  "topPosition": "30%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize various aspects of a node, including its size, color, label, padding, etc. Learn more about them ",
+                     "linkPath": "/chart-guide/standard-charts/sankey-diagram#node"
+                  }]
+               },
+               {
+                  "annotationNumber": "5",
+                  "annotationName": "Link",
+                  "annotationDesc": "The flow paths between any two nodes in a Sankey/Chord Diagram are called links. Learn more about them ",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "38%",
+                  "topPosition": "20%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize various aspects of a link, including its color, curvature, value, etc. Learn more about them ",
+                     "linkPath": "/chart-guide/standard-charts/sankey-diagram#link"
+                  }]
+               },
+               {
+                  "annotationNumber": "6",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,

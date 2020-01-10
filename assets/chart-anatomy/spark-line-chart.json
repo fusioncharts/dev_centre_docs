@@ -16,32 +16,32 @@
                   "topPosition": "39.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
                         "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#configure-caption-alignment"
                      }
                   ]
                },
                {
                   "annotationNumber": "2",
-                  "annotationName": "Sub-caption",
+                  "annotationName": "Subcaption",
                   "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "22.5%",
                   "topPosition": "48.5%",
                   "annotationLinks": [{
                         "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
                      },
                      {
                         "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
                },
@@ -50,7 +50,7 @@
                   "annotationName": "Canvas Area",
                   "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "85%",
+                  "leftPosition": "65%",
                   "topPosition": "30%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize border for canvas, learn more about it ",
@@ -64,6 +64,15 @@
                },
                {
                   "annotationNumber": "4",
+                  "annotationName": "Data Values",
+                  "annotationDesc": "Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/data-values",
+                  "leftPosition": "74.5%",
+                  "topPosition": "42.5%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "5",
                   "annotationName": "Data Plot",
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,

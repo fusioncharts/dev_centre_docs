@@ -8,8 +8,6 @@ heading: Stacked Charts
 
 Stacked charts are similar to [multi-series charts](/chart-guide/standard-charts/multi-series-charts), but plot datasets on top of each other, instead of the clustered side-by-side placement adopted by multi-series charts. Stacked charts help in displaying the cumulative magnitude of two or more data series. They help in representing a data value as a sum of two or more values. Each data series can be distinguished by the color of its section in the stack.
 
-{% embed_chartAnatomy stacked-chart.json %}
-
 The FusionCharts Suite XT includes the following types of stacked charts:
 
 * Stacked Column 2D Chart
@@ -23,6 +21,10 @@ The FusionCharts Suite XT includes the following types of stacked charts:
 * Stacked Bar 3D Chart
 
 ## Stacked Column 2D Chart
+
+A stacked column 2D chart looks as follows:
+
+{% embed_chartAnatomy stacked-chart.json %}
 
 As an example, we will create a stacked column 2D chart to plot the revenue split for each quarter of the current year by product category - food products and non-food products. The data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products, instead of alongside as in multi-series charts.
 
@@ -75,6 +77,8 @@ Click [here](http://jsfiddle.net/fusioncharts/3RYK6/) to edit the stacked area 2
 ## Stacked Bar 2D Chart
 
 To render a stacked bar chart in 2D, change the value of the `type` attribute from `stackedarea2d` to `stackedbar2d`. The rest of the data structure remains the same.
+
+{% embed_chartAnatomy stacked-bar-chart.json %}
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=stackedbar2d) page of stacked bar 2D chart.
 

@@ -14,33 +14,33 @@
                   "leftPosition": "37%",
                   "topPosition": "2%",
                   "annotationLinks": [{
-                        "linkDesc": "Learn how to add caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption-1"
+                        "linkDesc": "Learn how to add the caption ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of caption can also be customized using attributes, know more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkDesc": "You can customize font properties and cosmetics of the caption using attributes. Know more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      },
                      {
-                        "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment"
+                        "linkDesc": "You can customize the alignment of the caption. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#configure-caption-alignment"
                      }
                   ]
                },
                {
                   "annotationNumber": "2",
-                  "annotationName": "Sub-caption",
-                  "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for sub-caption, as well as configure its font properties.",
+                  "annotationName": "Subcaption",
+                  "annotationDesc": "The subcaption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for the sub-caption. You can also configure its font properties.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "66%",
                   "topPosition": "7.5%",
                   "annotationLinks": [{
-                        "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption"
+                        "linkDesc": "Learn how to add subcaption ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
                      },
                      {
-                        "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
-                        "linkPath": "/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties"
+                        "linkDesc": "You can customize font properties and cosmetics of the subcaption using attributes. Learn more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
                      }
                   ]
                },
@@ -52,11 +52,11 @@
                   "leftPosition": "78%",
                   "topPosition": "2%",
                   "annotationLinks": [{
-                        "linkDesc": "You can customize border for canvas, learn more about it ",
+                        "linkDesc": "You can customize the canvas border. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
                      },
                      {
-                        "linkDesc": "You can customize background color for canvas, as well as add gradient fill to it. Learn more about it ",
+                        "linkDesc": "You can customize the background color for canvas, as well as add a gradient fill to it. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/canvas#use-gradient-fill"
                      }
                   ]
@@ -64,8 +64,8 @@
                {
                   "annotationNumber": "4",
                   "annotationName": "X-Axis",
-                  "annotationDesc": "X-Axis refers to line or values on a chart that runs horizontally (left-right). Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDesc": "X-Axis refers to a line on a chart that runs horizontally (left to right). Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "92%",
                   "topPosition": "61%",
                   "annotationLinks": []
@@ -74,7 +74,7 @@
                   "annotationNumber": "5",
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "X-Axis refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "46%",
                   "topPosition": "74%",
                   "annotationLinks": []
@@ -83,7 +83,7 @@
                   "annotationNumber": "6",
                   "annotationName": "X-Axis Labels",
                   "annotationDesc": "X-Axis labels are the names of the data points that are displayed on the x-axis of a chart. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "66.5%",
                   "topPosition": "72%",
                   "annotationLinks": []
@@ -92,7 +92,7 @@
                   "annotationNumber": "7",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to line or values on a chart that runs vertically (up-down) through zero. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "8%",
                   "topPosition": "2%",
                   "annotationLinks": []
@@ -101,7 +101,7 @@
                   "annotationNumber": "8",
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "Y-Axis refers to the title of the y-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "3%",
                   "topPosition": "40%",
                   "annotationLinks": []
@@ -122,7 +122,7 @@
                   "annotationNumber": "10",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "52%",
                   "topPosition": "32.5%",
                   "annotationLinks": [{
