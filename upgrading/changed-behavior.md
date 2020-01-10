@@ -42,7 +42,7 @@ You can now enable scrolling in Box and Whisker charts. Use the `numVisiblePlot`
 
 The live chart below displays this behavior:
 
-{% embed_chart changed-behavior-box-and-whisker-example-2 %}
+{% embed_chart changed-behavior-box-and-whisker-example-2.js %}
 
 ## Tooltip Edges in Pie 2D/3D and Doughnut 2D/3D Charts
 
@@ -76,4 +76,4 @@ Previously, in Gantt charts, if you set the width in percentage and used the `sc
 
 The live chart below displays this behavior:
 
-{% embed_chart changed-behavior-gantt-example-5 %}
+{% embed_chart changed-behavior-gantt-example-5.js %}
