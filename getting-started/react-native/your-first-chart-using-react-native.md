@@ -9,9 +9,7 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 ## Prerequisite
 
 We are assuming that you are having a react-native project up and running. If not, follow the steps [here](https://facebook.github.io/react-native/docs/getting-started) to get started with your react-native project setup.
-
-
-> Install react-native-webview if not present already.
+**NOTE:** Install react-native-webview if not present already.
 
 ## Installation and Including Dependencies
 
@@ -21,7 +19,7 @@ Install the react-native-fusioncharts and fusioncharts components via npm.
 npm install react-native-fusioncharts fusioncharts --save
 ```
 
-To setup the react-native-fusioncharts component, follow the steps given below:
+To include the react-native-fusioncharts component, follow the steps given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -35,6 +33,7 @@ To setup the react-native-fusioncharts component, follow the steps given below:
     <ul>
         <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
         <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+        <li><img src="{% site.BASE_URL %}/images/java-folder-structure.png" width="300" height="450" alt="Java Folder Structure"></li>
     </ul>
 </div>
 </div>
