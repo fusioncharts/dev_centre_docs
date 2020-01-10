@@ -396,3 +396,56 @@ const styles = StyleSheet.create({
 You should be able to see the chart as shown below.
 
 {% embed_chart getting-started-your-first-chart.js %}
+
+Add the following script in the application's `package.json` file to bundle your assets when you want to generate a signed APK.
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='android'>Android</a></li>
+    <li><a data-toggle='ios'>iOS</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab android-tab active'>
+<pre><code class="language-javascript">
+"scripts": {
+    ......
+    "clean:build:android": "rm -rf android/app/build",
+    "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
+},
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+<div>Run the following command before generating the signed APK:</div>
+
+<pre><code class="language-javascript">
+npm run prod:android
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab ios-tab'>
+<pre><code class="language-javascript">
+"scripts": {
+    ......
+    "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts"
+},
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+<div>
+    <ul>
+        <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder. <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
+        <li>Run the following command before running the application:</li>
+    </ul>
+</div>
+<pre><code class="language-javascript">
+npm run build:assets
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+</div>
+</div>
+
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click here to get in touch with our support team.
+
+That's it! Your first chart using `react-native-fusioncharts` is ready.
