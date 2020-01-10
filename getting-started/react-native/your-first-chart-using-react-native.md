@@ -30,14 +30,16 @@ To include the react-native-fusioncharts component, follow the steps given below
 
 <div class='tab android-tab active'>
 <div>
-  <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
-  <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+  <ul style="margin:0;padding:0">
+    <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
+    <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+  </ul>
 </div>
 </div>
 
 <div class='tab ios-tab'>
 <div>
-  <ul style="margin-left:-10px">
+  <ul style="margin:0; padding:0">
     <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
     <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
   </ul>
@@ -58,7 +60,7 @@ IMAGE
 
 <div class='tab android-tab active'>
 <div>
-  <ul style="margin-left:-10px">
+  <ul style="margin:0; padding:0">
     <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
     <li>Create a `fusioncharts.html` file in assets folder and include the following code</li>
   </ul>
@@ -163,7 +165,7 @@ Chart is loading...
 </pre>
 
 <div>
-  <ul style="margin-left:-10px">
+  <ul style="margin:0; padding:0">
     <li>
     Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.
     </li>
