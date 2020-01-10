@@ -10,6 +10,7 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 We are assuming that you are having a react-native project up and running. If not, follow the steps [here](https://facebook.github.io/react-native/docs/getting-started) to get started with your react-native project setup.
 
+
 > Install react-native-webview if not present already.
 
 ## Installation and Including Dependencies
