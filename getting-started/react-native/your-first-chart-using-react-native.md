@@ -36,29 +36,6 @@ To include the react-native-fusioncharts component, follow the steps given below
   </ul>
 </div>
 </div>
-
-<div class='tab ios-tab'>
-<div>
-  <ul style="margin-left:10px; padding:0">
-    <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
-    <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-  </ul>
-</div>
-</div>
-
-</div>
-</div>
-
-IMAGE
-
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='android'>Android</a></li>
-    <li><a data-toggle='ios'>iOS</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab android-tab active'>
 <div>
   <ul style="margin-left:10px; padding:0">
     <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
@@ -192,6 +169,12 @@ Chart is loading...
 <div class='tab ios-tab'>
 <div>
   <ul style="margin-left:10px; padding:0">
+    <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
+    <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+  </ul>
+</div>
+<div>
+  <ul style="margin-left:10px; padding:0">
     <li>
         Create a fusioncharts-tpl.html file in the <strong>assets</strong> folder. Include the FusionCharts library files in fusioncharts.html as shown below.
     </li>
@@ -319,6 +302,7 @@ const chartConfig = {
   }
 };
 ```
+
 > The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
 ## Render the Chart
@@ -338,14 +322,14 @@ export default class PlainColumn2D extends Component {
     super(props);
     //STEP 2 - Chart Data
     const chartData = [
-      {label: "Venezuela", value: "290"},
-      {label: "Saudi", value: "260"},
-      {label: "Canada", value: "180"},
-      {label: "Iran", value: "140"},
-      {label: "Russia", value: "115"},
-      {label: "UAE", value: "100"},
-      {label: "US", value: "30"},
-      {label: "China", value: "30"}
+      { label: "Venezuela", value: "290" },
+      { label: "Saudi", value: "260" },
+      { label: "Canada", value: "180" },
+      { label: "Iran", value: "140" },
+      { label: "Russia", value: "115" },
+      { label: "UAE", value: "100" },
+      { label: "US", value: "30" },
+      { label: "China", value: "30" }
     ];
     //STEP 3 - Chart Configurations
     const chartConfig = {
