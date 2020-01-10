@@ -4,66 +4,76 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.14.0.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.15.0.
 
-## Top plot border of an area chart
+## Height of Navigation Bar in Treemap After Drill Down
 
-In area charts, you can now draw the borders of the data plots only at the top of an area plot.
+In Treemaps, you can now set a custom height to the navigation bar after drill down, using the `navigationBarHeight` attribute. Earlier the navigation bar would expand when you drilled down. The chart has been optimized to prevent that issue.
 
-The image below shows the border only at the top of an area plot.
+**Before Drill Down**
 
-![Top Plot Border](/images/area-chart-drawfullareaborder-top.png)
+![Treemap-pre-drilldown-NEW](/images/Treemap-pre-drilldown-NEW.png)
 
-To know more click [here](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart).
+**After Drill Down**
 
-You can also configure the top border of a particular data plot in an area chart with multiple data plots.
+![Treemap-post-drilldown-NEW](/images/Treemap-post-drilldown-NEW.png)
 
-Take a look at the image given below:
+In the screenshots below, you can see how the navigation bar expanded when drill down was performed in earlier versions.
 
-![Multi-Series Area Chart](/images/draw-full-area-border-multi-series-area-chart.png)
+**Before Drill Down**
 
-To know more click [here](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart).
+![Treemap-pre-drilldown-OLD](/images/Treemap-pre-drilldown-OLD.png)
 
-## Inherit plot border color of an area chart
+**After Drill Down**
 
-FusionCharts Suite now allows you to set the border color of the area chart by inheriting the plot color.
+![Treemap-post-drilldown-OLD](/images/Treemap-post-drilldown-OLD.png)
 
-The chart looks like as shown below:
+## Radar Charts Optimized for Resizing After Using `radarRadius`
 
-{% embed_chart chart-configurations-area-plot-inherit-border-example-10.js %}
+In Radar charts, you can now explicitly mention the value of the `radarRadius` attribute and then resize the chart without any issue. Previously, when you did this, the long labels and the chart border would be displaced. The chart has been optimized for resizing to ensure that does not happen any longer.
 
-Click [here](/chart-guide/chart-configurations/data-plot#inherit-plot-border-color-of-an-area-chart) to know more.
+The live chart below displays this behavior:
 
-## Set the radius as a percent value
+{% embed_chart changed-behavior-radar-chart-example-1.js %}
 
-You can now set the radius of the pie chart in percent by setting the value of `pieRadius` attribute. When you set the value of `pieRadius` in percent, the radius of the pie is calculated with respect to the chart canvas space.
+## Scrolling in Box and Whisker Chart
 
-Refer to the image shown below:
+You can now enable scrolling in Box and Whisker charts. Use the `numVisiblePlot` attribute to set the number of plot points visible on the chart canvas. The scrollbar will automatically appear when there are more plot points than the ones you choose to display on the chart canvas.
 
-![Percent Value on Pie Chart](/images/percent-value-in-pie-radius.png)
+The live chart below displays this behavior:
 
-Click [here](http://jsfiddle.net/fusioncharts/7g15v0nq/) to know more.
+{% embed_chart changed-behavior-box-and-whisker-example-2.js %}
 
-In the doughnut chart, you can apply the `pieRadius` attribute to set the radius of the upper threshold of the doughnut chart.
+## Tooltip Edges in Pie 2D/3D and Doughnut 2D/3D Charts
 
-Refer to the image below:
+The edges of the tooltips in Pie and Doughnut (2D/3D) now appear rounded when you set the value of the attribute `tooltipBorderRadius`.
 
-![Percent Value on Doughnut Chart](/images/pie-radius-in-doughnut-chart.png)
+The live chart below displays this behavior:
 
-Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) to know more.
+{% embed_chart changed-behavior-pie-chart-example-3.js %}
 
-<h4>Deprecated</h4>
+## Space Management in Pie 2D/Doughnut 2D Charts
 
-- Following is the list of deprecated attributes:
+Pie 2D and Doughnut 2D charts now retain their plot size even if you turn off data labels and data values. Earlier the plot would shrink if you turned those off. Space management has been drastically improved now.
 
-  - `placeXAxisLabelsOnTop`
+The live chart below displays this behavior:
 
-- Treemap specific attributes:
+{% embed_chart changed-behavior-pie-chart-example-4.js %}
 
-  - `labelGlow`
+In earlier versions:
 
-  - `labelGlowIntensity`
+**With Labels and Values turned on:**
 
-  - `labelGlowColor`
+![Pie chart with labels and values visible in earlier version](/images/Pie2D-Label-Value-On.png")
 
-  - `labelGlowRadius`
+**With Labels and Values turned off:**
+
+![Pie chart with labels and values turned off in earlier version](/images/Pie2D-Label-Value-Off.png")
+
+## Gantt Chart Values Unaffected by Browser Resizing
+
+Previously, in Gantt charts, if you set the width in percentage and used the `scrollToDate` attribute, the start dates of all charts changed whenever you resized the browser window. The chart has been modified to ensure that the data values are now properly maintained in the above circumstance.
+
+The live chart below displays this behavior:
+
+{% embed_chart changed-behavior-gantt-example-5.js %}

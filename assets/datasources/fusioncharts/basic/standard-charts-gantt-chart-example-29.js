@@ -1,7 +1,7 @@
 {
     type: 'gantt',
     renderAt: 'chart-container',
-    width: '750',
+    width: '100%',
     height: '530',
     dataFormat: 'json',
     dataSource: {

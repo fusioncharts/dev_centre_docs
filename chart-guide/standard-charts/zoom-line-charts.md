@@ -32,7 +32,7 @@ To create a zoom line chart follow the steps given below:
 
 * Specify the thickness of the line on the char using `lineThickness` attribute.
 
-> The anchors in the zoom-line chart is not clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
+> The anchors in the zoom line chart is not clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomline) page of zoomline chart.
 
@@ -40,7 +40,7 @@ The zoom line chart thus created looks like this:
 
 {% embed_all standard-charts-zoom-line-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/) to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/) to edit the zoom line chart.
 
 As seen in the chart above, at the time of rendering, the zoom line chart displays a macroscopic view of the data. The data is neatly compressed so that all of it fits into the width of the chart. When the user selects a segment of the line plot by dragging the mouse cursor across the canvas, the selected portion expands to occupy the entire width of the chart. 
 
@@ -50,7 +50,7 @@ The chart can be switched to pin mode, in pin mode - a ghost of the selected lin
 
 > The performance of a zoom line chart is based on the technical capabilities of a browser. A typical zoom line chart can render up to 10,000 data points without any performance issues.
 
-> The anchors in the zoom-line chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points.
+> The anchors in the zoom line chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
 ## Create a Zoom line Dual Y-axis Chart
 
@@ -60,7 +60,7 @@ Another advantage of using the zoom line dual y-axis chart is when you want to c
 
 To create a zoom line dual y-axis chart, set the `type` attribute to `zoomlinedy`.
 
-For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomlinedy) page of zoomlinedy chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomlinedy) page of `zoomlinedy` chart.
 
 The chart below shows a zoom line dual y-axis chart created to compare unique footfall with the sales (in dollars), for each day of the previous year.
 
@@ -167,7 +167,7 @@ A zoom line chart rendered with pre-selected number of data plots looks like thi
 
 Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/) to edit the zoomline chart.
 
-## Customize the Appearance of a Zoom-line Chart
+## Customize the Appearance of a Zoom Line Chart
 
 FusionCharts Suite XT includes several options for customizing the appearance of a zoom line chart. The appearance of chart elements such as the scroll bar and toolbar can be configured.
 

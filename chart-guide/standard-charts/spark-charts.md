@@ -10,7 +10,7 @@ Spark charts are data-intensive, design-simple, word-sized graphics charts that 
 
 Spark charts are succinct, memorable, and located right where they are discussed. You need to use these charts inline, which means that they are about the same height as the surrounding text. Use spark charts extensively in space-efficient executive dashboards to show a lot of KPIs within a single view.
 
-## Salient features
+## Salient Features
 
 The major features of spark charts include the following:
 
@@ -174,7 +174,7 @@ Click [here](http://jsfiddle.net/fusioncharts/wrm46/) to edit the above chart.
 
 Configure the functional and cosmetic properties of a spark line chart in many ways, using FusionCharts Suite XT.
 
-## Define period blocks for the chart
+## Define Period Blocks for the Chart
 
 Use the following attributes, to define period blocks in the chart:
 
@@ -202,7 +202,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/D2C4q/) to edit the above chart.
 
-## Configure open, close, high, and low points
+## Configure Open, Close, High, and Low Points
 
 By default, the spark line chart highlights the open, close, high, and low points and also shows their values. However, you can configure how the highlighting is done.
 
@@ -235,7 +235,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/6ZVkb/) to edit the above chart.
 
-## Show selective points
+## Show Selective Points
 
 Use the attributes given below, to show/hide anchors:
 
@@ -268,7 +268,7 @@ Click [here](http://jsfiddle.net/fusioncharts/7rtvb/) to edit the above chart.
 
 Notice that the chart is rendered with four checkboxes below the chart: **Show Open Anchor**, **Show Close Anchor**, **Show High Anchor**, and **Show Low Anchor**. Select the checkboxes to show the respective anchor points, or clear them to hide the respective anchor points.
 
-## Show/hide anchor point values
+## Show/hide Anchor Point Values
 
 Use the attributes given below, to show/hide anchor point values:
 
@@ -299,7 +299,7 @@ Click [here](http://jsfiddle.net/fusioncharts/LWhcS/) to edit the above chart.
 
 Notice that the chart is rendered with four checkboxes below the chart: **Show Open Value**, **Show Close Value**, **Show High Value**, and **Show Low Value**. Select the checkboxes to show the respective anchor values, or clear them to hide the values.
 
-## Configure line and anchor cosmetics
+## Configure Line and Anchor Cosmetics
 
 Use the attributes given below, to configure line cosmetics:
 
@@ -328,7 +328,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/KEE66/) to edit the above chart.
 
-## Configure anchor cosmetics
+## Configure Anchor Cosmetics
 
 Use the attributes given below to configure anchor cosmetics:
 
@@ -362,7 +362,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/745Az/) to edit the above chart.
 
-## Show only points but no lines
+## Show Only Points but No Lines
 
 You can show only points to represent the data values on the chart, without any line segments connecting them. To do so, set the value of `lineAlpha` attribute to specify the transparency of the lines on the chart, `0` (transparent) and `100` (opaque).
 
@@ -371,7 +371,7 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "lineAlpha": "0"
+        "lineAlpha": "0"      
     },
 }
 ```
@@ -382,7 +382,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/8975mgsx/) to edit the above chart.
 
-### Add trend lines/trend zones
+### Add Trendlines/Trendzones
 
 You can add trend lines or trend zones to a spark line chart.
 
@@ -419,7 +419,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/KRZ9W/) to edit the above chart.
 
-### Customize trend-lines
+### Customize Trendlines
 
 Use the attributes given below to configure trend-line cosmetics:
 
@@ -466,7 +466,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/aFE6Q/) to edit the above chart.
 
-### Add trend-zones
+### Add Trendzones
 
 Use the attributes given below to render a trend-zone:
 
@@ -508,7 +508,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/mLGD3/) to edit the above chart.
 
-### Configure hover effects
+### Configure Hover Effects
 
 You can use hover effects to improve the visual representation of your chart. Use the following attributes to do that:
 
@@ -539,7 +539,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/fwaL5/) to edit the above chart.
 
-## Create a spark column chart
+## Create a Spark Column Chart
 
 A spark column chart looks as follows:
 
@@ -555,7 +555,7 @@ Click [here](http://jsfiddle.net/fusioncharts/nbTf9/) to edit the above chart.
 
 Customize several cosmetic and functional properties of the spark column chart, using FusionCharts Suite XT.
 
-## Configure period blocks for the chart
+## Configure Period Blocks for the Chart
 
 Show period blocks on the chart using colored bands, to easily interpret periods on the chart. Use the following attributes to do so:
 
@@ -583,7 +583,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/3MMH2/) to edit the above chart.
 
-## Configure the high and low columns
+## Configure the High and Low Columns
 
 By default, the spark column chart highlights the highest and lowest data plots using a default color, and also shows their values. You can, however, configure the colors for the highest and lowest columns based on your requirement. Use the following attributes to do so:
 
@@ -608,7 +608,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/TQ6pv/) to edit the above chart.
 
-## Add Trend-lines
+## Add Trendlines
 
 Use the following attributes to add a trend-line to a spark column chart:
 
@@ -643,7 +643,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/ZLhAG/) to edit the above chart.
 
-## Customize trend-lines
+## Customize Trendlines
 
 Use the attributes given below to configure trend-line cosmetics:
 
@@ -690,7 +690,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/8WKu4/) to edit the above chart.
 
-## Add trend-zones
+## Add Trendzones
 
 Use the attributes given below to render a trend-zone:
 
@@ -731,7 +731,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/TZ3tB/) to edit the above chart.
 
-## Configure hover effects for the chart
+## Configure Hover Effects for the Chart
 
 Use the attributes given below to configure the hover effect:
 
@@ -757,7 +757,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/UhMzX/) to edit the above chart.
 
-## Create spark win/loss charts
+## Create Spark Win/Loss Charts
 
 A spark win/loss chart looks as follows:
 
@@ -853,7 +853,7 @@ Click [here](http://jsfiddle.net/fusioncharts/6c5hbzLn/) to edit the above chart
 
 > When configuring period blocks, ensure that the period length is always less than the number of data points that you have specified, as period length is directly numbered on data points.
 
-## Configure win, loss, and draw colors
+## Configure Win/Loss and Draw Colors
 
 Use the following attributes to configure the win, loss, and draw colors:
 
@@ -881,7 +881,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/RAVML/) to edit the above chart.
 
-## Configure colors to show scoreless matches
+## Configure Colors to Show Scoreless Matches
 
 Specify a fill color for the bars indicating a scoreless match, by setting the value of the `scoreLessColor` attribute to the hex code of the color.
 
@@ -901,7 +901,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/q6m35/) to edit the above chart.
 
-## Show/hide chart values
+## Show/hide Chart Values
 
 Set the value of the `showValue` attribute to `1`, to show data chart values within the chart.
 
@@ -921,7 +921,7 @@ The chart will look like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/U3Qkj/) to edit the above chart.
 
-## Configure hover effects
+## Configure Hover Effects
 
 Use the attributes mentioned below, to configure the hover effects for a spark win-loss chart:
 

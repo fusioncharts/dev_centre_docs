@@ -32,107 +32,31 @@ Now, open [http://localhost:3000/](http://localhost:3000/) to see your React app
 
 Install the react-fusioncharts and fusioncharts modules using the following command:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='localfiles'>Local Files</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
+```javascript
+npm install fusioncharts react-fusioncharts --save
+```
 
-<div>To install fusioncharts and the `react-fusioncharts` component via npm using the command mentioned below:</div>
-<pre><code class="language-javascript">
-    $ npm install fusioncharts react-fusioncharts --save
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div>After installing the fusioncharts components, you can replace the code in App.js file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
-<pre><code class="language-javascript">
-    *// Step 1 - Include react*
-    import React from 'react';
+After installing the fusioncharts components, you can replace the code in App.js file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.
 
-    *// Step 2 - Include the react-fusioncharts component*
-    import ReactFC from 'react-fusioncharts';
+```javascript
+// Step 1 - Include react
+import React from "react";
 
-    *// Step 3 - Include the fusioncharts library*
-    import FusionCharts from 'fusioncharts';
+// Step 2 - Include the react-fusioncharts component
+import ReactFC from "react-fusioncharts";
 
-    *// Step 4 - Include the chart type*
-    import Column2D from 'fusioncharts/fusioncharts.charts';
+// Step 3 - Include the fusioncharts library
+import FusionCharts from "fusioncharts";
 
-    *// Step 5 - Include the theme as fusion*
-    import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+// Step 4 - Include the chart type
+import Column2D from "fusioncharts/fusioncharts.charts";
 
-    *// Step 6 - Adding the chart and theme as dependency to the core fusioncharts*
-    ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+// Step 5 - Include the theme as fusion
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
-</pre>
-</div>
-
-<div class='tab cdn-tab'>
-<div><strong>To install the FusionCharts Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
-<div>
-    <ol>
-        <li>Include the [React](https://reactjs.org/)core library.
-        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>Include the **FusionCharts** JavaScript files from CDN.</li>
-        <li>Include the `react-fusioncharts` module.</li>
-        <li>Include the theme file.</li>
-    </ol>
-</div>
-<div>The consolidated code is shown below:</div>
-<pre><code class="language-javascript">
-&lt;head&gt;
-    &lt;!-- Step 1 - Including react --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
-    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script>
-    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Step 4 - Including the react-fusioncharts component--&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
-    &lt;!-- Step 5 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-&lt;/head&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-<div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
-<div>
-    <ol>
-        <li>Include the [React](https://reactjs.org/)core library.</li>
-        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
-        <li>Include the `react-fusioncharts` component.</li>
-        <li>Include the FusionCharts theme file to apply style to the charts.</li>
-    </ol>
-</div>
-<div>The consolidated code is shown below:</div>
-<pre><code class="language-javascript">
-&lt;head&gt;
-    &lt;!-- Step 1 - Including react  --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
-    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 4 - Including the react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 5 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-</div>
-</div>
+// Step 6 - Adding the chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+```
 
 ## Preparing the data
 
@@ -149,7 +73,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
@@ -220,22 +144,11 @@ const chartConfigs = {
 
 > The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
-Understand more about your chart and its components [here](/understanding-fusioncharts).
-
 ## Render the chart
 
 Get ready to render your first chart finally. Use this consolidated code shown below:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='localfiles'>Local Files</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
-
-<pre><code class="language-javascript">
+```
 // STEP 1 - Include Dependencies
 // Include react
 import React from "react";
@@ -316,190 +229,12 @@ const chartConfigs = {
 // STEP 4 - Creating the DOM element to pass the react-fusioncharts component
 class App extends React.Component {
   render() {
-    return %lt;ReactFC {...chartConfigs} /%gt;;
+    return (<ReactFC {...chartConfigs} />);
   }
 }
 
 export default App;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-
-<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `import`</strong></div>
-<ul>
-    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
-    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
-    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
-    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
-    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
-    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
-    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
-    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
-</ul>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</div>
-
-<div class='tab cdn-tab'>
-<pre><code class="language-javascript">
-&lt;html&gt;
-&lt;head&gt;
-    &lt;!-- Including react --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
-    &lt;!-- Including react-dom --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script>
-    &lt;!-- Including babel --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
-    &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Including the fusioncharts library to render charts --&gt;
-    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.charts.js"&gt;&lt;/script>
-    &lt;!-- Including react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-    &lt;script type="text/jsx"&gt;
-    ReactFC.fcRoot(FusionCharts);
-    const chartConfigs = {
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion",
-            },
-            // Chart Data
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }
-    };
-    &lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactDOM.render(
-        &lt;ReactFC {...chartConfigs} /&gt;,
-        document.getElementById('chart-container')
-    );
-    &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id='chart-container'&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-<div class='tab localfiles-tab'>
-<pre><code class="language-javascript">
-&lt;html&gt;
-&lt;head&gt;
-    &lt;!-- Including react --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt;
-    &lt;!-- Including react-dom --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-dom.development.js"&gt;&lt;/script&gt;
-    &lt;!-- Including babel --&gt;
-    &lt;script type="text/javascript" src="path/to/local/babel.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusioncharts library to render charts --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.charts.js"&gt;&lt;/script&gt;
-    &lt;!-- Including react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactFC.fcRoot(FusionCharts);
-    const chartConfigs = {
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion",
-            },
-            // Chart Data
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }
-    };
-    &lt;/script&gt;
-    &lt;script type="text/jsx"&gt;
-    ReactDOM.render(
-        &lt;ReactFC {...chartConfigs} /&gt;,
-        document.getElementById('chart-container')
-    );
-    &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id='chart-container'&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-</div>
-</div>
+```
 
 ## See your chart
 

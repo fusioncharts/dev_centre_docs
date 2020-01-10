@@ -1459,6 +1459,12 @@
         "name": "scrollHeight"
       },
       {
+        "description": "Distance between the end of canvas (bottom part) and start of scroll bar. This feature is not available in JavaScript charts.",
+        "range": "In Pixels",
+        "type": "Number",
+        "name": "scrollPadding"
+      },
+      {
         "description": "Sets whether to show the left and right scroll button.",
         "range": "0/1",
         "type": "Boolean",

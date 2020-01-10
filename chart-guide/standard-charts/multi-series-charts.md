@@ -94,6 +94,8 @@ Now, let's create a multi-series line chart which will show the comparison betwe
 
 To render a multi-series line chart, set the `type` to `msline`.
 
+{% embed_chartAnatomy ms-line-chart.json %}
+
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=msline) page of multi-series line 2D chart.
 
 A multi-series line chart looks like:
@@ -105,6 +107,8 @@ Click [here](http://jsfiddle.net/fusioncharts/T5C6h/) to edit the above multi-se
 ## Multi-series Area Chart
 
 To render a multi-series area chart the same use case as above, set the `type` to `msarea`.
+
+{% embed_chartAnatomy ms-area-chart.json %}
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=MSArea) page of multi-series area 2D chart.
 
