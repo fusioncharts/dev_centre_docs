@@ -31,26 +31,28 @@ Now, open [http://localhost:3000/](http://localhost:3000/) to see your React app
 ## Installation and including dependencies
 
 Install the react-fusioncharts and fusioncharts modules using the following command:
+
 ```javascript
 npm install fusioncharts react-fusioncharts --save
 ```
 
 After installing the fusioncharts components, you can replace the code in App.js file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.
-```
+
+```javascript
 // Step 1 - Include react
-import React from 'react';
+import React from "react";
 
 // Step 2 - Include the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
+import ReactFC from "react-fusioncharts";
 
 // Step 3 - Include the fusioncharts library
-import FusionCharts from 'fusioncharts';
+import FusionCharts from "fusioncharts";
 
 // Step 4 - Include the chart type
-import Column2D from 'fusioncharts/fusioncharts.charts';
+import Column2D from "fusioncharts/fusioncharts.charts";
 
 // Step 5 - Include the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
 // Step 6 - Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);

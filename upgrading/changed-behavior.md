@@ -4,66 +4,52 @@ description: This section talks about the change in behavior of the charts with 
 heading: Changed Behavior
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.14.0.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.15.0.
 
-## Top plot border of an area chart
+## Height of Navigation Bar in Treemap after Drill Down
 
-In area charts, you can now draw the borders of the data plots only at the top of an area plot.
+In Treemaps, you can now set a custom height to the navigation bar after drill down, using the `navigationBarHeight` attribute.
 
-The image below shows the border only at the top of an area plot.
+The live chart below showcases this behavior:
 
-![Top Plot Border](/images/area-chart-drawfullareaborder-top.png)
+<<Live Chart>>
 
-To know more click [here](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart).
+## Radar charts optimized for resizing after using `radarRadius`
 
-You can also configure the top border of a particular data plot in an area chart with multiple data plots.
+In Radar charts, you can now explicitly mention the value of the `radarRadius` attribute and then resize the chart without any issue. Previously, when you did this, the long labels and the chart border would be displaced. The chart has been optimized for resizing to ensure that does not happen any longer.
 
-Take a look at the image given below:
+The live chart below displays this behavior:
 
-![Multi-Series Area Chart](/images/draw-full-area-border-multi-series-area-chart.png)
+<<Live chart>>
 
-To know more click [here](/chart-guide/chart-configurations/data-plot#top-plot-border-of-an-area-chart).
+## Scrolling in Box and Whisker Chart
 
-## Inherit plot border color of an area chart
+You can now enable scrolling in Box and Whisker charts. Use the `numVisiblePlot` attribute to set the number of plot points visible on the chart canvas. The scrollbar will automatically appear when there are more plot points than the ones you choose to display on the chart canvas.
 
-FusionCharts Suite now allows you to set the border color of the area chart by inheriting the plot color.
+The live chart below displays this behavior:
 
-The chart looks like as shown below:
+<<Live chart>>
 
-{% embed_chart chart-configurations-area-plot-inherit-border-example-10.js %}
+## Tooltip Edges in Pie 2D/3D and Doughnut 2D/3D Charts
 
-Click [here](/chart-guide/chart-configurations/data-plot#inherit-plot-border-color-of-an-area-chart) to know more.
+The edges of the tooltips in Pie and Doughnut (2D/3D) now appear rounded when you set the value of the attribute `tooltipBorderRadius`.
 
-## Set the radius as a percent value
+The screenshot below displays this behavior:
 
-You can now set the radius of the pie chart in percent by setting the value of `pieRadius` attribute. When you set the value of `pieRadius` in percent, the radius of the pie is calculated with respect to the chart canvas space.
+<<Image>>
 
-Refer to the image shown below:
+## Space Management in Pie 2D/Doughnut 2D Charts
 
-![Percent Value on Pie Chart](/images/percent-value-in-pie-radius.png)
+Pie 2D and Doughnut 2D charts now retain their plot size even if you turn off data labels and data values. Earlier the plot would shrink if you turned those off. Space management has been drastically improved now.
 
-Click [here](http://jsfiddle.net/fusioncharts/7g15v0nq/) to know more.
+The live chart below displays this behavior:
 
-In the doughnut chart, you can apply the `pieRadius` attribute to set the radius of the upper threshold of the doughnut chart.
+<<Live chart>>
 
-Refer to the image below:
+## Gantt Chart Values Unaffected by Browser Resizing
 
-![Percent Value on Doughnut Chart](/images/pie-radius-in-doughnut-chart.png)
+Previously, in Gantt charts, if you set the width in percentage and used the `scrollToDate` attribute, the start dates of all charts changed whenever you resized the browser window. The chart has been modified to ensure that the data values are now properly maintained in the above circumstance.
 
-Click [here](/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-radius-as-a-percent-value) to know more.
+The live chart below displays this behavior:
 
-<h4>Deprecated</h4>
-
-- Following is the list of deprecated attributes:
-
-  - `placeXAxisLabelsOnTop`
-
-- Treemap specific attributes:
-
-  - `labelGlow`
-
-  - `labelGlowIntensity`
-
-  - `labelGlowColor`
-
-  - `labelGlowRadius`
+<<Live chart>>
