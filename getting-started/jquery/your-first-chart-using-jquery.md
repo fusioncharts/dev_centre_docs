@@ -10,13 +10,15 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from CDN or Local Files.
+Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from **CDN** or **Local Files**.
 
 - jQuery requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
 
 - To download and install npm packages, you must have an npm package manager. Run `npm -v` in a terminal/console window, to check that if have the npm client installed.
 
 > Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `npx webpack` command in the terminal to ensure that the build is successful.
+
+Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm.
 
 ## Installation and including dependencies
 
@@ -171,6 +173,7 @@ const chartConfigs = {
     "data": chartData
 };
 ```
+> The `type` attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 ## Render the chart
 
@@ -223,24 +226,27 @@ Get ready to render your first chart finally with the steps below:
             }, {
                 label: "China",
                 value: "30"
-            }];
-            // STEP 3 - Chart configurations
-            const chartConfigs = {
+            }]
+            //STEP 3 - Chart Configurations
+        	const chartConfigs = {
                 type: "column2d",
                 width: "700",
                 height: "400",
                 dataFormat: "json",
-                chart: {
-                    caption: "Countries With Most Oil Reserves [2017-18]",
-                    subCaption: "In MMbbl = One Million barrels",
-                    xAxisName: "Country",
-                    yAxisName: "Reserves (MMbbl)",
-                    numberSuffix: "K",
-                    theme: "fusion"
-                },
-                // Chart Data - from step 2
-                "data": chartData
-            };
+                dataSource: {
+                    // Chart Configuration
+                    "chart": {
+                        "caption": "Countries With Most Oil Reserves [2017-18]",
+                        "subCaption": "In MMbbl = One Million barrels",
+                        "xAxisName": "Country",
+                        "yAxisName": "Reserves (MMbbl)",
+                        "numberSuffix": "K",
+                        "theme": "fusion",
+                    },
+                    // Chart Data
+                    "data": chartData
+                }
+            }
             // Create a chart container
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts(chartConfigs);
@@ -294,23 +300,26 @@ Get ready to render your first chart finally with the steps below:
                 label: "China",
                 value: "30"
             }];
-            // STEP 3 - Chart configurations
-            const chartConfigs = {
+          //STEP 3 - Chart Configurations
+        	const chartConfigs = {
                 type: "column2d",
                 width: "700",
                 height: "400",
                 dataFormat: "json",
-                chart: {
-                    caption: "Countries With Most Oil Reserves [2017-18]",
-                    subCaption: "In MMbbl = One Million barrels",
-                    xAxisName: "Country",
-                    yAxisName: "Reserves (MMbbl)",
-                    numberSuffix: "K",
-                    theme: "fusion"
-                },
-                // Chart Data - from step 2
-                "data": chartData
-            };
+                dataSource: {
+                    // Chart Configuration
+                    "chart": {
+                        "caption": "Countries With Most Oil Reserves [2017-18]",
+                        "subCaption": "In MMbbl = One Million barrels",
+                        "xAxisName": "Country",
+                        "yAxisName": "Reserves (MMbbl)",
+                        "numberSuffix": "K",
+                        "theme": "fusion",
+                    },
+                    // Chart Data
+                    "data": chartData
+                }
+            }
             // Create a chart container
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts(chartConfigs);
@@ -361,23 +370,26 @@ $('document').ready(function () {
         label: "China",
         value: "30"
     }];
-    // STEP 3 - Chart configurations
+    //STEP 3 - Chart Configurations
     const chartConfigs = {
         type: "column2d",
         width: "700",
         height: "400",
         dataFormat: "json",
-        chart: {
-            caption: "Countries With Most Oil Reserves [2017-18]",
-            subCaption: "In MMbbl = One Million barrels",
-            xAxisName: "Country",
-            yAxisName: "Reserves (MMbbl)",
-            numberSuffix: "K",
-            theme: "fusion"
-        },
-        // Chart Data - from step 2
-        "data": chartData
-    };
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": chartData
+        }
+    }
     $("#chart-container").insertFusionCharts(chartConfigs);
 });
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>

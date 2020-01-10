@@ -18,6 +18,8 @@ Before you begin, make sure your development environment includes `Node.js` and 
 
 > Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `npx webpack` command in the terminal to ensure that the build is successful.
 
+Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a project through npm.
+
 ## Installation and including dependencies
 
 Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of the following methods:
@@ -37,14 +39,9 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     $ npm install angular
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<div>2. Install `angularjs-fusioncharts`</div>
+<div>2. Install `angularjs-fusioncharts` and `fusioncharts` packages</div>
 <pre><code class="language-javascript">
-	$ npm install angularjs-fusioncharts
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div>2. Install the `fusioncharts` package</div>
-<pre><code class="language-javascript">
-    $ npm install fusioncharts
+	$ npm install angularjs-fusioncharts fusioncharts --save
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 <div>After installing the fusioncharts components, you can replace the code in `index.js` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
@@ -138,7 +135,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with countries as data labels along x-axis and **No. of oil reserves** as data values along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with countries as **data labels** along x-axis and No. of oil reserves as **data values** along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
@@ -185,22 +182,22 @@ const chartData = [
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
 ```javascript
-// Create the datasource
-   $scope.dataSource = {
-    // Chart Configuration
-      chart: {
+// Chart Configurations
+const dataSource = {
+    chart: {
         caption: "Countries With Most Oil Reserves [2017-18]",
         subCaption: "In MMbbl = One Million barrels",
         xAxisName: "Country",
         yAxisName: "Reserves (MMbbl)",
         numberSuffix: "K",
         theme: "fusion",
-      },
+        },
         // Chart Data - from step 2
         "data": chartData
     }
 };
 ```
+> The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
 ## Render the chart
 
@@ -234,29 +231,37 @@ Charts(FusionCharts);
 
 FusionTheme(FusionCharts);
 var app = angular.module('myApp', ['ng-fusioncharts']);
+
+//STEP 2 - Chart Data
+const chartData = [
+    { label: 'Venezuela', value: '290' },
+    { label: 'Saudi', value: '260' },
+    { label: 'Canada', value: '180' },
+    { label: 'Iran', value: '140' },
+    { label: 'Russia', value: '115' },
+    { label: 'UAE', value: '100' },
+    { label: 'US', value: '30' },
+    { label: 'China', value: '30' }
+];
+
+// STEP 3 - Chart Configurations
+const dataSource = {
+    chart: {
+        caption: "Countries With Most Oil Reserves [2017-18]",
+        subCaption: "In MMbbl = One Million barrels",
+        xAxisName: "Country",
+        yAxisName: "Reserves (MMbbl)",
+        numberSuffix: "K",
+        theme: "fusion",
+    },
+    // Chart Data - from step 2
+    "data": chartData
+};
+
 app.controller('MyController', [
 '$scope',
  function($scope) {
-\$scope.dataSource = {
-chart: {
-caption: 'Countries With Most Oil Reserves [2017-18]',
-subCaption: 'In MMbbl = One Million barrels',
-xAxisName: 'Country',
-yAxisName: 'Reserves (MMbbl)',
-numberSuffix: 'K',
-theme:'fusion'
-},
-data: [
-{ label: 'Venezuela', value: '290' },
-{ label: 'Saudi', value: '260' },
-{ label: 'Canada', value: '180' },
-{ label: 'Iran', value: '140' },
-{ label: 'Russia', value: '115' },
-{ label: 'UAE', value: '100' },
-{ label: 'US', value: '30' },
-{ label: 'China', value: '30' }
-]
-};
+$scope.dataSource = dataSource;
 }
 ]);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -308,43 +313,34 @@ data: [
     &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;script type="text/javascript"&gt;
         var myApp = angular.module('myApp', ['ng-fusioncharts']);
+        //STEP 2 - Chart Data
+        const chartData = [
+            { label: 'Venezuela', value: '290' },
+            { label: 'Saudi', value: '260' },
+            { label: 'Canada', value: '180' },
+            { label: 'Iran', value: '140' },
+            { label: 'Russia', value: '115' },
+            { label: 'UAE', value: '100' },
+            { label: 'US', value: '30' },
+            { label: 'China', value: '30' }
+        ];
+
+        // STEP 3 - Chart Configurations
+        const dataSource = {
+            chart: {
+                caption: "Countries With Most Oil Reserves [2017-18]",
+                subCaption: "In MMbbl = One Million barrels",
+                xAxisName: "Country",
+                yAxisName: "Reserves (MMbbl)",
+                numberSuffix: "K",
+                theme: "fusion",
+            },
+            // Chart Data - from step 2
+            "data": chartData
+        };
         myApp.controller('MyController', ['$scope', function($scope) {
             // datasource
-            $scope.myDataSource = {
-                "chart": {
-                    "caption": "Countries With Most Oil Reserves [2017-18]",
-                    "subCaption": "In MMbbl = One Million barrels",
-                    "xAxisName": "Country",
-                    "yAxisName": "Reserves (MMbbl)",
-                    "numberSuffix": "K",
-                    "theme": "fusion",
-                },
-                "data": [{
-                    "label": "Venezuela",
-                    "value": "290"
-                }, {
-                    "label": "Saudi",
-                    "value": "260"
-                }, {
-                    "label": "Canada",
-                    "value": "180"
-                }, {
-                    "label": "Iran",
-                    "value": "140"
-                }, {
-                    "label": "Russia",
-                    "value": "115"
-                }, {
-                    "label": "UAE",
-                    "value": "100"
-                }, {
-                    "label": "US",
-                    "value": "30"
-                }, {
-                    "label": "China",
-                    "value": "30"
-                }]
-            };
+            $scope.myDataSource = dataSource
         }]);
     &lt;/script&gt;
 &lt;/head&gt;
@@ -375,43 +371,34 @@ data: [
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript"&gt;
         var myApp = angular.module('myApp', ['ng-fusioncharts']);
+        //STEP 2 - Chart Data
+        const chartData = [
+            { label: 'Venezuela', value: '290' },
+            { label: 'Saudi', value: '260' },
+            { label: 'Canada', value: '180' },
+            { label: 'Iran', value: '140' },
+            { label: 'Russia', value: '115' },
+            { label: 'UAE', value: '100' },
+            { label: 'US', value: '30' },
+            { label: 'China', value: '30' }
+        ];
+
+        // STEP 3 - Chart Configurations
+        const dataSource = {
+            chart: {
+                caption: "Countries With Most Oil Reserves [2017-18]",
+                subCaption: "In MMbbl = One Million barrels",
+                xAxisName: "Country",
+                yAxisName: "Reserves (MMbbl)",
+                numberSuffix: "K",
+                theme: "fusion",
+            },
+            // Chart Data - from step 2
+            "data": chartData
+        };
         myApp.controller('MyController', ['$scope', function($scope) {
             // datasource
-            $scope.myDataSource = {
-                "chart": {
-                    "caption": "Countries With Most Oil Reserves [2017-18]",
-                    "subCaption": "In MMbbl = One Million barrels",
-                    "xAxisName": "Country",
-                    "yAxisName": "Reserves (MMbbl)",
-                    "numberSuffix": "K",
-                    "theme": "fusion",
-                },
-                "data": [{
-                    "label": "Venezuela",
-                    "value": "290"
-                }, {
-                    "label": "Saudi",
-                    "value": "260"
-                }, {
-                    "label": "Canada",
-                    "value": "180"
-                }, {
-                    "label": "Iran",
-                    "value": "140"
-                }, {
-                    "label": "Russia",
-                    "value": "115"
-                }, {
-                    "label": "UAE",
-                    "value": "100"
-                }, {
-                    "label": "US",
-                    "value": "30"
-                }, {
-                    "label": "China",
-                    "value": "30"
-                }]
-            };
+            $scope.myDataSource = dataSource
         }]);
     &lt;/script&gt;
 &lt;/head&gt;

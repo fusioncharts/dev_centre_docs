@@ -127,6 +127,7 @@ const dataSource = {
   "data": chartData
 };
 ```
+> The `type` attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 ## Render the chart
 

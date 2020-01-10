@@ -8,9 +8,8 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 ## Prerequisite
 
-We are assuming that you are having a react-native project up and running. If not, follow the steps [here](https://facebook.github.io/react-native/docs/getting-started) to get started with your react-native project setup.
-
-> Install react-native-webview if not present already.
+We are assuming that you are having a react-native project up and running. If not, follow the steps [here](https://facebook.github.io/react-native/docs/getting-started) to get started with your react-native project setup.<br/>
+**NOTE:** Install react-native-webview if not present already.
 
 ## Installation and Including Dependencies
 
@@ -20,7 +19,7 @@ Install the react-native-fusioncharts and fusioncharts components via npm.
 npm install react-native-fusioncharts fusioncharts --save
 ```
 
-To setup the react-native-fusioncharts component, follow the steps given below:
+To include the react-native-fusioncharts component, follow the steps given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -31,19 +30,19 @@ To setup the react-native-fusioncharts component, follow the steps given below:
 
 <div class='tab android-tab active'>
 <div>
-    <ul>
-        <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
-        <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-    </ul>
+  <ul style="margin-left:10px; padding:0">
+    <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
+    <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+  </ul>
 </div>
 </div>
 
 <div class='tab ios-tab'>
-<div>    
-    <ul>
-        <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
-        <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-    </ul>
+<div>
+  <ul style="margin-left:10px; padding:0">
+    <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
+    <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
+  </ul>
 </div>
 </div>
 
@@ -61,11 +60,12 @@ IMAGE
 
 <div class='tab android-tab active'>
 <div>
-    <ul>
-        <li>To avoid file duplications, remove package.json file from assets/fusioncharts/package.json</li>
-        <li>Create a fusioncharts.html file in assets folder and include the following code</li>
-    </ul>
+  <ul style="margin-left:10px; padding:0">
+    <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
+    <li>Create a `fusioncharts.html` file in assets folder and include the following code</li>
+  </ul>
 </div>
+<div>
 <pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -165,16 +165,39 @@ Chart is loading...
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+  <ul style="margin-left:10px; margin-top:10px; padding:0">
+    <li>
+    Add the following script in Application's `package.json` file to bundle your assets when you want to generate a signed APK.
+    </li>
+  </ul>
+  <pre>
+    <code class="language-javascript">
+      "scripts": {
+          ......
+          "clean:build:android": "rm -rf android/app/build",
+          "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
+      },
+    </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+  </pre>
+  <ul style="margin-left:10px; margin-top:10px; padding:0"><li>Run the following command before generating the signed APK:</li></ul>
+  <pre>
+    <code class="language-javascript">
+      npm run prod:android
+    </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+  </pre>
+</div>
 
 </div>
 
 <div class='tab ios-tab'>
 <div>
-    <ul>
-        <li>Create a fusioncharts-tpl.html file in the <strong>assets</strong> folder. Include the FusionCharts library files in fusioncharts.html as shown below.</li>
-    </ul>
+  <ul style="margin-left:10px; padding:0">
+    <li>
+        Create a fusioncharts-tpl.html file in the <strong>assets</strong> folder. Include the FusionCharts library files in fusioncharts.html as shown below.
+    </li>
+  </ul>
 </div>
+<div>
 <pre><code class="language-javascript">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -188,8 +211,26 @@ Chart is loading...
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
+<ul style="margin-left:10px; margin-top:10px; padding:0"><li>Add a `build:assets` script in Application's package.json file</li></ul>
+
+<pre><code class="language-javascript">
+"scripts": {
+    ......
+    "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts"
+},
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+  <ul style="margin-left:10px; padding:0; margin-top: 10px">
+    <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder.<br/>
+    <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
+    <li>Run the following command before running the application:</li>
+  </ul>
+</div>
+<pre><code class="language-javascript">
+npm run build:assets
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
 </div>
 
 </div>
@@ -212,7 +253,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will look as shown below.
 
@@ -259,22 +300,26 @@ const chartData = [
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
 ```javascript
-// Create the datasource
-    dataSource = {
-    // Chart Configuration
-      chart: {
-        caption: "Countries With Most Oil Reserves [2017-18]",
-        subCaption: "In MMbbl = One Million barrels",
-        xAxisName: "Country",
-        yAxisName: "Reserves (MMbbl)",
-        numberSuffix: "K",
-        theme: "fusion"
-      },
-    // Chart Data - from step 2
-    "data": chartData
-    }
+// Chart Configuration
+const chartConfig = {
+  type: "column2d",
+  width: "100%",
+  height: "400",
+  dataFormat: "json",
+  dataSource: {
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017-18]",
+      subCaption: "In MMbbl = One Million barrels",
+      xAxisName: "Country",
+      yAxisName: "Reserves (MMbbl)",
+      numberSuffix: "K",
+      theme: "fusion"
+    },
+    data: chartData
+  }
 };
 ```
+> The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
 ## Render the Chart
 
@@ -291,7 +336,19 @@ import FusionCharts from "react-native-fusioncharts";
 export default class PlainColumn2D extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    //STEP 2 - Chart Data
+    const chartData = [
+      {label: "Venezuela", value: "290"},
+      {label: "Saudi", value: "260"},
+      {label: "Canada", value: "180"},
+      {label: "Iran", value: "140"},
+      {label: "Russia", value: "115"},
+      {label: "UAE", value: "100"},
+      {label: "US", value: "30"},
+      {label: "China", value: "30"}
+    ];
+    //STEP 3 - Chart Configurations
+    const chartConfig = {
       type: "column2d",
       width: "100%",
       height: "400",
@@ -305,42 +362,10 @@ export default class PlainColumn2D extends Component {
           numberSuffix: "K",
           theme: "fusion"
         },
-        data: [
-          {
-            label: "Venezuela",
-            value: "290"
-          },
-          {
-            label: "Saudi",
-            value: "260"
-          },
-          {
-            label: "Canada",
-            value: "180"
-          },
-          {
-            label: "Iran",
-            value: "140"
-          },
-          {
-            label: "Russia",
-            value: "115"
-          },
-          {
-            label: "UAE",
-            value: "100"
-          },
-          {
-            label: "US",
-            value: "30"
-          },
-          {
-            label: "China",
-            value: "30"
-          }
-        ]
+        data: chartData
       }
     };
+    this.state = chartConfig;
     this.libraryPath = Platform.select({
       // Specify fusioncharts.html file location
       android: {
@@ -396,55 +421,6 @@ const styles = StyleSheet.create({
 You should be able to see the chart as shown below.
 
 {% embed_chart getting-started-your-first-chart.js %}
-
-Add the following script in the application's `package.json` file to bundle your assets when you want to generate a signed APK.
-
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='android'>Android</a></li>
-    <li><a data-toggle='ios'>iOS</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab android-tab active'>
-<pre><code class="language-javascript">
-"scripts": {
-    ......
-    "clean:build:android": "rm -rf android/app/build",
-    "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
-},
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div>Run the following command before generating the signed APK:</div>
-
-<pre><code class="language-javascript">
-npm run prod:android
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-<div class='tab ios-tab'>
-<pre><code class="language-javascript">
-"scripts": {
-    ......
-    "build:assets": "fc-build-assets --fc-template ./assets/fusioncharts-tpl.html --fc-library ./assets/fusioncharts"
-},
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div>
-    <ul>
-        <li>The --fc-library ./assets/fusioncharts is required when you copy FusionCharts library files in your **assets** folder. <strong>Note:</strong> fc-build-assets is a utility binary provided by react-native-fusioncharts to package the FusionCharts modules(.js files) referenced in template(.html file) as needed by the React Native iOS build process.</li>
-        <li>Run the following command before running the application:</li>
-    </ul>
-</div>
-<pre><code class="language-javascript">
-npm run build:assets
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-
-</div>
-</div>
 
 If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click here to get in touch with our support team.
 

@@ -144,8 +144,6 @@ const chartConfigs = {
 
 > The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
-Understand more about your chart and its components [here](/understanding-fusioncharts).
-
 ## Render the chart
 
 Get ready to render your first chart finally. Use this consolidated code shown below:
