@@ -70,8 +70,6 @@ In earlier versions:
 
 ![Pie chart with labels and values turned off in earlier version](/images/pie2d-label-value-off.png)
 
-![Legend](/images/chart-configurations-legend-image-1.png)
-
 ## Gantt Chart Values Unaffected by Browser Resizing
 
 Previously, in Gantt charts, if you set the width in percentage and used the `scrollToDate` attribute, the start dates of all charts changed whenever you resized the browser window. The chart has been modified to ensure that the data values are now properly maintained in the above circumstance.
