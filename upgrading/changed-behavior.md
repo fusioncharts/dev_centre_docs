@@ -64,11 +64,11 @@ In earlier versions:
 
 **With Labels and Values turned on:**
 
-![Pie chart with labels and values visible in earlier version](/images/Pie2D-Label-Value-On.png")
+![Pie chart with labels and values visible in earlier version](/images/Pie2D-Label-Value-On.png)
 
 **With Labels and Values turned off:**
 
-![Pie chart with labels and values turned off in earlier version](/images/Pie2D-Label-Value-Off.png")
+![Pie chart with labels and values turned off in earlier version](/images/Pie2D-Label-Value-Off.png)
 
 ## Gantt Chart Values Unaffected by Browser Resizing
 
