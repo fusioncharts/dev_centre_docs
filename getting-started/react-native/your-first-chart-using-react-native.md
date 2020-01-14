@@ -35,7 +35,7 @@ To include the react-native-fusioncharts component, follow the steps given below
     <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
   </ul>
 </div>
-</div>
+
 <div>
   <ul style="margin-left:10px; padding:0">
     <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
