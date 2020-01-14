@@ -39,6 +39,7 @@ To include the react-native-fusioncharts component, follow the steps given below
 <div>
   <ul style="margin-left:10px; padding:0">
     <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
+    
     <li>Create a `fusioncharts.html` file in assets folder and include the following code</li>
   </ul>
 </div>
