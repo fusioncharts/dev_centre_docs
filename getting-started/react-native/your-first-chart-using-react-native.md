@@ -33,11 +33,6 @@ To include the react-native-fusioncharts component, follow the steps given below
   <ul style="margin-left:10px; padding:0">
     <li>Create a folder named assets under <strong>android/app/src/main</strong> directory if it doesn't exist.</li>
     <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-  </ul>
-</div>
-
-<div>
-  <ul style="margin-left:10px; padding:0">
     <li>To avoid file duplications, remove package.json file from <strong>assets/fusioncharts/package.json</strong></li>
     <li>Create a `fusioncharts.html` file in assets folder and include the following code</li>
   </ul>
@@ -171,10 +166,6 @@ Chart is loading...
   <ul style="margin-left:10px; padding:0">
     <li>Create a folder named <strong>assets</strong> in your project root if it doesn't exist.</li>
     <li>Copy FusionCharts library files from <strong>node_modules/fusioncharts</strong> folder to the newly created <strong>assets</strong> folder.</li>
-  </ul>
-</div>
-<div>
-  <ul style="margin-left:10px; padding:0">
     <li>
         Create a fusioncharts-tpl.html file in the <strong>assets</strong> folder. Include the FusionCharts library files in fusioncharts.html as shown below.
     </li>
