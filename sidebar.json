@@ -1144,7 +1144,8 @@
             "children": [
               {
                 "title": "Chart Components",
-                "path": "/understanding-fusioncharts"
+                "path": "/understanding-fusioncharts",
+                "visibility": false
               },
               {
                 "title": "List of Charts",
