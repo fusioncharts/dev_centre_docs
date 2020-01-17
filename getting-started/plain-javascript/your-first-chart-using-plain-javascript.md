@@ -14,7 +14,7 @@ Before you begin, make sure your development environment includes `Node.js` and 
 
 > Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run **npx webpack** command in the terminal to ensure that the build is successful.
 
-Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a jQuery project through npm.
+Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a javascript project through npm.
 
 ## Installation and including dependencies
 
