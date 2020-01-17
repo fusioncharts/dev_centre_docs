@@ -31,8 +31,9 @@ ember new my-app
 cd my-app
 ember serve
 ```
+`my-app` is the working directory where Ember Boilerplate will be installed along with all the utilities and dependencies.
 
-Now, open http://localhost:4200 in the browser and your first Ember app is ready!
+Now, open http://localhost:4200 to see your Ember app.
 
 To install `FusionCharts` and the `ember-fusioncharts` component via npm follow the steps below:
 
