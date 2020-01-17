@@ -12,13 +12,12 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from **CDN** or **Local Files**.
 
-- jQuery requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
+- jQuery requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
 
-- To download and install npm packages, you must have an npm package manager. Run `npm -v` in a terminal/console window, to check that if have the npm client installed.
 
 > Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `npx webpack` command in the terminal to ensure that the build is successful.
 
-Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm.
+Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a jQuery project through npm.
 
 ## Installation and including dependencies
 
@@ -157,23 +156,32 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 ```javascript
 // Chart Configuration
 const chartConfigs = {
+    //Set the chart type
     type: "column2d",
+    //Set the chart width
     width: "700",
+    //Set the chart height
     height: "400",
+    //Set the type of data
     dataFormat: "json",
     chart: {
+        //Set the chart caption
         caption: "Countries With Most Oil Reserves [2017-18]",
+        //Set the chart subcaption
         subCaption: "In MMbbl = One Million barrels",
+        //Set the x-axis name
         xAxisName: "Country",
+        //Set the y-axis name
         yAxisName: "Reserves (MMbbl)",
         numberSuffix: "K",
+        //Set the theme for your chart
         theme: "fusion"
     },
     // Chart Data - from step 2
     "data": chartData
 };
 ```
-> The `type` attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+> Have a look at different chart types with their aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 ## Render the chart
 
