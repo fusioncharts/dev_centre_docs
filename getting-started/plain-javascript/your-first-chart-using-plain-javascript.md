@@ -121,7 +121,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as `data labels` along the x-axis and 'No. of oil reserves' as `data values` along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along the x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
@@ -168,20 +168,30 @@ const chartData = [
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
 ```javascript
-// Chart Configuration
+// Create a JSON object to store the chart configurations
 const chartConfigs = {
+  //Specify the chart type
     type: "column2d",
+  //Set the container object 
     renderAt: 'chart-container',
+  //Specify the width of the chart
     width: "100%",
+  //Specify the height of the chart
     height: "400",
+  //Set the type of data
     dataFormat: "json",
     dataSource: {
         "chart": {
+          //Set the chart caption
             "caption": "Countries With Most Oil Reserves [2017-18]",
+            //Set the chart subcaption
             "subCaption": "In MMbbl = One Million barrels",
+            //Set the x-axis name
             "xAxisName": "Country",
+            //Set the y-axis name
             "yAxisName": "Reserves (MMbbl)",
             "numberSuffix": "K",
+            //Set the theme for your chart
             "theme": "fusion",
         },
         // Chart Data from Step 2

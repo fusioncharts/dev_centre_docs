@@ -24,8 +24,9 @@ npm start
 
 `first-fusioncharts-project` is the working directory where React Boilerplate will be installed along with all the utilities and dependencies.
 
-> The working directory should contain a `package.json`. If the package is not present, you can create it using the `npm init -y` command.
-
+<div class="info-box">
+The working directory should contain a `package.json`. If the package is not present, you can create it using the `npm init -y` command.
+<div>
 Now, open [http://localhost:3000/](http://localhost:3000/) to see your React app.
 
 ## Installation and including dependencies
@@ -73,7 +74,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as data labels along x-axis and 'No. of oil reserves' as data values along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
@@ -214,11 +215,16 @@ const chartConfigs = {
   dataSource: {
     // Chart Configuration
     chart: {
+      //Set the chart caption
       caption: "Countries With Most Oil Reserves [2017-18]",
+      //Set the chart subcaption
       subCaption: "In MMbbl = One Million barrels",
+      //Set the x-axis name
       xAxisName: "Country",
+      //Set the y-axis name
       yAxisName: "Reserves (MMbbl)",
       numberSuffix: "K",
+      //Set the theme for your chart
       theme: "fusion"
     },
     // Chart Data
