@@ -170,18 +170,28 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 ```javascript
 // Chart Configuration
 const chartConfigs = {
+  //Set the chart type
     type: "column2d",
+    //Set the container object
     renderAt: 'chart-container',
+    //Set the chart width
     width: "100%",
+    //Set the chart height
     height: "400",
+    //Set the type of data
     dataFormat: "json",
     dataSource: {
         "chart": {
+          //Set the chart caption
             "caption": "Countries With Most Oil Reserves [2017-18]",
+          //Set the chart subcaption
             "subCaption": "In MMbbl = One Million barrels",
+          //Set the x-axis name
             "xAxisName": "Country",
+          //Set the y-axis name
             "yAxisName": "Reserves (MMbbl)",
             "numberSuffix": "K",
+          //Set the theme for your chart
             "theme": "fusion",
         },
         // Chart Data from Step 2
