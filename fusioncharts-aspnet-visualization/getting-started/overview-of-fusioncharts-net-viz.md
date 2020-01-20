@@ -21,6 +21,7 @@ To help understand better refer to the illustration below:
 <img src="{% site.BASE_URL %}/images/architecture-diagram-fusioncharts-net.png" alt="Data Markers" width="700" height="420">
 
 Starting v1.0.4, FusionCharts.NET has been released for **.NET Standard** which enables the support for following .NET development platforms:
+
 - .NET Framework
 - .NET Core
 - .NET Standard
