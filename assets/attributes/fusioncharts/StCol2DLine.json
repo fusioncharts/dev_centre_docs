@@ -90,7 +90,7 @@
         "name": "showValues"
       },
       {
-        "description": "If you've opted to show data values on the chart, this attribute lets you adjust the vertical alignment of data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of each data value is determined automatically based on the position of each plot point. In ABOVE mode, data values are displayed above the plot points unless a plot point is too close to the upper edge of the canvas while in BELOW mode, data values are displayed below the plot points unless a plot point is too close to the lower edge of the canvas.",
+        "description": "If you've opted to show data values on the chart, this attribute lets you adjust the vertical alignment of data values of the anchors with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of each data value is determined automatically based on the position of each plot point. In ABOVE mode, data values are displayed above the plot points unless a plot point is too close to the upper edge of the canvas while in BELOW mode, data values are displayed below the plot points unless a plot point is too close to the lower edge of the canvas. \n\n __Note:__ This attribute is only applicable to the line and area dataplots.",
         "range": "\"ABOVE\", \"BELOW\", \"AUTO\"",
         "type": "String",
         "versionsince": "3.2",
