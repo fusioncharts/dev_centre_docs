@@ -16,6 +16,8 @@ By default, the vertical lines do not appear. To display a vertical line follow 
 
 - Set the `vLine` attribute to `1`.
 
+- Set the value of `showOnTop` attribute to `1`.
+
 - Specify the display text of the vertical line using the `label` attribute.
 
 - Set the position of the vertical line using the `linePosition` attribute.
@@ -32,7 +34,8 @@ Refer to the code below:
         "value": "5529"
     },
     {
-        "vline": "true",
+        "vLine": "true",
+        "showOnTop": "1",
         "label": "Weekend Start",
         "linePosition": "0.7"
     },
@@ -68,6 +71,7 @@ To set the position of the label, specify the position using the `labelPosition`
     },
     {
         "vline": "true",
+        "showOnTop": "1",
         "label": "Weekend Start",
         "linePosition": "0.7",
         "labelPosition": "0.5"
@@ -110,6 +114,7 @@ Refer to the code below:
     },
     {
         "vline": "true",
+        "showOnTop": "1",
         "label": "Weekend Start",
         "linePosition": "0.5",
         "labelPosition": "0",
@@ -151,6 +156,7 @@ Refer to the code below:
     },
     {
       "vline": "true",
+      "showOnTop": "1",
       "label": "Weekend Start",
       "linePosition": "0.7",
       "labelPosition": "0.5",
@@ -190,6 +196,7 @@ Refer to the code below:
     },
     {
         "vline": "true",
+        "showOnTop": "1",
         "label": "Weekend Start",
         "linePosition": "0.7",
         "labelPosition": "0.5",
@@ -243,6 +250,7 @@ Refer to the code below:
     },
     {
         "vline": "true",
+        "showOnTop": "1",
         "label": "Weekend Start",
         "linePosition": "0.7",
         "labelPosition": "0.5",
