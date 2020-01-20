@@ -76,12 +76,12 @@
                {
                   "annotationNumber": "5",
                   "annotationName": "X-Axis",
-                  "annotationDesc": "X-Axis refers to a line on a chart that runs horizontally (left to right). Learn more about it ",
+                  "annotationDesc": "X-Axis refers to a line on a chart that runs horizontally (left to right).",
                   "annotationDescLinkPath": null,
                   "leftPosition": "16%",
                   "topPosition": "84%",
                   "annotationLinks": [{
-                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
+                     "linkDesc": "Learn more about it ",
                      "linkPath": "/chart-guide/chart-configurations/axes"
                   }]
                },
