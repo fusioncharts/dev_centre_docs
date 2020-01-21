@@ -11,7 +11,8 @@ On this page, we'll see how to install **FusionCharts** library and all the othe
 
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from **CDN** or **Local Files**.
+In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
+Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`.
 
 > Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run **npx webpack** command in the terminal to ensure that the build is successful.
 
@@ -171,19 +172,19 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 ```javascript
 // Chart Configuration
 const chartConfigs = {
-    type: "column2d", //Set the chart type
+    type: "column2d",            //Set the chart type
     renderAt: 'chart-container', //Set the container object
-    width: "100%", //Set the chart width
-    height: "400", //Set the chart height
-    dataFormat: "json", //Set the type of data
+    width: "100%",               //Set the chart width
+    height: "400",               //Set the chart height
+    dataFormat: "json",          //Set the type of data
     dataSource: {
         "chart": {
             "caption": "Countries With Most Oil Reserves [2017-18]", //Set the chart caption
-            "subCaption": "In MMbbl = One Million barrels", //Set the chart subcaption
-            "xAxisName": "Country", //Set the x-axis name
+            "subCaption": "In MMbbl = One Million barrels",          //Set the chart subcaption
+            "xAxisName": "Country",          //Set the x-axis name
             "yAxisName": "Reserves (MMbbl)", //Set the y-axis name
             "numberSuffix": "K",
-            "theme": "fusion", //Set the theme for your chart
+            "theme": "fusion",               //Set the theme for your chart
         },
         // Chart Data from Step 2
         "data": chartData
@@ -362,7 +363,7 @@ chartInstance.render();
   &lt;/head&gt;
   &lt;body&gt;
     &lt;div id="chart-container"&gt;Fusioncharts will render here&lt;/div&gt;
-    &lt;script src="main.js"&gt;&lt;/script&gt;
+    &lt;script src="index.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
