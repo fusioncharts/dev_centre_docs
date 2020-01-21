@@ -2,6 +2,7 @@
 title: Create a Chart Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the plain javascript.
 heading: Create a Chart Using FusionCharts
+author: sowmya
 ---
 
 **FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
@@ -170,19 +171,19 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 ```javascript
 // Chart Configuration
 const chartConfigs = {
-    type: "column2d",               //Set the chart type
-    renderAt: 'chart-container',    //Set the container object
-    width: "100%",                  //Set the chart width
-    height: "400",                  //Set the chart height
-    dataFormat: "json",             //Set the type of data
+    type: "column2d", //Set the chart type
+    renderAt: 'chart-container', //Set the container object
+    width: "100%", //Set the chart width
+    height: "400", //Set the chart height
+    dataFormat: "json", //Set the type of data
     dataSource: {
         "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",  //Set the chart caption
-            "subCaption": "In MMbbl = One Million barrels",           //Set the chart subcaption
-            "xAxisName": "Country",             //Set the x-axis name
-            "yAxisName": "Reserves (MMbbl)",    //Set the y-axis name
+            "caption": "Countries With Most Oil Reserves [2017-18]", //Set the chart caption
+            "subCaption": "In MMbbl = One Million barrels", //Set the chart subcaption
+            "xAxisName": "Country", //Set the x-axis name
+            "yAxisName": "Reserves (MMbbl)", //Set the y-axis name
             "numberSuffix": "K",
-            "theme": "fusion",                  //Set the theme for your chart
+            "theme": "fusion", //Set the theme for your chart
         },
         // Chart Data from Step 2
         "data": chartData
