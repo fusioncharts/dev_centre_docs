@@ -100,3 +100,5 @@ To directly install NuGet package, run the following command in the NuGet Packag
 ```
 Install-Package FusionCharts.Visualization
 ```
+
+Click [here](/fusioncharts-aspnet-visualization/getting-started/create-first-chart-using-fusioncharts-net) to start working with FusionCharts.NET.
