@@ -97,6 +97,6 @@ You can download and install FusionCharts.NET by either directly install it from
 
 To directly install NuGet package, run the following command in the NuGet Package Manage Console:
 
-```shellscript
+```
 Install-Package FusionCharts.Visualization
 ```
