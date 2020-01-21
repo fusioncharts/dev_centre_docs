@@ -1,6 +1,6 @@
 ---
 title: Overview | FusionCharts
-description: FusionCharts.NET Overview
+description: FusionCharts.NET uses FusionCharts JavaScript (HTML5) library to render interactive charts for ASP.NET MVC, ASP.NET WebForms, .NET Core and .NET Standard.
 heading: Overview
 formPresent: bottom
 formDescription: To download FusionCharts.NET locally fill up the form and click the download button.
