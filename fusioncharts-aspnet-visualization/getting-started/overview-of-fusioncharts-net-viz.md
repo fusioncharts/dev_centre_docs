@@ -3,7 +3,7 @@ title: Overview | FusionCharts
 description: FusionCharts.NET Overview
 heading: Overview
 formPresent: bottom
-formDescription: 2. To download FusionCharts.NET locally fill up the form and click the download button.
+formDescription: To download FusionCharts.NET locally fill up the form and click the download button.
 ---
 
 `FusionCharts.NET` is a charting library for **ASP.NET MVC**, **ASP.NET WebForms**, **.NET Core** and **.NET Standard** which uses FusionCharts JavaScript (HTML5) library to render interactive charts.
@@ -95,7 +95,7 @@ Starting v1.0.4, FusionCharts.NET has been released for **.NET Standard** which 
 
 You can download and install FusionCharts.NET by either directly install it from NuGet or install the assemblies manually after downloading the FusionCharts.NET package.
 
-1. To directly install NuGet package, run the following command in the NuGet Package Manage Console:
+To directly install NuGet package, run the following command in the NuGet Package Manage Console:
 
 ```shellscript
 Install-Package FusionCharts.Visualization
