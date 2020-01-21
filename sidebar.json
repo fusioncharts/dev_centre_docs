@@ -2240,6 +2240,7 @@
           },
           {
             "title": "Save exported files to S3",
+            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three"
           },
           {
