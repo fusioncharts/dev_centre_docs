@@ -14,7 +14,7 @@ Before you begin, make sure your development environment includes `Node.js` and 
 
 > Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run **npx webpack** command in the terminal to ensure that the build is successful.
 
-Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a javascript project through npm.
+Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm.
 
 ## Installation and including dependencies
 
@@ -121,7 +121,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as `data labels` along the x-axis and 'No. of oil reserves' as `data values` along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along the x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
