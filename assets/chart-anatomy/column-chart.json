@@ -89,7 +89,7 @@
                   "annotationNumber": "6",
                   "annotationName": "X-Axis Title",
                   "annotationDesc": "It refers to title of the x-axis. Learn more about it ",
-                  "annotationDescLinkPath": "/dev/chart-guide/chart-configurations/axes#setting-axes-names",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
                   "leftPosition": "14.5%",
                   "topPosition": "31.5%",
                   "annotationLinks": []
