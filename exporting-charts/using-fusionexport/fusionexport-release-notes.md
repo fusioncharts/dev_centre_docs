@@ -10,7 +10,7 @@ heading: FusionExport Release Notes
 
 <h4 class="sub-heading">New Feature</h4>
 
-- **Announcement & notification from CLI:** From v1.2.2, we will start showing any new product release in the command line itself, so that you are always equipped with the latest version of FusionExport.
+- **Announcement & notification from CLI:** Starting v1.2.2, we will start showing any new product release in the command line itself, so that you are always equipped with the latest version of FusionExport.
 
 - **Support for memory stream as output:** You can now get exported output as a stream and work with it.
 
@@ -18,7 +18,7 @@ heading: FusionExport Release Notes
 
 <h4>Improvements</h4>
 
-- Better Package Management: For better onboarding, we have changed the package structure to include examples and readme files.
+- **Better Package Management:** For better onboarding, we have changed the package structure to include examples and readme files.
 
 <h4>Fixes</h4>
 
