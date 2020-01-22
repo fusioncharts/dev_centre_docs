@@ -2,6 +2,7 @@
 title: Create a Chart in Ember | FusionCharts
 description: This article outlines the steps to create your first chart, widget and map using the fusionCharts Ember component.
 heading: Create a Chart in Ember Using FusionCharts
+author: sowmya
 ---
 
 The **ember-fusioncharts** component, provide bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.
@@ -12,19 +13,15 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`.
 
-- Ember requires Node.js and NPM installed your machine. Please check it by running node -v and npm -v respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
+- Ember requires Node.js and NPM installed your machine. Please check it by running node -v and npm -v respectively. To get Node.js, go to [Node.js](https://nodejs.org/) website to install it properly.
 
-Follow the steps mentioned [here](https://guides.emberjs.com/release/getting-started/quick-start/) to initiate the project using Ember CLI.
-
-## Installation and including dependencies
-
-To initiate the project using Ember CLI, follow the steps below:
+Find more about `ember-cli` [here](https://guides.emberjs.com/release/getting-started/quick-start/).To initiate an Ember project through `ember-cli`, follow the steps mentioned below:
 
 ```javascript
 npm install -g ember-cli
 ```
 
-Get started and create a new application using the command `ember new`. 
+Get started and create a new application using the command `ember new`.
 
 ```javascript
 ember new my-app
@@ -34,6 +31,8 @@ ember serve
 `my-app` is the working directory where Ember Boilerplate will be installed along with all the utilities and dependencies.
 
 Now, open http://localhost:4200 to see your Ember app.
+
+## Installation and including dependencies
 
 To install `FusionCharts` and the `ember-fusioncharts` component via npm follow the steps below:
 
@@ -130,17 +129,12 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 const myDataSource = {
   // Chart Configuration
   chart: {
-    //Set the chart caption
-    caption: "Countries With Most Oil Reserves [2017-18]",
-    //Set the chart subcaption
-    subCaption: "In MMbbl = One Million barrels",
-    //Set the x-axis name
-    xAxisName: "Country",
-    //Set the y-axis name
-    yAxisName: "Reserves (MMbbl)",
+    caption: "Countries With Most Oil Reserves [2017-18]",    //Set the chart caption
+    subCaption: "In MMbbl = One Million barrels",    //Set the chart subcaption
+    xAxisName: "Country",    //Set the x-axis name
+    yAxisName: "Reserves (MMbbl)",    //Set the y-axis name
     numberSuffix: "K",
-    //Set the theme for your chart
-    theme: "fusion"
+    theme: "fusion"    //Set the theme for your chart
   },
   // Chart Data - from step 2
   data: chartData
