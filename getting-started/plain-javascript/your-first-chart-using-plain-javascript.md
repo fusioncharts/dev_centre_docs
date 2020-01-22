@@ -13,7 +13,7 @@ On this page, we'll see how to install **FusionCharts** library and all the othe
 
 In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
 
-If you choose to install `fusioncharts` package via npm, make sure you have Node.js installed in your system. Make sure you have a bundler like webpack and parcel or have browserify installed in your system. Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm.
+If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js installed in your system. Make sure you have a bundler like webpack and parcel or have browserify installed in your system.
 
 ## Installation and including dependencies
 
@@ -35,6 +35,8 @@ You can install the fusioncharts components by following any of the methods belo
 <div><strong>Get inside the directory using `cd` command as shown below:</strong></div>
 <pre><code class="language-bash">$ cd projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+
+<div> Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm. </div>
 
 <div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
