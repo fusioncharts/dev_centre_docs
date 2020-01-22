@@ -9,7 +9,7 @@ FusionCharts is a JavaScript charting library that lets you create interactive c
 
 In this page, you will see how to install FusionCharts and render a chart using the `angularjs-fusionCharts` directive.
 
->The below instructions are for **Angular v1.7** and below. For **Angular 2** and above, refer to the [Angular2+](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular) guide.
+>The instructions shown here are for **Angular v1.7** and below. For **Angular 2** and above, refer to the [Angular2+](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular) guide.
 
 ## Prerequisite
 
