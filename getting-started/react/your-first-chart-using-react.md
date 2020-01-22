@@ -24,8 +24,7 @@ npm start
 
 `first-fusioncharts-project` is the working directory where React Boilerplate will be installed along with all the utilities and dependencies.
 
-The working directory should contain a `package.json`. If the package is not present, you can create it using the `npm init -y` command.
-{: .alert .alert-info}
+> The working directory should contain a `package.json`. If the package is not present, you can create it using the `npm init -y` command.
 
 Now, open [http://localhost:3000/](http://localhost:3000/) to see your React app.
 

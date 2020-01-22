@@ -66,7 +66,7 @@ FusionCharts.addDep(FusionTheme);
 <div>To install the **FusionCharts** Suite follow the steps below:</div>
 <div>
     <ol>
-        <li>Include the **FusionCharts** JavaScript files from CDN in the html file.</li>
+        <li>Include the **FusionCharts** JavaScript files from CDN in your static **HTML** file.</li>
         <li>Include the theme file.</li>
     </ol>
 </div>
@@ -90,7 +90,7 @@ FusionCharts.addDep(FusionTheme);
         <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
-<div>The code is shown below:</div>
+<div>The code that goes into your static **HTML** file is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Include the fusioncharts core library --&gt;

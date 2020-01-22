@@ -8,15 +8,30 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 On this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
 
+> This guide is for **Angular2** and above. For **Angular v1.7** and below, refer to [this guide](https://www.fusioncharts.com/dev/getting-started/angular/angularjs/your-first-chart-using-angularjs)
+
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`.
+You need to have a Angular project setup before proceeding any further. If not, you can follow the below steps to initiate the project. Angular requires Node.js and NPM installed in your machine. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to [nodejs.org](https://nodejs.org/en/).
 
-- Angular requires Node.js version 10.9.0 or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
+One of the best ways to set up the development environment is using `angular-cli`. Find more about it [here](https://angular.io/guide/setup-local). Install the `angular-cli` with the following command
 
-- To download and install npm packages, you must have an npm package manager. run `npm -v` in a terminal/console window, to check that if have the npm client installed.
+```javascript
+npm install -g @angular/cli
+```
 
-Follow the steps mentioned [here](https://angular.io/guide/setup-local) to initiate the project using Angular CLI.
+Open the terminal, go ahead and enter:
+
+```javascript
+ng new first-fusioncharts-project
+cd first-fusioncharts-project
+ng serve --open
+```
+
+`first-fusioncharts-project` is the working directory where an Angular app will be installed along with all the utilities and dependencies.
+
+Now, open [http://localhost:4200/](http://localhost:4200/) to see your Angular app.
+
 
 ## Installation and Including Dependencies
 
@@ -116,12 +131,12 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 // Chart Configuration
 const dataSource = {
   chart: {
-    caption: "Countries With Most Oil Reserves [2017-18]",
-    subCaption: "In MMbbl = One Million barrels",
-    xAxisName: "Country",
-    yAxisName: "Reserves (MMbbl)",
+    caption: "Countries With Most Oil Reserves [2017-18]",  //Set the chart caption
+    subCaption: "In MMbbl = One Million barrels",  //Set the chart subcaption
+    xAxisName: "Country",  //Set the x-axis name
+    yAxisName: "Reserves (MMbbl)",  //Set the y-axis name
     numberSuffix: "K",
-    theme: "fusion"
+    theme: "fusion"  //Set the theme for your chart
   },
   // Chart Data - from step 2
   "data": chartData

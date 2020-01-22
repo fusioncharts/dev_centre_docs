@@ -8,7 +8,7 @@ FusionCharts is a JavaScript charting library that lets you create interactive c
 
 In this page, you will see how to install FusionCharts and render a chart using the `angularjs-fusionCharts` directive.
 
->This instruction is for Angular v1.3.7 and below. For Angular 2 and above, refer to this [guide](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)
+>This guide is for **Angular v1.7** and below. For **Angular 2** and above, refer to [this guide](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)
 
 ## Prerequisite
 
@@ -27,7 +27,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
+<div class='tab npm-tab'>
 
 <div><strong>To install fusioncharts and the `angularjs-fusioncharts` directive via npm follow the steps below:</strong></div>
 <div>1. Install `angularjs` core library</div>
@@ -69,7 +69,7 @@ Charts(FusionCharts);
         <li>Include the `angularjs-fusioncharts` directive and the theme file.</li>
     </ol>
 </div>
-<div>The consolidated code is shown below:</div>
+<div>The consolidated code which goes into your static **HTML** file is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
@@ -94,7 +94,7 @@ Charts(FusionCharts);
         <li>Include the `angularjs-fusioncharts` directive and the theme file to apply style to the charts.</li>
     </ol>
 </div>
-<div>The consolidated code is shown below:</div>
+<div>The consolidated code which goes into your static **HTML** file is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
@@ -207,7 +207,7 @@ To render the chart, follow the steps given below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab'>
 
-<div class='mt-30'><strong>Step 1:</strong> In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
+<div class='mt-30'>In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
 <pre><code class="language-javascript">
 //  Require AngularJS
 var angular = require('angular');
@@ -262,7 +262,7 @@ $scope.dataSource = dataSource;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-<div class='mt-30'><strong>Step 2:</strong> Specify the chart configurations within the `index.html` file.</div>
+<div class='mt-30'>Specify the chart configurations within the `index.html` file.</div>
 <div>
     <ul>
         <li>Store the chart configurations in a variable (`myApp`).</li>
