@@ -7,10 +7,6 @@
 Map Name: Taiwan
 Dimensions (Width x Height): 440x550
 
-
-
-
-
 ### List of Entities
 
 ID | Short label | Label
@@ -21,7 +17,6 @@ ID | Short label | Label
 04|HH|Hsinchu County
 05|HS|Hsinchu City
 06|HL|Hualien County
-07|KH|Kaohsiung City
 09|CL|Keelung City
 10|KM|Kinmen County
 11|LK|Lienchiang County
@@ -29,10 +24,12 @@ ID | Short label | Label
 13|NT|Nantou County
 14|PH|Penghu County
 15|PT|Pingtung County
-17|TG|Taichung City
-19|TN|Tainan City
+20|TP|New Taipei City
 21|TC|Taipei City
 22|TT|Taitung County
-23|TY|Taoyuan County
+23|TY|Taoyuan City
 24|IL|Yilan County
 25|YL|Yunlin County
+26|TH|Taichung City
+27|KH|Kaohsiung City
+28|TA|Tainan City
