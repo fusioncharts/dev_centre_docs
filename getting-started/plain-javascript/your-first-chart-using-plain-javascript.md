@@ -12,11 +12,7 @@ On this page, we'll see how to install **FusionCharts** library and all the othe
 ## Prerequisite
 
 In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`.
-
-> Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run **npx webpack** command in the terminal to ensure that the build is successful.
-
-Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm.
+If you choose to install `fusioncharts` package via npm, make sure you have Node.js installed in your system. Make sure you have a bundler like webpack and parcel or have browserify installed in your system. Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm.
 
 ## Installation and including dependencies
 
