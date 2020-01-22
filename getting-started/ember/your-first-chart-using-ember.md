@@ -2,6 +2,7 @@
 title: Create a Chart in Ember | FusionCharts
 description: This article outlines the steps to create your first chart, widget and map using the fusionCharts Ember component.
 heading: Create a Chart in Ember Using FusionCharts
+author: sowmya
 ---
 
 The **ember-fusioncharts** component, provide bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.
@@ -10,13 +11,24 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`.
+Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. Please check it by running node -v and npm -v respectively. To get Node.js, go to the [official website](https://nodejs.org/).
 
-- Ember requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
+Find more about `ember-cli` [here](https://guides.emberjs.com/release/getting-started/quick-start/). To initiate an Ember project through `ember-cli`, follow the steps mentioned below:
 
-- To download and install npm packages, you must have an npm package manager. run `npm -v` in a terminal/console window, to check if have the npm client installed.
+```javascript
+npm install -g ember-cli
+```
 
-Follow the steps mentioned [here](https://guides.emberjs.com/release/getting-started/quick-start/) to initiate the project using Ember CLI.
+Get started and create a new application using the command `ember new`.
+
+```javascript
+ember new my-app
+cd my-app
+ember serve
+```
+`my-app` is the working directory where Ember Boilerplate will be installed along with all the utilities and dependencies.
+
+Now, open http://localhost:4200 to see your Ember app.
 
 ## Installation and including dependencies
 
@@ -64,7 +76,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as `data labels` along x-axis and 'No. of oil reserves' as `data values` along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
@@ -115,12 +127,12 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 const myDataSource = {
   // Chart Configuration
   chart: {
-    caption: "Countries With Most Oil Reserves [2017-18]",
-    subCaption: "In MMbbl = One Million barrels",
-    xAxisName: "Country",
-    yAxisName: "Reserves (MMbbl)",
+    caption: "Countries With Most Oil Reserves [2017-18]",    //Set the chart caption
+    subCaption: "In MMbbl = One Million barrels",    //Set the chart subcaption
+    xAxisName: "Country",    //Set the x-axis name
+    yAxisName: "Reserves (MMbbl)",    //Set the y-axis name
     numberSuffix: "K",
-    theme: "fusion"
+    theme: "fusion"    //Set the theme for your chart
   },
   // Chart Data - from step 2
   data: chartData
