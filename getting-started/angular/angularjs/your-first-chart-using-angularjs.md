@@ -9,13 +9,13 @@ FusionCharts is a JavaScript charting library that lets you create interactive c
 
 In this page, you will see how to install FusionCharts and render a chart using the `angularjs-fusionCharts` directive.
 
->This guide is for **Angular v1.7** and below. For **Angular 2** and above, refer to [this guide](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)
+>The below instructions are for **Angular v1.7** and below. For **Angular 2** and above, refer to the [Angular2+](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular) guide.
 
 ## Prerequisite
 
 In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
 
-If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js installed in your system. AngularJS requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
+If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js installed in your system. AngularJS requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to the [official website](https://nodejs.org/).
 
 ## Installation and including dependencies
 

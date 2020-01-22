@@ -13,7 +13,7 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
 
-If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js and NPM installed in your system. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to [Node.js](https://nodejs.org/) website.
+If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js and NPM installed in your system. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/).
 
 ## Installation and including dependencies
 
