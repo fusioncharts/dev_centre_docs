@@ -2,6 +2,7 @@
 title: Create a Chart in AngularJS | FusionCharts
 description: This article outlines the steps to create your first chart, widget and map using the fusionCharts AngularJS component.
 heading: Create a Chart in AngularJS Using FusionCharts
+author: sowmya
 ---
 
 FusionCharts is a JavaScript charting library that lets you create interactive charts, gauges, maps, and dashboards using JavaScript. We have built a simple and lightweight Angularjs directive, which provides bindings for FusionCharts. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any Angularjs project.
@@ -207,7 +208,7 @@ To render the chart, follow the steps given below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab'>
 
-<div class='mt-30'>In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
+<div class='mt-30'><strong>Step 1:</strong> In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
 <pre><code class="language-javascript">
 //  Require AngularJS
 var angular = require('angular');
@@ -262,7 +263,7 @@ $scope.dataSource = dataSource;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-<div class='mt-30'>Specify the chart configurations within the `index.html` file.</div>
+<div class='mt-30'><strong>Step 2:</strong> Specify the chart configurations within the `index.html` file.</div>
 <div>
     <ul>
         <li>Store the chart configurations in a variable (`myApp`).</li>

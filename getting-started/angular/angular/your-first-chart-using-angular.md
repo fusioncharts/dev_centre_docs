@@ -2,6 +2,7 @@
 title: Create a Chart in Angular Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the angular-fusioncharts component.
 heading: Create a Chart in Angular Using FusionCharts
+author: sowmya
 ---
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight Angular component which provides bindings for FusionCharts. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any Angular project.
@@ -12,7 +13,9 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Prerequisite
 
-You need to have a Angular project setup before proceeding any further. If not, you can follow the below steps to initiate the project. Angular requires Node.js and NPM installed in your machine. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to [nodejs.org](https://nodejs.org/en/).
+You need to have a Angular project setup before proceeding any further. If not, you can follow the below steps to initiate the project. 
+
+Angular requires Node.js and NPM installed in your machine. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to [nodejs.org](https://nodejs.org/en/).
 
 One of the best ways to set up the development environment is using `angular-cli`. Find more about it [here](https://angular.io/guide/setup-local). Install the `angular-cli` with the following command
 
@@ -148,7 +151,7 @@ const dataSource = {
 
 Get ready to render your first chart finally with the steps below:
 
-**Step 1**: Specify the chart data within the AppComponent class in `src/app/app.component.ts` file in your root project folder.
+Specify the chart data within the AppComponent class in `src/app/app.component.ts` file in your root project folder.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -203,7 +206,7 @@ export class AppComponent {
 }
 ```
 
-**Step 2**: Now using the fusioncharts component create the chart container in `app.component.html` and set the `width`, `height`, `type` attributes as shown.
+Now using the fusioncharts component create the chart container in `app.component.html` and set the `width`, `height`, `type` attributes as shown.
 
 ```html
 <h1>
