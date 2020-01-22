@@ -4,7 +4,7 @@ description: List of changes made in recent release.
 heading: FusionExport Release Notes
 ---
 
-<h2 class="sub-heading">Version: 1.2.2</h2>
+<h2 class="sub-heading">Version 1.2.2</h2>
 
 <p class="release-date">20th January 2020</p>
 
