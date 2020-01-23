@@ -85,81 +85,63 @@ Since we are plotting a single dataset, let us create a column 2D chart with 'Co
 
 FusionCharts accepts the data in **JSON** format. So, we first add the data in index.aspx.cs (C#) / index.aspx.vb (VB) file and then convert into the JSON format.
 
-C#
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-```
-
+<div class='tab csharp-tab active'>
+<pre><code class="language-javascript">
 //store label-value pair
-
-            var dataValuePair = new List<KeyValuePair<string, double>>();
-
-            dataValuePair.Add(new KeyValuePair<string, double>("Venezuela", 290));
-
-            dataValuePair.Add(new KeyValuePair<string, double>("Saudi", 260));
-
-            dataValuePair.Add(new KeyValuePair<string, double>("Canada", 180));
-
-            dataValuePair.Add(new KeyValuePair<string, double>("Iran", 140));
-
-            dataValuePair.Add(new KeyValuePair<string, double>("Russia", 115));
-
-            dataValuePair.Add(new KeyValuePair<string, double>("UAE", 100));
-
-            dataValuePair.Add(new KeyValuePair<string, double>("US", 30));
-
-            dataValuePair.Add(new KeyValuePair<string, double>("China", 30));
+var dataValuePair = new List<KeyValuePair<string, double>>();
+dataValuePair.Add(new KeyValuePair<string, double>("Venezuela", 290));
+dataValuePair.Add(new KeyValuePair<string, double>("Saudi", 260));
+dataValuePair.Add(new KeyValuePair<string, double>("Canada", 180));
+dataValuePair.Add(new KeyValuePair<string, double>("Iran", 140));
+dataValuePair.Add(new KeyValuePair<string, double>("Russia", 115));
+dataValuePair.Add(new KeyValuePair<string, double>("UAE", 100));
+dataValuePair.Add(new KeyValuePair<string, double>("US", 30));
+dataValuePair.Add(new KeyValuePair<string, double>("China", 30));
 
 StringBuilder data = new StringBuilder();
 
- data.Append("'data':[");
+data.Append("'data':[");
+foreach (KeyValuePair<string, double> pair in dataValuePair) {
+data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value);
+}
+data.Replace(",", "]", data.Length - 1, 1);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-            foreach (KeyValuePair<string, double> pair in dataValuePair)
+</pre>
+</div>
 
-            {
-
-                data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value);
-
-            }
-
-            data.Replace(",", "]", data.Length - 1, 1);
-
-```
-
-VB
-
-```
-
+<div class='tab vb-tab'>
+<pre><code class="language-javascript">
 Dim dataValuePair As New Dictionary(Of String, Double)
-
-    dataValuePair.Add("Venezuela", 290)
-
-    dataValuePair.Add("Saudi", 260)
-
-    dataValuePair.Add("Canada", 180)
-
-    dataValuePair.Add("Iran", 140)
-
-    dataValuePair.Add("Russia", 115)
-
-    dataValuePair.Add("UAE", 100)
-
-    dataValuePair.Add("US", 30)
-
-    dataValuePair.Add("China", 30)
+dataValuePair.Add("Venezuela", 290)
+dataValuePair.Add("Saudi", 260)
+dataValuePair.Add("Canada", 180)
+dataValuePair.Add("Iran", 140)
+dataValuePair.Add("Russia", 115)
+dataValuePair.Add("UAE", 100)
+dataValuePair.Add("US", 30)
+dataValuePair.Add("China", 30)
 
 Dim data As New StringBuilder
-
 data.Append("'data':[")
-
 For Each pair In dataValuePair
-
 data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value)
-
 Next
-
 data.Replace(",", "]", data.Length - 1, 1)
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-```
+</pre>
+</div>
+
+</div>
+</div>
 
 ### Configure your Chart
 
@@ -167,105 +149,96 @@ Now that the data's ready, you are ready to work on styling, positioning and giv
 
 **Step 1:** In the `index.aspx` file, we first include the Fusioncharts Javascript files to apply style to the chart.
 
-CDN
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-```
-
+<div class='tab cdn-tab active'>
+<pre><code class="language-html">
 // Include FusionCharts core file
-
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
 
 // Include FusionCharts Theme file
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+</pre>
+</div>
 
-```
-
-Local Files
-
-```
-
+<div class='tab local-tab'>
+<pre><code class="language-html">
 // Include FusionCharts core file
-
-<script type="text/javascript" src="Script/fusioncharts.js"></script>
+&lt;script type="text/javascript" src="Script/fusioncharts.js"&gt;&lt;/script&gt;
 
 // Include FusionCharts Theme file
+&lt;script type="text/javascript" src="Script/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-    <script type="text/javascript" src="Script/themes/fusioncharts.theme.fusion.js"></script>
+</pre>
+</div>
 
-```
+</div>
+</div>
 
 **Step 2:** Add the chart attributes in index.aspx.cs(C#) / index.aspx.vb (VB) file. FusionCharts accepts data in JSON format, so we convert these attributes into JSON format.
 
-C#
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-```
-
- Dictionary<string, string> chartConfig = new Dictionary<string, string>();
-
-            chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]");
-
-            chartConfig.Add("subCaption", "In MMbbl = One Million barrels");
-
-            chartConfig.Add("xAxisName", "Country");
-
-            chartConfig.Add("yAxisName", "Reserves (MMbbl)");
-
-            chartConfig.Add("numberSuffix", "k");
-
-            chartConfig.Add("theme", "fusion");
+<div class='tab csharp-tab active'>
+<pre><code class="language-javascript">
+Dictionary<string, string> chartConfig = new Dictionary<string, string>();
+chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]");
+chartConfig.Add("subCaption", "In MMbbl = One Million barrels");
+chartConfig.Add("xAxisName", "Country");
+chartConfig.Add("yAxisName", "Reserves (MMbbl)");
+chartConfig.Add("numberSuffix", "k");
+chartConfig.Add("theme", "fusion");
 
 StringBuilder jsonData = new StringBuilder();
 
 // json data to use as chart data source
-
 jsonData.Append("{'chart':{");
+foreach (var config in chartConfig) {
+jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
+}
+jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-            foreach (var config in chartConfig)
+</pre>
+</div>
 
-            {
-
-                jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
-
-            }
-
-            jsonData.Replace(",", "},", jsonData.Length - 1, 1);
-
-```
-
-VB
-
-```
-
+<div class='tab vb-tab'>
+<pre><code class="language-javascript">
 Dim chartConfig As New Dictionary(Of String, String)
-
-    chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]")
-
-    chartConfig.Add("subCaption", "In MMbbl = One Million barrels")
-
-    chartConfig.Add("xAxisName", "Country")
-
-    chartConfig.Add("yAxisName", "Reserves (MMbbl)")
-
-    chartConfig.Add("numberSuffix", "k")
-
-    chartConfig.Add("theme", "fusion")
+chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]")
+chartConfig.Add("subCaption", "In MMbbl = One Million barrels")
+chartConfig.Add("xAxisName", "Country")
+chartConfig.Add("yAxisName", "Reserves (MMbbl)")
+chartConfig.Add("numberSuffix", "k")
+chartConfig.Add("theme", "fusion")
 
 Dim jsonData As New StringBuilder
-
 'json data to use as chart data source
-
 jsonData.Append("{'chart':{")
-
 For Each config In chartConfig
-
 jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
-
 Next
-
 jsonData.Replace(",", "},", jsonData.Length - 1, 1)
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-```
+</pre>
+</div>
+
+</div>
+</div>
 
 ## Create Your Chart
 
@@ -273,213 +246,128 @@ Let's create a Column 2D Chart using the `asp-net-wrapper` showing "Countries wi
 
 The `index.aspx.cs`(C#) / `index.aspx.vb`(VB) file will have the `chart constructor`, `attributes` and the `datasource` required to render the chart. The consolidated code is shown below:
 
-C#
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-```
-
+<div class='tab csharp-tab active'>
+<pre><code class="language-javascript">
 using System;
-
 using System.Collections.Generic;
-
 using System.Text;
-
 using FusionCharts.Charts;
-
-namespace FusionChartsProject
-
-{
-
-    public partial class index : System.Web.UI.Page
-
-    {
-
-        protected void Page_Load(object sender, EventArgs e)
-
-        {
-
+namespace FusionChartsProject {
+    public partial class index : System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e) {
             //store label-value pair
-
             var dataValuePair = new List<KeyValuePair<string, double>>();
-
             dataValuePair.Add(new KeyValuePair<string, double>("Venezuela", 290));
-
             dataValuePair.Add(new KeyValuePair<string, double>("Saudi", 260));
-
             dataValuePair.Add(new KeyValuePair<string, double>("Canada", 180));
-
             dataValuePair.Add(new KeyValuePair<string, double>("Iran", 140));
-
             dataValuePair.Add(new KeyValuePair<string, double>("Russia", 115));
-
             dataValuePair.Add(new KeyValuePair<string, double>("UAE", 100));
-
             dataValuePair.Add(new KeyValuePair<string, double>("US", 30));
-
             dataValuePair.Add(new KeyValuePair<string, double>("China", 30));
-
             StringBuilder jsonData = new StringBuilder();
-
             StringBuilder data = new StringBuilder();
 
             // store chart config name-config value pair
-
             Dictionary<string, string> chartConfig = new Dictionary<string, string>();
-
             chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]");
-
             chartConfig.Add("subCaption", "In MMbbl = One Million barrels");
-
             chartConfig.Add("xAxisName", "Country");
-
             chartConfig.Add("yAxisName", "Reserves (MMbbl)");
-
             chartConfig.Add("numberSuffix", "k");
-
             chartConfig.Add("theme", "fusion");
 
             // json data to use as chart data source
-
             jsonData.Append("{'chart':{");
-
-            foreach (var config in chartConfig)
-
-            {
-
+            foreach (var config in chartConfig) {
                 jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
-
             }
-
             jsonData.Replace(",", "},", jsonData.Length - 1, 1);
 
             // build  data object from label-value pair
-
             data.Append("'data':[");
-
-            foreach (KeyValuePair<string, double> pair in dataValuePair)
-
-            {
-
+            foreach (KeyValuePair<string, double> pair in dataValuePair) {
                 data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value);
-
             }
-
             data.Replace(",", "]", data.Length - 1, 1);
-
             jsonData.Append(data.ToString());
-
             jsonData.Append("}");
 
             //Create chart instance
-
             // charttype, chartID, width, height, data format, data
-
             Chart MyFirstChart = new Chart("column2d", "first_chart", "800", "550", "json", jsonData.ToString());
 
             // render chart
-
             Literal1.Text = MyFirstChart.Render();
-
         }
-
     }
 
 }
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-```
+</pre>
+</div>
 
-VB
-
-```
-
+<div class='tab vb-tab'>
+<pre><code class="language-javascript">
 Imports FusionCharts.Charts
-
-   Public Class index
-
-    Inherits System.Web.UI.Page
-
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
- 'store label-value pair
-
-    Dim dataValuePair As New Dictionary(Of String, Double)
-
-    dataValuePair.Add("Venezuela", 290)
-
-    dataValuePair.Add("Saudi", 260)
-
-    dataValuePair.Add("Canada", 180)
-
-    dataValuePair.Add("Iran", 140)
-
-    dataValuePair.Add("Russia", 115)
-
-    dataValuePair.Add("UAE", 100)
-
-    dataValuePair.Add("US", 30)
-
-    dataValuePair.Add("China", 30)
-
-    Dim jsonData As New StringBuilder
-
-    Dim data As New StringBuilder
-
-    'store chart config name-config value pair
-
-    Dim chartConfig As New Dictionary(Of String, String)
-
-    chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]")
-
-    chartConfig.Add("subCaption", "In MMbbl = One Million barrels")
-
-    chartConfig.Add("xAxisName", "Country")
-
-    chartConfig.Add("yAxisName", "Reserves (MMbbl)")
-
-    chartConfig.Add("numberSuffix", "k")
-
-    chartConfig.Add("theme", "fusion")
-
+Public Class index
+Inherits System.Web.UI.Page
+Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+'store label-value pair
+Dim dataValuePair As New Dictionary(Of String, Double)
+dataValuePair.Add("Venezuela", 290)
+dataValuePair.Add("Saudi", 260)
+dataValuePair.Add("Canada", 180)
+dataValuePair.Add("Iran", 140)
+dataValuePair.Add("Russia", 115)
+dataValuePair.Add("UAE", 100)
+dataValuePair.Add("US", 30)
+dataValuePair.Add("China", 30)
+Dim jsonData As New StringBuilder
+Dim data As New StringBuilder
+'store chart config name-config value pair
+Dim chartConfig As New Dictionary(Of String, String)
+chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]")
+chartConfig.Add("subCaption", "In MMbbl = One Million barrels")
+chartConfig.Add("xAxisName", "Country")
+chartConfig.Add("yAxisName", "Reserves (MMbbl)")
+chartConfig.Add("numberSuffix", "k")
+chartConfig.Add("theme", "fusion")
 'json data to use as chart data source
-
 jsonData.Append("{'chart':{")
-
 For Each config In chartConfig
-
 jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
-
 Next
-
 jsonData.Replace(",", "},", jsonData.Length - 1, 1)
-
 'build data object from label-value pair
-
 data.Append("'data':[")
-
 For Each pair In dataValuePair
-
 data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value)
-
 Next
-
 data.Replace(",", "]", data.Length - 1, 1)
-
 jsonData.Append(data.ToString())
-
 jsonData.Append("}")
+'Create chart instance
+'charttype, chartID, width, height, data format, data
+Dim MyFirstChart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
+Literal1.Text = MyFirstChart.Render()
+End Sub
+End Class
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-    'Create chart instance
+</pre>
+</div>
 
-    'charttype, chartID, width, height, data format, data
-
-     Dim MyFirstChart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
-
-     Literal1.Text = MyFirstChart.Render()
-
-     End Sub
-
-     End Class
-
-```
+</div>
+</div>
 
 The index.aspx file will have HTML template, which includes the Javascript files and container for the chart. The HTML template is shown below:
 
