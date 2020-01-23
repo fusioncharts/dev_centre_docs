@@ -55,7 +55,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-method-setBinning",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -115,7 +115,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-method-getBinning",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -145,7 +145,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-method-setcurrentBin",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -175,7 +175,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-method-getCurrentBin",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -205,7 +205,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "time-selection-API-methods",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -235,7 +235,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "time-selection-API-methods",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -265,7 +265,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-method-resizeto",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -286,11 +286,7 @@
 			}],
 			"shortDescription": "",
 			"info": "",
-			"example": {
-				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
-				"_renderBtn": true
-			},
+
 			"tags": {},
 			"syntax": "FusionCharts.ready(function() {\r\n\tvar myChart = new FusionCharts({\r\n\t\ttype: \"timeseries\",\r\n    \trenderAt: \"container\",\r\n\t\twidth: \"100%\",\r\n\t\theight: 400,\r\n\t\tid: \"chart1\",\r\n\t\tdataSource: {}\r\n\t}).render();\r\n​\r\n\t//Locking the automatic percentage-based resizing. If resize is already locked, sending false unlocks it.\r\n\tmyChart.lockResize(true);\r\n});"
 		},
@@ -473,7 +469,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-method-batchExport",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -692,7 +688,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-method-clone",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -728,7 +724,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-method-ready",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -979,7 +975,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-method-configure",
 				"_renderBtn": true
 			},
 			"tags": {},
