@@ -314,7 +314,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-getSVGString",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -492,7 +492,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"_slug": "fusiontime-event-beforeRender",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -522,7 +522,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"_slug": "fusiontime-event-beforeRender",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -545,7 +545,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-getChartAttribute",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -575,7 +575,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-setChartAttribute",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -605,7 +605,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-addEventListener",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -635,7 +635,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-removeEventListener",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -658,7 +658,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-getObjectReference",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -747,7 +747,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"_slug": "fusiontime-event-beforeRender",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -765,7 +765,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-hasRendered",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -795,7 +795,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-print",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -855,7 +855,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-exportChart",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -891,7 +891,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-showChartMessage",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -927,7 +927,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-render",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -945,7 +945,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"slug": "fusiontime-event-dispose",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -993,7 +993,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "fusiontime-event-beforeRender",
+				"_slug": "fusiontime-event-beforeRender",
 				"_renderBtn": true
 			},
 			"tags": {},
