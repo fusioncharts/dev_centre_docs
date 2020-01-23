@@ -371,93 +371,72 @@ End Class
 
 The index.aspx file will have HTML template, which includes the Javascript files and container for the chart. The HTML template is shown below:
 
-C#
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-```
+<div class='tab csharp-tab active'>
+<pre><code class="language-html">
+&lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="FusionChartsProject.index" %&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
+&lt;head runat="server"&gt;
+    &lt;title&gt;fusioncharts&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;div style="text-align:center"&gt;
+        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="FusionChartsProject.index" %>
+<div class='tab vb-tab'>
+<pre><code class="language-html">
+&lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.vb" Inherits="FusionChartsProject.index" %&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
+&lt;head runat="server"&gt;
+    &lt;title&gt;fusioncharts&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;div style="text-align:center"&gt;
+        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-<!DOCTYPE html>
+</pre>
+</div>
 
-<html xmlns=" http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-
-    <title>fusioncharts</title>
-
-</head>
-
-<body>
-
-   <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-    <div style="text-align:center">
-
-        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-
-    </div>
-
-</body>
-
-</html>
-
-```
-
-VB
-
-```
-
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.vb" Inherits="FusionChartsProject.index" %>
-
-<!DOCTYPE html>
-
-<html xmlns=" http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-
-    <title>fusioncharts</title>
-
-</head>
-
-<body>
-
-   <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-
-    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-    <div style="text-align:center">
-
-        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-
-    </div>
-
-</body>
-
-</html>
-
-```
+</div>
+</div>
 
 For Local files, you can include the Javascript files in the above code from the `script` folder, as follows:
 
-```
-
+```javascript
 // Include FusionCharts core file
-
 <script type="text/javascript" src="Script/fusioncharts.js"></script>
 
 // Include FusionCharts Theme file
-
-    <script type="text/javascript" src="Script/themes/fusioncharts.theme.fusion.js"></script>
-
+<script type="text/javascript" src="Script/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
 ## Render the Chart
 
 With the container for the chart created in `index.aspx` file, click on run and you'll be redirected to [http://127.0.0.1:8080/](http://127.0.0.1:8080/) , and you'll be able to see the chart as shown below:
 
-<<<chart appears here>>>
+{% embed_chart getting-started-your-first-chart.js %}
 
 If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
