@@ -40,8 +40,8 @@
                   "annotationName": "Time Axis",
                   "annotationDesc": "Time Axis refers to a line on a chart that runs horizontally (left to right). Learn more about it ",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "16%",
-                  "topPosition": "84%",
+                  "leftPosition": "97%",
+                  "topPosition": "61%",
                   "annotationLinks": [{
                      "linkDesc": "",
                      "linkPath": "/chart-guide/chart-configurations/axes"
@@ -49,20 +49,11 @@
                },
                {
                   "annotationNumber": "4",
-                  "annotationName": "Time Axis Title",
-                  "annotationDesc": "It refers to title of the time axis. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "14.5%",
-                  "topPosition": "31.5%",
-                  "annotationLinks": []
-               },
-               {
-                  "annotationNumber": "5",
                   "annotationName": "Time Markers",
                   "annotationDesc": "Time markers are the names of the data points that are displayed on the time axis of a chart. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
-                  "leftPosition": "72%",
-                  "topPosition": "89.5%",
+                  "leftPosition": "75.5%",
+                  "topPosition": "65%",
                   "annotationLinks": []
                },
                {
@@ -106,8 +97,8 @@
                   "annotationName": "Time Navigator",
                   "annotationDesc": "It lets you narrow the focus to a specific time period without losing context of the entire data. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
-                  "leftPosition": "2%",
-                  "topPosition": "48%",
+                  "leftPosition": "4%",
+                  "topPosition": "75%",
                   "annotationLinks": []
                },
                {
@@ -115,8 +106,8 @@
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/tool-tips",
-                  "leftPosition": "53%",
-                  "topPosition": "43.5%",
+                  "leftPosition": "63.5%",
+                  "topPosition": "55%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of a tooltip. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
