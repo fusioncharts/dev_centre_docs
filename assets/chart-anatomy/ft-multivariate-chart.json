@@ -57,7 +57,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "6",
+                  "annotationNumber": "5",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to a line on a chart that runs vertically (up-down) through zero. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
@@ -66,7 +66,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "7",
+                  "annotationNumber": "6",
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "It refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
@@ -75,7 +75,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "8",
+                  "annotationNumber": "7",
                   "annotationName": "Standard Range Selector",
                   "annotationDesc": "It refers to the selector for standard time periods. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
@@ -84,7 +84,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "9",
+                  "annotationNumber": "8",
                   "annotationName": "Custom Range Selector",
                   "annotationDesc": "It refers to the selector for custom time periods. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
@@ -93,7 +93,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "10",
+                  "annotationNumber": "9",
                   "annotationName": "Time Navigator",
                   "annotationDesc": "It lets you narrow the focus to a specific time period without losing context of the entire data. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
@@ -102,7 +102,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "11",
+                  "annotationNumber": "10",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/tool-tips",
