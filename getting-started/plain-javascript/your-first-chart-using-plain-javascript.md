@@ -41,6 +41,16 @@ You can install the fusioncharts components by following any of the methods belo
 <div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+
+<div><strong>To install the latest webpack release, run the following command:</strong></div>
+<pre><code class="language-bash">npm install --save-dev webpack</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div><strong>If you're using webpack v4 or later, you'll also need to install the CLI</strong></div>
+<pre><code class="language-bash">npm install --save-dev webpack-cli</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+
 <div>After installing the fusioncharts components, you can replace the code in `index.js` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
 <pre><code class="language-javascript">
 // Include the core fusioncharts file from core
@@ -61,6 +71,16 @@ FusionCharts.addDep(FusionTheme);
 </pre>
 
 </div>
+
+<div>Now we'll create the following directory structure, files and their contents:</div>
+
+- Create an `src` folder inside webpack directory. Within the src folder, create an  `index.js` file.
+
+- Create a `dist` folder inside the webpack directory. Within the dist folder, create an `index.html` file.
+
+The directory structure will look like this:
+
+<img src="{% site.BASE_URL %}/images/plain-javascript-folder-structure.png" width="250" height="350" alt="Plain Javascript Folder Structure">
 
 <div class='tab cdn-tab active'>
 <div>To install the **FusionCharts** Suite follow the steps below:</div>
