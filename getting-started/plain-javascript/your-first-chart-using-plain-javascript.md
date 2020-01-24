@@ -28,21 +28,13 @@ You can install the fusioncharts components by following any of the methods belo
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab'>
 
-<div><strong>Create a project folder using the following command:
+<div><strong>Create a project folder using the following command:</strong></div>
 
-```javascript
+<pre><code class="language-bash">
 $ mkdir projectName
 $ cd projectName
-```
-
-<!-- </strong></div>
-<pre><code class="language-bash">$ mkdir projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-<!-- 
-<div><strong>Get inside the directory using `cd` command as shown below:</strong>
-</div>
-<pre><code class="language-bash">$ cd projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre> -->
 
 <!-- <div> Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm. </div> -->
 
