@@ -74,7 +74,6 @@ import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
 </pre>
 
 <div class='tab cdn-tab active'>
@@ -95,7 +94,7 @@ FusionCharts.addDep(FusionTheme);
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-</div>
+
 
 <div class='tab localfiles-tab'>
 <div><strong>To install the <strong>FusionCharts</strong> Suite follow the steps below:</strong>
