@@ -46,15 +46,26 @@ You can install the fusioncharts components by following any of the methods belo
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
 </div>
 
 <div class='tab local-tab'>
 <pre><code class="language-javascript">
-
+<div><strong>To install the <strong>FusionCharts</strong> Suite follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the <strong>FusionCharts</strong> JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
+    </ol>
+</div>
+<div>The code that goes into your static <strong>HTML</strong> file is shown below:</div>
+<pre><code class="language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 2 - Include the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
 </pre>
 </div>
 
