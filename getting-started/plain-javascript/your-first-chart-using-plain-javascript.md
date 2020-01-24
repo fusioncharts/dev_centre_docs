@@ -28,14 +28,21 @@ You can install the fusioncharts components by following any of the methods belo
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab'>
 
-<div><strong>Create a project folder using the following command:</strong></div>
+<div><strong>Create a project folder using the following command:
+
+```javascript
+$ mkdir projectName
+$ cd projectName
+```
+
+<!-- </strong></div>
 <pre><code class="language-bash">$ mkdir projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-
+<!-- 
 <div><strong>Get inside the directory using `cd` command as shown below:</strong>
 </div>
 <pre><code class="language-bash">$ cd projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
+</pre> -->
 
 <!-- <div> Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm. </div> -->
 
@@ -47,6 +54,16 @@ You can install the fusioncharts components by following any of the methods belo
 <div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+
+Now we'll create the following directory structure, files and their contents:
+
+- Create an `src` folder inside webpack directory. Within the src folder, create an  `index.js` file.
+
+- Create a `dist` folder inside the webpack directory. Within the dist folder, create an `index.html` file.
+
+The directory structure will look like this:
+
+<img src="{% site.BASE_URL %}/images/plain-javascript-folder-structure.png" width="250" height="350" alt="Plain Javascript Folder Structure">
 
 <div>After installing the fusioncharts components, you can replace the code in `index.js` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
 
@@ -67,17 +84,6 @@ FusionCharts.addDep(FusionTheme);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-
-Now we'll create the following directory structure, files and their contents:
-
-- Create an `src` folder inside webpack directory. Within the src folder, create an  `index.js` file.
-
-- Create a `dist` folder inside the webpack directory. Within the dist folder, create an `index.html` file.
-
-The directory structure will look like this:
-
-<img src="{% site.BASE_URL %}/images/plain-javascript-folder-structure.png" width="250" height="350" alt="Plain Javascript Folder Structure">
-
 </div>
 
 <div class='tab cdn-tab active'>
