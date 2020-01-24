@@ -26,49 +26,33 @@ You can install the fusioncharts components by following any of the methods belo
     <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
+
 <div class='tab npm-tab'>
-
 <div><strong>Create a project folder using the following command:</strong></div>
-
 <pre><code class="language-bash">
 $ mkdir projectName
 $ cd projectName
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-
-<!-- <div> Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm. </div> -->
-
-
 <div><strong>To install the latest webpack release, run the following command:</strong></div>
 <pre><code class="language-bash">npm install webpack webpack-cli --save-dev</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-
 <div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-
 <div>Now we'll create the following directory structure, files and their contents:</div>
-
 - Create an `src` folder inside project directory. Within the src folder, create an  `index.js` file.
-
 - Create a `dist` folder inside the project directory. Within the dist folder, create an `index.html` file.
-
 <div>The directory structure will look like this:</div>
-
 <img src="{% site.BASE_URL %}/images/plain-javascript-folder-structure.png" width="250" height="350" alt="Plain Javascript Folder Structure">
-
 <div>After installing the fusioncharts components, you can replace the code in `index.js` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.</div>
-
 <pre><code class="language-javascript">
 // Include the core fusioncharts file from core
 import FusionCharts from 'fusioncharts/core';
-
 // Include the chart from viz folder
 import Column2D from 'fusioncharts/viz/column2d';
-
 // Include the fusion theme
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
-
 // Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
