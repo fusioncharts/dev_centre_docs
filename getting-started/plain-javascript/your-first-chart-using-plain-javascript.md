@@ -108,8 +108,6 @@ FusionCharts.addDep(Column2D);
 FusionCharts.addDep(FusionTheme);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
 </div>
 
 </div>
