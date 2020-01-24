@@ -114,6 +114,7 @@ FusionCharts.addDep(FusionTheme);
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</div>
 
 </div>
 </div>
