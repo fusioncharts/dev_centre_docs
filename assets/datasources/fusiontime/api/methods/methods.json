@@ -205,7 +205,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "time-selection-API-methods",
+				"slug": "fusiontime-method-setTimeSelection",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -235,7 +235,7 @@
 			"info": "",
 			"example": {
 				"header": "Example",
-				"slug": "time-selection-API-methods",
+				"slug": "fusiontime-method-getTimeSelection",
 				"_renderBtn": true
 			},
 			"tags": {},
