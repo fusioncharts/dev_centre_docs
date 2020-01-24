@@ -6,7 +6,7 @@
 			"description": "Overrides the binning rules followed by the chart with the binning rules provided to this API. If some time unit is missing from the input binning rules, then the default multipliers for that time unit will be used by the chart. If any incorrect multipliers are provided to a unit, they will be ignored.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "setBinning Parameters",
 				"subparams": [{
 						"name": "millisecond",
 						"type": ["number"],
@@ -66,7 +66,7 @@
 			"description": "Returns the binning rules that are being followed by the chart. If any custom binning rules are in effect, the returned rules will take into account the modifications made by them as well.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "getBinning Parameters",
 				"subparams": [{
 						"name": "millisecond",
 						"type": ["number"],
@@ -126,7 +126,7 @@
 			"description": "Sets the provided unit and multiplier as the current binning in the chart by adjusting spread of time on the focus canvases. The provided multiplier must be a valid multiplier for the given time unit (as per the currently active binning rules in the chart). If it is not, then there is no visible effect of calling this method. If the multiplier is not provided, it is assumed to be 1. If the unit is not provided, there should be no visible effect of calling this method.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "setCurrentBin Parameters",
 				"subparams": [{
 						"name": "unit",
 						"type": ["string"],
@@ -156,7 +156,7 @@
 			"description": "Provides information about the binning applied in the chart when the method was invoked.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "getCurrentBin Parameters",
 				"subparams": [{
 						"name": "unit",
 						"type": ["string"],
@@ -186,7 +186,7 @@
 			"description": "Updates the start and end time of the time selection on the focus canvases. This will also result in a change across all of the chart’s components accordingly.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "setTimeSelection Parameters",
 				"subparams": [{
 						"name": "start",
 						"type": ["string"],
@@ -216,7 +216,7 @@
 			"description": "Provides start and end UNIX timestamps of the visible window of the time axis.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "getTimeSelection Parameters",
 				"subparams": [{
 						"name": "start",
 						"type": ["string"],
@@ -246,7 +246,7 @@
 			"description": "Resizes the chart to the specified width and height. The values for the width and height are passed, in pixels or percentage, as parameters to this function. If the function is called without any parameters, it __returns__ the current value of the chart width and height. \n\n This function is useful in controlling the chart dimensions based on changes in the dimensions of a resizable dialog box. It is also useful in resizing charts for responsive layouts, based on device orientation change. \n\n \n\n >When the chart dimensions are set in percentage, the chart partially redraws itself when the chart container is resized. The chart uses a very low-profile polling, at an interval of __300 ms__ to check whether the container has effectively resized. \n\n",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "resizeTo Parameters",
 				"subparams": [{
 						"name": "width",
 						"type": ["number", "percent"],
@@ -276,7 +276,7 @@
 			"description": "Allows users to controls whether the chart will be dynamically resizable or not when rendered using percent height and width.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "lockResize Parameters",
 				"subparams": [{
 					"name": "state",
 					"type": ["boolean"],
@@ -295,7 +295,7 @@
 			"description": "Returns the SVG string of a chart. This function can be called only after the chart has rendered.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "getSVGString Parameters",
 				"subparams": [{
 						"name": "callBackFN( svgString )",
 						"type": ["getSVGString-callBack"],
@@ -325,7 +325,7 @@
 			"description": "Exports multiple charts in a single image. This method either takes __no arguments__ or takes __an object as an argument__. \r\r",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "batchExport Parameters",
 				"subparams": [{
 						"name": "imageWidth",
 						"type": ["number"],
@@ -480,7 +480,7 @@
 			"description": "Fetches the data set when a chart has been rendered.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "getChartData Parameters",
 				"subparams": [{
 					"name": "format",
 					"type": ["dataFormats"],
@@ -503,7 +503,7 @@
 			"description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionTime constructor. \n\n",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "setChartData Parameters",
 				"subparams": [{
 						"name": "data",
 						"type": ["string", "object"],
@@ -533,7 +533,7 @@
 			"description": "Fetches value of chart attributes explicitly applied to the root `chart` object (or the `<chart>` node element).",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "getChartAttribute Parameters",
 				"subparams": [{
 					"name": "attribute",
 					"type": ["string", "array"],
@@ -556,7 +556,7 @@
 			"description": "Updates a chart's attributes with a new attribute-value pair, thus updating the chart's data definition root (the `<chart>` node in the XML data or the `chart` object in the JSON data).",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "setChartAttribute Parameters",
 				"subparams": [{
 						"name": "attributes",
 						"type": ["object", "string"],
@@ -586,7 +586,7 @@
 			"description": "Used to attach an event to the chart.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "addEventListener Parameters",
 				"subparams": [{
 						"name": "type",
 						"type": ["string", "array"],
@@ -616,7 +616,7 @@
 			"description": "Used to remove an event attached to the chart.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "removeEventListener Parameters",
 				"subparams": [{
 						"name": "type",
 						"type": ["string", "array"],
@@ -646,7 +646,7 @@
 			"description": "Return the DOM element created by FusionTime in which charts will be rendered `<span>`",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "getObjectReference Parameters",
 				"subparams": [{
 					"name": "id",
 					"type": ["string"],
@@ -669,7 +669,7 @@
 			"description": "Creates a copy of a chart instance, creating a new chart with identical construction properties of the chart being cloned. The cloned chart, assigned an auto-generated ID, is rendered in a container DOM element that is explicitly provided.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "clone Parameters",
 				"subparams": [{
 						"name": "overrides",
 						"type": ["object"],
@@ -699,7 +699,7 @@
 			"description": "Accepts a function as an argument and that is executed by FusionTime when the page is ready (library loaded, DOM elements rendered).",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "ready Parameters",
 				"subparams": [{
 						"name": "readyCallback",
 						"type": ["readyCallback"],
@@ -735,7 +735,7 @@
 			"description": "Determines whether a chart will render properly with the data set and returns true or false.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "dataReady Parameters",
 				"subparams": [{
 					"name": "available",
 					"type": ["boolean"],
@@ -758,7 +758,7 @@
 			"description": "Returns true if the chart has rendered successfully, false if it has not.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "hasRendered Parameters",
 				"subparams": []
 			}],
 			"shortDescription": "",
@@ -776,7 +776,7 @@
 			"description": "Prints individual charts. It hides all elements on a page except the chart to print and then invokes the page printing function (`window.print()`).",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "print Parameters",
 				"subparams": [{
 						"name": "options",
 						"type": ["object"],
@@ -806,7 +806,7 @@
 			"description": "Exports a chart as an image or as a PDF document.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "exportChart Parameters",
 				"subparams": [{
 						"name": "options",
 						"type": ["object"],
@@ -866,7 +866,7 @@
 			"description": "Shows a text message on a chart.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "showChartMessage Parameters",
 				"subparams": [{
 						"name": "text",
 						"type": ["string"],
@@ -902,7 +902,7 @@
 			"description": "Renders a chart inside a container element on a page. If the chart is already rendered, it can be re-rendered inside the same container DOM element or a different element.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "render Parameters",
 				"subparams": [{
 						"name": "containerElement",
 						"type": ["string", "DOMElement"],
@@ -938,7 +938,7 @@
 			"description": "Disposes a chart completely, when called on an instance of FusionCharts. This clears the entire chart object and removes it from the DOM tree structure. When the chart is successfully disposed, `chartInstance.disposed` is set to __true__.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "Dispose Parameters",
 				"subparams": []
 			}],
 			"shortDescription": "",
@@ -956,7 +956,7 @@
 			"description": "Configures status messages that are displayed while rendering a chart. For example, while a chart's data is being fetched from a remote URL, the chart will display the message __Retrieving data. Please wait.__ ",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "configure Parameters",
 				"subparams": [{
 						"name": "option",
 						"type": ["chartStatusMessages"],
@@ -986,7 +986,7 @@
 			"description": "Adds data to the chart in real-time.",
 			"params": [{
 				"name": "Name",
-				"header": "Header",
+				"header": "FeedData Parameters",
 				"subparams": []
 			}],
 			"shortDescription": "",
