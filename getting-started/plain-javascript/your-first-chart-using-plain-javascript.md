@@ -79,10 +79,10 @@ FusionCharts.addDep(FusionTheme);
 </div>
 
 <div class='tab cdn-tab active'>
-<div>To install the **FusionCharts** Suite follow the steps below:</div>
+<div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
 <div>
     <ol>
-        <li>Include the **FusionCharts** JavaScript files from CDN in your static **HTML** file.</li>
+        <li>Include the <strong>FusionCharts</strong> JavaScript files from CDN in your static <strong>HTML</strong> file.</li>
         <li>Include the theme file.</li>
     </ol>
 </div>
@@ -99,15 +99,15 @@ FusionCharts.addDep(FusionTheme);
 </div>
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** Suite follow the steps below:</strong>
+<div><strong>To install the <strong>FusionCharts</strong> Suite follow the steps below:</strong>
 </div>
 <div>
     <ol>
-        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
+        <li>Include the <strong>FusionCharts</strong> JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
         <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
-<div>The code that goes into your static **HTML** file is shown below:</div>
+<div>The code that goes into your static <strong>HTML</strong> file is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
@@ -116,8 +116,6 @@ FusionCharts.addDep(FusionTheme);
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-
-<div>
 
 </div>
 </div>
