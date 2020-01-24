@@ -88,8 +88,8 @@
                   "annotationName": "Custom Range Selector",
                   "annotationDesc": "It refers to the selector for custom time periods. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
-                  "leftPosition": "2%",
-                  "topPosition": "48%",
+                  "leftPosition": "78%",
+                  "topPosition": "7%",
                   "annotationLinks": []
                },
                {
