@@ -6,6 +6,8 @@ heading: Create Multivariate Chart
 
 In FusionTime, you can create a chart with multiple canvases showing different measures in each canvas.
 
+{% embed_chartAnatomy ft-multivariate-chart.json %}
+
 In this article, we will create a multivariate chart showcasing the database of the Global SuperStore. The chart contains multiple columns with measures (**Sales, Quantity, Shipping cost**) rendered on separate canvases. All the three canvases share the same [time axis](/fusiontime/fusiontime-component/time-axis) (X-axis).
 
 The multivariate chart will look as shown below:
