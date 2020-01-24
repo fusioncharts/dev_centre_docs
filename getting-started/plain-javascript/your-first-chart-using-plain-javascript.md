@@ -76,7 +76,7 @@ FusionCharts.addDep(FusionTheme);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-
+</div>
 
 <div class='tab cdn-tab active'>
 <div>To install the **FusionCharts** Suite follow the steps below:</div>
@@ -96,9 +96,11 @@ FusionCharts.addDep(FusionTheme);
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+</div>
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** Suite follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** Suite follow the steps below:</strong>
+</div>
 <div>
     <ol>
         <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
@@ -115,9 +117,11 @@ FusionCharts.addDep(FusionTheme);
 &lt;/head&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+<div>
 
 </div>
 </div>
+
 
 That completes the installation of `FusionCharts` Suite.
 
