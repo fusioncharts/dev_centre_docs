@@ -55,13 +55,13 @@ $ cd projectName
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
 
-Now we'll create the following directory structure, files and their contents:
+<div>Now we'll create the following directory structure, files and their contents:</div>
 
 - Create an `src` folder inside project directory. Within the src folder, create an  `index.js` file.
 
 - Create a `dist` folder inside the project directory. Within the dist folder, create an `index.html` file.
 
-The directory structure will look like this:
+<div>The directory structure will look like this:</div>
 
 <img src="{% site.BASE_URL %}/images/plain-javascript-folder-structure.png" width="250" height="350" alt="Plain Javascript Folder Structure">
 
@@ -84,7 +84,7 @@ FusionCharts.addDep(FusionTheme);
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-</div>
+
 
 <div class='tab cdn-tab active'>
 <div>To install the **FusionCharts** Suite follow the steps below:</div>
