@@ -57,9 +57,9 @@ $ cd projectName
 
 Now we'll create the following directory structure, files and their contents:
 
-- Create an `src` folder inside webpack directory. Within the src folder, create an  `index.js` file.
+- Create an `src` folder inside project directory. Within the src folder, create an  `index.js` file.
 
-- Create a `dist` folder inside the webpack directory. Within the dist folder, create an `index.html` file.
+- Create a `dist` folder inside the project directory. Within the dist folder, create an `index.html` file.
 
 The directory structure will look like this:
 
