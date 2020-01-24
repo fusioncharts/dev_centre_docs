@@ -61,8 +61,8 @@
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to a line on a chart that runs vertically (up-down) through zero. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
-                  "leftPosition": "8%",
-                  "topPosition": "5.5%",
+                  "leftPosition": "6%",
+                  "topPosition": "27%",
                   "annotationLinks": []
                },
                {
@@ -70,8 +70,8 @@
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "It refers to the title of the y-axis. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
-                  "leftPosition": "2%",
-                  "topPosition": "48%",
+                  "leftPosition": "0%",
+                  "topPosition": "54%",
                   "annotationLinks": []
                },
                {
@@ -79,8 +79,8 @@
                   "annotationName": "Standard Range Selector",
                   "annotationDesc": "It refers to the selector for standard time periods. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#y-axis-position",
-                  "leftPosition": "2%",
-                  "topPosition": "48%",
+                  "leftPosition": "14%",
+                  "topPosition": "7%",
                   "annotationLinks": []
                },
                {
