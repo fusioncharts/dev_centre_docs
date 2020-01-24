@@ -28,7 +28,6 @@ You can install the fusioncharts components by following any of the methods belo
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="language-javascript">
 <div>To install the <strong>FusionCharts</strong> Suite follow the steps below:</div>
 <div>
     <ol>
@@ -49,7 +48,6 @@ You can install the fusioncharts components by following any of the methods belo
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="language-javascript">
 <div><strong>To install the <strong>FusionCharts</strong> Suite follow the steps below:</strong></div>
 <div>
     <ol>
@@ -70,7 +68,6 @@ You can install the fusioncharts components by following any of the methods belo
 </div>
 
 <div class='tab npm-tab'>
-<pre><code class="language-javascript">
 <div><strong>Create a project folder using the following command:</strong></div>
 <pre><code class="language-bash">
 $ mkdir projectName
