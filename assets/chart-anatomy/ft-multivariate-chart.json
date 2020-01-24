@@ -4,7 +4,7 @@
    "content": {
       "header": "In the sections below, you can find interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
-            "_itemHeader": "Chart with Single Series",
+            "_itemHeader": "Multivariate Chart",
             "imgSrc": "ft-multivariate-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
