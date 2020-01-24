@@ -2,6 +2,7 @@
 title: Create a Chart Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the plain javascript.
 heading: Create a Chart Using FusionCharts
+author: sowmya
 ---
 
 **FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
@@ -10,11 +11,9 @@ On this page, we'll see how to install **FusionCharts** library and all the othe
 
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from **CDN** or **Local Files**.
+In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
 
-> Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run **npx webpack** command in the terminal to ensure that the build is successful.
-
-Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a javascript project through npm.
+If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js installed in your system. Make sure you have a bundler like webpack and parcel or have browserify installed in your system.
 
 ## Installation and including dependencies
 
@@ -36,6 +35,8 @@ You can install the fusioncharts components by following any of the methods belo
 <div><strong>Get inside the directory using `cd` command as shown below:</strong></div>
 <pre><code class="language-bash">$ cd projectName</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+
+<div> Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a Javascript project through npm. </div>
 
 <div><strong>Now, to install the `fusioncharts` package via npm run the command below:</strong></div>
 <pre><code class="language-bash">$ npm install fusioncharts</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
@@ -65,7 +66,7 @@ FusionCharts.addDep(FusionTheme);
 <div>To install the **FusionCharts** Suite follow the steps below:</div>
 <div>
     <ol>
-        <li>Include the **FusionCharts** JavaScript files from CDN in the html file.</li>
+        <li>Include the **FusionCharts** JavaScript files from CDN in your static **HTML** file.</li>
         <li>Include the theme file.</li>
     </ol>
 </div>
@@ -89,7 +90,7 @@ FusionCharts.addDep(FusionTheme);
         <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
-<div>The code is shown below:</div>
+<div>The code that goes into your static **HTML** file is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Include the fusioncharts core library --&gt;
@@ -121,7 +122,7 @@ Let's create a chart showing the "Countries With Most Oil Reserves". The data of
 | US        | 30K                 |
 | China     | 30K                 |
 
-Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as `data labels` along the x-axis and 'No. of oil reserves' as `data values` along y-axis. Let us prepare the data for a single-series chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along the x-axis and 'No. of oil reserves' as **data values** along y-axis. Let us prepare the data for a single-series chart.
 
 FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
 
@@ -170,29 +171,19 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 ```javascript
 // Chart Configuration
 const chartConfigs = {
-  //Set the chart type
-    type: "column2d",
-    //Set the container object
-    renderAt: 'chart-container',
-    //Set the chart width
-    width: "100%",
-    //Set the chart height
-    height: "400",
-    //Set the type of data
-    dataFormat: "json",
+    type: "column2d",            //Set the chart type
+    renderAt: 'chart-container', //Set the container object
+    width: "100%",               //Set the chart width
+    height: "400",               //Set the chart height
+    dataFormat: "json",          //Set the type of data
     dataSource: {
         "chart": {
-          //Set the chart caption
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-          //Set the chart subcaption
-            "subCaption": "In MMbbl = One Million barrels",
-          //Set the x-axis name
-            "xAxisName": "Country",
-          //Set the y-axis name
-            "yAxisName": "Reserves (MMbbl)",
+            "caption": "Countries With Most Oil Reserves [2017-18]", //Set the chart caption
+            "subCaption": "In MMbbl = One Million barrels",          //Set the chart subcaption
+            "xAxisName": "Country",          //Set the x-axis name
+            "yAxisName": "Reserves (MMbbl)", //Set the y-axis name
             "numberSuffix": "K",
-          //Set the theme for your chart
-            "theme": "fusion",
+            "theme": "fusion",               //Set the theme for your chart
         },
         // Chart Data from Step 2
         "data": chartData
@@ -371,7 +362,7 @@ chartInstance.render();
   &lt;/head&gt;
   &lt;body&gt;
     &lt;div id="chart-container"&gt;Fusioncharts will render here&lt;/div&gt;
-    &lt;script src="main.js"&gt;&lt;/script&gt;
+    &lt;script src="index.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>

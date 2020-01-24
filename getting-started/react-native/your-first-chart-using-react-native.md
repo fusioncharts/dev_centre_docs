@@ -9,6 +9,7 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 ## Prerequisite
 
 We are assuming that you are having a react-native project up and running. If not, follow the steps [here](https://facebook.github.io/react-native/docs/getting-started) to get started with your react-native project setup.<br/>
+
 **NOTE:** Install react-native-webview if not present already.
 
 ## Installation and Including Dependencies
@@ -274,21 +275,23 @@ const chartData = [
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
 ```javascript
-// Chart Configuration
-const chartConfig = {
-  type: "column2d",
-  width: "100%",
-  height: "400",
-  dataFormat: "json",
+// Create a JSON object to store the chart configurations
+const chartConfigs = {
+  type: "column2d", // The chart type
+  width: "700", // Width of the chart
+  height: "400", // Height of the chart
+  dataFormat: "json", // Data type
   dataSource: {
+    // Chart Configuration
     chart: {
-      caption: "Countries With Most Oil Reserves [2017-18]",
-      subCaption: "In MMbbl = One Million barrels",
-      xAxisName: "Country",
-      yAxisName: "Reserves (MMbbl)",
+      caption: "Countries With Most Oil Reserves [2017-18]",    //Set the chart caption
+      subCaption: "In MMbbl = One Million barrels",             //Set the chart subcaption
+      xAxisName: "Country",           //Set the x-axis name
+      yAxisName: "Reserves (MMbbl)",  //Set the y-axis name
       numberSuffix: "K",
-      theme: "fusion"
+      theme: "fusion"                 //Set the theme for your chart
     },
+    // Chart Data - from step 2
     data: chartData
   }
 };

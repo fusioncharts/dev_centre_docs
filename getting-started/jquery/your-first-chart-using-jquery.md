@@ -2,6 +2,7 @@
 title: Create a Chart in jQuery | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the jquery-fusioncharts component.
 heading: Create a Chart in jQuery Using FusionCharts
+author: sowmya
 ---
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight jQuery plugin which provides bindings for FusionCharts. The `jquery-fusioncharts` plugin allows you to easily add rich and interactive charts to any jQuery project.
@@ -10,14 +11,9 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from **CDN** or **Local Files**.
+In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
 
-- jQuery requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
-
-
-> Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `npx webpack` command in the terminal to ensure that the build is successful.
-
-Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a jQuery project through npm.
+If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js and NPM installed in your system. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/).
 
 ## Installation and including dependencies
 
@@ -64,6 +60,7 @@ Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/
 </div>
 
 <div class='tab npm-tab'>
+<div class='mt-30'>Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a jQuery project through npm.</div>
 <div class='mt-30'>You can install the `jquery-fusioncharts` and `fusioncharts` components through npm as shown below</div>
 <pre><code class="language-javascript">
     $ npm install jquery-fusioncharts fusioncharts --save
@@ -156,26 +153,17 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 ```javascript
 // Chart Configuration
 const chartConfigs = {
-    //Set the chart type
-    type: "column2d",
-    //Set the chart width
-    width: "700",
-    //Set the chart height
-    height: "400",
-    //Set the type of data
-    dataFormat: "json",
+    type: "column2d",    //Set the chart type
+    width: "700",        //Set the chart width
+    height: "400",       //Set the chart height
+    dataFormat: "json",  //Set the type of data
     chart: {
-        //Set the chart caption
-        caption: "Countries With Most Oil Reserves [2017-18]",
-        //Set the chart subcaption
-        subCaption: "In MMbbl = One Million barrels",
-        //Set the x-axis name
-        xAxisName: "Country",
-        //Set the y-axis name
-        yAxisName: "Reserves (MMbbl)",
+        caption: "Countries With Most Oil Reserves [2017-18]",   //Set the chart caption
+        subCaption: "In MMbbl = One Million barrels",            //Set the chart subcaption
+        xAxisName: "Country",                 //Set the x-axis name
+        yAxisName: "Reserves (MMbbl)",        //Set the y-axis name
         numberSuffix: "K",
-        //Set the theme for your chart
-        theme: "fusion"
+        theme: "fusion"                       //Set the theme for your chart
     },
     // Chart Data - from step 2
     "data": chartData
