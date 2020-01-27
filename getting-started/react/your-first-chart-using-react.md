@@ -2,6 +2,7 @@
 title: Your First Chart in React using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the react-fusioncharts component.
 heading: Create a Chart in React using FusionCharts
+author: sowmya
 ---
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight React component that provides bindings for FusionCharts. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any React project.
@@ -130,12 +131,12 @@ const chartConfigs = {
   dataSource: {
     // Chart Configuration
     chart: {
-      caption: "Countries With Most Oil Reserves [2017-18]",
-      subCaption: "In MMbbl = One Million barrels",
-      xAxisName: "Country",
-      yAxisName: "Reserves (MMbbl)",
+      caption: "Countries With Most Oil Reserves [2017-18]",    //Set the chart caption
+      subCaption: "In MMbbl = One Million barrels",             //Set the chart subcaption
+      xAxisName: "Country",           //Set the x-axis name
+      yAxisName: "Reserves (MMbbl)",  //Set the y-axis name
       numberSuffix: "K",
-      theme: "fusion"
+      theme: "fusion"                 //Set the theme for your chart
     },
     // Chart Data - from step 2
     data: chartData

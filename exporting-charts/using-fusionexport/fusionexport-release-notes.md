@@ -4,6 +4,26 @@ description: List of changes made in recent release.
 heading: FusionExport Release Notes
 ---
 
+<h2 class="sub-heading">Version 1.2.2</h2>
+
+<p class="release-date">20th January 2020</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- **Announcement & notification from CLI:** Starting v1.2.2, we will start showing any new product release in the command line itself, so that you are always equipped with the latest version of FusionExport.
+
+- **Support for memory stream as output:** You can now get exported output as a stream and work with it.
+
+- All the SDKs are updated with these new changes.
+
+<h4>Improvements</h4>
+
+- **Better Package Management:** For better onboarding, we have changed the package structure to include examples and readme files.
+
+<h4>Fixes</h4>
+
+- **Dependency issues:** In the previous release, we included all the dependencies in the build itself. However, it led to a few issues while executing FusionExport. We have resolved that issue.
+
 <h2 class="sub-heading">Version 1.2.1</h2>
 
 <p class="release-date">28th August 2019</p>

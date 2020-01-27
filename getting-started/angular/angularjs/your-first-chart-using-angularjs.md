@@ -2,23 +2,20 @@
 title: Create a Chart in AngularJS | FusionCharts
 description: This article outlines the steps to create your first chart, widget and map using the fusionCharts AngularJS component.
 heading: Create a Chart in AngularJS Using FusionCharts
+author: sowmya
 ---
 
 FusionCharts is a JavaScript charting library that lets you create interactive charts, gauges, maps, and dashboards using JavaScript. We have built a simple and lightweight Angularjs directive, which provides bindings for FusionCharts. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any Angularjs project.
 
 In this page, you will see how to install FusionCharts and render a chart using the `angularjs-fusionCharts` directive.
 
+>The instructions shown here are for **Angular v1.7** and below. For **Angular 2** and above, refer to the [Angular2+](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular) guide.
+
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. You can skip this step and proceed on if you are including the dependencies from CDN or Local Files.
+In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
 
-- AngularJS requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to [nodejs.org](https://nodejs.org/).
-
-- To download and install npm packages, you must have an npm package manager. Run `npm -v` in a terminal/console window, to check that if have the npm client installed.
-
-> Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `npx webpack` command in the terminal to ensure that the build is successful.
-
-Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a project through npm.
+If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js installed in your system. AngularJS requires Node.js version **10.9.0** or later. To check your version, run `node -v` in a terminal/console window. To get Node.js, go to the [official website](https://nodejs.org/).
 
 ## Installation and including dependencies
 
@@ -26,19 +23,20 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='localfiles'>Local Files</a></li>
+    <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
+<div class='tab npm-tab'>
 
 <div><strong>To install fusioncharts and the `angularjs-fusioncharts` directive via npm follow the steps below:</strong></div>
 <div>1. Install `angularjs` core library</div>
 <pre><code class="language-javascript">
-    $ npm install angular
+    $ npm install angular@1.7.9
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 </pre>
+<div>Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a project through npm.</div>
 <div>2. Install `angularjs-fusioncharts` and `fusioncharts` packages</div>
 <pre><code class="language-javascript">
 	$ npm install angularjs-fusioncharts fusioncharts --save
@@ -63,17 +61,16 @@ Charts(FusionCharts);
 </pre>
 </div>
 
-<div class='tab cdn-tab'>
+<div class='tab cdn-tab active'>
 <div><strong>To install the FusionCharts package and the `angularjs-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
         <li>Include the **FusionCharts** JavaScript files from CDN.</li>
-        <li>Include the `angularjs-fusioncharts` directive.</li>
-        <li>Include the theme file.</li>
+        <li>Include the `angularjs-fusioncharts` directive and the theme file.</li>
     </ol>
 </div>
-<div>The consolidated code is shown below:</div>
+<div>The consolidated code which goes into your static **HTML** file is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
@@ -95,11 +92,10 @@ Charts(FusionCharts);
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
         <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</li>
-        <li>Include the `angularjs-fusioncharts` directive.</li>
-        <li>Include the FusionCharts theme file to apply style to the charts.</li>
+        <li>Include the `angularjs-fusioncharts` directive and the theme file to apply style to the charts.</li>
     </ol>
 </div>
-<div>The consolidated code is shown below:</div>
+<div>The consolidated code which goes into your static **HTML** file is shown below:</div>
 <pre><code class="language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
@@ -185,12 +181,12 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 // Chart Configurations
 const dataSource = {
     chart: {
-        caption: "Countries With Most Oil Reserves [2017-18]",
-        subCaption: "In MMbbl = One Million barrels",
-        xAxisName: "Country",
-        yAxisName: "Reserves (MMbbl)",
+        caption: "Countries With Most Oil Reserves [2017-18]", //Set the chart caption
+        subCaption: "In MMbbl = One Million barrels", //Set the chart subcaption
+        xAxisName: "Country", //Set the x-axis name
+        yAxisName: "Reserves (MMbbl)", //Set the y-axis name
         numberSuffix: "K",
-        theme: "fusion",
+        theme: "fusion", //Set the theme for your chart
         },
         // Chart Data - from step 2
         "data": chartData
@@ -205,12 +201,12 @@ To render the chart, follow the steps given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
     <li><a data-toggle='localfiles'>Local Files</a></li>
+    <li><a data-toggle='npm'>NPM</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
+<div class='tab npm-tab'>
 
 <div class='mt-30'><strong>Step 1:</strong> In `index.js` include the necessary files and import the fusioncharts dependency. The consolidated code is shown below:</div>
 <pre><code class="language-javascript">
@@ -299,7 +295,7 @@ $scope.dataSource = dataSource;
 <div class='mt-30'><strong>Step 3:</strong> Run `npx webpack` command in the terminal. Once the build is successful, open the `index.html` file to see your chart.</div>
 </div>
 
-<div class='tab cdn-tab'>
+<div class='tab cdn-tab active'>
 <pre><code class="language-javascript">
 &lt;html&gt;
 &lt;head&gt;

@@ -2,20 +2,44 @@
 title: Create a Chart in Angular Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the angular-fusioncharts component.
 heading: Create a Chart in Angular Using FusionCharts
+author: sowmya
 ---
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight Angular component which provides bindings for FusionCharts. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any Angular project.
 
 On this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
 
+> The instructions shown here are for **Angular2** and above. For **Angular v1.7** and below, refer to the [AngularJS](https://www.fusioncharts.com/dev/getting-started/angular/angularjs/your-first-chart-using-angularjs) guide.
+
 ## Prerequisite
 
-Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`.
+You need to have a Angular project setup before proceeding any further. If not, you can follow the below steps to initiate the project. 
 
+Angular requires Node.js and NPM installed in your machine. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/en/).
+
+One of the best ways to set up the development environment is using `angular-cli`. Find more about it [here](https://angular.io/guide/setup-local). Install the `angular-cli` with the following command
+
+```javascript
+npm install -g @angular/cli
+```
+
+Open the terminal, go ahead and enter:
+
+```javascript
+ng new first-fusioncharts-project
+cd first-fusioncharts-project
+ng serve --open
+```
+
+<<<<<<< HEAD
 - Angular requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
 
+=======
+`first-fusioncharts-project` is the working directory where an Angular app will be installed along with all the utilities and dependencies.
 
-Follow the steps mentioned [here](https://angular.io/guide/setup-local) to initiate the project using Angular CLI.
+Now, open [http://localhost:4200/](http://localhost:4200/) to see your Angular app.
+>>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
+
 
 ## Installation and Including Dependencies
 
@@ -115,12 +139,12 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 // Chart Configuration
 const dataSource = {
   chart: {
-    caption: "Countries With Most Oil Reserves [2017-18]",
-    subCaption: "In MMbbl = One Million barrels",
-    xAxisName: "Country",
-    yAxisName: "Reserves (MMbbl)",
+    caption: "Countries With Most Oil Reserves [2017-18]",  //Set the chart caption
+    subCaption: "In MMbbl = One Million barrels",  //Set the chart subcaption
+    xAxisName: "Country",  //Set the x-axis name
+    yAxisName: "Reserves (MMbbl)",  //Set the y-axis name
     numberSuffix: "K",
-    theme: "fusion"
+    theme: "fusion"  //Set the theme for your chart
   },
   // Chart Data - from step 2
   "data": chartData
