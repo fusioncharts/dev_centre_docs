@@ -5,7 +5,7 @@
       "header": "In the sections below, you can find interactive annotated images describing various components and concepts of charts",
       "contentGroup": [{
             "_itemHeader": "Chart with Single Series",
-            "imgSrc": "chart-with-single-series-img.png",
+            "imgSrc": "ft-column-chart.png",
             "annotations": [{
                   "annotationNumber": "1",
                   "annotationName": "Caption",
