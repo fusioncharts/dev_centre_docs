@@ -106,8 +106,8 @@
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "71%",
-                  "topPosition": "84%",
+                  "leftPosition": "29%",
+                  "topPosition": "83%",
                   "annotationLinks": [
                     {
                       "linkDesc": "You can customize look and feel of legend like increase/decrease legend icon size, define custom legend icons, legend scroll etc. Learn more about it ",
@@ -128,8 +128,8 @@
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point. Learn more about it ",
                   "annotationDescLinkPath": "/chart-guide/chart-configurations/tool-tips",
-                  "leftPosition": "63.5%",
-                  "topPosition": "55%",
+                  "leftPosition": "63%",
+                  "topPosition": "53%",
                   "annotationLinks": [{
                         "linkDesc": "You can customize padding, size and other properties of a tooltip. Learn more about it ",
                         "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
