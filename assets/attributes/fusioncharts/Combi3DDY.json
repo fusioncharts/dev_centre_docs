@@ -3669,7 +3669,7 @@
         "name": "displayValue"
       },
       {
-        "description": "For combination charts, you can define the color of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its color at \"set\" level using this attribute. ",
+        "description": "For combination charts, you can define the color of datasets at dataset level. However, if you wish to highlight a particular data element, you can specify its color at \"set\" level using this attribute. \n\n __Note:__ This attribute is not applicable on spline data plots.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "color"

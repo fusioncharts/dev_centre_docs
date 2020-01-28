@@ -3182,7 +3182,7 @@
         "name": "seriesName"
       },
       {
-        "description": "This attribute sets the color using which columns, lines, area of that dataset will be drawn. For column chart, you can specify a list of comma separated hex codes to get a gradient plot",
+        "description": "This attribute sets the color using which columns, lines, area of that dataset will be drawn. For column chart, you can specify a list of comma separated hex codes to get a gradient plot.  \n\n __Note:__ This attribute is not applicable on spline data plots.",
         "range": "Hex Color Code",
         "type": "Color",
         "name": "color"
