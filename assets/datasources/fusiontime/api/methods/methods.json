@@ -760,11 +760,7 @@
 		{
 			"name": "hasRendered",
 			"description": "Returns true if the chart has rendered successfully, false if it has not.",
-			"params": [{
-				"name": "Name",
-				"header": "hasRendered Parameters",
-				"subparams": []
-			}],
+
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -987,7 +983,12 @@
 			"params": [{
 				"name": "Name",
 				"header": "FeedData Parameters",
-				"subparams": []
+				"subparams": [{
+					"name": "stream",
+					"type": ["string"],
+					"description": "Real-time data for charts and gauges.",
+					"defaultvalue": ""
+				}]
 			}],
 			"shortDescription": "",
 			"info": "",
