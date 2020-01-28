@@ -940,11 +940,7 @@
 		{
 			"name": "Dispose",
 			"description": "Disposes a chart completely, when called on an instance of FusionCharts. This clears the entire chart object and removes it from the DOM tree structure. When the chart is successfully disposed, `chartInstance.disposed` is set to __true__.",
-			"params": [{
-				"name": "Name",
-				"header": "Dispose Parameters",
-				"subparams": []
-			}],
+
 			"shortDescription": "",
 			"info": "",
 			"example": {
