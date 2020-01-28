@@ -4,7 +4,7 @@ description: This article defines the plot types suported in FusionTime.
 heading: Plot Types
 ---
 
-FusionTime supports three types of data structures - single-series, multivariate, and multi-series. In the chart anatomy provided below, you can see the components of a multivariate chart.
+FusionTime supports three types of data structures - single-series, multivariate, and multi-series. In the chart anatomy provided below, you can see the components of a single-series line chart.
 
 {% embed_chartAnatomy ft-single-series-chart.json %}
 
