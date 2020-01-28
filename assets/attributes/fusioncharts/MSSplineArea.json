@@ -2914,12 +2914,6 @@
         "name": "anchorStartAngle"
       },
       {
-        "description": "This attribute sets the color using which columns, lines, area of that data-set would be drawn. For column chart, you can specify a list of comma separated hex codes to get a gradient plot",
-        "range": "Hex Color Code",
-        "type": "Color",
-        "name": "color"
-      },
-      {
         "description": "Whether to draw anchors for a particular dataset.",
         "range": "0/1",
         "type": "Boolean",
