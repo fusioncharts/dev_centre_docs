@@ -24,7 +24,7 @@
                   "topPosition": "12%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
-                     "linkPath": "/chart-guide/chart-configurations/data-plot"
+                     "linkPath": "/fusiontime/fusiontime-component/plot-types-in-fusiontime"
                   }]
                },
                {
@@ -39,8 +39,8 @@
                {
                   "annotationNumber": "4",
                   "annotationName": "Time Markers",
-                  "annotationDesc": "Time markers are the names of the data points that are displayed on the time axis of a chart. Learn more about them ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
+                  "annotationDesc": "Time markers are the names of the data points that are displayed on the time axis of a chart",
+                  "annotationDescLinkPath": null,
                   "leftPosition": "75.5%",
                   "topPosition": "65%",
                   "annotationLinks": [{
