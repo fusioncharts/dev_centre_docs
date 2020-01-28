@@ -6,7 +6,7 @@ heading: Plot Types
 
 FusionTime supports three types of data structures - single-series, multivariate, and multi-series. In the chart anatomy provided below, you can see the components of a multivariate chart.
 
-{% embed_chartAnatomy ft-multivariate-chart.json %}
+{% embed_chartAnatomy ft-single-series-chart.json %}
 
 Once you select the data structure that suits your data the best, you can choose the best plot type to go with it. The plot type of a chart refers to a line in a line chart, a column in a column chart, area in an area chart, etc.
 
