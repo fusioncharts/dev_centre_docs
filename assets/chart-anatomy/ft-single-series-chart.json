@@ -41,7 +41,7 @@
                   "annotationName": "Time Markers",
                   "annotationDesc": "Time markers are the names of the data points that are displayed on the time axis of a chart",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "75.5%",
+                  "leftPosition": "75%",
                   "topPosition": "58.5%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way time markers look. Learn more about their usage ",
@@ -53,8 +53,8 @@
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to a line on a chart that runs vertically (up-down) through zero. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/y-axis-in-fusiontime",
-                  "leftPosition": "6%",
-                  "topPosition": "27%",
+                  "leftPosition": "12%",
+                  "topPosition": "12%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way the Y-axis looks. Learn more about it ",
                      "linkPath": "/fusiontime/fusiontime-component/y-axis-in-fusiontime#style-definition"
@@ -65,8 +65,8 @@
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "It refers to the title of the y-axis. You can customize it using Style Definition. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/y-axis-in-fusiontime#style-definition",
-                  "leftPosition": "-2%",
-                  "topPosition": "32%",
+                  "leftPosition": "3%",
+                  "topPosition": "35%",
                   "annotationLinks": []
                },
                {
