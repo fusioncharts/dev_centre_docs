@@ -31,9 +31,14 @@ cd first-fusioncharts-project
 ng serve --open
 ```
 
+<<<<<<< HEAD
+- Angular requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
+
+=======
 `first-fusioncharts-project` is the working directory where an Angular app will be installed along with all the utilities and dependencies.
 
 Now, open [http://localhost:4200/](http://localhost:4200/) to see your Angular app.
+>>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
 
 
 ## Installation and Including Dependencies
@@ -191,11 +196,16 @@ export class AppComponent {
     // STEP 3 - Chart Configuration
     const dataSource = {
       chart: {
+        //Set the chart caption
         caption: "Countries With Most Oil Reserves [2017-18]",
+         //Set the chart subcaption
         subCaption: "In MMbbl = One Million barrels",
+         //Set the x-axis name
         xAxisName: "Country",
+         //Set the y-axis name
         yAxisName: "Reserves (MMbbl)",
         numberSuffix: "K",
+         //Set the theme for your chart
         theme: "fusion"
       },
       // Chart Data - from step 2
