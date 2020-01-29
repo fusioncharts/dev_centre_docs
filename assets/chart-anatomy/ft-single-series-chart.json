@@ -61,7 +61,7 @@
                   }]
                },
                {
-                  "annotationNumber": "5",
+                  "annotationNumber": "6",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to a line on a chart that runs vertically (up-down) through zero. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/y-axis-in-fusiontime",
@@ -73,7 +73,7 @@
                   }]
                },
                {
-                  "annotationNumber": "6",
+                  "annotationNumber": "7",
                   "annotationName": "Y-Axis Title",
                   "annotationDesc": "It refers to the title of the y-axis. You can customize it using Style Definition. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/y-axis-in-fusiontime#style-definition",
@@ -82,7 +82,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "7",
+                  "annotationNumber": "8",
                   "annotationName": "Standard Range Selector",
                   "annotationDesc": "It refers to the selector for standard time periods. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/standard-range-selector",
@@ -91,7 +91,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "8",
+                  "annotationNumber": "9",
                   "annotationName": "Custom Range Selector",
                   "annotationDesc": "It refers to the selector for custom time periods. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/custom-range-selector",
@@ -100,7 +100,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "11",
+                  "annotationNumber": "10",
                   "annotationName": "Reference Zone",
                   "annotationDesc": "Reference zones help you identify data plots that fall within a particular range of data values. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/reference-zone-in-fusiontime",
@@ -118,7 +118,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "9",
+                  "annotationNumber": "12",
                   "annotationName": "Time Navigator",
                   "annotationDesc": "It lets you narrow the focus to a specific time period without losing context of the entire data. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/time-navigator",
@@ -127,7 +127,7 @@
                   "annotationLinks": []
                },
                {
-                  "annotationNumber": "10",
+                  "annotationNumber": "13",
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
@@ -144,7 +144,7 @@
                     }]
                 },
               {
-                  "annotationNumber": "11",
+                  "annotationNumber": "14",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/tooltip-in-fusiontime",
