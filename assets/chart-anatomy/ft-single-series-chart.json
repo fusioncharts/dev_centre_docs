@@ -53,8 +53,8 @@
                   "annotationName": "Data Markers",
                   "annotationDesc": "Data markers are the names of the data points that are displayed on the chart plot.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "75%",
-                  "topPosition": "58.5%",
+                  "leftPosition": "23%",
+                  "topPosition": "18.5%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way time markers look. Learn more about their usage ",
                      "linkPath": "/fusiontime/fusiontime-component/data-markers"
@@ -104,8 +104,8 @@
                   "annotationName": "Reference Zone",
                   "annotationDesc": "Reference zones help you identify data plots that fall within a particular range of data values. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/reference-zone-in-fusiontime",
-                  "leftPosition": "72.5%",
-                  "topPosition": "16%",
+                  "leftPosition": "91.5%",
+                  "topPosition": "34%",
                   "annotationLinks": []
                },
                {
@@ -113,8 +113,8 @@
                   "annotationName": "Crossline",
                   "annotationDesc": "Cross line is a vertical line/area used as a quick reference for data plots. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/crossline-in-fusiontime",
-                  "leftPosition": "72.5%",
-                  "topPosition": "16%",
+                  "leftPosition": "37.5%",
+                  "topPosition": "28%",
                   "annotationLinks": []
                },
                {
