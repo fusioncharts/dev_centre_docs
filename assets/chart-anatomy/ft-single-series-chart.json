@@ -74,8 +74,8 @@
                   "annotationName": "Standard Range Selector",
                   "annotationDesc": "It refers to the selector for standard time periods. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/standard-range-selector",
-                  "leftPosition": "15%",
-                  "topPosition": "7%",
+                  "leftPosition": "23%",
+                  "topPosition": "8%",
                   "annotationLinks": []
                },
                {
@@ -83,8 +83,8 @@
                   "annotationName": "Custom Range Selector",
                   "annotationDesc": "It refers to the selector for custom time periods. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/custom-range-selector",
-                  "leftPosition": "72%",
-                  "topPosition": "7%",
+                  "leftPosition": "62%",
+                  "topPosition": "8%",
                   "annotationLinks": []
                },
                {
@@ -92,8 +92,8 @@
                   "annotationName": "Time Navigator",
                   "annotationDesc": "It lets you narrow the focus to a specific time period without losing context of the entire data. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/time-navigator",
-                  "leftPosition": "4%",
-                  "topPosition": "72%",
+                  "leftPosition": "10%",
+                  "topPosition": "77%",
                   "annotationLinks": []
                },
                {
@@ -101,8 +101,8 @@
                   "annotationName": "Legend",
                   "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "17%",
-                  "topPosition": "83%",
+                  "leftPosition": "24%",
+                  "topPosition": "90%",
                   "annotationLinks": [
                     {
                       "linkDesc": "You can choose to show/hide the legend. Learn how to do it ",
@@ -118,8 +118,8 @@
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/tooltip-in-fusiontime",
-                  "leftPosition": "24%",
-                  "topPosition": "56%",
+                  "leftPosition": "55%",
+                  "topPosition": "36%",
                   "annotationLinks": []
                }
             ]
