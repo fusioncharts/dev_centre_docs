@@ -50,6 +50,18 @@
                },
                {
                   "annotationNumber": "5",
+                  "annotationName": "Data Markers",
+                  "annotationDesc": "Data markers are the names of the data points that are displayed on the chart plot.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "75%",
+                  "topPosition": "58.5%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way time markers look. Learn more about their usage ",
+                     "linkPath": "/fusiontime/fusiontime-component/data-markers"
+                  }]
+               },
+               {
+                  "annotationNumber": "5",
                   "annotationName": "Y-Axis",
                   "annotationDesc": "Y-Axis refers to a line on a chart that runs vertically (up-down) through zero. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/y-axis-in-fusiontime",
@@ -87,6 +99,16 @@
                   "topPosition": "8%",
                   "annotationLinks": []
                },
+               {
+                  "annotationNumber": "11",
+                  "annotationName": "Crossline",
+                  "annotationDesc": "Cross line is a vertical line/area used as a quick reference for data plots. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/crossline-in-fusiontime",
+                  "leftPosition": "72.5%",
+                  "topPosition": "16%",
+                  "annotationLinks": []
+               },
+
                {
                   "annotationNumber": "9",
                   "annotationName": "Time Navigator",
