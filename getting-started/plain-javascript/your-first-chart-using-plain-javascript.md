@@ -174,8 +174,37 @@ const chartData = [
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
 ```javascript
-// Chart Configuration
+// Create a JSON object to store the chart configurations
 const chartConfigs = {
+<<<<<<< HEAD
+  //Specify the chart type
+    type: "column2d",
+  //Set the container object 
+    renderAt: 'chart-container',
+  //Specify the width of the chart
+    width: "100%",
+  //Specify the height of the chart
+    height: "400",
+  //Set the type of data
+    dataFormat: "json",
+    dataSource: {
+        "chart": {
+          //Set the chart caption
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            //Set the chart subcaption
+            "subCaption": "In MMbbl = One Million barrels",
+            //Set the x-axis name
+            "xAxisName": "Country",
+            //Set the y-axis name
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            //Set the theme for your chart
+            "theme": "fusion",
+        },
+        // Chart Data from Step 2
+        "data": chartData
+    }
+=======
   type: "column2d", //Set the chart type
   renderAt: "chart-container", //Set the container object
   width: "100%", //Set the chart width
@@ -193,6 +222,7 @@ const chartConfigs = {
     // Chart Data from Step 2
     data: chartData
   }
+>>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
 };
 ```
 
