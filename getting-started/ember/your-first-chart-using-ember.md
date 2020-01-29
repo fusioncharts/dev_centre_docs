@@ -13,6 +13,9 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. Please check it by running node -v and npm -v respectively. To get Node.js, go to the [official website](https://nodejs.org/).
 
+<<<<<<< HEAD
+- Ember requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
+=======
 Find more about `ember-cli` [here](https://guides.emberjs.com/release/getting-started/quick-start/). To initiate an Ember project through `ember-cli`, follow the steps mentioned below:
 
 ```javascript
@@ -27,6 +30,7 @@ cd my-app
 ember serve
 ```
 `my-app` is the working directory where Ember Boilerplate will be installed along with all the utilities and dependencies.
+>>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
 
 Now, open http://localhost:4200 to see your Ember app.
 

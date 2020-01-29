@@ -13,7 +13,15 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
 
+<<<<<<< HEAD
+- jQuery requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
+
+> Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `npx webpack` command in the terminal to ensure that the build is successful.
+
+Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a jQuery project through npm.
+=======
 If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js and NPM installed in your system. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/).
+>>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
 
 ## Installation and including dependencies
 
@@ -151,8 +159,30 @@ const chartData = [
 Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
 ```javascript
-// Chart Configuration
+// Create a JSON object to store the chart configurations
 const chartConfigs = {
+<<<<<<< HEAD
+    //Set the chart type
+    type: "column2d",
+   //Specify the width of the chart
+    width: "700",
+   //Specify the height of the chart
+    height: "400",
+    //Set the type of data
+    dataFormat: "json",
+    chart: {
+        //Set the chart caption
+        caption: "Countries With Most Oil Reserves [2017-18]",
+        //Set the chart subcaption
+        subCaption: "In MMbbl = One Million barrels",
+        //Set the x-axis name
+        xAxisName: "Country",
+        //Set the y-axis name
+        yAxisName: "Reserves (MMbbl)",
+        numberSuffix: "K",
+        //Set the theme for your chart
+        theme: "fusion"
+=======
     type: "column2d",    //Set the chart type
     width: "700",        //Set the chart width
     height: "400",       //Set the chart height
@@ -164,6 +194,7 @@ const chartConfigs = {
         yAxisName: "Reserves (MMbbl)",        //Set the y-axis name
         numberSuffix: "K",
         theme: "fusion"                       //Set the theme for your chart
+>>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
     },
     // Chart Data - from step 2
     "data": chartData
