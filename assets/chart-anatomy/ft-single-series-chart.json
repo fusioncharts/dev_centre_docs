@@ -21,7 +21,7 @@
                   "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
                   "annotationDescLinkPath": null,
                   "leftPosition": "49.5%",
-                  "topPosition": "52%",
+                  "topPosition": "53%",
                   "annotationLinks": [{
                      "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
                      "linkPath": "/fusiontime/fusiontime-component/plot-types-in-fusiontime"
@@ -101,6 +101,15 @@
                },
                {
                   "annotationNumber": "11",
+                  "annotationName": "Reference Zone",
+                  "annotationDesc": "Reference zones help you identify data plots that fall within a particular range of data values. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/reference-zone-in-fusiontime",
+                  "leftPosition": "72.5%",
+                  "topPosition": "16%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "11",
                   "annotationName": "Crossline",
                   "annotationDesc": "Cross line is a vertical line/area used as a quick reference for data plots. Learn more about it ",
                   "annotationDescLinkPath": "/fusiontime/fusiontime-component/crossline-in-fusiontime",
@@ -108,7 +117,6 @@
                   "topPosition": "16%",
                   "annotationLinks": []
                },
-
                {
                   "annotationNumber": "9",
                   "annotationName": "Time Navigator",
