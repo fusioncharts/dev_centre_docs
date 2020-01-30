@@ -93,14 +93,11 @@ namespace FusionExportTest
 				// Call the Export() method with the export config
 				Dictionary<string, Stream> files = exportManager.ExportAsStream(exportConfig);
 			}
-
 			foreach (string path in results)
 			{
 				Console.WriteLine(path);
 			}
-
 			Console.Read();
-
 		}
 	}
 }
