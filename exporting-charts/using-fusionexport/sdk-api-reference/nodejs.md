@@ -58,9 +58,9 @@ exportManager
   });
 ```
 
-#### **Method:** `exportAsStream(exportConfig)`
+#### **Method:** `exportAsStream(ExportConfig exportConfig)`
 
-This is a method from ExportManager module.
+You can get exported output as a stream and can work with it. Based on the configuration provided, this method exports your charts and dashboards as a stream.
 
 **Parameters**
 

@@ -57,7 +57,7 @@ It returns an array of strings which contain filenames of the exported files.
 exportManager.Export(exportConfig, ".", true);
 ```
 
-#### **Method:** `exportAsStream(exportConfig)`
+#### **Method:** `exportAsStream(ExportConfig exportConfig)`
 
 This is a method from ExportManager module.
 
