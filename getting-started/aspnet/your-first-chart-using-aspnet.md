@@ -64,9 +64,9 @@ Open your project and follow the steps mentioned below:
 
 The directory structure will look like the following:
 
-![ASP.NET](images/aspnet-folder-structure.png)
+![ASP.NET](/images/aspnet-folder-structure.png)
 
-### Preparing the Data
+## Preparing the Data
 
 Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
@@ -143,7 +143,7 @@ data.Replace(",", "]", data.Length - 1, 1)
 </div>
 </div>
 
-### Configure your Chart
+## Configure your Chart
 
 Now that the data's ready, you are ready to work on styling, positioning and giving context to your chart. Follow the steps below:
 

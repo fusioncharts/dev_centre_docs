@@ -1,0 +1,159 @@
+{
+   "header": "Chart Components (Anatomy)",
+   "subHeader": "To know how FusionTime works, you need to understand the different components and concepts of a chart",
+   "content": {
+      "header": "In the sections below, you can find interactive annotated images describing various components and concepts of charts",
+      "contentGroup": [{
+            "_itemHeader": "Chart with Single Series",
+            "imgSrc": "ft-line-chart.png",
+            "annotations": [{
+                  "annotationNumber": "1",
+                  "annotationName": "Canvas Area",
+                  "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "85%",
+                  "topPosition": "17%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "2",
+                  "annotationName": "Data Plot",
+                  "annotationDesc": "Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "49.5%",
+                  "topPosition": "53%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes, learn more about their usage ",
+                     "linkPath": "/fusiontime/fusiontime-component/plot-types-in-fusiontime"
+                  }]
+               },
+               {
+                  "annotationNumber": "3",
+                  "annotationName": "Time Axis",
+                  "annotationDesc": "Time Axis refers to a line on a chart that runs horizontally (left to right).",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "91%",
+                  "topPosition": "58%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "4",
+                  "annotationName": "Time Markers",
+                  "annotationDesc": "Time markers are the names of the data points that are displayed on the time axis of a chart",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "75%",
+                  "topPosition": "58.5%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way time markers look. Learn more about their usage ",
+                     "linkPath": "/fusiontime/fusiontime-component/time-marker"
+                  }]
+               },
+               {
+                  "annotationNumber": "5",
+                  "annotationName": "Data Markers",
+                  "annotationDesc": "Data markers are the names of the data points that are displayed on the chart plot.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "23%",
+                  "topPosition": "18.5%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way time markers look. Learn more about their usage ",
+                     "linkPath": "/fusiontime/fusiontime-component/data-markers"
+                  }]
+               },
+               {
+                  "annotationNumber": "6",
+                  "annotationName": "Y-Axis",
+                  "annotationDesc": "Y-Axis refers to a line on a chart that runs vertically (up-down) through zero. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/y-axis-in-fusiontime",
+                  "leftPosition": "12%",
+                  "topPosition": "12%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way the Y-axis looks. Learn more about it ",
+                     "linkPath": "/fusiontime/fusiontime-component/y-axis-in-fusiontime#style-definition"
+                  }]
+               },
+               {
+                  "annotationNumber": "7",
+                  "annotationName": "Y-Axis Title",
+                  "annotationDesc": "It refers to the title of the y-axis. You can customize it using Style Definition. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/y-axis-in-fusiontime#style-definition",
+                  "leftPosition": "3%",
+                  "topPosition": "35%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "8",
+                  "annotationName": "Standard Range Selector",
+                  "annotationDesc": "It refers to the selector for standard time periods. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/standard-range-selector",
+                  "leftPosition": "23%",
+                  "topPosition": "8%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "9",
+                  "annotationName": "Custom Range Selector",
+                  "annotationDesc": "It refers to the selector for custom time periods. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/custom-range-selector",
+                  "leftPosition": "62%",
+                  "topPosition": "8%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "10",
+                  "annotationName": "Reference Zone",
+                  "annotationDesc": "Reference zones help you identify data plots that fall within a particular range of data values. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/reference-zone-in-fusiontime",
+                  "leftPosition": "91.5%",
+                  "topPosition": "34%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "11",
+                  "annotationName": "Crossline",
+                  "annotationDesc": "Cross line is a vertical line/area used as a quick reference for data plots. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/crossline-in-fusiontime",
+                  "leftPosition": "37.5%",
+                  "topPosition": "28%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "12",
+                  "annotationName": "Time Navigator",
+                  "annotationDesc": "It lets you narrow the focus to a specific time period without losing context of the entire data. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/time-navigator",
+                  "leftPosition": "10%",
+                  "topPosition": "77%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "13",
+                  "annotationName": "Legend",
+                  "annotationDesc": "A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "24%",
+                  "topPosition": "90%",
+                  "annotationLinks": [
+                    {
+                      "linkDesc": "You can choose to show/hide the legend. Learn how to do it ",
+                      "linkPath": "/fusiontime/fusiontime-component/legend-in-fusiontime#show-hide-the-legend"
+                    },
+                    {
+                      "linkDesc": "You can choose to hide one or more legend items when the chart is initially rendered. Learn how to do it ",
+                      "linkPath": "/fusiontime/fusiontime-component/legend-in-fusiontime#initially-hidden-legend-item"
+                    }]
+                },
+              {
+                  "annotationNumber": "14",
+                  "annotationName": "Tooltip",
+                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point. Learn more about it ",
+                  "annotationDescLinkPath": "/fusiontime/fusiontime-component/tooltip-in-fusiontime",
+                  "leftPosition": "55%",
+                  "topPosition": "36%",
+                  "annotationLinks": []
+               }
+            ]
+         }
+      ]
+   }
+}

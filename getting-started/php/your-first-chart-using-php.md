@@ -8,6 +8,8 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 On this page, we'll see how to install FusionCharts and render a chart using the `FusionCharts server-side PHP` wrapper.
 
+> The **FusionCharts PHP server-side wrapper** requires **PHP 5.6** or higher.
+
 ## Prerequisite
 
 We assume that you have PHP installed in the system. You will also need a local web server for which you can use [XAMPP](https://www.apachefriends.org/index.html) (A simple, lightweight Apache distribution that makes it extremely easy for developers to create a local web server for testing and deployment purposes).
