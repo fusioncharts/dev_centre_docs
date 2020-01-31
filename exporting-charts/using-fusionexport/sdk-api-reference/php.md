@@ -14,10 +14,10 @@ The Constructor of ExportManager take parameters that may contains host and port
 
 **Parameters**
 
-| Name   | Type    | Default Value | Description                                                        |
-| ------ | ------- | ------------- | ------------------------------------------------------------------ |
-| \$host | String  | 127.0.0.1     | The host which will be used when connecting to FusionExport server |
-| \$port | Integer | 1337          | The port which will be used when connecting to FusionExport server |
+| Name | Type    | Default Value | Description                                                        |
+| ---- | ------- | ------------- | ------------------------------------------------------------------ |
+| host | String  | 127.0.0.1     | The host which will be used when connecting to FusionExport server |
+| port | Integer | 1337          | The port which will be used when connecting to FusionExport server |
 
 **Example**
 
@@ -133,9 +133,9 @@ Takes one argument as the key and returns the value.
 
 **Parameters**
 
-| Name   | Type   | Default Value | Required | Description        |
-| ------ | ------ | ------------- | -------- | ------------------ |
-| \$name | String | null          | Yes      | Name of the config |
+| Name | Type   | Default Value | Required | Description        |
+| ---- | ------ | ------------- | -------- | ------------------ |
+| name | String | null          | Yes      | Name of the config |
 
 **Returns**
 
@@ -153,9 +153,9 @@ Takes one argument as the key and returns a boolean if it is set or not.
 
 **Parameters**
 
-| Name  | Type   | Default Value | Required | Description        |
-| ----- | ------ | ------------- | -------- | ------------------ |
-| \$key | String | null          | Yes      | Name of the config |
+| Name | Type   | Default Value | Required | Description        |
+| ---- | ------ | ------------- | -------- | ------------------ |
+| key  | String | null          | Yes      | Name of the config |
 
 **Returns**
 
@@ -173,9 +173,9 @@ Takes one argument as the key and removes that value if it was set.
 
 **Parameters**
 
-| Name   | Type   | Default Value | Required | Description        |
-| ------ | ------ | ------------- | -------- | ------------------ |
-| \$name | String | null          | Yes      | Name of the config |
+| Name | Type   | Default Value | Required | Description        |
+| ---- | ------ | ------------- | -------- | ------------------ |
+| name | String | null          | Yes      | Name of the config |
 
 **Returns**
 
@@ -227,6 +227,18 @@ This option is useful to export your SVG files to the file formats supported by 
 
 ```javascript
 exportConfig.set("inputSVG", "resources/vector.svg");
+```
+
+#### `template`
+
+Accepts only the template string. Throws an exception if data provided by the user is not a string.
+
+- **Type:** String
+
+**Example**
+
+```javascript
+exportConfig.set("template", "<html>...</html>");
 ```
 
 #### `templateFilePath`
