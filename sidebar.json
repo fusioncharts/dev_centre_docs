@@ -2005,6 +2005,10 @@
         "title": "FusionTime Components",
         "children": [
           {
+            "title": "Plot Types",
+            "path": "/fusiontime/fusiontime-component/plot-types-in-fusiontime"
+          },
+          {
             "title": "Time Axis",
             "path": "/fusiontime/fusiontime-component/time-axis"
           },
@@ -2055,10 +2059,6 @@
           {
             "title": "Legend",
             "path": "/fusiontime/fusiontime-component/legend-in-fusiontime"
-          },
-          {
-            "title": "Plot Types",
-            "path": "/fusiontime/fusiontime-component/plot-types-in-fusiontime"
           }
         ]
       },
