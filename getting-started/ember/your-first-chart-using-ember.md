@@ -13,10 +13,8 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 Before you begin, make sure your development environment includes `Node.js` and an `npm package manager`. Please check it by running node -v and npm -v respectively. To get Node.js, go to the [official website](https://nodejs.org/).
 
-<<<<<<< HEAD
 - Ember requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
-=======
-Find more about `ember-cli` [here](https://guides.emberjs.com/release/getting-started/quick-start/). To initiate an Ember project through `ember-cli`, follow the steps mentioned below:
+  Find more about `ember-cli` [here](https://guides.emberjs.com/release/getting-started/quick-start/). To initiate an Ember project through `ember-cli`, follow the steps mentioned below:
 
 ```javascript
 npm install -g ember-cli
@@ -29,8 +27,8 @@ ember new my-app
 cd my-app
 ember serve
 ```
+
 `my-app` is the working directory where Ember Boilerplate will be installed along with all the utilities and dependencies.
->>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
 
 Now, open http://localhost:4200 to see your Ember app.
 
@@ -131,17 +129,18 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 const myDataSource = {
   // Chart Configuration
   chart: {
-    caption: "Countries With Most Oil Reserves [2017-18]",    //Set the chart caption
-    subCaption: "In MMbbl = One Million barrels",    //Set the chart subcaption
-    xAxisName: "Country",    //Set the x-axis name
-    yAxisName: "Reserves (MMbbl)",    //Set the y-axis name
+    caption: "Countries With Most Oil Reserves [2017-18]", //Set the chart caption
+    subCaption: "In MMbbl = One Million barrels", //Set the chart subcaption
+    xAxisName: "Country", //Set the x-axis name
+    yAxisName: "Reserves (MMbbl)", //Set the y-axis name
     numberSuffix: "K",
-    theme: "fusion"    //Set the theme for your chart
+    theme: "fusion" //Set the theme for your chart
   },
   // Chart Data - from step 2
   data: chartData
 };
 ```
+
 > The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
 ## Render the chart
@@ -210,11 +209,11 @@ const myDataSource = {
 };
 
 export default Component.extend({
-  title: 'Ember FusionCharts Sample',
+  title: "Ember FusionCharts Sample",
   width: 600,
   height: 400,
-  type: 'column2d',
-  dataFormat: 'json',
+  type: "column2d",
+  dataFormat: "json",
   dataSource: myDataSource
 });
 ```
@@ -223,19 +222,31 @@ export default Component.extend({
 
 ```javascript
 <h1>{{ title }}</h1>;
-{{fusioncharts-xt
-  width = width
-  height = height
-  type = type
-  dataFormat = dataFormat
-  dataSource = dataSource}}
+{
+  {
+    fusioncharts - xt;
+    width = width;
+    height = height;
+    type = type;
+    dataFormat = dataFormat;
+    dataSource = dataSource;
+  }
+}
 ```
 
 **Step 3**: Add `chart-viewer` component to your `application.hbs` template (present in `app/templates` folder):
 
 ```javascript
-{{chart-viewer}}
-{{outlet}}
+{
+  {
+    chart - viewer;
+  }
+}
+{
+  {
+    outlet;
+  }
+}
 ```
 
 ## See your chart
@@ -246,7 +257,7 @@ You should be able to see the chart as shown below.
 
 If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly.
 
-> If you are getting a **this.$()** error on the page, check this [link](https://guides.emberjs.com/release/configuring-ember/optional-features/) and implement the `jquery-integration` to fix the error.
+> If you are getting a **this.\$()** error on the page, check this [link](https://guides.emberjs.com/release/configuring-ember/optional-features/) and implement the `jquery-integration` to fix the error.
 
 If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
