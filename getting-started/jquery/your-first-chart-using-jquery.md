@@ -13,15 +13,12 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 In case of including Fusioncharts dependencies from **CDN** or **Local Files**, you can skip this step and get started with the code mentioned in the below steps.
 
-<<<<<<< HEAD
 - jQuery requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
 
 > Initialize npm, install webpack locally, and install the webpack-cli. Make sure you run `npx webpack` command in the terminal to ensure that the build is successful.
 
 Follow the steps mentioned [here](https://webpack.js.org/guides/getting-started/) to initialize a jQuery project through npm.
-=======
 If you choose to install `fusioncharts` package via **npm**, make sure you have Node.js and NPM installed in your system. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/).
->>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
 
 ## Installation and including dependencies
 
@@ -200,6 +197,7 @@ const chartConfigs = {
     "data": chartData
 };
 ```
+
 > Have a look at different chart types with their aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 ## Render the chart
