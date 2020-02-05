@@ -13,7 +13,7 @@ On this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Prerequisite
 
-You need to have a Angular project setup before proceeding any further. If not, you can follow the below steps to initiate the project. 
+You need to have a Angular project setup before proceeding any further. If not, you can follow the below steps to initiate the project.
 
 Angular requires Node.js and NPM installed in your machine. Please check it by running `node -v` and `npm -v` respectively. To get Node.js, go to the [official website](https://nodejs.org/en/).
 
@@ -31,15 +31,11 @@ cd first-fusioncharts-project
 ng serve --open
 ```
 
-<<<<<<< HEAD
 - Angular requires Node.js and NPM installed your machine. Please check it by running `node -v` and `npm -v` respectively. If either of them returns command not found, then please go to [Node.js](https://nodejs.org/) website to install it properly.
 
-=======
 `first-fusioncharts-project` is the working directory where an Angular app will be installed along with all the utilities and dependencies.
 
 Now, open [http://localhost:4200/](http://localhost:4200/) to see your Angular app.
->>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
-
 
 ## Installation and Including Dependencies
 
@@ -52,22 +48,22 @@ npm install fusioncharts angular-fusioncharts --save
 After installing the fusioncharts components, you can replace the code in `src/app/app.module.ts` file with the consolidated code shown below to create your first chart. Import all the required dependencies in `@NgModule` to get started.
 
 ```javascript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { FusionChartsModule } from 'angular-fusioncharts';
+import { AppComponent } from "./app.component";
+import { FusionChartsModule } from "angular-fusioncharts";
 
 // Import FusionCharts library and chart modules
-import * as FusionCharts from 'fusioncharts';
-import * as charts from 'fusioncharts/fusioncharts.charts';
-import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import * as FusionCharts from "fusioncharts";
+import * as charts from "fusioncharts/fusioncharts.charts";
+import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule,FusionChartsModule],
+  imports: [BrowserModule, FusionChartsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
@@ -139,17 +135,18 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 // Chart Configuration
 const dataSource = {
   chart: {
-    caption: "Countries With Most Oil Reserves [2017-18]",  //Set the chart caption
-    subCaption: "In MMbbl = One Million barrels",  //Set the chart subcaption
-    xAxisName: "Country",  //Set the x-axis name
-    yAxisName: "Reserves (MMbbl)",  //Set the y-axis name
+    caption: "Countries With Most Oil Reserves [2017-18]", //Set the chart caption
+    subCaption: "In MMbbl = One Million barrels", //Set the chart subcaption
+    xAxisName: "Country", //Set the x-axis name
+    yAxisName: "Reserves (MMbbl)", //Set the y-axis name
     numberSuffix: "K",
-    theme: "fusion"  //Set the theme for your chart
+    theme: "fusion" //Set the theme for your chart
   },
   // Chart Data - from step 2
-  "data": chartData
+  data: chartData
 };
 ```
+
 > The `type` attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 ## Render the chart
@@ -168,50 +165,59 @@ export class AppComponent {
   dataSource: Object;
   constructor() {
     //STEP 2 - Chart Data
-    const chartData = [{
-      label: "Venezuela",
-      value: "290"
-    }, {
-      label: "Saudi",
-      value: "260"
-    }, {
-      label: "Canada",
-      value: "180"
-    }, {
-      label: "Iran",
-      value: "140"
-    }, {
-      label: "Russia",
-      value: "115"
-    }, {
-      label: "UAE",
-      value: "100"
-    }, {
-      label: "US",
-      value: "30"
-    }, {
-      label: "China",
-      value: "30"
-    }];
+    const chartData = [
+      {
+        label: "Venezuela",
+        value: "290"
+      },
+      {
+        label: "Saudi",
+        value: "260"
+      },
+      {
+        label: "Canada",
+        value: "180"
+      },
+      {
+        label: "Iran",
+        value: "140"
+      },
+      {
+        label: "Russia",
+        value: "115"
+      },
+      {
+        label: "UAE",
+        value: "100"
+      },
+      {
+        label: "US",
+        value: "30"
+      },
+      {
+        label: "China",
+        value: "30"
+      }
+    ];
     // STEP 3 - Chart Configuration
     const dataSource = {
       chart: {
         //Set the chart caption
         caption: "Countries With Most Oil Reserves [2017-18]",
-         //Set the chart subcaption
+        //Set the chart subcaption
         subCaption: "In MMbbl = One Million barrels",
-         //Set the x-axis name
+        //Set the x-axis name
         xAxisName: "Country",
-         //Set the y-axis name
+        //Set the y-axis name
         yAxisName: "Reserves (MMbbl)",
         numberSuffix: "K",
-         //Set the theme for your chart
+        //Set the theme for your chart
         theme: "fusion"
       },
       // Chart Data - from step 2
-      "data": chartData
+      data: chartData
     };
-    this.dataSource = dataSource
+    this.dataSource = dataSource;
   }
 }
 ```
