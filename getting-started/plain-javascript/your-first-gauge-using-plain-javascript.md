@@ -8,6 +8,8 @@ heading: Create a Gauge Using FusionCharts
 
 In this page, we'll see how to install **FusionCharts** library and all the other dependencies on your system and render a gauge using Plain JavaScript.
 
+{% embed_chartAnatomy data-format1.json %}
+
 ## Installation
 
 Install **FusionCharts** using any of the following steps:

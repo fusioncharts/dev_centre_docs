@@ -1,0 +1,57 @@
+{
+   "header": "Chart Anatomy",
+   "subHeader": "To know how FusionCharts works it is important to understand the various components and concepts of a chart",
+   "content": {
+      "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+      "contentGroup": [
+         {
+            "itemHeader": "Chart with Multiple Series",
+            "imgSrc": "ms-column-chart-anatomy.png",
+            "annotations": [
+               {
+                  "annotationNumber": "1",
+                  "annotationName": "Data Series1",
+                  "annotationDesc": "The caption (also called the chart title) is the heading of your chart. You can add custom text for the caption. You can also configure its font properties and cosmetics.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "26.5%",
+                  "topPosition": "2.5%",
+                  "annotationLinks": [
+                     {
+                        "linkDesc": "Learn how to add the caption ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "2",
+                  "annotationName": "Data Series2",
+                  "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for the sub-caption. You can also configure its font properties.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "53.5%",
+                  "topPosition": "8%",
+                  "annotationLinks": [
+                     {
+                        "linkDesc": "Learn how to add sub-caption ",
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "3",
+                  "annotationName": "Labels",
+                  "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "80%",
+                  "topPosition": "5%",
+                  "annotationLinks": [
+                     {
+                        "linkDesc": "You can customize the canvas border. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}
