@@ -61,7 +61,7 @@ That completes the installation of FusionCharts and the `svelte-fusioncharts` di
 
 Let us create a visualization using the World Map showing the average annual population growth.
 
-<<Insert World Map snapshot>>
+![World](/images/WorldwithCountriesMap.png)
 
 The data for the above map is represented in the table below:
 

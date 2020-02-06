@@ -68,7 +68,7 @@ Gauges are powerful tools that can showcase information using a radial scale to 
 
 To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
-![](Getting Started- SvelteJS- Gauge_images/image_0.png)
+![Gauge](/images/your-first-gauge.png)
 
 The thresholds for the above sample is shown in the table below:
 
