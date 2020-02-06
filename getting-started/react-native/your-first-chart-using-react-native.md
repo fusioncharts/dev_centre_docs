@@ -284,12 +284,12 @@ const chartConfigs = {
   dataSource: {
     // Chart Configuration
     chart: {
-      caption: "Countries With Most Oil Reserves [2017-18]",    //Set the chart caption
-      subCaption: "In MMbbl = One Million barrels",             //Set the chart subcaption
-      xAxisName: "Country",           //Set the x-axis name
-      yAxisName: "Reserves (MMbbl)",  //Set the y-axis name
+      caption: "Countries With Most Oil Reserves [2017-18]", //Set the chart caption
+      subCaption: "In MMbbl = One Million barrels", //Set the chart subcaption
+      xAxisName: "Country", //Set the x-axis name
+      yAxisName: "Reserves (MMbbl)", //Set the y-axis name
       numberSuffix: "K",
-      theme: "fusion"                 //Set the theme for your chart
+      theme: "fusion" //Set the theme for your chart
     },
     // Chart Data - from step 2
     data: chartData
@@ -400,6 +400,6 @@ You should be able to see the chart as shown below.
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click here to get in touch with our support team.
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix it accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
 That's it! Your first chart using `react-native-fusioncharts` is ready.

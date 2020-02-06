@@ -1,7 +1,7 @@
 ---
-title: Create a Map Using FusionCharts | FusionCharts
-description: This article outlines the steps to be executed for creating your first map using the plain javascript.
-heading: Create a Map Using FusionCharts
+title: Create a Map in SvelteJS Using FusionCharts | FusionCharts
+description: This article outlines the steps to be executed for creating your first map using the svelte-fusioncharts component.
+heading: Create a Map in SvelteJS Using FusionCharts
 ---
 
 **FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
