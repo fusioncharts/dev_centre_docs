@@ -153,10 +153,10 @@ const colorRange = {
     }]
 };
 const mapConfigs = {
-    type: 'world', 		// Map type
-    width: '800', 		// Width of the chart
-    height: '550', 		// Height of the chart
-    dataFormat: 'json',  	// Data Type
+    type: 'world', // Map type
+    width: '800', // Width of the chart
+    height: '550', // Height of the chart
+    dataFormat: 'json', // Data Type
     renderAt:'chart-container',  //container where the chart will render
     dataSource: {
     // Map Configuration
