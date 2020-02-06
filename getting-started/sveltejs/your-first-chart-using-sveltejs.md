@@ -39,7 +39,7 @@ Install `svelte-fusioncharts` and `fusioncharts` libraries with the following co
 npm install svelte-fusioncharts fusioncharts --save
 ```
 
-After installing the FusionCharts components, you can replace the code in `App.svelte` file with the code shown in the steps below to create your first chart. Import all the required dependencies in the <script> tag to get started.
+After installing the FusionCharts components, you can replace the code in `App.svelte` file with the code shown in the steps below to create your first chart. Import all the required dependencies in the &lt;script&gt; tag to get started.
 
 ```html
 <script>
