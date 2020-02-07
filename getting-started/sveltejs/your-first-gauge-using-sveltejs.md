@@ -16,13 +16,13 @@ You need to have a Svelte project setup before proceeding any further. If not, y
 
 Open a new terminal and execute the following command:
 
-```shellscript
+```
 npx degit sveltejs/template my-first-svelte-project
 ```
 
 This command creates a new project folder named `my-first-svelte-project` and downloads the svelte default project template into that folder. Before running the project we need to make sure that all needed development dependencies are being installed.
 
-```shellscript
+```
 cd my-first-svelte-project
 npm install
 ```
@@ -35,7 +35,7 @@ To install `fusioncharts` and the `svelte-fusioncharts` directive via npm follow
 
 Install `svelte-fusioncharts` and `fusioncharts` libraries with the following command:
 
-```shellscript
+```
 npm install svelte-fusioncharts fusioncharts --save
 ```
 
@@ -96,7 +96,7 @@ FusionCharts accepts the data in JSON format. Prepare the above data in the foll
 
 So the data in the tabular form will look as follows:
 
-````javascript
+```javascript
 //STEP 2 : preparing the chart Data
 const colorRange = {
   color: [
@@ -117,12 +117,13 @@ const dials = {
       value: "81"
     javascript  ]
 };
-``
+```
 
-# Configure Your Chart
+## Configure Your Chart
 
 ow that the data is ready, let's work on the styling, positioning and giving your gauge a context.
 Store the gauge configurations in a JSON object.
+
 ```javascript
 //STEP 3: Create your configuration object
 const chartConfigs = {
@@ -147,7 +148,7 @@ const chartConfigs = {
     dials: dials
   }
 };
-````
+```
 
 Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#gauges).
 
