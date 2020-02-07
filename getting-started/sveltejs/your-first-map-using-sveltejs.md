@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Map in SvelteJS Using FusionCharts
 ---
 
-FusionCharts is a JavaScript charting library that lets you create interactive charts, gauges, maps, and dashboards using JavaScript. We have built a simple and lightweight SvelteJS directive, which provides bindings for FusionCharts.`svelte-fusioncharts` lets you add JavaScript charts in your Svelte application or project without any hassle.
+FusionCharts is a JavaScript charting library that lets you create interactive charts, gauges, maps, and dashboards using JavaScript. We have built a simple and lightweight SvelteJS directive, which provides bindings for `svelte-fusioncharts` lets you add JavaScript charts in your Svelte application or project without any hassle.
 
 Maps are used to plot geographical data like revenue by regions, population by state, survey and election results, etc. You can also drop markers on the map to pinpoint places like office locations and flight routes. In this page, you will see how to install FusionCharts and render a map using the `svelte-fusioncharts` directive.
 
