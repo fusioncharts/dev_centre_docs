@@ -13,8 +13,9 @@ In this tutorial, we shall discuss how you can work with different data formats 
 A Multi-series chart is used to plot data for more than one series of data values. It is also used to analyze and compare data points grouped in sub-categories. For example, you can plot the revenue collected each month for the last two years using a multi-series chart. Multi-series charts can also help you plot the highs and lows of multiple datasets, so that you can easily compare them.
 
 In a multi-series chart, we have two or more datasets plotted against the same X-axis (or Y-axis) value. Let us build a Multi-series Column 2D Chart.
-
+<div style="float:right;width:400;height:400">
 {% embed_all standard-charts-multi-series-charts-example-1.js %}
+</div>
 
 As you can see, a Multi-series Column 2D Chart has vertically aligned rectangular bars on one axis with discrete values shown on the other. The length of a column is proportionate to the value it represents.
 
