@@ -10,45 +10,41 @@
             "annotations": [
                {
                   "annotationNumber": "1",
-                  "annotationName": "Data Series1",
-                  "annotationDesc": "The caption (also called the chart title) is the heading of your chart. You can add custom text for the caption. You can also configure its font properties and cosmetics.",
+                  "annotationName": "dataset",
+                  "annotationDesc": "dataset is the entire data structure of the chart. It's an array constituting different data series",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "26.5%",
-                  "topPosition": "2.5%",
-                  "annotationLinks": [
-                     {
-                        "linkDesc": "Learn how to add the caption ",
-                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
-                     }
-                  ]
+                  "leftPosition": "16.5%",
+                  "topPosition": "16.5%",
+                  "annotationLinks": []
                },
                {
                   "annotationNumber": "2",
-                  "annotationName": "Data Series2",
-                  "annotationDesc": "The sub-caption (also called the chart subtitle) is the sub-heading of your chart. You can add custom text for the sub-caption. You can also configure its font properties.",
+                  "annotationName": "Categories",
+                  "annotationDesc": "Categories depict the different classes of data structured for the visual representation ",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "53.5%",
-                  "topPosition": "8%",
+                  "leftPosition": "53%",
+                  "topPosition": "79%",
                   "annotationLinks": [
                      {
-                        "linkDesc": "Learn how to add sub-caption ",
-                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
+                        "linkDesc": "It is an array of labels representing different quarters as shown above"
                      }
                   ]
                },
                {
                   "annotationNumber": "3",
-                  "annotationName": "Labels",
-                  "annotationDesc": "Canvas area refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.",
+                  "annotationName": "Data Series1",
+                  "annotationDesc": "The first series of the multi-series chart representing revenue of the previous year across its quarters",
                   "annotationDescLinkPath": null,
-                  "leftPosition": "80%",
-                  "topPosition": "5%",
-                  "annotationLinks": [
-                     {
-                        "linkDesc": "You can customize the canvas border. Learn more about it ",
-                        "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
-                     }
-                  ]
+                  "leftPosition": "16.5%",
+                  "topPosition": "50.5%"
+               },
+               {
+                  "annotationNumber": "4",
+                  "annotationName": "Data Series2",
+                  "annotationDesc": "The second series of the multi-series chart representing revenue of the current year across its quarters",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "41.5%",
+                  "topPosition": "13%"
                }
             ]
          }
