@@ -33,6 +33,7 @@ In the above chart, we have plotted quarters with data values for the previous a
 2. `dataset`
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
+
 {% embed_chartAnatomy data-format1.json %}
 
 The syntax to use the properties is given below:
