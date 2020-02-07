@@ -53,6 +53,11 @@
           "value": "AngularJS",
           "classname": "icon-angular1x",
           "link": "/getting-started/angular/angularjs/your-first-chart-using-angularjs"
+        },
+        {
+          "value": "Svelte",
+          "classname": "icon-svelte",
+          "link": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
         }
       ],
       "backend": [

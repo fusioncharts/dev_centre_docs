@@ -712,14 +712,14 @@ To render these maps, you need to download the map definition files from [here](
 | [Valais](/maps/spec-sheets/valais)                                | maps/valais                |
 | [Vaud](/maps/spec-sheets/vaud)                                    | maps/vaud                  |
 
-### Romania
+## Romania
 
 | Chart Type                                           | JavaScript Alias   |
 | ---------------------------------------------------- | ------------------ |
 | [Romania](/maps/spec-sheets/romania)                 | maps/romania       |
 | [Romania (Regions)](/maps/spec-sheets/romaniaregion) | maps/romaniaregion |
 
-### Austria (States)
+## Austria (States)
 
 | Chart Type                                             | JavaScript Alias      |
 | ------------------------------------------------------ | --------------------- |
@@ -733,7 +733,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Vorarlberg](/maps/spec-sheets/vorarlberg)             | maps/vorarlberg       |
 | [Wien (Vienna)](/maps/spec-sheets/wien)                | maps/wien             |
 
-### Portugal (Districts)
+## Portugal (Districts)
 
 | Chart Type                                          | JavaScript Alias    |
 | --------------------------------------------------- | ------------------- |
@@ -756,7 +756,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Vila Real](/maps/spec-sheets/vilareal)             | maps/vilareal       |
 | [Viseu](/maps/spec-sheets/viseu)                    | maps/viseu          |
 
-### Bulgaria (Provinces)
+## Bulgaria (Provinces)
 
 | Chart Type                                            | JavaScript Alias     |
 | ----------------------------------------------------- | -------------------- |
@@ -789,7 +789,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Vratsa](/maps/spec-sheets/vratsa)                    | maps/vratsa          |
 | [Yambol](/maps/spec-sheets/yambol)                    | maps/yambol          |
 
-### Denmark (5 Regions)
+## Denmark (5 Regions)
 
 | Chart Type                                    | JavaScript Alias |
 | --------------------------------------------- | ---------------- |
@@ -799,7 +799,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Sjaelland (ac)](/maps/spec-sheets/sjaelland) | maps/sjaelland   |
 | [Syddanmark](/maps/spec-sheets/syddanmark)    | maps/syddanmark  |
 
-### Hungary (7 Regions)
+## Hungary (7 Regions)
 
 | Chart Type                                                      | JavaScript Alias          |
 | --------------------------------------------------------------- | ------------------------- |
@@ -811,13 +811,13 @@ To render these maps, you need to download the map definition files from [here](
 | [Southern Transdanubia](/maps/spec-sheets/southerntransdanubia) | maps/southerntransdanubia |
 | [Western Transdanubia](/maps/spec-sheets/westerntransdanubia)   | maps/westerntransdanubia  |
 
-### Czech Republic (Main Districts)
+## Czech Republic (Main Districts)
 
 | Chart Type                                                           | JavaScript Alias            |
 | -------------------------------------------------------------------- | --------------------------- |
 | [Czech Republic Districts](/maps/spec-sheets/czechrepublicdistricts) | maps/czechrepublicdistricts |
 
-### Albania (Counties)
+## Albania (Counties)
 
 | Chart Type                                   | JavaScript Alias |
 | -------------------------------------------- | ---------------- |
@@ -834,7 +834,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Tirana](/maps/spec-sheets/tirana)           | maps/tirana      |
 | [Vlore](/maps/spec-sheets/vlore)             | maps/vlore       |
 
-### Estonia (Countries)
+## Estonia (Countries)
 
 | Chart Type                                      | JavaScript Alias  |
 | ----------------------------------------------- | ----------------- |
@@ -854,7 +854,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Viljandimaa](/maps/spec-sheets/viljandimaa)    | maps/viljandimaa  |
 | [Vorumaa](/maps/spec-sheets/vorumaa)            | maps/vorumaa      |
 
-### Romania (Regions)
+## Romania (Regions)
 
 | Chart Type                                           | JavaScript Alias    |
 | ---------------------------------------------------- | ------------------- |
@@ -867,7 +867,7 @@ To render these maps, you need to download the map definition files from [here](
 | [Sud-Vest Oltenia](/maps/spec-sheets/sudvestoltenia) | maps/sudvestoltenia |
 | [Vest](/maps/spec-sheets/vest)                       | maps/vest           |
 
-### Poland (Voivodeships)
+## Poland (Voivodeships)
 
 | Chart Type                                                  | JavaScript Alias        |
 | ----------------------------------------------------------- | ----------------------- |
