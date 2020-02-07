@@ -5,7 +5,7 @@
       "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
       "contentGroup": [
          {
-            "itemHeader": "Chart with Multiple Series",
+            "itemHeader": "",
             "imgSrc": "ms-column-chart-anatomy.png",
             "annotations": [
                {
@@ -20,7 +20,7 @@
                {
                   "annotationNumber": "2",
                   "annotationName": "Categories",
-                  "annotationDesc": "Categories depict the different classes of data structured for the visual representation ",
+                  "annotationDesc": "Categories depict different classes of the data, structured for the visual representation ",
                   "annotationDescLinkPath": null,
                   "leftPosition": "53%",
                   "topPosition": "79%",
