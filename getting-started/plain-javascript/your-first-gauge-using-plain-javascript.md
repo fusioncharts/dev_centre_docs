@@ -28,11 +28,14 @@ To build the chart shown above, we will use the data presented in the following 
 | Q4 | 16000 | 26000 |
 
 In the above chart, we have plotted quarters with data values for the previous and the current years along the X-axis.To convert this to a data format that FusionCharts can use, you need the following two properties:
-    1. `categories`
-    2. `dataset`
-The diagram below can give you an idea about how we are going to assign values to these properties. 
+
+1. `categories`
+2. `dataset`
+
+The diagram below can give you an idea about how we are going to assign values to these properties.
 
 {% embed_chartAnatomy data-format1.json %}
+
 The syntax to use the properties is given below:
 ```json
 "categories": [
@@ -118,13 +121,8 @@ FusionCharts.ready(function() {
           "dataset": dataset
         }
       });
-    
       revenueChart.render();
     });
 ```
-
-{% embed_all standard-charts-multi-series-charts-example-1.js %}
-
-Click here to edit the above multi-series chart.
 
 You can also create various charts belonging to the multi-series family in a similar way. Check out the different types of multi-series charts here.
