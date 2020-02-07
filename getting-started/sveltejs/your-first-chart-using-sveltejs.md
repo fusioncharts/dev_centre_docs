@@ -16,6 +16,6 @@ You need to have a Svelte project set up before proceeding any further. If not, 
 
 Open a new terminal and execute the following command:
 
-```shellscript
+```
 npx degit sveltejs/template my-first-svelte-project
 ```
