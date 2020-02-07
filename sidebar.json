@@ -718,6 +718,28 @@
             ]
           },
           {
+            "title": "Svelte",
+            "children": [
+              {
+                "title": "Creating your First Chart",
+                "children": [
+                  {
+                    "title": "Your First Chart",
+                    "path": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
+                  },
+                  {
+                    "title": "Your First Gauge",
+                    "path": "/getting-started/sveltejs/your-first-gauge-using-sveltejs"
+                  },
+                  {
+                    "title": "Your First Map",
+                    "path": "/getting-started/sveltejs/your-first-map-using-sveltejs"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "title": "PHP",
             "children": [
               {

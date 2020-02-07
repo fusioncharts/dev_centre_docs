@@ -46,7 +46,10 @@ In this article, we will see how to install FusionCharts Suite XT and the `Fusio
 
 ## Prerequisite
 
-We have created an ASP.NET project using Visual Studio. Create an empty (Web application for Windows) ASP.NET project.
+You need to have a ASP.NET project setup before proceeding any further. If not, you can create a project using Visual Studio.
+For UNIX based systems (Mac, Linux), Open Visual Studio and create an empty ASP.NET project.
+For Windows based systems, create a Web application project.
+
 
 ## Installation & Including Dependencies
 
