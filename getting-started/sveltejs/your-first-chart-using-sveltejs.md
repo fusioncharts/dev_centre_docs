@@ -27,7 +27,7 @@ cd my-first-svelte-project
 npm install
 ```
 
-Open the terminal and enter `npm run dev` to serve your app on `[localhost:5000](http://localhost:5000/)`.
+Open the terminal and enter `npm run dev` to serve your app on [localhost:5000](http://localhost:5000/).
 
 ## Installing and Including Dependencies
 
