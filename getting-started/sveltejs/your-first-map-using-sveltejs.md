@@ -16,13 +16,13 @@ You need to have a Svelte project setup before proceeding any further. If not, y
 
 Open a new terminal and execute the following command:
 
-```
+```bash
 npx degit sveltejs/template my-first-svelte-project
 ```
 
 This command creates a new project folder `my-first-svelte-project` and downloads the svelte default project template into that folder. Before running the project we need to make sure that all needed development dependencies are being installed.
 
-```
+```bash
 cd my-first-svelte-project
 npm install
 ```
@@ -35,7 +35,7 @@ To install `fusioncharts` and the `svelte-fusioncharts` directive via npm follow
 
 Install `svelte-fusioncharts` and `fusioncharts` libraries
 
-```
+```bash
 npm install svelte-fusioncharts fusioncharts --save
 ```
 
@@ -132,7 +132,7 @@ Store the map configurations in a JSON object. In this JSON object:
 
 - Specify `minValue` and `maxValue` within the `color` array under the `colorRange` object.
 
-```javascipt
+```java
 //Create your chart configuration
 const colorRange = {
     "minvalue": "0",
