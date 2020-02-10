@@ -4,108 +4,101 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Chart Using Ruby on Rails
 ---
 
-## Overview
-
-FusionCharts Suite XT includes the **FusionCharts server-side RoR** wrapper that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page to generate charts.
+FusionCharts Suite XT includes the **FusionCharts Server-side Ruby On Rails** wrapper that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page to generate charts.
 
 In this article, we will show you how to install and render a chart using the **FusionCharts Rails gem** wrapper.
 
-## Installation
+## Prerequisite
 
-In this article, we will show you how to download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
+We assume that you have Ruby and Rails installed in the system. If not, you can visit the [Rails Installation guide](https://guides.rubyonrails.org/v5.0/getting_started.html) and follow the installation steps. Check the ruby and rails versions by running the following commands in the terminal
 
-* Copy the `fusionCharts-rails.rb` from `integrations > rubyonrails > fusioncharts-wrapper` in your project folder.
+```bash
+$ ruby -v
+$ rails -v
+```
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from here.
+Now that you're done with the Rails installation, let's create a rails project.
 
-* Include the FusionCharts theme file to apply the style to the charts.
+- Enter the following commands in the terminal to create a new rails project.
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='local'>Local Files</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
+```bash
+rails new demoproject
+cd demoproject
+```
 
-<div class='tab cdn-tab active'>
-<pre><code class="language-php">
-// Include FusionCharts core file
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+- Install [Yarn](https://yarnpkg.com/lang/en/docs/install/) if you don't have it already otherwise rails will give an error.
 
-// Include FusionCharts Theme file
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+- Install Webpacker, a gem which wraps webpack - the popular JavaScript tool used for managing and bundling JavaScript code - and provides helpers to use the webpack in your Rails applications. Use the following command to do so:
 
-<div class='tab local-tab'>
-<pre><code class="language-php">
-// Include FusionCharts core file
-&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+```bash
+rails webpacker:install
+```
 
-// Include FusionCharts Theme file
-&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
-</div>
-</div>
+- Now, run the rails server. If it works, everything is set and you can move onto installing FusionCharts dependencies.
 
-* Add the FusionCharts Rail wrapper:
-  * Using RubyGems
-  * Manually
-* Include the FusionCharts Rails wrapper.
+```bash
+rails server
+```
 
-To add the FusionCharts Rails wrapper, use any of the following processes:
+## Installation & Including Dependencies
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-  <li class='active'><a data-toggle='rubygems'>RubyGems</a></li>
-  <li><a data-toggle='manual'>Manual</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab rubygems-tab active'>
-<div><strong>Add this line to your application’s `Gemfile`:</strong></div>
-<pre><code class="language-ruby">
-	gem ‘fusioncharts-rails’
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div><strong>RubyGems contain package information along with the files to install. On the command line prompt, execute the following command:</strong></div>
-<pre><code class="language-ruby">
-    $bundle
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div><strong>This command will automatically install the `fusioncharts-rails` gem. You can also install the gem directly from the command line prompt, without making any edits to the `Gemfile`. To do this, use the code line given below:</strong></div>
-<pre><code class="language-ruby">
-    $gem install fusioncharts-rails
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+Download the FusionCharts library to get the `FusionCharts rails gem` wrapper.
 
-<div class='tab manual-tab'>
-<div><strong>Step 1: </strong>Copy all files from `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder.</div>
-<div><strong>Step 2: </strong>Paste the copied files to the `lib` folder of your application</div>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</div>
+<a href="https://www.fusioncharts.com/download/fusioncharts-suite-xt?framework=js">Download FusionCharts library</a>
 
-</div>
-</div>
+FusionCharts rails gem wrapper can be added in two ways:
 
-That completes the installation of FusionCharts Suite and the Rails wrapper.
+### Manual
 
-## Create Your First Chart
+Copy the entire content from `integrations > rubyonrails > fusioncharts-wrapper` to your project's `lib` folder.
 
-Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
+### RubyGems
 
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+Enter the following command in the terminal:
 
-{% embed_chart getting-started-your-first-chart.js %}
+```bash
+gem install fusioncharts-rails
+```
 
-To understand the chart components, click [here](/understanding-fusioncharts).
+Once the FusionCharts rails gem wrapper is installed, we will add the JavaScript files. Follow the steps below:
 
-## Chart data
+- Copy the contents of `js` directory (fusioncharts-suite-xt > js) which contains all the javascript files and paste it in **app/javascript/src/fusioncharts folder**.
 
-The data to render the above chart is shown in the table below:
+- Add the following line in `app\views\layouts\application.html.erb` inside HEAD tag
+
+```html
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+```
+
+- In `app\javascript\packs\application.js` add the following code:
+
+```javascript
+var FusionCharts = require("src/fusioncharts/fusioncharts");
+
+// Require charts from fusioncharts
+var Charts = require("src/fusioncharts/fusioncharts.charts");
+
+// Require export module from fusioncharts
+var ExcelExport = require("src/fusioncharts/fusioncharts.excelexport");
+
+// Require theme from fusioncharts
+var FusionTheme = require("src/fusioncharts/themes/fusioncharts.theme.fusion");
+
+// Add charts and themes and export module as dependency
+Charts(FusionCharts);
+FusionTheme(FusionCharts);
+ExcelExport(FusionCharts);
+```
+
+- Use the following command, to create the controller and view:
+
+```bash
+$rails generate controller HomeController chartview
+```
+
+## Prepare the Data
+
+Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in tabular form below.
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
@@ -118,20 +111,12 @@ The data to render the above chart is shown in the table below:
 | US        | 30K                 |
 | China     | 30K                 |
 
-FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'Countries' as data labels along X-axis and 'No. of Oil Reserves' as data values along Y-axis. Let us prepare the data for a single-series chart.
 
-```json
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
-    // Chart Data
+FusionCharts accepts the data in **JSON** format. Now we add the data in the HomeController, in `app\controllers\home_controller.rb`.
+
+```bash
+:dataSource => {
     "data": [{
         "label": "Venezuela",
         "value": "290"
@@ -160,144 +145,100 @@ FusionCharts accepts data in **JSON** format. Following code is the JSON represe
 }
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+## Configure Your Chart
 
-In the above JSON data:
+Now that the data's ready, you are ready to work on styling, positioning and giving context to your chart. Now we will add the chart attributes in HomeController (`app\controllers\home_controller.rb`).
 
-- Create the `chart` object to define the elements of the chart.
+```javascript
+:dataSource => {
+    "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+}
+```
 
-- Set the `caption` and `subcaption` of the chart.
+## Create Your Chart
 
-- Set the value of `xAxisName` attribute to **Country**(first column of the table).
+Let's create a Column 2D Chart using the `FusionCharts rails gem` wrapper showing "Countries with most Oil Reserves".
 
-- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
+- Add the following code in the HomeController (`app\controllers\home_controller.rb`).
 
-- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
-  
-- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
+- The HomeController file will have the chart constructor, attributes and the datasource required to render the chart.
 
-- Set the `numberSuffix` attribute to set the unit of the values.
-
-- Set the `theme` attribute to apply the predefines themes to the chart.
-
-Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
-
-Now that you have the data in JSON format, let's see how to render the chart.
-
-## Render the Chart
-
-To render the chart, follow the steps below:
-
-1. Include the **FusionCharts Rails wrapper** in your project.
-
-2. Include the `fusioncharts` library.
-
-3. Include the FusionCharts theme file to apply the style to the charts.
-
-4. Set the chart appearance configuration to display the data in the chart.
-
-5. Create an array named `chartDataObj` of hash objects which stores data.
-
-6. Create a chart data template to store data in `label` and `value`.
-
-7. Set te chart data as JSON string.
-
-8. Create the chart instance and set the following:
-
-   * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-   * Set the `width` and `height` (in pixels).
-
-   * Set the container for the chart.
-
-   * Set the `dataFormat` as JSON.
-
-   * Embed the `json` data as the value of the `dataSource`.
-
-9. Create a container using `<div>` to render the chart.
-
-The full code for the above sample is:
-
-```ruby
-require 'json'
+```javascript
 require 'fusioncharts-rails'
-
-class FirstChart
-    def self.getChart
-
-        # Chart appearance configuration
-        chartAppearancesConfigObj = Hash.new
-        chartAppearancesConfigObj = { 
-                        "caption" => "Countries With Most Oil Reserves [2017-18]",
-                        "subCaption" => "In MMbbl = One Million barrels", 
-                        "xAxisName" => "Country",
-                        "yAxisName" => "Reserves (MMbbl)", 
-                        "numberSuffix" => "K", 
-                        "theme" => "fusion"
-                    }
-
-        # An array of hash objects which stores data
-        chartDataObj = [
-                    {"Venezuela" => "290"},
-                    {"Saudi" => "260"},
-                    {"Canada" => "180"},
-                    {"Iran" => "140"},
-                    {"Russia" => "115"},
-                    {"UAE" => "100"},
-                    {"US" => "30"},
-                    {"China" => "30"}
-                ]
-
-        # Chart data template to store data in "Label" & "Value" format
-        labelValueTemplate = "{ \"label\": \"%s\", \"value\": \"%s\" },"
-
-        # Chart data as JSON string
-        labelValueJSONStr = ""
-
-        chartDataObj.each {|item| 
-            data = labelValueTemplate % [item.keys[0], item[item.keys[0]]]
-            labelValueJSONStr.concat(data)
+class HomeController < ApplicationController
+  # layout false
+  def HomeView
+    @chart = Fusioncharts::Chart.new({
+        :height => 400,
+        :width => 600,
+        :id => 'chart',
+        :type => 'MSColumn2D',
+        :renderAt => 'chart-container',
+        :dataSource => {
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
         }
-
-        # Removing trailing comma character
-        labelValueJSONStr = labelValueJSONStr.chop
-
-        # Chart JSON data template
-        chartJSONDataTemplate = "{ \"chart\": %s, \"data\": [%s] }"
-
-        # Final Chart JSON data from template
-        chartJSONDataStr = chartJSONDataTemplate % [chartAppearancesConfigObj.to_json, labelValueJSONStr]
-
-        # Chart rendering 
-        chart = Fusioncharts::Chart.new({
-                width: "700",
-                height: "400",
-                type: "column2d",
-                renderAt: "chartContainer",
-                dataSource: chartJSONDataStr
-            })
-
     end
 end
 ```
 
-The HTML template of the above sample is shown below:
+- Go to the view page in `app\views\home\HomeView.html.erb` . This will have HTML template required to render the chart. Copy the code given below and paste it in this file.
 
-```HTML
-<!-- Filename: app/views/examples/firstchart.html.erb -->
-<h3>My Chart</h3>
+```html
 <div id="chart-container"></div>
-<%=@myChart.render() %>
+<%= @chart.render() %>
 ```
 
-That's it! Your first chart using **FusionCharts Rails** wrapper is ready. When you run this HTML page now, you should see a chart representing your data.
+## Render the Chart
 
-## Problem rendering the chart?
+With the container for the chart created in the `HomeView.html.erb`, run the following command to rub the rails server:
 
-In case there is an error, and you are unable to see the chart, check for the following:
+```bash
+$rails server
+```
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+Open the URL ([http://localhost:3000/](http://localhost:3000/)) in the browser, and you'll be able to see the chart as shown below:
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+{% embed_chart getting-started-your-first-chart.js %}
 
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
+
+That's it! Your first chart using `FusionCharts rails gem` wrapper is ready.
