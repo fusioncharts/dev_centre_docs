@@ -158,43 +158,20 @@ Now that the data is ready, let's work on the styling, positioning and giving yo
 ```javascript
 // Create a JSON object to store the chart configurations
 const chartConfigs = {
-<<<<<<< HEAD
-    //Set the chart type
-    type: "column2d",
-   //Specify the width of the chart
-    width: "700",
-   //Specify the height of the chart
-    height: "400",
-    //Set the type of data
-    dataFormat: "json",
-    chart: {
-        //Set the chart caption
-        caption: "Countries With Most Oil Reserves [2017-18]",
-        //Set the chart subcaption
-        subCaption: "In MMbbl = One Million barrels",
-        //Set the x-axis name
-        xAxisName: "Country",
-        //Set the y-axis name
-        yAxisName: "Reserves (MMbbl)",
-        numberSuffix: "K",
-        //Set the theme for your chart
-        theme: "fusion"
-=======
-    type: "column2d",    //Set the chart type
-    width: "700",        //Set the chart width
-    height: "400",       //Set the chart height
-    dataFormat: "json",  //Set the type of data
-    chart: {
-        caption: "Countries With Most Oil Reserves [2017-18]",   //Set the chart caption
-        subCaption: "In MMbbl = One Million barrels",            //Set the chart subcaption
-        xAxisName: "Country",                 //Set the x-axis name
-        yAxisName: "Reserves (MMbbl)",        //Set the y-axis name
-        numberSuffix: "K",
-        theme: "fusion"                       //Set the theme for your chart
->>>>>>> fcf08543b2a43710fc4d1cd77daa7d401879e66f
-    },
-    // Chart Data - from step 2
-    "data": chartData
+  type: "column2d", //Set the chart type
+  width: "700", //Set the chart width
+  height: "400", //Set the chart height
+  dataFormat: "json", //Set the type of data
+  chart: {
+    caption: "Countries With Most Oil Reserves [2017-18]", //Set the chart caption
+    subCaption: "In MMbbl = One Million barrels", //Set the chart subcaption
+    xAxisName: "Country", //Set the x-axis name
+    yAxisName: "Reserves (MMbbl)", //Set the y-axis name
+    numberSuffix: "K",
+    theme: "fusion" //Set the theme for your chart
+  },
+  // Chart Data - from step 2
+  data: chartData
 };
 ```
 

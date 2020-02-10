@@ -140,7 +140,7 @@ let data = [
 ]
 ```
 
-Create a new `data.json` file, and copy the complete data from [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/online-sales-single-series/data.json).
+Create a new `data.json` file, and copy the complete data from [here](https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/master/assets/datasources/fusiontime/examples/online-sales-single-series/data.json).
 
 > It is not mandatory to create a `data.json` file. You could also do the same in your HTML file.
 

@@ -9,7 +9,7 @@ FusionCharts is a JavaScript charting library that lets you create interactive c
 
 In this page, you will see how to install FusionCharts and render a chart using the `angularjs-fusionCharts` directive.
 
->The instructions shown here are for **Angular v1.7** and below. For **Angular 2** and above, refer to the [Angular2+](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular) guide.
+> The instructions shown here are for **Angular v1.7** and below. For **Angular 2** and above, refer to the [Angular2+](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular) guide.
 
 ## Prerequisite
 
@@ -53,8 +53,16 @@ var FusionCharts = require('fusioncharts');
 // Require Chart modules
 var Charts = require('fusioncharts/fusioncharts.charts');
 
+//Require AngularJS module
+var AngularJS = require('angularjs-fusioncharts');
+
+// Require Fusion Theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
 // Initialize Charts with FusionCharts instance
 Charts(FusionCharts);
+AngularJS(FusionCharts);
+FusionTheme(FusionCharts);
 
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
@@ -193,6 +201,7 @@ const dataSource = {
     }
 };
 ```
+
 > The 'type' attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](/chart-guide/list-of-charts).
 
 ## Render the chart
@@ -219,44 +228,48 @@ var FusionCharts = require('fusioncharts');
 // Require Chart modules
 var Charts = require('fusioncharts/fusioncharts.charts');
 
+//Require AngularJS module
+var AngularJS = require('angularjs-fusioncharts');
+
 // Require Fusion Theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
 // Initialize Charts with FusionCharts instance
 Charts(FusionCharts);
-
+AngularJS(FusionCharts);
 FusionTheme(FusionCharts);
+
 var app = angular.module('myApp', ['ng-fusioncharts']);
 
 //STEP 2 - Chart Data
 const chartData = [
-    { label: 'Venezuela', value: '290' },
-    { label: 'Saudi', value: '260' },
-    { label: 'Canada', value: '180' },
-    { label: 'Iran', value: '140' },
-    { label: 'Russia', value: '115' },
-    { label: 'UAE', value: '100' },
-    { label: 'US', value: '30' },
-    { label: 'China', value: '30' }
+{ label: 'Venezuela', value: '290' },
+{ label: 'Saudi', value: '260' },
+{ label: 'Canada', value: '180' },
+{ label: 'Iran', value: '140' },
+{ label: 'Russia', value: '115' },
+{ label: 'UAE', value: '100' },
+{ label: 'US', value: '30' },
+{ label: 'China', value: '30' }
 ];
 
 // STEP 3 - Chart Configurations
 const dataSource = {
-    chart: {
-        caption: "Countries With Most Oil Reserves [2017-18]",
-        subCaption: "In MMbbl = One Million barrels",
-        xAxisName: "Country",
-        yAxisName: "Reserves (MMbbl)",
-        numberSuffix: "K",
-        theme: "fusion",
-    },
-    // Chart Data - from step 2
-    "data": chartData
+chart: {
+caption: "Countries With Most Oil Reserves [2017-18]",
+subCaption: "In MMbbl = One Million barrels",
+xAxisName: "Country",
+yAxisName: "Reserves (MMbbl)",
+numberSuffix: "K",
+theme: "fusion",
+},
+// Chart Data - from step 2
+"data": chartData
 };
 
 app.controller('MyController', [
 '$scope',
- function($scope) {
+function($scope) {
 $scope.dataSource = dataSource;
 }
 ]);
@@ -339,6 +352,7 @@ $scope.dataSource = dataSource;
             $scope.myDataSource = dataSource
         }]);
     &lt;/script&gt;
+
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
@@ -397,6 +411,7 @@ $scope.dataSource = dataSource;
             $scope.myDataSource = dataSource
         }]);
     &lt;/script&gt;
+
 &lt;/head&gt;
 
 &lt;body ng-app="myApp"&gt;
