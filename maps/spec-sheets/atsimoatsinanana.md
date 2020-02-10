@@ -11,8 +11,8 @@ Dimensions (Width x Height): 600x460
 
 | ID       | Short label | Label        |
 | -------- | ----------- | ------------ |
-| MG.FI.VN | VN          | Vondrozo     |
-| MG.FI.FF | FF          | Farafangana  |
-| MG.FI.MA | MA          | Midongy-Sud  |
-| MG.FI.VA | VA          | Vangaindrano |
-| MG.FI.BE | BE          | Befotaka     |
+MG.FI.BE|BE|Befotaka Sud
+MG.FI.FF|FF|Farafangana
+MG.FI.MA|MA|Midongy-Atsimo
+MG.FI.VA|VA|Vangaindrano
+MG.FI.VN|VN|Vondrozo

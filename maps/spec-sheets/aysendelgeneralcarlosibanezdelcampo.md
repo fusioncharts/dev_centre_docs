@@ -11,7 +11,7 @@ Dimensions (Width x Height): 600x460
 
 | ID       | Short label | Label                        |
 | -------- | ----------- | ---------------------------- |
-| CL.AI.AI | AI          | Provincia de Aysén           |
-| CL.AI.CI | CI          | Provincia de Coyhaique       |
-| CL.AI.GC | GC          | Provincia de General Carrera |
-| CL.AI.CP | CP          | Provincia de Capitán Prat    |
+CL.AI.AI|AI|Aysén
+CL.AI.CP|CP|Capitán Prat
+CL.AI.CI|CI|Coyhaique
+CL.AI.GC|GC|General Carrera
