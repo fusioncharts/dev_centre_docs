@@ -1,56 +1,74 @@
 {
 	"header": "FusionTime Methods",
 	"description": "FusionTime offers wide variety of methods for controlling the chart behaviour ranging from exporting, loading data, resizing, set binning of the time-series charts etc. Find the comprehensive list of methods below.",
-	"methods": [{
+	"methods": [
+		{
 			"name": "setBinning",
 			"description": "Overrides the binning rules followed by the chart with the binning rules provided to this API. If some time unit is missing from the input binning rules, then the default multipliers for that time unit will be used by the chart. If any incorrect multipliers are provided to a unit, they will be ignored.",
-			"params": [{
-				"name": "Name",
-				"header": "setBinning Parameters",
-				"subparams": [{
-						"name": "millisecond",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the millisecond unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "second",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the second unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "minute",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the minute unit",
-						"defaultvalue": ""
-					},
-					{
-						"name": "hour",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the hour unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "day",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the day unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "month",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the month unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "year",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the year unit.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "setBinning Parameters",
+					"subparams": [
+						{
+							"name": "millisecond",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the millisecond unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "second",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the second unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "minute",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the minute unit",
+							"defaultvalue": ""
+						},
+						{
+							"name": "hour",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the hour unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "day",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the day unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "month",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the month unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "year",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the year unit.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -64,53 +82,70 @@
 		{
 			"name": "getBinning",
 			"description": "Returns the binning rules that are being followed by the chart. If any custom binning rules are in effect, the returned rules will take into account the modifications made by them as well.",
-			"params": [{
-				"name": "Name",
-				"header": "getBinning Parameters",
-				"subparams": [{
-						"name": "millisecond",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the millisecond unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "second",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the second unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "minute",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the minute unit",
-						"defaultvalue": ""
-					},
-					{
-						"name": "hour",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the hour unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "day",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the day unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "month",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the month unit.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "year",
-						"type": ["number"],
-						"description": "All the multipliers applicable for the year unit.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "getBinning Parameters",
+					"subparams": [
+						{
+							"name": "millisecond",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the millisecond unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "second",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the second unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "minute",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the minute unit",
+							"defaultvalue": ""
+						},
+						{
+							"name": "hour",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the hour unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "day",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the day unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "month",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the month unit.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "year",
+							"type": [
+								"number"
+							],
+							"description": "All the multipliers applicable for the year unit.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -124,23 +159,30 @@
 		{
 			"name": "setCurrentBin",
 			"description": "Sets the provided unit and multiplier as the current binning in the chart by adjusting spread of time on the focus canvases. The provided multiplier must be a valid multiplier for the given time unit (as per the currently active binning rules in the chart). If it is not, then there is no visible effect of calling this method. If the multiplier is not provided, it is assumed to be 1. If the unit is not provided, there should be no visible effect of calling this method.",
-			"params": [{
-				"name": "Name",
-				"header": "setCurrentBin Parameters",
-				"subparams": [{
-						"name": "unit",
-						"type": ["string"],
-						"description": "The unit of time to be represented in each bin - `millisecond`, `second`, `minute`, `hour`, `day`, `month` or `year`.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "multiplier",
-						"type": ["number"],
-						"description": "The multiplier for the `unit` to be represented in each bin.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "setCurrentBin Parameters",
+					"subparams": [
+						{
+							"name": "unit",
+							"type": [
+								"string"
+							],
+							"description": "The unit of time to be represented in each bin - `millisecond`, `second`, `minute`, `hour`, `day`, `month` or `year`.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "multiplier",
+							"type": [
+								"number"
+							],
+							"description": "The multiplier for the `unit` to be represented in each bin.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -154,23 +196,30 @@
 		{
 			"name": "getCurrentBin",
 			"description": "Provides information about the binning applied in the chart when the method was invoked.",
-			"params": [{
-				"name": "Name",
-				"header": "getCurrentBin Parameters",
-				"subparams": [{
-						"name": "unit",
-						"type": ["string"],
-						"description": "The unit of time to be represented in each bin - `millisecond`, `second`, `minute`, `hour`, `day`, `month` or `year`.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "multiplier",
-						"type": ["number"],
-						"description": "The multiplier for the `unit` to be represented in each bin.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "getCurrentBin Parameters",
+					"subparams": [
+						{
+							"name": "unit",
+							"type": [
+								"string"
+							],
+							"description": "The unit of time to be represented in each bin - `millisecond`, `second`, `minute`, `hour`, `day`, `month` or `year`.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "multiplier",
+							"type": [
+								"number"
+							],
+							"description": "The multiplier for the `unit` to be represented in each bin.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -184,23 +233,30 @@
 		{
 			"name": "setTimeSelection",
 			"description": "Updates the start and end time of the time selection on the focus canvases. This will also result in a change across all of the chart’s components accordingly.",
-			"params": [{
-				"name": "Name",
-				"header": "setTimeSelection Parameters",
-				"subparams": [{
-						"name": "start",
-						"type": ["string"],
-						"description": "The UNIX timestamp corresponding to the time at which to start the time selection visible on the focus canvases.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "end",
-						"type": ["number"],
-						"description": "The UNIX timestamp corresponding to the time at which to end the time selection visible on the focus canvases.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "setTimeSelection Parameters",
+					"subparams": [
+						{
+							"name": "start",
+							"type": [
+								"string"
+							],
+							"description": "The UNIX timestamp corresponding to the time at which to start the time selection visible on the focus canvases.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "end",
+							"type": [
+								"number"
+							],
+							"description": "The UNIX timestamp corresponding to the time at which to end the time selection visible on the focus canvases.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -214,23 +270,30 @@
 		{
 			"name": "getTimeSelection",
 			"description": "Provides start and end UNIX timestamps of the visible window of the time axis.",
-			"params": [{
-				"name": "Name",
-				"header": "getTimeSelection Parameters",
-				"subparams": [{
-						"name": "start",
-						"type": ["string"],
-						"description": "The UNIX timestamp corresponding to the time at which to start the time selection visible on the focus canvases.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "end",
-						"type": ["number"],
-						"description": "The UNIX timestamp corresponding to the time at which to end the time selection visible on the focus canvases.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "getTimeSelection Parameters",
+					"subparams": [
+						{
+							"name": "start",
+							"type": [
+								"string"
+							],
+							"description": "The UNIX timestamp corresponding to the time at which to start the time selection visible on the focus canvases.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "end",
+							"type": [
+								"number"
+							],
+							"description": "The UNIX timestamp corresponding to the time at which to end the time selection visible on the focus canvases.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -244,23 +307,32 @@
 		{
 			"name": "resizeTo",
 			"description": "Resizes the chart to the specified width and height. The values for the width and height are passed, in pixels or percentage, as parameters to this function. If the function is called without any parameters, it __returns__ the current value of the chart width and height. \n\n This function is useful in controlling the chart dimensions based on changes in the dimensions of a resizable dialog box. It is also useful in resizing charts for responsive layouts, based on device orientation change. \n\n \n\n >When the chart dimensions are set in percentage, the chart partially redraws itself when the chart container is resized. The chart uses a very low-profile polling, at an interval of __300 ms__ to check whether the container has effectively resized. \n\n",
-			"params": [{
-				"name": "Name",
-				"header": "resizeTo Parameters",
-				"subparams": [{
-						"name": "width",
-						"type": ["number", "percent"],
-						"description": "Chart width to set, in pixels or percentage",
-						"defaultvalue": ""
-					},
-					{
-						"name": "height",
-						"type": ["number", "percent"],
-						"description": "Chart height to set, in pixels or percentage",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "resizeTo Parameters",
+					"subparams": [
+						{
+							"name": "width",
+							"type": [
+								"number",
+								"percent"
+							],
+							"description": "Chart width to set, in pixels or percentage",
+							"defaultvalue": ""
+						},
+						{
+							"name": "height",
+							"type": [
+								"number",
+								"percent"
+							],
+							"description": "Chart height to set, in pixels or percentage",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -274,16 +346,22 @@
 		{
 			"name": "lockResize",
 			"description": "Allows users to controls whether the chart will be dynamically resizable or not when rendered using percent height and width.",
-			"params": [{
-				"name": "Name",
-				"header": "lockResize Parameters",
-				"subparams": [{
-					"name": "state",
-					"type": ["boolean"],
-					"description": "Setting this parameter to __true__ will lock the automatic percentage-based resizing. If resize is already locked, sending `false` unlocks it.",
-					"defaultvalue": ""
-				}]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "lockResize Parameters",
+					"subparams": [
+						{
+							"name": "state",
+							"type": [
+								"boolean"
+							],
+							"description": "Setting this parameter to __true__ will lock the automatic percentage-based resizing. If resize is already locked, sending `false` unlocks it.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -297,23 +375,30 @@
 		{
 			"name": "getSVGString",
 			"description": "Returns the SVG string of a chart. This function can be called only after the chart has rendered.",
-			"params": [{
-				"name": "Name",
-				"header": "getSVGString Parameters",
-				"subparams": [{
-						"name": "callBackFN( svgString )",
-						"type": ["getSVGString-callBack"],
-						"description": "callBackFN is called only when `getSVGString()` completes its execution.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "keepImages",
-						"type": ["keepImages"],
-						"description": "To get the images present in the chart from the SVG string, set the parameter of `keepImages` object to `1`.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "getSVGString Parameters",
+					"subparams": [
+						{
+							"name": "callBackFN( svgString )",
+							"type": [
+								"getSVGString-callBack"
+							],
+							"description": "callBackFN is called only when `getSVGString()` completes its execution.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "keepImages",
+							"type": [
+								"keepImages"
+							],
+							"description": "To get the images present in the chart from the SVG string, set the parameter of `keepImages` object to `1`.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -327,148 +412,197 @@
 		{
 			"name": "batchExport",
 			"description": "Exports multiple charts in a single image. This method either takes __no arguments__ or takes __an object as an argument__. \r\r",
-			"params": [{
-				"name": "Name",
-				"header": "batchExport Parameters",
-				"subparams": [{
-						"name": "imageWidth",
-						"type": ["number"],
-						"description": "Width of the exported image (of the charts)",
-						"defaultvalue": "Maximum chart width + 10"
-					},
-					{
-						"name": "imageHeight",
-						"type": ["number"],
-						"description": "Height of the exported image (of the charts)",
-						"defaultvalue": "(Total height of all charts + 5) * (number of charts + 1)"
-					},
-					{
-						"name": "charts",
-						"type": ["object"],
-						"description": "The configuration required for the chart(s) being exported can be provided in this object using the attributes given below:",
-						"defaultvalue": ""
-					},
-					{
-						"name": "charts.id",
-						"type": ["string"],
-						"description": "Valid FusionCharts ID, to attach the chart on the main image",
-						"defaultvalue": ""
-					},
-					{
-						"name": "charts.x",
-						"type": ["number"],
-						"description": "x-coordinate for positioning the exported image",
-						"defaultvalue": "5"
-					},
-					{
-						"name": "charts.y",
-						"type": ["number"],
-						"description": "y-coordinate for positioning the exported image",
-						"defaultvalue": "previous chart's y-coordinate + 5"
-					},
-					{
-						"name": "charts.width",
-						"type": ["number"],
-						"description": "Custom width for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
-						"defaultvalue": "Current chart width"
-					},
-					{
-						"name": "charts.height",
-						"type": ["number"],
-						"description": "Custom height for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
-						"defaultvalue": "Current chart height"
-					},
-					{
-						"name": "background",
-						"type": ["object"],
-						"description": "The configuration required for the exported image's background can be provided in this object using the attributes given below:",
-						"defaultvalue": ""
-					},
-					{
-						"name": "background.bgColor",
-						"type": ["hexcolor"],
-						"description": "Background color for the exported image",
-						"defaultvalue": "#ffffff"
-					},
-					{
-						"name": "background.bgImage",
-						"type": ["string"],
-						"description": "Background image for the exported images",
-						"defaultvalue": ""
-					},
-					{
-						"name": "background.bgImageAlpha",
-						"type": ["number"],
-						"description": "Transparency of the background image",
-						"defaultvalue": ""
-					},
-					{
-						"name": "background.bgImageX",
-						"type": ["number"],
-						"description": "Starting x-coordinate for positioning the background image",
-						"defaultvalue": ""
-					},
-					{
-						"name": "background.bgImageY",
-						"type": ["number"],
-						"description": "Starting y-coordinate for positioning the background image",
-						"defaultvalue": ""
-					},
-					{
-						"name": "background.bgImageWidth",
-						"type": ["number"],
-						"description": "Width of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
-						"defaultvalue": "Original width of the image"
-					},
-					{
-						"name": "background.bgImageHeight",
-						"type": ["number"],
-						"description": "Height of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
-						"defaultvalue": "Original height of the image"
-					},
-					{
-						"name": "exportTargetWindow",
-						"type": ["string"],
-						"description": "Set to `_self` to open the exported image in the same window \n\n Set to `_blank` to open the exported image in a new window",
-						"defaultvalue": "_self"
-					},
-					{
-						"name": "exportAction",
-						"type": ["string"],
-						"description": "Set to `_save` to save the exported image on the server \n\n Set to `_download` to send back the image to the client as a download",
-						"defaultvalue": "_download"
-					},
-					{
-						"name": "exportFileName",
-						"type": ["string"],
-						"description": "Default file name (excluding the extension) for the exported image",
-						"defaultvalue": ""
-					},
-					{
-						"name": "exportHandler",
-						"type": ["string"],
-						"description": "__For server-side exporting__: Path of the export handler (the ready-to-use scripts provided by FusionTime) \n\n __For client-side exporting__: DOM ID of the FusionTime Export Component embedded in the web page, along with the chart",
-						"defaultvalue": "_download"
-					},
-					{
-						"name": "exportFormats",
-						"type": ["string"],
-						"description": "List of formats in which the chart can be exported \n\n The formats are separated using the *|* (pipe) character.",
-						"defaultvalue": "_download"
-					},
-					{
-						"name": "exportCallback",
-						"type": ["string"],
-						"description": "Name of the JavaScript function that is called when the export process finishes"
-					},
-					{
-						"name": "exportAtClientSide",
-						"type": ["string"],
-						"description": "Set to `1` to enable client-side exporting",
-						"defaultvalue": "_download"
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "batchExport Parameters",
+					"subparams": [
+						{
+							"name": "imageWidth",
+							"type": [
+								"number"
+							],
+							"description": "Width of the exported image (of the charts)",
+							"defaultvalue": "Maximum chart width + 10"
+						},
+						{
+							"name": "imageHeight",
+							"type": [
+								"number"
+							],
+							"description": "Height of the exported image (of the charts)",
+							"defaultvalue": "(Total height of all charts + 5) * (number of charts + 1)"
+						},
+						{
+							"name": "charts",
+							"type": [
+								"object"
+							],
+							"description": "The configuration required for the chart(s) being exported can be provided in this object using the attributes given below:",
+							"defaultvalue": ""
+						},
+						{
+							"name": "charts.id",
+							"type": [
+								"string"
+							],
+							"description": "Valid FusionCharts ID, to attach the chart on the main image",
+							"defaultvalue": ""
+						},
+						{
+							"name": "charts.x",
+							"type": [
+								"number"
+							],
+							"description": "x-coordinate for positioning the exported image",
+							"defaultvalue": "5"
+						},
+						{
+							"name": "charts.y",
+							"type": [
+								"number"
+							],
+							"description": "y-coordinate for positioning the exported image",
+							"defaultvalue": "previous chart's y-coordinate + 5"
+						},
+						{
+							"name": "charts.width",
+							"type": [
+								"number"
+							],
+							"description": "Custom width for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+							"defaultvalue": "Current chart width"
+						},
+						{
+							"name": "charts.height",
+							"type": [
+								"number"
+							],
+							"description": "Custom height for the exported image \n\n __Note__: If only one value from the width and the height of the chart is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+							"defaultvalue": "Current chart height"
+						},
+						{
+							"name": "background",
+							"type": [
+								"object"
+							],
+							"description": "The configuration required for the exported image's background can be provided in this object using the attributes given below:",
+							"defaultvalue": ""
+						},
+						{
+							"name": "background.bgColor",
+							"type": [
+								"hexcolor"
+							],
+							"description": "Background color for the exported image",
+							"defaultvalue": "#ffffff"
+						},
+						{
+							"name": "background.bgImage",
+							"type": [
+								"string"
+							],
+							"description": "Background image for the exported images",
+							"defaultvalue": ""
+						},
+						{
+							"name": "background.bgImageAlpha",
+							"type": [
+								"number"
+							],
+							"description": "Transparency of the background image",
+							"defaultvalue": ""
+						},
+						{
+							"name": "background.bgImageX",
+							"type": [
+								"number"
+							],
+							"description": "Starting x-coordinate for positioning the background image",
+							"defaultvalue": ""
+						},
+						{
+							"name": "background.bgImageY",
+							"type": [
+								"number"
+							],
+							"description": "Starting y-coordinate for positioning the background image",
+							"defaultvalue": ""
+						},
+						{
+							"name": "background.bgImageWidth",
+							"type": [
+								"number"
+							],
+							"description": "Width of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+							"defaultvalue": "Original width of the image"
+						},
+						{
+							"name": "background.bgImageHeight",
+							"type": [
+								"number"
+							],
+							"description": "Height of the background image \n\n __Note__: If only one value from the width and the height is provided, the value of the other is calculated in a way that the aspect ratio is maintained.",
+							"defaultvalue": "Original height of the image"
+						},
+						{
+							"name": "exportTargetWindow",
+							"type": [
+								"string"
+							],
+							"description": "Set to `_self` to open the exported image in the same window \n\n Set to `_blank` to open the exported image in a new window",
+							"defaultvalue": "_self"
+						},
+						{
+							"name": "exportAction",
+							"type": [
+								"string"
+							],
+							"description": "Set to `_save` to save the exported image on the server \n\n Set to `_download` to send back the image to the client as a download",
+							"defaultvalue": "_download"
+						},
+						{
+							"name": "exportFileName",
+							"type": [
+								"string"
+							],
+							"description": "Default file name (excluding the extension) for the exported image",
+							"defaultvalue": ""
+						},
+						{
+							"name": "exportHandler",
+							"type": [
+								"string"
+							],
+							"description": "__For server-side exporting__: Path of the export handler (the ready-to-use scripts provided by FusionTime) \n\n __For client-side exporting__: DOM ID of the FusionTime Export Component embedded in the web page, along with the chart",
+							"defaultvalue": "_download"
+						},
+						{
+							"name": "exportFormats",
+							"type": [
+								"string"
+							],
+							"description": "List of formats in which the chart can be exported \n\n The formats are separated using the *|* (pipe) character.",
+							"defaultvalue": "_download"
+						},
+						{
+							"name": "exportCallback",
+							"type": [
+								"string"
+							],
+							"description": "Name of the JavaScript function that is called when the export process finishes"
+						},
+						{
+							"name": "exportAtClientSide",
+							"type": [
+								"string"
+							],
+							"description": "Set to `1` to enable client-side exporting",
+							"defaultvalue": "_download"
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -482,16 +616,22 @@
 		{
 			"name": "getChartData",
 			"description": "Fetches the data set when a chart has been rendered.",
-			"params": [{
-				"name": "Name",
-				"header": "getChartData Parameters",
-				"subparams": [{
-					"name": "format",
-					"type": ["dataFormats"],
-					"description": "Format in which chart data has to be retrieved",
-					"defaultvalue": ""
-				}]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "getChartData Parameters",
+					"subparams": [
+						{
+							"name": "format",
+							"type": [
+								"dataFormats"
+							],
+							"description": "Format in which chart data has to be retrieved",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -505,23 +645,31 @@
 		{
 			"name": "setChartData",
 			"description": "Sets the data for a chart. \n\nWhen this function is called on a chart that is already rendered, the chart is instantly updated with the new data. When it is used to set data for a chart before it has rendered, data is initially stored internally and is passed to the chart when it is rendered. \n\n \n\n >A preferrable alternative to using the `setChartData()` method is to pass chart data to the `dataSource` attribute of the FusionTime constructor. \n\n",
-			"params": [{
-				"name": "Name",
-				"header": "setChartData Parameters",
-				"subparams": [{
-						"name": "data",
-						"type": ["string", "object"],
-						"description": "Data to be passed to the chart",
-						"defaultvalue": ""
-					},
-					{
-						"name": "format",
-						"type": ["dataFormats"],
-						"description": "Format of the data being passed. If the value for this parameter is not a valid [dataFormat](/api/fusioncharts/fusioncharts-properties#dataFormats), then the default or previously set data format is assumed. \n\n >If the data format is already known, then the [setJSONData()](/api/fusioncharts/fusioncharts-methods#setJSONData) or the [setXMLData()](/api/fusioncharts/fusioncharts-methods#setXMLData) methods can be used. \n\n",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "setChartData Parameters",
+					"subparams": [
+						{
+							"name": "data",
+							"type": [
+								"string",
+								"object"
+							],
+							"description": "Data to be passed to the chart",
+							"defaultvalue": ""
+						},
+						{
+							"name": "format",
+							"type": [
+								"dataFormats"
+							],
+							"description": "Format of the data being passed. If the value for this parameter is not a valid [dataFormat](/api/fusioncharts/fusioncharts-properties#dataFormats), then the default or previously set data format is assumed. \n\n >If the data format is already known, then the [setJSONData()](/api/fusioncharts/fusioncharts-methods#setJSONData) or the [setXMLData()](/api/fusioncharts/fusioncharts-methods#setXMLData) methods can be used. \n\n",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -535,16 +683,23 @@
 		{
 			"name": "getChartAttribute",
 			"description": "Fetches value of chart attributes explicitly applied to the root `chart` object (or the `<chart>` node element).",
-			"params": [{
-				"name": "Name",
-				"header": "getChartAttribute Parameters",
-				"subparams": [{
-					"name": "attribute",
-					"type": ["string", "array"],
-					"description": "To fetch the value of a single attribute, pass the attribute name as a string. For multiple attributes, pass an array of attribute names. Values will be returned in the order of the attribute names in the array.",
-					"defaultvalue": ""
-				}]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "getChartAttribute Parameters",
+					"subparams": [
+						{
+							"name": "attribute",
+							"type": [
+								"string",
+								"array"
+							],
+							"description": "To fetch the value of a single attribute, pass the attribute name as a string. For multiple attributes, pass an array of attribute names. Values will be returned in the order of the attribute names in the array.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -558,23 +713,31 @@
 		{
 			"name": "setChartAttribute",
 			"description": "Updates a chart's attributes with a new attribute-value pair, thus updating the chart's data definition root (the `<chart>` node in the XML data or the `chart` object in the JSON data).",
-			"params": [{
-				"name": "Name",
-				"header": "setChartAttribute Parameters",
-				"subparams": [{
-						"name": "attributes",
-						"type": ["object", "string"],
-						"description": "To set/update multiple attributes at once, an object containing all the key-value pairs is passed. In case of a single value, a string that is the key (the attribute name) is passed.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "value",
-						"type": ["string"],
-						"description": "If the `attributes` parameter is a single string value, the `value` parameter contains the value for that key.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "setChartAttribute Parameters",
+					"subparams": [
+						{
+							"name": "attributes",
+							"type": [
+								"object",
+								"string"
+							],
+							"description": "To set/update multiple attributes at once, an object containing all the key-value pairs is passed. In case of a single value, a string that is the key (the attribute name) is passed.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "value",
+							"type": [
+								"string"
+							],
+							"description": "If the `attributes` parameter is a single string value, the `value` parameter contains the value for that key.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -588,23 +751,31 @@
 		{
 			"name": "addEventListener",
 			"description": "Used to attach an event to the chart.",
-			"params": [{
-				"name": "Name",
-				"header": "addEventListener Parameters",
-				"subparams": [{
-						"name": "type",
-						"type": ["string", "array"],
-						"description": "Type (name) of the event to listen to. To register the listener for multiple events in the same registration call, provide all event names as an array.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "listener",
-						"type": ["eventListener"],
-						"description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "addEventListener Parameters",
+					"subparams": [
+						{
+							"name": "type",
+							"type": [
+								"string",
+								"array"
+							],
+							"description": "Type (name) of the event to listen to. To register the listener for multiple events in the same registration call, provide all event names as an array.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "listener",
+							"type": [
+								"eventListener"
+							],
+							"description": "Function to be exceuted when the event is triggered. If multiple listeners are bound to an event, the listeners are executed in the order of definition, with arguments specific to the triggered event. \n\n >Click [here](http://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to read more about the eventListener arguments.\n\n",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -618,23 +789,31 @@
 		{
 			"name": "removeEventListener",
 			"description": "Used to remove an event attached to the chart.",
-			"params": [{
-				"name": "Name",
-				"header": "removeEventListener Parameters",
-				"subparams": [{
-						"name": "type",
-						"type": ["string", "array"],
-						"description": "Type (name) of the event whose listener(s) has to be removed",
-						"defaultvalue": ""
-					},
-					{
-						"name": "listener",
-						"type": ["function"],
-						"description": "Listener function to remove",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "removeEventListener Parameters",
+					"subparams": [
+						{
+							"name": "type",
+							"type": [
+								"string",
+								"array"
+							],
+							"description": "Type (name) of the event whose listener(s) has to be removed",
+							"defaultvalue": ""
+						},
+						{
+							"name": "listener",
+							"type": [
+								"function"
+							],
+							"description": "Listener function to remove",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -648,16 +827,22 @@
 		{
 			"name": "getObjectReference",
 			"description": "Return the DOM element created by FusionTime in which charts will be rendered `<span>`",
-			"params": [{
-				"name": "Name",
-				"header": "getObjectReference Parameters",
-				"subparams": [{
-					"name": "id",
-					"type": ["string"],
-					"description": "ID of the chart, whose `DOMElement` is to be referenced.",
-					"defaultvalue": ""
-				}]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "getObjectReference Parameters",
+					"subparams": [
+						{
+							"name": "id",
+							"type": [
+								"string"
+							],
+							"description": "ID of the chart, whose `DOMElement` is to be referenced.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -671,23 +856,30 @@
 		{
 			"name": "clone",
 			"description": "Creates a copy of a chart instance, creating a new chart with identical construction properties of the chart being cloned. The cloned chart, assigned an auto-generated ID, is rendered in a container DOM element that is explicitly provided.",
-			"params": [{
-				"name": "Name",
-				"header": "clone Parameters",
-				"subparams": [{
-						"name": "overrides",
-						"type": ["object"],
-						"description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new FusionTime instance.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "argsOnly",
-						"type": ["boolean"],
-						"description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionTime instance, and therefore, create a clone.",
-						"defaultvalue": "false"
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "clone Parameters",
+					"subparams": [
+						{
+							"name": "overrides",
+							"type": [
+								"object"
+							],
+							"description": "Object containing instructions for changes in the cloned chart. For example, passing `pieChart.clone({type: 'column2d'});` will clone the pie chart, but set its chart-type as `column2d`. It accepts all the construction parameters of a new FusionTime instance.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "argsOnly",
+							"type": [
+								"boolean"
+							],
+							"description": "Set to __true__, if a new FusionCharts object is not required. In that case, it causes the function to return a serializable object that can later be passed to create a new FusionTime instance, and therefore, create a clone.",
+							"defaultvalue": "false"
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -701,29 +893,38 @@
 		{
 			"name": "ready",
 			"description": "Accepts a function as an argument and that is executed by FusionTime when the page is ready (library loaded, DOM elements rendered).",
-			"params": [{
-				"name": "Name",
-				"header": "ready Parameters",
-				"subparams": [{
-						"name": "readyCallback",
-						"type": ["readyCallback"],
-						"description": "Callback function executed when the FusionTime framework is ready",
-						"defaultvalue": ""
-					},
-					{
-						"name": "args",
-						"type": ["*"],
-						"description": "Argument to be passed to the callback function",
-						"defaultvalue": "[FusionCharts](/api/fusioncharts)"
-					},
-					{
-						"name": "context",
-						"type": ["function"],
-						"description": "To execute a function, passed using the `fn` parameter, in a different scope than the default [FusionCharts](/api/fusioncharts) scope, pass the appropriate class object here.",
-						"defaultvalue": "[FusionCharts](/api/fusioncharts)"
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "ready Parameters",
+					"subparams": [
+						{
+							"name": "readyCallback",
+							"type": [
+								"readyCallback"
+							],
+							"description": "Callback function executed when the FusionTime framework is ready",
+							"defaultvalue": ""
+						},
+						{
+							"name": "args",
+							"type": [
+								"*"
+							],
+							"description": "Argument to be passed to the callback function",
+							"defaultvalue": "[FusionCharts](/api/fusioncharts)"
+						},
+						{
+							"name": "context",
+							"type": [
+								"function"
+							],
+							"description": "To execute a function, passed using the `fn` parameter, in a different scope than the default [FusionCharts](/api/fusioncharts) scope, pass the appropriate class object here.",
+							"defaultvalue": "[FusionCharts](/api/fusioncharts)"
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -737,21 +938,27 @@
 		{
 			"name": "dataReady",
 			"description": "Determines whether a chart will render properly with the data set and returns true or false.",
-			"params": [{
-				"name": "Name",
-				"header": "dataReady Parameters",
-				"subparams": [{
-					"name": "available",
-					"type": ["boolean"],
-					"description": "Setting this parameter to __true__ returns the status of the data, irrespective of its compatibility with the chart type. In that case, this function will return __false__ if data provided to the chart triggers the [dataLoadError](/api/fusioncharts/fusioncharts-events#event-dataLoadError) or [dataInvalid](/api/fusioncharts/fusioncharts-events#event-dataInvalid) events",
-					"defaultvalue": "false"
-				}]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "dataReady Parameters",
+					"subparams": [
+						{
+							"name": "available",
+							"type": [
+								"boolean"
+							],
+							"description": "Setting this parameter to __true__ returns the status of the data, irrespective of its compatibility with the chart type. In that case, this function will return __false__ if data provided to the chart triggers the [dataLoadError](/api/fusioncharts/fusioncharts-events#event-dataLoadError) or [dataInvalid](/api/fusioncharts/fusioncharts-events#event-dataInvalid) events",
+							"defaultvalue": "false"
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
 				"header": "Example",
-				"_slug": "fusiontime-method-beforeRender",
+				"_slug": "fusiotime-method-dataready",
 				"_renderBtn": true
 			},
 			"tags": {},
@@ -760,7 +967,6 @@
 		{
 			"name": "hasRendered",
 			"description": "Returns true if the chart has rendered successfully, false if it has not.",
-
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -774,23 +980,30 @@
 		{
 			"name": "print",
 			"description": "Prints individual charts. It hides all elements on a page except the chart to print and then invokes the page printing function (`window.print()`).",
-			"params": [{
-				"name": "Name",
-				"header": "print Parameters",
-				"subparams": [{
-						"name": "options",
-						"type": ["object"],
-						"description": "Object containing the printing options configured",
-						"defaultvalue": ""
-					},
-					{
-						"name": "options.hideButtons",
-						"type": ["boolean"],
-						"description": "Hides all buttons on the chart",
-						"defaultvalue": "true"
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "print Parameters",
+					"subparams": [
+						{
+							"name": "options",
+							"type": [
+								"object"
+							],
+							"description": "Object containing the printing options configured",
+							"defaultvalue": ""
+						},
+						{
+							"name": "options.hideButtons",
+							"type": [
+								"boolean"
+							],
+							"description": "Hides all buttons on the chart",
+							"defaultvalue": "true"
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -804,53 +1017,70 @@
 		{
 			"name": "exportChart",
 			"description": "Exports a chart as an image or as a PDF document.",
-			"params": [{
-				"name": "Name",
-				"header": "exportChart Parameters",
-				"subparams": [{
-						"name": "options",
-						"type": ["object"],
-						"description": "The `exportChart` method takes the following parameters:",
-						"defaultvalue": ""
-					},
-					{
-						"name": "options.exportFormat",
-						"type": ["string"],
-						"description": "A chart can be exported in one of the following formats:  \n\n | Export Format | Description | \n\n | --------- | :-------------| \n\n | `png`| Exports the charts in the high quality lossless PNG format | \n\n | `jpg` | Exports the chart in the high quality JPEG image format       | \n\n | `pdf` | Exports the chart as a PDF document |",
-						"defaultvalue": "png"
-					},
-					{
-						"name": "options.exportFileName",
-						"type": ["string"],
-						"description": "File name for the chart being exported, excluding the extension. The extension is automatically appended depending on the value of `exportFormat` parameter.",
-						"defaultvalue": "FusionCharts"
-					},
-					{
-						"name": "options.exportTargetWindow",
-						"type": ["string"],
-						"description": "When the `exportAction` parameter is set to `download` as , this parameter lets you configure whether the return image or PDF will open in the same window (as an attachment for download), or in a new browser window (`_blank`).",
-						"defaultvalue": "_self"
-					},
-					{
-						"name": "options.exportHandler",
-						"type": ["string"],
-						"description": "URL of the export server",
-						"defaultvalue": ""
-					},
-					{
-						"name": "options.exportAction",
-						"type": ["string"],
-						"description": "Specifies whether the exported image will be sent back to the browser as download, or whether it will be saved on to the server.  \n\n | Action Value | Description | \n\n | ----------| :------------------------| \n\n | `download` | The exported chart image or PDF will be downloaded as file. | \n\n | `save` | The exported chart will be saved on the server.| \n\n \n\n >For the charts to be saved on the server, you would need to setup your own export handling server. \n\n",
-						"defaultvalue": "download"
-					},
-					{
-						"name": "options.exportCallback",
-						"type": ["function"],
-						"description": "Callback JavaScript function executed when the export process is complete. If this parameter is not assigned a value, then the `window.FC_Exported` is executed.",
-						"defaultvalue": "FC_Exported"
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "exportChart Parameters",
+					"subparams": [
+						{
+							"name": "options",
+							"type": [
+								"object"
+							],
+							"description": "The `exportChart` method takes the following parameters:",
+							"defaultvalue": ""
+						},
+						{
+							"name": "options.exportFormat",
+							"type": [
+								"string"
+							],
+							"description": "A chart can be exported in one of the following formats:  \n\n | Export Format | Description | \n\n | --------- | :-------------| \n\n | `png`| Exports the charts in the high quality lossless PNG format | \n\n | `jpg` | Exports the chart in the high quality JPEG image format       | \n\n | `pdf` | Exports the chart as a PDF document |",
+							"defaultvalue": "png"
+						},
+						{
+							"name": "options.exportFileName",
+							"type": [
+								"string"
+							],
+							"description": "File name for the chart being exported, excluding the extension. The extension is automatically appended depending on the value of `exportFormat` parameter.",
+							"defaultvalue": "FusionCharts"
+						},
+						{
+							"name": "options.exportTargetWindow",
+							"type": [
+								"string"
+							],
+							"description": "When the `exportAction` parameter is set to `download` as , this parameter lets you configure whether the return image or PDF will open in the same window (as an attachment for download), or in a new browser window (`_blank`).",
+							"defaultvalue": "_self"
+						},
+						{
+							"name": "options.exportHandler",
+							"type": [
+								"string"
+							],
+							"description": "URL of the export server",
+							"defaultvalue": ""
+						},
+						{
+							"name": "options.exportAction",
+							"type": [
+								"string"
+							],
+							"description": "Specifies whether the exported image will be sent back to the browser as download, or whether it will be saved on to the server.  \n\n | Action Value | Description | \n\n | ----------| :------------------------| \n\n | `download` | The exported chart image or PDF will be downloaded as file. | \n\n | `save` | The exported chart will be saved on the server.| \n\n \n\n >For the charts to be saved on the server, you would need to setup your own export handling server. \n\n",
+							"defaultvalue": "download"
+						},
+						{
+							"name": "options.exportCallback",
+							"type": [
+								"function"
+							],
+							"description": "Callback JavaScript function executed when the export process is complete. If this parameter is not assigned a value, then the `window.FC_Exported` is executed.",
+							"defaultvalue": "FC_Exported"
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -864,29 +1094,38 @@
 		{
 			"name": "showChartMessage",
 			"description": "Shows a text message on a chart.",
-			"params": [{
-				"name": "Name",
-				"header": "showChartMessage Parameters",
-				"subparams": [{
-						"name": "text",
-						"type": ["string"],
-						"description": "Text message to be displayed",
-						"defaultvalue": ""
-					},
-					{
-						"name": "modal",
-						"type": ["boolean"],
-						"description": "Boolean value to indicate whether the message will be shown on an overlay button or on the chart.",
-						"defaultvalue": "false"
-					},
-					{
-						"name": "cancelable",
-						"type": ["boolean"],
-						"description": "If set to __true__, the modal can be closed by clicking. Defaults to __false__. \n\n >Applicable only if `modal` is set to __true__. \n\n",
-						"defaultvalue": "false"
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "showChartMessage Parameters",
+					"subparams": [
+						{
+							"name": "text",
+							"type": [
+								"string"
+							],
+							"description": "Text message to be displayed",
+							"defaultvalue": ""
+						},
+						{
+							"name": "modal",
+							"type": [
+								"boolean"
+							],
+							"description": "Boolean value to indicate whether the message will be shown on an overlay button or on the chart.",
+							"defaultvalue": "false"
+						},
+						{
+							"name": "cancelable",
+							"type": [
+								"boolean"
+							],
+							"description": "If set to __true__, the modal can be closed by clicking. Defaults to __false__. \n\n >Applicable only if `modal` is set to __true__. \n\n",
+							"defaultvalue": "false"
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -900,29 +1139,39 @@
 		{
 			"name": "render",
 			"description": "Renders a chart inside a container element on a page. If the chart is already rendered, it can be re-rendered inside the same container DOM element or a different element.",
-			"params": [{
-				"name": "Name",
-				"header": "render Parameters",
-				"subparams": [{
-						"name": "containerElement",
-						"type": ["string", "DOMElement"],
-						"description": "Reference or ID of the DOM element inside which the chart is to be rendered. If this argument is not provided, it is assumed that the `renderAt` attribute is provided during chart creation.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "insertMode",
-						"type": ["DOMInsertModes"],
-						"description": "Method for inserting the chart's DOM element within the `containerElement`. Click [here](/api/fusioncharts/fusioncharts-properties#DOMInsertModes) to read more about  the DOM insert modes.",
-						"defaultvalue": "replace"
-					},
-					{
-						"name": "callback",
-						"type": ["renderCallback"],
-						"description": "Callback function executed after the chart is successfully rendered. If the last parameter to the `render()` function is a function, it is treated as a callback.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "render Parameters",
+					"subparams": [
+						{
+							"name": "containerElement",
+							"type": [
+								"string",
+								"DOMElement"
+							],
+							"description": "Reference or ID of the DOM element inside which the chart is to be rendered. If this argument is not provided, it is assumed that the `renderAt` attribute is provided during chart creation.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "insertMode",
+							"type": [
+								"DOMInsertModes"
+							],
+							"description": "Method for inserting the chart's DOM element within the `containerElement`. Click [here](/api/fusioncharts/fusioncharts-properties#DOMInsertModes) to read more about  the DOM insert modes.",
+							"defaultvalue": "replace"
+						},
+						{
+							"name": "callback",
+							"type": [
+								"renderCallback"
+							],
+							"description": "Callback function executed after the chart is successfully rendered. If the last parameter to the `render()` function is a function, it is treated as a callback.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -936,7 +1185,6 @@
 		{
 			"name": "Dispose",
 			"description": "Disposes a chart completely, when called on an instance of FusionCharts. This clears the entire chart object and removes it from the DOM tree structure. When the chart is successfully disposed, `chartInstance.disposed` is set to __true__.",
-
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -950,23 +1198,30 @@
 		{
 			"name": "configure",
 			"description": "Configures status messages that are displayed while rendering a chart. For example, while a chart's data is being fetched from a remote URL, the chart will display the message __Retrieving data. Please wait.__ ",
-			"params": [{
-				"name": "Name",
-				"header": "configure Parameters",
-				"subparams": [{
-						"name": "option",
-						"type": ["chartStatusMessages"],
-						"description": "To configure a single attribute, specify the attribute (the key) as a string. To configure multiple attributes, this can be an object having key-value pairs of all configuration options.",
-						"defaultvalue": ""
-					},
-					{
-						"name": "value",
-						"type": ["string"],
-						"description": "If the `option` parameter has a single value as the key, this parameter is the value of that key.",
-						"defaultvalue": ""
-					}
-				]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "configure Parameters",
+					"subparams": [
+						{
+							"name": "option",
+							"type": [
+								"chartStatusMessages"
+							],
+							"description": "To configure a single attribute, specify the attribute (the key) as a string. To configure multiple attributes, this can be an object having key-value pairs of all configuration options.",
+							"defaultvalue": ""
+						},
+						{
+							"name": "value",
+							"type": [
+								"string"
+							],
+							"description": "If the `option` parameter has a single value as the key, this parameter is the value of that key.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
@@ -980,16 +1235,22 @@
 		{
 			"name": "FeedData",
 			"description": "Adds data to the chart in real-time.",
-			"params": [{
-				"name": "Name",
-				"header": "FeedData Parameters",
-				"subparams": [{
-					"name": "stream",
-					"type": ["string"],
-					"description": "Real-time data for charts and gauges.",
-					"defaultvalue": ""
-				}]
-			}],
+			"params": [
+				{
+					"name": "Name",
+					"header": "FeedData Parameters",
+					"subparams": [
+						{
+							"name": "stream",
+							"type": [
+								"string"
+							],
+							"description": "Real-time data for charts and gauges.",
+							"defaultvalue": ""
+						}
+					]
+				}
+			],
 			"shortDescription": "",
 			"info": "",
 			"example": {
