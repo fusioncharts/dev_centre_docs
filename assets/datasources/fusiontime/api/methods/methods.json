@@ -85,7 +85,7 @@
 			"params": [
 				{
 					"name": "Name",
-					"header": "getBinning Parameters",
+					"header": "getBinning Returned Values",
 					"subparams": [
 						{
 							"name": "millisecond",
@@ -199,7 +199,7 @@
 			"params": [
 				{
 					"name": "Name",
-					"header": "getCurrentBin Parameters",
+					"header": "getCurrentBin Returned Values",
 					"subparams": [
 						{
 							"name": "unit",
@@ -273,7 +273,7 @@
 			"params": [
 				{
 					"name": "Name",
-					"header": "getTimeSelection Parameters",
+					"header": "getTimeSelection Returned Values",
 					"subparams": [
 						{
 							"name": "start",
