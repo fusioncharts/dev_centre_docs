@@ -140,7 +140,7 @@ Now, let's create the files to render the above chart.
 
 Finally, get ready to render your chart. In the `.svelte` file, import the fusioncharts dependencies and include the consolidated code shown below.
 
-```json
+```js exec
 <script>
   import FusionCharts from 'fusioncharts';
   import Timeseries from 'fusioncharts/fusioncharts.timeseries';
@@ -151,10 +151,10 @@ Finally, get ready to render your chart. In the `.svelte` file, import the fusio
   let promise,
     jsonify = res => res.json(),
     dataFetch = fetch(
-      'https://s3.eu-central-1.amazonaws.com/fusion.store/ft/data/line-chart-with-time-axis-data.json'
+      "https://s3.eu-central-1.amazonaws.com/fusion.store/ft/data/line-chart-with-time-axis-data.json"
     ).then(jsonify),
     schemaFetch = fetch(
-      'https://s3.eu-central-1.amazonaws.com/fusion.store/ft/schema/line-chart-with-time-axis-schema.json'
+      "https://s3.eu-central-1.amazonaws.com/fusion.store/ft/schema/line-chart-with-time-axis-schema.json"
     ).then(jsonify);
  
   promise = Promise.all([dataFetch, schemaFetch]);
