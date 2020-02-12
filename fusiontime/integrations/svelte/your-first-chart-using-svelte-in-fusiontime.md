@@ -138,9 +138,7 @@ Now, let's create the files to render the above chart.
 
 ### Render the chart
 
-Finally, get ready to render your chart. In the `.svelte` file, import the fusioncharts dependencies. Store the chart configurations in a JSON object. 
-
-The consolidated code is shown below:
+Finally, get ready to render your chart. In the `.svelte` file, import the fusioncharts dependencies and include the consolidated code shown below.
 
 ```json
 <script>
@@ -172,12 +170,8 @@ The consolidated code is shown below:
       renderAt: "chart-container",
       dataSource: {
         data: fusionTable,
-        caption: {
-          text: "Sales Analysis"
-        },
-        subcaption: {
-          text: "Grocery"
-        },
+        caption: {text: "Sales Analysis"},
+        subcaption: {text: "Grocery"},
         yAxis: [
           {
             plot: {
@@ -194,17 +188,18 @@ The consolidated code is shown below:
     };
   };
 </script>
+//Include the chart in the container
 <div id="chart-container" >
-		{#await promise}
-		  <p>Fetching data and schema...</p>
-		{:then value}
-	 <SvelteFC
-			{...getChartConfig(value)}
-		  />	 
-		{:catch error}
-		  <p>Something went wrong: {error.message}</p>
-		{/await}
-	  </div>
+	{#await promise}
+		<p>Fetching data and schema...</p>
+	{:then value}
+	<SvelteFC
+		{...getChartConfig(value)}
+	/>	 
+	{:catch error}
+	    <p>Something went wrong: {error.message}</p>
+	{/await}
+</div>
  ```
 
 In the above code:
@@ -220,3 +215,7 @@ In the above code:
     * Specify the caption of the chart using `text` attribute in `caption` object.
 * Create an empty storage as `fusionDataStore` using `FusionCharts.DataStore`.
 * Create a `DataTable` within the empty storage using `fusionDataStore.createDataTable` and pass the `schema` and `data` to the `DataTable`.
+
+You should be able to see the chart. If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
+
+That's it! Your first chart in `SvelteJS` using `FusionTime` is ready.
