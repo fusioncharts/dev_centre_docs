@@ -1998,6 +1998,10 @@
             "path": "/fusiontime/integrations/jquery/your-first-chart-using-jquery-in-fusiontime"
           },
           {
+            "title": "Create a Chart in Svelte",
+            "path": "/fusiontime/integrations/svelte/your-first-chart-using-svelte-in-fusiontime"
+          },
+          {
             "title": "Create a Chart in Ember",
             "path": "/fusiontime/integrations/ember/your-first-chart-using-ember-in-fusiontime"
           },
