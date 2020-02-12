@@ -201,7 +201,6 @@ Finally, get ready to render your chart. In the `.svelte` file, import the fusio
 	{/await}
 </div>
  ```
-
 In the above code:
 
 * Include the `fusioncharts` library in the `.svelte` file.
