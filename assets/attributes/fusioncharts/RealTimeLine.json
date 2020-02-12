@@ -1998,8 +1998,8 @@
         "name": "legendItemHoverFontColor"
       },
       {
-        "description": "The legend can be plotted at two positions on the chart - below (BOTTOM) the chart and to the right (RIGHT) of the chart.",
-        "range": "'RIGHT' or 'BOTTOM'",
+        "description": "The legend can be plotted at different positions with respect to the chart. Note that if the value of `legendPosition` is set to `absolute`, you also need to set the coordinates of the legend. You can do that using the attributes `legendXPosition` and `legendYPosition`, both of which accept absolute or percentage values.",
+        "range": "bottom, right, top, top-left, top-right, bottom-left, bottom-right, left, left-top, left-bottom, right, right-top, right-bottom, and absolute",
         "type": "String",
         "name": "legendPosition"
       },
