@@ -140,7 +140,7 @@ Now, let's create the files to render the above chart.
 
 Finally, get ready to render your chart. In the `.svelte` file, import the fusioncharts dependencies and include the consolidated code shown below.
 
-```js exec
+```js
 <script>
   import FusionCharts from 'fusioncharts';
   import Timeseries from 'fusioncharts/fusioncharts.timeseries';
