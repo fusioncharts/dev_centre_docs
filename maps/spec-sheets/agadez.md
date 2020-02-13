@@ -11,6 +11,6 @@ Dimensions (Width x Height): 560x450
 
 | ID       | Short label | Label                   |
 | -------- | ----------- | ----------------------- |
-| NE.AG.AR|AR|Arlit |
-| NE.AG.BL|BL|Bilma |
-| NE.AG.AD|AD|Tchirozérine |
+|NE.AG.AR|AR|Arlit|
+|NE.AG.BL|BL|Bilma|
+|NE.AG.AD|AD|Tchirozérine|
