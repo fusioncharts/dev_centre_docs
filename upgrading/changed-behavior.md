@@ -6,6 +6,22 @@ heading: Changed Behavior
 
 This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.15.0.
 
+## Exporting of Gantt and Spark Charts as XLSX
+
+You can now export Gantt and Spark Line charts in XLSX format, and the files display chart data correctly. Earlier, the exported XLSX files would be blank.
+
+The Gantt chart looks like as shown below:
+
+LIVE CHART
+
+Export the above chart in XLSX format.
+
+## Legend Position in all Charts
+
+In all charts in FusionCharts XT, you can now specify the legend using the attribute `legendPosition`. You can set its value to - `bottom`, `top`, `top-left`, `top-right`, `bottom-left`, `bottom-right`, `left`, `left-top`, `left-bottom`, `right`, `right-top`, `right-bottom`, or `absolute`.
+
+Click [here](/chart-guide/chart-configurations/legend#set-the-legend-position) to know more.
+
 ## Height of Navigation Bar in Treemap After Drill Down
 
 In Treemaps, you can now set a custom height to the navigation bar after drill down, using the `navigationBarHeight` attribute. Earlier the navigation bar would expand when you drilled down. The chart has been optimized to prevent that issue.
