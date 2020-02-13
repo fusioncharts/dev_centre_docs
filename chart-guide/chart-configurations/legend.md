@@ -222,7 +222,7 @@ Refer to the code below:
     "chart": {
         "legendPosition": "absolute",
         "legendXPosition": "5",
-        "legendYPosition": "3",
+        "legendYPosition": "3"
     }
 }
 ```
@@ -230,6 +230,8 @@ Refer to the code below:
 The chart will look as shown below:
 
 LIVE CHART
+
+Click here to edit the above chart.
 
 ## Configure Legend Icon Size
 
