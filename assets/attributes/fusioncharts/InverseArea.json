@@ -1852,6 +1852,18 @@
         "name": "legendPosition"
       },
       {
+        "description": "When the value of `legendPosition` is set to `absolute`, use this attribute to set the X-coordinate of the legend. It accepts absolute or percentage values. By default, its value is set to `0`.",
+        "range": "0 to chart width (in pixels)",
+        "type": "Number",
+        "name": "legendXPosition"
+      },
+      {
+        "description": "When the value of `legendPosition` is set to `absolute`, use this attribute to set the Y-coordinate of the legend. It accepts absolute or percentage values. By default, its value is set to `0`.",
+        "range": "0 to chart height (in pixels)",
+        "type": "Number",
+        "name": "legendYPosition"
+      },
+      {
         "description": "Sets the legend caption horizontal alignment .",
         "range": "\"left\", \"center\", \"right\"",
         "type": "String",
