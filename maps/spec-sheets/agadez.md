@@ -9,8 +9,8 @@ Dimensions (Width x Height): 560x450
 
 ### List of Entities
 
-| ID       | Short label | Label                   |
-| -------- | ----------- | ----------------------- |
-|NE.AG.AR|AR|Arlit|
-|NE.AG.BL|BL|Bilma|
-|NE.AG.AD|AD|Tchirozérine|
+| ID       | Short label | Label        |
+| -------- | ----------- | ------------ |
+| NE.AG.AR | AR          | Arlit        |
+| NE.AG.BL | BL          | Bilma        |
+| NE.AG.AD | AD          | Tchirozérine |
