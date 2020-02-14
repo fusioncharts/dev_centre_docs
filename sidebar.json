@@ -24,12 +24,12 @@
                     "path": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
                   },
                   {
-                    "title": "Rendering Different Charts",
-                    "path": "/getting-started/plain-javascript/rendering-different-charts"
-                  },
-                  {
                     "title": "Your First Gauge",
                     "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
+                  },
+                  {
+                    "title": "Rendering Different Charts",
+                    "path": "/getting-started/plain-javascript/rendering-different-charts"
                   },
                   {
                     "title": "Your First Map",
