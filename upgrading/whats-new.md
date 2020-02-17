@@ -23,3 +23,15 @@ In the chart below, the legend is placed at the `left` of the chart:
 LIVE CHART
 
 Click here to know more.
+
+## Decouple Scrollbar from Axis
+
+FusionCharts XT suite now allows you to decouple the scrollbar from the axes. Earlier, the scrollbar was always coupled with the X-axis. Now, a new attribute `scrollPosition` has been introduced, which lets you position the scrollbar independently of the X-axis.
+
+- In charts where the X-axis is located at the bottom or the top (as in a column chart), you can set the value of the `scrollPosition` attribute to `top` or `bottom`.
+
+- In charts where the X-axis is located to the left or the right (as in a bar chart), you can set the value of the `scrollPosition` attribute to `left` or `right`.
+
+LIVE CHART
+
+Click here to know more.
