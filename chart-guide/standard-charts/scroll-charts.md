@@ -235,3 +235,27 @@ A scroll chart with the cosmetic properties of the scroll bar customized looks l
 {% embed_chart standard-charts-scroll-charts-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/guawyxge/) to edit the scroll column 2D chart.
+
+## Position Scroll Bar
+
+FusionCharts XT suite now allows you to decouple the scrollbar from the X-axis. Earlier, the scrollbar was always coupled with the X-axis. Now, a new attribute `scrollPosition` has been introduced, which lets you position the scrollbar irrespective of the position of X-axis.
+
+- In charts where the X-axis is located at the bottom or the top (as in a column chart), you can set the value of the `scrollPosition` attribute to `top` or `bottom`.
+
+- In charts where the X-axis is located to the left or the right (as in a bar chart), you can set the value of the `scrollPosition` attribute to `left` or `right`.
+
+Refer to the code below:
+
+```javascript
+{
+    "chart": {
+        "scrollPosition": "top"
+    }
+}
+```
+
+The chart will look as shown below:
+
+LIVE CHART
+
+Click here to edit the above chart.
