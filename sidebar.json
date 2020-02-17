@@ -1815,6 +1815,11 @@
               },
               {
                 "title": "Maps Improvement",
+                "path": "/upgrading/maps-improvement/maps-improvement-3-15-1",
+                "visibility": false
+              },
+              {
+                "title": "Maps Improvement",
                 "path": "/upgrading/maps-improvement/maps-improvement-3-15-0",
                 "visibility": false
               },
