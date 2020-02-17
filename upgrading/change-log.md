@@ -4,6 +4,84 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.15.x
 ---
 
+<h2 class="sub-heading">Version 3.15.1</h2>
+
+<p class="release-date">25th February, 2020</p>
+
+<h4>New Features</h4>
+
+- The scrollbar has been decoupled from the xAxis and can now be placed away from it.
+
+- Legends can now be positioned anywhere in the chart - left, right, top, bottom, etc. Legends can also be positioned with absolute coordinates (x,y).
+
+<h4>Improvements</h4>
+
+- The `textOutline` attribute can now be applied to data labels across Sankey, Sunburst, and Chord diagrams, to improve visibility.
+
+- The number of rows in a legend can now be defined. Earlier, only the number of columns could be defined.
+
+- New macros have been added to Error Bar 2D, Error Line, and Error Scatter charts. Click here to get the list of newly added macros.
+
+- When the Candlestick, Treemap, Spark, Gantt, and Select Scatter charts are exported in XLSX format, the XLSX files now display the chart data correctly. In earlier versions, the exported files would be blank.
+
+- When a Bubble chart is exported in XLSX format, the exported file now includes a column with the plot labels, to help you comprehend the data better. Earlier, this column was not included in the XLSX file.
+
+- Multi-level Pie Charts exported in XLSX formats now include data values along with categories. Earlier, only the categories were presented in the exported file.
+
+- Passing JS methods inside `label` attribute no longer throw alert boxes along with error messages on the browser console. Earlier, on changing '%26lt;' to '<' and '%26gt;' to '>' was displaying an error message and throwing multiple alert boxes. It helps in reducing the vulnerability attack.
+
+- The `dataLabelRollOver` event was also getting triggered when the cursor was hovered over y-axis values. Previously it used to happen for both xAxis and yAxis labels.
+
+- In this version, 11 core map files have been updated. [here](/upgrading/maps-improvement/maps-improvement-3-15-1) to get the list of updated maps.
+
+<h4>Fixes</h4>
+
+- X-axis labels are now displayed properly when they are rotated, base font size is set, and the legend is displayed to the right. Earlier, in similar situations, chart canvases with a width greater than 650 pixels would show partially truncated labels for specific base font sizes.
+
+- The attributes `labelXPadding` and `labelYPadding` are now working properly in the Heat Map chart. They were not working earlier.
+
+- Hand cursor is now displayed properly when the `link` attribute is used in a chart and the cursor is hovered over data plots and data values. Earlier, the hand cursor was not displayed when the cursor was hovered over the data values.
+
+- When using `batchExport`, if chart height or width is set to 100% and the chart is exported as an image, then the image is properly visible. Earlier, the image was not visible in such situations.
+
+- The `widthPercent` attribute is now working properly in Marimekko charts. Earlier, in category objects, the attribute was not working, and all the categories were being assigned equal widths.
+
+- In Scatter charts, when the `drawQuadrant` attribute is used and the legend is used to turn off all the series and then turn them back on, the quadrants are now being redrawn correctly. Earlier, the quadrants were not being redrawn.
+
+- In a Chord diagram, when a long label is provided with label position set as `tangential`, then `chordRadius` is maintained. Earlier, in similar situations, the value assigned to `chordRadius` would be ignored and the radius would be set to the default value.
+
+- When you render a Chord chart with long label texts without setting `caption` and `subcaption`, the label texts now correctly show ellipses. Earlier, in similar situations, ellipses were not being displayed.
+
+- In a Chord diagram, node labels are now displayed properly in Internet Explorer 11. Earlier, the `nodeLabelPosition` attribute was not working properly in IE11. When the value of `nodeLabelPosition` was set to `outside`, the label would overflow into the node and when it was set to `inside`, the padding of the label would disappear. The issue has now been fixed.
+
+- When the `nodeToggling` attribute is used in a Chord diagram and the legend is used to turn off nodes and turn them back on, the nodes are displayed properly. Earlier, the nodes were not displayed when they were turned back on using the legend.
+
+- `getJSONData()` and `getXMLData()` APIs no longer return unnecessary nested objects with extra attributes, such as `isRootNode`.
+
+- In chart events, "pixelHeight" and "pixelWidth" attributes now correctly display the values of the chart height and the chart width respectively. Earlier, these attributes were getting their values swapped.
+
+- When the `beforeDraw` and `drawCancelled` events are used together, they are only being triggered once, as intended. Earlier, they were being triggered twice when the chart was rendered.
+
+- The zero plane is no longer visible over the plots in Multi-series Combination Dual Y-axis 3D chart. Earlier, it was overlapping the data plots.
+
+- `tooltipBorderRadius` attribute is now working properly in Heat Map charts in all browsers. The attribute is also working properly in every chart on IE8. Earlier, the attribute was not working on any chart.
+
+- In Bubble charts, vertical lines with thickness greater than 2 are now rendered within the chart canvas. Earlier, these lines would overlap out of the chart canvas.
+
+- In realtime charts, clicking on the Stop Update menu item no longer makes the menu unclickable on Internet Explorer.
+
+- Previously, on chart update the sum values of stacked chart could not be removed. The issue has now been fixed.
+
+- In pyramid and funnel charts, updating the theme now works perfectly. Earlier, doing so would throw a JS error.
+
+- In Multi-series 3D charts, when the value of the attribute `use3DLighting` is set to `0` and the value of `alpha` is set to `0` at `data` level, the plots are now rendered correctly. Earlier, in such situations, the plots would not be visible.
+
+- Setting the value of the `cylScale` attribute to `0` in a Cylinder gauge, the browser console no longer displays JS errors.
+
+- The position of data values are no longer changed when anchor size is changed in StackedArea2D & RealTimeStackedArea charts. Earlier, the values would disappear when anchor size was increased.
+
+- Export menus in charts can now be selected in IE8. Earlier, the menu items were unclickable on the browser.
+
 <h2 class="sub-heading">Version 3.15.0-sr.1</h2>
 
 <p class="release-date">6th December, 2019</p>
