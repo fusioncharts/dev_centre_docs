@@ -10,11 +10,11 @@ Marimekko charts are stacked column charts with columns of variable width. They 
 
 The following three dimensions of marketing data can be represented using a Marimekko chart:
 
-* Total value of a market segment
+- Total value of a market segment
 
-* Combined share of all competitors in a market segment
+- Combined share of all competitors in a market segment
 
-* Individual share of competitors in a market segment
+- Individual share of competitors in a market segment
 
 {% embed_chartAnatomy marimekko-chart.json %}
 
@@ -24,23 +24,23 @@ Let's create a simple Marimekko chart that shows the top 3 Electronic Brands (Bo
 
 The Marimekko chart shown below, when seen in the default mode, helps in instantly figure out the following:
 
-* The top three manufacturers within each state (Bose, Dell, and Apple) and the individual sales of each manufacturer within a state, indicated by the partitions in the stacked column.
+- The top three manufacturers within each state (Bose, Dell, and Apple) and the individual sales of each manufacturer within a state, indicated by the partitions in the stacked column.
 
-* The total sales by manufacturers across all three states for the given duration (a month, in this case), shown on top of the stacked column for each manufacturer. For example, the total sales for Bose, $848K, is shown above the first column.
+- The total sales by manufacturers across all three states for the given duration (a month, in this case), shown on top of the stacked column for each manufacturer. For example, the total sales for Bose, \$848K, is shown above the first column.
 
-* The percentage market share for each manufacturer, shown as a percentage label between the stacked columns. For example, Bose has a total market share of approximately 46%, as shown by the label between the data plots for Bose and Dell.
+- The percentage market share for each manufacturer, shown as a percentage label between the stacked columns. For example, Bose has a total market share of approximately 46%, as shown by the label between the data plots for Bose and Dell.
 
 To create a marimekko chart follow the steps given below:
 
-* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+- In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a marimekko chart, set `marimekko`.
+- Specify the chart type using the `type` attribute. To render a marimekko chart, set `marimekko`.
 
-* Set the container object using `renderAt` attribute.
+- Set the container object using `renderAt` attribute.
 
-* Specify the dimension of the chart using `width` and `height` attributes.
+- Specify the dimension of the chart using `width` and `height` attributes.
 
-* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+- Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=marimekko) page of marimekko chart.
 
@@ -62,9 +62,9 @@ Now, let's customize the appearance and properties of the marimekko chart. We'll
 
 The stacked columns in a Marimekko chart can be rendered:
 
-* Using percentage values
+- Using percentage values
 
-* Using actual data values
+- Using actual data values
 
 By default, a Marimekko chart is rendered with percentage values along the y-axis. To render the chart using actual data values, set the `usePercentDistribution` to `0`. This attribute specifies whether percentage distribution will be used on the y-axis to plot the data. The default value of this attribute is `1`.
 
@@ -72,11 +72,12 @@ Refer to the code given below:
 
 ```json
 {
-	"chart": {
-		"usePercentDistribution": "0"
-	}
+  "chart": {
+    "usePercentDistribution": "0"
+  }
 }
 ```
+
 A Marimekko chart rendered with actual values instead of percentage values looks like this:
 
 {% embed_chart standard-charts-marimekko-chart-example-2.js %}
@@ -93,9 +94,9 @@ Refer to the code given below:
 
 ```json
 {
- 	"chart": {
-		"showSum": "0"
- 	}
+  "chart": {
+    "showSum": "0"
+  }
 }
 ```
 
@@ -118,6 +119,7 @@ Refer to the code given below:
   }
 }
 ```
+
 A Marimekko chart with the percentage labels on the x-axis hidden looks like this:
 
 {% embed_chart standard-charts-marimekko-chart-example-4.js %}
@@ -131,3 +133,27 @@ The Marimekko chart includes support for an interactive legend starting FusionCh
 For example, in the Marimekko chart shown above, if you were to hide the data plots for Washington using the legend, the data plots for California and Nevada will be automatically arranged in the available space, as shown in the image below:
 
 ![Marimekko-Legend Interactivity](/gif/standard-charts-marimekko-gif-1.gif)
+
+## Set Plot Width
+
+In FusionCharts XT, you can set the width of individual plots in percentage values. Use the `category` level `widthPercent` attribute to do so.
+
+Refer to the code given below:
+
+```javascript
+{
+  "chart": { },
+  "categories": [{
+        "category": [{
+            "label": "Bose",
+            "widthPercent": "43.31"
+          }
+  	}
+}
+```
+
+The chart will look as shown below:
+
+LIVE CHART
+
+Click here to edit the above chart.
