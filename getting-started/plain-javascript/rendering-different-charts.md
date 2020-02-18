@@ -2,6 +2,7 @@
 title: Rendering different Charts | FusionCharts
 description: This article outlines some of the popular charts and the way to render them with their respective data formats.
 heading: Rendering Different Charts
+author: sowmya
 ---
 
 By now, we assume that you have already built a single series column chart, and have a basic grasp over the way FusionCharts works. If you have not done so yet, we recommend visiting [this](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript) tutorial to build your first chart and returning to this later.
