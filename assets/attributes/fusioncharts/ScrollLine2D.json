@@ -753,21 +753,21 @@
         "type": "Boolean",
         "name": "showaxislines"
       },
-          {
+      {
         "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Bottom",
         "range": "Top, Bottom",
         "type": "String",
         "versionSince": "3.14.0",
         "name": "xAxisPosition"
-    },
-    {
+      },
+      {
         "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Left",
         "range": "Left, Right",
         "type": "String",
         "versionSince": "3.14.0",
         "name": "yAxisPosition"
-    },
-    {
+      },
+      {
         "description": "Sets color of the x-axis of the chart.",
         "range": "Hex Color Code",
         "type": "Color",
@@ -1533,6 +1533,13 @@
         "range": "Hex Color Code",
         "type": "Color",
         "name": "scrollColor"
+      },
+      {
+        "description": "Sets the position of the scrollbar in the chart. \n\n __Default Value:__ Bottom",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionsince": "3.15.1",
+        "name": "scrollPosition"
       },
       {
         "description": "Required height for scroll bar.",
