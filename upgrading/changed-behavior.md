@@ -32,6 +32,8 @@ FusionCharts XT suite now allows you to decouple the scrollbar from the axes. Ea
 
 - In charts where the X-axis is located to the left or the right (as in a bar chart), you can set the value of the `scrollPosition` attribute to `left` or `right`.
 
+Click [here](/chart-guide/standard-charts/scroll-charts#position-scroll-bar) to know more.
+
 ## Height of Navigation Bar in Treemap After Drill Down
 
 In Treemaps, you can now set a custom height to the navigation bar after drill down, using the `navigationBarHeight` attribute. Earlier the navigation bar would expand when you drilled down. The chart has been optimized to prevent that issue.
