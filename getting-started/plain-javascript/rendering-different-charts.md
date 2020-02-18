@@ -103,8 +103,39 @@ const dataset = [
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 ```
-FusionCharts.ready(function() {
-      var revenueChart = new FusionCharts({
+// Define the categories representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+      { "label": "Q1" },
+      { "label": "Q2" },
+      { "label": "Q3" },
+      { "label": "Q4" }
+    ]
+  }
+]
+// Construct the dataset comprising multiple series 
+const dataset = [
+  {
+    "seriesname": "Previous Year",
+    "data": [
+      { "value": "12000" },
+      { "value": "10500" },
+      { "value": "23500" },
+      { "value": "16000" }
+    ]
+  },
+  {
+    "seriesname": "Current Year",
+    "data": [
+      { "value": "24400" },
+      { "value": "29800" },
+      { "value": "20800" },
+      { "value": "26800" }
+    ]
+  }
+];
+var chartConfigurations = {
         type: 'mscolumn2d',
         renderAt: 'chart-container',
         width: '700',
@@ -120,7 +151,9 @@ FusionCharts.ready(function() {
           "categories": categories,
           "dataset": dataset
         }
-      });
+      }
+FusionCharts.ready(function() {
+      var revenueChart = new FusionCharts(chartConfigurations);
       revenueChart.render();
     });
 ```
