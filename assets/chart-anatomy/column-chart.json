@@ -125,7 +125,7 @@
                   "annotationNumber": "10",
                   "annotationName": "Tooltip",
                   "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It provides context-sensitive information about the data point. Learn more about it ",
-                  "annotationDescLinkPath": "/chart-guide/chart-configurations/tool-tips",
+                  "annotationDescLinkPath": "/dev/chart-guide/chart-configurations/tool-tips",
                   "leftPosition": "53%",
                   "topPosition": "43.5%",
                   "annotationLinks": [{
