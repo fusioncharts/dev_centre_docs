@@ -193,7 +193,7 @@ Refer to the code below:
 ```json
 {
   "chart": {
-    "legendPosition": "right",
+    "legendPosition": "top-right",
     "legendAllowDrag": "1"
   }
 }
@@ -201,7 +201,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Drag Legend](/gif/configurations-legend-gif-2.gif)
+{% embed_chart chart-configurations-legend-example-16.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5smv4kg4/) to edit the above chart.
 
@@ -221,17 +221,17 @@ Refer to the code below:
 {
     "chart": {
         "legendPosition": "absolute",
-        "legendXPosition": "5",
-        "legendYPosition": "3"
+        "legendXPosition": "700",
+        "legendYPosition": "420"
     }
 }
 ```
 
 The chart will look as shown below:
 
-LIVE CHART
+{% embed_chart chart-configurations-legend-example-17.js %}
 
-Click here to edit the above chart.
+Click [here](https://jsfiddle.net/fusioncharts/qybh1rdt/) to edit the above chart.
 
 ## Configure Legend Icon Size
 
