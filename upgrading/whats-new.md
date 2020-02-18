@@ -18,11 +18,11 @@ You can now use the following attributes to set legend position:
 
 - Set the `legendAllowDrag` attribute to 1 to make the legend draggable.
 
-In the chart below, the legend is placed at the `left` of the chart:
+In the chart below, the legend is placed at the `top-right` of the chart:
 
-LIVE CHART
+{% embed_chart chart-configurations-legend-example-16.js %}
 
-Click here to know more.
+Click [here](/chart-guide/chart-configurations/legend#set-the-legend-position) to know more.
 
 ## Decouple Scrollbar from Axis
 

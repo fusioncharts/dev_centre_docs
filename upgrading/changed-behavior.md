@@ -20,7 +20,9 @@ Export the above chart in XLSX format.
 
 In all charts in FusionCharts XT, you can now specify the legend using the attribute `legendPosition`. You can set its value to - `bottom`, `top`, `top-left`, `top-right`, `bottom-left`, `bottom-right`, `left`, `left-top`, `left-bottom`, `right`, `right-top`, `right-bottom`, or `absolute`.
 
-Click [here](/chart-guide/chart-configurations/legend#set-the-legend-position) to know more.
+In the chart below, the legend is placed at the `top-right` of the chart:
+
+{% embed_chart chart-configurations-legend-example-16.js %}
 
 ## Decouple Scrollbar from Axis
 
