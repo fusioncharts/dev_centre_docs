@@ -6,19 +6,19 @@ heading: Map Improvements in Version 3.15.1
 
 - In the core maps package:
 
-  - Updated the specification sheet for Afar Region
+  - Updated the specification sheet for [Afar Region](/maps/spec-sheets/afarregion)
 
-  - Updated the specification sheet for Agadez with the following:
+  - Updated the specification sheet for [Agadez](/maps/spec-sheets/agadez) with the following:
 
     - Removed suffix "Department" from long names.
 
     - Renamed "Tchirozerine" as "Tchirozérine".
 
-  - Updated the specification sheet for Alaotra Mangoro with the following:
+  - Updated the specification sheet for [Alaotra Mangoro](/maps/spec-sheets/alaotramangoro) with the following:
 
     - Removed suffix "Districts", as well as extra names under brackets, from long names.
 
-  - Updated the specification sheet for Algeria with the following:
+  - Updated the specification sheet for [Algeria](/maps/spec-sheets/algeria) with the following:
 
     - Renamed "Oum el-Bouaghi" as "Oum El Bouaghi".
 
@@ -52,9 +52,9 @@ heading: Map Improvements in Version 3.15.1
 
     - Renamed "Ain Temouchent" as "Ain Timouchent".
 
-  - Updated the specification sheet for Almaty City.
+  - Updated the specification sheet for [Almaty City](/maps/spec-sheets/almatycity).
 
-  - Updated the specification sheet for Amhara Region with the following:
+  - Updated the specification sheet for [Amhara Region](/maps/spec-sheets/amhararegion) with the following:
 
     - Renamed "East Gojam" as "East Gojjam".
 
@@ -72,13 +72,13 @@ heading: Map Improvements in Version 3.15.1
 
     - Renamed "West Gojam" as "West Gojjam".
 
-  - Updated the specification sheet for Androy with the following:
+  - Updated the specification sheet for [Androy](/maps/spec-sheets/androy) with the following:
 
     - Renamed "Beloha" as "Beloha-Androy".
 
     - Renamed "Tsiombe" as "Tsihombe".
 
-  - Updated the specification sheet for Anguilla with the following:
+  - Updated the specification sheet for [Anguilla](/maps/spec-sheets/anguilla) with the following:
 
     - Added the following entities:
 
@@ -98,7 +98,7 @@ heading: Map Improvements in Version 3.15.1
 
       - "Anguilla (administered by United kingdom)" as "Anguilla"
 
-  - Updated the specification sheet for Appenzell Innerrhoden with the following:
+  - Updated the specification sheet for [Appenzell Innerrhoden](/maps/spec-sheets/appenzellinnerrhoden) with the following:
 
     - Renamed "Appenzel" as "Appenzell".
 
@@ -108,13 +108,13 @@ heading: Map Improvements in Version 3.15.1
 
     - Renamed "Schlatt Haslen" as "Schlatt-Haslen".
 
-  - Updated the specification sheet for Atsimo-Atsinanana with the following:
+  - Updated the specification sheet for [Atsimo-Atsinanana](/maps/spec-sheets/atsimoatsinanana) with the following:
 
     - Renamed "Befotaka" as "Befotaka Sud"
 
     - Renamed "Midongy-Sud" as "Midongy-Atsimo"
 
-  - Updated the specification sheet for Aysen del General Carlos Ibanez del Campo with the following:
+  - Updated the specification sheet for [Aysen del General Carlos Ibanez del Campo](/maps/spec-sheets/aysendelgeneralcarlosibanezdelcampo) with the following:
 
     - Renamed "Provincia de Aysén" as "Aysén".
 
