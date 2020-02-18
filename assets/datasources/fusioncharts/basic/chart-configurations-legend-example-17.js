@@ -13,8 +13,8 @@
             "numberPrefix": "$",
             "showLegend": "1",
             "legendPosition": "absolute",
-            "legendXPosition": "400",
-            "legendYPosition": "70",
+            "legendXPosition": "700",
+            "legendYPosition": "420",
             "interactiveLegend": "0",
             "theme": "fusion"
         },
