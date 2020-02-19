@@ -1070,57 +1070,57 @@ By default, the tooltip text for the data plots in a box and whisker chart inclu
     </tr>
 
     <tr>
-        <td> `$` </td>
-        <td>  </td>
+        <td> `$horizontalPositiveErrorValue` </td>
+        <td> It refers to the unformatted `horizontalPositiveErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` / `horizontalErrorValue` </td>
         <td> <li> Error Scatter chart </li> </td>
         <td> Left </td>
     </tr>
 
     <tr>
-        <td> `$` </td>
-        <td>  </td>
+        <td> `$horizontalPositiveErrorDataValue` </td>
+        <td> It refers to the formatted `horizontalPositiveErrorValue` provided by the user for individual data plot. default: inherited from `errorValue` / `horizontalErrorValue` </td>
         <td> <li> Error Scatter chart </li> </td>
         <td> Left </td>
     </tr>
 
     <tr>
-        <td> `$` </td>
-        <td>  </td>
+        <td> `$horizontalNegativeErrorValue` </td>
+        <td> It refers to the unformatted `horizontalNegativeErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` / `horizontalErrorValue` </td>
         <td> <li> Error Scatter chart </li> </td>
         <td> Left </td>
     </tr>
 
     <tr>
-        <td> `$` </td>
-        <td>  </td>
+        <td> `$horizontalNegativeErrorDataValue` </td>
+        <td> It refers to the formatted `horizontalNegativeErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` / `horizontalErrorValue` </td>
         <td> <li> Error Scatter chart </li> </td>
         <td> Left </td>
     </tr>
 
     <tr>
-        <td> `$` </td>
-        <td>  </td>
+        <td> `$verticalPositiveErrorValue` </td>
+        <td> It refers to the unformatted `verticalPositiveErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` / `verticalErrorValue` </td>
         <td> <li> Error Scatter chart </li> </td>
         <td> Left </td>
     </tr>
 
     <tr>
-        <td> `$` </td>
-        <td>  </td>
+        <td> `$verticalPositiveErrorDataValue` </td>
+        <td> It refers to the formatted `verticalPositiveErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` / `verticalErrorValue` </td>
         <td> <li> Error Scatter chart </li> </td>
         <td> Left </td>
     </tr>
 
     <tr>
-        <td> `$` </td>
-        <td>  </td>
+        <td> `$verticalNegativeErrorValue` </td>
+        <td> It refers to the unformatted `verticalNegativeErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` / `verticalErrorValue` </td>
         <td> <li> Error Scatter chart </li> </td>
         <td> Left </td>
     </tr>
 
     <tr>
-        <td> `$` </td>
-        <td>  </td>
+        <td> `$verticalNegativeErrorDataValue` </td>
+        <td> It refers to the formatted `verticalNegativeErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` / `verticalErrorValue` </td>
         <td> <li> Error Scatter chart </li> </td>
         <td> Left </td>
     </tr>
