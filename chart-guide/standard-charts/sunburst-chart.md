@@ -294,7 +294,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/byrhf409/) to edit this chart.
 
-## Increase Chart Label Visibility
+### Increase Chart Label Visibility
 
 Use the attribute `textOutline` to add an outline to the data labels in a Sunburst chart.
 
@@ -310,6 +310,6 @@ Refer to the following code:
 
 The chart will look as shown below:
 
-LIVE CHART
+{% embed_chart standard-charts-sunburst-chart-example-13.js %}
 
-Click here to edit the above chart.
+Click [here](https://jsfiddle.net/fusioncharts/obLdxshu/) to edit this chart.
