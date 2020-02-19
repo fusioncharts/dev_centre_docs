@@ -32,6 +32,8 @@ FusionCharts XT suite now allows you to decouple the scrollbar from the axes. Ea
 
 - In charts where the X-axis is located to the left or the right (as in a bar chart), you can set the value of the `scrollPosition` attribute to `left` or `right`.
 
-LIVE CHART
+The scroll column 2D chart will look as shown below:
+
+{% embed_chart scroll-column-2d-showcasing-scroll-position.js %}
 
 Click here to know more.

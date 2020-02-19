@@ -254,8 +254,8 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The scroll column 2D chart will look as shown below:
 
-LIVE CHART
+{% embed_chart scroll-column-2d-showcasing-scroll-position.js %}
 
-Click here to edit the above chart.
+Click [here](https://jsfiddle.net/fusioncharts/bwopg620/) to edit the above chart.
