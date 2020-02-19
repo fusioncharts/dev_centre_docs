@@ -146,7 +146,7 @@ Refer to the code given below:
   "categories": [{
         "category": [{
             "label": "Bose",
-            "widthPercent": "43.31"
+            "widthPercent": "45"
           }
   	}
 }
@@ -154,6 +154,6 @@ Refer to the code given below:
 
 The chart will look as shown below:
 
-LIVE CHART
+{% embed_chart standard-charts-marimekko-chart-example-4.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/vvk1of9j/) to edit the above chart.
