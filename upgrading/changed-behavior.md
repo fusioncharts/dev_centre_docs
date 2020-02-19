@@ -8,13 +8,13 @@ This section is for users who are using previous version of FusionCharts in thei
 
 ## Exporting of Gantt and Spark Charts as XLSX
 
-You can now export Gantt and Spark Line charts in XLSX format, and the files display chart data correctly. Earlier, the exported XLSX files would be blank.
+You can now export Gantt and Spark Line charts in CSV or XLSX format, and the files display chart data correctly.
 
 The Gantt chart looks like as shown below:
 
-LIVE CHART
+{% embed_chart standard-charts-gantt-chart-with-csv-xlsx-export.js %}
 
-Export the above chart in XLSX format.
+Export the above chart in CSV or XLSX format.
 
 ## Legend Position in all Charts
 
