@@ -4,7 +4,7 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Chart in Svelte
 ---
 
-FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactive features, such as time navigator, date range selectors, tooltips with crosslines, interactive legend and more. These features enhance the experience of exploring and understanding time-series data
+FusionTime is a JavaScript charting library that helps you visualize, and explore time-series data. In FusionTime, you get lots of out-of-the-box interactive features, such as time navigator, date range selectors, tooltips with crosslines, interactive legend and more. These features enhance the experience of exploring and understanding time-series data.
 
 We have built a simple `svelte-fusioncharts` component, which provides bindings for **FusionTime**. The `svelte-fusioncharts` component allows you to easily add interactive time-series charts in your **Svelte** application or project without any hassle.
 
@@ -20,7 +20,7 @@ Install `svelte-fusioncharts` and `fusioncharts` libraries with the following co
 npm install svelte-fusioncharts fusioncharts --save
 ```
 
-That completes the installation of FusionCharts and the `svelte-fusioncharts` directive.
+This completes the installation of FusionCharts and the `svelte-fusioncharts` directive.
 
 ## Create Your First Chart
 
