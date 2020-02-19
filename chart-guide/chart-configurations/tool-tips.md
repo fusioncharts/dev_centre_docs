@@ -1045,28 +1045,84 @@ By default, the tooltip text for the data plots in a box and whisker chart inclu
         <td> `$positiveErrorValue` </td>
         <td> It refers to the unformatted `positiveErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` </td>
         <td> <li> Error bar chart </li>  <li> Error line chart </li> </td>
-        <td> <li> `trendLines`: {`toolText`} </li> <li> `line`: {`toolText`} </li> </td>
+        <td> Left </td>
     </tr>
 
     <tr>
         <td> `$positiveErrorDataValue` </td>
         <td> It refers to the formatted `positiveErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` </td>
         <td> <li> Error bar chart </li>  <li> Error line chart </li> </td>
-        <td> <li> `trendLines`: {`toolText`} </li> <li> `line`: {`toolText`} </li> </td>
+        <td> Left </td>
     </tr>
 
     <tr>
         <td> `$negativeErrorValue` </td>
         <td> It refers to the unformatted `negativeErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` </td>
         <td> <li> Error bar chart </li>  <li> Error line chart </li> </td>
-        <td> <li> `trendLines`: {`toolText`} </li> <li> `line`: {`toolText`} </li> </td>
+        <td> Left </td>
     </tr>
 
     <tr>
         <td> `$negativeErrorDataValue` </td>
         <td> It refers to the formatted `negativeErrorValue` provided by the user for individual data plot. By default, this is inherited from `errorValue` </td>
         <td> <li> Error bar chart </li>  <li> Error line chart </li> </td>
-        <td> <li> `trendLines`: {`toolText`} </li> <li> `line`: {`toolText`} </li> </td>
+        <td> Left </td>
+    </tr>
+
+    <tr>
+        <td> `$` </td>
+        <td>  </td>
+        <td> <li> Error Scatter chart </li> </td>
+        <td> Left </td>
+    </tr>
+
+    <tr>
+        <td> `$` </td>
+        <td>  </td>
+        <td> <li> Error Scatter chart </li> </td>
+        <td> Left </td>
+    </tr>
+
+    <tr>
+        <td> `$` </td>
+        <td>  </td>
+        <td> <li> Error Scatter chart </li> </td>
+        <td> Left </td>
+    </tr>
+
+    <tr>
+        <td> `$` </td>
+        <td>  </td>
+        <td> <li> Error Scatter chart </li> </td>
+        <td> Left </td>
+    </tr>
+
+    <tr>
+        <td> `$` </td>
+        <td>  </td>
+        <td> <li> Error Scatter chart </li> </td>
+        <td> Left </td>
+    </tr>
+
+    <tr>
+        <td> `$` </td>
+        <td>  </td>
+        <td> <li> Error Scatter chart </li> </td>
+        <td> Left </td>
+    </tr>
+
+    <tr>
+        <td> `$` </td>
+        <td>  </td>
+        <td> <li> Error Scatter chart </li> </td>
+        <td> Left </td>
+    </tr>
+
+    <tr>
+        <td> `$` </td>
+        <td>  </td>
+        <td> <li> Error Scatter chart </li> </td>
+        <td> Left </td>
     </tr>
 
 </table>
