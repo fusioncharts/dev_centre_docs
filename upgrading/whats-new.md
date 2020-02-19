@@ -36,4 +36,4 @@ The scroll column 2D chart will look as shown below:
 
 {% embed_chart scroll-column-2d-showcasing-scroll-position.js %}
 
-Click here to know more.
+Click [here](/chart-guide/standard-charts/scroll-charts#position-scroll-bar) to know more.
