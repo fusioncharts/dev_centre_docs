@@ -316,7 +316,7 @@ Click [here](http://jsfiddle.net/fusioncharts/x8182enw/) to edit the above chart
 
 ## Set Number of Rows/Columns in the Legend
 
-When a legend has a large number of items, you can now mention the number of rows and columns the legend should display, so that all legend items can be displayed without cluttering the canvas. If the number of rows are less than the total number of items, a vertical scroll bar appears to help you scroll through the items. Whereas if the number of columns are less than the total number of items, a horizontal scroll bar appears to help you scroll through the items.
+When a legend has a large number of items, you can mention the number of rows and columns the legend should display, so that all legend items can be displayed without cluttering the canvas. If the number of rows are less than the total number of items, a vertical scroll bar appears to help you scroll through the items. Whereas if the number of columns are less than the total number of items, a horizontal scroll bar appears to help you scroll through the items.
 
 Refer to the code given below:
 
@@ -342,8 +342,6 @@ Now, let's set the value of `legendNumRows` attribute to **3** and the value of 
 Click [here](https://jsfiddle.net/fusioncharts/1q92e8jr/) to edit the above chart.
 
 In the above chart, even if the value of `legendNumRows` attribute is set to **3**, the number of rows displayed is **2** whereas the number of columns have changed to **3**. For the legends, `legendNumColumns` attribute gets the higher priority than `legendNumRows`. So, in the above sample when the value of `legendNumColumns` is set to **3**, the chart sets the legend icons according to the attribute.
-
-> FusionCharts also allows you to set the number of columns the legend should display using `legendNumColumns` attribute.
 
 ## Customize Legend Scroll Bar
 
