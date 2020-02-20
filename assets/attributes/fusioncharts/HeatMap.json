@@ -708,6 +708,20 @@
     "table": "Chart Axis Configuration Attributes",
     "attrs": [
       {
+        "description": "This attribute sets the position of the x-axis in the chart. \n\n__Default value__: Bottom",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "xAxisPosition"
+      },
+      {
+        "description": "This attribute sets the position of the y-axis in the chart. \n\n__Default value__: Left",
+        "range": "Left, Right",
+        "type": "String",
+        "versionSince": "3.14.0",
+        "name": "yAxisPosition"
+      },
+      {
         "description": "This attribute is used to show or hide the x axis or the column labels.",
         "range": "0/1",
         "type": "Boolean",
