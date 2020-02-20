@@ -24,6 +24,16 @@ In the chart below, the legend is placed at the `top-right` of the chart:
 
 Click [here](/chart-guide/chart-configurations/legend#set-the-legend-position) to know more.
 
+## Set Number of Rows/Columns in the Legend
+
+You can now mention the number of rows and columns the legend should display, when there are a large number of legend items. To set the number of rows in the legend, use the `legendNumRows` attribute. Whereas to set the number of columns in the legend, use the `legendNumColumns`
+
+The chart looks like as shown below:
+
+{% embed_chart set-the-number-of-row-column-in-legend.js %}
+
+Click [here](/chart-guide/chart-configurations/legend#set-number-of-rows-columns-in-the-legend) to know more.
+
 ## Decouple Scrollbar from Axis
 
 FusionCharts XT suite now allows you to decouple the scrollbar from the axes. Earlier, the scrollbar was always coupled with the X-axis. Now, a new attribute `scrollPosition` has been introduced, which lets you position the scrollbar independently of the X-axis.
