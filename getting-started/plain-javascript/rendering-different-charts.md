@@ -3,7 +3,7 @@ title: Rendering different Charts | FusionCharts
 heading: Rendering Different Charts111
 description: This article outlines some of the popular charts and the way to render them with their respective data formats.
 ---
-
+# Rendering Different Charts
 By now, we assume that you have already built a single series column chart, and have a basic grasp over the way FusionCharts works. If you have not done so yet, we recommend visiting [this](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript) tutorial to build your first chart and returning to this later.
 
 In this tutorial, we shall discuss how you can work with different data formats in FusionCharts. We’ll be building various types of charts, gauges and maps using FusionCharts like
@@ -39,38 +39,9 @@ In the above chart, we have plotted quarters with data values for th
 1. `categories`
 2. `dataset`
 
-The diagram below can give you an idea about how we are going to assign values to these properties.
+The illustration below can give you an idea about how we are going to assign values to these properties.
 
 {% embed_chartAnatomy multiseries-data.json %}
-
-The syntax to use the properties is given below:
-```json
-"categories": [
-  {
-    "category":[ 
-      { "label": "abc" },
-      { "label": "xyz" }
-    ]
-  }
-],
-"dataset": [
-  {
-    "seriesname": "Data Series 1",
-    "data": [
-      { "value": "xx" },
-      { "value": "xx" }
-    ]
-  },
-  {
-    "seriesname": "Data Series 2",
-    "data": [
-      { "value": "xx" },
-      { "value": "xx" }
-    ]
-  }
-]
-```
-> The number of objects passed in the series should be the same as the number of labels.
 
 As shown in the sample above, the chart compares the quarterly sales of a company for over two years. The data in the JSON format for the above chart looks as follows:
 ```json
@@ -107,6 +78,8 @@ const dataset = [
   }
 ]
 ```
+
+> The number of objects passed in the series should be the same as the number of labels.
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 ```
@@ -200,50 +173,7 @@ The diagram below can give you an idea about how we are going to assign values t
 
 <<Data Anatomy - combination chart>>
 
-The syntax to use the properties is given below:
-
-```
-"categories": [
-  {
-    "category":[ 
-      { "label": "a1" },
-      { "label": "a2" },
-      { "label": "a3" }
-    ]
-  }
-],
-"dataset": [
-  {
-    "seriesname": "Data Series 1",
-    "data": [
-      { "value": "xx" },
-      { "value": "xx" }
-    ]
-  },
-  {
-    "seriesname": "Data Series 2",
-    "renderAs":  "type1"
-    "data": [
-      { "value": "xx" },
-      { "value": "xx" }
-    ]
-  },
-{
-    "seriesname": "Data Series 3",
-     "renderAs":  "type2"
-    "data": [
-      { "value": "xx" },
-      { "value": "xx" }
-    ]
-  }
-]
-```
-
-> The number of objects passed in the series should be the same as the number of labels.
-
-
 As shown in the sample above, the chart compares the monthly sales and profits of the Supermart. The data in the JSON format for the above chart looks as follows:
-
 
 ```
 // Define the categories representing the labels on the X-axis
@@ -270,10 +200,10 @@ const dataset = [
   {
     "seriesname": "Actual Revenue",
     "data": [
-        { "value": "16000" },
-        { "value": "20000" },
-        { "value": "18000" },
-        { "value": "19000" },
+        {"value": "16000"},
+        {"value": "20000"},
+        {"value": "18000"},
+        {"value": "19000"},
         {"value": "15000"},
         {"value": "21000"},
         {"value": "16000"},
@@ -287,10 +217,10 @@ const dataset = [
   {
     "seriesname": "Projected Revenue",
     "data": [
-        { "value": "15000" },
-        { "value": "16000" },
-        { "value": "17000" },
-        { "value": "18000" },
+        {"value": "15000"},
+        {"value": "16000"},
+        {"value": "17000"},
+        {"value": "18000"},
         {"value": "19000"},
         {"value": "19000"},
         {"value": "19000"},
@@ -300,13 +230,107 @@ const dataset = [
         {"value": "22000"},
         {"value": "23000"}
     ]
-  }
+  },
+  {
+    "seriesName": "Profit",
+    "renderAs": "area",
+    "data": [
+        {"value": "4000"},
+        {"value": "5000"},
+        {"value": "3000"},
+        {"value": "4000"},
+        {"value": "1000"},
+        {"value": "7000"},
+        {"value": "1000"},
+        {"value": "4000"},
+        {"value": "1000"},
+        {"value": "8000"},
+        {"value": "2000"},
+        {"value": "7000"}
+    ]
+}
 ]
 ```
+
+> The number of objects passed in the series should be the same as the number of labels.
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```
+// Define the categories representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+        {"label": "Jan"},
+        {"label": "Feb"},
+        {"label": "Mar"},
+        {"label": "Apr"},
+        {"label": "May"},
+        {"label": "Jun"},
+        {"label": "Jul"},
+        {"label": "Aug"},
+        {"label": "Sep"},
+        {"label": "Oct"},
+        {"label": "Nov"},
+        {"label": "Dec"}
+    ]
+  }
+]
+// Construct the dataset comprising multiple series 
+const dataset = [
+  {
+    "seriesname": "Actual Revenue",
+    "data": [
+        {"value": "16000"},
+        {"value": "20000"},
+        {"value": "18000"},
+        {"value": "19000"},
+        {"value": "15000"},
+        {"value": "21000"},
+        {"value": "16000"},
+        {"value": "20000"},
+        {"value": "17000"},
+        {"value": "25000"},
+        {"value": "19000"},
+        {"value": "23000"}
+    ]
+  },
+  {
+    "seriesname": "Projected Revenue",
+    "data": [
+        {"value": "15000"},
+        {"value": "16000"},
+        {"value": "17000"},
+        {"value": "18000"},
+        {"value": "19000"},
+        {"value": "19000"},
+        {"value": "19000"},
+        {"value": "19000"},
+        {"value": "20000"},
+        {"value": "21000"},
+        {"value": "22000"},
+        {"value": "23000"}
+    ]
+  },
+  {
+    "seriesName": "Profit",
+    "renderAs": "area",
+    "data": [
+        {"value": "4000"},
+        {"value": "5000"},
+        {"value": "3000"},
+        {"value": "4000"},
+        {"value": "1000"},
+        {"value": "7000"},
+        {"value": "1000"},
+        {"value": "4000"},
+        {"value": "1000"},
+        {"value": "8000"},
+        {"value": "2000"},
+        {"value": "7000"}
+    ]
+}
+]
 FusionCharts.ready(function() {
   var salesAnlysisChart = new FusionCharts({
     type: 'mscombi2d',
@@ -333,169 +357,8 @@ FusionCharts.ready(function() {
         "toolTipPadding": "5",
         "theme": "fusion"
       },
-      "categories": [{
-        "category": [{
-            "label": "Jan"
-          },
-          {
-            "label": "Feb"
-          },
-          {
-            "label": "Mar"
-          },
-          {
-            "label": "Apr"
-          },
-          {
-            "label": "May"
-          },
-          {
-            "label": "Jun"
-          },
-          {
-            "label": "Jul"
-          },
-          {
-            "label": "Aug"
-          },
-          {
-            "label": "Sep"
-          },
-          {
-            "label": "Oct"
-          },
-          {
-            "label": "Nov"
-          },
-          {
-            "label": "Dec"
-          }
-        ]
-      }],
-      "dataset": [{
-          "seriesName": "Actual Revenue",
-          "showValues": "1",
-          "data": [{
-              "value": "16000"
-            },
-            {
-              "value": "20000"
-            },
-            {
-              "value": "18000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "15000"
-            },
-            {
-              "value": "21000"
-            },
-            {
-              "value": "16000"
-            },
-            {
-              "value": "20000"
-            },
-            {
-              "value": "17000"
-            },
-            {
-              "value": "25000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "23000"
-            }
-          ]
-        },
-        {
-          "seriesName": "Projected Revenue",
-          "renderAs": "line",
-          "data": [{
-              "value": "15000"
-            },
-            {
-              "value": "16000"
-            },
-            {
-              "value": "17000"
-            },
-            {
-              "value": "18000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "20000"
-            },
-            {
-              "value": "21000"
-            },
-            {
-              "value": "22000"
-            },
-            {
-              "value": "23000"
-            }
-          ]
-        },
-        {
-          "seriesName": "Profit",
-          "renderAs": "area",
-          "data": [{
-              "value": "4000"
-            },
-            {
-              "value": "5000"
-            },
-            {
-              "value": "3000"
-            },
-            {
-              "value": "4000"
-            },
-            {
-              "value": "1000"
-            },
-            {
-              "value": "7000"
-            },
-            {
-              "value": "1000"
-            },
-            {
-              "value": "4000"
-            },
-            {
-              "value": "1000"
-            },
-            {
-              "value": "8000"
-            },
-            {
-              "value": "2000"
-            },
-            {
-              "value": "7000"
-            }
-          ]
-        }
-      ]
+      "categories": categories,
+      "dataset": dataset
     }
   }).render();
 });
@@ -520,26 +383,6 @@ The diagram below can give you an idea about how we are going to assign values t
 
 <<Data Anatomy - Real-time chart>>
 
-The syntax to use the properties is given below:
-
-```
-"categories": [
-  {
-    "category":[ 
-      { "label": "a1" }
-     ]
-  }
-],
-"dataset": [
-  {
-    "seriesname": "Data Series",
-    "data": [
-      { "value": "xx" },
-      ]
-  }
-]
-```
-
 In the sample above, the chart shows the values of the Harry’s Supermart stock throughout a single business day, at intervals of 5 seconds. The data in the JSON format for the above chart looks as follows:
 
 ```
@@ -563,6 +406,7 @@ const dataset = [
   }
 ]
 ```
+
 Now that we’ve seen the structuring of the data object, let us deal with feeding the real-time data into this format. There are multiple ways in which one can feed real-time data to FusionCharts.
 - The real-time data from the server can be transported through APIs, web sockets depending on the requirement
 - The data can be fetched at regular intervals from third-party endpoints as per the requirement
@@ -573,29 +417,26 @@ To build the sample chart, we will feed the data at regular intervals from a ran
 
 ```
 function addLeadingZero(num) {
-            return (num <= 9) ? ("0" + num) : num;
-          }
+    return (num <= 9) ? ("0" + num) : num;
+}
 
-          function updateData() {
-            // Get reference to the chart using its ID(stockRealTimeChart)
-            var chartRef = FusionCharts("stockRealTimeChart"),
-              // We need to create a querystring format incremental update, containing
-              // label in hh:mm:ss format
-              // and a value (random).
-              currDate = new Date(),
-              label = addLeadingZero(currDate.getHours()) + ":" +
-              addLeadingZero(currDate.getMinutes()) + ":" +
-              addLeadingZero(currDate.getSeconds()),
-              // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
-              randomValue = Math.floor(Math.random() *
-                50) / 100 + 35.25,
-              // Build Data String in format &label=...&value=...
-              strData = "&label=" + label +
-              "&value=" +
-              randomValue;
-            // Feed it to the chart. chartRef is the instance of the chart.
-            chartRef.feedData(strData);
-          }
+function updateData() {
+    // Get reference to the chart using its ID(stockRealTimeChart)
+    var chartRef = FusionCharts("stockRealTimeChart"),
+    // We need to create a querystring format incremental update, containing
+    // label in hh:mm:ss format
+    // and a value (random).
+    currDate = new Date(),
+    label = addLeadingZero(currDate.getHours()) + ":" +
+    addLeadingZero(currDate.getMinutes()) + ":" +
+    addLeadingZero(currDate.getSeconds()),
+    // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
+    randomValue = Math.floor(Math.random() *50) / 100 + 35.25,
+    // Build Data String in format &label=...&value=...
+    strData = "&label=" + label + "&value=" + randomValue;
+    // Feed it to the chart. chartRef is the instance of the chart.
+    chartRef.feedData(strData);
+}
 ```
 
 Now that the data and its transporting mechanism are ready, let us dive in directly to render the chart. The consolidated code is given below:
@@ -668,9 +509,94 @@ FusionCharts.ready(function() {
           }, 5000);
         }
       }
-    })
-    .render();
+    }).render();
 });
 ```
 
 You can also create various types of real-time charts in a similar way. Check out the different types of real-time charts here.
+
+## Gauges
+Gauges are powerful tools that can showcase information using a radial or linear scale to display data. An angular gauge is used to show a specific value over a radial scale. The gauge is rendered with a radial scale that displays the data range.
+This scale can be color-coded to indicate divisions within the range. A dial is used to point to the data value. The gauge can also be rendered with multiple dials. It is often used to simulate a speedometer and on dashboards.
+
+To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
+
+{% embed_chart getting-started-your-first-widget.js %}
+
+So, any score less than 50 is bad and is shown in red. Any score between 50 and 75 is average and is shown in yellow. Any score above 75 means good and is shown in green.
+
+To build the gauge shown above, we will use the data presented in the table below:
+
+| Range | Color | Hex Code |
+| ----- | ----- | -------- ||
+| 0-50 | Red | #F2726F |
+| 50-75 | Yellow | #FFC533 |
+| 75-100 | Green | #62B58F |
+
+FusionCharts accepts data in JSON format. To convert this to a data format that FusionCharts can use, you need the following two properties:
+- `colorRange`
+- `dials`
+
+The diagram below can give you an idea about how we are going to assign values to these properties. 
+
+<Data Anatomy - gauge>
+
+The following code is the JSON representation of the tabular column with the required attributes to render the above gauge.The data in the JSON format for the above gauge looks as follows:
+```
+  // Chart Data
+  "colorRange": {
+    "color": [
+      {
+
+        "minValue": "xx",
+        "maxValue": "xx",
+        "code": "xx"
+      }]
+  },
+  "dials": {
+    "dial": [
+      {
+        "value": "xx"
+```
+
+In the above JSON:
+- Create the colorRange object to set the color associated with the specific range of values.
+- Specify minValue and maxValue within the color array under the colorRange object.
+- Set the code attribute to specify the hex color of respective ranges.
+- Create the dials object to represent the customer satisfaction score.
+- Create the dial object under dials object to set the value of customer satisfaction score.
+
+Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+
+```
+// Create an Instance with chart options
+var gaugeInstance = new FusionCharts({
+type: 'angulargauge', // The gauge type
+width: '450', // Width of the gauge
+height: '250', // Height of the gauge
+dataFormat: 'json', // Data type
+renderAt:'chart-container', //Container where the chart will render
+dataSource: {
+
+// Gauge Configuration
+"chart": {
+"caption": "Nordstrom's Customer Satisfaction Score for 2017",
+"lowerLimit": "0",
+"upperLimit": "100",
+"showValue": "1",
+"numberSuffix": "%",
+"theme": "fusion",
+"showToolTip": "0"
+},
+
+// Chart Data
+"colorRange": colorRange,
+"dials": dials
+}
+});
+// Render
+gaugeInstance.render();
+```
+
+You can also create various charts belonging to the gauges family in a similar way. Check out the different types of gauges here.
+
