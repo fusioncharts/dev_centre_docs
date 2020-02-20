@@ -1,7 +1,7 @@
 ---
 title: Rendering different Charts | FusionCharts
+heading: Rendering Different Charts111
 description: This article outlines some of the popular charts and the way to render them with their respective data formats.
-heading: Rendering Different Charts
 ---
 
 By now, we assume that you have already built a single series column chart, and have a basic grasp over the way FusionCharts works. If you have not done so yet, we recommend visiting [this](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript) tutorial to build your first chart and returning to this later.
@@ -9,7 +9,7 @@ By now, we assume that you have already built a single series column
 In this tutorial, we shall discuss how you can work with different data formats in FusionCharts. We’ll be building various types of charts, gauges and maps using FusionCharts like
 - Multi Series Charts
 - Combination Charts
-- Real-time Charts
+- Real-time Chart
 - Gauges
 - Maps
 - Heatmap
@@ -41,7 +41,7 @@ In the above chart, we have plotted quarters with data values for th
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy data-format1.json %}
+{% embed_chartAnatomy multiseries-data.json %}
 
 The syntax to use the properties is given below:
 ```json
@@ -198,7 +198,7 @@ In the above chart, we have plotted monthly values for projected revenue, actual
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-<img src="{https://octodex.github.com/images/minion.png" width="250" height="350" alt="Combination Data Format">
+<<Data Anatomy - combination chart>>
 
 The syntax to use the properties is given below:
 
@@ -502,3 +502,175 @@ FusionCharts.ready(function() {
 ```
 
 You can also create various charts belonging to the combination type in a similar way. Check out the different types of combination charts here.
+
+## Real Time Charts
+Real-time charts are also referred to as data streaming charts, because they can automatically update themselves at regular intervals, by fetching new data from the server and discarding the previous values. You do not need to keep refreshing the page to see the updated versions of these charts. 
+
+FusionCharts XT supports six types of Real-time charts - Line, Area, Column, Stacked Area, Stacked Column, and Line (Dual Y axis). In the section below, we will see how to build a real-time area 2D chart.
+
+{% embed_chart standard-charts-real-time-charts-example-2.js %}
+
+As you can see in the real-time 2D area chart above, the data plot is presenting the values present at a given instance. As soon as new values are available in the source data, the chart will update itself with the fresh values, gradually discarding the data plots displayed above. 
+
+In the above chart, we have plotted values of a stock (of Harry’s Supermart) on a business day, at intervals of 5 seconds between any two consecutive values. To convert the data provided in the above table to a data format that FusionCharts can use, you need the following two properties:
+- `categories`
+- `dataset`
+
+The diagram below can give you an idea about how we are going to assign values to these properties. 
+
+<<Data Anatomy - Real-time chart>>
+
+The syntax to use the properties is given below:
+
+```
+"categories": [
+  {
+    "category":[ 
+      { "label": "a1" }
+     ]
+  }
+],
+"dataset": [
+  {
+    "seriesname": "Data Series",
+    "data": [
+      { "value": "xx" },
+      ]
+  }
+]
+```
+
+In the sample above, the chart shows the values of the Harry’s Supermart stock throughout a single business day, at intervals of 5 seconds. The data in the JSON format for the above chart looks as follows:
+
+```
+// Define the category representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+      { "label": "Day Start" },...
+    ]
+  }
+]
+// Construct the dataset
+const dataset = [
+  {
+    "seriesname": "Time",
+    "data": [
+      { "value": "10:32:58" },
+      { "value": "10:33:03" },
+      { "value": "10:33:08" }, ...
+    ]
+  }
+]
+```
+Now that we’ve seen the structuring of the data object, let us deal with feeding the real-time data into this format. There are multiple ways in which one can feed real-time data to FusionCharts.
+- The real-time data from the server can be transported through APIs, web sockets depending on the requirement
+- The data can be fetched at regular intervals from third-party endpoints as per the requirement
+- Data can be fed from google sheets in real-time.
+
+To build the sample chart, we will feed the data at regular intervals from a random generator (math.random function), for the sake of simplicity.
+
+
+```
+function addLeadingZero(num) {
+            return (num <= 9) ? ("0" + num) : num;
+          }
+
+          function updateData() {
+            // Get reference to the chart using its ID(stockRealTimeChart)
+            var chartRef = FusionCharts("stockRealTimeChart"),
+              // We need to create a querystring format incremental update, containing
+              // label in hh:mm:ss format
+              // and a value (random).
+              currDate = new Date(),
+              label = addLeadingZero(currDate.getHours()) + ":" +
+              addLeadingZero(currDate.getMinutes()) + ":" +
+              addLeadingZero(currDate.getSeconds()),
+              // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
+              randomValue = Math.floor(Math.random() *
+                50) / 100 + 35.25,
+              // Build Data String in format &label=...&value=...
+              strData = "&label=" + label +
+              "&value=" +
+              randomValue;
+            // Feed it to the chart. chartRef is the instance of the chart.
+            chartRef.feedData(strData);
+          }
+```
+
+Now that the data and its transporting mechanism are ready, let us dive in directly to render the chart. The consolidated code is given below:
+
+```
+FusionCharts.ready(function() {
+  var stockPriceChart = new FusionCharts({
+      id: "stockRealTimeChart",
+      type: 'realtimearea',
+      renderAt: 'chart-container',
+      width: '700',
+      height: '400',
+      dataFormat: 'json',
+      dataSource: {
+        "chart": {
+          "theme": "fusion",
+          "caption": "Real-time stock price monitor",
+          "subCaption": "Harry's SuperMart",
+          "xAxisName": "Time",
+          "yAxisName": "Stock Price",
+          "numberPrefix": "$",
+          "refreshinterval": "5",
+          "yaxisminvalue": "35",
+          "yaxismaxvalue": "36",
+          "numdisplaysets": "10",
+          "labeldisplay": "rotate",
+          "showRealTimeValue": "0"
+
+        },
+        "categories": [{
+          "category": [{
+            "label": "Day Start"
+          }]
+        }],
+        "dataset": [{
+          "data": [{
+            "value": "35.27"
+          }]
+        }]
+      },
+      "events": {
+        "initialized": function(e) {
+          function addLeadingZero(num) {
+            return (num <= 9) ? ("0" + num) : num;
+          }
+
+          function updateData() {
+            // Get reference to the chart using its ID
+            var chartRef = FusionCharts("stockRealTimeChart"),
+              // We need to create a querystring format incremental update, containing
+              // label in hh:mm:ss format
+              // and a value (random).
+              currDate = new Date(),
+              label = addLeadingZero(currDate.getHours()) + ":" +
+              addLeadingZero(currDate.getMinutes()) + ":" +
+              addLeadingZero(currDate.getSeconds()),
+              // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
+              randomValue = Math.floor(Math.random() *
+                50) / 100 + 35.25,
+              // Build Data String in format &label=...&value=...
+              strData = "&label=" + label +
+              "&value=" +
+              randomValue;
+            // Feed it to chart.
+            chartRef.feedData(strData);
+          }
+
+          var myVar = setInterval(function() {
+            updateData();
+          }, 5000);
+        }
+      }
+    })
+    .render();
+});
+```
+
+You can also create various types of real-time charts in a similar way. Check out the different types of real-time charts here.
