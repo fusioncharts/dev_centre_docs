@@ -1234,6 +1234,18 @@
         "name": "legendYPosition"
       },
       {
+        "description": "Sets the number of rows the legend should display.",
+        "range": "",
+        "type": "Number",
+        "name": "legendNumRows"
+      },
+      {
+        "description": "Sets the number of columns the legend should display.",
+        "range": "",
+        "type": "Number",
+        "name": "legendNumColumns"
+      },,
+      {
         "description": "Sets the legend background color.",
         "range": "Hex Color Code",
         "type": "Color",
