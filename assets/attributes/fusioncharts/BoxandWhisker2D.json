@@ -2249,7 +2249,7 @@
         "range": "",
         "type": "Number",
         "name": "legendNumColumns"
-      },,
+      },
       {
         "description": "Background color for the legend.",
         "range": "Hex Color Code",

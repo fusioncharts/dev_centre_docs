@@ -1719,7 +1719,7 @@
         "range": "",
         "type": "Number",
         "name": "legendNumColumns"
-      },,
+      },
       {
         "description": "You can reverse the ordering of datasets in the legend by setting this attribute to 1.",
         "range": "0/1",

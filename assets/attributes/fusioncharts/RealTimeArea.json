@@ -2058,7 +2058,7 @@
         "range": "",
         "type": "Number",
         "name": "legendNumColumns"
-      },,
+      },
       {
         "description": "Sets the legend caption horizontal alignment .",
         "range": "\"left\", \"center\", \"right\"",

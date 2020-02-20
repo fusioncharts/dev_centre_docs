@@ -1244,7 +1244,7 @@
         "range": "",
         "type": "Number",
         "name": "legendNumColumns"
-      },,
+      },
       {
         "description": "Sets the legend background color.",
         "range": "Hex Color Code",
