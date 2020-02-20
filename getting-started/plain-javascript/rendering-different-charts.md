@@ -193,12 +193,15 @@ As you can see in the 2D Single Y-axis combination chart above, a line, a column
 | Decemebr | 23000 | 23000 | 7000 |
 
 In the above chart, we have plotted monthly values for projected revenue, actual revenue, and profits made by Harry’s Supermart with monthly data values along the X-axis. To convert the data provided in the above table to a data format that FusionCharts can use, you need the following two properties:
-`categories`
-`dataset`
-The diagram below can give you an idea about how we are going to assign values to these properties. 
+- `categories`
+- `dataset`
 
-<img src="{https://octodex.github.com/images/minion.png" width="250" height="350" alt="Combination Data Format" align="right">
+The diagram below can give you an idea about how we are going to assign values to these properties.
+
+<img src="{https://octodex.github.com/images/minion.png" width="250" height="350" alt="Combination Data Format">
+
 The syntax to use the properties is given below:
+
 ```
 "categories": [
   {
@@ -235,19 +238,30 @@ The syntax to use the properties is given below:
   }
 ]
 ```
+
 > The number of objects passed in the series should be the same as the number of labels.
+
+
 As shown in the sample above, the chart compares the monthly sales and profits of the Supermart. The data in the JSON format for the above chart looks as follows:
+
+
 ```
 // Define the categories representing the labels on the X-axis
 const categories =  [
   {
     "category": [
-      { "label": "Jan" },
-      { "label": "Feb" },
-      { "label": "Mar" },
-      { "label": "Apr" },
-...
-
+        {"label": "Jan"},
+        {"label": "Feb"},
+        {"label": "Mar"},
+        {"label": "Apr"},
+        {"label": "May"},
+        {"label": "Jun"},
+        {"label": "Jul"},
+        {"label": "Aug"},
+        {"label": "Sep"},
+        {"label": "Oct"},
+        {"label": "Nov"},
+        {"label": "Dec"}
     ]
   }
 ]
@@ -256,26 +270,42 @@ const dataset = [
   {
     "seriesname": "Actual Revenue",
     "data": [
-      { "value": "16000" },
-      { "value": "20000" },
-      { "value": "18000" },
-      { "value": "19000" },
-...
+        { "value": "16000" },
+        { "value": "20000" },
+        { "value": "18000" },
+        { "value": "19000" },
+        {"value": "15000"},
+        {"value": "21000"},
+        {"value": "16000"},
+        {"value": "20000"},
+        {"value": "17000"},
+        {"value": "25000"},
+        {"value": "19000"},
+        {"value": "23000"}
     ]
   },
   {
     "seriesname": "Projected Revenue",
     "data": [
-      { "value": "15000" },
-      { "value": "16000" },
-      { "value": "17000" },
-      { "value": "18000" },
-...
+        { "value": "15000" },
+        { "value": "16000" },
+        { "value": "17000" },
+        { "value": "18000" },
+        {"value": "19000"},
+        {"value": "19000"},
+        {"value": "19000"},
+        {"value": "19000"},
+        {"value": "20000"},
+        {"value": "21000"},
+        {"value": "22000"},
+        {"value": "23000"}
     ]
   }
 ]
 ```
+
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+
 ```
 FusionCharts.ready(function() {
   var salesAnlysisChart = new FusionCharts({
@@ -470,4 +500,5 @@ FusionCharts.ready(function() {
   }).render();
 });
 ```
+
 You can also create various charts belonging to the combination type in a similar way. Check out the different types of combination charts here.
