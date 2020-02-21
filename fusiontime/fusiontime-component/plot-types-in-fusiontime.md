@@ -152,7 +152,7 @@ An area-range series chart looks like an area chart bound by two lines along its
 
 An area-range chart looks as shown below:
 
-{% embed_ftChart area-range-series-chart %}
+{% embed_ftChart area-range-series %}
 
 ## Style Definition
 
