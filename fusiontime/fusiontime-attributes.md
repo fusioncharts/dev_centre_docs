@@ -754,6 +754,74 @@ new FusionCharts({
 	</tr>
 </table>
 
+## Caption
+
+To configure the caption of the chart, you can create the `caption` object under `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    caption: {
+      text: " ", //String
+      position: " " //String | Default Value: Left
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attributes</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`text`</td>
+		<td>String</td>
+		<td>Caption of the chart</td>
+	</tr>
+	<tr>
+		<td>`position`</td>
+		<td>String</td>
+		<td>Sets the position of the caption. The values can be: left, right or center.</td>
+	</tr>
+</table>
+
+## Sub-caption
+
+To configure the sub-caption of the chart, you can create the `subCaption` object under `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    subcaption: {
+      text: " ", //String
+      position: " " //String | Default Value: Left
+    }
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attributes</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`text`</td>
+		<td>String</td>
+		<td>Sub-caption of the chart</td>
+	</tr>
+	<tr>
+		<td>`position`</td>
+		<td>String</td>
+		<td>Sets the position of the sub-caption. The values can be: left, right or center.</td>
+	</tr>
+</table>
+
 ## Plot Configuration
 
 To configure the plot of the chart, you can create the `plotConfig` object under `dataSource`.
