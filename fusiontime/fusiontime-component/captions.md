@@ -8,7 +8,7 @@ The caption is the title (or heading) of a chart. It helps you understand the co
 
 Refer to the image below:
 
-<<Image>>
+<img src="{% site.BASE_URL %}/images/caption-subcaption-fusiontime.png" alt="Captions" width="700" height="420">
 
 ## Caption Position
 
