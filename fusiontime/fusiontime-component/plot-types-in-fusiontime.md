@@ -135,7 +135,7 @@ Let's create a chart showing NASDAQ Composite Index. The time series chart looks
 FusionTime allows you to plot range series charts using time series data. The charts can be of two types:
 
 - Column-range
-
+  \
 - Area-range
 
 ### Column-Range Series Charts
@@ -152,7 +152,7 @@ An area-range series chart looks like an area chart bound by two lines along its
 
 An area-range chart looks as shown below:
 
-{% embed_ftChart area-range-series %}
+{% embed_ftChart column-range-series-chart %}
 
 ## Style Definition
 
