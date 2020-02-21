@@ -1,20 +1,27 @@
-[{
-    "name": "Time",
+[
+  {
+    "name": "Date",
     "type": "date",
-    "format": "%-m/%-d/%Y %H:%M"
-}, {
-    "name": "Carbon mono-oxide (mg/m^3)",
+    "format": "%Y-%m-%d"
+  },
+  {
+    "name": "Open",
     "type": "number"
-},{
-    "name": "Non methane hydrocarbons (microg/m^3)",
+  },
+  {
+    "name": "High",
     "type": "number"
-},{
-    "name": "Benzene",
+  },
+  {
+    "name": "Low",
     "type": "number"
-},{
-    "name": "Nitrogen dioxide",
+  },
+  {
+    "name": "Close",
     "type": "number"
-}, {
-    "name": "Temperature",
+  },
+  {
+    "name": "Volume",
     "type": "number"
-}]
+  }
+]

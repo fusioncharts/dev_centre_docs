@@ -1,36 +1,50 @@
 {
     type: "timeseries",
     renderAt: "container",
-    width: 680,
+    width: 100%,
     height: 500,
     dataSource: {
         data: dataStore,
-        caption: {
-            text: "Temperature readings of an Italian Town"
+        chart: {
+            borderColor: '000000',
+            theme: 'gammel',
+            "style": {
+                "canvas": {
+                    stroke: "BBBBBB"
+                }
+            },
+            canvasheightproportion: '4:1'
         },
-        subCaption: {
-            text: "Specified bins are 1-month, 1-day, 6-hours & 3-hours"
+        caption: {
+            text: 'Apple Inc. Stock Price'
+        },
+        subcaption: {
+            text: 'Stock prices from January 2018 - March 2018'
+        },
+        xAxis: {
+            timemarker: timeMarker
+            // clip: 
         },
         yAxis: [{
-            "plot": "Temperature",
-            "title": "Temperature",
-            "plotType": "column",
-            "format": {
-                "suffix": "°C",
-                "label": "Controlled Temperature",
-                "value": "10",
-            }
-        }],
-        xAxis: {
-            binning: {
-                //"year": [],
-                "month": [1],
-                "day": [1],
-                "hour": [3, 6],
-                "minute": [] //<Array of multipliers>
-                // "second": <Array of multipliers>
-                // "millisecond": <Array of multipliers>
-            }
-        }
+            plot: {
+                value: {
+                    open: 'Open',
+                    high: 'High',
+                    low: 'Low',
+                    close: 'Close'
+                },
+                type: 'candlestick'
+            },
+            format: {
+                prefix: '$'
+            },
+            title: 'Stock Value'
+        },
+        {
+            plot: [{
+                value: 'Volume',
+                type: 'column'
+          }]
+        }]
     }
 }

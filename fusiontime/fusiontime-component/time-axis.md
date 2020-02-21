@@ -220,7 +220,7 @@ Refer to the code given below:
 
 The live chart will look as shown below:
 
-Live Chart
+{% embed_ftChart clip-time-axis %}
 
 ## Output time format
 
