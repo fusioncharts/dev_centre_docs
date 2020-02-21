@@ -1,20 +1,15 @@
-[{
-    "name": "Time",
+[
+  {
+    "name": "Date",
     "type": "date",
-    "format": "%-m/%-d/%Y %H:%M"
-}, {
-    "name": "Carbon mono-oxide (mg/m^3)",
+    "format": "%Q"
+  },
+  {
+    "name": "Coal",
     "type": "number"
-},{
-    "name": "Non methane hydrocarbons (microg/m^3)",
+  },
+  {
+    "name": "Hydro",
     "type": "number"
-},{
-    "name": "Benzene",
-    "type": "number"
-},{
-    "name": "Nitrogen dioxide",
-    "type": "number"
-}, {
-    "name": "Temperature",
-    "type": "number"
-}]
+  }
+]
