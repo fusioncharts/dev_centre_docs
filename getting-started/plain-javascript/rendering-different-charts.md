@@ -21,7 +21,7 @@ A Multi-series chart is used to plot data for more than one series 
 
 In a multi-series chart, we have two or more datasets plotted against the same X-axis (or Y-axis) value. Let us build a Multi-series Column 2D Chart.
 
-{% embed_all standard-charts-multi-series-charts-example-1.js %}
+{%embed_chart standard-charts-multi-series-charts-example-1.js %}
 
 As you can see, a Multi-series Column 2D Chart has vertically aligned rectangular bars on one axis with discrete values shown on the other. The length of a column is proportionate to the value it represents.
 
@@ -83,39 +83,50 @@ const dataset = [
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 ```
-// Define the categories representing the labels on the X-axis
-const categories =  [
-  {
-    "category": [
-      { "label": "Q1" },
-      { "label": "Q2" },
-      { "label": "Q3" },
-      { "label": "Q4" }
-    ]
-  }
-]
-// Construct the dataset comprising multiple series 
-const dataset = [
-  {
-    "seriesname": "Previous Year",
-    "data": [
-      { "value": "12000" },
-      { "value": "10500" },
-      { "value": "23500" },
-      { "value": "16000" }
-    ]
-  },
-  {
-    "seriesname": "Current Year",
-    "data": [
-      { "value": "24400" },
-      { "value": "29800" },
-      { "value": "20800" },
-      { "value": "26800" }
-    ]
-  }
-];
-var chartConfigurations = {
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<!-- Include fusioncharts core library -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<!-- Include fusion theme -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript">
+    //STEP 2 - Chart Data
+    // Define the categories representing the labels on the X-axis
+    const categories =  [
+      {
+        "category": [
+          { "label": "Q1" },
+          { "label": "Q2" },
+          { "label": "Q3" },
+          { "label": "Q4" }
+        ]
+      }
+    ];
+    // Construct the dataset comprising multiple series 
+    const dataset = [
+      {
+        "seriesname": "Previous Year",
+        "data": [
+          { "value": "12000" },
+          { "value": "10500" },
+          { "value": "23500" },
+          { "value": "16000" }
+        ]
+      },
+      {
+        "seriesname": "Current Year",
+        "data": [
+          { "value": "24400" },
+          { "value": "29800" },
+          { "value": "20800" },
+          { "value": "26800" }
+        ]
+      }
+    ];
+
+    //STEP 3 - Chart Configurations
+    var chartConfigurations = {
         type: 'mscolumn2d',
         renderAt: 'chart-container',
         width: '700',
@@ -123,7 +134,7 @@ var chartConfigurations = {
         dataFormat: 'json',
         dataSource: {
           "chart": {
-      "theme": "fusion",
+            "theme": "fusion",
             "caption": "Comparison of Quarterly Sales",
             "xAxisname": "Quarter",
             "yAxisName": "Sales"
@@ -132,10 +143,17 @@ var chartConfigurations = {
           "dataset": dataset
         }
       }
-FusionCharts.ready(function() {
-      var revenueChart = new FusionCharts(chartConfigurations);
-      revenueChart.render();
-    });
+    FusionCharts.ready(function(){
+        var fusioncharts = new FusionCharts(chartConfigurations);
+    fusioncharts.render();
+    });
+
+</script>
+</head>
+<body>
+    <div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>
 ```
 
 You can also create various charts belonging to the multi-series family in a similar way. Check out the different types of multi-series charts here.
@@ -146,7 +164,7 @@ Similar to multi-series charts, combination charts also allow you to plot multip
 
 Let us build a 2D Single Y-axis combination chart.
 
-{% embed_all standard-charts-combination-chart-example-1.js %}
+{% embed_chart standard-charts-combination-chart-example-1.js %}
 
 As you can see in the 2D Single Y-axis combination chart above, a line, a column, and an area type plot share the same set of X and Y-axis. The line plot displays the projected monthly revenue of Harry’s SuperMart, while the column plot displays the actual revenue earned, and the area plot shows the monthly profit. To build the chart, we will use the data provided in the following table:
 
@@ -257,111 +275,131 @@ const dataset = [
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```
-// Define the categories representing the labels on the X-axis
-const categories =  [
-  {
-    "category": [
-        {"label": "Jan"},
-        {"label": "Feb"},
-        {"label": "Mar"},
-        {"label": "Apr"},
-        {"label": "May"},
-        {"label": "Jun"},
-        {"label": "Jul"},
-        {"label": "Aug"},
-        {"label": "Sep"},
-        {"label": "Oct"},
-        {"label": "Nov"},
-        {"label": "Dec"}
-    ]
-  }
-]
-// Construct the dataset comprising multiple series 
-const dataset = [
-  {
-    "seriesname": "Actual Revenue",
-    "data": [
-        {"value": "16000"},
-        {"value": "20000"},
-        {"value": "18000"},
-        {"value": "19000"},
-        {"value": "15000"},
-        {"value": "21000"},
-        {"value": "16000"},
-        {"value": "20000"},
-        {"value": "17000"},
-        {"value": "25000"},
-        {"value": "19000"},
-        {"value": "23000"}
-    ]
-  },
-  {
-    "seriesname": "Projected Revenue",
-    "data": [
-        {"value": "15000"},
-        {"value": "16000"},
-        {"value": "17000"},
-        {"value": "18000"},
-        {"value": "19000"},
-        {"value": "19000"},
-        {"value": "19000"},
-        {"value": "19000"},
-        {"value": "20000"},
-        {"value": "21000"},
-        {"value": "22000"},
-        {"value": "23000"}
-    ]
-  },
-  {
-    "seriesName": "Profit",
-    "renderAs": "area",
-    "data": [
-        {"value": "4000"},
-        {"value": "5000"},
-        {"value": "3000"},
-        {"value": "4000"},
-        {"value": "1000"},
-        {"value": "7000"},
-        {"value": "1000"},
-        {"value": "4000"},
-        {"value": "1000"},
-        {"value": "8000"},
-        {"value": "2000"},
-        {"value": "7000"}
-    ]
-}
-]
-FusionCharts.ready(function() {
-  var salesAnlysisChart = new FusionCharts({
-    type: 'mscombi2d',
-    renderAt: 'chart-container',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-      "chart": {
-        "caption": "Harry's SuperMart",
-        "subCaption": "Sales analysis of last year",
-        "xAxisname": "Month",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$",
-        "divlineColor": "#999999",
-        "divLineIsDashed": "1",
-        "divLineDashLen": "1",
-        "divLineGapLen": "1",
-        "toolTipColor": "#ffffff",
-        "toolTipBorderThickness": "0",
-        "toolTipBgColor": "#000000",
-        "toolTipBgAlpha": "80",
-        "toolTipBorderRadius": "2",
-        "toolTipPadding": "5",
-        "theme": "fusion"
-      },
-      "categories": categories,
-      "dataset": dataset
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<!-- Include fusioncharts core library -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<!-- Include fusion theme -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript">
+    //STEP 2 - Chart Data
+    // Define the categories representing the labels on the X-axis
+    const categories =  [
+    {
+        "category": [
+            {"label": "Jan"},
+            {"label": "Feb"},
+            {"label": "Mar"},
+            {"label": "Apr"},
+            {"label": "May"},
+            {"label": "Jun"},
+            {"label": "Jul"},
+            {"label": "Aug"},
+            {"label": "Sep"},
+            {"label": "Oct"},
+            {"label": "Nov"},
+            {"label": "Dec"}
+        ]
     }
-  }).render();
-});
+    ];
+    // Construct the dataset comprising multiple series 
+    const dataset = [
+    {
+        "seriesname": "Actual Revenue",
+        "data": [
+            {"value": "16000"},
+            {"value": "20000"},
+            {"value": "18000"},
+            {"value": "19000"},
+            {"value": "15000"},
+            {"value": "21000"},
+            {"value": "16000"},
+            {"value": "20000"},
+            {"value": "17000"},
+            {"value": "25000"},
+            {"value": "19000"},
+            {"value": "23000"}
+        ]
+    },
+    {
+        "seriesname": "Projected Revenue",
+        "data": [
+            {"value": "15000"},
+            {"value": "16000"},
+            {"value": "17000"},
+            {"value": "18000"},
+            {"value": "19000"},
+            {"value": "19000"},
+            {"value": "19000"},
+            {"value": "19000"},
+            {"value": "20000"},
+            {"value": "21000"},
+            {"value": "22000"},
+            {"value": "23000"}
+        ]
+    },
+    {
+        "seriesName": "Profit",
+        "renderAs": "area",
+        "data": [
+            {"value": "4000"},
+            {"value": "5000"},
+            {"value": "3000"},
+            {"value": "4000"},
+            {"value": "1000"},
+            {"value": "7000"},
+            {"value": "1000"},
+            {"value": "4000"},
+            {"value": "1000"},
+            {"value": "8000"},
+            {"value": "2000"},
+            {"value": "7000"}
+        ]
+    }
+    ];
+
+    //STEP 3 - Chart Configurations
+    var chartConfigurations = {
+        type: 'mscombi2d',
+        renderAt: 'chart-container',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+        "chart": {
+            "caption": "Harry's SuperMart",
+            "subCaption": "Sales analysis of last year",
+            "xAxisname": "Month",
+            "yAxisName": "Amount (In USD)",
+            "numberPrefix": "$",
+            "divlineColor": "#999999",
+            "divLineIsDashed": "1",
+            "divLineDashLen": "1",
+            "divLineGapLen": "1",
+            "toolTipColor": "#ffffff",
+            "toolTipBorderThickness": "0",
+            "toolTipBgColor": "#000000",
+            "toolTipBgAlpha": "80",
+            "toolTipBorderRadius": "2",
+            "toolTipPadding": "5",
+            "theme": "fusion"
+        },
+        "categories": categories,
+        "dataset": dataset
+        }
+    }
+    FusionCharts.ready(function(){
+        var fusioncharts = new FusionCharts(chartConfigurations);
+    fusioncharts.render();
+    });
+
+</script>
+</head>
+<body>
+<div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>
 ```
 
 You can also create various charts belonging to the combination type in a similar way. Check out the different types of combination charts here.
@@ -442,8 +480,30 @@ function updateData() {
 Now that the data and its transporting mechanism are ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```
-FusionCharts.ready(function() {
-  var stockPriceChart = new FusionCharts({
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<!-- Include fusioncharts core library -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<!-- Include fusion theme -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript">
+    //STEP 2 - Chart Data
+    // Define the categories representing the labels on the X-axis
+    const categories =  [{
+        "category": [{
+            "label": "Day Start"
+        }]
+    }];
+    // Construct the dataset comprising multiple series 
+    const dataset = [{
+        "data": [{
+            "value": "35.27"
+        }]
+    }];
+
+    //STEP 3 - Chart Configurations
+    var chartConfigurations = {
       id: "stockRealTimeChart",
       type: 'realtimearea',
       renderAt: 'chart-container',
@@ -466,16 +526,8 @@ FusionCharts.ready(function() {
           "showRealTimeValue": "0"
 
         },
-        "categories": [{
-          "category": [{
-            "label": "Day Start"
-          }]
-        }],
-        "dataset": [{
-          "data": [{
-            "value": "35.27"
-          }]
-        }]
+        "categories": categories,
+        "dataset": dataset
       },
       "events": {
         "initialized": function(e) {
@@ -506,11 +558,22 @@ FusionCharts.ready(function() {
 
           var myVar = setInterval(function() {
             updateData();
-          }, 5000);
+          }, 3000);
         }
       }
-    }).render();
-});
+    }
+
+    FusionCharts.ready(function(){
+        var fusioncharts = new FusionCharts(chartConfigurations);
+    fusioncharts.render();
+    });
+
+</script>
+</head>
+<body>
+<div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>
 ```
 
 You can also create various types of real-time charts in a similar way. Check out the different types of real-time charts here.
@@ -543,20 +606,34 @@ The diagram below can give you an idea about how we are going to assign values t
 
 The following code is the JSON representation of the tabular column with the required attributes to render the above gauge.The data in the JSON format for the above gauge looks as follows:
 ```
-  // Chart Data
-  "colorRange": {
+  // Define the colorVariations of the angular gauge
+  const colorRange = {
     "color": [
       {
-
-        "minValue": "xx",
-        "maxValue": "xx",
-        "code": "xx"
-      }]
-  },
-  "dials": {
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+      },
+      {
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+      },
+      {
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+      }
+    ]
+  };
+  //Set up the dial value
+  const dials = {
     "dial": [
       {
-        "value": "xx"
+        "value": "81"
+      }
+    ]
+  }
 ```
 
 In the above JSON:
@@ -569,34 +646,255 @@ In the above JSON:
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```
-// Create an Instance with chart options
-var gaugeInstance = new FusionCharts({
-type: 'angulargauge', // The gauge type
-width: '450', // Width of the gauge
-height: '250', // Height of the gauge
-dataFormat: 'json', // Data type
-renderAt:'chart-container', //Container where the chart will render
-dataSource: {
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<!-- Include fusioncharts core library -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<!-- Include fusion theme -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript">
+    // Define the colorVariations of the angular gauge
+    const colorRange = {
+    "color": [{
+        "minValue": "0",
+        "maxValue": "50",
+        "code": "#F2726F"
+        },{
+        "minValue": "50",
+        "maxValue": "75",
+        "code": "#FFC533"
+        },{
+        "minValue": "75",
+        "maxValue": "100",
+        "code": "#62B58F"
+        }]
+    };
+    //Set up the dial value
+    const dials = {
+        "dial": [
+            {"value": "81"}
+        ]
+    };
 
-// Gauge Configuration
-"chart": {
-"caption": "Nordstrom's Customer Satisfaction Score for 2017",
-"lowerLimit": "0",
-"upperLimit": "100",
-"showValue": "1",
-"numberSuffix": "%",
-"theme": "fusion",
-"showToolTip": "0"
-},
+    //STEP 3 - Chart Configurations
+    var chartConfigurations = {
+        type: 'angulargauge', // The gauge type
+        width: '450', // Width of the gauge
+        height: '250', // Height of the gauge
+        dataFormat: 'json', // Data type
+        renderAt:'chart-container', //Container where the chart will render
+        dataSource: {
+            // Gauge Configuration
+            "chart": {
+                "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "showValue": "1",
+                "numberSuffix": "%",
+                "theme": "fusion",
+                "showToolTip": "0"
+            },
+            // Chart Data
+            "colorRange": colorRange,
+            "dials": dials
+        }
+    }
 
-// Chart Data
-"colorRange": colorRange,
-"dials": dials
-}
-});
-// Render
-gaugeInstance.render();
+    FusionCharts.ready(function(){
+        var fusioncharts = new FusionCharts(chartConfigurations);
+    fusioncharts.render();
+    });
+
+</script>
+</head>
+<body>
+<div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>
 ```
 
 You can also create various charts belonging to the gauges family in a similar way. Check out the different types of gauges here.
+
+## Maps
+FusionMaps XT offers interactive maps that allow you to plot geographical data, such as revenue by regions, population by state, survey and election results. You can also add markers to pinpoint specific locations and routes. FusionMaps XT has over 1000 maps including all continents, major countries and all the US states.
+
+To render these maps, you need to download the map definition files from <<here>>. Copy and paste the `maps` folder within your `fusioncharts` directory. (inlcuding map definition files)
+
+In the section below, we will see how to build a world map.
+
+{% embed_chart getting-started-your-first-map.js %}
+
+As you can see in the map above, the data plot is indicating the average annual population growth across the 7 continents. 
+
+| State | Entity Name | Value |
+| ----- | ----------- | ----- ||
+| North America | NA | 82 |
+| South America | SA | 2.04 |
+| Asia | AS | 1.78 |
+| Europe | EU | 40 |
+| Africa | AF | 2.58 |
+| Australia | AU | 1.30 |
+
+To convert the data provided in the above table to a data format that FusionCharts can use, you need the following properties:
+- `colorRange`
+- `data`
+- `id`
+- `value`
+
+The diagram below can give you an idea about how we are going to assign values to these properties. 
+
+<Map anatomy>
+
+The following code is the JSON representation of the tabular column with the required attributes to render the above map.The data in the JSON format for the above map looks as follows:
+
+```
+// Define the colorVariations of the angular gauge
+const colorRange = {
+    "minvalue": "0",
+    "code": "#FFE0B2",
+    "gradient": "1",
+    "color": [{
+        "minvalue": "0.5",
+        "maxvalue": "1.0",
+        "color": "#FFD74D"
+    }, {
+        "minvalue": "1.0",
+        "maxvalue": "2.0",
+        "color": "#FB8C00"
+    }, {
+        "minvalue": "2.0",
+        "maxvalue": "3.0",
+        "color": "#E65100"
+    }]
+};
+//Set up the Map's data
+const data = [{
+    "id": "NA",
+    "value": ".82",
+    "showLabel": "1"
+}, {
+    "id": "SA",
+    "value": "2.04",
+    "showLabel": "1"
+}, {
+    "id": "AS",
+    "value": "1.78",
+    "showLabel": "1"
+}, {
+    "id": "EU",
+    "value": ".40",
+    "showLabel": "1"
+}, {
+    "id": "AF",
+    "value": "2.58",
+    "showLabel": "1"
+}, {
+    "id": "AU",
+    "value": "1.30",
+    "showLabel": "1"
+}];
+```
+
+Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+
+```
+<html>
+<head>
+<title>My First map using FusionCharts Suite XT</title>
+<!-- Including the fusioncharts core library -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<!-- Including the map renderer file -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "></script>
+<!-- Including the map definition file -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"></script>
+<!-- Including the fusion theme -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript">
+    // Define the colorVariations of the angular gauge
+    const colorRange = {
+        "minvalue": "0",
+        "code": "#FFE0B2",
+        "gradient": "1",
+        "color": [{
+            "minvalue": "0.5",
+            "maxvalue": "1.0",
+            "color": "#FFD74D"
+        }, {
+            "minvalue": "1.0",
+            "maxvalue": "2.0",
+            "color": "#FB8C00"
+        }, {
+            "minvalue": "2.0",
+            "maxvalue": "3.0",
+            "color": "#E65100"
+        }]
+    };
+    //Set up the Map's data
+    const data = [{
+        "id": "NA",
+        "value": ".82",
+        "showLabel": "1"
+    }, {
+        "id": "SA",
+        "value": "2.04",
+        "showLabel": "1"
+    }, {
+        "id": "AS",
+        "value": "1.78",
+        "showLabel": "1"
+    }, {
+        "id": "EU",
+        "value": ".40",
+        "showLabel": "1"
+    }, {
+        "id": "AF",
+        "value": "2.58",
+        "showLabel": "1"
+    }, {
+        "id": "AU",
+        "value": "1.30",
+        "showLabel": "1"
+    }];
+
+    //STEP 3 - Map Configurations
+    var mapConfigurations = {
+        "type": "maps/world",
+        "renderAt": "chart-container",
+        "width": "800",
+        "height": "550",
+        "dataFormat": "json",
+        "dataSource": {
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": colorRange,
+            // Source data as JSON --> id represents countries of world.
+            "data": data
+        }
+    }
+
+    FusionCharts.ready(function(){
+        var fusioncharts = new FusionCharts(mapConfigurations);
+    fusioncharts.render();
+    });
+
+</script>
+</head>
+<body>
+<div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>
+```
+
+That’s it. Your first map is ready. You can find more about the differnet types of maps here.
+
 
