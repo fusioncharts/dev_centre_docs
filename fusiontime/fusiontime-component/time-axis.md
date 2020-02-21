@@ -214,8 +214,8 @@ If you want to clip dates at equal intervals, use the `unit` and `multiplier` at
 
 Refer to the code given below:
 
-```
-
+```javascript
+code;
 ```
 
 The live chart will look as shown below:
