@@ -16,8 +16,7 @@
       chart: {
         showLegend: 1,
         theme: "fusion",
-        showtooltip: 1,
-        palettecolors: "#02ECD0"
+        showtooltip: 1
       },
       yAxis: [{
         plot: [{
