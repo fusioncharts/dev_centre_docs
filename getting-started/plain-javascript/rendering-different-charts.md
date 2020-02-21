@@ -898,3 +898,2330 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 That’s it. Your first map is ready. You can find more about the differnet types of maps here.
 
 
+## Heat Map
+A heat map chart utilizes different colors to represent data values within a table. It comes in handy the most, when you have to plot large and complex data sets. FusionCharts suite XT supports two types of heat map charts - a numeric heat map to plot numeric values, and a category-based heat map to plot non-numeric data.
+
+In the section below, we will see how to build a heat map chart.
+
+{% embed_all standard-charts-heat-map-chart-example-1.js %}
+
+As you can see in the heat map above, the data plot is indicating the ratings of four different smartphones based on five common components, with the help of different colors. 
+
+| State | Processor | Screen Size | Price | Battery Backup | Camera |
+| ----- | --------- | ----------- | ----- | ---------------| ------ ||
+| Samsung Galaxy H5 | 8.7 | 8.5 | 9.3 | 9.7 | 8 |
+| HTC One (M8) | 9.2 | 8.3 | 7.3 | 8.8 | 8.7 |
+| Apple iPhone 5S | 9.1 | 8.6 | 7.2 | 8.4 | 9.5 |
+| Nokia Lumia 1520 | 8.8 | 9.1 | 9.7 | 9.2 | 8.1 |
+
+To convert the data provided in the above table to a data format that FusionCharts can use, you need the following properties:
+- `rows`
+- `columns`
+- `dataset`
+- `colorRange`
+
+The diagram below can give you an idea about how we are going to assign values to these properties. 
+
+{% embed_chartAnatomy heat-map-chart.json %}
+
+In the sample above, the chart shows the heat map for comparing different smartphones on the basis of a number of common components. The data in the JSON format for the above chart looks as follows:
+
+```
+const rows = {
+    "row": [
+        {
+            "id": "SGS5",
+            "label": "Samsung Galaxy S5"
+        },
+        {
+            "id": "HTC1M8",
+            "label": "HTC One (M8)"
+        },
+        {
+            "id": "IPHONES5",
+            "label": "Apple iPhone 5S"
+        },
+        {
+            "id": "LUMIA",
+            "label": "Nokia Lumia 1520"
+        }
+    ]
+};
+const columns = {
+    "column": [
+        {
+            "id": "processor",
+            "label": "Processor"
+        },
+        {
+            "id": "screen",
+            "label": "Screen Size"
+        },
+        {
+            "id": "price",
+            "label": "Price"
+        },
+        {
+            "id": "backup",
+            "label": "Battery Backup"
+        },
+        {
+            "id": "cam",
+            "label": "Camera"
+        }
+    ]
+};
+const dataset =[{
+    "data": [
+        {
+            "rowid": "SGS5",
+            "columnid": "processor",
+            "value": "8.7",
+            "tllabel": "Quad Core 2.5 GHz",
+            "trlabel": "OS : Android 4.4 Kitkat"
+        },
+        {
+            "rowid": "SGS5",
+            "columnid": "screen",
+            "value": "8.5",
+            "tllabel": "5.1 inch",
+            "trlabel": "AMOLED screen"
+        },
+        {
+            "rowid": "SGS5",
+            "columnid": "price",
+            "value": "9.3",
+            "tllabel": "$600"
+        },
+        {
+            "rowid": "SGS5",
+            "columnid": "backup",
+            "value": "9.7",
+            "tllabel": "29 Hrs",
+            "trlabel": "Battery : 2800 MAH"
+        },
+        {
+            "rowid": "SGS5",
+            "columnid": "cam",
+            "value": "8",
+            "tllabel": "16 MP",
+            "trlabel": "Front Camera : 2.1 MP"
+        },
+        {
+            "rowid": "HTC1M8",
+            "columnid": "processor",
+            "value": "9.2",
+            "tllabel": "Quad Core 2.3 GHz",
+            "trlabel": "OS : Android 4.4 Kitkat"
+        },
+        {
+            "rowid": "HTC1M8",
+            "columnid": "screen",
+            "value": "8.3",
+            "tllabel": "5 inch",
+            "trlabel": "LCD screen"
+        },
+        {
+            "rowid": "HTC1M8",
+            "columnid": "price",
+            "value": "7.3",
+            "tllabel": "$600"
+        },
+        {
+            "rowid": "HTC1M8",
+            "columnid": "backup",
+            "value": "8.8",
+            "tllabel": "20 Hrs",
+            "trlabel": "Battery : 2600 MAH"
+        },
+        {
+            "rowid": "HTC1M8",
+            "columnid": "cam",
+            "value": "8.7",
+            "tllabel": "4 MP",
+            "trlabel": "Front Camera : 5 MP"
+        },
+        {
+            "rowid": "IPHONES5",
+            "columnid": "processor",
+            "value": "9.1",
+            "tllabel": "Dual Core",
+            "trlabel": "OS : iOS 7"
+        },
+        {
+            "rowid": "IPHONES5",
+            "columnid": "screen",
+            "value": "8.6",
+            "tllabel": "4 inch",
+            "trlabel": "Retina LCD screen"
+        },
+        {
+            "rowid": "IPHONES5",
+            "columnid": "price",
+            "value": "7.2",
+            "tllabel": "$649"
+        },
+        {
+            "rowid": "IPHONES5",
+            "columnid": "backup",
+            "value": "8.4",
+            "tllabel": "10 Hrs",
+            "trlabel": "Battery : 1560 MAH"
+        },
+        {
+            "rowid": "IPHONES5",
+            "columnid": "cam",
+            "value": "9.5",
+            "tllabel": "8 MP",
+            "trlabel": "Front Camera : 1.2 MP"
+        },
+        {
+            "rowid": "LUMIA",
+            "columnid": "processor",
+            "value": "8.8",
+            "tllabel": "Quad Core 2.2 GHz",
+            "trlabel": "OS: Windows Phone 8"
+        },
+        {
+            "rowid": "LUMIA",
+            "columnid": "screen",
+            "value": "9.1",
+            "tllabel": "6 inch",
+            "trlabel": "LCD screen"
+        },
+        {
+            "rowid": "LUMIA",
+            "columnid": "price",
+            "value": "9.7",
+            "tllabel": "$470"
+        },
+        {
+            "rowid": "LUMIA",
+            "columnid": "backup",
+            "value": "9.2",
+            "tllabel": "27 Hrs",
+            "trlabel": "Battery : 3400 MAH"
+        },
+        {
+            "rowid": "LUMIA",
+            "columnid": "cam",
+            "value": "8.1",
+            "tllabel": "20MP",
+            "trlabel": "Front Camera : 1.2 MP"
+        }
+    ]
+}];
+const colorRange = {
+    "gradient": "0",
+    "minvalue": "0",
+    "code": "E24B1A",
+    "startlabel": "Poor",
+    "endlabel": "Good",
+    "color": [
+        {
+            "code": "E24B1A",
+            "minvalue": "1",
+            "maxvalue": "5",
+            "label": "Bad"
+        },
+        {
+            "code": "F6BC33",
+            "minvalue": "5",
+            "maxvalue": "8.5",
+            "label": "Average"
+        },
+        {
+            "code": "6DA81E",
+            "minvalue": "8.5",
+            "maxvalue": "10",
+            "label": "Good"
+        }
+    ]
+};
+```
+
+Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+
+```
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<!-- Include fusioncharts core library -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<!-- Include fusion theme -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript">
+    // Define the rows of the heatmap
+    const rows = {
+        "row": [
+            {
+                "id": "SGS5",
+                "label": "Samsung Galaxy S5"
+            },
+            {
+                "id": "HTC1M8",
+                "label": "HTC One (M8)"
+            },
+            {
+                "id": "IPHONES5",
+                "label": "Apple iPhone 5S"
+            },
+            {
+                "id": "LUMIA",
+                "label": "Nokia Lumia 1520"
+            }
+        ]
+    };
+    const columns = {
+        "column": [
+            {
+                "id": "processor",
+                "label": "Processor"
+            },
+            {
+                "id": "screen",
+                "label": "Screen Size"
+            },
+            {
+                "id": "price",
+                "label": "Price"
+            },
+            {
+                "id": "backup",
+                "label": "Battery Backup"
+            },
+            {
+                "id": "cam",
+                "label": "Camera"
+            }
+        ]
+    };
+    const dataset =[{
+        "data": [
+            {
+                "rowid": "SGS5",
+                "columnid": "processor",
+                "value": "8.7",
+                "tllabel": "Quad Core 2.5 GHz",
+                "trlabel": "OS : Android 4.4 Kitkat"
+            },
+            {
+                "rowid": "SGS5",
+                "columnid": "screen",
+                "value": "8.5",
+                "tllabel": "5.1 inch",
+                "trlabel": "AMOLED screen"
+            },
+            {
+                "rowid": "SGS5",
+                "columnid": "price",
+                "value": "9.3",
+                "tllabel": "$600"
+            },
+            {
+                "rowid": "SGS5",
+                "columnid": "backup",
+                "value": "9.7",
+                "tllabel": "29 Hrs",
+                "trlabel": "Battery : 2800 MAH"
+            },
+            {
+                "rowid": "SGS5",
+                "columnid": "cam",
+                "value": "8",
+                "tllabel": "16 MP",
+                "trlabel": "Front Camera : 2.1 MP"
+            },
+            {
+                "rowid": "HTC1M8",
+                "columnid": "processor",
+                "value": "9.2",
+                "tllabel": "Quad Core 2.3 GHz",
+                "trlabel": "OS : Android 4.4 Kitkat"
+            },
+            {
+                "rowid": "HTC1M8",
+                "columnid": "screen",
+                "value": "8.3",
+                "tllabel": "5 inch",
+                "trlabel": "LCD screen"
+            },
+            {
+                "rowid": "HTC1M8",
+                "columnid": "price",
+                "value": "7.3",
+                "tllabel": "$600"
+            },
+            {
+                "rowid": "HTC1M8",
+                "columnid": "backup",
+                "value": "8.8",
+                "tllabel": "20 Hrs",
+                "trlabel": "Battery : 2600 MAH"
+            },
+            {
+                "rowid": "HTC1M8",
+                "columnid": "cam",
+                "value": "8.7",
+                "tllabel": "4 MP",
+                "trlabel": "Front Camera : 5 MP"
+            },
+            {
+                "rowid": "IPHONES5",
+                "columnid": "processor",
+                "value": "9.1",
+                "tllabel": "Dual Core",
+                "trlabel": "OS : iOS 7"
+            },
+            {
+                "rowid": "IPHONES5",
+                "columnid": "screen",
+                "value": "8.6",
+                "tllabel": "4 inch",
+                "trlabel": "Retina LCD screen"
+            },
+            {
+                "rowid": "IPHONES5",
+                "columnid": "price",
+                "value": "7.2",
+                "tllabel": "$649"
+            },
+            {
+                "rowid": "IPHONES5",
+                "columnid": "backup",
+                "value": "8.4",
+                "tllabel": "10 Hrs",
+                "trlabel": "Battery : 1560 MAH"
+            },
+            {
+                "rowid": "IPHONES5",
+                "columnid": "cam",
+                "value": "9.5",
+                "tllabel": "8 MP",
+                "trlabel": "Front Camera : 1.2 MP"
+            },
+            {
+                "rowid": "LUMIA",
+                "columnid": "processor",
+                "value": "8.8",
+                "tllabel": "Quad Core 2.2 GHz",
+                "trlabel": "OS: Windows Phone 8"
+            },
+            {
+                "rowid": "LUMIA",
+                "columnid": "screen",
+                "value": "9.1",
+                "tllabel": "6 inch",
+                "trlabel": "LCD screen"
+            },
+            {
+                "rowid": "LUMIA",
+                "columnid": "price",
+                "value": "9.7",
+                "tllabel": "$470"
+            },
+            {
+                "rowid": "LUMIA",
+                "columnid": "backup",
+                "value": "9.2",
+                "tllabel": "27 Hrs",
+                "trlabel": "Battery : 3400 MAH"
+            },
+            {
+                "rowid": "LUMIA",
+                "columnid": "cam",
+                "value": "8.1",
+                "tllabel": "20MP",
+                "trlabel": "Front Camera : 1.2 MP"
+            }
+        ]
+    }];
+    const colorRange = {
+        "gradient": "0",
+        "minvalue": "0",
+        "code": "E24B1A",
+        "startlabel": "Poor",
+        "endlabel": "Good",
+        "color": [
+            {
+                "code": "E24B1A",
+                "minvalue": "1",
+                "maxvalue": "5",
+                "label": "Bad"
+            },
+            {
+                "code": "F6BC33",
+                "minvalue": "5",
+                "maxvalue": "8.5",
+                "label": "Average"
+            },
+            {
+                "code": "6DA81E",
+                "minvalue": "8.5",
+                "maxvalue": "10",
+                "label": "Good"
+            }
+        ]
+    };
+    const chartConfigurations = {
+        type: 'heatmap',
+        renderAt: 'chart-container',
+        width: '100%',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "caption": "Top Smartphone Ratings",
+                "subcaption": "By Features",
+                "xAxisName": "Features",
+                "yAxisName": "Model",
+                "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
+                "theme": "fusion"
+            },
+        "rows": rows,
+        "columns": columns,
+        "dataset": dataset,
+        "colorrange": colorRange
+        }
+    };
+
+    FusionCharts.ready(function(){
+        var fusioncharts = new FusionCharts(chartConfigurations);
+    fusioncharts.render();
+    });
+
+</script>
+</head>
+<body>
+<div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>
+```
+
+Heat map belongs to the family of PowerCharts in FusionCharts. You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts here.
+
+## Gantt Chart
+A Gantt chart is a date/time-based chart, which you can use to plot tasks along with their start and end dates/times. You can also use the chart to define milestones for a project, indicating different stages with their deadlines. That way, you can constantly keep an eye on project status, and plan alternate strategies in case you encounter an unprecedented delay.
+
+In the section below, we will see how to build a Gantt chart.
+
+{% embed_chart standard-charts-gantt-chart-example-1.js %}
+
+As you can see in the Gantt chart above, the data plot is indicating the planned and the actual achievements, as well as the delays, with the help of different colors. In the above chart, we have plotted the Project Plan for the opening of a new store. To convert the data provided above to a data format that FusionCharts can use, you need the following properties:
+- `categories`
+- `processes`
+- `datatable`
+- `tasks`
+- `connectors`
+
+The diagram below can give you an idea about how we are going to assign values to these properties.
+
+{% embed_chartAnatomy gantt-chart.json %}
+
+In the sample above, the chart shows the project structure for opening a new store. The data in the JSON format for the above chart looks as follows:
+
+```
+//Define the categories(month-labels) of the Gantt chart
+const categories = [{
+    "bgcolor": "#999999",
+    "category": [{
+    "start": "1/4/2014",
+    "end": "30/6/2014",
+    "label": "Months",
+    "align": "middle",
+    "fontcolor": "#ffffff",
+    "fontsize": "12"
+    }]
+}, {
+    "bgcolor": "#999999",
+    "align": "middle",
+    "fontcolor": "#ffffff",
+    "fontsize": "12",
+    "category": [{
+    "start": "1/4/2014",
+    "end": "30/4/2014",
+    "label": "April"
+    }, {
+    "start": "1/5/2014",
+    "end": "31/5/2014",
+    "label": "May"
+    }, {
+    "start": "1/6/2014",
+    "end": "30/6/2014",
+    "label": "June"
+    }]
+}, {
+    "bgcolor": "#ffffff",
+    "fontcolor": "#333333",
+    "fontsize": "11",
+    "align": "center",
+    "category": [{
+    "start": "1/4/2014",
+    "end": "5/4/2014",
+    "label": "Week 1"
+    }, {
+    "start": "6/4/2014",
+    "end": "12/4/2014",
+    "label": "Week 2"
+    }, {
+    "start": "13/4/2014",
+    "end": "19/4/2014",
+    "label": "Week 3"
+    }, {
+    "start": "20/4/2014",
+    "end": "26/4/2014",
+    "label": "Week 4"
+    }, {
+    "start": "27/4/2014",
+    "end": "3/5/2014",
+    "label": "Week 5"
+    }, {
+    "start": "4/5/2014",
+    "end": "10/5/2014",
+    "label": "Week 6"
+    }, {
+    "start": "11/5/2014",
+    "end": "17/5/2014",
+    "label": "Week 7"
+    }, {
+    "start": "18/5/2014",
+    "end": "24/5/2014",
+    "label": "Week 8"
+    }, {
+    "start": "25/5/2014",
+    "end": "31/5/2014",
+    "label": "Week 9"
+    }, {
+    "start": "1/6/2014",
+    "end": "7/6/2014",
+    "label": "Week 10"
+    }, {
+    "start": "8/6/2014",
+    "end": "14/6/2014",
+    "label": "Week 11"
+    }, {
+    "start": "15/6/2014",
+    "end": "21/6/2014",
+    "label": "Week 12"
+    }, {
+    "start": "22/6/2014",
+    "end": "28/6/2014",
+    "label": "Week 13"
+    }]
+}];
+// Define the processes which are a part of the planning
+const processes = {
+    "headertext": "Task",
+    "fontcolor": "#000000",
+    "fontsize": "11",
+    "isanimated": "1",
+    "bgcolor": "#6baa01",
+    "headervalign": "bottom",
+    "headeralign": "left",
+    "headerbgcolor": "#999999",
+    "headerfontcolor": "#ffffff",
+    "headerfontsize": "12",
+    "align": "left",
+    "isbold": "1",
+    "bgalpha": "25",
+    "process": [{
+        "label": "Clear site",
+        "id": "1"
+        }, {
+        "label": "Excavate Foundation",
+        "id": "2",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Concrete Foundation",
+        "id": "3",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Footing to DPC",
+        "id": "4",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Drainage Services",
+        "id": "5",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Backfill",
+        "id": "6",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Ground Floor",
+        "id": "7"
+        }, {
+        "label": "Walls on First Floor",
+        "id": "8"
+        }, {
+        "label": "First Floor Carcass",
+        "id": "9",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "First Floor Deck",
+        "id": "10",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Roof Structure",
+        "id": "11"
+        }, {
+        "label": "Roof Covering",
+        "id": "12"
+        }, {
+        "label": "Rainwater Gear",
+        "id": "13"
+        }, {
+        "label": "Windows",
+        "id": "14"
+        }, {
+        "label": "External Doors",
+        "id": "15"
+        }, {
+        "label": "Connect Electricity",
+        "id": "16"
+        }, {
+        "label": "Connect Water Supply",
+        "id": "17",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Install Air Conditioning",
+        "id": "18",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Interior Decoration",
+        "id": "19",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Fencing And signs",
+        "id": "20"
+        }, {
+        "label": "Exterior Decoration",
+        "id": "21",
+        "hoverBandColor": "#e44a00",
+        "hoverBandAlpha": "40"
+        }, {
+        "label": "Setup racks",
+        "id": "22"
+    }]
+};
+//Define the start and end dates of each process
+const datatable = {
+    "showprocessname": "1",
+    "namealign": "left",
+    "fontcolor": "#000000",
+    "fontsize": "10",
+    "valign": "right",
+    "align": "center",
+    "headervalign": "bottom",
+    "headeralign": "center",
+    "headerbgcolor": "#999999",
+    "headerfontcolor": "#ffffff",
+    "headerfontsize": "12",
+    "datacolumn": [{
+        "bgcolor": "#eeeeee",
+        "headertext": "Actual{br}Start{br}Date",
+        "text": [{
+            "label": "9/4/2014"
+        }, {
+            "label": "13/4/2014"
+        }, {
+            "label": "26/4/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40",
+
+        }, {
+            "label": "4/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "6/5/2014"
+        }, {
+            "label": "5/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "11/5/2014"
+        }, {
+            "label": "16/5/2014"
+        }, {
+            "label": "16/5/2014"
+        }, {
+            "label": "21/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "25/5/2014"
+        }, {
+            "label": "28/5/2014"
+        }, {
+            "label": "4/6/2014"
+        }, {
+            "label": "4/6/2014"
+        }, {
+            "label": "4/6/2014"
+        }, {
+            "label": "2/6/2014"
+        }, {
+            "label": "5/6/2014"
+        }, {
+            "label": "18/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "16/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "23/6/2014"
+        }, {
+            "label": "18/6/2014"
+        }, {
+            "label": "25/6/2014"
+        }]
+        }, {
+        "bgcolor": "#eeeeee",
+        "headertext": "Actual{br}End{br}Date",
+        "text": [{
+            "label": "12/4/2014"
+        }, {
+            "label": "25/4/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "4/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "10/5/2014"
+        }, {
+            "label": "10/5/2014"
+        }, {
+            "label": "11/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "14/5/2014"
+        }, {
+            "label": "19/5/2014"
+        }, {
+            "label": "21/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "24/5/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "27/5/2014"
+        }, {
+            "label": "1/6/2014"
+        }, {
+            "label": "6/6/2014"
+        }, {
+            "label": "4/6/2014"
+        }, {
+            "label": "4/6/2014"
+        }, {
+            "label": "7/6/2014"
+        }, {
+            "label": "17/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "20/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "23/6/2014"
+        }, {
+            "label": "23/6/2014"
+        }, {
+            "label": "23/6/2014",
+            "bgcolor": "#e44a00",
+            "bgAlpha": "40"
+        }, {
+            "label": "28/6/2014"
+        }]
+    }]
+};
+//Define the actual labelled tasks - Planned and Actual
+const tasks = {
+    "task": [{
+    "label": "Planned",
+    "processid": "1",
+    "start": "9/4/2014",
+    "end": "12/4/2014",
+    "id": "1-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "1",
+    "start": "9/4/2014",
+    "end": "12/4/2014",
+    "id": "1",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "2",
+    "start": "13/4/2014",
+    "end": "23/4/2014",
+    "id": "2-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "2",
+    "start": "13/4/2014",
+    "end": "25/4/2014",
+    "id": "2",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Delay",
+    "processid": "2",
+    "start": "23/4/2014",
+    "end": "25/4/2014",
+    "id": "2-2",
+    "color": "#e44a00",
+    "toppadding": "56%",
+    "height": "32%",
+    "tooltext": "Delayed by 2 days."
+    }, {
+    "label": "Planned",
+    "processid": "3",
+    "start": "23/4/2014",
+    "end": "30/4/2014",
+    "id": "3-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "3",
+    "start": "26/4/2014",
+    "end": "4/5/2014",
+    "id": "3",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Delay",
+    "processid": "3",
+    "start": "3/5/2014",
+    "end": "4/5/2014",
+    "id": "3-2",
+    "color": "#e44a00",
+    "toppadding": "56%",
+    "height": "32%",
+    "tooltext": "Delayed by 1 days."
+    }, {
+    "label": "Planned",
+    "processid": "4",
+    "start": "3/5/2014",
+    "end": "10/5/2014",
+    "id": "4-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "4",
+    "start": "4/5/2014",
+    "end": "10/5/2014",
+    "id": "4",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "5",
+    "start": "6/5/2014",
+    "end": "11/5/2014",
+    "id": "5-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "5",
+    "start": "6/5/2014",
+    "end": "10/5/2014",
+    "id": "5",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "6",
+    "start": "4/5/2014",
+    "end": "7/5/2014",
+    "id": "6-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "6",
+    "start": "5/5/2014",
+    "end": "11/5/2014",
+    "id": "6",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Delay",
+    "processid": "6",
+    "start": "7/5/2014",
+    "end": "11/5/2014",
+    "id": "6-2",
+    "color": "#e44a00",
+    "toppadding": "56%",
+    "height": "32%",
+    "tooltext": "Delayed by 4 days."
+    }, {
+    "label": "Planned",
+    "processid": "7",
+    "start": "11/5/2014",
+    "end": "14/5/2014",
+    "id": "7-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "7",
+    "start": "11/5/2014",
+    "end": "14/5/2014",
+    "id": "7",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "8",
+    "start": "16/5/2014",
+    "end": "19/5/2014",
+    "id": "8-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "8",
+    "start": "16/5/2014",
+    "end": "19/5/2014",
+    "id": "8",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "9",
+    "start": "16/5/2014",
+    "end": "18/5/2014",
+    "id": "9-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "9",
+    "start": "16/5/2014",
+    "end": "21/5/2014",
+    "id": "9",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Delay",
+    "processid": "9",
+    "start": "18/5/2014",
+    "end": "21/5/2014",
+    "id": "9-2",
+    "color": "#e44a00",
+    "toppadding": "56%",
+    "height": "32%",
+    "tooltext": "Delayed by 3 days."
+    }, {
+    "label": "Planned",
+    "processid": "10",
+    "start": "20/5/2014",
+    "end": "23/5/2014",
+    "id": "10-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "10",
+    "start": "21/5/2014",
+    "end": "24/5/2014",
+    "id": "10",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Delay",
+    "processid": "10",
+    "start": "23/5/2014",
+    "end": "24/5/2014",
+    "id": "10-2",
+    "color": "#e44a00",
+    "toppadding": "56%",
+    "height": "32%",
+    "tooltext": "Delayed by 1 days."
+    }, {
+    "label": "Planned",
+    "processid": "11",
+    "start": "25/5/2014",
+    "end": "27/5/2014",
+    "id": "11-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "11",
+    "start": "25/5/2014",
+    "end": "27/5/2014",
+    "id": "11",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "12",
+    "start": "28/5/2014",
+    "end": "1/6/2014",
+    "id": "12-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "12",
+    "start": "28/5/2014",
+    "end": "1/6/2014",
+    "id": "12",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "13",
+    "start": "4/6/2014",
+    "end": "6/6/2014",
+    "id": "13-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "13",
+    "start": "4/6/2014",
+    "end": "6/6/2014",
+    "id": "13",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "14",
+    "start": "4/6/2014",
+    "end": "4/6/2014",
+    "id": "14-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "14",
+    "start": "4/6/2014",
+    "end": "4/6/2014",
+    "id": "14",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "15",
+    "start": "4/6/2014",
+    "end": "4/6/2014",
+    "id": "15-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "15",
+    "start": "4/6/2014",
+    "end": "4/6/2014",
+    "id": "15",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "16",
+    "start": "2/6/2014",
+    "end": "7/6/2014",
+    "id": "16-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "16",
+    "start": "2/6/2014",
+    "end": "7/6/2014",
+    "id": "16",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "17",
+    "start": "5/6/2014",
+    "end": "10/6/2014",
+    "id": "17-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "17",
+    "start": "5/6/2014",
+    "end": "17/6/2014",
+    "id": "17",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Delay",
+    "processid": "17",
+    "start": "10/6/2014",
+    "end": "17/6/2014",
+    "id": "17-2",
+    "color": "#e44a00",
+    "toppadding": "56%",
+    "height": "32%",
+    "tooltext": "Delayed by 7 days."
+    }, {
+    "label": "Planned",
+    "processid": "18",
+    "start": "10/6/2014",
+    "end": "12/6/2014",
+    "id": "18-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Delay",
+    "processid": "18",
+    "start": "18/6/2014",
+    "end": "20/6/2014",
+    "id": "18",
+    "color": "#e44a00",
+    "toppadding": "56%",
+    "height": "32%",
+    "tooltext": "Delayed by 8 days."
+    }, {
+    "label": "Planned",
+    "processid": "19",
+    "start": "15/6/2014",
+    "end": "23/6/2014",
+    "id": "19-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "19",
+    "start": "16/6/2014",
+    "end": "23/6/2014",
+    "id": "19",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "20",
+    "start": "23/6/2014",
+    "end": "23/6/2014",
+    "id": "20-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "20",
+    "start": "23/6/2014",
+    "end": "23/6/2014",
+    "id": "20",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Planned",
+    "processid": "21",
+    "start": "18/6/2014",
+    "end": "21/6/2014",
+    "id": "21-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "21",
+    "start": "18/6/2014",
+    "end": "23/6/2014",
+    "id": "21",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }, {
+    "label": "Delay",
+    "processid": "21",
+    "start": "21/6/2014",
+    "end": "23/6/2014",
+    "id": "21-2",
+    "color": "#e44a00",
+    "toppadding": "56%",
+    "height": "32%",
+    "tooltext": "Delayed by 2 days."
+    }, {
+    "label": "Planned",
+    "processid": "22",
+    "start": "24/6/2014",
+    "end": "28/6/2014",
+    "id": "22-1",
+    "color": "#008ee4",
+    "height": "32%",
+    "toppadding": "12%"
+    }, {
+    "label": "Actual",
+    "processid": "22",
+    "start": "25/6/2014",
+    "end": "28/6/2014",
+    "id": "22",
+    "color": "#6baa01",
+    "toppadding": "56%",
+    "height": "32%"
+    }]
+};
+//Define the connections between different tasks
+const connectors = [{
+    "connector": [{
+    "fromtaskid": "1",
+    "totaskid": "2",
+    "color": "#008ee4",
+    "thickness": "2",
+    "fromtaskconnectstart_": "1"
+    }, {
+    "fromtaskid": "2-2",
+    "totaskid": "3",
+    "color": "#008ee4",
+    "thickness": "2"
+    }, {
+    "fromtaskid": "3-2",
+    "totaskid": "4",
+    "color": "#008ee4",
+    "thickness": "2"
+    }, {
+    "fromtaskid": "3-2",
+    "totaskid": "6",
+    "color": "#008ee4",
+    "thickness": "2"
+    }, {
+    "fromtaskid": "7",
+    "totaskid": "8",
+    "color": "#008ee4",
+    "thickness": "2"
+    }, {
+    "fromtaskid": "7",
+    "totaskid": "9",
+    "color": "#008ee4",
+    "thickness": "2"
+    }, {
+    "fromtaskid": "12",
+    "totaskid": "16",
+    "color": "#008ee4",
+    "thickness": "2"
+    }, {
+    "fromtaskid": "12",
+    "totaskid": "17",
+    "color": "#008ee4",
+    "thickness": "2"
+    }, {
+    "fromtaskid": "17-2",
+    "totaskid": "18",
+    "color": "#008ee4",
+    "thickness": "2"
+    }, {
+    "fromtaskid": "19",
+    "totaskid": "22",
+    "color": "#008ee4",
+    "thickness": "2"
+    }]
+}];
+```
+Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+
+```
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<!-- Include fusioncharts core library -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<!-- Include fusion theme -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript">
+    //Define the categories(month-labels) of the Gantt chart
+    const categories = [{
+        "bgcolor": "#999999",
+        "category": [{
+        "start": "1/4/2014",
+        "end": "30/6/2014",
+        "label": "Months",
+        "align": "middle",
+        "fontcolor": "#ffffff",
+        "fontsize": "12"
+        }]
+    }, {
+        "bgcolor": "#999999",
+        "align": "middle",
+        "fontcolor": "#ffffff",
+        "fontsize": "12",
+        "category": [{
+        "start": "1/4/2014",
+        "end": "30/4/2014",
+        "label": "April"
+        }, {
+        "start": "1/5/2014",
+        "end": "31/5/2014",
+        "label": "May"
+        }, {
+        "start": "1/6/2014",
+        "end": "30/6/2014",
+        "label": "June"
+        }]
+    }, {
+        "bgcolor": "#ffffff",
+        "fontcolor": "#333333",
+        "fontsize": "11",
+        "align": "center",
+        "category": [{
+        "start": "1/4/2014",
+        "end": "5/4/2014",
+        "label": "Week 1"
+        }, {
+        "start": "6/4/2014",
+        "end": "12/4/2014",
+        "label": "Week 2"
+        }, {
+        "start": "13/4/2014",
+        "end": "19/4/2014",
+        "label": "Week 3"
+        }, {
+        "start": "20/4/2014",
+        "end": "26/4/2014",
+        "label": "Week 4"
+        }, {
+        "start": "27/4/2014",
+        "end": "3/5/2014",
+        "label": "Week 5"
+        }, {
+        "start": "4/5/2014",
+        "end": "10/5/2014",
+        "label": "Week 6"
+        }, {
+        "start": "11/5/2014",
+        "end": "17/5/2014",
+        "label": "Week 7"
+        }, {
+        "start": "18/5/2014",
+        "end": "24/5/2014",
+        "label": "Week 8"
+        }, {
+        "start": "25/5/2014",
+        "end": "31/5/2014",
+        "label": "Week 9"
+        }, {
+        "start": "1/6/2014",
+        "end": "7/6/2014",
+        "label": "Week 10"
+        }, {
+        "start": "8/6/2014",
+        "end": "14/6/2014",
+        "label": "Week 11"
+        }, {
+        "start": "15/6/2014",
+        "end": "21/6/2014",
+        "label": "Week 12"
+        }, {
+        "start": "22/6/2014",
+        "end": "28/6/2014",
+        "label": "Week 13"
+        }]
+    }];
+    // Define the processes which are a part of the planning
+    const processes = {
+        "headertext": "Task",
+        "fontcolor": "#000000",
+        "fontsize": "11",
+        "isanimated": "1",
+        "bgcolor": "#6baa01",
+        "headervalign": "bottom",
+        "headeralign": "left",
+        "headerbgcolor": "#999999",
+        "headerfontcolor": "#ffffff",
+        "headerfontsize": "12",
+        "align": "left",
+        "isbold": "1",
+        "bgalpha": "25",
+        "process": [{
+            "label": "Clear site",
+            "id": "1"
+            }, {
+            "label": "Excavate Foundation",
+            "id": "2",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Concrete Foundation",
+            "id": "3",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Footing to DPC",
+            "id": "4",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Drainage Services",
+            "id": "5",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Backfill",
+            "id": "6",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Ground Floor",
+            "id": "7"
+            }, {
+            "label": "Walls on First Floor",
+            "id": "8"
+            }, {
+            "label": "First Floor Carcass",
+            "id": "9",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "First Floor Deck",
+            "id": "10",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Roof Structure",
+            "id": "11"
+            }, {
+            "label": "Roof Covering",
+            "id": "12"
+            }, {
+            "label": "Rainwater Gear",
+            "id": "13"
+            }, {
+            "label": "Windows",
+            "id": "14"
+            }, {
+            "label": "External Doors",
+            "id": "15"
+            }, {
+            "label": "Connect Electricity",
+            "id": "16"
+            }, {
+            "label": "Connect Water Supply",
+            "id": "17",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Install Air Conditioning",
+            "id": "18",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Interior Decoration",
+            "id": "19",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Fencing And signs",
+            "id": "20"
+            }, {
+            "label": "Exterior Decoration",
+            "id": "21",
+            "hoverBandColor": "#e44a00",
+            "hoverBandAlpha": "40"
+            }, {
+            "label": "Setup racks",
+            "id": "22"
+        }]
+    };
+    //Define the start and end dates of each process
+    const datatable = {
+        "showprocessname": "1",
+        "namealign": "left",
+        "fontcolor": "#000000",
+        "fontsize": "10",
+        "valign": "right",
+        "align": "center",
+        "headervalign": "bottom",
+        "headeralign": "center",
+        "headerbgcolor": "#999999",
+        "headerfontcolor": "#ffffff",
+        "headerfontsize": "12",
+        "datacolumn": [{
+            "bgcolor": "#eeeeee",
+            "headertext": "Actual{br}Start{br}Date",
+            "text": [{
+                "label": "9/4/2014"
+            }, {
+                "label": "13/4/2014"
+            }, {
+                "label": "26/4/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40",
+
+            }, {
+                "label": "4/5/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "6/5/2014"
+            }, {
+                "label": "5/5/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "11/5/2014"
+            }, {
+                "label": "16/5/2014"
+            }, {
+                "label": "16/5/2014"
+            }, {
+                "label": "21/5/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "25/5/2014"
+            }, {
+                "label": "28/5/2014"
+            }, {
+                "label": "4/6/2014"
+            }, {
+                "label": "4/6/2014"
+            }, {
+                "label": "4/6/2014"
+            }, {
+                "label": "2/6/2014"
+            }, {
+                "label": "5/6/2014"
+            }, {
+                "label": "18/6/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "16/6/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "23/6/2014"
+            }, {
+                "label": "18/6/2014"
+            }, {
+                "label": "25/6/2014"
+            }]
+            }, {
+            "bgcolor": "#eeeeee",
+            "headertext": "Actual{br}End{br}Date",
+            "text": [{
+                "label": "12/4/2014"
+            }, {
+                "label": "25/4/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "4/5/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "10/5/2014"
+            }, {
+                "label": "10/5/2014"
+            }, {
+                "label": "11/5/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "14/5/2014"
+            }, {
+                "label": "19/5/2014"
+            }, {
+                "label": "21/5/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "24/5/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "27/5/2014"
+            }, {
+                "label": "1/6/2014"
+            }, {
+                "label": "6/6/2014"
+            }, {
+                "label": "4/6/2014"
+            }, {
+                "label": "4/6/2014"
+            }, {
+                "label": "7/6/2014"
+            }, {
+                "label": "17/6/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "20/6/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "23/6/2014"
+            }, {
+                "label": "23/6/2014"
+            }, {
+                "label": "23/6/2014",
+                "bgcolor": "#e44a00",
+                "bgAlpha": "40"
+            }, {
+                "label": "28/6/2014"
+            }]
+        }]
+    };
+    //Define the actual labelled tasks - Planned and Actual
+    const tasks = {
+        "task": [{
+        "label": "Planned",
+        "processid": "1",
+        "start": "9/4/2014",
+        "end": "12/4/2014",
+        "id": "1-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "1",
+        "start": "9/4/2014",
+        "end": "12/4/2014",
+        "id": "1",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "2",
+        "start": "13/4/2014",
+        "end": "23/4/2014",
+        "id": "2-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "2",
+        "start": "13/4/2014",
+        "end": "25/4/2014",
+        "id": "2",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Delay",
+        "processid": "2",
+        "start": "23/4/2014",
+        "end": "25/4/2014",
+        "id": "2-2",
+        "color": "#e44a00",
+        "toppadding": "56%",
+        "height": "32%",
+        "tooltext": "Delayed by 2 days."
+        }, {
+        "label": "Planned",
+        "processid": "3",
+        "start": "23/4/2014",
+        "end": "30/4/2014",
+        "id": "3-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "3",
+        "start": "26/4/2014",
+        "end": "4/5/2014",
+        "id": "3",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Delay",
+        "processid": "3",
+        "start": "3/5/2014",
+        "end": "4/5/2014",
+        "id": "3-2",
+        "color": "#e44a00",
+        "toppadding": "56%",
+        "height": "32%",
+        "tooltext": "Delayed by 1 days."
+        }, {
+        "label": "Planned",
+        "processid": "4",
+        "start": "3/5/2014",
+        "end": "10/5/2014",
+        "id": "4-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "4",
+        "start": "4/5/2014",
+        "end": "10/5/2014",
+        "id": "4",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "5",
+        "start": "6/5/2014",
+        "end": "11/5/2014",
+        "id": "5-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "5",
+        "start": "6/5/2014",
+        "end": "10/5/2014",
+        "id": "5",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "6",
+        "start": "4/5/2014",
+        "end": "7/5/2014",
+        "id": "6-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "6",
+        "start": "5/5/2014",
+        "end": "11/5/2014",
+        "id": "6",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Delay",
+        "processid": "6",
+        "start": "7/5/2014",
+        "end": "11/5/2014",
+        "id": "6-2",
+        "color": "#e44a00",
+        "toppadding": "56%",
+        "height": "32%",
+        "tooltext": "Delayed by 4 days."
+        }, {
+        "label": "Planned",
+        "processid": "7",
+        "start": "11/5/2014",
+        "end": "14/5/2014",
+        "id": "7-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "7",
+        "start": "11/5/2014",
+        "end": "14/5/2014",
+        "id": "7",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "8",
+        "start": "16/5/2014",
+        "end": "19/5/2014",
+        "id": "8-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "8",
+        "start": "16/5/2014",
+        "end": "19/5/2014",
+        "id": "8",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "9",
+        "start": "16/5/2014",
+        "end": "18/5/2014",
+        "id": "9-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "9",
+        "start": "16/5/2014",
+        "end": "21/5/2014",
+        "id": "9",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Delay",
+        "processid": "9",
+        "start": "18/5/2014",
+        "end": "21/5/2014",
+        "id": "9-2",
+        "color": "#e44a00",
+        "toppadding": "56%",
+        "height": "32%",
+        "tooltext": "Delayed by 3 days."
+        }, {
+        "label": "Planned",
+        "processid": "10",
+        "start": "20/5/2014",
+        "end": "23/5/2014",
+        "id": "10-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "10",
+        "start": "21/5/2014",
+        "end": "24/5/2014",
+        "id": "10",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Delay",
+        "processid": "10",
+        "start": "23/5/2014",
+        "end": "24/5/2014",
+        "id": "10-2",
+        "color": "#e44a00",
+        "toppadding": "56%",
+        "height": "32%",
+        "tooltext": "Delayed by 1 days."
+        }, {
+        "label": "Planned",
+        "processid": "11",
+        "start": "25/5/2014",
+        "end": "27/5/2014",
+        "id": "11-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "11",
+        "start": "25/5/2014",
+        "end": "27/5/2014",
+        "id": "11",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "12",
+        "start": "28/5/2014",
+        "end": "1/6/2014",
+        "id": "12-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "12",
+        "start": "28/5/2014",
+        "end": "1/6/2014",
+        "id": "12",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "13",
+        "start": "4/6/2014",
+        "end": "6/6/2014",
+        "id": "13-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "13",
+        "start": "4/6/2014",
+        "end": "6/6/2014",
+        "id": "13",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "14",
+        "start": "4/6/2014",
+        "end": "4/6/2014",
+        "id": "14-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "14",
+        "start": "4/6/2014",
+        "end": "4/6/2014",
+        "id": "14",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "15",
+        "start": "4/6/2014",
+        "end": "4/6/2014",
+        "id": "15-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "15",
+        "start": "4/6/2014",
+        "end": "4/6/2014",
+        "id": "15",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "16",
+        "start": "2/6/2014",
+        "end": "7/6/2014",
+        "id": "16-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "16",
+        "start": "2/6/2014",
+        "end": "7/6/2014",
+        "id": "16",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "17",
+        "start": "5/6/2014",
+        "end": "10/6/2014",
+        "id": "17-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "17",
+        "start": "5/6/2014",
+        "end": "17/6/2014",
+        "id": "17",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Delay",
+        "processid": "17",
+        "start": "10/6/2014",
+        "end": "17/6/2014",
+        "id": "17-2",
+        "color": "#e44a00",
+        "toppadding": "56%",
+        "height": "32%",
+        "tooltext": "Delayed by 7 days."
+        }, {
+        "label": "Planned",
+        "processid": "18",
+        "start": "10/6/2014",
+        "end": "12/6/2014",
+        "id": "18-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Delay",
+        "processid": "18",
+        "start": "18/6/2014",
+        "end": "20/6/2014",
+        "id": "18",
+        "color": "#e44a00",
+        "toppadding": "56%",
+        "height": "32%",
+        "tooltext": "Delayed by 8 days."
+        }, {
+        "label": "Planned",
+        "processid": "19",
+        "start": "15/6/2014",
+        "end": "23/6/2014",
+        "id": "19-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "19",
+        "start": "16/6/2014",
+        "end": "23/6/2014",
+        "id": "19",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "20",
+        "start": "23/6/2014",
+        "end": "23/6/2014",
+        "id": "20-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "20",
+        "start": "23/6/2014",
+        "end": "23/6/2014",
+        "id": "20",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Planned",
+        "processid": "21",
+        "start": "18/6/2014",
+        "end": "21/6/2014",
+        "id": "21-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "21",
+        "start": "18/6/2014",
+        "end": "23/6/2014",
+        "id": "21",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }, {
+        "label": "Delay",
+        "processid": "21",
+        "start": "21/6/2014",
+        "end": "23/6/2014",
+        "id": "21-2",
+        "color": "#e44a00",
+        "toppadding": "56%",
+        "height": "32%",
+        "tooltext": "Delayed by 2 days."
+        }, {
+        "label": "Planned",
+        "processid": "22",
+        "start": "24/6/2014",
+        "end": "28/6/2014",
+        "id": "22-1",
+        "color": "#008ee4",
+        "height": "32%",
+        "toppadding": "12%"
+        }, {
+        "label": "Actual",
+        "processid": "22",
+        "start": "25/6/2014",
+        "end": "28/6/2014",
+        "id": "22",
+        "color": "#6baa01",
+        "toppadding": "56%",
+        "height": "32%"
+        }]
+    };
+    //Define the connections between different tasks
+    const connectors = [{
+        "connector": [{
+        "fromtaskid": "1",
+        "totaskid": "2",
+        "color": "#008ee4",
+        "thickness": "2",
+        "fromtaskconnectstart_": "1"
+        }, {
+        "fromtaskid": "2-2",
+        "totaskid": "3",
+        "color": "#008ee4",
+        "thickness": "2"
+        }, {
+        "fromtaskid": "3-2",
+        "totaskid": "4",
+        "color": "#008ee4",
+        "thickness": "2"
+        }, {
+        "fromtaskid": "3-2",
+        "totaskid": "6",
+        "color": "#008ee4",
+        "thickness": "2"
+        }, {
+        "fromtaskid": "7",
+        "totaskid": "8",
+        "color": "#008ee4",
+        "thickness": "2"
+        }, {
+        "fromtaskid": "7",
+        "totaskid": "9",
+        "color": "#008ee4",
+        "thickness": "2"
+        }, {
+        "fromtaskid": "12",
+        "totaskid": "16",
+        "color": "#008ee4",
+        "thickness": "2"
+        }, {
+        "fromtaskid": "12",
+        "totaskid": "17",
+        "color": "#008ee4",
+        "thickness": "2"
+        }, {
+        "fromtaskid": "17-2",
+        "totaskid": "18",
+        "color": "#008ee4",
+        "thickness": "2"
+        }, {
+        "fromtaskid": "19",
+        "totaskid": "22",
+        "color": "#008ee4",
+        "thickness": "2"
+        }]
+    }];
+
+    //Chart Configurations
+    const chartConfigurations = {
+        type: 'gantt',
+        renderAt: 'chart-container',
+        width: '750',
+        height: '500',
+        dataFormat: 'json',
+        dataSource: {
+        "chart": {
+            "theme": "fusion",
+            "caption": "New Store Opening - Project Plan",
+            "subcaption": "Planned vs Actual",
+            "dateformat": "dd/mm/yyyy",
+            "outputdateformat": "ddds mns yy",
+            "ganttwidthpercent": "60",
+            "ganttPaneDuration": "40",
+            "ganttPaneDurationUnit": "d",
+            "plottooltext": "$processName{br}$label starting date $start{br}$label ending date $end",
+            "legendBorderAlpha": "0",
+            "legendShadow": "0",
+            "usePlotGradientColor": "0",
+            "showCanvasBorder": "0",
+            "flatScrollBars": "1",
+            "gridbordercolor": "#333333",
+            "gridborderalpha": "20",
+            "slackFillColor": "#e44a00",
+            "taskBarFillMix": "light+0"
+        },
+        "categories": categories,
+        "processes": processes,
+        "datatable": datatable,
+        "tasks": tasks,
+        "connectors": connectors,
+        "milestones": {
+            "milestone": [{
+                "date": "2/6/2014",
+                "taskid": "12",
+                "color": "#f8bd19",
+                "shape": "star",
+                "tooltext": "Completion of Phase 1"
+            }
+            ]
+        },
+        "legend": {
+            "item": [{
+            "label": "Planned",
+            "color": "#008ee4"
+            }, {
+            "label": "Actual",
+            "color": "#6baa01"
+            }, {
+            "label": "Slack (Delay)",
+            "color": "#e44a00"
+            }]
+        }
+        }
+    };
+
+
+    FusionCharts.ready(function(){
+        var fusioncharts = new FusionCharts(chartConfigurations);
+    fusioncharts.render();
+    });
+
+</script>
+</head>
+<body>
+<div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>
+```
+
+You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of otehr charts here.
