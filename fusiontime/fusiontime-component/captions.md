@@ -27,7 +27,7 @@ caption: {
 
 The chart will look as shown below:
 
-{% embed_ftChart online-sales-caption-example %}
+{% embed_ftChart online-sales-caption %}
 
 ### Sub-caption Position
 
@@ -46,4 +46,4 @@ subcaption: {
 
 The chart will look as shown below:
 
-{% embed_ftChart online-sales-sub-caption-example %}
+{% embed_ftChart online-sales-sub-caption %}
