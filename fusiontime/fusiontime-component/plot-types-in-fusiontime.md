@@ -23,6 +23,9 @@ FusionTime supports the following plot types:
 - Step Line
 - Candlestick
 - OHLC
+- Range Series Charts
+  - Column Range
+  - Area Range
 
 By default, the chart renders with a line plot. However, you can specify the plot type in a chart, using the `plotType` property inside the `yAxis` object. Refer to the code below:
 
@@ -126,6 +129,30 @@ To render a time series chart with **ohlc** as data plot, set the value of `type
 Let's create a chart showing NASDAQ Composite Index. The time series chart looks like:
 
 {% embed_ftChart composite-index-ohlc-data-plot %}
+
+## Range Series Charts
+
+FusionTime allows you to plot range series charts using time series data. The charts can be of two types:
+
+- Column-range
+
+- Area-range
+
+### Column-Range Series Charts
+
+A column-range series chart shows a series of columns parallel to one another running along its length. The average line of the range is shown in the time navigator.
+
+A column-range chart looks as shown below:
+
+{% embed_ftChart column-range-series-chart %}
+
+### Area-Range Series Charts
+
+An area-range series chart looks like an area chart bound by two lines along its entire length - one above the plot, and the other below it. The average line of the range is shown in the time navigator.
+
+An area-range chart looks as shown below:
+
+{% embed_ftChart area-range-series-chart %}
 
 ## Style Definition
 
