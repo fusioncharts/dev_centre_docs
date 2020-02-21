@@ -11,7 +11,8 @@
             "title": "Sales",
         }],
         caption: {
-            text: 'Online Sales of a SuperStore'
+            "text": "Online Sales of a SuperStore",
+            "position": "right"
         }
     }
 }

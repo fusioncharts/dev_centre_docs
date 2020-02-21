@@ -18,7 +18,7 @@ Refer to the code below:
 
 ```javascript
 caption: {
-  text: "Caption";
+  text: "Online Sales of a SuperStore";
   position: "right"; // Default = left. Other values = right, center
 }
 ```
@@ -37,7 +37,7 @@ Refer to the code below:
 
 ```javascript
 subcaption: {
-  text: "subCaption";
+  text: "2011 - 2014";
   position: "right"; // Default = left. Other values = right, center
 }
 ```

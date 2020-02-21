@@ -12,6 +12,10 @@
         }],
         caption: {
             text: 'Online Sales of a SuperStore'
+        },
+        subcaption: {
+            "text": "2011 - 2014";
+            "position": "right";
         }
     }
 }
