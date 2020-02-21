@@ -222,6 +222,8 @@ The live chart will look as shown below:
 
 {% embed_ftChart clip-time-axis %}
 
+Click [here](https://jsfiddle.net/fusioncharts/pkwegLjc/) to edit the above chart.
+
 ## Output time format
 
 FusionTime supports the following time units:
