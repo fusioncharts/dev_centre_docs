@@ -2060,6 +2060,10 @@
             "path": "/fusiontime/fusiontime-component/y-axis-in-fusiontime"
           },
           {
+            "title": "Captions",
+            "path": "/fusiontime/fusiontime-component/captions"
+          },
+          {
             "title": "Predictive Data",
             "path": "/fusiontime/fusiontime-component/predictive-data-fusiontime"
           },
