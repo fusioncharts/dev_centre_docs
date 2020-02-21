@@ -9,14 +9,13 @@
         text: "Plot for Energy Consumption",
         "style": {
           "text": {
-            "fill": "#ff0000",
             "font-size": "24"
           }
         }
       },
       chart: {
         showLegend: 1,
-        theme: "candy",
+        theme: "fusion",
         showtooltip: 1,
         palettecolors: "#02ECD0"
       },
@@ -41,15 +40,6 @@
         enabled: "true", // Disables the Tooltip
         outputTimeFormat: {
           day: "%d/%m/%y (%a)"
-        },
-        style: {
-          container: {
-            "border-color": "#000000",
-            "_background-color": "#F2F6F6"
-          },
-          text: {
-            "color": "#FFFFFF"
-          }
         }
       }
     }
