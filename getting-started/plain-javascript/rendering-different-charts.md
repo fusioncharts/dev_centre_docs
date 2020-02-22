@@ -1,6 +1,6 @@
 ---
 title: Rendering different Charts | FusionCharts
-heading: Rendering Different Charts111
+heading: Rendering Different Charts11
 description: This article outlines some of the popular charts and the way to render them with their respective data formats.
 ---
 # Rendering Different Charts
