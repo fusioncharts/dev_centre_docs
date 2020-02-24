@@ -1,0 +1,38 @@
+{
+    "header": "Chart Anatomy",
+    "subHeader": "To know how FusionCharts works, it is important to understand the various components and concepts of a chart",
+    "content": {
+        "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+        "contentGroup": [
+            {
+                "itemHeader": "",
+                "imgSrc": "real-time-area-chart.png",
+                "annotations": [
+                    {
+                        "annotationNumber": "1",
+                        "annotationName": "dataset",
+                        "annotationDesc": "Dataset is the entire data structure of the chart. It's an array constituting different data series",
+                        "annotationDescLinkPath": null,
+                        "syntax": " {\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeRender\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
+                        "leftPosition": "16.5%",
+                        "topPosition": "16.5%",
+                        "annotationLinks": []
+                    },
+                    {
+                        "annotationNumber": "2",
+                        "annotationName": "Categories",
+                        "annotationDesc": "Categories depict different classes of the data, structured for the visual representation ",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "16%",
+                        "topPosition": "73%",
+                        "annotationLinks": [
+                            {
+                                "linkDesc": "It is an array of labels representing different quarters as shown above"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "header": "Chart Anatomy",
+    "subHeader": "To know how FusionCharts works, it is important to understand the various components and concepts of a chart",
+    "content": {
+        "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+        "contentGroup": [
+            {
+                "itemHeader": "",
+                "imgSrc": "world-map-anatomy.png",
+                "annotations": [
+                    {
+                        "annotationNumber": "1",
+                        "annotationName": "colorRange",
+                        "annotationDesc": "Outlines the color variation of the different gegraphical entities based on their values. An array consisting of objects with range of values along with the color code.",
+                        "annotationDescLinkPath": null,
+                        "syntax": " {\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeRender\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
+                        "leftPosition": "16.5%",
+                        "topPosition": "16.5%",
+                        "annotationLinks": []
+                    },
+                    {
+                        "annotationNumber": "2",
+                        "annotationName": "data",
+                        "annotationDesc": "An array of objects where an individual object represents a geogrsphical area.",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "16%",
+                        "topPosition": "73%",
+                        "annotationLinks": [
+                            {
+                                "linkDesc": "It is an array of labels representing different quarters as shown above"
+                            }
+                        ]
+                    },
+                    {
+                        "annotationNumber": "3",
+                        "annotationName": "id",
+                        "annotationDesc": "id is the unique identifier for eacch location. For example, if you want to denote Africa, the value for the corresponding id must be AF and not AFR.",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "29.5%",
+                        "topPosition": "87.5%"
+                    },
+                    {
+                        "annotationNumber": "4",
+                        "annotationName": "value",
+                        "annotationDesc": "value brings the numerical significance to the geographical entity concerning the use-case mapping",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "64.5%",
+                        "topPosition": "87.5%"
+                    }
+                ]
+            }
+        ]
+    }
+}

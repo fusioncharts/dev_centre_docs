@@ -1,0 +1,54 @@
+{
+    "header": "Chart Anatomy",
+    "subHeader": "To know how FusionCharts works, it is important to understand the various components and concepts of a chart",
+    "content": {
+        "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+        "contentGroup": [
+            {
+                "itemHeader": "",
+                "imgSrc": "ms-column-chart-anatomy.png",
+                "annotations": [
+                    {
+                        "annotationNumber": "1",
+                        "annotationName": "dataset",
+                        "annotationDesc": "An array of objects representing each cell of the heat map. The number of objects should be equal to the number of valid cells in the teat map table.",
+                        "annotationDescLinkPath": null,
+                        "syntax": " {\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeRender\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
+                        "leftPosition": "16.5%",
+                        "topPosition": "16.5%",
+                        "annotationLinks": []
+                    },
+                    {
+                        "annotationNumber": "2",
+                        "annotationName": "colorRange",
+                        "annotationDesc": "Outlines the color variation of the different cells of the table based on their values. An array consisting of objects with range of values along with the color code.",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "16%",
+                        "topPosition": "73%",
+                        "annotationLinks": [
+                            {
+                                "linkDesc": "It is an array of labels representing different quarters as shown above"
+                            }
+                        ]
+                    },
+                    {
+                        "annotationNumber": "3",
+                        "annotationName": "rows",
+                        "annotationDesc": "An array of rows of the matrix. Each row consists of an id and a label.",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "29.5%",
+                        "topPosition": "87.5%"
+                    },
+                    {
+                        "annotationNumber": "4",
+                        "annotationName": "columns",
+                        "annotationDesc": "An array of columns of the matrix. Each object consists of an id and a label.",
+                        "annotationDescLinkPath": null,
+                        "leftPosition": "64.5%",
+                        "topPosition": "87.5%"
+                    }
+                ]
+            }
+        ]
+    }
+}
