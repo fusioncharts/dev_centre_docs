@@ -10,17 +10,17 @@ heading: Release Notes
 
 <h4 class="sub-heading">New Feature</h4>
 
-- FusionTime now allows you to plot range series charts using time series data. The charts can be of two types - Area-range, and Column-range.
+- FusionTime now allows you to plot range series data using time series. Two plot types are supported - [Area-range](/fusiontime/fusiontime-component/plot-types-in-fusiontime#area-range-series-charts), and [Column-range](/fusiontime/fusiontime-component/plot-types-in-fusiontime#column-range-series-charts).
 
-- FusionTime now allows you to clip off sections of the time axis where no data values exist.
+- FusionTime now allows you to [clip off sections](/fusiontime/fusiontime-component/time-axis#clip-time-axis) of the time axis.
 
-- FusionTime now allows you to position the caption and subcaption of a chart to the `left`, `right`, or `center`.
+- FusionTime now allows you to position the [caption](/fusiontime/fusiontime-component/captions#caption-position) and [subcaption](/fusiontime/fusiontime-component/captions#sub-caption-position) of a chart to the `left`, `right`, or `center`.
 
 <h4>Improvements</h4>
 
-- Practicing the rule of proximity, the yAxis title now appears closer to yAxis labels. The default space between them has been improved.
+- In accordance to the rule of proximity, the Y-axis title now appears closer to Y-axis labels. The default space between them has been reduced.
 
-- When charts are zoomed in, the Y-axis now scales properly. Earlier, the Y-axis labels would not be aligned uniformly when the charts were zoomed in. The effect was especially pronounced for the Candlestick chart.
+- When charts are zoomed in, the Y-axis now scales properly.
 
 - Time axis ticks will now be aligned with the labels. No major tick will appear without a label.
 
@@ -28,13 +28,13 @@ heading: Release Notes
 
 - The tooltips now appear fine for all data plots in grouped column charts. Earlier, the tooltip would not appear for the first data plot.
 
-- 'Visible' parameter of legend events like 'legendItemClicked', 'legenItemRollOver' 'LegendItemRollout' was previously showing only 'true' value. Now it shows, 'true' or 'false' depending on its current state.
+- 'Visible' parameter of legend events like 'legendItemClicked', 'legendItemRollOver' 'LegendItemRollout' was previously showing only 'true' value. Now it shows, 'true' or 'false' depending on its current state.
 
-- Time series charts no longer show `Export as XLSX` in the chart menu if the value of `exportEnabled` is set to `1` and the chart is updated using any attribute. Earlier, the `Export as XLSX` would appear even if the option was not enabled.
+- Time series charts no longer show `Export as XLSX` in the chart menu if the value of `exportEnabled` is set to `1` and the chart is updated using any attribute. Earlier, the inactive menu option `Export as XLSX` would appear.
 
 - Charts are now exported properly in IE11. Earlier, clicking on the Export menu would not export the chart, and display a JS error message in the browser console instead.
 
-- The time navigator axis ticks no longer overlap the axis values. Earlier, the time navigator ticks would sometimes make it impossible to see the values. The issue has been fixed.
+- The time navigator axis ticks now properly correspond with values. Earlier, there were too many ticks, making it difficult to see which tick indicated a particular value. The issue has been fixed by reducing the overall number of ticks.
 
 - On mobile devices, the Custom Range Selector now accepts values selected using the **From** and **To** input boxes.
 
