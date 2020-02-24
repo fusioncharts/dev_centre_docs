@@ -4,6 +4,48 @@ description: List of changes made in recent release.
 heading: FusionExport Release Notes
 ---
 
+<h2 class="sub-heading">Version 1.2.2</h2>
+
+<p class="release-date">20th January 2020</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- **Announcement & notification from CLI:** Starting v1.2.2, we will start showing any new product release in the command line itself, so that you are always equipped with the latest version of FusionExport.
+
+- **Support for memory stream as output:** You can now get exported output as a stream and work with it.
+
+- All the SDKs are updated with these new changes.
+
+<h4>Improvements</h4>
+
+- **Better Package Management:** For better onboarding, we have changed the package structure to include examples and readme files.
+
+<h4>Fixes</h4>
+
+- **Dependency issues:** In the previous release, we included all the dependencies in the build itself. However, it led to a few issues while executing FusionExport. We have resolved that issue.
+
+<h2 class="sub-heading">Version 1.2.1</h2>
+
+<p class="release-date">28th August 2019</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- **No more External Dependencies:** In v1.1.1, we made by allowing you to download dependencies during runtime. However, this created a huge backlash as many of our customers run FusionExport behind a firewall. Hence, with this minor release, we have reverted back the change.
+
+<h2 class="sub-heading">Version 1.2.0</h2>
+
+<p class="release-date">8th August 2019</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- **Supports for PDF header & footer:** Behold, the most requested feature for FusionExport is here. Now you can add headers and footers without any hassle. Just mention them in the configurations and you are done!
+
+- **Run as a background service in Linux based environments:** Now you can run FusionExport as a background service by providing `--daemon` option. No no need to split your screen.
+
+<h4>Improvements</h4>
+
+- **Supports FusionCharts v3.14:** This version also support the latest version of FusionCharts so that you are up to date with the FusionCharts engine as well.
+
 <h2 class="sub-heading">Version 1.1.1</h2>
 
 <p class="release-date">23rd April 2019</p>

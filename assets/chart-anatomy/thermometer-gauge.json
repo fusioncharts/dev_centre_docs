@@ -1,0 +1,134 @@
+{
+   "header": "Chart Anatomy",
+   "subHeader": "To know how FusionCharts works, it is important to understand the various components and concepts of a chart",
+   "content": {
+      "header": "Below are different sections with interactive annotated images describing various components and concepts of charts",
+      "contentGroup": [
+         {
+            "itemHeader": "Thermometer Gauge",
+            "imgSrc": "thermometer-gauge-anatomy.png",
+            "annotations": [{
+                  "annotationNumber": "1",
+                  "annotationName": "Caption",
+                  "annotationDesc": "The caption (also called the gauge title) is the heading of your gauge. You can add custom text for the caption, as well as configure its font properties and cosmetics.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "34.5%",
+                  "topPosition": "15.5%",
+                  "annotationLinks": [{
+                        "linkDesc": "Learn how to add caption ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#set-the-caption-and-subcaption"
+                     },
+                     {
+                        "linkDesc": "You can customize font properties and cosmetics of caption using attributes. Know more about them. ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
+                     },
+                     {
+                        "linkDesc": "You can also customize the alignment of the caption. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#configure-caption-alignment"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "2",
+                  "annotationName": "Subcaption",
+                  "annotationDesc": "The sub-caption (also called the gauge subtitle) is the sub-heading of your gauge. You can add custom text for sub-caption, as well as configure its font properties.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "54%",
+                  "topPosition": "21%",
+                  "annotationLinks": [{
+                        "linkDesc": "Learn how to add sub-caption ",
+                        "linkPath": "/chart-guide/chart-configurations/axes#setting-axes-names"
+                     },
+                     {
+                        "linkDesc": "Font properties and cosmetics of sub-caption can also be customized using attributes, learn more about them ",
+                        "linkPath": "/chart-guide/chart-configurations/caption-and-sub-caption#customize-font-properties"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "3",
+                  "annotationName": "Canvas Area",
+                  "annotationDesc": "Canvas area refers to the area in which the gauge data is plotted, excluding the area where titles, legends, and axis names are rendered.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "70%",
+                  "topPosition": "30%",
+                  "annotationLinks": [{
+                        "linkDesc": "You can customize border for canvas, learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/canvas#show-canvas-border"
+                     },
+                     {
+                        "linkDesc": "You can customize background color for canvas, as well as add gradient fill to it. Learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/canvas#use-gradient-fill"
+                     }
+                  ]
+               },
+               {
+                  "annotationNumber": "4",
+                  "annotationName": "Lower Limit",
+                  "annotationDesc": "Lower Limit refers to the lowest point in the reference scale used in the gauge. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
+                  "leftPosition": "51.5%",
+                  "topPosition": "61%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "5",
+                  "annotationName": "Upper Limit",
+                  "annotationDesc": "Upper Limit refers to the highest point in the reference scale used in the gauge. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
+                  "leftPosition": "41%",
+                  "topPosition": "27%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "6",
+                  "annotationName": "Gauge Scale",
+                  "annotationDesc": "The gauge scale displays all possible values between the lower and upper limits. Learn more about it ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
+                  "leftPosition": "54.4%",
+                  "topPosition": "38%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "7",
+                  "annotationName": "Tick Mark",
+                  "annotationDesc": "Tick marks are placed at regular intervals on the gauge scale, to indicate data values. Learn more about them ",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
+                  "leftPosition": "46%",
+                  "topPosition": "44%",
+                  "annotationLinks": []
+               },
+               {
+                  "annotationNumber": "8",
+                  "annotationName": "Data Plot",
+                  "annotationDesc": "Data plot refers to the columns of the dial in an angular gauge, the sphere in a bulb gauge, the thermometer in a thermometer gauge, and so on.",
+                  "annotationDescLinkPath": null,
+                  "leftPosition": "41%",
+                  "topPosition": "53%",
+                  "annotationLinks": [{
+                     "linkDesc": "You can customize the way your data plot looks using colors, gradients and hover effects using available attributes. Learn more about their usage ",
+                     "linkPath": "/chart-guide/chart-configurations/data-plot"
+                  }]
+               },
+               {
+                  "annotationNumber": "9",
+                  "annotationName": "Tooltip",
+                  "annotationDesc": "A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information about the data plot hovered.",
+                  "annotationDescLinkPath": "/chart-guide/chart-configurations/axes#setting-axes-names",
+                  "leftPosition": "55%",
+                  "topPosition": "53%",
+                  "annotationLinks": [{
+                        "linkDesc": "You can customize padding, size and other properties of tooltip, learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/tool-tips#customize-tooltips"
+                     },
+                     {
+                        "linkDesc": "You can also customize the text of tooltip and use values plotted on the gauge using macros, learn more about it ",
+                        "linkPath": "/chart-guide/chart-configurations/tool-tips#introduction-to-macros" 
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}

@@ -8,6 +8,8 @@ heading: Pie and Doughnut Charts
 
 A pie chart is a circular chart divided into sectors where the arc length of each sector, its central angle, and its area is proportional to the quantity it represents. A doughnut chart is similar to a pie chart and facilities similar kind of data analysis. FusionCharts Suite XT includes the pie and doughnut charts to plot data that needs to be shown as a percent of the whole.
 
+{% embed_chartAnatomy pie-chart.json %}
+
 ## Pie 2D Chart
 
 Let's create our first pie 2D chart which will showcase the split in revenue by product categories for one year.
@@ -47,6 +49,8 @@ Click [here](http://jsfiddle.net/fusioncharts/uq2muq97/) to edit the pie 3D char
 ## Doughnut 2D Chart
 
 As we know, a doughnut chart is similar to a pie chart. The only difference is that a doughnut chart has a blank center - as the name suggests, it looks like a doughnut.
+
+{% embed_chartAnatomy doughnut-chart.json %}
 
 Let's create our first doughnut 2D chart showcasing the same use case for the pie chart created above.
 
@@ -136,9 +140,9 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "valuePosition": "inside"
-    }
+  "chart": {
+    "valuePosition": "inside"
+  }
 }
 ```
 
@@ -184,10 +188,10 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "valuePosition": "inside",
-        "minAngleForValue": "75"
-    }
+  "chart": {
+    "valuePosition": "inside",
+    "minAngleForValue": "75"
+  }
 }
 ```
 
@@ -203,7 +207,7 @@ Click [here](http://jsfiddle.net/fusioncharts/2m8fskpa/) to edit the above chart
 
 Now that you have already customized the position of the values of a pie/doughnut charts, let's see how to place the labels inside the pie/doughnut slices of a pie and doughnut chart respectively.
 
-You can place the label inside the slices by setting the value of the `labelPosition` attribute to `inside**`**. The default value of `labelPosition` attribute is `outside`.
+You can place the label inside the slices by setting the value of the `labelPosition` attribute to `inside**`\*\*. The default value of `labelPosition` attribute is `outside`.
 
 > `labelPosition` attribute can only be applied to 2D charts, i.e., pie2d and doughnut2d charts.
 
@@ -211,9 +215,9 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "labelPosition": "inside"
-    }
+  "chart": {
+    "labelPosition": "inside"
+  }
 }
 ```
 
@@ -259,10 +263,10 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {
-        "labelPosition": "inside",
-        "minAngleForLabel": "75"
-    }
+  "chart": {
+    "labelPosition": "inside",
+    "minAngleForLabel": "75"
+  }
 }
 ```
 
@@ -386,7 +390,7 @@ To configure the label distance and clearance, follow the steps given below:
 
 - Set the distance (in pixels) between the label/value from the pie/doughnut edge using the `labelDistance` attribute.
 
-> **Note:** This attribute is applicable only when smart labeling is disabled.
+> This attribute is applicable only when smart labeling is disabled.
 
 Refer to the code given below:
 

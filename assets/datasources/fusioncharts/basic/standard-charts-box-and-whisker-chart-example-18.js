@@ -16,8 +16,9 @@
             "qdIconRadius": "5",
             "qdIconSides": "5",
             "qdIconShape": "triangle",
-            "qdIconColor": "ff0000",
-            "qdIconAlpha": "70"
+            "qdIconColor": "#fff00f",
+            "qdIconAlpha": "70",
+            "qdIconBorderColor": "#ff0000"
         },
         "categories": [{
             "category": [{

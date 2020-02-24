@@ -147,55 +147,37 @@ using FusionCharts.Visualization;
 Insert the code given below within the **PageLoad()** event of the **CombiChart.aspx.cs** page, to render the Combination chart. In this example, you will fetch data from a JSON file stored in the FusionCharts repository on GitHub. However, you can also fetch data from SQL Server or a CSV file.
 
 ```javascript
-public ActionResult CombiChart() {
-
-    // Initialize DataModel object
-    DataModel model = new DataModel();
-
-    // Create object of JsonFileSource. Provide file path as constructor parameter
-    JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi2d.json");
-
-    // Add json source in datasources store of model
-    model.DataSources.Add(jsonFileSource);
-
-    // Initialize combination chart object
-    Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombi2d");
-
-    // Set model as data source
-    combiChart.Data.Source = model;
-
-    // Provide field name, which should be rendered as line column
-    combiChart.Data.ColumnPlots("Actual Revenue");
-
-    // provide field name, which should be rendered as line plot
-    combiChart.Data.LinePlots("Projected Revenue");
-
-    // provide field name, which should be rendered as area plot
-    combiChart.Data.AreaPlots("Profit");
-
-    // Set XAxis caption
-    combiChart.XAxis.Text = "Month";
-
-    // Set YAxis caption
-    combiChart.PrimaryYAxis.Text = "Amount (in USD)";
-
-    // set chart caption
-    combiChart.Caption.Text = "Harry's Supermart";
-
-    // Set chart sub caption
-    combiChart.SubCaption.Text = "Sales analysis of last year";
-
-    // set width, height
-    combiChart.Width.Pixel(600);
-
-    combiChart.Height.Pixel(500);
-
-    // set theme
-    combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
-
-    // Render chart in Literal
-    Literal1.Text = combiChart.Render();
-}
+// Initialize DataModel object
+DataModel model = new DataModel();
+// Create object of JsonFileSource. Provide file path as constructor parameter
+JsonFileSource jsonFileSource = new JsonFileSource("https://raw.githubusercontent.com/poushali-guha-12/SampleData/master/mscombi2d.json");
+// Add json source in datasources store of model
+model.DataSources.Add(jsonFileSource);
+// Initialize combination chart object
+Charts.CombinationChart combiChart = new Charts.CombinationChart("mscombi2d");
+// Set model as data source
+combiChart.Data.Source = model;
+// Provide field name, which should be rendered as line column
+combiChart.Data.ColumnPlots("Actual Revenue");
+// provide field name, which should be rendered as line plot
+combiChart.Data.LinePlots("Projected Revenue");
+// provide field name, which should be rendered as area plot
+combiChart.Data.AreaPlots("Profit");
+// Set XAxis caption
+combiChart.XAxis.Text = "Month";
+// Set YAxis caption
+combiChart.PrimaryYAxis.Text = "Amount (in USD)";
+// set chart caption
+combiChart.Caption.Text = "Harry's Supermart";
+// Set chart sub caption
+combiChart.SubCaption.Text = "Sales analysis of last year";
+// set width, height
+combiChart.Width.Pixel(600);
+combiChart.Height.Pixel(500);
+// set theme
+combiChart.ThemeName = FusionChartsTheme.ThemeName.FUSION;
+// Render chart in Literal
+Literal1.Text = combiChart.Render();
 ```
 
 **Rendered Chart**

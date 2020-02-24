@@ -86,11 +86,16 @@ The data marker created using the above code is shown below:
 
 {% embed_ftChart fusioncharts-aspnet-data-markers %}
 
-Starting v1.3.0, FusionTime gives you an option of one more type of data marker, i.e., `pin` which can be used while rendering a time series chart.
+There are currently two types of data markers:
+
+- Flag type (default)
+- Pin type
+
+The pin type data marker has been introduced in FusionTime v1.3.0.
 
 The image below shows the pin type data marker on a time series chart:
 
-IMAGE
+<img src="{% site.BASE_URL %}/images/fusiontime-component-data-markers-pin.png" alt="Data Markers" width="680" height="400">
 
 The code to render a time series chart with `pin` type data marker is shown below:
 

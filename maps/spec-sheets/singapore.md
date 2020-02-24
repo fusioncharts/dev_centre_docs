@@ -7,17 +7,12 @@
 Map Name: Singapore
 Dimensions (Width x Height): 560x340
 
-
-
-
-
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-SG.CS|CS|Central Singapore
-SG.EA|EA|East Singapore
-SG.NO|NO|North Singapore
-SG.SO|SO|South Singapore
-SG.WE|WE|West Singapore
-
+| ID    | Short label | Label             |
+| ----- | ----------- | ----------------- |
+| SG.CS | CS          | Central Singapore |
+| SG.NE | NE          | North East        |
+| SG.NW | NW          | North West        |
+| SG.SE | SE          | South East        |
+| SG.SW | SW          | South West        |

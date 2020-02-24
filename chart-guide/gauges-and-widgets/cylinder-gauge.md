@@ -6,7 +6,9 @@ heading: Cylinder Gauge
 
 The cylinder gauge is represented by a vertical cylinder, whose fill level is defined by the data value you plot. You can use it to report inventory levels, fuel levels, etc. The cylinder gauge is a real-time chart, which can update its data after intervals you specify, without any page refreshes. What makes a cylinder gauge different from other gauges is that this gauge can only be rendered with one fill color. You cannot create a cylinder gauge with color ranges.
 
-## Simple cylinder gauge example
+{% embed_chartAnatomy cylinder-gauge.json %}
+
+## Simple Cylinder Gauge Example
 
 You can use the cylinder gauge shown below, to monitor the diesel level in the generator at Bakersfield Central.
 
@@ -14,17 +16,17 @@ You can use the cylinder gauge shown below, to monitor the diesel level in the g
 
 Click [here](http://jsfiddle.net/fusioncharts/MWnVr/) to edit the above gauge.
 
-## Elements of cylinder gauges
+## Elements of Cylinder Gauges
 
 In the image below, you can see the basic elements of a cylinder gauge:
 
 ![Cylinder-gauge](/images/cylinder-gauge-introduction-1.jpg)
 
-### Cylinder fill
+### Cylinder Fill
 
 The cylinder is the main component in a cylinder chart. You can understand the value being illustrated by looking at the percentage of cylinder filled.
 
-### Tick marks
+### Tick Marks
 
 Tick marks are the calibration marks on the vertical scale to the left/right of the cylinder, which help you interpret the reading. There are two types of tick marks which you can draw on the chart:
 
@@ -32,7 +34,7 @@ Tick marks are the calibration marks on the vertical scale to the left/right of 
 
 * Minor tick marks – These are the smaller lines enclosed within the bigger lines.
 
-### Chart value
+### Chart Value
 
 The value display box helps you display the current value of the cylinder fill.
 
@@ -42,11 +44,11 @@ Annotations are graphical elements that you can create and position anywhere on 
 
 With this, you have seen what is a cylinder gauge and the the basic components that make up a cylinder gauge.
 
-## Simple cylinder gauge example
+## Simple Cylinder Gauge Example
 
 The cylinder gauge is a real-time chart, which can update its data after specified intervals, without requiring any page refreshes. In this section, you will be shown how you can create a simple cylinder gauge.
 
-### Create a cylinder gauge
+### Create a Cylinder Gauge
 
 Use the following attributes to create a simple cylinder gauge:
 
@@ -92,7 +94,7 @@ Click [here](http://jsfiddle.net/fusioncharts/MWnVr/) to edit the above gauge.
 
 You have several options to configure and customize the cylinder gauge to suit your requirements.
 
-## Set cylinder fill color
+## Set Cylinder Fill Color
 
 Use the `cylFillColor` attribute to specify the hex code of the fill color for the cylinder.
 
@@ -114,7 +116,7 @@ Click [here](http://jsfiddle.net/fusioncharts/QseLf/) to edit the above gauge.
 
 > If you do not customize the fill color, the cylinder gauge will use the default color as the fill color instead.
 
-## Customize cylinder origin, radius, and height
+## Customize Cylinder Origin, Radius, and Height
 
 Use the following attributes to customize the cylinder origin, radius, and height:
 
@@ -147,7 +149,7 @@ Click [here](http://jsfiddle.net/fusioncharts/AN44L/) to edit the above gauge.
 
 > If you don't customize the origin, radius, and height, the cylinder gauge will automatically calculate the best-fit coordinates and size for the cylinder. 
 
-## Configure chart value display
+## Configure Chart Value Display
 
 Set the value of the `showValue` attribute to `0` to hide the data values below the gauge. 
 
@@ -169,7 +171,7 @@ Click [here](http://jsfiddle.net/fusioncharts/ZWTxT/) to edit the above gauge.
 
 > By default, the attribute takes `1` as the value, and displays data values below the gauge. 
 
-## Hide tick marks and tick values
+## Hide Tick Marks and Tick Values
 
 Use the following attributes to hide tick marks and values:
 
@@ -194,7 +196,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/T85UH/) to edit the above gauge.
 
-## Position tick marks and tick values
+## Position Tick Marks and Tick Values
 
 Set the value of the `ticksOnRight` attribute to `0`, to render the tick marks on the left side of the gauge.
 
@@ -216,7 +218,7 @@ Click [here](http://jsfiddle.net/fusioncharts/L3Hs4/) to edit the above gauge.
 
 > By default, the tick marks and tick values are rendered to the right of the gauge.
 
-## Customize the number of tick marks
+## Customize the Number of Tick Marks
 
 Use the following attributes to customize the number of tick marks:
 
@@ -241,7 +243,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/9BJrS/) to edit the above gauge.
 
-## Disable auto adjustment of tick marks
+## Disable Auto Adjustment of Tick Marks
 
 Set the value of the `adjustTM`attribute to `0`, to disable automatic distribution of tick marks by the gauge, to ensure the best view.
 
@@ -263,7 +265,7 @@ Click [here](http://jsfiddle.net/fusioncharts/qtk9z/) to edit the above gauge.
 
 > Unless you manually disable the automatic distribution of tick marks, the cylinder gauge can automatically calculate and display the best feasible number of major tick marks.
 
-## Configure tick value step
+## Configure Tick Value Step
 
 Set the value of the `tickValueStep` attribute to **n**, to only display every **n**<sup>th</sup> tick value on the gauge. 
 
@@ -285,7 +287,7 @@ Click [here](http://jsfiddle.net/fusioncharts/LNxHB/) to edit the above gauge.
 
 > The cylinder gauge always displays the upper and lower limits of the scale.
 
-## Configure tick mark cosmetics
+## Configure Tick Mark Cosmetics
 
 Use the following attributes to configure the major and minor tick marks:
 
@@ -331,7 +333,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/em5cg/) to edit the above gauge.
 
-## Apply hover effects
+## Apply Hover Effects
 
 Use the following attributes to configure hover/touch effects for the cylinder gauge and boost visualization:
 
@@ -356,11 +358,11 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/cSkE3/) to edit the above gauge.
 
-## Build a real-time cylinder gauge
+## Build a Realtime Cylinder Gauge
 
 You can build real-time cylinder gauges that continuously request and render new data without involving a page refresh, by using JavaScript API, or server-side scripts. 
 
-## Real time data format
+## Realtime Data Format
 
 When you invoke the data provider page on the server end, it outputs the new data in the real time data format. The real time data format depends on:
 
@@ -411,7 +413,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/77kv6s1h/) to edit the above gauge.
 
-## Configure real time updates using server-side script
+## Configure Realtime Updates Using Server-side Script
 
 Use the following parameters to configure real time updates using server-side scripts:
 
@@ -439,7 +441,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/wcb7b8g3/) to edit the above gauge.
 
-## Stop/restart updates
+## Stop/Restart Updates
 
 Use the following JavaScript API methods to stop and restart real time updates to an cylinder gauge:
 
@@ -495,11 +497,11 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/389fyhdg/) to edit the above gauge.
 
-## Configure real time events
+## Configure Realtime Events
 
 FusionCharts Suite XT introduces two events, `realTimeUpdateComplete` and `realTimeUpdateError`, to track real time updates on gauges. 
 
-### Use the `realTimeUpdateComplete` event
+### Use the `realTimeUpdateComplete` Event
 
 The `realTimeUpdateComplete` event is raised whenever the real time cylinder gauge updates itself with new data, or more specifically, in the following cases:
 
@@ -562,7 +564,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/beo34buz/) to edit the above gauge.
 
-### Use the `realTimeUpdateError` event
+### Use the `realTimeUpdateError` Event
 
 The `realTimeUpdateError` event is raised when an error occurs while performing real time update using `datastreamURL`. The event arguments provided in the advanced model are as follows:
 
@@ -609,6 +611,6 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/9d8e05pb/) to edit the above gauge.
 
-## Troubleshoot real time gauges
+## Troubleshoot Realtime Gauges
 
 While accessing any of the JavaScript methods listed above, if you get an error like `"... is not a function of ..."`, make sure that you are NOT running the chart from the local file system (C:\ , D:\). Instead, run the chart from behind a server (localhost - IIS, Apache, etc.). This is because the default security settings do not allow the chart to perform JavaScript interaction on the local file system, unless otherwise specifically set.

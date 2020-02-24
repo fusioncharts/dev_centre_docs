@@ -16,8 +16,9 @@
             "mdIconRadius": "5",
             "mdIconSides": "5",
             //"mdIconShape": "triangle"
-            "mdIconColor": "ff0000",
-            "mdIconAlpha": "70"
+            "mdIconColor": "#fff00f",
+            "mdIconAlpha": "70",
+            "mdIconBorderColor": "#ff0000"
         },
         "categories": [{
             "category": [{

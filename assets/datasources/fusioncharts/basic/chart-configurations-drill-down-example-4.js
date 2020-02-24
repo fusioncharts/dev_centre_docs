@@ -19,15 +19,17 @@
         "data": [{
             "label": "Apple",
             "value": "810000",
-            "link": "F-drill-http://fusioncharts.com"
-        }, {
+            "link": "F-drill-https://en.wikipedia.org/wiki/Apple"
+        },
+        {
             "label": "Cranberry",
             "value": "620000",
-            "link": "F-drill-http://www.fusioncharts.com/explore/charts/"
-        }, {
+            "link": "F-drill-https://en.wikipedia.org/wiki/Cranberry"
+        },
+        {
             "label": "Grapes",
             "value": "350000",
-            "link": "F-drill-http://blog.fusioncharts.com/"
+            "link": "F-drill-https://en.wikipedia.org/wiki/Grape"
         }]
     }
 }

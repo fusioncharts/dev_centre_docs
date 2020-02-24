@@ -54,6 +54,7 @@ The sample code to export PDF files in print format is given below:
     <li><a data-toggle="php">PHP</a></li>
     <li><a data-toggle="nodejs">Node.js</a></li>
     <li><a data-toggle="python">Python</a></li>
+
 </ul>
 
 <div class="tab-content">
@@ -67,12 +68,12 @@ using FusionCharts.FusionExport.Client; // Import sdk
 
 namespace FusionExportTest
 {
-    public static class ExportSingleChart
-    {
-        static void Main(string[] args)
-        {
-            string chartConfigFile = System.Environment.CurrentDirectory + "\\resources\\dashboard_charts.json";
-            string templateFilePath = System.Environment.CurrentDirectory + "\\resources\\template.html";
+public static class ExportSingleChart
+{
+static void Main(string[] args)
+{
+string chartConfigFile = System.Environment.CurrentDirectory + "\\resources\\dashboard_charts.json";
+string templateFilePath = System.Environment.CurrentDirectory + "\\resources\\template.html";
 
             // Instantiate the ExportManager class
             using (ExportManager exportManager = new ExportManager())
@@ -91,8 +92,10 @@ namespace FusionExportTest
             }
         }
     }
+
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab java-tab">
@@ -100,30 +103,31 @@ namespace FusionExportTest
 import com.fusioncharts.fusionexport.client.*; // import sdk
 
 public class ExportChart {
-    public static void main(String[] args) throws Exception {
+public static void main(String[] args) throws Exception {
 
-    
         String configPath = "fullpath/resources/static2/resources/multiple.json";
         String templatePath ="fullpath/resources/static2/resources/template.html";
 
         // Instantiate the ExportManager class
         ExportManager em = new ExportManager();
-        
+
         // Instantiate the ExportConfig class and add the required configurations
         ExportConfig config = new ExportConfig();
         config.set("chartConfig", configPath);
         config.set("templateFilePath", templatePath);
         config.set("type", "pdf");
         config.set("templateFormat", "letter");
-        
+
         String[] files = em.export(config,".",true);
-        
+
         for(String f : files) {
             System.out.println(f);
         }
     }
+
 }
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab php-tab">
@@ -132,18 +136,17 @@ public class ExportChart {
 
 // Exporting a dashboard
 
-require __DIR__ . '/../vendor/autoload.php';
+require **DIR** . '/../vendor/autoload.php';
 // Use the sdk
 use FusionExport\ExportManager;
 use FusionExport\ExportConfig;
 
 // Instantiate the ExportConfig class and add the required configurations
 $exportConfig = new ExportConfig();
-$exportConfig->set('chartConfig', realpath(__DIR__ . '/resources/multiple.json'));
+$exportConfig->set('chartConfig', realpath(**DIR** . '/resources/multiple.json'));
 $exportConfig->set('templateFilePath', realpath(__DIR__ . '/resources/template.html'));
 $exportConfig->set('type', 'pdf');
-$exportConfig->set('templateFormat', 'letter');
-
+\$exportConfig->set('templateFormat', 'letter');
 
 // Instantiate the ExportManager class
 $exportManager = new ExportManager();
@@ -151,10 +154,11 @@ $exportManager = new ExportManager();
 $files = $exportManager->export($exportConfig, '.', true);
 
 foreach ($files as $file) {
-    echo $file . "\n";
+echo \$file . "\n";
 }
 ?>
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 <div class="tab nodejs-tab">
@@ -184,29 +188,33 @@ exportManager.export(exportConfig, '.', true).then((exportedFiles) => {
 <pre><code class="language-python">
 #!/usr/bin/env python
 
-from fusionexport import ExportManager, ExportConfig  # Import sdk
+from fusionexport import ExportManager, ExportConfig # Import sdk
 
 # Instantiate the ExportConfig class and add the required configurations
+
 export_config = ExportConfig()
 
 export_config["chartConfig"] = "dashboard_charts.json"
 
 export_config["templateFilePath"] = "template.html"
 export_config["type"] = "pdf"
-export_config["templateWidth"] = 1200
-export_config["templateHeight"] = 1800
-
+export_config["templateFormat"] = "letter"
 
 # Provide port and host of FusionExport Service
+
 export_server_host = "127.0.0.1"
 export_server_port = 1337
 
 # Instantiate the ExportManager class
+
 em = ExportManager(export_server_host, export_server_port)
+
 # Call the export() method with the export config and the output location
+
 exported_files = em.export(export_config, "./exports", True)
 #print(exported_files)
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
 </pre>
 </div>
 </div>
@@ -221,104 +229,105 @@ In the above code:
 
 The JSON data of the above chart is shown below:
 
-```json
+```javascript
 [
   {
-    "type": "mscolumn2d",
-    "renderAt": "chart-container-1",
-    "width": "100%",
-    "height": "100%",
-    "dataFormat": "json",
-    "dataSource": {
-      "chart": {
-        "caption": "App Publishing Trend",
-        "subcaption": "2012-2016",
-        "xaxisname": "Years",
-        "yaxisname": "Total number of apps in store",
-        "formatnumberscale": "1",
-        "plottooltext": "<b>$dataValue</b> apps were available on <b>$seriesName</b> in $label",
-        "theme": "fusion",
-        "drawcrossline": "1"
+    type: "mscolumn2d",
+    renderAt: "chart-container-1",
+    width: "100%",
+    height: "100%",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "App Publishing Trend",
+        subcaption: "2012-2016",
+        xaxisname: "Years",
+        yaxisname: "Total number of apps in store",
+        formatnumberscale: "1",
+        plottooltext:
+          "<b>$dataValue</b> apps were available on <b>$seriesName</b> in $label",
+        theme: "fusion",
+        drawcrossline: "1"
       },
-      "categories": [
+      categories: [
         {
-          "category": [
+          category: [
             {
-              "label": "2012"
+              label: "2012"
             },
             {
-              "label": "2013"
+              label: "2013"
             },
             {
-              "label": "2014"
+              label: "2014"
             },
             {
-              "label": "2015"
+              label: "2015"
             },
             {
-              "label": "2016"
+              label: "2016"
             }
           ]
         }
       ],
-      "dataset": [
+      dataset: [
         {
-          "seriesname": "iOS App Store",
-          "data": [
+          seriesname: "iOS App Store",
+          data: [
             {
-              "value": "125000"
+              value: "125000"
             },
             {
-              "value": "300000"
+              value: "300000"
             },
             {
-              "value": "480000"
+              value: "480000"
             },
             {
-              "value": "800000"
+              value: "800000"
             },
             {
-              "value": "1100000"
+              value: "1100000"
             }
           ]
         },
         {
-          "seriesname": "Google Play Store",
-          "data": [
+          seriesname: "Google Play Store",
+          data: [
             {
-              "value": "70000"
+              value: "70000"
             },
             {
-              "value": "150000"
+              value: "150000"
             },
             {
-              "value": "350000"
+              value: "350000"
             },
             {
-              "value": "600000"
+              value: "600000"
             },
             {
-              "value": "1400000"
+              value: "1400000"
             }
           ]
         },
         {
-          "seriesname": "Amazon AppStore",
-          "data": [
+          seriesname: "Amazon AppStore",
+          data: [
             {
-              "value": "10000"
+              value: "10000"
             },
             {
-              "value": "100000"
+              value: "100000"
             },
             {
-              "value": "300000"
+              value: "300000"
             },
             {
-              "value": "600000"
+              value: "600000"
             },
             {
-              "value": "900000"
+              value: "900000"
             }
           ]
         }
@@ -326,121 +335,121 @@ The JSON data of the above chart is shown below:
     }
   },
   {
-    "type": "msline",
-    "renderAt": "chart-container-2",
-    "width": "100%",
-    "height": "100%",
-    "dataFormat": "json",
-    "dataSource": {
-      "chart": {
-        "caption": "Reach of Social Media Platforms amoung youth",
-        "yaxisname": "% of youth on this platform",
-        "subcaption": "2012-2016",
-        "showhovereffect": "1",
-        "numbersuffix": "%",
-        "drawcrossline": "1",
-        "plottooltext": "<b>$dataValue</b> of youth were on $seriesName",
-        "theme": "fusion"
+    type: "msline",
+    renderAt: "chart-container-2",
+    width: "100%",
+    height: "100%",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Reach of Social Media Platforms amoung youth",
+        yaxisname: "% of youth on this platform",
+        subcaption: "2012-2016",
+        showhovereffect: "1",
+        numbersuffix: "%",
+        drawcrossline: "1",
+        plottooltext: "<b>$dataValue</b> of youth were on $seriesName",
+        theme: "fusion"
       },
-      "categories": [
+      categories: [
         {
-          "category": [
+          category: [
             {
-              "label": "2012"
+              label: "2012"
             },
             {
-              "label": "2013"
+              label: "2013"
             },
             {
-              "label": "2014"
+              label: "2014"
             },
             {
-              "label": "2015"
+              label: "2015"
             },
             {
-              "label": "2016"
+              label: "2016"
             }
           ]
         }
       ],
-      "dataset": [
+      dataset: [
         {
-          "seriesname": "Facebook",
-          "data": [
+          seriesname: "Facebook",
+          data: [
             {
-              "value": "62"
+              value: "62"
             },
             {
-              "value": "64"
+              value: "64"
             },
             {
-              "value": "64"
+              value: "64"
             },
             {
-              "value": "66"
+              value: "66"
             },
             {
-              "value": "78"
+              value: "78"
             }
           ]
         },
         {
-          "seriesname": "Instagram",
-          "data": [
+          seriesname: "Instagram",
+          data: [
             {
-              "value": "16"
+              value: "16"
             },
             {
-              "value": "28"
+              value: "28"
             },
             {
-              "value": "34"
+              value: "34"
             },
             {
-              "value": "42"
+              value: "42"
             },
             {
-              "value": "54"
+              value: "54"
             }
           ]
         },
         {
-          "seriesname": "LinkedIn",
-          "data": [
+          seriesname: "LinkedIn",
+          data: [
             {
-              "value": "20"
+              value: "20"
             },
             {
-              "value": "22"
+              value: "22"
             },
             {
-              "value": "27"
+              value: "27"
             },
             {
-              "value": "22"
+              value: "22"
             },
             {
-              "value": "29"
+              value: "29"
             }
           ]
         },
         {
-          "seriesname": "Twitter",
-          "data": [
+          seriesname: "Twitter",
+          data: [
             {
-              "value": "18"
+              value: "18"
             },
             {
-              "value": "19"
+              value: "19"
             },
             {
-              "value": "21"
+              value: "21"
             },
             {
-              "value": "21"
+              value: "21"
             },
             {
-              "value": "24"
+              value: "24"
             }
           ]
         }
@@ -448,158 +457,159 @@ The JSON data of the above chart is shown below:
     }
   },
   {
-    "type": "stackedcolumn2d",
-    "renderAt": "chart-container-3",
-    "width": "100%",
-    "height": "100%",
-    "dataFormat": "json",
-    "dataSource": {
-      "chart": {
-        "caption": "Yearly Energy Production Rate",
-        "subcaption": " Top 5 Developed Countries",
-        "numbersuffix": " TWh",
-        "showsum": "1",
-        "plottooltext": "$label produces <b>$dataValue</b> of energy from $seriesName",
-        "theme": "fusion",
-        "drawcrossline": "1"
+    type: "stackedcolumn2d",
+    renderAt: "chart-container-3",
+    width: "100%",
+    height: "100%",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Yearly Energy Production Rate",
+        subcaption: " Top 5 Developed Countries",
+        numbersuffix: " TWh",
+        showsum: "1",
+        plottooltext:
+          "$label produces <b>$dataValue</b> of energy from $seriesName",
+        theme: "fusion",
+        drawcrossline: "1"
       },
-      "categories": [
+      categories: [
         {
-          "category": [
+          category: [
             {
-              "label": "Canada"
+              label: "Canada"
             },
             {
-              "label": "China"
+              label: "China"
             },
             {
-              "label": "Russia"
+              label: "Russia"
             },
             {
-              "label": "Australia"
+              label: "Australia"
             },
             {
-              "label": "United States"
+              label: "United States"
             },
             {
-              "label": "France"
+              label: "France"
             }
           ]
         }
       ],
-      "dataset": [
+      dataset: [
         {
-          "seriesname": "Coal",
-          "data": [
+          seriesname: "Coal",
+          data: [
             {
-              "value": "400"
+              value: "400"
             },
             {
-              "value": "830"
+              value: "830"
             },
             {
-              "value": "500"
+              value: "500"
             },
             {
-              "value": "420"
+              value: "420"
             },
             {
-              "value": "790"
+              value: "790"
             },
             {
-              "value": "380"
+              value: "380"
             }
           ]
         },
         {
-          "seriesname": "Hydro",
-          "data": [
+          seriesname: "Hydro",
+          data: [
             {
-              "value": "350"
+              value: "350"
             },
             {
-              "value": "620"
+              value: "620"
             },
             {
-              "value": "410"
+              value: "410"
             },
             {
-              "value": "370"
+              value: "370"
             },
             {
-              "value": "720"
+              value: "720"
             },
             {
-              "value": "310"
+              value: "310"
             }
           ]
         },
         {
-          "seriesname": "Nuclear",
-          "data": [
+          seriesname: "Nuclear",
+          data: [
             {
-              "value": "210"
+              value: "210"
             },
             {
-              "value": "400"
+              value: "400"
             },
             {
-              "value": "450"
+              value: "450"
             },
             {
-              "value": "180"
+              value: "180"
             },
             {
-              "value": "570"
+              value: "570"
             },
             {
-              "value": "270"
+              value: "270"
             }
           ]
         },
         {
-          "seriesname": "Gas",
-          "data": [
+          seriesname: "Gas",
+          data: [
             {
-              "value": "180"
+              value: "180"
             },
             {
-              "value": "330"
+              value: "330"
             },
             {
-              "value": "230"
+              value: "230"
             },
             {
-              "value": "160"
+              value: "160"
             },
             {
-              "value": "440"
+              value: "440"
             },
             {
-              "value": "350"
+              value: "350"
             }
           ]
         },
         {
-          "seriesname": "Oil",
-          "data": [
+          seriesname: "Oil",
+          data: [
             {
-              "value": "60"
+              value: "60"
             },
             {
-              "value": "200"
+              value: "200"
             },
             {
-              "value": "200"
+              value: "200"
             },
             {
-              "value": "50"
+              value: "50"
             },
             {
-              "value": "230"
+              value: "230"
             },
             {
-              "value": "150"
+              value: "150"
             }
           ]
         }
@@ -607,127 +617,127 @@ The JSON data of the above chart is shown below:
     }
   },
   {
-    "type": "stackedcolumn2dline",
-    "renderAt": "chart-container-4",
-    "width": "100%",
-    "height": "100%",
-    "dataFormat": "json",
-    "dataSource": {
-      "chart": {
-        "showvalues": "0",
-        "caption": "Apple's Revenue & Profit",
-        "subcaption": "(2013-2016)",
-        "numberprefix": "$",
-        "numbersuffix": "B",
-        "plottooltext": "Sales of $seriesName in $label was <b>$dataValue</b>",
-        "showhovereffect": "1",
-        "yaxisname": "$ (In billions)",
-        "showsum": "1",
-        "theme": "fusion"
+    type: "stackedcolumn2dline",
+    renderAt: "chart-container-4",
+    width: "100%",
+    height: "100%",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        showvalues: "0",
+        caption: "Apple's Revenue & Profit",
+        subcaption: "(2013-2016)",
+        numberprefix: "$",
+        numbersuffix: "B",
+        plottooltext: "Sales of $seriesName in $label was <b>$dataValue</b>",
+        showhovereffect: "1",
+        yaxisname: "$ (In billions)",
+        showsum: "1",
+        theme: "fusion"
       },
-      "categories": [
+      categories: [
         {
-          "category": [
+          category: [
             {
-              "label": "2013"
+              label: "2013"
             },
             {
-              "label": "2014"
+              label: "2014"
             },
             {
-              "label": "2015"
+              label: "2015"
             },
             {
-              "label": "2016"
+              label: "2016"
             }
           ]
         }
       ],
-      "dataset": [
+      dataset: [
         {
-          "seriesname": "iPhone",
-          "data": [
+          seriesname: "iPhone",
+          data: [
             {
-              "value": "21"
+              value: "21"
             },
             {
-              "value": "24"
+              value: "24"
             },
             {
-              "value": "27"
+              value: "27"
             },
             {
-              "value": "30"
+              value: "30"
             }
           ]
         },
         {
-          "seriesname": "iPad",
-          "data": [
+          seriesname: "iPad",
+          data: [
             {
-              "value": "8"
+              value: "8"
             },
             {
-              "value": "10"
+              value: "10"
             },
             {
-              "value": "11"
+              value: "11"
             },
             {
-              "value": "12"
+              value: "12"
             }
           ]
         },
         {
-          "seriesname": "Macbooks",
-          "data": [
+          seriesname: "Macbooks",
+          data: [
             {
-              "value": "2"
+              value: "2"
             },
             {
-              "value": "4"
+              value: "4"
             },
             {
-              "value": "5"
+              value: "5"
             },
             {
-              "value": "5.5"
+              value: "5.5"
             }
           ]
         },
         {
-          "seriesname": "Others",
-          "data": [
+          seriesname: "Others",
+          data: [
             {
-              "value": "2"
+              value: "2"
             },
             {
-              "value": "4"
+              value: "4"
             },
             {
-              "value": "9"
+              value: "9"
             },
             {
-              "value": "11"
+              value: "11"
             }
           ]
         },
         {
-          "seriesname": "Profit",
-          "plottooltext": "Total profit in $label was <b>$dataValue</b>",
-          "renderas": "Line",
-          "data": [
+          seriesname: "Profit",
+          plottooltext: "Total profit in $label was <b>$dataValue</b>",
+          renderas: "Line",
+          data: [
             {
-              "value": "17"
+              value: "17"
             },
             {
-              "value": "19"
+              value: "19"
             },
             {
-              "value": "13"
+              value: "13"
             },
             {
-              "value": "18"
+              value: "18"
             }
           ]
         }
@@ -735,47 +745,47 @@ The JSON data of the above chart is shown below:
     }
   },
   {
-    "type": "doughnut3d",
-    "renderAt": "chart-container-5",
-    "width": "100%",
-    "height": "100%",
-    "dataFormat": "json",
-    "dataSource": {
-      "chart": {
-        "caption": "Top 5 countries with Global Oil Reserves",
-        "subcaption": "MMbbl= One Million barrels",
-        "enablesmartlabels": "1",
-        "showlabels": "1",
-        "numbersuffix": " MMbbl",
-        "usedataplotcolorforlabels": "1",
-        "plottooltext": "$label, <b>$value</b> MMbbl",
-        "theme": "fusion"
+    type: "doughnut3d",
+    renderAt: "chart-container-5",
+    width: "100%",
+    height: "100%",
+    dataFormat: "json",
+    dataSource: {
+      chart: {
+        caption: "Top 5 countries with Global Oil Reserves",
+        subcaption: "MMbbl= One Million barrels",
+        enablesmartlabels: "1",
+        showlabels: "1",
+        numbersuffix: " MMbbl",
+        usedataplotcolorforlabels: "1",
+        plottooltext: "$label, <b>$value</b> MMbbl",
+        theme: "fusion"
       },
-      "data": [
+      data: [
         {
-          "label": "Venezuela",
-          "value": "290"
+          label: "Venezuela",
+          value: "290"
         },
         {
-          "label": "Saudi",
-          "value": "260"
+          label: "Saudi",
+          value: "260"
         },
         {
-          "label": "Canada",
-          "value": "180"
+          label: "Canada",
+          value: "180"
         },
         {
-          "label": "Iran",
-          "value": "140"
+          label: "Iran",
+          value: "140"
         },
         {
-          "label": "Russia",
-          "value": "115"
+          label: "Russia",
+          value: "115"
         }
       ]
     }
   }
-]
+];
 ```
 
 The HTML template for the above code is given below:
@@ -898,14 +908,15 @@ The HTML template for the above code is given below:
   </body>
 </html>
 ```
+
 <div class="btn-holder mt-1"><a href="https://cdn.fusioncharts.com/resources/downloads/dev-centre/fusionexport-output.pdf" class="btn btn-secondary-grad text-uppercase mr-1"> Download Exported PDF</a><a href="https://github.com/fusioncharts/fusionexport-tutorials/tree/master/dimensions" class="btn btn-outline-secondary text-uppercase"> Download Source Code</a></div>
 
 ## Related Resources
 
 After you have exported the chart in PDF, we recommend learning how to:
 
-* [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+- [Change the Export Quality](/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
 
-* [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
+- [Customize the Width and Height of an Exported Chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
+- [Override a Chart Config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)

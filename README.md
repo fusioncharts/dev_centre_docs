@@ -1,4 +1,6 @@
-Welcome to the Dev Centre Docs! To contribute, please refer to following links to get started
+# Welcome to the Dev Centre Docs!
+
+> To contribute, please refer to following links to get started
 
 -  [Gitflow](https://github.com/fusioncharts/dev_centre_docs/wiki/Gitflow)
 -  [Markdown Guidelines](https://github.com/fusioncharts/dev_centre_docs/wiki/Markdown-Guidelines)

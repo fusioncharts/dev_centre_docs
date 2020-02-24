@@ -9,19 +9,19 @@
         "name": "dateFormat"
       },
       {
-        "description": "You can also specify how the dates look on your Gantt chart using this attribute. This attribute takes the output date format as string. You can build your own output date format string as explained in the section &quot;Configuring date formats&quot;.",
+        "description": "You can also specify how the dates look on your Gantt chart using this attribute. This attribute takes the output date format as string. You can build your own output date format string as explained in the section \"Configuring date formats\".",
         "range": "",
         "type": "String",
         "name": "outputDateFormat"
       },
       {
-        "description": "If you want your Gantt pane to scroll through a specified time line, you can use this attribute to set what timeline the pane will represent. For example, if you want your Gantt pane to show date only for 3 months and then scroll the rest, you can set this attribute as 3. More of this has been explained in the section &quot;Enable scrolling&quot;.",
+        "description": "If you want your Gantt pane to scroll through a specified time line, you can use this attribute to set what timeline the pane will represent. For example, if you want your Gantt pane to show date only for 3 months and then scroll the rest, you can set this attribute as 3. More of this has been explained in the section \"Enable scrolling\".",
         "range": "",
         "type": "Number",
         "name": "ganttPaneDuration"
       },
       {
-        "description": "If you've opted to scroll the Gantt pane, this attribute lets you choose the unit of your specified duration. More of this has been explained in the section &quot;Enable scrolling&quot;.",
+        "description": "If you've opted to scroll the Gantt pane, this attribute lets you choose the unit of your specified duration. More of this has been explained in the section \"Enable scrolling\".",
         "range": "'y','m','d','h','mn' or 's'",
         "type": "String",
         "name": "ganttPaneDurationUnit"
@@ -125,7 +125,7 @@
         "name": "extendCategoryBg"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -137,7 +137,7 @@
         "name": "scrollToDate"
       },
       {
-        "description": "Whether to display the vertical scroll bar or not. By default, the attribute is set to 1 and the vertical scroll bar appears depending on the height of the chart. More of this has been explained in the section &quot;Enable scrolling&quot;. This feature is supported by JavaScript Gantt chart only.",
+        "description": "Whether to display the vertical scroll bar or not. By default, the attribute is set to 1 and the vertical scroll bar appears depending on the height of the chart. More of this has been explained in the section \"Enable scrolling\". This feature is supported by JavaScript Gantt chart only.",
         "range": "0/1",
         "type": "Boolean",
         "name": "useVerticalScrolling"
@@ -3103,7 +3103,7 @@
         "name": "dashGap"
       },
       {
-        "description": "If you want to display your custom value beneath the trend line, you can do so here. Example, you can show the trend line and label it as &quot;Today&quot;.",
+        "description": "If you want to display your custom value beneath the trend line, you can do so here. Example, you can show the trend line and label it as \"Today\".",
         "range": "",
         "type": "String",
         "name": "displayValue"

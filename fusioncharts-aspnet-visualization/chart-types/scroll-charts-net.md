@@ -45,22 +45,19 @@ Click [here](https://dotnetfiddle.net/TeDjsE) to edit the scroll column chart.
 
 Create the `ScrollColumnChart.aspx.cs` file and do the following:
 
-* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` .dll files.
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
-* Retrieve data using database query.
-* Set `serverName`.
-* Set `DataBase` name.
-* Connect with `DataBase` using a `connectionstring`.
-* Create `StaticSource` using the `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
-* Add `DataSource` to the `DataModel`.
+* Add `StaticSource` as data source to the `DataModel`.
 * Instantiate `column` chart.
-* Set chart width.
-* Set chart height.
+* Set chart `width` and `height`.
 * Set the `Scrollable` property of the chart to `true`.
 * Set `DataModel` instance as the data source of the chart.
-* Set chart title.
-* Finally, use a container using `<div>` to render the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
 
@@ -149,22 +146,19 @@ Click [here](https://dotnetfiddle.net/Irr2ht) to edit the scroll line chart.
 
 Create the `ScrollLineChart.aspx.cs` file and do the following:
 
-* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` .dll files.
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
 * Create `DataTable`.
-* Retrieve data using database query.
-* Set `serverName`.
-* Set `DataBase` name.
-* Connect with `DataBase` using a `connectionstring`.
-* Create `StaticSource` using the `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
 * Create an instance of `DataModel` class.
-* Add `DataSource` to the `DataModel`.
-* Instantiate `column` chart.
-* Set chart width.
-* Set chart height.
+* Add `StaticSource` as data source to the `DataModel`.
+* Instantiate `line` chart.
+* Set chart `width` and `height`.
 * Set the `Scrollable` property of the chart to `true`.
 * Set `DataModel` instance as the data source of the chart.
-* Set chart title.
-* Finally, use a container using `<div>` to render the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
 
 The code is shown below:
 
@@ -243,9 +237,27 @@ The `.aspx` template for the above sample is shown below:
 
 ## Scroll Area Chart
 
-Now, let's learn how to create a Scrollable Area Chart. The code remains the same as that of the scroll line chart. The only difference is instead of instantiating a linne chart you have to instantiate an area chart. Create a `ScrollAreaChart.aspx.cs` and refer to the code below:
+Now, let's learn how to create a Scrollable Area Chart. The code remains the same as that of the scroll line chart. The only difference is instead of instantiating a line chart you have to instantiate an area chart. 
 
 ## Render the Chart
+
+Create a `ScrollAreaChart.aspx.cs` and do the following:
+
+* Include the `FusionCharts.DataEngine` and `FusionCharts.Visualization` **.dll** files. 
+* Create `DataTable`.
+* Add two columns and multiple rows to the `DataTable`.
+* Create a `StaticSource` using the `DataTable`.
+* Create an instance of `DataModel` class.
+* Add `StaticSource` as data source to the `DataModel`.
+* Instantiate `area` chart.
+* Set chart `width` and `height`.
+* Set the `Scrollable` property of the chart to `true`.
+* Set `DataModel` instance as the data source of the chart.
+* Optionally, set chart title, subtitle, X-axis text, and Y-axis text.
+* Optionally, set the chart theme as `fusion`.
+* Return the chart rendering configuration into the server side literal, or set the chart configuration as `Literal.text`.
+
+The code is shown below:
 
 ```csharp
 using FusionCharts.DataEngine;

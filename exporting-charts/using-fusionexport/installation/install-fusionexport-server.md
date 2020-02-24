@@ -16,18 +16,46 @@ Download FusionExport from [here](https://fusioncharts.com/download/fusionexport
 
 ## Usage
 
-### Mac OS X and Linux
+### MacOS
 
-In **MacOS** or **Linus** based distribution, open the terminal and run the following commands:
+In macOS X, open a terminal and run the following commands:
 
-```Bash
+```shell
 $ chmod +x ./fusionexport
 $ ./fusionexport
 ```
 
-By default, the FusionExport Server starts on **localhost**, and listens to port **1337**.
+By default, the FusionExport Server starts on `localhost`, and listens to port `1337`.
 
-> FusionExport will run mostly on all the Linux distributions. In case you are unable to run it, use our docker image or reach out to our [engineering team](mailto:fusionexport@fusioncharts.com) or [support team](mailto:support@fusioncharts.com) and we will help you with the integration.
+### Linux
+
+Similar to macOS in case of Linux-based distribution, open a terminal and run the following commands:
+
+```shell
+$ chmod +x ./fusionexport
+$ ./fusionexport
+```
+
+By default, the FusionExport Server starts on `localhost`, and listens to port `1337`.
+
+However, if you are running it on Linux servers then you may face few issues before the FusionExport server starts. In such cases run following commands in case as per your package manager:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='deb'>DEB</a></li>
+    <li><a data-toggle='rpm'>RPM</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab deb-tab active'>
+<pre><code class="language-bash">sudo apt-get install gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget</code></pre>
+</div>
+
+<div class='tab rpm-tab'>
+<pre><code class="language-bash">$ yum -y install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11-utils xorg-x11-fonts-cyrillic xorg-x11-fonts-Type1 xorg-x11-fonts-misc</code></pre>
+</div>
+
+</div>
+</div>
 
 ### Windows
 

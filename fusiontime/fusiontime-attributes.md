@@ -1,5 +1,5 @@
 ---
-title: FusionTime Attributes | FusionChartsgit 
+title: FusionTime Attributes | FusionChartsgit
 description: This article contains the list of fusion time attributes.
 heading: Attributes
 ---
@@ -202,21 +202,21 @@ To specify the date-time format for a specific time unit, create a `outputTimeFo
 
 ```javascript
 new FusionCharts({
-    type: 'timeseries',
-    dataSource: {
-		xAxis:{
-			outputTimeFormat:{
-				year: " ", //%Y - 2018
-				month: " ", //%B, %Y - September, 2018
-				day: " ", //%B %-d, %Y - November 11, 2018
-				hour: " ", //%b %-d, %Y, %-I %p - Nov 5, 2018, 4 PM
-				minute: " ", //%b %-d, %Y, %-I:%-M %p - Nov 5, 2018, 4:24 PM
-				second: " ", //%b %-d, %Y, %-I:%-M:%-S %p - Nov 5, 2018, 4:25:30 PM
-				millisecond: " " //%b %-d, %Y, %-I:%-M:%-S:%-L %p- Nov 29, 2017, 4:29:12.075 PM
-			}
-		}
-	}
-})
+  type: "timeseries",
+  dataSource: {
+    xAxis: {
+      outputTimeFormat: {
+        year: " ", //%Y - 2018
+        month: " ", //%B, %Y - September, 2018
+        day: " ", //%B %-d, %Y - November 11, 2018
+        hour: " ", //%b %-d, %Y, %-I %p - Nov 5, 2018, 4 PM
+        minute: " ", //%b %-d, %Y, %-I:%-M %p - Nov 5, 2018, 4:24 PM
+        second: " ", //%b %-d, %Y, %-I:%-M:%-S %p - Nov 5, 2018, 4:25:30 PM
+        millisecond: " " //%b %-d, %Y, %-I:%-M:%-S:%-L %p- Nov 29, 2017, 4:29:12.075 PM
+      }
+    }
+  }
+});
 ```
 
 <table>
@@ -268,16 +268,16 @@ To set the initial spread of the active window of the time navigator create a `i
 
 ```javascript
 new FusionCharts({
-    "type": 'timeseries',
-    "dataSource": {
-		"xAxis":{
-			"initialInterval": {
-				"from": "2016-01-01 12:00:00",
-				"to": "2016-01-31 12:00:00"
-        	}
-		}
-	}
-})
+  type: "timeseries",
+  dataSource: {
+    xAxis: {
+      initialInterval: {
+        from: "2016-01-01 12:00:00",
+        to: "2016-01-31 12:00:00"
+      }
+    }
+  }
+});
 ```
 
 <table>
@@ -462,16 +462,17 @@ To configure the time navigator of the chart, you can create the `navigator` obj
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        navigator: {
-            "enabled": Boolean,
-            "scrollbar": { },
-			"window": { },
-			"label": { }, //SVGStyle | String
-			"label-background": { } //SVGStyle | String
-        }
+  type: "timeseries",
+  dataSource: {
+    navigator: {
+      enabled: Boolean,
+      scrollbar: {},
+      window: {},
+      label: {}, //SVGStyle | String
+      "label-background": {}, //SVGStyle | String
+      height: Number
     }
+  }
 });
 ```
 
@@ -504,6 +505,11 @@ new FusionCharts({
 		<td>`label-background`</td>
 		<td>String</td>
 		<td>Styles the label background of the windoe in time navigator.</td>
+	</tr>
+	<tr>
+		<td>`height`</td>
+		<td>Number</td>
+		<td>An attribute to set the height of the time naviagator. You can also set the ratio with respect height of the canvas using `canvasHeightProportion` attribute where the fourth ratio will represent the height of the time navigator.</td>
 	</tr>
 </table>
 
@@ -608,6 +614,9 @@ new FusionCharts({
         title: " ", //Title of the axis
 		aggregation: " " //Aggregate Function
 		connectNullData: " " //Set the value to `true` to connect null data
+		showGridband: " ", //Set the value to `1` to show Grid Band
+		defaultFormat: " ", //Default Format of the number
+		round: " " //Round of the y-axis value
       }
     ]
   }
@@ -664,6 +673,21 @@ new FusionCharts({
 		<td>`connectNullData`</td>
 		<td>Boolean</td>
 		<td>Connects the null data for line and area plots.</td>
+	</tr>
+	<tr>
+		<td>`showGridband`</td>
+		<td>Boolean</td>
+		<td>Horizontal bands running along with the canvas.</td>
+	</tr>
+	<tr>
+		<td>`defaultFormat`</td>
+		<td>Boolean</td>
+		<td>Disable the default formatting of the y-axis values to display the raw data.</td>
+	</tr>
+	<tr>
+		<td>`round`</td>
+		<td>Boolean</td>
+		<td>Round off the y-axis values.</td>
 	</tr>
 </table>
 
@@ -915,18 +939,22 @@ To configure the reference zone of the chart, you can create the `referenceZone`
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        yAxis: [{
-            // Reference Zone
-            "referenceZone": [{
-                "label": " ", //Label of the reference zone
-                "valueMax": " ", //Max value of the reference zone
-                "valueMin": " " //Min value of the reference zone
-            }],
-        }]
-    }
-})
+  type: "timeseries",
+  dataSource: {
+    yAxis: [
+      {
+        // Reference Zone
+        referenceZone: [
+          {
+            label: " ", //Label of the reference zone
+            valueMax: " ", //Max value of the reference zone
+            valueMin: " " //Min value of the reference zone
+          }
+        ]
+      }
+    ]
+  }
+});
 ```
 
 <table>
@@ -958,32 +986,36 @@ Reference zone of a time-series chart can be styled using `style` object under `
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        yAxis: [{
-            // Reference Zone
-            "referenceZone": [{
-                "label": " ", //Label of the reference zone
-                "valueMax": " ", //Max value of the reference zone
-                "valueMin": " ", //Min value of the reference zone
-                style: {
-                    "marker": { }, //Style | String
-                    "marker:hover": { }, //Style | String
-                    "marker-zone": { }, //Style | String
-                    "marker-zone:hover": { }, //Style | String
-                    "marker-tag": { }, //Style | String
-                    "text": { }, //Style | String
-                    "marker-text": { }, //Style | String
-                    "marker-notch": { }, //Style | String
-                    "marker-notch:hover": { }, //Style | String
-                    "marker-notch:hover": { }, //Style | String
-                    "marker-notch-connector": { }, //Style | String
-                    "marker-notch-connector:hover": { } //Style | String
-                }
-            }],
-        }]
-    }
-})
+  type: "timeseries",
+  dataSource: {
+    yAxis: [
+      {
+        // Reference Zone
+        referenceZone: [
+          {
+            label: " ", //Label of the reference zone
+            valueMax: " ", //Max value of the reference zone
+            valueMin: " ", //Min value of the reference zone
+            style: {
+              marker: {}, //Style | String
+              "marker:hover": {}, //Style | String
+              "marker-zone": {}, //Style | String
+              "marker-zone:hover": {}, //Style | String
+              "marker-tag": {}, //Style | String
+              text: {}, //Style | String
+              "marker-text": {}, //Style | String
+              "marker-notch": {}, //Style | String
+              "marker-notch:hover": {}, //Style | String
+              "marker-notch:hover": {}, //Style | String
+              "marker-notch-connector": {}, //Style | String
+              "marker-notch-connector:hover": {} //Style | String
+            }
+          }
+        ]
+      }
+    ]
+  }
+});
 ```
 
 ## Tooltip
@@ -992,13 +1024,13 @@ To configure the tooltip of the chart, you can create the `tooltip` object under
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        tooltip: {
-            enabled: "0", // Disables the Tooltip
-            outputTimeFormat: { } //date/time format
-        }
+  type: "timeseries",
+  dataSource: {
+    tooltip: {
+      enabled: "0", // Disables the Tooltip
+      outputTimeFormat: {} //date/time format
     }
+  }
 });
 ```
 
@@ -1068,27 +1100,27 @@ new FusionCharts({
 	</tr>
 </table>
 
-### Output Time Format
+## Output Time Format
 
 To specify the date-time format for a specific time unit, create a `outputTimeFormat` object under `xaxis` object.
 
 ```javascript
 new FusionCharts({
-    type: 'timeseries',
-    dataSource: {
-		xAxis:{
-			outputTimeFormat:{
-				year: " ", //%Y - 2018
-				month: " ", //%B, %Y - September, 2018
-				day: " ", //%B %-d, %Y - November 11, 2018
-				hour: " ", //%b %-d, %Y, %-I %p - Nov 5, 2018, 4 PM
-				minute: " ", //%b %-d, %Y, %-I:%-M %p - Nov 5, 2018, 4:24 PM
-				second: " ", //%b %-d, %Y, %-I:%-M:%-S %p - Nov 5, 2018, 4:25:30 PM
-				millisecond: " " //%b %-d, %Y, %-I:%-M:%-S:%-L %p- Nov 29, 2017, 4:29:12.075 PM
-			}
-		}
-	}
-})
+  type: "timeseries",
+  dataSource: {
+    xAxis: {
+      outputTimeFormat: {
+        year: " ", //%Y - 2018
+        month: " ", //%B, %Y - September, 2018
+        day: " ", //%B %-d, %Y - November 11, 2018
+        hour: " ", //%b %-d, %Y, %-I %p - Nov 5, 2018, 4 PM
+        minute: " ", //%b %-d, %Y, %-I:%-M %p - Nov 5, 2018, 4:24 PM
+        second: " ", //%b %-d, %Y, %-I:%-M:%-S %p - Nov 5, 2018, 4:25:30 PM
+        millisecond: " " //%b %-d, %Y, %-I:%-M:%-S:%-L %p- Nov 29, 2017, 4:29:12.075 PM
+      }
+    }
+  }
+});
 ```
 
 <table>
@@ -1134,6 +1166,45 @@ new FusionCharts({
 	</tr>
 </table>
 
+## Legend
+
+To configure the legend of the chart, you can create the `legend` object under the `dataSource`.
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    legend: {
+    	enabled: '1', //Enable / Disable legend
+		item: [{
+			value: 'Series A' // name of visible legend item
+			initiallyhidden: 1, // boolean attribute (default 0) to control the visibility of plot
+		}, {
+			value: 'Series B'
+			initiallyhidden: 0,
+		}]
+	}
+  }
+});
+```
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Type</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>`enabled`</td>
+		<td>Boolean</td>
+		<td>This attribute lets you show/hide the legend, when included under the `legend` object.</td>
+	</tr>
+	<tr>
+		<td>`initiallyhidden`</td>
+		<td>Object</td>
+		<td>This attribute lets you keep the legend hidden when the chart is initially rendered.</td>
+</table>
+
 ## Data Markers
 
 To configure the data marker of the chart, you can create the `dataMarker` object under the `dataSource`.
@@ -1144,8 +1215,8 @@ new FusionCharts({
   dataSource: {
     dataMarker: [
       {
-		time: " ", //Time on which the data marker will be shown
-		value: " ", //Specifies the y-axis label on which the data marker will be applied
+        time: " ", //Time on which the data marker will be shown
+        value: " ", //Specifies the y-axis label on which the data marker will be applied
         identifier: " ", //Defines a character to be shown
         timeFormat: " ", //Format of the date
         tooltext: " " //Text in the tooltip
@@ -1199,15 +1270,15 @@ To configure the standard range selector of the chart, you can create the `stand
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        "extensions": {
-            "standardRangeSelector": {
-				"enabled": "1" //Enable or diable the standard range selector
-            }
-        }
+  type: "timeseries",
+  dataSource: {
+    extensions: {
+      standardRangeSelector: {
+        enabled: "1" //Enable or diable the standard range selector
+      }
     }
-})
+  }
+});
 ```
 
 <table>
@@ -1229,23 +1300,23 @@ You can add style to the Standard Range Selector using `style` object under `sta
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        "extensions": {
-            "standardRangeSelector": {
-                "style": {
-                    "button-text": {}, //Object | String
-                    "button-background": {}, //Object | String
-                    "button-text:hover": {}, //Object | String
-                    "button-background:hover": {}, //Object | String
-                    "button-text:active": {}, //Object | String
-                    "button-background:active": {}, //Object | String
-                    "separator": {} //Object | String
-                }
-            }
+  type: "timeseries",
+  dataSource: {
+    extensions: {
+      standardRangeSelector: {
+        style: {
+          "button-text": {}, //Object | String
+          "button-background": {}, //Object | String
+          "button-text:hover": {}, //Object | String
+          "button-background:hover": {}, //Object | String
+          "button-text:active": {}, //Object | String
+          "button-background:active": {}, //Object | String
+          separator: {} //Object | String
         }
+      }
     }
-})
+  }
+});
 ```
 
 <table>
@@ -1292,15 +1363,15 @@ To configure the custom range selector of the chart, you can create the `customR
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        "extensions": {
-            "customRangeSelector": {
-				"enabled": "1" //Enable or diable the custom range selector
-            }
-        }
+  type: "timeseries",
+  dataSource: {
+    extensions: {
+      customRangeSelector: {
+        enabled: "1" //Enable or diable the custom range selector
+      }
     }
-})
+  }
+});
 ```
 
 <table>
@@ -1322,30 +1393,30 @@ You can add style to the Custom Range Selector using `style` object under `custo
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        "extensions": {
-            "customRangeSelector": {
-                "style": {
-                    "title-text": {}, //Object | String
-                    "title-icon": {}, //Object | String
-                    "title-text:hover": {}, //Object | String
-                    "title-icon:hover": {}, //Object | String
-                    "title-text:active": {}, //Object | String
-                    "title-icon:active": {}, //Object | String
-                    "container": {}, //Object | String
-                    "label": {}, //Object | String
-                    "button-apply": {}, //Object | String
-                    "button-cancel": {}, //Object | String
-                    "button-apply:hover": {}, //Object | String
-                    "button-cancel:hover": {}, //Object | String
-                    "select": {}, //Object | String
-                    "input": {} //Object | String 
-                }
-            }
+  type: "timeseries",
+  dataSource: {
+    extensions: {
+      customRangeSelector: {
+        style: {
+          "title-text": {}, //Object | String
+          "title-icon": {}, //Object | String
+          "title-text:hover": {}, //Object | String
+          "title-icon:hover": {}, //Object | String
+          "title-text:active": {}, //Object | String
+          "title-icon:active": {}, //Object | String
+          container: {}, //Object | String
+          label: {}, //Object | String
+          "button-apply": {}, //Object | String
+          "button-cancel": {}, //Object | String
+          "button-apply:hover": {}, //Object | String
+          "button-cancel:hover": {}, //Object | String
+          select: {}, //Object | String
+          input: {} //Object | String
         }
+      }
     }
-})
+  }
+});
 ```
 
 <table>
@@ -1432,15 +1503,15 @@ To apply the date from where you want to specify the predictive data for the cha
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        "extensions": {
-            "prediction": {
-                "date": " " //The Predictive Data starts from this date
-            }
-        }
+  type: "timeseries",
+  dataSource: {
+    extensions: {
+      prediction: {
+        date: " " //The Predictive Data starts from this date
+      }
     }
-})
+  }
+});
 ```
 
 <table>
@@ -1462,25 +1533,24 @@ You can add style to the predictive data in the chart using `style` object under
 
 ```javascript
 new FusionCharts({
-    type: "timeseries",
-    dataSource: {
-        "extensions": {
-            "prediction": {
-                "style": {
-                    "plot": { }, //SVGStyle | String
-                    "line": { }, //SVGStyle | String
-                    "area": { }, //SVGStyle | String
-                    "column": { }, //SVGStyle | String
-                    "anchor": { }, //SVGStyle | String
-                    "bear": { }, //SVGStyle | String
-                    "bull": { } //SVGStyle | String
-                }
-            }
+  type: "timeseries",
+  dataSource: {
+    extensions: {
+      prediction: {
+        style: {
+          plot: {}, //SVGStyle | String
+          line: {}, //SVGStyle | String
+          area: {}, //SVGStyle | String
+          column: {}, //SVGStyle | String
+          anchor: {}, //SVGStyle | String
+          bear: {}, //SVGStyle | String
+          bull: {} //SVGStyle | String
         }
+      }
     }
-})
+  }
+});
 ```
-
 
 <table>
 	<tr>
@@ -1733,6 +1803,11 @@ new FusionCharts({
 		<td>String</td>
 		<td>If an image is displayed as the chart dataInvalidMessage, this attribute allows to set a custom vertical alignment for the image. <strong>Default Value:</strong> baseChartMessageImageHAlign</td>
 	</tr>
+	<tr>
+		<td>`canvasHeightProportion`</td>
+		<td>String</td>
+		<td>This attribute allows you to set variable heights to the canvases in a multivariate chart in the form of ratios, i.e., 1:2:1, 1:2:3:4, etc.</td>
+	</tr>
 </table>
 
 ## Date/time Format
@@ -1859,3 +1934,7 @@ To handle the above cases, the padding modifiers are listed below:
 | `0` (Zero)       | Zero padding (For example, **12/2/2018**)   |
 
 > The paddings are always placed after every token's % symbol. The default value padding of the date/time format of a time-series chart is `0`.
+
+## Apply CSS Transform
+
+FusionTime allows you to resize the chart container of the chart using `applyCSSTransform` attribute. The chart is automatically resized when the container is resized. If a tooltip was active at the time of resizing, it is repositioned properly.

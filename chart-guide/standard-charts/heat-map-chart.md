@@ -10,23 +10,25 @@ A heat map chart is a specialized chart that uses colors to represent data value
 
 ## Basics of a heat map chart
 
-You can use the heat map chart to plot data like employee attendance records, a periodic table, tracking investments in the stock market, comparing the performance of different companies, etc. You can set different colors for different levels of data. For example, if you use the heat map chart to plot employee attendance records, you can use colors like red, yellow, blue and green to indicate a bad, average, good, and excellent grade, respectively, based on percentage values. Once the chart, you will be able to easily distinguish the four grades.
+You can use the heat map chart to plot data like employee attendance records, a periodic table, tracking investments in the stock market, comparing the performance of different companies, etc. You can set different colors for different levels of data. For example, if you use the heat map chart to plot employee attendance records, you can use colors like red, yellow, blue and green to indicate a bad, average, good, and excellent grade, respectively, based on percentage values. Once the chart is rendered, you will be able to easily distinguish the four grades.
+
+{% embed_chartAnatomy heat-map-chart.json %}
 
 ## Features of a heat map chart
 
 Using a heat map chart, you can:
 
-* Arrange data in a tabular format with a finite number of rows and columns.
+- Arrange data in a tabular format with a finite number of rows and columns.
 
-* Plot either numeric, or non-numeric data, or both.
+- Plot either numeric, or non-numeric data, or both.
 
-* Use a solid color or gradient to indicate different ranges within data values.
+- Use a solid color or gradient to indicate different ranges within data values.
 
-* Use an interactive legend to show or hide data plots.
+- Use an interactive legend to show or hide data plots.
 
-* Hide any data which falls outside the limits of the defined color range.
+- Hide any data which falls outside the limits of the defined color range.
 
-* Use two different types of legends - the icon legend and the gradient legend.
+- Use two different types of legends - the icon legend and the gradient legend.
 
 ## Types of heat map charts
 
@@ -46,7 +48,7 @@ Click [here](http://jsfiddle.net/fusioncharts/4qg2v27x/) to edit the above chart
 
 ## Legends in heat map charts
 
-As stated earlier, you can use two different types of legends with heat map charts: 
+As stated earlier, you can use two different types of legends with heat map charts:
 
 ### Gradient legend
 
@@ -60,36 +62,36 @@ As stated earlier, you can use two different types of legends with heat map char
 
 Use the following attributes to create a simple numeric heat map chart:
 
-* Specify the unique ID of the row in which the data has to be entered using the `rowID` attribute.
+- Specify the unique ID of the row in which the data has to be entered using the `rowID` attribute.
 
-* Specify the unique ID of the column in which the data has to be entered using the `columnID` attribute.
+- Specify the unique ID of the column in which the data has to be entered using the `columnID` attribute.
 
-* Specify the data value to be entered in a cell, using the `value` attribute.
+- Specify the data value to be entered in a cell, using the `value` attribute.
 
-* Specify the labels to be displayed at the top-left, top-right, bottom-left, and bottom-right corners of the data plot, using the `tlLabel`, `trLabel`, `blLabel`, and `brLabel` attributes, respectively.
+- Specify the labels to be displayed at the top-left, top-right, bottom-left, and bottom-right corners of the data plot, using the `tlLabel`, `trLabel`, `blLabel`, and `brLabel` attributes, respectively.
 
-* Specify the hex code for the color that represents a particular range, using the `code` attribute.
+- Specify the hex code for the color that represents a particular range, using the `code` attribute.
 
-* Specify the minimum value that can be plotted on the chart, using the `minValue` attribute.
+- Specify the minimum value that can be plotted on the chart, using the `minValue` attribute.
 
-* Specify the maximum value that can be plotted on the chart, using the `maxValue` attribute.
+- Specify the maximum value that can be plotted on the chart, using the `maxValue` attribute.
 
 Use the following data to build the chart:
 
-Smartphone Ratings|Processor|Screen Size|Price|Battery Backup|Camera|
--|-|-|-|-|-
-Samsung Galaxy S5|Quad Core 2.5 GHz|5.1 inch|$600|29 Hrs|16 MP|
-HTC One (M8)|Quad Core 2.3 GHz|5 inch|$600|20 Hrs|5 MP|
-Apple iPhone 5S|Dual Core|4 inch|$649|10 Hrs|8 MP|
-Nokia Lumia 1520|Quad Core 2.2 GHz|6 inch|$470|27 Hrs|20MP|
+| Smartphone Ratings | Processor         | Screen Size | Price | Battery Backup | Camera |
+| ------------------ | ----------------- | ----------- | ----- | -------------- | ------ |
+| Samsung Galaxy S5  | Quad Core 2.5 GHz | 5.1 inch    | \$600 | 29 Hrs         | 16 MP  |
+| HTC One (M8)       | Quad Core 2.3 GHz | 5 inch      | \$600 | 20 Hrs         | 5 MP   |
+| Apple iPhone 5S    | Dual Core         | 4 inch      | \$649 | 10 Hrs         | 8 MP   |
+| Nokia Lumia 1520   | Quad Core 2.2 GHz | 6 inch      | \$470 | 27 Hrs         | 20MP   |
 
 Use the following data to categorize bad, average, or good ratings:
 
-Numeric Range|Label|Color|
--|-|-
-1-5|Bad|"#e24b1a"|
-5-8.5|Average|"#f6bc33"|
-8.5-10|Good|"#6da81e"|
+| Numeric Range | Label   | Color     |
+| ------------- | ------- | --------- |
+| 1-5           | Bad     | "#e24b1a" |
+| 5-8.5         | Average | "#f6bc33" |
+| 8.5-10        | Good    | "#6da81e" |
 
 The chart will look as shown below:
 
@@ -105,9 +107,9 @@ However, there is one more method to plot numeric based heat map charts, where y
 
 Use the following attributes to predefine the order of rows and columns:
 
-* Define the unique ID for a data item using the `id` attribute. 
+- Define the unique ID for a data item using the `id` attribute.
 
-* Define the label for a data item using the `label` attribute. 
+- Define the label for a data item using the `label` attribute.
 
 Note: Use the attributes mentioned above with the `row` object when defining a row entry, and with the `column` object when defining a column entry.
 
@@ -122,7 +124,7 @@ Refer to the code below:
 		"row": [{
 			"id": "IPHONES5",
 			"label": "Apple iPhone 5S"
-		}, 
+		},
 		{
 			"id": "SGS5",
 			"label": "Samsung Galaxy S5"
@@ -152,7 +154,7 @@ Refer to the code below:
         {
         	"id": "backup",
         	"label": "Battery Backup"
-        }, 
+        },
         {
         	"id": "cam",
         	"label": "Camera"
@@ -162,7 +164,7 @@ Refer to the code below:
 		"data": [{
 			...
 		}]
-	}]     
+	}]
 }
 ```
 
@@ -210,7 +212,7 @@ Refer to the code below:
             "trLabel": "OS : Android 4.4 Kitkat",
             "color": "#ff9f55"
 		}]
-	}]     
+	}]
 }
 ```
 
@@ -228,25 +230,25 @@ You can do category based mapping by defining several color categories or ranges
 
 Use the following attributes to create a category based heat map chart:
 
-* Set the value of the `mapByCateory` attribute to `1`, to create a category based heat map chart.
+- Set the value of the `mapByCateory` attribute to `1`, to create a category based heat map chart.
 
-* Specify the unique ID of the row (or column) in which the data has to be entered using the `id` attribute with the `row` (or `column`) object.
+- Specify the unique ID of the row (or column) in which the data has to be entered using the `id` attribute with the `row` (or `column`) object.
 
-* Specify the labels to be rendered for the rows, columns, and the legend, using the `label` attribute with the `row`, `column`, and `color` objects, respectively. Note that if you don't specify the labels for numeric ranges, the chart will display the range instead of labels.
+- Specify the labels to be rendered for the rows, columns, and the legend, using the `label` attribute with the `row`, `column`, and `color` objects, respectively. Note that if you don't specify the labels for numeric ranges, the chart will display the range instead of labels.
 
-* Specify the unique ID of the row in which the data has to be entered using the `rowID` attribute.
+- Specify the unique ID of the row in which the data has to be entered using the `rowID` attribute.
 
-* Specify the unique ID of the column in which the data has to be entered using the `columnID` attribute.
+- Specify the unique ID of the column in which the data has to be entered using the `columnID` attribute.
 
-* Specify the data value to be entered in a cell, using the `value` attribute.
+- Specify the data value to be entered in a cell, using the `value` attribute.
 
-* Specify the labels to be displayed at the top-left, top-right, bottom-left, and bottom-right corners of the data plot, using the `tlLabel`, `trLabel`, `blLabel`, and `brLabel` attributes, respectively.
+- Specify the labels to be displayed at the top-left, top-right, bottom-left, and bottom-right corners of the data plot, using the `tlLabel`, `trLabel`, `blLabel`, and `brLabel` attributes, respectively.
 
-* Specify the hex code for the color that represents a particular range, using the `code` attribute.
+- Specify the hex code for the color that represents a particular range, using the `code` attribute.
 
-* Specify the minimum value that can be plotted on the chart, using the `minValue` attribute.
+- Specify the minimum value that can be plotted on the chart, using the `minValue` attribute.
 
-* Specify the maximum value that can be plotted on the chart, using the `maxValue` attribute.
+- Specify the maximum value that can be plotted on the chart, using the `maxValue` attribute.
 
 Refer to the code below:
 
@@ -259,11 +261,11 @@ Refer to the code below:
         "row": [{
             "id": "NY",
             "label": "New York"
-        }, 
+        },
         {
             "id": "LA",
             "label": "Los Angeles"
-        }, 
+        },
         {
             ...
         }]
@@ -272,11 +274,11 @@ Refer to the code below:
         "column": [{
             "id": "wI",
             "label": "Winter"
-        }, 
+        },
         {
             "id": "SU",
             "label": "Summer"
-        }, 
+        },
         {
             ...
         }]
@@ -287,13 +289,13 @@ Refer to the code below:
             "columnid": "WI",
             "value": "60.10",
             "colorRangeLabel": "Warm"
-        }, 
+        },
         {
             "rowid": "LA",
             "columnid": "SP",
             "displayValue": "64.5",
             "colorRangeLabel": "Warm"
-        }, 
+        },
         {
             ...
         }]
@@ -325,11 +327,11 @@ Using an icon legend, you can display single color icons for numeric ranges. By 
 
 Use the following attributes to specify the color for each icon in the legend:
 
-* Specify the hex code of the color that will represent a particular color range in legends, using the `code` attribute. Note that you can use this attribute with `colorRange` or `color` object. In `colorRange`, when you set `gradient` attribute to `1` (gradient legend), you need to use the `code` attribute under `colorRange` to specify the color of the `minValue` and `color` objects simultaneously. On the other hand, when you set the value of `gradient` attribute to `0` (icon legend), you need to use the `color` object to render the chart.
+- Specify the hex code of the color that will represent a particular color range in legends, using the `code` attribute. Note that you can use this attribute with `colorRange` or `color` object. In `colorRange`, when you set `gradient` attribute to `1` (gradient legend), you need to use the `code` attribute under `colorRange` to specify the color of the `minValue` and `color` objects simultaneously. On the other hand, when you set the value of `gradient` attribute to `0` (icon legend), you need to use the `color` object to render the chart.
 
-* Specify the lower limits of each numeric range using the `minValue` attribute. You must mention this attribute under each `color` object, whenever you use icon legend.
+- Specify the lower limits of each numeric range using the `minValue` attribute. You must mention this attribute under each `color` object, whenever you use icon legend.
 
-* Specify the upper limits of each numeric range using the `maxValue` attribute. You must mention this attribute under each `color` object, whenever you use gradient or icon legend.
+- Specify the upper limits of each numeric range using the `maxValue` attribute. You must mention this attribute under each `color` object, whenever you use gradient or icon legend.
 
 Refer to the code below:
 
@@ -383,13 +385,13 @@ A gradient legend is a pane of blended colors derived from the `colorRange` defi
 
 Use the following attributes to configure a gradient legend:
 
-* Specify whether a gradient legend will be rendered for the chart by setting the value of the `gradient` attribute to `1`.
+- Specify whether a gradient legend will be rendered for the chart by setting the value of the `gradient` attribute to `1`.
 
-* Specify the label for the lower limit on the gradient legend using the `startLabel` attribute.
+- Specify the label for the lower limit on the gradient legend using the `startLabel` attribute.
 
-* Specify the label for the upper limit on the gradient legend using the `endLabel` attribute.
+- Specify the label for the upper limit on the gradient legend using the `endLabel` attribute.
 
-* Specify the hex code of the color that will represent a particular color range in legends, using the `code` attribute. Note that you can use this attribute with `colorRange` or `color` object. In `colorRange`, when you set `gradient` attribute to `1` (gradient legend), you need to use the `code` attribute under `colorRange` to specify the color of the `minValue` and `color` objects simultaneously. 
+- Specify the hex code of the color that will represent a particular color range in legends, using the `code` attribute. Note that you can use this attribute with `colorRange` or `color` object. In `colorRange`, when you set `gradient` attribute to `1` (gradient legend), you need to use the `code` attribute under `colorRange` to specify the color of the `minValue` and `color` objects simultaneously.
 
 Refer to the code below:
 
@@ -496,17 +498,17 @@ Using FusionCharts XT, you can configure the functional properties of labels and
 
 In a heat map chart, you can show multiple labels in different positions for the same data plot. For example, you can display labels at the center and the four corners of a dataplot. Use the following attributes to configure labels:
 
-* Display a numeric value at the center of a data plot using the `value` attribute. All number formatting features will apply if you use this attribute.
+- Display a numeric value at the center of a data plot using the `value` attribute. All number formatting features will apply if you use this attribute.
 
-* Display any numeric or string value at the center of the data plot, using the `displayValue` attribute. This attribute will override the `value` attribute if you use both in the code. Note that number formatting features are not applicable to the value of this attribute.
+- Display any numeric or string value at the center of the data plot, using the `displayValue` attribute. This attribute will override the `value` attribute if you use both in the code. Note that number formatting features are not applicable to the value of this attribute.
 
-* Display a label in the top-left corner of a data plot, using the `tlLabel` attribute.
+- Display a label in the top-left corner of a data plot, using the `tlLabel` attribute.
 
-* Display a label in the top-right corner of a data plot, using the `trLabel` attribute.
+- Display a label in the top-right corner of a data plot, using the `trLabel` attribute.
 
-* Display a label in the bottom-left corner of a data plot, using the `blLabel` attribute.
+- Display a label in the bottom-left corner of a data plot, using the `blLabel` attribute.
 
-* Display a label in the bottom-right corner of a data plot, using the `brLabel` attribute.
+- Display a label in the bottom-right corner of a data plot, using the `brLabel` attribute.
 
 Refer to the code below:
 
@@ -531,7 +533,7 @@ Refer to the code below:
             "columnid": "processor",
             "value": "8.7",
             "tlLabel": "Quad Core 2.5 GHz"
-        }, 
+        },
         {
             ...
         }]
@@ -687,6 +689,6 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/a0bz875q/) to edit the above chart.
 
-> When you use percentage mapping, the lowest data value from the JSON data is considered to be the lower limit and displayed as 0%. The highest data value, on the other hand, is considered as the upper limit and is displayed as 100%. Also, you need to create color ranges with 0 as the lower limit and 100 as the upper limit. You can enable percentage mapping even if all your data values fall within the defined range. 
+> When you use percentage mapping, the lowest data value from the JSON data is considered to be the lower limit and displayed as 0%. The highest data value, on the other hand, is considered as the upper limit and is displayed as 100%. Also, you need to create color ranges with 0 as the lower limit and 100 as the upper limit. You can enable percentage mapping even if all your data values fall within the defined range.
 
 In a category based heat map chart, if you provide a category name by the attribute `colorRangeLabel` through the `data` element, which is not defined in the `colorRange` element, the chart will show blank data plot.

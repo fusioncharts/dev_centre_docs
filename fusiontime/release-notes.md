@@ -4,49 +4,117 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 2.0.0</h2>
+
+<p class="release-date">5th December, 2019</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- FusionTime 2.0 onwards, you can build time-series charts with [real time data](/fusiontime/getting-started/real-time-data-in-fusiontime).
+
+- You can now set variable heights to different canvases in a multivariate chart.
+
+- You can now use the `height` property of the `navigator` object to assign a custom height to the time navigator.
+
+- FusionTime 2.0 onwards, you can render charts with the [legend](/fusiontime/fusiontime-component/legend-in-fusiontime) initially hidden, using the newly introduced attribute `initiallyHidden`.
+
+- You can now use the attribute `applyCSSTransform` to modify CSS files for charts in FusionTime.
+
+- Custom Range Selector in FusionTime is now mobile-responsive.
+
+<h2 class="sub-heading">Version 1.3.0</h2>
+
+<p class="release-date">27th September, 2019</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- A bunch of events and methods are now available using which you can use the time series charts in interesting ways. The complete list of events can be found [here](/fusiontime/api/fusiontime-events).
+
+- FusionTime v1.3.0 onward, you can display alternate [grid bands](/fusiontime/fusiontime-component/y-axis-in-fusiontime#grid-bands) on the Y-axis.
+
+- FusionTime now offers a new type of [data marker](/fusiontime/fusiontime-component/data-markers) - pin.
+
+<h4>Improvement</h4>
+
+- By default, the chart formats the data values. Now, you can see unformatted (or raw) data values. One can also format the data values with `round` attribute (decimal places, tens, hundreds, etc). These will reflect wherever data values are visible.
+
+- Earlier, if you mentioned the name of aggregation in uppercase or camelcase, you would get a JS error. Now, if you mention the name of an aggregation that is included in FusionCharts, it will work without error, no matter which case (upper, lower, or camel) you name it in. However, if you define your own custom aggregation, then you need to follow a few naming regulations, as follows:
+
+  - The name is case sensitive.
+
+  - The name needs to be in the format used in FusionCharts.
+
+  - The name cannot have the same spelling as any of the default aggregations provided by FusionCharts.
+
+- Specific time series components like data markers, time markers, reference lines, and reference zones are now available with stock (OHLC and Candlestick) charts.
+
+<h4>Fixes</h4>
+
+- Data Markers of different points in time are now displayed separately. Previously, they were being grouped together.
+
+- In consolidated data markers, the same dates were appearing multiple times. The issue has now been fixed.
+
+- In dual Y-axis charts, notch connectors are now properly visible within reference zones.
+
+- When you add a reference zone to a dual Y-axis chart, the data plots within reference zones are now highlighted properly.
+
+- Earlier, reference zone marker tag text would overflow when you added prefix/suffix to it. The issue has now been fixed.
+
+- Earlier, you could accidentally set data binning at a value less than the lowest atomicity. FusionTime version 1.3 onward, you cannot do so anymore.
+
+- In earlier versions of FusionTime, you were unable to select long time periods from Standard Range Selector if you dragged the Time Navigator to the extreme left. The issue has been resolved.
+
+- Earlier, the Standard Range Selector was not selected when you made selections from Custom Range Selector or `xAxis.initialInterval`. The issue has been fixed.
+
+- The tooltips of data markers now always display the correct names.
+
+- After hovering over a time span marker, if you move the pointer, the plot anchor now vanishes instantly. Previously, it would remain visible on the canvas even when you moved the pointer.
+
+- The text in time span labels with ellipsis would overflow the label boundaries when you zoomed/panned the chart. The issue has been resolved.
+
 <h2 class="sub-heading">Version 1.2.0</h2>
 
 <p class="release-date">26th July, 2019</p>
 
 <h4 class="sub-heading">New Feature</h4>
 
-* You can now choose the [output time format](/fusiontime/getting-started/output-time-format) (12 hour/24 hour) for tooltips and X-axis.
+- You can now choose the [output time format](/fusiontime/getting-started/output-time-format) (12 hour/24 hour) for tooltips and X-axis.
 
-* You can now [remove leading zeros](/fusiontime/fusiontime-attributes#paddings) from dates (e.g., display `01/11/19` as `1/11/19`).
+- You can now [remove leading zeros](/fusiontime/fusiontime-attributes#paddings) from dates (e.g., display `01/11/19` as `1/11/19`).
 
-* You can now set the [initial spread of the active window](/fusiontime/fusiontime-component/time-navigator#set-the-initial-spread-of-the-active-window) by setting the 'from' and 'to' time when the chart is first rendered.
+- You can now set the [initial spread of the active window](/fusiontime/fusiontime-component/time-navigator#set-the-initial-spread-of-the-active-window) by setting the 'from' and 'to' time when the chart is first rendered.
 
-* You can now define the data [binning](/fusiontime/getting-started/change-default-aggregation) as per custom requirements.
+- You can now define the data [binning](/fusiontime/getting-started/change-default-aggregation) as per custom requirements.
 
-* A new feature called [reference zone](/fusiontime/fusiontime-component/reference-zone-in-fusiontime) is now available. It helps the users know the data plots which fall in the particular zone.
+- A new feature called [reference zone](/fusiontime/fusiontime-component/reference-zone-in-fusiontime) is now available. It helps the users know the data plots which fall in the particular zone.
 
-* You can now [style the line segment](/fusiontime/fusiontime-component/y-axis-in-fusiontime#configure-null-values) which joins the missing data points.
+- You can now [style the line segment](/fusiontime/fusiontime-component/y-axis-in-fusiontime#configure-null-values) which joins the missing data points.
 
-* A new feature to style the [predicted data](/fusiontime/fusiontime-component/predictive-data-fusiontime) is now available. You can provide the predicted data and style them differently.
+- A new feature to style the [predicted data](/fusiontime/fusiontime-component/predictive-data-fusiontime) is now available. You can provide the predicted data and style them differently.
 
 <h4 class="sub-heading">Improvement</h4>
 
-* In FusionTime Version 1.2, we have extended the time periods covered by the [Standard Range Selector](/fusiontime/fusiontime-component/standard-range-selector) beyond `1Y`, to include `2Y`, `3Y`, `5Y`, and `10Y`.
+- In FusionTime Version 1.2, we have extended the time periods covered by the [Standard Range Selector](/fusiontime/fusiontime-component/standard-range-selector) beyond `1Y`, to include `2Y`, `3Y`, `5Y`, and `10Y`.
 
-* You can now apply a number of new [style attributes](/fusiontime/getting-started/style-definition) to different components of a time-series chart.
+- You can now apply a number of new [style attributes](/fusiontime/getting-started/style-definition) to different components of a time-series chart.
 
-* The `ignoreCaseExtension` module is now able to selectively ignore some of the keys in the dataSource JSON.
+- The `ignoreCaseExtension` module is now able to selectively ignore some of the keys in the dataSource JSON.
 
 <h4 class="sub-heading">Fixes</h4>
 
-* For CrossLines, label and anchor tooltip were not in sync. The issue has been fixed.
+- For CrossLines, label and anchor tooltip were not in sync. The issue has been fixed.
 
-* In Column charts, some of the columns styled using the `stroke-dasharray` attribute would lose the style when the canvas was zoomed in and out again. The issue has been fixed.
+- In Column charts, some of the columns styled using the `stroke-dasharray` attribute would lose the style when the canvas was zoomed in and out again. The issue has been fixed.
 
-* In Candlestick and OHLC charts, the default plot highlight style was getting overridden when hover style was specified. The issue has been fixed.
+- In Candlestick and OHLC charts, the default plot highlight style was getting overridden when hover style was specified. The issue has been fixed.
 
-* The time axis was getting updated on disabling all datasets via the legend. The issue has been fixed.
+- The time axis was getting updated on disabling all datasets via the legend. The issue has been fixed.
 
-* The selection tool of the Custom Range Selector was getting disabled when the Apply button was clicked after selecting a time interval. The issue has been fixed.
+- The selection tool of the Custom Range Selector was getting disabled when the Apply button was clicked after selecting a time interval. The issue has been fixed.
 
-* When the Standard Range Selector button was styled with larger font size for `button:hover`, its vertical alignment would be disrupted when the mouse pointer was moved away after hover. The issue has been fixed.
+- When the Standard Range Selector button was styled with larger font size for `button:hover`, its vertical alignment would be disrupted when the mouse pointer was moved away after hover. The issue has been fixed.
 
-* Tooltip was not appearing for the last plot in the charts. The issue has been fixed.
+- Tooltip was not appearing for the last plot in the charts. The issue has been fixed.
 
 <h2 class="sub-heading">Version 1.1.0</h2>
 

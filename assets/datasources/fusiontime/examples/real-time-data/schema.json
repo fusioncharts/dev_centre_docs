@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Observation Time",
+    "type": "date",
+    "format": "%Y-%m-%d %H:%M:%S"
+  },
+  {
+    "name": "Temperature (in °C)",
+    "type": "number"
+  },
+  {
+    "name": "City",
+    "type": "string"
+  }
+]

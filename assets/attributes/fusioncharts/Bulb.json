@@ -171,7 +171,7 @@
         "name": "placeValuesInside"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -728,7 +728,7 @@
         "name": "messageLogShowTitle"
       },
       {
-        "description": "If you've opted to show the title for message logger, you can define your custom title here. Examples are &quot;Error log&quot;, &quot;Server History&quot; etc. The title displays at the top left corner of chart.",
+        "description": "If you've opted to show the title for message logger, you can define your custom title here. Examples are \"Error log\", \"Server History\" etc. The title displays at the top left corner of chart.",
         "range": "",
         "type": "String",
         "name": "messageLogTitle"

@@ -4,99 +4,56 @@ description: This article outlines the steps to be executed for creating your fi
 heading: Create a Chart in Vue Using FusionCharts
 ---
 
-## Overview
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight Vue component that provides bindings for FusionCharts. The `vue-fusioncharts` component allows you to easily add rich and interactive charts to any Vue project.
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Vue** component which provides bindings for **FusionCharts**. The `vue-fusioncharts` component allows you to easily add rich and interactive charts to any **Vue** project.
+On this page, we'll see how to install FusionCharts and render a chart using the `vue-fusioncharts` component.
 
-In this page, we'll see how to install FusionCharts and render a chart using the `vue-fusionCharts` component.
+## Prerequisite
 
-## Installation
+You can follow the below steps to initiate a vue project or else you can skip this step and proceed on by including the dependencies from CDN or Local Files.
 
-Install **FusionCharts** and the `vue-fusioncharts` component using any of the following methods:
+One of the best ways to setup the development environment is through `vue-cli`. Find more about it [here](https://create-react-app.dev/docs/getting-started). Install vue globally in your local machine with npm using `vue-cli`
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='local'>Local Files</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
-<div class='mt-30'><strong>To install FusionCharts and the `vue-fusioncharts` component via npm follow the steps below:</strong></div>
-<div class='mt-20'>1. Install the `vue-fusioncharts` component</div>
-<pre><code class="language-javascript">
-$ npm install vue-fusioncharts --save
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-<div class='mt-20'>2. Install `fusioncharts` package</div>
-<pre><code class="language-javascript">
-$ npm install fusioncharts --save
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+```javascript
+npm install -g @vue/cli
+```
 
-<div class='tab cdn-tab'>
-<div class='mt-30'><strong>To install the FusionCharts package and the `vue-fusioncharts` component follow the steps below:</strong></div>
-<div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
-<div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
-<pre><code class="language-html">
-&lt;head&gt;
-    &lt;!-- Step 1 - Including vue  --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
-    &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;!-- Step 4 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-&lt;/head&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+Open the terminal, go ahead and enter:
 
-<div class='tab local-tab'>
-<div class='mt-30'><strong>To install the FusionCharts package and the `vue-fusioncharts` component follow the steps below:</strong></div>
-<div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
-<div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
-<div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt).</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
-<pre><code class="language-html">
-&lt;head&gt;
-    &lt;!-- Step 1 - Including vue  --&gt;
-    &lt;script type="text/javascript" src="path/to/local/vue.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 4 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+```javascript
+vue create first-fusioncharts-project
+cd first-fusioncharts-project
+npm run serve
+```
 
-</div>
-</div>
+`first-fusioncharts-project` is the working directory where Vue Boilerplate will be installed along with all the utilities and dependencies.
 
-That completes the installation of FusionCharts and the `vue-fusioncharts` component.
+Now, open[ http://localhost:8080/](http://localhost:8000/) to see your Vue app.
 
-## Create your First Chart
+## Installation and including dependencies
 
-Let's create a Column 2D chart using the `vue-fusioncharts` component showing the "Countries With Most Oil Reserves".
+To install `fusionCharts` and the `vue-fusioncharts` components via npm follow the steps below.
 
-FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+```javascript
+npm install fusioncharts vue-fusioncharts --save
+```
 
-The Column 2D chart is shown below:
+After installing the fusioncharts components, you can replace the code in `src/App.vue` file with the code shown in the steps below to create your first chart. Import all the required dependencies to get started.
 
-{% embed_chart getting-started-your-first-chart-example-1.js %}
+```javascript
+// Include Dependencies
+import Vue from 'vue';
+import VueFusionCharts from 'vue-fusioncharts';
+import FusionCharts from 'fusioncharts';
+import Column2D from 'fusioncharts/fusioncharts.charts';
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-To understand the chart components, click [here](/understanding-fusioncharts).
+Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
+```
 
-## Chart data
+## Preparing the data
 
-The data to render the above chart is shown in the table below:
+Let's create a chart showing the "Countries With Most Oil Reserves". The data of the oil reserves present in various countries is shown in the tabular form below.
 
 | Country   | No. of Oil Reserves |
 | --------- | ------------------- |
@@ -109,116 +66,84 @@ The data to render the above chart is shown in the table below:
 | US        | 30K                 |
 | China     | 30K                 |
 
-FusionCharts accepts data in **JSON** format. Following code is the JSON representation of the above table with the required attributes to render the above chart.
+Since we are plotting a single dataset, let us create a column 2D chart with 'countries' as **data labels** along the x-axis and 'No. of oil reserves' as **data values** along the y-axis. Let us prepare the data for a single-series chart.
 
-```json
-{
-  // Chart Configuration
-  "chart": {
-    "caption": "Countries With Most Oil Reserves [2017-18]",
-    "subCaption": "In MMbbl = One Million barrels",
-    "xAxisName": "Country",
-    "yAxisName": "Reserves (MMbbl)",
-    "numberSuffix": "K",
-    "theme": "fusion"
+FusionCharts accepts the data in JSON format. So the above data in the tabular form will take the below shape.
+
+```javascript
+// Preparing the chart data
+const chartData = [
+  {
+    label: "Venezuela",
+    value: "290"
   },
-  // Chart Data
-  "data": [
-    {
-      "label": "Venezuela",
-      "value": "290"
-    },
-    {
-      "label": "Saudi",
-      "value": "260"
-    },
-    {
-      "label": "Canada",
-      "value": "180"
-    },
-    {
-      "label": "Iran",
-      "value": "140"
-    },
-    {
-      "label": "Russia",
-      "value": "115"
-    },
-    {
-      "label": "UAE",
-      "value": "100"
-    },
-    {
-      "label": "US",
-      "value": "30"
-    },
-    {
-      "label": "China",
-      "value": "30"
-    }
-  ]
-}
+  {
+    label: "Saudi",
+    value: "260"
+  },
+  {
+    label: "Canada",
+    value: "180"
+  },
+  {
+    label: "Iran",
+    value: "140"
+  },
+  {
+    label: "Russia",
+    value: "115"
+  },
+  {
+    label: "UAE",
+    value: "100"
+  },
+  {
+    label: "US",
+    value: "30"
+  },
+  {
+    label: "China",
+    value: "30"
+  }
+];
 ```
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+## Configure your chart
 
-In the above JSON data:
+Now that the data is ready, let's work on the styling, positioning and giving your chart a context.
 
-- Create the `chart` object to define the elements of the chart.
+```javascript
+// Create a JSON object to store the chart configurations
+const chartConfigs = {
+  type: "column2d", // The chart type
+  width: "700", // Width of the chart
+  height: "400", // Height of the chart
+  dataFormat: "json", // Data type
+  dataSource: {
+    // Chart Configuration
+    chart: {
+      caption: "Countries With Most Oil Reserves [2017-18]",   //Set the chart caption
+      subCaption: "In MMbbl = One Million barrels",            //Set the chart subcaption
+      xAxisName: "Country",             //Set the x-axis name
+      yAxisName: "Reserves (MMbbl)",    //Set the y-axis name
+      numberSuffix: "K",
+      theme: "fusion"                   //Set the theme for your chart
+    },
+    // Chart Data - from step 2
+    data: chartData
+  }
+};
+```
 
-- Set the `caption` and `subcaption` of the chart.
-
-- Set the value of `xAxisName` attribute to **Country**(first column of the table).
-
-- Set the value of `yAxisName` attribute to **Reserves**(second column of the table).
-
-- In the `data` array, create objects for each row and specify the `label` attribute to represent the Country. For example, **Venezuela**.
-
-- Similarly, specify the `value` attribute to set the value of Oil Reserves in respective countries. For example, **290K** for **Venezuela**.
-
-- Set the `numberSuffix` attribute to set the unit of the values.
-
-- Set the `theme` attribute to apply the predefines themes to the chart.
-
-Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
-
-Now that you have the data in JSON format, let's see how to render the chart.
+> The `type` attribute in the chartConfigs object signifies the type of chart being rendered. Have a look at different chart types with their aliases [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 ## Render the chart
 
-To render the chart, open `App.vue` file and follow the steps below:
+Get ready to render your first chart finally. Use this consolidated code shown below:
 
-1. Include the `vue` component.
-
-2. Include `vue-fusioncharts` component.
-
-3. Include `fusioncharts` core library.
-
-4. Include the chart type.
-
-5. Include the FusionCharts theme file to apply the style to the charts.
-
-6. Register the **VueFusionCharts** component
-
-7. Store the chart configurations in a JSON object. In this JSON object:
-
-   - Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-   - Set the width and height (in pixels).
-
-   - Set the `dataFormat` as JSON.
-
-   - Embed the json data as the value of the `dataSource`.
-
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='npm'>NPM</a></li>
-    <li><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='local'>Local Files</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab npm-tab active'>
-<pre><code class="custom-hlc language-javascript">
+```
+// STEP 1: to include the dependencies
+<script>
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
@@ -226,220 +151,94 @@ import Column2D from 'fusioncharts/fusioncharts.charts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
+
+// STEP 2: Prepare the data
+const chartData = [
+    {
+      label: "Venezuela",
+      value: "290"
+    },
+    {
+      label: "Saudi",
+      value: "260"
+    },
+    {
+      label: "Canada",
+      value: "180"
+    },
+    {
+      label: "Iran",
+      value: "140"
+    },
+    {
+      label: "Russia",
+      value: "115"
+    },
+    {
+      label: "UAE",
+      value: "100"
+    },
+    {
+      label: "US",
+      value: "30"
+    },
+    {
+      label: "China",
+      value: "30"
+    }
+  ];
+
+// STEP 3: Configure your chart
+const dataSource = {
+  chart: {
+    caption: "Countries With Most Oil Reserves [2017-18]",
+    subcaption: "In MMbbl = One Million barrels",
+    xaxisname: "Country",
+    yaxisname: "Reserves (MMbbl)",
+    numbersuffix: "K",
+    theme: "fusion"
+  },
+  data: chartData
+  };
+
 export default {
-name: 'app',
-data() {
-return {
-"type": "column2d",
-"renderAt": "chart-container",
-"width": "550",
-"height": "350",
-"dataFormat": "json",
-"datasource": {
-"chart": {
-"caption": "Number of visitors in the last 3 days",
-"subCaption": "Bakersfield Central vs Los Angeles Topanga",
-"theme": "fusion"
-},
-"data": [{
-"label": "Mon",
-"value": "15123"
-}, {
-"label": "Tue",
-"value": "14233"
-}, {
-"label": "Wed",
-"value": "25507"
-}]
+  name: 'app',
+  data() {
+    return {
+      "type": "column2d",
+      "renderAt": "chart-container",
+      "width": "550",
+      "height": "350",
+      "dataFormat": "json",
+      dataSource
+    }
+  }
 }
-}
-}
-}
+</script>
 
-&lt;template&gt;
-&lt;div id="app"&gt;
-&lt;div id="chart-container"&gt;
-&lt;fusioncharts
-:type="type"
-:width="width"
-:height="height"
-:dataformat="dataformat"
-:datasource="datasource"
-&gt;
-&lt;/fusioncharts&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/template&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+//STEP 4: Render the chart
+<template>
+  <div id="app">
+    <div id="chart-container">
+      <fusioncharts
+      :type="type"
+      :width="width"
+      :height="height"
+      :dataformat="dataFormat"
+      :dataSource="dataSource"
+      >
+      </fusioncharts>
+    </div>
+  </div>
+</template>
+```
 
-</pre>
-<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `import`</strong></div>
-<ul>
-    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
-    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
-    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
-    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
-    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
-    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
-    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
-    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
-</ul>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</div>
+## See your chart
 
-<div class='tab cdn-tab'>
-<pre><code class="language-html">&lt;html&gt;
-&lt;head&gt;
-    &lt;!-- Including vue  --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
-    &lt;!-- Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src=" https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
-    &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.charts.js"&gt;&lt;/script>
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id="app"&gt;
-        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource"&gt;&lt;/fusioncharts&gt;
-    &lt;/div&gt;
-    &lt;script type="text/javascript"&gt;
-        // Use VueFusionCharts component by calling the Vue.use() method:
-        Vue.use(VueFusionCharts, FusionCharts);
-        var app = new Vue({
-            el: '#app',
-            data: {
-                width: '700',
-                height: '400',
-                type: 'column2d',
-                dataFormat: 'json',
-                dataSource: {
-                    "chart": {
-                        "caption": "Countries With Most Oil Reserves [2017-18]",
-                        "subCaption": "In MMbbl = One Million barrels",
-                        "xAxisName": "Country",
-                        "yAxisName": "Reserves (MMbbl)",
-                        "numberSuffix": "K",
-                        "theme": "fusion"
-                    },
-                    "data": [{
-                        "label": "Venezuela",
-                        "value": "290"
-                    }, {
-                        "label": "Saudi",
-                        "value": "260"
-                    }, {
-                        "label": "Canada",
-                        "value": "180"
-                    }, {
-                        "label": "Iran",
-                        "value": "140"
-                    }, {
-                        "label": "Russia",
-                        "value": "115"
-                    }, {
-                        "label": "UAE",
-                        "value": "100"
-                    }, {
-                        "label": "US",
-                        "value": "30"
-                    }, {
-                        "label": "China",
-                        "value": "30"
-                    }]
-                }
-            }
-        });
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+You should be able to see the chart as shown below.
 
-<div class='tab local-tab'>
-<pre><code class="language-html">&lt;html&gt;
-&lt;head&gt;
-    &lt;!-- Including vue  --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
-    &lt;!-- Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.charts.js"&gt;&lt;/script&gt;    
-    &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id="app"&gt;
-        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource"&gt;&lt;/fusioncharts&gt;
-    &lt;/div&gt;
-    &lt;script type="text/javascript"&gt;
-        // Use VueFusionCharts component by calling the Vue.use() method:
-        Vue.use(VueFusionCharts, FusionCharts);
-        var app = new Vue({
-            el: '#app',
-            data: {
-                width: '700',
-                height: '400',
-                type: 'column2d',
-                dataFormat: 'json',
-                dataSource: {
-                    "chart": {
-                        "caption": "Countries With Most Oil Reserves [2017-18]",
-                        "subCaption": "In MMbbl = One Million barrels",
-                        "xAxisName": "Country",
-                        "yAxisName": "Reserves (MMbbl)",
-                        "numberSuffix": "K",
-                        "theme": "fusion"
-                    },
-                    "data": [{
-                        "label": "Venezuela",
-                        "value": "290"
-                    }, {
-                        "label": "Saudi",
-                        "value": "260"
-                    }, {
-                        "label": "Canada",
-                        "value": "180"
-                    }, {
-                        "label": "Iran",
-                        "value": "140"
-                    }, {
-                        "label": "Russia",
-                        "value": "115"
-                    }, {
-                        "label": "UAE",
-                        "value": "100"
-                    }, {
-                        "label": "US",
-                        "value": "30"
-                    }, {
-                        "label": "China",
-                        "value": "30"
-                    }]
-                }
-            }
-        });
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
-</pre>
-</div>
+{% embed_chart getting-started-your-first-chart.js %}
 
-</div>
-</div>
+If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
 That's it! Your first chart using `vue-fusioncharts` is ready.
-
-## Problem rendering the chart?
-
-In case there is an error, and you are unable to see the chart, check for the following:
-
-- If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
-
-- If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
-
-- If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

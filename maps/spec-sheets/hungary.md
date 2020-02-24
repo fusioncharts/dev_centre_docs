@@ -4,35 +4,30 @@
 
 #### JavaScript Alias: maps/hungary
 
-Map Name: Hungary
-Dimensions (Width x Height): 510x320
-
-
-
-
+Map Name: Hungary Map
+Dimensions (Width x Height): 440x590
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|
-02|BA|Baranya
-04|BO|Borsod-Abaúj-Zemplén
-05|BU|Budapest
-01|BK|Bács-Kiskun
-03|BE|Békés
-06|CS|Csongrád
-08|FE|Fejér
-09|GM|Győr-Moson-Sopron
-10|HB|Hajdú-Bihar
-11|HE|Heves
-20|JN|Jász-Nagykun-Szolnok
-12|KE|Komárom-Esztergom
-14|NO|Nógrád
-16|PE|Pest
-17|SO|Somogy
-18|SZ|Szabolcs-Szatmár-Bereg
-21|TO|Tolna
-22|VA|Vas
-23|VE|Veszprém
-24|ZA|Zala
-
+HU.BK|BK|Bács-Kiskun
+HU.BA|BA|Baranya
+HU.BE|BE|Békés
+HU.BZ|BZ|Borsod-Abaúj-Zemplén
+HU.BU|BU|Capital City of Budapest
+HU.CS|CS|Csongrád
+HU.FE|FE|Fejér
+HU.GS|GS|Győr-Moson-Sopron
+HU.HB|HB|Hajdú-Bihar
+HU.HE|HE|Heves
+HU.KE|KE|Komárom-Esztergom
+HU.NO|NO|Nógrád
+HU.PT|PT|Pest
+HU.SO|SO|Somogy
+HU.SZ|SZ|Szabolcs-Szatmár-Bereg
+HU.JN|JN|Jász-Nagykun-Szolnok
+HU.TO|TO|Tolna
+HU.VA|VA|Vas
+HU.VE|VE|Veszprém
+HU.ZA|ZA|Zala

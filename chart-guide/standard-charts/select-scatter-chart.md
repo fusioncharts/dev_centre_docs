@@ -1,16 +1,18 @@
 ---
-title: Select-scatter Chart | FusionCharts
-description: The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points.
-heading: Select-scatter Chart
+title: Select Scatter Chart | FusionCharts
+description: The select scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points.
+heading: Select Scatter Chart
 ---
 
 > This chart type belongs to **PowerCharts XT**.
 
-The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points. Essentially, it is an extension of the XY plot chart (scatter chart) with the added functionality of selecting any number of points on the chart and returning them to the server, or JavaScript functions, for further processing.
+The select scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points. Essentially, it is an extension of the XY plot chart (scatter chart) with the added functionality of selecting any number of points on the chart and returning them to the server, or JavaScript functions, for further processing.
 
-This can be used for a variety of purposes, where you want your users to visually select data from the scatter chart. As an example, we will plot a select-scatter chart to show the products sold and the price points earned, for televisions and cell phones at Harry's SuperMart in one week.
+{% embed_chartAnatomy select-scatter-chart.json %}
 
-To create a select-scatter chart follow the steps given below:
+This can be used for a variety of purposes, where you want your users to visually select data from the scatter chart. As an example, we will plot a select scatter chart to show the products sold and the price points earned, for televisions and cell phones at Harry's SuperMart in one week.
+
+To create a select scatter chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
@@ -24,11 +26,11 @@ To create a select-scatter chart follow the steps given below:
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=selectscatter) page of select-scatter chart.
 
-The select-scatter chart thus created looks like this:
+The select scatter chart thus created looks like this:
 
 {% embed_all standard-charts-select-scatter-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3JjL8/) to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/3JjL8/) to edit the select scatter chart.
 
 ## Select Set of Points
 
@@ -36,13 +38,13 @@ To select a set of points, you can drag and draw a rectangle over the chart. All
 
 You can drag, resize, or delete any select rectangles individually. To delete any rectangle, you can click the `X` at the top right corner of the selection box. 
 
-After selection click the `Submit` button. This button sends the JSON/XML data as a form to the server-side script. In the above sample, the JSON data for the selected points - the price and quantity of each tv/cell phone unit - have been displayed in a table. Click the `Restore` button to bring back the chart to its original state.
+After selection click the `Submit` button. This button sends the JSON/XML data as a form to the server-side script. In the above sample, the JSON data for the selected points - the price and quantity of each TV/cell phone unit - have been displayed in a table. Click the `Restore` button to bring back the chart to its original state.
 
 ![Select set of points](/gif/standard-charts-selectscatter-gif-1.gif)
 
 ## Get Selected Data
 
-After you select a subset of data points in a select-scatter chart and click `Submit`, the selected data is sent to a server-side script, or a JavaScript function, for further processing. Here you will see how the updated data is read using the JavaScript functions present on the same page.
+After you select a subset of data points in a select scatter chart and click `Submit`, the selected data is sent to a server-side script, or a JavaScript function, for further processing. Here you will see how the updated data is read using the JavaScript functions present on the same page.
 
 After the chart is rendered, to access the chart data as an array, the following function is called:
 
@@ -96,13 +98,13 @@ alert(jsonRtn);
 ```
 The function `getJSONData()` returns the selected data. This function is also used to retrieve the complete data from the chart. To get the complete data from the chart you need to pass `false` as a parameter to the function. For example, `var jsonRtn = chartObject.getJSONData(false);`
 
-A select-scatter chart configured to show how the selected data is retrieved and updated looks like this:
+A select scatter chart configured to show how the selected data is retrieved and updated looks like this:
 
 {% embed_chart standard-charts-select-scatter-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0e8vwaud/) to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/0e8vwaud/) to edit the select scatter chart.
 
-Now, let's customize the appearance and properties of drawing regression lines in the select-scatter chart.
+Now, let's customize the appearance and properties of drawing regression lines in the select scatter chart.
 
 ## Draw Regression Lines
 
@@ -121,11 +123,11 @@ Refer to the code given below:
 	}
 }
 ```
-A select-scatter chart rendered with a regression line is shown below:
+A select scatter chart rendered with a regression line is shown below:
 
 {% embed_chart standard-charts-select-scatter-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0yL7zfps/) to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/0yL7zfps/) to edit the select scatter chart.
 
 ### Modes of Regression
 
@@ -135,7 +137,7 @@ Regression lines can be drawn in one of the following two modes:
 
 * **X** on **Y**: Used when **x** values are predicted, or a trend of **x** values is calculated, based on the **y** values
 
-In the select-scatter chart shown above, the regression line is drawn in the **Y** on **X** mode.
+In the select scatter chart shown above, the regression line is drawn in the **Y** on **X** mode.
 
 The same sample with the regression line drawn using the **X on Y** mode will be shown below. To set the mode and customize regression lines, follow the steps given below:
 
@@ -164,7 +166,7 @@ The chart looks like:
 
 {% embed_chart standard-charts-select-scatter-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7yhqp2oq/) to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/7yhqp2oq/) to edit the select scatter chart.
 
 > The formula used to draw the regression lines for both the modes are given below: 
 

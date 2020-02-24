@@ -36,7 +36,7 @@
         "name": "palette"
       },
       {
-        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (i.e., column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., `&quot;paletteColors&quot;: &quot;#FF0000, #0372AB, #FF5904...&quot;`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
+        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (i.e., column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma e.g., `\"paletteColors\": \"#FF0000, #0372AB, #FF5904...\"`. The chart will cycle through the list of specified colors and then render the data plot accordingly. To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
         "range": "List of hex color codes separated by comma",
         "type": "String",
         "name": "paletteColors"
@@ -111,7 +111,7 @@
         "name": "plotHighlightEffect"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -963,7 +963,7 @@
         "name": "smartLineAlpha"
       },
       {
-        "description": "This attribute tries to manage overflow of data labels. If enabled, data labels are either wrapped or truncated with ellipses to prevent them from overflowing out of the chart canvas. In case `smartLabels` is disabled, the labels are wrapped to avoid the overflow. Since `smartLabels` is disabled, the wrapped labels might get overlapped. When `smartLabels` is enabled, management of the overflowing labels fit in the &quot;quadrant specific smart labeling algorithm&quot;. Data labels try to wrap first. In case, there is a space constraint in the quadrant, the labels get truncated with ellipses.",
+        "description": "This attribute tries to manage overflow of data labels. If enabled, data labels are either wrapped or truncated with ellipses to prevent them from overflowing out of the chart canvas. In case `smartLabels` is disabled, the labels are wrapped to avoid the overflow. Since `smartLabels` is disabled, the wrapped labels might get overlapped. When `smartLabels` is enabled, management of the overflowing labels fit in the \"quadrant specific smart labeling algorithm\". Data labels try to wrap first. In case, there is a space constraint in the quadrant, the labels get truncated with ellipses.",
         "range": "0/1",
         "type": "Boolean",
         "name": "manageLabelOverflow"
@@ -1957,7 +1957,7 @@
         "name": "label"
       },
       {
-        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see &quot;Drill-Down &gt; Using JavaScript Functions as Links&quot; for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
+        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see \"Drill-Down &gt; Using JavaScript Functions as Links\" for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
         "range": "",
         "type": "String",
         "name": "link"

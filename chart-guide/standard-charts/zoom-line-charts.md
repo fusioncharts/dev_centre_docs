@@ -8,7 +8,7 @@ heading: Zoom Line Chart
 
 The FusionCharts Suite XT zoom line chart is a special type of multi-series line chart that allows analysis of data at macroscopic and microscopic levels. It can easily plot thousands of data points, which can produce indecipherable results if plotted on an ordinary line chart.
 
-## Create a Zoomline Chart
+## Create a Zoom Line Chart
 
 As an example, we will create a zoom line chart that plots the number of unique website visits to the harrysfoodmart.com and the harrysfashion.com websites for every day of the last year.
 
@@ -32,7 +32,7 @@ To create a zoom line chart follow the steps given below:
 
 * Specify the thickness of the line on the char using `lineThickness` attribute.
 
-> The anchors in the zoom-line chart is not clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
+> The anchors in the zoom line chart is not clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
 For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomline) page of zoomline chart.
 
@@ -40,7 +40,7 @@ The zoom line chart thus created looks like this:
 
 {% embed_all standard-charts-zoom-line-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/) to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/) to edit the zoom line chart.
 
 As seen in the chart above, at the time of rendering, the zoom line chart displays a macroscopic view of the data. The data is neatly compressed so that all of it fits into the width of the chart. When the user selects a segment of the line plot by dragging the mouse cursor across the canvas, the selected portion expands to occupy the entire width of the chart. 
 
@@ -50,19 +50,19 @@ The chart can be switched to pin mode, in pin mode - a ghost of the selected lin
 
 > The performance of a zoom line chart is based on the technical capabilities of a browser. A typical zoom line chart can render up to 10,000 data points without any performance issues.
 
-> The anchors in the zoom-line chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points.
+> The anchors in the zoom line chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
-## Create a Zoom-line Dual Y-axis Chart
+## Create a Zoom line Dual Y-axis Chart
 
-The FusionCharts Suite XT **zoom-line dual y-axis** chart, like the zoom-line chart, is used to analyze data at macroscopic and microscopic levels. With the dual y-axis, this chart can be used to plot data that belongs to datasets having different numeric units on the same chart—an advantage over using the conventional zoom-line chart.
+The FusionCharts Suite XT **zoom line dual y-axis** chart, like the zoom line chart, is used to analyze data at macroscopic and microscopic levels. With the dual y-axis, this chart can be used to plot data that belongs to datasets having different numeric units on the same chart—an advantage over using the conventional zoom-line chart.
 
-Another advantage of using the zoom-line dual y-axis chart is when you want to compare two datasets where the values of one dataset are spread over a smaller interval, while the values of another have large intervals between them. In this case, if the zoom-line chart was used, the dataset with the smaller interval will be plotted as a straight line.
+Another advantage of using the zoom line dual y-axis chart is when you want to compare two datasets where the values of one dataset are spread over a smaller interval, while the values of another have large intervals between them. In this case, if the zoom-line chart was used, the dataset with the smaller interval will be plotted as a straight line.
 
-To create a zoom-line dual y-axis chart, set the `type` attribute to `zoomlinedy`.
+To create a zoom line dual y-axis chart, set the `type` attribute to `zoomlinedy`.
 
-For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomlinedy) page of zoomlinedy chart.
+For a detailed list of attributes, refer to the [chart attributes](/chart-attributes?chart=zoomlinedy) page of `zoomlinedy` chart.
 
-The chart below shows a zoom-line dual y-axis chart created to compare unique footfall with the sales (in dollars), for each day of the previous year.
+The chart below shows a zoom line dual y-axis chart created to compare unique footfall with the sales (in dollars), for each day of the previous year.
 
 {% embed_all standard-charts-zoom-line-charts-example-6.js %}
 
@@ -90,7 +90,7 @@ A zoom line chart with the maximum number of labels limited looks like this:
 
 {% embed_chart standard-charts-zoom-line-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/) to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/) to edit the zoom line chart.
 
 > **numVisibleLabels** attribute only limits the number of visible data labels; it does not affect the number of visible data points.
 
@@ -108,7 +108,7 @@ Refer to the code given below:
 }
 ```
 
-> The anchors in the zoom-line chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points.
+> The anchors in the zoom line chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
 A zoom line chart with the distance between the consecutive data plots configured looks like this:
 
@@ -167,7 +167,7 @@ A zoom line chart rendered with pre-selected number of data plots looks like thi
 
 Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/) to edit the zoomline chart.
 
-## Customize the Appearance of a Zoom-line Chart
+## Customize the Appearance of a Zoom Line Chart
 
 FusionCharts Suite XT includes several options for customizing the appearance of a zoom line chart. The appearance of chart elements such as the scroll bar and toolbar can be configured.
 

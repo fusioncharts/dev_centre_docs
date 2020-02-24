@@ -718,6 +718,28 @@
             ]
           },
           {
+            "title": "Svelte",
+            "children": [
+              {
+                "title": "Creating your First Chart",
+                "children": [
+                  {
+                    "title": "Your First Chart",
+                    "path": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
+                  },
+                  {
+                    "title": "Your First Gauge",
+                    "path": "/getting-started/sveltejs/your-first-gauge-using-sveltejs"
+                  },
+                  {
+                    "title": "Your First Map",
+                    "path": "/getting-started/sveltejs/your-first-map-using-sveltejs"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "title": "PHP",
             "children": [
               {
@@ -1137,14 +1159,15 @@
         ]
       },
       {
-        "title": "Configuring your charts",
+        "title": "Configuring Your Charts",
         "children": [
           {
             "title": "By Chart Type",
             "children": [
               {
                 "title": "Chart Components",
-                "path": "/understanding-fusioncharts"
+                "path": "/understanding-fusioncharts",
+                "visibility": false
               },
               {
                 "title": "List of Charts",
@@ -1162,7 +1185,7 @@
                     "path": "/chart-guide/standard-charts/pie-and-doughnut-charts"
                   },
                   {
-                    "title": "Multi-Series Charts",
+                    "title": "Multi-series Charts",
                     "path": "/chart-guide/standard-charts/multi-series-charts"
                   },
                   {
@@ -1198,8 +1221,20 @@
                     "path": "/chart-guide/standard-charts/treemap"
                   },
                   {
+                    "title": "Sunburst Chart",
+                    "path": "/chart-guide/standard-charts/sunburst-chart"
+                  },
+                  {
                     "title": "Heat Map Chart",
                     "path": "/chart-guide/standard-charts/heat-map-chart"
+                  },
+                  {
+                    "title": "Sankey Diagram",
+                    "path": "/chart-guide/standard-charts/sankey-diagram"
+                  },
+                  {
+                    "title": "Chord Diagram",
+                    "path": "/chart-guide/standard-charts/chord-diagram"
                   },
                   {
                     "title": "Gantt Chart",
@@ -1266,7 +1301,7 @@
                     "path": "/chart-guide/standard-charts/spline-charts"
                   },
                   {
-                    "title": "Inverse Y Axis Chart",
+                    "title": "Inverse Y-axis Chart",
                     "path": "/chart-guide/standard-charts/inverse-y-axis-chart"
                   },
                   {
@@ -1311,7 +1346,7 @@
                     "path": "/chart-guide/gauges-and-widgets/cylinder-gauge"
                   },
                   {
-                    "title": "Led Gauge",
+                    "title": "LED Gauge",
                     "path": "/chart-guide/gauges-and-widgets/led-gauge"
                   },
                   {
@@ -1360,17 +1395,8 @@
                     "path": "/map-guide/add-drill-down-to-maps"
                   },
                   {
-                    "title": "Map Spec Sheets",
-                    "children": [
-                      {
-                        "title": "Map Marker Data",
-                        "path": "/maps/marker-data/"
-                      },
-                      {
-                        "title": "Map Specification Sheets",
-                        "path": "/maps/spec-sheets/"
-                      }
-                    ]
+                    "title": "Map Specification Sheets",
+                    "path": "/maps/spec-sheets/"
                   }
                 ]
               }
@@ -1480,7 +1506,7 @@
                 "path": "/chart-guide/chart-configurations/toolbar"
               },
               {
-                "title": "Drill-down",
+                "title": "Drill Down",
                 "path": "/chart-guide/chart-configurations/drill-down"
               }
             ]
@@ -1514,11 +1540,11 @@
                 ]
               },
               {
-                "title": "Positioning Annotations using Absolute Values",
+                "title": "Positioning Annotations Using Absolute Values",
                 "path": "/chart-guide/chart-configurations/annotations/positioning-annotations-using-absolute-values"
               },
               {
-                "title": "Positioning Annotations using Macros",
+                "title": "Positioning Annotations Using Macros",
                 "path": "/chart-guide/chart-configurations/annotations/positioning-annotations-using-macros"
               },
               {
@@ -1683,7 +1709,7 @@
                 "path": "/common-use-cases/render-thumbnail-versions-of-chart"
               },
               {
-                "title": "Create Interactive Charts using PHP and MySQL Database",
+                "title": "Create Interactive Charts Using PHP and MySQL Database",
                 "path": "/using-with-server-side-languages/tutorials/php-mysql-charts",
                 "visibility": false
               }
@@ -1777,10 +1803,11 @@
         "children": [
           {
             "title": "Upgrade from Evaluation Versions",
-            "path": "/upgrading/upgrading-from-evaluation-versions"
+            "path": "/upgrading/upgrading-from-evaluation-versions",
+            "visibility": false
           },
           {
-            "title": "Upgrade to v3.14.x",
+            "title": "Upgrade to v3.15.x",
             "children": [
               {
                 "title": "Changelog",
@@ -1788,12 +1815,17 @@
               },
               {
                 "title": "Maps Improvement",
-                "path": "/upgrading/maps-improvement/maps-improvement-3-14-0",
+                "path": "/upgrading/maps-improvement/maps-improvement-3-15-0",
                 "visibility": false
               },
               {
                 "title": "Maps Improvement",
                 "path": "/upgrading/maps-improvement/maps-improvement-3-14-1",
+                "visibility": false
+              },
+              {
+                "title": "Maps Improvement",
+                "path": "/upgrading/maps-improvement/maps-improvement-3-14-0",
                 "visibility": false
               },
               {
@@ -1809,6 +1841,10 @@
           {
             "title": "Version History",
             "children": [
+              {
+                "title": "v3.14.x",
+                "path": "/upgrading/version-history/version-3-14-X"
+              },
               {
                 "title": "v3.13.x",
                 "path": "/upgrading/version-history/version-3-13-X"
@@ -1917,6 +1953,10 @@
             "path": "/fusiontime/getting-started/change-plot-type-in-fusiontime"
           },
           {
+            "title": "Real-Time Data Update",
+            "path": "/fusiontime/getting-started/real-time-data-in-fusiontime"
+          },
+          {
             "title": "Style Definition",
             "path": "/fusiontime/getting-started/style-definition"
           },
@@ -1987,6 +2027,10 @@
         "title": "FusionTime Components",
         "children": [
           {
+            "title": "Plot Types",
+            "path": "/fusiontime/fusiontime-component/plot-types-in-fusiontime"
+          },
+          {
             "title": "Time Axis",
             "path": "/fusiontime/fusiontime-component/time-axis"
           },
@@ -2035,8 +2079,8 @@
             "path": "/fusiontime/fusiontime-component/data-markers"
           },
           {
-            "title": "Plot Types",
-            "path": "/fusiontime/fusiontime-component/plot-types-in-fusiontime"
+            "title": "Legend",
+            "path": "/fusiontime/fusiontime-component/legend-in-fusiontime"
           }
         ]
       },
@@ -2109,7 +2153,7 @@
           },
           {
             "title": "Methods",
-            "path": "/fusiontime/fusiontime-data-engine/fusiontime-events"
+            "path": "/fusiontime/api/fusiontime-methods"
           }
         ]
       },
@@ -2218,6 +2262,7 @@
           },
           {
             "title": "Save exported files to S3",
+            "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three"
           },
           {

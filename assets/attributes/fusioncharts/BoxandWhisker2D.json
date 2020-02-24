@@ -22,7 +22,7 @@
         "name": "palette"
       },
       {
-        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (that is, column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma, for example, `&quot;paletteColors&quot;: &quot;#FF0000, #0372AB, #FF5904...&quot;`. The chart will cycle through the list of specified colors and then render the data plot accordingly.To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
+        "description": "While the `palette` attribute allows to select a palette theme that applies to chart background, canvas, font and tool-tips, it does not change the colors of data items (that is, column, line, pie etc.). Using `paletteColors` attribute, you can specify your custom list of hex colors for the data items. The list of colors have to be separated by comma, for example, `\"paletteColors\": \"#FF0000, #0372AB, #FF5904...\"`. The chart will cycle through the list of specified colors and then render the data plot accordingly.To use the same set of colors throughout all your charts in a web application, you can store the list of palette colors in your application globally and then provide the same in each chart JSON.",
         "range": "List of hex color codes separated by comma",
         "type": "String",
         "name": "paletteColors"
@@ -81,6 +81,118 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showValues"
+      },
+      {
+        "description": "This attribute lets you specify whether the mean value should be displayed `above` or `below` the plots. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "meanValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the mean deviation value should be displayed `above` or `below` the plots. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "MDValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the standard deviation value should be displayed `above` or `below` the plots. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "SDValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the quartile deviation value should be displayed `above` or `below` the plots. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "QDValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the outlier value should be displayed `above` or `below` the plots. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "outlierValuePosition"
+      },
+      {
+        "description": "This attribute lets you set the number of `sides` of a polygon, or `spokes`, which should be displayed when the mean icon is hovered over. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "meanIconSides"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the mean icon is hovered over. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "meanIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the mean deviation icon is hovered over. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "MDIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the standard deviation icon is hovered over. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "SDIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the quartile deviation icon is hovered over. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "QDIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the outlier icon is hovered over. \n\nDefault value: Polygon",
+        "range": "Polygon, Spoke",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "outlierIconShape"
+      },
+      {
+        "description": "This attribute lets you display the mean value of the plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMeanValues"
+      },
+      {
+        "description": "This attribute lets you display the mean deviation value of a plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMDValues"
+      },
+      {
+        "description": "This attribute lets you display the standard deviation value of a plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showSDValues"
+      },
+      {
+        "description": "This attribute lets you display the quartile deviation value of a plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showQDValues"
+      },
+      {
+        "description": "This attribute lets you display the outlier value of a plots. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showOutlierValues"
       },
       {
         "description": "If you have opted to show data values, you can rotate them using this attribute.",
@@ -234,6 +346,13 @@
         "name": "meanIconAlpha"
       },
       {
+        "description": "This attribute lets you set the border color of the mean icon.",
+        "range": "Hex color code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "meanIconBorderColor"
+      },
+      {
         "description": "This attribute allows you to set the shape of the standard deviation icon.",
         "range": "polygon/spoke",
         "type": "string",
@@ -262,6 +381,13 @@
         "range": "0 - 100",
         "type": "Number",
         "name": "SDIconAlpha"
+      },
+      {
+        "description": "This attribute lets you set the border color of the standard deviation icon.",
+        "range": "Hex Color Code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "SDIconBorderColor"
       },
       {
         "description": "This attribute allows you to set the shape of the quartile deviation icon.",
@@ -294,6 +420,13 @@
         "name": "QDIconAlpha"
       },
       {
+        "description": "This attribute lets you set the border color of the quartile deviation icon.",
+        "range": "Hex color code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "QDIconBorderColor"
+      },
+      {
         "description": "This attribute allows you to set the shape of the median icon.",
         "range": "polygon/spoke",
         "type": "String",
@@ -322,6 +455,13 @@
         "range": "0 - 100",
         "type": "Number",
         "name": "MDIconAlpha"
+      },
+      {
+        "description": "This attribute lets you set the border color of the mean deviation icon.",
+        "range": "Hex color code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "MDIconBorderColor"
       },
       {
         "description": "This attribute allows you to draw a line connecting all the mean icons of multiple set of data.",
@@ -378,6 +518,13 @@
         "name": "outlierIconAlpha"
       },
       {
+        "description": "This attribute lets you set the border color of the outlier icon.",
+        "range": "Hex color code",
+        "type": "Color",
+        "Versionsince": "3.15.0",
+        "name": "outlierIconBorderColor"
+      },
+      {
         "description": "This attribute allows you to skip a null value and draw a line connecting the icons of multiple set of data. This is applicable for the mean icon and all the other deviation icons.",
         "range": "0/1",
         "type": "Boolean",
@@ -427,7 +574,7 @@
         "name": "plotHighlightEffect"
       },
       {
-        "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
+        "description": "Whether to show \"Print Chart\" item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
         "range": "0/1",
         "type": "Boolean",
         "name": "showPrintMenuItem"
@@ -437,6 +584,13 @@
         "range": "'fusion', 'gammel', 'candy', 'ocean', 'zune', 'carbon', 'umber'",
         "type": "String",
         "name": "theme"
+      },
+      {
+        "description": "This attribute lets you set the number of categories to be displayed within the chart.",
+        "range": "2-number of data items present in JSON/XML",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "numVisiblePlot"
       }
     ],
     "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show or hide data labels, data values. You can also set chart limits and extended properties. "
@@ -3096,6 +3250,118 @@
         "name": "showValues"
       },
       {
+        "description": "This attribute lets you display the mean value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMeanValues"
+      },
+      {
+        "description": "This attribute lets you display the mean deviation value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMDValues"
+      },
+      {
+        "description": "This attribute lets you display the standard deviation value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showSDValues"
+      },
+      {
+        "description": "This attribute lets you display the quartile deviation value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showQDValues"
+      },
+      {
+        "description": "This attribute lets you display the outlier value for the plots of a particular dataset. If you set the value of this attribute, the value of the `showValues` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showOutlierValues"
+      },
+      {
+        "description": "This attribute lets you specify whether the mean value should be displayed `above` or `below` the plots of a particular dataset. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "meanValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the mean deviation value should be displayed `above` or `below` the plots of a particular dataset. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "MDValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the standard deviation value should be displayed `above` or `below` the plots of a particular dataset. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "SDValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the quartile deviation value should be displayed `above` or `below` the plots of a particular dataset. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "QDValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the outlier value should be displayed `above` or `below` the plots of a particular dataset. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "outlierValuePosition"
+      },
+      {
+        "description": "This attribute lets you set the number of `sides` of a polygon, or `spokes`, which should be displayed when the mean icon is hovered over for a particular dataset. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "meanIconSides"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the mean icon is hovered over for a particular dataset. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "meanIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the mean deviation icon is hovered over for a particular dataset. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "MDIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the standard deviation icon is hovered over for a particular dataset. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "SDIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the quartile deviation icon is hovered over for a particular dataset. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "QDIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the outlier icon is hovered over for a particular dataset. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "outlierIconShape"
+      },
+      {
         "description": "Specifies the font color of data values for a particular dataset.",
         "range": "Hex Color Code",
         "type": "Color",
@@ -3628,7 +3894,7 @@
         "name": "value"
       },
       {
-        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see &quot;Drill-Down &gt; Using JavaScript Functions as Links&quot; for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
+        "description": "You can define links for individual data items. That enables the end user to click on data items (columns, lines, bars etc.) and drill down to other pages. To define the link for data items, use the link attribute. You can define links that open in same window, new window, pop-up window or frames. Please see \"Drill-Down &gt; Using JavaScript Functions as Links\" for more information. Also, you'll need to Url Encode all the special characters (like ? and &) present in the link.",
         "range": "",
         "type": "String",
         "name": "link"
@@ -3644,6 +3910,118 @@
         "range": "0/1",
         "type": "Boolean",
         "name": "showValue"
+      },
+      {
+        "description": "This attribute lets you display the mean value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMeanValue"
+      },
+      {
+        "description": "This attribute lets you display the mean deviation value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showMDValue"
+      },
+      {
+        "description": "This attribute lets you display the standard deviation value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showSDValue"
+      },
+      {
+        "description": "This attribute lets you display the quartile deviation value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showQDValue"
+      },
+      {
+        "description": "This attribute lets you display the outlier value of a particular data plot. If you set the value of this attribute, the value of the `showValue` attribute will be set to `0`.",
+        "range": "0 / 1",
+        "type": "Boolean",
+        "Versionsince": "3.15.0",
+        "name": "showOutlierValue"
+      },
+      {
+        "description": "This attribute lets you specify whether the mean value should be displayed `above` or `below` of a particular data plot. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "meanValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the mean deviation value should be displayed `above` or `below` of a particular data plot. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "MDValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the standard deviation value should be displayed `above` or `below` of a particular data plot. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "SDValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the quartile deviation value should be displayed `above` or `below` of a particular data plot. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "QDValuePosition"
+      },
+      {
+        "description": "This attribute lets you specify whether the outlier value should be displayed `above` or `below` of a particular data plot. \n\nDefault value: above",
+        "range": "above / below",
+        "type": "String",
+        "Versionsince": "3.15.0",
+        "name": "outlierValuePosition"
+      },
+      {
+        "description": "This attribute lets you set the number of `sides` of a polygon, or `spokes`, which should be displayed when the mean icon is hovered over of a particular data plot. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "meanIconSides"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the mean icon is hovered over of a particular data plot. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "meanIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the mean deviation icon is hovered over of a particular data plot. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "MDIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the standard deviation icon is hovered over of a particular data plot. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "SDIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the quartile deviation icon is hovered over of a particular data plot. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "QDIconShape"
+      },
+      {
+        "description": "This attribute lets you specify the shape that should be displayed when the outlier icon is hovered over of a particular data plot. \n\nDefault value: 3",
+        "range": "",
+        "type": "Number",
+        "Versionsince": "3.15.0",
+        "name": "outlierIconShape"
       },
       {
         "description": "Specifies the font color of a data value for an individual data plot.",

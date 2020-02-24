@@ -39,7 +39,7 @@ One of the most ubiquitous types of charts, column charts consist of vertical ba
 
 Before you can build charts with FusionCharts.NET, you need to configure your system to have these loaded:
 
-- Visual Studio IDE and .NET Framework v3.5 (or later)
+- Visual Studio IDE and .NET Framework v3.5 (or later).
 
 - FusionCharts Suite XT, which you can download from [here](https://www.fusioncharts.com/download/fusioncharts-suite-xt?version=2&utm_expid=.oTKMCb4yRvC-v0Bh2zt4KA.1&utm_referrer=https%3A%2F%2Fwww.fusioncharts.com%2Fdownload%2Ffusioncharts-suite-xt%3Fversion%3D2).
 
