@@ -135,7 +135,6 @@ Let's create a chart showing NASDAQ Composite Index. The time series chart looks
 FusionTime allows you to plot range series charts using time series data. The charts can be of two types:
 
 - Column-range
-  \
 - Area-range
 
 ### Column-Range Series Charts
