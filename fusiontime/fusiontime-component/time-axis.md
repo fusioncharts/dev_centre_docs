@@ -215,14 +215,35 @@ If you want to clip dates at equal intervals, use the `unit` and `multiplier` at
 Refer to the code given below:
 
 ```javascript
-code;
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    xAxis: {
+      timemarker: [
+        {
+          start: "2018-01-12 16:00",
+          end: "2018-01-15 09:30",
+          type: "full",
+          timeFormat: "%Y-%m-%d %H:%M",
+          label: "Stock Market closed"
+        },
+        {
+          start: "2018-02-19",
+          // end: '2018-02-19 09:30',
+          type: "full",
+          timeFormat: "%Y-%m-%d",
+          label: "Stock Market closed"
+        }
+      ]
+      // clip
+    }
+  }
+});
 ```
 
 The live chart will look as shown below:
 
 {% embed_ftChart clip-time-axis %}
-
-Click [here](https://jsfiddle.net/fusioncharts/pkwegLjc/) to edit the above chart.
 
 ## Output time format
 
