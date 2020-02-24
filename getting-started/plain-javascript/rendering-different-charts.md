@@ -21,7 +21,7 @@ A Multi-series chart is used to plot data for more than one series 
 
 In a multi-series chart, we have two or more datasets plotted against the same X-axis (or Y-axis) value. Let us build a Multi-series Column 2D Chart.
 
-{%embed_chart standard-charts-multi-series-charts-example-1.js %}
+{% embed_chart standard-charts-multi-series-charts-example-1.js %}
 
 As you can see, a Multi-series Column 2D Chart has vertically aligned rectangular bars on one axis with discrete values shown on the other. The length of a column is proportionate to the value it represents.
 
@@ -189,7 +189,7 @@ In the above chart, we have plotted monthly values for projected revenue, actual
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-<<Data Anatomy - combination chart>>
+{% embed_chartAnatomy combination-data.json %}
 
 As shown in the sample above, the chart compares the monthly sales and profits of the Supermart. The data in the JSON format for the above chart looks as follows:
 
@@ -419,7 +419,7 @@ In the above chart, we have plotted values of a stock (of Harry’s Supermart) o
 
 The diagram below can give you an idea about how we are going to assign values to these properties. 
 
-<<Data Anatomy - Real-time chart>>
+{% embed_chartAnatomy real-time-data.json %}
 
 In the sample above, the chart shows the values of the Harry’s Supermart stock throughout a single business day, at intervals of 5 seconds. The data in the JSON format for the above chart looks as follows:
 
@@ -602,7 +602,7 @@ FusionCharts accepts data in JSON format. To convert this to a data format that 
 
 The diagram below can give you an idea about how we are going to assign values to these properties. 
 
-<Data Anatomy - gauge>
+{% embed_chartAnatomy angular-gauge-data.json %}
 
 The following code is the JSON representation of the tabular column with the required attributes to render the above gauge.The data in the JSON format for the above gauge looks as follows:
 ```
@@ -744,7 +744,7 @@ To convert the data provided in the above table to a data format that FusionChar
 
 The diagram below can give you an idea about how we are going to assign values to these properties. 
 
-<Map anatomy>
+{% embed_chartAnatomy world-map-data.json %}
 
 The following code is the JSON representation of the tabular column with the required attributes to render the above map.The data in the JSON format for the above map looks as follows:
 
@@ -795,8 +795,7 @@ const data = [{
     "showLabel": "1"
 }];
 ```
-
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create. Now that the data is ready, include the map definition files and get ready to render your chart. The consolidated code is given below:
 
 ```
 <html>
@@ -895,7 +894,7 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-That’s it. Your first map is ready. You can find more about the differnet types of maps here.
+That’s it. Your first map is ready. FusionCharts offers you more than 2000 different maps suitable for various purposes. You can find more about the different types of maps [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
 
 ## Heat Map
@@ -920,9 +919,9 @@ To convert the data provided in the above table to a data format that FusionChar
 - `dataset`
 - `colorRange`
 
-The diagram below can give you an idea about how we are going to assign values to these properties. 
+The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy heat-map-chart.json %}
+{% embed_chartAnatomy heat-map-data.json %}
 
 In the sample above, the chart shows the heat map for comparing different smartphones on the basis of a number of common components. The data in the JSON format for the above chart looks as follows:
 
@@ -1416,7 +1415,7 @@ As you can see in the Gantt chart above, the data plot is indicating the planned
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy gantt-chart.json %}
+{% embed_chartAnatomy gantt-chart-data.json %}
 
 In the sample above, the chart shows the project structure for opening a new store. The data in the JSON format for the above chart looks as follows:
 
