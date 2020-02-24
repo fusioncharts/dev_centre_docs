@@ -10,39 +10,41 @@ heading: Version 3.15.x
 
 <h4>New Features</h4>
 
-- The scrollbar has been decoupled from the xAxis and can now be placed away from it.
+- FusionCharts now supports the open source Ionic framework, which lets you develop mobile user interfaces with a native look and feel. You can now add interactive charts to any Ionic Framework project using the bindings available for different platforms supported by FusionCharts.
 
-- Legends can now be positioned anywhere in the chart - left, right, top, bottom, etc. Legends can also be positioned with absolute coordinates (x,y).
+- The scrollbar has been [decoupled from the xAxis](/chart-guide/chart-configurations/axes#decouple-scrollbar-from-x-axis) and can now be placed away from it.
+
+- Legends can now be positioned anywhere within the chart canvas - [left, right, top, bottom](/chart-guide/chart-configurations/legend#set-the-legend-position), etc. Legends can also be positioned with absolute coordinates (x, y).
 
 <h4>Improvements</h4>
 
-- The `textOutline` attribute can now be applied to data labels across Sankey, Sunburst, and Chord diagrams, to improve visibility.
+- The `textOutline` attribute can now be applied to data labels across [Sunburst](/chart-guide/standard-charts/sunburst-chart#increase-chart-label-visibility), Sankey, and Chord diagrams, to improve visibility.
 
-- The number of rows in a legend can now be defined. Earlier, only the number of columns could be defined.
+- The number of [rows in a legend](/chart-guide/chart-configurations/legend#set-number-of-rows-columns-in-the-legend) can now be defined. Earlier, only the number of columns could be defined.
 
-- New macros have been added to Error Bar 2D, Error Line, and Error Scatter charts. Click here to get the list of newly added macros.
+- New macros have been added to Error Bar 2D, Error Line, and Error Scatter charts. Click [here](/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros) to get the list of newly added macros.
 
-- When the Candlestick, Treemap, Spark, Gantt, and Select Scatter charts are exported in XLSX format, the XLSX files now display the chart data correctly. In earlier versions, the exported files would be blank.
+- When the Candlestick, Treemap, Gantt, and Select Scatter charts are exported in CSV or XLSX format, the exported files now display the chart data correctly.
 
 - When a Bubble chart is exported in XLSX format, the exported file now includes a column with the plot labels, to help you comprehend the data better. Earlier, this column was not included in the XLSX file.
 
 - Multi-level Pie Charts exported in XLSX formats now include data values along with categories. Earlier, only the categories were presented in the exported file.
 
-- Passing JS methods inside `label` attribute no longer throw alert boxes along with error messages on the browser console. Earlier, on changing '%26lt;' to '<' and '%26gt;' to '>' was displaying an error message and throwing multiple alert boxes. It helps in reducing the vulnerability attack.
+- Passing JS methods inside `label` attribute no longer throw alert boxes along with error messages on the browser console. Earlier, on changing '%26lt;' to '<' and '%26gt;' to '>' was displaying an error message and throwing multiple alert boxes. It helps in reducing vulnerability attacks.
 
-- The `dataLabelRollOver` event was also getting triggered when the cursor was hovered over y-axis values. Previously it used to happen for both xAxis and yAxis labels.
-
-- In this version, 11 core map files have been updated. [here](/upgrading/maps-improvement/maps-improvement-3-15-1) to get the list of updated maps.
+- In this version, 11 core map files have been updated. Click [here](/upgrading/maps-improvement/maps-improvement-3-15-1) to get the list of updated maps.
 
 <h4>Fixes</h4>
 
 - X-axis labels are now displayed properly when they are rotated, base font size is set, and the legend is displayed to the right. Earlier, in similar situations, chart canvases with a width greater than 650 pixels would show partially truncated labels for specific base font sizes.
 
+- The `dataLabelRollOver` event was also getting triggered when the cursor was hovered over y-axis values. Previously it used to happen for both xAxis and yAxis labels.
+
 - The attributes `labelXPadding` and `labelYPadding` are now working properly in the Heat Map chart. They were not working earlier.
 
 - Hand cursor is now displayed properly when the `link` attribute is used in a chart and the cursor is hovered over data plots and data values. Earlier, the hand cursor was not displayed when the cursor was hovered over the data values.
 
-- When using `batchExport`, if chart height or width is set to 100% and the chart is exported as an image, then the image is properly visible. Earlier, the image was not visible in such situations.
+- When using `batchExport`, if the chart height or width is set to 100% and the chart is exported as an image, then the image is properly visible. Earlier, the image was not visible in such situations.
 
 - The `widthPercent` attribute is now working properly in Marimekko charts. Earlier, in category objects, the attribute was not working, and all the categories were being assigned equal widths.
 
@@ -64,15 +66,15 @@ heading: Version 3.15.x
 
 - The zero plane is no longer visible over the plots in Multi-series Combination Dual Y-axis 3D chart. Earlier, it was overlapping the data plots.
 
-- `tooltipBorderRadius` attribute is now working properly in Heat Map charts in all browsers. The attribute is also working properly in every chart on IE8. Earlier, the attribute was not working on any chart.
+- `tooltipBorderRadius` attribute is now working properly in Heat Map charts in all browsers. Earlier, the attribute was not working on any chart. However, please note that this attribute does not work in Internet Explorer 8, as the browser does not support rounded edges of tooltip borders set using CSS.
 
 - In Bubble charts, vertical lines with thickness greater than 2 are now rendered within the chart canvas. Earlier, these lines would overlap out of the chart canvas.
 
 - In realtime charts, clicking on the Stop Update menu item no longer makes the menu unclickable on Internet Explorer.
 
-- Previously, on chart update the sum values of stacked chart could not be removed. The issue has now been fixed.
+- Previously, on chart update the sum values of the stacked chart could not be removed. The issue has now been fixed.
 
-- In pyramid and funnel charts, updating the theme now works perfectly. Earlier, doing so would throw a JS error.
+- In the pyramid and funnel charts, updating the theme now works perfectly. Earlier, doing so would throw a JS error.
 
 - In Multi-series 3D charts, when the value of the attribute `use3DLighting` is set to `0` and the value of `alpha` is set to `0` at `data` level, the plots are now rendered correctly. Earlier, in such situations, the plots would not be visible.
 
