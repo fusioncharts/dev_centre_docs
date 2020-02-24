@@ -6,8 +6,6 @@ heading: What's New
 
 This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.15.1.
 
-It's been a while since we introduced a new chart. So this time around, we thought why not surprise you and bring in three new charts, highly requested by you, that aid in visualizing newer forms of data.
-
 ## Set the Legend Position
 
 You can now use the following attributes to set legend position:
