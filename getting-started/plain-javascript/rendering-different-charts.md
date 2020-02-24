@@ -3,8 +3,8 @@ title: Rendering different Charts | FusionCharts
 heading: Rendering Different Charts11
 description: This article outlines some of the popular charts and the way to render them with their respective data formats.
 ---
-# Rendering Different Charts - Test1
-By now11111, we assume that you have already built a single series column chart, and have a basic grasp over the way FusionCharts works. If you have not done so yet, we recommend visiting [this](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript) tutorial to build your first chart and returning to this later.
+# Rendering Different Charts - Test2
+By now1111122, we assume that you have already built a single series column chart, and have a basic grasp over the way FusionCharts works. If you have not done so yet, we recommend visiting [this](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript) tutorial to build your first chart and returning to this later.
 
 In this tutorial, we shall discuss how you can work with different data formats in FusionCharts. We’ll be building various types of charts, gauges and maps using FusionCharts like
 - Multi Series Charts - this is testing
