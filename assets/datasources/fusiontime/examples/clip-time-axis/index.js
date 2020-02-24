@@ -2,7 +2,7 @@
     type: 'timeseries',
     renderAt: 'container',
     width: "100%",
-    height: 500,
+    height: 490,
     dataSource: {
         data: dataStore,
         chart: {
@@ -37,7 +37,7 @@
                     label: 'Stock Market closed'
                 }
             ]
-            // clip: 
+            // clip
         },
         yAxis: [{
                 plot: {
