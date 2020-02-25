@@ -1,25 +1,25 @@
 {
     type: 'heatmap',
-    renderAt: 'chart-container',
-    width: '700',
-    height: '350',
-    dataFormat: 'json',
-    dataSource: {
+        renderAt: 'chart-container',
+            width: '100%',
+                height: '350',
+                    dataFormat: 'json',
+                        dataSource: {
         "chart": {
             "caption": "Top Smartphone Ratings",
-            "subcaption": "By Features",
-            "xAxisName": "Features",
-            "yAxisName": "Model",
-            "showplotborder": "1",
-            "showValues": "1",
-            "xAxisLabelsOnTop": "1",
-            "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
-            //Cosmetics
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "toolTipBorderRadius": "2",
-            "toolTipPadding": "5",
-            "theme": "fusion"
+                "subcaption": "By Features",
+                    "xAxisName": "Features",
+                        "yAxisName": "Model",
+                            "showplotborder": "1",
+                                "showValues": "1",
+                                    "xAxisLabelsOnTop": "1",
+                                        "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
+                                            //Cosmetics
+                                            "baseFontColor": "#333333",
+                                                "baseFont": "Helvetica Neue,Arial",
+                                                    "toolTipBorderRadius": "2",
+                                                        "toolTipPadding": "5",
+                                                            "theme": "fusion"
         },
         "dataset": [{
             "data": [{
@@ -140,28 +140,28 @@
                 "trlabel": "Front Camera : 1.2 MP"
             }]
         }],
-        "colorrange": {
+            "colorrange": {
             "gradient": "0",
-            "minvalue": "0",
-            "code": "E24B1A",
-            "startlabel": "Poor",
-            "endlabel": "Good",
-            "color": [{
-                "code": "E24B1A",
-                "minvalue": "1",
-                "maxvalue": "5",
-                "label": "Bad"
-            }, {
-                "code": "F6BC33",
-                "minvalue": "5",
-                "maxvalue": "8.5",
-                "label": "Average"
-            }, {
-                "code": "6DA81E",
-                "minvalue": "8.5",
-                "maxvalue": "10",
-                "label": "Good"
-            }]
+                "minvalue": "0",
+                    "code": "E24B1A",
+                        "startlabel": "Poor",
+                            "endlabel": "Good",
+                                "color": [{
+                                    "code": "E24B1A",
+                                    "minvalue": "1",
+                                    "maxvalue": "5",
+                                    "label": "Bad"
+                                }, {
+                                    "code": "F6BC33",
+                                    "minvalue": "5",
+                                    "maxvalue": "8.5",
+                                    "label": "Average"
+                                }, {
+                                    "code": "6DA81E",
+                                    "minvalue": "8.5",
+                                    "maxvalue": "10",
+                                    "label": "Good"
+                                }]
         }
     }
 }
