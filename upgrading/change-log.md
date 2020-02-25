@@ -10,7 +10,7 @@ heading: Version 3.15.x
 
 <h4>New Features</h4>
 
-- FusionCharts now supports the open source Ionic framework, which lets you develop mobile user interfaces with a native look and feel. You can now add interactive charts to any Ionic Framework project using the bindings available for different platforms supported by FusionCharts.
+- FusionCharts now supports the open source Ionic framework, which lets you develop mobile user interfaces with a native look and feel. You can now add interactive charts to any Ionic Framework project using the bindings available for different platforms ([React](/getting-started/ionic-framework/ionic-framework-using-react) and [Angular](/getting-started/ionic-framework/ionic-framework-using-angular)) supported by FusionCharts.
 
 - The scrollbar has been [decoupled from the xAxis](/chart-guide/chart-configurations/axes#decouple-scrollbar-from-x-axis) and can now be placed away from it.
 

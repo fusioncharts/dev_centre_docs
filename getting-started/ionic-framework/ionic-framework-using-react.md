@@ -24,20 +24,20 @@ To get Node.js (if not installed), you can go to the [official website](https://
 Enter the following command to install ionic.
 
 ```shell
-\$ npm install -g ionic
+$ npm install -g ionic
 ```
 
 Now that Ionic is installed, let's set up an **Ionic** project.Follow the steps below:
 
 ```shell
-\$ ionic start myApp tabs --type react
+$ ionic start myApp tabs --type react
 cd myApp
 ```
 
 Start the development server by the entering the following command:
 
 ```shell
-\$ ionic serve
+$ ionic serve
 ```
 
 Now, open [http://localhost:8100](http://localhost:8100) to see your Ionic app.
