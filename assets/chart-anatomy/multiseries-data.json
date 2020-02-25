@@ -13,7 +13,7 @@
                         "annotationName": "dataset",
                         "annotationDesc": "Dataset is the entire data structure of the chart. It's an array constituting different data series",
                         "annotationDescLinkPath": null,
-                        "syntax": "[\r\n  {\r\n    \"seriesname\": \"Previous Year\",\r\n    \"data\": [\r\n      { \"value\": \"12000\" },\r\n      { \"value\": \"10500\" },\r\n      { \"value\": \"23500\" },\r\n      { \"value\": \"16000\" }\r\n    ]\r\n  },\r\n  {\r\n    \"seriesname\": \"Current Year\",\r\n    \"data\": [\r\n      { \"value\": \"24400\" },\r\n      { \"value\": \"29800\" },\r\n      { \"value\": \"20800\" },\r\n      { \"value\": \"26800\" }\r\n    ]\r\n  }\r\n]",
+                        "syntax": "[\r\n  {\r\n    \"seriesname\": \"Previous Year\",\r\n    \"data\": [\r\n      { \"value\": \"12000\" },\r\n      { \"value\": \"10500\" },....\r\n    ]\r\n  },...\r\n]",
                         "leftPosition": "16.5%",
                         "topPosition": "16.5%",
                         "annotationLinks": []
@@ -23,7 +23,7 @@
                         "annotationName": "Categories",
                         "annotationDesc": "Categories depict different classes of the data, structured for the visual representation ",
                         "annotationDescLinkPath": null,
-                        "syntax": "[{\"category\":[{\"label\":\"Q1\"},{\"label\":\"Q2\"},{\"label\":\"Q3\"},{\"label\":\"Q4\"}]}]",
+                        "syntax": "[\r\n  {\r\n    \"category\": [\r\n      { \"label\": \"Q1\" },\r\n      { \"label\": \"Q2\" },...\r\n    ]\r\n  }\r\n]",
                         "leftPosition": "16%",
                         "topPosition": "73%",
                         "annotationLinks": [
@@ -37,7 +37,7 @@
                         "annotationName": "Data Series1",
                         "annotationDesc": "The first series of the multi-series chart representing revenue of the previous year across its quarters",
                         "annotationDescLinkPath": null,
-                        "syntax": "{\"seriesname\":\"Previous Year\",\"data\":[{\"value\":\"12000\"},{\"value\":\"10500\"},{\"value\":\"23500\"},{\"value\":\"16000\"}]}",
+                        "syntax": "{\r\n    \"seriesname\": \"Previous Year\",\r\n    \"data\": [\r\n      { \"value\": \"12000\" },\r\n      { \"value\": \"10500\" },...\r\n    ]\r\n}",
                         "leftPosition": "29.5%",
                         "topPosition": "87.5%"
                     },
@@ -45,7 +45,7 @@
                         "annotationNumber": "4",
                         "annotationName": "Data Series2",
                         "annotationDesc": "The second series of the multi-series chart representing revenue of the current year across its quarters",
-                        "syntax": "{\"seriesname\":\"Current Year\",\"data\":[{\"value\":\"24400\"},{\"value\":\"29800\"},{\"value\":\"20800\"},{\"value\":\"26800\"}]}",
+                        "syntax": "{\r\n    \"seriesname\": \"Current Year\",\r\n    \"data\": [\r\n      { \"value\": \"24400\" },\r\n      { \"value\": \"29800\" },...\r\n    ]\r\n  }",
                         "annotationDescLinkPath": null,
                         "leftPosition": "64.5%",
                         "topPosition": "87.5%"
