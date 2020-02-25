@@ -744,11 +744,11 @@
             "children": [
               {
                 "title": "Using React",
-                "path": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
+                "path": "/getting-started/ionic-framework/ionic-framework-using-react"
               },
               {
                 "title": "Using Angular",
-                "path": "/getting-started/sveltejs/your-first-gauge-using-sveltejs"
+                "path": "/getting-started/ionic-framework/ionic-framework-using-angular"
               }
             ]
           },
