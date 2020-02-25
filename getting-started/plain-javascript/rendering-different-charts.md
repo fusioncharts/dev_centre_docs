@@ -42,6 +42,7 @@ In the above chart, we have plotted quarters with data values for th
 2. `dataset`
 
 The illustration below can give you an idea about how we are going to assign values to these properties.
+
 {% embed_chartAnatomy multiseries-data.json %}
 
 As shown in the sample above, the chart compares the quarterly sales of a company for over two years. The data in the JSON format for the above chart looks as follows:
