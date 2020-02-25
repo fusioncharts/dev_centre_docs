@@ -13,7 +13,7 @@
                         "annotationName": "dataset",
                         "annotationDesc": "Dataset is the entire data structure of the chart. It's an array constituting different data series",
                         "annotationDescLinkPath": null,
-                        "syntax": "[{\"seriesname\":\"Previous Year\",\"data\":[{\"value\":\"12000\"},{\"value\":\"10500\"},{\"value\":\"23500\"},{\"value\":\"16000\"}]},{\"seriesname\":\"Current Year\",\"data\":[{\"value\":\"24400\"},{\"value\":\"29800\"},{\"value\":\"20800\"},{\"value\":\"26800\"}]}]",
+                        "syntax": "[\r\n  {\r\n    \"seriesname\": \"Previous Year\",\r\n    \"data\": [\r\n      { \"value\": \"12000\" },\r\n      { \"value\": \"10500\" },\r\n      { \"value\": \"23500\" },\r\n      { \"value\": \"16000\" }\r\n    ]\r\n  },\r\n  {\r\n    \"seriesname\": \"Current Year\",\r\n    \"data\": [\r\n      { \"value\": \"24400\" },\r\n      { \"value\": \"29800\" },\r\n      { \"value\": \"20800\" },\r\n      { \"value\": \"26800\" }\r\n    ]\r\n  }\r\n]",
                         "leftPosition": "16.5%",
                         "topPosition": "16.5%",
                         "annotationLinks": []
