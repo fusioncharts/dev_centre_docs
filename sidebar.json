@@ -740,6 +740,19 @@
             ]
           },
           {
+            "title": "Ionic Framework",
+            "children": [
+              {
+                "title": "Using React",
+                "path": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
+              },
+              {
+                "title": "Using Angular",
+                "path": "/getting-started/sveltejs/your-first-gauge-using-sveltejs"
+              }
+            ]
+          },
+          {
             "title": "PHP",
             "children": [
               {
