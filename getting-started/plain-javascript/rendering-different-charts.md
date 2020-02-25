@@ -4,10 +4,12 @@ description: This article outlines some of the popular charts and the�
 heading: Rendering Different Charts11
 ---
 
-By now11, we assume that you have already built a single series column chart, and have a basic grasp over the way FusionCharts works. If you have not done so yet, we recommend visiting [this](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript) tutorial to build your first chart and returning to this later.
+# Rendering Different Charts
 
-In this tutorial, we shall discuss how you can work with different data formats in FusionCharts. We’ll be building various types of charts, gauges and maps using FusionCharts like
-- Multi Series Charts - this is testing
+By now, we assume that you have already built a single series column chart, and have a basic grasp over the way FusionCharts works. If you have not done so yet, we recommend visiting [this](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript) tutorial to build your first chart and returning to this later.
+
+In this tutorial, we shall discuss how you can work with different data formats in FusionCharts. We’ll be building some types of charts, gauges and maps using FusionCharts like
+- Multi Series Charts
 - Combination Charts
 - Real-time Chart
 - Gauges
@@ -40,7 +42,6 @@ In the above chart, we have plotted quarters with data values for th
 2. `dataset`
 
 The illustration below can give you an idea about how we are going to assign values to these properties.
-
 {% embed_chartAnatomy multiseries-data.json %}
 
 As shown in the sample above, the chart compares the quarterly sales of a company for over two years. The data in the JSON format for the above chart looks as follows:
