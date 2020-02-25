@@ -11,7 +11,7 @@
                     {
                         "annotationNumber": "1",
                         "annotationName": "dataset",
-                        "annotationDesc": "Dataset is the entire data structure of the chart. It's an array constituting different data series",
+                        "annotationDesc": "An array constituting different data series. Dataset here represents the data values concerning different categories.",
                         "annotationDescLinkPath": null,
                         "syntax": "[\r\n  {\r\n    \"seriesname\": \"Previous Year\",\r\n    \"data\": [\r\n      { \"value\": \"12000\" },\r\n      { \"value\": \"10500\" },....\r\n    ]\r\n  },...\r\n]",
                         "leftPosition": "16.5%",
@@ -35,7 +35,7 @@
                     {
                         "annotationNumber": "3",
                         "annotationName": "Data Series1",
-                        "annotationDesc": "The first series of the multi-series chart representing revenue of the previous year across its quarters",
+                        "annotationDesc": "The first series of the multi-series chart, representing revenue of the previous year across its quarters",
                         "annotationDescLinkPath": null,
                         "syntax": "{\r\n    \"seriesname\": \"Previous Year\",\r\n    \"data\": [\r\n      { \"value\": \"12000\" },\r\n      { \"value\": \"10500\" },...\r\n    ]\r\n}",
                         "leftPosition": "29.5%",
@@ -44,7 +44,7 @@
                     {
                         "annotationNumber": "4",
                         "annotationName": "Data Series2",
-                        "annotationDesc": "The second series of the multi-series chart representing revenue of the current year across its quarters",
+                        "annotationDesc": "The second series of the multi-series chart, representing revenue of the current year across its quarters",
                         "syntax": "{\r\n    \"seriesname\": \"Current Year\",\r\n    \"data\": [\r\n      { \"value\": \"24400\" },\r\n      { \"value\": \"29800\" },...\r\n    ]\r\n  }",
                         "annotationDescLinkPath": null,
                         "leftPosition": "64.5%",

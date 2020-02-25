@@ -11,23 +11,28 @@
                     {
                         "annotationNumber": "1",
                         "annotationName": "dataset",
-                        "annotationDesc": "Dataset is the entire data structure of the chart. It's an array constituting different data series",
+                        "annotationDesc": "Dataset is the entire data value representation of the plot. An array of values at each time interval.",
                         "annotationDescLinkPath": null,
-                        "syntax": " {\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeRender\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
-                        "leftPosition": "16.5%",
+                        "syntax": "[{\r\n    \"data\": [\r\n      { \"value\": \"35.27\" },\r\n    ]\r\n}]",
+                        "leftPosition": "26.5%",
                         "topPosition": "16.5%",
-                        "annotationLinks": []
+                        "annotationLinks": [
+                            {
+                                "linkDesc": "This data for a real-time chart is fed through multiple methods."
+                            }
+                        ]
                     },
                     {
                         "annotationNumber": "2",
                         "annotationName": "Categories",
                         "annotationDesc": "Categories depict different classes of the data, structured for the visual representation ",
+                        "syntax": "[{\r\n    \"category\": [\r\n      { \"label\": \"Day Start\" },\r\n    ]\r\n}]",
                         "annotationDescLinkPath": null,
-                        "leftPosition": "16%",
-                        "topPosition": "73%",
+                        "leftPosition": "17%",
+                        "topPosition": "72%",
                         "annotationLinks": [
                             {
-                                "linkDesc": "It is an array of labels representing different quarters as shown above"
+                                "linkDesc": "It is an array of labels representing different timestamps as can be seen in the sample"
                             }
                         ]
                     }

@@ -13,8 +13,8 @@
                         "annotationName": "categories",
                         "annotationDesc": "An array of objects made up of individual categories (mostly time - day, week, month).",
                         "annotationDescLinkPath": null,
-                        "syntax": " {\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeRender\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
-                        "leftPosition": "16.5%",
+                        "syntax": "[{\r\n    \"bgcolor\": \"#999999\",\r\n    \"align\": \"middle\",\r\n    \"fontcolor\": \"#ffffff\",\r\n    \"fontsize\": \"12\",\r\n    \"category\": [{\r\n    \"start\": \"1\/4\/2014\",\r\n    \"end\": \"30\/4\/2014\",\r\n    \"label\": \"April\"\r\n    }, ...]\r\n}]",
+                        "leftPosition": "45.5%",
                         "topPosition": "16.5%",
                         "annotationLinks": []
                     },
@@ -23,37 +23,37 @@
                         "annotationName": "processes",
                         "annotationDesc": "An array representing different tasks the Gantt chart is accounting for. Each process has a label and an id.",
                         "annotationDescLinkPath": null,
+                        "syntax": "{\r\n    \"headertext\": \"Task\",\r\n    \"bgcolor\": \"#6baa01\",\r\n    \"process\": [{\r\n        \"label\": \"Clear site\",\r\n        \"id\": \"1\"\r\n        }, ....]\r\n}",
                         "leftPosition": "16%",
-                        "topPosition": "73%",
-                        "annotationLinks": [
-                            {
-                                "linkDesc": "It is an array of labels representing different quarters as shown above"
-                            }
-                        ]
+                        "topPosition": "22%",
+                        "annotationLinks": []
                     },
                     {
                         "annotationNumber": "3",
                         "annotationName": "datatable",
                         "annotationDesc": "datatable is a table with multiple columns where we can capture any necessary information about the tasks",
                         "annotationDescLinkPath": null,
-                        "leftPosition": "29.5%",
-                        "topPosition": "87.5%"
+                        "syntax": "{\r\n    \"showprocessname\": \"1\",\r\n    \"datacolumn\": [{\r\n        \"headertext\": \"Actual{br}Start{br}Date\",\r\n        \"text\": [{\r\n            \"label\": \"9\/4\/2014\"\r\n        }, ...]\r\n    },...]\r\n}",
+                        "leftPosition": "25.5%",
+                        "topPosition": "17.5%"
                     },
                     {
                         "annotationNumber": "4",
                         "annotationName": "tasks",
                         "annotationDesc": "The timeline of different tasks across the processes and the mentioned categories. Each task consists of a processId, id , start date and end date.",
                         "annotationDescLinkPath": null,
-                        "leftPosition": "64.5%",
-                        "topPosition": "87.5%"
+                        "syntax": "{\r\n    \"task\": [{\r\n    \"label\": \"Planned\",\r\n    \"processid\": \"1\",\r\n    \"start\": \"9\/4\/2014\",\r\n    \"end\": \"12\/4\/2014\",\r\n    \"id\": \"1-1\",\r\n    }, {\r\n    \"label\": \"Actual\",\r\n    \"processid\": \"1\",\r\n    \"start\": \"9\/4\/2014\",\r\n    \"end\": \"12\/4\/2014\",\r\n    \"id\": \"1\",\r\n    }, ...]\r\n}",
+                        "leftPosition": "55.5%",
+                        "topPosition": "27.5%"
                     },
                     {
                         "annotationNumber": "5",
                         "annotationName": "connectors",
                         "annotationDesc": "Represents the linkages between different tasks. Each connector has fromtaskid, totaskid and its styling parameters.",
                         "annotationDescLinkPath": null,
-                        "leftPosition": "64.5%",
-                        "topPosition": "87.5%"
+                        "syntax": "[{\r\n    \"connector\": [{\r\n    \"fromtaskid\": \"1\",\r\n    \"totaskid\": \"2\",\r\n    \"fromtaskconnectstart_\": \"1\"\r\n    }, ....]\r\n}]",
+                        "leftPosition": "72.5%",
+                        "topPosition": "40.5%"
                     }
                 ]
             }

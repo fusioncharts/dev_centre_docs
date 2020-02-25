@@ -158,7 +158,7 @@ Now that the data is ready, let us dive in directly to render the 
 </html>
 ```
 
-You can also create various charts belonging to the multi-series family in a similar way. Check out the different types of multi-series charts here.
+You can also create various charts belonging to the multi-series family in a similar way. Check out the different types of multi-series charts [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts).
 
 ## Combination Charts
 
@@ -219,6 +219,7 @@ const categories =  [
 const dataset = [
   {
     "seriesname": "Actual Revenue",
+    "renderAs": "column",
     "data": [
         {"value": "16000"},
         {"value": "20000"},
@@ -236,6 +237,7 @@ const dataset = [
   },
   {
     "seriesname": "Projected Revenue",
+    "renderAs": "line",
     "data": [
         {"value": "15000"},
         {"value": "16000"},
@@ -404,7 +406,7 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-You can also create various charts belonging to the combination type in a similar way. Check out the different types of combination charts here.
+You can also create various charts belonging to the combination type in a similar way. Check out the different types of combination charts [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts).
 
 ## Real Time Charts
 Real-time charts are also referred to as data streaming charts, because they can automatically update themselves at regular intervals, by fetching new data from the server and discarding the previous values. You do not need to keep refreshing the page to see the updated versions of these charts. 
@@ -413,7 +415,7 @@ FusionCharts XT supports six types of Real-time charts - Line, Area, Column, Sta
 
 {% embed_chart standard-charts-real-time-charts-example-2.js %}
 
-As you can see in the real-time 2D area chart above, the data plot is presenting the values present at a given instance. As soon as new values are available in the source data, the chart will update itself with the fresh values, gradually discarding the data plots displayed above. 
+As you can see in the real-time 2D area chart above, the data plot is presenting the values present at a given instance. As soon as new values are available in the source data, the chart will update itself with the fresh values, gradually discarding the data plots displayed above.
 
 In the above chart, we have plotted values of a stock (of Harry’s Supermart) on a business day, at intervals of 5 seconds between any two consecutive values. To convert the data provided in the above table to a data format that FusionCharts can use, you need the following two properties:
 - `categories`
@@ -427,24 +429,17 @@ In the sample above, the chart shows the values of the Harry’s Supermart stock
 
 ```
 // Define the category representing the labels on the X-axis
-const categories =  [
-  {
+const categories =  [{
     "category": [
-      { "label": "Day Start" },...
+      { "label": "Day Start" },
     ]
-  }
-]
+}]
 // Construct the dataset
-const dataset = [
-  {
-    "seriesname": "Time",
+const dataset = [{
     "data": [
-      { "value": "10:32:58" },
-      { "value": "10:33:03" },
-      { "value": "10:33:08" }, ...
+      { "value": "35.27" },
     ]
-  }
-]
+}]
 ```
 
 Now that we’ve seen the structuring of the data object, let us deal with feeding the real-time data into this format. There are multiple ways in which one can feed real-time data to FusionCharts.
@@ -578,7 +573,7 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
 </html>
 ```
 
-You can also create various types of real-time charts in a similar way. Check out the different types of real-time charts here.
+You can also create various types of real-time charts in a similar way. Check out the different types of real-time charts [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts).
 
 ## Gauges
 Gauges are powerful tools that can showcase information using a radial or linear scale to display data. An angular gauge is used to show a specific value over a radial scale. The gauge is rendered with a radial scale that displays the data range.
@@ -716,7 +711,7 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-You can also create various charts belonging to the gauges family in a similar way. Check out the different types of gauges here.
+You can also create various charts belonging to the gauges family in a similar way. Check out the different types of gauges [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#gauges).
 
 ## Maps
 FusionMaps XT offers interactive maps that allow you to plot geographical data, such as revenue by regions, population by state, survey and election results. You can also add markers to pinpoint specific locations and routes. FusionMaps XT has over 1000 maps including all continents, major countries and all the US states.
@@ -727,7 +722,7 @@ In the section below, we will see how to build a world map.
 
 {% embed_chart getting-started-your-first-map.js %}
 
-As you can see in the map above, the data plot is indicating the average annual population growth across the 7 continents. 
+As you can see in the map above, the data plot is indicating the average annual population growth across the 7 continents.
 
 | State | Entity Name | Value |
 | ----- | ----------- | ----- ||
@@ -744,7 +739,7 @@ To convert the data provided in the above table to a data format that FusionChar
 - `id`
 - `value`
 
-The diagram below can give you an idea about how we are going to assign values to these properties. 
+The diagram below can give you an idea about how we are going to assign values to these properties.
 
 {% embed_chartAnatomy world-map-data.json %}
 
@@ -904,7 +899,7 @@ A heat map chart utilizes different colors to represent data values within a tab
 
 In the section below, we will see how to build a heat map chart.
 
-{% embed_all standard-charts-heat-map-chart-example-1.js %}
+{% embed_chart standard-charts-heat-map-chart-example-1.js %}
 
 As you can see in the heat map above, the data plot is indicating the ratings of four different smartphones based on five common components, with the help of different colors. 
 
@@ -1399,7 +1394,8 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-Heat map belongs to the family of PowerCharts in FusionCharts. You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts here.
+Know more about Heat maps and its configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/heat-map-chart).
+You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#powercharts-xt).
 
 ## Gantt Chart
 A Gantt chart is a date/time-based chart, which you can use to plot tasks along with their start and end dates/times. You can also use the chart to define milestones for a project, indicating different stages with their deadlines. That way, you can constantly keep an eye on project status, and plan alternate strategies in case you encounter an unprecedented delay.
@@ -3226,3 +3222,6 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 ```
 
 You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of otehr charts here.
+Know more about Gantt Chart and its configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/gantt-chart).
+
+You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#powercharts-xt).

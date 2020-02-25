@@ -13,7 +13,7 @@
                         "annotationName": "dataset",
                         "annotationDesc": "Dataset is the entire data structure of the chart. It's an array constituting different data series",
                         "annotationDescLinkPath": null,
-                        "syntax": " {\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeRender\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
+                        "syntax": "[{\r\n    \"seriesname\": \"Actual Revenue\",\r\n    \"renderAs\": \"column\",\r\n    \"data\": [{\"value\": \"16000\"}, ...]\r\n  },\r\n  {\r\n    \"seriesname\": \"Projected Revenue\",\r\n    \"renderAs\": \"line\",\r\n    \"data\": [\r\n        {\"value\": \"15000\"},\r\n        ...\r\n    ]\r\n  }, ....\r\n  ]",
                         "leftPosition": "16.5%",
                         "topPosition": "16.5%",
                         "annotationLinks": []
@@ -21,31 +21,29 @@
                     {
                         "annotationNumber": "2",
                         "annotationName": "Categories",
-                        "annotationDesc": "Categories depict different classes of the data, structured for the visual representation ",
+                        "annotationDesc": "Categories depict different classes of the data structured for the visual representation ",
+                        "syntax": "[{\r\n    \"category\": [\r\n        {\"label\": \"Jan\"},\r\n        {\"label\": \"Feb\"},\r\n        ....\r\n    ]\r\n}]",
                         "annotationDescLinkPath": null,
-                        "leftPosition": "16%",
-                        "topPosition": "73%",
+                        "leftPosition": "14%",
+                        "topPosition": "78%",
                         "annotationLinks": [
                             {
-                                "linkDesc": "It is an array of labels representing different quarters as shown above"
+                                "linkDesc": "It is an array of labels representing different months as shown above"
                             }
                         ]
                     },
                     {
                         "annotationNumber": "3",
-                        "annotationName": "Data Series1",
-                        "annotationDesc": "The first series of the multi-series chart representing revenue of the previous year across its quarters",
+                        "annotationName": "Data Series",
+                        "annotationDesc": "Objects representing different data series of the combination chart",
                         "annotationDescLinkPath": null,
-                        "leftPosition": "29.5%",
-                        "topPosition": "87.5%"
-                    },
-                    {
-                        "annotationNumber": "4",
-                        "annotationName": "Data Series2",
-                        "annotationDesc": "The second series of the multi-series chart representing revenue of the current year across its quarters",
-                        "annotationDescLinkPath": null,
-                        "leftPosition": "64.5%",
-                        "topPosition": "87.5%"
+                        "leftPosition": "27.5%",
+                        "topPosition": "88.5%",
+                        "annotationLinks": [
+                            {
+                                "linkDesc": "The plot type of each series is determined by an attribute named 'renderAs'"
+                            }
+                        ]
                     }
                 ]
             }

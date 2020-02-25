@@ -6,16 +6,16 @@
         "contentGroup": [
             {
                 "itemHeader": "",
-                "imgSrc": "ms-column-chart-anatomy.png",
+                "imgSrc": "heat-map-chart-anatomy.png",
                 "annotations": [
                     {
                         "annotationNumber": "1",
                         "annotationName": "dataset",
                         "annotationDesc": "An array of objects representing each cell of the heat map. The number of objects should be equal to the number of valid cells in the teat map table.",
                         "annotationDescLinkPath": null,
-                        "syntax": " {\r\n    \"chart\": {\r\n        // ...\r\n    },\r\n    \"data\": [\r\n        // ...\r\n    ]\r\n},\r\n\"events\": {\r\n    \"beforeRender\": function(ev) {\r\n        console.log(ev);\r\n    }\r\n}",
-                        "leftPosition": "16.5%",
-                        "topPosition": "16.5%",
+                        "syntax": "[{\r\n    \"data\": [\r\n        {\r\n            \"rowid\": \"SGS5\",\r\n            \"columnid\": \"processor\",\r\n            \"value\": \"8.7\",\r\n            \"tllabel\": \"Quad Core 2.5 GHz\",\r\n            \"trlabel\": \"OS : Android 4.4 Kitkat\"\r\n        },.....\r\n}]",
+                        "leftPosition": "30.5%",
+                        "topPosition": "30.5%",
                         "annotationLinks": []
                     },
                     {
@@ -23,8 +23,9 @@
                         "annotationName": "colorRange",
                         "annotationDesc": "Outlines the color variation of the different cells of the table based on their values. An array consisting of objects with range of values along with the color code.",
                         "annotationDescLinkPath": null,
-                        "leftPosition": "16%",
-                        "topPosition": "73%",
+                        "syntax": "{\r\n    \"gradient\": \"0\",\r\n    \"minvalue\": \"0\",\r\n    \"code\": \"E24B1A\",\r\n    \"startlabel\": \"Poor\",\r\n    \"endlabel\": \"Good\",\r\n    \"color\": [\r\n        {\r\n            \"code\": \"E24B1A\",\r\n            \"minvalue\": \"1\",\r\n            \"maxvalue\": \"5\",\r\n            \"label\": \"Bad\"\r\n        },....\r\n    ]\r\n}",
+                        "leftPosition": "29.5%",
+                        "topPosition": "87.5%",
                         "annotationLinks": [
                             {
                                 "linkDesc": "It is an array of labels representing different quarters as shown above"
@@ -36,14 +37,16 @@
                         "annotationName": "rows",
                         "annotationDesc": "An array of rows of the matrix. Each row consists of an id and a label.",
                         "annotationDescLinkPath": null,
-                        "leftPosition": "29.5%",
-                        "topPosition": "87.5%"
+                        "syntax": "{\r\n    \"row\": [\r\n        {\r\n            \"id\": \"SGS5\",\r\n            \"label\": \"Samsung Galaxy S5\"\r\n        },....\r\n    ]\r\n}",
+                        "leftPosition": "9.5%",
+                        "topPosition": "47.5%"
                     },
                     {
                         "annotationNumber": "4",
                         "annotationName": "columns",
                         "annotationDesc": "An array of columns of the matrix. Each object consists of an id and a label.",
                         "annotationDescLinkPath": null,
+                        "syntax": "{\r\n    \"column\": [\r\n        {\r\n            \"id\": \"processor\",\r\n            \"label\": \"Processor\"\r\n        },....\r\n    ]\r\n}",
                         "leftPosition": "64.5%",
                         "topPosition": "87.5%"
                     }
