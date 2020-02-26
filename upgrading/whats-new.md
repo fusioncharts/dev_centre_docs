@@ -45,3 +45,9 @@ The scroll column 2D chart will look as shown below:
 {% embed_chart scroll-column-2d-showcasing-scroll-position.js %}
 
 Click [here](/chart-guide/standard-charts/scroll-charts#position-scroll-bar) to know more.
+
+## Build Mobile UI with Ionic Framework
+
+You can now use FusionCharts with the Ionic Framework, to develop mobile user interfaces with a native look and feel. Add interactive charts to any Ionic Framework project using the bindings available for different platforms supported by FusionCharts.
+
+Click [here](/getting-started/ionic-framework/ionic-framework-using-angular) to know more.

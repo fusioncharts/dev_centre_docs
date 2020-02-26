@@ -743,12 +743,12 @@
             "title": "Ionic Framework",
             "children": [
               {
-                "title": "Using React",
-                "path": "/getting-started/ionic-framework/ionic-framework-using-react"
-              },
-              {
                 "title": "Using Angular",
                 "path": "/getting-started/ionic-framework/ionic-framework-using-angular"
+              },
+              {
+                "title": "Using React",
+                "path": "/getting-started/ionic-framework/ionic-framework-using-react"
               }
             ]
           },

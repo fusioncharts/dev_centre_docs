@@ -58,6 +58,11 @@
           "value": "Svelte",
           "classname": "icon-svelte",
           "link": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
+        },
+        {
+          "value": "Ionic framework",
+          "classname": "icon-ionic",
+          "link": "/getting-started/ionic-framework/ionic-framework-using-angular"
         }
       ],
       "backend": [
