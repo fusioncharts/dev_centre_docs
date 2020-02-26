@@ -4,6 +4,42 @@ description: This section talks about the change in features and attributes with
 heading: Release Notes
 ---
 
+<h2 class="sub-heading">Version 2.1.0</h2>
+
+<p class="release-date">26th February, 2020</p>
+
+<h4 class="sub-heading">New Feature</h4>
+
+- FusionTime now allows you to plot range series data using time series. Two plot types are supported - [Area-range](/fusiontime/fusiontime-component/plot-types-in-fusiontime#area-range-series-charts), and [Column-range](/fusiontime/fusiontime-component/plot-types-in-fusiontime#column-range-series-charts).
+
+- FusionTime now allows you to [clip off sections](/fusiontime/fusiontime-component/time-axis#clip-time-axis) of the time axis.
+
+- FusionTime now allows you to position the [caption](/fusiontime/fusiontime-component/captions#caption-position) and [subcaption](/fusiontime/fusiontime-component/captions#sub-caption-position) of a chart to the `left`, `right`, or `center`.
+
+<h4>Improvements</h4>
+
+- In accordance to the rule of proximity, the Y-axis title now appears closer to Y-axis labels. The default space between them has been reduced.
+
+- When charts are zoomed in, the Y-axis now scales properly.
+
+- Time axis ticks will now be aligned with the labels. No major tick will appear without a label.
+
+<h4>Fixes</h4>
+
+- The tooltips now appear fine for all data plots in grouped column charts. Earlier, the tooltip would not appear for the first data plot.
+
+- 'Visible' parameter of legend events like 'legendItemClicked', 'legendItemRollOver' 'LegendItemRollout' was previously showing only 'true' value. Now it shows, 'true' or 'false' depending on its current state.
+
+- Time series charts no longer show `Export as XLSX` in the chart menu if the value of `exportEnabled` is set to `1` and the chart is updated using any attribute. Earlier, the inactive menu option `Export as XLSX` would appear.
+
+- Charts are now exported properly in IE11. Earlier, clicking on the Export menu would not export the chart, and display a JS error message in the browser console instead.
+
+- The time navigator axis ticks now properly correspond with values. Earlier, there were too many ticks, making it difficult to see which tick indicated a particular value. The issue has been fixed by reducing the overall number of ticks.
+
+- On mobile devices, the Custom Range Selector now accepts values selected using the **From** and **To** input boxes.
+
+- Chart captions no longer get cropped when they consist of multiple lines.
+
 <h2 class="sub-heading">Version 2.0.0</h2>
 
 <p class="release-date">5th December, 2019</p>

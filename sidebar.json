@@ -740,6 +740,19 @@
             ]
           },
           {
+            "title": "Ionic Framework",
+            "children": [
+              {
+                "title": "Using Angular",
+                "path": "/getting-started/ionic-framework/ionic-framework-using-angular"
+              },
+              {
+                "title": "Using React",
+                "path": "/getting-started/ionic-framework/ionic-framework-using-react"
+              }
+            ]
+          },
+          {
             "title": "PHP",
             "children": [
               {
@@ -1815,6 +1828,11 @@
               },
               {
                 "title": "Maps Improvement",
+                "path": "/upgrading/maps-improvement/maps-improvement-3-15-1",
+                "visibility": false
+              },
+              {
+                "title": "Maps Improvement",
                 "path": "/upgrading/maps-improvement/maps-improvement-3-15-0",
                 "visibility": false
               },
@@ -2053,6 +2071,10 @@
           {
             "title": "Y-axis",
             "path": "/fusiontime/fusiontime-component/y-axis-in-fusiontime"
+          },
+          {
+            "title": "Captions",
+            "path": "/fusiontime/fusiontime-component/captions"
           },
           {
             "title": "Predictive Data",

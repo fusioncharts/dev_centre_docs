@@ -4,91 +4,50 @@ description: This section talks about the new features introduced in latest vers
 heading: What's New
 ---
 
-This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.15.0.
+This section is for users who are using the previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.15.1.
 
-It's been a while since we introduced a new chart. So this time around, we thought why not surprise you and bring in three new charts, highly requested by you, that aid in visualizing newer forms of data.
+## Set the Legend Position
 
-## Sunburst Chart
+You can now use the following attributes to set legend position:
 
-A Sunburst chart is used to visualize relationships within hierarchical data. It shows hierarchy through a series of concentric rings, where each ring corresponds to a level in the hierarchy. Each ring can have multiple segments; each segment showing the contribution of a particular dimension in that hierarchy. Focussing on a segment in the ring gives a sense of the part to the whole relationship of this dimension with respect to its parent ring segment.
+- Specify the position of the legend using the `legendPosition` attribute. You can set its value to one of the following, to position the legend likewise with respect to the chart - `bottom`, `top`, `top-left`, `top-right`, `bottom-left`, `bottom-right`, `left`, `left-top`, `left-bottom`, `right`, `right-top`, `right-bottom`, or `absolute`.
 
-> A Sunburst chart shares similarities with a Ring Chart, Multi-level Pie Chart, Belt Chart, and a Radial Treemap.
+- If you set the value of `legendPosition` to `absolute`, you also need to set the coordinates for the legend using the attributes `legendXPosition` and `legendYPosition`, both of which accept absolute or percentage values.
 
-A Sunburst chart looks as follows:
+- Set the `legendAllowDrag` attribute to 1 to make the legend draggable.
 
-{% embed_chart standard-charts-sunburst-chart-example-1.js %}
+In the chart below, the legend is placed at the `top-right` of the chart:
 
-Click [here](/chart-guide/standard-charts/sunburst-chart) to know more.
+{% embed_chart chart-configurations-legend-example-16.js %}
 
-## Sankey Diagram
+Click [here](/chart-guide/chart-configurations/legend#set-the-legend-position) to know more.
 
-Sankey Diagram is a type of flow diagram that depicts the flow of resources (material, energy, cost, etc.) from one node to another. A Sankey Diagram can be drawn in either a **horizontal layout (default)** or a **vertical layout**. A Sankey Diagram with horizontal orientation looks as shown below:
+## Set Number of Rows/Columns in the Legend
 
-{% embed_chart standard-charts-sankey-diagram-example-1.js %}
+You can now mention the number of rows and columns the legend should display, when there are a large number of legend items. To set the number of rows in the legend, use the `legendNumRows` attribute. Whereas to set the number of columns in the legend, use the `legendNumColumns`
 
-There are **19** nodes in the Sankey Diagram provided above. A link connects any two nodes that are related to one another (i.e, a flow happens between them). If you hover over a node, you will see all the links (or relationships) associated with it. Hovering on a link will show all nodes associated with it.
+The chart looks like as shown below:
 
-Click [here](/chart-guide/standard-charts/sankey-diagram) to know more.
+{% embed_chart set-the-number-of-row-column-in-legend.js %}
 
-## Chord Diagram
+Click [here](/chart-guide/chart-configurations/legend#set-number-of-rows-columns-in-the-legend) to know more.
 
-A chord diagram is a graphical way to represent flow relationship between specific entities in transitioning data. The entities (called **nodes**) are drawn along the circumference of a circular layout. The flow relationships (called **links**) are represented by arcs that connect the nodes.
+## Decouple Scrollbar from Axis
 
-> Chord Diagrams are also referred to as Radial Network Diagram, Chord Layout, or Dependency Wheel.
+FusionCharts XT suite now allows you to decouple the scrollbar from the axes. Earlier, the scrollbar was always coupled with the X-axis. Now, a new attribute `scrollPosition` has been introduced, which lets you position the scrollbar independently of the X-axis.
 
-A simple Chord Diagram looks as shown below:
+- In charts where the X-axis is located at the bottom or the top (as in a column chart), you can set the value of the `scrollPosition` attribute to `top` or `bottom`.
 
-{% embed_chart standard-charts-chord-diagram-example-1.js %}
+- In charts where the X-axis is located to the left or the right (as in a bar chart), you can set the value of the `scrollPosition` attribute to `left` or `right`.
 
-In the above diagram, there are `n` nodes. A link connects a pair of nodes where a relationship exists. Hovering on a node shows all the links (or relationships) associated with it. Likewise, hovering on a link shows the related nodes.
+The scroll column 2D chart will look as shown below:
 
-Click [here](/chart-guide/standard-charts/chord-diagram) to know more.
+{% embed_chart scroll-column-2d-showcasing-scroll-position.js %}
 
-## New Functionalities in Box and Whisker Chart
+Click [here](/chart-guide/standard-charts/scroll-charts#position-scroll-bar) to know more.
 
-A box and whisker chart is a statistical chart that is used to examine and summarize a range of data values. Starting v3.15.0, FusionCharts Suite XT has introduced the following features in the existing box and whisker chart:
+## Build Mobile UI with Ionic Framework
 
-- Scrolling feature has now been enabled in the box and whiser chart.
+You can now use FusionCharts with the Ionic Framework, to develop mobile user interfaces with a native look and feel. Add interactive charts to any Ionic Framework project using the bindings available for different platforms supported by FusionCharts.
 
-- You can apply a custom color to the icon borders. You can use `numVisiblePlot` attribute to control the number of plot points visible on the chart canvas.
-
-- Box and whisker chart can now be used in two different ways:
-
-  - Provide values and expect the chart to determine the summarised values.
-  - Provide summarised values to a box and whisker plot.
-
-- Five new attributes have been introduced to explicitly set the data values of the mean, MD, SD, QD and outlier.
-
-  - `showMeanValue`
-
-  - `showMDValue`
-
-  - `showSDValue`
-
-  - `showQDValue`
-
-  - `showOutlierValue`
-
-- New attributes have been introduced to set the position of the values for mean, MD, SD, QD and outlier.
-
-  - `meanValuePosition`
-
-  - `MDValuePosition`
-
-  - `SDValuePosition`
-
-  - `QDValuePosition`
-
-  - `outlierValuePosition`
-
-- You can now add custom color to the border of the icons of mean, MD, SD, QD and outlier.
-
-  - `meanIconBorderColor`
-
-  - `MDIconBorderColor`
-
-  - `SDIconBorderColor`
-
-  - `QDIconBorderColor`
-
-  - `outlierIconBorderColor`
+Click [here](/getting-started/ionic-framework/ionic-framework-using-angular) to know more.

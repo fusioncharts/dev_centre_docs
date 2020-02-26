@@ -1,0 +1,13 @@
+({
+  "name": "Date",
+  "type": "date",
+  "format": "%Q"
+},
+{
+  "name": "Low",
+  "type": "number"
+},
+{
+  "name": "High",
+  "type": "number"
+})
