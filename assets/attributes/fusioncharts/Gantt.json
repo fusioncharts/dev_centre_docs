@@ -1506,6 +1506,13 @@
         "name": "scrollColor"
       },
       {
+        "description": "Sets the position of the scrollbar in the chart. \n\n __Default Value:__ Bottom",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionsince": "3.15.1",
+        "name": "scrollPosition"
+      },
+      {
         "description": "Vertical padding between the scroll bar and chart canvas.",
         "range": "In pixels",
         "type": "Number",

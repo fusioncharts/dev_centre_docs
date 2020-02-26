@@ -58,6 +58,11 @@
           "value": "Svelte",
           "classname": "icon-svelte",
           "link": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
+        },
+        {
+          "value": "Ionic framework",
+          "classname": "icon-ionic",
+          "link": "/getting-started/ionic-framework/ionic-framework-using-angular"
         }
       ],
       "backend": [
@@ -161,8 +166,12 @@
     },
     {
       "fusioncharts": {
-        "title": "v3.15.0-sr.1",
+        "title": "v3.15.1",
         "children": [
+          {
+            "title": "v3.15.0-sr.1",
+            "link": "https://docs.fusioncharts.com/archive/3.15.0-sr.1/"
+          },
           {
             "title": "v3.15.0",
             "link": "https://docs.fusioncharts.com/archive/3.15.0/"
