@@ -8,19 +8,29 @@ This section is for users who are using previous version of FusionCharts in thei
 
 ## Exporting of Gantt and Spark Charts as XLSX
 
-You can now export Gantt and Spark Line charts in XLSX format, and the files display chart data correctly. Earlier, the exported XLSX files would be blank.
+You can now export Gantt and Spark Line charts in CSV or XLSX format, and the files display chart data correctly.
 
 The Gantt chart looks like as shown below:
 
-LIVE CHART
+{% embed_chart standard-charts-gantt-chart-with-csv-xlsx-export.js %}
 
-Export the above chart in XLSX format.
+Export the above chart in CSV or XLSX format.
 
 ## Legend Position in all Charts
 
 In all charts in FusionCharts XT, you can now specify the legend using the attribute `legendPosition`. You can set its value to - `bottom`, `top`, `top-left`, `top-right`, `bottom-left`, `bottom-right`, `left`, `left-top`, `left-bottom`, `right`, `right-top`, `right-bottom`, or `absolute`.
 
-Click [here](/chart-guide/chart-configurations/legend#set-the-legend-position) to know more.
+In the chart below, the legend is placed at the `top-right` of the chart:
+
+{% embed_chart chart-configurations-legend-example-16.js %}
+
+## Decouple Scrollbar from Axis
+
+FusionCharts XT suite now allows you to decouple the scrollbar from the axes. Earlier, the scrollbar was always coupled with the X-axis. Now, a new attribute `scrollPosition` has been introduced, which lets you position the scrollbar independently of the X-axis.
+
+- In charts where the X-axis is located at the bottom or the top (as in a column chart), you can set the value of the `scrollPosition` attribute to `top` or `bottom`.
+
+- In charts where the X-axis is located to the left or the right (as in a bar chart), you can set the value of the `scrollPosition` attribute to `left` or `right`.
 
 ## Height of Navigation Bar in Treemap After Drill Down
 

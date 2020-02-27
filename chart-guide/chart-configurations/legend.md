@@ -193,7 +193,7 @@ Refer to the code below:
 ```json
 {
   "chart": {
-    "legendPosition": "right",
+    "legendPosition": "top-right",
     "legendAllowDrag": "1"
   }
 }
@@ -201,7 +201,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Drag Legend](/gif/configurations-legend-gif-2.gif)
+{% embed_chart chart-configurations-legend-example-16.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5smv4kg4/) to edit the above chart.
 
@@ -221,17 +221,17 @@ Refer to the code below:
 {
     "chart": {
         "legendPosition": "absolute",
-        "legendXPosition": "5",
-        "legendYPosition": "3"
+        "legendXPosition": "700",
+        "legendYPosition": "420"
     }
 }
 ```
 
 The chart will look as shown below:
 
-LIVE CHART
+{% embed_chart chart-configurations-legend-example-17.js %}
 
-Click here to edit the above chart.
+Click [here](https://jsfiddle.net/fusioncharts/qybh1rdt/) to edit the above chart.
 
 ## Configure Legend Icon Size
 
@@ -313,6 +313,35 @@ The chart will look as shown below:
 {% embed_chart chart-configurations-legend-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/x8182enw/) to edit the above chart.
+
+## Set Number of Rows/Columns in the Legend
+
+When a legend has a large number of items, you can mention the number of rows and columns the legend should display, so that all legend items can be displayed without cluttering the canvas. If the number of rows are less than the total number of items, a vertical scroll bar appears to help you scroll through the items. Whereas if the number of columns are less than the total number of items, a horizontal scroll bar appears to help you scroll through the items.
+
+Refer to the code given below:
+
+```javascript
+{
+    "chart": {
+        "legendNumRows": "3",
+        "legendNumColumns": "3"
+    }
+}
+```
+
+The legend in a chart with number of rows set to 3 looks like as shown below:
+
+{% embed_chart chart-configurations-legend-example-18.js %}
+
+Click [here](https://jsfiddle.net/fusioncharts/53p82ejx/) to edit the above chart.
+
+Now, let's set the value of `legendNumRows` attribute to **3** and the value of `legendNumColumns` attribute to **3**. A zoom scatter chart looks like as shown below:
+
+{% embed_chart chart-configurations-legend-example-19.js %}
+
+Click [here](https://jsfiddle.net/fusioncharts/1q92e8jr/) to edit the above chart.
+
+In the above chart, even if the value of `legendNumRows` attribute is set to **3**, the number of rows displayed is **2** whereas the number of columns have changed to **3**. For the legends, `legendNumColumns` attribute gets the higher priority than `legendNumRows`. So, in the above sample when the value of `legendNumColumns` is set to **3**, the chart sets the legend icons according to the attribute.
 
 ## Customize Legend Scroll Bar
 

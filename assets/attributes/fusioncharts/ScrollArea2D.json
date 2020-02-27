@@ -1585,6 +1585,13 @@
         "name": "scrollColor"
       },
       {
+        "description": "Sets the position of the scrollbar in the chart. \n\n __Default Value:__ Bottom",
+        "range": "Top, Bottom",
+        "type": "String",
+        "versionsince": "3.15.1",
+        "name": "scrollPosition"
+      },
+      {
         "description": "Required height for scroll bar.",
         "range": "In Pixels",
         "type": "Number",
@@ -1897,6 +1904,18 @@
         "range": "0 to chart height (in pixels)",
         "type": "Number",
         "name": "legendYPosition"
+      },
+      {
+        "description": "Sets the number of rows the legend should display.",
+        "range": "",
+        "type": "Number",
+        "name": "legendNumRows"
+      },
+      {
+        "description": "Sets the number of columns the legend should display.",
+        "range": "",
+        "type": "Number",
+        "name": "legendNumColumns"
       },
       {
         "description": "Sets the legend caption horizontal alignment .",

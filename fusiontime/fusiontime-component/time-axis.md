@@ -190,6 +190,61 @@ The live chart looks like ash shown below:
 
 {% embed_ftChart binning-sample-min-bin %}
 
+## Clip time axis
+
+The time axis offers a clipping feature, which you can use to remove the time periods you do not want to display on your time axis., The unclipped time sections of the time axis show all the other plots as a continuous stream of data.
+
+Consider the following scenarios:
+
+- You only wish to display data for the business hours of an organization (say, 10 am to 7 pm) and clip sections of the time axis that indicate the time period from 7 pm to 10 am of the next business day.
+
+- You wish to remove the section for the holiday season in an organization, i.e., you want to clip sections of the time axis from the second week of December to the first week of January.
+
+- You only want to display data for weekdays and clip sections for Saturdays and Sundays from the time axis.
+
+Use the `clip` object (under `xAxis`) to remove time duration which you do not need on the time axis. You can set the value of `clip` using `from`, `to`, and `repeat` parameters inside the **clip** object. The last two values are optional, but clipping will not work if you omit the `from` value.
+
+When you want to clip a particular interval of time, set the values of `from` and `to` to the first and the last date of the time interval. The time axis will then clip the time interval indicated by the dates and display the other dates in the dataset.
+
+> The visual cue of a broken axis on xAxis shows the removal of a complete bin at the particular zoom level.
+
+> The visual cue of the dotted/dashed line on x-axis shows some time removal from that particular bin.
+
+If you want to clip dates at equal intervals, use the `unit` and `multiplier` attributes with `repeat` object of **clip** object. For instance, if you want to clip out every Saturday and Sunday, set the date of the first Saturday to `from`, and the first Sunday to `to`. Now set the value of `unit` to `day` and the value of `multiplier` to **7**.
+
+Refer to the code given below:
+
+```javascript
+new FusionCharts({
+  type: "timeseries",
+  dataSource: {
+    xAxis: {
+      timemarker: [
+        {
+          start: "2018-01-12 16:00",
+          end: "2018-01-15 09:30",
+          type: "full",
+          timeFormat: "%Y-%m-%d %H:%M",
+          label: "Stock Market closed"
+        },
+        {
+          start: "2018-02-19",
+          // end: '2018-02-19 09:30',
+          type: "full",
+          timeFormat: "%Y-%m-%d",
+          label: "Stock Market closed"
+        }
+      ]
+      // clip
+    }
+  }
+});
+```
+
+The live chart will look as shown below:
+
+{% embed_ftChart clip-time-axis %}
+
 ## Output time format
 
 FusionTime supports the following time units:
