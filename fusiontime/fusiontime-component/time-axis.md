@@ -192,7 +192,7 @@ The live chart looks like ash shown below:
 
 ## Clip time axis
 
-The time axis offers a clipping feature, which you can use to remove the time periods you do not want to display on your time axis., The unclipped time sections of the time axis show all the other plots as a continuous stream of data.
+The time axis offers a clipping feature, which you can use to remove the time periods you do not want to display on your time axis. The unclipped time sections of the time axis show all the other plots as a continuous stream of data.
 
 Consider the following scenarios:
 
