@@ -39,7 +39,7 @@ PH.IB.PL | PL | Palanan
 PH.IB.QE | QE | Quezon
 PH.IB.QI | QI | Quirino
 PH.IB.RM | RM | Ramon
-PH.IB.RI | RI | RI | Reina Mercedes
+PH.IB.RI | RI | Reina Mercedes
 PH.IB.RX | RX | Roxas
 PH.IB.SA | SA | San Agustin
 PH.IB.SG | SG | San Guillermo
