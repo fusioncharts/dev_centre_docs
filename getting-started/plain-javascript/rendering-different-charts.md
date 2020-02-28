@@ -25,7 +25,7 @@ In a multi-series chart, we have two or more datasets plotted against
 
 {% embed_chart standard-charts-multi-series-charts-example-1.js %}
 
-As you can see, a Multi-series Column 2D Chart has vertically aligned rectangular bars on one axis with discrete values shown on the other. The length of a column is proportionate to the value it represents.
+As you can see, a Multi-series Column 2D Chart has vertically aligned rectangular bars on one axis with discrete values shown on the other. The length of a column is proportionate to the value it represents.
 
 To build the chart shown above, we will use the data presented in the following table:
 
