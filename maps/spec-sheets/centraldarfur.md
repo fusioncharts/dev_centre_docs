@@ -4,11 +4,11 @@
 
 #### JavaScript Alias: maps/centraldarfur
 
-Map Name: Central Darfur
-Dimensions (Width x Height): 563x500
+Map Name: CentralDarfur
+Dimensions (Width x Height): 1120x1240
 
 ### List of Entities
 
-ID | Short label | Label
----|---|---|
-SD.CD.CD|CD|Central Darfur
+| ID      | Short label | Label                   |
+| ------- | ----------- | ----------------------- |
+|SD.CD.CD|CD|Central Darfur|
