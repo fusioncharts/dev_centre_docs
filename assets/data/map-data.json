@@ -2627,23 +2627,23 @@
         "name": "Dominican Republic (Regions)",
         "marker": false,
         "members": [
-        {
-          "name": "Cibao",
-          "alias": "cibao",
-          "specSheet": "/maps/spec-sheets/cibao"
-        },
-        {
-          "name": "Este Map",
-          "alias": "este",
-          "specSheet": "/maps/spec-sheets/este"
-        },
-        {
-          "name": "Sur Map",
-          "alias": "sur",
-          "specSheet": "/maps/spec-sheets/sur"
-        }
-      ]
-      },  
+          {
+            "name": "Cibao",
+            "alias": "cibao",
+            "specSheet": "/maps/spec-sheets/cibao"
+          },
+          {
+            "name": "Este Map",
+            "alias": "este",
+            "specSheet": "/maps/spec-sheets/este"
+          },
+          {
+            "name": "Sur Map",
+            "alias": "sur",
+            "specSheet": "/maps/spec-sheets/sur"
+          }
+        ]
+      },
       {
         "name": "Dominican Republic (Separate Provinces)",
         "marker": false,
@@ -8253,7 +8253,7 @@
                 "specSheet": "/maps/spec-sheets/talas"
               }
             ]
-          }, 
+          },
           {
             "name": "Lebanon",
             "alias": "lebanon",
@@ -10455,7 +10455,99 @@
       {
         "name": "Sudan without South Sudan",
         "alias": "sudanwosouthsudan",
-        "specSheet": "/maps/spec-sheets/sudanwosouthsudan"
+        "specSheet": "/maps/spec-sheets/sudanwosouthsudan",
+        "members": [
+          {
+            "name": "Aljazirah Map",
+            "alias": "aljazirah",
+            "specSheet": "/maps/spec-sheets/aljazirah"
+          },
+          {
+            "name": "Alqadarif Map",
+            "alias": "alqadarif",
+            "specSheet": "/maps/spec-sheets/alqadarif"
+          },
+          {
+            "name": "Blue Nile Map",
+            "alias": "bluenile",
+            "specSheet": "/maps/spec-sheets/bluenile"
+          },
+          {
+            "name": "Central Darfur Map",
+            "alias": "centraldarfur",
+            "specSheet": "/maps/spec-sheets/centraldarfur"
+          },
+          {
+            "name": "East Darfur Map",
+            "alias": "eastdarfur",
+            "specSheet": "/maps/spec-sheets/eastdarfur"
+          },
+          {
+            "name": "Kassala Map",
+            "alias": "kassala",
+            "specSheet": "/maps/spec-sheets/kassala"
+          },
+          {
+            "name": "Khartoum Map",
+            "alias": "khartoum",
+            "specSheet": "/maps/spec-sheets/khartoum"
+          },
+          {
+            "name": "North Darfur Map",
+            "alias": "northdarfur",
+            "specSheet": "/maps/spec-sheets/northdarfur"
+          },
+          {
+            "name": "Northern Sudan Map",
+            "alias": "northernsudan",
+            "specSheet": "/maps/spec-sheets/northernsudan"
+          },
+          {
+            "name": "North Kordofan Map",
+            "alias": "northkordofan",
+            "specSheet": "/maps/spec-sheets/northkordofan"
+          },
+          {
+            "name": "Red Sea Map",
+            "alias": "redsea",
+            "specSheet": "/maps/spec-sheets/redsea"
+          },
+          {
+            "name": "River Nile Map",
+            "alias": "rivernile",
+            "specSheet": "maps/rivernile"
+          },
+          {
+            "name": "Sennar Map",
+            "alias": "sennar",
+            "specSheet": "/maps/spec-sheets/sennar"
+          },
+          {
+            "name": "South Darfur Map",
+            "alias": "southdarfur",
+            "specSheet": "/maps/spec-sheets/southdarfur"
+          },
+          {
+            "name": "South Kordofan Map",
+            "alias": "southkordofan",
+            "specSheet": "/maps/spec-sheets/southkordofan"
+          },
+          {
+            "name": "West Darfur Map",
+            "alias": "westdarfur",
+            "specSheet": "/maps/spec-sheets/westdarfur"
+          },
+          {
+            "name": "West Kordofan Map",
+            "alias": "westkordofan",
+            "specSheet": "/maps/spec-sheets/westkordofan"
+          },
+          {
+            "name": "White Nile Map",
+            "alias": "whitenile",
+            "specSheet": "/maps/spec-sheets/whitenile"
+          }
+        ]
       },
       {
         "name": "Sudan (Administrative Regions)",
