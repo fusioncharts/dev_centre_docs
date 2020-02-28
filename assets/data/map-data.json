@@ -10455,11 +10455,7 @@
       {
         "name": "Sudan without South Sudan",
         "alias": "sudanwosouthsudan",
-        "specSheet": "/maps/spec-sheets/sudanwosouthsudan"
-      },
-      {
-        "name": "Sudan Main",
-        "marker": false,
+        "specSheet": "/maps/spec-sheets/sudanwosouthsudan",
         "members": [
           {
             "name": "Aljazirah Map",
