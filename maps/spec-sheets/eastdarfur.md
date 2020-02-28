@@ -4,11 +4,11 @@
 
 #### JavaScript Alias: maps/eastdarfur
 
-Map Name: East Darfur
-Dimensions (Width x Height): 563x500
+Map Name: EastDarfur
+Dimensions (Width x Height): 1120x1240
 
 ### List of Entities
 
-| ID       | Short label | Label       |
-| -------- | ----------- | ----------- |
-| SD.CD.ED | ED          | East Darfur |
+| ID      | Short label | Label                   |
+| ------- | ----------- | ----------------------- |
+|SD.ED.ED|ED|East Darfur|

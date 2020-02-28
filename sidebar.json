@@ -2020,6 +2020,10 @@
             "path": "/fusiontime/integrations/ember/your-first-chart-using-ember-in-fusiontime"
           },
           {
+            "title": "Create a Chart in Svelte",
+            "path": "/fusiontime/integrations/svelte/your-first-chart-using-svelte-in-fusiontime"
+          },
+          {
             "title": "Create a Chart in PHP",
             "path": "/fusiontime/integrations/php/your-first-chart-using-php-in-fusiontime"
           },
