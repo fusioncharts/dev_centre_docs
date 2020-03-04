@@ -901,7 +901,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 {% embed_chartData getting-started-your-first-map-california.js json %}
 
-After installing `fusionmaps` package, the code to render the map of **California** is:
+The consolidated code for rendering the map is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -3432,4 +3432,5 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </body>
 </html>
 ```
+
 > Know more about Gantt Chart and its configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/gantt-chart). You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#powercharts-xt).
