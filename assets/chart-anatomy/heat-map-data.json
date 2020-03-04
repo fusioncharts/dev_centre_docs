@@ -21,16 +21,12 @@
                     {
                         "annotationNumber": "2",
                         "annotationName": "colorRange",
-                        "annotationDesc": "Outlines the color variation of the different cells of the table based on their values. An array consisting of objects with range of values along with the color code.",
+                        "annotationDesc": "Outlines the color variation of the different cells of the table based on their values. An array consisting of objects with range of values along with the color code. It is an array of labels representing different quarters as shown above",
                         "annotationDescLinkPath": null,
                         "syntax": "{\r\n    \"gradient\": \"0\",\r\n    \"minvalue\": \"0\",\r\n    \"code\": \"E24B1A\",\r\n    \"startlabel\": \"Poor\",\r\n    \"endlabel\": \"Good\",\r\n    \"color\": [\r\n        {\r\n            \"code\": \"E24B1A\",\r\n            \"minvalue\": \"1\",\r\n            \"maxvalue\": \"5\",\r\n            \"label\": \"Bad\"\r\n        },....\r\n    ]\r\n}",
                         "leftPosition": "37.5%",
                         "topPosition": "69.5%",
-                        "annotationLinks": [
-                            {
-                                "linkDesc": "It is an array of labels representing different quarters as shown above"
-                            }
-                        ]
+                        "annotationLinks": []
                     },
                     {
                         "annotationNumber": "3",

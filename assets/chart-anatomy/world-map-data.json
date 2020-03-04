@@ -39,6 +39,10 @@
                             {
                                 "linkDesc": "We have a detailed Map Specification Sheets for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create.",
                                 "linkPath": "/maps/spec-sheets/world"
+                            },
+                            {
+                                "linkDesc": "You can find different types of maps available with FusionCharts ",
+                                "linkPath": "/map-guide/list-of-maps"
                             }
                         ]
                     },
