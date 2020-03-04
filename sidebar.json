@@ -1663,6 +1663,10 @@
               {
                 "title": "Architecture of the FusionCharts Export Server",
                 "path": "/exporting-charts/using-fc-export-server/architecture-of-the-fusioncharts-export-server"
+              },
+              {
+                "title": "Exporting Scroll Charts",
+                "path": "/exporting-charts/using-fc-export-server/exporting-scroll-charts"
               }
             ]
           },
