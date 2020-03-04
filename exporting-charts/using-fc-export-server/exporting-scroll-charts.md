@@ -14,7 +14,7 @@ Click [here](http://jsfiddle.net/fusioncharts/enwsqj0d/) to edit the above chart
 
 Exporting this chart in a single image would result in something like the following:
 
-![](Export Scroll Charts_images/image_0.jpg)
+![Export Scroll Charts](/images/export-scroll-charts.png)
 
 We can see that the above exported image includes all the data plots of the chart. But the clarity and the purpose is defeated with an overall chart export. So the intent of the export feature wears thin with increase in the data plots if we export the entire scroll chart at one go. Considering this scenario, we've designed our export module for scroll charts such that only the current view of the scroll chart is exported as an image.
 
@@ -24,9 +24,11 @@ Let us look at all the available scenarios that are possible with FusionCharts. 
 
 The export feature for a scroll chart is only designed to give you the current canvas view at the point of export. Have a look at the chart below and try exporting your desired data plots. You can adjust the number of data plots appearing on the canvas by using the attribute **numVisiblePlot**. This example below shows the client-side image export of the chart.
 
-[<< Sample >>](https://store.fusioncharts.com/charts/view/export-scroll-large-dataset)
+{% embed_chart exporting-chart-data-example-2.js %}
 
-Whereas, one can export server-side using FusionExport. Follow the steps in[ this](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/tutorials/export-chart-as-image) tutorial to export the current view of your scroll Column 2D chart using FusionExport.
+Click [here](http://jsfiddle.net/fusioncharts/fnx5h9ak/) to edit the above chart.
+
+Whereas, one can export server-side using FusionExport. Follow the steps in [this](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/tutorials/export-chart-as-image) tutorial to export the current view of your scroll Column 2D chart using FusionExport.
 
 However, if you need to export the entire chart, follow the process detailed below:
 
@@ -178,13 +180,7 @@ Use the code given below:
 </html>
 ```
 
-When you use the above code to build a chart and then try to export it, the chart is automatically resized to its whole width. Once you export the chart, you can revert it to the original size by using an external button.
-
-The chart will look as shown below:
-
-[<<Live Chart>>](https://store.fusioncharts.com/charts/view/export-entire-scroll-chart)
-
-> You can make use of the **numVisiblePlot** attribute to change the number of visible data plots in the canvas. Find out more about it <<here>>.
+> You can make use of the **numVisiblePlot** attribute to change the number of visible data plots in the canvas. Find out more about it [here](/chart-guide/standard-charts/scroll-charts#configure-the-number-of-visible-data-plots).
 
 ### Export Formats
 
@@ -198,9 +194,9 @@ Let us look into the different possible export formats for a scroll chart.
 
 - Data Formats (XLSX, CSV)
 
-Let us look into an example with data export feature.
+Let us look into an example with data export feature:
 
-[<<Sample>>](https://store.fusioncharts.com/charts/view/export-scroll-chart-data)
+{% embed_chart exporting-chart-data-example-2.js %}
 
 In the above example, we are exporting the scroll chart's data in csv format. Unlike the image export where we can export only the current canvas view of the chart; the data export feature lets us export the entire chart data irrespective of the canvas view.
 
