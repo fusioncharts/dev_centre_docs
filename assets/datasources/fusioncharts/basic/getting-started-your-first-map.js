@@ -1,7 +1,7 @@
 {
     type: 'maps/world',
     renderAt: 'chart-container',
-    width: '750',
+    width: '100%',
     height: '550',
     dataFormat: 'json',
     dataSource: {

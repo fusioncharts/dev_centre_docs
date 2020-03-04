@@ -24,6 +24,10 @@
                     "path": "/getting-started/plain-javascript/your-first-chart-using-plain-javascript"
                   },
                   {
+                    "title": "Rendering Different Charts",
+                    "path": "/getting-started/plain-javascript/rendering-different-charts"
+                  },
+                  {
                     "title": "Your First Gauge",
                     "path": "/getting-started/plain-javascript/your-first-gauge-using-plain-javascript"
                   },
@@ -1659,6 +1663,10 @@
               {
                 "title": "Architecture of the FusionCharts Export Server",
                 "path": "/exporting-charts/using-fc-export-server/architecture-of-the-fusioncharts-export-server"
+              },
+              {
+                "title": "Exporting Scroll Charts",
+                "path": "/exporting-charts/using-fc-export-server/exporting-scroll-charts"
               }
             ]
           },
