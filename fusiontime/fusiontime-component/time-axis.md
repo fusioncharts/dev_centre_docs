@@ -218,24 +218,33 @@ Refer to the code given below:
 new FusionCharts({
   type: "timeseries",
   dataSource: {
-    xAxis: {
-      timemarker: [
+    caption: {
+      text: "Temperature variations - New York 2019"
+    },
+    subcaption: {
+      text:
+        "Daily average temperature of New York City - missing data on Feb 5th"
+    },
+    yaxis: [
+      {
+        columnname: "Daily Visitors",
+        plottype: "column",
+        title: "Daily Visitors"
+      }
+    ],
+    xaxis: {
+      initialinterval: {
+        from: "1/1/2019",
+        to: "30/6/2019"
+      },
+      showclippingcue: "1",
+      clip: [
         {
-          start: "2018-01-12 16:00",
-          end: "2018-01-15 09:30",
-          type: "full",
-          timeFormat: "%Y-%m-%d %H:%M",
-          label: "Stock Market closed"
-        },
-        {
-          start: "2018-02-19",
-          // end: '2018-02-19 09:30',
-          type: "full",
-          timeFormat: "%Y-%m-%d",
-          label: "Stock Market closed"
+          from: "2019 Feb 05",
+          to: "2019 Feb 05",
+          format: "%Y %b %d"
         }
       ]
-      // clip
     }
   }
 });

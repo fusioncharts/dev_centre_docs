@@ -5,61 +5,33 @@
     height: 490,
     dataSource: {
         data: dataStore,
-        chart: {
-            borderColor: '000000',
-            theme: 'gammel',
-            "style": {
-                "canvas": {
-                    stroke: "BBBBBB"
-                }
-            },
-            canvasheightproportion: '4:1'
-        },
         caption: {
-            text: 'Apple Inc. Stock Price'
+          text: "Temperature variations - New York 2019"
         },
         subcaption: {
-            text: 'Stock prices from January 2018 - March 2018'
+          text:
+            "Daily average temperature of New York City - missing data on Feb 5th"
         },
-        xAxis: {
-            timemarker: [{
-                    start: '2018-01-12 16:00',
-                    end: '2018-01-15 09:30',
-                    type: 'full',
-                    timeFormat: "%Y-%m-%d %H:%M",
-                    label: 'Stock Market closed'
-                },
-                {
-                    start: '2018-02-19',
-                    // end: '2018-02-19 09:30',
-                    type: 'full',
-                    timeFormat: "%Y-%m-%d",
-                    label: 'Stock Market closed'
-                }
-            ]
-            // clip
-        },
-        yAxis: [{
-                plot: {
-                    value: {
-                        open: 'Open',
-                        high: 'High',
-                        low: 'Low',
-                        close: 'Close'
-                    },
-                    type: 'candlestick'
-                },
-                format: {
-                    prefix: '$'
-                },
-                title: 'Stock Value'
-            },
+        yaxis: [
+          {
+            columnname: "Daily Visitors",
+            plottype: "column",
+            title: "Daily Visitors"
+          }
+        ],
+        xaxis: {
+          initialinterval: {
+            from: "1/1/2019",
+            to: "30/6/2019"
+          },
+          showclippingcue: "1",
+          clip: [
             {
-                plot: [{
-                    value: 'Volume',
-                    type: 'column'
-                }]
+              from: "2019 Feb 05",
+              to: "2019 Feb 05",
+              format: "%Y %b %d"
             }
-        ]
-    }
+          ]
+        }
+      }
 }
