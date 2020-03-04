@@ -722,6 +722,28 @@
             ]
           },
           {
+            "title": "Svelte",
+            "children": [
+              {
+                "title": "Creating your First Chart",
+                "children": [
+                  {
+                    "title": "Your First Chart",
+                    "path": "/getting-started/sveltejs/your-first-chart-using-sveltejs"
+                  },
+                  {
+                    "title": "Your First Gauge",
+                    "path": "/getting-started/sveltejs/your-first-gauge-using-sveltejs"
+                  },
+                  {
+                    "title": "Your First Map",
+                    "path": "/getting-started/sveltejs/your-first-map-using-sveltejs"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "title": "PHP",
             "children": [
               {
@@ -2220,10 +2242,6 @@
             "path": "/exporting-charts/using-fusionexport/tutorials/export-a-dashboard"
           },
           {
-            "title": "Add a logo or a heading to the dashboard",
-            "path": "/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard"
-          },
-          {
             "title": "Convert an SVG image to PNG/JPEG/PDF",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf"
@@ -2234,10 +2252,6 @@
             "path": "/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting"
           },
           {
-            "title": "Manipulate the output filename",
-            "path": "/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename"
-          },
-          {
             "title": "Enable logging",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/enabling-logging"
@@ -2246,10 +2260,6 @@
             "title": "Save exported files to S3",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three"
-          },
-          {
-            "title": "Asynchronous capture",
-            "path": "/exporting-charts/using-fusionexport/tutorials/asynchronous-capture"
           },
           {
             "title": "Export a D3 chart",
@@ -2583,73 +2593,102 @@
         ]
       },
       {
-        "title": "API Reference",
+        "title": "Tutorials",
         "children": [
           {
-            "title": "Visualization API",
-            "path": "/fusioncharts-aspnet-visualization/api-reference-net/visualization-api-net"
+            "title": "Create a Funnel Chart using FusionCharts and ASP.NET Web Form",
+            "path": "fusioncharts-aspnet-visualization/tutorials/create-a-funnel-chart-using-fusioncharts-and-dotnet"
           },
           {
-            "title": "Events",
-            "path": "/fusioncharts-aspnet-visualization/api-reference-net/events-net"
+            "title": "Create a Funnel Chart using FusionCharts and MVC in ASP.NET",
+            "path": "fusioncharts-aspnet-visualization/tutorials/create-funnel-chart-fusioncharts-mvc-dotnet"
+          },
+          {
+            "title": "Create a Column Chart using ASP.NET Framework",
+            "path": "fusioncharts-aspnet-visualization/tutorials/create-a-column-chart-using-fusioncharts-and-dotnet"
+          },
+          {
+            "title": "Render FusionCharts in MVC using .NET",
+            "path": "fusioncharts-aspnet-visualization/tutorials/render-fusioncharts-mvc-using-dotnet"
+          },
+          {
+            "title": "Create a Combination Chart using FusionCharts in .NET MVC",
+            "path": "fusioncharts-aspnet-visualization/tutorials/create-combination-chart-using-fusioncharts-and-dotnetmvc"
+          },
+          {
+            "title": "Create a Combination Chart using FusionCharts in .NET Framework Web Form",
+            "path": "fusioncharts-aspnet-visualization/tutorials/create-combination-chart-using-fusioncharts-and-dotnetmvc"
+          },
+          {
+            "title": "API Reference",
+            "children": [
+              {
+                "title": "Visualization API",
+                "path": "/fusioncharts-aspnet-visualization/api-reference-net/visualization-api-net"
+              },
+              {
+                "title": "Events",
+                "path": "/fusioncharts-aspnet-visualization/api-reference-net/events-net"
+              }
+            ]
+          },
+          {
+            "title": "Version History",
+            "path": "/fusioncharts-aspnet-visualization/version-history-fusioncharts-net"
           }
         ]
       },
       {
-        "title": "Version History",
-        "path": "/fusioncharts-aspnet-visualization/version-history-fusioncharts-net"
-      }
-    ]
-  },
-  {
-    "title": "FusionCharts University",
-    "icon": "fc_university",
-    "description": "Learn how to use FusionCharts products for your next dashboard",
-    "longDescription": "",
-    "visibility": false,
-    "children": [
-      {
-        "title": "Overview",
-        "path": "/university"
-      },
-      {
-        "title": "Tutorials",
+        "title": "FusionCharts University",
+        "icon": "fc_university",
+        "description": "Learn how to use FusionCharts products for your next dashboard",
+        "longDescription": "",
+        "visibility": false,
         "children": [
           {
-            "title": "Creating a Real-Time Bitcoin Ticker in JavaScript",
-            "path": "/university/creating-a-realtime-bitcoin-ticker-in-javascript"
+            "title": "Overview",
+            "path": "/university"
           },
           {
-            "title": "Building a Sales Dashboard using React Framework",
-            "path": "/university/sales-dashboard-using-react"
-          },
-          {
-            "title": "Learn how to Export a Dashboard using FusionExport",
-            "path": "/university/learn-how-to-export-a-dashboard-fusionexport"
-          },
-          {
-            "title": "Create a Funnel Chart using FusionCharts and ASP.NET Web Form",
-            "path": "/university/create-a-funnel-chart-using-fusioncharts-and-dotnet"
-          },
-          {
-            "title": "Create a Funnel Chart using FusionCharts and MVC in ASP.NET",
-            "path": "/university/create-funnel-chart-fusioncharts-mvc-dotnet"
-          },
-          {
-            "title": "Create a Column Chart using ASP.NET Framework",
-            "path": "/university/create-a-column-chart-using-fusioncharts-and-dotnet"
-          },
-          {
-            "title": "Render FusionCharts in MVC using .NET",
-            "path": "/university/render-fusioncharts-mvc-using-dotnet"
-          },
-          {
-            "title": "Create a Combination Chart using FusionCharts in .NET MVC",
-            "path": "/university/create-combination-chart-using-fusioncharts-and-dotnetmvc"
-          },
-          {
-            "title": "Create a Combination Chart using FusionCharts in .NET Framework Web Form",
-            "path": "/university/create-combination-chart-dotnet-webform"
+            "title": "Tutorials",
+            "children": [
+              {
+                "title": "Creating a Real-Time Bitcoin Ticker in JavaScript",
+                "path": "/university/creating-a-realtime-bitcoin-ticker-in-javascript"
+              },
+              {
+                "title": "Building a Sales Dashboard using React Framework",
+                "path": "/university/sales-dashboard-using-react"
+              },
+              {
+                "title": "Learn how to Export a Dashboard using FusionExport",
+                "path": "/university/learn-how-to-export-a-dashboard-fusionexport"
+              },
+              {
+                "title": "Create a Funnel Chart using FusionCharts and ASP.NET Web Form",
+                "path": "/university/create-a-funnel-chart-using-fusioncharts-and-dotnet"
+              },
+              {
+                "title": "Create a Funnel Chart using FusionCharts and MVC in ASP.NET",
+                "path": "/university/create-funnel-chart-fusioncharts-mvc-dotnet"
+              },
+              {
+                "title": "Create a Column Chart using ASP.NET Framework",
+                "path": "/university/create-a-column-chart-using-fusioncharts-and-dotnet"
+              },
+              {
+                "title": "Render FusionCharts in MVC using .NET",
+                "path": "/university/render-fusioncharts-mvc-using-dotnet"
+              },
+              {
+                "title": "Create a Combination Chart using FusionCharts in .NET MVC",
+                "path": "/university/create-combination-chart-using-fusioncharts-and-dotnetmvc"
+              },
+              {
+                "title": "Create a Combination Chart using FusionCharts in .NET Framework Web Form",
+                "path": "/university/create-combination-chart-dotnet-webform"
+              }
+            ]
           }
         ]
       }
