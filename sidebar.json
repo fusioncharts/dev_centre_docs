@@ -2238,10 +2238,6 @@
             "path": "/exporting-charts/using-fusionexport/tutorials/export-a-dashboard"
           },
           {
-            "title": "Add a logo or a heading to the dashboard",
-            "path": "/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard"
-          },
-          {
             "title": "Convert an SVG image to PNG/JPEG/PDF",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf"
@@ -2252,10 +2248,6 @@
             "path": "/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting"
           },
           {
-            "title": "Manipulate the output filename",
-            "path": "/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename"
-          },
-          {
             "title": "Enable logging",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/enabling-logging"
@@ -2264,10 +2256,6 @@
             "title": "Save exported files to S3",
             "visibility": false,
             "path": "/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three"
-          },
-          {
-            "title": "Asynchronous capture",
-            "path": "/exporting-charts/using-fusionexport/tutorials/asynchronous-capture"
           },
           {
             "title": "Export a D3 chart",
