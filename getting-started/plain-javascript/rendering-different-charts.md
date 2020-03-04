@@ -988,14 +988,7 @@ npm install fusionmaps
 </ul>
 <div  class='mt-30'><strong>The steps to render a map for both the modules are shown below:</strong></div>
 
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='es6'>ES6</a></li>
-    <li><a data-toggle='cjs'>CJS</a></li> 
-</ul>
-<div class='tab-content extra-tabs'>
-
-<div class='tab es6-tab active'>
-
+<h4>ES6</h4>
 <pre><code class="language-javascript">
 // Include the core fusioncharts file from core  -
 import FusionCharts from 'fusioncharts/core';
@@ -1052,9 +1045,8 @@ webVisit.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
 </pre>
-</div>
 
-<div class='tab cjs-tab'>
+<h4>CJS</h4>
 <pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
 var FusionMaps = require('fusioncharts/fusioncharts.maps');
@@ -1104,7 +1096,7 @@ dataSource: {
 webVisit.render();
 </code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
 
-</pre></div></div>
+</pre>
 </div>
 
 </div>
