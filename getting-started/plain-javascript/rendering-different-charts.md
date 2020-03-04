@@ -1053,7 +1053,7 @@ webVisit.render();
 
 </pre>
 </div>
-<h4>CJS</h4>
+
 <div class='tab cjs-tab'>
 <pre><code class="language-javascript">
 var FusionCharts = require('fusioncharts');
