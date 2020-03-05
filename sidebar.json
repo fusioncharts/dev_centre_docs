@@ -300,12 +300,8 @@
                     "path": "/getting-started/react/your-first-chart-using-react"
                   },
                   {
-                    "title": "Your First Gauge",
-                    "path": "/getting-started/react/your-first-gauge-using-react"
-                  },
-                  {
-                    "title": "Your First Map\t",
-                    "path": "/getting-started/react/your-first-map-using-react"
+                    "title": "Rendering Different Charts",
+                    "path": "/getting-started/plain-javascript/rendering-different-charts-using-react"
                   }
                 ]
               },
@@ -534,12 +530,8 @@
                     "path": "/getting-started/jquery/your-first-chart-using-jquery"
                   },
                   {
-                    "title": "Your First Gauge",
-                    "path": "/getting-started/jquery/your-first-gauge-using-jquery"
-                  },
-                  {
-                    "title": "Your First Map",
-                    "path": "/getting-started/jquery/your-first-map-using-jquery"
+                    "title": "Rendering Different Charts",
+                    "path": "/getting-started/plain-javascript/rendering-different-charts-using-react"
                   }
                 ]
               },
