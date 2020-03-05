@@ -582,7 +582,7 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
 </html>
 ```
 
-You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](/chart-guide/standard-charts/real-time-charts).
+> You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](/chart-guide/standard-charts/real-time-charts).
 
 ## Gauges
 
