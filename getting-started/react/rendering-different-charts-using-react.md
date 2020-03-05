@@ -8,13 +8,13 @@ In the [Getting Started](/getting-started/react/your-first-chart-using-react) se
 
 Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-- [Multi-series Charts](/getting-started/react/rendering-different-charts#multi-series-charts)
-- [Combination Charts](/getting-started/react/rendering-different-charts#combination-charts)
-- [Real-time Chart](/getting-started/react/rendering-different-charts#real-time-charts)
-- [Gauges](/getting-started/react/rendering-different-charts#gauges)
-- [Maps](/getting-started/react/rendering-different-charts#maps)
-- [Heatmap](/getting-started/react/rendering-different-charts#heat-map)
-- [Gantt Chart](/getting-started/react/rendering-different-charts#gantt-chart)
+- [Multi-series Charts](/getting-started/react/rendering-different-charts-using-react#multi-series-charts)
+- [Combination Charts](/getting-started/react/rendering-different-charts-using-react#combination-charts)
+- [Real-time Chart](/getting-started/react/rendering-different-charts-using-react#real-time-charts)
+- [Gauges](/getting-started/react/rendering-different-charts-using-react#gauges)
+- [Maps](/getting-started/react/rendering-different-charts-using-react#maps)
+- [Heatmap](/getting-started/react/rendering-different-charts-using-react#heat-map)
+- [Gantt Chart](/getting-started/react/rendering-different-charts-using-react#gantt-chart)
 
 ## Multi-series Charts
 
@@ -28,12 +28,12 @@ As you can see, a Multi-series Column 2D Chart has vertically aligned rectangula
 
 To build the chart shown above, we will use the data presented in the following table:
 
-|  Quarter  |  Previous Year  |  Current Year  |
-| --------- | --------------- | -------------- |
-|  Q1       |  12000          |  24400         |
-|  Q2       |  10500          |  29800         |
-|  Q3       |  23500          |  20800         |
-|  Q4       |  16000          |  26000         |
+| Quarter | Previous Year | Current Year |
+| ------- | ------------- | ------------ |
+| Q1      | 12000         | 24400        |
+| Q2      | 10500         | 29800        |
+| Q3      | 23500         | 20800        |
+| Q4      | 16000         | 26000        |
 
 In the above chart, we have plotted quarters with data values for the previous and the current years along the X-axis. To convert this to a data format that FusionCharts can use, you need the following two properties:
 
@@ -58,7 +58,7 @@ const categories =  [
     ]
   }
 ]
-// Construct the dataset comprising multiple series 
+// Construct the dataset comprising multiple series
 const dataset = [
   {
     "seriesname": "Previous Year",
@@ -86,115 +86,36 @@ const dataset = [
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```html
-// STEP 1 - Include Dependencies
- 
-// Include react
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-// Include the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
- 
-// Include the fusioncharts library
-import FusionCharts from 'fusioncharts';
- 
-// Include the chart type
-import Column2D from 'fusioncharts/fusioncharts.charts';
- 
-// Include the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
- 
-// Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
- 
-// STEP 2 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-    type: 'mscolumn2d',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-     dataSource: {
-    //Chart Configurations
-      "chart": {
-        "theme": "fusion",
-        "caption": "Comparison of Quarterly Revenue",
-        "xAxisname": "Quarter",
-        "yAxisName": "Revenues (In USD)",
-        "numberPrefix": "$",
-        "plotFillAlpha": "80",
-        "divLineIsDashed": "1",
-        "divLineDashLen": "1",
-        "divLineGapLen": "1"
-      },
-      "categories": [{
-        "category": [{
-          "label": "Q1"
-        }, {
-          "label": "Q2"
-        }, {
-          "label": "Q3"
-        }, {
-          "label": "Q4"
-        }]
-      }],
-       //Chart Data
-      "dataset": [{
-        "seriesname": "Previous Year",
-        "data": [{
-          "value": "10000"
-        }, {
-          "value": "11500"
-        }, {
-          "value": "12500"
-        }, {
-          "value": "15000"
-        }]
-      }, {
-        "seriesname": "Current Year",
-        "data": [{
-          "value": "25400"
-        }, {
-          "value": "29800"
-        }, {
-          "value": "21800"
-        }, {
-          "value": "26800"
-        }]
-      }],
-      "trendlines": [{
-        "line": [{
-          "startvalue": "12250",
-          "color": "#5D62B5",
-          "displayvalue": "Previous{br}Average",
-          "valueOnRight": "1",
-          "thickness": "1",
-          "showBelow": "1",
-          "tooltext": "Previous year quarterly target  : $13.5K"
-        }, {
-          "startvalue": "25950",
-          "color": "#29C3BE",
-          "displayvalue": "Current{br}Average",
-          "valueOnRight": "1",
-          "thickness": "1",
-          "showBelow": "1",
-          "tooltext": "Current year quarterly target  : $23K"
-        }]
-      }]
-    }
-  }
-
- 
-// STEP 3 - Creating the DOM element to pass the react-fusioncharts component
-class App extends React.Component {
-  render() {
-     return (
-     <ReactFC
-        {...chartConfigs}/>
-     );
-  }
-}
- 
-export default App;
+// STEP 1 - Include Dependencies // Include react import React from 'react';
+import ReactDOM from 'react-dom'; // Include the react-fusioncharts component
+import ReactFC from 'react-fusioncharts'; // Include the fusioncharts library
+import FusionCharts from 'fusioncharts'; // Include the chart type import
+Column2D from 'fusioncharts/fusioncharts.charts'; // Include the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'; //
+Adding the chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme); // STEP 2 - Creating the
+JSON object to store the chart configurations const chartConfigs = { type:
+'mscolumn2d',// The chart type width: '700', // Width of the chart height:
+'400', // Height of the chart dataFormat: 'json', // Data type dataSource: {
+//Chart Configurations "chart": { "theme": "fusion", "caption": "Comparison of
+Quarterly Revenue", "xAxisname": "Quarter", "yAxisName": "Revenues (In USD)",
+"numberPrefix": "$", "plotFillAlpha": "80", "divLineIsDashed": "1",
+"divLineDashLen": "1", "divLineGapLen": "1" }, "categories": [{ "category": [{
+"label": "Q1" }, { "label": "Q2" }, { "label": "Q3" }, { "label": "Q4" }] }],
+//Chart Data "dataset": [{ "seriesname": "Previous Year", "data": [{ "value":
+"10000" }, { "value": "11500" }, { "value": "12500" }, { "value": "15000" }] },
+{ "seriesname": "Current Year", "data": [{ "value": "25400" }, { "value":
+"29800" }, { "value": "21800" }, { "value": "26800" }] }], "trendlines": [{
+"line": [{ "startvalue": "12250", "color": "#5D62B5", "displayvalue":
+"Previous{br}Average", "valueOnRight": "1", "thickness": "1", "showBelow": "1",
+"tooltext": "Previous year quarterly target : $13.5K" }, { "startvalue":
+"25950", "color": "#29C3BE", "displayvalue": "Current{br}Average",
+"valueOnRight": "1", "thickness": "1", "showBelow": "1", "tooltext": "Current
+year quarterly target : $23K" }] }] } } // STEP 3 - Creating the DOM element to
+pass the react-fusioncharts component class App extends React.Component {
+render() { return (
+<ReactFC {...chartConfigs} />
+); } } export default App;
 ```
 
 > You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations etc. [here](/chart-guide/standard-charts/multi-series-charts).
@@ -211,18 +132,18 @@ As you can see in the 2D Single Y-axis combination chart above, a line, a column
 
 | Month     | Actual Revenue | Projected Revenue | Profit |
 | --------- | -------------- | ----------------- | ------ |
-| January   |  16000         |  15000            | 4000   |
-| February  |  20000         |  16000            | 5000   |
+| January   | 16000          | 15000             | 4000   |
+| February  | 20000          | 16000             | 5000   |
 | March     | 18000          | 17000             | 3000   |
-| April     | 19000          |  18000            | 4000   |
-| May       | 15000          |  19000            | 1000   |
-| June      | 21000          |  19000            | 7000   |
-| July      | 16000          |  19000            | 1000   |
-| August    | 20000          |  19000            | 4000   |
-| September | 17000          |  20000            | 1000   |
-| October   | 25000          |  21000            | 8000   |
-| November  | 19000          |  22000            | 2000   |
-| Decemebr  | 23000          |  23000            | 7000   |
+| April     | 19000          | 18000             | 4000   |
+| May       | 15000          | 19000             | 1000   |
+| June      | 21000          | 19000             | 7000   |
+| July      | 16000          | 19000             | 1000   |
+| August    | 20000          | 19000             | 4000   |
+| September | 17000          | 20000             | 1000   |
+| October   | 25000          | 21000             | 8000   |
+| November  | 19000          | 22000             | 2000   |
+| Decemebr  | 23000          | 23000             | 7000   |
 
 In the above chart, we have plotted monthly values for projected revenue, actual revenue, and profits made by Harry’s Supermart with monthly data values along the X-axis. To convert the data provided in the above table to a data format that FusionCharts can use, you need the following two properties:
 
@@ -319,235 +240,46 @@ const dataset = [
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```html
-// STEP 1 - Include Dependencies
-
-// Include react
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-// Include the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-// Include the fusioncharts library
-import FusionCharts from 'fusioncharts';
-
-// Include the chart type
-import Column2D from 'fusioncharts/fusioncharts.charts';
-
-// Include the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-// Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
-
-// STEP 2- Define the categories representing the labels on the X-axis
-const categories = [{
-    "category": [{
-        "label": "Jan"
-      },
-      {
-        "label": "Feb"
-      },
-      {
-        "label": "Mar"
-      },
-      {
-        "label": "Apr"
-      },
-      {
-        "label": "May"
-      },
-      {
-        "label": "Jun"
-      },
-      {
-        "label": "Jul"
-      },
-      {
-        "label": "Aug"
-      },
-      {
-        "label": "Sep"
-      },
-      {
-        "label": "Oct"
-      },
-      {
-        "label": "Nov"
-      },
-      {
-        "label": "Dec"
-      }
-    ]
-  }
-]
-// STEP 3- Construct the dataset comprising combination series
- const dataset = [{
-    "seriesName": "Actual Revenue",
-    "showValues": "1",
-    "data": [{
-        "value": "16000"
-      },
-      {
-        "value": "20000"
-      },
-      {
-        "value": "18000"
-      },
-      {
-        "value": "19000"
-      },
-      {
-        "value": "15000"
-      },
-      {
-        "value": "21000"
-      },
-      {
-        "value": "16000"
-      },
-      {
-        "value": "20000"
-      },
-      {
-        "value": "17000"
-      },
-      {
-        "value": "25000"
-      },
-      {
-        "value": "19000"
-      },
-      {
-        "value": "23000"
-      }
-    ]
-  },
-  {
-    "seriesName": "Projected Revenue",
-    "renderAs": "line",
-    "data": [{
-        "value": "15000"
-      },
-      {
-        "value": "16000"
-      },
-      {
-        "value": "17000"
-      },
-      {
-        "value": "18000"
-      },
-      {
-        "value": "19000"
-      },
-      {
-        "value": "19000"
-      },
-      {
-        "value": "19000"
-      },
-      {
-        "value": "19000"
-      },
-      {
-        "value": "20000"
-      },
-      {
-        "value": "21000"
-      },
-      {
-        "value": "22000"
-      },
-      {
-        "value": "23000"
-      }
-    ]
-  },
-  {
-    "seriesName": "Profit",
-    "renderAs": "area",
-    "data": [{
-        "value": "4000"
-      },
-      {
-        "value": "5000"
-      },
-      {
-        "value": "3000"
-      },
-      {
-        "value": "4000"
-      },
-      {
-        "value": "1000"
-      },
-      {
-        "value": "7000"
-      },
-      {
-        "value": "1000"
-      },
-      {
-        "value": "4000"
-      },
-      {
-        "value": "1000"
-      },
-      {
-        "value": "8000"
-      },
-      {
-        "value": "2000"
-      },
-      {
-        "value": "7000"
-      }
-    ]
-  }
-]
-
-// STEP 4 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-    type: 'mscombi2d',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: {
-        "chart": {
-          "caption": "Harry's SuperMart",
-          "subCaption": "Sales analysis of last year",
-          "xAxisname": "Month",
-          "yAxisName": "Amount (In USD)",
-          "numberPrefix": "$",
-          "divlineColor": "#999999",
-          "divLineIsDashed": "1",
-          "divLineDashLen": "1",
-          "divLineGapLen": "1",
-          "toolTipColor": "#ffffff",
-          "toolTipBorderThickness": "0",
-          "toolTipBgColor": "#000000",
-          "toolTipBgAlpha": "80",
-          "toolTipBorderRadius": "2",
-          "toolTipPadding": "5",
-          "theme": "fusion"
-        },
-        "categories": categories,
-        "dataset": dataset
-      }
-    }
-
-// STEP 5 - Creating the DOM element to pass the react-fusioncharts component
-class App extends React.Component {
-  render() {
-     return (
-     <ReactFC
-        {...chartConfigs}/>
-     );
-  }
-}
-
-export default App;
+// STEP 1 - Include Dependencies // Include react import React from 'react';
+import ReactDOM from 'react-dom'; // Include the react-fusioncharts component
+import ReactFC from 'react-fusioncharts'; // Include the fusioncharts library
+import FusionCharts from 'fusioncharts'; // Include the chart type import
+Column2D from 'fusioncharts/fusioncharts.charts'; // Include the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'; //
+Adding the chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme); // STEP 2- Define the
+categories representing the labels on the X-axis const categories = [{
+"category": [{ "label": "Jan" }, { "label": "Feb" }, { "label": "Mar" }, {
+"label": "Apr" }, { "label": "May" }, { "label": "Jun" }, { "label": "Jul" }, {
+"label": "Aug" }, { "label": "Sep" }, { "label": "Oct" }, { "label": "Nov" }, {
+"label": "Dec" } ] } ] // STEP 3- Construct the dataset comprising combination
+series const dataset = [{ "seriesName": "Actual Revenue", "showValues": "1",
+"data": [{ "value": "16000" }, { "value": "20000" }, { "value": "18000" }, {
+"value": "19000" }, { "value": "15000" }, { "value": "21000" }, { "value":
+"16000" }, { "value": "20000" }, { "value": "17000" }, { "value": "25000" }, {
+"value": "19000" }, { "value": "23000" } ] }, { "seriesName": "Projected
+Revenue", "renderAs": "line", "data": [{ "value": "15000" }, { "value": "16000"
+}, { "value": "17000" }, { "value": "18000" }, { "value": "19000" }, { "value":
+"19000" }, { "value": "19000" }, { "value": "19000" }, { "value": "20000" }, {
+"value": "21000" }, { "value": "22000" }, { "value": "23000" } ] }, {
+"seriesName": "Profit", "renderAs": "area", "data": [{ "value": "4000" }, {
+"value": "5000" }, { "value": "3000" }, { "value": "4000" }, { "value": "1000"
+}, { "value": "7000" }, { "value": "1000" }, { "value": "4000" }, { "value":
+"1000" }, { "value": "8000" }, { "value": "2000" }, { "value": "7000" } ] } ] //
+STEP 4 - Creating the JSON object to store the chart configurations const
+chartConfigs = { type: 'mscombi2d',// The chart type width: '700', // Width of
+the chart height: '400', // Height of the chart dataFormat: 'json', // Data type
+dataSource: { "chart": { "caption": "Harry's SuperMart", "subCaption": "Sales
+analysis of last year", "xAxisname": "Month", "yAxisName": "Amount (In USD)",
+"numberPrefix": "$", "divlineColor": "#999999", "divLineIsDashed": "1",
+"divLineDashLen": "1", "divLineGapLen": "1", "toolTipColor": "#ffffff",
+"toolTipBorderThickness": "0", "toolTipBgColor": "#000000", "toolTipBgAlpha":
+"80", "toolTipBorderRadius": "2", "toolTipPadding": "5", "theme": "fusion" },
+"categories": categories, "dataset": dataset } } // STEP 5 - Creating the DOM
+element to pass the react-fusioncharts component class App extends
+React.Component { render() { return (
+<ReactFC {...chartConfigs} />
+); } } export default App;
 ```
 
 > You can also create various charts with various combinations in a similar way. We have over 10+ combination charts. You can find more about their types, components, configurations etc. from [here](/chart-guide/standard-charts/combination-charts).
@@ -623,107 +355,40 @@ function updateData() {
 Now that the data and its transporting mechanism are ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```html
-// STEP 1 - Include Dependencies
-
-// Include react
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-// Include the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-// Include the fusioncharts library
-import FusionCharts from 'fusioncharts';
-
-// Include the chart type
-import Widgets from "fusioncharts/fusioncharts.widgets";
-// Include the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-// Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
-
-// STEP 2 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-    id: "stockRealTimeChart",
-    type: 'realtimearea',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: {
-        "chart": {
-          "theme": "fusion",
-          "caption": "Real-time stock price monitor",
-          "subCaption": "Harry's SuperMart",
-          "xAxisName": "Time",
-          "yAxisName": "Stock Price",
-          "numberPrefix": "$",
-          "refreshinterval": "5",
-          "yaxisminvalue": "35",
-          "yaxismaxvalue": "36",
-          "numdisplaysets": "10",
-          "labeldisplay": "rotate",
-          "showRealTimeValue": "0"
-
-        },
-        "categories": [{
-          "category": [{
-            "label": "Day Start"
-          }]
-        }],
-        "dataset": [{
-          "data": [{
-            "value": "35.27"
-          }]
-        }]
-      },
-      "events": {
-        "initialized": function(e) {
-          function addLeadingZero(num) {
-            return (num <= 9) ? ("0" + num) : num;
-          }
-
-          function updateData() {
-            // Get reference to the chart using its ID
-            var chartRef = FusionCharts("stockRealTimeChart"),
-              // We need to create a querystring format incremental update, containing
-              // label in hh:mm:ss format
-              // and a value (random).
-              currDate = new Date(),
-              label = addLeadingZero(currDate.getHours()) + ":" +
-              addLeadingZero(currDate.getMinutes()) + ":" +
-              addLeadingZero(currDate.getSeconds()),
-              // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
-              randomValue = Math.floor(Math.random() *
-                50) / 100 + 35.25,
-              // Build Data String in format &label=...&value=...
-              strData = "&label=" + label +
-              "&value=" +
-              randomValue;
-            // Feed it to chart.
-            chartRef.feedData(strData);
-          }
-
-          var myVar = setInterval(function() {
-            updateData();
-          }, 5000);
-        }
-      }
-    }
-
-
-
-// STEP 3 - Creating the DOM element to pass the react-fusioncharts component
-class App extends React.Component {
-  render() {
-     return (
-     <ReactFC
-        {...chartConfigs}/>
-     );
-  }
-}
-
-export default App;
+// STEP 1 - Include Dependencies // Include react import React from 'react';
+import ReactDOM from 'react-dom'; // Include the react-fusioncharts component
+import ReactFC from 'react-fusioncharts'; // Include the fusioncharts library
+import FusionCharts from 'fusioncharts'; // Include the chart type import
+Widgets from "fusioncharts/fusioncharts.widgets"; // Include the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'; //
+Adding the chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme); // STEP 2 - Creating the
+JSON object to store the chart configurations const chartConfigs = { id:
+"stockRealTimeChart", type: 'realtimearea',// The chart type width: '700', //
+Width of the chart height: '400', // Height of the chart dataFormat: 'json', //
+Data type dataSource: { "chart": { "theme": "fusion", "caption": "Real-time
+stock price monitor", "subCaption": "Harry's SuperMart", "xAxisName": "Time",
+"yAxisName": "Stock Price", "numberPrefix": "$", "refreshinterval": "5",
+"yaxisminvalue": "35", "yaxismaxvalue": "36", "numdisplaysets": "10",
+"labeldisplay": "rotate", "showRealTimeValue": "0" }, "categories": [{
+"category": [{ "label": "Day Start" }] }], "dataset": [{ "data": [{ "value":
+"35.27" }] }] }, "events": { "initialized": function(e) { function
+addLeadingZero(num) { return (num <= 9) ? ("0" + num) : num; } function
+updateData() { // Get reference to the chart using its ID var chartRef =
+FusionCharts("stockRealTimeChart"), // We need to create a querystring format
+incremental update, containing // label in hh:mm:ss format // and a value
+(random). currDate = new Date(), label = addLeadingZero(currDate.getHours()) +
+":" + addLeadingZero(currDate.getMinutes()) + ":" +
+addLeadingZero(currDate.getSeconds()), // Get random number between 35.25 &
+35.75 - rounded to 2 decimal places randomValue = Math.floor(Math.random() * 50)
+/ 100 + 35.25, // Build Data String in format &label=...&value=... strData =
+"&label=" + label + "&value=" + randomValue; // Feed it to chart.
+chartRef.feedData(strData); } var myVar = setInterval(function() { updateData();
+}, 5000); } } } // STEP 3 - Creating the DOM element to pass the
+react-fusioncharts component class App extends React.Component { render() {
+return (
+<ReactFC {...chartConfigs} />
+); } } export default App;
 ```
 
 You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](/chart-guide/standard-charts/real-time-charts).
@@ -742,11 +407,11 @@ So, any score less than 50 is bad and is shown in red. Any score between 50 and 
 
 To build the gauge shown above, we will use the data presented in the table below:
 
-| Range | Color | Hex Code |
-| ----- | ----- | ----- |
-| 0-50 | Red | #F2726F |
-| 50-75 | Yellow | #FFC533 |
-| 75-100 | Green | #62B58F |
+| Range  | Color  | Hex Code |
+| ------ | ------ | -------- |
+| 0-50   | Red    | #F2726F  |
+| 50-75  | Yellow | #FFC533  |
+| 75-100 | Green  | #62B58F  |
 
 FusionCharts accepts data in JSON format. To convert this to a data format that FusionCharts can use, you need the following two properties:
 
@@ -801,81 +466,28 @@ In the above JSON:
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```html
-// STEP 1 - Include Dependencies
-
-// Include react
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-// Include the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-// Include the fusioncharts library
-import FusionCharts from 'fusioncharts';
-
-//Import the Widgets
-import Widgets from 'fusioncharts/fusioncharts.widgets';
-
-// Include the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-// Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
-
-//STEP 2 - Defining the dataset for the angular gauge along with the color configuration
-const colorRange = {
-  "color": [{
-    "minValue": "0",
-    "maxValue": "50",
-    "code": "#e44a00"
-  }, {
-    "minValue": "50",
-    "maxValue": "75",
-    "code": "#f8bd19"
-  }, {
-    "minValue": "75",
-    "maxValue": "100",
-    "code": "#6baa01"
-  }]
-};
-
-const dials = {
-  "dial": [{
-    "value": "67"
-  }]
-};
-
-// STEP 3 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-    type: 'angulargauge',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: {
-        "chart": {
-          "caption": "Customer Satisfaction Score",
-          "subcaption": "Last week",
-          "lowerLimit": "0",
-          "upperLimit": "100",
-          "theme": "fusion"
-        },
-        "colorRange": colorRange,
-        "dials": dials
-    }
-}
-
-
-// STEP 3 - Creating the DOM element to pass the react-fusioncharts component
-class App extends React.Component {
-  render() {
-     return (
-     <ReactFC
-        {...chartConfigs}/>
-     );
-  }
-}
-
-export default App;
+// STEP 1 - Include Dependencies // Include react import React from 'react';
+import ReactDOM from 'react-dom'; // Include the react-fusioncharts component
+import ReactFC from 'react-fusioncharts'; // Include the fusioncharts library
+import FusionCharts from 'fusioncharts'; //Import the Widgets import Widgets
+from 'fusioncharts/fusioncharts.widgets'; // Include the theme as fusion import
+FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'; // Adding the
+chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme); //STEP 2 - Defining the
+dataset for the angular gauge along with the color configuration const
+colorRange = { "color": [{ "minValue": "0", "maxValue": "50", "code": "#e44a00"
+}, { "minValue": "50", "maxValue": "75", "code": "#f8bd19" }, { "minValue":
+"75", "maxValue": "100", "code": "#6baa01" }] }; const dials = { "dial": [{
+"value": "67" }] }; // STEP 3 - Creating the JSON object to store the chart
+configurations const chartConfigs = { type: 'angulargauge',// The chart type
+width: '700', // Width of the chart height: '400', // Height of the chart
+dataFormat: 'json', // Data type dataSource: { "chart": { "caption": "Customer
+Satisfaction Score", "subcaption": "Last week", "lowerLimit": "0", "upperLimit":
+"100", "theme": "fusion" }, "colorRange": colorRange, "dials": dials } } // STEP
+3 - Creating the DOM element to pass the react-fusioncharts component class App
+extends React.Component { render() { return (
+<ReactFC {...chartConfigs} />
+); } } export default App;
 ```
 
 > You can also create various charts belonging to the gauges family in a similar way. We have 7 different gauges. Check out the different types of gauges, their configurations [here](/chart-guide/list-of-charts#gauges).
@@ -890,14 +502,14 @@ You can download the map definition files separately from [here](https://www.fus
 
 As you can see in the map above, the data plot is indicating the average annual population growth across the 7 continents.
 
-| State | Entity Name | Value |
-| ----- | ----------- | ----- |
-| North America | NA | 82 |
-| South America | SA | 2.04 |
-| Asia | AS | 1.78 |
-| Europe | EU | 40 |
-| Africa | AF | 2.58 |
-| Australia | AU | 1.30 |
+| State         | Entity Name | Value |
+| ------------- | ----------- | ----- |
+| North America | NA          | 82    |
+| South America | SA          | 2.04  |
+| Asia          | AS          | 1.78  |
+| Europe        | EU          | 40    |
+| Africa        | AF          | 2.58  |
+| Australia     | AU          | 1.30  |
 
 To convert the data provided in the above table to a data format that FusionCharts can use, you need the following properties:
 
@@ -963,111 +575,36 @@ const data = [{
 We have a detailed [Map Specification Sheets](/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create. Now that the data is ready, include the map definition files and get ready to render your chart. The consolidated code is given below:
 
 ```html
-// STEP 1 - Include Dependencies
-
-// Include react
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-// Include the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-// Include the fusioncharts library
-import FusionCharts from 'fusioncharts';
-
-//Import FusionMaps
-import FusionMaps from 'fusioncharts/maps/es/fusioncharts.world';
-import World from 'fusioncharts/fusioncharts.maps'
-
-// Include the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-// Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
-
-//STEP 2 - Define the dataset and the colorRange of the map
-const dataset = [{
-    "id": "NA",
-    "value": ".82",
-    "showLabel": "1"
-    }, {
-    "id": "SA",
-    "value": "2.04",
-    "showLabel": "1"
-    }, {
-    "id": "AS",
-    "value": "1.78",
-    "showLabel": "1"
-    }, {
-    "id": "EU",
-    "value": ".40",
-    "showLabel": "1"
-    }, {
-    "id": "AF",
-    "value": "2.58",
-    "showLabel": "1"
-    }, {
-    "id": "AU",
-    "value": "1.30",
-    "showLabel": "1"
-  }];
-
-const colorrange = {
-  "minvalue": "0",
-  "code": "#FFE0B2",
-  "gradient": "1",
-  "color":
-  [{
-    "minvalue": "0.5",
-    "maxvalue": "1.0",
-    "color": "#FFD74D"
-    }, {
-    "minvalue": "1.0",
-    "maxvalue": "2.0",
-    "color": "#FB8C00"
-    }, {
-    "minvalue": "2.0",
-    "maxvalue": "3.0",
-    "color": "#E65100"
-  }]
-};
-
-// STEP 3 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-  type: 'world',// The chart type
-  width: '700', // Width of the chart
-  height: '400', // Height of the chart
-  dataFormat: 'json', // Data type
-  dataSource: {
-    // Map Configuration
-    "chart": {
-      "caption": "Average Annual Population Growth",
-      "subcaption": " 1955-2015",
-      "numbersuffix": "%",
-      "includevalueinlabels": "1",
-      "labelsepchar": ": ",
-      "entityFillHoverColor": "#FFF9C4",
-      "theme": "fusion"
-    },
-    // Aesthetics; ranges synced with the slider
-    "colorrange": colorrange,
-    // Source data as JSON --> id represents countries of the world.
-    "data": dataset
-  }
-}
-
-
-// STEP 3 - Creating the DOM element to pass the react-fusioncharts component
-class App extends React.Component {
-  render() {
-     return (
-     <ReactFC
-        {...chartConfigs}/>
-     );
-  }
-}
-
-export default App;
+// STEP 1 - Include Dependencies // Include react import React from 'react';
+import ReactDOM from 'react-dom'; // Include the react-fusioncharts component
+import ReactFC from 'react-fusioncharts'; // Include the fusioncharts library
+import FusionCharts from 'fusioncharts'; //Import FusionMaps import FusionMaps
+from 'fusioncharts/maps/es/fusioncharts.world'; import World from
+'fusioncharts/fusioncharts.maps' // Include the theme as fusion import
+FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'; // Adding the
+chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, FusionMaps, World, FusionTheme); //STEP 2 - Define
+the dataset and the colorRange of the map const dataset = [{ "id": "NA",
+"value": ".82", "showLabel": "1" }, { "id": "SA", "value": "2.04", "showLabel":
+"1" }, { "id": "AS", "value": "1.78", "showLabel": "1" }, { "id": "EU", "value":
+".40", "showLabel": "1" }, { "id": "AF", "value": "2.58", "showLabel": "1" }, {
+"id": "AU", "value": "1.30", "showLabel": "1" }]; const colorrange = {
+"minvalue": "0", "code": "#FFE0B2", "gradient": "1", "color": [{ "minvalue":
+"0.5", "maxvalue": "1.0", "color": "#FFD74D" }, { "minvalue": "1.0", "maxvalue":
+"2.0", "color": "#FB8C00" }, { "minvalue": "2.0", "maxvalue": "3.0", "color":
+"#E65100" }] }; // STEP 3 - Creating the JSON object to store the chart
+configurations const chartConfigs = { type: 'world',// The chart type width:
+'700', // Width of the chart height: '400', // Height of the chart dataFormat:
+'json', // Data type dataSource: { // Map Configuration "chart": { "caption":
+"Average Annual Population Growth", "subcaption": " 1955-2015", "numbersuffix":
+"%", "includevalueinlabels": "1", "labelsepchar": ": ", "entityFillHoverColor":
+"#FFF9C4", "theme": "fusion" }, // Aesthetics; ranges synced with the slider
+"colorrange": colorrange, // Source data as JSON --> id represents countries of
+the world. "data": dataset } } // STEP 3 - Creating the DOM element to pass the
+react-fusioncharts component class App extends React.Component { render() {
+return (
+<ReactFC {...chartConfigs} />
+); } } export default App;
 ```
 
 That’s it. Your first map is ready.
@@ -1297,12 +834,12 @@ In the section below, we will see how to build a heat map chart.
 
 As you can see in the heat map above, the data plot is indicating the ratings of four different smartphones based on five common components, with the help of different colors.
 
-| State | Processor | Screen Size | Price | Battery Backup | Camera |
-| ----- | --------- | ----------- | ----- | ---------------| ------ |
-| Samsung Galaxy H5 | 8.7 | 8.5 | 9.3 | 9.7 | 8 |
-| HTC One (M8) | 9.2 | 8.3 | 7.3 | 8.8 | 8.7 |
-| Apple iPhone 5S | 9.1 | 8.6 | 7.2 | 8.4 | 9.5 |
-| Nokia Lumia 1520 | 8.8 | 9.1 | 9.7 | 9.2 | 8.1 |
+| State             | Processor | Screen Size | Price | Battery Backup | Camera |
+| ----------------- | --------- | ----------- | ----- | -------------- | ------ |
+| Samsung Galaxy H5 | 8.7       | 8.5         | 9.3   | 9.7            | 8      |
+| HTC One (M8)      | 9.2       | 8.3         | 7.3   | 8.8            | 8.7    |
+| Apple iPhone 5S   | 9.1       | 8.6         | 7.2   | 8.4            | 9.5    |
+| Nokia Lumia 1520  | 8.8       | 9.1         | 9.7   | 9.2            | 8.1    |
 
 To convert the data provided in the above table to a data format that FusionCharts can use, you need the following properties:
 
@@ -2659,956 +2196,227 @@ const connectors = [{
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```html
-// STEP 1 - Include Dependencies
-
-// Include react
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-// Include the react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-// Include the fusioncharts library
-import FusionCharts from 'fusioncharts';
-
-// Include the chart type
-import Gantt from "fusioncharts/fusioncharts.gantt";
-// Include the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-// Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Gantt, FusionTheme);
-
-//STEP 2 - Define the various data objects for the Gantt Chart
-const categories = [{
-  "bgcolor": "#999999",
-  "category": [{
-    "start": "1/4/2014",
-    "end": "30/6/2014",
-    "label": "Months",
-    "align": "middle",
-    "fontcolor": "#ffffff",
-    "fontsize": "12"
-  }]
-}, {
-  "bgcolor": "#999999",
-  "align": "middle",
-  "fontcolor": "#ffffff",
-  "fontsize": "12",
-  "category": [{
-    "start": "1/4/2014",
-    "end": "30/4/2014",
-    "label": "April"
-  }, {
-    "start": "1/5/2014",
-    "end": "31/5/2014",
-    "label": "May"
-  }, {
-    "start": "1/6/2014",
-    "end": "30/6/2014",
-    "label": "June"
-  }]
-}, {
-  "bgcolor": "#ffffff",
-  "fontcolor": "#333333",
-  "fontsize": "11",
-  "align": "center",
-  "category": [{
-    "start": "1/4/2014",
-    "end": "5/4/2014",
-    "label": "Week 1"
-  }, {
-    "start": "6/4/2014",
-    "end": "12/4/2014",
-    "label": "Week 2"
-  }, {
-    "start": "13/4/2014",
-    "end": "19/4/2014",
-    "label": "Week 3"
-  }, {
-    "start": "20/4/2014",
-    "end": "26/4/2014",
-    "label": "Week 4"
-  }, {
-    "start": "27/4/2014",
-    "end": "3/5/2014",
-    "label": "Week 5"
-  }, {
-    "start": "4/5/2014",
-    "end": "10/5/2014",
-    "label": "Week 6"
-  }, {
-    "start": "11/5/2014",
-    "end": "17/5/2014",
-    "label": "Week 7"
-  }, {
-    "start": "18/5/2014",
-    "end": "24/5/2014",
-    "label": "Week 8"
-  }, {
-    "start": "25/5/2014",
-    "end": "31/5/2014",
-    "label": "Week 9"
-  }, {
-    "start": "1/6/2014",
-    "end": "7/6/2014",
-    "label": "Week 10"
-  }, {
-    "start": "8/6/2014",
-    "end": "14/6/2014",
-    "label": "Week 11"
-  }, {
-    "start": "15/6/2014",
-    "end": "21/6/2014",
-    "label": "Week 12"
-  }, {
-    "start": "22/6/2014",
-    "end": "28/6/2014",
-    "label": "Week 13"
-  }]
-}];
-//List out the different processes of the Gantt chart
-const processes = {
-  "headertext": "Task",
-  "fontcolor": "#000000",
-  "fontsize": "11",
-  "isanimated": "1",
-  "bgcolor": "#6baa01",
-  "headervalign": "bottom",
-  "headeralign": "left",
-  "headerbgcolor": "#999999",
-  "headerfontcolor": "#ffffff",
-  "headerfontsize": "12",
-  "align": "left",
-  "isbold": "1",
-  "bgalpha": "25",
-  "process": [{
-    "label": "Clear site",
-    "id": "1"
-  }, {
-    "label": "Excavate Foundation",
-    "id": "2",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Concrete Foundation",
-    "id": "3",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Footing to DPC",
-    "id": "4",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Drainage Services",
-    "id": "5",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Backfill",
-    "id": "6",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Ground Floor",
-    "id": "7"
-  }, {
-    "label": "Walls on First Floor",
-    "id": "8"
-  }, {
-    "label": "First Floor Carcass",
-    "id": "9",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "First Floor Deck",
-    "id": "10",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Roof Structure",
-    "id": "11"
-  }, {
-    "label": "Roof Covering",
-    "id": "12"
-  }, {
-    "label": "Rainwater Gear",
-    "id": "13"
-  }, {
-    "label": "Windows",
-    "id": "14"
-  }, {
-    "label": "External Doors",
-    "id": "15"
-  }, {
-    "label": "Connect Electricity",
-    "id": "16"
-  }, {
-    "label": "Connect Water Supply",
-    "id": "17",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Install Air Conditioning",
-    "id": "18",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Interior Decoration",
-    "id": "19",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Fencing And signs",
-    "id": "20"
-  }, {
-    "label": "Exterior Decoration",
-    "id": "21",
-    "hoverBandColor": "#e44a00",
-    "hoverBandAlpha": "40"
-  }, {
-    "label": "Setup racks",
-    "id": "22"
-  }]
-};
-
-const datatable = {
-  "showprocessname": "1",
-  "namealign": "left",
-  "fontcolor": "#000000",
-  "fontsize": "10",
-  "valign": "right",
-  "align": "center",
-  "headervalign": "bottom",
-  "headeralign": "center",
-  "headerbgcolor": "#999999",
-  "headerfontcolor": "#ffffff",
-  "headerfontsize": "12",
-  "datacolumn": [{
-    "bgcolor": "#eeeeee",
-    "headertext": "Actual{br}Start{br}Date",
-    "text": [{
-      "label": "9/4/2014"
-    }, {
-      "label": "13/4/2014"
-    }, {
-      "label": "26/4/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40",
-
-    }, {
-      "label": "4/5/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "6/5/2014"
-    }, {
-      "label": "5/5/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "11/5/2014"
-    }, {
-      "label": "16/5/2014"
-    }, {
-      "label": "16/5/2014"
-    }, {
-      "label": "21/5/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "25/5/2014"
-    }, {
-      "label": "28/5/2014"
-    }, {
-      "label": "4/6/2014"
-    }, {
-      "label": "4/6/2014"
-    }, {
-      "label": "4/6/2014"
-    }, {
-      "label": "2/6/2014"
-    }, {
-      "label": "5/6/2014"
-    }, {
-      "label": "18/6/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "16/6/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "23/6/2014"
-    }, {
-      "label": "18/6/2014"
-    }, {
-      "label": "25/6/2014"
-    }]
-  }, {
-    "bgcolor": "#eeeeee",
-    "headertext": "Actual{br}End{br}Date",
-    "text": [{
-      "label": "12/4/2014"
-    }, {
-      "label": "25/4/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "4/5/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "10/5/2014"
-    }, {
-      "label": "10/5/2014"
-    }, {
-      "label": "11/5/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "14/5/2014"
-    }, {
-      "label": "19/5/2014"
-    }, {
-      "label": "21/5/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "24/5/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "27/5/2014"
-    }, {
-      "label": "1/6/2014"
-    }, {
-      "label": "6/6/2014"
-    }, {
-      "label": "4/6/2014"
-    }, {
-      "label": "4/6/2014"
-    }, {
-      "label": "7/6/2014"
-    }, {
-      "label": "17/6/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "20/6/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "23/6/2014"
-    }, {
-      "label": "23/6/2014"
-    }, {
-      "label": "23/6/2014",
-      "bgcolor": "#e44a00",
-      "bgAlpha": "40"
-    }, {
-      "label": "28/6/2014"
-    }]
-  }]
-};
-//Define different tasks of the process in a JSON object
-const tasks = {
-  "task": [{
-    "label": "Planned",
-    "processid": "1",
-    "start": "9/4/2014",
-    "end": "12/4/2014",
-    "id": "1-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "1",
-    "start": "9/4/2014",
-    "end": "12/4/2014",
-    "id": "1",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "2",
-    "start": "13/4/2014",
-    "end": "23/4/2014",
-    "id": "2-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "2",
-    "start": "13/4/2014",
-    "end": "25/4/2014",
-    "id": "2",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Delay",
-    "processid": "2",
-    "start": "23/4/2014",
-    "end": "25/4/2014",
-    "id": "2-2",
-    "color": "#e44a00",
-    "toppadding": "56%",
-    "height": "32%",
-    "tooltext": "Delayed by 2 days."
-  }, {
-    "label": "Planned",
-    "processid": "3",
-    "start": "23/4/2014",
-    "end": "30/4/2014",
-    "id": "3-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "3",
-    "start": "26/4/2014",
-    "end": "4/5/2014",
-    "id": "3",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Delay",
-    "processid": "3",
-    "start": "3/5/2014",
-    "end": "4/5/2014",
-    "id": "3-2",
-    "color": "#e44a00",
-    "toppadding": "56%",
-    "height": "32%",
-    "tooltext": "Delayed by 1 days."
-  }, {
-    "label": "Planned",
-    "processid": "4",
-    "start": "3/5/2014",
-    "end": "10/5/2014",
-    "id": "4-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "4",
-    "start": "4/5/2014",
-    "end": "10/5/2014",
-    "id": "4",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "5",
-    "start": "6/5/2014",
-    "end": "11/5/2014",
-    "id": "5-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "5",
-    "start": "6/5/2014",
-    "end": "10/5/2014",
-    "id": "5",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "6",
-    "start": "4/5/2014",
-    "end": "7/5/2014",
-    "id": "6-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "6",
-    "start": "5/5/2014",
-    "end": "11/5/2014",
-    "id": "6",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Delay",
-    "processid": "6",
-    "start": "7/5/2014",
-    "end": "11/5/2014",
-    "id": "6-2",
-    "color": "#e44a00",
-    "toppadding": "56%",
-    "height": "32%",
-    "tooltext": "Delayed by 4 days."
-  }, {
-    "label": "Planned",
-    "processid": "7",
-    "start": "11/5/2014",
-    "end": "14/5/2014",
-    "id": "7-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "7",
-    "start": "11/5/2014",
-    "end": "14/5/2014",
-    "id": "7",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "8",
-    "start": "16/5/2014",
-    "end": "19/5/2014",
-    "id": "8-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "8",
-    "start": "16/5/2014",
-    "end": "19/5/2014",
-    "id": "8",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "9",
-    "start": "16/5/2014",
-    "end": "18/5/2014",
-    "id": "9-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "9",
-    "start": "16/5/2014",
-    "end": "21/5/2014",
-    "id": "9",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Delay",
-    "processid": "9",
-    "start": "18/5/2014",
-    "end": "21/5/2014",
-    "id": "9-2",
-    "color": "#e44a00",
-    "toppadding": "56%",
-    "height": "32%",
-    "tooltext": "Delayed by 3 days."
-  }, {
-    "label": "Planned",
-    "processid": "10",
-    "start": "20/5/2014",
-    "end": "23/5/2014",
-    "id": "10-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "10",
-    "start": "21/5/2014",
-    "end": "24/5/2014",
-    "id": "10",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Delay",
-    "processid": "10",
-    "start": "23/5/2014",
-    "end": "24/5/2014",
-    "id": "10-2",
-    "color": "#e44a00",
-    "toppadding": "56%",
-    "height": "32%",
-    "tooltext": "Delayed by 1 days."
-  }, {
-    "label": "Planned",
-    "processid": "11",
-    "start": "25/5/2014",
-    "end": "27/5/2014",
-    "id": "11-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "11",
-    "start": "25/5/2014",
-    "end": "27/5/2014",
-    "id": "11",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "12",
-    "start": "28/5/2014",
-    "end": "1/6/2014",
-    "id": "12-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "12",
-    "start": "28/5/2014",
-    "end": "1/6/2014",
-    "id": "12",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "13",
-    "start": "4/6/2014",
-    "end": "6/6/2014",
-    "id": "13-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "13",
-    "start": "4/6/2014",
-    "end": "6/6/2014",
-    "id": "13",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "14",
-    "start": "4/6/2014",
-    "end": "4/6/2014",
-    "id": "14-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "14",
-    "start": "4/6/2014",
-    "end": "4/6/2014",
-    "id": "14",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "15",
-    "start": "4/6/2014",
-    "end": "4/6/2014",
-    "id": "15-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "15",
-    "start": "4/6/2014",
-    "end": "4/6/2014",
-    "id": "15",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "16",
-    "start": "2/6/2014",
-    "end": "7/6/2014",
-    "id": "16-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "16",
-    "start": "2/6/2014",
-    "end": "7/6/2014",
-    "id": "16",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "17",
-    "start": "5/6/2014",
-    "end": "10/6/2014",
-    "id": "17-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "17",
-    "start": "5/6/2014",
-    "end": "17/6/2014",
-    "id": "17",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Delay",
-    "processid": "17",
-    "start": "10/6/2014",
-    "end": "17/6/2014",
-    "id": "17-2",
-    "color": "#e44a00",
-    "toppadding": "56%",
-    "height": "32%",
-    "tooltext": "Delayed by 7 days."
-  }, {
-    "label": "Planned",
-    "processid": "18",
-    "start": "10/6/2014",
-    "end": "12/6/2014",
-    "id": "18-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Delay",
-    "processid": "18",
-    "start": "18/6/2014",
-    "end": "20/6/2014",
-    "id": "18",
-    "color": "#e44a00",
-    "toppadding": "56%",
-    "height": "32%",
-    "tooltext": "Delayed by 8 days."
-  }, {
-    "label": "Planned",
-    "processid": "19",
-    "start": "15/6/2014",
-    "end": "23/6/2014",
-    "id": "19-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "19",
-    "start": "16/6/2014",
-    "end": "23/6/2014",
-    "id": "19",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "20",
-    "start": "23/6/2014",
-    "end": "23/6/2014",
-    "id": "20-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "20",
-    "start": "23/6/2014",
-    "end": "23/6/2014",
-    "id": "20",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Planned",
-    "processid": "21",
-    "start": "18/6/2014",
-    "end": "21/6/2014",
-    "id": "21-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "21",
-    "start": "18/6/2014",
-    "end": "23/6/2014",
-    "id": "21",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }, {
-    "label": "Delay",
-    "processid": "21",
-    "start": "21/6/2014",
-    "end": "23/6/2014",
-    "id": "21-2",
-    "color": "#e44a00",
-    "toppadding": "56%",
-    "height": "32%",
-    "tooltext": "Delayed by 2 days."
-  }, {
-    "label": "Planned",
-    "processid": "22",
-    "start": "24/6/2014",
-    "end": "28/6/2014",
-    "id": "22-1",
-    "color": "#008ee4",
-    "height": "32%",
-    "toppadding": "12%"
-  }, {
-    "label": "Actual",
-    "processid": "22",
-    "start": "25/6/2014",
-    "end": "28/6/2014",
-    "id": "22",
-    "color": "#6baa01",
-    "toppadding": "56%",
-    "height": "32%"
-  }]
-};
-//Structurize the connectors between different tasks of the Gantt chart
-const connectors = [{
-  "connector": [{
-    "fromtaskid": "1",
-    "totaskid": "2",
-    "color": "#008ee4",
-    "thickness": "2",
-    "fromtaskconnectstart_": "1"
-  }, {
-    "fromtaskid": "2-2",
-    "totaskid": "3",
-    "color": "#008ee4",
-    "thickness": "2"
-  }, {
-    "fromtaskid": "3-2",
-    "totaskid": "4",
-    "color": "#008ee4",
-    "thickness": "2"
-  }, {
-    "fromtaskid": "3-2",
-    "totaskid": "6",
-    "color": "#008ee4",
-    "thickness": "2"
-  }, {
-    "fromtaskid": "7",
-    "totaskid": "8",
-    "color": "#008ee4",
-    "thickness": "2"
-  }, {
-    "fromtaskid": "7",
-    "totaskid": "9",
-    "color": "#008ee4",
-    "thickness": "2"
-  }, {
-    "fromtaskid": "12",
-    "totaskid": "16",
-    "color": "#008ee4",
-    "thickness": "2"
-  }, {
-    "fromtaskid": "12",
-    "totaskid": "17",
-    "color": "#008ee4",
-    "thickness": "2"
-  }, {
-    "fromtaskid": "17-2",
-    "totaskid": "18",
-    "color": "#008ee4",
-    "thickness": "2"
-  }, {
-    "fromtaskid": "19",
-    "totaskid": "22",
-    "color": "#008ee4",
-    "thickness": "2"
-  }]
-}];
-
-// STEP 3 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-    type: 'gantt',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: {
-        "chart": {
-          "theme": "fusion",
-          "caption": "New Store Opening - Project Plan",
-          "subcaption": "Planned vs Actual",
-          "dateformat": "dd/mm/yyyy",
-          "outputdateformat": "ddds mns yy",
-          "ganttwidthpercent": "60",
-          "ganttPaneDuration": "40",
-          "ganttPaneDurationUnit": "d",
-          "plottooltext": "$processName{br}$label starting date $start{br}$label ending date $end",
-          "legendBorderAlpha": "0",
-          "legendShadow": "0",
-          "usePlotGradientColor": "0",
-          "showCanvasBorder": "0",
-          "flatScrollBars": "1",
-          "gridbordercolor": "#333333",
-          "gridborderalpha": "20",
-          "slackFillColor": "#e44a00",
-          "taskBarFillMix": "light+0"
-        },
-        "categories": categories,
-        "processes": processes,
-        "datatable": datatable,
-        "tasks": tasks,
-        "connectors": connectors,
-        "milestones": {
-          "milestone": [{
-              "date": "2/6/2014",
-              "taskid": "12",
-              "color": "#f8bd19",
-              "shape": "star",
-              "tooltext": "Completion of Phase 1"
-            }
-          ]
-        },
-        "legend": {
-          "item": [{
-            "label": "Planned",
-            "color": "#008ee4"
-          }, {
-            "label": "Actual",
-            "color": "#6baa01"
-          }, {
-            "label": "Slack (Delay)",
-            "color": "#e44a00"
-          }]
-        }
-
-      }
-    }
-
-// STEP 3 - Creating the DOM element to pass the react-fusioncharts component
-class App extends React.Component {
-  render() {
-     return (
-     <ReactFC
-        {...chartConfigs}/>
-     );
-  }
-}
-
-export default App;
+// STEP 1 - Include Dependencies // Include react import React from 'react';
+import ReactDOM from 'react-dom'; // Include the react-fusioncharts component
+import ReactFC from 'react-fusioncharts'; // Include the fusioncharts library
+import FusionCharts from 'fusioncharts'; // Include the chart type import Gantt
+from "fusioncharts/fusioncharts.gantt"; // Include the theme as fusion import
+FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'; // Adding the
+chart and theme as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Gantt, FusionTheme); //STEP 2 - Define the various
+data objects for the Gantt Chart const categories = [{ "bgcolor": "#999999",
+"category": [{ "start": "1/4/2014", "end": "30/6/2014", "label": "Months",
+"align": "middle", "fontcolor": "#ffffff", "fontsize": "12" }] }, { "bgcolor":
+"#999999", "align": "middle", "fontcolor": "#ffffff", "fontsize": "12",
+"category": [{ "start": "1/4/2014", "end": "30/4/2014", "label": "April" }, {
+"start": "1/5/2014", "end": "31/5/2014", "label": "May" }, { "start":
+"1/6/2014", "end": "30/6/2014", "label": "June" }] }, { "bgcolor": "#ffffff",
+"fontcolor": "#333333", "fontsize": "11", "align": "center", "category": [{
+"start": "1/4/2014", "end": "5/4/2014", "label": "Week 1" }, { "start":
+"6/4/2014", "end": "12/4/2014", "label": "Week 2" }, { "start": "13/4/2014",
+"end": "19/4/2014", "label": "Week 3" }, { "start": "20/4/2014", "end":
+"26/4/2014", "label": "Week 4" }, { "start": "27/4/2014", "end": "3/5/2014",
+"label": "Week 5" }, { "start": "4/5/2014", "end": "10/5/2014", "label": "Week
+6" }, { "start": "11/5/2014", "end": "17/5/2014", "label": "Week 7" }, {
+"start": "18/5/2014", "end": "24/5/2014", "label": "Week 8" }, { "start":
+"25/5/2014", "end": "31/5/2014", "label": "Week 9" }, { "start": "1/6/2014",
+"end": "7/6/2014", "label": "Week 10" }, { "start": "8/6/2014", "end":
+"14/6/2014", "label": "Week 11" }, { "start": "15/6/2014", "end": "21/6/2014",
+"label": "Week 12" }, { "start": "22/6/2014", "end": "28/6/2014", "label": "Week
+13" }] }]; //List out the different processes of the Gantt chart const processes
+= { "headertext": "Task", "fontcolor": "#000000", "fontsize": "11",
+"isanimated": "1", "bgcolor": "#6baa01", "headervalign": "bottom",
+"headeralign": "left", "headerbgcolor": "#999999", "headerfontcolor": "#ffffff",
+"headerfontsize": "12", "align": "left", "isbold": "1", "bgalpha": "25",
+"process": [{ "label": "Clear site", "id": "1" }, { "label": "Excavate
+Foundation", "id": "2", "hoverBandColor": "#e44a00", "hoverBandAlpha": "40" }, {
+"label": "Concrete Foundation", "id": "3", "hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40" }, { "label": "Footing to DPC", "id": "4",
+"hoverBandColor": "#e44a00", "hoverBandAlpha": "40" }, { "label": "Drainage
+Services", "id": "5", "hoverBandColor": "#e44a00", "hoverBandAlpha": "40" }, {
+"label": "Backfill", "id": "6", "hoverBandColor": "#e44a00", "hoverBandAlpha":
+"40" }, { "label": "Ground Floor", "id": "7" }, { "label": "Walls on First
+Floor", "id": "8" }, { "label": "First Floor Carcass", "id": "9",
+"hoverBandColor": "#e44a00", "hoverBandAlpha": "40" }, { "label": "First Floor
+Deck", "id": "10", "hoverBandColor": "#e44a00", "hoverBandAlpha": "40" }, {
+"label": "Roof Structure", "id": "11" }, { "label": "Roof Covering", "id": "12"
+}, { "label": "Rainwater Gear", "id": "13" }, { "label": "Windows", "id": "14"
+}, { "label": "External Doors", "id": "15" }, { "label": "Connect Electricity",
+"id": "16" }, { "label": "Connect Water Supply", "id": "17", "hoverBandColor":
+"#e44a00", "hoverBandAlpha": "40" }, { "label": "Install Air Conditioning",
+"id": "18", "hoverBandColor": "#e44a00", "hoverBandAlpha": "40" }, { "label":
+"Interior Decoration", "id": "19", "hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40" }, { "label": "Fencing And signs", "id": "20" }, {
+"label": "Exterior Decoration", "id": "21", "hoverBandColor": "#e44a00",
+"hoverBandAlpha": "40" }, { "label": "Setup racks", "id": "22" }] }; const
+datatable = { "showprocessname": "1", "namealign": "left", "fontcolor":
+"#000000", "fontsize": "10", "valign": "right", "align": "center",
+"headervalign": "bottom", "headeralign": "center", "headerbgcolor": "#999999",
+"headerfontcolor": "#ffffff", "headerfontsize": "12", "datacolumn": [{
+"bgcolor": "#eeeeee", "headertext": "Actual{br}Start{br}Date", "text": [{
+"label": "9/4/2014" }, { "label": "13/4/2014" }, { "label": "26/4/2014",
+"bgcolor": "#e44a00", "bgAlpha": "40", }, { "label": "4/5/2014", "bgcolor":
+"#e44a00", "bgAlpha": "40" }, { "label": "6/5/2014" }, { "label": "5/5/2014",
+"bgcolor": "#e44a00", "bgAlpha": "40" }, { "label": "11/5/2014" }, { "label":
+"16/5/2014" }, { "label": "16/5/2014" }, { "label": "21/5/2014", "bgcolor":
+"#e44a00", "bgAlpha": "40" }, { "label": "25/5/2014" }, { "label": "28/5/2014"
+}, { "label": "4/6/2014" }, { "label": "4/6/2014" }, { "label": "4/6/2014" }, {
+"label": "2/6/2014" }, { "label": "5/6/2014" }, { "label": "18/6/2014",
+"bgcolor": "#e44a00", "bgAlpha": "40" }, { "label": "16/6/2014", "bgcolor":
+"#e44a00", "bgAlpha": "40" }, { "label": "23/6/2014" }, { "label": "18/6/2014"
+}, { "label": "25/6/2014" }] }, { "bgcolor": "#eeeeee", "headertext":
+"Actual{br}End{br}Date", "text": [{ "label": "12/4/2014" }, { "label":
+"25/4/2014", "bgcolor": "#e44a00", "bgAlpha": "40" }, { "label": "4/5/2014",
+"bgcolor": "#e44a00", "bgAlpha": "40" }, { "label": "10/5/2014" }, { "label":
+"10/5/2014" }, { "label": "11/5/2014", "bgcolor": "#e44a00", "bgAlpha": "40" },
+{ "label": "14/5/2014" }, { "label": "19/5/2014" }, { "label": "21/5/2014",
+"bgcolor": "#e44a00", "bgAlpha": "40" }, { "label": "24/5/2014", "bgcolor":
+"#e44a00", "bgAlpha": "40" }, { "label": "27/5/2014" }, { "label": "1/6/2014" },
+{ "label": "6/6/2014" }, { "label": "4/6/2014" }, { "label": "4/6/2014" }, {
+"label": "7/6/2014" }, { "label": "17/6/2014", "bgcolor": "#e44a00", "bgAlpha":
+"40" }, { "label": "20/6/2014", "bgcolor": "#e44a00", "bgAlpha": "40" }, {
+"label": "23/6/2014" }, { "label": "23/6/2014" }, { "label": "23/6/2014",
+"bgcolor": "#e44a00", "bgAlpha": "40" }, { "label": "28/6/2014" }] }] };
+//Define different tasks of the process in a JSON object const tasks = { "task":
+[{ "label": "Planned", "processid": "1", "start": "9/4/2014", "end":
+"12/4/2014", "id": "1-1", "color": "#008ee4", "height": "32%", "toppadding":
+"12%" }, { "label": "Actual", "processid": "1", "start": "9/4/2014", "end":
+"12/4/2014", "id": "1", "color": "#6baa01", "toppadding": "56%", "height": "32%"
+}, { "label": "Planned", "processid": "2", "start": "13/4/2014", "end":
+"23/4/2014", "id": "2-1", "color": "#008ee4", "height": "32%", "toppadding":
+"12%" }, { "label": "Actual", "processid": "2", "start": "13/4/2014", "end":
+"25/4/2014", "id": "2", "color": "#6baa01", "toppadding": "56%", "height": "32%"
+}, { "label": "Delay", "processid": "2", "start": "23/4/2014", "end":
+"25/4/2014", "id": "2-2", "color": "#e44a00", "toppadding": "56%", "height":
+"32%", "tooltext": "Delayed by 2 days." }, { "label": "Planned", "processid":
+"3", "start": "23/4/2014", "end": "30/4/2014", "id": "3-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "3",
+"start": "26/4/2014", "end": "4/5/2014", "id": "3", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Delay", "processid": "3",
+"start": "3/5/2014", "end": "4/5/2014", "id": "3-2", "color": "#e44a00",
+"toppadding": "56%", "height": "32%", "tooltext": "Delayed by 1 days." }, {
+"label": "Planned", "processid": "4", "start": "3/5/2014", "end": "10/5/2014",
+"id": "4-1", "color": "#008ee4", "height": "32%", "toppadding": "12%" }, {
+"label": "Actual", "processid": "4", "start": "4/5/2014", "end": "10/5/2014",
+"id": "4", "color": "#6baa01", "toppadding": "56%", "height": "32%" }, {
+"label": "Planned", "processid": "5", "start": "6/5/2014", "end": "11/5/2014",
+"id": "5-1", "color": "#008ee4", "height": "32%", "toppadding": "12%" }, {
+"label": "Actual", "processid": "5", "start": "6/5/2014", "end": "10/5/2014",
+"id": "5", "color": "#6baa01", "toppadding": "56%", "height": "32%" }, {
+"label": "Planned", "processid": "6", "start": "4/5/2014", "end": "7/5/2014",
+"id": "6-1", "color": "#008ee4", "height": "32%", "toppadding": "12%" }, {
+"label": "Actual", "processid": "6", "start": "5/5/2014", "end": "11/5/2014",
+"id": "6", "color": "#6baa01", "toppadding": "56%", "height": "32%" }, {
+"label": "Delay", "processid": "6", "start": "7/5/2014", "end": "11/5/2014",
+"id": "6-2", "color": "#e44a00", "toppadding": "56%", "height": "32%",
+"tooltext": "Delayed by 4 days." }, { "label": "Planned", "processid": "7",
+"start": "11/5/2014", "end": "14/5/2014", "id": "7-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "7",
+"start": "11/5/2014", "end": "14/5/2014", "id": "7", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "8",
+"start": "16/5/2014", "end": "19/5/2014", "id": "8-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "8",
+"start": "16/5/2014", "end": "19/5/2014", "id": "8", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "9",
+"start": "16/5/2014", "end": "18/5/2014", "id": "9-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "9",
+"start": "16/5/2014", "end": "21/5/2014", "id": "9", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Delay", "processid": "9",
+"start": "18/5/2014", "end": "21/5/2014", "id": "9-2", "color": "#e44a00",
+"toppadding": "56%", "height": "32%", "tooltext": "Delayed by 3 days." }, {
+"label": "Planned", "processid": "10", "start": "20/5/2014", "end": "23/5/2014",
+"id": "10-1", "color": "#008ee4", "height": "32%", "toppadding": "12%" }, {
+"label": "Actual", "processid": "10", "start": "21/5/2014", "end": "24/5/2014",
+"id": "10", "color": "#6baa01", "toppadding": "56%", "height": "32%" }, {
+"label": "Delay", "processid": "10", "start": "23/5/2014", "end": "24/5/2014",
+"id": "10-2", "color": "#e44a00", "toppadding": "56%", "height": "32%",
+"tooltext": "Delayed by 1 days." }, { "label": "Planned", "processid": "11",
+"start": "25/5/2014", "end": "27/5/2014", "id": "11-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "11",
+"start": "25/5/2014", "end": "27/5/2014", "id": "11", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "12",
+"start": "28/5/2014", "end": "1/6/2014", "id": "12-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "12",
+"start": "28/5/2014", "end": "1/6/2014", "id": "12", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "13",
+"start": "4/6/2014", "end": "6/6/2014", "id": "13-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "13",
+"start": "4/6/2014", "end": "6/6/2014", "id": "13", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "14",
+"start": "4/6/2014", "end": "4/6/2014", "id": "14-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "14",
+"start": "4/6/2014", "end": "4/6/2014", "id": "14", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "15",
+"start": "4/6/2014", "end": "4/6/2014", "id": "15-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "15",
+"start": "4/6/2014", "end": "4/6/2014", "id": "15", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "16",
+"start": "2/6/2014", "end": "7/6/2014", "id": "16-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "16",
+"start": "2/6/2014", "end": "7/6/2014", "id": "16", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "17",
+"start": "5/6/2014", "end": "10/6/2014", "id": "17-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "17",
+"start": "5/6/2014", "end": "17/6/2014", "id": "17", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Delay", "processid": "17",
+"start": "10/6/2014", "end": "17/6/2014", "id": "17-2", "color": "#e44a00",
+"toppadding": "56%", "height": "32%", "tooltext": "Delayed by 7 days." }, {
+"label": "Planned", "processid": "18", "start": "10/6/2014", "end": "12/6/2014",
+"id": "18-1", "color": "#008ee4", "height": "32%", "toppadding": "12%" }, {
+"label": "Delay", "processid": "18", "start": "18/6/2014", "end": "20/6/2014",
+"id": "18", "color": "#e44a00", "toppadding": "56%", "height": "32%",
+"tooltext": "Delayed by 8 days." }, { "label": "Planned", "processid": "19",
+"start": "15/6/2014", "end": "23/6/2014", "id": "19-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "19",
+"start": "16/6/2014", "end": "23/6/2014", "id": "19", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "20",
+"start": "23/6/2014", "end": "23/6/2014", "id": "20-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "20",
+"start": "23/6/2014", "end": "23/6/2014", "id": "20", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Planned", "processid": "21",
+"start": "18/6/2014", "end": "21/6/2014", "id": "21-1", "color": "#008ee4",
+"height": "32%", "toppadding": "12%" }, { "label": "Actual", "processid": "21",
+"start": "18/6/2014", "end": "23/6/2014", "id": "21", "color": "#6baa01",
+"toppadding": "56%", "height": "32%" }, { "label": "Delay", "processid": "21",
+"start": "21/6/2014", "end": "23/6/2014", "id": "21-2", "color": "#e44a00",
+"toppadding": "56%", "height": "32%", "tooltext": "Delayed by 2 days." }, {
+"label": "Planned", "processid": "22", "start": "24/6/2014", "end": "28/6/2014",
+"id": "22-1", "color": "#008ee4", "height": "32%", "toppadding": "12%" }, {
+"label": "Actual", "processid": "22", "start": "25/6/2014", "end": "28/6/2014",
+"id": "22", "color": "#6baa01", "toppadding": "56%", "height": "32%" }] };
+//Structurize the connectors between different tasks of the Gantt chart const
+connectors = [{ "connector": [{ "fromtaskid": "1", "totaskid": "2", "color":
+"#008ee4", "thickness": "2", "fromtaskconnectstart_": "1" }, { "fromtaskid":
+"2-2", "totaskid": "3", "color": "#008ee4", "thickness": "2" }, { "fromtaskid":
+"3-2", "totaskid": "4", "color": "#008ee4", "thickness": "2" }, { "fromtaskid":
+"3-2", "totaskid": "6", "color": "#008ee4", "thickness": "2" }, { "fromtaskid":
+"7", "totaskid": "8", "color": "#008ee4", "thickness": "2" }, { "fromtaskid":
+"7", "totaskid": "9", "color": "#008ee4", "thickness": "2" }, { "fromtaskid":
+"12", "totaskid": "16", "color": "#008ee4", "thickness": "2" }, { "fromtaskid":
+"12", "totaskid": "17", "color": "#008ee4", "thickness": "2" }, { "fromtaskid":
+"17-2", "totaskid": "18", "color": "#008ee4", "thickness": "2" }, {
+"fromtaskid": "19", "totaskid": "22", "color": "#008ee4", "thickness": "2" }]
+}]; // STEP 3 - Creating the JSON object to store the chart configurations const
+chartConfigs = { type: 'gantt',// The chart type width: '700', // Width of the
+chart height: '400', // Height of the chart dataFormat: 'json', // Data type
+dataSource: { "chart": { "theme": "fusion", "caption": "New Store Opening -
+Project Plan", "subcaption": "Planned vs Actual", "dateformat": "dd/mm/yyyy",
+"outputdateformat": "ddds mns yy", "ganttwidthpercent": "60",
+"ganttPaneDuration": "40", "ganttPaneDurationUnit": "d", "plottooltext":
+"$processName{br}$label starting date $start{br}$label ending date $end",
+"legendBorderAlpha": "0", "legendShadow": "0", "usePlotGradientColor": "0",
+"showCanvasBorder": "0", "flatScrollBars": "1", "gridbordercolor": "#333333",
+"gridborderalpha": "20", "slackFillColor": "#e44a00", "taskBarFillMix":
+"light+0" }, "categories": categories, "processes": processes, "datatable":
+datatable, "tasks": tasks, "connectors": connectors, "milestones": {
+"milestone": [{ "date": "2/6/2014", "taskid": "12", "color": "#f8bd19", "shape":
+"star", "tooltext": "Completion of Phase 1" } ] }, "legend": { "item": [{
+"label": "Planned", "color": "#008ee4" }, { "label": "Actual", "color":
+"#6baa01" }, { "label": "Slack (Delay)", "color": "#e44a00" }] } } } // STEP 3 -
+Creating the DOM element to pass the react-fusioncharts component class App
+extends React.Component { render() { return (
+<ReactFC {...chartConfigs} />
+); } } export default App;
 ```
 
 > Know more about Gantt Chart and its configurations [here](/chart-guide/standard-charts/gantt-chart). You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](/chart-guide/list-of-charts#powercharts-xt).
-> 

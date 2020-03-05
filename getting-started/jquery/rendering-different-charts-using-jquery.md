@@ -4,17 +4,17 @@ description: This article outlines some of the popular charts and the way to ren
 heading: Rendering Different Charts
 ---
 
-In the [Getting Started](/getting-started/plain-javascript/your-first-chart-using-plain-javascript) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and Plain JavaScript.
+In the [Getting Started](/getting-started/jquery/your-first-chart-using-jquery) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and jQuery.
 
 Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-- [Multi-series Charts](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#multi-series-charts)
-- [Combination Charts](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#combination-charts)
-- [Real-time Chart](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#real-time-charts)
-- [Gauges](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#gauges)
-- [Maps](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#maps)
-- [Heatmap](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#heat-map)
-- [Gantt Chart](/getting-started/plain-javascript/rendering-different-charts-using-plain-javascript#gantt-chart)
+- [Multi-series Charts](/getting-started/jquery/rendering-different-charts-using-jquery#multi-series-charts)
+- [Combination Charts](/getting-started/jquery/rendering-different-charts-using-jquery#combination-charts)
+- [Real-time Chart](/getting-started/jquery/rendering-different-charts-using-jquery#real-time-charts)
+- [Gauges](/getting-started/jquery/rendering-different-charts-using-jquery#gauges)
+- [Maps](/getting-started/jquery/rendering-different-charts-using-jquery#maps)
+- [Heatmap](/getting-started/jquery/rendering-different-charts-using-jquery#heat-map)
+- [Gantt Chart](/getting-started/jquery/rendering-different-charts-using-jquery#gantt-chart)
 
 ## Multi-series Charts
 
@@ -87,84 +87,86 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 
 ```html
 <html>
-  <head>
-    <title>My first chart using FusionCharts Suite XT</title>
-    <!-- Include fusioncharts core library -->
-    <script
-      type="text/javascript"
-      src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
-    ></script>
-    <!-- Include fusion theme -->
-    <script
-      type="text/javascript"
-      src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
-    ></script>
-    <script type="text/javascript">
-      //STEP 2 - Chart Data
-      // Define the categories representing the labels on the X-axis
-      const categories = [
-        {
-          category: [
-            { label: "Q1" },
-            { label: "Q2" },
-            { label: "Q3" },
-            { label: "Q4" }
-          ]
-        }
-      ];
-      // Construct the dataset comprising multiple series
-      const dataset = [
-        {
-          seriesname: "Previous Year",
-          data: [
-            { value: "12000" },
-            { value: "10500" },
-            { value: "23500" },
-            { value: "16000" }
-          ]
-        },
-        {
-          seriesname: "Current Year",
-          data: [
-            { value: "24400" },
-            { value: "29800" },
-            { value: "20800" },
-            { value: "26800" }
-          ]
-        }
-      ];
+    <head>
+        <!-- Include jQuery -->
+        <script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Include fusioncharts core library file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        <!-- Include fusion theme file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+        <!-- Include fusioncharts jquery plugin -->
+        <script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
 
-      //STEP 3 - Chart Configurations
-      var chartConfigurations = {
-        type: "mscolumn2d",
-        renderAt: "chart-container",
-        width: "700",
-        height: "400",
-        dataFormat: "json",
-        dataSource: {
-          chart: {
-            theme: "fusion",
-            caption: "Comparison of Quarterly Sales",
-            xAxisname: "Quarter",
-            yAxisName: "Sales"
-          },
-          categories: categories,
-          dataset: dataset
-        }
-      };
-      FusionCharts.ready(function() {
-        var fusioncharts = new FusionCharts(chartConfigurations);
-        fusioncharts.render();
-      });
-    </script>
-  </head>
-  <body>
-    <div id="chart-container">FusionCharts XT will load here!</div>
-  </body>
+// STEP 2- Define the categories representing the labels on the X-axis
+const categories =  [
+    {
+      "category": [
+        { "label": "Q1" },
+        { "label": "Q2" },
+        { "label": "Q3" },
+        { "label": "Q4" }
+      ]
+    }
+  ]
+  // STEP 3- Construct the dataset comprising multiple series
+  const dataset = [
+    {
+      "seriesname": "Previous Year",
+      "data": [
+        { "value": "12000" },
+        { "value": "10500" },
+        { "value": "23500" },
+        { "value": "16000" }
+      ]
+    },
+    {
+      "seriesname": "Current Year",
+      "data": [
+        { "value": "24400" },
+        { "value": "29800" },
+        { "value": "20800" },
+        { "value": "26800" }
+      ]
+    }
+  ]
+
+ //STEP 4 - Chart Configurations
+ const chartConfigs = {
+    type: 'mscolumn2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+     dataSource: {
+    //Chart Configurations
+      "chart": {
+        "theme": "fusion",
+        "caption": "Comparison of Quarterly Revenue",
+        "xAxisname": "Quarter",
+        "yAxisName": "Revenues (In USD)",
+        "numberPrefix": "$",
+        "plotFillAlpha": "80",
+        "divLineIsDashed": "1",
+        "divLineDashLen": "1",
+        "divLineGapLen": "1"
+      },
+      "categories": categories,
+      "dataset": dataset,
+    }
+  }
+// STEP 5 - Create a chart container
+            $('document').ready(function () {
+                $("#chart-container").insertFusionCharts(chartConfigs);
+            });
+        </script>
+        <div id="chart-container">FusionCharts will render here</div>
+    </body>
 </html>
 ```
 
-> You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations etc. [here](/chart-guide/standard-charts/multi-series-charts).
+> You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations, etc. [here](/chart-guide/standard-charts/multi-series-charts).
 
 ## Combination Charts
 
@@ -287,129 +289,222 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 
 ```html
 <html>
-<head>
-<title>My first chart using FusionCharts Suite XT</title>
-<!-- Include fusioncharts core library -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<!-- Include fusion theme -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript">
-    //STEP 2 - Chart Data
-    // Define the categories representing the labels on the X-axis
-    const categories =  [
-    {
-        "category": [
-            {"label": "Jan"},
-            {"label": "Feb"},
-            {"label": "Mar"},
-            {"label": "Apr"},
-            {"label": "May"},
-            {"label": "Jun"},
-            {"label": "Jul"},
-            {"label": "Aug"},
-            {"label": "Sep"},
-            {"label": "Oct"},
-            {"label": "Nov"},
-            {"label": "Dec"}
-        ]
-    }
-    ];
-    // Construct the dataset comprising multiple series
-    const dataset = [
-    {
-        "seriesname": "Actual Revenue",
-        "data": [
-            {"value": "16000"},
-            {"value": "20000"},
-            {"value": "18000"},
-            {"value": "19000"},
-            {"value": "15000"},
-            {"value": "21000"},
-            {"value": "16000"},
-            {"value": "20000"},
-            {"value": "17000"},
-            {"value": "25000"},
-            {"value": "19000"},
-            {"value": "23000"}
-        ]
-    },
-    {
-        "seriesname": "Projected Revenue",
-        "data": [
-            {"value": "15000"},
-            {"value": "16000"},
-            {"value": "17000"},
-            {"value": "18000"},
-            {"value": "19000"},
-            {"value": "19000"},
-            {"value": "19000"},
-            {"value": "19000"},
-            {"value": "20000"},
-            {"value": "21000"},
-            {"value": "22000"},
-            {"value": "23000"}
-        ]
-    },
-    {
-        "seriesName": "Profit",
-        "renderAs": "area",
-        "data": [
-            {"value": "4000"},
-            {"value": "5000"},
-            {"value": "3000"},
-            {"value": "4000"},
-            {"value": "1000"},
-            {"value": "7000"},
-            {"value": "1000"},
-            {"value": "4000"},
-            {"value": "1000"},
-            {"value": "8000"},
-            {"value": "2000"},
-            {"value": "7000"}
-        ]
-    }
-    ];
+    <head>
+        <!-- Include jQuery -->
+        <script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Include fusioncharts core library file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        <!-- Include fusion theme file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+        <!-- Include fusioncharts jquery plugin -->
+        <script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
 
-    //STEP 3 - Chart Configurations
-    var chartConfigurations = {
-        type: 'mscombi2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
+// STEP 2- Define the categories representing the labels on the X-axis
+const categories = [{
+    "category": [{
+        "label": "Jan"
+      },
+      {
+        "label": "Feb"
+      },
+      {
+        "label": "Mar"
+      },
+      {
+        "label": "Apr"
+      },
+      {
+        "label": "May"
+      },
+      {
+        "label": "Jun"
+      },
+      {
+        "label": "Jul"
+      },
+      {
+        "label": "Aug"
+      },
+      {
+        "label": "Sep"
+      },
+      {
+        "label": "Oct"
+      },
+      {
+        "label": "Nov"
+      },
+      {
+        "label": "Dec"
+      }
+    ]
+  }
+]
+// STEP 3- Construct the dataset comprising combination series
+ const dataset = [{
+    "seriesName": "Actual Revenue",
+    "showValues": "1",
+    "data": [{
+        "value": "16000"
+      },
+      {
+        "value": "20000"
+      },
+      {
+        "value": "18000"
+      },
+      {
+        "value": "19000"
+      },
+      {
+        "value": "15000"
+      },
+      {
+        "value": "21000"
+      },
+      {
+        "value": "16000"
+      },
+      {
+        "value": "20000"
+      },
+      {
+        "value": "17000"
+      },
+      {
+        "value": "25000"
+      },
+      {
+        "value": "19000"
+      },
+      {
+        "value": "23000"
+      }
+    ]
+  },
+  {
+    "seriesName": "Projected Revenue",
+    "renderAs": "line",
+    "data": [{
+        "value": "15000"
+      },
+      {
+        "value": "16000"
+      },
+      {
+        "value": "17000"
+      },
+      {
+        "value": "18000"
+      },
+      {
+        "value": "19000"
+      },
+      {
+        "value": "19000"
+      },
+      {
+        "value": "19000"
+      },
+      {
+        "value": "19000"
+      },
+      {
+        "value": "20000"
+      },
+      {
+        "value": "21000"
+      },
+      {
+        "value": "22000"
+      },
+      {
+        "value": "23000"
+      }
+    ]
+  },
+  {
+    "seriesName": "Profit",
+    "renderAs": "area",
+    "data": [{
+        "value": "4000"
+      },
+      {
+        "value": "5000"
+      },
+      {
+        "value": "3000"
+      },
+      {
+        "value": "4000"
+      },
+      {
+        "value": "1000"
+      },
+      {
+        "value": "7000"
+      },
+      {
+        "value": "1000"
+      },
+      {
+        "value": "4000"
+      },
+      {
+        "value": "1000"
+      },
+      {
+        "value": "8000"
+      },
+      {
+        "value": "2000"
+      },
+      {
+        "value": "7000"
+      }
+    ]
+  }
+]
+
+// STEP 4 - Creating the JSON object to store the chart configurations
+const chartConfigs = {
+    type: 'mscombi2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
         "chart": {
-            "caption": "Harry's SuperMart",
-            "subCaption": "Sales analysis of last year",
-            "xAxisname": "Month",
-            "yAxisName": "Amount (In USD)",
-            "numberPrefix": "$",
-            "divlineColor": "#999999",
-            "divLineIsDashed": "1",
-            "divLineDashLen": "1",
-            "divLineGapLen": "1",
-            "toolTipColor": "#ffffff",
-            "toolTipBorderThickness": "0",
-            "toolTipBgColor": "#000000",
-            "toolTipBgAlpha": "80",
-            "toolTipBorderRadius": "2",
-            "toolTipPadding": "5",
-            "theme": "fusion"
+          "caption": "Harry's SuperMart",
+          "subCaption": "Sales analysis of last year",
+          "xAxisname": "Month",
+          "yAxisName": "Amount (In USD)",
+          "numberPrefix": "$",
+          "divlineColor": "#999999",
+          "divLineIsDashed": "1",
+          "divLineDashLen": "1",
+          "divLineGapLen": "1",
+          "toolTipColor": "#ffffff",
+          "toolTipBorderThickness": "0",
+          "toolTipBgColor": "#000000",
+          "toolTipBgAlpha": "80",
+          "toolTipBorderRadius": "2",
+          "toolTipPadding": "5",
+          "theme": "fusion"
         },
         "categories": categories,
         "dataset": dataset
-        }
+      }
     }
-    FusionCharts.ready(function(){
-        var fusioncharts = new FusionCharts(chartConfigurations);
-    fusioncharts.render();
-    });
-
-</script>
-</head>
-<body>
-<div id="chart-container">FusionCharts XT will load here!</div>
-</body>
+// STEP 5 - Create a chart container
+            $('document').ready(function () {
+                $("#chart-container").insertFusionCharts(chartConfigs);
+            });
+        </script>
+        <div id="chart-container">FusionCharts will render here</div>
+    </body>
 </html>
 ```
 
@@ -487,36 +582,27 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
 
 ```html
 <html>
-<head>
-<title>My first chart using FusionCharts Suite XT</title>
-<!-- Include fusioncharts core library -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<!-- Include fusion theme -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript">
-    //STEP 2 - Chart Data
-    // Define the categories representing the labels on the X-axis
-    const categories =  [{
-        "category": [{
-            "label": "Day Start"
-        }]
-    }];
-    // Construct the dataset comprising multiple series
-    const dataset = [{
-        "data": [{
-            "value": "35.27"
-        }]
-    }];
+    <head>
+        <!-- Include jQuery -->
+        <script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Include fusioncharts core library file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        <!-- Include fusion theme file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+        <!-- Include fusioncharts jquery plugin -->
+        <script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
 
-    //STEP 3 - Chart Configurations
-    var chartConfigurations = {
-      id: "stockRealTimeChart",
-      type: 'realtimearea',
-      renderAt: 'chart-container',
-      width: '700',
-      height: '400',
-      dataFormat: 'json',
-      dataSource: {
+// STEP 2 - Creating the JSON object to store the chart configurations
+const chartConfigs = {
+    id: "stockRealTimeChart",
+    type: 'realtimearea',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
         "chart": {
           "theme": "fusion",
           "caption": "Real-time stock price monitor",
@@ -532,8 +618,16 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
           "showRealTimeValue": "0"
 
         },
-        "categories": categories,
-        "dataset": dataset
+        "categories": [{
+          "category": [{
+            "label": "Day Start"
+          }]
+        }],
+        "dataset": [{
+          "data": [{
+            "value": "35.27"
+          }]
+        }]
       },
       "events": {
         "initialized": function(e) {
@@ -553,7 +647,7 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
               addLeadingZero(currDate.getSeconds()),
               // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
               randomValue = Math.floor(Math.random() *
-                1)  / 100 + 35.25,
+                50) / 100 + 35.25,
               // Build Data String in format &label=...&value=...
               strData = "&label=" + label +
               "&value=" +
@@ -564,25 +658,22 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
 
           var myVar = setInterval(function() {
             updateData();
-          }, 3000);
+          }, 5000);
         }
       }
     }
 
-    FusionCharts.ready(function(){
-        var fusioncharts = new FusionCharts(chartConfigurations);
-    fusioncharts.render();
-    });
-
-</script>
-</head>
-<body>
-<div id="chart-container">FusionCharts XT will load here!</div>
-</body>
+// STEP 3 - Create a chart container
+            $('document').ready(function () {
+                $("#chart-container").insertFusionCharts(chartConfigs);
+            });
+        </script>
+        <div id="chart-container">FusionCharts will render here</div>
+    </body>
 </html>
 ```
 
-> You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](/chart-guide/standard-charts/real-time-charts).
+You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](/chart-guide/standard-charts/real-time-charts).
 
 ## Gauges
 
@@ -658,70 +749,69 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 
 ```html
 <html>
-<head>
-<title>My first chart using FusionCharts Suite XT</title>
-<!-- Include fusioncharts core library -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<!-- Include fusion theme -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript">
-    // Define the colorVariations of the angular gauge
-    const colorRange = {
-    "color": [{
-        "minValue": "0",
-        "maxValue": "50",
-        "code": "#F2726F"
-        },{
-        "minValue": "50",
-        "maxValue": "75",
-        "code": "#FFC533"
-        },{
-        "minValue": "75",
-        "maxValue": "100",
-        "code": "#62B58F"
-        }]
-    };
-    //Set up the dial value
-    const dials = {
-        "dial": [
-            {"value": "81"}
-        ]
-    };
+    <head>
+        <!-- Include jQuery -->
+        <script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Include fusioncharts core library file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        <!-- Include fusion theme file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+        <!-- Include fusioncharts jquery plugin -->
+        <script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
 
-    //STEP 3 - Chart Configurations
-    var chartConfigurations = {
-        type: 'angulargauge', // The gauge type
-        width: '450', // Width of the gauge
-        height: '250', // Height of the gauge
-        dataFormat: 'json', // Data type
-        renderAt:'chart-container', //Container where the chart will render
-        dataSource: {
-            // Gauge Configuration
-            "chart": {
-                "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                "showValue": "1",
-                "numberSuffix": "%",
-                "theme": "fusion",
-                "showToolTip": "0"
-            },
-            // Chart Data
-            "colorRange": colorRange,
-            "dials": dials
-        }
+//STEP 2 - Defining the dataset for the angular gauge along with the color configuration
+const colorRange = {
+  "color": [{
+    "minValue": "0",
+    "maxValue": "50",
+    "code": "#e44a00"
+  }, {
+    "minValue": "50",
+    "maxValue": "75",
+    "code": "#f8bd19"
+  }, {
+    "minValue": "75",
+    "maxValue": "100",
+    "code": "#6baa01"
+  }]
+};
+
+const dials = {
+  "dial": [{
+    "value": "67"
+  }]
+};
+
+// STEP 3 - Creating the JSON object to store the chart configurations
+const chartConfigs = {
+    type: 'angulargauge',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
+        "chart": {
+          "caption": "Customer Satisfaction Score",
+          "subcaption": "Last week",
+          "lowerLimit": "0",
+          "upperLimit": "100",
+          "theme": "fusion"
+        },
+        "colorRange": colorRange,
+        "dials": dials
     }
+}
 
-    FusionCharts.ready(function(){
-        var fusioncharts = new FusionCharts(chartConfigurations);
-    fusioncharts.render();
-    });
 
-</script>
-</head>
-<body>
-<div id="chart-container">FusionCharts XT will load here!</div>
-</body>
+// STEP 4 - Create a chart container
+            $('document').ready(function () {
+                $("#chart-container").insertFusionCharts(chartConfigs);
+            });
+        </script>
+        <div id="chart-container">FusionCharts will render here</div>
+    </body>
 </html>
 ```
 
@@ -811,98 +901,97 @@ We have a detailed [Map Specification Sheets](/maps/spec-sheets/world) for all t
 
 ```html
 <html>
-<head>
-<title>My First map using FusionCharts Suite XT</title>
-<!-- Including the fusioncharts core library -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<!-- Including the map renderer file -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "></script>
-<!-- Including the map definition file -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"></script>
-<!-- Including the fusion theme -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript">
-    // Define the colorVariations of the angular gauge
-    const colorRange = {
-        "minvalue": "0",
-        "code": "#FFE0B2",
-        "gradient": "1",
-        "color": [{
-            "minvalue": "0.5",
-            "maxvalue": "1.0",
-            "color": "#FFD74D"
-        }, {
-            "minvalue": "1.0",
-            "maxvalue": "2.0",
-            "color": "#FB8C00"
-        }, {
-            "minvalue": "2.0",
-            "maxvalue": "3.0",
-            "color": "#E65100"
-        }]
-    };
-    //Set up the Map's data
-    const data = [{
-        "id": "NA",
-        "value": ".82",
-        "showLabel": "1"
-    }, {
-        "id": "SA",
-        "value": "2.04",
-        "showLabel": "1"
-    }, {
-        "id": "AS",
-        "value": "1.78",
-        "showLabel": "1"
-    }, {
-        "id": "EU",
-        "value": ".40",
-        "showLabel": "1"
-    }, {
-        "id": "AF",
-        "value": "2.58",
-        "showLabel": "1"
-    }, {
-        "id": "AU",
-        "value": "1.30",
-        "showLabel": "1"
-    }];
+    <head>
+        <!-- Include jQuery -->
+        <script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Include fusioncharts core library file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        <!-- Include fusion theme file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+        <!-- Include fusioncharts jquery plugin -->
+        <script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
 
-    //STEP 3 - Map Configurations
-    var mapConfigurations = {
-        "type": "maps/world",
-        "renderAt": "chart-container",
-        "width": "800",
-        "height": "550",
-        "dataFormat": "json",
-        "dataSource": {
-            // Map Configuration
-            "chart": {
-                "caption": "Average Annual Population Growth",
-                "subcaption": " 1955-2015",
-                "numbersuffix": "%",
-                "includevalueinlabels": "1",
-                "labelsepchar": ": ",
-                "entityFillHoverColor": "#FFF9C4",
-                "theme": "fusion"
-            },
-            // Aesthetics; ranges synced with the slider
-            "colorrange": colorRange,
-            // Source data as JSON --> id represents countries of world.
-            "data": data
-        }
-    }
+//STEP 2 - Define the dataset and the colorRange of the map
+const dataset = [{
+    "id": "NA",
+    "value": ".82",
+    "showLabel": "1"
+    }, {
+    "id": "SA",
+    "value": "2.04",
+    "showLabel": "1"
+    }, {
+    "id": "AS",
+    "value": "1.78",
+    "showLabel": "1"
+    }, {
+    "id": "EU",
+    "value": ".40",
+    "showLabel": "1"
+    }, {
+    "id": "AF",
+    "value": "2.58",
+    "showLabel": "1"
+    }, {
+    "id": "AU",
+    "value": "1.30",
+    "showLabel": "1"
+  }];
 
-    FusionCharts.ready(function(){
-        var fusioncharts = new FusionCharts(mapConfigurations);
-    fusioncharts.render();
-    });
+const colorrange = {
+  "minvalue": "0",
+  "code": "#FFE0B2",
+  "gradient": "1",
+  "color":
+  [{
+    "minvalue": "0.5",
+    "maxvalue": "1.0",
+    "color": "#FFD74D"
+    }, {
+    "minvalue": "1.0",
+    "maxvalue": "2.0",
+    "color": "#FB8C00"
+    }, {
+    "minvalue": "2.0",
+    "maxvalue": "3.0",
+    "color": "#E65100"
+  }]
+};
 
-</script>
-</head>
-<body>
-<div id="chart-container">FusionCharts XT will load here!</div>
-</body>
+// STEP 3 - Creating the JSON object to store the chart configurations
+const chartConfigs = {
+  type: 'world',// The chart type
+  width: '700', // Width of the chart
+  height: '400', // Height of the chart
+  dataFormat: 'json', // Data type
+  dataSource: {
+    // Map Configuration
+    "chart": {
+      "caption": "Average Annual Population Growth",
+      "subcaption": " 1955-2015",
+      "numbersuffix": "%",
+      "includevalueinlabels": "1",
+      "labelsepchar": ": ",
+      "entityFillHoverColor": "#FFF9C4",
+      "theme": "fusion"
+    },
+    // Aesthetics; ranges synced with the slider
+    "colorrange": colorrange,
+    // Source data as JSON --> id represents countries of the world.
+    "data": dataset
+  }
+}
+
+// STEP 4 - Create a chart container
+            $('document').ready(function () {
+                $("#chart-container").insertFusionCharts(chartConfigs);
+            });
+        </script>
+        <div id="chart-container">FusionCharts will render here</div>
+    </body>
 </html>
 ```
 
@@ -1371,257 +1460,227 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 
 ```html
 <html>
-<head>
-<title>My first chart using FusionCharts Suite XT</title>
-<!-- Include fusioncharts core library -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<!-- Include fusion theme -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript">
-    // Define the rows of the heatmap
-    const rows = {
-        "row": [
-            {
-                "id": "SGS5",
-                "label": "Samsung Galaxy S5"
-            },
-            {
-                "id": "HTC1M8",
-                "label": "HTC One (M8)"
-            },
-            {
-                "id": "IPHONES5",
-                "label": "Apple iPhone 5S"
-            },
-            {
-                "id": "LUMIA",
-                "label": "Nokia Lumia 1520"
-            }
-        ]
-    };
-    const columns = {
-        "column": [
-            {
-                "id": "processor",
-                "label": "Processor"
-            },
-            {
-                "id": "screen",
-                "label": "Screen Size"
-            },
-            {
-                "id": "price",
-                "label": "Price"
-            },
-            {
-                "id": "backup",
-                "label": "Battery Backup"
-            },
-            {
-                "id": "cam",
-                "label": "Camera"
-            }
-        ]
-    };
-    const dataset =[{
-        "data": [
-            {
-                "rowid": "SGS5",
-                "columnid": "processor",
-                "value": "8.7",
-                "tllabel": "Quad Core 2.5 GHz",
-                "trlabel": "OS : Android 4.4 Kitkat"
-            },
-            {
-                "rowid": "SGS5",
-                "columnid": "screen",
-                "value": "8.5",
-                "tllabel": "5.1 inch",
-                "trlabel": "AMOLED screen"
-            },
-            {
-                "rowid": "SGS5",
-                "columnid": "price",
-                "value": "9.3",
-                "tllabel": "$600"
-            },
-            {
-                "rowid": "SGS5",
-                "columnid": "backup",
-                "value": "9.7",
-                "tllabel": "29 Hrs",
-                "trlabel": "Battery : 2800 MAH"
-            },
-            {
-                "rowid": "SGS5",
-                "columnid": "cam",
-                "value": "8",
-                "tllabel": "16 MP",
-                "trlabel": "Front Camera : 2.1 MP"
-            },
-            {
-                "rowid": "HTC1M8",
-                "columnid": "processor",
-                "value": "9.2",
-                "tllabel": "Quad Core 2.3 GHz",
-                "trlabel": "OS : Android 4.4 Kitkat"
-            },
-            {
-                "rowid": "HTC1M8",
-                "columnid": "screen",
-                "value": "8.3",
-                "tllabel": "5 inch",
-                "trlabel": "LCD screen"
-            },
-            {
-                "rowid": "HTC1M8",
-                "columnid": "price",
-                "value": "7.3",
-                "tllabel": "$600"
-            },
-            {
-                "rowid": "HTC1M8",
-                "columnid": "backup",
-                "value": "8.8",
-                "tllabel": "20 Hrs",
-                "trlabel": "Battery : 2600 MAH"
-            },
-            {
-                "rowid": "HTC1M8",
-                "columnid": "cam",
-                "value": "8.7",
-                "tllabel": "4 MP",
-                "trlabel": "Front Camera : 5 MP"
-            },
-            {
-                "rowid": "IPHONES5",
-                "columnid": "processor",
-                "value": "9.1",
-                "tllabel": "Dual Core",
-                "trlabel": "OS : iOS 7"
-            },
-            {
-                "rowid": "IPHONES5",
-                "columnid": "screen",
-                "value": "8.6",
-                "tllabel": "4 inch",
-                "trlabel": "Retina LCD screen"
-            },
-            {
-                "rowid": "IPHONES5",
-                "columnid": "price",
-                "value": "7.2",
-                "tllabel": "$649"
-            },
-            {
-                "rowid": "IPHONES5",
-                "columnid": "backup",
-                "value": "8.4",
-                "tllabel": "10 Hrs",
-                "trlabel": "Battery : 1560 MAH"
-            },
-            {
-                "rowid": "IPHONES5",
-                "columnid": "cam",
-                "value": "9.5",
-                "tllabel": "8 MP",
-                "trlabel": "Front Camera : 1.2 MP"
-            },
-            {
-                "rowid": "LUMIA",
-                "columnid": "processor",
-                "value": "8.8",
-                "tllabel": "Quad Core 2.2 GHz",
-                "trlabel": "OS: Windows Phone 8"
-            },
-            {
-                "rowid": "LUMIA",
-                "columnid": "screen",
-                "value": "9.1",
-                "tllabel": "6 inch",
-                "trlabel": "LCD screen"
-            },
-            {
-                "rowid": "LUMIA",
-                "columnid": "price",
-                "value": "9.7",
-                "tllabel": "$470"
-            },
-            {
-                "rowid": "LUMIA",
-                "columnid": "backup",
-                "value": "9.2",
-                "tllabel": "27 Hrs",
-                "trlabel": "Battery : 3400 MAH"
-            },
-            {
-                "rowid": "LUMIA",
-                "columnid": "cam",
-                "value": "8.1",
-                "tllabel": "20MP",
-                "trlabel": "Front Camera : 1.2 MP"
-            }
-        ]
-    }];
-    const colorRange = {
-        "gradient": "0",
-        "minvalue": "0",
-        "code": "E24B1A",
-        "startlabel": "Poor",
-        "endlabel": "Good",
-        "color": [
-            {
-                "code": "E24B1A",
-                "minvalue": "1",
-                "maxvalue": "5",
-                "label": "Bad"
-            },
-            {
-                "code": "F6BC33",
-                "minvalue": "5",
-                "maxvalue": "8.5",
-                "label": "Average"
-            },
-            {
-                "code": "6DA81E",
-                "minvalue": "8.5",
-                "maxvalue": "10",
-                "label": "Good"
-            }
-        ]
-    };
-    const chartConfigurations = {
-        type: 'heatmap',
-        renderAt: 'chart-container',
-        width: '100%',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption": "Top Smartphone Ratings",
-                "subcaption": "By Features",
-                "xAxisName": "Features",
-                "yAxisName": "Model",
-                "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
-                "theme": "fusion"
-            },
-        "rows": rows,
-        "columns": columns,
+    <head>
+        <!-- Include jQuery -->
+        <script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Include fusioncharts core library file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        <!-- Include fusion theme file -->
+        <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+        <!-- Include fusioncharts jquery plugin -->
+        <script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+//STEP 2 - Define the chart data constituting dataset and colorrange objects
+const dataset = [{
+  "data": [{
+      "rowid": "Samsung Galaxy S5",
+      "columnid": "Processor",
+      "value": "8.7",
+      "tllabel": "Quad Core 2.5 GHz",
+      "trlabel": "OS : Android 4.4 Kitkat"
+    },
+    {
+      "rowid": "Samsung Galaxy S5",
+      "columnid": "Screen Size",
+      "value": "8.5",
+      "tllabel": "5.1 inch",
+      "trlabel": "AMOLED screen"
+    },
+    {
+      "rowid": "Samsung Galaxy S5",
+      "columnid": "Price",
+      "value": "9.3",
+      "tllabel": "$600"
+    },
+    {
+      "rowid": "Samsung Galaxy S5",
+      "columnid": "Battery Backup",
+      "value": "9.7",
+      "tllabel": "29 Hrs",
+      "trlabel": "Battery : 2800 MAH"
+    },
+    {
+      "rowid": "Samsung Galaxy S5",
+      "columnid": "Camera",
+      "value": "8",
+      "tllabel": "16 MP",
+      "trlabel": "Front Camera : 2.1 MP"
+    },
+    {
+      "rowid": "HTC One (M8)",
+      "columnid": "Processor",
+      "value": "9.2",
+      "tllabel": "Quad Core 2.3 GHz",
+      "trlabel": "OS : Android 4.4 Kitkat"
+    },
+    {
+      "rowid": "HTC One (M8)",
+      "columnid": "Screen Size",
+      "value": "8.3",
+      "tllabel": "5 inch",
+      "trlabel": "LCD screen"
+    },
+    {
+      "rowid": "HTC One (M8)",
+      "columnid": "Price",
+      "value": "7.3",
+      "tllabel": "$600"
+    },
+    {
+      "rowid": "HTC One (M8)",
+      "columnid": "Battery Backup",
+      "value": "8.8",
+      "tllabel": "20 Hrs",
+      "trlabel": "Battery : 2600 MAH"
+    },
+    {
+      "rowid": "HTC One (M8)",
+      "columnid": "Camera",
+      "value": "8.7",
+      "tllabel": "4 MP",
+      "trlabel": "Front Camera : 5 MP"
+    },
+    {
+      "rowid": "Apple iPhone 5S",
+      "columnid": "Processor",
+      "value": "9.1",
+      "tllabel": "Dual Core",
+      "trlabel": "OS : iOS 7"
+    },
+    {
+      "rowid": "Apple iPhone 5S",
+      "columnid": "Screen Size",
+      "value": "8.6",
+      "tllabel": "4 inch",
+      "trlabel": "Retina LCD screen"
+    },
+    {
+      "rowid": "Apple iPhone 5S",
+      "columnid": "Price",
+      "value": "7.2",
+      "tllabel": "$649"
+    },
+    {
+      "rowid": "Apple iPhone 5S",
+      "columnid": "Battery Backup",
+      "value": "8.4",
+      "tllabel": "10 Hrs",
+      "trlabel": "Battery : 1560 MAH"
+    },
+    {
+      "rowid": "Apple iPhone 5S",
+      "columnid": "Camera",
+      "value": "9.5",
+      "tllabel": "8 MP",
+      "trlabel": "Front Camera : 1.2 MP"
+    },
+    {
+      "rowid": "Nokia Lumia 1520",
+      "columnid": "Processor",
+      "value": "8.8",
+      "tllabel": "Quad Core 2.2 GHz",
+      "trlabel": "OS: Windows Phone 8"
+    },
+    {
+      "rowid": "Nokia Lumia 1520",
+      "columnid": "Screen Size",
+      "value": "9.1",
+      "tllabel": "6 inch",
+      "trlabel": "LCD screen"
+    },
+    {
+      "rowid": "Nokia Lumia 1520",
+      "columnid": "Price",
+      "value": "9.7",
+      "tllabel": "$470"
+    },
+    {
+      "rowid": "Nokia Lumia 1520",
+      "columnid": "Battery Backup",
+      "value": "9.2",
+      "tllabel": "27 Hrs",
+      "trlabel": "Battery : 3400 MAH"
+    },
+    {
+      "rowid": "Nokia Lumia 1520",
+      "columnid": "Camera",
+      "value": "8.1",
+      "tllabel": "20MP",
+      "trlabel": "Front Camera : 1.2 MP"
+    }
+  ]
+}];
+
+const colorrange = {
+  "gradient": "0",
+  "minvalue": "0",
+  "code": "E24B1A",
+  "startlabel": "Poor",
+  "endlabel": "Good",
+  "color": [{
+      "code": "E24B1A",
+      "minvalue": "1",
+      "maxvalue": "5",
+      "label": "Bad"
+    },
+    {
+      "code": "F6BC33",
+      "minvalue": "5",
+      "maxvalue": "8.5",
+      "label": "Average"
+    },
+    {
+      "code": "6DA81E",
+      "minvalue": "8.5",
+      "maxvalue": "10",
+      "label": "Good"
+    }
+  ]
+};
+
+// STEP 3 - Creating the JSON object to store the chart configurations
+const chartConfigs = {
+    type: 'heatmap',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
+        "chart": {
+          "caption": "Top Smartphone Ratings",
+          "subcaption": "By Features",
+          "xAxisName": "Features",
+          "yAxisName": "Model",
+          "showPlotBorder": "1",
+          "xAxisLabelsOnTop": "1",
+          "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
+          //Cosmetics
+          "showValues": "1",
+          "showBorder": "0",
+          "bgColor": "#ffffff",
+          "showShadow": "0",
+          "usePlotGradientColor": "0",
+          "toolTipColor": "#ffffff",
+          "toolTipBorderThickness": "0",
+          "toolTipBgColor": "#000000",
+          "toolTipBgAlpha": "80",
+          "toolTipBorderRadius": "2",
+          "toolTipPadding": "5",
+          "theme": "fusion"
+        },
         "dataset": dataset,
-        "colorrange": colorRange
-        }
-    };
-
-    FusionCharts.ready(function(){
-        var fusioncharts = new FusionCharts(chartConfigurations);
-    fusioncharts.render();
-    });
-
-</script>
-</head>
-<body>
-<div id="chart-container">FusionCharts XT will load here!</div>
-</body>
+        "colorrange": colorrange
+      }
+    }
+// STEP 5 - Create a chart container
+            $('document').ready(function () {
+                $("#chart-container").insertFusionCharts(chartConfigs);
+            });
+        </script>
+        <div id="chart-container">FusionCharts will render here</div>
+    </body>
 </html>
 ```
 
@@ -3455,3 +3514,4 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 ```
 
 > Know more about Gantt Chart and its configurations [here](/chart-guide/standard-charts/gantt-chart). You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](/chart-guide/list-of-charts#powercharts-xt).
+> 
