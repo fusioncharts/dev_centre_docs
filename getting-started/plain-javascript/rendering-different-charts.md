@@ -1,14 +1,14 @@
 ---
-title: Rendering different Charts | FusionCharts
-description: This article outlines some of the popular charts and the way to render them with their respective data formats.
-heading: Rendering Different Charts
+title: Rendering different Charts | FusionCharts
+description: This article outlines some of the popular charts and the way to render them with their respective data formats.
+heading: Rendering Different Charts
 ---
 
 In the [Getting Started](/getting-started/plain-javascript/your-first-chart-using-plain-javascrip) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and Plain JavaScript.
 
-Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below. The list is given below:
+Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-- [Multi Series Charts](/getting-started/plain-javascript/rendering-different-charts#multi-series-charts)
+- [Multi-series Charts](/getting-started/plain-javascript/rendering-different-charts#multi-series-charts)
 - [Combination Charts](/getting-started/plain-javascript/rendering-different-charts#combination-charts)
 - [Real-time Chart](/getting-started/plain-javascript/rendering-different-charts#real-time-charts)
 - [Gauges](/getting-started/plain-javascript/rendering-different-charts#gauges)
@@ -16,74 +16,74 @@ Note that some of the chart types and the maps use data structures that are diff
 - [Heatmap](/getting-started/plain-javascript/rendering-different-charts#heat-map)
 - [Gantt Chart](/getting-started/plain-javascript/rendering-different-charts#gantt-chart)
 
-## Multi-Series Charts
+## Multi-series Charts
 
-A Multi-series chart is used to plot data for more than one series of data values. It is also used to analyze and compare data points grouped in sub-categories. For example, you can plot the revenue collected each month for the last two years using a multi-series chart. Multi-series charts can also help you plot the highs and lows of multiple datasets, so that you can easily compare them.
+A Multi-series chart is used to plot data for more than one series of data values. It is also used to analyze and compare data points grouped in sub-categories. For example, you can plot the revenue collected each month for the last two years using a multi-series chart. Multi-series charts can also help you plot the highs and lows of multiple datasets, so that you can easily compare them.
 
-In a multi-series chart, we have two or more datasets plotted against the same X-axis (or Y-axis) value. Let us build a Multi-series Column 2D Chart.
+In a multi-series chart, we have two or more datasets plotted against the same X-axis (or Y-axis) value. Let us build a Multi-series Column 2D Chart.
 
-{% embed_chart standard-charts-multi-series-charts-example-1.js %}
+{% embed_chart standard-charts-multi-series-charts-example-1.js %}
 
-As you can see, a Multi-series Column 2D Chart has vertically aligned rectangular bars on one axis with discrete values shown on the other. The length of a column is proportionate to the value it represents.
+As you can see, a Multi-series Column 2D Chart has vertically aligned rectangular bars on one axis with discrete values shown on the other. The length of a column is proportionate to the value it represents.
 
-To build the chart shown above, we will use the data presented in the following table:
+To build the chart shown above, we will use the data presented in the following table:
 
-|  Quarter  |  Previous Year  |  Current Year  |
+|  Quarter  |  Previous Year  |  Current Year  |
 | --------- | --------------- | -------------- |
-|  Q1       |  12000          |  24400         |
-|  Q2       |  10500          |  29800         |
-|  Q3       |  23500          |  20800         |
-|  Q4       |  16000          |  26000         |
+|  Q1       |  12000          |  24400         |
+|  Q2       |  10500          |  29800         |
+|  Q3       |  23500          |  20800         |
+|  Q4       |  16000          |  26000         |
 
-In the above chart, we have plotted quarters with data values for the previous and the current years along the X-axis. To convert this to a data format that FusionCharts can use, you need the following two properties:
+In the above chart, we have plotted quarters with data values for the previous and the current years along the X-axis. To convert this to a data format that FusionCharts can use, you need the following two properties:
 
-- `categories`
-- `dataset`
+- `categories`
+- `dataset`
 
-The illustration below can give you an idea about how we are going to assign values to these properties.
+The illustration below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy multiseries-data.json %}
+{% embed_chartAnatomy multiseries-data.json %}
 
-As shown in the sample above, the chart compares the quarterly sales of a company for over two years. The data in the JSON format for the above chart looks as follows:
+As shown in the sample above, the chart compares the quarterly sales of a company for over two years. The data in the JSON format for the above chart looks as follows:
 
 ```json
-// Define the categories representing the labels on the X-axis
-const categories =  [
-  {
-    "category": [
-      { "label": "Q1" },
-      { "label": "Q2" },
-      { "label": "Q3" },
-      { "label": "Q4" }
-    ]
-  }
+// Define the categories representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+      { "label": "Q1" },
+      { "label": "Q2" },
+      { "label": "Q3" },
+      { "label": "Q4" }
+    ]
+  }
 ]
-// Construct the dataset comprising multiple series 
-const dataset = [
-  {
-    "seriesname": "Previous Year",
-    "data": [
-      { "value": "12000" },
-      { "value": "10500" },
-      { "value": "23500" },
-      { "value": "16000" }
-    ]
-  },
-  {
-    "seriesname": "Current Year",
-    "data": [
-      { "value": "24400" },
-      { "value": "29800" },
-      { "value": "20800" },
-      { "value": "26800" }
-    ]
-  }
+// Construct the dataset comprising multiple series 
+const dataset = [
+  {
+    "seriesname": "Previous Year",
+    "data": [
+      { "value": "12000" },
+      { "value": "10500" },
+      { "value": "23500" },
+      { "value": "16000" }
+    ]
+  },
+  {
+    "seriesname": "Current Year",
+    "data": [
+      { "value": "24400" },
+      { "value": "29800" },
+      { "value": "20800" },
+      { "value": "26800" }
+    ]
+  }
 ]
 ```
 
-> The number of objects passed in the series should be the same as the number of labels.
+> The number of objects passed in the series should be the same as the number of labels.
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
 ```html
 <html>
@@ -101,7 +101,7 @@ Now that the data is ready, let us dive in directly to render the 
     ></script>
     <script type="text/javascript">
       //STEP 2 - Chart Data
-      // Define the categories representing the labels on the X-axis
+      // Define the categories representing the labels on the X-axis
       const categories = [
         {
           category: [
@@ -112,10 +112,10 @@ Now that the data is ready, let us dive in directly to render the 
           ]
         }
       ];
-      // Construct the dataset comprising multiple series
+      // Construct the dataset comprising multiple series
       const dataset = [
         {
-          seriesname: "Previous Year",
+          seriesname: "Previous Year",
           data: [
             { value: "12000" },
             { value: "10500" },
@@ -124,7 +124,7 @@ Now that the data is ready, let us dive in directly to render the 
           ]
         },
         {
-          seriesname: "Current Year",
+          seriesname: "Current Year",
           data: [
             { value: "24400" },
             { value: "29800" },
@@ -144,7 +144,7 @@ Now that the data is ready, let us dive in directly to render the 
         dataSource: {
           chart: {
             theme: "fusion",
-            caption: "Comparison of Quarterly Sales",
+            caption: "Comparison of Quarterly Sales",
             xAxisname: "Quarter",
             yAxisName: "Sales"
           },
@@ -166,7 +166,7 @@ Now that the data is ready, let us dive in directly to render the 
 
 > You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations etc. [here](/chart-guide/standard-charts/multi-series-charts).
 
-## Combination Charts
+## Combination Charts
 
 Similar to multi-series charts, combination charts also allow you to plot multiple datasets on the same chart. However, while in multi-series charts you need to use the same plot type for all datasets, in a combination chart you can use a different plot type for each dataset. For instance, you can show a column, a line, and an area plot on the same chart canvas.
 
@@ -178,18 +178,18 @@ As you can see in the 2D Single Y-axis combination chart above, a line, a column
 
 | Month     | Actual Revenue | Projected Revenue | Profit |
 | --------- | -------------- | ----------------- | ------ |
-| January   |  16000         |  15000            | 4000   |
-| February  |  20000         |  16000            | 5000   |
+| January   |  16000         |  15000            | 4000   |
+| February  |  20000         |  16000            | 5000   |
 | March     | 18000          | 17000             | 3000   |
-| April     | 19000          |  18000            | 4000   |
-| May       | 15000          |  19000            | 1000   |
-| June      | 21000          |  19000            | 7000   |
-| July      | 16000          |  19000            | 1000   |
-| August    | 20000          |  19000            | 4000   |
-| September | 17000          |  20000            | 1000   |
-| October   | 25000          |  21000            | 8000   |
-| November  | 19000          |  22000            | 2000   |
-| Decemebr  | 23000          |  23000            | 7000   |
+| April     | 19000          |  18000            | 4000   |
+| May       | 15000          |  19000            | 1000   |
+| June      | 21000          |  19000            | 7000   |
+| July      | 16000          |  19000            | 1000   |
+| August    | 20000          |  19000            | 4000   |
+| September | 17000          |  20000            | 1000   |
+| October   | 25000          |  21000            | 8000   |
+| November  | 19000          |  22000            | 2000   |
+| Decemebr  | 23000          |  23000            | 7000   |
 
 In the above chart, we have plotted monthly values for projected revenue, actual revenue, and profits made by Harry’s Supermart with monthly data values along the X-axis. To convert the data provided in the above table to a data format that FusionCharts can use, you need the following two properties:
 
@@ -198,7 +198,7 @@ In the above chart, we have plotted monthly values for projected revenue, actual
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy combination-data.json %}
+{% embed_chartAnatomy combination-data.json %}
 
 As shown in the sample above, the chart compares the monthly sales and profits of the Supermart. The data in the JSON format for the above chart looks as follows:
 
@@ -432,7 +432,7 @@ In the above chart, we have plotted values of a stock (of Harry’s Supermart) o
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy real-time-data.json %}
+{% embed_chartAnatomy real-time-data.json %}
 
 In the sample above, the chart shows the values of the Harry’s Supermart stock throughout a single business day, at intervals of 5 seconds. The data in the JSON format for the above chart looks as follows:
 
@@ -611,7 +611,7 @@ FusionCharts accepts data in JSON format. To convert this to a data format that 
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy angular-gauge-data.json %}
+{% embed_chartAnatomy angular-gauge-data.json %}
 
 The following code is the JSON representation of the tabular column with the required attributes to render the above gauge.The data in the JSON format for the above gauge looks as follows:
 
@@ -648,11 +648,11 @@ The following code is the JSON representation of the tabular column with the req
 
 In the above JSON:
 
-- Create the colorRange object to set the color associated with the specific range of values.
-- Specify minValue and maxValue within the color array under the colorRange object.
-- Set the code attribute to specify the hex color of respective ranges.
-- Create the dials object to represent the customer satisfaction score.
-- Create the dial object under dials object to set the value of customer satisfaction score.
+- Create the `colorRange` object to set the color associated with the specific range of values.
+- Specify `minValue` and `maxValue` within the color array under the `colorRange` object.
+- Set the `code` attribute to specify the hex color of respective ranges.
+- Create the `dials` object to represent the customer satisfaction score.
+- Create the `dial` object under the `dials` object to set the value of customer satisfaction score.
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
@@ -755,7 +755,7 @@ To convert the data provided in the above table to a data format that FusionChar
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy world-map-data.json %}
+{% embed_chartAnatomy world-map-data.json %}
 
 The following code is the JSON representation of the tabular column with the required attributes to render the above map.The data in the JSON format for the above map looks as follows:
 
@@ -979,7 +979,7 @@ const chartConfiguration = {
 };
 
 FusionCharts.ready(function() {
-	new FusionCharts(chartConfiguration).render();
+  new FusionCharts(chartConfiguration).render();
 })
 &lt;/script&gt;
 &lt;/head&gt;
