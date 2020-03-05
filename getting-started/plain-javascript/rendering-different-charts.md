@@ -4,17 +4,17 @@ description: This article outlines some of the popular charts and the�
 heading: Rendering Different Charts
 ---
 
-By now, we assume that you have already built a [single series column chart](/getting-started/plain-javascript/your-first-chart-using-plain-javascript), and have a basic grasp over the way FusionCharts works. If you have not done so yet, we recommend visiting [this](/getting-started/plain-javascript/your-first-chart-using-plain-javascript) tutorial to build your first chart and returning to this later.
+In the [Getting Started](/getting-started/plain-javascript/your-first-chart-using-plain-javascrip) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and Plain JavaScript.
 
-In this tutorial, we shall discuss how you can work with different data formats in FusionCharts. We’ll be building some types of charts, gauges and maps using FusionCharts like:
+Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below. The list is given below:
 
-- Multi Series Charts
-- Combination Charts
-- Real-time Chart
-- Gauges
-- Maps
-- Heatmap
-- Gantt Chart
+- [Multi Series Charts](/getting-started/plain-javascript/rendering-different-charts#multi-series-charts)
+- [Combination Charts](/getting-started/plain-javascript/rendering-different-charts#combination-charts)
+- [Real-time Chart](/getting-started/plain-javascript/rendering-different-charts#real-time-charts)
+- [Gauges](/getting-started/plain-javascript/rendering-different-charts#gauges)
+- [Maps](/getting-started/plain-javascript/rendering-different-charts#maps)
+- [Heatmap](/getting-started/plain-javascript/rendering-different-charts#heat-map)
+- [Gantt Chart](/getting-started/plain-javascript/rendering-different-charts#gantt-chart)
 
 ## Multi-Series Charts
 
