@@ -301,7 +301,7 @@
                   },
                   {
                     "title": "Rendering Different Charts",
-                    "path": "/getting-started/plain-javascript/rendering-different-charts-using-react"
+                    "path": "/getting-started/react/rendering-different-charts-using-react"
                   }
                 ]
               },
@@ -531,7 +531,7 @@
                   },
                   {
                     "title": "Rendering Different Charts",
-                    "path": "/getting-started/plain-javascript/rendering-different-charts-using-jquery"
+                    "path": "/getting-started/jquery/rendering-different-charts-using-jquery"
                   }
                 ]
               },
