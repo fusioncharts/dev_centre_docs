@@ -1,168 +1,174 @@
 ---
-title: Rendering different Charts | FusionCharts
-description: This article outlines some of the popular charts and the way to render them with their respective data formats.
-heading: Rendering Different Charts11
+title: Rendering different Charts | FusionCharts
+description: This article outlines some of the popular charts and the way to render them with their respective data formats.
+heading: Rendering Different Charts
 ---
 
-# Rendering Different Charts
+In the [Getting Started](/getting-started/plain-javascript/your-first-chart-using-plain-javascrip) section, we discussed how to build a single series chart using FusionCharts Suite XT. In this section, we will show you how to create different charts and maps using FusionCharts and Plain JavaScript.
 
-By now, we assume that you have already built a single series column chart, and have a basic grasp over the way FusionCharts works. If you have not done so yet, we recommend visiting [this](https://www.fusioncharts.com/dev/getting-started/plain-javascript/your-first-chart-using-plain-javascript) tutorial to build your first chart and returning to this later.
+Note that some of the chart types and the maps use data structures that are different from the one you use in a single-series chart. We will highlight those in the sections below, as follows:
 
-In this tutorial, we shall discuss how you can work with different data formats in FusionCharts. We’ll be building some types of charts, gauges and maps using FusionCharts like
-- Multi Series Charts
-- Combination Charts
-- Real-time Chart
-- Gauges
-- Maps
-- Heatmap
-- Gantt Chart
+- [Multi-series Charts](/getting-started/plain-javascript/rendering-different-charts#multi-series-charts)
+- [Combination Charts](/getting-started/plain-javascript/rendering-different-charts#combination-charts)
+- [Real-time Chart](/getting-started/plain-javascript/rendering-different-charts#real-time-charts)
+- [Gauges](/getting-started/plain-javascript/rendering-different-charts#gauges)
+- [Maps](/getting-started/plain-javascript/rendering-different-charts#maps)
+- [Heatmap](/getting-started/plain-javascript/rendering-different-charts#heat-map)
+- [Gantt Chart](/getting-started/plain-javascript/rendering-different-charts#gantt-chart)
 
-## Multi-Series Charts
+## Multi-series Charts
 
-A Multi-series chart is used to plot data for more than one series of data values. It is also used to analyze and compare data points grouped in sub-categories. For example, you can plot the revenue collected each month for the last two years using a multi-series chart. Multi-series charts can also help you plot the highs and lows of multiple datasets, so that you can easily compare them.
+A Multi-series chart is used to plot data for more than one series of data values. It is also used to analyze and compare data points grouped in sub-categories. For example, you can plot the revenue collected each month for the last two years using a multi-series chart. Multi-series charts can also help you plot the highs and lows of multiple datasets, so that you can easily compare them.
 
-In a multi-series chart, we have two or more datasets plotted against the same X-axis (or Y-axis) value. Let us build a Multi-series Column 2D Chart.
+In a multi-series chart, we have two or more datasets plotted against the same X-axis (or Y-axis) value. Let us build a Multi-series Column 2D Chart.
 
-{% embed_chart standard-charts-multi-series-charts-example-1.js %}
+{% embed_chart standard-charts-multi-series-charts-example-1.js %}
 
-As you can see, a Multi-series Column 2D Chart has vertically aligned rectangular bars on one axis with discrete values shown on the other. The length of a column is proportionate to the value it represents.
+As you can see, a Multi-series Column 2D Chart has vertically aligned rectangular bars on one axis with discrete values shown on the other. The length of a column is proportionate to the value it represents.
 
-To build the chart shown above, we will use the data presented in the following table:
+To build the chart shown above, we will use the data presented in the following table:
 
-| Quarter | Previous Year | Current Year |
-| ----- | ----- | -------- ||
-| Q1 | 12000 | 24400 |
-| Q2 | 10500 | 29800 |
-| Q3 | 23500 | 20800 |
-| Q4 | 16000 | 26000 |
+|  Quarter  |  Previous Year  |  Current Year  |
+| --------- | --------------- | -------------- |
+|  Q1       |  12000          |  24400         |
+|  Q2       |  10500          |  29800         |
+|  Q3       |  23500          |  20800         |
+|  Q4       |  16000          |  26000         |
 
-In the above chart, we have plotted quarters with data values for the previous and the current years along the X-axis.To convert this to a data format that FusionCharts can use, you need the following two properties:
+In the above chart, we have plotted quarters with data values for the previous and the current years along the X-axis. To convert this to a data format that FusionCharts can use, you need the following two properties:
 
-1. `categories`
-2. `dataset`
+- `categories`
+- `dataset`
 
-The illustration below can give you an idea about how we are going to assign values to these properties.
+The illustration below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy multiseries-data.json %}
+{% embed_chartAnatomy multiseries-data.json %}
 
-As shown in the sample above, the chart compares the quarterly sales of a company for over two years. The data in the JSON format for the above chart looks as follows:
+As shown in the sample above, the chart compares the quarterly sales of a company for over two years. The data in the JSON format for the above chart looks as follows:
+
 ```json
-// Define the categories representing the labels on the X-axis
-const categories =  [
-  {
-    "category": [
-      { "label": "Q1" },
-      { "label": "Q2" },
-      { "label": "Q3" },
-      { "label": "Q4" }
-    ]
-  }
+// Define the categories representing the labels on the X-axis
+const categories =  [
+  {
+    "category": [
+      { "label": "Q1" },
+      { "label": "Q2" },
+      { "label": "Q3" },
+      { "label": "Q4" }
+    ]
+  }
 ]
-// Construct the dataset comprising multiple series 
-const dataset = [
-  {
-    "seriesname": "Previous Year",
-    "data": [
-      { "value": "12000" },
-      { "value": "10500" },
-      { "value": "23500" },
-      { "value": "16000" }
-    ]
-  },
-  {
-    "seriesname": "Current Year",
-    "data": [
-      { "value": "24400" },
-      { "value": "29800" },
-      { "value": "20800" },
-      { "value": "26800" }
-    ]
-  }
+// Construct the dataset comprising multiple series 
+const dataset = [
+  {
+    "seriesname": "Previous Year",
+    "data": [
+      { "value": "12000" },
+      { "value": "10500" },
+      { "value": "23500" },
+      { "value": "16000" }
+    ]
+  },
+  {
+    "seriesname": "Current Year",
+    "data": [
+      { "value": "24400" },
+      { "value": "29800" },
+      { "value": "20800" },
+      { "value": "26800" }
+    ]
+  }
 ]
 ```
 
-> The number of objects passed in the series should be the same as the number of labels.
+> The number of objects passed in the series should be the same as the number of labels.
 
-Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
-```
+Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
+
+```html
 <html>
-<head>
-<title>My first chart using FusionCharts Suite XT</title>
-<!-- Include fusioncharts core library -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-<!-- Include fusion theme -->
-<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript">
-    //STEP 2 - Chart Data
-    // Define the categories representing the labels on the X-axis
-    const categories =  [
-      {
-        "category": [
-          { "label": "Q1" },
-          { "label": "Q2" },
-          { "label": "Q3" },
-          { "label": "Q4" }
-        ]
-      }
-    ];
-    // Construct the dataset comprising multiple series 
-    const dataset = [
-      {
-        "seriesname": "Previous Year",
-        "data": [
-          { "value": "12000" },
-          { "value": "10500" },
-          { "value": "23500" },
-          { "value": "16000" }
-        ]
-      },
-      {
-        "seriesname": "Current Year",
-        "data": [
-          { "value": "24400" },
-          { "value": "29800" },
-          { "value": "20800" },
-          { "value": "26800" }
-        ]
-      }
-    ];
+  <head>
+    <title>My first chart using FusionCharts Suite XT</title>
+    <!-- Include fusioncharts core library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <!-- Include fusion theme -->
+    <script
+      type="text/javascript"
+      src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
+    <script type="text/javascript">
+      //STEP 2 - Chart Data
+      // Define the categories representing the labels on the X-axis
+      const categories = [
+        {
+          category: [
+            { label: "Q1" },
+            { label: "Q2" },
+            { label: "Q3" },
+            { label: "Q4" }
+          ]
+        }
+      ];
+      // Construct the dataset comprising multiple series
+      const dataset = [
+        {
+          seriesname: "Previous Year",
+          data: [
+            { value: "12000" },
+            { value: "10500" },
+            { value: "23500" },
+            { value: "16000" }
+          ]
+        },
+        {
+          seriesname: "Current Year",
+          data: [
+            { value: "24400" },
+            { value: "29800" },
+            { value: "20800" },
+            { value: "26800" }
+          ]
+        }
+      ];
 
-    //STEP 3 - Chart Configurations
-    var chartConfigurations = {
-        type: 'mscolumn2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-          "chart": {
-            "theme": "fusion",
-            "caption": "Comparison of Quarterly Sales",
-            "xAxisname": "Quarter",
-            "yAxisName": "Sales"
-          },
-          "categories": categories,
-          "dataset": dataset
-        }
-      }
-    FusionCharts.ready(function(){
+      //STEP 3 - Chart Configurations
+      var chartConfigurations = {
+        type: "mscolumn2d",
+        renderAt: "chart-container",
+        width: "700",
+        height: "400",
+        dataFormat: "json",
+        dataSource: {
+          chart: {
+            theme: "fusion",
+            caption: "Comparison of Quarterly Sales",
+            xAxisname: "Quarter",
+            yAxisName: "Sales"
+          },
+          categories: categories,
+          dataset: dataset
+        }
+      };
+      FusionCharts.ready(function() {
         var fusioncharts = new FusionCharts(chartConfigurations);
-    fusioncharts.render();
-    });
-
-</script>
-</head>
-<body>
+        fusioncharts.render();
+      });
+    </script>
+  </head>
+  <body>
     <div id="chart-container">FusionCharts XT will load here!</div>
-</body>
+  </body>
 </html>
 ```
 
-You can also create various charts belonging to the multi-series family in a similar way. Check out the different types of multi-series charts [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts).
+> You can also create various charts belonging to the multi-series family in a similar way. We have over 15+ multi-series charts. You can find more about their types, components, configurations etc. [here](/chart-guide/standard-charts/multi-series-charts).
 
-## Combination Charts
+## Combination Charts
 
-Similar to multi-series charts, combination charts also allow you to plot multiple datasets on the same chart. However, while in multi-series charts you need to use the same plot type for all datasets, in a combination chart you can use a different plot type for each dataset. For instance, you can show a column, a line, and an area plot on the same chart canvas. 
+Similar to multi-series charts, combination charts also allow you to plot multiple datasets on the same chart. However, while in multi-series charts you need to use the same plot type for all datasets, in a combination chart you can use a different plot type for each dataset. For instance, you can show a column, a line, and an area plot on the same chart canvas.
 
 Let us build a 2D Single Y-axis combination chart.
 
@@ -170,32 +176,33 @@ Let us build a 2D Single Y-axis combination chart.
 
 As you can see in the 2D Single Y-axis combination chart above, a line, a column, and an area type plot share the same set of X and Y-axis. The line plot displays the projected monthly revenue of Harry’s SuperMart, while the column plot displays the actual revenue earned, and the area plot shows the monthly profit. To build the chart, we will use the data provided in the following table:
 
-|Month|Actual Revenue|Projected Revenue|Profit|
-| ----- | ----- | ------ |-----||
-| January | 16000 | 15000 | 4000 |
-| February | 20000 | 16000 | 5000 |
-| March | 18000 | 17000 | 3000 |
-| April | 19000 | 18000 | 4000 |
-| May | 15000 | 19000 | 1000 |
-| June | 21000 | 19000 | 7000 |
-| July | 16000 | 19000 | 1000 |
-| August | 20000 | 19000 | 4000 |
-| September | 17000 | 20000 | 1000 |
-| October | 25000 | 21000 | 8000 |
-| November | 19000 | 22000 | 2000 |
-| Decemebr | 23000 | 23000 | 7000 |
+| Month     | Actual Revenue | Projected Revenue | Profit |
+| --------- | -------------- | ----------------- | ------ |
+| January   |  16000         |  15000            | 4000   |
+| February  |  20000         |  16000            | 5000   |
+| March     | 18000          | 17000             | 3000   |
+| April     | 19000          |  18000            | 4000   |
+| May       | 15000          |  19000            | 1000   |
+| June      | 21000          |  19000            | 7000   |
+| July      | 16000          |  19000            | 1000   |
+| August    | 20000          |  19000            | 4000   |
+| September | 17000          |  20000            | 1000   |
+| October   | 25000          |  21000            | 8000   |
+| November  | 19000          |  22000            | 2000   |
+| Decemebr  | 23000          |  23000            | 7000   |
 
 In the above chart, we have plotted monthly values for projected revenue, actual revenue, and profits made by Harry’s Supermart with monthly data values along the X-axis. To convert the data provided in the above table to a data format that FusionCharts can use, you need the following two properties:
+
 - `categories`
 - `dataset`
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy combination-data.json %}
+{% embed_chartAnatomy combination-data.json %}
 
 As shown in the sample above, the chart compares the monthly sales and profits of the Supermart. The data in the JSON format for the above chart looks as follows:
 
-```
+```json
 // Define the categories representing the labels on the X-axis
 const categories =  [
   {
@@ -215,7 +222,7 @@ const categories =  [
     ]
   }
 ]
-// Construct the dataset comprising multiple series 
+// Construct the dataset comprising multiple series
 const dataset = [
   {
     "seriesname": "Actual Revenue",
@@ -278,7 +285,7 @@ const dataset = [
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -307,7 +314,7 @@ Now that the data is ready, let us dive in directly to render the chart. The con
         ]
     }
     ];
-    // Construct the dataset comprising multiple series 
+    // Construct the dataset comprising multiple series
     const dataset = [
     {
         "seriesname": "Actual Revenue",
@@ -406,28 +413,30 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-You can also create various charts belonging to the combination type in a similar way. Check out the different types of combination charts [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts).
+> You can also create various charts with various combinations in a similar way. We have over 10+ combination charts. You can find more about their types, components, configurations etc. from [here](/chart-guide/standard-charts/combination-charts).
 
 ## Real Time Charts
-Real-time charts are also referred to as data streaming charts, because they can automatically update themselves at regular intervals, by fetching new data from the server and discarding the previous values. You do not need to keep refreshing the page to see the updated versions of these charts. 
 
-FusionCharts XT supports six types of Real-time charts - Line, Area, Column, Stacked Area, Stacked Column, and Line (Dual Y axis). In the section below, we will see how to build a real-time area 2D chart.
+Real-time charts are also referred to as data streaming charts, because they can automatically update themselves at regular intervals, by fetching new data from the server and discarding the previous values. You do not need to keep refreshing the page to see the updated versions of these charts.
+
+FusionCharts XT supports various types of Real-time charts - [Line](/chart-guide/standard-charts/real-time-charts#real-time-line-chart), [Area](/chart-guide/standard-charts/real-time-charts#real-time-area-chart), [Column](/chart-guide/standard-charts/real-time-charts#real-time-column-chart), [Stacked Area](/chart-guide/standard-charts/real-time-charts#real-time-stacked-area-chart), [Stacked Column](/chart-guide/standard-charts/real-time-charts#real-time-stacked-column-chart), and [Line (Dual Y axis)](/chart-guide/standard-charts/real-time-charts#real-time-stacked-column-chart). In the section below, we will see how to build a real-time area 2D chart.
 
 {% embed_chart standard-charts-real-time-charts-example-2.js %}
 
 As you can see in the real-time 2D area chart above, the data plot is presenting the values present at a given instance. As soon as new values are available in the source data, the chart will update itself with the fresh values, gradually discarding the data plots displayed above.
 
 In the above chart, we have plotted values of a stock (of Harry’s Supermart) on a business day, at intervals of 5 seconds between any two consecutive values. To convert the data provided in the above table to a data format that FusionCharts can use, you need the following two properties:
+
 - `categories`
 - `dataset`
 
-The diagram below can give you an idea about how we are going to assign values to these properties. 
+The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy real-time-data.json %}
+{% embed_chartAnatomy real-time-data.json %}
 
 In the sample above, the chart shows the values of the Harry’s Supermart stock throughout a single business day, at intervals of 5 seconds. The data in the JSON format for the above chart looks as follows:
 
-```
+```json
 // Define the category representing the labels on the X-axis
 const categories =  [{
     "category": [
@@ -443,14 +452,14 @@ const dataset = [{
 ```
 
 Now that we’ve seen the structuring of the data object, let us deal with feeding the real-time data into this format. There are multiple ways in which one can feed real-time data to FusionCharts.
+
 - The real-time data from the server can be transported through APIs, web sockets depending on the requirement
 - The data can be fetched at regular intervals from third-party endpoints as per the requirement
 - Data can be fed from google sheets in real-time.
 
 To build the sample chart, we will feed the data at regular intervals from a random generator (math.random function), for the sake of simplicity.
 
-
-```
+```json
 function addLeadingZero(num) {
     return (num <= 9) ? ("0" + num) : num;
 }
@@ -476,7 +485,7 @@ function updateData() {
 
 Now that the data and its transporting mechanism are ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -492,7 +501,7 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
             "label": "Day Start"
         }]
     }];
-    // Construct the dataset comprising multiple series 
+    // Construct the dataset comprising multiple series
     const dataset = [{
         "data": [{
             "value": "35.27"
@@ -544,7 +553,7 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
               addLeadingZero(currDate.getSeconds()),
               // Get random number between 35.25 & 35.75 - rounded to 2 decimal places
               randomValue = Math.floor(Math.random() *
-                50) / 100 + 35.25,
+                1)  / 100 + 35.25,
               // Build Data String in format &label=...&value=...
               strData = "&label=" + label +
               "&value=" +
@@ -573,11 +582,13 @@ Now that the data and its transporting mechanism are ready, let us dive in direc
 </html>
 ```
 
-You can also create various types of real-time charts in a similar way. Check out the different types of real-time charts [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts).
+You can also create various types of real-time charts in a similar way. We have 6 charts for which you can inject the data in real-time. You can find more about their types, configurations [here](/chart-guide/standard-charts/real-time-charts).
 
 ## Gauges
-Gauges are powerful tools that can showcase information using a radial or linear scale to display data. An angular gauge is used to show a specific value over a radial scale. The gauge is rendered with a radial scale that displays the data range.
-This scale can be color-coded to indicate divisions within the range. A dial is used to point to the data value. The gauge can also be rendered with multiple dials. It is often used to simulate a speedometer and on dashboards.
+
+Gauges are powerful tools that can showcase information using a radial or linear scale to display data. FusionCharts XT provides you with seven different gauges - [Angular Gauge](/chart-guide/gauges-and-widgets/angular-gauge), [Bulb Gauge](/chart-guide/gauges-and-widgets/bulb-gauge), [Cylinder Gauge](/chart-guide/gauges-and-widgets/cylinder-gauge), [LED Gauge](/chart-guide/gauges-and-widgets/led-gauge), [Linear Gauge](/chart-guide/gauges-and-widgets/linear-gauge), [Thermometer Gauge](/chart-guide/gauges-and-widgets/thermometer-gauge) and Vertical LED Gauge.
+
+An angular gauge is used to show a specific value over a radial scale. The gauge is rendered with a radial scale that displays the data range. This scale can be color-coded to indicate divisions within the range. A dial is used to point to the data value. The gauge can also be rendered with multiple dials. It is often used to simulate a speedometer and on dashboards.
 
 To start with, we'll build a simple angular gauge showcasing Nordstrom's Customer Satisfaction Score as shown below.
 
@@ -588,21 +599,23 @@ So, any score less than 50 is bad and is shown in red. Any score between 50 and 
 To build the gauge shown above, we will use the data presented in the table below:
 
 | Range | Color | Hex Code |
-| ----- | ----- | -------- ||
+| ----- | ----- | ----- |
 | 0-50 | Red | #F2726F |
 | 50-75 | Yellow | #FFC533 |
 | 75-100 | Green | #62B58F |
 
 FusionCharts accepts data in JSON format. To convert this to a data format that FusionCharts can use, you need the following two properties:
+
 - `colorRange`
 - `dials`
 
-The diagram below can give you an idea about how we are going to assign values to these properties. 
+The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy angular-gauge-data.json %}
+{% embed_chartAnatomy angular-gauge-data.json %}
 
 The following code is the JSON representation of the tabular column with the required attributes to render the above gauge.The data in the JSON format for the above gauge looks as follows:
-```
+
+```json
   // Define the colorVariations of the angular gauge
   const colorRange = {
     "color": [
@@ -634,15 +647,16 @@ The following code is the JSON representation of the tabular column with the req
 ```
 
 In the above JSON:
-- Create the colorRange object to set the color associated with the specific range of values.
-- Specify minValue and maxValue within the color array under the colorRange object.
-- Set the code attribute to specify the hex color of respective ranges.
-- Create the dials object to represent the customer satisfaction score.
-- Create the dial object under dials object to set the value of customer satisfaction score.
+
+- Create the `colorRange` object to set the color associated with the specific range of values.
+- Specify `minValue` and `maxValue` within the color array under the `colorRange` object.
+- Set the `code` attribute to specify the hex color of respective ranges.
+- Create the `dials` object to represent the customer satisfaction score.
+- Create the `dial` object under the `dials` object to set the value of customer satisfaction score.
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -711,21 +725,20 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-You can also create various charts belonging to the gauges family in a similar way. Check out the different types of gauges [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#gauges).
+> You can also create various charts belonging to the gauges family in a similar way. We have 7 different gauges. Check out the different types of gauges, their configurations [here](/chart-guide/list-of-charts#gauges).
 
 ## Maps
+
 FusionMaps XT offers interactive maps that allow you to plot geographical data, such as revenue by regions, population by state, survey and election results. You can also add markers to pinpoint specific locations and routes. FusionMaps XT has over 1000 maps including all continents, major countries and all the US states.
 
-To render these maps, you need to download the map definition files from <<here>>. Copy and paste the `maps` folder within your `fusioncharts` directory. (inlcuding map definition files)
-
-In the section below, we will see how to build a world map.
+You can download the map definition files separately from [here](https://www.fusioncharts.com/download/map-definition-files) if you want to save them locally. In the section below, we will see how to build a world map.
 
 {% embed_chart getting-started-your-first-map.js %}
 
 As you can see in the map above, the data plot is indicating the average annual population growth across the 7 continents.
 
 | State | Entity Name | Value |
-| ----- | ----------- | ----- ||
+| ----- | ----------- | ----- |
 | North America | NA | 82 |
 | South America | SA | 2.04 |
 | Asia | AS | 1.78 |
@@ -734,6 +747,7 @@ As you can see in the map above, the data plot is indicating the average annual 
 | Australia | AU | 1.30 |
 
 To convert the data provided in the above table to a data format that FusionCharts can use, you need the following properties:
+
 - `colorRange`
 - `data`
 - `id`
@@ -741,11 +755,11 @@ To convert the data provided in the above table to a data format that FusionChar
 
 The diagram below can give you an idea about how we are going to assign values to these properties.
 
-{% embed_chartAnatomy world-map-data.json %}
+{% embed_chartAnatomy world-map-data.json %}
 
 The following code is the JSON representation of the tabular column with the required attributes to render the above map.The data in the JSON format for the above map looks as follows:
 
-```
+```json
 // Define the colorVariations of the angular gauge
 const colorRange = {
     "minvalue": "0",
@@ -792,9 +806,10 @@ const data = [{
     "showLabel": "1"
 }];
 ```
-We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create. Now that the data is ready, include the map definition files and get ready to render your chart. The consolidated code is given below:
 
-```
+We have a detailed [Map Specification Sheets](/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct id of the maps you want to create. Now that the data is ready, include the map definition files and get ready to render your chart. The consolidated code is given below:
+
+```html
 <html>
 <head>
 <title>My First map using FusionCharts Suite XT</title>
@@ -891,26 +906,242 @@ We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/m
 </html>
 ```
 
-That’s it. Your first map is ready. FusionCharts offers you more than 2000 different maps suitable for various purposes. You can find more about the different types of maps [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+That’s it. Your first map is ready.
 
+### Render other Maps
+
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally.
+
+Let's create a map of California to show the "Web visits for a particular month" as shown below:
+
+{% embed_chartData getting-started-your-first-map-california.js json %}
+
+The consolidated code for rendering the map is shown below:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='npm'>NPM</a></li> 
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+
+<pre><code class="language-javascript">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;!-- Including the map renderer file --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "&gt;&lt;/script>
+    &lt;!-- Including the map definition file --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
+    &lt;!-- Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+const mapData = [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}];
+
+const colorrange = {
+  "minvalue": "0",
+  "startlabel": "Low",
+  "endlabel": "High",
+  "code": "e44a00",
+  "gradient": "1",
+  "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+};
+
+const chartConfiguration = {
+    type: 'maps/california',
+    renderAt: 'chart-container',
+    width: '100%',
+    height: '550',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "animation": "0",
+            "showbevel": "0",
+            "usehovercolor": "1",
+            "showlegend": "1",
+            "legendposition": "BOTTOM",
+            "legendborderalpha": "0",
+            "legendbordercolor": "ffffff",
+            "legendallowdrag": "0",
+            "legendshadow": "0",
+            "caption": "Website Visits for the month of March 2018",
+            "connectorcolor": "000000",
+            "fillalpha": "80",
+            "hovercolor": "CCCCCC",
+            "theme": "fusion"
+        },
+        "colorrange": colorrange,
+        "data": mapData
+    }
+};
+
+FusionCharts.ready(function() {
+  new FusionCharts(chartConfiguration).render();
+})
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;/html&gt;
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+</div>
+
+<div class='tab npm-tab'>
+To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
+
+<pre><code class="language-javascript">
+npm install fusionmaps
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+</pre>
+
+<div class='mt-30'><strong>The `fusioncharts` and `fusionmaps` package for `npm` can now be used in two different ways:</strong></div>
+<ul>
+    <li>FusionCharts ES module</li>
+    <li>FusionCharts CJS module</li>
+</ul>
+<div  class='mt-30'><strong>The steps to render a map for both the modules are shown below:</strong></div>
+
+<h4>ES6</h4>
+<pre><code class="language-javascript">
+// Include the core fusioncharts file from core  -
+import FusionCharts from 'fusioncharts/core';
+
+// Include the map files
+import FusionMaps from 'fusioncharts/maps';
+import California from 'fusionmaps/maps/es/fusioncharts.california';
+// Include the fusion theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+
+// Add the map as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(FusionMaps);
+FusionCharts.addDep(California);
+FusionCharts.addDep(FusionTheme);
+
+// Create an Instance with map options
+var webVisit = new FusionCharts({
+type: 'maps/california',
+width: '800',
+height: '550',
+renderAt: 'chart-container',
+dataFormat: 'json',
+dataSource: {
+"chart": {
+"animation": "0",
+"showbevel": "0",
+"usehovercolor": "1",
+"showlegend": "1",
+"legendposition": "BOTTOM",
+"legendborderalpha": "0",
+"legendbordercolor": "ffffff",
+"legendallowdrag": "0",
+"legendshadow": "0",
+"caption": "Website Visits for the month of March 2018",
+"connectorcolor": "000000",
+"fillalpha": "80",
+"hovercolor": "CCCCCC",
+"theme": "fusion"
+},
+"colorrange": {
+"minvalue": "0",
+"startlabel": "Low",
+"endlabel": "High",
+"code": "e44a00",
+"gradient": "1",
+"color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+},
+"data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+}
+});
+// Render
+webVisit.render();
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+
+<h4>CJS</h4>
+<pre><code class="language-javascript">
+var FusionCharts = require('fusioncharts');
+var FusionMaps = require('fusioncharts/fusioncharts.maps');
+var California = require('fusionmaps/maps/fusioncharts.california');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+FusionMaps(FusionCharts);
+California(FusionCharts);
+FusionTheme(FusionCharts);
+
+// Create an Instance with map options
+var webVisit = new FusionCharts({
+type: 'maps/california',
+width: '800',
+height: '550',
+renderAt: 'chart-container',
+dataFormat: 'json',
+dataSource: {
+"chart": {
+"animation": "0",
+"showbevel": "0",
+"usehovercolor": "1",
+"showlegend": "1",
+"legendposition": "BOTTOM",
+"legendborderalpha": "0",
+"legendbordercolor": "ffffff",
+"legendallowdrag": "0",
+"legendshadow": "0",
+"caption": "Website Visits for the month of March 2018",
+"connectorcolor": "000000",
+"fillalpha": "80",
+"hovercolor": "CCCCCC",
+"theme": "fusion"
+},
+"colorrange": {
+"minvalue": "0",
+"startlabel": "Low",
+"endlabel": "High",
+"code": "e44a00",
+"gradient": "1",
+"color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+},
+"data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+}
+});
+// Render
+webVisit.render();
+</code><button class='btn btn-outline-secondary btn-copy' title='Copy to clipboard'>COPY</button>
+
+</pre>
+</div>
+
+</div>
+</div>
+
+That's it! The **California** map is ready.
+
+> FusionCharts offers you more than 2000 different maps suitable for various purposes. You can find more about the different types of maps [here](/map-guide/list-of-maps).
 
 ## Heat Map
+
 A heat map chart utilizes different colors to represent data values within a table. It comes in handy the most, when you have to plot large and complex data sets. FusionCharts suite XT supports two types of heat map charts - a numeric heat map to plot numeric values, and a category-based heat map to plot non-numeric data.
+
+TreeMaps are another similar chart types with heirarchial data. Treemaps are ideal for displaying large amounts of hierarchically structured (tree-structured) data. The space in the visualization is split up into rectangles that are sized and ordered by a quantitative variable.The levels in the hierarchy of the treemap are visualized as rectangles containing other rectangles. FInd more about the treemaps [here](/chart-guide/standard-charts/treemap).
 
 In the section below, we will see how to build a heat map chart.
 
 {% embed_chart standard-charts-heat-map-chart-example-1.js %}
 
-As you can see in the heat map above, the data plot is indicating the ratings of four different smartphones based on five common components, with the help of different colors. 
+As you can see in the heat map above, the data plot is indicating the ratings of four different smartphones based on five common components, with the help of different colors.
 
 | State | Processor | Screen Size | Price | Battery Backup | Camera |
-| ----- | --------- | ----------- | ----- | ---------------| ------ ||
+| ----- | --------- | ----------- | ----- | ---------------| ------ |
 | Samsung Galaxy H5 | 8.7 | 8.5 | 9.3 | 9.7 | 8 |
 | HTC One (M8) | 9.2 | 8.3 | 7.3 | 8.8 | 8.7 |
 | Apple iPhone 5S | 9.1 | 8.6 | 7.2 | 8.4 | 9.5 |
 | Nokia Lumia 1520 | 8.8 | 9.1 | 9.7 | 9.2 | 8.1 |
 
 To convert the data provided in the above table to a data format that FusionCharts can use, you need the following properties:
+
 - `rows`
 - `columns`
 - `dataset`
@@ -922,7 +1153,7 @@ The diagram below can give you an idea about how we are going to assign values t
 
 In the sample above, the chart shows the heat map for comparing different smartphones on the basis of a number of common components. The data in the JSON format for the above chart looks as follows:
 
-```
+```json
 const rows = {
     "row": [
         {
@@ -1138,7 +1369,7 @@ const colorRange = {
 
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -1394,10 +1625,10 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-Know more about Heat maps and its configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/heat-map-chart).
-You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#powercharts-xt).
+> There are more variants of Heatmap charts available with FusionCharts. Know more about Heat maps and its configurations [here](/chart-guide/standard-charts/heat-map-chart). You can also create various charts belonging to the [PowerCharts](/chart-guide/list-of-charts#powercharts-xt) family in a similar way.
 
 ## Gantt Chart
+
 A Gantt chart is a date/time-based chart, which you can use to plot tasks along with their start and end dates/times. You can also use the chart to define milestones for a project, indicating different stages with their deadlines. That way, you can constantly keep an eye on project status, and plan alternate strategies in case you encounter an unprecedented delay.
 
 In the section below, we will see how to build a Gantt chart.
@@ -1405,6 +1636,7 @@ In the section below, we will see how to build a Gantt chart.
 {% embed_chart standard-charts-gantt-chart-example-1.js %}
 
 As you can see in the Gantt chart above, the data plot is indicating the planned and the actual achievements, as well as the delays, with the help of different colors. In the above chart, we have plotted the Project Plan for the opening of a new store. To convert the data provided above to a data format that FusionCharts can use, you need the following properties:
+
 - `categories`
 - `processes`
 - `datatable`
@@ -1417,7 +1649,7 @@ The diagram below can give you an idea about how we are going to assign values t
 
 In the sample above, the chart shows the project structure for opening a new store. The data in the JSON format for the above chart looks as follows:
 
-```
+```json
 //Define the categories(month-labels) of the Gantt chart
 const categories = [{
     "bgcolor": "#999999",
@@ -2278,9 +2510,10 @@ const connectors = [{
     }]
 }];
 ```
+
 Now that the data is ready, let us dive in directly to render the chart. The consolidated code is given below:
 
-```
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -3221,7 +3454,4 @@ Now that the data is ready, let us dive in directly to render the chart. The con
 </html>
 ```
 
-You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of otehr charts here.
-Know more about Gantt Chart and its configurations [here](https://www.fusioncharts.com/dev/chart-guide/standard-charts/gantt-chart).
-
-You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#powercharts-xt).
+> Know more about Gantt Chart and its configurations [here](/chart-guide/standard-charts/gantt-chart). You can also create various charts belonging to the PowerCharts family in a similar way. Check out the different types of PowerCharts [here](/chart-guide/list-of-charts#powercharts-xt).

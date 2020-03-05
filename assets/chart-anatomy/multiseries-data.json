@@ -21,16 +21,12 @@
                     {
                         "annotationNumber": "2",
                         "annotationName": "Categories",
-                        "annotationDesc": "Categories depict different classes of the data, structured for the visual representation ",
+                        "annotationDesc": "Categories depict different classes of the data, structured for the visual representation. It is an array of labels representing different quarters as shown above",
                         "annotationDescLinkPath": null,
                         "syntax": "[\r\n  {\r\n    \"category\": [\r\n      { \"label\": \"Q1\" },\r\n      { \"label\": \"Q2\" },...\r\n    ]\r\n  }\r\n]",
                         "leftPosition": "16%",
                         "topPosition": "73%",
-                        "annotationLinks": [
-                            {
-                                "linkDesc": "It is an array of labels representing different quarters as shown above"
-                            }
-                        ]
+                        "annotationLinks": []
                     },
                     {
                         "annotationNumber": "3",

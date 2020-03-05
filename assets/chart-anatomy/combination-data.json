@@ -21,29 +21,22 @@
                     {
                         "annotationNumber": "2",
                         "annotationName": "Categories",
-                        "annotationDesc": "Categories depict different classes of the data structured for the visual representation ",
+                        "annotationDesc": "Categories depict different classes of the data structured for the visual representation. It is an array of labels representing different months as shown above",
                         "syntax": "[{\r\n    \"category\": [\r\n        {\"label\": \"Jan\"},\r\n        {\"label\": \"Feb\"},\r\n        ....\r\n    ]\r\n}]",
                         "annotationDescLinkPath": null,
                         "leftPosition": "14%",
                         "topPosition": "78%",
-                        "annotationLinks": [
-                            {
-                                "linkDesc": "It is an array of labels representing different months as shown above"
-                            }
-                        ]
+                        "annotationLinks": []
                     },
                     {
                         "annotationNumber": "3",
                         "annotationName": "Data Series",
-                        "annotationDesc": "Objects representing different data series of the combination chart",
+                        "annotationDesc": "Objects representing different data series of the combination chart. The plot type of each series is determined by an attribute named 'renderAs'",
                         "annotationDescLinkPath": null,
+                        "syntax": "{\r\n    \"seriesname\": \"Projected Revenue\",\r\n    \"renderAs\": \"line\",\r\n    \"data\": [\r\n        {\"value\": \"15000\"},\r\n        {\"value\": \"16000\"}, ... \r\n    ]\r\n}",
                         "leftPosition": "27.5%",
                         "topPosition": "88.5%",
-                        "annotationLinks": [
-                            {
-                                "linkDesc": "The plot type of each series is determined by an attribute named 'renderAs'"
-                            }
-                        ]
+                        "annotationLinks": []
                     }
                 ]
             }
